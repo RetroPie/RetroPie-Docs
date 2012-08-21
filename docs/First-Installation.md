@@ -47,3 +47,8 @@ Now, you have to copy your rom files into the ROMs directory. If you followed th
 * Megadrive: smd
 * NES: .nes
 * SNES: .smc
+
+Finally, you can start the graphical front end "Emulation Station" with
+
+    ./emulationstation
+
