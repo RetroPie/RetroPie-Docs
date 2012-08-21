@@ -8,7 +8,7 @@ Welcome to the RetroPie-Setup wiki!
 * [Emulation Station](https://github.com/petrockblog/RetroPie-Setup/wiki/EmulationStation)
 
 ## Tutorials
-* [First Installation](https://github.com/petrockblog/RetroPie-Setup/wiki/Tutorials)
+* [First Installation](https://github.com/petrockblog/RetroPie-Setup/wiki/First-Installation)
 
 ## Troubleshooting
 
