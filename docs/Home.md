@@ -11,6 +11,7 @@ Welcome to the RetroPie-Setup wiki!
 ## The RetroPie Setup Script Reference
 
 ## Troubleshooting
+* [Sound Issues](https://github.com/petrockblog/RetroPie-Setup/wiki/Sound-Issues)
 
 ## FAQ
 
