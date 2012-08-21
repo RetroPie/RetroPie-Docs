@@ -1,6 +1,5 @@
-## First installation
-
-if not started automatically, run
+This tutorial assumes that you start with a fresh Raspbian image right after the first boot.
+If not started automatically, run
 
     sudo raspi-config
 
@@ -36,3 +35,7 @@ The screen should look like this then:
 ![Tutorial-Installation1](https://github.com/petrockblog/RetroPie-Setup/raw/master/wiki/images/tutorial_installation1.png)
 
 For the first installation, we choose the binaries-based installation, which takes only a few minutes. We start the installation simply by pressing ENTER.
+
+When everything is finished you will see this screen:
+
+![Tutorial_Installation2](https://github.com/petrockblog/RetroPie-Setup/raw/master/wiki/images/tutorial_installation2.png)
