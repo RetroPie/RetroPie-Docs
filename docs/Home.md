@@ -13,3 +13,5 @@ Welcome to the RetroPie-Setup wiki!
 ## Troubleshooting
 
 ## FAQ
+
+* How would I start from command line, say, the SNES emulator by itself?
