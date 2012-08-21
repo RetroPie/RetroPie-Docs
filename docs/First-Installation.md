@@ -3,7 +3,7 @@ If not started automatically, run
 
     sudo raspi-config
 
-and select
+ to resize your partition to the sizer of your SD card and select
 
     expand_rootfs, finish, reboot
 
@@ -39,3 +39,11 @@ For the first installation, we choose the binaries-based installation, which tak
 When everything is finished you will see this screen:
 
 ![Tutorial_Installation2](https://github.com/petrockblog/RetroPie-Setup/raw/master/wiki/images/tutorial_installation2.png)
+
+Now, you have to copy your rom files into the ROMs directory. If you followed the steps above the main directory for all ROMs is ~/RetroPie/roms (or /home/pi/RetroPie/roms, which is the same here). In this directory there is a subdirectory for every emulated system, e.g., nes, snes, megadrive. The extensions of the ROM files must be as following. Pay attention to lower- and uppercase writing here:
+* Atari 2600: .bin
+* Doom: .WAD
+* MAME: .zip
+* Megadrive: smd
+* NES: .nes
+* SNES: .smc
