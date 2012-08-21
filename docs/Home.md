@@ -2,13 +2,13 @@ Welcome to the RetroPie-Setup wiki!
 
 # Contents
 
-## The RetroPie Setup Script
+## Tutorials
+* [First Installation](https://github.com/petrockblog/RetroPie-Setup/wiki/First-Installation)
 
 ## Individual Components
 * [Emulation Station](https://github.com/petrockblog/RetroPie-Setup/wiki/EmulationStation)
 
-## Tutorials
-* [First Installation](https://github.com/petrockblog/RetroPie-Setup/wiki/First-Installation)
+## The RetroPie Setup Script Reference
 
 ## Troubleshooting
 
