@@ -8,8 +8,8 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [First Installation](https://github.com/petrockblog/RetroPie-Setup/wiki/First-Installation)
 
 ## Individual Components
-* [RetroArch](https://github.com/petrockblog/RetroPie-Setup/wiki/RetroArch)
 * [Emulation Station](https://github.com/petrockblog/RetroPie-Setup/wiki/EmulationStation)
+* [RetroArch](https://github.com/petrockblog/RetroPie-Setup/wiki/RetroArch)
 
 ## The RetroPie Setup Script Reference
 
