@@ -1,4 +1,4 @@
-This tutorial assumes that you start with a fresh Raspbian image right after the first boot.
+This tutorial assumes that you start with a fresh Raspbian image (that you can download [here](http://www.raspberrypi.org/downloads)) right after the first boot.
 If not started automatically, run
 
     sudo raspi-config
@@ -53,4 +53,3 @@ Now, you have to copy your rom files into the ROMs directory. If you followed th
 Finally, you can start the graphical front end "Emulation Station" with
 
     ./emulationstation
-
