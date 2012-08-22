@@ -6,5 +6,5 @@ Then use the command
 
     ./retroarch-joyconfig
 
-This will get the joyconfig running. The output at the end of this tool must be appended to the file /etc/retroarch.cfg.
+This will get the joyconfig running. The output of this tool must be appended to the file /etc/retroarch.cfg.
 
