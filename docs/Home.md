@@ -21,3 +21,4 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [How would I start from command line, say, the SNES emulator by itself?](https://github.com/petrockblog/RetroPie-Setup/wiki/How-would-I-start-from-command-line,-say,-the-SNES-emulator-by-itself%3F)
 * [Is there another way to set up the gamepad for use, e.g., withing the snes emulator?](https://github.com/petrockblog/RetroPie-Setup/wiki/Is-there-another-way-to-set-up-the-gamepad-for-use,-e.g.,-withing-the-snes-emulator%3F)
 * [I was wondering is there any way of starting Emulationstation on boot instead of going into the terminal and manually starting it.](https://github.com/petrockblog/RetroPie-Setup/wiki/I-was-wondering-is-there-any-way-of-starting-Emulationstation-on-boot-instead-of-going-into-the-terminal-and-manually-starting-it.)
+* Has anyone figured out how to insert coins in imame4all yet?
