@@ -1,5 +1,7 @@
 Welcome to the RetroPie-Setup wiki!
 
+This wiki is supposed to be created by the users of the RetroPie setup script for the users of the script. Everyone can contribute to it!
+
 # Contents
 
 ## Tutorials
