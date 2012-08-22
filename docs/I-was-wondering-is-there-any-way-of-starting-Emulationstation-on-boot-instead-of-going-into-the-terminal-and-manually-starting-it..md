@@ -1,0 +1,1 @@
+You can enable this by starting the setup script and choose **Setup**. In the following menu you can select Emulation Station to be started on boot.
