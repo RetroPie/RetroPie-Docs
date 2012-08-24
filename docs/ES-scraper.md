@@ -6,7 +6,7 @@ For image resizing to work, you will need to install PIL:
 `sudo apt-get install python-imaging`
 
 # Usage
-* Open your systems config file ($HOME/.emulationstation/es_systems.cfg) and append the corresponding [platform ID](platform-list) to each system:
+* Open your systems config file ($HOME/.emulationstation/es_systems.cfg) and append the corresponding [platform ID](Available-Platforms) to each system:
 ```
 NAME=NES
 PATH=~/ROMS/NES/
