@@ -9,7 +9,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 
 ## Individual Components
 * [Emulation Station](https://github.com/petrockblog/RetroPie-Setup/wiki/EmulationStation)
-* [ES-scraper](https://github.com/petrockblog/RetroPie-Setup/wiki/ES-thegamesdb-scraper)
+* [ES-scraper](https://github.com/petrockblog/RetroPie-Setup/wiki/ES-scraper)
 * [RetroArch](https://github.com/petrockblog/RetroPie-Setup/wiki/RetroArch)
 
 ## The RetroPie Setup Script Reference
