@@ -3,7 +3,7 @@ If not started automatically, run
 
     sudo raspi-config
 
- to resize your partition to the sizer of your SD card and select
+ to resize your partition to the size of your SD card and select
 
     expand_rootfs, finish, reboot
 
