@@ -1,0 +1,1 @@
+Here come information about ES-thegamesdb-scraper
