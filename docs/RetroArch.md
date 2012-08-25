@@ -14,3 +14,10 @@ BTW, for most of those cores you should be able to get at or near full speed, wi
 ## Settings
 
 All settings for retroarch can be found in /etc/retroarch.cfg (if you used the original RetroPie script) or, alternatively, in your home directory at ~/.retroarch.cfg. If you suspect RetroArch isn't loading the right config file, you use the RetroArch launch argument `-c /path/to/config.cfg` (you can set launch commands in the EmulationStation config file, `~/.emulationstation/es_systems.cfg`).
+
+## Key Mapping
+
+In what config file can we change the keyboard mapping? For RetroArch the keyboard mapping can be changed in /etc/retroarch.cfg with
+
+    sudo nano /etc/retroarch.cfg
+
