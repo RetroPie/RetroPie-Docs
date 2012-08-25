@@ -38,7 +38,7 @@ optional arguments:
 
 # ES-scraper in the RetroPie setup script
 
-ES-scraper can be started from the "setup" menu of the RetroPie setup script. You do not need to manually install the "python-imaging" package. In the scraper menu you can run a normal (re-) scrape of the ROMs (first option) or a forced re-scrape of the ROMs (second option). The scraper is started with boxart downloading. The maximum width (in pixels) for boxarts is set to 350 px. You can change this width with the third option.
+ES-scraper can be started from the "setup" menu of the RetroPie setup script. You do not need to manually install the "python-imaging" package. In the scraper menu you can run a normal (re-) scrape of the ROMs (first option) or a forced re-scrape of the ROMs (second option). In all cases the scraper is started with boxart downloading. CRC scraping is used when the third option is chosen. The maximum width (in pixels) for boxarts is set to 350 px. You can change this width with the fourth option.
 
 When the scraper is finished it returns to the setup script.
 
