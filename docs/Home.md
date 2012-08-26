@@ -16,6 +16,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 
 ## Troubleshooting
 * [Sound Issues](https://github.com/petrockblog/RetroPie-Setup/wiki/Sound-Issues)
+* [Speed Issues](https://github.com/petrockblog/RetroPie-Setup/wiki/Speed-Issues)
 
 ## FAQ
 
