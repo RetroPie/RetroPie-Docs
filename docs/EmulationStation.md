@@ -10,6 +10,8 @@ A great deal of information can be found in EmulationStation's README.md and THE
 
 [Configuring EmulationStation.](https://github.com/Aloshi/EmulationStation#configuring)
 
+[Setting up a joystick without a keyboard.]http://www.raspberrypi.org/phpBB3/viewtopic.php?f=35&t=6750&start=225
+
 [Creating your own themes.](https://github.com/Aloshi/EmulationStation/blob/master/THEMES.md#themes)
 
 # Common Problems
