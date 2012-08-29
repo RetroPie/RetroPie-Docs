@@ -9,3 +9,10 @@ BTW, for most of [those](http://www.youtube.com/watch?v=rm3IuXeIfaw) cores you s
 * vba-next: Will probably never be fullspeed on the Pi. An alternative port is being considered.
 
 * genesis-plus-gx: Is still a bit too slow on the Pi. An alternative port is being considered.
+
+***
+
+From [ChadP](http://www.raspberrypi.org/phpBB3/viewtopic.php?p=156971#p156971):
+> Im running my pi at over_voltage=6. arm_freq=1000. core_freq=500. sdram_freq=500. and the games are fast no lag.
+
+I think that these are options for a heavily overclocked RPi and I would suggest to use a heat sink (at least!)
