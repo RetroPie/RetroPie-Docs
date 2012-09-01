@@ -8,3 +8,6 @@ Then use the command
 
 This will get the joyconfig running. The output of this tool must be appended to the file /etc/retroarch.cfg.
 
+By default, retroarch-joyconfig just dumps to the console. You can specify for retroarch-joyconfig to write to a file with the -o argument, e.g.:
+
+    ./retroarch-joyconfig -o /etc/retroarch.cfg
