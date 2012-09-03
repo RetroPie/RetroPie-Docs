@@ -10,7 +10,11 @@ BTW, for most of [those](http://www.youtube.com/watch?v=rm3IuXeIfaw) cores you s
 
 * genesis-plus-gx: Is still a bit too slow on the Pi. An alternative port is being considered.
 
-***
+## Overclocking Thread of the Official RPi Forum
+
+There is a thread about overclocking the RPi in the official forum of the foundation. You can find it [here](http://www.raspberrypi.org/phpBB3/viewtopic.php?f=29&t=6201).
+
+### User Comments
 
 From [ChadP](http://www.raspberrypi.org/phpBB3/viewtopic.php?p=156971#p156971):
 > Im running my pi at over_voltage=6. arm_freq=1000. core_freq=500. sdram_freq=500. and the games are fast no lag.
