@@ -10,7 +10,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 ## Individual Components
 * [Emulation Station](https://github.com/petrockblog/RetroPie-Setup/wiki/EmulationStation)
 * [ES-scraper](https://github.com/petrockblog/RetroPie-Setup/wiki/ES-scraper)
-* [Module-for-GPIO-interface-for-NES-SNES-controllers](https://github.com/petrockblog/RetroPie-Setup/wiki/Module-for-GPIO-interface-for-NES-SNES-controllers)
+* [Module for GPIO interface for NES/SNES controllers](https://github.com/petrockblog/RetroPie-Setup/wiki/Module-for-GPIO-interface-for-NES-SNES-controllers)
 * [RetroArch](https://github.com/petrockblog/RetroPie-Setup/wiki/RetroArch)
 
 ## The RetroPie Setup Script Reference
