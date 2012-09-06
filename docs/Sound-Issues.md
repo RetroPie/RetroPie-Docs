@@ -22,7 +22,7 @@ I tested it with lostvikings and when you pause the game the game runs fullspeed
 
 * The only /boot/config.txt setting I had was sdtv_mode=2 "I have a pal tv that I use for the pi"
 I did try increasing the cpu_freq to 900 and core_freq to 450 and that helped a little but still were not getting full speed.
-* The only settings i changed in the retroarch.cfg was  
+* The only settings i changed in the /etc/retroarch.cfg was  
 
         audio_out_rate=44100
         audio_driver=sdl
