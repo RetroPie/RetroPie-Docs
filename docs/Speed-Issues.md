@@ -14,6 +14,10 @@ BTW, for most of [those](http://www.youtube.com/watch?v=rm3IuXeIfaw) cores you s
 
 There is a thread about overclocking the RPi in the official forum of the foundation. You can find it [here](http://www.raspberrypi.org/phpBB3/viewtopic.php?f=29&t=6201).
 
+## Overclocking With RetroPie Setup
+
+In the menu "Setup" you can find the options for changing the ARM and SDRAM frequencies. Note that changes will take effect after a reboot of the Raspberry.
+
 ### User Comments
 
 From [ChadP](http://www.raspberrypi.org/phpBB3/viewtopic.php?p=156971#p156971):
