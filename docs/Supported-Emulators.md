@@ -7,6 +7,7 @@ Currently, the following list of emulators can be installed with the RetroPie se
 * MAME
 * Sega Megadrive
 * Nintendo Entertainment System
+* Playstation 1
 * Super Nintendo Entertainment System
 
-Playstation 1 and NeoGeo are contained in the issues list for a future addition to the script.
+A NeoGeo emulator is contained in the issues list for a future addition to the script.
