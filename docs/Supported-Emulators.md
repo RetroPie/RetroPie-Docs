@@ -9,6 +9,7 @@ Currently, the following list of emulators can be installed with the RetroPie se
 * Sega Master System
 * Sega Megadrive
 * Nintendo Entertainment System
+* PC Engine / Turbo Grafx 16
 * Playstation 1
 * Super Nintendo Entertainment System
 
