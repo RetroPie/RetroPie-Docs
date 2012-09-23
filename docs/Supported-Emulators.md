@@ -4,7 +4,9 @@ Currently, the following list of emulators can be installed with the RetroPie se
 * Doom
 * Game Boy Advance
 * Game Boy Color
+* Game Gear
 * MAME
+* Sega Master System
 * Sega Megadrive
 * Nintendo Entertainment System
 * Playstation 1
