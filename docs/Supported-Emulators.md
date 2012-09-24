@@ -12,6 +12,6 @@ Currently, the following list of emulators can be installed with the RetroPie se
 * PC Engine / Turbo Grafx 16
 * Playstation 1
 * Super Nintendo Entertainment System
-* ZX Spectrum
+* Sinclair ZX Spectrum
 
 A NeoGeo emulator is contained in the issues list for a future addition to the script.
