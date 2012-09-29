@@ -1,5 +1,6 @@
 Currently, the following list of emulators can be installed with the RetroPie setup script:
 
+* Amiga (UAE4All)
 * Atari 2600
 * Doom
 * Game Boy Advance
