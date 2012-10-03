@@ -1,4 +1,4 @@
-Currently, the following list of emulators can be installed with the RetroPie setup script:
+Currently, emulators for the following systems can be installed with the RetroPie setup script:
 
 * Amiga (UAE4All)
 * Atari 2600
@@ -7,6 +7,7 @@ Currently, the following list of emulators can be installed with the RetroPie se
 * Game Boy Color
 * Game Gear
 * MAME
+* NeoGeo (experimental)
 * Sega Master System
 * Sega Megadrive
 * Nintendo Entertainment System
@@ -14,5 +15,3 @@ Currently, the following list of emulators can be installed with the RetroPie se
 * Playstation 1
 * Super Nintendo Entertainment System
 * Sinclair ZX Spectrum
-
-A NeoGeo emulator is contained in the issues list for a future addition to the script.
