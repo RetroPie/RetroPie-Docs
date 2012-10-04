@@ -18,7 +18,15 @@ There is a thread about overclocking the RPi in the official forum of the founda
 
 In the menu "Setup" you can find the options for changing the ARM and SDRAM frequencies. Note that changes will take effect after a reboot of the Raspberry.
 
-### User Comments
+## Overclocking With raspi-config
+
+You can overclock your Raspberry **without voiding its warranty** with the official raspi-config script. It can be started with
+
+```shell
+sudo raspi-config
+```
+
+## User Comments
 
 From [ChadP](http://www.raspberrypi.org/phpBB3/viewtopic.php?p=156971#p156971):
 > Im running my pi at over_voltage=6. arm_freq=1000. core_freq=500. sdram_freq=500. and the games are fast no lag.
