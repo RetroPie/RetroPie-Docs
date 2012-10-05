@@ -13,5 +13,6 @@ Currently, emulators for the following systems can be installed with the RetroPi
 * Nintendo Entertainment System
 * PC Engine / Turbo Grafx 16
 * Playstation 1
+* ScummVM
 * Super Nintendo Entertainment System
 * Sinclair ZX Spectrum
