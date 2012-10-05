@@ -6,6 +6,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 
 ## Tutorials
 * [First Installation](https://github.com/petrockblog/RetroPie-Setup/wiki/First-Installation)
+* [Setting up an XBox 360 Controller](https://github.com/petrockblog/RetroPie-Setup/wiki/Setting-up-the-XBox360-controller)
 
 ## Individual Components
 * [Emulation Station](https://github.com/petrockblog/RetroPie-Setup/wiki/EmulationStation)
