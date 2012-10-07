@@ -16,3 +16,4 @@ Currently, emulators for the following systems can be installed with the RetroPi
 * ScummVM
 * Super Nintendo Entertainment System
 * Sinclair ZX Spectrum
+* Z Machine emulator (Frotz)
