@@ -1,4 +1,4 @@
-Sound still is a problem child with the Raspberry Pi. Currently, there does not seem to be a best solution for all the sound issues.
+Sound still is a problem child with the Raspberry Pi. Currently, there does not seem to be a best solution for all the sound issues. General information about sound issues can be found at http://elinux.org/R-Pi_Troubleshooting#Sound.
 
 This place re-cites some posts (or parts of them) from different forum threads that might increase the sound quality:
 
