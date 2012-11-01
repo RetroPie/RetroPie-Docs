@@ -24,7 +24,7 @@ python scraper.py
 
 # Parameters
 ```
-usage: scraper.py [-h] [-w value] [-noimg] [-v] [-f] [-crc]
+usage: scraper.py [-h] [-w value] [-noimg] [-v] [-f] [-crc] [-p]
 
 ES-scraper, a scraper for EmulationStation
 
@@ -34,8 +34,10 @@ optional arguments:
               that will be resized to that value)
   -noimg      disables boxart downloading
   -v          verbose output
-  -f          force re-scraping
+  -f          force re-scraping (ignores and overwrites the current gamelist)
   -crc        CRC scraping
+  -p          partial scraping (per console)
+  -m          manual mode (choose from multiple results)
 ```
 
 # ES-scraper in the RetroPie setup script
