@@ -14,10 +14,9 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [Module for GPIO interface for retro game controllers](https://github.com/petrockblog/RetroPie-Setup/wiki/Module-for-GPIO-interface-for-retro-game-controllers)
 * [RetroArch](https://github.com/petrockblog/RetroPie-Setup/wiki/RetroArch)
 
-## The RetroPie Setup Script Reference
-
 ## Troubleshooting
 * [Amiga emulator (UAE4All)](https://github.com/petrockblog/RetroPie-Setup/wiki/Amiga-emulator-%28UAE4All%29)
+* [Control Issues]()
 * [Sound Issues](https://github.com/petrockblog/RetroPie-Setup/wiki/Sound-Issues)
 * [Speed Issues](https://github.com/petrockblog/RetroPie-Setup/wiki/Speed-Issues)
 
