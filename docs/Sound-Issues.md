@@ -31,3 +31,9 @@ I did try increasing the cpu_freq to 900 and core_freq to 450 and that helped a 
 * I realize that the sdl audio is a bit slower than alsa and makes the snes run even slower but atleast it doesn't turn the audio into a garbled mess when the emulator doesn't run at full speed.
 
 ***
+
+DGEN sound configuration (according to [this post](http://www.raspberrypi.org/phpBB3/viewtopic.php?p=207923#p207923)):
+
+> if anyone has sound issues with DGen - try changing the int_soundrate to 44100
+
+> worked for me.
