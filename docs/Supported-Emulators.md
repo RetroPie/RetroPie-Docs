@@ -7,7 +7,7 @@ Currently, emulators for the following systems can be installed with the RetroPi
 * Game Boy Color
 * Game Gear
 * MAME
-* NeoGeo (experimental)
+* NeoGeo
 * Sega Master System
 * Sega Megadrive
 * Nintendo Entertainment System
