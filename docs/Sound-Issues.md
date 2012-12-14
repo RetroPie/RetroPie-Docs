@@ -32,6 +32,10 @@ I did try increasing the cpu_freq to 900 and core_freq to 450 and that helped a 
 
 ***
 
+[A post on the Raspberry Pi forums with a list troubleshooting options.](http://www.raspberrypi.org/phpBB3/viewtopic.php?p=234358#p234358)
+
+***
+
 DGEN sound configuration (according to [this post](http://www.raspberrypi.org/phpBB3/viewtopic.php?p=207923#p207923)):
 
 > if anyone has sound issues with DGen - try changing the int_soundrate to 44100
