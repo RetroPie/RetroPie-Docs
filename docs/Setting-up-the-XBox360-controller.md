@@ -19,11 +19,11 @@ Here is an example for 4 wireless pads (put this just before **exit 0**):
     xboxdrv --trigger-as-button --wid 3 --led 5 --deadzone 4000 --silent &
 
 (replace the `--wid` by `--id` if you use wired controllers)
-You **must** switch on your pads before booting the raspberry.
+You **must** swich-on your pads before booting the raspberry.
 
-Notice the `sleep 1` between each instance: this prevents the RPi to assign random controllers with random led status; adjust timing if necessary.
+Notice the `sleep 1` between each instance: this prevents the RPi from setting random controllers with random led status; adjust timing if necessary.
 
-After reboot and your controllers detected, you have to configure RetroPie to use them:
+After reboot when your controllers are detected, you have to configure RetroPie to use them:
 
 Go to the `retroarch-joyconfig` folder (binary for configuring joypads for RetroArch);
 
@@ -49,5 +49,7 @@ After this you will get 4 cfg files to add to your default `/etc/retroarch.cfg` 
     sudo cat p*.cfg >> /etc/retroarch.cfg
 
 (if this don't have permissions you can do a `chmod 777 /etc/retroarch.cfg` before)
+
+If your config is not working well, delete the joypad configuration lines in `/etc/retroarch.cfg` before doing anything. (at the bottom of the file, starting with line `input_player1_joypad_index = "0"`)
 
 Now just reboot and voila !
