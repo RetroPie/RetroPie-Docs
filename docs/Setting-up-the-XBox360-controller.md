@@ -51,6 +51,7 @@ After this you will get 4 cfg files to add to your default `/etc/retroarch.cfg` 
 (if this don't have permissions you can do a `chmod 777 /etc/retroarch.cfg` before)
 
 If your config is not working well, delete the joypad configuration lines in `/etc/retroarch.cfg` before doing anything.
+
 (at the bottom of the file, starting with line `input_player1_joypad_index = "0"`)
 
 Now just reboot and voila !
