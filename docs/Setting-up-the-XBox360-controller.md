@@ -42,7 +42,7 @@ Then you have to configure each controller:
     ./retroarch-joyconfig -o p4.cfg -p 4 -j 3
     <follow instructions>
 
-(-o for output file, -p for player, -j for joystick id)
+(**-o** for output file, **-p** for player, **-j** for joystick id)
 
 After this you will get 4 cfg files to add to your default `/etc/retroarch.cfg` config file:
 
