@@ -4,11 +4,11 @@ install it by running
 
     sudo apt-get install xboxdrv
 
-You then have to launch multiple instances of xboxdrv (one for each pad)
+You have to launch multiple instances of xboxdrv (one for each controller)
 
 For example we can edit the file **/etc/rc.local** to start instances of xboxdrv during boot
 
-Here is an example for 4 wireless pads (put this just before **exit 0**):
+Here is an example of what to insert in **/etc/rc.local** for 4 wireless pads (put this just before **exit 0**):
 
     xboxdrv --trigger-as-button --wid 0 --led 2 --deadzone 4000 --silent &
     sleep 1
@@ -31,7 +31,7 @@ By default (if you followed the install tutorial):
 
     cd ~/RetroPie/emulators/RetroArch/tools
 
-Then you have to configure each controller:
+Then you have to configure each controller ( For example just use the first line if you have only 1 controller):
 
     ./retroarch-joyconfig -o p1.cfg -p 1 -j 0
     <follow instructions>
@@ -44,14 +44,14 @@ Then you have to configure each controller:
 
 ( **-o** for output file, **-p** for player, **-j** for joystick id )
 
-After this you will get 4 cfg files to add to your default `/etc/retroarch.cfg` config file:
+After this you will get 4(or less depending) cfg files to add to your default `/etc/retroarch.cfg` config file:
 
     sudo cat p*.cfg >> /etc/retroarch.cfg
 
-(if this don't have permissions you can do a `chmod 777 /etc/retroarch.cfg` before)
+(if this don't have permissions you can do a `sudo chmod 777 /etc/retroarch.cfg` before)
 
 If your config is not working well, delete the joypad configuration lines in `/etc/retroarch.cfg` before doing anything.
 
-(at the bottom of the file, starting with line `input_player1_joypad_index = "0"`)
+(Delete the lines located at the bottom of the file, starting with line `input_player1_joypad_index = "0"`)
 
 Now just reboot and voila !
