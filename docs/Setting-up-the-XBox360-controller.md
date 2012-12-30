@@ -44,13 +44,13 @@ Then you have to configure each controller ( For example just use the first line
 
 ( **-o** for output file, **-p** for player, **-j** for joystick id )
 
-After this you will get 4(or less depending) cfg files to add to your default `/etc/retroarch.cfg` config file:
+After this you will get 4(or less depending) cfg files to add to your default `RetroPie/configs/all/retroarch.cfg` config file:
 
-    sudo cat p*.cfg >> /etc/retroarch.cfg
+    sudo cat p*.cfg >> RetroPie/configs/all/retroarch.cfg
 
-(if this don't have permissions you can do a `sudo chmod 777 /etc/retroarch.cfg` before)
+(if this don't have permissions you can do a `sudo chmod 777 RetroPie/configs/all/retroarch.cfg` before)
 
-If your config is not working well, delete the joypad configuration lines in `/etc/retroarch.cfg` before doing anything.
+If your config is not working well, delete the joypad configuration lines in `RetroPie/configs/all/retroarch.cfg` before doing anything.
 
 (Delete the lines located at the bottom of the file, starting with line `input_player1_joypad_index = "0"`)
 
