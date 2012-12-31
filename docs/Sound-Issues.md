@@ -32,7 +32,9 @@ I did try increasing the cpu_freq to 900 and core_freq to 450 and that helped a 
 
 ***
 
-[A post on the Raspberry Pi forums with a list troubleshooting options.](http://www.raspberrypi.org/phpBB3/viewtopic.php?p=234358#p234358)
+[A post on the Raspberry Pi forums with a list basic troubleshooting options for getting the Pi to play a test sound file.](http://www.raspberrypi.org/phpBB3/viewtopic.php?p=234358#p234358)
+
+[Another potentially helpful post about configuring ALSA.](http://www.raspberrypi.org/phpBB3/viewtopic.php?p=245126#p245126)
 
 ***
 
