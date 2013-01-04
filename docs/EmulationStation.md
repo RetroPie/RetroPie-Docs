@@ -10,8 +10,6 @@ A great deal of information can be found in EmulationStation's README.md and THE
 
 [Configuring EmulationStation.](https://github.com/Aloshi/EmulationStation#configuring)
 
-[Setting up a joystick without a keyboard.](http://www.raspberrypi.org/phpBB3/viewtopic.php?f=35&t=6750&start=225)
-
 [Creating your own themes.](https://github.com/Aloshi/EmulationStation/blob/master/THEMES.md#themes)
 
 # Common Problems
@@ -39,3 +37,7 @@ This is normal. ES does not monitor input while an emulator is running. If you w
 ### All I see is this weird white dot in the middle of the screen!
 
 This dot is the "fake" SDL window ES uses to get input. Actual rendering is done through OpenGL ES. If all you see is this dot, then odds are something went wrong initializing the OpenGL ES surface. Are you sure you're running at least the 192/64mb memory split?
+
+### These themes look wrong...
+
+At the moment, themes are designed around the "detailed" game list - they're meant to look [like this](aloshi.com/emulationstation#themes). If you don't have a gamelist.xml for at least one system, the basic view is used, which looks incorrect.
