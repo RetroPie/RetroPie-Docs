@@ -34,6 +34,7 @@ A great deal of information can be found in EmulationStation's README.md and THE
 
 This is normal. ES does not monitor input while an emulator is running. If you want to close your emulator, you will have to do it from within the emulator. RetroArch has a binding for this, just add it to your RetroArch config file: `input_exit_emulator_btn = “6″` would map it to button 6 on a gamepad. You should be able to figure out what button to use by running RetroArch's joystick configuration tool (check the `RetroPie/RetroArch-Rpi/tools/` directory).
 
+[If you are using an "authentic" controller and don't have an extra button to use, try this.](http://www.raspberrypi.org/phpBB3/viewtopic.php?p=250689#p250689)
 
 ### All I see is this weird white dot in the middle of the screen!
 
