@@ -40,4 +40,4 @@ This dot is the "fake" SDL window ES uses to get input. Actual rendering is done
 
 ### These themes look wrong...
 
-At the moment, themes are designed around the "detailed" game list - they're meant to look [like this](aloshi.com/emulationstation#themes). If you don't have a gamelist.xml for at least one system, the basic view is used, which looks incorrect.
+At the moment, themes are designed around the "detailed" game list - they're meant to look [like this](http://aloshi.com/emulationstation#themes). If you don't have a gamelist.xml for at least one system, the basic view is used, which looks incorrect.
