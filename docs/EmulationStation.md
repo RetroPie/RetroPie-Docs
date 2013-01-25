@@ -40,4 +40,8 @@ This dot is the "fake" SDL window ES uses to get input. Actual rendering is done
 
 ### These themes look wrong...
 
-At the moment, themes are designed around the "detailed" game list - they're meant to look [like this](http://aloshi.com/emulationstation#themes). If you don't have a gamelist.xml for at least one system, the basic view is used, which looks incorrect.
+At the moment, themes are designed around the "detailed" game list - they're meant to look [like this](http://aloshi.com/emulationstation#themes). If you don't have a gamelist.xml for at least one system, the basic view is used, which looks incorrect. This will be rectified with the newest set of themes, once RetroPie-Setup is updated to include them.
+
+### ES doesn't detect my controller when started at boot!
+
+Your controller driver is likely being started after EmulationStation. An easy way around this is to add a "sleep" command in the EmulationStation start script in `/usr/bin/emulationstation`.  [More information here.](http://www.reddit.com/r/raspberry_pi/comments/16w9qn/emulationstation_and_a_logitech_dual_action/c816dz1)
