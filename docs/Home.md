@@ -21,6 +21,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [RetroArch Configuration](https://github.com/petrockblog/RetroPie-Setup/wiki/RetroArch-Configuration)
 * [Sound Issues](https://github.com/petrockblog/RetroPie-Setup/wiki/Sound-Issues)
 * [Speed Issues](https://github.com/petrockblog/RetroPie-Setup/wiki/Speed-Issues)
+* [Wolfenstein 3D](https://github.com/petrockblog/RetroPie-Setup/wiki/Wolfenstein-3D-Troubleshooting)
 
 ## FAQ
 
