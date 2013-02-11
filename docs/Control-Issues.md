@@ -16,3 +16,8 @@ And to configure DGEN joystick / gamepad...
 2.  sudo nano dgenrc
 
 and uncomment the joystick lines. Putting your own button numbers corresponding to your joystick / gamepad.
+
+Setting Up a Bluetooth Controller
+---------------------------------
+
+You can find a nice tutorial about setting up a bluetooth controller at http://mypiandi.blogspot.de/2012/12/retropie-sixaxis-over-bluetooth.html.
