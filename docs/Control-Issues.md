@@ -21,3 +21,8 @@ Setting Up a Bluetooth Controller
 ---------------------------------
 
 You can find a nice tutorial about setting up a bluetooth controller at http://mypiandi.blogspot.de/2012/12/retropie-sixaxis-over-bluetooth.html.
+
+GameGear and MasterSystem Keyboard Input
+----------------------------------------
+
+If you want to use the keyboard as input for these systems you need to remove the parameter "-joy" from the call of Osmose in the file ~/.emulationstation/es_systems.cfg.
