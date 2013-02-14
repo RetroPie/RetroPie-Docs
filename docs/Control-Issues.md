@@ -9,6 +9,8 @@ To configure USB joystick / gamepad for RetroArch run...
 
 retroarch-joyconfig
 
+You need to insert the output of retroarch-joyconfig into ~/RetroPie/configs/all/retroarch.cfg.
+
 And to configure DGEN joystick / gamepad...
 
 1.  go to .dgen folder - cd .dgen
