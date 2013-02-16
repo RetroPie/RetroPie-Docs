@@ -3,6 +3,7 @@ Currently, emulators for the following systems can be installed with the RetroPi
 * Amiga (UAE4All)
 * Atari 2600
 * Doom
+* Final Burn Alpha
 * Game Boy Advance
 * Game Boy Color
 * Game Gear
