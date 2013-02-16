@@ -45,3 +45,7 @@ At the moment, themes are designed around the "detailed" game list - they're mea
 ### ES doesn't detect my controller when started at boot!
 
 Your controller driver is likely being started after EmulationStation. An easy way around this is to add a "sleep" command in the EmulationStation start script in `/usr/bin/emulationstation`.  [More information here.](http://www.reddit.com/r/raspberry_pi/comments/16w9qn/emulationstation_and_a_logitech_dual_action/c816dz1)
+
+### My gamepad is interpreted as a keyboard, so I can't configure it!
+
+Unfortunately, due to a poor design choice on my part, keyboard controls aren't easily configurable. You'll need to modify the ES source code and recompile. Fortunately, this is actually pretty simple. [See this post for more details.](http://wiki.libsdl.org/moin.cgi/SDL_Keycode)
