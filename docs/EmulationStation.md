@@ -48,4 +48,4 @@ Your controller driver is likely being started after EmulationStation. An easy w
 
 ### My gamepad is interpreted as a keyboard, so I can't configure it!
 
-Unfortunately, due to a poor design choice on my part, keyboard controls aren't easily configurable. You'll need to modify the ES source code and recompile. Fortunately, this is actually pretty simple. [See this post for more details.](http://wiki.libsdl.org/moin.cgi/SDL_Keycode)
+Unfortunately, due to a poor design choice on my part, keyboard controls aren't easily configurable. You'll need to modify the ES source code and recompile. Fortunately, this is actually pretty simple. [See this post for more details.](http://www.reddit.com/r/raspberry_pi/comments/18ljvr/xarcade_dual_on_retropie/c8fzn5a)
