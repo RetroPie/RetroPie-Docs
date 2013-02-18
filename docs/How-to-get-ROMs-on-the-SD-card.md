@@ -1,0 +1,18 @@
+## Copying via SSH connection
+
+One way for copying ROMs on the SD card is via an [SSH connection](http://en.wikipedia.org/wiki/Secure_Shell). It is enabled per default in Raspbian and allows, for example, to remotely log into the RPi with a Terminal or to copy files between two computers.
+
+In order to connect to your Raspberry, you need to know the IP address of it. To get this you can either have a look at your router/switch logs, or you can exit Emulation Station on the RPi and type 
+
+```shell
+ifconfig
+```
+The IP address of the RPi is the one behind "eth0, inet addr". The default user name and password for the Raspbian distribution is "pi" and "raspberry", respectively.
+
+To copy files, you can use the command line tool "scp" or a GUI like [WinSCP](http://winscp.net/eng/index.php) (for Windows) or [Cyberduck](http://cyberduck.ch/) (for MacOS).
+
+The **directories for the ROM files** are located in ~/RetroPie/roms/SYSTEMNAME, where SYSTEMNAME is the short name of the corresponding system.
+
+You can find additional information about remotely accessing the RPi in the [eLinux wiki](http://elinux.org/RPi_Remote_Access).
+
+
