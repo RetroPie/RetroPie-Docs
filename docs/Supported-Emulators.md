@@ -1,5 +1,6 @@
 Currently, emulators for the following systems can be installed with the RetroPie setup script:
 
+* AdvMAME
 * Amiga (UAE4All)
 * Atari 2600
 * Doom
@@ -7,7 +8,7 @@ Currently, emulators for the following systems can be installed with the RetroPi
 * Game Boy Advance
 * Game Boy Color
 * Game Gear
-* MAME
+* iMAME4All
 * NeoGeo
 * Sega Master System
 * Sega Megadrive
