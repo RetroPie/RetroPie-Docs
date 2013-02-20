@@ -13,7 +13,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [Emulation Station](https://github.com/petrockblog/RetroPie-Setup/wiki/EmulationStation)
 * [ES-scraper](https://github.com/petrockblog/RetroPie-Setup/wiki/ES-scraper)
 * [Module for GPIO interface for retro game controllers](https://github.com/petrockblog/RetroPie-Setup/wiki/Module-for-GPIO-interface-for-retro-game-controllers)
-* [PCSX Core (Playstation 1)](https://github.com/petrockblog/RetroPie-Setup/wiki/PCSX-Core-(Playstation-1))
+* [PCSX Core (Playstation 1)](https://github.com/petrockblog/RetroPie-Setup/wiki/PCSX-Core-Playstation-1)
 * [RetroArch](https://github.com/petrockblog/RetroPie-Setup/wiki/RetroArch)
 
 ## Troubleshooting
