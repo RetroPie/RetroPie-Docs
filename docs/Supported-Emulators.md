@@ -1,21 +1,23 @@
 Currently, emulators for the following systems can be installed with the RetroPie setup script:
 
-* AdvMAME
 * Amiga (UAE4All)
-* Atari 2600
-* Doom
-* Final Burn Alpha
-* Game Boy Advance
-* Game Boy Color
-* Game Gear
-* iMAME4All
+* Atari 2600 (RetroArch)
+* Doom (RetroArch)
+* Final Burn Alpha (RetroArch)
+* Game Boy Advance (RetroArch)
+* Game Boy Color (RetroArch)
+* Game Gear (Osmose)
+* Intellivision (RetroArch)
+* MAME (RetroArch)
+* MAME (AdvMAME)
 * NeoGeo (GnGeo)
-* Sega Master System
-* Sega Megadrive
-* Nintendo Entertainment System
-* PC Engine / Turbo Grafx 16
-* Playstation 1
+* NeoGeo (Genesis-GX, RetroArch)
+* Sega Master System (Osmose)
+* Sega Megadrive (DGEN)
+* Nintendo Entertainment System (RetroArch)
+* PC Engine / Turbo Grafx 16 (RetroArch)
+* Playstation 1 (RetroArch)
 * ScummVM
-* Super Nintendo Entertainment System
-* Sinclair ZX Spectrum
+* Super Nintendo Entertainment System (RetroArch)
+* Sinclair ZX Spectrum (Fuse)
 * Z Machine emulator (Frotz)
