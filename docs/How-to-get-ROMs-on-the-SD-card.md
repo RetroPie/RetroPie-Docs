@@ -15,4 +15,6 @@ The **directories for the ROM files** are located in ~/RetroPie/roms/SYSTEMNAME,
 
 You can find additional information about remotely accessing the RPi in the [eLinux wiki](http://elinux.org/RPi_Remote_Access).
 
+## Copying via Samba Shares
 
+The RetroPie Setup allows to install and configure Samba shares for each installed emulator. You can access this function in the RetroPie Setup Script in the menu "Setup". After the installation it is possible to copy ROMs to the Raspberry by using the corresponding Samba shares.
