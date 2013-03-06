@@ -14,3 +14,7 @@ BTW, for most of those cores you should be able to get at or near full speed, wi
 ## Settings
 
 Please see [this](https://github.com/petrockblog/RetroPie-Setup/wiki/RetroArch-Configuration) page for information about configuring RetroArch.
+
+## Shaders
+
+There is a post about the use of shaders for RetroArch at http://www.raspberrypi.org/phpBB3/viewtopic.php?p=303085#p303085.
