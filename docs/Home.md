@@ -7,6 +7,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 ## Tutorials
 * [First Installation](https://github.com/petrockblog/RetroPie-Setup/wiki/First-Installation)
 * [How to Get ROMs on the SD Card](https://github.com/petrockblog/RetroPie-Setup/wiki/How-to-get-ROMs-on-the-SD-card)
+* [Setting up a PS3 controller](https://github.com/petrockblog/RetroPie-Setup/wiki/Setting-up-a-PS3-controller)
 * [Setting up an XBox 360 Controller](https://github.com/petrockblog/RetroPie-Setup/wiki/Setting-up-the-XBox360-controller)
 
 ## Individual Components
