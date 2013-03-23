@@ -40,7 +40,7 @@ You need to insert the output of retroarch-joyconfig into ~/RetroPie/configs/all
 
 And to configure DGEN joystick / gamepad...
 
-1.  go to .dgen folder - cd .dgen
+1.  go to ~~/RetroPie/configs/all/
 
 2.  sudo nano dgenrc
 
