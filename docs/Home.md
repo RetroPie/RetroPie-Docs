@@ -17,6 +17,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [Module for GPIO interface for retro game controllers](https://github.com/petrockblog/RetroPie-Setup/wiki/Module-for-GPIO-interface-for-retro-game-controllers)
 * [PCSX Core (Playstation 1)](https://github.com/petrockblog/RetroPie-Setup/wiki/PCSX-Core-Playstation-1)
 * [RetroArch](https://github.com/petrockblog/RetroPie-Setup/wiki/RetroArch)
+* [RPix86](https://github.com/petrockblog/RetroPie-Setup/wiki/RPix86)
 
 ## Troubleshooting
 * [Amiga emulator (UAE4All)](https://github.com/petrockblog/RetroPie-Setup/wiki/Amiga-emulator-%28UAE4All%29)
