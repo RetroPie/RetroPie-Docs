@@ -38,14 +38,6 @@ This is normal. ES does not monitor input while an emulator is running. If you w
 
 This dot is the "fake" SDL window ES uses to get input. Actual rendering is done through OpenGL ES. If all you see is this dot, then odds are something went wrong initializing the OpenGL ES surface. Are you sure you're running at least the 192/64mb memory split?
 
-### These themes look wrong...
-
-At the moment, themes are designed around the "detailed" game list - they're meant to look [like this](http://aloshi.com/emulationstation#themes). If you don't have a gamelist.xml for at least one system, the basic view is used, which looks incorrect. This will be rectified with the newest set of themes, once RetroPie-Setup is updated to include them.
-
 ### ES doesn't detect my controller when started at boot!
 
 Your controller driver is likely being started after EmulationStation. An easy way around this is to add a "sleep" command in the EmulationStation start script in `/usr/bin/emulationstation`.  [More information here.](http://www.reddit.com/r/raspberry_pi/comments/16w9qn/emulationstation_and_a_logitech_dual_action/c816dz1)
-
-### My gamepad is interpreted as a keyboard, so I can't configure it!
-
-Unfortunately, due to a poor design choice on my part, keyboard controls aren't easily configurable. You'll need to modify the ES source code and recompile. Fortunately, this is actually pretty simple. [See this post for more details.](http://www.reddit.com/r/raspberry_pi/comments/18ljvr/xarcade_dual_on_retropie/c8fzn5a)
