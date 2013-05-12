@@ -1,0 +1,1 @@
+The gpSP emulator needs a GBA BIOS file in the directory of the gpsp binary. The RetroPie SD-card image, e.g., has the gpsp binary located in /home/pi/RetroPie/emulators/gpsp/raspberry/. Copy your GBA BIOS file into this directory.
