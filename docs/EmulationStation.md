@@ -1,7 +1,7 @@
 # EmulationStation
-This is the graphical front-end installed by RetroPie. It was developed by a guy named Aloshi, and is designed to allow you to use your Pi as if it were a retro console - with only a controller, not requiring a keyboard (after the initial setup). 
+This is the graphical front-end installed by RetroPie. It was developed by a guy named Aloshi, and is designed to allow you to use your Pi as if it were a retro console - with only a controller, not requiring a keyboard. 
 
-It was developed specifically for the Raspberry Pi, on the Raspberry Pi. However, it uses cross-platform libraries, so it can be run on pretty much any Linux machine. 
+It was developed specifically for the Raspberry Pi, on the Raspberry Pi. However, it uses cross-platform libraries, so it can be run on pretty much any Linux machine. If you try, you can also build it on Windows.
 
 # Help
 A great deal of information can be found in EmulationStation's README.md and THEMES.md, also viewable on GitHub. Some links:
@@ -41,3 +41,7 @@ This dot is the "fake" SDL window ES uses to get input. Actual rendering is done
 ### ES doesn't detect my controller when started at boot!
 
 Your controller driver is likely being started after EmulationStation. An easy way around this is to add a "sleep" command in the EmulationStation start script in `/usr/bin/emulationstation`.  [More information here.](http://www.reddit.com/r/raspberry_pi/comments/16w9qn/emulationstation_and_a_logitech_dual_action/c816dz1)
+
+### I don't have enough buttons to finish the Input Config screen?!
+
+That's a bug on my part.  [Work-around here.](https://github.com/Aloshi/EmulationStation/issues/67#issuecomment-16715011)
