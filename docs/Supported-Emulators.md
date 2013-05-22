@@ -4,7 +4,7 @@ Currently, emulators for the following systems can be installed with the RetroPi
 * Atari 2600 (RetroArch)
 * Doom (RetroArch)
 * Final Burn Alpha (RetroArch)
-* Game Boy Advance (RetroArch)
+* Game Boy Advance (gpSP)
 * Game Boy Color (RetroArch)
 * Game Gear (Osmose)
 * Intellivision (RetroArch)
