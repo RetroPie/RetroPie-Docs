@@ -12,6 +12,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [Setting up an XBox 360 Controller](https://github.com/petrockblog/RetroPie-Setup/wiki/Setting-up-the-XBox360-controller)
 
 ## Individual Components
+* [BasiliskII](https://github.com/petrockblog/RetroPie-Setup/wiki/BasiliskII)
 * [Emulation Station](https://github.com/petrockblog/RetroPie-Setup/wiki/EmulationStation)
 * [ES-scraper](https://github.com/petrockblog/RetroPie-Setup/wiki/ES-scraper)
 * [GPSP Emulator](https://github.com/petrockblog/RetroPie-Setup/wiki/The-gpSP-Emulator)
