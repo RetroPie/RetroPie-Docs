@@ -2,6 +2,7 @@ Currently, emulators for the following systems can be installed with the RetroPi
 
 * Amiga (UAE4All)
 * Atari 2600 (RetroArch)
+* Basilisk II (Apple emulator)
 * Doom (RetroArch)
 * Final Burn Alpha (RetroArch)
 * Game Boy Advance (gpSP)
@@ -18,6 +19,6 @@ Currently, emulators for the following systems can be installed with the RetroPi
 * PC Engine / Turbo Grafx 16 (RetroArch)
 * Playstation 1 (RetroArch)
 * ScummVM
-* Super Nintendo Entertainment System (RetroArch)
+* Super Nintendo Entertainment System (RetroArch, PiSNES, SNES-Rpi)
 * Sinclair ZX Spectrum (Fuse)
 * Z Machine emulator (Frotz)
