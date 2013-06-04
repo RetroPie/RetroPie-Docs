@@ -1,6 +1,6 @@
 # Retropie - Arch Linux Flavor
 
-This tutorial was written by r4_ (http://www.raspberrypi.org/phpBB3/viewtopic.php?f=78&t=46013).
+This tutorial was written by r4 (http://www.raspberrypi.org/phpBB3/viewtopic.php?f=78&t=46013).
 
 ## Description
 
