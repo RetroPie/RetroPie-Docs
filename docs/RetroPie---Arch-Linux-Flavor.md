@@ -1,5 +1,7 @@
 # Retropie - Arch Linux Flavor
 
+This tutorial was written by r4_ (http://www.raspberrypi.org/phpBB3/viewtopic.php?f=78&t=46013).
+
 ## Description
 
 A guide to build the retropie setup on Arch Linux. This guide is not all encompassing. It is merely a basic setup to build a similar environment offered on the official Retropie install script.
@@ -83,7 +85,7 @@ EmulationStation is found in the AUR.
         packer -S emulationstation-git
 ```
 
-### 5.1 Configuration:
+### 5.1 Configuration
 
 Taken from https://github.com/Aloshi/EmulationStation.
 
@@ -101,7 +103,7 @@ NOTE: If ~/.emulationstation/es_input.cfg is present but does not contain any av
 
 As long as ES hasn't frozen, you can always press F4 to close the application.
         
-### 5.2 Themes:
+### 5.2 Themes
 
 EmulationStation themes can be found in the AUR.
 ```shell
@@ -120,18 +122,17 @@ Create the necessary symlinks to the themes of interest.
 
 Consult http://aloshi.com/emulationstation for more information.
 
-### 5.3 Scraper:
+### 5.3 Scraper
 
 The scraper tool can be found in the AUR.
 ```shell
             packer -S emulationstation-scraper
 ```
 
-        i) Configuration
-               Open your systems config file ($HOME/.emulationstation/es_systems.cfg) 
-               and append the corresponding platform ID to each system:
+#### i) Configuration
+Open your systems config file ($HOME/.emulationstation/es_systems.cfg) and append the corresponding platform ID to each system:
 
-               Example:
+Example:
 ```shell
                    NAME=nes
                    DESCNAME=Nintendo Entertainment System
@@ -141,46 +142,39 @@ The scraper tool can be found in the AUR.
                    PLATFORMID=7
 ```
                
-               A list of supported platforms can be found here.
-                   https://github.com/elpendor/ES-scraper
+A list of supported platforms can be found here: https://github.com/elpendor/ES-scraper
 
-        ii) Downloading Boxart Images
-                Grab all boxart and descriptions by issuing the command below:
+#### ii) Downloading Boxart Images
+Grab all boxart and descriptions by issuing the command below:
 ```shell
                     'scraper -m -w 275'
 ```
 
-                The -m flag will put the tool in manual mode and prompt the user on
-                which image to download if more than one result shows. The -w flag will
-                modify the size of an image with a width larger than 275 pixels.
+The -m flag will put the tool in manual mode and prompt the user on which image to download if more than one result shows. The -w flag will modify the size of an image with a width larger than 275 pixels.
 
-                Note: I highly suggest manual mode as to ensure it grabs the right
-                      images.
+Note: I highly suggest manual mode as to ensure it grabs the right images.
 
-                Consult https://github.com/elpendor/ES-scraper for more information.
+Consult https://github.com/elpendor/ES-scraper for more information.
 
-Section 5) Launch EmulationStation at login:
-    Taken from https://wiki.archlinux.org/index.php/Start_X_at_Login and
-    adapted.
+## Section 6: Launch EmulationStation at login
+Taken from https://wiki.archlinux.org/index.php/Start_X_at_Login and adapted.
 
-    Issue the command below to ensure EmulationStation starts at login.
+Issue the command below to ensure EmulationStation starts at login.
 ```shell
-        'echo '[[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && emulationstation' >> ~/.bash_profile'
+        echo '[[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && emulationstation' >> ~/.bash_profile
 ```
 
-        Note: The single quotes around the string being echoed are important!
+Note: The single quotes around the string being echoed are important!
 
-Section 6) Auto login at boot
-    Taken from
-    https://wiki.archlinux.org/index.php/Automatic_login_to_virtual_console.
+## Section 7: Auto login at boot
+Taken from https://wiki.archlinux.org/index.php/Automatic_login_to_virtual_console.
 
-    First create a new directory named getty@tty1.service.d under /etc/systemd/system:
+First create a new directory named getty@tty1.service.d under /etc/systemd/system:
 ```shell
-        'mkdir /etc/systemd/system/getty@tty1.service.d'
+        mkdir /etc/systemd/system/getty@tty1.service.d
 ```
 
-    Then create a new file named autologin.conf and add it into the directory:
-        /etc/systemd/system/getty@tty1.service.d/autologin.conf
+Then create a new file named autologin.conf and add it into the directory /etc/systemd/system/getty@tty1.service.d/autologin.conf
 ```shell
         ---
         [Service]
@@ -188,8 +182,6 @@ Section 6) Auto login at boot
         ExecStart=-/sbin/agetty --autologin <username> --noclear %I 38400 linux
 ```
 
-
 ***
 
-Now you should have a working environment similar to what retropie offers but
-in Arch Linux. Enjoy! :)
+Now you should have a working environment similar to what retropie offers but in Arch Linux. Enjoy! :)
