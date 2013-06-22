@@ -1,4 +1,4 @@
-## Folders and Locations
+### Folders and Locations
 
 According to [this post](http://blog.petrockblock.com/forums/topic/intellivision-emulation/#post-2208):
 
