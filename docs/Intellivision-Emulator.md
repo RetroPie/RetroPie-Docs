@@ -14,7 +14,7 @@ sudo mkdir jzintv/rom
 ```
 and then I moved the exec.bin and gbrom.bin file from my intellivision rom directory:
 ```shell
-sudo mv ~/Retropie/roms/intellivision/* /usr/local/share/jzintv/rom
+sudo mv ~/RetroPie/roms/intellivision/* /usr/local/share/jzintv/rom
 ```
 
 Then I was able to launch my intellivision roms… hope this helps!
