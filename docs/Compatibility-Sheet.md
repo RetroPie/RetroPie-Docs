@@ -1,25 +1,88 @@
 ## Video output
 
-### HDMI
+### HDMI Without Using Dispmanx Library
 
-|Emulator|System|Dispmanx||Graphics Working|Sound Working|Good Performance|Test Game|
-|---|---|---|---|---|---|---|---
-|PocketSNES|SNES| ||X|X|X|Super Mario Kart|
-|PiSNES|SNES| ||||||
-|SNES9X-RPi|SNES| ||||||
-|DGEN|Megadrive/Genesis| ||X|X|X|Streets of Rage 2|
-||NES|||||||
-|Osmose|Gamegear|||||||
-||Atari|||||||
-|PCSX ReArmed|PSX|||||||
-|prboom|Doom|||||||
-|eDuke32|Duke3D|||||||
-|gngeo-pi-0.85|NeoGeo|||||||
-|gngeo-0.7|NeoGeo|||||||
-|rpix86|PC|||||||
+|Emulator|System|Graphics Working|Sound Working|Good Performance|Test Game|
+|---|---|---|---|---|---|---
+|uac4all|Amiga||||||
+|BasiliskII|Apple II||||||
+||Atari 2600||||||
+|Vice|C64||||||
+|Cave Story|Cave Story||||||
+|prboom|Doom||||||
+|eDuke32|Duke3D||||||
+||Gameboy||||||
+|GPSP|Gameboy Advance||||||
+||Gameboy Color||||||
+|Osmose|Gamegear||||||
+||Master System||||||
+|DGEN|Megadrive/Genesis| |||||
+||NES||||||
+|PocketSNES|SNES| |||||
+|PiSNES|SNES| |||||
+|SNES9X-RPi|SNES| |||||
+|gngeo-0.7|NeoGeo||||||
+|gngeo-pi-0.85|NeoGeo||||||
+|PCSX ReArmed|PSX||||||
+|rpix86|PC||||||
+||ScummVM||||||
+||ZXMachine||||||
 
-### Composite
+### Composite Without Using Dispmanx Library
 
+|Emulator|System|Graphics Working|Sound Working|Good Performance|Test Game|
+|---|---|---|---|---|---|---
+|uac4all|Amiga||||||
+|BasiliskII|Apple II||||||
+||Atari 2600||||||
+|Vice|C64||||||
+|Cave Story|Cave Story||||||
+|prboom|Doom||||||
+|eDuke32|Duke3D||||||
+||Gameboy||||||
+|GPSP|Gameboy Advance||||||
+||Gameboy Color||||||
+|Osmose|Gamegear||||||
+||Master System||||||
+|DGEN|Megadrive/Genesis| |||||
+||NES||||||
+|PocketSNES|SNES| |||||
+|PiSNES|SNES| |||||
+|SNES9X-RPi|SNES| |||||
+|gngeo-0.7|NeoGeo||||||
+|gngeo-pi-0.85|NeoGeo||||||
+|PCSX ReArmed|PSX||||||
+|rpix86|PC||||||
+||ScummVM||||||
+||ZXMachine||||||
+
+### Composite Using Dispmanx Library
+
+|Emulator|System|Graphics Working|Sound Working|Good Performance|Test Game|
+|---|---|---|---|---|---|---
+|uac4all|Amiga||||||
+|BasiliskII|Apple II||||||
+||Atari 2600||||||
+|Vice|C64||||||
+|Cave Story|Cave Story||||||
+|prboom|Doom||||||
+|eDuke32|Duke3D||||||
+||Gameboy||||||
+|GPSP|Gameboy Advance||||||
+||Gameboy Color||||||
+|Osmose|Gamegear||||||
+||Master System||||||
+|DGEN|Megadrive/Genesis| |||||
+||NES||||||
+|PocketSNES|SNES| |||||
+|PiSNES|SNES| |||||
+|SNES9X-RPi|SNES| |||||
+|gngeo-0.7|NeoGeo||||||
+|gngeo-pi-0.85|NeoGeo||||||
+|PCSX ReArmed|PSX||||||
+|rpix86|PC||||||
+||ScummVM||||||
+||ZXMachine||||||
 
 |Video output|Emulator|System|SDL lib|Performance|Graphics|Sound|Test Rom|Emulation Station Command|Info
 |---|---|---|---|---|---|---|---|---|---
