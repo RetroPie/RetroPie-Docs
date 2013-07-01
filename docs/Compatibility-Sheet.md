@@ -1,3 +1,26 @@
+## Video output
+
+### HDMI
+
+|Emulator|System|Dispmanx||Graphics Working|Sound Working|Good Performance|Test Game|
+|---|---|---|---|---|---|---|---
+|PocketSNES|SNES| ||X|X|X|Super Mario Kart|
+|PiSNES|SNES| ||||||
+|SNES9X-RPi|SNES| ||||||
+|DGEN|Megadrive/Genesis| ||X|X|X|Streets of Rage 2|
+||NES|||||||
+|Osmose|Gamegear|||||||
+||Atari|||||||
+|PCSX ReArmed|PSX|||||||
+|prboom|Doom|||||||
+|eDuke32|Duke3D|||||||
+|gngeo-pi-0.85|NeoGeo|||||||
+|gngeo-0.7|NeoGeo|||||||
+|rpix86|PC|||||||
+
+### Composite
+
+
 |Video output|Emulator|System|SDL lib|Performance|Graphics|Sound|Test Rom|Emulation Station Command|Info
 |---|---|---|---|---|---|---|---|---|---
 |Composite|DGEN|MegaDrive|dispmanx|Good|Good|Good|Sonic the Hedgehog.smd|"export LD_LIBRARY_PATH=""/home/xbian/SDL12-kms-dispmanx/build/.libs""| /home/xbian/RetroPie/emulators/dgen-sdl/dgen %ROM%"|
