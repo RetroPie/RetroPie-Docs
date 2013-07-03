@@ -25,6 +25,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 
 ## Troubleshooting
 * [Amiga emulator (UAE4All)](https://github.com/petrockblog/RetroPie-Setup/wiki/Amiga-emulator-%28UAE4All%29)
+* [Compatibility Sheet](https://github.com/petrockblog/RetroPie-Setup/wiki/Compatibility-Sheet)
 * [Control Issues](https://github.com/petrockblog/RetroPie-Setup/wiki/Control-Issues)
 * [Duke 3D](https://github.com/petrockblog/RetroPie-Setup/wiki/Duke-3D-Troubleshooting)
 * [MAME Emulator](https://github.com/petrockblog/RetroPie-Setup/wiki/iMAME4All)
