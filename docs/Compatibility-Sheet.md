@@ -68,7 +68,7 @@ These tables show the compatibility of the RetroPie installatoin for HDMI and co
 |Stella-libretro|Atari 2600|YES (with es_systems modification)|YES|YES|Enduro, Asteroids, Mario Bros|
 |Vice|C64|?|?|?|?|
 |Cave Story|Cave Story|?|?|?|?|
-|prboom|Doom|?|?|?|?|
+|prboom|Doom|NO|NO|NO|(Note: works if installed separately, for some reason)|
 |eDuke32|Duke3D|?|?|?|?|
 |Gambatte-libretro|Gameboy|?|?|?|?|
 |GPSP|Gameboy Advance|?|?|?|?|
@@ -83,7 +83,7 @@ These tables show the compatibility of the RetroPie installatoin for HDMI and co
 |gngeo-0.7|NeoGeo|?|?|?|?|
 |gngeo-pi-0.85|NeoGeo|?|?|?|?|
 |PCSX ReArmed|PSX|?|?|?|?|
-|rpix86|PC|YES|USUALLY|YES|Skyroads, Elite, Star Control|
+|rpix86|PC|YES|VARIES|VARIES|Skyroads, Elite, Star Control|
 |ScumMVM|ScummVM|?|?|?|?|
 |Fuse|ZXMachine|?|?|?|?|
 
