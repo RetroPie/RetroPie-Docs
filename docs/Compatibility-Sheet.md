@@ -64,8 +64,8 @@ These tables show the compatibility of the RetroPie installatoin for HDMI and co
 |Emulator|System|Graphics Working|Sound Working|Good Performance|Test Game|
 |---|---|---|---|---|---
 |uac4all|Amiga|?|?|?|?|
-|BasiliskII|Apple II|?|?|?|?|
-|Stella-libretro|Atari 2600|?|?|?|?|
+|BasiliskII|Apple II|YES|YES|YES|Sundog: Frozen Legacy|
+|Stella-libretro|Atari 2600|YES (with es_systems modification)|YES|YES||
 |Vice|C64|?|?|?|?|
 |Cave Story|Cave Story|?|?|?|?|
 |prboom|Doom|?|?|?|?|
@@ -83,7 +83,7 @@ These tables show the compatibility of the RetroPie installatoin for HDMI and co
 |gngeo-0.7|NeoGeo|?|?|?|?|
 |gngeo-pi-0.85|NeoGeo|?|?|?|?|
 |PCSX ReArmed|PSX|?|?|?|?|
-|rpix86|PC|?|?|?|?|
+|rpix86|PC|YES|USUALLY|YES|Skyroads, Elite, Star Control|
 |ScumMVM|ScummVM|?|?|?|?|
 |Fuse|ZXMachine|?|?|?|?|
 
