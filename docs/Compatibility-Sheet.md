@@ -65,7 +65,7 @@ These tables show the compatibility of the RetroPie installatoin for HDMI and co
 |---|---|---|---|---|---
 |uac4all|Amiga|?|?|?|?|
 |BasiliskII|Apple II|YES|YES|YES|Sundog: Frozen Legacy|
-|Stella-libretro|Atari 2600|YES (with es_systems modification)|YES|YES||
+|Stella-libretro|Atari 2600|YES (with es_systems modification)|YES|YES|Enduro, Asteroids, Mario Bros|
 |Vice|C64|?|?|?|?|
 |Cave Story|Cave Story|?|?|?|?|
 |prboom|Doom|?|?|?|?|
