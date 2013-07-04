@@ -14,6 +14,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 
 ## Individual Components
 * [BasiliskII](https://github.com/petrockblog/RetroPie-Setup/wiki/BasiliskII)
+* [DGEN - Megadrive/Genesis Emulator](https://github.com/petrockblog/RetroPie-Setup/wiki/DGEN---Megadrive-Genesis-Emulator)
 * [Emulation Station](https://github.com/petrockblog/RetroPie-Setup/wiki/EmulationStation)
 * [ES-scraper](https://github.com/petrockblog/RetroPie-Setup/wiki/ES-scraper)
 * [GPSP Emulator](https://github.com/petrockblog/RetroPie-Setup/wiki/The-gpSP-Emulator)
