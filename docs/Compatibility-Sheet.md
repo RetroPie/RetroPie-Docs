@@ -111,7 +111,7 @@ These tables show the compatibility of the RetroPie installatoin for HDMI and co
 |PocketSNES|SNES|?|?|?|?|
 |PiSNES|SNES|NO|NO|NO|F-Zero|
 |SNES9X-RPi|SNES|?|?|?|?|
-|gngeo-0.7|NeoGeo|?|?|?|?|
+|gngeo-0.7|NeoGeo|NO|NO|NO|Double Dragon|
 |gngeo-pi-0.85|NeoGeo|?|?|?|?|
 |PCSX ReArmed|PSX|?|?|?|?|
 |rpix86|PC|?|?|?|?|
