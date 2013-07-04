@@ -6,6 +6,7 @@ These tables show the compatibility of the RetroPie installatoin for HDMI and co
 
 |Emulator|System|Graphics Working|Sound Working|Good Performance|Test Game|
 |---|---|---|---|---|---
+|iMAME4All|MAME|YES|YES|YES|Rainbow Islands|
 |uac4all|Amiga|?|?|?|?|
 |BasiliskII|Apple II|?|?|?|?|
 |Stella-libretro|Atari 2600|YES|YES|YES|Frogger.bin|
@@ -18,7 +19,7 @@ These tables show the compatibility of the RetroPie installatoin for HDMI and co
 |Gambatte-libretro|Gameboy Color|YES|YES|YES|Metal Gear Solid.gbc|
 |Osmose|Gamegear|YES|YES|YES|Sonic the Hedgehog - Triple Trouble.gg|
 |Osmose|Master System|YES|YES|YES|Alex Kidd in Miracle World.sms|
-|DGEN|Megadrive/Genesis|YES|YES|YES|Streets of Rage 2.SMD|
+|DGEN|Megadrive/Genesis|YES|YES|YES|Streets of Rage 2.SMD, Sonic the Hedgehog 1|
 |FCEU-libretro|NES|YES|YES|YES|Super Pitfall.nes|
 |PocketSNES-libretro|SNES|YES|YES|YES|Super Mario Kart.smc|
 |PiSNES|SNES|?|?|?|?|
@@ -63,6 +64,7 @@ These tables show the compatibility of the RetroPie installatoin for HDMI and co
 
 |Emulator|System|Graphics Working|Sound Working|Good Performance|Test Game|
 |---|---|---|---|---|---
+|iMAME4All|MAME|YES|YES|YES|Rainbow Islands|
 |uac4all|Amiga|?|?|?|?|
 |BasiliskII|Apple II|YES|YES|YES|Sundog: Frozen Legacy|
 |Stella-libretro|Atari 2600|YES (with es_systems modification)|YES|YES|Enduro, Asteroids, Mario Bros|
@@ -75,10 +77,10 @@ These tables show the compatibility of the RetroPie installatoin for HDMI and co
 |Gambatte-libretro|Gameboy Color|?|?|?|?|
 |Osmose|Gamegear|?|?|?|?|
 |Osmose|Master System|?|?|?|?|
-|DGEN|Megadrive/Genesis|?|?|?|?|
+|DGEN|Megadrive/Genesis|Black|YES|NO|Sonic the Hedgehog  1|
 |FCEU-libretro|NES|?|?|?|?|
 |PocketSNES|SNES|?|?|?|?|
-|PiSNES|SNES|?|?|?|?|
+|PiSNES|SNES|YES|YES|YES|F-Zero|
 |SNES9X-RPi|SNES|?|?|?|?|
 |gngeo-0.7|NeoGeo|?|?|?|?|
 |gngeo-pi-0.85|NeoGeo|?|?|?|?|
@@ -91,22 +93,23 @@ These tables show the compatibility of the RetroPie installatoin for HDMI and co
 
 |Emulator|System|Graphics Working|Sound Working|Good Performance|Test Game|
 |---|---|---|---|---|---
+|iMAME4All|MAME|NO|NO|NO|Rainbow Islands|	
 |uac4all|Amiga|?|?|?|?|
 |BasiliskII|Apple II|?|?|?|?|
 |Stella-libretro|Atari 2600|?|?|?|?|
 |Vice|C64|?|?|?|?|
 |Cave Story|Cave Story|?|?|?|?|
-|prboom|Doom|?|?|?|?|
+|prboom|Doom|NO|NO|NO|Doom, Plutonium|
 |eDuke32|Duke3D|?|?|?|?|
 |Gambatte-libretro|Gameboy|?|?|?|?|
 |GPSP|Gameboy Advance|?|?|?|?|
 |Gambatte-libretro|Gameboy Color|?|?|?|?|
 |Osmose|Gamegear|?|?|?|?|
 |Osmose|Master System|?|?|?|?|
-|DGEN|Megadrive/Genesis|?|?|?|?|
+|DGEN|Megadrive/Genesis|YES|YES|YES|Sonic the Hedgehog 1|
 |FCEU-libretro|NES|?|?|?|?|
 |PocketSNES|SNES|?|?|?|?|
-|PiSNES|SNES|?|?|?|?|
+|PiSNES|SNES|NO|NO|NO|F-Zero|
 |SNES9X-RPi|SNES|?|?|?|?|
 |gngeo-0.7|NeoGeo|?|?|?|?|
 |gngeo-pi-0.85|NeoGeo|?|?|?|?|
