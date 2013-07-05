@@ -19,7 +19,7 @@ You can find additional information about remotely accessing the RPi in the [eLi
 
 The RetroPie Setup allows to install and configure Samba shares for each installed emulator. You can access this function in the RetroPie Setup Script in the menu "Setup". After the installation it is possible to copy ROMs to the Raspberry by using the corresponding Samba shares.
 
-## Using USB-sticks
+## Using USB-Sticks
 
 You also have the possibility to use a service that automatically copies ROMs from an USB stick into the correct directories. You can enable this service with the RetroPie Setup Script from within the "Setup" menu. If you are using the SD-card image download of the RetroPie Project, this copy service is already enabled. 
 
