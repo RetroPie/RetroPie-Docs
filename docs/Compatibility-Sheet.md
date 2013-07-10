@@ -69,9 +69,9 @@ These tables show the compatibility of the RetroPie installatoin for HDMI and co
 |BasiliskII|Apple II|YES|YES|YES|Sundog: Frozen Legacy|
 |Stella-libretro|Atari 2600|YES (with es_systems modification)|YES|YES|Enduro, Asteroids, Mario Bros|
 |Vice|C64|?|?|?|?|
-|Cave Story|Cave Story|?|?|?|?|
+|Cave Story|Cave Story|YES|YES|YES|N/A|
 |prboom|Doom|NO|NO|NO|(Note: works if installed separately, for some reason)|
-|eDuke32|Duke3D|?|?|?|?|
+|eDuke32|Duke3D|NO|NO|NO|N/A|
 |Gambatte-libretro|Gameboy|?|?|?|?|
 |GPSP|Gameboy Advance|?|?|?|?|
 |Gambatte-libretro|Gameboy Color|?|?|?|?|
@@ -84,7 +84,7 @@ These tables show the compatibility of the RetroPie installatoin for HDMI and co
 |SNES9X-RPi|SNES|?|?|?|?|
 |gngeo-0.7|NeoGeo|?|?|?|?|
 |gngeo-pi-0.85|NeoGeo|?|?|?|?|
-|PCSX ReArmed|PSX|?|?|?|?|
+|PCSX ReArmed|PSX|VARIES|VARIES|VARIES|Metal Gear Solid, X-COM UFO Defense (PSX)|
 |rpix86|PC|YES|VARIES|VARIES|Skyroads, Elite, Star Control|
 |ScumMVM|ScummVM|?|?|?|?|
 |Fuse|ZXMachine|?|?|?|?|
