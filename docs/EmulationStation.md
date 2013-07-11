@@ -44,4 +44,4 @@ Your controller driver is likely being started after EmulationStation. An easy w
 
 ### I don't have enough buttons to finish the Input Config screen?!
 
-That's a bug on my part.  [Work-around here.](https://github.com/Aloshi/EmulationStation/issues/67#issuecomment-16715011)
+[Work-around here.](https://github.com/Aloshi/EmulationStation/issues/67#issuecomment-16715011)
