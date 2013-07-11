@@ -7,6 +7,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 ## Tutorials
 * [First Installation](https://github.com/petrockblog/RetroPie-Setup/wiki/First-Installation)
 * [How to Get ROMs on the SD Card](https://github.com/petrockblog/RetroPie-Setup/wiki/How-to-get-ROMs-on-the-SD-card)
+* [How to Update an Existing RetroPie Installation](https://github.com/petrockblog/RetroPie-Setup/wiki/How-to-Update-an-Existing-RetroPie-Installation)
 * [RetroPie Arch Linux Flavor](https://github.com/petrockblog/RetroPie-Setup/wiki/RetroPie-Arch-Linux-Flavor)
 * [Setting up an N64 controller](https://github.com/petrockblog/RetroPie-Setup/wiki/Setting-up-an-N64-controller)
 * [Setting up a PS3 controller](https://github.com/petrockblog/RetroPie-Setup/wiki/Setting-up-a-PS3-controller)
