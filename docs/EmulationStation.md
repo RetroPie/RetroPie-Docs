@@ -45,3 +45,7 @@ Your controller driver is likely being started after EmulationStation. An easy w
 ### I don't have enough buttons to finish the Input Config screen?!
 
 [Work-around here.](https://github.com/Aloshi/EmulationStation/issues/67#issuecomment-16715011)
+
+### I messed up on the initial prompt that appears when Emulation Station starts for the first time. My controls are completely messed up and out of order. Is there a way to redo this prompt?
+
+You need to delete the configuration file that Emulation Station uses by invoking ```rm /home/pi/.emulationstation/es_input.cfg```. Note that you exit Emulation Station by pressing ```F4```. When you (re-)start Emulation Station, the configuration prompt will appear again.
