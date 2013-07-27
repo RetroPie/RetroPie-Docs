@@ -20,6 +20,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [Duke 3D](https://github.com/petrockblog/RetroPie-Setup/wiki/Duke-3D-Troubleshooting)
 * [Emulation Station](https://github.com/petrockblog/RetroPie-Setup/wiki/EmulationStation)
 * [ES-scraper](https://github.com/petrockblog/RetroPie-Setup/wiki/ES-scraper)
+* [GnGeo-Pi](https://github.com/petrockblog/RetroPie-Setup/wiki/GnGeo-Pi)
 * [GPSP Emulator](https://github.com/petrockblog/RetroPie-Setup/wiki/The-gpSP-Emulator)
 * [Intellivision Emulator](https://github.com/petrockblog/RetroPie-Setup/wiki/Intellivision-Emulator)
 * [Module for GPIO interface for retro game controllers](https://github.com/petrockblog/RetroPie-Setup/wiki/Module-for-GPIO-interface-for-retro-game-controllers)
