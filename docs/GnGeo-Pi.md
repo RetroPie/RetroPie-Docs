@@ -1,1 +1,1 @@
-Here comes the description.
+GnGeo-RPi can be installed via the RetroPie Setup Script. You can find more information in the wiki at https://github.com/ymartel06/GnGeo-Pi/wiki.
