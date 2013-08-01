@@ -55,3 +55,7 @@ If your config is not working well, delete the joypad configuration lines in `Re
 (Delete the lines located at the bottom of the file, starting with line `input_player1_joypad_index = "0"`)
 
 Now just reboot and voila !
+
+## Xbox 360 controller glitchy?
+
+According to [this post](https://github.com/petrockblog/RetroPie-Setup/issues/214#issuecomment-21796016) it might help to add the line ```dwc_otg.speed=1```to the file ```cmdline.txt```.
