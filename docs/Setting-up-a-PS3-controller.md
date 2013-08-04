@@ -25,8 +25,8 @@ wget http://www.pabr.org/sixlinux/sixpair.c
 gcc -o sixpair sixpair.c -lusb
 ```
 
-however sixpair must be run as root, so connect via USB and run "sudo ./sixpair"
-if successful you should see: 
+however sixpair must be run as root, so connect via USB and run ```sudo ./sixpair```.
+If successful you should see: 
 ```shell
 Current Bluetooth master: DE:AD:BE:EF:00:00
 Setting master bd_addr to: 00:1F:81:00:06:20 
