@@ -10,6 +10,8 @@ It appears that gpsp is not run via libretro thus its not configured like the re
 
 ## Games are not working/White Screen
 
+From [here](https://github.com/petrockblog/RetroPie-Setup/issues/218):
+
 GPSP uses a File called game_config.txt.
 
 > What is this file??? game_config.txt is a database of settings on a
