@@ -8,7 +8,7 @@ From [here](https://github.com/petrockblog/RetroPie-Setup/issues/193#issuecommen
 
 It appears that gpsp is not run via libretro thus its not configured like the rest of RetroArch. My solution was to run gpsp from command line with no arguments (sudo ./~/RetroPie/emulators/gpsp/raspberrypi/gpsp ) and configure my buttons through the onscreen menu there. This generated a gpsp.cfg file (binary).
 
-## Games are not working/White Screen
+## Games not working/White Screen
 
 From [here](https://github.com/petrockblog/RetroPie-Setup/issues/218):
 
