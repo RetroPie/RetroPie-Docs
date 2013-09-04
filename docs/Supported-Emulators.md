@@ -1,6 +1,7 @@
 Currently, emulators for the following systems can be installed with the RetroPie setup script:
 
 * Amiga (UAE4All)
+* Arcade (PiFBA)
 * Atari 2600 (RetroArch)
 * Basilisk II (Apple emulator)
 * C64 (VICE)
