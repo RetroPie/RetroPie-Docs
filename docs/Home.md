@@ -24,6 +24,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [GPSP Emulator](https://github.com/petrockblog/RetroPie-Setup/wiki/The-gpSP-Emulator)
 * [Intellivision Emulator](https://github.com/petrockblog/RetroPie-Setup/wiki/Intellivision-Emulator)
 * [Module for GPIO interface for retro game controllers](https://github.com/petrockblog/RetroPie-Setup/wiki/Module-for-GPIO-interface-for-retro-game-controllers)
+* [Mo-Xin Driver](https://github.com/petrockblog/RetroPie-Setup/wiki/Troubles-with-the-Mo-Xin-Driver)
 * [PCSX Core (Playstation 1)](https://github.com/petrockblog/RetroPie-Setup/wiki/PCSX-Core-Playstation-1)
 * [RetroArch](https://github.com/petrockblog/RetroPie-Setup/wiki/RetroArch)
 * [RPix86](https://github.com/petrockblog/RetroPie-Setup/wiki/RPix86)
