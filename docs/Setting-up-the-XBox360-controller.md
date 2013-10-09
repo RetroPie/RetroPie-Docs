@@ -25,7 +25,7 @@ Notice the `sleep 1` between each instance: this prevents the RPi from setting r
 
 Another way is to specify this single command :
 
-    xboxdrv -D i 0 --next-controller -i 1 --next-controller -i 2 --next-controller -i 3 --dbus disabled
+    xboxdrv -D i 0 --next-controller -i 1 --next-controller -i 2 --next-controller -i 3 --deadzone 4000 --dbus disabled
 
 After reboot when your controllers are detected, you have to configure RetroPie to use them:
 
