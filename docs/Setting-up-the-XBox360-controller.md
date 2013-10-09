@@ -23,6 +23,10 @@ You **must** swich-on your pads before booting the raspberry.
 
 Notice the `sleep 1` between each instance: this prevents the RPi from setting random controllers with random led status; adjust timing if necessary.
 
+Another way is to specify this single command :
+
+    xboxdrv -D i 0 --next-controller -i 1 --next-controller -i 2 --next-controller -i 3 --dbus disabled
+
 After reboot when your controllers are detected, you have to configure RetroPie to use them:
 
 Go to the `retroarch-joyconfig` folder (binary for configuring joypads for RetroArch);
