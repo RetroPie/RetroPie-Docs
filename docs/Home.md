@@ -11,6 +11,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [RetroPie Arch Linux Flavor](https://github.com/petrockblog/RetroPie-Setup/wiki/RetroPie-Arch-Linux-Flavor)
 * [Setting up an N64 controller](https://github.com/petrockblog/RetroPie-Setup/wiki/Setting-up-an-N64-controller)
 * [Setting up a PS3 controller](https://github.com/petrockblog/RetroPie-Setup/wiki/Setting-up-a-PS3-controller)
+* [Setting up wiimotes with classic controllers](https://github.com/petrockblog/RetroPie-Setup/wiki/Wiimotes-with-classic-controllers)
 * [Setting up an XBox 360 Controller](https://github.com/petrockblog/RetroPie-Setup/wiki/Setting-up-the-XBox360-controller)
 
 ## Individual Components
