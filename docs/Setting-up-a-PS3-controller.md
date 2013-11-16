@@ -56,6 +56,6 @@ sudo update-rc.d sixad defaults
 reboot
 ```
 
-if you have any issues with the controller you can debug it with "sudo jstest / dev/input/js0"
+if you have any issues with the controller you can debug it with `sudo jstest /dev/input/js0`
 
 this Guide, we have thanks to Donnerstag over at http://booting-rpi.blogspot.ro/ as well as: http://blog.onsw.net/yuta/  (credit must go where its due :3)
