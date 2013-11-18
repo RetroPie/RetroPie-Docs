@@ -50,4 +50,4 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [Does anybody know if there's a way to edit the retroarch.cfg to give me the ability to exit an emulator by using the controller?](https://github.com/petrockblog/RetroPie-Setup/wiki/Does-anybody-know-if-there%27s-a-way-to-edit-the-retroarch.cfg-to-give-me-the-ability-to-exit-an-emulator-by-using-the-controller%3F)
 * [Does Super Mario Allstars work?](https://github.com/petrockblog/RetroPie-Setup/wiki/Does-Super-Mario-All-Stars-work%3F)
 * [Which memory split should I use?](https://github.com/petrockblog/RetroPie-Setup/wiki/Which-memory-split-should-I-use%3F)
-* [Which emulators can currently be installed with the script?](https://github.com/petrockblog/RetroPie-Setup/wiki/Supported-Emulators)
+* [Which emulators can currently be installed with the script?](https://github.com/petrockblog/RetroPie-Setup/wiki/Supported-Systems-Emulators)
