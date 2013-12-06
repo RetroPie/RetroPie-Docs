@@ -43,3 +43,6 @@ DGEN sound configuration (according to [this post](http://www.raspberrypi.org/ph
 > if anyone has sound issues with DGen - try changing the int_soundrate to 44100
 
 > worked for me.
+
+***
+Emulation is faster when disabling rewind in retroarch.cfg
