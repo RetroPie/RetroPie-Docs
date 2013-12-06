@@ -1,5 +1,5 @@
 ## Location of the BIOS
-## Updated by FreezX 12/06/13 with confirmed working BIOS configuration
+
 
 Create the directory to store BIOS files:
 
