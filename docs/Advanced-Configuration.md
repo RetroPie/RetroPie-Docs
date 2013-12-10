@@ -1,6 +1,11 @@
 *IN PROCESS*
 
-You did the steps in [First Installation](First-Installation), basically everything works, but some things could just run better. This tutorial is intended to describe the next steps after a successful installation, to give RetroPie the necessary finishing touches.
+You did the steps in [First Installation](First-Installation), basically everything works, but some things could just run better. This tutorial is intended to describe the next steps after a successful installation, to give RetroPie the necessary finishing touches. Not all points will fit to your configuration. The core components:
+* HDTV and VGA mode
+* Xbox 360 Controller
+* Overclocking
+* Emulationstation and emulators adjustments
+* Bios files
 
 ### VGA mode and overscan
 First things first. If you have an HDTV and the Raspberry Pi is connected via HDMI to it, I highly recommend you switch to VGA Mode. This is for a better performance (1080p/720p vs. 480p) in _emulationstation_ and the emulators run anyway in 480p. HDMI Group 1 stands for CEA and Mode 1 is VGA. More Infos [here](http://elinux.org/RPiconfig#Video_mode_options). You should also set the overscan scale to one. Otherwise emulationstation doesn't start or the scaling is incorrect. 
@@ -74,7 +79,7 @@ audio_out_rate = 44100
 As you can see, I've changed only the _audio out rate_. The default driver _alsathread_ works for me like a charm.
 ***
 ### Xbox 360 Controller
-Setup and configuration see this [Wiki Page](Setting-up-the-XBox360-controller). The "third possibility" is from me. I wrote an _init.d_ script and I recommend to use xboxdrv with the daemon option, because of less use of CPU and RAM. 
+Setup and configuration see this [Wiki Page](Setting-up-the-XBox360-controller). The "third possibility" is from me. I wrote an _init.d_ script and I recommend to use xboxdrv with the daemon option, because of less use of CPU and RAM. Furthermore I had to set _dwc otg.speed_.
 ***
 ### Emulationstation adjustments
 There are a few adjustments for emulationstation. In my case the input for my Xbox 360 Controller and some entries for the systems, aka emulators.  
@@ -149,8 +154,107 @@ COMMAND=/home/pi/RetroPie/supplementary/runcommand/runcommand.sh 1 "/home/pi/Ret
 ...
 ```
 ***
-### Retroarch adjustments
+### Xbox 360 Controller button configuration for retroarch and final burn alpha
+**`/home/pi/RetroPie/configs/all/retroarch.cfg`**
+```
+#Player 1
+input_player1_joypad_index = 0
+input_player1_b_btn = 6
+input_player1_a_btn = 4
+input_player1_y_btn = 7
+input_player1_x_btn = 5
+input_player1_l_btn = 10
+input_player1_r_btn = 11
+input_player1_start_btn = 13
+input_player1_select_btn = 12
+input_player1_up_btn = 0
+input_player1_down_btn = 1
+input_player1_left_btn = 2
+input_player1_right_btn = 3
+input_exit_emulator_btn = 15
+input_menu_toggle_btn = 16
 
+#Player 2
+input_player2_joypad_index = 1
+input_player2_b_btn = 6
+input_player2_a_btn = 4
+input_player2_y_btn = 7
+input_player2_x_btn = 5
+input_player2_l_btn = 10
+input_player2_r_btn = 11
+input_player2_start_btn = 13
+input_player2_select_btn = 12
+input_player2_up_btn = 0
+input_player2_down_btn = 1
+input_player2_left_btn = 2
+input_player2_right_btn = 3
+```
+_input exit emulator_ to exit the emulator and return to emulationstation._input menu toggle_ to show the retroarch menu (e.g. to set the aspect ratio, save/load the game, etc.)
 
+**`/home/pi/RetroPie/emulators/pifba/fba2x.cfg`**
+```
+[Joystick]
+A_1=4
+B_1=5
+X_1=6
+Y_1=7
+L_1=10
+R_1=11
+START_1=13
+SELECT_1=12
+#Joystick axis
+JA_LR=0
+JA_UD=1
+
+#player 2 button configuration
+A_2=4
+B_2=5
+X_2=6
+Y_2=7
+L_2=10
+R_2=11
+START_2=13
+SELECT_2=12
+#Joystick axis
+JA_LR_2=0
+JA_UD_2=1
+```
+Up to now, I didn't figure out, how to change the configuration from the analog sticks to the digipad. To exit the emulator, press START and SELECT together.
+***
+### Bios files
+Neo Geo, Mega CD, PC Engine CD and Playstation need their BIOS. There are many suggestions out there and only a few will work. It's neccassary to put the bios files and the right directory and the file must have the right name. There are some "bios options", which you can set on most emulators, but they didn't work for me.  
+Create a directory called "bios" under /home/pi/RetroPie:  
+`mkdir bios /home/pi/RetroPie`  
+Add the following line to retroarch.cfg  
+**`/home/pi/RetroPie/configs/all/retroarch.cfg`**  
+`system_directory = /home/pi/RetroPie/bios`  
+
+system | filename  | directory
+-------|-----------|----------
+Neo Geo | neogeo.zip | /home/pi/RetroPie/roms/neogeo
+PC Engine | syscard3.pce | /home/pi/RetroPie/bios
+Playstation | scph7502.bin | /home/pi/RetroPie/bios
+Mega CD (EU) | eu_mcd1_9210.bin | /home/pi/RetroPie/bios
+Mega CD (JP) | jp_mcd1_9112.bin | /home/pi/RetroPie/bios
+Mega CD (USA) | us_scd1_9210.bin | /home/pi/RetroPie/bios
+
+***
+### Misc
+For retroarch I set the _core provided_ aspect ratio (4:3):  
+**`/home/pi/RetroPie/configs/all/retroarch.cfg`**
+aspect_ratio_index = "6"
+
+I set some aliases in _.bashrc_
+**`/home/pi/.bashrc`**
+```
+alias l='ls -alhF'
+alias ..='cd ..'
+alias roms='cd /home/pi/RetroPie/roms/'
+alias es='/usr/bin/emulationstation'
+alias rpies='sudo RetroPie-Setup/retropie_setup.sh'
+alias scraper='python /home/pi/RetroPie/supplementary/ES-scraper/scraper.py -w 280 -m -p'
+alias temp='vcgencmd measure_temp'
+```
+***
 
 -- MasteRehm (initial 10/12/13)
