@@ -132,7 +132,7 @@ _DP = DigiPad_
 **`/home/pi/.emulationstation/es_systems.cfg`**  
 Hint: The order of the emulators in this file, are exactly the order in emulationstation.  
 _Sega Master System_  
-For the _Sega Master System II_ entry, I change the command line and therefore the emulator to _retroarch_. Osmose seems to me the better one, but it lacks in this version of a controller button configuration for exiting the emulator (e.g. only the options -joy -joy1 4 -joy2 6-joystart 13 are possible). 
+For the _Sega Master System II_ entry, I changed the command line and therefore the emulator to _retroarch_. Osmose seems to me the better one, but it lacks in this version of a controller button configuration for exiting the emulator (e.g. only the options -joy -joy1 4 -joy2 6-joystart 13 are possible). 
 ```
 ...
 COMMAND=/home/pi/RetroPie/supplementary/runcommand/runcommand.sh 1 "/home/pi/RetroPie/emulators/RetroArch/installdir/bin/retroarch -L /home/pi/RetroPie/emulatorcores/picodrive/picodrive_libretro.so --config /home/pi/RetroPie/configs/all/retroarch.cfg --appendconfig /home/pi/RetroPie/configs/mastersystem/retroarch.cfg  %ROM%"
