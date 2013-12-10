@@ -5,7 +5,7 @@ You did the steps in [First Installation](First-Installation), basically everyth
 ### VGA mode and overscan
 First things first. If you have an HDTV and the Raspberry Pi is connected via HDMI to it, I highly recommend you switch to VGA Mode. This is for a better performance (1080p/720p vs. 480p) in _emulationstation_ and the emulators run anyway in 480p. HDMI Group 1 stands for CEA and Mode 1 is VGA. More Infos [here](http://elinux.org/RPiconfig#Video_mode_options). You should also set the overscan scale to one. Otherwise emulationstation doesn't start or the scaling is incorrect. 
 
-**/boot/config.txt**
+**`/boot/config.txt`**
 ```
 hdmi_group=1
 hdmi_mode=1
@@ -15,7 +15,7 @@ overscan_scale=1
 ### Sound issues and overclocking
 Some games have a crackling sound? The only way to get rid of this, is overclocking. For overclocking there aren't "THE BEST SETTINGS". You have to test your overclocking settings, how far you can go. To push the Raspberry Pi to the limits, I recommend you buy a heat sink. The crackling sound disappared, after I set _armfreq_ to _950_, _corefreq_ to _450_, _sdramfreq_ to _450_ and _gpumem_ to _384_. My settings with additional heat sinks:
 
-**/boot/config.txt**
+**`/boot/config.txt`**
 ```
 arm_freq=1050
 gpu_mem_512=384
@@ -30,9 +30,9 @@ force_turbo=0
 ```
 If your Rapberry Pi crashes (freezes etc.), please use lower settings. Sometimes it seems to run stable, but crashes in emulationstation or running a game. To test the stability and a possible SD Card corruption, I recommend to you use a stresstest Skript. e.g. from [elinux.org](http://elinux.org/RPi_config.txt#Overclock_stability_test):
 
-**/home/pi/stresstest.sh**
-`sudo chmod +x /home/pi/stresstest.sh`
-content (I've changed the iterations):
+**`/home/pi/stresstest.sh`**  
+`sudo chmod +x /home/pi/stresstest.sh`  
+(I've changed the iterations):  
 ```
 stresstest.sh
 #!/bin/bash
@@ -61,6 +61,66 @@ dmesg | tail
 
 echo "Not crashed yet, probably stable."
 ```
+To get the current temperature in an human readable output try `vcgencmd measure_temp`. I don't know exactly, but on my experiences the Raspberry Pi freezes, if the temperature goes over 65 degrees celsius.
+
+There are a lot of forum posts and configuration hints about several sound issues, which recommends to set _audio out rate_ to _44100_ and the _audio driver_ to _sdl_ in retroarch.cfg. To be honest, I can't see a difference to the default values. As I mentioned before, only the overclocking fixed the sound issues. For the sake of completeness, my retroarch.cfg audio lines:  
+**`/home/pi/RetroPie/configs/all/retroarch.cfg`**
+```
+audio_out_rate = 44100
+#audio_enable = true
+#audio_driver = sdl
+#audio_sync = true
+```
+As you can see, I've changed only the _audio out rate_. The default driver _alsathread_ works for me like a charm.
+***
+### Emulationstation adjustments
+There are a few adjustments for emulationstation. In my case the input for my Xbox 360 Controller and some entries for the systems, aka emulators.  
+**`/home/pi/emulationstation/es_input.cfg`**
+```
+<?xml version="1.0"?>
+<inputList>
+    <inputConfig type="keyboard" />
+    <inputConfig type="joystick" deviceName="Xbox Gamepad (userspace driver)">
+        <input name="a" type="button" id="4" value="1" />
+        <input name="b" type="button" id="5" value="1" />
+        <input name="down" type="button" id="1" value="1" />
+        <input name="left" type="button" id="2" value="1" />
+        <input name="menu" type="button" id="13" value="1" />
+        <input name="pagedown" type="button" id="11" value="1" />
+        <input name="pageup" type="button" id="10" value="1" />
+        <input name="right" type="button" id="3" value="1" />
+        <input name="select" type="button" id="8" value="1" />
+        <input name="up" type="button" id="0" value="1" />
+    </inputConfig>
+    <inputConfig type="keyboard">
+        <input name="a" type="key" id="13" value="1" />
+        <input name="b" type="key" id="8" value="1" />
+        <input name="down" type="key" id="274" value="1" />
+        <input name="left" type="key" id="276" value="1" />
+        <input name="menu" type="key" id="109" value="1" />
+        <input name="pagedown" type="key" id="281" value="1" />
+        <input name="pageup" type="key" id="280" value="1" />
+        <input name="right" type="key" id="275" value="1" />
+        <input name="select" type="key" id="108" value="1" />
+        <input name="up" type="key" id="273" value="1" />
+    </inputConfig>
+</inputList>
+```
+
+Button  | Configname
+--------|-----------
+A       | a
+B       | b
+DPdown  | down
+DPup    | up
+DPleft  | left
+DPright | right
+Start   | menu
+LB      | select
+LT      | pageup
+RT      | pagedown
+
+_DP = DigiPad_
 
 ***
 
