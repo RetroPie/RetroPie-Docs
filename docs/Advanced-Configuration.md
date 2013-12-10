@@ -73,6 +73,9 @@ audio_out_rate = 44100
 ```
 As you can see, I've changed only the _audio out rate_. The default driver _alsathread_ works for me like a charm.
 ***
+### Xbox 360 Controller
+Setup and configuration see this [Wiki Page](Setting-up-the-XBox360-controller). The "third possibility" is from me. I wrote an _init.d_ script and I recommend to use xboxdrv with the daemon option, because of less use of CPU and RAM. 
+***
 ### Emulationstation adjustments
 There are a few adjustments for emulationstation. In my case the input for my Xbox 360 Controller and some entries for the systems, aka emulators.  
 **`/home/pi/.emulationstation/es_input.cfg`**
@@ -138,6 +141,16 @@ If you want to play MegaCD games, you have to add the _bin_ prefix:
 EXTENSION=.smd .SMD .bin .BIN .gen .GEN
 ...
 ```
+_Neo Geo_
+I didn't get the Neo Geo running with _gngeo_. So, I use _pifba_:
+```
+...
+COMMAND=/home/pi/RetroPie/supplementary/runcommand/runcommand.sh 1 "/home/pi/RetroPie/emulators/pifba/fba2x %ROM%"
+...
+```
+***
+### Retroarch adjustments
+
 
 
 -- MasteRehm (initial 10/12/13)
