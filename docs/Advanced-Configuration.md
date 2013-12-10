@@ -33,7 +33,8 @@ force_turbo=0
 ```
 If your Rapberry Pi crashes (freezes etc.), please use lower settings. Sometimes it seems to run stable, but crashes in emulationstation or running a game. To test the stability and a possible SD Card corruption, I recommend to you use a stresstest Skript. e.g. from [elinux.org](http://elinux.org/RPi_config.txt#Overclock_stability_test):
 
-**`/home/pi/stresstest.sh`**  
+**`/home/pi/stresstest.sh`**
+
 `sudo chmod +x /home/pi/stresstest.sh`  
 (I've changed the iterations):  
 ```
