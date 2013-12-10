@@ -147,7 +147,7 @@ esac
 ```
 To specifiy the amount of controller, edit the variable CONTROLLER_NUM.
 
-It is generally advisable to use the daemon mode, 'cause it uses less CPU and RAM.
+It is generally advisable to use the daemon mode, 'cause it uses less CPU and RAM instead of several xboxdrv processes for each controller.
 
 ---
 
