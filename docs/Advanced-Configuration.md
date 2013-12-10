@@ -75,7 +75,7 @@ As you can see, I've changed only the _audio out rate_. The default driver _alsa
 ***
 ### Emulationstation adjustments
 There are a few adjustments for emulationstation. In my case the input for my Xbox 360 Controller and some entries for the systems, aka emulators.  
-**`/home/pi/emulationstation/es_input.cfg`**
+**`/home/pi/.emulationstation/es_input.cfg`**
 ```
 <?xml version="1.0"?>
 <inputList>
@@ -122,7 +122,22 @@ RT      | pagedown
 
 _DP = DigiPad_
 
-***
+**`/home/pi/.emulationstation/es_systems.cfg`**  
+Hint: The order of the emulators in this file, are exactly the order in emulationstation.  
+_Sega Master System_
+For the _Sega Master System II_ entry, I change the command line and therefore the emulator to _retroarch_. Osmose seems to me the better one, but it lacks in this version of a controller button configuration for exiting the emulator (e.g. only the options -joy -joy1 4 -joy2 6-joystart 13 are possible). 
+```
+...
+COMMAND=/home/pi/RetroPie/supplementary/runcommand/runcommand.sh 1 "/home/pi/RetroPie/emulators/RetroArch/installdir/bin/retroarch -L /home/pi/RetroPie/emulatorcores/picodrive/picodrive_libretro.so --config /home/pi/RetroPie/configs/all/retroarch.cfg --appendconfig /home/pi/RetroPie/configs/mastersystem/retroarch.cfg  %ROM%"
+...
+```
+_Sega Mega Drive_
+If you want to play MegaCD games, you have to add the _bin_ prefix:
+```
+...
+EXTENSION=.smd .SMD .bin .BIN .gen .GEN
+...
+```
 
 
 -- MasteRehm (initial 10/12/13)
