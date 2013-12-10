@@ -11,6 +11,6 @@ hdmi_mode=1
 overscan_scale=1
 ```
 ---
-Some games have a crackling sound? The only way to get rid of this, is overclocking. For overclocking there aren't "THE BEST SETTINGS". You have to test your overclocking settings, how far you can go. To push the Raspberry Pi to the limits, I recommend you buy a heat sink. The crackling sound disappared, after I set _arm_freq_ to _950_, _core_freq_ to _450_, _sdram_freq_ to _450_ and _gpu_mem_ to _384_.
+Some games have a crackling sound? The only way to get rid of this, is overclocking. For overclocking there aren't "THE BEST SETTINGS". You have to test your overclocking settings, how far you can go. To push the Raspberry Pi to the limits, I recommend you buy a heat sink. The crackling sound disappared, after I set _armfreq_ to _950_, _corefreq_ to _450_, _sdramfreq_ to _450_ and _gpumem_ to _384_.
 
 -- MasteRehm (initial 10/12/13)
