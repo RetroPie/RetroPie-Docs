@@ -22,7 +22,7 @@ Some games have a crackling sound? The only way to get rid of this, is overclock
 ```
 arm_freq=1050
 gpu_mem_512=384
-core_freq=550
+core_freq=500
 h264_freq=0
 isp_freq=0
 avoid_pwm_pll=1
@@ -240,10 +240,12 @@ Mega CD (USA) | us_scd1_9210.bin | /home/pi/RetroPie/bios
 
 ***
 ### Misc
-For retroarch I set the _core provided_ aspect ratio (4:3):  
+For retroarch I set the _core provided_ aspect ratio (4:3) and disable the help rgui screen:
+
 **`/home/pi/RetroPie/configs/all/retroarch.cfg`**
 
-`aspect_ratio_index = "6"`
+`aspect_ratio_index = "6"`  
+`rgui_show_start_screen = false`
 
 I set some aliases in _.bashrc_  
 **`/home/pi/.bashrc`**
