@@ -48,10 +48,10 @@ echo "Testing overclock stability..."
 #Max out the CPU in the background (one core). Heats it up, loads the power-supply. 
 nice yes >/dev/null &
 
-#Read the entire SD card 10x. Tests RAM and I/O
+#Read the entire SD card, 2x. Tests RAM and I/O
 for i in {1..2}; do echo reading: $i; sudo dd if=/dev/mmcblk0 of=/dev/null bs=4M; done
 
-#Writes 512 MB test file,  10x.
+#Writes 512 MB test file,  5x.
 for i in {1..5}; do echo writing: $i; dd if=/dev/zero of=deleteme.dat bs=1M count=512; sync; done
 
 #Clean up
