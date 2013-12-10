@@ -138,14 +138,14 @@ For the _Sega Master System II_ entry, I change the command line and therefore t
 COMMAND=/home/pi/RetroPie/supplementary/runcommand/runcommand.sh 1 "/home/pi/RetroPie/emulators/RetroArch/installdir/bin/retroarch -L /home/pi/RetroPie/emulatorcores/picodrive/picodrive_libretro.so --config /home/pi/RetroPie/configs/all/retroarch.cfg --appendconfig /home/pi/RetroPie/configs/mastersystem/retroarch.cfg  %ROM%"
 ...
 ```
-_Sega Mega Drive_
+_Sega Mega Drive_  
 If you want to play MegaCD games, you have to add the _bin_ prefix:
 ```
 ...
 EXTENSION=.smd .SMD .bin .BIN .gen .GEN
 ...
 ```
-_Neo Geo_
+_Neo Geo_  
 I didn't get the Neo Geo running with _gngeo_. So, I use _pifba_:
 ```
 ...
