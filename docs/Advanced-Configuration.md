@@ -1,4 +1,4 @@
-You did the steps in [First Installation](First-Installation), basically everything works, but some things could just run better. This tutorial is intended to describe the next steps after a successful installation, to give RetroPie the necessary finishing touches. Not all points will fit to your configuration. The core components:
+You did the steps in [First Installation](First-Installation), basically everything works, but some things could just run better. This tutorial is intended to describe the next steps after a successful installation, to give RetroPie the necessary finishing touches. It's a personal view and not all points will fit to your configuration. The core components:
 * HDTV and VGA mode
 * Xbox 360 Controller
 * Overclocking
