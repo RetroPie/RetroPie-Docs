@@ -125,7 +125,7 @@ case "$1" in
     ;;
 esac
 ```
-`chmod +x /etc/init.d/xboxdrv`
+`sudo chmod +x /etc/init.d/xboxdrv`
 
 You will also need a default configuration file. Save the following content to **/etc/default/xboxdrv**:
 ```
