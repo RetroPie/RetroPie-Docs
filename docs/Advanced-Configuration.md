@@ -225,7 +225,8 @@ Neo Geo, Mega CD, PC Engine CD and Playstation need their BIOS. There are many s
 Create a directory called "bios" under /home/pi/RetroPie:  
 `mkdir /home/pi/RetroPie/bios`  
 Add the following line to retroarch.cfg  
-**`/home/pi/RetroPie/configs/all/retroarch.cfg`**  
+**`/home/pi/RetroPie/configs/all/retroarch.cfg`**
+
 `system_directory = /home/pi/RetroPie/bios`  
 
 system | filename  | directory
