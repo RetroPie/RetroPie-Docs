@@ -38,7 +38,7 @@ The third possibility, you can use an init.d script with the daemon _-D_ Option.
 # Default-Stop:      0 1 6
 # Short-Description: Start XBOX Controller Service
 # Description:       Start the xboxdrv daemon with several options
-#                    support for up to 4 Controllers
+#                    support up to 4 Controllers
 ### END INIT INFO
 
 # Author: MasteRehm
