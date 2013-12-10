@@ -223,7 +223,7 @@ Up to now, I didn't figure out, how to change the configuration from the analog 
 ### Bios files
 Neo Geo, Mega CD, PC Engine CD and Playstation need their BIOS. There are many suggestions out there and only a few will work. It's neccassary to put the bios files in the right directory and the file must have the correct name. There are some "bios options", which you can set on most emulators, but they didn't work for me.  
 Create a directory called "bios" under /home/pi/RetroPie:  
-`mkdir bios /home/pi/RetroPie`  
+`mkdir /home/pi/RetroPie/bios`  
 Add the following line to retroarch.cfg  
 **`/home/pi/RetroPie/configs/all/retroarch.cfg`**  
 `system_directory = /home/pi/RetroPie/bios`  
