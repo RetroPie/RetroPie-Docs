@@ -242,9 +242,10 @@ Mega CD (USA) | us_scd1_9210.bin | /home/pi/RetroPie/bios
 ### Misc
 For retroarch I set the _core provided_ aspect ratio (4:3):  
 **`/home/pi/RetroPie/configs/all/retroarch.cfg`**
-aspect_ratio_index = "6"
 
-I set some aliases in _.bashrc_
+`aspect_ratio_index = "6"`
+
+I set some aliases in _.bashrc_  
 **`/home/pi/.bashrc`**
 ```
 alias l='ls -alhF'
