@@ -28,4 +28,4 @@ The following did work:
 Make sure the bios file(s) have all lowercase filenames (mine are called scph?????.bin) and put them in
 ```shell
 /home/pi/RetroPie/emulatorcores
-```shell
+```
