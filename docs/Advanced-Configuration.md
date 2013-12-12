@@ -245,7 +245,7 @@ For retroarch I set the _core provided_ aspect ratio (4:3), the _video scale int
 **`/home/pi/RetroPie/configs/all/retroarch.cfg`**
 
 `aspect_ratio_index = "6"`  
-video_scale_integer = true`  
+`video_scale_integer = true`  
 `rgui_show_start_screen = false`
 
 I set some aliases in _.bashrc_  
