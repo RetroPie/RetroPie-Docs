@@ -26,7 +26,7 @@ core_freq=500
 h264_freq=0
 isp_freq=0
 avoid_pwm_pll=1
-sdram_freq=600
+sdram_freq=550
 over_voltage=6
 avoid_safe_mode=1
 force_turbo=0
@@ -240,11 +240,12 @@ Mega CD (USA) | us_scd1_9210.bin | /home/pi/RetroPie/bios
 
 ***
 ### Misc
-For retroarch I set the _core provided_ aspect ratio (4:3) and disable the help rgui screen:
+For retroarch I set the _core provided_ aspect ratio (4:3), the _video scale integer_ and disable the help rgui screen:
 
 **`/home/pi/RetroPie/configs/all/retroarch.cfg`**
 
 `aspect_ratio_index = "6"`  
+video_scale_integer = true`  
 `rgui_show_start_screen = false`
 
 I set some aliases in _.bashrc_  
