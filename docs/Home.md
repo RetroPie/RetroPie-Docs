@@ -53,3 +53,4 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [Which memory split should I use?](https://github.com/petrockblog/RetroPie-Setup/wiki/Which-memory-split-should-I-use%3F)
 * [Which emulators can currently be installed with the script?](https://github.com/petrockblog/RetroPie-Setup/wiki/Supported-Systems-Emulators)
 * [Why do I get a segmentation fault when running a PSX game?](https://github.com/petrockblog/RetroPie-Setup/wiki/Why-do-I-get-a-segmentation-fault-when-running-a-PSX-game%3F)
+* [The PSX emulator reports no BIOS found. What do I do?](https://github.com/petrockblog/RetroPie-Setup/wiki/The-PSX-emulator-reports-no-BIOS-found.-What-do-I-do%3F)
