@@ -52,3 +52,4 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [Does Super Mario Allstars work?](https://github.com/petrockblog/RetroPie-Setup/wiki/Does-Super-Mario-All-Stars-work%3F)
 * [Which memory split should I use?](https://github.com/petrockblog/RetroPie-Setup/wiki/Which-memory-split-should-I-use%3F)
 * [Which emulators can currently be installed with the script?](https://github.com/petrockblog/RetroPie-Setup/wiki/Supported-Systems-Emulators)
+* [Why do I get a segmentation fault when running a PSX game?](https://github.com/petrockblog/RetroPie-Setup/wiki/Why-do-I-get-a-segmentation-fault-when-running-a-PSX-game%3F)
