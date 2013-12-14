@@ -157,7 +157,7 @@ Go to the `retroarch-joyconfig` folder (binary for configuring joypads for Retro
 
 By default (if you followed the install tutorial):
 
-    cd ~/RetroPie/emulators/RetroArch/tools
+    cd ~/RetroPie/emulators/RetroArch/installdir/bin/
 
 Then you have to configure each controller ( For example just use the first line if you have only 1 controller):
 
