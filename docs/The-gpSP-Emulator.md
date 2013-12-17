@@ -24,4 +24,6 @@ but keep in mind that this file can not be used to fix a majority of
 games, the ones that don't work because of emulator bugs. For those
 you'll have to wait for a new release and hope it someday gets fixed.
 
-This file is in the wrong folder on RetroPie. It is in `./~/RetroPie/emulators/gpsp/game_config.txt` but it needs to be in `./~/RetroPie/emulators/gpsp/raspberry/game_config.txt`. You need to fix this, otherwise you will get problems with some games/roms.
+This file is in the wrong folder on RetroPie. It is in `./~/RetroPie/emulators/gpsp/game_config.txt` but it needs to be in `./~/RetroPie/emulators/gpsp/raspberrypi/game_config.txt`. You need to fix this, otherwise you will get problems with some games/roms.
+
+On the latest version this issue has been fixed and you don't need to do this step anymore.
