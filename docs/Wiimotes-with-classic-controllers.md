@@ -1,6 +1,28 @@
 From [here](http://blog.petrockblock.com/forums/topic/tutorial-to-get-wiimotes-with-classic-controllers-to-work-with-retropie/):
 
-This tutorial shows how to get one to four wiimotes (the controller of Nintendo Wii) running with RetroPi with or without a classic controller (attached to the wiimote).
+This tutorial shows how to get one to four wiimotes (the controller of Nintendo Wii) running with RetroPie with or without a classic controller (attached to the wiimote).
+
+## Method 1:
+
+Hi there,
+
+while trying to associate a non official wiimote classic controller, I found this: [http://github.com/dvdhrm/xwiimote](http://github.com/dvdhrm/xwiimote).
+Since recent kernel releases (including the one used by RetroPie), an optional module, ```hid-wiimote``` can be loaded using the command ```modprobe hid-wiimote```, then you use the command ```sudo hidd --search``` to find the wiimote without a pin (bluez is not good at this, asking for a pin), and in the syslog :
+
+```
+Jan 18 21:55:21 raspberrypi hidd: New HID device 00:18:00:B2:F5:35 (Nintendo RVL-CNT-01)
+Jan 18 21:55:21 raspberrypi kernel: [168934.199087] wiimote 0005:057E:0306.0007: hidraw0: BLUETOOTH HID v3a.1c Gamepad [Nintendo RVL-CNT-01] on 00:1A:7D:DA:71:13
+Jan 18 21:55:21 raspberrypi kernel: [168934.200264] input: Nintendo Wii Remote Accelerometer as /devices/platform/bcm2708_usb/usb1/1-1/1-1.3/1-1.3:1.0/bluetooth/hci0/hci0:71/0005:057E:0306.0007/input/input30
+Jan 18 21:55:21 raspberrypi kernel: [168934.201753] input: Nintendo Wii Remote IR as /devices/platform/bcm2708_usb/usb1/1-1/1-1.3/1-1.3:1.0/bluetooth/hci0/hci0:71/0005:057E:0306.0007/input/input31
+Jan 18 21:55:21 raspberrypi kernel: [168934.213406] input: Nintendo Wii Remote as /devices/platform/bcm2708_usb/usb1/1-1/1-1.3/1-1.3:1.0/bluetooth/hci0/hci0:71/0005:057E:0306.0007/input/input32
+Jan 18 21:55:22 raspberrypi kernel: [168935.216422] input: Nintendo Wii Remote Extension as /devices/platform/bcm2708_usb/usb1/1-1/1-1.3/1-1.3:1.0/bluetooth/hci0/hci0:71/0005:057E:0306.0007/input/input33
+Jan 18 21:55:22 raspberrypi kernel: [168935.223466] input: Nintendo Wii Remote Motion+ as /devices/platform/bcm2708_usb/usb1/1-1/1-1.3/1-1.3:1.0/bluetooth/hci0/hci0:71/0005:057E:0306.0007/input/input34
+Jan 18 21:55:22 raspberrypi kernel: [168935.224051] wiimote 0005:057E:0306.0007: New device registered
+```
+
+You can run a test with ```evtest``` or ```xwiishow```.
+
+## Method 2:
 
 ### Prerequisites
 
@@ -237,4 +259,3 @@ This will exit the emulator when you press A+B simultaneously on the wiimote (or
 
 Note: the config files above work for wiimotes with or without classic controller.
 Note 2: If you want to use the wiimote (i.e. not only the classic controller) and you are using my config files, you need to hold the wiimote horizontally (with the power button on the right).
-
