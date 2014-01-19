@@ -18,6 +18,15 @@ Jan 18 21:55:22 raspberrypi kernel: [168935.224051] wiimote 0005:057E:0306.0007:
 
 You can run a test with ```evtest``` or ```xwiishow```.
 
+Please note [this comment](https://github.com/petrockblog/RetroPie-Setup/issues/256#issuecomment-32708108):
+
+Actually, the hid-wiimote included in 3.6.y kernel is buggy.
+Here's the version I use: [https://github.com/Alex131089/raspberrypi-linux/compare/raspberrypi:rpi-3.6.y...rpi-3.6.y-hid-wiimote](https://github.com/Alex131089/raspberrypi-linux/compare/raspberrypi:rpi-3.6.y...rpi-3.6.y-hid-wiimote)
+
+But to make the classic controller work with my remote, [http://www.thinkgeek.com/product/f3a7/](http://www.thinkgeek.com/product/f3a7/), I had to force ext as WIICLASSIC, so it's a bit hacky for this part ; the rest is only bug fix (from 3.11 version) / adaptation to be working with RetroArch (D-Pad).
+
+Also, while a simple ```hidd --search``` handles the connection, it doesn't handle the Wii leds enumeration, I'll try to write a script that continuously search for specified Wiimote (or all) and set the right leds.
+
 ## Method 2:
 
 From [here](http://blog.petrockblock.com/forums/topic/tutorial-to-get-wiimotes-with-classic-controllers-to-work-with-retropie/):
