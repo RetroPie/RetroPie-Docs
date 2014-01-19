@@ -1,7 +1,3 @@
-From [here](http://blog.petrockblock.com/forums/topic/tutorial-to-get-wiimotes-with-classic-controllers-to-work-with-retropie/):
-
-This tutorial shows how to get one to four wiimotes (the controller of Nintendo Wii) running with RetroPie with or without a classic controller (attached to the wiimote).
-
 ## Method 1:
 
 Hi there,
@@ -23,6 +19,10 @@ Jan 18 21:55:22 raspberrypi kernel: [168935.224051] wiimote 0005:057E:0306.0007:
 You can run a test with ```evtest``` or ```xwiishow```.
 
 ## Method 2:
+
+From [here](http://blog.petrockblock.com/forums/topic/tutorial-to-get-wiimotes-with-classic-controllers-to-work-with-retropie/):
+
+This tutorial shows how to get one to four wiimotes (the controller of Nintendo Wii) running with RetroPie with or without a classic controller (attached to the wiimote).
 
 ### Prerequisites
 
