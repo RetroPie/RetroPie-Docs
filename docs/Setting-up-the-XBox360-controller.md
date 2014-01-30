@@ -25,7 +25,7 @@ Notice the `sleep 1` between each instance: this prevents the RPi from setting r
 
 Another way is to specify this single command :
 
-    xboxdrv -D i 0 --next-controller -i 1 --next-controller -i 2 --next-controller -i 3 --deadzone 4000 --dbus disabled
+    xboxdrv -D i 0 --next-controller -i 1 --next-controller -i 2 --next-controller -i 3 --deadzone 4000 --dbus disabled &
 
 The third possibility, you can use an init.d script with the daemon _-D_ Option. Save the follwing content to **/etc/init.d/xboxdrv**:
 ```
