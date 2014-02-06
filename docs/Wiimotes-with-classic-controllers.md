@@ -54,10 +54,13 @@ sudo apt-get install wminput
 
 uinput device needs to work with non-root users. To do so, create a file called /etc/udev/rules.d/wiimote.rules with the following line:
 ```shell
-KERNEL==“uinput“, MODE:=“0666“
+KERNEL=="uinput", MODE:="0666"
 ```
 
-Reboot the Raspberry Pi to make this change active.
+To make this change active, reboot the Raspberry Pi, or paste this command at the commandline:
+```shell
+sudo service udev restart
+```
 
 Check that the blue-tooth dongle works: Command
 ```shell
