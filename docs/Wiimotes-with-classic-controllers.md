@@ -110,7 +110,7 @@ then
     ids=`hcitool scan | grep Nintendo | cut -d"	" -f2`
     for id in $ids
     do
-        wminput -d -c wiimote.input $id &
+        wminput -d -c /home/pi/mywminput $id &
     done
 else
     echo "Blue-tooth adapter not present!"
