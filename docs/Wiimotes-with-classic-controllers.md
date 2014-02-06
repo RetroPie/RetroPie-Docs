@@ -66,21 +66,7 @@ Check that the blue-tooth dongle works: Command
 ```shell
 /etc/init.d/bluetooth status
 ```
-should return that bluetooth is working. 
-
-Scan for the wiimotes. Start
-```shell
-hcitool scan
-```
-and press 1+2 on your wiimote(s). After a short while, the output should be something like
-```shell
-Scanning ...
-        00:19:1D:87:90:38		Nintendo RVL-CNT-01
-	00:19:1D:88:EF:12		Nintendo RVL-CNT-01
-```
-
-Take a note of the addresses of your wiimotes (the 00:19:1D:87:90:38 in the output above), we need that later.
-Note: If the scan is not successful try it again. Sometimes you need to try it several times (I read that somewhere, but it always worked for me the first time).
+should return that bluetooth is working.
 
 ### Correct usage of wminput
 
@@ -113,6 +99,46 @@ Wiimote.Home	= BTN_MODE
 Wiimote.1		= BTN_X
 Wiimote.2		= BTN_Y
 ```
+#### Quick and Dirty Wiimote Configuration
+
+If you don't mind registering your wiimotes each time you restart your raspberrypi (or maybe you want the opportunity to use new wiimotes each time), you can save this script as "/home/pi/bin/attachwii.sh":
+```shell
+#!/bin/bash
+
+if [[ `hcitool dev | grep hci` ]]
+then
+    ids=`hcitool scan | grep Nintendo | cut -d"	" -f2`
+    for id in $ids
+    do
+        wminput -d -c wiimote.input $id &
+    done
+else
+    echo "Blue-tooth adapter not present!"
+fi
+```
+
+When you restart your pi, press 1+2 on each wiimote just before or as emulationstation starts.
+
+Now, you can skip directly to the "Register Wiimotes Before Emulationstation Starts" section.
+
+#### Manual Wiimote Configuration
+
+Use this method if you want to use the same wiimotes every time and don't want to re-register the wiimotes every time you restart your Raspberrypi.
+
+First, scan for the wiimotes. Start
+```shell
+hcitool scan
+```
+and press 1+2 on your wiimote(s). After a short while, the output should be something like
+```shell
+Scanning ...
+        00:19:1D:87:90:38		Nintendo RVL-CNT-01
+	00:19:1D:88:EF:12		Nintendo RVL-CNT-01
+```
+
+Take a note of the addresses of your wiimotes (the 00:19:1D:87:90:38 in the output above), we need that later.
+Note: If the scan is not successful try it again. Sometimes you need to try it several times (I read that somewhere, but it always worked for me the first time).
+
 
 If the Raspberry Pi is started and emulationstation starts, we want to register the wiimotes so they can be used with emulationstation and the emulators.
 I did it the following way:
@@ -133,22 +159,28 @@ fi
 
 Note: You need one wminput line for every wiimote you want to use (i.e. the above is for two wiimotes)
 Note 2: You need to replace the addresses of the wiimotes above by the addresses of your wiimotes (shown by command „hcitool scan“ as shown above).  
-make the script executable with
+
+### Register Wiimotes Before Emulationstation Starts
+
+Make your wiimote detection script executable with:
 ```shell
 chmod 775 /home/pi/bin/attachwii.sh
 ```
-have the script be started just before emulationstation starts. To do so, edit the file /etc/profile
-The last line should be
+
+To start the script before emulationstation starts, edit the file: /etc/profile.  The last line should be
 ```shell
 [ -n "${SSH_CONNECTION}" ] || emulationstation
 ```
-right before this line, add the line
+Then, right before that line, add the line:
 ```shell
 /home/pi/bin/attachwii.sh
 ```
 and save the file.
 
-If you now do a reboot, wait until emulationstation has been started. When it did, press 1+2 on all of your wiimotes to register the wiimotes. Now you can „tell“ emulationstation and the emulators to use the wiimotes (and the classic controllers). Here are my configuration files.
+If you now do a reboot, wait until emulationstation has been started. When it does, press 1+2 on all of your wiimotes to register the wiimotes.
+
+Now you can „tell“ emulationstation and the emulators to use the wiimotes (and the classic controllers). Here are my configuration files.
+
 For emulationstation:
 Content of /home/pi/.emulationstation/es_input.cfg for two wiimotes:
 ```shell
