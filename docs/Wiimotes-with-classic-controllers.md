@@ -91,8 +91,8 @@ Classic.ZL = BTN_TL2
 Classic.ZR = BTN_TR2
 Wiimote.A		= BTN_A
 Wiimote.B		= BTN_B
-Wiimote.Dpad.X		= -ABS_Y
-Wiimote.Dpad.Y		= ABS_X
+Wiimote.Dpad.X		= ABS_Y
+Wiimote.Dpad.Y		= -ABS_X
 Wiimote.Minus	= BTN_SELECT
 Wiimote.Plus	= BTN_START
 Wiimote.Home	= BTN_MODE
@@ -105,19 +105,29 @@ If you don't mind registering your wiimotes each time you restart your raspberry
 ```shell
 #!/bin/bash
 
+if [[ ! `which ogg123` ]]
+then
+    apt-get -y install vorbis-tools
+fi
+
 if [[ `hcitool dev | grep hci` ]]
 then
-    ids=`hcitool scan | grep Nintendo | cut -d"	" -f2`
+    ogg123 /home/pi/complete.oga
+    ids=`hcitool scan | grep Nintendo | cut -d" " -f2 | sort`
     for id in $ids
     do
-        wminput -d -c /home/pi/mywminput $id &
+        wminput -d -c /home/pi/wiimote.input $id &
+        ogg123 /home/pi/complete.oga
     done
 else
     echo "Blue-tooth adapter not present!"
+    (sleep 0; ogg123 /home/pi/complete.oga) &
+    (sleep 0.1; ogg123 /home/pi/complete.oga)&
+    (sleep 0.2; ogg123 /home/pi/complete.oga)&
 fi
 ```
 
-When you restart your pi, press 1+2 on each wiimote just before or as emulationstation starts.
+When you restart your pi, press 1+2 on each wiimote when you hear the first ding.  After a few seconds, you'll hear a ding for each wiimote registered.  If the bluetooth device isn't available, you'll hear a triple-ding warning you of the error.  If you don't have it already, the script will try to install the ogg123 package, so you may want to be connected to the Internet the first time you start up your RetroPie system.
 
 Now, you can skip directly to the "Register Wiimotes Before Emulationstation Starts" section.
 
@@ -293,13 +303,15 @@ input_player3_joypad_index = 2
 input_player4_joypad_index = 3
 ```
 
-Finally, add the following two lines at the end of /home/pi/RetroPi/configs/all/retroarch.cfg:
+Finally, add the following four lines at the end of /home/pi/RetroPi/configs/all/retroarch.cfg:
 ```shell
-input_enable_hotkey_btn = "0"
-input_exit_emulator_btn = "1"
+savestate_auto_save = true
+savestate_auto_load = true
+input_enable_hotkey_btn = "9"
+input_exit_emulator_btn = "8"
 ```
 
-This will exit the emulator when you press A+B simultaneously on the wiimote (or the classic controller).
+This will exit the emulator when you press Start and Select simultaneously on the wiimote (or the classic controller).  When you quit a game through this method, your game state will be saved and reloaded.
 
 Note: the config files above work for wiimotes with or without classic controller.
 Note 2: If you want to use the wiimote (i.e. not only the classic controller) and you are using my config files, you need to hold the wiimote horizontally (with the power button on the right).
