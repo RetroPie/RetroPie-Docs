@@ -45,9 +45,7 @@ Note: Put the dongle in one of the USB ports of the Raspberry Pi directly, don't
 
 Now install the needed parts:
 ```shell
-sudo apt-get install bluetooth 
-sudo apt-get install python-cwiid 
-sudo apt-get install wminput
+sudo apt-get install bluetooth vorbis-tools python-cwiid wminput
 ```
 
 ### Getting the wiimotes to work
@@ -105,11 +103,6 @@ If you don't mind registering your wiimotes each time you restart your raspberry
 ```shell
 #!/bin/bash
 
-if [[ ! `which ogg123` ]]
-then
-    apt-get -y install vorbis-tools
-fi
-
 if [[ `hcitool dev | grep hci` ]]
 then
     ogg123 /home/pi/complete.oga
@@ -127,7 +120,7 @@ else
 fi
 ```
 
-When you restart your pi, press 1+2 on each wiimote when you hear the first ding.  After a few seconds, you'll hear a ding for each wiimote registered.  If the bluetooth device isn't available, you'll hear a triple-ding warning you of the error.  If you don't have it already, the script will try to install the ogg123 package, so you may want to be connected to the Internet the first time you start up your RetroPie system.
+When you restart your pi, press 1+2 on each wiimote when you hear the first ding.  After a few seconds, you'll hear a ding for each wiimote registered.  If the bluetooth device isn't available, you'll hear a triple-ding warning you of the error.
 
 Now, you can skip directly to the "Register Wiimotes Before Emulationstation Starts" section.
 
