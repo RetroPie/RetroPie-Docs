@@ -104,19 +104,23 @@ If you don't mind registering your wiimotes each time you restart your raspberry
 #!/bin/bash
 
 alert="ogg123 /home/pi/complete.oga"
-begin="ogg123 /home/pi/service-login.oga"
-end="ogg123 /home/pi/service-logout.oga"
+begin_sound="ogg123 /home/pi/service-login.oga"
+end_sound="ogg123 /home/pi/service-logout.oga"
 
 if [[ `hcitool dev | grep hci` ]]
 then
-    $begin
+    $begin_sound
+    echo "Bluetooth detected, scan starting..."
     ids=`hcitool scan | grep Nintendo | cut -d"	" -f2 | sort`
     for id in $ids
     do
+        echo "Detected Wiimote with ID: ${id}."
         wminput -d -c /home/pi/wiimote.input $id &
+        echo "Registered Wiimote with ID: ${id}."
         $alert
     done
-    $end
+    $end_sound
+    echo "Scan complete."
 else
     echo "Blue-tooth adapter not present!"
     (sleep 0; $alert) &
