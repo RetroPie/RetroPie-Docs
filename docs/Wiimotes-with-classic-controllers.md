@@ -103,24 +103,31 @@ If you don't mind registering your wiimotes each time you restart your raspberry
 ```shell
 #!/bin/bash
 
+alert="ogg123 /home/pi/complete.oga"
+begin="ogg123 /home/pi/service-login.oga"
+end="ogg123 /home/pi/service-logout.oga"
+
 if [[ `hcitool dev | grep hci` ]]
 then
-    ogg123 /home/pi/complete.oga
-    ids=`hcitool scan | grep Nintendo | cut -d" " -f2 | sort`
+    $begin
+    ids=`hcitool scan | grep Nintendo | cut -d"	" -f2 | sort`
     for id in $ids
     do
         wminput -d -c /home/pi/wiimote.input $id &
-        ogg123 /home/pi/complete.oga
+        $alert
     done
+    $end
 else
     echo "Blue-tooth adapter not present!"
-    (sleep 0; ogg123 /home/pi/complete.oga) &
-    (sleep 0.1; ogg123 /home/pi/complete.oga)&
-    (sleep 0.2; ogg123 /home/pi/complete.oga)&
+    (sleep 0; $alert) &
+    (sleep 0.1; $alert)&
+    (sleep 0.2; $alert)&
 fi
 ```
 
-When you restart your pi, press 1+2 on each wiimote when you hear the first ding.  After a few seconds, you'll hear a ding for each wiimote registered.  If the bluetooth device isn't available, you'll hear a triple-ding warning you of the error.
+Replace the sounds above with your own preferred sounds.
+
+When you restart your pi, press 1+2 on each wiimote after you hear the begin-sound.  After a few seconds, you'll hear a ding for each wiimote registered, followed by the end-sound.  If the bluetooth device isn't available, you'll hear a triple-ding warning you of the error.
 
 Now, you can skip directly to the "Register Wiimotes Before Emulationstation Starts" section.
 
