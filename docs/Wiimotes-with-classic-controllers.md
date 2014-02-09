@@ -103,29 +103,37 @@ If you don't mind registering your wiimotes each time you restart your raspberry
 ```shell
 #!/bin/bash
 
-alert="ogg123 /home/pi/complete.oga"
-begin_sound="ogg123 /home/pi/service-login.oga"
-end_sound="ogg123 /home/pi/service-logout.oga"
+play="ogg123"
+alert="/home/pi/complete.oga"
+begin_sound="/home/pi/service-login.oga"
+end_sound="/home/pi/service-logout.oga"
 
 if [[ `hcitool dev | grep hci` ]]
 then
-    $begin_sound
+    $play $begin_sound &
     echo "Bluetooth detected, scan starting..."
+    (sleep 30; killall -9 hcitool)&
     ids=`hcitool scan | grep Nintendo | cut -d"	" -f2 | sort`
     for id in $ids
     do
         echo "Detected Wiimote with ID: ${id}."
         wminput -d -c /home/pi/wiimote.input $id &
         echo "Registered Wiimote with ID: ${id}."
-        $alert
+        $play $alert &
     done
-    $end_sound
+    $play $end_sound &
     echo "Scan complete."
 else
     echo "Blue-tooth adapter not present!"
-    (sleep 0; $alert) &
-    (sleep 0.1; $alert)&
-    (sleep 0.2; $alert)&
+    (sleep 0; $play $alert)&
+    (sleep 0.1; $play $alert)&
+    (sleep 0.2; $play $alert)&
+fi
+
+if [[ $rebootWithoutWiimotes && -z `pidof wminput` ]]
+then
+    echo "No Wiimotes detected!  Restarting..."
+    sudo reboot
 fi
 ```
 
@@ -187,9 +195,11 @@ To start the script before emulationstation starts, edit the file: /etc/profile.
 ```
 Then, right before that line, add the line:
 ```shell
-/home/pi/bin/attachwii.sh
+[ -n "${SSH_CONNECTION}" ] || rebootWithoutWiimotes=0 /home/pi/bin/attachwii.sh
 ```
 and save the file.
+
+To make the Pi restart automatically if no wiimotes are detected, change rebootWithoutWiimotes to 1.
 
 If you now do a reboot, wait until emulationstation has been started. When it does, press 1+2 on all of your wiimotes to register the wiimotes.
 
