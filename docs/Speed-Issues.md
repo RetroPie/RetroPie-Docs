@@ -10,6 +10,9 @@ BTW, for most of [those](http://www.youtube.com/watch?v=rm3IuXeIfaw) cores you s
 
 * genesis-plus-gx: Is still a bit too slow on the Pi. An alternative port is being considered.
 
+## General Improvement in retroach
+set video_threaded = true in retroarch.cfg will improve video performance
+
 ## Overclocking Thread of the Official RPi Forum
 
 There is a thread about overclocking the RPi in the official forum of the foundation. You can find it [here](http://www.raspberrypi.org/phpBB3/viewtopic.php?f=29&t=6201).
