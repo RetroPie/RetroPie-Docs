@@ -8,18 +8,17 @@ OK, now browse to your game directory, probably ```/home/pi/RetroPie/roms/scummv
 You will see a bunch of directories with your games. Put the mouse over the “Add game” button and presh shift (keyboard). The button will change to “Mass Add”, just click it.
 Your games are in ScummVM now, press "Quit".
 
-Download [this script](http://blog.petrockblock.com/wp-content/uploads/2014/02/ES-scummvm.rar) to your ```/home/pi```. Alternatively, you can create the script file on your own. This is the script content:
+Download [this script](http://blog.petrockblock.com/wp-content/uploads/2014/02/ES-scummvm11.rar) to your ```/home/pi```. Alternatively, you can create the script file on your own. This is the script content:
 ```python
 #!/usr/bin/env python
 import os
 import sys
 try:
-    f = sys.argv[1]
+    d = sys.argv[1]
 except:
     sys.exit("Input scummvm game directory e.g.:python ES-scummvm.py /home/pi/RetroPie/roms/scummvm")
 		
-f = sys.argv[1]
-d = '/media/usb0/scummvm'
+d = sys.argv[1]
 f = open( "/home/pi/.scummvmrc", "r" )
 array = []
 for line in f:
