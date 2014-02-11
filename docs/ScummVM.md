@@ -9,7 +9,7 @@ You will see a bunch of directories with your games. Put the mouse over the “A
 Your games are in ScummVM now, press "Quit".
 
 Download [this script](http://blog.petrockblock.com/wp-content/uploads/2014/02/ES-scummvm.rar) to your ```/home/pi```. Alternatively, you can create the script file on your own. This is the script content:
-```
+```python
 #!/usr/bin/env python
 import os
 import sys
@@ -40,7 +40,7 @@ Run it with : ```python ES-scummvm.py /home/pi/RetroPie/roms/scummvm```.
 The script will generate dummy .svm files so they can be read by EmulationStation.
 Now, in ```/home/pi/.emulationstation/es_system.cfg``` make sure your scummvm section looks like this (notice the ```%BASENAME%``` instead of ```%ROM%``` and the .svm for the dummy files):
 
-```
+```bash
 DESCNAME=ScummVM
 NAME=scummvm
 PATH=/media/usb0/scummvm
