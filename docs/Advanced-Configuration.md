@@ -9,7 +9,7 @@ You did the steps in [First Installation](First-Installation), basically everyth
 First things first. If you have an HDTV and the Raspberry Pi is connected via HDMI to it, I highly recommend you switch to VGA Mode. This is for a better performance (1080p/720p vs. 480p) in _emulationstation_ and the emulators run anyway in 480p. HDMI Group 1 stands for CEA and Mode 1 is VGA. More Infos [here](http://elinux.org/RPiconfig#Video_mode_options). You should also set the overscan scale to one. Otherwise emulationstation doesn't start or the scaling is incorrect. 
 
 **`/boot/config.txt`**
-```
+```bash
 hdmi_group=1
 hdmi_mode=1
 overscan_scale=1
@@ -19,7 +19,7 @@ overscan_scale=1
 Some games have a crackling sound? The only way to get rid of this, is overclocking. For overclocking there aren't "THE BEST SETTINGS". You have to test your overclocking settings, how far you can go. To push the Raspberry Pi to the limits, I recommend you buy a heat sink. The crackling sound disappared, after I set _armfreq_ to _950_, _corefreq_ to _450_, _sdramfreq_ to _450_ and _gpumem_ to _384_. My settings with additional heat sinks:
 
 **`/boot/config.txt`**
-```
+```bash
 arm_freq=1050
 gpu_mem_512=384
 core_freq=500
@@ -37,7 +37,7 @@ If your Rapberry Pi crashes (freezes etc.), please use lower settings. Sometimes
 
 `sudo chmod +x /home/pi/stresstest.sh`  
 (I've changed the iterations):  
-```
+```bash
 stresstest.sh
 #!/bin/bash
 #Simple stress test for system. If it survives this, it's probably stable.
@@ -69,7 +69,7 @@ To get the current temperature in an human readable output try `vcgencmd measure
 
 There are a lot of forum posts and configuration hints about several sound issues, which recommends to set _audio out rate_ to _44100_ and the _audio driver_ to _sdl_ in retroarch.cfg. To be honest, I can't see a difference to the default values. As I mentioned before, only the overclocking fixed the sound issues. For the sake of completeness, my retroarch.cfg audio lines:  
 **`/home/pi/RetroPie/configs/all/retroarch.cfg`**
-```
+```bash
 audio_out_rate = 44100
 #audio_enable = true
 #audio_driver = sdl
@@ -83,7 +83,7 @@ Setup and configuration see this [Wiki Page](Setting-up-the-XBox360-controller).
 ### Emulationstation adjustments
 There are a few adjustments for emulationstation. In my case the input for my Xbox 360 Controller and some entries for the systems, aka emulators.  
 **`/home/pi/.emulationstation/es_input.cfg`**
-```
+```xml
 <?xml version="1.0"?>
 <inputList>
     <inputConfig type="keyboard" />
@@ -133,7 +133,7 @@ _DP = DigiPad_
 Hint: The order of the emulators in this file, are exactly the order in emulationstation.  
 _Sega Master System_  
 For the _Sega Master System II_ entry, I changed the command line and therefore the emulator to _retroarch_. Osmose seems to me the better one, but it lacks in this version of a controller button configuration for exiting the emulator (e.g. only the options -joy -joy1 4 -joy2 6-joystart 13 are possible). 
-```
+```bash
 ...
 COMMAND=/home/pi/RetroPie/supplementary/runcommand/runcommand.sh 1 "/home/pi/RetroPie/emulators/RetroArch/installdir/bin/retroarch -L /home/pi/RetroPie/emulatorcores/picodrive/picodrive_libretro.so --config /home/pi/RetroPie/configs/all/retroarch.cfg --appendconfig /home/pi/RetroPie/configs/mastersystem/retroarch.cfg  %ROM%"
 ...
@@ -155,7 +155,7 @@ COMMAND=/home/pi/RetroPie/supplementary/runcommand/runcommand.sh 1 "/home/pi/Ret
 ***
 ### Xbox 360 Controller button configuration for retroarch and final burn alpha
 **`/home/pi/RetroPie/configs/all/retroarch.cfg`**
-```
+```bash
 #Player 1
 input_player1_joypad_index = 0
 input_player1_b_btn = 6
@@ -191,7 +191,7 @@ input_player2_right_btn = 3
 _input exit emulator_ to exit the emulator and return to emulationstation._input menu toggle_ to show the retroarch menu (e.g. to set the aspect ratio, save/load the game, etc.)
 
 **`/home/pi/RetroPie/emulators/pifba/fba2x.cfg`**
-```
+```bash
 [Joystick]
 A_1=4
 B_1=5
@@ -250,7 +250,7 @@ For retroarch I set the _core provided_ aspect ratio (4:3), the _video scale int
 
 I set some aliases in _.bashrc_  
 **`/home/pi/.bashrc`**
-```
+```bash
 alias l='ls -alhF'
 alias ..='cd ..'
 alias roms='cd /home/pi/RetroPie/roms/'
