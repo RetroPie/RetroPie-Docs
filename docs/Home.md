@@ -30,6 +30,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [PCSX Core (Playstation 1)](https://github.com/petrockblog/RetroPie-Setup/wiki/PCSX-Core-Playstation-1)
 * [RetroArch](https://github.com/petrockblog/RetroPie-Setup/wiki/RetroArch)
 * [RPix86](https://github.com/petrockblog/RetroPie-Setup/wiki/RPix86)
+* [ScummVM](https://github.com/petrockblog/RetroPie-Setup/wiki/ScummVM)
 
 ## Troubleshooting
 * [Amiga emulator (UAE4All)](https://github.com/petrockblog/RetroPie-Setup/wiki/Amiga-emulator-%28UAE4All%29)
