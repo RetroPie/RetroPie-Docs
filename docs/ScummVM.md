@@ -45,7 +45,7 @@ NAME=scummvm
 PATH=/media/usb0/scummvm
 EXTENSION=.svm
 COMMAND=scummvm -f –joystick=0 %BASENAME%
-PLATFORMID=20
+PLATFORMID=99
 ```
 
 Thats all
