@@ -1,5 +1,14 @@
 ## Location of the BIOS
 
+The default location for the BIOS file(s) is 
+```shell
+cd ~/RetroPie/emulatorcores
+```
+
+Just copying the BIOS file to that directory should be enough for it to be found by the emulator.
+
+Alternatively you can use a different directory to store the BIOS files as follows
+
 Create the directory to store BIOS files:
 
 ```shell
