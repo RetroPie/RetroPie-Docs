@@ -101,39 +101,50 @@ Wiimote.2		= BTN_Y
 
 If you don't mind registering your wiimotes each time you restart your raspberrypi (or maybe you want the opportunity to use new wiimotes each time), you can save this script as "/home/pi/bin/attachwii.sh":
 ```shell
-#!/bin/bash
+#! /bin/bash
 
-play="ogg123"
+ttl=30
 alert="/home/pi/complete.oga"
 begin_sound="/home/pi/service-login.oga"
 end_sound="/home/pi/service-logout.oga"
+mac_grep="\([[:xdigit:]]\{2\}:\)\{5\}[[:xdigit:]]" # "00:" * 5 + "00"
+
+function play {
+    ogg123 $1 2&>1 /dev/null &
+}
 
 if [[ `hcitool dev | grep hci` ]]
 then
-    $play $begin_sound &
-    echo "Bluetooth detected, scan starting..."
-    (sleep 30; killall -9 hcitool)&
-    ids=`hcitool scan | grep Nintendo | cut -d"	" -f2 | sort`
+    play $begin_sound
+    echo "Bluetooth detected, starting scan with $ttl timeout..."
+    # timeout is an annoying choice, because it puts all hcitool's
+    # output on a single line.
+    ids=`timeout $ttl hcitool scan`
+
     for id in $ids
     do
-        echo "Detected Wiimote with ID: ${id}."
-        wminput -d -c /home/pi/wiimote.input $id &
-        echo "Registered Wiimote with ID: ${id}."
-        $play $alert &
+        if [[ `echo $id | grep $mac_grep` ]]
+        then
+            echo "Detected Wiimote with ID: ${id}."
+            wminput -d -c /home/pi/wiimote.input $id &
+            echo "Registered Wiimote with ID: ${id}."
+            play $alert
+        fi
     done
-    $play $end_sound &
+
+    play $end_sound
     echo "Scan complete."
+
+    if [[ $rebootWithoutWiimotes && -z `pidof wminput` ]]
+    then
+        echo "No Wiimotes detected!  Restarting..."
+        sudo reboot
+    fi
 else
     echo "Blue-tooth adapter not present!"
-    (sleep 0; $play $alert)&
-    (sleep 0.1; $play $alert)&
-    (sleep 0.2; $play $alert)&
-fi
-
-if [[ $rebootWithoutWiimotes && -z `pidof wminput` ]]
-then
-    echo "No Wiimotes detected!  Restarting..."
-    sudo reboot
+    (sleep 0; play $alert)&
+    (sleep 0.1; play $alert)&
+    (sleep 0.2; play $alert)&
 fi
 ```
 
