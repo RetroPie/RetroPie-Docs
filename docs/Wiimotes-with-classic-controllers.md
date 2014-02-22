@@ -250,22 +250,20 @@ For retroarch:
 End of file /home/pi/RetroPi/configs/all/retroarch.cfg (for two wiimotes):
 ```shell
 input_player1_joypad_index = "0"
-input_player1_b_btn = "0"
+input_player1_a_btn = "0"
+input_player1_b_btn = "1"
 input_player1_y_btn = "2"
+input_player1_x_btn = "3"
+input_player1_l_btn = "4"
+input_player1_r_btn = "5"
+input_player1_l2_btn = "6"
+input_player1_r2_btn = "7"
 input_player1_select_btn = "8"
 input_player1_start_btn = "9"
 input_player1_up_axis = "+1"
 input_player1_down_axis = "-1"
 input_player1_left_axis = "-0"
 input_player1_right_axis = "+0"
-input_player1_a_btn = "1"
-input_player1_x_btn = "3"
-input_player1_l_btn = "4"
-input_player1_r_btn = "5"
-input_player1_l2_btn = "6"
-input_player1_r2_btn = "7"
-input_player1_l3_btn = "10"
-input_player1_r3_btn = "10"
 input_player1_l_x_plus_axis = "+2"
 input_player1_l_x_minus_axis = "-2"
 input_player1_l_y_plus_axis = "-3"
@@ -274,23 +272,22 @@ input_player1_r_x_plus_axis = "+4"
 input_player1_r_x_minus_axis = "-4"
 input_player1_r_y_plus_axis = "-5"
 input_player1_r_y_minus_axis = "+5"
+
 input_player2_joypad_index = "1"
+input_player2_a_btn = "0"
 input_player2_b_btn = "1"
-input_player2_y_btn = "3"
+input_player2_y_btn = "2"
+input_player2_x_btn = "3"
+input_player2_l_btn = "4"
+input_player2_r_btn = "5"
+input_player2_l2_btn = "6"
+input_player2_r2_btn = "7"
 input_player2_select_btn = "8"
 input_player2_start_btn = "9"
 input_player2_up_axis = "+1"
 input_player2_down_axis = "-1"
 input_player2_left_axis = "-0"
 input_player2_right_axis = "+0"
-input_player2_a_btn = "0"
-input_player2_x_btn = "2"
-input_player2_l_btn = "4"
-input_player2_r_btn = "5"
-input_player2_l2_btn = "6"
-input_player2_r2_btn = "7"
-input_player2_l3_btn = "10"
-input_player2_r3_btn = "10"
 input_player2_l_x_plus_axis = "+2"
 input_player2_l_x_minus_axis = "-2"
 input_player2_l_y_plus_axis = "-3"
@@ -299,6 +296,7 @@ input_player2_r_x_plus_axis = "+4"
 input_player2_r_x_minus_axis = "-4"
 input_player2_r_y_plus_axis = "-5"
 input_player2_r_y_minus_axis = "+5"
+
 ```
 
 Make sure that the settings are only one time in retroarch.cfg file (i.e. if you have a line 
@@ -321,11 +319,12 @@ Finally, add the following four lines at the end of /home/pi/RetroPi/configs/all
 ```shell
 savestate_auto_save = true
 savestate_auto_load = true
-input_enable_hotkey_btn = "9"
-input_exit_emulator_btn = "8"
+input_enable_hotkey_btn = "8"
+input_exit_emulator_btn = "9"
+input_menu_toggle_btn = "10"
 ```
 
-This will exit the emulator when you press Start and Select simultaneously on the wiimote (or the classic controller).  When you quit a game through this method, your game state will be saved and reloaded.
+This will open the menu when you press the Home key and exit the emulator when you press Select and Start simultaneously on the wiimote (or the classic controller).  When you quit a game through this method, your game state will be saved and reloaded.
 
 Note: the config files above work for wiimotes with or without classic controller.
 Note 2: If you want to use the wiimote (i.e. not only the classic controller) and you are using my config files, you need to hold the wiimote horizontally (with the power button on the right).
