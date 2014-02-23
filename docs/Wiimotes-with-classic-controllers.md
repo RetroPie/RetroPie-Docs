@@ -105,46 +105,69 @@ If you don't mind registering your wiimotes each time you restart your raspberry
 
 ttl=30
 alert="/home/pi/complete.oga"
-begin_sound="/home/pi/service-login.oga"
+fail="/home/pi/bark.oga"
+begin_sound="/home/pi/robot-blip.wav"
 end_sound="/home/pi/service-logout.oga"
-mac_grep="\([[:xdigit:]]\{2\}:\)\{5\}[[:xdigit:]]" # "00:" * 5 + "00"
+mac="\([[:xdigit:]]\{2\}:\)\{5\}[[:xdigit:]]" # "00:" * 5 + "00"
+device_file="/tmp/wiimote-scan"
 
 function play {
-    ogg123 $1 2&>1 /dev/null &
+    ogg123 $1 &> /dev/null &
 }
+
+function match {
+    echo $1 | grep $2
+}
+
+function show {
+    if [[ -n $DEBUG ]]
+    then
+        echo $1
+    fi
+}
+
+# prevent scans from interfering with one another?
+killall hcitool && sleep 5
 
 if [[ `hcitool dev | grep hci` ]]
 then
-    play $begin_sound
-    echo "Bluetooth detected, starting scan with $ttl timeout..."
-    # timeout is an annoying choice, because it puts all hcitool's
-    # output on a single line.
-    ids=`timeout $ttl hcitool scan`
+    aplay $begin_sound &> /dev/null &
+    echo "Bluetooth detected, starting scan with ${ttl}s timeout..."
 
-    for id in $ids
+    timeout $ttl hcitool scan | while read device
     do
-        if [[ `echo $id | grep $mac_grep` ]]
+        show "found $device"
+
+        if [[ `match "$device" "Nintendo"` ]]
         then
-            echo "Detected Wiimote with ID: ${id}."
-            wminput -d -c /home/pi/wiimote.input $id &
-            echo "Registered Wiimote with ID: ${id}."
-            play $alert
+            show "matched Nintendo in $device"
+
+            id=`echo $device | cut -d" " -f1`
+
+            if [[ `match $id $mac` && \
+                "$id"!="00:00:00:00:00:00" ]]
+            then
+                show "matched MAC in $id"
+
+                echo -n "Detected Wiimote with ID: ${id}..."
+                wminput -d -c /home/pi/bin/wiimote.input $id &
+                echo " registered."
+                play $alert
+            fi
         fi
     done
 
     play $end_sound
     echo "Scan complete."
 
-    if [[ $rebootWithoutWiimotes && -z `pidof wminput` ]]
+    if [[ "$rebootWithoutWiimotes" == "1" && -z `pidof wminput` ]]
     then
         echo "No Wiimotes detected!  Restarting..."
         sudo reboot
     fi
 else
     echo "Blue-tooth adapter not present!"
-    (sleep 0; play $alert)&
-    (sleep 0.1; play $alert)&
-    (sleep 0.2; play $alert)&
+    play $fail
 fi
 ```
 
