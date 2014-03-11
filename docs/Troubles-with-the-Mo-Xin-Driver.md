@@ -1,1 +1,0 @@
-If you have troubles with the Mo-Xin driver you can find a guide for patching the driver at http://ithink.ch/blog/2013/09/08/patching_the_linux_kernel_to_install_the_xin-mo_dual_arcade_driver_on_a_raspberry_pi.html.
