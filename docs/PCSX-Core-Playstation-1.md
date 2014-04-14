@@ -49,4 +49,5 @@ Add different bios' that you've tested and tell the community if it works or not
 Filename      | md5                               |        CRC32          | Comment
 --------------|-----------------------------------|-----------------------|-------------------
 scph1001.bin  | 924e392ed05558ffdb115408c263dccf  |    37157331           | 
+scph7502(41a)  | b9d9a0286c33dc6b7237bb13cd46fdee  |    318178BF           | 
 
