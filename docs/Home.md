@@ -28,6 +28,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [Module for GPIO interface for retro game controllers](https://github.com/petrockblog/RetroPie-Setup/wiki/Module-for-GPIO-interface-for-retro-game-controllers)
 * [Mo-Xin Driver](https://github.com/petrockblog/RetroPie-Setup/wiki/Troubles-with-the-Xin-Mo-Controller)
 * [PCSX Core (Playstation 1)](https://github.com/petrockblog/RetroPie-Setup/wiki/PCSX-Core-Playstation-1)
+* [PiFBA](https://github.com/petrockblog/RetroPie-Setup/wiki/PiFBA)
 * [RetroArch](https://github.com/petrockblog/RetroPie-Setup/wiki/RetroArch)
 * [RPix86](https://github.com/petrockblog/RetroPie-Setup/wiki/RPix86)
 * [ScummVM](https://github.com/petrockblog/RetroPie-Setup/wiki/ScummVM)
