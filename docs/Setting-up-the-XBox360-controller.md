@@ -162,6 +162,8 @@ It is generally advisable to use the daemon mode, 'cause it uses less CPU and RA
 
 ## RetroPie configuration
 
+At this point you can test your pads with `jstest /dev/input/js[0-3]` to see if everything works well.
+
 After reboot when your controllers are detected, you have to configure RetroPie to use them:
 
 Go to the `retroarch-joyconfig` folder (binary for configuring joypads for RetroArch);
