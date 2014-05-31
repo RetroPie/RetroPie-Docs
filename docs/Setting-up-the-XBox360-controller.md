@@ -1,8 +1,15 @@
+## initial install
+
 **xboxdrv** must be installed for using xbox360 controllers with your pi:
 
 install it by running
 
     sudo apt-get install xboxdrv
+
+**Then you must choose one of the 3 methods below**
+
+
+### 1 - Multiples instances of xboxdrv
 
 You have to launch multiple instances of xboxdrv (one for each controller)
 
@@ -23,9 +30,13 @@ You **must** swich-on your pads before booting the raspberry.
 
 Notice the `sleep 1` between each instance: this prevents the RPi from setting random controllers with random led status; adjust timing if necessary.
 
+### 2 - Single command line
+
 Another way is to specify this single command :
 
     xboxdrv -D i 0 --next-controller -i 1 --next-controller -i 2 --next-controller -i 3 --deadzone 4000 --dbus disabled &
+
+### 3 - init script
 
 The third possibility, you can use an init.d script with the daemon _-D_ Option. Save the follwing content to **/etc/init.d/xboxdrv**:
 ```
@@ -149,7 +160,7 @@ To specifiy the amount of controller, edit the variable CONTROLLER_NUM.
 
 It is generally advisable to use the daemon mode, 'cause it uses less CPU and RAM instead of several xboxdrv processes for each controller.
 
----
+## RetroPie configuration
 
 After reboot when your controllers are detected, you have to configure RetroPie to use them:
 
