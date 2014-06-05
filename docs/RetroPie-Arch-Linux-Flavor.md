@@ -36,6 +36,14 @@ Retroarch is found in the AUR.
 packer -S retroarch-rbp-git
 ```
 
+When given the option to edit the package, change references of "Themaister" to "libretro", as the repo has moved.
+
+Also prior to install, be sure that mesa and xorg-server is installed via 
+
+```shell
+packman -S mesa xorg-server 
+```
+
 ### Section 2.1. Configuration
 
 Copy skeleton configuration file located at /etc/retroarch.cfg to ~/.retroarch.cfg
