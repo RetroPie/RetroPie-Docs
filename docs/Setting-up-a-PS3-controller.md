@@ -39,6 +39,16 @@ we're going to install an Sixaxis Manager this is what will let us use the contr
 ```shell
 wget http://sourceforge.net/projects/qtsixa/files/QtSixA%201.5.1/QtSixA-1.5.1-src.tar.gz
 tar xfvz QtSixA-1.5.1-src.tar.gz
+```
+
+The source code requires a patch to compile correctly as of right now, so we'll download and apply it
+```shell
+wget https://bugs.launchpad.net/qtsixa/+bug/1036744/+attachment/3260906/+files/compilation_sid.patch
+patch ~/QtSixA-1.5.1/sixad/shared.h < compilation_sid.patch
+```
+
+It should now correctly build and install 
+```shell
 cd QtSixA-1.5.1/sixad
 make
 sudo mkdir -p /var/lib/sixad/profiles
