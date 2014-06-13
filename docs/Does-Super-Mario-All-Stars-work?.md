@@ -8,7 +8,7 @@ From http://www.raspberrypi.org/forums/viewtopic.php?f=78&t=79083
 
 > I managed to figure out a fix so the controls work in Super Mario All-Stars and also doesn't break other games (Mario Kart, Super Bomberman etc). This problem has been bugging me for ages and I had to figure out a way to play this game for nostalgia sake. This fix will unfortunately mean player two controls wont work for other games (but I play alone anyway and this is for people with one controller). Simply post this in your blank retroarch.cfg in the snes folder. P.S Remember to change the button numbers/axis for you own controller.
 
-`input_player1_joypad_index = "0"
+input_player1_joypad_index = "0"
 input_player1_b_btn = "2"
 input_player1_y_btn = "3"
 input_player1_select_btn = "8"
@@ -66,4 +66,4 @@ input_player2_left = "nul"
 input_player2_right = "nul"
 input_player2_up = "nul"
 input_player2_down = "nul"
-input_exit_emulator = "nul"`
+input_exit_emulator = "nul"
