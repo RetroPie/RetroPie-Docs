@@ -15,6 +15,8 @@ The PS3 controller works out of the box for most emulators in version 2.2 of the
       //      break;
       //  } 
 
+  If you are having difficulty editing the file, then you can find an amended copy at [this post](http://blog.petrockblock.com/forums/topic/setting-up-a-ps3-controller-for-mame4all-pi-wiki-page/) at the Retropie forum to overwrite your existing copy.
+
   Save and exit.
 
 2. Recompile by going to the mame4all directory
