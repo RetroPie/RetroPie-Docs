@@ -168,9 +168,9 @@ After reboot when your controllers are detected, you have to configure RetroPie 
 
 Go to the `retroarch-joyconfig` folder (binary for configuring joypads for RetroArch);
 
-By default (if you followed the install tutorial):
+By default (if you followed the install tutorial for the latest version):
 
-    cd ~/RetroPie/emulators/RetroArch/installdir/bin/
+    cd /opt/retropie/emulators/RetroArch/installdir/bin/
 
 Then you have to configure each controller ( For example just use the first line if you have only 1 controller):
 
@@ -187,7 +187,7 @@ Then you have to configure each controller ( For example just use the first line
 
 After this you will get 4(or less depending) cfg files to add to your default `RetroPie/configs/all/retroarch.cfg` config file:
 
-    sudo cat p*.cfg >> ~/RetroPie/configs/all/retroarch.cfg
+    sudo cat p*.cfg >> /opt/retropie/configs/all/retroarch.cfg
 
 (if this don't have permissions you can do a `sudo chmod 777 RetroPie/configs/all/retroarch.cfg` before)
 
