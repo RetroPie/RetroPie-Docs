@@ -1,6 +1,6 @@
 In terminal, browse to the folder where the retroarch-joyconfig is. Default should be 
 
-    cd /home/pi/RetroPie/RetroArch-Rpi/tools
+    cd /opt/retropie/emulators/RetroArch/tools
 
 Then use the command 
 
