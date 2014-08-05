@@ -172,22 +172,27 @@ By default (if you followed the install tutorial for the latest version):
 
     cd /opt/retropie/emulators/RetroArch/installdir/bin/
 
+Before we start, please make sure the following folder has read/write permissions.
+We use /opt/retropie/configs/all/ as the base directory for the configuration files.
+
+    sudo chmod +rw /opt/retropie/configs/all/
+
 Then you have to configure each controller ( For example just use the first line if you have only 1 controller):
 
-    ./retroarch-joyconfig -o p1.cfg -p 1 -j 0
+    ./retroarch-joyconfig -o /opt/retropie/configs/all/p1.cfg -p 1 -j 0
     <follow instructions>
-    ./retroarch-joyconfig -o p2.cfg -p 2 -j 1
+    ./retroarch-joyconfig -o /opt/retropie/configs/all/p2.cfg -p 2 -j 1
     <follow instructions>
-    ./retroarch-joyconfig -o p3.cfg -p 3 -j 2
+    ./retroarch-joyconfig -o /opt/retropie/configs/all/p3.cfg -p 3 -j 2
     <follow instructions>
-    ./retroarch-joyconfig -o p4.cfg -p 4 -j 3
+    ./retroarch-joyconfig -o /opt/retropie/configs/all/p4.cfg -p 4 -j 3
     <follow instructions>
 
 ( **-o** for output file, **-p** for player, **-j** for joystick id )
 
 After this you will get 4(or less depending) cfg files to add to your default `RetroPie/configs/all/retroarch.cfg` config file:
 
-    sudo cat p*.cfg >> /opt/retropie/configs/all/retroarch.cfg
+    sudo cat /opt/retropie/configs/all/p*.cfg >> /opt/retropie/configs/all/retroarch.cfg
 
 (if this don't have permissions you can do a `sudo chmod 777 RetroPie/configs/all/retroarch.cfg` before)
 
