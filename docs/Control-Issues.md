@@ -32,7 +32,7 @@ Setting Up an USB joystick/gamepad
 ----------------------------------
 RetroArch is configured for joystick hotplug and auto configuration. If your joystick/gamepad does not work out of the box, run the following command to create an auto configuration file for your joystick/gamepad. 
  
-/opt/retropie/emulators/RetroArch/installdir/bin/retroarch-joyconfig -a /opt/retropie/emulators/RetroArch/configs/gamepad.cfg
+`$ /opt/retropie/emulators/RetroArch/installdir/bin/retroarch-joyconfig -a /opt/retropie/emulators/RetroArch/configs/gamepad.cfg`
 
 Setting Up an USB DGEN joystick/gamepad
 ----------------------------------
