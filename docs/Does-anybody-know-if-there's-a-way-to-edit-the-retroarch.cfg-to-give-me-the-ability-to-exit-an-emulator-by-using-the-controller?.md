@@ -11,3 +11,6 @@ The following comes from [here](http://www.raspberrypi.org/phpBB3/viewtopic.php?
 > The idea is to set a key that must be held to use hot keys (such as select) with "input_enable_hotkey_btn = 1" and then an exit key (such as start), which will now only work if the enable hot key button is held down, with "input_exit_emulator_btn = 2".
 
 > Thanks to MungoBBQ for pointing this out!
+
+***
+**Constraint**: This doesn't work for gpsp.
