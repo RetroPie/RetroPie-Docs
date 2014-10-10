@@ -12,5 +12,4 @@ The following comes from [here](http://www.raspberrypi.org/phpBB3/viewtopic.php?
 
 > Thanks to MungoBBQ for pointing this out!
 
-***
 **Constraint**: This doesn't work for gpsp.
