@@ -1,20 +1,9 @@
 You did the steps in [First Installation](First-Installation), basically everything works, but some things could just run better. This tutorial is intended to describe the next steps after a successful installation, to give RetroPie the necessary finishing touches. It's a personal view and not all points will fit to your configuration. The core components:
-* HDTV and VGA mode
 * Xbox 360 Controller
 * Overclocking
 * Emulationstation and emulators adjustments
 * Bios files
 
-### VGA mode and overscan
-First things first. If you have an HDTV and the Raspberry Pi is connected via HDMI to it, I highly recommend you switch to VGA Mode. This is for a better performance (1080p/720p vs. 480p) in _emulationstation_ and the emulators run anyway in 480p. HDMI Group 1 stands for CEA and Mode 1 is VGA. More Infos [here](http://elinux.org/RPiconfig#Video_mode_options). You should also set the overscan scale to one. Otherwise emulationstation doesn't start or the scaling is incorrect. 
-
-**`/boot/config.txt`**
-```bash
-hdmi_group=1
-hdmi_mode=1
-overscan_scale=1
-```
-***
 ### Sound issues and overclocking
 Some games have a crackling sound? The only way to get rid of this, is overclocking. For overclocking there aren't "THE BEST SETTINGS". You have to test your overclocking settings, how far you can go. To push the Raspberry Pi to the limits, I recommend you buy a heat sink. The crackling sound disappared, after I set _armfreq_ to _950_, _corefreq_ to _450_, _sdramfreq_ to _450_ and _gpumem_ to _384_. My settings with additional heat sinks:
 
