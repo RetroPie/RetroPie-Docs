@@ -10,7 +10,7 @@ From [here](https://github.com/petrockblog/RetroPie-Setup/issues/193#issuecommen
 
 It appears that gpsp is not run via libretro thus its not configured like the rest of RetroArch. My solution was to run gpsp from command line with no arguments (sudo ./~/RetroPie/emulators/gpsp/raspberrypi/gpsp ) and configure my buttons through the onscreen menu there. This generated a gpsp.cfg file (binary).
 
-If you have a keyboard connected you can press [F10] and access the menu to setup the controller.
+If you have a keyboard connected you can press [F10] and access the menu to setup the controller. You can also access the menu while in-game by holding [SELECT] and pressing [R Trigger] on your controller.
 
 ## Games not working/White Screen
 
