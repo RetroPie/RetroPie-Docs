@@ -6,6 +6,8 @@ As of RetroPie 2.2, the binary is now located in `/opt/retropie/emulators/gpsp/r
 
 ## Controller Setup
 
+Before moving to the acctual configuration of the controls, take note that gpSP seems to not support the hat on gamepads but buttons and joysticks seem fine. Check to see if gpSP has been updated to support it but don't be surprised if it does not work.
+
 ###Previous Version
 
 From [here](https://github.com/petrockblog/RetroPie-Setup/issues/193#issuecomment-19900909):
