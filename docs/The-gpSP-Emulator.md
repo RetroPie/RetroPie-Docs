@@ -6,11 +6,19 @@ As of RetroPie 2.2, the binary is now located in `/opt/retropie/emulators/gpsp/r
 
 ## Controller Setup
 
+###Previous Version
+
 From [here](https://github.com/petrockblog/RetroPie-Setup/issues/193#issuecomment-19900909):
 
 It appears that gpsp is not run via libretro thus its not configured like the rest of RetroArch. My solution was to run gpsp from command line with no arguments (sudo ./~/RetroPie/emulators/gpsp/raspberrypi/gpsp ) and configure my buttons through the onscreen menu there. This generated a gpsp.cfg file (binary).
 
 If you have a keyboard connected you can press [F10] and access the menu to setup the controller. You can also access the menu while in-game by holding [SELECT] and pressing [R Trigger] on your controller.
+
+###Current Version
+
+Apparently as of the latest version, the method above works fine, except that the file locations have moved. The emulators themselves have been moved to "/opt/retropi/emulators". To configure your input, simply do "cd /opt/retropi/emulators/gpsp", and then run the program with "./gpsp". It will mention something about no game loaded and on the bottom says to press B or Select to return; use a keyboard to press Backspace. This will come up with a menu that you can use the arrow keys on a keyboard to navigate. 
+
+Move down to "Configure gamepad input" if you want to configure gamepad input, or use the a simular message for configuring the keyboard. In the new menu, use the arrow keys to highlight a line and press Enter on the keyboard. It will wait for a button to be pressed and will map that button to the virtual button in the emulator. After it finds the button, move to the next line and repeat. When done, simply select "Back" at the bottom of the menu and then "Exit gpSP" to save the settings.
 
 ## Games not working/White Screen
 
