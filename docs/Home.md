@@ -14,6 +14,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [Setting up a PS3 controller](https://github.com/petrockblog/RetroPie-Setup/wiki/Setting-up-a-PS3-controller)
 * [Setting up wiimotes with classic controllers](https://github.com/petrockblog/RetroPie-Setup/wiki/Wiimotes-with-classic-controllers)
 * [Setting up an XBox 360 Controller](https://github.com/petrockblog/RetroPie-Setup/wiki/Setting-up-the-XBox360-controller)
+* [Adding Games to the 'PORTS' Section](https://github.com/petrockblog/RetroPie-Setup/wiki/Adding-software-to-Ports)
 
 ## Individual Components
 * [BasiliskII](https://github.com/petrockblog/RetroPie-Setup/wiki/BasiliskII)
