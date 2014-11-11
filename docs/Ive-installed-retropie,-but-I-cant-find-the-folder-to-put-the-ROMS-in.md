@@ -1,0 +1,2 @@
+Weird thing is on the SDcard I cant seem to find the folders for XBMC either.  I am using berryboot and also have raspbian too.  Ive plugged the sdcard into my mac and hardly see anything in the finder, and Ive have also tried using Fetch (ftp software) now with Fetch I am able to see nearly everything, except for some reason anything to do with either Retropie or XBMC.  What a pain!
+Anybody can help me out with this I would be so appreciative!
