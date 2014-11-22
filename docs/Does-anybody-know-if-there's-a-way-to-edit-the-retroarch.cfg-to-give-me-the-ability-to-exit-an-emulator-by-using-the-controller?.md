@@ -9,9 +9,11 @@ to your retroarch.cfg (opt/retropie/configs/all) you will be able to exit the em
 (For the L3 button on your xbox controller, in this example)
 
 But this wasn't enough for my configuration to work. I also had to do these three commands:
+
     sudo chown pi /opt/retropie/configs/all/retroarch.cfg
     cd /opt/retropie/emulators/RetroArch/installdir/bin
     sudo ./retroarch-joyconfig -j 0 >> /opt/retropie/configs/all/retroarch.cfg
+
 Which then directs you to input all the buttons required. Keep a note of the numbers of the buttons, in case you want to use a particular number for the input_exit_emulator_btn command. What then happens is this button configuration is stored in retroarch.cfg. Only then did the exit emulator button command work for me. Also, it's tempting to use button 8 (the xbox button) to exit emulators, but since it's not asked for/configured by the retroarch-joyconfig program it won't do anything if you add it to the config, I don't think. ymmv. Hope this has been helpful. This took me 3 hours, but I'm not very linux-minded.
 
 The following comes from [here](http://www.raspberrypi.org/phpBB3/viewtopic.php?p=250689#p250689):
