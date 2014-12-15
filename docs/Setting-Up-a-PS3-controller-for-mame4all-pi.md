@@ -1,3 +1,9 @@
+**[Retropie 2.3 update]**
+Many people are having  difficulties recompiling mame4all-pi after editing the minimal.cpp file as below. It is simpler, and time saving, to overwrite the existing mame binary in the /opt/retropie/emulators/mame4all-pi folder with Tititatoo's recompiled version which you can find at [this post](http://blog.petrockblock.com/forums/topic/mame4all-pi-with-ps3-controller/#post-81756) at the Retropie forum.
+
+There is no need to copy the other files in Titatitoo's package. The rom path in the mame.cfg file in Tititatoo's compiled binary package is incorrect. It should read /home/pi/RetroPie/roms/mame, should you need to change it. The mame.cfg.template and readme.txt are unchanged.
+
+
 The PS3 controller works out of the box for most emulators in version 2.2 of the Retropie image. This is not the case for mame4all-pi as the code rejects controllers with more than 6 axes. Here is the fix.
 
 
