@@ -170,7 +170,7 @@ Go to the `retroarch-joyconfig` folder (binary for configuring joypads for Retro
 
 By default (if you followed the install tutorial for the latest version):
 
-    cd /opt/retropie/emulators/RetroArch/installdir/bin/
+    cd /opt/retropie/emulators/retroarch/
 
 Before we start, please make sure the following folder has read/write permissions.
 We use /opt/retropie/configs/all/ as the base directory for the configuration files.
@@ -190,13 +190,13 @@ Then you have to configure each controller ( For example just use the first line
 
 ( **-o** for output file, **-p** for player, **-j** for joystick id )
 
-After this you will get 4(or less depending) cfg files to add to your default `RetroPie/configs/all/retroarch.cfg` config file:
+After this you will get 4(or less depending) cfg files to add to your default `/opt/retropie/configs/all/retroarch.cfg` config file:
 
     sudo cat /opt/retropie/configs/all/p*.cfg >> /opt/retropie/configs/all/retroarch.cfg
 
-(if this don't have permissions you can do a `sudo chmod 777 RetroPie/configs/all/retroarch.cfg` before)
+(if this don't have permissions you can do a `sudo chmod 777 /opt/retropie/configs/all/retroarch.cfg` before)
 
-If your config is not working well, delete the joypad configuration lines in `RetroPie/configs/all/retroarch.cfg` before doing anything.
+If your config is not working well, delete the joypad configuration lines in `/opt/retropie/configs/all/retroarch.cfg` before doing anything.
 
 (Delete the lines located at the bottom of the file, starting with line `input_player1_joypad_index = "0"`)
 
