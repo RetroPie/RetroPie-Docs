@@ -49,10 +49,8 @@ var="`command \`command1\``"
 
 ### Test and Square Braces
 
-```
-[[ ... ]] is preferred over [, test and /usr/bin/[.
-[[ ... ]] reduces errors as no pathname expansion or word splitting takes place between [[ and ]] and [[ ... ]] allows for regular expression matching where [ ... ] does not.
-```
+\[\[ ... \]\] is preferred over \[, test and /usr/bin/\[.
+\[\[ ... \]\] reduces errors as no pathname expansion or word splitting takes place between \[\[ and \]\] and \[\[ ... \]\] allows for regular expression matching where \[ ... \] does not.
 
 ``` bash
 # This ensures the string on the left is made up of characters in the
