@@ -81,7 +81,7 @@ Bash is smart enough to deal with an empty string in a test. So, given that the 
 
 ``` bash
 # Do this:
-if [[ "${my_var}" = "some_string" ]]; then
+if [[ "${my_var}" == "some_string" ]]; then
 do_something
 fi
 
@@ -92,12 +92,12 @@ do_something
 fi
 
 # This is OK (ensure quotes on the empty side), but not preferred:
-if [[ "${my_var}" = "" ]]; then
+if [[ "${my_var}" == "" ]]; then
 do_something
 fi
 
 # Not this:
-if [[ "${my_var}X" = "some_stringX" ]]; then
+if [[ "${my_var}X" == "some_stringX" ]]; then
 do_something
 fi
 ```
