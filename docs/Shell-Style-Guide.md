@@ -161,14 +161,8 @@ function configure_retroarch() {  % OK, module interface function
 
 ### Variable Names
 
-The names of variables are all lowercase using [camel case](http://en.wikipedia.org/wiki/CamelCase) notation.
+The names of variables are all lowercase. [Camel case](http://en.wikipedia.org/wiki/CamelCase) notation as well as _-notation can be used.
 
-For example:
-
-``` bash
-variableName   # OK
-variable_name  # not OK
-```
 
 ### Constants and Environment Variable Names
 
