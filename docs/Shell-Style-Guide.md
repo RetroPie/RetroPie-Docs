@@ -2,13 +2,25 @@
 
 <!-- MarkdownTOC -->
 
-- Introduction
-- Features and Bugs
-- Naming Conventions
-- Comments
-- Function Comments
-- Formatting
-- Conclusion
+- [Introduction](#introduction)
+- [Features and Bugs](#features-and-bugs)
+    - [Command Substitution](#command-substitution)
+    - [Test and Square Braces](#test-and-square-braces)
+    - [Testing Strings](#testing-strings)
+- [Naming Conventions](#naming-conventions)
+    - [Function Names](#function-names)
+    - [Variable Names](#variable-names)
+    - [Constants and Environment Variable Names](#constants-and-environment-variable-names)
+    - [Read-only variables](#read-only-variables)
+    - [Use Local Variables](#use-local-variables)
+- [Comments](#comments)
+- [Function Comments](#function-comments)
+    - [Implementation Comments](#implementation-comments)
+- [Formatting](#formatting)
+    - [Indentation](#indentation)
+    - [Pipelines](#pipelines)
+    - [Braces](#braces)
+- [Conclusion](#conclusion)
 
 <!-- /MarkdownTOC -->
 
@@ -35,7 +47,7 @@ var="$(command "$(command1)")"
 var="`command \`command1\``"
 ```
 
-### Test, [ and [[
+### Test and Square Braces
 
 [[ ... ]] is preferred over [, test and /usr/bin/[.
 [[ ... ]] reduces errors as no pathname expansion or word splitting takes place between [[ and ]] and [[ ... ]] allows for regular expression matching where [ ... ] does not.
