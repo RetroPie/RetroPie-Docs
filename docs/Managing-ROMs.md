@@ -56,6 +56,9 @@ Time to find out how well the clrmamepro rebuild went...
 * Leave all settings at default and click "New Scan..."
 * When clrmamepro finishes scanning, you will see a "Statistics" window with high level information and a "Scan Results" window with detailed information about your missing ROMs
 
+##Repeat Steps 4 through 6#
+* from clrmamepro "Profiler", load the DAT file for PiFBA, from "Settings" set the path to C:\RetroPieRoms\PiFBA and use "Rebuilder" to rebuild your existing ROMs to a new ROM set
+
 That's the basics of using clrmamepro.  Some additional notes:
 
 * Be careful with the "Fix" settings in the Scanner window and the "Remove Matched Sourcefiles" setting in the Rebuilder window. These settings will remove and rename your ROMs.
