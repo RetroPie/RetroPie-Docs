@@ -17,11 +17,15 @@ The version at the time of this article is 4.016.  I would recommend the 64 bit 
 ##Step 3 - Acquire DAT files#
 DAT files are the [XML-based](http://en.wikipedia.org/wiki/XML) database definitions of the exact ROMs an emulator uses. Using the DAT files and [CRC](http://en.wikipedia.org/wiki/Cyclic_redundancy_check) checks, clrmamepro is able to identify which of your ROMs are valid for a given emulator.
 
-The RetroPie SD card image install includes DAT files for MAME4ALL and PiFBA. You will use [WinSCP](http://winscp.net/eng/index.php) to connect to your RasPi and copy the DAT files back to your Windows PC.
+The RetroPie SD card image install includes DAT files for MAME4ALL and PiFBA. You can use [WinSCP](http://winscp.net/eng/index.php) to connect to your RasPi and copy the DAT files back to your Windows PC.
 
 * Create a new directory in Windows, `C:\RetroPieRoms`
 * Create a sub directory, `C:\RetroPieRoms\MAME4ALL`
 * Create a sub directory, `C:\RetroPieRoms\PiFBA`
+* Download and install [WinSCP](http://winscp.net/eng/download.php)
+* Launch WinSCP and connect to your Pi.  You can get the IP address of the Pi by typing `ifconfig` on the Pi.  It is also displayed on the Pi's screen at the end of the boot up sequence.
+* If you haven't changed any settings on your RetroPie, the default username is `pi` and the default password is `raspberry`
+* WinSCP is pretty straight forward, just navigate to your local Windows directory in the left-hand pane and navigate to the remote, Pi directory in the right-hand pane.   You can copy files by dragging them between the two panes.
 * Copy the DAT from your Raspberry Pi `/opt/retropie/emulators/mame4all/clrmame.dat` to your Windows PC `C:\RetroPieRoms\clrmame.dat`
 * Copy the ZIP from `/opt/retropie/emulators/pifba/fba_029671_clrmame_dat.zip` to `C:\RetroPieRoms\fba_029671_clrmame_dat.zip`
 * Extract `C:\RetroPieRoms\fba_029671_clrmame_dat.zip` to `C:\RetroPieRoms\`.  You should have two new DAT files: `fba_029671_od_release_10_working_roms.dat` and `fba_029671_od_release_10_non_working_roms.dat`.  We will only be using `fba_029671_od_release_10_working_roms.dat` in this tutorial.
