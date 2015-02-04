@@ -281,7 +281,7 @@ Content of /home/pi/.emulationstation/es_input.cfg for two wiimotes:
 ```
 
 For retroarch:
-End of file /home/pi/RetroPi/configs/all/retroarch.cfg (for two wiimotes):
+End of file /opt/retropie/emulators/retroarch/retroarch.cfg (for two wiimotes):
 ```shell
 input_player1_joypad_index = "0"
 input_player1_a_btn = "0"
