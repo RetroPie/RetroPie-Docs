@@ -56,6 +56,8 @@ SETUP (only if you already have run one of the installations above)
 317 Register RetroArch controller
 ```
 
+All credit goes to this video: http://youtu.be/CouHTixaz94
+
 ### For older versions of RetroPie
 
 For setting up the PS3 Controller we're going to be following This [post](http://booting-rpi.blogspot.ro/2012/08/dualshock-3-and-raspberry-pi.html)
