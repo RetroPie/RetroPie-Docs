@@ -1,8 +1,10 @@
-# This is no longer valid with the current version of EmulationStation
-Current EmulationStation uses an XML formatted config which this tool does not know how to parse.
 
 # ES-scraper
-ES-scraper is a quick script written in Python that uses various online sources ([thegamesdb.net](http://thegamesdb.net) and [archive.vg](http://archive.vg) so far) to scrape artwork and game info and save it as XML files to be read by EmulationStation. The repository can be found [here](https://github.com/elpendor/ES-scraper).
+ES-scraper is a quick script written in Python that uses various online sources ([thegamesdb.net](http://thegamesdb.net) and [archive.vg](http://archive.vg) so far) to scrape artwork and game info and save it as XML files to be read by EmulationStation. ~~The repository can be found [here](https://github.com/elpendor/ES-scraper)~~
+
+**The code currently in the repository is not compatible with the current version of EmulationStation**
+
+A fork of this repository has been modified to handle the newer XML style configuration [here](https://github.com/jmschultz/ES-scraper)
 
 If you're using ES-scraper as a standalone script, you will need to install PIL (for image resizing):
 
