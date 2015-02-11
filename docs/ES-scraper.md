@@ -1,3 +1,6 @@
+# This is no longer valid with the current version of EmulationStation
+Current EmulationStation uses an XML formatted config which this tool does not know how to parse.
+
 # ES-scraper
 ES-scraper is a quick script written in Python that uses various online sources ([thegamesdb.net](http://thegamesdb.net) and [archive.vg](http://archive.vg) so far) to scrape artwork and game info and save it as XML files to be read by EmulationStation. The repository can be found [here](https://github.com/elpendor/ES-scraper).
 
