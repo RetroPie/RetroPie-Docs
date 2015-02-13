@@ -14,7 +14,7 @@ use a kickstart 1.3/2.0/3.1 rom place your kick13.rom/kick20.rom/kick3.1 files i
 /home/pi/RetroPie/BIOS/
 ```
 
-Current controls (this may change) - these are hardcoded currently. This initial mapping was chosen as it's somewhat similar to MAME, and should mostly work on any controllers that use that input mapping (such as the picade).
+Current controls (this may change) - these are hardcoded currently. This initial mapping was chosen as it's somewhat similar to MAME, and should mostly work on any controllers that use that input mapping (such as the picade). Joypad/Joystick is currently untested.
 
 in game:
 ```
