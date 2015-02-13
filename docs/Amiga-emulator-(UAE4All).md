@@ -18,10 +18,10 @@ Current controls (this may change) - these are hardcoded currently. This initial
 
 in game:
 ```
-lctrl      - joy 1 (button X in gui)
-lalt       - joy 2 (button Y in gui)
-lshift     - mouse 1 (button A in gui)
-z          - mouse 2 (button B in gui)
+lctrl      - joy 1/mouse 1 (button X in gui)
+lalt       - joy 2/mouse 2 (button Y in gui)
+lshift     - joy 1 autofire (button A in gui)
+z          - mouse 1  (button B in gui)
 
 5          - switch input between mouse/joystick
 
