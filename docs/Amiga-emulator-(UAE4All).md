@@ -27,7 +27,7 @@ z          - mouse 1  (button B in gui)
 
 arrow keys - up / down / left / right
 
-shift+esc (exit back to menu)
+ctrl + esc (exit back to menu)
 ```
 
 Launch it from Emulation Station, and you get the gui where you can configure disks/roms/memory and insert adfs images into the virtual drives. 
