@@ -244,7 +244,7 @@ alias l='ls -alhF'
 alias ..='cd ..'
 alias roms='cd /home/pi/RetroPie/roms/'
 alias es='/usr/bin/emulationstation'
-alias rpies='sudo RetroPie-Setup/retropie_setup.sh'
+alias rpies='sudo /home/pi/RetroPie-Setup/retropie_setup.sh'
 alias scraper='python /home/pi/RetroPie/supplementary/ES-scraper/scraper.py -w 280 -m -p'
 alias temp='vcgencmd measure_temp'
 ```
