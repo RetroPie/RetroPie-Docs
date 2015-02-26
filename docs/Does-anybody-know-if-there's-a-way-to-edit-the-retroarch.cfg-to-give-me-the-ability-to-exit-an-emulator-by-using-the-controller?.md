@@ -25,3 +25,11 @@ The following comes from [here](http://www.raspberrypi.org/phpBB3/viewtopic.php?
 > Thanks to MungoBBQ for pointing this out!
 
 **Constraint**: This doesn't work for gpsp.
+
+I recently had to set this up myself on my pi, and wanted to add a few things:
+First, for a generic PS3 type controller the "PS" button in the center of the controller is button 12, so to exit a game with a simple button push, go to the bottom of your retroarch.cfg file and add the following line,
+           `input_exit_emulator_btn = 12`
+and when you press the PS button, your game will exit gracefully to the main Emulation Station screen.
+Second, the following line: 
+            `sudo ./retroarch-joyconfig -j 0 >> /opt/retropie/configs/all/retroarch.cfg`
+will automatically define the button settings for the first controller plugged in (Controller / joystick 0) and append the settings to your retroarch.cfg file. If you screw up during the mapping it's not a big deal, just remember that with the double greater than >> every time you run the command the settings will be appended to the pre-existing settings you had. Easiest way to do this is to use an editor like nano to delete the last few lines in retroarch.cfg that apply to your controller, then re-run the joyconfig script to remap.
