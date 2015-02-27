@@ -9,11 +9,11 @@ The list of supported db9 joysticks is below. Since the number of GPIO pins is l
 * Amiga CD32 pads
 
 # GPIO interface
-The available GPIOs are divided into 2 ports, PORT1 and PORT2. Both use 7 data pins, which are in identical locations on both rev1 and rev2 Pi boards. Additionally, the joysticks require either ground, or both ground and power pins depending on the type. These pins are common for both ports.
+The available GPIOs are divided into 2 ports, PORT1 and PORT2. Both use 7 data pins, which are in identical locations on all RPi board variants. Additionally, the joysticks require either ground, or both ground and power pins depending on the type. These pins are common for both ports.
 
 Pi's GPIO data pins operate at 3.3V and aren't 5V tolerant (see [this](http://elinux.org/RPi_Low-level_peripherals)), so 3.3V '''must''' be used for joysticks requiring power even though they'd be designed for 5V. However, some TTL-based joysticks may not function correctly using 3.3V supply. If they need to be powered from 5V, level shifters must be added between output pins of joystick and GPIO input pins. For example, 74LVC245 is an IC which can be used for this downconversion.
 
-The following image shows the pins used by the driver, and mappings are listed in the table next to it.
+Below is an illustration which shows the pins used by the driver, with the mappings listed in a table next to it. Pin numbers are identical for all board revisions: the image represents the complete gpio block for A/B boards, and the top portion of the gpio block of A+/B+/Model B boards.
 <table border=0><tbody><tr><td>
 <img src="http://www.niksula.hut.fi/~mhiienka/Rpi/images/db9_gpio_rpi.png"></img>
 </td><td>
@@ -76,10 +76,10 @@ The following image shows the pins used by the driver, and mappings are listed i
 | 8       | GND                  | GND          | GND            | LEFT                        | GND      |
 | 9       | -                    | -            | FIRE2          | GND                         | FIRE1    |
 
-More information on the connections is provided in the driver README.
+More information on the connections is provided in the driver README (/usr/share/doc/db9_gpio_rpi/README.gz).
 
 # Usage
-The module is loaded and configured with modprobe. This is explained shortly in the parent page and in detail in the driver README (/usr/share/doc/db9_gpio_rpi/README.gz). The joystick IDs for modprobe are listed below:
+The module is loaded and configured with modprobe. This is explained shortly in the parent page and in detail in the driver README. The joystick IDs for modprobe are listed below:
 
 | ID | Description                   |
 | --- | ----------------------------- |
@@ -102,5 +102,9 @@ Related [thread](http://www.raspberrypi.org/phpBB3/viewtopic.php?f=78&t=15787) i
 
 
 # Version history
+### 1.0 (27.2.2015)
+* Added support for RPi2
+* Fixed issues with 3rd-party MD pads
+
 ### 0.7 (28.4.2013)
 * first release
