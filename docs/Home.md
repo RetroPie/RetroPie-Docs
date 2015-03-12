@@ -61,4 +61,5 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 
 ## Developers
 
+ * [Building RetroPie Archives](https://github.com/petrockblog/RetroPie-Setup/wiki/Building-RetroPie-Archives)
  * [Shell Style Guide](https://github.com/petrockblog/RetroPie-Setup/wiki/Shell-Style-Guide)
