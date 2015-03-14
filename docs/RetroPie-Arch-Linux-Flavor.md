@@ -8,19 +8,19 @@ A guide to build the retropie setup on Arch Linux. This guide is not all encompa
 
 ## Sections
 
-1. AUR tools
-2. Install retroarch
-   1. Configuration
-3. Install Emulators
-4. Install ROMs
-5. Install EmulationStation
-   1. Configuration
-   2. Themes
-   3. Scraper
-      1. Configuration
-      2. Downloading Boxart Images
-6. Launch EmulationStation at login
-7. Auto login at boot
+  - [Section 1: AUR tools](#section-1-aur-tools)
+  - [Section 2: Install retroarch:](#section-2-install-retroarch)
+    - [Section 2.1. Configuration](#section-21-configuration)
+  - [Section 3: Install Emulators](#section-3-install-emulators)
+  - [Section 4: Install ROMs](#section-4-install-roms)
+  - [Section 5: Install EmulationStation:](#section-5-install-emulationstation)
+    - [5.1 Configuration](#51-configuration)
+    - [5.2 Themes](#52-themes)
+    - [5.3 Scraper](#53-scraper)
+      - [i) Configuration](#i-configuration)
+      - [ii) Downloading Boxart Images](#ii-downloading-boxart-images)
+  - [Section 6: Launch EmulationStation at login](#section-6-launch-emulationstation-at-login)
+  - [Section 7: Auto login at boot](#section-7-auto-login-at-boot)
 
 ***
 
