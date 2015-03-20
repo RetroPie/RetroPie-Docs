@@ -18,7 +18,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [Adding Games to the 'PORTS' Section](https://github.com/petrockblog/RetroPie-Setup/wiki/Adding-software-to-Ports)
 
 ## Individual Components
-* [Amiga Emulator (UAE4ALL2)](https://github.com/petrockblog/RetroPie-Setup/wiki/Amiga-emulator-%28UAE4All%29)
+* [Amiga Emulator (UAE4ALL2)](https://github.com/petrockblog/RetroPie-Setup/wiki/Amiga-Emulator-(UAE4All2))
 * [BasiliskII](https://github.com/petrockblog/RetroPie-Setup/wiki/BasiliskII)
 * [DGEN - Megadrive/Genesis Emulator](https://github.com/petrockblog/RetroPie-Setup/wiki/DGEN---Megadrive-Genesis-Emulator)
 * [Doom](https://github.com/petrockblog/RetroPie-Setup/wiki/PRBoom---Doom-Emulator)
