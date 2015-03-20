@@ -1,8 +1,10 @@
 ![Apple II](http://infojuegos.org/imagenes/logos/appleII_logo.jpg)
 ***
-The Apple II was a series of personal computers starting from 1977 to 1993
+_The Apple II was a series of personal computers starting from 1977 to 1993._
+***
 
-The emulator for Apple II is [Linapple](http://sourceforge.net/projects/linapple/)
+
+## Emulator: [Linapple](http://sourceforge.net/projects/linapple/)
 
 ## ROMS
 Accepted File Extensions: **.dsk**
