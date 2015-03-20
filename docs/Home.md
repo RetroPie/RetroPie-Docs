@@ -19,6 +19,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 
 ## Individual Components
 * [Amiga Emulator (UAE4ALL2)](https://github.com/petrockblog/RetroPie-Setup/wiki/Amiga-Emulator-(UAE4All2))
+* [Apple II Emulator (Linapple)](https://github.com/petrockblog/RetroPie-Setup/wiki/Apple-II-(Linapple))
 * [DGEN - Megadrive/Genesis Emulator](https://github.com/petrockblog/RetroPie-Setup/wiki/DGEN---Megadrive-Genesis-Emulator)
 * [Doom](https://github.com/petrockblog/RetroPie-Setup/wiki/PRBoom---Doom-Emulator)
 * [Duke 3D](https://github.com/petrockblog/RetroPie-Setup/wiki/Duke-3D-Troubleshooting)
