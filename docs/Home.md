@@ -25,6 +25,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [Atari ST/STE/TT/Falcon Emulator (Hatari)](https://github.com/petrockblog/RetroPie-Setup/wiki/Atari-ST-STE-TT-Falcon-Emulator-(Hatari))
 * [Atari800 and 5200 Emulator (Atari800)](https://github.com/petrockblog/RetroPie-Setup/wiki/Atari800-(5200)-Emulator-(Atari800))
 * [Commodore 64 (Vice)](https://github.com/petrockblog/RetroPie-Setup/wiki/Commodore-64-(Vice))
+* [Final Burn Alpha (PiFBA)](https://github.com/petrockblog/RetroPie-Setup/wiki/Final-Burn-Alpha-(PiFBA))
 * [DGEN - Megadrive/Genesis Emulator](https://github.com/petrockblog/RetroPie-Setup/wiki/DGEN---Megadrive-Genesis-Emulator)
 * [Doom](https://github.com/petrockblog/RetroPie-Setup/wiki/PRBoom---Doom-Emulator)
 * [Duke 3D](https://github.com/petrockblog/RetroPie-Setup/wiki/Duke-3D-Troubleshooting)
