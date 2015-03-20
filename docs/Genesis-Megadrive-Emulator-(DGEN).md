@@ -1,3 +1,9 @@
+![Sega Genesis](http://upload.wikimedia.org/wikipedia/en/1/12/GenesisLogo.png)![Megadrive](http://upload.wikimedia.org/wikipedia/en/a/a8/Megadrive_logo.png)
+***
+The Emulator for the Sega Genesis/Megadrive is DGEN. See the source here: http://dgen.sourceforge.net/
+
+CONTROLLER CONFIGS
+
 **Method 1**
 
 Setting up an "exit"-button (from [here](http://blog.petrockblock.com/forums/topic/dgen-over-composite-video/#post-1770) ):
