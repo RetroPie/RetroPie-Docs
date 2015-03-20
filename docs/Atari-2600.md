@@ -1,8 +1,10 @@
 ![Atari 2600](http://upload.wikimedia.org/wikipedia/commons/0/09/Atari_2600_Logo.png)
 ***
-The Atari 2600 was a home video game console released by Atari in 1977
+_The Atari 2600 was a home video game console released by Atari in 1977_
+***
+## Emulators: [Stella](http://stella.sourceforge.net/), [stella-libretro](https://github.com/libretro/stella-libretro)
 
-There are two emulators used for the Atari 2600: [Stella](http://stella.sourceforge.net/) and a port of Stella for Libretro [stella-libretro](https://github.com/libretro/stella-libretro)
+Both work fine. Stella-libretro is a port of Stella that utilises RetroArch configurations- see "Controls" below.
 
 ## ROMS
 Accepted File Extensions: **.bin .a26 .rom .zip .gz** (stella-libretro has a hard time extracting .zip files)
