@@ -29,6 +29,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [Genesis/Megadrive Emulator (DGEN, lr-genesis-plus-gx, lr-picodrive)](https://github.com/petrockblog/RetroPie-Setup/wiki/Genesis-Megadrive-Emulator-(DGEN))
 * [Game Gear Emulator (Osmose,lr-genesis-plus-gx)](https://github.com/petrockblog/RetroPie-Setup/wiki/Game-Gear-Emulator-(Osmose))
 * [Game Boy Emulator (lr-gambatte)](https://github.com/petrockblog/RetroPie-Setup/wiki/Game-Boy-Emulator-(lr-gambatte))
+* [Game Boy Color Emulator (lr-gambatte)](https://github.com/petrockblog/RetroPie-Setup/wiki/Game-Boy-Color-(lr-gambatte))
 * [Doom](https://github.com/petrockblog/RetroPie-Setup/wiki/PRBoom---Doom-Emulator)
 * [Duke 3D](https://github.com/petrockblog/RetroPie-Setup/wiki/Duke-3D-Troubleshooting)
 * [Emulation Station](https://github.com/petrockblog/RetroPie-Setup/wiki/EmulationStation)
