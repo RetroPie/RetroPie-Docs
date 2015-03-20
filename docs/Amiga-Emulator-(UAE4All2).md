@@ -1,23 +1,30 @@
 ![Amiga Logo] (http://upload.wikimedia.org/wikipedia/en/thumb/a/a7/Amiga_Logo_1985.svg/500px-Amiga_Logo_1985.svg.png)
 ***
 
+The Amiga was a family of personal computers released by Commodore in the 1980's and 1990's.
 
-RetroPie now has a branch new uae4all emulator - which works much better than the previous one and many games are playable. On a Pi 2, most OCS/ECS games run at full speed. 
+RetroPie now has a brand new [UAE4ALL](https://github.com/joolswills/uae4all2) emulator - which works much better than the previous one and many games are playable. On a Pi 2, most OCS/ECS games run at full speed. 
 
-Place your Amiga disks images (filetype typically **.adf**) in
+## ROMS
+Accepted file extensions: **.adf**
+
+ Place your Amiga disks images in
 
 ```shell
 /home/pi/RetroPie/roms/amiga/
 ```
 
-The emulator comes with a free AROS rom that will work for running many games and demos. If you want to
-use a kickstart 1.3/2.0/3.1 rom place your kick13.rom/kick20.rom/kick31.rom files in 
+## BIOS
+The emulator comes with a free AROS rom that will work for running many games and demos. 
+If you want to
+use a kickstart 1.3, 2.0, 3.1 rom place your **kick13.rom, kick20.rom, kick31.rom** files in 
 
 
 ```shell
 /home/pi/RetroPie/BIOS/
 ```
 
+## Controls
 Current controls (this may change) - these are hardcoded currently. This initial mapping was chosen as it's somewhat similar to MAME, and should mostly work on any controllers that use that input mapping (such as the picade). Joypad/Joystick is currently untested.
 
 in game:
