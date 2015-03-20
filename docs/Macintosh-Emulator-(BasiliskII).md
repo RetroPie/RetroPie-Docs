@@ -1,4 +1,4 @@
-![Macintosh](http://s3.amazonaws.com/rapgenius/apple-mac-logo-web.jpg)![Macintosh](http://www.trademarkia.com/logo-images/apple-inc/macintosh-77532612.jpg)
+![Macintosh](http://s3.amazonaws.com/rapgenius/apple-mac-logo-web.jpg)![Macintosh](http://seeklogo.com/images/M/Macintosh-logo-06741C862A-seeklogo.com.gif)
 ***
 
 Make sure you have the latest version of the retropie-setup script and binaries/source build of basilisk.
