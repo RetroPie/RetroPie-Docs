@@ -1,17 +1,71 @@
+![Retroarch Logo](http://www.libretro.com/wp-content/uploads/2014/01/retroarch-logo-300x611.png)
+***
+RetroArch is the official front end for the [Libretro](http://www.libretro.com/) API which essentially means that RetroArch will be what manages controls and configurations for all of the emulators that are part of the Libretro-Core (i.e. any emulator with an "lr" before it). This is a beautiful thing because it means you can configure controllers only once for many emulators instead of having to configure each emulator individually. RetroArch also gives us the freedom to configure emulators individually as discussed below under "Custom RetroArch Controls".
+
+## Retroarch-Joyconfig
+Plug in one controller you wish to configure and in the terminal type:
+```shell
+cd RetroPie-Setup
+sudo ./retropie_setup.sh
+Option 3 Setup
+Option 317 Configure Retroarch Controller
+
+Follow the on screen directions and your controller should now work on all libretro-core emulators- 
+including hotkeys (select+start to exit, select+right bumper to save, select+left bumper to load) 
+```
+## Custom Retroarch Controls
+
 All RetroArch based emulators can be configured in the following way:
 
 **Global** settings - that are settings which should apply to all systems - are done in the file 
 
-    ROOTDIR/configs/all/retroarch.cfg
-
-Here, ROOTDIR is the folder of the RetroPie installation, e.g., /home/pi/RetroPie/. 
+    /opt/retropie/configs/all/retroarch.cfg 
 
 **System-specific** settings are done in the files 
 
-    ROOTDIR/configs/SYSTEMNAME/retroarch.cfg
+    /opt/retropie/configs/SYSTEMNAME/retroarch.cfg
 
 Here, SYSTEMNAME is atari2600, snes, etc.. All settings in these files will overwrite the corresponding global setting.
 
 These configurations are used when starting a rom for a specific system. The individually used commands for starting a single rom can be found in the settings file of Emulation Station 
 
     ~/.emulationstation/es_systems.cfg
+
+## Example retroarch.cfg file for custom controls to override defaults
+```shell
+input_player1_joypad_index = 0
+input_player1_b_btn = 2
+input_player1_a_btn = 1
+input_player1_y_btn = 3
+input_player1_x_btn = 0
+input_player1_l_btn = 4
+input_player1_r_btn = 5
+input_player1_start_btn = 9
+input_player1_select_btn = 8
+input_player2_joypad_index = 1
+input_player2_b_btn = 2
+input_player2_a_btn = 1
+input_player2_y_btn = 3
+input_player2_x_btn = 0
+input_player2_l_btn = 4
+input_player2_r_btn = 5
+input_player2_start_btn = 9
+input_player2_select_btn = 8
+
+# Axis for RetroArch D-Pad. 
+# Needs to be either '+' or '-' in the first character signaling either positive or negative direction of the axis, then the axis number. 
+input_player1_up_axis = -1
+input_player1_down_axis = +1
+input_player1_left_axis = -0
+input_player1_right_axis = +0
+input_player2_up_axis = -1
+input_player2_down_axis = +1
+input_player2_left_axis = -0
+input_player2_right_axis = +0
+
+#Hotkeys- Hotkeys enable you to press a combination of buttons to do such things as exit emulators, save states,
+# and load states, as well as any other functionality in an emulator. (In the example below 8 is the select key
+# and 9 is the start key so when I hold down select and press start it will exit the emulator.)
+input_enable_hotkey_btn = 8
+input_exit_emulator_btn = 9
+input_save_state_btn = 5
