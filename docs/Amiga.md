@@ -1,7 +1,12 @@
 ![Amiga Logo] (http://upload.wikimedia.org/wikipedia/en/thumb/a/a7/Amiga_Logo_1985.svg/500px-Amiga_Logo_1985.svg.png)
 ***
 
-The Amiga was a family of personal computers released by Commodore in the 1980's and 1990's.
+_The Amiga was a family of personal computers released by Commodore in the 1980's and 1990's._
+
+***
+
+
+## Emulator: [UAE4ALL2](https://github.com/joolswills/uae4all2)
 
 RetroPie now has a brand new [UAE4ALL](https://github.com/joolswills/uae4all2) emulator - which works much better than the previous one and many games are playable. On a Pi 2, most OCS/ECS games run at full speed. 
 
