@@ -1,3 +1,6 @@
+![Gameboy Advance Logo](http://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Gameboy_advance_logo.svg/640px-Gameboy_advance_logo.svg.png)
+***
+The Game Boy Advance currently has 3 emulators: [gpSP](https://github.com/DPRCZ/gpsp), [libretro-gpSP](https://github.com/libretro/gpsp), and [libretro-vba-next](https://github.com/libretro/vba-next)
 ## BIOS file
 
 The gpSP emulator needs a GBA BIOS file `gba_bios.bin` in the directory of the gpsp binary. The RetroPie SD-card image, e.g., has the gpsp binary located in `/home/pi/RetroPie/emulators/gpsp/raspberrypi/`. Copy your GBA BIOS file into this directory.
