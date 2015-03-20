@@ -1,3 +1,6 @@
+![Macintosh](http://s3.amazonaws.com/rapgenius/apple-mac-logo-web.jpg)![Macintosh](http://logos-vector.com/images/logo/xxl/3/5/2/35267/Macintosh_c88a4_450x450.png)
+***
+
 Make sure you have the latest version of the retropie-setup script and binaries/source build of basilisk.
 
 Make sure you have the latest emulationstation config for it also by running
@@ -6,8 +9,8 @@ Make sure you have the latest emulationstation config for it also by running
 sudo ./retropie_packages basilisk configure
 ```
 
-Place your mac rom at ~/RetroPie/roms/macintosh/mac.rom
-Place a premade disk image at ~/RetroPie/roms/macintosh/disk.img
+Place your mac rom at ~/RetroPie/roms/macintosh/mac.rom (e.g. you can rename PERFORMA.ROM to mac.rom)
+Place a premade disk image at ~/RetroPie/roms/macintosh/disk.img (e.g. You can rename MacStartup.img to disk.img)
 
 and it should load these on launch.
 
