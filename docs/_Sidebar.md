@@ -1,6 +1,6 @@
-# [Home](https://github.com/petrockblog/RetroPie-Setup/wiki)
+###  [Home](https://github.com/petrockblog/RetroPie-Setup/wiki)
 
-## Emulators
+### Emulators
 
 * [Amiga](https://github.com/petrockblog/RetroPie-Setup/wiki/Amiga) [(UAE4ALL2)](https://github.com/joolswills/uae4all2)
 * [Apple II](https://github.com/petrockblog/RetroPie-Setup/wiki/Apple-II) [(Linapple)](http://sourceforge.net/projects/linapple/)
