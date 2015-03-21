@@ -15,4 +15,5 @@
 * [Intellivision](https://github.com/petrockblog/RetroPie-Setup/wiki/Intellivision)
 * [Macintosh](https://github.com/petrockblog/RetroPie-Setup/wiki/Macintosh)
 * [MAME](https://github.com/petrockblog/RetroPie-Setup/wiki/MAME)
+* [MSX](https://github.com/petrockblog/RetroPie-Setup/wiki/MSX)
 * [Master System](https://github.com/petrockblog/RetroPie-Setup/wiki/Master-System)
