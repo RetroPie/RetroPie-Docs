@@ -31,6 +31,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [Game Boy](https://github.com/petrockblog/RetroPie-Setup/wiki/Game-Boy) [(lr-gambatte)](https://github.com/libretro/gambatte-libretro)
 * [Game Boy Color](https://github.com/petrockblog/RetroPie-Setup/wiki/Game-Boy-Color) [(lr-gambatte)](https://github.com/libretro/gambatte-libretro)
 * [Game Boy Advance](https://github.com/petrockblog/RetroPie-Setup/wiki/Game-Boy-Advance) [(gpSP)](https://github.com/DPRCZ/gpsp), [(lr-gpSP)](https://github.com/libretro/gpsp), [(lr-vba-next)](https://github.com/libretro/vba-next)
+* [Intellivision](https://github.com/petrockblog/RetroPie-Setup/wiki/Intellivision) [(jzIntv)](http://spatula-city.org/~im14u2c/intv/)
 * [MAME](https://github.com/petrockblog/RetroPie-Setup/wiki/MAME) [(AdvanceMAME)](http://advancemame.sourceforge.net/), [(MAME4ALL-Pi)](http://sourceforge.net/projects/mame4allpi/), [(imame4all-libretro)](https://github.com/libretro/imame4all-libretro)
 * [Doom](https://github.com/petrockblog/RetroPie-Setup/wiki/PRBoom---Doom-Emulator)
 * [Duke 3D](https://github.com/petrockblog/RetroPie-Setup/wiki/Duke-3D-Troubleshooting)
