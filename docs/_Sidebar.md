@@ -8,3 +8,4 @@
 * [Commodore 64](https://github.com/petrockblog/RetroPie-Setup/wiki/Commodore-64)
 * [FinalBurn Alpha](https://github.com/petrockblog/RetroPie-Setup/wiki/FinalBurn-Alpha)
 * [Genesis/Megadrive](https://github.com/petrockblog/RetroPie-Setup/wiki/Genesis-Megadrive)
+* [Game Gear](https://github.com/petrockblog/RetroPie-Setup/wiki/Game-Gear)
