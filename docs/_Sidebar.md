@@ -12,4 +12,5 @@
 * [Game Boy](https://github.com/petrockblog/RetroPie-Setup/wiki/Game-Boy)
 * [Game Boy Color](https://github.com/petrockblog/RetroPie-Setup/wiki/Game-Boy-Color)
 * [Game Boy Advance](https://github.com/petrockblog/RetroPie-Setup/wiki/Game-Boy-Advance)
+* [Intellivision](https://github.com/petrockblog/RetroPie-Setup/wiki/Intellivision)
 * [MAME](https://github.com/petrockblog/RetroPie-Setup/wiki/MAME)
