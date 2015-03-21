@@ -30,7 +30,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [Game Gear](https://github.com/petrockblog/RetroPie-Setup/wiki/Game-Gear) [(Osmose)](http://www.lgdb.org/emulator/osmose), [(lr-Genesis-Plus-GX)](https://github.com/libretro/Genesis-Plus-GX)
 * [Game Boy](https://github.com/petrockblog/RetroPie-Setup/wiki/Game-Boy) [(lr-gambatte)](https://github.com/libretro/gambatte-libretro)
 * [Game Boy Color](https://github.com/petrockblog/RetroPie-Setup/wiki/Game-Boy-Color) [(lr-gambatte)](https://github.com/libretro/gambatte-libretro)
-* [Game Boy Advance Emulator (gpSP,-lr-gpSP,-lr-vba-next)](https://github.com/petrockblog/RetroPie-Setup/wiki/Game-Boy-Advance-Emulator-(gpSP,-lr-gpSP,-lr-vba-next))
+* [Game Boy Advance](https://github.com/petrockblog/RetroPie-Setup/wiki/Game-Boy-Advance) [(gpSP)](https://github.com/DPRCZ/gpsp), [(lr-gpSP)](https://github.com/libretro/gpsp), [(lr-vba-next)](https://github.com/libretro/vba-next)
 * [Doom](https://github.com/petrockblog/RetroPie-Setup/wiki/PRBoom---Doom-Emulator)
 * [Duke 3D](https://github.com/petrockblog/RetroPie-Setup/wiki/Duke-3D-Troubleshooting)
 * [Emulation Station](https://github.com/petrockblog/RetroPie-Setup/wiki/EmulationStation)
