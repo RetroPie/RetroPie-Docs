@@ -25,7 +25,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [Atari ST/STE/TT/Falcon](https://github.com/petrockblog/RetroPie-Setup/wiki/Atari-ST-STE-TT-Falcon) [(Hatari)](http://hatari.tuxfamily.org/)
 * [Atari 400, 800, 1200XL, 600XL, 800XL, 130XE, XEGS and Atari 5200](https://github.com/petrockblog/RetroPie-Setup/wiki/Atari-800-and-5200) [(Atari800)](http://atari800.sourceforge.net/)
 * [Commodore 64](https://github.com/petrockblog/RetroPie-Setup/wiki/Commodore-64) [(Vice)](http://vice-emu.sourceforge.net/)
-* [Final Burn Alpha Emulator (PiFBA, lr-fba)](https://github.com/petrockblog/RetroPie-Setup/wiki/Final-Burn-Alpha-(PiFBA))
+* [FinalBurn Alpha](https://github.com/petrockblog/RetroPie-Setup/wiki/FinalBurn-Alpha) [(PiFBA)](http://sourceforge.net/projects/pifba/), [(lr-fba)](https://github.com/libretro/fba-libretro)
 * [Genesis/Megadrive Emulator (DGEN, lr-genesis-plus-gx, lr-picodrive)](https://github.com/petrockblog/RetroPie-Setup/wiki/Genesis-Megadrive-Emulator-(DGEN))
 * [Game Gear Emulator (Osmose,lr-genesis-plus-gx)](https://github.com/petrockblog/RetroPie-Setup/wiki/Game-Gear-Emulator-(Osmose))
 * [Game Boy Emulator (lr-gambatte)](https://github.com/petrockblog/RetroPie-Setup/wiki/Game-Boy-Emulator-(lr-gambatte))
