@@ -4,6 +4,6 @@
 * [Atari 2600](https://github.com/petrockblog/RetroPie-Setup/wiki/Atari-2600)
 * [Atari Lynx](https://github.com/petrockblog/RetroPie-Setup/wiki/Atari-Lynx)
 * [Atari ST/STE/TT/Falcon](https://github.com/petrockblog/RetroPie-Setup/wiki/Atari-ST-STE-TT-Falcon)
-* [Atari 8 bit series and 5200](https://github.com/petrockblog/RetroPie-Setup/wiki/Atari-800-and-5200)
+* [Atari 5200 and 8 bit series](https://github.com/petrockblog/RetroPie-Setup/wiki/Atari-800-and-5200)
 * [Commodore 64](https://github.com/petrockblog/RetroPie-Setup/wiki/Commodore-64)
 * [FinalBurn Alpha](https://github.com/petrockblog/RetroPie-Setup/wiki/FinalBurn-Alpha)
