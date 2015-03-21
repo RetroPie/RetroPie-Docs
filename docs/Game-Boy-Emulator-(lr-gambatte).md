@@ -22,3 +22,13 @@ Add custom retroarch controls to the retroarch.cfg file in
 /opt/retropie/configs/gb/retroarch.cfg
 ```
 For more information on custom RetroArch controls see: [RetroArch Configuration](https://github.com/petrockblog/RetroPie-Setup/wiki/RetroArch-Configuration)
+## Advanced Configurations
+### How to Colourise Game Boy games
+
+Open RGUI by pressing select+x or on the keyboard pressing your hotkey+F1 then navigate to options
+
+-Select Core Options
+
+-Change GB Colorization from disabled to enabled (by pressing the right button on your keyboard)
+
+-Then restart the game by selecting load content (history) and choose your game now in colour!
