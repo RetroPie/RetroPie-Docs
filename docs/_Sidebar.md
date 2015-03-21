@@ -10,3 +10,4 @@
 * [Genesis/Megadrive](https://github.com/petrockblog/RetroPie-Setup/wiki/Genesis-Megadrive)
 * [Game Gear](https://github.com/petrockblog/RetroPie-Setup/wiki/Game-Gear)
 * [Game Boy](https://github.com/petrockblog/RetroPie-Setup/wiki/Game-Boy)
+* [Game Boy Color](https://github.com/petrockblog/RetroPie-Setup/wiki/Game-Boy-Color)
