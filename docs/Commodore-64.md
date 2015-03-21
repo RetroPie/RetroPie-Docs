@@ -47,8 +47,10 @@ Once you've started and exited the VICE emulator at least once it will create a 
 ```shell
 /opt/retropie/configs/c64/sdl-vicerc 
 ```
-open the file "sdl-vicerc" and to double the screen size change 
-VICIIDoubleSize=0 
+open the file "sdl-vicerc" and to double the screen size change
+ 
+VICIIDoubleSize=0
+ 
 to VICIIDoubleSize=1 
 
 ## Troubleshooting
