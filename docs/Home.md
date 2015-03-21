@@ -35,6 +35,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [Macintosh](https://github.com/petrockblog/RetroPie-Setup/wiki/Macintosh) [(BasiliskII)](http://basilisk.cebix.net/)
 * [MAME](https://github.com/petrockblog/RetroPie-Setup/wiki/MAME) [(AdvanceMAME)](http://advancemame.sourceforge.net/), [(MAME4ALL-Pi)](http://sourceforge.net/projects/mame4allpi/), [(imame4all-libretro)](https://github.com/libretro/imame4all-libretro)
 * [MasterSystem](https://github.com/petrockblog/RetroPie-Setup/wiki/Master-System) [(lr-Genesis-Plus-GX)](https://github.com/libretro/Genesis-Plus-GX), [(lr-picodrive)](https://github.com/libretro/picodrive),  [(Osmose)](http://www.lgdb.org/emulator/osmose)
+* [MSX](https://github.com/petrockblog/RetroPie-Setup/wiki/MSX) [(lr-fmsx)](https://github.com/libretro/fmsx-libretro)
 * [Doom](https://github.com/petrockblog/RetroPie-Setup/wiki/PRBoom---Doom-Emulator)
 * [Duke 3D](https://github.com/petrockblog/RetroPie-Setup/wiki/Duke-3D-Troubleshooting)
 * [Emulation Station](https://github.com/petrockblog/RetroPie-Setup/wiki/EmulationStation)
