@@ -1,7 +1,4 @@
-###  [Home](https://github.com/petrockblog/RetroPie-Setup/wiki)
-
-### Emulators
-
+* [Home](https://github.com/petrockblog/RetroPie-Setup/wiki)
 * [Amiga](https://github.com/petrockblog/RetroPie-Setup/wiki/Amiga) [(UAE4ALL2)](https://github.com/joolswills/uae4all2)
 * [Apple II](https://github.com/petrockblog/RetroPie-Setup/wiki/Apple-II) [(Linapple)](http://sourceforge.net/projects/linapple/)
 * [Atari 2600](https://github.com/petrockblog/RetroPie-Setup/wiki/Atari-2600) [(Stella)](http://stella.sourceforge.net/) [(lr-stella)](https://github.com/libretro/stella-libretro)
