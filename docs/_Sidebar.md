@@ -7,3 +7,4 @@
 * [Atari ST/STE/TT/Falcon](https://github.com/petrockblog/RetroPie-Setup/wiki/Atari-ST-STE-TT-Falcon)
 * [Commodore 64](https://github.com/petrockblog/RetroPie-Setup/wiki/Commodore-64)
 * [FinalBurn Alpha](https://github.com/petrockblog/RetroPie-Setup/wiki/FinalBurn-Alpha)
+* [Genesis/Megadrive](https://github.com/petrockblog/RetroPie-Setup/wiki/Genesis-Megadrive)
