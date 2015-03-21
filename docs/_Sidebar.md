@@ -9,3 +9,4 @@
 * [FinalBurn Alpha](https://github.com/petrockblog/RetroPie-Setup/wiki/FinalBurn-Alpha)
 * [Genesis/Megadrive](https://github.com/petrockblog/RetroPie-Setup/wiki/Genesis-Megadrive)
 * [Game Gear](https://github.com/petrockblog/RetroPie-Setup/wiki/Game-Gear)
+* [Game Boy](https://github.com/petrockblog/RetroPie-Setup/wiki/Game-Boy)
