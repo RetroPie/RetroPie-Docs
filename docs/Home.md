@@ -22,7 +22,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [Apple II](https://github.com/petrockblog/RetroPie-Setup/wiki/Apple-II) [(Linapple)](http://sourceforge.net/projects/linapple/)
 * [Atari 2600](https://github.com/petrockblog/RetroPie-Setup/wiki/Atari-2600) [(Stella)](http://stella.sourceforge.net/) [(lr-stella)](https://github.com/libretro/stella-libretro)
 * [Atari Lynx](https://github.com/petrockblog/RetroPie-Setup/wiki/Atari-Lynx) [(lr-handy)](https://github.com/libretro/libretro-handy)
-* [Atari ST/STE/TT/Falcon Emulator (Hatari)](https://github.com/petrockblog/RetroPie-Setup/wiki/Atari-ST-STE-TT-Falcon-Emulator-(Hatari))
+* [Atari ST/STE/TT/Falcon](https://github.com/petrockblog/RetroPie-Setup/wiki/Atari-ST-STE-TT-Falcon) [(Hatari)](http://hatari.tuxfamily.org/)
 * [Atari 400, 800, 1200XL, 600XL, 800XL, 130XE, XEGS and Atari 5200](https://github.com/petrockblog/RetroPie-Setup/wiki/Atari-800-and-5200) [(Atari800)](http://atari800.sourceforge.net/)
 * [Commodore 64 (Vice)](https://github.com/petrockblog/RetroPie-Setup/wiki/Commodore-64-(Vice))
 * [Final Burn Alpha Emulator (PiFBA, lr-fba)](https://github.com/petrockblog/RetroPie-Setup/wiki/Final-Burn-Alpha-(PiFBA))
