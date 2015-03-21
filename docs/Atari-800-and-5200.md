@@ -6,6 +6,7 @@ _Atari released a series of 8 bit computers (400, 800, 1200XL, 600XL, 800XL, 130
 This emulator emulates the Atari 8 bit family: 400, 800, 1200XL, 600XL, 800XL, 130XE, XEGS and the Atari 5200. This one of the more tricky emulators to get set up as it requires a multiplicity of BIOS files and configurations depending on what systems you want to utilise but it seems to run Atari 5200 games pretty well.
 ## ROMS
 Accepted File Extensions: **.xex .bin .a52**
+
 Place your Atari 400,800,5200 ROMS in
 ```shell
 /home/pi/RetroPie/roms/atari800
@@ -228,3 +229,6 @@ Left: left or numpad 4
 Fire: RCTRL
 Exit Emulator: F9
 ```
+## Troubleshooting
+
+* If it freezes up on you on the cartridge screen then try rebooting your pi and try again. If it keeps failing you either have the wrong BIOS, your ROM isn't compatible, or you chose the wrong cartridge option.
