@@ -1,3 +1,5 @@
+![RetroPie Project](https://lh3.googleusercontent.com/csSW5omKXfWIT_xAJ52LxVYojCj3aXUBR1EjfR1oXUU=w589-h207-p-no)
+
 Welcome to the RetroPie-Setup wiki!
 
 This wiki is supposed to be created by the users of the RetroPie setup script for the users of the script. Everyone can contribute to it!
