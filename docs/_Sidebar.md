@@ -17,3 +17,4 @@
 * [MAME](https://github.com/petrockblog/RetroPie-Setup/wiki/MAME)
 * [Master System](https://github.com/petrockblog/RetroPie-Setup/wiki/Master-System)
 * [MSX](https://github.com/petrockblog/RetroPie-Setup/wiki/MSX)
+* [Nintendo 64](https://github.com/petrockblog/RetroPie-Setup/wiki/Nintendo-64)
