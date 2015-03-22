@@ -1,4 +1,15 @@
-## Music
+# Ports
+Doom, Duke Nukem 3D, Quake, Quake III Arena
+
+## Doom: [(libretro-prboom)](https://github.com/libretro/libretro-prboom)
+***
+![Doom](http://vignette4.wikia.nocookie.net/doom/images/4/4b/Doom-1-.gif/revision/latest?cb=20080630083507)
+***
+
+
+### Old Configs
+
+**Music**
 
 To enable music in your Doom game(s) you need to copy MP3s with specific names into the same folder as your ROMs are located. You can find a list of names [here](https://github.com/libretro/libretro-prboom/blob/master/src/m_misc.c#L605): They follow the scheme e1m1.mp3, e1m2.mp3, ..., e2m1.mp, e2m2.mp3, ... . There are freely available tracks available - find them by searching for "PSX Doom Music".
 
@@ -71,3 +82,41 @@ Below are the corresponding tracks if the MP3s are named:
 * mus_read_m                "track 03 main menu.mp3" 
 * mus_dm2ttl                "track 02 title screen.mp3" 
 * mus_dm2int                "track 05 stats screen.mp3"
+
+## Duke Nukem 3D
+
+***
+![Duke Nukem 3D](http://monkeydesk.at/content/attachments/5843d1337609358-duke-nukem-3d.jpg/)
+
+***
+
+
+**Old Configs**
+
+The grp-file-argument gets ignored.
+It always loads the grp-file located at
+
+> /usr/share/games/eduke32/duke3d.grp
+
+If you swap this with a full version of the grp-file it works.
+
+If you start EDuke32 and it is not recognizing your controller bring down the console and type:
+
+`in_joystick 1`
+
+# Quake [(libretro-tyrquake)](https://github.com/libretro/libretro-tyrquake)
+
+***
+![Quake](http://firsthour.net/screenshots/quake/quake-cover-thumb.jpg)
+***
+
+# Quake III Arena
+
+***
+![Quake III Arena](http://games-history.ru/upload/box/quake3_box.jpg)
+***
+
+
+
+
+
