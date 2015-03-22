@@ -48,6 +48,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [ScummVM](https://github.com/petrockblog/RetroPie-Setup/wiki/ScummVM)
 * [Sega 32X](https://github.com/petrockblog/RetroPie-Setup/wiki/Sega-32X) [(lr-picodrive)](https://github.com/libretro/picodrive)
 * [Sega CD](https://github.com/petrockblog/RetroPie-Setup/wiki/Sega-CD) [(lr-picodrive)](https://github.com/libretro/picodrive)
+* [Super Nintendo Entertainment System](https://github.com/petrockblog/RetroPie-Setup/wiki/Super-Nintendo-Entertainment-System) [(PiSNES)](http://sourceforge.net/projects/pisnes/), [(snes9x-rpi)](https://github.com/joolswills/snes9x-rpi), [(lr-armsnes)](https://github.com/rmaz/ARMSNES-libretro), [(lr-catsfc)](https://github.com/libretro/CATSFC-libretro), [(lr-pocketsnes)](https://github.com/libretro/pocketsnes-libretro), [(lr-snes9x-next)](https://github.com/libretro/snes9x-next)
 * [Emulation Station](https://github.com/petrockblog/RetroPie-Setup/wiki/EmulationStation)
 * [ES-scraper](https://github.com/petrockblog/RetroPie-Setup/wiki/ES-scraper)
 * [Module for GPIO interface for retro game controllers](https://github.com/petrockblog/RetroPie-Setup/wiki/Module-for-GPIO-interface-for-retro-game-controllers)
