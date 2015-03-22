@@ -24,3 +24,4 @@
 * [PC](https://github.com/petrockblog/RetroPie-Setup/wiki/PC)
 * [PC Engine/TurboGrafx-16](https://github.com/petrockblog/RetroPie-Setup/wiki/PC-Engine)
 * [Ports](https://github.com/petrockblog/RetroPie-Setup/wiki/Ports)
+* [PlayStation 1](https://github.com/petrockblog/RetroPie-Setup/wiki/Playstation-1)
