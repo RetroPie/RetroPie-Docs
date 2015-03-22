@@ -4,7 +4,7 @@ _The Nintendo 64 is a 5th generation gaming console released by Nintendo in 1996
 
 ***
 
-## Emulators: [Mupen64plus](https://code.google.com/p/mupen64plus/) [Mupen64plus-libretro](https://github.com/libretro/mupen64plus-libretro)
+## Emulators: [Mupen64plus](https://code.google.com/p/mupen64plus/), [Mupen64plus-libretro](https://github.com/libretro/mupen64plus-libretro)
 
 While the mupen64plus-libretro core has the convenience of RetroArch configurations, the actual Mupen64plus does better with performance. Note that you should be using a Raspberry Pi 2 if you want any decent N64 performance.
 
