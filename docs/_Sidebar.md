@@ -27,3 +27,4 @@
 * [PlayStation 1](https://github.com/petrockblog/RetroPie-Setup/wiki/Playstation-1)
 * [ScummVM](https://github.com/petrockblog/RetroPie-Setup/wiki/ScummVM)
 * [Sega 32X](https://github.com/petrockblog/RetroPie-Setup/wiki/Sega-32X)
+* [Sega CD](https://github.com/petrockblog/RetroPie-Setup/wiki/Sega-CD)
