@@ -28,7 +28,7 @@ Add custom retroarch controls to the retroarch.cfg file in
 ```
 For more information on custom RetroArch controls see: [RetroArch Configuration](https://github.com/petrockblog/RetroPie-Setup/wiki/RetroArch-Configuration)
 
-### Mupen64plus-libretro
+### Mupen64plus
 
 There are two main configuration files that can be modified located at:
 ```
