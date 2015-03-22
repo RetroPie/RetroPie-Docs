@@ -36,7 +36,7 @@ There are two main configuration files that can be modified located at:
 and
 /opt/retropie/configs/N64/InputAutoCfg.ini
 ```
-See these videos to get an idea of how to customise them for your needs
+## Video Tutorials
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=4WX7RrzUtII
 " target="_blank"><img src="https://i.ytimg.com/vi_webp/4WX7RrzUtII/mqdefault.webp" 
