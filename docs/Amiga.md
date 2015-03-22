@@ -49,3 +49,9 @@ lctrl + esc (exit back to menu)
 Launch it from Emulation Station, and you get the gui where you can configure disks/roms/memory and insert adfs images into the virtual drives. 
 
 It can't currently launch games directly from the Emulation Station menu, but the GUI is easy to use.
+
+## Video Tutorial
+
+<a href="http://www.dailymotion.com/video/x2k4rsi_retropie-amiga-emulation-on-raspberry-pi_videogames
+" target="_blank"><img src="https://lh5.ggpht.com/_keSPDjzzLDwZ1BweCKtPdjypbVYhKbvgdpxkEJguepdx43nXjVUoxMlgC32kKND4dM=w170" 
+alt="N64 Configuration Video" width="240" height="180" border="10" /></a>
