@@ -19,6 +19,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 
 ## Individual Components
 * [Amiga](https://github.com/petrockblog/RetroPie-Setup/wiki/Amiga) [(UAE4ALL2)](https://github.com/joolswills/uae4all2)
+* [Amstrad CPC](https://github.com/petrockblog/RetroPie-Setup/wiki/Amstrad-CPC) [(CPC4Rpi)](http://gaming.capsule-sa.co.za/?gamepress_reviews=cpc4rpi-cpc-6128-emulator-for-raspberry-pi)
 * [Apple II](https://github.com/petrockblog/RetroPie-Setup/wiki/Apple-II) [(Linapple)](http://sourceforge.net/projects/linapple/)
 * [Atari 2600](https://github.com/petrockblog/RetroPie-Setup/wiki/Atari-2600) [(Stella)](http://stella.sourceforge.net/) [(lr-stella)](https://github.com/libretro/stella-libretro)
 * [Atari Lynx](https://github.com/petrockblog/RetroPie-Setup/wiki/Atari-Lynx) [(lr-handy)](https://github.com/libretro/libretro-handy)
