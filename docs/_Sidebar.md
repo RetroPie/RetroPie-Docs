@@ -1,5 +1,6 @@
 * [Home](https://github.com/petrockblog/RetroPie-Setup/wiki)
 * [Amiga](https://github.com/petrockblog/RetroPie-Setup/wiki/Amiga)
+* [Amstrad CPC](https://github.com/petrockblog/RetroPie-Setup/wiki/Amstrad-CPC)
 * [Apple II](https://github.com/petrockblog/RetroPie-Setup/wiki/Apple-II)
 * [Atari 2600](https://github.com/petrockblog/RetroPie-Setup/wiki/Atari-2600)
 * [Atari 5200 and 8 bit series](https://github.com/petrockblog/RetroPie-Setup/wiki/Atari-800-and-5200)
