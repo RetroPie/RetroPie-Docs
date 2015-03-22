@@ -1,48 +1,44 @@
-## Location of the BIOS
+![Playstation Logo](http://images.scroll.com.tr/2013/11/PlayStation-1-Logo.png)
 
-The default location for the BIOS file(s) is 
-```shell
-cd ~/RetroPie/emulatorcores
+***
+_The PlayStation 1 is a 5th generation video game console released by Sony in 1994._
+
+***
+## Emulator: [libretro-pcsx-rearmed](https://github.com/libretro/pcsx_rearmed)
+
+## ROMS
+Accepted File Extensions: **.bin .cue .img .mdf**
+
+Place your PlayStation ROMs in 
 ```
+/home/pi/RetroPie/roms/psx
+````
 
-Just copying the BIOS file to that directory should be enough for it to be found by the emulator.
+## BIOS
 
-Alternatively you can use a different directory to store the BIOS files as follows
+The BIOS file is named **SCPH1001.BIN**
 
-Create the directory to store BIOS files:
-
-```shell
-mkdir ~/RetroPie/BIOS
+Place SCPH1001.BIN in
 ```
-
-Make sure you copy your bios files into that directory with **no capitalization in any part of the name** _or_ **file extension**.
-
-Once that is done, all you have to do is edit the pcsx core config file using this command:
-
-```shell
-nano ~/RetroPie/configs/psx/retroarch.cfg
+/home/pi/RetroPie/BIOS
 ```
-and add the line:
+See table at the bottom for alternative BIOS options that may or may not work.
+
+## Controls
+
+libretro-pcsx-rearmed utilises Retroarch configurations
+
+Add custom retroarch controls to the retroarch.cfg file in
 ```shell
-system_directory = /home/pi/RetroPie/BIOS
+/opt/retropie/configs/psx/retroarch.cfg
 ```
-To save file and quit type ctrl + x.
+For more information on custom RetroArch controls see: [RetroArch Configuration](https://github.com/petrockblog/RetroPie-Setup/wiki/RetroArch-Configuration)
 
-Then you will see:
-
-Save modified buffer (ANSWERING "No" WILL DESTROY CHANGES)?
-
-Type Y, press return.
-
-If you're unsure and want to check to see that the file really was changed use the command:
-```shell
-less ~/RetroPie/configs/psx/retroarch.cfg
-```
-Exit by typing x.
-
-Reboot and it should find and use your BIOS.
-
-## BIOS files
+### Video Tutorial
+<a href="https://www.youtube.com/watch?v=r6-VOCyDoTc
+" target="_blank"><img src="https://i.ytimg.com/vi_webp/r6-VOCyDoTc/mqdefault.webp" 
+alt="N64 Configuration Video" width="240" height="180" border="10" /></a>
+### Alternative BIOS files
 
 Add different bios' that you've tested and tell the community if it works or not.
 
