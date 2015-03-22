@@ -166,8 +166,10 @@ MaintainAspectRatio=1
 [Sound]
 ```
 ## Video Tutorial:
+
 <a href="https://www.youtube.com/watch?v=C7ETQUBNVRo" target="_blank"><img src="https://i.ytimg.com/vi_webp/C7ETQUBNVRo/mqdefault.webp" 
 alt="N64 Configuration Video" width="300" height="180" border="10" /></a>
+
 ## List of Hardware Supported
 * Capcom CPS-1
 * Capcom CPS-2
