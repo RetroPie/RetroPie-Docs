@@ -40,4 +40,4 @@ See this video to get an idea of how to customise them for your needs
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=4WX7RrzUtII
 " target="_blank"><img src="https://i.ytimg.com/vi_webp/4WX7RrzUtII/mqdefault.webp" 
-alt="N64 Configuration Video" width="240" height="180" border="10" /></a>
+alt="N64 Configuration Video" width="300" height="180" border="10" /></a>
