@@ -30,3 +30,4 @@
 * [Sega CD](https://github.com/petrockblog/RetroPie-Setup/wiki/Sega-CD)
 * [Super Nintendo Entertainment System](https://github.com/petrockblog/RetroPie-Setup/wiki/Super-Nintendo-Entertainment-System)
 * [Vectrex](https://github.com/petrockblog/RetroPie-Setup/wiki/Vectrex)
+* [Zmachine](https://github.com/petrockblog/RetroPie-Setup/wiki/Zmachine)
