@@ -16,6 +16,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [Setting up an XBox 360 Controller](https://github.com/petrockblog/RetroPie-Setup/wiki/Setting-up-the-XBox360-controller)
 * [Setting up bios files](https://github.com/petrockblog/RetroPie-Setup/wiki/BIOS-setup-for-RetroPie)
 * [Adding Games to the 'PORTS' Section](https://github.com/petrockblog/RetroPie-Setup/wiki/Adding-software-to-Ports)
+* [Getting the Right MAME ROMs](https://github.com/petrockblog/RetroPie-Setup/wiki/Managing-ROMs)
 
 ## Individual Components
 * [Amiga](https://github.com/petrockblog/RetroPie-Setup/wiki/Amiga) [(UAE4ALL2)](https://github.com/joolswills/uae4all2)
