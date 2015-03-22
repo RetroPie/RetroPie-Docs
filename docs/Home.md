@@ -47,12 +47,12 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [PlayStation 1](https://github.com/petrockblog/RetroPie-Setup/wiki/Playstation-1) [(lr-pcsx-rearmed)](https://github.com/libretro/pcsx_rearmed)
 * [ScummVM](https://github.com/petrockblog/RetroPie-Setup/wiki/ScummVM)
 * [Sega 32X](https://github.com/petrockblog/RetroPie-Setup/wiki/Sega-32X) [(lr-picodrive)](https://github.com/libretro/picodrive)
+* [Sega CD](https://github.com/petrockblog/RetroPie-Setup/wiki/Sega-CD) [(lr-picodrive)](https://github.com/libretro/picodrive)
 * [Emulation Station](https://github.com/petrockblog/RetroPie-Setup/wiki/EmulationStation)
 * [ES-scraper](https://github.com/petrockblog/RetroPie-Setup/wiki/ES-scraper)
 * [Module for GPIO interface for retro game controllers](https://github.com/petrockblog/RetroPie-Setup/wiki/Module-for-GPIO-interface-for-retro-game-controllers)
 * [Mo-Xin Driver](https://github.com/petrockblog/RetroPie-Setup/wiki/Troubles-with-the-Xin-Mo-Controller)
 * [RetroArch](https://github.com/petrockblog/RetroPie-Setup/wiki/RetroArch)
-* [RPix86](https://github.com/petrockblog/RetroPie-Setup/wiki/RPix86)
 
 ## Troubleshooting
 * [Compatibility Sheet](https://github.com/petrockblog/RetroPie-Setup/wiki/Compatibility-Sheet)
