@@ -43,3 +43,7 @@ if you get tired of the story:
 and it will take you back to the terminal. 
 
 As far as it stands right now this isn't integrated by default in EmulationStation but it sure should be!
+
+If you want it added to Emulationstation, Follow these steps in this post:
+
+http://blog.petrockblock.com/forums/topic/zmachine-not-working-when-booted-from-emulationstation/#post-92307
