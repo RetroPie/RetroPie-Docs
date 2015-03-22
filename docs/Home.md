@@ -17,8 +17,13 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [Setting up bios files](https://github.com/petrockblog/RetroPie-Setup/wiki/BIOS-setup-for-RetroPie)
 * [Adding Games to the 'PORTS' Section](https://github.com/petrockblog/RetroPie-Setup/wiki/Adding-software-to-Ports)
 * [Getting the right MAME ROMs](https://github.com/petrockblog/RetroPie-Setup/wiki/Managing-ROMs)
+* [EmulationStation](https://github.com/petrockblog/RetroPie-Setup/wiki/EmulationStation)
+* [ES-scraper](https://github.com/petrockblog/RetroPie-Setup/wiki/ES-scraper)
+* [Module for GPIO interface for retro game controllers](https://github.com/petrockblog/RetroPie-Setup/wiki/Module-for-GPIO-interface-for-retro-game-controllers)
+* [Mo-Xin Driver](https://github.com/petrockblog/RetroPie-Setup/wiki/Troubles-with-the-Xin-Mo-Controller)
+* [RetroArch](https://github.com/petrockblog/RetroPie-Setup/wiki/RetroArch)
 
-## Individual Components
+## Emulators
 * [Amiga](https://github.com/petrockblog/RetroPie-Setup/wiki/Amiga) [(UAE4ALL2)](https://github.com/joolswills/uae4all2)
 * [Amstrad CPC](https://github.com/petrockblog/RetroPie-Setup/wiki/Amstrad-CPC) [(CPC4Rpi)](http://gaming.capsule-sa.co.za/?gamepress_reviews=cpc4rpi-cpc-6128-emulator-for-raspberry-pi)
 * [Apple II](https://github.com/petrockblog/RetroPie-Setup/wiki/Apple-II) [(Linapple)](http://sourceforge.net/projects/linapple/)
@@ -51,11 +56,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [Super Nintendo Entertainment System](https://github.com/petrockblog/RetroPie-Setup/wiki/Super-Nintendo-Entertainment-System) [(PiSNES)](http://sourceforge.net/projects/pisnes/), [(snes9x-rpi)](https://github.com/joolswills/snes9x-rpi), [(lr-armsnes)](https://github.com/rmaz/ARMSNES-libretro), [(lr-catsfc)](https://github.com/libretro/CATSFC-libretro), [(lr-pocketsnes)](https://github.com/libretro/pocketsnes-libretro), [(lr-snes9x-next)](https://github.com/libretro/snes9x-next)
 * [Vectrex](https://github.com/petrockblog/RetroPie-Setup/wiki/Vectrex) [(lr-vecx)](https://github.com/libretro/libretro-vecx)
 * [Zmachine](https://github.com/petrockblog/RetroPie-Setup/wiki/Zmachine) [(Frotz)](http://frotz.sourceforge.net/)
-* [Emulation Station](https://github.com/petrockblog/RetroPie-Setup/wiki/EmulationStation)
-* [ES-scraper](https://github.com/petrockblog/RetroPie-Setup/wiki/ES-scraper)
-* [Module for GPIO interface for retro game controllers](https://github.com/petrockblog/RetroPie-Setup/wiki/Module-for-GPIO-interface-for-retro-game-controllers)
-* [Mo-Xin Driver](https://github.com/petrockblog/RetroPie-Setup/wiki/Troubles-with-the-Xin-Mo-Controller)
-* [RetroArch](https://github.com/petrockblog/RetroPie-Setup/wiki/RetroArch)
+* [ZX Spectrum](https://github.com/petrockblog/RetroPie-Setup/wiki/ZX-Spectrum) [(FBZX)](http://www.rastersoft.com/fbzx.html), [(Fuse)](http://fuse-emulator.sourceforge.net/)
 
 ## Troubleshooting
 * [Compatibility Sheet](https://github.com/petrockblog/RetroPie-Setup/wiki/Compatibility-Sheet)
