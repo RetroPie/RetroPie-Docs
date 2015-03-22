@@ -1,3 +1,46 @@
+![ScummVM Logo](http://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Scummvm_logo.svg/640px-Scummvm_logo.svg.png)
+***
+_ScummVM stands for Script Creation Utility for Maniac Mansion (VM stands for virtual machine). ScummVM is a program which allows you to run certain classic graphical point-and-click adventure games, provided you already have their data files_
+***
+## Emulator: [ScummVM](http://scummvm.org/)
+
+## ROMS
+Accepted File Extensions: This is a tricky question as ScummVM has it's own particular filesets and method of loading- but when all is said and done **.sh .svm** are the filetypes EmulationStation will read.
+
+ScummVM is much different than most romsets in that there are a set of files for each game. 
+
+See the list here: http://wiki.scummvm.org/index.php/Datafiles
+
+Place Your folders of game files in
+```
+/home/pi/RetroPie/roms/scummvm
+```
+
+**Quick Start**
+
+-After you've added you files into the scummvm rom folder, open up the +LAUNCH GUI
+
+-then hold down shift and click mass add
+
+-Navigate to the scummvm folder and select it to add all of your files
+
+-quit out of the GUI
+
+-Press F4 to get out of emulationstation
+
+-Type in emulationstation to open up emulationstation
+
+-navigate to scummvm and your games will all be there on the list and you'll have no need of a GUI
+
+## Video Tutorial:
+
+<a href="https://www.youtube.com/watch?v=txdiaZlDUEs" target="_blank"><img src="https://i.ytimg.com/vi_webp/txdiaZlDUEs/mqdefault.webp" 
+alt="N64 Configuration Video" width="300" height="180" border="10" /></a>
+
+```shell
+
+**OUTDATED CONFIGURATIONS (these settings were integrated by default starting with image 2.5)**
+
 The following guide is taken from [here](http://blog.petrockblock.com/forums/topic/guidescript-add-all-your-scummvm-games-to-emulationstation/#post-4814):
 
 Here is a guide plus a script i made to get all your scummvm games to show in emulationstation (which is usually a pain).
@@ -34,18 +77,20 @@ f.close()
 #a directory, only this time ScummVM will search through all
 #subdirectories for supported games.
 ```
-
+```
 Run it with : ```python ES-scummvm.py /home/pi/RetroPie/roms/scummvm```.
 The script will generate dummy .svm files so they can be read by EmulationStation.
 Now, in ```/home/pi/.emulationstation/es_system.cfg``` make sure your scummvm section looks like this (notice the ```%BASENAME%``` instead of ```%ROM%``` and the .svm for the dummy files):
 
-```bash
+bash
 DESCNAME=ScummVM
 NAME=scummvm
 PATH=/media/usb0/scummvm
 EXTENSION=.svm
 COMMAND=scummvm -f –joystick=0 %BASENAME%
 PLATFORMID=99
-```
+
 
 Thats all
+```
+```
