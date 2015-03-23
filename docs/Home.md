@@ -52,10 +52,9 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [Setting up an N64 controller](https://github.com/petrockblog/RetroPie-Setup/wiki/Setting-up-an-N64-- controller)
 * [Setting up a PS3 controller](https://github.com/petrockblog/RetroPie-Setup/wiki/Setting-up-a-PS3-controller)
 * [Setting up wiimotes with classic controllers](https://github.com/petrockblog/RetroPie-Setup/wiki/Wiimotes-with-classic-controllers)
-*  [Setting up an XBox 360 Controller](https://github.com/petrockblog/RetroPie-Setup/wiki/Setting-up-the-XBox360-controller)
+* [Setting up an XBox 360 Controller](https://github.com/petrockblog/RetroPie-Setup/wiki/Setting-up-the-XBox360-controller)
 * [How to Update an Existing RetroPie Installation](https://github.com/petrockblog/RetroPie-Setup/wiki/How-to-Update-an-Existing-RetroPie-Installation)
 * [RetroPie Arch Linux Flavor](https://github.com/petrockblog/RetroPie-Setup/wiki/RetroPie-Arch-Linux-Flavor)
-
 * [Setting up bios files](https://github.com/petrockblog/RetroPie-Setup/wiki/BIOS-setup-for-RetroPie)
 * [Adding Games to the 'PORTS' Section](https://github.com/petrockblog/RetroPie-Setup/wiki/Adding-software-to-Ports)
 * [Getting the right MAME ROMs](https://github.com/petrockblog/RetroPie-Setup/wiki/Managing-ROMs)
