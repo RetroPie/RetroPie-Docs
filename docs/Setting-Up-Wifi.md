@@ -25,6 +25,10 @@ iface wlan0 inet dhcp
 ```
 you can also add "wireless-power off" at the end (without quotations) if you have issues with your wifi dongle turning off and on a lot and not being able to maintain a connection.
 
+`sudo reboot`
+
+on reboot (if configured correctly) your wifi will be working.
+
 ## Method 2
 
 **Taken from the Raspberry Pi Foundation [here](http://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md):**
