@@ -1,3 +1,14 @@
+# ROMS
+
+ROMs stand for Read Only Memory. ROMs are essentially digital versions of old game cartridges which allow you to play games on emulators (software that mimics your old gaming consoles.) There are many issues involving Copyrights laws regarding the usage of ROMs, as a result in order to preserve the integrity and longevity of the  RetroPie project, the locations of ROMs will not and cannot be added to the Wiki. That being said, in the search of your childhood- Google is your friend.
+
+If you hate reading: watch this video instead, otherwise read on! 
+
+<a href="http://www.dailymotion.com/video/x2i0nuk_retropie-copying-roms-to-your-raspberry-pi_videogames" target="_blank"><img src="http://petrockblog.files.wordpress.com/2012/10/retropieprojectlogofinish.jpg" 
+alt="N64 Configuration Video" width="150" height="110" border="10" /></a> 
+
+
+
 ## Copying via SSH connection
 
 One way for copying ROMs on the SD card is via an [SSH connection](http://en.wikipedia.org/wiki/Secure_Shell). It is enabled per default in Raspbian and allows, for example, to remotely log into the RPi with a Terminal or to copy files between two computers.
@@ -18,6 +29,12 @@ You can find additional information about remotely accessing the RPi in the [eLi
 ## Copying via Samba Shares
 
 The RetroPie Setup allows to install and configure Samba shares for each installed emulator. You can access this function in the RetroPie Setup Script in the menu "Setup". After the installation it is possible to copy ROMs to the Raspberry by using the corresponding Samba shares.
+
+easiest way to access is to go into "computer" folder on windows and in the top type:
+
+```shell
+\\your-pi-ip-address
+```
 
 ## Using USB-Sticks
 
