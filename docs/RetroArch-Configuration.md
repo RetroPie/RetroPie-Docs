@@ -13,7 +13,6 @@ Option 317 Configure Retroarch Controller
 Follow the on screen directions and your controller should now work on all libretro-core emulators- 
 including hotkeys (select+start to exit, select+right bumper to save, select+left bumper to load) 
 ```
-## Custom Retroarch Controls
 
 All RetroArch based emulators can be configured in the following way:
 
@@ -30,6 +29,21 @@ Here, SYSTEMNAME is atari2600, snes, etc.. All settings in these files will over
 These configurations are used when starting a rom for a specific system. The individually used commands for starting a single rom can be found in the settings file of Emulation Station 
 
     ~/.emulationstation/es_systems.cfg
+
+see these videos:
+
+<a href="http://www.dailymotion.com/video/x2i0njr_retropie-testing-joystick-on-raspberry-pi_videogames" target="_blank"><img src="https://lh4.ggpht.com/MFywT7QpnT6WA2vgh1Fb0bfaz2Si4BRCnWV53Hiu9lr1ZpE6tJ_mP7AmXzC7hy2wFFlD=w300" 
+alt="N64 Configuration Video" width="150" height="150" border="10" /></a> |
+<a href="http://www.dailymotion.com/video/x2hudlt_retropie-configure-usb-controller-retroarch_videogames" target="_blank"><img src="https://lh4.ggpht.com/MFywT7QpnT6WA2vgh1Fb0bfaz2Si4BRCnWV53Hiu9lr1ZpE6tJ_mP7AmXzC7hy2wFFlD=w300" 
+alt="N64 Configuration Video" width="150" height="150" border="10" /></a>  |      <a href="http://www.dailymotion.com/video/x2i0s10_retropie-configuring-a-wireless-ps3-controller_videogames" target="_blank"><img src="https://lh4.ggpht.com/MFywT7QpnT6WA2vgh1Fb0bfaz2Si4BRCnWV53Hiu9lr1ZpE6tJ_mP7AmXzC7hy2wFFlD=w300" 
+alt="N64 Configuration Video" width="150" height="150" border="10" /></a>  - | -      <a href="http://www.dailymotion.com/video/x2i0ufc_retropie-xbox-wireless-controller-setup-on-raspberry-pi_videogames" target="_blank"><img src="https://lh4.ggpht.com/MFywT7QpnT6WA2vgh1Fb0bfaz2Si4BRCnWV53Hiu9lr1ZpE6tJ_mP7AmXzC7hy2wFFlD=w300" 
+alt="N64 Configuration Video" width="150" height="150" border="10" /></a>  --- | ---  <a href="http://www.dailymotion.com/video/x2i0lsy_retropie-multiple-usb-controllers_videogames" target="_blank"><img src="https://lh4.ggpht.com/MFywT7QpnT6WA2vgh1Fb0bfaz2Si4BRCnWV53Hiu9lr1ZpE6tJ_mP7AmXzC7hy2wFFlD=w300" 
+alt="N64 Configuration Video" width="150" height="150" border="10" /></a> 
+
+
+ [Testing Joystick](http://www.dailymotion.com/video/x2i0njr_retropie-testing-joystick-on-raspberry-pi_videogames) | [Setting up Controller](http://www.dailymotion.com/video/x2hudlt_retropie-configure-usb-controller-retroarch_videogames) | [Wireless PS3 Controller](http://www.dailymotion.com/video/x2i0s10_retropie-configuring-a-wireless-ps3-controller_videogames) | [Wireless Xbox Controller](http://www.dailymotion.com/video/x2i0ufc_retropie-xbox-wireless-controller-setup-on-raspberry-pi_videogames) | [Setting Up Multiple Controllers](http://www.dailymotion.com/video/x2i0lsy_retropie-multiple-usb-controllers_videogames) 
+----- | ----- | ----- |----- | -----
+## Custom Retroarch Controls
 
 ## Example retroarch.cfg file for custom controls to override defaults
 ```shell
@@ -69,3 +83,13 @@ input_player2_right_axis = +0
 input_enable_hotkey_btn = 8
 input_exit_emulator_btn = 9
 input_save_state_btn = 5
+```
+
+## Hotkeys
+
+Hotkeys are combinations of buttons you can press in order to access options such as saving, loading, and exiting games.
+
+see this video:
+
+<a href="http://www.dailymotion.com/video/x2hxlc3" target="_blank"><img src="https://lh4.ggpht.com/MFywT7QpnT6WA2vgh1Fb0bfaz2Si4BRCnWV53Hiu9lr1ZpE6tJ_mP7AmXzC7hy2wFFlD=w300" 
+alt="N64 Configuration Video" width="150" height="150" border="10" /></a>
