@@ -6,24 +6,11 @@ Welcome to the RetroPie-Setup wiki!
 
 This wiki is supposed to be created by the users of the RetroPie setup script for the users of the script. Everyone can contribute to it!
 
-## Tutorials
-* [First Installation](https://github.com/petrockblog/RetroPie-Setup/wiki/First-Installation)
-* [Advanced Configuration](https://github.com/petrockblog/RetroPie-Setup/wiki/Advanced-Configuration)
-* [How to Get ROMs on the SD Card](https://github.com/petrockblog/RetroPie-Setup/wiki/How-to-get-ROMs-on-the-SD-card)
-* [How to Update an Existing RetroPie Installation](https://github.com/petrockblog/RetroPie-Setup/wiki/How-to-Update-an-Existing-RetroPie-Installation)
-* [RetroPie Arch Linux Flavor](https://github.com/petrockblog/RetroPie-Setup/wiki/RetroPie-Arch-Linux-Flavor)
-* [Setting up an N64 controller](https://github.com/petrockblog/RetroPie-Setup/wiki/Setting-up-an-N64-controller)
-* [Setting up a PS3 controller](https://github.com/petrockblog/RetroPie-Setup/wiki/Setting-up-a-PS3-controller)
-* [Setting up wiimotes with classic controllers](https://github.com/petrockblog/RetroPie-Setup/wiki/Wiimotes-with-classic-controllers)
-* [Setting up an XBox 360 Controller](https://github.com/petrockblog/RetroPie-Setup/wiki/Setting-up-the-XBox360-controller)
-* [Setting up bios files](https://github.com/petrockblog/RetroPie-Setup/wiki/BIOS-setup-for-RetroPie)
-* [Adding Games to the 'PORTS' Section](https://github.com/petrockblog/RetroPie-Setup/wiki/Adding-software-to-Ports)
-* [Getting the right MAME ROMs](https://github.com/petrockblog/RetroPie-Setup/wiki/Managing-ROMs)
-* [EmulationStation](https://github.com/petrockblog/RetroPie-Setup/wiki/EmulationStation)
-* [ES-scraper](https://github.com/petrockblog/RetroPie-Setup/wiki/ES-scraper)
-* [Module for GPIO interface for retro game controllers](https://github.com/petrockblog/RetroPie-Setup/wiki/Module-for-GPIO-interface-for-retro-game-controllers)
-* [Mo-Xin Driver](https://github.com/petrockblog/RetroPie-Setup/wiki/Troubles-with-the-Xin-Mo-Controller)
-* [RetroArch](https://github.com/petrockblog/RetroPie-Setup/wiki/RetroArch)
+## Getting Started
+* [First Installation](https://github.com/petrockblog/RetroPie-Setup/wiki/First-Installation-(RetroPie-SD-Image-2.6))
+* [Setting Up Wifi](https://github.com/petrockblog/RetroPie-Setup/wiki/Setting-Up-Wifi)
+* [Configuring Controllers (RetroArch)](https://github.com/petrockblog/RetroPie-Setup/wiki/RetroArch-Configuration)
+* [Transferring ROMs](https://github.com/petrockblog/RetroPie-Setup/wiki/How-to-get-ROMs-on-the-SD-card)
 
 ## Emulators
 * [Amiga](https://github.com/petrockblog/RetroPie-Setup/wiki/Amiga) [(UAE4ALL2)](https://github.com/joolswills/uae4all2)
@@ -60,10 +47,26 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [Zmachine](https://github.com/petrockblog/RetroPie-Setup/wiki/Zmachine) [(Frotz)](http://frotz.sourceforge.net/)
 * [ZX Spectrum](https://github.com/petrockblog/RetroPie-Setup/wiki/ZX-Spectrum) [(FBZX)](http://www.rastersoft.com/fbzx.html), [(Fuse)](http://fuse-emulator.sourceforge.net/)
 
-## Troubleshooting
+## Troubleshooting & Advanced Configuration
+* [Advanced Configuration](https://github.com/petrockblog/RetroPie-Setup/wiki/Advanced-Configuration)
+* [Setting up an N64 controller](https://github.com/petrockblog/RetroPie-Setup/wiki/Setting-up-an-N64-- controller)
+* [Setting up a PS3 controller](https://github.com/petrockblog/RetroPie-Setup/wiki/Setting-up-a-PS3-controller)
+* [Setting up wiimotes with classic controllers](https://github.com/petrockblog/RetroPie-Setup/wiki/Wiimotes-with-classic-controllers)
+*  [Setting up an XBox 360 Controller](https://github.com/petrockblog/RetroPie-Setup/wiki/Setting-up-the-XBox360-controller)
+* [How to Update an Existing RetroPie Installation](https://github.com/petrockblog/RetroPie-Setup/wiki/How-to-Update-an-Existing-RetroPie-Installation)
+* [RetroPie Arch Linux Flavor](https://github.com/petrockblog/RetroPie-Setup/wiki/RetroPie-Arch-Linux-Flavor)
+
+* [Setting up bios files](https://github.com/petrockblog/RetroPie-Setup/wiki/BIOS-setup-for-RetroPie)
+* [Adding Games to the 'PORTS' Section](https://github.com/petrockblog/RetroPie-Setup/wiki/Adding-software-to-Ports)
+* [Getting the right MAME ROMs](https://github.com/petrockblog/RetroPie-Setup/wiki/Managing-ROMs)
+* [EmulationStation](https://github.com/petrockblog/RetroPie-Setup/wiki/EmulationStation)
+* [ES-scraper](https://github.com/petrockblog/RetroPie-Setup/wiki/ES-scraper)
+* [Module for GPIO interface for retro game controllers](https://github.com/petrockblog/RetroPie-Setup/wiki/Module-for-GPIO-interface-for-retro-game-controllers)
+* [Mo-Xin Driver](https://github.com/petrockblog/RetroPie-Setup/wiki/Troubles-with-the-Xin-Mo-Controller)
+* [RetroArch](https://github.com/petrockblog/RetroPie-Setup/wiki/RetroArch)
+* [Manual Installation](https://github.com/petrockblog/RetroPie-Setup/wiki/First-Installation)
 * [Compatibility Sheet](https://github.com/petrockblog/RetroPie-Setup/wiki/Compatibility-Sheet)
 * [Control Issues](https://github.com/petrockblog/RetroPie-Setup/wiki/Control-Issues)
-* [RetroArch Configuration](https://github.com/petrockblog/RetroPie-Setup/wiki/RetroArch-Configuration)
 * [Sound Issues](https://github.com/petrockblog/RetroPie-Setup/wiki/Sound-Issues)
 * [Speed Issues](https://github.com/petrockblog/RetroPie-Setup/wiki/Speed-Issues)
 * [Video Issues](https://github.com/petrockblog/RetroPie-Setup/wiki/Video-Issues)
