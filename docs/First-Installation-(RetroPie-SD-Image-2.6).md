@@ -50,6 +50,18 @@ alt="Ps1 Configuration Video" width="250" height="150" border="10" /></a>
 
 You'll need to make a few configurations before you can transfer your ROMs over. For these you will either need a keyboard or an internet connection to your Pi either through [Wifi](https://github.com/petrockblog/RetroPie-Setup/wiki/Setting-Up-Wifi) or Ethernet. 
 
+Need help setting up your Wifi? See this video for help:
+
+<a href="https://www.youtube.com/watch?v=hXzPJMAJAac
+" target="_blank"><img src="https://i.ytimg.com/vi_webp/gr52HC3V_Lg/mqdefault.webp" 
+alt="Set up your Wifi Dongle" width="250" height="150" border="10" /></a>
+
+Want to connect to your Pi through your home computer rather than plugging a keyboard directly into it? See here:
+
+<a href="https://www.youtube.com/watch?v=RyNii3UcHPw
+" target="_blank"><img src="https://i.ytimg.com/vi_webp/gr52HC3V_Lg/mqdefault.webp" 
+alt="Connect to your Pi with SSH" width="250" height="150" border="10" /></a>
+
 ### Expand Filesystem
 
 `sudo raspi-config`
@@ -60,7 +72,7 @@ and then reboot
 
 See this video for help:
 
-<a href="https://https://www.youtube.com/watch?v=ujYsnm-Zr4o
+<a href="https://www.youtube.com/watch?v=ujYsnm-Zr4o
 " target="_blank"><img src="https://i.ytimg.com/vi_webp/ujYsnm-Zr4o/mqdefault.webp" 
 alt="Ps1 Configuration Video" width="250" height="150" border="10" /></a>
 
