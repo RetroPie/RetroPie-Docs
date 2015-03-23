@@ -1,3 +1,7 @@
+![RetroPie](https://lh4.googleusercontent.com/-l146esBcjj0/VQ9adgm0ZJI/AAAAAAAAAPE/wIqh0Q4wwS0/w638-h103-no/RetroPie%2BCenter.png)
+***
+
+
 Welcome to the RetroPie-Setup wiki!
 
 This wiki is supposed to be created by the users of the RetroPie setup script for the users of the script. Everyone can contribute to it!
