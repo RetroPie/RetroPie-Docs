@@ -11,31 +11,6 @@ Place your Atari 400,800,5200 ROMS in
 ```shell
 /home/pi/RetroPie/roms/atari800
 ```
-Note: as of right now- if you have .bin and .a52 roms- if you want the Atari800 emulator to show up in emulationstation or want your games to work then you will need to modify the es_systems.cfg file in
-```shell
-/etc/emulationstation/es_systems.cfg
-
-OLD:
-  <system>
-    <fullname>Atari 800</fullname>
-    <name>atari800</name>
-    <path>~/RetroPie/roms/atari800</path>
-    <extension>.xex .XEX</extension>
-    <command>/opt/retropie/supplementary/runcommand/runcommand.sh 0 "/opt/retropie/emulators/atari800/bin/atari800 %ROM%" "atari800"</command>
-    <platform>atari800</platform>
-    <theme>atari800</theme>
-  </system>
-NEW:
-  <system>
-    <fullname>Atari 800</fullname>
-    <name>atari800</name>
-    <path>~/RetroPie/roms/atari800</path>
-    <extension>.xex .XEX .bin .BIN .a52 .A52</extension>
-    <command>/opt/retropie/supplementary/runcommand/runcommand.sh 0 "/opt/retropie/emulators/atari800/bin/atari800 %ROM%" "atari800"</command>
-    <platform>atari800</platform>
-    <theme>atari800</theme>
-  </system>
-```
 ## BIOS
 There are 5 main BIOS needed for the Atari800 emulator:
 
