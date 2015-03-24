@@ -70,6 +70,8 @@ Time to find out how well your source ROMs matched up...
 * Use clrmamepro's "Rebuilder" to rebuild your existing ROMs to a new ROM set
 * Scan the rebuilt ROMs using the "Scanner"
 
+##Notes#
+
 That's the basics of using clrmamepro.  Some additional notes:
 
 * Be careful with the "Fix" settings in the Scanner window and the "Remove Matched Sourcefiles" setting in the Rebuilder window. These settings will remove and rename your ROMs.
