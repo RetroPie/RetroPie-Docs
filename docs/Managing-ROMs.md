@@ -64,7 +64,7 @@ Time to find out how well your source ROMs matched up...
 * Leave all settings at default and click **"New Scan..."**
 * When clrmamepro finishes scanning, you will see a "Statistics" window with high level information and a "Scan Results" window with detailed information about your missing ROMs
 
-##Repeat Steps 4 through 6#
+##Repeat Steps 4 through 6 for the FBA ROM set#
 * From clrmamepro "Profiler" window load the DAT file for PiFBA `C:\RetroPieRoms\fba_029671_od_release_10_working_roms.dat`
 * From clrmamepro "Settings" windows set the ROM path to `C:\RetroPieRoms\PiFBA`
 * Use clrmamepro's "Rebuilder" to rebuild your existing ROMs to a new ROM set
