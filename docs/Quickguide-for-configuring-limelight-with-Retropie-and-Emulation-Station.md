@@ -1,4 +1,4 @@
-This guide will enable your Raspberry PI to work with NVIDIA Gamestream to stream Steam games to your Raspberry pi. To use this Guide you must have a Gamestream ready PC with a Gamestream enabled NVIDIA GPU.
+This guide will enable your Raspberry PI to work with NVIDIA Gamestream to stream Steam games to your Raspberry pi. To use this Guide you must have a Gamestream ready PC with a Gamestream enabled NVIDIA GPU. Geforce experience app should be version 2.2.2 or newer!
 
 With this guid you get limelight integrated to Emulation station for quick access and the games will run 1080p / 30FPS with basically zero input lag (tested with a wired connection and Raspberry pi 2)
 
@@ -52,4 +52,11 @@ press ctrl+x and press y and enter
 
 pi@retropie ~/RetroPie/roms/ports $ **chmod +x limelight.sh**
 
-restart the raspberry pi and limelight will be available from the ports section
+restart the raspberry pi and limelight will be available from the ports section.
+
+
+_Alternatively you can also try 60fps with 720p by modifying the limelight.sh with this command
+
+cd /home/pi/limelight/ && java -jar limelight.jar stream -720 -60fps XXX.XXX.XXX.XXX -app Steam -mapping mapfile.map
+
+(sadly 1080 and 60fps causes unplayable input lag)_
