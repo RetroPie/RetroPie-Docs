@@ -28,7 +28,7 @@ pi@retropie ~/limelight $ **java -jar limelight.jar discover**
 
 pi@retropie ~/limelight $ **java -jar limelight.jar pair XXX.XXX.XXX.XXX**
 
-**_(for xxx.xxx.xxx.xxx use the ip-address found with discover)_**
+_(for xxx.xxx.xxx.xxx use the ip-address found with discover)_
 
 Configuring a key map for the USB-controller used with limelight (if event0 does not give you the proper device you can try next event1-event3)
 
@@ -37,14 +37,15 @@ pi@retropie ~/limelight $ **java -jar limelight.jar map -input /dev/input/event0
 Add limelight to the ports section of Emulation station for easy access
 
 pi@retropie ~ $ **cd /home/pi/RetroPie/roms/ports/**
+
 pi@retropie ~/RetroPie/roms/ports $ **nano limelight.sh**
 
 in nano add this text:
 
-`#!/bin/bash`
-`cd /home/pi/limelight/ && java -jar limelight.jar stream -1080 -30fps XXX.XXX.XXX.XXX -app Steam -mapping mapfile.map`
+> #!/bin/bash
+> cd /home/pi/limelight/ && java -jar limelight.jar stream -1080 -30fps XXX.XXX.XXX.XXX -app Steam -mapping mapfile.map
 
-(for xxx.xxx.xxx.xxx use the ip-address from before)
+_(for xxx.xxx.xxx.xxx use the ip-address from before)_
 
 press ctrl+x and press y and enter
 
