@@ -55,8 +55,12 @@ pi@retropie ~/RetroPie/roms/ports $ **chmod +x limelight.sh**
 restart the raspberry pi and limelight will be available from the ports section.
 
 
-_Alternatively you can also try 60fps with 720p by modifying the limelight.sh with this command
+***
+
+**Extra Tip!**
+
+Alternatively you can also try 60fps with 720p by modifying the limelight.sh with this command
 
 cd /home/pi/limelight/ && java -jar limelight.jar stream -720 -60fps XXX.XXX.XXX.XXX -app Steam -mapping mapfile.map
 
-(sadly 1080 and 60fps causes unplayable input lag)_
+(sadly 1080 and 60fps causes unplayable input lag)
