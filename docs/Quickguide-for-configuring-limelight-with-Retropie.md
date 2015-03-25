@@ -14,8 +14,10 @@ pi@retropie ~ $ **mkdir limelight**
 
 pi@retropie ~ $ **cd limelight**
 
-pi@retropie ~/limelight $ **sudo apt-get update && sudo apt-get install oracle-java8-jdk** ﻿
+pi@retropie ~/limelight $ **sudo apt-get update && sudo apt-get install oracle-java8-jdk** 
+﻿
 pi@retropie ~/limelight $ **wget https://github.com/irtimmer/limelight-embedded/releases/download/v1.2.1/libopus.so**
+
 pi@retropie ~/limelight $ **wget https://github.com/irtimmer/limelight-embedded/releases/download/v1.2.1/limelight.jar**
 
 Next pair your computer with limelight
