@@ -43,6 +43,7 @@ pi@retropie ~/RetroPie/roms/ports $ **nano limelight.sh**
 in nano add this text:
 
 `#!/bin/bash`
+
 `cd /home/pi/limelight/ && java -jar limelight.jar stream -1080 -30fps XXX.XXX.XXX.XXX -app Steam -mapping mapfile.map`
 
 _(for xxx.xxx.xxx.xxx use the ip-address from before)_
