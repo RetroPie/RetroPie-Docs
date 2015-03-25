@@ -43,3 +43,7 @@ cd /home/pi/limelight/ && java -jar limelight.jar stream -1080 -30fps XXX.XXX.XX
 (for xxx.xxx.xxx.xxx use the ip-address from before)
 
 press ctrl+x and press y and enter
+
+pi@retropie ~/RetroPie/roms/ports $ chmod +x limelight.sh
+
+restart the raspberry pi and limelight will be available from the ports section
