@@ -70,3 +70,20 @@ cd /home/pi/limelight/ && java -jar limelight.jar stream -720 -60fps XXX.XXX.XXX
 **Extra Tip2!**
 
 Create two .sh files named limelight720.sh and limelight1080.sh in the ports folder with both setups for fast access to both resolutions and framerates
+
+
+***
+
+**Advanced configuration**
+
+To get 1080p 60FPS streaming running without lag you can try these overclock settings that resolved the issues:
+
+arm_freq=1100
+core_freq=500
+sdram_freq=500
+h264_freq=500
+over_voltage=8
+force_turbo=1
+temp_limit=80
+
+DISCLAIMER: Force_turbo will void your warranty since its keeps the clock on 100% without throttling, so you should use a heatsink with these settings.
