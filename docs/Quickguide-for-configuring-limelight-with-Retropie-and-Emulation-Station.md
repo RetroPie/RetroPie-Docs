@@ -65,4 +65,8 @@ Alternatively you can also try 60fps with 720p by modifying the limelight.sh wit
 
 cd /home/pi/limelight/ && java -jar limelight.jar stream -720 -60fps XXX.XXX.XXX.XXX -app Steam -mapping mapfile.map
 
-(sadly 1080 and 60fps causes unplayable input lag)
+(sadly 1080 and 60fps causes unplayable input lag, and mostly crashes without returning to emulation station on exit)
+
+**Extra Tip2!**
+
+Create two .sh files named limelight720.sh and limelight1080.sh in the ports folder with both setups for fast access to both resolutions and framerates
