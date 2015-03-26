@@ -76,7 +76,7 @@ Create two .sh files named limelight720.sh and limelight1080.sh in the ports fol
 
 **Advanced configuration**
 
-To get 1080p 60FPS streaming running without lag you can try these overclock settings that resolved the issues:
+To get 1080p 60FPS streaming running without lag on the PI2 you can try these overclock settings that resolved the issues:
 
 arm_freq=1100
 core_freq=500
