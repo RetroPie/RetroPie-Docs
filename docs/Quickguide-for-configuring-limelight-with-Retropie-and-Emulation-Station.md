@@ -28,9 +28,11 @@ pi@retropie ~/limelight $ **java -jar limelight.jar discover**
 
 pi@retropie ~/limelight $ **java -jar limelight.jar pair XXX.XXX.XXX.XXX**
 
-_(for xxx.xxx.xxx.xxx use the ip-address found with discover)_
+(for xxx.xxx.xxx.xxx use the ip-address found with discover)
 
-Configuring a key map for the USB-controller used with limelight (if event0 does not give you the proper device you can try next event1-event3)
+**Now input the displayed number on the host PC**
+
+Next we configure a key map for the USB-controller used with limelight (if event0 does not give you the proper device you can try next event1-event3)
 
 pi@retropie ~/limelight $ **java -jar limelight.jar map -input /dev/input/event0 mapfile.map**
 
