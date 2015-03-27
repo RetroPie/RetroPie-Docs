@@ -6,7 +6,7 @@ Welcome to the RetroPie-Setup wiki!
 
 This wiki is supposed to be created by the users of the RetroPie setup script for the users of the script. Everyone can contribute to it!
 
-## Latest News: [RetroPie 3.0 BETA SD Image Released!](http://blog.petrockblock.com/retropie/retropie-downloads/) [see changelog](https://github.com/petrockblog/RetroPie-Setup/wiki/RetroPie-3.0)
+## Latest News: [RetroPie 3.0 BETA SD Image Released!](http://blog.petrockblock.com/retropie/retropie-downloads/) [(see changelog)](https://github.com/petrockblog/RetroPie-Setup/wiki/RetroPie-3.0)
 
 
 ## Getting Started
