@@ -87,3 +87,10 @@ force_turbo=1
 temp_limit=80
 
 DISCLAIMER: Force_turbo will void your warranty since its keeps the clock on 100% without throttling, so you should use a heatsink with these settings.
+
+
+***
+
+INSTALLER SCRIPT
+
+https://github.com/stsfin/RetropieLimelightInstaller/blob/master/limelightRetroInstall.sh
