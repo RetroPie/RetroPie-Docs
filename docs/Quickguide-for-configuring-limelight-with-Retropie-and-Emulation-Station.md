@@ -91,6 +91,8 @@ DISCLAIMER: Force_turbo will void your warranty since its keeps the clock on 100
 
 ***
 
-INSTALLER SCRIPT
+The Guide is quite outdated in a few days, I made an installer script to make things really easy to anyone wanting to try this out:
 
-https://github.com/stsfin/RetropieLimelightInstaller/blob/master/limelightRetroInstall.sh
+https://github.com/stsfin/RetropieLimelightInstaller
+
+Please use the script its a turnkey solution
