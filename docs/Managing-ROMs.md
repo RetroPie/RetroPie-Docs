@@ -1,4 +1,4 @@
-RetroPie uses forks of the [MAME](http://mamedev.org/) and [FinalBurn Alpha](http://www.barryharris.me.uk/) emulators that work well on the Raspberry Pi hardware, but are based on older versions of the original code.  Your ROMs may be for earlier or later versions of MAME/FBA and if they are, they most likely will not work.
+RetroPie uses forks of the [MAME](http://mamedev.org/) and [FinalBurn Alpha](http://www.barryharris.me.uk/) emulators that work well on the Raspberry Pi hardware, but are based on older versions of the original code.  Your ROMs may be for earlier or later versions of MAME/FBA and if they are, they most likely will not work. For a list of each emulator and the .dat file for the romsets they use see **[here](http://smartretro.co.uk/forums/viewtopic.php?f=3&t=68) or below**
 
 See also: [MAME](https://github.com/petrockblog/RetroPie-Setup/wiki/MAME), [FBA](https://github.com/petrockblog/RetroPie-Setup/wiki/FinalBurn-Alpha)
 
@@ -83,3 +83,84 @@ That's the basics of using clrmamepro.  Some additional notes:
 ## Video Tutorial:
 <a href="https://www.youtube.com/watch?v=SuWl2GdEfDA" target="_blank"><img src="https://i.ytimg.com/vi_webp/SuWl2GdEfDA/mqdefault.webp" 
 alt="N64 Configuration Video" width="300" height="180" border="10" /></a>
+
+# List of Emulators and Their Respective Romsets:
+
+RetroPie 2.6.0 MAME Versions
+
+These details are as per the default installed binaries on the RetroPie 2.6.0 image.
+
+### [FBA](http://sourceforge.net/projects/pifba/)
+```shell
+Roms Dir: /home/pi/RetroPie/roms/fba
+Binary Dir: /opt/retropie/emulators/pifba
+Config Dir: /opt/retropie/emulators/pifba
+```
+MAME Version: **FBA 0.2.96.71** which is based on MAME 0.114 (April 2007)
+
+Romsets emulated: 684 (includes clones etc..)
+
+Dat File: [fba_0.2.96.71_clrmame_dat.zip](http://smartretro.co.uk/forums/download/file.php?id=17&sid=0a4afeac12140542a5573dae39e28322)
+
+### [FBA-Libretro](https://github.com/libretro/fba-libretro) 
+```shell
+Roms Dir: /home/pi/RetroPie/roms/fba-libretro
+Binary Dir: /opt/retropie/libretrocores/fbalibretro
+Config Dir: --config /opt/retropie/configs/all/retroarch.cfg --appendconfig /opt/retropie/configs/fba/retroarch.cfg
+```
+MAME Version: **FBA 0.2.97.29** which is based on MAME 0.149 (June 2013)
+
+Romsets emulated: 3158 (includes clones etc..)
+
+Dat File: [FB Alpha v0.2.97.29.dat.zip](http://smartretro.co.uk/forums/download/file.php?id=16&sid=0a4afeac12140542a5573dae39e28322)
+
+### [mame4all-pi](http://sourceforge.net/projects/mame4allpi/)
+```shell
+Roms Dir: /home/pi/RetroPie/roms/mame
+Binary Dir: /opt/retropie/emulators/mame4all
+Config Dir: /opt/retropie/configs/mame
+```
+MAME Version: Based on **0.37b5** (July 2000)
+
+Romsets emulated: 2270 (includes clones etc..)
+
+Dat File: [mame4all-037b5-RetroPie-260.zip](http://smartretro.co.uk/forums/download/file.php?id=20&sid=0a4afeac12140542a5573dae39e28322)
+
+### [Mame-libretro](https://github.com/libretro/imame4all-libretro)
+```shell
+Roms Dir: /home/pi/RetroPie/roms/mame-libretro
+Binary Dir: /opt/retropie/libretrocores/mamelibretro/
+Config Dir: --config /opt/retropie/configs/all/retroarch.cfg --appendconfig /opt/retropie/configs/mame/retroarch.cfg
+```
+MAME Version: ???
+
+Romsets emulated: ???
+
+Dat File: ???
+
+
+### [GnGeo 0.8](https://github.com/ymartel06/GnGeo-Pi)
+```shell
+Roms Dir: /home/pi/RetroPie/roms/neogeo-gngeopi
+Binary Dir: /opt/retropie/emulators/gngeopi/bin
+Config Dir: /home/pi/.gngeo
+```
+MAME Version: Based on **0.138** romsets (May 2010)
+
+Romsets emulated: 237
+
+Dat File: Check the drv files in the attached [gngeo_data.zip](http://smartretro.co.uk/forums/download/file.php?id=19&sid=0a4afeac12140542a5573dae39e28322)
+
+### [AdvanceMAME 0.94.0](http://sourceforge.net/projects/advancemame/files/advancemame/0.94.0/)
+```shell
+Roms Dir: /home/pi/RetroPie/roms/mame-advmame
+Binary Dir: /opt/retropie/emulators/advmame/bin
+Config Dir: /home/pi/.advance
+```
+MAME Version: Based on MAME **0.94** (March 2005)
+
+Romsets Emulated: 5563 (includes clones etc..)
+
+Dat File: [advmame-0.94-RetroPie-260.7z](http://smartretro.co.uk/forums/download/file.php?id=18&sid=0a4afeac12140542a5573dae39e28322)
+
+**List courtesy of Floob** 
