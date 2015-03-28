@@ -4,6 +4,7 @@
 * [Apple II](https://github.com/petrockblog/RetroPie-Setup/wiki/Apple-II)
 * [Atari 2600](https://github.com/petrockblog/RetroPie-Setup/wiki/Atari-2600)
 * [Atari 5200 and 8 bit series](https://github.com/petrockblog/RetroPie-Setup/wiki/Atari-800-and-5200)
+* [Atari 7800](https://github.com/petrockblog/RetroPie-Setup/wiki/Atari-7800)
 * [Atari Lynx](https://github.com/petrockblog/RetroPie-Setup/wiki/Atari-Lynx)
 * [Atari ST/STE/TT/Falcon](https://github.com/petrockblog/RetroPie-Setup/wiki/Atari-ST-STE-TT-Falcon)
 * [Commodore 64](https://github.com/petrockblog/RetroPie-Setup/wiki/Commodore-64)
