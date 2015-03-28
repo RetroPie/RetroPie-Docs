@@ -16,6 +16,16 @@ Place your Atari 2600 ROMS in
 ## Controls
 You will configure controls differently depending on which emulator you use:
 
+### Stella-Libretro
+
+Stella-Libretro utilises Retroarch configurations
+
+Add custom retroarch controls to the retroarch.cfg file in
+```shell
+/opt/retropie/configs/atari2600/retroarch.cfg
+```
+For more information on custom RetroArch controls see: [RetroArch Configuration](https://github.com/petrockblog/RetroPie-Setup/wiki/RetroArch-Configuration)
+
 ### Stella
 
 Default Controls:
@@ -32,12 +42,3 @@ Configuration Menu: TAB
 
 Press Tab to access configuration menu- choose input settings and under the tab Emul. Events you can create custom controller mappings to work for your individual controllers
 ```
-### Stella-Libretro
-
-Stella-Libretro utilises Retroarch configurations
-
-Add custom retroarch controls to the retroarch.cfg file in
-```shell
-/opt/retropie/configs/atari2600/retroarch.cfg
-```
-For more information on custom RetroArch controls see: [RetroArch Configuration](https://github.com/petrockblog/RetroPie-Setup/wiki/RetroArch-Configuration)
