@@ -4,6 +4,8 @@ _The Atari 7800 was a video game console released by Atari in 1986._
 ***
 ## Emulator: [Prosystem-libretro](https://github.com/libretro/prosystem-libretro)
 
+_Note* as of right now this is in the experimental emulators section and has to be installed through the setup script._
+
 ## ROMS
 Accepted File Extensions: **.a78 .bin .zip**
 
