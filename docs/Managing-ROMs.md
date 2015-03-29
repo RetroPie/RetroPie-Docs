@@ -132,12 +132,11 @@ Roms Dir: /home/pi/RetroPie/roms/mame-libretro
 Binary Dir: /opt/retropie/libretrocores/mamelibretro/
 Config Dir: --config /opt/retropie/configs/all/retroarch.cfg --appendconfig /opt/retropie/configs/mame/retroarch.cfg
 ```
-MAME Version: ???
+MAME Version: Based on **0.37b5** (July 2000)
 
-Romsets emulated: ???
+Romsets emulated: 2270 (includes clones etc..)
 
-Dat File: ???
-
+Dat File: [mame4all-037b5-RetroPie-260.zip](http://smartretro.co.uk/forums/download/file.php?id=20&sid=0a4afeac12140542a5573dae39e28322)
 
 ### [GnGeo 0.8](https://github.com/ymartel06/GnGeo-Pi)
 ```shell
@@ -151,13 +150,13 @@ Romsets emulated: 237
 
 Dat File: Check the drv files in the attached [gngeo_data.zip](http://smartretro.co.uk/forums/download/file.php?id=19&sid=0a4afeac12140542a5573dae39e28322)
 
-### [AdvanceMAME 0.94.0](http://sourceforge.net/projects/advancemame/files/advancemame/0.94.0/)
-```shell
+### [AdvanceMAME 0.94.0 (and 1.2 for RetroPie 3.0)](http://sourceforge.net/projects/advancemame/files/advancemame/0.94.0/)
+```shell[
 Roms Dir: /home/pi/RetroPie/roms/mame-advmame
 Binary Dir: /opt/retropie/emulators/advmame/bin
 Config Dir: /home/pi/.advance
 ```
-MAME Version: Based on MAME **0.94** (March 2005)
+MAME Version: Based on MAME **0.94** (March 2005) and MAME **.106** for AdvanceMAME 1.2
 
 Romsets Emulated: 5563 (includes clones etc..)
 
