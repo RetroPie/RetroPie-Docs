@@ -51,7 +51,9 @@ backup/restore your custom emulationstation gameslists / data.
 * new experimental cores for gb advance (rpi2 only), and nes
 * optimisation / fixes for rpi
 * various other fixes / improvements
-* Changelog for V2.5.0
+
+### Version 2.5.0
+
 * Updated to latest firmware to support Raspberry Pi 2 (TM)
 * Usb rom service should now be working
 * updated all binaries
