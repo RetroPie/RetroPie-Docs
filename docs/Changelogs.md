@@ -2,7 +2,7 @@
 
 This page is a list of all of the changelogs for each version of RetroPie. For a complete list of all commits to the source code see [here:](https://web.archive.org/web/20140617163916/https://github.com/petrockblog/RetroPie-Setup/commits/master)  
 
-### Version 3.0.0 BETA
+### Version 3.0.0 BETA (March 26, 2015)
 
 * Overhaul of emulator selection / launching – single rom folder per
 platform, with the facility to change default emulator per platform or
@@ -38,7 +38,7 @@ backup/restore your custom emulationstation gameslists / data.
 * RetroArch includes additional shaders and overlays
 * Various other emulator updates and fixes.
 
-### Version 2.6.0
+### Version 2.6.0 (February 17, 2015)
 
 * new uae4all emulator
 * updated sdl 1.x with rpi fixes for fbcon and dispmanx backend.
@@ -52,7 +52,7 @@ backup/restore your custom emulationstation gameslists / data.
 * optimisation / fixes for rpi
 * various other fixes / improvements
 
-### Version 2.5.0
+### Version 2.5.0 (February 7, 2015)
 
 * Updated to latest firmware to support Raspberry Pi 2 (TM)
 * Usb rom service should now be working
@@ -63,7 +63,7 @@ backup/restore your custom emulationstation gameslists / data.
 * simplified rom folder permissions
 * removed ignore_safe_mode as safe mode is removed since march 2014
 
-### Version 2.4.2
+### Version 2.4.2 (January 17, 2015)
 
 * reworked vice c64 emulator – defaults with dispmanx, but should run without now without also. Comes with a default config which is better
 * suited for the pi. config now resides in /opt/retropie/configs/c64/ rather than home directory.
@@ -75,12 +75,12 @@ backup/restore your custom emulationstation gameslists / data.
 * use dispmanx sdl by default for dgen
 * mame4all configs moved to /opt/retropie/configs/mame/ rather than mame4all (to match existing structure) 
 
-### Version 2.4.1
+### Version 2.4.1 (January 11, 2015)
 
 * Minor bug fixes
 * Updated RetroPie-Setup Script
 
-### Version 2.4
+### Version 2.4 (January 6, 2015)
 
 * Update of all components, e.g., RetroArch supports ZIP files natively now
 * Dispmanx can be activated or deactivated for each emulator individually now
@@ -95,11 +95,11 @@ backup/restore your custom emulationstation gameslists / data.
 * Reorganization of the binaries
 * Separation of sources and binaries
 
-### Version 2.3
+### Version 2.3 (July 20, 2014)
 
 * Several bug fixes
 
-### Version 2.2
+### Version 2.2 (July 5, 2014)
 
 * Added Mednafen PCE Fast
 * Fixed configurations for sega32x, segacd
@@ -107,13 +107,13 @@ backup/restore your custom emulationstation gameslists / data.
 * Fixed imame4all-rpi rom dir configuration
 * Updated Python help scripts
 
-### Version 2.1
+### Version 2.1 (June 29, 2014)
 
 * Fixed black screen when exiting to console
 * Fixed Doom Shareware starter
 * Removed hidden meta data files from FBA and Megadrive rome directory
 
-### Version 2.0
+### Version 2.0 (May 29, 2014)
 
 * Reorganized folder structure (root dir is now /opt/retropie)
 * Complete rebuild of all binaries with latest versions
@@ -121,17 +121,17 @@ backup/restore your custom emulationstation gameslists / data.
 * Added MSX emulator OpenMSX
 * Refactored RetroPie-Setup Script with command line capabilities
 
-### Version 1.10.1
+### Version 1.10.1 (Dec 2, 2013)
 
 * Updated Raspbian to the latest packages
 * Updated the default splash screen
 * Added x86 emulator FastDosbox
 
-### Version 1.9.1
+### Version 1.9.1 (November 12, 2013)
 
 * Fixed “freezing” bug
 
-### Version 1.9
+### Version 1.9 (November 6, 2013)
 
 * Added emulator Mame4All-RPi
 * Added emulator Mupen64Plus-RPi
@@ -139,35 +139,35 @@ backup/restore your custom emulationstation gameslists / data.
 * Added configuration menu for RetroArch NetPlay to RetroPie Setup Script
 * Enhanced debug log functionality of RetroPie Setup Script
 
-### Version 1.8.1
+### Version 1.8.1 (September 13, 2013)
 
 * Added freezing fix for Emulation Station
 * Re-added source-based installation function for PC-Engine Libretro core
 
-### Version 1.8
+### Version 1.8 (September 4, 2013)
 
 * Added (Libretro based) Genesis emulator Picodrive
 * Added emulator PiFBA
 * Updated Emulation Station, x86 emulator, and RetroArch to latest release
 
-### Version 1.7
+### Version 1.7 (July 14, 2013)
 
 * Added ES-Config
 * Added Atari 2600 emulator Stella
 * Updated Emulation Station, x86 emulator to latest releases
 
-### Version 1.6.1
+### Version 1.6.1 (June 12, 2013)
 
 * Fixed GPSP binary
 
-### Version 1.6
+### Version 1.6 (June 5, 2013)
 
 * Added emulator Basilisk II
 * Added Dispmanx
 * Updated every installable component
 * Enhanced script for switching between resolutions
 
-### Version 1.5
+### Version 1.5 (May 5 2013)
 
 * Added emulator gpSP
 * Added emulator SNES9X-RPi
@@ -176,12 +176,12 @@ backup/restore your custom emulationstation gameslists / data.
 * Updated Emulation Station
 * Updated rpix86
 
-### Version 1.4.1
+### Version 1.4.1 (April 17, 2013)
 
 * Updated Emulation Station
 * Updated rpix86
 
-### Version 1.4
+### Version 1.4 (April 7, 2013)
 
 * Added system-dependent change of HDMI video resolution for increased performance for RetroArch-based emulators.
 * Added automatic USB ROM-copy service
@@ -189,28 +189,28 @@ backup/restore your custom emulationstation gameslists / data.
 * Added Apple ][ emulator Linapple
 * Enhanced themes
 
-### Version 1.3.1
+### Version 1.3.1 (March 18, 2013)
 
 * Minor changes in the file organization
 
-### Version 1.3
+### Version 1.3 (March 7, 2013)
 
 * Added NXEngine / Cavestory
 * Updated DGEN to version 1.32
 * Enhanced pre-defined RetroArch input configuration
 
-### Version 1.2.1
+### Version 1.2.1 (February 25, 2013)
 
 * Resized partition so that the image fits on 4 GB cards
 
-### Version 1.2
+### Version 1.2 (February 20, 2013)
 
 * Added Intellivision emulator
 * Added SAMBA share installation and configuration
 * Used binaries-based setup for generating the SD-card image
 * Updated themes
 
-### Version 1.1
+### Version 1.1 (February 10, 2013)
 
 * Added AdvMAME emulator
 * (Re-)added Genesis-GX RetroArch core
