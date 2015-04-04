@@ -112,7 +112,7 @@ Dat File: [fba_0.2.96.71_clrmame_dat.zip](http://smartretro.co.uk/forums/downloa
 
 ### [FBA-Libretro](https://github.com/libretro/fba-libretro) 
 ```shell
-Roms Dir: /home/pi/RetroPie/roms/fba-libretro
+Roms Dir: /home/pi/RetroPie/roms/fba
 Binary Dir: /opt/retropie/libretrocores/fbalibretro
 Config Dir: /opt/retropie/configs/fba/retroarch.cfg
 ```
