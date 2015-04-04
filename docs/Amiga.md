@@ -55,3 +55,11 @@ It can't currently launch games directly from the Emulation Station menu, but th
 <a href="http://www.dailymotion.com/video/x2k4rsi_retropie-amiga-emulation-on-raspberry-pi_videogames
 " target="_blank"><img src="https://lh5.ggpht.com/_keSPDjzzLDwZ1BweCKtPdjypbVYhKbvgdpxkEJguepdx43nXjVUoxMlgC32kKND4dM=w170" 
 alt="N64 Configuration Video" width="240" height="180" border="10" /></a>
+
+## Hints and troubleshooting
+
+- Some games works better with '512Kb Chip' + '512Kb Slow' Memory than default A500 '1MB Chip' setting. To change it go to 'CPU RAM' card in uae4all2 interface.
+
+- Some games does not like when you use more than one floppy. If game crashes or not loads try to load it using just DF0 (and change disc image during game when required).
+
+- For Raspberry pi 1 users - make sure you overclocked your device, it works much faster when overclocked to maximum. Without overclocking some games does not work in full speed.
