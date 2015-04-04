@@ -186,7 +186,7 @@ Dat File: [pandora_gngeo_084_dat.zip](http://smartretro.co.uk/forums/download/fi
 ```shell
 Roms Dir: /home/pi/RetroPie/roms/mame-advmame
 Binary Dir: /opt/retropie/emulators/advmame/bin
-Config Dir: /home/pi/.advance
+Config Dir: /opt/retropie/configs/mame-advmame
 ```
 MAME Version: Based on **MAME 0.94** (March 2005) or (for 1.2) Based on **MAME 0.106** (May 2006)
 
