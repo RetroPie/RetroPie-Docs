@@ -7,7 +7,11 @@ _Final Burn Alpha is a Multiple Arcade Emulator most popular for emulating Neo-G
 Fba-libretro is a port of PiFBA and unlike PiFBA, fba-libretro uses RetroArch configurations.
 
 ## ROMS
+
 Accepted File Extensions: **.zip**
+
+**For information on how to rebuild newer romsets to be compatible with these emulators see this post:**
+**[Managing ROMs](https://github.com/petrockblog/RetroPie-Setup/wiki/Managing-ROMs)**
 
 ### PiFBA 
 
