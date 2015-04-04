@@ -9,13 +9,30 @@ Fba-libretro is a port of PiFBA and unlike PiFBA, fba-libretro uses RetroArch co
 ## ROMS
 Accepted File Extensions: **.zip**
 
-PiFBA uses the FBA **0.2.96.71 romset** (see list below) 
+### PiFBA 
+
+Romset Used: FBA **0.2.96.71 romset** which is based on MAME 0.114 (April 2007) (see list below) 
+
+Total Games Emulated: 684 (no clones)
 
 For PiFBA place your ROMS in
+
 ```shell
 /home/pi/RetroPie/roms/fba
 ```
-For fba-libretro place your ROMS in
+
+### FBA-Libretro
+
+Romset Used: FBA **0.2.97.30** which is based on MAME 0.154 (Jul 2014)
+
+Total Games Emulated: 3369 (includes clones etc..)
+ 
+For RetroPie 3.0 FBA-Libretro place your ROMS in
+```shell
+/home/pi/RetroPie/roms/fba
+```
+
+For RetroPie 2.6 FBA-Libretro place your ROMS in
 ```shell
 /home/pi/RetroPie/roms/fba-libretro
 ```
@@ -28,11 +45,11 @@ The BIOS needed is:
 
 * Note that unlike other BIOS that go in the BIOS folder, this BIOS will go into the same folder as your ROMS.
 
-For PiFBA place your BIOS in
+For RetroPie 3.0 for PiFBA and FBA-Libretro place your BIOS in
 ```shell
 /home/pi/RetroPie/roms/fba
 ```
-For fba-libretro place your BIOS in
+For RetroPie 2.6 FBA-Libretro place your BIOS in
 ```shell
 /home/pi/RetroPie/roms/fba-libretro
 ```
