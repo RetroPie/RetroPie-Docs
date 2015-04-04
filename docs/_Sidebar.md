@@ -31,5 +31,6 @@
 * [Sega CD](https://github.com/petrockblog/RetroPie-Setup/wiki/Sega-CD)
 * [Super Nintendo Entertainment System](https://github.com/petrockblog/RetroPie-Setup/wiki/Super-Nintendo-Entertainment-System)
 * [Vectrex](https://github.com/petrockblog/RetroPie-Setup/wiki/Vectrex)
+* [Videopac or Odyssey2](https://github.com/petrockblog/RetroPie-Setup/wiki/VideoPac-or-Odyssey-2)
 * [Zmachine](https://github.com/petrockblog/RetroPie-Setup/wiki/Zmachine)
 * [ZX Spectrum](https://github.com/petrockblog/RetroPie-Setup/wiki/ZX-Spectrum)
