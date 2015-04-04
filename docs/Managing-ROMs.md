@@ -86,80 +86,126 @@ alt="N64 Configuration Video" width="300" height="180" border="10" /></a>
 
 # List of Emulators and Their Respective Romsets:
 
-RetroPie 2.6.0 MAME Versions
+RetroPie 3.0.0 MAME Versions
 
-These details are as per the default installed binaries on the RetroPie 2.6.0 image.
+These details are as per the default installed binaries on the RetroPie 3.0.0 image.
 
+**Important**
+
+In 3.0.0 some emulators share directories, so you need to choose which FBA, NeoGeo and mame4all version you want.
+So you can have 1 romset for each of these (mame4all, FBA, NeoGeo, advmame)
+
+See [here](http://smartretro.co.uk/forums/viewtopic.php?f=3&t=68) for RetroPie 2.6
 ### [FBA](http://sourceforge.net/projects/pifba/)
 ```shell
 Roms Dir: /home/pi/RetroPie/roms/fba
 Binary Dir: /opt/retropie/emulators/pifba
-Config Dir: /opt/retropie/emulators/pifba
+Config Dir: /opt/retropie/configs/fba/fba2x.cfg
 ```
 MAME Version: **FBA 0.2.96.71** which is based on MAME 0.114 (April 2007)
 
-Romsets emulated: 684 (includes clones etc..)
+Size: 3.62 GB
 
-Dat File: [fba_0.2.96.71_clrmame_dat.zip](http://smartretro.co.uk/forums/download/file.php?id=17&sid=0a4afeac12140542a5573dae39e28322)
+Romsets emulated: 684 (no clones)
+
+Dat File: [fba_0.2.96.71_clrmame_dat.zip](http://smartretro.co.uk/forums/download/file.php?id=17&sid=51593df3da1e20af98e425975a9e6f98)
 
 ### [FBA-Libretro](https://github.com/libretro/fba-libretro) 
 ```shell
 Roms Dir: /home/pi/RetroPie/roms/fba-libretro
 Binary Dir: /opt/retropie/libretrocores/fbalibretro
-Config Dir: --config /opt/retropie/configs/all/retroarch.cfg --appendconfig /opt/retropie/configs/fba/retroarch.cfg
+Config Dir: /opt/retropie/configs/fba/retroarch.cfg
 ```
-MAME Version: **FBA 0.2.97.29** which is based on MAME 0.149 (June 2013)
+MAME Version: **FBA 0.2.97.30** which is based on MAME 0.154 (Jul 2014)
 
-Romsets emulated: 3158 (includes clones etc..)
+Size: 9.15 GB
 
-Dat File: [FB Alpha v0.2.97.29.dat.zip](http://smartretro.co.uk/forums/download/file.php?id=16&sid=0a4afeac12140542a5573dae39e28322)
+Romsets emulated: 3369 (includes clones etc..)
+
+Active Sets 3369/3369
+* Parents 710/710
+* Clones 2146/2146
+* Others 508/508
+* BIOS 5/5
+
+Dat File: [FB Alpha v0.2.97.30.dat.zip](http://smartretro.co.uk/forums/download/file.php?id=21&sid=51593df3da1e20af98e425975a9e6f98)
 
 ### [mame4all-pi](http://sourceforge.net/projects/mame4allpi/)
 ```shell
-Roms Dir: /home/pi/RetroPie/roms/mame
+Roms Dir: /home/pi/RetroPie/roms/mame-mame4all
 Binary Dir: /opt/retropie/emulators/mame4all
-Config Dir: /opt/retropie/configs/mame
+Config Dir: /opt/retropie/configs/mame-mame4all
 ```
 MAME Version: Based on **0.37b5** (July 2000)
 
+Size: 1.86 GB
+
 Romsets emulated: 2270 (includes clones etc..)
 
-Dat File: [mame4all-037b5-RetroPie-260.zip](http://smartretro.co.uk/forums/download/file.php?id=20&sid=0a4afeac12140542a5573dae39e28322)
+Active Sets 2241/2241
+* Parents 560/560
+* Clones 990/990
+* Others 690/690
+* BIOS 1/1
 
-### [Mame-libretro](https://github.com/libretro/imame4all-libretro)
+Dat File: [mame4all-037b5-RetroPie-260.zip](http://smartretro.co.uk/forums/download/file.php?id=20&sid=51593df3da1e20af98e425975a9e6f98)
+
+### [Mame-libretro (imame4all)](https://github.com/libretro/imame4all-libretro)
 ```shell
-Roms Dir: /home/pi/RetroPie/roms/mame-libretro
+Roms Dir: /home/pi/RetroPie/roms/mame-mame4all
 Binary Dir: /opt/retropie/libretrocores/mamelibretro/
-Config Dir: --config /opt/retropie/configs/all/retroarch.cfg --appendconfig /opt/retropie/configs/mame/retroarch.cfg
+Config Dir: /opt/retropie/configs/mame-mame4all/retroarch.cfg
 ```
 MAME Version: Based on **0.37b5** (July 2000)
 
+Size: 1.86 GB
+
 Romsets emulated: 2270 (includes clones etc..)
 
-Dat File: [mame4all-037b5-RetroPie-260.zip](http://smartretro.co.uk/forums/download/file.php?id=20&sid=0a4afeac12140542a5573dae39e28322)
+Active Sets 2241/2241
+* Parents 560/560
+* Clones 990/990
+* Others 690/690
+* BIOS 1/1
+
+Dat File: [mame4all-037b5-RetroPie-260.zip](http://smartretro.co.uk/forums/download/file.php?id=20&sid=51593df3da1e20af98e425975a9e6f98)
 
 ### [GnGeo 0.8](https://github.com/ymartel06/GnGeo-Pi)
 ```shell
-Roms Dir: /home/pi/RetroPie/roms/neogeo-gngeopi
+Roms Dir: /home/pi/RetroPie/roms/neogeo
 Binary Dir: /opt/retropie/emulators/gngeopi/bin
-Config Dir: /home/pi/.gngeo
+Config Dir: /opt/retropie/configs/neogeo
 ```
 MAME Version: Based on **0.138** romsets (May 2010)
 
-Romsets emulated: 237
+Romsets emulated: 203
 
-Dat File: Check the drv files in the attached [gngeo_data.zip](http://smartretro.co.uk/forums/download/file.php?id=19&sid=0a4afeac12140542a5573dae39e28322)
+Dat File: [pandora_gngeo_084_dat.zip](http://smartretro.co.uk/forums/download/file.php?id=22&sid=51593df3da1e20af98e425975a9e6f98)
 
-### [AdvanceMAME 0.94.0 (and 1.2 for RetroPie 3.0)](http://sourceforge.net/projects/advancemame/files/advancemame/0.94.0/)
-```shell[
+### [AdvanceMAME 0.94.0 and 1.2](http://sourceforge.net/projects/advancemame/files/advancemame/0.94.0/)
+```shell
 Roms Dir: /home/pi/RetroPie/roms/mame-advmame
 Binary Dir: /opt/retropie/emulators/advmame/bin
 Config Dir: /home/pi/.advance
 ```
-MAME Version: Based on MAME **0.94** (March 2005) and MAME **.106** for AdvanceMAME 1.2
+MAME Version: Based on **MAME 0.94** (March 2005) or (for 1.2) Based on **MAME 0.106** (May 2006)
 
-Romsets Emulated: 5563 (includes clones etc..)
+Size: 11.6GB (0.94.0) Size: 14.8GB (1.2)
 
-Dat File: [advmame-0.94-RetroPie-260.7z](http://smartretro.co.uk/forums/download/file.php?id=18&sid=0a4afeac12140542a5573dae39e28322)
+Romsets Emulated: 5563 (0.94.0) 6166 (1.2) (includes clones etc..)
+
+Active Sets (For 0.94.0) 5563/5563
+* Parents 1236/1236
+* Clones 2473/2473
+* Others 1829/1829
+* BIOS 25/25
+
+Active Sets (For 1.2) 6166/6166
+* Parents 1388/1388
+* Clones 2824/2824
+* Others 1928/1928
+* BIOS 26/26
+
+Dat File: [advmame-0.94-RetroPie-260.7z](http://smartretro.co.uk/forums/download/file.php?id=18&sid=51593df3da1e20af98e425975a9e6f98), [advmame12-106.7z](http://smartretro.co.uk/forums/download/file.php?id=23&sid=51593df3da1e20af98e425975a9e6f98)
 
 **List courtesy of Floob** 
