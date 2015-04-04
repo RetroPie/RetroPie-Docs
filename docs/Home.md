@@ -50,6 +50,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [Sega CD](https://github.com/petrockblog/RetroPie-Setup/wiki/Sega-CD) [(lr-picodrive)](https://github.com/libretro/picodrive)
 * [Super Nintendo Entertainment System](https://github.com/petrockblog/RetroPie-Setup/wiki/Super-Nintendo-Entertainment-System) [(PiSNES)](http://sourceforge.net/projects/pisnes/), [(snes9x-rpi)](https://github.com/joolswills/snes9x-rpi), [(lr-armsnes)](https://github.com/rmaz/ARMSNES-libretro), [(lr-catsfc)](https://github.com/libretro/CATSFC-libretro), [(lr-pocketsnes)](https://github.com/libretro/pocketsnes-libretro), [(lr-snes9x-next)](https://github.com/libretro/snes9x-next)
 * [Vectrex](https://github.com/petrockblog/RetroPie-Setup/wiki/Vectrex) [(lr-vecx)](https://github.com/libretro/libretro-vecx)
+* [Videopac or Odyssey2](https://github.com/petrockblog/RetroPie-Setup/wiki/VideoPac-or-Odyssey-2) [(lr-o2em)](https://github.com/libretro/libretro-o2em)
 * [Zmachine](https://github.com/petrockblog/RetroPie-Setup/wiki/Zmachine) [(Frotz)](http://frotz.sourceforge.net/)
 * [ZX Spectrum](https://github.com/petrockblog/RetroPie-Setup/wiki/ZX-Spectrum) [(FBZX)](http://www.rastersoft.com/fbzx.html), [(Fuse)](http://fuse-emulator.sourceforge.net/)
 
