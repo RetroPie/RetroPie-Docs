@@ -15,6 +15,9 @@ Because MAME emulates many different pieces of hardware and thousands of games i
 
 Accepted File Extensions: **.zip**
 
+**For information on how to rebuild newer romsets to be compatible with these emulators see this post:**
+**[Managing ROMs](https://github.com/petrockblog/RetroPie-Setup/wiki/Managing-ROMs)**
+
 ### **MAME4ALL-Pi**
 
 Romset Used: **0.37b5**
@@ -32,6 +35,13 @@ Romset Used: **0.37b5**
 Total Games Emulated: [2270](http://code.google.com/p/imame4all/wiki/GameList) 
 
 Place your imame4all-libretro ROMs in
+
+For RetroPie 3.0:
+```
+/home/pi/RetroPie/roms/mame-mame4all
+```
+
+For RetroPie 2.6:
 ```
 /home/pi/RetroPie/roms/mame-libretro
 ```
@@ -43,8 +53,6 @@ Place your AdvanceMAME ROMs in
 ```
 /home/pi/RetroPie/roms/mame-advmame
 ```
-**For information on how to rebuild newer romsets to be compatible with these emulators see this post:**
-**[Managing ROMs](https://github.com/petrockblog/RetroPie-Setup/wiki/Managing-ROMs)**
 
 You will get errors loading some mame roms, not all roms are compatible or working. You will need to download ROMs that are confirmed working with your version of MAME
 
@@ -55,7 +63,7 @@ Some ROMs may need the **neogeo.zip** BIOS in order to run. Place the neogeo.zip
 ```shell
 /home/pi/RetroPie/roms/mame-mame4all
 or
-/home/pi/RetroPie/roms/mame-libretro
+(For RetroPie 2.6) /home/pi/RetroPie/roms/mame-libretro
 or
 /home/pi/RetroPie/roms/mame-advmame
 ```
