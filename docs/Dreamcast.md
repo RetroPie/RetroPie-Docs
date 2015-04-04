@@ -4,7 +4,7 @@ _The Sega Dreamcast is a 6th generation home video game console released by Sega
 ***
 ## Emulator: [Reicast](https://github.com/reicast/reicast-emulator) (NOTE: EXPERIMENTAL!)
 
-You'll download this from the experimental section of the setup script. There currently isn't any sound and it is very laggy and buggy. Pi 2 is highly recommended.
+You'll download this from the experimental section of the setup script. it is very laggy and buggy. Pi 2 is highly recommended.
 
 ## ROMS
 
