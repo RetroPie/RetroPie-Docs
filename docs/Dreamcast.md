@@ -1,0 +1,43 @@
+![Dreamcast Logo](http://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Dreamcast_logo.svg/320px-Dreamcast_logo.svg.png)
+***
+_The Sega Dreamcast is a 6th generation home video game console released by Sega in 1998. It is notably the last console that Sega produced._
+***
+## Emulator [Reicast](https://github.com/reicast/reicast-emulator) (NOTE: Very EXPERIMENTAL!)
+
+You'll download this from the experimental section of the setup script. There currently isn't any sound and it is very laggy and buggy. Pi 2 is highly recommended.
+
+## ROMS
+
+Accepted File Extensions: **.cdi** 
+
+Place your Dreamcast ROMs in
+```
+/home/pi/RetroPie/roms/dreamcast
+```
+You also need to add the ROM path to:
+```
+/opt/retropie/emulators/reicast/reicast.sh
+```
+
+Change the line
+```
+sudo ./reicast.elf -config config:image=""
+to
+sudo ./reicast.elf -config config:image="/home/pi/RetroPie/roms/dreamcast/yourgame.cdi"
+```
+You'll have to change it each time you want to switch a game if you wish to run it through emulationstation- not convenient I know, but it is currently experimental...
+
+## BIOS
+
+The BIOS files needed are: **dc_boot.bin, dc_flash.bin**
+
+Place your BIOS files in
+```
+/opt/retropie/emulators/reicast/data
+```
+
+## Controls
+
+Currently controls are hard-coded to the source code so either your controller works or it doesn't. There isn't currently any keyboard support. 
+
+Press ctrl+c to exit- that is the only way right now to quit the emulator.
