@@ -47,7 +47,9 @@ For RetroPie 2.6:
 ```
 ### **AdvanceMAME**
 
-Romset Used: **.106**
+Romset Used: **.94** (AdvMame .94) or **.106** (AdvMame 1.2)
+
+Total Games Emulated: **5563** (0.94.0) **6166** (1.2) (includes clones etc..)
 
 Place your AdvanceMAME ROMs in
 ```
