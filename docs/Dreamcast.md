@@ -14,18 +14,6 @@ Place your Dreamcast ROMs in
 ```
 /home/pi/RetroPie/roms/dreamcast
 ```
-You also need to add the ROM path to:
-```
-/opt/retropie/emulators/reicast/reicast.sh
-```
-
-Change the line
-```
-sudo ./reicast.elf -config config:image=""
-to
-sudo ./reicast.elf -config config:image="/home/pi/RetroPie/roms/dreamcast/yourgame.cdi"
-```
-You'll have to change it each time you want to switch a game if you wish to run it through emulationstation- not convenient I know, but it is currently experimental...
 
 ## BIOS
 
