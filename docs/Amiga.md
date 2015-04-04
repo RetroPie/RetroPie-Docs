@@ -58,7 +58,7 @@ alt="N64 Configuration Video" width="240" height="180" border="10" /></a>
 
 ## Hints and troubleshooting
 
-- Some games works better with '512Kb Chip' + '512Kb Slow' Memory than default A500 '1MB Chip' setting. To change it go to 'CPU RAM' card in uae4all2 interface. If game crashes or not loads try to change memory settings.
+- Some games works better with '512Kb Chip' + '512Kb Slow' Memory than default A500 '1MB Chip' setting. If game crashes or not loads try to change memory settings in 'CPU RAM' card of uae4all2 interface.
 
 - Some games does not work properly with more than one floppy drive. If game crashes or not loads try to load it using just DF0 (change disc image during game if required).
 
