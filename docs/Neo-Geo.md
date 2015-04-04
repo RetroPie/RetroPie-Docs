@@ -12,6 +12,9 @@ See [this page](https://github.com/petrockblog/RetroPie-Setup/wiki/FinalBurn-Alp
 
 Accepted File Extension: .zip
 
+**For information on how to rebuild newer romsets to be compatible with these emulators see this post:**
+**[Managing ROMs](https://github.com/petrockblog/RetroPie-Setup/wiki/Managing-ROMs)**
+
 Place your Neo Geo ROMs in
 ```
 /home/pi/RetroPie/roms/neogeo
@@ -21,6 +24,10 @@ As a lovely caveat, the ROMs you have must match the file in gngeo_data.zip loca
 /opt/retropie/emulators/gngeopi/share/gngeo
 ```
 You can only play roms that have the same name as these .drv files, e.g. mslug2.zip (rom) and mslug2.drv (data). If the names of these files dont match the game will crash. (see the list below for compatible Roms)
+
+Based on **0.138** romsets (May 2010)
+
+Total Games Emulated: 203
 
 ## BIOS
 Neo Geo requires a **neogeo.zip** BIOS file. It will be placed with your ROMs in
