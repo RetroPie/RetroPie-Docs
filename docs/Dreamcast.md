@@ -2,7 +2,7 @@
 ***
 _The Sega Dreamcast is a 6th generation home video game console released by Sega in 1998. It is notably the last console that Sega produced._
 ***
-## Emulator [Reicast](https://github.com/reicast/reicast-emulator) (NOTE: Very EXPERIMENTAL!)
+## Emulator: [Reicast](https://github.com/reicast/reicast-emulator) (NOTE: EXPERIMENTAL!)
 
 You'll download this from the experimental section of the setup script. There currently isn't any sound and it is very laggy and buggy. Pi 2 is highly recommended.
 
