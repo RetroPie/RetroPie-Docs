@@ -1,4 +1,4 @@
-## Retropie Bios Configuration
+## Retropie BIOS Configuration
 
 |Tested Version|
 |---|---
