@@ -14,6 +14,8 @@ Place your Atari ROMs in
 
 ## BIOS 
 This BIOS is optional if you want the Atari Logo at the beginning of games, otherwise you don't need it because the games work fine without it. The BIOS file name is **7800 BIOS (U).rom**
+
+Place your Atari 7800 BIOS in
 ```
 /home/pi/RetroPie/BIOS/7800 BIOS (U).rom
 ```
