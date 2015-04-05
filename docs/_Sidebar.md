@@ -32,6 +32,7 @@
 * [Sega 32X](https://github.com/petrockblog/RetroPie-Setup/wiki/Sega-32X)
 * [Sega CD](https://github.com/petrockblog/RetroPie-Setup/wiki/Sega-CD)
 * [Sega Saturn](https://github.com/petrockblog/RetroPie-Setup/wiki/Saturn)
+* [Sega SG-1000](https://github.com/petrockblog/RetroPie-Setup/wiki/SG-1000)
 * [Super Nintendo Entertainment System](https://github.com/petrockblog/RetroPie-Setup/wiki/Super-Nintendo-Entertainment-System)
 * [Vectrex](https://github.com/petrockblog/RetroPie-Setup/wiki/Vectrex)
 * [Videopac or Odyssey2](https://github.com/petrockblog/RetroPie-Setup/wiki/VideoPac-or-Odyssey-2)
