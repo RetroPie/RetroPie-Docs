@@ -45,6 +45,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [PC](https://github.com/petrockblog/RetroPie-Setup/wiki/PC) [(DOSBox)](http://www.dosbox.com/), [(rpix86)](http://rpix86.patrickaalto.com/)
 * [PC Engine/TurboGrafx-16](https://github.com/petrockblog/RetroPie-Setup/wiki/PC-Engine) [(lr-mednafen-pce-fast)](https://github.com/libretro/beetle-pce-fast-libretro)
 * [Ports](https://github.com/petrockblog/RetroPie-Setup/wiki/Ports)
+  * [Minecraft Pi Edition](https://github.com/petrockblog/RetroPie-Setup/wiki/Minecraft) (EXPERIMENTAL)
 * [PlayStation 1](https://github.com/petrockblog/RetroPie-Setup/wiki/Playstation-1) [(lr-pcsx-rearmed)](https://github.com/libretro/pcsx_rearmed)
 * [ScummVM](https://github.com/petrockblog/RetroPie-Setup/wiki/ScummVM)
 * [Sega 32X](https://github.com/petrockblog/RetroPie-Setup/wiki/Sega-32X) [(lr-picodrive)](https://github.com/libretro/picodrive)
