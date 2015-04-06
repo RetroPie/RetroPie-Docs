@@ -58,8 +58,8 @@ alt="N64 Configuration Video" width="240" height="180" border="10" /></a>
 
 ## Hints and troubleshooting
 
-- Some games works better with '512Kb Chip' + '512Kb Slow' Memory than default A500 '1MB Chip' setting. If game crashes or not loads try to change memory settings in 'CPU RAM' card of uae4all2 interface.
+- Some games works better with '512Kb Chip' + '512Kb Slow' Memory rather than default A500 '1MB Chip'. If game crashes or not loads try to change memory settings in 'CPU RAM' card of uae4all2 interface.
 
-- Some games does not work properly with more than one floppy drive. If game crashes or not loads try to load it using just DF0 (change disc image during game if required).
+- Some games does not work properly if more than one floppy drive is in use. If game crashes or not loads try to use just DF0 (change disc image during game if required), and not use DF1, DF2 and DF3.
 
-- For Raspberry pi 1 users - make sure you overclocked your device, it works much faster when overclocked to maximum. Without overclocking some games does not work in full speed.
+- For Raspberry pi 1 users - make sure you overclocked your device. Amiga emulation works much faster when overclocked to maximum. Without overclocking some games does not work in full speed.
