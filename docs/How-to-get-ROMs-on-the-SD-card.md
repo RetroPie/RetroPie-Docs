@@ -36,7 +36,9 @@ easiest way to access is to go into "computer" folder on windows and in the top 
 \\your-pi-ip-address
 ```
 
-## Using USB-Sticks
+## Using USB-Stick
+
+### Auto copy files from USB-stick
 
 You also have the possibility to use a service that automatically copies ROMs from an USB stick into the correct directories. You can enable this service with the RetroPie Setup Script from within the "Setup" menu. If you are using the SD-card image download of the RetroPie Project, this copy service is already enabled. 
 
