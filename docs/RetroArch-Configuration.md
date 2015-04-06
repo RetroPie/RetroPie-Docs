@@ -93,3 +93,9 @@ see this video:
 
 <a href="http://www.dailymotion.com/video/x2hxlc3" target="_blank"><img src="https://lh4.ggpht.com/MFywT7QpnT6WA2vgh1Fb0bfaz2Si4BRCnWV53Hiu9lr1ZpE6tJ_mP7AmXzC7hy2wFFlD=w300" 
 alt="N64 Configuration Video" width="150" height="150" border="10" /></a>
+
+## Default joypad shortcuts:
+
+* 'select' + 'start' - exit game and return to Emulationstation
+* 'select' + 'B' - restart game
+* 'select' + 'X' - open RetroArch menu that allows you to save/load game state, make a screenshot etc.
