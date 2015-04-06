@@ -12,7 +12,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 ## Getting Started
 * [First Installation](https://github.com/petrockblog/RetroPie-Setup/wiki/First-Installation-(RetroPie-SD-Image-2.6))
 * [Setting Up Wifi](https://github.com/petrockblog/RetroPie-Setup/wiki/Setting-Up-Wifi)
-* [Configuring Controllers (RetroArch)](https://github.com/petrockblog/RetroPie-Setup/wiki/RetroArch-Configuration)
+* [Configuring Controllers (RetroArch) and shortcuts](https://github.com/petrockblog/RetroPie-Setup/wiki/RetroArch-Configuration)
 * [Transferring games (ROMs), and other files to RetroPie](https://github.com/petrockblog/RetroPie-Setup/wiki/How-to-get-ROMs-on-the-SD-card)
 * [Getting the right MAME ROMs](https://github.com/petrockblog/RetroPie-Setup/wiki/Managing-ROMs)
 
