@@ -5,6 +5,6 @@ To build archives of individual modules you can follow these steps:
 
 You can configure, for which platform you want to build an archive by using the `__platform` variable. To build a module and a corresponding archive, e.g., for the Raspberry Pi 2, you use these command:
 ```
-sudo ./retropie_packages.sh <MODULEID/MODULENAME>
-sudo ./retropie_packages.sh <MODULEID/MODULENAME> create_bin
+sudo __platform=rpi2 ./retropie_packages.sh <MODULEID/MODULENAME>
+sudo __platform=rpi2 ./retropie_packages.sh <MODULEID/MODULENAME> create_bin
 ```
