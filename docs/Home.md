@@ -46,6 +46,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [PC Engine/TurboGrafx-16](https://github.com/petrockblog/RetroPie-Setup/wiki/PC-Engine) [(lr-mednafen-pce-fast)](https://github.com/libretro/beetle-pce-fast-libretro)
 * [Ports](https://github.com/petrockblog/RetroPie-Setup/wiki/Ports)
   * [Minecraft Pi Edition](https://github.com/petrockblog/RetroPie-Setup/wiki/Minecraft) (EXPERIMENTAL)
+  * [Cave Story](https://github.com/petrockblog/RetroPie-Setup/wiki/CaveStory) [(lr-nxengine)](https://github.com/libretro/nxengine-libretro)
 * [PlayStation 1](https://github.com/petrockblog/RetroPie-Setup/wiki/Playstation-1) [(lr-pcsx-rearmed)](https://github.com/libretro/pcsx_rearmed)
 * [ScummVM](https://github.com/petrockblog/RetroPie-Setup/wiki/ScummVM)
 * [Sega 32X](https://github.com/petrockblog/RetroPie-Setup/wiki/Sega-32X) [(lr-picodrive)](https://github.com/libretro/picodrive)
