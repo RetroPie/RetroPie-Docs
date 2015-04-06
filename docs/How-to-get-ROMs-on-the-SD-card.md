@@ -43,3 +43,7 @@ You also have the possibility to use a service that automatically copies ROMs fr
 The service works as following: The first time you plug the USB stick into the the RPi, a ROM directory structure is generated on the USB stick, which only takes a few seconds. You can unplug the stick, put it into your PC and copy your ROMs into the corresponding directories on the USB stick. When you put the USB stick back into the RPi, the ROMs are automatically **synchronized** with the ROM folder on the RPi. When the flashing on your USB sticks ends (which indicates that no writing or reading activities are going on) you can unplug your USB stick.
 
 **Starting with RetroPie 3.0 you first need to create a folder called `retropie` on your USB stick and then follow the above steps.**
+
+### Manually copy files from USB-stick
+
+From RetroPie version 3.0 a file manager is available, it allows you to manually transfer files between USB-stick and Raspberry Pi SD card. File manager can be run from 'RetroPie' Emulationstation menu. Quick file manager (MC) guide can be found [here](http://www.thegeekstuff.com/2008/10/midnight-commander-mc-guide-powerful-text-based-file-manager-for-unix/). Your USB-stick should be mounted in /media/usb. The **directories for the ROM files** are located in ~/RetroPie/roms/SYSTEMNAME, where SYSTEMNAME is the short name of the corresponding system.
