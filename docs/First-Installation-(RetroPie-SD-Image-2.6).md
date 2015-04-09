@@ -10,6 +10,19 @@ If you hate reading then see this video. Otherwise read on!
 " target="_blank"><img src="https://i.ytimg.com/vi_webp/ySoTQhQqZdI/mqdefault.webp" 
 alt="Ps1 Configuration Video" width="300" height="190" border="10" /></a>
 
+## Hardware Needed:
+
+ * Raspberry Pi (A, A+, B, B+,) or for best results: **Raspberry Pi 2 Model B**
+ * Raspberry Pi Case (optional but recommended)
+ * MicroSD Card (see compatible SD card list [**here**)](http://elinux.org/RPi_SD_cards)
+ * MicroSD Card Reader (For installing retropie from your computer)
+ * HDMI cable or 4 Pole RCA to 3.5mm Cable (HDMI works best)
+ * Television or Computer Monitor- really any screen with HDMI or RCA ports
+ * Wifi Dongle or Ethernet Cable (Wifi Dongle is more convenient- see compatible list [**here**)](http://elinux.org/RPi_USB_Wi-Fi_Adapters)
+ * 5V 2A Micro USB Power Supply
+ * USB Keyboard and Mouse (to get things set up or you can use SSH)
+ * USB Game Controller of your choice (or you can get the [Control Block](http://blog.petrockblock.com/2014/12/29/controlblock-power-switch-and-io-for-the-raspberry-pi/) to use original controllers)
+
 ## Installation
 
 ### SD Images
