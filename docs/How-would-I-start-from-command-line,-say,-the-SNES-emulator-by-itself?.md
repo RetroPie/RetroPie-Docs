@@ -1,1 +1,1 @@
-You can run a SNES rom by calling “retroarch -L /home/pi/RetroPie/emulatorcores/pocketsnes-libretro/libretro.so /home/pi/RetroPie/roms/snes/nameofyourrom.smc”
+You can run a SNES rom by calling “retroarch -L /opt/retropie/libretrocores/lr-pocketsnes/libretro.so /home/pi/RetroPie/roms/snes/nameofyourrom.smc”
