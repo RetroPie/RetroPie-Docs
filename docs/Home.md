@@ -60,6 +60,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [ZX Spectrum](https://github.com/petrockblog/RetroPie-Setup/wiki/ZX-Spectrum) [(FBZX)](http://www.rastersoft.com/fbzx.html), [(Fuse)](http://fuse-emulator.sourceforge.net/)
 
 ## Troubleshooting & Advanced Configuration
+* [InputStation](https://github.com/petrockblog/RetroPie-Setup/wiki/InputStation)
 * [Advanced Configuration](https://github.com/petrockblog/RetroPie-Setup/wiki/Advanced-Configuration)
 * [Setting up an N64 controller](https://github.com/petrockblog/RetroPie-Setup/wiki/Setting-up-an-N64-- controller)
 * [Setting up a PS3 controller](https://github.com/petrockblog/RetroPie-Setup/wiki/Setting-up-a-PS3-controller)
