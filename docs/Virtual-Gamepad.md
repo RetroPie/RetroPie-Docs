@@ -26,6 +26,7 @@ sudo pm2 start main.js
 sudo pm2 startup
 sudo pm2 save
 ```
+See this video [**here**](https://www.youtube.com/watch?v=eH355PU2Eac) for a step by step installation.
 
 ## Usage
 
