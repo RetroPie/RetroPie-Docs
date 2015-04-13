@@ -1,6 +1,6 @@
 ![InputStation Logo](https://cloud.githubusercontent.com/assets/10035308/7110815/a2c49968-e174-11e4-941c-960290311bca.png)
 ***
-_InputStation is the product of hard work from the EmulationStation Team (Aloshi and Nils) and the RetroPie Team (petrockblog, joolswills, and gizmo98). It is currently in development but once completed it will be an all in one controller configuration module for EmulationStation, RetroArch, and other specific emulators._
+_InputStation is the product of hard work from the EmulationStation Team (Aloshi and Nils) and the RetroPie Team (petrockblog, joolswills, and gizmo98). It is currently in development but once completed it will be an all-in-one controller configuration module for EmulationStation, RetroArch, and other specific emulators._
 
 ***
 As it stands right now, there are diagrams for 3 controllers: Super Nintendo, Xbox 360, and PlayStation 3.
