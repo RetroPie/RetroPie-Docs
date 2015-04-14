@@ -149,7 +149,7 @@ case "$1" in
 esac
 ```
 `sudo chmod +x /etc/init.d/xboxdrv`  
-`sudo update-rc.d xboxdrv start`  
+`sudo update-rc.d xboxdrv start 90 2 3 4 5 stop 90 0 1 6`  
 You will also need a default configuration file. Save the following content to **/etc/default/xboxdrv**:
 ```
 # How many Controllers? (support up to 4 Controllers)
