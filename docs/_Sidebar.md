@@ -28,6 +28,7 @@
 * [Ports](https://github.com/petrockblog/RetroPie-Setup/wiki/Ports)
   * [Minecraft Pi Edition](https://github.com/petrockblog/RetroPie-Setup/wiki/Minecraft)
   * [Cave Story](https://github.com/petrockblog/RetroPie-Setup/wiki/CaveStory)
+  * [Quake Series](https://github.com/petrockblog/RetroPie-Setup/wiki/Quake)
 * [PlayStation 1](https://github.com/petrockblog/RetroPie-Setup/wiki/Playstation-1)
 * [ScummVM](https://github.com/petrockblog/RetroPie-Setup/wiki/ScummVM)
 * [Sega 32X](https://github.com/petrockblog/RetroPie-Setup/wiki/Sega-32X)
