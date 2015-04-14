@@ -82,11 +82,23 @@ do_start()
                 echo -e "\n$CONTROLLER"; exit 1;
         fi
         start-stop-daemon -S -q -x $DAEMON -- $DAEMON_ARGS $CONTROLLER
-        # Workaround: xboxdrv daemon creates /dev/input/js[4-7] device files, if /dev/input/js[0-3] created on startup.
-        if [ -x /usr/bin/rename ]; then
-                sleep 1
-                if [[ `ls /dev/input/js*` =~ /dev/input/js[4-7] ]]; then rename 's/js4/js0/;s/js5/js1/;s/js6/js2/;s/js7/js3/' /dev/input/js*; fi
-        fi
+
+# -- This workaround only works with 4 controllers connected.  It also is creating a name that
+# does not match the minor device node.
+
+#        # Workaround: xboxdrv daemon creates /dev/input/js[4-7] device files, if /dev/input/js[0-3] created on startup.
+#        if [ -x /usr/bin/rename ]; then
+#                sleep 1
+#                if [[ `ls /dev/input/js*` =~ /dev/input/js[4-7] ]]; then rename 's/js4/js0/;s/js5/js1/;s/js6/js2/;s/js7/js3/' /dev/input/js*; fi
+#        fi
+
+# Rather than renaming files, it's better to clear the existing ones by stopping the driver
+# and then when you start it again, everything will be correct.
+
+	sleep 3
+	do_stop
+	sleep 3
+        start-stop-daemon -S -q -x $DAEMON -- $DAEMON_ARGS $CONTROLLER
 }
 
 
@@ -194,7 +206,7 @@ After this you will get 4(or less depending) cfg files to add to your default `/
 
     sudo cat /opt/retropie/configs/all/p*.cfg >> /opt/retropie/configs/all/retroarch.cfg
 
-(if this don't have permissions you can do a `sudo chmod 777 /opt/retropie/configs/all/retroarch.cfg` before)
+(if this don't have permissions you can do a `sudo chown pi.pi /opt/retropie/configs/all/retroarch.cfg; sudo chmod 644 /opt/retropie/configs/all/retroarch.cfg` before)
 
 If your config is not working well, delete the joypad configuration lines in `/opt/retropie/configs/all/retroarch.cfg` before doing anything.
 
