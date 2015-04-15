@@ -29,6 +29,7 @@
   * [Minecraft Pi Edition](https://github.com/petrockblog/RetroPie-Setup/wiki/Minecraft)
   * [Cave Story](https://github.com/petrockblog/RetroPie-Setup/wiki/CaveStory)
   * [DOOM](https://github.com/petrockblog/RetroPie-Setup/wiki/Doom)
+  * [Duke Nukem 3D](https://github.com/petrockblog/RetroPie-Setup/wiki/Duke-Nukem-3D)
   * [Quake Series](https://github.com/petrockblog/RetroPie-Setup/wiki/Quake)
 * [PlayStation 1](https://github.com/petrockblog/RetroPie-Setup/wiki/Playstation-1)
 * [ScummVM](https://github.com/petrockblog/RetroPie-Setup/wiki/ScummVM)
