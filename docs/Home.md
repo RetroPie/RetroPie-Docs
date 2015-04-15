@@ -45,6 +45,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [PC](https://github.com/petrockblog/RetroPie-Setup/wiki/PC) [(DOSBox)](http://www.dosbox.com/), [(rpix86)](http://rpix86.patrickaalto.com/)
 * [PC Engine/TurboGrafx-16](https://github.com/petrockblog/RetroPie-Setup/wiki/PC-Engine) [(lr-mednafen-pce-fast)](https://github.com/libretro/beetle-pce-fast-libretro)
 * [Ports](https://github.com/petrockblog/RetroPie-Setup/wiki/Ports)
+  * [KODI](https://github.com/petrockblog/RetroPie-Setup/wiki/KODI) (EXPERIMENTAL)
   * [Minecraft Pi Edition](https://github.com/petrockblog/RetroPie-Setup/wiki/Minecraft) (EXPERIMENTAL)
   * [Cave Story](https://github.com/petrockblog/RetroPie-Setup/wiki/CaveStory) [(lr-nxengine)](https://github.com/libretro/nxengine-libretro)
   * [DOOM](https://github.com/petrockblog/RetroPie-Setup/wiki/Doom) [(lr-prboom)](https://github.com/libretro/libretro-prboom)
