@@ -47,6 +47,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [Ports](https://github.com/petrockblog/RetroPie-Setup/wiki/Ports)
   * [Minecraft Pi Edition](https://github.com/petrockblog/RetroPie-Setup/wiki/Minecraft) (EXPERIMENTAL)
   * [Cave Story](https://github.com/petrockblog/RetroPie-Setup/wiki/CaveStory) [(lr-nxengine)](https://github.com/libretro/nxengine-libretro)
+  * [DOOM](https://github.com/petrockblog/RetroPie-Setup/wiki/Doom) [(lr-prboom)](https://github.com/libretro/libretro-prboom)
   * [Quake Series](https://github.com/petrockblog/RetroPie-Setup/wiki/Quake) [(lr-tyrquake)](https://github.com/libretro/tyrquake), [(DarkPlaces Quake Engine)](https://github.com/autonomous1/darkplacesrpi), [(ioQuake3)](https://github.com/raspberrypi/quake3)
 * [PlayStation 1](https://github.com/petrockblog/RetroPie-Setup/wiki/Playstation-1) [(lr-pcsx-rearmed)](https://github.com/libretro/pcsx_rearmed)
 * [ScummVM](https://github.com/petrockblog/RetroPie-Setup/wiki/ScummVM)
