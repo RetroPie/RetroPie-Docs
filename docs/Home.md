@@ -25,6 +25,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [Atari 5200, and Atari 8 bit series: 400, 800, 1200XL, 600XL, 800XL, 130XE, XEGS]      
  (https://github.com/petrockblog/RetroPie-Setup/wiki/Atari-800-and-5200) [(Atari800)](http://atari800.sourceforge.net/)
 * [Atari 7800](https://github.com/petrockblog/RetroPie-Setup/wiki/Atari-7800) [(lr-prosystem)](https://github.com/libretro/prosystem-libretro)
+* [Atari Jaguar](https://github.com/petrockblog/RetroPie-Setup/wiki/Atari-Jaguar) [(lr-virtualjaguar)](https://github.com/libretro/virtualjaguar-libretro) (EXPERIMENTAL)
 * [Atari Lynx](https://github.com/petrockblog/RetroPie-Setup/wiki/Atari-Lynx) [(lr-handy)](https://github.com/libretro/libretro-handy)
 * [Atari ST/STE/TT/Falcon](https://github.com/petrockblog/RetroPie-Setup/wiki/Atari-ST-STE-TT-Falcon) [(Hatari)](http://hatari.tuxfamily.org/)
 * [Commodore 64](https://github.com/petrockblog/RetroPie-Setup/wiki/Commodore-64) [(Vice)](http://vice-emu.sourceforge.net/)
