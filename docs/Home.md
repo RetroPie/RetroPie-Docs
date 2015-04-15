@@ -17,6 +17,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [Getting the right MAME ROMs](https://github.com/petrockblog/RetroPie-Setup/wiki/Managing-ROMs)
 
 ## Emulators
+* [3do](https://github.com/petrockblog/RetroPie-Setup/wiki/3do) [(lr-4do)](https://github.com/libretro/4do-libretro) (EXPERIMENTAL)
 * [Amiga](https://github.com/petrockblog/RetroPie-Setup/wiki/Amiga) [(UAE4ALL2)](https://github.com/joolswills/uae4all2)
 * [Amstrad CPC](https://github.com/petrockblog/RetroPie-Setup/wiki/Amstrad-CPC) [(CPC4Rpi)](http://gaming.capsule-sa.co.za/?gamepress_reviews=cpc4rpi-cpc-6128-emulator-for-raspberry-pi)
 * [Apple II](https://github.com/petrockblog/RetroPie-Setup/wiki/Apple-II) [(Linapple)](http://sourceforge.net/projects/linapple/)
