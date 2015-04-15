@@ -22,7 +22,7 @@ There are 5 main BIOS needed for the Atari800 emulator:
 
 **ATARIOSB.ROM** (BIOS for Atari 400/800 NTSC)
 
-**atari5200.rom** (BIOS for the Atari 5200)
+**5200.rom** (BIOS for the Atari 5200)
 
 Place these files in
 ```shell
@@ -42,7 +42,7 @@ For 400/800:
 For XL/XE:
       BBO1 REV. 2: select ATARIXL.ROM in /home/pi/RetroPie/BIOS/ATARIXL.ROM
 For 5200:
-      Original: Select atari5200.rom in /home/pi/RetroPie/BIOS/atari5200.rom
+      Original: Select atari5200.rom in /home/pi/RetroPie/BIOS/5200.rom
 For BASIC:
       Rev. C:  Select ATARIBAS.ROM in /home/pi/RetroPie/BIOS/ATARIBAS.ROM 
 
@@ -69,7 +69,7 @@ ROM_OS_BB01R3=
 ROM_OS_BB01R4=
 ROM_OS_BB01R59=
 ROM_OS_BB01R59A=
-ROM_5200=/home/pi/RetroPie/BIOS/atari5200.rom
+ROM_5200=/home/pi/RetroPie/BIOS/5200.rom
 ROM_5200_A=
 ROM_BASIC_A=
 ROM_BASIC_B=
