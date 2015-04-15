@@ -26,6 +26,7 @@
 * [PC](https://github.com/petrockblog/RetroPie-Setup/wiki/PC)
 * [PC Engine/TurboGrafx-16](https://github.com/petrockblog/RetroPie-Setup/wiki/PC-Engine)
 * [Ports](https://github.com/petrockblog/RetroPie-Setup/wiki/Ports)
+  * [KODI](https://github.com/petrockblog/RetroPie-Setup/wiki/KODI)
   * [Minecraft Pi Edition](https://github.com/petrockblog/RetroPie-Setup/wiki/Minecraft)
   * [Cave Story](https://github.com/petrockblog/RetroPie-Setup/wiki/CaveStory)
   * [DOOM](https://github.com/petrockblog/RetroPie-Setup/wiki/Doom)
