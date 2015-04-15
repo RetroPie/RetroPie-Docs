@@ -30,22 +30,30 @@ Place these files in
 ```
 Once you have your ROMS and your BIOS files where they belong there is one more step of configurations needed where you tell the emulator where to look for your BIOS files.
 
-Navigate to the Atari800 emulator on emulationstation and choose a game. A screen will open up with a bunch of different cartridge options. If you are playing a 5200 game then choose a 5200 cartridge option (Option #4 seems to work). You will then get a warning telling you that it needs a real Atari/OS. (you need to legally own the 5200 hardware to have the BIOS) Then press F1 to open the menu and navigate down to "Emulator Configuration" and press enter. Then navigate down to System ROM settings and then press Enter (Quick hint: use the escape button to go back up a step in the GUI)
+Navigate to the Atari800 emulator on emulationstation and choose a game. A screen will open up with a bunch of different cartridge options. If you are playing a 5200 game then choose a 5200 cartridge option (Option #5 seems to work). You will then get a warning telling you that it needs a real Atari/OS. (you need to legally own the 5200 hardware to have the BIOS) Then press F1 to open the menu and navigate down to "Emulator Configuration" and press enter. Then navigate down to System ROM settings and then press Enter (Quick hint: use the escape button to go back up a step in the GUI)
 
 The easiest option is to just select "Find ROM images in a directory" then navigate into the BIOS directory and press the space bar. If you have the right files and file names it should automatically place the BIOS files where they belong. 
 
 Alternatively you can configure them manually:
 
-For 400/800: 
-      Custom OS ROM: select ATARIOSB.ROM in /home/pi/RetroPie/BIOS/ATARIOSB.ROM
-      ROM_OS_A_PAL=  select ATARIOSA.ROM in /home/pi/RetroPie/BIOS/ATARIOSA.ROM
-For XL/XE:
-      BBO1 REV. 2: select ATARIXL.ROM in /home/pi/RetroPie/BIOS/ATARIXL.ROM
-For 5200:
-      Original: Select atari5200.rom in /home/pi/RetroPie/BIOS/5200.rom
-For BASIC:
-      Rev. C:  Select ATARIBAS.ROM in /home/pi/RetroPie/BIOS/ATARIBAS.ROM 
-
+**For 400/800:**
+```     
+ Custom OS ROM: select ATARIOSB.ROM in /home/pi/RetroPie/BIOS/ATARIOSB.ROM
+      
+ ROM_OS_A_PAL=  select ATARIOSA.ROM in /home/pi/RetroPie/BIOS/ATARIOSA.ROM
+```
+**For XL/XE:**
+```     
+ BBO1 REV. 2: select ATARIXL.ROM in /home/pi/RetroPie/BIOS/ATARIXL.ROM
+```
+**For 5200:**
+```     
+ Original: Select atari5200.rom in /home/pi/RetroPie/BIOS/5200.rom
+```
+**For BASIC:**
+```      
+Rev. C:  Select ATARIBAS.ROM in /home/pi/RetroPie/BIOS/ATARIBAS.ROM 
+```
 Then press escape a few times to go back to the "Emulator Settings" and select Save Configuration File or alternatively change Save configuration file on exit from no to yes
 
 Then you can exit the emulator by pressing F9 and then try the game again or press shift+F5 to reboot the game.
