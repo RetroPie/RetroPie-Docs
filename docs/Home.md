@@ -68,7 +68,6 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 
 ## Troubleshooting & Advanced Configuration
 * [Use Your Smartphone as a Gamepad!](https://github.com/petrockblog/RetroPie-Setup/wiki/Virtual-Gamepad)
-* [InputStation](https://github.com/petrockblog/RetroPie-Setup/wiki/InputStation)
 * [Advanced Configuration](https://github.com/petrockblog/RetroPie-Setup/wiki/Advanced-Configuration)
 * [Setting up an N64 controller](https://github.com/petrockblog/RetroPie-Setup/wiki/Setting-up-an-N64-- controller)
 * [Setting up a PS3 controller](https://github.com/petrockblog/RetroPie-Setup/wiki/Setting-up-a-PS3-controller)
