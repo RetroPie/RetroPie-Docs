@@ -210,6 +210,7 @@ if test $? -eq 0 ; then
 	wminput -d -c  /home/pi/mywminput 00:19:1D:84:EF:33 &
 else
 	echo "Blue-tooth adapter not present!"
+        exit 1
 fi
 ```
 
@@ -229,7 +230,7 @@ To start the script before emulationstation starts, edit the file: /etc/profile.
 ```
 Then, right before that line, add the line:
 ```shell
-[ -n "${SSH_CONNECTION}" ] || rebootWithoutWiimotes=0 /home/pi/bin/attachwii.sh
+[ -n "${SSH_CONNECTION}" ] || rebootWithoutWiimotes=0 /home/pi/bin/attachwii.sh && emulationstation
 ```
 and save the file.
 
