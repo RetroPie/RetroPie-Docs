@@ -9,7 +9,7 @@ _The Game Boy Color was an 8 bit handheld gaming console released by Nintendo in
 Gambatte-libretro is a port of Gambatte for libretro. Since this is a libretro core it utilises RetroArch configurations for your controller
 ## ROMS
 
-Accepted File Extensions: **.gbc .zip**
+Accepted File Extensions: **.gbc**
 
 Place your Game Boy Color ROMs in
 ```
