@@ -9,7 +9,7 @@ Both emulators utilise RetroArch configurations for controllers
 
 ## ROMS
 
-Accepted File Extensions: **.nes .zip .smc .sfc .fig .swc .mgd**
+Accepted File Extensions: **.nes .smc .sfc .fig .swc .mgd**
 
 Place your NES Roms in
 ```
