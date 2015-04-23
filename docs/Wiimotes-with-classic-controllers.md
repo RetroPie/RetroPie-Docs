@@ -188,7 +188,7 @@ hcitool scan
 and press 1+2 on your wiimote(s). After a short while, the output should be something like
 ```shell
 Scanning ...
-        00:19:1D:87:90:38		Nintendo RVL-CNT-01
+	00:19:1D:87:90:38		Nintendo RVL-CNT-01
 	00:19:1D:88:EF:12		Nintendo RVL-CNT-01
 ```
 
@@ -210,7 +210,7 @@ if test $? -eq 0 ; then
 	wminput -d -c  /home/pi/mywminput 00:19:1D:84:EF:33 &
 else
 	echo "Blue-tooth adapter not present!"
-        exit 1
+	exit 1
 fi
 ```
 
