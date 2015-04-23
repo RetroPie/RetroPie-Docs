@@ -9,7 +9,7 @@ Yes- there are a bajillion SNES emulators. If you have a Pi 2, the preference is
 
 ## ROMS
 
-Accepted File Extensions: **.smc .sfc .fig .swc .zip**
+Accepted File Extensions: **.smc .sfc .fig .swc**
 
 Place your SNES ROMs in
 ```
