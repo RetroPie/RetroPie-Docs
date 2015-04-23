@@ -6,7 +6,7 @@ _The MSX was a personal computer released by Microsoft in 1983._
 ## Emulator: [fmsx-libretro](https://github.com/libretro/fmsx-libretro)
 
 ## ROMS
-Accepted File Extensions: **.rom .mx1 .mx2 .col .dsk .zip**
+Accepted File Extensions: **.rom .mx1 .mx2 .col .dsk**
 
 Place your MSX ROMs in
 ```
