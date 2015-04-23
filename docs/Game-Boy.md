@@ -7,7 +7,7 @@ _The Game Boy was released by Nintendo in 1989 thus kicking off the era of handh
 Gambatte-libretro is a port of Gambatte for libretro. Since this is a libretro core it utilises RetroArch configurations for your controller
 ## ROMS
 
-Accepted File Extensions: **.gb .zip**
+Accepted File Extensions: **.gb**
 
 Place your Game Boy ROMs in
 ```
