@@ -7,7 +7,7 @@ _The Sega 32X was released as an add-on for the Sega Genesis in 1994. There was 
 
 ## ROMS
 
-Accepted File Extensions: **.32x .smd .bin .md .zip**
+Accepted File Extensions: **.32x .smd .bin .md**
 
 Place your Sega 32X ROMs in
 ```
