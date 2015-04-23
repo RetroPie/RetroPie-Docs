@@ -12,7 +12,7 @@ Note that this emulator is currently experimental and will need to be installed 
 
 ## ROMS
 
-Accepted File Extensions: **.j64 .jag .zip**
+Accepted File Extensions: **.j64 .jag**
 
 Place your Atari Jaguar ROMs in 
 ```
