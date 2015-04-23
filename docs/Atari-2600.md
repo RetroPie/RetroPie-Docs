@@ -7,7 +7,7 @@ _The Atari 2600 was a home video game console released by Atari in 1977_
 Both work fine. Stella-libretro is a port of Stella that utilises RetroArch configurations- see "Controls" below.
 
 ## ROMS
-Accepted File Extensions: **.bin .a26 .rom .zip .gz** (stella-libretro has a hard time extracting .zip files)
+Accepted File Extensions: **.bin .a26 .rom**
 
 Place your Atari 2600 ROMS in
 ```shell
