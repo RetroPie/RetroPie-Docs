@@ -8,7 +8,7 @@ Osmose has it's own configurations whereas lr-Genesis-Plus-GX and lr-picodrive u
 
 ## ROMS
 
-Accepted File Extensions: **.sms .zip**
+Accepted File Extensions: **.sms**
 
 Place your Master System ROMs in
 ```
