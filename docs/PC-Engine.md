@@ -5,7 +5,7 @@ _The TurboGrafx-16 Entertainment SuperSystem, originally known in Japan as the P
 ## Emulator: [lr-mednafen-pce-fast](https://github.com/libretro/beetle-pce-fast-libretro)
 
 ## ROMS
-Accepted File Extensions: **.pce .zip**
+Accepted File Extensions: **.pce**
 
 Place your PC Engine/ TurboGrafx-16 ROMs in
 ```
