@@ -6,7 +6,7 @@ _The Commodore 64 is an 8 Bit personal computer introduced in 1982 by Commodore 
 ## Emulator: [VICE](http://vice-emu.sourceforge.net/)
 
 ## ROMS
-Accepted File Extensions: **.crt .d64 .g64 .t64 .tap .x64 .zip**
+Accepted File Extensions: **.crt .d64 .g64 .t64 .tap .x64**
 
 Place your ROMS in
 ```shell
