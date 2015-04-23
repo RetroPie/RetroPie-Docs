@@ -8,7 +8,7 @@ Yabause stands for: Yet Another Buggy And Uncomplete Sega Emulator. It stands by
 
 ## ROMS
 
-Accepted File Extensions: **.bin .zip .iso .mdf**
+Accepted File Extensions: **.bin .iso .mdf**
 
 Place your Sega Saturn ROMs in 
 ```
