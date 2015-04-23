@@ -7,7 +7,7 @@ _The Game Boy Advance is a 32 bit handheld video game console released by Ninten
 GPSP has separate controls than lr-gpSP and lr-vba-next. lr-gpSP and lr-vba-next both utilise RetroArch configurations (see below under controls)
 
 ## ROMS
-Accepted File Extensions: **.gba .zip**
+Accepted File Extensions: **.gba**
 
 Place your Game Boy Advance ROMS in 
 ```
