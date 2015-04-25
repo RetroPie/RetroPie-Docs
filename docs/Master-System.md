@@ -26,6 +26,9 @@ Add custom retroarch controls to the retroarch.cfg file in
 /opt/retropie/configs/mastersystem/retroarch.cfg
 ```
 For more information on custom RetroArch controls see: [RetroArch Configuration](https://github.com/petrockblog/RetroPie-Setup/wiki/RetroArch-Configuration)
+
+![mastersystem](https://cloud.githubusercontent.com/assets/10035308/7334954/59794038-eb60-11e4-989d-6367c1fda8ef.png)
+
 ### Osmose
 Once you have run Osmose at least once, a configuration file call osmose.ini will be created at
 ```
