@@ -30,6 +30,8 @@ Add custom retroarch controls to the retroarch.cfg file in
 ```
 For more information on custom RetroArch controls see: [RetroArch Configuration](https://github.com/petrockblog/RetroPie-Setup/wiki/RetroArch-Configuration)
 
+![snes](https://cloud.githubusercontent.com/assets/10035308/7334403/bd655d6e-eb4e-11e4-8fd7-a4424aad1034.png)
+
 ### PiSNES
 
 Controller configurations are kept in a file named snes9x.cfg located in 
