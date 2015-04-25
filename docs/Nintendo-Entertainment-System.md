@@ -25,3 +25,5 @@ Add custom retroarch controls to the retroarch.cfg file in
 /opt/retropie/configs/nes/retroarch.cfg
 ```
 For more information on custom RetroArch controls see: [RetroArch Configuration](https://github.com/petrockblog/RetroPie-Setup/wiki/RetroArch-Configuration)
+
+![nes](https://cloud.githubusercontent.com/assets/10035308/7334405/bd66f638-eb4e-11e4-84e9-8f31b3fa28f4.png)
