@@ -26,6 +26,10 @@ Add custom retroarch controls to the retroarch.cfg file in
 ```
 For more information on custom RetroArch controls see: [RetroArch Configuration](https://github.com/petrockblog/RetroPie-Setup/wiki/RetroArch-Configuration)
 
+
+![atari2600](https://cloud.githubusercontent.com/assets/10035308/7334406/bd68b8ce-eb4e-11e4-86c2-a4036ac4221e.png)
+
+
 ### Stella
 
 Default Controls:
