@@ -39,7 +39,7 @@ For more information see http://www.dosbox.com/wiki/Main_Page
 
 If the keyboard input in DOSBox is not correct, you need to edit the DOSBox config file, dosbox-SVN.conf, which is located in the hidden folder, .dosbox, in your home folder.
 
-From the home folder, run the following commands:
+To fix, run the following commands:
 
     cd ~/.dosbox
     sudo nano dosbox-SVN.conf
