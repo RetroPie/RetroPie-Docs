@@ -25,4 +25,4 @@ For more information see http://www.dosbox.com/wiki/Main_Page
 
 ## Tutorials
 
-Run DOS Games in Retropie using DOSBox.
+[Launch DOS Games directly from EmulationStation](http://dosonthepi.blogspot.co.uk/2015/01/run-dos-games-in-retropie_15.html#add-dosgames)
