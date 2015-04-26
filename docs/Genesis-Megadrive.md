@@ -33,6 +33,8 @@ For more information on custom RetroArch controls see: [RetroArch Configuration]
 
 ![genesis](https://cloud.githubusercontent.com/assets/10035308/7336303/aec335e0-ebb4-11e4-93b3-26037dd26ffb.png)
 
+![genesis6btn](https://cloud.githubusercontent.com/assets/10035308/7336429/7e524110-ebbb-11e4-8777-05a824384d34.png)
+
 ### Dgen
 
 DGen uses a configuration file called dgenrc located in
