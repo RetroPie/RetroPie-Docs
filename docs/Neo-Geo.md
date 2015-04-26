@@ -4,7 +4,7 @@ _The Neo Geo is a cartridge-based arcade system board and home video game consol
 ***
 ## Emulators: [GnGeo-Pi](https://github.com/ymartel06/GnGeo-Pi), [PiFBA](http://sourceforge.net/projects/pifba/), [fba-libretro](https://github.com/libretro/fba-libretro)
 
-To be honest it is easier to use Final Burn Alpha as an emulator for Neo Geo. Using the correct FBA-Libretro romset some Neo Geo games still do not work.
+To be honest it is easier to use Final Burn Alpha as an emulator for Neo Geo. Even when using the correct FBA-Libretro romset, some Neo Geo games still do not work.
 
 See [this page](https://github.com/petrockblog/RetroPie-Setup/wiki/FinalBurn-Alpha) 
 
