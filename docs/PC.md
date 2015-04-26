@@ -25,11 +25,11 @@ For more information see http://www.dosbox.com/wiki/Main_Page
 
 ## Tutorials
 
-[How to add games to RetroPie and launch them directly from EmulationStation using shell scripts.](http://dosonthepi.blogspot.co.uk/2015/01/run-dos-games-in-retropie_15.html#add-dosgames)
+[How to add games to RetroPie and launch them directly from EmulationStation.](http://dosonthepi.blogspot.co.uk/2015/01/run-dos-games-in-retropie_15.html#add-dosgames)
 
 [How to configure USB game controllers in DOSBox.](http://dosonthepi.blogspot.co.uk/2015/01/configure-game-controllers-in-dosbox_29.html)
 
-[How to create an arcade mapping for game controllers in DOSBox for use with most games.](http://dosonthepi.blogspot.co.uk/2015/02/default-arcade-mapping-for-dosbox.html)
+[How to create an arcade mapping for game controllers in DOSBox.](http://dosonthepi.blogspot.co.uk/2015/02/default-arcade-mapping-for-dosbox.html)
 
 [How to configure DOSBOX for individual games.](http://dosonthepi.blogspot.co.uk/2015/02/dosbox-configuration-for-individual.html)
 
