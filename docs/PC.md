@@ -29,8 +29,21 @@ For more information see http://www.dosbox.com/wiki/Main_Page
 
 [How to configure USB game controllers in DOSBox.](http://dosonthepi.blogspot.co.uk/2015/01/configure-game-controllers-in-dosbox_29.html)
 
-[How to create an arcade mapping for game controllers in DOSBox.](http://dosonthepi.blogspot.co.uk/2015/02/default-arcade-mapping-for-dosbox.html)
+[How to create a default (arcade) mapping for game controllers in DOSBox.](http://dosonthepi.blogspot.co.uk/2015/02/default-arcade-mapping-for-dosbox.html)
 
 [How to configure DOSBOX for individual games.](http://dosonthepi.blogspot.co.uk/2015/02/dosbox-configuration-for-individual.html)
 
 [Update for Retropie 3.0.](http://dosonthepi.blogspot.co.uk/2015/04/retropie-30-update.html)
+
+## Troubleshooting
+
+If the keyboard input in DOSBox is not correct, you need to edit the DOSBox config file, dosbox-SVN.conf, which is located in the hidden folder, .dosbox, in your home folder.
+
+From the home folder, run the following commands:
+
+    cd ~/.dosbox
+    sudo nano dosbox-SVN.conf
+
+In the [sdl] section, edit line 34 of dosbox-SVN.conf so that usescancodes is set to false as below:
+
+    usescancodes=false
