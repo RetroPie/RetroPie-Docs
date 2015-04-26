@@ -104,11 +104,7 @@ Add custom retroarch controls to the retroarch.cfg file in
 ```
 For more information on custom RetroArch controls see: [RetroArch Configuration](https://github.com/petrockblog/RetroPie-Setup/wiki/RetroArch-Configuration) 
 
-One important thing to note is that with fba-libretro the hotkey button (i.e. select) interferes with you insert coin button (which also happens to be select) so as a result you can't insert a coin to start your game with the default controls. An easy fix is to place
-```shell
-input_enable_hotkey_btn= 4 
-```
-in the aformentioned retroarch.cfg and be sure to change the number to match a number on your gamepad that isn't select that also won't interfere with your gameplay yet will still allow you to use that button as a hotkey to exit the emulator.
+One important thing to note is that with fba-libretro the hotkey button (i.e. select) interferes with you insert coin button (which also happens to be select) so as a result you can't insert a coin to start your game with the default controls. An easy fix is to to swap the hotkey and exit button around in the aforementioned retroarch.cfg.
 
 ### PiFBA Controls
 PiFBA controls are located in
