@@ -34,4 +34,6 @@ Add custom retroarch controls to the retroarch.cfg file in
 ```
 /opt/retropie/configs/segacd/retroarch.cfg
 ```
-For more information on custom RetroArch controls see: [RetroArch Configuration](https://github.com/petrockblog/RetroPie-Setup/wiki/RetroArch-Configuration) 
+For more information on custom RetroArch controls see: [RetroArch Configuration](https://github.com/petrockblog/RetroPie-Setup/wiki/RetroArch-Configuration)
+
+![genesis](https://cloud.githubusercontent.com/assets/10035308/7336303/aec335e0-ebb4-11e4-93b3-26037dd26ffb.png) 
