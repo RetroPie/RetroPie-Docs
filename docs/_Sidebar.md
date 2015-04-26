@@ -26,7 +26,7 @@
 * [Neo Geo](https://github.com/petrockblog/RetroPie-Setup/wiki/Neo-Geo)
 * [Nintendo Entertainment System](https://github.com/petrockblog/RetroPie-Setup/wiki/Nintendo-Entertainment-System)
 * [PC](https://github.com/petrockblog/RetroPie-Setup/wiki/PC)
-* [PC Engine/TurboGrafx-16/Turbo CD](https://github.com/petrockblog/RetroPie-Setup/wiki/PC-Engine)
+* [PC Engine/TurboGrafx-16](https://github.com/petrockblog/RetroPie-Setup/wiki/PC-Engine)
 * [Ports](https://github.com/petrockblog/RetroPie-Setup/wiki/Ports)
   * [KODI](https://github.com/petrockblog/RetroPie-Setup/wiki/KODI)
   * [Minecraft Pi Edition](https://github.com/petrockblog/RetroPie-Setup/wiki/Minecraft)
