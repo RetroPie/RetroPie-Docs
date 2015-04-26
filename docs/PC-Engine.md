@@ -20,6 +20,8 @@ Place your the SYSCARD3.PCE file in
 ```
 /home/pi/RetroPie/BIOS
 ```
+NOTE: The 'SYSCARD3.PCE' needs to be placed in with the roms to play Turbo CD games.
+
 ## Controls
 
 lr-mednafen-pce-fast utilises Retroarch configurations
