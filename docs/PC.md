@@ -25,5 +25,5 @@ For more information see http://www.dosbox.com/wiki/Main_Page
 
 ## Tutorials
 
-[How to add games, including how to install using DOSBox if necessary, to RetroPie and launch them from EmulationStation using shell scripts.](http://dosonthepi.blogspot.co.uk/2015/01/run-dos-games-in-retropie_15.html#add-dosgames)
+[How to add games to RetroPie and launch them from EmulationStation using shell scripts.](http://dosonthepi.blogspot.co.uk/2015/01/run-dos-games-in-retropie_15.html#add-dosgames)
 
