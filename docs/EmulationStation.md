@@ -33,19 +33,9 @@ A great deal of information can be found in EmulationStation's README.md and THE
 You've gone one screen too far ;) Press `F10` to get back to the Apple II start screen and use the left and right arrows to navigate between the emulators.
 
 
-### How do I hide unused systems?
+### How do I hide unused/unwanted systems?
 
-You can hide unused systems by either removing the relevant roms in the system folder of navigating the /etc/emulationstation and opening the es_systems.cfg file. Using <!-- and --> on a select system will hide from the front end. Example:
-
-**<!--**<system>
-    <name>apple2</name>
-    <fullname>Apple II</fullname>
-    <path>~/RetroPie/roms/apple2</path>
-    <extension>.sh .SH</extension>
-    <command>/opt/retropie/supplementary/runcommand/runcommand.sh 0 _SYS_ apple2 %ROM%</command>
-    <platform>apple2</platform>
-    <theme>apple2</theme>
-  </system>**-->**
+You can hide unused systems by either removing the relevant roms in the system folder or navigating to ```/etc/emulationstation``` and opening the ```es_systems.cfg``` file. Using ```<!--``` and ```-->``` on a select system will hide it from the front end UI.
 
 ### My emulator won't close through my gamepad!
 
