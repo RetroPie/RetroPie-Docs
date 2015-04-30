@@ -43,7 +43,7 @@ For RetroPie 2.6 FBA-Libretro place your ROMS in
 
 ## BIOS
 
-The BIOS needed is:
+The BIOS needed for Neo Geo games is:
 
 **neogeo.zip**
 
