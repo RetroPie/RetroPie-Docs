@@ -25,7 +25,7 @@ As a lovely caveat, the ROMs you have must match the file in gngeo_data.zip loca
 ```
 You can only play roms that have the same name as these .drv files, e.g. mslug2.zip (rom) and mslug2.drv (data). If the names of these files dont match the game will crash. (see the list below for compatible Roms)
 
-Based on **0.138** romsets (May 2010)
+GnGeo-Pi based on **0.138** romsets (May 2010)
 
 Total Games Emulated: 203
 
