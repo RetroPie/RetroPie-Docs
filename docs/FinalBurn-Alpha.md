@@ -33,7 +33,7 @@ Total Games Emulated: 3369 (includes clones etc..)
  
 For RetroPie 3.0 FBA-Libretro place your ROMS in
 ```shell
-/home/pi/RetroPie/roms/fba
+/home/pi/RetroPie/roms/neogeo
 ```
 
 For RetroPie 2.6 FBA-Libretro place your ROMS in
