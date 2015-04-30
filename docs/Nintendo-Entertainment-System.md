@@ -9,7 +9,9 @@ Both emulators utilise RetroArch configurations for controllers
 
 ## ROMS
 
-Accepted File Extensions: **.nes .smc .sfc .fig .swc .mgd**
+Accepted File Extensions: **.nes .smc .sfc .fig .swc .mgd .fds**
+
+Note: Famicom Disk System roms are only compatible with the lr-nestopia core.
 
 Place your NES Roms in
 ```
