@@ -4,7 +4,7 @@ _The Neo Geo is a cartridge-based arcade system board and home video game consol
 ***
 ## Emulators: [GnGeo-Pi](https://github.com/ymartel06/GnGeo-Pi), [PiFBA](http://sourceforge.net/projects/pifba/), [fba-libretro](https://github.com/libretro/fba-libretro)
 
-For Neo Geo games you can use either the standalone emulators PiFBA and GnGeo-Pi or the Retroarch core FBA-libretro. FBA-Libretro is recommended because you can force 4:3 aspect ratio and also use shaders. See [this page.](https://github.com/petrockblog/RetroPie-Setup/wiki/FinalBurn-Alpha) 
+For Neo Geo games you can use either the standalone emulators PiFBA and GnGeo-Pi or the Retroarch core FBA-libretro. FBA-Libretro is recommended because you can use shaders. See [this page.](https://github.com/petrockblog/RetroPie-Setup/wiki/FinalBurn-Alpha) 
 
 ## ROMS
 
