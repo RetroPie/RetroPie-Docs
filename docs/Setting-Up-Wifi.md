@@ -2,9 +2,21 @@
 
 First check to see if your wifi dongle is [compatible](http://elinux.org/RPi_USB_Wi-Fi_Adapters):
 
-There are two main methods to configure Wifi.
+There are three main methods to configure Wifi.
 
-## Method 1
+## Method 1 (Easiest)
+Starting with the latest version of RetroPie there is an option in the RetroPie menu called "Configure Wifi". Select that and you will open into Wicd-Curses. 
+
+_(if you have an older build you'll need to install it manually by either updating the RetroPie Setup script, and reinstalling the RetroPie Menu scriptmodule or you can install Wicd-Curses in through the terminal with `sudo apt-get install wicd-curses` and run it with `sudo wicd-curses` - of course you'll need to be connected by ethernet to install it)_
+
+![](http://atastypixel.com/blog/wp-content/uploads/2011/09/Screen-Shot-2011-09-24-at-14.37.111.png)
+
+Navigate to your wireless network and Press the RIGHT arrow to configure your wifi
+
+![untitled drawing 2](https://cloud.githubusercontent.com/assets/10035308/7425946/1efa7e56-ef78-11e4-92fb-cf83a6b59e85.png)
+
+check automatically connect to this network (by pressing enter) and type in your wifi password where it says "key" press F10 to save and then press Q to go back to emulationstation. 
+## Method 2
 
 `sudo nano /etc/network/interfaces`
 
