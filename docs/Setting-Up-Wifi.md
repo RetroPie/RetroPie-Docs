@@ -11,11 +11,11 @@ _(if you have an older build you'll need to install it manually by either updati
 
 ![](http://atastypixel.com/blog/wp-content/uploads/2011/09/Screen-Shot-2011-09-24-at-14.37.111.png)
 
-Navigate to your wireless network and Press the RIGHT arrow to configure your wifi
+Navigate to your wireless network and Press the `RIGHT` arrow to configure your wifi
 
 ![untitled drawing 2](https://cloud.githubusercontent.com/assets/10035308/7425946/1efa7e56-ef78-11e4-92fb-cf83a6b59e85.png)
 
-check automatically connect to this network (by pressing enter) and type in your wifi password where it says "key" press F10 to save and then press Q to go back to emulationstation. 
+check automatically connect to this network (by pressing enter) and type in your wifi password where it says "key" press `F10` to save and then press `SHIFT+c` to connect and press `Q` to go back to emulationstation. 
 ## Method 2
 
 `sudo nano /etc/network/interfaces`
