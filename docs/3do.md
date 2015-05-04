@@ -31,3 +31,5 @@ Add custom retroarch controls to the retroarch.cfg file in
 /opt/retropie/configs/3do/retroarch.cfg
 ```
 For more information on custom RetroArch controls see: [RetroArch Configuration](https://github.com/petrockblog/RetroPie-Setup/wiki/RetroArch-Configuration)
+
+![3do](https://cloud.githubusercontent.com/assets/10035308/7448854/9357ed76-f1e2-11e4-9c10-5aa9689cd121.png)
