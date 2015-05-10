@@ -112,7 +112,7 @@ alt="N64 Configuration Video" width="150" height="150" border="10" /></a>
 _InputStation is the product of hard work from the EmulationStation Team (Aloshi and Nils) and the RetroPie Team (petrockblog, joolswills, and gizmo98). It is currently in development but once completed it will be an all-in-one controller configuration module for EmulationStation, RetroArch, and other specific emulators._
 
 ***
-As it stands right now, there are diagrams for 3 controllers: Super Nintendo, Xbox 360, and PlayStation 3.
+The following diagrams are for the 3 most common controllers: Super Nintendo, Xbox 360, and PlayStation 3. They can be used as a reference when configuring your controllers. Each emulator page on the wiki has a diagram of the original controller for its respective console that will correspond to the same inputs listed below.
 
 ## Super Nintendo Controller
 ![Super Nintendo Controller](https://cloud.githubusercontent.com/assets/10035308/7110174/0f2fdb54-e16a-11e4-8f3d-37bdca8f1ddf.png)
