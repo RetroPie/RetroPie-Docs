@@ -179,7 +179,7 @@ input_player2_right_btn = 3
 ```
 _input exit emulator_ to exit the emulator and return to emulationstation._input menu toggle_ to show the retroarch menu (e.g. to set the aspect ratio, save/load the game, etc.)
 
-**`/home/pi/RetroPie/emulators/pifba/fba2x.cfg`**
+**`/home/pi/RetroPie/emulators/pifba/fba2x.cfg`** (or **`/opt/retropie/emulators/pifba/fba2x.cfg`** in some versions)
 ```bash
 [Joystick]
 A_1=4
