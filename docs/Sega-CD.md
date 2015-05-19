@@ -4,6 +4,7 @@ The Sega CD was yet another add-on to the Sega Genesis. It was released in 1991.
 
 ***
 ## Emulators: [libretro-Genesis-Plus-GX](https://github.com/libretro/Genesis-Plus-GX), [libretro-picodrive](https://github.com/libretro/picodrive)
+Genesis-Plus-GX is recommended as it has better accuracy and speed.
 
 ## ROMS
 Accepted File Extensions: **.smd .bin .md .iso**
@@ -18,6 +19,8 @@ If you don't have the corresponding .cue file in the same folder as your .bin fi
 ## BIOS
 
 The BIOS filename is: **us_scd1_9210.bin**
+
+For Genesis-Plus-GX core rename the US bios to **bios_CD_U.bin**
 
 Place this BIOS file in
 ```
