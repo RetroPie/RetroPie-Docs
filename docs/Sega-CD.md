@@ -3,7 +3,7 @@
 _The Sega CD was yet another add-on to the Sega Genesis. It was released in 1991._
 
 ***
-## Emulators: [libretro-picodrive](https://github.com/libretro/picodrive)
+## Emulators: [libretro-Genesis-Plus-GX](https://github.com/libretro/Genesis-Plus-GX), [libretro-picodrive](https://github.com/libretro/picodrive)
 
 ## ROMS
 Accepted File Extensions: **.smd .bin .md .iso**
