@@ -1,6 +1,6 @@
 ![Sega CD Logo](http://img1.wikia.nocookie.net/__cb20120209224111/logopedia/images/d/da/Sega_CD_logo_(USA).png)
 ***
-_The Sega CD was yet another add-on to the Sega Genesis. It was released in 1991. Genesis-Plus-GX recommended as it has better accuracy and speed.
+The Sega CD was yet another add-on to the Sega Genesis. It was released in 1991.
 
 ***
 ## Emulators: [libretro-Genesis-Plus-GX](https://github.com/libretro/Genesis-Plus-GX), [libretro-picodrive](https://github.com/libretro/picodrive)
