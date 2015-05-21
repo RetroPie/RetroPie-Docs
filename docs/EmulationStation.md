@@ -35,7 +35,7 @@ You've gone one screen too far ;) Press `F10` to get back to the Apple II start 
 
 ### How do I hide unused/unwanted systems?
 
-You can hide unused systems by either removing the relevant roms in the system folder or navigating to ```/etc/emulationstation``` and opening the ```es_systems.cfg``` file. Using ```<!--``` and ```-->``` on a select system will hide it from the front end UI.
+You can hide unused systems by either removing the relevant roms in the system folder or navigating to ```/etc/emulationstation``` and opening the ```es_systems.cfg``` file. Using ```<!--``` and ```-->``` on a systems entry will hide it from the frontend GUI.
 
 ### My emulator won't close through my gamepad!
 
