@@ -14,9 +14,9 @@ Place your PC Engine/ TurboGrafx-16 ROMs in
 
 ## BIOS
 
-The BIOS file necessary is called: **SYSCARD3.PCE** 
+The BIOS file necessary is called: **syscard3.pce** 
 
-Place your the SYSCARD3.PCE file in 
+Place your the syscard3.pce file in 
 ```
 /home/pi/RetroPie/BIOS
 ```
