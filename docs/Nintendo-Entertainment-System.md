@@ -3,9 +3,9 @@
 _The Nintendo Entertainment System (NES) is an 8-bit home video game console that was released by Nintendo in 1985._
 
 ***
-## Emulators: [lr-fceumm](https://github.com/libretro/libretro-fceumm), [lr-nestopia](https://github.com/libretro/nestopia)
+## Emulators: [lr-nestopia](https://github.com/libretro/nestopia), [lr-fceumm](https://github.com/libretro/libretro-fceumm)
 
-Both emulators utilise RetroArch configurations for controllers
+Both emulators utilise RetroArch configurations for controllers. Nestopia is preferred due to better accuracy and the ability to play Famicom Disk System games.
 
 ## ROMS
 
