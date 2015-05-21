@@ -15,7 +15,14 @@ Place your NES Roms in
 ```
 /home/pi/RetroPie/roms/nes
 ```
+## BIOS
 
+Nestopia is able to play Famicom Disk System games with a **disksys.rom** bios file.
+
+Place the BIOS in
+```
+/home/pi/RetroPie/BIOS
+```
 ## Controls
 
 Both emulators utilise Retroarch configurations
