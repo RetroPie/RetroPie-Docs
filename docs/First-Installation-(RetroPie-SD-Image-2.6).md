@@ -29,7 +29,7 @@ alt="Ps1 Configuration Video" width="300" height="190" border="10" /></a>
 
 There are currently two versions of RetroPie 2.6. There is one version for Raspberry Pi 1 (Model A, A+, B, B+) and there is a version for Raspberry Pi 2. Download the SD image for your version of Raspberry Pi:
 
-**[Raspberry Pi 1](http://blog.petrockblock.com/retropie/retropie-downloads/download-info/retropie-sd-card-image-for-rpi-version-1/)**
+**[Raspberry Pi 1](http://blog.petrockblock.com/retropie/retropie-downloads/retropie-project-sd-card-image-for-raspberry-pi-1/)**
 
 **[Raspberry Pi 2](http://blog.petrockblock.com/retropie/retropie-downloads/download-info/retropie-sd-card-image-for-rpi-version-2/)**
 
