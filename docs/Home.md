@@ -97,6 +97,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [Has anyone figured out how to insert coins in imame4all yet?](https://github.com/petrockblog/RetroPie-Setup/wiki/Has-anyone-figured-out-how-to-insert-coins-in-imame4all-yet%3F)
 * [Does anybody know if there's a way to edit the retroarch.cfg to give me the ability to exit an emulator by using the controller?](https://github.com/petrockblog/RetroPie-Setup/wiki/Does-anybody-know-if-there%27s-a-way-to-edit-the-retroarch.cfg-to-give-me-the-ability-to-exit-an-emulator-by-using-the-controller%3F)
 * [Does Super Mario Allstars work?](https://github.com/petrockblog/RetroPie-Setup/wiki/Does-Super-Mario-All-Stars-work%3F)
+* [Why do some emulators not show up in Emulation Station?](https://github.com/petrockblog/RetroPie-Setup/wiki/Why-do-some-emulators-not-show-up%3F)
 * [Which memory split should I use?](https://github.com/petrockblog/RetroPie-Setup/wiki/Which-memory-split-should-I-use%3F)
 * [Which emulators can currently be installed with the script?](https://github.com/petrockblog/RetroPie-Setup/wiki/Supported-Systems-Emulators)
 * [Why do I get a segmentation fault when running a PSX game?](https://github.com/petrockblog/RetroPie-Setup/wiki/Why-do-I-get-a-segmentation-fault-when-running-a-PSX-game%3F)
