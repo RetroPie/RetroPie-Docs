@@ -5,18 +5,22 @@ RetroArch is the official front end for the [Libretro](http://www.libretro.com/)
 ## Retroarch-Joyconfig
 Starting with RetroPie 3.0 there is a RetroPie menu in emulationstation. One of the options is to configure retroarch controls (you'll need a keyboard) plug in the controller you wish to configure and follow the steps.
 
-alternatively you can access the same function through the terminal:
+Alternatively you can access the same function through the terminal:
 
 Plug in one controller you wish to configure and in the terminal type:
 ```shell
-cd RetroPie-Setup
+cd ~/RetroPie-Setup
 sudo ./retropie_setup.sh
-Option 3 Setup
-Option 317 Configure Retroarch Controller
-
-Follow the on screen directions and your controller should now work on all libretro-core emulators- 
-including hotkeys (select+start to exit, select+right bumper to save, select+left bumper to load) 
 ```
+
+In the setup script select the following options:  
+* Option 3 - Setup
+* Option 317 - Configure Retroarch Controller
+
+Then follow the on screen directions and your controller should now work on all libretro-core emulators- 
+including hotkeys (`select`+`start` to exit, `select`+`R1` to save, `select`+`L1` to load) 
+
+## Config Hierarchy
 
 All RetroArch based emulators can be configured in the following way:
 
@@ -44,12 +48,12 @@ alt="N64 Configuration Video" width="100" height="100" border="10" /></a>   |   
 alt="N64 Configuration Video" width="100" height="100" border="10" /></a>  |  <a href="http://www.dailymotion.com/video/x2i0lsy_retropie-multiple-usb-controllers_videogames" target="_blank"><img src="https://lh4.ggpht.com/MFywT7QpnT6WA2vgh1Fb0bfaz2Si4BRCnWV53Hiu9lr1ZpE6tJ_mP7AmXzC7hy2wFFlD=w300" 
 alt="N64 Configuration Video" width="100" height="100" border="10" /></a> 
 
-
  [Testing Joystick](http://www.dailymotion.com/video/x2i0njr_retropie-testing-joystick-on-raspberry-pi_videogames) | [Setting up Controller](http://www.dailymotion.com/video/x2hudlt_retropie-configure-usb-controller-retroarch_videogames) | [Wireless PS3 Controller](http://www.dailymotion.com/video/x2i0s10_retropie-configuring-a-wireless-ps3-controller_videogames) | [Wireless Xbox Controller](http://www.dailymotion.com/video/x2i0ufc_retropie-xbox-wireless-controller-setup-on-raspberry-pi_videogames) | [Setting Up Multiple Controllers](http://www.dailymotion.com/video/x2i0lsy_retropie-multiple-usb-controllers_videogames) 
------ | ----- | ----- |----- | -----
+----- | ----- | ----- |----- | -----  
 ## Custom Retroarch Controls
 
 ## Example retroarch.cfg file for custom controls to override defaults
+**Note** the values below are for one person's controller, your values may differ.
 ```shell
 input_player1_joypad_index = 0
 input_player1_b_btn = 2
@@ -100,9 +104,9 @@ alt="N64 Configuration Video" width="150" height="150" border="10" /></a>
 
 ## Default joypad shortcuts:
 
-* 'select' + 'start' - exit game and return to Emulationstation
-* 'select' + 'B' - restart game
-* 'select' + 'X' - open RetroArch menu that allows you to save/load game state, make a screenshot etc.
+* `select` + `start` - exit game and return to Emulationstation
+* `select` + `B` - restart game
+* `select` + `X` - open RetroArch menu that allows you to save/load game state, make a screenshot etc.
 
 ***
 
