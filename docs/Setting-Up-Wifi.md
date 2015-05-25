@@ -16,6 +16,7 @@ Navigate to your wireless network and Press the `RIGHT` arrow to configure your 
 ![untitled drawing 2](https://cloud.githubusercontent.com/assets/10035308/7425946/1efa7e56-ef78-11e4-92fb-cf83a6b59e85.png)
 
 check automatically connect to this network (by pressing enter) and type in your wifi password where it says "key" press `F10` to save and then press `SHIFT+c` to connect and press `Q` to go back to emulationstation. 
+
 ## Method 2
 
 `sudo nano /etc/network/interfaces`
@@ -41,7 +42,7 @@ you can also add "wireless-power off" at the end (without quotations) if you hav
 
 on reboot (if configured correctly) your wifi will be working.
 
-## Method 2
+## Method 3
 
 **Taken from the Raspberry Pi Foundation [here](http://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md):**
 
