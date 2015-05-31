@@ -9,7 +9,7 @@ RetroPie comes included with multiple SNES emulators. If you have a Pi 2, the pr
 
 ## ROMS
 
-Accepted File Extensions: **.smc .sfc .fig .swc**
+Accepted File Extensions: **.zip .smc .sfc .fig .swc**
 
 Place your SNES ROMs in
 ```
