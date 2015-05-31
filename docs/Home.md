@@ -18,10 +18,10 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 
 ## Emulators
 * [3do](https://github.com/petrockblog/RetroPie-Setup/wiki/3do) [(lr-4do)](https://github.com/libretro/4do-libretro) (EXPERIMENTAL)
-* [Amiga](https://github.com/petrockblog/RetroPie-Setup/wiki/Amiga) [(UAE4ALL2)](https://github.com/joolswills/uae4all2)
-* [Amstrad CPC](https://github.com/petrockblog/RetroPie-Setup/wiki/Amstrad-CPC) [(CPC4Rpi)](http://gaming.capsule-sa.co.za/?gamepress_reviews=cpc4rpi-cpc-6128-emulator-for-raspberry-pi)
+* [Amiga](https://github.com/petrockblog/RetroPie-Setup/wiki/Amiga) [(UAE4ALL2)](https://github.com/joolswills/uae4all2), [(UAE4ARM)](https://github.com/Chips-fr/uae4arm-rpi/)
+* [Amstrad CPC](https://github.com/petrockblog/RetroPie-Setup/wiki/Amstrad-CPC) [(CPC4Rpi)](http://gaming.capsule-sa.co.za/?gamepress_reviews=cpc4rpi-cpc-6128-emulator-for-raspberry-pi), [(lr-cap32)](https://github.com/libretro/libretro-cap32.git)
 * [Apple II](https://github.com/petrockblog/RetroPie-Setup/wiki/Apple-II) [(Linapple)](http://sourceforge.net/projects/linapple/)
-* [Atari 2600](https://github.com/petrockblog/RetroPie-Setup/wiki/Atari-2600) [(Stella)](http://stella.sourceforge.net/) [(lr-stella)](https://github.com/libretro/stella-libretro)
+* [Atari 2600](https://github.com/petrockblog/RetroPie-Setup/wiki/Atari-2600) [(Stella)](http://stella.sourceforge.net/), [(lr-stella)](https://github.com/libretro/stella-libretro)
 * [Atari 5200, and Atari 8 bit series: 400, 800, 1200XL, 600XL, 800XL, 130XE, XEGS]      
  (https://github.com/petrockblog/RetroPie-Setup/wiki/Atari-800-and-5200) [(Atari800)](http://atari800.sourceforge.net/)
 * [Atari 7800](https://github.com/petrockblog/RetroPie-Setup/wiki/Atari-7800) [(lr-prosystem)](https://github.com/libretro/prosystem-libretro)
@@ -35,13 +35,14 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [Game Gear](https://github.com/petrockblog/RetroPie-Setup/wiki/Game-Gear) [(Osmose)](http://www.lgdb.org/emulator/osmose), [(lr-Genesis-Plus-GX)](https://github.com/libretro/Genesis-Plus-GX)
 * [Game Boy](https://github.com/petrockblog/RetroPie-Setup/wiki/Game-Boy) [(lr-gambatte)](https://github.com/libretro/gambatte-libretro)
 * [Game Boy Color](https://github.com/petrockblog/RetroPie-Setup/wiki/Game-Boy-Color) [(lr-gambatte)](https://github.com/libretro/gambatte-libretro)
-* [Game Boy Advance](https://github.com/petrockblog/RetroPie-Setup/wiki/Game-Boy-Advance) [(gpSP)](https://github.com/DPRCZ/gpsp), [(lr-gpSP)](https://github.com/libretro/gpsp), [(lr-vba-next)](https://github.com/libretro/vba-next)
+* [Game Boy Advance](https://github.com/petrockblog/RetroPie-Setup/wiki/Game-Boy-Advance) [(gpSP)](https://github.com/DPRCZ/gpsp), [(lr-gpSP)](https://github.com/libretro/gpsp), [(lr-vba-next)](https://github.com/libretro/vba-next),
+[(lr-mgba)](https://github.com/libretro/mgba)
 * [Intellivision](https://github.com/petrockblog/RetroPie-Setup/wiki/Intellivision) [(jzIntv)](http://spatula-city.org/~im14u2c/intv/)
 * [Macintosh](https://github.com/petrockblog/RetroPie-Setup/wiki/Macintosh) [(BasiliskII)](http://basilisk.cebix.net/)
 * [MAME](https://github.com/petrockblog/RetroPie-Setup/wiki/MAME) [(AdvanceMAME)](http://advancemame.sourceforge.net/), [(MAME4ALL-Pi)](http://sourceforge.net/projects/mame4allpi/), [(imame4all-libretro)](https://github.com/libretro/imame4all-libretro)
 * [MasterSystem](https://github.com/petrockblog/RetroPie-Setup/wiki/Master-System) [(lr-Genesis-Plus-GX)](https://github.com/libretro/Genesis-Plus-GX), [(lr-picodrive)](https://github.com/libretro/picodrive),  [(Osmose)](http://www.lgdb.org/emulator/osmose)
 * [MSX](https://github.com/petrockblog/RetroPie-Setup/wiki/MSX) [(lr-fmsx)](https://github.com/libretro/fmsx-libretro)
-* [Nintendo 64](https://github.com/petrockblog/RetroPie-Setup/wiki/Nintendo-64) [(Mupen64plus)](https://code.google.com/p/mupen64plus/) [(lr-mupen64plus)](https://github.com/libretro/mupen64plus-libretro)
+* [Nintendo 64](https://github.com/petrockblog/RetroPie-Setup/wiki/Nintendo-64) [(Mupen64plus)](https://code.google.com/p/mupen64plus/), [(lr-mupen64plus)](https://github.com/libretro/mupen64plus-libretro)
 * [Nintendo Entertainment System](https://github.com/petrockblog/RetroPie-Setup/wiki/Nintendo-Entertainment-System) [(lr-fceumm)](https://github.com/libretro/libretro-fceumm), [(lr-nestopia)](https://github.com/libretro/nestopia)
 * [Neo Geo](https://github.com/petrockblog/RetroPie-Setup/wiki/Neo-Geo) [(GnGeo-Pi)](https://github.com/ymartel06/GnGeo-Pi), [(PiFBA)](http://sourceforge.net/projects/pifba/), [(lr-fba)](https://github.com/libretro/fba-libretro)
 * [PC](https://github.com/petrockblog/RetroPie-Setup/wiki/PC) [(DOSBox)](http://www.dosbox.com/), [(rpix86)](http://rpix86.patrickaalto.com/)
@@ -54,7 +55,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
   * [Duke Nukem 3D](https://github.com/petrockblog/RetroPie-Setup/wiki/Duke-Nukem-3D) [(EDuke32)](http://www.eduke32.com/)
   * [Quake Series](https://github.com/petrockblog/RetroPie-Setup/wiki/Quake) [(lr-tyrquake)](https://github.com/libretro/tyrquake), [(DarkPlaces Quake Engine)](https://github.com/autonomous1/darkplacesrpi), [(ioQuake3)](https://github.com/raspberrypi/quake3)
   * [Descent 1 & 2](https://github.com/petrockblog/RetroPie-Setup/wiki/Descent) [(DXX-Rebirth)](http://www.dxx-rebirth.com/) (EXPERIMENTAL)
-* [PlayStation 1](https://github.com/petrockblog/RetroPie-Setup/wiki/Playstation-1) [(lr-pcsx-rearmed)](https://github.com/libretro/pcsx_rearmed) [(pcsx-rearmed)](https://github.com/notaz/pcsx_rearmed)
+* [PlayStation 1](https://github.com/petrockblog/RetroPie-Setup/wiki/Playstation-1) [(lr-pcsx-rearmed)](https://github.com/libretro/pcsx_rearmed), [(pcsx-rearmed)](https://github.com/notaz/pcsx_rearmed)
 * [ScummVM](https://github.com/petrockblog/RetroPie-Setup/wiki/ScummVM)
 * [Sega 32X](https://github.com/petrockblog/RetroPie-Setup/wiki/Sega-32X) [(lr-picodrive)](https://github.com/libretro/picodrive)
 * [Sega CD](https://github.com/petrockblog/RetroPie-Setup/wiki/Sega-CD) [(lr-picodrive)](https://github.com/libretro/picodrive)
@@ -65,7 +66,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [Videopac or Odyssey2](https://github.com/petrockblog/RetroPie-Setup/wiki/VideoPac-or-Odyssey-2) [(lr-o2em)](https://github.com/libretro/libretro-o2em)
 * [Virtual Boy](https://github.com/petrockblog/RetroPie-Setup/wiki/Virtual-Boy) [(lr-beetle-vb)](https://github.com/libretro/beetle-vb-libretro) (EXPERIMENTAL)
 * [Zmachine](https://github.com/petrockblog/RetroPie-Setup/wiki/Zmachine) [(Frotz)](http://frotz.sourceforge.net/)
-* [ZX Spectrum](https://github.com/petrockblog/RetroPie-Setup/wiki/ZX-Spectrum) [(FBZX)](http://www.rastersoft.com/fbzx.html), [(Fuse)](http://fuse-emulator.sourceforge.net/)
+* [ZX Spectrum](https://github.com/petrockblog/RetroPie-Setup/wiki/ZX-Spectrum) [(FBZX)](http://www.rastersoft.com/fbzx.html), [(Fuse)](http://fuse-emulator.sourceforge.net/), [(lr-fuse)](https://github.com/libretro/fuse-libretro)
 
 ## Troubleshooting & Advanced Configuration
 * [Use Your Smartphone as a Gamepad!](https://github.com/petrockblog/RetroPie-Setup/wiki/Virtual-Gamepad)
