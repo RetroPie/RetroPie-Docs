@@ -45,5 +45,6 @@
 * [Vectrex](https://github.com/petrockblog/RetroPie-Setup/wiki/Vectrex)
 * [Videopac or Odyssey2](https://github.com/petrockblog/RetroPie-Setup/wiki/VideoPac-or-Odyssey-2)
 * [Virtual Boy](https://github.com/petrockblog/RetroPie-Setup/wiki/Virtual-Boy)
+* [WonderSwan (Color)](https://github.com/petrockblog/RetroPie-Setup/wiki/WonderSwan)
 * [Zmachine](https://github.com/petrockblog/RetroPie-Setup/wiki/Zmachine)
 * [ZX Spectrum](https://github.com/petrockblog/RetroPie-Setup/wiki/ZX-Spectrum)
