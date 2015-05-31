@@ -23,6 +23,7 @@
 * [Master System](https://github.com/petrockblog/RetroPie-Setup/wiki/Master-System)
 * [MSX](https://github.com/petrockblog/RetroPie-Setup/wiki/MSX)
 * [Nintendo 64](https://github.com/petrockblog/RetroPie-Setup/wiki/Nintendo-64)
+* [Nintendo DS](https://github.com/petrockblog/RetroPie-Setup/wiki/Nintendo-DS)
 * [Neo Geo](https://github.com/petrockblog/RetroPie-Setup/wiki/Neo-Geo)
 * [Neo Geo Pocket (Color)](https://github.com/petrockblog/RetroPie-Setup/wiki/Neo-Geo-Pocket)
 * [Nintendo Entertainment System](https://github.com/petrockblog/RetroPie-Setup/wiki/Nintendo-Entertainment-System)
