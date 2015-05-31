@@ -3,9 +3,9 @@
 _The Super Nintendo Entertainment System (or SNES) was a 4th generation video game console released by Nintendo in 1991. It is one of the most popular consoles._
 ***
 
-## Emulators: [PiSNES](http://sourceforge.net/projects/pisnes/), [snes9x-rpi](https://github.com/joolswills/snes9x-rpi), [libretro-armsnes](https://github.com/rmaz/ARMSNES-libretro), [libretro-catsfc](https://github.com/libretro/CATSFC-libretro), [libretro-pocketsnes](https://github.com/libretro/pocketsnes-libretro), [libretro-snes9x-next](https://github.com/libretro/snes9x-next)
+## Emulators: [libretro-snes9x-next](https://github.com/libretro/snes9x-next) [PiSNES](http://sourceforge.net/projects/pisnes/), [snes9x-rpi](https://github.com/joolswills/snes9x-rpi), [libretro-armsnes](https://github.com/rmaz/ARMSNES-libretro), [libretro-catsfc](https://github.com/libretro/CATSFC-libretro), [libretro-pocketsnes](https://github.com/libretro/pocketsnes-libretro)
 
-Yes- there are a bajillion SNES emulators. If you have a Pi 2, the preference is **lr-SNES9x-next**
+RetroPie comes included with multiple SNES emulators. If you have a Pi 2, the preference is **lr-SNES9x-next** due to better performance and sound emulation. Pocketsnes is recommended for Super FX chip games.
 
 ## ROMS
 
