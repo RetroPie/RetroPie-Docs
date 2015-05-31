@@ -4,7 +4,7 @@
 _The PlayStation 1 is a 5th generation video game console released by Sony in 1994._
 
 ***
-## Emulator: [libretro-pcsx-rearmed](https://github.com/libretro/pcsx_rearmed)
+## Emulators: [libretro-pcsx-rearmed](https://github.com/libretro/pcsx_rearmed), [pcsx-rearmed](https://github.com/notaz/pcsx_rearmed)
 
 ## ROMS
 Accepted File Extensions: **.bin .cue .img .mdf**
