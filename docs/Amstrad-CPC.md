@@ -14,6 +14,8 @@ Place your Amstrad CPC ROMs in
 ```
 ## Controls
 
+## CPC4Rpi
+
 If you are open into a ROM from EmulationStation and it opens to a blue screen you can type
 ```
 CAT
