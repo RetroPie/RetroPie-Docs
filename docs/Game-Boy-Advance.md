@@ -3,8 +3,8 @@
 _The Game Boy Advance is a 32 bit handheld video game console released by Nintendo in 2001._
 
 ***
-## Emulators: [gpSP](https://github.com/DPRCZ/gpsp), [libretro-gpSP](https://github.com/libretro/gpsp), [libretro-vba-next](https://github.com/libretro/vba-next)
-GPSP has separate controls than lr-gpSP and lr-vba-next. lr-gpSP and lr-vba-next both utilise RetroArch configurations (see below under controls)
+## Emulators: [gpSP](https://github.com/DPRCZ/gpsp), [libretro-gpSP](https://github.com/libretro/gpsp), [libretro-vba-next](https://github.com/libretro/vba-next), [libretro-mgba](https://github.com/libretro/mgba)
+GPSP has separate controls than lr-gpSP, lr-vba-next, and lr-mgba. lr-gpSP, lr-vba-next, and lr-mgba both utilise RetroArch configurations (see below under controls)
 
 ## ROMS
 Accepted File Extensions: **.gba**
@@ -31,9 +31,9 @@ The newer versions have gba_bios.bin symlinked from the gpSp source folder to wo
 
 There are two ways to configure your Game Boy Advance controls depending on the emulator.
 
-### lr-gpSP and lr-vba-next
+### lr-gpSP, lr-vba-next, and lr-mgba
 
-lr-gpSP and lr-vba-next utilise Retroarch configurations
+lr-gpSP, lr-vba-next, and lr-mgba utilise Retroarch configurations
 
 Add custom retroarch controls to the retroarch.cfg file in
 ```shell
