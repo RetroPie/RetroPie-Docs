@@ -6,11 +6,13 @@ _Descent and Descent 2 are first person shooter games that were developed in the
 
 ***
 
-Descent is currently experimental and may have some issues with sound. It can be installed from the experimental menu
+Descent is currently experimental and may have some issues with sound. It can be installed from the experimental menu.
+
 
 ## Descent 1
 ![](http://upload.wikimedia.org/wikipedia/en/5/5f/Descent_cover.png)
 ### Emulator: [D1X-Rebirth](http://www.dxx-rebirth.com/)
+Go [[here|DXX-Rebirth#descent-1]] for further technical details of the DX1-Rebirth setup.
 
 ## Controls
 Action | Key
@@ -39,6 +41,7 @@ Reverse  	| Z
 ## Descent 2
 ![](http://upload.wikimedia.org/wikipedia/en/2/27/DescentII_DOS.jpg)
 ### Emulator: [D2X-Rebirth](http://www.dxx-rebirth.com/)
+Go [[here|DXX-Rebirth#descent-2]] for further technical details of the DX2-Rebirth setup.
 
 ## Controls
 Action | Key
