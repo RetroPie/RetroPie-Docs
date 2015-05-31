@@ -34,6 +34,7 @@
   * [DOOM](https://github.com/petrockblog/RetroPie-Setup/wiki/Doom)
   * [Duke Nukem 3D](https://github.com/petrockblog/RetroPie-Setup/wiki/Duke-Nukem-3D)
   * [Quake Series](https://github.com/petrockblog/RetroPie-Setup/wiki/Quake)
+  * [Descent](https://github.com/petrockblog/RetroPie-Setup/wiki/Descent)
 * [PlayStation 1](https://github.com/petrockblog/RetroPie-Setup/wiki/Playstation-1)
 * [ScummVM](https://github.com/petrockblog/RetroPie-Setup/wiki/ScummVM)
 * [Sega 32X](https://github.com/petrockblog/RetroPie-Setup/wiki/Sega-32X)
