@@ -43,6 +43,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [MasterSystem](https://github.com/petrockblog/RetroPie-Setup/wiki/Master-System) [(lr-Genesis-Plus-GX)](https://github.com/libretro/Genesis-Plus-GX), [(lr-picodrive)](https://github.com/libretro/picodrive),  [(Osmose)](http://www.lgdb.org/emulator/osmose)
 * [MSX](https://github.com/petrockblog/RetroPie-Setup/wiki/MSX) [(lr-fmsx)](https://github.com/libretro/fmsx-libretro)
 * [Nintendo 64](https://github.com/petrockblog/RetroPie-Setup/wiki/Nintendo-64) [(Mupen64plus)](https://code.google.com/p/mupen64plus/), [(lr-mupen64plus)](https://github.com/libretro/mupen64plus-libretro)
+* [Nintendo DS](https://github.com/petrockblog/RetroPie-Setup/wiki/Nintendo-DS) [(lr-desmume)](https://github.com/libretro/desmume) (EXPERIMENTAL)
 * [Nintendo Entertainment System](https://github.com/petrockblog/RetroPie-Setup/wiki/Nintendo-Entertainment-System) [(lr-fceumm)](https://github.com/libretro/libretro-fceumm), [(lr-nestopia)](https://github.com/libretro/nestopia)
 * [Neo Geo](https://github.com/petrockblog/RetroPie-Setup/wiki/Neo-Geo) [(GnGeo-Pi)](https://github.com/ymartel06/GnGeo-Pi), [(PiFBA)](http://sourceforge.net/projects/pifba/), [(lr-fba)](https://github.com/libretro/fba-libretro)
 * [Neo Geo Pocket (Color)](https://github.com/petrockblog/RetroPie-Setup/wiki/Neo-Geo-Pocket) [(lr-mednafen-ngp)](https://github.com/libretro/beetle-ngp-libretro.git) (EXPERIMENTAL)
