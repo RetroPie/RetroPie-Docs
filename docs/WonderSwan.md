@@ -19,9 +19,6 @@ Place your WonderSwan ROMs in
 ```
 
 ## Controls
-You will configure controls differently depending on which emulator you use:
-
-### Libretro-mednafen-wswan
 
 Libretro-mednafen-wswan utilises Retroarch configurations
 
