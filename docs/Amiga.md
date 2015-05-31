@@ -6,7 +6,7 @@ _The Amiga was a family of personal computers released by Commodore in the 1980'
 ***
 
 
-## Emulator: [UAE4ALL2](https://github.com/joolswills/uae4all2)
+## Emulators: [UAE4ALL2](https://github.com/joolswills/uae4all2), [UAE4ARM](https://github.com/Chips-fr/uae4arm-rpi/)
 
 RetroPie now has a brand new [UAE4ALL](https://github.com/joolswills/uae4all2) emulator - which works much better than the previous one and many games are playable. On a Pi 2, most OCS/ECS games run at full speed. 
 
