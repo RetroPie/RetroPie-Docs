@@ -65,6 +65,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [Vectrex](https://github.com/petrockblog/RetroPie-Setup/wiki/Vectrex) [(lr-vecx)](https://github.com/libretro/libretro-vecx)
 * [Videopac or Odyssey2](https://github.com/petrockblog/RetroPie-Setup/wiki/VideoPac-or-Odyssey-2) [(lr-o2em)](https://github.com/libretro/libretro-o2em)
 * [Virtual Boy](https://github.com/petrockblog/RetroPie-Setup/wiki/Virtual-Boy) [(lr-beetle-vb)](https://github.com/libretro/beetle-vb-libretro) (EXPERIMENTAL)
+* [WonderSwan (Color)](https://github.com/petrockblog/RetroPie-Setup/wiki/WonderSwan) [(lr-mednafen-wswan)](https://github.com/libretro/beetle-wswan-libretro) (EXPERIMENTAL)
 * [Zmachine](https://github.com/petrockblog/RetroPie-Setup/wiki/Zmachine) [(Frotz)](http://frotz.sourceforge.net/)
 * [ZX Spectrum](https://github.com/petrockblog/RetroPie-Setup/wiki/ZX-Spectrum) [(FBZX)](http://www.rastersoft.com/fbzx.html), [(Fuse)](http://fuse-emulator.sourceforge.net/), [(lr-fuse)](https://github.com/libretro/fuse-libretro)
 
