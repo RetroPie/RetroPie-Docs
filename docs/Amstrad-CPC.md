@@ -2,7 +2,7 @@
 ***
 _The Amstrad CPC (short for Colour Personal Computer) is a series of 8-bit home computers produced by Amstrad between 1984 and 1990._
 ***
-## Emulator: [CPC4Rpi](http://gaming.capsule-sa.co.za/?gamepress_reviews=cpc4rpi-cpc-6128-emulator-for-raspberry-pi) [libretro-caprice32](https://github.com/libretro/libretro-cap32.git)
+## Emulators: [CPC4Rpi](http://gaming.capsule-sa.co.za/?gamepress_reviews=cpc4rpi-cpc-6128-emulator-for-raspberry-pi), [libretro-caprice32](https://github.com/libretro/libretro-cap32.git)
 
 ## ROMS
 
