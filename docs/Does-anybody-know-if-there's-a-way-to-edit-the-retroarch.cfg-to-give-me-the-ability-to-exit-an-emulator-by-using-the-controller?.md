@@ -33,3 +33,10 @@ and when you press the PS button, your game will exit gracefully to the main Emu
 Second, the following line: 
             `sudo ./retroarch-joyconfig -j 0 >> /opt/retropie/configs/all/retroarch.cfg`
 will automatically define the button settings for the first controller plugged in (Controller / joystick 0) and append the settings to your retroarch.cfg file. If you screw up during the mapping it's not a big deal, just remember that with the double greater than >> every time you run the command the settings will be appended to the pre-existing settings you had. Easiest way to do this is to use an editor like nano to delete the last few lines in retroarch.cfg that apply to your controller, then re-run the joyconfig script to remap.
+
+In order to get the xbox home button working as the exit emulator button, I added the following lines to the very end of the retroarch.cfg file, below the button mappings for each controller.
+        
+        input_enable_hotkey_btn = "10"
+        input_exit_emulator_btn = "10"
+
+The first line sets a hotkey button, which was mapped to the home button. The second line sets which button is used as the "exit emulation" hotkey, however, since we matched it to the home button as well, it automatically exits out back to Emulation Station.
