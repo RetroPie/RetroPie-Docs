@@ -1,4 +1,4 @@
-![RetroPie](https://lh4.googleusercontent.com/-l146esBcjj0/VQ9adgm0ZJI/AAAAAAAAAPE/wIqh0Q4wwS0/w638-h103-no/RetroPie%2BCenter.png)
+![RetroPie](http://blog.petrockblock.com/wp-content/uploads/2015/12/RetroPie_Logo_BW2.png)
 ***
 
 
@@ -6,7 +6,7 @@ Welcome to the RetroPie-Setup wiki!
 
 This wiki is supposed to be created by the users of the RetroPie setup script for the users of the script. Everyone can contribute to it!
 
-## Latest News: [RetroPie 3.0 BETA SD Image Released!](http://blog.petrockblock.com/retropie/retropie-downloads/) [(see changelog)](https://github.com/petrockblog/RetroPie-Setup/wiki/Changelogs)
+## Latest News: [RetroPie 3.0 BETA 3 SD Image Released!](http://blog.petrockblock.com/retropie/retropie-downloads/) [(see changelog)](https://github.com/petrockblog/RetroPie-Setup/wiki/Changelogs)
 
 
 ## Getting Started
