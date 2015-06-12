@@ -1,6 +1,6 @@
 # CHANGELOGS
 
-This page is a list of all of the changelogs for each version of RetroPie. For a complete list of all commits to the source code see [here:](https://web.archive.org/web/20140617163916/https://github.com/petrockblog/RetroPie-Setup/commits/master)  
+This page is a list of all of the changelogs for each version of RetroPie. For a complete list of all commits to the source code see [here:](https://github.com/petrockblog/RetroPie-Setup/commits/master)  
 
 ### Version 3.0.0 BETA 3: (June, 10, 2015)
 * Integrated controls configuration for EmulationStation and RetroArch – On first start EmulationStation will ask for controls to be configured, and will then also configure RetroArch based on your choices. Note that there will be a delay after selecting OK whilst this is done – this will be improved later to give feedback so it doesn’t look as though EmulationStation has frozen.
