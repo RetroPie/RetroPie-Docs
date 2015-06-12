@@ -13,6 +13,7 @@ Audio is choppy and not great, and degrades the longer the emulator is in use.  
 * San Francisco Rush 2049 = Totally playable 1player, full speed most times (except particle effects)!  Split-screen multiplayer bounds rendered incorrectly :(
 * Marvel Vs Capcom 1 = Totally playable multiplayer, full speed!
 * Marvel Vs Capcom 2 = Totally playable multiplayer, almost full speed!
+* Coaster Works = Totally playable except when utilizing 4-split view to edit a track (split-screen bounds rendered incorrectly, all overlaid)
 
 
 #### Games not working so well
