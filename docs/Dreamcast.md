@@ -4,7 +4,14 @@ _The Sega Dreamcast is a 6th generation home video game console released by Sega
 ***
 ## Emulator: [Reicast](https://github.com/reicast/reicast-emulator) (NOTE: EXPERIMENTAL!)
 
-You'll download this from the experimental section of the setup script. it is very laggy and buggy. Pi 2 is highly recommended.
+You'll download this from the experimental section of the setup script. it is very laggy and buggy, but some games work great (See small list below). Pi 2 is required.
+
+### Game compatibility list
+
+San Francisco Rush 2049 = Totally playable 1player, full speed most times (except particle effects)!  Split-screen multiplayer bounds rendered incorrectly :(
+Marvel Vs Capcom 1 = Totally playable multiplayer, full speed!
+Marvel Vs Capcom 2 = Totally playable multiplayer, almost full speed!
+
 
 ## ROMS
 
@@ -21,11 +28,35 @@ The BIOS files needed are: **dc_boot.bin, dc_flash.bin**
 
 Place your BIOS files in
 ```
-/opt/retropie/emulators/reicast/data
+/home/pi/.reicast/data/
 ```
 
 ## Controls
 
-Currently controls are hard-coded to the source code so either your controller works or it doesn't. There isn't currently any keyboard support. 
+Controls can be mapped via the `/home/pi/.reicast/emu.cfg` file.  An example mapping for a PS3 controller is below for reference:
 
-Press ctrl+c to exit- that is the only way right now to quit the emulator.
+```
+[PLAYSTATION(R)3 Controller]
+button.0=Btn_Z
+button.1=Btn_C
+button.2=Btn_D
+button.3=Btn_Start
+button.4=DPad_Up
+button.5=DPad_Right
+button.6=DPad_Down
+button.7=DPad_Left
+button.8=Axis_LT
+button.9=Axis_RT
+button.10=DPad2_Left
+button.11=DPad2_Right
+button.12=Btn_Y
+button.13=Btn_B
+button.14=Btn_A
+button.15=Btn_X
+button.16=Quit
+axis.0=Axis_X
+axis.1=Axis_Y
+```
+
+Press ctrl+c to exit- Or map a Quit button as shown above :D 
+
