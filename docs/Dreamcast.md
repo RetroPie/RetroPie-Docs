@@ -40,6 +40,10 @@ Place your BIOS files in
 /home/pi/.reicast/data/
 ```
 
+## VMUs
+
+VMUs are stored as .BIN files under `/home/pi/.reicast/`, and will be automatically created the first time you run Reicast without VMU files.  On occasion, these VMUs do not get formatted quite right, and the Dreamcast can't save or load data from them.  They just need to be reformatted -- run the SYSTEMMANAGER entry in the EmulationStation Dreamcast menu (coming soon from [Pull Request #862](https://github.com/petrockblog/RetroPie-Setup/pull/862)) and / or see [this post](http://blog.petrockblock.com/forums/topic/configuring-controllers-in-reicast/page/2/#post-99715) for details.
+
 ## Controls
 
 Controls can be mapped via the `/home/pi/.reicast/emu.cfg` file.  An example mapping for a PS3 controller is below for reference:
