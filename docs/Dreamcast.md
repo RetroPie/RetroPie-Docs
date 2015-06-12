@@ -4,13 +4,21 @@ _The Sega Dreamcast is a 6th generation home video game console released by Sega
 ***
 ## Emulator: [Reicast](https://github.com/reicast/reicast-emulator) (NOTE: EXPERIMENTAL!)
 
-You'll download this from the experimental section of the setup script. it is very laggy and buggy, but some games work great (See small list below). Pi 2 is required.
+You'll download this from the experimental section of the setup script. it is very laggy and buggy, but some games work great (See small list below). Pi 2 is required.  
+
+Audio is choppy and not great, and degrades the longer the emulator is in use.  Restarting the emulator (and ultimately the Pi) may become a good idea after a couple hours of gameplay.  (There is a memory leak somewhere in the Reicast code)
 
 ### Game compatibility list
 
-San Francisco Rush 2049 = Totally playable 1player, full speed most times (except particle effects)!  Split-screen multiplayer bounds rendered incorrectly :(
-Marvel Vs Capcom 1 = Totally playable multiplayer, full speed!
-Marvel Vs Capcom 2 = Totally playable multiplayer, almost full speed!
+* San Francisco Rush 2049 = Totally playable 1player, full speed most times (except particle effects)!  Split-screen multiplayer bounds rendered incorrectly :(
+* Marvel Vs Capcom 1 = Totally playable multiplayer, full speed!
+* Marvel Vs Capcom 2 = Totally playable multiplayer, almost full speed!
+
+
+#### Games not working so well
+
+* Gauntlet Legends = Not playable, rendering blanks out every other frame and may cause epilepsy; wouldn't recommend it just yet
+
 
 
 ## ROMS
