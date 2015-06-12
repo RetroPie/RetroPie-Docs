@@ -96,7 +96,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [Wolfenstein 3D](https://github.com/petrockblog/RetroPie-Setup/wiki/Wolfenstein-3D-Troubleshooting)
 
 ## FAQ
-
+* [Why can't I login as root anymore?](https://github.com/petrockblog/RetroPie-Setup/wiki/Root-Password)
 * [How would I start from command line, say, the SNES emulator by itself?](https://github.com/petrockblog/RetroPie-Setup/wiki/How-would-I-start-from-command-line,-say,-the-SNES-emulator-by-itself%3F)
 * [I was wondering is there any way of starting Emulationstation on boot instead of going into the terminal and manually starting it.](https://github.com/petrockblog/RetroPie-Setup/wiki/I-was-wondering-is-there-any-way-of-starting-Emulationstation-on-boot-instead-of-going-into-the-terminal-and-manually-starting-it.)
 * [Has anyone figured out how to insert coins in imame4all yet?](https://github.com/petrockblog/RetroPie-Setup/wiki/Has-anyone-figured-out-how-to-insert-coins-in-imame4all-yet%3F)
