@@ -1,6 +1,6 @@
 ## Video output
 
-These tables show the compatibility of the RetroPie installatoin for HDMI and composite video outputs with and without using the Dispmanx library. Possible values are "YES", "NO", and "?" (i.e., "unknown").
+These tables show the compatibility of the RetroPie installation for HDMI and composite video outputs with and without using the Dispmanx library. Possible values are "YES", "NO", and "?" (i.e., "unknown").
 
 ### HDMI Without Using Dispmanx Library
 
