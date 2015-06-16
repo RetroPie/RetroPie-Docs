@@ -3,7 +3,7 @@
 ***
 _The Sega Master System was a 4th generation video game console released by Sega in 1987._
 ***
-## Emulators: [Osmose](http://www.lgdb.org/emulator/osmose), [libretro-Genesis-Plus-GX](https://github.com/libretro/Genesis-Plus-GX), [libretro-picodrive](https://github.com/libretro/picodrive)
+## Emulators: [Osmose](https://github.com/RetroPie/osmose-rpi), [libretro-Genesis-Plus-GX](https://github.com/libretro/Genesis-Plus-GX), [libretro-picodrive](https://github.com/libretro/picodrive)
 Osmose has it's own configurations whereas lr-Genesis-Plus-GX and lr-picodrive utilise RetroArch configurations
 
 ## ROMS
