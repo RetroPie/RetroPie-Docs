@@ -2,7 +2,7 @@
 ***
 _Final Burn Alpha is a Multiple Arcade Emulator most popular for emulating Neo-Geo, Capcom, Konami, and Cave games. It is developed by the final burn team and originated from FinalBurn by Dave_
 ***
-## Emulators: [PiFBA](http://sourceforge.net/projects/pifba/), [fba-libretro](https://github.com/libretro/fba-libretro)
+## Emulators: [PiFBA](https://github.com/RetroPie/pifba), [fba-libretro](https://github.com/libretro/fba-libretro)
 
 Fba-libretro is a port of PiFBA and unlike PiFBA, fba-libretro uses RetroArch configurations.
 
