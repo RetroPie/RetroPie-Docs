@@ -20,3 +20,4 @@ Add custom RetroArch controls to the retroarch.cfg file in:
 /opt/retropie/configs/atarilynx/retroarch.cfg
 ```
 For more information on custom RetroArch controls see: [RetroArch Configuration](https://github.com/petrockblog/RetroPie-Setup/wiki/RetroArch-Configuration)
+![atari_lynx](https://cloud.githubusercontent.com/assets/10035308/8176465/8d4a4c74-13b8-11e5-9956-c059ac3fc9e1.png)
