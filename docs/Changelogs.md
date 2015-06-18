@@ -4,9 +4,9 @@ This page is a list of all of the changelogs for each version of RetroPie. For a
 
 ### Version 3.0.0 BETA 4: (June, 18, 2015)
 
-Work around issue with RetroArch GUI not accepting input/freezing.
-Fixed up RetroArch control configuration via our new integrated input configuration.
-Moved RetroArch joypad cofigurations to /opt/retropie/configs/all/retroarch-joypads
+* Work around issue with RetroArch GUI not accepting input/freezing.
+* Fixed up RetroArch control configuration via our new integrated input configuration.
+* Moved RetroArch joypad cofigurations to /opt/retropie/configs/all/retroarch-joypads
 
 ### Version 3.0.0 BETA 3: (June, 10, 2015)
 * Integrated controls configuration for EmulationStation and RetroArch – On first start EmulationStation will ask for controls to be configured, and will then also configure RetroArch based on your choices. Note that there will be a delay after selecting OK whilst this is done – this will be improved later to give feedback so it doesn’t look as though EmulationStation has frozen.
