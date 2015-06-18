@@ -32,4 +32,4 @@ Add custom retroarch controls to the retroarch.cfg file in
 ```
 For more information on custom RetroArch controls see: [RetroArch Configuration](https://github.com/petrockblog/RetroPie-Setup/wiki/RetroArch-Configuration)
 
-![3do](https://cloud.githubusercontent.com/assets/10035308/7448854/9357ed76-f1e2-11e4-9c10-5aa9689cd121.png)
+![3dodiagram](https://cloud.githubusercontent.com/assets/10035308/8237801/0ae4d6fc-15af-11e5-803f-8ba408d48362.png)
