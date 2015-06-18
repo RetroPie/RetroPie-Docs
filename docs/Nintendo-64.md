@@ -24,7 +24,7 @@ Mupen64plus-libretro utilises RetroArch configurations
 Add custom retroarch controls to the retroarch.cfg file in
 
 ```
-/opt/retropie/configs/N64/retroarch.cfg
+/opt/retropie/configs/n64/retroarch.cfg
 ```
 For more information on custom RetroArch controls see: [RetroArch Configuration](https://github.com/petrockblog/RetroPie-Setup/wiki/RetroArch-Configuration)
 
