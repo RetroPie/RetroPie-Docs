@@ -34,9 +34,9 @@ For more information on custom RetroArch controls see: [RetroArch Configuration]
 
 There are two main configuration files that can be modified located at:
 ```
-/opt/retropie/configs/N64/mupen64plus.cfg
+/opt/retropie/configs/n64/mupen64plus.cfg
 and
-/opt/retropie/configs/N64/InputAutoCfg.ini
+/opt/retropie/configs/n64/InputAutoCfg.ini
 ```
 ## Video Tutorials
 
