@@ -23,3 +23,5 @@ Add custom retroarch controls to the retroarch.cfg file in
 /opt/retropie/configs/virtualboy/retroarch.cfg
 ```
 For more information on custom RetroArch controls see: [RetroArch Configuration](https://github.com/petrockblog/RetroPie-Setup/wiki/RetroArch-Configuration)
+
+![virtualboydiagram](https://cloud.githubusercontent.com/assets/10035308/8246349/6552ef7a-15fa-11e5-9a78-1800b51cccc5.png)
