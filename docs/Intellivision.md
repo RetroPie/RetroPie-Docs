@@ -105,3 +105,5 @@ Fine-grain directional pad inputs:
       / | \
     Z   X   C
 ```
+
+![intellivision](https://cloud.githubusercontent.com/assets/10035308/8246393/3e98c8c2-15fb-11e5-9398-3f5abd60361b.png)
