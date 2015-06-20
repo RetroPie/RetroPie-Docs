@@ -16,6 +16,7 @@ This page is a list of all of the changelogs for each version of RetroPie. For a
 * Dosbox bug fixes / Ability to launch custom shell scripts.
 * Wifi configuration under RetroPie menu.
 * PS3 controller setup improvements
+* Disabled root password by default
 * Various other fixes / improvements.
 
 ### Version 3.0.0 BETA 2: (April 4, 2015)
