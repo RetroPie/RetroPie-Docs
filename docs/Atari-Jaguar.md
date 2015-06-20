@@ -27,3 +27,5 @@ Add custom retroarch controls to the retroarch.cfg file in
 /opt/retropie/configs/atarijaguar/retroarch.cfg
 ```
 For more information on custom RetroArch controls see: [RetroArch Configuration](https://github.com/petrockblog/RetroPie-Setup/wiki/RetroArch-Configuration)
+
+![atarijaguardiagram](https://cloud.githubusercontent.com/assets/10035308/8268598/4a5d1868-1748-11e5-994d-e0d508d8877b.png)
