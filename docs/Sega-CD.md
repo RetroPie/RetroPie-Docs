@@ -46,3 +46,7 @@ For more information on custom RetroArch controls see: [RetroArch Configuration]
 ### 6 Button Genesis/MegaDrive Controller
 
 ![genesis6btn](https://cloud.githubusercontent.com/assets/10035308/7336429/7e524110-ebbb-11e4-8777-05a824384d34.png)
+
+### 6 Button Genesis/MegaDrive ArcadePad Controller
+
+![megadrive6btnarcadepaddiagram](https://cloud.githubusercontent.com/assets/10035308/8268483/8b1b6dae-1744-11e5-9407-df58e2a81aad.png)
