@@ -17,6 +17,8 @@ Navigate to your wireless network and Press the `RIGHT` arrow to configure your 
 
 check automatically connect to this network (by pressing enter) and type in your wifi password where it says "key" press `F10` to save and then press `SHIFT+c` to connect and press `Q` to go back to emulationstation. 
 
+There are some noted issues with the daemon preventing CPU speed scaling, so if that's the case you can remove wicd-curses by typing `sudo apt-get remove wicd-curses` and proceed to setup your wifi using method 2 or 3.
+
 ## Method 2
 
 `sudo nano /etc/network/interfaces`
