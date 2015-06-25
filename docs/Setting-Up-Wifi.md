@@ -33,7 +33,7 @@ iface wlan0 inet dhcp
    wpa-ssid "Your Wireless Network Name"
    wpa-psk "Your Wireless Network Password"
 ```
-you can also add "wireless-power off" at the end (without quotations) if you have issues with your wifi dongle turning off and on a lot and not being able to maintain a connection.
+you can also add `wireless-power off` at the end if you have issues with your wifi dongle turning off and on a lot and not being able to maintain a connection.
 
 `sudo reboot`
 
