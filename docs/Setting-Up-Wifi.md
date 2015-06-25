@@ -24,8 +24,6 @@ check automatically connect to this network (by pressing enter) and type in your
 Then change the file to look like this:
 
 ```shell
-sudo nano /etc/network/interfaces
-
 Configuration File:
 auto lo
 iface lo inet loopback
