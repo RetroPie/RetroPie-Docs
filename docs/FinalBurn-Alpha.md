@@ -40,7 +40,7 @@ Total Games Emulated: 3369 (includes clones etc..)
 For RetroPie 3.0 FBA-Libretro place your ROMS in
 ```shell
 /home/pi/RetroPie/roms/fba
-
+```
 you can also place your roms in
 
 ```shell
