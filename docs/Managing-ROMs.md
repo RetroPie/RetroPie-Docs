@@ -96,7 +96,7 @@ In 3.0.0 some emulators share directories, so you need to choose which FBA, NeoG
 So you can have 1 romset for each of these (mame4all, FBA, NeoGeo, advmame)
 
 See [here](http://smartretro.co.uk/forums/viewtopic.php?f=3&t=68) for RetroPie 2.6
-### [FBA](http://sourceforge.net/projects/pifba/)
+### [PiFBA](http://sourceforge.net/projects/pifba/)
 ```shell
 Roms Dir: /home/pi/RetroPie/roms/fba
 Binary Dir: /opt/retropie/emulators/pifba
