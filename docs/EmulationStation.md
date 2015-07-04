@@ -23,8 +23,8 @@ A great deal of information can be found in EmulationStation's README.md and THE
 
 ### EmulationStation isn't detecting my ROMs!
 
-* Are they in the right folders? *Remember, paths are case sensitive*. You can check what folders ES is using with: `nano ~/.emulationstation/es_systems.cfg`.
-* Is ES looking for the right file extension? *Remember, the extension is case sensitive*. You can check what format ES is searching with: `nano ~/.emulationstation/es_systems.cfg`. 
+* Are they in the right folders? *Remember, paths are case sensitive*. You can check what folders ES is using with: `nano /etc/emulationstation/es_systems.cfg`.
+* Is ES looking for the right file extension? *Remember, the extension is case sensitive*. You can check what format ES is searching with: `nano /etc/emulationstation/es_systems.cfg`. 
 * Are your ROMs in a compressed format? *EmulationStation does not search inside zip files*, though some emulators (like MAME) will expect a zip file.
 
 
