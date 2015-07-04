@@ -24,7 +24,7 @@ Audio is choppy and not great, and degrades the longer the emulator is in use.  
 
 ## ROMS
 
-Accepted File Extensions: **.cdi** 
+Accepted File Extensions: **.cdi .gdi** 
 
 Place your Dreamcast ROMs in
 ```
