@@ -228,4 +228,6 @@ Dat File: [advmame-0.94-RetroPie-260.7z](http://smartretro.co.uk/forums/download
 
 Dat File: [advmame12-106.7z](http://smartretro.co.uk/forums/download/file.php?id=23&sid=51593df3da1e20af98e425975a9e6f98)
 
+[**AdvMame 1.2 COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1RapyxChe2BMOfbX-FsCup9SXGxvS1WmXAofwaTJtmxc/edit?usp=sharing)  feel free to contribute to the list.
+
 **List courtesy of Floob** 
