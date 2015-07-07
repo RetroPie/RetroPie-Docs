@@ -110,6 +110,10 @@ Romsets emulated: 684 (no clones)
 
 Dat File: [fba_0.2.96.71_clrmame_dat.zip](http://smartretro.co.uk/forums/download/file.php?id=17&sid=51593df3da1e20af98e425975a9e6f98)
 
+Dat File (With merge data): [FB Alpha v0.2.96.71 (ClrMame Pro).dat](https://drive.google.com/file/d/0B2TMeZ6iEFvHaXNtSWpzb3JlTjg/view?usp=sharing)
+
+[**PiFBA COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1gpuoZx78kDDdnf_yADicsSZHMfpOxNySSov7UdCDAik/edit?usp=sharing)  feel free to contribute to the list.
+
 ### [FBA-Libretro](https://github.com/libretro/fba-libretro) 
 ```shell
 Roms Dir: /home/pi/RetroPie/roms/fba
