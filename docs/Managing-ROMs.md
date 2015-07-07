@@ -222,6 +222,10 @@ Active Sets (For 1.2) 6166/6166
 * Others 1928/1928
 * BIOS 26/26
 
-Dat File: [advmame-0.94-RetroPie-260.7z](http://smartretro.co.uk/forums/download/file.php?id=18&sid=51593df3da1e20af98e425975a9e6f98), [advmame12-106.7z](http://smartretro.co.uk/forums/download/file.php?id=23&sid=51593df3da1e20af98e425975a9e6f98)
+Dat File: [advmame-0.94-RetroPie-260.7z](http://smartretro.co.uk/forums/download/file.php?id=18&sid=51593df3da1e20af98e425975a9e6f98)
+
+[**AdvMame .94 COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1AEQ94buG0rvbW0xdnYKeuEhHeCbuZlRfRJQCb1Dt8fw/edit?usp=sharing)  feel free to contribute to the list.
+
+Dat File: [advmame12-106.7z](http://smartretro.co.uk/forums/download/file.php?id=23&sid=51593df3da1e20af98e425975a9e6f98)
 
 **List courtesy of Floob** 
