@@ -19,6 +19,8 @@ Romset Used: FBA **0.2.96.71 romset** which is based on MAME 0.114 (April 2007) 
 
 Total Games Emulated: 684 (no clones)
 
+### [**PiFBA COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1gpuoZx78kDDdnf_yADicsSZHMfpOxNySSov7UdCDAik/edit?usp=sharing)  feel free to contribute to the list.
+
 For PiFBA place your ROMS in
 
 ```shell
