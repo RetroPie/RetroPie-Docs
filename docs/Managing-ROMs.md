@@ -134,6 +134,8 @@ Active Sets 3369/3369
 
 Dat File: [FB Alpha v0.2.97.30.dat.zip](http://smartretro.co.uk/forums/download/file.php?id=21&sid=51593df3da1e20af98e425975a9e6f98)
 
+Neo Geo Only .Dat File: [fba-lr-neogeo](http://s000.tinyupload.com/download.php?file_id=05558959831361649927&t=0555895983136164992714492)
+
 [**FBA-Libretro COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1rWO7Lm0bTGNpak6J-CPzde0GNIDP0NHDoQdJ6iWosfA/edit?usp=sharing)  feel free to contribute to the list.
 
 ### [mame4all-pi](http://sourceforge.net/projects/mame4allpi/)
