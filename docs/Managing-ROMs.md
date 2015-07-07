@@ -150,6 +150,10 @@ Active Sets 2241/2241
 
 Dat File: [mame4all-037b5-RetroPie-260.zip](http://smartretro.co.uk/forums/download/file.php?id=20&sid=51593df3da1e20af98e425975a9e6f98)
 
+Dat File (with merge data): [MAME 0.37b5.dat](https://drive.google.com/file/d/0B2TMeZ6iEFvHNDNHcl8tcUNIcDA/view?usp=sharing)
+
+[**MAME4ALL-PI COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1gpuoZx78kDDdnf_yADicsSZHMfpOxNySSov7UdCDAik/edit?usp=sharing)  feel free to contribute to the list.
+
 ### [Mame-libretro (imame4all)](https://github.com/libretro/imame4all-libretro)
 ```shell
 Roms Dir: /home/pi/RetroPie/roms/mame-mame4all
@@ -169,6 +173,10 @@ Active Sets 2241/2241
 * BIOS 1/1
 
 Dat File: [mame4all-037b5-RetroPie-260.zip](http://smartretro.co.uk/forums/download/file.php?id=20&sid=51593df3da1e20af98e425975a9e6f98)
+
+Dat File (with merge data): [MAME 0.37b5.dat](https://drive.google.com/file/d/0B2TMeZ6iEFvHNDNHcl8tcUNIcDA/view?usp=sharing) 
+
+[**IMAME4ALL-Libretro COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1Fmx2RPcgVgIIeKpaBKNEGWCDuu3DGfR-VkrnIVsIpeE/edit?usp=sharing)  feel free to contribute to the list.
 
 ### [GnGeo 0.8](https://github.com/ymartel06/GnGeo-Pi)
 ```shell
