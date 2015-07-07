@@ -26,7 +26,6 @@ Total Games Emulated: [2270](http://code.google.com/p/imame4all/wiki/GameList)
 
 ### [**MAME4ALL-PI COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1gpuoZx78kDDdnf_yADicsSZHMfpOxNySSov7UdCDAik/edit?usp=sharing)  feel free to contribute to the list.
 
-
 Place your MAME4ALL-Pi ROMs in
 ```
 /home/pi/RetroPie/roms/mame-mame4all
@@ -60,6 +59,8 @@ Place your AdvanceMAME ROMs in
 ```
 /home/pi/RetroPie/roms/mame-advmame
 ```
+
+### [**AdvMame .94 COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1AEQ94buG0rvbW0xdnYKeuEhHeCbuZlRfRJQCb1Dt8fw/edit?usp=sharing)  feel free to contribute to the list.
 
 You will get errors loading some mame roms, not all roms are compatible or working. You will need to download ROMs that are confirmed working with your version of MAME
 
