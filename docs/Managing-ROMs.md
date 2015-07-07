@@ -190,6 +190,8 @@ Romsets emulated: 203
 
 Dat File: [pandora_gngeo_084_dat.zip](http://smartretro.co.uk/forums/download/file.php?id=22&sid=51593df3da1e20af98e425975a9e6f98)
 
+[**GnGeo-Pi COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1A_a_9t14uzDUMrrO0RgLDwiVUiycmclcPIs6cU6Iox8/edit?usp=sharing)  feel free to contribute to the list.
+
 ### [AdvanceMAME 0.94.0 and 1.2](http://sourceforge.net/projects/advancemame/files/advancemame/0.94.0/)
 ```shell
 Roms Dir: /home/pi/RetroPie/roms/mame-advmame
