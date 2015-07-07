@@ -22,7 +22,10 @@ Accepted File Extensions: **.zip**
 
 Romset Used: **0.37b5**
 
-Total Games Emulated: [2270](http://code.google.com/p/imame4all/wiki/GameList)
+Total Games Emulated: [2270](http://code.google.com/p/imame4all/wiki/GameList) 
+
+### [**MAME4ALL-PI COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1gpuoZx78kDDdnf_yADicsSZHMfpOxNySSov7UdCDAik/edit?usp=sharing)  feel free to contribute to the list.
+
 
 Place your MAME4ALL-Pi ROMs in
 ```
@@ -33,6 +36,8 @@ Place your MAME4ALL-Pi ROMs in
 Romset Used: **0.37b5**
 
 Total Games Emulated: [2270](http://code.google.com/p/imame4all/wiki/GameList) 
+
+### [**IMAME4ALL-Libretro COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1Fmx2RPcgVgIIeKpaBKNEGWCDuu3DGfR-VkrnIVsIpeE/edit?usp=sharing)  feel free to contribute to the list.
 
 Place your imame4all-libretro ROMs in
 
