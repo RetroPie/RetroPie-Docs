@@ -38,6 +38,8 @@ you can also place your roms in
 Romset Used: FBA **0.2.97.30** which is based on MAME 0.154 (Jul 2014)
 
 Total Games Emulated: 3369 (includes clones etc..)
+
+### [**FBA-Libretro COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1rWO7Lm0bTGNpak6J-CPzde0GNIDP0NHDoQdJ6iWosfA/edit?usp=sharing)  feel free to contribute to the list.
  
 For RetroPie 3.0 FBA-Libretro place your ROMS in
 ```shell
