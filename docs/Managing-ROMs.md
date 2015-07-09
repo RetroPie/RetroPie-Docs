@@ -112,6 +112,12 @@ Dat File: [fba_0.2.96.71_clrmame_dat.zip](http://smartretro.co.uk/forums/downloa
 
 Dat File (With merge data): [FB Alpha v0.2.96.71 (ClrMame Pro).dat](https://drive.google.com/file/d/0B2TMeZ6iEFvHaXNtSWpzb3JlTjg/view?usp=sharing)
 
+All clones (current tested) non-working\mahjong\quiz\adult\casino\rythm removed
+
+Romsets emulated: 291
+
+Dat File: [fba_029671_od_release_10_working_roms_filtered.zip] (https://www.dropbox.com/s/mooc4mzesl3r2og/fba_029671_od_release_10_working_roms_filtered.zip?dl=0)
+
 [**PiFBA COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1OZioLrz16ptaNbjQUDP5hhVzQDTOTn9Nz46Hbj3-06k/edit?usp=sharing)  feel free to contribute to the list.
 
 ### [FBA-Libretro](https://github.com/libretro/fba-libretro) 
