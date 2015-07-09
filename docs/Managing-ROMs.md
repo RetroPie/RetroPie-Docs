@@ -198,8 +198,6 @@ Romsets emulated: 203
 
 Dat File: [pandora_gngeo_084_dat.zip](http://smartretro.co.uk/forums/download/file.php?id=22&sid=51593df3da1e20af98e425975a9e6f98)
 
-MAME Version: Based on **0.138** romsets (May 2010)
-
 All clones non-working\mahjong\quiz removed
 
 Romsets emulated: 128
