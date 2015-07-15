@@ -1,5 +1,6 @@
 # Platform List
-Below is a list of all available platforms in the database and their IDs.
+
+This list shows the available platforms on http://thegamesdb.net/ and their database ID code for the scraping API. The list is taken from here: http://wiki.thegamesdb.net/index.php/GetPlatformsList. Note that while the thegamesdb.net supports all of these systems, retropie only supports some. See the sidebar for supported emulators.
 
 ```
 [25] 3DO
