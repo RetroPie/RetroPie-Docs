@@ -128,7 +128,9 @@ PiFBA controls are located in
 ```shell
 /opt/retropie/emulators/pifba/fba2x.cfg
 ```
-As there is no menu to configure controllers with PiFBA like there is with Mame4all, you'll have to edit the aforementioned file manually.
+As there is no menu to configure controllers with PiFBA like there is with Mame4all, you'll have to edit the aforementioned file manually. 
+
+**NOTE** PiFBA currently only supports 2 players.
 
 **Example of fba2x.cfg**
 
