@@ -25,26 +25,7 @@ Place your BIOS files in:
 ```
 /home/pi/RetroPie/BIOS
 ```
-**You should only have to do these steps for older versions of RetroPie:**
 
-According to [this post](http://blog.petrockblock.com/forums/topic/intellivision-emulation/#post-2208):
-
-I put my exec.bin and grom.bin in:
-```shell
-/usr/local/share/jzintv/rom
-```
-This is one of the two paths that the emulator is set to look in. The jzintv and subfolder rom did not exist so I had to create them..
-```shell
-cd /usr/local/share
-sudo mkdir jzintv
-sudo mkdir jzintv/rom
-```
-and then I moved the exec.bin and gbrom.bin file from my intellivision rom directory:
-```shell
-sudo mv ~/RetroPie/roms/intellivision/* /usr/local/share/jzintv/rom
-```
-
-Then I was able to launch my intellivision roms… hope this helps!
 
 ## Controls:
 ```shell
@@ -107,3 +88,25 @@ Fine-grain directional pad inputs:
 ```
 
 ![intellivision](https://cloud.githubusercontent.com/assets/10035308/8246393/3e98c8c2-15fb-11e5-9398-3f5abd60361b.png)
+```
+**Outdated information: You should only have to do these steps for older versions of RetroPie:**
+
+According to [this post](http://blog.petrockblock.com/forums/topic/intellivision-emulation/#post-2208):
+
+I put my exec.bin and grom.bin in:
+
+/usr/local/share/jzintv/rom
+
+This is one of the two paths that the emulator is set to look in. The jzintv and subfolder rom did not exist so I had to create them..
+
+cd /usr/local/share
+sudo mkdir jzintv
+sudo mkdir jzintv/rom
+
+and then I moved the exec.bin and gbrom.bin file from my intellivision rom directory:
+
+sudo mv ~/RetroPie/roms/intellivision/* /usr/local/share/jzintv/rom
+
+
+Then I was able to launch my intellivision roms… hope this helps!
+```
