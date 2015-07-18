@@ -39,6 +39,12 @@ iface wlan0 inet dhcp
 ```
 you can also add `wireless-power off` at the end if you have issues with your wifi dongle turning off and on a lot and not being able to maintain a connection.
 
+If you have WEP try these instead
+```
+wireless-essid NETWORK_NAME
+wireless-key NETWORK_PASSWORD
+```
+
 `sudo reboot`
 
 on reboot (if configured correctly) your wifi will be working.
