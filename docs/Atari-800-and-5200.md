@@ -7,10 +7,16 @@ This emulator emulates the Atari 8 bit family: 400, 800, 1200XL, 600XL, 800XL, 1
 ## ROMS
 Accepted File Extensions: **.xex .bin .a52**
 
-Place your Atari 400,800,5200 ROMS in
+Place your Atari 400,800, ROMS in
 ```shell
 /home/pi/RetroPie/roms/atari800
 ```
+
+Place your Atari 5200 ROMS in
+```shell
+/home/pi/RetroPie/roms/atar5200
+```
+
 ## BIOS
 There are 5 main BIOS needed for the Atari800 emulator:
 
