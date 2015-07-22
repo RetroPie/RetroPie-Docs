@@ -8,13 +8,9 @@ The Osmose is tedious to configure controllers with. The Libretro-Genesis-Plus-G
 ## ROMS
 Acceptable File Extensions: **.gg**
 
-Place your ROMs for lr-Genesis-Plus-GX in
+Place your Gamegear roms in
 ```
 /home/pi/RetroPie/roms/gamegear
-```
-Place your ROMs for Osmose in
-```
-/home/pi/RetroPie/roms/gamegear-osmose
 ```
 ## Controls
 
