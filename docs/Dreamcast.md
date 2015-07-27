@@ -55,7 +55,7 @@ On occasion, these VMUs do not get formatted quite right during creation, and th
 Controls can be mapped via the `/home/pi/.reicast/emu.cfg` file.  An example mapping for a PS3 controller is below for reference:
 
 ```
-[PLAYSTATION(R)3 Controller]
+[Sony PLAYSTATION(R)3 Controller]
 button.0=Btn_Z
 button.1=Btn_C
 button.2=Btn_D
