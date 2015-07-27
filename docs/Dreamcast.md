@@ -19,7 +19,8 @@ Audio is choppy and not great, and degrades the longer the emulator is in use.  
 #### Games not working so well
 
 * Gauntlet Legends = Not playable, rendering blanks out every other frame and may cause epilepsy; wouldn't recommend it just yet
-
+* Crazy Taxi = Not playable, slow with some rendering issue
+* Crazy Taxi 2 = Not playable, slow with some rendering issue
 
 
 ## ROMS
@@ -77,5 +78,4 @@ axis.0=Axis_X
 axis.1=Axis_Y
 ```
 
-Press ctrl+c to exit- Or map a Quit button as shown above :D 
-
+Press ctrl+c to exit- Or map a Quit button (PS) as shown above :D 
