@@ -15,12 +15,15 @@ Audio is choppy and not great, and degrades the longer the emulator is in use.  
 * Marvel Vs Capcom 2 = Totally playable multiplayer, almost full speed!
 * Coaster Works = Totally playable except when utilizing 4-split view to edit a track (split-screen bounds rendered incorrectly, all overlaid)
 
-
 #### Games not working so well
 
 * Gauntlet Legends = Not playable, rendering blanks out every other frame and may cause epilepsy; wouldn't recommend it just yet
-* Crazy Taxi = Not playable, slow with some rendering issue
-* Crazy Taxi 2 = Not playable, slow with some rendering issue
+* Crazy Taxi = Playable, but slow with rendering issues
+* Crazy Taxi 2 = Playable, but slow with some rendering issues
+* Sonic Adventures 2 = Playable, but slow 
+* Jet Set Radio = Playable, but slow
+* Soul Calibur = Playable, but slow and with rendering issues
+
 
 
 ## ROMS
@@ -53,10 +56,10 @@ On occasion, these VMUs do not get formatted quite right during creation, and th
 
 ## Controls
 
-Controls can be mapped via the `/home/pi/.reicast/emu.cfg` file.  An example mapping for a PS3 controller is below for reference:
+Controls can be mapped via the `/home/pi/.reicast/emu.cfg` file. An example mapping for a PS3 controller is below for reference:
 
 ```
-[Sony PLAYSTATION(R)3 Controller]
+[PLAYSTATION(R)3 Controller]
 button.0=Btn_Z
 button.1=Btn_C
 button.2=Btn_D
@@ -77,5 +80,14 @@ button.16=Quit
 axis.0=Axis_X
 axis.1=Axis_Y
 ```
+If mapping is not working correctly try changing controller name for: 
+```
+[Sony PLAYSTATION(R)3 Controller]
+```
+For Wireless PS3 Controller use: 
+```
+[PLAYSTATION(R)3 Controller (xx:xx:xx:xx:xx:xx)]
+```
+Replace xx:xx:xx:xx:xx:xx with your own controller mac address
 
 Press ctrl+c to exit- Or map a Quit button (PS) as shown above :D 
