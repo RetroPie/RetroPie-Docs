@@ -15,6 +15,10 @@ Place your Nintendo 64 ROMs in
 ```
 /home/pi/RetroPie/roms/n64
 ```
+
+## [Rom Compatibility List](https://docs.google.com/spreadsheets/d/1Wjzbu90l6eCEW1w6ar9NtfyDBQrSPILQL5MbRSpYSzw/edit?usp=sharing)
+feel free to contribute!
+
 ## Controls
 
 ### Mupen64plus-libretro
