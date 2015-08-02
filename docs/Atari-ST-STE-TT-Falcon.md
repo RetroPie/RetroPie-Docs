@@ -2,26 +2,28 @@
 ***
 _The Atari ST, STE, TT, and Falcon were a series of personal computers released by Atari starting in 1985._
 ***
-## Emulator: [Hatari](http://hatari.tuxfamily.org/)
+## Emulator: Hatari
+
 Much of the emulation for later models, such as the Falcon, is still experimental so some games may be hit and miss.
 
-## es_systems.cfg
-```
-<system>
-    <name>atariststefalcon</name>
-    <fullname>Atari ST, STE, Falcon</fullname>
-    <path>~/.emulationstation/roms/atariststefalcon</path>
-    <extension>.st, .stx, .img, .rom</extension>
-    <command>%HOMEPATH%\.emulationstation\systems\retroarch\retroarch.exe -L %HOMEPATH%\.emulationstation\systems\retroarch\cores\hatari_libretro.dll "%ROM_RAW%"</command>
-    <platform>atariststefalcon</platform> 
-    <theme>atariststefalcon</theme>
-  </system>
-```
-
 ## ROMS
-Accepted File Extensions: **.st, .stx, .img, .rom**
+
+Accepted File Extensions: .st, .stx, .img, .rom
 
 Place your Atari ST/STE/TT/Falcon ROMS in
-```shell
-.emulationstation\roms\atariststefalcon
+```
+/home/pi/RetroPie/roms/atariststefalcon
+```
+## Controls
+
+While in game press F12 to open the Hatari main menu, to reconfigure controls select either joysticks or keyboards
+
+Default Keyboard Controls:
+```
+Up: up
+Down: down
+Left: left
+Right: right
+Fire: RCTRL
+to exit the emulator you can use alt+q or select quit from the F12 menu
 ```
