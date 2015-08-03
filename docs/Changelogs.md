@@ -2,7 +2,7 @@
 
 This page is a list of all of the changelogs for each version of RetroPie. For a complete list of all commits to the source code see [here:](https://github.com/petrockblog/RetroPie-Setup/commits/master)  
 
-### Version 3.0.0 BETA 4: (July, 18, 2015)
+### Version 3.0.0 RC1: (July, 18, 2015)
 
 * Input configuration improvements / fixes / optimisations
 * Basic joypad control in RetroPie-Setup / emulator prelaunch menus.
