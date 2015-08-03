@@ -2,6 +2,15 @@
 
 This page is a list of all of the changelogs for each version of RetroPie. For a complete list of all commits to the source code see [here:](https://github.com/petrockblog/RetroPie-Setup/commits/master)  
 
+### Version 3.0.0 BETA 4: (July, 18, 2015)
+
+* Input configuration improvements / fixes / optimisations
+* Basic joypad control in RetroPie-Setup / emulator prelaunch menus.
+* Make libretro Fuse default spectrum emulator (for easier joypad control)
+* Added new spectrum emulator ZEsarUX to the experimental section.
+* Added launching RetroArch with RGUI from the RetroPie menu in EmulationStation.
+* Various other bugfixes – you can follow changes as they happen on the GitHub site –https://github.com/RetroPie/RetroPie-Setup/commits/master
+
 ### Version 3.0.0 BETA 4: (June, 18, 2015)
 
 * Work around issue with RetroArch GUI not accepting input/freezing.
