@@ -40,7 +40,7 @@ You can also install manually using these steps:
 sudo apt-get update && sudo apt-get upgrade
 wget http://node-arm.herokuapp.com/node_latest_armhf.deb
 sudo dpkg -i node_latest_armhf.deb
-```
+
 
 ### Install Virtual Gamepad (Must Be Run As Root!)
 
