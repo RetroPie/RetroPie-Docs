@@ -30,7 +30,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [Atari ST/STE/TT/Falcon](https://github.com/RetroPie/RetroPie-Setup/wiki/Atari-ST-STE-TT-Falcon) [(Hatari)](http://hatari.tuxfamily.org/)
 * [Commodore 64](https://github.com/RetroPie/RetroPie-Setup/wiki/Commodore-64) [(Vice)](http://vice-emu.sourceforge.net/)
 * [Dreamcast](https://github.com/RetroPie/RetroPie-Setup/wiki/Dreamcast) [(Reicast)](https://github.com/reicast/reicast-emulator) (EXPERIMENTAL!)
-* [FinalBurn Alpha](https://github.com/RetroPie/RetroPie-Setup/wiki/FinalBurn-Alpha) [(PiFBA)](hhttps://github.com/RetroPie/pifba), [(lr-fba)](https://github.com/libretro/fba-libretro)
+* [FinalBurn Alpha](https://github.com/RetroPie/RetroPie-Setup/wiki/FinalBurn-Alpha) [(PiFBA)](https://github.com/RetroPie/pifba), [(lr-fba)](https://github.com/libretro/fba-libretro)
 * [Genesis/Megadrive](https://github.com/RetroPie/RetroPie-Setup/wiki/Genesis-Megadrive) [(DGEN)](http://dgen.sourceforge.net/), [(lr-Genesis-Plus-GX)](https://github.com/libretro/Genesis-Plus-GX), [(lr-picodrive)] (https://github.com/libretro/picodrive)
 * [Game Gear](https://github.com/RetroPie/RetroPie-Setup/wiki/Game-Gear) [(Osmose)](https://github.com/RetroPie/osmose-rpi), [(lr-Genesis-Plus-GX)](https://github.com/libretro/Genesis-Plus-GX)
 * [Game Boy](https://github.com/RetroPie/RetroPie-Setup/wiki/Game-Boy) [(lr-gambatte)](https://github.com/libretro/gambatte-libretro)
