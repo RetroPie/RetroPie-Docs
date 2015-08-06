@@ -2,31 +2,8 @@
 ***
 _This project is the result of hard work from Miroof. https://github.com/miroof/node-virtual-gamepads_
 ***
-## Installation
 
-### Install Node.js
-```
-sudo apt-get update && sudo apt-get upgrade
-wget http://node-arm.herokuapp.com/node_latest_armhf.deb
-sudo dpkg -i node_latest_armhf.deb
-```
-
-### Install Virtual Gamepad (Must Be Run As Root!)
-```
-su
-git clone https://github.com/miroof/node-virtual-gamepads
-cd node-virtual-gamepads
-npm install
-```
-
-### Enable Virtual Gamepad on Boot
-```
-sudo npm install pm2 -g
-sudo pm2 start main.js
-sudo pm2 startup
-sudo pm2 save
-```
-See this video [**here**](https://www.youtube.com/watch?v=eH355PU2Eac) for a step by step installation.
+Install from the experimental menu of the setup script (may only work well with a rpi2)
 
 ## Usage
 
@@ -53,3 +30,32 @@ Because it's difficult to spot the right place in a touch screen without looking
 To know if we pressed a button with success, the web application provides an haptic feedback which can be easily deactivated by turning off the vibrations of the phone.
 
 **You will need to configure your controller with EmulationStation and RetroArch just like you would any other controller.**
+
+
+You can also install manually using these steps:
+
+```
+### Install Node.js
+
+sudo apt-get update && sudo apt-get upgrade
+wget http://node-arm.herokuapp.com/node_latest_armhf.deb
+sudo dpkg -i node_latest_armhf.deb
+```
+
+### Install Virtual Gamepad (Must Be Run As Root!)
+
+su
+git clone https://github.com/miroof/node-virtual-gamepads
+cd node-virtual-gamepads
+npm install
+
+
+### Enable Virtual Gamepad on Boot
+
+sudo npm install pm2 -g
+sudo pm2 start main.js
+sudo pm2 startup
+sudo pm2 save
+
+See this video [**here**](https://www.youtube.com/watch?v=eH355PU2Eac) for a step by step installation.
+```
