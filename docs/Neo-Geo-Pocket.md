@@ -4,7 +4,7 @@
 The Neo Geo Pocket was a handheld video game system released by SNK in 1998.
 
 ***
-This emulator is currently experimental and can be installed through the experimental menu of the RetroPie Setup script. This emulator emulates both the Neo Geo Pocket, and the Neo Geo Pocket Color.
+This emulator emulates both the Neo Geo Pocket, and the Neo Geo Pocket Color.
 
 ## Emulator: [Libretro-mednafen-ngp](https://github.com/libretro/beetle-ngp-libretro.git)
 
