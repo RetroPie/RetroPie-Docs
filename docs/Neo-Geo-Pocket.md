@@ -1,4 +1,4 @@
-![](http://thenerdpad.com/wp-content/uploads/2015/04/NEO-GEO-LOGO.gif)
+![](http://www.bitsdreams.com/c/13-category_default/neogeo-pocket.jpg)
 
 ***
 The Neo Geo Pocket was a handheld video game system released by SNK in 1998.
