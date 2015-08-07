@@ -46,13 +46,21 @@ You will use a program called [Win32DiskImager](http://sourceforge.net/projects/
 ## Controller Configurations
 
 When you first boot up you will be welcomed with the following screen- unlike previous versions of retropie, this menu will configure your controls for both Emulationstation and RetroArch Emulators:
+
 ![welcomescreen](https://cloud.githubusercontent.com/assets/10035308/9140482/cf42f25c-3cee-11e5-8f91-c1fc1c57175c.png)
+
 Hold down any button on your keyboard or gamepad and the name will appear at the bottom and then open up into a configuration menu:
+
 ![welcomescreengamepadname](https://cloud.githubusercontent.com/assets/10035308/9140505/f5c19e38-3cee-11e5-965e-0e4e85ddaf56.png)
+
 Follow the onscreen instructions to configure your gamepad- if you run out of buttons just hold down a button to skip each unused button.
+
 ![welcomescreengamepadconfigure](https://cloud.githubusercontent.com/assets/10035308/9140518/0263b9c8-3cef-11e5-922f-42f790f3be91.png)
+
 See the following diagrams for reference:
+
 ### Super Nintendo Controller
+
 ![Super Nintendo Controller](https://cloud.githubusercontent.com/assets/10035308/7110174/0f2fdb54-e16a-11e4-8f3d-37bdca8f1ddf.png)
 
 ### Xbox 360 Controller
@@ -64,20 +72,24 @@ See the following diagrams for reference:
 If you wish to put in configurations for multiple controllers you can do so from the start menu of emulationstation. For more details on manual controller configurations see this page [Here](https://github.com/petrockblog/RetroPie-Setup/wiki/RetroArch-Configuration)
 
 ## Expand File System
+
 Once your controller is set up you'll need to make a few configurations before you can transfer your ROMs over go to the RetroPie Menu:
+
 ![retropiemenu](https://cloud.githubusercontent.com/assets/10035308/9140677/2beba548-3cf0-11e5-8254-d8329b0f35b8.png)
+
 You'll want to select raspberry Pi configuration tool raspi-config (This allows your sd card to use all its memory rather than the small partition it was released with.)
+
 ![retropiemenuraspiconfig](https://cloud.githubusercontent.com/assets/10035308/9140687/3be5a282-3cf0-11e5-9f48-58d23552bcda.png)
 
-It will open up into this:
+It will open up into the following, if using a gamepad **Press right on the dpad** and choose select:
 
 ![raspi-config](https://cloud.githubusercontent.com/assets/10035308/9140867/856bb85a-3cf1-11e5-8697-04f60ecf8563.png)
 
-Select it and you will get this message:
+You will get this message:
 
 ![raspi-config2](https://cloud.githubusercontent.com/assets/10035308/9140889/ad8879c2-3cf1-11e5-8d77-7c81af7dba16.png)
 
-Press the right arrow and choose finish
+Press right and choose finish
 
 ![raspi-config3](https://cloud.githubusercontent.com/assets/10035308/9140900/dcfdf556-3cf1-11e5-978c-e5d620ab98fc.png)
 
