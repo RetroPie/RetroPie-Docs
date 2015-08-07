@@ -39,7 +39,7 @@ Once you have downloaded your SD card image you need to extract it using a progr
 
 ### Install 3.0 Image on SD Card
 
-For Windows you can use a program called [Win32DiskImager](http://sourceforge.net/projects/win32diskimager/) for mac you can use [Apple Pi Baker](http://www.tweaking4all.com/hardware/raspberry-pi/macosx-apple-pi-baker/) to install the RetroPie 3.0 SD image on your MicroSD card. (You may need a MicroSD card reader to plug it into your computer) 
+For Windows you can use a program called [Win32DiskImager](http://sourceforge.net/projects/win32diskimager/) or for mac you can use [Apple Pi Baker](http://www.tweaking4all.com/hardware/raspberry-pi/macosx-apple-pi-baker/) to install the RetroPie 3.0 SD image on your MicroSD card. (You may need a MicroSD card reader to plug it into your computer) 
 
 # Configurations
 
