@@ -81,7 +81,7 @@ You'll want to select raspberry Pi configuration tool raspi-config (This allows 
 
 ![retropiemenuraspiconfig](https://cloud.githubusercontent.com/assets/10035308/9140687/3be5a282-3cf0-11e5-9f48-58d23552bcda.png)
 
-It will open up into the following, if using a gamepad **Press right on the dpad** and choose select:
+It will open up into the following, if using a gamepad **Press right on the dpad until select is highlighted** and choose select:
 
 ![raspi-config](https://cloud.githubusercontent.com/assets/10035308/9140867/856bb85a-3cf1-11e5-8697-04f60ecf8563.png)
 
