@@ -145,7 +145,7 @@ alt="Configuration Video" width="300" height="190" border="10" /></a>
 * Wireless (needs wifi dongle)
 There are many FTP programs out there, for windows many people use [WinSCP](https://winscp.net/eng/download.php)
 
-![winscp](https://cloud.githubusercontent.com/assets/10035308/9141807/94e63466-3cf8-11e5-87dc-c924ff7feb7d.png)
+![ftp](https://cloud.githubusercontent.com/assets/10035308/9144892/68994618-3d0d-11e5-8db0-2991f9068115.png)
 
 You can also log in as root if you wish to change more files than just the roms, but you first need to enable the root password by typing `sudo passwd root` into the terminal and choosing a new root password.
 
