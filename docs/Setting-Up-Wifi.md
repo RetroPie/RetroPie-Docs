@@ -6,8 +6,6 @@ There are 4 main methods to configure Wifi.
 
 ## Method 1 (Easiest)
 
-## Configuring Wifi
-
 You can access this from the Retropie menu in emulationstation (you can also access it from option 3 in the RetroPie setup script):
 
 ![retropiemenuwifi](https://cloud.githubusercontent.com/assets/10035308/9141387/7ed23ec0-3cf5-11e5-9944-a8f7870cc6c0.png)
@@ -28,7 +26,7 @@ After it's done configuring you should see your wifi info in the original menu:
 
 ![wifiinfo](https://cloud.githubusercontent.com/assets/10035308/9141742/226f50de-3cf8-11e5-8b6b-328f2110e655.png)
 
-## Method 2
+## Method 2 (INTERFACES)
 
 `sudo nano /etc/network/interfaces`
 
@@ -117,7 +115,7 @@ gateway 192.168.0.1 #(almost always the same as well. you can verify with netsta
 
 on reboot (if configured correctly) your wifi will be working.
 
-## Method 3
+## Method 3 (wpa_supplicant.conf)
 
 **Taken from the Raspberry Pi Foundation [here](http://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md):**
 
@@ -191,7 +189,7 @@ At this point,` wpa-supplicant` will normally notice a change has occurred withi
 
 You can verify if it has successfully connected using `ifconfig wlan0`. If the `inet addr` field has an address beside it, the Pi has connected to the network. If not, check your password and ESSID are correct.
 
-## Method 4 WICD-Curses 
+## Method 4 (Wicd-Curses) 
 
 Note that this may cause cpu scaling issues
 
