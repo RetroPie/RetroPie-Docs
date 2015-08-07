@@ -119,6 +119,8 @@ After it's done configuring you should see your wifi info in the original menu:
 
 ![wifiinfo](https://cloud.githubusercontent.com/assets/10035308/9141742/226f50de-3cf8-11e5-8b6b-328f2110e655.png)
 
+For more WiFi configuration options see this page [HERE](https://github.com/RetroPie/RetroPie-Setup/wiki/Setting-Up-Wifi)
+
 ## Transferring Roms
 
 There are three main methods of transferring roms: 
