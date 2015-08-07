@@ -1,6 +1,6 @@
 # RetroPie 3.0
 
-Congratulations! You have discovered the wonderful world of RetroPie- your entire childhood is within reach! This page is for people just getting started on RetroPie 3.0. You can install RetroPie manually but for simplicity's sake this page will focus on installing the RetroPie SD card image. This page will give you the very basics to get you up and running from a blank SD card to first boot into Emulationstation. There will be separate pages for learning how to [transfer ROMs](https://github.com/petrockblog/RetroPie-Setup/wiki/How-to-get-ROMs-on-the-SD-card)
+Congratulations! You have discovered the wonderful world of RetroPie- your entire childhood is within reach! This page is for people just getting started on RetroPie 3.0. You can install RetroPie manually but for simplicity's sake this page will focus on installing the RetroPie SD card image. This page will give you the very basics to get you up and running from a blank SD card to first boot into Emulationstation.
 
 If you hate reading then see this video. Otherwise read on! 
 
