@@ -143,7 +143,7 @@ alt="Configuration Video" width="300" height="190" border="10" /></a>
 ### Ftp (needs an active internet connection) 
 * Wired (needs ethernet cable)
 * Wireless (needs wifi dongle)
-There are many FTP programs out there, for windows many people use [WinSCP](https://winscp.net/eng/download.php)
+There are many FTP programs out there, for windows many people use [WinSCP](https://winscp.net/eng/download.php) for mac you can use something like [Cyberduck](https://cyberduck.io/?l=en)
 
 ![ftp](https://cloud.githubusercontent.com/assets/10035308/9144892/68994618-3d0d-11e5-8db0-2991f9068115.png)
 
