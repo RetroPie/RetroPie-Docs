@@ -33,7 +33,7 @@ The RetroPie Setup allows to install and configure Samba shares for each install
 easiest way to access is to go into "computer" folder on windows and in the top type:
 
 ```shell
-\\your-pi-ip-address
+\\RETROPIE
 ```
 
 ## Using USB-Stick
