@@ -140,7 +140,7 @@ see this video for reference:
 " target="_blank"><img src="https://i.ytimg.com/vi_webp/OYMoxvbkYD4/mqdefault.webp" 
 alt="Configuration Video" width="300" height="190" border="10" /></a>
 
-### Ftp (needs an active internet connection) 
+### FTP (needs an active internet connection) 
 * Wired (needs ethernet cable)
 * Wireless (needs wifi dongle)
 There are many FTP programs out there, for windows many people use [WinSCP](https://winscp.net/eng/download.php) for mac you can use something like [Cyberduck](https://cyberduck.io/?l=en)
