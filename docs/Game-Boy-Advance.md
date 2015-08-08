@@ -82,4 +82,4 @@ Select: Backspace
 ## Video Tutorial:
 
 <a href="https://www.youtube.com/watch?v=eM9BB9v9288" target="_blank"><img src="https://i.ytimg.com/vi_webp/eM9BB9v9288/mqdefault.webp" 
-alt="N64 Configuration Video" width="300" height="180" border="10" /></a>
+alt="GBA Configuration Video" width="300" height="180" border="10" /></a>
