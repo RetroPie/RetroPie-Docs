@@ -75,7 +75,7 @@ Hotkeys | Action
 | :---: | :---: |
 Select+Start | Exit
 Select+Right Shoulder | Save
-Select+Left Bumper | Load
+Select+Left Shoulder | Load
 Select+Right | Input State Slot Increase
 Select+Left | Input State Slot Decrease 
 Select+X | RGUI Menu
