@@ -59,14 +59,10 @@ Follow the onscreen instructions to configure your gamepad- if you run out of bu
 
 See the following diagrams for reference:
 
-### Super Nintendo Controller
-
 ![Super Nintendo Controller](https://cloud.githubusercontent.com/assets/10035308/7110174/0f2fdb54-e16a-11e4-8f3d-37bdca8f1ddf.png)
 
-### Xbox 360 Controller
 ![Xbox 360 Controller](https://cloud.githubusercontent.com/assets/10035308/7110173/0f2ea784-e16a-11e4-9c6f-5fe7c594b05a.png)
 
-### PlayStation 3 Controller
 ![PlayStation 3 Controller](https://cloud.githubusercontent.com/assets/10035308/7111199/e29365ec-e179-11e4-87b4-f00685661d7e.png)
 
 ### Default Hotkeys
