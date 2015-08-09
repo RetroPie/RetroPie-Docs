@@ -69,6 +69,18 @@ See the following diagrams for reference:
 ### PlayStation 3 Controller
 ![PlayStation 3 Controller](https://cloud.githubusercontent.com/assets/10035308/7111199/e29365ec-e179-11e4-87b4-f00685661d7e.png)
 
+### Default Hotkeys
+
+Hotkeys | Action
+| :---: | :---: |
+Select+Start | Exit
+Select+Right Shoulder | Save
+Select+Left Bumper | Load
+Select+Right | Input State Slot Increase
+Select+Left | Input State Slot Decrease 
+Select+X | RGUI Menu
+Select+B | Reset
+
 If you wish to put in configurations for multiple controllers you can do so from the start menu of emulationstation. For more details on manual controller configurations see this page [Here](https://github.com/petrockblog/RetroPie-Setup/wiki/RetroArch-Configuration)
 
 ## Expand File System
