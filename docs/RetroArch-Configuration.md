@@ -127,6 +127,9 @@ Select+B | Reset
 _InputStation is the product of hard work from the EmulationStation Team (Aloshi and Nils) and the RetroPie Team (petrockblog, joolswills, and gizmo98). It is an all-in-one controller configuration module for EmulationStation, RetroArch, and will include other specific emulators in the future such as pifba, mupen64plus, etc._
 
 ***
+
+This is integrated into emulationstation and will be the first thing you see when you boot from the RetroPie SD image (3.0) the first time. You can also access if from the start menu within emulationstation under the configure option.
+
 The following diagrams are for the 3 most common controllers: Super Nintendo, Xbox 360, and PlayStation 3. They can be used as a reference when configuring your controllers. Each emulator page on the wiki has a diagram of the original controller for its respective console that will correspond to the same inputs listed below.
 
 ## Super Nintendo Controller
