@@ -3,13 +3,16 @@
 RetroArch is the official front end for the [Libretro](http://www.libretro.com/) API which essentially means that RetroArch will be what manages controls and configurations for all of the emulators that are part of the Libretro-Core (i.e. any emulator with an "lr" before it). This is a beautiful thing because it means you can configure controllers only once for many emulators instead of having to configure each emulator individually. RetroArch also gives us the freedom to configure emulators individually as discussed below under "Custom RetroArch Controls" (There are also emulator specific configurations under each emulator in the emulator section.)
 
 ## Retroarch-Joyconfig
-From the RetroPie menu in emulationstation. 
+
+#### From the RetroPie Menu
+
 ```
 Choose configure retroarch keyboard/joystick
 ```
 (you'll need a keyboard) plug in the controller you wish to configure and follow the steps.
-
 Alternatively you can access the same function through the terminal:
+
+#### From the terminal
 
 Plug in one controller you wish to configure and in the terminal type:
 ```shell
