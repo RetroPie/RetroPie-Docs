@@ -2,7 +2,18 @@
 
 This page is a list of all of the changelogs for each version of RetroPie. For a complete list of all commits to the source code see [here:](https://github.com/petrockblog/RetroPie-Setup/commits/master)  
 
-### Version 3.0.0 RC1: (July, 18, 2015)
+
+### 3.0 (August 11, 2015):
+
+* New GUI for basic WiFi configuration and Config editing
+* Added Dragon 32 / TRS-80 (CoCo) emulator xroar
+* Added Super Mario War to ports
+* Move some emulators out of experimental – lr-bluemsx (Now default for msx), lr-mednafen-ngp, lr-mednafen-wswan, lr-mgba, lr-tgbdual, lr-vba-next
+* Added virtualgamepad to experimental which allows gamepad emulation via a mobile
+* Restarting setup script no longer needed after updating the setup script.
+* Improved support for video splashscreens and a centralised splashscreen repo (https://github.com/RetroPie/retropie-splashscreens)
+
+### Version 3.0.0 RC1: (July 18, 2015)
 
 * Input configuration improvements / fixes / optimisations
 * Basic joypad control in RetroPie-Setup / emulator prelaunch menus.
@@ -11,13 +22,13 @@ This page is a list of all of the changelogs for each version of RetroPie. For a
 * Added launching RetroArch with RGUI from the RetroPie menu in EmulationStation.
 * Various other bugfixes – you can follow changes as they happen on the GitHub site –https://github.com/RetroPie/RetroPie-Setup/commits/master
 
-### Version 3.0.0 BETA 4: (June, 18, 2015)
+### Version 3.0.0 BETA 4: (June 18, 2015)
 
 * Work around issue with RetroArch GUI not accepting input/freezing.
 * Fixed up RetroArch control configuration via our new integrated input configuration.
 * Moved RetroArch joypad cofigurations to /opt/retropie/configs/all/retroarch-joypads
 
-### Version 3.0.0 BETA 3: (June, 10, 2015)
+### Version 3.0.0 BETA 3: (June 10, 2015)
 * Integrated controls configuration for EmulationStation and RetroArch – On first start EmulationStation will ask for controls to be configured, and will then also configure RetroArch based on your choices. Note that there will be a delay after selecting OK whilst this is done – this will be improved later to give feedback so it doesn’t look as though EmulationStation has frozen.
 * New experimental modules/emulators: limelight (Networked game streamer for Steam), lr-tgbdual (gameboy color emu with link support), DXX-Rebirth port (Decent 1/2), r-mednafen-wswan (Wonderswan emu), lr-mednagen-gbp (NeoGeo Pocket emu), uae4arm (Amiga emu), lr-fuse (ZX Spectrum emu), lr-caprice32 (Amstrad CPC emu), lr-gw (Game and Watch simulator). All modules prefixed with lr- are libretro cores for use with Retroarch.
 * New startup picture with new RetroPie logo.
