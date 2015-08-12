@@ -3,7 +3,7 @@
 This page is a list of all of the changelogs for each version of RetroPie. For a complete list of all commits to the source code see [here:](https://github.com/petrockblog/RetroPie-Setup/commits/master)  
 
 
-### 3.0 (August 11, 2015):
+### Version 3.0.0 Stable : (August 11, 2015)
 
 * New GUI for basic WiFi configuration and Config editing
 * Added Dragon 32 / TRS-80 (CoCo) emulator xroar
