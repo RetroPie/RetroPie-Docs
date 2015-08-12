@@ -1,1 +1,0 @@
-It's the Select button in RetroArch. By default, it's right shift.
