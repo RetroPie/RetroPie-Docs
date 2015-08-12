@@ -3,7 +3,7 @@
 RetroArch is the official front end for the [Libretro](http://www.libretro.com/) API which essentially means that RetroArch will be what manages controls and configurations for all of the emulators that are part of the Libretro-Core (i.e. any emulator with an "lr" before it). This is a beautiful thing because it means you can configure controllers only once for many emulators instead of having to configure each emulator individually. RetroArch also gives us the freedom to configure emulators individually as discussed below under "Custom RetroArch Controls" (There are also emulator specific configurations under each emulator in the emulator section.)
 
 ## Retroarch-Joyconfig
-Starting with RetroPie 3.0 there is a RetroPie menu in emulationstation. One of the options is to configure retroarch controls (you'll need a keyboard) plug in the controller you wish to configure and follow the steps.
+From the RetroPie menu in emulationstation. Choose configure retroarch keyboard/joystick (you'll need a keyboard) plug in the controller you wish to configure and follow the steps.
 
 Alternatively you can access the same function through the terminal:
 
@@ -14,11 +14,11 @@ sudo ./retropie_setup.sh
 ```
 
 In the setup script select the following options:  
-* Option 3 - Setup
-* Option 317 - Configure Retroarch Controller
+* Choose - Setup
+* Choose - Configure Retroarch Controller
 
 Then follow the on screen directions and your controller should now work on all libretro-core emulators- 
-including hotkeys (`select`+`start` to exit, `select`+`R1` to save, `select`+`L1` to load) 
+including hotkeys (see below).
 
 ## Config Hierarchy
 
@@ -32,7 +32,7 @@ All RetroArch based emulators can be configured in the following way:
 
     /opt/retropie/configs/SYSTEMNAME/retroarch.cfg
 
-Here, SYSTEMNAME is atari2600, snes, etc.. All settings in these files will overwrite the corresponding global setting.
+Here, SYSTEMNAME is atari2600, snes, etc.. All settings in these files will overwrite the corresponding global setting as long as they are placed **above** the #includeconfig line.
 
 These configurations are used when starting a rom for a specific system. The individually used commands for starting a single rom can be found in the settings file of Emulation Station 
 
@@ -102,18 +102,22 @@ see this video:
 <a href="http://www.dailymotion.com/video/x2hxlc3" target="_blank"><img src="https://lh4.ggpht.com/MFywT7QpnT6WA2vgh1Fb0bfaz2Si4BRCnWV53Hiu9lr1ZpE6tJ_mP7AmXzC7hy2wFFlD=w300" 
 alt="N64 Configuration Video" width="150" height="150" border="10" /></a>
 
-## Default joypad shortcuts:
-
-* `select` + `start` - exit game and return to Emulationstation
-* `select` + `B` - restart game
-* `select` + `X` - open RetroArch menu that allows you to save/load game state, make a screenshot etc.
+## Default joypad hotkeys:
+Hotkeys | Action
+| :---: | :---: |
+Select+Start | Exit
+Select+Right Shoulder | Save
+Select+Left Shoulder | Load
+Select+Right | Input State Slot Increase
+Select+Left | Input State Slot Decrease 
+Select+X | RGUI Menu
+Select+B | Reset
 
 ***
-
 
 ![InputStation Logo](https://cloud.githubusercontent.com/assets/10035308/7110815/a2c49968-e174-11e4-941c-960290311bca.png)
 ***
-_InputStation is the product of hard work from the EmulationStation Team (Aloshi and Nils) and the RetroPie Team (petrockblog, joolswills, and gizmo98). It is currently in development but once completed it will be an all-in-one controller configuration module for EmulationStation, RetroArch, and other specific emulators._
+_InputStation is the product of hard work from the EmulationStation Team (Aloshi and Nils) and the RetroPie Team (petrockblog, joolswills, and gizmo98). It is an all-in-one controller configuration module for EmulationStation, RetroArch, and will include other specific emulators in the future such as pifba, mupen64plus, etc._
 
 ***
 The following diagrams are for the 3 most common controllers: Super Nintendo, Xbox 360, and PlayStation 3. They can be used as a reference when configuring your controllers. Each emulator page on the wiki has a diagram of the original controller for its respective console that will correspond to the same inputs listed below.
