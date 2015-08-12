@@ -72,7 +72,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [ZX Spectrum](https://github.com/RetroPie/RetroPie-Setup/wiki/ZX-Spectrum) [(FBZX)](http://www.rastersoft.com/fbzx.html), [(Fuse)](http://fuse-emulator.sourceforge.net/), [(lr-fuse)](https://github.com/libretro/fuse-libretro)
 
 ## Troubleshooting & Advanced Configuration
-* [Use Your Smartphone as a Gamepad!](https://github.com/RetroPie/RetroPie-Setup/wiki/Virtual-Gamepad)
+* [Use Your Smartphone as a Gamepad!](https://github.com/RetroPie/RetroPie-Setup/wiki/Virtual-Gamepad) (EXPERIMENTAL)
 * [Advanced Configuration](https://github.com/RetroPie/RetroPie-Setup/wiki/Advanced-Configuration)
 * [Setting up an N64 controller](https://github.com/RetroPie/RetroPie-Setup/wiki/Setting-up-an-N64-- controller)
 * [Setting up a PS3 controller](https://github.com/RetroPie/RetroPie-Setup/wiki/Setting-up-a-PS3-controller)
