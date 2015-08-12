@@ -8,3 +8,5 @@ Just redirected the output of the wolf3d-binary:
 
 So it turns out that this compiled version will only run with files from version 1.4 of the game.
 (It seems that it also could be recompiled somehow so that it will work with the different version.)
+
+http://dosonthepi.blogspot.co.uk/2015/01/install-wolf4sdl.html
