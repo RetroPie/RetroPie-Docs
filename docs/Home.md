@@ -97,9 +97,9 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 
 ## FAQ
 * [Why can't I login as root anymore?](https://github.com/RetroPie/RetroPie-Setup/wiki/Root-Password)
+* [Why Can't I insert coins in lr-mame4all and fba-libretro?](https://github.com/RetroPie/RetroPie-Setup/wiki/Can't-Insert-Coins?)
 * [How would I start from command line, say, the SNES emulator by itself?](https://github.com/RetroPie/RetroPie-Setup/wiki/How-would-I-start-from-command-line,-say,-the-SNES-emulator-by-itself%3F)
 * [I was wondering is there any way of starting Emulationstation on boot instead of going into the terminal and manually starting it.](https://github.com/RetroPie/RetroPie-Setup/wiki/I-was-wondering-is-there-any-way-of-starting-Emulationstation-on-boot-instead-of-going-into-the-terminal-and-manually-starting-it.)
-* [Has anyone figured out how to insert coins in imame4all yet?](https://github.com/RetroPie/RetroPie-Setup/wiki/Has-anyone-figured-out-how-to-insert-coins-in-imame4all-yet%3F)
 * [Does anybody know if there's a way to edit the retroarch.cfg to give me the ability to exit an emulator by using the controller?](https://github.com/RetroPie/RetroPie-Setup/wiki/Does-anybody-know-if-there%27s-a-way-to-edit-the-retroarch.cfg-to-give-me-the-ability-to-exit-an-emulator-by-using-the-controller%3F)
 * [Does Super Mario Allstars work?](https://github.com/RetroPie/RetroPie-Setup/wiki/Does-Super-Mario-All-Stars-work%3F)
 * [Why do some emulators not show up in Emulation Station?](https://github.com/RetroPie/RetroPie-Setup/wiki/Why-do-some-emulators-not-show-up%3F)
