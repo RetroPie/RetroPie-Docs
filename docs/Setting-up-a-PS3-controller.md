@@ -1,4 +1,4 @@
-For the most recent version of RetroPie (2.4+)
+For the most recent version of RetroPie (3.0+)
 ---
 The most recent versions of RetroPie comes with all the packages needed for setting up a PS3 controller, so there is no need to install the required packages separately.
 
@@ -19,42 +19,7 @@ Exit, and run the `retropie_setup.sh` script again. Select:
 SETUP (only if you already have run one of the installations above)
 317 Install PS3 controller driver
 ```
-After it finishes compiling, the GUI prompt will ask you to make sure that your Bluetooth dongle is connected. Press enter. The next prompt will ask you to connect your PS3 controller. Press enter. It will most likely say that it couldn't find your PS3 controller. This is expected, which is why we need to take some additional steps. Exit, and type
-```shell
-cd /opt/retropie/supplementary/ps3controller/
-sudo ./sixpair 
-```
-If successful you should see: 
-```shell
-Current Bluetooth master: DE:AD:BE:EF:00:00
-Setting master bd_addr to: DE:AD:BE:EF:00:00
-```
-
-Reboot your Pi (`sudo reboot`).
-
-After it reboots, we will see if our controller is connected. Type
-```shell
-cd /dev/input/
-ls
-```
-If your controller is successfully connected, you will see
-```shell
-by-id by-path event0 js0 mice
-```
-`js0` is the controller that we are looking for. Now unplug your PS3 controller, and press the PS button. It will flash a couple times, and the 1st player led should turn on. Check if it is connected by typing `ls`. You should see:
-```shell
-event0 js0 mice
-```
-Congratulations! Now your PS3 controller is connected wirelessly. 
-
-To configure this as a retroarch controller, just run the retropie_setup and follow the instructions.
-```shell
-SETUP (only if you already have run one of the installations above)
-317 Register RetroArch controller
-```
-
-All credit goes to this video: http://youtu.be/CouHTixaz94
-
+After it finishes compiling, the GUI prompt will ask you to make sure that your Bluetooth dongle is connected. Press enter. The next prompt will ask you to connect your PS3 controller.
 For older versions of RetroPie
 ---
 For setting up the PS3 Controller we're going to be following This [post](http://booting-rpi.blogspot.ro/2012/08/dualshock-3-and-raspberry-pi.html)
