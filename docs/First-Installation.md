@@ -29,7 +29,7 @@ There are currently two versions of RetroPie 3.0. There is one version for Raspb
 
 **[Raspberry Pi 1](http://blog.petrockblock.com/retropie/retropie-downloads/retropie-project-sd-card-image-for-raspberry-pi-1-beta/)**
 
-**[Raspberry Pi 2](http://blog.petrockblock.com/retropie/retropie-downloads/retropie-project-sd-card-image-for-raspberry-pi-1-beta/)**
+**[Raspberry Pi 2](http://blog.petrockblock.com/retropie/retropie-downloads/retropie-project-sd-card-image-for-raspberry-pi-2-beta/)**
 
 (If these links become outdated see the downloads page [here](http://blog.petrockblock.com/retropie/retropie-downloads/).)
 
