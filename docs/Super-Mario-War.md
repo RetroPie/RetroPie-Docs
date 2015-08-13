@@ -1,15 +1,20 @@
-![](gfx/docs/splash.png)
+![](https://github.com/HerbFargus/Super-Mario-War/blob/master/gfx/docs/splash.png)
 
-# Super Mario War 1.8 - ReadMe
+***
+ _Super Mario War V. 1.8_
 
-2004-2008 (c) Florian Hufsky, Two52, and many others.
- Last ReadMe update: 7 May 2008
+ _2004-2008 (c) Florian Hufsky, Two52, and many others._
 
- [Official Super Mario War Website](http://supermariowar.supersanctuary.net/)
+ _Last ReadMe update: 7 May 2008_
+
+ _[Official Super Mario War Website](http://supermariowar.supersanctuary.net/)_
  
- [Official Super Mario War Forums](http://72dpiarmy.supersanctuary.net/)
+ _[Official Super Mario War Forums](http://72dpiarmy.supersanctuary.net/)_
  
- [Official Fan-Made Content Website](http://smwstuff.net)
+ _[Official Fan-Made Content Website](http://smwstuff.net)_
+
+***
+
 
 ## A quick note
 
@@ -21,7 +26,7 @@ Also, we have an official outlet for fan-made content like maps, music packs, sk
 
 ## Getting Started
 
-![](gfx/docs/ss01.png)
+![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/ss01.png)
 
 Super Mario War is a game for up to four players with many different modes of play. The basic goal of the game is to be the last player standing, and to accomplish this goal you must jump on your opponents' heads to kill them. There are many Mario-themed items you can use to help you kill your opponents, as well. In addition, there are several variations on this basic gameplay mechanic which you can try, such as Chicken, Capture The Flag, and so on. Plus, for those who enjoy customization, there are several aspects of the game which you can tweak to your liking through the Options menus, and if you like, you can make your own maps, skins, and other custom content to use (or download others' to use), too!
 
@@ -29,7 +34,7 @@ This section of the manual explains how to navigate the game's menus, and contai
 
 ### The Main Menu
 
-![](gfx/docs/ss02.png)
+![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/ss02.png)
 
 From this menu, you can access everything else in the game.
 
@@ -41,7 +46,7 @@ From this menu, you can access everything else in the game.
 
 ### Match Type Menu
 
-![](gfx/docs/ss03.png)
+![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/ss03.png)
 
 From this screen, you can choose which type of match you'd like to play.
 
@@ -53,7 +58,7 @@ From this screen, you can choose which type of match you'd like to play.
 
 ### Team and Character Selection
 
-![](gfx/docs/ss04.png)
+![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/ss04.png)
 
 From this screen, you can configure who is using which character and is on which team.
 
@@ -66,7 +71,7 @@ From this screen, you can configure who is using which character and is on which
 
 ### Single Game Menu
 
-![](gfx/docs/ss05.png)
+![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/ss05.png)
 
 From this menu, you can select your game mode, select the map you wish to use, change various mode settings, and tag your maps for easy selection. (When playing a Tour or World Map, all options on this screen, besides Start, are disabled.)
 
@@ -79,13 +84,13 @@ From this menu, you can select your game mode, select the map you wish to use, c
 
 ### Playing the Game
 
-![](gfx/docs/ss06.png)![](gfx/docs/ss07.png)
+![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/ss06.png)![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/ss07.png)
 
 The main goal of the game is to stomp on your opponents' heads to kill them, although depending on the map you're playing on, you may be able to kill them in other ways, such as with items. There may also be additional rules or a different way of winning, depending on the mode you are playing; for information on these, you can check the Game Modes section of this manual. For information on the controls you'll be using to play the game, check out the section on Controls, below. And to learn about the different items and map elements you can use to turn the tables on your opponents, take a look at the Items and Special Blocks sections, towards the middle of the manual.
 
 ### Tournaments, Tours, and World Maps
 
-![](gfx/docs/ss08.png)![](gfx/docs/ss09.png)![](gfx/docs/ss10.png)
+![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/ss08.png)![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/ss09.png)![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/ss10.png)
 
 In a Tournament, players play games until one player has amassed a certain number of wins. The number of the Tournament determines how many wins are required (so, if you pick Tournament 4, you have to win four times). Each time a player wins, they will receive an icon on the scoreboard (first picture, above). This icon will be representative of the mode played.
 
@@ -93,11 +98,11 @@ In a Tour, players play a series of predetermined games ("tour stops"). At the e
 
 In a World Map, a random player is given control of the board to start. Players navigate the map and play predetermined games to compete for the best score. To check and/or play a game on the map, press Turbo on the game's tile. (Enter for Player 1.) The screen preceding a game shows the name of the Map Stop, map, mode, and goal. Also shown are any items rewarded after the game and the point value for the Map Stop. The winner of the game gains control of the board. Items gained from Mushroom Houses, game rewards, etc., can be accessed by pressing Use Item. To use an item in your inventory, select it and press Turbo. 
 
-![](gfx/docs/ss11.png)
+![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/ss11.png)
 
 For a list of the World Map items, take a look at the Items and Special Blocks section towards the middle of the manual. Mushroom Houses can be found on many World Maps, so make good use of them! Each Mushroom House can hold up to five items to choose from. The items may be in order, or they may be random, depending on how it's set up in the world's txt file. To open a chest, simply stand in front of it and press Turbo.
 
-![](gfx/docs/ss13.png)
+![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/ss13.png)
 
 In addition to predetermined games and Mushroom Houses, there are vehicle tiles, which move after every game or Mushroom House. Upon landing on one, it will automatically start the game set to it. In some maps, there are bridges that rise and lower with each game, blocking players from travelling across. There are also warp pipes that can be used to travel. Along with those, there are locked doors, which can be opened with a key obtained through one of the games on the map. The World Map match ends when the game marked "End Stage" has been played. There can be more than one of these per map.
 
@@ -215,7 +220,7 @@ There are many different ways to play Super Mario War. Each one is a little diff
 
 An option common to all modes (and subsequently not listed under each one) is the ability to set the basic parameter to "Unlimited", or Free Play.
 
-### ![](gfx/docs/m01.png)Classic
+### ![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/m01.png)Classic
 
 This is the original Mario War game where each player starts with X lives and the last player with any lives left is the winner. Touching a hazard (such as spikes) causes you to lose a life; collecting a 1UP mushroom gives you an extra life.
 
@@ -225,7 +230,7 @@ Additional Parameters:
 
 *   **On Kill** (whether you respawn upon death):**Respawn** default, Shield
 
-### ![](gfx/docs/m02.png)Frag Limit
+### ![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/m02.png)Frag Limit
 
 This is the standard frag limit game where the first player to kill X players wins. Dying on a hazard causes you to lose a frag; collecting a 1UP mushroom gives you an extra frag.
 
@@ -236,7 +241,7 @@ Basic Parameter: **Kills** (5 to 100 by 5s, **20** default)
 *   **On Kill** (whether you respawn upon death):**Respawn** default, Shield*   
 *   **Scoring** (what type of kills count): **All Kills** default, Push Kills Only
 
-### ![](gfx/docs/m03.png)Time Limit
+### ![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/m03.png)Time Limit
 
 This is a timed game played to the number of seconds you select. The player with the most frags at the end of this time is the winner. Dying on a hazard causes you to lose a frag; collecting a 1UP mushroom gives you an extra frag.
 
@@ -248,7 +253,7 @@ Additional Parameters:
  *   **Scoring** (what type of kills count): **All Kills** default, Push Kills Only*   
  *   **Extra Time Slider** (how often an extra time powerup appears from item blocks): 0 to 20 (default of ?)
 
-### ![](gfx/docs/m04.png)Jail
+### ![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/m04.png)Jail
 
 This mode is similar to Frag Limit, but with a couple of modifications. Each player you kill in this mode will spawn in jail. When a player is in jail, their movement is slowed down and their jumping ability is hampered. If all the players on other teams are jailed, you earn extra points and everyone (both on your team and other teams) is freed. (This bonus is disabled in a 1v1 match, however, due to complete pointlessness.) If a player on your team tags you while in jail, you are freed. You are also freed if you spend enough time in jail.
 
@@ -261,7 +266,7 @@ Additional Parameters:
 *   **Tag Free** (whether you can tag your teammates to free them): **On**, Off*   
 *   **Jail Key Slider** (how often a jail key powerup appears from item blocks): 0 to 20 (default of ?)
 
-### ![](gfx/docs/m05.png)Coin Collection
+### ![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/m05.png)Coin Collection
 
  This game isn't about killing other players, it is about collecting coins. One or more coins will appear somewhere on the map. If someone grabs a coin, or if nobody can get to one within a certain amount of time, a new one will appear somewhere else. The first player to collect X coins wins. Whether dying has an effect can be set in this mode's options, and collecting a 1UP counts as collecting a coin.
 
@@ -272,7 +277,7 @@ Additional Parameters:
 *   **Penalty** (whether there is a -1 penalty for death): On, **Off***   
 *   **Quantity** (how many coins will appear at once): **1**, 2, 3, 4, 5
 
-### ![](gfx/docs/m06.png)Stomp
+### ![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/m06.png)Stomp
 
 In this mode, Goombas, Cheep Cheeps, Green and Red Koopas, Spinies, Buzzy Beetles, Paragoombas, and Green and Red Parakoopas will randomly spawn; the goal is to stomp or shoot as many as you can. The first player to kill X enemies wins. Stomping other players does nothing; neither does getting killed on hazards. Collecting a 1UP counts as an extra kill.
 
@@ -283,7 +288,7 @@ Additional Parameters:
 *   **Rate** (how often, in general, enemies appear): Very Slow, Slow, **Moderate**, Fast, Very Fast*   
 *   **Goomba, Koopa, Cheep Cheep, Red Koopa, Spiny, Buzzy Beetle, Paragoomba, Parakoopa, and Red Parakoopa Sliders** (comparative rates of each enemy appearing): 0 to 10 each (defaults of 1, 1, 2, ?, ?, ?, ?, ?, and ? respectively)
 
-### ![](gfx/docs/m07.png)Yoshi's Eggs
+### ![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/m07.png)Yoshi's Eggs
 
 In this mode, up to 16 colored Yoshis and up to 16 bouncy little spotted eggs will randomly spawn. Players can pick the eggs up by holding the Turbo button and bring it back to a Yoshi of that color to gain a point. The first person to return X eggs to Yoshi wins the game. If you die, of course, you will lose the egg; collecting a 1UP gives you an additional point. If an egg is not grabbed for a long enough period of time or it explodes, it will move to another random location.
 
@@ -294,7 +299,7 @@ Additional Parameters:
 *   **Egg and Yoshi Sliders** (how many of each color egg and Yoshi will appear at once): 0 to 4 each (defaults of ?, ?, ?, ?, ?, ?, ?, and ? respectively)*   
 *   **Explosion Timer** (# of seconds before eggs explode): **Off**, 3, 5, 8, 10, 15, 20
 
-### ![](gfx/docs/m08.png)Capture The Flag
+### ![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/m08.png)Capture The Flag
 
 In this mode, each team has a base and a flag. The goal is to protect your flag from being stolen and at the same time steal other teams' flags and bring them back to your base. The first team to return X enemy flags to their base wins. You can also bring your own flags back to your base if you can retrieve them from an opponent. Collecting a 1UP counts as having collected an enemy flag; dying in any way has no effect on your score.
 
@@ -308,7 +313,7 @@ Additional Parameters:
 *   **Auto Return** (seconds before your flag returns itself): None, 5, 10, 15, **20**, 25, 30, 35, 40, 45, 50, 55, 60*   **Need Home** (whether your flag has to be in the base for you to score): On, **Off***   
 *   **Center Flag** (whether you have to steal other teams' flags or return a single flag to your base): On, **Off**
 
-### ![](gfx/docs/m09.png)Chicken
+### ![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/m09.png)Chicken
 
 In this mode, the first person to kill another person will turn into the chicken. The player that is the chicken will constantly rack up points. The first player to X points wins. Dying on spikes will cause you to stop being the chicken, if you are; collecting a 1UP mushroom will give you 10 points no matter who you are. Killing another player while you're the chicken will also give you a bonus of 5 points.
 
@@ -319,7 +324,7 @@ Additional Parameters:
 *   **Show Target** (whether an extra crosshair is displayed around the chicken): **On**, Off*   
 *   **Chicken Glide** (whether the chicken has a floating ability): On, **Off**
 
-### ![](gfx/docs/m10.png)Tag
+### ![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/m10.png)Tag
 
 Tag is essentially the opposite of Chicken mode. At the start, one player will randomly be chosen as the tagged player (they will turn bright green with a white border). It is the job of the tagged one to kill (or touch) somebody else to transfer the tag. The tagged player gets a speed boost to help him catch the other players. When you're the tagged player, you'll constantly be losing points. When you hit 0, you are removed from the game and the player with the highest points will then become tagged. Being killed or killing yourself takes 5 points off your score and collecting a 1UP mushroom restores 10 points.
 
@@ -329,7 +334,7 @@ Additional Parameters:
 
 *   **Touch Tag** (whether you can transfer the tag by just touching): **On**, Off
 
-### ![](gfx/docs/m11.png)Star
+### ![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/m11.png)Star
 
 In this mode, there will either be a Ztar, a Shine Sprite, or Multi Stars, depending on how the options are set. One player will be designated to be the owner of one of these objects, and if other players touch it, they will steal the object's ownership status. There is also a timer that gradually counts down.
 
@@ -348,7 +353,7 @@ Additional Parameters:
 *   **Star Type** (which object is used): **Ztar**, Shine, Multi Star, Random*   
 *   **Extra Time Slider** (how often an extra time powerup appears from item blocks): 0 to 20 (default of ?)
 
-### ![](gfx/docs/m12.png)Domination
+### ![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/m12.png)Domination
 
 This mode is like the domination mode from many FPSs. There will be several bases randomly placed around the map and it is the goal to control as many of them as possible. You control them by tagging them. The more you control, the faster you accumulate points; the first player to accumulate X points wins. Additionally, every so often the bases will automatically relocate themselves to new, random positions. Collecting a 1UP gives you 10 points; what happens when you die (by any means) can be set in this mode's options.
 
@@ -365,7 +370,7 @@ On Death:
  *   **Move Bases** (whether your bases move): On, **Off***   
  *   **Steal Bases** (whether your bases are taken by who killed you): On, **Off***   Steal Bases overrides Lose Bases when it is on.
 
-### ![](gfx/docs/m17.png)King Of The Hill
+### ![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/m17.png)King Of The Hill
 
 In this mode there is a small zone, "the hill," designated by a chainlink fence design. While your team is the only one with players in this zone, you have control of the hill; its border will change to your team's color and your team will gain points at a constant rate. However, the hill will occasionally relocate itself to a new, random position. First team to X points wins. Collecting a 1UP grants 10 points; dying does not affect your score.
 
@@ -377,7 +382,7 @@ Additional Parameters:
 *   **Relocate** (time between relocations): Never, 5, 10, 15, **20**, 25, 30, or 45 seconds, 1, 1.5, 2, 2.5, or 3 minutes* 
 *   **Max Multiplier** (increase in point gain over control time): **None**, 2, 3, 4, 5
 
-### ![](gfx/docs/m13.png)Race
+### ![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/m13.png)Race
 
 In this mode, you must race around the map tagging moving targets in numerical order (you must tag "1" first, then "2", and so on). As you tag targets, your team indicator will appear on them. Once you tag all the numbered targets, head to the finish line (the checkered flag) to score a point. Collecting a 1UP gives you one extra lap; the penalty for dying can be configured in this mode's options. (It should be noted that in Race mode, 2UPs and 3UPs are only worth 1 extra lap, and 5UPs are worth only two, due to the usual small size of the goal score.)
 
@@ -389,7 +394,7 @@ Additional Parameters:
 *   **Speed** (how fast the targets move): Stationary, Very Slow, Slow, **Moderate**, Fast, Very Fast*   
 *   **Penalty** (what you lose when you die): None, One Goal, **All Goals**
 
-### ![](gfx/docs/m14.png)Owned
+### ![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/m14.png)Owned
 
 This mode is similar to Domination, except the players are your targets. Each player that you kill will spawn with a circle of your color behind them. For every player you have "Owned", the faster you accumulate points. If you are killed, you lose all your owned players. Collecting a 1UP gives you 10 points. Also, if you kill one of the players you already own, you will receive an extra 5 points.
 
@@ -397,7 +402,7 @@ Basic Parameter: **Points** (50 to 1000 by 50s, **200** default)
 
 Additional Parameters: None
 
-### ![](gfx/docs/m15.png)Frenzy
+### ![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/m15.png)Frenzy
 
 This mode has the same rules as Frag Limit, except special powerup cards will randomly spawn around the map. Collecting one of these cards has the same effect as getting that item out of an item box, for the most part. This just makes the basic deathmatch just a little more exciting, not to mention that it lets you have items on maps that usually don't. There are eighteen items that can appear on the cards: Bob-Ombs, Fire Flowers, Hammers, Feathers, Boomerangs, Ice Wands, Bombs, Raccoon Leaves, P Wings, Tanooki Suits, POWs, MOds, Bullet Bills, Podobos, and all four different types of Shells. There is also a nineteenth ? card that gives a powerup at random.
 
@@ -412,7 +417,7 @@ Additional Parameters:
 *   If Limit is set to Single Item, no more cards will appear until the person who picked up the first one uses it (in the case of Stored items or the Bob-Omb), no longer has it (in the case of Weapon items or the Bob-Omb), or has touched it (in case of Shells). In either case there is no delay for the card to appear after the first time. (This is the same way that the card in Bob-Omb mode worked in version 1.5.)*   
 *   If Store Shells is set to On, then when you touch a shell card, the shell will become a Stored item. If it is set to Off, then touching a shell card has the same effect as touching a regular shell (i.e. if you are holding Turbo then you will grab the shell; otherwise you will just kick it out of midair).
 
-### ![](gfx/docs/m16.png)Survival
+### ![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/m16.png)Survival
 
 This mode has the same rules as Classic, except now, Thwomps will rain down from the sky, Podobos will pop up from the bottom, and fireballs will shoot in from the sides. Hitting any of these hazards will kill you. Just as in Classic, the last player alive wins.
 
@@ -425,7 +430,7 @@ Additional Parameters:
 *   **Speed** (how fast Thwomps fall down): Very Slow, Slow, **Moderate**, Fast, Very Fast*   
 *   **Shield** (allows you to set a separate shield setting for this mode): **On**, Off
 
-### ![](gfx/docs/m18.png)Greed
+### ![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/m18.png)Greed
 
 This mode is basically a twist on Coin Collection mode. You now start with a number of coins, and being stomped, shot, or dying on spikes or lava makes you drop coins. The last player left holding any coins wins.
 
@@ -435,7 +440,7 @@ Additional Parameters:
 
 *   **Coin Life** (# of seconds before dropped coins disappear): 1 to 10, 12, 15, 18, 20, 25, **30**
 
-### ![](gfx/docs/m19.png)Health
+### ![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/m19.png)Health
 
 This mode has the same rules as Classic, except now, players have a set number of health points. These health points are shown in half and full hearts. When a player loses reaches 0 hearts, they lose a life. Collecting the 1, 2, 3, and 5UPs restore health. Just like Classic, the last player alive wins.
 
@@ -447,7 +452,7 @@ Additional Parameters:
 *   **Max Life** (max # of health points players can have in a match): **2**, 3, 4, 5, 6, 7, 8, 9, 10*   
 *   **Extra Life Slider** (how often a heart powerup appears from item blocks): 0 to 20 (default of 10)
 
-### ![](gfx/docs/m20.png)Card Collection
+### ![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/m20.png)Card Collection
 
 Like Coin Collection, this mode is about collecting, but instead of coins, you collect cards. One or more cards will appear somewhere on the map. If someone grabs a card, it reveals either a star, flower, or mushroom on the other side of it. Collecting a combination of any 3 cards results in 1 point. Players can gain more points by collecting three of the same card. Collecting 3 mushroom cards results in 2 points, 3 flower cards results in 3 points, and 3 star cards results in 5 points. Dying causes your player to drop the last card picked up, which other players can steal. The first to reach the point limit is the winner.
 
@@ -459,7 +464,7 @@ Additional Parameters:
 *   **Rate** (# of seconds for new cards to appear when they can): Instant, 1 to **3**, 5, 10, 15, 20, 25, 30*   
 *   **Bank Time** (how long players have to swap their third card): Instant, 1 to 10 (default of 3)
 
-### ![](gfx/docs/m21.png)Phanto
+### ![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/m21.png)Phanto
 
 In this mode, players compete for ownership of a key. However, as long as a player is carrying the key, a number of Phantos will chase after the player. While carrying the key, the player's score constantly increases. Not only the key carrier has to be careful of the Phantos this time, though! In addition to the original Phantos, there are now green Phantos that can kill any player and red Phantos that drop the key carrier's score if one manages to catch the player. The first to reach the point limit is the winner.
 
@@ -472,63 +477,63 @@ Additional Parameters:
 
 ## Special Blocks
 
-### ![](gfx/docs/b01.png)Bricks
+### ![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/b01.png)Bricks
 
 If you hit these from underneath, from the side with a shell, or flip them with a cape or tail, they will break. If anything is standing on these when you break them from below, you will kill it.
 
-### ![](gfx/docs/b02.png)Note Blocks
+### ![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/b02.png)Note Blocks
 
 These make you bounce. If you time your jump off them, you can go really high!
 
-### ![](gfx/docs/b10.png)Orange Note Blocks
+### ![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/b10.png)Orange Note Blocks
 
 Like regular Note Blocks, these make you bounce, but you can go even higher!
 
-### ![](gfx/docs/b11.png)Blue Note Blocks
+### ![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/b11.png)Blue Note Blocks
 
 Like regular Note Blocks, these make you bounce, but you can't high jump from them.
 
-### ![](gfx/docs/b03.png)Item Boxes
+### ![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/b03.png)Item Boxes
 
 If you hit one of these from underneath, from the side with a shell, or flip them with a cape or tail, a random item will pop out of it. You can also kill things on top of these by bumping them.
 
-### ![](gfx/docs/b14.png)View Blocks
+### ![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/b14.png)View Blocks
 
 These are almost identical to Item Blocks, except you can see the item inside!
 
-### ![](gfx/docs/b04.png)Flip Blocks
+### ![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/b04.png)Flip Blocks
 
 If you hit these from underneath, they will start spinning. While they are spinning, you can go through them as if they weren't there. If they aren't spinning, and you hit these with shells, flip them with a cape or tail, or super smash them, they will break.
 
-### ![](gfx/docs/b05.png)Bounce Blocks
+### ![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/b05.png)Bounce Blocks
 
 If something is standing on one of these, and you hit it from underneath, you will kill what was standing there. Don't stand on these too much if you can avoid it!
 
-### ![](gfx/docs/b06.png)Donut Blocks
+### ![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/b06.png)Donut Blocks
 
 If you stand on these too long they will fall off the map. Watch out for traps underneath! Falling donut blocks can kill other players if they hit them, so try it if you get a chance!
 
-### ![](gfx/docs/b15.png)Item Breakable Blocks
+### ![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/b15.png)Item Breakable Blocks
 
 These blocks can only be destroyed by using the item shown on the front of the block. They come in Fire Flower, Cape Feather, Shell, Bomb, Boomerang, Hammer, Goomba's Shoe, P Wing, Star, and Raccoon Leaf varieties. The Bomb variety can be destroyed with any explosion. The Cape Feather and Raccoon Leaf varieties can be destroyed by flipping them. The Goomba's Shoe variety can be destroyed by the Goomba Shoe and Tanooki Statue's super smash. The P Wing variety can be destroyed from below during P Wing flight. The Shell variety can be destroyed by any shell.
 
-### ![](gfx/docs/b07.png)Blue Throw Blocks
+### ![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/b07.png)Blue Throw Blocks
 
 You can pick these up and throw them at other players with the Turbo button. They will break when they hit a wall or another player. They will also disappear by themselves if you hold them for too long.
 
-### ![](gfx/docs/b12.png)Grey Throw Blocks
+### ![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/b12.png)Grey Throw Blocks
 
 You can pick these up and throw them at other players with the Turbo button. Unlike the Blue Throw Block, these can kill multiple players, but they still break when they hit walls. They will also disappear by themselves if you hold them for too long.
 
-### ![](gfx/docs/b13.png)Red Throw Blocks
+### ![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/b13.png)Red Throw Blocks
 
 You can pick these up and throw them at other players with the Turbo button. Unlike the Blue and Grey Throw Blocks, these can kill multiple players and bounce off of walls. They will also disappear by themselves if you hold them for too long.
 
-### ![](gfx/docs/b08.png)ON/OFF Switches
+### ![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/b08.png)ON/OFF Switches
 
 These come in four colors. While they are ON, all corresponding Switch Blocks on the map will be solid; similarly, while they are OFF, their Switch Blocks will be transparent. When you hit one of these from underneath, with a shell from the side, or spin them with a cape or tail, they will switch states. You can also kill people standing on Switches by bumping them from underneath. Players caught in Switch Blocks when turned on are killed.
 
-### ![](gfx/docs/b09.png)Switch Blocks
+### ![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/b09.png)Switch Blocks
 
 Like the Switches, these come in four colors. When you can see their outlines, you can travel right through them; while they are completely visible, they act as a regular solid tile.
 
@@ -550,175 +555,175 @@ Here are the classes of items:
 *   **<font color="77aaff">Map Items</font>** - These items are like throwable items, but they are a part of the map itself. They have different uses, depending on the map item.*   
 *   **<font color="00cc33">World Map</font>** - These items can only be found and used in a World Map match. Their uses range from score alteration to stealing control of the board!
 
-### ![](gfx/docs/i01.png)1UP Mushroom
+### ![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/i01.png)1UP Mushroom
 
 **Type: <font color="007700">Instant</font>**
 
 In game modes where the score is a measure of lives, frags, Goomba kills, etc., this item will grant you an extra life, frag, lap, etc. In all other modes, this item will grant you 10 extra points.
 
-### ![](gfx/docs/i02.png)2UP Mushroom
+### ![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/i02.png)2UP Mushroom
 
 **Type: <font color="007700">Instant</font>**
 
 Catching this pretty pink 'shroom counts as having collected 2 1UP Mushrooms (so you will receive either 2 extra lives, frags, etc., or 20 points towards the goal, with the exception of Race and Star modes in which this item still grants only 1 extra point). However, it moves a little faster than a 1UP.
 
-### ![](gfx/docs/i03.png)3UP Mushroom
+### ![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/i03.png)3UP Mushroom
 
 **Type: <font color="007700">Instant</font>**
 
 Grabbing a blue mushie counts as having collected 3 1UP Mushrooms (so you will receive either 3 extra lives, frags, etc., or 30 points towards the goal, with the exception of Race and Star modes in which this item still grants only 1 extra point). However, it moves quite a bit faster than a 1UP.
 
-### ![](gfx/docs/i04.png)5UP Mushroom
+### ![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/i04.png)5UP Mushroom
 
 **Type: <font color="007700">Instant</font>**
 
 Snagging this golden treat counts as having collected 5 1UP Mushrooms (so you will receive either 5 extra lives, frags, etc., or a whopping 50 points towards the goal, with the exception of Race and Star modes in which this item grants only 2 extra points). However, it is the fastest-moving of all the mushrooms, as well as the rarest item in the game!
 
-### ![](gfx/docs/i07.png)Poison Mushroom
+### ![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/i07.png)Poison Mushroom
 
 **Type: <font color="007700">Instant</font>**
 
 Upon collecting this item, unless you are invincible, you will die. This will have the same effect on your score as hitting spikes or lava.
 
-### ![](gfx/docs/i20.png)Mystery Mushroom
+### ![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/i20.png)Mystery Mushroom
 
 **Type: <font color="007700">Instant</font>**
 
 When you grab this item, everyone on the map will immediately switch positions and stored items with each other. The actual switching is random, so you could swap with Player 2 one time and with Player 3 the next. If whoever takes your place dies within one second of getting there, you will be credited with a kill. Additionally, whoever's place you take, you will also take their stored item in place of yours, even if they didn't have anything (in which case you will then have nothing stored). The effect used when players switch can be changed in the Options menu under Item Settings.
 
-### ![](gfx/docs/i27.png)Extra Time **<font color="993300">(Mode Specific Powerup)</font>**
+### ![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/i27.png)Extra Time **<font color="993300">(Mode Specific Powerup)</font>**
 
 **Type: <font color="007700">Instant</font>**
 
 When you grab this item in Timed or Star modes, an additional amount of time is added to the clock. How often this item appears can be set in the Additional Parameters for each mode.
 
-### ![](gfx/docs/i28.png)Heart **<font color="993300">(Mode Specific Powerup)</font>**
+### ![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/i28.png)Heart **<font color="993300">(Mode Specific Powerup)</font>**
 
 **Type: <font color="007700">Instant</font>**
 
 This item only appears in Health mode. When you grab this item, an extra half-heart is added to your player's health, depending on the Max Health option. How often this item appears can be set in the Additional Parameters.
 
-### ![](gfx/docs/i05.png)Fire Flower
+### ![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/i05.png)Fire Flower
 
 **Type: <font color="ff0000">Weapon</font>**
 
 This item gives you the ability to shoot deadly fireballs with the turbo button. Fireballs bounce along the ground for a while until they disappear, but they will also disappear if they hit a wall or another player.
 
-### ![](gfx/docs/i08.png)Hammer
+### ![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/i08.png)Hammer
 
 **Type: <font color="ff0000">Weapon</font>**
 
 This item will give you the ability to throw hammers. Hammers travel in an arc whose lateral distance is determined by how fast you are moving, and as a result, hammers are not very easy to aim - but they can give you a big advantage over players who are trying to jump you if you can use them well.
 
-### ![](gfx/docs/i19.png)Boomerang
+### ![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/i19.png)Boomerang
 
 **Type: <font color="ff0000">Weapon</font>**
 
 This item gives you the ability to shoot boomerangs. Using the default behavior, Boomerangs will travel ahead in a long arc before turning around and going in a straight line until they disappear. However, there are other trajectory types you can choose, under the Options menu (see below), if you don't like the default. Boomerangs, like hammers, can be shot through solid walls.
 
-### ![](gfx/docs/i18.png)Feather
+### ![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/i18.png)Feather
 
 **Type: <font color="ff0000">Weapon</font>**
 
 When you grab this item, you will don a cape and be granted the ability to jump a second time in midair! The second jump will be weaker than the first, though. This item is great for reaching high ledges, items, and targets. You can even attack enemies with a spin move! (Note that the Feather counts as a Weapon, so you can't combine it with others.)
 
-### ![](gfx/docs/i21.png)P-Wings
+### ![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/i21.png)P-Wings
 
 **Type: <font color="ff0000">Weapon</font>**
 
 When you grab this item, you will don a pair of wings and be granted the ability to take flight after a jump! The flight lasts for a limited time or until you release Jump. Like the Feather, this item is great for reaching high ledges, items, and targets. (Note that, the P-Wings don't allow you to shoot anything, but it also counts as a Weapon.)
 
-### ![](gfx/docs/i22.png)Raccoon Leaf
+### ![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/i22.png)Raccoon Leaf
 
 **Type: <font color="ff0000">Weapon</font>**
 
 When you grab this item, you will don a tail and be granted the ability to float safely to the ground after a jump! How slowly you float down depends on how fast you tap Jump. There is a limit to how slowly you can float down, though. Like the Feather, you can attack enemies with a spin move. (Like the Feather and P-Wings, the Raccoon Leaf also counts as a weapon.)
 
-### ![](gfx/docs/i23.png)Bomb
+### ![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/i23.png)Bomb
 
 **Type: <font color="0000ff">Weapon</font>**
 
 This item gives you the ability to throw bombs. Pressing the turbo button causes you to spawn a bomb in your player's hands, which you can throw or carry around. The bombs take a few seconds to explode, but do so with the force of a Bob-Omb explosion.
 
-### ![](gfx/docs/i24.png)Ice Wand
+### ![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/i24.png)Ice Wand
 
 **Type: <font color="0000ff">Weapon</font>**
 
 This item gives you the ability to shoot a Magikoopa wand blast across the screen. The wand blast freezes any players it hits in a block of ice. Frozen players can be shattered simply by touching them. The Ice Wand can go through walls and hit multiple players, but it doesn't work on the enemies of Stomp Mode.
 
-### ![](gfx/docs/i06.png)Invincibility Star
+### ![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/i06.png)Invincibility Star
 
 **Type: <font color="0000ff">Collectable</font>**
 
 Gives the player invincibility for 10 seconds. During this time, the player can walk on spikes/lava, stay above the map as long as they want, continually fall without burning up, and kill other players just by touching them.
 
-### ![](gfx/docs/i10.png)Bob-Omb
+### ![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/i10.png)Bob-Omb
 
 Type: <font color="0000ff">Collectable</font>**
 
 This item turns you into a Bob-Omb. Pressing the turbo button causes you to explode and kill players around you. However, you can only explode once before you return to normal again. If you kill a player who is a Bob-Omb, and you aren't one already (which includes if you were one and just exploded), you will steal their Bob-Omb status.
 
-### ![](gfx/docs/i25.png)Tanooki Suit
+### ![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/i25.png)Tanooki Suit
 
 **Type: <font color="0000ff">Collectable</font>**
 
 This item gives you the ability to become a statue. While your player is a statue, you cannot be killed by stomping, projectiles, enemies, map hazards, spikes, and lava. If you change your player into a statue in midair, the player will do a super smash like with the Goomba's Shoe. This can be used to drop down quickly for an item or to crush another player. Upon landing, the impact clouds can kill other players at close range. Statue players can still be crushed.
 
-### ![](gfx/docs/i09.png)Clock
+### ![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/i09.png)Clock
 
 **Type: <font color="770077">Stored</font>**
 
 When you use this item, all players that are not on your team will be slowed down and will only be able to jump 2 blocks high. These effects last for 10 seconds.
 
-### ![](gfx/docs/i13.png)Bullet Bill
+### ![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/i13.png)Bullet Bill
 
 **Type: <font color="770077">Stored</font>**
 
 When this item is used, Bullet Bills of your team color will fire in from the sides of the screen for about 5 seconds. Players on the opposing team must dodge or jump on the Bullet Bills to avoid death. Additionally, If two players' Bullet Bills collide, they will explode. This explosion will kill anyone it touches, including the owners of the Bullet Bills.
 
-### ![](gfx/docs/i11.png)POW Block
+### ![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/i11.png)POW Block
 
 **Type: <font color="770077">Stored</font>**
 
 When this item is used, the screen shakes for about half a second and any players that touch the ground during this time are killed. You should watch for when an opponent uses one of these, and make sure you make a big jump so you don't die.
 
-### ![](gfx/docs/i12.png)MOd Block
+### ![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/i12.png)MOd Block
 
 **Type: <font color="770077">Stored</font>**
 
 This item acts exactly like the POW block, except that when you use it, instead of killing players on the _ground_, you kill players in the _air_. So, when an opponent is using one of these, you should stay on the ground for a bit to avoid getting killed.
 
-### ![](gfx/docs/i26.png)Golden Podobo
+### ![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/i26.png)Golden Podobo
 
 **Type: <font color="770077">Stored</font>**
 
 When this item is used, a single wave of podobos rise from the bottom of the screen, killing anything they touch that isn't on your team. When an opponent is using one of these, make sure you get to high ground, and fast!
 
-### ![](gfx/docs/i29.png)Jail Key **<font color="993300">(Mode Specific Powerup)</font>**
+### ![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/i29.png)Jail Key **<font color="993300">(Mode Specific Powerup)</font>**
 
 **Type: <font color="770077">Stored</font>**
 
 This item only appears in Jail mode. When you use this item, your player is instantly released from jail, if not already free. Even if you don't need it, grab the Jail Key so others can't use it! How often this item appears can be set in the Additional Parameters.
 
-### ![](gfx/docs/i14.png)Green Shell
+### ![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/i14.png)Green Shell
 
 **Type: <font color="ff7700">Throwable</font>**
 
 When this item is thrown or stomped on, it will start bouncing around the map. It can be jumped a second time to stop it. It will kill the first person it hits while it is moving, and will disappear afterwards. It will also disappear if it stays moving for too long without hitting anyone. You can also kill Green Shells with projectile weapons such as fireballs. Green shells will not disappear by themselves if they are not moving or if someone is carrying them.
 
-### ![](gfx/docs/i15.png)Red Shell
+### ![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/i15.png)Red Shell
 
 **Type: <font color="ff7700">Throwable</font>**
 
 This item is exactly like a Green Shell except for one detail: it doesn't stop when it hits one player, and will instead plow through as many things as are in its way until its time runs out or until someone shoots it.
 
-### ![](gfx/docs/i16.png)Spiny Shell
+### ![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/i16.png)Spiny Shell
 
 **Type: <font color="ff7700">Throwable</font>**
 
 This item is exactly like the Red Shell, except that it is covered in spikes and so it can't be jumped on to stop it once it's going. It can still be shot, though.
 
-### ![](gfx/docs/i17.png)Buzzy Shell
+### ![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/i17.png)Buzzy Shell
 
 **Type: <font color="ff7700">Throwable</font>**
 
@@ -728,127 +733,127 @@ This item is exactly like the Red Shell, except that it is immune to projectile 
 
 When two shells collide, if they are both the same "strength" (i.e. if they are both green or if they are both multikilling shells) then both of them will die. Otherwise, only the green shell will die (the multikilling shell will kill it and keep going). Also, when you win a shell from the Bonus Wheel, it will become a stored item. When you use it, if you are holding the Turbo button, the shell will appear in your hands so you can kick it; otherwise, it will appear in front of you and start moving right away.
 
-### ![](gfx/docs/i30.png)Green Springboard
+### ![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/i30.png)Green Springboard
 
 **Type: <font color="77aaff">Map Items</font>**
 
 This item can be carried through the map and used as a portable Note Block. The Green Springboard allows you to make timed jumps like regular Note Blocks. Keep in mind that if the Green Springboard gets destroyed by lava or spikes, it is gone for the rest of the match.
 
-### ![](gfx/docs/i31.png)Gold Springboard
+### ![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/i31.png)Gold Springboard
 
 **Type: <font color="77aaff">Map Items</font>**
 
 This item can be carried through the map and used as a portable Note Block. The Green Springboard allows you to make timed jumps like the Orange Note Blocks. Keep in mind that if the Green Springboard gets destroyed by lava or spikes, it is gone for the rest of the match.
 
-### ![](gfx/docs/i32.png)Carryable Spike
+### ![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/i32.png)Carryable Spike
 
 **Type: <font color="77aaff">Map Items</font>**
 
 This item can be carried through the map and used as a weapon over and over. The Carryable Spike allows you to turn areas of a map into a small trap. The Carryable Spike does **not** protect you from being stomped, so be careful. Keep in mind that if the Carryable Spike gets destroyed by lava or spikes, it is gone for the rest of the match.
 
-### ![](gfx/docs/i33.png)Goomba's Shoe
+### ![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/i33.png)Goomba's Shoe
 
 **Type: <font color="77aaff">Map Items</font>**
 
 Jumping into the Goomba's Shoe allows you to perform a super smash move in midair. This can be used to drop down quickly for an item or to crush other players. Your player also gets a weight boost, allowing you to bump opponents much farther than normal! Unlike the other map items, the Goomba's Shoe can also travel safely over lava and spikes!
 
-### ![](gfx/docs/i34.png)Music Box
+### ![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/i34.png)Music Box
 
 **Type: <font color="00cc33">World Map</font>**
 
 Using one of these will stop the movement of all vehicles on the World Map for a few turns. During this time, you won't be pulled into the levels upon passing over them. If you want to play the level anyways, just enter it like a normal level.
 
-### ![](gfx/docs/i35.png)Lakitu's Cloud
+### ![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/i35.png)Lakitu's Cloud
 
 **Type: <font color="00cc33">World Map</font>**
 
 This item allows you to pass over a level without playing it. Great for bypassing a level with a mode you're not very good at!
 
-### ![](gfx/docs/i36.png)Swap Badge
+### ![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/i36.png)Swap Badge
 
 **Type: <font color="00cc33">World Map</font>**
 
 This useful item allows you to take control of the board from another player! Great for making sure you get a Mushroom House!
 
-### ![](gfx/docs/i37.png)Hourglass
+### ![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/i37.png)Hourglass
 
 **Type: <font color="00cc33">World Map</font>**
 
 This item can be used to advance the map one turn. This will cause vehicles to move and bridges to lower or rise.
 
-### ![](gfx/docs/i38.png)Replay Block
+### ![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/i38.png)Replay Block
 
 **Type: <font color="00cc33">World Map</font>**
 
 This item can be used to revive any level that's already been played. This includes Pipe Minigame levels and Mushroom Houses!
 
-### ![](gfx/docs/i39.png)Red Key
+### ![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/i39.png)Red Key
 
 **Type: <font color="00cc33">World Map</font>**
 
 This item is used to unlock red doors on a map. This key can only be used to open one door.
 
-### ![](gfx/docs/i40.png)Yellow Key
+### ![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/i40.png)Yellow Key
 
 **Type: <font color="00cc33">World Map</font>**
 
 This item is used to unlock yellow doors on a map. This key can only be used to open one door.
 
-### ![](gfx/docs/i41.png)Green Key
+### ![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/i41.png)Green Key
 
 **Type: <font color="00cc33">World Map</font>**
 
 This item is used to unlock green doors on a map. This key can only be used to open one door.
 
-### ![](gfx/docs/i42.png)Blue Key
+### ![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/i42.png)Blue Key
 
 **Type: <font color="00cc33">World Map</font>**
 
 This item is used to unlock blue doors on a map. This key can only be used to open one door.
 
-### ![](gfx/docs/i43.png)X Coin
+### ![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/i43.png)X Coin
 
 **Type: <font color="00cc33">World Map</font>**
 
 This item can be used to negate the point value for a level. Simply use it on the map, and the next level played will have no point value. Keep in mind that using other score coins after using an X Coin cancels it out, and vice versa.
 
-### ![](gfx/docs/i44.png)+1 Coin
+### ![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/i44.png)+1 Coin
 
 **Type: <font color="00cc33">World Map</font>**
 
 This item can be used to add one to the point value for a level. Simply use it on the map, and the next level played will have a single point higher value. Keep in mind that using other score coins after using a +1 Coin cancels it out, and vice versa.
 
-### ![](gfx/docs/i45.png)+2 Coin
+### ![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/i45.png)+2 Coin
 
 **Type: <font color="00cc33">World Map</font>**
 
 This item can be used to add two to the point value for a level. Simply use it on the map, and the next level played will have a two point higher value. Keep in mind that using other score coins after using a +2 Coin cancels it out, and vice versa.
 
-### ![](gfx/docs/i46.png)+3 Coin
+### ![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/i46.png)+3 Coin
 
 **Type: <font color="00cc33">World Map</font>**
 
 This item can be used to add three to the point value for a level. Simply use it on the map, and the next level played will have a three point higher value. Keep in mind that using other score coins after using a +3 Coin cancels it out, and vice versa.
 
-### ![](gfx/docs/i47.png)x2 Coin
+### ![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/i47.png)x2 Coin
 
 **Type: <font color="00cc33">World Map</font>**
 
 This item can be used to double the point value for a level. Simply use it on the map, and the next level played will have twice the point value. Keep in mind that using other score coins after using a x2 Coin cancels it out, and vice versa.
 
-### ![](gfx/docs/i48.png)x3 Coin
+### ![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/i48.png)x3 Coin
 
 **Type: <font color="00cc33">World Map</font>**
 
 This item can be used to triple the point value for a level. Simply use it on the map, and the next level played will have three times the point value. Keep in mind that using other score coins after using a x3 Coin cancels it out, and vice versa.
 
-### ![](gfx/docs/i49.png)1-10 Green Spheres
+### ![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/i49.png)1-10 Green Spheres
 
 **Type: <font color="00cc33">World Map</font>**
 
 These items can only be obtained from Mushroom Houses, and are very useful. Getting any of the Green Spheres from a chest adds the number on the Sphere to your total points!
 
-### ![](gfx/docs/i50.png)1-10 Red Spheres
+### ![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/i50.png)1-10 Red Spheres
 
 **Type: <font color="00cc33">World Map</font>**
 
@@ -906,7 +911,7 @@ When this is set to Team, all teammates will be set to the same color. (It is re
 
 ### Item Selection
 
-![](gfx/docs/ss12.png)
+![](https://github.com/HerbFargus/smw/blob/master/gfx/docs/ss12.png)
 
 On this screen, there are 26 sliders, each corresponding to one of the different items that can appear from a "?" block, as well as the relative frequency of that one popping out. Each slider can be set from 0 to 10 inclusive, with 0 meaning the item will not appear at all.
 
