@@ -161,7 +161,7 @@ function configure_retroarch() {  % OK, module interface function
 
 ### Variable Names
 
-The names of variables are all lowercase. [Camel case](http://en.wikipedia.org/wiki/CamelCase) notation as well as _-notation can be used.
+The names of variables are generally all lowercase and can use underscores if needed.
 
 
 ### Constants and Environment Variable Names
