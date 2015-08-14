@@ -21,11 +21,6 @@ Place the BIOS in
 ```
 /home/pi/RetroPie/BIOS
 ```
-if that doesn't work in older versions the BIOS was placed in
-```
-/opt/retropie/emulators/gpsp
-```
-The newer versions have gba_bios.bin symlinked from the gpSp source folder to work in the normal BIOS folder.
 
 ## Controls
 
