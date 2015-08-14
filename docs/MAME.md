@@ -45,10 +45,6 @@ For RetroPie 3.0:
 /home/pi/RetroPie/roms/mame-mame4all
 ```
 
-For RetroPie 2.6:
-```
-/home/pi/RetroPie/roms/mame-libretro
-```
 ### **AdvanceMAME**
 
 Romset Used: **.94** (AdvMame .94) or **.106** (AdvMame 1.2)
@@ -72,11 +68,8 @@ To find out which ROMs work for imame4all/mame4all-pi, have a look [Here](http:/
 Some ROMs may need the **neogeo.zip** BIOS in order to run. Place the neogeo.zip BIOS file in the same folder as your ROMs
 ```shell
 /home/pi/RetroPie/roms/mame-mame4all
-or
-(For RetroPie 2.6) /home/pi/RetroPie/roms/mame-libretro
-or
-/home/pi/RetroPie/roms/mame-advmame
 ```
+
 These are the contents of a verified working neogeo.zip BIOS file * Note that all the files may not be necessary
 
 ```shell
