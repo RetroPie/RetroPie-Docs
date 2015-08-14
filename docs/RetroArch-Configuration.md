@@ -83,13 +83,13 @@ input_player2_right_axis = +0
 #Hotkeys- Hotkeys enable you to press a combination of buttons to do such things as exit emulators, save states,
 # and load states, as well as any other functionality in an emulator. (In the example below 8 is the select key
 # and 9 is the start key so when I hold down select and press start it will exit the emulator.)
-input_enable_hotkey_btn = "8"
-input_exit_emulator_btn = "9"
-input_save_state_btn = "5"
-input_load_state_btn = "4"
-input_menu_toggle_btn = "0"
-input_state_slot_increase_axis = "+0"
-input_state_slot_decrease_axis = "-0"
+input_enable_hotkey_btn = 8
+input_exit_emulator_btn = 9
+input_save_state_btn = 5
+input_load_state_btn = 4
+input_menu_toggle_btn = 0
+input_state_slot_increase_axis = +0
+input_state_slot_decrease_axis = -0
 ```
 
 ## Hotkeys
@@ -121,6 +121,36 @@ _InputStation is the product of hard work from the EmulationStation Team (Aloshi
 ***
 
 This is integrated into emulationstation and will be the first thing you see when you boot from the RetroPie SD image (3.0) the first time. You can also access if from the start menu within emulationstation under the configure option.
+
+After you've configured your controller the autoconfig will be created here:
+```
+opt/retropie/configs/all/retroarch-joypads
+```
+This is an example config for a snes controller
+```
+input_device = "USB gamepad           "
+input_driver = "udev"
+input_r_btn = "5"
+input_save_state_btn = "5"
+input_start_btn = "9"
+input_exit_emulator_btn = "9"
+input_l_btn = "4"
+input_load_state_btn = "4"
+input_up_axis = "-1"
+input_a_btn = "1"
+input_b_btn = "2"
+input_reset_btn = "2"
+input_down_axis = "+1"
+input_right_axis = "+0"
+input_state_slot_increase_axis = "+0"
+input_x_btn = "0"
+input_menu_toggle_btn = "0"
+input_select_btn = "8"
+input_enable_hotkey_btn = "8"
+input_y_btn = "3"
+input_left_axis = "-0"
+input_state_slot_decrease_axis = "-0"
+```
 
 The following diagrams are for the 3 most common controllers: Super Nintendo, Xbox 360, and PlayStation 3. They can be used as a reference when configuring your controllers. Each emulator page on the wiki has a diagram of the original controller for its respective console that will correspond to the same inputs listed below.
 
