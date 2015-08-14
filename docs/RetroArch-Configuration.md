@@ -12,18 +12,6 @@ Choose configure retroarch keyboard/joystick
 (you'll need a keyboard) plug in the controller you wish to configure and follow the steps.
 Alternatively you can access the same function through the terminal:
 
-#### From the terminal
-
-Plug in one controller you wish to configure and in the terminal type:
-```shell
-cd ~/RetroPie-Setup
-sudo ./retropie_setup.sh
-```
-
-In the setup script select the following options:  
-* Choose - Setup
-* Choose - Configure Retroarch Controller
-
 Then follow the on screen directions and your controller should now work on all libretro-core emulators- 
 including hotkeys (see below).
 
