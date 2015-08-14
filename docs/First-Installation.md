@@ -79,6 +79,32 @@ Select+B | Reset
 
 If you wish to put in configurations for multiple controllers you can do so from the start menu of emulationstation. For more details on manual controller configurations see this page [Here](https://github.com/petrockblog/RetroPie-Setup/wiki/RetroArch-Configuration)
 
+For those of you that are interested, the retroarch controller config that is created after you've followed the aforementioned steps is located in `/opt/retropie/configs/all/retroarch-joypads` the following is an example of a snes controller config- your configurations may be a bit different.
+
+```
+input_device = "USB gamepad           "
+input_driver = "udev"
+input_r_btn = "5"
+input_save_state_btn = "5"
+input_start_btn = "9"
+input_exit_emulator_btn = "9"
+input_l_btn = "4"
+input_load_state_btn = "4"
+input_up_axis = "-1"
+input_a_btn = "1"
+input_b_btn = "2"
+input_reset_btn = "2"
+input_down_axis = "+1"
+input_right_axis = "+0"
+input_state_slot_increase_axis = "+0"
+input_x_btn = "0"
+input_menu_toggle_btn = "0"
+input_select_btn = "8"
+input_enable_hotkey_btn = "8"
+input_y_btn = "3"
+input_left_axis = "-0"
+input_state_slot_decrease_axis = "-0"
+```
 ## Expand File System
 
 Once your controller is set up you'll need to make a few configurations before you can transfer your ROMs over go to the RetroPie Menu:
