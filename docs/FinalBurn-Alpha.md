@@ -51,11 +51,6 @@ you can also place your roms in
 /home/pi/RetroPie/roms/neogeo
 ```
 
-For RetroPie 2.6 FBA-Libretro place your ROMS in
-```shell
-/home/pi/RetroPie/roms/fba-libretro
-```
-
 ## BIOS
 
 The BIOS needed for Neo Geo games is:
@@ -67,10 +62,6 @@ The BIOS needed for Neo Geo games is:
 For RetroPie 3.0 for PiFBA and FBA-Libretro place your BIOS in
 ```shell
 /home/pi/RetroPie/roms/fba
-```
-For RetroPie 2.6 FBA-Libretro place your BIOS in
-```shell
-/home/pi/RetroPie/roms/fba-libretro
 ```
 
 These are the contents of a verified working neogeo.zip BIOS file * Note that all the files may not be necessary
