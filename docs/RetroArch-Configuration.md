@@ -10,7 +10,6 @@ RetroArch is the official front end for the [Libretro](http://www.libretro.com/)
 Choose configure retroarch keyboard/joystick
 ```
 (you'll need a keyboard) plug in the controller you wish to configure and follow the steps.
-Alternatively you can access the same function through the terminal:
 
 Then follow the on screen directions and your controller should now work on all libretro-core emulators- 
 including hotkeys (see below).
