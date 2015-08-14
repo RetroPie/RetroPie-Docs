@@ -83,9 +83,13 @@ input_player2_right_axis = +0
 #Hotkeys- Hotkeys enable you to press a combination of buttons to do such things as exit emulators, save states,
 # and load states, as well as any other functionality in an emulator. (In the example below 8 is the select key
 # and 9 is the start key so when I hold down select and press start it will exit the emulator.)
-input_enable_hotkey_btn = 8
-input_exit_emulator_btn = 9
-input_save_state_btn = 5
+input_enable_hotkey_btn = "8"
+input_exit_emulator_btn = "9"
+input_save_state_btn = "5"
+input_load_state_btn = "4"
+input_menu_toggle_btn = "0"
+input_state_slot_increase_axis = "+0"
+input_state_slot_decrease_axis = "-0"
 ```
 
 ## Hotkeys
