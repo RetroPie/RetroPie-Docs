@@ -124,7 +124,7 @@ This is integrated into emulationstation and will be the first thing you see whe
 
 After you've configured your controller the autoconfig will be created here:
 ```
-opt/retropie/configs/all/retroarch-joypads
+/opt/retropie/configs/all/retroarch-joypads
 ```
 This is an example config for a snes controller
 ```
