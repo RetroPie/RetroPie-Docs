@@ -3,7 +3,7 @@
 _The MSX was a personal computer released by Microsoft in 1983._
 
 ***
-## Emulator: [fmsx-libretro](https://github.com/libretro/fmsx-libretro)
+## Emulator: [fmsx-libretro](https://github.com/libretro/fmsx-libretro) [lr-bluemsx](https://github.com/libretro/blueMSX-libretro) [OpenMSX](http://openmsx.org/)
 
 ## ROMS
 Accepted File Extensions: **.rom .mx1 .mx2 .col .dsk**
@@ -26,8 +26,7 @@ For more information on custom RetroArch controls see: [RetroArch Configuration]
 
 Many games will have varying keyboard controls.
 
-
-BlueMSX bios files for the Machines folder:
+## BIOS List
 
 MSX : MSX.ROM - PHILIPSDISK.ROM 
 
