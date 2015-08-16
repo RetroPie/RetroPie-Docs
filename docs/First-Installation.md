@@ -109,6 +109,11 @@ input_y_btn = "3"
 input_left_axis = "-0"
 input_state_slot_decrease_axis = "-0"
 ```
+
+## EmulationStation
+
+**When you first see EmulationStation you may wonder why you don't see systems like the SNES or Game Boy- worry not- they are installed on the system, roms just need to be added to their respective rom folders before they will become visible. Transferring roms are described in the following steps.**
+
 ## Expand File System
 
 Once your controller is set up you'll need to make a few configurations before you can transfer your ROMs over go to the RetroPie Menu:
