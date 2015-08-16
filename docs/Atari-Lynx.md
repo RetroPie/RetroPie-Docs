@@ -11,6 +11,9 @@ Place your Lynx ROMS in:
 ```shell
 /home/pi/RetroPie/roms/atarilynx/
 ```
+
+**Note** lr-handy doesn't support no intro roms- it only works with roms that have a header
+
 ## Controls
 
 Stella-Libretro utilises Retroarch configurations
