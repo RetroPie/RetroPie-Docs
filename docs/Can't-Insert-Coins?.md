@@ -19,3 +19,6 @@ You can do the same thing for fba-libretro
 ```
 /opt/retropie/configs/fba/retroarch.cfg
 ```
+
+Related post  
+http://blog.petrockblock.com/forums/topic/fba-retroarch-core-coin-controls/#post-93014
