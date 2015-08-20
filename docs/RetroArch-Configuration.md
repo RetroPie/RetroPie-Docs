@@ -46,8 +46,8 @@ alt="N64 Configuration Video" width="100" height="100" border="10" /></a>
 ----- | ----- | ----- |----- | -----  
 ## Custom Retroarch Controls
 
-## Example retroarch.cfg file for custom controls to override defaults
-**Note** the values below are for one person's controller, your values may differ.
+## Example retroarch.cfg file for custom controls to override defaults: 
+**Note** the values below are for one person's controller, your values may differ. Make sure that these values are placed **above** the #includeconfig line
 ```shell
 input_player1_joypad_index = 0
 input_player1_b_btn = 2
