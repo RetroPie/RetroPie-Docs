@@ -362,4 +362,4 @@ input_menu_toggle_btn = "10"
 This will open the menu when you press the Home key and exit the emulator when you press Select and Start simultaneously on the wiimote (or the classic controller).  When you quit a game through this method, your game state will be saved and reloaded.
 
 Note: the config files above work for wiimotes with or without classic controller.
-Note 2: If you want to use the wiimote (i.e. not only the classic controller) and you are using my config files, you need to hold the wiimote horizontally (with the power button on the right).
+Note 2: If you want to use the wiimote (i.e. not only the classic controller) and you are using my config files, you need to hold the wiimote horizontally (with the power button on the left).
