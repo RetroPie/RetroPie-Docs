@@ -4,7 +4,7 @@ _The Game Boy Advance is a 32 bit handheld video game console released by Ninten
 
 ***
 ## Emulators: [gpSP](https://github.com/DPRCZ/gpsp), [libretro-gpSP](https://github.com/libretro/gpsp), [libretro-vba-next](https://github.com/libretro/vba-next), [libretro-mgba](https://github.com/libretro/mgba)
-GPSP has separate controls than lr-gpSP, lr-vba-next, and lr-mgba. lr-gpSP, lr-vba-next, and lr-mgba both utilise RetroArch configurations (see below under controls)
+GPSP has separate controls than lr-gpSP, lr-vba-next, and lr-mgba. lr-gpSP, lr-vba-next, and lr-mgba all utilise RetroArch configurations (see below under controls)
 
 ## ROMS
 Accepted File Extensions: **.gba**
