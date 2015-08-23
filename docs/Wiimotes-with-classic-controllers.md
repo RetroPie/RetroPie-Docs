@@ -217,22 +217,40 @@ fi
 Note: You need one wminput line for every wiimote you want to use (i.e. the above is for two wiimotes)
 Note 2: You need to replace the addresses of the wiimotes above by the addresses of your wiimotes (shown by command „hcitool scan“ as shown above).  
 
-### Register Wiimotes Before Emulationstation Starts
+### Register Wiimotes Before Emulationstation Starts ###
 
 Make your wiimote detection script executable with:
 ```shell
 chmod 775 /home/pi/bin/attachwii.sh
 ```
 
-To start the script before emulationstation starts, edit the file: /etc/profile.  The last line should be
+**Caution:** The next step is dependent related to the installed version of RetroPie!
+
+#### RetroPie 2.6 and earlier ####
+
+To start the script before emulationstation starts, edit the file: `/etc/profile`.  The last line should be
 ```shell
 [ -n "${SSH_CONNECTION}" ] || emulationstation
 ```
 Then, right before that line, add the line:
 ```shell
-[ -n "${SSH_CONNECTION}" ] || rebootWithoutWiimotes=0 /home/pi/bin/attachwii.sh && emulationstation
+rebootWithoutWiimotes=0 /home/pi/bin/attachwii.sh
 ```
 and save the file.
+
+#### RetroPie 3.0 ####
+
+To start the script before emulationstation starts, edit the file: `/etc/profile.d/10-emulationstation.sh`.  The last line should be
+```shell
+[ "`tty`" = "/dev/tty1" ] && emulationstation
+```
+Then, right before that line, add the line:
+```shell
+rebootWithoutWiimotes=0 /home/pi/bin/attachwii.sh
+```
+and save the file.
+
+### Register Wiimotes Before Emulationstation Starts (continue) ###
 
 To make the Pi restart automatically if no wiimotes are detected, change rebootWithoutWiimotes to 1.
 
