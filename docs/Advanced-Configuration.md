@@ -220,6 +220,7 @@ Add the following line to retroarch.cfg
 
 system | filename  | directory
 -------|-----------|----------
+Game Boy Advance | gba_bios.bin | /home/pi/RetroPie/bios
 Neo Geo | neogeo.zip | /home/pi/RetroPie/roms/neogeo
 PC Engine | syscard3.pce | /home/pi/RetroPie/bios
 Playstation | scph7502.bin | /home/pi/RetroPie/bios
