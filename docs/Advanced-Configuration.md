@@ -210,7 +210,7 @@ JA_UD_2=1
 Up to now, I didn't figure out, how to change the configuration from the analog sticks to the digipad. To exit the emulator, press START and SELECT together.
 ***
 ### Bios files
-Neo Geo, Mega CD, PC Engine CD and Playstation need their BIOS. There are many suggestions out there and only a few will work. It's neccassary to put the bios files in the right directory and the file must have the correct name. There are some "bios options", which you can set on most emulators, but they didn't work for me.  
+Game Boy Advance, Neo Geo, Mega CD, PC Engine CD and Playstation need their BIOS. There are many suggestions out there and only a few will work. It's neccassary to put the bios files in the right directory and the file must have the correct name. There are some "bios options", which you can set on most emulators, but they didn't work for me.  
 Create a directory called "bios" under /home/pi/RetroPie:  
 `mkdir /home/pi/RetroPie/bios`  
 Add the following line to retroarch.cfg  
