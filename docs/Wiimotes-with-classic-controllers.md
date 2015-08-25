@@ -368,7 +368,7 @@ input_player3_joypad_index = 2
 input_player4_joypad_index = 3
 ```
 
-Finally, add the following four lines at the end of /home/pi/RetroPi/configs/all/retroarch.cfg:
+Finally, add the following four lines at the end of `/opt/retropie/configs/all/retroarch.cfg`:
 ```shell
 savestate_auto_save = true
 savestate_auto_load = true
