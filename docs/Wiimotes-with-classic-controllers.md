@@ -296,7 +296,7 @@ Content of /home/pi/.emulationstation/es_input.cfg for two wiimotes:
 		<input name="right" type="key" id="275" value="1" />
 		<input name="up" type="key" id="273" value="1" />
 	</inputConfig>
-</inputList>`
+</inputList>
 ```
 
 For retroarch:
