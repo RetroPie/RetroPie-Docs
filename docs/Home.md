@@ -108,6 +108,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [Which emulators can currently be installed with the script?](https://github.com/RetroPie/RetroPie-Setup/wiki/Supported-Systems-Emulators)
 * [Why do I get a segmentation fault when running a PSX game?](https://github.com/RetroPie/RetroPie-Setup/wiki/Why-do-I-get-a-segmentation-fault-when-running-a-PSX-game%3F)
 * [The PSX emulator reports no BIOS found. What do I do?](https://github.com/RetroPie/RetroPie-Setup/wiki/The-PSX-emulator-reports-no-BIOS-found.-What-do-I-do%3F)
+* [How do I extend the available space when upgrading to a larger SD card?](https://github.com/RetroPie/RetroPie-Setup/wiki/How-do-I-extend-the-available-space-when-upgrading-to-a-larger-SD-card)
 
 ## Developers
 
