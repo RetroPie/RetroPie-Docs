@@ -50,7 +50,7 @@ sudo apt-get install bluetooth vorbis-tools python-cwiid wminput
 
 ### Getting the wiimotes to work
 
-uinput device needs to work with non-root users. To do so, create a file called /etc/udev/rules.d/wiimote.rules with the following line:
+uinput device needs to work with non-root users. To do so, create a file as root user (using `sudo`) called `/etc/udev/rules.d/wiimote.rules` with the following line:
 ```shell
 KERNEL=="uinput", MODE:="0666"
 ```
