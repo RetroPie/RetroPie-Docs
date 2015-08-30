@@ -97,6 +97,13 @@ Wiimote.Home	= BTN_MODE
 Wiimote.1		= BTN_X
 Wiimote.2		= BTN_Y
 ```
+
+If you want your WiiMotes giving a connection status, just add an additional line to your `mywminput` file:
+
+    Plugin.led.Led1 = 1
+
+You probably also want different LEDs active on two controllers, which means you have to provide different `mywminput` files to wminput, e.g. one with `Led1` and another with `Led2` activated.
+
 #### Quick and Dirty Wiimote Configuration
 
 If you don't mind registering your wiimotes each time you restart your raspberrypi (or maybe you want the opportunity to use new wiimotes each time), you can save this script as "/home/pi/bin/attachwii.sh":
