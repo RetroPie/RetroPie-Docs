@@ -211,6 +211,7 @@ mkdir /home/pi/bin
 create file /home/pi/bin/attachwii.sh with the following content:
 ```shell
 #!/bin/bash
+sleep 1 # Wait until Bluetooth services are fully initialized
 hcitool dev | grep hci >/dev/null
 if test $? -eq 0 ; then
 	wminput -d -c  /home/pi/mywminput 00:19:1D:92:90:38 &
