@@ -49,7 +49,7 @@ You may find the controller connects on startup without issue, but if not try th
 Edit this startup file  
 `sudo nano /etc/init.d/rc.local`  
   
-under the line _. /lib/lsb/init-functions_ add this line (makign sure to replace the XX values with the MAC address of the controller found earlier  
+under the line _. /lib/lsb/init-functions_ add this line (making sure to replace the XX values with the MAC address of the controller found earlier)  
 `sudo bluez-test-input connect XX:XX:XX:XX:XX:XX`  
   
 Save the file with Ctrl-X and press Return to confirm the filename.  
