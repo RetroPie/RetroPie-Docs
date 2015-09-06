@@ -61,25 +61,26 @@ Place your AdvanceMAME ROMs in
 
 ### lr-Mame2003
 
+Romset Used: **.78**
+
+Total Games Emulated: 8782 (includes clones etc...)
+
 Place your lr-Mame2003 ROMs in
 ```
 /home/pi/RetroPie/roms/mame-libretro
 ```
 
-Romset Used: **.78**
-
 ### lr-Mame2010
+
+Romset Used: **.139**
+Total Games Emulated: 8782 (includes clones etc...)
 
 Place your lr-Mame2010 ROMs in
 ```
 /home/pi/RetroPie/roms/mame-libretro
 ```
 
-Romset Used: **.139**
-
 You will get errors loading some mame roms, not all roms are compatible or working. You will need to download ROMs that are confirmed working with your version of MAME
-
-To find out which ROMs work for imame4all/mame4all-pi, have a look [Here](http://code.google.com/p/imame4all/wiki/GameList)
 
 ## BIOS
 Some ROMs may need the **neogeo.zip** BIOS in order to run. Place the neogeo.zip BIOS file in the same folder as your ROMs
