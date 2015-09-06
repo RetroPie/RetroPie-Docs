@@ -123,7 +123,7 @@ Dat File: [fba_029671_od_release_10_working_roms_filtered.zip] (https://www.drop
 ### [lr-fba](https://github.com/libretro/fba-libretro) 
 ```shell
 Roms Dir: /home/pi/RetroPie/roms/fba
-Binary Dir: /opt/retropie/libretrocores/fbalibretro
+Binary Dir: /opt/retropie/libretrocores/lr-fba
 Config Dir: /opt/retropie/configs/fba/retroarch.cfg
 ```
 MAME Version: **FBA 0.2.97.30** which is based on MAME 0.154 (Jul 2014)
