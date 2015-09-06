@@ -2,7 +2,7 @@
 ***
 _The Atari Lynx is the world's first handheld gaming console with a color screen. It was released by Atari in 1989_
 ***
-## Emulator: [libretro-handy](https://github.com/libretro/libretro-handy)
+## Emulator: [lr-handy](https://github.com/libretro/libretro-handy)
 The libretro-handy core is a port of the [Handy](http://handy.sourceforge.net/) emulator
 ## ROMS
 Accepted File Extensions: **.lnx**
@@ -16,7 +16,7 @@ Place your Lynx ROMS in:
 
 ## Controls
 
-Stella-Libretro utilises Retroarch configurations
+lr-handy utilises Retroarch configurations
 
 Add custom RetroArch controls to the retroarch.cfg file in:
 ```shell
