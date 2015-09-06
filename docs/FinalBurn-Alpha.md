@@ -66,6 +66,8 @@ you can also place your roms in
 ```shell
 /home/pi/RetroPie/roms/neogeo
 ```
+
+### [**lr-fba-next COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1GaqIIoiWbzKHwZ52S2xCSDQXILo81Ls1mHK6czKGAtM/edit?usp=sharing)  feel free to contribute to the list.
 ## BIOS
 
 The BIOS needed for Neo Geo games is:
