@@ -2,9 +2,9 @@
 ***
 _Final Burn Alpha is a Multiple Arcade Emulator most popular for emulating Neo-Geo, Capcom, Konami, and Cave games. It is developed by the final burn team and originated from FinalBurn by Dave_
 ***
-## Emulators: [PiFBA](https://github.com/RetroPie/pifba), [fba-libretro](https://github.com/libretro/fba-libretro), [fba-libretro-next](https://github.com/libretro/libretro-fba.git)
+## Emulators: [PiFBA](https://github.com/RetroPie/pifba), [lr-fba](https://github.com/libretro/fba-libretro), [lr-fba-next](https://github.com/libretro/libretro-fba.git)
 
-Fba-libretro is a port of PiFBA and unlike PiFBA, fba-libretro uses RetroArch configurations.
+lr-fba and lr-fba-next are a libretro port of PiFBA and unlike PiFBA, lr-fba and lr-fba-next use RetroArch configurations.
 
 ## ROMS
 
@@ -33,15 +33,15 @@ you can also place your roms in
 /home/pi/RetroPie/roms/neogeo
 ```
 
-### FBA-Libretro
+### lr-fba
 
 Romset Used: FBA **0.2.97.30** which is based on MAME 0.154 (Jul 2014)
 
 Total Games Emulated: 3369 (includes clones etc..)
 
-### [**FBA-Libretro COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1rWO7Lm0bTGNpak6J-CPzde0GNIDP0NHDoQdJ6iWosfA/edit?usp=sharing)  feel free to contribute to the list.
+### [**lr-fba COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1rWO7Lm0bTGNpak6J-CPzde0GNIDP0NHDoQdJ6iWosfA/edit?usp=sharing)  feel free to contribute to the list.
  
-Place your  FBA-Libretro ROMS in
+Place your lr-fba ROMS in
 ```shell
 /home/pi/RetroPie/roms/fba
 ```
@@ -51,11 +51,11 @@ you can also place your roms in
 /home/pi/RetroPie/roms/neogeo
 ```
 
-### FBA-Libretro-Next
+### lr-fba-next
 
 Romset Used: FBA **0.2.97.36** which is based on MAME 0.161 (Apr 2015)
  
-Place your Fba-libretro-next ROMS in
+Place your lr-fba-next ROMS in
 ```shell
 /home/pi/RetroPie/roms/fba
 ```
@@ -72,7 +72,7 @@ The BIOS needed for Neo Geo games is:
 
 * Note that unlike other BIOS that go in the BIOS folder, this BIOS will go into the same folder as your ROMS.
 
-For RetroPie 3.0 for PiFBA and FBA-Libretro place your BIOS in
+For all fba emulators place your BIOS in
 ```shell
 /home/pi/RetroPie/roms/fba
 ```
@@ -114,8 +114,8 @@ vs-bios.rom
 
 ## Controls
 As there are 2 emulators there are two sets of controls.
-### fba-libretro Controls
-fba-libretro utilises RetroArch configs.
+### lr-fba and lr-fba-next Controls
+lr-fba and lr-fba-next utilise RetroArch configs.
 
 Add custom retroarch controls to the retroarch.cfg file in
 ```shell
@@ -125,7 +125,7 @@ For more information on custom RetroArch controls see: [RetroArch Configuration]
 
 ![neogeodiagram](https://cloud.githubusercontent.com/assets/10035308/8245309/a575cc8c-15e9-11e5-8735-0a4ab2a4e137.png)
 
-One important thing to note is that with fba-libretro the hotkey button (i.e. select) interferes with you insert coin button (which also happens to be select) so as a result you can't insert a coin to start your game with the default controls. An easy fix is to to swap the hotkey and exit button around in the aforementioned retroarch.cfg.
+One important thing to note is that with lr-fba the hotkey button (i.e. select) interferes with you insert coin button (which also happens to be select) so as a result you can't insert a coin to start your game with the default controls. An easy fix is to to swap the hotkey and exit button around in the aforementioned retroarch.cfg.
 
 ### PiFBA Controls
 PiFBA controls are located in
