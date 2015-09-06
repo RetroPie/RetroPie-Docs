@@ -3,7 +3,7 @@
 ***
 _The Sega Master System was a 4th generation video game console released by Sega in 1987._
 ***
-## Emulators: [Osmose](https://github.com/RetroPie/osmose-rpi), [libretro-Genesis-Plus-GX](https://github.com/libretro/Genesis-Plus-GX), [libretro-picodrive](https://github.com/libretro/picodrive)
+## Emulators: [Osmose](https://github.com/RetroPie/osmose-rpi), [lr-genesis-plus-gx](https://github.com/libretro/Genesis-Plus-GX), [lr-picodrive](https://github.com/libretro/picodrive)
 Osmose has it's own configurations whereas lr-Genesis-Plus-GX and lr-picodrive utilise RetroArch configurations
 
 ## ROMS
@@ -16,9 +16,9 @@ Place your Master System ROMs in
 ```
 ## Controls
 
-### lr-picodrive and lr-Genesis-Plus-GX
+### lr-picodrive and lr-genesis-plus-gx
 
-lr-picodrive and lr-Genesis-Plus-GX utilise RetroArch configurations
+lr-picodrive and lr-genesis-plus-gx utilise RetroArch configurations
 
 Add custom retroarch controls to the retroarch.cfg file in
 
