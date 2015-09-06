@@ -21,7 +21,7 @@ Total Games Emulated: 684 (no clones)
 
 ### [**PiFBA COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1OZioLrz16ptaNbjQUDP5hhVzQDTOTn9Nz46Hbj3-06k/edit?usp=sharing)  feel free to contribute to the list.
 
-For PiFBA place your ROMS in
+Place your PiFBA ROMS in
 
 ```shell
 /home/pi/RetroPie/roms/fba
@@ -53,7 +53,7 @@ you can also place your roms in
 
 ### FBA-Libretro-Next
 
-Romset Used: FBA **0.2.97.36**
+Romset Used: FBA **0.2.97.36** which is based on MAME 0.161 (Apr 2015)
  
 Place your Fba-libretro-next ROMS in
 ```shell
