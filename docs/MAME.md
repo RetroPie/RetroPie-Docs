@@ -21,39 +21,40 @@ Accepted File Extensions: **.zip**
 
 ### **MAME4ALL-Pi**
 
+Place your MAME4ALL-Pi ROMs in
+```
+/home/pi/RetroPie/roms/mame-mame4all
+```
+
 Romset Used: **0.37b5**
 
 Total Games Emulated: [2270](http://code.google.com/p/imame4all/wiki/GameList) 
 
 ### [**MAME4ALL-PI COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1gpuoZx78kDDdnf_yADicsSZHMfpOxNySSov7UdCDAik/edit?usp=sharing)  feel free to contribute to the list.
 
-Place your MAME4ALL-Pi ROMs in
-```
-/home/pi/RetroPie/roms/mame-mame4all
-```
 ### **lr-imame4all**
 
 Romset Used: **0.37b5**
-
-Total Games Emulated: [2270](http://code.google.com/p/imame4all/wiki/GameList) 
-
-### [**lr-IMAME4ALL COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1Fmx2RPcgVgIIeKpaBKNEGWCDuu3DGfR-VkrnIVsIpeE/edit?usp=sharing)  feel free to contribute to the list.
 
 Place your lr-imame4all ROMs in
 ```
 /home/pi/RetroPie/roms/mame-mame4all
 ```
 
+Total Games Emulated: [2270](http://code.google.com/p/imame4all/wiki/GameList) 
+
+### [**lr-IMAME4ALL COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1Fmx2RPcgVgIIeKpaBKNEGWCDuu3DGfR-VkrnIVsIpeE/edit?usp=sharing)  feel free to contribute to the list.
+
 ### **AdvanceMAME**
-
-Romset Used: **.94** (AdvMame .94) or **.106** (AdvMame 1.2)
-
-Total Games Emulated: **5563** (0.94.0) **6166** (1.2) (includes clones etc..)
 
 Place your AdvanceMAME ROMs in
 ```
 /home/pi/RetroPie/roms/mame-advmame
 ```
+
+Romset Used: **.94** (AdvMame .94) or **.106** (AdvMame 1.2)
+
+Total Games Emulated: **5563** (0.94.0) **6166** (1.2) (includes clones etc..)
 
 ### [**AdvMame .94 COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1AEQ94buG0rvbW0xdnYKeuEhHeCbuZlRfRJQCb1Dt8fw/edit?usp=sharing)  feel free to contribute to the list.
 
@@ -61,27 +62,27 @@ Place your AdvanceMAME ROMs in
 
 ### lr-Mame2003
 
+Place your lr-Mame2003 ROMs in
+```
+/home/pi/RetroPie/roms/mame-libretro
+```
+
 Romset Used: **.78**
 
 Total Games Emulated: 4705 (includes clones etc...)
 
 ### [**lr-mame2003 COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1LP1MELCvcxu7TfiowF_0ZuvRVEMqlfQyTVetnOJvuJc/edit?usp=sharing)  feel free to contribute to the list.
 
-Place your lr-Mame2003 ROMs in
-```
-/home/pi/RetroPie/roms/mame-libretro
-```
-
 ### lr-Mame2010
-
-Romset Used: **.139**
-
-Total Games Emulated: 8782 (includes clones etc...)
 
 Place your lr-Mame2010 ROMs in
 ```
 /home/pi/RetroPie/roms/mame-libretro
 ```
+
+Romset Used: **.139**
+
+Total Games Emulated: 8782 (includes clones etc...)
 
 You will get errors loading some mame roms, not all roms are compatible or working. You will need to download ROMs that are confirmed working with your version of MAME
 
