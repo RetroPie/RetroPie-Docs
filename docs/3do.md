@@ -3,7 +3,7 @@
 _The Panasonic 3do Real Multiplayer was a Home Video Game Console developed by the 3do company in 1994_
 
 ***
-## Emulator: [4do-libretro](https://github.com/libretro/4do-libretro) (EXPERIMENTAL)
+## Emulator: [lr-4do](https://github.com/libretro/4do-libretro) (EXPERIMENTAL)
 
 Note that this is experimental- even with an overclocked RPi2 it was incredibly laggy and slow. Definitely won't be coming out of experimental any time soon. It can be installed from the experimental menu of the setup script.
 
@@ -24,7 +24,7 @@ Place your panafz10.bin BIOS file in
 ```
 ## Controls
 
-4do-Libretro utilises Retroarch configurations
+lr-4do utilises Retroarch configurations
 
 Add custom retroarch controls to the retroarch.cfg file in
 ```shell
