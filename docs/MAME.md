@@ -4,7 +4,7 @@
 _MAME stands for Multiple Arcade Machine Emulator. MAME can emulate thousands of games that otherwise would have been lost in the ash-heaps of history._
 
 ***
-## Emulators: [AdvanceMAME](http://advancemame.sourceforge.net/), [Mame4all-Pi](https://github.com/RetroPie/mame4all-pi), [imame4all-libretro](https://github.com/libretro/imame4all-libretro), [lr-mame2003](https://github.com/libretro/mame2003-libretro), [lr-mame2010](https://github.com/libretro/mame2010-libretro)
+## Emulators: [AdvanceMAME](http://advancemame.sourceforge.net/), [Mame4all-Pi](https://github.com/RetroPie/mame4all-pi), [lr-imame4all](https://github.com/libretro/imame4all-libretro), [lr-mame2003](https://github.com/libretro/mame2003-libretro), [lr-mame2010](https://github.com/libretro/mame2010-libretro)
 
 Mame4all-pi seems to have the best performance of them all but AdvanceMAME has support for more games. imame4all libretro can be compelling because it utilises RetroArch controller configurations.
 
@@ -31,15 +31,15 @@ Place your MAME4ALL-Pi ROMs in
 ```
 /home/pi/RetroPie/roms/mame-mame4all
 ```
-### **imame4all-libretro**
+### **lr-imame4all**
 
 Romset Used: **0.37b5**
 
 Total Games Emulated: [2270](http://code.google.com/p/imame4all/wiki/GameList) 
 
-### [**IMAME4ALL-Libretro COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1Fmx2RPcgVgIIeKpaBKNEGWCDuu3DGfR-VkrnIVsIpeE/edit?usp=sharing)  feel free to contribute to the list.
+### [**lr-IMAME4ALL COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1Fmx2RPcgVgIIeKpaBKNEGWCDuu3DGfR-VkrnIVsIpeE/edit?usp=sharing)  feel free to contribute to the list.
 
-Place your imame4all-libretro ROMs in
+Place your lr-imame4all ROMs in
 ```
 /home/pi/RetroPie/roms/mame-mame4all
 ```
@@ -59,18 +59,18 @@ Place your AdvanceMAME ROMs in
 
 ### [**AdvMame 1.2 COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1RapyxChe2BMOfbX-FsCup9SXGxvS1WmXAofwaTJtmxc/edit?usp=sharing)  feel free to contribute to the list.
 
-### Libretro-Mame2003
+### lr-Mame2003
 
-Place your Libretro-Mame2003 ROMs in
+Place your lr-Mame2003 ROMs in
 ```
 /home/pi/RetroPie/roms/mame-libretro
 ```
 
 Romset Used: **.78**
 
-### Libretro-Mame2010
+### lr-Mame2010
 
-Place your Libretro-Mame2010 ROMs in
+Place your lr-Mame2010 ROMs in
 ```
 /home/pi/RetroPie/roms/mame-libretro
 ```
@@ -129,17 +129,17 @@ AdvanceMAME and Mame4all-Pi have the same method in setting up controls, imame4a
 
 While in a game press Tab to open the menu to set up controls
 
-### imame4all-libretro
+### lr-imame4all
 
-imame4all-libretro utilises RetroArch configs.
+lr-imame4all utilises RetroArch configs.
 
 Add custom retroarch controls to the retroarch.cfg file in
 ```shell
 /opt/retropie/configs/mame-mame4all/retroarch.cfg
 ```
-### libretro-mame2003, libretro-mame2010
+### lr-mame2003, lr-mame2010
 
-libretro-mame2003 and libretro-mame2010 utilise retroarch configs.
+lr-mame2003 and lr-mame2010 utilise retroarch configs.
 
 Add custom retroarch controls to the retroarch.cfg file in
 ```shell
