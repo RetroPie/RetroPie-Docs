@@ -41,7 +41,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 [(lr-mgba)](https://github.com/libretro/mgba)
 * [Intellivision](https://github.com/RetroPie/RetroPie-Setup/wiki/Intellivision) [(jzIntv)](http://spatula-city.org/~im14u2c/intv/)
 * [Macintosh](https://github.com/RetroPie/RetroPie-Setup/wiki/Macintosh) [(BasiliskII)](http://basilisk.cebix.net/)
-* [MAME](https://github.com/RetroPie/RetroPie-Setup/wiki/MAME) [(AdvanceMAME)](http://advancemame.sourceforge.net/), [(MAME4ALL-Pi)](https://github.com/RetroPie/mame4all-pi), [(imame4all-libretro)](https://github.com/libretro/imame4all-libretro), [(lr-mame2003)](https://github.com/libretro/mame2003-libretro), [(lr-mame2010)](https://github.com/libretro/mame2010-libretro)
+* [MAME](https://github.com/RetroPie/RetroPie-Setup/wiki/MAME) [(AdvanceMAME)](http://advancemame.sourceforge.net/), [(MAME4ALL-Pi)](https://github.com/RetroPie/mame4all-pi), [(lr-imame4all)](https://github.com/libretro/imame4all-libretro), [(lr-mame2003)](https://github.com/libretro/mame2003-libretro), [(lr-mame2010)](https://github.com/libretro/mame2010-libretro)
 * [MasterSystem](https://github.com/RetroPie/RetroPie-Setup/wiki/Master-System) [(lr-Genesis-Plus-GX)](https://github.com/libretro/Genesis-Plus-GX), [(lr-picodrive)](https://github.com/libretro/picodrive),  [(Osmose)](https://github.com/RetroPie/osmose-rpi)
 * [MSX](https://github.com/RetroPie/RetroPie-Setup/wiki/MSX) [(lr-fmsx)](https://github.com/libretro/fmsx-libretro)
 * [Nintendo 64](https://github.com/RetroPie/RetroPie-Setup/wiki/Nintendo-64) [(Mupen64plus)](https://code.google.com/p/mupen64plus/), [(lr-mupen64plus)](https://github.com/libretro/mupen64plus-libretro)
