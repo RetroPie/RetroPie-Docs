@@ -170,10 +170,10 @@ Dat File (no clones, no neogeo): [mame4all-no-clones-no-neogeo](http://s000.tiny
 
 [**MAME4ALL-PI COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1gpuoZx78kDDdnf_yADicsSZHMfpOxNySSov7UdCDAik/edit?usp=sharing)  feel free to contribute to the list.
 
-### [lr-imame4all)](https://github.com/libretro/imame4all-libretro)
+### [lr-imame4all](https://github.com/libretro/imame4all-libretro)
 ```shell
 Roms Dir: /home/pi/RetroPie/roms/mame-mame4all
-Binary Dir: /opt/retropie/libretrocores/mamelibretro/
+Binary Dir: /opt/retropie/libretrocores/lr-imame4all
 Config Dir: /opt/retropie/configs/mame-mame4all/retroarch.cfg
 ```
 MAME Version: Based on **0.37b5** (July 2000)
