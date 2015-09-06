@@ -65,6 +65,8 @@ Romset Used: **.78**
 
 Total Games Emulated: 4705 (includes clones etc...)
 
+### [**lr-mame2003 COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1LP1MELCvcxu7TfiowF_0ZuvRVEMqlfQyTVetnOJvuJc/edit?usp=sharing)  feel free to contribute to the list.
+
 Place your lr-Mame2003 ROMs in
 ```
 /home/pi/RetroPie/roms/mame-libretro
