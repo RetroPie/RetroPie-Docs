@@ -120,7 +120,7 @@ Dat File: [fba_029671_od_release_10_working_roms_filtered.zip] (https://www.drop
 
 [**PiFBA COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1OZioLrz16ptaNbjQUDP5hhVzQDTOTn9Nz46Hbj3-06k/edit?usp=sharing)  feel free to contribute to the list.
 
-### [FBA-Libretro](https://github.com/libretro/fba-libretro) 
+### [lr-fba](https://github.com/libretro/fba-libretro) 
 ```shell
 Roms Dir: /home/pi/RetroPie/roms/fba
 Binary Dir: /opt/retropie/libretrocores/fbalibretro
@@ -142,7 +142,7 @@ Dat File: [FB Alpha v0.2.97.30.dat.zip](http://smartretro.co.uk/forums/download/
 
 Neo Geo Only .Dat File: [fba-lr-neogeo](http://s000.tinyupload.com/download.php?file_id=05558959831361649927&t=0555895983136164992714492)
 
-[**FBA-Libretro COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1rWO7Lm0bTGNpak6J-CPzde0GNIDP0NHDoQdJ6iWosfA/edit?usp=sharing)  feel free to contribute to the list.
+[**lr-fba COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1rWO7Lm0bTGNpak6J-CPzde0GNIDP0NHDoQdJ6iWosfA/edit?usp=sharing)  feel free to contribute to the list.
 
 ### [mame4all-pi](http://sourceforge.net/projects/mame4allpi/)
 ```shell
@@ -170,7 +170,7 @@ Dat File (no clones, no neogeo): [mame4all-no-clones-no-neogeo](http://s000.tiny
 
 [**MAME4ALL-PI COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1gpuoZx78kDDdnf_yADicsSZHMfpOxNySSov7UdCDAik/edit?usp=sharing)  feel free to contribute to the list.
 
-### [Mame-libretro (imame4all)](https://github.com/libretro/imame4all-libretro)
+### [lr-imame4all)](https://github.com/libretro/imame4all-libretro)
 ```shell
 Roms Dir: /home/pi/RetroPie/roms/mame-mame4all
 Binary Dir: /opt/retropie/libretrocores/mamelibretro/
@@ -194,7 +194,7 @@ Dat File (with merge data): [MAME 0.37b5.dat](https://drive.google.com/file/d/0B
 
 Dat File (no clones, no neogeo): [mame4all-no-clones-no-neogeo](http://s000.tinyupload.com/index.php?file_id=07696766073490048881)
 
-[**IMAME4ALL-Libretro COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1Fmx2RPcgVgIIeKpaBKNEGWCDuu3DGfR-VkrnIVsIpeE/edit?usp=sharing)  feel free to contribute to the list.
+[**lr-IMAME4ALL COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1Fmx2RPcgVgIIeKpaBKNEGWCDuu3DGfR-VkrnIVsIpeE/edit?usp=sharing)  feel free to contribute to the list.
 
 ### [GnGeo 0.8](https://github.com/ymartel06/GnGeo-Pi)
 ```shell
