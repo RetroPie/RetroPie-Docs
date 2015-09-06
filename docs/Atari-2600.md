@@ -2,9 +2,9 @@
 ***
 _The Atari 2600 was a home video game console released by Atari in 1977_
 ***
-## Emulators: [Stella](http://stella.sourceforge.net/), [stella-libretro](https://github.com/libretro/stella-libretro)
+## Emulators: [Stella](http://stella.sourceforge.net/), [lr-stella](https://github.com/libretro/stella-libretro)
 
-Both work fine. Stella-libretro is a port of Stella that utilises RetroArch configurations- see "Controls" below.
+Both work fine. lr-stella is a libretro port of Stella that utilises RetroArch configurations- see "Controls" below.
 
 ## ROMS
 Accepted File Extensions: **.bin .a26 .rom**
@@ -16,9 +16,9 @@ Place your Atari 2600 ROMS in
 ## Controls
 You will configure controls differently depending on which emulator you use:
 
-### Stella-Libretro
+### lr-stella
 
-Stella-Libretro utilises Retroarch configurations
+lr-stella utilises Retroarch configurations
 
 Add custom retroarch controls to the retroarch.cfg file in
 ```shell
