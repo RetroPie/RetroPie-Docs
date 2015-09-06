@@ -17,7 +17,7 @@ This BIOS is optional if you want the Atari Logo at the beginning of games, othe
 
 Place your Atari 7800 BIOS in
 ```
-/home/pi/RetroPie/BIOS/7800 BIOS (U).rom
+/home/pi/RetroPie/BIOS/
 ```
 Note: if this BIOS is enabled, PAL ROMs will not work so use it accordingly.
 
