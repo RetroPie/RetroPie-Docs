@@ -5,7 +5,7 @@ _The ZX Spectrum was an 8 bit series of home computers released by Sinclair Rese
 
 ***
 
-## Emulators: [libretro-fuse](https://github.com/libretro/fuse-libretro), [FBZX](http://www.rastersoft.com/fbzx.html), [Fuse](http://fuse-emulator.sourceforge.net/)
+## Emulators: [lr-fuse](https://github.com/libretro/fuse-libretro), [FBZX](http://www.rastersoft.com/fbzx.html), [Fuse](http://fuse-emulator.sourceforge.net/)
 
 ## ROMS
 
@@ -17,9 +17,9 @@ Place your ZX Spectrum ROMs in
 ```
 ## Controls
 
-### Fuse-Libretro
+### lr-fuse
 
-Fuse-Libretro utilises Retroarch configurations
+lr-fuse utilises Retroarch configurations
 
 Add custom retroarch controls to the retroarch.cfg file in
 ```shell
