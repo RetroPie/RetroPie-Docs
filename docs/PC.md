@@ -2,7 +2,7 @@
 ***
 _The good old days of DOS._
 ***
-## Emulator: [DOSBox](http://www.dosbox.com/)
+## Emulator: [DOSBox](http://www.dosbox.com/), [Rpix86](http://rpix86.patrickaalto.com/)
 
 ## ROMS
 Accepted File Extensions: **.com .sh .bat .exe**
