@@ -4,7 +4,7 @@
 _The PlayStation 1 is a 5th generation video game console released by Sony in 1994._
 
 ***
-## Emulators: [libretro-pcsx-rearmed](https://github.com/libretro/pcsx_rearmed), [pcsx-rearmed](https://github.com/notaz/pcsx_rearmed)
+## Emulators: [lr-pcsx-rearmed](https://github.com/libretro/pcsx_rearmed), [pcsx-rearmed](https://github.com/notaz/pcsx_rearmed)
 
 ## ROMS
 Accepted File Extensions: **.bin .cue .img .mdf**
@@ -26,7 +26,7 @@ See table at the bottom for alternative BIOS options that may or may not work.
 
 ## Controls
 
-libretro-pcsx-rearmed utilises Retroarch configurations
+lr-pcsx-rearmed utilises Retroarch configurations
 
 Add custom retroarch controls to the retroarch.cfg file in
 ```shell
