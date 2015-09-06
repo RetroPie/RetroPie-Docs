@@ -32,7 +32,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [Commodore 64](https://github.com/RetroPie/RetroPie-Setup/wiki/Commodore-64) [(Vice)](http://vice-emu.sourceforge.net/)
 * [Dragon 32](https://github.com/RetroPie/RetroPie-Setup/wiki/Dragon) [(XRoar)](http://www.6809.org.uk/xroar/)
 * [Dreamcast](https://github.com/RetroPie/RetroPie-Setup/wiki/Dreamcast) [(Reicast)](https://github.com/reicast/reicast-emulator) (EXPERIMENTAL!)
-* [FinalBurn Alpha](https://github.com/RetroPie/RetroPie-Setup/wiki/FinalBurn-Alpha) [(PiFBA)](https://github.com/RetroPie/pifba), [(lr-fba)](https://github.com/libretro/fba-libretro)
+* [FinalBurn Alpha](https://github.com/RetroPie/RetroPie-Setup/wiki/FinalBurn-Alpha) [(PiFBA)](https://github.com/RetroPie/pifba), [(lr-fba)](https://github.com/libretro/fba-libretro), [(lr-fba-next)](https://github.com/libretro/libretro-fba.git)
 * [Genesis/Megadrive](https://github.com/RetroPie/RetroPie-Setup/wiki/Genesis-Megadrive) [(DGEN)](http://dgen.sourceforge.net/), [(lr-Genesis-Plus-GX)](https://github.com/libretro/Genesis-Plus-GX), [(lr-picodrive)] (https://github.com/libretro/picodrive)
 * [Game Gear](https://github.com/RetroPie/RetroPie-Setup/wiki/Game-Gear) [(Osmose)](https://github.com/RetroPie/osmose-rpi), [(lr-Genesis-Plus-GX)](https://github.com/libretro/Genesis-Plus-GX)
 * [Game Boy](https://github.com/RetroPie/RetroPie-Setup/wiki/Game-Boy) [(lr-gambatte)](https://github.com/libretro/gambatte-libretro)
