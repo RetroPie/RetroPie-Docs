@@ -2,9 +2,10 @@
 ***
 _The Game Boy was released by Nintendo in 1989 thus kicking off the era of handheld gaming and Pokemon._
 ***
-## Emulator: [gambatte-libretro](https://github.com/libretro/gambatte-libretro)
+## Emulator: [lr-gambatte](https://github.com/libretro/gambatte-libretro)
 
-Gambatte-libretro is a port of Gambatte for libretro. Since this is a libretro core it utilises RetroArch configurations for your controller
+lr-gambatte is a libretro port of Gambatte that utilises RetroArch configurations for your controller
+
 ## ROMS
 
 Accepted File Extensions: **.gb**
@@ -15,7 +16,7 @@ Place your Game Boy ROMs in
 ```
 ## Controls
 
-Gambatte-libretro utilises Retroarch configurations
+lr-gambatte utilises Retroarch configurations
 
 Add custom retroarch controls to the retroarch.cfg file in
 ```shell
