@@ -3,7 +3,7 @@
 _The Vectrex is a vector display-based home video game console released in 1982_
 ***
 
-## Emulator: [libretro-vecx](https://github.com/libretro/libretro-vecx)
+## Emulator: [lr-vecx](https://github.com/libretro/libretro-vecx)
 
 ## ROMS
 
@@ -16,7 +16,7 @@ Place your Vectrex ROMs in
 
 ## Controls
 
-libretro-vecx utilises Retroarch configurations
+lr-vecx utilises Retroarch configurations
 
 Add custom retroarch controls to the retroarch.cfg file in
 ```shell
