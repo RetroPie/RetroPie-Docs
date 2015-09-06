@@ -26,7 +26,7 @@ Place your BIOS in
 
 ## Controls
 
-libretro-yabause utilises Retroarch configurations
+lr-yabause utilises Retroarch configurations
 
 Add custom retroarch controls to the retroarch.cfg file in
 ```shell
