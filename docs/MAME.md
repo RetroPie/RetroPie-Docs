@@ -34,12 +34,12 @@ Total Games Emulated: [2270](http://code.google.com/p/imame4all/wiki/GameList)
 
 ### **lr-imame4all**
 
-Romset Used: **0.37b5**
-
 Place your lr-imame4all ROMs in
 ```
 /home/pi/RetroPie/roms/mame-mame4all
 ```
+
+Romset Used: **0.37b5**
 
 Total Games Emulated: [2270](http://code.google.com/p/imame4all/wiki/GameList) 
 
