@@ -2,9 +2,9 @@
 ***
 _The Neo Geo is a cartridge-based arcade system board and home video game console released by SNK in 1990._
 ***
-## Emulators: [GnGeo-Pi](https://github.com/ymartel06/GnGeo-Pi), [PiFBA](https://github.com/RetroPie/pifba), [fba-libretro](https://github.com/libretro/fba-libretro)
+## Emulators: [GnGeo-Pi](https://github.com/ymartel06/GnGeo-Pi), [PiFBA](https://github.com/RetroPie/pifba), [lr-fba](https://github.com/libretro/fba-libretro), [lr-fba-next](https://github.com/libretro/libretro-fba)
 
-For Neo Geo games you can use either the standalone emulators PiFBA and GnGeo-Pi or the Retroarch core FBA-libretro. FBA-Libretro is recommended because you can use shaders. See [this page.](https://github.com/petrockblog/RetroPie-Setup/wiki/FinalBurn-Alpha) 
+For Neo Geo games you can use either the standalone emulators PiFBA and GnGeo-Pi or the Retroarch core FBA-libretro. lr-fba is recommended because you can use shaders. See [this page.](https://github.com/petrockblog/RetroPie-Setup/wiki/FinalBurn-Alpha) 
 
 ## ROMS
 
@@ -72,9 +72,9 @@ vs-bios.rom
 
 ## Controls
 
-### fba-libretro Controls
+### lr-fba and lr-fba-next
 
-fba-libretro utilises RetroArch configs.
+lr-fba and lr-fba-next utilise RetroArch configs.
 
 Add custom retroarch controls to the retroarch.cfg file in
 ```shell
