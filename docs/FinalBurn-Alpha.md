@@ -53,7 +53,7 @@ you can also place your roms in
 
 ### FBA-Libretro-Next
 
-Romset Used: FBA **0.2.97.30**
+Romset Used: FBA **0.2.97.36**
  
 Place your Fba-libretro-next ROMS in
 ```shell
