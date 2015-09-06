@@ -234,7 +234,7 @@ Active Sets 4705/4705
 
 Dat File (with merge data): [MAME 0.78.dat](https://drive.google.com/file/d/0B2TMeZ6iEFvHcGtvSlVBTlpXSXc/view?usp=sharing) 
 
-[**lr-mame2003 COMPATIBILITY LIST**]()  feel free to contribute to the list.
+[**lr-mame2003 COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1LP1MELCvcxu7TfiowF_0ZuvRVEMqlfQyTVetnOJvuJc/edit?usp=sharing)  feel free to contribute to the list.
 
 ### [lr-mame2010](https://github.com/libretro/mame2010-libretro)
 ```shell
