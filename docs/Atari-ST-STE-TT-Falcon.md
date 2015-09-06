@@ -2,7 +2,7 @@
 ***
 _The Atari ST, STE, TT, and Falcon were a series of personal computers released by Atari starting in 1985._
 ***
-## Emulator: Hatari
+## Emulator: [Hatari](http://hatari.tuxfamily.org/)
 
 Much of the emulation for later models, such as the Falcon, is still experimental so some games may be hit and miss.
 
