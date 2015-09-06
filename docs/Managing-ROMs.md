@@ -162,7 +162,7 @@ Active Sets 3743/3743
 
 Dat File: [FB Alpha v0.2.97.36.dat.zip](https://drive.google.com/file/d/0B2TMeZ6iEFvHMkhrcmJ0UjVRWDg/view?usp=sharing)
 
-[**lr-fba-next COMPATIBILITY LIST**]()  feel free to contribute to the list.
+[**lr-fba-next COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1GaqIIoiWbzKHwZ52S2xCSDQXILo81Ls1mHK6czKGAtM/edit?usp=sharing)  feel free to contribute to the list.
 
 ### [mame4all-pi](http://sourceforge.net/projects/mame4allpi/)
 ```shell
