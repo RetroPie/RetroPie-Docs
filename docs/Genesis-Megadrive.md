@@ -2,8 +2,8 @@
 ***
 _This console, known as the Genesis in North America and the Mega Drive everywhere else in the world, was released by Sega in 1998_
 ***
-## Emulators: [DGen](http://dgen.sourceforge.net/), [libretro-picodrive](https://github.com/libretro/picodrive), [libretro-Genesis-Plus-GX](https://github.com/libretro/Genesis-Plus-GX)
-DGEN has the worst performance and can be tedious to configure controls, libretro-picodrive seems to be the favourite for older Pi's, libretro-Genesis-Plus-GX seems to be the favourite for the Pi 2.
+## Emulators: [DGen](http://dgen.sourceforge.net/), [lr-picodrive](https://github.com/libretro/picodrive), [lr-genesis-plus-gx](https://github.com/libretro/Genesis-Plus-GX)
+DGEN has the worst performance and can be tedious to configure controls, lr-picodrive seems to be the favourite for older Pi's, lr-genesis-plus-gx seems to be the favourite for the Pi 2.
 ## ROMS
 Accepted File Extensions: **.smd .bin .md .iso**
 
@@ -20,9 +20,9 @@ or
 
 There are two methods for configuring controls- one for DGen and the other for lr-picodrive and lr-Genesis-Plus-GX.
 
-### lr-picodrive and lr-Genesis-Plus-GX
+### lr-picodrive and lr-genesis-plus-gx
 
-lr-picodrive and lr-Genesis-Plus-GX utilise RetroArch configurations
+lr-picodrive and lr-genesis-plus-gx utilise RetroArch configurations
 
 Add custom retroarch controls to the retroarch.cfg file in
 
