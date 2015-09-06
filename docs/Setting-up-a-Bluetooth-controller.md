@@ -70,7 +70,7 @@ Press F4 to quit Emulation Station, and at the command prompt type
 `cd /opt/retropie/configs/all/retroarch-joypads/`  
 `ls -lah`  
     
-This should display the configuration file you created, delete it with  
+This should display the configuration file you created, delete it (although the next steps should overwrite this anyway) with:  
 `rm {filename} `  
 for example  
 `rm 8BitdoFC30Pro.cfg`  
