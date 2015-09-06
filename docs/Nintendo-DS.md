@@ -6,7 +6,7 @@ The Nintendo DS is a handheld video game console that was released by Nintendo i
 ***
 Note that this is very experimental and lags quite a bit even with an overclocked Rpi 2. But it can be installed through the experimental menu in the RetroPie Setup Script.
 
-## Emulator: [libretro-desmume](https://github.com/libretro/desmume)
+## Emulator: [lr-desmume](https://github.com/libretro/desmume)
 
 ## ROMS
 Accepted File Extensions: **.nds .bin**
@@ -18,7 +18,7 @@ Place your DS ROMs in
 
 ## Controls
 
-Libretro-Desmume utilises Retroarch configurations
+lr-desmume utilises Retroarch configurations
 
 Add custom retroarch controls to the retroarch.cfg file in
 ```shell
