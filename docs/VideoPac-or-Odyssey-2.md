@@ -2,7 +2,7 @@
 ***
 _The Magnavox Odyssey2 known in Europe as the Philips Videopac G7000 (and a bunch of other names a bunch of other places) is a home video game console released in 1978. One of the earliest gaming consoles, it is one of the least known today. Games are quite similar in detail to that of Atari 2600... except worse._
 ***
-## Emulator: [Libretro-o2em](https://github.com/libretro/libretro-o2em)
+## Emulator: [lr-o2em](https://github.com/libretro/libretro-o2em)
 
 ## ROMS: 
 
@@ -26,7 +26,7 @@ Place your BIOS in
 
 Really it says it uses Retroarch configurations and some gamepads work but for almost all of your games you will need a keyboard. Typically you will press 1 to start a game- for people who grew up in the 70's controls might be more intuitive, but they can be tricky to figure out as they change for each game...
 
-libretro-o2em utilises Retroarch configurations
+lr-o2em utilises Retroarch configurations
 
 Add custom retroarch controls to the retroarch.cfg file in
 ```shell
