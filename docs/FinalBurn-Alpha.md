@@ -55,7 +55,7 @@ you can also place your roms in
 
 Romset Used: FBA **0.2.97.36** which is based on MAME 0.161 (Apr 2015)
 
-Total Games Emulated: [8363](https://raw.githubusercontent.com/libretro/libretro-fba/master/gamelist.txt) (includes clones etc..)
+Total Games Emulated: [3743](https://raw.githubusercontent.com/libretro/libretro-fba/master/gamelist.txt) (includes clones etc..)
  
 Place your lr-fba-next ROMS in
 ```shell
