@@ -63,7 +63,7 @@ Place your AdvanceMAME ROMs in
 
 Romset Used: **.78**
 
-Total Games Emulated: 8782 (includes clones etc...)
+Total Games Emulated: 4705 (includes clones etc...)
 
 Place your lr-Mame2003 ROMs in
 ```
@@ -73,6 +73,7 @@ Place your lr-Mame2003 ROMs in
 ### lr-Mame2010
 
 Romset Used: **.139**
+
 Total Games Emulated: 8782 (includes clones etc...)
 
 Place your lr-Mame2010 ROMs in
