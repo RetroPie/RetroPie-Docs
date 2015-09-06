@@ -3,8 +3,8 @@
 _The Sega Game Gear was an 8 bit handheld gaming console released in 1990_
 
 ***
-## Emulators: [Osmose](https://github.com/RetroPie/osmose-rpi), [libretro-Genesis-Plus-GX](https://github.com/libretro/Genesis-Plus-GX)
-The Osmose is tedious to configure controllers with. The Libretro-Genesis-Plus-GX will be the most convenient choice as it utilises RetroArch configurations.
+## Emulators: [Osmose](https://github.com/RetroPie/osmose-rpi), [lr-genesis-plus-gx](https://github.com/libretro/Genesis-Plus-GX)
+The Osmose is tedious to configure controllers with. The lr-genesis-plus-gx will be the most convenient choice as it utilises RetroArch configurations.
 ## ROMS
 Acceptable File Extensions: **.gg**
 
@@ -14,9 +14,9 @@ Place your Gamegear roms in
 ```
 ## Controls
 
-### Libretro-Genesis-Plus-GX
+### lr-genesis-plus-gx
 
-lr-Genesis-Plus-GX utilises Retroarch configurations
+lr-genesis-plus-gx utilises Retroarch configurations
 
 Add custom retroarch controls to the retroarch.cfg file in
 ```shell
