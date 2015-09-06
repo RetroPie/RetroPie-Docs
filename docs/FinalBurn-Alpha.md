@@ -2,7 +2,7 @@
 ***
 _Final Burn Alpha is a Multiple Arcade Emulator most popular for emulating Neo-Geo, Capcom, Konami, and Cave games. It is developed by the final burn team and originated from FinalBurn by Dave_
 ***
-## Emulators: [PiFBA](https://github.com/RetroPie/pifba), [fba-libretro](https://github.com/libretro/fba-libretro)
+## Emulators: [PiFBA](https://github.com/RetroPie/pifba), [fba-libretro](https://github.com/libretro/fba-libretro), [fba-libretro-next](https://github.com/libretro/libretro-fba.git)
 
 Fba-libretro is a port of PiFBA and unlike PiFBA, fba-libretro uses RetroArch configurations.
 
@@ -41,7 +41,7 @@ Total Games Emulated: 3369 (includes clones etc..)
 
 ### [**FBA-Libretro COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1rWO7Lm0bTGNpak6J-CPzde0GNIDP0NHDoQdJ6iWosfA/edit?usp=sharing)  feel free to contribute to the list.
  
-For RetroPie 3.0 FBA-Libretro place your ROMS in
+Place your  FBA-Libretro ROMS in
 ```shell
 /home/pi/RetroPie/roms/fba
 ```
@@ -51,6 +51,19 @@ you can also place your roms in
 /home/pi/RetroPie/roms/neogeo
 ```
 
+### FBA-Libretro-Next
+
+Romset Used: FBA **0.2.97.30**
+ 
+Place your Fba-libretro-next ROMS in
+```shell
+/home/pi/RetroPie/roms/fba
+```
+you can also place your roms in
+
+```shell
+/home/pi/RetroPie/roms/neogeo
+```
 ## BIOS
 
 The BIOS needed for Neo Geo games is:
