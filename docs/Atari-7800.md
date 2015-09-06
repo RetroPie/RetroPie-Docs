@@ -2,7 +2,7 @@
 ***
 _The Atari 7800 was a video game console released by Atari in 1986._
 ***
-## Emulator: [Prosystem-libretro](https://github.com/libretro/prosystem-libretro)
+## Emulator: [lr-prosystem](https://github.com/libretro/prosystem-libretro)
 
 ## ROMS
 Accepted File Extensions: **.a78 .bin**
@@ -23,7 +23,7 @@ Note: if this BIOS is enabled, PAL ROMs will not work so use it accordingly.
 
 ## Controls
 
-Prosystem-Libretro utilises Retroarch configurations
+lr-prosystem utilises Retroarch configurations
 
 Add custom retroarch controls to the retroarch.cfg file in
 ```shell
