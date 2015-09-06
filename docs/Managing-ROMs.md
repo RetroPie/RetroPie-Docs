@@ -144,6 +144,26 @@ Neo Geo Only .Dat File: [fba-lr-neogeo](http://s000.tinyupload.com/download.php?
 
 [**lr-fba COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1rWO7Lm0bTGNpak6J-CPzde0GNIDP0NHDoQdJ6iWosfA/edit?usp=sharing)  feel free to contribute to the list.
 
+### [lr-fba-next](https://github.com/libretro/libretro-fba) 
+```shell
+Roms Dir: /home/pi/RetroPie/roms/fba
+Binary Dir: /opt/retropie/libretrocores/lr-fba-next
+Config Dir: /opt/retropie/configs/fba/retroarch.cfg
+```
+MAME Version: **FBA 0.2.97.36** which is based on MAME 0.161 (April 2015)
+
+Romsets emulated: 3743 (includes clones etc..)
+
+Active Sets 3743/3743
+* Parents 802/802
+* Clones 2408/2408
+* Others 533/533
+* BIOS 6/6
+
+Dat File: [FB Alpha v0.2.97.36.dat.zip](https://drive.google.com/file/d/0B2TMeZ6iEFvHMkhrcmJ0UjVRWDg/view?usp=sharing)
+
+[**lr-fba-next COMPATIBILITY LIST**]()  feel free to contribute to the list.
+
 ### [mame4all-pi](http://sourceforge.net/projects/mame4allpi/)
 ```shell
 Roms Dir: /home/pi/RetroPie/roms/mame-mame4all
@@ -195,6 +215,46 @@ Dat File (with merge data): [MAME 0.37b5.dat](https://drive.google.com/file/d/0B
 Dat File (no clones, no neogeo): [mame4all-no-clones-no-neogeo](http://s000.tinyupload.com/index.php?file_id=07696766073490048881)
 
 [**lr-IMAME4ALL COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1Fmx2RPcgVgIIeKpaBKNEGWCDuu3DGfR-VkrnIVsIpeE/edit?usp=sharing)  feel free to contribute to the list.
+
+### [lr-mame2003](https://github.com/libretro/mame2003-libretro)
+```shell
+Roms Dir: /home/pi/RetroPie/roms/mame-libretro
+Binary Dir: /opt/retropie/libretrocores/lr-mame2003
+Config Dir: /opt/retropie/configs/mame-libretro/retroarch.cfg
+```
+MAME Version: Based on **0.78** (December 2003)
+
+Romsets emulated: 4705 (includes clones etc..)
+
+Active Sets 4705/4705
+* Parents 1042/1042
+* Clones 2039/2039
+* Others 1624/1624
+* BIOS 1/1
+
+Dat File (with merge data): [MAME 0.78.dat](https://drive.google.com/file/d/0B2TMeZ6iEFvHcGtvSlVBTlpXSXc/view?usp=sharing) 
+
+[**lr-mame2003 COMPATIBILITY LIST**]()  feel free to contribute to the list.
+
+### [lr-mame2010](https://github.com/libretro/mame2010-libretro)
+```shell
+Roms Dir: /home/pi/RetroPie/roms/mame-libretro
+Binary Dir: /opt/retropie/libretrocores/lr-mame2010
+Config Dir: /opt/retropie/configs/mame-libretro/retroarch.cfg
+```
+MAME Version: Based on **0.139** (August 2010)
+
+Romsets emulated: 8782 (includes clones etc..)
+
+Active Sets 8782/8782
+* Parents 1835/1835
+* Clones 4265/4265
+* Others 2683/2683
+* BIOS 1/1
+
+Dat File (with merge data): [MAME 0.139.dat](https://drive.google.com/file/d/0B2TMeZ6iEFvHYmtlc0JzSVp5OTg/view?usp=sharing) 
+
+[**lr-mame2010 COMPATIBILITY LIST**]()  feel free to contribute to the list.
 
 ### [GnGeo 0.8](https://github.com/ymartel06/GnGeo-Pi)
 ```shell
