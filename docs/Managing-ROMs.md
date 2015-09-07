@@ -6,7 +6,7 @@ This is where [clrmamepro](http://mamedev.emulab.it/clrmamepro/) comes in.  Clrm
 
 The following chart is a quick reference for all the arcade emulators in RetroPie.
 
-| Emulator | Romset | # of ROMs | .DAT File | Compatibility |
+| Emulator | Romset | # of ROMs | [.DAT Files](https://github.com/HerbFargus/RetroPie-Dat-Files/archive/master.zip) | Compatibility |
 | :---: | :---: | :---: | :---: | :---: |
 | [mame4all](https://github.com/RetroPie/RetroPie-Setup/wiki/MAME) | 0.37b5 | [2270](http://code.google.com/p/imame4all/wiki/GameList) | [.DAT](https://drive.google.com/file/d/0B2TMeZ6iEFvHNDNHcl8tcUNIcDA/view?usp=sharing)| [List](https://docs.google.com/spreadsheets/d/1gpuoZx78kDDdnf_yADicsSZHMfpOxNySSov7UdCDAik/edit?usp=sharing) |
 | [lr-imame4all](https://github.com/RetroPie/RetroPie-Setup/wiki/MAME) | 0.37b5 | [2270](http://code.google.com/p/imame4all/wiki/GameList) | [.DAT](https://drive.google.com/file/d/0B2TMeZ6iEFvHNDNHcl8tcUNIcDA/view?usp=sharing)| [List](https://docs.google.com/spreadsheets/d/1Fmx2RPcgVgIIeKpaBKNEGWCDuu3DGfR-VkrnIVsIpeE/edit?usp=sharing) |
