@@ -2,7 +2,7 @@ RetroPie uses forks of the [MAME](http://mamedev.org/) and [FinalBurn Alpha](htt
 
 The following chart is a quick reference for all the arcade emulators in RetroPie.
 
-| Emulator | Romset | # of ROMs | [.DAT Files](https://github.com/HerbFargus/RetroPie-Dat-Files/archive/master.zip) | Compatibility |
+| Emulator | Romset | # of ROMs | [.DAT Files](https://github.com/HerbFargus/retropie-dat/archive/master.zip) | Compatibility |
 | :---: | :---: | :---: | :---: | :---: |
 | [mame4all](https://github.com/RetroPie/RetroPie-Setup/wiki/MAME) | 0.37b5 | [2270](http://code.google.com/p/imame4all/wiki/GameList) | [.DAT](https://drive.google.com/file/d/0B2TMeZ6iEFvHNDNHcl8tcUNIcDA/view?usp=sharing)| [List](https://docs.google.com/spreadsheets/d/1gpuoZx78kDDdnf_yADicsSZHMfpOxNySSov7UdCDAik/edit?usp=sharing) |
 | [lr-imame4all](https://github.com/RetroPie/RetroPie-Setup/wiki/MAME) | 0.37b5 | [2270](http://code.google.com/p/imame4all/wiki/GameList) | [.DAT](https://drive.google.com/file/d/0B2TMeZ6iEFvHNDNHcl8tcUNIcDA/view?usp=sharing)| [List](https://docs.google.com/spreadsheets/d/1Fmx2RPcgVgIIeKpaBKNEGWCDuu3DGfR-VkrnIVsIpeE/edit?usp=sharing) |
@@ -34,23 +34,16 @@ The version at the time of this article is 4.016.  I would recommend the 64 bit 
 ##Step 3 - Acquire DAT files#
 DAT files are the [XML-based](http://en.wikipedia.org/wiki/XML) database definitions of the exact ROMs an emulator uses. Using the DAT files and [CRC](http://en.wikipedia.org/wiki/Cyclic_redundancy_check) checks, clrmamepro is able to identify which of your ROMs are valid for a given emulator.
 
-The RetroPie SD card image install includes DAT files for MAME4ALL and PiFBA. You can use [WinSCP](http://winscp.net/eng/index.php) to connect to your RasPi and copy the DAT files back to your Windows PC.
-
-* Create a new directory in Windows, `C:\RetroPieRoms`
-* Create a sub directory, `C:\RetroPieRoms\MAME4ALL`
-* Create a sub directory, `C:\RetroPieRoms\PiFBA`
-* Download and install [WinSCP](http://winscp.net/eng/download.php)
-* Launch WinSCP and connect to your Pi.  You can get the IP address of the Pi by typing `ifconfig` on the Pi.  It is also displayed on the Pi's screen at the end of the boot up sequence.
-* If you haven't changed any settings on your RetroPie, the default username is `pi` and the default password is `raspberry`
-* WinSCP is pretty straight forward, just navigate to your local Windows directory in the left-hand pane and navigate to the remote, Pi directory in the right-hand pane.   You can copy files by dragging them between the two panes.
-* Copy the DAT from your Raspberry Pi `/opt/retropie/emulators/mame4all/clrmame.dat` to your Windows PC `C:\RetroPieRoms\clrmame.dat`
-* Copy the ZIP from `/opt/retropie/emulators/pifba/fba_029671_clrmame_dat.zip` to `C:\RetroPieRoms\fba_029671_clrmame_dat.zip`
-* Extract `C:\RetroPieRoms\fba_029671_clrmame_dat.zip` to `C:\RetroPieRoms\`.  You should have two new DAT files: `fba_029671_od_release_10_working_roms.dat` and `fba_029671_od_release_10_non_working_roms.dat`.  We will only be using `fba_029671_od_release_10_working_roms.dat` in this tutorial.
+You can download all .DAT files for all arcade emulators [**HERE**](https://github.com/HerbFargus/retropie-dat/archive/master.zip)
+* For this tutorial, extract the zip file into `C:\` (but you can really put it anywhere you want)
+* Open retropie-dat-master and you should see a list of folders. Each folder contains the .DAT files for the respective emulator. We will only be using `C:\retropie-dat-master\mame4all\MAME 0.37b5.dat` in this tutorial.
+* Create a sub directory `C:\retropie-dat-master\mame4allroms` (this will be used in the next step)
+* Create a sub directory `C:\retropie-dat-master\pifbaroms`
 
 ##Step 4 - Run clrmamepro for the first time#
 * Run `C:\clrmamepro\cmpro64.exe`.  The welcome screen explains that common first steps are to 1) Create a Profile, 2) Set up your paths and 3) Scan your ROMs. We will be doing things slightly differently, in order to leave your source ROMs intact.  
 * Click OK to the Welcome screen
-* Click **"Add DatFile..."** and open the MAME4ALL DAT file at `C:\RetroPieRoms\clrmame.dat`
+* Click **"Add DatFile..."** and open the MAME4ALL DAT file at `C:\retropie-dat-master\mame4all\MAME 0.37b5.dat`
 * Accept the default profile location of [PROFILES], click **"OK"**
 * Select **"[NEW DATFILES]"** in the left-hand pane and select **"MAME4ALL ROMs Datfile"** in the right-hand pane
 * Click **"Load / Update"**
@@ -58,14 +51,14 @@ The RetroPie SD card image install includes DAT files for MAME4ALL and PiFBA. Yo
 * You are now at the main window for clrmamepro.  We still need to set our paths, so click **"Settings"**
 * Verify **"ROM-Paths"** is the selected option in the upper-left corner drop down menu
 * Click the **"Add..."** button
-* Select the folder `C:\RetroPieRoms\MAME4ALL` and click **"OK"**
+* Select the folder you created in the last step called `C:\retropie-dat-master\mame4allroms` and click **"OK"**
 * Close the settings window with the **"X"** button in the upper right
 
 At this point, you could scan the ROMs folder you just selected, but we just created this folder and it is empty.  Instead, we will rebuild into this folder.  Clrmamepro can scan other locations for matching ROMs and build a new ROM set from them.
 
 ##Step 5- Rebuild a ROM set#
 * In the main clrmamepro window, select **"Rebuilder"**
-* The destination should already be filled in for you - it is the same as the ROM path you defined above in the settings window: `C:\RetroPieRoms\MAME4ALL`
+* The destination should already be filled in for you - it is the same as the ROM path you defined above in the settings window: `C:\retropie-dat-master\mame4allroms`
 * Use the browse button **"..."** to select your source path.  For example you might have a full set of MAME v0.156 ROMs - point clrmamepro to that directory as your source.
 * Click **"Rebuild..."**.  Depending on the size of the directory your chose as a source, this could take some time
 * When clrmamepro is finished rebuilding, you will see a window with statistics showing how many matching files were found, how many files were created and how many were skipped.  Click "OK" 
@@ -80,8 +73,8 @@ Time to find out how well your source ROMs matched up...
 * When clrmamepro finishes scanning, you will see a "Statistics" window with high level information and a "Scan Results" window with detailed information about your missing ROMs
 
 ##Repeat Steps 4 through 6 for the FBA ROM set#
-* From clrmamepro "Profiler" window load the DAT file for PiFBA `C:\RetroPieRoms\fba_029671_od_release_10_working_roms.dat`
-* From clrmamepro "Settings" windows set the ROM path to `C:\RetroPieRoms\PiFBA`
+* From clrmamepro "Profiler" window load the DAT file for PiFBA `C:\retropie-dat-master\pifba\fba_029671_od_release_10_working_roms.dat`
+* From clrmamepro "Settings" windows set the ROM path to `C:\retropie-dat-master\pifbaroms`
 * Use clrmamepro's "Rebuilder" to rebuild your existing ROMs to a new ROM set
 * Scan the rebuilt ROMs using the "Scanner"
 
