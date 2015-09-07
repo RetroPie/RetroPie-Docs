@@ -45,9 +45,9 @@ You can download all .DAT files for all arcade emulators [**HERE**](https://gith
 * Click OK to the Welcome screen
 * Click **"Add DatFile..."** and open the MAME4ALL DAT file at `C:\retropie-dat-master\mame4all\MAME 0.37b5.dat`
 * Accept the default profile location of [PROFILES], click **"OK"**
-* Select **"[NEW DATFILES]"** in the left-hand pane and select **"MAME4ALL ROMs Datfile"** in the right-hand pane
+* Select **"[NEW DATFILES]"** in the left-hand pane and select **"MAME 0.37b5"** in the right-hand pane
 * Click **"Load / Update"**
-* Clrmamepro will ask you how to generate the settings for this datfile, click **"Default"**
+* Clrmamepro will ask you how to generate the settings for this datfile, click **"Default"** (it is possible it will throw a warning but just select ok to all and continue on)
 * You are now at the main window for clrmamepro.  We still need to set our paths, so click **"Settings"**
 * Verify **"ROM-Paths"** is the selected option in the upper-left corner drop down menu
 * Click the **"Add..."** button
@@ -85,6 +85,12 @@ That's the basics of using clrmamepro.  Some additional notes:
 * Be careful with the "Fix" settings in the Scanner window and the "Remove Matched Sourcefiles" setting in the Rebuilder window. These settings will remove and rename your ROMs.
 * If clrmamepro does delete any ROMs (because you told it to), you should be able to find backups in C:\clrmamepro\backup as long as you didn't change the default settings.
 * clrmamepro is very stable.  It has been around for a long time, it is regularly updated and it is widely used.  If it reports problems reading your ROMs, you most likely have corrupt ROM archives (zip files) or a failing hard drive.
+
+* When rebuilding there are three options: **Merged set, split set, and non-merged set**. (**NOTE**: As a prerequisite you need a .dat file that contains merge data for the romset.  For best results build from a full romset.)
+
+  - **Merged Set:** In theory a merged set merges all clones into the parent folder (not the most effective use of space but if you can afford the space it is an easy way to clean up your romlist so there aren't clones everywhere)
+  - **split set:** a split set splits the parents and clones into their own folders (this is a bit messier as you have lots of clones that also need a parent romset in the same rom folder as the clone romset in order for it to work)
+  - **non-merged set:** a non-merged set copies the needed parent files into each clone's folder so you can delete the parent and in theory the clone should still work. (this is also not a very effective use of space but gives you the freedom to play clones without worrying about finding the parent)
 
 * If you feel the need to reset clrmamepro's settings, just delete your existing profile(s) and reload your DAT file, selecting **"Default"** settings for the new profile.  Almost all of clrmamepro's settings are per-profile.
 
