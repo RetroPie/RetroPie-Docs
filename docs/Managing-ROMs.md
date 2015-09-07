@@ -254,7 +254,7 @@ Active Sets 8782/8782
 
 Dat File (with merge data): [MAME 0.139.dat](https://drive.google.com/file/d/0B2TMeZ6iEFvHYmtlc0JzSVp5OTg/view?usp=sharing) 
 
-[**lr-mame2010 COMPATIBILITY LIST**]()  feel free to contribute to the list.
+[**lr-mame2010 COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1IRSmFrSDvIc6gAw0gn12TcQ3HDOwmrETTor8wvvb7VI/edit?usp=sharing) feel free to contribute to the list.
 
 ### [GnGeo 0.8](https://github.com/ymartel06/GnGeo-Pi)
 ```shell
