@@ -47,7 +47,7 @@ You can download all .DAT files for all arcade emulators [**HERE**](https://gith
 * Accept the default profile location of [PROFILES], click **"OK"**
 * Select **"[NEW DATFILES]"** in the left-hand pane and select **"MAME 0.37b5"** in the right-hand pane
 * Click **"Load / Update"**
-* Clrmamepro will ask you how to generate the settings for this datfile, click **"Default"** (it is possible it will throw a warning but just select ok to all and continue on)
+* Clrmamepro will ask you how to generate the settings for this datfile, click **"Default"** (it is possible it will throw a warning but just select **"ok to all"** and continue on)
 * You are now at the main window for clrmamepro.  We still need to set our paths, so click **"Settings"**
 * Verify **"ROM-Paths"** is the selected option in the upper-left corner drop down menu
 * Click the **"Add..."** button
