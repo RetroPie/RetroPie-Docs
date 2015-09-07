@@ -90,7 +90,7 @@ That's the basics of using clrmamepro.  Some additional notes:
 
   - **Merged Set:** In theory a merged set merges all clones into the parent folder (not the most effective use of space but if you can afford the space it is an easy way to clean up your romlist so there aren't clones everywhere)
   - **split set:** a split set splits the parents and clones into their own folders (this is a bit messier as you have lots of clones that also need a parent romset in the same rom folder as the clone romset in order for it to work)
-  - **non-merged set:** a non-merged set copies the needed parent files into each clone's folder so you can delete the parent and in theory the clone should still work. (this is also not a very effective use of space but gives you the freedom to play clones without worrying about finding the parent)
+  - **non-merged set:** a non-merged set copies the needed parent files into each clone's folder so you can delete the parent and in theory the clone should still work. (This is also not a very effective use of space but gives you the freedom to play clones without worrying about needing the parent romset in the same rom folder.)
 
 * If you feel the need to reset clrmamepro's settings, just delete your existing profile(s) and reload your DAT file, selecting **"Default"** settings for the new profile.  Almost all of clrmamepro's settings are per-profile.
 
