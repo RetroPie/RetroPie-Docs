@@ -60,7 +60,7 @@ Total Games Emulated: **5563** (0.94.0) **6166** (1.2) (includes clones etc..)
 
 ### [**AdvMame 1.2 COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1RapyxChe2BMOfbX-FsCup9SXGxvS1WmXAofwaTJtmxc/edit?usp=sharing)  feel free to contribute to the list.
 
-### lr-Mame2003
+### lr-Mame2003 (EXPERIMENTAL)
 
 Place your lr-Mame2003 ROMs in
 ```
@@ -73,7 +73,7 @@ Total Games Emulated: 4705 (includes clones etc...)
 
 ### [**lr-mame2003 COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1LP1MELCvcxu7TfiowF_0ZuvRVEMqlfQyTVetnOJvuJc/edit?usp=sharing)  feel free to contribute to the list.
 
-### lr-Mame2010
+### lr-Mame2010 (EXPERIMENTAL)
 
 Place your lr-Mame2010 ROMs in
 ```
