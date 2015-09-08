@@ -19,7 +19,7 @@ Accepted File Extensions: **.zip**
 **For information on how to rebuild newer romsets to be compatible with these emulators see this post:**
 **[Managing ROMs](https://github.com/petrockblog/RetroPie-Setup/wiki/Managing-ROMs)**
 
-### **MAME4ALL-Pi**
+## **MAME4ALL-Pi**
 
 Place your MAME4ALL-Pi ROMs in
 ```
@@ -32,7 +32,7 @@ Total Games Emulated: [2270](http://code.google.com/p/imame4all/wiki/GameList)
 
 ### [**MAME4ALL-PI COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1gpuoZx78kDDdnf_yADicsSZHMfpOxNySSov7UdCDAik/edit?usp=sharing)  feel free to contribute to the list.
 
-### **lr-imame4all**
+## **lr-imame4all**
 
 Place your lr-imame4all ROMs in
 ```
@@ -45,7 +45,7 @@ Total Games Emulated: [2270](http://code.google.com/p/imame4all/wiki/GameList)
 
 ### [**lr-IMAME4ALL COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1Fmx2RPcgVgIIeKpaBKNEGWCDuu3DGfR-VkrnIVsIpeE/edit?usp=sharing)  feel free to contribute to the list.
 
-### **AdvanceMAME**
+## **AdvanceMAME**
 
 Place your AdvanceMAME ROMs in
 ```
@@ -60,7 +60,7 @@ Total Games Emulated: **5563** (0.94.0) **6166** (1.2) (includes clones etc..)
 
 ### [**AdvMame 1.2 COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1RapyxChe2BMOfbX-FsCup9SXGxvS1WmXAofwaTJtmxc/edit?usp=sharing)  feel free to contribute to the list.
 
-### lr-Mame2003 (EXPERIMENTAL)
+## lr-Mame2003 (EXPERIMENTAL)
 
 Place your lr-Mame2003 ROMs in
 ```
@@ -73,7 +73,7 @@ Total Games Emulated: 4705 (includes clones etc...)
 
 ### [**lr-mame2003 COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1LP1MELCvcxu7TfiowF_0ZuvRVEMqlfQyTVetnOJvuJc/edit?usp=sharing)  feel free to contribute to the list.
 
-### lr-Mame2010 (EXPERIMENTAL)
+## lr-Mame2010 (EXPERIMENTAL)
 
 Place your lr-Mame2010 ROMs in
 ```
