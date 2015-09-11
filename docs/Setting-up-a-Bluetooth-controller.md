@@ -1,5 +1,5 @@
 # Adding a Bluetooth controller to RetroPie  
-This guide is geared to using a controller from [8bitdo](http://www.8bitdo.com) but should work with a range.  
+This guide is geared to using a controller from [8bitdo](http://www.8bitdo.com) but should work with a range of bluetooth devices.  
 The examples below are assuming you have just a keyboard and bluetooth dongle plugged into your Pi.  
 
 
@@ -58,11 +58,11 @@ Save the file with Ctrl-X and press Return to confirm the filename.
 Now reboot the Pi.  
 
 ### Step 5 - Configuring the controller using Emulation Station  
-Now the Pi is restating, make sure your controller is turned on, and trying to pair, it should connect about when the Emulation Station splashscreen appears. Then Emulation Station will display with the "1 Gamepad Detected" message.  
+Now the Pi is restarting, make sure your controller is turned on, and trying to pair, it should connect about when the Emulation Station splashscreen appears. Then Emulation Station will display with the "1 Gamepad Detected" message.  
 
 Hold a button down on the controller and follow the instructions to input your buttons.  
 When the is done, you click the "OK" button with the "A" button on the controller to enter Emulation Station.  
-This process will have configured your controller for navigating ES. It will also have created a controller file for RetroArch to use when you play games.  
+This process will have configured your controller for navigating ES. It will also have created a controller file for RetroArch to use when you play games (If you are using at least RetroPie 3 beta 3).  
   
 However, the content of that file may not have the correct buttons mappings (I'm not sure why this doesn't always work, as its fine with most other controllers). So we will update that file correctly now.  
   
