@@ -173,6 +173,11 @@ input_left_axis = "-0"
 input_state_slot_decrease_axis = "-0"
 ```
 
+**Core Input Remapping**  
+<a href="https://www.youtube.com/watch?v=liJKFUZX4PM
+" target="_blank"><img src="https://i.ytimg.com/vi_webp/liJKFUZX4PM/mqdefault.webp" 
+alt="Testing joypad in RetroPie" width="300" height="190" border="10" /></a>  
+
 The following diagrams are for the 3 most common controllers: Super Nintendo, Xbox 360, and PlayStation 3. They can be used as a reference when configuring your controllers. Each emulator page on the wiki has a diagram of the original controller for its respective console that will correspond to the same inputs listed below.
 
 ## Super Nintendo Controller
