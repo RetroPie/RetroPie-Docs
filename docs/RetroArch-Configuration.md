@@ -34,16 +34,38 @@ These configurations are used when starting a rom for a specific system. The ind
 
 see these videos:
 
-<a href="http://www.dailymotion.com/video/x2i0njr_retropie-testing-joystick-on-raspberry-pi_videogames" target="_blank"><img src="https://lh4.ggpht.com/MFywT7QpnT6WA2vgh1Fb0bfaz2Si4BRCnWV53Hiu9lr1ZpE6tJ_mP7AmXzC7hy2wFFlD=w300" 
-alt="N64 Configuration Video" width="100" height="100" border="10" /></a> |
-<a href="http://www.dailymotion.com/video/x2hudlt_retropie-configure-usb-controller-retroarch_videogames" target="_blank"><img src="https://lh4.ggpht.com/MFywT7QpnT6WA2vgh1Fb0bfaz2Si4BRCnWV53Hiu9lr1ZpE6tJ_mP7AmXzC7hy2wFFlD=w300" 
-alt="N64 Configuration Video" width="100" height="100" border="10" /></a>  |      <a href="http://www.dailymotion.com/video/x2i0s10_retropie-configuring-a-wireless-ps3-controller_videogames" target="_blank"><img src="https://lh4.ggpht.com/MFywT7QpnT6WA2vgh1Fb0bfaz2Si4BRCnWV53Hiu9lr1ZpE6tJ_mP7AmXzC7hy2wFFlD=w300" 
-alt="N64 Configuration Video" width="100" height="100" border="10" /></a>   |       <a href="http://www.dailymotion.com/video/x2i0ufc_retropie-xbox-wireless-controller-setup-on-raspberry-pi_videogames" target="_blank"><img src="https://lh4.ggpht.com/MFywT7QpnT6WA2vgh1Fb0bfaz2Si4BRCnWV53Hiu9lr1ZpE6tJ_mP7AmXzC7hy2wFFlD=w300" 
-alt="N64 Configuration Video" width="100" height="100" border="10" /></a>  |  <a href="http://www.dailymotion.com/video/x2i0lsy_retropie-multiple-usb-controllers_videogames" target="_blank"><img src="https://lh4.ggpht.com/MFywT7QpnT6WA2vgh1Fb0bfaz2Si4BRCnWV53Hiu9lr1ZpE6tJ_mP7AmXzC7hy2wFFlD=w300" 
-alt="N64 Configuration Video" width="100" height="100" border="10" /></a> 
+**Testing Joypad**  
+<a href="https://www.youtube.com/watch?v=fcRVcPkpLfQ
+" target="_blank"><img src="https://i.ytimg.com/vi_webp/fcRVcPkpLfQ/mqdefault.webp" 
+alt="Testing joypad in RetroPie" width="300" height="190" border="10" /></a>  
+  
+  
 
- [Testing Joystick](http://www.dailymotion.com/video/x2i0njr_retropie-testing-joystick-on-raspberry-pi_videogames) | [Setting up Controller](http://www.dailymotion.com/video/x2hudlt_retropie-configure-usb-controller-retroarch_videogames) | [Wireless PS3 Controller](http://www.dailymotion.com/video/x2i0s10_retropie-configuring-a-wireless-ps3-controller_videogames) | [Wireless Xbox Controller](http://www.dailymotion.com/video/x2i0ufc_retropie-xbox-wireless-controller-setup-on-raspberry-pi_videogames) | [Setting Up Multiple Controllers](http://www.dailymotion.com/video/x2i0lsy_retropie-multiple-usb-controllers_videogames) 
------ | ----- | ----- |----- | -----  
+**Setting up USB Controller**  
+<a href="https://www.youtube.com/watch?v=9PWO-F4zuaY
+" target="_blank"><img src="https://i.ytimg.com/vi_webp/9PWO-F4zuaY/mqdefault.webp" 
+alt="Setting up controller in RetroPie" width="300" height="190" border="10" /></a>  
+  
+  
+**Wireless PS3 controller**  
+<a href="https://www.youtube.com/watch?v=oCq6drv5wbE
+" target="_blank"><img src="https://i.ytimg.com/vi_webp/oCq6drv5wbE/mqdefault.webp" 
+alt="Setting up PS3 controller in RetroPie" width="300" height="190" border="10" /></a>  
+  
+  
+**Wireless Xbox controller**  
+<a href="https://www.youtube.com/watch?v=0LMZFYzM9xc
+" target="_blank"><img src="https://i.ytimg.com/vi_webp/0LMZFYzM9xc/mqdefault.webp" 
+alt="Setting up Xbox controller in RetroPie" width="300" height="190" border="10" /></a>  
+  
+  
+**Setting up multiple controllers**  
+<a href="https://www.youtube.com/watch?v=xkD255l3FuY
+" target="_blank"><img src="https://i.ytimg.com/vi_webp/xkD255l3FuY/mqdefault.webp" 
+alt="Setting up multiple controllers in RetroPie" width="300" height="190" border="10" /></a>  
+  
+  
+ 
 ## Custom Retroarch Controls
 
 ## Example retroarch.cfg file for custom controls to override defaults: 
