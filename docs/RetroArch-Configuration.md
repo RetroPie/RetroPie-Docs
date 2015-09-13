@@ -119,8 +119,8 @@ Hotkeys are combinations of buttons you can press in order to access options suc
 
 see this video:
 
-<a href="http://www.dailymotion.com/video/x2hxlc3" target="_blank"><img src="https://lh4.ggpht.com/MFywT7QpnT6WA2vgh1Fb0bfaz2Si4BRCnWV53Hiu9lr1ZpE6tJ_mP7AmXzC7hy2wFFlD=w300" 
-alt="N64 Configuration Video" width="150" height="150" border="10" /></a>
+<a href="https://www.youtube.com/watch?v=DBnKFRflEV4" target="_blank"><img src="https://i.ytimg.com/vi_webp/DBnKFRflEV4/mqdefault.webp" 
+alt="Hotkey Video" width="300" height="190" border="10" /></a>
 
 ## Default joypad hotkeys:
 Hotkeys | Action
