@@ -33,6 +33,12 @@ There are currently two versions of RetroPie 3.0. There is one version for Raspb
 
 (If these links become outdated see the downloads page [here](http://blog.petrockblock.com/retropie/retropie-downloads/).)
 
+If you are unsure which version of Raspberry Pi you have there is an easy way to check:
+
+Rpi 1= 1 raspberry when the pi boots up
+
+Rpi 2= 4 raspberries when the pi boots up
+
 ### Extract
 
 Once you have downloaded your SD card image you need to extract it using a program such as [7-Zip](http://www.7-zip.org/). You will extract the downloaded .gz file and the extracted file will be a .img file.
