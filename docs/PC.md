@@ -35,6 +35,8 @@ For more information see http://www.dosbox.com/wiki/Main_Page
 
 [Update for Retropie 3.0.](http://dosonthepi.blogspot.co.uk/2015/04/retropie-30-update.html)
 
+[List of how well various popular games run on RPi 2 & guidelines on which executables do what](http://blog.petrockblock.com/forums/topic/resource-dosbox-compatibility-list/)
+
 ## Troubleshooting
 
 If the keyboard input in DOSBox is not correct, you need to edit the DOSBox config file, dosbox-SVN.conf, which is located in the hidden folder, .dosbox, in your home folder.
@@ -47,3 +49,7 @@ To fix, run the following commands:
 In the [sdl] section, edit line 34 of dosbox-SVN.conf so that usescancodes is set to false as below:
 
     usescancodes=false
+
+In some games your joystick/controller may be permanently fixed in one corner. For these games, edit dosbox-SVN.conf, find the [Joystick] section and set timed to false as below:
+
+    timed=false
