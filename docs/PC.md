@@ -35,7 +35,9 @@ For more information see http://www.dosbox.com/wiki/Main_Page
 
 [Update for Retropie 3.0.](http://dosonthepi.blogspot.co.uk/2015/04/retropie-30-update.html)
 
-[List of how well various popular games run on RPi 2 & guidelines on which executables do what](http://blog.petrockblock.com/forums/topic/resource-dosbox-compatibility-list/)
+[**DosBOX Compatibility List**](https://docs.google.com/spreadsheets/d/1Tx5k3F0_AO6w00WrXULMBSUTRhtLyIhHI8Wz8GuqLfQ/edit?usp=sharing) feel free to contribute to the list. 
+
+see also forum post [here](http://blog.petrockblock.com/forums/topic/resource-dosbox-compatibility-list/)
 
 ## Troubleshooting
 
