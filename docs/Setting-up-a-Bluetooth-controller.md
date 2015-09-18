@@ -90,7 +90,7 @@ That should be all you need. Now when you start your Pi, set the controller to c
   
 ### Troubleshooting  
 If you have installed other bluetooth programs, perhaps to support a PS3 controller, you may find there are conflicts and the above steps produce an error when you try to pair. One way around this is to uninstall the sixad program with:  
-`sudo apt-get –purge remove sixad`
+`sudo apt-get --purge remove sixad`
   
 If you are unsure your USB Bluetooth dongle is detected with the Pi, you can list the USB devices with:  
 `lsusb`
