@@ -61,3 +61,4 @@ If you are on a windows PC set up the network settings from the RGUI:
 Note that following are settings when running the pc as a client:
 
 ![network3](https://cloud.githubusercontent.com/assets/10035308/10065131/9a09ef6c-623e-11e5-8b96-19c0254feb1a.png)
+if you want the pc to be the host change netplay client enable to off
