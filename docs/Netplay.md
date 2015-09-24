@@ -20,7 +20,7 @@ One person needs to be the host, the rest that are trying to connect to the host
 
 If you will be acting as the host...
 
-- Set your Netplay Mode to Server
+- Set your Netplay Mode to host
 - Change Host IP Address to your ip address
 - Either go to your router settings and open the port 55435 for both TCP and UDP, OR change the TCP/UDP Port setting in RetroArch to one that's already open
 - Select a number for Delay Frames. If you are experiencing a very low fps, try increasing this number.
