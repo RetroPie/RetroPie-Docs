@@ -12,6 +12,8 @@ There are a few stipulations that have to be met before you are able to utilise 
 
 So first things first- you need to set up your configurations for netplay:
 
+you can access the netplay configurations from the retropie menu in emulationstation or from the experimental menu in the setup script
+
 One person needs to be the host, the rest that are trying to connect to the host will be clients
 
 ### Host
@@ -24,6 +26,8 @@ If you will be acting as the host...
 - Select a number for Delay Frames. If you are experiencing a very low fps, try increasing this number.
 - Pick a Nickname
 - When launching a rom to use netplay you'll open up the runcommand menu by pressing js0 (or any key on your keyboard) as your rom loads and then you'll select launch netplay
+
+![host](https://cloud.githubusercontent.com/assets/10035308/10062467/1c89bb58-6220-11e5-942b-7892d4b82050.png)
 
 Make sure to tell your friend:
 Your IP Address
@@ -42,5 +46,7 @@ If you will be joining a game...
 - Change Delay Frames to the number your friend gave you
 - Pick a Nickname
 - When launching a rom to use netplay you'll open up the runcommand menu by pressing js0 (or any key on your keyboard) as your rom loads and then you'll select launch netplay
+
+![client](https://cloud.githubusercontent.com/assets/10035308/10062468/2046ec02-6220-11e5-9d42-f58779986f93.png)
 
 Now if you and your friend successfully followed all of these steps, your game should load. If it didn't, try checking if you have the same ROM, the same core, and if your host's port is really open. If everything fails, consider switching server and client roles. 
