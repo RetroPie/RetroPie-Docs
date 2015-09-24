@@ -50,3 +50,11 @@ If you will be joining a game...
 ![client](https://cloud.githubusercontent.com/assets/10035308/10062468/2046ec02-6220-11e5-9d42-f58779986f93.png)
 
 Now if you and your friend successfully followed all of these steps, your game should load. If it didn't, try checking if you have the same ROM, the same core, and if your host's port is really open. If everything fails, consider switching server and client roles. 
+
+## Windows
+
+If you are on a windows PC set up the network settings from the RGUI:
+
+![network](https://cloud.githubusercontent.com/assets/10035308/10062551/d0d3dd5a-6220-11e5-910f-824cc081b902.png)
+![network2](https://cloud.githubusercontent.com/assets/10035308/10062549/d0d0f4dc-6220-11e5-8b6b-484072c044a2.png)
+![settings](https://cloud.githubusercontent.com/assets/10035308/10062550/d0d17d8a-6220-11e5-8325-461c0d712668.png)
