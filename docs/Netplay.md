@@ -55,6 +55,6 @@ Now if you and your friend successfully followed all of these steps, your game s
 
 If you are on a windows PC set up the network settings from the RGUI:
 
+![settings](https://cloud.githubusercontent.com/assets/10035308/10062550/d0d17d8a-6220-11e5-8325-461c0d712668.png)
 ![network](https://cloud.githubusercontent.com/assets/10035308/10062551/d0d3dd5a-6220-11e5-910f-824cc081b902.png)
 ![network2](https://cloud.githubusercontent.com/assets/10035308/10062549/d0d0f4dc-6220-11e5-8b6b-484072c044a2.png)
-![settings](https://cloud.githubusercontent.com/assets/10035308/10062550/d0d17d8a-6220-11e5-8325-461c0d712668.png)
