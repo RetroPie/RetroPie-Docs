@@ -57,4 +57,7 @@ If you are on a windows PC set up the network settings from the RGUI:
 
 ![settings](https://cloud.githubusercontent.com/assets/10035308/10062550/d0d17d8a-6220-11e5-8325-461c0d712668.png)
 ![network](https://cloud.githubusercontent.com/assets/10035308/10062551/d0d3dd5a-6220-11e5-910f-824cc081b902.png)
-![network2](https://cloud.githubusercontent.com/assets/10035308/10062549/d0d0f4dc-6220-11e5-8b6b-484072c044a2.png)
+
+Note that following are settings when running the pc as a client:
+
+![network3](https://cloud.githubusercontent.com/assets/10035308/10065131/9a09ef6c-623e-11e5-8b96-19c0254feb1a.png)
