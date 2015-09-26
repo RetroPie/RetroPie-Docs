@@ -19,7 +19,15 @@ Quit Emulation Station with F4 (stop it restarting by pressing another key withi
 `sudo apt-get install bluez python-gobject`  
 
 ### Step 2 - Make sure the Bluetooth pair works  
-Then, whilst this step could be avoided with a command line parameter later, for the moment edit this file  
+PLEASE NOTE:  
+Instead of following this step, you can avoid making the edit in the file below, and when you get to step 3 replace  
+`sudo bluez-simple-agent hci0 XX:XX:XX:XX:XX:XX`  
+with  
+`sudo bluez-simple-agent -c DisplayYesNo hci0 XX:XX:XX:XX:XX:XX`  
+
+===  
+
+Whilst this step could be avoided with a command line parameter later (shown above), edit this file  
 `sudo nano /usr/bin/bluez-simple-agent`  
   
 Find the text "KeyboardDisplay" in the file, and replace it with "DisplayYesNo", making sure to get the case sensitivity correct.  
@@ -36,6 +44,8 @@ This should find your controller and show its name and [MAC](https://en.wikipedi
   
 Pair the controller with this command, replace the XX data with your MAC address  
 `sudo bluez-simple-agent hci0 XX:XX:XX:XX:XX:XX`  
+or if you didnt edit the file at step 2, use this line  
+`sudo bluez-simple-agent -c DisplayYesNo hci0 XX:XX:XX:XX:XX:XX`  
   
 Tell the system to trust your controller so you dont have to pair every time  
 `sudo bluez-test-device trusted XX:XX:XX:XX:XX:XX yes`  
