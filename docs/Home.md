@@ -59,7 +59,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
   * [Duke Nukem 3D](https://github.com/RetroPie/RetroPie-Setup/wiki/Duke-Nukem-3D) [(EDuke32)](http://www.eduke32.com/)
   * [Quake Series](https://github.com/RetroPie/RetroPie-Setup/wiki/Quake) [(lr-tyrquake)](https://github.com/libretro/tyrquake), [(DarkPlaces Quake Engine)](https://github.com/autonomous1/darkplacesrpi), [(ioQuake3)](https://github.com/raspberrypi/quake3)
   * [Descent 1 & 2](https://github.com/RetroPie/RetroPie-Setup/wiki/Descent) [(DXX-Rebirth)](http://www.dxx-rebirth.com/) (EXPERIMENTAL)
-  * [Super Mario War](https://github.com/RetroPie/RetroPie-Setup/wiki/Super-Mario-War) (EXPERIMENTAL)
+  * [Super Mario War](https://github.com/RetroPie/RetroPie-Setup/wiki/Super-Mario-War)
 * [PlayStation 1](https://github.com/RetroPie/RetroPie-Setup/wiki/Playstation-1) [(lr-pcsx-rearmed)](https://github.com/libretro/pcsx_rearmed), [(pcsx-rearmed)](https://github.com/notaz/pcsx_rearmed)
 * [ScummVM](https://github.com/RetroPie/RetroPie-Setup/wiki/ScummVM)
 * [Sega 32X](https://github.com/RetroPie/RetroPie-Setup/wiki/Sega-32X) [(lr-picodrive)](https://github.com/libretro/picodrive)
