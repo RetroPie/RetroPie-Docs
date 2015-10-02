@@ -46,6 +46,13 @@ The service works as following: The first time you plug the USB stick into the t
 
 **Starting with RetroPie 3.0 you first need to create a folder called `retropie` on your USB stick and then follow the above steps.**
 
+[**Video Guide**](https://www.youtube.com/watch?v=OYMoxvbkYD4)  
+  
+
+<a href="https://www.youtube.com/watch?v=OYMoxvbkYD4
+" target="_blank"><img src="https://i.ytimg.com/vi_webp/OYMoxvbkYD4/mqdefault.webp" 
+alt="Adding roms to RetroPie with USB" width="300" height="190" border="10" /></a>
+
 ### Manually copy files from USB-stick
 
 From RetroPie version 3.0 a file manager is available, it allows you to manually transfer files between USB-stick and Raspberry Pi SD card. File manager can be run from 'RetroPie' Emulationstation menu. Quick file manager (MC) guide can be found [here](http://www.thegeekstuff.com/2008/10/midnight-commander-mc-guide-powerful-text-based-file-manager-for-unix/). Your USB-stick should be mounted in /media/usb. The directories for the ROM files are located in ~/RetroPie/roms/SYSTEMNAME, where SYSTEMNAME is the short name of the corresponding system.
