@@ -268,7 +268,7 @@ Now you can „tell“ emulationstation and the emulators to use the wiimotes (a
 
 For emulationstation:
 Content of /home/pi/.emulationstation/es_input.cfg for two wiimotes:
-```shell
+```xml
 <?xml version="1.0"?>
 <inputList>
 	<inputConfig type="joystick" deviceName="Nintendo Wiimote">
@@ -306,6 +306,22 @@ Content of /home/pi/.emulationstation/es_input.cfg for two wiimotes:
 	</inputConfig>
 </inputList>
 ```
+
+#### Known issues ####
+
+In some cases the connection with the Wiimotes through `wminput` daemon can 
+start flooding your terminal session with the message `Socket connect error 
+(control channel)`. So far there is only one 
+[solution](https://www.raspberrypi.org/forums/viewtopic.php?t=63784&p=482624): 
+Redirecting the *standard out* and *standard error* respectively to `/dev/null`.
+
+```shell
+wminput -d -q -c  /home/pi/mywminput XX:XX:XX:XX:XX:XX > /dev/null 2>&1 &
+```
+Anyway, remember to undo this **hack** for debugging purposes.
+
+
+### Configuring RetroArch ###
 
 For retroarch:
 End of file /opt/retropie/emulators/retroarch/retroarch.cfg (for two wiimotes):
@@ -357,7 +373,6 @@ input_player2_r_x_plus_axis = "+4"
 input_player2_r_x_minus_axis = "-4"
 input_player2_r_y_plus_axis = "-5"
 input_player2_r_y_minus_axis = "+5"
-
 ```
 
 Make sure that the settings are only one time in retroarch.cfg file (i.e. if you have a line 
