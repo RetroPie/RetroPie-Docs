@@ -85,7 +85,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [ES-scraper](https://github.com/RetroPie/RetroPie-Setup/wiki/ES-scraper)
 * [RetroArch](https://github.com/RetroPie/RetroPie-Setup/wiki/RetroArch)
 * [Manual Installation](https://github.com/RetroPie/RetroPie-Setup/wiki/First-Installation)
-* [Compatibility Sheet](https://github.com/RetroPie/RetroPie-Setup/wiki/Compatibility-Sheet)
+* [Video Compatibility Sheet](https://github.com/RetroPie/RetroPie-Setup/wiki/Compatibility-Sheet)
 * [Sound Issues](https://github.com/RetroPie/RetroPie-Setup/wiki/Sound-Issues)
 * [Speed Issues](https://github.com/RetroPie/RetroPie-Setup/wiki/Speed-Issues)
 * [Video Issues](https://github.com/RetroPie/RetroPie-Setup/wiki/Video-Issues)
