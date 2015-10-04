@@ -28,6 +28,10 @@ sudo ./retropie_setup.sh
 
 - **Install Individual Emulators from Binary or Source:** This is where you will update individual emulators- you will almost always update from binary as they are more frequently updated, have less bugs, and are much quicker to install. There will be rare occasions where you may need to update from source but when in doubt just choose binary and you should be fine. 
 
+#### Latest SD image
+
+If you are worried about conflicts during an update you can always just start with the latest fresh sd image and just copy all your files back over onto that instead of updating from an older image.
+
 ## Making a Backup (Option 1)
 
 You can create an sd image of your current sd card with win32diskimager (if you're on windows)
