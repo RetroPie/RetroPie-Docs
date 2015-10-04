@@ -79,7 +79,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [Use Your Smartphone as a Gamepad!](https://github.com/RetroPie/RetroPie-Setup/wiki/Virtual-Gamepad) (EXPERIMENTAL)
 * [Advanced Configuration](https://github.com/RetroPie/RetroPie-Setup/wiki/Advanced-Configuration)
 * [Setting up a Bluetooth controller](https://github.com/RetroPie/RetroPie-Setup/wiki/Setting-up-a-Bluetooth-controller)
-* [Setting up an N64 controller](https://github.com/RetroPie/RetroPie-Setup/wiki/Setting-up-an-N64-- controller)
+* [Setting up an N64 controller](https://github.com/RetroPie/RetroPie-Setup/wiki/Setting-up-an-N64-controller)
 * [Setting up a PS3 controller](https://github.com/RetroPie/RetroPie-Setup/wiki/Setting-up-a-PS3-controller)
 * [Setting up wiimotes with classic controllers](https://github.com/RetroPie/RetroPie-Setup/wiki/Wiimotes-with-classic-controllers)
 * [Setting up an XBox 360 Controller](https://github.com/RetroPie/RetroPie-Setup/wiki/Setting-up-the-XBox360-controller)
