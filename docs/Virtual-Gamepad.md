@@ -11,6 +11,8 @@ Once the nodejs application is launched, you just have to plug your gamepad cont
 
 ## Use it as a Smartphone Application (Chrome for Android)
 
+**Note that you need to configure the virtual gamepad from emulationstation while in the web browser first BEFORE you create the application on your smartphone otherwise the input configuration in emulationstation will not work.** 
+
 With the add to homescreen chrome feature, you can easily use virtual gamepads application without launching the browser each time you want to play.
 
 With only 3 clicks, virtual gamepads web application becomes a standalone application.
