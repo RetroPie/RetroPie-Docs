@@ -1,18 +1,10 @@
 ![Retroarch Logo](http://www.libretro.com/wp-content/uploads/2014/01/retroarch-logo-300x611.png)
 ***
-RetroArch is the official front end for the [Libretro](http://www.libretro.com/) API which essentially means that RetroArch will be what manages controls and configurations for all of the emulators that are part of the Libretro-Core (i.e. any emulator with an "lr" before it). This is a beautiful thing because it means you can configure controllers only once for many emulators instead of having to configure each emulator individually. RetroArch also gives us the freedom to configure emulators individually as discussed below under "Custom RetroArch Controls" (There are also emulator specific configurations under each emulator in the emulator section.)
+RetroArch is the official front end for the [Libretro](http://www.libretro.com/) API which essentially means that RetroArch will be what manages controls and configurations for all of the emulators that are part of the Libretro-Core (i.e. any emulator with an "lr" before it). This is a beautiful thing because it means you can configure controllers only once for many emulators instead of having to configure each emulator individually. RetroArch also gives us the freedom to configure emulators individually as discussed below under "Custom RetroArch Controls" (There are also emulator specific configurations for emulators not part of the libretro core under their respective emulator wiki page.)
 
-## Retroarch-Joyconfig
+## Retroarch Controls
 
-#### From the RetroPie Menu
-
-```
-Choose configure retroarch keyboard/joystick
-```
-(you'll need a keyboard) plug in **one** controller you wish to configure.
-
-Then follow the on screen directions and your controller should now work on all libretro-core emulators- 
-including hotkeys (see below).
+Your joypad is automagically configured for libretro (retroarch) emulators when you configure your controller for the first time in emulationstation.
 
 ## Config Hierarchy
 
