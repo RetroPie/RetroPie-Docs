@@ -77,19 +77,19 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 
 ## Troubleshooting & Advanced Configuration
 * [Using the Runcommand Menu](https://github.com/RetroPie/RetroPie-Setup/wiki/runcommand)
-* [Advanced Configuration](https://github.com/RetroPie/RetroPie-Setup/wiki/Advanced-Configuration)
-* [RetroPie Arch Linux Flavor](https://github.com/RetroPie/RetroPie-Setup/wiki/RetroPie-Arch-Linux-Flavor)
-* [BIOS File Chart](https://github.com/RetroPie/RetroPie-Setup/wiki/BIOS-setup-for-RetroPie)
-* [Adding Games to the 'PORTS' Section](https://github.com/RetroPie/RetroPie-Setup/wiki/Adding-software-to-Ports)
+* [RetroArch](https://github.com/RetroPie/RetroPie-Setup/wiki/RetroArch)
 * [EmulationStation](https://github.com/RetroPie/RetroPie-Setup/wiki/EmulationStation)
 * [ES-scraper](https://github.com/RetroPie/RetroPie-Setup/wiki/ES-scraper)
-* [RetroArch](https://github.com/RetroPie/RetroPie-Setup/wiki/RetroArch)
+* [Netplay](https://github.com/RetroPie/RetroPie-Setup/wiki/Netplay)
+* [Advanced Configuration](https://github.com/RetroPie/RetroPie-Setup/wiki/Advanced-Configuration)
 * [Manual Installation](https://github.com/RetroPie/RetroPie-Setup/wiki/First-Installation)
 * [Video Compatibility Sheet](https://github.com/RetroPie/RetroPie-Setup/wiki/Compatibility-Sheet)
 * [Sound Issues](https://github.com/RetroPie/RetroPie-Setup/wiki/Sound-Issues)
 * [Speed Issues](https://github.com/RetroPie/RetroPie-Setup/wiki/Speed-Issues)
 * [Video Issues](https://github.com/RetroPie/RetroPie-Setup/wiki/Video-Issues)
+* [Adding Games to the 'PORTS' Section](https://github.com/RetroPie/RetroPie-Setup/wiki/Adding-software-to-Ports)
 * [Wolfenstein 3D](https://github.com/RetroPie/RetroPie-Setup/wiki/Wolfenstein-3D-Troubleshooting)
+* [RetroPie Arch Linux Flavor](https://github.com/RetroPie/RetroPie-Setup/wiki/RetroPie-Arch-Linux-Flavor)
 
 ## Controller Configurations
 * [Setting up an XBox 360 Controller](https://github.com/RetroPie/RetroPie-Setup/wiki/Setting-up-the-XBox360-controller)
@@ -115,6 +115,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [Why do I get a segmentation fault when running a PSX game?](https://github.com/RetroPie/RetroPie-Setup/wiki/Why-do-I-get-a-segmentation-fault-when-running-a-PSX-game%3F)
 * [The PSX emulator reports no BIOS found. What do I do?](https://github.com/RetroPie/RetroPie-Setup/wiki/The-PSX-emulator-reports-no-BIOS-found.-What-do-I-do%3F)
 * [How do I extend the available space when upgrading to a larger SD card?](https://github.com/RetroPie/RetroPie-Setup/wiki/How-do-I-extend-the-available-space-when-upgrading-to-a-larger-SD-card)
+* [Which BIOS file do I need?](https://github.com/RetroPie/RetroPie-Setup/wiki/BIOS-setup-for-RetroPie)
 
 ## Developers
 
