@@ -68,7 +68,7 @@ Save the file with Ctrl-X and press Return to confirm the filename.
 Now reboot the Pi.  
 
 ### Step 5 - Configuring the controller using Emulation Station  
-Now the Pi is restarting, make sure your controller is turned on, and trying to pair, it should connect about when the Emulation Station splashscreen appears. Then Emulation Station will display with the "1 Gamepad Detected" message.  
+Now the Pi is restarting, make sure your controller is turned on, and trying to pair (I tend to turn the controller on just before the RetroPie splashscreen appears), it should connect about when the Emulation Station splashscreen appears. Then Emulation Station will display with the "1 Gamepad Detected" message.  
 
 Hold a button down on the controller and follow the instructions to input your buttons.  
 When the is done, you click the "OK" button with the "A" button on the controller to enter Emulation Station.  
