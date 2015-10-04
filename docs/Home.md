@@ -15,6 +15,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [Configuring Controllers (RetroArch) and shortcuts](https://github.com/RetroPie/RetroPie-Setup/wiki/RetroArch-Configuration)
 * [Transferring games (ROMs), and other files to RetroPie](https://github.com/RetroPie/RetroPie-Setup/wiki/How-to-get-ROMs-on-the-SD-card)
 * [Getting the right MAME ROMs](https://github.com/RetroPie/RetroPie-Setup/wiki/Managing-ROMs)
+* [Updating RetroPie](https://github.com/RetroPie/RetroPie-Setup/wiki/Updating-RetroPie)
 
 ## Emulators
 * [3do](https://github.com/RetroPie/RetroPie-Setup/wiki/3do) [(lr-4do)](https://github.com/libretro/4do-libretro) (EXPERIMENTAL)
@@ -77,7 +78,6 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 ## Troubleshooting & Advanced Configuration
 * [Using the Runcommand Menu](https://github.com/RetroPie/RetroPie-Setup/wiki/runcommand)
 * [Advanced Configuration](https://github.com/RetroPie/RetroPie-Setup/wiki/Advanced-Configuration)
-* [How to Update an Existing RetroPie Installation](https://github.com/RetroPie/RetroPie-Setup/wiki/How-to-Update-an-Existing-RetroPie-Installation)
 * [RetroPie Arch Linux Flavor](https://github.com/RetroPie/RetroPie-Setup/wiki/RetroPie-Arch-Linux-Flavor)
 * [Setting up bios files](https://github.com/RetroPie/RetroPie-Setup/wiki/BIOS-setup-for-RetroPie)
 * [Adding Games to the 'PORTS' Section](https://github.com/RetroPie/RetroPie-Setup/wiki/Adding-software-to-Ports)
