@@ -15,6 +15,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [Configuring Controllers (RetroArch)](https://github.com/RetroPie/RetroPie-Setup/wiki/RetroArch-Configuration)
 * [Transferring games (ROMs), and other files to RetroPie](https://github.com/RetroPie/RetroPie-Setup/wiki/How-to-get-ROMs-on-the-SD-card)
 * [Getting the right MAME ROMs](https://github.com/RetroPie/RetroPie-Setup/wiki/Managing-ROMs)
+* [Using the Runcommand Menu](https://github.com/RetroPie/RetroPie-Setup/wiki/runcommand)
 * [Updating RetroPie](https://github.com/RetroPie/RetroPie-Setup/wiki/Updating-RetroPie)
 
 ## Emulators
@@ -76,7 +77,6 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [ZX Spectrum](https://github.com/RetroPie/RetroPie-Setup/wiki/ZX-Spectrum) [(FBZX)](http://www.rastersoft.com/fbzx.html), [(Fuse)](http://fuse-emulator.sourceforge.net/), [(lr-fuse)](https://github.com/libretro/fuse-libretro)
 
 ## Troubleshooting & Advanced Configuration
-* [Using the Runcommand Menu](https://github.com/RetroPie/RetroPie-Setup/wiki/runcommand)
 * [RetroArch](https://github.com/RetroPie/RetroPie-Setup/wiki/RetroArch)
 * [EmulationStation](https://github.com/RetroPie/RetroPie-Setup/wiki/EmulationStation)
 * [ES-scraper](https://github.com/RetroPie/RetroPie-Setup/wiki/ES-scraper)
