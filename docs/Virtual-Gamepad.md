@@ -40,9 +40,9 @@ You can also install manually using these steps:
 ### Install Node.js
 
 sudo apt-get update && sudo apt-get upgrade
-wget http://node-arm.herokuapp.com/node_latest_armhf.deb
-sudo dpkg -i node_latest_armhf.deb
-
+wget http://node-arm.herokuapp.com/node_archive_armhf.deb
+sudo dpkg -i node_archive_armhf.deb
+rm node_archive_armhf.deb
 
 ### Install Virtual Gamepad (Must Be Run As Root!)
 
