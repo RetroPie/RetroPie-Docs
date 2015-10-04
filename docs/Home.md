@@ -79,7 +79,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [Using the Runcommand Menu](https://github.com/RetroPie/RetroPie-Setup/wiki/runcommand)
 * [Advanced Configuration](https://github.com/RetroPie/RetroPie-Setup/wiki/Advanced-Configuration)
 * [RetroPie Arch Linux Flavor](https://github.com/RetroPie/RetroPie-Setup/wiki/RetroPie-Arch-Linux-Flavor)
-* [Setting up bios files](https://github.com/RetroPie/RetroPie-Setup/wiki/BIOS-setup-for-RetroPie)
+* [BIOS File Chart](https://github.com/RetroPie/RetroPie-Setup/wiki/BIOS-setup-for-RetroPie)
 * [Adding Games to the 'PORTS' Section](https://github.com/RetroPie/RetroPie-Setup/wiki/Adding-software-to-Ports)
 * [EmulationStation](https://github.com/RetroPie/RetroPie-Setup/wiki/EmulationStation)
 * [ES-scraper](https://github.com/RetroPie/RetroPie-Setup/wiki/ES-scraper)
