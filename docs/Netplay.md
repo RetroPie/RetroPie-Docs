@@ -12,7 +12,7 @@ There are a few stipulations that have to be met before you are able to utilise 
 
 So first things first- you need to set up your configurations for netplay:
 
-you can access the netplay configurations from the retropie menu in emulationstation or from the experimental menu in the setup script
+you can access the netplay configurations from the retropie menu in emulationstation or from the setup script.
 
 One person needs to be the host, the rest that are trying to connect to the host will be clients
 
