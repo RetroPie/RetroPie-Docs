@@ -20,5 +20,7 @@ You can do the same thing for fba-libretro
 /opt/retropie/configs/fba/retroarch.cfg
 ```
 
+Another simple workaround is to use player 2's select key to insert coins but it may not work for some games.
+
 Related post  
 http://blog.petrockblock.com/forums/topic/fba-retroarch-core-coin-controls/#post-93014
