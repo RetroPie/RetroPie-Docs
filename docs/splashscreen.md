@@ -16,7 +16,7 @@ The Splash Screen Menu can be accessed from the RetroPie Menu in EmulationStatio
 
 - **Manually Edit Splashscreen List:** You can edit the splashscreen.list manually to point to multiple images to be played as a slideshow (you'll use tab to get out of edit mode)
 
-- **Update RetroPie Splashscreens:** This gives you to update the splashscreens as new images are added to the [splashscreen repo](https://github.com/RetroPie/retropie-splashscreens)
+- **Update RetroPie Splashscreens:** This gives you the option to update the splashscreens as new images are added to the [splashscreen repo](https://github.com/RetroPie/retropie-splashscreens)
 
 ## Video Splash Screens
 
