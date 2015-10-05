@@ -18,9 +18,9 @@ If you don't have the corresponding .cue file in the same folder as your .bin fi
 
 ## BIOS
 
-The BIOS filename is: **us_scd1_9210.bin**
+The BIOS filename is: **us_scd1_9210.bin** 
 
-For the Genesis-Plus-GX core you need to rename the US bios above to: **bios_CD_U.bin**
+For the Genesis-Plus-GX core you need to rename the above US bios above to: **bios_CD_U.bin** and place it in the same directory as the games.
 
 Place this BIOS file in
 ```
