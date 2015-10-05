@@ -5,4 +5,33 @@ The Splash Screen Menu can be accessed from the RetroPie Menu in EmulationStatio
 ![splashscreen menu](https://cloud.githubusercontent.com/assets/10035308/10272845/3c1d19d0-6ae3-11e5-9616-9067a36ae102.png)
 
 - **Choose RetroPie Splashscreen:** This option allows you to choose a splashscreen that has been installed on RetroPie by default. See the gallery of images [**HERE**](https://github.com/RetroPie/retropie-splashscreens/wiki)
-- **Choose Own Splashscreen:** Once you've opened up the splashscreen menu in the setup script at least once a folder will be created in `/home/pi/RetroPie/splashscreens` you can also access this splashscreens folder from samba shares once its created. You can create a new folder in `splashscreens` and place your splashscreen (image or video) in it.
+
+- **Choose Own Splashscreen:** Once you've opened up the splashscreen menu in the setup script at least once a folder will be created in `/home/pi/RetroPie/splashscreens` you can also access this splashscreens folder from [samba shares](https://github.com/RetroPie/RetroPie-Setup/wiki/First-Installation#samba-shares-needs-an-active-internet-connection) once its created. You can create a new folder in `splashscreens` and place your splashscreen (image or video) in it.
+
+- **Enable Custom Splashscreen On Boot:** This is pretty self explanatory- if you've disabled splashscreens the you select this to re-enable splashscreens on boot.
+
+- **Disable Custom Splashscreen On Boot:** Select this option to disable splashscreens on boot
+
+- **Use Default Splashscreen:** This makes the blue retropie splashscreen the default splash screen (the splashscreen you see the first time it boots up)
+
+- **Manually Edit Splashscreen List:** You can edit the splashscreen.list manually to point to multiple images to be played as a slideshow (you'll use tab to get out of edit mode)
+
+- **Update RetroPie Splashscreens:** This gives you to update the splashscreens as new images are added to the [splashscreen repo](https://github.com/RetroPie/retropie-splashscreens)
+
+## Video Splash Screens
+
+Starting with RetroPie 3.1 there is now support for video splash screens. A few notes:
+
+- you add the video to a folder just like you would a regular splashscreen image and select that folder from the splashscreen menu as described above
+
+- for best results use .mp4 filetype. If you have a video in another format and it isn't working try converting it with a program like [vlc](http://www.videolan.org/vlc/index.html) or [handbrake](https://handbrake.fr/) I've found that h.264 is a good codec and .mp4 is a good filetype- but others may also work.
+ 
+- By default it is coded to play the video all the way through before emulationstation loads, no matter how long the video- for a raspberry pi 1 a good video time is ~20-40 seconds, for the rpi 2 a good video time is ~5-10 seconds. if you wish to have emulationstation cut off your video as to make a seamless boot sequence you need to edit `/etc/profile.d/10-emulationstation.sh` and delete the first line from this:
+```
+while pgrep omxplayer &>/dev/null; do sleep 1; done
+[ "`tty`" = "/dev/tty1" ] && emulationstation
+```
+so it looks like this:
+```
+[ "`tty`" = "/dev/tty1" ] && emulationstation
+```
