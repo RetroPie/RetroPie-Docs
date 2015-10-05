@@ -198,7 +198,7 @@ There are many FTP programs out there, for windows many people use [WinSCP](http
 
 You can also log in as root if you wish to change more files than just the roms, but you first need to enable the root password by typing `sudo passwd root` into the terminal and choosing a new root password.
 
-### Samba Shares (needs an active internet connection)
+### [Samba Shares](Samba-Shares) (needs an active internet connection)
 
 - if on windows type \\\RETROPIE into the computer folder. You can also replace RETROPIE with your Raspberry Pi's IP address
 
