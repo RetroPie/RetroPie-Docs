@@ -18,15 +18,25 @@ If you don't have the corresponding .cue file in the same folder as your .bin fi
 
 ## BIOS
 
+### lr-picodrive
+
 The BIOS filename is: **us_scd1_9210.bin** 
 
-For the Genesis-Plus-GX core you need to rename the above US bios above to: **bios_CD_U.bin** and place it in the same directory as the games.
-
-Place this BIOS file in
+Place this lr-Picodrive BIOS file in
 ```
 /home/pi/RetroPie/BIOS
 ```
 BIOS files that may also work are: eu_mcd1_9210.bin, jp_mcd1_9112.bin (Europe and Japan respectively)
+
+### lr-Genesis-Plus-GX
+
+The BIOS filename is: **bios_CD_U.bin** (can be renamed from the above BIOS)
+
+Place this lr-Genesis-Plus-GX BIOS file in
+```
+/home/pi/RetroPie/roms/segacd
+```
+the alternate BIOS files above can be renamed: bios_CD_E.bin, bios_CD_J.bin (Europe and Japan respectively)
 
 ## Controls
 
