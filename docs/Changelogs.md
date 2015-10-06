@@ -2,6 +2,21 @@
 
 This page is a list of all of the changelogs for each version of RetroPie. For a complete list of all commits to the source code see [here:](https://github.com/petrockblog/RetroPie-Setup/commits/master)  
 
+### Version 3.1: (October 6, 2015)
+
+* Workaround for lr-snes9x-next crashes for certain games.
+* New theme installation script and excellent new theme “Carbon” which is lighter on memory than the Simple theme (no more white screen of death! - works with all systems).
+* Initial bluetooth module for pairing keyboards.
+* We now provide images for use with Berryboot.
+* Moved Super Mario War out of experimental.
+* New default lr-fba-next emulator for rpi2 owners.
+* Added lr-mame2003 (based on MAME 0.78) emulator.
+* Minor Emulation Station tweaks, reduced time to skip buttons, and improved parsing with brackets in gamelists.
+* New experimental modules - sselph’s scraper and lr-mame2010 (based on MAME 0.139)
+Improved ps3 controller pairing.
+* Initial support for installing RetroPie manually on Raspbian Jessie and OSMC (via source only - consider this experimental for now).
+* Splashscreen improvements- can be added from samba shares, splash videos play all the way through without emulationstation cutting them off.
+* Lots of bugfixes, and improvements to the RetroPie Wiki.
 
 ### Version 3.0.0 Stable : (August 11, 2015)
 
