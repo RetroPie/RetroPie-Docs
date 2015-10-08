@@ -89,10 +89,12 @@ change to your new theme (you may need to press f4 or quit to refresh emulations
 
 </tr>
 <td>
-<img src="https://cloud.githubusercontent.com/assets/10035308/10358022/3d53dac2-6d46-11e5-9e53-849cfffbc7e2.png" width="250"></td> 
+<img src="https://cloud.githubusercontent.com/assets/10035308/10358023/3d62f160-6d46-11e5-9383-23da3aad1951.png" width="250"></td> 
 <tr>
 </tr>
-  <td><img src="https://cloud.githubusercontent.com/assets/10035308/10358023/3d62f160-6d46-11e5-9383-23da3aad1951.png" width="250"></td> 
+  <td><img src="https://cloud.githubusercontent.com/assets/10035308/10358022/3d53dac2-6d46-11e5-9e53-849cfffbc7e2.png" width="250"></td> 
+
+
 
 <tr>
 
