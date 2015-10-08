@@ -1,4 +1,4 @@
-![](https://raw.githubusercontent.com/xbmc/xbmc/master/tools/darwin/packaging/media/atv2/TopShelf.png)
+![](http://www.grandrapidsdevs.com/wp-content/uploads/2015/06/kodiLogo.png)
 ***
 
 _Kodi is a Home Media Server (basically your own personal netflix) formerly known as XBMC. Kodi is currently an experimental build that can be installed from the experimental menu of the setup script._
