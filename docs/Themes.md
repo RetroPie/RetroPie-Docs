@@ -54,6 +54,18 @@ change to your new theme (you may need to press f4 or quit to refresh emulations
 
 <table style="width:100%">
 <tr>
+  <th>simplified-static-canela</td>
+  <th>zoid</td>
+</tr>
+<tr>
+  <td><img src="https://cloud.githubusercontent.com/assets/10035308/10357831/1c173d24-6d44-11e5-9692-a1e67553eb64.png" width="250"><img src="https://cloud.githubusercontent.com/assets/10035308/10357830/1c076a16-6d44-11e5-8a2b-07d59b2b542f.png" width="250"></td> 
+  <td><img src="https://cloud.githubusercontent.com/assets/10035308/10357854/722c6a0e-6d44-11e5-94b1-0527cec9db09.png" width="250"><img src="https://cloud.githubusercontent.com/assets/10035308/10357698/548295e8-6d42-11e5-8f80-b03cb089e3d4.png" width="250"></td> 
+</table>
+
+
+
+<table style="width:100%">
+<tr>
   <th>turtle-pi</td>
   <th>8-bit-mushwhite</td>
 </tr>
