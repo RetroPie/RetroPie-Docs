@@ -6,7 +6,7 @@ The Splash Screen Menu can be accessed from the RetroPie Menu in EmulationStatio
 
 - **Choose RetroPie Splashscreen:** This option allows you to choose a splashscreen that has been installed on RetroPie by default. See the gallery of images [**HERE**](https://github.com/RetroPie/retropie-splashscreens/wiki)
 
-- **Choose Own Splashscreen:** Once you've opened up the splashscreen menu in the setup script at least once a folder will be created in `/home/pi/RetroPie/splashscreens` you can also access this splashscreens folder from [samba shares](https://github.com/RetroPie/RetroPie-Setup/wiki/First-Installation#samba-shares-needs-an-active-internet-connection) once its created. Make sure you create a new folder to place your splashscreen in- for example:  `/home/pi/RetroPie/splashscreens/video/yourvideo.mp4`
+- **Choose Own Splashscreen:** Once you've opened up the splashscreen menu in the setup script at least once a folder will be created in `/home/pi/RetroPie/splashscreens` you can also access this splashscreens folder from [samba shares](https://github.com/RetroPie/RetroPie-Setup/wiki/First-Installation#samba-shares-needs-an-active-internet-connection) once its created. (**Note you may need to install or restart samba shares from the setup script for the splashscreens folder to show up over samba shares**) Make sure you create a new folder to place your splashscreen in- for example:  `/home/pi/RetroPie/splashscreens/video/yourvideo.mp4`
 
 - **Enable Custom Splashscreen On Boot:** This is pretty self explanatory- if you've disabled splashscreens the you select this to re-enable splashscreens on boot.
 
