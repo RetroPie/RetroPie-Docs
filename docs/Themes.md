@@ -62,15 +62,23 @@ change to your new theme (you may need to press f4 or quit to refresh emulations
   <td><img src="https://cloud.githubusercontent.com/assets/10035308/10357854/722c6a0e-6d44-11e5-94b1-0527cec9db09.png" width="250"><img src="https://cloud.githubusercontent.com/assets/10035308/10357698/548295e8-6d42-11e5-8f80-b03cb089e3d4.png" width="250"></td> 
 </table>
 
-
+<table style="width:100%">
+<tr>
+  <th>space</td>
+  <th>simplebigart</td>
+</tr>
+<tr>
+  <td><img src="https://cloud.githubusercontent.com/assets/10035308/10357909/0db01cc8-6d45-11e5-9448-179611db1a9e.png" width="250"><img src="https://cloud.githubusercontent.com/assets/10035308/10357910/0db09036-6d45-11e5-84f1-1ef1e4c7c00b.png" width="250"></td> 
+  <td><img src="https://cloud.githubusercontent.com/assets/10035308/10357941/5c687a68-6d45-11e5-8c16-7e3d77364645.png" width="250"><img src="https://cloud.githubusercontent.com/assets/10035308/10357940/5c589ed6-6d45-11e5-81fd-e8b1d33a9991.png" width="250"></td> 
+</table>
 
 <table style="width:100%">
 <tr>
+  <th>clean-look</td>
   <th>turtle-pi</td>
-  <th>8-bit-mushwhite</td>
 </tr>
 <tr>
+  <td><img src="https://cloud.githubusercontent.com/assets/10035308/10357973/b3e94d44-6d45-11e5-8556-e9e1922c9a86.png" width="250"><img src="https://cloud.githubusercontent.com/assets/10035308/10357972/b3d8f020-6d45-11e5-8852-a89cab9bcc49.png" width="250"></td> 
   <td><img src="https://cloud.githubusercontent.com/assets/10035308/10357502/022981c8-6d40-11e5-875b-e535576dc57b.png" width="250"><img src="https://cloud.githubusercontent.com/assets/10035308/10357504/05f5ebc0-6d40-11e5-8ac4-31712e0a6193.png" width="250"></td> 
-  <td><img src="https://raw.githubusercontent.com/RetroPie/retropie-splashscreens/master/8-bit-mushwhite/8bitmushwhite.png" width="250"></td> 
   </tr>
 </table>
