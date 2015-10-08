@@ -79,6 +79,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 ## Troubleshooting & Advanced Configuration
 * [RetroArch](https://github.com/RetroPie/RetroPie-Setup/wiki/RetroArch)
 * [EmulationStation](https://github.com/RetroPie/RetroPie-Setup/wiki/EmulationStation)
+* [EmulationStation Themes](https://github.com/RetroPie/RetroPie-Setup/wiki/themes)
 * [ES-scraper](https://github.com/RetroPie/RetroPie-Setup/wiki/ES-scraper)
 * [Netplay](https://github.com/RetroPie/RetroPie-Setup/wiki/Netplay)
 * [Custom Splash Screens](https://github.com/RetroPie/RetroPie-Setup/wiki/splashscreen)
