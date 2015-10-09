@@ -128,7 +128,7 @@ Once your controller is set up you'll need to make a few configurations before y
 
 ![retropiemenu](https://cloud.githubusercontent.com/assets/10035308/9140677/2beba548-3cf0-11e5-8254-d8329b0f35b8.png)
 
-You'll want to select raspberry Pi configuration tool raspi-config (This allows your sd card to use all its memory rather than the small partition it was released with.)
+You'll want to select raspberry Pi configuration tool raspi-config (This allows your SD card to use all its storage rather than the small partition it was released with.)
 
 ![retropiemenuraspiconfig](https://cloud.githubusercontent.com/assets/10035308/9140687/3be5a282-3cf0-11e5-9f48-58d23552bcda.png)
 
