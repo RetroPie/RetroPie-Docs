@@ -184,7 +184,7 @@ Dat File (with merge data): [MAME 0.78.dat](https://drive.google.com/file/d/0B2T
 
 Dat File (working only, no clones): [mame2003-lr-working-no-clones](http://s000.tinyupload.com/index.php?file_id=04618720736720226948)
 
-Dat File ('lite' set: working, no clones, neogeo, PlayChoice (NES multiplay), no rotary/dial/trackball/lightgun controls, no casino/multiplay/quiz/mahjong/fruit_machines/rhythm): [mame2003-lr-lite](http://s000.tinyupload.com/index.php?file_id=09520854078610566940)
+Dat File ('lite' set: working, no clones, neogeo, PlayChoice (NES multiplay), no rotary/dial/trackball/lightgun controls, no casino/multiplay/quiz/mahjong/fruit_machines/rhythm/mature): [mame2003-lr-lite](http://s000.tinyupload.com/index.php?file_id=05598248539957382925) (No. roms: 1615)
 
 [**lr-mame2003 COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1LP1MELCvcxu7TfiowF_0ZuvRVEMqlfQyTVetnOJvuJc/edit?usp=sharing)  feel free to contribute to the list.
 
