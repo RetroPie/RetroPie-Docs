@@ -8,7 +8,7 @@ _The Nintendo 64 is a 5th generation gaming console released by Nintendo in 1996
 
 While the mupen64plus-libretro core has the convenience of RetroArch configurations, the actual Mupen64plus does better with performance. 
 
-You can also install mupen64plus-testing from the experimental menu of the retropie setup script which has optimal settings integrated for many games- once you've installed it you can choose between the rice video plugin and the gles2n64 from the [runcommand](https://github.com/RetroPie/RetroPie-Setup/wiki/runcommand) menu- you may have to test out each one to see which works best- but you can also check the compatibility list below.
+You can also install mupen64plus-testing from the experimental menu of the retropie setup script which has optimal settings integrated for many games- once you've installed it you can choose between the RICE, glesN64 and GLideN64 video plugin from the [runcommand](https://github.com/RetroPie/RetroPie-Setup/wiki/runcommand) menu- you may have to test out each one to see which works best- but you can also check the compatibility list below.
 
 Note that you need a Raspberry Pi 2 if you want any decent N64 performance and even then it is hit and miss.
 
