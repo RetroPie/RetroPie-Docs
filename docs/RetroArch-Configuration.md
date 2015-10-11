@@ -125,15 +125,7 @@ Select+Left | Input State Slot Decrease
 Select+X | RGUI Menu
 Select+B | Reset
 
-***
-
-![InputStation Logo](https://cloud.githubusercontent.com/assets/10035308/7110815/a2c49968-e174-11e4-941c-960290311bca.png)
-***
-_InputStation is the product of hard work from the EmulationStation Team (Aloshi and Nils) and the RetroPie Team (petrockblog, joolswills, and gizmo98). It is an all-in-one controller configuration module for EmulationStation, RetroArch, and will include other specific emulators in the future such as pifba, mupen64plus, etc._
-
-***
-
-This is integrated into emulationstation and will be the first thing you see when you boot from the RetroPie SD image (3.0) the first time. You can also access if from the start menu within emulationstation under the configure option.
+Starting with Retropie 3.0 retroarch controls have been integrated into emulationstation and will be the first thing you see when you boot from the RetroPie SD image the first time. You can also access if from the start menu within emulationstation under the configure input option.
 
 After you've configured your controller the autoconfig will be created here:
 ```
