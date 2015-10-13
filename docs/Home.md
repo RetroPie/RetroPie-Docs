@@ -27,15 +27,12 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
   <th><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/Amstrad-CPC">Amstrad CPC</a></td>
 </tr>
 <tr>
-  <td><img src="https://upload.wikimedia.org/wikipedia/commons/1/1c/3DO-FZ1-Console-Set.png" width="250"></td> 
-  <td><img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Amiga500_system.jpg" width="250"></td> 
-  <td><img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Amstrad_CPC464.jpg" width="250"></td> 
+  <td><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/3do"><img src="https://upload.wikimedia.org/wikipedia/commons/1/1c/3DO-FZ1-Console-Set.png"  width="250"></td> 
+  <td><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/Amiga"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Amiga500_system.jpg" width="250"></td> 
+  <td><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/Amstrad-CPC"><img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Amstrad_CPC464.jpg" width="250"></td> 
   </tr>
 </table>
 
-*  [(lr-4do)](https://github.com/libretro/4do-libretro) (EXPERIMENTAL)
-*  [(UAE4ALL2)](https://github.com/RetroPie/uae4all2), [(UAE4ARM)](https://github.com/Chips-fr/uae4arm-rpi/)
-*  [(CPC4Rpi)](http://gaming.capsule-sa.co.za/?gamepress_reviews=cpc4rpi-cpc-6128-emulator-for-raspberry-pi), [(lr-cap32)](https://github.com/libretro/libretro-cap32.git)
 * [Apple II](https://github.com/RetroPie/RetroPie-Setup/wiki/Apple-II) [(Linapple)](http://sourceforge.net/projects/linapple/)
 * [Atari 2600](https://github.com/RetroPie/RetroPie-Setup/wiki/Atari-2600) [(Stella)](http://stella.sourceforge.net/), [(lr-stella)](https://github.com/libretro/stella-libretro)
 * [Atari 5200, and Atari 8 bit series: 400, 800, 1200XL, 600XL, 800XL, 130XE, XEGS]      
