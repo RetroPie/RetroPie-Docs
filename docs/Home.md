@@ -151,9 +151,72 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
   </tr>
 </table>
 
-* [Nintendo Entertainment System](https://github.com/RetroPie/RetroPie-Setup/wiki/Nintendo-Entertainment-System) [(lr-fceumm)](https://github.com/libretro/libretro-fceumm), [(lr-nestopia)](https://github.com/libretro/nestopia)
-* [PC](https://github.com/RetroPie/RetroPie-Setup/wiki/PC) [(DOSBox)](http://www.dosbox.com/), [(rpix86)](http://rpix86.patrickaalto.com/)
-* [PC Engine/TurboGrafx-16](https://github.com/RetroPie/RetroPie-Setup/wiki/PC-Engine) [(lr-mednafen-pce-fast)](https://github.com/libretro/beetle-pce-fast-libretro)
+<table style="width:100%">
+<tr>
+  <th><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/PC">PC</a></td>
+  <th><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/PC-Engine">PC Engine/TurboGrafx 16</a></td>
+  <th><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/Playstation-1">Playstation 1</a></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/PC"><img src="http://www.columbia.edu/cu/computinghistory/hp150.jpg"  width="250"></td> 
+  <td><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/PC-Engine"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/TurboGrafx16-Console-Set.jpg/320px-TurboGrafx16-Console-Set.jpg" width="250"></td> 
+  <td><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/Playstation-1"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/PSX-Console-wController.jpg/320px-PSX-Console-wController.jpg" width="250"></td> 
+  </tr>
+</table>
+
+<table style="width:100%">
+<tr>
+  <th><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/ScummVM">ScummVM</a></td>
+  <th><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/Sega-32X">Sega 32X</a></td>
+  <th><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/Sega-CD">Sega CD</a></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/ScummVM"><img src="http://screenshots.en.sftcdn.net/en/scrn/27000/27586/scummvm-16.jpg"  width="250"></td> 
+  <td><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/Sega-32X"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Sega-Genesis-Model2-32X.jpg/302px-Sega-Genesis-Model2-32X.jpg" width="250"></td> 
+  <td><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/Sega-CD"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Sega-CD-Model2-Set.jpg/320px-Sega-CD-Model2-Set.jpg" width="250"></td> 
+  </tr>
+</table>
+
+<table style="width:100%">
+<tr>
+  <th><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/Saturn">Saturn</a></td>
+  <th><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/SG-1000">Sega SG-1000</a></td>
+  <th><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/Super-Nintendo-Entertainment-System">Super Nintendo</a></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/Saturn"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Sega-Saturn-Console-Set-Mk1.png/320px-Sega-Saturn-Console-Set-Mk1.png"  width="250"></td> 
+  <td><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/SG-1000"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Sega-SG-1000-Console-Set.jpg/320px-Sega-SG-1000-Console-Set.jpg" width="250"></td> 
+  <td><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/Super-Nintendo-Entertainment-System"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/SNES-Mod1-Console-Set.jpg/320px-SNES-Mod1-Console-Set.jpg" width="250"></td> 
+  </tr>
+</table>
+
+
+<table style="width:100%">
+<tr>
+  <th><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/Vectrex">Vectrex</a></td>
+  <th><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/VideoPac-or-Odyssey-2">VideoPac/Odyssey2</a></td>
+  <th><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/Virtual-Boy">Virtual Boy</a></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/Vectrex"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Vectrex-Console-Set.jpg/384px-Vectrex-Console-Set.jpg"  width="250"></td> 
+  <td><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/VideoPac-or-Odyssey-2"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Magnavox-Odyssey-2-Console-Set.jpg/320px-Magnavox-Odyssey-2-Console-Set.jpg" width="250"></td> 
+  <td><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/Virtual-Boy"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Virtual-Boy-Set.png/378px-Virtual-Boy-Set.png" width="250"></td> 
+  </tr>
+</table>
+
+<table style="width:100%">
+<tr>
+  <th><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/WonderSwan">Wonderswan</a></td>
+  <th><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/Zmachine">Zmachine</a></td>
+  <th><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/ZX-Spectrum">ZX Spectrum</a></td>
+</tr>
+<tr>
+  <td><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/WonderSwan"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/WonderSwan-Black-Left.jpg/320px-WonderSwan-Black-Left.jpg"  width="250"></td> 
+  <td><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/Zmachine"><img src="https://upload.wikimedia.org/wikipedia/en/a/ac/Zork_I_box_art.jpg" width="250"></td> 
+  <td><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/ZX-Spectrum"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/ZXSpectrum48k.jpg/320px-ZXSpectrum48k.jpg" width="250"></td> 
+  </tr>
+</table>
+
 * [Ports](https://github.com/RetroPie/RetroPie-Setup/wiki/Ports)
   * [KODI](https://github.com/RetroPie/RetroPie-Setup/wiki/KODI) (EXPERIMENTAL)
   * [Minecraft Pi Edition](https://github.com/RetroPie/RetroPie-Setup/wiki/Minecraft) (EXPERIMENTAL)
@@ -163,19 +226,6 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
   * [Quake Series](https://github.com/RetroPie/RetroPie-Setup/wiki/Quake) [(lr-tyrquake)](https://github.com/libretro/tyrquake), [(DarkPlaces Quake Engine)](https://github.com/autonomous1/darkplacesrpi), [(ioQuake3)](https://github.com/raspberrypi/quake3)
   * [Descent 1 & 2](https://github.com/RetroPie/RetroPie-Setup/wiki/Descent) [(DXX-Rebirth)](http://www.dxx-rebirth.com/) (EXPERIMENTAL)
   * [Super Mario War](https://github.com/RetroPie/RetroPie-Setup/wiki/Super-Mario-War)
-* [PlayStation 1](https://github.com/RetroPie/RetroPie-Setup/wiki/Playstation-1) [(lr-pcsx-rearmed)](https://github.com/libretro/pcsx_rearmed), [(pcsx-rearmed)](https://github.com/notaz/pcsx_rearmed)
-* [ScummVM](https://github.com/RetroPie/RetroPie-Setup/wiki/ScummVM)
-* [Sega 32X](https://github.com/RetroPie/RetroPie-Setup/wiki/Sega-32X) [(lr-picodrive)](https://github.com/libretro/picodrive)
-* [Sega CD](https://github.com/RetroPie/RetroPie-Setup/wiki/Sega-CD) [(lr-picodrive)](https://github.com/libretro/picodrive)
-* [Sega Saturn](https://github.com/RetroPie/RetroPie-Setup/wiki/Saturn) [(lr-yabause)](https://github.com/libretro/yabause) (EXPERIMENTAL!)
-* [Sega SG-1000](https://github.com/RetroPie/RetroPie-Setup/wiki/SG-1000) [(lr-Genesis-Plus-GX)](https://github.com/libretro/Genesis-Plus-GX)
-* [Super Nintendo Entertainment System](https://github.com/RetroPie/RetroPie-Setup/wiki/Super-Nintendo-Entertainment-System) [(PiSNES)](https://github.com/RetroPie/pisnes), [(snes9x-rpi)](https://github.com/RetroPie/snes9x-rpi), [(lr-armsnes)](https://github.com/rmaz/ARMSNES-libretro), [(lr-catsfc)](https://github.com/libretro/CATSFC-libretro), [(lr-pocketsnes)](https://github.com/libretro/pocketsnes-libretro), [(lr-snes9x-next)](https://github.com/libretro/snes9x-next)
-* [Vectrex](https://github.com/RetroPie/RetroPie-Setup/wiki/Vectrex) [(lr-vecx)](https://github.com/libretro/libretro-vecx)
-* [Videopac or Odyssey2](https://github.com/RetroPie/RetroPie-Setup/wiki/VideoPac-or-Odyssey-2) [(lr-o2em)](https://github.com/libretro/libretro-o2em)
-* [Virtual Boy](https://github.com/RetroPie/RetroPie-Setup/wiki/Virtual-Boy) [(lr-beetle-vb)](https://github.com/libretro/beetle-vb-libretro) (EXPERIMENTAL)
-* [WonderSwan (Color)](https://github.com/RetroPie/RetroPie-Setup/wiki/WonderSwan) [(lr-mednafen-wswan)](https://github.com/libretro/beetle-wswan-libretro)
-* [Zmachine](https://github.com/RetroPie/RetroPie-Setup/wiki/Zmachine) [(Frotz)](http://frotz.sourceforge.net/)
-* [ZX Spectrum](https://github.com/RetroPie/RetroPie-Setup/wiki/ZX-Spectrum) [(FBZX)](http://www.rastersoft.com/fbzx.html), [(Fuse)](http://fuse-emulator.sourceforge.net/), [(lr-fuse)](https://github.com/libretro/fuse-libretro)
 
 ## Troubleshooting & Advanced Configuration
 * [RetroArch](https://github.com/RetroPie/RetroPie-Setup/wiki/RetroArch)
