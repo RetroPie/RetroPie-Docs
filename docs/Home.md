@@ -20,7 +20,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 
 ## Emulators
 
-<table style="width:100%">
+<table style="width:100%" display: block;>
 <tr>
   <th><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/3do">3do</a></td>
   <th><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/Amiga">Amiga</a></td>
@@ -33,7 +33,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
   </tr>
 </table>
 
-<table style="width:100%">
+<table style="width:100%" display: block;>
 <tr>
   <th><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/Apple-II">Apple II</a></td>
   <th><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/Atari-2600">Atari 2600</a></td>
