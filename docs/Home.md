@@ -19,204 +19,40 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [Updating RetroPie](https://github.com/RetroPie/RetroPie-Setup/wiki/Updating-RetroPie)
 
 ## Emulators
-
-<table style="width:100%" display: block;>
-<tr>
-  <th><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/3do">3do</a></td>
-  <th><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/Amiga">Amiga</a></td>
-  <th><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/Amstrad-CPC">Amstrad CPC</a></td>
-</tr>
-<tr>
-  <td><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/3do"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/3DO-FZ1-Console-Set.png/320px-3DO-FZ1-Console-Set.png"  width="250"></td> 
-  <td><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/Amiga"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Amiga500_system.jpg/309px-Amiga500_system.jpg" width="250"></td> 
-  <td><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/Amstrad-CPC"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Amstrad_CPC464.jpg/320px-Amstrad_CPC464.jpg" width="250"></td> 
-  </tr>
-</table>
-
-<table style="width:100%" display: block;>
-<tr>
-  <th><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/Apple-II">Apple II</a></td>
-  <th><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/Atari-2600">Atari 2600</a></td>
-  <th><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/Atari-800-and-5200">Atari 5200 and 8-bit</a></td>
-</tr>
-<tr>
-  <td><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/Apple-II"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/Apple_II_tranparent_800.png/261px-Apple_II_tranparent_800.png"  width="250"></td> 
-  <td><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/Atari-2600"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Atari-2600-Wood-4Sw-Set.jpg/320px-Atari-2600-Wood-4Sw-Set.jpg" width="250"></td> 
-  <td><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/Atari-800-and-5200"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Atari-5200-4-Port-wController-L.jpg/320px-Atari-5200-4-Port-wController-L.jpg" width="250"></td> 
-  </tr>
-</table>
-
-<table style="width:100%">
-<tr>
-  <th><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/Atari-7800">Atari 7800</a></td>
-  <th><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/Atari-Jaguar">Atari Jaguar</a></td>
-  <th><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/Atari-Lynx">Atari Lynx</a></td>
-</tr>
-<tr>
-  <td><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/Atari-7800"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Atari-7800-Console-Set.png/320px-Atari-7800-Console-Set.png"  width="250"></td> 
-  <td><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/Atari-Jaguar"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Atari-Jaguar-Console-Set.png/320px-Atari-Jaguar-Console-Set.png" width="250"></td> 
-  <td><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/Atari-Lynx"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Atari-Lynx-I-Handheld.jpg/320px-Atari-Lynx-I-Handheld.jpg" width="250"></td> 
-  </tr>
-</table>
-
-
-<table style="width:100%">
-<tr>
-  <th><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/Atari-ST-STE-TT-Falcon">Atari ST/STE/TT/Falcon</a></td>
-  <th><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/Coco">CoCo</a></td>
-  <th><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/Commodore-64">Commodore 64</a></td>
-</tr>
-<tr>
-  <td><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/Atari-ST-STE-TT-Falcon"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Atari_1040STf.jpg/320px-Atari_1040STf.jpg"  width="250"></td> 
-  <td><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/Coco"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/TRS-80_Color_Computer_1_front_right.jpg/480px-TRS-80_Color_Computer_1_front_right.jpg" width="250"></td> 
-  <td><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/Commodore-64"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/C64c_system.jpg/300px-C64c_system.jpg" width="250"></td> 
-  </tr>
-</table>
-
-<table style="width:100%">
-<tr>
-  <th><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/Dragon">Dragon 32</a></td>
-  <th><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/Dreamcast">Dreamcast</a></td>
-  <th><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/FinalBurn-Alpha">Final Burn Alpha </a></td>
-</tr>
-<tr>
-  <td><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/Dragon"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Dragon_32.jpg/304px-Dragon_32.jpg"  width="250"></td> 
-  <td><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/Dreamcast"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Dreamcast-Console-Set.png/640px-Dreamcast-Console-Set.png" width="250"></td> 
-  <td><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/FinalBurn-Alpha"><img src="https://camo.githubusercontent.com/0e7b4b8cbae345edea9cb9687987a2b4cdd8b648/687474703a2f2f692e696d6775722e636f6d2f74586b5169574e2e706e67" width="250"></td> 
-  </tr>
-</table>
-
-<table style="width:100%">
-<tr>
-  <th><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/Genesis-Megadrive">Megadrive/Genesis</a></td>
-  <th><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/Game-Gear">Game Gear</a></td>
-  <th><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/Game-Boy">Game Boy</a></td>
-</tr>
-<tr>
-  <td><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/Genesis-Megadrive"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Sega-Genesis-Mk2-6button.jpg/320px-Sega-Genesis-Mk2-6button.jpg"  width="250"></td> 
-  <td><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/Game-Gear"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Game-Gear-Handheld.jpg/320px-Game-Gear-Handheld.jpg" width="250"></td> 
-  <td><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/Game-Boy"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7c/Game-Boy-FL.png/396px-Game-Boy-FL.png" width="250"></td> 
-  </tr>
-</table>
-
-<table style="width:100%">
-<tr>
-  <th><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/Game-Boy-Color">Game Boy Color</a></td>
-  <th><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/Game-Boy-Advance">Game Boy Advance</a></td>
-  <th><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/Intellivision">Intellivision</a></td>
-</tr>
-<tr>
-  <td><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/Game-Boy-Color"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Nintendo-Game-Boy-Color-FL.jpg/353px-Nintendo-Game-Boy-Color-FL.jpg"  width="250"></td> 
-  <td><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/Game-Boy-Advance"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/Game-Boy-Advance-Blk.jpg/320px-Game-Boy-Advance-Blk.jpg" width="250"></td> 
-  <td><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/Intellivision"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Intellivision-Console-Set.jpg/320px-Intellivision-Console-Set.jpg" width="250"></td> 
-  </tr>
-</table>
-
-<table style="width:100%">
-<tr>
-  <th><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/Macintosh">Macintosh</a></td>
-  <th><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/MAME">Mame</a></td>
-  <th><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/Master-System">Master System</a></td>
-</tr>
-<tr>
-  <td><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/Macintosh"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e3/Macintosh_128k_transparency.png"  width="250"></td> 
-  <td><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/MAME"><img src="http://www.jbowers.com/cabinet/images/machine.jpg" width="250"></td> 
-  <td><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/Master-System"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/Sega-Master-System-Set.jpg/320px-Sega-Master-System-Set.jpg" width="250"></td> 
-  </tr>
-</table>
-
-<table style="width:100%">
-<tr>
-  <th><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/MSX">MXS</a></td>
-  <th><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/Neo-Geo">Neo Geo</a></td>
-  <th><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/Neo-Geo-Pocket">Neo Geo Pocket</a></td>
-</tr>
-<tr>
-  <td><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/MSX"><img src="http://www.tvfilmprops.co.uk/userdata/PRODPIC-1365.jpg"  width="250"></td> 
-  <td><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/Neo-Geo"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Neo-Geo-AES-Console-Set.png/320px-Neo-Geo-AES-Console-Set.png" width="250"></td> 
-  <td><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/Neo-Geo-Pocket"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Neo-Geo-Pocket-Anthra-Left.jpg/320px-Neo-Geo-Pocket-Anthra-Left.jpg" width="250"></td> 
-  </tr>
-</table>
-
-<table style="width:100%">
-<tr>
-  <th><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/Nintendo-64">Nintendo 64</a></td>
-  <th><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/Nintendo-DS">Nintendo DS</a></td>
-  <th><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/Nintendo-Entertainment-System">Nintendo Entertainment System</a></td>
-</tr>
-<tr>
-  <td><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/Nintendo-64"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Nintendo-64-wController-L.jpg/320px-Nintendo-64-wController-L.jpg"  width="250"></td> 
-  <td><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/Nintendo-DS"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Nintendo-DS-Fat-Blue.jpg/264px-Nintendo-DS-Fat-Blue.jpg" width="250"></td> 
-  <td><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/Nintendo-Entertainment-System"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/NES-Console-Set.png/320px-NES-Console-Set.png" width="250"></td> 
-  </tr>
-</table>
-
-<table style="width:100%">
-<tr>
-  <th><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/PC">PC</a></td>
-  <th><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/PC-Engine">PC Engine/TurboGrafx 16</a></td>
-  <th><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/Playstation-1">Playstation 1</a></td>
-</tr>
-<tr>
-  <td><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/PC"><img src="http://www.columbia.edu/cu/computinghistory/hp150.jpg"  width="250"></td> 
-  <td><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/PC-Engine"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/TurboGrafx16-Console-Set.jpg/320px-TurboGrafx16-Console-Set.jpg" width="250"></td> 
-  <td><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/Playstation-1"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/PSX-Console-wController.jpg/320px-PSX-Console-wController.jpg" width="250"></td> 
-  </tr>
-</table>
-
-<table style="width:100%">
-<tr>
-  <th><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/ScummVM">ScummVM</a></td>
-  <th><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/Sega-32X">Sega 32X</a></td>
-  <th><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/Sega-CD">Sega CD</a></td>
-</tr>
-<tr>
-  <td><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/ScummVM"><img src="http://screenshots.en.sftcdn.net/en/scrn/27000/27586/scummvm-16.jpg"  width="250"></td> 
-  <td><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/Sega-32X"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Sega-Genesis-Model2-32X.jpg/302px-Sega-Genesis-Model2-32X.jpg" width="250"></td> 
-  <td><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/Sega-CD"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Sega-CD-Model2-Set.jpg/320px-Sega-CD-Model2-Set.jpg" width="250"></td> 
-  </tr>
-</table>
-
-<table style="width:100%">
-<tr>
-  <th><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/Saturn">Saturn</a></td>
-  <th><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/SG-1000">Sega SG-1000</a></td>
-  <th><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/Super-Nintendo-Entertainment-System">Super Nintendo</a></td>
-</tr>
-<tr>
-  <td><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/Saturn"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Sega-Saturn-Console-Set-Mk1.png/320px-Sega-Saturn-Console-Set-Mk1.png"  width="250"></td> 
-  <td><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/SG-1000"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7b/Sega-SG-1000-Console-Set.jpg/320px-Sega-SG-1000-Console-Set.jpg" width="250"></td> 
-  <td><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/Super-Nintendo-Entertainment-System"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/SNES-Mod1-Console-Set.jpg/320px-SNES-Mod1-Console-Set.jpg" width="250"></td> 
-  </tr>
-</table>
-
-
-<table style="width:100%">
-<tr>
-  <th><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/Vectrex">Vectrex</a></td>
-  <th><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/VideoPac-or-Odyssey-2">VideoPac/Odyssey2</a></td>
-  <th><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/Virtual-Boy">Virtual Boy</a></td>
-</tr>
-<tr>
-  <td><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/Vectrex"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Vectrex-Console-Set.jpg/384px-Vectrex-Console-Set.jpg"  width="250"></td> 
-  <td><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/VideoPac-or-Odyssey-2"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Magnavox-Odyssey-2-Console-Set.jpg/320px-Magnavox-Odyssey-2-Console-Set.jpg" width="250"></td> 
-  <td><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/Virtual-Boy"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Virtual-Boy-Set.png/378px-Virtual-Boy-Set.png" width="250"></td> 
-  </tr>
-</table>
-
-<table style="width:100%">
-<tr>
-  <th><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/WonderSwan">Wonderswan</a></td>
-  <th><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/Zmachine">Zmachine</a></td>
-  <th><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/ZX-Spectrum">ZX Spectrum</a></td>
-</tr>
-<tr>
-  <td><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/WonderSwan"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/WonderSwan-Black-Left.jpg/320px-WonderSwan-Black-Left.jpg"  width="250"></td> 
-  <td><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/Zmachine"><img src="https://upload.wikimedia.org/wikipedia/en/a/ac/Zork_I_box_art.jpg" width="250"></td> 
-  <td><a href="https://github.com/RetroPie/RetroPie-Setup/wiki/ZX-Spectrum"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/ZXSpectrum48k.jpg/320px-ZXSpectrum48k.jpg" width="250"></td> 
-  </tr>
-</table>
-
+* [3do](https://github.com/RetroPie/RetroPie-Setup/wiki/3do) [(lr-4do)](https://github.com/libretro/4do-libretro) (EXPERIMENTAL)
+* [Amiga](https://github.com/RetroPie/RetroPie-Setup/wiki/Amiga) [(UAE4ALL2)](https://github.com/RetroPie/uae4all2), [(UAE4ARM)](https://github.com/Chips-fr/uae4arm-rpi/)
+* [Amstrad CPC](https://github.com/RetroPie/RetroPie-Setup/wiki/Amstrad-CPC) [(CPC4Rpi)](http://gaming.capsule-sa.co.za/?gamepress_reviews=cpc4rpi-cpc-6128-emulator-for-raspberry-pi), [(lr-cap32)](https://github.com/libretro/libretro-cap32.git)
+* [Apple II](https://github.com/RetroPie/RetroPie-Setup/wiki/Apple-II) [(Linapple)](http://sourceforge.net/projects/linapple/)
+* [Atari 2600](https://github.com/RetroPie/RetroPie-Setup/wiki/Atari-2600) [(Stella)](http://stella.sourceforge.net/), [(lr-stella)](https://github.com/libretro/stella-libretro)
+* [Atari 5200, and Atari 8 bit series: 400, 800, 1200XL, 600XL, 800XL, 130XE, XEGS]      
+ (https://github.com/RetroPie/RetroPie-Setup/wiki/Atari-800-and-5200) [(Atari800)](http://atari800.sourceforge.net/)
+* [Atari 7800](https://github.com/RetroPie/RetroPie-Setup/wiki/Atari-7800) [(lr-prosystem)](https://github.com/libretro/prosystem-libretro)
+* [Atari Jaguar](https://github.com/RetroPie/RetroPie-Setup/wiki/Atari-Jaguar) [(lr-virtualjaguar)](https://github.com/libretro/virtualjaguar-libretro) (EXPERIMENTAL)
+* [Atari Lynx](https://github.com/RetroPie/RetroPie-Setup/wiki/Atari-Lynx) [(lr-handy)](https://github.com/libretro/libretro-handy)
+* [Atari ST/STE/TT/Falcon](https://github.com/RetroPie/RetroPie-Setup/wiki/Atari-ST-STE-TT-Falcon) [(Hatari)](http://hatari.tuxfamily.org/)
+* [CoCo](https://github.com/RetroPie/RetroPie-Setup/wiki/Coco) [(XRoar)](http://www.6809.org.uk/xroar/)
+* [Commodore 64](https://github.com/RetroPie/RetroPie-Setup/wiki/Commodore-64) [(Vice)](http://vice-emu.sourceforge.net/)
+* [Dragon 32](https://github.com/RetroPie/RetroPie-Setup/wiki/Dragon) [(XRoar)](http://www.6809.org.uk/xroar/)
+* [Dreamcast](https://github.com/RetroPie/RetroPie-Setup/wiki/Dreamcast) [(Reicast)](https://github.com/reicast/reicast-emulator) (EXPERIMENTAL!)
+* [FinalBurn Alpha](https://github.com/RetroPie/RetroPie-Setup/wiki/FinalBurn-Alpha) [(PiFBA)](https://github.com/RetroPie/pifba), [(lr-fba)](https://github.com/libretro/fba-libretro), [(lr-fba-next)](https://github.com/libretro/libretro-fba.git)
+* [Genesis/Megadrive](https://github.com/RetroPie/RetroPie-Setup/wiki/Genesis-Megadrive) [(DGEN)](http://dgen.sourceforge.net/), [(lr-Genesis-Plus-GX)](https://github.com/libretro/Genesis-Plus-GX), [(lr-picodrive)] (https://github.com/libretro/picodrive)
+* [Game Gear](https://github.com/RetroPie/RetroPie-Setup/wiki/Game-Gear) [(Osmose)](https://github.com/RetroPie/osmose-rpi), [(lr-Genesis-Plus-GX)](https://github.com/libretro/Genesis-Plus-GX)
+* [Game Boy](https://github.com/RetroPie/RetroPie-Setup/wiki/Game-Boy) [(lr-gambatte)](https://github.com/libretro/gambatte-libretro)
+* [Game Boy Color](https://github.com/RetroPie/RetroPie-Setup/wiki/Game-Boy-Color) [(lr-gambatte)](https://github.com/libretro/gambatte-libretro)
+* [Game Boy Advance](https://github.com/RetroPie/RetroPie-Setup/wiki/Game-Boy-Advance) [(gpSP)](https://github.com/DPRCZ/gpsp), [(lr-gpSP)](https://github.com/libretro/gpsp), [(lr-vba-next)](https://github.com/libretro/vba-next),
+[(lr-mgba)](https://github.com/libretro/mgba)
+* [Intellivision](https://github.com/RetroPie/RetroPie-Setup/wiki/Intellivision) [(jzIntv)](http://spatula-city.org/~im14u2c/intv/)
+* [Macintosh](https://github.com/RetroPie/RetroPie-Setup/wiki/Macintosh) [(BasiliskII)](http://basilisk.cebix.net/)
+* [MAME](https://github.com/RetroPie/RetroPie-Setup/wiki/MAME) [(AdvanceMAME)](http://advancemame.sourceforge.net/), [(MAME4ALL-Pi)](https://github.com/RetroPie/mame4all-pi), [(lr-imame4all)](https://github.com/libretro/imame4all-libretro), [(lr-mame2003)](https://github.com/libretro/mame2003-libretro), [(lr-mame2010)](https://github.com/libretro/mame2010-libretro)
+* [MasterSystem](https://github.com/RetroPie/RetroPie-Setup/wiki/Master-System) [(lr-Genesis-Plus-GX)](https://github.com/libretro/Genesis-Plus-GX), [(lr-picodrive)](https://github.com/libretro/picodrive),  [(Osmose)](https://github.com/RetroPie/osmose-rpi)
+* [MSX](https://github.com/RetroPie/RetroPie-Setup/wiki/MSX) [(lr-fmsx)](https://github.com/libretro/fmsx-libretro), [(lr-bluemsx)](https://github.com/libretro/blueMSX-libretro)
+* [Neo Geo](https://github.com/RetroPie/RetroPie-Setup/wiki/Neo-Geo) [(GnGeo-Pi)](https://github.com/ymartel06/GnGeo-Pi), [(PiFBA)](https://github.com/RetroPie/pifba), [(lr-fba)](https://github.com/libretro/fba-libretro), [(lr-fba-next)](https://github.com/libretro/libretro-fba.git)
+* [Neo Geo Pocket (Color)](https://github.com/RetroPie/RetroPie-Setup/wiki/Neo-Geo-Pocket) [(lr-mednafen-ngp)](https://github.com/libretro/beetle-ngp-libretro.git)
+* [Nintendo 64](https://github.com/RetroPie/RetroPie-Setup/wiki/Nintendo-64) [(Mupen64plus)](https://code.google.com/p/mupen64plus/), [(Mupen64plus-testing)](https://github.com/gizmo98/mupen64plus-video-gles2rice) [(lr-mupen64plus)](https://github.com/libretro/mupen64plus-libretro)
+* [Nintendo DS](https://github.com/RetroPie/RetroPie-Setup/wiki/Nintendo-DS) [(lr-desmume)](https://github.com/libretro/desmume) (EXPERIMENTAL)
+* [Nintendo Entertainment System](https://github.com/RetroPie/RetroPie-Setup/wiki/Nintendo-Entertainment-System) [(lr-fceumm)](https://github.com/libretro/libretro-fceumm), [(lr-nestopia)](https://github.com/libretro/nestopia)
+* [PC](https://github.com/RetroPie/RetroPie-Setup/wiki/PC) [(DOSBox)](http://www.dosbox.com/), [(rpix86)](http://rpix86.patrickaalto.com/)
+* [PC Engine/TurboGrafx-16](https://github.com/RetroPie/RetroPie-Setup/wiki/PC-Engine) [(lr-mednafen-pce-fast)](https://github.com/libretro/beetle-pce-fast-libretro)
 * [Ports](https://github.com/RetroPie/RetroPie-Setup/wiki/Ports)
   * [KODI](https://github.com/RetroPie/RetroPie-Setup/wiki/KODI) (EXPERIMENTAL)
   * [Minecraft Pi Edition](https://github.com/RetroPie/RetroPie-Setup/wiki/Minecraft) (EXPERIMENTAL)
@@ -226,6 +62,19 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
   * [Quake Series](https://github.com/RetroPie/RetroPie-Setup/wiki/Quake) [(lr-tyrquake)](https://github.com/libretro/tyrquake), [(DarkPlaces Quake Engine)](https://github.com/autonomous1/darkplacesrpi), [(ioQuake3)](https://github.com/raspberrypi/quake3)
   * [Descent 1 & 2](https://github.com/RetroPie/RetroPie-Setup/wiki/Descent) [(DXX-Rebirth)](http://www.dxx-rebirth.com/) (EXPERIMENTAL)
   * [Super Mario War](https://github.com/RetroPie/RetroPie-Setup/wiki/Super-Mario-War)
+* [PlayStation 1](https://github.com/RetroPie/RetroPie-Setup/wiki/Playstation-1) [(lr-pcsx-rearmed)](https://github.com/libretro/pcsx_rearmed), [(pcsx-rearmed)](https://github.com/notaz/pcsx_rearmed)
+* [ScummVM](https://github.com/RetroPie/RetroPie-Setup/wiki/ScummVM)
+* [Sega 32X](https://github.com/RetroPie/RetroPie-Setup/wiki/Sega-32X) [(lr-picodrive)](https://github.com/libretro/picodrive)
+* [Sega CD](https://github.com/RetroPie/RetroPie-Setup/wiki/Sega-CD) [(lr-picodrive)](https://github.com/libretro/picodrive)
+* [Sega Saturn](https://github.com/RetroPie/RetroPie-Setup/wiki/Saturn) [(lr-yabause)](https://github.com/libretro/yabause) (EXPERIMENTAL!)
+* [Sega SG-1000](https://github.com/RetroPie/RetroPie-Setup/wiki/SG-1000) [(lr-Genesis-Plus-GX)](https://github.com/libretro/Genesis-Plus-GX)
+* [Super Nintendo Entertainment System](https://github.com/RetroPie/RetroPie-Setup/wiki/Super-Nintendo-Entertainment-System) [(PiSNES)](https://github.com/RetroPie/pisnes), [(snes9x-rpi)](https://github.com/RetroPie/snes9x-rpi), [(lr-armsnes)](https://github.com/rmaz/ARMSNES-libretro), [(lr-catsfc)](https://github.com/libretro/CATSFC-libretro), [(lr-pocketsnes)](https://github.com/libretro/pocketsnes-libretro), [(lr-snes9x-next)](https://github.com/libretro/snes9x-next)
+* [Vectrex](https://github.com/RetroPie/RetroPie-Setup/wiki/Vectrex) [(lr-vecx)](https://github.com/libretro/libretro-vecx)
+* [Videopac or Odyssey2](https://github.com/RetroPie/RetroPie-Setup/wiki/VideoPac-or-Odyssey-2) [(lr-o2em)](https://github.com/libretro/libretro-o2em)
+* [Virtual Boy](https://github.com/RetroPie/RetroPie-Setup/wiki/Virtual-Boy) [(lr-beetle-vb)](https://github.com/libretro/beetle-vb-libretro) (EXPERIMENTAL)
+* [WonderSwan (Color)](https://github.com/RetroPie/RetroPie-Setup/wiki/WonderSwan) [(lr-mednafen-wswan)](https://github.com/libretro/beetle-wswan-libretro)
+* [Zmachine](https://github.com/RetroPie/RetroPie-Setup/wiki/Zmachine) [(Frotz)](http://frotz.sourceforge.net/)
+* [ZX Spectrum](https://github.com/RetroPie/RetroPie-Setup/wiki/ZX-Spectrum) [(FBZX)](http://www.rastersoft.com/fbzx.html), [(Fuse)](http://fuse-emulator.sourceforge.net/), [(lr-fuse)](https://github.com/libretro/fuse-libretro)
 
 ## Troubleshooting & Advanced Configuration
 * [RetroArch](https://github.com/RetroPie/RetroPie-Setup/wiki/RetroArch)
