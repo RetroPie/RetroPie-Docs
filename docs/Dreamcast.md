@@ -48,6 +48,13 @@ for older versions place BIOS files in
 /home/pi/.reicast/data/
 ```
 
+## Video Setup Guide  
+
+<a href="https://www.youtube.com/watch?v=yAB0_kkaa5s
+" target="_blank"><img src="https://i.ytimg.com/vi_webp/yAB0_kkaa5s/mqdefault.webp" 
+alt="RetroPie Dreamcast emulation" width="300" height="190" border="10" /></a>  
+
+
 ## VMUs
 
 VMUs are stored as .BIN files under `/home/pi/.reicast/`, and will be automatically created the first time you run Reicast without VMU files.  
