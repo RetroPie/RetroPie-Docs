@@ -98,3 +98,19 @@ For Wireless PS3 Controller use:
 Replace xx:xx:xx:xx:xx:xx with your own controller mac address
 
 Press ctrl+c to exit- Or map a Quit button (PS) as shown above :D 
+
+
+For iBuffalo USB controller  
+
+```
+button.0=Btn_B
+button.1=Btn_A
+button.2=Btn_Y
+button.3=Btn_X
+button.4=DPad2_Left
+button.5=DPad2_Right
+button.6=Quit
+button.7=Btn_Start
+axis.0=Axis_X
+axis.1=Axis_Y
+```
