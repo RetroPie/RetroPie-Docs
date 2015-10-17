@@ -36,6 +36,13 @@ For more information on custom RetroArch controls see: [RetroArch Configuration]
 
 ![playstation](https://cloud.githubusercontent.com/assets/10035308/8194532/8213433e-1439-11e5-8e69-87c6a7dc275c.png)
 
+### Video Guide  
+
+<a href="https://www.youtube.com/watch?v=a7JtysTXaAU
+" target="_blank"><img src="https://i.ytimg.com/vi_webp/a7JtysTXaAU/mqdefault.webp" 
+alt="RetroPie Playstation 1 emulation" width="300" height="190" border="10" /></a>  
+
+
 ### Alternative BIOS files
 
 Add different bios' that you've tested and tell the community if it works or not.
