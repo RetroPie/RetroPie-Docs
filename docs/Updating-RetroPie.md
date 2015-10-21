@@ -34,7 +34,7 @@ If you are worried about conflicts during an update you can always just start wi
 
 ## Making a Backup (Option 1)
 
-You can create an sd image of your current sd card with win32diskimager (if you're on windows)
+You can create an sd image of your current sd card with [win32diskimager](http://sourceforge.net/projects/win32diskimager/files/Archive/) (if you're on windows)
 
 - Plug your sd card into your laptop (you will need a sd card reader for this)
 - Open win32diskimager as an administrator (you can right click on it to run as an administrator)
