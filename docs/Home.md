@@ -17,6 +17,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [Getting the right MAME ROMs](https://github.com/RetroPie/RetroPie-Setup/wiki/Managing-ROMs)
 * [Using the Runcommand Menu](https://github.com/RetroPie/RetroPie-Setup/wiki/runcommand)
 * [Updating RetroPie](https://github.com/RetroPie/RetroPie-Setup/wiki/Updating-RetroPie)
+* [Using SSH](https://github.com/RetroPie/RetroPie-Setup/wiki/ssh)
 
 ## Emulators
 * [3do](https://github.com/RetroPie/RetroPie-Setup/wiki/3do) [(lr-4do)](https://github.com/libretro/4do-libretro) (EXPERIMENTAL)
