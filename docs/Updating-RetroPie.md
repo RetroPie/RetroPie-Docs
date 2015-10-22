@@ -54,3 +54,9 @@ You can create an sd image of your current sd card with [win32diskimager](http:/
 if you don't want to create a sd image you can just back up your bios, roms, and configuration files from the samba shares
 
 ![configs](https://cloud.githubusercontent.com/assets/10035308/9141308/edee8b52-3cf4-11e5-8bf3-73f8c27f99fb.png)
+
+## Making a Backup (OS X)
+
+Open a terminal window and type `diskutil list`. A list of all hard disks and partitions shows up. Find a partition with the name boot. The related /dev/disk* is your retropie sd card. Type `sudo dd if=/dev/disk* of=backup.img bs=1m` to write a disk image to your home directory.
+
+ 
