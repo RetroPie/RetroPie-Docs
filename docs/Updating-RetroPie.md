@@ -57,6 +57,6 @@ if you don't want to create a sd image you can just back up your bios, roms, and
 
 ## Making a Backup (OS X)
 
-Open a terminal window and type `diskutil list`. A list of all hard disks and partitions shows up. Find a partition with the name boot. The related /dev/disk* is your retropie sd card. Type `sudo dd if=/dev/disk* of=backup.img bs=1m` to write a disk image to your home directory.
+Open a terminal window and type `diskutil list`. A list of all hard disks and partitions shows up. Find a partition with the name `boot`. The related /dev/disk* is your retropie sd card. Type `sudo dd if=/dev/disk* of=backup.img bs=1m` to write a disk image to your home directory.
 
  
