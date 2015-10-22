@@ -41,4 +41,4 @@ killall kodi.bin
  
 fbset -depth 8 && fbset -depth 16
 ```
-(note there may be some issues with the framebuffer but its the only functioning fix at the moment short of compiling Kodi 15 beta 2)
+(note there may be some issues with the framebuffer but its the only functioning fix at the moment short of compiling Kodi 15)
