@@ -1,4 +1,4 @@
-![RetroPie](http://blog.petrockblock.com/wp-content/uploads/2015/12/RetroPie_Logo_BW2.png)
+![retropie](https://cloud.githubusercontent.com/assets/10035308/10711830/369eb330-7a45-11e5-98f8-25f247ede928.png)
 ***
 
 
