@@ -56,7 +56,7 @@
 * [Zmachine](https://github.com/petrockblog/RetroPie-Setup/wiki/Zmachine)
 * [ZX Spectrum](https://github.com/petrockblog/RetroPie-Setup/wiki/ZX-Spectrum)
 
-## [Troubleshooting/Advanced](https://github.com/RetroPie/RetroPie-Setup/wiki#troubleshooting--advanced-configuration)
+## [Troubleshooting](https://github.com/RetroPie/RetroPie-Setup/wiki#troubleshooting--advanced-configuration)
 
 ## [Controllers](https://github.com/RetroPie/RetroPie-Setup/wiki#controller-configurations)
 
