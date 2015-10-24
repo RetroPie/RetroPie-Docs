@@ -1,6 +1,41 @@
+# Steven Selph's Scraper
+
+Steven Sselph's scraper is probably the simplest way of scraping roms (provided that the systems are supported.) It can be installed and used from the experimental menu of the setup script
+
+![experimental_menu](https://cloud.githubusercontent.com/assets/10035308/10713166/d60f6200-7a6f-11e5-8036-6c49555f9f64.png)
+![scraper](https://cloud.githubusercontent.com/assets/10035308/10713172/244622e2-7a70-11e5-95d8-fcf211256273.png)
+
+- **Scrape All Systems:** This will scrape all the systems the scraper supports
+
+- **Scrape Chosen Systems:** You can choose to only scrape the systems you choose (press the **spacebar** to select each system) and select ok to start scraping.
+
+![systems](https://cloud.githubusercontent.com/assets/10035308/10713183/98a7ad9a-7a70-11e5-8e24-92d9a4a767b8.png)
+
+- **Update scraper to the latest version:** This updates the scraper to the latest version.
+
+Note that after you scrape the games you may need to restart emulationstation. It may take some time for the xml files to build. If it doesn't work you may need to try it outside of emulationstation from the terminal.
+
+# EmulationStation Built-In Scraper:
+
+EmulationStation has a built in scraper that pulls from [thegamesdb](http://thegamesdb.net/). It can be accessed from the start menu in emulationstation.
+
+![srapermenu](https://cloud.githubusercontent.com/assets/10035308/10713271/534a0560-7a73-11e5-8076-90131881c054.png)
+
+![srapermenu2](https://cloud.githubusercontent.com/assets/10035308/10713277/92462faa-7a73-11e5-86d4-34e49ca93d14.png)
+
+![srapermenu3](https://cloud.githubusercontent.com/assets/10035308/10713295/3b237434-7a74-11e5-8c30-68d76b67388e.png)
+
+![srapermenu4](https://cloud.githubusercontent.com/assets/10035308/10713292/0f9360cc-7a74-11e5-8784-b1f2555a785f.png) 
+
+![srapermenu5](https://cloud.githubusercontent.com/assets/10035308/10713306/b89d2d56-7a74-11e5-9415-485b1b5dbc0f.png)
+
+
+### Scraper Not Saving Manual Edits
+
+If you are having issues with your metadata changes not being saved, you need to select Quit EmulationStation from the quit menu rather than shutdown or restart system. Then your changes will be saved.
 
 # ES-scraper
-ES-scraper is a quick script written in Python that uses various online sources ([thegamesdb.net](http://thegamesdb.net) and [archive.vg](http://archive.vg) so far) to scrape artwork and game info and save it as XML files to be read by EmulationStation. ~~The repository can be found [here](https://github.com/elpendor/ES-scraper)~~
+ES-scraper is a quick script written in Python that uses various online sources ([thegamesdb](http://thegamesdb.net/) and [archive.vg](http://archive.vg) so far) to scrape artwork and game info and save it as XML files to be read by EmulationStation. ~~The repository can be found [here](https://github.com/elpendor/ES-scraper)~~
 
 **The code currently in the repository is not compatible with the current version of EmulationStation**
 
@@ -57,6 +92,3 @@ Scraping accuracy really depends on **properly named files and specifying the co
 
 If everything else fails (and assuming your ROMs and/or other images are untouched), **CRC scraping** is available. CRC scraping uses a different source instead: the archive.vg database. I'll eventually add regular scraping for this db as well, depending on when they update the API to support multiple parameters (or maybe if I come up with a clever way to do it using the current version). Bear in mind that bigger files will take longer as it needs to read the whole file to generate the checksum.
 
-### Scraper Not Saving Manual Edits
-
-If you are having issues with your metadata changes not being saved, you need to select Quit EmulationStation from the quit menu rather than shutdown or restart system. Then your changes will be saved.
