@@ -80,12 +80,6 @@ optional arguments:
   -m          manual mode (choose from multiple results)
 ```
 
-# ES-scraper in the RetroPie setup script
-
-ES-scraper can be started from the "setup" menu of the RetroPie setup script. In the scraper menu you can run a normal (re-) scrape of the ROMs (first option) or a forced re-scrape of the ROMs (second option). In all cases the scraper is started with boxart downloading. CRC scraping is used when the third option is chosen. The maximum width (in pixels) for boxarts is set to 350 px. You can change this width with the fourth option.
-
-When the scraper is finished it returns to the setup script.
-
 # Troubleshooting
 ### The scraper won't find any games (or just a few)
 Scraping accuracy really depends on **properly named files and specifying the correct platform ID** in the config file. **Cowering's GoodTools** should be enough to mass rename most of these files.
