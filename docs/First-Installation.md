@@ -1,5 +1,12 @@
 # RetroPie 3.0
 
+1. [Hardware](https://github.com/RetroPie/RetroPie-Setup/wiki/First-Installation#hardware-needed)
+2. [Installation](https://github.com/RetroPie/RetroPie-Setup/wiki/First-Installation#installation)
+3. [Controller Configuration](https://github.com/RetroPie/RetroPie-Setup/wiki/First-Installation#controller-configurations)
+4. [Expand File System](https://github.com/RetroPie/RetroPie-Setup/wiki/First-Installation#expand-file-system)
+5. [Configure Wifi](https://github.com/RetroPie/RetroPie-Setup/wiki/First-Installation#configuring-wifi)
+6. [Transferring Roms](https://github.com/RetroPie/RetroPie-Setup/wiki/First-Installation#transferring-roms)
+
 Congratulations! You have discovered the wonderful world of RetroPie- your entire childhood is within reach! This page is for people just getting started on RetroPie 3.0. You can install RetroPie manually but for simplicity's sake this page will focus on installing the RetroPie SD card image. This page will give you the very basics to get you up and running from a blank SD card to first boot into Emulationstation.
 
 If you hate reading then see this video. Otherwise read on! 
