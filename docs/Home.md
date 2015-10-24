@@ -1,7 +1,6 @@
 ![retropie](https://cloud.githubusercontent.com/assets/10035308/10711830/369eb330-7a45-11e5-98f8-25f247ede928.png)
 ***
 
-
 Welcome to the RetroPie-Setup wiki!
 
 This wiki is supposed to be created by the users of the RetroPie setup script for the users of the script. Everyone can contribute to it!
@@ -81,7 +80,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [RetroArch](https://github.com/RetroPie/RetroPie-Setup/wiki/RetroArch)
 * [EmulationStation](https://github.com/RetroPie/RetroPie-Setup/wiki/EmulationStation)
 * [EmulationStation Themes](https://github.com/RetroPie/RetroPie-Setup/wiki/themes)
-* [ES-scraper](https://github.com/RetroPie/RetroPie-Setup/wiki/ES-scraper)
+* [Scraping Games](https://github.com/RetroPie/RetroPie-Setup/wiki/scraper)
 * [Netplay](https://github.com/RetroPie/RetroPie-Setup/wiki/Netplay)
 * [Custom Splash Screens](https://github.com/RetroPie/RetroPie-Setup/wiki/splashscreen)
 * [Advanced Configuration](https://github.com/RetroPie/RetroPie-Setup/wiki/Advanced-Configuration)
