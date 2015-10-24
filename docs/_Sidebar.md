@@ -1,4 +1,6 @@
 # [Wiki Home Page](https://github.com/petrockblog/RetroPie-Setup/wiki)
+## [Getting Started](https://github.com/RetroPie/RetroPie-Setup/wiki#getting-started)
+## [Emulators](https://github.com/RetroPie/RetroPie-Setup/wiki#emulators)
 * [3do](https://github.com/petrockblog/RetroPie-Setup/wiki/3do)
 * [Amstrad CPC](https://github.com/petrockblog/RetroPie-Setup/wiki/Amstrad-CPC)
 * [Apple II](https://github.com/petrockblog/RetroPie-Setup/wiki/Apple-II)
@@ -53,3 +55,9 @@
 * [WonderSwan (Color)](https://github.com/petrockblog/RetroPie-Setup/wiki/WonderSwan)
 * [Zmachine](https://github.com/petrockblog/RetroPie-Setup/wiki/Zmachine)
 * [ZX Spectrum](https://github.com/petrockblog/RetroPie-Setup/wiki/ZX-Spectrum)
+
+## [Troubleshooting/Advanced](https://github.com/RetroPie/RetroPie-Setup/wiki#troubleshooting--advanced-configuration)
+
+## [Controllers](https://github.com/RetroPie/RetroPie-Setup/wiki#controller-configurations)
+
+## [F.A.Q.](https://github.com/RetroPie/RetroPie-Setup/wiki#faq)
