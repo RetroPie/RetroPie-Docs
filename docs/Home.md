@@ -9,7 +9,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 ## Latest News: [RetroPie 3.1 SD Image Released!](http://blog.petrockblock.com/retropie/retropie-downloads/) [(see changelog)](https://github.com/RetroPie/RetroPie-Setup/wiki/Changelogs)
 
 
-## Getting Started
+# Getting Started
 * [First Installation](https://github.com/RetroPie/RetroPie-Setup/wiki/First-Installation)
 * [Setting Up Wifi](https://github.com/RetroPie/RetroPie-Setup/wiki/Setting-Up-Wifi)
 * [Configuring Controllers (RetroArch)](https://github.com/RetroPie/RetroPie-Setup/wiki/RetroArch-Configuration)
@@ -19,7 +19,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [Updating RetroPie](https://github.com/RetroPie/RetroPie-Setup/wiki/Updating-RetroPie)
 * [Using SSH](https://github.com/RetroPie/RetroPie-Setup/wiki/ssh)
 
-## Emulators
+# Emulators
 * [3do](https://github.com/RetroPie/RetroPie-Setup/wiki/3do) [(lr-4do)](https://github.com/libretro/4do-libretro) (EXPERIMENTAL)
 * [Amiga](https://github.com/RetroPie/RetroPie-Setup/wiki/Amiga) [(UAE4ALL2)](https://github.com/RetroPie/uae4all2), [(UAE4ARM)](https://github.com/Chips-fr/uae4arm-rpi/)
 * [Amstrad CPC](https://github.com/RetroPie/RetroPie-Setup/wiki/Amstrad-CPC) [(CPC4Rpi)](http://gaming.capsule-sa.co.za/?gamepress_reviews=cpc4rpi-cpc-6128-emulator-for-raspberry-pi), [(lr-cap32)](https://github.com/libretro/libretro-cap32.git)
@@ -77,7 +77,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [Zmachine](https://github.com/RetroPie/RetroPie-Setup/wiki/Zmachine) [(Frotz)](http://frotz.sourceforge.net/)
 * [ZX Spectrum](https://github.com/RetroPie/RetroPie-Setup/wiki/ZX-Spectrum) [(FBZX)](http://www.rastersoft.com/fbzx.html), [(Fuse)](http://fuse-emulator.sourceforge.net/), [(lr-fuse)](https://github.com/libretro/fuse-libretro)
 
-## Troubleshooting & Advanced Configuration
+# Troubleshooting & Advanced Configuration
 * [RetroArch](https://github.com/RetroPie/RetroPie-Setup/wiki/RetroArch)
 * [EmulationStation](https://github.com/RetroPie/RetroPie-Setup/wiki/EmulationStation)
 * [EmulationStation Themes](https://github.com/RetroPie/RetroPie-Setup/wiki/themes)
@@ -94,7 +94,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [Wolfenstein 3D](https://github.com/RetroPie/RetroPie-Setup/wiki/Wolfenstein-3D-Troubleshooting)
 * [RetroPie Arch Linux Flavor](https://github.com/RetroPie/RetroPie-Setup/wiki/RetroPie-Arch-Linux-Flavor)
 
-## Controller Configurations
+# Controller Configurations
 * [Setting up an XBox 360 Controller](https://github.com/RetroPie/RetroPie-Setup/wiki/Setting-up-the-XBox360-controller)
 * [Setting up a PS3 controller](https://github.com/RetroPie/RetroPie-Setup/wiki/Setting-up-a-PS3-controller)
 * [Setting up an N64 controller](https://github.com/RetroPie/RetroPie-Setup/wiki/Setting-up-an-N64-controller)
@@ -105,7 +105,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [Module for GPIO interface for retro game controllers](https://github.com/RetroPie/RetroPie-Setup/wiki/Module-for-GPIO-interface-for-retro-game-controllers)
 * [Control Issues](https://github.com/RetroPie/RetroPie-Setup/wiki/Control-Issues)
 
-## FAQ
+# FAQ
 * [Why can't I login as root anymore?](https://github.com/RetroPie/RetroPie-Setup/wiki/Root-Password)
 * [Why can't I insert coins in lr-mame4all and fba-libretro?](https://github.com/RetroPie/RetroPie-Setup/wiki/Can't-Insert-Coins%3F)
 * [How would I start from command line, say, the SNES emulator by itself?](https://github.com/RetroPie/RetroPie-Setup/wiki/How-would-I-start-from-command-line,-say,-the-SNES-emulator-by-itself%3F)
