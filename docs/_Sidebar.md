@@ -1,6 +1,6 @@
 # [Wiki Home Page](https://github.com/petrockblog/RetroPie-Setup/wiki)
-## [Getting Started](https://github.com/RetroPie/RetroPie-Setup/wiki#getting-started)
-## [Emulators](https://github.com/RetroPie/RetroPie-Setup/wiki#emulators)
+## [Getting Started](https://github.com/RetroPie/RetroPie-Setup/wiki/First-Installation)
+## Emulators
 * [3do](https://github.com/petrockblog/RetroPie-Setup/wiki/3do)
 * [Amstrad CPC](https://github.com/petrockblog/RetroPie-Setup/wiki/Amstrad-CPC)
 * [Apple II](https://github.com/petrockblog/RetroPie-Setup/wiki/Apple-II)
@@ -59,5 +59,3 @@
 ## [Troubleshooting](https://github.com/RetroPie/RetroPie-Setup/wiki#troubleshooting--advanced-configuration)
 
 ## [Controllers](https://github.com/RetroPie/RetroPie-Setup/wiki#controller-configurations)
-
-## [F.A.Q.](https://github.com/RetroPie/RetroPie-Setup/wiki#faq)
