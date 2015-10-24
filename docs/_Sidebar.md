@@ -1,4 +1,4 @@
-# [Wiki Home](https://github.com/petrockblog/RetroPie-Setup/wiki)
+# [Wiki Home Page](https://github.com/petrockblog/RetroPie-Setup/wiki)
 * [3do](https://github.com/petrockblog/RetroPie-Setup/wiki/3do)
 * [Amstrad CPC](https://github.com/petrockblog/RetroPie-Setup/wiki/Amstrad-CPC)
 * [Apple II](https://github.com/petrockblog/RetroPie-Setup/wiki/Apple-II)
