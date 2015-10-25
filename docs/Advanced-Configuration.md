@@ -1,10 +1,10 @@
 You did the steps in [First Installation](First-Installation), basically everything works, but some things could run better. This tutorial is intended to describe the next steps after a successful installation, to give RetroPie some finishing touches.  
 
-### Sound issues
+## Sound issues
 
 There are a few things that can cause sound issues- one is the hardware (typically audio through the 3.5 mm jack causes a buzzing noise.) Other issues can be incorrect settings or a lack of processing power which can be mitigated somewhat potentially by overclocking which is discussed in the next section. See [This Page](https://github.com/RetroPie/RetroPie-Setup/wiki/Sound-Issues) for more details on resolving sound issues. Sound settings can also be changed from the retropie menu in emulationstation.
 
-### Overclocking
+## Overclocking
 
 For overclocking there aren't "the best settings" per se. You have to test your overclocking settings to see how far you can go To push the Raspberry Pi to the limits, I recommend you buy a heat sink. (there will be varying overclock settings for each version of raspberry pi). 
 
