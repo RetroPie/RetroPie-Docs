@@ -6,7 +6,7 @@ There are a few things that can cause sound issues- one is the hardware (typical
 
 ## Overclocking
 
-For overclocking there aren't "the best settings" per se. You have to test your overclocking settings to see how far you can go To push the Raspberry Pi to the limits, a heat sink is recommended. (there will be varying overclock settings for each version of raspberry pi). 
+For overclocking there aren't "the best settings" per se. You have to test your overclocking settings to see how far you can go To push the Raspberry Pi to the limits, a heat sink is recommended. (there will be varying overclock settings for each version of raspberry pi). You may also want to make sure your power supply is sufficient (5V 2A) with a decent cable.
 
 You can change the overclock from the raspi-config menu that can be accessed from the retropie menu in emulationstation or by typing `sudo raspi-config` in the terminal
 
