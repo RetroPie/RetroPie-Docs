@@ -217,3 +217,128 @@ Now just reboot and voila !
 ## Xbox 360 controller glitchy?
 
 According to [this post](https://github.com/petrockblog/RetroPie-Setup/issues/214#issuecomment-21796016) it might help to add the line ```dwc_otg.speed=1```to the file ```/boot/cmdline.txt```.
+
+### Xbox 360 Controller
+Setup and configuration see this [Wiki Page](Setting-up-the-XBox360-controller). The "third possibility" is from me. I wrote an _init.d_ script and I recommend to use xboxdrv with the daemon option, because of less use of CPU and RAM. Furthermore I had to set _dwc otg.speed_.
+***
+
+*Outdated* optional manual configs
+```
+### Emulationstation adjustments
+There are a few adjustments for emulationstation. In my case the input for my Xbox 360 Controller and some entries for the systems, aka emulators.  
+**`/home/pi/.emulationstation/es_input.cfg`**
+```xml
+<?xml version="1.0"?>
+<inputList>
+    <inputConfig type="keyboard" />
+    <inputConfig type="joystick" deviceName="Xbox Gamepad (userspace driver)">
+        <input name="a" type="button" id="4" value="1" />
+        <input name="b" type="button" id="5" value="1" />
+        <input name="down" type="button" id="1" value="1" />
+        <input name="left" type="button" id="2" value="1" />
+        <input name="menu" type="button" id="13" value="1" />
+        <input name="pagedown" type="button" id="11" value="1" />
+        <input name="pageup" type="button" id="10" value="1" />
+        <input name="right" type="button" id="3" value="1" />
+        <input name="select" type="button" id="8" value="1" />
+        <input name="up" type="button" id="0" value="1" />
+    </inputConfig>
+    <inputConfig type="keyboard">
+        <input name="a" type="key" id="13" value="1" />
+        <input name="b" type="key" id="8" value="1" />
+        <input name="down" type="key" id="274" value="1" />
+        <input name="left" type="key" id="276" value="1" />
+        <input name="menu" type="key" id="109" value="1" />
+        <input name="pagedown" type="key" id="281" value="1" />
+        <input name="pageup" type="key" id="280" value="1" />
+        <input name="right" type="key" id="275" value="1" />
+        <input name="select" type="key" id="108" value="1" />
+        <input name="up" type="key" id="273" value="1" />
+    </inputConfig>
+</inputList>
+```
+
+Button  | Configname
+--------|-----------
+A       | a
+B       | b
+DPdown  | down
+DPup    | up
+DPleft  | left
+DPright | right
+Start   | menu
+LB      | select
+LT      | pageup
+RT      | pagedown
+
+_DP = DigiPad_
+
+***
+### Xbox 360 Controller button configuration for retroarch and final burn alpha
+**`/home/pi/RetroPie/configs/all/retroarch.cfg`**
+```bash
+#Player 1
+input_player1_joypad_index = 0
+input_player1_b_btn = 6
+input_player1_a_btn = 4
+input_player1_y_btn = 7
+input_player1_x_btn = 5
+input_player1_l_btn = 10
+input_player1_r_btn = 11
+input_player1_start_btn = 13
+input_player1_select_btn = 12
+input_player1_up_btn = 0
+input_player1_down_btn = 1
+input_player1_left_btn = 2
+input_player1_right_btn = 3
+input_exit_emulator_btn = 15
+input_menu_toggle_btn = 16
+
+#Player 2
+input_player2_joypad_index = 1
+input_player2_b_btn = 6
+input_player2_a_btn = 4
+input_player2_y_btn = 7
+input_player2_x_btn = 5
+input_player2_l_btn = 10
+input_player2_r_btn = 11
+input_player2_start_btn = 13
+input_player2_select_btn = 12
+input_player2_up_btn = 0
+input_player2_down_btn = 1
+input_player2_left_btn = 2
+input_player2_right_btn = 3
+```
+_input exit emulator_ to exit the emulator and return to emulationstation._input menu toggle_ to show the retroarch menu (e.g. to set the aspect ratio, save/load the game, etc.)
+
+**`/home/pi/RetroPie/emulators/pifba/fba2x.cfg`** (or **`/opt/retropie/emulators/pifba/fba2x.cfg`** in some versions)
+```bash
+[Joystick]
+A_1=4
+B_1=5
+X_1=6
+Y_1=7
+L_1=10
+R_1=11
+START_1=13
+SELECT_1=12
+#Joystick axis
+JA_LR=0
+JA_UD=1
+
+#player 2 button configuration
+A_2=4
+B_2=5
+X_2=6
+Y_2=7
+L_2=10
+R_2=11
+START_2=13
+SELECT_2=12
+#Joystick axis
+JA_LR_2=0
+JA_UD_2=1
+```
+Up to now, I didn't figure out, how to change the configuration from the analog sticks to the digipad. To exit the emulator, press START and SELECT together.
+***
+```
