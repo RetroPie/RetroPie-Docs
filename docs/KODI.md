@@ -45,7 +45,9 @@ fbset -depth 8 && fbset -depth 16
 
 ### Kodi 15
 
-To compile Kodi 15 you can just replace the following in `/home/pi/RetroPie-Setup/scriptmodules/ports/kodi.sh`
+To compile Kodi 15 you can just replace the following in 
+
+`/home/pi/RetroPie-Setup/scriptmodules/ports/kodi.sh`
 
 ```
 #!/usr/bin/env bash
