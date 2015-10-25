@@ -6,7 +6,7 @@ There are a few things that can cause sound issues- one is the hardware (typical
 
 ## Overclocking
 
-For overclocking there aren't "the best settings" per se. You have to test your overclocking settings to see how far you can go To push the Raspberry Pi to the limits, I recommend you buy a heat sink. (there will be varying overclock settings for each version of raspberry pi). 
+For overclocking there aren't "the best settings" per se. You have to test your overclocking settings to see how far you can go To push the Raspberry Pi to the limits, a heat sink is recommended. (there will be varying overclock settings for each version of raspberry pi). 
 
 You can change the overclock from the raspi-config menu that can be accessed from the retropie menu in emulationstation or by typing `sudo raspi-config` in the terminal
 
@@ -20,7 +20,7 @@ Then select your preferred overclock setting (this menu may vary depending on yo
 
 ![presets](https://cloud.githubusercontent.com/assets/10035308/10713816/290103ee-7a91-11e5-8c65-9a69fa48e0ff.png)
 
-The crackling sound disappared, after I set _armfreq_ to _950_, _corefreq_ to _450_, _sdramfreq_ to _450_ and _gpumem_ to _384_. My settings with additional heat sinks (these can be set manually in the following file if you don't want to set them from raspi-config):
+The following are settings for a raspberry pi 2 with heat sinks but you should test a few different settings just to make sure everything works. (these can be set manually in the following file if you don't want to set them from raspi-config):
 
 **`/boot/config.txt`**
 ```bash
@@ -35,7 +35,7 @@ over_voltage=6
 avoid_safe_mode=1
 force_turbo=0
 ```
-If your Rapberry Pi crashes (freezes etc.), use lower settings. If it freezes before you can change anything you can boot while holding shift and that should disable the overclock so that you can change it to something lower. Sometimes it seems to run stable, but crashes in emulationstation or running a game. To test the stability and a possible SD Card corruption, I recommend to use a stresstest script. e.g. from [elinux.org](http://elinux.org/RPi_config.txt#Overclock_stability_test):
+If your Rapberry Pi crashes (freezes etc.), use lower settings. If it freezes before you can change anything you can boot while holding shift and that should disable the overclock so that you can change it to something lower. Sometimes it seems to run stable, but crashes in emulationstation or running a game. To test the stability and a possible SD Card corruption, You can use a stresstest script. e.g. from [elinux.org](http://elinux.org/RPi_config.txt#Overclock_stability_test):
 
 **`/home/pi/stresstest.sh`**
 
@@ -69,7 +69,7 @@ dmesg | tail
 
 echo "Not crashed yet, probably stable."
 ```
-To get the current temperature in an human readable output try `vcgencmd measure_temp`. I don't know exactly, but on my experiences the Raspberry Pi freezes, if the temperature goes over 65 degrees celsius.
+To get the current temperature in an human readable output try `vcgencmd measure_temp`. its possible th pi can freeze if the temperature goes over 65 degrees celsius.
 
 ### CPU/GPU Split
 
@@ -90,7 +90,7 @@ The BIOS files are necessary for some emulators in order to get games to work. F
 
 ```
 ### Misc
-For retroarch I set the _core provided_ aspect ratio (4:3), the _video scale integer_ and disable the help rgui screen:
+the following sets the _core provided_ aspect ratio (4:3), the _video scale integer_ and disable the help rgui screen:
 
 **`/home/pi/RetroPie/configs/all/retroarch.cfg`**
 
@@ -98,7 +98,7 @@ For retroarch I set the _core provided_ aspect ratio (4:3), the _video scale int
 `video_scale_integer = true`  
 `rgui_show_start_screen = false`
 
-I set some aliases in _.bashrc_  
+some aliases can be set in _.bashrc_  
 **`/home/pi/.bashrc`**
 bash
 alias l='ls -alhF'
