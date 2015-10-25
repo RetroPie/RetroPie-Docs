@@ -84,7 +84,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [Netplay](https://github.com/RetroPie/RetroPie-Setup/wiki/Netplay)
 * [Custom Splash Screens](https://github.com/RetroPie/RetroPie-Setup/wiki/splashscreen)
 * [Advanced Configuration](https://github.com/RetroPie/RetroPie-Setup/wiki/Advanced-Configuration)
-* [Manual Installation](https://github.com/RetroPie/RetroPie-Setup/wiki/First-Installation)
+* [Manual Installation](https://github.com/RetroPie/RetroPie-Setup/wiki/Manual-Installation)
 * [Video Compatibility Sheet](https://github.com/RetroPie/RetroPie-Setup/wiki/Compatibility-Sheet)
 * [Sound Issues](https://github.com/RetroPie/RetroPie-Setup/wiki/Sound-Issues)
 * [Speed Issues](https://github.com/RetroPie/RetroPie-Setup/wiki/Speed-Issues)
