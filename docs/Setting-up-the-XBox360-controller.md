@@ -218,16 +218,14 @@ Now just reboot and voila !
 
 According to [this post](https://github.com/petrockblog/RetroPie-Setup/issues/214#issuecomment-21796016) it might help to add the line ```dwc_otg.speed=1```to the file ```/boot/cmdline.txt```.
 
-### Xbox 360 Controller
-Setup and configuration see this [Wiki Page](Setting-up-the-XBox360-controller). The "third possibility" is from me. I wrote an _init.d_ script and I recommend to use xboxdrv with the daemon option, because of less use of CPU and RAM. Furthermore I had to set _dwc otg.speed_.
-***
+#### *Outdated* optional manual configs
 
-*Outdated* optional manual configs
+
 ```
 ### Emulationstation adjustments
 There are a few adjustments for emulationstation. In my case the input for my Xbox 360 Controller and some entries for the systems, aka emulators.  
 **`/home/pi/.emulationstation/es_input.cfg`**
-```xml
+xml
 <?xml version="1.0"?>
 <inputList>
     <inputConfig type="keyboard" />
@@ -256,7 +254,7 @@ There are a few adjustments for emulationstation. In my case the input for my Xb
         <input name="up" type="key" id="273" value="1" />
     </inputConfig>
 </inputList>
-```
+
 
 Button  | Configname
 --------|-----------
@@ -276,7 +274,7 @@ _DP = DigiPad_
 ***
 ### Xbox 360 Controller button configuration for retroarch and final burn alpha
 **`/home/pi/RetroPie/configs/all/retroarch.cfg`**
-```bash
+bash
 #Player 1
 input_player1_joypad_index = 0
 input_player1_b_btn = 6
@@ -308,11 +306,11 @@ input_player2_up_btn = 0
 input_player2_down_btn = 1
 input_player2_left_btn = 2
 input_player2_right_btn = 3
-```
+
 _input exit emulator_ to exit the emulator and return to emulationstation._input menu toggle_ to show the retroarch menu (e.g. to set the aspect ratio, save/load the game, etc.)
 
 **`/home/pi/RetroPie/emulators/pifba/fba2x.cfg`** (or **`/opt/retropie/emulators/pifba/fba2x.cfg`** in some versions)
-```bash
+bash
 [Joystick]
 A_1=4
 B_1=5
@@ -338,7 +336,7 @@ SELECT_2=12
 #Joystick axis
 JA_LR_2=0
 JA_UD_2=1
-```
+
 Up to now, I didn't figure out, how to change the configuration from the analog sticks to the digipad. To exit the emulator, press START and SELECT together.
 ***
 ```
