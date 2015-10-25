@@ -71,6 +71,8 @@ echo "Not crashed yet, probably stable."
 ```
 To get the current temperature in an human readable output try `vcgencmd measure_temp`. its possible th pi can freeze if the temperature goes over 65 degrees celsius.
 
+see also: http://linuxonflash.blogspot.com/2015/02/a-look-at-raspberry-pi-2-performance.html
+
 ### CPU/GPU Split
 
 Since the raspberry pi is a SoC the cpu and gpu share the same amount of RAM. The following option allows you to choose how much RAM you allocate to the GPU compared to the CPU. This will typically resolve emulationstation being laggy/ freezing with too many systems as well as kodi freezing, among other things.
