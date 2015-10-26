@@ -19,6 +19,8 @@ Place your PSP ROMs in
 
 ## Controls
 
+### lr-ppsspp
+
 lr-ppsspp utilises Retroarch configurations
 
 Add custom retroarch controls to the retroarch.cfg file in
@@ -26,3 +28,7 @@ Add custom retroarch controls to the retroarch.cfg file in
 /opt/retropie/configs/psp/retroarch.cfg
 ```
 For more information on custom RetroArch controls see: [RetroArch Configuration](https://github.com/petrockblog/RetroPie-Setup/wiki/RetroArch-Configuration)
+
+### ppsspp
+
+Controls can be mapped from the main menu under Settings >> Controls >> Control Mapping
