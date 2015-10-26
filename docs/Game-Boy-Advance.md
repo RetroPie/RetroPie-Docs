@@ -43,7 +43,7 @@ For more information on custom RetroArch controls see: [RetroArch Configuration]
 
 To configure your controls for gpSP, once you are in a game you can press F10 to access the menu
 
-**if you want your settings to be saved you need to select quit from the f10 menu instead of pressing esc on the keyboard**
+**if you want your settings to be saved you need to select quit from the F10 menu instead of pressing esc on the keyboard**
 
 For Gamepad: Navigate to configure gamepad input and modify the controls to fit your preferences.
 
