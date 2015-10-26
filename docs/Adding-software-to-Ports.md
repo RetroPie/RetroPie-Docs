@@ -4,6 +4,41 @@ This page describes the process of adding software to the ports menu of Emulatio
 
 Please don't get scared off, this is a great introduction to some basic things in Linux, and for the most part it is a simple when you have the parts explained.
 
+## Installing Ports from apt-get
+
+Any game in the raspbian [repos](http://archive.raspbian.org/raspbian/dists/wheezy/main/binary-armhf/) can be installed from a script based on the following (This is provided that they do not need x server to run. a good portion will not run and those that do will likely require a keyboard.) Just do a find and replace on `supertux` and save the file as a shell script with the same name as the game (i.e. supertux.sh) in `/home/pi/RetroPie-Setup/scriptmodules/ports` and then you should be able to install it from the experimental menu of the setup script:
+
+```
+#!/usr/bin/env bash
+ 
+# This file is part of The RetroPie Project
+#
+# The RetroPie Project is the legal property of its developers, whose names are
+# too numerous to list here. Please refer to the COPYRIGHT.md file distributed with this source.
+#
+# See the LICENSE.md file at the top-level directory of this distribution and
+# at https://raw.githubusercontent.com/RetroPie/RetroPie-Setup/master/LICENSE.md
+#
+ 
+rp_module_id="supertux"
+rp_module_desc="supertux 2d scrolling platform"
+rp_module_menus="4+"
+rp_module_flags="nobin"
+ 
+function install_supertux() {
+    aptInstall supertux
+}
+ 
+function configure_supertux() {
+    mkRomDir "ports"
+
+    addPort "supertux" << _EOF_
+#!/bin/bash
+supertux
+_EOF_
+}
+```
+
 ##Installing the software
 
 To install the software, typically find the website that hosts the project that works on the software. They may mention how to install it. It may be in the repositories already which makes installing super simple. We are going to use quake as an example on this page. The package is acctually called darkplaces. Exit to the commandline to begin.
