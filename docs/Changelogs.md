@@ -7,7 +7,7 @@ This page is a list of all of the changelogs for each version of RetroPie. For a
 - Fixed binaries of mupen64plus and lr-tyrquake and removed mupen64plus-testing as it is now included in the default mupen64plus.
 - Updated to Hatari 1.9, and built in IPF image support.
 - Binary installs are now supported for those running under Raspbian Jessie - although there still may be bugs.
-- New experimental modules - ppsspp / lr-ppsspp (PlayStation Portable emulator), px68k (X68000 emulator - too slow to be usable on a rpi2 though), and opentyrian (a port of the DOS shoot-em-up Tyrian).
+- New experimental modules - ppsspp / lr-ppsspp (PlayStation Portable emulator), px68k (X68000 emulator - too slow to be usable on a rpi2 though), opentyrian (a port of the DOS shoot-em-up Tyrian), and SuperTux.
 uae4arm is now moved from experimental.
 - Improvements to the generic bluetooth pairing module.
 - Improvements to ps3controller pairing
