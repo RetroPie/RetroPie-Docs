@@ -40,6 +40,7 @@
   * [Descent](https://github.com/petrockblog/RetroPie-Setup/wiki/Descent)
   * [Super Mario War](https://github.com/RetroPie/RetroPie-Setup/wiki/Super-Mario-War)
 * [PlayStation 1](https://github.com/petrockblog/RetroPie-Setup/wiki/Playstation-1)
+* [PSP](https://github.com/RetroPie/RetroPie-Setup/wiki/psp)
 * [ScummVM](https://github.com/petrockblog/RetroPie-Setup/wiki/ScummVM)
 * [Sega 32X](https://github.com/petrockblog/RetroPie-Setup/wiki/Sega-32X)
 * [Sega CD](https://github.com/petrockblog/RetroPie-Setup/wiki/Sega-CD)
