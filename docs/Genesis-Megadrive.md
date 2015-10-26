@@ -83,3 +83,34 @@ modify this line to match your controller button
 key_quit = escape
 joy_quit = joystick0-button12
 ```
+
+### Advanced Configuration:
+
+If you are from the United States it is likely that you had the Sega Genesis rather than the Sega Megadrive. If you want EmulationStation to show the genesis menu and boxart instead of megadrive then you can change the file in `/etc/emulationstation/es_systems.cfg`
+
+from 
+
+```
+  <system>
+    <name>megadrive</name>
+    <fullname>Sega Mega Drive / Genesis</fullname>
+    <path>~/RetroPie/roms/megadrive</path>
+    <extension>.smd .bin .gen .md .sg .zip .SMD .BIN .GEN .MD .SG .ZIP</extension>
+    <command>/opt/retropie/supplementary/runcommand/runcommand.sh 0 _SYS_ megadrive %ROM%</command>
+    <platform>megadrive</platform>
+    <theme>megadrive</theme>
+  </system>
+```
+
+to
+
+```
+    <name>genesis</name>
+    <fullname>Sega Genesis</fullname>
+    <path>~/RetroPie/roms/megadrive</path>
+    <extension>.smd .bin .gen .md .sg .zip .SMD .BIN .GEN .MD .SG .ZIP</extension>
+    <command>/opt/retropie/supplementary/runcommand/runcommand.sh 0 _SYS_ megadrive %ROM%</command>
+    <platform>genesis</platform>
+    <theme>genesis</theme>
+  </system>
+```
