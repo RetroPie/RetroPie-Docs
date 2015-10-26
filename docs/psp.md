@@ -4,7 +4,9 @@
 _The PlayStation Portable or PSP is a handheld video game system released by Sony in 2004._
 
 ***
-## Emulators: [lr-ppsspp](https://github.com/libretro/libretro-ppsspp), [ppsspp](https://github.com/hrydgard/ppsspp)
+## Emulators: [lr-ppsspp](https://github.com/libretro/libretro-ppsspp), [ppsspp](https://github.com/hrydgard/ppsspp) (EXPERIMENTAL!)
+
+The PSP emulator can be installed from the **experimental** menu. Works best on a Raspberry Pi 2. 
 
 ## ROMS
 Accepted File Extensions: **.iso .pbp**
