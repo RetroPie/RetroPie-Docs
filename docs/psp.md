@@ -29,6 +29,9 @@ Add custom retroarch controls to the retroarch.cfg file in
 ```
 For more information on custom RetroArch controls see: [RetroArch Configuration](https://github.com/petrockblog/RetroPie-Setup/wiki/RetroArch-Configuration)
 
+![psp_diagram](https://cloud.githubusercontent.com/assets/10035308/10719289/b31a8bd0-7b4b-11e5-9374-935630d1ed03.png)
+
 ### ppsspp
 
 Controls can be mapped from the main menu under Settings >> Controls >> Control Mapping
+
