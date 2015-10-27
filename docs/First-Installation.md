@@ -72,7 +72,7 @@ Hold down any button on your keyboard or gamepad and the name will appear at the
 
 ![welcomescreengamepadname](https://cloud.githubusercontent.com/assets/10035308/9140505/f5c19e38-3cee-11e5-965e-0e4e85ddaf56.png)
 
-Follow the onscreen instructions to configure your gamepad- if you run out of buttons just hold down a button to skip each unused button. When you get to OK press the button you have configured as "A".
+Follow the onscreen instructions to configure your gamepad- if you run out of buttons just hold down a button to skip each unused button. **When you get to OK press the button you have configured as "A"**.
 
 ![welcomescreengamepadconfigure](https://cloud.githubusercontent.com/assets/10035308/9140518/0263b9c8-3cef-11e5-922f-42f790f3be91.png)
 
