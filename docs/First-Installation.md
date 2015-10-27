@@ -129,7 +129,7 @@ input_left_axis = "-0"
 input_state_slot_decrease_axis = "-0"
 ```
 
-## 
+## EmulationStation
 
 | **Where are the systems?**|
 | :---: | 
