@@ -86,13 +86,13 @@ Kbd Mapping Frame Advance = 47
 # SDL keysym for pressing the game shark button
 Kbd Mapping Gameshark = 103
 # Joystick event string for stopping the emulator
-Joy Mapping Stop = ""
+Joy Mapping Stop = "J0B7/B6,J1B7/B6"
 # Joystick event string for switching between fullscreen/windowed modes
 Joy Mapping Fullscreen = ""
 # Joystick event string for saving the emulator state
-Joy Mapping Save State = ""
+Joy Mapping Save State = "J0B5/B6,J1B5/B6"
 # Joystick event string for loading the emulator state
-Joy Mapping Load State = ""
+Joy Mapping Load State = "J0B4/B6,J1B4/B6"
 # Joystick event string for advancing the save state slot
 Joy Mapping Increment Slot = ""
 # Joystick event string for taking a screenshot
@@ -119,6 +119,50 @@ version = 2
 mode = 2
 # Specifies which joystick is bound to this controller: -1=No joystick, 0 or more= SDL Joystick number
 device = 0
+# SDL joystick name (or Keyboard)
+name = "Logitech Gamepad F310"
+# Specifies whether this controller is 'plugged in' to the simulated N64
+plugged = True
+# Specifies which type of expansion pak is in the controller: 1=None, 2=Mem pak, 5=Rumble pak
+plugin = 2
+# If True, then mouse buttons may be used with this controller
+mouse = False
+# Scaling factor for mouse movements.  For X, Y axes.
+MouseSensitivity = "2.00,2.00"
+# The minimum absolute value of the SDL analog joystick axis to move the N64 controller axis value from 0.  For X, Y axes.
+AnalogDeadzone = "4096,4096"
+# An absolute value of the SDL joystick axis >= AnalogPeak will saturate the N64 controller axis value (at 80).  For X, Y axes. For each axis, this must be greater than the corresponding AnalogDeadzone value
+AnalogPeak = "32768,32768"
+# Digital button configuration mappings
+DPad R = "hat(0 Right)"
+DPad L = "hat(0 Left)"
+DPad D = "hat(0 Down)"
+DPad U = "hat(0 Up)"
+Start = "button(7)"
+Z Trig = "button(5)"
+B Button = "button(2)"
+A Button = "button(0)"
+C Button R = "axis(3+)"
+C Button L = "axis(3-)"
+C Button D = "axis(4+)"
+C Button U = "axis(4-)"
+R Trig = "axis(5-)"
+L Trig = "axis(2-)"
+Mempak switch = "button(1)"
+Rumblepak switch = "button(3)"
+# Analog axis configuration mappings
+X Axis = "axis(0-,0+)"
+Y Axis = "axis(1-,1+)"
+
+
+[Input-SDL-Control2]
+
+# Mupen64Plus SDL Input Plugin config parameter version number.  Please don't change this version number.
+version = 2
+# Controller configuration mode: 0=Fully Manual, 1=Auto with named SDL Device, 2=Fully automatic
+mode = 2
+# Specifies which joystick is bound to this controller: -1=No joystick, 0 or more= SDL Joystick number
+device = 1
 # SDL joystick name (or Keyboard)
 name = "Logitech Gamepad F310"
 # Specifies whether this controller is 'plugged in' to the simulated N64
