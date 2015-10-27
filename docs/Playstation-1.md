@@ -16,9 +16,9 @@ Place your PlayStation ROMs in
 
 ## BIOS
 
-The BIOS file is named **SCPH1001.BIN**
+The BIOS file is named **scph1001.BIN**
 
-Place SCPH1001.BIN in
+Place scph1001.BIN in
 ```
 /home/pi/RetroPie/BIOS
 ```
