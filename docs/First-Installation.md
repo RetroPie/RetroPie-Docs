@@ -129,9 +129,11 @@ input_left_axis = "-0"
 input_state_slot_decrease_axis = "-0"
 ```
 
-## EmulationStation
+## 
 
-**When you first see EmulationStation you may wonder why you don't see systems like the SNES or Game Boy- worry not- they are installed on the system, roms just need to be added to their respective rom folders before they will become visible. Transferring roms are described in the following steps.**
+| **Where are the systems?**|
+| :---: | 
+**When you first see EmulationStation you may wonder why you don't see systems like the SNES or Game Boy- worry not- they are installed on the system, roms just need to be added to their respective rom folders before they will become visible. Transferring roms are described in the following steps.**|
 
 ## Expand File System
 
