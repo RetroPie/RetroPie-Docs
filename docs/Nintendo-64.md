@@ -46,6 +46,142 @@ There are two main configuration files that can be modified located at:
 and
 /opt/retropie/configs/n64/InputAutoCfg.ini
 ```
+
+#### Example mupen64plus.cfg
+```
+[CoreEvents]
+
+# Mupen64Plus CoreEvents config parameter set version number.  Please don't change this version number.
+Version = 1
+# SDL keysym for stopping the emulator
+Kbd Mapping Stop = 27
+# SDL keysym for switching between fullscreen/windowed modes
+Kbd Mapping Fullscreen = 0
+# SDL keysym for saving the emulator state
+Kbd Mapping Save State = 286
+# SDL keysym for loading the emulator state
+Kbd Mapping Load State = 288
+# SDL keysym for advancing the save state slot
+Kbd Mapping Increment Slot = 0
+# SDL keysym for resetting the emulator
+Kbd Mapping Reset = 290
+# SDL keysym for slowing down the emulator
+Kbd Mapping Speed Down = 291
+# SDL keysym for speeding up the emulator
+Kbd Mapping Speed Up = 292
+# SDL keysym for taking a screenshot
+Kbd Mapping Screenshot = 293
+# SDL keysym for pausing the emulator
+Kbd Mapping Pause = 112
+# SDL keysym for muting/unmuting the sound
+Kbd Mapping Mute = 109
+# SDL keysym for increasing the volume
+Kbd Mapping Increase Volume = 93
+# SDL keysym for decreasing the volume
+Kbd Mapping Decrease Volume = 91
+# SDL keysym for temporarily going really fast
+Kbd Mapping Fast Forward = 102
+# SDL keysym for advancing by one frame when paused
+Kbd Mapping Frame Advance = 47
+# SDL keysym for pressing the game shark button
+Kbd Mapping Gameshark = 103
+# Joystick event string for stopping the emulator
+Joy Mapping Stop = ""
+# Joystick event string for switching between fullscreen/windowed modes
+Joy Mapping Fullscreen = ""
+# Joystick event string for saving the emulator state
+Joy Mapping Save State = ""
+# Joystick event string for loading the emulator state
+Joy Mapping Load State = ""
+# Joystick event string for advancing the save state slot
+Joy Mapping Increment Slot = ""
+# Joystick event string for taking a screenshot
+Joy Mapping Screenshot = ""
+# Joystick event string for pausing the emulator
+Joy Mapping Pause = ""
+# Joystick event string for muting/unmuting the sound
+Joy Mapping Mute = ""
+# Joystick event string for increasing the volume
+Joy Mapping Increase Volume = ""
+# Joystick event string for decreasing the volume
+Joy Mapping Decrease Volume = ""
+# Joystick event string for fast-forward
+Joy Mapping Fast Forward = ""
+# Joystick event string for pressing the game shark button
+Joy Mapping Gameshark = ""
+
+
+[Input-SDL-Control1]
+
+# Mupen64Plus SDL Input Plugin config parameter version number.  Please don't change this version number.
+version = 2
+# Controller configuration mode: 0=Fully Manual, 1=Auto with named SDL Device, 2=Fully automatic
+mode = 2
+# Specifies which joystick is bound to this controller: -1=No joystick, 0 or more= SDL Joystick number
+device = 0
+# SDL joystick name (or Keyboard)
+name = "Logitech Gamepad F310"
+# Specifies whether this controller is 'plugged in' to the simulated N64
+plugged = True
+# Specifies which type of expansion pak is in the controller: 1=None, 2=Mem pak, 5=Rumble pak
+plugin = 2
+# If True, then mouse buttons may be used with this controller
+mouse = False
+# Scaling factor for mouse movements.  For X, Y axes.
+MouseSensitivity = "2.00,2.00"
+# The minimum absolute value of the SDL analog joystick axis to move the N64 controller axis value from 0.  For X, Y axes.
+AnalogDeadzone = "4096,4096"
+# An absolute value of the SDL joystick axis >= AnalogPeak will saturate the N64 controller axis value (at 80).  For X, Y axes. For each axis, this must be greater than the corresponding AnalogDeadzone value
+AnalogPeak = "32768,32768"
+# Digital button configuration mappings
+DPad R = "hat(0 Right)"
+DPad L = "hat(0 Left)"
+DPad D = "hat(0 Down)"
+DPad U = "hat(0 Up)"
+Start = "button(7)"
+Z Trig = "button(5)"
+B Button = "button(2)"
+A Button = "button(0)"
+C Button R = "axis(3+)"
+C Button L = "axis(3-)"
+C Button D = "axis(4+)"
+C Button U = "axis(4-)"
+R Trig = "axis(5-)"
+L Trig = "axis(2-)"
+Mempak switch = "button(1)"
+Rumblepak switch = "button(3)"
+# Analog axis configuration mappings
+X Axis = "axis(0-,0+)"
+Y Axis = "axis(1-,1+)"
+```
+
+#### Example InputAutoCfg.ini
+```
+[Logitech Gamepad F310]
+plugged = True
+plugin = 2
+mouse = False
+AnalogDeadzone = 4096,4096
+AnalogPeak = 32768,32768
+DPad R = hat(0 Right)
+DPad L = hat(0 Left)
+DPad D = hat(0 Down)
+DPad U = hat(0 Up)
+Start = button(7)
+Z Trig = button(5)
+B Button = button(2)
+A Button = button(0)
+C Button R = axis(3+)
+C Button L = axis(3-)
+C Button D = axis(4+)
+C Button U = axis(4-)
+R Trig = axis(5-)
+L Trig = axis(2-)
+Mempak switch = button(1)
+Rumblepak switch = button(3)
+X Axis = axis(0-,0+)
+Y Axis = axis(1-,1+)
+``` 
 ## Video Tutorials
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=4WX7RrzUtII
