@@ -98,6 +98,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [Setting up a PS3 controller](https://github.com/RetroPie/RetroPie-Setup/wiki/Setting-up-a-PS3-controller)
 * [Setting up an N64 controller](https://github.com/RetroPie/RetroPie-Setup/wiki/Setting-up-an-N64-controller)
 * [Setting up wiimotes with classic controllers](https://github.com/RetroPie/RetroPie-Setup/wiki/Wiimotes-with-classic-controllers)
+* [Setting up a Wii U Pro Controller (debian jessie only)](https://github.com/RetroPie/RetroPie-Setup/wiki/Setting-up-Wii-U-Pro-controller)
 * [Setting up a Bluetooth controller](https://github.com/RetroPie/RetroPie-Setup/wiki/Setting-up-a-Bluetooth-controller)
 * [Use Your Smartphone as a Gamepad!](https://github.com/RetroPie/RetroPie-Setup/wiki/Virtual-Gamepad) (EXPERIMENTAL)
 * [Mo-Xin Driver](https://github.com/RetroPie/RetroPie-Setup/wiki/Troubles-with-the-Xin-Mo-Controller)
