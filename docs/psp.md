@@ -9,7 +9,7 @@ _The PlayStation Portable or PSP is a handheld video game system released by Son
 The PSP emulator can be installed from the **experimental** menu. Works best on a Raspberry Pi 2. 
 
 ## ROMS
-Accepted File Extensions: **.iso .pbp**
+Accepted File Extensions: **.cso **.iso .pbp**
 
 Place your PSP ROMs in 
 ```
