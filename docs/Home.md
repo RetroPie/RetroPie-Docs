@@ -63,6 +63,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
   * [Descent 1 & 2](https://github.com/RetroPie/RetroPie-Setup/wiki/Descent) [(DXX-Rebirth)](http://www.dxx-rebirth.com/) (EXPERIMENTAL)
   * [Super Mario War](https://github.com/RetroPie/RetroPie-Setup/wiki/Super-Mario-War)
 * [PlayStation 1](https://github.com/RetroPie/RetroPie-Setup/wiki/Playstation-1) [(lr-pcsx-rearmed)](https://github.com/libretro/pcsx_rearmed), [(pcsx-rearmed)](https://github.com/notaz/pcsx_rearmed)
+* [PSP](https://github.com/RetroPie/RetroPie-Setup/wiki/psp) [(lr-ppsspp)](https://github.com/libretro/libretro-ppsspp), [(ppsspp)](https://github.com/hrydgard/ppsspp) (EXPERIMENTAL)
 * [ScummVM](https://github.com/RetroPie/RetroPie-Setup/wiki/ScummVM)
 * [Sega 32X](https://github.com/RetroPie/RetroPie-Setup/wiki/Sega-32X) [(lr-picodrive)](https://github.com/libretro/picodrive)
 * [Sega CD](https://github.com/RetroPie/RetroPie-Setup/wiki/Sega-CD) [(lr-picodrive)](https://github.com/libretro/picodrive)
