@@ -14,6 +14,7 @@ Emulator | Location
 | **Intellivision** | `/home/pi/RetroPie/BIOS/exec.bin` **AND** `/home/pi/RetroPie/BIOS/grom.bin`
 | **Macintosh** | `/home/pi/RetroPie/roms/macintosh/mac.rom` **AND** `/home/pi/RetroPie/roms/macintosh/disk.img`
 | **pc engine** / **turbografx-16** | `/home/pi/RetroPie/BIOS/SYSCARD3.PCE`
+| **pc engine cd** / **turbografx-16 cd** | `/home/pi/RetroPie/roms/pcenginecd/syscard3.pce` (PC Engine-CD uses [BIOS] Super CD-ROM System (Japan) (v3.0) renamed to syscard3.pce)
 | **psx** | `/home/pi/RetroPie/BIOS/SCPH1001.BIN`
 | **neo geo** | `/home/pi/RetroPie/roms/neogeo/neogeo.zip` **OR** `/home/pi/RetroPie/roms/fba/neogeo.zip` **OR**  for 2.6 and earlier: `/home/pi/RetroPie/roms/fba-libretro/neogeo.zip`
 | **sega cd** |`/home/pi/RetroPie/BIOS/us_scd1_9210.bin` **OR** `eu_mcd1_9210.bin` **OR** `jp_mcd1_9112.bin` for Europe and Japan respectively
