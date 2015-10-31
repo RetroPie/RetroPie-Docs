@@ -1,3 +1,17 @@
+### Making RetroPie identify 2 players instead of one with the Xin-Mo  
+  
+Add the following to `/boot/cmdline.txt`  
+usbhid.quirks=0x1292:0x4745:0x040  
+  
+The first two numbers the vendor/product (1292 and 4745).  
+You can find your vendor/product using `lsusb`  
+  
+More details in this thread generally.  
+http://blog.petrockblock.com/forums/topic/autofire-on-the-axis/page/5/#post-104325
+
+
+### Older Info
+
 If you have troubles with the Xin-Mo driver you can find a guide for patching the driver at http://ithink.ch/blog/2013/09/08/patching_the_linux_kernel_to_install_the_xin-mo_dual_arcade_driver_on_a_raspberry_pi.html.
 
 The troubles I had configuring a joystick with the Xin-Mo controller, besides the previous one:
