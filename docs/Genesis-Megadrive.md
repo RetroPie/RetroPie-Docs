@@ -1,6 +1,6 @@
 ![Sega Genesis](http://upload.wikimedia.org/wikipedia/en/1/12/GenesisLogo.png)![Megadrive](http://upload.wikimedia.org/wikipedia/en/a/a8/Megadrive_logo.png)
 ***
-_This console, known as the Genesis in North America and the Mega Drive everywhere else in the world, was released by Sega in 1998_
+_This console, known as the Genesis in North America and the Mega Drive everywhere else in the world, was released by Sega in 1988_
 ***
 ## Emulators: [DGen](http://dgen.sourceforge.net/), [lr-picodrive](https://github.com/libretro/picodrive), [lr-genesis-plus-gx](https://github.com/libretro/Genesis-Plus-GX)
 DGEN has the worst performance and can be tedious to configure controls, lr-picodrive seems to be the favourite for older Pi's, lr-genesis-plus-gx seems to be the favourite for the Pi 2.
