@@ -78,7 +78,7 @@ SCRIPTNAME=/etc/init.d/$NAME
 
 do_start()
 {
-        if [ $CONTROLLER_NUM -gt 4 ]; then
+        if [ $CONTROLLER_NUM -gt 4 ] ; then
                 echo -e "\n$CONTROLLER"; exit 1;
         fi
         start-stop-daemon -S -q -x $DAEMON -- $DAEMON_ARGS $CONTROLLER
