@@ -52,9 +52,9 @@ It can't currently launch games directly from the Emulation Station menu, but th
 
 ## Video Tutorial
 
-<a href="http://www.dailymotion.com/video/x2k4rsi_retropie-amiga-emulation-on-raspberry-pi_videogames
-" target="_blank"><img src="https://lh5.ggpht.com/_keSPDjzzLDwZ1BweCKtPdjypbVYhKbvgdpxkEJguepdx43nXjVUoxMlgC32kKND4dM=w170" 
-alt="N64 Configuration Video" width="240" height="180" border="10" /></a>
+<a href="https://www.youtube.com/watch?v=dleumwWZp6Q
+" target="_blank"><img src="https://i.ytimg.com/vi_webp/dleumwWZp6Q/mqdefault.webp" 
+alt="Testing joypad in RetroPie" width="300" height="190" border="10" /></a> 
 
 ## Hints and troubleshooting
 
