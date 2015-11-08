@@ -18,24 +18,7 @@ Quit Emulation Station with F4 (stop it restarting by pressing another key withi
 `sudo apt-get install bluetooth bluez-utils blueman` (_Press Y if prompted_)  
 `sudo apt-get install bluez python-gobject`  
 
-### Step 2 - Make sure the Bluetooth pair works  
-PLEASE NOTE:  
-Instead of following this step, you can avoid making the edit in the file below, and when you get to step 3 replace  
-`sudo bluez-simple-agent hci0 XX:XX:XX:XX:XX:XX`  
-with  
-`sudo bluez-simple-agent -c DisplayYesNo hci0 XX:XX:XX:XX:XX:XX`  
-
-===  
-
-Whilst this step could be avoided with a command line parameter later (shown above), edit this file  
-`sudo nano /usr/bin/bluez-simple-agent`  
-  
-Find the text "KeyboardDisplay" in the file, and replace it with "DisplayYesNo", making sure to get the case sensitivity correct.  
-  
-Now reboot, and quit Emulation Station to get back to a command prompt.  
-  
-
-### Step 3 - Pairing and connecting the Bluetooth controller  
+### Step 2 - Pairing and connecting the Bluetooth controller  
 Set your Bluetooth controller to pair in "joypad" mode. For example, for the FC30 Pro, you do this by holding the power switch for 3 secs. The guide is here: [FC30 Pro Manual](http://download.8bitdo.com/Manual/FC30_Pro_Manual_ENG_v1.0.pdf)  
   
 Type this at the command prompt  
@@ -43,8 +26,6 @@ Type this at the command prompt
 This should find your controller and show its name and [MAC](https://en.wikipedia.org/wiki/MAC_address) address  
   
 Pair the controller with this command, replace the XX data with your MAC address  
-`sudo bluez-simple-agent hci0 XX:XX:XX:XX:XX:XX`  
-or if you didnt edit the file at step 2, use this line  
 `sudo bluez-simple-agent -c DisplayYesNo hci0 XX:XX:XX:XX:XX:XX`  
   
 Tell the system to trust your controller so you dont have to pair every time  
@@ -55,7 +36,7 @@ Then connect to your controller with
   
 Your controller should then connect, with the 8bitdo controllers this is shown by a solid blue light that will begin to glow.  
   
-### Step 4 - Making sure the connection attempt automatically starts when you reboot your Pi  
+### Step 3 - Making sure the connection attempt automatically starts when you reboot your Pi  
 You may find the controller connects on startup without issue, but if not try this. There are different ways to do this, but this should work to start the connection attempt when the Pi starts up.  
 Edit this startup file  
 `sudo nano /etc/init.d/rc.local`  
@@ -67,7 +48,7 @@ Save the file with Ctrl-X and press Return to confirm the filename.
 
 Now reboot the Pi.  
 
-### Step 5 - Configuring the controller using Emulation Station  
+### Step 4 - Configuring the controller using Emulation Station  
 Now the Pi is restarting, make sure your controller is turned on, and trying to pair (I tend to turn the controller on just before the RetroPie splashscreen appears), it should connect about when the Emulation Station splashscreen appears. Then Emulation Station will display with the "1 Gamepad Detected" message.  
 
 Hold a button down on the controller and follow the instructions to input your buttons.  
@@ -76,7 +57,7 @@ This process will have configured your controller for navigating ES. It will als
   
 However, the content of that file may not have the correct buttons mappings (I'm not sure why this doesn't always work, as its fine with most other controllers). So we will update that file correctly now.  
   
-### Step 6 - Updating the controller file for RetroArch  
+### Step 5 - Updating the controller file for RetroArch  
 Press F4 to quit Emulation Station, and at the command prompt type  
 `cd /opt/retropie/configs/all/retroarch-joypads/`  
 `ls -lah`  
