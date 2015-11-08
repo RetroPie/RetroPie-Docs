@@ -15,7 +15,7 @@ Make sure you have the latest firmware for your controller. You will need a USB 
 ### Step 1 - Download and install the Bluetooth packages  
 Quit Emulation Station with F4 (stop it restarting by pressing another key within 5 secs) and type this at the command line:  
 `sudo apt-get update`  
-`sudo apt-get install bluetooth bluez-utils blueman` (_Press Y if prompted_)  
+`sudo apt-get install bluetooth bluez-utils` (_Press Y if prompted_)  
 `sudo apt-get install bluez python-gobject`  
 
 ### Step 2 - Pairing and connecting the Bluetooth controller  
