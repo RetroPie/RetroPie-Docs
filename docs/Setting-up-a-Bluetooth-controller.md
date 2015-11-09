@@ -84,7 +84,10 @@ If you have installed other bluetooth programs, perhaps to support a PS3 control
 `sudo apt-get --purge remove sixad`
   
 If you are unsure your USB Bluetooth dongle is detected with the Pi, you can list the USB devices with:  
-`lsusb`
+`lsusb`  
+  
+Sometimes there can be issues with the pairing process, to start that again you can remove the joypad like this   
+`bluez-test-device remove XX:XX:XX:XX:XX:XX`
 
 **Some useful threads**  
 http://blog.petrockblock.com/forums/topic/8bitdo-bluetooth-controller-setup-retropie-v3/  
