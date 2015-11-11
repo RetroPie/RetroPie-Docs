@@ -214,6 +214,13 @@ If your config is not working well, delete the joypad configuration lines in `/o
 
 Now just reboot and voila !
 
+## Troubleshooting
+If your controllers are connecting and you can use them from within EmulationStation, but *cannot* use them from inside the emulators, do the following:
+
+* Make sure you do not have conflicting xboxdrv configurations. If you installed the daemon, make sure you don't have another instance of the service running (`ps ax | grep xboxdrv` will show you this). Things may not work correctly if you have the daemon service (option 3 from above) *AND* something in `/etc/rc.local`. (There may be a message at startup that indicates a `LIBUSB` error if this is the case). 
+* When training the controllers using `retroarch-joyconfig`, make sure that you exit EmulationStation. 
+* Use the `retropie_setup.sh` script to train your controller. 
+
 ## Xbox 360 controller glitchy?
 
 According to [this post](https://github.com/petrockblog/RetroPie-Setup/issues/214#issuecomment-21796016) it might help to add the line ```dwc_otg.speed=1```to the file ```/boot/cmdline.txt```.
