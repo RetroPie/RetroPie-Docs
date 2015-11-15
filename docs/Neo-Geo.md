@@ -71,7 +71,7 @@ vs-bios.rom
 ```
 ## How to save BIOS settings
 
-From epe9686518: The first thing you need to do is go into the Retroarch GUI/Menu and go to “Options” and then go to “Core Options”. Make sure the “Neo Game Mode” is set to “Unibios”. 
+The first thing you need to do is go into the Retroarch GUI/Menu and go to “Options” and then go to “Core Options”. Make sure the “Neo Game Mode” is set to “Unibios”. 
 
 After that, if you load a Neo Geo game such as Metal Slug, you can hit the Neo Geo buttons A + B + C during the rom boot up to access the full UniBios menu. Here you can change the game region to whatever you want, and can also change it from MVS (arcade) to AES (console). Any changes made here will be saved until your change them again. After you do that, exit out of the game via “Quit RetroArch” and then reload the rom.
 
