@@ -69,6 +69,13 @@ uni-bios_3_0.rom
 uni-bios_3_1.rom
 vs-bios.rom
 ```
+## How to save BIOS settings
+
+From epe9686518: The first thing you need to do is go into the Retroarch GUI/Menu and go to “Options” and then go to “Core Options”. Make sure the “Neo Game Mode” is set to “Unibios”. 
+
+After that, if you load a Neo Geo game such as Metal Slug, you can hit the Neo Geo buttons A + B + C during the rom boot up to access the full UniBios menu. Here you can change the game region to whatever you want, and can also change it from MVS (arcade) to AES (console). Any changes made here will be saved until your change them again. After you do that, exit out of the game via “Quit RetroArch” and then reload the rom.
+
+During the rom boot up, hit the Neo Geo buttons B + C + D this time to bring up the Test Mode screen. Here you can change all of the gameplay settings such as difficulty and add blood. When you save this, it again will be there even after a full system reboot so you can edit to your liking and not have to do it again.
 
 ## Controls
 
@@ -428,10 +435,3 @@ zedblade.drv
 zintrckb.drv
 zupapa.drv
 ```
-## How to save BIOS settings
-
-From epe9686518: The first thing you need to do is go into the Retroarch GUI/Menu and go to “Options” and then go to “Core Options”. Make sure the “Neo Game Mode” is set to “Unibios”. 
-
-After that, if you load a Neo Geo game such as Metal Slug, you can hit the Neo Geo buttons A + B + C during the rom boot up to access the full UniBios menu. Here you can change the game region to whatever you want, and can also change it from MVS (arcade) to AES (console). Any changes made here will be saved until your change them again. After you do that, exit out of the game via “Quit RetroArch” and then reload the rom.
-
-During the rom boot up, hit the Neo Geo buttons B + C + D this time to bring up the Test Mode screen. Here you can change all of the gameplay settings such as difficulty and add blood. When you save this, it again will be there even after a full system reboot so you can edit to your liking and not have to do it again.
