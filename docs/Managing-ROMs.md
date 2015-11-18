@@ -28,7 +28,7 @@ Here are the steps to getting started with clrmamepro.
 ## Step 1 - Back up your ROMs#
 It is possible with clrmamepro to change one or two options and when it runs it will delete all your existing ROMs. OK, not really - using the default options it will make backups of any files it removes, but I have seen a lot of people when getting started mess up their ROMs beyond repair.
 
-##Step 2 - Download [clrmamepro](http://mamedev.emulab.it/clrmamepro/download.htm)#
+##Step 2 - Download [clrmamepro](http://mamedev.emulab.it/clrmamepro/#downloads)#
 The version at the time of this article is 4.016.  I would recommend the 64 bit version if you are running a 64 bit OS, it will be significantly faster.  I would also recommend the zip version, just extract it to C:\clrmamepro.  There's no need to run the installer.
 
 ##Step 3 - Acquire DAT files#
