@@ -92,4 +92,6 @@ Sometimes there can be issues with the pairing process, to start that again you 
 **Some useful threads**  
 http://blog.petrockblock.com/forums/topic/8bitdo-bluetooth-controller-setup-retropie-v3/  
 http://blog.petrockblock.com/forums/topic/the-old-story-setting-up-2x-8bitdo-nes30-bluetooth/  
-http://forum.8bitdo.com/thread-328-1-1.html
+http://forum.8bitdo.com/thread-328-1-1.html  
+**Pre-Generated retroarch controller files**  
+https://github.com/libretro/retroarch-joypad-autoconfig/tree/master/udev
