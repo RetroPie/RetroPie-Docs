@@ -27,4 +27,4 @@ to quit type: `quit`
 
 ## Larger Font Size
 
-If you are on a high resolution screen and the font size is tiny you can change the framebuffers resolution using the [runcommand](https://github.com/RetroPie/RetroPie-Setup/wiki/runcommand) menu to 640x480 and it should make the font more visible.
+If you are on a high resolution screen and the font size is tiny you can change the framebuffer's resolution using the [runcommand](https://github.com/RetroPie/RetroPie-Setup/wiki/runcommand) menu to 640x480 and it should make the font more visible.
