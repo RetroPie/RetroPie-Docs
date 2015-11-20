@@ -59,4 +59,34 @@ if you don't want to create a sd image you can just back up your bios, roms, and
 
 Open a terminal window and type `diskutil list`. A list of all hard disks and partitions shows up. Find a partition with the name `boot`. The related /dev/disk* is your retropie sd card. Type `sudo dd if=/dev/disk* of=backup.img bs=1m` to write a disk image to your home directory.
 
+#### Writing the RetroPie SD image with DD on Linux
+
+`lsblk` to list your drives (in the following example it is sdb)
+
+```
+NAME   MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT
+sda      8:0    0 698.7G  0 disk 
+├─sda1   8:1    0   100M  0 part 
+├─sda2   8:2    0 585.9G  0 part /media/seamus_linux/3456B9D456B996D8
+├─sda3   8:3    0     1K  0 part 
+├─sda5   8:5    0 108.8G  0 part /
+└─sda6   8:6    0   3.9G  0 part [SWAP]
+sdb      8:16   1   7.4G  0 disk 
+├─sdb1   8:17   1    57M  0 part /media/seamus_linux/boot
+└─sdb2   8:18   1   7.3G  0 part /media/seamus_linux/retropie
+sr0     11:0    1  1024M  0 rom  
+```
+an example of the command you would use to write the image is: `sudo dd bs=1M if=/home/seamus_linux/Downloads/retropie-v3.2.1-rpi2.img of=/dev/sdb`
+
+make sure records match
+
+2288+1 records in
+
+2288+1 records out
+
+2400000000 bytes (2.4 GB) copied, 322.188 s, 7.4 MB/s
+
+`sudo sync`
+
+
  
