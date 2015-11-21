@@ -21,7 +21,7 @@ Any game in the raspbian [repos](http://archive.raspbian.org/raspbian/dists/whee
 #
  
 rp_module_id="supertux"
-rp_module_desc="supertux 2d scrolling platform"
+rp_module_desc="SuperTux 2d scrolling platform"
 rp_module_menus="4+"
 rp_module_flags="nobin"
  
@@ -32,10 +32,7 @@ function install_supertux() {
 function configure_supertux() {
     mkRomDir "ports"
 
-    addPort "supertux" << _EOF_
-#!/bin/bash
-supertux
-_EOF_
+    addPort "$md_id" "supertux" "SuperTux" "supertux"
 }
 ```
 
