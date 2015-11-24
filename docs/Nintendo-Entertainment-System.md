@@ -9,7 +9,7 @@ Both emulators utilise RetroArch configurations for controllers. Nestopia is pre
 
 ## ROMS
 
-Accepted File Extensions: **.zip .nes .smc .sfc .fig .swc .mgd**
+Accepted File Extensions: **.zip .nes .smc .sfc .fig .swc .mgd** - Make sure your roms have headers. Roms without headers will not work.
 
 Place your NES Roms in
 ```
