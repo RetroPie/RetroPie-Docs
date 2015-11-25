@@ -71,22 +71,17 @@
 * [Zmachine](https://github.com/petrockblog/RetroPie-Setup/wiki/Zmachine)
 * [ZX Spectrum](https://github.com/petrockblog/RetroPie-Setup/wiki/ZX-Spectrum)
 
-## [Troubleshooting](https://github.com/RetroPie/RetroPie-Setup/wiki#troubleshooting--advanced-configuration)
+## Advanced Configuration
 
-* [RetroArch](https://github.com/RetroPie/RetroPie-Setup/wiki/RetroArch)
-* [EmulationStation](https://github.com/RetroPie/RetroPie-Setup/wiki/EmulationStation)
+* [Custom Splash Screens](https://github.com/RetroPie/RetroPie-Setup/wiki/splashscreen)
 * [EmulationStation Themes](https://github.com/RetroPie/RetroPie-Setup/wiki/themes)
 * [Scraping Games](https://github.com/RetroPie/RetroPie-Setup/wiki/scraper)
 * [Netplay](https://github.com/RetroPie/RetroPie-Setup/wiki/Netplay)
-* [Custom Splash Screens](https://github.com/RetroPie/RetroPie-Setup/wiki/splashscreen)
 * [Advanced Configuration](https://github.com/RetroPie/RetroPie-Setup/wiki/Advanced-Configuration)
 * [Manual Installation](https://github.com/RetroPie/RetroPie-Setup/wiki/Manual-Installation)
-* [Video Compatibility Sheet](https://github.com/RetroPie/RetroPie-Setup/wiki/Compatibility-Sheet)
-* [Sound Issues](https://github.com/RetroPie/RetroPie-Setup/wiki/Sound-Issues)
-* [Speed Issues](https://github.com/RetroPie/RetroPie-Setup/wiki/Speed-Issues)
-* [Video Issues](https://github.com/RetroPie/RetroPie-Setup/wiki/Video-Issues)
 
-## [Controllers](https://github.com/RetroPie/RetroPie-Setup/wiki#controller-configurations)
+## Controllers
+
 * [XBox 360 Controller](https://github.com/RetroPie/RetroPie-Setup/wiki/Setting-up-the-XBox360-controller)
 * [PS3 controller](https://github.com/RetroPie/RetroPie-Setup/wiki/Setting-up-a-PS3-controller)
 * [N64 controller](https://github.com/RetroPie/RetroPie-Setup/wiki/Setting-up-an-N64-controller)
@@ -96,3 +91,10 @@
 * [Wii U Pro Controller (debian jessie only)](https://github.com/RetroPie/RetroPie-Setup/wiki/Setting-up-Wii-U-Pro-controller)
 * [Xin-Mo Driver](https://github.com/RetroPie/RetroPie-Setup/wiki/Troubles-with-the-Xin-Mo-Controller)
 * [GPIO Controller Module](https://github.com/RetroPie/RetroPie-Setup/wiki/Module-for-GPIO-interface-for-retro-game-controllers)
+
+## Troubleshooting
+
+* [Sound Issues](https://github.com/RetroPie/RetroPie-Setup/wiki/Sound-Issues)
+* [Speed Issues](https://github.com/RetroPie/RetroPie-Setup/wiki/Speed-Issues)
+* [Video Issues](https://github.com/RetroPie/RetroPie-Setup/wiki/Video-Issues)
+* [Video Compatibility Sheet](https://github.com/RetroPie/RetroPie-Setup/wiki/Compatibility-Sheet)
