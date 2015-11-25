@@ -2,6 +2,10 @@
 
 This page is a list of all of the changelogs for each version of RetroPie. For a complete list of all commits to the source code see [here:](https://github.com/petrockblog/RetroPie-Setup/commits/master)  
 
+### Version 3.2.1: (October 28, 2015)
+
+- Fixes issues with controller d-pad configurations for all RetroArch-based emulators.
+
 ### Version 3.2: (October 26, 2015)
 
 - Fixed binaries of mupen64plus and lr-tyrquake and removed mupen64plus-testing as it is now included in the default mupen64plus.
