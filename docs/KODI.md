@@ -16,7 +16,7 @@ See [here](http://blog.petrockblock.com/forums/topic/kodi-tab-in-emulationstatio
 
 ## Black Screen Freeze Fix
 
-If you find yourself having troubles with your screen freezing when you exit kodi, you can replace the code in /roms/ports/kodi.sh with
+If you find yourself having troubles with your screen freezing when you exit kodi, you can replace the code in `/roms/ports/kodi.sh` with
 ```
 #!/bin/bash
  
