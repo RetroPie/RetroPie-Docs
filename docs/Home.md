@@ -105,7 +105,6 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [Sound Issues](https://github.com/RetroPie/RetroPie-Setup/wiki/Sound-Issues)
 * [Speed Issues](https://github.com/RetroPie/RetroPie-Setup/wiki/Speed-Issues)
 * [Video Issues](https://github.com/RetroPie/RetroPie-Setup/wiki/Video-Issues)
-* [Video Compatibility Sheet](https://github.com/RetroPie/RetroPie-Setup/wiki/Compatibility-Sheet)
 
 ## FAQ
 * [Why can't I login as root anymore?](https://github.com/RetroPie/RetroPie-Setup/wiki/Root-Password)
