@@ -77,7 +77,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [Zmachine](https://github.com/RetroPie/RetroPie-Setup/wiki/Zmachine) [(Frotz)](http://frotz.sourceforge.net/)
 * [ZX Spectrum](https://github.com/RetroPie/RetroPie-Setup/wiki/ZX-Spectrum) [(FBZX)](http://www.rastersoft.com/fbzx.html), [(Fuse)](http://fuse-emulator.sourceforge.net/), [(lr-fuse)](https://github.com/libretro/fuse-libretro)
 
-## Troubleshooting & Advanced Configuration
+## Advanced Configuration
 * [RetroArch](https://github.com/RetroPie/RetroPie-Setup/wiki/RetroArch)
 * [EmulationStation](https://github.com/RetroPie/RetroPie-Setup/wiki/EmulationStation)
 * [EmulationStation Themes](https://github.com/RetroPie/RetroPie-Setup/wiki/themes)
@@ -86,10 +86,6 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [Custom Splash Screens](https://github.com/RetroPie/RetroPie-Setup/wiki/splashscreen)
 * [Advanced Configuration](https://github.com/RetroPie/RetroPie-Setup/wiki/Advanced-Configuration)
 * [Manual Installation](https://github.com/RetroPie/RetroPie-Setup/wiki/Manual-Installation)
-* [Video Compatibility Sheet](https://github.com/RetroPie/RetroPie-Setup/wiki/Compatibility-Sheet)
-* [Sound Issues](https://github.com/RetroPie/RetroPie-Setup/wiki/Sound-Issues)
-* [Speed Issues](https://github.com/RetroPie/RetroPie-Setup/wiki/Speed-Issues)
-* [Video Issues](https://github.com/RetroPie/RetroPie-Setup/wiki/Video-Issues)
 * [Adding Games to the 'PORTS' Section](https://github.com/RetroPie/RetroPie-Setup/wiki/Adding-software-to-Ports)
 * [RetroPie Arch Linux Flavor](https://github.com/RetroPie/RetroPie-Setup/wiki/RetroPie-Arch-Linux-Flavor)
 
@@ -104,6 +100,12 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [Xin-Mo Driver](https://github.com/RetroPie/RetroPie-Setup/wiki/Troubles-with-the-Xin-Mo-Controller)
 * [Module for GPIO interface for retro game controllers](https://github.com/RetroPie/RetroPie-Setup/wiki/Module-for-GPIO-interface-for-retro-game-controllers)
 * [Control Issues](https://github.com/RetroPie/RetroPie-Setup/wiki/Control-Issues)
+
+## Troubleshooting
+* [Sound Issues](https://github.com/RetroPie/RetroPie-Setup/wiki/Sound-Issues)
+* [Speed Issues](https://github.com/RetroPie/RetroPie-Setup/wiki/Speed-Issues)
+* [Video Issues](https://github.com/RetroPie/RetroPie-Setup/wiki/Video-Issues)
+* [Video Compatibility Sheet](https://github.com/RetroPie/RetroPie-Setup/wiki/Compatibility-Sheet)
 
 ## FAQ
 * [Why can't I login as root anymore?](https://github.com/RetroPie/RetroPie-Setup/wiki/Root-Password)
