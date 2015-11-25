@@ -22,48 +22,6 @@ Add custom retroarch controls to the retroarch.cfg file in
 ```
 For more information on custom RetroArch controls see: [RetroArch Configuration](https://github.com/petrockblog/RetroPie-Setup/wiki/RetroArch-Configuration)
 
-# [DarkPlaces Quake](http://www.icculus.org/twilight/darkplaces/):
-![](https://icculus.org/twilight/darkplaces/pics/thumbnails/dpshadows_start.jpg) 
-
-***
-_This is a rebuild of the Quake Engine and as such has much better 3D rendering and graphics than the original. It is still considered experimental and can be installed from the experimental section of the setup script._
-***
-
-## Port: [DarkPlaces Quake Engine](https://github.com/autonomous1/darkplacesrpi) (EXPERIMENTAL!)
-
-## Controls:
-Key  |  Action
- --- | ---
-Ctrl or Left Mouse Click | Attack
-/ | Next Weapon
-1-9 | Weapons
-Enter or Space | Jump or Swim Down
-Up Arrow or Right Click | Walk Forward
-Down Arrow | Backpedal
-Left Arrow | Turn Left 
-Right Arrow  | Turn Right
-Shift | Run
-, | Strafe Left
-. | Strafe Right
-ALT | Sidestep
-A or PGDN | Look Up
- Z or DEL | Look Down
-END | Center View
- Mouse Movement | Mouse Look
- INS | Keyboard Look
-D | Swim Up
-C | Swim Down
-ESC or F4 | Menu
-TAB | Stats
-T | Chat 
-F2 | Save
-F3 | Load
-F5 | Multiplayer
-F6 | Quicksave
-F10 | Exit Emulator
-F11 | Zoom
-F12 | Take Screenshot
-
 # Quake III Arena
 ![](http://cdn.akamai.steamstatic.com/steam/apps/2200/header.jpg?t=1343157282)
 
