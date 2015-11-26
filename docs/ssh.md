@@ -41,7 +41,10 @@ cd /path/to/directory
 cd RetroPie
 sudo ./retropie_setup.sh
 ```
-
+**Edit Files with Nano:** 
+```
+sudo nano /path/to/file.txt
+```
 **Change owner to Pi:**
 ```
 sudo chown pi:pi filetobechanged
