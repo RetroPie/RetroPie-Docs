@@ -1,4 +1,4 @@
-![retropie](https://cloud.githubusercontent.com/assets/10035308/10711830/369eb330-7a45-11e5-98f8-25f247ede928.png)
+![retropie-original-flat-outline](https://cloud.githubusercontent.com/assets/10035308/11428906/0300d80c-942e-11e5-8675-1e033d731d49.png)
 
 1. [Hardware](https://github.com/RetroPie/RetroPie-Setup/wiki/First-Installation#hardware-needed)
 2. [Installation](https://github.com/RetroPie/RetroPie-Setup/wiki/First-Installation#installation)
