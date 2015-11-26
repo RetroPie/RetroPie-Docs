@@ -65,7 +65,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
   * [Quake Series](https://github.com/RetroPie/RetroPie-Setup/wiki/Quake) [(lr-tyrquake)](https://github.com/libretro/tyrquake), [(ioQuake3)](https://github.com/raspberrypi/quake3)
   * [Super Mario War](https://github.com/RetroPie/RetroPie-Setup/wiki/Super-Mario-War)
   * [SuperTux](http://supertux.lethargik.org/wiki/User_Manual)
-  * [Wolfenstein 3d](https://github.com/mozzwald/wolf4sdl)
+  * [Wolfenstein 3d](https://github.com/RetroPie/RetroPie-Setup/wiki/Wolfenstein-3D)
 * [PlayStation 1](https://github.com/RetroPie/RetroPie-Setup/wiki/Playstation-1) [(lr-pcsx-rearmed)](https://github.com/libretro/pcsx_rearmed), [(pcsx-rearmed)](https://github.com/notaz/pcsx_rearmed)
 * [PSP](https://github.com/RetroPie/RetroPie-Setup/wiki/psp) [(lr-ppsspp)](https://github.com/libretro/libretro-ppsspp), [(ppsspp)](https://github.com/hrydgard/ppsspp) (EXPERIMENTAL)
 * [ScummVM](https://github.com/RetroPie/RetroPie-Setup/wiki/ScummVM)
