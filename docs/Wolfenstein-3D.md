@@ -21,7 +21,7 @@ The file names must be in lower case. The simplest way to do this is to run the 
 
 Wolf4SDL creates separate binaries for each version of game data. You need to select the correct binary for your game data. 
 
-Launch Wolfenstein 3D script from the Ports section EmulationStation. Bring up the [runcommand menu](https://github.com/RetroPie/RetroPie-Setup/wiki/runcommand) by pressing any key or js0 on your gamepad. Now select from the menu
+Launch Wolfenstein 3D script from the Ports section of EmulationStation. Bring up the [runcommand menu](https://github.com/RetroPie/RetroPie-Setup/wiki/runcommand) by pressing any key or js0 on your gamepad. Now select from the menu
 > 2 - Select emulator for rom ().
 
 You will be presented with the following screen:
