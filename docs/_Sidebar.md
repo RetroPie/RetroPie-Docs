@@ -51,7 +51,7 @@
   * [Duke Nukem 3D](https://github.com/petrockblog/RetroPie-Setup/wiki/Duke-Nukem-3D)
   * [KODI](https://github.com/petrockblog/RetroPie-Setup/wiki/KODI)
   * [Minecraft Pi Edition](https://github.com/petrockblog/RetroPie-Setup/wiki/Minecraft)
-  * [OpenTTD](https://wiki.openttd.org/Main_Page)
+  * [OpenTTD](https://github.com/RetroPie/RetroPie-Setup/wiki/openttd)
   * [OpenTyrian](https://bitbucket.org/opentyrian/opentyrian/wiki/Home)
   * [Quake Series](https://github.com/petrockblog/RetroPie-Setup/wiki/Quake)
   * [Super Mario War](https://github.com/RetroPie/RetroPie-Setup/wiki/Super-Mario-War)
