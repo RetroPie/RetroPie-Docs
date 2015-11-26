@@ -56,7 +56,7 @@
   * [Quake Series](https://github.com/petrockblog/RetroPie-Setup/wiki/Quake)
   * [Super Mario War](https://github.com/RetroPie/RetroPie-Setup/wiki/Super-Mario-War)
   * [SuperTux](http://supertux.lethargik.org/wiki/User_Manual)
-  * [Wolfenstein 3d](https://github.com/mozzwald/wolf4sdl)
+  * [Wolfenstein 3d](https://github.com/RetroPie/RetroPie-Setup/wiki/Wolfenstein-3D)
 * [PSP](https://github.com/RetroPie/RetroPie-Setup/wiki/psp)
 * [PlayStation 1](https://github.com/petrockblog/RetroPie-Setup/wiki/Playstation-1)
 * [Saturn](https://github.com/petrockblog/RetroPie-Setup/wiki/Saturn)
