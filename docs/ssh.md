@@ -36,6 +36,10 @@ sudo shutdown -h now
 ```
 cd /path/to/directory
 ```
+**list Files in Current Directory**
+```
+ls
+```
 **Retropie Setup Script:**
 ```
 cd RetroPie
