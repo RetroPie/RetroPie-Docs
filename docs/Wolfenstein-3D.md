@@ -1,6 +1,11 @@
 ![](https://4.bp.blogspot.com/-KubMHEPz1Uk/VMJdFy57fTI/AAAAAAAAAEQ/xJFFjQsQZAY/s1600/wolf3d.png)
 
+***
+
 _Wolfenstein 3D is a first-person shooter video game developed by id Software and published by Apogee Software in 1992 for the PC operating system DOS._
+
+***
+
 
 ## Port: [Wolf4SDL](https://github.com/mozzwald/wolf4sdl)
 
