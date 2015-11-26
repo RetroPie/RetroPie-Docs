@@ -60,7 +60,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
   * [Duke Nukem 3D](https://github.com/RetroPie/RetroPie-Setup/wiki/Duke-Nukem-3D) [(EDuke32)](http://www.eduke32.com/)
   * [KODI](https://github.com/petrockblog/RetroPie-Setup/wiki/KODI) (EXPERIMENTAL)
   * [Minecraft Pi Edition](https://github.com/petrockblog/RetroPie-Setup/wiki/Minecraft) (EXPERIMENTAL)
-  * [OpenTTD](https://wiki.openttd.org/Main_Page) (EXPERIMENTAL)
+  * [OpenTTD](https://github.com/RetroPie/RetroPie-Setup/wiki/openttd) [(openttd)](https://wiki.openttd.org/Main_Page) (EXPERIMENTAL)
   * [OpenTyrian](https://bitbucket.org/opentyrian/opentyrian/wiki/Home) (EXPERIMENTAL)
   * [Quake Series](https://github.com/RetroPie/RetroPie-Setup/wiki/Quake) [(lr-tyrquake)](https://github.com/libretro/tyrquake), [(ioQuake3)](https://github.com/raspberrypi/quake3)
   * [Super Mario War](https://github.com/RetroPie/RetroPie-Setup/wiki/Super-Mario-War)
