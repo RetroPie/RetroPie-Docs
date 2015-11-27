@@ -62,6 +62,9 @@ VMUs are stored as .BIN files under `/home/pi/.reicast/`, and will be automatica
 On occasion, these VMUs do not get formatted quite right during creation, and the Dreamcast can't save or load data from them.  They just need to be reformatted -- run the `SYSTEMMANAGER` entry in the EmulationStation Dreamcast menu (coming soon from [Pull Request #862](https://github.com/petrockblog/RetroPie-Setup/pull/862)) and / or see [this post](http://blog.petrockblock.com/forums/topic/configuring-controllers-in-reicast/page/2/#post-99715) for details.
 
 ## Controls
+Starting with RetroPie 3.3 controls for the Dreamcast Emulator are automatically configured when you configure your controls through emulationstation.
+
+![sega_dreamcast_diagram](https://cloud.githubusercontent.com/assets/10035308/11432087/ae992b58-9463-11e5-928e-1ff3689c421d.png)
 
 Controls can be mapped via the `/home/pi/.reicast/emu.cfg` file. An example mapping for a PS3 controller is below for reference:
 
