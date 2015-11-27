@@ -26,12 +26,4 @@ Starting with RetroPie 3.1 there is now support for video splash screens. A few 
 
 - for best results use .mp4 filetype. If you have a video in another format and it isn't working try converting it with a program like [vlc](http://www.videolan.org/vlc/index.html) or [handbrake](https://handbrake.fr/) I've found that h.264 is a good codec and .mp4 is a good filetype- but others may also work.
  
-- By default it is coded to play the video all the way through before emulationstation loads, no matter how long the video- for a raspberry pi 1 a good video time is ~20-40 seconds, for the rpi 2 a good video time is ~5-10 seconds. if you wish to have emulationstation cut off your video as to make a seamless boot sequence you need to edit `/etc/profile.d/10-emulationstation.sh` and delete the first line from this:
-```
-while pgrep omxplayer &>/dev/null; do sleep 1; done
-[ "`tty`" = "/dev/tty1" ] && emulationstation
-```
-so it looks like this:
-```
-[ "`tty`" = "/dev/tty1" ] && emulationstation
-```
+- For a raspberry pi 1 a good video time is ~20-40 seconds, for the rpi 2 a good video time is ~5-10 seconds. 
