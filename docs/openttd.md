@@ -10,7 +10,7 @@ _OpenTTD is an OpenSource Port of Transport Tycoon Deluxe (basically a SimCity C
 Official OpenTTD Wiki: [https://wiki.openttd.org/OpenTTD](https://wiki.openttd.org/OpenTTD)
 
 
-This emulator is experimental and can be installed from the experimental menu of the [retropie setup script](https://github.com/RetroPie/RetroPie-Setup/wiki/Updating-RetroPie)
+This emulator is **experimental** and can be installed from the experimental menu of the [retropie setup script](https://github.com/RetroPie/RetroPie-Setup/wiki/Updating-RetroPie)
 
 ### Getting Started
 
