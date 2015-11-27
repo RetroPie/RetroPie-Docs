@@ -55,7 +55,7 @@
   * [OpenTyrian](https://bitbucket.org/opentyrian/opentyrian/wiki/Home)
   * [Quake Series](https://github.com/petrockblog/RetroPie-Setup/wiki/Quake)
   * [Super Mario War](https://github.com/RetroPie/RetroPie-Setup/wiki/Super-Mario-War)
-  * [SuperTux](http://supertux.lethargik.org/wiki/User_Manual)
+  * [SuperTux](https://github.com/RetroPie/RetroPie-Setup/wiki/SuperTux)
   * [Wolfenstein 3d](https://github.com/RetroPie/RetroPie-Setup/wiki/Wolfenstein-3D)
 * [PSP](https://github.com/RetroPie/RetroPie-Setup/wiki/psp)
 * [PlayStation 1](https://github.com/petrockblog/RetroPie-Setup/wiki/Playstation-1)
