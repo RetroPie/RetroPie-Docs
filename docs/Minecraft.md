@@ -3,7 +3,7 @@
 _Minecraft was created by Markus "Notch" Persson and his company Mojang which was later sold to Microsoft for 2.5 billion dollars- which explains why there has been pretty much no development on Minecraft Pi edition for more than 2 years now. Minecraft for Pi is based off of Minecraft Pocket Edition, and as such lacks creatures, adventures, night time, etc. It is unfortunately incredibly basic._
 ***
 
-This is currently experimental. To install, update the setup script and then go back into the setup script and select Minecraft from the experimental menu. 
+This emulator is experimental and can be installed from the experimental menu of the [retropie setup script](https://github.com/RetroPie/RetroPie-Setup/wiki/Updating-RetroPie)
 
 ## Controls
 
