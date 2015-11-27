@@ -47,6 +47,10 @@ and
 /opt/retropie/configs/n64/InputAutoCfg.ini
 ```
 
+Starting with RetroPie 3.3 Mupen64Plus configurations are automatically generated when you configure your controller for the first time in emulationstation. Mupen64plus configurations differ from the RetroArch configs listed above and more closely match the original physical N64 controller.
+
+![n64_diagram](https://cloud.githubusercontent.com/assets/10035308/11431965/b8207db4-9460-11e5-8b5d-45fadf9f0bfb.png)
+
 #### Example mupen64plus.cfg
 ```
 [CoreEvents]
