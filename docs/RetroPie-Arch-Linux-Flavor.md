@@ -150,15 +150,16 @@ Taken from https://wiki.archlinux.org/index.php/Automatic_login_to_virtual_conso
 
 First create a new directory named getty@tty1.service.d under /etc/systemd/system:
 ```shell
-        mkdir /etc/systemd/system/getty@tty1.service.d
+mkdir /etc/systemd/system/getty@tty1.service.d
 ```
 
-Then create a new file named autologin.conf and add it into the directory /etc/systemd/system/getty@tty1.service.d/autologin.conf
+Then create a new file named autologin.conf and add it into the directory /etc/systemd/system/getty@tty1.service.d/override.conf
 ```shell
         ---
-        [Service]
-        ExecStart=
-        ExecStart=-/sbin/agetty --autologin <username> --noclear %I 38400 linux
+[Service]
+Type=simple
+ExecStart=
+ExecStart=-/sbin/agetty --autologin <username> --noclear %I 38400 linux
 ```
 
 ***
