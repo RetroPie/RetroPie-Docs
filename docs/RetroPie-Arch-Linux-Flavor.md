@@ -2,6 +2,8 @@
 
 This tutorial was written by r4 (http://www.raspberrypi.org/phpBB3/viewtopic.php?f=78&t=46013).
 
+And is now adapted to work with AUR4 and [apacman](https://aur.archlinux.org/packages/apacman/) script.
+
 ## Description
 
 A guide to build the retropie setup on Arch Linux. This guide is not all encompassing. It is merely a basic setup to build a similar environment offered on the official Retropie install script.
@@ -17,8 +19,6 @@ A guide to build the retropie setup on Arch Linux. This guide is not all encompa
     - [5.1 Configuration](#51-configuration)
     - [5.2 Themes](#52-themes)
     - [5.3 Scraper](#53-scraper)
-      - [i) Configuration](#i-configuration)
-      - [ii) Downloading Boxart Images](#ii-downloading-boxart-images)
   - [Section 6: Launch EmulationStation at login](#section-6-launch-emulationstation-at-login)
   - [Section 7: Auto login at boot](#section-7-auto-login-at-boot)
 
@@ -26,34 +26,34 @@ A guide to build the retropie setup on Arch Linux. This guide is not all encompa
 
 ## Section 1: AUR tools
     
-This guide will make use of the AUR to ease the installation process. Several tools can be used, such as: packer, yaourt, cower, etc. Feel free to use the tool that you are most comfortable with.
+Install [apacman](https://aur.archlinux.org/packages/apacman/)
+```shell
+wget https://aur.archlinux.org/cgit/aur.git/snapshot/apacman.tar.gz
+tar xzf apacman
+cd apacman
+makepkg -s --asroot
+pacman -U apacman[Press TAB key to autocomplete the filename then press ENTER to install]
+```
 
 ## Section 2: Install retroarch:
     
-Retroarch is found in the AUR.
+First we need a special build of sdl2 to make Retroarch and EmulationStation work the best with RPi/RPi2. Then next we can proceed on installing retroarch.
         
 ```shell
-packer -S retroarch-rbp-git
-```
-
-When given the option to edit the package, change references of "Themaister" to "libretro", as the repo has moved.
-
-Also prior to install, be sure that mesa and xorg-server is installed via 
-
-```shell
-packman -S mesa xorg-server 
+apacman -S sdl2-rbp-git
+apacman -S retroarch-rbp-git
 ```
 
 ### Section 2.1. Configuration
 
 Copy skeleton configuration file located at /etc/retroarch.cfg to ~/.retroarch.cfg
 ```shell
-            cp /etc/retroarch.cfg ~/.retroarch.cfg
+cp /etc/retroarch.cfg ~/.retroarch.cfg
 ```
 
 With your working joystick, configure your controller with the following command.
 ```shell
-            retroarch-joyconfig >> ~/.retroarch.cfg
+retroarch-joyconfig >> ~/.retroarch.cfg
 ```
 
 Note: Ensuring your joystick is working will not be covered in this guide as this falls out of scope and there are plenty of other resources to help with this.
@@ -64,16 +64,16 @@ Consult https://wiki.archlinux.org/index.php/RetroArch for more information.
 
 There are several emulators for retroarch. You can get a list of them by issuing the command below. Install whatever is necessary.
 ```shell
-        packer -Ss libretro
+apacman -Ss libretro
 ```
 
 Note: Some emulators may not work or may require manual building by downloading the associated tarball and issuing the command:
 ```shell
-        makepkg -Acs --asroot
+makepkg -Acs --asroot
 ```
 then...
 ```shell
-        pacman -U /path/to/package
+pacman -U /path/to/package
 ```
 
 ## Section 4: Install ROMs
@@ -82,15 +82,15 @@ Make directory and install ROMs to ~/roms/<system>.
 
 Example:
 ```shell
-        mkdir -p ~/roms/snes
-        cp /path/to/roms/* ~/roms/snes/
+mkdir -p ~/roms/snes
+cp /path/to/roms/* ~/roms/snes/
 ```
     
 ## Section 5: Install EmulationStation:
     
 EmulationStation is found in the AUR.
 ```shell
-        packer -S emulationstation-git
+apacman -S emulationstation-git
 ```
 
 ### 5.1 Configuration
@@ -115,61 +115,34 @@ As long as ES hasn't frozen, you can always press F4 to close the application.
 
 EmulationStation themes can be found in the AUR.
 ```shell
-            packer -S emulationstation-themes
+apacman -S emulationstation-themes
 ```
 
 To get a list of all themes available..
 ```shell
-            ls -l /usr/share/EmulationStation/themes/
+ls -l /usr/share/EmulationStation/themes/
 ```
 
 Create the necessary symlinks to the themes of interest.
 ```shell
-            ln -s /usr/share/EmulationStation/themes/snes ~/.emulationstation/
+ln -s /usr/share/EmulationStation/themes/snes ~/.emulationstation/
 ```
 
 Consult http://aloshi.com/emulationstation for more information.
 
 ### 5.3 Scraper
 
-The scraper tool can be found in the AUR.
-```shell
-            packer -S emulationstation-scraper
-```
-
-#### i) Configuration
-Open your systems config file ($HOME/.emulationstation/es_systems.cfg) and append the corresponding platform ID to each system:
-
-Example:
-```shell
-                   NAME=nes
-                   DESCNAME=Nintendo Entertainment System
-                   PATH=~/roms/nes/
-                   EXTENSION=.nes
-                   COMMAND=retroarch -L /path/to/core %ROM%
-                   PLATFORMID=7
-```
-               
-A list of supported platforms can be found here: https://github.com/elpendor/ES-scraper
-
-#### ii) Downloading Boxart Images
-Grab all boxart and descriptions by issuing the command below:
-```shell
-                    'scraper -m -w 275'
-```
-
-The -m flag will put the tool in manual mode and prompt the user on which image to download if more than one result shows. The -w flag will modify the size of an image with a width larger than 275 pixels.
-
-Note: I highly suggest manual mode as to ensure it grabs the right images.
-
-Consult https://github.com/elpendor/ES-scraper for more information.
+The ES-Scraper project is no more compatible with Emulation Station since `es_systems.cfg` now is an XML file.
 
 ## Section 6: Launch EmulationStation at login
-Taken from https://wiki.archlinux.org/index.php/Start_X_at_Login and adapted.
 
 Issue the command below to ensure EmulationStation starts at login.
 ```shell
-        echo '[[ -z $DISPLAY && $XDG_VTNR -eq 1 ]] && emulationstation' >> ~/.bash_profile
+echo 'emulationstation' >> ~/.bash_profile
+```
+or if you're using ZSH
+```shell
+echo 'emulationstation' >> ~/.zlogin
 ```
 
 Note: The single quotes around the string being echoed are important!
