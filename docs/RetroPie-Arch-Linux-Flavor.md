@@ -148,19 +148,17 @@ Note: The single quotes around the string being echoed are important!
 ## Section 7: Auto login at boot
 Taken from https://wiki.archlinux.org/index.php/Automatic_login_to_virtual_console.
 
-First create a new directory named getty@tty1.service.d under /etc/systemd/system:
 ```shell
-mkdir /etc/systemd/system/getty@tty1.service.d
+systemctl edit getty@tty1
 ```
-
-Then create a new file named autologin.conf and add it into the directory /etc/systemd/system/getty@tty1.service.d/override.conf
+and then write/paste this inside
 ```shell
 [Service]
 Type=simple
 ExecStart=
 ExecStart=-/sbin/agetty --autologin <username> --noclear %I 38400 linux
 ```
-
+save the file and reboot.
 ***
 
 Now you should have a working environment similar to what retropie offers but in Arch Linux. Enjoy! :)
