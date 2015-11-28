@@ -155,7 +155,6 @@ mkdir /etc/systemd/system/getty@tty1.service.d
 
 Then create a new file named autologin.conf and add it into the directory /etc/systemd/system/getty@tty1.service.d/override.conf
 ```shell
-        ---
 [Service]
 Type=simple
 ExecStart=
