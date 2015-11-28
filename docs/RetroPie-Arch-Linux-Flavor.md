@@ -1,8 +1,6 @@
 # Retropie - Arch Linux Flavor
 
-This tutorial was written by r4 (http://www.raspberrypi.org/phpBB3/viewtopic.php?f=78&t=46013).
-
-And is now adapted to work with AUR4 and [apacman](https://aur.archlinux.org/packages/apacman/) script.
+This tutorial was written by r4 (http://www.raspberrypi.org/phpBB3/viewtopic.php?f=78&t=46013) and is now adapted to work with AUR4 and [apacman](https://aur.archlinux.org/packages/apacman/) script.
 
 ## Description
 
