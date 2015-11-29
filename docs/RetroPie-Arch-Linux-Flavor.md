@@ -111,22 +111,15 @@ As long as ES hasn't frozen, you can always press F4 to close the application.
         
 ### 5.2 Themes
 
-EmulationStation themes can be found in the AUR.
+With this you'll get the Simple theme, one of the most complete themes out there.
+
 ```shell
-apacman -S emulationstation-themes
+wget http://blog.nilsbyte.de/download/emulationstation-theme-simple-v1-4/
+mkdir -p ~/.emulationstation/themes
+unzip es_theme_simple_v1.4.zip -d ~/.emulationstation/themes
 ```
 
-To get a list of all themes available..
-```shell
-ls -l /usr/share/EmulationStation/themes/
-```
-
-Create the necessary symlinks to the themes of interest.
-```shell
-ln -s /usr/share/EmulationStation/themes/snes ~/.emulationstation/
-```
-
-Consult http://aloshi.com/emulationstation for more information.
+Consult http://emulationstation.org/forum/index.php?board=6.0 for more information.
 
 ### 5.3 Scraper
 
