@@ -38,7 +38,6 @@ pacman -U apacman[Press TAB key to autocomplete the filename then press ENTER to
 First we need a special build of sdl2 to make Retroarch and EmulationStation work the best with RPi/RPi2. Then next we can proceed on installing retroarch.
         
 ```shell
-apacman -S sdl2-rbp-git
 apacman -S retroarch-rbp-git
 ```
 
@@ -88,6 +87,7 @@ cp /path/to/roms/* ~/roms/snes/
     
 EmulationStation is found in the AUR.
 ```shell
+apacman -S sdl2-rbp-git
 apacman -S emulationstation-git
 ```
 
