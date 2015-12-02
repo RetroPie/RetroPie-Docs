@@ -7,7 +7,7 @@
 5. [Configure Wifi](https://github.com/RetroPie/RetroPie-Setup/wiki/First-Installation#configuring-wifi)
 6. [Transferring Roms](https://github.com/RetroPie/RetroPie-Setup/wiki/First-Installation#transferring-roms)
 
-Congratulations! You have discovered the wonderful world of RetroPie- your entire childhood is within reach! This page is for people just getting started on RetroPie 3.0. You can install RetroPie [manually](https://github.com/RetroPie/RetroPie-Setup/wiki/Manual-Installation) but for simplicity's sake this page will focus on installing the RetroPie SD card image. This page will give you the very basics to get you up and running from a blank SD card to first boot into Emulationstation.
+Congratulations! You have discovered the wonderful world of RetroPie- your entire childhood is within reach! This page is for people just getting started on RetroPie 3.0. The easiest way to install RetroPie is the SD image provided by the [PetRockBlog](http://blog.petrockblock.com/) - this is the method described in the following guide. Alternatively, advanced users can install RetroPie [manually](https://github.com/RetroPie/RetroPie-Setup/wiki/Manual-Installation). This guide will give you the very basics to get you up and running from a blank SD card to first boot into EmulationStation.
 
 If you hate reading then see this video. Otherwise read on! 
 
@@ -26,7 +26,7 @@ alt="Configuration Video" width="300" height="190" border="10" /></a>
  * Wifi Dongle or Ethernet Cable (Wifi Dongle is more convenient- see compatible list [**here**)](http://elinux.org/RPi_USB_Wi-Fi_Adapters)
  * 5V 2A Micro USB Power Supply
  * USB Keyboard and Mouse (to get things set up or you can use SSH)
- * USB Game Controller of your choice (or you can get the [Control Block](http://blog.petrockblock.com/2014/12/29/controlblock-power-switch-and-io-for-the-raspberry-pi/) to use original controllers)
+ * USB Game Controller of your choice (or you can get the [Control Block](http://blog.petrockblock.com/2014/12/29/controlblock-power-switch-and-io-for-the-raspberry-pi/) to use original SNES controllers)
 
 ## Installation
 
@@ -34,7 +34,7 @@ alt="Configuration Video" width="300" height="190" border="10" /></a>
 
 There are currently two versions of RetroPie 3.0. There is one version for Raspberry Pi 1 (Model A, A+, B, B+) and there is a version for Raspberry Pi 2. Download the SD image for your version of Raspberry Pi:
 
-**[Raspberry Pi 1](http://blog.petrockblock.com/retropie/retropie-downloads/retropie-image-for-raspberry-pi-1/)**
+**[Raspberry Pi 1 / Zero](http://blog.petrockblock.com/retropie/retropie-downloads/retropie-image-for-raspberry-pi-1/)**
 
 **[Raspberry Pi 2](http://blog.petrockblock.com/retropie/retropie-downloads/retropie-sd-card-image-for-raspberry-pi-2-2/)**
 
@@ -42,13 +42,13 @@ There are currently two versions of RetroPie 3.0. There is one version for Raspb
 
 If you are unsure which version of Raspberry Pi you have there is an easy way to check:
 
-Rpi 1= 1 raspberry when the pi boots up
+Rpi 1/Zero= 1 raspberry when the pi boots up
 
 Rpi 2= 4 raspberries when the pi boots up
 
 ### Extract
 
-Once you have downloaded your SD card image you need to extract it using a program such as [7-Zip](http://www.7-zip.org/). You will extract the downloaded .gz file and the extracted file will be a .img file.
+Once you have downloaded your SD card image you need to extract it using a program such as [7-Zip](http://www.7-zip.org/). You will extract the downloaded **.gz** file and the extracted file will be a **.img** file.
 
 ### Install 3.0 Image on SD Card
 
@@ -190,10 +190,11 @@ For more WiFi configuration options see this page [HERE](https://github.com/Retr
 There are three main methods of transferring roms: 
 
 ### USB
+ * (ensure that your USB is formatted to FAT32)
  * first create a folder called `retropie` on your USB stick
  * plug it into the pi and wait for it to finish blinking
  * pull the USB out and plug it into a computer
- * add the roms to their respective folders (in the retropie/roms folder)
+ * add the roms to their respective folders (in the `retropie/roms` folder)
  * plug it back into the raspberry pi
  * wait for it to finish blinking
  * refresh emulationstation by pressing F4, or choosing quit from the start menu
