@@ -1,4 +1,4 @@
-![Atari Lynx](http://www.foregames.nl/uploaded_images/Lynx_Logo.jpg)
+![atarilynx](https://cloud.githubusercontent.com/assets/10035308/11575855/8099431a-99d0-11e5-9b24-4f67f15e4408.png)
 ***
 _The Atari Lynx is the world's first handheld gaming console with a color screen. It was released by Atari in 1989_
 ***
