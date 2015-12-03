@@ -223,7 +223,7 @@ The following diagrams are for the 3 most common controllers: Super Nintendo, Xb
 ## VirtualBoy
 ![virtualboydiagram](https://cloud.githubusercontent.com/assets/10035308/8246349/6552ef7a-15fa-11e5-9a78-1800b51cccc5.png)
 ***
+## Sega Dreamcast
+![sega_dreamcast_diagram](https://cloud.githubusercontent.com/assets/10035308/11432087/ae992b58-9463-11e5-928e-1ff3689c421d.png)
 ## Intellivision
 ![intellivision](https://cloud.githubusercontent.com/assets/10035308/8246393/3e98c8c2-15fb-11e5-9398-3f5abd60361b.png)
-## Sega Dreamcast
-![dreamcast](https://cloud.githubusercontent.com/assets/10035308/8246417/9c839e08-15fb-11e5-9747-cf0b25727c11.png)
