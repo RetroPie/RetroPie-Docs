@@ -13,7 +13,7 @@ Steven Sselph's scraper is probably the simplest way of scraping roms (provided 
 
 - **Update scraper to the latest version:** This updates the scraper to the latest version.
 
-Note that after you scrape the games you may need to restart emulationstation. It may take some time for the xml files to build. If it doesn't work you may need to try it outside of emulationstation from the terminal.
+Note that while scraping you have to kill EmulationStation processes so that the gamelists are created properly. It may take some time for the xml files to build.
 
 # EmulationStation Built-In Scraper:
 
