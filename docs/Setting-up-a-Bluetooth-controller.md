@@ -89,6 +89,15 @@ If you are unsure your USB Bluetooth dongle is detected with the Pi, you can lis
 Sometimes there can be issues with the pairing process, to start that again you can remove the joypad like this   
 `bluez-test-device remove XX:XX:XX:XX:XX:XX`
 
+**Keep bluetooth scanning**  
+This should keep the Pi scanning for bluetooth devices in case the pair is lost.  
+`sudo nano /etc/rc.local`  
+`add “sudo hciconfig hci0 up piscan” (without the quotes) above the line that says “exit 0”`  
+`ctrl x`  
+`y`  
+`enter`  
+`sudo reboot`
+
 **Some useful threads**  
 http://blog.petrockblock.com/forums/topic/8bitdo-bluetooth-controller-setup-retropie-v3/  
 http://blog.petrockblock.com/forums/topic/the-old-story-setting-up-2x-8bitdo-nes30-bluetooth/  
