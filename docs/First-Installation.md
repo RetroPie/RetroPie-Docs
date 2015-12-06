@@ -220,6 +220,7 @@ You can also log in as root if you wish to change more files than just the roms,
 
 ![samba](https://cloud.githubusercontent.com/assets/10035308/9141308/edee8b52-3cf4-11e5-8bf3-73f8c27f99fb.png)
 
+- if on MAC OS X open finder, select "Go" menu and "Connect to Server". Type "smb://retropie" and hit "Connect".
 
 ## PLAY!
 
