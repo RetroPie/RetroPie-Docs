@@ -19,7 +19,7 @@ Exit, and run the `retropie_setup.sh` script again. Select:
 SETUP (only if you already have run one of the installations above)
 317 Install PS3 controller driver
 ```
-After it finishes compiling, the GUI prompt will ask you to make sure that your Bluetooth dongle is connected. Press enter. The next prompt will ask you to connect your PS3 controller.
+After it finishes compiling, the GUI prompt will ask you to make sure that your Bluetooth dongle is connected. Press enter and connect your PS3 controller.
 
 Once this is done, you should be able to disconnect the controller, and pressing the Playstation button should connect it via Bluetooth.
 
