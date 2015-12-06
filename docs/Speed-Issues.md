@@ -10,6 +10,12 @@ BTW, for most of [those](http://www.youtube.com/watch?v=rm3IuXeIfaw) cores you s
 
 * genesis-plus-gx: Is still a bit too slow on the Pi. An alternative port is being considered.
 
+* mupen64plus: Due to limited processing power some games will never be fullspeed on the Pi2.   
+
+* reicast: Due to limited processing power some games will never be fullspeed on the Pi2.  
+
+* ppsspp: Due to limited processing power some games will never be fullspeed on the Pi2.  
+
 ## General Improvement in retroach
 set video_threaded = true in retroarch.cfg will improve video performance
 
