@@ -1,4 +1,4 @@
-![retropie-original-flat-outline](https://cloud.githubusercontent.com/assets/10035308/11428906/0300d80c-942e-11e5-8675-1e033d731d49.png)
+![retropie](https://cloud.githubusercontent.com/assets/10035308/11631694/6fa8e356-9cc0-11e5-8bce-4b8305f0fe8f.png)
 ***
 
 Welcome to the RetroPie-Setup wiki!
