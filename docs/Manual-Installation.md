@@ -57,6 +57,31 @@ The screen should look like this then:
 
 ![restropiesetupscript](https://cloud.githubusercontent.com/assets/10035308/10266202/c39fd7e0-6a10-11e5-80b1-74b642fe8441.png)
 
+## Verify Locale Settings
+Most of the install scripts will attempt to install a variety of packages and libraries that each emulator requires. These installations will fail if your system local settings are invalid. You can easily verify this by executing `locale` command. A valid locale will return values set for all options, such as in the example below.
+
+```
+LANG=en_US.UTF-8
+LANGUAGE=en_US:en
+LC_CTYPE="en_US.UTF-8"
+LC_NUMERIC="en_US.UTF-8"
+LC_TIME="en_US.UTF-8"
+LC_COLLATE="en_US.UTF-8"
+LC_MONETARY="en_US.UTF-8"
+LC_MESSAGES="en_US.UTF-8"
+LC_PAPER="en_US.UTF-8"
+LC_NAME="en_US.UTF-8"
+LC_ADDRESS="en_US.UTF-8"
+LC_TELEPHONE="en_US.UTF-8"
+LC_MEASUREMENT="en_US.UTF-8"
+LC_IDENTIFICATION="en_US.UTF-8"
+LC_ALL=en_US.UTF-8
+```
+
+If any of the above configuration lines are unset (particularly LANG, LANGUAGE, and LC_ALL), you should set them before installing RetroPie. The easiest way to set each item is to use the `update-locale` command, such as `$ sudo update-locale LC_ALL="en_US.UTF-8"`.
+
+Users can also set the local through the `raspi-config` tool.
+
 ## Full Install
 
 For the first installation, we choose the binaries-based installation, which takes 15-30 minutes. We start the installation simply by pressing ENTER.
