@@ -157,7 +157,7 @@ then
                 show "matched MAC in $id"
 
                 echo -n "Detected Wiimote with ID: ${id}..."
-                wminput -d -c /home/pi/bin/wiimote.input $id &
+                wminput -d -c /home/pi/mywminput $id &
                 echo " registered."
                 play $alert
             fi
