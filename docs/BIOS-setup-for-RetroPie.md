@@ -23,3 +23,4 @@ Emulator | Location
 | **Videopac or Odyssey2** | `/home/pi/RetroPie/BIOS/o2rom.bin`
 
 Retropie expects what BIOS name for Sega Genesis or MegaDrive?
+Also would be nice to have information about Nintendo SNES bios requirements.
