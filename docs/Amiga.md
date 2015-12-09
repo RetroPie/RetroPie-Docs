@@ -21,8 +21,8 @@ Accepted File Extensions: **.adf**
 
 ## BIOS
 The emulator comes with a free AROS rom that will work for running many games and demos. 
-If you want to
-use a kickstart 1.3, 2.0, 3.1 rom place your **kick13.rom, kick20.rom, kick31.rom** files in 
+
+If you want to use a kickstart 1.3, 2.0, 3.1 rom place your **kick13.rom, kick20.rom, kick31.rom** files in 
 
 
 ```shell
@@ -30,7 +30,7 @@ use a kickstart 1.3, 2.0, 3.1 rom place your **kick13.rom, kick20.rom, kick31.ro
 ```
 
 ## Controls
-Current controls (this may change) - these are hardcoded currently. This initial mapping was chosen as it's somewhat similar to MAME, and should mostly work on any controllers that use that input mapping (such as the picade). Joypad/Joystick is currently untested.
+These are hardcoded currently. This initial mapping was chosen as it's somewhat similar to MAME, and should mostly work on any controllers that use that input mapping (such as the picade). Joypad/Joystick is currently untested.
 
 in game:
 ```
