@@ -21,3 +21,5 @@ Emulator | Location
 | **sega cd** |`/home/pi/RetroPie/BIOS/us_scd1_9210.bin` **OR** `eu_mcd1_9210.bin` **OR** `jp_mcd1_9112.bin` for Europe and Japan respectively
 | **Sega Saturn** | `/home/pi/RetroPie/BIOS/saturn_bios.bin`
 | **Videopac or Odyssey2** | `/home/pi/RetroPie/BIOS/o2rom.bin`
+
+Retropie expects what BIOS name for Sega Genesis or MegaDrive?
