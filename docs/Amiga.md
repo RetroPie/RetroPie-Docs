@@ -58,7 +58,7 @@ alt="Testing joypad in RetroPie" width="300" height="190" border="10" /></a>
 
 ## Hints and troubleshooting
 
-- Some games work better with '512Kb Chip' + '512Kb Slow' memory configuration rather than default A500 '1MB Chip'. If your game crashes or fails to load, try to change memory settings in 'CPU RAM' tab of the UAE4ALL2 GUI.
+- Some games work better with '512Kb Chip' + '512Kb Slow' memory configuration rather than default A500 '1MB Chip'. If your game crashes or fails to load change memory settings in the 'CPU RAM' tab of the UAE4ALL2 GUI.
 
 - Some games do not work properly if more than one floppy drive is in use. If your game crashes or fails to load try to use just DF0 (change disc image during game if required) and not use DF1, DF2 and DF3.
 
