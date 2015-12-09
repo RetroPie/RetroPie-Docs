@@ -46,7 +46,7 @@ arrow keys - up / down / left / right
 lctrl + esc (exit back to menu)
 ```
 
-Launch it from Emulation Station, and you get the gui where you can configure disks/roms/memory and insert adfs images into the virtual drives. 
+Launch it from Emulation Station, and you get the GUI where you can configure disks/roms/memory and insert adf images into the virtual floppy disk drives. 
 
 It can't currently launch games directly from the Emulation Station menu, but the GUI is easy to use.
 
@@ -58,8 +58,8 @@ alt="Testing joypad in RetroPie" width="300" height="190" border="10" /></a>
 
 ## Hints and troubleshooting
 
-- Some games works better with '512Kb Chip' + '512Kb Slow' memory rather than default A500 '1MB Chip'. If game crashes or not loads try to change memory settings in 'CPU RAM' card of uae4all2 interface.
+- Some games work better with '512Kb Chip' + '512Kb Slow' memory configuration rather than default A500 '1MB Chip'. If your game crashes or fails to load, try to change memory settings in 'CPU RAM' tab of the UAE4ALL2 GUI.
 
-- Some games does not work properly if more than one floppy drive is in use. If game crashes or not loads try to use just DF0 (change disc image during game if required), and not use DF1, DF2 and DF3.
+- Some games do not work properly if more than one floppy drive is in use. If your game crashes or fails to load try to use just DF0 (change disc image during game if required) and not use DF1, DF2 and DF3.
 
-- For Raspberry pi 1 users - make sure you overclocked your device. Amiga emulation works much faster when overclocked to maximum. Without overclocking some games does not work in full speed.
+- For Raspberry Pi 1 users - make sure you overclock your device. Amiga emulation works much faster when overclocked to maximum. Without overclocking some games do not run at full speed.
