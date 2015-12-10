@@ -12,7 +12,7 @@
 * [Using SSH](https://github.com/RetroPie/RetroPie-Setup/wiki/ssh)
 
 ## Emulators
-* [3do](https://github.com/petrockblog/RetroPie-Setup/wiki/3do)
+* [Panasonic 3DO](https://github.com/petrockblog/RetroPie-Setup/wiki/3do)
 * [Amiga](https://github.com/petrockblog/RetroPie-Setup/wiki/Amiga)
 * [Amstrad CPC](https://github.com/petrockblog/RetroPie-Setup/wiki/Amstrad-CPC)
 * [Apple II](https://github.com/petrockblog/RetroPie-Setup/wiki/Apple-II)
@@ -37,10 +37,10 @@
 * [Master System](https://github.com/petrockblog/RetroPie-Setup/wiki/Master-System)
 * [Megadrive/Genesis](https://github.com/petrockblog/RetroPie-Setup/wiki/Genesis-Megadrive)
 * [MSX](https://github.com/petrockblog/RetroPie-Setup/wiki/MSX)
-* [N64](https://github.com/petrockblog/RetroPie-Setup/wiki/Nintendo-64)
+* [Nintendo 64](https://github.com/petrockblog/RetroPie-Setup/wiki/Nintendo-64)
 * [Nintendo DS](https://github.com/petrockblog/RetroPie-Setup/wiki/Nintendo-DS)
 * [Neo Geo](https://github.com/petrockblog/RetroPie-Setup/wiki/Neo-Geo)
-* [NES Nintendo Entertainment System](https://github.com/petrockblog/RetroPie-Setup/wiki/Nintendo-Entertainment-System)
+* [Nintendo Entertainment System](https://github.com/petrockblog/RetroPie-Setup/wiki/Nintendo-Entertainment-System)
 * [Neo Geo Pocket (Color)](https://github.com/petrockblog/RetroPie-Setup/wiki/Neo-Geo-Pocket)
 * [PC](https://github.com/petrockblog/RetroPie-Setup/wiki/PC)
 * [PC Engine/TurboGrafx-16](https://github.com/petrockblog/RetroPie-Setup/wiki/PC-Engine)
