@@ -88,7 +88,6 @@ cp /path/to/roms/* ~/roms/snes/
     
 EmulationStation is found in the AUR.
 ```shell
-apacman -S sdl2-rbp-git
 apacman -S emulationstation-git
 ```
 
