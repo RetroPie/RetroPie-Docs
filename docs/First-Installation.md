@@ -86,6 +86,8 @@ See the following diagrams for reference:
 
 ### Default Hotkeys
 
+Hotkeys enable you to press a combination of buttons to access functions such as saving, loading, and exiting emulators. The following chart shows the default hotkey combinations. By default, the hotkey is select so that means you hold down select while pressing another button to execute a command.
+
 Hotkeys | Action
 | :---: | :---: |
 Select+Start | Exit
