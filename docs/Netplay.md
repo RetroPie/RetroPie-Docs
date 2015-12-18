@@ -1,6 +1,6 @@
 # Netplay
 
-Some retroarch cores have netplay built in which means that if you have some mates in a different place and still want to play games with them you can.
+Some retroarch cores have netplay built in which means that if you have some friends in a different place and still want to play games with them you can.
 
 There are a few stipulations that have to be met before you are able to utilise netplay:
 
