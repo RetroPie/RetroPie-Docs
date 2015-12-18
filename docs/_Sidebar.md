@@ -3,7 +3,7 @@
 ## [Getting Started](https://github.com/RetroPie/RetroPie-Setup/wiki/First-Installation)
 
 * [**First Installation**](https://github.com/RetroPie/RetroPie-Setup/wiki/First-Installation)
-* [Setting Up Wifi](https://github.com/RetroPie/RetroPie-Setup/wiki/Setting-Up-Wifi)
+* [Setting Up WiFi](https://github.com/RetroPie/RetroPie-Setup/wiki/Setting-Up-Wifi)
 * [Configuring Controllers (RetroArch)](https://github.com/RetroPie/RetroPie-Setup/wiki/RetroArch-Configuration)
 * [Transferring games (ROMs)](https://github.com/RetroPie/RetroPie-Setup/wiki/How-to-get-ROMs-on-the-SD-card)
 * [Getting the right MAME ROMs](https://github.com/RetroPie/RetroPie-Setup/wiki/Managing-ROMs)
@@ -89,7 +89,7 @@
 * [Bluetooth controller](https://github.com/RetroPie/RetroPie-Setup/wiki/Setting-up-a-Bluetooth-controller)
 * [Smartphone Gamepad](https://github.com/RetroPie/RetroPie-Setup/wiki/Virtual-Gamepad)
 * [Wiimotes](https://github.com/RetroPie/RetroPie-Setup/wiki/Wiimotes-with-classic-controllers)
-* [Wii U Pro Controller (debian jessie only)](https://github.com/RetroPie/RetroPie-Setup/wiki/Setting-up-Wii-U-Pro-controller)
+* [Wii U Pro Controller (Debian jessie only)](https://github.com/RetroPie/RetroPie-Setup/wiki/Setting-up-Wii-U-Pro-controller)
 * [Xin-Mo Driver](https://github.com/RetroPie/RetroPie-Setup/wiki/Troubles-with-the-Xin-Mo-Controller)
 * [GPIO Controller Module](https://github.com/RetroPie/RetroPie-Setup/wiki/Module-for-GPIO-interface-for-retro-game-controllers)
 
