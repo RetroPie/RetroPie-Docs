@@ -8,7 +8,7 @@ Much of the emulation for later models, such as the Falcon, is still experimenta
 
 ## ROMS
 
-Accepted File Extensions: **.st .stx .img .rom**
+Accepted File Extensions: **.bin .st .stx .img .rom**
 
 Place your Atari ST/STE/TT/Falcon ROMS in
 ```
