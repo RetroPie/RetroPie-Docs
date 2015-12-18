@@ -5,7 +5,7 @@ _Atari released a series of 8 bit computers (400, 800, 1200XL, 600XL, 800XL, 130
 ## Emulator: [Atari800](http://atari800.sourceforge.net/) 
 This emulator emulates the Atari 8 bit family: 400, 800, 1200XL, 600XL, 800XL, 130XE, XEGS and the Atari 5200. This one of the more tricky emulators to get set up as it requires a multiplicity of BIOS files and configurations depending on what systems you want to utilise but it seems to run Atari 5200 games pretty well.
 ## ROMS
-Accepted File Extensions: **.xex .bin .a52**
+Accepted File Extensions: **.a52 .bas .bin .xex .atr .xfd .dcm .atr.gz .xfd.gz**
 
 Place your Atari 400,800, ROMS in
 ```shell
