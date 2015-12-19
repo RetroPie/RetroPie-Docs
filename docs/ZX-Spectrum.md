@@ -5,7 +5,7 @@ _The ZX Spectrum was an 8 bit series of home computers released by Sinclair Rese
 
 ***
 
-## Emulators: [lr-fuse](https://github.com/libretro/fuse-libretro), [FBZX](http://www.rastersoft.com/fbzx.html), [Fuse](http://fuse-emulator.sourceforge.net/)
+## Emulators: [lr-fuse](https://github.com/libretro/fuse-libretro), [FBZX](http://www.rastersoft.com/programas/fbzx.html), [Fuse](http://fuse-emulator.sourceforge.net/)
 
 ## ROMS
 
