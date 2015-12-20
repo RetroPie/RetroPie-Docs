@@ -21,6 +21,11 @@ This is where [clrmamepro](http://mamedev.emulab.it/clrmamepro/) comes in.  Clrm
 
 Here are the steps to getting started with clrmamepro.
 
+## Video Tutorial:
+<a href="https://www.youtube.com/watch?v=_lssz2pAba8" target="_blank"><img src="https://i.ytimg.com/vi_webp/_lssz2pAba8/mqdefault.webp" 
+alt="clrmamepro Video" width="300" height="180" border="10" /></a>
+
+
 ##Requirements:#
 * A Raspberry Pi running a RetroPie v2.4.x, v2.5.x or v2.6.x SD card image.  Other images may work, but they have not been tested with these instructions.  All you need from the RetroPie image are the DAT files (explained below).
 * A Windows PC for setting up RetroPie and running clrmamepro. This tutorial assumes you are running a 64 bit version of Windows, but the steps for 32 bit Windows will be the same once you get past downloading the clrmamepro software.
@@ -94,10 +99,6 @@ That's the basics of using clrmamepro.  Some additional notes:
 * clrmamepro is very stable.  It has been around for a long time, it is regularly updated and it is widely used.  If it reports problems reading your ROMs, you most likely have corrupt ROM archives (zip files) or a failing hard drive.
 
 * If you feel the need to reset clrmamepro's settings, just delete your existing profile(s) and reload your DAT file, selecting **"Default"** settings for the new profile.  Almost all of clrmamepro's settings are per-profile.
-
-## Video Tutorial:
-<a href="https://www.youtube.com/watch?v=SuWl2GdEfDA" target="_blank"><img src="https://i.ytimg.com/vi_webp/SuWl2GdEfDA/mqdefault.webp" 
-alt="N64 Configuration Video" width="300" height="180" border="10" /></a>
 
 # List of Emulators and Their Respective Romsets:
 
