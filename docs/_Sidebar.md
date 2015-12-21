@@ -12,6 +12,7 @@
 * [Using SSH](https://github.com/RetroPie/RetroPie-Setup/wiki/ssh)
 
 ## Emulators
+* [3DO](https://github.com/petrockblog/RetroPie-Setup/wiki/3do)
 * [Amstrad CPC](https://github.com/petrockblog/RetroPie-Setup/wiki/Amstrad-CPC)
 * [Apple II](https://github.com/petrockblog/RetroPie-Setup/wiki/Apple-II)
 * [Atari 800 ST/STE/TT/Falcon](https://github.com/petrockblog/RetroPie-Setup/wiki/Atari-ST-STE-TT-Falcon)
@@ -38,7 +39,6 @@
 * [Nintendo Entertainment System](https://github.com/petrockblog/RetroPie-Setup/wiki/Nintendo-Entertainment-System)
 * [Neo Geo](https://github.com/petrockblog/RetroPie-Setup/wiki/Neo-Geo)
 * [Neo Geo Pocket (Color)](https://github.com/petrockblog/RetroPie-Setup/wiki/Neo-Geo-Pocket)
-* [Panasonic 3DO](https://github.com/petrockblog/RetroPie-Setup/wiki/3do)
 * [PC](https://github.com/petrockblog/RetroPie-Setup/wiki/PC)
 * [PC Engine/TurboGrafx-16](https://github.com/petrockblog/RetroPie-Setup/wiki/PC-Engine)
 * [Ports](https://github.com/petrockblog/RetroPie-Setup/wiki/Ports)
