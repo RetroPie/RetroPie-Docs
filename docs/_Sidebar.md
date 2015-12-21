@@ -12,7 +12,7 @@
 * [Using SSH](https://github.com/RetroPie/RetroPie-Setup/wiki/ssh)
 
 ## Emulators
-* [3DO](https://github.com/petrockblog/RetroPie-Setup/wiki/3do)
+* [3do](https://github.com/petrockblog/RetroPie-Setup/wiki/3do)
 * [Amstrad CPC](https://github.com/petrockblog/RetroPie-Setup/wiki/Amstrad-CPC)
 * [Apple II](https://github.com/petrockblog/RetroPie-Setup/wiki/Apple-II)
 * [Atari 800 ST/STE/TT/Falcon](https://github.com/petrockblog/RetroPie-Setup/wiki/Atari-ST-STE-TT-Falcon)
