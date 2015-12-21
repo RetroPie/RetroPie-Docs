@@ -12,7 +12,7 @@ The following chart is a quick reference for all the arcade emulators in RetroPi
 | [advmame-1.2/4](https://github.com/RetroPie/RetroPie-Setup/wiki/MAME) | 0.106 | 6166 | [.DAT](http://smartretro.co.uk/forums/download/file.php?id=23&sid=51593df3da1e20af98e425975a9e6f98)| [List](https://docs.google.com/spreadsheets/d/1RapyxChe2BMOfbX-FsCup9SXGxvS1WmXAofwaTJtmxc/edit?usp=sharing) |
 | [pifba](https://github.com/RetroPie/RetroPie-Setup/wiki/FinalBurn-Alpha) | 0.114 (fba 0.2.96.71) | 684 | [.DAT](https://drive.google.com/file/d/0B2TMeZ6iEFvHaXNtSWpzb3JlTjg/view?usp=sharing)| [List](https://docs.google.com/spreadsheets/d/1OZioLrz16ptaNbjQUDP5hhVzQDTOTn9Nz46Hbj3-06k/edit?usp=sharing) |
 | [lr-fba](https://github.com/RetroPie/RetroPie-Setup/wiki/FinalBurn-Alpha) | 0.154 (fba 0.2.97.30) | [3369](https://raw.githubusercontent.com/libretro/fba-libretro/master/svn-current/trunk/gamelist.txt) | [.DAT](http://smartretro.co.uk/forums/download/file.php?id=21&sid=51593df3da1e20af98e425975a9e6f98)| [List](https://docs.google.com/spreadsheets/d/1rWO7Lm0bTGNpak6J-CPzde0GNIDP0NHDoQdJ6iWosfA/edit?usp=sharing) |
-| [lr-fba-next](https://github.com/RetroPie/RetroPie-Setup/wiki/FinalBurn-Alpha) | 0.167 (fba 0.2.97.37) | [3743](https://raw.githubusercontent.com/libretro/libretro-fba/master/gamelist.txt) | [.DAT](https://drive.google.com/file/d/0B2TMeZ6iEFvHMkhrcmJ0UjVRWDg/view?usp=sharing)| [List](https://docs.google.com/spreadsheets/d/1GaqIIoiWbzKHwZ52S2xCSDQXILo81Ls1mHK6czKGAtM/edit?usp=sharing) |
+| [lr-fba-next](https://github.com/RetroPie/RetroPie-Setup/wiki/FinalBurn-Alpha) | 0.167 (fba 0.2.97.37) | [3970](https://raw.githubusercontent.com/libretro/libretro-fba/master/gamelist.txt) | [.DAT](https://drive.google.com/file/d/0B2TMeZ6iEFvHQWNKNEJtZDdfMHc/view?usp=sharing)| [List](https://docs.google.com/spreadsheets/d/1GaqIIoiWbzKHwZ52S2xCSDQXILo81Ls1mHK6czKGAtM/edit?usp=sharing) |
 | [gngeopi](https://github.com/RetroPie/RetroPie-Setup/wiki/Neo-Geo) | 0.138 | 203 | [.DAT](http://smartretro.co.uk/forums/download/file.php?id=22&sid=51593df3da1e20af98e425975a9e6f98)| [List](https://docs.google.com/spreadsheets/d/1A_a_9t14uzDUMrrO0RgLDwiVUiycmclcPIs6cU6Iox8/edit?usp=sharing) |
 
 See also: [MAME](https://github.com/petrockblog/RetroPie-Setup/wiki/MAME), [FBA](https://github.com/petrockblog/RetroPie-Setup/wiki/FinalBurn-Alpha)
@@ -295,17 +295,17 @@ Roms Dir: /home/pi/RetroPie/roms/fba
 Binary Dir: /opt/retropie/libretrocores/lr-fba-next
 Config Dir: /opt/retropie/configs/fba/retroarch.cfg
 ```
-MAME Version: **FBA 0.2.97.36** which is based on MAME 0.161 (April 2015)
+MAME Version: **FBA 0.2.97.37** which is based on MAME 0.167 (April 2015)
 
-Romsets emulated: 3743 (includes clones etc..)
+Romsets emulated: 3970 (includes clones etc..)
 
-Active Sets 3743/3743
-* Parents 802/802
-* Clones 2408/2408
-* Others 533/533
+Active Sets 3970/3970
+* Parents 837/837
+* Clones 2583/2583
+* Others 550/550
 * BIOS 6/6
 
-Dat File: [FB Alpha v0.2.97.36.dat.zip](https://drive.google.com/file/d/0B2TMeZ6iEFvHMkhrcmJ0UjVRWDg/view?usp=sharing)
+Dat File: [FB Alpha v0.2.97.36.dat.zip](https://drive.google.com/file/d/0B2TMeZ6iEFvHQWNKNEJtZDdfMHc/view?usp=sharing)
 
 [**lr-fba-next COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1GaqIIoiWbzKHwZ52S2xCSDQXILo81Ls1mHK6czKGAtM/edit?usp=sharing)  feel free to contribute to the list.
 
