@@ -4,16 +4,16 @@ The following chart is a quick reference for all the arcade emulators in RetroPi
 
 | Emulator | Romset | # of ROMs | [.DAT Files](https://github.com/HerbFargus/retropie-dat/archive/master.zip) | Compatibility List |
 | :---: | :---: | :---: | :---: | :---: |
-| [mame4all](https://github.com/RetroPie/RetroPie-Setup/wiki/MAME) | 0.37b5 | [2270](http://code.google.com/p/imame4all/wiki/GameList) | [.DAT](https://drive.google.com/file/d/0B2TMeZ6iEFvHNDNHcl8tcUNIcDA/view?usp=sharing)| [List](https://docs.google.com/spreadsheets/d/1gpuoZx78kDDdnf_yADicsSZHMfpOxNySSov7UdCDAik/edit?usp=sharing) |
-| [lr-imame4all](https://github.com/RetroPie/RetroPie-Setup/wiki/MAME) | 0.37b5 | [2270](http://code.google.com/p/imame4all/wiki/GameList) | [.DAT](https://drive.google.com/file/d/0B2TMeZ6iEFvHNDNHcl8tcUNIcDA/view?usp=sharing)| [List](https://docs.google.com/spreadsheets/d/1Fmx2RPcgVgIIeKpaBKNEGWCDuu3DGfR-VkrnIVsIpeE/edit?usp=sharing) |
-| [lr-mame2003](https://github.com/RetroPie/RetroPie-Setup/wiki/MAME) | 0.78 | 4705 | [.DAT](https://drive.google.com/file/d/0B2TMeZ6iEFvHcGtvSlVBTlpXSXc/view?usp=sharing)| [List](https://docs.google.com/spreadsheets/d/1LP1MELCvcxu7TfiowF_0ZuvRVEMqlfQyTVetnOJvuJc/edit?usp=sharing) |
-| [lr-mame2010](https://github.com/RetroPie/RetroPie-Setup/wiki/MAME) | 0.139 | 8782 | [.DAT](https://drive.google.com/file/d/0B2TMeZ6iEFvHYmtlc0JzSVp5OTg/view?usp=sharing)| [List](https://docs.google.com/spreadsheets/d/1IRSmFrSDvIc6gAw0gn12TcQ3HDOwmrETTor8wvvb7VI/edit?usp=sharing) |
-| [advmame-.94](https://github.com/RetroPie/RetroPie-Setup/wiki/MAME) | 0.94 | 5563 | [.DAT](http://smartretro.co.uk/forums/download/file.php?id=18&sid=51593df3da1e20af98e425975a9e6f98)| [List](https://docs.google.com/spreadsheets/d/1AEQ94buG0rvbW0xdnYKeuEhHeCbuZlRfRJQCb1Dt8fw/edit?usp=sharing) |
-| [advmame-1.2/4](https://github.com/RetroPie/RetroPie-Setup/wiki/MAME) | 0.106 | 6166 | [.DAT](http://smartretro.co.uk/forums/download/file.php?id=23&sid=51593df3da1e20af98e425975a9e6f98)| [List](https://docs.google.com/spreadsheets/d/1RapyxChe2BMOfbX-FsCup9SXGxvS1WmXAofwaTJtmxc/edit?usp=sharing) |
-| [pifba](https://github.com/RetroPie/RetroPie-Setup/wiki/FinalBurn-Alpha) | 0.114 (fba 0.2.96.71) | 684 | [.DAT](https://drive.google.com/file/d/0B2TMeZ6iEFvHaXNtSWpzb3JlTjg/view?usp=sharing)| [List](https://docs.google.com/spreadsheets/d/1OZioLrz16ptaNbjQUDP5hhVzQDTOTn9Nz46Hbj3-06k/edit?usp=sharing) |
-| [lr-fba](https://github.com/RetroPie/RetroPie-Setup/wiki/FinalBurn-Alpha) | 0.154 (fba 0.2.97.30) | [3369](https://raw.githubusercontent.com/libretro/fba-libretro/master/svn-current/trunk/gamelist.txt) | [.DAT](http://smartretro.co.uk/forums/download/file.php?id=21&sid=51593df3da1e20af98e425975a9e6f98)| [List](https://docs.google.com/spreadsheets/d/1rWO7Lm0bTGNpak6J-CPzde0GNIDP0NHDoQdJ6iWosfA/edit?usp=sharing) |
-| [lr-fba-next](https://github.com/RetroPie/RetroPie-Setup/wiki/FinalBurn-Alpha) | 0.167 (fba 0.2.97.37) | [3970](https://raw.githubusercontent.com/libretro/libretro-fba/master/gamelist.txt) | [.DAT](https://drive.google.com/file/d/0B2TMeZ6iEFvHQWNKNEJtZDdfMHc/view?usp=sharing)| [List](https://docs.google.com/spreadsheets/d/1GaqIIoiWbzKHwZ52S2xCSDQXILo81Ls1mHK6czKGAtM/edit?usp=sharing) |
-| [gngeopi](https://github.com/RetroPie/RetroPie-Setup/wiki/Neo-Geo) | 0.138 | 203 | [.DAT](http://smartretro.co.uk/forums/download/file.php?id=22&sid=51593df3da1e20af98e425975a9e6f98)| [List](https://docs.google.com/spreadsheets/d/1A_a_9t14uzDUMrrO0RgLDwiVUiycmclcPIs6cU6Iox8/edit?usp=sharing) |
+| [mame4all](https://github.com/RetroPie/RetroPie-Setup/wiki/MAME) | 0.37b5 | [2270](http://code.google.com/p/imame4all/wiki/GameList) | [.DAT](https://drive.google.com/file/d/0B2TMeZ6iEFvHQnJqS19JRUhzSmM/view?usp=sharing)| [List](https://docs.google.com/spreadsheets/d/1gpuoZx78kDDdnf_yADicsSZHMfpOxNySSov7UdCDAik/edit?usp=sharing) |
+| [lr-imame4all](https://github.com/RetroPie/RetroPie-Setup/wiki/MAME) | 0.37b5 | [2270](http://code.google.com/p/imame4all/wiki/GameList) | [.DAT](https://drive.google.com/file/d/0B2TMeZ6iEFvHQnJqS19JRUhzSmM/view?usp=sharing)| [List](https://docs.google.com/spreadsheets/d/1Fmx2RPcgVgIIeKpaBKNEGWCDuu3DGfR-VkrnIVsIpeE/edit?usp=sharing) |
+| [lr-mame2003](https://github.com/RetroPie/RetroPie-Setup/wiki/MAME) | 0.78 | 4705 | [.DAT](https://drive.google.com/file/d/0B2TMeZ6iEFvHTkc2TXZOOFhCRzQ/view?usp=sharing)| [List](https://docs.google.com/spreadsheets/d/1LP1MELCvcxu7TfiowF_0ZuvRVEMqlfQyTVetnOJvuJc/edit?usp=sharing) |
+| [lr-mame2010](https://github.com/RetroPie/RetroPie-Setup/wiki/MAME) | 0.139 | 8782 | [.DAT](https://drive.google.com/file/d/0B2TMeZ6iEFvHUFdCc04zZ3o4dnM/view?usp=sharing)| [List](https://docs.google.com/spreadsheets/d/1IRSmFrSDvIc6gAw0gn12TcQ3HDOwmrETTor8wvvb7VI/edit?usp=sharing) |
+| [advmame-.94](https://github.com/RetroPie/RetroPie-Setup/wiki/MAME) | 0.94 | 5563 | [.DAT](https://drive.google.com/file/d/0B2TMeZ6iEFvHa2E5Rzl4ZEdMdjQ/view?usp=sharing)| [List](https://docs.google.com/spreadsheets/d/1AEQ94buG0rvbW0xdnYKeuEhHeCbuZlRfRJQCb1Dt8fw/edit?usp=sharing) |
+| [advmame-1.4](https://github.com/RetroPie/RetroPie-Setup/wiki/MAME) | 0.106 | 6166 | [.DAT](https://drive.google.com/file/d/0B2TMeZ6iEFvHMEZnb1RxQWNmdHM/view?usp=sharing)| [List](https://docs.google.com/spreadsheets/d/1RapyxChe2BMOfbX-FsCup9SXGxvS1WmXAofwaTJtmxc/edit?usp=sharing) |
+| [pifba](https://github.com/RetroPie/RetroPie-Setup/wiki/FinalBurn-Alpha) | 0.114 (fba 0.2.96.71) | 684 | [.DAT](https://drive.google.com/file/d/0B2TMeZ6iEFvHaHUta2dQYk1HTGM/view?usp=sharing)| [List](https://docs.google.com/spreadsheets/d/1OZioLrz16ptaNbjQUDP5hhVzQDTOTn9Nz46Hbj3-06k/edit?usp=sharing) |
+| [lr-fba](https://github.com/RetroPie/RetroPie-Setup/wiki/FinalBurn-Alpha) | 0.154 (fba 0.2.97.30) | [3369](https://raw.githubusercontent.com/libretro/fba-libretro/master/svn-current/trunk/gamelist.txt) | [.DAT](https://drive.google.com/file/d/0B2TMeZ6iEFvHcF96YmdjaWlEdXM/view?usp=sharing)| [List](https://docs.google.com/spreadsheets/d/1rWO7Lm0bTGNpak6J-CPzde0GNIDP0NHDoQdJ6iWosfA/edit?usp=sharing) |
+| [lr-fba-next](https://github.com/RetroPie/RetroPie-Setup/wiki/FinalBurn-Alpha) | 0.167 (fba 0.2.97.37) | [3970](https://raw.githubusercontent.com/libretro/libretro-fba/master/gamelist.txt) | [.DAT](https://drive.google.com/file/d/0B2TMeZ6iEFvHMjEyRHItVW1wV1k/view?usp=sharing)| [List](https://docs.google.com/spreadsheets/d/1GaqIIoiWbzKHwZ52S2xCSDQXILo81Ls1mHK6czKGAtM/edit?usp=sharing) |
+| [gngeopi](https://github.com/RetroPie/RetroPie-Setup/wiki/Neo-Geo) | 0.138 | 203 | [.DAT](https://drive.google.com/file/d/0B2TMeZ6iEFvHZVVCYmVtaUM1VlU/view?usp=sharing)| [List](https://docs.google.com/spreadsheets/d/1A_a_9t14uzDUMrrO0RgLDwiVUiycmclcPIs6cU6Iox8/edit?usp=sharing) |
 
 See also: [MAME](https://github.com/petrockblog/RetroPie-Setup/wiki/MAME), [FBA](https://github.com/petrockblog/RetroPie-Setup/wiki/FinalBurn-Alpha)
 
@@ -131,11 +131,11 @@ Active Sets 2241/2241
 * Others 690/690
 * BIOS 1/1
 
-Dat File: [mame4all-037b5-RetroPie-260.zip](http://smartretro.co.uk/forums/download/file.php?id=20&sid=51593df3da1e20af98e425975a9e6f98)
+Dat File: [mame4all-037b5-RetroPie-260.zip](https://drive.google.com/file/d/0B2TMeZ6iEFvHVUNfWHpUZk82bkk/view?usp=sharing)
 
-Dat File (with merge data): [MAME 0.37b5.dat](https://drive.google.com/file/d/0B2TMeZ6iEFvHNDNHcl8tcUNIcDA/view?usp=sharing)
+Dat File (with merge data): [MAME 0.37b5.dat](https://drive.google.com/file/d/0B2TMeZ6iEFvHQnJqS19JRUhzSmM/view?usp=sharing)
 
-Dat File (no clones, no neogeo): [mame4all-no-clones-no-neogeo](http://s000.tinyupload.com/index.php?file_id=07696766073490048881)
+Dat File (no clones, no neogeo): [mame4all-no-clones-no-neogeo](https://drive.google.com/file/d/0B2TMeZ6iEFvHNm5OYndFUHM3djg/view?usp=sharing)
 
 [**MAME4ALL-PI COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1gpuoZx78kDDdnf_yADicsSZHMfpOxNySSov7UdCDAik/edit?usp=sharing)  feel free to contribute to the list.
 
@@ -157,11 +157,11 @@ Active Sets 2241/2241
 * Others 690/690
 * BIOS 1/1
 
-Dat File: [mame4all-037b5-RetroPie-260.zip](http://smartretro.co.uk/forums/download/file.php?id=20&sid=51593df3da1e20af98e425975a9e6f98)
+Dat File: [mame4all-037b5-RetroPie-260.zip](https://drive.google.com/file/d/0B2TMeZ6iEFvHVUNfWHpUZk82bkk/view?usp=sharing)
 
-Dat File (with merge data): [MAME 0.37b5.dat](https://drive.google.com/file/d/0B2TMeZ6iEFvHNDNHcl8tcUNIcDA/view?usp=sharing) 
+Dat File (with merge data): [MAME 0.37b5.dat](https://drive.google.com/file/d/0B2TMeZ6iEFvHQnJqS19JRUhzSmM/view?usp=sharing)
 
-Dat File (no clones, no neogeo): [mame4all-no-clones-no-neogeo](http://s000.tinyupload.com/index.php?file_id=07696766073490048881)
+Dat File (no clones, no neogeo): [mame4all-no-clones-no-neogeo](https://drive.google.com/file/d/0B2TMeZ6iEFvHNm5OYndFUHM3djg/view?usp=sharing)
 
 [**lr-IMAME4ALL COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1Fmx2RPcgVgIIeKpaBKNEGWCDuu3DGfR-VkrnIVsIpeE/edit?usp=sharing)  feel free to contribute to the list.
 
@@ -181,15 +181,16 @@ Active Sets 4705/4705
 * Others 1624/1624
 * BIOS 1/1
 
-Dat File (with merge data): [MAME 0.78.dat](https://drive.google.com/file/d/0B2TMeZ6iEFvHcGtvSlVBTlpXSXc/view?usp=sharing) 
+Dat File (with merge data): [MAME 0.78.dat](https://drive.google.com/file/d/0B2TMeZ6iEFvHTkc2TXZOOFhCRzQ/view?usp=sharing) 
 
-Dat File (working only, no clones): [mame2003-lr-working-no-clones](http://s000.tinyupload.com/index.php?file_id=04618720736720226948)
+Dat File (working only, no clones): [mame2003-lr-working-no-clones](https://drive.google.com/file/d/0B2TMeZ6iEFvHV21wRVh6TF9uQ1U/view?usp=sharing)
 
-Dat File ('lite' set: working, no clones, neogeo, PlayChoice (NES multiplay), no rotary/dial/trackball/lightgun controls, no casino/multiplay/quiz/mahjong/fruit_machines/rhythm/mature): [mame2003-lr-lite](http://s000.tinyupload.com/index.php?file_id=05598248539957382925) (No. roms: 1615)
+Dat File ('lite' set: working, no clones, neogeo, PlayChoice (NES multiplay), no rotary/dial/trackball/lightgun controls, no casino/multiplay/quiz/mahjong/fruit_machines/rhythm/mature): [mame2003-lr-lite](https://drive.google.com/file/d/0B2TMeZ6iEFvHY1VzcXYyT09iRGs/view?usp=sharing) (No. roms: 1615)
 
 [**lr-mame2003 COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1LP1MELCvcxu7TfiowF_0ZuvRVEMqlfQyTVetnOJvuJc/edit?usp=sharing)  feel free to contribute to the list.
 
 ### [lr-mame2010](https://github.com/libretro/mame2010-libretro)
+
 ```shell
 Roms Dir: /home/pi/RetroPie/roms/mame-libretro
 Binary Dir: /opt/retropie/libretrocores/lr-mame2010
@@ -205,17 +206,17 @@ Active Sets 8782/8782
 * Others 2683/2683
 * BIOS 1/1
 
-Dat File (with merge data): [MAME 0.139.dat](https://drive.google.com/file/d/0B2TMeZ6iEFvHYmtlc0JzSVp5OTg/view?usp=sharing) 
+Dat File (with merge data): [MAME 0.139.dat](https://drive.google.com/file/d/0B2TMeZ6iEFvHUFdCc04zZ3o4dnM/view?usp=sharing) 
 
 [**lr-mame2010 COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1IRSmFrSDvIc6gAw0gn12TcQ3HDOwmrETTor8wvvb7VI/edit?usp=sharing) feel free to contribute to the list.
 
-### [AdvanceMAME 0.94.0 and 1.2](http://sourceforge.net/projects/advancemame/files/advancemame/0.94.0/)
+### [AdvanceMAME 0.94.0 and 1.4](http://sourceforge.net/projects/advancemame/files/advancemame/0.94.0/)
 ```shell
 Roms Dir: /home/pi/RetroPie/roms/mame-advmame
 Binary Dir: /opt/retropie/emulators/advmame/bin
 Config Dir: /opt/retropie/configs/mame-advmame
 ```
-MAME Version: Based on **MAME 0.94** (March 2005) or (for 1.2) Based on **MAME 0.106** (May 2006)
+MAME Version: Based on **MAME 0.94** (March 2005) or (for 1.4) Based on **MAME 0.106** (May 2006)
 
 Size: 11.6GB (0.94.0) Size: 14.8GB (1.2)
 
@@ -227,19 +228,19 @@ Active Sets (For 0.94.0) 5563/5563
 * Others 1829/1829
 * BIOS 25/25
 
-Active Sets (For 1.2) 6166/6166
+Active Sets (For 1.4) 6166/6166
 * Parents 1388/1388
 * Clones 2824/2824
 * Others 1928/1928
 * BIOS 26/26
 
-Dat File: [advmame-0.94-RetroPie-260.7z](http://smartretro.co.uk/forums/download/file.php?id=18&sid=51593df3da1e20af98e425975a9e6f98)
+Dat File: [advmame-0.94-RetroPie-260.7z](https://drive.google.com/file/d/0B2TMeZ6iEFvHa2E5Rzl4ZEdMdjQ/view?usp=sharing)
 
 [**AdvMame .94 COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1AEQ94buG0rvbW0xdnYKeuEhHeCbuZlRfRJQCb1Dt8fw/edit?usp=sharing)  feel free to contribute to the list.
 
-Dat File: [advmame12-106.7z](http://smartretro.co.uk/forums/download/file.php?id=23&sid=51593df3da1e20af98e425975a9e6f98)
+Dat File: [advmame12-106.7z](https://drive.google.com/file/d/0B2TMeZ6iEFvHMEZnb1RxQWNmdHM/view?usp=sharing)
 
-[**AdvMame 1.2 COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1RapyxChe2BMOfbX-FsCup9SXGxvS1WmXAofwaTJtmxc/edit?usp=sharing)  feel free to contribute to the list.
+[**AdvMame 1.4 COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1RapyxChe2BMOfbX-FsCup9SXGxvS1WmXAofwaTJtmxc/edit?usp=sharing)  feel free to contribute to the list.
 
 ### [PiFBA](http://sourceforge.net/projects/pifba/)
 ```shell
@@ -253,15 +254,15 @@ Size: 3.62 GB
 
 Romsets emulated: 684 (no clones)
 
-Dat File: [fba_0.2.96.71_clrmame_dat.zip](http://smartretro.co.uk/forums/download/file.php?id=17&sid=51593df3da1e20af98e425975a9e6f98)
+Dat File: [fba_0.2.96.71_clrmame_dat.zip](https://drive.google.com/file/d/0B2TMeZ6iEFvHaHUta2dQYk1HTGM/view?usp=sharing)
 
-Dat File (With merge data): [FB Alpha v0.2.96.71 (ClrMame Pro).dat](https://drive.google.com/file/d/0B2TMeZ6iEFvHaXNtSWpzb3JlTjg/view?usp=sharing)
+Dat File (With merge data): [FB Alpha v0.2.96.71 (ClrMame Pro).dat](https://drive.google.com/file/d/0B2TMeZ6iEFvHZFJOckQyRVZ5OG8/view?usp=sharing)
 
 All clones (current tested) non-working\mahjong\quiz\adult\casino\rythm removed
 
 Romsets emulated: 291
 
-Dat File: [fba_029671_od_release_10_working_roms_filtered.zip] (https://www.dropbox.com/s/mooc4mzesl3r2og/fba_029671_od_release_10_working_roms_filtered.zip?dl=0)
+Dat File: [fba_029671_od_release_10_working_roms_filtered.zip] (https://drive.google.com/file/d/0B2TMeZ6iEFvHMTV2TnlrZWwxRXc/view?usp=sharing)
 
 [**PiFBA COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1OZioLrz16ptaNbjQUDP5hhVzQDTOTn9Nz46Hbj3-06k/edit?usp=sharing)  feel free to contribute to the list.
 
@@ -283,9 +284,9 @@ Active Sets 3369/3369
 * Others 508/508
 * BIOS 5/5
 
-Dat File: [FB Alpha v0.2.97.30.dat.zip](http://smartretro.co.uk/forums/download/file.php?id=21&sid=51593df3da1e20af98e425975a9e6f98)
+Dat File: [FB Alpha v0.2.97.30.dat.zip](https://drive.google.com/file/d/0B2TMeZ6iEFvHcF96YmdjaWlEdXM/view?usp=sharing)
 
-Neo Geo Only .Dat File: [fba-lr-neogeo](http://s000.tinyupload.com/download.php?file_id=05558959831361649927&t=0555895983136164992714492)
+Neo Geo Only .Dat File: [fba-lr-neogeo](https://drive.google.com/file/d/0B2TMeZ6iEFvHVk1Ud1RoSHpfcFU/view?usp=sharing)
 
 [**lr-fba COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1rWO7Lm0bTGNpak6J-CPzde0GNIDP0NHDoQdJ6iWosfA/edit?usp=sharing)  feel free to contribute to the list.
 
@@ -305,7 +306,7 @@ Active Sets 3970/3970
 * Others 550/550
 * BIOS 6/6
 
-Dat File: [FB Alpha v0.2.97.36.dat.zip](https://drive.google.com/file/d/0B2TMeZ6iEFvHQWNKNEJtZDdfMHc/view?usp=sharing)
+Dat File: [FB Alpha v0.2.97.37.dat.zip](https://drive.google.com/file/d/0B2TMeZ6iEFvHMjEyRHItVW1wV1k/view?usp=sharing)
 
 [**lr-fba-next COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1GaqIIoiWbzKHwZ52S2xCSDQXILo81Ls1mHK6czKGAtM/edit?usp=sharing)  feel free to contribute to the list.
 
@@ -319,13 +320,13 @@ MAME Version: Based on **0.138** romsets (May 2010)
 
 Romsets emulated: 203
 
-Dat File: [pandora_gngeo_084_dat.zip](http://smartretro.co.uk/forums/download/file.php?id=22&sid=51593df3da1e20af98e425975a9e6f98)
+Dat File: [pandora_gngeo_084_dat.zip](https://drive.google.com/file/d/0B2TMeZ6iEFvHZVVCYmVtaUM1VlU/view?usp=sharing)
 
 All clones non-working\mahjong\quiz removed
 
 Romsets emulated: 128
 
-Dat File: [pandora_gngeo_084_filtered.zip](https://www.dropbox.com/s/3s1exbmb40yefgx/pandora_gngeo_084_filtered.zip?dl=0)
+Dat File: [pandora_gngeo_084_filtered.zip](https://drive.google.com/file/d/0B2TMeZ6iEFvHb1RhaTF0NzJaRlU/view?usp=sharing)
 
 [**GnGeo-Pi COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1A_a_9t14uzDUMrrO0RgLDwiVUiycmclcPIs6cU6Iox8/edit?usp=sharing)  feel free to contribute to the list.
 
