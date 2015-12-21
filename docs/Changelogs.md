@@ -2,6 +2,23 @@
 
 This page is a list of all of the changelogs for each version of RetroPie. For a complete list of all commits to the source code see [here:](https://github.com/petrockblog/RetroPie-Setup/commits/master)  
 
+### Version 3.3: (December 21, 2015)
+
+- Mupen64plus controller configs (including hotkeys) and Reicast (Dreamcast) controller configs added to the autoconfiguration script in emulationstation. Mupen64plus is now the default n64 emulator due to compatibility.
+- AdvanceMAME 1.4 (replaces 1.2 - still based on MAME 0.106).
+- PlayStation Portable emulator ppsspp is included by default (libretro version is default, the standalone version is optional).
+- Removed cpc4rpi emulator, and added CapriceRPI which has many improvements over cpc4rpi.
+- Updated libretro binaries including lr-fba-next updated to v0.2.97.37, and an improved lr-caprice32 which is now moved out of experimental and is the default Amstrad CPC emulator.
+- Updates to Reicast emulator, which has been moved out of experimental.
+- New experimental modules: OpenTTD (open source simulation game based on Transport Tycoon Deluxe), Wolf4SDL (Port of Wolfenstein 3d), Zdoom (Enhanced Port of the official DOOM source)
+- PS3 controller improvements (added Gasia PS3 clone Support).
+- Updated OpenMSX emulator (to the dev version 0.12.0+).
+- Beta images based on Raspbian Jessie are included. They may have bugs that are not present in the Raspbian Wheezy release.
+- New themes added to the theme installer (Eudora from AmadhiX, Tronkyfran from Tronkyfran, and Retroplay Canela from InsecureSpike).
+- RetroArch joy-config tool removed (custom configs are now done through the RGUI or manually).
+- Various other bugfixes/improvements.
+
+
 ### Version 3.2.1: (October 28, 2015)
 
 - Fixes issues with controller d-pad configurations for all RetroArch-based emulators.
