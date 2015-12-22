@@ -178,55 +178,6 @@ To specifiy the amount of controller, edit the variable CONTROLLER_NUM. If you h
 
 It is generally advisable to use the daemon mode, 'cause it uses less CPU and RAM instead of several xboxdrv processes for each controller.
 
-## RetroPie configuration
-
-At this point you can test your pads with `jstest /dev/input/js[0-3]` to see if everything works well.
-
-After reboot when your controllers are detected, you have to configure RetroPie to use them:
-
-Go to the `retroarch-joyconfig` folder (binary for configuring joypads for RetroArch);
-
-By default (if you followed the install tutorial for the latest version):
-
-    cd /opt/retropie/emulators/retroarch/
-
-Before we start, please make sure the following folder has read/write permissions.
-We use /opt/retropie/configs/all/ as the base directory for the configuration files.
-
-    sudo chmod +rw /opt/retropie/configs/all/
-
-Then you have to configure each controller ( For example just use the first line if you have only 1 controller):
-
-    ./retroarch-joyconfig -o /opt/retropie/configs/all/p1.cfg -p 1 -j 0
-    <follow instructions>
-    ./retroarch-joyconfig -o /opt/retropie/configs/all/p2.cfg -p 2 -j 1
-    <follow instructions>
-    ./retroarch-joyconfig -o /opt/retropie/configs/all/p3.cfg -p 3 -j 2
-    <follow instructions>
-    ./retroarch-joyconfig -o /opt/retropie/configs/all/p4.cfg -p 4 -j 3
-    <follow instructions>
-
-( **-o** for output file, **-p** for player, **-j** for joystick id )
-
-After this you will get 4(or less depending) cfg files to add to your default `/opt/retropie/configs/all/retroarch.cfg` config file:
-
-    sudo cat /opt/retropie/configs/all/p*.cfg >> /opt/retropie/configs/all/retroarch.cfg
-
-(if this don't have permissions you can do a `sudo chown pi.pi /opt/retropie/configs/all/retroarch.cfg; sudo chmod 644 /opt/retropie/configs/all/retroarch.cfg` before)
-
-If your config is not working well, delete the joypad configuration lines in `/opt/retropie/configs/all/retroarch.cfg` before doing anything.
-
-(Delete the lines located at the bottom of the file, starting with line `input_player1_joypad_index = "0"`)
-
-Now just reboot and voila !
-
-## Troubleshooting
-If your controllers are connecting and you can use them from within EmulationStation, but *cannot* use them from inside the emulators, do the following:
-
-* Make sure you do not have conflicting xboxdrv configurations. If you installed the daemon, make sure you don't have another instance of the service running (`ps ax | grep xboxdrv` will show you this). Things may not work correctly if you have the daemon service (option 3 from above) *AND* something in `/etc/rc.local`. (There may be a message at startup that indicates a `LIBUSB` error if this is the case). 
-* When training the controllers using `retroarch-joyconfig`, make sure that you exit EmulationStation. 
-* Use the `retropie_setup.sh` script to train your controller. 
-
 ## Xbox 360 controller glitchy?
 
 According to [this post](https://github.com/petrockblog/RetroPie-Setup/issues/214#issuecomment-21796016) it might help to add the line ```dwc_otg.speed=1```to the file ```/boot/cmdline.txt```.
@@ -234,56 +185,7 @@ According to [this post](https://github.com/petrockblog/RetroPie-Setup/issues/21
 #### *Outdated* optional manual configs
 
 
-```
-### Emulationstation adjustments
-There are a few adjustments for emulationstation. In my case the input for my Xbox 360 Controller and some entries for the systems, aka emulators.  
-**`/home/pi/.emulationstation/es_input.cfg`**
-xml
-<?xml version="1.0"?>
-<inputList>
-    <inputConfig type="keyboard" />
-    <inputConfig type="joystick" deviceName="Xbox Gamepad (userspace driver)">
-        <input name="a" type="button" id="4" value="1" />
-        <input name="b" type="button" id="5" value="1" />
-        <input name="down" type="button" id="1" value="1" />
-        <input name="left" type="button" id="2" value="1" />
-        <input name="menu" type="button" id="13" value="1" />
-        <input name="pagedown" type="button" id="11" value="1" />
-        <input name="pageup" type="button" id="10" value="1" />
-        <input name="right" type="button" id="3" value="1" />
-        <input name="select" type="button" id="8" value="1" />
-        <input name="up" type="button" id="0" value="1" />
-    </inputConfig>
-    <inputConfig type="keyboard">
-        <input name="a" type="key" id="13" value="1" />
-        <input name="b" type="key" id="8" value="1" />
-        <input name="down" type="key" id="274" value="1" />
-        <input name="left" type="key" id="276" value="1" />
-        <input name="menu" type="key" id="109" value="1" />
-        <input name="pagedown" type="key" id="281" value="1" />
-        <input name="pageup" type="key" id="280" value="1" />
-        <input name="right" type="key" id="275" value="1" />
-        <input name="select" type="key" id="108" value="1" />
-        <input name="up" type="key" id="273" value="1" />
-    </inputConfig>
-</inputList>
-
-
-Button  | Configname
---------|-----------
-A       | a
-B       | b
-DPdown  | down
-DPup    | up
-DPleft  | left
-DPright | right
-Start   | menu
-LB      | select
-LT      | pageup
-RT      | pagedown
-
-_DP = DigiPad_
-
+``
 ***
 ### Xbox 360 Controller button configuration for retroarch and final burn alpha
 **`/home/pi/RetroPie/configs/all/retroarch.cfg`**
