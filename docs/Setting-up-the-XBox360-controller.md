@@ -1,6 +1,12 @@
 ## initial install
 
-**xboxdrv** must be installed for using xbox360 controllers with your pi:
+The easiest way to set this up is to use the "Xbox / Xbox 360 gamepad driver" option in the Setup / Configuration menu of the retropie-setup script.
+
+This will install the driver and add a start-up configuration in /etc/rc.local
+
+Alternatively if you prefer you can manually install it..
+
+RetroPie 3.3 contains a newer xboxdrv at /opt/retropie/supplementary/xboxdrv/bin/xboxdrv - which is preferable over the older Debian package. On older RetroPie images you can install the Debian package.
 
 install it by running
 
