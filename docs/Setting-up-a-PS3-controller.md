@@ -37,7 +37,7 @@ For setting up the PS3 Controller we're going to be following This [post](http:/
 
 First: Besides having a bluetooth adapter :P we're going to install all dependencies required
 ```shell
-sudo apt-get install bluetooth blueman bluez-hcidump checkinstall libusb-dev  libbluetooth-dev joystick
+sudo apt-get install bluetooth blueman bluez-hcidump checkinstall libusb-dev libbluetooth-dev joystick pkg-config
 ```
 Now that's installed (and a reboot if you plugged in your dongle afterwards) run ```hciconfig``` to make sure it's seeing your dongle, if it has not, a dependency failed to install or your dongle is not supported by RetroPie SD (Raspbian) or the said OS running. you should see an output with information like this:
 
