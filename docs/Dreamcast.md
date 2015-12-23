@@ -24,7 +24,9 @@ Audio is choppy and not great, and degrades the longer the emulator is in use.  
 * Jet Set Radio = Playable, but slow
 * Soul Calibur = Playable, but slow and with rendering issues
 
+### Performance
 
+Low screen resolution are recommended to get best performance. Performance suffers if HD resolutions are used.   
 
 ## ROMS
 
