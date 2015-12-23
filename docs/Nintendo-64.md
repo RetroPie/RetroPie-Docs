@@ -22,6 +22,13 @@ Place your Nintendo 64 ROMs in
 
 ## [Rom Compatibility List](https://docs.google.com/spreadsheets/d/1Wjzbu90l6eCEW1w6ar9NtfyDBQrSPILQL5MbRSpYSzw/edit?usp=sharing) feel free to contribute!
 
+## Performance
+
+Video plugin |Recommended resolution
+-------------|-----------------------
+gles2N64|1080p||
+gles2rice|720p||
+GLideN64|VGA||
 
 ## Controls
 
