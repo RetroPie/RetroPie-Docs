@@ -39,9 +39,10 @@ Your controller should then connect, with the 8bitdo controllers this is shown b
 ### Step 3 - Making sure the connection attempt automatically starts when you reboot your Pi  
 You may find the controller connects on startup without issue, but if not try this. There are different ways to do this, but this should work to start the connection attempt when the Pi starts up.  
 Edit this startup file  
-`sudo nano /etc/init.d/rc.local`  
-  
-under the line _. /lib/lsb/init-functions_ add this line (making sure to replace the XX values with the MAC address of the controller found earlier)  
+`sudo nano /etc/rc.local`  
+
+above the line "exit 0" add
+
 `sudo bluez-test-input connect XX:XX:XX:XX:XX:XX`  
   
 Save the file with Ctrl-X and press Return to confirm the filename.  
