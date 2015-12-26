@@ -43,7 +43,7 @@ Edit this startup file
 
 above the line "exit 0" add
 
-`sudo bluez-test-input connect XX:XX:XX:XX:XX:XX`  
+`bluez-test-input connect XX:XX:XX:XX:XX:XX`  
   
 Save the file with Ctrl-X and press Return to confirm the filename.  
 
