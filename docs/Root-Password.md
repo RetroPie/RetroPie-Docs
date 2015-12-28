@@ -15,3 +15,18 @@ https://www.raspberrypi.org/documentation/linux/usage/root.md
 http://elinux.org/R-Pi_Troubleshooting#I_don.27t_know_the_root_password
 
 
+**RetroPie 3.0 Jessie Builds:**
+
+before setting a root password, the following must be edited
+
+```sudo nano /etc/ssh/sshd_config```
+
+look for 
+
+```PermitRootLogin without-password```
+
+change it to
+
+```PermitRootLogin yes```
+
+then ctrl+x to save, next set your root password & restart your Pi
