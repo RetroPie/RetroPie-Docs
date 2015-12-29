@@ -1,5 +1,7 @@
 # Install Emulationstation Themes
 
+Alternate themes can be easily installed starting with RetroPie 3.1 with the RetroPie Theme Installer.
+
 Open Option 3 from the setup script
 
 ![setup script](https://cloud.githubusercontent.com/assets/10035308/10356537/6b708a24-6d35-11e5-8b86-edb1145b4af8.png)
