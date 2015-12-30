@@ -15,6 +15,11 @@ Place your ZX Spectrum ROMs in
 ```
 /home/pi/RetroPie/roms/zxspectrum
 ```
+
+## Video Overview:
+<a href="https://www.youtube.com/watch?v=_Rs20bAy-sY" target="_blank"><img src="https://i.ytimg.com/vi_webp/_Rs20bAy-sY/mqdefault.webp" 
+alt="ZX Spectrum Video" width="300" height="180" border="10" /></a>
+
 ## Controls
 
 ### lr-fuse
