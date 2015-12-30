@@ -10,6 +10,10 @@ See here for more info: http://kodi.tv/
 
 See [here](http://blog.petrockblock.com/forums/topic/kodi-tab-in-emulationstation/) for more information on setting up Kodi
 
+## Installation
+
+Visit the RetroPie-Setup Screen, select Experimental Packages, and select Kodi.  Installation can take 15 minutes.  After installation, you will be able to go to the Ports section and view Kodi as an option.
+
 ## Recommended Smartphone App to control Kodi: [Yatse](http://yatse.tv/redmine/projects/yatse)
 
 ![](http://kodi.wiki/images/3/3c/Yatse_Holo_1.png)
