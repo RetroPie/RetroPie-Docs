@@ -2,7 +2,7 @@ For the most recent version of RetroPie (3.0+)
 ---
 The most recent versions of RetroPie comes with all the packages needed for setting up a PS3 controller, so there is no need to install the required packages separately.
 
-Before booting up our Raspberry Pi, make sure that your Bluetooth adapter and your PS3 controller is connected to your Raspberry Pi. Also, if you have a playstation game console near by, make sure it is **unplugged**.  The PS3 controller may try to automatically pair with the PS3 game console.  Although a separate powered USB hub is not needed to set up your controller, you would want to get one if you want to overclock your Raspberry Pi.
+Before booting up our Raspberry Pi, make sure that your Bluetooth adapter is connected to your Raspberry Pi. Also, if you have a playstation game console near by, make sure it is **unplugged**.  The PS3 controller may try to automatically pair with the PS3 game console.  Although a separate powered USB hub is not needed to set up your controller, you would want to get one if you want to overclock your Raspberry Pi.
 
 After your Pi boots up, run the `retropie_setup.sh` script.
 ```shell
@@ -23,11 +23,7 @@ After it finishes compiling, the GUI prompt will ask you to make sure that your 
 
 Once this is done, you should be able to disconnect the controller, and pressing the Playstation button should connect it via Bluetooth.
 
-Here is a **video guide** showing the install on RetroPie 3.0 and 3.1:
-
-<a href="https://youtu.be/oCq6drv5wbE" target="_blank"><img src="http://img.youtube.com/vi/oCq6drv5wbE/hqdefault.jpg" 
-alt="Wireless PS3 controller install" width="300" height="190" border="10" /></a>
-
+After installation of PS3 controller driver bluetooth connection of new controllers will be configured automatically if you connect them over usb. 
 
 For older versions of RetroPie
 ---
