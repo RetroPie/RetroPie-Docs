@@ -23,7 +23,7 @@ After it finishes compiling, the GUI prompt will ask you to make sure that your 
 
 Once this is done, you should be able to disconnect the controller, and pressing the Playstation button should connect it via Bluetooth.
 
-Here is a **video guide** showing the install on RetroPie 3 final:
+Here is a **video guide** showing the install on RetroPie 3.0 and 3.1:
 
 <a href="https://youtu.be/oCq6drv5wbE" target="_blank"><img src="http://img.youtube.com/vi/oCq6drv5wbE/hqdefault.jpg" 
 alt="Wireless PS3 controller install" width="300" height="190" border="10" /></a>
