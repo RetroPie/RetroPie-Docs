@@ -98,4 +98,3 @@
 * [Sound Issues](https://github.com/RetroPie/RetroPie-Setup/wiki/Sound-Issues)
 * [Speed Issues](https://github.com/RetroPie/RetroPie-Setup/wiki/Speed-Issues)
 * [Video Issues](https://github.com/RetroPie/RetroPie-Setup/wiki/Video-Issues)
-test
