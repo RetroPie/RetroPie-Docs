@@ -82,7 +82,6 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [ZX Spectrum](https://github.com/RetroPie/RetroPie-Setup/wiki/ZX-Spectrum) [(FBZX)](http://www.rastersoft.com/fbzx.html), [(Fuse)](http://fuse-emulator.sourceforge.net/), [(lr-fuse)](https://github.com/libretro/fuse-libretro)
 
 ## Advanced Configuration
-* [RetroArch](https://github.com/RetroPie/RetroPie-Setup/wiki/RetroArch)
 * [EmulationStation](https://github.com/RetroPie/RetroPie-Setup/wiki/EmulationStation)
 * [EmulationStation Themes](https://github.com/RetroPie/RetroPie-Setup/wiki/themes)
 * [Scraping Games](https://github.com/RetroPie/RetroPie-Setup/wiki/scraper)
