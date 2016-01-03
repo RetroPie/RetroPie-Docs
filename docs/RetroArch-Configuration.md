@@ -88,7 +88,7 @@ These configurations are used when starting a rom for a specific system. The ind
 /opt/retropie/configs/SYSTEMNAME/emulators.cfg
 ```
  
-## Custom Retroarch Controls
+## Custom Retroarch Override Examples
 
 ### Example Default Per System Retroarch.cfg
 
@@ -101,7 +101,7 @@ input_remapping_directory = /opt/retropie/configs/megadrive/
 #include "/opt/retropie/configs/all/retroarch.cfg"
 ```
 
-## Example retroarch.cfg file for custom controls to override defaults: 
+## Example Per System retroarch.cfg for Custom Controls: 
 **Note** the values below are for one person's controller, your values may differ. Make sure that these values are placed **above** the #includeconfig line
 ```shell
 # Settings made here will only override settings in the global retroarch.cfg if placed above the #include line
