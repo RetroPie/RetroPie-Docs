@@ -101,7 +101,7 @@ input_remapping_directory = /opt/retropie/configs/megadrive/
 #include "/opt/retropie/configs/all/retroarch.cfg"
 ```
 
-## Example Per System retroarch.cfg for Custom Controls: 
+## Example Per System Control Override retroarch.cfg: 
 **Note** the values below are for one person's controller, your values may differ. Make sure that these values are placed **above** the #includeconfig line
 ```shell
 # Settings made here will only override settings in the global retroarch.cfg if placed above the #include line
