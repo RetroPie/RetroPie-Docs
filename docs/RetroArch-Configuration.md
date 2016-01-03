@@ -78,10 +78,15 @@ All RetroArch based emulators can be configured in the following way:
 
 Here, SYSTEMNAME is atari2600, snes, etc.. All settings in these files will overwrite the corresponding global setting as long as they are placed **above** the #includeconfig line.
 
-These configurations are used when starting a rom for a specific system. The individually used commands for starting a single rom can be found in each system's folder
-`
-    /opt/retropie/configs/SYSTEMNAME/emulators.cfg
-`  
+**ROM-specific** settings can be created in the [runcommand](https://github.com/RetroPie/RetroPie-Setup/wiki/runcommand) menu and show up as configuration files by rom title. It follows the same pattern as the other hardcoded configs.
+
+    /home/pi/RetroPie/roms/SYSTEMNAME/ROMNAME.cfg
+
+These configurations are used when starting a rom for a specific system. The individually used commands for starting a single rom are called through [runcommand](https://github.com/RetroPie/RetroPie-Setup/wiki/runcommand) but can also be manually edited in the following file.
+
+```
+/opt/retropie/configs/SYSTEMNAME/emulators.cfg
+```
  
 ## Custom Retroarch Controls
 
