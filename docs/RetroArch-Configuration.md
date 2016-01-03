@@ -2,11 +2,69 @@
 ***
 RetroArch is the official front end for the [Libretro](http://www.libretro.com/) API which essentially means that RetroArch will be what manages controls and configurations for all of the emulators that are part of the Libretro-Core (i.e. any emulator with an "lr" before it). This is a beautiful thing because it means you can configure controllers only once for many emulators instead of having to configure each emulator individually. RetroArch also gives us the freedom to configure emulators individually as discussed below under "Custom RetroArch Controls" (There are also emulator specific configurations for emulators not part of the libretro core under their respective emulator wiki page.)
 
-## Retroarch Controls
+# Retroarch Controls
 
-Your joypad is automagically configured for libretro (retroarch) emulators when you configure your controller for the first time in emulationstation.
+There are 3 main ways that RetroArch handles controls: **Autoconfigurations**, **Hardcoded Configurations**, and **Core Input Remapping**. 
 
-## Config Hierarchy
+## AutoConfigurations
+
+Starting with Retropie 3.0 retroarch controls have been integrated into emulationstation and will be the first thing you see when you boot from the RetroPie SD image the first time. You can also access if from the start menu within emulationstation under the configure input option. Your joypad is automagically configured for libretro (retroarch) emulators when you configure your controller for the first time in emulationstation. You'll know if your controller has been automagically configured if you see a flash of yellow text on the bottom of the screen with your gamepad ID when you start a game.  
+
+After you've configured your controller the autoconfig will be created here:
+```
+/opt/retropie/configs/all/retroarch-joypads
+```
+This is an example config for a snes controller
+```
+input_device = "USB gamepad           "
+input_driver = "udev"
+input_r_btn = "5"
+input_save_state_btn = "5"
+input_start_btn = "9"
+input_exit_emulator_btn = "9"
+input_l_btn = "4"
+input_load_state_btn = "4"
+input_up_axis = "-1"
+input_a_btn = "1"
+input_b_btn = "2"
+input_reset_btn = "2"
+input_down_axis = "+1"
+input_right_axis = "+0"
+input_state_slot_increase_axis = "+0"
+input_x_btn = "0"
+input_menu_toggle_btn = "0"
+input_select_btn = "8"
+input_enable_hotkey_btn = "8"
+input_y_btn = "3"
+input_left_axis = "-0"
+input_state_slot_decrease_axis = "-0"
+```
+
+#### Hotkeys
+
+Hotkeys are combinations of buttons you can press in order to access options such as saving, loading, and exiting games.
+
+see this video:
+
+<a href="https://www.youtube.com/watch?v=DBnKFRflEV4" target="_blank"><img src="https://i.ytimg.com/vi_webp/DBnKFRflEV4/mqdefault.webp" 
+alt="Hotkey Video" width="300" height="190" border="10" /></a>
+
+#### Default joypad hotkeys:
+Hotkeys | Action
+| :---: | :---: |
+Select+Start | Exit
+Select+Right Shoulder | Save
+Select+Left Shoulder | Load
+Select+Right | Input State Slot Increase
+Select+Left | Input State Slot Decrease 
+Select+X | RGUI Menu
+Select+B | Reset
+
+## Hardcoded Configurations
+
+These configurations are manual edits you can make that are locked to a specific port and controller. Hardcoded controls can be configured either globally, by emulator, or by game- see the following paragraphs.
+
+### Config Hierarchy
 
 All RetroArch based emulators can be configured in the following way:
 
@@ -20,39 +78,14 @@ All RetroArch based emulators can be configured in the following way:
 
 Here, SYSTEMNAME is atari2600, snes, etc.. All settings in these files will overwrite the corresponding global setting as long as they are placed **above** the #includeconfig line.
 
-These configurations are used when starting a rom for a specific system. The individually used commands for starting a single rom can be found in the settings file of Emulation Station 
-
-    ~/.emulationstation/es_systems.cfg
-
-see these videos:
-
-**Testing Joypad**  
-<a href="https://www.youtube.com/watch?v=fcRVcPkpLfQ
-" target="_blank"><img src="https://i.ytimg.com/vi_webp/fcRVcPkpLfQ/mqdefault.webp" 
-alt="Testing joypad in RetroPie" width="300" height="190" border="10" /></a>  
-  
-  
-**Setting up USB controllers**  
-<a href="https://www.youtube.com/watch?v=AhkEnDdygbQ
-" target="_blank"><img src="https://i.ytimg.com/vi_webp/AhkEnDdygbQ/mqdefault.webp" 
-alt="Setting up usb controllers in RetroPie" width="300" height="190" border="10" /></a>  
-  
-  
-**Wireless PS3 controller**  
-<a href="https://www.youtube.com/watch?v=oCq6drv5wbE
-" target="_blank"><img src="https://i.ytimg.com/vi_webp/oCq6drv5wbE/mqdefault.webp" 
-alt="Setting up PS3 controller in RetroPie" width="300" height="190" border="10" /></a>  
-  
-  
-**Wireless Xbox controller**  
-<a href="https://www.youtube.com/watch?v=0LMZFYzM9xc
-" target="_blank"><img src="https://i.ytimg.com/vi_webp/0LMZFYzM9xc/mqdefault.webp" 
-alt="Setting up Xbox controller in RetroPie" width="300" height="190" border="10" /></a>    
-  
+These configurations are used when starting a rom for a specific system. The individually used commands for starting a single rom can be found in each system's folder
+`
+    /opt/retropie/configs/SYSTEMNAME/emulators.cfg
+`  
  
 ## Custom Retroarch Controls
 
-### Example Default System Based Retroarch.cfg
+### Example Default Per System Retroarch.cfg
 
 ```
 # Settings made here will only override settings in the global retroarch.cfg if placed above the #include line
@@ -66,6 +99,10 @@ input_remapping_directory = /opt/retropie/configs/megadrive/
 ## Example retroarch.cfg file for custom controls to override defaults: 
 **Note** the values below are for one person's controller, your values may differ. Make sure that these values are placed **above** the #includeconfig line
 ```shell
+# Settings made here will only override settings in the global retroarch.cfg if placed above the #include line
+
+input_remapping_directory = /opt/retropie/configs/megadrive/
+
 input_player1_joypad_index = 0
 input_player1_b_btn = 2
 input_player1_a_btn = 1
@@ -106,64 +143,46 @@ input_load_state_btn = 4
 input_menu_toggle_btn = 0
 input_state_slot_increase_axis = +0
 input_state_slot_decrease_axis = -0
+
+
+#include "/opt/retropie/configs/all/retroarch.cfg"
 ```
 
-## Hotkeys
+## Core Input Remapping
 
-Hotkeys are combinations of buttons you can press in order to access options such as saving, loading, and exiting games.
-
-see this video:
-
-<a href="https://www.youtube.com/watch?v=DBnKFRflEV4" target="_blank"><img src="https://i.ytimg.com/vi_webp/DBnKFRflEV4/mqdefault.webp" 
-alt="Hotkey Video" width="300" height="190" border="10" /></a>
-
-## Default joypad hotkeys:
-Hotkeys | Action
-| :---: | :---: |
-Select+Start | Exit
-Select+Right Shoulder | Save
-Select+Left Shoulder | Load
-Select+Right | Input State Slot Increase
-Select+Left | Input State Slot Decrease 
-Select+X | RGUI Menu
-Select+B | Reset
-
-Starting with Retropie 3.0 retroarch controls have been integrated into emulationstation and will be the first thing you see when you boot from the RetroPie SD image the first time. You can also access if from the start menu within emulationstation under the configure input option.
-
-After you've configured your controller the autoconfig will be created here:
-```
-/opt/retropie/configs/all/retroarch-joypads
-```
-This is an example config for a snes controller
-```
-input_device = "USB gamepad           "
-input_driver = "udev"
-input_r_btn = "5"
-input_save_state_btn = "5"
-input_start_btn = "9"
-input_exit_emulator_btn = "9"
-input_l_btn = "4"
-input_load_state_btn = "4"
-input_up_axis = "-1"
-input_a_btn = "1"
-input_b_btn = "2"
-input_reset_btn = "2"
-input_down_axis = "+1"
-input_right_axis = "+0"
-input_state_slot_increase_axis = "+0"
-input_x_btn = "0"
-input_menu_toggle_btn = "0"
-input_select_btn = "8"
-input_enable_hotkey_btn = "8"
-input_y_btn = "3"
-input_left_axis = "-0"
-input_state_slot_decrease_axis = "-0"
-```
+Core Input Remapping differs from the other two methods as it remaps how the core receives input rather than how the gamepad is coded, for example you can tell the snes core to switch button A and B on the controller for gameplay, but you can still use "A" to select in the RGUI and "B" to go back where as hardcoding would make B select and A back. Core Remapping is much more practical than hardcoded mapping but is limited to the cores that support it. 
 
 **Core Input Remapping**  
 <a href="https://www.youtube.com/watch?v=liJKFUZX4PM
 " target="_blank"><img src="https://i.ytimg.com/vi_webp/liJKFUZX4PM/mqdefault.webp" 
 alt="Testing joypad in RetroPie" width="300" height="190" border="10" /></a>  
+
+## Video Tutorials
+
+**Testing Joypad**  
+<a href="https://www.youtube.com/watch?v=fcRVcPkpLfQ
+" target="_blank"><img src="https://i.ytimg.com/vi_webp/fcRVcPkpLfQ/mqdefault.webp" 
+alt="Testing joypad in RetroPie" width="300" height="190" border="10" /></a>  
+  
+  
+**Setting up USB controllers**  
+<a href="https://www.youtube.com/watch?v=AhkEnDdygbQ
+" target="_blank"><img src="https://i.ytimg.com/vi_webp/AhkEnDdygbQ/mqdefault.webp" 
+alt="Setting up usb controllers in RetroPie" width="300" height="190" border="10" /></a>  
+  
+  
+**Wireless PS3 controller**  
+<a href="https://www.youtube.com/watch?v=oCq6drv5wbE
+" target="_blank"><img src="https://i.ytimg.com/vi_webp/oCq6drv5wbE/mqdefault.webp" 
+alt="Setting up PS3 controller in RetroPie" width="300" height="190" border="10" /></a>  
+  
+  
+**Wireless Xbox controller**  
+<a href="https://www.youtube.com/watch?v=0LMZFYzM9xc
+" target="_blank"><img src="https://i.ytimg.com/vi_webp/0LMZFYzM9xc/mqdefault.webp" 
+alt="Setting up Xbox controller in RetroPie" width="300" height="190" border="10" /></a>    
+
+# Controller Diagrams
 
 The following diagrams are for the 3 most common controllers: Super Nintendo, Xbox 360, and PlayStation 3. They can be used as a reference when configuring your controllers. Each emulator page on the wiki has a diagram of the original controller for its respective console that will correspond to the same inputs listed below.
 
