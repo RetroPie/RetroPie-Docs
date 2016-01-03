@@ -32,11 +32,10 @@ see these videos:
 alt="Testing joypad in RetroPie" width="300" height="190" border="10" /></a>  
   
   
-
-**Setting up USB Controller**  
-<a href="https://www.youtube.com/watch?v=9PWO-F4zuaY
-" target="_blank"><img src="https://i.ytimg.com/vi_webp/9PWO-F4zuaY/mqdefault.webp" 
-alt="Setting up controller in RetroPie" width="300" height="190" border="10" /></a>  
+**Setting up USB controllers**  
+<a href="https://www.youtube.com/watch?v=AhkEnDdygbQ
+" target="_blank"><img src="https://i.ytimg.com/vi_webp/AhkEnDdygbQ/mqdefault.webp" 
+alt="Setting up usb controllers in RetroPie" width="300" height="190" border="10" /></a>  
   
   
 **Wireless PS3 controller**  
@@ -48,14 +47,7 @@ alt="Setting up PS3 controller in RetroPie" width="300" height="190" border="10"
 **Wireless Xbox controller**  
 <a href="https://www.youtube.com/watch?v=0LMZFYzM9xc
 " target="_blank"><img src="https://i.ytimg.com/vi_webp/0LMZFYzM9xc/mqdefault.webp" 
-alt="Setting up Xbox controller in RetroPie" width="300" height="190" border="10" /></a>  
-  
-  
-**Setting up multiple controllers**  
-<a href="https://www.youtube.com/watch?v=xkD255l3FuY
-" target="_blank"><img src="https://i.ytimg.com/vi_webp/xkD255l3FuY/mqdefault.webp" 
-alt="Setting up multiple controllers in RetroPie" width="300" height="190" border="10" /></a>  
-  
+alt="Setting up Xbox controller in RetroPie" width="300" height="190" border="10" /></a>    
   
  
 ## Custom Retroarch Controls
