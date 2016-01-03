@@ -52,6 +52,17 @@ alt="Setting up Xbox controller in RetroPie" width="300" height="190" border="10
  
 ## Custom Retroarch Controls
 
+### Example Default System Based Retroarch.cfg
+
+```
+# Settings made here will only override settings in the global retroarch.cfg if placed above the #include line
+
+input_remapping_directory = /opt/retropie/configs/megadrive/
+
+
+#include "/opt/retropie/configs/all/retroarch.cfg"
+```
+
 ## Example retroarch.cfg file for custom controls to override defaults: 
 **Note** the values below are for one person's controller, your values may differ. Make sure that these values are placed **above** the #includeconfig line
 ```shell
