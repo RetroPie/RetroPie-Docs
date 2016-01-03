@@ -10,6 +10,14 @@ There are 3 main ways that RetroArch handles controls: **Autoconfigurations**, *
 
 Starting with Retropie 3.0 retroarch controls have been integrated into emulationstation and will be the first thing you see when you boot from the RetroPie SD image the first time. You can also access if from the start menu within emulationstation under the configure input option. Your joypad is automagically configured for libretro (retroarch) emulators when you configure your controller for the first time in emulationstation. You'll know if your controller has been automagically configured if you see a flash of yellow text on the bottom of the screen with your gamepad ID when you start a game.  
 
+The following diagrams are for the 3 most common controllers: Super Nintendo, Xbox 360, and PlayStation 3. They can be used as a reference when configuring your controllers. Each emulator page on the wiki has a diagram of the original controller for its respective console that will correspond to the same inputs listed below.
+
+![Super Nintendo Controller](https://cloud.githubusercontent.com/assets/10035308/7110174/0f2fdb54-e16a-11e4-8f3d-37bdca8f1ddf.png)
+
+![Xbox 360 Controller](https://cloud.githubusercontent.com/assets/10035308/7110173/0f2ea784-e16a-11e4-9c6f-5fe7c594b05a.png)
+
+![PlayStation 3 Controller](https://cloud.githubusercontent.com/assets/10035308/7111199/e29365ec-e179-11e4-87b4-f00685661d7e.png)
+
 After you've configured your controller the autoconfig will be created here:
 ```
 /opt/retropie/configs/all/retroarch-joypads
@@ -189,20 +197,9 @@ alt="Setting up Xbox controller in RetroPie" width="300" height="190" border="10
 
 # Controller Diagrams
 
-The following diagrams are for the 3 most common controllers: Super Nintendo, Xbox 360, and PlayStation 3. They can be used as a reference when configuring your controllers. Each emulator page on the wiki has a diagram of the original controller for its respective console that will correspond to the same inputs listed below.
-
-## Super Nintendo Controller
-![Super Nintendo Controller](https://cloud.githubusercontent.com/assets/10035308/7110174/0f2fdb54-e16a-11e4-8f3d-37bdca8f1ddf.png)
-
-## Xbox 360 Controller
-![Xbox 360 Controller](https://cloud.githubusercontent.com/assets/10035308/7110173/0f2ea784-e16a-11e4-9c6f-5fe7c594b05a.png)
-
-## PlayStation 3 Controller
-![PlayStation 3 Controller](https://cloud.githubusercontent.com/assets/10035308/7111199/e29365ec-e179-11e4-87b4-f00685661d7e.png)
-
-
 ***
-# Default Controls for All Emulators:
+## Default Controls for All Emulators:
+
 ## 3do
 ![3dodiagram](https://cloud.githubusercontent.com/assets/10035308/8237801/0ae4d6fc-15af-11e5-803f-8ba408d48362.png)
 ## Atari 2600
