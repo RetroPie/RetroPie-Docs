@@ -26,6 +26,6 @@ Starting with RetroPie 3.1 there is now support for video splash screens. A few 
 
 - for best results use .mp4 filetype. If you have a video in another format and it isn't working try converting it with a program like [vlc](http://www.videolan.org/vlc/index.html) or [handbrake](https://handbrake.fr/) I've found that h.264 is a good codec and .mp4 is a good filetype- but others may also work.
  
-- For a raspberry pi 1 a good video time is ~20-40 seconds, for the rpi 2 a good video time is ~5-10 seconds. 
+- For a raspberry pi 1 a good video time is ~20-40 seconds, for the rpi 2 a good video time is ~5-10 seconds. It will vary depending on the number of roms and systems you have installed on RetroPie. 
 
-- OMXPlayer is coded to play on the highest layer of the framebuffer, so you no longer have to worry about EmulationStation cutting in front of your video before the video finishes. This way your video can be as long or as short as you want it to be.
+- OMXPlayer is coded to play on the highest layer of the framebuffer while EmulationStation loads up, so you no longer have to worry about EmulationStation cutting in front of your video before the video finishes. This way your video can be as long or as short as you want it to be.
