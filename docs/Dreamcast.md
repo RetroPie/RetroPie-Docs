@@ -133,7 +133,7 @@ axis_dpad1_x = 0x10
 axis_dpad1_y = 0x11
 ```
 
-**iBuffalo USB controller ** 
+**iBuffalo USB controller** 
 
 ```
 button.0=Btn_B
