@@ -1,6 +1,8 @@
 # SSH
 
-SSH stands for secure shell. You can remotely connect to the raspberry pi terminal with an SSH client. A popular ssh client is [Putty](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html)
+SSH stands for secure shell. You can remotely connect to the raspberry pi terminal with an SSH client. A popular ssh client is [Putty](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html) 
+
+**NOTE** Your Raspberry Pi needs to be connected to the same network (either via Ethernet or Wifi Dongle) as the computer you are accessing it from 
 
 When you first start putty you can sign in with the following credentials:
 
