@@ -22,6 +22,21 @@ change to your new theme (you may need to press f4 or quit to refresh emulations
 
 ![emutheme](https://cloud.githubusercontent.com/assets/10035308/10356601/0b44d06e-6d36-11e5-89f6-e471ffafa54e.png)
 
+
+## White Screen of Death
+
+There is a fundamental bug with EmulationStation where unique background images are not loaded dynamically so if you have more than ~10 systems you will start to get a white screen of death and nothing will show up. 
+
+There are a few things you can do to fix the white screen of death:
+
+- increase your GPU/CPU split (see [here](https://github.com/RetroPie/RetroPie-Setup/wiki/Advanced-Configuration#cpugpu-split))
+
+- remove some systems
+
+- switch your theme to any Carbon, Eudora, or Canela variant (as they have one static background and therefore don't crash when you have many systems)
+
+If you can't access the theme changer in emulationstation because its a white screen you can [ssh](https://github.com/RetroPie/RetroPie-Setup/wiki/ssh) into the pi and change the theme name back to carbon in the backend in `/home/pi/.emulationstation/es_settings.cfg`
+
 #THEME GALLERY
 
 <table style="width:100%">
