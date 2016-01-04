@@ -97,4 +97,12 @@ reboot
 
 if you have any issues with the controller you can debug it with `sudo jstest /dev/input/js0`
 
-this Guide, we have thanks to Donnerstag over at http://booting-rpi.blogspot.ro/ as well as: http://blog.onsw.net/yuta/  (credit must go where it's due :3)
+Disconnect blue-tooth controller
+---
+
+To disconnect the controller, hold down the ps3 button for 10 seconds.
+
+
+***
+
+_this Guide, we have thanks to Donnerstag over at http://booting-rpi.blogspot.ro/ as well as: http://blog.onsw.net/yuta/  (credit must go where it's due :3)_
