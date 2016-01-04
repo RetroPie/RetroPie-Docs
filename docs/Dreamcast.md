@@ -70,6 +70,8 @@ Starting with RetroPie 3.3 controls for the Dreamcast Emulator are automatically
 
 Controls can be mapped via the `/home/pi/.reicast/emu.cfg` file. An example mapping for a PS3 controller is below for reference:
 
+**PlayStation 3 Controller**
+
 ```
 [PLAYSTATION(R)3 Controller]
 button.0=Btn_Z
@@ -105,7 +107,33 @@ Replace xx:xx:xx:xx:xx:xx with your own controller mac address
 Press ctrl+c to exit- Or map a Quit button (PS) as shown above :D 
 
 
-For iBuffalo USB controller  
+**Xbox 360 Controller:**
+
+```
+[emulator]
+mapping_name = Xbox Gamepad (userspace driver)
+btn_escape = 0x13a
+
+[dreamcast]
+btn_a = 0x130h
+btn_b = 0x131h
+btn_c = 
+btn_d = 0x139h
+btn_x = 0x133h
+btn_y = 0x134h
+btn_z = 0x138h
+btn_start = 0x13Bh
+axis_x = 0x00
+axis_y = 0x01
+axis_trigger_left = 0x0a
+axis_trigger_right = 0x09
+
+[compat]
+axis_dpad1_x = 0x10
+axis_dpad1_y = 0x11
+```
+
+**iBuffalo USB controller ** 
 
 ```
 button.0=Btn_B
