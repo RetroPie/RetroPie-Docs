@@ -36,7 +36,7 @@ Place these files in
 ```
 Once you have your ROMS and your BIOS files where they belong there is one more step of configurations needed where you tell the emulator where to look for your BIOS files.
 
-Navigate to the Atari800 emulator on emulationstation and choose a game. A screen will open up with a bunch of different cartridge options. If you are playing a 5200 game then choose a 5200 cartridge option (Option #5 seems to work). You will then get a warning telling you that it needs a real Atari/OS. (you need to legally own the 5200 hardware to have the BIOS) Then press F1 to open the menu and navigate down to "Emulator Configuration" and press enter. Then navigate down to System ROM settings and then press Enter (Quick hint: use the escape button to go back up a step in the GUI)
+Navigate to either the Atari800 or Atari 5200 emulator on emulationstation and choose a game. A screen will open up with a bunch of different cartridge options. If you are playing a 5200 game then choose a 5200 cartridge option (Option #5 seems to work). You will then get a warning telling you that it needs a real Atari/OS. (you need to legally own the 5200 hardware to have the BIOS) Then press F1 to open the menu and navigate down to "Emulator Configuration" and press enter. Then navigate down to System ROM settings and then press Enter (Quick hint: use the escape button to go back up a step in the GUI)
 
 The easiest option is to just select "Find ROM images in a directory" then navigate into the BIOS directory and press the space bar. If you have the right files and file names it should automatically place the BIOS files where they belong. 
 
