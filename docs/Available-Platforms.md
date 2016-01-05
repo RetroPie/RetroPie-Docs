@@ -38,7 +38,7 @@ This list shows the available platforms on http://thegamesdb.net/ and their data
 [20] Sega Game Gear
 [18] Sega Genesis
 [35] Sega Master System
-[36] Sega Mega Drive
+[36] Sega Mega Drive (now deleted - merged with Genesis)
 [17] Sega Saturn
 [10] Sony Playstation
 [11] Sony Playstation 2
