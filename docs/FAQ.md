@@ -1,5 +1,9 @@
 Here come the frequently asked questions
 
+### Why do some emulators not show up?
+
+In Emulation Station, only emulators with ROMs inside its respective folder will show up in the Emulation Station GUI (given that the specific emulator is installed). For example, for the Nintendo 64 emulator to show up, you must have at least one ROM in the `~/RetroPie/roms/n64/` folder. For ROM types supported by each emulator, go to the wiki page for that specific system/emulator. 
+
 ### Why Can't I Insert Coins in Arcade Emulators?
 
 It's the Select button in RetroArch. By default, it's right shift.
