@@ -108,20 +108,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [Speed Issues](https://github.com/RetroPie/RetroPie-Setup/wiki/Speed-Issues)
 * [Video Issues](https://github.com/RetroPie/RetroPie-Setup/wiki/Video-Issues)
 
-## FAQ
-* [Why can't I login as root anymore?](https://github.com/RetroPie/RetroPie-Setup/wiki/Root-Password)
-* [Why can't I insert coins in lr-mame4all and fba-libretro?](https://github.com/RetroPie/RetroPie-Setup/wiki/Can't-Insert-Coins%3F)
-* [How would I start from command line, say, the SNES emulator by itself?](https://github.com/RetroPie/RetroPie-Setup/wiki/How-would-I-start-from-command-line,-say,-the-SNES-emulator-by-itself%3F)
-* [I was wondering is there any way of starting Emulationstation on boot instead of going into the terminal and manually starting it.](https://github.com/RetroPie/RetroPie-Setup/wiki/I-was-wondering-is-there-any-way-of-starting-Emulationstation-on-boot-instead-of-going-into-the-terminal-and-manually-starting-it.)
-* [Does anybody know if there's a way to edit the retroarch.cfg to give me the ability to exit an emulator by using the controller?](https://github.com/RetroPie/RetroPie-Setup/wiki/Does-anybody-know-if-there%27s-a-way-to-edit-the-retroarch.cfg-to-give-me-the-ability-to-exit-an-emulator-by-using-the-controller%3F)
-* [Does Super Mario Allstars work?](https://github.com/RetroPie/RetroPie-Setup/wiki/Does-Super-Mario-All-Stars-work%3F)
-* [Why do some emulators not show up in Emulation Station?](https://github.com/RetroPie/RetroPie-Setup/wiki/Why-do-some-emulators-not-show-up%3F)
-* [Which memory split should I use?](https://github.com/RetroPie/RetroPie-Setup/wiki/Which-memory-split-should-I-use%3F)
-* [Which emulators can currently be installed with the script?](https://github.com/RetroPie/RetroPie-Setup/wiki/Supported-Systems-Emulators)
-* [Why do I get a segmentation fault when running a PSX game?](https://github.com/RetroPie/RetroPie-Setup/wiki/Why-do-I-get-a-segmentation-fault-when-running-a-PSX-game%3F)
-* [The PSX emulator reports no BIOS found. What do I do?](https://github.com/RetroPie/RetroPie-Setup/wiki/The-PSX-emulator-reports-no-BIOS-found.-What-do-I-do%3F)
-* [How do I extend the available space when upgrading to a larger SD card?](https://github.com/RetroPie/RetroPie-Setup/wiki/How-do-I-extend-the-available-space-when-upgrading-to-a-larger-SD-card)
-* [Which BIOS file do I need?](https://github.com/RetroPie/RetroPie-Setup/wiki/BIOS-setup-for-RetroPie)
+## [FAQ](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ)
 
 ## Developers
 
