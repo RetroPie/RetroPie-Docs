@@ -4,7 +4,10 @@ RetroArch is the official front end for the [Libretro](http://www.libretro.com/)
 
 # Retroarch Controls
 
-There are 3 main ways that RetroArch handles controls: **Autoconfigurations**, **Hardcoded Configurations**, and **Core Input Remapping**. 
+There are 3 main ways that RetroArch handles controls: 
+- [**Autoconfigurations**](https://github.com/RetroPie/RetroPie-Setup/wiki/RetroArch-Configuration#autoconfigurations)
+- [**Hardcoded Configurations**](https://github.com/RetroPie/RetroPie-Setup/wiki/RetroArch-Configuration#hardcoded-configurations)
+- [**Core Input Remapping**](https://github.com/RetroPie/RetroPie-Setup/wiki/RetroArch-Configuration#core-input-remapping)
 
 ## AutoConfigurations
 
