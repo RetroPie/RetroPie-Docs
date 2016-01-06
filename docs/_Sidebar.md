@@ -91,7 +91,7 @@
 * [Wiimotes](https://github.com/RetroPie/RetroPie-Setup/wiki/Wiimotes-with-classic-controllers)
 * [Wii U Pro Controller (Debian jessie only)](https://github.com/RetroPie/RetroPie-Setup/wiki/Setting-up-Wii-U-Pro-controller)
 * [Xin-Mo Driver](https://github.com/RetroPie/RetroPie-Setup/wiki/Troubles-with-the-Xin-Mo-Controller)
-* [GPIO Controller Module](https://github.com/RetroPie/RetroPie-Setup/wiki/GPIO-Modules)
+* [GPIO Controller Modules](https://github.com/RetroPie/RetroPie-Setup/wiki/GPIO-Modules)
 
 ## Troubleshooting
 
