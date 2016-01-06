@@ -107,8 +107,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [Sound Issues](https://github.com/RetroPie/RetroPie-Setup/wiki/Sound-Issues)
 * [Speed Issues](https://github.com/RetroPie/RetroPie-Setup/wiki/Speed-Issues)
 * [Video Issues](https://github.com/RetroPie/RetroPie-Setup/wiki/Video-Issues)
-
-## [FAQ](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ)
+* [FAQ](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ)
 
 ## Developers
 
