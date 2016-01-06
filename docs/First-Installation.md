@@ -189,6 +189,8 @@ For more WiFi configuration options see this page [HERE](https://github.com/Retr
 
 ## Transferring Roms
 
+Due to the grey legal area of ROMS, they cannot be provided with RetroPie and must be provided by the user. You should only have ROMs of games that you own. 
+
 There are three main methods of transferring roms: 
 
 ### USB
