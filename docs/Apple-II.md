@@ -57,3 +57,7 @@ Upon boot, press F1 to get an overview of the controls- they will vary by game. 
 * Select your game by pressing Enter and then press F2 to reboot into the game you just selected- now you should be inside your game. Most games will have a splash screen with controls specific to that game. 
 
 * To exit back to Emulationstation press F10 
+
+## Running Disks From EmulationStation
+
+http://blog.petrockblock.com/forums/topic/how-to-get-linapple-disk-images-running-from-emulation-station-in-retropie/
