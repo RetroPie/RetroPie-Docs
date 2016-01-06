@@ -54,7 +54,7 @@
   * [Super Mario War](https://github.com/RetroPie/RetroPie-Setup/wiki/Super-Mario-War)
   * [SuperTux](https://github.com/RetroPie/RetroPie-Setup/wiki/SuperTux)
   * [Wolfenstein 3D](https://github.com/RetroPie/RetroPie-Setup/wiki/Wolfenstein-3D)
-* [PSP](https://github.com/RetroPie/RetroPie-Setup/wiki/psp)
+* [PSP](https://github.com/RetroPie/RetroPie-Setup/wiki/PSP)
 * [PlayStation 1](https://github.com/petrockblog/RetroPie-Setup/wiki/Playstation-1)
 * [Saturn](https://github.com/petrockblog/RetroPie-Setup/wiki/Saturn)
 * [ScummVM](https://github.com/petrockblog/RetroPie-Setup/wiki/ScummVM)
