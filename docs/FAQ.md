@@ -115,10 +115,7 @@ Follow the RetroArch-Configuration guide:
 
 https://github.com/petrockblog/RetroPie-Setup/wiki/RetroArch-Configuration
 
-
-### Root Password
-
-# Why can't I SSH as root anymore?
+### Why can't I SSH as root anymore?
 
 Starting with RetroPie 3.0 BETA 3 the root password was disabled (as is the case for Raspbian by default and many other linux distros). 
 
