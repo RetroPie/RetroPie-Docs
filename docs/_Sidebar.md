@@ -80,7 +80,6 @@
 * [Netplay](https://github.com/RetroPie/RetroPie-Setup/wiki/Netplay)
 * [Overclocking](https://github.com/RetroPie/RetroPie-Setup/wiki/Overclocking)
 * [Memory Split](https://github.com/RetroPie/RetroPie-Setup/wiki/Memory-Split)
-* [Advanced Configuration](https://github.com/RetroPie/RetroPie-Setup/wiki/Advanced-Configuration)
 * [Manual Installation](https://github.com/RetroPie/RetroPie-Setup/wiki/Manual-Installation)
 
 ## Controllers
