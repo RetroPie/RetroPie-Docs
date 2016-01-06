@@ -33,5 +33,5 @@ For more information on custom RetroArch controls see: [RetroArch Configuration]
 
 ### ppsspp
 
-Controls can be mapped from the main menu under Settings >> Controls >> Control Mapping
+Controls can be mapped from the main menu under Settings >> Controls >> Control Mapping . To access this, connect a keyboard and press Esc during a game.
 
