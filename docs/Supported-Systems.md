@@ -2,7 +2,7 @@ Currently, emulators for the following systems can be installed with the RetroPi
 
 * [3do](https://github.com/RetroPie/RetroPie-Setup/wiki/3do) [(lr-4do)](https://github.com/libretro/4do-libretro) (EXPERIMENTAL)
 * [Amiga](https://github.com/RetroPie/RetroPie-Setup/wiki/Amiga) [(UAE4ALL2)](https://github.com/RetroPie/uae4all2), [(UAE4ARM)](https://github.com/Chips-fr/uae4arm-rpi/)
-* [Amstrad CPC](https://github.com/RetroPie/RetroPie-Setup/wiki/Amstrad-CPC) [(CPC4Rpi)](http://gaming.capsule-sa.co.za/?gamepress_reviews=cpc4rpi-cpc-6128-emulator-for-raspberry-pi), [(lr-cap32)](https://github.com/libretro/libretro-cap32.git)
+* [Amstrad CPC](https://github.com/RetroPie/RetroPie-Setup/wiki/Amstrad-CPC) [(CapriceRPI)](https://github.com/KaosOverride/CapriceRPI), [(lr-cap32)](https://github.com/libretro/libretro-cap32.git)
 * [Apple II](https://github.com/RetroPie/RetroPie-Setup/wiki/Apple-II) [(Linapple)](http://sourceforge.net/projects/linapple/)
 * [Atari 2600](https://github.com/RetroPie/RetroPie-Setup/wiki/Atari-2600) [(Stella)](http://stella.sourceforge.net/), [(lr-stella)](https://github.com/libretro/stella-libretro)
 * [Atari 5200, and Atari 8 bit series: 400, 800, 1200XL, 600XL, 800XL, 130XE, XEGS]      
