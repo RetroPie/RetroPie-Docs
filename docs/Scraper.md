@@ -48,7 +48,7 @@ If you're using ES-scraper as a standalone script, you will need to install PIL 
 RetroPie-Setup already installs the necessary dependencies so if you're using it you can skip this step.
 
 # Usage
-* Open your systems config file (/etc/emulationstation/es_systems.cfg) and append the corresponding [platform ID](Available-Platforms) to each system:
+* Open your systems config file (/etc/emulationstation/es_systems.cfg) and append the corresponding platform ID to each system:
 ```
 NAME=NES
 PATH=~/ROMS/NES/
