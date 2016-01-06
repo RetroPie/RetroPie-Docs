@@ -90,7 +90,7 @@
 * [Smartphone Gamepad](https://github.com/RetroPie/RetroPie-Setup/wiki/Virtual-Gamepad)
 * [Wiimotes](https://github.com/RetroPie/RetroPie-Setup/wiki/Wiimotes-with-classic-controllers)
 * [Wii U Pro Controller (Debian jessie only)](https://github.com/RetroPie/RetroPie-Setup/wiki/Setting-up-Wii-U-Pro-controller)
-* [Xin-Mo Driver](https://github.com/RetroPie/RetroPie-Setup/wiki/Troubles-with-the-Xin-Mo-Controller)
+* [Xin-Mo Driver](https://github.com/RetroPie/RetroPie-Setup/wiki/Xin-Mo-Controller)
 * [GPIO Controller Modules](https://github.com/RetroPie/RetroPie-Setup/wiki/GPIO-Modules)
 
 ## Troubleshooting
