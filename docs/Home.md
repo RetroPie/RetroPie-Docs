@@ -102,7 +102,6 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [Use Your Smartphone as a Gamepad!](https://github.com/RetroPie/RetroPie-Setup/wiki/Virtual-Gamepad) (EXPERIMENTAL)
 * [Xin-Mo Driver](https://github.com/RetroPie/RetroPie-Setup/wiki/Troubles-with-the-Xin-Mo-Controller)
 * [Module for GPIO interface for retro game controllers](https://github.com/RetroPie/RetroPie-Setup/wiki/Module-for-GPIO-interface-for-retro-game-controllers)
-* [Control Issues](https://github.com/RetroPie/RetroPie-Setup/wiki/Control-Issues)
 
 ## Troubleshooting
 * [Sound Issues](https://github.com/RetroPie/RetroPie-Setup/wiki/Sound-Issues)
