@@ -29,13 +29,13 @@ There is a fundamental bug with EmulationStation where unique background images 
 
 There are a few things you can do to fix the white screen of death:
 
-- increase your GPU/CPU split (see [here](https://github.com/RetroPie/RetroPie-Setup/wiki/Advanced-Configuration#cpugpu-split))
+- increase your GPU/CPU split (see [here](https://github.com/RetroPie/RetroPie-Setup/wiki/Memory-Split))
 
 - remove some systems
 
 - switch your theme to any Carbon, Eudora, or Canela variant (as they have one static background and therefore don't crash when you have many systems)
 
-If you can't access the theme changer in emulationstation because its a white screen you can [ssh](https://github.com/RetroPie/RetroPie-Setup/wiki/ssh) into the pi and change the theme name back to carbon in the backend in `/home/pi/.emulationstation/es_settings.cfg`
+If you can't access the theme changer in emulationstation because its a white screen you can [ssh](https://github.com/RetroPie/RetroPie-Setup/wiki/SSH) into the pi and change the theme name back to carbon in the backend in `/home/pi/.emulationstation/es_settings.cfg`
 
 #THEME GALLERY
 
