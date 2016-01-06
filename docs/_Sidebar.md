@@ -5,7 +5,7 @@
 * [**First Installation**](https://github.com/RetroPie/RetroPie-Setup/wiki/First-Installation)
 * [Setting Up WiFi](https://github.com/RetroPie/RetroPie-Setup/wiki/Setting-Up-Wifi)
 * [Configuring Controllers (RetroArch)](https://github.com/RetroPie/RetroPie-Setup/wiki/RetroArch-Configuration)
-* [Transferring games (ROMs)](https://github.com/RetroPie/RetroPie-Setup/wiki/How-to-get-ROMs-on-the-SD-card)
+* [Transferring games (ROMs)](https://github.com/RetroPie/RetroPie-Setup/wiki/Transferring-Roms)
 * [Getting the right MAME ROMs](https://github.com/RetroPie/RetroPie-Setup/wiki/Managing-ROMs)
 * [Using the Runcommand Menu](https://github.com/RetroPie/RetroPie-Setup/wiki/runcommand)
 * [Updating RetroPie](https://github.com/RetroPie/RetroPie-Setup/wiki/Updating-RetroPie)
