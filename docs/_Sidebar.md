@@ -78,6 +78,7 @@
 * [EmulationStation Themes](https://github.com/RetroPie/RetroPie-Setup/wiki/themes)
 * [Scraping Games](https://github.com/RetroPie/RetroPie-Setup/wiki/scraper)
 * [Netplay](https://github.com/RetroPie/RetroPie-Setup/wiki/Netplay)
+* [Overclocking](https://github.com/RetroPie/RetroPie-Setup/wiki/Overclocking)
 * [Advanced Configuration](https://github.com/RetroPie/RetroPie-Setup/wiki/Advanced-Configuration)
 * [Manual Installation](https://github.com/RetroPie/RetroPie-Setup/wiki/Manual-Installation)
 
