@@ -2,27 +2,27 @@
 
 The module for retro game controllers allows connecting various home computer joysticks and console gamepads to Raspberry Pi via GPIO, with minimal amount of extra hardware. The module consists of 2 drivers, which each support different types of controllers:
 
-[gamecon_gpio_rpi](gamecon_gpio_rpi):
+[gamecon_gpio_rpi](https://github.com/RetroPie/RetroPie-Setup/wiki/GPIO-Modules#gamecon_gpio_rpi):
 * NES gamepads
 * SNES gamepads and mouses
 * PSX/PS2 gamepads, wheels and DDR controllers
 * N64 controllers
 * Gamecube controllers
 
-[db9_gpio_rpi](db9_gpio_rpi):
+[db9_gpio_rpi](https://github.com/RetroPie/RetroPie-Setup/wiki/GPIO-Modules#db9_gpio_rpi):
 * Atari, Commodore, Amiga etc. db9 multisystem joysticks
 * Sega Mega Drive (Genesis) pads
 * Sega Saturn controllers (Note: custom connector instead of db9)
 * Amiga CD32 pads
 
 
-# Installation
+## Installation
 
 The easiest way to install the drivers is via RetroPie-script, by selecting "Install/update multi-console gamepad drivers for GPIO" option in the setup section.
 Alternatively, .deb-packages for the drivers and kernel headers can be directly downloaded [here](http://www.niksula.hut.fi/~mhiienka/Rpi/)
 
 
-# Configuration
+## Configuration
 
 The drivers are loaded/unloaded with _modprobe_. More information and connection diagrams are found in the driver sub-pages and in provided READMEs.
 
@@ -30,16 +30,16 @@ The drivers are loaded/unloaded with _modprobe_. More information and connection
 
 ***
 
-# gamecon_gpio_rpi
+# **gamecon_gpio_rpi**
 
 
 ***
 
-# Introduction
+## Introduction
 
 Gamecon_gpio_rpi is a kernel module which allows interfacing various retro gamepads with Raspberry Pi's GPIO. It's based on the gamecon module from Linux Input Driver project, but has some additions and modifications. The goal is make the driver simple but versatile, making it easy and cheap to use gamepads with Pi. Most pads can be connected with just a few wires, although controller sockets provide a more lasting way for those who have them.
 
-# Controller support
+## Controller support
 The driver supports up to 4 controllers of the following types (can be mixed freely):
 * NES gamepads
 * SNES gamepads and mouses
@@ -47,7 +47,7 @@ The driver supports up to 4 controllers of the following types (can be mixed fre
 * N64 gamepads
 * Gamecube gamepads
 
-# GPIO interface
+## GPIO interface
 Depending on the number and type of pads, the interface needs 3 to 11 gpio pins. Pi's GPIO data pins operate at 3.3V, and 3.3V power pin is rated at max. 50mA (see [here](http://elinux.org/RPi_Low-level_peripherals) for more info). This generates a few very important rules, which should be read before connecting any gamepads.
 
 1. All gamepads must use 3.3V supply regardless which they were designed for. Some older controllers (e.g. NES, SNES) are speficied for 5V, but they should operate fine with 3.3V (with a few exceptions - see FAQ). 5V power pin shouldn't be used without using level shifters or clamps on the input data pins, so don't use it unless you know what you are doing.
@@ -62,16 +62,16 @@ The pinout summary can be seen below. The power and ground pins are common for a
 
 The actual interconnect (NES/SNES/N64) can be made from female-to-female jumper wires and a single conductor wires with the other end folded in double (see [here](http://www.niksula.hut.fi/~mhiienka/Rpi/images/gamecon_n64.jpg) and [here](http://www.niksula.hut.fi/~mhiienka/Rpi/images/gamecon_wires.jpg)). For PSX pads, the jumper wires are enough [by themselves](http://www.niksula.hut.fi/~mhiienka/Rpi/images/gamecon_psx.jpg). The only hard one is GC pad, which must be opened to make a good connection for the wires.
 
-# Installation and usage
+## Installation and usage
 The easiest way to install the module is with RetroPie-script. Just remember to upgrade your firmware before installing the module, as it is built automatically using the configuration data from the latest RPi kernel. This also means that a fw update afterwards can break the compatibility, but this is easily fixed by reconfiguration/update of the module (see FAQ). Loading the module is done with modprobe, which is explained in detail in the README  (/usr/share/doc/gamecon_gpio_rpi/README.gz). In addition of install/update, Retropie also contains an option to permanently enable configuration for 2 SNES pads connected to PAD2 & PAD3 pins (designed for RetroPie GPIO Adapter). Permanent configuration can be done manually by adding a corresponding configuration line (e.g. "gamecon_gpio_rpi map=0,2") to /etc/modules .
 
-# Questions and feedback
+## Questions and feedback
 Related [thread](http://www.raspberrypi.org/phpBB3/viewtopic.php?f=78&t=15787) in Raspberry Pi forum.
 
-# TODO
+## TODO
 * add support for N64's rumble pak
 
-# FAQ
+## FAQ
 * **Q: I get these errors when loading the module: "ERROR: could not insert 'gamecon_gpio_rpi': Exec format error", "gamecon_gpio_rpi: disagrees about version of symbol module_layout"**
 * A: This means that the module has not been built against the current kernel version. This can happen if firmware is not up-to-date during installation, or by a firmware update afterwards. To fix this, run "Install/update multi-console gamepad drivers for GPIO"-option in RetroPie.
 
@@ -90,7 +90,7 @@ Related [thread](http://www.raspberrypi.org/phpBB3/viewtopic.php?f=78&t=15787) i
 * **Q: N64/GC pads do not operate reliably**
 * A: These pads use an asynchronous communication prototol, and the bitbanging done by the driver assumes a fixed CPU frequency within certain limits. Power-saving features may break the operation, and should be disabled when using N64/GC pads. You can check whether frequency scaling is active by looking at /sys/devices/system/cpu/cpu0/cpufreq/scaling_* -nodes. It can be disabled by selecting "performance"-governor - see [this](https://wiki.debian.org/HowTo/CpuFrequencyScaling) page for more info.
 
-# Version history
+## Version history
 ### 1.0 (27.2.2015)
 * Added support for RPi2
 
@@ -109,21 +109,21 @@ Related [thread](http://www.raspberrypi.org/phpBB3/viewtopic.php?f=78&t=15787) i
 
 ***
 
-# Db9_gpio_rpi
+# **Db9_gpio_rpi**
 
 ***
 
-# Introduction
+## Introduction
 Db9_gpio_rpi is a driver (kernel module) for DB9 joysticks and gamepads connected to Raspberry Pi's GPIO. The driver is adapted from parport-targeted db9 kernel module to GPIO, and has some additions and modifications. Connection of db9 joysticks to RPi's GPIO requires no extra hardware in most cases, providing easy and cheap way for using retro joysticks with RPi.
 
-# Joystick support
+## Joystick support
 The list of supported db9 joysticks is below. Since the number of GPIO pins is limited, only 2 joysticks can be used simultaneously.
 * Atari, Commodore, Amiga etc. db9 multisystem joysticks (1-3 buttons)
 * Sega Mega Drive (Genesis) pads
 * Sega Saturn controllers (Note: custom connector instead of db9)
 * Amiga CD32 pads
 
-# GPIO interface
+## GPIO interface
 The available GPIOs are divided into 2 ports, PORT1 and PORT2. Both use 7 data pins, which are in identical locations on all RPi board variants. Additionally, the joysticks require either ground, or both ground and power pins depending on the type. These pins are common for both ports.
 
 Pi's GPIO data pins operate at 3.3V and aren't 5V tolerant (see [this](http://elinux.org/RPi_Low-level_peripherals)), so 3.3V '''must''' be used for joysticks requiring power even though they'd be designed for 5V. However, some TTL-based joysticks may not function correctly using 3.3V supply. If they need to be powered from 5V, level shifters must be added between output pins of joystick and GPIO input pins. For example, 74LVC245 is an IC which can be used for this downconversion.
@@ -193,7 +193,7 @@ Below is an illustration which shows the pins used by the driver, with the mappi
 
 More information on the connections is provided in the driver README (/usr/share/doc/db9_gpio_rpi/README.gz).
 
-# Usage
+## Usage
 The module is loaded and configured with modprobe. This is explained shortly in the parent page and in detail in the driver README. The joystick IDs for modprobe are listed below:
 
 | ID | Description                   |
@@ -208,15 +208,15 @@ The module is loaded and configured with modprobe. This is explained shortly in 
 | 7  | Sega Saturn controller        |
 | 8  | Amiga CD32 gamepad            |
 
-# Questions and feedback
+## Questions and feedback
 Related [thread](http://www.raspberrypi.org/phpBB3/viewtopic.php?f=78&t=15787) in Raspberry Pi forum.
 
-# FAQ
+## FAQ
 * Q: I get these errors when loading the module: "ERROR: could not insert 'db9_gpio_rpi': Exec format error", "db9_gpio_rpi: disagrees about version of symbol module_layout"
 * A: This means that the module has not been built against the current kernel version. This can happen if the fw is not up-to-date during installation, or by a fw update afterwards. To fix this, run "Install/update multi-console gamepad drivers for GPIO"-option in RetroPie setup.
 
 
-# Version history
+## Version history
 ### 1.0 (27.2.2015)
 * Added support for RPi2
 * Fixed issues with 3rd-party MD pads
