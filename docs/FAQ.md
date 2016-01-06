@@ -109,3 +109,8 @@ If you'd like keyboard configurations to work add
 --config /opt/retropie/configs/all/retroarch.cfg
 ```
 
+### Is there another way to set up the gamepad for use, e.g., within the snes emulator?
+
+Follow the RetroArch-Configuration guide:
+
+https://github.com/petrockblog/RetroPie-Setup/wiki/RetroArch-Configuration
