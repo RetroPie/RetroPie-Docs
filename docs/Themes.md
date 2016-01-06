@@ -35,7 +35,7 @@ There are a few things you can do to fix the white screen of death:
 
 - switch your theme to any Carbon, Eudora, or Canela variant (as they have one static background and therefore don't crash when you have many systems)
 
-If you can't access the theme changer in emulationstation because its a white screen you can [ssh](https://github.com/RetroPie/RetroPie-Setup/wiki/SSH) into the pi and change the theme name back to carbon in the backend in `/home/pi/.emulationstation/es_settings.cfg`
+If you can't access the theme changer in emulationstation because it's a white screen, you can [ssh](https://github.com/RetroPie/RetroPie-Setup/wiki/SSH) into the pi and change the theme name back to carbon in the backend in `/home/pi/.emulationstation/es_settings.cfg`
 
 #THEME GALLERY
 
