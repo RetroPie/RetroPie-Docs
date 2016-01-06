@@ -18,7 +18,7 @@ Emulator | Location
 | **pc engine cd** / **turbografx-16 cd** | `/home/pi/RetroPie/roms/pcenginecd/syscard3.pce` (PC Engine-CD uses [BIOS] Super CD-ROM System (Japan) (v3.0) renamed to syscard3.pce)
 | **psx** | `/home/pi/RetroPie/BIOS/SCPH1001.BIN`
 | **neo geo** | `/home/pi/RetroPie/roms/neogeo/neogeo.zip` **OR** `/home/pi/RetroPie/roms/fba/neogeo.zip` **OR**  for 2.6 and earlier: `/home/pi/RetroPie/roms/fba-libretro/neogeo.zip`
-| **sega cd** |`/home/pi/RetroPie/BIOS/us_scd1_9210.bin` **OR** `eu_mcd1_9210.bin` **OR** `jp_mcd1_9112.bin` for Europe and Japan respectively
+| **sega cd** |`/home/pi/RetroPie/BIOS/us_scd1_9210.bin` (or rename to `bios_CD_U.bin`) **OR** `eu_mcd1_9210.bin` (or rename to `bios_CD_E.bin`) **OR** `jp_mcd1_9112.bin` (or rename to `bios_CD_J.bin`) for Europe and Japan respectively
 | **Sega Saturn** | `/home/pi/RetroPie/BIOS/saturn_bios.bin`
 | **Videopac or Odyssey2** | `/home/pi/RetroPie/BIOS/o2rom.bin`
 
