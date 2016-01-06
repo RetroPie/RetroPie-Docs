@@ -55,3 +55,5 @@ In the [sdl] section, edit line 34 of dosbox-SVN.conf so that usescancodes is se
 In some games your joystick/controller may be permanently fixed in one corner. For these games, edit dosbox-SVN.conf, find the [Joystick] section and set timed to false as below:
 
     timed=false
+
+rpix86 defaults to analog audio output, if you use HDMI audio you need to give -a0 parameter to rpix86
