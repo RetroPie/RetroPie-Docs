@@ -2,7 +2,7 @@
 ***
 _The Amstrad CPC (short for Colour Personal Computer) is a series of 8-bit home computers produced by Amstrad between 1984 and 1990._
 ***
-## Emulators: [CPC4Rpi](http://gaming.capsule-sa.co.za/?gamepress_reviews=cpc4rpi-cpc-6128-emulator-for-raspberry-pi), [lr-caprice32](https://github.com/libretro/libretro-cap32.git)
+## Emulators: [CapriceRPI](https://github.com/KaosOverride/CapriceRPI.git), [lr-caprice32](https://github.com/libretro/libretro-cap32.git)
 
 ## ROMS
 
@@ -14,7 +14,7 @@ Place your Amstrad CPC ROMs in
 ```
 ## Controls
 
-## CPC4Rpi
+## CapriceRPI
 
 If you are open into a ROM from EmulationStation and it opens to a blue screen you can type
 ```
