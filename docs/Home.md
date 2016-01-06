@@ -101,8 +101,8 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [Setting up a Wii U Pro Controller (debian jessie only)](https://github.com/RetroPie/RetroPie-Setup/wiki/Setting-up-Wii-U-Pro-controller)
 * [Setting up a Bluetooth controller](https://github.com/RetroPie/RetroPie-Setup/wiki/Setting-up-a-Bluetooth-controller)
 * [Use Your Smartphone as a Gamepad!](https://github.com/RetroPie/RetroPie-Setup/wiki/Virtual-Gamepad) (EXPERIMENTAL)
-* [Xin-Mo Driver](https://github.com/RetroPie/RetroPie-Setup/wiki/Troubles-with-the-Xin-Mo-Controller)
-* [Module for GPIO interface for retro game controllers](https://github.com/RetroPie/RetroPie-Setup/wiki/Module-for-GPIO-interface-for-retro-game-controllers)
+* [Xin-Mo Driver](https://github.com/RetroPie/RetroPie-Setup/wiki/Xin-Mo-Controller)
+* [Module for GPIO interface for retro game controllers](https://github.com/RetroPie/RetroPie-Setup/wiki/GPIO-Modules)
 
 ## Troubleshooting
 * [Sound Issues](https://github.com/RetroPie/RetroPie-Setup/wiki/Sound-Issues)
