@@ -147,3 +147,12 @@ change it to
 ```PermitRootLogin yes```
 
 then ctrl+x to save, next set your root password & restart your Pi
+
+### The PSX emulator reports no BIOS found. What do I do?
+
+Ensure the bios file(s) is/are all lowercase and put them in
+```shell
+/home/pi/RetroPie/BIOS
+```
+
+More information about PSX BIOS files can be found on the [PSX page](https://github.com/petrockblog/RetroPie-Setup/wiki/Playstation-1).
