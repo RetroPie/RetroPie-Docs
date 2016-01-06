@@ -97,7 +97,7 @@ reboot
 
 if you have any issues with the controller you can debug it with `sudo jstest /dev/input/js0`
 
-Disconnect blue-tooth controller
+Disconnect Bluetooth Controller
 ---
 
 To disconnect the controller, hold down the ps3 button for 10 seconds.
