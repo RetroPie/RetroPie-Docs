@@ -11,7 +11,7 @@ Emulator | Location
 | **Atari 7800** |  This BIOS is optional. `/home/pi/RetroPie/BIOS/7800 BIOS (U).rom`
 | **Dreamcast** | `/home/pi/RetroPie/BIOS/dc_boot.bin` **AND** `/home/pi/RetroPie/BIOS/dc_flash.bin`
 | **Famicom Disk System** | `/home/pi/RetroPie/BIOS/disksys.rom`
-| **gba** | `/home/pi/RetroPie/BIOS/gba_bios.bin` or for 2.6 and earlier `/opt/retropie/emulators/gpsp/raspberrypi/gba_bios.bin`
+| **gba** | `/home/pi/RetroPie/BIOS/gba_bios.bin`
 | **Intellivision** | `/home/pi/RetroPie/BIOS/exec.bin` **AND** `/home/pi/RetroPie/BIOS/grom.bin`
 | **Macintosh** | `/home/pi/RetroPie/roms/macintosh/mac.rom` **AND** `/home/pi/RetroPie/roms/macintosh/disk.img`
 | **pc engine** / **turbografx-16** | `/home/pi/RetroPie/BIOS/SYSCARD3.PCE`
