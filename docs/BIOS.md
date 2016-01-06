@@ -22,4 +22,4 @@ Emulator | Location
 | **Sega Saturn** | `/home/pi/RetroPie/BIOS/saturn_bios.bin`
 | **Videopac or Odyssey2** | `/home/pi/RetroPie/BIOS/o2rom.bin`
 
-A bios file is not required by the Sega Megadrive or the Nintendo SNES.
+If a system is not listed in the chart above, it does not require a BIOS in order to function properly.
