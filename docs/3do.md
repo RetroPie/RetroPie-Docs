@@ -1,4 +1,3 @@
-![3do](https://cloud.githubusercontent.com/assets/10035308/12185992/05944dac-b55c-11e5-8c8e-38fd5f2bc8d9.png)
 ***
 
 ![3do right](https://cloud.githubusercontent.com/assets/10035308/12186059/8d7ec76a-b55c-11e5-9231-b0c561de271c.png)
