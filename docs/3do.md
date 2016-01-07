@@ -1,4 +1,8 @@
-![](http://vignette3.wikia.nocookie.net/retroconsoles/images/7/74/R.E.A.L_3DO_Interactive_Multiplayer_logo.png/revision/latest?cb=20130607161233)
+![3do](https://cloud.githubusercontent.com/assets/10035308/12185992/05944dac-b55c-11e5-8c8e-38fd5f2bc8d9.png)
+***
+
+![3do right](https://cloud.githubusercontent.com/assets/10035308/12186059/8d7ec76a-b55c-11e5-9231-b0c561de271c.png)
+
 ***
 _The Panasonic 3do Real Multiplayer was a Home Video Game Console developed by the 3do company in 1994_
 
