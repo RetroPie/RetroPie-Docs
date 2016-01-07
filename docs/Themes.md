@@ -103,17 +103,11 @@ If you can't access the theme changer in emulationstation because it's a white s
 <table style="width:100%">
 <tr>
   <th>nbba</td>
-
+  <th>Pixel</td>
 </tr>
+<tr>
 <td>
-<img src="https://cloud.githubusercontent.com/assets/10035308/10358023/3d62f160-6d46-11e5-9383-23da3aad1951.png" width="250"></td> 
-<tr>
-</tr>
-  <td><img src="https://cloud.githubusercontent.com/assets/10035308/10358022/3d53dac2-6d46-11e5-9e53-849cfffbc7e2.png" width="250"></td> 
-
-
-
-<tr>
-
+<img src="https://cloud.githubusercontent.com/assets/10035308/10358023/3d62f160-6d46-11e5-9383-23da3aad1951.png" width="250"><img src="https://cloud.githubusercontent.com/assets/10035308/10358022/3d53dac2-6d46-11e5-9e53-849cfffbc7e2.png" width="250"></td> 
+  <td><img src="https://cloud.githubusercontent.com/assets/10035308/12162973/0191f402-b4c6-11e5-9a52-5acefa37d0d1.png" width="250"><img src="https://cloud.githubusercontent.com/assets/10035308/12163003/5413a25c-b4c6-11e5-9207-fcc2d5fe69d3.png" width="250"></td> 
   </tr>
 </table>
