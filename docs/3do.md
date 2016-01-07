@@ -5,7 +5,7 @@ _The Panasonic 3do Real Multiplayer was a Home Video Game Console developed by t
 ***
 ## Emulator: [lr-4do](https://github.com/libretro/4do-libretro) (EXPERIMENTAL)
 
-Note that this is experimental- even with an overclocked RPi2 it was incredibly laggy and slow. Definitely won't be coming out of experimental any time soon. It can be installed from the experimental menu of the setup script.
+Note that this is experimental- even with an overclocked RPi2 it was incredibly laggy and slow. Definitely won't be coming out of experimental any time soon. It can be installed from the experimental menu of the [RetroPie Setup Script](Updating RetroPie).
 
 ## ROMS
 Accepted File Extensions: **.iso**
