@@ -1,15 +1,14 @@
-![](http://www.bitsdreams.com/c/13-category_default/neogeo-pocket.jpg)
+![](http://www.videogameobsession.com/videogame/neogeopocketcolor/Logo_NGPC-vgo.gif)
 
 ***
 The Neo Geo Pocket was a handheld video game system released by SNK in 1998.
 
 ***
-This emulator emulates both the Neo Geo Pocket, and the Neo Geo Pocket Color.
 
 ## Emulator: [lr-mednafen-ngp](https://github.com/libretro/beetle-ngp-libretro.git)
 
 ## ROMS
-Accept File Extensions: **.ngp .ngc**
+Accept File Extensions: **.ngp**
 
 Place your Neo Geo Pocket ROMs in
 ```
