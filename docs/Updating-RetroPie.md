@@ -1,6 +1,6 @@
 # Updating RetroPie
 
-The conventional way to update RetroPie is through the setup script. 
+The conventional way to update RetroPie and install new features is through the setup script. 
 
 The setup script can be accessed from the **RetroPie menu** in emulationstation. 
 
