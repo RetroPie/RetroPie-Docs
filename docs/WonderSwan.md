@@ -4,8 +4,6 @@
 
 WonderSwan is a handheld gaming device that was released by Bandai solely in Japan in 1998. 
 ***
-This emulator emulates both the WonderSwan and the WonderSwan Color.
-
 
 ## Emulator: [lr-mednafen-wswan](https://github.com/libretro/beetle-wswan-libretro.git)
 
