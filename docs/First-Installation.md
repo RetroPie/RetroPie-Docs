@@ -98,7 +98,7 @@ Select+Left | Input State Slot Decrease
 Select+X | RGUI Menu
 Select+B | Reset
 
-If you wish to configure more than one controller, you can do so from the start menu of emulationstation. For more details on manual controller configurations see this page [Here](https://github.com/petrockblog/RetroPie-Setup/wiki/RetroArch-Configuration)
+If you wish to configure more than one controller, you can do so from the start menu of emulationstation. For more details on manual controller configurations see this page [Here](https://github.com/petrockblog/RetroPie-Setup/wiki/RetroArch-Configuration). See also [HERE](https://github.com/RetroPie/RetroPie-Setup/wiki#controller-configurations)
 
 For those that are interested, the retroarch controller config that is created after you've followed the aforementioned steps is located in: 
 ```
