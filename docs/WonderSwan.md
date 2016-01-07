@@ -9,7 +9,7 @@ WonderSwan is a handheld gaming device that was released by Bandai solely in Jap
 
 ## ROMS
 
-Accepted File Extensions **.ws .wsc**
+Accepted File Extensions **.ws**
 
 Place your WonderSwan ROMs in
 ```
