@@ -4,29 +4,9 @@ _The Sega Dreamcast is a 6th generation home video game console released by Sega
 ***
 ## Emulator: [Reicast](https://github.com/reicast/reicast-emulator) 
 
-It can be very laggy and buggy, but some games work great (See small list below). Pi 2 is required.  
+It can be very laggy and buggy, but some games work great (see compatibility list below). Pi 2 is required.  
 
-Audio is choppy and not great, and degrades the longer the emulator is in use.  Restarting the emulator (and ultimately the Pi) may become a good idea after a couple hours of gameplay.  (There is a memory leak somewhere in the Reicast code)
-
-### Game compatibility list
-
-* San Francisco Rush 2049 = Totally playable 1player, full speed most times (except particle effects)!  Split-screen multiplayer bounds rendered incorrectly :(
-* Marvel Vs Capcom 1 = Totally playable multiplayer, full speed!
-* Marvel Vs Capcom 2 = Totally playable multiplayer, almost full speed!
-* Coaster Works = Totally playable except when utilizing 4-split view to edit a track (split-screen bounds rendered incorrectly, all overlaid)
-
-#### Games not working so well
-
-* Gauntlet Legends = Not playable, rendering blanks out every other frame and may cause epilepsy; wouldn't recommend it just yet
-* Crazy Taxi = Playable, but slow with rendering issues
-* Crazy Taxi 2 = Playable, but slow with some rendering issues
-* Sonic Adventures 2 = Playable, but slow 
-* Jet Set Radio = Playable, but slow
-* Soul Calibur = Playable, but slow and with rendering issues
-
-### Performance
-
-Low screen resolution are recommended to get best performance. Performance suffers if HD resolutions are used.   
+Audio is choppy and not great, and degrades the longer the emulator is in use.  Restarting the emulator (and ultimately the Pi) may become a good idea after a couple hours of gameplay. There is a memory leak somewhere in the Reicast code. Low screen resolution are recommended to get best performance. Performance suffers if HD resolutions are used.   
 
 ## ROMS
 
@@ -36,6 +16,8 @@ Place your Dreamcast ROMs in
 ```
 /home/pi/RetroPie/roms/dreamcast
 ```
+
+[**DREAMCAST COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1AD91IcudqHP7dDmEXLO25Pzb85uUgAy4chU2QxlZBQk/edit?usp=sharing) feel free to contribute to the list.
 
 ## BIOS
 
