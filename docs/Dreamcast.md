@@ -1,4 +1,5 @@
-![dreamcast1](https://cloud.githubusercontent.com/assets/10035308/11576152/e9f8f372-99d1-11e5-8e01-d50cf572e6cd.png)
+***
+![dreamcast](https://cloud.githubusercontent.com/assets/10035308/12191302/2612a414-b590-11e5-82e3-f39acc38eb71.png)
 ***
 _The Sega Dreamcast is a 6th generation home video game console released by Sega in 1998. It is notably the last console that Sega produced._
 ***
