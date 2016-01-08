@@ -1,5 +1,5 @@
 ***
-![gb](https://cloud.githubusercontent.com/assets/10035308/12191767/a6c11d98-b595-11e5-819f-de182fb87f4b.png)
+![gb](https://cloud.githubusercontent.com/assets/10035308/12191785/d743f5e4-b595-11e5-98dd-ca2ec58a1769.png)
 ***
 _The Game Boy was released by Nintendo in 1989 thus kicking off the era of handheld gaming and Pokemon._
 ***
