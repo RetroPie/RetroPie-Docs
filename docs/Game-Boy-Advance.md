@@ -1,4 +1,5 @@
-![Gameboy Advance Logo](http://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Gameboy_advance_logo.svg/640px-Gameboy_advance_logo.svg.png)
+***
+![gba](https://cloud.githubusercontent.com/assets/10035308/12191989/d423d454-b597-11e5-866f-8aaeec0b88b9.png)
 ***
 _The Game Boy Advance is a 32 bit handheld video game console released by Nintendo in 2001._
 
