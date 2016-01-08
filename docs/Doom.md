@@ -124,7 +124,7 @@ Linux is case sensitive so make sure the name of the WAD in your script matches 
 
 5. Create a shell script, Batman Doom.sh to launch the custom WAD as below. It's the same as Doom 2 but it points to the WAD in the batman folder.
 
-    #!/bin/bash    
-    /opt/retropie/supplementary/runcommand/runcommand.sh 0 "/opt/retropie/emulators/retroarch/bin/retroarch -L /opt/retropie/libretrocores/lr-prboom/prboom_libretro.so --config /opt/retropie/configs/doom/retroarch.cfg /home/pi/RetroPie/roms/doom/batman/doom2.wad" "lr-prboom
+      #!/bin/bash    
+      /opt/retropie/supplementary/runcommand/runcommand.sh 0 "/opt/retropie/emulators/retroarch/bin/retroarch -L /opt/retropie/libretrocores/lr-prboom/prboom_libretro.so --config /opt/retropie/configs/doom/retroarch.cfg /home/pi/RetroPie/roms/doom/batman/doom2.wad" "lr-prboom
 
 6. Repeat for each mod (PWAD), creating a new folder for each one and a new script replacing the folder name. 
