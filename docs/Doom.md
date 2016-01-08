@@ -93,44 +93,42 @@ File Name | mp3
 * mus_dm2ttl          |      "track 02 title screen.mp3" 
 * mus_dm2int         |       "track 05 stats screen.mp3"
 
-### How to Launch Doom IWADs and Mods (PWADS) from Emulationstation using lr-prboom
-
-This method uses an old version of the pr-boom script to launch Doom Shareware version.
+### How to Launch Doom IWADs and Mods (PWADs) from Emulationstation using lr-prboom
 
 **To Launch Doom, Ultimate Doom, Doom 2, TNT, Plutonia, Final Doom (IWADS)**
 
-1. Place your WADs in the doom rom folder, /home/pi/RetroPie/roms/ports/doom.
+Place your WADs in the doom rom folder, /home/pi/RetroPie/roms/ports/doom.
 
-2. Create a script to launch your wad. For example, for Plutonia, create a script, The Plutonia Experiment.sh, which contains the following:
+Create a script to launch your WAD. For example, for The Plutonia Expriment, create a script, The Plutonia Experiment.sh, which contains the following:
 
-`#!/bin/bash`
-`/opt/retropie/supplementary/runcommand/runcommand.sh 0 "/opt/retropie/emulators/retroarch/bin/retroarch -L /opt/retropie/libretrocores/lr-prboom/prboom_libretro.so --config /opt/retropie/configs/doom/retroarch.cfg /home/pi/RetroPie/roms/ports/doom/Plutonia.wad" "lr-prboom"`
-
-Linux is case sensitive so make sure the name of the WAD in your script matches exactly the file name.
-
-3. Create a copy of the script for each WAD, replacing the name of the WAD for each one.
+```shell
+#!/bin/bash
+/opt/retropie/supplementary/runcommand/runcommand.sh 0 "/opt/retropie/emulators/retroarch/bin/retroarch -L /opt/retropie/libretrocores/lr-prboom/prboom_libretro.so --config /opt/retropie/configs/doom/retroarch.cfg /home/pi/RetroPie/roms/ports/doom/Plutonia.wad" "lr-prboom"
+```
+Create a copy of the script for each WAD, replacing the name of the WAD for each one.
 
 **To Launch Doom Mods (PWADS)**
 
-1. In the doom rom folder, you will need prboom.wad and the Doom IWADs (doom.wad and/or doom2.wad).
+In the doom rom folder, you will need prboom.wad and the Doom IWADs (doom.wad and/or doom2.wad).
 
-2. Create a folder for the custom WAD and extract your custom WAD(s) there. For example, for the Batman Doom mod, I created a folder called batman.
+Create a folder for the custom PWAD and extract your custom PWAD(s) there. For example, for the Batman Doom mod, create a folder called batman.
 
-3. Create symlinks to prboom.wad and Doom2 WAD in the batman folder with the following commands.
+Create symlinks to prboom.wad and Doom2 WAD in the batman folder with the following commands.
 
 ```shell
 ln -s /home/pi/RetroPie/roms/ports/doom/prboom.wad /home/pi/RetroPie/roms/ports/batman/prboom.wad
 ```
+```shell
+ln -s /home/pi/RetroPie/roms/ports/doom/doom2.wad /home/pi/RetroPie/roms/ports/batman/doom2.wad
+```
 
-     `ln -s /home/pi/RetroPie/roms/ports/doom/doom2.wad /home/pi/RetroPie/roms/ports/batman/doom2.wad`
+Copy prboom.cfg from the Doom folder to the custom WAD folder. Add the name(s) of the custom WADs to #Files section (line 15/16).
 
-4. Copy prboom.cfg from the Doom folder to the custom WAD folder. Add the name(s) of the custom WADs to #Files section (line 15/16).
+Create a shell script, Batman Doom.sh to launch the custom WAD as below. It's the same as Doom 2 script but it points to the Doom 2 IWAD in the batman folder instead.
 
-5. Create a shell script, Batman Doom.sh to launch the custom WAD as below. It's the same as Doom 2 but it points to the WAD in the batman folder.
-
-      ```shell
+```shell
 #!/bin/bash
 /opt/retropie/supplementary/runcommand/runcommand.sh 0 "/opt/retropie/emulators/retroarch/bin/retroarch -L /opt/retropie/libretrocores/lr-prboom/prboom_libretro.so --config /opt/retropie/configs/doom/retroarch.cfg /home/pi/RetroPie/roms/doom/batman/doom2.wad" "lr-prboom
 ```
 
-6. Repeat for each mod (PWAD), creating a new folder for each one and a new script replacing the folder name. 
+Repeat for each mod (PWAD), creating a new folder for each one and a copy of the script above replacing the folder name as required.
