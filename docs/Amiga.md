@@ -1,4 +1,5 @@
-![Amiga Logo] (http://upload.wikimedia.org/wikipedia/en/thumb/a/a7/Amiga_Logo_1985.svg/500px-Amiga_Logo_1985.svg.png)
+***
+![amiga](https://cloud.githubusercontent.com/assets/10035308/12189019/a46a4d44-b577-11e5-8378-d8196412103c.png)
 ***
 
 _The Amiga was a family of personal computers released by Commodore in the 1980's and 1990's._
