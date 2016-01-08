@@ -1,5 +1,5 @@
-![Intellivision Logo](http://upload.wikimedia.org/wikipedia/en/a/aa/Intellivision_logo.gif)
-
+***
+![intellivision](https://cloud.githubusercontent.com/assets/10035308/12192412/82366f36-b59b-11e5-973e-208fea792945.png)
 ***
 
 _The Intellivision is a home video game console released by Mattel in 1979_
