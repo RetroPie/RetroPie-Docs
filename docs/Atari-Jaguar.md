@@ -1,5 +1,5 @@
-![](http://atariage.com/forums/uploads/monthly_09_2013/post-2754-0-29015300-1378838194.jpg)
-
+***
+![atarijaguar](https://cloud.githubusercontent.com/assets/10035308/12190454/f776b6a4-b585-11e5-9b8b-1f7ed69480b3.png)
 ***
 _The Atari Jaguar was the first 64 bit video game console released in 1993. It was a bad enough commercial failure that it put Atari out of the home video game console business._
 
