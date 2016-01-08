@@ -1,5 +1,5 @@
 ***
-![coco](https://cloud.githubusercontent.com/assets/10035308/12190898/38b98fd8-b58b-11e5-9f87-520d8f70358e.png)
+![coco](https://cloud.githubusercontent.com/assets/10035308/12190919/701943ba-b58b-11e5-991c-5839099607d8.png)
 ***
 _The Tandy Colour Computer series were home computers originally released by the Tandy Corporation in 1980._
 ***
