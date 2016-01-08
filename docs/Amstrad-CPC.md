@@ -1,4 +1,7 @@
-![Amstrad CPC Logo](http://www.iamretro.gr/wp-content/uploads/2013/01/logo_amstrad2.png)
+
+***
+
+![amstradcpc](https://cloud.githubusercontent.com/assets/10035308/12186502/90cc75ee-b560-11e5-8293-5ea82fa8b2d7.png)
 ***
 _The Amstrad CPC (short for Colour Personal Computer) is a series of 8-bit home computers produced by Amstrad between 1984 and 1990._
 ***
