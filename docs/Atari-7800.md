@@ -1,4 +1,5 @@
-![Atari 7800 Logo](http://atarihq.com/danb/images/Atari_7800_logo.png)
+***
+![atari7800](https://cloud.githubusercontent.com/assets/10035308/12190354/dbcd3aaa-b584-11e5-9c4f-89d0d7adc783.png)
 ***
 _The Atari 7800 was a video game console released by Atari in 1986._
 ***
