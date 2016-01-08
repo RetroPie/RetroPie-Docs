@@ -1,4 +1,5 @@
-![Game Boy Logo](http://vignette3.wikia.nocookie.net/fantendo/images/d/df/Game_Boy_logo-1-.png/revision/latest?cb=20120610211616)
+***
+![gb](https://cloud.githubusercontent.com/assets/10035308/12191767/a6c11d98-b595-11e5-819f-de182fb87f4b.png)
 ***
 _The Game Boy was released by Nintendo in 1989 thus kicking off the era of handheld gaming and Pokemon._
 ***
