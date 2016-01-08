@@ -1,4 +1,5 @@
-![Macintosh](http://s3.amazonaws.com/rapgenius/apple-mac-logo-web.jpg)![Macintosh](http://seeklogo.com/images/M/Macintosh-logo-06741C862A-seeklogo.com.gif)
+***
+![macintosh](https://cloud.githubusercontent.com/assets/10035308/12192521/6b03d7d0-b59c-11e5-970e-b317595478bb.png)
 ***
 _The Apple Macintosh, later renamed the Macintosh 128K, was a personal computer released in 1984._
 ***
