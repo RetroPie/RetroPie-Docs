@@ -1,5 +1,5 @@
-![path24](https://cloud.githubusercontent.com/assets/10035308/11576086/a7c14554-99d1-11e5-9bde-72a3a4045c2d.png)
-
+***
+![dragon32](https://cloud.githubusercontent.com/assets/10035308/12191197/fa228b72-b58e-11e5-8b29-027fb51c059a.png)
 ***
 _The Dragon 32 and Dragon 64 were home computers originally released in 1980. The 32 and 64 refer to the kilobytes of RAM._
 
