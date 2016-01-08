@@ -1,5 +1,5 @@
-![Commodore 64 Logo](http://img2.wikia.nocookie.net/__cb20140907072807/logopedia/images/2/2c/Commodore_64_logo.png)
-
+***
+![c64](https://cloud.githubusercontent.com/assets/10035308/12191151/2f3aaf48-b58e-11e5-92e5-b39455579c63.png)
 ***
 _The Commodore 64 is an 8 Bit personal computer introduced in 1982 by Commodore International. This model holds the world record for the highest-selling single computer model of all time._
 ***
