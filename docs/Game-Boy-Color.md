@@ -1,4 +1,5 @@
-![Game Boy Color Logo](http://fc08.deviantart.net/fs70/i/2013/297/c/7/gameboy_color_logo_by_ringostarr39-d6qt2ly.png)
+***
+![gbc](https://cloud.githubusercontent.com/assets/10035308/12191836/672b3014-b596-11e5-9bbe-bcafd30bb402.png)
 ***
 _The Game Boy Color was an 8 bit handheld gaming console released by Nintendo in 1998. Pokemon Yellow anyone?_
 
