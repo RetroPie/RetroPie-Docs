@@ -1,5 +1,5 @@
 ***
-![gamegear](https://cloud.githubusercontent.com/assets/10035308/12191580/b3d5479a-b593-11e5-9e4f-a87f2f024446.png)
+![gamegear](https://cloud.githubusercontent.com/assets/10035308/12191611/0512b71e-b594-11e5-9d4e-47ed58354ef4.png)
 ***
 _The Sega Game Gear was an 8 bit handheld gaming console released in 1990_
 
