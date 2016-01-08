@@ -102,6 +102,7 @@ This method uses an old version of the pr-boom script to launch Doom Shareware v
 1. Place your WADs in the doom rom folder, /home/pi/RetroPie/roms/ports/doom.
 
 2. Create a script to launch your wad. For example, for Plutonia, create a script, The Plutonia Experiment.sh, which contains the following:
+
 `#!/bin/bash
     /opt/retropie/supplementary/runcommand/runcommand.sh 0 "/opt/retropie/emulators/retroarch/bin/retroarch -L /opt/retropie/libretrocores/lr-prboom/prboom_libretro.so --config /opt/retropie/configs/doom/retroarch.cfg /home/pi/RetroPie/roms/ports/doom/Plutonia.wad" "lr-prboom"`
 
