@@ -100,9 +100,9 @@ This method uses an old version of the pr-boom script to launch Doom Shareware v
 **To Launch Doom, Ultimate Doom, Doom 2, TNT, Plutonia, Final Doom (IWADS)**
 
 1. Place your WADs in the doom rom folder, /home/pi/RetroPie/roms/ports/doom.
-2. Create a script to launch your wad. For example, for Plutonia, create a script, The Plutonia Experiment.sh, which contains the following:
 
-`    #!/bin/bash
+2. Create a script to launch your wad. For example, for Plutonia, create a script, The Plutonia Experiment.sh, which contains the following:
+`#!/bin/bash
     /opt/retropie/supplementary/runcommand/runcommand.sh 0 "/opt/retropie/emulators/retroarch/bin/retroarch -L /opt/retropie/libretrocores/lr-prboom/prboom_libretro.so --config /opt/retropie/configs/doom/retroarch.cfg /home/pi/RetroPie/roms/ports/doom/Plutonia.wad" "lr-prboom"`
 
 Linux is case sensitive so make sure the name of the WAD in your script matches exactly the file name.
@@ -111,7 +111,7 @@ Linux is case sensitive so make sure the name of the WAD in your script matches 
 
 **To Launch Doom Mods (PWADS)**
 
-1. In the doom rom folder, you will need prboom.wad and Doom WADs (doom.wad and/or doom2.wad).
+1. In the doom rom folder, you will need prboom.wad and the Doom IWADs (doom.wad and/or doom2.wad).
 
 2. Create a folder for the custom WAD and extract your custom WAD(s) there. For example, for the Batman Doom mod, I created a folder called batman.
 
