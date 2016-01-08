@@ -1,4 +1,5 @@
-![Atari ST](http://www.z80.eu/images/atarilogo.jpg)
+***
+![atarist](https://cloud.githubusercontent.com/assets/10035308/12189255/60af20aa-b579-11e5-88bc-8b57576dbfad.png)
 ***
 _The Atari ST, STE, TT, and Falcon were a series of personal computers released by Atari starting in 1985._
 ***
