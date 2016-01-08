@@ -1,4 +1,5 @@
-![Atari 5200](http://client-cdn.crystalcommerce.com/photo/pinkgorillagames/file/64518/large/atari-5200-logo.jpg?1377816190)
+***
+![atari-5200](https://cloud.githubusercontent.com/assets/10035308/12190121/2678efca-b582-11e5-954a-de6945b5f54e.png)
 ***
 _Atari released a series of 8 bit computers (400, 800, 1200XL, 600XL, 800XL, 130XE, XEGS) and a video game console known as the Atari 5200 from 1979 to 1992_
 ***
