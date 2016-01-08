@@ -1,4 +1,5 @@
-![Apple II](http://www.jeuxvideovintage.com/ressources/img/Apple_II_logo.jpg)
+***
+![apple2](https://cloud.githubusercontent.com/assets/10035308/12186640/04d5acd4-b562-11e5-946c-44b06c75ef3c.png)
 ***
 _The Apple II was a series of personal computers starting from 1977 to 1993._
 ***
