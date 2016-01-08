@@ -13,6 +13,7 @@
 
 ## Emulators
 * [3do](https://github.com/petrockblog/RetroPie-Setup/wiki/3do)
+* [Amiga](https://github.com/petrockblog/RetroPie-Setup/wiki/Amiga)
 * [Amstrad CPC](https://github.com/petrockblog/RetroPie-Setup/wiki/Amstrad-CPC)
 * [Apple II](https://github.com/petrockblog/RetroPie-Setup/wiki/Apple-II)
 * [Atari 800 ST/STE/TT/Falcon](https://github.com/petrockblog/RetroPie-Setup/wiki/Atari-ST-STE-TT-Falcon)
@@ -22,7 +23,6 @@
 * [Atari Jaguar](https://github.com/petrockblog/RetroPie-Setup/wiki/Atari-Jaguar)
 * [Atari Lynx](https://github.com/petrockblog/RetroPie-Setup/wiki/Atari-Lynx)
 * [CoCo](https://github.com/RetroPie/RetroPie-Setup/wiki/Coco)
-* [Commodore Amiga](https://github.com/petrockblog/RetroPie-Setup/wiki/Amiga)
 * [Commodore 64](https://github.com/petrockblog/RetroPie-Setup/wiki/Commodore-64)
 * [Dragon 32](https://github.com/RetroPie/RetroPie-Setup/wiki/Dragon)
 * [Dreamcast](https://github.com/petrockblog/RetroPie-Setup/wiki/Dreamcast)
