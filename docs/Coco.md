@@ -1,7 +1,7 @@
-![coco](http://chazbeenhad.tripod.com/mc10-logo.jpg)
+***
+![coco](https://cloud.githubusercontent.com/assets/10035308/12190898/38b98fd8-b58b-11e5-9f87-520d8f70358e.png)
 ***
 _The Tandy Colour Computer series were home computers originally released by the Tandy Corporation in 1980._
-
 ***
 ## Emulator: [XRoar](http://www.6809.org.uk/xroar/)
 
