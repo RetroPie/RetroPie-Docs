@@ -117,7 +117,7 @@ Linux is case sensitive so make sure the name of the WAD in your script matches 
 
 3. Create symlinks to prboom.wad and Doom2 WAD in the batman folder with the following commands.
 
-     ln -s /home/pi/RetroPie/roms/ports/doom/prboom.wad /home/pi/RetroPie/roms/ports/batman/prboom.wad
+     `ln -s /home/pi/RetroPie/roms/ports/doom/prboom.wad /home/pi/RetroPie/roms/ports/batman/prboom.wad`
 
      ln -s /home/pi/RetroPie/roms/ports/doom/doom2.wad /home/pi/RetroPie/roms/ports/batman/doom2.wad
 
