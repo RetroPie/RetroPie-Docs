@@ -70,7 +70,7 @@ After a source based installation themes and retropie menu are missing and autor
 
 ### Section 3.1: Emulationstation hangs if shutdown/restart was selected
 
-It is not possible to restart/shutdown if an sudo requests an password. To disable sudo password request add the line `$user ALL=(ALL) NOPASSWD:ALL` to /etc/sudoers. Replace `$user`with the name of your current user.
+It is not possible to restart/shutdown if an sudo requests an password. To disable sudo password request add the line `$user ALL=(ALL) NOPASSWD:ALL` at the end of `/etc/sudoers`. Replace `$user`with the name of your current user.
 
 ### Section 3.2: Cannot install PS3 driver
 
