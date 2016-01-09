@@ -1,4 +1,5 @@
-![Sega CD Logo](http://img1.wikia.nocookie.net/__cb20120209224111/logopedia/images/d/da/Sega_CD_logo_(USA).png)
+***
+![segacd](https://cloud.githubusercontent.com/assets/10035308/12212918/3dc372e4-b62d-11e5-9318-f14163eae0cb.png)
 ***
 The Sega CD was yet another add-on to the Sega Genesis. It was released in 1991.
 
