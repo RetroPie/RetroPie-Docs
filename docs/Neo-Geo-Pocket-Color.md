@@ -1,5 +1,5 @@
-![ngpc](https://cloud.githubusercontent.com/assets/10035308/12163297/a9cc51b4-b4c9-11e5-8420-2304d90a4f65.png)
-
+***
+![ngpc](https://cloud.githubusercontent.com/assets/10035308/12213463/93536f40-b635-11e5-81ef-e30de2236d00.png)
 ***
 The Neo Geo Pocket Color was a handheld video game system released by SNK in 1999.
 
