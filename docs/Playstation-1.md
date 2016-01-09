@@ -7,7 +7,7 @@ _The PlayStation 1 is a 5th generation video game console released by Sony in 19
 ## Emulators: [lr-pcsx-rearmed](https://github.com/libretro/pcsx_rearmed), [pcsx-rearmed](https://github.com/notaz/pcsx_rearmed)
 
 ## ROMS
-Accepted File Extensions: **.bin .cue .img .mdf**
+Accepted File Extensions: **.bin .cue .cbn .img .iso .m3u .mdf .pbp .toc .z .znx**
 
 Place your PlayStation ROMs in 
 ```
