@@ -1,7 +1,7 @@
 | **System** | **Image** | **Emulator** | **Year** | **Manufacturer** | **BIOS** |
 | :---: | :---: | :---: | :---: | :---: | :---: |
 | [3do](3do) | ![3do](https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/3DO-FZ1-Console-Set.png/160px-3DO-FZ1-Console-Set.png) | [lr-4do](https://github.com/libretro/4do-libretro) | 1993 | Panasonic | panafz10.bin |
-| [Amiga](Amiga) | ![Amiga](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Amiga500_system.jpg/160px-Amiga500_system.jpg) | [(UAE4ALL2)](https://github.com/RetroPie/uae4all2), [(UAE4ARM)](https://github.com/Chips-fr/uae4arm-rpi/) | 1985 | Commodore | None
+| [Amiga](Amiga) | ![Amiga](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Amiga500_system.jpg/160px-Amiga500_system.jpg) | [(UAE4ALL2)](https://github.com/RetroPie/uae4all2), [(UAE4ARM)](https://github.com/Chips-fr/uae4arm-rpi/) | 1985 | Commodore | kick13.rom, kick20.rom, kick31.rom |
 
 *  
 * [Amstrad CPC](Amstrad-CPC) [(CapriceRPI)](https://github.com/KaosOverride/CapriceRPI), [(lr-cap32)](https://github.com/libretro/libretro-cap32.git)
