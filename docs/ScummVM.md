@@ -1,4 +1,5 @@
-![ScummVM Logo](http://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Scummvm_logo.svg/640px-Scummvm_logo.svg.png)
+***
+![scummvm](https://cloud.githubusercontent.com/assets/10035308/12212919/3dc3d6f8-b62d-11e5-81fb-f7fac11b923e.png)
 ***
 _ScummVM stands for Script Creation Utility for Maniac Mansion (VM stands for virtual machine). ScummVM is a program which allows you to run certain classic graphical point-and-click adventure games, provided you already have their data files_
 ***
