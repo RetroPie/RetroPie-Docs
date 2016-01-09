@@ -1,5 +1,5 @@
-![Playstation Logo](http://images.scroll.com.tr/2013/11/PlayStation-1-Logo.png)
-
+***
+![psx](https://cloud.githubusercontent.com/assets/10035308/12213692/20e2fe3a-b63a-11e5-9e49-c47c33bc659d.png)
 ***
 _The PlayStation 1 is a 5th generation video game console released by Sony in 1994._
 
