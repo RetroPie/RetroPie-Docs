@@ -1,5 +1,5 @@
-![PSP Logo](http://vignette4.wikia.nocookie.net/danganronpa/images/d/df/PSP_Logo.png/revision/latest?cb=20141222033722)
-
+***
+![psp](https://cloud.githubusercontent.com/assets/10035308/12213680/cebac73c-b639-11e5-84b5-13a5589b1dcd.png)
 ***
 _The PlayStation Portable or PSP is a handheld video game system released by Sony in 2004._
 
