@@ -1,4 +1,5 @@
-![MXS Logo](http://img2.wikia.nocookie.net/__cb20140910173906/logopedia/images/0/01/857859msx.logo.png)
+***
+![msx2](https://cloud.githubusercontent.com/assets/10035308/12213189/80192ed2-b631-11e5-86b3-58d17dcc2432.png)
 ***
 _The MSX was a personal computer released by Microsoft in 1983._
 
