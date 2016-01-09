@@ -1,5 +1,5 @@
 ***
-![segacd](https://cloud.githubusercontent.com/assets/10035308/12212918/3dc372e4-b62d-11e5-9318-f14163eae0cb.png)
+![segacd](https://cloud.githubusercontent.com/assets/10035308/12214194/e316cbd2-b647-11e5-87a0-fd8f03b75edd.png)
 ***
 The Sega CD was yet another add-on to the Sega Genesis. It was released in 1991.
 
