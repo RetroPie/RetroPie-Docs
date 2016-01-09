@@ -1,4 +1,5 @@
-![IBM Logo](http://upload.wikimedia.org/wikipedia/commons/thumb/5/51/IBM_logo.svg/320px-IBM_logo.svg.png)
+***
+![ibmpc](https://cloud.githubusercontent.com/assets/10035308/12213490/0f8cb422-b636-11e5-99a7-2a33761874f3.png)
 ***
 _The good old days of DOS._
 ***
