@@ -1,5 +1,5 @@
-![ZX Spectrum Logo](http://vignette1.wikia.nocookie.net/vsrecommendedgames/images/a/a5/ZX_Spectrum_Logo.png/revision/latest/scale-to-width/640?cb=20150109101859)
-
+***
+![zx_spectrum](https://cloud.githubusercontent.com/assets/10035308/12212920/3dc40236-b62d-11e5-8ee4-c224358c1424.png)
 ***
 _The ZX Spectrum was an 8 bit series of home computers released by Sinclair Research in 1982._
 
