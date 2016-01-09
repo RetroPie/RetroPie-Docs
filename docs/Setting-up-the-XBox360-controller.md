@@ -1,8 +1,23 @@
-## Automatic Configuration
+## Automatic Configuration (Easiest)
 
-The easiest way to set this up is to use the "Xbox / Xbox 360 gamepad driver" option in the Setup / Configuration menu of the retropie-setup script.
+Access the [RetroPie Setup Script](Updating-RetroPie) and navigate to **Setup / Configuration>>Xbox / Xbox 360 gamepad driver** 
 
-This will install the driver and add a start-up configuration in /etc/rc.local
+![xboxdrv](https://cloud.githubusercontent.com/assets/10035308/12218229/d397607e-b6d6-11e5-8a99-f3106d60425a.png)
+
+1. **Enable xboxdrv:** This will install the driver and add a start-up configuration in /etc/rc.local
+2. **Disable xboxdrv:** This will disable the driver and remove the start-up configuration in /etc/rc.local
+3. **Set Number of Controllers To Enable:** Default number of controllers is 2 (If you have more than two controllers, set this first before you enable xboxdrv)
+4. **Set Analog Stick Deadzone:** Smaller number = more responsive, Larger number = less responsive.
+5. **Set dwc_otg.speed=1 in /boot/config.txt:** May help if controller is being glitchy.
+6. **Remove dwc_otg.speed=1 from /boot/config.txt:** Removes the config.
+
+**Note** that if you have wireless controllers you will need a wireless receiver plugged into your raspberry pi (Official Microsoft xbox360 receiver, or knock offs like zettaguard also work), then to connect:
+
+- press the tiny wireless button on the top of the controller 
+- then press the button on the receiver 
+- repeat for each controller
+
+Controllers need to be turned on before the Pi boots in order to configure properly.
 
 Alternatively if you prefer you can manually install it..
 
