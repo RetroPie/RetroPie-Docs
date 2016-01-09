@@ -1,4 +1,6 @@
-![Sega Genesis](http://upload.wikimedia.org/wikipedia/en/1/12/GenesisLogo.png)![Megadrive](http://upload.wikimedia.org/wikipedia/en/a/a8/Megadrive_logo.png)
+***
+![genesis](https://cloud.githubusercontent.com/assets/10035308/12213099/c9f337d4-b62f-11e5-8726-7c679f293b0c.png)
+![megadrive](https://cloud.githubusercontent.com/assets/10035308/12213082/8271211e-b62f-11e5-8f38-3223d9312f4e.png)
 ***
 _This console, known as the Genesis in North America and the Mega Drive everywhere else in the world, was released by Sega in 1988_
 ***
