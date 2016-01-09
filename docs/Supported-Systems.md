@@ -10,12 +10,11 @@
 | [Atari Jaguar](Atari-Jaguar) | ![Atari Jaguar](https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Atari-Jaguar-Console-Set.png/160px-Atari-Jaguar-Console-Set.png) | [lr-virtualjaguar](https://github.com/libretro/virtualjaguar-libretro) | 1993 | Atari | None |
 | [Atari Lynx](Atari-Lynx) | ![Atari Lynx](https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Atari-Lynx-I-Handheld.jpg/160px-Atari-Lynx-I-Handheld.jpg) | [lr-handy](https://github.com/libretro/libretro-handy) | 1989 | Atari | None |
 | [Atari ST, STE, TT, Falcon](Atari-ST-STE-TT-Falcon) | ![Atari ST](https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Atari_1040STf.jpg/160px-Atari_1040STf.jpg) | [Hatari](http://hatari.tuxfamily.org/) | 1985 | Atari | None |
+| [CoCo](Coco) | ![CoCo](https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/TRS-80_Color_Computer_1_front_right.jpg/160px-TRS-80_Color_Computer_1_front_right.jpg) | [XRoar](http://www.6809.org.uk/xroar/) | 1980 | Tandy | bas13.rom |
+| [Commodore 64](Commodore-64) | ![Commodore 64](https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/C64c_system.jpg/160px-C64c_system.jpg)| [Vice](http://vice-emu.sourceforge.net/) | 1982 | Commodore | None |
+| [Dragon 32](Dragon) | ![Dragon 32](https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Dragon_32.jpg/160px-Dragon_32.jpg) | [XRoar](http://www.6809.org.uk/xroar/) | 1982 | Dragon | d32.rom |
 
- 
 *  
-* [CoCo](Coco) [(XRoar)](http://www.6809.org.uk/xroar/)
-* [Commodore 64](Commodore-64) [(Vice)](http://vice-emu.sourceforge.net/)
-* [Dragon 32](Dragon) [(XRoar)](http://www.6809.org.uk/xroar/)
 * [Dreamcast](Dreamcast) [(Reicast)](https://github.com/reicast/reicast-emulator) 
 * [FinalBurn Alpha](FinalBurn-Alpha) [(PiFBA)](https://github.com/RetroPie/pifba), [(lr-fba)](https://github.com/libretro/fba-libretro), [(lr-fba-next)](https://github.com/libretro/libretro-fba.git)
 * [Genesis/Megadrive](Genesis-Megadrive) [(DGEN)](http://dgen.sourceforge.net/), [(lr-Genesis-Plus-GX)](https://github.com/libretro/Genesis-Plus-GX), [(lr-picodrive)] (https://github.com/libretro/picodrive)
