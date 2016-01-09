@@ -18,7 +18,7 @@ Visit the RetroPie-Setup Screen, select Experimental Packages, and select Kodi. 
 
 ![](http://kodi.wiki/images/3/3c/Yatse_Holo_1.png)
 
-## Kodi 15.1 on Raspbian Jessie (as it's own system instead of in ports)
+## Kodi 15.2 on Raspbian Jessie (as it's own system instead of in ports)
 
 To compile Kodi 15 you can just replace the following in 
 
