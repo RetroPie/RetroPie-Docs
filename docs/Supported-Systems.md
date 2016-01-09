@@ -1,11 +1,10 @@
 | **System** | **Image** | **Emulator** | **Year** | **Manufacturer** | **BIOS** |
 | :---: | :---: | :---: | :---: | :---: | :---: |
 | [3do](3do) | ![3do](https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/3DO-FZ1-Console-Set.png/160px-3DO-FZ1-Console-Set.png) | [lr-4do](https://github.com/libretro/4do-libretro) | 1993 | Panasonic | panafz10.bin |
-| [Amiga](Amiga) | ![Amiga](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Amiga500_system.jpg/160px-Amiga500_system.jpg) | [(UAE4ALL2)](https://github.com/RetroPie/uae4all2), [(UAE4ARM)](https://github.com/Chips-fr/uae4arm-rpi/) | 1985 | Commodore | kick13.rom, kick20.rom, kick31.rom |
+| [Amiga](Amiga) | ![Amiga](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Amiga500_system.jpg/160px-Amiga500_system.jpg) | [UAE4ALL2](https://github.com/RetroPie/uae4all2), [UAE4ARM](https://github.com/Chips-fr/uae4arm-rpi/) | 1985 | Commodore | kick13.rom, kick20.rom, kick31.rom |
+| [Amstrad CPC](Amstrad-CPC) | ![amstradcpc](https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Amstrad_CPC464.jpg/160px-Amstrad_CPC464.jpg) | [CapriceRPI](https://github.com/KaosOverride/CapriceRPI), [lr-cap32](https://github.com/libretro/libretro-cap32.git) | 1984 | Amstrad | None |
+| [Apple II](Apple-II) | ![Apple II](https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Apple_II_IMG_4212.jpg/160px-Apple_II_IMG_4212.jpg) | [Linapple](http://sourceforge.net/projects/linapple/) | 1977 | Apple | None |
 
-*  
-* [Amstrad CPC](Amstrad-CPC) [(CapriceRPI)](https://github.com/KaosOverride/CapriceRPI), [(lr-cap32)](https://github.com/libretro/libretro-cap32.git)
-* [Apple II](Apple-II) [(Linapple)](http://sourceforge.net/projects/linapple/)
 * [Atari 2600](Atari-2600) [(Stella)](http://stella.sourceforge.net/), [(lr-stella)](https://github.com/libretro/stella-libretro)
 * [Atari 5200, and Atari 8 bit series: 400, 800, 1200XL, 600XL, 800XL, 130XE, XEGS]      
  (Atari-800-and-5200) [(Atari800)](http://atari800.sourceforge.net/)
