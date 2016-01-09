@@ -1,5 +1,5 @@
-![MAME Logo](https://emillister.files.wordpress.com/2010/02/mame.png)
-
+***
+![mame](https://cloud.githubusercontent.com/assets/10035308/12213821/0acf7328-b63d-11e5-8127-48c8c5d31fe3.png)
 ***
 _MAME stands for Multiple Arcade Machine Emulator. MAME can emulate thousands of games that otherwise would have been lost in the ash-heaps of history._
 
