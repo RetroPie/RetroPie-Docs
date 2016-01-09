@@ -18,6 +18,7 @@ Tested with a Intel NUC Kit NUC5CPYH.
     - [Section 3.2: Cannot install PS3 driver](#32-ps3)  
     - [Section 3.3: Screen blanks after some minutes](#33-configuration)
     - [Section 3.4: Ubuntu does not autologin](#34-autologin)
+    - [Section 3.5: How to setup a splashscreen?](#35-splashscreen)
 
 ***
 
@@ -82,3 +83,8 @@ Open Ubuntu system settings menu disable screensaver and screen lock timeouts.
 ### Section 3.4: Ubuntu does not autologin
 
 Open Ubuntu system settings menu and select user accounts. Enable autologin for current user.    
+
+### Section 3.5: How to setup a splashscreen?
+
+Use Plymouth to setup a splash screen:
+https://wiki.ubuntu.com/Plymouth
