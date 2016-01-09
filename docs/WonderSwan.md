@@ -1,5 +1,5 @@
-![](http://img2.wikia.nocookie.net/__cb20140801212200/logopedia/images/f/f1/Bandai_WonderSwan_Logo_1.png)
-
+***
+![wonderswan](https://cloud.githubusercontent.com/assets/10035308/12212916/3dc08dc2-b62d-11e5-9b9b-6b547fa3b80d.png)
 ***
 
 WonderSwan is a handheld gaming device that was released by Bandai solely in Japan in 1998. 
