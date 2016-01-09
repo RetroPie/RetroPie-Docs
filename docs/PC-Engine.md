@@ -1,4 +1,6 @@
-![TurboGrafx Logo](http://www.videogameobsession.com/videogame/tg16/logo-TG16-vgo.jpg)
+***
+![pce](https://cloud.githubusercontent.com/assets/10035308/12213634/206dcb84-b639-11e5-8111-e0dfe0890107.png)
+![tg16](https://cloud.githubusercontent.com/assets/10035308/12213633/206e0090-b639-11e5-9c39-3fada1f9b4f4.png)
 ***
 _The TurboGrafx-16 Entertainment SuperSystem, originally known in Japan as the PC Engine, is a home video game console joint-developed by Hudson Soft and NEC, released in 1987._
 ***
