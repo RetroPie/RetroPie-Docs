@@ -1,5 +1,5 @@
-![](http://www.videogameobsession.com/videogame/neogeopocketcolor/Logo_NGPC-vgo.gif)
-
+***
+![ngp](https://cloud.githubusercontent.com/assets/10035308/12213430/3468ca7a-b635-11e5-8e99-21e91ceb2b74.png)
 ***
 The Neo Geo Pocket was a handheld video game system released by SNK in 1998.
 
