@@ -1,4 +1,5 @@
-![Infocom](http://terpconnect.umd.edu/~molivier/infocom.jpg)
+***
+![z-machine](https://cloud.githubusercontent.com/assets/10035308/12212915/3dbf6b90-b62d-11e5-8f13-0b1a61bcbdf8.png)
 ***
 _Infocom created a bunch of text based adventure games to be utilised by a Z-Machine interpreter (i.e. an emulator). Notable titles include the Zork Series and The Hitchhikers Guide to the Galaxy._
 
