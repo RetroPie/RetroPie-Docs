@@ -1,4 +1,5 @@
-![Sega 32X Logo](http://emumovies.com/logos/Sega%2032X.png)
+***
+![sega32x](https://cloud.githubusercontent.com/assets/10035308/12212917/3dc2888e-b62d-11e5-8b2c-294b533f838b.png)
 ***
 _The Sega 32X was released as an add-on for the Sega Genesis in 1994. There was a whopping total of 40 games for this console- it was considered a commercial failure._
 
