@@ -5,7 +5,6 @@
 A guide to build the retropie setup on Ubuntu 15.10 x86. 
 
 Tested with a Intel NUC Kit NUC5CPYH.
-http://www.intel.com/content/www/us/en/nuc/nuc-kit-nuc5cpyh.html
 
 ## Sections
 
