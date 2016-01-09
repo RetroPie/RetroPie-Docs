@@ -1,4 +1,5 @@
-![Nintendo 64 Logo](http://images2.wikia.nocookie.net/__cb20130424181606/theamazingworldofgumball/images/3/38/Nintendo_64_Logo.png)
+***
+![n64](https://cloud.githubusercontent.com/assets/10035308/12213210/ca04f1fc-b631-11e5-8ae7-d402371c9124.png)
 ***
 _The Nintendo 64 is a 5th generation gaming console released by Nintendo in 1996_
 
