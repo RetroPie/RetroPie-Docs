@@ -1,4 +1,5 @@
-![Sega Saturn](http://fc08.deviantart.net/fs70/f/2012/230/3/e/sega_saturn_logo__vector__by_xmaster555-d5blkb5.png)
+***
+![saturn_long](https://cloud.githubusercontent.com/assets/10035308/12213706/78d47d62-b63a-11e5-9128-8ba89e6f8950.png)
 ***
 _The Sega Saturn is a 32 bit 5th generation home video game console released by Sega in 1994. It has a total of 8 processors which makes it one of the more difficult consoles to emulate._
 ***
