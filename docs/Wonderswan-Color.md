@@ -1,5 +1,5 @@
-![](http://img2.wikia.nocookie.net/__cb20140801213004/logopedia/images/a/a9/Bandai_WonderSwan_Color_Logo_1.png)
-
+***
+![wonderswancolor](https://cloud.githubusercontent.com/assets/10035308/12214039/17943b4c-b643-11e5-9bb7-82320217d7a9.png)
 ***
 
 WonderSwan Color is a handheld gaming device that was released by Bandai in 2000. 
