@@ -1,4 +1,7 @@
-# Ports
+***
+![ports](https://cloud.githubusercontent.com/assets/10035308/12213893/ee2ca4a0-b63e-11e5-8d01-03c9dce2ab11.png)
+***
+
 
 Current software ported to RetroPie:
 
@@ -115,7 +118,6 @@ sudo darkplaces-sdl -quake -basedir /opt/retropie/emulators/darkplaces/
 ##How to adapt to other games/software
 
 There are only 2 parts to having software appear in the ports menu and have it work. The first is that you must have installed the software, however it gets done. You need to make sure it runs from the command-line before the next part. The second part is simply making a shell script that does the command line arguments to start the game/software. EmulationStation will launch it and then wait for it to exit. 
-
 
 
 
