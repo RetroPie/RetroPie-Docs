@@ -16,7 +16,7 @@
 * [Amiga](Amiga)
 * [Amstrad CPC](Amstrad-CPC)
 * [Apple II](Apple-II)
-* [Atari 800 ST/STE/TT/Falcon](Atari-ST-STE-TT-Falcon)
+* [Atari ST/STE/TT/Falcon](Atari-ST-STE-TT-Falcon)
 * [Atari 2600](Atari-2600)
 * [Atari 5200 and 8 bit series](Atari-800-and-5200)
 * [Atari 7800](Atari-7800)
