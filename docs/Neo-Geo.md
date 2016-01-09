@@ -9,7 +9,7 @@ For Neo Geo games you can use either the standalone emulators PiFBA and GnGeo-Pi
 
 ## ROMS
 
-Accepted File Extension: .zip
+Accepted File Extension: **.zip**
 
 **For information on how to rebuild newer romsets to be compatible with these emulators see this post:**
 **[Managing ROMs](https://github.com/petrockblog/RetroPie-Setup/wiki/Managing-ROMs)**
