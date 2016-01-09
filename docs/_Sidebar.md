@@ -83,9 +83,9 @@
 * [Overclocking](Overclocking)
 * [Memory Split](Memory-Split)
 * [Manual Installation](Manual-Installation)
-* [Adding Games to the 'PORTS' Section](Adding-software-to-Ports)
-* [RetroPie Arch Linux Flavor](RetroPie-Arch-Linux-Flavor)
-* [RetroPie Ubuntu 15.10 x86 Flavor](RetroPie-Ubuntu-15.10-x86-Flavor)
+* [Adding Games](Adding-software-to-Ports)
+* [Arch Linux](RetroPie-Arch-Linux-Flavor)
+* [Ubuntu 15.10 x86](RetroPie-Ubuntu-15.10-x86-Flavor)
 
 ## Controllers
 
