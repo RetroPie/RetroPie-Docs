@@ -1,4 +1,7 @@
-* [3do](3do) [(lr-4do)](https://github.com/libretro/4do-libretro) (EXPERIMENTAL)
+| **System** | **Image** | **Emulator** | **Year** | Manufacturer |
+| :---: | :---: | :---: | :---: | :---: |
+| [3do](3do) | ![3do](https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/3DO-FZ1-Console-Set.png/160px-3DO-FZ1-Console-Set.png) | [lr-4do](https://github.com/libretro/4do-libretro) | 1993 | Panasonic |
+
 * [Amiga](Amiga) [(UAE4ALL2)](https://github.com/RetroPie/uae4all2), [(UAE4ARM)](https://github.com/Chips-fr/uae4arm-rpi/)
 * [Amstrad CPC](Amstrad-CPC) [(CapriceRPI)](https://github.com/KaosOverride/CapriceRPI), [(lr-cap32)](https://github.com/libretro/libretro-cap32.git)
 * [Apple II](Apple-II) [(Linapple)](http://sourceforge.net/projects/linapple/)
