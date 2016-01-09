@@ -1,4 +1,5 @@
-![Neo Geo Logo](http://arcade-games-web.com/galleries/neogeo/neo_geo.jpg)
+***
+![neogeo](https://cloud.githubusercontent.com/assets/10035308/12213399/9cd6b3c0-b634-11e5-9279-97d936f8028c.png)
 ***
 _The Neo Geo is a cartridge-based arcade system board and home video game console released by SNK in 1990._
 ***
