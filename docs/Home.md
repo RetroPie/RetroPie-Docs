@@ -94,6 +94,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [Manual Installation](Manual-Installation)
 * [Adding Games to the 'PORTS' Section](Adding-software-to-Ports)
 * [RetroPie Arch Linux Flavor](RetroPie-Arch-Linux-Flavor)
+* [RetroPie Ubuntu 15.10 x86 Flavor](RetroPie-Ubuntu-15.10-x86-Flavor)
 
 ## Controller Configurations
 * [Setting up an XBox 360 Controller](Setting-up-the-XBox360-controller)
