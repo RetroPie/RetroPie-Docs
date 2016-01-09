@@ -1,5 +1,4 @@
 ![Vectrex](http://standalonepost.com/sites/all/pictures/Nikopik/Vectrex_logo.png)
-![vectrex](https://cloud.githubusercontent.com/assets/10035308/12212913/3db1749a-b62d-11e5-913c-4ddf2187ce3a.png)
 ***
 _The Vectrex is a vector display-based home video game console released in 1982_
 ***
