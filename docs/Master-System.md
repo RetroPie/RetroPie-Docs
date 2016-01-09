@@ -1,5 +1,5 @@
-![Master System Logo](http://selmiak.bplaced.net/games/sms/sms/sms.png)
-
+***
+![segamastersystem](https://cloud.githubusercontent.com/assets/10035308/12213057/27eba8a4-b62f-11e5-8757-e4b56fc07900.png)
 ***
 _The Sega Master System was a 4th generation video game console released by Sega in 1987._
 ***
