@@ -4,10 +4,11 @@
 | [Amiga](Amiga) | ![Amiga](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Amiga500_system.jpg/160px-Amiga500_system.jpg) | [UAE4ALL2](https://github.com/RetroPie/uae4all2), [UAE4ARM](https://github.com/Chips-fr/uae4arm-rpi/) | 1985 | Commodore | kick13.rom, kick20.rom, kick31.rom |
 | [Amstrad CPC](Amstrad-CPC) | ![amstradcpc](https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Amstrad_CPC464.jpg/160px-Amstrad_CPC464.jpg) | [CapriceRPI](https://github.com/KaosOverride/CapriceRPI), [lr-cap32](https://github.com/libretro/libretro-cap32.git) | 1984 | Amstrad | None |
 | [Apple II](Apple-II) | ![Apple II](https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Apple_II_IMG_4212.jpg/160px-Apple_II_IMG_4212.jpg) | [Linapple](http://sourceforge.net/projects/linapple/) | 1977 | Apple | None |
+| [Atari 2600](Atari-2600) | ![Atari 2600](https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Atari-2600-Wood-4Sw-Set.jpg/160px-Atari-2600-Wood-4Sw-Set.jpg) | [Stella](http://stella.sourceforge.net/), [lr-stella](https://github.com/libretro/stella-libretro) | 1977 | Atari | None |
+| [Atari 5200, and Atari 8 bit series: 400, 800, 1200XL, 600XL, 800XL, 130XE, XEGS](Atari-800-and-5200) | ![Atari 5200](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Atari-5200-4-Port-wController-L.jpg/160px-Atari-5200-4-Port-wController-L.jpg) | [Atari800](http://atari800.sourceforge.net/) | 1982 | Atari | ATARIXL.ROM, ATARIBAS.ROM, ATARIOSA.ROM, ATARIOSB.ROM, 5200.rom |
 
-* [Atari 2600](Atari-2600) [(Stella)](http://stella.sourceforge.net/), [(lr-stella)](https://github.com/libretro/stella-libretro)
-* [Atari 5200, and Atari 8 bit series: 400, 800, 1200XL, 600XL, 800XL, 130XE, XEGS]      
- (Atari-800-and-5200) [(Atari800)](http://atari800.sourceforge.net/)
+*  
+* 
 * [Atari 7800](Atari-7800) [(lr-prosystem)](https://github.com/libretro/prosystem-libretro)
 * [Atari Jaguar](Atari-Jaguar) [(lr-virtualjaguar)](https://github.com/libretro/virtualjaguar-libretro) (EXPERIMENTAL)
 * [Atari Lynx](Atari-Lynx) [(lr-handy)](https://github.com/libretro/libretro-handy)
