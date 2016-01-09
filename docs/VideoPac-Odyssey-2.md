@@ -1,6 +1,6 @@
-
 ***
 ![videopac](https://cloud.githubusercontent.com/assets/10035308/12212914/3db2135a-b62d-11e5-8bc8-314eef1f117f.png)
+![odyssey2](https://cloud.githubusercontent.com/assets/10035308/12213667/802575ea-b639-11e5-837d-354e3f6be631.png)
 ***
 _The Magnavox Odyssey2 known in Europe as the Philips Videopac G7000 (and a bunch of other names a bunch of other places) is a home video game console released in 1978. One of the earliest gaming consoles, it is one of the least known today. Games are quite similar in detail to that of Atari 2600... except worse._
 ***
