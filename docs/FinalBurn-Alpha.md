@@ -1,4 +1,5 @@
-![Final Burn Alpha Logo](http://i.imgur.com/tXkQiWN.png)
+***
+![fba](https://cloud.githubusercontent.com/assets/10035308/12213772/eb6a317c-b63b-11e5-847f-2c03ffde43f3.png)
 ***
 _Final Burn Alpha is a Multiple Arcade Emulator most popular for emulating Neo-Geo, Capcom, Konami, and Cave games. It is developed by the final burn team and originated from FinalBurn by Dave_
 ***
