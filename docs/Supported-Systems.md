@@ -55,7 +55,7 @@
 * [Sega SG-1000](SG-1000) [(lr-Genesis-Plus-GX)](https://github.com/libretro/Genesis-Plus-GX)
 * [Super Nintendo Entertainment System](Super-Nintendo-Entertainment-System) [(PiSNES)](https://github.com/RetroPie/pisnes), [(snes9x-rpi)](https://github.com/RetroPie/snes9x-rpi), [(lr-armsnes)](https://github.com/rmaz/ARMSNES-libretro), [(lr-catsfc)](https://github.com/libretro/CATSFC-libretro), [(lr-pocketsnes)](https://github.com/libretro/pocketsnes-libretro), [(lr-snes9x-next)](https://github.com/libretro/snes9x-next)
 * [Vectrex](Vectrex) [(lr-vecx)](https://github.com/libretro/libretro-vecx)
-* [Videopac or Odyssey2](VideoPac-or-Odyssey-2) [(lr-o2em)](https://github.com/libretro/libretro-o2em)
+* [Videopac or Odyssey2](VideoPac-Odyssey-2) [(lr-o2em)](https://github.com/libretro/libretro-o2em)
 * [Virtual Boy](Virtual-Boy) [(lr-beetle-vb)](https://github.com/libretro/beetle-vb-libretro) (EXPERIMENTAL)
 * [WonderSwan](https://github.com/petrockblog/RetroPie-Setup/wiki/WonderSwan) [(lr-mednafen-wswan)](https://github.com/libretro/beetle-wswan-libretro)
 * [WonderSwan Color](Wonderswan-Color) [(lr-mednafen-wswan)](https://github.com/libretro/beetle-wswan-libretro)
