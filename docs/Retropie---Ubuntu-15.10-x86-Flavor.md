@@ -64,7 +64,7 @@ EmulationStation can be run from the terminal by typing emulationstation in the 
 
 ### Section 2.3: Configuration
 
-After a source based installation themes and retropie menu are missing and autorun is not setup. Enter RetroPie-Setup again and select option `3 Setup / Configuration (to be used post install`. Select a emulationstation theme and enable autostart as you like.
+After a source based installation themes and retropie menu are missing and autorun is not setup. Enter RetroPie-Setup again and select option `3 Setup / Configuration (to be used post install`. Select a emulationstation theme, install retropie menu and enable autostart as you like.
 
 ## Section 3: FAQs
 
