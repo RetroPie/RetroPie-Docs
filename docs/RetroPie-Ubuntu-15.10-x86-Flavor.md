@@ -19,6 +19,7 @@ Tested with an Intel NUC Kit NUC5CPYH.
     - [Section 3.3: Screen blanks after some minutes](#33-configuration)
     - [Section 3.4: Ubuntu does not autologin](#34-autologin)
     - [Section 3.5: How to setup a splashscreen?](#35-splashscreen)
+    - [Section 3.6: No audio](##36-noaudio)
 
 ***
 
