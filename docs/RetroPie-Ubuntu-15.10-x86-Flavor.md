@@ -88,3 +88,7 @@ Open Ubuntu system settings menu and select user accounts. Enable autologin for 
 
 Use Plymouth to setup a splash screen:
 https://wiki.ubuntu.com/Plymouth
+
+### Section 3.6: No audio
+
+Open Ubuntu system settings menu and select right audio output device.  
