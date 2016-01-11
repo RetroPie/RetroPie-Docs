@@ -6,14 +6,6 @@ A guide to build the retropie setup on Ubuntu 15.10 x86.
 
 Tested with an Intel NUC Kit NUC5CPYH.
 
-Intel NUC Kit NUC5CPYH:
-*2.16 GHz dual core Intel Celeron N3050
-*4x USB3.0 Ports
-*1x SD-Card Slot
-*1x 2.5" SATA Slot
-*1x HDMI 1.4a
-*builtin power button
-
 ## Sections
 
   - [Section 1: Install Ubuntu 15.10](#section-1-install-ubuntu)
