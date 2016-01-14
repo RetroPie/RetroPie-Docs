@@ -1,14 +1,14 @@
 ### Making RetroPie identify 2 players instead of one with the Xin-Mo  
   
 Add the following to `/boot/cmdline.txt` (just add a space to the existing entry so its all on one line)  
-usbhid.quirks=0x**1292**:0x**4745**:0x040  
+usbhid.quirks=0x**16c0**:0x**05e1**:0x040  
   
-The first two numbers the vendor/product (1292 and 4745).  
+The first two numbers the vendor/product (16c0 and 05e1).  
 You can find your vendor/product using `lsusb`  
   
 More details in this thread generally.  
 http://blog.petrockblock.com/forums/topic/autofire-on-the-axis/page/5/#post-104325
-
+http://blog.petrockblock.com/forums/topic/autofire-on-the-axis/page/5/#post-104433
 
 ### Older Info
 
