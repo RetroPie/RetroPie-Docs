@@ -6,9 +6,10 @@ usbhid.quirks=0x**16c0**:0x**05e1**:0x040
 The first two numbers the vendor/product (16c0 and 05e1).  
 You can find your vendor/product using `lsusb`  
   
-More details in this thread generally.  
+More details in these threads generally.  
 http://blog.petrockblock.com/forums/topic/autofire-on-the-axis/page/5/#post-104325
-http://blog.petrockblock.com/forums/topic/autofire-on-the-axis/page/5/#post-104433
+http://blog.petrockblock.com/forums/topic/autofire-on-the-axis/page/5/#post-104433  
+http://blog.petrockblock.com/forums/topic/how-to-get-xin-mo-dual-arcade-working-with-retropie-easy-guide/
 
 ### Older Info
 
