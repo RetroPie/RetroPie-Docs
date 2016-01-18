@@ -92,7 +92,6 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [Overclocking](Overclocking)
 * [Memory Split](Memory-Split)
 * [Manual Installation](Manual-Installation)
-* [Adding Games to the 'PORTS' Section](Adding-software-to-Ports)
 * [RetroPie Arch Linux Flavor](RetroPie-Arch-Linux-Flavor)
 * [RetroPie Ubuntu 15.10 x86 Flavor](RetroPie-Ubuntu-15.10-x86-Flavor)
 
