@@ -55,6 +55,12 @@ Create a shell script, Batman Doom.sh to launch the custom WAD as below. It's th
 
 Repeat for each mod (PWAD), creating a new folder for each one and a copy of the script above replacing the folder name as required.
 
+**Permission Denied Errors**
+
+A permission denied error after launching a script from EmulationStation means the script is not executable. This can be fixed with the following command (using Batman Doom as an example):
+
+    sudo chmod +x "/home/pi/RetroPie/roms/ports/Batman Doom.sh"
+
 ### Music
 
 The most ideal and authentic way to listen to the the original Doom (1&2) tracks is to google 'doom 1 and 2 midis' and download them. You can then convert the midi files into MP3s.
