@@ -78,6 +78,8 @@ Follow the onscreen instructions to configure your gamepad- if you run out of bu
 
 ![welcomescreengamepadconfigure](https://cloud.githubusercontent.com/assets/10035308/9140518/0263b9c8-3cef-11e5-922f-42f790f3be91.png)
 
+If you wish to configure more than one controller, you can do so from the start menu of emulationstation. For more details on manual controller configurations see this page [Here](https://github.com/petrockblog/RetroPie-Setup/wiki/RetroArch-Configuration). See also [HERE](https://github.com/RetroPie/RetroPie-Setup/wiki#controller-configurations)
+
 See the following diagrams for reference:
 
 ![Super Nintendo Controller](https://cloud.githubusercontent.com/assets/10035308/7110174/0f2fdb54-e16a-11e4-8f3d-37bdca8f1ddf.png)
@@ -99,8 +101,6 @@ Select+Right | Input State Slot Increase
 Select+Left | Input State Slot Decrease 
 Select+X | RGUI Menu
 Select+B | Reset
-
-If you wish to configure more than one controller, you can do so from the start menu of emulationstation. For more details on manual controller configurations see this page [Here](https://github.com/petrockblog/RetroPie-Setup/wiki/RetroArch-Configuration). See also [HERE](https://github.com/RetroPie/RetroPie-Setup/wiki#controller-configurations)
 
 For those that are interested, the retroarch controller config that is created after you've followed the aforementioned steps is located in: 
 ```
