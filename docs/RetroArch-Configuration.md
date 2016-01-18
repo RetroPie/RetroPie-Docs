@@ -55,11 +55,6 @@ input_state_slot_decrease_axis = "-0"
 
 Hotkeys are combinations of buttons you can press in order to access options such as saving, loading, and exiting games.
 
-see this video:
-
-<a href="https://www.youtube.com/watch?v=DBnKFRflEV4" target="_blank"><img src="https://i.ytimg.com/vi_webp/DBnKFRflEV4/mqdefault.webp" 
-alt="Hotkey Video" width="300" height="190" border="10" /></a>
-
 #### Default joypad hotkeys:
 Hotkeys | Action
 | :---: | :---: |
@@ -71,6 +66,10 @@ Select+Left | Input State Slot Decrease
 Select+X | RGUI Menu
 Select+B | Reset
 
+see this video:
+
+<a href="https://www.youtube.com/watch?v=DBnKFRflEV4" target="_blank"><img src="https://i.ytimg.com/vi_webp/DBnKFRflEV4/mqdefault.webp" 
+alt="Hotkey Video" width="300" height="190" border="10" /></a>
 ## Hardcoded Configurations
 
 These configurations are manual edits you can make that are locked to a specific port and controller. Hardcoded controls can be configured either globally, by emulator, or by game- see the following paragraphs.
