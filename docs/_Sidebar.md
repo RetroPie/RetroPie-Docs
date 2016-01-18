@@ -84,7 +84,6 @@
 * [Overclocking](Overclocking)
 * [Memory Split](Memory-Split)
 * [Manual Installation](Manual-Installation)
-* [Adding Games](Adding-software-to-Ports)
 * [Arch Linux](RetroPie-Arch-Linux-Flavor)
 * [Ubuntu 15.10 x86](RetroPie-Ubuntu-15.10-x86-Flavor)
 
@@ -105,3 +104,4 @@
 * [Sound Issues](Sound-Issues)
 * [Speed Issues](Speed-Issues)
 * [Video Issues](Video-Issues)
+* [FAQ](FAQ)
