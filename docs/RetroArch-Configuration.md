@@ -56,15 +56,16 @@ input_state_slot_decrease_axis = "-0"
 Hotkeys are combinations of buttons you can press in order to access options such as saving, loading, and exiting games.
 
 #### Default joypad hotkeys:
-Hotkeys | Action
-| :---: | :---: |
-Select+Start | Exit
-Select+Right Shoulder | Save
-Select+Left Shoulder | Load
-Select+Right | Input State Slot Increase
-Select+Left | Input State Slot Decrease 
-Select+X | RGUI Menu
-Select+B | Reset
+Hotkeys | Action | Code Example
+| :---: | :---: | :---: |
+Select | Hotkey | input_enable_hotkey_btn = "6"
+Select+Start | Exit | input_exit_emulator_btn = "7"
+Select+Right Shoulder | Save | input_save_state_btn = "5"
+Select+Left Shoulder | Load | input_load_state_btn = "4"
+Select+Right | Input State Slot Increase | input_state_slot_increase_btn = "h0right"
+Select+Left | Input State Slot Decrease | input_state_slot_decrease_btn = "h0left"
+Select+X | RGUI Menu | input_menu_toggle_btn = "3"
+Select+B | Reset | input_reset_btn = "0"
 
 see this video:
 
