@@ -58,6 +58,10 @@ Killing X `sudo service lightdm stop`
 
 open new terminal `ctrl+alt+F1`
 
+#### Install EmulationStation Theme
+
+- Option 3: Install Themes
+
 #### Installing RetroArch:
 
 - Option 5: Install RetroArch
