@@ -2,6 +2,26 @@
 
 This page is a list of all of the changelogs for each version of RetroPie. For a complete list of all commits to the source code see [here:](https://github.com/petrockblog/RetroPie-Setup/commits/master)  
 
+### Version 3.4: (January 19, 2016)
+
+Mostly fixes and improvements rather than new stuff this time folks. There were some problems with our RetroArch configuration defaults in RetroPie 3.3 which should be sorted now, and we have fixed up a few things that didn’t work correctly with Raspbian Jessie. We also have added early support for using the RetroPie-Setup script on a X86/X11 desktop setup, as well as some basic support for building EmulationStation & RetroArch + cores on the ODroid-C1. For more information regarding installation on x86 see https://github.com/RetroPie/RetroPie-Setup/wiki/RetroPie-Ubuntu-15.10-x86-Flavor.
+
+We are now using Raspbian Jessie as the base for the RetroPie image. Those using Wheezy can update RetroPie-Setup and emulators by following the instructions at https://github.com/RetroPie/RetroPie-setup/wiki/Updating-RetroPie - however moving to Jessie is recommended. As it takes time to pre-build binaries, in the future we will only be providing pre-built binaries for Raspbian Jessie.
+
+Changes since 3.3:
+
+- Now using Raspbian Jessie for the RetroPie image. 
+- Fixes for controller input issues with RetroArch including improved config generation to work around problems with 8bitdo controllers.
+- Fixed up Bluetooth pairing module on Jessie.
+- Improvements to the Xbox userspace driver (xboxdrv) including partial support of Xbox One controller.
+- Can now choose to exit or restart Emulation Station. Metadata will no longer be lost if choosing to shutdown or reboot.
+- Preliminary support for using the RetroPie-Setup script on x86 + X11 on Debian/Ubuntu and Ubuntu on the Odroid-C1 (building from source only).
+- $HOME/.emulationstation has relocated to /opt/retropie/configs/all/emulationstation - but is symlinked from the original location. The USB Rom Service script will backup all of /opt/retropie/configs to USB. Previously it only backed up /$HOME/.emulationstation.
+- Support for choosing RetroArch shaders and overlays from the RetroPie-Setup configuration editor.
+- Added pixel theme from Rookervik to theme installer.
+- Wonderswan and NeoGeo Pocket separated into Wonderswan/Wonderswan Colour, NeoGeo Pocket/NeoGeo Pocket Colour. 
+- Various other bugfixes and improvements.
+
 ### Version 3.3: (December 21, 2015)
 
 - Mupen64plus controller configs (including hotkeys) and Reicast (Dreamcast) controller configs added to the autoconfiguration script in emulationstation. Mupen64plus is now the default n64 emulator due to compatibility.
