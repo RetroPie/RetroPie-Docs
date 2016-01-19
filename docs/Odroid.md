@@ -29,7 +29,7 @@ Installing the RetroPie Setup Script:
 
 ```
 cd
-wget git clone --depth=1 https://github.com/RetroPie/RetroPie-Setup.git
+git clone --depth=1 https://github.com/RetroPie/RetroPie-Setup.git
 ```
 
 Run the Setup Script:
