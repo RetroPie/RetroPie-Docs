@@ -80,3 +80,35 @@ open new terminal `ctrl+alt+F1`
 
 - Option 3: Enable Samba Shares
 
+#### Boot to Console:
+
+```
+sudo -s
+
+sudo echo "manual" >> /etc/init/lightdm.override
+
+```
+
+To start lightdm on command:
+
+```
+sudo start lightdm
+```
+
+To restore your system so that lightdm is always started on boot:
+
+```
+sudo rm /etc/init/lightdm.override
+```
+
+#### Disable Screen Blanking in Console:
+
+```
+sudo nano /etc/kbd/config
+```
+comment out
+
+```
+BLANK_TIME
+POWERDOWN_TIME
+```
