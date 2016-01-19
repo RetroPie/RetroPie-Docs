@@ -54,6 +54,10 @@ All modules can be installed from the RetroPie Setup Script. First and foremost 
 
 - Option 5: Install EmulationStation
 
+Killing X `sudo service lightdm stop`
+
+open new terminal `ctrl+alt+F1`
+
 #### Installing RetroArch:
 
 - Option 5: Install RetroArch
