@@ -75,7 +75,7 @@ It is not possible to restart/shutdown if an sudo requests an password. To disab
 
 ### Section 3.2: Cannot install PS3 driver
 
-Ubuntu has an builtin PS3 bluetooth driver. Make your bluetooth dongle discoverable. Connect your controller over usb and allow it to connect. There is no need to install sixad. 
+Ubuntu has an builtin PS3 bluetooth driver. There is no need to install sixad. Make your bluetooth dongle discoverable. Connect your controller over usb. Now open "bluetooth system settings/add device". Select PS3 controller and click ok. Your controller should pair now if you press PS button.
 
 ### Section 3.3: Screen blanks after some minutes
 
