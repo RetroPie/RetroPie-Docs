@@ -37,6 +37,15 @@ Changing Controls:
      -Fire: 0
 -to use a Joystick (gamepad) instead, navigate to Joystick and press enter
 
+SAVING CONFIGURATIONS:
+
+Go into 
+- settings management
+- save settings on exit
+- save current settings
+- save hotkeys
+- save joystick map
+
 CUSTOM MAPPING
 - Go back to Joystick settings by pressing backspace and navigate to Joystick 1 Mapping and press enter
 - Press enter on each key followed by pressing the key on your gamepad you wish to be mapped.
