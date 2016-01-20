@@ -36,11 +36,11 @@ The simplest way to get most of these components is through a kit such as the [C
 
 There are currently two versions of RetroPie 3.0. There is one version for Raspberry Pi 1 (Model A, A+, B, B+) and there is a version for Raspberry Pi 2. Download the SD image for your version of Raspberry Pi:
 
-**[Raspberry Pi 1 / Zero](http://blog.petrockblock.com/retropie/retropie-downloads/retropie-image-for-raspberry-pi-1/)**
+**[Raspberry Pi 1 / Zero](https://github.com/RetroPie/RetroPie-Setup/releases/download/3.4/retropie-v3.4-rpi1.img.gz)**
 
-**[Raspberry Pi 2](http://blog.petrockblock.com/retropie/retropie-downloads/retropie-sd-card-image-for-raspberry-pi-2-2/)**
+**[Raspberry Pi 2](https://github.com/RetroPie/RetroPie-Setup/releases/download/3.4/retropie-v3.4-rpi2.img.gz)**
 
-(If these links become outdated see the downloads page [here](http://blog.petrockblock.com/retropie/retropie-downloads/).)
+(If these links become outdated see the downloads page [here](https://github.com/RetroPie/RetroPie-Setup/releases).)
 
 If you are unsure which version of Raspberry Pi you have there is an easy way to check:
 
