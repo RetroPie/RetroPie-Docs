@@ -339,7 +339,7 @@ This is what makes the Xbox 360 controller the best for this project.
 
 
 
-Now, whenever you press the xbox (guide) button on either controller 1 or 2, it will change the control scheme. For player 1, the controller starts up in normal mode. Hitting the xbox button will change to player1.cfg. Hitting it again will enable mouse emulation. One more time will bring back normal operation. Player 2 cycles between normal operation and player1.cfg. Controllers 3 and 4 are uneffected.
+Now, whenever you press the xbox (guide) button on either controller 1 or 2, it will change the control scheme. For player 1, the controller starts up in normal mode. Hitting the xbox button will change to player1.cfg. Hitting it again will enable mouse emulation. One more time will bring back normal operation. Controller 2 cycles between normal operation and player2.cfg. Controllers 3 and 4 are uneffected.
 
 
 Here's a little explanation of xboxdrv_player1.cfg (player2 is similar):
