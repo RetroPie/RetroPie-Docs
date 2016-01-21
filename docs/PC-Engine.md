@@ -26,7 +26,7 @@ Note: The 'SYSCARD3.PCE' needs to be placed in with the ROM files to play Turbo 
 
 ## Editing instructions for PCE CD games before adding to rom folder
 
-The bin/cue or iso/cue is case sensitive and only needs the name of the game without the country of origin info, no underscores or dashes etc. Just the name. Example: Vasteel.iso and Vasteel.cue or Motoroader MC.bin and Motoroader MC.cue. The extensions must be all lower case (.bin,.cue, .iso)
+The bin/cue or iso/cue is case sensitive and only needs the name of the game without the country of origin info, no underscores or dashes etc. Just the name. Example: Vasteel.iso and Vasteel.cue or Motoroader MC.bin and Motoroader MC.cue. Extensions must be all lower case (.bin,.cue, .iso)
 
 Edit the .cue file with a text editor. Match the name to the iso or bin. It's in the first line. Case sensitive and again, the extension needs to be all lower case.
 
