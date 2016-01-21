@@ -30,7 +30,7 @@ sudo ./retropie_setup.sh
 
 #### Latest SD image
 
-If you are worried about conflicts during an update you can always just start with the latest fresh sd image and just copy all your files back over onto that instead of updating from an older image.
+If you are worried about conflicts during an update you can always just start with the latest fresh sd image which can be installed [**here**](https://github.com/RetroPie/RetroPie-Setup/releases) and just copy all your files back over onto that instead of updating from an older image.
 
 ## Making a Backup (Option 1)
 
