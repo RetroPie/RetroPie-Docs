@@ -53,7 +53,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [Nintendo DS](Nintendo-DS) [(lr-desmume)](https://github.com/libretro/desmume) (EXPERIMENTAL)
 * [Nintendo Entertainment System](Nintendo-Entertainment-System) [(lr-fceumm)](https://github.com/libretro/libretro-fceumm), [(lr-nestopia)](https://github.com/libretro/nestopia)
 * [PC](PC) [(DOSBox)](http://www.dosbox.com/), [(rpix86)](http://rpix86.patrickaalto.com/)
-* [PC Engine/TurboGrafx-16](PC-Engine) [(lr-mednafen-pce-fast)](https://github.com/libretro/beetle-pce-fast-libretro)
+* [PC Engine/TurboGrafx-16](PC-Engine) [(lr-mednafen-pce-fast)](https://github.com/libretro/beetle-pce-fast-libretro) [(lr-beetle-supergrafx)](https://github.com/libretro/beetle-supergrafx-libretro)
 * [Ports](Ports)
   * [Cave Story](CaveStory) [(lr-nxengine)](https://github.com/libretro/nxengine-libretro)
   * [Descent 1 & 2](Descent) [(DXX-Rebirth)](http://www.dxx-rebirth.com/) (EXPERIMENTAL)
