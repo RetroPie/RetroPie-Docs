@@ -30,7 +30,7 @@ The bin/cue or iso/cue is case sensitive and only needs the name of the game wit
 
 Edit the .cue file with a text editor. Match the name to the iso or bin. It's in the first line. Case sensitive and again, the extension needs to be all lower case.
 
-Place bios in ROMS folder. Make sure the name of the bios file is all lower case. syscard3.pce
+Place bios file in both roms and bios folder. Make sure the name of the bios file is all lower case. syscard3.pce
 
 Place edited bin/cue or iso/cue files in the rom folder
 
