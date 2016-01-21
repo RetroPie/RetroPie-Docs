@@ -87,6 +87,8 @@ If you have installed other bluetooth programs, perhaps to support a PS3 control
 If you are unsure your USB Bluetooth dongle is detected with the Pi, you can list the USB devices with:  
 `lsusb`  
   
+The 8bitdo SFC30 controller appears to prefer to start with START + R (Right Shoulder) pressed to get into joystick mode.  
+  
 Sometimes there can be issues with the pairing process, to start that again you can remove the joypad like this   
 `bluez-test-device remove XX:XX:XX:XX:XX:XX`
 
