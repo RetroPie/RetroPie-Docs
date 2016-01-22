@@ -59,4 +59,4 @@ Your controller driver is likely being started after EmulationStation. An easy w
 
 ### I messed up on the initial prompt that appears when Emulation Station starts for the first time. My controls are completely messed up and out of order. Is there a way to redo this prompt?
 
-You need to delete the configuration file that Emulation Station uses by invoking ```rm /home/pi/.emulationstation/es_input.cfg```. Note that you exit Emulation Station by pressing ```F4```. When you (re-)start Emulation Station, the configuration prompt will appear again.
+You need to delete the configuration file that Emulation Station uses by invoking ```rm /home/pi/.emulationstation/es_input.cfg```, and then re-install Emulation Station from Retropie-Setup. Note that you exit Emulation Station by pressing ```F4```. When you (re-)start Emulation Station, the configuration prompt will appear again.
