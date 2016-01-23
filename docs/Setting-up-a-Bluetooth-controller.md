@@ -1,16 +1,47 @@
 # Adding a Bluetooth controller to RetroPie  
 This guide is geared to using a controller from [8bitdo](http://www.8bitdo.com) but should work with a range of bluetooth devices.  
 The examples below are assuming you have just a keyboard and bluetooth dongle plugged into your Pi.  
+  
+**Controller Firmware**  
+Make sure you have the latest firmware for your controller. You will need a USB cable to do this. The firmware for 8bitdo controllers is here: http://8bitdo.com/Support.html  
 
+### This section is for Jessie based RetroPie (version 3.4 and later)  
+
+### Step 1 - Pair and connect to controller
+Quit Emulation Station with F4 and type this at the command line:  
+`sudo /home/pi/RetroPie-Setup/retropie_setup.sh`  
+"U" Update RetroPie-Setup Script  
+"3" Setup
+Then "Configure Bluetooth devices  
+  
+Make sure your controller is turned on in the correct pairing mode, then choose:
+1 Register and Connect to Bluetooth device  
+Follow the prompts and your controller should connnect  
+This is shown by a solid blue light on the 8bitdo controllers  
+Quit out of the setup script
+
+### Step 2 - Manual file edit for 8bitdo controllers  
+At the command prompt, type  
+`sudo nano /etc/udev/rules.d/10-local.rules`  
+In that file add  
+`SUBSYSTEM=="input", ATTRS{name}=="8Bitdo SFC30 GamePad Joystick", MODE="0666", ENV{ID_INPUT_JOYSTICK}="1"`  
+Note: The value in the name field should read exactly as your controller reports it.  
+  
+  
+### Step 3 - Configure controller for Emulation Station and Retroarch  
+Now reboot your system, turn the controller on just before the RetroPie splashscreen appears and the controller will connect and ES will prompt to configure it. 
+  
+  
+  
+
+  
+### This section is for Wheezy based RetroPie (pre version 3.4)  
 
 <a href="https://www.youtube.com/watch?v=EiDJFdWXweI
 " target="_blank"><img src="https://i.ytimg.com/vi_webp/EiDJFdWXweI/mqdefault.webp" 
 alt="RetroPie with Bluetooth" width="300" height="190" border="10" /></a>  
   
 **Video Guide**: https://www.youtube.com/watch?v=EiDJFdWXweI  
-
-**Controller Firmware**  
-Make sure you have the latest firmware for your controller. You will need a USB cable to do this. The firmware for 8bitdo controllers is here: http://8bitdo.com/Support.html
 
 ### Step 1 - Download and install the Bluetooth packages  
 Quit Emulation Station with F4 (stop it restarting by pressing another key within 5 secs) and type this at the command line:  
@@ -105,5 +136,11 @@ This should keep the Pi scanning for bluetooth devices in case the pair is lost.
 http://blog.petrockblock.com/forums/topic/8bitdo-bluetooth-controller-setup-retropie-v3/  
 http://blog.petrockblock.com/forums/topic/the-old-story-setting-up-2x-8bitdo-nes30-bluetooth/  
 http://forum.8bitdo.com/thread-328-1-1.html  
+https://github.com/RetroPie/RetroPie-Setup/issues/1185  
+https://github.com/RetroPie/RetroPie-Setup/issues/1202  
+https://wiki.archlinux.org/index.php/bluetooth#Bluetoothctl  
+https://wiki.archlinux.org/index.php/bluetooth_keyboard  
+https://github.com/libretro/retroarch-joypad-autoconfig/tree/master/udev  
+http://8bitdo.com/Support.html  
 **Pre-Generated retroarch controller files**  
 https://github.com/libretro/retroarch-joypad-autoconfig/tree/master/udev
