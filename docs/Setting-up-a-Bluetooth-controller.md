@@ -6,6 +6,14 @@ The examples below are assuming you have just a keyboard and bluetooth dongle pl
 Make sure you have the latest firmware for your controller. You will need a USB cable to do this. The firmware for 8bitdo controllers is here: http://8bitdo.com/Support.html  
 
 ### This section is for Jessie based RetroPie (version 3.4 and later)  
+  
+  
+<a href="https://www.youtube.com/watch?v=Q4K3h4CIJwA
+" target="_blank"><img src="https://i.ytimg.com/vi_webp/Q4K3h4CIJwA/mqdefault.webp" 
+alt="RetroPie with Bluetooth" width="300" height="190" border="10" /></a>  
+  
+**Video Guide**: https://www.youtube.com/watch?v=Q4K3h4CIJwA  
+  
 
 ### Step 1 - Pair and connect to controller
 Quit Emulation Station with F4 and type this at the command line:  
