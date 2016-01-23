@@ -11,10 +11,10 @@ Make sure you have the latest firmware for your controller. You will need a USB 
 Quit Emulation Station with F4 and type this at the command line:  
 `sudo /home/pi/RetroPie-Setup/retropie_setup.sh`  
 "U" Update RetroPie-Setup Script  
-"3" Setup
-Then "Configure Bluetooth devices  
+"3" Setup  
+"Configure Bluetooth devices"  
   
-Make sure your controller is turned on in the correct pairing mode, then choose:
+Make sure your controller is turned on in the correct pairing mode (Power on for FC30 Pro, Start+R for SFC30), then choose:
 1 Register and Connect to Bluetooth device  
 Follow the prompts and your controller should connnect  
 This is shown by a solid blue light on the 8bitdo controllers  
@@ -29,7 +29,7 @@ Note: The value in the name field should read exactly as your controller reports
   
   
 ### Step 3 - Configure controller for Emulation Station and Retroarch  
-Now reboot your system, turn the controller on just before the RetroPie splashscreen appears and the controller will connect and ES will prompt to configure it. 
+Now reboot your system, turn the controller on just before the RetroPie splashscreen appears and the controller will connect (solid blue led light) and ES will prompt to configure it. 
   
   
   
@@ -135,12 +135,9 @@ This should keep the Pi scanning for bluetooth devices in case the pair is lost.
 **Some useful threads**  
 http://blog.petrockblock.com/forums/topic/8bitdo-bluetooth-controller-setup-retropie-v3/  
 http://blog.petrockblock.com/forums/topic/the-old-story-setting-up-2x-8bitdo-nes30-bluetooth/  
-http://forum.8bitdo.com/thread-328-1-1.html  
-https://github.com/RetroPie/RetroPie-Setup/issues/1185  
-https://github.com/RetroPie/RetroPie-Setup/issues/1202  
+http://forum.8bitdo.com/thread-328-1-1.html   
 https://wiki.archlinux.org/index.php/bluetooth#Bluetoothctl  
-https://wiki.archlinux.org/index.php/bluetooth_keyboard  
-https://github.com/libretro/retroarch-joypad-autoconfig/tree/master/udev  
+https://wiki.archlinux.org/index.php/bluetooth_keyboard    
 http://8bitdo.com/Support.html  
 **Pre-Generated retroarch controller files**  
 https://github.com/libretro/retroarch-joypad-autoconfig/tree/master/udev
