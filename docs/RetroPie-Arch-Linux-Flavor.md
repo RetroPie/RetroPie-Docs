@@ -33,6 +33,7 @@ makepkg -s --asroot
 pacman -U apacman[Press TAB key to autocomplete the filename then press ENTER to install]
 ```
 
+
 ## Section 2: Install retroarch:
     
 First we need a special build of sdl2 to make Retroarch and EmulationStation work the best with RPi/RPi2. Then next we can proceed on installing retroarch.
@@ -67,7 +68,7 @@ apacman -Ss libretro
 
 Note: Some emulators may not work or may require manual building by downloading the associated tarball and issuing the command:
 ```shell
-makepkg -Acs --asroot
+makepkg -Acs
 ```
 then...
 ```shell
