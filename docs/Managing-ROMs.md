@@ -19,6 +19,8 @@ See also: [MAME](https://github.com/petrockblog/RetroPie-Setup/wiki/MAME), [FBA]
 
 This is where [clrmamepro](http://mamedev.emulab.it/clrmamepro/) comes in.  Clrmamepro is a Windows utility for verifying and managing your ROMs. It can also run on Linux, using [Wine](https://www.winehq.org/). Clrmamepro is very powerful, but also somewhat complex and not friendly to new users. 
 
+there is also a Mac version available now http://www.emulab.it its only in Beta at the moment, but it works exactly the same as the Windows utility 
+
 Here are the steps to getting started with clrmamepro.
 
 ## Video Tutorial:
