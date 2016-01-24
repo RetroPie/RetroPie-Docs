@@ -29,8 +29,7 @@ Install [apacman](https://aur.archlinux.org/packages/apacman/)
 wget https://aur.archlinux.org/cgit/aur.git/snapshot/apacman.tar.gz
 tar xzf apacman
 cd apacman
-makepkg -s --asroot
-pacman -U apacman[Press TAB key to autocomplete the filename then press ENTER to install]
+makepkg -si
 ```
 
 
@@ -68,11 +67,7 @@ apacman -Ss libretro
 
 Note: Some emulators may not work or may require manual building by downloading the associated tarball and issuing the command:
 ```shell
-makepkg -Acs
-```
-then...
-```shell
-pacman -U /path/to/package
+makepkg -Acsi
 ```
 
 ## Section 4: Install ROMs
