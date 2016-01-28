@@ -7,7 +7,7 @@
 5. [Configure Wifi](https://github.com/RetroPie/RetroPie-Setup/wiki/First-Installation#configuring-wifi)
 6. [Transferring Roms](https://github.com/RetroPie/RetroPie-Setup/wiki/First-Installation#transferring-roms)
 
-Congratulations! You have discovered the wonderful world of RetroPie- your entire childhood is within reach! RetroPie is a combination of multiple projects including [RetroArch](http://www.libretro.com), [EmulationStation](http://www.emulationstation.org), among many others. 
+Congratulations! You have discovered the wonderful world of RetroPie- your entire childhood is within reach! RetroPie is a combination of multiple projects including [RetroArch](http://www.libretro.com), [EmulationStation](http://www.emulationstation.org), and many others. 
 
 This page is for people just getting started on RetroPie 3.x. The easiest way to install RetroPie is the SD image which is a ready to go system built upon top of the Raspbian OS - this is the method described in the following guide. Alternatively, advanced users can install RetroPie [manually](https://github.com/RetroPie/RetroPie-Setup/wiki/Manual-Installation). 
 
