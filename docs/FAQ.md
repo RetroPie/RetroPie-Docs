@@ -33,6 +33,55 @@ Another simple workaround is to use player 2's select key to insert coins but it
 Related post  
 http://blog.petrockblock.com/forums/topic/fba-retroarch-core-coin-controls/#post-93014
 
+### Why can't I SSH as root anymore?
+
+Starting with RetroPie 3.0 BETA 3 the root password was disabled (as is the case for Raspbian by default and many other linux distros). 
+
+If you would like to re-enable root access, in the terminal type:
+
+```shell
+sudo passwd root
+```
+
+see these posts for more details:
+
+https://www.raspberrypi.org/documentation/linux/usage/root.md
+
+http://elinux.org/R-Pi_Troubleshooting#I_don.27t_know_the_root_password
+
+
+**RetroPie 3.0 Jessie Builds:**
+
+before setting a root password, the following must be edited
+
+```sudo nano /etc/ssh/sshd_config```
+
+look for 
+
+```PermitRootLogin without-password```
+
+change it to
+
+```PermitRootLogin yes```
+
+then ctrl+x to save, next set your root password & restart your Pi
+
+### Where did the desktop go?
+
+The LXDE desktop environment was removed from the RetroPie image to keep it smaller. You can install it with
+
+`sudo apt-get install lxde`
+
+For Raspbian Jessie you also need to install:
+
+`sudo apt-get install xinit`
+
+And then you can access it from the terminal by typing in
+
+`startx`
+
+After installation your pi will boot into the desktop environment, you can change the behaviour to boot into emulationstation by selecting the autostart option for emulationstation from option 3 of the setup script, or you can set the autologin to console option from the boot options of the raspi-config menu.
+
 ### Does anybody know if there's a way to edit the retroarch.cfg to give me the ability to exit an emulator by using the controller?
 
 If you add
@@ -118,39 +167,6 @@ If you'd like keyboard configurations to work add
 Follow the RetroArch-Configuration guide:
 
 https://github.com/petrockblog/RetroPie-Setup/wiki/RetroArch-Configuration
-
-### Why can't I SSH as root anymore?
-
-Starting with RetroPie 3.0 BETA 3 the root password was disabled (as is the case for Raspbian by default and many other linux distros). 
-
-If you would like to re-enable root access, in the terminal type:
-
-```shell
-sudo passwd root
-```
-
-see these posts for more details:
-
-https://www.raspberrypi.org/documentation/linux/usage/root.md
-
-http://elinux.org/R-Pi_Troubleshooting#I_don.27t_know_the_root_password
-
-
-**RetroPie 3.0 Jessie Builds:**
-
-before setting a root password, the following must be edited
-
-```sudo nano /etc/ssh/sshd_config```
-
-look for 
-
-```PermitRootLogin without-password```
-
-change it to
-
-```PermitRootLogin yes```
-
-then ctrl+x to save, next set your root password & restart your Pi
 
 ### The PSX emulator reports no BIOS found. What do I do?
 
