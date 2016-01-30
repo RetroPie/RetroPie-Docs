@@ -130,7 +130,13 @@ For more information on custom RetroArch controls see: [RetroArch Configuration]
 
 ![neogeodiagram](https://cloud.githubusercontent.com/assets/10035308/8245309/a575cc8c-15e9-11e5-8735-0a4ab2a4e137.png)
 
-One important thing to note is that with lr-fba the hotkey button (i.e. select) interferes with you insert coin button (which also happens to be select) so as a result you can't insert a coin to start your game with the default controls. An easy fix is to to swap the hotkey and exit button around in the aforementioned retroarch.cfg.
+### Insert Coin Button issues (lr-fba and lr-fba-next)
+**NOTE:** many Capcom games are affected [by this issue with RetroArch Hotkeys](https://github.com/libretro/RetroArch/issues/2230) when used with the default RetroPie configuration for many controllers, the **RetroArch hotkey** button (i.e. select) interferes with the **insert coin button** (which also happens to be select).
+
+**Solution:** map the RetroArch hotkey (usually select) to another button
+
+* An easy fix is to to swap the hotkey and exit button around in the aforementioned `retroarch.cfg`.
+* Alternatively you can change the hotkey to an unused button (for example the XBox "home" button on an XBox360 Controller). As this issue apparently affects multiple cores it may be optimal to change it globally in (for example) `/opt/retropie/configs/all/retroarch-joypads/XboxGamepad(userspacedriver).cfg` set `input_enable_hotkey_btn = "10"`.
 
 ### PiFBA Controls
 PiFBA controls are located in
