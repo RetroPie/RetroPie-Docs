@@ -131,7 +131,7 @@ For more information on custom RetroArch controls see: [RetroArch Configuration]
 ![neogeodiagram](https://cloud.githubusercontent.com/assets/10035308/8245309/a575cc8c-15e9-11e5-8735-0a4ab2a4e137.png)
 
 ### Insert Coin Button issues (lr-fba and lr-fba-next)
-**NOTE:** many Capcom games are affected [by this issue with RetroArch Hotkeys](https://github.com/libretro/RetroArch/issues/2230) when used with the default RetroPie configuration for many controllers, the **RetroArch hotkey** button (i.e. select) interferes with the **insert coin button** (which also happens to be select).
+**NOTE:** many Capcom games are affected [by this issue with RetroArch Hotkeys](https://github.com/libretro/RetroArch/issues/2230) when used with the default RetroPie configuration for many controllers, the **RetroArch hotkey** button (i.e. select) interferes with the **insert coin button** (which also happens to be select), specifically when they are both mapped to the same button.
 
 **Solution:** map the RetroArch hotkey (usually select) to another button
 
