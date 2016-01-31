@@ -34,6 +34,8 @@ EmulationStation has a built in scraper that pulls from [thegamesdb](http://theg
 
 If you are having issues with your metadata changes not being saved, you need to select Quit EmulationStation from the quit menu rather than shutdown or restart system. Then your changes will be saved.
 
+Note that this issue was fixed with RetroPie 3.4
+
 # ES-scraper
 ES-scraper is a quick script written in Python that uses various online sources ([thegamesdb](http://thegamesdb.net/) and [archive.vg](http://archive.vg) so far) to scrape artwork and game info and save it as XML files to be read by EmulationStation. ~~The repository can be found [here](https://github.com/elpendor/ES-scraper)~~
 
