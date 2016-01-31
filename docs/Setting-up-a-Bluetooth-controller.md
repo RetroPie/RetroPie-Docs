@@ -133,12 +133,12 @@ Sometimes there can be issues with the pairing process, to start that again you 
 
 **Keep bluetooth scanning**  
 This should keep the Pi scanning for bluetooth devices in case the pair is lost.  
-`sudo nano /etc/rc.local`  
+`sudo nano /etc/init.d/rc.local`  
 `add “sudo hciconfig hci0 up piscan” (without the quotes) above the line that says “exit 0”`  
 `ctrl x`  
 `y`  
 `enter`  
-`sudo reboot`
+`sudo reboot`  
 
 **Some useful threads**  
 http://blog.petrockblock.com/forums/topic/8bitdo-bluetooth-controller-setup-retropie-v3/  
