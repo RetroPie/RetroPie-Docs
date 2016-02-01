@@ -21,7 +21,7 @@ Note that love games are basically .zip files with a .love extension instead of 
 
 ## Controls
 
-Controls vary by game though most will need a keyboard. Mari0 (which is installed when you install Löve) has some support for gamepads but you still need to use a keyboard to navigate the menus. 
+Controls vary by game though most will need a keyboard. [**Mari0**](http://stabyourself.net/mari0/) (which is installed when you install Löve) has some support for gamepads but you still need to use a keyboard to navigate the menus. 
 
 For display it is best to leave the video settings alone in the runcommand menu and just use the in game settings to scale it to 5.
 
