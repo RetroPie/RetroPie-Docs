@@ -51,7 +51,7 @@
   * [Descent](Descent)
   * [DOOM](Doom)
   * [Duke Nukem 3D](Duke-Nukem-3D)
-  * [Love](Love)
+  * [Löve](Love)
   * [KODI](KODI)
   * [Minecraft Pi Edition](Minecraft)
   * [OpenTTD](OpenTTD)
