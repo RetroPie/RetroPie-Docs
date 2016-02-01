@@ -27,6 +27,11 @@ For display it is best to leave the video settings alone in the runcommand menu 
 
 ### Other Games:
 
+You can add the following scripts in the configure function of `/home/pi/RetroPie-Setup/scriptmodules/ports/love.sh`
+
+or you can just follow the links and download the .love files and place them into your ROM folders manually.
+
+
 [**Bussard**](http://technomancy.itch.io/bussard)
 
 ````  
