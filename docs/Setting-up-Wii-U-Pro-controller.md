@@ -3,7 +3,7 @@ This how-to will explain the fairly easy setup of a Wii U Pro Controller (or any
 The steps are based on the XWiimote description in the ArchWiki: https://wiki.archlinux.org/index.php/XWiimote
 
 # Prerequisites
-This will only work on debian jessie based distributions. So you either have to get the latest raspbian version (debian jessie based) and use the RetroPie-Setup script or wait till a jessie based RetroPie image will be released.
+This will only work on Debian Jessie based distributions. So you either have to get the latest Raspbian version (Debian Jessie based) and use the RetroPie-Setup script or use RetroPie 3.4.
 
 # Steps
 1. Either open the commandline on the pi by exiting emulationstation or ssh into it
