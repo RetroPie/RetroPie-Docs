@@ -10,7 +10,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 
 # Getting Started
 * [First Installation](First-Installation)
-* [Setting Up Wifi](Setting-Up-Wifi)
+* [Setting Up Wifi](Wifi)
 * [Configuring Controllers (RetroArch)](RetroArch-Configuration)
 * [Transferring games (ROMs), and other files to RetroPie](Transferring-Roms)
 * [Getting the right MAME ROMs](Managing-ROMs)
