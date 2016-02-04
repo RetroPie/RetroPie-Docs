@@ -186,3 +186,16 @@ From [ToadKing](http://www.raspberrypi.org/phpBB3/viewtopic.php?p=112241#p112241
 
 A Raspberry Pi B/B+/2 is highly recommended. The GPU should have at least 256MB RAM. If you have a Raspberry Pi A/A+  it is not possible to scrape games and use system themes. 
 
+### How do I hide the boot text?
+
+**note that you should be comfortable with editing files in Linux as any wrong edits on the following file can break your boot sequence requiring a reimage of your SD card**
+
+`sudo nano /boot/cmdline.txt`
+
+change `console=tty1` to `console=tty3` 
+
+And add `loglevel=3 quiet logo.nologo` at the end.
+
+**make sure it is all on the same line!!!** 
+
+The logo.nologo option is what turns off the raspberries on boot.
