@@ -3,7 +3,7 @@
 ## [Getting Started](First-Installation)
 
 * [**First Installation**](First-Installation)
-* [Setting Up WiFi](Setting-Up-Wifi)
+* [Setting Up WiFi](Wifi)
 * [Configuring Controllers (RetroArch)](RetroArch-Configuration)
 * [Transferring games (ROMs)](Transferring-Roms)
 * [Getting the right MAME ROMs](Managing-ROMs)
