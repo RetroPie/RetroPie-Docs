@@ -1,4 +1,4 @@
-# Runcommand Menu
+# Runcommand Launch Menu
 
 Each time you load a ROM there is an option to open what is called the runcommand menu. This is accessed by pressing any key on the keyboard or js0 (button 0 on your joypad- it will vary depending on the gamepad used)
 
