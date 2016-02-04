@@ -194,7 +194,7 @@ A Raspberry Pi B/B+/2 is highly recommended. The GPU should have at least 256MB 
 
 change `console=tty1` to `console=tty3` 
 
-And add `loglevel=3 quiet logo.nologo` at the end.
+And add `quiet loglevel=3 logo.nologo` at the end.
 
 **make sure it is all on the same line!!!** 
 
