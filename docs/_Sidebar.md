@@ -3,9 +3,10 @@
 ## [Getting Started](First-Installation)
 
 * [**First Installation**](First-Installation)
-* [Setting Up WiFi](Wifi)
-* [Configuring Controllers (RetroArch)](RetroArch-Configuration)
+* [WiFi](Wifi)
+* [Controller Configuration (RetroArch)](RetroArch-Configuration)
 * [Transferring games (ROMs)](Transferring-Roms)
+* [Scraping Games](scraper)
 * [Getting the right MAME ROMs](Managing-ROMs)
 * [Runcommand Launch Menu](runcommand)
 * [Updating RetroPie](Updating-RetroPie)
@@ -80,7 +81,6 @@
 
 * [Custom Splash Screens](splashscreen)
 * [EmulationStation Themes](themes)
-* [Scraping Games](scraper)
 * [Configuration Editor](Configuration-Editor)
 * [Netplay](Netplay)
 * [Overclocking](Overclocking)
