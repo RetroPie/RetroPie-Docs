@@ -7,8 +7,8 @@
 * [Controller Configuration (RetroArch)](RetroArch-Configuration)
 * [Transferring games (ROMs)](Transferring-Roms)
 * [Scraping Games](scraper)
-* [Getting the right MAME ROMs](Managing-ROMs)
 * [Runcommand Launch Menu](runcommand)
+* [Getting the right MAME ROMs](Managing-ROMs)
 * [Updating RetroPie](Updating-RetroPie)
 * [Using SSH](ssh)
 
