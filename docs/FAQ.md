@@ -188,7 +188,7 @@ A Raspberry Pi B/B+/2 is highly recommended. The GPU should have at least 256MB 
 
 ### How do I hide the boot text?
 
-**note that you should be comfortable with editing files in Linux as any wrong edits on the following file can break your boot sequence requiring a reimage of your SD card**
+**NOTE that you should be comfortable with editing files in Linux as any wrong edits on the following file can break your boot sequence requiring a reimage of your SD card!**
 
 `sudo nano /boot/cmdline.txt`
 
@@ -199,3 +199,7 @@ And add `quiet loglevel=3 logo.nologo` at the end.
 **make sure it is all on the same line!!!** 
 
 The logo.nologo option is what turns off the raspberries on boot.
+
+You can also disable the rainbow splash at the beginning (not to be confused with the underpowered rainbow square the appears in the top right corner of your screen indicating you have an insufficient power supply)
+
+Add `disable_splash=1` in `/boot/config.txt`
