@@ -1,4 +1,7 @@
-Here come the frequently asked questions
+- [Why do some emulators not show up?](https://github.com/retropie/RetroPie-Setup/wiki/FAQ#why-do-some-emulators-not-show-up)
+- [Why Can't I Insert Coins in Arcade Emulators?](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#why-cant-i-insert-coins-in-arcade-emulators)
+- [Why can't I SSH as root anymore?](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#why-cant-i-ssh-as-root-anymore)
+- [Where did the desktop go?](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#where-did-the-desktop-go)
 
 ### Why do some emulators not show up?
 
@@ -82,50 +85,43 @@ And then you can access it from the terminal by typing in
 
 After installation your pi will boot into the desktop environment, you can change the behaviour to boot into emulationstation by selecting the autostart option for emulationstation from option 3 of the setup script, or you can set the autologin to console option from the boot options of the raspi-config menu.
 
-### Does anybody know if there's a way to edit the retroarch.cfg to give me the ability to exit an emulator by using the controller?
+### How do I change which buttons to press to exit an emulator with a controller?
 
-If you add
+Hotkeys are combinations of buttons you can press in order to access options such as saving, loading, and exiting games. The following defaults are set automatically the first time you set up your controller from emulationstation.
 
-    input_exit_emulator_btn = "btn#"
+#### Default joypad hotkeys:
+Hotkeys | Action | Code Example
+| :---: | :---: | :---: |
+Select | Hotkey | input_enable_hotkey_btn = "6"
+Select+Start | Exit | input_exit_emulator_btn = "7"
+Select+Right Shoulder | Save | input_save_state_btn = "5"
+Select+Left Shoulder | Load | input_load_state_btn = "4"
+Select+Right | Input State Slot Increase | input_state_slot_increase_btn = "h0right"
+Select+Left | Input State Slot Decrease | input_state_slot_decrease_btn = "h0left"
+Select+X | RGUI Menu | input_menu_toggle_btn = "3"
+Select+B | Reset | input_reset_btn = "0"
 
-to your retroarch.cfg (opt/retropie/configs/all) you will be able to exit the emulator on a button press. I know of no way to do this with multiple buttons. Here, btn# has to be replaced by your desired button number on your gamepad/joystick and the quote marks need to be removed. So the actual command might be:
+You can adapt the above code example and choose the button number to your desired button for each hotkey function in the retroarch.cfg files for most systems (at least all the emulators that are part of RetroArch) 
 
-    input_exit_emulator_btn = 9
+You can change it per controller with your autoconfig file here 
 
-(For the L3 button on your xbox controller, in this example)
+```
+/opt/retropie/configs/all/retroarch-joypads/yourgamepad.cfg
+```
 
-But this wasn't enough for my configuration to work. I also had to do these three commands:
+You can Hardcode it globally for all systems here:
 
-    sudo chown pi /opt/retropie/configs/all/retroarch.cfg
-    cd /opt/retropie/emulators/RetroArch/installdir/bin
-    sudo ./retroarch-joyconfig -j 0 >> /opt/retropie/configs/all/retroarch.cfg
+```
+/opt/retropie/configs/all/retroarch.cfg 
+```
 
-Which then directs you to input all the buttons required. Keep a note of the numbers of the buttons, in case you want to use a particular number for the input_exit_emulator_btn command. What then happens is this button configuration is stored in retroarch.cfg. Only then did the exit emulator button command work for me. Also, it's tempting to use button 8 (the xbox button) to exit emulators, but since it's not asked for/configured by the retroarch-joyconfig program it won't do anything if you add it to the config, I don't think. ymmv. Hope this has been helpful. This took me 3 hours, but I'm not very linux-minded.
+or set it by system
 
-The following comes from [here](http://www.raspberrypi.org/phpBB3/viewtopic.php?p=250689#p250689):
+```
+/opt/retropie/configs/SYSTEMNAME/retroarch.cfg
+```
 
-> To anyone trying to set up an exit button for RetroArch on an authentic controller, a solution has been found: http://forum.themaister.net/viewtopic.php?pid=1065#p1065
-
-> The idea is to set a key that must be held to use hot keys (such as select) with "input_enable_hotkey_btn = 1" and then an exit key (such as start), which will now only work if the enable hot key button is held down, with "input_exit_emulator_btn = 2".
-
-> Thanks to MungoBBQ for pointing this out!
-
-**Constraint**: This doesn't work for gpsp.
-
-I recently had to set this up myself on my pi, and wanted to add a few things:
-First, for a generic PS3 type controller the "PS" button in the center of the controller is button 12, so to exit a game with a simple button push, go to the bottom of your retroarch.cfg file and add the following line,
-           `input_exit_emulator_btn = 12`
-and when you press the PS button, your game will exit gracefully to the main Emulation Station screen.
-Second, the following line: 
-            `sudo ./retroarch-joyconfig -j 0 >> /opt/retropie/configs/all/retroarch.cfg`
-will automatically define the button settings for the first controller plugged in (Controller / joystick 0) and append the settings to your retroarch.cfg file. If you screw up during the mapping it's not a big deal, just remember that with the double greater than >> every time you run the command the settings will be appended to the pre-existing settings you had. Easiest way to do this is to use an editor like nano to delete the last few lines in retroarch.cfg that apply to your controller, then re-run the joyconfig script to remap.
-
-In order to get the xbox home button working as the exit emulator button, I added the following lines to the very end of the retroarch.cfg file, below the button mappings for each controller.
-        
-        input_enable_hotkey_btn = "10"
-        input_exit_emulator_btn = "10"
-
-The first line sets a hotkey button, which was mapped to the home button. The second line sets which button is used as the "exit emulation" hotkey, however, since we matched it to the home button as well, it automatically exits out back to Emulation Station.
+See [HERE](RetroArch-Configuration) for more information on custom controller configs
 
 ### Does Super Mario All Stars work?
 
