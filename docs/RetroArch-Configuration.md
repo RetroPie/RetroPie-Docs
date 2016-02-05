@@ -53,7 +53,7 @@ input_state_slot_decrease_axis = "-0"
 
 #### Hotkeys
 
-Hotkeys are combinations of buttons you can press in order to access options such as saving, loading, and exiting games.
+Hotkeys are combinations of buttons you can press in order to access options such as saving, loading, and exiting games. The following defaults are set automatically the first time you set up your controller from emulationstation (The numbers will vary depending the controller you use).
 
 #### Default joypad hotkeys:
 Hotkeys | Action | Code Example
