@@ -21,6 +21,13 @@ A great deal of information can be found in EmulationStation's README.md and THE
 * Or open a terminal with Ctrl+Alt+F1 through F6. Press Ctrl+Alt+F7 to return to X (though remember X will still be running and take up some RAM).
 
 
+### My ES_Sytems.cfg is being overwritten on updates!
+
+When you install themes from the retropie setup script they are installed to `/etc/emulationstation` and are overwritten when new themes are installed or RetroPie is updated.
+
+If you want to customise your es_systems.cfg or add themes without them being overwritten on udates you can add them to `/home/pi/.emulationstation` EmulationStation first checks in `/home/pi/.emulationstation` and then checks `/etc/emulationstation`. 
+
+
 ### EmulationStation isn't detecting my ROMs!
 
 * Are they in the right folders? *Remember, paths are case sensitive*. You can check what folders ES is using with: `nano /etc/emulationstation/es_systems.cfg`.
