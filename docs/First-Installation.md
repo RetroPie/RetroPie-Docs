@@ -1,15 +1,17 @@
 ![retropie-original-flat-outline](https://cloud.githubusercontent.com/assets/10035308/11428906/0300d80c-942e-11e5-8675-1e033d731d49.png)
 
+|Version|
+|---|
+|3.5|
 1. [Hardware](https://github.com/RetroPie/RetroPie-Setup/wiki/First-Installation#hardware-needed)
-2. [Installation](https://github.com/RetroPie/RetroPie-Setup/wiki/First-Installation#installation)
-3. [Controller Configuration](https://github.com/RetroPie/RetroPie-Setup/wiki/First-Installation#controller-configurations)
-4. [Expand File System](https://github.com/RetroPie/RetroPie-Setup/wiki/First-Installation#expand-file-system)
-5. [Configure Wifi](https://github.com/RetroPie/RetroPie-Setup/wiki/First-Installation#configuring-wifi)
-6. [Transferring Roms](https://github.com/RetroPie/RetroPie-Setup/wiki/First-Installation#transferring-roms)
+1. [Installation](https://github.com/RetroPie/RetroPie-Setup/wiki/First-Installation#installation)
+1. [Controller Configuration](https://github.com/RetroPie/RetroPie-Setup/wiki/First-Installation#controller-configurations)
+1. [Configure Wifi](https://github.com/RetroPie/RetroPie-Setup/wiki/First-Installation#configuring-wifi)
+1. [Transferring Roms](https://github.com/RetroPie/RetroPie-Setup/wiki/First-Installation#transferring-roms)
 
 Congratulations! You have discovered the wonderful world of RetroPie- your entire childhood is within reach! RetroPie is a combination of multiple projects including [RetroArch](http://www.libretro.com), [EmulationStation](http://www.emulationstation.org), and many others. 
 
-This page is for people just getting started on RetroPie 3.x. The easiest way to install RetroPie is the SD image which is a ready to go system built upon top of the Raspbian OS - this is the method described in the following guide. Alternatively, advanced users can install RetroPie [manually](https://github.com/RetroPie/RetroPie-Setup/wiki/Manual-Installation). 
+This page is for people just getting started on RetroPie 3.5. The easiest way to install RetroPie is the SD image which is a ready to go system built upon top of the Raspbian OS - this is the method described in the following guide. Alternatively, advanced users can install RetroPie [manually](https://github.com/RetroPie/RetroPie-Setup/wiki/Manual-Installation). 
 
 This guide will give you the very basics to get you up and running from a blank SD card to first boot into EmulationStation.
 
@@ -38,11 +40,11 @@ The simplest way to get most of these components is through a kit such as the [C
 
 ### SD Images
 
-There are currently two versions of RetroPie 3.x. There is one version for Raspberry Pi 1 (Model A, A+, B, B+) and there is a version for Raspberry Pi 2. Download the SD image for your version of Raspberry Pi:
+There are currently two versions of RetroPie 3.5. There is one version for Raspberry Pi 1 (Model A, A+, B, B+) and there is a version for Raspberry Pi 2. Download the SD image for your version of Raspberry Pi:
 
-**[Raspberry Pi 1 / Zero](https://github.com/RetroPie/RetroPie-Setup/releases/download/3.4/retropie-v3.4-rpi1.img.gz)**
+**[Raspberry Pi 1 / Zero](https://github.com/RetroPie/RetroPie-Setup/releases/download/3.5/retropie-v3.5-rpi1.img.gz)**
 
-**[Raspberry Pi 2](https://github.com/RetroPie/RetroPie-Setup/releases/download/3.4/retropie-v3.4-rpi2.img.gz)**
+**[Raspberry Pi 2](https://github.com/RetroPie/RetroPie-Setup/releases/download/3.5/retropie-v3.5-rpi2.img.gz)**
 
 (If these links become outdated see the downloads page [here](https://github.com/RetroPie/RetroPie-Setup/releases).)
 
@@ -58,7 +60,7 @@ Once you have downloaded your SD card image you need to extract it using a progr
 
 ### Install RetroPie Image on SD Card
 
-To install the RetroPie 3.x SD image on your MicroSD card. (You may need a MicroSD card reader to plug it into your computer) 
+To install the RetroPie 3.5 SD image on your MicroSD card. (You may need a MicroSD card reader to plug it into your computer) 
 
 1. For Windows you can use a program called [Win32DiskImager](http://sourceforge.net/projects/win32diskimager/) 
 2. For mac you can use [Apple Pi Baker](http://www.tweaking4all.com/hardware/raspberry-pi/macosx-apple-pi-baker/) 
@@ -70,7 +72,7 @@ If you're updating from a previous version of retropie see [**HERE**](https://gi
 
 ## Controller Configurations
 
-When you first boot up you will be welcomed with the following screen- unlike previous versions of retropie, this menu will configure your controls for both Emulationstation and RetroArch Emulators:
+When you first boot up you will be welcomed with the following screen- unlike some older versions of retropie, this menu will configure your controls for both Emulationstation and RetroArch Emulators:
 
 ![welcomescreen](https://cloud.githubusercontent.com/assets/10035308/9140482/cf42f25c-3cee-11e5-8f91-c1fc1c57175c.png)
 
@@ -142,38 +144,12 @@ input_state_slot_decrease_axis = "-0"
 | **Where are the systems?**|
 | :---: | 
 **When you first see EmulationStation you may wonder why you don't see systems like the SNES or Game Boy- worry not- they are installed on the system, roms just need to be added to their respective rom folders before they will become visible. Transferring roms are described in the following steps.**|
-
-## Expand File System
-
-Once your controller is set up you'll need to make a few configurations before you can transfer your ROMs over go to the RetroPie Menu:
-
-![retropiemenu](https://cloud.githubusercontent.com/assets/10035308/9140677/2beba548-3cf0-11e5-8254-d8329b0f35b8.png)
-
-You'll want to select raspberry Pi configuration tool raspi-config (This allows your SD card to use all its storage rather than the small partition it was released with.)
-
-![retropiemenuraspiconfig](https://cloud.githubusercontent.com/assets/10035308/9140687/3be5a282-3cf0-11e5-9f48-58d23552bcda.png)
-
-It will open up into the following, if using a gamepad **Press right on the dpad until select is highlighted** and choose select:
-
-![raspi-config](https://cloud.githubusercontent.com/assets/10035308/9140867/856bb85a-3cf1-11e5-8697-04f60ecf8563.png)
-
-You will get this message:
-
-![raspi-config2](https://cloud.githubusercontent.com/assets/10035308/9140889/ad8879c2-3cf1-11e5-8d77-7c81af7dba16.png)
-
-Press right and choose finish
-
-![raspi-config3](https://cloud.githubusercontent.com/assets/10035308/9140900/dcfdf556-3cf1-11e5-978c-e5d620ab98fc.png)
-
-And then reboot your raspberry pi
-
-![raspi-config4](https://cloud.githubusercontent.com/assets/10035308/9140912/fc047e3e-3cf1-11e5-9463-f574e0efc38a.png)
-
+|![firstboot](https://cloud.githubusercontent.com/assets/10035308/12865816/d4c76dfa-cc74-11e5-9a1f-922a6d830d49.png)|
 ## Configuring Wifi
 
 If you wish to use a wifi dongle to transfer roms over the network rather than a USB stick or Ethernet cable you'll need to setup your wifi- which can also be done from the Retropie menu in emulationstation:
 
-![retropiemenuwifi](https://cloud.githubusercontent.com/assets/10035308/9141387/7ed23ec0-3cf5-11e5-9944-a8f7870cc6c0.png)
+![wifi](https://cloud.githubusercontent.com/assets/10035308/12865761/adc9f5c6-cc72-11e5-9b02-9e98b90bbd98.png)
 
 It will open into this menu:
 
@@ -200,7 +176,7 @@ Due to the nature/complexity of Copyright/Intellectual Property Rights Law, whic
 There are three main methods of transferring roms: 
 
 ### USB
- * (ensure that your USB is formatted to FAT32)
+ * (ensure that your USB is formatted to FAT32 or NTFS)
  * first create a folder called `retropie` on your USB stick
  * plug it into the pi and wait for it to finish blinking
  * pull the USB out and plug it into a computer
@@ -220,22 +196,24 @@ alt="Configuration Video" width="300" height="190" border="10" /></a>
 * Wireless (needs wifi dongle)
 There are many FTP programs out there, for windows many people use [WinSCP](https://winscp.net/eng/download.php) for mac you can use something like [Cyberduck](https://cyberduck.io/?l=en)
 
-![ftp](https://cloud.githubusercontent.com/assets/10035308/9144892/68994618-3d0d-11e5-8db0-2991f9068115.png)
+![winscp](https://cloud.githubusercontent.com/assets/10035308/12865832/7d9afb68-cc75-11e5-81b2-4529991e1821.png)
 
-You can also log in as root if you wish to change more files than just the roms, but you first need to enable the root password by typing `sudo passwd root` into the terminal and choosing a new root password.
+You can also log in as root if you wish to change more files than just the roms, but you first need to enable the root password which is explained [here](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#why-cant-i-ssh-as-root-anymore)
 
 ### Samba-Shares (needs an active internet connection)
 
-- if on windows type `\\RETROPIE` into the computer folder. You can also replace RETROPIE with your Raspberry Pi's IP address
+- if on windows type `\\retropie` into the computer folder. You can also replace `retropie` with your Raspberry Pi's IP address
 
-![samba](https://cloud.githubusercontent.com/assets/10035308/9141308/edee8b52-3cf4-11e5-8bf3-73f8c27f99fb.png)
+![samba](https://cloud.githubusercontent.com/assets/10035308/12865893/d2eab264-cc77-11e5-9ec6-003e13322a5a.png)
 
 - if on MAC OS X open finder, select "Go" menu and "Connect to Server". Type `smb://retropie` and hit "Connect".
 
 ## PLAY!
 
-After you've added your roms you can refresh emulationstation by pressing F4, or choosing quit from the start menu, or rebooting your pi with `sudo reboot`. 
+After you've added your roms you need to restart emulationstation in order for them to show up. You can restart emulationstation from the start menu, or by rebooting your pi with `sudo reboot`. 
 
-HAVE FUN!
+- see the rest of the [wiki](https://github.com/RetroPie/RetroPie-Setup/wiki) for more detailed information on individual emulators, advanced settings etc. If you still can't figure it out, the RetroPie community is very helpful on the [forum](http://blog.petrockblock.com/forums/forum/retropie-project-forum/). 
 
-- see the rest of the [wiki](https://github.com/RetroPie/RetroPie-Setup/wiki) for more detailed info on individual emulators, advanced settings etc. If you still can't figure it out, the RetroPie community is very helpful on the [forum](http://blog.petrockblock.com/forums/forum/retropie-project-forum/).
+- **The RetroPie Project is primarily maintained by a few developers who develop the project in their free time. If you have found the RetroPie project useful please consider donating to the project [here.](http://blog.petrockblock.com/donations-2/) We will always release RetroPie for free, but unfortunately our servers still cost money. As you become more familiar with RetroPie, pay it forward by helping others on the forum. The RetroPie Project is what it is today because of the many contributions of the community.**
+
+THANK YOU!
