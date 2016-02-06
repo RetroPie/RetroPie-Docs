@@ -6,15 +6,6 @@ _The Apple Macintosh, later renamed the Macintosh 128K, was a personal computer 
 
 ## Emulator: [BasiliskII](http://basilisk.cebix.net/)
 
-Prerequisites:
-Make sure you have the latest version of the retropie-setup script and binaries/source build of basilisk.
-
-Make sure you have the latest emulationstation config for it also by running
-
-```
-sudo ./retropie_packages basilisk configure
-```
-
 ## ROMS
 Accepted File Extensions: **.img .rom  (.dsk?, .sit?)**
 
