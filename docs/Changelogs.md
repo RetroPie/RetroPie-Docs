@@ -2,19 +2,6 @@
 
 This page is a list of all of the changelogs for each version of RetroPie. For a complete list of all commits to the source code see [here:](https://github.com/petrockblog/RetroPie-Setup/commits/master)  
 
-
-### Version 3.5: (February 5, 2016)
-
-- Added new experimental modules, Lӧve 2D Game Engine, Colecovision (CoolCV).
-- Debian usbmount package fixed up for systemd udev compatibility, making the USB ROM service work properly again without being killed after 30 seconds. Also added ntfs support by default.
-- Added an arcade rom folder option where all arcade games can be placed. 
-Improvements to EmulationStation (Fix crash on rom delete, direct launch, symlink support, and other bug fixes).
-- Improvements to the Runcommand Launch Menu: Cleaner dialog on launch, ability to show game artwork on launch, ability to disable joystick support as well as the ability to disable the entire runcommand launch menu.
-- PS3 Controller improvements - Add multiple gasia and shanwan controller support.
-- Updated lr-mgba emulator binaries (new upstream release of mgba 0.4.0)
-- Improvements on pre-built image - disabled screen blanking, quieter boot, and filesystem automatically expanded on first boot.
-- Various other bug fixes.
-
 ### Version 3.4: (January 19, 2016)
 
 Mostly fixes and improvements rather than new stuff this time folks. There were some problems with our RetroArch configuration defaults in RetroPie 3.3 which should be sorted now, and we have fixed up a few things that didn’t work correctly with Raspbian Jessie. We also have added early support for using the RetroPie-Setup script on a X86/X11 desktop setup, as well as some basic support for building EmulationStation & RetroArch + cores on the ODroid-C1. For more information regarding installation on x86 see https://github.com/RetroPie/RetroPie-Setup/wiki/RetroPie-Ubuntu-15.10-x86-Flavor.
