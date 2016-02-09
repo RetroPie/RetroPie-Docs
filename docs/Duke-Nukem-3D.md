@@ -6,6 +6,14 @@ _Duke Nukem 3D is a First Person Shooter game developed by 3D Realms in 1996._
 
 **Note** mouse aiming does not work in this port unfortunately.
 
+## ROMs
+
+Shareware versions of **duke3d.grp** and **duke.rts** are provided via symlinks in
+```
+/home/pi/RetroPie/roms/ports/duke3d
+```
+The shareware files are physically located in a different directory, but if you just replace the links in the folder above with your full version game data, it should work.
+
 ## Controls:
 
 Key | Action
