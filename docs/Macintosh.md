@@ -29,6 +29,11 @@ For more details see the forum post at http://blog.petrockblock.com/forums/topic
 
 There is also detailed information along with roms and a startup disk image at http://www.redundantrobot.com/sheepshaver-tutorial/
 
+If your **disk.img** file (from MacStartup.img) only has a few MB of free space on it while running the emulator, you must create a new larger one if you want more free space. Since the disk setup GUI is not included in RetroPie's version of Basilisk, you must install Basilisk on your PC to create a larger image and copy your disk.img file to it. Similar instructions can be found at
+http://www.emaculation.com/forum/viewtopic.php?f=6&t=8068
+
+Once you have a working disk image large enough to install other software on, you can access other install disk images from the "Unix" icon on the Mac desktop which can access the file system of the Raspberry Pi.
+
 ## Controls
 
 a keyboard and a mouse
