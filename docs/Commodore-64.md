@@ -52,7 +52,7 @@ CUSTOM MAPPING
 - Press escape to exit the menu and return to your game
 ```
 ### Advanced Configuration
-Once you've started and exited the VICE emulator at least once it will create a configuration file in /home/pi/.vice/ which is a symbolic link to 
+Once you've started and exited the VICE emulator at least once it will create a configuration file called "sdl-vicerc" in /home/pi/.vice/ which is a symbolic link to 
 ```shell
 /opt/retropie/configs/c64/ 
 ```
