@@ -93,3 +93,11 @@ https://wiki.ubuntu.com/Plymouth
 ### Section 3.6: No audio
 
 Open Ubuntu system settings menu and select right audio output device.  
+
+### Section 3.7: My NUC or Intel Baytrail/Braswell powered device hangs
+
+The default kernel 4.1 of Ubuntu 14.10 tends to hang. It is a know bug:
+https://bugs.freedesktop.org/show_bug.cgi?id=91629
+
+Update to higher kernel version solves this problem:
+http://sourcedigit.com/18333-how-to-install-linux-kernel-4-3-3-on-ubuntu-15-10-ubuntu-15-04/
