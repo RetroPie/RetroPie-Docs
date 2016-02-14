@@ -130,3 +130,32 @@ button.7=Btn_Start
 axis.0=Axis_X
 axis.1=Axis_Y
 ```
+
+**PS4 Controller:**
+
+```
+[emulator]
+mapping_name = Sony Computer Entertainment Wireless Controller
+btn_escape = 316
+
+[dreamcast]
+btn_a = 305
+btn_b = 306
+btn_x = 304
+btn_y = 307
+btn_start = 313
+axis_x = 0
+axis_y = 1
+axis_trigger_left = 3
+axis_trigger_right = 4
+
+[compat]
+axis_dpad1_x = 16
+axis_dpad1_y = 17
+axis_x_inverted = no
+axis_y_inverted = no
+axis_trigger_left_inverted = no
+axis_trigger_right_inverted = no
+axis_dpad1_y_inverted = no
+axis_dpad1_x_inverted = no
+```
