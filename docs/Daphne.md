@@ -111,6 +111,17 @@ KEY_SCREENSHOT = 293 0 0
 KEY_QUIT = 27 113 17
 END
 ```
+
+### Command Parametres
+
+Example Dragon's Lair Commands file in
+
+`/home/pi/RetroPie/roms/daphne/lair.daphne/lair.commands`
+
+```
+-nocrc -noissues -nolog -noserversend -latency 950 -x 640 -y 480 -bank 1 00110111 -bank 0 10011000
+```
+
 ### Troubleshooting
 
 If you have issues with black screen, try deleting the .dat file as it is generated the first time you parse the video files. If you transferred the .dat file from another system it may not work, so just leave the .dat file out.
