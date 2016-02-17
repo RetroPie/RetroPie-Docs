@@ -31,6 +31,8 @@ For OS X users, [here is a tutorial for mounting the filesystem](http://osxdaily
 18. Format and prepare an SD card as described in the [NOOBS Setup Guide][nsg]. RetroPie should be available as an option in the OS list next to Raspbian.
 19. _Profit!_
 
+Optionally: 20. If the boot process is halting at the resizing of the ext4 partition, delete "/etc/profile.d/01-expand.sh" on the ext4 partition. NOOBS already resized the partition.
+
 [retropiedownload]: http://blog.petrockblock.com/retropie/retropie-downloads/
 [flashsd]: http://elinux.org/RPi_Easy_SD_Card_Setup
 [noobsdownload]: http://www.raspberrypi.org/downloads/
