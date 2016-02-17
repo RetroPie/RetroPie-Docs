@@ -26,6 +26,7 @@
 * [CoCo](Coco)
 * [Colecovision](Colecovision)
 * [Commodore 64](Commodore-64)
+* [Daphne](Daphne)
 * [Dragon 32](Dragon)
 * [Dreamcast](Dreamcast)
 * [FinalBurn Alpha](FinalBurn-Alpha)
