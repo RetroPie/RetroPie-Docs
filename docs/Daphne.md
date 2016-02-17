@@ -29,7 +29,7 @@ roms
 |    |   and "dle21" tells daphne to use that game engine)
 |    |
 |    |-- dle21.daphne     
-|    |    |-- dle21.command  (Optional extra command-
+|    |    |-- dle21.commands  (Optional extra command-
 |    |    |                   line params!)
 |    |    |-- dle21.txt      (Framefile)
 |    |    |-- lair.m2v
@@ -37,7 +37,7 @@ roms
 |    |
 |    |                (All roms go into this roms folder)
 |    +-- roms
-|         +-- dle21
+|         +-- dle21.zip
 ```
 
 ## Controls
