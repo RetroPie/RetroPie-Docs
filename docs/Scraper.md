@@ -1,8 +1,7 @@
 # Steven Selph's Scraper
 
-Steven Selph's scraper is probably the simplest way of scraping roms (provided that the systems are supported.) It can be installed and used from the experimental menu of the setup script
+Steven Selph's scraper is probably the simplest way of scraping roms (provided that the systems are supported.) It can be installed and used from the setup menu (menu 3)
 
-![experimental_menu](https://cloud.githubusercontent.com/assets/10035308/10713166/d60f6200-7a6f-11e5-8036-6c49555f9f64.png)
 ![scraper](https://cloud.githubusercontent.com/assets/10035308/10713172/244622e2-7a70-11e5-95d8-fcf211256273.png)
 
 - **Scrape All Systems:** This will scrape all the systems the scraper supports
