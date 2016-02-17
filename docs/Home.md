@@ -33,6 +33,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [CoCo](Coco) [(XRoar)](http://www.6809.org.uk/xroar/)
 * [Colecovision](Colecovision)
 * [Commodore 64](Commodore-64) [(Vice)](http://vice-emu.sourceforge.net/)
+* [Daphne](Daphne) [(Daphne)](http://www.daphne-emu.com/site3/index_hi.php)
 * [Dragon 32](Dragon) [(XRoar)](http://www.6809.org.uk/xroar/)
 * [Dreamcast](Dreamcast) [(Reicast)](https://github.com/reicast/reicast-emulator) 
 * [FinalBurn Alpha](FinalBurn-Alpha) [(PiFBA)](https://github.com/RetroPie/pifba), [(lr-fba)](https://github.com/libretro/fba-libretro), [(lr-fba-next)](https://github.com/libretro/libretro-fba.git)
