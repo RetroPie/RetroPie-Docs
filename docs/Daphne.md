@@ -1,4 +1,5 @@
-
+***
+![daphne_logo](https://cloud.githubusercontent.com/assets/10035308/13100363/9480ba8e-d4f9-11e5-974a-a514e3008837.png)
 ***
 Laserdiscs were predecessors to the DVD. The first laserdisc game was released in 1982. Laserdisc games function much like interactive fiction where you choose your own story and the video adapts to the path you choose to take.
 
