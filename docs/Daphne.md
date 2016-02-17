@@ -45,7 +45,7 @@ roms
 Controls are located in 
 
 ```
-/opt/retropie/configs/daphne/dainput.ini
+/opt/retropie/configs/daphne/dapinput.ini
 ```
 
 **Default Keyboard Controls:**
@@ -71,7 +71,7 @@ Controls are located in
 |F12|Take screenshot (VLDP only)|
 
 
-Default **dainput.ini**
+Default **dapinput.ini**
 ```
 # Daphne cutom keyboard and joystick mapping
 #
