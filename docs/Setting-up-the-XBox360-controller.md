@@ -332,8 +332,11 @@ This is what makes the Xbox 360 controller the best for this project.
 3. **File Permissions:** The very last step is to make the .cfg files executable. So run these commands, changing them to reflect the location you placed the .cfg files.
 
         sudo chmod 754 /usr/local/xboxdrv_player1.cfg
+        sudo chown pi:pi /usr/local/xboxdrv_player1.cfg
         sudo chmod 754 /usr/local/xboxdrv_player2.cfg
+        sudo chown pi:pi /usr/local/xboxdrv_player2.cfg
         sudo chmod 754 /usr/local/mouse.cfg
+        sudo chown pi:pi /usr/local/mouse.cfg
         sudo reboot
 
 
