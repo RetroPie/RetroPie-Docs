@@ -45,7 +45,7 @@ roms
 Controls are located in 
 
 ```
-/opt/retropie/configs/daphne
+/opt/retropie/configs/daphne/dainput.ini
 ```
 
 **Default Keyboard Controls:**
@@ -70,6 +70,47 @@ Controls are located in
 |F3|Reset/reboot game|
 |F12|Take screenshot (VLDP only)|
 
+
+Default **dainput.ini**
+```
+# Daphne cutom keyboard and joystick mapping
+#
+# Each input is mapped to 2 keyboard keys and one joystick button.
+# A joystick's first analog stick is also automatically mapped.
+#
+# The first two numbers are SDL keyboard codes (or 0 for "none")
+# Find keyboard codes here:
+# http://www.daphne-emu.com/mediawiki/index.php/KeyList
+#
+# The third number is the joystick button code (or 0 for "none")
+# Since 0 is reserved for special meaning, joystick button 0 is identified
+# as 1 here.  Button 1 is identified as 2, and so on.
+# 
+# Find the button you want to map by running:
+# jstest /dev/input/js0
+
+[KEYBOARD]
+KEY_UP = 273 114 5
+KEY_DOWN = 274 102 7
+KEY_LEFT = 276 100 8
+KEY_RIGHT = 275 103 6
+KEY_BUTTON1 = 306 97 14
+KEY_BUTTON2 = 308 115 15
+KEY_BUTTON3 = 32 113 16
+KEY_START1 = 49 0 4
+KEY_START2 = 50 0 0
+KEY_COIN1 = 53 0 1
+KEY_COIN2 = 54 0 0
+KEY_SKILL1 = 304 119 0
+KEY_SKILL2 = 122 105 0
+KEY_SKILL3 = 120 107 0
+KEY_SERVICE = 57 0 0
+KEY_TEST = 283 0 0
+KEY_RESET = 284 0 0
+KEY_SCREENSHOT = 293 0 0
+KEY_QUIT = 27 113 17
+END
+```
 ### Troubleshooting
 
 If you have issues with black screen, try deleting the .dat file as it is generated the first time you parse the video files. If you transferred the .dat file from another system it may not work, so just leave the .dat file out.
