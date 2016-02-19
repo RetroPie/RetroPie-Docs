@@ -127,3 +127,5 @@ See [here](http://www.daphne-emu.com/mediawiki/index.php/CmdLine) for more cmdli
 ### Troubleshooting
 
 If you have issues with black screen, try deleting the .dat file as it is generated the first time you parse the video files. If you transferred the .dat file from another system it may not work, so just leave the .dat file out.
+
+It is also case sensitive so if it's not working try making the extensions in the .daphne file lowercase.
