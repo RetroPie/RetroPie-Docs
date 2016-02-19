@@ -122,6 +122,8 @@ Example Dragon's Lair Commands file in
 -nocrc -noissues -nolog -noserversend -latency 950 -x 640 -y 480 -bank 1 00110111 -bank 0 10011000
 ```
 
+See [here](http://www.daphne-emu.com/mediawiki/index.php/CmdLine) for more cmdline parameters.
+
 ### Troubleshooting
 
 If you have issues with black screen, try deleting the .dat file as it is generated the first time you parse the video files. If you transferred the .dat file from another system it may not work, so just leave the .dat file out.
