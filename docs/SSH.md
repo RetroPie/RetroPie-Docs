@@ -16,13 +16,7 @@ username: **pi**
 
 password: **raspberry**
 
-### User Root
-
-If you wish to log in as user root you first need to set the root password from the terminal with
-
-`sudo passwd root`
-
-and type your new root password.
+See [here](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#why-cant-i-ssh-as-root-anymore) if you wish to log in as root.
 
 ## Some common terminal commands:
 
