@@ -12,6 +12,6 @@ cheevos_enable = true
 
 Supported Systems:
 
-Game Boy / Advance / Color (VBA-M) 
-NES (lr-QuickNES - found in 'Experimental' menu)
-SNES (lr-Snes9x - installed by default)
+Game Boy / Advance / Color (VBA-M)  
+NES (lr-QuickNES - found in 'Experimental' menu)  
+SNES (lr-Snes9x - installed by default)  
