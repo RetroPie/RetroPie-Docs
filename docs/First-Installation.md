@@ -183,7 +183,7 @@ There are three main methods of transferring roms:
  * add the roms to their respective folders (in the `retropie/roms` folder)
  * plug it back into the raspberry pi
  * wait for it to finish blinking
- * refresh emulationstation by pressing F4, or choosing quit from the start menu
+ * refresh emulationstation by choosing restart emulationstation from the start menu
 
 see this video for reference:
 
