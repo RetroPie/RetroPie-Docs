@@ -9,3 +9,9 @@ cheevos_username = yourusername
 cheevos_password = yourpassword
 cheevos_enable = true
 ```
+
+Supported Systems:
+
+Game Boy / Advance / Color (VBA-M) 
+NES (lr-QuickNES - found in 'Experimental' menu)
+SNES (lr-Snes9x - installed by default)
