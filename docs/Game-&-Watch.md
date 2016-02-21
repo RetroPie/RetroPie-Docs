@@ -1,6 +1,6 @@
 ***
 
-![Game and Watch](http://i.imgur.com/Ueqt6Sx.jpg)
+![game_and_watch_banner](https://cloud.githubusercontent.com/assets/10035308/13205492/9b6db396-d8a6-11e5-8a74-51b2a74a0f35.png)
 
 ***
 _Game & Watch is a line of handheld electronic games produced by Nintendo from 1980 to 1991._
