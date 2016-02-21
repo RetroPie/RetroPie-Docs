@@ -8,7 +8,7 @@ _The Amstrad CPC (short for Colour Personal Computer) is a series of 8-bit home 
 
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
-| [lr-caprice32](https://github.com/libretro/libretro-cap32.git), [CapriceRPI](https://github.com/KaosOverride/CapriceRPI.git) | amstradcpc  | .dsk .cpc | None | /opt/retropie/configs/armstradcpc/retroarch.cfg |
+| [lr-caprice32](https://github.com/libretro/libretro-cap32.git), [CapriceRPI](https://github.com/KaosOverride/CapriceRPI.git) | amstradcpc  | .dsk .cpc | none | /opt/retropie/configs/armstradcpc/retroarch.cfg |
 
 ## Emulators: [CapriceRPI](https://github.com/KaosOverride/CapriceRPI.git), [lr-caprice32](https://github.com/libretro/libretro-cap32.git)
 
