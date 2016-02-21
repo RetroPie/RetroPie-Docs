@@ -4,6 +4,10 @@
 _The Apple Macintosh, later renamed the Macintosh 128K, was a personal computer released in 1984._
 ***
 
+| Emulator | Rom Folder | Extension | BIOS |  Controller Config |
+| :---: | :---: | :---: | :---: | :---: |
+| [BasiliskII](http://basilisk.cebix.net/) | macintosh  | .img .rom | mac.rom, disk.img | hardcoded |
+
 ## Emulator: [BasiliskII](http://basilisk.cebix.net/)
 
 ## ROMS
