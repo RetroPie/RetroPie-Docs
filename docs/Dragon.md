@@ -4,6 +4,11 @@
 _The Dragon 32 and Dragon 64 were home computers originally released in 1980. The 32 and 64 refer to the kilobytes of RAM._
 
 ***
+
+| Emulator | Rom Folder | Extension | BIOS |  Controller Config |
+| :---: | :---: | :---: | :---: | :---: |
+| [XRoar](http://www.6809.org.uk/xroar/) | coco  | .cas .wav .bas .asc .dmk .jvc .os9 .dsk .vdk .rom .ccc .sna | d32.rom | hardcoded |
+
 ## Emulator: [XRoar](http://www.6809.org.uk/xroar/)
 
 ## ROMS
