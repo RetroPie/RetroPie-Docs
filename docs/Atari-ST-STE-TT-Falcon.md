@@ -3,6 +3,11 @@
 ***
 _The Atari ST, STE, TT, and Falcon were a series of personal computers released by Atari starting in 1985._
 ***
+
+| Emulator | Rom Folder | Extension | BIOS |  Controller Config |
+| :---: | :---: | :---: | :---: | :---: |
+| [Hatari](http://hatari.tuxfamily.org/) | atarist  | .st .stx .img .rom .raw .ipf .ctr | none | hardcoded |
+
 ## Emulator: [Hatari](http://hatari.tuxfamily.org/)
 
 Much of the emulation for later models, such as the Falcon, is still experimental so some games may be hit and miss.
@@ -13,7 +18,7 @@ Accepted File Extensions: **.st .stx .img .rom .raw .ipf .ctr**
 
 Place your Atari ST/STE/TT/Falcon ROMS in
 ```
-/home/pi/RetroPie/roms/atariststefalcon
+/home/pi/RetroPie/roms/atarist
 ```
 ## Controls
 
