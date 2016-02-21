@@ -42,4 +42,8 @@ alt="RetroPie Adventure Game Studio" width="300" height="190" border="10" /></a>
 
 AGS requires a mouse attached to the Raspberry Pi
 
-
+## Useful Links
+http://www.adventuregamestudio.co.uk/  
+https://github.com/adventuregamestudio/ags/tree/master/debian  
+https://en.wikipedia.org/wiki/Adventure_Game_Studio  
+https://wiki.ubuntuusers.de/Adventure_Game_Studio/
