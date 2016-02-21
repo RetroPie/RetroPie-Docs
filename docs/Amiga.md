@@ -6,6 +6,9 @@ _The Amiga was a family of personal computers released by Commodore in the 1980'
 
 ***
 
+| Emulator | Rom Folder | Extension | BIOS |  Controller Config |
+| :---: | :---: | :---: | :---: | :---: |
+| [UAE4ALL2](https://github.com/RetroPie/uae4all2), [UAE4ARM](https://github.com/Chips-fr/uae4arm-rpi/) | amiga  | .adf | kick13.rom, kick20.rom, kick31.rom | Hardcoded |
 
 ## Emulators: [UAE4ALL2](https://github.com/RetroPie/uae4all2), [UAE4ARM](https://github.com/Chips-fr/uae4arm-rpi/)
 
