@@ -3,6 +3,11 @@
 ***
 _The Tandy Colour Computer series were home computers originally released by the Tandy Corporation in 1980._
 ***
+
+| Emulator | Rom Folder | Extension | BIOS |  Controller Config |
+| :---: | :---: | :---: | :---: | :---: |
+| [XRoar](http://www.6809.org.uk/xroar/) | coco  | .cas .wav .bas .asc .dmk .jvc .os9 .dsk .vdk .rom .ccc .sna | bas13.rom | hardcoded |
+
 ## Emulator: [XRoar](http://www.6809.org.uk/xroar/)
 
 ## ROMS
