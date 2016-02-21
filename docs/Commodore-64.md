@@ -3,6 +3,11 @@
 ***
 _The Commodore 64 is an 8 Bit personal computer introduced in 1982 by Commodore International. This model holds the world record for the highest-selling single computer model of all time._
 ***
+
+| Emulator | Rom Folder | Extension | BIOS |  Controller Config |
+| :---: | :---: | :---: | :---: | :---: |
+| [VICE](http://vice-emu.sourceforge.net/) | c64 | .crt .d64 .g64 .t64 .tap .x64 | none | /opt/retropie/configs/c64/sdl-vicerc  |
+
 ## Emulator: [VICE](http://vice-emu.sourceforge.net/)
 
 ## ROMS
