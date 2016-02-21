@@ -67,3 +67,5 @@ alt="Testing joypad in RetroPie" width="300" height="190" border="10" /></a>
 - Some games do not work properly if more than one floppy drive is in use. If your game crashes or fails to load try to use just DF0 (change disc image during game if required) and not use DF1, DF2 and DF3.
 
 - For Raspberry Pi 1 users - make sure you overclock your device. Amiga emulation works much faster when overclocked to maximum. Without overclocking some games do not run at full speed.
+
+- How to on launching games directly from emulationstation: http://blog.petrockblock.com/forums/topic/launch-amiga-games-from-retropie-menu/
