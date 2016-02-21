@@ -3,6 +3,11 @@
 ***
 _The Sega Dreamcast is a 6th generation home video game console released by Sega in 1998. It is notably the last console that Sega produced._
 ***
+
+| Emulator | Rom Folder | Extension | BIOS |  Controller Config |
+| :---: | :---: | :---: | :---: | :---: |
+| [Reicast](https://github.com/reicast/reicast-emulator) | dreamcast  | .cdi .gdi | dc_boot.bin, dc_flash.bin | /opt/retropie/configs/dreamcast/mappings |
+
 ## Emulator: [Reicast](https://github.com/reicast/reicast-emulator) 
 
 It can be very laggy and buggy, but some games work great (see compatibility list below). Pi 2 is required.  
