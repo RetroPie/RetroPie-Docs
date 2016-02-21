@@ -2,11 +2,16 @@
 ![gba](https://cloud.githubusercontent.com/assets/10035308/12191989/d423d454-b597-11e5-866f-8aaeec0b88b9.png)
 ***
 _The Game Boy Advance is a 32 bit handheld video game console released by Nintendo in 2001._
-
 ***
-## Emulators: [gpSP](https://github.com/DPRCZ/gpsp), [lr-gpSP](https://github.com/libretro/gpsp), [lr-vba-next](https://github.com/libretro/vba-next), [lr-mgba](https://github.com/libretro/mgba)
 
-GPSP has separate controls than lr-gpSP, lr-vba-next, and lr-mgba. lr-gpSP, lr-vba-next, and lr-mgba all utilise RetroArch configurations (see below under controls)
+| Emulator | Rom Folder | Extension | BIOS |  Controller Config |
+| :---: | :---: | :---: | :---: | :---: |
+| [lr-gpSP](https://github.com/libretro/gpsp) | gba  | .gba | gba_bios.bin | /opt/retropie/configs/gba/retroarch.cfg |
+| [lr-vba-next](https://github.com/libretro/vba-next) | gba  | .gba | gba_bios.bin | /opt/retropie/configs/gba/retroarch.cfg |
+| [lr-mgba](https://github.com/libretro/mgba) | gba  | .gba | gba_bios.bin | /opt/retropie/configs/gba/retroarch.cfg |
+| [gpSP](https://github.com/DPRCZ/gpsp) | gba  | .gba | gba_bios.bin | /opt/retropie/emulators/gpsp/gpsp.cfg |
+
+## Emulators: [gpSP](https://github.com/DPRCZ/gpsp), [lr-gpSP](https://github.com/libretro/gpsp), [lr-vba-next](https://github.com/libretro/vba-next), [lr-mgba](https://github.com/libretro/mgba)
 
 ## ROMS
 Accepted File Extensions: **.gba**
