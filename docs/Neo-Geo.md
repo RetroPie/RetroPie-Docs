@@ -4,7 +4,7 @@
 _The Neo Geo is a cartridge-based arcade system board and home video game console released by SNK in 1990._
 ***
 
-| Emulator | Rom Folder | Extension(s) | BIOS |  Controller Config |
+| Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
 | [lr-fba-next](https://github.com/libretro/libretro-fba) | arcade **or** fba **or** neogeo  | .zip | neogeo.zip | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/fba/retroarch.cfg, **or** /opt/retropie/configs/neogeo/retroarch.cfg |
 | [lr-fba](https://github.com/libretro/fba-libretro) | arcade **or** fba **or** neogeo  | .zip | neogeo.zip | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/fba/retroarch.cfg, **or** /opt/retropie/configs/neogeo/retroarch.cfg |
