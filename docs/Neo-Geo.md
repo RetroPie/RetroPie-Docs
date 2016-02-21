@@ -6,7 +6,10 @@ _The Neo Geo is a cartridge-based arcade system board and home video game consol
 
 | Emulator | Rom Folder | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: |
-| [GnGeo-Pi](https://github.com/ymartel06/GnGeo-Pi) | neogeo | neogeo.zip | /home/pi/.gngeo/gngeorc |
+| [lr-fba-next](https://github.com/libretro/libretro-fba) | arcade **or** fba **or** neogeo  | neogeo.zip | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/fba/retroarch.cfg, **or** /opt/retropie/configs/neogeo/retroarch.cfg |
+| [lr-fba](https://github.com/libretro/fba-libretro) | arcade **or** fba **or** neogeo  | neogeo.zip | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/fba/retroarch.cfg, **or** /opt/retropie/configs/neogeo/retroarch.cfg |
+| [PiFBA](https://github.com/RetroPie/pifba) | arcade **or** fba **or** neogeo  | neogeo.zip | /opt/retropie/emulators/pifba/fba2x.cfg **or** /opt/retropie/configs/fba/fba2x.cfg |
+| [GnGeo-Pi](https://github.com/ymartel06/GnGeo-Pi) | arcade **or** neogeo | neogeo.zip | /opt/retropie/configs/neogeo/gngeorc |
 
 ## Emulators: [GnGeo-Pi](https://github.com/ymartel06/GnGeo-Pi), [PiFBA](https://github.com/RetroPie/pifba), [lr-fba](https://github.com/libretro/fba-libretro), [lr-fba-next](https://github.com/libretro/libretro-fba)
 
@@ -23,6 +26,9 @@ Place your Neo Geo ROMs in
 ```
 /home/pi/RetroPie/roms/neogeo
 ```
+
+#### Gngeo-pi
+
 As a lovely caveat if you're using gngeopi, the ROMs you have must match the file in gngeo_data.zip located at:
 ```
 /opt/retropie/emulators/gngeopi/share/gngeo
