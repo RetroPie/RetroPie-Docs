@@ -30,6 +30,7 @@
 * [Dragon 32](Dragon)
 * [Dreamcast](Dreamcast)
 * [FinalBurn Alpha](FinalBurn-Alpha)
+* [Game & Watch](Game-&-Watch)
 * [Game Gear](Game-Gear)
 * [Game Boy](Game-Boy)
 * [Game Boy Color](Game-Boy-Color)
