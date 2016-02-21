@@ -33,7 +33,7 @@ GnGeo-Pi based on **0.138** romsets (May 2010)
 
 Total Games Emulated: 203
 
-### [**GnGeo-Pi COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1A_a_9t14uzDUMrrO0RgLDwiVUiycmclcPIs6cU6Iox8/edit?usp=sharing)  feel free to contribute to the list.
+[**GnGeo-Pi COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1A_a_9t14uzDUMrrO0RgLDwiVUiycmclcPIs6cU6Iox8/edit?usp=sharing)  feel free to contribute to the list.
 
 ## BIOS
 Neo Geo requires a **neogeo.zip** BIOS file. It will be placed with your ROMs in
