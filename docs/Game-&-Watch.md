@@ -6,6 +6,11 @@
 _Game & Watch is a line of handheld electronic games produced by Nintendo from 1980 to 1991._
 
 ***
+
+| Emulator | Rom Folder | Extension | BIOS |  Controller Config |
+| :---: | :---: | :---: | :---: | :---: |
+| [lr-gw](https://github.com/libretro/gw-libretro) | gameandwatch  | .mgw | none | /opt/retropie/configs/gameandwatch/retroarch.cfg |
+
 ## Emulator: [lr-gw](https://github.com/libretro/gw-libretro) (EXPERIMENTAL)
 
 Note that this is experimental. It can be installed from the experimental menu of the [RetroPie Setup Script](Updating RetroPie).
@@ -17,6 +22,8 @@ Place your Game & Watch ROMs in
 ```
 /home/pi/RetroPie/roms/gameandwatch
 ```
+
+Games can be found at http://bot.libretro.com/assets/cores/gw/
 
 ### Video Guide  
 
