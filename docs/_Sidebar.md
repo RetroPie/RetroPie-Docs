@@ -14,6 +14,7 @@
 
 ## Emulators
 * [3do](3do)
+* [Adventure Game Studio](Adventure-Game-Studio)
 * [Amiga](Amiga)
 * [Amstrad CPC](Amstrad-CPC)
 * [Apple II](Apple-II)
