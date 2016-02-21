@@ -38,6 +38,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [Dreamcast](Dreamcast) [(Reicast)](https://github.com/reicast/reicast-emulator) 
 * [FinalBurn Alpha](FinalBurn-Alpha) [(PiFBA)](https://github.com/RetroPie/pifba), [(lr-fba)](https://github.com/libretro/fba-libretro), [(lr-fba-next)](https://github.com/libretro/libretro-fba.git)
 * [Genesis/Megadrive](Genesis-Megadrive) [(DGEN)](http://dgen.sourceforge.net/), [(lr-Genesis-Plus-GX)](https://github.com/libretro/Genesis-Plus-GX), [(lr-picodrive)] (https://github.com/libretro/picodrive)
+* [Game & Watch](Game-&-Watch) [(lr-gw)](https://github.com/libretro/gw-libretro)
 * [Game Gear](Game-Gear) [(Osmose)](https://github.com/RetroPie/osmose-rpi), [(lr-Genesis-Plus-GX)](https://github.com/libretro/Genesis-Plus-GX)
 * [Game Boy](Game-Boy) [(lr-gambatte)](https://github.com/libretro/gambatte-libretro)
 * [Game Boy Color](Game-Boy-Color) [(lr-gambatte)](https://github.com/libretro/gambatte-libretro)
