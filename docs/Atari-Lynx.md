@@ -3,8 +3,14 @@
 ***
 _The Atari Lynx is the world's first handheld gaming console with a color screen. It was released by Atari in 1989_
 ***
-## Emulator: [lr-handy](https://github.com/libretro/libretro-handy)
-The libretro-handy core is a port of the [Handy](http://handy.sourceforge.net/) emulator
+
+| Emulator | Rom Folder | Extension | BIOS |  Controller Config |
+| :---: | :---: | :---: | :---: | :---: |
+| [lr-handy](https://github.com/libretro/libretro-handy) | atarilynx  | .lnx | none | /opt/retropie/configs/atarilynx/retroarch.cfg |
+| [lr-beetle-lynx](https://github.com/libretro/beetle-lynx-libretro) | atarilynx  | .lnx | lynxboot.img | /opt/retropie/configs/atarilynx/retroarch.cfg |
+
+## Emulator: [lr-handy](https://github.com/libretro/libretro-handy), [lr-beetle-lynx](https://github.com/libretro/beetle-lynx-libretro)
+
 ## ROMS
 Accepted File Extensions: **.lnx**
 
