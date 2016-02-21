@@ -4,6 +4,9 @@
 _The Apple II was a series of personal computers starting from 1977 to 1993._
 ***
 
+| Emulator | Rom Folder | Extension | BIOS |  Controller Config |
+| :---: | :---: | :---: | :---: | :---: |
+| [Linapple](http://sourceforge.net/projects/linapple/) | apple2  | .dsk | none | /opt/retropie/configs/apple2/linapple.conf |
 
 ## Emulator: [Linapple](http://sourceforge.net/projects/linapple/)
 
