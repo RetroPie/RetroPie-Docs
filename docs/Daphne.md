@@ -5,6 +5,10 @@ _Laserdiscs were predecessors to the DVD. The first laserdisc game was released 
 
 ***
 
+| Emulator | Rom Folder | Extension | BIOS |  Controller Config |
+| :---: | :---: | :---: | :---: | :---: |
+| [Daphne](http://www.daphne-emu.com/site3/index_hi.php) | daphne  | .daphne | none | /opt/retropie/configs/daphne/dapinput.ini |
+
 ## Emulator: [Daphne](http://www.daphne-emu.com/site3/index_hi.php)
 
 Matt Ownby is the developer of Daphne. For the best replication of Laserdisc games check out his Dexter project [HERE](http://www.daphne-emu.com/mediawiki/index.php/DexterFAQ)
