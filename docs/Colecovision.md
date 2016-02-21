@@ -3,6 +3,11 @@
 ***
 _The Colecovision is a home video game console released by Coleco in 1982. It features a unique gamepad which is a mixture of  a phone keypad and a joystick_
 ***
+
+| Emulator | Rom Folder | Extension | BIOS |  Controller Config |
+| :---: | :---: | :---: | :---: | :---: |
+| [CoolCV](http://atariage.com/forums/topic/240800-coolcv-emulator-for-mac-os-x-linux-windows-and-raspberry/page-1) | coleco  | .bin .col .rom .zip | coleco.rom | /opt/retropie/configs/coleco/coolcv_mapping.txt |
+
 ## Emulator [CoolCV](http://atariage.com/forums/topic/240800-coolcv-emulator-for-mac-os-x-linux-windows-and-raspberry/page-1)
 
 ## ROMS
