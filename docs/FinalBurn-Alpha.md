@@ -3,6 +3,13 @@
 ***
 _Final Burn Alpha is a Multiple Arcade Emulator most popular for emulating Neo-Geo, Capcom, Konami, and Cave games. It is developed by the final burn team and originated from FinalBurn by Dave_
 ***
+
+| Emulator | Rom Folder | Extension | BIOS |  Controller Config |
+| :---: | :---: | :---: | :---: | :---: |
+| [lr-fba-next](https://github.com/libretro/libretro-fba) | arcade **or** fba **or** neogeo  | .zip | neogeo.zip | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/fba/retroarch.cfg, **or** /opt/retropie/configs/neogeo/retroarch.cfg |
+| [lr-fba](https://github.com/libretro/fba-libretro) | arcade **or** fba **or** neogeo  | .zip | neogeo.zip | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/fba/retroarch.cfg, **or** /opt/retropie/configs/neogeo/retroarch.cfg |
+| [PiFBA](https://github.com/RetroPie/pifba) | arcade **or** fba **or** neogeo  | .zip | neogeo.zip | /opt/retropie/emulators/pifba/fba2x.cfg **or** /opt/retropie/configs/fba/fba2x.cfg |
+
 ## Emulators: [PiFBA](https://github.com/RetroPie/pifba), [lr-fba](https://github.com/libretro/fba-libretro), [lr-fba-next](https://github.com/libretro/libretro-fba.git)
 
 lr-fba and lr-fba-next are a libretro port of PiFBA and unlike PiFBA, lr-fba and lr-fba-next use RetroArch configurations.
