@@ -18,7 +18,7 @@ Place your Neo Geo ROMs in
 ```
 /home/pi/RetroPie/roms/neogeo
 ```
-As a lovely caveat, the ROMs you have must match the file in gngeo_data.zip located at:
+As a lovely caveat if you're using gngeopi, the ROMs you have must match the file in gngeo_data.zip located at:
 ```
 /opt/retropie/emulators/gngeopi/share/gngeo
 ```
