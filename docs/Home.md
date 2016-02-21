@@ -20,6 +20,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 
 # Emulators
 * [3do](3do) [(lr-4do)](https://github.com/libretro/4do-libretro) (EXPERIMENTAL)
+* [Adventure Game Studio](Adventure-Game-Studio) [(AGS)](https://github.com/adventuregamestudio/ags/tree/master/debian) (EXPERIMENTAL)
 * [Amiga](Amiga) [(UAE4ALL2)](https://github.com/RetroPie/uae4all2), [(UAE4ARM)](https://github.com/Chips-fr/uae4arm-rpi/)
 * [Amstrad CPC](Amstrad-CPC) [(CapriceRPI)](https://github.com/KaosOverride/CapriceRPI), [(lr-cap32)](https://github.com/libretro/libretro-cap32.git)
 * [Apple II](Apple-II) [(Linapple)](http://sourceforge.net/projects/linapple/)
