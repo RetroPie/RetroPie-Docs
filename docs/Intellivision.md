@@ -5,6 +5,11 @@
 _The Intellivision is a home video game console released by Mattel in 1979_
 
 ***
+
+| Emulator | Rom Folder | Extension | BIOS |  Controller Config |
+| :---: | :---: | :---: | :---: | :---: |
+| [jzintv](http://spatula-city.org/~im14u2c/intv/) | intellivision  | .int .bin | exec.bin grom.bin | hardcoded |
+
 ## Emulator: [jzintv](http://spatula-city.org/~im14u2c/intv/)
 
 ## ROMS
