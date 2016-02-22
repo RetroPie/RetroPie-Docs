@@ -3,6 +3,10 @@
 ***
 _The good old days of DOS._
 ***
+| Emulator | Rom Folder | Extension | BIOS |  Controller Config |
+| :---: | :---: | :---: | :---: | :---: |
+| [DOSBox](http://www.dosbox.com/) | pc  | .com .sh .bat .exe | none | /opt/retropie/configs/pc/dosbox-SVN.conf |
+
 ## Emulator: [DOSBox](http://www.dosbox.com/), [Rpix86](http://rpix86.patrickaalto.com/)
 
 ## ROMS
