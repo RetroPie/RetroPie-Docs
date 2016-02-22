@@ -5,6 +5,10 @@ The Neo Geo Pocket was a handheld video game system released by SNK in 1998.
 
 ***
 
+| Emulator | Rom Folder | Extension | BIOS |  Controller Config |
+| :---: | :---: | :---: | :---: | :---: |
+| [lr-mednafen-ngp](https://github.com/libretro/beetle-ngp-libretro.git) | ngp  | .ngp | none | /opt/retropie/configs/ngp/retroarch.cfg |
+
 ## Emulator: [lr-mednafen-ngp](https://github.com/libretro/beetle-ngp-libretro.git)
 
 ## ROMS
