@@ -4,10 +4,15 @@
 _Infocom created a bunch of text based adventure games to be utilised by a Z-Machine interpreter (i.e. an emulator). Notable titles include the Zork Series and The Hitchhikers Guide to the Galaxy._
 
 ***
+
+| Emulator | Rom Folder | Extension | BIOS |  Controller Config |
+| :---: | :---: | :---: | :---: | :---: |
+| [Frotz](http://frotz.sourceforge.net/) | zmachine | .dat .zip .z1 .z2 .z3 .z4 .z5 .z6 .z7 .z8 | none | hardcoded |
+
 ## Emulator: [Frotz](http://frotz.sourceforge.net/)
 
 ## ROMS
-Accepted File Extensions: **.z3 .DAT**
+Accepted File Extensions: **.dat .zip .z1 .z2 .z3 .z4 .z5 .z6 .z7 .z8**
 
 Place your Infocom interactive fiction ROMs in 
 ```
