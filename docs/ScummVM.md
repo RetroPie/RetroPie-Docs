@@ -3,6 +3,11 @@
 ***
 _ScummVM stands for Script Creation Utility for Maniac Mansion (VM stands for virtual machine). ScummVM is a program which allows you to run certain classic graphical point-and-click adventure games, provided you already have their data files_
 ***
+
+| Emulator | Rom Folder | Extension | BIOS |  Controller Config |
+| :---: | :---: | :---: | :---: | :---: |
+| [ScummVM](http://scummvm.org/) | scummvm  | see below | none | hardcoded |
+
 ## Emulator: [ScummVM](http://scummvm.org/)
 
 ## ROMS
