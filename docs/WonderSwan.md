@@ -5,6 +5,10 @@
 WonderSwan is a handheld gaming device that was released by Bandai solely in Japan in 1998. 
 ***
 
+| Emulator | Rom Folder | Extension | BIOS |  Controller Config |
+| :---: | :---: | :---: | :---: | :---: |
+| [lr-mednafen-wswan](https://github.com/libretro/beetle-wswan-libretro.git) | wonderswan  | .ws | none | /opt/retropie/configs/wonderswan/retroarch.cfg |
+
 ## Emulator: [lr-mednafen-wswan](https://github.com/libretro/beetle-wswan-libretro.git)
 
 ## ROMS
