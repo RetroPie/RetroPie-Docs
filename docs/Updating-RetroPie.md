@@ -1,5 +1,9 @@
 # Updating RetroPie
 
+|Version|
+|---|
+|3.5|
+
 The conventional way to update RetroPie and install new features is through the setup script. 
 
 The setup script can be accessed from the **RetroPie menu** in emulationstation. 
@@ -14,9 +18,11 @@ sudo ./retropie_setup.sh
 
 ## Using the RetroPie Setup Script
 
-![restropiesetupscript](https://cloud.githubusercontent.com/assets/10035308/10266202/c39fd7e0-6a10-11e5-80b1-74b642fe8441.png)
+![setupscript](https://cloud.githubusercontent.com/assets/10035308/13228202/e3f20a02-d957-11e5-9b10-3e3dc7da2bac.png)
 
 - **The very first thing** you'll want to do before you do anything is select **Update RetroPie-Setup Script** as this will update the latest changes to the setup script.
+
+- Note that the **Script Version** only shows what version the RetroPie Setup Script is at, it is not necessarily the version of RetroPie that you currently have installed. The **Last Commit** shows the latest commit or change to the RetroPie Setup Script since your last update of the script.
 
 - **Binary Based Installation:** If you wish to do a full update of RetroPie, this is the option you should choose. a backup is highly recommended before choosing this option
 
@@ -27,6 +33,10 @@ sudo ./retropie_setup.sh
 - **Experimental Packages:** these are emulators and options that may be potentially unstable but are worth checking out if you are feeling ambitious
 
 - **Install Individual Emulators from Binary or Source:** This is where you will update individual emulators- you will almost always update from binary as they are more frequently updated, have less bugs, and are much quicker to install. There will be rare occasions where you may need to update from source but when in doubt just choose binary and you should be fine. 
+
+- **Uninstall RetroPie:** This will uninstall all of RetroPie. You are also given the option to remove all the dependencies that were needed for RetroPie. Note that this option is still being tested so there may be some things that will still need to be manually removed like symlinks.
+
+- **Perform Reboot:** This will reboot your system.
 
 #### Latest SD image
 
@@ -53,7 +63,7 @@ You can create an sd image of your current sd card with [win32diskimager](http:/
 
 if you don't want to create a sd image you can just back up your bios, roms, and configuration files from the samba shares
 
-![configs](https://cloud.githubusercontent.com/assets/10035308/9141308/edee8b52-3cf4-11e5-8bf3-73f8c27f99fb.png)
+![samba](https://cloud.githubusercontent.com/assets/10035308/12865893/d2eab264-cc77-11e5-9ec6-003e13322a5a.png)
 
 ## Making a Backup (OS X)
 
