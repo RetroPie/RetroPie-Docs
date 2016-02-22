@@ -4,7 +4,14 @@
 _The MSX was a personal computer released by Microsoft in 1983._
 
 ***
-## Emulator: [lr-fmsx](https://github.com/libretro/fmsx-libretro) [lr-bluemsx](https://github.com/libretro/blueMSX-libretro) [OpenMSX](http://openmsx.org/)
+
+| Emulator | Rom Folder | Extension | BIOS |  Controller Config |
+| :---: | :---: | :---: | :---: | :---: |
+| [lr-bluemsx](https://github.com/libretro/blueMSX-libretro) | msx  | .rom .mx1 .mx2 .col .dsk | see below  | /opt/retropie/configs/msx/retroarch.cfg |
+| [lr-fmsx](https://github.com/libretro/fmsx-libretro) | msx  | .rom .mx1 .mx2 .col .dsk | see below | /opt/retropie/configs/msx/retroarch.cfg |
+| [OpenMSX](http://openmsx.org/) | msx | .rom .mx1 .mx2 .col .dsk | see below | hardcoded |
+
+## Emulator: [lr-fmsx](https://github.com/libretro/fmsx-libretro), [lr-bluemsx](https://github.com/libretro/blueMSX-libretro), [OpenMSX](http://openmsx.org/)
 
 ## ROMS
 Accepted File Extensions: **.rom .mx1 .mx2 .col .dsk**
