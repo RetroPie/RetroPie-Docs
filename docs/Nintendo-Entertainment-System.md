@@ -4,6 +4,13 @@
 _The Nintendo Entertainment System (NES) is an 8-bit home video game console that was released by Nintendo in 1985._
 
 ***
+
+| Emulator | Rom Folder | Extension | BIOS |  Controller Config |
+| :---: | :---: | :---: | :---: | :---: |
+| [lr-fceumm](https://github.com/libretro/libretro-fceumm) | nes  | .zip .nes .smc .sfc .fig .swc .mgd | none | /opt/retropie/configs/nes/retroarch.cfg |
+| [lr-nestopia](https://github.com/libretro/nestopia) | nes  | .zip .nes .smc .sfc .fig .swc .mgd | disksys.rom | /opt/retropie/configs/nes/retroarch.cfg |
+| [lr-quicknes](https://github.com/libretro/QuickNES_Core) | nes  | .zip .nes .smc .sfc .fig .swc .mgd | none | /opt/retropie/configs/nes/retroarch.cfg |
+
 ## Emulators: [lr-nestopia](https://github.com/libretro/nestopia), [lr-fceumm](https://github.com/libretro/libretro-fceumm), [lr-quicknes](https://github.com/libretro/QuickNES_Core)
 
 Both emulators utilise RetroArch configurations for controllers. Nestopia is preferred due to better accuracy and the ability to play Famicom Disk System games.
