@@ -4,7 +4,14 @@
 _The PlayStation 1 is a 5th generation video game console released by Sony in 1994._
 
 ***
-## Emulators: [lr-pcsx-rearmed](https://github.com/libretro/pcsx_rearmed), [pcsx-rearmed](https://github.com/notaz/pcsx_rearmed)
+
+| Emulator | Rom Folder | Extension | BIOS |  Controller Config |
+| :---: | :---: | :---: | :---: | :---: |
+| [lr-pcsx-rearmed](https://github.com/libretro/pcsx_rearmed) | psx  | .bin .cue .cbn .img .iso .m3u .mdf .pbp .toc .z .znx | SCPH1001.BIN | /opt/retropie/configs/psx/retroarch.cfg |
+| [pcsx-rearmed](https://github.com/notaz/pcsx_rearmed) | psx  | .bin .cue .cbn .img .iso .m3u .mdf .pbp .toc .z .znx | SCPH1001.BIN | hardcoded |
+| [lr-beetle-psx](https://github.com/libretro/beetle-psx-libretro) | psx  | .bin .cue .cbn .img .iso .m3u .mdf .pbp .toc .z .znx | scph5500.bin scph5501.bin scph5502.bin | /opt/retropie/configs/psx/retroarch.cfg |
+
+## Emulators: [lr-pcsx-rearmed](https://github.com/libretro/pcsx_rearmed), [pcsx-rearmed](https://github.com/notaz/pcsx_rearmed), 
 
 ## ROMS
 Accepted File Extensions: **.bin .cue .cbn .img .iso .m3u .mdf .pbp .toc .z .znx**
