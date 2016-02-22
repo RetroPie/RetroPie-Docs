@@ -5,6 +5,10 @@
 WonderSwan Color is a handheld gaming device that was released by Bandai in 2000. 
 ***
 
+| Emulator | Rom Folder | Extension | BIOS |  Controller Config |
+| :---: | :---: | :---: | :---: | :---: |
+| [lr-mednafen-wswan](https://github.com/libretro/beetle-wswan-libretro.git) | wonderswancolor  | .wsc | none | /opt/retropie/configs/wonderswancolor/retroarch.cfg |
+
 ## Emulator: [lr-mednafen-wswan](https://github.com/libretro/beetle-wswan-libretro.git)
 
 ## ROMS
