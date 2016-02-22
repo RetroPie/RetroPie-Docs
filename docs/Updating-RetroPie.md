@@ -1,8 +1,8 @@
-# Updating RetroPie
-
 |Version|
 |---|
 |3.5|
+
+# Updating RetroPie
 
 The conventional way to update RetroPie and install new features is through the setup script. 
 
