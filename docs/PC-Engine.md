@@ -4,6 +4,12 @@
 ***
 _The TurboGrafx-16 Entertainment SuperSystem, originally known in Japan as the PC Engine, is a home video game console joint-developed by Hudson Soft and NEC, released in 1987._
 ***
+
+| Emulator | Rom Folder | Extension | BIOS |  Controller Config |
+| :---: | :---: | :---: | :---: | :---: |
+| [lr-mednafen-pce-fast](https://github.com/libretro/beetle-pce-fast-libretro) | pcengine  | .pce | syscard3.pce | /opt/retropie/configs/pcengine/retroarch.cfg |
+| [lr-beetle-supergrafx](https://github.com/libretro/beetle-supergrafx-libretro) | pcengine  | .pce | syscard3.pce | /opt/retropie/configs/pcengine/retroarch.cfg |
+
 ## Emulator: [lr-mednafen-pce-fast](https://github.com/libretro/beetle-pce-fast-libretro), [lr-beetle-supergrafx](https://github.com/libretro/beetle-supergrafx-libretro)
 
 ## ROMS
