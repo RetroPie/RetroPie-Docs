@@ -4,6 +4,11 @@
 _The Virtual Boy was Nintendo's attempt at virtual reality in 1995 and it was a horrid commercial failure._
 
 ***
+
+| Emulator | Rom Folder | Extension | BIOS |  Controller Config |
+| :---: | :---: | :---: | :---: | :---: |
+| [lr-beetle-vb](https://github.com/libretro/beetle-vb-libretro) | virtualboy  | .vb | none | /opt/retropie/configs/virtualboy/retroarch.cfg |
+
 ## Emulator: [lr-beetle-vb](https://github.com/libretro/beetle-vb-libretro) (Experimental)
 This Emulator is currently experimental and will need to be installed from the experimental section of the setup script.  On testing it seems to work fine.
 
