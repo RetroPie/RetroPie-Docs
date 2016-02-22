@@ -4,6 +4,11 @@
 _The Sega 32X was released as an add-on for the Sega Genesis in 1994. There was a whopping total of 40 games for this console- it was considered a commercial failure._
 
 ***
+
+| Emulator | Rom Folder | Extension | BIOS |  Controller Config |
+| :---: | :---: | :---: | :---: | :---: |
+| [lr-picodrive](https://github.com/libretro/picodrive) | sega32x  | .32x .smd .bin .md | none | /opt/retropie/configs/sega32x/retroarch.cfg |
+
 ## Emulator: [lr-picodrive](https://github.com/libretro/picodrive)
 
 ## ROMS
