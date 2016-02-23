@@ -28,6 +28,6 @@ Starting with RetroPie 3.5 you can enable and disable different functions of the
 
 ![runcommand](https://cloud.githubusercontent.com/assets/10035308/12870161/2608ac8a-ccf5-11e5-8d78-97cf5650cee4.png)
 
-- **Launch Menu:** Enable or disable the runcommand launch menu (Note by default if you disable the runcommand launch menu this automatically disables joystick control for the runcommmand menu as well even if the menu shows joystick control as being enabled.)
+- **Launch Menu:** Enable or disable the runcommand launch menu
 - **Launch Menu Art:** If enabled, any scraped box art you have for a game with show up as a splashscreen while your game loads up.
 - **Launch Menu Joystick Control:** You can disable the joystick support so that your kids don't accidentally mess up settings. Note that this only disables the joystick, not the keyboard so if you have joysticks that act like a keyboard then of course disabling this option will not work. 
