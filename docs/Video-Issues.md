@@ -32,3 +32,12 @@ hdmi_group=1
 hdmi_mode=16
 ```
 to force a resolution (those settings are for 1080p 60hz). More options can be found at: http://elinux.org/RPiconfig#Video_mode_options
+
+An example of a forced 4:3 ratio at 1024x768
+
+```
+hdmi_drive=2
+hdmi_force_hotplug=1 
+hdmi_group=2 
+hdmi_mode=16 
+```
