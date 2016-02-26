@@ -36,6 +36,12 @@ so that it reads
 ```
 ags="sudo xinit /opt/retropie/emulators/ags/bin/ags --fullscreen %ROM%"
 ```
+--or-- 
+Alternatively to adding "sudo" to the command in "emulators.cfg", you can instead run
+```
+sudo dpkg-reconfigure x11-common
+```
+Then choose "anybody" from the provided menu options. This will allow AGS to load from within EmulationStation.
 
 ### Video Guide  
 
