@@ -25,7 +25,7 @@ change to your new theme (you may need to press f4 or quit to refresh emulations
 
 ## White Screen of Death
 
-There is a fundamental bug with EmulationStation where unique background images are not loaded dynamically so if you have more than ~10 systems you will start to get a white screen of death and nothing will show up. 
+There is a fundamental bug with EmulationStation where unique background images are not loaded dynamically so if you have more than ~10 systems (on most themes that have a unique wallpaper per system) you will start to get a white screen of death and nothing will show up. 
 
 There are a few things you can do to fix the white screen of death:
 
