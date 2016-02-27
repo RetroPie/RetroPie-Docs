@@ -5,6 +5,13 @@ _Minecraft was created by Markus "Notch" Persson and his company Mojang which wa
 
 This emulator is experimental and can be installed from the experimental menu of the [retropie setup script](https://github.com/RetroPie/RetroPie-Setup/wiki/Updating-RetroPie)
 
+**Note** in order to run after it has been installed you need to go into the terminal and type:
+
+```shell
+sudo dpkg-reconfigure x11-common
+```
+and then change it to **anyone** alternatively you can put sudo in front of the launch script.
+
 ## Controls
 
 Key |    Action
