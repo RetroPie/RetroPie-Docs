@@ -92,6 +92,7 @@
 * [Odroid](Odroid)
 * [Arch Linux](RetroPie-Arch-Linux-Flavor)
 * [Ubuntu 15.10 x86](RetroPie-Ubuntu-15.10-x86-Flavor)
+* [RetroPie install for OSMC with external memory USB Drive](RetroPie-install-for-OSMC-with-external-memory-USB-Drive)
 
 ## Controllers
 
