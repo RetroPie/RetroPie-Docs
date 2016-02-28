@@ -1,6 +1,6 @@
 Installation
 
-    If your like me you have a tiny SDCard in your RPi running OSMC, but now you want to play some roms, if you try to install full RetroPie you will run out of space and OSMC will panic and die with no space left.
+    If you're like me you have a tiny SDCard in your RPi running OSMC, but now you want to play some roms, if you try to install full RetroPie you will run out of space and OSMC will panic and die with no space left.
     
     So I decided to do a few easy quick mods to make it install to a USB Drive plugged in to a connected power USB hub.
     
