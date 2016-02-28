@@ -99,7 +99,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [Manual Installation](Manual-Installation)
 * [RetroPie Arch Linux Flavor](RetroPie-Arch-Linux-Flavor)
 * [RetroPie Ubuntu 15.10 x86 Flavor](RetroPie-Ubuntu-15.10-x86-Flavor)
-* [RetroPie-install-for-OSMC-with-external-memory-USB-Drive](RetroPie install for OSMC with external memory USB Drive)
+* [RetroPie install for OSMC with external memory USB Drive](RetroPie-install-for-OSMC-with-external-memory-USB-Drive)
 
 ## Controller Configurations
 * [Setting up an XBox 360 Controller](Setting-up-the-XBox360-controller)
