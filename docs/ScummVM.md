@@ -99,4 +99,8 @@ PLATFORMID=99
 
 Thats all
 ```
-```
+
+
+#### Compiling Tips
+
+If you want to enable support for myst and other experimental games you have to compile those engines in manually with the `--enable-all-engines` flag when configuring.
