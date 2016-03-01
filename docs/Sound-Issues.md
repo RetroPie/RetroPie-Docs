@@ -1,4 +1,4 @@
-> :exclamation: If you want to know how to get USB Audio set up [click here](#USB-Audio).
+> :exclamation: If you want to know how to get USB Audio set up [click here](https://github.com/RetroPie/RetroPie-Setup/wiki/Sound-Issues#usb-audio).
 
 Sound still is a problem child with the Raspberry Pi. Currently, there does not seem to be a best solution for all the sound issues. General information about sound issues can be found at http://elinux.org/R-Pi_Troubleshooting#Sound.
 
