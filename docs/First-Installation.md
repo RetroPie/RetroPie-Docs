@@ -2,7 +2,7 @@
 
 |Version|
 |---|
-|3.5|
+|3.6|
 1. [Hardware](https://github.com/RetroPie/RetroPie-Setup/wiki/First-Installation#hardware-needed)
 1. [Installation](https://github.com/RetroPie/RetroPie-Setup/wiki/First-Installation#installation)
 1. [Controller Configuration](https://github.com/RetroPie/RetroPie-Setup/wiki/First-Installation#controller-configurations)
@@ -11,7 +11,7 @@
 
 Congratulations! You have discovered the wonderful world of RetroPie- your entire childhood is within reach! RetroPie is a combination of multiple projects including [RetroArch](http://www.libretro.com), [EmulationStation](http://www.emulationstation.org), and many others. 
 
-This page is for people just getting started on RetroPie 3.5. The easiest way to install RetroPie is the SD image which is a ready to go system built upon top of the Raspbian OS - this is the method described in the following guide. Alternatively, advanced users can install RetroPie [manually](https://github.com/RetroPie/RetroPie-Setup/wiki/Manual-Installation). 
+This page is for people just getting started on RetroPie 3.6. The easiest way to install RetroPie is the SD image which is a ready to go system built upon top of the Raspbian OS - this is the method described in the following guide. Alternatively, advanced users can install RetroPie [manually](https://github.com/RetroPie/RetroPie-Setup/wiki/Manual-Installation). 
 
 This guide will give you the very basics to get you up and running from a blank SD card to first boot into EmulationStation.
 
@@ -40,11 +40,11 @@ The simplest way to get most of these components is through a kit such as the [C
 
 ### SD Images
 
-There are currently two versions of RetroPie 3.5. There is one version for Raspberry Pi 1 (Model A, A+, B, B+) and there is a version for Raspberry Pi 2. Download the SD image for your version of Raspberry Pi:
+There are currently two versions of RetroPie 3.6. There is one version for Raspberry Pi 1 (Model A, A+, B, B+) and there is a version for Raspberry Pi 2. Download the SD image for your version of Raspberry Pi:
 
-**[Raspberry Pi 1 / Zero](https://github.com/RetroPie/RetroPie-Setup/releases/download/3.5/retropie-v3.5-rpi1.img.gz)**
+**[Raspberry Pi 1 / Zero](https://github.com/RetroPie/RetroPie-Setup/releases/download/3.6/retropie-v3.6-rpi1.img.gz)**
 
-**[Raspberry Pi 2](https://github.com/RetroPie/RetroPie-Setup/releases/download/3.5/retropie-v3.5-rpi2.img.gz)**
+**[Raspberry Pi 2/ Raspberry Pi 3](https://github.com/RetroPie/RetroPie-Setup/releases/download/3.6/retropie-v3.6-rpi2.img.gz)**
 
 (If these links become outdated see the downloads page [here](https://github.com/RetroPie/RetroPie-Setup/releases).)
 
@@ -52,7 +52,7 @@ If you are unsure which version of Raspberry Pi you have there is an easy way to
 
 Rpi 1/Zero= 1 raspberry when the pi boots up
 
-Rpi 2= 4 raspberries when the pi boots up
+Rpi 2/Rpi 3= 4 raspberries when the pi boots up
 
 ### Extract
 
@@ -60,7 +60,7 @@ Once you have downloaded your SD card image you need to extract it using a progr
 
 ### Install RetroPie Image on SD Card
 
-To install the RetroPie 3.5 SD image on your MicroSD card. (You may need a MicroSD card reader to plug it into your computer) 
+To install the RetroPie 3.6 SD image on your MicroSD card. (You may need a MicroSD card reader to plug it into your computer) 
 
 1. For Windows you can use a program called [Win32DiskImager](http://sourceforge.net/projects/win32diskimager/) 
 2. For mac you can use [Apple Pi Baker](http://www.tweaking4all.com/hardware/raspberry-pi/macosx-apple-pi-baker/) 
