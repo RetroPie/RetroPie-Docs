@@ -40,11 +40,11 @@ The simplest way to get most of these components is through a kit such as the [C
 
 ### SD Images
 
-There are currently two versions of RetroPie 3.6. There is one version for Raspberry Pi 1 (Model A, A+, B, B+) and there is a version for Raspberry Pi 2. Download the SD image for your version of Raspberry Pi:
+There are currently two versions of RetroPie 3.6. There is one version for Raspberry Pi 1/Zero (Model A, A+, B, B+) and there is a version for Raspberry Pi 2/Raspberry Pi 3. Download the SD image for your version of Raspberry Pi:
 
 **[Raspberry Pi 1 / Zero](https://github.com/RetroPie/RetroPie-Setup/releases/download/3.6/retropie-v3.6-rpi1.img.gz)**
 
-**[Raspberry Pi 2/ Raspberry Pi 3](https://github.com/RetroPie/RetroPie-Setup/releases/download/3.6/retropie-v3.6-rpi2.img.gz)**
+**[Raspberry Pi 2 / Raspberry Pi 3](https://github.com/RetroPie/RetroPie-Setup/releases/download/3.6/retropie-v3.6-rpi2.img.gz)**
 
 (If these links become outdated see the downloads page [here](https://github.com/RetroPie/RetroPie-Setup/releases).)
 
