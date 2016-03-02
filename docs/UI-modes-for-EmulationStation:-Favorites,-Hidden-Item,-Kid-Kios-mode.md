@@ -95,7 +95,7 @@ This will change the view focus to a new random game, in any of the systems that
 # Future developments
 The difference between the stock ES and this branch is rather large, with many small changes in a lot of files. Consequently, when any update occurs in the original ES branch (upstream), this might impact this branch as well. Therefore, the risk of a high maintenance burden for this branch was deemed too high to incorporate it into the RetroPie branch proper. Kid Mode ES will remain in the experimental packages menu, where it is available for users who which to test it out.
 
-For the foreseeable future this ES version will remain maintained will be done by https://github.com/zigurana, merging in all relevant changes when they occur (or when someone alerts him to it).
+For the foreseeable future this ES version will be maintained by https://github.com/zigurana, merging in all relevant changes when they occur (or when someone alerts him to it).
 
 # Credits
 * Aloshi, of course.
