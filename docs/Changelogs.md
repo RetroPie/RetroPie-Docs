@@ -2,6 +2,24 @@
 
 This page is a list of all of the changelogs for each version of RetroPie. For a complete list of all commits to the source code see [here:](https://github.com/petrockblog/RetroPie-Setup/commits/master)  
 
+### Version 3.6: (March 1, 2016)
+
+**Added Support for the Raspberry Pi 3 [Via Raspbian Firmware Update]**
+
+- Added new experimental modules:
+ - Daphne (Laserdisc Emulator)
+ - Libretro-QuickNES
+ - Libretro-Beetle PSX (x86 only)
+ - Libretro-Beetle Lynx
+ - GemRB engine (Baldur’s Gate, Icewind Dale, Planescape)
+ - ResidualVM (Engine for Grim Fandango and Escape from Monkey Island)
+ - Libretro-MESS (based on the most recent version of MAME)
+ - Libretro-MAME (based on the most recent version of MAME)
+- Added EmulationStation theme Simpler Turtle Pi to the theme installer from Omnija.
+- Added version details and uninstall option to the RetroPie Setup Script.
+- Fixed insert coin not working on arcade based emulators.
+- Various other bugfixes and improvements.
+
 ### Version 3.5: (February 6, 2016)
 
 After taking into consideration the feedback from the vibrant RetroPie community, we have provided a few more functions to simplify the user experience such as automatic expansion of the filesystem on boot, less terminal text, and more configuration options for the runcommand launch menu. We have also fixed up some bugs with Raspbian Jessie such as the USB ROM service and have added two new experimental modules - the Löve game engine and a ColecoVision emulator (CoolCV). 
