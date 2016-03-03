@@ -30,11 +30,7 @@ Place your Nintendo 64 ROMs in
 
 ## Performance
 
-Video plugin |Recommended resolution
--------------|-----------------------
-gles2N64|1080p||
-gles2rice|720p||
-GLideN64|VGA||
+Low screen resolution are recommended to get best performance. Performance suffers if HD resolutions are used.
 
 ## Controls
 
