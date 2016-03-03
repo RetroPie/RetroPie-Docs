@@ -93,6 +93,7 @@
 * [Arch Linux](RetroPie-Arch-Linux-Flavor)
 * [Ubuntu 15.10 x86](RetroPie-Ubuntu-15.10-x86-Flavor)
 * [RetroPie install for OSMC with external memory USB Drive](RetroPie-install-for-OSMC-with-external-memory-USB-Drive)
+* [UI modes for EmulationStation: Favorites, Hidden Item, Kid Kios mode] (Favorites and Child-friendly EmulationStation )
 
 ## Controllers
 
