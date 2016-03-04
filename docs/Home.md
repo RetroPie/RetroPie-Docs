@@ -1,12 +1,14 @@
 ![retropie](https://cloud.githubusercontent.com/assets/10035308/11631694/6fa8e356-9cc0-11e5-8bce-4b8305f0fe8f.png)
 ***
 
+| Current Version|
+| :---: |
+| [**3.6**](https://github.com/RetroPie/RetroPie-Setup/releases) |
+|[Changelog](Changelogs)|
+
 Welcome to the RetroPie-Setup wiki!
 
 This wiki is supposed to be created by the users of the RetroPie setup script for the users of the script. Everyone can contribute to it!
-
-## Latest News: [RetroPie 3.6 SD Image Released!](https://github.com/RetroPie/RetroPie-Setup/releases) [(see changelog)](Changelogs)
-
 
 # Getting Started
 * [First Installation](First-Installation)
@@ -18,7 +20,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [Updating RetroPie](Updating-RetroPie)
 * [Using SSH](ssh)
 
-# Emulators
+# [**Emulators**](https://github.com/RetroPie/RetroPie-Setup/wiki/Supported-Systems)
 * [3do](3do) [(lr-4do)](https://github.com/libretro/4do-libretro) (EXPERIMENTAL)
 * [Adventure Game Studio](Adventure-Game-Studio) [(AGS)](https://github.com/adventuregamestudio/ags/tree/master/debian) (EXPERIMENTAL)
 * [Amiga](Amiga) [(UAE4ALL2)](https://github.com/RetroPie/uae4all2), [(UAE4ARM)](https://github.com/Chips-fr/uae4arm-rpi/)
@@ -58,20 +60,6 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [Nintendo Entertainment System](Nintendo-Entertainment-System) [(lr-fceumm)](https://github.com/libretro/libretro-fceumm), [(lr-nestopia)](https://github.com/libretro/nestopia)
 * [PC](PC) [(DOSBox)](http://www.dosbox.com/), [(rpix86)](http://rpix86.patrickaalto.com/)
 * [PC Engine/TurboGrafx-16](PC-Engine) [(lr-mednafen-pce-fast)](https://github.com/libretro/beetle-pce-fast-libretro) [(lr-beetle-supergrafx)](https://github.com/libretro/beetle-supergrafx-libretro)
-* [Ports](Ports)
-  * [Cave Story](CaveStory) [(lr-nxengine)](https://github.com/libretro/nxengine-libretro)
-  * [Descent 1 & 2](Descent) [(DXX-Rebirth)](http://www.dxx-rebirth.com/) (EXPERIMENTAL)
-  * [DOOM](Doom) [(lr-prboom)](https://github.com/libretro/libretro-prboom), [(ZDOOM)](https://github.com/rheit/zdoom)
-  * [Duke Nukem 3D](Duke-Nukem-3D) [(EDuke32)](http://www.eduke32.com/)
-  * [KODI](https://github.com/petrockblog/RetroPie-Setup/wiki/KODI) (EXPERIMENTAL)
-  * [Löve](Love)
-  * [Minecraft Pi Edition](https://github.com/petrockblog/RetroPie-Setup/wiki/Minecraft) (EXPERIMENTAL)
-  * [OpenTTD](OpenTTD) [(openttd)](https://wiki.openttd.org/Main_Page) (EXPERIMENTAL)
-  * [OpenTyrian](https://bitbucket.org/opentyrian/opentyrian/wiki/Home) (EXPERIMENTAL)
-  * [Quake Series](Quake) [(lr-tyrquake)](https://github.com/libretro/tyrquake), [(ioQuake3)](https://github.com/raspberrypi/quake3)
-  * [Super Mario War](Super-Mario-War)
-  * [SuperTux](http://supertux.lethargik.org/wiki/User_Manual)
-  * [Wolfenstein 3D](Wolfenstein-3D)
 * [PlayStation 1](Playstation-1) [(lr-pcsx-rearmed)](https://github.com/libretro/pcsx_rearmed), [(pcsx-rearmed)](https://github.com/notaz/pcsx_rearmed)
 * [PSP](PSP) [(lr-ppsspp)](https://github.com/libretro/libretro-ppsspp), [(ppsspp)](https://github.com/hrydgard/ppsspp)
 * [ScummVM](ScummVM)
@@ -87,6 +75,22 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [WonderSwan Color](Wonderswan-Color) [(lr-mednafen-wswan)](https://github.com/libretro/beetle-wswan-libretro)
 * [Zmachine](Zmachine) [(Frotz)](http://frotz.sourceforge.net/)
 * [ZX Spectrum](ZX-Spectrum) [(FBZX)](http://www.rastersoft.com/programas/fbzx.html), [(Fuse)](http://fuse-emulator.sourceforge.net/), [(lr-fuse)](https://github.com/libretro/fuse-libretro)
+
+# [**Ports**](Ports)
+* [Cave Story](CaveStory) [(lr-nxengine)](https://github.com/libretro/nxengine-libretro)
+* [Descent 1 & 2](Descent) [(DXX-Rebirth)](http://www.dxx-rebirth.com/) (EXPERIMENTAL)
+* [DOOM](Doom) [(lr-prboom)](https://github.com/libretro/libretro-prboom), [(ZDOOM)](https://github.com/rheit/zdoom)
+* [Duke Nukem 3D](Duke-Nukem-3D) [(EDuke32)](http://www.eduke32.com/)
+* [KODI](https://github.com/petrockblog/RetroPie-Setup/wiki/KODI) (EXPERIMENTAL)
+* [Löve](Love)
+* [Minecraft Pi Edition](https://github.com/petrockblog/RetroPie-Setup/wiki/Minecraft) (EXPERIMENTAL)
+* [OpenTTD](OpenTTD) [(openttd)](https://wiki.openttd.org/Main_Page) (EXPERIMENTAL)
+* [OpenTyrian](https://bitbucket.org/opentyrian/opentyrian/wiki/Home) (EXPERIMENTAL)
+* [Quake Series](Quake) [(lr-tyrquake)](https://github.com/libretro/tyrquake), [(ioQuake3)](https://github.com/raspberrypi/quake3)
+* [Super Mario War](Super-Mario-War)
+* [SuperTux](http://supertux.lethargik.org/wiki/User_Manual)
+* [Wolfenstein 3D](Wolfenstein-3D)
+
 
 ## Advanced Configuration
 * [EmulationStation](EmulationStation)
