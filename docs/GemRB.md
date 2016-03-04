@@ -4,7 +4,7 @@
 ![gemrb logo](https://cloud.githubusercontent.com/assets/10035308/13519937/6ee15d5e-e199-11e5-933b-4b5d369fb618.png)
 
 ***
-GemRB is a portable open-source implementation of Bioware's Infinity Engine. It is an engine for Baldur's Gate, Icewind Dale and Planescape.
+_GemRB is a portable open-source implementation of Bioware's Infinity Engine. It is an engine for Baldur's Gate, Icewind Dale and Planescape._
 ***
 
 ## Emulator [GemRB](https://github.com/gemrb/gemrb)
