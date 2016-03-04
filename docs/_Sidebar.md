@@ -56,6 +56,7 @@
   * [Descent](Descent)
   * [DOOM](Doom)
   * [Duke Nukem 3D](Duke-Nukem-3D)
+  * [GemRB](GemRB)
   * [Löve](Love)
   * [KODI](KODI)
   * [Minecraft Pi Edition](Minecraft)
