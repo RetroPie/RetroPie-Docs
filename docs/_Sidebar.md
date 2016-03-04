@@ -12,7 +12,8 @@
 * [Updating RetroPie](Updating-RetroPie)
 * [Using SSH](ssh)
 
-## Emulators
+## [Emulators](Supported-Systems)
+
 * [3do](3do)
 * [Adventure Game Studio](Adventure-Game-Studio)
 * [Amiga](Amiga)
@@ -68,6 +69,7 @@
 * [ZX Spectrum](ZX-Spectrum)
 
 ## [Ports](Ports)
+
 * [Cave Story](CaveStory)
 * [Descent](Descent)
 * [DOOM](Doom)
