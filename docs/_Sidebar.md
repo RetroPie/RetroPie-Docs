@@ -67,6 +67,7 @@
   * [Solarus](Solarus)
   * [Super Mario War](Super-Mario-War)
   * [SuperTux](SuperTux)
+  * [The-Ur-Quan-Masters](The-Ur-Quan-Masters)
   * [Wolfenstein 3D](Wolfenstein-3D)
   * [Xrick](Xrick)
 * [PSP](PSP)
