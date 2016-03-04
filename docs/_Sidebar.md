@@ -66,6 +66,7 @@
   * [Super Mario War](Super-Mario-War)
   * [SuperTux](SuperTux)
   * [Wolfenstein 3D](Wolfenstein-3D)
+  * [Xrick](Xrick)
 * [PSP](PSP)
 * [PlayStation 1](Playstation-1)
 * [Saturn](Saturn)
