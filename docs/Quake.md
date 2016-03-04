@@ -10,7 +10,7 @@ _Quake was a First Person Shooter series originally developed for the PC by Id S
 _Quake was released as shareware in 1999._
 
 ***
-## Emulator: [Libretro-tyrquake](https://github.com/libretro/tyrquake) 
+## Emulator: [Libretro-tyrquake](https://github.com/libretro/tyrquake) [Tyrquake](https://github.com/RetroPie/tyrquake)
 
 ## Controls:
 
