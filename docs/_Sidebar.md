@@ -41,6 +41,7 @@
 * [MAME](MAME)
 * [Master System](Master-System)
 * [Megadrive/Genesis](Genesis-Megadrive)
+* [MESS](MESS)
 * [MSX](MSX)
 * [Nintendo 64](Nintendo-64)
 * [Nintendo DS](Nintendo-DS)
