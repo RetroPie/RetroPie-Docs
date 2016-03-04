@@ -64,6 +64,7 @@
   * [OpenTyrian](https://bitbucket.org/opentyrian/opentyrian/wiki/Home)
   * [Quake Series](Quake)
   * [ResidualVM](ResidualVM)
+  * [Solarus](Solarus)
   * [Super Mario War](Super-Mario-War)
   * [SuperTux](SuperTux)
   * [Wolfenstein 3D](Wolfenstein-3D)
