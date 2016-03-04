@@ -19,8 +19,6 @@ Place your Lynx ROMS in:
 /home/pi/RetroPie/roms/atarilynx/
 ```
 
-**Note** lr-handy doesn't support no intro roms- it only works with roms that have a header
-
 ## Controls
 
 lr-handy utilises Retroarch configurations
