@@ -76,6 +76,10 @@ you can also place your roms in
 ```
 
 ### [**lr-fba-next COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1GaqIIoiWbzKHwZ52S2xCSDQXILo81Ls1mHK6czKGAtM/edit?usp=sharing)  feel free to contribute to the list.
+
+#### System Menu
+By default, if you hold the Start button for a few seconds, the system menu appears. Here you can set various game options, typically including 'Free Play' modes, regional settings, etc. Settings are saved in .fs files in the ROMS directory for the system in use, and are loaded automatically on next use.
+
 ## BIOS
 
 The BIOS needed for Neo Geo games is:
