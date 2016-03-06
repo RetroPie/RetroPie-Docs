@@ -15,6 +15,13 @@ Place your OpenBOR games in
 /home/pi/RetroPie/roms/ports/openbor
 ```
 
+Then you need to run
+```
+/opt/retropie/ports/openbor/extract.sh
+```
+
+Your games are extracted and ready to be played. Your originals are stored safely in `/home/pi/RetroPie/roms/ports/openbor/original` but they won't be needed anymore. Everything within it can be deleted.
+
 See more info from the OpenBOR Community [HERE](http://www.chronocrash.com/forum/index.php)
 
 ### Controls:
