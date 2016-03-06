@@ -86,6 +86,7 @@
 * [ResidualVM](ResidualVM)
 * [SDLPoP](SDLPoP)
 * [Solarus](Solarus)
+* [Stratagus](Stratagus)
 * [Super Mario War](Super-Mario-War)
 * [SuperTux](SuperTux)
 * [The-Ur-Quan-Masters](The-Ur-Quan-Masters)
