@@ -29,6 +29,12 @@ Accepted File Extensions: **.zip**
 **For information on how to rebuild newer romsets to be compatible with these emulators see this post:**
 **[Managing ROMs](https://github.com/petrockblog/RetroPie-Setup/wiki/Managing-ROMs)**
 
+## **Arcade**
+
+All arcade based romsets can be placed in the `arcade` rom folder but you will have to specify which emulator each rom will use from the [Runcommand Menu](runcommand)
+
+[**All Arcade ROMS Compatibility List**](https://docs.google.com/spreadsheets/d/1antILt7D12EWOFzyJwTfB86NceghMJKXG7CdYumuHec/edit?usp=sharing) feel free to contribute to the list.
+
 ## **MAME4ALL-Pi**
 
 Place your MAME4ALL-Pi ROMs in
