@@ -38,6 +38,14 @@ Place Your folders of game files in
 
 -navigate to scummvm and your games will all be there on the list and you'll have no need of a GUI
 
+
+## Troublshooting
+
+#### FUZZY MENU?
+
+You can open the options in the scummvm launcher and change the graphics mode to opengl and it will make the menu and your games clear and crisp! There are also other rendering modes as well that can be changed.
+
+
 ## Video Tutorial:
 
 <a href="https://www.youtube.com/watch?v=txdiaZlDUEs" target="_blank"><img src="https://i.ytimg.com/vi_webp/txdiaZlDUEs/mqdefault.webp" 
