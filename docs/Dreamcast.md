@@ -33,10 +33,6 @@ Place your BIOS files in
 ```
 /home/pi/RetroPie/BIOS
 ```
-for older versions place BIOS files in
-```
-/home/pi/.reicast/data/
-```
 
 ## Video Setup Guide  
 
