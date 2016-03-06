@@ -96,6 +96,8 @@ Wiimote.Plus	= BTN_START
 Wiimote.Home	= BTN_MODE
 Wiimote.1		= BTN_X
 Wiimote.2		= BTN_Y
+Nunchuk.C = BTN_C
+Nunchuk.Z = BTN_Z
 ```
 
 If you want your WiiMotes giving a connection status, just add an additional line to your `mywminput` file:
