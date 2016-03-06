@@ -57,7 +57,7 @@ CUSTOM MAPPING
 - Press escape to exit the menu and return to your game
 ```
 ### Advanced Configuration
-Once you've started and exited the VICE emulator at least once it will create a configuration file called "sdl-vicerc" in /home/pi/.vice/ which is a symbolic link to 
+Once you've started and exited the VICE emulator at least once it will create a configuration file called `sdl-vicerc` in `/home/pi/.vice/` which is a symbolic link to 
 ```shell
 /opt/retropie/configs/c64/ 
 ```
@@ -69,3 +69,16 @@ to VICIIDoubleSize=1
 ```
 ## Troubleshooting
 * There have been some reports of the emulator crashing when it exits requiring a hard reboot
+
+Note that the VICE emulator also emulates systems other than the Commodore 64 
+
+- C128
+- C64DTV
+- almost all PET models
+- PLUS4
+- CBM-II (aka C610) 
+- VIC20
+
+which can be accessed through the [Runcommand Launch Menu](runcommand)
+
+![03062016_2322241](https://cloud.githubusercontent.com/assets/10035308/13558061/dc5eeade-e3b7-11e5-94cc-4891ccafe15a.png)
