@@ -138,7 +138,7 @@ killall hcitool && sleep 5
 
 if [[ `hcitool dev | grep hci` ]]
 then
-    aplay $begin_sound &> /dev/null &
+    play $begin_sound &> /dev/null &
     echo "Bluetooth detected, starting scan with ${ttl}s timeout..."
 
     timeout $ttl hcitool scan | while read device
