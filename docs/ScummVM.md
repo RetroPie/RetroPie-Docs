@@ -43,7 +43,7 @@ Place Your folders of game files in
 
 #### FUZZY MENU?
 
-You can open the options in the scummvm launcher and change the graphics mode to opengl and it will make the menu and your games clear and crisp! There are also other rendering modes as well that can be changed.
+You can open the **options** in the scummvm launcher and change the graphics mode to **opengl** and it will make the menu and your games clear and crisp! There are also other rendering modes as well that can be changed.
 
 
 ## Video Tutorial:
