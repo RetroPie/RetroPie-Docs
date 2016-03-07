@@ -81,7 +81,7 @@
 * [Minecraft Pi Edition](Minecraft)
 * [OpenBOR](OpenBOR)
 * [OpenTTD](OpenTTD)
-* [OpenTyrian](https://bitbucket.org/opentyrian/opentyrian/wiki/Home)
+* [OpenTyrian](OpenTyrian)
 * [Quake Series](Quake)
 * [ResidualVM](ResidualVM)
 * [SDLPoP](SDLPoP)
