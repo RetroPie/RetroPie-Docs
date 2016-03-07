@@ -16,6 +16,10 @@ See what files you need [HERE](http://wiki.residualvm.org/index.php/Datafiles) a
 
 It functions very similarly to [ScummVM](ScummVM)
 
+## Notes:
+
+From the GUI options, select "software" for the game renderer.
+
 
 
 
