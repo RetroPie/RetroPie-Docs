@@ -86,6 +86,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [Duke Nukem 3D](Duke-Nukem-3D) [(Eduke32)](http://www.eduke32.com/)
 * [Löve](Love) [(Löve)](https://bitbucket.org/rude/love/src) (EXPERIMENTAL)
 * [KODI](KODI) (EXPERIMENTAL)
+* [Micropolis](Micropolis) (EXPERIMENTAL)
 * [Minecraft Pi Edition](Minecraft) (EXPERIMENTAL)
 * [OpenBOR](OpenBOR) [(OpenBOR)](https://github.com/rofl0r/openbor.git) (EXPERIMENTAL)
 * [OpenTTD](OpenTTD) (EXPERIMENTAL)
