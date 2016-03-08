@@ -79,6 +79,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 # [**Ports**](Ports)
 
 * [Baldur's Gate](GemRB) [(GemRB)](https://github.com/gemrb/gemrb) (EXPERIMENTAL)
+* [Commander Keen](Commander-Keen) [(Commander Genius)](http://clonekeenplus.sourceforge.net/) (EXPERIMENTAL)
 * [Cave Story](CaveStory) [(nxengine-libretro)](https://github.com/libretro/nxengine-libretro)
 * [Descent](Descent) [(DXX-Rebirth)](http://www.dxx-rebirth.com/) (EXPERIMENTAL) 
 * [DOOM](Doom) [(lr-prboom)](https://github.com/libretro/libretro-prboom), [(ZDOOM)](https://github.com/rheit/zdoom)
