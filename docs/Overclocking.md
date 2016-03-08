@@ -66,3 +66,51 @@ echo "Not crashed yet, probably stable."
 To get the current temperature in an human readable output try `vcgencmd measure_temp`. its possible th pi can freeze if the temperature goes over 65 degrees celsius.
 
 see also: http://linuxonflash.blogspot.com/2015/02/a-look-at-raspberry-pi-2-performance.html
+
+
+Adding Raspberry Pi 3 Overclocking section
+
+So I have been playing with my Pi3 for a few days now and the performance is definitely noticable. 
+
+From what I have learned not all Pi3's are created equal and there are a few more things you need to take into consideration when ordering parts for your 3.
+Do not just use any old cell phone power adapter you have around, she is a power hungry beast and if your going to overclock and use all 4 ports you need to give her enough power, 
+Grab you a 5v 2500 ma adapter - http://www.amazon.com/gp/product/B011BE929S?psc=1&redirect=true&ref_=oh_aui_detailpage_o02_s00 iss what I went with
+
+Heat will probably be an issue with 3's luckily it is easy to overcome. Pick you up a set of heatsinks, 
+http://www.amazon.com/gp/product/B00HPQGTI4?psc=1&redirect=true&ref_=oh_aui_detailpage_o02_s00  keep in mind that there are 3 core areas on the pi biggest chip on the top is cpu the smaller one is the ethernet/usb controller and on the bottom is the GPU. 
+
+The stock heatsinks you order have some adhesive on them it is not thermal paste. I would definitely recommend purchasing some thermal adhesive to create the best bond between your heatsink and cores. 
+http://www.amazon.com/gp/product/B0087X725S?psc=1&redirect=true&ref_=oh_aui_detailpage_o01_s00 is what I picked up then i used alcohol to completely clean the heatsinks before applying the thermal expoxy.
+
+Finally for a little extra cooling grab a well ventilated case with an active fan on it, this is especially important because the wifi / bluetooth chip has a thin type of pad on the bottom and it is extremely sensitive so its critical to get it in a case asap or risk damaging your wifi/bluetooth
+
+For the extremly experimental look up users who have submersed their pi's in mineral oil for what is called immersion cooling. 
+
+On to the software
+
+I am using Retropie's latest build 3.6 as it is the only EmulationStation image that will boot on a Pi3. 
+
+Under the impression that the default clock with this will be 1.2 GHZ 
+
+I went ahead and SSH'd into my box and modified the following values into my /boot/config.txt file
+
+gpu_mem=550
+arm_freq=1450
+over_voltage=6
+sdram_freq=500
+
+Mind you these are just stable settings I have found and I am far from done tuning.  
+Under load my cpu is running cool and i have not seen it spike over 51c 
+I have had no shutdowns or freezes related to heat.
+I will continue messing with moving the gpumem variable around and I do want to try going up to 1550 on the clock but not until i get an immersion cooling setup. 
+
+If your pi wont boot after applying a setup just take out the sdcard put it in a card reader on your pc and downclock 
+
+I have been experimenting and you can see some of the results I have gotten in this video, https://www.youtube.com/watch?v=dsrxdCtNzLg&feature=youtu.be
+
+Tons of speed imrpovments on default settings there.  Many games that were unplayable or not booting now work.  For example Moonwalker and Wild West Cowboys of Moo Mesa in mame alone. 
+
+With N64 I do have to cycle between emulators and turn down video resolutions but I am getting highly playable results. 
+
+
+
