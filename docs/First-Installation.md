@@ -54,6 +54,8 @@ Rpi 1/Zero= 1 raspberry when the pi boots up
 
 Rpi 2/Rpi 3= 4 raspberries when the pi boots up
 
+If you get the error `Illegal Instruction`  when it boots, you picked the wrong SD image.
+
 ### Extract
 
 Once you have downloaded your SD card image you need to extract it using a program such as [7-Zip](http://www.7-zip.org/). You will extract the downloaded **.gz** file and the extracted file will be a **.img** file.
