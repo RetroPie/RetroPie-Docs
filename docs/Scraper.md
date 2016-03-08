@@ -14,6 +14,25 @@ Steven Selph's scraper is probably the simplest way of scraping roms (provided t
 
 Note that while scraping you have to kill EmulationStation processes so that the gamelists are created properly. It may take some time for the xml files to build.
 
+#### Where are my scraped images and metadata saved?
+
+Once your games have been scraped they will be located in two parts: `Downloaded Images` and `Gamelists`
+```
+/home/pi/.emulationstation/downloaded_images
+or
+/opt/retropie/configs/all/emulationstation/downloaded_images
+```
+and
+```
+/home/pi/.emulationstation/gamelists
+or
+/opt/retropie/configs/all/emulationstation/gamelists
+```
+
+They can also be accessed over [samba shares](https://github.com/retropie/retropie-setup/wiki/First-Installation#samba-shares-needs-an-active-internet-connection)
+```
+\\retropie\configs\all\emulationstation
+```
 # EmulationStation Built-In Scraper:
 
 EmulationStation has a built in scraper that pulls from [thegamesdb](http://thegamesdb.net/). It can be accessed from the start menu in emulationstation.
