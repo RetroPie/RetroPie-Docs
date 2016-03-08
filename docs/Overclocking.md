@@ -119,6 +119,9 @@ I have been experimenting and you can see some of the results I have gotten in [
 Tons of speed improvements on default settings there.  Many games that were unplayable or not booting now work. For example Moonwalker and Wild West Cowboys of Moo Mesa in mame alone. 
 
 With N64 I do have to cycle between emulators and turn down video resolutions but I am getting highly playable results. 
+With your keyboard hit X when the game is booting up 
+Try the different emulators.  For example Goldeneye and Killer Instinct gold I change from my default Rice to Glide. 
+Try downscaling your resolution for games that are still lagggy.  640 X 480 16:9  is what I pushy both KI and Goldeneye to but get highly playable and good looking results. 
 
 
 
