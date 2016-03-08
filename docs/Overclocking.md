@@ -101,10 +101,12 @@ Under the impression that the default clock with the Raspberry Pi 3 will be 1.2 
 I went ahead and SSH'd into my box and modified the following values into my `/boot/config.txt` file
 
 ```
-gpu_mem=550
+gpu_mem=400
 arm_freq=1450
 over_voltage=6
-sdram_freq=500
+sdram_freq=575
+core_freq=550
+gpu_freq=400
 ```
 
 Mind you these are just stable settings I have found and I am far from done tuning.  
