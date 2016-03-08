@@ -70,25 +70,25 @@ see also: http://linuxonflash.blogspot.com/2015/02/a-look-at-raspberry-pi-2-perf
 
 ## Raspberry Pi 3 Overclocking
 
-So I have been playing with my Pi3 for a few days now and the performance is definitely noticeable. 
+The Raspberry Pi 3 has a noticeable performance boost from the Raspberry Pi 2. 
 
-From what I have learned not all Pi3's are created equal and there are a few more things you need to take into consideration when ordering parts for your 3.
+There are a few things that need to be taken into consideration when using a Raspberry Pi 3.
 
 - Proper Power Supply
 - Proper Cooling
 - Overclock Settings
 
 #### Proper Power Supply
+
 Do not just use any old cell phone power adapter you have around, she is a power hungry beast and if your going to overclock and use all 4 ports you need to give her enough power, 
-Grab you a 5v 2500 ma adapter - http://www.amazon.com/gp/product/B011BE929S?psc=1&redirect=true&ref_=oh_aui_detailpage_o02_s00 iss what I went with
+Grab you a 5v 2500 mA adapter [This](http://www.amazon.com/gp/product/B011BE929S) is the adapter I used.
 
 #### Proper Cooling
 
-Heat will probably be an issue with 3's luckily it is easy to overcome. Pick you up a set of heatsinks, 
-http://www.amazon.com/gp/product/B00HPQGTI4?psc=1&redirect=true&ref_=oh_aui_detailpage_o02_s00  keep in mind that there are 3 core areas on the pi biggest chip on the top is cpu the smaller one is the ethernet/usb controller and on the bottom is the GPU. 
+Heat will probably be an issue with 3's luckily it is easy to overcome. Pick you up a set of [heatsinks](http://www.amazon.com/gp/product/B00HPQGTI4),  keep in mind that there are 3 core areas on the pi biggest chip on the top is cpu the smaller one is the ethernet/usb controller and on the bottom is the GPU. 
 
 The stock heatsinks you order have some adhesive on them it is not thermal paste. I would definitely recommend purchasing some thermal adhesive to create the best bond between your heatsink and cores. 
-http://www.amazon.com/gp/product/B0087X725S?psc=1&redirect=true&ref_=oh_aui_detailpage_o01_s00 is what I picked up then i used alcohol to completely clean the heatsinks before applying the thermal expoxy.
+[This](http://www.amazon.com/gp/product/B0087X725S) is what I picked up then i used alcohol to completely clean the heatsinks before applying the thermal expoxy.
 
 Finally for a little extra cooling grab a well ventilated case with an active fan on it, this is especially important because the wifi / bluetooth chip has a thin type of pad on the bottom and it is extremely sensitive so its critical to get it in a case asap or risk damaging your wifi/bluetooth
 
@@ -96,7 +96,7 @@ For the extremly experimental look up users who have submersed their pi's in min
 
 #### Pi 3 Overclock Settings
 
-Under the impression that the default clock with this will be 1.2 GHZ 
+Under the impression that the default clock with the Raspberry Pi 3 will be 1.2 GHZ 
 
 I went ahead and SSH'd into my box and modified the following values into my `/boot/config.txt` file
 
@@ -116,7 +116,7 @@ If your pi wont boot after applying a setup just take out the sdcard put it in a
 
 I have been experimenting and you can see some of the results I have gotten in [this video](https://www.youtube.com/watch?v=dsrxdCtNzLg&feature=youtu.be), 
 
-Tons of speed imrpovments on default settings there.  Many games that were unplayable or not booting now work.  For example Moonwalker and Wild West Cowboys of Moo Mesa in mame alone. 
+Tons of speed improvements on default settings there.  Many games that were unplayable or not booting now work. For example Moonwalker and Wild West Cowboys of Moo Mesa in mame alone. 
 
 With N64 I do have to cycle between emulators and turn down video resolutions but I am getting highly playable results. 
 
