@@ -17,4 +17,4 @@ To get the games running, make sure to set each game to use the software rendere
 
 ## Controls:
 
-Keyboard and mouse.
+Keyboard, mouse and joystick all supported.
