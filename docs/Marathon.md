@@ -6,7 +6,7 @@ _Marathon is the Apple version of DOOM._
 
 ***
 
-## Emulator: [Alephone](https://alephone.lhowon.org/)
+## Emulator: [Aleph One](https://alephone.lhowon.org/)
 
 
 ## ROMS:
