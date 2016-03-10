@@ -17,7 +17,7 @@ U UPDATE RetroPie Setup Script
 Exit, and run the `retropie_setup.sh` script again. Select:
 ```shell
 SETUP (only if you already have run one of the installations above)
-317 Install PS3 controller driver
+310 Install PS3 controller driver
 ```
 After it finishes compiling, the GUI prompt will ask you to make sure that your Bluetooth dongle is connected. Press enter and connect your PS3 controller.
 
