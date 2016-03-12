@@ -35,7 +35,7 @@ In the doom rom folder, you will need prboom.wad and the Doom IWADs (doom.wad an
 
 Create a folder for the custom PWAD and extract your custom PWAD(s) there. For example, for the Batman Doom mod, create a folder called batman.
 
-Create symlinks to prboom.wad and Doom2 WAD in the batman folder with the following commands.
+Create symlinks to prboom.wad and Doom2 WAD in the batman folder with the following commands. If you have problems creating these links, you can also just copy these files.
 
 ```shell
 ln -s /home/pi/RetroPie/roms/ports/doom/prboom.wad /home/pi/RetroPie/roms/ports/batman/prboom.wad
