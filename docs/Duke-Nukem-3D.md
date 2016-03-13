@@ -4,8 +4,6 @@ _Duke Nukem 3D is a First Person Shooter game developed by 3D Realms in 1996._
 
 ## Port: [Eduke32](http://www.eduke32.com/)
 
-**Note** mouse aiming does not work in this port unfortunately.
-
 ## ROMs
 
 Shareware versions of **duke3d.grp** and **duke.rts** are provided via symlinks in
