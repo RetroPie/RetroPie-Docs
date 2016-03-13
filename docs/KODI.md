@@ -95,11 +95,7 @@ fbset -depth 8 && fbset -depth 16
 ```
 (note there may be some issues with the framebuffer but its the only functioning fix at the moment short of compiling Kodi 15)
 
-### Kodi 15
-
-To compile Kodi 15 you can just replace the following in 
-
-`/home/pi/RetroPie-Setup/scriptmodules/ports/kodi.sh`
+### Kodi 16 (ONLY ON RASPBIAN JESSIE, TEST AT OWN RISK)
 
 ```
 #!/usr/bin/env bash
@@ -113,33 +109,54 @@ To compile Kodi 15 you can just replace the following in
 # at https://raw.githubusercontent.com/RetroPie/RetroPie-Setup/master/LICENSE.md
 #
 
-# http://www.gtkdb.de/index_36_2176.html
 rp_module_id="kodi"
-rp_module_desc="Install Kodi"
+rp_module_desc="Kodi - Open source home theatre software"
 rp_module_menus="4+"
-rp_module_flags="nobin"
+rp_module_flags="nobin !mali"
 
 function depends_kodi() {
-    echo "deb http://archive.mene.za.net/raspbian wheezy contrib unstable" > /etc/apt/sources.list.d/mene.list
-    apt-key adv --keyserver keyserver.ubuntu.com --recv-key 5243CDED
+ # add repository to install Kodi 16 (Jarvis)
+    echo "deb http://pipplware.pplware.pt/pipplware/dists/jessie/main/binary /" > /etc/apt/sources.list.d/pipplware_jessie.list
+    wget -O - http://pipplware.pplware.pt/pipplware/key.asc | sudo apt-key add -
 }
 
 function install_kodi() {
+    # remove old repository - we will use Kodi from the Raspbian repositories
+    rm -f /etc/apt/sources.list.d/mene.list
     aptInstall kodi
 }
 
 function configure_kodi() {
-    echo 'SUBSYSTEM=="input", GROUP="input", MODE="0660"' > /etc/udev/rules.d/99-input.rules
+    if [[ ! -f /etc/udev/rules.d/99-input.rules ]]; then
+        echo 'SUBSYSTEM=="input", GROUP="input", MODE="0660"' > /etc/udev/rules.d/99-input.rules
+    fi
 
-    mkRomDir "kodi"
+    # we launch directly rather than from roms section now
+    rm -f "$romdir/ports/Kodi.sh"
+    rm /etc/apt/sources.list.d/pipplware_jessie.list
 
-    cat > "$romdir/kodi/Kodi.sh" << _EOF_
-#!/bin/bash
-/opt/retropie/supplementary/runcommand/runcommand.sh 0 "kodi-standalone" "kodi"
-_EOF_
-
-    chmod +x "$romdir/kodi/Kodi.sh"
-
-    setESSystem 'Kodi' 'kodi' '~/RetroPie/roms/kodi' '.sh .SH' '%ROM%' 'pc' 'kodi'
+    addDirectLaunch "$md_id" "Kodi" "kodi-standalone"
 }
 ```
+The module above includes joypad support by default: add your custom keymap to `/home/pi/.kodi/userdata/keymap/joystick.xml`
+
+You can see what your joystick name is with `cat /proc/bus/input/devices`
+
+Example `joystick.xml`
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<keymap>
+  <global>
+    <joystick name="USB gamepad           ">
+      <button id="3">Select</button>
+      <button id="2">Back</button>
+      <axis id="1" limit="+1">Right</axis>
+      <axis id="1" limit="-1">Left</axis>
+      <axis id="2" limit="-1">Up</axis>
+      <axis id="2" limit="+1">Down</axis>
+    </joystick>
+  </global>
+</keymap>
+```
+
+For Xbox controls see [**HERE**](http://kodi.wiki/view/Xbox_360_Wireless_Controller) and [HERE](https://github.com/xbmc/xbmc/blob/Eden/system/keymaps/joystick.Microsoft.Xbox.360.Controller.xml)
