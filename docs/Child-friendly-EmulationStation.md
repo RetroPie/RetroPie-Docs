@@ -19,6 +19,11 @@ The Full mode offers the same functionality as the vanilla ES UI. The Kiosk mode
 * [Future developments](#future-developments)
 * [Credits](#credits)
 
+<a href="https://www.youtube.com/watch?v=1BWjNp7Br9c
+" target="_blank"><img src="https://i.ytimg.com/vi_webp/1BWjNp7Br9c/mqdefault.webp" 
+alt="Kid Friendly EmulationStation" width="300" height="190" border="10" /></a>  
+  
+**Video Guide**: https://www.youtube.com/watch?v=1BWjNp7Br9c  
 ***
 
 # Installation
@@ -55,7 +60,7 @@ This branch of ES has incorporated the pull request by Kaptainka to allow the se
 Setting a game to be a favorite can be done using the metadata editor (press select, then 'edit this games metadata', scroll down to 'favorite on/off'). If your [theme](#themes) allows it, you can also toggle the favorite state quickly by pressing 'x'.
 
 ## Gamelist.xml 
-So in three new tags have been introduced: favorites, kid game, and hidden (all boolean).   
+So in all, three new tags have been introduced: favorites, kid game, and hidden (all boolean).   
 `<game>`  
  	`...`   
  	`<favorite>false</favorite>`   
