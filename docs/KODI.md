@@ -112,4 +112,28 @@ Example `joystick.xml`
 </keymap>
 ```
 
+Ibuffalo Template: `ibuffalo.xml`
+
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<keymap>
+  <global>
+    <joystick name="USB,2-axis 8-button gamepad  "> <!-- iBuffalo SNES -->
+      <button id="1">Select</button><!-- A -->
+      <button id="2">Back</button><!-- B -->
+	  <button id="3">Stop</button><!-- X -->
+	  <button id="4">ContextMenu</button><!-- Y -->
+	  <button id="5">Rewind</button><!-- L -->
+	  <button id="6">FastForward</button><!-- R -->
+	  <button id="7">Info</button><!-- SELECT -->
+	  <button id="8">PlayPause</button><!-- START -->
+      <axis id="1" limit="+1">Right</axis>
+      <axis id="1" limit="-1">Left</axis>
+      <axis id="2" limit="-1">Up</axis>
+      <axis id="2" limit="+1">Down</axis>
+    </joystick>
+  </global>
+</keymap>
+```
+
 For Xbox controls see [**HERE**](http://kodi.wiki/view/Xbox_360_Wireless_Controller) and [HERE](https://github.com/xbmc/xbmc/blob/Eden/system/keymaps/joystick.Microsoft.Xbox.360.Controller.xml)
