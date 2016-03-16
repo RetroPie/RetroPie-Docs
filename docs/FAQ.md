@@ -10,7 +10,7 @@
 - [The PSX emulator reports no BIOS found. What do I do?](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#the-psx-emulator-reports-no-bios-found-what-do-i-do)
 - [Which memory split should I use?](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#which-memory-split-should-i-use)
 - [How do I hide the boot text?](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#how-do-i-hide-the-boot-text)
-- [Why does shutting down/booting/restarting EmulationStation take ages?](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#Why-does-shutting-down-booting-restarting-EmulationStation-take-ages)
+- [Why does shutting down/booting/restarting EmulationStation take ages?](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#Why-does-shut-down-and-reboot-take-ages)
 
 ### Why do some emulators not show up?
 
@@ -209,6 +209,6 @@ You can also disable the rainbow splash at the beginning (not to be confused wit
 
 Add `disable_splash=1` in `/boot/config.txt`
 
-### Why does shutting down/booting/restarting EmulationStation take ages?
+### Why does shut down and reboot take ages?
 
 Previous to RetroPie 3.4, there was whereby EmulationStation was terminated on reboot/shut down, rather than shutting down 'cleanly'. This has now been fixed, so every time you reboot EmulationStation rewrites all the metadata about your roms so that play counts, last-played dates, etc., are saved. This has the side-effect of the causing the whole process to take longer, relative to how many ROMs you have. MAME/FBA ROMs can often form the bulk of libraries, so it might be helpful to remove clones by [rebuilding your set with a custom parent-only DAT](https://github.com/retropie/retropie-setup/wiki/Managing-ROMs).
