@@ -10,7 +10,7 @@
 - [The PSX emulator reports no BIOS found. What do I do?](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#the-psx-emulator-reports-no-bios-found-what-do-i-do)
 - [Which memory split should I use?](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#which-memory-split-should-i-use)
 - [How do I hide the boot text?](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#how-do-i-hide-the-boot-text)
-- [Why does shutting down/booting/restarting EmulationStation take ages?](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#slow-reboot)
+- [Why does shutting down/booting/restarting EmulationStation take ages?](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#Why-does-shutting-down-booting-restarting-EmulationStation-take-ages)
 
 ### Why do some emulators not show up?
 
