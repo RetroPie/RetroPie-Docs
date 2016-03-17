@@ -52,7 +52,7 @@ sudo apt-get install bluetooth vorbis-tools python-cwiid wminput
 
 uinput device needs to work with non-root users. To do so, create a file as root user (using `sudo`) called `/etc/udev/rules.d/wiimote.rules` with the following line:
 ```shell
-KERNEL=="uinput", MODE:="0666"
+KERNEL=="uinput", MODE="0666"
 ```
 
 To make this change active, reboot the Raspberry Pi, or paste this command at the commandline:
