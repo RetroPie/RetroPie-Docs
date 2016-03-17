@@ -11,6 +11,7 @@
 - [Which memory split should I use?](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#which-memory-split-should-i-use)
 - [How do I hide the boot text?](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#how-do-i-hide-the-boot-text)
 - [Why does shut down and reboot take ages?](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#why-does-shut-down-and-reboot-take-ages)
+- [Why aren't my in-game saves working properly?](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#why-arent-my-ingame-saves-working-properly)
 
 ### Why do some emulators not show up?
 
@@ -212,3 +213,10 @@ Add `disable_splash=1` in `/boot/config.txt`
 ### Why does shut down and reboot take ages?
 
 Previous to RetroPie 3.4, there was an issue whereby EmulationStation was terminated on reboot/shut down, rather than shut down 'cleanly'. This has now been fixed, so every time you reboot/shut down EmulationStation rewrites all metadata about your roms, so that play counts, last-played dates, etc., are saved. This has the side-effect of the causing the whole process to take longer, relative to how many ROMs you have. MAME/FBA ROMs can often form the bulk of libraries, so it might be helpful to remove clones by [rebuilding your set with a custom parent-only DAT](https://github.com/retropie/retropie-setup/wiki/Managing-ROMs).
+
+### Why aren't my in-game saves working properly?
+
+All retroarch emulators use the same method to save to your .srm or SRAM. The default behavior is to only write to your srm file upon a clean exit back to emulationstation. This is done by default with the exit hotkey start+select. If the game happens to completely freeze or crash, it's likely that you will lose in-game progress even after saving.
+
+Besides using save states, one optional method you can use to prevent this accidental loss in progress is the autosave_interval setting. This setting can be changed in `/opt/retropie/configs/all/retroarch.cfg`
+either with the terminal, Configure Retroarch / Launch RetroArch RGUI under `settings->saving`, or Edit RetroPie/RetroArch configurations under `Manually edit Retroarch configurations`. Once autosave_interval is set to equal a number of seconds, retroarch will automatically write your save data to the srm file every interval of that number of seconds.
