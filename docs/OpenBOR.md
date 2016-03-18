@@ -10,6 +10,8 @@ _OpenBOR is the open source continuation of Beats of Rage - a 2D sidescrolling b
 
 ### ROMS:
 
+Accepted extensions: **.pak**
+
 Place your OpenBOR games in 
 ```
 /home/pi/RetroPie/roms/ports/openbor
