@@ -97,6 +97,7 @@
 * [Warcraft/Starcraft](Stratagus)
 * [Wolfenstein 3D](Wolfenstein-3D)
 * [Zelda Engine](Solarus) 
+* [ZDOOM] (ZDOOM)
 
 ## Advanced Configuration
 
