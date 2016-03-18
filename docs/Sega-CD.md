@@ -41,7 +41,7 @@ The BIOS filename is: **bios_CD_U.bin** (can be renamed from the above BIOS)
 
 Place this lr-Genesis-Plus-GX BIOS file in
 ```
-/home/pi/RetroPie/roms/segacd
+/home/pi/RetroPie/BIOS
 ```
 the alternate BIOS files above can be renamed: bios_CD_E.bin, bios_CD_J.bin (Europe and Japan respectively)
 
