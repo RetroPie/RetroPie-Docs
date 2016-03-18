@@ -44,7 +44,7 @@ There are currently two versions of RetroPie 3.6. There is one version for Raspb
 
 **[Raspberry Pi 1 / Zero](https://github.com/RetroPie/RetroPie-Setup/releases/download/3.6/retropie-v3.6-rpi1.img.gz)**
 
-**[Raspberry Pi 2 / Raspberry Pi 3](https://github.com/RetroPie/RetroPie-Setup/releases/download/3.6/retropie-v3.6-rpi2.img.gz)**
+**[Raspberry Pi 2 / Raspberry Pi 3](https://github.com/RetroPie/RetroPie-Setup/releases/download/3.6/retropie-v3.6-rpi2_rpi3.img.gz)**
 
 (If these links become outdated see the downloads page [here](https://github.com/RetroPie/RetroPie-Setup/releases).)
 
