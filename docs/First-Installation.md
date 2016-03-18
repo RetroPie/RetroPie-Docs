@@ -74,7 +74,7 @@ If you're updating from a previous version of retropie see [**HERE**](https://gi
 
 ## Controller Configurations
 
-When you first boot up you will be welcomed with the following screen- unlike some older versions of retropie, this menu will configure your controls for both Emulationstation and RetroArch Emulators:
+On first boot your filesystem will be expanded automatically, you will then be welcomed with the following screen- this menu will configure your controls for both Emulationstation and RetroArch Emulators:
 
 ![welcomescreen](https://cloud.githubusercontent.com/assets/10035308/9140482/cf42f25c-3cee-11e5-8f91-c1fc1c57175c.png)
 
