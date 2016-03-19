@@ -7,7 +7,7 @@
 Emulator | Location
 -----|------
 | **Amiga** | `/home/pi/RetroPie/BIOS/kick13.rom` **OR** `/home/pi/RetroPie/BIOS/kick20.rom` **OR** `/home/pi/RetroPie/BIOS/kick31.rom`
-| **Atari800** | `/home/pi/RetroPie/BIOS/ATARIXL.ROM (BIOS for Atari XL/XE OS)` **OR** `/home/pi/RetroPie/BIOS/ATARIBAS.ROM (BIOS for the BASIC interpreter)` **OR** `/home/pi/RetroPie/BIOS/ATARIOSA.ROM (BIOS for Atari 400/800 PAL)` **OR** `/home/pi/RetroPie/BIOS/ATARIOSB.ROM (BIOS for Atari 400/800 NTSC)` **OR** `/home/pi/RetroPie/BIOS/atari5200.rom (BIOS for the Atari 5200)`
+| **Atari800** | `/home/pi/RetroPie/BIOS/ATARIXL.ROM (BIOS for Atari XL/XE OS)` **OR** `/home/pi/RetroPie/BIOS/ATARIBAS.ROM (BIOS for the BASIC interpreter)` **OR** `/home/pi/RetroPie/BIOS/ATARIOSA.ROM (BIOS for Atari 400/800 PAL)` **OR** `/home/pi/RetroPie/BIOS/ATARIOSB.ROM (BIOS for Atari 400/800 NTSC)` **OR** `/home/pi/RetroPie/BIOS/5200.ROM (BIOS for the Atari 5200)`
 | **Atari 7800** |  This BIOS is optional. `/home/pi/RetroPie/BIOS/7800 BIOS (U).rom`
 | **CoCo** | `/home/pi/RetroPie/BIOS/bas13.rom`
 | **Dragon32** | `/home/pi/RetroPie/BIOS/d32.rom`
