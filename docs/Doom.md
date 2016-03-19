@@ -61,6 +61,126 @@ A permission denied error after launching a script from EmulationStation means t
 
     sudo chmod +x "/home/pi/RetroPie/roms/ports/Batman Doom.sh"
 
+### How to Launch Doom IWADs and Mods (PWADs) from Emulationstation using ZDOOM.
+
+First off, you will want to go into RetroPie-Setup, and install ZDOOM from Experimental Packages. 
+
+Once installed, we will employ [Rex Claussen's, The Darkest Hour](http://doomnexus.drdteam.org/DH_Pix.html).
+
+Go ahead and [Download The Darkest Hour](ftp://ftp.fu-berlin.de/pc/msdos/games/idgames/levels/doom2/Ports/d-f/darkhour.zip). Once downloaded, go ahead and extract it's contents to somewhere on your hard drive so that you know where to find it as we will come back to it here shortly.
+
+Next you will either want to SSH into your Pi, or drop out of EmulationStation using F4 on your keyboard. 
+At the command line, type the following to navigate to your "ports" directory.
+
+`cd /home/pi/RetroPie/roms/ports/`
+
+ Next, let's create a directory called "zdoom". To do so, type the following:
+
+`mkdir zdoom`
+
+ Now type the following in order to enter the "zdoom" directory.
+
+`cd zdoom`
+
+Once inside of "zdoom", type the following command to create a folder where The Darkest Hour's files will reside. 
+
+`mkdir DarkestHour`
+
+ Next you will want navigate back to the ports directory by typing the following:
+
+`cd ~/RetroPie/roms/ports/`
+
+ From here you will want to create a new script that we will use to launch The Darkest Hour from EmulationStation.
+
+To do this, type the following to open into the Nano text editor.
+
+`sudo nano Darkest Hour.sh
+
+ Next we will want type out the following so that it appears exactly as you see it here:
+
+`#!/bin/bash
+"/opt/retropie/supplementary/runcommand/runcommand.sh" 0 _SYS_ darkesthour`
+
+ In order to save your work, hold Down "CONTROL + X". Type "Y" to confirm", then give it the title of "Darkest Hour.sh", then confirm the save. 
+
+ Once that is complete you will want to type the following so that you have proper permissions within EmulationStation to launch The Darkest Hour. 
+
+`sudo chmod 775 Darkest\ Hour.sh`
+
+Now we will need to navigate to the /opt/retropie/configs/ folder by typing the following:
+
+`cd /opt/retropie/configs/`
+
+ From here you will want to create a folder in call lower case titled "darkesthour", by typing the following:
+
+`mkdir darkesthour`
+
+Once this is complete you will want to copy the files from the "doom" folder into the "darkesthour" folder by typing the following:
+
+`cp doom/*.* darkesthour/`
+
+Then you will need to navigate into the "darkesthour" directory by typing:
+
+`cd darkesthour`
+
+From within the folder you will want to edit the file "retroarch.cfg" by typing:
+
+`sudo nano retroarch.cfg`
+
+One inside of Nano, you will see the following:
+
+`# Settings made here will only override settings in the global retroarch.cfg if placed above the #include line
+
+input_remapping_directory = /opt/retropie/configs/doom/
+
+#include "/opt/retropie/configs/all/retroarch.cfg"`
+
+Change it so that it reads as follows:
+
+`# Settings made here will only override settings in the global retroarch.cfg if placed above the #include line
+
+input_remapping_directory = /opt/retropie/configs/darkesthour/
+
+#include "/opt/retropie/configs/all/retroarch.cfg"`
+
+Save your work by holding Down "CONTROL + X". Then keep hitting "Y" to confirm each step until save. 
+
+Next you will want to edit "emulators.cfg". To do this type:
+
+`sudo nano emulators.cfg`
+
+Nano will open and you will see the following:
+
+`lr-prboom="/opt/retropie/emulators/retroarch/bin/retroarch -L /opt/retropie/libretrocores/lr-prboom/prboom_libretro.so --config /opt/retropie/configs/doom/retroarch.cfg /ho$
+default="zdoom"
+zdoom="/opt/retropie/ports/zdoom/zdoom -iwad /home/pi/RetroPie/roms/ports/doom/doom1.wad"`
+
+Edit it so that it looks like this:
+
+`lr-prboom="/opt/retropie/emulators/retroarch/bin/retroarch -L /opt/retropie/libretrocores/lr-prboom/prboom_libretro.so --config /opt/retropie/configs/darkesthour/retroarch.cfg /ho$
+default="zdoom"
+zdoom="/opt/retropie/ports/zdoom/zdoom -iwad /home/pi/RetroPie/roms/ports/doom/doom2.wad -file /home/pi/RetroPie/roms/ports/zdoom/Darkest\ Hour/"`
+
+Save your work by holding Down "CONTROL + X". Then keep hitting "Y" to confirm each step until save. 
+
+ Returning to your computer you will want to navigate to your /home/pi/RetroPie/roms/ports/zdoom/DarkestHour/ folder on the Pi, via SFTP or Samba.
+
+Next copy over the "DarkHour.wad" file from your PC into the "DarkestHour" directory on the Pi. 
+
+Now that this is complete you will want to go back two directories so that we are in the "ports" directory. Next advance one folder so that you are inside of the "doom" directory. Now copy over a fully upgraded original DOOM II iWAD, or one from DOOM 3. It should be titled "doom2.wad", and should be in all lower case.  
+
+ Having completed this step, you will now want to reboot EmulationStation, navigate to "Ports" and test your new "Darkest Hour" entry.
+
+
+
+ 
+
+
+
+
+
+
+
 ### Music
 
 The most ideal and authentic way to listen to the the original Doom (1&2) tracks is to google 'doom 1 and 2 midis' and download them. You can then convert the midi files into MP3s.
