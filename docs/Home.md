@@ -84,6 +84,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [Descent](Descent) [(DXX-Rebirth)](http://www.dxx-rebirth.com/) (EXPERIMENTAL) 
 * [DOOM](Doom) [(lr-prboom)](https://github.com/libretro/libretro-prboom), [(ZDOOM)](https://github.com/rheit/zdoom)
 * [Duke Nukem 3D](Duke-Nukem-3D) [(Eduke32)](http://www.eduke32.com/)
+* [EasyRPG Player](EasyRPG) [(EasyRPG)](https://easy-rpg.org/)
 * [Giana's Return](Giana's-Return) (EXPERIMENTAL)
 * [Lincity](Lincity) (EXPERIMENTAL)
 * [Löve](Love) [(Löve)](https://bitbucket.org/rude/love/src) (EXPERIMENTAL)
