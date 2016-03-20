@@ -25,7 +25,7 @@ If all was done correctly, your system should now be ready to launch what ever g
 To demonstrate how to install a games for RPG maker, I will use [Taut] (http://www.indiedb.com/games/taut).
 
 Once you have downloaded the "TautENG.rar" file, you can extract it onto your computer desktop, at which you will see that the game file are contained inside a folder titled "Taut (English Version)". Copy this folder to:
-
+```
 /home/pi/RetroPie/roms/ports/easyrpgplayer/games/
 ```
 Now that this step is complete, launch EasyRPG Player, and you should see Taut as selectable from the game list. 
