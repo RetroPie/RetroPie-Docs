@@ -8,7 +8,7 @@ _EasyRPG Player is an open source implementation of the RPG Maker 2000/2003 engi
 
 ## Preparation
 
-After you have installed Easy RPG Player, it will have created a new folder inside of roms/ports titled "easyrpgplayer". What you will want to do is download The [Rpg Maker 2000 English Translation by Don Miguel] (http://crankeye.com/?page=downloads), as well as the English translation of [RPG Maker 2003 by Advocate] (http://crankeye.com/?page=downloads).
+After you have installed Easy RPG Player, it will have created a new folder inside of roms/ports titled "easyrpgplayer". What you will want to do is download The [Rpg Maker 2000 English Translation by Don Miguel] (http://2drpg.com/2000.php), as well as the English translation of [RPG Maker 2003 by Advocate] (http://2drpg.com/2003.php).
 Once you have both of these extracted, install them in Windows or via Wine if you are using Linux.
 First off you will want to take the content of the install folder for RPG Maker 2000 and copy them to:
 ```
