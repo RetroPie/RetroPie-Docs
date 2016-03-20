@@ -76,6 +76,7 @@
 * [Descent](Descent)  
 * [DOOM](Doom) 
 * [Duke Nukem 3D](Duke-Nukem-3D) 
+* [EasyRPG Player](EasyRPG-Player)
 * [Giana's Return](Giana's-Return)
 * [Lincity](Lincity)
 * [Löve](Love) 
