@@ -33,6 +33,12 @@ For OS X users, [here is a tutorial for mounting the filesystem](http://osxdaily
 
 Optionally: 20. If the boot process is halting at the resizing of the ext4 partition, delete "/etc/profile.d/01-expand.sh" on the ext4 partition. NOOBS already resized the partition.
 
+use command line : sudo rm 01_expand.sh
+
+If the 01-expand.sh file isn't yet in this directory, you should delete the bash_completion.sh 
+with this command line : sudo rm bash_completion.sh
+
+
 [retropiedownload]: http://blog.petrockblock.com/retropie/retropie-downloads/
 [flashsd]: http://elinux.org/RPi_Easy_SD_Card_Setup
 [noobsdownload]: http://www.raspberrypi.org/downloads/
