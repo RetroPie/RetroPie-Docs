@@ -33,6 +33,8 @@ For OS X users, [here is a tutorial for mounting the filesystem](http://osxdaily
 
 Optionally: 20. If the boot process is halting at the resizing of the ext4 partition, delete "/etc/profile.d/01-expand.sh" on the ext4 partition. NOOBS already resized the partition.
 
+![resizing on first boot](http://www.pommehappy.fr/wp-content/uploads/2016/03/Capture-décran-2016-03-21-16.43.43.png)
+
 use command line : sudo rm 01_expand.sh
 
 If the 01-expand.sh file isn't yet in this directory, you should delete the bash_completion.sh 
