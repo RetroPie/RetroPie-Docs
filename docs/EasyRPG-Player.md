@@ -1,0 +1,1 @@
+EasyRPG Player lets you play games created with [RPG Maker 2000](https://2drpg.com/2000.php), [RPG Maker 2003](https://2drpg.com/2003.php), and [Easy RPG](https://easy-rpg.org/)
