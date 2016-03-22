@@ -9,11 +9,11 @@ For OS X users, [here is a tutorial for mounting the filesystem](http://osxdaily
 1. [Download the latest RetroPie image][retropiedownload] and [flash an SD card (or other volume) with it][flashsd]
 2. [Download the latest NOOBS release.][noobsdownload] You will need the full NOOBS download (not NOOBS Lite) since we will be using the included Raspbian image as a base.
 3. While that downloads, write down the full sizes of the two partitions on the RetroPie SD card ('boot' and 'retropie' as of this writing). You will need them later. (OS X users: type `diskutil list` at the command line to get this easily.)
-4. Create the `.tar` file of the main RetroPie filesystem (the 'retropie' partition). From the command line on your primary computer, navigate to where the 'retropie' partition is mounted (on OS X, try `cd /Volumes/retropie`). The command is `tar -cvpf ~/Desktop/retropie.tar ./*` and this will create the `retropie.tar` file on your desktop.
+4. Create the `.tar` file of the main RetroPie filesystem (the 'retropie' partition). From the command line on your primary computer, navigate to where the 'retropie' partition is mounted (on OS X, try `cd /Volumes/retropie`). The command is `sudo tar -cvpf ~/Desktop/retropie.tar ./*` and this will create the `retropie.tar` file on your desktop.
 5. Write down the size of `retropie.tar`.
 6. Navigate to your desktop (or wherever you saved the tarball) with `cd ~/Desktop/` and compress the tarball with the command `xz -9 -e retropie.tar`. This will take some time.
 7. Now we need to do the same thing to the 'boot' partition, but `tar` apparently doesn't like FAT-formatted volumes. So... Copy the contents of the 'boot' partition to a folder on your hard drive. I used `~/Desktop/rpi/boot`.
-8. From the command line, navigate to the 'boot' folder you just created. The command is `tar -cvpf ~/Desktop/boot.tar ./*` and this will create the `boot.tar` file on your desktop.
+8. From the command line, navigate to the 'boot' folder you just created. The command is `sudo tar -cvpf ~/Desktop/boot.tar ./*` and this will create the `boot.tar` file on your desktop.
 9. Write down the size of `boot.tar`.
 10. Navigate to your desktop (or wherever you saved the tarball) with `cd ~/Desktop/` and compress the tarball with the command `xz -9 -e boot.tar`. This won't take long, not nearly as long as the 'retropie' tarball.
 11. Hopefully NOOBS has finished downloading by now. Unzip it, and open up the 'os' folder. Duplicate the 'Raspbian' folder and rename it 'RetroPie'.
@@ -37,7 +37,7 @@ Optionally: 20. If the boot process is halting at the resizing of the ext4 parti
 
 use command line : sudo rm 01_expand.sh
 
-If the 01-expand.sh file isn't yet in this directory, you should delete the bash_completion.sh 
+If the 01-expand.sh file isn't yet in this directory, just delete the bash_completion.sh 
 with this command line : sudo rm bash_completion.sh
 
 
