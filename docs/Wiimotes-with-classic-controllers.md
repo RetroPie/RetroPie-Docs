@@ -532,7 +532,8 @@ hciconfig hci0 pscan
 exit 0
 ```
 
-**2. My retroarch controls aren't working/messed up!**
+**3. My retroarch controls aren't working/messed up!**
+
 After creating the controls in emulationstation a .cfg was created and resides in the directory along with any other controllers configured here: `/opt/retropie/configs/all/retroarch-joypads/`
 Mine is named `NintendoWiimote.cfg`. This is what my config file looks like:
 ```shell
