@@ -2,8 +2,8 @@ EasyRPG Player lets you play [GAMES](http://vsrecommendedgames.wikia.com/wiki/Rp
 
 To make them work, copy the contents of the two RPG Maker releases from their install folders on your PC, into their respective folder in:
 
-`/roms/ports/easyrpgplayer/` 
+`~/RetroPie/roms/ports/easyrpgplayer/` 
 
 To play the supported games you will copy their own individual folders within:
 
-`/roms/ports/easyrpgplayer/games/`
+`~/RetroPie/roms/ports/easyrpgplayer/games/`
