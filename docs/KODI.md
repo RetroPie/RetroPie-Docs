@@ -60,8 +60,7 @@ function configure_kodi() {
         echo 'SUBSYSTEM=="input", GROUP="input", MODE="0660"' > /etc/udev/rules.d/99-input.rules
     fi
 
-    # we launch directly rather than from roms section now
-    rm -f "$romdir/ports/Kodi.sh"
+    # remove the repo so it doesnt conflict with other repositories
     rm /etc/apt/sources.list.d/pipplware_jessie.list
 }
 ```
