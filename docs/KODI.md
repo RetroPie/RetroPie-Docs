@@ -20,6 +20,10 @@ Visit the RetroPie-Setup Screen, select Experimental Packages, and select Kodi. 
 
 ### Kodi 16 (ONLY ON RASPBIAN JESSIE, TEST AT OWN RISK)
 
+To add the code you have to first make a backup of the current Kodi.sh module in `/home/pi/RetroPie-Setup/scriptmodules/ports` and then replace the contents with the following:
+
+Note that you will need elevated priveleges to make any edits. You can edit the file directly with sudo over SSH or you can see [HERE](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#why-cant-i-ssh-as-root-anymore) on how to log in as user ROOT in winscp. 
+
 ```
 #!/usr/bin/env bash
 
