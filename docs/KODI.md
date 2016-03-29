@@ -18,36 +18,6 @@ Visit the RetroPie-Setup Screen, select Experimental Packages, and select Kodi. 
 
 ![](http://kodi.wiki/images/3/3c/Yatse_Holo_1.png)
 
-# Kodi on Raspbian Wheezy
-## Black Screen Freeze Fix
-
-If you find yourself having troubles with your screen freezing when you exit kodi, you can replace the code in `/roms/ports/kodi.sh` with
-```
-#!/bin/bash
- 
-LOG_FILE=$HOME/.kodi/temp/kodi.log
- 
-rm $LOG_FILE 2> /dev/null
- 
-/usr/lib/kodi/kodi.bin --standalone &
- 
-while [[ ! -f $LOG_FILE ]] ; do
-  sleep 1s
-done
- 
-while read line ; do
-  if [[ ${line} =~ "application stopped" ]] ; then
-    echo "Killing kodi"
-    break
-  fi
-done < <(tail --pid=$$ -f -n0 $LOG_FILE)
- 
-killall kodi.bin
- 
-fbset -depth 8 && fbset -depth 16
-```
-(note there may be some issues with the framebuffer but its the only functioning fix at the moment short of compiling Kodi 15)
-
 ### Kodi 16 (ONLY ON RASPBIAN JESSIE, TEST AT OWN RISK)
 
 ```
@@ -80,6 +50,8 @@ function install_kodi() {
 }
 
 function configure_kodi() {
+    addPort "$md_id" "kodi" "Kodi" "kodi-standalone"
+
     if [[ ! -f /etc/udev/rules.d/99-input.rules ]]; then
         echo 'SUBSYSTEM=="input", GROUP="input", MODE="0660"' > /etc/udev/rules.d/99-input.rules
     fi
@@ -87,8 +59,6 @@ function configure_kodi() {
     # we launch directly rather than from roms section now
     rm -f "$romdir/ports/Kodi.sh"
     rm /etc/apt/sources.list.d/pipplware_jessie.list
-
-    addDirectLaunch "$md_id" "Kodi" "kodi-standalone"
 }
 ```
 The module above includes joypad support by default: add your custom keymap to `/home/pi/.kodi/userdata/keymap/joystick.xml`
@@ -137,3 +107,37 @@ Ibuffalo Template: `ibuffalo.xml`
 ```
 
 For Xbox controls see [**HERE**](http://kodi.wiki/view/Xbox_360_Wireless_Controller) and [HERE](https://github.com/xbmc/xbmc/blob/Eden/system/keymaps/joystick.Microsoft.Xbox.360.Controller.xml)
+
+```
+OLD CONFIGS:
+
+# Kodi on Raspbian Wheezy
+## Black Screen Freeze Fix
+
+If you find yourself having troubles with your screen freezing when you exit kodi, you can replace the code in `/roms/ports/kodi.sh` with
+
+#!/bin/bash
+ 
+LOG_FILE=$HOME/.kodi/temp/kodi.log
+ 
+rm $LOG_FILE 2> /dev/null
+ 
+/usr/lib/kodi/kodi.bin --standalone &
+ 
+while [[ ! -f $LOG_FILE ]] ; do
+  sleep 1s
+done
+ 
+while read line ; do
+  if [[ ${line} =~ "application stopped" ]] ; then
+    echo "Killing kodi"
+    break
+  fi
+done < <(tail --pid=$$ -f -n0 $LOG_FILE)
+ 
+killall kodi.bin
+ 
+fbset -depth 8 && fbset -depth 16
+
+(note there may be some issues with the framebuffer but its the only functioning fix at the moment short of compiling Kodi 15)
+```
