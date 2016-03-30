@@ -64,6 +64,28 @@ function configure_kodi() {
     rm /etc/apt/sources.list.d/pipplware_jessie.list
 }
 ```
+
+If you want to setup Kodi as its own system instead of in ports replace the configure function with this:
+
+```
+function configure_kodi() {
+    echo 'SUBSYSTEM=="input", GROUP="input", MODE="0660"' > /etc/udev/rules.d/99-input.rules
+
+    mkRomDir "kodi"
+
+    cat > "$romdir/kodi/Kodi.sh" << _EOF_
+#!/bin/bash
+/opt/retropie/supplementary/runcommand/runcommand.sh 0 "kodi-standalone" "kodi"
+_EOF_
+
+    chmod +x "$romdir/kodi/Kodi.sh"
+
+    # remove the repo so it doesnt conflict with other repositories
+    rm /etc/apt/sources.list.d/pipplware_jessie.list
+
+    setESSystem 'Kodi' 'kodi' '~/RetroPie/roms/kodi' '.sh .SH' '%ROM%' 'pc' 'kodi'
+}
+```
 The module above includes joypad support by default: add your custom keymap to `/home/pi/.kodi/userdata/keymap/joystick.xml`
 
 You can see what your joystick name is with `cat /proc/bus/input/devices`
