@@ -111,13 +111,15 @@ gpu_freq=400
 Secondary more aggressive settings
 ```
 gpu_mem=320
-arm_freq=1450
+arm_freq=1400
 over_voltage=6
 sdram_freq=500
-v3d_freq=550
+v3d_freq=500
 force_turbo=1
 boot_delay=1
 temp_limit=80
+core_freq=500
+gpu_freq=400
 ```
 
 Mind you these are just stable settings I have found and I am far from done tuning.  
