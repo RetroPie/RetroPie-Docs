@@ -108,6 +108,17 @@ sdram_freq=500
 core_freq=500
 gpu_freq=400
 ```
+Secondary more aggressive settings
+```
+gpu_mem=320
+arm_freq=1450
+over_voltage=6
+sdram_freq=500
+v3d_freq=550
+force_turbo=1
+boot_delay=1
+temp_limit=80
+```
 
 Mind you these are just stable settings I have found and I am far from done tuning.  
 Under load my cpu is running cool and i have not seen it spike over 51c 
