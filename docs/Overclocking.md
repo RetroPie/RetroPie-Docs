@@ -110,7 +110,7 @@ gpu_freq=400
 ```
 Secondary more aggressive settings
 ```
-gpu_mem=320
+gpu_mem=600
 arm_freq=1400
 over_voltage=6
 sdram_freq=500
