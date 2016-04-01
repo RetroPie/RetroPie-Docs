@@ -137,4 +137,41 @@ Try the different emulators.  For example Goldeneye and Killer Instinct gold I c
 Try downscaling your resolution for games that are still lagggy.  640 X 480 16:9  is what I pushy both KI and Goldeneye to but get highly playable and good looking results. 
 
 
+Other tuning footnotes.
+Helpful Tricks to improve performance.
+
+#Improving Input lag and delay
+Modify the following in your /opt/retropie/configs/all/retroarch.cfg   
+```
+video_hard_sync = true
+video_hard_sync_frames = 3
+video_frame_delay = 5
+```
+
+
+#Displaying Framerate in your libretro emulators
+Modify the following in your /opt/retropie/configs/all/retroarch.cfg   
+```
+fps_show = "true"
+```
+
+
+Install application to test memory usage
+```
+sudo apt-get install htop
+```
+
+While playing games from a pc or laptop ssh to your machine
+run the command htop
+You can then monitor CPU usage as well as memory usage you can use this to tune how much gpu_mem you can allocate.  I am currently allocating 600 on my pi3 with great results. 
+
+
+#Check GPU_MEM utilization on your retropie
+```
+ sudo vcdbg reloc
+```
+
+
+
+
 
