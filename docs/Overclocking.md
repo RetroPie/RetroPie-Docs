@@ -113,7 +113,6 @@ Secondary more aggressive settings
 #GPU Overclock and Tweaks
 gpu_mem=600
 v3d_freq=500
-gpu_freq=400
 
 #CPU Tweaks (If you cannot get 1400 to boot stably try 1350)
 arm_freq=1400
