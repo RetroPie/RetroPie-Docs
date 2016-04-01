@@ -156,7 +156,7 @@ fps_show = "true"
 ```
 
 
-Install application to test memory usage
+#Install application to test memory usage
 ```
 sudo apt-get install htop
 ```
