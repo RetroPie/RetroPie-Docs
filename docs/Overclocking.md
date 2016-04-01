@@ -186,6 +186,9 @@ You can then monitor CPU usage as well as memory usage you can use this to tune 
 #Storage
 Storage is an often overlooked component of emlator performance, while it may not effect lower end emulators like nes and snes  good performing storage is critical to performance of emulators like N64 , Dreamcast, and PSP
 Make sure you have a class 10 sd-card with a min of 48mb/s that is a name brand not some generic clone.  Faster the better. 
+Intresting stuff going on over here.  
+http://www.jeffgeerling.com/blog/2016/how-overclock-microsd-card-reader-on-raspberry-pi-3
+SDCard Benchmarks, performance tests and a method to overclock your SD card reader slot from 50Hz to 100Hz 
 
 
 
