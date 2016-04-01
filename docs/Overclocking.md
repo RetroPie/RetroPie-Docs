@@ -122,7 +122,7 @@ temp_limit=80
 core_freq=500
 
 #Ram Overclock
-sdram_freq=570
+sdram_freq=588
 sdram_schmoo=0x02000020
 over_voltage_sdram_p=6
 over_voltage_sdram_i=4
