@@ -85,6 +85,10 @@ The LXDE desktop environment was removed from the RetroPie image to keep it smal
 
 `sudo apt-get install lxde`
 
+if you want the Raspbian flavoured LXDE you can type
+
+`sudo apt-get install lxde xorg policykit-1 raspberrypi-ui-mods`
+
 For Raspbian Jessie you also need to install:
 
 `sudo apt-get install xinit`
