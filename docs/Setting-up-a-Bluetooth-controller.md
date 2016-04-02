@@ -31,10 +31,47 @@ Quit out of the setup script
 ### Step 2 - Manual file edit for 8bitdo controllers  
 At the command prompt, type  
 `sudo nano /etc/udev/rules.d/10-local.rules`  
-In that file add  
+In that file add   
+
 `SUBSYSTEM=="input", ATTRS{name}=="8Bitdo SFC30 GamePad Joystick", MODE="0666", ENV{ID_INPUT_JOYSTICK}="1"`  
 Note: The value in the name field should read exactly as your controller reports it.  
   
+### Step 2.5 - Forcing the Pi to reconnect to the controller 
+If your controller doesn't automatically reconnect when you restart the Pi, this process should force the connection.  
+
+`sudo nano /bin/connect-bluetooth.sh`  
+ 
+In that file add  
+    `#!/bin/bash`  
+    `sudo bluetoothctl << EOF`  
+    `power on`  
+    `connect [MAC Address]`  
+    `exit`  
+    `EOF`
+
+Save that file.  
+Make it executable  
+  
+`sudo chmod +x /bin/connect-bluetooth.sh`  
+  
+Then create a new file  
+`sudo nano /etc/systemd/system/connect-bluetooth.service`  
+  
+Add this text:  
+`[Unit]`  
+`Description=Connect Bluetooth`  
+  
+`[Service]`  
+`Type=oneshot`  
+`ExecStart=/bin/connect-bluetooth.sh`  
+  
+`[Install]`  
+`WantedBy=multi-user.target`  
+Save that file.  
+  
+Then run this command to enable that process  
+`sudo systemctl enable /etc/systemd/system/connect-bluetooth.service`
+
   
 ### Step 3 - Configure controller for Emulation Station and Retroarch  
 Now reboot your system, turn the controller on just before the RetroPie splashscreen appears and the controller will connect (solid blue led light) and ES will prompt to configure it. 
