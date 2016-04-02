@@ -17,8 +17,8 @@ This guide will give you the very basics to get you up and running from a blank 
 
 If you hate reading then see this video. Otherwise read on! 
 
-<a href="https://www.youtube.com/watch?v=WAyDUQoxMKY
-" target="_blank"><img src="https://i.ytimg.com/vi_webp/WAyDUQoxMKY/mqdefault.webp" 
+<a href="https://youtube.com/watch?v=xvYX_7iRRI0
+" target="_blank"><img src="https://i.ytimg.com/vi_webp/xvYX_7iRRI0/mqdefault.webp" 
 alt="Configuration Video" width="300" height="190" border="10" /></a>
 
 ## Hardware Needed:
