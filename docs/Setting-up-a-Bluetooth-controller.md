@@ -37,7 +37,8 @@ In that file add
 Note: The value in the name field should read exactly as your controller reports it.  
   
 ### Step 2.5 - Forcing the Pi to reconnect to the controller 
-If your controller doesn't automatically reconnect when you restart the Pi, this process should force the connection.  
+**If** your controller doesn't automatically reconnect when you restart the Pi, this process should force the connection.  
+Some users have reported it will work without this if you wait for Emulation Station to fully load before turning on your controller.  
 
 `sudo nano /bin/connect-bluetooth.sh`  
  
@@ -71,7 +72,8 @@ Save that file.
   
 Then run this command to enable that process  
 `sudo systemctl enable /etc/systemd/system/connect-bluetooth.service`
-
+  
+Video Guide for this: https://youtu.be/RsybSJEPZJM
   
 ### Step 3 - Configure controller for Emulation Station and Retroarch  
 Now reboot your system, turn the controller on just before the RetroPie splashscreen appears and the controller will connect (solid blue led light) and ES will prompt to configure it. 
