@@ -19,7 +19,7 @@ If you hate reading then see this video. Otherwise read on!
 
 <a href="https://youtube.com/watch?v=xvYX_7iRRI0
 " target="_blank"><img src="https://i.ytimg.com/vi_webp/xvYX_7iRRI0/mqdefault.webp" 
-alt="Configuration Video" width="600" height="380" border="10" /></a>
+alt="Configuration Video" width="640" height="420" border="10" /></a>
 
 ## Hardware Needed:
 
