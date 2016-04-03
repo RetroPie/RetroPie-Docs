@@ -102,11 +102,11 @@ I went ahead and SSH'd into my box and modified the following values into my `/b
 
 ```
 gpu_mem=400
-arm_freq=1450
+arm_freq=1400
 over_voltage=6
 sdram_freq=500
 core_freq=500
-gpu_freq=400
+v3d_freq=500
 ```
 Secondary more aggressive settings
 ```
