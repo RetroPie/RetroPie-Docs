@@ -30,7 +30,7 @@ alt="Configuration Video" width="1280" height="400" border="10" /></a>
  * HDMI cable or 4 Pole RCA to 3.5mm Cable (HDMI works best)
  * Television or Computer Monitor- really any screen with HDMI or RCA ports
  * Wifi Dongle or Ethernet Cable (Wifi Dongle is more convenient- see compatible list [**here**)](http://elinux.org/RPi_USB_Wi-Fi_Adapters)
- * 5V 2A Micro USB Power Supply
+ * 5V 2A Micro USB Power Supply (2.5A for pi 3)
  * USB Keyboard and Mouse (to get things set up or you can use [SSH](ssh))
  * USB Game Controller of your choice (or you can get the [Control Block](http://blog.petrockblock.com/2014/12/29/controlblock-power-switch-and-io-for-the-raspberry-pi/) to use original SNES controllers)
 
