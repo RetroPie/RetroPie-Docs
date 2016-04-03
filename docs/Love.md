@@ -70,5 +70,5 @@ It can be run with
 
 ```
 cd RetroPie-Setup
-sudo ./retropie_packages.sh love configure`
+sudo ./retropie_packages.sh love configure
 ```
