@@ -37,8 +37,8 @@ In that file add
 Note: The value in the name field should read exactly as your controller reports it.  
   
 ### Step 2.5 - Forcing the Pi to reconnect to the controller 
-**If** your controller doesn't automatically reconnect when you restart the Pi, this process should force the connection.  
-Some users have reported it will work without this if you wait for Emulation Station to fully load before turning on your controller.  
+**If** you find your controller doesn't automatically reconnect when you restart the Pi, this process should force the connection.  
+Some users have reported it will work without this if you wait for Emulation Station to fully load before turning on your controller - this is possibly model or firmware specific.  
 
 `sudo nano /bin/connect-bluetooth.sh`  
  
@@ -186,5 +186,6 @@ http://forum.8bitdo.com/thread-328-1-1.html
 https://wiki.archlinux.org/index.php/bluetooth#Bluetoothctl  
 https://wiki.archlinux.org/index.php/bluetooth_keyboard    
 http://8bitdo.com/Support.html  
+https://www.reddit.com/r/RetroPie/comments/4d5hcf/how_to_setup_8bitdo_nes30_fc30_pro_controllers_on/
 **Pre-Generated retroarch controller files**  
 https://github.com/libretro/retroarch-joypad-autoconfig/tree/master/udev
