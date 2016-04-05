@@ -113,6 +113,7 @@ Secondary more aggressive settings
 #GPU Overclock and Tweaks
 gpu_mem=600
 v3d_freq=500
+h264_freq=333
 
 #CPU Tweaks (If you cannot get 1400 to boot stably try 1350)
 arm_freq=1400
@@ -127,8 +128,6 @@ over_voltage_sdram_p=6
 over_voltage_sdram_i=4
 over_voltage_sdram_c=4
 
-#Sound Overclock
-h264_freq=333
 
 ```
 
