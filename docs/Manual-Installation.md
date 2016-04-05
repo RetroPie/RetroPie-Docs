@@ -112,4 +112,4 @@ You can install the emulators that you want from option 5 of the retropie setup 
 
 ### Samba Roms
 
-If you want to use samba shares you can set them up from option 3 of the retropie setup script. By default the username will be raspberrypi but that can also be changed from the raspi-config menu .
+If you want to use samba shares you can set them up from option 3 of the retropie setup script.
