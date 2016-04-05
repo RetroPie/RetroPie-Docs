@@ -194,8 +194,8 @@ alt="Setting up PS3 controller in RetroPie" width="300" height="190" border="10"
   
   
 **Wireless Xbox controller**  
-<a href="https://www.youtube.com/watch?v=0LMZFYzM9xc
-" target="_blank"><img src="https://i.ytimg.com/vi_webp/0LMZFYzM9xc/mqdefault.webp" 
+<a href="https://www.youtube.com/watch?v=IjEA85BUDKs
+" target="_blank"><img src="https://i.ytimg.com/vi_webp/IjEA85BUDKs/mqdefault.webp" 
 alt="Setting up Xbox controller in RetroPie" width="300" height="190" border="10" /></a>    
 
 
