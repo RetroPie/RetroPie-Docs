@@ -131,7 +131,11 @@ Ibuffalo Template: `ibuffalo.xml`
 </keymap>
 ```
 
-For Xbox controls see [**HERE**](http://kodi.wiki/view/Xbox_360_Wireless_Controller) and [HERE](https://github.com/xbmc/xbmc/blob/Eden/system/keymaps/joystick.Microsoft.Xbox.360.Controller.xml)
+For Xbox controls see the following and adapt for your version of controller
+- [**HERE**](http://kodi.wiki/view/Xbox_360_Wireless_Controller) 
+- [Example 1](https://github.com/xbmc/xbmc/blob/Eden/system/keymaps/joystick.Microsoft.Xbox.360.Controller.xml)
+- [Example 2](http://pastebin.com/ZiNyYEZV)
+- [Example 3](https://gitlab.com/ember-dev/kodi/blob/436c61114dfbf7ec0667873428da0812de3c6954/system/keymaps/joystick.Microsoft.Xbox.360.Controller.xml)
 
 ```
 OLD CONFIGS:
