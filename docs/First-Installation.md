@@ -214,8 +214,8 @@ You can also log in as root if you wish to change more files than just the roms,
 
 After you've added your roms you need to restart emulationstation in order for them to show up. You can restart emulationstation from the start menu, or by rebooting your pi with `sudo reboot`. 
 
-- see the rest of the [wiki](https://github.com/RetroPie/RetroPie-Setup/wiki) for more detailed information on individual emulators, advanced settings etc. If you still can't figure it out, the RetroPie community is very helpful on the [forum](http://blog.petrockblock.com/forums/forum/retropie-project-forum/). 
+- see the rest of the [wiki](https://github.com/RetroPie/RetroPie-Setup/wiki) for more detailed information on individual emulators, advanced settings etc. If you still can't figure it out, the RetroPie community is very helpful on the [forum](https://retropie.org.uk/forum/). 
 
-- **The RetroPie Project is primarily maintained by a few developers who develop the project in their free time. If you have found the RetroPie project useful please consider donating to the project [here.](http://blog.petrockblock.com/donations-2/) We will always release RetroPie for free, but unfortunately our servers still cost money. As you become more familiar with RetroPie, pay it forward by helping others on the forum. The RetroPie Project is what it is today because of the many contributions of the community.**
+- **The RetroPie Project is primarily maintained by a few developers who develop the project in their free time. If you have found the RetroPie project useful please consider donating to the project [here.](https://retropie.org.uk/donate/) We will always release RetroPie for free, but unfortunately our servers still cost money. As you become more familiar with RetroPie, pay it forward by helping others on the forum. The RetroPie Project is what it is today because of the many contributions of the community.**
 
 THANK YOU!
