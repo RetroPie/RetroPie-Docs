@@ -101,32 +101,28 @@ Under the impression that the default clock with the Raspberry Pi 3 will be 1.2 
 I went ahead and SSH'd into my box and modified the following values into my `/boot/config.txt` file
 
 ```
-gpu_mem=400
-arm_freq=1400
+#Overclock Settings
+arm_freq=1400 (Try 1350 if 1400 does not work)
 over_voltage=6
 sdram_freq=500
-core_freq=500
-v3d_freq=500
-```
-Secondary more aggressive settings
-```
-#GPU Overclock and Tweaks
-gpu_mem=600
-v3d_freq=500
-h264_freq=333
-
-#CPU Tweaks (If you cannot get 1400 to boot stably try 1350)
-arm_freq=1400
-over_voltage=6
 temp_limit=80
 core_freq=500
 
+#GPU Based
+h264_freq=333
+avoid_pwm_pll=1
+gpu_mem=450
+v3d_freq=500
+gpu_freq=400
 #Ram Overclock
 sdram_freq=588
 sdram_schmoo=0x02000020
 over_voltage_sdram_p=6
 over_voltage_sdram_i=4
 over_voltage_sdram_c=4
+#Sound Fix
+hdmi_drive=2
+
 
 
 ```
