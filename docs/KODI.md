@@ -86,11 +86,14 @@ _EOF_
     setESSystem 'Kodi' 'kodi' '~/RetroPie/roms/kodi' '.sh .SH' '%ROM%' 'pc' 'kodi'
 }
 ```
+
+### Joypad Support
+
 The module above includes joypad support by default: add your custom keymap to `/home/pi/.kodi/userdata/keymap/joystick.xml`
 
 You can see what your joystick name is with `cat /proc/bus/input/devices`
 
-Example `joystick.xml`
+**Example** `joystick.xml`
 ```
 <?xml version="1.0" encoding="UTF-8"?>
 <keymap>
@@ -107,7 +110,9 @@ Example `joystick.xml`
 </keymap>
 ```
 
-Ibuffalo Template: `ibuffalo.xml`
+#### Ibuffalo 
+
+Template: `ibuffalo.xml`
 
 ```
 <?xml version="1.0" encoding="UTF-8"?>
@@ -130,6 +135,8 @@ Ibuffalo Template: `ibuffalo.xml`
   </global>
 </keymap>
 ```
+
+#### Xbox 360:
 
 For Xbox controls see the following and adapt for your version of controller
 - [**HERE**](http://kodi.wiki/view/Xbox_360_Wireless_Controller) 
