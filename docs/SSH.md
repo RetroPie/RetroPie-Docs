@@ -58,3 +58,10 @@ sudo chown -R pi:pi /folder/to/be/changed
 ```
 sudo chmod +x yourshellscript.sh
 ```
+
+### Extra Configurations
+
+If you find that you are getting weird characters on the dialog gui for the RetroPie Setup script you can change the font encoding to make it look pretty again.
+
+![font encoding](https://cloud.githubusercontent.com/assets/10035308/14335542/4353385c-fc19-11e5-98a3-abc555191190.PNG)
+![font encodingfinal](https://cloud.githubusercontent.com/assets/10035308/14335541/43404ed6-fc19-11e5-8b7c-12c9321edb4b.PNG)
