@@ -81,7 +81,17 @@ then ctrl+x to save, next set your root password & restart your Pi
 
 ### Where did the desktop go?
 
-The LXDE desktop environment was removed from the RetroPie image to keep it smaller. You can install it with
+The LXDE desktop environment was removed from the RetroPie image to keep it smaller.
+
+It can easily be installed from the [RetroPie Setup Script](https://github.com/retropie/retropie-setup/wiki/Updating-RetroPie)
+
+in **Setup >> Raspbian Related Tools >> Install desktop environment (LXDE)**
+
+after installation it will be accessible from the ports menu of emulationstation or can be called from the command line with `startx`
+
+![lxde](https://cloud.githubusercontent.com/assets/10035308/14362890/de6ad5f2-fcbe-11e5-9a4b-07e6a529145f.PNG)
+
+You can also install it manually with:
 
 `sudo apt-get install lxde`
 
