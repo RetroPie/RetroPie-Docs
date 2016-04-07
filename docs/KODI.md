@@ -89,7 +89,7 @@ _EOF_
 
 ### Joypad Support
 
-The module above includes joypad support by default: add your custom keymap to `/home/pi/.kodi/userdata/keymap/joystick.xml`
+The module above includes joypad support by default: add your custom keymap to `/home/pi/.kodi/userdata/keymaps/joystick.xml`
 
 You can see what your joystick name is with `cat /proc/bus/input/devices`
 
