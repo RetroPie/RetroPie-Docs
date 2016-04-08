@@ -1,6 +1,6 @@
 Scraping is a way to get metadata and boxart for your games from the internet. The scrapers RetroPie uses pull primarily from thegamesdb.net. If the scraper isn't working either you are not connected to the Internet or thegamesdb.net is down (which happens quite frequently) and in that case you'll just have to wait until it comes back up.
 
-https://cloud.githubusercontent.com/assets/10035308/10357566/b98bb728-6d40-11e5-96a8-fca55ea635e0.png
+![](https://cloud.githubusercontent.com/assets/10035308/10357565/b97b4ec4-6d40-11e5-9f44-6b27ae31ebc3.png)
 
 
 # Steven Selph's Scraper
@@ -110,4 +110,3 @@ optional arguments:
 Scraping accuracy really depends on **properly named files and specifying the correct platform ID** in the config file. **Cowering's GoodTools** should be enough to mass rename most of these files.
 
 If everything else fails (and assuming your ROMs and/or other images are untouched), **CRC scraping** is available. CRC scraping uses a different source instead: the archive.vg database. I'll eventually add regular scraping for this db as well, depending on when they update the API to support multiple parameters (or maybe if I come up with a clever way to do it using the current version). Bear in mind that bigger files will take longer as it needs to read the whole file to generate the checksum.
-
