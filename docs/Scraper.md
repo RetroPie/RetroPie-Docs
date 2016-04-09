@@ -7,13 +7,19 @@ Scraping is a way to get metadata and boxart for your games from the internet. T
 
 Steven Selph's scraper is probably the simplest way of scraping roms (provided that the systems are supported.) It can be installed and used from the setup menu (menu 3)
 
-![scraper](https://cloud.githubusercontent.com/assets/10035308/10713172/244622e2-7a70-11e5-95d8-fcf211256273.png)
+![sselph](https://cloud.githubusercontent.com/assets/10035308/14407045/1bdd040e-fe78-11e5-9778-626c216a6498.PNG)
 
 - **Scrape All Systems:** This will scrape all the systems the scraper supports
 
 - **Scrape Chosen Systems:** You can choose to only scrape the systems you choose (press the **spacebar** to select each system) and select ok to start scraping.
 
 ![systems](https://cloud.githubusercontent.com/assets/10035308/10713183/98a7ad9a-7a70-11e5-8e24-92d9a4a767b8.png)
+
+- **Thumbnails Only:** When enabled it will load lower resolution images to save space (enabled by default).
+
+- **Max Image Width:** Specify the max image width to scrape.
+
+- **Scraper:** Choose which database to scrape from - thegamesdb is default, but when thegamesdb is down you can specify to use OpenVGBD instead.
 
 - **Update scraper to the latest version:** This updates the scraper to the latest version.
 
