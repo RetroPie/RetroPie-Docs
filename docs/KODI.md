@@ -18,52 +18,11 @@ Visit the RetroPie-Setup Screen, select Experimental Packages, and select Kodi. 
 
 ![](http://kodi.wiki/images/3/3c/Yatse_Holo_1.png)
 
-### Kodi 16 (ONLY ON RASPBIAN JESSIE, TEST AT OWN RISK)
+### Kodi as its own system instead of in ports
 
-To add the code you have to first make a backup of the current `kodi.sh` module in `/home/pi/RetroPie-Setup/scriptmodules/ports` and then replace the contents with the following code block, you will then be able to install kodi 16 from the experimental menu of the setup script like you normally would. 
+To add the code you have to first make a backup of the current `kodi.sh` module in `/home/pi/RetroPie-Setup/scriptmodules/ports` and then replace the contents with the following code block, you will then be able to install kodi from the experimental menu of the setup script like you normally would. 
 
 Note that you will need elevated priveleges to make any edits. You can edit the file directly with sudo over SSH or you can see [HERE](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#why-cant-i-ssh-as-root-anymore) on how to log in as user ROOT in winscp. Note that by editing the aforementioned file you will need to git stash your changes or delete the file before you update the setup script again (after update the setup script the original kodi.sh will be restored)
-
-```
-#!/usr/bin/env bash
-
-# This file is part of The RetroPie Project
-# 
-# The RetroPie Project is the legal property of its developers, whose names are
-# too numerous to list here. Please refer to the COPYRIGHT.md file distributed with this source.
-# 
-# See the LICENSE.md file at the top-level directory of this distribution and 
-# at https://raw.githubusercontent.com/RetroPie/RetroPie-Setup/master/LICENSE.md
-#
-
-rp_module_id="kodi"
-rp_module_desc="Kodi - Open source home theatre software"
-rp_module_menus="4+"
-rp_module_flags="nobin !mali"
-
-function depends_kodi() {
- # add repository to install Kodi 16 (Jarvis)
-    echo "deb http://pipplware.pplware.pt/pipplware/dists/jessie/main/binary /" > /etc/apt/sources.list.d/pipplware_jessie.list
-    wget -O - http://pipplware.pplware.pt/pipplware/key.asc | sudo apt-key add -
-}
-
-function install_kodi() {
-    # remove old repository - we will use Kodi from the Raspbian repositories
-    rm -f /etc/apt/sources.list.d/mene.list
-    aptInstall kodi
-}
-
-function configure_kodi() {
-    addPort "$md_id" "kodi" "Kodi" "kodi-standalone"
-
-    if [[ ! -f /etc/udev/rules.d/99-input.rules ]]; then
-        echo 'SUBSYSTEM=="input", GROUP="input", MODE="0660"' > /etc/udev/rules.d/99-input.rules
-    fi
-
-    # remove the repo so it doesnt conflict with other repositories
-    rm /etc/apt/sources.list.d/pipplware_jessie.list
-}
-```
 
 If you want to setup Kodi as its own system instead of in ports replace the configure function with this:
 
@@ -80,16 +39,13 @@ _EOF_
 
     chmod +x "$romdir/kodi/Kodi.sh"
 
-    # remove the repo so it doesnt conflict with other repositories
-    rm /etc/apt/sources.list.d/pipplware_jessie.list
-
     setESSystem 'Kodi' 'kodi' '~/RetroPie/roms/kodi' '.sh .SH' '%ROM%' 'pc' 'kodi'
 }
 ```
 
 ### Joypad Support
 
-The module above includes joypad support by default: add your custom keymap to `/home/pi/.kodi/userdata/keymaps/joystick.xml`
+The latest Kodi module includes joypad support by default: add your custom keymap to `/home/pi/.kodi/userdata/keymaps/joystick.xml`
 
 You can see what your joystick name is with `cat /proc/bus/input/devices`
 
