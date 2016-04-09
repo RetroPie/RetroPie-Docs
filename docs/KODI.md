@@ -20,6 +20,57 @@ Visit the RetroPie-Setup Screen, select Experimental Packages, and select Kodi. 
 
 ### Kodi as its own system instead of in ports
 
+The first method here is a cleaner method that wont mess with the RetroPie setup script updates (note that in the future you will have to manually update the es_systems.cfg in .emulationstation as they arent overwritten on updates from RetroPie). Once you've installed kodi from the experimental menu of the setup script, Drop into a terminal with f4 or access the pi over [SSH](https://github.com/retropie/retropie-setup/wiki/ssh)
+
+create an es_systems.cfg file so that kodi will show up in emulationstation
+
+```
+sudo cp /etc/emulationstation/es_systems.cfg /home/pi/.emulationstation/es_systems.cfg
+sudo nano /home/pi/.emulationstation/es_systems.cfg
+```
+add the following codeblock anywhere after `<systemList>`:
+```
+  <system>
+    <fullname>Kodi</fullname>
+    <name>kodi</name>
+    <path>~/RetroPie/roms/kodi</path>
+    <extension>.sh .SH</extension>
+    <command>%ROM%</command>
+    <platform>kodi</platform>
+    <theme>kodi</theme>
+  </system>
+```
+
+save you changes with `ctrl+x` , `y` , `enter`
+
+Then make a kodi rom directory
+
+```
+mkdir /home/pi/RetroPie/roms/kodi
+```
+
+make a launch script:
+
+```
+sudo nano /home/pi/RetroPie/roms/kodi/kodi.sh
+```
+
+add the following line:
+
+```
+kodi-standalone
+```
+save you changes with `ctrl+x` , `y` , `enter`
+
+make the launch script executable:
+```
+sudo chmod +x /home/pi/RetroPie/roms/kodi/kodi.sh
+```
+
+type `emulationstation` to go back into emulationstation and kodi should be there as its own system. 
+
+**For more advanced users the following is another method that you can use to set kodi as its own system.**
+
 To add the code you have to first make a backup of the current `kodi.sh` module in `/home/pi/RetroPie-Setup/scriptmodules/ports` and then replace the contents with the following code block, you will then be able to install kodi from the experimental menu of the setup script like you normally would. 
 
 Note that you will need elevated priveleges to make any edits. You can edit the file directly with sudo over SSH or you can see [HERE](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#why-cant-i-ssh-as-root-anymore) on how to log in as user ROOT in winscp. Note that by editing the aforementioned file you will need to git stash your changes or delete the file before you update the setup script again (after update the setup script the original kodi.sh will be restored)
