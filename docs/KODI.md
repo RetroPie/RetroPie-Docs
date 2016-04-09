@@ -231,34 +231,35 @@ Template: `xbox360.xml`
   <global>
     <joystick name="Xbox Gamepad (userspace driver)">
       <altname>Controller (Xbox 360 Wireless Receiver for Windows)</altname>
-      <button id="1">Select</button> 
-      <button id="2">ParentDir</button> 
-      <button id="3">FullScreen</button>
-      <button id="4">ContextMenu</button>
-      <button id="5">Stop</button>
-      <button id="6">Pause</button>
-      <button id="7">PreviousMenu</button>
-      <button id="8">XBMC.ActivateWindow(settings) </button>
-      <button id="9">Playlist</button>
-      <button id="10">XBMC.UpdateLibrary(video)</button>
+      <button id="1">Select</button><!--A-->
+      <button id="2">ParentDir</button><!--B-->
+      <button id="3">FullScreen</button><!--X-->
+      <button id="4">ContextMenu</button><!--Y-->
+      <button id="5">Stop</button><!--LEFT SHOULDER BUTTON-->
+      <button id="6">Pause</button><!--RIGHT SHOULDER BUTTON-->
+      <button id="7">PreviousMenu</button><!--BACK-->
+      <button id="7,8">Quit</button><!--BACK+START-->
+      <button id="8">XBMC.ActivateWindow(settings) </button><!--START-->
+      <button id="9">Playlist</button><!--LEFT ANALOGUE STICK BUTTON-->
+      <button id="10">XBMC.UpdateLibrary(video)</button><!--RIGHT ANALOGUE STICK BUTTON-->
 
-      <hat id="1" position="up">Up</hat>
-      <hat id="1" position="down">Down</hat>
-      <hat id="1" position="right">Right</hat>
-      <hat id="1" position="left">Left</hat>
+      <hat id="1" position="up">Up</hat><!--DPAD UP-->
+      <hat id="1" position="down">Down</hat><!--DPAD DOWN-->
+      <hat id="1" position="right">Right</hat><!--DPAD RIGHT-->
+      <hat id="1" position="left">Left</hat><!--DPAD LEFT-->
 
-      <axis limit="-1" id="2">Up</axis>
-      <axis limit="+1" id="2">Down</axis>
-      <axis limit="+1" id="1">Right</axis>
-      <axis limit="-1" id="1">Left</axis> 
+      <axis limit="-1" id="2">Up</axis><!--LEFT ANALOGUE UP-->
+      <axis limit="+1" id="2">Down</axis><!--LEFT ANALOGUE DOWN-->
+      <axis limit="+1" id="1">Right</axis><!--LEFT ANALOGUE RIGHT-->
+      <axis limit="-1" id="1">Left</axis><!--LEFT ANALOGUE LEFT-->
 	  
-      <axis limit="-1" id="4">VolumeUp</axis>
-      <axis limit="+1" id="4">VolumeDown</axis>
-      <axis limit="-1" id="5">AnalogSeekBack</axis>
-      <axis limit="+1" id="5">AnalogSeekForward</axis> 
+      <axis limit="-1" id="4">VolumeUp</axis><!--RIGHT ANALOGUE UP-->
+      <axis limit="+1" id="4">VolumeDown</axis><!--RIGHT ANALOGUE DOWN-->
+      <axis limit="-1" id="5">AnalogSeekBack</axis><!--RIGHT ANALOGUE LEFT-->
+      <axis limit="+1" id="5">AnalogSeekForward</axis> <!--RIGHT ANALOGUE RIGHT-->
 
-      <axis limit="-1" id="3">ScrollDown</axis>
-      <axis limit="+1" id="3">ScrollUp</axis>
+      <axis limit="-1" id="3">ScrollDown</axis><!--LEFT TRIGGER-->
+      <axis limit="+1" id="3">ScrollUp</axis><!--RIGHT TRIGGER-->
     </joystick>
   </global>
 <Home>
