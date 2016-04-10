@@ -7,6 +7,15 @@ Scraping is a way to get metadata and boxart for your games from the internet. T
 
 Steven Selph's scraper is probably the simplest way of scraping roms (provided that the systems are supported.) It can be installed and used from the setup menu (menu 3)
 
+**Note that before you can use this scraper you have to exit EmulationStation by pressing f4 or quit from the start menu so that the gamelists are created properly. It may take some time for the xml files to build.**
+
+then to access the setup script from the terminal you can type
+```
+sudo /home/pi/RetroPie-Setup/retropie_setup.sh
+```
+
+
+
 ![sselph](https://cloud.githubusercontent.com/assets/10035308/14407045/1bdd040e-fe78-11e5-9778-626c216a6498.PNG)
 
 - **Scrape All Systems:** This will scrape all the systems the scraper supports
@@ -22,8 +31,6 @@ Steven Selph's scraper is probably the simplest way of scraping roms (provided t
 - **Scraper:** Choose which database to scrape from - thegamesdb is default, but when thegamesdb is down you can specify to use OpenVGBD instead.
 
 - **Update scraper to the latest version:** This updates the scraper to the latest version.
-
-Note that while scraping you have to kill EmulationStation processes so that the gamelists are created properly. It may take some time for the xml files to build.
 
 #### Where are my scraped images and metadata saved?
 
