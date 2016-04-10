@@ -6,6 +6,8 @@ _Kodi is a Home Media Server (basically your own personal netflix) formerly know
 ***
 ## General Information
 
+RetroPie currently installs Kodi 16 Jarvis
+
 See here for more info: http://kodi.tv/
 
 See [here](http://blog.petrockblock.com/forums/topic/kodi-tab-in-emulationstation/) for more information on setting up Kodi
