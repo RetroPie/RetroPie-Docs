@@ -4,6 +4,8 @@ The simplest way of setting up a Bluetooth controller is through the Bluetooth C
 
 You can access the bluetooth configuration menu from the RetroPie Menu of EmulationStation. It can also be accessed from **RetroPie-Setup Script >> Setup >> Configure Bluetooth Devices**
 
+Note that on the pi3 to use onboard bluetooth you may need to install bluetooth first with `sudo apt-get install pi-bluetooth` but fair warning, the onboard bluetooth has been known to freeze up the pi.
+
 ![bluetooth 1](https://cloud.githubusercontent.com/assets/10035308/14411884/129c470c-ff12-11e5-9101-e510424b6e55.PNG)
 
 `1.` **Register and Connect Bluetooth Devices:** You can select your bluetooth device's mac address from here 
