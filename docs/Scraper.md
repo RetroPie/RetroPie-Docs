@@ -5,7 +5,7 @@ Scraping is a way to get metadata and boxart for your games from the internet. T
 
 # Steven Selph's Scraper
 
-Steven Selph's scraper is probably the simplest way of scraping roms (provided that the systems are supported.) It can be installed and used from the setup menu (menu 3)
+Steven Selph's scraper is the simplest and best way of scraping roms (provided that the systems are supported.) It can be installed and used from the setup menu (menu 3)
 
 **Note that before you can use this scraper you have to exit EmulationStation by pressing f4 or quit from the start menu so that the gamelists are created properly. It may take some time for the xml files to build.**
 
