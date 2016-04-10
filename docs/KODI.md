@@ -6,8 +6,6 @@ _Kodi is a Home Media Server (basically your own personal netflix) formerly know
 ***
 ## General Information
 
-RetroPie currently installs Kodi 16 Jarvis
-
 See here for more info: http://kodi.tv/
 
 See [here](http://blog.petrockblock.com/forums/topic/kodi-tab-in-emulationstation/) for more information on setting up Kodi
@@ -15,6 +13,8 @@ See [here](http://blog.petrockblock.com/forums/topic/kodi-tab-in-emulationstatio
 ## Installation
 
 Visit the RetroPie-Setup Screen, select Experimental Packages, and select Kodi.  Installation can take 15 minutes.  After installation, you will be able to go to the Ports section and view Kodi as an option.
+
+RetroPie currently installs Kodi 16 Jarvis
 
 ## Recommended Smartphone App to control Kodi: [Yatse](http://yatse.tv/redmine/projects/yatse)
 
