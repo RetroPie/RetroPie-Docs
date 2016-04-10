@@ -8,7 +8,7 @@ _The SAM Coupé was an 8 bit computer released in 1989._
 
 ***
 
-### Emulator: [SimCoupe](http://www.simcoupe.org/)
+### Emulator: [SimCoupe](http://www.simcoupe.org/) (EXPERIMENTAL!)
 
 ### ROMS
 
