@@ -54,6 +54,7 @@
 * [PC Engine/TurboGrafx-16](PC-Engine)
 * [PSP](PSP)
 * [PlayStation 1](Playstation-1)
+* [SAM Coupé](Sam-Coupe)
 * [Saturn](Saturn)
 * [ScummVM](ScummVM)
 * [Sega 32X](Sega-32X)
