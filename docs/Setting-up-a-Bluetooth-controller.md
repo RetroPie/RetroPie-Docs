@@ -1,5 +1,26 @@
 # Adding a Bluetooth controller to RetroPie  
-This guide is geared to using a controller from [8bitdo](http://www.8bitdo.com) but should work with a range of bluetooth devices.  
+
+The simplest way of setting up a Bluetooth controller is through the Bluetooth Configuration menu of the RetroPie Setup script. There are also manual methods that may vary depending on what bluetooth controller you are using, some of which are described further below on this page.
+
+You can access the bluetooth configuration menu from the RetroPie Menu of EmulationStation. It can also be accessed from **RetroPie-Setup Script >> Setup >> Configure Bluetooth Devices**
+
+![bluetooth 1](https://cloud.githubusercontent.com/assets/10035308/14411884/129c470c-ff12-11e5-9101-e510424b6e55.PNG)
+
+1. **Register and Connect Bluetooth Devices:** You can select your bluetooth device's mac address from here 
+
+![bluetooth 2](https://cloud.githubusercontent.com/assets/10035308/14411880/129ba13a-ff12-11e5-8d1a-d3b7f72873e1.PNG)
+![bluetooth 3](https://cloud.githubusercontent.com/assets/10035308/14411881/129bc1a6-ff12-11e5-9cd8-be96d4131309.PNG)
+
+You will get a window popping up telling you if the connection was successful or not. If it was not successful make sure that you chose the correct mac address, if it still doesn't work you may have to configure it manually (see below).
+
+2. **Disconnect Bluetooth Devices:** You can disconnect your bluetooth device from this menu 
+![bluetooth 5](https://cloud.githubusercontent.com/assets/10035308/14411883/129bef8c-ff12-11e5-98cf-b3c5ac6575e2.PNG)
+3. **Display Registered & Connected Bluetooth Devices:** This will display the current bluetooth devices connected.
+![bluetooth 4](https://cloud.githubusercontent.com/assets/10035308/14411882/129be622-ff12-11e5-87bf-f549a4e0ab63.PNG)
+
+## Manual Bluetooth Configuration
+
+The following guide is geared to using a controller from [8bitdo](http://www.8bitdo.com) but should work with a range of bluetooth devices.  
 The examples below are assuming you have just a keyboard and bluetooth dongle plugged into your Pi.  
   
 **Controller Firmware**  
