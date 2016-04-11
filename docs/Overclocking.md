@@ -113,7 +113,6 @@ h264_freq=333
 avoid_pwm_pll=1
 gpu_mem=450
 v3d_freq=500
-gpu_freq=400
 #Ram Overclock
 sdram_freq=588
 sdram_schmoo=0x02000020
