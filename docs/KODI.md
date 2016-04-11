@@ -98,7 +98,7 @@ _EOF_
 
 ### Joypad Support
 
-The latest Kodi module includes joypad support by default: add your custom keymap to `/home/pi/.kodi/userdata/keymaps/joystick.xml`
+The latest Kodi module (Kodi 16) includes joypad support by default: add your custom keymap to `/home/pi/.kodi/userdata/keymaps/joystick.xml`
 
 You can see what your joystick name is with `cat /proc/bus/input/devices`
 
