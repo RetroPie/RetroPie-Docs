@@ -45,16 +45,16 @@ For more information on custom RetroArch controls see: [RetroArch Configuration]
 ## Standalone
 
 The standalone version runs faster but requires X, QT, etc. Even then, it manages 10FPS so probably not worth adding to the scripts. If you're curious, here's the basic instructions to get it installed:
-'''
+```
 sudo apt-get install xinit
 
 sudo apt-get install qt4-dev-tools
 
 sudo apt-get install build-essential libgl1-mesa-dev
-'''
+```
 make some directory, and go in it
 
-'''
+```
 git clone https://github.com/Yabause/yabause.git
 
 cd yabause/yabause/src
@@ -62,12 +62,12 @@ cd yabause/yabause/src
 cmake -DYAB_WANT_OPENGL=NO $SOURCES
 
 make
-'''
+```
 
 go into a terminal on your pi itself
 
 navigate to /your_directory/yabause/yabausesrc/qt
 
-'''
+```
 sudo xinit ./yabause
-'''
+```
