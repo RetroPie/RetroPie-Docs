@@ -249,3 +249,24 @@ alt="N64 Configuration Video" width="300" height="180" border="10" /></a> |
 <a href="https://www.youtube.com/watch?v=lh0n5PWN2lI
 " target="_blank"><img src="https://i.ytimg.com/vi_webp/lh0n5PWN2lI/mqdefault.webp" 
 alt="N64 Configuration Video" width="300" height="180" border="10" /></a> 
+
+
+
+# Note for configuring Arcade Joystick or non analogue controller to use N64 correctly.
+Changing the below inside /opt/retropie/configs/n64/mupen64plus.cfg
+
+From
+X Axis = "hat(0 Left, 0 Right)"
+Y Axis = "hat(0 Up, 0 Down)"
+
+To 
+X Axis = "hat(0 Left Right)"
+Y Axis = "hat(0 Up Down)"
+
+Gets joystick correctly configured
+Tested with Akishop PS360+ 
+
+If your config will differ, try collecting the [Input-SDL-Control1] sectio of /opt/retropie/configs/n64/mupen64plus.cfg  when you configure your joystick to up down left right  then change your config through input configuration to map your joystick or input to Left Analogue UP down left right  and compare the difference to find your proper input format then edit back. 
+
+
+
