@@ -1,7 +1,33 @@
 # EmulationStation
-This is the graphical front-end installed by RetroPie. It was developed by a guy named Aloshi, and is designed to allow you to use your Pi as if it were a retro console - with only a controller, not requiring a keyboard. 
+# Introduction
+
+This is the graphical front-end installed by RetroPie. EmulationStation is designed to allow you to use your Pi as if it were a retro console - with only a controller, not requiring a keyboard. 
 
 It was developed specifically for the Raspberry Pi, on the Raspberry Pi. However, it uses cross-platform libraries, so it can be run on pretty much any Linux machine. If you try, you can also build it on Windows.
+
+From the dictionary:
+> # front end
+>1. the front of a car or other vehicle.
+>2. the part of a radio or television receiver to which the aerial signal goes first.
+>3. **COMPUTING - a part of a computer or program that allows access to other parts.**
+
+EmulationStation is used to provide a polished user interface to present and interact with all the different aspects of the RetroPie distribution. It allows the user to use a UI that is controllable using a joypad or arcade controllers to navigate through the different emulators, and make (simple) edits to the systems configuration.
+
+As it is the first thing that many users see, EmulationStation is often conflated with RetroPie as a whole, while ES is only a part of the RetroPie distribution.
+
+EmulationStation was developed by Alec Lofquist (programming) and Nils Bonenberger (design & UI), see the [official EmulationStation page](http://www.emulationstation.org/). For the code and more info, see also the [Github Repository](https://github.com/Aloshi/EmulationStation).
+
+# Features
+EmulationStation offers the following features:
+* Listing of emulated systems (systemlist), and their respective games (gamelist)
+* Keyboard-less navigation
+* Controller configuration which is propagated to RetroArch emulators
+* Theming of certain elements (background, position/size of text elements)
+* Scraping of game information (see [here for more info](https://github.com/retropie/retropie-setup/wiki/scraper))
+
+# Development status
+Since spring 2015, there has been little or no activity from the original ES developer, Aloshi. Recently, there has been some activities to get the project moving again (see the [discussion here](https://github.com/Aloshi/EmulationStation/issues/563#issuecomment-198787794)). It remains to be seen if this will gather enough momentum to become a viable alternative for RetroPie or not.
+Until that time, further developments are done by 'unofficial' forks, which are not necessarily maintained/updated often. One example is [this extension of ES](https://github.com/retropie/retropie-setup/wiki/Child-friendly-EmulationStation), which is currently under experimental features.
 
 # Help
 A great deal of information can be found in EmulationStation's README.md and THEMES.md, also viewable on GitHub. Some links:
@@ -12,7 +38,7 @@ A great deal of information can be found in EmulationStation's README.md and THE
 
 [Creating your own themes.](https://github.com/Aloshi/EmulationStation/blob/master/THEMES.md#themes)
 
-# Common Problems
+## Common Problems
 ### When I start a game, I lose keyboard input and have to power off to reboot!
 
 **DON'T START EMULATIONSTATION FROM X.** RetroArch expects keyboard input to be from the normal terminal, *not* a terminal window in X. To fix this, either:
@@ -67,3 +93,8 @@ Your controller driver is likely being started after EmulationStation. An easy w
 ### I messed up on the initial prompt that appears when Emulation Station starts for the first time. My controls are completely messed up and out of order. Is there a way to redo this prompt?
 
 You need to delete the configuration file that Emulation Station uses by invoking ```rm /home/pi/.emulationstation/es_input.cfg```, and then re-install Emulation Station from Retropie-Setup. Note that you exit Emulation Station by pressing ```F4```. When you (re-)start Emulation Station, the configuration prompt will appear again.
+
+# Alternative Frontends
+Because of the development hiatus, there has been some attention towards other front-ends.
+* Attract-Mode ([site](http://attractmode.org/), [forum thread](https://retropie.org.uk/forum/topic/93/attract-mode-with-retropie-alternative-to-emulationstation))
+* mehstation ([site](https://remy.io/mehstation))
