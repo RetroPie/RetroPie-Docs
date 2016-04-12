@@ -27,6 +27,7 @@ EmulationStation offers the following features:
 
 # Development status
 Since spring 2015, there has been little or no activity from the original ES developer, Aloshi. Recently, there has been some activities to get the project moving again (see the [discussion here](https://github.com/Aloshi/EmulationStation/issues/563#issuecomment-198787794)). It remains to be seen if this will gather enough momentum to become a viable alternative for RetroPie or not.
+
 Until that time, further developments are done by 'unofficial' forks, which are not necessarily maintained/updated often. One example is [this extension of ES](https://github.com/retropie/retropie-setup/wiki/Child-friendly-EmulationStation), which is currently under experimental features.
 
 # Help
