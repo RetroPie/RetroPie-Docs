@@ -104,7 +104,6 @@ I went ahead and SSH'd into my box and modified the following values into my `/b
 #Overclock Settings
 arm_freq=1400 (Try 1350 if 1400 does not work)
 over_voltage=6
-sdram_freq=500
 temp_limit=80
 core_freq=500
 
