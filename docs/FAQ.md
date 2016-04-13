@@ -48,7 +48,7 @@ http://blog.petrockblock.com/forums/topic/fba-retroarch-core-coin-controls/#post
 
 ### Why can't I SSH as root anymore?
 
-Starting with RetroPie 3.0 BETA 3 the root password was disabled (as is the case for Raspbian by default and many other linux distros). 
+The root password is disabled by default (as is the case for Raspbian and many other linux distros). 
 
 If you would like to re-enable root access, in the terminal type:
 
