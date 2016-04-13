@@ -21,21 +21,6 @@ In Emulation Station, only emulators with ROMs inside its respective folder will
 
 The root password is disabled by default (as is the case for Raspbian and many other linux distros). 
 
-If you would like to re-enable root access, in the terminal type:
-
-```shell
-sudo passwd root
-```
-
-see these posts for more details:
-
-https://www.raspberrypi.org/documentation/linux/usage/root.md
-
-http://elinux.org/R-Pi_Troubleshooting#I_don.27t_know_the_root_password
-
-
-**RetroPie 3.0 Jessie Builds:**
-
 before setting a root password, the following must be edited
 
 ```sudo nano /etc/ssh/sshd_config```
@@ -48,7 +33,22 @@ change it to
 
 ```PermitRootLogin yes```
 
-then ctrl+x to save, next set your root password & restart your Pi
+then ctrl+x to save, 
+
+next set your root password:
+
+```
+sudo passwd root
+ 
+```
+
+restart your Pi to register your changes
+
+see these posts for more details:
+
+https://www.raspberrypi.org/documentation/linux/usage/root.md
+
+http://elinux.org/R-Pi_Troubleshooting#I_don.27t_know_the_root_password
 
 ### Where did the desktop go?
 
