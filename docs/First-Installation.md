@@ -68,6 +68,8 @@ To install the RetroPie 3.6 SD image on your MicroSD card. (You may need a Micro
 2. For mac you can use [Apple Pi Baker](http://www.tweaking4all.com/hardware/raspberry-pi/macosx-apple-pi-baker/) 
 3. For Linux you can use `dd` command or [Unetbootin](https://unetbootin.github.io/)
 
+**Note** RetroPie is built on top of Raspbian (a linux based OS for the Raspberry Pi) and as such the partition on the SD card is EXT4 (a linux filesystem) which is not visible on windows systems, so the card will show up as a smaller size than usual and you wont be able to see everything on the card, but it is all there. You will be able to access the filesystem over the network as described in the transferring roms section below.
+
 If you're updating from a previous version of retropie see [**HERE**](https://github.com/RetroPie/RetroPie-Setup/wiki/Updating-RetroPie)
 
 # Configurations
@@ -149,7 +151,7 @@ input_state_slot_decrease_axis = "-0"
 |![firstboot](https://cloud.githubusercontent.com/assets/10035308/12865816/d4c76dfa-cc74-11e5-9a1f-922a6d830d49.png)|
 ## Configuring Wifi
 
-If you wish to use a wifi dongle to transfer roms over the network rather than a USB stick or Ethernet cable you'll need to setup your wifi- which can also be done from the Retropie menu in emulationstation:
+If you wish to use wifi to transfer roms over the network rather than a USB stick or Ethernet cable you'll need to setup your wifi- which can also be done from the Retropie menu in emulationstation:
 
 ![wifi](https://cloud.githubusercontent.com/assets/10035308/12865761/adc9f5c6-cc72-11e5-9b02-9e98b90bbd98.png)
 
