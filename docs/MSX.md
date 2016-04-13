@@ -80,9 +80,10 @@ You can change this by adding dumps of real MSX system roms into the ``/opt/retr
 To locate real MSX system ROMs, try google.
 
 ### Changing default machine to be emulated
-By default openMSX will emulate a MSX2+ using the c-bios ROMs. To change this, you need to start openMSX (either by starting a game or from the commandline by typing ``/opt/retropie/emulators/openmsx/bin/openmsx``
+By default openMSX will emulate a MSX2+ using the c-bios ROMs. To change this, you need to start openMSX, either by starting a game or from the commandline by typing ``/opt/retropie/emulators/openmsx/bin/openmsx``
 
 When the emulator is running, press F10 and you will get a overlay where you can type commands, here you need to type the following to change the default MSX to be emulated;
+
 ``set default_emulator turbor``
 
 In the above example we change the default to the MSX TurboR, which was the last MSX machine produced. Other options could be ``msx1``, ``msx2`` or ``msx2plus``. There is many MSX machines that can potentially be emulated, for a list look in the directory ``/opt/retropie/emulators/openmsx/share/machines``. If you for instance wanted to emulate a Spectravideo SVI-728 you will find in that directory a file ``Spectravideo_SVI-728.xml``, simply use the name of the file, excluding the .xml extension as the machine name.
