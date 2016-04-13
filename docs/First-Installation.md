@@ -202,7 +202,9 @@ There are many FTP programs out there, for windows many people use [WinSCP](http
 
 ![winscp](https://cloud.githubusercontent.com/assets/10035308/12865832/7d9afb68-cc75-11e5-81b2-4529991e1821.png)
 
-Default username: **pi** Default Password: **raspberry**
+Default username: **pi** 
+
+Default Password: **raspberry**
 
 You can also log in as root if you wish to change more files than just the roms, but you first need to enable the root password which is explained [here](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#why-cant-i-ssh-as-root-anymore)
 
