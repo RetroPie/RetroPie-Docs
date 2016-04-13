@@ -96,7 +96,7 @@ The key definitions defined in retropie will not work in openMSX. openMSX does h
 By default the exit key in the emulator is ``Alt-F4``
 
 ### Setting default screen on MSX2+ and TurboR machines
-By default MSX2+ and TurboR machines will start with a screen type which is incompatible with lots of European software. Typically resulting in errors such as ``Syntax error in 10`` when starting disk or cassette based games. This is because the software is trying to change the width of the screen to something incompatible with the current screen type selected. The solution is to start the emulator to a MSX BIOS Ok prompt. This can be done when a game fails to start and gives you an Ok prompt, or you can start the emulator outside of RetroPie as shown above.
+By default MSX2+ and TurboR machines will start with a screen type which is incompatible with lots of European software. Typically resulting in errors such as ``Syntax error in 10`` when starting disk or cassette based games. This is typically because the software is trying to change the width of the screen to something incompatible with the current screen type selected. The solution is to start the emulator to a MSX BIOS Ok prompt. This can be done when a game fails to start and gives you an Ok prompt, or you can start the emulator outside of RetroPie as shown above.
 
 At the MSX BIOS Ok prompt (not the openMSX command prompt), type the following;
 
@@ -107,3 +107,12 @@ At the MSX BIOS Ok prompt (not the openMSX command prompt), type the following;
 You have now changed your default screen to screen0 as was normal on European MSX machines, and saved the setting into virtual nvram.
 
 Note: if you change your default machine type from say a TurboR to a MSX2+ you will have to redo this step as each MSX2 and later machine type has its own virtual nvram file.
+
+### 50 or 60Hz?
+European MSX machines ran at 50Hz, as that is the PAL video standard. Japanese MSX machines however ran at 60Hz as is standard on NTSC. How does this effect things? Well it means that lots of Japanese developed games run ~20% slower when run on a European MSX. This may mean more sluggish behaviour and slower sound if the programmers did not take this into account.
+
+How does this effect emulation? The default c-bios roms use 60Hz. If you use real MSX system roms, then it depends on which machine your emulating. A MSX2+ or TurboR will always be 60Hz since they where never officially sold in Europe.
+
+Of course the effect can also be the other way around. European MSX software that runs too fast on a Japanese machine type.
+
+In openMSX, you can change the emulated frequency during runtime. Simply open the openMSX command prompt with `F10`, and type `toggle_freq`.
