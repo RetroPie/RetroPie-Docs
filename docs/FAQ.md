@@ -1,5 +1,4 @@
 - [Why do some emulators not show up?](https://github.com/retropie/RetroPie-Setup/wiki/FAQ#why-do-some-emulators-not-show-up)
-- [Why Can't I Insert Coins in Arcade Emulators?](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#why-cant-i-insert-coins-in-arcade-emulators)
 - [Why can't I SSH as root anymore?](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#why-cant-i-ssh-as-root-anymore)
 - [Where did the desktop go?](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#where-did-the-desktop-go)
 - [How do I change which buttons to press to exit an emulator with a controller?](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#how-do-i-change-which-buttons-to-press-to-exit-an-emulator-with-a-controller)
@@ -12,39 +11,11 @@
 - [How do I hide the boot text?](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#how-do-i-hide-the-boot-text)
 - [Why does shut down and reboot take ages?](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#why-does-shut-down-and-reboot-take-ages)
 - [Why aren't my in-game saves working properly?](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#why-arent-my-ingame-saves-working-properly)
+- [Why Can't I Insert Coins in Arcade Emulators?](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#why-cant-i-insert-coins-in-arcade-emulators)
 
 ### Why do some emulators not show up?
 
 In Emulation Station, only emulators with ROMs inside its respective folder will show up in the Emulation Station GUI (given that the specific emulator is installed). For example, for the Nintendo 64 emulator to show up, you must have at least one ROM in the `~/RetroPie/roms/n64/` folder. For ROM types supported by each emulator, go to the wiki page for that specific system/emulator. 
-
-### Why Can't I Insert Coins in Arcade Emulators?
-
-It's the Select button in RetroArch. By default, it's right shift.
-
-Sometimes there are conflicts between the hotkeys and insert coin buttons so they need to be swapped manually in the retroarch.cfg in order for the select key to insert coins properly. The hotkey button was originally intended to be an unused button but some controllers like snes controllers don't have extra buttons.
-
-For example you can switch the hotkey button to a button that you don't use:
-
-so in mame retroarch.cfg
-```
-/opt/retropie/configs/mame-mame4all/retroarch.cfg
-```
-
-you could add 
-```
-input_enable_hotkey_btn = 5
-```
-which would make the hotkey the left bumper (on my controller- may be a different button for yours) then the select key should work for inserting coins. but in the future in order to exit mame I would then have to press left bumper+start as i changed my hotkey to the left bumper. 
-
-You can do the same thing for fba-libretro
-```
-/opt/retropie/configs/fba/retroarch.cfg
-```
-
-Another simple workaround is to use player 2's select key to insert coins but it may not work for some games.
-
-Related post  
-http://blog.petrockblock.com/forums/topic/fba-retroarch-core-coin-controls/#post-93014
 
 ### Why can't I SSH as root anymore?
 
@@ -234,3 +205,32 @@ All retroarch emulators use the same method to save to your .srm or SRAM. The de
 
 Besides using save states, one optional method you can use to prevent this accidental loss in progress is the autosave_interval setting. This setting can be changed in `/opt/retropie/configs/all/retroarch.cfg`
 either with the terminal, Configure Retroarch / Launch RetroArch RGUI under `settings->saving`, or Edit RetroPie/RetroArch configurations under `Manually edit Retroarch configurations`. Once autosave_interval is set to equal a number of seconds, retroarch will automatically write your save data to the srm file every interval of that number of seconds.
+
+### Why Can't I Insert Coins in Arcade Emulators?
+
+It's the Select button in RetroArch. By default, it's right shift. Note that this issue should now be fixed.
+
+Sometimes there are conflicts between the hotkeys and insert coin buttons so they need to be swapped manually in the retroarch.cfg in order for the select key to insert coins properly. The hotkey button was originally intended to be an unused button but some controllers like snes controllers don't have extra buttons.
+
+For example you can switch the hotkey button to a button that you don't use:
+
+so in mame retroarch.cfg
+```
+/opt/retropie/configs/mame-mame4all/retroarch.cfg
+```
+
+you could add 
+```
+input_enable_hotkey_btn = 5
+```
+which would make the hotkey the left bumper (on my controller- may be a different button for yours) then the select key should work for inserting coins. but in the future in order to exit mame I would then have to press left bumper+start as i changed my hotkey to the left bumper. 
+
+You can do the same thing for fba-libretro
+```
+/opt/retropie/configs/fba/retroarch.cfg
+```
+
+Another simple workaround is to use player 2's select key to insert coins but it may not work for some games.
+
+Related post  
+http://blog.petrockblock.com/forums/topic/fba-retroarch-core-coin-controls/#post-93014
