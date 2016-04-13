@@ -1,6 +1,7 @@
 - [Why do some emulators not show up?](https://github.com/retropie/RetroPie-Setup/wiki/FAQ#why-do-some-emulators-not-show-up)
 - [Why can't I SSH as root anymore?](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#why-cant-i-ssh-as-root-anymore)
 - [Where did the desktop go?](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#where-did-the-desktop-go)
+- [Why does shut down and reboot take ages?](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#why-does-shut-down-and-reboot-take-ages)
 - [How do I change which buttons to press to exit an emulator with a controller?](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#how-do-i-change-which-buttons-to-press-to-exit-an-emulator-with-a-controller)
 - [Does Super Mario All Stars work?](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#does-super-mario-all-stars-work)
 - [How do I extend the available space when upgrading to a larger SD card](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#how-do-i-extend-the-available-space-when-upgrading-to-a-larger-sd-card)
@@ -9,7 +10,6 @@
 - [The PSX emulator reports no BIOS found. What do I do?](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#the-psx-emulator-reports-no-bios-found-what-do-i-do)
 - [Which memory split should I use?](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#which-memory-split-should-i-use)
 - [How do I hide the boot text?](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#how-do-i-hide-the-boot-text)
-- [Why does shut down and reboot take ages?](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#why-does-shut-down-and-reboot-take-ages)
 - [Why aren't my in-game saves working properly?](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#why-arent-my-ingame-saves-working-properly)
 - [Why Can't I Insert Coins in Arcade Emulators?](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#why-cant-i-insert-coins-in-arcade-emulators)
 
@@ -79,6 +79,18 @@ And then you can access it from the terminal by typing in
 `startx`
 
 After installation your pi will boot into the desktop environment, you can change the behaviour to boot into emulationstation by selecting the autostart option for emulationstation from option 3 of the setup script, or you can set the autologin to console option from the boot options of the raspi-config menu.
+
+### Why does shut down and reboot take ages?
+
+Previous to RetroPie 3.4, there was an issue whereby EmulationStation was terminated on reboot/shut down, rather than shut down 'cleanly'. This has now been fixed, so every time you reboot/shut down EmulationStation rewrites all metadata about your roms, so that play counts, last-played dates, etc., are saved. This has the side-effect of the causing the whole process to take longer, relative to how many ROMs you have. MAME/FBA ROMs can often form the bulk of libraries, so it might be helpful to remove clones by [rebuilding your set with a custom parent-only DAT](https://github.com/retropie/retropie-setup/wiki/Managing-ROMs).
+
+An option has been added starting with RetroPie 3.7 to decide whether or not you want metadata saved on exit.
+![main menu](https://cloud.githubusercontent.com/assets/10035308/14507387/a7ee93b8-017f-11e6-94f2-af5a2e158079.png)
+![metadata](https://cloud.githubusercontent.com/assets/10035308/14507388/a7fc1bfa-017f-11e6-8f01-8cfed5344542.png)
+
+- Save Metadata On Exit: If on, it will read and write all the info for your roms which can lead to long boot and shutdown times if you have large romsets. If you turn it off it will not write those changes which means it also will not write how many times you've played a game, any new game scrapes, etc. This is on by default.
+
+- Parse Gamelists Only: If on, it will only read the roms you have scraped, so if you add any new roms it will not look for them unless you turn this back off. it is off by default.
 
 ### How do I change which buttons to press to exit an emulator with a controller?
 
@@ -194,18 +206,6 @@ The logo.nologo option is what turns off the raspberries on boot.
 You can also disable the rainbow splash at the beginning (not to be confused with the underpowered rainbow square the appears in the top right corner of your screen indicating you have an insufficient power supply)
 
 Add `disable_splash=1` in `/boot/config.txt`
-
-### Why does shut down and reboot take ages?
-
-Previous to RetroPie 3.4, there was an issue whereby EmulationStation was terminated on reboot/shut down, rather than shut down 'cleanly'. This has now been fixed, so every time you reboot/shut down EmulationStation rewrites all metadata about your roms, so that play counts, last-played dates, etc., are saved. This has the side-effect of the causing the whole process to take longer, relative to how many ROMs you have. MAME/FBA ROMs can often form the bulk of libraries, so it might be helpful to remove clones by [rebuilding your set with a custom parent-only DAT](https://github.com/retropie/retropie-setup/wiki/Managing-ROMs).
-
-An option has been added starting with RetroPie 3.7 to decide whether or not you want metadata saved on exit.
-![main menu](https://cloud.githubusercontent.com/assets/10035308/14507387/a7ee93b8-017f-11e6-94f2-af5a2e158079.png)
-![metadata](https://cloud.githubusercontent.com/assets/10035308/14507388/a7fc1bfa-017f-11e6-8f01-8cfed5344542.png)
-
-- Save Metadata On Exit: If on, it will read and write all the info for your roms which can lead to long boot and shutdown times if you have large romsets. If you turn it off it will not write those changes which means it also will not write how many times you've played a game, any new game scrapes, etc. This is on by default.
-
-- Parse Gamelists Only: If on, it will only read the roms you have scraped, so if you add any new roms it will not look for them unless you turn this back off. it is off by default.
 
 ### Why aren't my in-game saves working properly?
 
