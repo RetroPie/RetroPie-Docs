@@ -195,10 +195,10 @@ see this video for reference:
 " target="_blank"><img src="https://i.ytimg.com/vi_webp/OYMoxvbkYD4/mqdefault.webp" 
 alt="Configuration Video" width="300" height="190" border="10" /></a>
 
-### FTP (needs an active internet connection) 
+### SFTP (needs an active internet connection) 
 * Wired (needs ethernet cable)
 * Wireless (needs wifi dongle)
-There are many FTP programs out there, for windows many people use [WinSCP](https://winscp.net/eng/download.php) for mac you can use something like [Cyberduck](https://cyberduck.io/?l=en)
+There are many SFTP programs out there, for windows many people use [WinSCP](https://winscp.net/eng/download.php) for mac you can use something like [Cyberduck](https://cyberduck.io/?l=en)
 
 ![winscp](https://cloud.githubusercontent.com/assets/10035308/12865832/7d9afb68-cc75-11e5-81b2-4529991e1821.png)
 
