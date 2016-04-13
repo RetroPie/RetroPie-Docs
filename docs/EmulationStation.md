@@ -40,12 +40,6 @@ A great deal of information can be found in EmulationStation's README.md and THE
 [Creating your own themes.](https://github.com/Aloshi/EmulationStation/blob/master/THEMES.md#themes)
 
 ## Common Problems
-### When I start a game, I lose keyboard input and have to power off to reboot!
-
-**DON'T START EMULATIONSTATION FROM X.** RetroArch expects keyboard input to be from the normal terminal, *not* a terminal window in X. To fix this, either:
-* Close X
-* Reboot and run ES before you start X
-* Or open a terminal with Ctrl+Alt+F1 through F6. Press Ctrl+Alt+F7 to return to X (though remember X will still be running and take up some RAM).
 
 
 ### My ES_Sytems.cfg is being overwritten on updates!
@@ -57,27 +51,22 @@ If you want to customise your es_systems.cfg or add themes without them being ov
 
 ### EmulationStation isn't detecting my ROMs!
 
-* Are they in the right folders? *Remember, paths are case sensitive*. You can check what folders ES is using with: `nano /etc/emulationstation/es_systems.cfg`.
-* Is ES looking for the right file extension? *Remember, the extension is case sensitive*. You can check what format ES is searching with: `nano /etc/emulationstation/es_systems.cfg`. 
+* Are they in the right folders? *Remember, paths are case sensitive*. You can check what folders ES is using with: `nano /etc/emulationstation/es_systems.cfg` or better yet look at the documentation here on the wiki.
+* Is ES looking for the right file extension? *Remember, the extension is case sensitive*. You can check what format ES is searching with: `nano /etc/emulationstation/es_systems.cfg` and again see the pages here on the wiki
 * Are your ROMs in a compressed format? *EmulationStation does not search inside zip files*, though some emulators (like MAME) will expect a zip file.
 
 
-### All I see is the Linapple 2 screen! Where are the rest of the emulators?
+### All I see is the Amiga screen! Where are the rest of the emulators?
 
-You've gone one screen too far ;) Press `F10` to get back to the Apple II start screen and use the left and right arrows to navigate between the emulators.
-
+You've gone one screen too far ;) Press `B` to get back to the system screen and use the left and right arrows to navigate between the emulators. If you are wondering why some systems aren't there you need to add roms to their respective folders first before that system will show up.
 
 ### How do I hide unused/unwanted systems?
 
-You can hide unused systems by either removing the relevant roms in the system folder or navigating to ```/etc/emulationstation``` and opening the ```es_systems.cfg``` file. Using ```<!--``` and ```-->``` on a systems entry will hide it from the frontend GUI.
-
-You can also just move the rom folders for the systems you don't want into a folder you create called unused.
+You can delete the rom folders for the systems you don't want or you can move the rom folders you dont want into a folder you create called unused.
 
 ### My emulator won't close through my gamepad!
 
-This is normal. ES does not monitor input while an emulator is running. If you want to close your emulator, you will have to do it from within the emulator. RetroArch has a binding for this, just add it to your RetroArch config file: `input_exit_emulator_btn = “6″` would map it to button 6 on a gamepad. You should be able to figure out what button to use by running RetroArch's joystick configuration tool (check the `RetroPie/RetroArch-Rpi/tools/` directory).
-
-[If you are using an "authentic" controller and don't have an extra button to use, try this.](http://www.raspberrypi.org/phpBB3/viewtopic.php?p=250689#p250689)
+This sometimes happens. ES does not monitor input while an emulator is running. If you want to close your emulator, you will have to do it from within the emulator. RetroArch has a binding for this and should automatically be generated when you first configure your controller in emulationstation. default to exit is `select+start`, see [Here](https://github.com/retropie/retropie-setup/wiki/RetroArch-Configuration) for more info.
 
 ### All I see is this weird white dot in the middle of the screen!
 
@@ -89,11 +78,19 @@ Your controller driver is likely being started after EmulationStation. An easy w
 
 ### I don't have enough buttons to finish the Input Config screen?!
 
-[Work-around here.](https://github.com/Aloshi/EmulationStation/issues/67#issuecomment-16715011)
+Just hold down a button to skip each unused button until you get to the end of the configuration
 
 ### I messed up on the initial prompt that appears when Emulation Station starts for the first time. My controls are completely messed up and out of order. Is there a way to redo this prompt?
 
-You need to delete the configuration file that Emulation Station uses by invoking ```rm /home/pi/.emulationstation/es_input.cfg```, and then re-install Emulation Station from Retropie-Setup. Note that you exit Emulation Station by pressing ```F4```. When you (re-)start Emulation Station, the configuration prompt will appear again.
+You need to delete the configurations you've made in `/home/pi/.emulationstation/es_input.cfg` but IMPORTANT: YOU NEED TO KEEP IN THE FOLLOWING LINES IF YOU WANT AUTOCONFIGURATIONS TO WORK:
+
+```
+  <inputAction type="onfinish">
+    <command>/opt/retropie/supplementary/emulationstation/scripts/inputconfiguration.sh</command>
+  </inputAction>
+```
+
+If you lose the config you can re-install Emulation Station from Retropie-Setup. Note that you exit Emulation Station by pressing ```F4```. When you (re-)start Emulation Station, the configuration prompt will appear again.
 
 # Alternative Frontends
 Because of the development hiatus, there has been some attention towards other front-ends.
