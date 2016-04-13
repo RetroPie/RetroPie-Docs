@@ -88,9 +88,9 @@ An option has been added starting with RetroPie 3.7 to decide whether or not you
 ![main menu](https://cloud.githubusercontent.com/assets/10035308/14507387/a7ee93b8-017f-11e6-94f2-af5a2e158079.png)
 ![metadata](https://cloud.githubusercontent.com/assets/10035308/14507388/a7fc1bfa-017f-11e6-8f01-8cfed5344542.png)
 
-- Save Metadata On Exit: If on, it will read and write all the info for your roms which can lead to long boot and shutdown times if you have large romsets. If you turn it off it will not write those changes which means it also will not write how many times you've played a game, any new game scrapes, etc. This is on by default.
+- **Save Metadata On Exit:** If on, it will read and write all the info for your roms which can lead to long boot and shutdown times if you have large romsets. If you turn it off it will not write those changes which means it also will not write how many times you've played a game, any new game scrapes, etc. This is on by default.
 
-- Parse Gamelists Only: If on, it will only read the roms you have scraped, so if you add any new roms it will not look for them unless you turn this back off. it is off by default.
+- **Parse Gamelists Only:** If on, it will only read the roms you have scraped, so if you add any new roms it will not look for them unless you turn this back off. it is off by default.
 
 ### How do I change which buttons to press to exit an emulator with a controller?
 
