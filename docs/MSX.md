@@ -82,20 +82,20 @@ To locate real MSX system ROMs, try google.
 ### Changing default machine to be emulated
 By default openMSX will emulate a MSX2+ using the c-bios ROMs. To change this, you need to start openMSX, either by starting a game or from the commandline by typing ``/opt/retropie/emulators/openmsx/bin/openmsx``
 
-When the emulator is running, press F10 and you will get a overlay where you can type commands, here you need to type the following to change the default MSX to be emulated;
+When the emulator is running, press `F10` and you will get a overlay where you can type commands, here you need to type the following to change the default MSX to be emulated;
 
 ``set default_emulator turbor``
 
-In the above example we change the default to the MSX TurboR, which was the last MSX machine produced. Other options could be ``msx1``, ``msx2`` or ``msx2plus``. There is many MSX machines that can potentially be emulated, for a list look in the directory ``/opt/retropie/emulators/openmsx/share/machines``. If you for instance wanted to emulate a Spectravideo SVI-728 you will find in that directory a file ``Spectravideo_SVI-728.xml``, simply use the name of the file, excluding the .xml extension as the machine name.
+In the above example we change the default to the MSX TurboR, which was the last MSX machine produced. Other options could be ``msx1``, ``msx2`` or ``msx2plus``. There are many MSX machines that can potentially be emulated, for a list look in the directory ``/opt/retropie/emulators/openmsx/share/machines``. If for instance you wanted to emulate a Spectravideo SVI-728 you will find in that directory a file ``Spectravideo_SVI-728.xml``, simply use the name of the file, excluding the .xml extension as the machine name.
 
-Note: if you do not have the ROMs for the default machine type requested in the correct location, openMSX will still start, but with the c-bios ROMs.
+Note: If you do not have the ROMs for the default machine type requested in the correct location, openMSX will still start, but with the c-bios ROMs.
 
-### exiting the emulator
+### Exiting the emulator
 The key definitions defined in retropie will not work in openMSX. openMSX does however allow you to redefine your controls. For more information, look at the openMSX website for 'bind'.
 
 By default the exit key in the emulator is ``Alt-F4``
 
-# Setting default screen on MSX2+ and TurboR machines
+### Setting default screen on MSX2+ and TurboR machines
 By default MSX2+ and TurboR machines will start with a screen type which is incompatible with lots of European software. Typically resulting in errors such as ``Syntax error in 10`` when starting disk or cassette based games. This is because the software is trying to change the width of the screen to something incompatible with the current screen type selected. The solution is to start the emulator to a MSX BIOS Ok prompt. This can be done when a game fails to start and gives you an Ok prompt, or you can start the emulator outside of RetroPie as shown above.
 
 At the MSX BIOS Ok prompt (not the openMSX command prompt), type the following;
