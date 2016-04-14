@@ -2,6 +2,36 @@
 
 This page is a list of all of the changelogs for each version of RetroPie. For a complete list of all commits to the source code see [here:](https://github.com/petrockblog/RetroPie-Setup/commits/master)  
 
+### Version 3.7: (April 14, 2016)
+
+- Added new experimental modules: 
+  - The Ur Quan Masters  (Port of DOS game Star Control 2).
+  - Xrick (Port of Rick Dangerous).
+  - Tyrquake (Standalone, not libretro).
+  - Solarus Engine (Homebrew Zelda Clone).
+  - SDLPoP (Prince of Persia Port).
+  - Cannonball (Outrun Engine).
+  - Stratagus (Warcraft and Starcraft Engine).
+  - OpenBOR (Beats of Rage 2d Sidescrolling Game Engine).
+  - Commander Genius (Port of Commander Keen).
+  - Micropolis (Open source version of Sim City Classic).
+  - Aleph One (Open Source port of Marathon Series).
+  - Giana’s Return (Fan-Made sequel to the Giana Sisters).
+  - Lincity (Sim City Clone).
+  - Simcoupe (SAM Coupé Emulator).
+- LXDE Desktop (Option in raspi-tools to reinstall the desktop environment).
+- Updated Kodi to Kodi 16 (which includes joypad support).
+- Updated PS3 Module (timeout fixed).
+- SDL2 PS3/Wii U Pro controller fixes.
+- UAE4Arm updated.
+- lr-mame2003 updated with sample/nvram support and additional core settings.
+- Mupen64plus updated with fix for black screen with rice plugin.
+- Scummvm Improvements (updated to 1.8 with OpenGL and partial Myst support).
+- Updated Config Editor (https://github.com/RetroPie/RetroPie-Setup/wiki/Configuration-Editor).
+- Updated Carbon and Pixel Themes and added default images to the RetroPie Menu.
+- Added “Other Settings” menu to Emulationstation with “save metadata on exit” and “parse gamelists only”. These options were added to mitigate the long boot and shutdown times with large romsets.
+- Various other improvements and fixes.
+
 ### Version 3.6: (March 1, 2016)
 
 **Added Support for the Raspberry Pi 3 [Via Raspbian Firmware Update]**
