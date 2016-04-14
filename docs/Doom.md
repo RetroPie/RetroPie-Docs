@@ -25,7 +25,7 @@ Create a script to launch your WAD. For example, for The Plutonia Expriment, cre
 
 ```shell
 #!/bin/bash
-/opt/retropie/supplementary/runcommand/runcommand.sh 0 "/opt/retropie/emulators/retroarch/bin/retroarch -L /opt/retropie/libretrocores/lr-prboom/prboom_libretro.so --config /opt/retropie/configs/doom/retroarch.cfg /home/pi/RetroPie/roms/ports/doom/Plutonia.wad" "lr-prboom"
+/opt/retropie/supplementary/runcommand/runcommand.sh 0 "/opt/retropie/emulators/retroarch/bin/retroarch -L /opt/retropie/libretrocores/lr-prboom/prboom_libretro.so --config /opt/retropie/configs/ports/doom/retroarch.cfg /home/pi/RetroPie/roms/ports/doom/Plutonia.wad" "lr-prboom"
 ```
 Create a copy of the script for each WAD, replacing the name of the WAD for each one.
 
