@@ -62,6 +62,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [PC Engine/TurboGrafx-16](PC-Engine) [(lr-mednafen-pce-fast)](https://github.com/libretro/beetle-pce-fast-libretro) [(lr-beetle-supergrafx)](https://github.com/libretro/beetle-supergrafx-libretro)
 * [PlayStation 1](Playstation-1) [(lr-pcsx-rearmed)](https://github.com/libretro/pcsx_rearmed), [(pcsx-rearmed)](https://github.com/notaz/pcsx_rearmed)
 * [PSP](PSP) [(lr-ppsspp)](https://github.com/libretro/libretro-ppsspp), [(ppsspp)](https://github.com/hrydgard/ppsspp)
+* [SAM Coupé](Sam-Coupe) [(SimCoupe)](http://www.simcoupe.org/) (EXPERIMENTAL!)
 * [ScummVM](ScummVM)
 * [Sega 32X](Sega-32X) [(lr-picodrive)](https://github.com/libretro/picodrive)
 * [Sega CD](Sega-CD) [(lr-picodrive)](https://github.com/libretro/picodrive)
