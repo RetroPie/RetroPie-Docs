@@ -76,7 +76,7 @@
 * [Commander Keen](Commander-Keen) 
 * [Descent](Descent)  
 * [DOOM](Doom) 
-* [Duke Nukem 3D](Duke-Nukem-3D) 
+* [Duke Nukem 3D](Duke-Nukem-3D)
 * [Giana's Return](Giana's-Return)
 * [Lincity](Lincity)
 * [Löve](Love) 
