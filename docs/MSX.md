@@ -88,6 +88,14 @@ When the emulator is running, press `F10` and you will get a overlay where you c
 
 In the above example we change the default to the MSX TurboR, which was the last MSX machine produced. Other options could be ``msx1``, ``msx2`` or ``msx2plus``. There are many MSX machines that can potentially be emulated, for a list look in the directory ``/opt/retropie/emulators/openmsx/share/machines``. If for instance you wanted to emulate a Spectravideo SVI-728 you will find in that directory a file ``Spectravideo_SVI-728.xml``, simply use the name of the file, excluding the .xml extension as the machine name.
 
+Machine type msx1, msx2, msx2plus and turbor are simply links to certain MSX machines as follows;
+- msx1 = European Toshiba HX10
+- msx2 = European Philips NMS 8250
+- msx2plus = Japanese Panasonic FS-A1WSX
+- turbor = Japanese Panasonic FS-A1GT
+
+The machine type selected will obviously have certain effects. For instance the FS-A1GT does not support cassettes, and so you cannot play cassette games on it. Also starting some games (mainly Konami) on a Japanese machine may result in the in-game dialogue being in Japanese, while if you start the same game on a European machine the in-game dialogue may be in English.
+
 Note: If you do not have the ROMs for the default machine type requested in the correct location, openMSX will still start, but with the c-bios ROMs.
 
 ### Exiting the emulator
