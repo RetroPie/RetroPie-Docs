@@ -8,7 +8,7 @@ Emulator: [Solarus](http://www.solarus-games.org/) (EXPERIMENTAL)
 
 ## ROMS
 
-Games are already added through the script though extra game can be added manually. 
+Games are already added through the script though extra games can be added manually. 
 
 ## Controls:
 
