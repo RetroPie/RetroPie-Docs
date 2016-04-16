@@ -15,6 +15,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [Setting Up Wifi](Wifi)
 * [Configuring Controllers (RetroArch)](RetroArch-Configuration)
 * [Transferring games (ROMs), and other files to RetroPie](Transferring-Roms)
+* [Scraping Games](scraper)
 * [Getting the right MAME ROMs](Managing-ROMs)
 * [Using the Runcommand Menu](runcommand)
 * [Updating RetroPie](Updating-RetroPie)
@@ -111,7 +112,6 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 ## Advanced Configuration
 * [EmulationStation](EmulationStation)
 * [EmulationStation Themes](themes)
-* [Scraping Games](scraper)
 * [Configuration Editor](Configuration-Editor)
 * [RetroAchievements](RetroAchievements)
 * [Netplay](Netplay)
