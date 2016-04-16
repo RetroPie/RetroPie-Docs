@@ -101,8 +101,10 @@
 
 ## Advanced Configuration
 
+* [EmulationStation](EmulationStation)
 * [Custom Splash Screens](splashscreen)
 * [EmulationStation Themes](themes)
+* [Scraping Games](scraper)
 * [Configuration Editor](Configuration-Editor)
 * [Netplay](Netplay)
 * [Overclocking](Overclocking)
