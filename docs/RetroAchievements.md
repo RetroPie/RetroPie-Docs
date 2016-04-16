@@ -10,8 +10,11 @@ cheevos_password = yourpassword
 cheevos_enable = true
 ```
 
-Supported Systems:
+##Supported Systems:
 
-Game Boy / Advance / Color (VBA-M)  
+Game Boy / Color (lr-gambatte)  
+Game Boy Advance (VBA-M)  
 NES (lr-QuickNES - found in 'Experimental' menu)  
-SNES (lr-Snes9x - installed by default)  
+SNES (lr-Snes9x - installed by default, lr-pocketsnes - installed by default)  
+Genesis/Mega Drive (lr-picodrive - installed by default)  
+Sega 32x (lr-picodrive - installed by default)
