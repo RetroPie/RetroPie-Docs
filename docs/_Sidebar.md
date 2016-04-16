@@ -105,7 +105,6 @@
 * [EmulationStation](EmulationStation)
 * [Custom Splash Screens](splashscreen)
 * [EmulationStation Themes](themes)
-* [Scraping Games](scraper)
 * [Configuration Editor](Configuration-Editor)
 * [RetroAchievements](RetroAchievements)
 * [Netplay](Netplay)
