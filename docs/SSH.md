@@ -38,8 +38,7 @@ ls
 ```
 **Retropie Setup Script:**
 ```
-cd RetroPie
-sudo ./retropie_setup.sh
+sudo /home/pi/RetroPie-Setup/retropie_setup.sh
 ```
 **Edit Files with Nano:** 
 ```
