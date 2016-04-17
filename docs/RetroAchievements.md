@@ -12,7 +12,7 @@ cheevos_enable = true
 
 ##Supported Systems:
 
-Game Boy / Color (lr-gambatte)  
+Game Boy / Color (lr-gambatte - installed by default)  
 Game Boy Advance (VBA-M)  
 NES (lr-QuickNES - found in 'Experimental' menu)  
 SNES (lr-Snes9x - installed by default, lr-pocketsnes - installed by default)  
