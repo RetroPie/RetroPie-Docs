@@ -1,6 +1,4 @@
-## Getting the most from the Nintendo 64.
-
-Hardware and hardware setup. 
+##Hardware and hardware setup. 
 
 Nintendo 64 emulation requires at a bare minimum a Raspberry Pi 2 and a Raspberry  Pi 3 is highly suggested do to it's increased performance. 
 
