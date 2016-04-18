@@ -125,7 +125,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [Install via NOOBS](convert-retropie-sd-card-image-to-noobs-image)
 * [RetroPie install for OSMC with external memory USB Drive](RetroPie-install-for-OSMC-with-external-memory-USB-Drive)
 * [Favorites and Child-friendly EmulationStation](Child-friendly-EmulationStation)
-
+* [Optimization for Nintendo 64](Optimization for Nintendo 64)
 ## Controller Configurations
 * [Setting up an XBox 360 Controller](Setting-up-the-XBox360-controller)
 * [Setting up a PS3 controller](Setting-up-a-PS3-controller)
