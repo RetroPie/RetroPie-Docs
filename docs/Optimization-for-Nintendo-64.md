@@ -122,3 +122,6 @@ vire_refresh / fullspeed screen rate in mupen64plus.cfg
 Continue research as to why increasing options like vire_refresh and full screen framerate in the standalone config file seems to increase performance in plugin loaded non standalone application even though those configs are not supposed to apply to plugin versions.  
 
 
+Additionally need to research and test optimum video modes, and full screen scaling as well as Anti-Aliasing and its effect or benefit. 
+
+
