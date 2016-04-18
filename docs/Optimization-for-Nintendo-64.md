@@ -1,1 +1,126 @@
-Placeholder
+## Getting the most from the Nintendo 64.
+
+Hardware and hardware setup. 
+
+Nintendo 64 emulation requires at a bare minimum a Raspberry Pi 2 and a Raspberry  Pi 3 is highly suggested do to it's increased performance. 
+
+A note on overclocking A raspi 3 on default settings is comparable in speed to an overclocked raspi 2. 
+
+
+Suggested overclock for Raspi 3 for optimal N64 emulation (This to be paired with proper power, cooling, please see https://github.com/retropie/retropie-setup/wiki/Overclocking for further information.
+
+```
+#Overclock Settings
+arm_freq=1400 (Try 1350 if 1400 does not work)
+over_voltage=6
+temp_limit=80
+core_freq=500
+
+#GPU Based
+h264_freq=333
+avoid_pwm_pll=1
+gpu_mem=450
+v3d_freq=500
+#Ram Overclock
+sdram_freq=588
+sdram_schmoo=0x02000020
+over_voltage_sdram_p=6
+over_voltage_sdram_i=4
+over_voltage_sdram_c=4
+#Sound Fix
+hdmi_drive=2
+DEFAULT_MODE=0
+```
+
+The overclock settings are being adjusted to suit optimal operations.  Of most important note of categories that most correctly benefit the Nintendo 64 is v3d_freq this is not a setting that when increased fails warranty or even really has a huge impact on heat but it has a great effect on higher performing emulators such as N64 and Dreamcast. Clock and SDram speed also assist greatly in emulation.
+
+##Run Command
+The run command tool is very important to getting maximum possible performance from your N64 emulation. 
+Firstly it allows for the selection of the most optimal plugin to play games.  For example Rice is the best plugin to play Zelda Games on as without it Majoras Mask will bug during the first few stages.  
+Additionally Glide is the only plugin that will play Killer Instinct Gold at a playable level.   
+It is also crucial to downscale video on games that are having heavy amounts of lag as this allows for less GPU strain and increases the playablity of the game.  So by default I suggest setting all emulators to use mode cea -1 and then define higher video settings to your liking on games that have very high performance ie(Mario Kart, Super Mario 64, etc)
+To learn the community tested optimal settings please view either of the 2 rom compatibility lists located here
+https://docs.google.com/spreadsheets/d/1Sn3Ks3Xv8cIx3-LGCozVFF7wGLagpVG0csWybnwFHXk/edit
+or 
+https://docs.google.com/spreadsheets/d/1Wjzbu90l6eCEW1w6ar9NtfyDBQrSPILQL5MbRSpYSzw/edit?usp=sharing
+Top Link tracking more testing of Raspi 3 performance. 
+
+##CPU-Govenor
+The CPU govenor can be throttled to max performance mode in one of two ways.
+
+```
+echo "performance" |sudo tee /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
+```
+Or you can enable it from Runcommand  Go to Retropie-Setup - Setup and Configuration to be used post install - Configure the runcommand launch script - cpu configuration force performance
+then cancel exit and reboot
+
+
+##Note's on Audio
+Audio
+
+Use HDMI as composite requires more CPU usage.
+With HDMI use DEFAULT_MODE=0 so that the audio data will not be copied or resampled.
+With Compsite set DEFAULT_MODE to a low frequency e.g. 10000. The higher this is, the more CPU processing will be required. If you get strange sound affects (e.g. aliasing) then increase the frequency.
+
+
+
+
+
+## High Resoltuion texture packs
+The steps for this are to change the configuration in 
+```/opt/retropie/configs/n64/mupen64plus.cfg  ```
+Replacing False for True in the Glide and Rice plugin
+
+Glide Line
+```
+# Use high-resolution texture packs if available.
+txHiresEnable = False
+```
+Rice Line
+```
+# Enable hi-resolution texture file loading
+LoadHiResTextures = False
+```
+
+You would then place high res texture packs in the directory
+
+/home/pi/.local/share/mupen64plus/hires_texture
+
+Texture packs are available for download here 
+http://textures.emulation64.com/index.php?id=downloads
+
+The folder name in that directory must match the core name in the rom header. 
+
+To find that you can use the command to display the core name just use the command below in terminal then exit and scroll up I do it from a ssh session cause i can scroll up and read it.  But in the first few lines it will show the core name 
+```
+cd /home/pi/RetroPie/roms/n64
+/opt/retropie/emulators/mupen64plus/bin/mupen64plus.sh mupen-video-rice rom name
+```
+
+You can use the same command to launch the rom correctly loading the texture pack. 
+
+
+However if you load up emulation station and use the normal run command launcher it will fail or only partially load the texture pack a issue is open on this subject and will update when it is working correctly.  
+
+
+
+
+
+##Research for further improvments
+(Run mupen64plus using sudo/root so that it can change its scheduler policy to 'hog' the CPU)
+Test and confirm this behavior has any effect, and if this boost is cancelled out or equaled to setting the cpu cores to performance mode.
+
+(Use 128Mb GPU/CPU memory split. The current code doesn't force the kernel to keep pages in ram so if the split is too high, then pages will be swapped and slow emulation down. (Fix coming soon))
+The above comment was from a dev in April of 2014 no update was given as to wether the update was successfull or patched.  Seems to be written for a 256 memory pi and if an even memory split would be applicable.  So more research into if page swapping is happening , if anyone knows how to test if page swapping is intiated please update.  
+
+Quality of Roms
+There is a definite difference in some roms.  There are multiple versions of the SOTE rom some of which have noticeable stuttering and seizure screens but there are clean versions which play without the buggy effects.  I believe some of this could be due to the core name in the rom header not correctly matching what is in the .ini files for different plugins which apply different effects per game or could be as simple as bad rips which were never noticed on more powerfull hardware. 
+
+Overclocking past 1400
+I believe that the pi 3 can take a higher overclock and that power not heat is the bottleneck here.  Currently awaiting shipment of a 3000 ma charger to attempt more voltage to the chip to get past 1400 clock speed. 
+
+
+vire_refresh / fullspeed screen rate in mupen64plus.cfg
+Continue research as to why increasing options like vire_refresh and full screen framerate in the standalone config file seems to increase performance in plugin loaded non standalone application even though those configs are not supposed to apply to plugin versions.  
+
+
