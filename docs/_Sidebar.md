@@ -117,6 +117,7 @@
 * [Install via NOOBS](convert-retropie-sd-card-image-to-noobs-image)
 * [RetroPie install for OSMC with external memory USB Drive](RetroPie-install-for-OSMC-with-external-memory-USB-Drive)
 * [Favorites and Child-friendly EmulationStation](Child-friendly-EmulationStation)
+* [Optimization for Nintendo 64](Optimization for Nintendo 64)
 
 ## Controllers
 
