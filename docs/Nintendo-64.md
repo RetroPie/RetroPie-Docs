@@ -278,7 +278,7 @@ From there you will be able to use your joystick as analogue inputs in 64 games.
 What I do is I will configure via Retropie the config how I like it for all the general emulators and then i will edit the /opt/retropie/configs/n64/InputAutoCfg.ini file with the below which as long as your using the USB N64 pad should get your 64 controller mapped correctly.
 
 I sacrifice Ltrigger to Select and don't define it so It can be used to xit the emulator with start
-
+```
 ; Generic USB Joystick _START
 [Generic USB Joystick ]
 plugged = True
@@ -305,6 +305,6 @@ C Button D = button(2)
 C Button U = button(0)
 ; Generic USB Joystick _END
 
-
+```
 
 
