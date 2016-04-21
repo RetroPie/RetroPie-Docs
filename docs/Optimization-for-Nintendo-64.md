@@ -92,7 +92,7 @@ The folder name in that directory must match the core name in the rom header.
 To find that you can use the command to display the core name just use the command below in terminal then exit and scroll up I do it from a ssh session cause i can scroll up and read it.  But in the first few lines it will show the core name 
 ```
 cd /home/pi/RetroPie/roms/n64
-/opt/retropie/emulators/mupen64plus/bin/mupen64plus.sh mupen-video-rice rom name
+/opt/retropie/emulators/mupen64plus/bin/mupen64plus.sh mupen64plus-video-rice rom name
 ```
 
 You can use the same command to launch the rom correctly loading the texture pack. 
