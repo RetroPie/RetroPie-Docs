@@ -274,3 +274,37 @@ From there you will be able to use your joystick as analogue inputs in 64 games.
 
 
 
+##Configureing N64 USB Controller for use with Retropie accurately
+What I do is I will configure via Retropie the config how I like it for all the general emulators and then i will edit the /opt/retropie/configs/n64/InputAutoCfg.ini file with the below which as long as your using the USB N64 pad should get your 64 controller mapped correctly.
+
+I sacrifice Ltrigger to Select and don't define it so It can be used to xit the emulator with start
+
+; Generic USB Joystick _START
+[Generic USB Joystick ]
+plugged = True
+plugin = 2
+mouse = False
+AnalogDeadzone = 4096,4096
+AnalogPeak = 32768,32768
+Mempak switch =
+Rumblepak switch =
+R Trig = button(5)
+Start = button(9)
+Y Axis = axis(1-,1+)
+Z Trig = button(7)
+DPad U = hat(0 Up)
+A Button = button(6)
+DPad D = hat(0 Down)
+X Axis = axis(0-,0+)
+DPad R = hat(0 Right)
+B Button = button(8)
+DPad L = hat(0 Left)
+C Button R = button(1)
+C Button L = button(3)
+C Button D = button(2)
+C Button U = button(0)
+; Generic USB Joystick _END
+
+
+
+
