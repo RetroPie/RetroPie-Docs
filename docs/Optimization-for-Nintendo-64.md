@@ -99,6 +99,7 @@ You can use the same command to launch the rom correctly loading the texture pac
 
 
 However if you load up emulation station and use the normal run command launcher it will fail or only partially load the texture pack a issue is open on this subject and will update when it is working correctly.  
+Correction to this behavior.  It seems that texture packs will not load correctly when downscaling video to something standard like 640x480 that resolution is not high enough to run the texture pack.  If you have Cea-5 enabled you can launch the texture pack normally via emulation station. 
 
 
 
