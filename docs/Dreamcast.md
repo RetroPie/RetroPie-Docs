@@ -171,7 +171,7 @@ run in terminal :
 ```cd /opt/retropie/emulators/reicast/bin```
 Here is a script called 'reicast-joyconfig'
 run it :
-```./reicast-joyconfig```
+./reicast-joyconfig
 
 Choose your joystick.
 Now you can map your buttons.
