@@ -18,7 +18,7 @@ cheevos_hardcore_mode_enable = true
 
 * Game Boy / Color (lr-gambatte - installed by default)  
 * Game Boy Advance (VBA-M)  
-* NES (lr-QuickNES - found in 'Experimental' menu, lr-fceumm - you have to install from source [see below])
+* NES (lr-QuickNES - found in 'Experimental' menu, lr-fceumm - installed by default, but you have to [re]install it from source [see below])
 * SNES (lr-Snes9x - installed by default, lr-pocketsnes - installed by default)  
 * Genesis/Mega Drive (lr-picodrive - installed by default)  
 * Sega 32x (lr-picodrive - installed by default)
