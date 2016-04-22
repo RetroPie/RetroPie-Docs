@@ -165,20 +165,23 @@ axis_dpad1_x_inverted = no
 
 
 
-For mapping non-standard controller via @Folly
+##For mapping non-standard controller via @Folly
 
 run in terminal :
-```cd /opt/retropie/emulators/reicast/bin```
+```
+cd /opt/retropie/emulators/reicast/bin
+```
 
 Here is a script called 'reicast-joyconfig'
 run it :
-
-```./reicast-joyconfig```
+```
+./reicast-joyconfig
+```
 
 Choose your joystick.
 Now you can map your buttons.
 When all is done it outputs the text for making a file in 
-```/home/pi/.reicast/mappings```
+/home/pi/.reicast/mappings
 
 It outputs something like this (numbers are in decimals not hexadecimal such as in other contoller.cfg's(0x13b)):
 [emulator]
@@ -188,4 +191,4 @@ btn_escape = 316
 [dreamcast]
 .......etc
 
-make a file in ```/home/pi/.reicast/mappings``` called controller_Your Gamepad.cfg and paste the text in this file.
+make a file in /home/pi/.reicast/mappings called controller_Your Gamepad.cfg and paste the text in this file.
