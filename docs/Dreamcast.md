@@ -169,13 +169,17 @@ For mapping non-standard controller via @Folly
 
 run in terminal :
 ```cd /opt/retropie/emulators/reicast/bin```
+
 Here is a script called 'reicast-joyconfig'
 run it :
-./reicast-joyconfig
+
+```./reicast-joyconfig```
 
 Choose your joystick.
 Now you can map your buttons.
-When all is done it outputs the text for making a file in '/home/pi/.reicast/mappings' .
+When all is done it outputs the text for making a file in 
+```/home/pi/.reicast/mappings```
+
 It outputs something like this (numbers are in decimals not hexadecimal such as in other contoller.cfg's(0x13b)):
 [emulator]
 mapping_name = Your Gamepad
