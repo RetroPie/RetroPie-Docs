@@ -10,7 +10,7 @@ cheevos_password = yourpassword
 cheevos_enable = true
 ```
 
-Since RetroArch 1.3.2 (used in RetroPie 3.7), the Hardcore Mode is supported. It disables the savestates and is optional. If you want to enable Hardcore Mode add this line too:
+Since RetroArch 1.3.2 (used in RetroPie 3.7), the Hardcore Mode is supported. It disables the savestates and is optional. If you want to enable it add this line too:
 
 ```
 cheevos_hardcore_mode_enable = true
@@ -20,7 +20,7 @@ cheevos_hardcore_mode_enable = true
 
 Game Boy / Color (lr-gambatte - installed by default)  
 Game Boy Advance (VBA-M)  
-NES (lr-QuickNES - found in 'Experimental' menu, lr-fceumm - you have to install from source [*see below])
+NES (lr-QuickNES - found in 'Experimental' menu, lr-fceumm - you have to install from source *see below)
 SNES (lr-Snes9x - installed by default, lr-pocketsnes - installed by default)  
 Genesis/Mega Drive (lr-picodrive - installed by default)  
 Sega 32x (lr-picodrive - installed by default)
