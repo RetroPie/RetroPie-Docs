@@ -1,6 +1,4 @@
-RetroAchievements are a way to log your achievements on oldschool console games. It is integrated into RetroArch and is only supported by select cores. 
-
-(SEE CHART)
+RetroAchievements are a way to log your achievements on oldschool console games. It is integrated into RetroArch and is only supported by select cores ([see chart](https://github.com/RetroPie/RetroPie-Setup/wiki/RetroAchievements/_edit#supported-systems)).
 
 You first need to create an account at http://retroachievements.org/ and then add your credentials to `/opt/retropie/configs/all/retroarch.cfg`
 
@@ -18,14 +16,14 @@ cheevos_hardcore_mode_enable = true
 
 ##Supported Systems:
 
-Game Boy / Color (lr-gambatte - installed by default)  
-Game Boy Advance (VBA-M)  
-NES (lr-QuickNES - found in 'Experimental' menu, lr-fceumm - you have to install from source *see below)
-SNES (lr-Snes9x - installed by default, lr-pocketsnes - installed by default)  
-Genesis/Mega Drive (lr-picodrive - installed by default)  
-Sega 32x (lr-picodrive - installed by default)
+* Game Boy / Color (lr-gambatte - installed by default)  
+* Game Boy Advance (VBA-M)  
+* NES (lr-QuickNES - found in 'Experimental' menu, lr-fceumm - you have to install from source [see below])
+* SNES (lr-Snes9x - installed by default, lr-pocketsnes - installed by default)  
+* Genesis/Mega Drive (lr-picodrive - installed by default)  
+* Sega 32x (lr-picodrive - installed by default)
 
-*To enable lr-fceumm for achievements you have to follow the instructions [here](https://github.com/retropie/RetroPie-Setup/wiki/Updating-RetroPie) to install it from source. Summing up:
+To enable lr-fceumm for achievements you have to follow the instructions [here](https://github.com/retropie/RetroPie-Setup/wiki/Updating-RetroPie) to install it from source. Summing up:
 
 Access the terminal and
 ```
