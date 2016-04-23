@@ -161,8 +161,27 @@ axis_dpad1_y_inverted = no
 axis_dpad1_x_inverted = no
 ```
 
+**Akishop Ps 360+ Joystick**
+```
+[emulator]
+mapping_name = Akishop Customs PS360+ v1.66
+btn_escape = 316
 
+[dreamcast]
+btn_a = 306
+btn_b = 305
+btn_x = 307
+btn_y = 304
+btn_start = 312
 
+[compat]
+axis_dpad1_x = 16
+axis_dpad1_x_inverted = no
+axis_dpad1_y = 17
+axis_dpad1_y_inverted = no
+btn_trigger_left = 309
+btn_trigger_right = 311
+```
 
 
 ##For mapping non-standard controller via @Folly
