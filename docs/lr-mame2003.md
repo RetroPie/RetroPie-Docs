@@ -1,4 +1,4 @@
-**Please check https://github.com/petrockblog/RetroPie-Setup/wiki/MAME for for basic information about controls and managing ROMs - this page is for specific information about the mame2003 emulator's features.**
+**Please check the [MAME documentation](https://github.com/petrockblog/RetroPie-Setup/wiki/MAME) for for basic information about controls and managing ROMs - this page is for specific information about the mame2003 emulator's features.**
 
 lr-mame2003 is a popular choice for the Raspberry Pi 2 and up, as it combines a large romset (MAME 0.78) playing host to most 2D-era arcade games that people would be interested in, and a broad set of features. It also is still a relatively old MAME core, which is actually a good thing for lower-end hardware such as the Raspberry Pis, as later MAME cores feature increasingly accurate emulation which requires greater CPU power.
 
@@ -40,6 +40,17 @@ Some sound effects in a few older (typically pre-1986) arcade games are difficul
 ```
 /home/pi/RetroPie/BIOS/mame2003/sample
 ```
+## Sample rate
+
+You can adjust the sample rate for _all_ audio. Lowering it from the default of 48000 KHz may increase performance, at the cost of audio fidelity. It can be controlled via a setting in the retroarch-core-options.cfg file, found in:
+```
+/opt/retropie/configs/all/
+```
+The option is:
+```
+mame2003-sample_rate = 48000
+```
+The valid possibilities are 8000, 11025, 22050, 44100 and 48000.
 
 ## Nag-screen
 
