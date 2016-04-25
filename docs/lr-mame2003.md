@@ -65,4 +65,4 @@ mame2003-skip_disclaimer = enabled
 
 ## Feature requests
 
-Please use the [forum](https://retropie.org.uk/forum) for all support issues, but feature requests can be made on the [GitHub page](https://github.com/dankcushions/mame2003-libretro).
+Please use the [forum](https://retropie.org.uk/forum) for all support issues, but feature requests can be made on the [GitHub page](https://github.com/libretro/mame2003-libretro).
