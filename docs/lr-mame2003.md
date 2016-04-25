@@ -18,7 +18,7 @@ These files are not human-readable, but can be safely deleted if you get into a 
 
 To access the MAME service, press the 'F2' key.
 
-lr-mame2003 has the useful ability to access games' internal service menus to set permanent game options. This allows you to, for example, configure a game to be 'free play' (no need to insert coins). After changing options in the service mode, the games internal memory will be stored to an .nv file in:
+lr-mame2003 has the useful ability to access games' internal service menus to set permanent game options. This allows you to, for example, configure a game to be 'free play' (no need to insert coins). After changing options in the service mode, the game's internal memory will be stored to an .nv file in:
 ```
 /home/pi/RetroPie/roms/mame-libretro/mame2003/nvram
 ```
