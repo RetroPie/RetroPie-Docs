@@ -16,7 +16,7 @@ _MAME stands for Multiple Arcade Machine Emulator. MAME can emulate thousands of
 
 ## Emulators: [AdvanceMAME](http://advancemame.sourceforge.net/), [Mame4all-Pi](https://github.com/RetroPie/mame4all-pi), [lr-imame4all](https://github.com/libretro/imame4all-libretro), [lr-mame2003](https://github.com/libretro/mame2003-libretro), [lr-mame2010](https://github.com/libretro/mame2010-libretro)
 
-Mame4all-pi seems to have the best performance of them all but AdvanceMAME has support for more games. imame4all libretro can be compelling because it utilises RetroArch controller configurations.
+Mame4all-pi seems to have the best performance of them all but AdvanceMAME has support for more games. lr-imame4all and lr-mame2003 can be compelling because they utilise RetroArch controller configurations.
 
 See Also: [FBA](https://github.com/petrockblog/RetroPie-Setup/wiki/FinalBurn-Alpha), [Neo Geo](https://github.com/petrockblog/RetroPie-Setup/wiki/GnGeo-Pi)
 
