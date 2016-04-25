@@ -78,6 +78,8 @@ Total Games Emulated: **5563** (0.94.0) **6166** (1.2) (includes clones etc..)
 
 ## lr-Mame2003
 
+**Please see [https://github.com/RetroPie/RetroPie-Setup/wiki/lr-mame2003](lr-mame2003) for information on how to configure specfic features of this emulator.**
+
 Place your lr-Mame2003 ROMs in
 ```
 /home/pi/RetroPie/roms/mame-libretro
