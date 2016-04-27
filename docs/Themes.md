@@ -4,15 +4,15 @@ Alternate themes can be easily installed starting with RetroPie 3.1 with the Ret
 
 Open Option 3 from the setup script
 
-![setup script](https://cloud.githubusercontent.com/assets/10035308/10356537/6b708a24-6d35-11e5-8b86-edb1145b4af8.png)
+![setup script](https://cloud.githubusercontent.com/assets/17664918/14840052/f8b7280e-0bcb-11e6-9be0-64ae787d414b.png)
 
 Navigate to the theme installer
 
-![theme installer](https://cloud.githubusercontent.com/assets/10035308/10356540/73510bd8-6d35-11e5-8a42-48b8d2239a37.png)
+![theme installer](https://cloud.githubusercontent.com/assets/17664918/14840050/f6ee7e1e-0bcb-11e6-801e-d84f3371ac6c.png)
 
 Install the themes you want
 
-![themes](https://cloud.githubusercontent.com/assets/10035308/10356544/76b98700-6d35-11e5-8ab8-5e77aeca0ca4.png)
+![themes](https://cloud.githubusercontent.com/assets/17664918/14840048/f497e61e-0bcb-11e6-8b58-eb781925559d.png)
 
 Access the ui settings from the start menu in emulationstation
 
@@ -38,6 +38,10 @@ There are a few things you can do to fix the white screen of death:
 If you can't access the theme changer in emulationstation because it's a white screen, you can [ssh](https://github.com/RetroPie/RetroPie-Setup/wiki/SSH) into the pi and change the theme name back to carbon in the backend in `/home/pi/.emulationstation/es_settings.cfg`
 
 #THEME GALLERY
+
+Access theme gallery in the esthemes menu
+
+![theme gallery](https://cloud.githubusercontent.com/assets/17664918/14839524/2d768814-0bc7-11e6-9c22-b9ea2bb6b36e.png)
 
 <table style="width:100%">
 <tr>
