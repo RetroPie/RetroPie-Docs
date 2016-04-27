@@ -10,7 +10,7 @@
 - [The PSX emulator reports no BIOS found. What do I do?](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#the-psx-emulator-reports-no-bios-found-what-do-i-do)
 - [Which memory split should I use?](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#which-memory-split-should-i-use)
 - [How do I hide the boot text?](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#how-do-i-hide-the-boot-text)
-- [Why aren't my in-game saves working properly?](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#why-arent-my-ingame-saves-working-properly)
+- [Why aren't my in-game saves working properly?](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#why-arent-my-in-game-saves-working-properly)
 - [Why Can't I Insert Coins in Arcade Emulators?](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#why-cant-i-insert-coins-in-arcade-emulators)
 
 ### Why do some emulators not show up?
@@ -132,7 +132,7 @@ See [HERE](RetroArch-Configuration) for more information on custom controller co
 
 ### Does Super Mario All Stars work?
 
-The ROM does work with PocketSnes (RetroArch) only.
+The ROM does work with PocketSnes (RetroArch) and lr-snes9x-next.
 
 From http://blog.petrockblock.com/2012/07/22/retropie-setup-an-initialization-script-for-retroarch-on-the-raspberry-pi/#comment-818063235:
 
