@@ -4,9 +4,9 @@ ROMs stand for Read Only Memory. ROMs are essentially digital versions of old ga
 
 ## Transferring Roms
 
-There are three main methods of transferring roms: 
+There are three main methods of transferring roms: via USB stick, via SFTP, and via Windows (Samba) shares
 
-### USB
+### USB stick
  * (ensure that your USB is formatted to FAT32)
  * first create a folder called `retropie` on your USB stick
  * plug it into the pi and wait for it to finish blinking
@@ -31,14 +31,14 @@ There are many FTP programs out there, for windows many people use [WinSCP](http
 
 ![ftp](https://cloud.githubusercontent.com/assets/10035308/9144892/68994618-3d0d-11e5-8db0-2991f9068115.png)
 
-## Connection settings:
+#### Connection settings:
 
   * Protocol: `SFTP`
   * IP address: To find the IP address of your RetroPie, go into RetroPie options from the main menu, and select    the last option `Show IP address`.
   * Username: `pi` (default)
   * Password: `raspberry` (default)
 
-## Where to drop the files
+#### Where to drop the files
 
 Simply drop the files in the ~/RetroPie/roms/$CONSOLE folder, where $CONSOLE is the name of the target console, e.g. `snes` or `arcade`.
 
