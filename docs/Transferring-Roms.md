@@ -1,6 +1,6 @@
 # ROMS
 
-ROMs stand for Read Only Memory. ROMs are essentially digital versions of old game cartridges which allow you to play games on emulators (software that mimics your old gaming consoles.) There are many issues involving Copyrights laws regarding the usage of ROMs, as a result in order to preserve the integrity and longevity of the  RetroPie project, the locations of ROMs will not and cannot be added to the Wiki. That being said, in the search of your childhood- Google is your friend. You should only have ROMs of games that you own. 
+ROMs stand for Read Only Memory. ROMs are essentially digital versions of old game cartridges which allow you to play games on emulators (software that mimics your old gaming consoles.) There are many issues involving Copyrights laws regarding the usage of ROMs, as a result in order to preserve the integrity and longevity of the  RetroPie project, the locations of ROMs will not and cannot be added to the Wiki. That being said, in the search of your childhood - Google is your friend. You should only have ROMs of games that you own. 
 
 ## Transferring Roms
 
@@ -22,12 +22,25 @@ see this video for reference:
 " target="_blank"><img src="https://i.ytimg.com/vi_webp/OYMoxvbkYD4/mqdefault.webp" 
 alt="Configuration Video" width="300" height="190" border="10" /></a>
 
-### FTP (needs an active internet connection) 
+### FTP (needs an active internet connection)
+
 * Wired (needs ethernet cable)
-* Wireless (needs wifi dongle)
+* Wireless (needs Pi >= 3 or wifi dongle for Pi <= 2 )
+
 There are many FTP programs out there, for windows many people use [WinSCP](https://winscp.net/eng/download.php) for mac you can use something like [Cyberduck](https://cyberduck.io/?l=en)
 
 ![ftp](https://cloud.githubusercontent.com/assets/10035308/9144892/68994618-3d0d-11e5-8db0-2991f9068115.png)
+
+## Connection settings:
+
+Protocol: SFTP
+IP address: To find the IP address of your RetroPie, go into RetroPie options from the main menu, and select the last option `Show IP address`.
+Username: pi (default)
+Password: raspberry (default)
+
+## Where to drop the files
+
+Simply drop the files in the ~/RetroPie/roms/$CONSOLE folder, where $CONSOLE is the name of the target console, e.g. `snes` or `arcade`.
 
 You can also log in as root if you wish to change more files than just the roms, but you first need to enable the root password by typing `sudo passwd root` into the terminal and choosing a new root password.
 
