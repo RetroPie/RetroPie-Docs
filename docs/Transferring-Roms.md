@@ -33,10 +33,10 @@ There are many FTP programs out there, for windows many people use [WinSCP](http
 
 ## Connection settings:
 
-Protocol: SFTP
-IP address: To find the IP address of your RetroPie, go into RetroPie options from the main menu, and select the last option `Show IP address`.
-Username: pi (default)
-Password: raspberry (default)
+  * Protocol: `SFTP`
+  * IP address: To find the IP address of your RetroPie, go into RetroPie options from the main menu, and select    the last option `Show IP address`.
+  * Username: `pi` (default)
+  * Password: `raspberry` (default)
 
 ## Where to drop the files
 
