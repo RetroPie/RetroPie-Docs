@@ -70,9 +70,13 @@ At this point, you could scan the ROMs folder you just selected, but we just cre
 
 * When rebuilding there are three options: **Merged Set, Split Set, and Non-Merged Set**. (**NOTE**: As a prerequisite you need a .dat file that contains merge data for the romset.  For best results build from a full romset.)
 
-  - **Merged Set:** In theory a merged set merges all clones into the parent folder (not the most effective use of space but if you can afford the space it is an easy way to clean up your romlist so there aren't clones everywhere)
-  - **Split Set:** a split set splits the parents and clones into their own folders (this is a bit messier as you have lots of clones that also need a parent romset in the same rom folder as the clone romset in order for it to work)
-  - **Non-Merged Set:** a non-merged set copies the needed parent files into each clone's folder so you can delete the parent and in theory the clone should still work. (This is also not a very effective use of space but gives you the freedom to play clones without worrying about needing the parent romset in the same rom folder.)
+>To understand what these options mean, we must first understand the MAME concept of **parents** and **clones**:
+>  - **Parent:** The main version of the game. This is _normally_ the most common variant, in the English language. They have all the files needed to play them within the .zip file.
+>  - **Clone:** A variant of the Parent. Typically different language, or other small changes. Their .zips only contain the files that have been changed from the parent, meaning that the parent .zip must be present in the ROM directory for the clone to be ran.
+
+  - **Merged Set:** puts _all_ files of the parents and clones of the game into a single .zip file. Since in RetroPie we launch games per .zip file, it results in only launching the parent game, with the rest just wasting space. Avoid!
+  - **Split Set:** parents are complete .zip files with everything needed, and clones are .zip files with _only_ their unique files, saving disk space. This means that you will have to transfer the appropriate parent .zip to your ROM directory for every clone .zip you wish to use. For example, pacman.zip (a clone), will not work without puckman.zip (its parent). This quickly gets confusing, so it's recommended to simply transfer the whole set to your ROM directory, to avoid missing file errors. **NOTE:** split sets are how most downloaded complete MAME romsets are presented.
+  - **Non-Merged Set:** parents and clones in their own stand-alone .zip files. This removes clone's dependencies on parents, meaning you can take ANY of these .zip files (even the clones), put them in the appropriate ROM directory, and they should work! However, since every .zip has every required file, they will use higher total disk space. If you only want certain MAME ROMs on your system, use this method to ensure each .zip is usable stand-alone.
 
 * Click **"Rebuild..."**.  Depending on the size of the directory your chose as a source, this could take some time
 * When clrmamepro is finished rebuilding, you will see a window with statistics showing how many matching files were found, how many files were created and how many were skipped.  Click "OK" 
