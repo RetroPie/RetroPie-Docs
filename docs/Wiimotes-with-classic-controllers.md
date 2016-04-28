@@ -1,35 +1,16 @@
-## Method 1:
+## About
+Three different tutorials to help get your wiimotes/nunchuck/classic controllers etc.. to work with RetroPie. 
 
-Hi there,
+```Method 1``` uses wminput and cwiid to get the wiimotes to connect. Its fairly simple method to follow with easy instructions to follow. I recommend this one for beginners who are new to RetroPie and don't want to dabble too much with linux.   
 
-while trying to associate a non official wiimote classic controller, I found this: [http://github.com/dvdhrm/xwiimote](http://github.com/dvdhrm/xwiimote).
-Since recent kernel releases (including the one used by RetroPie), an optional module, ```hid-wiimote``` can be loaded using the command ```modprobe hid-wiimote```, then you use the command ```sudo hidd --search``` to find the wiimote without a pin (bluez is not good at this, asking for a pin), and in the syslog :
+```Method 2``` uses MoltenGamepad which is described as a flexible input device remapper, geared towards gamepads. This method is also simple to follow along if you can't get the first method working.  
 
-```
-Jan 18 21:55:21 raspberrypi hidd: New HID device 00:18:00:B2:F5:35 (Nintendo RVL-CNT-01)
-Jan 18 21:55:21 raspberrypi kernel: [168934.199087] wiimote 0005:057E:0306.0007: hidraw0: BLUETOOTH HID v3a.1c Gamepad [Nintendo RVL-CNT-01] on 00:1A:7D:DA:71:13
-Jan 18 21:55:21 raspberrypi kernel: [168934.200264] input: Nintendo Wii Remote Accelerometer as /devices/platform/bcm2708_usb/usb1/1-1/1-1.3/1-1.3:1.0/bluetooth/hci0/hci0:71/0005:057E:0306.0007/input/input30
-Jan 18 21:55:21 raspberrypi kernel: [168934.201753] input: Nintendo Wii Remote IR as /devices/platform/bcm2708_usb/usb1/1-1/1-1.3/1-1.3:1.0/bluetooth/hci0/hci0:71/0005:057E:0306.0007/input/input31
-Jan 18 21:55:21 raspberrypi kernel: [168934.213406] input: Nintendo Wii Remote as /devices/platform/bcm2708_usb/usb1/1-1/1-1.3/1-1.3:1.0/bluetooth/hci0/hci0:71/0005:057E:0306.0007/input/input32
-Jan 18 21:55:22 raspberrypi kernel: [168935.216422] input: Nintendo Wii Remote Extension as /devices/platform/bcm2708_usb/usb1/1-1/1-1.3/1-1.3:1.0/bluetooth/hci0/hci0:71/0005:057E:0306.0007/input/input33
-Jan 18 21:55:22 raspberrypi kernel: [168935.223466] input: Nintendo Wii Remote Motion+ as /devices/platform/bcm2708_usb/usb1/1-1/1-1.3/1-1.3:1.0/bluetooth/hci0/hci0:71/0005:057E:0306.0007/input/input34
-Jan 18 21:55:22 raspberrypi kernel: [168935.224051] wiimote 0005:057E:0306.0007: New device registered
-```
+```Method 3``` was the original tutorial using xwiimote before we found and developed easier ways of connecting wiimotes for use with RetroPie. It is simply listed here for those wishing to still view it. 
 
-You can run a test with ```evtest``` or ```xwiishow```.
+***
 
-Please note [this comment](https://github.com/petrockblog/RetroPie-Setup/issues/256#issuecomment-32708108):
-
-Actually, the hid-wiimote included in 3.6.y kernel is buggy.
-Here's the version I use: [https://github.com/Alex131089/raspberrypi-linux/compare/raspberrypi:rpi-3.6.y...rpi-3.6.y-hid-wiimote](https://github.com/Alex131089/raspberrypi-linux/compare/raspberrypi:rpi-3.6.y...rpi-3.6.y-hid-wiimote)
-
-But to make the classic controller work with my remote, [http://www.thinkgeek.com/product/f3a7/](http://www.thinkgeek.com/product/f3a7/), I had to force ext as WIICLASSIC, so it's a bit hacky for this part ; the rest is only bug fix (from 3.11 version) / adaptation to be working with RetroArch (D-Pad).
-
-Also, while a simple ```hidd --search``` handles the connection, it doesn't handle the Wii leds enumeration, I'll try to write a script that continuously search for specified Wiimote (or all) and set the right leds.
-
-## Method 2:
-
-The basis of this setup was taken from [here](http://blog.petrockblock.com/forums/topic/tutorial-to-get-wiimotes-with-classic-controllers-to-work-with-retropie/). It has however been slightly updated and modified to work with the current version of retropie (3.6). 
+## Method 1 (wminput and cwiid):
+The basis of this method was taken from [here](http://blog.petrockblock.com/forums/topic/tutorial-to-get-wiimotes-with-classic-controllers-to-work-with-retropie/). It has however been slightly updated and modified to work with the current version of RetroPie(3.7). 
 
 This tutorial shows how to get one to four wiimotes (the controller of Nintendo Wii) running with RetroPie with or without a classic controller (attached to the wiimote).
 
@@ -39,20 +20,18 @@ This tutorial shows how to get one to four wiimotes (the controller of Nintendo 
 
 2. You have a blue-tooth dongle (sometimes called blue-tooth adapter). For a list of dongles known to work with Raspberry Pi see http://elinux.org/RPi_USB_Bluetooth_adapters#Working_Bluetooth_adapters ).
 
-Note: Put the dongle in one of the USB ports of the Raspberry Pi directly, don't put it into a USB hub (I read somewhere that it doesn't work even with an active USB hub).
+I can confirm putting the bluetooth adapter into a USB 2.0 powered hub works. Your results may vary though depending on your hardware.      
 
-*Note 2: I can now confirm putting the bluetooth adapter into a usb 2.0 powered hub works. Your results may vary though depending on your hardware.      
-
-Its important to update retropie to the latest version to avoid problems later down in the tutorial. Type the following into the command line:
+Its important to update RetroPie to the latest version to avoid problems later down in the tutorial. Type the following into the command line:
 
 ```shell
 cd RetroPie-Setup/
 ```
-In this folder, we will load up the retropie post install script:
+In this folder, we will load up the Retropie post install script:
 ```shell
  sudo ./retropie_setup.sh
 ```
-In the menu, choose to update the RetroPie-Setup script (option U) first. The pi will connect to the internet and fetch the latest version. After that's done, choose Binary-based installation (option 1). Depending on your pi version, this can take a while. On a pi zero, it too about 30 minutes.  
+In the menu, choose to update the RetroPie-Setup script (option U) first. The pi will connect to the internet and fetch the latest version. After that's done, choose Binary-based installation (option 1). Depending on your pi version, this can take a while. On a pi zero, it took about 30 minutes.  
 
 ### Installation
 
@@ -63,7 +42,7 @@ sudo apt-get install bluetooth vorbis-tools python-cwiid wminput
 
 ### Getting the wiimotes to work
 
-uinput device needs to work with non-root users. To do so, create a wiimote rule file using your text editor of choice ( I use nano) as a root user (using `sudo`):
+uinput device needs to work with non-root users. To do so, create a wiimote rule file using your text editor of choice. I use nano and will continue to do so for the entire method.
 
 ```shell
 sudo nano /etc/udev/rules.d/wiimote.rules
@@ -74,12 +53,12 @@ KERNEL=="uinput", MODE="0666"
 
 ```
 
-That's the rule implementation done. Save the text file with CTRL + X and press Y to confirm. To make this change active, reboot the Raspberry Pi, or paste this command at the command line:
+That's the rule implementation done. Save the text file with ```CTRL + X``` and press ```Y``` to confirm. To make this change active, reboot the Raspberry Pi, or paste this command at the command line:
 ```shell
 sudo service udev restart
 ```
 
-Check that the blue-tooth dongle works with the command below:
+Check that the bluetooth dongle works with the command below:
 ```shell
 /etc/init.d/bluetooth status
 ```
@@ -146,7 +125,7 @@ Plugin.led.Led1 = 1
 ```
 You probably also want different LEDs active on two controllers, which means you have to provide different `mywminput` files to wminput, e.g. `mywminputA`, `mywminputB` etc with `LED1` and another with `LED2` activated. In the above example, `LED 1` is activated and `LED's 2`, `3` and `4` are commented out. You can replace the above example with your chosen `LED` status. 
 
-Updated Note: I've had problems using the above button layout with a classic controller. It will cause the button remapping which we will do later in emulationstation to be off. I fixed this by just copy pasting the classic controls only. (I will use the classic controller to control everything and have no intention of using the controls off the wiimote).
+```Updated Note```: I've had problems using the above button layout with a classic controller. It will cause the button remapping which we will do later in emulationstation to be off. I fixed this by just copy pasting the classic controls only. (I will use the classic controller to control everything and have no intention of using any buttons on the actual wiimote itself).
 
 ```shell
 Classic.Dpad.X = ABS_X
@@ -170,7 +149,7 @@ Plugin.led.Led1 = 1
 ```
 
 
-#### Quick and Dirty Wiimote Configuration
+#### Quick and Dirty Wiimote Configuration (Option A)
 
 If you don't mind registering your wiimotes each time you restart your raspberrypi (or maybe you want the opportunity to use new wiimotes each time), you can save this script as "/home/pi/bin/attachwii.sh":
 ```shell
@@ -250,15 +229,15 @@ When you restart your pi, press 1+2 on each wiimote after you hear the begin-sou
 
 Now, you can skip directly to the "Register Wiimotes Before Emulationstation Starts" section.
 
-#### Manual Wiimote Configuration
+#### Manual Wiimote Configuration (Option B)
 
 Use this method if you want to use the same wiimotes every time and don't want to re-register the wiimotes every time you restart your Raspberrypi.
 
-First, scan for the wiimotes. Start
+First, scan for the wiimotes.
 ```shell
 hcitool scan
 ```
-and press 1+2 on your wiimote(s). After a short while, the output should be something like
+and press buttons 1+2 on your wiimote(s). After a short while, the output should be something like
 ```shell
 Scanning ...
 	00:19:1D:87:90:38		Nintendo RVL-CNT-01
@@ -266,8 +245,7 @@ Scanning ...
 ```
 
 Take a note of the addresses of your wiimotes (the 00:19:1D:87:90:38 in the output above), we need that later.
-Note: If the scan is not successful try it again. Sometimes you need to try it several times (I read that somewhere, but it always worked for me the first time).
-
+Note: If the scan is not successful try it again using the red sync button on the back.
 
 If the Raspberry Pi is started and emulationstation starts, we want to register the wiimotes so they can be used with emulationstation and the emulators.
 I did it the following way:
@@ -292,11 +270,11 @@ else
 fi
 ```
 
-Note: You need one wminput line for every wiimote you want to use (i.e. the above is for two wiimotes)
+```Note```: You need one wminput line for every wiimote you want to use (i.e. the above is for two wiimotes)
 
-Note 2: You need to replace the addresses of the wiimotes above by the addresses of your wiimotes (shown by command "hcitool scan" as shown above).
+```Note 2```: You need to replace the addresses of the wiimotes above by the addresses of your wiimotes (shown by command "hcitool scan" as shown above).
 
-Note 3: I've had more success with 2 classic controllers pairing when both are sharing the same mywminput path. Since both wiimotes are using the same "mywminput" config, the LED status on port 1 of the wiimote will light up on both wiimotes. This is fine and does not interfere with anything. I simply use the light to tell me when and if both controllers are paired successfully. That is it's only purpose. I've had less success configuring a second mywinput to the 2nd controller so the LED lights differs on the 2nd controller. 
+```Note 3```: I've had more success with 2 classic controllers pairing when both are sharing the same mywminput path. Since both wiimotes are using the same "mywminput" config, the LED status on port 1 of the wiimote will light up on both wiimotes. This is fine and does not interfere with anything. I simply use the light to tell me when and if both controllers are paired successfully. That is it's only purpose. I've had less success configuring a second mywinput to the 2nd controller so the LED lights differs on the 2nd controller. 
 
 ### Register Wiimotes Before Emulationstation Starts ###
 
@@ -304,20 +282,6 @@ Make your wiimote detection script executable with:
 ```shell
 chmod 775 /home/pi/bin/attachwii.sh
 ```
-
-**Caution:** The next step is dependent related to the installed version of RetroPie!
-
-#### RetroPie 2.6 and earlier ####
-
-To start the script before emulationstation starts, edit the file: `/etc/profile`.  The last line should be
-```shell
-[ -n "${SSH_CONNECTION}" ] || emulationstation
-```
-Then, right before that line, add the line:
-```shell
-rebootWithoutWiimotes=0 /home/pi/bin/attachwii.sh
-```
-and save the file.
 
 #### RetroPie 3.x ####
 
@@ -333,9 +297,9 @@ and save the file.
 
 To make the Pi restart automatically if no wiimotes are detected, change rebootWithoutWiimotes to 1.
 
-### Register Wiimotes Before Emulationstation Starts (continue) ###
+### Register Wiimotes Before Emulationstation Starts (continued) ###
 
-If you now do a reboot using "sudo reboot", wait until emulationstation has been started. When it does, press 1+2 on all of your wiimotes to register the wiimotes.
+If you now do a reboot using ```sudo reboot```, wait until emulationstation has been started. When it does, ```press 1+2``` on all of your wiimotes to register the wiimotes.
 If it's your first time booting emulationstation then you will be automatically at the controller config menu. If you've configured a controller previously then get to the menu using a configured keyboard or an alternative controller. 
 
 Hold any button on the wiimote (or if your using classic controller only method) then any button the classic controller.
@@ -465,10 +429,10 @@ input_menu_toggle_btn = "10"
 ```
 If you want to use savestates, then uncomment it out. When you quit a game through this method, your game state will be saved and reloaded. 
 
-The input commands specified above, allow you to exit out the emulator when SELECT and START are pressed at the same time. Pressing SELECT enables the hoykey whilst START is assigned to exit. Pressing SELECT and the HOME button however, will enable retroarch's menu for in game adjustments. 
+The input commands specified above, allow you to exit out the emulator when ```SELECT``` and ```START``` are pressed at the same time. Pressing ```SELECT``` enables the hotkey whilst ```START``` is assigned to exit. Pressing ```SELECT``` and the ```HOME``` button however, will enable retroarch's menu for in game adjustments. 
 
 **DONE!**
-*I highly encourage you to read the "Known Issues" section below for optional fixes:
+*I highly encourage you to read the "Known Issues" section below for optional fixes that complement this method:
 
 ***
 
@@ -487,7 +451,7 @@ wminput -d -q -c  /home/pi/mywminput XX:XX:XX:XX:XX:XX > /dev/null 2>&1 &
 ```
 Anyway, remember to undo this **hack** for debugging purposes.
 
-Note: I actively use SSH with my retropie so I had to apply this fix so I could use my SSH terminal without being hammered with socket control errors. 
+```Note```: I actively use SSH with my retropie so I had to apply this fix so I could use my SSH terminal without being hammered with socket control errors. 
 This is what my revised attachwii looks like for comparison. We created this file earlier in /home/pi/bin/attachwii.sh
 
 ```shell
@@ -575,3 +539,260 @@ input_player1_y_btn = "3"......
 ```
 
 If your using just the classic controls then you shouldn't be having this problem, but this is what I was referring to earlier when I said the controls may be "off" if you try and combine wiimote controls, nunchuck controls in addition to the classic controller to your mywminput file. 
+
+**4. I want to update my pi's bluetooth to the latest version!**
+
+As of writing, the version shipped with RetroPie 3.7 comes with Bluez version ```5.23.``` We will update it to the latest stretch version which is ```5.36.```
+
+```shell
+sudo nano /etc/apt/sources.list
+```
+
+Copy and paste the ```jessie``` line and then change jessie to ```stretch```. Save with ```CTRL+X``` and ```Y``` to confirm changes.  
+
+We are going to tell APT to (still) default to jessie:
+```shell
+sudo nano /etc/apt/apt.conf.d/40defaultrelease
+```
+and paste in with the following contents:
+
+```shell
+APT::Default-Release "jessie";
+```
+
+In the terminal, do and update followed by the Bluez install:
+```shell
+sudo apt-get update
+```
+then:
+```shell
+sudo apt-get install bluez -t stretch
+```
+BlueZ will be updated from 5.23 => 5.36. You can check the change with ```bluetoothd -v```. 
+
+Now you can undo the changes we made to ```/etc/apt/sources.list``` and  ```/etc/apt/apt.conf.d/40defaultrelease```. 
+***
+
+## Method 2 (MoltenGamepad):
+
+The original tutorial was posted by a user named rockfireredmoon on the RetroPie github. You can view it [here.](https://github.com/RetroPie/RetroPie-Setup/issues/256/#issuecomment-205283258)
+
+You can view more information about MoltenGamepad [here.](https://github.com/jgeumlek/MoltenGamepad)
+
+Its on a github repository which we will need to copy onto our Pi. 
+
+In the terminal, paste the command:
+```shell
+sudo apt-get install git-core -y
+```
+
+followed by:
+```shell
+git clone https://github.com/jgeumlek/MoltenGamepad
+```
+
+Move to the MoltenGamepad folder:
+```shell
+cd MoltenGamepad/
+```
+
+Lets try making the MoltenGamepad binary file:
+```shell
+make
+```
+
+MoltenGamepad is still in alpha, so most likely you will get a few errors.
+If you get undefined KEY_* errors, you'll need to remove those lines from the eventlists. (Sorry, no script to generate these just yet)
+
+This is the make error that I got on a pi3 board:
+```shell
+source/eventlists/key_list.cpp:159:4: error: ‘KEY_ROTATE_DISPLAY’ was not declared in this scope
+   {KEY_ROTATE_DISPLAY, "key_rotate_display", ""},
+    ^
+source/eventlists/key_list.cpp:161:4: error: ‘KEY_ROTATE_DISPLAY’ was not declared in this scope
+   {KEY_ROTATE_DISPLAY, "key_rotate_display", ""},
+    ^
+source/eventlists/key_list.cpp:472:4: error: ‘KEY_NUMERIC_A’ was not declared in this scope
+   {KEY_NUMERIC_A, "key_numeric_a", ""},
+    ^
+source/eventlists/key_list.cpp:473:4: error: ‘KEY_NUMERIC_B’ was not declared in this scope
+   {KEY_NUMERIC_B, "key_numeric_b", ""},
+    ^
+source/eventlists/key_list.cpp:474:4: error: ‘KEY_NUMERIC_C’ was not declared in this scope
+   {KEY_NUMERIC_C, "key_numeric_c", ""},
+    ^
+source/eventlists/key_list.cpp:475:4: error: ‘KEY_NUMERIC_D’ was not declared in this scope
+   {KEY_NUMERIC_D, "key_numeric_d", ""},
+    ^
+Makefile:3: recipe for target 'all' failed
+
+```
+
+So looking at the first error:
+```shell
+source/eventlists/key_list.cpp:159:4: error: ‘KEY_ROTATE_DISPLAY’ was not declared in this scope
+   {KEY_ROTATE_DISPLAY, "key_rotate_display", ""},
+```
+
+We know there is a problem with line 159 in the eventlists file. Your line numbers may be different to mine and may also change depending on release.
+
+Lets fix this and the other error numbers with nano. Vim would probably be easier if you know it, but lets stick with nano:
+```shell
+nano +159 MoltenGamepad/source/eventlists/key_list.cpp
+``` 
+
+Press ```CTRL+K``` and press ```ENTER``` on the keyboard. Then to exit, ```CTRL+X``` and ```Y``` to confirm. Its important that you press ```ENTER``` so that the line numbers remain intact. This will make sure you aren't deleting the wrong line number. 
+
+Do the same with the other errors. Making sure to press ```CTRL+K``` and ```ENTER``` after each one. So the line after the one we deleted goes back to where it was originally. Again, adjust the line numbers for the errors you get. Remember to save the file with ```CTRL+X``` and ```Y``` to confirm.   
+```shell
+nano +161 MoltenGamepad/source/eventlists/key_list.cpp
+``` 
+
+Now that we've adjusted the file, the make command should complete without any errors.
+```shell
+make
+``` 
+
+Once completed, we should have our MoltenGamepad binary file. You can check this with the command terminal command ```ls``` 
+
+Lets copy this to where it needs to go. We should already be in the MoltenGamepad directory.
+```shell
+sudo cp moltengamepad /usr/sbin
+```
+
+We are going to need to create a system service for MoltenGamepad. 
+Lets create the file:
+```shell
+sudo nano /lib/systemd/system/moltengamepad.service
+```
+
+and paste in:
+
+```shell
+[Unit]
+Description=MoltenGamepad
+After=network.target
+After=bluetooth.target
+
+[Service]
+Type=forking
+PIDFile=/var/run/moltengamepad.pid
+Environment="XDG_CONFIG_HOME=/etc/moltengamepad"
+ExecStart=/usr/sbin/moltengamepad --daemon --pidfile /var/run/moltengamepad.pid
+ExecStop=/usr/bin/kill $MAINPID
+
+[Install]
+WantedBy=default.target
+```
+
+Lets enable the service with the following command:
+```shell
+sudo systemctl enable moltengamepad
+```
+
+and lets make the settings permanent by rebooting:
+```shell
+sudo reboot
+```
+
+Thats MoltenGamepad installed, but we need to pair our wiimotes with ```bluetoothctl```. Nothing fancy, just simple bluetooth pairing in linux.
+
+Lets first load the hid-wiimote kernel module:
+```shell
+sudo modprobe hid-wiimote
+```
+
+follwed by the bluetooth protocol:
+```shell
+sudo bluetoothctl
+```
+
+The following was taken from the bluetooth page on the ```archlinux wiki```. You can view it here under the "Configuration via the CLI"
+
+**Bluetoothctl**
+
+Pairing a device from the shell is one of the simplest and most reliable options. The exact procedure depends on the devices involved and their input functionality. What follows is a general outline of pairing a device using ```/usr/bin/bluetoothctl```:
+* Start the ```bluetoothctl``` interactive command. There one can input ```help``` to get a list of available commands.
+* Turn the power to the controller on by entering ```power on```. It is off by default.
+* Enter device discovery mode with ```scan on``` command if device is not yet on the list.
+* Turn the agent on with ```agent on```.
+* Enter ```pair MAC Address``` to do the pairing (tab completion works).
+* If using a device without a PIN, one may need to manually trust the device before it can reconnect successfully. Enter ```trust MAC Address``` to do so.
+* Finally, use ```connect MAC_address``` to establish a connection.
+* An example session may look this way:
+
+```shell
+# bluetoothctl 
+[NEW] Controller 00:10:20:30:40:50 pi [default]
+[bluetooth]# agent KeyboardOnly 
+Agent registered
+[bluetooth]# default-agent 
+Default agent request successful
+[bluetooth]# scan on
+Discovery started
+[CHG] Controller 00:10:20:30:40:50 Discovering: yes
+[NEW] Device 00:12:34:56:78:90 myLino
+[CHG] Device 00:12:34:56:78:90 LegacyPairing: yes
+[bluetooth]# pair 00:12:34:56:78:90
+Attempting to pair with 00:12:34:56:78:90
+[CHG] Device 00:12:34:56:78:90 Connected: yes
+[CHG] Device 00:12:34:56:78:90 Connected: no
+[CHG] Device 00:12:34:56:78:90 Connected: yes
+Request PIN code
+[agent] Enter PIN code: 1234
+[CHG] Device 00:12:34:56:78:90 Paired: yes
+Pairing successful
+[CHG] Device 00:12:34:56:78:90 Connected: no
+```
+
+All we need to do is pair the wiimotes and MoltenGamepad will handle any extra devices such as Classic Controllers, Nunchuck, Wii Balance Board etc.
+
+You can start emulationstation directly from the terminal by typing in ```emulationstation```
+
+You can now use ES the map all the buttons as you wish in the normal way.
+
+
+**Some notes**:
+The original tutorial stated that once the initial pairing was completed, you wont need to manually pair and enter the commands in the terminal. 
+
+* reboot
+* "Press a key once to connect, then again to activate moltengamepad."
+
+I couldn't quite get mine to pair from a cold boot. Currently I still have to use the bluetoothctl ```connect``` command to pair my wiimotes attached to Classic Controlers and then manually start emulationstation from the terminal for the pairing to work. Your experience may vary however.
+
+I am currently working on a script to automate the the pairing process without the need to press any buttons at all when EmulationStation starts to activate MoltenGamepad. At the moment its a bit hit and miss. I will update the tutorial once I've ironed the kinks out. :) 
+
+You may want to read further into MoltenGamepad's controller documentation which you can view [here.](MoltenGamepad Generic Device Driver Documentation). It has a few examples, and like I mentioned above may create one for this method adding the LED Status as mentioned in Method 2. Stay tuned.  
+
+**I also encourage anyone to edit this page and any other page if you have valid useful information that can make other Pi users have an easier time with connecting devices for use with RetroPie.**
+
+***
+
+# Method 3 OLD (xwiimote):
+
+Hi there,
+
+while trying to associate a non official wiimote classic controller, I found this: [http://github.com/dvdhrm/xwiimote](http://github.com/dvdhrm/xwiimote).
+Since recent kernel releases (including the one used by RetroPie), an optional module, ```hid-wiimote``` can be loaded using the command ```modprobe hid-wiimote```, then you use the command ```sudo hidd --search``` to find the wiimote without a pin (bluez is not good at this, asking for a pin), and in the syslog :
+
+```
+Jan 18 21:55:21 raspberrypi hidd: New HID device 00:18:00:B2:F5:35 (Nintendo RVL-CNT-01)
+Jan 18 21:55:21 raspberrypi kernel: [168934.199087] wiimote 0005:057E:0306.0007: hidraw0: BLUETOOTH HID v3a.1c Gamepad [Nintendo RVL-CNT-01] on 00:1A:7D:DA:71:13
+Jan 18 21:55:21 raspberrypi kernel: [168934.200264] input: Nintendo Wii Remote Accelerometer as /devices/platform/bcm2708_usb/usb1/1-1/1-1.3/1-1.3:1.0/bluetooth/hci0/hci0:71/0005:057E:0306.0007/input/input30
+Jan 18 21:55:21 raspberrypi kernel: [168934.201753] input: Nintendo Wii Remote IR as /devices/platform/bcm2708_usb/usb1/1-1/1-1.3/1-1.3:1.0/bluetooth/hci0/hci0:71/0005:057E:0306.0007/input/input31
+Jan 18 21:55:21 raspberrypi kernel: [168934.213406] input: Nintendo Wii Remote as /devices/platform/bcm2708_usb/usb1/1-1/1-1.3/1-1.3:1.0/bluetooth/hci0/hci0:71/0005:057E:0306.0007/input/input32
+Jan 18 21:55:22 raspberrypi kernel: [168935.216422] input: Nintendo Wii Remote Extension as /devices/platform/bcm2708_usb/usb1/1-1/1-1.3/1-1.3:1.0/bluetooth/hci0/hci0:71/0005:057E:0306.0007/input/input33
+Jan 18 21:55:22 raspberrypi kernel: [168935.223466] input: Nintendo Wii Remote Motion+ as /devices/platform/bcm2708_usb/usb1/1-1/1-1.3/1-1.3:1.0/bluetooth/hci0/hci0:71/0005:057E:0306.0007/input/input34
+Jan 18 21:55:22 raspberrypi kernel: [168935.224051] wiimote 0005:057E:0306.0007: New device registered
+```
+
+You can run a test with ```evtest``` or ```xwiishow```.
+
+Please note [this comment](https://github.com/petrockblog/RetroPie-Setup/issues/256#issuecomment-32708108):
+
+Actually, the hid-wiimote included in 3.6.y kernel is buggy.
+Here's the version I use: [https://github.com/Alex131089/raspberrypi-linux/compare/raspberrypi:rpi-3.6.y...rpi-3.6.y-hid-wiimote](https://github.com/Alex131089/raspberrypi-linux/compare/raspberrypi:rpi-3.6.y...rpi-3.6.y-hid-wiimote)
+
+But to make the classic controller work with my remote, [http://www.thinkgeek.com/product/f3a7/](http://www.thinkgeek.com/product/f3a7/), I had to force ext as WIICLASSIC, so it's a bit hacky for this part ; the rest is only bug fix (from 3.11 version) / adaptation to be working with RetroArch (D-Pad).
+
+Also, while a simple ```hidd --search``` handles the connection, it doesn't handle the Wii leds enumeration, I'll try to write a script that continuously search for specified Wiimote (or all) and set the right leds.
