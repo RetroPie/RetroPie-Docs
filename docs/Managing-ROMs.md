@@ -29,8 +29,10 @@ alt="clrmamepro Video" width="300" height="180" border="10" /></a>
 
 
 ##Requirements:#
-* A Raspberry Pi running a RetroPie v2.4.x, v2.5.x or v2.6.x SD card image.  Other images may work, but they have not been tested with these instructions.  All you need from the RetroPie image are the DAT files (explained below).
+* The current version of RetroPie. Romsets and packaged MAME/FBA emulators occasionally change.
 * A Windows PC for setting up RetroPie and running clrmamepro. This tutorial assumes you are running a 64 bit version of Windows, but the steps for 32 bit Windows will be the same once you get past downloading the clrmamepro software.
+
+**NOTE:** There are unsupported WINE versions available for OSX and Linux, if you Google.
 
 ## Step 1 - Back up your ROMs#
 It is possible with clrmamepro to change one or two options and when it runs it will delete all your existing ROMs. OK, not really - using the default options it will make backups of any files it removes, but I have seen a lot of people when getting started mess up their ROMs beyond repair.
@@ -44,8 +46,10 @@ DAT files are the [XML-based](http://en.wikipedia.org/wiki/XML) database definit
 You can download all .DAT files for all arcade emulators [**HERE**](https://github.com/HerbFargus/retropie-dat/archive/master.zip)
 * For this tutorial, extract the zip file into `C:\` (but you can really put it anywhere you want)
 * Open retropie-dat-master and you should see a list of folders. Each folder contains the .DAT files for the respective emulator. We will only be using `C:\retropie-dat-master\mame4all\MAME 0.37b5.dat` in this tutorial.
-* Create a sub directory `C:\retropie-dat-master\mame4allroms` (this will be used in the next step)
-* Create a sub directory `C:\retropie-dat-master\pifbaroms`
+* Create a subdirectory `C:\retropie-dat-master\mame4allroms` (this will be used in the next step)
+* Create a subdirectory `C:\retropie-dat-master\pifbaroms`
+
+**NOTE:** Use the appropriate .DAT from the zip file if you want to target a different MAME/FBA emulator. The table at the top of this page details the files needed.
 
 ##Step 4 - Run clrmamepro for the first time#
 * Run `C:\clrmamepro\cmpro64.exe`.  The welcome screen explains that common first steps are to 1) Create a Profile, 2) Set up your paths and 3) Scan your ROMs. We will be doing things slightly differently, in order to leave your source ROMs intact.  
