@@ -65,7 +65,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [PSP](PSP) [(lr-ppsspp)](https://github.com/libretro/libretro-ppsspp), [(ppsspp)](https://github.com/hrydgard/ppsspp)
 * [ResidualVM](ResidualVM) [(ResidualVM)](https://github.com/residualvm/residualvm) (EXPERIMENTAL)
 * [SAM Coupé](Sam-Coupe) [(SimCoupe)](http://www.simcoupe.org/) (EXPERIMENTAL!)
-* [ScummVM](ScummVM)
+* [ScummVM](ScummVM) [(ScummVM)](http://scummvm.org/)
 * [Sega 32X](Sega-32X) [(lr-picodrive)](https://github.com/libretro/picodrive)
 * [Sega CD](Sega-CD) [(lr-picodrive)](https://github.com/libretro/picodrive)
 * [Sega Saturn](Saturn) [(lr-yabause)](https://github.com/libretro/yabause) (EXPERIMENTAL!)
