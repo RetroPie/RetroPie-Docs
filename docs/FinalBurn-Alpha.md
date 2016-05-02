@@ -61,9 +61,9 @@ you can also place your roms in
 
 ### lr-fba-next
 
-Romset Used: FBA **0.2.97.36** which is based on MAME 0.161 (Apr 2015)
+Romset Used: FBA **0.2.97.38** which is based on MAME 0.173 (April 2016)
 
-Total Games Emulated: [3743](https://raw.githubusercontent.com/libretro/libretro-fba/master/gamelist.txt) (includes clones etc..)
+Total Games Emulated: [4150](https://raw.githubusercontent.com/libretro/libretro-fba/master/gamelist.txt) (includes clones etc..)
  
 Place your lr-fba-next ROMS in
 ```shell
@@ -140,14 +140,6 @@ Add custom retroarch controls to the retroarch.cfg file in
 For more information on custom RetroArch controls see: [RetroArch Configuration](https://github.com/petrockblog/RetroPie-Setup/wiki/RetroArch-Configuration) 
 
 ![neogeodiagram](https://cloud.githubusercontent.com/assets/10035308/8245309/a575cc8c-15e9-11e5-8735-0a4ab2a4e137.png)
-
-### Insert Coin Button issues (lr-fba and lr-fba-next)
-**NOTE:** many Capcom games are affected [by this issue with RetroArch Hotkeys](https://github.com/libretro/RetroArch/issues/2230) when used with the default RetroPie configuration for many controllers, the **RetroArch hotkey** button (i.e. select) interferes with the **insert coin button** (which also happens to be select), specifically when they are both mapped to the same button.
-
-**Solution:** map the RetroArch hotkey (usually select) to another button
-
-* An easy fix is to to swap the hotkey and exit button around in the aforementioned `retroarch.cfg`.
-* Alternatively you can change the hotkey to an unused button (for example the XBox "home" button on an XBox360 Controller). As this issue apparently affects multiple cores it may be optimal to change it globally in (for example) `/opt/retropie/configs/all/retroarch-joypads/XboxGamepad(userspacedriver).cfg` set `input_enable_hotkey_btn = "10"`.
 
 ### PiFBA Controls
 PiFBA controls are located in
