@@ -31,3 +31,4 @@ Starting with RetroPie 3.5 you can enable and disable different functions of the
 - **Launch Menu:** Enable or disable the runcommand launch menu
 - **Launch Menu Art:** If enabled, any scraped box art you have for a game with show up as a splashscreen while your game loads up.
 - **Launch Menu Joystick Control:** You can disable the joystick support so that your kids don't accidentally mess up settings. Note that this only disables the joystick, not the keyboard so if you have joysticks that act like a keyboard then of course disabling this option will not work. 
+- **CPU Configuration:** Allows setting the CPU governor (default is ondemand on RetroPie on the Raspberry Pi). You can use this to set the CPU governor to Performance, which will be set on launching a game, and reset after. ondemand. More information regarding CPU governors can be found in the Linux Kernel documentation - https://www.kernel.org/doc/Documentation/cpu-freq/governors.txt
