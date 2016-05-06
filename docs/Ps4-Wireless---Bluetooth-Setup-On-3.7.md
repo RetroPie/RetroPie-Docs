@@ -66,6 +66,6 @@ It will look like:
 
 Make sure the controller is off. Once the Pi3 completely boots up and shows the window that says no controllers are detected go ahead put the PS4 into pairing mode again by holding down the SHARE button & the PS button. You will need to do this every time you want to connect the controller. Also you will have to setup the controller the 1st time you get to the first menu(Just Once). You can turn the controller off by holding down the PS button for about 10 seconds. You can then turn it back on any time you want. ( At least I can)
 
-##Hope This Helps ==
+##Hope This Helps
 
 It took me about a week to find the scattered bits and pieces of this wiki. Hopefully this helps! Please add to if you find a better/easier way.
