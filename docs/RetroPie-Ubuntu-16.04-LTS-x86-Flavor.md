@@ -97,7 +97,7 @@ Open Ubuntu system settings menu and select right audio output device.
 
 ### Section 3.7: My NUC or Intel Baytrail/Braswell powered device hangs (Ubuntu 15.10)
 
-The default kernel 4.1 of Ubuntu 14.10 tends to hang. It is a know bug:
+The default kernel 4.1 of Ubuntu 15.10 tends to hang. It is a know bug:
 https://bugs.freedesktop.org/show_bug.cgi?id=91629
 
 Update to higher kernel version solves this problem:
