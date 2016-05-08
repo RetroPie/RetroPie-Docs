@@ -120,7 +120,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [Manual Installation](Manual-Installation)
 * [Odroid Installation](Odroid)
 * [RetroPie Arch Linux Flavor](RetroPie-Arch-Linux-Flavor)
-* [RetroPie Ubuntu 15.10 x86 Flavor](RetroPie-Ubuntu-15.10-x86-Flavor)
+* [RetroPie Ubuntu 16.04 LTS x86 Flavor](RetroPie-Ubuntu-16.05-x86-Flavor)
 * [Install via NOOBS](convert-retropie-sd-card-image-to-noobs-image)
 * [RetroPie install for OSMC with external memory USB Drive](RetroPie-install-for-OSMC-with-external-memory-USB-Drive)
 * [Favorites and Child-friendly EmulationStation](Child-friendly-EmulationStation)
