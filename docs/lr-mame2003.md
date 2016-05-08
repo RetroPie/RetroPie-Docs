@@ -12,7 +12,7 @@ Whilst lr-mame2003 is a libretro emulator and benefits from automatic controller
 ```
 /home/pi/RetroPie/roms/mame-libretro/mame2003/cfg/
 ```
-If you rebind global inputs ('Input (general)'), it will update a file in the same directory called 'default.cfg'.
+If you rebind global inputs ('Input (general)'), it will update a file in the same directory called `default.cfg`.
 
 These files are not human-readable, but can be safely deleted if you get into a mess and wish to return to the default configuration.
 
@@ -27,7 +27,7 @@ lr-mame2003 has the useful ability to access games' internal service menus to se
 
 ## High scores
 
-lr-mame2003 will attempt to keep a permanent record of any high scores you set, but some games will not save these by default. There is a supplementary file that you can transfer to your Pi that will enable high score saving for more games, called 'hiscore.dat'. This file can be downloaded from http://highscore.mameworld.info/, but the .zip will contain 2 versions of the file. Rename 'hiscore(pre_mame0133u1).dat' to 'hiscore.dat' and place in:
+lr-mame2003 will attempt to keep a permanent record of any high scores you set, but some games will not save these by default. There is a supplementary file that you can transfer to your Pi that will enable high score saving for more games, called `hiscore.dat`. This file can be downloaded from http://highscore.mameworld.info/, but the .zip will contain 2 versions of the file. Rename `hiscore(pre_mame0133u1).dat` to `hiscore.dat` and place in:
 ```
 /home/pi/RetroPie/BIOS/mame2003/
 ```
@@ -38,11 +38,11 @@ When high scores are saved, they are kept in:
 
 ## Cheats
 
-lr-mame2003 supports the MAME cheat engine, allowing you to use the 'TAB' menu to enable various in-game cheats. To active these, there is a supplementary file that you need to transfer to your Pi, called 'cheat.dat'. This file can be downloaded from http://cheat.retrogames.com/mame_downloads.htm. You need the version of the file that is equal-to or greater-than the MAME version in question, which in our case is 0.78, so the file needed is [Cheat File for MAME 0.81 (Release Date: 21st April 2004)](http://cheat.retrogames.com/download/cheat081.zip). Extract 'cheat.dat' from this .zip and place in:
+lr-mame2003 supports the MAME cheat engine, allowing you to use the 'TAB' menu to enable various in-game cheats. To active these, there is a supplementary file that you need to transfer to your Pi, called `cheat.dat`. This file can be downloaded from http://cheat.retrogames.com/mame_downloads.htm. You need the version of the file that is equal-to or greater-than the MAME version in question, which in our case is 0.78, so the file needed is [Cheat File for MAME 0.81 (Release Date: 21st April 2004)](http://cheat.retrogames.com/download/cheat081.zip). Extract `cheat.dat` from this .zip and place in:
 ```
 /home/pi/RetroPie/BIOS/mame2003/
 ```
-Further to this, the 'enabled cheats' core option needs to be turned on via a setting in the retroarch-core-options.cfg file, found in:
+Further to this, the 'enabled cheats' core option needs to be turned on via a setting in the `retroarch-core-options.cfg` file, found in:
 ```
 /opt/retropie/configs/all/
 ```
@@ -59,7 +59,7 @@ Some sound effects in a few older (typically pre-1986) arcade games are difficul
 ```
 ## Sample rate
 
-You can adjust the sample rate for _all_ audio. Lowering it from the default of 48000 KHz may increase performance, at the cost of audio fidelity. It can be controlled via a setting in the retroarch-core-options.cfg file, found in:
+You can adjust the sample rate for _all_ audio. Lowering it from the default of 48000 KHz may increase performance, at the cost of audio fidelity. It can be controlled via a setting in the `retroarch-core-options.cfg` file, found in:
 ```
 /opt/retropie/configs/all/
 ```
@@ -71,7 +71,7 @@ The valid possibilities are 8000, 11025, 22050, 44100 and 48000.
 
 ## Nag-screen
 
-The copyright warning should be hidden by default, but can be controlled via a setting in the retroarch-core-options.cfg file, found in:
+The copyright warning should be hidden by default, but can be controlled via a setting in the `retroarch-core-options.cfg` file, found in:
 ```
 /opt/retropie/configs/all/
 ```
