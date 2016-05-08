@@ -1,14 +1,14 @@
-# Retropie - Ubuntu 15.10 x86 Flavor
+# Retropie - Ubuntu 16.04 LTS x86 Flavor
 
 ## Description
 
-A guide to build the retropie setup on Ubuntu 15.10 x86. 
+A guide to build the retropie setup on Ubuntu 16.04 LTS x86. 
 
 Tested with an Intel NUC Kit NUC5CPYH.
 
 ## Sections
 
-  - [Section 1: Install Ubuntu 15.10](#section-1-install-ubuntu)
+  - [Section 1: Install Ubuntu 16.04 LTS](#section-1-install-ubuntu)
   - [Section 2: Setup Retropie](#section-2-install-retropie)
     - [Section 2.1: Download](#21-download)
     - [Section 2.2: Installation](#22-installation)
@@ -20,13 +20,13 @@ Tested with an Intel NUC Kit NUC5CPYH.
     - [Section 3.4: Ubuntu does not autologin](#34-autologin)
     - [Section 3.5: How to setup a splashscreen?](#35-splashscreen)
     - [Section 3.6: No audio](##36-noaudio)
-    - [Section 3.7: My NUC or Intel Baytrail/Braswell powered device hangs](##37-hang)
+    - [Section 3.7: My NUC or Intel Baytrail/Braswell powered device hangs (Ubuntu 15.10)](##37-hang)
 
 ***
 
-## Section 1: Install Ubuntu 15.10
+## Section 1: Install Ubuntu 16.04 LTS
     
-Download and install Ubuntu 15.10. Iso image can be used to create a bootable DVD or a USB stick.
+Download and install Ubuntu 16.04 LTS. Iso image can be used to create a bootable DVD or a USB stick.
 http://www.ubuntu.com/download/desktop
 
 To run RetroPie-Setup user must be a member of group root/admin.
@@ -95,7 +95,7 @@ https://wiki.ubuntu.com/Plymouth
 
 Open Ubuntu system settings menu and select right audio output device.  
 
-### Section 3.7: My NUC or Intel Baytrail/Braswell powered device hangs
+### Section 3.7: My NUC or Intel Baytrail/Braswell powered device hangs (Ubuntu 15.10)
 
 The default kernel 4.1 of Ubuntu 14.10 tends to hang. It is a know bug:
 https://bugs.freedesktop.org/show_bug.cgi?id=91629
