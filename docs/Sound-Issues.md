@@ -57,7 +57,7 @@ Emulation is faster when disabling rewind in retroarch.cfg
 ***
 I use a TV Monitor with HDMI input for video and audio. I went to the Raspberry Pi configuration menu and chose “force audio out of HDMI”. Also did the same thing through the “Configure Audio Settings” option on the Retropie main menu in Emulation Station and it did not work.
 
-I had to go into the /boot/config.txt Raspberry PI config file and add in the following lines…
+I had to go into the `/boot/config.txt` Raspberry PI config file and add in the following lines…
 
       hdmi_drive=2   			# forces HDMI mode
       hdmi_force_edid_audio=1		# Pretends all audio formats are supported by display, allowing passthrough of DTS/AC even when not reported as supported.
