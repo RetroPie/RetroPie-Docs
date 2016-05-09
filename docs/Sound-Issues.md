@@ -59,8 +59,11 @@ I use a TV Monitor with HDMI input for video and audio. I went to the Raspberry 
 
 I had to go into the `/boot/config.txt` Raspberry PI config file and add in the following lines…
 
-      hdmi_drive=2   			# forces HDMI mode
-      hdmi_force_edid_audio=1		# Pretends all audio formats are supported by display, allowing passthrough of DTS/AC even when not reported as supported.
+      # forces HDMI mode
+      hdmi_drive=2   			
+
+      # Pretends all audio formats are supported by display, allowing passthrough of DTS/AC even when not reported as supported.
+      hdmi_force_edid_audio=1		
 
 I didn't change any other sound parameters in the config files. 
 
