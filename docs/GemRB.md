@@ -16,31 +16,31 @@ You need to have the original Baldur's Gate/ Icewind Dale/ or Planescape data in
 #### Baldur's Gate 1
 
 ```
-/home/pi/RetroPie/ports/baldurs1
+/home/pi/RetroPie/roms/ports/baldurs1
 ```
 
 #### Baldur's Gate 2
 
 ```
-/home/pi/RetroPie/ports/baldurs2
+/home/pi/RetroPie/roms/ports/baldurs2
 ```
 
 #### Icewind 1
 
 ```
-/home/pi/RetroPie/ports/icewind1
+/home/pi/RetroPie/roms/ports/icewind1
 ```
 
 #### Icewind 2
 
 ```
-/home/pi/RetroPie/ports/icewind2
+/home/pi/RetroPie/roms/ports/icewind2
 ```
 
 #### Planescape
 
 ```
-/home/pi/RetroPie/ports/planescape
+/home/pi/RetroPie/roms/ports/planescape
 ```
 
 ## Configs
