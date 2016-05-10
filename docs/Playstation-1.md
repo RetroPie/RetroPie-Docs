@@ -63,6 +63,25 @@ pcsx_rearmed_neon_enhancement_enable = "enabled"
 pcsx_rearmed_neon_enhancement_no_main = "enabled"
 ```
 
+### Analog Controller Type
+
+lr-pcsc-rearmed controller type can be changed in-game and in a configuration file  to support games that require the dualshock controller type.
+* Use the Retroarch GUI hotkey(default select+X) in-game
+* Navigate to Quick Menu -> Core Options
+* Change Pad # Type from standard to analog
+* `retroarch-core-options.cfg` will be updated automatically when a game is exited, so there is no need to set save on exit
+
+Retroarch Core options can be located in `/opt/retropie/configs/all/retroarch-core-options.cfg` for changing manually outside of a game.
+```
+pcsx_rearmed_pad1type = "analog"
+pcsx_rearmed_pad2type = "standard"
+```
+
+The standalone pcsx-rearmed controller type can be changed in the in-game menu.
+* Enter the in-game menu using ESC on a keyboard
+* Navigate to the controls menu
+* Change Port # device from Standard to Analog
+
 ### Alternative BIOS files
 
 Add different bios' that you've tested and tell the community if it works or not.
