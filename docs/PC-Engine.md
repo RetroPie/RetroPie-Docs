@@ -28,7 +28,6 @@ Place your the syscard3.pce file in
 ```
 /home/pi/RetroPie/BIOS
 ```
-Note: The 'SYSCARD3.PCE' needs to be placed in with the ROM files to play Turbo CD games.
 
 ## Controls
 
