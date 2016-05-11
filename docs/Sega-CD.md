@@ -56,6 +56,33 @@ Add custom retroarch controls to the retroarch.cfg file in
 ```
 For more information on custom RetroArch controls see: [RetroArch Configuration](https://github.com/petrockblog/RetroPie-Setup/wiki/RetroArch-Configuration)
 
+### Configuring a 6 button controller
+
+First you need to tell retroarch to use 6 buttons, because the default is to use 3.
+
+#### lr-picodrive
+
+Launch a Sega CD game and go to the Retroarch menu (default mapping: `select + x`). Go to `Quick Menu -> Core Options` and set the two input devices to `6 button pad`. Then exit the Retroarch menu. Once you quit the game, the configuration will be saved within the `retroarch-core-options.cfg` file under `/opt/retropie/configs/all`. You do not need to edit this file. These core options will also take affect on any other system which you may use lr-picodrive for (eg. Sega 32X, Sega Megadrive).
+
+#### lr-genesis-plus-gx
+
+There are two ways to achieve this:
+
+##### Option 1
+You can edit the file `/opt/retropie/configs/segacd/retroarch.cfg` and add in the following:
+
+    input_libretro_device_p1 = "513"
+    input_libretro_device_p2 = "513"
+
+This will set the controller type to a 6 button pad, and will reload this configuration every time the emulator is launched.
+
+##### Option 2
+You can save a Core Remap File which reloads every time the emulator is launched:
+
+Go to the Retroarch menu (default mapping: `select + x`). Go to `Quick Menu -> Core Input Options` and set the User 1 and User 2 Device Type to be MD Joypad 6 Button.
+
+Scroll down on the same page and select Save Core Remap File. This will save a core remap file (.rmp) to a folder called "Genesis Plus GX" in the `/opt/retropie/configs/segacd` folder. By default this remap file will load every time the emulator is launched.
+
 ### 3 Button Genesis/MegaDrive Controller
 
 ![genesis](https://cloud.githubusercontent.com/assets/10035308/7336303/aec335e0-ebb4-11e4-93b3-26037dd26ffb.png)
