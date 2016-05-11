@@ -40,31 +40,32 @@ Add custom retroarch controls to the retroarch.cfg file in
 ```
 For more information on custom RetroArch controls see: [RetroArch Configuration](https://github.com/petrockblog/RetroPie-Setup/wiki/RetroArch-Configuration)
 
-### Configuring a 6-buttons controller
+### Configuring a 6 button controller
 
-First you need to tell retroarch to use 6 buttons controllers, because the default is to use 3 buttons ones. Launch a megadrive game and go in the retroarch menu (default mapping: `select + x`). Go in `Options -> Core Options` and set the two input devices to `6 button pad`. Then go back to be root of the menu and choose to save the configuration.
+First you need to tell retroarch to use 6 buttons, because the default is to use 3.
 
-Now you can edit the file `/opt/retropie/configs/megadrive/retroarch.cfg` (you will need the help of `jstest /dev/input/js0` to know which buttons to use). Example file:
+#### lr-picodrive
 
-    # All settings made here will override the global settings for the current emulator core
+Launch a Megadrive game and go to the Retroarch menu (default mapping: `select + x`). Go to `Quick Menu -> Core Options` and set the two input devices to `6 button pad`. Then exit the Retroarch menu. Once you quit the game, the configuration will be saved within the `retroarch-core-options.cfg` file under `/opt/retropie/configs/all`. You do not need to edit this file. These core options will also take affect on any other system which you may use lr-picodrive for (eg. Sega 32X, Sega CD).
 
-    video_shader = /opt/retropie/emulators/retroarch/shader/phosphor.glslp
-    video_shader_enable = false
-    video_smooth = false
+#### lr-genesis-plus-gx
 
-    input_player1_b_btn = "1"
-    input_player1_y_btn = "0"
-    input_player1_a_btn = "7"
-    input_player1_x_btn = "3"
-    input_player1_l_btn = "2"
-    input_player1_r_btn = "5"
+There are two ways to achieve this:
 
-    input_player2_b_btn = "1"
-    input_player2_y_btn = "0"
-    input_player2_a_btn = "7"
-    input_player2_x_btn = "3"
-    input_player2_l_btn = "2"
-    input_player2_r_btn = "5"
+##### Option 1
+You can edit the file `/opt/retropie/configs/megadrive/retroarch.cfg` and add in the following:
+
+    input_libretro_device_p1 = "513"
+    input_libretro_device_p2 = "513"
+
+This will set the controller type to a 6 button pad, and will reload this configuration every time the emulator is launched.
+
+##### Option 2
+You can save a Core Remap File which reloads every time the emulator is launched:
+
+Go to the Retroarch menu (default mapping: `select + x`). Go to `Quick Menu -> Core Input Options` and set the User 1 and User 2 Device Type to be MD Joypad 6 Button.
+
+Scroll down on the same page and select Save Core Remap File. This will save a core remap file (.rmp) to a folder called "Genesis Plus GX" in the `/opt/retropie/configs/megadrive` folder. By default this remap file will load every time the emulator is launched.
 
 ### 3 Button Genesis/MegaDrive Controller
 
