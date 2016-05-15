@@ -82,6 +82,14 @@ The standalone pcsx-rearmed controller type can be changed in the in-game menu.
 * Navigate to the controls menu
 * Change Port # device from Standard to Analog
 
+### CD image not working? Try EBOOT
+
+Note that all the emulators accept `.pbp` files, which are EBOOT-format PlayStation executables. These are also known as PSX2PSP files, used to play PlayStation 1 games on the PSP.
+
+If a CD image such as `.iso` or `.bin/.cue` does not work, try converting it to `.pbp` with the **PSX2PSP v1.4.2** application for Windows.
+
+EBOOTs are also often smaller than CD images, so could be a good option if you're tight on space.
+
 ### Alternative BIOS files
 
 Add different bios' that you've tested and tell the community if it works or not.
