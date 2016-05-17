@@ -112,27 +112,40 @@ Some ROMs may need the **neogeo.zip** BIOS in order to run. Place the neogeo.zip
 /home/pi/RetroPie/roms/mame-mame4all
 ```
 
-These are the contents of a verified working neogeo.zip BIOS file * Note that all the files may not be necessary
+These are the contents of a verified working neogeo.zip BIOS file *Note that each emulator requires different set of files so all the files may not be necessary.
+
+**Please notice** that the file 000-lo.lo has two different versions:
+* a 2 KB file, with CRC-32 of `E09E253C`
+* a 3 KB file, with CRC-32 of `5A86CFF2`
+
+Make sure you choose the suitable file for the emulator according to its specification found in the [.dat file](https://github.com/RetroPie/RetroPie-Setup/wiki/Managing-ROMs#step-3---acquire-dat-files).
 
 ```shell
 000-lo.lo
 asia-s3.rom
-filelist.txt
 japan-j3.bin
+neo-epo.bin
 neo-geo.rom
-ng-lo.rom
+neo-po.bin
+neodebug.bin
+neodebug.rom
+neopen.sp1
 ng-sfix.rom
 ng-sm1.rom
 sfix.sfix
+sfix.sfx
 sm1.sm1
 sp-1v1_3db8c.bin
 sp-45.sp1
 sp-e.sp1
+sp-j2.rom
 sp-j2.sp1
 sp-s.sp1
 sp-s2.sp1
 sp-u2.sp1
 sp1.jipan.1024
+uni-bios.22
+uni-bios.rom
 uni-bios_1_0.rom
 uni-bios_1_1.rom
 uni-bios_1_2.rom
@@ -145,6 +158,9 @@ uni-bios_2_3.rom
 uni-bios_2_3o.rom
 uni-bios_3_0.rom
 uni-bios_3_1.rom
+uni-bios_3_2.rom
+usa_2slt.bin
+v2.bin
 vs-bios.rom
 ```
 ## Controls
