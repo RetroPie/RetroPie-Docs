@@ -11,7 +11,7 @@ Access the [RetroPie Setup Script](Updating-RetroPie) and navigate to **Setup / 
 5. **Set dwc_otg.speed=1 in /boot/config.txt:** May help if controller is being glitchy.
 6. **Remove dwc_otg.speed=1 from /boot/config.txt:** Removes the config.
 
-**Note** that if you have wireless controllers you will need a wireless receiver plugged into your raspberry pi (Official Microsoft xbox360 receiver, or knock offs like zettaguard also work), then to connect:
+**Note** that if you have wireless controllers you will need a wireless receiver plugged into your raspberry pi (Official Microsoft xbox360 receiver, or knock offs like zettaguard, VicTsing also work), then to connect:
 
 - press the button on the receiver 
 - then press the tiny wireless button on the top of the controller 
