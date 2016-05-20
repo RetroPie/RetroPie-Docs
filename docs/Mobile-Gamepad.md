@@ -1,5 +1,3 @@
-# Mobile Gamepad
-
 Mobile Universal Gamepad for RetroPie.
 
 ***
