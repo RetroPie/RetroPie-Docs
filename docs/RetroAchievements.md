@@ -17,17 +17,17 @@ cheevos_hardcore_mode_enable = true
 ##Supported Systems:
 
 * Game Boy / Color (lr-gambatte - installed by default)  
-* Game Boy Advance (VBA-M)  
-* NES (lr-QuickNES - found in 'Experimental' menu, lr-fceumm - installed by default, but you have to [re]install it from source [see below])
+* Game Boy Advance (VBA-M, mGBA)  
+* NES (lr-QuickNES - found in 'Experimental' menu, lr-fceumm - installed by default, but you have to [re]install it)
 * SNES (lr-Snes9x - installed by default, lr-pocketsnes - installed by default)  
 * Genesis/Mega Drive (lr-picodrive - installed by default)  
 * Sega 32x (lr-picodrive - installed by default)
 
-To enable lr-fceumm for achievements you have to follow the instructions [here](https://github.com/retropie/RetroPie-Setup/wiki/Updating-RetroPie) to install it from source. Summing up:
+To enable lr-fceumm for achievements you have to follow the instructions [here](https://github.com/retropie/RetroPie-Setup/wiki/Updating-RetroPie) to install it. Summing up:
 
 Access the terminal and
 ```
 cd RetroPie-Setup
 sudo ./retropie_setup.sh
 ```
-Go to **Install Individual Emulators from Binary or Source**, choose lr-fceumm and install it from source. After that the lr-fceumm is able to register your achievements.
+Go to **Install Individual Emulators from Binary or Source**, choose lr-fceumm and install it from binary. After that the lr-fceumm is able to register your achievements.
