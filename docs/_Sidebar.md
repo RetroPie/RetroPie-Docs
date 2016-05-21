@@ -125,6 +125,7 @@
 * [PS4 controller](Setting-up-a-PS4-controller)
 * [N64 controller](Setting-up-an-N64-controller)
 * [Bluetooth controller](Setting-up-a-Bluetooth-controller)
+* [Mobile Gamepad](https://github.com/sbidolach/mobile-gamepad)
 * [Smartphone Gamepad](Virtual-Gamepad)
 * [Wiimotes](Wiimotes-with-classic-controllers)
 * [Wii U Pro Controller (Debian jessie only)](Setting-up-Wii-U-Pro-controller)
