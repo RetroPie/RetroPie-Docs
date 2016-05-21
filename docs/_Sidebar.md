@@ -92,6 +92,7 @@
 * [Quake Series](Quake) 
 * [Rick Dangerous](Xrick)
 * [Prince of Persia](SDLPoP)
+* [Stratagus](Stratagus)
 * [Super Mario War](Super-Mario-War) 
 * [SuperTux](SuperTux) 
 * [The-Ur-Quan-Masters](The-Ur-Quan-Masters) 
