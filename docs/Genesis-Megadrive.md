@@ -14,7 +14,7 @@ _This console, known as the Genesis in North America and the Mega Drive everywhe
 ## Emulators: [DGen](http://dgen.sourceforge.net/), [lr-picodrive](https://github.com/libretro/picodrive), [lr-genesis-plus-gx](https://github.com/libretro/Genesis-Plus-GX)
 DGEN has the worst performance and can be tedious to configure controls, lr-picodrive seems to be the favourite for older Pi's, lr-genesis-plus-gx seems to be the favourite for the Pi 2.
 ## ROMS
-Accepted File Extensions: **.smd .bin .md .iso**
+Accepted File Extensions: **.smd .bin .gen .md .sg .zip**
 
 Place your ROMS in either
 ```
