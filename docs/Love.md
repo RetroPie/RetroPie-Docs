@@ -53,6 +53,16 @@ or you can just follow the links and download the .love files and place them int
     fi
 ```
 
+[**90 Second Portraits**](http://tangramgames.dk/games/90secondportraits/)
+
+```
+    # get 90secondportraits-1.01b.love (freeware game data)
+    if [[ ! -f "$romdir/love/90secondportraits-1.01b.love" ]]; then
+        wget "https://github.com/SimonLarsen/90-Second-Portraits/releases/download/1.01b/90secondportraits-1.01b.love" -O "$romdir/love/90secondportraits-1.01b.love"
+        chown $user:$user "$romdir/love/90secondportraits-1.01b.love"
+     fi
+```
+
 It can be run with
 
 ```
