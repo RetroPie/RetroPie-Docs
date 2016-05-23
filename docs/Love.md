@@ -32,19 +32,6 @@ You can add the following scripts in the configure function of `/home/pi/RetroPi
 or you can just follow the links and download the .love files and place them into your ROM folders manually.
 
 
-[**Bussard**](http://technomancy.itch.io/bussard)
-
-````  
-  # get Bussard for Love 10.0 (game data)
-    if [[ ! -f "$romdir/love/bussard.love" ]]; then
-        gitPullOrClone "tmp" https://gitlab.com/technomancy/bussard.git
-        cd tmp
-        zip -r "$romdir/love/bussard.love" "."
-        rm -R "tmp"
-        chown $user:$user "$romdir/love/bussard.love"
-    fi
-```
-
 [**Mr. Rescue**](http://tangramgames.dk/games/mrrescue/)
 
 ```
