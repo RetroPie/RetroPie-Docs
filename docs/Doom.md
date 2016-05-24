@@ -163,7 +163,7 @@ Edit it so that it looks like this:
 
 `lr-prboom="/opt/retropie/emulators/retroarch/bin/retroarch -L /opt/retropie/libretrocores/lr-prboom/prboom_libretro.so --config /opt/retropie/configs/darkesthour/retroarch.cfg /ho$
 default="zdoom"
-zdoom="/opt/retropie/ports/zdoom/zdoom -iwad /home/pi/RetroPie/roms/ports/doom/doom2.wad -file /home/pi/RetroPie/roms/ports/zdoom/DarkestHour/"`
+zdoom="/opt/retropie/ports/zdoom/zdoom -iwad /home/pi/RetroPie/roms/ports/doom/doom2.wad -file /home/pi/RetroPie/roms/ports/zdoom/DarkestHour/DarkHour.wad"`
 
 Save your work by holding Down `CONTROL + X`. Then keep hitting `Y` to confirm each step until save. 
 
