@@ -9,25 +9,11 @@ Suggested overclock for Raspi 3 for optimal N64 emulation (This to be paired wit
 
 ```
 #Overclock Settings
-arm_freq=1400 (Try 1350 if 1400 does not work)
+arm_freq=1300
+gpu_freq=500
+sdram_freq=500
 over_voltage=6
-temp_limit=80
-core_freq=500
-
-#GPU Based
-h264_freq=333
-avoid_pwm_pll=1
-gpu_mem=450
-v3d_freq=500
-#Ram Overclock
-sdram_freq=588
-sdram_schmoo=0x02000020
-over_voltage_sdram_p=6
-over_voltage_sdram_i=4
-over_voltage_sdram_c=4
-#Sound Fix
-hdmi_drive=2
-DEFAULT_MODE=0
+gpu_mem=256
 ```
 
 The overclock settings are being adjusted to suit optimal operations.  Of most important note of categories that most correctly benefit the Nintendo 64 is v3d_freq this is not a setting that when increased fails warranty or even really has a huge impact on heat but it has a great effect on higher performing emulators such as N64 and Dreamcast. Clock and SDram speed also assist greatly in emulation.
@@ -57,8 +43,6 @@ then cancel exit and reboot
 Audio
 
 Use HDMI as composite requires more CPU usage.
-With HDMI use DEFAULT_MODE=0 so that the audio data will not be copied or resampled.
-With Compsite set DEFAULT_MODE to a low frequency e.g. 10000. The higher this is, the more CPU processing will be required. If you get strange sound affects (e.g. aliasing) then increase the frequency.
 
 
 
