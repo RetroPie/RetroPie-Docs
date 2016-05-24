@@ -221,6 +221,5 @@ http://forum.8bitdo.com/thread-328-1-1.html
 https://wiki.archlinux.org/index.php/bluetooth#Bluetoothctl  
 https://wiki.archlinux.org/index.php/bluetooth_keyboard    
 http://8bitdo.com/Support.html  
-https://www.reddit.com/r/RetroPie/comments/4d5hcf/how_to_setup_8bitdo_nes30_fc30_pro_controllers_on/
-**Pre-Generated retroarch controller files**  
+https://www.reddit.com/r/RetroPie/comments/4d5hcf/how_to_setup_8bitdo_nes30_fc30_pro_controllers_on/  
 https://github.com/libretro/retroarch-joypad-autoconfig/tree/master/udev
