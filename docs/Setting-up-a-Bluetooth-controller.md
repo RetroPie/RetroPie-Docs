@@ -1,16 +1,25 @@
+#Pi 3 Bluetooth
+Note that on the Pi 3 to use onboard bluetooth you may need to install bluetooth first with `sudo apt-get install pi-bluetooth` but fair warning, the onboard bluetooth has been known to freeze up the pi.
+
+###Pi 3 Bluetooth Freeze Fix
+```
+sudo apt-get update && sudo apt-get dist-upgrade
+sudo apt-get install raspberrypi-sys-mods
+```
+If it asks you anything about the /etc/udev/rules.d/99-com.rules configuration file, type Y to overwrite.
+
 # Adding a Bluetooth controller to RetroPie  
 
 The simplest way of setting up a Bluetooth controller is through the Bluetooth Configuration menu of the RetroPie Setup script. There are also manual methods that may vary depending on what bluetooth controller you are using, some of which are described further below on this page.
 
 You can access the bluetooth configuration menu from the RetroPie Menu of EmulationStation. It can also be accessed from **RetroPie-Setup Script >> Setup >> Configure Bluetooth Devices**
 
-Note that on the pi3 to use onboard bluetooth you may need to install bluetooth first with `sudo apt-get install pi-bluetooth` but fair warning, the onboard bluetooth has been known to freeze up the pi.
-
 ![bluetooth 1](https://cloud.githubusercontent.com/assets/10035308/14411884/129c470c-ff12-11e5-9101-e510424b6e55.PNG)
 
 `1.` **Register and Connect Bluetooth Devices:** You can select your bluetooth device's mac address from here 
 
 ![bluetooth 2](https://cloud.githubusercontent.com/assets/10035308/14411880/129ba13a-ff12-11e5-8d1a-d3b7f72873e1.PNG)
+
 ![bluetooth 3](https://cloud.githubusercontent.com/assets/10035308/14411881/129bc1a6-ff12-11e5-9cd8-be96d4131309.PNG)
 
 You will get a window popping up telling you if the connection was successful or not. If it was not successful make sure that you chose the correct mac address, if it still doesn't work you may have to configure it manually (see below).
