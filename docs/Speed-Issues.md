@@ -1,43 +1,85 @@
-From [ToadKing](http://www.raspberrypi.org/phpBB3/viewtopic.php?p=137827#p137827): 
+Systems from fastest to slowest:
 
-BTW, for most of [those](http://www.youtube.com/watch?v=rm3IuXeIfaw) cores you should be able to get at or near full speed, with some exceptions:
+* Raspberry Pi 3
+* Raspberry Pi 2
+* Raspberry Pi Zero
+* Raspberry Pi 1
 
-* imame4all: Speed depends on the game. Certain Midway games are known for being really slow, like Mortal Kombat or NBA Jam.
+How much faster depends on the specific game and emulator you are interested in.
 
-* pocketsnes: Some games, especially SuperFX and SA-1 games, will be kinda slow on a stock speed Pi. Some graphic effects in other games can lag specific screens. I overclocked/overvolted my Pi to 950 Mhz and it runs most games at full speed, except for the SuperFX and SA-1 ones.
+Most SNES, Mega Drive, GameBoy Advance, and simpler emulators should run at full speed of close on a Pi 2.
 
-* vba-next: Will probably never be fullspeed on the Pi. An alternative port is being considered.
+## Specific System Observations
 
-* genesis-plus-gx: Is still a bit too slow on the Pi. An alternative port is being considered.
+### Arcade (MAME/FBA)
 
-* mupen64plus: Due to limited processing power some games will never be fullspeed on the Pi2.   
+Speed depends greatly on the game and the emulator version.
 
-* reicast: Due to limited processing power some games will never be fullspeed on the Pi2.  
+Certain games are just known for being really slow, like Mortal Kombat or NBA Jam.
 
-* ppsspp: Due to limited processing power some games will never be fullspeed on the Pi2.  
+Certain versions of the emulators run some ROMs very fast, other versions run the same game very slowly. Earlier/later isn't always better, try different emulator versions to see which performs best for the ROM in question.
 
-## General Improvement in retroach
-set video_threaded = true in retroarch.cfg will improve video performance
+Some games will never achieve playable speeds.
 
-## Overclocking Thread of the Official RPi Forum
+### SNES
 
-There is a thread about overclocking the RPi in the official forum of the foundation. You can find it [here](http://www.raspberrypi.org/phpBB3/viewtopic.php?f=29&t=6201).
+Some games, especially SuperFX and SA-1 games, will be slow on a stock speed Pi 1, but are generally playable on a Pi 3.
 
-## Overclocking With RetroPie Setup
+Some graphic effects in some games can cause lag when displaying specific screens, but the game will be playable overall.
 
-In the menu "Setup" you can find the options for changing the ARM and SDRAM frequencies. Note that changes will take effect after a reboot of the Raspberry.
+### PlayStation, N64, Dreamcast, PSP
 
-## Overclocking With raspi-config
+Due to limited processing power and/or lack of emulator efficiency, some games will never achieve playable speeds.
 
-You can overclock your Raspberry **without voiding its warranty** with the official raspi-config script. It can be started with
+## Configuration Improvements
 
-```shell
-sudo raspi-config
+### RetroArch emulators (lr- cores)
+
+Edit `/opt/retropie/configs/all/retroarch.cfg` and set:
+
+```
+# Use threaded video driver
+video_threaded = true
+
+# Smoothens picture with bilinear filtering
+video_smooth = false
 ```
 
-## User Comments
+### Resolution Decrease
 
-From [ChadP](http://www.raspberrypi.org/phpBB3/viewtopic.php?p=156971#p156971):
-> Im running my pi at over_voltage=6. arm_freq=1000. core_freq=500. sdram_freq=500. and the games are fast no lag.
+Try to decrease the Render Resolution or Framebuffer Resolution in the runcommand menu, displayed just before a game starts.
 
-I think that these are options for a heavily overclocked RPi and I would suggest to use a heat sink (at least!)
+Decreasing the screen size the emulator has to calculate can lead to an overall speed increase.
+
+## Overclocking
+
+### With RetroPie Setup Script
+
+In the menu **Setup** you can find the options for changing the ARM and SDRAM frequencies.
+
+Changes require a reboot to will take effect.
+
+### With raspi-config
+
+You can overclock **without voiding the warranty** with the official `raspi-config` script.
+
+It can be started with:
+
+```
+sudo raspi-config
+```
+### Considerations
+
+Heavily overclocked systems (and even regular Pi) would probably have their lifespan increased by using a heatsink.
+
+Kits are available cheap on eBay and Amazon, the bigger the heatsink the better.
+
+Cases with fans are also available, with the fan usually powered by the 5V GPIO pins.
+
+## References
+
+* [Overclocking thread on the official Raspberry Pi forum](http://www.raspberrypi.org/phpBB3/viewtopic.php?f=29&t=6201)
+* [Showcase of older emulator versions on Raspberry Pi 1](http://www.youtube.com/watch?v=rm3IuXeIfaw)
+* [ToadKing](http://www.raspberrypi.org/phpBB3/viewtopic.php?p=137827#p137827)
+* [ChadP](http://www.raspberrypi.org/phpBB3/viewtopic.php?p=156971#p156971)
+* [Comparison of cooling methods](https://www.youtube.com/watch?v=1AYGnw6MwFM)
