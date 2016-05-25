@@ -43,13 +43,26 @@ video_threaded = true
 
 # Smoothens picture with bilinear filtering
 video_smooth = false
+
+# Audio driver backend.
+audio_driver = alsathread
+
+# Enable rewinding
+rewind_enable = false
+
 ```
 
-### Resolution Decrease
+### Resolution
 
 Try to decrease the Render Resolution or Framebuffer Resolution in the runcommand menu, displayed just before a game starts.
 
 Decreasing the screen size the emulator has to calculate can lead to an overall speed increase.
+
+### TV
+
+Ensure you're using your TV's native resolution to prevent any overhead due to upscaling. Most modern HD TVs can display at 1080p (1920x1080) and 720p (1280x720) without issue.
+
+Enable **Game Mode** in the TV settings for the input used for the Pi. This disables some image processing (smoothing, etc) which makes movies look better, but which introduces latency when playing games.
 
 ## Overclocking
 
@@ -57,7 +70,7 @@ Decreasing the screen size the emulator has to calculate can lead to an overall 
 
 In the menu **Setup** you can find the options for changing the ARM and SDRAM frequencies.
 
-Changes require a reboot to will take effect.
+Changes require a reboot to take effect.
 
 ### With raspi-config
 
