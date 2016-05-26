@@ -52,7 +52,7 @@ lctrl + esc (exit back to menu)
 
 Launch it from Emulation Station, and you get the GUI where you can configure disks/roms/memory and insert adf images into the virtual floppy disk drives. 
 
-Launching games directly from emulationstation: https://retropie.org.uk/forum/topic/400/launching-amiga-games-form-emulation-station/11
+Launching games directly from EmulationStation: https://retropie.org.uk/forum/topic/400/launching-amiga-games-form-emulation-station/11
 
 ## Video Tutorial
 
