@@ -1,5 +1,5 @@
 #Pi 3 Bluetooth
-Note that on the Pi 3 to use onboard bluetooth you may need to install bluetooth first with `sudo apt-get install pi-bluetooth` but fair warning, the onboard bluetooth has been known to freeze up the pi, but it can be fixed.
+Note that on the Pi 3 to use on-board Bluetooth you may need to install Bluetooth first with `sudo apt-get install pi-bluetooth` but fair warning, the on-board Bluetooth has been known to freeze up the Pi, but it can be fixed.
 
 ###Pi 3 Bluetooth Freeze Fix
 ```
@@ -10,7 +10,7 @@ If it asks you anything about the /etc/udev/rules.d/99-com.rules configuration f
 
 # Adding a Bluetooth controller to RetroPie  
 
-The simplest way of setting up a Bluetooth controller is through the Bluetooth Configuration menu of the RetroPie Setup script. There are also manual methods that may vary depending on what bluetooth controller you are using, some of which are described further below on this page.
+The simplest way of setting up a Bluetooth controller is through the Bluetooth Configuration menu of the RetroPie Setup script. There are also manual methods that may vary depending on what Bluetooth controller you are using, some of which are described further below on this page.
 
 You can access the bluetooth configuration menu from the RetroPie Menu of EmulationStation. It can also be accessed from **RetroPie-Setup Script >> Setup >> Configure Bluetooth Devices**
 
