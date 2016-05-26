@@ -50,9 +50,7 @@ arrow keys - up / down / left / right
 lctrl + esc (exit back to menu)
 ```
 
-Launch it from Emulation Station, and you get the GUI where you can configure disks/roms/memory and insert adf images into the virtual floppy disk drives. 
-
-Launching games directly from EmulationStation: https://retropie.org.uk/forum/topic/400/launching-amiga-games-form-emulation-station/11
+Launch it from Emulation Station, and you get the GUI where you can configure disks/roms/memory and insert adf images into the virtual floppy disk drives.
 
 ## Video Tutorial
 
@@ -67,3 +65,5 @@ alt="Testing joypad in RetroPie" width="300" height="190" border="10" /></a>
 - Some games do not work properly if more than one floppy drive is in use. If your game crashes or fails to load try to use just DF0 (change disc image during game if required) and not use DF1, DF2 and DF3.
 
 - For Raspberry Pi 1 users - make sure you overclock your device. Amiga emulation works much faster when overclocked to maximum. Without overclocking some games do not run at full speed.
+
+- Launching games directly from EmulationStation: https://retropie.org.uk/forum/topic/400/launching-amiga-games-form-emulation-station/11
