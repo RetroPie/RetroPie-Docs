@@ -82,17 +82,17 @@ renamed in "kick20.rom", so you have to rename your kickstart or edit configurat
 
 Also follow these steps:
 
-sudo nano /etc/emulationstation/es_systems.cfg
+``sudo nano /etc/emulationstation/es_systems.cfg``
 
 and add ".uae" (without quote) on tag <extension> for "amiga" emulator:
 
 ``<extension>.sh .SH .uae</extension>``
 
-sudo nano /opt/retropie/configs/amiga/emulators.cfg
+``sudo nano /opt/retropie/configs/amiga/emulators.cfg``
 
 and edit the line in this way:
 
-uae4arm="pushd /opt/retropie/emulators/uae4arm/; ./uae4arm -f %ROM%"
+``uae4arm="pushd /opt/retropie/emulators/uae4arm/; ./uae4arm -f %ROM%"``
 
 Point attention to the floppy image extension: ".adf" or ".adz".
 
