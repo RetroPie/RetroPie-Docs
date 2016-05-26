@@ -98,9 +98,9 @@ Point attention to the floppy image extension: ".adf" or ".adz".
 
 For game with multiple disks rename them in this way: 
 
-``Game bla bla bla (Disk 1 of N).adf  
+Game bla bla bla (Disk 1 of N).adf  
 Game bla bla bla (Disk 2 of N).adf  
 ...  
-Game bla bla bla (Disk N of N).adf``
+Game bla bla bla (Disk N of N).adf
 
 in other words change ONLY the floppy identifier.
