@@ -66,7 +66,7 @@ alt="Testing joypad in RetroPie" width="300" height="190" border="10" /></a>
 
 - For Raspberry Pi 1 users - make sure you overclock your device. Amiga emulation works much faster when overclocked to maximum. Without overclocking some games do not run at full speed.
 
-## Launching games directly from EmulationStation:
+## Launching games directly from EmulationStation
 
 Here you will find an application (with GUI):
 
@@ -98,6 +98,9 @@ Point attention to the floppy image extension: ".adf" or ".adz".
 
 For game with multiple disks rename them in this way: 
 
-Game bla bla bla (Disk 1 of N).adf - Game bla bla bla (Disk N of N).adf
+``Game bla bla bla (Disk 1 of N).adf
+Game bla bla bla (Disk 2 of N).adf
+...
+Game bla bla bla (Disk N of N).adf``
 
 in other words change ONLY the floppy identifier.
