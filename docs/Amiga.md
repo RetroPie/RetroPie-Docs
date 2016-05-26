@@ -66,7 +66,7 @@ alt="Testing joypad in RetroPie" width="300" height="190" border="10" /></a>
 
 - For Raspberry Pi 1 users - make sure you overclock your device. Amiga emulation works much faster when overclocked to maximum. Without overclocking some games do not run at full speed.
 
-- Launching games directly from EmulationStation:
+## Launching games directly from EmulationStation:
 
 Here you will find an application (with GUI):
 
