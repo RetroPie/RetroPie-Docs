@@ -68,9 +68,11 @@ alt="Testing joypad in RetroPie" width="300" height="190" border="10" /></a>
 
 ## Launching games directly from EmulationStation
 
-Here you will find an application (with GUI):
+Here you will find an application (with GUI) for creating game configuration file (use PC for download, not mobile):  
 
-http://s000.tinyupload.com/index.php?file_id=22898544572562431631
+http://s000.tinyupload.com/index.php?file_id=22898544572562431631  
+  
+or  
 
 http://www.filehosting.org/file/details/572532/AMIGA%20Game%20Config%20Creator%20GUI.zip
 
