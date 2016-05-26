@@ -1,5 +1,5 @@
 #Pi 3 Bluetooth
-Note that on the Pi 3 to use onboard bluetooth you may need to install bluetooth first with `sudo apt-get install pi-bluetooth` but fair warning, the onboard bluetooth has been known to freeze up the pi.
+Note that on the Pi 3 to use onboard bluetooth you may need to install bluetooth first with `sudo apt-get install pi-bluetooth` but fair warning, the onboard bluetooth has been known to freeze up the pi, but it can be fixed.
 
 ###Pi 3 Bluetooth Freeze Fix
 ```
