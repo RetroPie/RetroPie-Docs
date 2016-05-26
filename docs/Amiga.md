@@ -86,7 +86,7 @@ sudo nano /etc/emulationstation/es_systems.cfg
 
 and add ".uae" (without quote) on tag <extension> for "amiga" emulator:
 
-<extension>.sh .SH .uae</extension>
+"<extension>.sh .SH .uae</extension>"
 
 sudo nano /opt/retropie/configs/amiga/emulators.cfg
 
