@@ -76,7 +76,7 @@ http://www.filehosting.org/file/details/572532/AMIGA%20Game%20Config%20Creator%2
 
 It uses the "config.uae" in order to create games configuration. The file is included in the main folder of the app and you can edit it. For default behavior "config.uae" is searching for kickstart 2.04 in
 
-/home/pi/RetroPie/roms/amiga/
+``/home/pi/RetroPie/roms/amiga/``
 
 renamed in "kick20.rom", so you have to rename your kickstart or edit configuration file. In that folder you have to put the config files created.
 
