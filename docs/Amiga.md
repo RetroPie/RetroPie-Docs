@@ -66,4 +66,41 @@ alt="Testing joypad in RetroPie" width="300" height="190" border="10" /></a>
 
 - For Raspberry Pi 1 users - make sure you overclock your device. Amiga emulation works much faster when overclocked to maximum. Without overclocking some games do not run at full speed.
 
-- Launching games directly from EmulationStation: https://retropie.org.uk/forum/topic/400/launching-amiga-games-form-emulation-station/11
+- Launching games directly from EmulationStation:
+
+Here you will find an application (with GUI):
+
+http://s000.tinyupload.com/index.php?file_id=22898544572562431631
+
+http://www.filehosting.org/file/details/572532/AMIGA%20Game%20Config%20Creator%20GUI.zip
+
+It uses the "config.uae" in order to create games configuration. The file is included in the main folder of the app and you can edit it. For default behavior "config.uae" is searching for kickstart 2.04 in
+
+/home/pi/RetroPie/roms/amiga/
+
+renamed in "kick20.rom", so you have to rename your kickstart or edit configuration file. In that folder you have to put the config files created.
+
+Also follow these steps:
+
+sudo nano /etc/emulationstation/es_systems.cfg
+
+and add ".uae" (without quote) on tag <extension> for "amiga" emulator:
+
+<extension>.sh .SH .uae</extension>
+
+sudo nano /opt/retropie/configs/amiga/emulators.cfg
+
+and edit the line in this way:
+
+uae4arm="pushd /opt/retropie/emulators/uae4arm/; ./uae4arm -f %ROM%"
+
+Point attention to the floppy image extension: ".adf" or ".adz".
+
+For game with multiple disks rename them in this way: 
+
+Game bla bla bla (Disk 1 of N).adf
+Game bla bla bla (Disk 2 of N).adf
+...
+Game bla bla bla (Disk N of N).adf
+
+in other words change ONLY the floppy identifier.
