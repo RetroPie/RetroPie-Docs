@@ -2,7 +2,7 @@
 
 > **WARNING:** As of 2016-05-03 (2016-05-05 for binary installs), the directory structure that lr-mame2003 uses has been updated to better match MAME norms. Thus, if you upgrade from a previous version, various directories will need moving/updating to ensure existing MAME configurations and save files are used. Please see [this github PR](https://github.com/libretro/mame2003-libretro/pull/29#issue-152552464) for full details on what has changed.
 
-lr-mame2003 is a popular choice for the Raspberry Pi 2 and up, as it combines a large romset (MAME 0.78) playing host to most 2D-era arcade games that people would be interested in, and a broad set of features. It also is still a relatively old MAME core, which is actually a good thing for lower-end hardware such as the Raspberry Pis, as later MAME cores feature increasingly accurate emulation which requires greater CPU power.
+lr-mame2003 is a popular choice for the Raspberry Pi 2 and up, as it combines a large romset (MAME 0.78) playing host to most 2D-era arcade games that people would be interested in, and a broad set of features. It also is still a relatively old MAME core, which is actually a good thing for lower-end hardware such as the Raspberry Pis, as later MAME cores feature increasingly accurate emulation which requires greater CPU power. Also, it is a libretro core, so enjoys all the benefits of that: centralised controller configurations, many customisation options, netplay, shader/overlay support, etc.
 
 ## MAME menu
 
