@@ -108,3 +108,6 @@ Game bla bla bla (Disk N of N).adf
 in other words change ONLY the floppy identifier.  
 
 Note: The old script from Mark Dunning has a problem with games with more than 9 floppies (creates others wrong config files) and creates a config file with name like "Game bla bla bla (Disk 1 of N).uae". This new app create only 1 file for a multiple disk game with the exact name of the game
+
+Alternatively, a native BASH script to perform the same steps directly on the RetroPie machine can be found here:
+https://github.com/Douggernaut/RetroPieAssistant/tree/master/Amiga
