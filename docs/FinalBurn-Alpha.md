@@ -61,6 +61,8 @@ you can also place your roms in
 
 ### lr-fba-next
 
+**Please see [lr-fba-next](https://github.com/RetroPie/RetroPie-Setup/wiki/lr-fba-next) for information on how to configure specfic features of this emulator.**
+
 Romset Used: FBA **0.2.97.38** which is based on MAME 0.173 (April 2016)
 
 Total Games Emulated: [4150](https://raw.githubusercontent.com/libretro/libretro-fba/master/gamelist.txt) (includes clones etc..)
@@ -76,9 +78,6 @@ you can also place your roms in
 ```
 
 ### [**lr-fba-next COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1GaqIIoiWbzKHwZ52S2xCSDQXILo81Ls1mHK6czKGAtM/edit?usp=sharing)  feel free to contribute to the list.
-
-#### System Menu
-By default, if you hold the Start button for a few seconds, the system menu appears. Here you can set various game options, typically including 'Free Play' modes, regional settings, etc. Settings are saved in .fs files in the ROMS directory for the system in use, and are loaded automatically on next use.
 
 ## BIOS
 
