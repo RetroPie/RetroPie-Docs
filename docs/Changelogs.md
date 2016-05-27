@@ -1,6 +1,17 @@
 # CHANGELOGS
 
 This page is a list of all of the changelogs for each version of RetroPie. For a complete list of all commits to the source code see [here:](https://github.com/petrockblog/RetroPie-Setup/commits/master)  
+### Version 3.8: (May 27, 2016)
+ - Raspbian package/firmware rollups that fix the lockups with the Raspberry Pi 3 internal bluetooth.
+ - New SDL1 dispmanx backend from Vanfanel with triple buffering which should solve some of the performance issues on the previous code. Also some additional changes are included so you can adjust the aspect ratio with env variable SDL_DISPMANX_RATIO (eg 1.33 for 4:3). The aspect ratio will be ignored if SDL_DISPMANX_IGNORE_RATIO is set and sdl1 apps will display full screen. Vice is now set to use 4:3 ratio on the Raspberry Pi.
+ - Reicast (Dreamcast emulator), now supports multiplayer.
+ - lr-pcsx-rearmed (PlayStation emulator) now supports 3-8 players.
+ - Updated Raspberry Pi binaries for lr-fba-next, uae4arm, mupen64plus, Reicast, lr-picodrive, lr-nestopia, lr-pcsx-rearmed, lr-mgba, lr-genesis-plus-gx, lr-mame2003, and lr-fceum.
+ - Added new videocore mupen64plus video plugin.
+ - Improvements to Apple2 (supports automount now).
+ - Added wiki viewer.
+ - Improvements to the splashscreen module (added previewer, randomiser, and no longer requires a folder to be created in the splashscreen directory).
+ - Various other bugfixes and minor improvements.
 
 ### Version 3.7: (April 14, 2016)
 
