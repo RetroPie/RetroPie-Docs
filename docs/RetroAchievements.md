@@ -14,7 +14,7 @@ Since RetroArch 1.3.2 (used in RetroPie 3.7), the Hardcore Mode is supported. It
 cheevos_hardcore_mode_enable = true
 ```
 
-[As at 27/05/2016 achievement support is broken in the latest version of Retroarch.](https://github.com/libretro/RetroArch/issues/3032)
+[As at 27/05/2016, achievement support is broken in the latest version of Retroarch (1.3.4).](https://github.com/libretro/RetroArch/issues/3032)
 
 
 ##Supported Systems:
