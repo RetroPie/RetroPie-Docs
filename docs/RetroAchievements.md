@@ -36,7 +36,3 @@ cd RetroPie-Setup
 sudo ./retropie_setup.sh
 ```
 Go to **Install Individual Emulators from Binary or Source**, choose lr-fceumm/lr-picodrive/lr-mgba and install it from binary. After that the lr-fceumm is able to register your achievements.
-
-###Issues
-
-[As reported by an user at 27/05/2016, achievement support is broken in the **Windows** latest version of Retroarch (1.3.4).](https://github.com/libretro/RetroArch/issues/3032)
