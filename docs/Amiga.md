@@ -68,6 +68,8 @@ alt="Testing joypad in RetroPie" width="300" height="190" border="10" /></a>
 
 ## Launching games directly from EmulationStation
 
+### PC Solution
+
 Here you will find an application (with GUI) for creating game configuration file (use PC for download, not mobile):  
 
 http://s000.tinyupload.com/index.php?file_id=22898544572562431631  
@@ -108,6 +110,8 @@ Game bla bla bla (Disk N of N).adf
 in other words change ONLY the floppy identifier.  
 
 Note: The old script from Mark Dunning has a problem with games with more than 9 floppies (creates others wrong config files) and creates a config file with name like "Game bla bla bla (Disk 1 of N).uae". This new app create only 1 file for a multiple disk game with the exact name of the game
+
+### BASH solution
 
 Alternatively, a native BASH script to perform the same steps directly on the RetroPie machine can be found here:
 https://github.com/Douggernaut/RetroPieAssistant/tree/master/Amiga
