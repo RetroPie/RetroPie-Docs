@@ -17,7 +17,7 @@ sudo /home/pi/RetroPie-Setup/retropie_setup.sh
 
 
 
-![sselph](https://cloud.githubusercontent.com/assets/10035308/14407045/1bdd040e-fe78-11e5-9778-626c216a6498.PNG)
+<img width="500" alt="sselph" src="https://cloud.githubusercontent.com/assets/8129878/15624414/5d56d330-2455-11e6-8a6a-850678d58712.png">
 
 - **Scrape All Systems:** This will scrape all the systems the scraper supports
 
@@ -30,6 +30,10 @@ sudo /home/pi/RetroPie-Setup/retropie_setup.sh
 - **Max Image Width:** Specify the max image width to scrape.
 
 - **Scraper:** Choose which database to scrape from - thegamesdb is default, but when thegamesdb is down you can specify to use OpenVGBD instead.
+
+- **ROM Names:** Choose what name to display. By default the name from the No-Intro data will be used. This includes the Region. You can also choose theGamesDB which is what the builtin scraper uses.
+
+- **Gamelist:** Choose to overwrite the existing gamelist.xml or append to it. 
 
 - **Update scraper to the latest version:** This updates the scraper to the latest version.
 
