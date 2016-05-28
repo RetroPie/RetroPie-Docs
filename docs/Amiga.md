@@ -68,7 +68,7 @@ alt="Testing joypad in RetroPie" width="300" height="190" border="10" /></a>
 
 ## Launching games directly from EmulationStation
 
-### Software with GUI for Windows 
+### App with GUI for Windows for creating configuration files 
 
 Here you will find an application (with GUI) for creating game configuration file (use PC for download, not mobile):  
 
