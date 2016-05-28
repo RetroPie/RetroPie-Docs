@@ -31,7 +31,7 @@ sudo /home/pi/RetroPie-Setup/retropie_setup.sh
 
 - **Scraper:** Choose which database to scrape from - thegamesdb is default, but when thegamesdb is down you can specify to use OpenVGBD instead.
 
-- **ROM Names:** Choose what name to display. By default the name from the No-Intro data will be used. This includes the Region. You can also choose theGamesDB which is what the builtin scraper uses.
+- **ROM Names:** Choose what name to display. By default the name from the No-Intro data(includes Region) will be used. You can also choose theGamesDB which is what the builtin scraper uses.
 
 - **Gamelist:** Choose to overwrite the existing gamelist.xml or append to it. 
 
