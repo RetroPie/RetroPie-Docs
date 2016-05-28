@@ -2,7 +2,7 @@
 
 |Version|
 |---|
-|3.7|
+|3.8|
 1. [Hardware](https://github.com/RetroPie/RetroPie-Setup/wiki/First-Installation#hardware-needed)
 1. [Installation](https://github.com/RetroPie/RetroPie-Setup/wiki/First-Installation#installation)
 1. [Controller Configuration](https://github.com/RetroPie/RetroPie-Setup/wiki/First-Installation#controller-configurations)
