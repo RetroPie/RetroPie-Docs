@@ -68,17 +68,17 @@ alt="Testing joypad in RetroPie" width="300" height="190" border="10" /></a>
 
 ## Launching games directly from EmulationStation
 
-### PC Solution
+### Software with GUI for Windows 
 
 Here you will find an application (with GUI) for creating game configuration file (use PC for download, not mobile):  
 
 http://s000.tinyupload.com/index.php?file_id=22898544572562431631  
   
-or  
-
-http://www.filehosting.org/file/details/572532/AMIGA%20Game%20Config%20Creator%20GUI.zip
-
-It uses the "config.uae" in order to create games configuration. The file is included in the main folder of the app and you can edit it. For default behavior "config.uae" is searching for kickstart 2.04 in
+and here the necessary configuration files according to different version of UAE4arm:  
+  
+http://s000.tinyupload.com/index.php?file_id=64687850856486668827  
+  
+Open "+Start UAE4Arm" and save a profile with random name then open the file and check the number in the parameter "config_version". Rename the correct configuration file previoulsy downloaded in "config.uae" and copy it in program's main folder (overwrite the existing file). It uses the file in order to create games configuration and you can edit it. For default behavior "config.uae" is searching for kickstart 2.04 in
 
 ``/home/pi/RetroPie/roms/amiga/``
 
