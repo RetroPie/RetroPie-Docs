@@ -80,6 +80,16 @@ The option is:
 mame2003-skip_disclaimer = enabled
 ```
 
+## Skip warnings screen
+
+Games that feature incomplete emulation, or other side-effects will have a warning screen detailing these flaws similar to the 'nag screen' mentioned above. It is recommended to leave this screen visible to understand why a game may have such issues, but it can be controlled via a setting in the `retroarch-core-options.cfg` file, found in:
+```
+/opt/retropie/configs/all/
+```
+The option is:
+```
+mame2003-skip_warnings = enabled
+```
 ## Feature requests
 
 Please use the [forum](https://retropie.org.uk/forum) for all support issues, but feature requests can be made on the [GitHub page](https://github.com/libretro/mame2003-libretro).
