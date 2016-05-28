@@ -1,6 +1,6 @@
 | Current Version|
 | :---: |
-| [**3.7**](https://retropie.org.uk/download/) |
+| [**3.8**](https://retropie.org.uk/download/) |
 
 RetroAchievements are a way to log your achievements on oldschool console games. It is integrated into RetroArch and is only supported by select cores ([see chart](https://github.com/RetroPie/RetroPie-Setup/wiki/RetroAchievements/_edit#supported-systems)).
 
@@ -22,17 +22,7 @@ cheevos_hardcore_mode_enable = true
 ##Supported Systems:
 
 * Game Boy / Color (lr-gambatte - installed by default)  
-* Game Boy Advance (VBA-M, mGBA - installed by default, but you have to [re]install it)
-* NES (lr-fceumm - installed by default, but you have to [re]install it, lr-QuickNES - found in 'Experimental' menu)
-* SNES (lr-Snes9x-next, lr-pocketsnes, lr-armsnes (better performance for raspi1) - installed by default)  
-* Genesis/Mega Drive (lr-picodrive - installed by default, but you have to [re]install it)  
-
-
-To enable lr-fceumm/lr-picodrive/lr-mgba for achievements you have to follow the instructions [here](https://github.com/retropie/RetroPie-Setup/wiki/Updating-RetroPie) to install it. Summing up:
-
-Access the terminal and
-```
-cd RetroPie-Setup
-sudo ./retropie_setup.sh
-```
-Go to **Install Individual Emulators from Binary or Source**, choose lr-fceumm/lr-picodrive/lr-mgba and install it from binary. After that the lr-fceumm is able to register your achievements.
+* Game Boy Advance (VBA-M - installed by default, mGBA - installed by default)
+* NES (lr-fceumm - installed by default, lr-QuickNES - found in 'Experimental' menu)
+* SNES (lr-Snes9x-next, lr-pocketsnes, lr-armsnes - installed by default)  
+* Genesis/Mega Drive (lr-picodrive - installed by default)
