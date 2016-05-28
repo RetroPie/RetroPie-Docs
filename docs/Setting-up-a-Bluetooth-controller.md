@@ -1,7 +1,7 @@
 #Pi 3 Bluetooth
-Note that on the Pi 3 to use on-board Bluetooth you may need to install Bluetooth first with `sudo apt-get install pi-bluetooth` but fair warning, the on-board Bluetooth has been known to freeze up the Pi, but it can be fixed.
+Note that on the Pi 3 to use on-board Bluetooth you may need to install Bluetooth first with `sudo apt-get install pi-bluetooth` but fair warning, the on-board Bluetooth has been known to freeze up the Pi (on RetroPie 3.7 or under), but it can be fixed.
 
-###Pi 3 Bluetooth Freeze Fix
+###Pi 3 Bluetooth Freeze Fix (for RetroPie 3.7 or below)
 ```
 sudo apt-get update && sudo apt-get dist-upgrade
 sudo apt-get install raspberrypi-sys-mods
