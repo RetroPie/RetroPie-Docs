@@ -19,7 +19,7 @@ Access the [RetroPie Setup Script](Updating-RetroPie) and navigate to **Setup / 
 
 Controllers need to be turned on before the Pi boots in order to configure properly.
 
-After you have enabled the driver and rebooted you'll need to reconfigure your controller(s) in emulationstation as described on the [first installation page](https://github.com/RetroPie/RetroPie-Setup/wiki/First-Installation)
+**After you have enabled the driver and rebooted you'll need to reconfigure your controller(s) in emulationstation as described on the [first installation page](https://github.com/RetroPie/RetroPie-Setup/wiki/First-Installation)**
 
 Alternatively if you prefer you can manually install it..
 
