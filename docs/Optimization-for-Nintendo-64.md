@@ -48,7 +48,7 @@ Use HDMI as composite requires more CPU usage.
 
 
 
-## High Resoltuion texture packs
+## High Resolution texture packs
 The steps for this are to change the configuration in 
 ```/opt/retropie/configs/n64/mupen64plus.cfg  ```
 Replacing False for True in the Glide and Rice plugin
