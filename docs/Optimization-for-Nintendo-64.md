@@ -29,8 +29,8 @@ or
 https://docs.google.com/spreadsheets/d/1Wjzbu90l6eCEW1w6ar9NtfyDBQrSPILQL5MbRSpYSzw/edit?usp=sharing
 Top Link tracking more testing of Raspi 3 performance. 
 
-##CPU-Govenor
-The CPU govenor can be throttled to max performance mode in one of two ways.
+##CPU-Governor
+The CPU governor can be throttled to max performance mode in one of two ways.
 
 ```
 echo "performance" |sudo tee /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
@@ -89,7 +89,7 @@ Correction to this behavior.  It seems that texture packs will not load correctl
 
 
 
-##Research for further improvments
+##Research for further improvements
 (Run mupen64plus using sudo/root so that it can change its scheduler policy to 'hog' the CPU)
 Test and confirm this behavior has any effect, and if this boost is cancelled out or equaled to setting the cpu cores to performance mode.
 
@@ -115,7 +115,7 @@ Additionally need to research and test optimum video modes, and full screen scal
 
 ##Optimizations to mupen64plus.cfg
 
-Thesse are all experimental settings I am playing with
+These are all experimental settings I am playing with
 
 Glide
 
