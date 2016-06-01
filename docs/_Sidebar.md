@@ -113,7 +113,7 @@
 * [Manual Installation](Manual-Installation)
 * [Odroid](Odroid)
 * [Arch Linux](RetroPie-Arch-Linux-Flavor)
-* [Ubuntu 15.10 x86](RetroPie-Ubuntu-15.10-x86-Flavor)
+* [Ubuntu x86](RetroPie-Ubuntu-16.04-LTS-x86-Flavor)
 * [Install via NOOBS](convert-retropie-sd-card-image-to-noobs-image)
 * [RetroPie install for OSMC with external memory USB Drive](RetroPie-install-for-OSMC-with-external-memory-USB-Drive)
 * [Favorites and Child-friendly EmulationStation](Child-friendly-EmulationStation)
