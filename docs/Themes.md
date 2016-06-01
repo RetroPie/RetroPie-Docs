@@ -116,5 +116,13 @@ Access theme gallery in the esthemes menu
   </tr>
 </table>
 
-
+<table style="width:50%">
+<tr>
+  <th>Material</td>
+</tr>
+<tr>
+<td>
+<img src="https://cloud.githubusercontent.com/assets/9311410/15695879/85662fd4-2779-11e6-98a1-bcb49a3d1272.png" width="250"><img src="https://cloud.githubusercontent.com/assets/9311410/15695894/978f62c0-2779-11e6-8d3b-0cb6ab3184d1.png" width="250"></td> 
+  </tr>
+</table>
 
