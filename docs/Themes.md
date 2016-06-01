@@ -119,9 +119,11 @@ Access theme gallery in the esthemes menu
 <table style="width:100%">
 <tr>
   <th>Material</td>
+  <th></td>
 </tr>
 <tr>
 <td>
 <td><img src="https://cloud.githubusercontent.com/assets/9311410/15695879/85662fd4-2779-11e6-98a1-bcb49a3d1272.png" width="250"><img src="https://cloud.githubusercontent.com/assets/9311410/15695894/978f62c0-2779-11e6-8d3b-0cb6ab3184d1.png" width="250"></td> 
+<td><img src="" width="250"><img src="" width="250"></td> 
   </tr>
 </table>
