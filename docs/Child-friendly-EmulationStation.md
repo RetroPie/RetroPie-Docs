@@ -20,7 +20,7 @@ The Full mode offers the same functionality as the vanilla ES UI. The Kiosk mode
 * [Credits](#credits)
 
 <a href="https://www.youtube.com/watch?v=1BWjNp7Br9c
-" target="_blank"><img src="https://i.ytimg.com/vi_webp/1BWjNp7Br9c/mqdefault.webp" 
+" target="_blank"><img src="https://i.ytimg.com/vi/1BWjNp7Br9c/hqdefault.jpg?custom=true&w=196&h=110&stc=true&jpg444=true&jpgq=90&sp=68&sigh=GSqQ9Uv7nX9qqIbGqQWs1pswN8A" 
 alt="Kid Friendly EmulationStation" width="300" height="190" border="10" /></a>  
   
 **Video Guide**: https://www.youtube.com/watch?v=1BWjNp7Br9c  
