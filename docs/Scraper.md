@@ -16,7 +16,6 @@ sudo /home/pi/RetroPie-Setup/retropie_setup.sh
 ```
 
 
-
 <img width="500" alt="sselph" src="https://cloud.githubusercontent.com/assets/8129878/15624414/5d56d330-2455-11e6-8a6a-850678d58712.png">
 
 - **Scrape All Systems:** This will scrape all the systems the scraper supports
@@ -36,6 +35,10 @@ sudo /home/pi/RetroPie-Setup/retropie_setup.sh
 - **Gamelist:** Choose to overwrite the existing gamelist.xml or append to it. 
 
 - **Update scraper to the latest version:** This updates the scraper to the latest version.
+
+#### Slow Boot and Shutdown Times
+
+You'll notice after adding lots of ROMs and scraping them that your boot and shutdown time can increase substantially- some solutions to speed up your boot and shutdown times are described [**HERE**](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#why-does-shut-down-and-reboot-take-ages)
 
 #### Where are my scraped images and metadata saved?
 
