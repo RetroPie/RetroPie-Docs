@@ -43,7 +43,9 @@ Place this lr-Genesis-Plus-GX BIOS file in
 ```
 /home/pi/RetroPie/BIOS
 ```
-the alternate BIOS files above can be renamed: bios_CD_E.bin, bios_CD_J.bin (Europe and Japan respectively)
+the alternate BIOS files above can be renamed: bios_CD_E.bin, bios_CD_J.bin (Europe and Japan respectively)  
+  
+Video Guide using lr-genesis-plus-gx: https://www.youtube.com/watch?v=PkktRuK8uWU
 
 ## Controls
 
