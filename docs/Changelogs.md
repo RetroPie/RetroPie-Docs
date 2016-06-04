@@ -1,6 +1,19 @@
 # CHANGELOGS
 
 This page is a list of all of the changelogs for each version of RetroPie. For a complete list of all commits to the source code see [here:](https://github.com/petrockblog/RetroPie-Setup/commits/master)  
+
+### Version 3.8.1: (June 4, 2016)
+ - Fix escaping in iniSet causing initial backslashes to be incorrect in ini files (Affected some +Start Scripts with spaces such as DOSBox).
+ - Don’t overwrite existing configs when updating advmame.
+ - SSelph’s scraper – Add option to set -append and -use_nointro_name=false flags
+ - Disable binary install on Wheezy.
+ - Fix building of gamecondriver.
+ - Correct Emulation Station autobooting configuration due to changes in raspi-config.
+ - Added missing zip dependency for Solarus.
+ - Fix c&p error with mupen64plus that broke the initial config generation.
+ - Added new EmulationStation theme “material” from user lilbud.
+ - Lr-nxengine – no error message was shown when required data files are missing.
+
 ### Version 3.8: (May 27, 2016)
  - Raspbian package/firmware rollups that fix the lockups with the Raspberry Pi 3 internal bluetooth.
  - New SDL1 dispmanx backend from Vanfanel with triple buffering which should solve some of the performance issues on the previous code. Also some additional changes are included so you can adjust the aspect ratio with env variable SDL_DISPMANX_RATIO (eg 1.33 for 4:3). The aspect ratio will be ignored if SDL_DISPMANX_IGNORE_RATIO is set and sdl1 apps will display full screen. Vice is now set to use 4:3 ratio on the Raspberry Pi.
