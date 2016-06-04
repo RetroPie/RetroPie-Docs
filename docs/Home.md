@@ -3,7 +3,7 @@
 
 | Current Version|
 | :---: |
-| [**3.8**](https://retropie.org.uk/download/) |
+| [**3.8.1**](https://retropie.org.uk/download/) |
 |[Changelog](Changelogs)|
 
 Welcome to the RetroPie-Setup wiki!
