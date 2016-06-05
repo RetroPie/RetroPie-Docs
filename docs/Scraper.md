@@ -15,6 +15,7 @@ then to access the setup script from the terminal you can type
 sudo /home/pi/RetroPie-Setup/retropie_setup.sh
 ```
 
+Make sure to update to the latest version of Retropie-Setup script if youre missing any options mentioned below!
 
 <img width="500" alt="sselph" src="https://cloud.githubusercontent.com/assets/8129878/15624414/5d56d330-2455-11e6-8a6a-850678d58712.png">
 
@@ -32,7 +33,7 @@ sudo /home/pi/RetroPie-Setup/retropie_setup.sh
 
 - **ROM Names:** Choose what name to display. By default the name from the No-Intro data(includes Region) will be used. You can also choose theGamesDB which is what the builtin scraper uses.
 
-- **Gamelist:** Choose to overwrite the existing gamelist.xml or append to it. Note that this option is currently not available in RetroPie 3.7 (as of 2016-06-05). To access this option, the script has to be run manually from terminal (see usage below).
+- **Gamelist:** Choose to overwrite the existing gamelist.xml or append to it.
 
 - **Update scraper to the latest version:** This updates the scraper to the latest version.
 
