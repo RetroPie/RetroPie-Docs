@@ -7,6 +7,13 @@ Manual configurations can also be set with the use of a keyboard.
 The Configuration Editor can be accessed from the RetroPie Menu or through the [RetroPie Setup Script](Updating-RetroPie) and navigate to **Setup / Configuration>> Edit RetroPie/RetroArch Configurations**
 
 When changing settings, there are notes at the bottom of the screen that explain each setting and what they do. 
+  
+  
+### Video Guide  
+<a href="https://www.youtube.com/watch?v=rt2v-xCTDM0
+" target="_blank"><img src="https://i.ytimg.com/vi_webp/rt2v-xCTDM0/mqdefault.webp" 
+alt="RetroPie with Bluetooth" width="300" height="190" border="10" /></a>  
+  
 
 ### Basic Configuration
 
