@@ -4,8 +4,8 @@ The following chart is a quick reference for all the arcade emulators in RetroPi
 
 | Emulator | Romset | # of ROMs | [.DAT Files](https://github.com/HerbFargus/retropie-dat/archive/master.zip) | Compatibility List |
 | :---: | :---: | :---: | :---: | :---: |
-| [mame4all](https://github.com/RetroPie/RetroPie-Setup/wiki/MAME) | 0.37b5 | [2270](http://code.google.com/p/imame4all/wiki/GameList) | [.DAT](https://drive.google.com/file/d/0B2TMeZ6iEFvHQnJqS19JRUhzSmM/view?usp=sharing)| [List](https://docs.google.com/spreadsheets/d/1gpuoZx78kDDdnf_yADicsSZHMfpOxNySSov7UdCDAik/edit?usp=sharing) |
-| [lr-imame4all](https://github.com/RetroPie/RetroPie-Setup/wiki/MAME) | 0.37b5 | [2270](http://code.google.com/p/imame4all/wiki/GameList) | [.DAT](https://drive.google.com/file/d/0B2TMeZ6iEFvHQnJqS19JRUhzSmM/view?usp=sharing)| [List](https://docs.google.com/spreadsheets/d/1Fmx2RPcgVgIIeKpaBKNEGWCDuu3DGfR-VkrnIVsIpeE/edit?usp=sharing) |
+| [mame4all](https://github.com/RetroPie/RetroPie-Setup/wiki/MAME) | [0.37b5](https://archive.org/details/MAME0.37b5-MAME2000-ROMSet) | [2270](http://code.google.com/p/imame4all/wiki/GameList) | [.DAT](https://drive.google.com/file/d/0B2TMeZ6iEFvHQnJqS19JRUhzSmM/view?usp=sharing)| [List](https://docs.google.com/spreadsheets/d/1gpuoZx78kDDdnf_yADicsSZHMfpOxNySSov7UdCDAik/edit?usp=sharing) |
+| [lr-imame4all](https://github.com/RetroPie/RetroPie-Setup/wiki/MAME) | [0.37b5](https://archive.org/details/MAME0.37b5-MAME2000-ROMSet) | [2270](http://code.google.com/p/imame4all/wiki/GameList) | [.DAT](https://drive.google.com/file/d/0B2TMeZ6iEFvHQnJqS19JRUhzSmM/view?usp=sharing)| [List](https://docs.google.com/spreadsheets/d/1Fmx2RPcgVgIIeKpaBKNEGWCDuu3DGfR-VkrnIVsIpeE/edit?usp=sharing) |
 | [lr-mame2003](https://github.com/RetroPie/RetroPie-Setup/wiki/MAME) | 0.78 | 4705 | [.DAT](https://drive.google.com/file/d/0B2TMeZ6iEFvHTkc2TXZOOFhCRzQ/view?usp=sharing)| [List](https://docs.google.com/spreadsheets/d/1LP1MELCvcxu7TfiowF_0ZuvRVEMqlfQyTVetnOJvuJc/edit?usp=sharing) |
 | [lr-mame2010](https://github.com/RetroPie/RetroPie-Setup/wiki/MAME) | 0.139 | 8782 | [.DAT](https://drive.google.com/file/d/0B2TMeZ6iEFvHUFdCc04zZ3o4dnM/view?usp=sharing)| [List](https://docs.google.com/spreadsheets/d/1IRSmFrSDvIc6gAw0gn12TcQ3HDOwmrETTor8wvvb7VI/edit?usp=sharing) |
 | [advmame-.94](https://github.com/RetroPie/RetroPie-Setup/wiki/MAME) | 0.94 | 5563 | [.DAT](https://drive.google.com/file/d/0B2TMeZ6iEFvHa2E5Rzl4ZEdMdjQ/view?usp=sharing)| [List](https://docs.google.com/spreadsheets/d/1AEQ94buG0rvbW0xdnYKeuEhHeCbuZlRfRJQCb1Dt8fw/edit?usp=sharing) |
@@ -129,10 +129,7 @@ Roms Dir: /home/pi/RetroPie/roms/mame-mame4all
 Binary Dir: /opt/retropie/emulators/mame4all
 Config Dir: /opt/retropie/configs/mame-mame4all
 ```
-MAME Version: Based on **0.37b5** (July 2000)
-
-Size: 1.86 GB
-
+#####MAME Version: [Based on **0.37b5** (July 2000)](https://archive.org/details/MAME0.37b5-MAME2000-ROMSet)
 Romsets emulated: 2270 (includes clones etc..)
 
 Active Sets 2241/2241
@@ -155,10 +152,7 @@ Roms Dir: /home/pi/RetroPie/roms/mame-mame4all
 Binary Dir: /opt/retropie/libretrocores/lr-imame4all
 Config Dir: /opt/retropie/configs/mame-mame4all/retroarch.cfg
 ```
-MAME Version: Based on **0.37b5** (July 2000)
-
-Size: 1.86 GB
-
+#####MAME Version: [Based on **0.37b5** (July 2000)](https://archive.org/details/MAME0.37b5-MAME2000-ROMSet)
 Romsets emulated: 2270 (includes clones etc..)
 
 Active Sets 2241/2241
@@ -181,8 +175,7 @@ Roms Dir: /home/pi/RetroPie/roms/mame-libretro
 Binary Dir: /opt/retropie/libretrocores/lr-mame2003
 Config Dir: /opt/retropie/configs/mame-libretro/retroarch.cfg
 ```
-MAME Version: Based on **0.78** (December 2003)
-
+#####MAME Version: Based on **0.78** (December 2003)
 Romsets emulated: 4705 (includes clones etc..)
 
 Active Sets 4705/4705
@@ -206,8 +199,7 @@ Roms Dir: /home/pi/RetroPie/roms/mame-libretro
 Binary Dir: /opt/retropie/libretrocores/lr-mame2010
 Config Dir: /opt/retropie/configs/mame-libretro/retroarch.cfg
 ```
-MAME Version: Based on **0.139** (August 2010)
-
+#####MAME Version: Based on **0.139** (August 2010)
 Romsets emulated: 8782 (includes clones etc..)
 
 Active Sets 8782/8782
