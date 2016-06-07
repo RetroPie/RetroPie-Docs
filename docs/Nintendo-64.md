@@ -31,6 +31,9 @@ Place your Nintendo 64 ROMs in
 Secondary Rom Compatibility list with testing on Raspberry Pi 3 need to merge 2 lists. 
 https://docs.google.com/spreadsheets/d/1Sn3Ks3Xv8cIx3-LGCozVFF7wGLagpVG0csWybnwFHXk/edit
 
+Don't want to step on any toes and Credit to the author of the original list, but here is another. I just took the original sheet and did some formatting. Use the first tab for Comments and Suggestions. Just trying to help get this to one sheet.
+https://docs.google.com/spreadsheets/d/1e9o3sNLKxlUBDDG6Sr0n6VBwAgwlFGPYr8Al46MdAqE/edit?usp=sharing
+
 ## Performance
 
 Low screen resolution are recommended to get best performance. Performance suffers if HD resolutions are used.
