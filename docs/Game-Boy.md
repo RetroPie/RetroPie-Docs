@@ -32,13 +32,44 @@ For more information on custom RetroArch controls see: [RetroArch Configuration]
 
 ![gameboy](https://cloud.githubusercontent.com/assets/10035308/7334402/bd640072-eb4e-11e4-8251-d2bc3b876153.png)
 
-## Advanced Configurations
-### How to Colourise Game Boy games
+## How to change the color palette
 
-Open RGUI by pressing select+x or on the keyboard pressing your hotkey+F1 then navigate to options
+Open the RetroArch RGUI by pressing **Select+X** on the controller, or **Hotkey+F1** on the keyboard then navigate to:
 
--Select Core Options
+* Quick Menu
+    * Core Options
+        * Change `GB Colorization` to `internal` by pressing left or right
+        * Select an `Internal Palette` with left and right
 
--Change GB Colorization from disabled to enabled (by pressing the right button on your keyboard)
+Press **B** to go back to the Quick Menu and **Resume Content**.
 
--Then restart the game by selecting load content (history) and choose your game now in colour!
+To make the change permanent, choose **Save Configuration** on the main RGUI menu.
+
+It's also possible to edit `/opt/retropie/configs/all/retroarch-core-options.cfg` and set the palette like:
+
+~~~
+gambatte_gb_colorization = "internal"
+gambatte_gb_internal_palette = "GBC - Grayscale"
+~~~
+
+The complete list of palettes can be found in the emulator core source:
+
+~~~
+GBC - Blue
+GBC - Brown
+GBC - Dark Blue
+GBC - Dark Brown
+GBC - Dark Green
+GBC - Grayscale
+GBC - Green
+GBC - Inverted
+GBC - Orange
+GBC - Pastel Mix
+GBC - Red
+GBC - Yellow
+Special 1
+Special 2
+Special 3
+~~~
+
+https://github.com/libretro/gambatte-libretro/blob/master/libgambatte/libretro/libretro.cpp
