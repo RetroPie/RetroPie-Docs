@@ -62,6 +62,7 @@
 * [Sega CD](Sega-CD)
 * [Sega SG-1000](SG-1000)
 * [Super Nintendo Entertainment System](Super-Nintendo-Entertainment-System)
+* [TRS-80](TRS-80)
 * [Vectrex](Vectrex)
 * [Videopac/Odyssey2](VideoPac-Odyssey-2)
 * [Virtual Boy](Virtual-Boy)
