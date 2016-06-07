@@ -1,5 +1,5 @@
 ***
-
+![](http://chazbeenhad.tripod.com/mc10-logo.jpg)
 ***
 _The TRS-80 was a home computer originally released by the Tandy Corporation in 1977. T=Tandy RS=Radio Shack 80=Z-80 microprocessor._
 *** 
