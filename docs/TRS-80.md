@@ -6,7 +6,7 @@ _The TRS-80 was a home computer originally released by the Tandy Corporation in 
 
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
-| [sdltrs](https://github.com/RetroPie/sdltrs) | trs-80  | .dsk | model2.rom | hardcoded |
+| [sdltrs](https://github.com/RetroPie/sdltrs) | trs-80  | .dsk | level2.rom | hardcoded |
 
 ## Emulator: [sdltrs](https://github.com/RetroPie/sdltrs)
 
@@ -20,9 +20,9 @@ Place your TRS-80 ROMs in
 
 ## BIOS
 
-The file needed is **model2.rom**
+The file needed is **level2.rom**
 
-Place your model2.rom BIOS file in
+Place your level2.rom BIOS file in
 ```
 /home/pi/RetroPie/BIOS
 ```
