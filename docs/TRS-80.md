@@ -1,5 +1,5 @@
 ***
-![](http://chazbeenhad.tripod.com/mc10-logo.jpg)
+![trs-80](https://cloud.githubusercontent.com/assets/10035308/15901462/a43326d2-2d60-11e6-9607-ee959ea30b40.png)
 ***
 _The TRS-80 was a home computer originally released by the Tandy Corporation in 1977. T=Tandy RS=Radio Shack 80=Z-80 microprocessor._
 *** 
