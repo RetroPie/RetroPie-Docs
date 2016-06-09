@@ -48,9 +48,9 @@ Download the SD image for your version of Raspberry Pi from the following page:
 
 If you are unsure which version of Raspberry Pi you have there is an easy way to check:
 
-Rpi 1/Zero= 1 raspberry when the pi boots up
+Rpi 0/1= 1 raspberry when the pi boots up
 
-Rpi 2/Rpi 3= 4 raspberries when the pi boots up
+Rpi 2/3= 4 raspberries when the pi boots up
 
 If you get the error `Illegal Instruction`  when it boots, you picked the wrong SD image.
 
