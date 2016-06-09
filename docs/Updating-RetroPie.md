@@ -90,7 +90,7 @@ If you update your setup script and realise it doesn't match the format above, t
  
 ![core packages](https://cloud.githubusercontent.com/assets/10035308/15919781/a18d06ca-2dd1-11e6-9cec-136fc5f0e727.png)
 
-Each section of the manage packages portion of the setup script have the option to install/update all packages and remove all installed packages.
+Each section of the manage packages portion of the setup script have the option to install/update all packages and remove all installed packages. You can also update/install and remove packages individually.
 
 The core components needed for RetroPie to function are:
 - **RetroArch:** Frontend for the libretro api, necessary for most emulators to run.
