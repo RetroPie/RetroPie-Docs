@@ -9,7 +9,7 @@ _The Atari Jaguar was the first 64 bit video game console released in 1993. It w
 | :---: | :---: | :---: | :---: | :---: |
 | [lr-virtualjaguar](https://github.com/libretro/virtualjaguar-libretro) | atarijaguar  | .j64 .jag | none | /opt/retropie/configs/atarijaguar/retroarch.cfg |
 
-## Emulator: [lr-virtualjaguar](https://github.com/libretro/virtualjaguar-libretro) (Experimental)
+## Emulator: [lr-virtualjaguar](https://github.com/libretro/virtualjaguar-libretro) :small_red_triangle: 
 
 Note that this emulator is currently experimental and will need to be installed through the experimental menu in the setup script. On testing with RPi2 it is incredibly laggy and slow and experimental for a reason.
 
