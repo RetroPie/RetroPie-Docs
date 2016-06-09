@@ -7,10 +7,10 @@ _The TurboGrafx-16 Entertainment SuperSystem, originally known in Japan as the P
 
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
-| [lr-mednafen-pce-fast](https://github.com/libretro/beetle-pce-fast-libretro) | pcengine  | .pce | syscard3.pce | /opt/retropie/configs/pcengine/retroarch.cfg |
+| [lr-beetle-pce-fast](https://github.com/libretro/beetle-pce-fast-libretro) | pcengine  | .pce | syscard3.pce | /opt/retropie/configs/pcengine/retroarch.cfg |
 | [lr-beetle-supergrafx](https://github.com/libretro/beetle-supergrafx-libretro) | pcengine  | .pce | syscard3.pce | /opt/retropie/configs/pcengine/retroarch.cfg |
 
-## Emulator: [lr-mednafen-pce-fast](https://github.com/libretro/beetle-pce-fast-libretro), [lr-beetle-supergrafx](https://github.com/libretro/beetle-supergrafx-libretro)
+## Emulator: [lr-beetle-pce-fast](https://github.com/libretro/beetle-pce-fast-libretro), [lr-beetle-supergrafx](https://github.com/libretro/beetle-supergrafx-libretro)
 
 ## ROMS
 Accepted File Extensions: **.pce**
@@ -31,7 +31,7 @@ Place your the syscard3.pce file in
 
 ## Controls
 
-lr-mednafen-pce-fast utilises Retroarch configurations
+lr-beetle-pce-fast and lr-beetle-supergrafx utilise Retroarch configurations
 
 Add custom retroarch controls to the retroarch.cfg file in
 ```shell
