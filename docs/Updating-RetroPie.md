@@ -68,3 +68,30 @@ if you don't want to create a sd image you can just back up your bios, roms, and
 ## Making a Backup (OS X)
 
 Open a terminal window and type `diskutil list`. A list of all hard disks and partitions shows up. Find a partition with the name `boot`. The related /dev/disk* is your retropie sd card. Type `sudo dd if=/dev/disk* of=backup.img bs=1m` to write a disk image to your home directory.
+
+# 4.0 DEV setup script
+
+![menu](https://cloud.githubusercontent.com/assets/10035308/15919783/a1a676f0-2dd1-11e6-8deb-34f3fed7fa08.png)
+- **Manage Packages:** This is where you will install/update all your emulators, install controller drivers (like the ps3 or xboxdrv) along with ports and other optional packages.
+- **Setup / Tools:** Configure tools, splashscreens, themes, and other configurations here.
+- **Uninstall RetroPie:** Pretty self explanatory, uninstalls retropie.
+- **Updated Setup Script:** Updates your setup script to the latest version.
+- **Reboot:** Reboots your system.
+
+![manage packages](https://cloud.githubusercontent.com/assets/10035308/15919782/a1a5d8b2-2dd1-11e6-8102-192aeaaf257b.png)
+- **Core:** These are essential packages needed for RetroPie to run. Do not remove them.
+- **Main:** These are the main emulators that come installed with the RetroPie SD image.
+- **Optional:** These are optional packages that are working but aren't included with the RetroPie SD image.
+- **Drivers:** Here you install gamepad drivers like the PS3 or Xboxdrv.
+- **Experimental:** These packages have not been fully tested and may have bugs.
+- **Update All Installed Packages:** This is more or less equivalent to the former method of updating the full binary install.
+ 
+![core packages](https://cloud.githubusercontent.com/assets/10035308/15919781/a18d06ca-2dd1-11e6-9cec-136fc5f0e727.png)
+
+Each section of the manage packages portion of the setup script have the option to install/update all packages and remove all installed packages.
+
+The core components needed for RetroPie to function are:
+- **RetroArch:** Frontend for the libretro api, necessary for most emulators to run.
+- **EmulationStation:** Frontend for sorting and launching all of your games.
+- **RetroPie Menu:** Menu in emulationstation for simpler configuration of your system.
+- **Runcommand:** The runcommand launch menu that assists launching your games with proper configurations see related wiki page [HERE](https://github.com/RetroPie/RetroPie-Setup/wiki/runcommand).
