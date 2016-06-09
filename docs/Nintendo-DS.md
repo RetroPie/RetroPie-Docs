@@ -10,7 +10,7 @@ The Nintendo DS is a handheld video game console that was released by Nintendo i
 
 Note that this is very experimental and lags quite a bit even with an overclocked Rpi 2. But it can be installed through the experimental menu in the [RetroPie Setup Script](Updating RetroPie).
 
-## Emulator: [lr-desmume](https://github.com/libretro/desmume)
+## Emulator: [lr-desmume](https://github.com/libretro/desmume) :small_red_triangle: 
 
 ## ROMS
 Accepted File Extensions: **.nds .bin**
