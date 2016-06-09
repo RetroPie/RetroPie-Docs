@@ -9,7 +9,7 @@ _The Virtual Boy was Nintendo's attempt at virtual reality in 1995 and it was a 
 | :---: | :---: | :---: | :---: | :---: |
 | [lr-beetle-vb](https://github.com/libretro/beetle-vb-libretro) | virtualboy  | .vb | none | /opt/retropie/configs/virtualboy/retroarch.cfg |
 
-## Emulator: [lr-beetle-vb](https://github.com/libretro/beetle-vb-libretro) :small_red_triangle:
+## Emulator: [lr-beetle-vb](https://github.com/libretro/beetle-vb-libretro) 
 
 ## ROMS
 Accepted File Extension: **.vb**
