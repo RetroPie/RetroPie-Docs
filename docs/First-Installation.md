@@ -40,7 +40,7 @@ The simplest way to get most of these components is through a kit such as the [C
 
 ### SD Images
 
-There are currently two versions of RetroPie. There is one version for Raspberry Pi 1/Zero (Model A, A+, B, B+) and there is a version for Raspberry Pi 2/Raspberry Pi 3. 
+There are currently two versions of RetroPie. There is one version for Raspberry Pi 0/1 (Model A, A+, B, B+) and there is a version for Raspberry Pi 2/3. 
 
 Download the SD image for your version of Raspberry Pi from the following page:
 
