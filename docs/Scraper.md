@@ -31,7 +31,10 @@ Make sure to update to the latest version of Retropie-Setup script if youre miss
 
 - **Scraper:** Choose which database to scrape from - thegamesdb is default, but when thegamesdb is down you can specify to use OpenVGBD instead.
 
-- **ROM Names:** Choose what name to display. By default the name from the No-Intro data(includes Region) will be used. You can also choose theGamesDB which is what the builtin scraper uses.
+- **ROM Names:** Choose what name to display:
+  * No-Intro: Rom Name (USA) (Rev 1)
+  * theGamesDB: Rom Name
+  * FileName: Rom Name [U] [!]
 
 - **Gamelist:** Choose to overwrite the existing gamelist.xml or append to it.
 
