@@ -71,6 +71,8 @@ Open a terminal window and type `diskutil list`. A list of all hard disks and pa
 
 # 4.0 DEV setup script
 
+If you update your setup script and realise it doesn't match the format above, the following explains the new layout which makes it easier to add/remove/update your packages.
+
 ![menu](https://cloud.githubusercontent.com/assets/10035308/15919783/a1a676f0-2dd1-11e6-8deb-34f3fed7fa08.png)
 - **Manage Packages:** This is where you will install/update all your emulators, install controller drivers (like the ps3 or xboxdrv) along with ports and other optional packages.
 - **Setup / Tools:** Configure tools, splashscreens, themes, and other configurations here.
