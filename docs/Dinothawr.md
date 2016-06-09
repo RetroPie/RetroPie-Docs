@@ -5,7 +5,7 @@ Dinothawr is a simple puzzle game made by Agnes Heyer and Hans-Kristian Arntzen 
 
 The goal of the game is to save your frozen friends by pushing them onto lava so they can thaw. It mixes gameplay mechanics from Kickle Cubicle and Sokoban with some lovely ambient homegrown music.
 ***
-## Emulator: [libretro-dinothawr](https://github.com/RetroPie/RetroPie-Setup/blob/master/scriptmodules/libretrocores/lr-dinothawr.sh)
+## Emulator: [libretro-dinothawr](https://github.com/libretro/Dinothawr)
 
 ## Controls
 
