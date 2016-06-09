@@ -142,3 +142,8 @@
 * [Speed Issues](Speed-Issues)
 * [Video Issues](Video-Issues)
 * [FAQ](FAQ)
+
+## Developers
+
+ * [Building RetroPie Archives](Building-RetroPie-Archives)
+ * [Shell Style Guide](Shell-Style-Guide)
