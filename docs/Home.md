@@ -22,8 +22,8 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [Using SSH](ssh)
 
 # [**Emulators**](https://github.com/RetroPie/RetroPie-Setup/wiki/Supported-Systems)
-* [3do](3do) [(lr-4do)](https://github.com/libretro/4do-libretro) (EXPERIMENTAL)
-* [Adventure Game Studio](Adventure-Game-Studio) [(AGS)](https://github.com/adventuregamestudio/ags/tree/master/debian) (EXPERIMENTAL)
+* [3do](3do) [(lr-4do)](https://github.com/libretro/4do-libretro) :small_red_triangle:
+* [Adventure Game Studio](Adventure-Game-Studio) [(AGS)](https://github.com/adventuregamestudio/ags/tree/master/debian) 
 * [Amiga](Amiga) [(UAE4ALL2)](https://github.com/RetroPie/uae4all2), [(UAE4ARM)](https://github.com/Chips-fr/uae4arm-rpi/)
 * [Amstrad CPC](Amstrad-CPC) [(CapriceRPI)](https://github.com/KaosOverride/CapriceRPI), [(lr-cap32)](https://github.com/libretro/libretro-cap32.git)
 * [Apple II](Apple-II) [(Linapple)](http://sourceforge.net/projects/linapple/)
@@ -31,7 +31,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [Atari 5200, and Atari 8 bit series: 400, 800, 1200XL, 600XL, 800XL, 130XE, XEGS]      
  (Atari-800-and-5200) [(Atari800)](http://atari800.sourceforge.net/)
 * [Atari 7800](Atari-7800) [(lr-prosystem)](https://github.com/libretro/prosystem-libretro)
-* [Atari Jaguar](Atari-Jaguar) [(lr-virtualjaguar)](https://github.com/libretro/virtualjaguar-libretro) (EXPERIMENTAL)
+* [Atari Jaguar](Atari-Jaguar) [(lr-virtualjaguar)](https://github.com/libretro/virtualjaguar-libretro) :small_red_triangle:
 * [Atari Lynx](Atari-Lynx) [(lr-handy)](https://github.com/libretro/libretro-handy)
 * [Atari ST/STE/TT/Falcon](Atari-ST-STE-TT-Falcon) [(Hatari)](http://hatari.tuxfamily.org/)
 * [CoCo](Coco) [(XRoar)](http://www.6809.org.uk/xroar/)
@@ -52,28 +52,32 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [Macintosh](Macintosh) [(BasiliskII)](http://basilisk.cebix.net/)
 * [MAME](MAME) [(AdvanceMAME)](http://advancemame.sourceforge.net/), [(MAME4ALL-Pi)](https://github.com/RetroPie/mame4all-pi), [(lr-imame4all)](https://github.com/libretro/imame4all-libretro), [(lr-mame2003)](https://github.com/libretro/mame2003-libretro), [(lr-mame2010)](https://github.com/libretro/mame2010-libretro)
 * [MasterSystem](Master-System) [(lr-Genesis-Plus-GX)](https://github.com/libretro/Genesis-Plus-GX), [(lr-picodrive)](https://github.com/libretro/picodrive),  [(Osmose)](https://github.com/RetroPie/osmose-rpi)
+* [MESS](MESS) [(lr-mess)](https://github.com/libretro/MAME.git)
 * [MSX](MSX) [(lr-fmsx)](https://github.com/libretro/fmsx-libretro), [(lr-bluemsx)](https://github.com/libretro/blueMSX-libretro)
 * [Neo Geo](Neo-Geo) [(GnGeo-Pi)](https://github.com/ymartel06/GnGeo-Pi), [(PiFBA)](https://github.com/RetroPie/pifba), [(lr-fba)](https://github.com/libretro/fba-libretro), [(lr-fba-next)](https://github.com/libretro/libretro-fba.git)
 * [Neo Geo Pocket](https://github.com/petrockblog/RetroPie-Setup/wiki/Neo-Geo-Pocket) [(lr-mednafen-ngp)](https://github.com/libretro/beetle-ngp-libretro.git)
 * [Neo Geo Pocket Color](Neo-Geo-Pocket-Color) [(lr-mednafen-ngp)](https://github.com/libretro/beetle-ngp-libretro.git)
 * [Nintendo 64](Nintendo-64) [(Mupen64plus)](https://code.google.com/p/mupen64plus/), [(lr-mupen64plus)](https://github.com/libretro/mupen64plus-libretro)
-* [Nintendo DS](Nintendo-DS) [(lr-desmume)](https://github.com/libretro/desmume) (EXPERIMENTAL)
+* [Nintendo DS](Nintendo-DS) [(lr-desmume)](https://github.com/libretro/desmume) :small_red_triangle:
 * [Nintendo Entertainment System](Nintendo-Entertainment-System) [(lr-fceumm)](https://github.com/libretro/libretro-fceumm), [(lr-nestopia)](https://github.com/libretro/nestopia)
+* [Oric-1/Atmos](Oric) [(oricutron)](https://github.com/pete-gordon/oricutron)
 * [PC](PC) [(DOSBox)](http://www.dosbox.com/), [(rpix86)](http://rpix86.patrickaalto.com/)
 * [PC Engine/TurboGrafx-16](PC-Engine) [(lr-mednafen-pce-fast)](https://github.com/libretro/beetle-pce-fast-libretro) [(lr-beetle-supergrafx)](https://github.com/libretro/beetle-supergrafx-libretro)
 * [PlayStation 1](Playstation-1) [(lr-pcsx-rearmed)](https://github.com/libretro/pcsx_rearmed), [(pcsx-rearmed)](https://github.com/notaz/pcsx_rearmed)
 * [PSP](PSP) [(lr-ppsspp)](https://github.com/libretro/libretro-ppsspp), [(ppsspp)](https://github.com/hrydgard/ppsspp)
-* [ResidualVM](ResidualVM) [(ResidualVM)](https://github.com/residualvm/residualvm) (EXPERIMENTAL)
-* [SAM Coupé](Sam-Coupe) [(SimCoupe)](http://www.simcoupe.org/) (EXPERIMENTAL!)
+* [ResidualVM](ResidualVM) [(ResidualVM)](https://github.com/residualvm/residualvm) :small_red_triangle:
+* [SAM Coupé](Sam-Coupe) [(SimCoupe)](http://www.simcoupe.org/) 
 * [ScummVM](ScummVM) [(ScummVM)](http://scummvm.org/)
 * [Sega 32X](Sega-32X) [(lr-picodrive)](https://github.com/libretro/picodrive)
 * [Sega CD](Sega-CD) [(lr-picodrive)](https://github.com/libretro/picodrive)
-* [Sega Saturn](Saturn) [(lr-yabause)](https://github.com/libretro/yabause) (EXPERIMENTAL!)
+* [Sega Saturn](Saturn) [(lr-yabause)](https://github.com/libretro/yabause) :small_red_triangle:
 * [Sega SG-1000](SG-1000) [(lr-Genesis-Plus-GX)](https://github.com/libretro/Genesis-Plus-GX)
 * [Super Nintendo Entertainment System](Super-Nintendo-Entertainment-System) [(PiSNES)](https://github.com/RetroPie/pisnes), [(snes9x-rpi)](https://github.com/RetroPie/snes9x-rpi), [(lr-armsnes)](https://github.com/rmaz/ARMSNES-libretro), [(lr-catsfc)](https://github.com/libretro/CATSFC-libretro), [(lr-pocketsnes)](https://github.com/libretro/pocketsnes-libretro), [(lr-snes9x-next)](https://github.com/libretro/snes9x-next)
+* [TI-99/4A](TI99) [(ti99sim)](http://www.mrousseau.org/programs/ti99sim/)
+* [TRS-80](TRS-80) [(sdltrs)](https://github.com/RetroPie/sdltrs)
 * [Vectrex](Vectrex) [(lr-vecx)](https://github.com/libretro/libretro-vecx)
 * [Videopac or Odyssey2](VideoPac-or-Odyssey-2) [(lr-o2em)](https://github.com/libretro/libretro-o2em)
-* [Virtual Boy](Virtual-Boy) [(lr-beetle-vb)](https://github.com/libretro/beetle-vb-libretro) (EXPERIMENTAL)
+* [Virtual Boy](Virtual-Boy) [(lr-beetle-vb)](https://github.com/libretro/beetle-vb-libretro)
 * [WonderSwan](https://github.com/petrockblog/RetroPie-Setup/wiki/WonderSwan) [(lr-mednafen-wswan)](https://github.com/libretro/beetle-wswan-libretro)
 * [WonderSwan Color](Wonderswan-Color) [(lr-mednafen-wswan)](https://github.com/libretro/beetle-wswan-libretro)
 * [Zmachine](Zmachine) [(Frotz)](http://frotz.sourceforge.net/)
@@ -81,32 +85,32 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 
 # [**Ports**](Ports)
 
-* [Baldur's Gate](GemRB) [(GemRB)](https://github.com/gemrb/gemrb) (EXPERIMENTAL)
+* [Baldur's Gate](GemRB) [(GemRB)](https://github.com/gemrb/gemrb) 
 * [Cave Story](CaveStory) [(nxengine-libretro)](https://github.com/libretro/nxengine-libretro)
-* [Commander Keen](Commander-Keen) [(Commander Genius)](http://clonekeenplus.sourceforge.net/) (EXPERIMENTAL)
-* [Descent](Descent) [(DXX-Rebirth)](http://www.dxx-rebirth.com/) (EXPERIMENTAL) 
+* [Commander Keen](Commander-Keen) [(Commander Genius)](http://clonekeenplus.sourceforge.net/)
+* [Descent](Descent) [(DXX-Rebirth)](http://www.dxx-rebirth.com/)
 * [DOOM](Doom) [(lr-prboom)](https://github.com/libretro/libretro-prboom), [(ZDOOM)](https://github.com/rheit/zdoom)
 * [Duke Nukem 3D](Duke-Nukem-3D) [(Eduke32)](http://www.eduke32.com/)
-* [Giana's Return](Giana's-Return) (EXPERIMENTAL)
-* [Lincity](Lincity) (EXPERIMENTAL)
-* [Löve](Love) [(Löve)](https://bitbucket.org/rude/love/src) (EXPERIMENTAL)
-* [KODI](KODI) (EXPERIMENTAL)
-* [Marathon](Marathon) [(Aleph One)](https://alephone.lhowon.org/) (EXPERIMENTAL)
-* [Micropolis](Micropolis) (EXPERIMENTAL)
-* [Minecraft Pi Edition](Minecraft) (EXPERIMENTAL)
-* [OpenBOR](OpenBOR) [(OpenBOR)](https://github.com/rofl0r/openbor.git) (EXPERIMENTAL)
-* [OpenTTD](OpenTTD) (EXPERIMENTAL)
-* [OpenTyrian](OpenTyrian) [(OpenTyrian)](https://bitbucket.org/opentyrian/opentyrian/wiki/Home) (EXPERIMENTAL)
-* [OutRun Engine](Cannonball) [(Cannonball)](https://github.com/djyt/cannonball/wiki/Cannonball-Manual) (EXPERIMENTAL)
+* [Giana's Return](Giana's-Return) 
+* [Lincity](Lincity) 
+* [Löve](Love) [(Löve)](https://bitbucket.org/rude/love/src) 
+* [KODI](KODI) 
+* [Marathon](Marathon) [(Aleph One)](https://alephone.lhowon.org/) 
+* [Micropolis](Micropolis) 
+* [Minecraft Pi Edition](Minecraft) :small_red_triangle:
+* [OpenBOR](OpenBOR) [(OpenBOR)](https://github.com/rofl0r/openbor.git)
+* [OpenTTD](OpenTTD) 
+* [OpenTyrian](OpenTyrian) [(OpenTyrian)](https://bitbucket.org/opentyrian/opentyrian/wiki/Home) 
+* [OutRun Engine](Cannonball) [(Cannonball)](https://github.com/djyt/cannonball/wiki/Cannonball-Manual) 
 * [Quake Series](Quake) [(lr-tyrquake)](https://github.com/libretro/tyrquake), [(Tyrquake)](https://github.com/RetroPie/tyrquake), [(ioQuake3)](https://github.com/raspberrypi/quake3)
-* [Rick Dangerous](Xrick) [(Xrick)](http://www.bigorno.net/xrick/) (EXPERIMENTAL)
-* [Prince of Persia](SDLPoP) [(SDLPoP)](https://github.com/NagyD/SDLPoP) (EXPERIMENTAL)
+* [Rick Dangerous](Xrick) [(Xrick)](http://www.bigorno.net/xrick/) 
+* [Prince of Persia](SDLPoP) [(SDLPoP)](https://github.com/NagyD/SDLPoP) 
 * [Super Mario War](Super-Mario-War) [(Super Mario War)](https://github.com/HerbFargus/Super-Mario-War)
-* [SuperTux](SuperTux) (EXPERIMENTAL)
-* [The-Ur-Quan-Masters](The-Ur-Quan-Masters) [(UQM)](http://wiki.uqm.stack.nl/Main_Page) (EXPERIMENTAL)
-* [Warcraft/Starcraft](Stratagus) [(Stratagus)](https://github.com/Wargus/stratagus.git) (EXPERIMENTAL)
-* [Wolfenstein 3D](Wolfenstein-3D) [(Wolf4SDL)](https://github.com/mozzwald/wolf4sdl) (EXPERIMENTAL)
-* [Zelda Engine](Solarus) [(Solarus)](http://www.solarus-games.org/) (EXPERIMENTAL)
+* [SuperTux](SuperTux) 
+* [The-Ur-Quan-Masters](The-Ur-Quan-Masters) [(UQM)](http://wiki.uqm.stack.nl/Main_Page) 
+* [Warcraft/Starcraft](Stratagus) [(Stratagus)](https://github.com/Wargus/stratagus.git) 
+* [Wolfenstein 3D](Wolfenstein-3D) [(Wolf4SDL)](https://github.com/mozzwald/wolf4sdl) 
+* [Zelda Engine](Solarus) [(Solarus)](http://www.solarus-games.org/) 
 
 ## Advanced Configuration
 * [EmulationStation](EmulationStation)
@@ -123,7 +127,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [RetroPie Ubuntu 16.04 LTS x86 Flavor](RetroPie-Ubuntu-16.04-LTS-x86-Flavor)
 * [Install via NOOBS](convert-retropie-sd-card-image-to-noobs-image)
 * [RetroPie install for OSMC with external memory USB Drive](RetroPie-install-for-OSMC-with-external-memory-USB-Drive)
-* [Favorites and Child-friendly EmulationStation](Child-friendly-EmulationStation)
+* [Favorites and Child-friendly EmulationStation](Child-friendly-EmulationStation) :small_red_triangle:
 * [Optimization for Nintendo 64](Optimization for Nintendo 64)
 
 ## Controller Configurations
@@ -133,8 +137,8 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [Setting up wiimotes with classic controllers](Wiimotes-with-classic-controllers)
 * [Setting up a Wii U Pro Controller (debian jessie only)](Setting-up-Wii-U-Pro-controller)
 * [Setting up a Bluetooth controller](Setting-up-a-Bluetooth-controller)
-* [Setting up a Mobile Gamepad](https://github.com/sbidolach/mobile-gamepad) (EXPERIMENTAL)
-* [Use Your Smartphone as a Gamepad!](Virtual-Gamepad) (EXPERIMENTAL)
+* [Setting up a Mobile Gamepad](https://github.com/sbidolach/mobile-gamepad) :small_red_triangle:
+* [Use Your Smartphone as a Gamepad!](Virtual-Gamepad) :small_red_triangle:
 * [Xin-Mo Driver](Xin-Mo-Controller)
 * [Module for GPIO interface for retro game controllers](GPIO-Modules)
 
@@ -148,3 +152,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 
  * [Building RetroPie Archives](Building-RetroPie-Archives)
  * [Shell Style Guide](Shell-Style-Guide)
+
+***
+
+:small_red_triangle: = **experimental**
