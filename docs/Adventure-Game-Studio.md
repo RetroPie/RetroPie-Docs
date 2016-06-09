@@ -10,9 +10,9 @@ _Adventure Game Studio is an open source development tool that is primarily used
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
 | [AGS](https://github.com/adventuregamestudio/ags/tree/master/debian) | ags | .exe | none | mouse |
-## Emulator: [AGS](https://github.com/adventuregamestudio/ags/tree/master/debian) (EXPERIMENTAL)
+## Emulator: [AGS](https://github.com/adventuregamestudio/ags/tree/master/debian) 
 
-Note that this is experimental. It can be installed from the experimental menu of the [RetroPie Setup Script](Updating RetroPie).
+
 
 ## ROMS
 Accepted File Extensions: **.exe**
