@@ -79,6 +79,7 @@
 * [Cave Story](CaveStory)
 * [Commander Keen](Commander-Keen) 
 * [Descent](Descent)  
+* [Dinothawr](Dinothawr)  
 * [DOOM](Doom) 
 * [Duke Nukem 3D](Duke-Nukem-3D)
 * [Giana's Return](Giana's-Return)
