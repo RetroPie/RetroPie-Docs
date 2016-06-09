@@ -8,7 +8,7 @@ _The Sega Saturn is a 32 bit 5th generation home video game console released by 
 | :---: | :---: | :---: | :---: | :---: |
 | [lr-Yabause](https://github.com/libretro/yabause) | saturn  | .bin .iso .mdf | saturn_bios.bin | /opt/retropie/configs/saturn/retroarch.cfg |
 
-## Emulator: [lr-Yabause](https://github.com/libretro/yabause) (NOTE: EXPERIMENTAL!)
+## Emulator: [lr-Yabause](https://github.com/libretro/yabause) :small_red_triangle:
 
 Yabause stands for: Yet Another Buggy And Uncomplete Sega Emulator. It stands by its name. Currently you need to install it from the setup script under experimental builds. a Raspberry Pi 2 is a must. Most if not all games have incredibly choppy sound, are extremely laggy, and quite frankly aren't yet quite playable without a lot of tweaking and a few prayers.
 
