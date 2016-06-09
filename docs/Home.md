@@ -89,6 +89,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [Cave Story](CaveStory) [(nxengine-libretro)](https://github.com/libretro/nxengine-libretro)
 * [Commander Keen](Commander-Keen) [(Commander Genius)](http://clonekeenplus.sourceforge.net/)
 * [Descent](Descent) [(DXX-Rebirth)](http://www.dxx-rebirth.com/)
+* [Dinothawr](Dinothawr) [(lr-dinothawr)](https://github.com/libretro/Dinothawr)
 * [DOOM](Doom) [(lr-prboom)](https://github.com/libretro/libretro-prboom), [(ZDOOM)](https://github.com/rheit/zdoom)
 * [Duke Nukem 3D](Duke-Nukem-3D) [(Eduke32)](http://www.eduke32.com/)
 * [Giana's Return](Giana's-Return) 
