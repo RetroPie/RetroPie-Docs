@@ -50,6 +50,7 @@
 * [Neo Geo](Neo-Geo)
 * [Neo Geo Pocket](Neo-Geo-Pocket)
 * [Neo Geo Pocket Color](Neo-Geo-Pocket-Color)
+* [Oric-1/Atmos](Oric)
 * [PC](PC)
 * [PC Engine/TurboGrafx-16](PC-Engine)
 * [PSP](PSP)
