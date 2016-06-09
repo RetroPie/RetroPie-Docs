@@ -15,7 +15,6 @@
 ## [Emulators](Supported-Systems)
 
 * [3do](3do)
-* [Adventure Game Studio](Adventure-Game-Studio)
 * [Amiga](Amiga)
 * [Amstrad CPC](Amstrad-CPC)
 * [Apple II](Apple-II)
@@ -75,6 +74,7 @@
 
 ## [Ports](Ports)
 
+* [Adventure Game Studio](Adventure-Game-Studio)
 * [Baldur's Gate](GemRB)
 * [Cave Story](CaveStory)
 * [Commander Keen](Commander-Keen) 
