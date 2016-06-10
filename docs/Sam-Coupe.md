@@ -13,7 +13,7 @@ _The SAM Coupé was an 8 bit computer released in 1989._
 | :---: | :---: | :---: | :---: | :---: |
 | [SimCoupe](http://www.simcoupe.org/) | samcoupe  | .dsk .mgt .sbt .sad | none | keyboard /opt/retropie/configs/simcoupe/SimCoupe.cfg |
 
-### Emulator: [SimCoupe](http://www.simcoupe.org/) (EXPERIMENTAL!)
+### Emulator: [SimCoupe](http://www.simcoupe.org/) 
 
 ### ROMS
 
