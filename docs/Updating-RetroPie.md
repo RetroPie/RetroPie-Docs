@@ -81,7 +81,7 @@ If you update your setup script and realise it doesn't match the format above, t
 - **Reboot:** Reboots your system.
 
 ![quick install](https://cloud.githubusercontent.com/assets/10035308/15950393/9dcccd3c-2e6b-11e6-9d42-065b3234edc1.png)
-- **Quick Install:** This will install core and main packages which is equivalent to the basic retropie sd image.
+- **Quick Install:** **If wanting to update select this option**: This will install core and main packages which is equivalent to the basic retropie sd image.
 - **Update All Installed Packages:** This will update all installed packages.
 - **Core:** These are essential packages needed for RetroPie to run. Do not remove them.
 - **Main:** These are the main emulators that come installed with the RetroPie SD image.
