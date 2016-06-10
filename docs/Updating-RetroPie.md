@@ -80,7 +80,9 @@ If you update your setup script and realise it doesn't match the format above, t
 - **Updated Setup Script:** Updates your setup script to the latest version.
 - **Reboot:** Reboots your system.
 
-![manage packages](https://cloud.githubusercontent.com/assets/10035308/15919782/a1a5d8b2-2dd1-11e6-8102-192aeaaf257b.png)
+![quick install](https://cloud.githubusercontent.com/assets/10035308/15950393/9dcccd3c-2e6b-11e6-9d42-065b3234edc1.png)
+- **Quick Install:** This will install core and main packages which is equivalent to the basic retropie sd image.
+- **Update All Installed Packages:** This will update all installed packages.
 - **Core:** These are essential packages needed for RetroPie to run. Do not remove them.
 - **Main:** These are the main emulators that come installed with the RetroPie SD image.
 - **Optional:** These are optional packages that are working but aren't included with the RetroPie SD image.
