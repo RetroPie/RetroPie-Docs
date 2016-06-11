@@ -1,9 +1,7 @@
 ***
 ![Dinothawr Logo](http://wiki.libretro.com/images/2/25/DinothawrTitleScreen.png)
 ***
-Dinothawr is a simple puzzle game made by Agnes Heyer and Hans-Kristian Arntzen (AKA Themaister, original creator of the RetroArch/libretro project).
-
-The goal of the game is to save your frozen friends by pushing them onto lava so they can thaw. It mixes gameplay mechanics from Kickle Cubicle and Sokoban with some lovely ambient homegrown music.
+Dinothawr is a block pushing puzzle game on slippery surfaces. Our hero is a dinosaur whose friends are trapped in ice. Through puzzles it is your task to free the dinos from their ice prison.
 ***
 ## Emulator: [libretro-dinothawr](https://github.com/libretro/Dinothawr)
 
