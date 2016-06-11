@@ -109,11 +109,11 @@ You can update/install and remove packages individually.
 
 When selecting a package there is also a help guide with extra information specific to that package:
 
-![packages](https://cloud.githubusercontent.com/assets/10035308/15983652/320f97e4-2f6c-11e6-967b-c235bb85c5ca.png)
+![individual](https://cloud.githubusercontent.com/assets/10035308/15987047/5414269a-2fd8-11e6-87ff-a0021e244054.png)
 
 **Package Help:**
 
-![pckghelpinfo](https://cloud.githubusercontent.com/assets/10035308/15983618/49bca0fe-2f6b-11e6-9fd8-99d7f946fe72.png)
+![package_help](https://cloud.githubusercontent.com/assets/10035308/15987048/542d760e-2fd8-11e6-909f-827b120dfc34.png)
 
 The Package Help for each emulator should show you:
 - The name of the package
