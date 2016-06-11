@@ -100,7 +100,7 @@ The core components needed for RetroPie to function are:
 - **RetroPie Menu:** Menu in emulationstation for simpler configuration of your system.
 - **Runcommand:** The runcommand launch menu that assists launching your games with proper configurations see related wiki page [HERE](https://github.com/RetroPie/RetroPie-Setup/wiki/runcommand).
 
-#### Updating/Installing individual packages
+### Updating/Installing individual packages
 
 You can update/install and remove packages individually.
 
