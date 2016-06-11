@@ -5,7 +5,7 @@ Nintendo 64 emulation requires at a bare minimum a Raspberry Pi 2 and a Raspberr
 A note on overclocking A raspi 3 on default settings is comparable in speed to an overclocked raspi 2. 
 
 
-Suggested overclock for Raspi 3 for optimal N64 emulation (This to be paired with proper power, cooling, please see https://github.com/retropie/retropie-setup/wiki/Overclocking for further information.
+Suggested overclock for Raspi 3 for optimal N64 emulation (This to be paired with proper power, cooling, please see [this article](https://github.com/retropie/retropie-setup/wiki/Overclocking) for further information.)
 
 ```
 #Overclock Settings
@@ -23,10 +23,9 @@ The run command tool is very important to getting maximum possible performance f
 Firstly it allows for the selection of the most optimal plugin to play games.  For example Rice is the best plugin to play Zelda Games on as without it Majoras Mask will bug during the first few stages.  
 Additionally Glide is the only plugin that will play Killer Instinct Gold at a playable level.   
 It is also crucial to downscale video on games that are having heavy amounts of lag as this allows for less GPU strain and increases the playablity of the game.  So by default I suggest setting all emulators to use mode cea -1 and then define higher video settings to your liking on games that have very high performance ie(Mario Kart, Super Mario 64, etc)
-To learn the community tested optimal settings please view either of the 2 rom compatibility lists located here
-https://docs.google.com/spreadsheets/d/1Sn3Ks3Xv8cIx3-LGCozVFF7wGLagpVG0csWybnwFHXk/edit
-or 
-https://docs.google.com/spreadsheets/d/1Wjzbu90l6eCEW1w6ar9NtfyDBQrSPILQL5MbRSpYSzw/edit?usp=sharing
+To learn the community tested optimal settings please view either of the 2 rom compatibility lists located [here](https://docs.google.com/spreadsheets/d/1Sn3Ks3Xv8cIx3-LGCozVFF7wGLagpVG0csWybnwFHXk/edit) or [here](
+https://docs.google.com/spreadsheets/d/1Wjzbu90l6eCEW1w6ar9NtfyDBQrSPILQL5MbRSpYSzw/edit?usp=sharing).
+
 Top Link tracking more testing of Raspi 3 performance. 
 
 ##CPU-Governor
@@ -68,8 +67,8 @@ You would then place high res texture packs in the directory
 
 /home/pi/.local/share/mupen64plus/hires_texture
 
-Texture packs are available for download here 
-http://textures.emulation64.com/index.php?id=downloads
+Texture packs are available for download [here](
+http://textures.emulation64.com/index.php?id=downloads)
 
 The folder name in that directory must match the core name in the rom header. 
 
