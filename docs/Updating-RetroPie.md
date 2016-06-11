@@ -99,3 +99,17 @@ The core components needed for RetroPie to function are:
 - **EmulationStation:** Frontend for sorting and launching all of your games.
 - **RetroPie Menu:** Menu in emulationstation for simpler configuration of your system.
 - **Runcommand:** The runcommand launch menu that assists launching your games with proper configurations see related wiki page [HERE](https://github.com/RetroPie/RetroPie-Setup/wiki/runcommand).
+
+#### Updating/Installing individual packages
+
+You can update/install and remove packages individually.
+
+When selecting a package there is also a help guide with extra information specific to that package:
+
+![packages](https://cloud.githubusercontent.com/assets/10035308/15983652/320f97e4-2f6c-11e6-967b-c235bb85c5ca.png)
+![pckghelpinfo](https://cloud.githubusercontent.com/assets/10035308/15983618/49bca0fe-2f6b-11e6-9fd8-99d7f946fe72.png)
+
+The Package Help for each emulator should show you:
+- ROM extensions
+- ROM folder
+- BIOS file and folder if applicable
