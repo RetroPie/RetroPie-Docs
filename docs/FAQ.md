@@ -3,7 +3,7 @@
 - [Where did the desktop go?](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#where-did-the-desktop-go)
 - [Why does shut down and reboot take ages?](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#why-does-shut-down-and-reboot-take-ages)
 - [How do I hide the boot text?](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#how-do-i-hide-the-boot-text)
-- [How do I boot to the desktop or Kodi](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ/_edit#how-do-i-boot-to-the-desktop-or-kodi)
+- [How do I boot to the desktop or Kodi](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ/#how-do-i-boot-to-the-desktop-or-kodi)
 - [How do I change which buttons to press to exit an emulator with a controller?](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#how-do-i-change-which-buttons-to-press-to-exit-an-emulator-with-a-controller)
 - [Does Super Mario All Stars work?](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#does-super-mario-all-stars-work)
 - [How do I extend the available space when upgrading to a larger SD card](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#how-do-i-extend-the-available-space-when-upgrading-to-a-larger-sd-card)
