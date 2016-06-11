@@ -1,6 +1,6 @@
 ##Hardware and hardware setup. 
 
-Nintendo 64 emulation requires at a bare minimum a Raspberry Pi 2 and a Raspberry  Pi 3 is highly suggested do to it's increased performance. 
+Nintendo 64 emulation requires at a bare minimum a Raspberry Pi 2 and a Raspberry  Pi 3 is highly suggested due to it's increased performance. 
 
 A note on overclocking A raspi 3 on default settings is comparable in speed to an overclocked raspi 2. 
 
