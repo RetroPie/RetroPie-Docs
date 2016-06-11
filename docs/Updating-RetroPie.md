@@ -120,4 +120,4 @@ The Package Help for each emulator should show you:
 - The name of the package
 - ROM extensions
 - ROM folder
-- BIOS file and folder if applicable
+- BIOS filename and folder if applicable
