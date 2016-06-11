@@ -80,6 +80,8 @@ If you update your setup script and realise it doesn't match the format above, t
 - **Updated Setup Script:** Updates your setup script to the latest version.
 - **Reboot:** Reboots your system.
 
+**Manage Packages**
+
 ![quick install](https://cloud.githubusercontent.com/assets/10035308/15950393/9dcccd3c-2e6b-11e6-9d42-065b3234edc1.png)
 - **Quick Install:** **If wanting to update select this option**: This will install core and main packages which is equivalent to the basic retropie sd image.
 - **Update All Installed Packages:** This will update all installed packages.
@@ -90,6 +92,8 @@ If you update your setup script and realise it doesn't match the format above, t
 - **Experimental:** These packages have not been fully tested and may have bugs.
 - **Update All Installed Packages:** This is more or less equivalent to the former method of updating the full binary install.
  
+**Core Packages**
+
 ![core packages](https://cloud.githubusercontent.com/assets/10035308/15919781/a18d06ca-2dd1-11e6-9cec-136fc5f0e727.png)
 
 Each section of the manage packages portion of the setup script have the option to install/update all packages and remove all installed packages. You can also update/install and remove packages individually.
@@ -107,6 +111,9 @@ You can update/install and remove packages individually.
 When selecting a package there is also a help guide with extra information specific to that package:
 
 ![packages](https://cloud.githubusercontent.com/assets/10035308/15983652/320f97e4-2f6c-11e6-967b-c235bb85c5ca.png)
+
+**Package Help:**
+
 ![pckghelpinfo](https://cloud.githubusercontent.com/assets/10035308/15983618/49bca0fe-2f6b-11e6-9fd8-99d7f946fe72.png)
 
 The Package Help for each emulator should show you:
