@@ -90,7 +90,6 @@ If you update your setup script and realise it doesn't match the format above, t
 - **Optional:** These are optional packages that are working but aren't included with the RetroPie SD image.
 - **Drivers:** Here you install gamepad drivers like the PS3 or Xboxdrv.
 - **Experimental:** These packages have not been fully tested and may have bugs.
-- **Update All Installed Packages:** This is more or less equivalent to the former method of updating the full binary install.
  
 **Core Packages**
 
