@@ -117,6 +117,7 @@ When selecting a package there is also a help guide with extra information speci
 ![pckghelpinfo](https://cloud.githubusercontent.com/assets/10035308/15983618/49bca0fe-2f6b-11e6-9fd8-99d7f946fe72.png)
 
 The Package Help for each emulator should show you:
+- The name of the package
 - ROM extensions
 - ROM folder
 - BIOS file and folder if applicable
