@@ -2,6 +2,8 @@
 - [Why can't I SSH as root anymore?](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#why-cant-i-ssh-as-root-anymore)
 - [Where did the desktop go?](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#where-did-the-desktop-go)
 - [Why does shut down and reboot take ages?](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#why-does-shut-down-and-reboot-take-ages)
+- [How do I hide the boot text?](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#how-do-i-hide-the-boot-text)
+- [How do I boot to the desktop or Kodi](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ/_edit#how-do-i-boot-to-the-desktop-or-kodi)
 - [How do I change which buttons to press to exit an emulator with a controller?](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#how-do-i-change-which-buttons-to-press-to-exit-an-emulator-with-a-controller)
 - [Does Super Mario All Stars work?](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#does-super-mario-all-stars-work)
 - [How do I extend the available space when upgrading to a larger SD card](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#how-do-i-extend-the-available-space-when-upgrading-to-a-larger-sd-card)
@@ -9,7 +11,6 @@
 - [Is there another way to set up the gamepad for use, e.g., within the snes emulator?](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#is-there-another-way-to-set-up-the-gamepad-for-use-eg-within-the-snes-emulator)
 - [The PSX emulator reports no BIOS found. What do I do?](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#the-psx-emulator-reports-no-bios-found-what-do-i-do)
 - [Which memory split should I use?](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#which-memory-split-should-i-use)
-- [How do I hide the boot text?](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#how-do-i-hide-the-boot-text)
 - [Why aren't my in-game saves working properly?](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#why-arent-my-in-game-saves-working-properly)
 - [Why Can't I Insert Coins in Arcade Emulators?](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#why-cant-i-insert-coins-in-arcade-emulators)
 
@@ -91,6 +92,34 @@ An option has been added starting with RetroPie 3.7 to decide whether or not you
 - **Save Metadata On Exit:** If on, it will read and write all the info for your roms which can lead to long boot and shutdown times if you have large romsets. If you turn it off it will not write those changes which means it also will not write how many times you've played a game, any new game scrapes, etc. This is on by default.
 
 - **Parse Gamelists Only:** If on, it will only read the roms you have scraped, so if you add any new roms it will not look for them unless you turn this back off. it is off by default.
+
+### How do I hide the boot text?
+
+**NOTE that you should be comfortable with editing files in Linux as any wrong edits on the following file can break your boot sequence requiring a reimage of your SD card!**
+
+`sudo nano /boot/cmdline.txt`
+
+change `console=tty1` to `console=tty3` 
+
+And add `quiet loglevel=3 logo.nologo` at the end.
+
+**make sure it is all on the same line!!!** 
+
+The logo.nologo option is what turns off the raspberries on boot.
+
+You can also disable the rainbow splash at the beginning (not to be confused with the underpowered rainbow square the appears in the top right corner of your screen indicating you have an insufficient power supply)
+
+Add `disable_splash=1` in `/boot/config.txt`
+
+### How do I boot to the desktop or Kodi
+
+![autostart](https://cloud.githubusercontent.com/assets/10035308/15987124/7699dbcc-2fda-11e6-8a1f-902e3177d782.png)
+
+- **Start EmulationStation at Boot:** Boots into EmulationStation.
+- **Start Kodi at Boot:** Boots into Kodi- if you exit Kodi you will be returned to EmulationStation.
+- **Manually Edit /opt/retropie/configs/autostart.sh:** you can manually add other programs to start on boot.
+- **Boot to text console (autologin):** Boots into the terminal.
+- **Boot to Desktop:** If you have a desktop environment installed like LXDE this will boot into the desktop.
 
 ### How do I change which buttons to press to exit an emulator with a controller?
 
@@ -188,24 +217,6 @@ From [ToadKing](http://www.raspberrypi.org/phpBB3/viewtopic.php?p=112241#p112241
 > If you're on 224/32, you can't run it (i.e., RetroArch) on a HD display. You'll have to use the 192/64 split at least.
 
 A Raspberry Pi B/B+/2 is highly recommended. The GPU should have at least 256MB RAM. If you have a Raspberry Pi A/A+  it is not possible to scrape games and use system themes. 
-
-### How do I hide the boot text?
-
-**NOTE that you should be comfortable with editing files in Linux as any wrong edits on the following file can break your boot sequence requiring a reimage of your SD card!**
-
-`sudo nano /boot/cmdline.txt`
-
-change `console=tty1` to `console=tty3` 
-
-And add `quiet loglevel=3 logo.nologo` at the end.
-
-**make sure it is all on the same line!!!** 
-
-The logo.nologo option is what turns off the raspberries on boot.
-
-You can also disable the rainbow splash at the beginning (not to be confused with the underpowered rainbow square the appears in the top right corner of your screen indicating you have an insufficient power supply)
-
-Add `disable_splash=1` in `/boot/config.txt`
 
 ### Why aren't my in-game saves working properly?
 
