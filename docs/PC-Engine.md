@@ -13,6 +13,7 @@ _The TurboGrafx-16 Entertainment SuperSystem, originally known in Japan as the P
 ## Emulator: [lr-beetle-pce-fast](https://github.com/libretro/beetle-pce-fast-libretro), [lr-beetle-supergrafx](https://github.com/libretro/beetle-supergrafx-libretro)
 
 ## ROMS
+
 Accepted File Extensions: **.pce**
 
 Place your PC Engine/ TurboGrafx-16 ROMs in
@@ -24,10 +25,13 @@ Place your PC Engine/ TurboGrafx-16 ROMs in
 
 The BIOS file necessary is called: **syscard3.pce** 
 
-Place your the syscard3.pce file in 
+Place your the syscard3.pce file in
+
 ```
 /home/pi/RetroPie/BIOS
 ```
+
+A working BIOS file md5sum is `ff1a674273fe3540ccef576376407d1d`
 
 ## Controls
 
@@ -40,6 +44,36 @@ Add custom retroarch controls to the retroarch.cfg file in
 For more information on custom RetroArch controls see: [RetroArch Configuration](https://github.com/petrockblog/RetroPie-Setup/wiki/RetroArch-Configuration)
 
 ![nec_turbografx16_diagram](https://cloud.githubusercontent.com/assets/10035308/10822284/1bde9cc4-7e1c-11e5-9683-c29b5a5a49e8.png)
+
+## PC Engine CD
+
+It is important that the image file (usually `.bin`) and the CUE file (`.cue`) match.
+
+CUE files are just text files containing a description of the CD. If you have files named like:
+
+~~~
+Akumajou Dracula X.bin
+Akumajou Dracula X.cue
+~~~
+
+then ensure the first line of the CUE file contains:
+
+~~~
+FILE "Akumajou Dracula X.bin" BINARY
+~~~
+
+Any of the following are wrong and will not work:
+
+~~~
+### extension has incorrect case
+FILE "Akumajou Dracula X.BIN" BINARY
+
+### file name has incorrect case
+FILE "AKUMAJOU DRACULA X.bin" BINARY
+
+### does not match the actual file name
+FILE "Akumajou_Dracula_X_-_Chi_no_Rinne_(NTSC-J)_[KMCD3005].bin" BINARY
+~~~
 
 ### Advanced Configuration:
 
