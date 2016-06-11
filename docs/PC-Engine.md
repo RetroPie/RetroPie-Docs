@@ -7,8 +7,8 @@ _The TurboGrafx-16 Entertainment SuperSystem, originally known in Japan as the P
 
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
-| [lr-beetle-pce-fast](https://github.com/libretro/beetle-pce-fast-libretro) | pcengine  | .pce | syscard3.pce | /opt/retropie/configs/pcengine/retroarch.cfg |
-| [lr-beetle-supergrafx](https://github.com/libretro/beetle-supergrafx-libretro) | pcengine  | .pce | syscard3.pce | /opt/retropie/configs/pcengine/retroarch.cfg |
+| [lr-beetle-pce-fast](https://github.com/libretro/beetle-pce-fast-libretro) | pcengine  | .pce .cue .zip | syscard3.pce | /opt/retropie/configs/pcengine/retroarch.cfg |
+| [lr-beetle-supergrafx](https://github.com/libretro/beetle-supergrafx-libretro) | pcengine  | .pce .cue .zip | syscard3.pce | /opt/retropie/configs/pcengine/retroarch.cfg |
 
 ## Emulator: [lr-beetle-pce-fast](https://github.com/libretro/beetle-pce-fast-libretro), [lr-beetle-supergrafx](https://github.com/libretro/beetle-supergrafx-libretro)
 
