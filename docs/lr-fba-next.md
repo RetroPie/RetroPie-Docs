@@ -19,7 +19,14 @@ The dipswitches available will vary from game-to-game. Any changes made will be 
 
 ## Button rebinding
 
-lr-fba-next supports a useful feature where you can rebind the keys for indidual games, without impacting the internal libretro hotkey macros (select & R = quicksave, etc). These rebinding options are accessed and saved in the same way as the dipswitches above.
+lr-fba-next supports a useful feature where you can rebind the keys for individual games, without impacting the internal libretro hotkey macros (select & R = quicksave, etc). These rebinding options are accessed and saved in the same way as the dipswitches above.
+
+## Samples
+
+Some sound effects in a few older (typically pre-1986) arcade games are difficult/impossible to emulate. Instead, audio clips of these effects can be downloaded and automatically played at the appropriate times. FBA additionally supports the use of some higher quality samples such as the CD audio rips from the console version of Donpachi. Samples are often included in a romset, or you can find some at http://www.progettosnaps.net/samples/. Place them into:
+```
+/home/pi/RetroPie/BIOS/fba/samples/
+```
 
 ## Feature requests
 
