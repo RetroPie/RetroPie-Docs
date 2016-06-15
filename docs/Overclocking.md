@@ -85,7 +85,7 @@ Grab you a 5v 2500 mA adapter [This](http://www.amazon.com/gp/product/B011BE929S
 
 #### Proper Cooling
 
-Heat will probably be an issue with 3's luckily it is easy to overcome. Pick you up a set of [heatsinks](http://www.amazon.com/gp/product/B00HPQGTI4),  keep in mind that there are 3 core areas on the pi biggest chip on the top is cpu the smaller one is the ethernet/usb controller and on the bottom is the 1GB LPDDR2 memory module. 
+Heat will probably be an issue with 3's luckily it is easy to overcome. Pick you up a set of [heatsinks](http://www.amazon.com/gp/product/B00HPQGTI4),  keep in mind that there are 3 core areas on the pi biggest chip on the top is SOC (CPU+GPU) the smaller one is the ethernet/usb controller and on the bottom is the 1GB LPDDR2 memory module. 
 
 The stock heatsinks you order have some adhesive on them it is not thermal paste. I would definitely recommend purchasing some thermal adhesive to create the best bond between your heatsink and cores. 
 [This](http://www.amazon.com/gp/product/B0087X725S) is what I picked up then i used alcohol to completely clean the heatsinks before applying the thermal expoxy.
