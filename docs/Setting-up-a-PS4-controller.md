@@ -37,9 +37,9 @@ _The upgrade will take some time. I like to reboot after I've upgraded._
 
 ##Now Let's Test
 
-    ds4drv --led 000008
+    ds4drv --hidraw --led 000008
 
-_Alternitevely you can just do 'ds4drv'. I added '--led 000008' for a less bright led on the controller._
+_Alternitevely you can just do 'ds4drv --hidraw'. I added '--led 000008' for a less bright led on the controller._
 
 
 You will need to put the PS4 controller into pairing mode. You can do this by holding down the SHARE button & the PS button at the same time. It will starting flickering. It takes mine about 5 seconds to connect.
@@ -52,19 +52,19 @@ Once your controller connects go ahead and exit. CNTL + C to stop the test..
     
 And just after “# By default this script does nothing.” we add:
 
-    /usr/local/bin/ds4drv --led 000008 &
+    /usr/local/bin/ds4drv --hidraw --led 000008 &
 
 _Again you can leave out the '--led 000008' if you want the brighter blue lit up on the controllers LED_
 
 It will look like:
 
     # By default this script does nothing.
-    /usr/local/bin/ds4drv --led 000008 &
+    /usr/local/bin/ds4drv --hidraw --led 000008 &
     exit 0
 
 ##Now Reboot Your Pi3
 
-Make sure the controller is off. Once the Pi3 completely boots up and shows the window that says no controllers are detected go ahead put the PS4 into pairing mode again by holding down the SHARE button & the PS button. You will need to do this every time you want to connect the controller. Also you will have to setup the controller the 1st time you get to the first menu(Just Once). You can turn the controller off by holding down the PS button for about 10 seconds. You can then turn it back on any time you want. ( At least I can)
+Make sure the controller is off. Once the Pi3 completely boots up and shows the window that says no controllers are detected go ahead put the PS4 into pairing mode again by holding down the SHARE button & the PS button. You will have to setup the controller the 1st time you get to the first menu(Just Once). You can turn the controller off by holding down the PS button for about 10 seconds. You can then turn it back on any time you want.
 
 ##Hope This Helps
 
