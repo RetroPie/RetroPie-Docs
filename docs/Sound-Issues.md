@@ -68,6 +68,8 @@ I had to go into the `/boot/config.txt` Raspberry PI config file and add in the 
 I didn't change any other sound parameters in the config files. 
 
 ***
+### White Noise Fix
+
 To remove hiss or static or white noise when using the 3.5mm headphone jack:
 
 1. Run at the command line: `sudo nano /boot/config.txt` and insert at the bottom of the file: `disable_audio_dither=1`
