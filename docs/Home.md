@@ -135,6 +135,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [Setting up an XBox 360 Controller](Setting-up-the-XBox360-controller)
 * [Setting up a PS3 controller](Setting-up-a-PS3-controller)
 * [Setting up an N64 controller](Setting-up-an-N64-controller)
+* [Logitech controllers](Logitech-controllers)
 * [Setting up wiimotes with classic controllers](Wiimotes-with-classic-controllers)
 * [Setting up a Wii U Pro Controller (debian jessie only)](Setting-up-Wii-U-Pro-controller)
 * [Setting up a Bluetooth controller](Setting-up-a-Bluetooth-controller)
