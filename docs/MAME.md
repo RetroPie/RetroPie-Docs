@@ -85,7 +85,7 @@ Place your lr-Mame2003 ROMs in
 /home/pi/RetroPie/roms/mame-libretro
 ```
 
-[Romset Used: **.78**](https://archive.org/details/MAME0.37b5-MAME2000-ROMSet)
+[Romset Used: **.78**](https://archive.org/details/MAME0.78-MAME2003-ROMs-CHDs-Samples)
 
 Total Games Emulated: 4705 (includes clones etc...)
 
