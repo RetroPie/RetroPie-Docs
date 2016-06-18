@@ -22,7 +22,7 @@ DirectInput is the older input mode, first introduced with DirectX in 1995. Thes
 
 It is not possible to switch D/X mode in the middle of use. EmulationStation must be quit and restarted, or the Pi rebooted, so that EmulationStation realises a different controller type is plugged in and configures the system appropriately.
 
-As of RetroPie 3.8, the controllers don't seem to work in DirectInput mode anymore. They still work fine in XInput mode.
+As of RetroPie 3.8, using two controllers in DirectInput mode requires use of the "multi input" USB HID quirk. This is added by editing `/boot/cmdline.txt` and appending `usbhid.quirks=0x046d:0xc219:0x40` to the existing line (do not make a new line) then save the file and reboot.
 
 ## Configuration
 
