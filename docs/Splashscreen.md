@@ -2,7 +2,7 @@
 
 The Splash Screen Menu can be accessed from the RetroPie Menu in EmulationStation or through the setup script under option 3. 
 
-![splashscreen menu](https://cloud.githubusercontent.com/assets/10035308/10272845/3c1d19d0-6ae3-11e5-9616-9067a36ae102.png)
+![splashes](https://cloud.githubusercontent.com/assets/10035308/16179686/82420dcc-362a-11e6-963d-13d4471f813e.png)
 
 - **Choose RetroPie Splashscreen:** This option allows you to choose a splashscreen that has been installed on RetroPie by default. See the gallery of images [**HERE**](https://github.com/RetroPie/retropie-splashscreens/wiki)
 
@@ -16,7 +16,9 @@ The Splash Screen Menu can be accessed from the RetroPie Menu in EmulationStatio
 
 - **Manually Edit Splashscreen List:** You can edit the splashscreen.list manually to point to multiple images to be played as a slideshow (you'll use tab to get out of edit mode)
 
-- **Update RetroPie Splashscreens:** This gives you the option to update the splashscreens as new images are added to the [splashscreen repo](https://github.com/RetroPie/retropie-splashscreens)
+- **Update RetroPie Splashscreens:** This updates the latest default splashscreens included with the RetroPie image from [retropie-splashscreens repo](https://github.com/RetroPie/retropie-splashscreens)
+
+- **Download RetroPie-Extra Splashscreens:** You can download a mass of user created splashscreens from the [retropie-splashscreens-extra](https://github.com/HerbFargus/retropie-splashscreens-extra) repository. Splashes will be placed in `/home/pi/RetroPie/splashscreens/retropie-extra`
 
 ## Video Splash Screens
 
