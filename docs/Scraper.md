@@ -7,25 +7,18 @@ Scraping is a way to get metadata and boxart for your games from the internet. T
 
 Steven Selph's scraper is the simplest and best way of scraping roms (provided that the systems are supported.) It can be installed and used from the setup menu using the following steps:
 
-1) Quit EmulationStation and type on the command line
+1) Quit EmulationStation (from the start menu or press F4) and type on the command line
 ```
 sudo /home/pi/RetroPie-Setup/retropie_setup.sh
 ```
 
-2) In the "Choose an option" menu choose item 3, "Setup / Configuration (to be used post install)"
+2) Choose Setup
 
-3) In the "Choose task" menu choose item 821, "Scraper for EmulationStation by Steven Selph"
+3) Select Scraper
 
 4) Wait for the installation to complete (it may take some time as it has to install various software libraries)
 
-**Note that before you can use this scraper you have to exit EmulationStation by pressing f4 or quit from the start menu so that the gamelists are created properly. It may take some time for the xml files to build. This will also only work if your roms are located in the local roms folder and not on an external device.**
-
-To use the scraper at any time, you run the setup script from the terminal again.
-
-**Note that if you are remotely running this script you must be logged in with pi otherwise it will confuse the scraper.**
-```
-sudo /home/pi/RetroPie-Setup/retropie_setup.sh
-```
+**Note that if you are remotely running this script you must be logged in with pi otherwise it will confuse the scraper. It may take some time for the xml files to build. This will also only work if your roms are located in the local roms folder and not on an external device.**
 
 Make sure to update to the latest version of Retropie-Setup script if youre missing any options mentioned below!
 
