@@ -139,7 +139,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script fo
 * [Setting up wiimotes with classic controllers](Wiimotes-with-classic-controllers)
 * [Setting up a Wii U Pro Controller (debian jessie only)](Setting-up-Wii-U-Pro-controller)
 * [Setting up a Bluetooth controller](Setting-up-a-Bluetooth-controller)
-* [Setting up a Mobile Gamepad](https://github.com/sbidolach/mobile-gamepad) :small_red_triangle:
+* [Setting up a Mobile Gamepad](Mobile-Gamepad) :small_red_triangle:
 * [Use Your Smartphone as a Gamepad!](Virtual-Gamepad) :small_red_triangle:
 * [Xin-Mo Driver](Xin-Mo-Controller)
 * [Module for GPIO interface for retro game controllers](GPIO-Modules)
