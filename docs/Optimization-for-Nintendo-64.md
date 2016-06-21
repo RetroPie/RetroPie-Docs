@@ -118,9 +118,9 @@ These are all experimental settings I am playing with
 
 Glide
 
+```
 # Size of texture cache in megabytes. Good value is VRAM*3/4
 CacheSize = 900
-
 
 # Enable N64 depth compare instead of OpenGL standard one. Experimental.
 EnableN64DepthCompare = True
@@ -130,15 +130,9 @@ txHiresEnable = True
 # Allow to use alpha channel of high-res texture fully.
 txHiresFullAlphaChannel = True
 
-
-
 # Save texture cache to hard disk.
 txSaveCache = True
 This is currently set to True Investigating if setting to false will overload ram or not If texture cache is 500 by default is there enough overhead on ram to go with this setting.   
-
-
-
-
 
 Rice Settings
 # Use a faster algorithm to speed up texture loading and CRC computation
@@ -148,8 +142,6 @@ FastTextureLoading = True
 DoubleSizeForSmallTxtrBuf = True
 A quality improver  need to verify any performance hit is negligible
 
-
-
 # N64 Texture Memory Full Emulation (may fix some games, may break others)
 FullTMEMEmulation = False
 What games does this fix?  Which ones does it break?
@@ -158,6 +150,7 @@ What games does this fix?  Which ones does it break?
 WideScreenHack = True
 
 Fix aspect ratio?
+```
 
 
 
