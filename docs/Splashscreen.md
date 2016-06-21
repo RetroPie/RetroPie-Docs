@@ -22,7 +22,7 @@ The Splash Screen Menu can be accessed from the RetroPie Menu in EmulationStatio
 
 ## Video Splash Screens
 
-Starting with RetroPie 3.1 there is now support for video splash screens. A few notes:
+A few notes:
 
 - you add the video to a folder just like you would a regular splashscreen image and select that folder from the splashscreen menu as described above
 
