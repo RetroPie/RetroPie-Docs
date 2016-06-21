@@ -1,9 +1,5 @@
 # Runcommand Launch Menu
 
-|Version|
-|---|
-|3.7|
-
 Each time you load a ROM there is an option to open what is called the Runcommand Launch Menu. This is accessed by pressing any key on the keyboard or js0 (button 0 on your joypad- it will vary depending on the gamepad used)
 
 
@@ -24,7 +20,7 @@ In the past there were multiple rom folders for each emulator but they got confu
 
 ### Configuring Runcommand:
 
-Starting with RetroPie 3.5 you can enable and disable different functions of the Runcommand Launch Menu. This is configured via RetroPie-Setup or via the runcommand configuration option in the RetroPie area of Emulation Station. 
+You can enable and disable different functions of the Runcommand Launch Menu. This is configured via RetroPie-Setup or via the runcommand configuration option in the RetroPie area of Emulation Station. 
 
 ![runcommand](https://cloud.githubusercontent.com/assets/10035308/12870161/2608ac8a-ccf5-11e5-8d78-97cf5650cee4.png)
 
