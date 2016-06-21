@@ -54,11 +54,13 @@ The script is executed with
 ```
 The screen should look like this then:
 
-![restropiesetupscript](https://cloud.githubusercontent.com/assets/10035308/10266202/c39fd7e0-6a10-11e5-80b1-74b642fe8441.png)
+![4 0beta](https://cloud.githubusercontent.com/assets/10035308/16218285/f06f3ba8-3738-11e6-9ccc-be601172713b.png)
 
 ### Section 2.2: Installation
 
-For the first installation, we choose the source-based installation, which takes 1 hour. We start the installation simply by pressing ENTER.
+**Manage Packages >> Quick Install**
+
+This will install the core and main packages which are equivalent to what is provided with the RetroPie SD image.
 
 Now, you have to copy your rom files into the ROMs directory. If you followed the steps above the main directory for all ROMs is ~/RetroPie/roms (or /home/pi/RetroPie/roms, which is the same here). In this directory there is a subdirectory for every emulated system, e.g., nes, snes, megadrive. Attention has to be taken for the extensions of the ROM files. All the information needed for each system is detailed in this wiki (see wiki home page or sidebar for systems)
 
@@ -66,7 +68,7 @@ EmulationStation can be run from the terminal by typing emulationstation in the 
 
 ### Section 2.3: Configuration
 
-After a source based installation themes and retropie menu are missing and autorun is not setup. Enter RetroPie-Setup again and select option `3 Setup / Configuration (to be used post install`. Select an emulationstation theme, install retropie menu and enable autostart as you like.
+You can go into Setup / Configuration and enable autostart as you like.
 
 ## Section 3: FAQs
 
