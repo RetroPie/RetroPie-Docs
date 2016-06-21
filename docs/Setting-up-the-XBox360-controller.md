@@ -1,6 +1,6 @@
 ## Automatic Configuration (Easiest)
 
-Access the [RetroPie Setup Script](Updating-RetroPie) and navigate to **Setup / Configuration>>Xbox / Xbox 360 gamepad driver** 
+Access the [RetroPie Setup Script](Updating-RetroPie) and navigate to **Manage Packages >> Manage Driver Packages >> xboxdrv** 
 
 ![xboxdrv](https://cloud.githubusercontent.com/assets/10035308/12218229/d397607e-b6d6-11e5-8a99-f3106d60425a.png)
 
