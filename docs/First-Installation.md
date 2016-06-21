@@ -98,7 +98,7 @@ See the following diagrams for reference:
 
 ### Default Hotkeys
 
-Hotkeys enable you to press a combination of buttons to access functions such as saving, loading, and exiting emulators. The following chart shows the default hotkey combinations. By default, the hotkey is select so that means you hold down select while pressing another button to execute a command.
+Hotkeys enable you to press a combination of buttons to access functions such as saving, loading, and exiting emulators. The following chart shows the default hotkey combinations. By default, the hotkey is select so that means you hold down select while pressing another button to execute a command. **Note** that hotkeys are only specific to the retroarch/libretro based emulators.
 
 Hotkeys | Action
 | :---: | :---: |
@@ -109,37 +109,6 @@ Select+Right | Input State Slot Increase
 Select+Left | Input State Slot Decrease 
 Select+X | RGUI Menu
 Select+B | Reset
-
-For those that are interested, the retroarch controller config that is created after you've followed the aforementioned steps is located in: 
-```
-/opt/retropie/configs/all/retroarch-joypads
-``` 
-the following is an example of a SNES controller config- your configurations may be a bit different.
-
-```
-input_device = "USB gamepad           "
-input_driver = "udev"
-input_r_btn = "5"
-input_save_state_btn = "5"
-input_start_btn = "9"
-input_exit_emulator_btn = "9"
-input_l_btn = "4"
-input_load_state_btn = "4"
-input_up_axis = "-1"
-input_a_btn = "1"
-input_b_btn = "2"
-input_reset_btn = "2"
-input_down_axis = "+1"
-input_right_axis = "+0"
-input_state_slot_increase_axis = "+0"
-input_x_btn = "0"
-input_menu_toggle_btn = "0"
-input_select_btn = "8"
-input_enable_hotkey_btn = "8"
-input_y_btn = "3"
-input_left_axis = "-0"
-input_state_slot_decrease_axis = "-0"
-```
 
 ## EmulationStation
 
@@ -218,6 +187,6 @@ After you've added your roms you need to restart emulationstation in order for t
 
 - see the rest of the [wiki](https://github.com/RetroPie/RetroPie-Setup/wiki) for more detailed information on individual emulators, advanced settings etc. If you still can't figure it out, the RetroPie community is very helpful on the [forum](https://retropie.org.uk/forum/). 
 
-- **The RetroPie Project is primarily maintained by a few developers who develop the project in their free time. If you have found the RetroPie project useful please consider donating to the project [here.](https://retropie.org.uk/donate/). As you become more familiar with RetroPie, pay it forward by helping others on the forum. The RetroPie Project is what it is today because of the many contributions of the community.**
+- **The RetroPie Project is primarily maintained by a few developers who develop the project in their free time. If you have found the RetroPie project useful please consider donating to the project [here](https://retropie.org.uk/donate/). As you become more familiar with RetroPie, pay it forward by helping others on the forum. The RetroPie Project is what it is today because of the many contributions of the community.**
 
 THANK YOU!
