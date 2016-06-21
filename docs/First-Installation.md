@@ -21,7 +21,7 @@ If you hate reading then see this video. Otherwise read on!
 " target="_blank"><img src="https://i.ytimg.com/vi/xvYX_7iRRI0/maxresdefault.jpg" 
 alt="Configuration Video" width="1280" height="400" border="10" /></a>
 
-## Hardware Needed:
+## [Hardware Needed:](https://retropie.org.uk/documentation/building-your-own-retropie-machine/)
 
  * Raspberry Pi (A, A+, B, B+, 2, Zero, or 3) - for best performance use a **Raspberry Pi 3 Model B**
  * Raspberry Pi Case (optional but recommended)
@@ -146,28 +146,26 @@ input_state_slot_decrease_axis = "-0"
 | **Where are the systems?**|
 | :---: | 
 **When you first see EmulationStation you may wonder why you don't see systems like the SNES or Game Boy- worry not- they are installed on the system, roms just need to be added to their respective rom folders before they will become visible. Transferring roms are described in the following steps.**|
-|![firstboot](https://cloud.githubusercontent.com/assets/10035308/12865816/d4c76dfa-cc74-11e5-9a1f-922a6d830d49.png)|
+|![firstboot](https://cloud.githubusercontent.com/assets/10035308/16217874/c6bbdb3a-3734-11e6-998f-8cc714a320ce.png)|
 ## Configuring Wifi
 
 If you wish to use wifi to transfer roms over the network rather than a USB stick or Ethernet cable you'll need to setup your wifi- which can also be done from the Retropie menu in emulationstation:
 
-![wifi](https://cloud.githubusercontent.com/assets/10035308/12865761/adc9f5c6-cc72-11e5-9b02-9e98b90bbd98.png)
-
 It will open into this menu:
 
-![wifi1](https://cloud.githubusercontent.com/assets/10035308/9141521/96ceb142-3cf6-11e5-9ba4-2b23a8b52480.png)
+![wifi1](https://cloud.githubusercontent.com/assets/10035308/16217941/92b08b8c-3735-11e6-8f20-5d1550af0882.png)
 
 Choose your SSID from a list:
 
-![wifi2](https://cloud.githubusercontent.com/assets/10035308/9141549/cd763742-3cf6-11e5-836e-a257e888bfb2.png)
+![wifi2](https://cloud.githubusercontent.com/assets/10035308/16217942/92c5a8a0-3735-11e6-86ed-721c1bb81990.png)
 
 Type your Wifi Password (You may need to wait a bit after you finish for the configurations to save)
 
-![wifi3](https://cloud.githubusercontent.com/assets/10035308/9141565/f2252120-3cf6-11e5-9eeb-e9ad88e77977.png)
+![wifi3](https://cloud.githubusercontent.com/assets/10035308/16217943/92c64c24-3735-11e6-8f62-893f111c5bd2.png)
 
 After it's done configuring you should see your wifi info in the original menu:
 
-![wifiinfo](https://cloud.githubusercontent.com/assets/10035308/9141742/226f50de-3cf8-11e5-8b6b-328f2110e655.png)
+![wifi4](https://cloud.githubusercontent.com/assets/10035308/16217944/92cb07fa-3735-11e6-9239-66fba394c669.png)
 
 For more WiFi configuration options see this page [HERE](https://github.com/RetroPie/RetroPie-Setup/wiki/Wifi)
 
