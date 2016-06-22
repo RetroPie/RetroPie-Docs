@@ -2,6 +2,24 @@
 
 This page is a list of all of the changelogs for each version of RetroPie. For a complete list of all commits to the source code see [here:](https://github.com/petrockblog/RetroPie-Setup/commits/master)  
 
+### Version 4.0-beta2: (June 21, 2016)
+   - Setup script improvements:
+       - Added the ability to install/update and remove packages.
+       - Added help docs to the setup script.
+   - Renamed mednafen emulators to beetle to match upstream libretro repositories.
+   - Input configuration script to set up player 1 automatically on pifba.
+   - Updated PSP emulators ppsspp and lr-ppsspp with a fix for the pausing during play.
+   - Autostart improvements: boot to kodi option added - (exiting kodi will take you back to emulationstation).
+   - Improvements to the bluetooth module.
+   - Splashscreen improvements: New default splashscreen thanks to rookervik and a new splashscreen repository with more splashscreens.
+   - New experimental modules:
+       - TRS-80 emulator sdltrs.
+       - TI-99/4A emulator ti99sim.
+       - Oric 1/Atmos emulator Oricutron.
+       - Dinothawr (lr-dinothawr - standalone libretro puzzle game).
+       - Alternate Virtual Gamepad by sbidolach.
+   - Various bugfixes and improvements.
+
 ### Version 3.8.1: (June 4, 2016)
  - Fix escaping in iniSet causing initial backslashes to be incorrect in ini files (Affected some +Start Scripts with spaces such as DOSBox).
  - Don’t overwrite existing configs when updating advmame.
