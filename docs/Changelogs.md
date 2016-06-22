@@ -2,7 +2,7 @@
 
 This page is a list of all of the changelogs for each version of RetroPie. For a complete list of all commits to the source code see [here:](https://github.com/petrockblog/RetroPie-Setup/commits/master)  
 
-### Version 4.0-beta2: (June 21, 2016)
+### Version 4.0 BETA 2: (June 21, 2016)
    - Setup script improvements:
        - Added the ability to install/update and remove packages.
        - Added help docs to the setup script.
