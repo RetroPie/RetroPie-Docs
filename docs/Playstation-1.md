@@ -65,7 +65,9 @@ pcsx_rearmed_neon_enhancement_no_main = "enabled"
 
 ### Multitap (3-8 player)
 
-The latest version of lr-pcsx-rearmed has the ability to emulate up to two Multitaps, allowing 3-8 player support in games that permit it. It does this via core options. However, just as with the original hardware, many games do not support the multitap and will not recognise _any_ inputs with it turned on, so it is recommended to only enable multitaps for games that support it, via the 'Game Specific Options' retroarch functionality, which allows you to create core options files for specific games. To enable this, edit the `retroarch.cfg` file, found in:
+The latest version of lr-pcsx-rearmed has the ability to emulate up to two Multitaps, allowing 3-8 player support in games that permit it. It does this via core options. However, just as with the original hardware, many games do not support the multitap and will not recognise _any_ inputs with it turned on, so it is recommended to only enable multitaps for games that support it, via the 'Game Specific Options' retroarch functionality which allows you to create core options files for specific games. To enable this, use the [Configuration Editor] > **Advanced Configuration** > **Configure Libretro options** > **psx/retroarch.cfg** > Set **game_specific_options** to **true**.
+
+Alternatively, you can manually edit `retroarch.cfg` in:
 ```
 /opt/retropie/configs/psx/
 ```
@@ -73,6 +75,7 @@ The option is:
 ```
 game_specific_options = "true"
 ```
+
 Then, within a multiplayer game, load up the Retroarch menu via the menu hotkey combination (select & X/Triangle, by default), go to **Quick Menu** > **Options** > Find the **Multitap 1** and **Multitap 2** options and turn them on, as appropriate. Then scroll to the top, and choose **Create game options file**. Once this is completed, restart the game, and multiplayer options should become available.
 
 ### Analog Controller Type
