@@ -21,6 +21,26 @@ Accepted File Extensions: **.zip**
 **For information on how to rebuild newer romsets to be compatible with these emulators see this post:**
 **[Managing ROMs](https://github.com/petrockblog/RetroPie-Setup/wiki/Managing-ROMs)**
 
+### lr-fba-next
+
+**Please see [lr-fba-next](https://github.com/RetroPie/RetroPie-Setup/wiki/lr-fba-next) for information on how to configure specfic features of this emulator.**
+
+Romset Used: FBA **0.2.97.38** which is based on MAME 0.173 (April 2016)
+
+Total Games Emulated: [4150](https://raw.githubusercontent.com/libretro/libretro-fba/master/gamelist.txt) (includes clones etc..)
+ 
+Place your lr-fba-next ROMS in
+```shell
+/home/pi/RetroPie/roms/fba
+```
+you can also place your roms in
+
+```shell
+/home/pi/RetroPie/roms/neogeo
+```
+
+### [**lr-fba-next COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1GaqIIoiWbzKHwZ52S2xCSDQXILo81Ls1mHK6czKGAtM/edit?usp=sharing)  feel free to contribute to the list.
+
 ### PiFBA 
 
 Romset Used: FBA **0.2.96.71 romset** which is based on MAME 0.114 (April 2007) (see list below) 
@@ -58,26 +78,6 @@ you can also place your roms in
 ```shell
 /home/pi/RetroPie/roms/neogeo
 ```
-
-### lr-fba-next
-
-**Please see [lr-fba-next](https://github.com/RetroPie/RetroPie-Setup/wiki/lr-fba-next) for information on how to configure specfic features of this emulator.**
-
-Romset Used: FBA **0.2.97.38** which is based on MAME 0.173 (April 2016)
-
-Total Games Emulated: [4150](https://raw.githubusercontent.com/libretro/libretro-fba/master/gamelist.txt) (includes clones etc..)
- 
-Place your lr-fba-next ROMS in
-```shell
-/home/pi/RetroPie/roms/fba
-```
-you can also place your roms in
-
-```shell
-/home/pi/RetroPie/roms/neogeo
-```
-
-### [**lr-fba-next COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1GaqIIoiWbzKHwZ52S2xCSDQXILo81Ls1mHK6czKGAtM/edit?usp=sharing)  feel free to contribute to the list.
 
 ## BIOS
 
