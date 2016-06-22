@@ -78,11 +78,11 @@ At this point, you could scan the ROMs folder you just selected, but we just cre
 >  - **Parent:** The main version of the game. This is _normally_ the most common variant, in the English language. They have all the files needed to play them within the .zip file.
 >  - **Clone:** A variant of the Parent. Typically different language, or other small changes. Their .zips only contain the files that have been changed from the parent, meaning that the parent .zip must be present in the ROM directory for the clone to be ran.
 
-  - **Merged Set:** puts _all_ files of the parents and clones of the game into a single .zip file. Since in RetroPie we launch games per .zip file, it results in only launching the parent game, with the rest just wasting space. Avoid!
+  - **Merged Set:** puts _all_ files of the parents and clones of the game into a single .zip file. The version that will be launched will be the version that which is the .zip's name. To run a different version, rename the merged .zip to that of the version you want.
   - **Split Set:** parents are complete .zip files with everything needed, and clones are .zip files with _only_ their unique files, saving disk space. This means that you will have to transfer the appropriate parent .zip to your ROM directory for every clone .zip you wish to use. For example, pacman.zip (a clone), will not work without puckman.zip (its parent). This quickly gets confusing, so it's recommended to simply transfer the whole set to your ROM directory, to avoid missing file errors. **NOTE:** split sets are how most downloaded complete MAME romsets are presented.
   - **Non-Merged Set:** parents and clones in their own stand-alone .zip files. This removes clone's dependencies on parents, meaning you can take ANY of these .zip files (even the clones), put them in the appropriate ROM directory, and they should work! However, since every .zip has every required file, they will use higher total disk space. If you only want certain MAME ROMs on your system, use this method to ensure each .zip is usable stand-alone.
 
-* Click **"Rebuild..."**.  Depending on the size of the directory your chose as a source, this could take some time
+* Click **"Rebuild..."**.  Depending on the size of the directory you chose as a source, this could take some time
 * When clrmamepro is finished rebuilding, you will see a window with statistics showing how many matching files were found, how many files were created and how many were skipped.  Click "OK" 
 * Repeat for any other source paths you might have.  You can rebuild from multiple sources, but leave the Destination path the same
 * When finished, close the Rebuilder with the **"X"** in the upper right corner of the window
