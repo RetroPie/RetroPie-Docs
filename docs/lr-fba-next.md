@@ -8,7 +8,7 @@ By default, if you hold the Start button for a few seconds, the system menu appe
 
 ## Dipswitches
 
-lr-fba-next exposes all the dipswitch options of any given game to libretro, allowing you to adjust them via the RetroArch GUI. Hold hotkey (by default, Select) & X (the top button) to access the GUI, and then Quick Menu > Options. You should be presented by a menu like: 
+lr-fba-next exposes all the dipswitch options of any given game to libretro, allowing you to adjust them via the RetroArch GUI. Hold hotkey (by default, Select) & X (the top button) to access the GUI, and then **Quick Menu **> **Options**. You should be presented by a menu like: 
 
 ![](http://www.zimagez.com/full/aaa69d795c1a5e2d817defaa1cf6b75424d4e11b61c059d71a69dbf0077a5a4ba365eb42e08b34d8.php)
 
@@ -27,6 +27,9 @@ Some sound effects in a few older (typically pre-1986) arcade games are difficul
 ```
 /home/pi/RetroPie/BIOS/fba/samples/
 ```
+
+## Neo Geo UNIBIOS
+For Neo Geo games, you may want to use the [UNIVERSE BIOS/UNIBIOS](http://unibios.free.fr/) - an advanced Neo Geo bios that allows region selection, cheats, dip-switch control, and more. To activate, start a Neo Geo game, hold hotkey (by default, Select) & X (the top button) to access the GUI, and then **Quick Menu** > **Options **> Change **BIOS** to **UNIBIOS**. Next time you load the game, you should be presented by the UNIBIOS splash screen before the usual Neo Geo logo. Instructions on how to use the UNIBIOS can be found [here](http://unibios.free.fr/howitworks.html)
 
 ## Feature requests
 
