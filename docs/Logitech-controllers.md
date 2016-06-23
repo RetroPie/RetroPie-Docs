@@ -40,6 +40,18 @@ The "left top" (L2) and "right top" (R2) triggers can be tricky to get right. If
 
 If this happens, complete the rest of the EmulationStation controller setup, but don't press OK at the end. Instead, go back up with the D-Pad and re-configure the "left top" and "right top" controls, this time pressing the trigger inwards more slowly. If done right, "left top" will be the **+2** axis and "right top" will be the **+5** axis. This is the correct configuration.
 
+#### Logitech Button
+
+In XInput mode, the Logitech button in the middle of the controller can be used as another input button.
+
+You could configure this button as the RetroArch hotkey instead of Select. This would move the quit action to Logitech+Start, the RGUI menu to Logitech+X, and so on. This would allow Select+Start, Select+B, and the rest of the usual Select-based hotkeys to be pressed in-game with no side effects.
+
+If this is desired, edit the `retroarch-joypads` file described below and change the `input_enable_hotkey_btn` to:
+
+~~~
+input_enable_hotkey_btn = "8"
+~~~
+
 ## Config Files
 
 The RetroArch config differs only with the filename and identification string:
