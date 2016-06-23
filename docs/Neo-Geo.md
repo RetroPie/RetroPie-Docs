@@ -31,65 +31,90 @@ Place your Neo Geo ROMs in
 
 #### Gngeo-pi
 
-As a lovely caveat if you're using gngeopi, the ROMs you have must match the file in gngeo_data.zip located at:
+As a lovely caveat if you're using gngeopi, the ROMs you have must match the file in `gngeo_data.zip` located at:
 ```
 /opt/retropie/emulators/gngeopi/share/gngeo
 ```
-You can only play roms that have the same name as these .drv files, e.g. mslug2.zip (rom) and mslug2.drv (data). If the names of these files dont match the game will crash. (see the list below for compatible Roms)
+You can only play roms that have the same name as these .drv files, e.g. `mslug2.zip` (rom) and `mslug2.drv` (data). If the names of these files don't match, GnGeo-Pi will crash. (see the list at the bottom of this page for compatible ROMs)
 
-GnGeo-Pi based on **0.138** romsets (May 2010)
+GnGeo-Pi is based on **MAME 0.138** romsets (May 2010)
 
 Total Games Emulated: 203
 
 [**GnGeo-Pi COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1A_a_9t14uzDUMrrO0RgLDwiVUiycmclcPIs6cU6Iox8/edit?usp=sharing)  feel free to contribute to the list.
 
 ## BIOS
-Neo Geo requires a **neogeo.zip** BIOS file. It will be placed with your ROMs in
+
+Neo-Geo ROMs require a `neogeo.zip` BIOS file. Place this with your ROMs in
 ```
 /home/pi/RetroPie/roms/neogeo
 ```
 
-These are the contents of a verified working neogeo.zip BIOS file * Note that all the files may not be necessary
-```shell
-000-lo.lo
-asia-s3.rom
-filelist.txt
-japan-j3.bin
-neo-geo.rom
-ng-lo.rom
-ng-sfix.rom
-ng-sm1.rom
-sfix.sfix
-sm1.sm1
-sp-1v1_3db8c.bin
-sp-45.sp1
-sp-e.sp1
-sp-j2.sp1
-sp-s.sp1
-sp-s2.sp1
-sp-u2.sp1
-sp1.jipan.1024
-uni-bios_1_0.rom
-uni-bios_1_1.rom
-uni-bios_1_2.rom
-uni-bios_1_2o.rom
-uni-bios_1_3.rom
-uni-bios_2_0.rom
-uni-bios_2_1.rom
-uni-bios_2_2.rom
-uni-bios_2_3.rom
-uni-bios_2_3o.rom
-uni-bios_3_0.rom
-uni-bios_3_1.rom
-vs-bios.rom
+The contents of a verified working `neogeo.zip` BIOS file are as follows:
+
 ```
-## How to save BIOS settings
+# Required (probably)
 
-The first thing you need to do is go into the Retroarch GUI/Menu and go to “Options” and then go to “Core Options”. Make sure the “Neo Game Mode” is set to “Unibios”. 
+sm1.sm1           # Z80 BIOS
+sfix.sfix         # Text layer tiles
+000-lo.lo         # Zoom table
 
-After that, if you load a Neo Geo game such as Metal Slug, you can hit the Neo Geo buttons A + B + C during the rom boot up to access the full UniBios menu. Here you can change the game region to whatever you want, and can also change it from MVS (arcade) to AES (console). Any changes made here will be saved until your change them again. After you do that, exit out of the game via “Quit RetroArch” and then reload the rom.
+# MVS/AES BIOS - At least one must be present for MVS Arcade (default) or AES Home Console mode
 
-During the second rom boot up, hit the Neo Geo buttons B + C + D this time to bring up the Test Mode screen. Here you can change all of the gameplay settings such as difficulty and add blood. When you save this, it again will be there even after a full system reboot so you can edit to your liking and not have to do it again.
+asia-s3.rom       # MVS Asia/Europe ver. 6 (1 slot)
+sp-s2.sp1         # MVS Asia/Europe ver. 5 (1 slot)
+sp-s.sp1          # MVS Asia/Europe ver. 3 (4 slot)
+sp-u2.sp1         # MVS USA ver. 5 (2 slot)
+v2.bin            # MVS USA ver. 5 (4 slot)
+sp-e.sp1          # MVS USA ver. 5 (6 slot)
+vs-bios.rom       # MVS Japan ver. 6 (? slot)
+sp-j2.sp1         # MVS Japan ver. 5 (? slot)
+sp1.jipan.1024    # MVS Japan ver. 3 (4 slot)
+sp-45.sp1         # NEO-MVH MV1C
+japan-j3.bin      # MVS Japan (J3)
+neo-po.bin        # AES Japan
+neo-epo.bin       # AES Asia
+neodebug.bin      # Development Kit
+sp-1v1_3db8c.bin  # Deck ver. 6 (Git Ver 1.3)
+
+# Universe BIOS - At least one must be present for UNIBIOS mode
+
+uni-bios_3_2.rom  # Universe BIOS ver. 3.2 (free)
+uni-bios_3_1.rom  # Universe BIOS ver. 3.1 (free)
+uni-bios_3_0.rom  # Universe BIOS ver. 3.0 (free)
+uni-bios_2_3.rom  # Universe BIOS ver. 2.3
+uni-bios_2_3o.rom # Universe BIOS ver. 2.3 (alt)
+uni-bios_2_2.rom  # Universe BIOS ver. 2.2
+uni-bios_2_1.rom  # Universe BIOS ver. 2.1
+uni-bios_2_0.rom  # Universe BIOS ver. 2.0
+uni-bios_1_3.rom  # Universe BIOS ver. 1.3
+uni-bios_1_2.rom  # Universe BIOS ver. 1.2
+uni-bios_1_2o.rom # Universe BIOS ver. 1.2 (alt)
+uni-bios_1_1.rom  # Universe BIOS ver. 1.1
+uni-bios_1_0.rom  # Universe BIOS ver. 1.0
+
+# Unknown Purpose
+
+neopen.sp1        # NeoOpen BIOS v0.1 beta
+```
+
+## Using the Universe BIOS (UNIBIOS)
+
+Press **Select+B** to enter the Retroarch RGUI. In the Quick Menu, choose **Options** and press left/right to change **Neo Geo mode** to **UNIBIOS**.
+
+If using a `neogeo.zip` which does *not* contain the latest available Unibios, you must go down to the **BIOS** core option and use left/right to select a version of the Unibios which is present in `neogeo.zip`.
+
+Use the **B** button to go back to the **Quick Menu** and select **Restart Content** then **Resume Content**.
+
+The Unibios can be used as documented on the official page: <http://unibios.free.fr/howitworks.html>
+
+* On the Unibios boot screen, press Neo-Geo buttons **A+B+C** (RetroPad B+A+Y) to access the BIOS Menu
+* On the Unibios boot screen, press Neo-Geo buttons **B+C+D** (RetroPad A+Y+X) to access the Test Menu
+* At any time, press Neo-Geo **Start+A+B+C** (RetroPad Start+B+A+Y) to access the In-Game Menu
+
+The menus allow you to change various settings like region, dip switch settings for gameplay options like difficulty or blood, and coin or free play settings.
+
+BIOS settings will persist after quitting FBA, launching another Neo-Geo game, or rebooting RetroPie.
 
 ## Controls
 
@@ -97,19 +122,23 @@ During the second rom boot up, hit the Neo Geo buttons B + C + D this time to br
 
 lr-fba and lr-fba-next utilise RetroArch configs.
 
-Add custom retroarch controls to the retroarch.cfg file in
-```shell
+Add custom RetrAarch controls to the `retroarch.cfg` file in
+
+```
 /opt/retropie/configs/fba/retroarch.cfg
 ```
+
 For more information on custom RetroArch controls see: [RetroArch Configuration](https://github.com/petrockblog/RetroPie-Setup/wiki/RetroArch-Configuration) 
 
 ![neogeodiagram](https://cloud.githubusercontent.com/assets/10035308/8245309/a575cc8c-15e9-11e5-8735-0a4ab2a4e137.png)
 
 ### GnGeo-Pi Controls
-Once you've started GnGeo-Pi at least once a file called gngeorc will be created here
+
+Once you've started GnGeo-Pi at least once a file called `gngeorc` will be created in
 ```
 /home/pi/.gngeo/gngeorc
 ```
+
 **Example Configurations**
 
 ```shell
@@ -124,7 +153,7 @@ Once you've started GnGeo-Pi at least once a file called gngeorc will be created
  JxAyy : Joystick number x Axe yy (use a lowercase 'a' if you need to invert the axis)
  JxHyy : Joystick number x Hat yy
 
- by the way, you can define a button multiple time, for example A=J0B0,A=K123,etc..
+ you can define a button multiple time, for example A=J0B0,A=K123,etc..
 ```
 
 ### PiFBA Controls
@@ -205,7 +234,7 @@ MaintainAspectRatio=1
 [Sound]
 ```
 
-## List of ROMS (for GnGeo-Pi)
+## List of GnGeo-Pi ROMS
 
 ```shell
 2020bb.drv
