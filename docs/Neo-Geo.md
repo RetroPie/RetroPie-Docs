@@ -59,7 +59,8 @@ sm1.sm1           # Z80 BIOS
 sfix.sfix         # Text layer tiles
 000-lo.lo         # Zoom table
 
-# MVS/AES BIOS - At least one must be present for MVS Arcade (default) or AES Home Console mode
+# MVS/AES BIOS
+# At least one must be present for MVS Arcade (default) or AES Console mode
 
 asia-s3.rom       # MVS Asia/Europe ver. 6 (1 slot)
 sp-s2.sp1         # MVS Asia/Europe ver. 5 (1 slot)
@@ -77,7 +78,8 @@ neo-epo.bin       # AES Asia
 neodebug.bin      # Development Kit
 sp-1v1_3db8c.bin  # Deck ver. 6 (Git Ver 1.3)
 
-# Universe BIOS - At least one must be present for UNIBIOS mode
+# Universe BIOS
+# At least one must be present for UNIBIOS mode
 
 uni-bios_3_2.rom  # Universe BIOS ver. 3.2 (free)
 uni-bios_3_1.rom  # Universe BIOS ver. 3.1 (free)
