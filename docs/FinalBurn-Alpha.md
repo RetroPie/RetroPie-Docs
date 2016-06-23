@@ -29,11 +29,11 @@ Romset Used: FBA **0.2.97.38** which is based on MAME 0.173 (April 2016)
 
 Total Games Emulated: [4150](https://raw.githubusercontent.com/libretro/libretro-fba/master/gamelist.txt) (includes clones etc..)
  
-Place your lr-fba-next ROMS in
+Place your lr-fba-next ROMs in
 ```shell
 /home/pi/RetroPie/roms/fba
 ```
-you can also place your roms in
+you can also place your ROMs in
 
 ```shell
 /home/pi/RetroPie/roms/neogeo
@@ -55,7 +55,7 @@ Place your PiFBA ROMS in
 /home/pi/RetroPie/roms/fba
 ```
 
-you can also place your roms in
+you can also place your ROMs in
 
 ```shell
 /home/pi/RetroPie/roms/neogeo
@@ -69,11 +69,11 @@ Total Games Emulated: [3369](https://raw.githubusercontent.com/libretro/fba-libr
 
 ### [**lr-fba COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1rWO7Lm0bTGNpak6J-CPzde0GNIDP0NHDoQdJ6iWosfA/edit?usp=sharing)  feel free to contribute to the list.
  
-Place your lr-fba ROMS in
+Place your lr-fba ROMs in
 ```shell
 /home/pi/RetroPie/roms/fba
 ```
-you can also place your roms in
+you can also place your ROMs in
 
 ```shell
 /home/pi/RetroPie/roms/neogeo
@@ -81,51 +81,16 @@ you can also place your roms in
 
 ## BIOS
 
-The BIOS needed for Neo Geo games is:
-
-**neogeo.zip**
-
-* Note that unlike other BIOS that go in the BIOS folder, this BIOS will go into the same folder as your ROMS.
-
-For all fba emulators place your BIOS in
-```shell
+Neo-Geo ROMs require a `neogeo.zip` BIOS file. Place this with your ROMs in
+```
 /home/pi/RetroPie/roms/fba
 ```
-
-These are the contents of a verified working neogeo.zip BIOS file * Note that all the files may not be necessary
-```shell
-000-lo.lo
-asia-s3.rom
-filelist.txt
-japan-j3.bin
-neo-geo.rom
-ng-lo.rom
-ng-sfix.rom
-ng-sm1.rom
-sfix.sfix
-sm1.sm1
-sp-1v1_3db8c.bin
-sp-45.sp1
-sp-e.sp1
-sp-j2.sp1
-sp-s.sp1
-sp-s2.sp1
-sp-u2.sp1
-sp1.jipan.1024
-uni-bios_1_0.rom
-uni-bios_1_1.rom
-uni-bios_1_2.rom
-uni-bios_1_2o.rom
-uni-bios_1_3.rom
-uni-bios_2_0.rom
-uni-bios_2_1.rom
-uni-bios_2_2.rom
-uni-bios_2_3.rom
-uni-bios_2_3o.rom
-uni-bios_3_0.rom
-uni-bios_3_1.rom
-vs-bios.rom
+or
 ```
+/home/pi/RetroPie/roms/neogeo
+```
+
+For more information relating to the BIOS contents, MVS/AES modes, and Universe BIOS (UNIBIOS) mode, refer to the [Neo-Geo](https://github.com/RetroPie/RetroPie-Setup/wiki/Neo-Geo) wiki page.
 
 ## Controls
 As there are 2 emulators there are two sets of controls.
