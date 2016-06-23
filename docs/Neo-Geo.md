@@ -110,9 +110,11 @@ Use the **B** button to go back to the **Quick Menu** and select **Restart Conte
 
 The Unibios can be used as documented on the official page: <http://unibios.free.fr/howitworks.html>
 
-* On the Unibios boot screen, press Neo-Geo buttons **A+B+C** (RetroPad B+A+Y) to access the BIOS Menu
-* On the Unibios boot screen, press Neo-Geo buttons **B+C+D** (RetroPad A+Y+X) to access the Test Menu
-* At any time, press Neo-Geo **Start+A+B+C** (RetroPad Start+B+A+Y) to access the In-Game Menu
+* On the Unibios boot screen
+    * Neo-Geo **A+B+C** (RetroPad B+A+Y) for BIOS Menu
+    * Neo-Geo **B+C+D** (RetroPad A+Y+X) for Test Menu
+* At any time
+    * Neo-Geo **Start+A+B+C** (RetroPad Start+B+A+Y) for In-Game Menu
 
 The menus allow you to change various settings like region, dip switch settings for gameplay options like difficulty or blood, and coin or free play settings.
 
