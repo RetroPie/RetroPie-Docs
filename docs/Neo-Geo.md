@@ -104,9 +104,9 @@ neopen.sp1        # NeoOpen BIOS v0.1 beta
 
 Press **Select+B** to enter the Retroarch RGUI. In the Quick Menu, choose **Options** and press left/right to change **Neo Geo mode** to **UNIBIOS**.
 
-If using a `neogeo.zip` which does *not* contain the latest available Unibios, you must go down to the **BIOS** core option and use left/right to select a version of the Unibios which is present in `neogeo.zip`. If you do have the latest Unibios, you don't need to manually select a BIOS version here.
+If using a `neogeo.zip` which does *not* contain the latest available Unibios, you must go down to the **BIOS** core option and use left/right to select a version of the Unibios which is present in `neogeo.zip`. If you do have the latest Unibios, you don't need to manually select a BIOS version.
 
-Use the **B** button to go back to the **Quick Menu** and select **Restart Content** then **Resume Content**.
+Use the **B** button to go back to the **Quick Menu** and select **Restart Content** then **Resume Content**. You should see the Unibios boot screen before the usual "Max 330 Mega Pro-Gear Spec" screen.
 
 The Unibios can be used as documented on the official page: <http://unibios.free.fr/howitworks.html>
 
