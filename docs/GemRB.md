@@ -50,31 +50,31 @@ Default configs are automagically configured with the install script but you can
 #### Baldur's Gate 1
 
 ```
-/opt/retropie/configs/gemrb/BaldursGate1/GemRB.cfg
+/opt/retropie/configs/ports/baldursgate1/GemRB.cfg
 ```
 
 #### Baldur's Gate 2
 
 ```
-/opt/retropie/configs/gemrb/BaldursGate2/GemRB.cfg
+/opt/retropie/configs/ports/baldursgate2/GemRB.cfg
 ```
 
 #### Icewind 1
 
 ```
-/opt/retropie/configs/gemrb/Icewind1/GemRB.cfg
+/opt/retropie/configs/ports/icewind1/GemRB.cfg
 ```
 
 #### Icewind 2
 
 ```
-/opt/retropie/configs/gemrb/Icewind2/GemRB.cfg
+/opt/retropie/configs/ports/icewind2/GemRB.cfg
 ```
 
 #### Planescape
 
 ```
-/opt/retropie/configs/gemrb/Planescape/GemRB.cfg
+/opt/retropie/configs/ports/planescape/GemRB.cfg
 ```
 
 
