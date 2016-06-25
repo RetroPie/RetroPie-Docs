@@ -9,6 +9,13 @@ _GemRB is a portable open-source implementation of Bioware's Infinity Engine. It
 
 ## Emulator [GemRB](https://github.com/gemrb/gemrb)
 
+<a href="https://www.youtube.com/watch?v=W3YsyRDc_Os
+" target="_blank"><img src="https://i.ytimg.com/vi_webp/W3YsyRDc_Os/mqdefault.webp" 
+alt="RetroPie with Bluetooth" width="300" height="190" border="10" /></a>  
+  
+**Video Guide**: https://www.youtube.com/watch?v=W3YsyRDc_Os  
+
+
 ## Roms
 
 You need to have the original Baldur's Gate/ Icewind Dale/ or Planescape data in order to play. Place your game data in:
