@@ -27,7 +27,7 @@ _Note that the **Script Version** only shows what version the RetroPie Setup Scr
 - **Manage Packages:** This is where you will install/update all your emulators, install controller drivers (like the ps3 or xboxdrv) along with ports and other optional packages.
 - **Setup / Tools:** Configure tools, splashscreens, themes, and other configurations here.
 - **Uninstall RetroPie:** Pretty self explanatory, uninstalls retropie.
-- **Updated Setup Script:** Updates your setup script to the latest version.
+- **Update RetroPie-Setup Script:** Updates your setup script to the latest version.
 - **Reboot:** Reboots your system.
 
 **Manage Packages**
