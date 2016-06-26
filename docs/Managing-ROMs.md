@@ -228,9 +228,9 @@ Config Dir: /opt/retropie/configs/mame-advmame
 ```
 MAME Version: Based on **MAME 0.94** (March 2005) or (for 1.4) Based on **MAME 0.106** (May 2006)
 
-Size: 11.6GB (0.94.0) Size: 14.8GB (1.2)
+Size: 11.6GB (0.94.0) Size: 14.8GB (1.4)
 
-Romsets Emulated: 5563 (0.94.0) 6166 (1.2) (includes clones etc..)
+Romsets Emulated: 5563 (0.94.0) 6166 (1.4) (includes clones etc..)
 
 Active Sets (For 0.94.0) 5563/5563
 * Parents 1236/1236
