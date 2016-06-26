@@ -68,13 +68,13 @@ Place your AdvanceMAME ROMs in
 /home/pi/RetroPie/roms/mame-advmame
 ```
 
-Romset Used: **.94** (AdvMame .94) or **.106** (AdvMame 1.2)
+Romset Used: **.94** (AdvMame .94) or **.106** (AdvMame 1.4)
 
-Total Games Emulated: **5563** (0.94.0) **6166** (1.2) (includes clones etc..)
+Total Games Emulated: **5563** (0.94.0) **6166** (1.4) (includes clones etc..)
 
 [**AdvMame .94 COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1AEQ94buG0rvbW0xdnYKeuEhHeCbuZlRfRJQCb1Dt8fw/edit?usp=sharing)  feel free to contribute to the list.
 
-[**AdvMame 1.2 COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1RapyxChe2BMOfbX-FsCup9SXGxvS1WmXAofwaTJtmxc/edit?usp=sharing)  feel free to contribute to the list.
+[**AdvMame 1.4 COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1RapyxChe2BMOfbX-FsCup9SXGxvS1WmXAofwaTJtmxc/edit?usp=sharing)  feel free to contribute to the list.
 
 ## lr-Mame2003
 
