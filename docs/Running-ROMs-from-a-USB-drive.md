@@ -29,15 +29,23 @@ Either via [SFTP](Transferring-Roms#sftp-needs-an-active-internet-connection), o
 
 To do this via terminal, First enter the command `mount` to print a list of the mounted drives. Example output:
 WIP
-then enter the command `sudo cp -r /home/pi/RetroPie/* /dev/WIP`
+then enter the command `sudo cp -ar /home/pi/RetroPie/* /media/usb0/`
 
 After this, the USB directory structure should look like:
 WIP
 
+## Remove old files from SD card
+Now that we have copied the existing files, we can delete the duplicates. Enter this command: `sudo rm -rf home/pi/RetroPie/*`
+
 ## Configure fstab to automatically mount USB drive
 Establish the drive's UUID number by entering the command `ls -l /dev/disk/by-uuid/`
 
+`sudo nano /etc/fstab`
+`/dev/sda1 /home/pi/RetroPie vfat defaults 0 0`
 WIP
+
+## Restart system
+This must be a full restart, not just emulationstation. When it boots up you should see any ROMs you previously had show up in emulationstation.
 
 ## Transfer ROMs
 Now transfer ROMs either directly to the USB drive, or via any of the usual methods (aside from using the automatic USB copy, obviously!). Now that the USB drive is mounted directly to `home/pi/RetroPie`, every time this directory is accessed, you're actually accessing the USB drive.
