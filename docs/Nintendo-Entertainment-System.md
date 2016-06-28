@@ -13,7 +13,7 @@ _The Nintendo Entertainment System (NES) is an 8-bit home video game console tha
 
 ## Emulators: [lr-nestopia](https://github.com/libretro/nestopia), [lr-fceumm](https://github.com/libretro/libretro-fceumm), [lr-quicknes](https://github.com/libretro/QuickNES_Core)
 
-Both emulators utilise RetroArch configurations for controllers. Nestopia is preferred due to better accuracy and the ability to play Famicom Disk System games.
+Both emulators utilise RetroArch configurations for controllers. lr-nestopia is preferred due to better accuracy and the ability to play Famicom Disk System games, plus [better input latency](http://libretro.com/forums/showthread.php?t=5428&p=41746&viewfull=1#post41746). lr-fceumm is slightly faster, which may give a benefit to Raspberry Pi 1/0 users.
 
 ## ROMS
 
@@ -25,7 +25,7 @@ Place your NES Roms in
 ```
 ## BIOS
 
-Nestopia is able to play Famicom Disk System games with a **disksys.rom** bios file.
+Both lr-nestopia and lr-fceumm are able to play Famicom Disk System games with a **disksys.rom** bios file.
 
 Place the BIOS in
 ```
