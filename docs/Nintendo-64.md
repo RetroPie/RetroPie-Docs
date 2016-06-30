@@ -65,6 +65,8 @@ and
 /opt/retropie/configs/n64/InputAutoCfg.ini
 ```
 
+Note that, by default, the memory expansion pack is configured as installed.
+
 #### Example mupen64plus.cfg
 ```
 [CoreEvents]
