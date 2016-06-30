@@ -49,7 +49,10 @@ Look for an entry on /media/usb0, or similar. In our above example:
 
 The important things to note down are the mount point: `/media/usb0`, and the position on the device tree: `/dev/sda1`
 
-Now we can copy our existing RetroPie folder to our new USB drive. Enter the command `sudo cp -ar /home/pi/RetroPie/* /media/usb0/`
+Now we can move our existing RetroPie folder to our new USB drive. Enter the command:
+```
+sudo mv -v /home/pi/RetroPie/* /media/usb0/
+```
 
 After this, the USB directory structure should look something like:
 ```
@@ -60,9 +63,6 @@ drwxrwxrwx  3 root root 16384 Apr 22 17:05 retropiemenu
 drwxrwxrwx 52 root root 16384 Jun  3 00:11 roms
 drwxrwxrwx  2 root root 16384 Apr 13 16:14 splashscreens
 ```
-
-## Remove old files from SD card
-Now that we have copied the existing files, _and our drive looks like the directory structure above_ we can delete the duplicates. Enter this command: `sudo rm -rf home/pi/RetroPie/*`
 
 ## Configure fstab to automatically mount USB drive
 Establish the drive's UUID number by entering the command `ls -l /dev/disk/by-uuid/`. Example output:
