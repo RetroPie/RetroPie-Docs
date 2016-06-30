@@ -48,7 +48,7 @@ Further to this, the 'enabled cheats' core option needs to be turned on via a se
 ```
 The option is:
 ```
-mame2003-cheats = enabled
+mame2003-cheats = "enabled"
 ```
 
 ## Samples
@@ -65,7 +65,7 @@ You can adjust the sample rate for _all_ audio. Lowering it from the default of 
 ```
 The option is:
 ```
-mame2003-sample_rate = 48000
+mame2003-sample_rate = "48000"
 ```
 The valid possibilities are 8000, 11025, 22050, 44100 and 48000.
 
@@ -77,7 +77,7 @@ The copyright warning should be hidden by default, but can be controlled via a s
 ```
 The option is:
 ```
-mame2003-skip_disclaimer = enabled
+mame2003-skip_disclaimer = "enabled"
 ```
 
 ## Skip warnings screen
@@ -88,7 +88,7 @@ Games that feature incomplete emulation, or other side-effects will have a warni
 ```
 The option is:
 ```
-mame2003-skip_warnings = enabled
+mame2003-skip_warnings = "enabled"
 ```
 ## Feature requests
 
