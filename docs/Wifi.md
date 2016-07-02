@@ -132,6 +132,23 @@ You will also need the password for the WiFi network. For most home routers this
 
 ### ADDING THE NETWORK DETAILS TO THE RASPBERRY PI
 
+First you'll need to ammend `/etc/network/interfaces` to point to wpa-supplicant if it isn't already:
+
+```
+auto lo
+
+iface lo inet loopback
+iface eth0 inet dhcp
+
+allow-hotplug wlan0
+auto wlan0
+iface wlan0 inet manual
+wpa-roam /etc/wpa_supplicant/wpa_supplicant.conf
+#The following line specified in /etc/network/interfaces will activate and configure each 'default' network in wpa_supplicant.conf with DHCP upon a successful connection to an access point (this line needs to be here for wpa-roam)
+iface default inet dhcp
+```
+We've changed it to wpa-roam so that it will reconnect if the connection drops.
+
 Open the `wpa-supplicant` configuration file in nano:
 
 `sudo nano /etc/wpa_supplicant/wpa_supplicant.conf`
