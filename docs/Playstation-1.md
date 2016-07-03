@@ -7,19 +7,29 @@ _The PlayStation 1 is a 5th generation video game console released by Sony in 19
 
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
-| [lr-pcsx-rearmed](https://github.com/libretro/pcsx_rearmed) | psx  | .bin .cue .cbn .img .iso .m3u .mdf .pbp .toc .z .znx | SCPH1001.BIN | /opt/retropie/configs/psx/retroarch.cfg |
-| [pcsx-rearmed](https://github.com/notaz/pcsx_rearmed) | psx  | .bin .cue .cbn .img .iso .m3u .mdf .pbp .toc .z .znx | SCPH1001.BIN | hardcoded |
-| [lr-beetle-psx](https://github.com/libretro/beetle-psx-libretro) | psx  | .bin .cue .cbn .img .iso .m3u .mdf .pbp .toc .z .znx | scph5500.bin scph5501.bin scph5502.bin | /opt/retropie/configs/psx/retroarch.cfg |
+| [lr-pcsx-rearmed](https://github.com/libretro/pcsx_rearmed) | psx  | .cue .cbn .img .iso .m3u .mdf .pbp .toc .z .znx | SCPH1001.BIN | /opt/retropie/configs/psx/retroarch.cfg |
+| [pcsx-rearmed](https://github.com/notaz/pcsx_rearmed) | psx  | .cue .cbn .img .iso .m3u .mdf .pbp .toc .z .znx | SCPH1001.BIN | hardcoded |
+| [lr-beetle-psx](https://github.com/libretro/beetle-psx-libretro) | psx  | .cue .cbn .img .iso .m3u .mdf .pbp .toc .z .znx | scph5500.bin scph5501.bin scph5502.bin | /opt/retropie/configs/psx/retroarch.cfg |
 
 ## Emulators: [lr-pcsx-rearmed](https://github.com/libretro/pcsx_rearmed), [pcsx-rearmed](https://github.com/notaz/pcsx_rearmed), 
 
 ## ROMS
-Accepted File Extensions: **.bin .cue .cbn .img .iso .m3u .mdf .pbp .toc .z .znx**
+Accepted File Extensions: **.cue .cbn .img .iso .m3u .mdf .pbp .toc .z .znx**
 
 Place your PlayStation ROMs in 
 ```
 /home/pi/RetroPie/roms/psx
 ````
+
+A few notes on file extensions:
+
+**Why .bin was removed**
+- It is very common for PSX games to be in 2 parts, a .bin and .cue, this means that Emulation Station will show duplicates for each game which no-one really wants. This is because it used to show extensions .bin and .cue
+- A PSX game will only ever need one .cue file, so by hiding a .bin it prevents duplicates showing (as it could have multiple .bins. Sort of.)
+- By hiding .bin files it will make the user think a little bit more about how the emulator loads files rather than blindly throwing files at it until it works.
+- Any PSX game that has multi tracks will work better (usually audio tracks) if it has a .cue to point to the audio.
+
+if your psx game is a .ecm extension, its a compressed file that needs to be extracted with ecmtools.
 
 ## BIOS
 
