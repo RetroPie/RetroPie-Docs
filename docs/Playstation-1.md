@@ -23,11 +23,24 @@ Place your PlayStation ROMs in
 
 A few notes on file extensions:
 
+**Why arent my .bin files showing in Emulation Station?**  
+  
+Since June 16th 2016 the RetroPie script has configured Emulation Station to no longer show .bin files in the UI.
+This means that a .cue file is required to start the game.  
+  
+A .cue file is basically a plain text file that tells the emulator where in the .bin file the (data and/or audio) track(s) are. This is often important in the case where multiple audio files are in the single .bin file. These are often called "mixed mode" discs. [Wikipedia .cue files](https://en.wikipedia.org/wiki/Cue_sheet_(computing))
+  
+If you only have a .bin file and no .cue file, you can generate it manually here (to get the .bin to load):
+http://www.shivaranjan.com/2007/01/03/how-to-create-cue-file-for-a-bin-file-in-5-steps/  
+or use this tool  
+http://www.dslreports.com/r0/download/373724~1e45059000cfc371c157f544cc5aef07/MakeCue.zip
+  
 **Why .bin was removed**
 - It is very common for PSX games to be in 2 parts, a .bin and .cue, this means that Emulation Station will show duplicates for each game which no-one really wants. This is because it used to show extensions .bin and .cue
-- A PSX game will only ever need one .cue file, so by hiding a .bin it prevents duplicates showing (as it could have multiple .bins. Sort of.)
+- A PSX game will only ever need one .cue file, so by hiding a .bin it prevents duplicates showing (as it could have multiple .bin files)
 - By hiding .bin files it will make the user think a little bit more about how the emulator loads files rather than blindly throwing files at it until it works.
-- Any PSX game that has multi tracks will work better (usually audio tracks) if it has a .cue to point to the audio.
+- Any PSX game that has multi tracks will work better (usually audio tracks) if it has a .cue to point to the audio.  
+https://retropie.org.uk/forum/topic/735/psx-please-remove-bin-from-the-file-types
 
 if your psx game is a .ecm extension, its a compressed file that needs to be extracted with ecmtools.
 
