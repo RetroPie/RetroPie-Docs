@@ -10,8 +10,8 @@ _The Super Nintendo Entertainment System (or SNES) was a 4th generation video ga
 | [lr-armsnes](https://github.com/rmaz/ARMSNES-libretro) | snes  | .zip .smc .sfc .fig .swc | none | /opt/retropie/configs/snes/retroarch.cfg |
 | [lr-catsfc](https://github.com/libretro/CATSFC-libretro) | snes  | .zip .smc .sfc .fig .swc | none | /opt/retropie/configs/snes/retroarch.cfg |
 | [lr-pocketsnes](https://github.com/libretro/pocketsnes-libretro) | snes  | .zip .smc .sfc .fig .swc | none | /opt/retropie/configs/snes/retroarch.cfg |
-| [snes9x-rpi](https://github.com/RetroPie/snes9x-rpi) | snes  | .zip .smc .sfc .fig .swc | none | /opt/retropie/emulators/pisnes/snes9x.cfg |
-| [PiSNES](https://github.com/RetroPie/pisnes) | snes  | .zip .smc .sfc .fig .swc | none | /opt/retropie/emulators/pisnes/snes9x.cfg |
+| [snes9x-rpi](https://github.com/RetroPie/snes9x-rpi) | snes  | .zip .smc .sfc .fig .swc | none | /opt/retropie/configs/snes/snes9x.cfg |
+| [PiSNES](https://github.com/RetroPie/pisnes) | snes  | .zip .smc .sfc .fig .swc | none | /opt/retropie/configs/snes/snes9x.cfg |
 
 ## Emulators: [lr-snes9x-next](https://github.com/libretro/snes9x-next), [PiSNES](https://github.com/RetroPie/pisnes), [snes9x-rpi](https://github.com/RetroPie/snes9x-rpi), [lr-armsnes](https://github.com/rmaz/ARMSNES-libretro), [lr-catsfc](https://github.com/libretro/CATSFC-libretro), [lr-pocketsnes](https://github.com/libretro/pocketsnes-libretro)
 
