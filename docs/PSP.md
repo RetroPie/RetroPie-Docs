@@ -34,7 +34,7 @@ Add custom retroarch controls to the retroarch.cfg file in
 ```
 For more information on custom RetroArch controls see: [RetroArch Configuration](https://github.com/petrockblog/RetroPie-Setup/wiki/RetroArch-Configuration)
 
-![psp_diagram](https://cloud.githubusercontent.com/assets/10035308/10719289/b31a8bd0-7b4b-11e5-9374-935630d1ed03.png)
+![psp_diagram](https://cloud.githubusercontent.com/assets/10035308/16599632/7f34c9ec-42c0-11e6-8988-0b2d6e795d10.png)
 
 ### ppsspp
 
