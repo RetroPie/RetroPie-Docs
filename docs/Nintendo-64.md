@@ -51,13 +51,13 @@ Add custom retroarch controls to the retroarch.cfg file in
 ```
 For more information on custom RetroArch controls see: [RetroArch Configuration](https://github.com/petrockblog/RetroPie-Setup/wiki/RetroArch-Configuration)
 
-![nintendo_n64_diagram](https://cloud.githubusercontent.com/assets/10035308/7334793/6b406d8c-eb5b-11e4-8474-56a340521e71.png)
+![nintendo_n64_diagram](https://cloud.githubusercontent.com/assets/10035308/16599636/7f3630fc-42c0-11e6-952f-60d97a511f38.png)
 
 ### Mupen64plus
 
 Starting with RetroPie 3.3 Mupen64Plus configurations are automatically generated when you configure your controller for the first time in emulationstation. Mupen64plus configurations differ from the RetroArch configs listed above and more closely match the original physical N64 controller.
 
-![n64_diagram](https://cloud.githubusercontent.com/assets/10035308/11431965/b8207db4-9460-11e5-8b5d-45fadf9f0bfb.png)
+![nintendo_n64_mupen64plus_diagram](https://cloud.githubusercontent.com/assets/10035308/16599635/7f35579a-42c0-11e6-9615-9a3670932332.png)
 There are two main configuration files that can be modified located at:
 ```
 /opt/retropie/configs/n64/mupen64plus.cfg
@@ -279,7 +279,7 @@ From there you will be able to use your joystick as analogue inputs in 64 games.
 
 
 
-##Configureing N64 USB Controller for use with Retropie accurately
+##Configuring N64 USB Controller for use with Retropie accurately
 What I do is I will configure via Retropie the config how I like it for all the general emulators and then i will edit the /opt/retropie/configs/n64/InputAutoCfg.ini file with the below which as long as your using the USB N64 pad should get your 64 controller mapped correctly.
 
 I sacrifice Ltrigger to Select and don't define it so It can be used to xit the emulator with start
