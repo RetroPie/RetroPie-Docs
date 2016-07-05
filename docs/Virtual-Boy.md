@@ -29,4 +29,4 @@ Add custom retroarch controls to the retroarch.cfg file in
 ```
 For more information on custom RetroArch controls see: [RetroArch Configuration](https://github.com/petrockblog/RetroPie-Setup/wiki/RetroArch-Configuration)
 
-![virtualboydiagram](https://cloud.githubusercontent.com/assets/10035308/8246349/6552ef7a-15fa-11e5-9a78-1800b51cccc5.png)
+![nintendo_virtualboy_diagram](https://cloud.githubusercontent.com/assets/10035308/16599637/7f382d3a-42c0-11e6-8e7d-bdbacf7afd82.png)
