@@ -15,11 +15,11 @@ Retroarch controls have been integrated into EmulationStation and will be the fi
 
 The following diagrams are for the 3 most common controllers: Super Nintendo, Xbox 360, and PlayStation 3. They can be used as a reference when configuring your controllers. Each emulator page on the wiki has a diagram of the original controller for its respective console that will correspond to the same inputs listed below.
 
-![Super Nintendo Controller](https://cloud.githubusercontent.com/assets/10035308/7110174/0f2fdb54-e16a-11e4-8f3d-37bdca8f1ddf.png)
+![nintendo_snes_diagram](https://cloud.githubusercontent.com/assets/10035308/16599633/7f34d356-42c0-11e6-92c0-f8774d795bd1.png)
 
-![Xbox 360 Controller](https://cloud.githubusercontent.com/assets/10035308/7110173/0f2ea784-e16a-11e4-9c6f-5fe7c594b05a.png)
+![microsoft_xbox360_diagram](https://cloud.githubusercontent.com/assets/10035308/16599644/7f50121a-42c0-11e6-8ef5-50c4b5672216.png)
 
-![PlayStation 3 Controller](https://cloud.githubusercontent.com/assets/10035308/7111199/e29365ec-e179-11e4-87b4-f00685661d7e.png)
+![playstation3_diagram](https://cloud.githubusercontent.com/assets/10035308/16599634/7f353148-42c0-11e6-9023-dbaf074bc933.png)
 
 After you've configured your controller the autoconfig will be created here:
 ```
@@ -206,17 +206,17 @@ alt="Setting up Xbox controller in RetroPie" width="300" height="190" border="10
 ***
 
 ## 3do
-![3dodiagram](https://cloud.githubusercontent.com/assets/10035308/8237801/0ae4d6fc-15af-11e5-803f-8ba408d48362.png)
+![goldstar_3do_diagram](https://cloud.githubusercontent.com/assets/10035308/16599643/7f450bd6-42c0-11e6-84d7-9cc0944e7b01.png)
 ## Atari 2600
 ![atari2600diagram](https://cloud.githubusercontent.com/assets/10035308/8237960/02aa13fc-15b0-11e5-92c2-311e8960883b.png)
 ## Atari Lynx
-![atari_lynx](https://cloud.githubusercontent.com/assets/10035308/8176465/8d4a4c74-13b8-11e5-9956-c059ac3fc9e1.png)
+![atari_lynx_diagram](https://cloud.githubusercontent.com/assets/10035308/16599640/7f435408-42c0-11e6-8034-d04fec9310ce.png)
 ## Gameboy
 ![gameboy](https://cloud.githubusercontent.com/assets/10035308/7334402/bd640072-eb4e-11e4-8251-d2bc3b876153.png)
 ## Gameboy Color
 ![gameboycolor](https://cloud.githubusercontent.com/assets/10035308/7334404/bd65e496-eb4e-11e4-82e6-78494534d305.png)
 ## Gameboy Advance
-![gameboyadvance](https://cloud.githubusercontent.com/assets/10035308/7334407/bd688f52-eb4e-11e4-8899-246bad0ad139.png)
+![nintendo_gameboyadvance_diagram](https://cloud.githubusercontent.com/assets/10035308/16599631/7f238b14-42c0-11e6-90e0-eac12cb4db3d.png)
 ## Game Gear
 ![segagamegeardiagram](https://cloud.githubusercontent.com/assets/10035308/8245009/b4c87e72-15e5-11e5-8ee5-691daa4d1dd5.png)
 ## Mastersystem
@@ -224,11 +224,12 @@ alt="Setting up Xbox controller in RetroPie" width="300" height="190" border="10
 ## Megadrive/Genesis (3 Button)
 ![genesis](https://cloud.githubusercontent.com/assets/10035308/7336303/aec335e0-ebb4-11e4-93b3-26037dd26ffb.png)
 ## Megadrive/Genesis (6 Button)
-![genesis6btn](https://cloud.githubusercontent.com/assets/10035308/7336429/7e524110-ebbb-11e4-8777-05a824384d34.png)
+![sega_megadrive_6button_arcadepad_diagram](https://cloud.githubusercontent.com/assets/10035308/16599641/7f43ae62-42c0-11e6-924a-50ca4e44f401.png)
+![sega_megadrive_6button_diagram](https://cloud.githubusercontent.com/assets/10035308/16599642/7f43e53a-42c0-11e6-9152-c33099878ccc.png)
 ## Nintendo 64
-![nintendo_n64_diagram](https://cloud.githubusercontent.com/assets/10035308/7334793/6b406d8c-eb5b-11e4-8474-56a340521e71.png)
+![nintendo_n64_diagram](https://cloud.githubusercontent.com/assets/10035308/16599636/7f3630fc-42c0-11e6-952f-60d97a511f38.png)
 ## Nintendo DS
-![dsdiagram](https://cloud.githubusercontent.com/assets/10035308/8240819/99893d9a-15c2-11e5-9d52-c86db39493f6.png)
+![nintendo_ds_diagram](https://cloud.githubusercontent.com/assets/10035308/16599645/7f549f56-42c0-11e6-88a8-3acda5287da3.png)
 ## NES
 ![nesdiagram](https://cloud.githubusercontent.com/assets/10035308/8245062/4f0c5b8e-15e6-11e5-9255-b920543518d6.png)
 ## Neo Geo
@@ -236,13 +237,15 @@ alt="Setting up Xbox controller in RetroPie" width="300" height="190" border="10
 ## Neo Geo Pocket
 ![neogeopocketdiagram](https://cloud.githubusercontent.com/assets/10035308/8244887/0e06c54a-15e4-11e5-8f8f-28758d16c446.png)
 ## PS1
-![playstation](https://cloud.githubusercontent.com/assets/10035308/8194532/8213433e-1439-11e5-8e69-87c6a7dc275c.png)
+![playstation3_diagram](https://cloud.githubusercontent.com/assets/10035308/16599634/7f353148-42c0-11e6-9023-dbaf074bc933.png)
+## PSP
+![psp_diagram](https://cloud.githubusercontent.com/assets/10035308/16599632/7f34c9ec-42c0-11e6-8988-0b2d6e795d10.png)
 ## SG-1000
 ![sg-1000diagram](https://cloud.githubusercontent.com/assets/10035308/8238988/4aee1770-15b6-11e5-90d4-5bf66ac7e3dd.png)
 ## Super Nintendo
 ![snes](https://cloud.githubusercontent.com/assets/10035308/7334403/bd655d6e-eb4e-11e4-8fd7-a4424aad1034.png)
 ## Sega Saturn
-![saturn](https://cloud.githubusercontent.com/assets/10035308/7449063/327bfb76-f1e9-11e4-9c58-4b38a3c1284d.png)
+![sega_saturn_diagram](https://cloud.githubusercontent.com/assets/10035308/16599639/7f42ac24-42c0-11e6-8978-5f3cce723393.png)
 ## Turbografx16
 ![turbografx16diagram](https://cloud.githubusercontent.com/assets/10035308/8239221/aa5f3602-15b7-11e5-9c9f-54322c0a18bc.png)
 ## Videopac/Odyssey2
@@ -250,9 +253,9 @@ alt="Setting up Xbox controller in RetroPie" width="300" height="190" border="10
 ## Vectrex
 ![vectrex](https://cloud.githubusercontent.com/assets/10035308/8196876/168671c6-144e-11e5-8139-d2d980a936fa.png)
 ## VirtualBoy
-![virtualboydiagram](https://cloud.githubusercontent.com/assets/10035308/8246349/6552ef7a-15fa-11e5-9a78-1800b51cccc5.png)
+![nintendo_virtualboy_diagram](https://cloud.githubusercontent.com/assets/10035308/16599637/7f382d3a-42c0-11e6-8e7d-bdbacf7afd82.png)
 ***
 ## Sega Dreamcast
-![sega_dreamcast_diagram](https://cloud.githubusercontent.com/assets/10035308/11432087/ae992b58-9463-11e5-928e-1ff3689c421d.png)
+![sega_dreamcast_diagram](https://cloud.githubusercontent.com/assets/10035308/16599638/7f411634-42c0-11e6-811c-456f02b2ea47.png)
 ## Intellivision
 ![intellivision](https://cloud.githubusercontent.com/assets/10035308/8246393/3e98c8c2-15fb-11e5-9398-3f5abd60361b.png)
