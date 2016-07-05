@@ -50,7 +50,7 @@ On occasion, these VMUs do not get formatted quite right during creation, and th
 ## Controls
 Starting with RetroPie 3.3 controls for the Dreamcast Emulator are automatically configured when you configure your controls through emulationstation.
 
-![sega_dreamcast_diagram](https://cloud.githubusercontent.com/assets/10035308/11432087/ae992b58-9463-11e5-928e-1ff3689c421d.png)
+![sega_dreamcast_diagram](https://cloud.githubusercontent.com/assets/10035308/16599638/7f411634-42c0-11e6-811c-456f02b2ea47.png)
 
 Controls can be mapped via the `/home/pi/.reicast/emu.cfg` file. An example mapping for a PS3 controller is below for reference:
 
