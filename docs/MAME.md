@@ -18,7 +18,7 @@ _MAME stands for Multiple Arcade Machine Emulator. MAME can emulate thousands of
 
 Mame4all-pi has the best performance of them all, but a limited romset. This is the best choice for the Raspberry Pi 1. lr-imame4all is the libretro equivalent, with possibly weaker performance, but features all the libretro benefits (RetroArch controller configurations, shader support, save states, etc). lr-mame2003 is a good choice for Raspberry Pi 2 and up, as it has a comprehensive romset, and good performance, as well as also being libretro. The AdvMames are popular as they have a huge romset, but they're non-libretro. All other MAME cores are experimental and should normally be avoided.
 
-See Also: [FBA](https://github.com/petrockblog/RetroPie-Setup/wiki/FinalBurn-Alpha), [Neo Geo](https://github.com/petrockblog/RetroPie-Setup/wiki/GnGeo-Pi)
+See Also: [[FinalBurn-Alpha]], [[Neo Geo]]
 
 ## ROMS
 
@@ -78,7 +78,7 @@ Total Games Emulated: **5563** (0.94.0) **6166** (1.4) (includes clones etc..)
 
 ## lr-Mame2003
 
-**Please see [lr-mame2003](https://github.com/RetroPie/RetroPie-Setup/wiki/lr-mame2003) for information on how to configure specfic features of this emulator.**
+**Please see [[lr-mame2003]] for information on how to configure specific features of this emulator.**
 
 Place your lr-Mame2003 ROMs in
 ```
