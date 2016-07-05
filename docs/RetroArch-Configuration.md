@@ -4,10 +4,10 @@ RetroArch is the official front end for the [Libretro](http://www.libretro.com/)
 
 # Retroarch Controls
 
-There are 3 main ways that RetroArch handles controls: 
-- [**Autoconfigurations**](https://github.com/RetroPie/RetroPie-Setup/wiki/RetroArch-Configuration#autoconfigurations)
-- [**Hardcoded Configurations**](https://github.com/RetroPie/RetroPie-Setup/wiki/RetroArch-Configuration#hardcoded-configurations)
-- [**Core Input Remapping**](https://github.com/RetroPie/RetroPie-Setup/wiki/RetroArch-Configuration#core-input-remapping)
+There are 3 main ways to configure input for RetroArch: 
+- [**Autoconfigurations**](https://github.com/RetroPie/RetroPie-Setup/wiki/RetroArch-Configuration#autoconfigurations) - made in emulationstation
+- [**Hardcoded Configurations**](https://github.com/RetroPie/RetroPie-Setup/wiki/RetroArch-Configuration#hardcoded-configurations) - made by editing retroarch.cfg file(s)
+- [**Core Input Remapping**](https://github.com/RetroPie/RetroPie-Setup/wiki/RetroArch-Configuration#core-input-remapping) - an easy way to do specific control configurations for specific cores, made in RGUI.
 
 ## AutoConfigurations
 
@@ -168,10 +168,15 @@ input_state_slot_decrease_axis = -0
 
 Core Input Remapping differs from the other two methods as it remaps how the core receives input rather than how the gamepad is coded, for example you can tell the snes core to switch button A and B on the controller for gameplay, but you can still use "A" to select in the RGUI and "B" to go back where as hardcoding would make B select and A back. Core Remapping is much more practical than hardcoded mapping but is limited to the cores that support it. 
 
-**Core Input Remapping**  
-<a href="https://www.youtube.com/watch?v=liJKFUZX4PM
-" target="_blank"><img src="https://i.ytimg.com/vi_webp/liJKFUZX4PM/mqdefault.webp" 
-alt="Testing joypad in RetroPie" width="300" height="190" border="10" /></a>  
+Quick way to do it:
+
+1. Start a game of the system you want to remap the buttons.
+2. Invoke RGUI.
+3. Go to `Quick Menu` and then `Controls`.
+4. Configure the buttons the way you want.
+5. Select `Save Core Remap File` (if you want to save this remapping for one game only, choose `Save Game Remap File`).
+6. Done!
+
 
 ## Video Tutorials
 
@@ -180,12 +185,10 @@ alt="Testing joypad in RetroPie" width="300" height="190" border="10" /></a>
 " target="_blank"><img src="https://i.ytimg.com/vi_webp/fcRVcPkpLfQ/mqdefault.webp" 
 alt="Testing joypad in RetroPie" width="300" height="190" border="10" /></a>  
   
-  
 **Setting up USB controllers**  
 <a href="https://www.youtube.com/watch?v=AhkEnDdygbQ
 " target="_blank"><img src="https://i.ytimg.com/vi_webp/AhkEnDdygbQ/mqdefault.webp" 
 alt="Setting up usb controllers in RetroPie" width="300" height="190" border="10" /></a>  
-  
   
 **Wireless PS3 controller**  
 <a href="https://www.youtube.com/watch?v=oCq6drv5wbE
