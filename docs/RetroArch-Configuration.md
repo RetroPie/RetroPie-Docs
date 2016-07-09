@@ -171,7 +171,7 @@ Core Input Remapping differs from the other two methods as it remaps how the cor
 Quick way to do it:
 
 1. Start a game of the system you want to remap the buttons.
-2. Invoke RGUI (select+x).
+2. Invoke RGUI (select+x with player 1).
 3. Go to `Quick Menu` and then `Controls`.
 4. Configure the buttons the way you want.
 5. Select `Save Core Remap File` (if you want to save this remapping for one game only, choose `Save Game Remap File`).
