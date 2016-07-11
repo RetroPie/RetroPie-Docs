@@ -21,7 +21,7 @@ _The upgrade will take some time. I like to reboot after I've upgraded._
 
     sudo reboot
 
-    sudo apt-get install python3
+    sudo apt-get install python3-dev
 
     sudo pip install ds4drv
 
