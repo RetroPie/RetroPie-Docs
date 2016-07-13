@@ -12,6 +12,10 @@ Whilst lr-mame2003 is a libretro emulator and benefits from automatic controller
 ```
 /home/pi/RetroPie/roms/mame-libretro/mame2003/cfg/
 ```
+or, if you're using the arcade folder:
+```
+/home/pi/RetroPie/roms/arcade/mame2003/cfg/
+```
 If you rebind global inputs ('Input (general)'), it will update a file in the same directory called `default.cfg`.
 
 These files are not human-readable, but can be safely deleted if you get into a mess and wish to return to the default configuration.
@@ -24,6 +28,10 @@ lr-mame2003 has the useful ability to access games' internal service menus to se
 ```
 /home/pi/RetroPie/roms/mame-libretro/mame2003/nvram/
 ```
+or, if you're using the arcade folder:
+```
+/home/pi/RetroPie/roms/arcade/mame2003/nvram/
+```
 
 ## High scores
 
@@ -34,6 +42,10 @@ lr-mame2003 will attempt to keep a permanent record of any high scores you set, 
 When high scores are saved, they are kept in:
 ```
 /home/pi/RetroPie/roms/mame-libretro/mame2003/hi/
+```
+or, if you're using the arcade folder:
+```
+/home/pi/RetroPie/roms/arcade/mame2003/hi/
 ```
 
 ## Cheats
