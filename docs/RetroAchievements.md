@@ -3,8 +3,8 @@ RetroAchievements are a way to log your achievements on oldschool console games.
 You first need to create an account at http://retroachievements.org/ and then add your credentials to `/opt/retropie/configs/all/retroarch.cfg`
 
 ```
-cheevos_username = yourusername
-cheevos_password = yourpassword
+cheevos_username = "yourusername"
+cheevos_password = "yourpassword"
 cheevos_enable = true
 ```
 
