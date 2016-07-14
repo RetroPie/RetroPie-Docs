@@ -126,7 +126,7 @@ Note that all the emulators accept `.pbp` files, which are EBOOT-format PlayStat
 
 This is the easiest way to play multi-disc PlayStation games on RetroPie.
 
-If a a CD image such as `.iso` or `.bin/.cue` does not work, try the EBOOT version.
+If a CD image such as `.iso` or `.bin/.cue` does not work, try the EBOOT version.
 
 CD images can be converted to EBOOT `.pbp` files with the **PSX2PSP v1.4.2** application for Windows.
 
