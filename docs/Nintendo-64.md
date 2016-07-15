@@ -42,6 +42,8 @@ RetroPie 4.0 forces a resolution of 320x240 for best performance.
 
 ## Tweaks
 
+### Mupen64plus
+
 **RetroPie 3.x:**
 ```
 /opt/retropie/configs/all/autoconf.cfg
@@ -52,7 +54,7 @@ mupen64plus_audio |  enable auto configuration of audio output path | (0/1)
 mupen64plus_hotkeys | enable hotkey auto configuration | (0/1)
 mupen64plus_compatibility_check | enable compatibility check which alters game related settings | (0/1)
 
-**RetroPie 4.0:**
+**RetroPie 4.0: GLideN64/Rice**
 ```
 /opt/retropie/emulators/mupen64plus/bin/mupen64plus.sh line 282
 ```
