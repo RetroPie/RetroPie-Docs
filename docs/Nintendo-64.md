@@ -60,7 +60,7 @@ Scaling Mode --> SDL_VIDEO_RPI_SCALE_MODE=x
 * 2        - Requested video resolution will be scaled to desktop resolution.
 * 3       - Requested video resolution will be scaled to desktop resolution. Aspect ratio of requested video resolution will be respected. If possible output resolution will be integral multiple of video resolution.
 
-Resolution --> '--resolution WIDTHxHEIGHT'
+Resolution --> --resolution WIDTHxHEIGHT
 
 ## Controls
 
