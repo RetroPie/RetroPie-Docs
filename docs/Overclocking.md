@@ -148,8 +148,6 @@ Helpful Tricks to improve performance.
 #Improving Input lag and delay
 Modify the following in your /opt/retropie/configs/all/retroarch.cfg   
 ```
-video_hard_sync = true
-video_hard_sync_frames = 3
 video_frame_delay = 5
 ```
 
