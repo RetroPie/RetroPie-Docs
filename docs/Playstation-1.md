@@ -103,7 +103,7 @@ Then, within a multiplayer game, load up the Retroarch menu via the menu hotkey 
 
 ### Analog Controller Type
 
-lr-pcsc-rearmed controller type can be changed in-game and in a configuration file  to support games that require the dualshock controller type.
+lr-pcsc-rearmed controller type can be changed in-game and in a configuration file to support games that require the analog/dualshock controller type. **NOTE:** Games that do not support analog controls will be unresponsive in this mode.
 * Use the Retroarch GUI hotkey(default select+X) in-game
 * Navigate to Quick Menu -> Core Options
 * Change Pad # Type from standard to analog
