@@ -40,6 +40,16 @@ Place your BIOS files in
 " target="_blank"><img src="https://i.ytimg.com/vi_webp/yAB0_kkaa5s/mqdefault.webp" 
 alt="RetroPie Dreamcast emulation" width="300" height="190" border="10" /></a>  
 
+RetroPie 4.0 uses a output resolution independent render resolution of 640x480. Open `/home/pi/.reicast/emu.cfg` to modify render resolution.
+
+## Tweaks
+
+```
+/opt/retropie/configs/all/autoconf.cfg
+```
+Option | Description | Value
+--- | --- | ---
+reicast_input | enable input auto configuration | (0/1)
 
 ## VMUs
 
