@@ -38,6 +38,29 @@ https://docs.google.com/spreadsheets/d/1e9o3sNLKxlUBDDG6Sr0n6VBwAgwlFGPYr8Al46Md
 
 Low screen resolution are recommended to get best performance. Performance suffers if HD resolutions are used.
 
+RetroPie 4.0 forces a resolution of 320x240 for best performance. 
+
+## Tweaks
+
+RetroPie 3.x:
+/opt/retropie/configs/all/autoconf.cfg
+-mupen64plus_audio                  enable auto configuration of audio output path (0/1)
+-mupen64plus_hotkeys                enable hotkey auto configuration (0/1)
+-mupen64plus_compatibility_check    enable compatibility check which alters game related settings (0/1)
+
+RetroPie 4.0:
+/opt/retropie/emulators/mupen64plus/bin/mupen64plus.sh line 282
+SDL_VIDEO_RPI_SCALE_MODE=x
+   "0"       - Window resolution is desktop resolution.
+               This is the behaviour of SDL <= 2.0.4. (default)
+   "1"       - Requested video resolution will be scaled to desktop resolution.
+               Aspect ratio of requested video resolution will be respected.
+   "2"       - Requested video resolution will be scaled to desktop resolution.
+   "3"       - Requested video resolution will be scaled to desktop resolution.
+               Aspect ratio of requested video resolution will be respected.
+               If possible output resolution will be integral multiple of video
+               resolution.
+
 ## Controls
 
 ### lr-Mupen64plus
@@ -311,5 +334,4 @@ C Button U = button(0)
 ; Generic USB Joystick _END
 
 ```
-
 
