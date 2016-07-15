@@ -46,9 +46,9 @@ RetroPie 3.x:
 ```
 /opt/retropie/configs/all/autoconf.cfg
 ```
-*mupen64plus_audio                  enable auto configuration of audio output path (0/1)
-*mupen64plus_hotkeys                enable hotkey auto configuration (0/1)
-*mupen64plus_compatibility_check    enable compatibility check which alters game related settings (0/1)
+*|mupen64plus_audio                  |enable auto configuration of audio output path (0/1)|
+*|mupen64plus_hotkeys                |enable hotkey auto configuration (0/1)|
+*|mupen64plus_compatibility_check    |enable compatibility check which alters game related settings (0/1)|
 
 RetroPie 4.0:
 ```
