@@ -55,15 +55,10 @@ RetroPie 4.0:
 /opt/retropie/emulators/mupen64plus/bin/mupen64plus.sh line 282
 ```
 SDL_VIDEO_RPI_SCALE_MODE=x
-``"0"       - Window resolution is desktop resolution.
-               This is the behaviour of SDL <= 2.0.4. (default)
-   "1"       - Requested video resolution will be scaled to desktop resolution.
-               Aspect ratio of requested video resolution will be respected.
-   "2"       - Requested video resolution will be scaled to desktop resolution.
-   "3"       - Requested video resolution will be scaled to desktop resolution.
-               Aspect ratio of requested video resolution will be respected.
-               If possible output resolution will be integral multiple of video
-               resolution.
+*"0"       - Window resolution is desktop resolution. This is the behaviour of SDL <= 2.0.4. (default)
+*"1"       - Requested video resolution will be scaled to desktop resolution. Aspect ratio of requested video resolution will be respected.
+*"2"       - Requested video resolution will be scaled to desktop resolution.
+*"3"       - Requested video resolution will be scaled to desktop resolution. Aspect ratio of requested video resolution will be respected. If possible output resolution will be integral multiple of video resolution.
 
 ## Controls
 
