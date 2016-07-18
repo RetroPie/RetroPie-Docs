@@ -22,3 +22,13 @@ cheevos_hardcore_mode_enable = true
 * NES (lr-fceumm - installed by default, lr-QuickNES - found in 'Experimental' menu)
 * SNES (lr-Snes9x-next, lr-pocketsnes, lr-armsnes - installed by default)  
 * Genesis/Mega Drive (lr-picodrive - installed by default)
+
+##RetroAchievements Messages
+
+A commom user question is "How do I increase the size of the RetroAchievements messages on RetroArch?".
+
+How to do it:
+
+Open the file `/opt/retropie/configs/all/retroarch.cfg` and change the line with `video_font_size`. Values between 26-32 should be good on a 40" TV.
+
+If you are used to configure RetroArch with RGUI (not the default on RetroPie), you can go to `Settings` -> `Onscreen Display` -> `OSD Message Size` and change it.
