@@ -94,7 +94,7 @@ Once inside of "zdoom", type the following command to create a folder where The 
 
 To do this, type the following to open into the Nano text editor.
 
-`sudo nano Darkest Hour.sh
+`sudo nano Darkest Hour.sh`
 
  Next we will want type out the following so that it appears exactly as you see it here:
 
