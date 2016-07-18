@@ -27,7 +27,7 @@ cheevos_hardcore_mode_enable = true
 
 A commom user question is "How do I increase the size of the RetroAchievements messages on RetroArch?".
 
-How to do it:
+Actually this configuration is done by changing the font size of all the RetroArch messages, not only the RetroAchievements related ones. How to do it:
 
 Open the file `/opt/retropie/configs/all/retroarch.cfg` and change the line with `video_font_size`. Values between 26-32 should be good on a 40" TV.
 
