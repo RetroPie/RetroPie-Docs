@@ -17,11 +17,11 @@ For more information on custom RetroArch controls see: [RetroArch Configuration]
 
 ### How to Launch Doom IWADs and Mods (PWADs) from Emulationstation using lr-prboom
 
-**To Launch Doom, Ultimate Doom, Doom 2, TNT, Plutonia, Final Doom (IWADS)**
+#### To Launch Doom, Ultimate Doom, Doom 2, TNT, Plutonia, Final Doom (IWADS)
 
-Place your WADs in the doom rom folder, /home/pi/RetroPie/roms/ports/doom.
+Place your WADs in the doom rom folder, `/home/pi/RetroPie/roms/ports/doom`.
 
-Create a script to launch your WAD. For example, for The Plutonia Expriment, create a script, The Plutonia Experiment.sh, which contains the following:
+Create a script to launch your WAD. For example, for The Plutonia Expriment, create a script, `/home/pi/RetroPie/roms/ports/The Plutonia Experiment.sh`, which contains the following:
 
 ```shell
 #!/bin/bash
@@ -29,7 +29,7 @@ Create a script to launch your WAD. For example, for The Plutonia Expriment, cre
 ```
 Create a copy of the script for each WAD, replacing the name of the WAD for each one.
 
-**To Launch Doom Mods (PWADS)**
+#### To Launch Doom Mods (PWADS)
 
 In the doom rom folder, you will need prboom.wad and the Doom IWADs (doom.wad and/or doom2.wad).
 
@@ -55,7 +55,7 @@ Create a shell script, Batman Doom.sh to launch the custom WAD as below. It's th
 
 Repeat for each mod (PWAD), creating a new folder for each one and a copy of the script above replacing the folder name as required.
 
-**Permission Denied Errors**
+#### Permission Denied Errors
 
 A permission denied error after launching a script from EmulationStation means the script is not executable. This can be fixed with the following command (using Batman Doom as an example):
 
