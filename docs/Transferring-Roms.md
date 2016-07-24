@@ -22,7 +22,7 @@ see this video for reference:
 " target="_blank"><img src="https://i.ytimg.com/vi_webp/OYMoxvbkYD4/mqdefault.webp" 
 alt="Configuration Video" width="300" height="190" border="10" /></a>
 
-### SFTP (needs an active internet connection)
+### SFTP (needs to be able to establish a connection to your Raspberry Pi, either via internet or internal network)
 
 * Wired (needs ethernet cable)
 * Wireless (needs Pi >= 3 or wifi dongle for Pi <= 2 )
