@@ -180,6 +180,11 @@ Quick way to do it:
 
 ## Video Tutorials
 
+**Core input remapping**  
+<a href="https://www.youtube.com/watch?v=liJKFUZX4PM
+" target="_blank"><img src="https://i.ytimg.com/vi_webp/liJKFUZX4PM/mqdefault.webp" 
+alt="Core input remapping" width="300" height="190" border="10" /></a>  
+
 **Testing Joypad**  
 <a href="https://www.youtube.com/watch?v=fcRVcPkpLfQ
 " target="_blank"><img src="https://i.ytimg.com/vi_webp/fcRVcPkpLfQ/mqdefault.webp" 
