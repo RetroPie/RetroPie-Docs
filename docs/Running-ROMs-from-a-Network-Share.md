@@ -1,7 +1,5 @@
 **_This page still needs some work and is not ready for publishing_**
 
-#Running ROMs from a Network Share
-
 This guide assumes a few things:
 
 * You are familiar with the command line and editing files
