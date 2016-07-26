@@ -77,7 +77,7 @@ Mine looks like this:
 
 At this point, everything should be good to go. You can play and save games from your childhood. If you want to make things pretty, you'll need to scrape. You'll also find that scraping just doesn't work.
 
-Thank you @sselph for this tip:
+Thank you [@sselph](https://retropie.org.uk/forum/user/sselph) for this tip:
 
 > A simple solution if you just want things to work would be to run
 
