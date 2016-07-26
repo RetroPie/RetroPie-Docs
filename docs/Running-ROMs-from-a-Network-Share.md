@@ -7,7 +7,7 @@ This guide assumes a few things:
     * Such as your IP addresses and underlying shared folder structures
 * You've already installed RetroPie
 * You've configured wifi or you have ethernet plugged in
-* I use vi because I'm a creature of habit and 10+ years in vi is a hard one to break. Even if nano is easier to use. If you don't use vi, I assume you know how to use your editor of choice to achieve the same results.
+* I use vi because I'm a creature of habit and 15+ years in vi is a hard one to break. Even if nano is easier to use. If you don't use vi, I assume you know how to use your editor of choice to achieve the same results.
 
 ## Mirror the 'roms' folder to your server
 
