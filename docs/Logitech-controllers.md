@@ -151,3 +151,8 @@ R Trig = button(4)
 L Trig = button(5)
 Z Trig = axis(2+)
 ~~~
+
+#### 310 Disconnecting Issue
+You may or may not experience an issue where, after loading a rom, the controller is no longer responsive. Assuming it's set up as this wiki describes, you will need to press the right shoulder or trigger button. For me this works by pressing what was called the R1 button on the psx.
+
+You can read a little bit more about it [here](https://www.reddit.com/r/RetroPie/comments/3yh7o3/pi_zero_latest_retropie_logitech_f310/).
