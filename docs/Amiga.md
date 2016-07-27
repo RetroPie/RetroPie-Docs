@@ -47,7 +47,7 @@ z          - mouse 1  (button B in gui)
 
 arrow keys - up / down / left / right
 
-F12 (Open emulator menù)
+F12 and/or [CTRL]+[ESC] - Open emulator menu
 ```
 
 Launch it from Emulation Station, and you get the GUI where you can configure disks/roms/memory and insert adf images into the virtual floppy disk drives.
