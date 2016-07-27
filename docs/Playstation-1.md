@@ -30,10 +30,12 @@ This means that a .cue file is required to start the game.
   
 A .cue file is basically a plain text file that tells the emulator where in the .bin file the (data and/or audio) track(s) are. This is often important in the case where multiple audio files are in the single .bin file. These are often called "mixed mode" discs. [Wikipedia .cue files](https://en.wikipedia.org/wiki/Cue_sheet_(computing))
   
-If you only have a .bin file and no .cue file, you can generate it manually here (to get the .bin to load):
+If you only have a .bin file and no .cue file, you can generate it:
+* Manually:
 http://www.shivaranjan.com/2007/01/03/how-to-create-cue-file-for-a-bin-file-in-5-steps/  
-or use this tool  
+* Individually:
 http://www.dslreports.com/r0/download/373724~1e45059000cfc371c157f544cc5aef07/MakeCue.zip
+* En masse or individually: https://github.com/thorst/CueMaker
   
 **Why .bin was removed**
 - It is very common for PSX games to be in 2 parts, a .bin and .cue, this means that Emulation Station will show duplicates for each game which no-one really wants. This is because it used to show extensions .bin and .cue
