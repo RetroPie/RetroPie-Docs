@@ -15,11 +15,11 @@ If you installed Raspbian first or something like that, you may need to use sFTP
 As a side note, I was unable to move some of the files in the 'ports' system. If you can move the ports or you don't care to keep them, you may want to empty the roms folder and mount your share there. It will save you at least one step in configuration.
 
 ## Mount your Share
-Great! First things first, lets mount the share. We'll need to make the target folder and use your favorite editor to edit /etc/fstab -- I use vi:
+Great! First things first, lets mount the share. We'll need to make the target folder and use your favorite editor to edit /etc/fstab
 
     cd ~/RetroPie
     mkdir smb
-    sudo vi /etc/fstab
+    sudo nano /etc/fstab
 
 Add the line to mount your network share. Mine looks like this:
 
@@ -42,19 +42,18 @@ Restart and check the folder to make sure it didn't have any issues mounting at 
 With any luck, it will be fairly apparent that it was able to mount the share at boot.
 
 ## Changing the System Paths
-_If you mounted to ~/RetroPie/roms, you can skip this step_
+_If you mounted to ~/RetroPie/roms or to ~/RetroPie/, you can skip this step_
 
-We need to tell EmulationStation to look in the ~/RetroPie/smb folder instead of /roms/
+We need to tell EmulationStation to look in the ~/RetroPie/smb folder instead of ~/RetroPie/roms/.
+First, copy es_systems.cfg to ~/.emulationstation/es_systems.cfg so it doesn't get overwritten
 
-    sudo vi /etc/emulationstation/es_systems.cfg
+    cp /etc/emulationstation/es_systems.cfg ~/.emulationstation/es_systems.cfg
 
-I did a search and replace in vi, substituting 'roms' for 'smb':
+Use your favorite editor to open es_systems.cfg
 
-    :%s/roms/smb/
+    sudo nano ~/.emulationstation/es_systems.cfg
 
-Make sure everything updated and the path is correct, then save and exit
-
-    :wq
+Change the path for each emulator from /home/pi/RetroPie/roms to /home/pi/RetroPie/smb
 
 ## Saving Games
 At this point, you should be able to restart the Pi and play some games. But you may not be able to save your progress at this moment. 
