@@ -99,7 +99,7 @@ Mine looks like this:
 
 If you already have some save files, it would be a good idea to move them to the ~/RetroPie/save folder we created.
 
-## Tips
+## Scraping
 
 At this point, everything should be good to go. You can play and save games from your childhood. If you want to make things pretty, you'll need to scrape. You may also find that scraping just doesn't work. Thank you [@sselph](https://retropie.org.uk/forum/user/sselph) for this tip:
 
@@ -113,3 +113,6 @@ At this point, everything should be good to go. You can play and save games from
 
     cd /home/pi/RetroPie/smb/nes
     sudo /opt/retropie/supplementary/scraper/scraper -thumb_only -workers 4
+
+## Thank You
+Thank you, everyone at the Raspberry Pi foundation, everyone involved in the development of EmulationStation and RetroPie, authors of several guides that I can't recall the names of, @sselph, @BuZz and probably a few other people.
