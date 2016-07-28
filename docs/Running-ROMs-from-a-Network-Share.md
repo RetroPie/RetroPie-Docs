@@ -1,5 +1,3 @@
-**_This page still needs some work and is not ready for publishing_**
-
 This guide assumes a few things:
 
 * You are familiar with the command line and editing files
@@ -26,7 +24,7 @@ Great! First things first, lets mount the share. We'll need to make the target f
 
 Add the line to mount your network share. Mine looks like this:
 
-    //192.168.1.10/Storage/ROMs /home/pi/RetroPie/smb username=Username,password=Password,
+    //192.168.1.10/Storage/ROMs /home/pi/RetroPie/smb username=Username,password=Password,nounix,noserverino,defaults,users,auto 0 0
 
 First, make sure it will mount:
 
@@ -36,7 +34,7 @@ If you haven't already, now is a good time to tell your Pi to wait for network a
 
     sudo raspi-config
 
-In there, select the 3rd option and tell it Yes, to wait for network at boot.
+In there, select the 4th option and tell it Yes.
 Restart and check the folder to make sure it didn't have any issues mounting at boot
 
     sudo reboot
@@ -60,7 +58,7 @@ Make sure everything updated and the path is correct, then save and exit
     :wq
 
 ## Saving Games
-At this point, you should be able to restart the Pi and play some games. You probably won't be able to save though because the default functionality is to put the save file right next to the rom.
+At this point, you should be able to restart the Pi and play some games. But you may not be able to save your progress at this moment. 
 
 We need to edit retroarch.cfg by commenting out the savestate_directory and savefile_directory lines and put in the desired path. I'll be using ~/RetroPie/save
 
@@ -73,11 +71,11 @@ Mine looks like this:
     savestate_directory = /home/pi/RetroPie/save
     savefile_directory = /home/pi/RetroPie/save
 
+If you already have some saved files, it would be a good idea to move them to the ~/RetroPie/save folder we created.
+
 ## Tips
 
-At this point, everything should be good to go. You can play and save games from your childhood. If you want to make things pretty, you'll need to scrape. You'll also find that scraping just doesn't work.
-
-Thank you [@sselph](https://retropie.org.uk/forum/user/sselph) for this tip:
+At this point, everything should be good to go. You can play and save games from your childhood. If you want to make things pretty, you'll need to scrape. You'll may also find that scraping just doesn't work. Thank you [@sselph](https://retropie.org.uk/forum/user/sselph) for this tip:
 
 > A simple solution if you just want things to work would be to run
 
