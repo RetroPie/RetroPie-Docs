@@ -8,13 +8,17 @@ Storing your ROMs on a seperate computer all-together solves a number of problem
 
 ## Mirror the 'RetroPie' or 'roms' folder to your server
 
-Options:
-One, put the entire RetroPie folder on your server. This requires less tinkering with config files and, you might as well
-Two, copy the contents of the roms folder on your server. I only left this option because I couldn't move one of the ports, didn't want to mess with it anymore and didn't want to lose the port.
+Options:  
 
-This can be done a number of different ways. If you installed the RetroPie image to your SD card, the easiest thing is to go to your main computer, navigate to the hostname or ip address of your raspberry pi and copy the contents to wherever you want on your share (preferably in a simple path)
+1. Put the entire RetroPie folder on your server  
+     1.a. This requires less tinkering with config files  
+     1.b. You might as well  
+2. Copy the contents of the roms folder on your server  
+     2.a. I only left this option because I couldn't move one of the ports, didn't want to mess with it anymore and didn't want to it
 
-If you installed Raspbian first or something like that, you may need to use sFTP, setup smb sharing or something similar.
+This can be done a number of different ways. If you installed the RetroPie image to your SD card, the easiest thing is to go to your main computer, navigate to the hostname or ip address of your raspberry pi and copy the contents to wherever you want on your share (preferably in a simple path).
+
+If you installed Raspbian first or something like that, you may need to use sFTP, setup samba sharing or something similar.
 
 I was unable to move some of the files in the 'ports' system. This is why I chose to mount the share to a different folder and adjust the paths. If you can move the ports or you don't care to keep them, you should take option one and move the entire RetroPie contents to your server and save yourself from editing a config file later on.
 
@@ -35,7 +39,7 @@ Restart and make sure it mounted the folder
 
 ### Option 2: Add to fstab
 
-If you're just storing ROMs on the server, then make the directory you want to mount to:
+If you're only storing ROMs on the server, then make the directory you want to mount to:
 
     cd ~/RetroPie
     mkdir smb
