@@ -4,7 +4,7 @@ Storing your ROMs on a seperate computer all-together solves a number of problem
 2. You'll (almost) never corrupt your SD card
 3. It's more convenient
 4. It has practically unlimited storage
-5. It's probably faster
+5. It's faster
 6. If you're using a Raspberry Pi 3, you only need power, HDMI and controller cables/dongles
 
 ## Mirror the 'roms' folder to your server
