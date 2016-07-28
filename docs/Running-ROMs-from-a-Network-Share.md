@@ -1,11 +1,11 @@
-This guide assumes a few things:
+Storing your ROMs on a seperate computer all-together solves a number of problems and has equally as many benefits.
 
-* You are familiar with the command line and editing files
-* You are familiar with the layout of your network
-    * Such as your IP addresses and underlying shared folder structures
-* You've already installed RetroPie
-* You've configured wifi or you have ethernet plugged in
-* I use vi because I'm a creature of habit and 15+ years in vi is a hard one to break. Even if nano is easier to use. If you don't use vi, I assume you know how to use your editor of choice to achieve the same results.
+1. Negates the need to transfer ROMs
+2. You'll (almost) never corrupt your SD card
+3. It's more convenient
+4. It has practically unlimited storage
+5. It's probably faster
+6. If you're using a Raspberry Pi 3, you only need power, HDMI and controller cables/dongles
 
 ## Mirror the 'roms' folder to your server
 
