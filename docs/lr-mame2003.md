@@ -105,7 +105,7 @@ mame2003-skip_warnings = "enabled"
 
 ## Mouse/Trackball/Analog Controller support
 
-By default, mice/trackballs and analog sticks (the left one, for controllers with 2) are supported in games that would have them, or equivalents. For example, Centipede supports the mouse/trackball, and Afterburner supports the stick. Lightgun games are supported by either.
+By default, mice/trackballs and analog sticks (the left one, for controllers with 2) are supported in games that would have them, or equivalents. For example, Centipede supports the mouse/trackball, and Afterburner supports the stick. Lightgun games are supported by either. The left and right mouse buttons can be bound to fire/etc using the [MAME Menu](#MAME-Menu).
 
 ## Feature requests
 
