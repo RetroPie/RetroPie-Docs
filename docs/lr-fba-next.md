@@ -31,7 +31,7 @@ Some sound effects in a few older (typically pre-1986) arcade games are difficul
 ## Neo Geo UNIBIOS
 For Neo Geo games, you may want to use the [UNIVERSE BIOS/UNIBIOS](http://unibios.free.fr/) - an advanced Neo Geo bios that allows region selection, cheats, dip-switch control, and more. To activate, start a Neo Geo game, hold hotkey (by default, Select) & X (the top button) to access the GUI, and then **Quick Menu** > **Options** > Change **Neo Geo mode** to **UNIBIOS**.
 
-If using a `neogeo.zip` which does *not* contain the latest available Unibios, you must go down to the **BIOS** core option and use left/right to select a version of the Unibios which is present in `neogeo.zip`. If you do have the latest Unibios, you don't need to manually select a BIOS version.
+Note that this will automatically use the latest version of the UNIBIOS avaialble in your `neogeo.zip`. If you want to select a specific version, use the **BIOS** core option, however note that this setting applies per-game, rather than system-wide, like the **Neo Geo mode** setting.
 
 Use the **B** button to go back to the **Quick Menu** and select **Restart Content** then **Resume Content**. You should see the Unibios boot screen before the usual "Max 330 Mega Pro-Gear Spec" screen.
 
