@@ -1,6 +1,8 @@
 RetroPie uses forks of the [MAME](http://mamedev.org/) and [FinalBurn Alpha](http://www.barryharris.me.uk/) emulators that work well on the Raspberry Pi hardware, but are based on older versions of the original code.  Your ROMs may be for earlier or later versions of MAME/FBA and if they are, they most likely will not work.
 
-To understand what a MAME ROM is and contains and why they are different between different emulator versions, check out: [Demystifying MAME ROMs Tutorial by ChoccyHobNob](http://choccyhobnob.com/tutorials/demystifying-mame-roms/).
+To understand what a MAME ROM is and contains and why they are different between different emulator versions, check out: [Demystifying MAME ROMs Tutorial by ChoccyHobNob](http://choccyhobnob.com/tutorials/demystifying-mame-roms/).  
+
+You may also find this forum post explains how arcade emulators work with RetroPie: [How to use MAME with RetrroPie - Help Guide](https://retropie.org.uk/forum/topic/2859/how-to-use-mame-with-retropie-help-guide)
 
 The following chart is a quick reference for all the arcade emulators in RetroPie.
 
