@@ -139,6 +139,7 @@
 * [Wii U Pro Controller (Debian jessie only)](Setting-up-Wii-U-Pro-controller)
 * [Xin-Mo Driver](Xin-Mo-Controller)
 * [GPIO Controller Modules](GPIO-Modules)
+* [Spinners and Trackballs](Spinners-and-Trackballs)
 
 ## Troubleshooting
 
