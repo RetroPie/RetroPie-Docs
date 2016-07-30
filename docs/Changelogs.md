@@ -2,6 +2,29 @@
 
 This page is a list of all of the changelogs for each version of RetroPie. For a complete list of all commits to the source code see [here:](https://github.com/petrockblog/RetroPie-Setup/commits/master)  
 
+### Version 4.0 RC1: (July 23, 2016)
+
+   - Setup script improvements:
+       - Added the ability to install/update and remove packages.
+       - Added help docs to the setup script.
+   - Renamed mednafen emulators to beetle to match upstream libretro repositories.
+   - Renaming of ES input configuration which was causing confusion for shoulder/trigger inputs.
+   - Input configuration script to set up player 1 automatically on pifba.
+   - Updated PSP emulators ppsspp and lr-ppsspp with a fix for the pausing during play.
+   - Autostart improvements: boot to kodi option added - (exiting kodi will take you back to emulationstation).
+   - Improvements to mupen64plus Glide64 video plugin, which is now the default.
+   - Updates to various other emulators including reicast, lr-fceumm, lr-nestopia, lr-snes9x-next and the RetroArch frontend.
+   - SDL2 dispmanx scaling, so SDL2 software can render to a lower resolution and be scaled in hardware. This enhances performance on mupen64plus for example, without having to change the video mode.
+   - Improvements to the bluetooth configuration, including the ability to try and reconnect to devices in the background, and an option to switch off our mapping hack for 8bitdo, so devices with a newer firmware will work correctly with retroarch.
+   - Splashscreen improvements: New default splashscreen thanks to rookervik and a new splashscreen repository with more splashscreens.
+   - New experimental modules:
+       - TRS-80 emulator sdltrs.
+       - TI-99/4A emulator ti99sim.
+       - Oric 1/Atmos emulator Oricutron.
+       - Dinothawr (lr-dinothawr - standalone libretro puzzle game).
+       - Alternate Virtual Gamepad by sbidolach.
+   - Various other bugfixes and improvements.
+
 ### Version 4.0 BETA 2: (June 21, 2016)
    - Setup script improvements:
        - Added the ability to install/update and remove packages.
