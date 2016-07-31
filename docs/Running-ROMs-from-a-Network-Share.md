@@ -35,7 +35,7 @@ Add the following line to the top of that file, being sure to adjust it for your
 Restart and make sure it mounted the folder
 
     sudo reboot
-    ls RetroPie/
+    ls RetroPie
 
 ### Option 2: Add to fstab
 
