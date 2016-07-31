@@ -37,6 +37,10 @@ Restart and make sure it mounted the folder
     sudo reboot
     ls RetroPie
 
+Take ownership of the RetroPie directory and sub-contents
+
+    sudo chown -R pi:pi RetroPie
+
 ### Option 2: Add to fstab
 
 If you're only storing ROMs on the server, then make the directory you want to mount to:
