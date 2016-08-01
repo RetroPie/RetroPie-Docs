@@ -93,5 +93,10 @@ If you have a known working game that won't load after doing this setup, you may
 Right click the folder that contains your roms and BIOS folders, select "Properties", clear the box labeled "Read Only".
 Sometimes this box will have a check mark or it may just be filled with gray, either way, make sure the box is clear. Select "Apply" and tell it to "Apply to all subfolders and files". After that process completes, you should be able to load your games. You may need to restart the Raspberry
 
+### Additional Help
+
+I started a discussion on the forums for this article. I haven't written any guides for many years so this will be a good place to provide any feedback or ask any questions. If I'm not advanced enough to help, hopefully someone else can chime in or you may need to make your own thread depending on the nature of the issue.
+[ROMs from a Network Share (Discussion)](https://retropie.org.uk/forum/topic/2870/running-roms-from-a-network-share)
+
 ## Thank You
 Thank you, everyone at the Raspberry Pi foundation, everyone involved in the development of EmulationStation and RetroPie, authors of several guides that I can't recall the names of, @sselph, @BuZz and probably a few other people.
