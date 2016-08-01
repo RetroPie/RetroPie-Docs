@@ -8,21 +8,15 @@ Storing your ROMs on a seperate computer all-together solves a number of problem
 
 ## Mirror the 'RetroPie' or 'roms' folder to your server
 
-Options:  
-
-1. Put the entire RetroPie folder on your server  
-     1.a. This requires less tinkering with config files  
-     1.b. You might as well  
-2. Copy the contents of the roms folder on your server  
-     2.a. I only left this option because I couldn't move one of the ports, didn't want to mess with it anymore and didn't want to it
-
-This can be done a number of different ways. If you installed the RetroPie image to your SD card, the easiest thing is to go to your main computer, navigate to the hostname or ip address of your raspberry pi and copy the contents to wherever you want on your share (preferably in a simple path).
-
-If you installed Raspbian first or something like that, you may need to use sFTP, setup samba sharing or something similar.
-
-I was unable to move some of the files in the 'ports' system. This is why I chose to mount the share to a different folder and adjust the paths. If you can move the ports or you don't care to keep them, you should take option one and move the entire RetroPie contents to your server and save yourself from editing a config file later on.
+This can be done a number of different ways. If you installed the RetroPie image to your SD card, the easiest thing is to go to your main computer, navigate to the hostname or ip address of your raspberry pi and copy the contents to wherever you want on your share (preferably in a simple path). If you're unable to move/copy all of the contents or you haven't setup smb shares for RetroPie, I found FTP to be favorable. Grab a copy of WinSCP or whatever you prefer to use.
 
 ## Mount your Share
+
+If you haven't already, now is a good time to tell your Pi to wait for network at boot
+
+    sudo raspi-config
+
+In there, select the 4th option and tell it Yes.
 
 ### Option 1: Add to autostart.sh (Preferred if using v4.0+)
 
@@ -37,16 +31,7 @@ Restart and make sure it mounted the folder
     sudo reboot
     ls RetroPie
 
-Take ownership of the RetroPie directory and sub-contents
-
-    sudo chown -R pi:pi RetroPie
-
 ### Option 2: Add to fstab
-
-If you're only storing ROMs on the server, then make the directory you want to mount to:
-
-    cd ~/RetroPie
-    mkdir smb
 
 Using your favorite editor, open up fstab:
 
@@ -54,56 +39,35 @@ Using your favorite editor, open up fstab:
 
 Add the line to mount your network share. Mine looks like this:
 
-    //192.168.1.10/Storage/ROMs /home/pi/RetroPie/smb cifs username=Username,password=Password,nounix,noserverino,defaults,users,auto 0 0
+    //192.168.1.10/Storage/ROMs /home/pi/RetroPie cifs username=Username,password=Password,nounix,noserverino,defaults,users,auto 0 0
 
 First, make sure it will mount:
 
     sudo mount -a
 
-If you haven't already, now is a good time to tell your Pi to wait for network at boot
-
-    sudo raspi-config
-
-In there, select the 4th option and tell it Yes.
 Restart and check the folder to make sure it didn't have any issues mounting at boot
 
     sudo reboot
-    sudo ls ~/RetroPie/smb
+    sudo ls ~/RetroPie/roms/snes
 
-With any luck, it will be fairly apparent that it was able to mount the share at boot.
-
-## Changing the System Paths
-_If you mounted to ~/RetroPie/, you can skip this step_
-
-We need to tell EmulationStation to look in the ~/RetroPie/smb folder instead of ~/RetroPie/roms/.
-First, copy es_systems.cfg to ~/.emulationstation/es_systems.cfg so it doesn't get overwritten
-
-    cp /etc/emulationstation/es_systems.cfg ~/.emulationstation/es_systems.cfg
-
-Using your favorite editor, open es_systems.cfg
-
-    sudo nano ~/.emulationstation/es_systems.cfg
-
-Change the path for each emulator from /home/pi/RetroPie/roms to /home/pi/RetroPie/smb and restart.
+With any luck (and if you have a ton of SNES ROMs like myself), it will be fairly apparent that it was able to mount the share at boot.
 
 ## Saving Games
 
 Go ahead and make sure everything works. Don't get to far into a game though, you might not be able to save. If you hit 'Select + R' (default save command) and it gives you an error, the easiest solution I've found is as follows.
 
-We need to edit retroarch.cfg by deleting the # infront of the savestate_directory and savefile_directory lines and put in the desired path. I'll be using ~/RetroPie/save
+We need to edit retroarch.cfg by deleting the # infront of the savestate_directory and savefile_directory lines and put in the desired path. I'll be using ~/RetroPie-Save
 
-    cd ~/RetroPie
-    mkdir save
+    cd
+    mkdir RetroPie-Save
     sudo nano /opt/retropie/configs/all/retroarch.cfg 
 
 Mine looks like this:
 
-    savestate_directory = /home/pi/RetroPie/save
-    savefile_directory = /home/pi/RetroPie/save
+    savestate_directory = /home/pi/RetroPie-Save
+    savefile_directory = /home/pi/RetroPie-Save
 
-If you already have some save files, it would be a good idea to move them to the ~/RetroPie/save folder we created.
-
-It may be worth noting that I went through the setup again. This time, storing the entire ~/RetroPie folder on my server. With this setup, I had to move my save folder to /home/pi. So now I'm saving to /home/pi/RetroPie-Save.
+If you already have some save files, it would be a good idea to move them to the ~/RetroPie-Save folder we created.
 
 ## Scraping
 
@@ -117,7 +81,7 @@ At this point, everything should be good to go. You can play and save games from
 
 > The other option that is a little slower is to cd to each directory and run the scraper
 
-    cd /home/pi/RetroPie/smb/nes
+    cd /home/pi/RetroPie/roms/nes
     sudo /opt/retropie/supplementary/scraper/scraper -thumb_only -workers 4
 
 ## Troubleshooting
