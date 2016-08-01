@@ -48,7 +48,7 @@ First, make sure it will mount:
 Restart and check the folder to make sure it didn't have any issues mounting at boot
 
     sudo reboot
-    sudo ls ~/RetroPie/roms/snes
+    sudo ls RetroPie/roms/snes
 
 With any luck (and if you have a ton of SNES ROMs like myself), it will be fairly apparent that it was able to mount the share at boot.
 
@@ -56,7 +56,7 @@ With any luck (and if you have a ton of SNES ROMs like myself), it will be fairl
 
 Go ahead and make sure everything works. Don't get to far into a game though, you might not be able to save. If you hit 'Select + R' (default save command) and it gives you an error, the easiest solution I've found is as follows.
 
-We need to edit retroarch.cfg by deleting the # infront of the savestate_directory and savefile_directory lines and put in the desired path. I'll be using ~/RetroPie-Save
+We need to edit retroarch.cfg by deleting the # infront of the savestate_directory and savefile_directory lines and put in the desired path. I'll be using ~/RetroPie-Save. First, make the target folder:
 
     cd
     mkdir RetroPie-Save
@@ -91,7 +91,7 @@ At this point, everything should be good to go. You can play and save games from
 If you have a known working game that won't load after doing this setup, you may need to make sure the folder on your Windows system isn't marked as 'Read-Only'
 
 Right click the folder that contains your roms and BIOS folders, select "Properties", clear the box labeled "Read Only".
-Sometimes this box will have a check mark or it may just be filled with gray, either way, make sure the box is clear. Select "Apply" and tell it to "Apply to all subfolders and files". After that process completes, you should be able to load your games.
+Sometimes this box will have a check mark or it may just be filled with gray, either way, make sure the box is clear. Select "Apply" and tell it to "Apply to all subfolders and files". After that process completes, you should be able to load your games. You may need to restart the Raspberry
 
 ## Thank You
 Thank you, everyone at the Raspberry Pi foundation, everyone involved in the development of EmulationStation and RetroPie, authors of several guides that I can't recall the names of, @sselph, @BuZz and probably a few other people.
