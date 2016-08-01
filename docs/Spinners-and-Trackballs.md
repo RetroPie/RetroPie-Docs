@@ -28,7 +28,7 @@ device_raw_mousedev[3] /dev/input/mouse3
 device_raw_mousetype[0] ps2
 device_raw_mousetype[1] ps2
 device_raw_mousetype[2] ps2
-device_raw_mousetype[4] ps2
+device_raw_mousetype[3] ps2
 ```
 This establishes 4 different mouse inputs which is probably more than most people will need.
 
