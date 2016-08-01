@@ -103,6 +103,8 @@ Mine looks like this:
 
 If you already have some save files, it would be a good idea to move them to the ~/RetroPie/save folder we created.
 
+It may be worth noting that I went through the setup again. This time, storing the entire ~/RetroPie folder on my server. With this setup, I had to move my save folder to /home/pi. So now I'm saving to /home/pi/RetroPie-Save.
+
 ## Scraping
 
 At this point, everything should be good to go. You can play and save games from your childhood. If you want to make things pretty, you'll need to scrape. You may also find that scraping just doesn't work. Thank you [@sselph](https://retropie.org.uk/forum/user/sselph) for this tip:
@@ -117,6 +119,15 @@ At this point, everything should be good to go. You can play and save games from
 
     cd /home/pi/RetroPie/smb/nes
     sudo /opt/retropie/supplementary/scraper/scraper -thumb_only -workers 4
+
+## Troubleshooting
+
+### Games Won't Load
+
+If you have a known working game that won't load after doing this setup, you may need to make sure the folder on your Windows system isn't marked as 'Read-Only'
+
+Right click the folder that contains your roms and BIOS folders, select "Properties", clear the box labeled "Read Only".
+Sometimes this box will have a check mark or it may just be filled with gray, either way, make sure the box is clear. Select "Apply" and tell it to "Apply to all subfolders and files". After that process completes, you should be able to load your games.
 
 ## Thank You
 Thank you, everyone at the Raspberry Pi foundation, everyone involved in the development of EmulationStation and RetroPie, authors of several guides that I can't recall the names of, @sselph, @BuZz and probably a few other people.
