@@ -54,7 +54,7 @@ Using your favorite editor, open up fstab:
 
 Add the line to mount your network share. Mine looks like this:
 
-    //192.168.1.10/Storage/ROMs /home/pi/RetroPie/smb username=Username,password=Password,nounix,noserverino,defaults,users,auto 0 0
+    //192.168.1.10/Storage/ROMs /home/pi/RetroPie/smb cifs username=Username,password=Password,nounix,noserverino,defaults,users,auto 0 0
 
 First, make sure it will mount:
 
