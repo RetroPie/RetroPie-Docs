@@ -1,59 +1,68 @@
 Installation
 
-    If you're like me you have a tiny SDCard in your RPi running OSMC, but now you want to play some roms, if you try to install full RetroPie you will run out of space and OSMC will panic and die with no space left.
+If you're like me you have a tiny SDCard in your RPi running OSMC, but now you want to play some roms, if you try to install full RetroPie you will run out of space and OSMC will panic and die with no space left.
     
-    So I decided to do a few easy quick mods to make it install to a USB Drive plugged in to a connected power USB hub.
+So I decided to do a few easy quick mods to make it install to a USB Drive plugged in to a connected power USB hub.
     
-    If you want to update an older installation, please uninstall the old version first via the script:
+If you want to update an older installation, please uninstall the old version first via the script:
     
-    Plugin your USB Drive to the RPi, Format it EXT4
+Plugin your USB Drive to the RPi, Format it EXT4
     
-    SSH into your OSMC installation.
+SSH into your OSMC installation.
     
-    You will lose all your data on your USB Drive if you do this!!!
+You will lose all your data on your USB Drive if you do this!!!
     
-    Find your USB Drive with:
+Find your USB Drive with:
     lsblk
     
-    MMCBLK0 is normally your SDCard (Do not kill this one).
+MMCBLK0 is normally your SDCard (Do not kill this one).
     
-    My USB Drive was SDA (8GB). 
+My USB Drive was SDA (8GB). 
     
     umount /dev/sda
     
     fdisk /dev/sda
-    Delete all partitions with:
+
+Delete all partitions with:
+
     d
-    Press partition numbers until all removed.
+
+Press partition numbers until all removed.
     
-    Write partition table.
+Write partition table.
+
     w
     
-    Then quit
+Then quit
+
     q
     
-    Format our usb drive with EXT4 (Linux File System).
+Format our usb drive with EXT4 (Linux File System).
+
     mkfs.ext4 /dev/sda -L RETROPIE
     
-    Rename our drive label RETROPIE (If you forget to label your drive in the last step)
+Rename our drive label RETROPIE (If you forget to label your drive in the last step)
+
     e2label /dev/sda RETROPIE
     
-    Remove the USB Drive from the port and reinsert it. It should now be remounted under /media/RETROPIE/
+Remove the USB Drive from the port and reinsert it. It should now be remounted under /media/RETROPIE/
     
-    Download the installation script to your OSMC home directory:
+Download the installation script to your OSMC home directory:
     
     cd /home/osmc
     wget https://raw.githubusercontent.com/mcobit/retrosmc/master/install-retrosmc.sh
-    Make it executable by running:
+
+Make it executable by running:
     
     chmod +x install-retrosmc.sh
-    Then run it:
+
+Then run it:
     
     ./install-retrosmc.sh
     
-    Click install Retrosmc 
+Click install Retrosmc 
     
-    After it finishes downloading the setup scripts (ie you see the options menu) click cancel until you are back to the cli.
+After it finishes downloading the setup scripts (ie you see the options menu) click cancel until you are back to the cli.
     
     cd ~/RetroPie-Setup
     
@@ -64,7 +73,7 @@ Installation
     modify this line to:
     rootdir="/media/RETROPIE/retropie"
     
-    Save:
+Save:
     Press ctrl x
     Press y
     Press <Enter>
@@ -73,35 +82,30 @@ Installation
     ../install-retrosmc.sh
     
     
-    Click install Retrosmc again.
+Click install Retrosmc again.
     
-    Once you get to the second menu select "Binary-based installation (recommended)" when the RetroPie-Setup script pops up and press enter.
-    
-    
-    
-    After the RetroPie-Setup script finished the installation, press Enter for all windows, mentioning DATA and BIOS files for the emulators. When back at the main RetroPie menu, choose "Cancel"!
-    
-    
-    Install the Launcher Addon, you will find your shortcut in the Programaddons in kodi.
-    
-    
-    
-    You can exit the menu by choosing Cancel at the bottom after every task.
-    
-    
+Once you get to the second menu select "Binary-based installation (recommended)" when the RetroPie-Setup script pops up and press enter.
+
+After the RetroPie-Setup script finished the installation, press Enter for all windows, mentioning DATA and BIOS files for the emulators. When back at the main RetroPie menu, choose "Cancel"!
+
+Install the Launcher Addon, you will find your shortcut in the Programaddons in kodi.
+
+You can exit the menu by choosing Cancel at the bottom after every task.
+
     nano /home/osmc/RetroPie/scripts/retropie.sh
-    Change:
+
+Change:
+
     es_bin="/opt/retropie/supplementary/emulationstation/emulationstation"
-    To:
+To:
     es_bin="/media/RETROPIE/retropie/supplementary/emulationstation/emulationstation"
-    
+
     Save:
     Press ctrl x
     Press y
     Press <Enter>
-    
-    
-    Let's move the roms folder to the Flash Drive as well now and make a soft system link to it.
+
+Let's move the roms folder to the Flash Drive as well now and make a soft system link to it.
     
     cd ../RetroPie
     mv roms roms2
@@ -113,6 +117,5 @@ Installation
     rsync roms2 /media/RETROPIE/roms
     
     ln -s /media/RETROPIE/roms roms
-    
 
 Original install documentation see there for more help with issues: https://discourse.osmc.tv/t/howto-retrosmc-retrogaming-on-osmc/6671
