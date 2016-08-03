@@ -152,6 +152,52 @@ L Trig = button(5)
 Z Trig = axis(2+)
 ~~~
 
+#### Dreamcast
+The following file should match below:
+/opt/retropie/configs/dreamcast/mappings/controller_LogitechGamepadF310.cfg
+Source: https://www.reddit.com/r/RetroPie/comments/4u0sys/fairly_successful_controller_mapping_for_logitech/
+~~~
+[emulator]
+mapping_name = Logitech Gamepad F310
+btn_escape = 314
+
+[dreamcast]
+btn_a = 304
+btn_b = 305
+btn_c =
+btn_d =
+btn_x = 307
+btn_y = 308
+btn_z =
+btn_start = 315
+btn_dpad1_left =
+btn_dpad1_right =
+btn_dpad1_up =
+btn_dpad1_down =
+btn_dpad2_left =
+btn_dpad2_right =
+btn_dpad2_up =
+btn_dpad2_down =
+axis_x = 3
+axis_y = 4
+axis_trigger_left = 
+axis_trigger_right =
+
+[compat]
+btn_trigger_left = 310
+btn_trigger_right = 311
+axis_dpad1_x = 16
+axis_dpad1_y = 17
+axis_dpad2_x = 0
+axis_dpad2_y = 1
+axis_x_inverted = no
+axis_y_inverted = no
+axis_trigger_left_inverted = no
+axis_trigger_right_inverted = no
+axis_dpad1_y_inverted = no
+axis_dpad1_x_inverted = no
+~~~
+
 #### 310 Disconnecting Issue
 You may or may not experience an issue where, after loading a rom, the controller is no longer responsive. Assuming it's set up as this wiki describes, you will need to press the right shoulder or trigger button. For me this works by pressing what was called the R1 button on the psx.
 
