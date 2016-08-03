@@ -157,18 +157,17 @@ The following file should match below:
 `/opt/retropie/configs/dreamcast/mappings/controller_LogitechGamepadF310.cfg`
 
 [Source](https://www.reddit.com/r/RetroPie/comments/4u0sys/fairly_successful_controller_mapping_for_logitech)
-~~~
-[emulator]
+~~~[emulator]
 mapping_name = Logitech Gamepad F310
-btn_escape = 314
+btn_escape = 316
 
 [dreamcast]
-btn_a = 304
-btn_b = 305
+btn_a = 305
+btn_b = 304
 btn_c =
 btn_d =
-btn_x = 307
-btn_y = 308
+btn_x = 308
+btn_y = 307
 btn_z =
 btn_start = 315
 btn_dpad1_left =
@@ -179,8 +178,8 @@ btn_dpad2_left =
 btn_dpad2_right =
 btn_dpad2_up =
 btn_dpad2_down =
-axis_x = 3
-axis_y = 4
+axis_x = 0
+axis_y = 1
 axis_trigger_left = 
 axis_trigger_right =
 
@@ -189,8 +188,8 @@ btn_trigger_left = 310
 btn_trigger_right = 311
 axis_dpad1_x = 16
 axis_dpad1_y = 17
-axis_dpad2_x = 0
-axis_dpad2_y = 1
+axis_dpad2_x =
+axis_dpad2_y =
 axis_x_inverted = no
 axis_y_inverted = no
 axis_trigger_left_inverted = no
