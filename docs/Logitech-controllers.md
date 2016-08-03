@@ -154,8 +154,9 @@ Z Trig = axis(2+)
 
 #### Dreamcast
 The following file should match below:
-/opt/retropie/configs/dreamcast/mappings/controller_LogitechGamepadF310.cfg
-Source: https://www.reddit.com/r/RetroPie/comments/4u0sys/fairly_successful_controller_mapping_for_logitech/
+`/opt/retropie/configs/dreamcast/mappings/controller_LogitechGamepadF310.cfg`
+
+[Source](https://www.reddit.com/r/RetroPie/comments/4u0sys/fairly_successful_controller_mapping_for_logitech)
 ~~~
 [emulator]
 mapping_name = Logitech Gamepad F310
