@@ -92,7 +92,7 @@ You need to delete the configurations you've made in `/home/pi/.emulationstation
 
 If you lose the config you can re-install Emulation Station from Retropie-Setup. Note that you exit Emulation Station by pressing ```F4```. When you (re-)start Emulation Station, the configuration prompt will appear again.
 
-# Page-Up and Page-Down
+### Page-Up and Page-Down
 When configuring the inputs in EmulationStation, take into account that the Left Shoulder button will be used for Page-Up and the Right shoulder button will be used for Page-Down in the EmulationStation user interface. This in particular applies to using the keyboard with EmulationStation, you should map Left Shoulder and Right Shoulder to Page-Up and Page-Down respectively.
 
 # Alternative Frontends
