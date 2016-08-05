@@ -15,9 +15,9 @@ Wolf4SDL can be installed from the experimental menu of the RetroPie setup scrip
 
 To play the full version of Wolfenstein 3D with Wolf4SDL, you need to provide your own game data which can purchased from [Steam](http://store.steampowered.com/app/2270) or [3D Realms](https://3drealms.com/catalog/wolfenstein-3d_25/).
 
-Place your game data in 
+The game data required are the files with *.wl6 extension (see below for list). Place them in 
 
-> /RetroPie/roms/ports/wolf3d
+> /home/pi//RetroPie/roms/ports/wolf3d
 
 The file names must be in lower case. The simplest way to do this is to run the following commands:
 
