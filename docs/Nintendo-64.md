@@ -7,7 +7,7 @@ _The Nintendo 64 is a 5th generation gaming console released by Nintendo in 1996
 
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
-| [Mupen64plus](https://code.google.com/p/mupen64plus/) | n64  | .z64 .n64 .v64 | none | /opt/retropie/configs/n64/InputAutoCfg.ini **and** /opt/retropie/configs/n64/mupen64plus.cfg|
+| [Mupen64plus](http://www.mupen64plus.org) | n64  | .z64 .n64 .v64 | none | /opt/retropie/configs/n64/InputAutoCfg.ini **and** /opt/retropie/configs/n64/mupen64plus.cfg|
 | [lr-Mupen64plus](https://github.com/libretro/mupen64plus-libretro) | n64 | .z64 .n64 .v64 | none | /opt/retropie/configs/n64/retroarch.cfg |
 | [lr-GLupenN64](https://github.com/loganmc10/GLupenN64)| n64 | .z64 .n64 .v64 | none | /opt/retropie/configs/n64/retroarch.cfg |
 
