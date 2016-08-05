@@ -107,6 +107,17 @@ mame2003-skip_warnings = "enabled"
 
 By default, mice/trackballs and analog sticks (the left one, for controllers with 2) are supported in games that would have them, or equivalents. For example, Centipede supports the mouse/trackball, and Afterburner supports the stick. Lightgun games are supported by either. The left and right mouse buttons can be bound to fire/etc using the [MAME menu](#mame-menu).
 
+## 2 player dial/spinner devices
+
+Some (all?) 2 player spinner/dial devices are represented as 1 device with 2 axes. lr-mame2003 can be configured to share this device across both players: Player 1 = X axis, Player 2 = Y axis. This can be enabled via a setting in the `retroarch-core-options.cfg` file, found in:
+```
+/opt/retropie/configs/all/
+```
+The option is:
+```
+mame2003-dialsharexy = "enabled"
+```
+
 ## Feature requests
 
 Please use the [forum](https://retropie.org.uk/forum) for all support issues, but feature requests can be made on the [GitHub page](https://github.com/libretro/mame2003-libretro).
