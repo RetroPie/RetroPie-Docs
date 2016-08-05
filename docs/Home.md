@@ -57,7 +57,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script. E
 * [Neo Geo](Neo-Geo) [(GnGeo-Pi)](https://github.com/ymartel06/GnGeo-Pi), [(PiFBA)](https://github.com/RetroPie/pifba), [(lr-fba)](https://github.com/libretro/fba-libretro), [(lr-fba-next)](https://github.com/libretro/libretro-fba.git)
 * [Neo Geo Pocket](https://github.com/petrockblog/RetroPie-Setup/wiki/Neo-Geo-Pocket) [(lr-mednafen-ngp)](https://github.com/libretro/beetle-ngp-libretro.git)
 * [Neo Geo Pocket Color](Neo-Geo-Pocket-Color) [(lr-mednafen-ngp)](https://github.com/libretro/beetle-ngp-libretro.git)
-* [Nintendo 64](Nintendo-64) [(Mupen64plus)](https://code.google.com/p/mupen64plus/), [(lr-mupen64plus)](https://github.com/libretro/mupen64plus-libretro)
+* [Nintendo 64](Nintendo-64) [(Mupen64plus)](https://code.google.com/p/mupen64plus/), [(lr-mupen64plus)](https://github.com/libretro/mupen64plus-libretro), [(lr-GLupenN64)](https://github.com/loganmc10/GLupen64)
 * [Nintendo DS](Nintendo-DS) [(lr-desmume)](https://github.com/libretro/desmume) :small_red_triangle:
 * [Nintendo Entertainment System](Nintendo-Entertainment-System) [(lr-fceumm)](https://github.com/libretro/libretro-fceumm), [(lr-nestopia)](https://github.com/libretro/nestopia)
 * [Oric-1/Atmos](Oric) [(oricutron)](https://github.com/pete-gordon/oricutron)
