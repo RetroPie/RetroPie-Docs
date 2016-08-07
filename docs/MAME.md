@@ -121,6 +121,11 @@ AdvanceMAME and Mame4all-Pi have the same method in setting up controls, imame4a
 
 While in a game press Tab to open the menu to set up controls
 
+RGUI Menu Configuration is stored in the default.cfg. Should you mess the configuration up (including input configuration, e.g. accidently mess up Enter or ESC buttons), you can delete the file and it will be re-created on next launch of Mame4all.
+```shell 
+/opt/retropie/configs/mame-mame4all/cfg/default.cfg
+```
+
 ### lr-imame4all
 
 lr-imame4all utilises RetroArch configs.
@@ -129,6 +134,7 @@ Add custom retroarch controls to the retroarch.cfg file in
 ```shell
 /opt/retropie/configs/mame-mame4all/retroarch.cfg
 ```
+
 ### lr-mame2003, lr-mame2010
 
 lr-mame2003 and lr-mame2010 utilise retroarch configs.
