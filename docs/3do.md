@@ -15,6 +15,8 @@ _The Panasonic 3do Real Multiplayer was a Home Video Game Console developed by t
 
 Note that this is experimental- even with an overclocked RPi2 it was incredibly laggy and slow. Definitely won't be coming out of experimental any time soon. It can be installed from the experimental menu of the [RetroPie Setup Script](Updating RetroPie).
 
+With RPi3 (stock and overclocked) no real difference in performance compared to the RPi2. Bust-A-Move took around 1 minute to load on stock speed and 39 seconds overclocked. Both had choppy sound and controller lag. As of 8/6/2016.
+
 ## ROMS
 Accepted File Extensions: **.iso**
 
