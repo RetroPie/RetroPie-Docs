@@ -121,12 +121,13 @@ AdvanceMAME and Mame4all-Pi have the same method in setting up controls, imame4a
 
 While in a game press Tab to open the menu to set up controls
 
-Global RGUI Menu Configuration is stored in default.cfg. Other *.cfg files located in the /opt/retropie/configs/mame-mame4all/cfg/ directory are ROM specific.
-Should your configuration become unworkable and need resetting (including input configuration, e.g. accidently mess up Enter or ESC buttons), you can delete the relevant file and it will be re-created on next launch of Mame4all. 
+Mame4all Menu (RGUI) Configuration is stored in
 ```shell 
-/opt/retropie/configs/mame-mame4all/cfg/
 /opt/retropie/configs/mame-mame4all/cfg/default.cfg
 ```
+Other files in this cfg directory are ROM specific configs.
+
+Note: Should your input configuration or other aspect of the RGUI configuration need resetting to defaults, remove the default.cfg or ROM specific .cfg file, and it will be re-created with default values next time you start Mame4all or modify the ROM configuration.
 
 ### lr-imame4all
 
