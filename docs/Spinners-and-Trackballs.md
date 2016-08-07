@@ -6,17 +6,63 @@ Spinners and Trackballs are often described together because of the way they wor
 # Hardware for Emulators
 Because mouse input is ubiquitous on modern computers, spinners and trackballs translate nicely to emulators that can accept input from a mouse. For trackballs, the input is practically identical to a mouse. Spinners can also be setup like a mouse with separate X and Y tracking (like an Etch-a-Sketch).
 
-Adding a USB mouse to a Raspberry Pi is trivial. Attaching a trackball or spinners requires a USB interface. Fortunately, arcade hardware is available that will work, and often comes with (or is compatible with) a USB interface. There are several options available from Ultimarc, Groovy Game Gear, Happ, and others. The key to making this hardware work on the Raspberry Pi is to ensure that the interface behaves like a USB mouse. In fact, a convenient hardware test is to simply boot the Pi to a desktop and see if you can move the cursor with your trackball or spinner. This can also help you troubleshoot the connections for X and Y inputs. If you have movement, you should be able to configure MAME to use it.
+Adding a USB mouse to a Raspberry Pi is trivial. Attaching a trackball or spinners requires a USB interface. Fortunately, arcade hardware is available that will work, and often comes with (or is compatible with) a USB interface. There are several options available from Ultimarc, Groovy Game Gear, Happ, and others. The key to making this hardware work on the Raspberry Pi is to ensure that the interface behaves like a USB mouse.
+
+## Testing Mouse Inputs in Linux
+A convenient hardware test is to simply boot the Pi to a desktop and see if you can move the cursor with your trackball or spinner. This can also help you troubleshoot the connections for X and Y inputs. If you have movement, you should be able to configure MAME to use it.
 
 Another test can be performed at the command prompt. Type:`cat /dev/input/mice` and press enter. Now, rotate your spinner or move your trackball. It should produce characters on the screen and move the cursor from side to side on the line. Depending on other devices you have attached, Linux might see more than one USB mouse at the same time. You can determine which one is your spinner or trackball by trying each device individually using `cat /dev/input/mouse0` or `cat /dev/input/mouse1` and so on.
 
-# Configuring AdvanceMAME
-Mouse input works in several versions of MAME. For example, you can now use [[lr-mame2003]] for most titles, but if you need to configure multiple inputs or if you are trying to get the best vector game experience, you might be relying on AdvanceMAME. If configured properly, AdvanceMAME offers the most versatility when it comes to trackball and spinner controls. Using the configuration file, You can exert very granular control to override the setup for specific games, or just configure your default settings for all games. This section describes important configuration steps necessary to enable mouse inputs in AdvanceMAME.
+# Configuring Emulators
+Not all emulators support mouse input for arcade games. Fortunately, software evolves as developers add more functionality. The two MAME emulators that offer the best mouse support for arcade games in RetroPie are lr-mame2003 and AdvanceMAME 1.4 (or 0.94).
+
+# lr-mame2003
+As of August 4, 2016, [mame2003-libretro](https://github.com/libretro/mame2003-libretro) is capable of 1-player trackball support and  2-player spinner support once configured. The standard configuration leverages both X and Y axes of mouse input for player one. The Player 1 DIAL control (spinner, steering, etc.) receives input from the X-axis, and TRACKBALL from both X and Y. It doesn't matter how many mice you connect, they all map to X and Y for Player 1.
+
+If you enable a core option ([described here](https://github.com/RetroPie/RetroPie-Setup/wiki/lr-mame2003#2-player-dialspinner-devices)), it is possible to share the mouse input to effectively copy the Y axis to the Player 2 DIAL control. This makes sense, as most interfaces are for either trackballs or two spinners. 
+
+This flexibility is sufficient for most games, but there are exceptions on complex control panels. If you need to map multiple trackballs, or your Player 1 and Player 2 spinners are on different mouse inputs, you will need to use AdvanceMAME to map your devices to the proper controls.
+
+# AdvanceMAME
+AdvanceMAME offers the most versatility when it comes to trackball and spinner controls. Using the configuration file, You can exert very granular control to override the setup for specific games, or just configure your default settings for all games. This section describes important configuration steps necessary to enable mouse inputs in AdvanceMAME.
+
+## AdvanceMAME Mouse Input Testing
+If you were successful with the Linux tests above, you might be able to skip this step, as the configuration below is flexible enough for most situations. However, if you plan to configure multiple input devices, it can be helpful to know how AdvanceMAME will see them. Like the Linux test above, AdvanceMAME has its own mouse testing command that allows you to see which mouse is controlling which axis. At a command prompt, type this: `/opt/retropie/emulators/advmame/1.4/bin/advm` and press ENTER. You will see output like this:
+```
+Driver event, mouses 2
+mouse 0, axes 3, buttons 3
+	axe 0 [x]
+	axe 1 [y]
+	axe 2 [z]
+	button 0 [left]
+	button 1 [right]
+	button 2 [middle]
+mouse 1, axes 3, buttons 3
+	axe 0 [x]
+	axe 1 [y]
+	axe 2 [wheel]
+	button 0 [left]
+	button 1 [right]
+	button 2 [middle]
+
+Press Break to exit
+mouse 0, [---], [     0,     0,     0]
+``` 
+In this example AdvanceMAME is detecting two mice, (mouse 0 and mouse 1) each with three axes (x,y,z) and three buttons. As you move your mouse controls you will see rows appear:
+```
+mouse 0, [---], [     0,     0,     0]
+mouse 1, [---], [     0,     1,     0] (   1 ms)
+mouse 0, [---], [     0,     0,     0]
+mouse 1, [---], [     0,     2,     0] (   1 ms)
+mouse 0, [---], [     0,     0,     0]
+mouse 1, [---], [     0,     0,     0] (   1 ms)
+```
+You can press CONTROL-C to exit the test. In this example, moving the second spinner is being picked up as mouse 1, y-axis. No movement is registered as 0 input, while movement in one direction or another will show up as positive and negative numbers. This type of feedback can be very handy, as it tells you the index number and the axis of a specific controller _from MAME's perspective_. Just keep in mind, if you attach another external mouse later, it might change which mouse is detected as mouse 0, etc., and your configurations below may need to be adjusted.
 
 ## Configuring RAW, PS2 for all possible mouse inputs
-Depending on your setup, you might have an external mouse, a spinner, a mouse and a spinner, no mouse and two spinners, one spinner and a trackball, a mouse only during setup, etc.. Linux will see all of these as mouse inputs, but might not see them with the same index. For example, if you boot with an external mouse, that might be detected as mouse0 and your spinner as mouse1, but if you boot the same system without the external mouse attached, everything might ratchet down (spinner becomes mouse0). This can be frustrating, but we can overcome it by mapping multiple inputs together in MAME.
+Depending on your setup, you might have an external mouse, a spinner, a mouse and a spinner, no mouse and two spinners, one spinner and a trackball, a mouse only during setup, etc.. Linux will see all of these as mouse inputs, but AdvanceMAME might not see them with the same index. For example, if you boot with an external mouse, it might be detected as mouse0 and your spinner as mouse1, but if you boot the same system without the external mouse attached, everything might ratchet down (spinner becomes mouse0). As long as you aren't changing your hardware configuration everything should stay where it is, but if you routinely connect an external mouse to troubleshoot or launch the desktop, this can be frustrating. We can overcome it by mapping multiple inputs _together_ in AdvanceMAME.
 
-For starters, we need to configure all possible mouse inputs in the configuration file (we will edit the configuration for AdvanceMAME 1.4).
+For starters, we need to enable all possible mouse inputs in the configuration file (we will edit the configuration for AdvanceMAME 1.4).
 
 Find these lines in `/opt/retropie/configs/mame-advancemame/advmame-1.4.rc` and update them as shown:
 ```
