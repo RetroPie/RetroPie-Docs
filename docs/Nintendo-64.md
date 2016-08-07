@@ -99,6 +99,15 @@ and
 
 Note that, by default, the memory expansion pack is configured as installed.
 
+#### Hotkeys and special buttons
+Key | Description
+--- | ---
+SELECT + START | Exit emulator.
+SELECT + L1 | Load state.
+SELECT + R1 | Save state.
+THUMB LEFT | Enable memory expansion pak.
+THUMB RIGHT| Enable rumble expansion pak.
+
 #### Example mupen64plus.cfg
 ```
 [CoreEvents]
