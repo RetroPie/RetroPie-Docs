@@ -49,11 +49,25 @@ RetroPie 4.0 forces a resolution of 320x240 for best performance.
 ```
 /opt/retropie/configs/all/autoconf.cfg
 ```
+
 Option | Description | Value
 --- | --- | ---
 mupen64plus_audio |  enable auto configuration of audio output path | (0/1)
 mupen64plus_hotkeys | enable hotkey auto configuration | (0/1)
 mupen64plus_compatibility_check | enable compatibility check which alters game related settings | (0/1)
+
+```
+/opt/retropie/configs/n64/mupen64plus.cfg
+```
+
+Option | Description | Value
+--- | --- | ---
+Audio-OMX/OUTPUT_PORT | Audio output path is Jack or HDMI. (will be overwritten if **mupen64plus_audio** is enabled) | (0=Audio Jack / **1=HDMI**)
+CoreEvents/Joy Mapping Stop | Joystick exit button. (will be overwritten if **mupen64plus_hotkeys** is enabled) | J**X**B**Y**/B**Z** or J**X**B**Y**
+CoreEvents/Joy Mapping Load State | Joystick load state button. (will be overwritten if **mupen64plus_hotkeys** is enabled) | J**X**B**Y**/B**Z** or J**X**B**Y**
+CoreEvents/Joy Mapping Save State | Joystick save state button. (will be overwritten if **mupen64plus_hotkeys** is enabled) | J**X**B**Y**/B**Z** or J**X**B**Y** 
+Video-GLideN64/EnableFBEmulation | Enable framebuffer emulation. Games like Mario Tennis need this option to render Framebuffer effects. Some games have glitches if this option is enabled. (will be overwritten if **compatibility_check** is enabled) | (True/**False**) 
+Video-GLideN64/enableLegacyBlending | Use fixed function pipeline instead of shaders for blending for speed. Some games have glitches if this option is enabled. (will be overwritten if **compatibility_check** is enabled) | (True/**False**)  | (**True**/False)
 
 **RetroPie 4.0: GLideN64/Rice**
 ```
