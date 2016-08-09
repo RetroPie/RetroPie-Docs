@@ -3,7 +3,7 @@
 ![](https://wiki.openttd.org/images/f/fa/OpenttdLogo.png)
 
 ***
-_OpenTTD is an OpenSource Port of Transport Tycoon Deluxe (basically a SimCity Clone)_
+_OpenTTD is an OpenSource Port of Transport Tycoon Deluxe_
 
 ***
 
