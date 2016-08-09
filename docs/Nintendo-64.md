@@ -66,7 +66,7 @@ Audio-OMX/OUTPUT_PORT | Audio output path is Jack or HDMI. (will be overwritten 
 CoreEvents/Joy Mapping Stop | Joystick exit button. (will be overwritten if **mupen64plus_hotkeys** is enabled) | J**X**B**Y**/B**Z** or J**X**B**Y**
 CoreEvents/Joy Mapping Load State | Joystick load state button. (will be overwritten if **mupen64plus_hotkeys** is enabled) | J**X**B**Y**/B**Z** or J**X**B**Y**
 CoreEvents/Joy Mapping Save State | Joystick save state button. (will be overwritten if **mupen64plus_hotkeys** is enabled) | J**X**B**Y**/B**Z** or J**X**B**Y** 
-Video-GLideN64/EnableFBEmulation | Enable framebuffer emulation. Games like Mario Tennis need this option to render Framebuffer effects. Some games have glitches if this option is enabled. (will be overwritten if **compatibility_check** is enabled) | (True/**False**) 
+Video-GLideN64/EnableFBEmulation | Enable framebuffer emulation. Games like Mario Tennis need this option to render framebuffer effects. Some games have glitches if this option is enabled. (will be overwritten if **compatibility_check** is enabled) | (True/**False**) 
 Video-GLideN64/enableLegacyBlending | Use fixed function pipeline instead of shaders for blending for speed. Some games have glitches if this option is enabled. (will be overwritten if **compatibility_check** is enabled) | (True/**False**)  | (**True**/False)
 
 **RetroPie 4.0: GLideN64/Rice**
