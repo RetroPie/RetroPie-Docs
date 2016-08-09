@@ -82,6 +82,8 @@ And then you can access it from the terminal by typing in
 
 After installation your pi will boot into the desktop environment, you can change the behaviour to boot into emulationstation by selecting the autostart option for emulationstation from option 3 of the setup script, or you can set the autologin to console option from the boot options of the raspi-config menu.
 
+Note that failing to run startx after the installation may prevent other XWindow-based applications from starting (e.g. Micropolis port), so do launch the desktop after installation to ensure that it is fully set up.
+
 ### Why does shut down and reboot take ages?
 
 Previous to RetroPie 3.4, there was an issue whereby EmulationStation was terminated on reboot/shut down, rather than shut down 'cleanly'. This has now been fixed, so every time you reboot/shut down EmulationStation rewrites all metadata about your roms, so that play counts, last-played dates, etc., are saved. This has the side-effect of the causing the whole process to take longer, relative to how many ROMs you have. MAME/FBA ROMs can often form the bulk of libraries, so it might be helpful to remove clones by [rebuilding your set with a custom parent-only DAT](https://github.com/retropie/retropie-setup/wiki/Managing-ROMs).
