@@ -19,7 +19,7 @@ sudo /home/pi/RetroPie-Setup/retropie_setup.sh
 
 - **The very first thing** you'll want to do before you do anything is select **Update RetroPie-Setup Script** as this will update the latest changes to the setup script.
 
-#### If updating from 3.x and earlier select: Manage Packages >> Quick Install and Update All Installed Packages
+#### If updating from 3.x and earlier select: Manage Packages >> Update All Installed Packages (RetroPie-Setup will automatically be updated)
 
 ![4 0beta](https://cloud.githubusercontent.com/assets/10035308/16218285/f06f3ba8-3738-11e6-9ccc-be601172713b.png)
 
