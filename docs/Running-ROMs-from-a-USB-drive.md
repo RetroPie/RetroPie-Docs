@@ -97,4 +97,4 @@ You may start seeing permission denied errors when launching a .sh file, especia
 
 Notably to get the 'Ports' launchers working:
  - edit es_systems.cfg with sudo nano /etc/emulationstation/es_systems.cfg and search for the PORTS Section
- - Find the <command> section and simply add bash so it looks <command>bash
+ - Find the < command > section and simply add bash so it looks < command >bash
