@@ -1,5 +1,58 @@
 ## Automatic Configuration (Easiest)
 
+## Xpad Driver:
+
+With the recent kernel issues of xboxdrv rendering images unusable, there is an updated xpad driver which will work just as well for xbox controllers, its possible it may also support xbox One controllers.
+
+You access the driver through **Manage Packages** >> **Manage Driver Packages** >> **Xpad Driver** and you'll install it from source. Reboot for good measure, reconfigure your controllers and the lights should work properly.
+
+There are some caveats with the triggers being treated as axes which is explained here:
+
+https://github.com/RetroPie/RetroPie-Setup/wiki/Logitech-controllers#l2r2-top-triggers
+
+A complete working config (that was generated from the emulationstation configuration) is listed below at `/opt/retropie/configs/all/retroarch-joypads/Xbox360WirelessReceiver(XBOX).cfg`
+
+```
+input_device = "Xbox 360 Wireless Receiver (XBOX)"
+input_driver = "udev"
+input_r_y_plus_axis = "+4"
+input_l3_btn = "9"
+input_r_x_minus_axis = "-3"
+input_l_btn = "4"
+input_load_state_btn = "4"
+input_start_btn = "7"
+input_exit_emulator_btn = "7"
+input_l_y_minus_axis = "-1"
+input_up_btn = "13"
+input_r_y_minus_axis = "-4"
+input_a_btn = "1"
+input_b_btn = "0"
+input_reset_btn = "0"
+input_down_btn = "14"
+input_l_x_plus_axis = "+0"
+input_l_y_plus_axis = "+1"
+input_r_btn = "5"
+input_save_state_btn = "5"
+input_r2_axis = "+5"
+input_r3_btn = "10"
+input_right_btn = "12"
+input_state_slot_increase_btn = "12"
+input_x_btn = "3"
+input_menu_toggle_btn = "3"
+input_select_btn = "6"
+input_enable_hotkey_btn = "6"
+input_l_x_minus_axis = "-0"
+input_y_btn = "2"
+input_left_btn = "11"
+input_state_slot_decrease_btn = "11"
+input_r_x_plus_axis = "+3"
+input_l2_axis = "+2"
+```
+
+## Xboxdrv Driver
+
+**Note! There are known incompatibilities with this driver and the latest kernel, xpad will work best currently.**
+
 Access the [RetroPie Setup Script](Updating-RetroPie) and navigate to **Manage Packages >> Manage Driver Packages >> xboxdrv** 
 
 ![xboxdrv](https://cloud.githubusercontent.com/assets/10035308/12218229/d397607e-b6d6-11e5-8a99-f3106d60425a.png)
@@ -370,3 +423,4 @@ Here's a little explanation of xboxdrv_player1.cfg (player2 is similar):
 
 
 ***
+
