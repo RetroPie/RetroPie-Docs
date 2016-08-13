@@ -21,6 +21,7 @@ Tested with an Intel NUC Kit NUC5CPYH.
     - [Section 3.5: How to setup a splashscreen?](#35-splashscreen)
     - [Section 3.6: No audio](##36-noaudio)
     - [Section 3.7: My NUC or Intel Baytrail/Braswell powered device hangs (Ubuntu 15.10)](##37-hang)
+    - [Section 3.8: No HDMI audio (Ubuntu 16.04)](##38-nohdmiaudio)
 
 ***
 
@@ -104,3 +105,10 @@ https://bugs.freedesktop.org/show_bug.cgi?id=91629
 
 Update to higher kernel version solves this problem:
 http://sourcedigit.com/18333-how-to-install-linux-kernel-4-3-3-on-ubuntu-15-10-ubuntu-15-04/
+
+### Section 3.8: No HDMI audio (Ubuntu 16.04)
+
+Ubuntu 16.04 uses Pulseaudio 8 which has issues with HDMI if you suspend your device or change display resolutions at runtime. This problem will be solved with Ubuntu 16.10 and Pulseaudio 9. Mupen64plus runs a fullscreen resolution of 640x480. If your default resolution differs there will be a resolution switch and Pulseaudio will set another audio device. You can disable Pulseaudio auto output selection. Open /etc/pulse/default.pa and comment out the line:
+#load-module module-switch-on-port-available
+
+https://bugs.freedesktop.org/show_bug.cgi?id=93946#c36
