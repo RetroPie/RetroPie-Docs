@@ -82,7 +82,10 @@ Value | Description
 2 | Requested video resolution will be scaled to desktop resolution.
 3 | Requested video resolution will be scaled to desktop resolution. Aspect ratio of requested video resolution will be respected. If possible output resolution will be integral multiple of video resolution.
 
-Resolution --> --resolution WIDTHxHEIGHT
+```
+/opt/retropie/configs/n64/emulators.cfg
+```
+You can use emulators.cfg to add custom resolution startup options. Default resolution options are 320x240 and 640x480.
 
 ## Controls
 
