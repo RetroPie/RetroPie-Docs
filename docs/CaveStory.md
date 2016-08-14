@@ -1,6 +1,6 @@
 ![CaveStory Logo](http://upload.wikimedia.org/wikipedia/en/8/83/Cave_Story_title_screen.png)
 ***
-_Cave Story (doukutsu monogatari) is a Freeware Platform-Adventure Video Game Released in 2004 for the PC. It was developed over 5 years by Daisuke "Pixel" Amaya in his free time. It is on of the greatest most beautifully crafted games, particularly because of its compelling plot and musical genius._
+_Cave Story (doukutsu monogatari) is a Freeware Platform-Adventure Video Game Released in 2004 for the PC. It was developed over 5 years by Daisuke "Pixel" Amaya in his free time. It is one of the greatest most beautifully crafted games, particularly because of its compelling plot and musical genius._
 ***
 ## Emulator: [nxengine-libretro](https://github.com/libretro/nxengine-libretro)
 
@@ -26,3 +26,12 @@ Add custom retroarch controls to the retroarch.cfg file in
 /opt/retropie/configs/cavestory/retroarch.cfg
 ```
 For more information on custom RetroArch controls see: [RetroArch Configuration](https://github.com/petrockblog/RetroPie-Setup/wiki/RetroArch-Configuration)
+
+## Saves
+nxengine-libretro does not support save states, but Cave Story itself includes many in-game save points and multiple profiles. Save profile files will be be saved as:
+```
+/home/pi/RetroPie/roms/ports/CaveStory/profile.dat
+/home/pi/RetroPie/roms/ports/CaveStory/profile2.dat
+/home/pi/RetroPie/roms/ports/CaveStory/profile3.dat
+...
+```
