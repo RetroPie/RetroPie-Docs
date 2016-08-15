@@ -72,7 +72,7 @@ Video-GLideN64/enableLegacyBlending | Use fixed function pipeline instead of sha
 
 **RetroPie 4.0: GLideN64/Rice**
 ```
-/opt/retropie/emulators/mupen64plus/bin/mupen64plus.sh line 265
+/opt/retropie/emulators/mupen64plus/bin/mupen64plus.sh line 269
 ```
 Scaling Mode --> SDL_VIDEO_RPI_SCALE_MODE=x
 
