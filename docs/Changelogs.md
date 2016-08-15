@@ -2,14 +2,14 @@
 
 This page is a list of all of the changelogs for each version of RetroPie. For a complete list of all commits to the source code see [here:](https://github.com/petrockblog/RetroPie-Setup/commits/master)  
 
-### Version 4.0 RC1: (July 23, 2016)
+### Version 4.0 RC1: (July 23, 2016) - Pre-release
  - Renaming of ES input configuration which was causing confusion for shoulder/trigger inputs.
  - Improvements to mupen64plus Glide64 video plugin, which is now the default.
  - Updates to various other emulators including reicast, lr-fceumm, lr-nestopia, lr-snes9x-next and the RetroArch frontend.
  - Improvements to the bluetooth configuration, including the ability to try and reconnect to devices in the background, and an option to switch off our mapping hack for 8bitdo, so devices with a newer firmware will work correctly with retroarch.
  - Various other bugfixes and improvements.
 
-### Version 4.0 BETA 2: (June 21, 2016)
+### Version 4.0 BETA 2: (June 21, 2016) - Pre-release
  - Setup script improvements:
    - Added the ability to install/update and remove packages.
    - Added help docs to the setup script.
