@@ -124,6 +124,7 @@
 * [Optimization for Nintendo 64](Optimization for Nintendo 64)
 * [[Running ROMs from a USB drive]]
 * [[Running ROMs from a Network Share]]
+* [Smaller RetroArch Screen](Smaller-RetroArch-Screen)
 
 ## Controllers
 
