@@ -132,6 +132,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script. E
 * [Optimization for Nintendo 64](Optimization for Nintendo 64)
 * [[Running ROMs from a USB drive]]
 * [[Running ROMs from a Network Share]]
+* [Smaller RetroArch Screen](Smaller-RetroArch-Screen)
 
 ## Controller Configurations
 * [Setting up an XBox 360 Controller](Setting-up-the-XBox360-controller)
