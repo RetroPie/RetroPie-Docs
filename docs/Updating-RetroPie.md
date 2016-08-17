@@ -19,22 +19,23 @@ sudo /home/pi/RetroPie-Setup/retropie_setup.sh
 
 - **The very first thing** you'll want to do before you do anything is select **Update RetroPie-Setup Script** as this will update the latest changes to the setup script.
 
-#### If updating from 3.x and earlier select: Manage Packages >> Update All Installed Packages (RetroPie-Setup will automatically be updated)
+#### If updating from 3.x and earlier select: Basic Install & Update All Installed Packages (RetroPie-Setup will automatically be updated)
 
-![4 0beta](https://cloud.githubusercontent.com/assets/10035308/16218285/f06f3ba8-3738-11e6-9ccc-be601172713b.png)
+![main menu](https://cloud.githubusercontent.com/assets/10035308/17757081/914b1b2e-64a1-11e6-89f4-14105fdbb4b4.png)
 
 _Note that the **Script Version** only shows what version the RetroPie Setup Script is at, it is not necessarily the version of RetroPie that you currently have installed. The **Last Commit** shows the latest commit or change to the RetroPie Setup Script since your last update of the script._
+- **Basic Install: If wanting to update select this option - this is intended as a first install - ie on top of raspbian, or if coming from a 3.x retropie.**
+- **Update All Installed Packages:** This will update all installed packages.
 - **Manage Packages:** This is where you will install/update all your emulators, install controller drivers (like the ps3 or xboxdrv) along with ports and other optional packages.
-- **Setup / Tools:** Configure tools, splashscreens, themes, and other configurations here.
-- **Uninstall RetroPie:** Pretty self explanatory, uninstalls retropie.
+- **Configuration / Tools:** Configure tools, splashscreens, themes, and other configurations here.
 - **Update RetroPie-Setup Script:** Updates your setup script to the latest version.
+- **Uninstall RetroPie:** Pretty self explanatory, uninstalls retropie.
 - **Reboot:** Reboots your system.
 
 **Manage Packages**
 
-![quick install](https://cloud.githubusercontent.com/assets/10035308/15950393/9dcccd3c-2e6b-11e6-9d42-065b3234edc1.png)
-- **Quick Install: If wanting to update select this option - this is intended as a first install - ie on top of raspbian, or if coming from a 3.x retropie.**
-- **Update All Installed Packages:** This will update all installed packages.
+![manage](https://cloud.githubusercontent.com/assets/10035308/17757080/913dbf7e-64a1-11e6-8370-05a3d2a720ed.png)
+
 - **Core:** These are essential packages needed for RetroPie to run. Do not remove them.
 - **Main:** These are the main emulators that come installed with the RetroPie SD image.
 - **Optional:** These are optional packages that are working but aren't included with the RetroPie SD image.
