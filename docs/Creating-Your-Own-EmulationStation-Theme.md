@@ -45,6 +45,8 @@ It is a simple, clean theme, not very outlandish, but it's enough to teach the e
 
 ##Notes
 
+I made this tutorial on a Windows PC, but all the main parts (the XML and images) can be done on any Operating System, and as long as you can FTP or SSH into the 'theme' folder on your Raspberry Pi, then you can test your theme there.
+
 **What You Will Need**
 
 - A text editor
