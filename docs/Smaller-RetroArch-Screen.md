@@ -31,7 +31,7 @@ Later home consoles (SNES, Master System, Mega Drive) often had multiple display
 
 Take the original console resolution and multiply both numbers by the same amount to get a larger gameplay resolution which is still in the same aspect ratio and fits within your actual display resolution.
 
-It is best to multiply by either a whole number (eg: 2, 3, 4) so the original pixels get sized up consistently. Multiplying by fractions (eg: 2.66, 3.75, 4.4) may end up with strange ugly pixel effects, especially if using shaders which apply scanlines or similar effects.
+It is best to multiply by a whole number (eg: 2, 3, 4) so the original pixels get sized up consistently. Multiplying by fractions (eg: 2.66, 3.75, 4.4) may end up with strange ugly pixel effects, especially if using shaders which apply scanlines or similar effects.
 
 For example, the GBA resolution was **240x160** so we'll multiply those up by **3** to land on **720x480**. An image of this size fits within a 1920x1080 display, is smaller than the full 1920x1080 display, and is still in the same aspect ratio so the game won't look stretched.
 
