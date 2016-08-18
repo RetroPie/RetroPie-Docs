@@ -17,19 +17,18 @@ sudo /home/pi/RetroPie-Setup/retropie_setup.sh
 
 ## Using the RetroPie Setup Script
 
-- **The very first thing** you'll want to do before you do anything is select **Update RetroPie-Setup Script** as this will update the latest changes to the setup script.
+#### If updating from 3.x and earlier: Select **Update RetroPie-Setup Script** and then **Update All Installed Packages**
 
-#### If updating from 3.x and earlier select: Basic Install & Update All Installed Packages (RetroPie-Setup will automatically be updated)
+#### If updating from 4.x and later: Select **Update All Installed Packages**
 
 ![main menu](https://cloud.githubusercontent.com/assets/10035308/17757081/914b1b2e-64a1-11e6-89f4-14105fdbb4b4.png)
 
-_Note that the **Script Version** only shows what version the RetroPie Setup Script is at, it is not necessarily the version of RetroPie that you currently have installed. The **Last Commit** shows the latest commit or change to the RetroPie Setup Script since your last update of the script._
-- **Basic Install: If wanting to update select this option - this is intended as a first install - ie on top of raspbian, or if coming from a 3.x retropie.**
-- **Update All Installed Packages:** This will update all installed packages.
-- **Manage Packages:** This is where you will install/update all your emulators, install controller drivers (like the ps3 or xboxdrv) along with ports and other optional packages.
-- **Configuration / Tools:** Configure tools, splashscreens, themes, and other configurations here.
-- **Update RetroPie-Setup Script:** Updates your setup script to the latest version.
-- **Uninstall RetroPie:** Pretty self explanatory, uninstalls retropie.
+- **Basic Install: This is intended as a first install and is not required if using a pre-built image. eg When installing RetroPie on top of an existing OS.
+- **Update All Installed Packages:** This will update the RetroPie-Setup script and all installed packages.
+- **Manage Packages:** This will alllow you to install and update individual emulators, ports, controller drivers (like the ps3 or xboxdrv) other optional packages.
+- **Configuration / Tools:** Configuration and tools including BlueTooth and WiFi setup, splashscreens and theme. You can also access any packages that have additional configuration here.
+- **Update RetroPie-Setup Script:** Updates the RetroPie-Setup script to the latest version.
+- **Uninstall RetroPie:** Uninstalls RetroPie from the system.
 - **Reboot:** Reboots your system.
 
 **Manage Packages**
