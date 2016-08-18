@@ -8,10 +8,7 @@ The conventional way to update RetroPie and install new features is through the 
 
 The setup script can be accessed from the **RetroPie menu** in emulationstation. 
 
-It can also be accessed from the terminal with 
-```
-sudo /home/pi/RetroPie-Setup/retropie_setup.sh
-```
+It can also be accessed from the terminal with `sudo ~/RetroPie-Setup/retropie_setup.sh`
 
 **Before making any major updates it is important to make backups just in case [(see backup options below)](#making-a-backup-option-1).**
 
