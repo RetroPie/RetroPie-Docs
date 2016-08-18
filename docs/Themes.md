@@ -37,74 +37,19 @@ Access theme gallery in the esthemes menu
 | :---:| :---:|
 |**carbon**|<sub><img src="https://cloud.githubusercontent.com/assets/10035308/10357566/b98bb728-6d40-11e5-96a8-fca55ea635e0.png" width="500"><img src="https://cloud.githubusercontent.com/assets/10035308/10357565/b97b4ec4-6d40-11e5-9f44-6b27ae31ebc3.png" width="500"></sub>|  
 |**carbon-centered**|<sub><img src="https://cloud.githubusercontent.com/assets/10035308/10357595/25e08296-6d41-11e5-9533-46af51206fe2.png" width="500"><img src="https://cloud.githubusercontent.com/assets/10035308/10357596/25ee3d46-6d41-11e5-9941-d000c2804ad8.png" width="500"></sub>|
-|**carbon-nometa**|<sub><img src="https://cloud.githubusercontent.com/assets/10035308/10357566/b98bb728-6d40-11e5-96a8-fca55ea635e0.png" width="300"><img src="https://cloud.githubusercontent.com/assets/10035308/10357631/8f456ff8-6d41-11e5-8f83-7e3468471ce2.png" width="300"></sub>|
-|**Simple**|<sub><img src="https://cloud.githubusercontent.com/assets/10035308/10357699/54911870-6d42-11e5-820b-b8ce4b7a9a9f.png" width="300"><img src="https://cloud.githubusercontent.com/assets/10035308/10357698/548295e8-6d42-11e5-8f80-b03cb089e3d4.png" width="300"></sub>|
-
-
-<table style="width:100%">
-<tr>
-  <th>simple-dark</td>
-  <th>color-pi</td>
-</tr>
-<tr>
-  <td><img src="https://cloud.githubusercontent.com/assets/10035308/10357699/54911870-6d42-11e5-820b-b8ce4b7a9a9f.png" width="250"><img src="https://cloud.githubusercontent.com/assets/10035308/10357745/ef967c16-6d42-11e5-81fd-239ab3a864b2.png" width="250"></td> 
-  <td><img src="https://cloud.githubusercontent.com/assets/10035308/10357774/47a89f38-6d43-11e5-8a5e-b8aa5622e8bd.png" width="250"><img src="https://cloud.githubusercontent.com/assets/10035308/10357775/47a96404-6d43-11e5-96cc-cab237cd3f90.png" width="250"></td> 
-</table>
-
-<table style="width:100%">
-<tr>
-  <th>simplified-static-canela</td>
-  <th>zoid</td>
-</tr>
-<tr>
-  <td><img src="https://cloud.githubusercontent.com/assets/10035308/10357831/1c173d24-6d44-11e5-9692-a1e67553eb64.png" width="250"><img src="https://cloud.githubusercontent.com/assets/10035308/10357830/1c076a16-6d44-11e5-8a2b-07d59b2b542f.png" width="250"></td> 
-  <td><img src="https://cloud.githubusercontent.com/assets/10035308/10357854/722c6a0e-6d44-11e5-94b1-0527cec9db09.png" width="250"><img src="https://cloud.githubusercontent.com/assets/10035308/10357698/548295e8-6d42-11e5-8f80-b03cb089e3d4.png" width="250"></td> 
-</table>
-
-<table style="width:100%">
-<tr>
-  <th>space</td>
-  <th>simplebigart</td>
-</tr>
-<tr>
-  <td><img src="https://cloud.githubusercontent.com/assets/10035308/10357909/0db01cc8-6d45-11e5-9448-179611db1a9e.png" width="250"><img src="https://cloud.githubusercontent.com/assets/10035308/10357910/0db09036-6d45-11e5-84f1-1ef1e4c7c00b.png" width="250"></td> 
-  <td><img src="https://cloud.githubusercontent.com/assets/10035308/10357941/5c687a68-6d45-11e5-8c16-7e3d77364645.png" width="250"><img src="https://cloud.githubusercontent.com/assets/10035308/10357940/5c589ed6-6d45-11e5-81fd-e8b1d33a9991.png" width="250"></td> 
-</table>
-
-<table style="width:100%">
-<tr>
-  <th>clean-look</td>
-  <th>turtle-pi</td>
-</tr>
-<tr>
-  <td><img src="https://cloud.githubusercontent.com/assets/10035308/10357973/b3e94d44-6d45-11e5-8556-e9e1922c9a86.png" width="250"><img src="https://cloud.githubusercontent.com/assets/10035308/10357972/b3d8f020-6d45-11e5-8852-a89cab9bcc49.png" width="250"></td> 
-  <td><img src="https://cloud.githubusercontent.com/assets/10035308/10357502/022981c8-6d40-11e5-875b-e535576dc57b.png" width="250"><img src="https://cloud.githubusercontent.com/assets/10035308/10357504/05f5ebc0-6d40-11e5-8ac4-31712e0a6193.png" width="250"></td> 
-  </tr>
-</table>
-
-<table style="width:100%">
-<tr>
-  <th>nbba</td>
-  <th>Pixel</td>
-</tr>
-<tr>
-<td>
-<img src="https://cloud.githubusercontent.com/assets/10035308/10358023/3d62f160-6d46-11e5-9383-23da3aad1951.png" width="250"><img src="https://cloud.githubusercontent.com/assets/10035308/10358022/3d53dac2-6d46-11e5-9e53-849cfffbc7e2.png" width="250"></td> 
-  <td><img src="https://cloud.githubusercontent.com/assets/10035308/12162973/0191f402-b4c6-11e5-9a52-5acefa37d0d1.png" width="250"><img src="https://cloud.githubusercontent.com/assets/10035308/12163003/5413a25c-b4c6-11e5-9207-fcc2d5fe69d3.png" width="250"></td> 
-  </tr>
-</table>
-
-<table style="width:100%">
-<tr>
-  <th>Material</td>
-  <th></td>
-</tr>
-<tr>
-<td>
-<img src="https://cloud.githubusercontent.com/assets/9311410/15695879/85662fd4-2779-11e6-98a1-bcb49a3d1272.png" width="250"><img src="https://cloud.githubusercontent.com/assets/9311410/15695894/978f62c0-2779-11e6-8d3b-0cb6ab3184d1.png" width="250"></td> 
-<td><img src="" width="250"><img src="" width="250"></td>  
-</tr>
-</table>
+|**carbon-nometa**|<sub><img src="https://cloud.githubusercontent.com/assets/10035308/10357566/b98bb728-6d40-11e5-96a8-fca55ea635e0.png" width="500"><img src="https://cloud.githubusercontent.com/assets/10035308/10357631/8f456ff8-6d41-11e5-8f83-7e3468471ce2.png" width="300"></sub>|
+|**Simple**|<sub><img src="https://cloud.githubusercontent.com/assets/10035308/10357699/54911870-6d42-11e5-820b-b8ce4b7a9a9f.png" width="300"><img src="https://cloud.githubusercontent.com/assets/10035308/10357698/548295e8-6d42-11e5-8f80-b03cb089e3d4.png" width="500"></sub>|
+|**simple-dark**|<sub><img src="https://cloud.githubusercontent.com/assets/10035308/10357699/54911870-6d42-11e5-820b-b8ce4b7a9a9f.png" width="500"><img src="https://cloud.githubusercontent.com/assets/10035308/10357745/ef967c16-6d42-11e5-81fd-239ab3a864b2.png" width="500"></sub>|
+|**color-pi**|<sub><img src="https://cloud.githubusercontent.com/assets/10035308/10357774/47a89f38-6d43-11e5-8a5e-b8aa5622e8bd.png" width="500"><img src="https://cloud.githubusercontent.com/assets/10035308/10357775/47a96404-6d43-11e5-96cc-cab237cd3f90.png" width="500"></sub>|
+|**simplified-static-canela**|<sub><img src="https://cloud.githubusercontent.com/assets/10035308/10357831/1c173d24-6d44-11e5-9692-a1e67553eb64.png" width="500"><img src="https://cloud.githubusercontent.com/assets/10035308/10357830/1c076a16-6d44-11e5-8a2b-07d59b2b542f.png" width="500"></sub>|
+|**zoid**|<sub><img src="https://cloud.githubusercontent.com/assets/10035308/10357854/722c6a0e-6d44-11e5-94b1-0527cec9db09.png" width="500"><img src="https://cloud.githubusercontent.com/assets/10035308/10357698/548295e8-6d42-11e5-8f80-b03cb089e3d4.png" width="500"></sub>|
+|**space**|<sub><img src="https://cloud.githubusercontent.com/assets/10035308/10357909/0db01cc8-6d45-11e5-9448-179611db1a9e.png" width="500"><img src="https://cloud.githubusercontent.com/assets/10035308/10357910/0db09036-6d45-11e5-84f1-1ef1e4c7c00b.png" width="500"></sub>|
+|**simplebigart**|<sub><img src="https://cloud.githubusercontent.com/assets/10035308/10357941/5c687a68-6d45-11e5-8c16-7e3d77364645.png" width="500"><img src="https://cloud.githubusercontent.com/assets/10035308/10357940/5c589ed6-6d45-11e5-81fd-e8b1d33a9991.png" width="500"></sub>|
+|**clean-look**|<sub><img src="https://cloud.githubusercontent.com/assets/10035308/10357973/b3e94d44-6d45-11e5-8556-e9e1922c9a86.png" width="500"><img src="https://cloud.githubusercontent.com/assets/10035308/10357972/b3d8f020-6d45-11e5-8852-a89cab9bcc49.png" width="500"></sub>|
+|**turtle-pi**|<sub><img src="https://cloud.githubusercontent.com/assets/10035308/10357502/022981c8-6d40-11e5-875b-e535576dc57b.png" width="500"><img src="https://cloud.githubusercontent.com/assets/10035308/10357504/05f5ebc0-6d40-11e5-8ac4-31712e0a6193.png" width="500"></sub>|
+|**nbba**|<sub><img src="https://cloud.githubusercontent.com/assets/10035308/10358023/3d62f160-6d46-11e5-9383-23da3aad1951.png" width="500"><img src="https://cloud.githubusercontent.com/assets/10035308/10358022/3d53dac2-6d46-11e5-9e53-849cfffbc7e2.png" width="500"></sub>|
+|**Pixel**|<sub><img src="https://cloud.githubusercontent.com/assets/10035308/12162973/0191f402-b4c6-11e5-9a52-5acefa37d0d1.png" width="250"><img src="https://cloud.githubusercontent.com/assets/10035308/12163003/5413a25c-b4c6-11e5-9207-fcc2d5fe69d3.png" width="250"></sub>|
+|**Material**|<sub><img src="https://cloud.githubusercontent.com/assets/9311410/15695879/85662fd4-2779-11e6-98a1-bcb49a3d1272.png" width="500"><img src="https://cloud.githubusercontent.com/assets/9311410/15695894/978f62c0-2779-11e6-8d3b-0cb6ab3184d1.png" width="500"></sub>|
 
 ## Creating Your Own EmulationStation Theme
 
