@@ -35,8 +35,8 @@ Access theme gallery in the esthemes menu
 
 |Theme|Preview|
 | :---:| :---:|
-|**carbon**|<sub><img src="https://cloud.githubusercontent.com/assets/10035308/10357566/b98bb728-6d40-11e5-96a8-fca55ea635e0.png" width="300"><img src="https://cloud.githubusercontent.com/assets/10035308/10357565/b97b4ec4-6d40-11e5-9f44-6b27ae31ebc3.png" width="300"></sub>|  
-|**carbon-centered**|<sub><img src="https://cloud.githubusercontent.com/assets/10035308/10357595/25e08296-6d41-11e5-9533-46af51206fe2.png" width="300"><img src="https://cloud.githubusercontent.com/assets/10035308/10357596/25ee3d46-6d41-11e5-9941-d000c2804ad8.png" width="300"></sub>|
+|**carbon**|<sub><img src="https://cloud.githubusercontent.com/assets/10035308/10357566/b98bb728-6d40-11e5-96a8-fca55ea635e0.png" width="500"><img src="https://cloud.githubusercontent.com/assets/10035308/10357565/b97b4ec4-6d40-11e5-9f44-6b27ae31ebc3.png" width="500"></sub>|  
+|**carbon-centered**|<sub><img src="https://cloud.githubusercontent.com/assets/10035308/10357595/25e08296-6d41-11e5-9533-46af51206fe2.png" width="500"><img src="https://cloud.githubusercontent.com/assets/10035308/10357596/25ee3d46-6d41-11e5-9941-d000c2804ad8.png" width="500"></sub>|
 |**carbon-nometa**|<sub><img src="https://cloud.githubusercontent.com/assets/10035308/10357566/b98bb728-6d40-11e5-96a8-fca55ea635e0.png" width="300"><img src="https://cloud.githubusercontent.com/assets/10035308/10357631/8f456ff8-6d41-11e5-8f83-7e3468471ce2.png" width="300"></sub>|
 |**Simple**|<sub><img src="https://cloud.githubusercontent.com/assets/10035308/10357699/54911870-6d42-11e5-820b-b8ce4b7a9a9f.png" width="300"><img src="https://cloud.githubusercontent.com/assets/10035308/10357698/548295e8-6d42-11e5-8f80-b03cb089e3d4.png" width="300"></sub>|
 
