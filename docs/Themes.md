@@ -53,7 +53,7 @@ Access theme gallery in the esthemes menu
 
 ## Creating Your Own EmulationStation Theme
 
-For an in depth tutorial see this thread here: https://github.com/RetroPie/RetroPie-Setup/wiki/Creating-Your-Own-EmulationStation-Theme
+For an in depth tutorial see this thread [HERE](Creating-Your-Own-EmulationStation-Theme)
 
-For the official documentation on themes see here: https://github.com/Aloshi/EmulationStation/blob/master/THEMES.md
+For the official documentation on themes see [HERE](https://github.com/Aloshi/EmulationStation/blob/master/THEMES.md)
 
