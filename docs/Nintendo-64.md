@@ -9,9 +9,9 @@ _The Nintendo 64 is a 5th generation gaming console released by Nintendo in 1996
 | :---: | :---: | :---: | :---: | :---: |
 | [Mupen64plus](http://www.mupen64plus.org) | n64  | .z64 .n64 .v64 | none | /opt/retropie/configs/n64/InputAutoCfg.ini **and** /opt/retropie/configs/n64/mupen64plus.cfg|
 | [lr-Mupen64plus](https://github.com/libretro/mupen64plus-libretro) | n64 | .z64 .n64 .v64 | none | /opt/retropie/configs/n64/retroarch.cfg |
-| [lr-GLupenN64](https://github.com/loganmc10/GLupenN64)| n64 | .z64 .n64 .v64 | none | /opt/retropie/configs/n64/retroarch.cfg |
+| [lr-GLupeN64](https://github.com/loganmc10/GLupeN64)| n64 | .z64 .n64 .v64 | none | /opt/retropie/configs/n64/retroarch.cfg |
 
-## Emulators: [Mupen64plus](https://code.google.com/p/mupen64plus/), [lr-Mupen64plus](https://github.com/libretro/mupen64plus-libretro), [lr-GLupenN64](https://github.com/loganmc10/GLupenN64)
+## Emulators: [Mupen64plus](https://code.google.com/p/mupen64plus/), [lr-Mupen64plus](https://github.com/libretro/mupen64plus-libretro), [lr-GLupeN64](https://github.com/loganmc10/GLupeN64)
 
 While the mupen64plus-libretro core has the convenience of RetroArch configurations, the actual Mupen64plus does better with performance. 
 
@@ -90,9 +90,9 @@ You can use emulators.cfg to add custom resolution startup options. Default reso
 
 ## Controls
 
-### lr-Mupen64plus, lr-GLupenN64
+### lr-Mupen64plus, lr-GLupeN64
 
-lr-Mupen64plus and lr-GLupenN64 utilise RetroArch configurations
+lr-Mupen64plus and lr-GLupeN64 utilise RetroArch configurations
 
 Add custom retroarch controls to the retroarch.cfg file in
 
