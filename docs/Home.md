@@ -146,6 +146,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script. E
 * [Use Your Smartphone as a Gamepad!](Virtual-Gamepad) :small_red_triangle:
 * [Xin-Mo Driver](Xin-Mo-Controller)
 * [Module for GPIO interface for retro game controllers](GPIO-Modules)
+* [Setting up arcade spinners and trackballs](Spinners-and-Trackballs)
 
 ## Troubleshooting
 * [Sound Issues](Sound-Issues)
