@@ -109,6 +109,7 @@
 * [EmulationStation](EmulationStation)
 * [Custom Splash Screens](splashscreen)
 * [EmulationStation Themes](themes)
+* [Create Your Own Theme](https://github.com/RetroPie/RetroPie-Setup/wiki/Creating-Your-Own-EmulationStation-Theme)
 * [Configuration Editor](Configuration-Editor)
 * [RetroAchievements](RetroAchievements)
 * [Netplay](Netplay)
