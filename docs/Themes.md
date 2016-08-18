@@ -118,3 +118,9 @@ Access theme gallery in the esthemes menu
 </tr>
 </table>
 
+## Creating Your Own EmulationStation Theme
+
+For an in depth tutorial see this thread here: https://retropie.org.uk/forum/topic/3393/tutorial-how-to-make-a-theme-for-emulationstation-and-retropie
+
+For the official documentation on themes see here: https://github.com/Aloshi/EmulationStation/blob/master/THEMES.md
+
