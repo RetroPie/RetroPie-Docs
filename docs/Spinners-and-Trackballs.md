@@ -117,7 +117,7 @@ It is also possible to configure controls for certain games only. While this is 
 ```tempest/input_map[p1_trackballx] -mouse[0,x] -mouse[1,x] -mouse[2,x] -mouse[3,x]```
 
 ## Sensitivity
-Each game may require adjustments to the sensitivity. This too can be configured in the .rc file, but it is easier to adjust this within the MAME GUI. Bring up the menu in AdvanceMAME and just the anlog inputs and test as needed. The results will be saved into the .rc file when you exit.
+Each game may require adjustments to the sensitivity. This too can be configured in the .rc file, but it is easier to adjust this within the MAME GUI. Bring up the menu in AdvanceMAME and adjust the analog inputs and test as needed. The results will be saved into the .rc file when you exit.
 
 ## Poll Rate
 Some spinner hardware is designed with high precision. The encoder + optical sensors are capable of extreme sensitivity. However, this can work against you if Linux is not observing the mouse interface fast enough. It can cause a strange negative effect called "backspin". If you have ever watched an old western movie and noticed how a fast turning wagon wheel can appear to spin backwards--that's the same effect caused by a low frame rate during filming. It can be very frustrating to give a quick spin in Tempest only to watch it move backwards in the game until it slows down. One way to overcome this is to tell Linux to increase the poll rate of the mouse interface. You need to edit your `/boot/cmdline.txt` by appending `usbhid.mousepoll=2` to increase the mouse poll rate.
