@@ -116,7 +116,7 @@ Add `disable_splash=1` in `/boot/config.txt`
 
 ### How do I boot to the desktop or Kodi
 
-In setup>>autostart
+In retropie setup script>>Configuration / tools>>autostart
 
 ![autostart](https://cloud.githubusercontent.com/assets/10035308/15987124/7699dbcc-2fda-11e6-8a1f-902e3177d782.png)
 
