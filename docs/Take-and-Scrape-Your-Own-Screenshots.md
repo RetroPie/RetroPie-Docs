@@ -95,11 +95,11 @@ so again using the snes as an example
 
 ```
 cd /home/pi/RetroPie/roms/snes
-/opt/retropie/supplementary/scraper/scraper -img_format=png -add_not_found=true -download_images=false -image_suffix=
+/opt/retropie/supplementary/scraper/scraper -img_format=png -add_not_found=true -download_images=false -skip_check=true -use_gdb=false -image_suffix=
 ```
 _For more information on the options for sselphs scraper see [here](https://github.com/sselph/scraper/wiki/Flags)_
 
-it will create a gamelist.xml file in `/home/pi/RetroPie/roms/snes`and will override the gamelist.xml in `/home/pi/.emulationstation/gamelists/snes`
+it will create a gamelist.xml file in `/home/pi/RetroPie/roms/snes` which takes precedence over the gamelist.xml in `/home/pi/.emulationstation/gamelists/snes`
 
 and if all went according to plan, when you boot emulationstation back up your images will be the screenshots that you took! TADA!
 
@@ -143,7 +143,11 @@ then we would take our screenshots and use sselphs scraper to generate our gamel
 **References:**
 
 https://retropie.org.uk/forum/topic/3353/take-and-scrape-your-own-screenshots/
+
 https://retropie.org.uk/forum/topic/1975/taking-an-actual-screenshot/
+
 https://retropie.org.uk/forum/topic/2483/screenshot-with-rom-name/
+
 https://github.com/RetroPie/RetroPie-Setup/issues/1242
+
 https://github.com/retropie/retropie-setup/wiki/scraper
