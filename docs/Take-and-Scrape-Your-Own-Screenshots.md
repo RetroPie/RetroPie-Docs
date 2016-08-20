@@ -95,7 +95,7 @@ so again using the snes as an example
 
 ```
 cd /home/pi/RetroPie/roms/snes
-/opt/retropie/supplementary/scraper/scraper -img_format=png -add_not_found=true -download_images=false -skip_check=true -use_gdb=false -image_suffix=
+/opt/retropie/supplementary/scraper/scraper -img_format=png -add_not_found=true -download_images=false -image_suffix=
 ```
 _For more information on the options for sselphs scraper see [here](https://github.com/sselph/scraper/wiki/Flags)_
 
