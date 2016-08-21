@@ -1,9 +1,15 @@
 ### Making RetroPie identify 2 players instead of one with the Xin-Mo  
   
-Add the following to `/boot/cmdline.txt` (just add a space to the existing entry so its all on one line)  
+Add the following to `/boot/cmdline.txt` -- just add a space to the end of the existing entry, so it is all on one line):
+
 `usbhid.quirks=0x16c0:0x05e1:0x040`
   
-The first two numbers the vendor/product (16c0 and 05e1).  
+The first two numbers are the vendor ID `16c0` and product ID `05e1`.
+
+If you have a "Juyao Dual Arcade", it is the same device, but the vendor ID is `0314` and the product ID is `0328`:
+
+`usbhid.quirks=0x0314:0x0328:0x040`
+
 You can find your vendor/product using `lsusb`  
   
 More details in these threads generally.  
