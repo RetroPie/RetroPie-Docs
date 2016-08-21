@@ -33,7 +33,7 @@ The screen should look like this then:
 ![4 0beta](https://cloud.githubusercontent.com/assets/10035308/16218285/f06f3ba8-3738-11e6-9ccc-be601172713b.png)
 
 ## Verify Locale Settings
-Most of the install scripts will attempt to install a variety of packages and libraries that each emulator requires. These installations will fail if your system local settings are invalid. You can easily verify this by executing `locale` command. A valid locale will return values set for all options, such as in the example below.
+Most of the install scripts will attempt to install a variety of packages and libraries that each emulator requires. These installations will fail if your system locale settings are invalid. You can easily verify this by executing `locale` command. A valid locale will return values set for all options, such as in the example below.
 
 ```
 LANG=en_US.UTF-8
