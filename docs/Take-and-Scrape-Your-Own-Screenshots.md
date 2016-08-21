@@ -34,33 +34,20 @@ systemretroarch="$configdir/$system/retroarch.cfg"
 
 source "/opt/retropie/lib/inifuncs.sh"
 
-# If there is no auto screenshot setting in the main retroarch.cfg add it
-function add_overall_screenshot() {
-    if ! grep -q "auto_screenshot_filename" $mainretroarch; then
-        iniConfig " = " '"' "$mainretroarch"
-        iniSet "auto_screenshot_filename" "false"
-fi
-}
+iniConfig " = " '"'
 
-# Check if an images folder exists in the systems rom folder, if not create it
-function make_screenshot_dir() {
-    if [[ ! -d "$imgdir" ]]; then
-        mkdir $imgdir
+# Create images folder in each respective rom folder
+mkdir -p "$imgdir"
+
+# If there is no auto screenshot setting in the main retroarch.cfg add it
+if ! grep -q "auto_screenshot_filename" "$mainretroarch"; then
+    iniSet "auto_screenshot_filename" "false" "$mainretroarch"
 fi
-}
 
 # If there is no system based screenshot directory defined then define it in the system based retroarch.cfg
-function add_system_screenshot() {
-    if ! grep -q "screenshot_directory" $systemretroarch; then
-        iniConfig " = " '"' "$systemretroarch"
-        iniSet "screenshot_directory" "$imgdir"
-        retroarchIncludeToEnd
+if ! grep -q "screenshot_directory" $systemretroarch; then
+    iniSet "screenshot_directory" "$imgdir" "$systemretroarch"
 fi
-}
-
-add_overall_screenshot
-make_screenshot_dir
-add_system_screenshot
 ```
 
 Now you can play your games and take your screenshots and it will fill your images folder with your screenshots. 
