@@ -34,12 +34,6 @@ Note the RetroPad ABXY pattern is the opposite of the ABXY pattern on the contro
 
 If you truly wish to use the Logitech-labeled A and B buttons as A and B, edit `/opt/retropie/configs/all/autoconf.cfg` and set `es_swap_a_b = 1` then reconfigure the controller in EmulationStation. Now A and B will work as labeled in EmulationStation, but will work like the SNES/RetroPad layout in emulators. You still need to configure X as Y and Y as X.
 
-#### L2/R2 Top Triggers
-
-The "left top" (L2) and "right top" (R2) triggers can be tricky to get right. If you press and release the trigger quickly, you may configure the negative (outward) axis, which is wrong. When this occurs, RetroArch emulators will need the L2/R2 buttons to be pressed once before registering any other input. If you see "left top" as **-2** and/or "right top" as **-5** then the axis is configured incorrectly.
-
-If this happens, complete the rest of the EmulationStation controller setup, but don't press OK at the end. Instead, go back up with the D-Pad and re-configure the "left top" and "right top" controls, this time pressing the trigger inwards more slowly. If done right, "left top" will be the **+2** axis and "right top" will be the **+5** axis. This is the correct configuration.
-
 #### Logitech Button
 
 In XInput mode, the Logitech button in the middle of the controller can be used as another input button.
@@ -199,6 +193,15 @@ axis_dpad1_x_inverted = no
 ~~~
 
 #### 310 Disconnecting Issue
-You may or may not experience an issue where, after loading a rom, the controller is no longer responsive. Assuming it's set up as this wiki describes, you will need to press the right shoulder or trigger button. For me this works by pressing what was called the R1 button on the psx.
 
-You can read a little bit more about it [here](https://www.reddit.com/r/RetroPie/comments/3yh7o3/pi_zero_latest_retropie_logitech_f310/).
+You may or may not experience an issue where, after loading a ROM, the controller is no longer responsive. Assuming it's set up as this page, press the right shoulder or trigger button to resolve this. For me this works by pressing what was called the R1 button on the PSX.
+
+This appears to be a firmware issue as described [here](https://www.reddit.com/r/RetroPie/comments/3yh7o3/pi_zero_latest_retropie_logitech_f310/).
+
+#### L2/R2 Top Triggers
+
+**This is no longer an issue as of RetroPie 4.0**, as the analog triggers register as buttons.
+
+The "left top" (L2) and "right top" (R2) triggers can be tricky to get right. If you press and release the trigger quickly, you may configure the negative (outward) axis, which is wrong. When this occurs, RetroArch emulators will need the L2/R2 buttons to be pressed once before registering any other input. If you see "left top" as **-2** and/or "right top" as **-5** then the axis is configured incorrectly.
+
+If this happens, complete the rest of the EmulationStation controller setup, but don't press OK at the end. Instead, go back up with the D-Pad and re-configure the "left top" and "right top" controls, this time pressing the trigger inwards more slowly. If done right, "left top" will be the **+2** axis and "right top" will be the **+5** axis. This is the correct configuration.
