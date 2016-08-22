@@ -67,7 +67,7 @@ From the command line:
 
 ```
 wget https://raw.githubusercontent.com/meleu/src/master/screeper.sh
-mv screep.sh /opt/retropie/configs/all/runcommand-onend.sh
+mv screeper.sh /opt/retropie/configs/all/runcommand-onend.sh
 ```
 
 Now you can play your game and take your screenshots. The most recent screenshot will be put in your screenshots folder and will be the emulationstation image for this game.
