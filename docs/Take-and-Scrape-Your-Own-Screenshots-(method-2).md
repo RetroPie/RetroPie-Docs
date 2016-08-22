@@ -61,12 +61,12 @@ The runcommand menu is what is run every time you play a game, It is what allows
 
 Here we will add a script to be executed when the game ends. If you took a screenshot in a gaming session, the script will set the most recent screenshot as the emulationstation image for the game you've just played.
 
-Get the script that makes it happen here: https://raw.githubusercontent.com/meleu/src/master/screep.sh
+Get the script that makes it happen here: https://raw.githubusercontent.com/meleu/src/master/screeper.sh
 
 From the command line:
 
 ```
-wget https://raw.githubusercontent.com/meleu/src/master/screep.sh
+wget https://raw.githubusercontent.com/meleu/src/master/screeper.sh
 mv screep.sh /opt/retropie/configs/all/runcommand-onend.sh
 ```
 
