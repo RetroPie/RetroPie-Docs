@@ -37,7 +37,7 @@ Remember this to avoid confusion: `auto_screenshot_filename = false` means ON fo
 
 The directory assigned to `screenshot_directory` **MUST** exist, otherwise RetroArch won't be able to save the screenshots.
 
-It doesn't matter if those options are set in global or system specific `retroarch.cfg`.
+Those options can be set in global or system specific `retroarch.cfg`.
 
 #### global config (easy way)
 
