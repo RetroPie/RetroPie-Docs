@@ -6,10 +6,6 @@ With the recent kernel issues of xboxdrv rendering images unusable, there is an 
 
 You access the driver through **Manage Packages** >> **Manage Driver Packages** >> **Xpad Driver** and you'll install it from source. Reboot for good measure, reconfigure your controllers and the lights should work properly.
 
-There are some caveats with the triggers being treated as axes which is explained here:
-
-https://github.com/RetroPie/RetroPie-Setup/wiki/Logitech-controllers#l2r2-top-triggers
-
 A complete working config (that was generated from the emulationstation configuration) is listed below at `/opt/retropie/configs/all/retroarch-joypads/Xbox360WirelessReceiver(XBOX).cfg`
 
 ```
