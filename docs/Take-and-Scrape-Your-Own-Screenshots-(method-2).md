@@ -41,7 +41,9 @@ Those options can be set in global or system specific `retroarch.cfg`.
 
 #### global config (easy way)
 
-Edit your `/opt/retropie/configs/all/retroarch.cfg` and put the option `auto_screenshot_filename = "false"` (suggestion: put it in the beggining of the file). And then put another line to the option `screenshot_directory = "/path/to/screenshots"` (I use `/home/pi/screenshots`, but you can set any other valid path).
+Edit your `/opt/retropie/configs/all/retroarch.cfg` and put the option `auto_screenshot_filename = "false"`. This option isn't present in the default `retroarch.cfg`, so put it in the beggining of the file is good idea (easy to edit it later).
+
+And then put another line to the option `screenshot_directory = "/path/to/screenshots"` (I use `/home/pi/screenshots`, but you can set any other valid path). Remember: the directory **MUST** exist, otherwise RetroArch won't be able to save the screenshots.
 
 #### system specific config
 
