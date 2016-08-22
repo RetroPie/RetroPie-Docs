@@ -43,7 +43,7 @@ You could configure this button as the RetroArch hotkey instead of Select. This 
 If this is desired, edit the `retroarch-joypads` file described below and change the `input_enable_hotkey_btn` to:
 
 ~~~
-input_enable_hotkey_btn = "8"
+input_enable_hotkey_btn = "10"
 ~~~
 
 ## Config Files
@@ -72,26 +72,26 @@ input_a_btn = "1"
 input_b_btn = "0"
 input_x_btn = "3"
 input_y_btn = "2"
-input_start_btn = "7"
-input_select_btn = "6"
+input_start_btn = "9"
+input_select_btn = "8"
 input_l_btn = "4"
 input_r_btn = "5"
-input_l2_axis = "+2"
-input_r2_axis = "+5"
-input_l3_btn = "9"
-input_r3_btn = "10"
+input_l2_btn = "6"
+input_r2_btn = "7"
+input_l3_btn = "11"
+input_r3_btn = "12"
 input_l_y_minus_axis = "-1"
 input_l_y_plus_axis = "+1"
 input_l_x_minus_axis = "-0"
 input_l_x_plus_axis = "+0"
-input_r_y_minus_axis = "-4"
-input_r_y_plus_axis = "+4"
-input_r_x_minus_axis = "-3"
-input_r_x_plus_axis = "+3"
-input_enable_hotkey_btn = "6"
+input_r_y_minus_axis = "-3"
+input_r_y_plus_axis = "+3"
+input_r_x_minus_axis = "-2"
+input_r_x_plus_axis = "+2"
+input_enable_hotkey_btn = "8"
 input_reset_btn = "0"
 input_menu_toggle_btn = "3"
-input_exit_emulator_btn = "7"
+input_exit_emulator_btn = "9"
 input_load_state_btn = "4"
 input_save_state_btn = "5"
 input_state_slot_increase_btn = "h0right"
@@ -126,32 +126,34 @@ plugin = 2
 mouse = False
 AnalogDeadzone = 4096,4096
 AnalogPeak = 32768,32768
-Mempak switch =
-Rumblepak switch =
+Mempak switch = button(11)
+Rumblepak switch = button(12)
 DPad U = hat(0 Up)
 DPad D = hat(0 Down)
 DPad L = hat(0 Left)
 DPad R = hat(0 Right)
 A Button = button(0)
 B Button = button(2)
-Start = button(7)
+Start = button(9)
 C Button U = button(3) axis(4-)
-C Button D = button(1) axis(4+)
-C Button L = axis(3-)
-C Button R = axis(3+)
+C Button D = button(1) axis(3+)
+C Button L = axis(2-)
+C Button R = axis(2+)
 Y Axis = axis(1-,1+)
 X Axis = axis(0-,0+)
-R Trig = button(4)
-L Trig = button(5)
-Z Trig = axis(2+)
+R Trig = button(5)
+L Trig = button(6)
+Z Trig = button(4)
 ~~~
 
 #### Dreamcast
-The following file should match below:
-`/opt/retropie/configs/dreamcast/mappings/controller_LogitechGamepadF310.cfg`
+
+The following file should match below: `/opt/retropie/configs/dreamcast/mappings/controller_LogitechGamepadF310.cfg`
 
 [Source](https://www.reddit.com/r/RetroPie/comments/4u0sys/fairly_successful_controller_mapping_for_logitech)
-~~~[emulator]
+
+~~~
+[emulator]
 mapping_name = Logitech Gamepad F310
 btn_escape = 316
 
