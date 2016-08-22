@@ -37,8 +37,8 @@ or you can just follow the links and download the .love files and place them int
 ```
     # get mrrescue-1.02d.love (freeware game data)
     if [[ ! -f "$romdir/love/mrrescue-1.02d.love" ]]; then
-        wget "https://github.com/SimonLarsen/mrrescue/releases/download/v1.02d/mrrescue-1.02d.love" -O "$romdir/love/mrrescue-1.02d.love"
-        chown $user:$user "$romdir/love/mrrescue-1.02d.love"
+        wget "https://github.com/SimonLarsen/mrrescue/releases/download/v1.02d/mrrescue-1.02e.love" -O "$romdir/love/mrrescue-1.02e.love"
+        chown $user:$user "$romdir/love/mrrescue-1.02e.love"
     fi
 ```
 
