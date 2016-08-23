@@ -116,6 +116,7 @@ Select+B | Reset
 | :---: | 
 **When you first see EmulationStation you may wonder why you don't see systems like the SNES or Game Boy- worry not- they are installed on the system, roms just need to be added to their respective rom folders before they will become visible. Transferring roms are described in the following steps.**|
 |![firstboot](https://cloud.githubusercontent.com/assets/10035308/16217874/c6bbdb3a-3734-11e6-998f-8cc714a320ce.png)|
+
 ## Configuring Wifi
 
 If you wish to use wifi to transfer roms over the network rather than a USB stick or Ethernet cable you'll need to setup your wifi- which can also be done from the Retropie menu in emulationstation:
@@ -137,6 +138,11 @@ After it's done configuring you should see your wifi info in the original menu:
 ![wifi4](https://cloud.githubusercontent.com/assets/10035308/16217944/92cb07fa-3735-11e6-9239-66fba394c669.png)
 
 For more WiFi configuration options see this page [HERE](https://github.com/RetroPie/RetroPie-Setup/wiki/Wifi)
+
+## Installing additional Emulators / Ports
+On RetroPie 4.0, not everything is installed by default. The pre-made image ships with libretro emulators with a few standalone emulators such as mame4all, mupen64plus and pifba. Ports like quake and doom and other software like ScummVM can be installed later.
+
+Software can be installed from the RetroPie-Setup script - which is accessible from the RetroPie menu on Emulation Station. Once there you can Navigate to "Packages" where you will see various section. You can see available packages in each section and which ones are installed. Stable additional packages are under the "Optional" section, with more unstable packages listed under experimental. The packages are ordered by type (emulators / libretro cores / ports), then alphabetically. By selecting a package you can choose or install it, or remove it. Some packages also have additional configuration.
 
 ## Transferring Roms
 
