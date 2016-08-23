@@ -242,3 +242,19 @@ Easy, only two steps:
 2. Delete the system specific `gamelist.xml` that is at the system roms directory (example for SNES: `~/RetroPie/roms/snes/gamelist.xml`). It makes the emulationstation get the configs from the original `gamelist.xml` (more details on how gamelists works [here](https://github.com/RetroPie/EmulationStation/blob/master/GAMELISTS.md)).
 
 Restart emulationstation and done!, you have your old scrapes back!
+
+## References
+
+https://retropie.org.uk/forum/topic/3353/take-and-scrape-your-own-screenshots/
+
+https://github.com/RetroPie/EmulationStation/blob/master/GAMELISTS.md
+
+https://github.com/retropie/retropie-setup/wiki/scraper
+
+https://github.com/sselph/scraper/wiki/Flags
+
+https://retropie.org.uk/forum/topic/1975/taking-an-actual-screenshot/
+
+https://retropie.org.uk/forum/topic/2483/screenshot-with-rom-name/
+
+https://github.com/RetroPie/RetroPie-Setup/issues/1242
