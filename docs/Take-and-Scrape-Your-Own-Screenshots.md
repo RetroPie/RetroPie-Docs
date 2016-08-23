@@ -101,7 +101,7 @@ if ! grep -q "auto_screenshot_filename" "$mainretroarch"; then
 fi
 
 # If there is no system based screenshot directory defined then define it in the system based retroarch.cfg
-if ! grep -q "screenshot_directory" $systemretroarch; then
+if ! grep -q "screenshot_directory" "$systemretroarch"; then
     iniSet "screenshot_directory" "$imgdir" "$systemretroarch"
 fi
 ```
