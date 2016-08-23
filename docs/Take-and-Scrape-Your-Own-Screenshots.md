@@ -52,7 +52,7 @@ The runcommand menu is what is run every time you play a game, It is what allows
 
 The `runcommand-onstart.sh` script is executed (if exists) before the game starts, and `runcommand-onend.sh` is executed (if exists) after you exit the emulator. Both files must be at `/opt/retropie/configs/all/` directory.
 
-
+The two methods described here take advantage from these features.
 
 ## scraping methods
 
