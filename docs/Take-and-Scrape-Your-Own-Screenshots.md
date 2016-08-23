@@ -170,7 +170,7 @@ then we would take our screenshots and use sselphs scraper to generate our gamel
 
 ## METHOD 2
 
-**First step**: [scrape your ROMs](https://github.com/RetroPie/RetroPie-Setup/wiki/scraper). This method was not made to start a `gamelist.xml` file from scratch. It creates a copy of your already filled system's `gamelist.xml` and then edit the copied version (so **there's no need to backup the original `gamelist.xml` files**.)
+**First step**: [scrape your ROMs](https://github.com/RetroPie/RetroPie-Setup/wiki/scraper). This method was not made to start a `gamelist.xml` file from scratch. It creates a copy of your already filled system's `gamelist.xml` and then edit the copied version.
 
 
 ## What exactly this method do
