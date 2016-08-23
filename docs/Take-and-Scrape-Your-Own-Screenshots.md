@@ -68,7 +68,7 @@ The main difference between them is:
 
 - [Method 2](#method-2): you have to [scrape your ROMs](https://github.com/retropie/retropie-setup/wiki/scraper) before, and manually edit `retroarch.cfg` configs, but automates the placement of your screenshots as the respective emulationstation game images.
 
-Now you have to choose which method you want to follow (or read about both): [Method 1](#method-1) or [Method 2](#method-2).
+Now you have to choose which one you want to follow (or read about both): [Method 1](#method-1) or [Method 2](#method-2).
 
 
 ## METHOD 1
