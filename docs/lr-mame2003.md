@@ -33,6 +33,10 @@ or, if you're using the arcade folder:
 /home/pi/RetroPie/roms/arcade/mame2003/nvram/
 ```
 
+## Dip-switches
+
+Similarly to the [Service menu](#service-menu), many arcade games had hardware switches for arcade owners to modify certain parameters. These can be adjust by pressing the 'TAB' key to access the [MAME menu](#mame-menu), and select the '**Dip Switches**' option. Here you can turn them on/off.
+
 ## High scores
 
 lr-mame2003 will attempt to keep a permanent record of any high scores you set, but some games will not save these by default. There is a supplementary file that you can transfer to your Pi that will enable high score saving for more games, called `hiscore.dat`. This file can be downloaded from http://highscore.mameworld.info/ - you need the one labeled "**old format hiscore.dat (pre mame v0174)**":
