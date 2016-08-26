@@ -73,8 +73,8 @@ You can change the in-game behavior of this game in the following way:
 
 Go to the folder: /opt/retropie/ports/sdlpop
 
-There should be an file called "SDLPoP.ini". If not, copy the file SDLPoP.ini.def over it.
-When you open this file you can edit some of the configurations of the game, like from which level
-onward you are allowed to save the game (default = 3). There are many other tweaks possible, the file
-will explain itself.
+There should be an file called "SDLPoP.ini". If not, copy the file SDLPoP.ini.def 
+over it. When you open this file you can edit some of the configurations of the game, 
+like from which level onward you are allowed to save the game (default = 3). 
+There are many other tweaks possible, the file will explain itself.
 ```
