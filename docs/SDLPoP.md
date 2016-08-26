@@ -67,6 +67,11 @@ Cheats: (Note: Cheats only work if you start the game with the command line opti
 * Shift-S: Restore lost hit-point. (Like a small red potion.)
 * Shift-T: Give more hit-points. (Like a big red potion.)
 
+A nice way to start it from the menu is to make a new .sh file for it, so you can decide if you 
+like starting it with cheats or without. Simply make an new "prince_with_cheats.sh" file in the folder
+/home/pi/RetroPie/roms/ports and let it change the directory to: /opt/retropie/ports/sdlpop 
+before starting the game with "./prince megahit".
+
 Troubleshooting / Tweaking / Saving the game:
 
 You can change the in-game behavior of this game in the following way:
