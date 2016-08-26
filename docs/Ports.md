@@ -149,10 +149,10 @@ With the following contents:
 
 rp_module_id="gamemaker"
 rp_module_desc="GameMaker - Games for the Raspberry Pi"
-rp_module_menus="4+"
-rp_module_flags="nobin !mali !x86"
+rp_module_section="exp"
+rp_module_flags="!mali !x86"
 
-function install_gamemaker() {
+function install_bin_gamemaker() {
 # Install They Need To Be Fed Game
 wget -O- -q https://www.yoyogames.com/download/pi/tntbf | tar -xvz -C "$md_inst"
 # Install Super Crate Box Game
@@ -166,8 +166,7 @@ function configure_gamemaker() {
 
     addPort "$md_id" "TheyNeedToBeFed" "TheyNeedToBeFed" "$md_inst/TheyNeedToBeFed/TheyNeedToBeFed"
     addPort "$md_id" "SuperCrateBox" "SuperCrateBox" "$md_inst/SuperCrateBox/SuperCrateBox"
-    addPort "$md_id" "MalditaCastilla" "MalditaCastilla" "$md_inst/MalditaCastilla/MalditaCastilla"
-}
+addPort "$md_id" "MalditaCastilla" "MalditaCastilla" "$md_inst/MalditaCastilla/MalditaCastilla"
 ```
 
 
