@@ -48,7 +48,8 @@ Viewing or recording replays:
 * Ctrl+Tab (in game): start or stop recording
 * Tab (on title screen): view/cycle through the saved replays in the SDLPoP directory
 
-Cheats:
+Cheats: (Note: Cheats only work if you start the game with the command line option: "megahit")
+
 * Shift-L: go to next level
 * c: show numbers of current and adjacent rooms
 * Shift-C: show numbers of diagonally adjacent rooms
@@ -65,4 +66,15 @@ Cheats:
 * Shift-B: toggle hiding of non-animated objects
 * Shift-S: Restore lost hit-point. (Like a small red potion.)
 * Shift-T: Give more hit-points. (Like a big red potion.)
+
+Troubleshooting / Tweaking / Saving the game:
+
+You can change the in-game behavior of this game in the following way:
+
+Go to the folder: /opt/retropie/ports/sdlpop
+
+There should be an file called "SDLPoP.ini". If not, copy the file SDLPoP.ini.def over it.
+When you open this file you can edit some of the configurations of the game, like from which level
+onward you are allowed to save the game (default = 3). There are many other tweaks possible, the file
+will explain itself.
 ```
