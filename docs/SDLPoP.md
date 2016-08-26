@@ -71,7 +71,7 @@ Troubleshooting / Tweaking / Saving the game:
 
 You can change the in-game behavior of this game in the following way:
 
-Go to the folder: /opt/retropie/ports/sdlpop
+Go to the folder: /opt/retropie/configs/ports/sdlpop
 
 There should be an file called "SDLPoP.ini". If not, copy the file SDLPoP.ini.def 
 over it. When you open this file you can edit some of the configurations of the game, 
