@@ -129,3 +129,44 @@ sudo darkplaces-sdl -quake -basedir /opt/retropie/emulators/darkplaces/
 
 There are only 2 parts to having software appear in the ports menu and have it work. The first is that you must have installed the software, however it gets done. You need to make sure it runs from the command-line before the next part. The second part is simply making a shell script that does the command line arguments to start the game/software. EmulationStation will launch it and then wait for it to exit. 
 
+##GameMaker Games
+
+Here's a module for the GameMaker Games. Just create a file called `gamemaker.sh` in `/home/pi/RetroPie-Setup/scriptmodules/ports`
+
+With the following contents:
+
+```shell
+#!/usr/bin/env bash
+
+# This file is part of The RetroPie Project
+# 
+# The RetroPie Project is the legal property of its developers, whose names are
+# too numerous to list here. Please refer to the COPYRIGHT.md file distributed with this source.
+# 
+# See the LICENSE.md file at the top-level directory of this distribution and 
+# at https://raw.githubusercontent.com/RetroPie/RetroPie-Setup/master/LICENSE.md
+#
+
+rp_module_id="gamemaker"
+rp_module_desc="GameMaker - Games for the Raspberry Pi"
+rp_module_section="exp"
+rp_module_flags="!mali !x86"
+
+function install_bin_gamemaker() {
+# Install They Need To Be Fed Game
+wget -O- -q https://www.yoyogames.com/download/pi/tntbf | tar -xvz -C "$md_inst"
+# Install Super Crate Box Game
+wget -O- -q https://www.yoyogames.com/download/pi/crate | tar -xvz -C "$md_inst"
+# Install Maldita Castilla Game
+wget -O- -q https://www.yoyogames.com/download/pi/castilla | tar -xvz -C "$md_inst"
+}
+
+function configure_gamemaker() {
+    mkRomDir "ports"
+
+    addPort "$md_id" "TheyNeedToBeFed" "TheyNeedToBeFed" "$md_inst/TheyNeedToBeFed/TheyNeedToBeFed"
+    addPort "$md_id" "SuperCrateBox" "SuperCrateBox" "$md_inst/SuperCrateBox/SuperCrateBox"
+    addPort "$md_id" "MalditaCastilla" "MalditaCastilla" "$md_inst/MalditaCastilla/MalditaCastilla"
+}
+```
+
