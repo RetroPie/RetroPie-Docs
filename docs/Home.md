@@ -92,6 +92,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script. E
 * [Dinothawr](Dinothawr) [(lr-dinothawr)](https://github.com/libretro/Dinothawr)
 * [DOOM](Doom) [(lr-prboom)](https://github.com/libretro/libretro-prboom), [(ZDOOM)](https://github.com/rheit/zdoom)
 * [Duke Nukem 3D](Duke-Nukem-3D) [(Eduke32)](http://www.eduke32.com/)
+* [GameMaker Games](GameMaker-Games) [(GameMaker: Studio)](http://www.yoyogames.com/gamemaker)
 * [Giana's Return](Giana's-Return) 
 * [Lincity](Lincity) 
 * [Löve](Love) [(Löve)](https://bitbucket.org/rude/love/src) 
