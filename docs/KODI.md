@@ -12,7 +12,7 @@ See [here](http://blog.petrockblock.com/forums/topic/kodi-tab-in-emulationstatio
 
 ## Installation
 
-Visit the RetroPie-Setup Screen, select Experimental Packages, and select Kodi.  Installation can take 10 minutes.  After installation, you will be able to go to the Ports section and view Kodi as an option.
+Visit the RetroPie-Setup Screen, select Optional Packages, and select Kodi.  Installation can take 10 minutes.  After installation, you will be able to go to the Ports section and view Kodi as an option.
 
 RetroPie currently installs Kodi 16.1 Jarvis
 
