@@ -1,7 +1,7 @@
 ***
 ![msx2](https://cloud.githubusercontent.com/assets/10035308/12213189/80192ed2-b631-11e5-86b3-58d17dcc2432.png)
 ***
-_The MSX was a personal computer released by Microsoft in 1983._
+_The MSX was a 8bit personal computer standard developed by ASCII in 1983. Microsoft provided the basic interpreter and later MSX-DOS. Various electronics vendors made systems such as Panasonic, Philips, Sony, Toshiba, Yamaha and many others. The MSX was followed by the MSX2 and later the MSX2+ and TurboR. The MSX had it's greatest success in Japan. Outside of Japan the system was also sold in Europe, South America and the middle East. But only in the Netherlands, Spain and Brazil did it manage to get a sizable market share. After the MSX2 manufacturers abandoned the markets outside Japan._
 
 ***
 
