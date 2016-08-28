@@ -68,7 +68,19 @@ The main difference between them is:
 
 - [Method 2](#method-2): you have to [scrape your ROMs](https://github.com/retropie/retropie-setup/wiki/scraper) before, and manually edit `retroarch.cfg` configs, but automates the placement of your screenshots as the respective emulationstation game images.
 
-Now you have to choose which one you want to follow (or read about both): [Method 1](#method-1) or [Method 2](#method-2).
+Now you have to choose which one you want to follow (or read about both):
+
+[Method 1](#method-1):
+- [runcommand-onstart.sh](#runcommand-onstartsh)
+- [Create gamelist with Sselphs scraper](#create-gamelist-with-sselphs-scraper)
+- [Behind the Code](#behind-the-code)
+
+
+[Method 2](#method-2):
+- [What exactly this method do](#what-exactly-this-method-do)
+- [retroarch.cfg](#retroarchcfg)
+- [runcommand-onend.sh](#runcommand-onendsh)
+- ["I didn't like how it looks! I want my old images back and disable this stuff!"](#i-didnt-like-how-it-looks-i-want-my-old-images-back-and-disable-this-stuff)
 
 
 ## METHOD 1
@@ -173,7 +185,7 @@ then we would take our screenshots and use sselphs scraper to generate our gamel
 **First step**: [scrape your ROMs](https://github.com/RetroPie/RetroPie-Setup/wiki/scraper). This method was not made to start a `gamelist.xml` file from scratch. It creates a copy of your already filled system's `gamelist.xml` and then edit the copied version.
 
 
-## What exactly this method do
+### What exactly this method do
 
 If you take a screenshot during a gaming session, the most recent screenshot will be the emulationstation image for this game. This task is done by a `runcommand-onend.sh` script.
 
@@ -234,7 +246,7 @@ Now you can play your game and take your screenshots. The most recent screenshot
 You have to restart emulationstation in order to see the changes. If all went according to plan, your screenshots will be the game images!
 
 
-## "I didn't like how it looks! I want my old images back and disable this stuff!"
+### "I didn't like how it looks! I want my old images back and disable this stuff!"
 
 Easy, only two steps:
 
