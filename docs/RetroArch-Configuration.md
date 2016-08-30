@@ -79,25 +79,17 @@ These configurations are manual edits you can make that are locked to a specific
 
 All RetroArch based emulators can be configured in the following way:
 
-**Global** settings - that are settings which should apply to all systems - are done in the file 
+**Global** settings - that are settings which should apply to all systems - are done in the file `/opt/retropie/configs/all/retroarch.cfg` ([example](https://github.com/RetroPie/RetroPie-Setup/wiki/RetroArch-Configuration/#example-default-per-system-retroarchcfg))
 
-    /opt/retropie/configs/all/retroarch.cfg 
+**System-specific** settings are done in the files `/opt/retropie/configs/SYSTEMNAME/retroarch.cfg` ([example](https://github.com/RetroPie/RetroPie-Setup/wiki/RetroArch-Configuration/#example-per-system-control-override-retroarchcfg))
+Here, SYSTEMNAME is atari2600, snes, etc. All settings in these files will overwrite the corresponding global setting as long as they are placed **above** the #includeconfig line.
 
-**System-specific** settings are done in the files 
-
-    /opt/retropie/configs/SYSTEMNAME/retroarch.cfg
-
-Here, SYSTEMNAME is atari2600, snes, etc.. All settings in these files will overwrite the corresponding global setting as long as they are placed **above** the #includeconfig line.
-
-**ROM-specific** settings can be created in the [runcommand](https://github.com/RetroPie/RetroPie-Setup/wiki/runcommand) menu and show up as configuration files by rom title. It follows the same pattern as the other hardcoded configs.
-
-    /home/pi/RetroPie/roms/SYSTEMNAME/ROMNAME.cfg
-
+**ROM-specific** settings can be created in the [runcommand](https://github.com/RetroPie/RetroPie-Setup/wiki/runcommand) menu and show up as configuration files by rom title, i.e.: `/home/pi/RetroPie/roms/SYSTEMNAME/ROMNAME.cfg` ([example](https://github.com/RetroPie/RetroPie-Setup/wiki/RetroArch-Configuration/#example-per-system-control-override-retroarchcfg))
 The ROMNAME includes the original file extension before the `.cfg`, e.g. `supermariobros.zip.cfg` These configurations are used when starting this specific ROM.
  
 ## Custom Retroarch Override Examples
 
-### Example Default Per System Retroarch.cfg
+### Example Default Per-System Retroarch.cfg
 
 ```
 # Settings made here will only override settings in the global retroarch.cfg if placed above the #include line
@@ -108,7 +100,7 @@ input_remapping_directory = /opt/retropie/configs/megadrive/
 #include "/opt/retropie/configs/all/retroarch.cfg"
 ```
 
-## Example Per System Control Override retroarch.cfg: 
+### Example Per-System Control Override retroarch.cfg
 **Note** the values below are for one person's controller, your values may differ. Make sure that these values are placed **above** the #includeconfig line
 ```shell
 # Settings made here will only override settings in the global retroarch.cfg if placed above the #include line
@@ -160,9 +152,18 @@ input_state_slot_decrease_axis = -0
 #include "/opt/retropie/configs/all/retroarch.cfg"
 ```
 
+### Example Per-ROM Override retroarch.cfg: 
+```
+aspect_ratio_index = "19"
+
+# Never save-on-exit after an override config
+# or the override will make into the core config.
+config_save_on_exit = false
+```
+
 ## Core Input Remapping
 
-Core Input Remapping differs from the other two methods as it remaps how the core receives input rather than how the gamepad is coded, for example you can tell the snes core to switch button A and B on the controller for gameplay, but you can still use "A" to select in the RGUI and "B" to go back where as hardcoding would make B select and A back. Core Remapping is much more practical than hardcoded mapping but is limited to the cores that support it. 
+Core Input Remapping differs from the other two methods as it remaps how the core receives input rather than how the gamepad is coded, for example you can tell the snes core to switch button A and B on the controller for gameplay, but you can still use "A" to select in the RGUI and "B" to go back where as hard-coding would make B select and A back. Core Remapping is much more practical than hard-coded mapping but is limited to the cores that support it. 
 
 Quick way to do it:
 
