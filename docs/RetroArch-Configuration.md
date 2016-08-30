@@ -95,7 +95,8 @@ Here, SYSTEMNAME is atari2600, snes, etc. All settings in these files will overw
 
 **ROM-specific** settings can be created in the [runcommand](https://github.com/RetroPie/RetroPie-Setup/wiki/runcommand) menu and show up as configuration files by rom title:
 ```
-/home/pi/RetroPie/roms/SYSTEMNAME/ROMNAME.cfg```
+/home/pi/RetroPie/roms/SYSTEMNAME/ROMNAME.cfg
+```
 ([example](https://github.com/RetroPie/RetroPie-Setup/wiki/RetroArch-Configuration/#example-per-system-control-override-retroarchcfg))
 
 The ROMNAME includes the original file extension before the `.cfg`, e.g. `supermariobros.zip.cfg` These configurations are used when starting this specific ROM.
