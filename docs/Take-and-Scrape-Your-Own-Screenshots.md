@@ -66,7 +66,7 @@ The main difference between them is:
 
 - [Method 1](#method-1): automates the `retroarch.cfg` configs but you have to use SSelph scraper tool from command line every time you want to update the `gamelist.xml` with your screenshots.
 
-- [Method 2](#method-2): you have to [scrape your ROMs](https://github.com/retropie/retropie-setup/wiki/scraper) before, and manually edit `retroarch.cfg` configs, but automates the placement of your screenshots as the respective emulationstation game images.
+- [Method 2](#method-2): you have to manually edit `retroarch.cfg` configs, but automates the placement of your screenshots as the respective emulationstation game images.
 
 Now you have to choose which one you want to follow (or read about both):
 
@@ -77,7 +77,6 @@ Now you have to choose which one you want to follow (or read about both):
 
 
 [Method 2](#method-2):
-- [What exactly this method do](#what-exactly-this-method-do)
 - [retroarch.cfg](#retroarchcfg)
 - [runcommand-onend.sh](#runcommand-onendsh)
 - ["I didn't like how it looks! I want my old images back and disable this stuff!"](#i-didnt-like-how-it-looks-i-want-my-old-images-back-and-disable-this-stuff)
@@ -182,9 +181,6 @@ then we would take our screenshots and use sselphs scraper to generate our gamel
 
 ## METHOD 2
 
-**First step**: [scrape your ROMs](https://github.com/RetroPie/RetroPie-Setup/wiki/scraper). This method was not made to start a `gamelist.xml` file from scratch. It creates a copy of your already filled system's `gamelist.xml` and then edit the copied version.
-
-
 ### What exactly this method do
 
 If you take a screenshot during a gaming session, the most recent screenshot will be the emulationstation image for this game. This task is done by a `runcommand-onend.sh` script.
@@ -227,12 +223,12 @@ If you want to use system specific folders for screenshots, set the `screenshot_
 
 Here we will add a script to be executed when the game ends. If you took a screenshot in a gaming session, the script will automatically set the most recent screenshot as the emulationstation image for the game you've just played.
 
-Get the script that makes it happen here: https://raw.githubusercontent.com/meleu/src/master/screeper.sh
+Get the script that makes it happen here: https://raw.githubusercontent.com/meleu/share/master/screeper.sh
 
 From the command line:
 
 ```
-wget https://raw.githubusercontent.com/meleu/src/master/screeper.sh
+wget https://raw.githubusercontent.com/meleu/share/master/screeper.sh
 mv screeper.sh /opt/retropie/configs/all/runcommand-onend.sh
 ```
 
