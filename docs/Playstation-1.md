@@ -48,7 +48,7 @@ if your psx game is a .ecm extension, its a compressed file that needs to be ext
 
 ## BIOS
 
-The BIOS file is named **SCPH1001.BIN**
+The BIOS file is named **SCPH1001.BIN** (both name and extension are case-sensitive so MUST be in capitals)
 
 Place SCPH1001.BIN in
 ```
