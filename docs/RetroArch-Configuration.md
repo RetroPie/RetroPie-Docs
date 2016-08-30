@@ -93,11 +93,7 @@ Here, SYSTEMNAME is atari2600, snes, etc.. All settings in these files will over
 
     /home/pi/RetroPie/roms/SYSTEMNAME/ROMNAME.cfg
 
-These configurations are used when starting a rom for a specific system. The individually used commands for starting a single rom are called through [runcommand](https://github.com/RetroPie/RetroPie-Setup/wiki/runcommand) but can also be manually edited in the following file.
-
-```
-/opt/retropie/configs/SYSTEMNAME/emulators.cfg
-```
+These configurations are used when starting a rom for a specific system.
  
 ## Custom Retroarch Override Examples
 
