@@ -79,12 +79,25 @@ These configurations are manual edits you can make that are locked to a specific
 
 All RetroArch based emulators can be configured in the following way:
 
-**Global** settings - that are settings which should apply to all systems - are done in the file `/opt/retropie/configs/all/retroarch.cfg` ([example](https://github.com/RetroPie/RetroPie-Setup/wiki/RetroArch-Configuration/#example-default-per-system-retroarchcfg))
+**Global** settings - that are settings which should apply to all systems - are done in the file
+```
+/opt/retropie/configs/all/retroarch.cfg
+```
+([example](https://github.com/RetroPie/RetroPie-Setup/wiki/RetroArch-Configuration/#example-default-per-system-retroarchcfg))
 
-**System-specific** settings are done in the files `/opt/retropie/configs/SYSTEMNAME/retroarch.cfg` ([example](https://github.com/RetroPie/RetroPie-Setup/wiki/RetroArch-Configuration/#example-per-system-control-override-retroarchcfg))
+**System-specific** settings are done in the files
+```
+/opt/retropie/configs/SYSTEMNAME/retroarch.cfg
+```
+([example](https://github.com/RetroPie/RetroPie-Setup/wiki/RetroArch-Configuration/#example-per-system-control-override-retroarchcfg))
+
 Here, SYSTEMNAME is atari2600, snes, etc. All settings in these files will overwrite the corresponding global setting as long as they are placed **above** the #includeconfig line.
 
-**ROM-specific** settings can be created in the [runcommand](https://github.com/RetroPie/RetroPie-Setup/wiki/runcommand) menu and show up as configuration files by rom title, i.e.: `/home/pi/RetroPie/roms/SYSTEMNAME/ROMNAME.cfg` ([example](https://github.com/RetroPie/RetroPie-Setup/wiki/RetroArch-Configuration/#example-per-system-control-override-retroarchcfg))
+**ROM-specific** settings can be created in the [runcommand](https://github.com/RetroPie/RetroPie-Setup/wiki/runcommand) menu and show up as configuration files by rom title:
+```
+/home/pi/RetroPie/roms/SYSTEMNAME/ROMNAME.cfg```
+([example](https://github.com/RetroPie/RetroPie-Setup/wiki/RetroArch-Configuration/#example-per-system-control-override-retroarchcfg))
+
 The ROMNAME includes the original file extension before the `.cfg`, e.g. `supermariobros.zip.cfg` These configurations are used when starting this specific ROM.
  
 ## Custom Retroarch Override Examples
