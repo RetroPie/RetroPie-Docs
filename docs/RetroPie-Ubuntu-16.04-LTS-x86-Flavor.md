@@ -113,3 +113,24 @@ Ubuntu 16.04 uses Pulseaudio 8 which has issues with HDMI if you suspend your de
 #load-module module-switch-on-port-available
 ```
 https://bugs.freedesktop.org/show_bug.cgi?id=93946#c36
+
+### Section 3.9: Xbox360 Controller mappings not working correctly
+
+The X86 version of Retropie install does nto have the xboxdrv installed correctly.  Please launch Retropie-Setup Manage Packacges - Drivers and install xbox drv and remap your inputs. 
+
+
+### Section 4.0: How do I mapp controls to Dolphin
+
+Dolphin controls must currently be mapped via the GUI.  You will need to drop down into terminal mode press F4 on your keyboard if you are currently in emulation station, hit the unity button and search for terminal.  Click to launch. 
+Change to the Dolphin directory
+cd /opt/retropie/emulators/bin/dolphin-emu 
+Launch dolphin emu
+./dolphin-emu 
+From there there graphical client will launch and you can bind your controller in the Dolphin Interface as well as change settings.
+
+### Section 4.1: Start+Select does not exit Dolphin
+
+Dolphin is not a libretro emulator.  Currently exit for Dolphin is hard mapped to Alt + F4 
+You can manually exit via your keyboard, and come back to emulation station.
+Need suggestions as to how to bing start select to alt+f4 only for dolphin as a solution.
+
