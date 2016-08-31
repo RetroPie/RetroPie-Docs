@@ -90,4 +90,5 @@ Emulators can be installed and updated individually from the Main, Optional, and
 If you want to use samba shares you can set them up from the setup/tools option of the retropie setup script.
 
 ## Further Optimizations:
-Add `consoleblank=0` to the existing line in `/boot/cmdline.txt` (with a space before it so it's an additional parameter). This prevents the screenblanker kicking in. With it, runcommand dialog is always displayed.  
+On Debian Jessie add `consoleblank=0` to the existing line in `/boot/cmdline.txt` (with a space before it so it's an additional parameter). This prevents the screenblanker kicking in. With it, runcommand dialog is always displayed.  
+There is also a gui option in RetroPie-Setup -> Configuration / Tools -> Raspbian Tools to disable the blanker, but it doesn't work in Jessie due to a Debian bug.
