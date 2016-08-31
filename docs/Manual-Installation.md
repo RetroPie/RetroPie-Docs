@@ -88,3 +88,6 @@ Emulators can be installed and updated individually from the Main, Optional, and
 ### Samba Roms
 
 If you want to use samba shares you can set them up from the setup/tools option of the retropie setup script.
+
+## Further Optimizations:
+Add consoleblank=0 to the existing line in /boot/cmdline.txt (with a space before it of course so it's an additional parameter). This prevents the screenblanker kicking in and so runcommand dialog is always displayed.  
