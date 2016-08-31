@@ -14,7 +14,9 @@ The Sega CD was yet another add-on to the Sega Genesis. It was released in 1991.
 Genesis-Plus-GX is recommended for the Pi 2/3 as it has better accuracy.
 
 ## ROMS
-Accepted File Extensions: **.smd .bin .md .iso**
+Accepted File Extensions: ** .cue .bin .iso**  
+Note: .bin files wont be displayed within Emulation Station, they will be referenced via the .cue.
+
 
 Place your Sega CD ROMS (.bin AND .cue) in
 ```
