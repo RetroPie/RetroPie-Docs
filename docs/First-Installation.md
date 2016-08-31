@@ -6,7 +6,9 @@
 1. [Hardware](https://github.com/RetroPie/RetroPie-Setup/wiki/First-Installation#hardware-needed)
 1. [Installation](https://github.com/RetroPie/RetroPie-Setup/wiki/First-Installation#installation)
 1. [Controller Configuration](https://github.com/RetroPie/RetroPie-Setup/wiki/First-Installation#controller-configurations)
+1. [EmulationStation](https://github.com/RetroPie/RetroPie-Setup/wiki/First-Installation#emulationstation)
 1. [Configure Wifi](https://github.com/RetroPie/RetroPie-Setup/wiki/First-Installation#configuring-wifi)
+1. [Installing Additional Emulators](https://github.com/RetroPie/RetroPie-Setup/wiki/First-Installation#installing-additional-emulators--ports)
 1. [Transferring Roms](https://github.com/RetroPie/RetroPie-Setup/wiki/First-Installation#transferring-roms)
 
 Congratulations! You have discovered the wonderful world of RetroPie- your entire childhood is within reach! RetroPie is a combination of multiple projects including [RetroArch](http://www.libretro.com), [EmulationStation](http://www.emulationstation.org), and many others. 
