@@ -1,7 +1,7 @@
 ***
 ![msx2](https://cloud.githubusercontent.com/assets/10035308/12213189/80192ed2-b631-11e5-86b3-58d17dcc2432.png)
 ***
-_The MSX was a 8bit personal computer standard developed by ASCII in 1983. Microsoft provided the BASIC interpreter and later MSX-DOS. Various electronics vendors made MSX systems such as Canon, Casio, Daewoo, JVC, Mitsubishi, Panasonic, Philips, Pioneer, Sanyo, Sony, Toshiba, Yamaha and various others. The MSX was followed by the MSX2, after which manufacturers abandoned the market outside Japan due to limited success. In Japan a few manufacturers still held out and released the MSX2+ and finally the TurboR. MSX had its greatest success in Japan, and was able to establishment some market share in countries like the Netherlands, Spain and Brazil._
+_The MSX was a 8bit personal computer standard developed by ASCII in 1983. Microsoft provided the BASIC interpreter and later MSX-DOS. Various electronics vendors made MSX systems such as Canon, Casio, Daewoo, Fujitsu, Goldstar (LG), Hitachi, JVC, Mitsubishi, Panasonic, Philips, Pioneer, Samsung, Sanyo, Sony, Toshiba, Yamaha and various others. The MSX was followed by the MSX2, after which manufacturers abandoned the market outside Japan due to limited success. In Japan a few manufacturers still held out and released the MSX2+ and finally the TurboR. MSX had its greatest success in Japan, and was able to establishment some market share in countries like the Netherlands, Spain and Brazil._
 
 ***
 
