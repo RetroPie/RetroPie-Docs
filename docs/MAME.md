@@ -35,7 +35,9 @@ To avoid having several emulationstation menus for different arcade emulators, a
 
 [**All Arcade ROMS Compatibility List**](https://docs.google.com/spreadsheets/d/1antILt7D12EWOFzyJwTfB86NceghMJKXG7CdYumuHec/edit?usp=sharing) feel free to contribute to the list.
 
-## **MAME4ALL-Pi**
+## **Emulators**
+
+### **MAME4ALL-Pi**
 
 Place your MAME4ALL-Pi ROMs in
 ```
@@ -48,7 +50,7 @@ Total Games Emulated: [2270](http://code.google.com/p/imame4all/wiki/GameList)
 
 [**MAME4ALL-PI COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1gpuoZx78kDDdnf_yADicsSZHMfpOxNySSov7UdCDAik/edit?usp=sharing)  feel free to contribute to the list.
 
-## **lr-imame4all**
+### **lr-imame4all**
 
 Place your lr-imame4all ROMs in
 ```
@@ -61,7 +63,7 @@ Total Games Emulated: [2270](http://code.google.com/p/imame4all/wiki/GameList)
 
 [**lr-IMAME4ALL COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1Fmx2RPcgVgIIeKpaBKNEGWCDuu3DGfR-VkrnIVsIpeE/edit?usp=sharing)  feel free to contribute to the list.
 
-## **AdvanceMAME**
+### **AdvanceMAME**
 
 Place your AdvanceMAME ROMs in
 ```
@@ -76,7 +78,7 @@ Total Games Emulated: **5563** (0.94.0) **6166** (1.4) (includes clones etc..)
 
 [**AdvMame 1.4 COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1RapyxChe2BMOfbX-FsCup9SXGxvS1WmXAofwaTJtmxc/edit?usp=sharing)  feel free to contribute to the list.
 
-## lr-Mame2003
+### lr-Mame2003
 
 **Please see [[lr-mame2003]] for information on how to configure specific features of this emulator.**
 
@@ -91,7 +93,7 @@ Total Games Emulated: 4705 (includes clones etc...)
 
 [**lr-mame2003 COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1LP1MELCvcxu7TfiowF_0ZuvRVEMqlfQyTVetnOJvuJc/edit?usp=sharing)  feel free to contribute to the list.
 
-## lr-Mame2010 (EXPERIMENTAL)
+### lr-Mame2010 (EXPERIMENTAL)
 
 Place your lr-Mame2010 ROMs in
 ```
