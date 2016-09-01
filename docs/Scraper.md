@@ -34,7 +34,7 @@ Make sure to update to the latest version of Retropie-Setup script if youre miss
 
 - **Max Image Width:** Specify the max image width to scrape.
 
-- **Scraper:** Choose which database to scrape from - thegamesdb is default, but when thegamesdb is down you can specify to use OpenVGBD instead.
+- **Scraper:** Choose which database to scrape from - thegamesdb is default, but when thegamesdb is down you can specify to use OpenVGDB instead.
 
 - **ROM Names:** Choose what name to display:
   * No-Intro: Rom Name (USA) (Rev 1)
