@@ -21,11 +21,9 @@ The following chart is a quick reference for all the arcade emulators in RetroPi
 
 See also: [MAME](https://github.com/petrockblog/RetroPie-Setup/wiki/MAME), [FBA](https://github.com/petrockblog/RetroPie-Setup/wiki/FinalBurn-Alpha)
 
-This is where [clrmamepro](http://mamedev.emulab.it/clrmamepro/) comes in.  Clrmamepro is a Windows utility for verifying and managing your ROMs. It can also run on Linux, using [Wine](https://www.winehq.org/). Clrmamepro is very powerful, but also somewhat complex and not friendly to new users. 
+It is much easier to source a complete romset required by the arcade emulator you want to use. However, if you are concerned that your set is incomplete or invalid, or wish to downgrade a later set to an older set, this is where [clrmamepro](http://mamedev.emulab.it/clrmamepro/) comes in.  Clrmamepro is a Windows utility for verifying and converting romsets. It can also run on [OSX](http://www.emulab.it), and Linux, using [Wine](https://www.winehq.org/).
 
-there is also a Mac version available now http://www.emulab.it its only in Beta at the moment, but it works exactly the same as the Windows utility 
-
-Here are the steps to getting started with clrmamepro.
+Clrmamepro is very powerful, but also somewhat complex and not friendly to new users. Here are the steps to getting started with clrmamepro.
 
 ## Video Tutorial:
 <a href="https://www.youtube.com/watch?v=_lssz2pAba8" target="_blank"><img src="https://i.ytimg.com/vi_webp/_lssz2pAba8/mqdefault.webp" 
