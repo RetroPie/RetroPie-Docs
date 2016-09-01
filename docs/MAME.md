@@ -31,7 +31,7 @@ Accepted File Extensions: **.zip**
 
 ## **Arcade**
 
-All arcade based romsets can be placed in the `arcade` rom folder but you will have to specify which emulator each rom will use from the [Runcommand Menu](runcommand)
+To avoid having several emulationstation menus for different arcade emulators, all arcade-based ROMs can be placed in the `arcade` ROM folder, but you will have to specify which emulator each will use from the [Runcommand Menu](runcommand)
 
 [**All Arcade ROMS Compatibility List**](https://docs.google.com/spreadsheets/d/1antILt7D12EWOFzyJwTfB86NceghMJKXG7CdYumuHec/edit?usp=sharing) feel free to contribute to the list.
 
