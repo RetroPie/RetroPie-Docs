@@ -104,7 +104,7 @@ Total Games Emulated: 8782 (includes clones etc...)
 
 [**lr-mame2010 COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1IRSmFrSDvIc6gAw0gn12TcQ3HDOwmrETTor8wvvb7VI/edit?usp=sharing) feel free to contribute to the list.
 
-You will get errors loading some mame roms, not all roms are compatible or working. You will need to download ROMs that are confirmed working with your version of MAME
+This emulator has limited functionality. For example, only 2 players are supported.
 
 ## BIOS
 Some ROMs may need the **neogeo.zip** BIOS in order to run. Place the neogeo.zip BIOS file in the same folder as your MAME ROMs. For example:
