@@ -144,7 +144,7 @@ For more WiFi configuration options see this page [HERE](https://github.com/Retr
 ## Installing additional Emulators / Ports
 On RetroPie 4.0, not everything is installed by default. The pre-made image ships with libretro emulators with a few standalone emulators such as mame4all, mupen64plus and pifba. Ports like quake and doom and other software like ScummVM can be installed later.
 
-Software can be installed from the RetroPie-Setup script - which is accessible from the RetroPie menu on EmulationStation. Once there you can navigate to "Packages" where you will see various sections. You can see available packages in each section and which packages are installed. Stable additional packages are under the "Optional" section, with more unstable packages listed under experimental. The packages are ordered first by type (emulators / libretro cores / ports), then alphabetically. By selecting a package you can choose to install it, or remove it. Some packages also have additional configurations.
+Software can be installed from the RetroPie-Setup script - which is accessible from the RetroPie menu on EmulationStation. Once there you can navigate to "Manage Packages" where you will see various sections. In each section are lists of packages that can be installed (and it will show what is currently installed). Stable additional packages are under the "Optional" section, with more unstable packages listed under experimental. The packages are ordered first by type (emulators / libretro cores / ports), then alphabetically. By selecting a package you can choose to install it, or remove it. Some packages also have additional configurations.
 
 ## Transferring Roms
 
