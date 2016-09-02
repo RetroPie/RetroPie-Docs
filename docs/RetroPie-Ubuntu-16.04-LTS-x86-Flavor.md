@@ -84,6 +84,8 @@ It is not possible to restart/shutdown if an sudo requests an password. To disab
 
 Ubuntu has an builtin PS3 bluetooth driver. There is no need to install sixad. Make your bluetooth dongle discoverable. Connect your controller over usb. Now open "bluetooth system settings/add device". Select PS3 controller and click ok. Your controller should pair now if you press PS button.
 
+sidenote: https://retropie.org.uk/forum/topic/2736/ubuntu-16-04-install-genuine-ps3-controller-issue
+
 ### Section 3.3: Screen blanks after some minutes
 
 Open Ubuntu system settings menu disable screensaver and screen lock timeouts.  
