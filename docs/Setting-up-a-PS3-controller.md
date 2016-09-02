@@ -2,7 +2,7 @@ Recent Versions of RetroPie (3.0+, 4.0+)
 ---
 The most recent versions of RetroPie include the packages needed for setting up a PS3 controller. Connecting over USB is Plug-and-Play--literally just plug your controller into the Pi while EmulationStation is running and it should detect a gamepad to configure. Connecting a PS3 controller via Bluetooth requires installation of a special PS3 driver located in RetroPie setup.
 
-## Configuring a PS3 controller to connect via Bluetooth
+### Configuring a PS3 controller to connect via Bluetooth
 
 Before booting the Raspberry Pi, make sure that a supported Bluetooth adapter is connected (for the Pi 3, onboard Bluetooth works perfectly as of RetroPie 4.0+). If you have a Playstation 3 console near by, make sure it is **totally powered off**--either unplugged or switched off in the back--because the PS3 controller may try to automatically pair with the console otherwise.  While a separate powered USB hub is not required to set up a controller, be mindful of your overall power draw when attaching peripherals. If you are overclocking, for example, it will be much safer to use a powered USB hub than drawing current from the Pi itself.
 
