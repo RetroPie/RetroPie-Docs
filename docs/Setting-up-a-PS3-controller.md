@@ -11,7 +11,7 @@ After your Pi boots up, you need to enter RetroPie setup. You can do this one of
 * Setting up your keyboard or PS3 controller as a USB gamepad in EmulationStation (you **must** configure a gamepad before you can use EmulationStation), navigating to the "RetroPie" icon in the Home Screen, and selecting it using whatever key you mapped "A" to on your gamepad. 
 * Pressing F4 to quit EmulationStation and running the Retropie script from the terminal. Once you're in the terminal, follow these instructions to run the `retropie_setup.sh` script.
 
-### Configuring a PS3 Controller bluetooth connection via RetroPie GUI
+#### Using the RetroPie GUI to configure the PS3 Controller Bluetooth Connection
 
 1. Navigate to the "RetroPie" icon in the Home Screen and select it using whatever key you mapped "A" to on your gamepad
 1. Once in the RetroPie GUI, navigate to the RetroPie Setup Option.
@@ -24,7 +24,7 @@ After your Pi boots up, you need to enter RetroPie setup. You can do this one of
 
 And you now have a functional PS3 controller over Bluetooth.
 
-### Configuring a PS3 Controller bluetooth connection via Terminal
+### Using the RetroPie shell to configure the PS3 Controller Bluetooth Connection
 
 At the EmulationStation Home Screen, press F4 to quit EmulationStation and run the Retropie script from the terminal. Once you're in the terminal, follow these instructions to run the `retropie_setup.sh` script.
 
