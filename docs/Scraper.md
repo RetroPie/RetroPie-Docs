@@ -12,7 +12,7 @@ Steven Selph's scraper is the simplest and best way of scraping roms (provided t
 sudo /home/pi/RetroPie-Setup/retropie_setup.sh
 ```
 
-2) Choose Setup
+2) In 3.x Choose 'Setup'. In 4.x Choose 'Configuration / Tools'.
 
 3) Select Scraper
 
