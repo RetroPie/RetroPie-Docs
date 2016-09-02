@@ -1,14 +1,20 @@
-For the most recent version of RetroPie (3.0+)
+Recent Versions of RetroPie (3.0+, 4.0+)
 ---
-The most recent versions of RetroPie comes with all the packages needed for setting up a PS3 controller, so there is no need to install the required packages separately.
+The most recent versions of RetroPie include the packages needed for setting up a PS3 controller. Connecting over USB is Plug-and-Play, while connecting over Bluetooth requires installation of a special PS3 driver located in RetroPie setup.
 
-Before booting up our Raspberry Pi, make sure that your Bluetooth adapter is connected to your Raspberry Pi. Also, if you have a playstation game console near by, make sure it is **unplugged**.  The PS3 controller may try to automatically pair with the PS3 game console.  Although a separate powered USB hub is not needed to set up your controller, you would want to get one if you want to overclock your Raspberry Pi.
+Before booting up our Raspberry Pi, make sure that your Bluetooth adapter is connected to your Raspberry Pi. Also, if you have a Playstation 3 console near by, make sure it is **unplugged**  (the PS3 controller may try to automatically pair with the PS3 otherwise).  Although a separate powered USB hub is not required to set up a controller, be mindful of your overall power draw when attaching peripherals--if you are overclocking, for example, it will be much safer to use a powered USB hub than drawing current from the Pi itself.
 
-After your Pi boots up, run the `retropie_setup.sh` script.
-```shell
-cd RetroPie-Setup/
-sudo ./retropie_setup.sh
-```
+After your Pi boots up, enter RetroPie setup. You can do this one of two ways:
+
+* Setting up your keyboard or PS3 controller as a USB gamepad in EmulationStation (you **must** configure a gamepad before you can use EmulationStation), navigating to the "RetroPie" icon in the Main Menu, and selecting it using whatever key you mapped "A" to on your gamepad
+* Pressing F4 to quit EmulationStation and running the Retropie script from the terminal. Once you're in the terminal, follow these instructions:
+
+    run the `retropie_setup.sh` script.
+    ```shell
+    cd RetroPie-Setup/
+    sudo ./retropie_setup.sh
+    ```
+
 Although it is not required, it is always a good idea to update the setup script by selecting
 ```shell
 U UPDATE RetroPie Setup Script
