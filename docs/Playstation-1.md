@@ -19,11 +19,9 @@ Accepted File Extensions: **.cue .cbn .img .iso .m3u .mdf .pbp .toc .z .znx**
 Place your PlayStation ROMs in 
 ```
 /home/pi/RetroPie/roms/psx
-````
+```
 
-A few notes on file extensions:
-
-**Why arent my .bin files showing in Emulation Station?**  
+### Why arent my .bin files showing in Emulation Station?
   
 Since June 16th 2016 the RetroPie script has configured Emulation Station to no longer show .bin files in the UI.
 This means that a .cue file is required to start the game.  
@@ -37,7 +35,7 @@ http://www.shivaranjan.com/2007/01/03/how-to-create-cue-file-for-a-bin-file-in-5
 http://www.dslreports.com/r0/download/373724~1e45059000cfc371c157f544cc5aef07/MakeCue.zip
 * En masse or individually: https://github.com/thorst/CueMaker
   
-**Why .bin was removed**
+### Why .bin was removed
 - It is very common for PSX games to be in 2 parts, a .bin and .cue, this means that Emulation Station will show duplicates for each game which no-one really wants. This is because it used to show extensions .bin and .cue
 - A PSX game will only ever need one .cue file, so by hiding a .bin it prevents duplicates showing (as it could have multiple .bin files)
 - By hiding .bin files it will make the user think a little bit more about how the emulator loads files rather than blindly throwing files at it until it works.
