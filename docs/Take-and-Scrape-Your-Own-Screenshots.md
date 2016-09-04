@@ -12,8 +12,9 @@ A few disclaimers first:
 
 - You can only create one screenshot per game
 
-- This only works with retroarch emulators
+- This only works with RetroArch emulators
 
+- If using the methods described here, the [Runcommand's Launch Menu Art option](https://github.com/RetroPie/RetroPie-Setup/wiki/runcommand#configuring-runcommand) won't show the scraped screenshot image.
 
 
 ### Take a Screenshot
