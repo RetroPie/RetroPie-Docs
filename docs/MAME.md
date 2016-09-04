@@ -70,7 +70,7 @@ Place your AdvanceMAME ROMs in
 /home/pi/RetroPie/roms/mame-advmame
 ```
 
-Romset Used: **.94** (AdvMame .94) or **.106** (AdvMame 1.4)
+Romset Used: **.94** (AdvMame .94) or **0.106** (AdvMame 1.4)
 
 Total Games Emulated: **5563** (0.94.0) **6166** (1.4) (includes clones etc..)
 
