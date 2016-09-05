@@ -46,7 +46,9 @@ A great deal of information can be found in EmulationStation's README.md and THE
 
 When you install themes from the retropie setup script they are installed to `/etc/emulationstation` and are overwritten when new themes are installed or RetroPie is updated.
 
-If you want to customise your es_systems.cfg or add themes without them being overwritten on udates you can add them to `/home/pi/.emulationstation` EmulationStation first checks in `/home/pi/.emulationstation` and then checks `/etc/emulationstation`. 
+If you want to customise your es_systems.cfg or add themes without them being overwritten on updates you can add them to `/home/pi/.emulationstation` EmulationStation first checks in `/home/pi/.emulationstation` and then checks `/etc/emulationstation`.
+
+For customising themes you'll place them in `/home/pi/.emulationstation/themes` 
 
 
 ### EmulationStation isn't detecting my ROMs!
