@@ -133,6 +133,17 @@ The option is:
 mame2003-dialsharexy = "enabled"
 ```
 
+## Dual stick games
+
+The right analog stick can now be used a second joystick. This is enabled by default, via a setting in the `retroarch-core-options.cfg` file, found in:
+```
+/opt/retropie/configs/all/
+```
+The option is:
+```
+mame2003-rstick_to_btns = "enabled"
+```
+
 ## Feature requests
 
 Please use the [forum](https://retropie.org.uk/forum) for all support issues, but feature requests can be made on the [GitHub page](https://github.com/libretro/mame2003-libretro).
