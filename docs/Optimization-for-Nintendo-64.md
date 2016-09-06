@@ -1,3 +1,5 @@
+**WARNING:** This guide appears to have been written before GLideN64 was made the default N64 plugin. A lot of suggestions here are obsolete now.
+
 ##Hardware and hardware setup. 
 
 Nintendo 64 emulation requires at a bare minimum a Raspberry Pi 2 and a Raspberry  Pi 3 is highly suggested due to its increased performance. 
