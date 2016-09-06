@@ -1,17 +1,35 @@
 ![Retroarch Logo](http://www.libretro.com/wp-content/uploads/2014/01/retroarch-logo-300x611.png)
 ***
-RetroArch is the official front end for the [Libretro](http://www.libretro.com/) API which essentially means that RetroArch will be what manages controls and configurations for all of the emulators that are part of the Libretro-Core (i.e. any emulator with an "lr" before it). This is a beautiful thing because it means you can configure controllers only once for many emulators instead of having to configure each emulator individually. RetroArch also gives us the freedom to configure emulators individually as discussed below under "Custom RetroArch Controls" (There are also emulator specific configurations for emulators not part of the libretro core under their respective emulator wiki page.)
+
+RetroArch is the official front end for the [libretro API](http://www.libretro.com/). RetroArch and libretro provide a way to take an existing emulator and load that emulator as a library or "core". RetroArch then handles the input (controls) and output (graphics and audio) while the emulator core handles the emulation of the original system. With a few simple changes to the emulator source code, almost any existing emulator could become a libretro core.
+
+In RetroPie, the libretro emulator cores are identified with a `lr-` in front of their name. For example, `lr-snes9x-next` is the libretro core of the SNES emulator called snes9x.
+
+RetroArch and libretro provide ability to configure controllers once for many emulators instead of having to configure each emulator individually. However, RetroArch also provides the freedom to configure specific emulators individually and even individual games differently if the user wants. This allows a specific setting or button mapping for a certain console or even just for a certain game.
+
+For emulators which are not libretro cores, there are emulator-specific configurations under the respective system's wiki page.
+
+### The RetroPad concept
+
+When you configure your controller in EmulationStation, the RetroPie setup script automatically configures RetroArch with the same controls.
+
+RetroArch controls map real-world controller buttons to a virtual controller called a "RetroPad". A RetroPad does not exist in real life, it's a concept only within RetroArch. A RetroPad has an ABXY layout like a SNES controller plus four shoulder buttons and dual analog sticks like a Sony DualShock.
+
+You don't have to map all of the RetroPad buttons to a real world button. If your real controller has less buttons than a DualShock, then the virtual RetroPad also has less buttons, that's perfectly fine.
+
+As RetroArch starts an emulator core, it maps the RetroPad configuration to the emulated system's original controls. The mapping for many consoles is represented by the pictures below and on each system's wiki page. If you wish, you can reconfigure this control mapping, either for all RetroArch, for a specific system, or even for a specific ROM.
 
 # Retroarch Controls
 
-There are 3 main ways to configure input for RetroArch: 
-- [**Autoconfigurations**](https://github.com/RetroPie/RetroPie-Setup/wiki/RetroArch-Configuration#autoconfigurations) - made in emulationstation
-- [**Hardcoded Configurations**](https://github.com/RetroPie/RetroPie-Setup/wiki/RetroArch-Configuration#hardcoded-configurations) - made by editing retroarch.cfg file(s)
-- [**Core Input Remapping**](https://github.com/RetroPie/RetroPie-Setup/wiki/RetroArch-Configuration#core-input-remapping) - an easy way to do specific control configurations for specific cores, made in RGUI.
+There are 3 main ways to configure input for RetroArch:
+
+- [**Autoconfigurations**](https://github.com/RetroPie/RetroPie-Setup/wiki/RetroArch-Configuration#autoconfigurations) - made in EmulationStation
+- [**Hardcoded Configurations**](https://github.com/RetroPie/RetroPie-Setup/wiki/RetroArch-Configuration#hardcoded-configurations) - made by editing `retroarch.cfg` file(s)
+- [**Core Input Remapping**](https://github.com/RetroPie/RetroPie-Setup/wiki/RetroArch-Configuration#core-input-remapping) - an easy way to do specific control configurations for specific cores, made in the RetroArch RGUI
 
 ## AutoConfigurations
 
-Retroarch controls have been integrated into EmulationStation and will be the first thing you see when you boot from the RetroPie SD image the first time. You can also access it from the start menu within emulationstation under the configure input option. Your joypad is automagically configured for libretro (retroarch) emulators when you configure your controller for the first time in emulationstation. You'll know if your controller has been automagically configured if you see a flash of yellow text on the bottom of the screen with your gamepad ID when you start a game.  
+RetroArch controls have been integrated into EmulationStation and will be the first thing you see when you boot from the RetroPie SD image the first time. You can also access it from the start menu within EmulationStation under the Configure Input option. Your joypad is automagically configured for libretro (RetroArch) emulators when you configure your controller in EmulationStation. You'll know if your controller has been automagically configured if you see a flash of yellow text on the bottom of the screen with your gamepad ID when you start a game.  
 
 The following diagrams are for the 3 most common controllers: Super Nintendo, Xbox 360, and PlayStation 3. They can be used as a reference when configuring your controllers. Each emulator page on the wiki has a diagram of the original controller for its respective console that will correspond to the same inputs listed below.
 
@@ -22,10 +40,13 @@ The following diagrams are for the 3 most common controllers: Super Nintendo, Xb
 ![playstation3_diagram](https://cloud.githubusercontent.com/assets/10035308/16599634/7f353148-42c0-11e6-9023-dbaf074bc933.png)
 
 After you've configured your controller the autoconfig will be created here:
+
 ```
 /opt/retropie/configs/all/retroarch-joypads
 ```
-This is an example config for a snes controller
+
+This is an example config for a USB SNES controller
+
 ```
 input_device = "USB gamepad           "
 input_driver = "udev"
@@ -53,7 +74,7 @@ input_state_slot_decrease_axis = "-0"
 
 #### Hotkeys
 
-Hotkeys are combinations of buttons you can press in order to access options such as saving, loading, and exiting games. The following defaults are set automatically the first time you set up your controller from emulationstation (The numbers will vary depending the controller you use).
+Hotkeys are combinations of buttons you can press in order to access options such as saving, loading, and exiting games. The following defaults are set automatically the first time you set up your controller from EmulationStation (the numbers will vary depending the controller you use).
 
 #### Default joypad hotkeys:
 Hotkeys | Action | Code Example
@@ -67,43 +88,49 @@ Select+Left | Input State Slot Decrease | input_state_slot_decrease_btn = "h0lef
 Select+X | RGUI Menu | input_menu_toggle_btn = "3"
 Select+B | Reset | input_reset_btn = "0"
 
-see this video:
+### Video Tutorial
 
-<a href="https://www.youtube.com/watch?v=DBnKFRflEV4" target="_blank"><img src="https://i.ytimg.com/vi_webp/DBnKFRflEV4/mqdefault.webp" 
-alt="Hotkey Video" width="300" height="190" border="10" /></a>
+* [RetroPie: Using hotkeys in retroarch - mapping to joypad by Floob](https://www.youtube.com/watch?v=DBnKFRflEV4)
+
 ## Hardcoded Configurations
 
-These configurations are manual edits you can make that are locked to a specific port and controller. Hardcoded controls can be configured either globally, by emulator, or by game- see the following paragraphs.
+These configurations are manual edits you can make that are locked to a specific libretro core and controller. Hardcoded controls can be configured either globally, specific to the emulator core, or specific to an individual game.
 
 ### Config Hierarchy
 
 All RetroArch based emulators can be configured in the following way:
 
-**Global** settings - that are settings which should apply to all systems - are done in the file
+**Global** settings - that are settings which should apply to all systems - are done in the file:
+
 ```
 /opt/retropie/configs/all/retroarch.cfg
 ```
+
 ([example](https://github.com/RetroPie/RetroPie-Setup/wiki/RetroArch-Configuration/#example-default-per-system-retroarchcfg))
 
-**System-specific** settings are done in the files
+**System-specific** settings are done in the files:
+
 ```
 /opt/retropie/configs/SYSTEMNAME/retroarch.cfg
 ```
+
 ([example](https://github.com/RetroPie/RetroPie-Setup/wiki/RetroArch-Configuration/#example-per-system-control-override-retroarchcfg))
 
-Here, SYSTEMNAME is atari2600, snes, etc. All settings in these files will overwrite the corresponding global setting as long as they are placed **above** the #includeconfig line.
+Here, SYSTEMNAME is `atari2600`, `snes`, etc. All settings in these files will overwrite the corresponding global setting as long as they are placed **above** the `#includeconfig` line.
 
-**ROM-specific** settings can be created in the [runcommand](https://github.com/RetroPie/RetroPie-Setup/wiki/runcommand) menu and show up as configuration files by rom title:
+**ROM-specific** settings can be created in the [runcommand](https://github.com/RetroPie/RetroPie-Setup/wiki/runcommand) menu and show up as configuration files by ROM title:
+
 ```
 /home/pi/RetroPie/roms/SYSTEMNAME/ROMNAME.cfg
 ```
+
 ([example](https://github.com/RetroPie/RetroPie-Setup/wiki/RetroArch-Configuration/#example-per-system-control-override-retroarchcfg))
 
-The ROMNAME includes the original file extension before the `.cfg`, e.g. `supermariobros.zip.cfg` These configurations are used when starting this specific ROM.
+The `ROMNAME` includes the original file extension before the `.cfg`, e.g. `supermariobros.zip.cfg` These configurations are used when starting this specific ROM.
  
-## Custom Retroarch Override Examples
+## Custom RetroArch Override Examples
 
-### Example Default Per-System Retroarch.cfg
+### Example Default Per-System retroarch.cfg
 
 ```
 # Settings made here will only override settings in the global retroarch.cfg if placed above the #include line
@@ -115,8 +142,10 @@ input_remapping_directory = /opt/retropie/configs/megadrive/
 ```
 
 ### Example Per-System Control Override retroarch.cfg
-**Note** the values below are for one person's controller, your values may differ. Make sure that these values are placed **above** the #includeconfig line
-```shell
+
+**Note** the values below are for one person's controller, your values may differ. Make sure that these values are placed **above** the `#includeconfig` line:
+
+```
 # Settings made here will only override settings in the global retroarch.cfg if placed above the #include line
 
 input_remapping_directory = /opt/retropie/configs/megadrive/
@@ -166,7 +195,8 @@ input_state_slot_decrease_axis = -0
 #include "/opt/retropie/configs/all/retroarch.cfg"
 ```
 
-### Example Per-ROM Override retroarch.cfg: 
+### Example Per-ROM Override retroarch.cfg
+
 ```
 aspect_ratio_index = "19"
 
@@ -181,44 +211,23 @@ Core Input Remapping differs from the other two methods as it remaps how the cor
 
 Quick way to do it:
 
-1. Start a game of the system you want to remap the buttons.
-2. Invoke RGUI (select+x with player 1).
-3. Go to `Quick Menu` and then `Controls`.
-4. Configure the buttons the way you want.
-5. Select `Save Core Remap File` (if you want to save this remapping for one game only, choose `Save Game Remap File`).
-6. Done!
-
+* Start a game of the system you want to remap the buttons
+* Invoke RGUI (**Select+X** with player 1)
+* Go to **Quick Menu** and then **Controls**
+* Configure the buttons the way you want
+* Select **Save Core Remap File**
+* OR, if you want to save this remapping for the current game only, select **Save Game Remap File**
 
 ## Video Tutorials
 
-**Core input remapping**  
-<a href="https://www.youtube.com/watch?v=liJKFUZX4PM
-" target="_blank"><img src="https://i.ytimg.com/vi_webp/liJKFUZX4PM/mqdefault.webp" 
-alt="Core input remapping" width="300" height="190" border="10" /></a>  
+* Core input remapping: [Remapping your controller](https://www.youtube.com/watch?v=liJKFUZX4PM) by Floob
+* Testing Joypad: [Testing joystick](https://www.youtube.com/watch?v=fcRVcPkpLfQ) by Floob
+* [Configuring USB Controllers With Retroarch, Controller not configured fix](https://www.youtube.com/watch?v=AhkEnDdygbQ) by Herb Fargus
+* [Configure a wireless PS3 controller with RetroPie 3](https://www.youtube.com/watch?v=oCq6drv5wbE) by Floob
+* [XBox 360 Wireless Controller Configuration](https://www.youtube.com/watch?v=IjEA85BUDKs) by Herb Fargus
 
-**Testing Joypad**  
-<a href="https://www.youtube.com/watch?v=fcRVcPkpLfQ
-" target="_blank"><img src="https://i.ytimg.com/vi_webp/fcRVcPkpLfQ/mqdefault.webp" 
-alt="Testing joypad in RetroPie" width="300" height="190" border="10" /></a>  
-  
-**Setting up USB controllers**  
-<a href="https://www.youtube.com/watch?v=AhkEnDdygbQ
-" target="_blank"><img src="https://i.ytimg.com/vi_webp/AhkEnDdygbQ/mqdefault.webp" 
-alt="Setting up usb controllers in RetroPie" width="300" height="190" border="10" /></a>  
-  
-**Wireless PS3 controller**  
-<a href="https://www.youtube.com/watch?v=oCq6drv5wbE
-" target="_blank"><img src="https://i.ytimg.com/vi_webp/oCq6drv5wbE/mqdefault.webp" 
-alt="Setting up PS3 controller in RetroPie" width="300" height="190" border="10" /></a>  
-  
-  
-**Wireless Xbox controller**  
-<a href="https://www.youtube.com/watch?v=IjEA85BUDKs
-" target="_blank"><img src="https://i.ytimg.com/vi_webp/IjEA85BUDKs/mqdefault.webp" 
-alt="Setting up Xbox controller in RetroPie" width="300" height="190" border="10" /></a>    
+## Default Core Controls for All Emulators
 
-
-## Default Core Controls for All Emulators:
 ***
 
 ## 3do
@@ -270,7 +279,6 @@ alt="Setting up Xbox controller in RetroPie" width="300" height="190" border="10
 ![vectrex](https://cloud.githubusercontent.com/assets/10035308/8196876/168671c6-144e-11e5-8139-d2d980a936fa.png)
 ## VirtualBoy
 ![nintendo_virtualboy_diagram](https://cloud.githubusercontent.com/assets/10035308/16599637/7f382d3a-42c0-11e6-8e7d-bdbacf7afd82.png)
-***
 ## Sega Dreamcast
 ![sega_dreamcast_diagram](https://cloud.githubusercontent.com/assets/10035308/16599638/7f411634-42c0-11e6-811c-456f02b2ea47.png)
 ## Intellivision
