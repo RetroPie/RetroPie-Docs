@@ -4,9 +4,9 @@ Sometimes the boxarts and other sources for scraping can be low quality and inco
 
 A few disclaimers first:
 
-- You have to be comfortable with basic Linux commands and simple file editing.
-
 - **MAKE A BACKUP AND USE AT YOUR OWN RISK!**
+
+- You have to be comfortable with basic Linux commands and simple file editing.
 
 - You need to have an updated version of RetroPie-Setup scripts (version 4+) ([updating instructions here](https://github.com/RetroPie/RetroPie-Setup/wiki/Updating-RetroPie)).
 
@@ -188,6 +188,7 @@ If you take a screenshot during a gaming session, the most recent screenshot wil
 
 Obviously, there are some conditions to make it happen, in order to let the user easily turn on/off this functionality.
 
+**Limitation: This method doesn't work if the emulationstation "save metadata on exit" option is turned on, because it makes emulationstation overwrite the changes made by the `runcommand-onend.sh`.** Turn it off in the emulationstation Main Menu -> Other Settings -> Save Metadata On Exit.
 
 ### retroarch.cfg
 
