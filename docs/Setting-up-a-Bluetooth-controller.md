@@ -33,6 +33,13 @@ You will get a window popping up telling you if the connection was successful or
 ![bluetooth 4](https://cloud.githubusercontent.com/assets/10035308/14411882/129be622-ff12-11e5-87bf-f549a4e0ab63.PNG)
 
 ## Manual Bluetooth Configuration
+## !!Please note this is for pre v4.0 RetroPie - New 8bitdo details here!!:
+https://github.com/RetroPie/RetroPie-Setup/wiki/Setting-up-an-8bitdo-Bluetooth-controller
+
+
+
+***
+
 
 The following guide is geared to using a controller from [8bitdo](http://www.8bitdo.com) but should work with a range of bluetooth devices.  
 The examples below are assuming you have just a keyboard and bluetooth dongle plugged into your Pi.  
