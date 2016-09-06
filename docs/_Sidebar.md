@@ -135,6 +135,7 @@
 * [PS4 controller](Setting-up-a-PS4-controller)
 * [N64 controller](Setting-up-an-N64-controller)
 * [Bluetooth controller](Setting-up-a-Bluetooth-controller)
+* [8bitdo controllers](Setting-up-an-8bitdo-Bluetooth-controller)
 * [Logitech controllers](Logitech-controllers)
 * [Mobile Gamepad](https://github.com/sbidolach/mobile-gamepad)
 * [Smartphone Gamepad](Virtual-Gamepad)
