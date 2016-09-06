@@ -13,7 +13,6 @@ arm_freq=1300
 gpu_freq=500
 sdram_freq=500
 over_voltage=6
-gpu_mem=256
 ```
 
 The overclock settings are being adjusted to suit optimal operations.  Of most important note of categories that most correctly benefit the Nintendo 64 is v3d_freq this is not a setting that when increased fails warranty or even really has a huge impact on heat but it has a great effect on higher performing emulators such as N64 and Dreamcast. Clock and SDram speed also assist greatly in emulation.
