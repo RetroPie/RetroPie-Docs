@@ -30,15 +30,15 @@ Add custom RetroArch controls to the `retroarch.cfg` file in
 ```
 For more information on custom RetroArch controls see: [RetroArch Configuration](https://github.com/RetroPie/RetroPie-Setup/wiki/RetroArch-Configuration)
 
-## Registered Version
+## Upgrading Shareware to Registered
 
-The RetroPie Setup Script places the shareware Quake data files at:
+During installation of the port, the setup script places the shareware version of the Quake data files at:
 
 ~~~
 /home/pi/RetroPie/roms/ports/quake/id1/pak0.pak
 ~~~
 
-Add the registered version data file at:
+If you own the registered version, you may add the registered version data file at:
 
 ~~~
 /home/pi/RetroPie/roms/ports/quake/id1/pak1.pak
@@ -96,9 +96,49 @@ With the contents:
 /opt/retropie/supplementary/runcommand/runcommand.sh 0 "/opt/retropie/emulators/retroarch/bin/retroarch -L /opt/retropie/libretrocores/lr-tyrquake/tyrquake_libretro.so --config /opt/retropie/configs/ports/quake/retroarch.cfg /home/pi/RetroPie/roms/ports/quake/id1/rogue/pak0.pak" "lr-tyrquake"
 ~~~
 
+### Episode 5 - Dimension of the Past
+
+To celebrate Quake's 20th anniversary, MachineGames (developer of Wolfenstein: The New Order) created a new 10-level pack named *Episode 5 - Dimension of the Past* and released it for free at https://cdn.bethsoft.com/quake/dopa.rar
+
+To get this working in the RetroPie Quake port is a bit fiddly.
+
+First, create a directory at:
+
+~~~
+/home/pi/RetroPie/roms/ports/quake/id1/dopa/
+~~~
+
+Copy the DOPA `pak0.pak` file into this directory then rename it to `pak2.pak`, so you have:
+
+~~~
+/home/pi/RetroPie/roms/ports/quake/id1/dopa/pak2.pak
+~~~
+
+Now copy the original shareware and registered data files into this directory as well. Your files should look like:
+
+~~~
+/home/pi/RetroPie/roms/ports/quake/id1/dopa/pak0.pak  ## shareware
+/home/pi/RetroPie/roms/ports/quake/id1/dopa/pak1.pak  ## registered
+/home/pi/RetroPie/roms/ports/quake/id1/dopa/pak2.pak  ## dopa
+~~~
+
+The extra episode can now be launched with a launcher script at:
+
+~~~
+/home/pi/RetroPie/roms/ports/Quake Episode 5 (dopa).sh
+~~~
+
+With the contents:
+
+~~~
+#!/bin/bash
+/opt/retropie/supplementary/runcommand/runcommand.sh 0 "/opt/retropie/emulators/retroarch/bin/retroarch -L /opt/retropie/libretrocores/lr-tyrquake/tyrquake_libretro.so --config /opt/retropie/configs/ports/quake/retroarch.cfg /home/pi/RetroPie/roms/ports/quake/dopa/pak0.pak" "lr-tyrquake"
+~~~
+
 ## References
 
 * https://retropie.org.uk/forum/topic/2431/solved-partly-issue-with-joypad-control-how-to-start-doom-doom2-heretic-and-all-episodes-of-quake-dopa-rogue-hipnotic
+* https://twitter.com/machinegames/status/746363189768650752
 
 # Quake III Arena
 
