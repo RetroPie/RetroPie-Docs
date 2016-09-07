@@ -51,6 +51,7 @@ Access theme gallery in the esthemes menu
 |**Pixel**|<sub><img src="https://cloud.githubusercontent.com/assets/10035308/12162973/0191f402-b4c6-11e5-9a52-5acefa37d0d1.png" width="500"><img src="https://cloud.githubusercontent.com/assets/10035308/12163003/5413a25c-b4c6-11e5-9207-fcc2d5fe69d3.png" width="500"></sub>|
 |**Material**|<sub><img src="https://cloud.githubusercontent.com/assets/9311410/15695879/85662fd4-2779-11e6-98a1-bcb49a3d1272.png" width="500"><img src="https://cloud.githubusercontent.com/assets/9311410/15695894/978f62c0-2779-11e6-8d3b-0cb6ab3184d1.png" width="500"></sub>|
 |**MetaPixel**|<sub><img src="http://i.imgur.com/du9o2nK.png" width="500"><img src="http://i.imgur.com/Z1tEebt.png" width="500"></sub>|
+|**Spare**|<sub><img src="http://i.imgur.com/72DcwpD.png" width="500"><img src="http://i.imgur.com/r5SHwkc.png" width="500"></sub>|
 
 ## Creating Your Own EmulationStation Theme
 
