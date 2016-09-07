@@ -105,21 +105,21 @@ To get this working in the RetroPie Quake port is a bit fiddly.
 First, create a directory at:
 
 ~~~
-/home/pi/RetroPie/roms/ports/quake/id1/dopa/
+/home/pi/RetroPie/roms/ports/quake/dopa/
 ~~~
 
 Copy the DOPA `pak0.pak` file into this directory then rename it to `pak2.pak`, so you have:
 
 ~~~
-/home/pi/RetroPie/roms/ports/quake/id1/dopa/pak2.pak
+/home/pi/RetroPie/roms/ports/quake/dopa/pak2.pak
 ~~~
 
 Now copy the original shareware and registered data files into this directory as well. Your files should look like:
 
 ~~~
-/home/pi/RetroPie/roms/ports/quake/id1/dopa/pak0.pak  ## shareware
-/home/pi/RetroPie/roms/ports/quake/id1/dopa/pak1.pak  ## registered
-/home/pi/RetroPie/roms/ports/quake/id1/dopa/pak2.pak  ## dopa
+/home/pi/RetroPie/roms/ports/quake/dopa/pak0.pak  ## shareware
+/home/pi/RetroPie/roms/ports/quake/dopa/pak1.pak  ## registered
+/home/pi/RetroPie/roms/ports/quake/dopa/pak2.pak  ## dopa
 ~~~
 
 The extra episode can now be launched with a launcher script at:
