@@ -33,6 +33,9 @@ Place your BIOS files in:
 
 
 ## Controls:
+
+Instructions to map a game controller in jzintv can be found [HERE](https://github.com/RetroPie/RetroPie-Setup/wiki/Mapping-a-Controller-for-Intellivision). These can also be used if you wish remap a keyboard, for example, if your keyboard does not have numeric keypad.
+
 ```shell
 Function/Special keys, all maps:
     F1              Quit
