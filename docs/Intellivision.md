@@ -94,6 +94,18 @@ Fine-grain directional pad inputs:
       / | \
     Z   X   C
 ```
+## Memory Map Config Files:
+
+If a rom does not load leaving you with a black screen (and the files dump.cpu and dump.mem in your home folder upon exit), then you need a memory map config file. This is likely to be the case for titles from Atarisoft, Imagic or INTV Corp.
+
+First determine which config file your rom requires from this [spreadsheet](https://docs.google.com/spreadsheet/ccc?key=0Ar_02usomyeqdHFyaGRnNWdLN1FzWTN3ajlacXBPWFE). 
+
+Next download the config file from [here](https://docs.google.com/open?id=0B7_02usomyeqeWJVamRNM2FPUUk) and rename it the same as the your rom. 
+
+For example, you are trying to get `atlantis.int` to work. From the spreadsheet, you see that it takes memory map #7 so download `7.cfg` and rename it `atlantis.int.cfg`. Place it in your roms folder and your rom should now work.
+
+Full details about using memory map config files can be found [here](http://atariage.com/forums/topic/203179-config-files-to-use-with-various-intellivision-titles/#entry2605274).
+
 
 ![intellivision](https://cloud.githubusercontent.com/assets/10035308/8246393/3e98c8c2-15fb-11e5-9398-3f5abd60361b.png)
 ```
