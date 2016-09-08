@@ -16,7 +16,7 @@ _The RetroPie Setup Script automatically installs the Quake 1 shareware game dat
 ***
 ## Emulator
 
-* [libretro-tyrquake](https://github.com/libretro/tyrquake) - recommended
+* [libretro-tyrquake](https://github.com/libretro/tyrquake) (recommended)
 * [tyrquake](https://github.com/RetroPie/tyrquake)
 
 ## Controls
@@ -29,6 +29,8 @@ Add custom RetroArch controls to the `retroarch.cfg` file in
 /opt/retropie/configs/quake/retroarch.cfg
 ```
 For more information on custom RetroArch controls see: [RetroArch Configuration](https://github.com/RetroPie/RetroPie-Setup/wiki/RetroArch-Configuration)
+
+`tyrquake` does not support joystick/gamepad input, so is suitable only for those with a keyboard and mouse.
 
 ## Upgrading Shareware to Registered
 
@@ -44,11 +46,13 @@ If you own the registered version, you may add the registered version data file 
 /home/pi/RetroPie/roms/ports/quake/id1/pak1.pak
 ~~~
 
+The shareware version is Quake v1.06. It is recommended your registered data file be from v1.06 or v1.08 versions of the game, earlier versions may not be compatible.
+
+There is no difference between the data files of v1.06 and v1.08, this was an update to the game engine only, not the data files.
+
 ## Quake Mission Packs
 
-In future, these level packs may be accessible via a "map launcher" which would also work with game engines like Doom.
-
-For now, we can create scripts to launch them manually.
+In addition to many community maps, Quake had some commercial add-ons which are considered "official".
 
 ### Mission Pack 1: Scourge of Armagon
 
@@ -60,18 +64,7 @@ Place the data file at:
 /home/pi/RetroPie/roms/ports/quake/id1/hipnotic/pak0.pak
 ~~~
 
-To launch it in `lr-tyrquake`, create a launcher script at:
-
-~~~
-/home/pi/RetroPie/roms/ports/Quake Mission Pack 1 (hipnotic).sh
-~~~
-
-With the contents:
-
-~~~
-#!/bin/bash
-/opt/retropie/supplementary/runcommand/runcommand.sh 0 "/opt/retropie/emulators/retroarch/bin/retroarch -L /opt/retropie/libretrocores/lr-tyrquake/tyrquake_libretro.so --config /opt/retropie/configs/ports/quake/retroarch.cfg /home/pi/RetroPie/roms/ports/quake/id1/hipnotic/pak0.pak" "lr-tyrquake"
-~~~
+Reinstall the Quake port from the Setup Script, and a new option **Quake Mission Pack 1 (hipnotic)** will be created.
 
 ### Mission Pack 2 - Dissolution of Eternity
 
@@ -83,26 +76,13 @@ Place the data file at:
 /home/pi/RetroPie/roms/ports/quake/id1/rogue/pak0.pak
 ~~~
 
-To launch it in `lr-tyrquake`, create a launcher script at:
-
-~~~
-/home/pi/RetroPie/roms/ports/Quake Mission Pack 2 (rogue).sh
-~~~
-
-With the contents:
-
-~~~
-#!/bin/bash
-/opt/retropie/supplementary/runcommand/runcommand.sh 0 "/opt/retropie/emulators/retroarch/bin/retroarch -L /opt/retropie/libretrocores/lr-tyrquake/tyrquake_libretro.so --config /opt/retropie/configs/ports/quake/retroarch.cfg /home/pi/RetroPie/roms/ports/quake/id1/rogue/pak0.pak" "lr-tyrquake"
-~~~
+Reinstall the Quake port from the Setup Script, and a new option **Quake Mission Pack 2 (rogue)** will be created.
 
 ### Episode 5 - Dimension of the Past
 
 To celebrate Quake's 20th anniversary, MachineGames (developer of Wolfenstein: The New Order) created a new 10-level pack named *Episode 5 - Dimension of the Past* and released it for free at https://cdn.bethsoft.com/quake/dopa.rar
 
-To get this working in the RetroPie Quake port is a bit fiddly.
-
-First, create a directory at:
+To get DOPA working in the RetroPie Quake ports, create a directory at:
 
 ~~~
 /home/pi/RetroPie/roms/ports/quake/dopa/
@@ -132,7 +112,7 @@ With the contents:
 
 ~~~
 #!/bin/bash
-/opt/retropie/supplementary/runcommand/runcommand.sh 0 "/opt/retropie/emulators/retroarch/bin/retroarch -L /opt/retropie/libretrocores/lr-tyrquake/tyrquake_libretro.so --config /opt/retropie/configs/ports/quake/retroarch.cfg /home/pi/RetroPie/roms/ports/quake/dopa/pak0.pak" "lr-tyrquake"
+"/opt/retropie/supplementary/runcommand/runcommand.sh" 0 _PORT_ "quake" "/home/pi/RetroPie/roms/ports/quake/dopa/pak0.pak"
 ~~~
 
 ## References
