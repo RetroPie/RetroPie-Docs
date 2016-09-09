@@ -102,7 +102,7 @@ First determine which config file your rom requires from this [spreadsheet](http
 
 Next download the config file from [here](https://docs.google.com/open?id=0B7_02usomyeqeWJVamRNM2FPUUk) and rename it the same as the your rom. 
 
-For example, you are trying to get `atlantis.int` to work. From the spreadsheet, you see that it takes memory map #7 so download `7.cfg` and rename it `atlantis.int.cfg`. Place it in your roms folder and your rom should now work.
+For example, you are trying to get `atlantis.int` to work. From the spreadsheet, you see that it takes memory map #7 so download `7.cfg` and rename it `atlantis.cfg`. Place it in your roms folder and your rom should now work.
 
 Full details about using memory map config files can be found [here](http://atariage.com/forums/topic/203179-config-files-to-use-with-various-intellivision-titles/#entry2605274).
 
