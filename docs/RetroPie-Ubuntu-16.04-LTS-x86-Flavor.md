@@ -62,7 +62,7 @@ The screen should look like this then:
 
 ### Section 2.2: Installation
 
-**Manage Packages >> Quick Install**
+**Basic Install**
 
 This will install the core and main packages which are equivalent to what is provided with the RetroPie SD image.
 
