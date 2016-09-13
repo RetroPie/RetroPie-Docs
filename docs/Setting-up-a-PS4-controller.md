@@ -21,9 +21,9 @@ _The upgrade will take some time. I like to reboot after I've upgraded._
 
     sudo reboot
 
-    sudo apt-get install python3-dev
+    sudo apt-get install python3-dev python3-pip
 
-    sudo pip install ds4drv
+    sudo pip3 install ds4drv
 
 ##Now we need to allow a normal user to create a new joystick
 
