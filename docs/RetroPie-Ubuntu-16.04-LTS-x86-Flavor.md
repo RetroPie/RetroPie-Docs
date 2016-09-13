@@ -71,7 +71,7 @@ This will install the main packages which are equivalent to what is provided wit
 
 Now, you have to copy your rom files into the correct associated rom directories. If you followed the steps above the main directory for all roms is ~/RetroPie/roms (or /home/pi/RetroPie/roms, which is the same here). In this directory there is a sub-directory for every supported emulated system, e.g., NES, SNES, Sega Megadrive, etc. 
 
-Attention has to be taken for the extensions of the rom files. Some emulators use .zip while some use a custom file extension associated with the emulator in question. For example the Atari 2600 emulator may use .a26, .bin, .rom, .gz, and .zip.
+Attention has to be taken for the extensions of the rom files. Some emulators use .zip while some use a custom file extension associated with the emulator in question. For example the Atari 2600 emulator may use .a26, .bin, and .rom.
 
 All the information needed for each system is detailed in this wiki. See the wiki home page or sidebar for systems.
 
