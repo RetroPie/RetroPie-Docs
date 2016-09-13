@@ -2,9 +2,9 @@
 
 ## Description
 
-A guide to build the retropie setup on Ubuntu 16.04 LTS x86. 
+A guide to build the RetroPie setup on Ubuntu 16.04 LTS x86 and related distros.
 
-Tested with an Intel NUC Kit NUC5CPYH.
+Tested with an Intel NUC Kit NUC5CPYH
 
 ## Sections
 
@@ -28,32 +28,35 @@ Tested with an Intel NUC Kit NUC5CPYH.
 
 ***
 
-## Section 1: Install Ubuntu 16.04 LTS
+## Section 1: Install Ubuntu 16.04 LTS or a related Debian based distro such as Linux Mint 17 and 18.
     
-Download and install Ubuntu 16.04 LTS. Iso image can be used to create a bootable DVD or a USB stick.
+Download and install Ubuntu 16.04 LTS. ISO image can be used to create a bootable DVD or a USB stick.
 http://www.ubuntu.com/download/desktop
 
 To run RetroPie-Setup user must be a member of group root/admin.
 
-## Section 2: Setup Retropie
+## Section 2: Setup RetroPie
 
 ### Section 2.1: Download
     
-I would recommend to update and upgrade the existing APT packages with
+Update and upgrade the existing APT packages:
 ```
     sudo apt-get update && sudo apt-get upgrade
 ```
-After that, we install the needed packages for the RetroPie setup script:
+Install the needed packages for the RetroPie setup script:
 ```
     sudo apt-get install -y git dialog
 ```
-Then we download the latest RetroPie setup script with
+Download the latest RetroPie setup script:
 ```
     git clone --depth=1 https://github.com/RetroPie/RetroPie-Setup.git
 ```
-The script is executed with
+Enter the folder with the setup script:
 ```
     cd RetroPie-Setup
+```
+The script is executed with:
+```
     sudo ./retropie_setup.sh
 ```
 The screen should look like this then:
