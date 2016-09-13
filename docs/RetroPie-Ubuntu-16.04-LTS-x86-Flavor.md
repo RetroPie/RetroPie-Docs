@@ -58,7 +58,7 @@ The script is executed with
 ```
 The screen should look like this then:
 
-![4 0beta](https://cloud.githubusercontent.com/assets/10035308/16218285/f06f3ba8-3738-11e6-9ccc-be601172713b.png)
+![retropie-setup script 4-0-2](https://cloud.githubusercontent.com/assets/8606384/18487839/c4e3da42-79c4-11e6-82a8-026afa67801b.png)
 
 ### Section 2.2: Installation
 
