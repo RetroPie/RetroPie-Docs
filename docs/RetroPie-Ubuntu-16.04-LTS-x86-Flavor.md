@@ -66,9 +66,11 @@ The screen should look like this then:
 
 This will install the core and main packages which are equivalent to what is provided with the RetroPie SD image.
 
-Now, you have to copy your rom files into the ROMs directory. If you followed the steps above the main directory for all ROMs is ~/RetroPie/roms (or /home/pi/RetroPie/roms, which is the same here). In this directory there is a subdirectory for every emulated system, e.g., nes, snes, megadrive. Attention has to be taken for the extensions of the ROM files. All the information needed for each system is detailed in this wiki (see wiki home page or sidebar for systems)
+Now, you have to copy your rom files into the correct associated ROMs directories. If you followed the steps above the main directory for all ROMs is ~/RetroPie/roms (or /home/pi/RetroPie/roms, which is the same here). In this directory there is a sub-directory for every emulated system, e.g., NES, SNES, Sega Megadrive, etc. 
 
-EmulationStation can be run from the terminal by typing `emulationstation` in the terminal
+Attention has to be taken for the extensions of the ROM files. All the information needed for each system is detailed in this wiki (see the wiki home page or sidebar for systems).
+
+EmulationStation can be run from the terminal by typing `emulationstation` in the terminal.
 
 ### Section 2.3: Configuration
 
