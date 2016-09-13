@@ -64,7 +64,7 @@ The screen should look like this then:
 
 **Basic Install**
 
-This will install the core and main packages which are equivalent to what is provided with the RetroPie SD image.
+This will install the core and main packages which are equivalent to what is provided with the RetroPie SD image. Note that this will be the 32 bit version of RetroPie. That means that some emulators such as Daphne will not work out of the box on this version. That is because Daphne and a few other emulators only have a 64 bit version released for use.
 
 Now, you have to copy your rom files into the correct associated ROMs directories. If you followed the steps above the main directory for all ROMs is ~/RetroPie/roms (or /home/pi/RetroPie/roms, which is the same here). In this directory there is a sub-directory for every emulated system, e.g., NES, SNES, Sega Megadrive, etc. 
 
