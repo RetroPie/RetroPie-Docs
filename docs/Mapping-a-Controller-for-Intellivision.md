@@ -12,7 +12,7 @@ Now press buttons or move the left analog stick and you will see how jzintv read
 
 Below is the output using a PS3 controller when pressing the X button (`JS0_BTN_14`), right on the D-pad (`JS0_BTN_05`) and pushing the left analog stick right (`JS0_E`), then left (`JS0_W`).
 
-![](https://lh3.googleusercontent.com/pbprnfBlQaolkPlfRtZcfZmkZemYSfRESVqYGTW7n_10Be0QUMwWOXDdaJZMrJ1DGPLuzkIn=w1254-h805)
+![](https://cloud.githubusercontent.com/assets/8166945/18489597/0fa80946-79f6-11e6-8881-476896f42796.png)
 
 Make a note of these bindings as they will be used in creating the keyboard hack file.
 
