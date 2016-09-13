@@ -75,9 +75,9 @@ Attention has to be taken for the extensions of the rom files. Some emulators us
 
 All the information needed for each system is detailed in this wiki. See the wiki home page or sidebar for systems.
 
-EmulationStation can be run from the terminal by typing `emulationstation` in the terminal.
-
 ### Section 2.3: Configuration
+
+EmulationStation can be run from the terminal by typing `emulationstation` in the terminal.
 
 You can go into Setup / Configuration and enable autostart as you like.
 
