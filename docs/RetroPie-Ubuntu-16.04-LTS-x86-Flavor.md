@@ -59,7 +59,7 @@ The script is executed with:
 ```
     sudo ./retropie_setup.sh
 ```
-The screen should look like this then:
+The screen should look like/similar this at this point:
 
 ![retropie-setup script 4-0-2](https://cloud.githubusercontent.com/assets/8606384/18487839/c4e3da42-79c4-11e6-82a8-026afa67801b.png)
 
@@ -67,11 +67,13 @@ The screen should look like this then:
 
 **Basic Install**
 
-This will install the core and main packages which are equivalent to what is provided with the RetroPie SD image. Note that this will be the 32 bit version of RetroPie. That means that some emulators such as Daphne will not work out of the box on this version. That is because Daphne and a few other emulators only have a 64 bit version released for use.
+This will install the main packages which are equivalent to what is provided with the RetroPie SD image. Note that this will be the 32 bit version of RetroPie. That means that some emulators such as Daphne (Dragon's Lair) will not work out of the box on this version. That is because Daphne and a few other emulators only have a 64 bit version released for use while this install is for the 32 bit cpu family.
 
-Now, you have to copy your rom files into the correct associated ROMs directories. If you followed the steps above the main directory for all ROMs is ~/RetroPie/roms (or /home/pi/RetroPie/roms, which is the same here). In this directory there is a sub-directory for every emulated system, e.g., NES, SNES, Sega Megadrive, etc. 
+Now, you have to copy your rom files into the correct associated rom directories. If you followed the steps above the main directory for all roms is ~/RetroPie/roms (or /home/pi/RetroPie/roms, which is the same here). In this directory there is a sub-directory for every supported emulated system, e.g., NES, SNES, Sega Megadrive, etc. 
 
-Attention has to be taken for the extensions of the ROM files. All the information needed for each system is detailed in this wiki (see the wiki home page or sidebar for systems).
+Attention has to be taken for the extensions of the rom files. Some emulators use .zip while some use a custom file extension associated with the emulator in question. For example the Atari 2600 emulator may use .a26, .bin, .rom, .gz, and .zip.
+
+All the information needed for each system is detailed in this wiki. See the wiki home page or sidebar for systems.
 
 EmulationStation can be run from the terminal by typing `emulationstation` in the terminal.
 
