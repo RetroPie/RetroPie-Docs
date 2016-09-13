@@ -2,13 +2,11 @@ To map a controller in jzintv, you need to create a Keyboard Hack File which is 
 
 ## Find Joystick Events
 
-To find the events sent by your joystick to jzintv, you need to run event_diag.rom. You can download it from [here](http://atariage.com/forums/index.php?app=core&module=attach&section=attach&attach_id=139949).
-
-[If you know the joystick numbers of your controller from using jstest, then you can skip the next section as the buttons assignments are identical.]
+To find the events sent by your joystick to jzintv, you need to run `event_diag.rom`. You can download it from [here](http://atariage.com/forums/index.php?app=core&module=attach&section=attach&attach_id=139949).
 
 Place event_diag.rom in your intellivision rom folder and from a terminal on your pi, run the following command:
 
-    /opt/retropie/emulators/jzintv/bin/jzintv /home/pi/RetroPie/roms/intellivision/event_diag.rom
+    /opt/retropie/emulators/jzintv/bin/jzintv -p /home/pi/RetroPie/BIOS -q /home/pi/RetroPie/roms/intellivision/event_diag.rom
 
 Now press buttons or move the left analog stick and you will see how jzintv reads the input.
 
@@ -20,7 +18,7 @@ Make a note of these bindings as they will be used in creating the keyboard hack
 
 ## Mappings in a Keyboard Hack File
 
-To create a keyboard hack file, it is a case of taking each joystick event and mapping it to the appropriate INTV controller input. The latter is detailed in [official documentation](http://spatula-city.org/~im14u2c/intv/jzintv-1.0-beta3/doc/jzintv/kbdhackfile.txt) and the relevant section is given below:
+To create a keyboard hack file, it is a case of taking each joystick event and mapping it to the appropriate INTV controller input. The latter is detailed in the [official documentation](http://spatula-city.org/~im14u2c/intv/jzintv-1.0-beta3/doc/jzintv/kbdhackfile.txt) and the relevant section is given below:
 
 <pre>
 Controller inputs start with one of the following four prefixes:
@@ -47,59 +45,97 @@ Each keyboard hack file will have a first line of `MAP 0` to denote the default 
 
 For each joystick mapping, you will need to add a line mapping the joystick event to the INTV controller input. Comments can be added by including a semi-colon at the beginning of a line.
 
-Using the examples above, a sample keyboard hack file would be:
+An sample keyboard hack file would be:
 
-    
-    MAP 0
+<pre>; -----------------------------------------------------------------------------------------
+MAP 0      ; keymap 0 (default keymap)
+; -----------------------------------------------------------------------------------------
 
-    ; Sample keyboard hack file
-    JS0_BTN_03 PD0L_KPE
-    JS0_BTN_14 PD0L_A_T
-    JS1_BTN_14 PD0R_A_T
-
-## The Arcade Mapping
-
-This keyboard hack file is an "arcade" mapping that will cover most games that require movement and one or two buttons to fire or jump. The hack file will also allow to set game difficulty and enter the number of players.
-
-In the intellivision roms folder, create a text file and call it **Arcade.kbd**. Add the lines below, amending as necessary, and save.
-
-####Example keyboard hack file for a PS3 controller.
-
-    MAP 0
-
-    ; Game interface
-
-    JS0_BTN_00 QUIT
-    JS0_BTN_16 RESET
-
-    ; Keypad
-
-    JS0_BTN_04 PD0L_KP1
-    JS0_BTN_05 PD0L_KP2
-    JS0_BTN_06 PD0L_KP3
-    JS0_BTN_07 PD0L_KP4
-    JS0_BTN_03 PD0L_KPE
-    JS0_BTN_12 PD0L_KP0
-    JS0_BTN_13 PD0L_KPC
-
-    ; Action Side Button
-    JS0_BTN_14 PD0L_A_T
-    JS0_BTN_15 PD0L_A_L
-
-###Configuring jzintv
-
-To use the keyboard hack files, you need to add the `--kbdhackfile` flag when launching jzintv.
-
-Add the following line to `/opt/retropie/configs/intellivision/emulators.cfg`:
-
-    jzintv-arcade = "/opt/retropie/emulators/jzintv/bin/jzintv -p /home/pi/RetroPie/BIOS -q --kbdhackfile=/home/pi/RetroPie/roms/intellivision/Arcade.kbd %ROM%"
-
-For good measure to make sure all roms will launch with the arcade mapping, you can set the default in emulators.cfg to "jzintv-arcade".
+; ***** Joystick #0 - Left Controller *****
+; ** Side Buttons and Numeric Keypad **
+JS0_BTN_00 PD0L_A_T
+JS0_BTN_01 PD0L_A_L
+JS0_BTN_02 PD0L_A_R
+JS0_BTN_03 PD0L_KP1
+JS0_BTN_04 PD0L_KP2
+JS0_BTN_05 PD0L_KP3
+JS0_BTN_06 PD0L_KP4
+JS0_BTN_07 PD0L_KP5
+JS0_BTN_08 PD0L_KP6
+JS0_BTN_09 PD0L_KP7
+JS0_BTN_10 PD0L_KP8
+JS0_BTN_11 PD0L_KP9
+JS0_BTN_12 PD0L_KPC
+JS0_BTN_13 PD0L_KP0
+JS0_BTN_14 PD0L_KPE
 
 
+; ** Direction Disc **
+JS0_N      PD0L_J_N
+JS0_NNE    PD0L_J_NNE
+JS0_NE     PD0L_J_NE
+JS0_ENE    PD0L_J_ENE
+JS0_E      PD0L_J_E
+JS0_ESE    PD0L_J_ESE
+JS0_SE     PD0L_J_SE
+JS0_SSE    PD0L_J_SSE
+JS0_S      PD0L_J_S
+JS0_SSW    PD0L_J_SSW
+JS0_SW     PD0L_J_SW
+JS0_WSW    PD0L_J_WSW
+JS0_W      PD0L_J_W
+JS0_WNW    PD0L_J_WNW
+JS0_NW     PD0L_J_NW
+JS0_NNW    PD0L_J_NNW
 
-## The Bespoke Mapping
+; ***** Joystick #1 - Right Controller *****
+; ** Side Buttons and Numeric Keypad **
+JS1_BTN_00 PD0R_A_T
+JS1_BTN_01 PD0R_A_L
+JS1_BTN_02 PD0R_A_R
+JS1_BTN_03 PD0R_KP1
+JS1_BTN_04 PD0R_KP2
+JS1_BTN_05 PD0R_KP3
+JS1_BTN_06 PD0R_KP4
+JS1_BTN_07 PD0R_KP5
+JS1_BTN_08 PD0R_KP6
+JS1_BTN_09 PD0R_KP7
+JS1_BTN_10 PD0R_KP8
+JS1_BTN_11 PD0R_KP9
+JS1_BTN_12 PD0R_KPC
+JS1_BTN_13 PD0R_KP0
+JS1_BTN_14 PD0R_KPE
 
-A bespoke mapping will vary from game to game, from controller to controller. The arcade mapping can be used as a starting point.
 
-_[Coming soon]_
+; ** Direction Disc **
+JS1_N      PD0R_J_N
+JS1_NNE    PD0R_J_NNE
+JS1_NE     PD0R_J_NE
+JS1_ENE    PD0R_J_ENE
+JS1_E      PD0R_J_E
+JS1_ESE    PD0R_J_ESE
+JS1_SE     PD0R_J_SE
+JS1_SSE    PD0R_J_SSE
+JS1_S      PD0R_J_S
+JS1_SSW    PD0R_J_SSW
+JS1_SW     PD0R_J_SW
+JS1_WSW    PD0R_J_WSW
+JS1_W      PD0R_J_W
+JS1_WNW    PD0R_J_WNW
+JS1_NW     PD0R_J_NW
+JS1_NNW    PD0R_J_NNW
+</pre>
+
+This hack file will map every input available. For the left controller, you may wish to include only the input(s) you wish to remap. For example, if your gamepad has an analog stick, you can remove the Direction Disc mappings.
+
+For the right controller, it is advised that every input is mapped as this is not done by default.
+
+Once amended to suit, save the keyboard hack file as `hackfile.cfg` in your Intellivision roms folder.
+
+###Configuring jzIntv
+
+To use the keyboard hack file, you need to add the `--kbdhackfile` flag when launching jzIntv.
+
+Amend the line in `/opt/retropie/configs/intellivision/emulators.cfg` to launch jzIntv to :
+
+    jzintv = "/opt/retropie/emulators/jzintv/bin/jzintv -p /home/pi/RetroPie/BIOS -q --kbdhackfile=/home/pi/RetroPie/roms/intellivision/hackfile.cfg %ROM%"
