@@ -56,7 +56,7 @@ sudo mv -v /home/pi/RetroPie/* /media/usb0/
 
 After this, the USB directory structure should look something like:
 ```
-pi@retropie:/media/usb0 $ ls -l
+pi@retropie:~ $ ls /media/usb0 -l
 total 96
 drwxrwxrwx  8 root root 16384 Jun 15 00:17 BIOS
 drwxrwxrwx  3 root root 16384 Apr 22 17:05 retropiemenu
@@ -67,7 +67,7 @@ drwxrwxrwx  2 root root 16384 Apr 13 16:14 splashscreens
 ## Configure fstab to automatically mount USB drive
 Establish the drive's UUID number by entering the command `ls -l /dev/disk/by-uuid/`. Example output:
 ```
-pi@retropie:~/RetroPie $ ls -l /dev/disk/by-uuid/
+pi@retropie:~ $ ls -l /dev/disk/by-uuid/
 total 0
 lrwxrwxrwx 1 root root 15 Jun 19 21:59 7cc81461-50b9-45a8-a561-fd5c4aa71934 -> ../../mmcblk0p2
 lrwxrwxrwx 1 root root 15 Jun 19 21:59 AE51-7D54 -> ../../mmcblk0p1
