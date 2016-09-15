@@ -43,6 +43,11 @@ You can enable and disable different functions of the Runcommand Launch Menu. Th
 
 Since 4.0.3 the runcommand can show a custom "launching" image instead of the traditional dialog infobox. The custom launching images must be placed at `/opt/retropie/configs/SYSTEM_NAME/` and named as "launching.jpg" or "launching.png".
 
+The conditions to show the custom launching image are:
+- Launch menu: enabled
+- Launch menu art: disabled
+- existence of the `launching.jpg` or `launching.png` file in the proper config directory.
+
 Example: if you have a cool NES related image and want to show it right before launching a NES game, you have to name the image file as `/opt/retropie/configs/nes/launching.jpg`.
 
 A more general launching image (not related to a specific system) can be named as `/opt/retropie/configs/all/launching.jpg`.
@@ -52,7 +57,7 @@ A more general launching image (not related to a specific system) can be named a
 
 Since 4.0.2 the runcommand can execute a user script before the game launching (`runcommand-onstart.sh`) and after exiting the emulator (`runcommand-onend.sh`). Both scripts must be placed at `/opt/retropie/configs/all/`.
 
-Some useful data is passed as arguments to these scripts:
+Useful data are passed as arguments to these scripts:
 
 - `$1` - the system (eg: atari2600, nes, snes, megadrive, fba, etc).
 - `$2` - the emulator (eg: lr-stella, lr-fceumm, lr-picodrive, pifba, etc).
