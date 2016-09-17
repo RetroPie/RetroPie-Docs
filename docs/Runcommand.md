@@ -45,8 +45,8 @@ Since 4.0.3 the runcommand can show a custom "launching" image instead of the tr
 
 The conditions to show the custom launching image are:
 - Launch menu: enabled
-- Launch menu art: disabled
 - existence of the `launching.jpg` or `launching.png` file in the proper config directory.
+- "Launch menu art" is enabled, **AND** there's no emulationstation art for the chosen game.
 
 Example: if you have a cool NES related image and want to show it right before launching a NES game, you have to name the image file as `/opt/retropie/configs/nes/launching.jpg`.
 
