@@ -1,10 +1,6 @@
-RetroPie uses forks of the [MAME](http://mamedev.org/) and [FinalBurn Alpha](http://www.barryharris.me.uk/) emulators that work well on the Raspberry Pi hardware, but are based on older versions of the original code.  Your ROMs may be for earlier or later versions of MAME/FBA and if they are, they most likely will not work.
+## Quick Reference
 
-To understand what a MAME ROM is and contains and why they are different between different emulator versions, check out: [Demystifying MAME ROMs Tutorial by ChoccyHobNob](http://choccyhobnob.com/tutorials/demystifying-mame-roms/).  
-
-You may also find this forum post explains how arcade emulators work with RetroPie: [How to use MAME with RetrroPie - Help Guide](https://retropie.org.uk/forum/topic/2859/how-to-use-mame-with-retropie-help-guide)
-
-The following chart is a quick reference for all the arcade emulators in RetroPie.
+The following chart is a quick reference for all the arcade emulators in RetroPie:
 
 | Emulator | Romset | # of ROMs | [.DAT Files](https://github.com/HerbFargus/retropie-dat/archive/master.zip) | Compatibility List |
 | :---: | :---: | :---: | :---: | :---: |
@@ -19,30 +15,64 @@ The following chart is a quick reference for all the arcade emulators in RetroPi
 | [lr-fba-next](https://github.com/RetroPie/RetroPie-Setup/wiki/FinalBurn-Alpha) | 0.173 (fba 0.2.97.38) | [4150](https://raw.githubusercontent.com/libretro/libretro-fba/master/gamelist.txt) | [.DAT](https://drive.google.com/file/d/0B2TMeZ6iEFvHamozOVVZQkpUVHM/view?usp=sharing)| [List](https://docs.google.com/spreadsheets/d/1GaqIIoiWbzKHwZ52S2xCSDQXILo81Ls1mHK6czKGAtM/edit?usp=sharing) |
 | [gngeopi](https://github.com/RetroPie/RetroPie-Setup/wiki/Neo-Geo) | 0.138 | 203 | [.DAT](https://drive.google.com/file/d/0B2TMeZ6iEFvHZVVCYmVtaUM1VlU/view?usp=sharing)| [List](https://docs.google.com/spreadsheets/d/1A_a_9t14uzDUMrrO0RgLDwiVUiycmclcPIs6cU6Iox8/edit?usp=sharing) |
 
-See also: [MAME](https://github.com/petrockblog/RetroPie-Setup/wiki/MAME), [FBA](https://github.com/petrockblog/RetroPie-Setup/wiki/FinalBurn-Alpha)
+For further details, see the system-specific wiki pages for [MAME](https://github.com/petrockblog/RetroPie-Setup/wiki/MAME) and [FBA](https://github.com/petrockblog/RetroPie-Setup/wiki/FinalBurn-Alpha).
 
-It is much easier to source a complete romset required by the arcade emulator you want to use. However, if you are concerned that your set is incomplete or invalid, or wish to downgrade a later set to an older set, this is where [clrmamepro](http://mamedev.emulab.it/clrmamepro/) comes in.  Clrmamepro is a Windows utility for verifying and converting romsets. It can also run on [OSX](http://www.emulab.it), and Linux, using [Wine](https://www.winehq.org/).
+## Crash Course in Arcade ROMs
 
-Clrmamepro is very powerful, but also somewhat complex and not friendly to new users. Here are the steps to getting started with clrmamepro.
+Arcade ROMs are tied to the version of the arcade emulator, because the definition of what is the "correct" contents and usage of the ROM can change from version to version of the emulator.
 
-## Video Tutorial:
-<a href="https://www.youtube.com/watch?v=_lssz2pAba8" target="_blank"><img src="https://i.ytimg.com/vi_webp/_lssz2pAba8/mqdefault.webp" 
-alt="clrmamepro Video" width="300" height="180" border="10" /></a>
+For example, MAME2003 is based off the MAME 0.78 source code, so you must use the MAME 0.78 ROM set with MAME2003. If you use ROMs which are from an earlier or later MAME version, such as 0.50 or 0.100 or 0.173, then those ROMs probably will not work with MAME2003 because that other version's definition of the correct ROM is different from 0.78's definition of the correct ROM.
 
+RetroPie includes forks of the [MAME](http://mamedev.org/) emulator that work well on the Raspberry Pi hardware, but are based on older versions of the emulator code. The [Final Burn Alpha](http://www.fbalpha.com/) emulator usually performs better than MAME but supports less games, a recent and earlier FBA are available in RetroPie.
 
-##Requirements:#
+The recommended emulators are:
+
+* Pi 2 and Pi 3: `lr-mame2003` and `lr-fba-next`
+* Pi 1 and Pi Zero: `lr-imame4all` and `mame4all`
+
+If the game you wish to play is supported by different emulator versions, try each version, as one may perform better than another. Earlier versions usually run faster than later versions (but not always). Earlier versions also support less games than later versions. Generally most 2D games work well on the Pi 3, but most 3D and vector games do not run at playable speed or at all.
+
+Further good resources for understanding more about MAME/FBA arcade ROMs and their usage are:
+
+* [RetroPie Forum: How to use MAME with RetroPie Help Guide](https://retropie.org.uk/forum/topic/2859/how-to-use-mame-with-retropie-help-guide)
+* [Demystifying MAME ROMs Tutorial by ChoccyHobNob](http://choccyhobnob.com/tutorials/demystifying-mame-roms/).
+
+So how do you tell you have the right ROM? The details of correct ROMs are stored in DAT files. A DAT file describes the correct ROM contents such filenames, file sizes, and checksums to verify contents are not wrong or corrupt. DAT files are just (extremely large) text files. You can open them in a text editor if you wish to see the contents.
+
+You can use a ROM verification tool to check your ROMs against a given DAT file. Some popular ROM verification tools are:
+
+* [clrmamepro](http://mamedev.emulab.it/clrmamepro/) (Windows)
+* [clrmamepro](http://www.emulab.it) (OSX)
+* [romcenter](http://romcenter.com/) (Windows)
+* [Romulus](http://romulus.net63.net/) (Windows)
+* [RomVault](http://www.romvault.com/) (Windows)
+
+All of the Windows tools can be run on Linux (x86) using [Wine](https://www.winehq.org/).
+
+# clrmamepro Tutorial
+
+This section will focus on the clrmamepro Windows utility for verifying and converting romsets.
+
+clrmamepro is very powerful, but also somewhat complex and not friendly to new users.
+
+## Video Tutorial
+
+* [Easy ClrMamePro Tutorial](https://www.youtube.com/watch?v=_lssz2pAba8)
+
+## Requirements
+
 * The current version of RetroPie. Romsets and packaged MAME/FBA emulators occasionally change.
 * A Windows PC for setting up RetroPie and running clrmamepro. This tutorial assumes you are running a 64 bit version of Windows, but the steps for 32 bit Windows will be the same once you get past downloading the clrmamepro software.
 
 **NOTE:** There are unsupported WINE versions available for OSX and Linux, if you Google.
 
-## Step 1 - Back up your ROMs#
+## Step 1 - Back up your ROMs
 It is possible with clrmamepro to change one or two options and when it runs it will delete all your existing ROMs. OK, not really - using the default options it will make backups of any files it removes, but I have seen a lot of people when getting started mess up their ROMs beyond repair.
 
-##Step 2 - Download [clrmamepro](http://mamedev.emulab.it/clrmamepro/#downloads)#
+##Step 2 - Download [clrmamepro](http://mamedev.emulab.it/clrmamepro/#downloads)
 The version at the time of this article is 4.016.  I would recommend the 64 bit version if you are running a 64 bit OS, it will be significantly faster.  I would also recommend the zip version, just extract it to C:\clrmamepro.  There's no need to run the installer.
 
-##Step 3 - Acquire DAT files#
+##Step 3 - Acquire DAT files
 DAT files are the [XML-based](http://en.wikipedia.org/wiki/XML) database definitions of the exact ROMs an emulator uses. Using the DAT files and [CRC](http://en.wikipedia.org/wiki/Cyclic_redundancy_check) checks, clrmamepro is able to identify which of your ROMs are valid for a given emulator.
 
 You can download all .DAT files for all arcade emulators [**HERE**](https://github.com/HerbFargus/retropie-dat/archive/master.zip)
@@ -53,7 +83,7 @@ You can download all .DAT files for all arcade emulators [**HERE**](https://gith
 
 **NOTE:** Use the appropriate .DAT from the zip file if you want to target a different MAME/FBA emulator. The table at the top of this page details the files needed.
 
-##Step 4 - Run clrmamepro for the first time#
+##Step 4 - Run clrmamepro for the first time
 * Run `C:\clrmamepro\cmpro64.exe`.  The welcome screen explains that common first steps are to 1) Create a Profile, 2) Set up your paths and 3) Scan your ROMs. We will be doing things slightly differently, in order to leave your source ROMs intact.  
 * Click OK to the Welcome screen
 * Click **"Add DatFile..."** and open the MAME4ALL DAT file at `C:\retropie-dat-master\mame4all\MAME 0.37b5.dat`
@@ -69,7 +99,7 @@ You can download all .DAT files for all arcade emulators [**HERE**](https://gith
 
 At this point, you could scan the ROMs folder you just selected, but we just created this folder and it is empty.  Instead, we will rebuild into this folder.  Clrmamepro can scan other locations for matching ROMs and build a new ROM set from them.
 
-##Step 5- Rebuild a ROM set#
+##Step 5- Rebuild a ROM set
 
 * In the main clrmamepro window, select **"Rebuilder"**
 * The destination should already be filled in for you - it is the same as the ROM path you defined above in the settings window: `C:\retropie-dat-master\mame4allroms`
@@ -91,7 +121,7 @@ To understand what these options mean, we must first understand the MAME concept
 
 Time to find out how well your source ROMs matched up...
 
-##Step 6 - Scan a ROM set#
+##Step 6 - Scan a ROM set
 * In the main clrmamepro window, select **"Scanner"**
 * Leave all settings at default and click **"New Scan..."**
 * When clrmamepro finishes scanning, you will see a "Statistics" window with high level information and a "Scan Results" window with detailed information about your missing ROMs
@@ -102,7 +132,7 @@ Time to find out how well your source ROMs matched up...
 * Use clrmamepro's "Rebuilder" to rebuild your existing ROMs to a new ROM set
 * Scan the rebuilt ROMs using the "Scanner"
 
-##Notes#
+##Notes
 
 That's the basics of using clrmamepro.  Some additional notes:
 
