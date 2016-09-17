@@ -1,0 +1,23 @@
+***
+![gc](https://cloud.githubusercontent.com/assets/10035308/18609175/be037df8-7cb8-11e6-918b-a57a12ebb601.png)
+***
+_The GameCube is a home video game console that was released by Nintendo on September 14, 2001._
+***
+
+| Emulator | Rom Folder | Extension | BIOS |  Controller Config |
+| :---: | :---: | :---: | :---: | :---: |
+| [dolphin](https://github.com/dolphin-emu/dolphin.git) | gc  | .iso | none | /opt/retropie/configs/gc/Config |
+
+## Emulator: [dolphin](https://github.com/dolphin-emu/dolphin.git)
+
+**NOTE: This is only for x86 builds- Not the Raspberry Pi!** 
+
+## ROMS
+
+Accepted File Extensions: **.iso**
+
+Place your GameCube ROMs in
+```
+/home/pi/RetroPie/roms/gc
+```
+## Controls
