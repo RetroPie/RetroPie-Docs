@@ -8,9 +8,9 @@ _The GameCube is a home video game console that was released by Nintendo on Sept
 | :---: | :---: | :---: | :---: | :---: |
 | [dolphin](https://github.com/dolphin-emu/dolphin.git) | gc  | .iso | none | /opt/retropie/configs/gc/Config |
 
-## Emulator: [dolphin](https://github.com/dolphin-emu/dolphin.git)
+> :exclamation: This is only for x86 builds- Not the Raspberry Pi!.
 
-**NOTE: This is only for x86 builds- Not the Raspberry Pi!** 
+## Emulator: [dolphin](https://github.com/dolphin-emu/dolphin.git)
 
 ## ROMS
 
