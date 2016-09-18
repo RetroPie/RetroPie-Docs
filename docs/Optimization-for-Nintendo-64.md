@@ -82,8 +82,19 @@ cd /home/pi/RetroPie/roms/n64
 You can use the same command to launch the rom correctly loading the texture pack. 
 
 
-However if you load up emulation station and use the normal run command launcher it will fail or only partially load the texture pack a issue is open on this subject and will update when it is working correctly.  
-Correction to this behavior.  It seems that texture packs will not load correctly when downscaling video to something standard like 640x480 that resolution is not high enough to run the texture pack.  If you have Cea-5 enabled you can launch the texture pack normally via emulation station. 
+To get the texture pack to load from emulation station you must do the following.
+Launch Retropie Setup
+Update Retropie Setup Script
+Go to Manage Packages 
+update the mupen64plus package
+
+Go to launch one of the N64 games you have enabled a high resolution texture pack for. 
+Launch that game
+Press x when it launches 
+change the video mode to one of the High Resolution options.
+ You can make that setting as the default for all 64 roms, which would be fine but likely as N64 stuff requires so much video tuning you will probably want to set this option on each rom you have uploaded a hi-resolution texture pack for. 
+
+
 
 
 
