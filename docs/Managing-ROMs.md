@@ -28,9 +28,9 @@ RetroPie includes forks of the [MAME](http://mamedev.org/) emulator that work we
 The recommended emulators are:
 
 * Pi 2 and Pi 3: `lr-mame2003` and `lr-fba-next`
-* Pi 1 and Pi Zero: `lr-imame4all` and `mame4all`
+* Pi 1 and Pi Zero: `mame4all` (the native emulator, not the RetroArch core)
 
-If the game you wish to play is supported by different emulator versions, try each version, as one may perform better than another. Earlier versions usually run faster than later versions (but not always). Earlier versions also support less games than later versions. Generally most 2D games work well on the Pi 3, but most 3D and vector games do not run at playable speed or at all.
+If the game you wish to play is supported by different emulator versions, try each version, as one may perform better than another. Earlier versions usually run faster than later versions (but not always). Earlier versions also support less games than later versions. Native emulators like mame4all and AdvMame may perform better than RetroArch cores but cannot take advantage of global RetroArch configurations so must be configured individually. Generally most 2D games work well on the Pi 3, but most 3D and vector games do not run at playable speed or at all.
 
 Further good resources for understanding more about MAME/FBA arcade ROMs and their usage are:
 
