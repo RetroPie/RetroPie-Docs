@@ -2,7 +2,7 @@ After pairing the device as shown in this [guide](https://github.com/retropie/re
 
 The problem is that the keys detected in emulationstation are not the same as the ones detected in retroarch. To fix this you can either bind the keys through the retroarch config (in emulationstation: Retropie -> Retroarch -> Config -> Input) or start from the following cfg that must be placed at `/opt/retropie/configs/all/retroarch-joypads/udev/小米蓝牙手柄.cfg`. The name is the same as the one in `/opt/retropie/configs/all/retroarch-joypads` that represents the Xiaomi Gamepad.
 
-`
+```
 input_device = "小米蓝牙手柄"
 input_driver = "udev"
 input_r_y_plus_axis = "+5"
@@ -37,6 +37,6 @@ input_left_btn = "h0left"
 input_state_slot_decrease_btn = "h0left"
 input_r_x_plus_axis = "+2"
 input_l2_btn = "12"
-`
+```
 
 Keep in mind that this configuration is based in the Xbox 360 Controller Scheme and uses the default joypad hotkeys
