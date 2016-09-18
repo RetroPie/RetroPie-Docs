@@ -147,6 +147,7 @@
 * [Xin-Mo Driver](Xin-Mo-Controller)
 * [GPIO Controller Modules](GPIO-Modules)
 * [Spinners and Trackballs](Spinners-and-Trackballs)
+* [Xiaomi Gamepad](Xiaomi-Gamepad)
 
 ## Troubleshooting
 
