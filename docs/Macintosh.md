@@ -31,7 +31,7 @@ You will also place these files in
 ```
 For more details see the forum post at http://blog.petrockblock.com/forums/topic/installing-basiliskii-an-early-macintosh-emulator/ and the links therein for detailed instructions about how to set up Basilisk II.
 
-There is also detailed information along with roms and a startup disk image at http://www.redundantrobot.com/sheepshaver-tutorial/
+There is also detailed information along with roms and a startup disk image at http://www.redundantrobot.com/#/sheepshaver .
 
 If your **disk.img** file (from MacStartup.img) only has a few MB of free space on it while running the emulator, you must create a new larger one if you want more free space. Since the disk setup GUI is not included in RetroPie's version of Basilisk, you must install Basilisk on your PC to create a larger image and copy your disk.img file to it. Similar instructions can be found at
 http://www.emaculation.com/forum/viewtopic.php?f=6&t=8068
