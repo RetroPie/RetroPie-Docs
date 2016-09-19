@@ -21,7 +21,10 @@ Place your PlayStation 2 ROMs in
 ```
 
 ## BIOS
-
+Place your Playstation 2 BIOS in 
+```
+/home/pi/.config/PCSX2/bios/
+```
 ## Controls
 
 ![playstation3_diagram](https://cloud.githubusercontent.com/assets/10035308/16599634/7f353148-42c0-11e6-9023-dbaf074bc933.png)
