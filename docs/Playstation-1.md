@@ -48,6 +48,17 @@ https://retropie.org.uk/forum/topic/735/psx-please-remove-bin-from-the-file-type
 
 if your psx game is a .ecm extension, its a compressed file that needs to be extracted with ecmtools.
 
+### Where is lr-beetle-psx?
+
+The Beetle/Mednafen PSX core is not available for systems with ARM CPUs (like the Raspberry Pi) because it does not perform well enough. This emulator is supplied for people who are running RetroPie on more powerful x86 systems.
+
+* [RetroPie commit - Add Beetle PSX emulator](https://github.com/RetroPie/RetroPie-Setup/commit/6f0ce53857bd9eab2d78ad1dd6eefc112cf61e6d)
+
+~~~shell
+$ grep flags scriptmodules/libretrocores/lr-beetle-psx.sh
+rp_module_flags="!arm"
+~~~
+
 ## BIOS
 
 The BIOS file is named **SCPH1001.BIN** (both name and extension are case-sensitive so MUST be in capitals)
