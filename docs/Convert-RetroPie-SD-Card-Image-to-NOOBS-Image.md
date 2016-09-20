@@ -8,7 +8,7 @@ For OS X users, [here is a tutorial for mounting the filesystem](http://osxdaily
 
 1. [Download the latest RetroPie image][retropiedownload] and [flash an SD card (or other volume) with it][flashsd]
 2. [Download the latest NOOBS release.][noobsdownload] You will need the full NOOBS download (not NOOBS Lite) since we will be using the included Raspbian image as a base.
-3. While that downloads, write down the full sizes of the two partitions on the RetroPie SD card ('boot' and 'retropie' as of this writing). You will need them later. (OS X users: type `diskutil list` at the command line to get this easily.) (Linux users: type `df -h`.)
+3. While that downloads, write down the full sizes of the two partitions on the RetroPie SD card ('boot' and 'retropie' as of this writing). You will need them later. (OS X users: type `diskutil list` at the command line to get this easily.) (Linux users: type `df -h` in the terminal.)
 4. Create the `.tar` file of the main RetroPie filesystem (the 'retropie' partition). From the command line on your primary computer, navigate to where the 'retropie' partition is mounted (on OS X, try `cd /Volumes/retropie`). The command is `sudo tar -cvpf ~/Desktop/retropie.tar ./*` and this will create the `retropie.tar` file on your desktop.
 5. Write down the size of `retropie.tar`.
 6. Navigate to your desktop (or wherever you saved the tarball) with `cd ~/Desktop/` and compress the tarball with the command `xz -9 -e retropie.tar`. This will take some time.
