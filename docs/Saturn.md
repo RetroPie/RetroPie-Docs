@@ -1,7 +1,7 @@
 ***
 ![saturn_long](https://cloud.githubusercontent.com/assets/10035308/12213706/78d47d62-b63a-11e5-9128-8ba89e6f8950.png)
 ***
-_The Sega Saturn is a 32 bit 5th generation home video game console released by Sega in 1994. It has a total of 8 processors which makes it one of the more difficult consoles to emulate._
+_The Sega Saturn is a 32 bit 5th generation home video game console released by Sega in 1994. It has a total of 8 processors which makes it one of the most difficult consoles to emulate._
 ***
 
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
