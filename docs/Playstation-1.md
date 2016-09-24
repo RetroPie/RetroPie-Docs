@@ -148,6 +148,28 @@ CD images can be converted to EBOOT `.pbp` files with the **PSX2PSP v1.4.2** app
 
 EBOOTs are also often smaller than CD images, so could be a good option if you're tight on space.
 
+### Importing Save Files
+
+On sites like [GameFAQs](http://gamefaqs.com/) you can find many save files for PlayStation games, these are either disk images of peoples' memory cards or hacked memory cards with a save file that gets you to a certain point in the game or gives you a character with many levels/gold/items, however the game works.
+
+All the different PlayStation emulators in the world (ePSXe, PCSX, Bleem, PSEmu, etc) use a different memory card save format, so you often can't just copy these downloaded save files right onto the Pi.
+
+First you must use a memory card manager utility to convert from one format to the format suitable for RetroPie's PCSX-based emulators. One such tool is [Memory Card Manager 1.4 by Aldo Vargas](http://www.aldostools.org/memmanager.html). Download this and `MSVBVM50.DLL`, and run `MemManager.exe`. It looks like this:
+
+![MemManager Screenshot](http://i.imgur.com/AqxfVpy.png)
+
+Press the **New** button at the bottom and create a file the same name as your PSX ROM. For example, if you are using `Diablo.pbp` or `Diablo.cue` then call the new memory card file `Diablo.mcr`. Ensure you select the **Other - AdriPSX, FPSE, pcsx** format in the dropdown menu, then press **Save**.
+
+Press the **><** at the bottom of the window which opens a second pane on the right. In the new pane, press the **...** at the top and open the save file you have downloaded. *Hopefully* you'll see valid memory card blocks, similar to what you'd see on an actual PSX. (some saves may not show expected/valid contents, in which case you're probably out of luck trying to use that save file, download a different one)
+
+Click on the block in the right hand column you wish to import, and press the **<** arrow to copy it into your new memory card on the left hand column. The screenshot above demonstrates the way to select the correct block and the correct button to press.
+
+In your memory card on the left, click **Save As** and save over the blank card you just created.
+
+Quit MemManager and rename your new memory card from `.mcr` to `.srm`. Following our example above, we'd now have a file called `Diablo.srm`. Copy this memory card file to your RetroPie ROMs directory.
+
+Now go to RetroPie and run your game in the PSX emulator. You should be able to see the contents of the memory card and load the saved game which you downloaded.
+
 ### Alternative BIOS files
 
 Add different bios' that you've tested and tell the community if it works or not.
