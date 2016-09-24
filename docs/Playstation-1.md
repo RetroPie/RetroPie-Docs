@@ -152,7 +152,7 @@ EBOOTs are also often smaller than CD images, so could be a good option if you'r
 
 On sites like [GameFAQs](http://gamefaqs.com/) you can find many save files for PlayStation games, these are either disk images of peoples' memory cards or hacked memory cards with a save file that gets you to a certain point in the game or gives you a character with many levels/gold/items, however the game works.
 
-All the different PlayStation emulators in the world (ePSXe, PCSX, Bleem, PSEmu, etc) use a different memory card save format, so you often can't just copy these downloaded save files right onto the Pi.
+All the different PlayStation emulators (ePSXe, PCSX, Bleem, PSEmu, etc) and memory card dumper hardware (DexDrive, MadCatz Data Deck) use a different memory card save format, so you often can't just copy these downloaded save files right onto the Pi.
 
 First you must use a memory card manager utility to convert from one format to the format suitable for RetroPie's PCSX-based emulators. One such tool is [Memory Card Manager 1.4 by Aldo Vargas](http://www.aldostools.org/memmanager.html). Download this and `MSVBVM50.DLL`, and run `MemManager.exe`. It looks like this:
 
