@@ -63,13 +63,63 @@ The actual interconnect (NES/SNES/N64) can be made from female-to-female jumper 
 
 ## Installation and usage
 
+### Automatic Installation  
 The easiest way to install the module is with the RetroPie-Setup script. Just remember to upgrade your firmware (`sudo apt-get update; sudo apt-get upgrade`) before installing the module, as it is built automatically using the configuration data from the latest RPi kernel. This also means that a firmware update afterwards can break the compatibility, but this is easily fixed by reconfiguration/update of the module (see FAQ).
 
-Loading the module is done with `modprobe`, which is explained in detail in the README (`/usr/share/doc/gamecon_gpio_rpi/README.gz`).
+In addition to install/update, RetroPie-Setup also contains an option to permanently enable configuration for 2 SNES pads connected to PAD2 & PAD3 pins (designed for the RetroPie GPIO Adapter). This configures the driver as `gamecon_gpio_rpi map=0,1,1,0` for _rev01_ boards and `gamecon_gpio_rpi map=0,0,1,0,0,1` for _rev02_ boards, for a definition of these settings see below in "Additional Gamecon Configuration Details".
 
-In addition to install/update, RetroPie-Setup also contains an option to permanently enable configuration for 2 SNES pads connected to PAD2 & PAD3 pins (designed for the RetroPie GPIO Adapter).
+### Manual Installation  
+Install the driver as described above using the Retropie Setup-Script.  Do not configure the drivers using the Retropie Setup-Script.
 
-Permanent configuration can also be done manually by adding a corresponding configuration line (eg: `gamecon_gpio_rpi map=0,2`) to `/etc/modules`
+Two files need to be modified to enable the gamecon_gpio_rpi driver and gamecon controller configuration to automatically load when Retropie launches.
+
+1. Add the text `gamecon_gpio_rpi` to the file `/etc/modules` then save the file.  This loads the driver on boot.
+2. Add the text `gamecon_gpio_rpi map=#,#,#,#,#,#` to the file `/etc/modprobe.d/gamecon.conf` This configures the driver.
+
+**IMPORTANT: ‘#’ must be replaced with your configuration of controller types (No Controller='0', SNES='1', NES='2', etc.) at the location that corresponds to the physical pin location you are using as outlined below in "Additional Gamecon Configuration Details".**  
+
+**Example 1:** On a RPI2 or RPI3 to have a NES controller connected to physical pin 3 (Gamepad5) and an SNES controller connected to physical pin 5 (Gamepad6) write: `gamecon_gpio_rpi map=0,0,0,0,2,1` to the file `/etc/modprobe.d/gamecon.conf`
+
+**Example 2:** On a RPI2 or RPI3 to have a SNES controller connected to physical pin 7 (Gamepad3) and an SNES controller connected to physical pin 26 (Gamepad4) write: `gamecon_gpio_rpi map=0,0,1,1,0,0` to the file `/etc/modprobe.d/gamecon.conf`
+
+**Example 3:** On a Raspberry Pi B to have a NES controller connected to physical pin 3 (Gamepad1) and an SNES controller connected to physical pin 5 (Gamepad2) write: `gamecon_gpio_rpi map=2,1,0,0,0,0` to the file `/etc/modprobe.d/gamecon.conf`
+
+### Additional Gamecon Configuration Details  
+
+The `gamecon_gpio_rpi` driver requires the user to define its configuration (`gamecon.conf`) of the type of controllers (NES, SNES, etc) and physical pin location on the RPI GPIO board according to the following format definition and board revision (rev01, rev02):
+
+**Controller Type Legend**  
+0 = No connection  
+1 = SNES gamepad  
+2 = NES gamepad  
+3 = Gamecube gamepad  
+6 = N64 gamepad  
+7 = PSX/PS2 gamepad  
+8 = PSX DDR gamepad  
+9 = SNES mouse  
+
+**NES/SNES Controller Data Pin Location Legend**  
+_Rev01 board (Raspberry Pi B)_  
+Gamepad1 = GPIO0 = Physical Pin03  
+Gamepad2 = GPIO1 = Physical Pin05  
+
+_Rev02 board (Raspberry Pi A, B+, 2, 3)_  
+Gamepad3 = GPIO4 = Physical Pin07  
+Gamepad4 = GPIO7 = Physical Pin26  
+Gamepad5 = GPIO2 = Physical Pin03  
+Gamepad6 = GPIO3 = Physical Pin05  
+
+**NES/SNES File definition for `gamecon.conf`**   
+_Rev01 board (Raspberry Pi B)_  
+`map=<gamepad1/GPIO0/pin03>,<gamepad2/GPIO1/pin05>,<gamepad3/GPIO4/pin07>,<gamepad4/GPIO7/pin26>,<gamepad5/GPIO2/pin03>,<gamepad6/GPIO3/pin05>`
+
+_Rev02 board (Raspberry Pi A, B+, 2, 3)_  
+`map=<0/not available>,<0/not available>,<gamepad3/GPIO4/pin07>,<gamepad4/GPIO7/pin26>,<gamepad5/GPIO2/pin03>,<gamepad6/GPIO3/pin05>`
+
+**IMPORTANT: Gamepad1 & Gamepad2 are only available on the Raspberry Pi B.  Future versions of the Raspberry Pi have hidden these GPIO connections, i.e. no physical pin exists.  If you are using a Raspberry Pi B+, 2 or 3 you will NOT use Gamepad1 or Gamepad2 connections and they must be assigned ‘0’ as their controller type in the gamecon.conf file.**
+
+
+
 
 ## Questions and feedback
 
@@ -244,4 +294,3 @@ Related [thread](http://www.raspberrypi.org/phpBB3/viewtopic.php?f=78&t=15787) i
 
 ### 0.7 (28.4.2013)
 * first release
-
