@@ -102,6 +102,8 @@ The `gamecon_gpio_rpi` driver requires the user to define its configuration (`ga
 _Rev01 board (Raspberry Pi B)_  
 Gamepad1 = GPIO0 = Physical Pin03  
 Gamepad2 = GPIO1 = Physical Pin05  
+Gamepad3 = GPIO4 = Physical Pin07  
+Gamepad4 = GPIO7 = Physical Pin26 
 
 _Rev02 board (Raspberry Pi A, B+, 2, 3)_  
 Gamepad3 = GPIO4 = Physical Pin07  
@@ -111,7 +113,7 @@ Gamepad6 = GPIO3 = Physical Pin05
 
 **NES/SNES File definition for `gamecon.conf`**   
 _Rev01 board (Raspberry Pi B)_  
-`map=<gamepad1/GPIO0/pin03>,<gamepad2/GPIO1/pin05>,<gamepad3/GPIO4/pin07>,<gamepad4/GPIO7/pin26>,<gamepad5/GPIO2/pin03>,<gamepad6/GPIO3/pin05>`
+`map=<gamepad1/GPIO0/pin03>,<gamepad2/GPIO1/pin05>,<gamepad3/GPIO4/pin07>,<gamepad4/GPIO7/pin26>,<0/not available>,<0/not available>`
 
 _Rev02 board (Raspberry Pi A, B+, 2, 3)_  
 `map=<0/not available>,<0/not available>,<gamepad3/GPIO4/pin07>,<gamepad4/GPIO7/pin26>,<gamepad5/GPIO2/pin03>,<gamepad6/GPIO3/pin05>`
