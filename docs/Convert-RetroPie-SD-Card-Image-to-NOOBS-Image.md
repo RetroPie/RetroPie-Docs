@@ -11,11 +11,11 @@ For OS X users, [here is a tutorial for mounting the filesystem](http://osxdaily
 3. While that downloads, write down the full sizes of the two partitions on the RetroPie SD card ('boot' and 'retropie' as of this writing). You will need them later. (OS X users: type `diskutil list` at the command line to get this easily.) (Linux users: type `df -h` in the terminal.)
 4. Create the `.tar` file of the main RetroPie filesystem (the 'retropie' partition). From the command line on your primary computer, navigate to where the 'retropie' partition is mounted (on OS X, try `cd /Volumes/retropie`). The command is `sudo tar -cvpf ~/Desktop/retropie.tar ./*` and this will create the `retropie.tar` file on your desktop.
 5. Write down the size of `retropie.tar`.
-6. Navigate to your desktop (or wherever you saved the tarball) with `cd ~/Desktop/` and compress the tarball with the command `xz -9 -e retropie.tar`. This will take some time.
+6. Navigate to your desktop (or wherever you saved the tarball) with `cd ~/Desktop/` and compress the tarball with the command `xz -9 -e -v retropie.tar`. This will take some time.
 7. Now we need to do the same thing to the 'boot' partition, but `tar` apparently doesn't like FAT-formatted volumes. So... Copy the contents of the 'boot' partition to a folder on your hard drive. I used `~/Desktop/rpi/boot`.
 8. From the command line, navigate to the 'boot' folder you just created. The command is `sudo tar -cvpf ~/Desktop/boot.tar ./*` and this will create the `boot.tar` file on your desktop.
 9. Write down the size of `boot.tar`.
-10. Navigate to your desktop (or wherever you saved the tarball) with `cd ~/Desktop/` and compress the tarball with the command `xz -9 -e boot.tar`. This won't take long, not nearly as long as the 'retropie' tarball.
+10. Navigate to your desktop (or wherever you saved the tarball) with `cd ~/Desktop/` and compress the tarball with the command `xz -9 -e -v boot.tar`. This won't take long, not nearly as long as the 'retropie' tarball.
 11. Hopefully NOOBS has finished downloading by now. Unzip it, and open up the 'os' folder. Duplicate the 'Raspbian' folder and rename it 'RetroPie'.
 12. Open up 'partitions.json' in your favorite (or second-favorite) text editor and make the following changes:
 	1. Change the `label` on the `root` partition to read `retropie`.
