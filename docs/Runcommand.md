@@ -65,6 +65,12 @@ Useful data are passed as arguments to these scripts:
 - `$3` - the full path to the rom file.
 - `$4` - the full command line used to launch the emulator.
 
+All the error messages from these scripts will be logged in `runcommand.log`. If you want to log something to this file you have to redirect the output to the standard error. This way:
+
+```sh
+echo "message to log" >&2
+```
+
 Some examples of what can be done with these scripts:
 
 - In the [Take and Scrape Your Own Screenshots wiki](https://github.com/RetroPie/RetroPie-Setup/wiki/Take-and-Scrape-Your-Own-Screenshots) there are two methods to achieve the same goal. In method 1 the `runcommand-onstart.sh` is used to automatically set some configurations in the system specific retroarch.cfg file. In method 2 the `runcommand-onend.sh` is used to check if you have a screenshot for the game you are leaving, and if yes, it will make the most recent screenshot be the emulationstation image for this game.
