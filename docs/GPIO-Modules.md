@@ -74,7 +74,7 @@ Install the driver as described above using the Retropie Setup-Script.  Do not c
 Two files need to be modified to enable the gamecon_gpio_rpi driver and gamecon controller configuration to automatically load when Retropie launches.
 
 1. Add the text `gamecon_gpio_rpi` to the file `/etc/modules` then save the file.  This loads the driver on boot.
-2. Add the text `gamecon_gpio_rpi map=#,#,#,#,#,#` to the file `/etc/modprobe.d/gamecon.conf` This configures the driver.
+2. Add the text `options gamecon_gpio_rpi map=#,#,#,#,#,#` to the file `/etc/modprobe.d/gamecon.conf` This configures the driver.
 
 **IMPORTANT: ‘#’ must be replaced with your configuration of controller types (No Controller='0', SNES='1', NES='2', etc.) at the location that corresponds to the physical pin location you are using as outlined below in "Additional Gamecon Configuration Details".**  
 
