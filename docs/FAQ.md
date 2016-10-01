@@ -114,7 +114,7 @@ You can also disable the rainbow splash at the beginning (not to be confused wit
 
 Add `disable_splash=1` in `/boot/config.txt`
 
-**As of 01/10/2016 the latest set of Raspbian updates causes boot text to be displayed again**. To restore default RetroPie image behaviour you can need to add `plymouth.enable=0` - Future RetroPie images will include this by default.
+**As of 01/10/2016 the latest set of Raspbian updates causes boot text to be displayed again**. To restore default RetroPie image behaviour you need to add `plymouth.enable=0` - future RetroPie images will include this by default.
 
 ### How do I boot to the desktop or Kodi
 
