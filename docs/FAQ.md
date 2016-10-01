@@ -104,7 +104,7 @@ An option has been added starting with RetroPie 3.7 to decide whether or not you
 
 change `console=tty1` to `console=tty3` 
 
-And add `quiet loglevel=3 logo.nologo` at the end.
+If not present add `quiet loglevel=3 plymouth.enable=0 logo.nologo` at the end (note that recent RetroPie images include `quiet loglevel=3 by default`)
 
 **make sure it is all on the same line!!!** 
 
@@ -113,6 +113,8 @@ The logo.nologo option is what turns off the raspberries on boot.
 You can also disable the rainbow splash at the beginning (not to be confused with the underpowered rainbow square the appears in the top right corner of your screen indicating you have an insufficient power supply)
 
 Add `disable_splash=1` in `/boot/config.txt`
+
+**As of 01/10/2016 the latest set of Raspbian updates causes boot text to be displayed again**. To restore default RetroPie image behaviour you can need to add `plymouth.enable=0` - Future RetroPie images will include this by default.
 
 ### How do I boot to the desktop or Kodi
 
