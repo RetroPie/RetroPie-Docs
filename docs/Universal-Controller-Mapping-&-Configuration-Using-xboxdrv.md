@@ -275,7 +275,7 @@ Now press 'ctrl+o' to save the file, 'Enter' to confirm and 'ctrl+x' to exit. Th
 
 ## **(3B) Expanding Launch Capabilities**
 
-The above method of combining the xboxdrv configuration with the launch command is a function that is built in to xboxdrv. However, it can be a bit unwieldy when considering the multiple launch methods found in RetroPie. What follows is an alternate method that that utilizes the `runcommand-onstart.sh` shell script, allowing a unified location and format for multiple xboxdrv configurations that launch based on a case statement. In addition, all the xboxdrv parameters are assigned to variables, making the case statement more readable.
+The above method of combining the xboxdrv configuration with the launch command is a function that is built in to xboxdrv. However, it can be a bit unwieldy when considering the multiple launch methods found in RetroPie. What follows is an alternate method that utilizes the `runcommand-onstart.sh` shell script, allowing a unified location and format for multiple xboxdrv configurations that launch based on a case statement. In addition, all the xboxdrv parameters are assigned to variables, making the case statement more readable.
 
 If it doesn't already exist, start by creating the `runcommand-onstart.sh`:
 
