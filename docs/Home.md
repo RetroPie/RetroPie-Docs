@@ -150,7 +150,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script. E
 * [Xin-Mo Driver](Xin-Mo-Controller)
 * [Module for GPIO interface for retro game controllers](GPIO-Modules)
 * [Setting up arcade spinners and trackballs](Spinners-and-Trackballs)
-* [Universal Controller Mapping & Tuning Using xboxdrv](Universal-Controller-Mapping-&-Tuning-Using-xboxdrv)
+* [Universal Controller Calibration & Mapping Using xboxdrv](Universal-Controller-Calibration-&-Mapping-Using-xboxdrv)
 
 ## Troubleshooting
 * [Sound Issues](Sound-Issues)
