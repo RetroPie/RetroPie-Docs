@@ -31,6 +31,12 @@ Restart and make sure it mounted the folder
     sudo reboot
     ls RetroPie
 
+Alternatively, if you have a shard folder that allows guest access, you can use the following line in your `autostart.sh`:
+
+    sudo mount -t cifs -o guest,uid=pi //hostname/retropie /home/pi/RetroPie
+
+This should also allow you to write save files to your NAS.
+
 ### Option 2: Add to fstab
 
 Using your favorite editor, open up fstab:
