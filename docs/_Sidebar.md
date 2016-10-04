@@ -148,7 +148,7 @@
 * [GPIO Controller Modules](GPIO-Modules)
 * [Spinners and Trackballs](Spinners-and-Trackballs)
 * [Xiaomi Gamepad](Xiaomi-Gamepad)
-* [Universal Controller Calibration & Mapping Using xboxdrv)
+* [Universal Controller Calibration & Mapping Using xboxdrv](https://github.com/RetroPie/RetroPie-Setup/wiki/Universal-Controller-Calibration-&-Mapping-Using-xboxdrv)
 
 ## Troubleshooting
 
