@@ -149,6 +149,7 @@
 * [Spinners and Trackballs](Spinners-and-Trackballs)
 * [Xiaomi Gamepad](Xiaomi-Gamepad)
 * [Universal Controller Calibration & Mapping Using xboxdrv)
+
 ## Troubleshooting
 
 * [Sound Issues](Sound-Issues)
