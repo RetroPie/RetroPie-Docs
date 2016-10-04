@@ -19,7 +19,7 @@ Please see the [8bitdo support page](http://www.8bitdo.com/Support.html) for det
 # Guide to add your controller
 
 **1)** Run the RetroPie setup script, either through the Emulation Station menu option, or via the command line.
-
+Quit Emulation Station with F4 and type this at the command line: sudo /home/pi/RetroPie-Setup/retropie_setup.sh
 
 **2)** Choose the "Configuration / Tools" menu choice
 ![Config / Tools Menu](https://s22.postimg.org/7043daech/1_Config_Tools.jpg)
