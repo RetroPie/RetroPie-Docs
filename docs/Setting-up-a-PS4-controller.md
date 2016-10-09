@@ -1,19 +1,4 @@
-###This wiki is how I was able to get my ps4 controller to work with my Raspberry Pi 3. I am using a Bluetooth dongle due to the freezing issues caused by the on-board Bluetooth.
-
-~~First I disabled the on-board Bluetooth.~~
-
-This is no longer needed due to the Bluetooth fix applied awhile back on 3.7.
-
-    sudo nano /boot/config.txt
-
-~~Paste this at the bottom of the config file.~~
-
-This is no longer needed due to the Bluetooth fix applied awhile back on 3.7.
-
-    #Disables On-Board Bluetooth
-    dtoverlay=pi3-disable-bt
-
-_If you don't need to update you should still reboot after updating the config.txt_
+###This wiki is how I was able to get my ps4 controller to work with my Raspberry Pi 3. ~~I am using a Bluetooth dongle due to the freezing issues caused by the on-board Bluetooth.~~ The onboard Bluetooth works great since the patch applied in 3.7.
 
 This is what I do with a fresh install. 
 
