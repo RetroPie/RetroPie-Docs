@@ -2,7 +2,7 @@
 
 First I disabled the on-board Bluetooth. 
 
-    sudo nano /boot/config.txt
+    ~~sudo nano /boot/config.txt~~
 
 Paste this at the bottom of the config file.
 
