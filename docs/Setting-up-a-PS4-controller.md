@@ -1,6 +1,6 @@
 ![Dualshock 4 controller](http://i.imgur.com/YgFJL00.jpg)
 
-The Sony PlayStation 4 Dualshock 4 is a very well made controller. It feels solid and has an excellent D-Pad. It has wireless functionality and can charge its internal battery with a Micro USB cable.
+The Sony PlayStation 4 Dualshock 4 is a very well made controller. It feels solid and has an excellent D-Pad. It has wireless functionality and can charge its internal battery via Micro USB.
 
 There are a few ways to use the Dualshock 4 with the Raspberry Pi:
 
@@ -30,6 +30,8 @@ The controller will not sleep on its own if left idle, it will remain on until t
 To force the controller to go to sleep, hold the **PS** button for 10 seconds.
 
 Once the light bar turns off, the controller is asleep.
+
+Shutting down your Pi will also turn the controller off.
 
 ### To wake up the controller
 
