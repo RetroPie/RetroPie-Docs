@@ -139,6 +139,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script. E
 ## Controller Configurations
 * [Setting up an XBox 360 Controller](Setting-up-the-XBox360-controller)
 * [Setting up a PS3 controller](Setting-up-a-PS3-controller)
+* [Setting up a PS4 controller](Setting-up-a-PS4-controller)
 * [Setting up an N64 controller](Setting-up-an-N64-controller)
 * [Logitech controllers](Logitech-controllers)
 * [Setting up wiimotes with classic controllers](Wiimotes-with-classic-controllers)
