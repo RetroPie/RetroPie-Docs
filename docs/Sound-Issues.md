@@ -6,6 +6,7 @@ First and foremost try forcing hdmi by adding the following to `/boot/config.txt
 ```
 hdmi_drive=2
 ```
+and restarting the Raspberry Pi fully.
 
 This place re-cites some posts (or parts of them) from different forum threads that might increase the sound quality:
 
