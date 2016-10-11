@@ -2,11 +2,10 @@
 
 Sound still is a problem child with the Raspberry Pi. Currently, there does not seem to be a best solution for all the sound issues. General information about sound issues can be found at http://elinux.org/R-Pi_Troubleshooting#Sound.
 
-First and foremost try forcing hdmi by adding the following to `/boot/config.txt`:
+First and foremost try forcing hdmi by adding the following to `/boot/config.txt` then restarting the Raspberry Pi:
 ```
 hdmi_drive=2
 ```
-and restarting the Raspberry Pi fully.
 
 This place re-cites some posts (or parts of them) from different forum threads that might increase the sound quality:
 
