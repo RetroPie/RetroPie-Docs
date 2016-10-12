@@ -89,6 +89,7 @@ The next part of the process involves configuring the controller in RetroArch.  
 #Step 3 (Editing the config files):
 
 Once the previous steps are done, either hit f4 on a connected keyboard to enter the terminal, or shut down the system, pull the MicroSD card and plug it into a computer that will allow you to use a text editor to edit the some .cfg, .ini, and .cfg.bak files (I use my Chromebook for this, but whatever works for you is fine).
+
 ![RetroPie Terminal](http://www.rootzilopochtli.com/wp-content/uploads/2015/02/Screenshot-from-2015-02-12-190851.png)
 
 The first files that need to be edited are the OUYA Game Controller.cfg and OUYA Game Controller.cfg.bak files.  These are located at: opt/retropie/configs/all/retroarch-joypads/  
@@ -179,7 +180,7 @@ Save State = "button(6)"
 Load State = "button(7)"
 (Obviously the particular button numbers are going to depend on what you would like to map, but the above are my personal choices).
 
-* Finally, edit the InputAutoCfg.ini and InputAutoCfg.ini.bak files, located at opt/retropie/configs/n64/  Map the buttons using the jstest numbers.  If you want to use the Left Shoulder button you will have to add this, as it is not included in the initial config.  As with the OUYA Game Controller.cfg.bak file, the InputAutoCfg.ini.bak file may not exist yet, so once you have the InputAutoCfg.ini edited properly copy, paste and rename the file just as you did with the OUYA Game Controller.cfg file.  Once you have these files set up you will be good to go.
+* Finally, edit the InputAutoCfg.ini and InputAutoCfg.ini.bak files, located at opt/retropie/configs/n64/  Map the buttons using the jstest numbers.  If you want to use the Left Shoulder button you will have to add this, as it is not included in the initial config.  As with the OUYA Game Controller.cfg.bak file, the InputAutoCfg.ini.bak file may not exist yet, so once you have the InputAutoCfg.ini edited properly you'll need to copy, paste and rename the file just as you did with the OUYA Game Controller.cfg file.  Once you have these files set up you will be good to go.
 
 Here is my InputAutoCfg.ini configuration:
 
@@ -212,4 +213,4 @@ C Button R = axis(3+)
 ; OUYA Game Controller_END 
 ```
 
-That’s it, your Ouya controller should now be good to go with most emulators as well as the N64 emulator.
+That’s it, your Ouya controller should now be good to go with most emulators as well as the N64 emulator.  Enjoy retrogaming using your newly configured Ouya wireless controller!
