@@ -2,7 +2,7 @@ With the death of Ouya as an independent entity there are a number of wireless O
 
 #Step 1 (Connecting the controller):
 
-##First access the “Bluetooth” configuration menu from the “RetroPie” Menu of EmulationStation. It can also be accessed from **RetroPie-Setup Script >> Setup >> Configure Bluetooth Devices**
+### First access the “Bluetooth” configuration menu from the “RetroPie” Menu of EmulationStation. It can also be accessed from **RetroPie-Setup Script >> Setup >> Configure Bluetooth Devices**
 ### Next press the center “U” button on your Ouya controller (the small black one, not the black and blue action button) until the two middle lights flash slowly.
 
 ### Next choose the "Register and Connect to Bluetooth Device"
