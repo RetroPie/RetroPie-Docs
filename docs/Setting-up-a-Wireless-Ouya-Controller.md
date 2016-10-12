@@ -194,22 +194,22 @@ plugin = 2
 mouse = False
 AnalogDeadzone = 4096,4096
 AnalogPeak = 32768,32768 
-C Button D = axis(4+) 
-C Button L = axis(3-) 
 Z Trig = button(0) 
-Start = button(12) 
-Y Axis = axis(1-,1+)
-DPad U = button(8) 
-C Button U = button(2) axis(4-) 
-A Button = button(1) 
-DPad D = button(9) 
-X Axis = axis(0-,0+)
+A Button = button(1)
+B Button = button(2) 
 L Trig = button(4)
 R Trig = button(5) 
-DPad R = button(11) 
-B Button = button(2) 
+Start = button(12) 
+DPad U = button(8) 
+DPad D = button(9) 
 DPad L = button(10) 
+DPad R = button(11) 
+C Button U = axis(4-) 
+C Button D = axis(4+) 
+C Button L = axis(3-)
 C Button R = axis(3+) 
+Y Axis = axis(1-,1+)
+X Axis = axis(0-,0+)
 ; OUYA Game Controller_END 
 ```
 
