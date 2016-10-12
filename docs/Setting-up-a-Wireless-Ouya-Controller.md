@@ -11,30 +11,37 @@ With the death of Ouya as an independent entity there are a number of wireless O
 
 
 * The "Searching..." screen will pop up. If your controller is not detected then try again.  It may help to press some buttons on the controller when this screen pops up.
+
 ![Searching](https://s22.postimg.org/3lqiaw8bl/4_Searching.jpg)
 
 
 * The first time that you search you may only see the MAC address of your controller displayed.  You can either select the correct MAC address or search again, usually the second time around you will see the device’s name listed (in this case, OUYA Game Controller).
+
 ![No Name](https://s22.postimg.org/g1n84n1nl/5_Search_Results_No_Name.jpg)
 
 
 * Once you have selected your device, choose the "DisplayYesNo" option to complete the registration process.
+
 ![Pairing](https://s22.postimg.org/v05mz2gpt/7_Pairing.jpg)
 
 
 * Once the pairing is complete you will see a succes message and the first light on the controller will remain steady.
+
 ![Connection Success](https://s22.postimg.org/jp2zap9up/8_Connection_Success.jpg)
 
 
 * Next choose “Set up udev Rule for Joypad” so that EmulationStation is able to “see” the controller.
+
 ![udev rule](https://s22.postimg.org/ksn3mnuht/9_Setup_Udev_Menu.jpg)
 
 
 * Choose your OUYA Game Controller from the list.  This will set up the basic rule for how RetroPie sees the controller, but will not configure it, that happens later.
+
 ![Select controller](https://s22.postimg.org/tc6hkf2u9/10_Choose_device_for_udev.jpg)
 
 
 * Next is "Configure bluetooth connect mode" this is optional, but using this can save a lot of hassle.  Set this up however you like.
+
 ![Optional Settings](https://s22.postimg.org/cqyv4rbq9/12_Optional_settings.jpg)
 ![Bluetooth connect modes](https://s22.postimg.org/7gyhr7gv5/13_Bluetooth_connect_modes.jpg)
 
@@ -56,19 +63,24 @@ The next part of the process involves configuring the controller in RetroArch.  
 * First access “RetroArch” through the “RetroPie” menu in EmulationStation.  
 
 * Next choose “Settings” and then “Configuration” and change the “Save Configuration on Exit” to “on”.  Once this is done, back out to the previous menu.
+
 ![RetroArch Settings](https://retroresolution.files.wordpress.com/2015/12/retroarch-playstation-libretro-menu-selecting-settings-menu_cropped_640w.png?w=639&h=480)
 ![RetroArch Configuration](https://delightlylinux.files.wordpress.com/2016/02/rgui7.png)
 
 * Next choose “Input”
+
 ![RetroArch Input](https://delightlylinux.files.wordpress.com/2016/02/rgui3.png)
 
 * Next choose “Input User 1 Binds”
+
 ![RetroArch User 1 Binds](https://delightlylinux.files.wordpress.com/2016/02/rgui4.png)
 
-* Next use your keyboard/extra controller to help you navigate (until the binds have been set up) and change the inputs as desired.  Make sure that the “Device Index” is set to “OUYA Game Controller (#1)”.  I also like to change the “Device Type” to “Retropad w/ Analog” and the “Analog to Digital Type” to “Left Analog” as this allows me to use the left analog stick as a d-pad.  You will need thevbutton numbers later, so make sure to write down how RetroArch numbers the buttons.  After configuring the controller make sure to also choose “Save Autoconfig” and then back out to the previous screen.
+* Next use your keyboard/extra controller to help you navigate (until the binds have been set up) and change the inputs as desired.  Make sure that the “Device Index” is set to “OUYA Game Controller (#1)”.  I also like to change the “Device Type” to “Retropad w/ Analog” and the “Analog to Digital Type” to “Left Analog” as this allows me to use the left analog stick as a d-pad.  You will need the button numbers later, so make sure to write down how RetroArch numbers the buttons.  After configuring the controller make sure to also choose “Save Autoconfig” and then back out to the previous screen.
+
 ![RetroArch Binds](http://blog.andressm.org/content/images/2014/Jul/Screenshot-2014-07-22-01-40-39.png)
 
 * Next choose “Input Hotkey Binds” I don’t do much here, but I highly suggest setting the “Save State” and “Load State” to a button.  The hotkeys are used by pressing the desired hotkey plus the enable hotkey at the same time.  The hotkeys (including the enable hotkey button) will need some further configuration, but that will happen in another area, for now it is enough to set this part up.
+
 ![RetroArch Input Hotkey Binds](https://delightlylinux.files.wordpress.com/2016/02/rgui4.png)
 
 * Finally back out to the main RetroArch menu and choose “Quit RetroArch”
