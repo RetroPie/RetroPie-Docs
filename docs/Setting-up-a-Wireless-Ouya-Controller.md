@@ -2,44 +2,44 @@ With the death of Ouya as an independent entity there are a number of wireless O
 
 #Step 1 (Connecting the controller):
 
-### First access the “Bluetooth” configuration menu from the “RetroPie” Menu of EmulationStation. It can also be accessed from **RetroPie-Setup Script >> Setup >> Configure Bluetooth Devices**
-### Next press the center “U” button on your Ouya controller (the small black one, not the black and blue action button) until the two middle lights flash slowly.
+* First access the “Bluetooth” configuration menu from the “RetroPie” Menu of EmulationStation. It can also be accessed from **RetroPie-Setup Script >> Setup >> Configure Bluetooth Devices**
+* Next press the center “U” button on your Ouya controller (the small black one, not the black and blue action button) until the two middle lights flash slowly.
 
-### Next choose the "Register and Connect to Bluetooth Device"
+* Next choose the "Register and Connect to Bluetooth Device"
 
 ![Main Bluetooth Menu](https://s22.postimg.org/lai92ik2p/3_Main_Bluetooth_Menu.jpg)
 
 
-### The "Searching..." screen will pop up. If your controller is not detected then try again.  It may help to press some buttons on the controller when this screen pops up.
+* The "Searching..." screen will pop up. If your controller is not detected then try again.  It may help to press some buttons on the controller when this screen pops up.
 ![Searching](https://s22.postimg.org/3lqiaw8bl/4_Searching.jpg)
 
 
-### The first time that you search you may only see the MAC address of your controller displayed.  You can either select the correct MAC address or search again, usually the second time around you will see the device’s name listed (in this case, OUYA Game Controller).
+* The first time that you search you may only see the MAC address of your controller displayed.  You can either select the correct MAC address or search again, usually the second time around you will see the device’s name listed (in this case, OUYA Game Controller).
 ![No Name](https://s22.postimg.org/g1n84n1nl/5_Search_Results_No_Name.jpg)
 
 
-### Once you have selected your device, choose the "DisplayYesNo" option to complete the registration process.
+* Once you have selected your device, choose the "DisplayYesNo" option to complete the registration process.
 ![Pairing](https://s22.postimg.org/v05mz2gpt/7_Pairing.jpg)
 
 
-### Once the pairing is complete you will see a succes message and the first light on the controller will remain steady.
+* Once the pairing is complete you will see a succes message and the first light on the controller will remain steady.
 ![Connection Success](https://s22.postimg.org/jp2zap9up/8_Connection_Success.jpg)
 
 
-### Next choose “Set up udev Rule for Joypad” so that EmulationStation is able to “see” the controller.
+* Next choose “Set up udev Rule for Joypad” so that EmulationStation is able to “see” the controller.
 ![udev rule](https://s22.postimg.org/ksn3mnuht/9_Setup_Udev_Menu.jpg)
 
 
-### Choose your OUYA Game Controller from the list.  This will set up the basic rule for how RetroPie sees the controller, but will not configure it, that happens later.
+* Choose your OUYA Game Controller from the list.  This will set up the basic rule for how RetroPie sees the controller, but will not configure it, that happens later.
 ![Select controller](https://s22.postimg.org/tc6hkf2u9/10_Choose_device_for_udev.jpg)
 
 
-### Next is "Configure bluetooth connect mode" this is optional, but using this can save a lot of hassle.  Set this up however you like.
+* Next is "Configure bluetooth connect mode" this is optional, but using this can save a lot of hassle.  Set this up however you like.
 ![Optional Settings](https://s22.postimg.org/cqyv4rbq9/12_Optional_settings.jpg)
 ![Bluetooth connect modes](https://s22.postimg.org/7gyhr7gv5/13_Bluetooth_connect_modes.jpg)
 
 
-### Once all of this is done, reboot the Raspberry Pi and configure the controller in EmulationStation.
+* Once all of this is done, reboot the Raspberry Pi and configure the controller in EmulationStation.
 
 
 #Step 2 (The initial configuration of the controller):
@@ -53,25 +53,25 @@ Unfortunately the initial configuration only allows the Ouya controller to work 
 
 The next part of the process involves configuring the controller in RetroArch.  Because the Ouya controller is not mapped properly by EmulationStation this is easiest if you have a keyboard or another controller connected so that you can easily navigate through the RetroArch UI.
 
-### First access “RetroArch” through the “RetroPie” menu in EmulationStation.  
+* First access “RetroArch” through the “RetroPie” menu in EmulationStation.  
 
-### Next choose “Settings” and then “Configuration” and change the “Save Configuration on Exit” to “on”.  Once this is done, back out to the previous menu.
+* Next choose “Settings” and then “Configuration” and change the “Save Configuration on Exit” to “on”.  Once this is done, back out to the previous menu.
 ![RetroArch Settings](https://retroresolution.files.wordpress.com/2015/12/retroarch-playstation-libretro-menu-selecting-settings-menu_cropped_640w.png?w=639&h=480)
 ![RetroArch Configuration](https://delightlylinux.files.wordpress.com/2016/02/rgui7.png)
 
-### Next choose “Input”
+* Next choose “Input”
 ![RetroArch Input](https://delightlylinux.files.wordpress.com/2016/02/rgui3.png)
 
-### Next choose “Input User 1 Binds”
+* Next choose “Input User 1 Binds”
 ![RetroArch User 1 Binds](https://delightlylinux.files.wordpress.com/2016/02/rgui4.png)
 
-### Next use your keyboard/extra controller to help you navigate (until the binds have been set up) and change the inputs as desired.  Make sure that the “Device Index” is set to “OUYA Game Controller (#1)”.  I also like to change the “Device Type” to “Retropad w/ Analog” and the “Analog to Digital Type” to “Left Analog” as this allows me to use the left analog stick as a d-pad.  You will need thevbutton numbers later, so make sure to write down how RetroArch numbers the buttons.  After configuring the controller make sure to also choose “Save Autoconfig” and then back out to the previous screen.
+* Next use your keyboard/extra controller to help you navigate (until the binds have been set up) and change the inputs as desired.  Make sure that the “Device Index” is set to “OUYA Game Controller (#1)”.  I also like to change the “Device Type” to “Retropad w/ Analog” and the “Analog to Digital Type” to “Left Analog” as this allows me to use the left analog stick as a d-pad.  You will need thevbutton numbers later, so make sure to write down how RetroArch numbers the buttons.  After configuring the controller make sure to also choose “Save Autoconfig” and then back out to the previous screen.
 ![RetroArch Binds](http://blog.andressm.org/content/images/2014/Jul/Screenshot-2014-07-22-01-40-39.png)
 
-### Next choose “Input Hotkey Binds” I don’t do much here, but I highly suggest setting the “Save State” and “Load State” to a button.  The hotkeys are used by pressing the desired hotkey plus the enable hotkey at the same time.  The hotkeys (including the enable hotkey button) will need some further configuration, but that will happen in another area, for now it is enough to set this part up.
+* Next choose “Input Hotkey Binds” I don’t do much here, but I highly suggest setting the “Save State” and “Load State” to a button.  The hotkeys are used by pressing the desired hotkey plus the enable hotkey at the same time.  The hotkeys (including the enable hotkey button) will need some further configuration, but that will happen in another area, for now it is enough to set this part up.
 ![RetroArch Input Hotkey Binds](https://delightlylinux.files.wordpress.com/2016/02/rgui4.png)
 
-### Finally back out to the main RetroArch menu and choose “Quit RetroArch”
+* Finally back out to the main RetroArch menu and choose “Quit RetroArch”
 
 
 #Step 3 (Editing the config files):
@@ -138,15 +138,15 @@ Once the files are edited/created and saved, pop the microSD card back into the 
 
 This is actually much easier, as the necessary files have already been set up, so there are really only a few short steps.
 
-### Make sure that the first Ouya controller is connected so that the second one will configure properly as controller #2.  Once the second controller is set up whichever one is connected first will use controller #1’s settings, regardless of whether or not it was originally set up first.
+* Make sure that the first Ouya controller is connected so that the second one will configure properly as controller #2.  Once the second controller is set up whichever one is connected first will use controller #1’s settings, regardless of whether or not it was originally set up first.
 
-### Connect the second Ouya controller just as you did the first.
+* Connect the second Ouya controller just as you did the first.
 
-### Configure the controller in EmulationStation.  This will create a new OUYAGameController.cfg, but this one does not interfere with the proper use of the controllers, so it gets to stay.
+* Configure the controller in EmulationStation.  This will create a new OUYAGameController.cfg, but this one does not interfere with the proper use of the controllers, so it gets to stay.
 
-### Head into RetroArch and configure the second controller just as you did the first, but this time do so in “Input User 2 Binds”  and make sure that the “Device Index” is set to “OUYA Game Controller (#2)”.
+* Head into RetroArch and configure the second controller just as you did the first, but this time do so in “Input User 2 Binds”  and make sure that the “Device Index” is set to “OUYA Game Controller (#2)”.
 
-### Once the second controller is configured in RetroArch you are good to go.  Keep in mind that the first controller will be the only one that will be able to exit or save/load state.
+* Once the second controller is configured in RetroArch you are good to go.  Keep in mind that the first controller will be the only one that will be able to exit or save/load state.
 
 
 
@@ -154,20 +154,20 @@ This is actually much easier, as the necessary files have already been set up, s
 
 The mupen64plus does not use RetroArch configurations, so in order to use the Ouya controller with the preinstalled N64 emulator you will need to configure this separately.
 
-### The first step will be to run jstest to see how the non-RetroArch systems number the Ouya’s buttons.  While the Ouya controller is connected head into the terminal by typing f4 on a connected keyboard, then type jstest dev/input/js0 When jstest is running, tap each button on the Ouya controller to see how they are numbered, you will need this info to edit the config files.  Press ctrl + c to exit jstest.
+* The first step will be to run jstest to see how the non-RetroArch systems number the Ouya’s buttons.  While the Ouya controller is connected head into the terminal by typing f4 on a connected keyboard, then type jstest dev/input/js0 When jstest is running, tap each button on the Ouya controller to see how they are numbered, you will need this info to edit the config files.  Press ctrl + c to exit jstest.
 
-### Next you will edit the config files.  Keep in mind that the hotkeys will generally be single buttons rather than combos, and the hotkeys will need to be otherwise unassigned buttons.
+* Next you will edit the config files.  Keep in mind that the hotkeys will generally be single buttons rather than combos, and the hotkeys will need to be otherwise unassigned buttons.
 
-### First edit the autoconf.cfg file so that the hotkeys are turned off, which will allow you to edit mupen64plus.cfg (without editing this the mupen64plus.cfg file will be overwritten by the autoconf.cfg file, which will not work for us).  The autoconf.cfg file is located at opt/retropie/configs/all/ you will need to edit mupen64plus_hotkeys = "1" change the “1” to "0".  I was unabe to edit this file on my computer, but I had no issues doing so in terminal.
+* First edit the autoconf.cfg file so that the hotkeys are turned off, which will allow you to edit mupen64plus.cfg (without editing this the mupen64plus.cfg file will be overwritten by the autoconf.cfg file, which will not work for us).  The autoconf.cfg file is located at opt/retropie/configs/all/ you will need to edit mupen64plus_hotkeys = "1" change the “1” to "0".  I was unabe to edit this file on my computer, but I had no issues doing so in terminal.
 
-### Next edit the mupen64plus.cfg file located at opt/retropie/configs/n64/ You will need to edit the Joy Mapping Stop, Joy Mapping Save State, and Joy Mapping Load State entries to your prefered buttons.  Then add these lines to the end of the "Digital button configuration mappings":
+* Next edit the mupen64plus.cfg file located at opt/retropie/configs/n64/ You will need to edit the Joy Mapping Stop, Joy Mapping Save State, and Joy Mapping Load State entries to your prefered buttons.  Then add these lines to the end of the "Digital button configuration mappings":
 
 Stop = "button(13)"
 Save State = "button(6)"
 Load State = "button(7)"
 (Obviously the particular button numbers are going to depend on what you would like to map, but the above are my personal choices).
 
-### Finally, edit the InputAutoCfg.ini and InputAutoCfg.ini.bak files, located at opt/retropie/configs/n64/  Map the buttons using the jstest numbers.  If you want to use the Left Shoulder button you will have to add this, as it is not included in the initial config.  As with the OUYA Game Controller.cfg.bak file, the InputAutoCfg.ini.bak file may not exist yet, so once you have the InputAutoCfg.ini edited properly copy, paste and rename the file just as you did with the OUYA Game Controller.cfg file.  Once you have these files set up you will be good to go.
+* Finally, edit the InputAutoCfg.ini and InputAutoCfg.ini.bak files, located at opt/retropie/configs/n64/  Map the buttons using the jstest numbers.  If you want to use the Left Shoulder button you will have to add this, as it is not included in the initial config.  As with the OUYA Game Controller.cfg.bak file, the InputAutoCfg.ini.bak file may not exist yet, so once you have the InputAutoCfg.ini edited properly copy, paste and rename the file just as you did with the OUYA Game Controller.cfg file.  Once you have these files set up you will be good to go.
 
 Here is my InputAutoCfg.ini configuration:
 
