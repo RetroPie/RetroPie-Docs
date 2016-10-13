@@ -14,9 +14,9 @@ _MAME stands for Multiple Arcade Machine Emulator. MAME can emulate thousands of
 | [AdvanceMAME .94](http://advancemame.sourceforge.net/) | arcade **or** mame-advmame | .zip | neogeo.zip | /opt/retropie/configs/mame-advmame/advmame-0.94.0.rc |
 | [AdvanceMAME](http://advancemame.sourceforge.net/) | arcade **or** mame-advmame | .zip | neogeo.zip | /opt/retropie/configs/mame-advmame/advmame-1.4.rc |
 
-## Emulators: [AdvanceMAME](http://advancemame.sourceforge.net/), [Mame4all-Pi](https://github.com/RetroPie/mame4all-pi), [lr-imame4all](https://github.com/libretro/imame4all-libretro), [lr-mame2003](https://github.com/libretro/mame2003-libretro), [lr-mame2010](https://github.com/libretro/mame2010-libretro)
+## Emulators: [AdvanceMAME](http://advancemame.sourceforge.net/), [mame4all-pi](https://github.com/RetroPie/mame4all-pi), [lr-imame4all](https://github.com/libretro/imame4all-libretro), [lr-mame2003](https://github.com/libretro/mame2003-libretro), [lr-mame2010](https://github.com/libretro/mame2010-libretro)
 
-Mame4all-pi has the best performance of them all, but a limited romset. This is the best choice for the Raspberry Pi 1/0. lr-imame4all is the libretro equivalent, with possibly weaker performance, but features all the libretro benefits (RetroArch controller configurations, shader support, save states, etc). lr-mame2003 is a good choice for Raspberry Pi 2 and up, as it has a comprehensive romset, and good performance, as well as also being libretro. The AdvMames are popular as they have a huge romset, but they're non-libretro. All other MAME cores are experimental and should normally be avoided.
+mame4all-pi has the best performance of them all, but a limited romset. This is the best choice for the Raspberry Pi 1/0. lr-imame4all is the libretro equivalent, with possibly weaker performance, but features all the libretro benefits (RetroArch controller configurations, shader support, save states, etc). lr-mame2003 is a good choice for Raspberry Pi 2 and up, as it has a comprehensive romset, and good performance, as well as also being libretro. The AdvMames are popular as they have a huge romset, but they're non-libretro. All other MAME cores are experimental and should normally be avoided.
 
 See Also: [[FinalBurn-Alpha]], [[Neo Geo]]
 
@@ -31,7 +31,7 @@ Accepted File Extensions: **.zip**
 
 ## **Arcade**
 
-To avoid having several emulationstation menus for different arcade emulators, all arcade-based ROMs can be placed in the `arcade` ROM folder, but you will have to specify which emulator each will use from the [Runcommand Menu](runcommand)
+To avoid having several EmulationStation menus for different arcade emulators, all arcade-based ROMs can be placed in the `arcade` ROM folder, but you will have to specify which emulator each will use from the [Runcommand Menu](runcommand)
 
 [**All Arcade ROMS Compatibility List**](https://docs.google.com/spreadsheets/d/1antILt7D12EWOFzyJwTfB86NceghMJKXG7CdYumuHec/edit?usp=sharing) feel free to contribute to the list.
 
@@ -82,9 +82,14 @@ Total Games Emulated: **5563** (0.94.0) **6166** (1.4) (includes clones etc..)
 
 **Please see [[lr-mame2003]] for information on how to configure specific features of this emulator.**
 
-Place your lr-Mame2003 ROMs in
+Place your lr-mame2003 ROMs in
 ```
 /home/pi/RetroPie/roms/mame-libretro
+```
+
+Place your samples in
+```
+/home/pi/RetroPie/BIOS/mame2003/samples/
 ```
 
 Romset Used: **.78**
@@ -93,7 +98,7 @@ Total Games Emulated: 4705 (includes clones etc...)
 
 [**lr-mame2003 COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1LP1MELCvcxu7TfiowF_0ZuvRVEMqlfQyTVetnOJvuJc/edit?usp=sharing)  feel free to contribute to the list.
 
-### lr-Mame2010 (EXPERIMENTAL)
+### lr-mame2010 (EXPERIMENTAL)
 
 Place your lr-Mame2010 ROMs in
 ```
