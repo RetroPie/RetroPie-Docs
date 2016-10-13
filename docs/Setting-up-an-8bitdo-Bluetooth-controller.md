@@ -27,7 +27,8 @@ If you want to run this via the command line, quit Emulation Station by pressing
 **3)** Choose the "bluetooth - Configure Bluetooth Devices" menu choice
 ![Bluetooth Menu](https://s22.postimg.org/ofy9ezdb5/2_Bluetooth_Menu.jpg)
 
-**4)** Make sure the hack option is turned "off"
+**4)** Make sure the hack option is turned "off"  
+You need to make sure your controller is running the relevant firmware for this to work correctly, the versions are shown in this wiki article.
 ![Hack Off](https://s22.postimg.org/df349yl29/2_5_Turn_hack_off.jpg)
 
 **5)** Make sure your controller is powered on and searching for a connection.
