@@ -32,6 +32,46 @@ For more information on custom RetroArch controls see: [RetroArch Configuration]
 
 ![gameboy](https://cloud.githubusercontent.com/assets/10035308/7334402/bd640072-eb4e-11e4-8251-d2bc3b876153.png)
 
+## Syncing Save Games
+
+For games which can share save games, such as Pokemon Blue and Pokemon Red, it is possible to link one save to the other.
+
+This procedure assumes you have *one* save game. If you've played both games, you'll need to delete one save, it's not possible to combine both after you've played them.
+
+Get to the commandline with F4 or [SSH](ssh), change directory to the Game Boy folder, and look at the save files:
+
+~~~
+cd RetroPie/roms/gb
+ls *.srm
+~~~
+
+You should see your existing save game, for example:
+
+~~~
+Pokemon Blue.srm
+~~~
+
+If you have two save files, such as:
+
+~~~
+Pokemon Blue.srm
+Pokemon Red.srm
+~~~
+
+Then delete the one you *don't* want to keep:
+
+~~~
+rm Pokemon Red.srm
+~~~
+
+Now create an "imaginary" save for the other game by creating a symbolic link.
+
+~~~
+ln -s "Pokemon Blue.srm" "Pokemon Red.srm"
+~~~
+
+The above example takes an existing Blue save and makes an imaginary Red save.
+
 ## How to change the color palette
 
 Open the RetroArch RGUI by pressing **Select+X** on the controller, or **Hotkey+F1** on the keyboard then navigate to:
