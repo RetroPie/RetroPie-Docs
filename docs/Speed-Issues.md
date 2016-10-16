@@ -50,7 +50,16 @@ audio_driver = alsathread
 # Enable rewinding
 rewind_enable = false
 
+# Potentially improve input lag
+video_frame_delay = 5
 ```
+
+The Video Hard Sync settings don't actually have any effect, as this is not available on the Pi, there is no benefit from having them set or unset:
+
+~~~
+video_hard_sync = true
+video_hard_sync_frames = 3
+~~~
 
 ### Resolution
 
