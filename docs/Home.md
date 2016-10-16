@@ -117,6 +117,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script. E
 ## Advanced Configuration
 * [EmulationStation](EmulationStation)
 * [EmulationStation Themes](themes)
+* [Take and Scrape Your Own Screenshots](Take-and-Scrape-Your-Own-Screenshots)
 * [Create Your Own Theme](Creating-Your-Own-EmulationStation-Theme)
 * [Configuration Editor](Configuration-Editor)
 * [RetroAchievements](RetroAchievements)
