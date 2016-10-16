@@ -27,7 +27,7 @@ A guide to build the retropie setup on Arch Linux. This guide is not all encompa
 Install [apacman](https://aur.archlinux.org/packages/apacman/)
 ```shell
 wget https://aur.archlinux.org/cgit/aur.git/snapshot/apacman.tar.gz
-tar xzf apacman
+tar xzf apacman.tar.gz
 cd apacman
 makepkg -si
 ```
