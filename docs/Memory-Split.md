@@ -4,6 +4,13 @@
 
 Also note that in order to ensure sensible memory splits across Pi models, RetroPie utilises the gpu_mem_256, gpu_mem_512 and gpu_mem_1024 overrides, which apply to Pis with that amount of memory (for example, the Pi 2 has 1024MB memory, so will use the gpu_mem_1024 setting). This setting **_overrides_** the gpu_mem setting that is described below, so if you still want to adjust the memory split, you will have to manually edit /boot/config.txt and adjust the relevant value, or delete the lines entirely.
 
+A complex display of the GPU memory usage can be viewed with:
+
+~~~
+sudo vcdbg reloc
+~~~
+
+
 ***
 
 Since the raspberry pi is a SoC the CPU and GPU share the same amount of RAM. The following option allows you to choose how much RAM you allocate to the GPU compared to the CPU.
