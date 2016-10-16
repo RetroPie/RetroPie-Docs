@@ -32,6 +32,10 @@ cd apacman
 makepkg -si
 ```
 
+If makepkg reports an error, make sure you have base-devel installed:
+```shell
+pacman -Sv base-devel
+```
 
 ## Section 2: Install retroarch:
     
