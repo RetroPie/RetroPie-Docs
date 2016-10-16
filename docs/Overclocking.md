@@ -42,7 +42,7 @@ There is no way for a silicon chip manufacturer to make a processor which runs "
 
 This is seen all throughout processor history. Intel originally tried to make the first Pentium a 66MHz CPU but they couldn't get the production reliable enough, however, the chips which didn't run at 66MHz did run just fine at 60MHz so they printed "60MHz" on those chips and sold them at a slightly lower cost than ones with "66MHz" printed on them. The Raspberry Pi 1 (700MHz) and the Raspberry Pi Zero (1GHz) use the exact same System-on-Chip, the only difference being in the ~4 years between those models, Broadcom managed to make the production process better so they could make faster chips more reliably.
 
-That said, there are some sensible starting points for Pi overclocking which are discussed further below.
+That said, there are some sensible starting points for Pi overclocking which are discussed below.
 
 ## Power Supply
 
@@ -176,7 +176,7 @@ The following speed parameters can be set:
 
 * `arm_freq` - speed of the ARM core
 * `core_freq` - speed of GPU processor core, keep it the same as `gpu_freq`
-* `gpu_freq` - speed of all GPU components (`h264`, `isp`, and `v3d`), keep it the same as `core_freq`
+* `gpu_freq` - speed of all GPU components, keep it the same as `core_freq`
 * `sdram_freq` - speed of SDRAM
 * `sdram_schmoo` - a set of SDRAM timings
 
