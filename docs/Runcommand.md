@@ -54,6 +54,9 @@ Example: if you have a cool NES related image and want to show it right before l
 
 A more general launching image (not related to a specific system) can be named as `/opt/retropie/configs/all/launching.jpg`.
 
+The Rookervik is a kind guy that made some really neat launching images for various systems (based on ES pixel theme). You can download it here:
+https://dl.dropboxusercontent.com/u/60872572/EmulationStation/Pixel/Pixel_RunCommand_Wallpapers/launching.zip
+
 
 ## runcommand-onstart and runcommand-onend scripts
 
