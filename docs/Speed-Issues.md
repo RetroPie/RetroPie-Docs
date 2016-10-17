@@ -50,7 +50,8 @@ audio_driver = alsathread
 # Enable rewinding
 rewind_enable = false
 
-# Potentially improve input lag
+# May reduce latency at cost of higher risk of stuttering
+# Probably not recommended for Pi Zero
 video_frame_delay = 5
 ```
 
