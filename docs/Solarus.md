@@ -17,3 +17,4 @@ Keyboard and Mouse
 ## Configuration
 
 Specify 640X480 video resolution in the [Runcommand Menu](runcommand) to get it to fill your screen instead of sitting at the bottom left corner of your screen.
+Or press F11 after launching a Solarus game, it will switch to fullscreen mode and the setting will be saved.
