@@ -352,6 +352,24 @@ Dat File: [FB Alpha v0.2.97.38.dat](https://drive.google.com/file/d/0B_51EcTfJiT
 
 [**lr-fba-next COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1GaqIIoiWbzKHwZ52S2xCSDQXILo81Ls1mHK6czKGAtM/edit?usp=sharing)  feel free to contribute to the list.
 
+Dat File: [FB Alpha v0.2.97.38 (ClrMame Pro XML, Arcade Only)](https://dl.dropboxusercontent.com/u/51705339/fba%20029738%20dats/FB%20Alpha%20v0.2.97.38%20(ClrMame%20Pro%20XML%2C%20Arcade%20Only).dat)
+
+Dat File: [FB Alpha v0.2.97.38 (ClrMame Pro XML, ColecoVision only)](https://dl.dropboxusercontent.com/u/51705339/fba%20029738%20dats/FB%20Alpha%20v0.2.97.38%20(ClrMame%20Pro%20XML%2C%20ColecoVision%20only).dat)
+
+Dat File: [FB Alpha v0.2.97.38 (ClrMame Pro XML, Game Gear only)](https://dl.dropboxusercontent.com/u/51705339/fba%20029738%20dats/FB%20Alpha%20v0.2.97.38%20(ClrMame%20Pro%20XML%2C%20Game%20Gear%20only).dat)
+
+Dat File: [FB Alpha v0.2.97.38 (ClrMame Pro XML, Master System only)](https://dl.dropboxusercontent.com/u/51705339/fba%20029738%20dats/FB%20Alpha%20v0.2.97.38%20(ClrMame%20Pro%20XML%2C%20Master%20System%20only).dat)
+
+Dat File: [FB Alpha v0.2.97.38 (ClrMame Pro XML, Megadrive only)](https://dl.dropboxusercontent.com/u/51705339/fba%20029738%20dats/FB%20Alpha%20v0.2.97.38%20(ClrMame%20Pro%20XML%2C%20Megadrive%20only).dat)
+
+Dat File: [FB Alpha v0.2.97.38 (ClrMame Pro XML, PC-Engine only)](https://dl.dropboxusercontent.com/u/51705339/fba%20029738%20dats/FB%20Alpha%20v0.2.97.38%20(ClrMame%20Pro%20XML%2C%20PC-Engine%20only).dat)
+
+Dat File: [FB Alpha v0.2.97.38 (ClrMame Pro XML, Sega SG-1000 only)](https://dl.dropboxusercontent.com/u/51705339/fba%20029738%20dats/FB%20Alpha%20v0.2.97.38%20(ClrMame%20Pro%20XML%2C%20Sega%20SG-1000%20only).dat)
+
+Dat File: [FB Alpha v0.2.97.38 (ClrMame Pro XML, SuprGrafx only)](https://dl.dropboxusercontent.com/u/51705339/fba%20029738%20dats/FB%20Alpha%20v0.2.97.38%20(ClrMame%20Pro%20XML%2C%20SuprGrafx%20only).dat)
+
+Dat File: [FB Alpha v0.2.97.38 (ClrMame Pro XML, TurboGrafx16 only)](https://dl.dropboxusercontent.com/u/51705339/fba%20029738%20dats/FB%20Alpha%20v0.2.97.38%20(ClrMame%20Pro%20XML%2C%20TurboGrafx16%20only).dat)
+
 ### [GnGeo 0.8](https://github.com/ymartel06/GnGeo-Pi)
 ```shell
 Roms Dir: /home/pi/RetroPie/roms/neogeo
