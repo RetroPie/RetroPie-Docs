@@ -142,6 +142,7 @@ This wiki is supposed to be created by the users of the RetroPie setup script. E
 * [Setting up a PS3 controller](Setting-up-a-PS3-controller)
 * [Setting up a PS4 controller](Setting-up-a-PS4-controller)
 * [Setting up an N64 controller](Setting-up-an-N64-controller)
+* [Ouya controller](Setting-up-a-Wireless-Ouya-Controller)
 * [Logitech controllers](Logitech-controllers)
 * [Setting up wiimotes with classic controllers](Wiimotes-with-classic-controllers)
 * [Setting up a Wii U Pro Controller (debian jessie only)](Setting-up-Wii-U-Pro-controller)
