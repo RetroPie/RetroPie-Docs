@@ -229,6 +229,8 @@ Dat File (working only, no clones): [mame2003-lr-working-no-clones](https://driv
 
 Dat File ('lite' set: working, no clones, neogeo, PlayChoice (NES multiplay), no rotary/dial/trackball/lightgun controls, no casino/multiplay/quiz/mahjong/fruit_machines/rhythm/mature): [mame2003-lr-lite](https://drive.google.com/file/d/0B2TMeZ6iEFvHY1VzcXYyT09iRGs/view?usp=sharing) (No. roms: 1615) **Please note that this DAT file is intended for an 0.78u5 ROM set and may not be an exact match for a 0.78 set or the MAME 2003 core.**
 
+Dat File: [MAME 078u5.dat](https://dl.dropboxusercontent.com/u/51705339/MAME%200.78u5%20Dats/MAME%20078u5.dat)
+
 [**lr-mame2003 COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1LP1MELCvcxu7TfiowF_0ZuvRVEMqlfQyTVetnOJvuJc/edit?usp=sharing)  feel free to contribute to the list.
 
 ### [lr-mame2010](https://github.com/libretro/mame2010-libretro)
