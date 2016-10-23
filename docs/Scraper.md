@@ -22,6 +22,7 @@ sudo /home/pi/RetroPie-Setup/retropie_setup.sh
 
 If you're roms are located on another source then the default one you can download the stand alone releases.
 [sselph's scraper releases](https://github.com/sselph/scraper/releases)
+Refer to [Sselphs Scraper Advanced Configuration](https://github.com/RetroPie/RetroPie-Setup/wiki/Scraper#sselphs-scraper-advanced-configuration)when using this method.
 
 Make sure to update to the latest version of Retropie-Setup script if youre missing any options mentioned below!
 
