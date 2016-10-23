@@ -6,6 +6,8 @@ _Cave Story (doukutsu monogatari) is a Freeware Platform-Adventure Video Game Re
 
 ## ROMs
 
+:warning: You must install the optional "lr-nxengine" package via the RetroPie setup tool, otherwise, Cave Story will not show up in the list of available games.
+
 Create a folder called `CaveStory` in
 ```
 /home/pi/RetroPie/roms/ports/
