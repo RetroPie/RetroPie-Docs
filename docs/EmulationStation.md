@@ -66,6 +66,14 @@ You've gone one screen too far ;) Press `B` to get back to the system screen and
 
 You can delete the rom folders for the systems you don't want or you can move the rom folders you dont want into a folder you create called unused.
 
+### How do I change the order of the systems in EmulationStation?
+
+The systems will appear in EmulationStation in the same order as they appear in the file `es_systems.cfg`. The order can be changed by editing this file so, first of all, copy `/etc/emulationstation/es_systems.cfg` to the `/home/pi/.emulationstation` folder.
+
+Now edit es_systems.cfg, moving systems, everything from `<system>...</system>`, to the order you are looking for. To keep things tidy, you can delete systems that you are not using.
+
+Bear in mind that, if you update any systems, this will be reflected in `/etc/emulationstation/es_systems.cfg` and you will need to manually update your copy in `/home/pi/.emulationstation`.
+
 ### My emulator won't close through my gamepad!
 
 This sometimes happens. ES does not monitor input while an emulator is running. If you want to close your emulator, you will have to do it from within the emulator. RetroArch has a binding for this and should automatically be generated when you first configure your controller in emulationstation. default to exit is `select+start`, see [Here](https://github.com/retropie/retropie-setup/wiki/RetroArch-Configuration) for more info.
