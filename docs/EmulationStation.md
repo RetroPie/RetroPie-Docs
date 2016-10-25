@@ -68,7 +68,7 @@ You can delete the rom folders for the systems you don't want or you can move th
 
 ### How do I change the order of the systems in EmulationStation?
 
-The systems will appear in EmulationStation in the same order as they appear in the file `es_systems.cfg`. The order can be changed by editing this file so, first of all, copy `/etc/emulationstation/es_systems.cfg` to the `/home/pi/.emulationstation` folder.
+The systems will appear in EmulationStation in the same order as they appear in the file `es_systems.cfg`. The order can be changed by editing this file so, first of all before you make any edits exit emulationstation by pressing f4 or exiting from the start menu. copy `/etc/emulationstation/es_systems.cfg` to the `/home/pi/.emulationstation` folder.
 
 Now edit es_systems.cfg, moving systems, everything from `<system>...</system>`, to the order you are looking for. To keep things tidy, you can delete systems that you are not using.
 
