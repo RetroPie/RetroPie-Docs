@@ -142,7 +142,7 @@ Put the controller into pairing mode with **Share** and **PS**. It should connec
 
 Once you have confirmed the controller connects, exit `ds4drv` with Ctrl+c, the controller will disconnect.
 
-(Note: Some controllers will require ds4drv but not hidraw to run. If the above command does not work, try running just 'ds4drv --led 000008' instead.)
+(Note: Some controllers will require ds4drv but not hidraw to run. If the above command does not work, try running just `ds4drv --led 000008` instead.)
 
 Now configure `ds4drv` to run at startup by editing the `rc.local` file:
 
@@ -158,7 +158,7 @@ After the `# By default this script does nothing.` line, add a new line with the
 
 (again, you can remove or change the `--led 000008` as desired)
 
-(Note: If you had to drop the --hidraw to test the connection in the previous step, then do not include it in the rc.local file either. Just '/usr/local/bin/ds4drv --led 000008')
+(Note: If you had to drop the --hidraw to test the connection in the previous step, then do not include it in the rc.local file either. Just `/usr/local/bin/ds4drv --led 000008`)
 
 The correct complete `rc.local` file will look like:
 
