@@ -60,6 +60,9 @@ If you get the error `Illegal Instruction`  when it boots, you picked the wrong 
 
 Once you have downloaded your SD card image you need to extract it using a program such as [7-Zip](http://www.7-zip.org/). You will extract the downloaded **.gz** file and the extracted file will be a **.img** file.
 
+To extract from the command line, you can type the following into a Terminal window:
+`gunzip retropie-4.X.X-rpi2_rpi3.img.gz`
+
 ### Install RetroPie Image on SD Card
 
 To install the RetroPie SD image on your MicroSD card. (You may need a MicroSD card reader to plug it into your computer) 
