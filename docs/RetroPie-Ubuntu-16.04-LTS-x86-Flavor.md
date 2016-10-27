@@ -146,4 +146,15 @@ From there there graphical client will launch and you can bind your controller i
 
 Dolphin is not a libretro emulator. Currently exit for Dolphin is hard mapped to Alt + F4 
 You can manually exit via your keyboard, and come back to emulation station.
-Need suggestions as to how to bing start select to alt+f4 only for dolphin as a solution.
+To map a button on your controller to exit Dolphin you will need to launch via the gui method above. 
+Once in the menu navigate to Hotkey Behavior.  
+Switch the device indicator to your controller
+select the exit function and map a button like select to this function.
+You will also need to configure in the graphics window to always force window on top and to hide mouse/cursor
+
+Now enter back into emulationstation mode and launch a dolphin game from the gamecube menu
+press x when the game is starting
+Select Dolphin-Gui instead of dolphin as the runcommand default emulator.
+Launch game
+You will now be able to exit back to emulationstation with that button you mapped. 
+
