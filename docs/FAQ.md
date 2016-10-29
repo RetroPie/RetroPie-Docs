@@ -64,25 +64,20 @@ in **Setup >> Raspbian Related Tools >> Install desktop environment (LXDE)**
 
 after installation it will be accessible from the ports menu of emulationstation or can be called from the command line with `startx`
 
-![lxde](https://cloud.githubusercontent.com/assets/10035308/14362890/de6ad5f2-fcbe-11e5-9a4b-07e6a529145f.PNG)
+![raspbian](https://cloud.githubusercontent.com/assets/10035308/19827420/347e1d6a-9d5e-11e6-8146-d814c8dd087b.png)
 
 You can also install it manually with:
 
-`sudo apt-get install lxde`
-
-if you want the Raspbian flavoured LXDE you can type
-
-`sudo apt-get install lxde xorg policykit-1 raspberrypi-ui-mods`
-
-For Raspbian Jessie you also need to install:
-
-`sudo apt-get install xinit`
+```
+sudo apt-get install --no-install-recommends lxde
+sudo apt-get install xorg raspberrypi-ui-mods rpi-chromium-mods
+```
 
 And then you can access it from the terminal by typing in
 
 `startx`
 
-After installation your pi will boot into the desktop environment, you can change the behaviour to boot into emulationstation by selecting the autostart option for emulationstation from option 3 of the setup script, or you can set the autologin to console option from the boot options of the raspi-config menu.
+After installation your pi will boot into the desktop environment, you can change the behaviour to boot into emulationstation by selecting the autostart option for emulationstation from the configuration/tools section of the setup script, or you can set the autologin to console option from the boot options of the raspi-config menu.
 
 Note that failing to run startx after the installation may prevent other XWindow-based applications from starting (e.g. Micropolis port), so do launch the desktop after installation to ensure that it is fully set up.
 
