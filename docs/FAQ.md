@@ -56,11 +56,11 @@ http://elinux.org/R-Pi_Troubleshooting#I_don.27t_know_the_root_password
 
 ### Where did the desktop go?
 
-The LXDE desktop environment was removed from the RetroPie image to keep it smaller.
+The PIXEL (formerly LXDE) desktop environment was removed from the RetroPie image to keep it smaller.
 
 It can easily be installed from the [RetroPie Setup Script](https://github.com/retropie/retropie-setup/wiki/Updating-RetroPie)
 
-in **Setup >> Raspbian Related Tools >> Install desktop environment (LXDE)**
+in **Setup >> Raspbian Related Tools >> Install Pixel Desktop environment**
 
 after installation it will be accessible from the ports menu of emulationstation or can be called from the command line with `startx`
 
