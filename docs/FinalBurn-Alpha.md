@@ -6,13 +6,13 @@ _Final Burn Alpha is a Multiple Arcade Emulator most popular for emulating Neo-G
 
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
-| [lr-fba-next](https://github.com/libretro/libretro-fba) | arcade **or** fba **or** neogeo  | .zip | neogeo.zip | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/fba/retroarch.cfg, **or** /opt/retropie/configs/neogeo/retroarch.cfg |
+| [lr-fbalpha](https://github.com/libretro/fbalpha) | arcade **or** fba **or** neogeo  | .zip | neogeo.zip | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/fba/retroarch.cfg, **or** /opt/retropie/configs/neogeo/retroarch.cfg |
 | [lr-fba](https://github.com/libretro/fba-libretro) | arcade **or** fba **or** neogeo  | .zip | neogeo.zip | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/fba/retroarch.cfg, **or** /opt/retropie/configs/neogeo/retroarch.cfg |
 | [PiFBA](https://github.com/RetroPie/pifba) | arcade **or** fba **or** neogeo  | .zip | neogeo.zip | /opt/retropie/emulators/pifba/fba2x.cfg **or** /opt/retropie/configs/fba/fba2x.cfg |
 
-## Emulators: [PiFBA](https://github.com/RetroPie/pifba), [lr-fba](https://github.com/libretro/fba-libretro), [lr-fba-next](https://github.com/libretro/libretro-fba.git)
+## Emulators: [PiFBA](https://github.com/RetroPie/pifba), [lr-fba](https://github.com/libretro/fba-libretro), [lr-fbalpha](https://github.com/libretro/fbalpha)
 
-lr-fba-next is favoured as it is mature, runs the current FBA romset, and enjoys all the usual libretro/RetroArch advantages of automatic controller configuration, shaders, etc. PiFBA is an earlier romset, not libretro/RetroArch, but still can be useful for Raspberry Pi 1/0 users as it is heavily optimised.
+lr-fbalpha is favoured as it is mature, runs the current FBA romset, and enjoys all the usual libretro/RetroArch advantages of automatic controller configuration, shaders, etc. PiFBA is an earlier romset, not libretro/RetroArch, but still can be useful for Raspberry Pi 1/0 users as it is heavily optimised.
 
 ## ROMS
 
@@ -21,15 +21,15 @@ Accepted File Extensions: **.zip**
 **For information on how to rebuild newer romsets to be compatible with these emulators see this post:**
 **[Managing ROMs](https://github.com/petrockblog/RetroPie-Setup/wiki/Managing-ROMs)**
 
-### lr-fba-next
+### lr-fbalpha
 
-**Please see [lr-fba-next](https://github.com/RetroPie/RetroPie-Setup/wiki/lr-fba-next) for information on how to configure specfic features of this emulator.**
+**Please see [[lr-fbalpha]] for information on how to configure specfic features of this emulator.**
 
 Romset Used: FBA **0.2.97.38** which is based on MAME 0.173 (April 2016)
 
 Total Games Emulated: [4150](https://raw.githubusercontent.com/libretro/libretro-fba/master/gamelist.txt) (includes clones etc..)
  
-Place your lr-fba-next ROMs in
+Place your lr-fbalpha ROMs in
 ```shell
 /home/pi/RetroPie/roms/fba
 ```
@@ -39,7 +39,7 @@ you can also place your ROMs in
 /home/pi/RetroPie/roms/neogeo
 ```
 
-### [**lr-fba-next COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1GaqIIoiWbzKHwZ52S2xCSDQXILo81Ls1mHK6czKGAtM/edit?usp=sharing)  feel free to contribute to the list.
+### [**lr-fbalpha COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1GaqIIoiWbzKHwZ52S2xCSDQXILo81Ls1mHK6czKGAtM/edit?usp=sharing)  feel free to contribute to the list.
 
 ### PiFBA 
 
@@ -94,8 +94,8 @@ For more information relating to the BIOS contents, MVS/AES modes, and Universe 
 
 ## Controls
 As there are 2 emulators there are two sets of controls.
-### lr-fba and lr-fba-next Controls
-lr-fba and lr-fba-next utilise RetroArch configs.
+### lr-fba and lr-fbalpha Controls
+lr-fba and lr-fbalpha utilise RetroArch configs.
 
 Add custom retroarch controls to the retroarch.cfg file in
 ```shell
