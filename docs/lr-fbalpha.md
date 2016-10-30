@@ -39,4 +39,4 @@ Instructions on how to use the UNIBIOS can be found here: [[Neo-Geo#using-the-un
 
 ## Feature requests
 
-Please use the [forum](https://retropie.org.uk/forum) for all support issues, but feature requests can be made on the [GitHub page](https://github.com/libretro/libretro-fba).
+Please use the [forum](https://retropie.org.uk/forum) for all support issues, but feature requests can be made on the [GitHub page](https://github.com/libretro/fbalpha).
