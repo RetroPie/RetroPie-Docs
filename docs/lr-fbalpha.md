@@ -8,9 +8,7 @@ By default, if you hold the Start button for a few seconds, the system menu appe
 
 ## Dipswitches
 
-lr-fbalpha exposes all the dipswitch options of any given game to libretro, allowing you to adjust them via the RetroArch GUI. Hold hotkey (by default, Select) & X (the top button) to access the GUI, and then **Quick Menu** > **Options**. You should be presented by a menu like: 
-
-![](http://www.zimagez.com/full/aaa69d795c1a5e2d817defaa1cf6b75424d4e11b61c059d71a69dbf0077a5a4ba365eb42e08b34d8.php)
+lr-fbalpha exposes all the dipswitch options of any given game to libretro, allowing you to adjust them via the RetroArch GUI. Hold hotkey (by default, Select) & X (the top button) to access the GUI, and then **Quick Menu** > **Options**. You should be presented by a menu where you can enable/disable the various dipswitches.
 
 The dipswitches available will vary from game-to-game. Any changes made will be stored in the `retroarch-core-options.cfg` file, found in:
 ```
