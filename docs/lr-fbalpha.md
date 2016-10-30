@@ -17,6 +17,19 @@ The dipswitches available will vary from game-to-game. Any changes made will be 
 /opt/retropie/configs/all/
 ```
 
+## High scores
+
+lr-fbalpha will attempt to keep a permanent record of any high scores you set, but some games will not save these by default. There is a supplementary file that you can transfer to your Pi that will enable high score saving for more games, called `hiscore.dat`. This file can be downloaded from http://highscore.mameworld.info/ - you need the one labeled "**old format hiscore.dat (pre mame v0174)**". Transfer it to:
+```
+/home/pi/RetroPie/roms/fba/
+```
+or, if you're using the arcade folder:
+```
+/home/pi/RetroPie/roms/arcade/
+```
+
+When high scores are saved, they are kept in the same directory as `gamename.hi` files.
+
 ## Button rebinding
 
 lr-fbalpha supports a useful feature where you can rebind the keys for individual games, without impacting the internal libretro hotkey macros (select & R = quicksave, etc). These rebinding options are accessed and saved in the same way as the dipswitches above.
