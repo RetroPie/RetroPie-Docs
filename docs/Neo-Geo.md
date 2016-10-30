@@ -6,14 +6,14 @@ _The Neo Geo is a cartridge-based arcade system board and home video game consol
 
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
-| [lr-fba-next](https://github.com/libretro/libretro-fba) | arcade **or** fba **or** neogeo  | .zip | neogeo.zip | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/fba/retroarch.cfg, **or** /opt/retropie/configs/neogeo/retroarch.cfg |
+| [lr-fbalpha](https://github.com/libretro/fbalpha) | arcade **or** fba **or** neogeo  | .zip | neogeo.zip | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/fba/retroarch.cfg, **or** /opt/retropie/configs/neogeo/retroarch.cfg |
 | [lr-fba](https://github.com/libretro/fba-libretro) | arcade **or** fba **or** neogeo  | .zip | neogeo.zip | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/fba/retroarch.cfg, **or** /opt/retropie/configs/neogeo/retroarch.cfg |
 | [PiFBA](https://github.com/RetroPie/pifba) | arcade **or** fba **or** neogeo  | .zip | neogeo.zip | /opt/retropie/emulators/pifba/fba2x.cfg **or** /opt/retropie/configs/fba/fba2x.cfg |
 | [GnGeo-Pi](https://github.com/ymartel06/GnGeo-Pi) | arcade **or** neogeo | .zip | neogeo.zip | /opt/retropie/configs/neogeo/gngeorc |
 
-## Emulators: [GnGeo-Pi](https://github.com/ymartel06/GnGeo-Pi), [PiFBA](https://github.com/RetroPie/pifba), [lr-fba](https://github.com/libretro/fba-libretro), [lr-fba-next](https://github.com/libretro/libretro-fba)
+## Emulators: [GnGeo-Pi](https://github.com/ymartel06/GnGeo-Pi), [PiFBA](https://github.com/RetroPie/pifba), [lr-fba](https://github.com/libretro/fba-libretro), [lr-fbalpha](https://github.com/libretro/fbalpha)
 
-For Neo Geo games lr-fba-next is the default as it features the libretro control system, shaders, and all other libretro advantages. Since lr-fba-next is an FBA emulator, please also refer to [[FinalBurn-Alpha]] and specifically [[lr-fba-next]] for configuration information.
+For Neo Geo games lr-fbalpha is the default as it features the libretro control system, shaders, and all other libretro advantages. Since lr-fbalpha is an FBA emulator, please also refer to [[FinalBurn-Alpha]] and specifically [[lr-fbalpha]] for configuration information.
 
 However, those on Raspberry Pi 1s may prefer the standalone emulator PiFBA, which will have better performance on limited hardware. 
 
@@ -102,7 +102,7 @@ neopen.sp1        # NeoOpen BIOS v0.1 beta
 
 ## Using the Universe BIOS (UNIBIOS)
 
-Instructions on how to install the UNIBIOS on lr-fba-next can be found here: [[lr-fba-next#neo-geo-unibios]]
+Instructions on how to install the UNIBIOS on lr-fbalpha can be found here: [[lr-fbalpha#neo-geo-unibios]]
 
 The Unibios can be used as documented on the official page: <http://unibios.free.fr/howitworks.html>
 
@@ -118,9 +118,9 @@ BIOS settings will persist after quitting FBA, launching another Neo-Geo game, o
 
 ## Controls
 
-### lr-fba and lr-fba-next
+### lr-fba and lr-fbalpha
 
-lr-fba and lr-fba-next utilise RetroArch configs.
+lr-fba and lr-fbalpha utilise RetroArch configs.
 
 Add custom RetrAarch controls to the `retroarch.cfg` file in
 
