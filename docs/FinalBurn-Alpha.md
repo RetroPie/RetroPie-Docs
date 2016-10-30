@@ -23,11 +23,11 @@ Accepted File Extensions: **.zip**
 
 ### lr-fbalpha
 
-**Please see [[lr-fbalpha]] for information on how to configure specfic features of this emulator.**
+**Please see [[lr-fbalpha]] for information on how to configure specific features of this emulator.**
 
-Romset Used: FBA **0.2.97.38** which is based on MAME 0.173 (April 2016)
+Romset Used: FBA **0.2.97.39** which is based on MAME 0.175
 
-Total Games Emulated: [4150](https://raw.githubusercontent.com/libretro/libretro-fba/master/gamelist.txt) (includes clones etc..)
+Total Games Emulated: [8982](https://raw.githubusercontent.com/libretro/fbalpha/master/gamelist.txt) (includes clones etc..)
  
 Place your lr-fbalpha ROMs in
 ```shell
