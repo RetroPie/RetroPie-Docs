@@ -12,7 +12,7 @@ The following chart is a quick reference for all the arcade emulators in RetroPi
 | [advmame-1.4](https://github.com/RetroPie/RetroPie-Setup/wiki/MAME) | 0.106 | 6166 | [.DAT](https://drive.google.com/file/d/0B2TMeZ6iEFvHMEZnb1RxQWNmdHM/view?usp=sharing)| [List](https://docs.google.com/spreadsheets/d/1RapyxChe2BMOfbX-FsCup9SXGxvS1WmXAofwaTJtmxc/edit?usp=sharing) |
 | [pifba](https://github.com/RetroPie/RetroPie-Setup/wiki/FinalBurn-Alpha) | 0.114 (fba 0.2.96.71) | 684 | [.DAT](https://drive.google.com/file/d/0B2TMeZ6iEFvHaHUta2dQYk1HTGM/view?usp=sharing)| [List](https://docs.google.com/spreadsheets/d/1OZioLrz16ptaNbjQUDP5hhVzQDTOTn9Nz46Hbj3-06k/edit?usp=sharing) |
 | [lr-fba](https://github.com/RetroPie/RetroPie-Setup/wiki/FinalBurn-Alpha) | 0.154 (fba 0.2.97.30) | [3369](https://raw.githubusercontent.com/libretro/fba-libretro/master/svn-current/trunk/gamelist.txt) | [.DAT](https://drive.google.com/file/d/0B2TMeZ6iEFvHcF96YmdjaWlEdXM/view?usp=sharing)| [List](https://docs.google.com/spreadsheets/d/1rWO7Lm0bTGNpak6J-CPzde0GNIDP0NHDoQdJ6iWosfA/edit?usp=sharing) |
-| [lr-fba-next](https://github.com/RetroPie/RetroPie-Setup/wiki/FinalBurn-Alpha) | 0.173 (fba 0.2.97.38) | [4150](https://raw.githubusercontent.com/libretro/fbalpha/b55216c1582313bb770a7d8d2032acd384537387/gamelist.txt) | [.DAT](https://drive.google.com/file/d/0B2TMeZ6iEFvHamozOVVZQkpUVHM/view?usp=sharing)| [List](https://docs.google.com/spreadsheets/d/1GaqIIoiWbzKHwZ52S2xCSDQXILo81Ls1mHK6czKGAtM/edit?usp=sharing) |
+| [lr-fbalpha](https://github.com/RetroPie/RetroPie-Setup/wiki/FinalBurn-Alpha) | 0.175 (fba 0.2.97.39) | [4150](https://raw.githubusercontent.com/libretro/fbalpha/b55216c1582313bb770a7d8d2032acd384537387/gamelist.txt) | [.DAT](https://drive.google.com/file/d/0B2TMeZ6iEFvHamozOVVZQkpUVHM/view?usp=sharing)| [List](https://docs.google.com/spreadsheets/d/1GaqIIoiWbzKHwZ52S2xCSDQXILo81Ls1mHK6czKGAtM/edit?usp=sharing) |
 | [gngeopi](https://github.com/RetroPie/RetroPie-Setup/wiki/Neo-Geo) | 0.138 | 203 | [.DAT](https://drive.google.com/file/d/0B2TMeZ6iEFvHZVVCYmVtaUM1VlU/view?usp=sharing)| [List](https://docs.google.com/spreadsheets/d/1A_a_9t14uzDUMrrO0RgLDwiVUiycmclcPIs6cU6Iox8/edit?usp=sharing) |
 
 For further details, see the system-specific wiki pages for [MAME](https://github.com/petrockblog/RetroPie-Setup/wiki/MAME) and [FBA](https://github.com/petrockblog/RetroPie-Setup/wiki/FinalBurn-Alpha).
@@ -27,7 +27,7 @@ RetroPie includes forks of the [MAME](http://mamedev.org/) emulator that work we
 
 The recommended emulators are:
 
-* Pi 2 and Pi 3: `lr-mame2003` and `lr-fba-next`
+* Pi 2 and Pi 3: `lr-mame2003` and `lr-fbalpha`
 * Pi 1 and Pi Zero: `mame4all` (the native emulator, not the RetroArch core)
 
 If the game you wish to play is supported by different emulator versions, try each version, as one may perform better than another. Earlier versions usually run faster than later versions (but not always). Earlier versions also support less games than later versions. Native emulators like mame4all and AdvMame may perform better than RetroArch cores but cannot take advantage of global RetroArch configurations so must be configured individually. Generally most 2D games work well on the Pi 3, but most 3D and vector games do not run at playable speed or at all.
@@ -334,13 +334,13 @@ Neo Geo Only .Dat File: [fba-lr-neogeo](https://drive.google.com/file/d/0B2TMeZ6
 
 [**lr-fba COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1rWO7Lm0bTGNpak6J-CPzde0GNIDP0NHDoQdJ6iWosfA/edit?usp=sharing)  feel free to contribute to the list.
 
-### [lr-fba-next](https://github.com/libretro/libretro-fba) 
+### [lr-fbalpha](https://github.com/libretro/fbalpha) 
 ```shell
 Roms Dir: /home/pi/RetroPie/roms/fba
-Binary Dir: /opt/retropie/libretrocores/lr-fba-next
+Binary Dir: /opt/retropie/libretrocores/lr-fbalpha
 Config Dir: /opt/retropie/configs/fba/retroarch.cfg
 ```
-MAME Version: **FBA 0.2.97.38** which is based on MAME 0.173 (April 2016)
+MAME Version: **FBA 0.2.97.39** which is based on MAME 0.175
 
 Romsets emulated: 4150 (includes clones etc..)
 
@@ -370,7 +370,7 @@ Dat File: [FB Alpha v0.2.97.38 (ClrMame Pro XML, SuprGrafx only)](https://dl.dro
 
 Dat File: [FB Alpha v0.2.97.38 (ClrMame Pro XML, TurboGrafx16 only)](https://dl.dropboxusercontent.com/u/51705339/fba%20029738%20dats/FB%20Alpha%20v0.2.97.38%20(ClrMame%20Pro%20XML%2C%20TurboGrafx16%20only).dat)
 
-[**lr-fba-next COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1GaqIIoiWbzKHwZ52S2xCSDQXILo81Ls1mHK6czKGAtM/edit?usp=sharing)  feel free to contribute to the list.
+[**lr-fbalpha COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1GaqIIoiWbzKHwZ52S2xCSDQXILo81Ls1mHK6czKGAtM/edit?usp=sharing)  feel free to contribute to the list.
 
 ### [GnGeo 0.8](https://github.com/ymartel06/GnGeo-Pi)
 ```shell
