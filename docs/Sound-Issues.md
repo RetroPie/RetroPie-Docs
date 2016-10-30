@@ -75,6 +75,7 @@ To remove hiss or static or white noise when using the 3.5mm headphone jack:
 1. Run at the command line: `sudo nano /boot/config.txt` and insert at the bottom of the file: `disable_audio_dither=1`
 1. turn up Retropie volume to 100% in the settings menu in the program.
 1. get an inline volume control: http://www.amazon.com/Koss-155954-VC20-Volume-Control/dp/B00001P4XH/ref=pd_bxgy_23_img_y
+1. Another option is to set audio_pwm_mode=2 in the same config - this is a new audio driver that should significantly improve the sound quality - see https://www.raspberrypi.org/forums/viewtopic.php?f=29&t=136445
 
 ## USB Audio
 
