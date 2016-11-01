@@ -20,7 +20,7 @@ sudo /home/pi/RetroPie-Setup/retropie_setup.sh
 
 **Note that if you are remotely running this script you must be logged in with pi otherwise it will confuse the scraper. It may take some time for the xml files to build. This will also only work if your roms are located in the local roms folder and not on an external device.**
 
-If you're roms are located on another source then the default one you can download the stand alone releases.
+If your roms are located on another source then the default one you can download the stand alone releases.
 [sselph's scraper releases](https://github.com/sselph/scraper/releases)
 Please refer to [Sselphs Scraper Advanced Configuration](https://github.com/RetroPie/RetroPie-Setup/wiki/Scraper#sselphs-scraper-advanced-configuration) when using this method.
 
