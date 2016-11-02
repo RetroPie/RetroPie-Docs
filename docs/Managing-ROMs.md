@@ -12,7 +12,7 @@ The following chart is a quick reference for all the arcade emulators in RetroPi
 | [advmame-1.4](https://github.com/RetroPie/RetroPie-Setup/wiki/MAME) | 0.106 | 6166 | [.DAT](https://drive.google.com/file/d/0B2TMeZ6iEFvHMEZnb1RxQWNmdHM/view?usp=sharing)| [List](https://docs.google.com/spreadsheets/d/1RapyxChe2BMOfbX-FsCup9SXGxvS1WmXAofwaTJtmxc/edit?usp=sharing) |
 | [pifba](https://github.com/RetroPie/RetroPie-Setup/wiki/FinalBurn-Alpha) | 0.114 (fba 0.2.96.71) | 684 | [.DAT](https://drive.google.com/file/d/0B2TMeZ6iEFvHaHUta2dQYk1HTGM/view?usp=sharing)| [List](https://docs.google.com/spreadsheets/d/1OZioLrz16ptaNbjQUDP5hhVzQDTOTn9Nz46Hbj3-06k/edit?usp=sharing) |
 | [lr-fba](https://github.com/RetroPie/RetroPie-Setup/wiki/FinalBurn-Alpha) | 0.154 (fba 0.2.97.30) | [3369](https://raw.githubusercontent.com/libretro/fba-libretro/master/svn-current/trunk/gamelist.txt) | [.DAT](https://drive.google.com/file/d/0B2TMeZ6iEFvHcF96YmdjaWlEdXM/view?usp=sharing)| [List](https://docs.google.com/spreadsheets/d/1rWO7Lm0bTGNpak6J-CPzde0GNIDP0NHDoQdJ6iWosfA/edit?usp=sharing) |
-| [lr-fbalpha](https://github.com/RetroPie/RetroPie-Setup/wiki/FinalBurn-Alpha) | 0.175 (fba 0.2.97.39) | [4150](https://raw.githubusercontent.com/libretro/fbalpha/b55216c1582313bb770a7d8d2032acd384537387/gamelist.txt) | [.DAT](https://drive.google.com/file/d/0B2TMeZ6iEFvHamozOVVZQkpUVHM/view?usp=sharing)| [List](https://docs.google.com/spreadsheets/d/1GaqIIoiWbzKHwZ52S2xCSDQXILo81Ls1mHK6czKGAtM/edit?usp=sharing) |
+| [lr-fbalpha](https://github.com/RetroPie/RetroPie-Setup/wiki/FinalBurn-Alpha) | 0.175 (fba 0.2.97.39) | [4374](https://raw.githubusercontent.com/libretro/fbalpha/master/gamelist.txt) | [.DAT](https://github.com/libretro/fbalpha/blob/master/dats/FB%20Alpha%20v0.2.97.39%20(ClrMame%20Pro%20XML).dat.zip?raw=true)| [List](https://docs.google.com/spreadsheets/d/1GaqIIoiWbzKHwZ52S2xCSDQXILo81Ls1mHK6czKGAtM/edit?usp=sharing) |
 | [gngeopi](https://github.com/RetroPie/RetroPie-Setup/wiki/Neo-Geo) | 0.138 | 203 | [.DAT](https://drive.google.com/file/d/0B2TMeZ6iEFvHZVVCYmVtaUM1VlU/view?usp=sharing)| [List](https://docs.google.com/spreadsheets/d/1A_a_9t14uzDUMrrO0RgLDwiVUiycmclcPIs6cU6Iox8/edit?usp=sharing) |
 
 For further details, see the system-specific wiki pages for [MAME](https://github.com/petrockblog/RetroPie-Setup/wiki/MAME) and [FBA](https://github.com/petrockblog/RetroPie-Setup/wiki/FinalBurn-Alpha).
@@ -23,12 +23,12 @@ Arcade ROMs are tied to the version of the arcade emulator, because the definiti
 
 For example, MAME2003 is based off the MAME 0.78 source code, so you must use the MAME 0.78 ROM set with MAME2003. If you use ROMs which are from an earlier or later MAME version, such as 0.50 or 0.100 or 0.173, then those ROMs probably will not work with MAME2003 because that other version's definition of the correct ROM is different from 0.78's definition of the correct ROM.
 
-RetroPie includes forks of the [MAME](http://mamedev.org/) emulator that work well on the Raspberry Pi hardware, but are based on older versions of the emulator code. The [Final Burn Alpha](http://www.fbalpha.com/) emulator usually performs better than MAME but supports less games, a recent and earlier FBA are available in RetroPie.
+RetroPie includes forks of the [MAME](http://mamedev.org/) emulator that work well on the Raspberry Pi hardware, but are based on older versions of the emulator code. The [Final Burn Alpha](http://www.fbalpha.com/) emulator usually performs better than MAME but supports less games, a current and earlier FBA are available in RetroPie.
 
 The recommended emulators are:
 
 * Pi 2 and Pi 3: `lr-mame2003` and `lr-fbalpha`
-* Pi 1 and Pi Zero: `mame4all` (the native emulator, not the RetroArch core)
+* Pi 1 and Pi Zero: `mame4all`  (the native emulator, not the RetroArch core) and `pi-fba`
 
 If the game you wish to play is supported by different emulator versions, try each version, as one may perform better than another. Earlier versions usually run faster than later versions (but not always). Earlier versions also support less games than later versions. Native emulators like mame4all and AdvMame may perform better than RetroArch cores but cannot take advantage of global RetroArch configurations so must be configured individually. Generally most 2D games work well on the Pi 3, but most 3D and vector games do not run at playable speed or at all.
 
@@ -342,33 +342,33 @@ Config Dir: /opt/retropie/configs/fba/retroarch.cfg
 ```
 MAME Version: **FBA 0.2.97.39** which is based on MAME 0.175
 
-Romsets emulated: 4150 (includes clones etc..)
+Romsets emulated: 4375 (includes clones etc..)
 
-Active Sets 4150/4150
-* Parents 877/877
-* Clones 2698/2698
-* Others 569/569
+Active Sets 4375/4375
+* Parents 923/923
+* Clones 2850/2850
+* Others 596/596
 * BIOS 6/6
 
-Dat File: [FB Alpha v0.2.97.38.dat](https://drive.google.com/file/d/0B_51EcTfJiTqWHdtUmtBZ01JSTg/view)
+Dat File: [FB Alpha v0.2.97.38 (ClrMame Pro XML, Arcade Only)](https://github.com/libretro/fbalpha/blob/master/dats/FB%20Alpha%20v0.2.97.39%20(ClrMame%20Pro%20XML).dat.zip?raw=true)
 
-Dat File: [FB Alpha v0.2.97.38 (ClrMame Pro XML, Arcade Only)](https://dl.dropboxusercontent.com/u/51705339/fba%20029738%20dats/FB%20Alpha%20v0.2.97.38%20(ClrMame%20Pro%20XML%2C%20Arcade%20Only).dat)
+Dat File: [FB Alpha v0.2.97.39 (ClrMame Pro XML, ColecoVision only)](https://github.com/libretro/fbalpha/blob/master/dats/FB%20Alpha%20v0.2.97.39%20(ClrMame%20Pro%20XML%2C%20ColecoVision%20only).dat.zip?raw=true)
 
-Dat File: [FB Alpha v0.2.97.38 (ClrMame Pro XML, ColecoVision only)](https://dl.dropboxusercontent.com/u/51705339/fba%20029738%20dats/FB%20Alpha%20v0.2.97.38%20(ClrMame%20Pro%20XML%2C%20ColecoVision%20only).dat)
+Dat File: [FB Alpha v0.2.97.39 (ClrMame Pro XML, Game Gear only)](https://github.com/libretro/fbalpha/blob/master/dats/FB%20Alpha%20v0.2.97.39%20(ClrMame%20Pro%20XML%2C%20Game%20Gear%20only).dat.zip?raw=true)
 
-Dat File: [FB Alpha v0.2.97.38 (ClrMame Pro XML, Game Gear only)](https://dl.dropboxusercontent.com/u/51705339/fba%20029738%20dats/FB%20Alpha%20v0.2.97.38%20(ClrMame%20Pro%20XML%2C%20Game%20Gear%20only).dat)
+Dat File: [FB Alpha v0.2.97.39 (ClrMame Pro XML, MSX 1 only)](https://github.com/libretro/fbalpha/blob/master/dats/FB%20Alpha%20v0.2.97.39%20(ClrMame%20Pro%20XML%2C%20MSX%201%20Games%20only).dat.zip?raw=true)
 
-Dat File: [FB Alpha v0.2.97.38 (ClrMame Pro XML, Master System only)](https://dl.dropboxusercontent.com/u/51705339/fba%20029738%20dats/FB%20Alpha%20v0.2.97.38%20(ClrMame%20Pro%20XML%2C%20Master%20System%20only).dat)
+Dat File: [FB Alpha v0.2.97.39 (ClrMame Pro XML, Master System only)](https://github.com/libretro/fbalpha/blob/master/dats/FB%20Alpha%20v0.2.97.39%20(ClrMame%20Pro%20XML%2C%20Master%20System%20only).dat.zip?raw=true)
 
-Dat File: [FB Alpha v0.2.97.38 (ClrMame Pro XML, Megadrive only)](https://dl.dropboxusercontent.com/u/51705339/fba%20029738%20dats/FB%20Alpha%20v0.2.97.38%20(ClrMame%20Pro%20XML%2C%20Megadrive%20only).dat)
+Dat File: [FB Alpha v0.2.97.39 (ClrMame Pro XML, Megadrive only)](https://github.com/libretro/fbalpha/blob/master/dats/FB%20Alpha%20v0.2.97.39%20(ClrMame%20Pro%20XML%2C%20Megadrive%20only).dat.zip?raw=true)
 
-Dat File: [FB Alpha v0.2.97.38 (ClrMame Pro XML, PC-Engine only)](https://dl.dropboxusercontent.com/u/51705339/fba%20029738%20dats/FB%20Alpha%20v0.2.97.38%20(ClrMame%20Pro%20XML%2C%20PC-Engine%20only).dat)
+Dat File: [FB Alpha v0.2.97.39 (ClrMame Pro XML, PC-Engine only)](https://github.com/libretro/fbalpha/blob/master/dats/FB%20Alpha%20v0.2.97.39%20(ClrMame%20Pro%20XML%2C%20PC-Engine%20only).dat.zip?raw=true)
 
-Dat File: [FB Alpha v0.2.97.38 (ClrMame Pro XML, Sega SG-1000 only)](https://dl.dropboxusercontent.com/u/51705339/fba%20029738%20dats/FB%20Alpha%20v0.2.97.38%20(ClrMame%20Pro%20XML%2C%20Sega%20SG-1000%20only).dat)
+Dat File: [FB Alpha v0.2.97.39 (ClrMame Pro XML, Sega SG-1000 only)](https://github.com/libretro/fbalpha/blob/master/dats/FB%20Alpha%20v0.2.97.39%20(ClrMame%20Pro%20XML%2C%20Sega%20SG-1000%20only).dat.zip?raw=true)
 
-Dat File: [FB Alpha v0.2.97.38 (ClrMame Pro XML, SuprGrafx only)](https://dl.dropboxusercontent.com/u/51705339/fba%20029738%20dats/FB%20Alpha%20v0.2.97.38%20(ClrMame%20Pro%20XML%2C%20SuprGrafx%20only).dat)
+Dat File: [FB Alpha v0.2.97.39 (ClrMame Pro XML, SuprGrafx only)](https://github.com/libretro/fbalpha/blob/master/dats/FB%20Alpha%20v0.2.97.39%20(ClrMame%20Pro%20XML%2C%20SuprGrafx%20only).dat.zip?raw=true)
 
-Dat File: [FB Alpha v0.2.97.38 (ClrMame Pro XML, TurboGrafx16 only)](https://dl.dropboxusercontent.com/u/51705339/fba%20029738%20dats/FB%20Alpha%20v0.2.97.38%20(ClrMame%20Pro%20XML%2C%20TurboGrafx16%20only).dat)
+Dat File: [FB Alpha v0.2.97.39 (ClrMame Pro XML, TurboGrafx16 only)](https://github.com/libretro/fbalpha/blob/master/dats/FB%20Alpha%20v0.2.97.39%20(ClrMame%20Pro%20XML%2C%20TurboGrafx16%20only).dat.zip?raw=true)
 
 [**lr-fbalpha COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1GaqIIoiWbzKHwZ52S2xCSDQXILo81Ls1mHK6czKGAtM/edit?usp=sharing)  feel free to contribute to the list.
 
