@@ -2,6 +2,41 @@
 
 This page is a list of all of the changelogs for each version of RetroPie. For a complete list of all commits to the source code see [here:](https://github.com/petrockblog/RetroPie-Setup/commits/master)  
 
+### Version 4.1: (November 5, 2016)
+Changes since 4.0.2:
+* Updated RetroArch and many libretro cores to the latest versions.
+* Some libretro packages have been renamed to match the upstream core names:
+ * lr-fba to lr-fbalpha2012
+ * lr-fba-next to lr-fbalpha
+ * lr-pocketsnes to lr-snes9x2002
+ * lr-catsfc to lr-snes9x2005
+ * lr-snes9x-next to lr-snes9x2010
+* Updated Vice (C64 emulator) to the latest version.
+* Fixed PPSSPP building on the RPI and updated it to the latest version.
+* lr-fba-next updated to fbalpha v0.2.97.39 including fixes for Irem hardware on arm (rtype / rtype 2 etc)
+* WiFi configuration - added ability to import Wifi ssid/psk from /boot/wifikeyfile.txt for set-up without a keyboard.
+* Updated Fuse (Spectrum emulator) to v1.3.0
+* Updated Zesarux (Spectrum / CPC emulator) to the latest version.
+* Include lr-glupen64 by default on image (moved from optional to main).
+* Added darkplaces-quake to optional packages. When installing/update the Quake emulators, launch scripts for any installed mission packs will be created.
+* Build ResidualVM with SDL2 + opengles support.
+* Added steam controller driver from https://github.com/ynsta/steamcontroller
+* Added mk_arcade_joystick_rpi driver from https://github.com/recalbox/mk_arcade_joystick_rpi
+* Fixed build issues on uae4arm, and kickstart removal on upgrade of uae4arm/uae4all.
+* Screensaver / Screen dimming in Emulation Station no longer stops the built in scraper.
+* Compatibility with upstream plymouth changes. Image is based on the latest upstream Raspbian Lite from 2016-09-23 with all updates.
+* New themes added to the theme installer - including pixel-meta, pixel-tft, luminous, minilumi from Rookervik and io and spare themes from Mattrixk
+* New packages added to experimental section
+ * Added emulators lr-beetle-pcfx (PCFX emulator)
+ * Added retropie-manager web interface (based on recalbox-manager).
+ * Added pcsx2 emulator (Playstation 2 emulator - x86 / x86_64 only).
+ * Added openpht  (x86 / x86_64 only).
+ * Added fs-uae (Amiga emulator - x86 / x86_64 only).
+ * Added lr-bsnes (Super Nintendo emulator - x86/x86_64 only)
+ * Added lr-hatari (Atari ST/STE/TT/Falcon emulator)
+* Added some RetroPie-Setup function documentation to aid those contributing code - https://retropie.org.uk/retropie-setup-api/
+* Various other improvements / bugfixes
+
 ### Version 4.0: (August 19, 2016)
 Changes since 3.8.1:
 * Setup script improvements:
