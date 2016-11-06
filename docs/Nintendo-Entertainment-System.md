@@ -17,7 +17,7 @@ Both emulators utilise RetroArch configurations for controllers. lr-nestopia is 
 
 ## ROMS
 
-Accepted File Extensions: **.zip .nes .smc .sfc .fig .swc .mgd** - Make sure your roms have headers. Roms without headers will not work.
+Accepted File Extensions: **.zip .nes .smc .sfc .fig .swc .mgd** - Make sure your roms have headers. Roms without headers will not work. If you want to use PAL roms, make sure they contain (E) in the filename, or else they may be run at the wrong speed.
 
 Place your NES Roms in
 ```
