@@ -61,9 +61,7 @@ ALT+F4 | Quit
 
 ***
 ## Installation
-Here's a module for the GameMaker Games. Just create a file called `gamemaker.sh` in `/home/pi/RetroPie-Setup/scriptmodules/ports`
-
-With the following contents:
+Here's a module for the GameMaker Games. Just create a file called `gamemaker.sh` in `/home/pi/RetroPie-Setup/scriptmodules/ports` with the following contents:
 
 ```shell
 #!/usr/bin/env bash
