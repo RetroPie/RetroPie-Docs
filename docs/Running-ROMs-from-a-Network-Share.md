@@ -81,7 +81,7 @@ At this point, everything should be good to go. You can play and save games from
 
 > A simple solution if you just want things to work would be to run
 
-    sudo /opt/retropie/supplementary/scraper/scraper -scrape_all -thumb_only -workers 4`
+    sudo /opt/retropie/supplementary/scraper/scraper -scrape_all -thumb_only -workers 4
 
 > That will parse the config the same as EmulationStation does then it will check every listed folder and scrape it placing the gamelist.xml in the rom folder for that system and the images in a folder called images in each system's rom folder. If the system isn't supported you may see a bunch of errors about not finding hashes or it might just take a while to not do anything.
 
