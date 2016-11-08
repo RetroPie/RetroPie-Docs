@@ -1,5 +1,3 @@
-# Configuration Editor
-
 The configuration editor allows a user to edit the configurations for RetroPie and Retroarch from a gui interface. Many common settings are set up so that a user can change the settings with a gamepad.
 
 Manual configurations can also be set with the use of a keyboard.
