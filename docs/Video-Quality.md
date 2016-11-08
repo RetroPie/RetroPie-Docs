@@ -32,19 +32,25 @@ Rather than today's flat screen displays, CRTs were not flat, and always feature
 
 ## Shaders
 
-Shaders are small programs that a dedicated graphics chip (GPU) runs to alter the image. Unfortunately, the Raspberry Pi series features a fairly weak GPU that struggles to run complex or multiple shaders. Fortunately, user @davej has created a fantastic shader specifically for the pi, aimed at recreating a CRT appearance whilst still maintaining full speed at 1080p on even a Pi 1 (overclocked). It is highly configurable, but four presets are included in RetroPie.
+Shaders are small programs that a dedicated graphics chip (GPU) runs to alter the image. Unfortunately, the Raspberry Pi series features a fairly weak GPU that struggles to run complex or multiple shaders. Fortunately, user @davej has created a fantastic shader specifically for the pi, aimed at recreating a CRT appearance whilst still maintaining full speed at 1080p on even a Pi 1 (overclocked). It is highly configurable, but four presets are included in RetroPie:
 
-### crt-pi.glslp
+1. `crt-pi.glslp`
 ![](http://i.imgur.com/TuZvVXe.jpg)
 
-### crt-pi-curvature.glslp
+2. `crt-pi-curvature.glslp`
 ![](http://i.imgur.com/xsLAmVk.jpg)
 
 The second two presets are `crt-pi-vertical.glslp` and `crt-pi-curvature-vertical.glslp`, described in (link to vertical section)
 
-To install ....
+## Installation
+
+**Note:** Shaders can only be used in Libretro emulators. Most default emulators in RetroPie are Libretro emulators, but you can confirm by looking for the lr- prefix in the emulator name via the [[Runcommand]].
+
+You can select either preset via the [[Configuration editor]]. Choose `Configure basic libretro emulator options`, then choose a specific emulator or `Configure default options for all libretro emulators` to make the change system-wide. Then, set `Video Shader Enable` to `true` and then set `Video Shader File` to the desired shader.
 
 ### Vertical games
+
+Some arcade games were run on a vertical CRT; literally a regular TV flipped over on its side. Whilst libretro shaders are will automatically rotate for this, the shadow mask effect does not. Rather than add logic to the shader (making it slower), a special version for vertical games is available:
 
 ### crt-pi-vertical.glslp
 ![](http://i.imgur.com/oL7BOvk.jpg)
