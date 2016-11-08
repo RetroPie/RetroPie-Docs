@@ -46,6 +46,14 @@ To install ....
 
 ### Vertical games
 
+### crt-pi-vertical.glslp
+![](http://i.imgur.com/oL7BOvk.jpg)
+
+### crt-pi-curvature-vertical.glslp
+![](http://i.imgur.com/I9X0SJr.jpg)
+
+(upload cfg zip for mame2003)
+
 ## NTSC filters
 
 ## Video smooth
