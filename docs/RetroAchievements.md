@@ -17,8 +17,11 @@ cheevos_hardcore_mode_enable = true
 
 ##Supported Systems:
 
+* NES (lr-fceumm - installed by default, lr-quicknes - found in 'Optional' menu, seems to have the best compatibility)
+* SNES (lr-Snes9x-next, lr-pocketsnes, lr-armsnes - installed by default)  
+* Genesis/Mega Drive (lr-picodrive - installed by default)
 * Game Boy / Color (lr-gambatte - installed by default)  
-* Game Boy Advance (VBA-M - installed by default, mGBA - installed by default)
+* Game Boy Advance (lr-vba-next - installed by default, lr-mgba - installed by default, seems to have the best compatibility)
 
 ##RetroAchievements Messages
 
