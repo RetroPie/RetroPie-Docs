@@ -288,7 +288,7 @@ input_player2_down_btn = 1
 input_player2_left_btn = 2
 input_player2_right_btn = 3
 ```
-_input exit emulator_ to exit the emulator and return to emulationstation._input menu toggle_ to show the retroarch menu (e.g. to set the aspect ratio, save/load the game, etc.)
+_input exit emulator_ to exit the emulator and return to emulationstation. _input menu toggle_ to show the retroarch menu (e.g. to set the aspect ratio, save/load the game, etc.)
 
 **`/home/pi/RetroPie/emulators/pifba/fba2x.cfg`** (or **`/opt/retropie/emulators/pifba/fba2x.cfg`** in some versions)
 ```
@@ -319,7 +319,7 @@ JA_LR_2=0
 JA_UD_2=1
 ```
 
-Up to now, I didn't figure out, how to change the configuration from the analog sticks to the digipad. To exit the emulator, press START and SELECT together.
+Up until now, I didn't figure out how to change the configuration from the analog sticks to the digipad. To exit the emulator, press START and SELECT together.
 
 
 ## Alternate Controller Configurations
