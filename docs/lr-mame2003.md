@@ -121,6 +121,7 @@ The option is:
 ```
 mame2003-mouse_device = "pointer"
 ```
+**NOTE:** This will disable [Mouse support](#mousetrackballanalog-controller-support).
 
 ## 2 player dial/spinner devices
 
