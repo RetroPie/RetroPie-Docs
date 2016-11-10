@@ -2,7 +2,7 @@
 
 ## Xpad Driver:
 
-With the recent kernel issues of xboxdrv rendering images unusable, there is an updated xpad driver which will work just as well for xbox controllers, its possible it may also support xbox One controllers.
+With the recent kernel issues of xboxdrv rendering images unusable, there is an updated xpad driver which will work just as well for Xbox controllers, it's possible it may also support Xbox One controllers.
 
 You access the driver through **Manage Packages** >> **Manage Driver Packages** >> **Xpad Driver** and you'll install it from source. Reboot for good measure, reconfigure your controllers and the lights should work properly.
 
