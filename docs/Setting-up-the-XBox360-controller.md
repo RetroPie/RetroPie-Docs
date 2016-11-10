@@ -112,7 +112,7 @@ Another way is to specify this single command :
 
 ### 3 - init script
 
-The third possibility, you can use an init.d script with the daemon _-D_ Option. Save the follwing content to **/etc/init.d/xboxdrv**:
+The third possibility, you can use an init.d script with the daemon _-D_ Option. Save the following content to **/etc/init.d/xboxdrv**:
 ```
 #! /bin/bash
 ### BEGIN INIT INFO
