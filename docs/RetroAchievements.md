@@ -17,11 +17,13 @@ cheevos_hardcore_mode_enable = true
 
 ##Supported Systems:
 
-* NES (lr-fceumm - installed by default, lr-quicknes - found in 'Optional' menu, seems to have the best compatibility)
-* SNES (lr-Snes9x-next, lr-pocketsnes, lr-armsnes - installed by default)  
-* Genesis/Mega Drive (lr-picodrive - installed by default)
-* Game Boy / Color (lr-gambatte - installed by default)  
-* Game Boy Advance (lr-vba-next - installed by default, lr-mgba - installed by default, seems to have the best compatibility)
+* NES
+* SNES
+* Mega Drive / Genesis
+* Game Boy / Color
+* Game Boy Advance
+
+A libretro core compatibility with RetroAchievements list can be found here: https://github.com/meleu/RetroArch-problematic-cheevos/blob/master/core_compatibility.md
 
 ##RetroAchievements Messages
 
