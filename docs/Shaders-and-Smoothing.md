@@ -62,4 +62,12 @@ Some arcade games were run on a vertical CRT; literally a regular TV flipped ove
 
 ## NTSC filters
 
-## Video smooth
+WIP
+
+## Video smoothing
+
+Retroarch includes the facility to apply a basic bilinear smoothing filter across the screen. This filter reduces pixelation at essentially no performance cost, but gives a very soft image that may not be to everyone's taste. Here is example of it off and on:
+
+![](https://retropie.org.uk/forum/uploads/files/1478902457187-upload-4c1d9b59-a473-43d3-9a56-cc50506ef690.png)
+
+This setting can be enabled in the configuration editon. Look for 'Video Smoothing'
