@@ -52,10 +52,10 @@ You can select either preset via the [[Configuration editor]]. Choose `Configure
 
 Some arcade games were run on a vertical CRT; literally a regular TV flipped over on its side. Whilst libretro shaders are will automatically rotate for this, the shadow mask effect does not, causing an unsightly 'rainbow' effect. Rather than add logic to the shader (making it slower), a special version for vertical games is available:
 
-### crt-pi-vertical.glslp
+3. `crt-pi-vertical.glslp`
 ![](http://i.imgur.com/oL7BOvk.jpg)
 
-### crt-pi-curvature-vertical.glslp
+4. `crt-pi-curvature-vertical.glslp`
 ![](http://i.imgur.com/I9X0SJr.jpg)
 
 This shader can be automatically applied to the relevant vertical games via configuration overrides. A set of these overrides is available for [[lr-mame2003]] in [this thread](https://retropie.org.uk/forum/topic/4046/crt-pi-shader-users-automatic-usage-of-crt-pi-vertical-in-vertical-games-in-lr-mame2003).
