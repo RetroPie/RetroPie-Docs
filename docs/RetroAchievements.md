@@ -23,7 +23,7 @@ cheevos_hardcore_mode_enable = true
 * Game Boy / Color
 * Game Boy Advance
 
-A libretro core compatibility with RetroAchievements list can be found here: https://github.com/meleu/RetroArch-problematic-cheevos/blob/master/core_compatibility.md
+A libretro core compatibility list with RetroAchievements can be found here: https://github.com/libretro/RetroArch/wiki/RetroAchievements
 
 ##RetroAchievements Messages
 
