@@ -20,7 +20,7 @@ cheevos_hardcore_mode_enable = true
 * NES
 * SNES
 * Mega Drive / Genesis
-* Game Boy / Color
+* Game Boy / Game Boy Color
 * Game Boy Advance
 
 A libretro core compatibility list with RetroAchievements can be found here: https://github.com/libretro/RetroArch/wiki/RetroAchievements
