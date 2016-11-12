@@ -579,7 +579,7 @@ The original tutorial was posted by a user named rockfireredmoon on the RetroPie
 
 You can view more information about MoltenGamepad [here.](https://github.com/jgeumlek/MoltenGamepad)
 
-Its on a github repository which we will need to copy onto our Pi. 
+It's on a github repository which we will need to copy onto our Pi. 
 
 In the terminal, paste the command:
 ```shell
@@ -596,66 +596,19 @@ Move to the MoltenGamepad folder:
 cd MoltenGamepad/
 ```
 
-Lets try making the MoltenGamepad binary file:
+Let's try making the MoltenGamepad binary file:
+```shell
+make eventlists
+```
+
+followed by:
 ```shell
 make
 ```
-
-MoltenGamepad is still in alpha, so most likely you will get a few errors.
-If you get undefined KEY_* errors, you'll need to remove those lines from the eventlists. (Sorry, no script to generate these just yet)
-
-This is the make error that I got on a pi3 board:
-```shell
-source/eventlists/key_list.cpp:159:4: error: ‘KEY_ROTATE_DISPLAY’ was not declared in this scope
-   {KEY_ROTATE_DISPLAY, "key_rotate_display", ""},
-    ^
-source/eventlists/key_list.cpp:161:4: error: ‘KEY_ROTATE_DISPLAY’ was not declared in this scope
-   {KEY_ROTATE_DISPLAY, "key_rotate_display", ""},
-    ^
-source/eventlists/key_list.cpp:472:4: error: ‘KEY_NUMERIC_A’ was not declared in this scope
-   {KEY_NUMERIC_A, "key_numeric_a", ""},
-    ^
-source/eventlists/key_list.cpp:473:4: error: ‘KEY_NUMERIC_B’ was not declared in this scope
-   {KEY_NUMERIC_B, "key_numeric_b", ""},
-    ^
-source/eventlists/key_list.cpp:474:4: error: ‘KEY_NUMERIC_C’ was not declared in this scope
-   {KEY_NUMERIC_C, "key_numeric_c", ""},
-    ^
-source/eventlists/key_list.cpp:475:4: error: ‘KEY_NUMERIC_D’ was not declared in this scope
-   {KEY_NUMERIC_D, "key_numeric_d", ""},
-    ^
-Makefile:3: recipe for target 'all' failed
-
-```
-
-So looking at the first error:
-```shell
-source/eventlists/key_list.cpp:159:4: error: ‘KEY_ROTATE_DISPLAY’ was not declared in this scope
-   {KEY_ROTATE_DISPLAY, "key_rotate_display", ""},
-```
-
-We know there is a problem with line 159 in the eventlists file. Your line numbers may be different to mine and may also change depending on release.
-
-Lets fix this and the other error numbers with nano. Vim would probably be easier if you know it, but lets stick with nano:
-```shell
-nano +159 MoltenGamepad/source/eventlists/key_list.cpp
-``` 
-
-Press ```CTRL+K``` and press ```ENTER``` on the keyboard. Then to exit, ```CTRL+X``` and ```Y``` to confirm. Its important that you press ```ENTER``` so that the line numbers remain intact. This will make sure you aren't deleting the wrong line number. 
-
-Do the same with the other errors. Making sure to press ```CTRL+K``` and ```ENTER``` after each one. So the line after the one we deleted goes back to where it was originally. Again, adjust the line numbers for the errors you get. Remember to save the file with ```CTRL+X``` and ```Y``` to confirm.   
-```shell
-nano +161 MoltenGamepad/source/eventlists/key_list.cpp
-``` 
-
-Now that we've adjusted the file, the make command should complete without any errors.
-```shell
-make
-``` 
 
 Once completed, we should have our MoltenGamepad binary file. You can check this with the command terminal command ```ls``` 
 
-Lets copy this to where it needs to go. We should already be in the MoltenGamepad directory.
+Let's copy this to where it needs to go. We should already be in the MoltenGamepad directory.
 ```shell
 sudo cp moltengamepad /usr/sbin
 ```
