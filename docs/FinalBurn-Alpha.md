@@ -7,10 +7,10 @@ _Final Burn Alpha is a Multiple Arcade Emulator most popular for emulating Neo-G
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
 | [lr-fbalpha](https://github.com/libretro/fbalpha) | arcade **or** fba **or** neogeo  | .zip | neogeo.zip | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/fba/retroarch.cfg, **or** /opt/retropie/configs/neogeo/retroarch.cfg |
-| [lr-fba](https://github.com/libretro/fba-libretro) | arcade **or** fba **or** neogeo  | .zip | neogeo.zip | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/fba/retroarch.cfg, **or** /opt/retropie/configs/neogeo/retroarch.cfg |
+| [lr-fbalpha2012](https://github.com/libretro/fbalpha2012) | arcade **or** fba **or** neogeo  | .zip | neogeo.zip | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/fba/retroarch.cfg, **or** /opt/retropie/configs/neogeo/retroarch.cfg |
 | [PiFBA](https://github.com/RetroPie/pifba) | arcade **or** fba **or** neogeo  | .zip | neogeo.zip | /opt/retropie/emulators/pifba/fba2x.cfg **or** /opt/retropie/configs/fba/fba2x.cfg |
 
-## Emulators: [PiFBA](https://github.com/RetroPie/pifba), [lr-fba](https://github.com/libretro/fba-libretro), [lr-fbalpha](https://github.com/libretro/fbalpha)
+## Emulators: [PiFBA](https://github.com/RetroPie/pifba), [lr-fbalpha2010](https://github.com/libretro/fbalpha2012), [lr-fbalpha](https://github.com/libretro/fbalpha)
 
 lr-fbalpha is favoured as it is mature, runs the current FBA romset, and enjoys all the usual libretro/RetroArch advantages of automatic controller configuration, shaders, etc. PiFBA is an earlier romset, not libretro/RetroArch, but still can be useful for Raspberry Pi 1/0 users as it is heavily optimised.
 
@@ -61,15 +61,15 @@ you can also place your ROMs in
 /home/pi/RetroPie/roms/neogeo
 ```
 
-### lr-fba
+### lr-fbalpha2012
 
 Romset Used: FBA **0.2.97.30** which is based on MAME 0.154 (Jul 2014)
 
-Total Games Emulated: [3369](https://raw.githubusercontent.com/libretro/fba-libretro/master/svn-current/trunk/gamelist.txt) (includes clones etc..)
+Total Games Emulated: [3369](https://github.com/libretro/fbalpha2012/blob/master/svn-current/trunk/gamelist.txt) (includes clones etc..)
 
-### [**lr-fba COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1rWO7Lm0bTGNpak6J-CPzde0GNIDP0NHDoQdJ6iWosfA/edit?usp=sharing)  feel free to contribute to the list.
+### [**lr-fbalpha2012 COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1rWO7Lm0bTGNpak6J-CPzde0GNIDP0NHDoQdJ6iWosfA/edit?usp=sharing)  feel free to contribute to the list.
  
-Place your lr-fba ROMs in
+Place your lr-fbalpha2012 ROMs in
 ```shell
 /home/pi/RetroPie/roms/fba
 ```
@@ -94,8 +94,8 @@ For more information relating to the BIOS contents, MVS/AES modes, and Universe 
 
 ## Controls
 As there are 2 emulators there are two sets of controls.
-### lr-fba and lr-fbalpha Controls
-lr-fba and lr-fbalpha utilise RetroArch configs.
+### lr-fbalpha2012 and lr-fbalpha Controls
+lr-fbalpha2012 and lr-fbalpha utilise RetroArch configs.
 
 Add custom retroarch controls to the retroarch.cfg file in
 ```shell
