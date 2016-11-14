@@ -11,7 +11,7 @@ The following chart is a quick reference for all the arcade emulators in RetroPi
 | [advmame-.94](https://github.com/RetroPie/RetroPie-Setup/wiki/MAME) | 0.94 | 5563 | [.DAT](https://drive.google.com/file/d/0B2TMeZ6iEFvHa2E5Rzl4ZEdMdjQ/view?usp=sharing)| [List](https://docs.google.com/spreadsheets/d/1AEQ94buG0rvbW0xdnYKeuEhHeCbuZlRfRJQCb1Dt8fw/edit?usp=sharing) |
 | [advmame-1.4](https://github.com/RetroPie/RetroPie-Setup/wiki/MAME) | 0.106 | 6166 | [.DAT](https://drive.google.com/file/d/0B2TMeZ6iEFvHMEZnb1RxQWNmdHM/view?usp=sharing)| [List](https://docs.google.com/spreadsheets/d/1RapyxChe2BMOfbX-FsCup9SXGxvS1WmXAofwaTJtmxc/edit?usp=sharing) |
 | [pifba](https://github.com/RetroPie/RetroPie-Setup/wiki/FinalBurn-Alpha) | 0.114 (fba 0.2.96.71) | 684 | [.DAT](https://drive.google.com/file/d/0B2TMeZ6iEFvHaHUta2dQYk1HTGM/view?usp=sharing)| [List](https://docs.google.com/spreadsheets/d/1OZioLrz16ptaNbjQUDP5hhVzQDTOTn9Nz46Hbj3-06k/edit?usp=sharing) |
-| [lr-fba](https://github.com/RetroPie/RetroPie-Setup/wiki/FinalBurn-Alpha) | 0.154 (fba 0.2.97.30) | [3369](https://raw.githubusercontent.com/libretro/fba-libretro/master/svn-current/trunk/gamelist.txt) | [.DAT](https://drive.google.com/file/d/0B2TMeZ6iEFvHcF96YmdjaWlEdXM/view?usp=sharing)| [List](https://docs.google.com/spreadsheets/d/1rWO7Lm0bTGNpak6J-CPzde0GNIDP0NHDoQdJ6iWosfA/edit?usp=sharing) |
+| [lr-fbalpha2012](https://github.com/RetroPie/RetroPie-Setup/wiki/FinalBurn-Alpha) | 0.154 (fba 0.2.97.30) | [3369](https://raw.githubusercontent.com/libretro/fbalpha2012/master/svn-current/trunk/gamelist.txt) | [.DAT](https://drive.google.com/file/d/0B2TMeZ6iEFvHcF96YmdjaWlEdXM/view?usp=sharing)| [List](https://docs.google.com/spreadsheets/d/1rWO7Lm0bTGNpak6J-CPzde0GNIDP0NHDoQdJ6iWosfA/edit?usp=sharing) |
 | [lr-fbalpha](https://github.com/RetroPie/RetroPie-Setup/wiki/FinalBurn-Alpha) | 0.175 (fba 0.2.97.39) | [4375](https://raw.githubusercontent.com/libretro/fbalpha/master/gamelist.txt) | [.DAT](https://github.com/libretro/fbalpha/blob/master/dats/FB%20Alpha%20v0.2.97.39%20(ClrMame%20Pro%20XML).dat.zip?raw=true)| [List](https://docs.google.com/spreadsheets/d/1GaqIIoiWbzKHwZ52S2xCSDQXILo81Ls1mHK6czKGAtM/edit?usp=sharing) |
 | [gngeopi](https://github.com/RetroPie/RetroPie-Setup/wiki/Neo-Geo) | 0.138 | 203 | [.DAT](https://drive.google.com/file/d/0B2TMeZ6iEFvHZVVCYmVtaUM1VlU/view?usp=sharing)| [List](https://docs.google.com/spreadsheets/d/1A_a_9t14uzDUMrrO0RgLDwiVUiycmclcPIs6cU6Iox8/edit?usp=sharing) |
 
@@ -310,10 +310,10 @@ Dat File: [fba_029671_od_release_10_working_roms_filtered.zip] (https://drive.go
 
 [**PiFBA COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1OZioLrz16ptaNbjQUDP5hhVzQDTOTn9Nz46Hbj3-06k/edit?usp=sharing)  feel free to contribute to the list.
 
-### [lr-fba](https://github.com/libretro/fba-libretro) 
+### [lr-fbalpha2012](https://github.com/libretro/fbalpha2012) 
 ```shell
 Roms Dir: /home/pi/RetroPie/roms/fba
-Binary Dir: /opt/retropie/libretrocores/lr-fba
+Binary Dir: /opt/retropie/libretrocores/lr-fbalpha2012
 Config Dir: /opt/retropie/configs/fba/retroarch.cfg
 ```
 MAME Version: **FBA 0.2.97.30** which is based on MAME 0.154 (Jul 2014)
@@ -332,7 +332,7 @@ Dat File: [FB Alpha v0.2.97.30.dat.zip](https://drive.google.com/file/d/0B2TMeZ6
 
 Neo Geo Only .Dat File: [fba-lr-neogeo](https://drive.google.com/file/d/0B2TMeZ6iEFvHVk1Ud1RoSHpfcFU/view?usp=sharing)
 
-[**lr-fba COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1rWO7Lm0bTGNpak6J-CPzde0GNIDP0NHDoQdJ6iWosfA/edit?usp=sharing)  feel free to contribute to the list.
+[**lr-fbalpha2012 COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1rWO7Lm0bTGNpak6J-CPzde0GNIDP0NHDoQdJ6iWosfA/edit?usp=sharing)  feel free to contribute to the list.
 
 ### [lr-fbalpha](https://github.com/libretro/fbalpha) 
 ```shell
