@@ -350,25 +350,28 @@ Active Sets 4375/4375
 * Others 596/596
 * BIOS 6/6
 
-Dat File: [FB Alpha v0.2.97.38 (ClrMame Pro XML, Arcade Only)](https://github.com/libretro/fbalpha/blob/master/dats/FB%20Alpha%20v0.2.97.39%20(ClrMame%20Pro%20XML).dat.zip?raw=true)
+Dat File:  [FB Alpha v0.2.97.39 (ClrMame Pro XML, Arcade Only)](https://dl.dropboxusercontent.com/u/51705339/fba%20029739%20dats/FB%20Alpha%20v0.2.97.39%20(ClrMame%20Pro%20XML%2C%20Arcade%20Only).dat)
 
-Dat File: [FB Alpha v0.2.97.39 (ClrMame Pro XML, ColecoVision only)](https://github.com/libretro/fbalpha/blob/master/dats/FB%20Alpha%20v0.2.97.39%20(ClrMame%20Pro%20XML%2C%20ColecoVision%20only).dat.zip?raw=true)
+Dat File: [FB Alpha v0.2.97.39 (ClrMame Pro XML, ColecoVision only)](https://dl.dropboxusercontent.com/u/51705339/fba%20029739%20dats/FB%20Alpha%20v0.2.97.39%20(ClrMame%20Pro%20XML%2C%20ColecoVision%20only).dat)
 
-Dat File: [FB Alpha v0.2.97.39 (ClrMame Pro XML, Game Gear only)](https://github.com/libretro/fbalpha/blob/master/dats/FB%20Alpha%20v0.2.97.39%20(ClrMame%20Pro%20XML%2C%20Game%20Gear%20only).dat.zip?raw=true)
+Dat File:  [FB Alpha v0.2.97.39 (ClrMame Pro XML, Game Gear only)](https://dl.dropboxusercontent.com/u/51705339/fba%20029739%20dats/FB%20Alpha%20v0.2.97.39%20(ClrMame%20Pro%20XML%2C%20Game%20Gear%20only).dat)
 
-Dat File: [FB Alpha v0.2.97.39 (ClrMame Pro XML, MSX 1 only)](https://github.com/libretro/fbalpha/blob/master/dats/FB%20Alpha%20v0.2.97.39%20(ClrMame%20Pro%20XML%2C%20MSX%201%20Games%20only).dat.zip?raw=true)
+Dat File: [FB Alpha v0.2.97.39 (ClrMame Pro XML, Master System only)](https://dl.dropboxusercontent.com/u/51705339/fba%20029739%20dats/FB%20Alpha%20v0.2.97.39%20(ClrMame%20Pro%20XML%2C%20Master%20System%20only).dat)
 
-Dat File: [FB Alpha v0.2.97.39 (ClrMame Pro XML, Master System only)](https://github.com/libretro/fbalpha/blob/master/dats/FB%20Alpha%20v0.2.97.39%20(ClrMame%20Pro%20XML%2C%20Master%20System%20only).dat.zip?raw=true)
+Dat File: [FB Alpha v0.2.97.39 (ClrMame Pro XML, Megadrive only)](https://dl.dropboxusercontent.com/u/51705339/fba%20029739%20dats/FB%20Alpha%20v0.2.97.39%20(ClrMame%20Pro%20XML%2C%20Megadrive%20only).dat)
 
-Dat File: [FB Alpha v0.2.97.39 (ClrMame Pro XML, Megadrive only)](https://github.com/libretro/fbalpha/blob/master/dats/FB%20Alpha%20v0.2.97.39%20(ClrMame%20Pro%20XML%2C%20Megadrive%20only).dat.zip?raw=true)
+Dat File:  [FB Alpha v0.2.97.39 (ClrMame Pro XML, MSX 1 Games only)](https://dl.dropboxusercontent.com/u/51705339/fba%20029739%20dats/FB%20Alpha%20v0.2.97.39%20(ClrMame%20Pro%20XML%2C%20MSX%201%20Games%20only).dat)
 
-Dat File: [FB Alpha v0.2.97.39 (ClrMame Pro XML, PC-Engine only)](https://github.com/libretro/fbalpha/blob/master/dats/FB%20Alpha%20v0.2.97.39%20(ClrMame%20Pro%20XML%2C%20PC-Engine%20only).dat.zip?raw=true)
+Dat File: [FB Alpha v0.2.97.39 (ClrMame Pro XML, PC-Engine only)](https://dl.dropboxusercontent.com/u/51705339/fba%20029739%20dats/FB%20Alpha%20v0.2.97.39%20(ClrMame%20Pro%20XML%2C%20PC-Engine%20only).dat)
 
-Dat File: [FB Alpha v0.2.97.39 (ClrMame Pro XML, Sega SG-1000 only)](https://github.com/libretro/fbalpha/blob/master/dats/FB%20Alpha%20v0.2.97.39%20(ClrMame%20Pro%20XML%2C%20Sega%20SG-1000%20only).dat.zip?raw=true)
+Dat File: [FB Alpha v0.2.97.39 (ClrMame Pro XML, Sega SG-1000 only)](https://dl.dropboxusercontent.com/u/51705339/fba%20029739%20dats/FB%20Alpha%20v0.2.97.39%20(ClrMame%20Pro%20XML%2C%20Sega%20SG-1000%20only).dat)
 
-Dat File: [FB Alpha v0.2.97.39 (ClrMame Pro XML, SuprGrafx only)](https://github.com/libretro/fbalpha/blob/master/dats/FB%20Alpha%20v0.2.97.39%20(ClrMame%20Pro%20XML%2C%20SuprGrafx%20only).dat.zip?raw=true)
+Dat File: [FB Alpha v0.2.97.39 (ClrMame Pro XML, SuprGrafx only)](https://dl.dropboxusercontent.com/u/51705339/fba%20029739%20dats/FB%20Alpha%20v0.2.97.39%20(ClrMame%20Pro%20XML%2C%20SuprGrafx%20only).dat)
 
-Dat File: [FB Alpha v0.2.97.39 (ClrMame Pro XML, TurboGrafx16 only)](https://github.com/libretro/fbalpha/blob/master/dats/FB%20Alpha%20v0.2.97.39%20(ClrMame%20Pro%20XML%2C%20TurboGrafx16%20only).dat.zip?raw=true)
+Dat File: [FB Alpha v0.2.97.39 (ClrMame Pro XML, TurboGrafx16 only)](https://dl.dropboxusercontent.com/u/51705339/fba%20029739%20dats/FB%20Alpha%20v0.2.97.39%20(ClrMame%20Pro%20XML%2C%20TurboGrafx16%20only).dat)
+
+Dat File: [FB Alpha v0.2.97.39 (ClrMame Pro XML) (NeoGeo Only)](https://dl.dropboxusercontent.com/u/51705339/fba%20029739%20dats/FB%20Alpha%20v0.2.97.39%20(ClrMame%20Pro%20XML)%20(NeoGeo%20Only).dat) "Rebuild using Non-merged-sets, Place the roms in the neogeo roms folder and use FB Alpha v0.2.97.39 as the default emulator."
+
 
 [**lr-fbalpha COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1GaqIIoiWbzKHwZ52S2xCSDQXILo81Ls1mHK6czKGAtM/edit?usp=sharing)  feel free to contribute to the list.
 
