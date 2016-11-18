@@ -146,7 +146,7 @@ After it's done configuring you should see your wifi info in the original menu:
 For more WiFi configuration options see this page [HERE](https://github.com/RetroPie/RetroPie-Setup/wiki/Wifi)
 
 ## Installing additional Emulators / Ports
-On RetroPie 4.0+, not everything is installed by default. The pre-made image ships with libretro emulators with a few standalone emulators such as mame4all, mupen64plus and pifba. Ports like quake and doom and other software like ScummVM can be installed later.
+On RetroPie 4.0+, not everything is installed by default. The pre-made images contain the best working emulators for each system supported by the hardware. This should cover everything most users would be doing. Ports like quake and doom and some other emulators like ScummVM can be installed later.
 
 Software can be installed from the RetroPie-Setup script - which is accessible from the RetroPie menu on EmulationStation. Once there you can navigate to "Manage Packages" where you will see various sections. In each section are lists of packages that can be installed (and it will show what is currently installed). Stable additional packages are under the "Optional" section, with more unstable packages listed under experimental. The packages are ordered first by type (emulators / libretro cores / ports), then alphabetically. By selecting a package you can choose to install it, or remove it. Some packages also have additional configurations.
 
