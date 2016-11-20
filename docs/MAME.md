@@ -154,3 +154,9 @@ Add custom retroarch controls to the retroarch.cfg file in
 /opt/retropie/configs/mame-libretro/retroarch.cfg
 ```
 For more information on custom RetroArch controls see: [RetroArch Configuration](https://github.com/petrockblog/RetroPie-Setup/wiki/RetroArch-Configuration)
+
+## Edge Case Games
+
+### Joust (various)
+
+Joust will not start (usually) until the 'Service Button' is pushed.  It will appear to hang on 'FACTORY SETTINGS RESTORED'.  If you are using keyboard controls, push F2. If you are using a controller push the RESET hotkey (default SELECT+X). That will reset the game with the new NVRAM settings, and you will be able to continue.
