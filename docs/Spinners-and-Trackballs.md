@@ -111,9 +111,11 @@ Notice that from MAME's perspective, both DIAL inputs use the x-axis, but we are
 
 ## Other Considerations
 Sometimes, a game doesn't use the DIAL input. It uses Paddle. It can be convenient map inputs for the paddel device just in case:
+
 ```input_map[p1_paddlex] mouse[0,x] mouse[1,x] mouse[2,x] mouse[3,x]```
 
 It is also possible to configure controls for certain games only. While this is not generally necessary, you do have the option to override defaults you might have configured above by specifying a ROM/ at the beginning of an input line. For example, if Tempest worked just like every other game but for some reason, just that game has the spinner working backwards, you could specify an additional input for that game only:
+
 ```tempest/input_map[p1_trackballx] -mouse[0,x] -mouse[1,x] -mouse[2,x] -mouse[3,x]```
 
 ## Sensitivity
