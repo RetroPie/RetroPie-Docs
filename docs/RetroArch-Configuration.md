@@ -106,7 +106,7 @@ All RetroArch based emulators can be configured in the following way:
 /opt/retropie/configs/all/retroarch.cfg
 ```
 
-([example](https://github.com/RetroPie/RetroPie-Setup/wiki/RetroArch-Configuration/#example-default-per-system-retroarchcfg))
+([example](https://github.com/RetroPie/RetroPie-Setup/wiki/RetroArch-Configuration#example-default-per-system-retroarchcfg))
 
 **System-specific** settings are done in the files:
 
@@ -114,7 +114,7 @@ All RetroArch based emulators can be configured in the following way:
 /opt/retropie/configs/SYSTEMNAME/retroarch.cfg
 ```
 
-([example](https://github.com/RetroPie/RetroPie-Setup/wiki/RetroArch-Configuration/#example-per-system-control-override-retroarchcfg))
+([example](https://github.com/RetroPie/RetroPie-Setup/wiki/RetroArch-Configuration#example-per-system-control-override-retroarchcfg))
 
 Here, SYSTEMNAME is `atari2600`, `snes`, etc. All settings in these files will overwrite the corresponding global setting as long as they are placed **above** the `#includeconfig` line.
 
