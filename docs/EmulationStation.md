@@ -31,7 +31,7 @@ Since spring 2015, there has been little or no activity from the original ES dev
 Until that time, further developments are done by 'unofficial' forks, which are not necessarily maintained/updated often. One example is [this extension of ES](https://github.com/retropie/retropie-setup/wiki/Child-friendly-EmulationStation), which is currently under experimental features.
 
 # Help
-A great deal of information can be found in EmulationStation's README.md and THEMES.md, also viewable on GitHub. Some links:
+A great deal of information can be found in EmulationStation's [README.md](https://github.com/Aloshi/EmulationStation/blob/master/README.md) and [THEMES.md](https://github.com/Aloshi/EmulationStation/blob/master/THEMES.md), also viewable on GitHub. Some links:
 
 [Building from source (if you're getting dependency errors, this might help).](https://github.com/Aloshi/EmulationStation#building)
 
@@ -86,7 +86,11 @@ This dot is the "fake" SDL window ES uses to get input. Actual rendering is done
 
 Your controller driver is likely being started after EmulationStation. An easy way around this is to add a "sleep" command in the EmulationStation start script in `/usr/bin/emulationstation`.  [More information here.](http://www.reddit.com/r/raspberry_pi/comments/16w9qn/emulationstation_and_a_logitech_dual_action/c816dz1)
 
-### I don't have enough buttons to finish the Input Config screen?!
+### How do I add another controller to navigate and control ES?
+
+Open the Main Menu by pressing ```Start``` on the original controller that you have already setup. Then navigate to Configure Input and press ```A``` to start. Now on the other controller press and hold down any button. This should bring up the option to setup this controller. When finished, navigate to the OK button on screen, then press the button that you set as ```A``` on your controller to exit.
+
+### I don't have enough buttons to finish the Configure Input screen?!
 
 Just hold down a button to skip each unused button until you get to the end of the configuration
 
