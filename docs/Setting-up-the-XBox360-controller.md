@@ -8,6 +8,8 @@
 
 ## Xpad Driver:
 
+Starting with the RetroPie 4.1 SD image, the Xpad driver is enabled by default and the following steps are unnecessary.
+
 With the recent kernel issues of xboxdrv rendering images unusable, there is an updated xpad driver which will work just as well for Xbox controllers, it's possible it may also support Xbox One controllers.
 
 You access the driver through **Manage Packages** >> **Manage Driver Packages** >> **Xpad Driver** and you'll install it from source. Reboot for good measure, reconfigure your controllers and the lights should work properly.
