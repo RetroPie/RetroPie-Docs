@@ -6,13 +6,13 @@ _The Atari 2600 was a home video game console released by Atari in 1977_
 
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
-| [lr-stella](https://github.com/libretro/stella-libretro) | atari2600 | .bin .a26 .rom | none | /opt/retropie/configs/atari2600/retroarch.cfg |
-| [Stella](http://stella.sourceforge.net/) | atari2600 | .bin .a26 .rom | none | hardcoded |
+| [lr-stella](https://github.com/libretro/stella-libretro) | atari2600 | .bin .a26 .rom .zip .gz | none | /opt/retropie/configs/atari2600/retroarch.cfg |
+| [Stella](http://stella.sourceforge.net/) | atari2600 | .bin .a26 .rom .zip .gz | none | hardcoded |
 
 ## Emulators: [Stella](http://stella.sourceforge.net/), [lr-stella](https://github.com/libretro/stella-libretro)
 
 ## ROMS
-Accepted File Extensions: **.bin .a26 .rom**
+Accepted File Extensions: **.bin .a26 .rom .zip .gz**
 
 Place your Atari 2600 ROMS in
 ```shell
