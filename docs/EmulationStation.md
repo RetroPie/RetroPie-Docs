@@ -88,7 +88,7 @@ Your controller driver is likely being started after EmulationStation. An easy w
 
 ### How do I add another controller to navigate and control ES?
 
-Open the Main Menu by pressing ```Start``` on the original controller that you have already setup. Then navigate to Configure Input and press ```A``` to start. Now on the other controller press and hold down any button. This should bring up the option to setup this controller. When finished, navigate to the OK button on screen, then press the button that you set as ```A``` on your controller to exit.
+Open the Main Menu by pressing ```Start``` on the original controller that you have already setup. Then navigate to Configure Input and press ```A``` to start. Now on the other controller press and hold down any button. This should bring up the option to setup this controller. Just follow the on-screen directions. When finished, navigate to the OK button on screen, then press the button that you set as ```A``` on your recently configured controller to exit.
 
 ### I don't have enough buttons to finish the Configure Input screen?!
 
