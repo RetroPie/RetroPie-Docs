@@ -37,3 +37,15 @@ Add custom retroarch controls to the retroarch.cfg file in
 /opt/retropie/configs/zxspectrum/retroarch.cfg
 ```
 For more information on custom RetroArch controls see: [RetroArch Configuration](https://github.com/petrockblog/RetroPie-Setup/wiki/RetroArch-Configuration)
+
+By default, 
+
+* Buttons A, X and Y are mapped to the joystick's fire button, and button B is mapped to the UP directional button. 
+* Buttons L1 and R1 are mapped to RETURN and SPACE, respectively. 
+* The SELECT button brings up the embedded, on-screen keyboard.
+
+If you are using more than one joystick, then it is worth reading the [official documentation](https://github.com/libretro/fuse-libretro#input-devices) at lr-fuse Github page.
+
+The default joystick emulated by lr-fuse is the Cursor joystick. If you wish to set Kempston as your default, then add the following line to the file `/opt/retropie/configs/all/zxspectrum/retroarch.cfg`:
+
+    input_libretro_device_p1 = "513"
