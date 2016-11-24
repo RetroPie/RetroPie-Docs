@@ -42,15 +42,12 @@ sudo apt-get install bluetooth vorbis-tools python-cwiid wminput
 
 ### Getting the wiimotes to work
 
-uinput device needs to work with non-root users. To do so, create a wiimote rule file using your text editor of choice. I use nano and will continue to do so for the entire method.
+uinput device needs to work with non-root users. To do so, create a wiimote rule file.
 
 ```shell
-sudo nano /etc/udev/rules.d/wiimote.rules
-```
-and paste the text below into it:
-```shell
+sudo tee /etc/udev/rules.d/wiimote.rules << EOF
 KERNEL=="uinput", MODE="0666"
-
+EOF
 ```
 
 That's the rule implementation done. Save the text file with ```CTRL + X``` and press ```Y``` to confirm. To make this change active, reboot the Raspberry Pi, or paste this command at the command line:
@@ -77,10 +74,7 @@ You should get something similar to the below output which returns that the blue
 
 For every wiimote, we need one wminput command to map the wiimote (and the classic controller) buttons to something emulationstation and the emulators can work with. wminput comes with configuration files (in directory /etc/cwiid/wminput). I created my own configuration file, which works if you use a wiimote with or without a classic controller. Create the file wminput which will reside in our pi's home directory:
 ```shell
-nano /home/pi/mywminput
-```
-and paste the following contents:
-```shell
+tee /home/pi/mywminput << EOF
 # Classic-Controller
 Classic.Dpad.X = ABS_X
 Classic.Dpad.Y = ABS_Y
@@ -114,6 +108,7 @@ Wiimote.2		= BTN_Y
 # Nunchuk
 Nunchuk.C = BTN_C
 Nunchuk.Z = BTN_Z
+EOF
 ```
 
 If you want your WiiMotes giving a connection status, just add an additional line to your `mywminput` file:
