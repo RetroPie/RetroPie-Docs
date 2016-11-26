@@ -26,6 +26,8 @@ __Note: Do not enable other bluetooth options as these will conflict with the PS
 
 And you now have a functional PS3 controller over Bluetooth.
 
+Some PS3 Controller clones (such as the Shanwan PS3 Controllers) will not connect over bluetooth until they are physically connected and removed from a normal USB connection.  If you are having issues pairing a controller, try connecting it via USB for several seconds, disconnecting it, and then pairing it over Bluetooth.
+
 ### Using the RetroPie shell to configure the PS3 Controller Bluetooth Connection
 
 __Note: Do not enable other bluetooth options as these will conflict with the PS3 specific bluetooth setup (sixad)__
