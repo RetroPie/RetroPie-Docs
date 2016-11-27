@@ -49,6 +49,14 @@ the alternate BIOS files above can be renamed: bios_CD_E.bin, bios_CD_J.bin (Eur
   
 Video Guide using lr-genesis-plus-gx: https://www.youtube.com/watch?v=PkktRuK8uWU
 
+### Checksums
+
+| lr-picodrive filename | lr-Genesis-Plus-GX filename | No-Intro filename | md5sum |
+| :---: | :---: | :---: | :---: |
+| us_scd1_9210.bin | bios_CD_U.bin | [BIOS] Sega CD (USA) (v1.10).md | 2efd74e3232ff260e371b99f84024f7f |
+| eu_mcd1_9210.bin | bios_CD_E.bin | [BIOS] Mega-CD (Europe) (v1.00).md | e66fa1dc5820d254611fdcdba0662372 |
+| jp_mcd1_9112.bin | bios_CD_J.bin | [BIOS] Mega-CD (Asia) (v1.00S).md | bdeb4c47da613946d422d97d98b21cda |
+
 ## Controls
 
 lr-picodrive and lr-genesis-plus-gx utilise RetroArch configurations
