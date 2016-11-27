@@ -45,7 +45,7 @@ Total Games Emulated: 203
 
 ## BIOS
 
-Neo-Geo ROMs require a `neogeo.zip` BIOS file. Place this with your ROMs in
+Neo-Geo ROMs require a `neogeo.zip` BIOS file (md5um `9323dfa8b1fd45b071f5ec84317d01aa`). Place this with your ROMs in
 ```
 /home/pi/RetroPie/roms/neogeo
 ```
