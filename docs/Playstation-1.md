@@ -71,6 +71,7 @@ See table at the bottom for alternative BIOS options that may or may not work.
 
 ## Controls
 
+### lr-pcsx-rearmed Controls
 lr-pcsx-rearmed utilises Retroarch configurations
 
 Add custom retroarch controls to the retroarch.cfg file in
@@ -81,6 +82,7 @@ For more information on custom RetroArch controls see: [RetroArch Configuration]
 
 ![playstation3_diagram](https://cloud.githubusercontent.com/assets/10035308/16599634/7f353148-42c0-11e6-9023-dbaf074bc933.png)
 
+### pcsx-rearmed Controls
 pcsx-rearmed controls and configurations are located in
 ```
 /opt/retropie/configs/psx/pcsx.cfg
