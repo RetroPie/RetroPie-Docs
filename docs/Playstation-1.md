@@ -85,11 +85,9 @@ pcsx-rearmed controls and configurations are located in
 ```
 /opt/retropie/configs/psx/pcsx.cfg
 ```
-
-An example mapping for an Xbox 360 controller is below for reference:
+An example mapping for pcsx-rearmed using an Xbox 360 controller is below for reference:
 
 **Xbox 360 Controller**
-
 ```
 binddev = sdl:Xbox 360 Wireless Receiver (XBOX)
 bind backspace = Fast Forward
