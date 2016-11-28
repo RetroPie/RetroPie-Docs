@@ -86,6 +86,11 @@ UUID=E44B-FC4E  /home/pi/RetroPie      vfat    nofail,user,uid=pi,gid=pi 0      
 ```
 ...where `UUID=` the UUID of your drive, and everything else is the same as the example.
 
+In the case of errors with ext4 file systems use
+```
+UUID="XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXX" /home/pi/RetroPie ext4 nofail,defaults 0    0
+``` 
+
 ## Restart system
 This must be a full restart, not just emulationstation. When it boots up you should see any ROMs you previously had show up in emulationstation.
 
