@@ -81,6 +81,50 @@ For more information on custom RetroArch controls see: [RetroArch Configuration]
 
 ![playstation3_diagram](https://cloud.githubusercontent.com/assets/10035308/16599634/7f353148-42c0-11e6-9023-dbaf074bc933.png)
 
+pcsx-rearmed controls and configurations are located in
+```
+/opt/retropie/configs/psx/pcsx.cfg
+```
+
+An example mapping for an Xbox 360 controller is below for reference:
+
+**Xbox 360 Controller**
+
+```
+binddev = sdl:Xbox 360 Wireless Receiver (XBOX)
+bind backspace = Fast Forward
+bind \xA0 = player1 CROSS
+bind \xA1 = player1 SQUARE
+bind \xA2 = player1 CIRCLE
+bind \xA3 = player1 TRIANGLE
+bind \xA4 = player1 L1
+bind \xA5 = player1 R1
+bind \xA6 = player1 L2
+bind \xA7 = player1 R2
+bind \xA8 = player1 SELECT
+bind \xA9 = player1 START
+bind \xAA = Enter Menu
+bind \xAB = player1 L3
+bind \xAC = player1 R3
+bind \xAD = player1 LEFT
+bind \xAE = player1 RIGHT
+bind \xAF = player1 UP
+bind \xB0 = player1 DOWN
+bind up = player1 UP
+bind down = player1 DOWN
+bind right = player1 RIGHT
+bind left = player1 LEFT
+bind f1 = Save State
+bind f2 = Load State
+bind f3 = Prev Save Slot
+bind f4 = Next Save Slot
+bind f5 = Toggle Frameskip
+bind f7 = Show/Hide FPS
+bind f8 = Switch Renderer
+bind f11 = Toggle fullscreen
+bind f12 = Take Screenshot
+```
+
 ### Video Guide  
 
 <a href="https://www.youtube.com/watch?v=a7JtysTXaAU
