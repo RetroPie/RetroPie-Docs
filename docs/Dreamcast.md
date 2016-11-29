@@ -57,7 +57,7 @@ VMUs are stored as .BIN files under `/home/pi/.reicast/`, and will be automatica
 
 On occasion, these VMUs do not get formatted quite right during creation, and the Dreamcast can't save or load data from them.  They just need to be reformatted -- run the `SYSTEMMANAGER` entry in the EmulationStation Dreamcast menu and / or see [this post](http://blog.petrockblock.com/forums/topic/configuring-controllers-in-reicast/page/2/#post-99715) for details. 
 
-A Dreamcast soft-reset (A+B+X+Y+Start buttons at the same time) after loading ROM will also take you into the Dreamcast BIOS. After formatting VMU's, exit the emulator and restart. Pressing 'Play' will cause Reicast to crash.
+A Dreamcast soft-reset (A+B+X+Y+Start buttons at the same time) at the ROM's title screen will also take you into the Dreamcast BIOS to manage the VMU's. After formatting VMU's, exit the emulator and restart. Pressing 'Play' will cause Reicast to crash.
 
 ## Controls
 Starting with RetroPie 3.3 controls for the Dreamcast Emulator are automatically configured when you configure your controls through emulationstation.
