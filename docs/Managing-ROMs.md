@@ -21,7 +21,7 @@ For further details, see the system-specific wiki pages for [MAME](https://githu
 
 Arcade ROMs are tied to the version of the arcade emulator, because the definition of what is the "correct" contents and usage of the ROM can change from version to version of the emulator.
 
-For example, MAME2003 is based off the MAME 0.78 source code, so you must use the MAME 0.78 ROM set with MAME2003. If you use ROMs which are from an earlier or later MAME version, such as 0.50 or 0.100 or 0.173, then those ROMs probably will not work with MAME2003 because that other version's definition of the correct ROM is different from 0.78's definition of the correct ROM.
+For example, MAME2003 is based off the MAME 0.78 source code, so you must use a MAME 0.78 ROM set with MAME2003. If you use ROMs which are from an earlier or later MAME version, such as 0.50 or 0.100 or 0.173, then those ROMs probably will not work with MAME2003 because that other version's definition of the correct ROM is different from 0.78's definition of the correct ROM.
 
 RetroPie includes forks of the [MAME](http://mamedev.org/) emulator that work well on the Raspberry Pi hardware, but are based on older versions of the emulator code. The [Final Burn Alpha](http://www.fbalpha.com/) emulator usually performs better than MAME but supports less games, a current and earlier FBA are available in RetroPie.
 
