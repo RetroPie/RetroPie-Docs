@@ -111,7 +111,7 @@ sudo nano /home/pi/RetroPie/roms/kodi/kodi.sh
 add the following line:
 
 ```
-kodi-standalone
+kodi
 ```
 save you changes with `ctrl+x` , `y` , `enter`
 
