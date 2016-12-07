@@ -41,14 +41,7 @@ You can enable and disable different functions of the Runcommand Launch Menu. Th
 
 ## Adding custom launching images
 
-Since 4.0.3 the runcommand can show a custom "launching" image instead of the traditional dialog infobox. The custom launching images must be placed at `/opt/retropie/configs/SYSTEM_NAME/` and named as "launching.jpg" or "launching.png".
-
-The conditions to show the custom launching image are:
-- Launch menu: enabled
-- existence of the `launching.jpg` or `launching.png` file in the proper config directory.
-- Launch menu art:
-  - disabled **OR**...
-  - enabled, **AND** there's no emulationstation art for the chosen game.
+Since 4.0.3 the runcommand can show a custom "launching" image instead of the traditional dialog infobox. The custom launching images must be placed at `/opt/retropie/configs/SYSTEM_NAME/` and named as "launching.jpg" or "launching.png". But be aware tht if "Launch Menu Art" is enabled, the scaped box art image takes precedence.
 
 Example: if you have a cool NES related image and want to show it right before launching a NES game, you have to name the image file as `/opt/retropie/configs/nes/launching.jpg`.
 
