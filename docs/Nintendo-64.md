@@ -370,3 +370,5 @@ C Button U = button(0)
 ; Generic USB Joystick _END
 
 ```
+
+(RetroLink controller config source)[https://www.reddit.com/r/RetroPie/comments/4mbpur/need_help_mapping_n64_retrolink_controller_to/]
