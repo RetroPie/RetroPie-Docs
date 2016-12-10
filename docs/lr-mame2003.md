@@ -145,6 +145,18 @@ The option is:
 mame2003-rstick_to_btns = "enabled"
 ```
 
+## TATE mode
+
+For users who have a rotatable display, this mode shows vertical games (e.g. Pac-Man, Centipede, Galaga, etc) at their original aspect ratio, and will display along the length of the screen with the right configuration. This is disabled by default, but can be enabled via a setting in the `retroarch-core-options.cfg` file, found in:
+```
+/opt/retropie/configs/all/
+```
+The option is:
+```
+mame2003-tate_mode = "enabled"
+```
+In addition to this, you will want to stop rotating the games and instead show them in along the length of the screen, `video_allow_rotate` in mame-libretro/arcade to false via the [[Configuration Editor]].
+
 ## Feature requests
 
 Please use the [forum](https://retropie.org.uk/forum) for all support issues, but feature requests can be made on the [GitHub page](https://github.com/libretro/mame2003-libretro).
