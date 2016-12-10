@@ -10,7 +10,7 @@ _Final Burn Alpha is a Multiple Arcade Emulator most popular for emulating Neo-G
 | [lr-fbalpha2012](https://github.com/libretro/fbalpha2012) | arcade **or** fba **or** neogeo  | .zip | neogeo.zip | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/fba/retroarch.cfg, **or** /opt/retropie/configs/neogeo/retroarch.cfg |
 | [PiFBA](https://github.com/RetroPie/pifba) | arcade **or** fba **or** neogeo  | .zip | neogeo.zip | /opt/retropie/emulators/pifba/fba2x.cfg **or** /opt/retropie/configs/fba/fba2x.cfg |
 
-## Emulators: [PiFBA](https://github.com/RetroPie/pifba), [lr-fbalpha2010](https://github.com/libretro/fbalpha2012), [lr-fbalpha](https://github.com/libretro/fbalpha)
+## Emulators: [PiFBA](https://github.com/RetroPie/pifba), [lr-fbalpha2012](https://github.com/libretro/fbalpha2012), [lr-fbalpha](https://github.com/libretro/fbalpha)
 
 lr-fbalpha is favoured as it is mature, runs the current FBA romset, and enjoys all the usual libretro/RetroArch advantages of automatic controller configuration, shaders, etc. PiFBA is an earlier romset, not libretro/RetroArch, but still can be useful for Raspberry Pi 1/0 users as it is heavily optimised.
 
