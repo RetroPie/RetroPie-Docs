@@ -53,31 +53,33 @@ The sub-directories that need to be copied are as followed:
 
 #### Stratagus Hotkeys
 
-F1 = Help Menu
-Ctrl + H = Help Menu
-Alt + H = Help Menu
-Shift + F2 = save map location 1
-Shift + F3 = save map location 2
-Shift + F4 = save map location 3
-F2 = Recall map location 1
-F3 = Recall map location 2
-F4 = Recall map location 3
-F5 = Game Options Menu
-F6 = Speed Options
-F7 = Sound Options
-F8 = Preferences
-F9 = Diplomacy
-F10 = Game Menu
-F11 = Save
-F12 = Load
-Ctrl + X = Exit Stratagus
-Alt + X = Exit Stratagus
-Ctrl + Q = Quit to Menu
-Alt + Q = Quit to Menu
-Ctrl + R = Restart Scenario
-Ctrl + M = Toggle Music
-Ctrl + S = Toggle Sound
-Alt + C = Center map on currently selected unit(s)
-Tab = Toggle Terrain
-+ = Increase game speed
-- = Decrease Game speed
+Hotkeys | Action
+| :---: | :---: |
+F1 | Help Menu
+Ctrl + H | Help Menu
+Alt + H | Help Menu
+Shift + F2 | Save map location 1
+Shift + F3 | Save map location 2
+Shift + F4 | Save map location 3
+F2 | Recall map location 1
+F3 | Recall map location 2
+F4 | Recall map location 3
+F5 | Game Options Menu
+F6 | Speed Options
+F7 | Sound Options
+F8 | Preferences
+F9 | Diplomacy
+F10 | Game Menu
+F11 | Save
+F12 | Load
+Ctrl + X | Exit Stratagus
+Alt + X | Exit Stratagus
+Ctrl + Q | Quit to Menu
+Alt + Q | Quit to Menu
+Ctrl + R | Restart Scenario
+Ctrl + M | Toggle Music
+Ctrl + S | Toggle Sound
+Alt + C | Center map on currently selected unit(s)
+Tab | Toggle Terrain
++ | Increase game speed
+- | Decrease Game speed
