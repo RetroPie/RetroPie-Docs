@@ -51,19 +51,19 @@ The sub-directories that need to be copied are as followed:
 
 `/home/pi/.stratagus/wc2/preferences.lua`
 
-#### Stratagus Hotkeys
+### Stratagus Hotkeys
 
 Hotkeys | Action
 | :---: | :---: |
 F1 | Help Menu
 Ctrl + H | Help Menu
 Alt + H | Help Menu
-Shift + F2 | Save map location 1
-Shift + F3 | Save map location 2
-Shift + F4 | Save map location 3
-F2 | Recall map location 1
-F3 | Recall map location 2
-F4 | Recall map location 3
+Shift + F2 | Save Map Location 1
+Shift + F3 | Save Map Location 2
+Shift + F4 | Save Map Location 3
+F2 | Recall Map Location 1
+F3 | Recall Map Location 2
+F4 | Recall Map Location 3
 F5 | Game Options Menu
 F6 | Speed Options
 F7 | Sound Options
@@ -79,7 +79,7 @@ Alt + Q | Quit to Menu
 Ctrl + R | Restart Scenario
 Ctrl + M | Toggle Music
 Ctrl + S | Toggle Sound
-Alt + C | Center map on currently selected unit(s)
+Alt + C | Center Map on Currently Selected Unit(s)
 Tab | Toggle Terrain
-+ | Increase game speed
++ | Increase Game speed
 - | Decrease Game speed
