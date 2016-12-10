@@ -26,11 +26,14 @@ Wargus is a Warcraft II Mod that allows you to play Warcraft II with the Stratag
 
 **Note: this will not work with the Battle.net Edition of Warcraft II**
 
-First, you don't get it to work just by copying your Warcraft 2 CD over to your Raspberry Pi. You actually run the Wargus installer from either Windows, Mac OS X or Linux (not sure if it works on an ARM Linux). I did the Windows route and this is how I did it:
+Windows XP users might have trouble extracting the data needed from the Warcraft II installation location.
+http://wargus.github.io/faq.html#winxp
 
-* Go to the [official Wargus website](http://wargus.github.io/) and download the Windows version of Wargus v2.4.1 or newer (there is also a YouTube video on that site showing you how to install this)
-* Now install Wargus and the installation will ask for your Warcraft II data so point it to your CD (or if you have your data copied to your hard drive then point to there)
-* (optional) next if you have the Expansion Pack "Beyond the Dark Portal" then point the installer to that data (I don't have this so I skipped this)
+First, you don't get it to work just by copying your Warcraft II CD over to your Raspberry Pi. You actually run the Wargus installer from either Windows, Mac OS X or Linux (not sure if it works on an ARM Linux). I did the Windows route and this is how I did it:
+
+* Go to the [official Wargus website](http://wargus.github.io/) and download the Windows version of Wargus v2.4.1 or newer (there is also a [YouTube video](https://www.youtube.com/watch?v=fnY13i105LE) showing you how to install this)
+* Now install Wargus and the installation will ask for your Warcraft II data so point it to your CD (or if you have your data copied to your hard drive then point to that directory)
+* (Optional) if you have the Expansion Pack "Beyond the Dark Portal" then point the installer to that data (this can be skipped if you don't have the Expansion Pack)
 * At the end of the install you can go ahead and launch Warcraft II to make sure it works and if it does then we're ready to start copying data over to your Raspberry Pi
 * In Windows navigate to "C:\Program Files (x86)\Wargus" or "C:\Program Files\Wargus" and only copy the sub-directories to `/home/pi/RetroPie/roms/stratagus/warcraft2.data` on your Raspberry Pi
 
@@ -44,6 +47,37 @@ The sub-directories that need to be copied are as followed:
 * sounds
 * videos
 
-#### Warcraft II settings file Location for Wargus
+#### Wargus/Warcraft II settings file Location for Stratagus
 
 `/home/pi/.stratagus/wc2/preferences.lua`
+
+#### Stratagus Hotkeys
+
+F1 = Help Menu
+Ctrl + H = Help Menu
+Alt + H = Help Menu
+Shift + F2 = save map location 1
+Shift + F3 = save map location 2
+Shift + F4 = save map location 3
+F2 = Recall map location 1
+F3 = Recall map location 2
+F4 = Recall map location 3
+F5 = Game Options Menu
+F6 = Speed Options
+F7 = Sound Options
+F8 = Preferences
+F9 = Diplomacy
+F10 = Game Menu
+F11 = Save
+F12 = Load
+Ctrl + X = Exit Stratagus
+Alt + X = Exit Stratagus
+Ctrl + Q = Quit to Menu
+Alt + Q = Quit to Menu
+Ctrl + R = Restart Scenario
+Ctrl + M = Toggle Music
+Ctrl + S = Toggle Sound
+Alt + C = Center map on currently selected unit(s)
+Tab = Toggle Terrain
++ = Increase game speed
+- = Decrease Game speed
