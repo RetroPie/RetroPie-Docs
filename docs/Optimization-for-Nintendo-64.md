@@ -23,7 +23,7 @@ To learn the community tested optimal settings please view either of the 2 rom c
 https://docs.google.com/spreadsheets/d/1Wjzbu90l6eCEW1w6ar9NtfyDBQrSPILQL5MbRSpYSzw/edit?usp=sharing).
 From Retropie 4 and on Glide is the Default Emulator and render has been hard coded to 320x240. 
 This can be scaled up for some games that perform really well like Mario kart and Super Mario 64 at your own discretion. 
-If you wish to enable a High Resolutin Texture pack you will want to select the Glide or Rice High Rez options under category 2. 
+If you wish to enable a High Resolution Texture pack you will want to select the Glide or Rice High Rez options under category 2. 
 
 
 ##CPU-Governor
