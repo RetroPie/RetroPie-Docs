@@ -15,7 +15,7 @@ You can check your free disk space with
 ```
 After that, we install the needed packages for the RetroPie setup script:
 ```
-    sudo apt-get install -y git dialog
+    sudo apt-get install git lsb-release
 ```
 Then we download the latest RetroPie setup script with
 ```
