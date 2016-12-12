@@ -62,7 +62,7 @@ You can press CONTROL-C to exit the test. In this example, moving the second spi
 ## Configuring RAW, PS2 for all possible mouse inputs
 Depending on your setup, you might have an external mouse, a spinner, a mouse and a spinner, no mouse and two spinners, one spinner and a trackball, a mouse only during setup, etc.. Linux will see all of these as mouse inputs, but AdvanceMAME might not see them with the same index. For example, if you boot with an external mouse, it might be detected as mouse0 and your spinner as mouse1, but if you boot the same system without the external mouse attached, everything might ratchet down (spinner becomes mouse0). As long as you aren't changing your hardware configuration everything should stay where it is, but if you routinely connect an external mouse to troubleshoot or launch the desktop, this can be frustrating. We can overcome it by mapping multiple inputs _together_ in AdvanceMAME.
 
-For starters, we need to enable all possible mouse inputs in the configuration file (we will edit the configuration for AdvanceMAME 1.4).
+For starters, we need to enable all possible mouse inputs in the configuration file (we will edit the configuration for AdvanceMAME 1.4, but if you use multiple versions of AdvanceMAME, you need to make edits in each respective config).
 
 Find these lines in `/opt/retropie/configs/mame-advancemame/advmame-1.4.rc` and update them as shown:
 ```
@@ -79,7 +79,7 @@ device_raw_mousetype[3] ps2
 This establishes 4 different mouse inputs which is probably more than most people will need.
 
 ## Mapping Specific Controls
-The following configurations can depend on your hardware setup. You can make adjustments as needed, especially if you have multiple inputs you are trying to configure. These configurations are also done in `/opt/retropie/configs/mame-advancemame/advmame-1.4.rc`.
+The following configurations can depend on your hardware setup. You can make adjustments as needed, especially if you have multiple inputs you are trying to configure. Note that you cannot make the mapping selections inside the MAME GUI. Even a properly configured mouse input may not look correct inside the MAME menus even though it works. To setup the proper mapping, you need to edit the configuration again in `/opt/retropie/configs/mame-advancemame/advmame-1.4.rc`.
 
 ### Trackball
 Since most trackball games will be emulated in AdvanceMAME using Player1, configure these lines as follows:
