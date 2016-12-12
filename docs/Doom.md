@@ -1,7 +1,7 @@
 ![](http://1.bp.blogspot.com/-q1BVHMrTq7M/UT9Y6D_tCLI/AAAAAAAAD40/fM2ZUTzEIqE/s1600/risen3d+3d+models+doom+title.png)
 
 ***
-_Doom was one the game the popularised First Person Shooting as a genre. It was developed by Id Software in 1993._
+_Doom was one the game that popularised First Person Shooting as a genre. It was developed by Id Software in 1993._
 
 ***
 ## Emulator: [libretro-prboom](https://github.com/petrockblog/RetroPie-Setup/blob/master/scriptmodules/libretrocores/lr-prboom.sh), [ZDOOM](https://github.com/rheit/zdoom)
