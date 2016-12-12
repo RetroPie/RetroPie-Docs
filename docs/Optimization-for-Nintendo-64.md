@@ -2,7 +2,7 @@
 
 Nintendo 64 emulation requires at a bare minimum a Raspberry Pi 2 and a Raspberry  Pi 3 is highly suggested due to its increased performance. 
 
-A note on overclocking A raspi 3 on default settings is comparable in speed to an overclocked raspi 2. 
+A note on overclocking: A raspi 3 on default settings is comparable in speed to an overclocked raspi 2. 
 
 
 Suggested overclock for Raspi 3 for optimal N64 emulation (This to be paired with proper power, cooling, please see [this article](https://github.com/retropie/retropie-setup/wiki/Overclocking) for further information.)
