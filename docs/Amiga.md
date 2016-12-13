@@ -47,7 +47,7 @@ z          - mouse 1  (button B in gui)
 
 arrow keys - up / down / left / right
 
-F12 and/or [CTRL]+[ESC] - Open emulator menu
+F12 (UAE4ARM) and/or [CTRL]+[ESC] (UAE4ALL) - Open emulator menu
 ```
 
 Launch it from Emulation Station, and you get the GUI where you can configure disks/roms/memory and insert adf images into the virtual floppy disk drives.
