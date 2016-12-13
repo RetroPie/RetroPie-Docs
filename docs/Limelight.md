@@ -1,6 +1,12 @@
 # Quickguide for configuring limelight with Retropie and Emulation Station
 
-## Note: Limelight no longer works for newer Geforce Experience versions, see: https://github.com/irtimmer/moonlight-embedded/issues/169. Limelight has been supplanted by [Moonlight](https://github.com/moonlight-stream), for which there is no current, official support.
+## Note: Limelight no longer works for newer Geforce Experience versions.
+
+See: https://github.com/irtimmer/moonlight-embedded/issues/169.
+
+Limelight has been supplanted by [Moonlight](https://github.com/moonlight-stream), for which there is no current, official support.
+
+## Guide
 
 This guide will enable your Raspberry PI to work with NVIDIA Gamestream to stream Steam games to your Raspberry pi. To use this Guide you must have a Gamestream ready PC with a Gamestream enabled NVIDIA GPU. Geforce experience app should be version 2.2.2 or newer!
 
