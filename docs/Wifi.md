@@ -1,11 +1,14 @@
 # Configuring Wifi
 
-First check to see if your wifi dongle is [compatible](http://elinux.org/RPi_USB_Wi-Fi_Adapters):
+If you have a Raspberry Pi 3, wifi is built into the pi, if you have a pi2 or earlier you'll need a wifi dongle, you can check to see if your wifi dongle is compatible [here](http://elinux.org/RPi_USB_Wi-Fi_Adapters):
 
 There are 5 main methods to configure Wifi:
 
 1. [Wifi Module](https://github.com/retropie/retropie-setup/wiki/Wifi#method-1-easiest)
-2. [Connecting to Wifi Without a Keyboard](
+2. [Connecting to Wifi Without a Keyboard](https://github.com/retropie/retropie-setup/wiki/Wifi#method-2-connecting-to-wifi-without-a-keyboard)
+3. [Manual Configuration (Interfaces)](https://github.com/retropie/retropie-setup/wiki/Wifi#method-3-interfaces)
+4. [Manual Configuration (WPA_Supplicant)](https://github.com/retropie/retropie-setup/wiki/Wifi#method-4-wpa_supplicantconf)
+5. [WCID-Curses Daemon](https://github.com/retropie/retropie-setup/wiki/Wifi#method-5-wicd-curses)
 
 ## Method 1 (Easiest)
 
