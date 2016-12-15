@@ -2,7 +2,10 @@
 
 First check to see if your wifi dongle is [compatible](http://elinux.org/RPi_USB_Wi-Fi_Adapters):
 
-There are 4 main methods to configure Wifi.
+There are 5 main methods to configure Wifi:
+
+1. [Wifi Module](https://github.com/retropie/retropie-setup/wiki/Wifi#method-1-easiest)
+2. [Connecting to Wifi Without a Keyboard](
 
 ## Method 1 (Easiest)
 
@@ -26,7 +29,23 @@ After it's done configuring you should see your wifi info in the original menu:
 
 ![wifiinfo](https://cloud.githubusercontent.com/assets/10035308/9141742/226f50de-3cf8-11e5-8b6b-328f2110e655.png)
 
-## Method 2 (INTERFACES)
+## Method 2 (Connecting to Wifi without a keyboard)
+
+If you wish to connect to wifi without needing an extra keyboard you can add a file to the boot partition of the sd card called `wifikeyfile.txt`
+
+place your network details here (note only works on WPA networks)
+```
+ssid="NETWORK_NAME"
+psk="NETWORK_PASSWORD"
+```
+
+You can then access the wifi module and select the option to "Import wifi credentials from `/boot/wifikeyfile.txt`"
+
+![wifi_text](https://cloud.githubusercontent.com/assets/10035308/21238882/8fe42822-c2b9-11e6-9506-ddfc41fa2016.png)
+
+
+
+## Method 3 (INTERFACES)
 
 `sudo nano /etc/network/interfaces`
 
@@ -115,7 +134,7 @@ gateway 192.168.0.1 #(almost always the same as well. you can verify with netsta
 
 on reboot (if configured correctly) your wifi will be working.
 
-## Method 3 (wpa_supplicant.conf)
+## Method 4 (wpa_supplicant.conf)
 
 **Taken from the Raspberry Pi Foundation [here](http://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md):**
 
@@ -206,7 +225,7 @@ At this point,` wpa-supplicant` will normally notice a change has occurred withi
 
 You can verify if it has successfully connected using `ifconfig wlan0`. If the `inet addr` field has an address beside it, the Pi has connected to the network. If not, check your password and ESSID are correct.
 
-## Method 4 (Wicd-Curses) 
+## Method 5 (Wicd-Curses) 
 
 Note that this may cause a small amount of background cpu usage, which can stop the CPU from scaling to lowest frequency.
 
