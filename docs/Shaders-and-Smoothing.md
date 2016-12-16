@@ -40,7 +40,7 @@ Shaders are small programs that a dedicated graphics chip (GPU) runs to alter th
 2. `crt-pi-curvature.glslp`
 ![](http://i.imgur.com/xsLAmVk.jpg)
 
-The second two presets are `crt-pi-vertical.glslp` and `crt-pi-curvature-vertical.glslp`, described in (link to vertical section)
+The second two presets are `crt-pi-vertical.glslp` and `crt-pi-curvature-vertical.glslp`, described in [Vertical games](#vertical-games)
 
 ## Installation
 
