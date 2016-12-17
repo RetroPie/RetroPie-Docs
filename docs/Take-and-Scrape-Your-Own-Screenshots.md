@@ -141,6 +141,8 @@ it will create a gamelist.xml file in `/home/pi/RetroPie/roms/snes` which takes 
 
 and if all went according to plan, when you boot emulationstation back up your images will be the screenshots that you took! TADA!
 
+Also if you want to only add images and leave metadata out entirely you can tell it not to scrape from any databases with `-use_gdb=false -use_ovgdb=false`
+
 ### Behind the Code
 
 The following is all taken care of by the aformentioned script but if you're interested this explains essentially what the code is doing (and how you can set it up manually without a script)
