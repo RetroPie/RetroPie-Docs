@@ -36,7 +36,7 @@ Or you can enable it from Runcommand  Go to Retropie-Setup - Setup and Configura
 then cancel exit and reboot
 
 
-##Note's on Audio
+##Notes on Audio
 Audio
 
 Use HDMI as composite requires more CPU usage.
