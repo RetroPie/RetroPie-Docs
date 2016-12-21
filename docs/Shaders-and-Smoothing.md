@@ -48,7 +48,7 @@ The second two presets are `crt-pi-vertical.glslp` and `crt-pi-curvature-vertica
 
 You can select either preset via the [[Configuration editor]]. Choose `Configure basic libretro emulator options`, then choose a specific emulator or `Configure default options for all libretro emulators` to make the change system-wide. Then, set `Video Shader Enable` to `true` and then set `Video Shader File` to the desired shader.
 
-### Vertical games
+### Scaling artifacts (particularly in Vertical games)
 
 Some arcade games were run on a vertical CRT; literally a regular TV flipped over on its side. Whilst libretro shaders are will automatically rotate for this, the shadow mask effect does not, causing an unsightly 'rainbow' effect. Rather than add logic to the shader (making it slower), a special version for vertical games is available:
 
@@ -58,7 +58,7 @@ Some arcade games were run on a vertical CRT; literally a regular TV flipped ove
 4. `crt-pi-curvature-vertical.glslp`
 ![](http://i.imgur.com/I9X0SJr.jpg)
 
-This shader can be automatically applied to the relevant vertical games via configuration overrides. A set of these overrides is available for [[lr-mame2003]] in [this thread](https://retropie.org.uk/forum/topic/4046/crt-pi-shader-users-automatic-usage-of-crt-pi-vertical-in-vertical-games-in-lr-mame2003).
+Both vertical and horizontal games can be improved further by using special override CFGs that increase the accuracy and alignment of the scanline effect. A set of these overrides is available for [[lr-mame2003]] and [[lr-fbalpha]] in [this thread](https://retropie.org.uk/forum/topic/4046/crt-pi-shader-users-reduce-scaling-artifacts-in-lr-mame2003-lr-fbalpha-horizontal-and-vertical-games).
 
 ## NTSC filters
 
