@@ -70,4 +70,4 @@ Retroarch includes the facility to apply a basic bilinear smoothing filter acros
 
 ![](https://retropie.org.uk/forum/uploads/files/1478902457187-upload-4c1d9b59-a473-43d3-9a56-cc50506ef690.png)
 
-This setting can be enabled in the configuration editon. Look for 'Video Smoothing'
+This setting can be enabled in the [[Configuration Editor]. Look for 'Video Smoothing'. It won't affect shaders, which control this setting independently.
