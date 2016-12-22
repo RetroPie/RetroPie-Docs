@@ -80,13 +80,17 @@ rp_module_desc="GameMaker - Games for the Raspberry Pi"
 rp_module_section="exp"
 rp_module_flags="!mali !x86"
 
+function depends_gamemaker() {
+    getDepends libopenal-dev
+}
+
 function install_bin_gamemaker() {
-# Install They Need To Be Fed Game
-wget -O- -q https://www.yoyogames.com/download/pi/tntbf | tar -xvz -C "$md_inst"
-# Install Super Crate Box Game
-wget -O- -q https://www.yoyogames.com/download/pi/crate | tar -xvz -C "$md_inst"
-# Install Maldita Castilla Game
-wget -O- -q https://www.yoyogames.com/download/pi/castilla | tar -xvz -C "$md_inst"
+    # Install They Need To Be Fed Game
+    wget -O- -q https://www.yoyogames.com/download/pi/tntbf | tar -xvz -C "$md_inst"
+    # Install Super Crate Box Game
+    wget -O- -q https://www.yoyogames.com/download/pi/crate | tar -xvz -C "$md_inst"
+    # Install Maldita Castilla Game
+    wget -O- -q https://www.yoyogames.com/download/pi/castilla | tar -xvz -C "$md_inst"
 }
 
 function configure_gamemaker() {
