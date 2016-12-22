@@ -88,6 +88,23 @@ Select+Left | Input State Slot Decrease | input_state_slot_decrease_btn = "h0lef
 Select+X | RGUI Menu | input_menu_toggle_btn = "3"
 Select+B | Reset | input_reset_btn = "0"
 
+#### Determining Button Values
+
+If you want to edit the entries in the .cfg file for your controller, you will need to know the values corresponding to the buttons on your controller.  Usually the relationship between the two can be deduced by looking at the file and noting the entries' names along with the values next to them, assuming that the values have not been jumbled from previous edits or been mixed up due to unknown issues.  For example, the USB gamepad above has an entry for `input_x_btn = "0"`, indicating that the "X" button on the controller (or the button that you associated as "X" during controller setup in EmulationStation) has a value of "0."
+
+On the other hand, maybe you are not sure if the values in the .cfg file is correct or the file is missing entries for buttons that are available on your own controller, such as a "Home" button.  You can run _jstest_ (joystick test) in the terminal by selecting _Quit EmulationStation_ (a keyboard will be required for the following steps).
+
+In the terminal, type and enter     
+`jstest /dev/input/js0`     
+
+Replace js0 with js1, js2, js3, etc. as needed if not detected.
+
+A multitude of rows and columns should appear.  Pressing buttons or moving analog sticks/joystick will cause various entries in the columns to swap between on and off and fluctuate through a range of numbers.  The value next to an on/off entry corresponds to the button that you have pressed.  The fluctuation of numbers from -32767 to 32767 correspond to the input on your controller that has a range of motion, such as analog sticks/triggers.
+
+If you are interested in figuring out which is your "Select" button, pressing and holding "Select" on your controller will cause one column to switch from off to on.  The value next to it corresponds to the "Select" button.  If you have a controller with a "Home" button, pressing the "Home" button will also cause one column to switch from off to on.  To exit _jstest_, press `Ctrl + c`.  To return to EmulationStation from the terminal, type and enter `emulationstation`.
+
+Using these values, you can edit the .cfg file for that controller as needed.  For example, if you were interested in switching the default "Select" button as your Hotkey button to a "Home" button available on your controller, you would edit `input_enable_hotkey_btn = "some number"`, replacing "some number" with the value you found for your "Home" button in _jstest_.
+
 ### Video Tutorial
 
 * [RetroPie: Using hotkeys in retroarch - mapping to joypad by Floob](https://www.youtube.com/watch?v=DBnKFRflEV4)
