@@ -27,7 +27,7 @@ A libretro core compatibility list with RetroAchievements can be found here: htt
 
 ##RetroAchievements Messages
 
-A commom user question is "How do I increase the size of the RetroAchievements messages on RetroArch?".
+A common user question is "How do I increase the size of the RetroAchievements messages on RetroArch?".
 
 Actually this configuration is done by changing the font size of all the RetroArch messages, not only the RetroAchievements related ones. How to do it:
 
