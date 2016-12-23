@@ -125,31 +125,10 @@ joy_quit = joystick0-button12
 
 ### Advanced Configuration:
 
-If you are from the United States it is likely that you had the Sega Genesis rather than the Sega Megadrive. If you want EmulationStation to show the genesis menu and boxart instead of megadrive then you can change the file in `/etc/emulationstation/es_systems.cfg`
-
-from 
+If you are from the United States it is likely that you had the Sega Genesis rather than the Sega Megadrive. If you want EmulationStation to show the genesis menu and boxart instead of megadrive then you should create a file `/opt/retropie/configs/all/platforms.cfg` with the contents. Note this requires at least v4.1.4 of the RetroPie-Setup script.
 
 ```
-  <system>
-    <name>megadrive</name>
-    <fullname>Sega Mega Drive / Genesis</fullname>
-    <path>~/RetroPie/roms/megadrive</path>
-    <extension>.smd .bin .gen .md .sg .zip .SMD .BIN .GEN .MD .SG .ZIP</extension>
-    <command>/opt/retropie/supplementary/runcommand/runcommand.sh 0 _SYS_ megadrive %ROM%</command>
-    <platform>megadrive</platform>
-    <theme>megadrive</theme>
-  </system>
+megadrive_theme="genesis"
 ```
 
-to
-
-```
-    <name>genesis</name>
-    <fullname>Sega Genesis</fullname>
-    <path>~/RetroPie/roms/megadrive</path>
-    <extension>.smd .bin .gen .md .sg .zip .SMD .BIN .GEN .MD .SG .ZIP</extension>
-    <command>/opt/retropie/supplementary/runcommand/runcommand.sh 0 _SYS_ megadrive %ROM%</command>
-    <platform>genesis</platform>
-    <theme>genesis</theme>
-  </system>
-```
+Once this is done, please update any of the currently installed megadrive emulators from RetroPie-Setup and Emulation Station will now use the Genesis logo.
