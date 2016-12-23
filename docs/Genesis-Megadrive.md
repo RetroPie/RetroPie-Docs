@@ -123,9 +123,9 @@ key_quit = escape
 joy_quit = joystick0-button12
 ```
 
-### Advanced Configuration:
+### Switching Emulation Station to the Genesis logo:
 
-If you are from the United States it is likely that you had the Sega Genesis rather than the Sega Megadrive. If you want EmulationStation to show the genesis menu and boxart instead of megadrive then you should create a file `/opt/retropie/configs/all/platforms.cfg` with the contents. Note this requires at least v4.1.4 of the RetroPie-Setup script.
+If you are from the United States it is likely that you had the Sega Genesis rather than the Sega Megadrive. If you want EmulationStation to show the genesis graphics instead of megadrive then you should create a file `/opt/retropie/configs/all/platforms.cfg` with the contents. Note this requires at least v4.1.4 of the RetroPie-Setup script.
 
 ```
 megadrive_theme="genesis"
