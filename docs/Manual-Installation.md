@@ -1,4 +1,4 @@
-## Install Raspbian:
+## Install Raspbian
 
 You can download a fresh Raspbian Image from [here](http://www.raspberrypi.org/downloads). The Raspbian image can be installed the same way as the RetroPie image as described [here](https://github.com/RetroPie/RetroPie-Setup/wiki/First-Installation)). 
 
@@ -14,28 +14,7 @@ You can check your free disk space with
     sudo apt-get update && sudo apt-get upgrade
 ```
 
-## Install RetroPie:
-
-After that, we install the needed packages for the RetroPie setup script:
-```
-    sudo apt-get install git lsb-release
-```
-Then we download the latest RetroPie setup script with
-```
-    cd
-    git clone --depth=1 https://github.com/RetroPie/RetroPie-Setup.git
-```
-The script is executed with
-```
-    cd RetroPie-Setup
-    chmod +x retropie_setup.sh
-    sudo ./retropie_setup.sh
-```
-The screen should look like this then:
-
-![4 0beta](https://cloud.githubusercontent.com/assets/10035308/16218285/f06f3ba8-3738-11e6-9ccc-be601172713b.png)
-
-## Verify Locale Settings
+### Verify Locale Settings
 Most of the install scripts will attempt to install a variety of packages and libraries that each emulator requires. These installations will fail if your system locale settings are invalid. You can easily verify this by executing `locale` command. A valid locale will return values set for all options, such as in the example below.
 
 ```
@@ -60,7 +39,28 @@ If any of the above configuration lines are unset (particularly LANG, LANGUAGE, 
 
 Users can also set the local through the `raspi-config` tool.
 
-## Full Install
+## Install RetroPie
+
+After that, we install the needed packages for the RetroPie setup script:
+```
+    sudo apt-get install git lsb-release
+```
+Then we download the latest RetroPie setup script with
+```
+    cd
+    git clone --depth=1 https://github.com/RetroPie/RetroPie-Setup.git
+```
+The script is executed with
+```
+    cd RetroPie-Setup
+    chmod +x retropie_setup.sh
+    sudo ./retropie_setup.sh
+```
+The screen should look like this then:
+
+![4 0beta](https://cloud.githubusercontent.com/assets/10035308/16218285/f06f3ba8-3738-11e6-9ccc-be601172713b.png)
+
+### Full Install
 
 **Manage Packages >> Quick Install**
 
@@ -70,13 +70,13 @@ Now, you have to copy your rom files into the ROMs directory. If you followed th
 
 EmulationStation can be run from the terminal by typing `emulationstation` in the terminal 
 
-## Partial Install
+### Partial Install
 
 Say you don't want to bloat your system with all of RetroPie- you also have the option to only install the emulators you want. 
 
 You will want to start by installing the core packages.
 
-### Core Packages:
+### Core Packages
 
 The core components needed for RetroPie to function are:
 - **RetroArch:** Frontend for the libretro api, necessary for most emulators to run.
