@@ -76,7 +76,7 @@ sudo /opt/retropie/supplementary/xboxdrv/bin/xboxdrv \
 ```
 All that is really left is to add the command to `/etc/rc.local`. To do this type:
 ```
-sudo nano `/etc/rc.local`
+sudo nano /etc/rc.local
 ```
 Press 'Enter" and paste the command into the file above "exit 0". Now press 'ctrl+o' to save the file, 'Enter' to confirm and 'ctrl+x' to exit. Seeing as how this command is run as the system boots up, you'll now need to reboot by typing:
 ```
