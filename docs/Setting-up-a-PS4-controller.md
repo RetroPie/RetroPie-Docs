@@ -88,7 +88,7 @@ Try yours and see how it goes. If it doesn't work, then proceed to the next head
 * Put the controller into pairing mode with **Share** and **PS**
 * Choose the first/top/default method of pairing in the menu
 
-One paired, see if EmulationStation will recognise the controller.
+Once paired, see if EmulationStation will recognise the controller.
 
 If EmulationStation does respond to button presses, lucky you, you're done.
 
@@ -108,7 +108,7 @@ The source code and further description is available at:
 
 #### Which Bluetooth Adapter To Use
 
-* **Pi 1 or Pi 2 or Pi Zero**: Use a USB Blueooth adapter as these models do not have onboard Bluetooth
+* **Pi 1 or Pi 2 or Pi Zero**: Use a USB Bluetooth adapter as these models do not have onboard Bluetooth
 * **Pi 3 with RetroPie 3.7 and later**: Use the onboard Bluetooth
 * **Pi 3 with RetroPie earlier than 3.7**: Disable the onboard Bluetooth and use a USB Bluetooth adapter. Onboard BT is disabled by adding `dtoverlay=pi3-disable-bt` to `/boot/config.txt`
 
