@@ -132,4 +132,4 @@ megadrive_theme="genesis"
 megadrive_platform="genesis"
 ```
 
-Once this is done, please update any of the currently installed megadrive emulators from RetroPie-Setup and Emulation Station will now use the Genesis logo. Scraping from within Emulation Station should also return Megadrive artwork.
+Once this is done, please update any of the currently installed megadrive emulators from RetroPie-Setup and Emulation Station will now use the Genesis logo. Scraping from within Emulation Station should also return Genesis artwork.
