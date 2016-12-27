@@ -172,7 +172,7 @@ see this video for reference:
 " target="_blank"><img src="https://i.ytimg.com/vi_webp/OYMoxvbkYD4/mqdefault.webp" 
 alt="Configuration Video" width="300" height="190" border="10" /></a>
 
-### SFTP (needs an active internet connection) 
+### SFTP (needs an active network connection) 
 * Wired (needs ethernet cable)
 * Wireless (needs wifi dongle)
 There are many SFTP programs out there, for windows many people use [WinSCP](https://winscp.net/eng/download.php) for mac you can use something like [Cyberduck](https://cyberduck.io/?l=en)
@@ -185,7 +185,7 @@ Default Password: **raspberry**
 
 You can also log in as root if you wish to change more files than just the roms, but you first need to enable the root password which is explained [here](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#why-cant-i-ssh-as-root-anymore)
 
-### Samba-Shares (needs an active internet connection)
+### Samba-Shares (needs an active network connection)
 
 - if on windows type `\\retropie` into the computer folder. You can also replace `retropie` with your Raspberry Pi's IP address
 
