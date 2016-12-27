@@ -22,6 +22,7 @@ cheevos_hardcore_mode_enable = true
 * Mega Drive / Genesis
 * Game Boy / Game Boy Color
 * Game Boy Advance
+* PC Engine
 
 A libretro core compatibility list with RetroAchievements can be found here: https://github.com/libretro/RetroArch/wiki/RetroAchievements
 
