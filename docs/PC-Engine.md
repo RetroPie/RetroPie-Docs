@@ -108,3 +108,12 @@ to
     <directlaunch/>
   </system>
 ```
+
+### Switching Emulation Station to the TurboGrafx-16 logo:
+
+If you are from the United States it is likely that you had the TurboGrafx-16 rather than the PC Engine. If you want EmulationStation to show the TurboGrafx-16 graphics instead of PC Engine then you should create a file /opt/retropie/configs/all/platforms.cfg with the following contents (note this requires at least v4.1.6 of the RetroPie-Setup script).
+
+pcengine_theme="tg16"
+pcengine_platform="tg16"
+
+Once this is done, please update any of the currently installed PC Engine emulators from RetroPie-Setup and Emulation Station will now use the TurboGrafx-16 logo. Scraping from within Emulation Station should also return TurboGrafx-16 artwork.
