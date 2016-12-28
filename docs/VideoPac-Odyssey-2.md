@@ -42,3 +42,14 @@ Add custom retroarch controls to the retroarch.cfg file in
 For more information on custom RetroArch controls see: [RetroArch Configuration](https://github.com/petrockblog/RetroPie-Setup/wiki/RetroArch-Configuration)
 
 ![philips_videopac](https://cloud.githubusercontent.com/assets/10035308/8192731/79eeaea2-142d-11e5-924d-9d284d280981.png)
+
+### Switching Emulation Station to the Odyssey² logo:
+
+If you are from the United States it is likely that you had the Odyssey² rather than the Videopac. If you want EmulationStation to show the Odyssey² graphics instead of Videopac then you should create a file `/opt/retropie/configs/all/platforms.cfg` with the following contents (note this requires at least v4.1.6 of the RetroPie-Setup script).
+
+```
+videopac_theme="odyssey2"
+videopac_platform="odyssey2"
+```
+
+Once this is done, please update the currently installed Videopac emulator from RetroPie-Setup and Emulation Station will now use the Odyssey² logo. Scraping from within Emulation Station should also return Odyssey² artwork.
