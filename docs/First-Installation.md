@@ -36,7 +36,7 @@ alt="Configuration Video" width="1280" height="400" border="10" /></a>
  * USB Keyboard and Mouse (to get things set up or you can use [SSH](ssh))
  * USB Game Controller of your choice (or you can get the [Control Block](http://blog.petrockblock.com/2014/12/29/controlblock-power-switch-and-io-for-the-raspberry-pi/) to use original SNES controllers)
 
-The simplest way to get most of these components is through a kit such as the [Canakit](http://www.amazon.com/CanaKit-Raspberry-Complete-Starter-9-Items/dp/B008XVAVAW). 
+The simplest way to get most of these components is through a kit such as the [Canakit](https://www.amazon.com/gp/product/B01C6Q2GSY/). 
 
 ## Installation
 
