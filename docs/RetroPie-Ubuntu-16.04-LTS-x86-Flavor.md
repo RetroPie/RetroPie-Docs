@@ -166,9 +166,11 @@ roms just like through a manual installation. However the samba share setup and 
 appear to function normally.
 
 To start follow the same instructions of doing a git clone of the RetroPie repo. Then you have to edit
-    RetroPie-Setup/scriptmodules/system.sh
+
+      RetroPie-Setup/scriptmodules/system.sh
 
 In the get_os_version() function the work-around is to change:
+
             error="Unsupported OS"
             ;;
     esac
