@@ -25,7 +25,7 @@ Tested with an Intel NUC Kit NUC5CPYH
     - [Section 3.9: Xbox360 Controller mappings not working correctly](##39-xbox360)
     - [Section 3.10: How do I map controls to Dolphin](##310-dolphincontrols)
     - [Section 3.11: Start+Select does not exit Dolphin](##311-dolphinexit)
-    - [Section 3.12: SteamOS hack to allow installation](###312-steamosinstall)
+    - [Section 3.12: SteamOS hack to allow installation](##312-steamosinstall)
 
 ***
 
