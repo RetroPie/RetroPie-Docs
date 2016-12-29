@@ -160,6 +160,7 @@ Launch game
 You will now be able to exit back to emulationstation with that button you mapped. 
 
 ### Section 3.12: SteamOS hack to allow installation
+
 While SteamOS is not based on Ubuntu 16.04 it is based on Debian 8 which is supported.
 Currently you can install it and it will set everything up properly. EmulationStation has issues launching
 roms just like through a manual installation. However the samba share setup and all other parts of RetroPie
