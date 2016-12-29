@@ -25,6 +25,7 @@ Tested with an Intel NUC Kit NUC5CPYH
     - [Section 3.9: Xbox360 Controller mappings not working correctly](##39-xbox360)
     - [Section 3.10: How do I map controls to Dolphin](##310-dolphincontrols)
     - [Section 3.11: Start+Select does not exit Dolphin](##311-dolphinexit)
+    - [Section 3.12: SteamOS hack to allow installation](###312-steamosinstall)
 
 ***
 
@@ -158,3 +159,24 @@ Select Dolphin-Gui instead of dolphin as the runcommand default emulator.
 Launch game
 You will now be able to exit back to emulationstation with that button you mapped. 
 
+### Section 3.12: SteamOS hack to allow installation
+While SteamOS is not based on Ubuntu 16.04 it is based on Debian 8 which is supported.
+Currently you can install it and it will set everything up properly. EmulationStation has issues launching
+roms just like through a manual installation. However the samba share setup and all other parts of RetroPie
+appear to function normally.
+
+To start follow the same instructions of doing a git clone of the RetroPie repo. Then you have to edit
+    RetroPie-Setup/scriptmodules/system.sh
+
+In the get_os_version() function the work-around is to change:
+            error="Unsupported OS"
+            ;;
+    esac
+
+To
+
+            __os_debian_ver="8"
+            ;;
+    esac
+
+This will obviously override any platform checking done by the script and is very hacky, but it will let the retropie setup continue properly until actual support exists
