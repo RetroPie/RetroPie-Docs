@@ -7,9 +7,7 @@ Rather than running everything from an SD card, it can be desirable to store and
 There are a number of ways you can achieve this, but the following method is desirable as it fully integrates the USB drive with the existing directory structure, rather than requiring you to tweak configuration files so RetroPie is looking for ROMs in a different place.
 
 ## Format USB drive
-_This step is often not required, as USB drives will almost always be formatted already, although you may need to delete any old files from them._
-
-Either on linux, or on a PC, format the USB drive. FAT32 is recommended as it is the most compatible across different operating systems.
+Either on linux, or on a PC, format the USB drive to FAT32 (used in this guide as it is the most compatible across different operating systems).
 * [Instructions to format on Linux](https://ksearch.wordpress.com/2010/09/29/format-usb-in-linux/)
 * [Instructions to format on Windows 10](http://answers.microsoft.com/en-us/windows/forum/windows_10-files/formatting-usb-drive-to-fat32-file-in-windows-10/5d50af44-9dc0-4024-bfec-2e095bb22caf)
 * [Instructions to format on OSX](http://qsee.custhelp.com/app/answers/detail/a_id/2560/~/mac%3A-how-to-format-a-flash-drive-to-fat32-in-mac-os-x)
