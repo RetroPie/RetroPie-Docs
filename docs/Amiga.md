@@ -70,14 +70,10 @@ alt="Testing joypad in RetroPie" width="300" height="190" border="10" /></a>
 
 ### App with GUI for Windows for creating configuration files 
 
-Here you will find an application (with GUI) for creating game configuration file (use PC for download, not mobile):  
+Here you will find an application (with GUI) for creating game configuration file and the necessary configuration files according to different version of UAE4arm:
 
-http://s000.tinyupload.com/index.php?file_id=22898544572562431631  
-  
-and here the necessary configuration files according to different version of UAE4arm:  
-  
-http://s000.tinyupload.com/index.php?file_id=64687850856486668827  
-  
+http://www.retropie-italia.it/viewtopic.php?f=10&t=16 
+
 Open "+Start UAE4Arm" and save a profile with random name then open the file and check the number in the parameter "config_version". Rename the correct configuration file previoulsy downloaded in "config.uae" and copy it in program's main folder (overwrite the existing file). It uses the file in order to create games configuration and you can edit it. For default behavior "config.uae" is searching for kickstart 2.04 in
 
 ``/home/pi/RetroPie/roms/amiga/``
