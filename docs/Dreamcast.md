@@ -27,7 +27,7 @@ Place your Dreamcast ROMs in
 
 ## BIOS
 
-The BIOS files needed are: **dc_boot.bin, dc_flash.bin**. The BIOS file is often found named something else such as dc_**bios**.bin and must be renamed to dc_**boot**.bin when placed in the bios folder.
+The BIOS files needed are: **dc_boot.bin, dc_flash.bin**. The BIOS file is often found named something else such as dc_**bios**.bin and must be renamed to dc_**boot**.bin when placed in the BIOS folder.
 
 Place your BIOS files in
 ```
