@@ -1,4 +1,4 @@
-**Note** that if you have wireless controllers you will need a wireless receiver plugged into your raspberry pi (Official Microsoft xbox360 receiver, or knock offs like zettaguard, VicTsing also work), then to connect:
+**Note** that if you have wireless controllers you will need a wireless receiver plugged into your raspberry pi (Official Microsoft xbox360 receiver, or knock offs like zettaguard, VicTsing also work. Play and charge cables will not work. You need a wireless receiver), then to connect:
 
 - press the button on the receiver 
 - then press the tiny wireless button on the top of the controller 
