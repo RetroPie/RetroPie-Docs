@@ -151,6 +151,50 @@ axis_dpad1_x = 0x10
 axis_dpad1_y = 0x11
 ```
 
+**Xbox 360 Wireless Controller using xpad driver:**
+
+```
+[emulator]
+mapping_name = Xbox 360 Wireless Receiver (XBOX)
+btn_escape = 316
+
+[dreamcast]
+btn_a = 304
+btn_b = 305
+btn_c =
+btn_d =
+btn_x = 307
+btn_y = 308
+btn_z =
+btn_start = 315
+btn_dpad1_left =
+btn_dpad1_right =
+btn_dpad1_up = 704
+btn_dpad1_down = 707
+btn_dpad2_left =
+btn_dpad2_right =
+btn_dpad2_up =
+btn_dpad2_down =
+axis_x = 0
+axis_y = 1
+axis_trigger_left = 10
+axis_trigger_right = 9
+
+[compat]
+btn_trigger_left = 312
+btn_trigger_right = 313
+axis_dpad1_x = 16
+axis_dpad1_y = 17
+axis_dpad2_x =
+axis_dpad2_y =
+axis_x_inverted = no
+axis_y_inverted = no
+axis_trigger_left_inverted =
+axis_trigger_right_inverted =
+axis_dpad1_y_inverted = no
+axis_dpad1_x_inverted = no
+```
+
 **iBuffalo USB controller** 
 
 ```
