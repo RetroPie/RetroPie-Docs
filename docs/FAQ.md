@@ -60,7 +60,7 @@ The PIXEL (formerly LXDE) desktop environment was removed from the RetroPie imag
 
 It can easily be installed from the [RetroPie Setup Script](https://github.com/retropie/retropie-setup/wiki/Updating-RetroPie)
 
-in **Setup >> Raspbian Related Tools >> Install Pixel Desktop environment**
+in **Configuration / Tools >> Raspbiantools >> Install Pixel Desktop Environment**
 
 after installation it will be accessible from the ports menu of emulationstation or can be called from the command line with `startx`
 
