@@ -41,7 +41,7 @@ To avoid having several EmulationStation menus for different arcade emulators, a
 
 ### **MAME4ALL-Pi**
 
-Place your MAME4ALL-Pi ROMs in
+Place your MAME4ALL-Pi ROMs and the BIOS file in
 ```
 /home/pi/RetroPie/roms/mame-mame4all
 ```
@@ -54,7 +54,7 @@ Total Games Emulated: [2270](http://code.google.com/p/imame4all/wiki/GameList)
 
 ### **lr-imame4all**
 
-Place your lr-imame4all ROMs in
+Place your lr-imame4all ROMs and the BIOS file in
 ```
 /home/pi/RetroPie/roms/mame-mame4all
 ```
@@ -67,7 +67,7 @@ Total Games Emulated: [2270](http://code.google.com/p/imame4all/wiki/GameList)
 
 ### **AdvanceMAME**
 
-Place your AdvanceMAME ROMs in
+Place your AdvanceMAME ROMs and the BIOS file in
 ```
 /home/pi/RetroPie/roms/mame-advmame
 ```
@@ -84,7 +84,7 @@ Total Games Emulated: **5563** (0.94.0) **6166** (1.4) (includes clones etc..)
 
 **Please see [[lr-mame2003]] for information on how to configure specific features of this emulator.**
 
-Place your lr-mame2003 ROMs in
+Place your lr-mame2003 ROMs and the BIOS file in
 ```
 /home/pi/RetroPie/roms/mame-libretro
 ```
