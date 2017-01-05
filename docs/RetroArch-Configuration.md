@@ -71,6 +71,9 @@ input_y_btn = "3"
 input_left_axis = "-0"
 input_state_slot_decrease_axis = "-0"
 ```
+As seen above in the config for the USB SNES controller, each input on the controller has an associated value.  When setting up the controller in EmulationStation, these values are then assigned a respective action on RetroArch.  
+
+For example, suppose the "A" button on a USB SNES controller has a value of "1."  When setting up the controller, EmulationStation would prompt you to press the "A" button on your controller.  Pressing the "A" button would then record into the config file as `input_a_btn = "1"`, so RetroArch will know that the "A" button on your physical controller corresponds to the "A" button on RetroArch's virtual controller, the RetroPad.  Therefore, the next time you play a game such as Super Mario Bros. pressing the "A" button will tell RetroArch to press the "A" button on its RetroPad, causing Mario to jump.  If you accidentally pressed the "B" button with a value of "2" during setup when it prompted for "A," then it would be recorded into the config file as `input_a_btn = "2"`, so if you want to jump in Super Mario Bros., you would have to press "B" on your controller.
 
 #### Hotkeys
 
