@@ -5,14 +5,14 @@ _MAME stands for Multiple Arcade Machine Emulator. MAME can emulate thousands of
 
 ***
 
-| Emulator | Rom Folder | Extension | BIOS |  Controller Config |
-| :---: | :---: | :---: | :---: | :---: |
-| [Mame4all-Pi](https://github.com/RetroPie/mame4all-pi) | arcade **or** mame-mame4all | .zip | neogeo.zip | /opt/retropie/configs/mame-mame4all/cfg/default.cfg |
-| [lr-imame4all](https://github.com/libretro/imame4all-libretro) | arcade **or** mame-mame4all | .zip | neogeo.zip | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/mame-mame4all/retroarch.cfg |
-| [lr-mame2003](https://github.com/libretro/mame2003-libretro) | arcade **or** mame-libretro | .zip | neogeo.zip | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/mame-libretro/retroarch.cfg |
-| [lr-mame2010](https://github.com/libretro/mame2010-libretro) | arcade **or** mame-libretro | .zip | neogeo.zip | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/mame-libretro/retroarch.cfg |
-| [AdvanceMAME .94](http://advancemame.sourceforge.net/) | arcade **or** mame-advmame | .zip | neogeo.zip | /opt/retropie/configs/mame-advmame/advmame-0.94.0.rc |
-| [AdvanceMAME](http://advancemame.sourceforge.net/) | arcade **or** mame-advmame | .zip | neogeo.zip | /opt/retropie/configs/mame-advmame/advmame-1.4.rc |
+| Emulator | Rom Folder | Romset | BIOS |  Controller Config |
+| :---: | :---: | :---: | :---: | :---: | :---: |
+| [Mame4all-Pi](https://github.com/RetroPie/mame4all-pi) | arcade **or** mame-mame4all | 0.37b5 | neogeo.zip | /opt/retropie/configs/mame-mame4all/cfg/default.cfg |
+| [lr-imame4all](https://github.com/libretro/imame4all-libretro) | arcade **or** mame-mame4all | 0.37b5 | neogeo.zip | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/mame-mame4all/retroarch.cfg |
+| [lr-mame2003](https://github.com/libretro/mame2003-libretro) | arcade **or** mame-libretro | .78 | neogeo.zip | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/mame-libretro/retroarch.cfg |
+| [lr-mame2010](https://github.com/libretro/mame2010-libretro) | arcade **or** mame-libretro | .139 | neogeo.zip | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/mame-libretro/retroarch.cfg |
+| [AdvanceMAME .94](http://advancemame.sourceforge.net/) | arcade **or** mame-advmame | .94 | neogeo.zip | /opt/retropie/configs/mame-advmame/advmame-0.94.0.rc |
+| [AdvanceMAME](http://advancemame.sourceforge.net/) | arcade **or** mame-advmame | .94 | neogeo.zip | /opt/retropie/configs/mame-advmame/advmame-1.4.rc |
 
 ## Emulators: [AdvanceMAME](http://advancemame.sourceforge.net/), [mame4all-pi](https://github.com/RetroPie/mame4all-pi), [lr-imame4all](https://github.com/libretro/imame4all-libretro), [lr-mame2003](https://github.com/libretro/mame2003-libretro), [lr-mame2010](https://github.com/libretro/mame2010-libretro)
 
@@ -22,9 +22,11 @@ See Also: [[FinalBurn-Alpha]], [[Neo Geo]]
 
 ## ROMS
 
-Because MAME emulates many different pieces of hardware and thousands of games it can be hard to keep track of everything. ROMs for MAME are probably the most confusing thing about RetroPie.
+Because MAME emulates many different pieces of hardware and thousands of games it can be hard to keep track of everything. ROMs for MAME are probably the most confusing thing about RetroPie. 
 
 Accepted File Extensions: **.zip**
+
+When working with these ROMs *you will need to know which romset it belongs to, then use a compatible emulator to run it*. There are many ways to figure this out, so some resources are linked below. For example, let's say you have a ROM file such as **anAwesomeGame.zip** and you learn that it belongs to romset 0.37b5. Then place **anAwesomeGame.zip** file (without extracting it) into the *arcade or mame-mame4all* ROM directories (as mentioned in the above table). Then, make sure you have the corresponding BIOS file, **neogeo.zip**, *in that same directory*. That's it. Be sure that in the game's run configuration that the correct emulator is used and you are good to go.
 
 **For information on how to rebuild newer romsets to be compatible with these emulators see this post:**
 **[Managing ROMs](https://github.com/petrockblog/RetroPie-Setup/wiki/Managing-ROMs)**
