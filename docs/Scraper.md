@@ -24,7 +24,7 @@ If your roms are located on another source then the default one you can download
 [sselph's scraper releases](https://github.com/sselph/scraper/releases)
 Please refer to [Sselphs Scraper Advanced Configuration](https://github.com/RetroPie/RetroPie-Setup/wiki/Scraper#sselphs-scraper-advanced-configuration) when using this method.
 
-Make sure to update to the latest version of Retropie-Setup script if youre missing any options mentioned below!
+Make sure to update to the latest version of Retropie-Setup script if you're missing any options mentioned below!
 
 <img width="500" alt="sselph" src="https://cloud.githubusercontent.com/assets/8129878/15624414/5d56d330-2455-11e6-8a6a-850678d58712.png">
 
@@ -36,9 +36,16 @@ Make sure to update to the latest version of Retropie-Setup script if youre miss
 
 - **Thumbnails Only:** When enabled it will load lower resolution images to save space (enabled by default).
 
-- **Max Image Width:** Specify the max image width to scrape.
+- **Max Image Width/Height:** Specify the max image width or height to scrape.
 
-- **Scraper:** Choose which database to scrape from - thegamesdb is default, but when thegamesdb is down you can specify to use OpenVGDB instead.
+- **Console Source:** Choose which database to scrape for console games: 
+  * thegamesdb.net (default)
+  * ScreenScraper.fr
+  * OpenVGDB
+
+- **Arcade Source:** Choose which database to scrape for arcade/mame games: 
+  * mamedb.blu-ferret.co.uk (default)
+  * ScreenScraper.fr
 
 - **ROM Names:** Choose what name to display:
   * No-Intro: Rom Name (USA) (Rev 1)
