@@ -26,7 +26,7 @@ Please refer to [Sselphs Scraper Advanced Configuration](https://github.com/Retr
 
 Make sure to update to the latest version of Retropie-Setup script if you're missing any options mentioned below!
 
-<img width="500" alt="sselph" src="https://cloud.githubusercontent.com/assets/8129878/15624414/5d56d330-2455-11e6-8a6a-850678d58712.png">
+<img width="464" alt="sselph" src="https://cloud.githubusercontent.com/assets/8129878/21742130/4c1f6ebc-d4b6-11e6-8f8d-75bf2ecb7b30.png">
 
 - **Scrape All Systems:** This will scrape all the systems the scraper supports
 
