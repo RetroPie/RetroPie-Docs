@@ -68,33 +68,34 @@ alt="Testing joypad in RetroPie" width="300" height="190" border="10" /></a>
 
 ## Launching games directly from EmulationStation
 
-### App with GUI for Windows for creating configuration files 
+### App for creating configuration files 
 
-Here you will find an application (with GUI) for creating game configuration file and the necessary configuration files according to different version of UAE4arm:
+Here you will find an application for creating game configuration file and the necessary configuration files according to different version of UAE4arm:
 
 http://www.retropie-italia.it/viewtopic.php?f=10&t=16 
 
-Open "+Start UAE4Arm" and save a profile with random name then open the file and check the number in the parameter "config_version". Rename the correct configuration file previoulsy downloaded in "config.uae" and copy it in program's main folder (overwrite the existing file). It uses the file in order to create games configuration and you can edit it. For default behavior "config.uae" is searching for kickstart 2.04 in
+Open "+Start UAE4Arm" and save a profile with random name then open the file and check the number in the parameter "config_version". Rename the correct configuration file (previoulsy downloaded) in "config.uae" and copy it, together with AGCC.sh on Raspberry Pi. It uses the file in order to create games configuration and (if you want) you can edit it. For default behavior "config.uae" is searching for kickstart 2.04 in
 
 ``/home/pi/RetroPie/roms/amiga/``
 
-renamed in "kick20.rom", so you have to rename your kickstart or edit configuration file. In that folder you have to put the config files created.
+renamed in "kick20.rom", so you have to rename your kickstart or edit configuration file.
 
 Also follow these steps:
 
 ``sudo nano /etc/emulationstation/es_systems.cfg``
 
-and add ".uae" (without quote) on tag <extension> for "amiga" emulator:
+and edit tag <extension> for "amiga" emulator in this way:
 
-``<extension>.sh .SH .uae</extension>``
+``<extension>.sh .uae .SH .UAE</extension>``
 
+Then
 ``sudo nano /opt/retropie/configs/amiga/emulators.cfg``
 
 and edit the line in this way:
 
-``uae4arm="pushd /opt/retropie/emulators/uae4arm/; ./uae4arm -f %ROM%"``
+``uae4arm = "pushd /opt/retropie/emulators/uae4arm/; ./uae4arm -f %ROM%"``
 
-Point attention to the floppy image extension: ".adf" or ".adz".
+Point attention to the floppy image extension (case-insensitive):  .adf, .adz, .dms, .ipf, .zip
 
 For game with multiple disks rename them in this way: 
 
