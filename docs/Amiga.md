@@ -74,7 +74,7 @@ Here you will find a script, and the necessary configuration files according to 
 
 http://www.retropie-italia.it/viewtopic.php?f=10&t=16 
 
-Open "+Start UAE4Arm" and save a profile with random name then open the file and check the number in the parameter "config_version". Rename the configuration file (download it from previous link) in "config.uae" and copy it, together with AGCC.sh (also download this form previous link) on Raspberry Pi. It uses the file in order to create games configuration and (if you want) you can edit it. For default behavior "config.uae" is searching for kickstart 2.04 in
+Open "+Start UAE4Arm" and save a profile with random name then open the file and check the number in the parameter "config_version". Rename the configuration file (download it from previous link) in "config.uae" and copy it, together with AGCC.sh (also download this form previous link), on Raspberry Pi. It uses the file in order to create games configuration and (if you want) you can edit it. For default behavior "config.uae" is searching for kickstart 2.04 in
 
 ``/home/pi/RetroPie/roms/amiga/``
 
