@@ -68,7 +68,7 @@ alt="Testing joypad in RetroPie" width="300" height="190" border="10" /></a>
 
 ## Launching games directly from EmulationStation
 
-### App for creating configuration files 
+### Script for creating configuration files 
 
 Here you will find an application for creating game configuration file and the necessary configuration files according to different version of UAE4arm:
 
@@ -108,7 +108,7 @@ in other words change ONLY the floppy identifier.
 
 Note: The old script from Mark Dunning has a problem with games with more than 9 floppies (creates others wrong config files) and creates a config file with name like "Game bla bla bla (Disk 1 of N).uae". This new app create only 1 file for a multiple disk game with the exact name of the game
 
-### BASH solution
+### Other solution
 
 Alternatively, a native BASH script to perform the same steps directly on the RetroPie machine can be found here:
 https://github.com/Douggernaut/RetroPieAssistant/tree/master/Amiga
