@@ -74,17 +74,17 @@ Here you will find a script, and the necessary configuration files according to 
 
 http://www.retropie-italia.it/viewtopic.php?f=10&t=16 
 
-On EmulationStation, AMIGA, open "+Start UAE4Arm" and save a profile with random name then open the file and check the number in the parameter "config_version". Rename the configuration file (download it from previous link) in "config.uae" and copy it, together with AGCC.sh (also download this form previous link), on Raspberry Pi. It uses the file in order to create games configuration and (if you want) you can edit it. For default behavior "config.uae" is searching for kickstart 2.04 in
+On EmulationStation, AMIGA, open "+Start UAE4Arm" and save a profile with random name then open the file and check the number in the parameter "config_version". Download the correct configuration file from previous link then rename it in "config.uae" and copy it, together with "AGCC.sh" (also download this from previous link), on Raspberry Pi. AGCC.sh uses the "config.uae" file in order to create games configuration and (if you want) you can edit it. For default behavior emulator is searching for kickstart 2.04 in
 
 ``/home/pi/RetroPie/roms/amiga/``
 
-renamed in "kick20.rom", so you have to rename your kickstart or edit configuration file.
+renamed in "kick20.rom", so you have to rename your kickstart or edit "config.uae".
 
 Also follow these steps:
 
 ``sudo nano /etc/emulationstation/es_systems.cfg``
 
-and edit tag <extension> for "amiga" emulator in this way:
+and edit the tag <extension> for "amiga" emulator in this way:
 
 ``<extension>.sh .uae .SH .UAE</extension>``
 
