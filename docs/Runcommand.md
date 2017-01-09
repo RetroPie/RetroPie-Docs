@@ -47,7 +47,7 @@ Example: if you have a cool NES related image and want to show it right before l
 
 A more general launching image (not related to a specific system) can be named as `/opt/retropie/configs/all/launching.jpg`.
 
-Once these images are installed, the timing to activate the the Runcommand menu differs, in that pressing a button will not register successfully until just after the image has disappeared.
+Once these images are installed, the timing to activate the the runcommand menu differs, in that pressing a button will not register successfully until just after the image has disappeared.
 
 You can get some cool launching images in these forum topics:
 - https://retropie.org.uk/forum/topic/36/splashscreens/97
