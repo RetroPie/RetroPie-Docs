@@ -1,6 +1,6 @@
 ## Install Raspbian
 
-You can download a fresh Raspbian Image from [here](http://www.raspberrypi.org/downloads). The Raspbian image can be installed the same way as the RetroPie image as described [here](https://github.com/RetroPie/RetroPie-Setup/wiki/First-Installation)). 
+You can download a fresh Raspbian Image from [here](http://www.raspberrypi.org/downloads). The Raspbian image can be installed the same way as the RetroPie image as described [here](https://github.com/RetroPie/RetroPie-Setup/wiki/First-Installation)). These instructions use the Raspbian-Lite version (You can't run Pixel at the same time).
 
 Raspbian now automatically expands the filesystem so that step is no longer necessary.
 
