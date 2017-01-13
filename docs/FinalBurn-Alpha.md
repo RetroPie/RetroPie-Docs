@@ -19,7 +19,7 @@ lr-fbalpha is favoured as it is mature, runs the current FBA romset, and enjoys 
 Accepted File Extensions: **.zip**
 
 **For information on how to rebuild newer romsets to be compatible with these emulators see this post:**
-**[Managing ROMs](https://github.com/petrockblog/RetroPie-Setup/wiki/Managing-ROMs)**
+**[Managing Arcade ROMs](https://github.com/RetroPie/RetroPie-Setup/wiki/Managing-Arcade-ROMs)**
 
 ### lr-fbalpha
 
