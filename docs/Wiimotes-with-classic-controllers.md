@@ -278,13 +278,9 @@ Make your wiimote detection script executable with:
 chmod 775 /home/pi/bin/attachwii.sh
 ```
 
-#### RetroPie 3.x ####
+#### RetroPie 3.x & 4.x ####
 
-To start the script before emulationstation starts, edit the file: `/etc/profile.d/10-emulationstation.sh`.  The last line should be
-```shell
-[ "`tty`" = "/dev/tty1" ] && emulationstation
-```
-Then, right before that line, add the line:
+To start the script before emulationstation starts, edit the file: `/etc/profile.d/10-emulationstation.sh` (for 3.x) or `/etc/profile.d/10-retropie.sh` (for 4.x). Write the following line before the line with ``[ "`tty`" = "/dev/tty1" ]`` in it.
 ```shell
 rebootWithoutWiimotes=0 /home/pi/bin/attachwii.sh
 ```
