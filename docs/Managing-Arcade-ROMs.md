@@ -1,22 +1,29 @@
-## Getting Started
+# Getting Started
 
-**Working with arcade ROMs requires a different approach than ROMs for console systems.** The overall process for using an arcade emulator in RetroPie:
+Working with arcade ROMs requires a different approach than ROMs for console systems. The overall process for using an arcade emulator in RetroPie:
 
 1. Choose an arcade emulator listed in the table below that your system is powerful enough to run
-2. Either download or 'rebuild' a set of arcade ROMs with a version number that exactly matches the emulator you selected
+2. **Either download or 'rebuild' a set of arcade ROMs with a version number that exactly matches the emulator you selected**
+
+The recommended emulators are:
+
+* Pi 2 and Pi 3: `lr-mame2003` and `lr-fbalpha`
+* Pi 1 and Pi Zero: `mame4all`  (the native emulator, not the RetroArch core) and `pi-fba`
+
+If the ROM you wish to play is only supported by other emulator versions in the table below, please be aware that earlier emulator versions usually run faster than later versions but also that earlier versions support fewer games than later versions. Native emulators like mame4all and AdvMame may perform better than RetroArch cores but cannot take advantage of global RetroArch configurations so they must be configured individually. Generally most 2D games work well on the Pi 3, but most 3D and vector games do not run at playable speed or at all.
 
 | Emulator | Required ROM Version | # of ROMs | [.DAT Files](https://github.com/HerbFargus/retropie-dat/archive/master.zip) | Compatibility List |
 | :---: | :---: | :---: | :---: | :---: |
-| [mame4all](https://github.com/RetroPie/RetroPie-Setup/wiki/MAME) | 0.37b5 | [2270](http://code.google.com/p/imame4all/wiki/GameList) | [.DAT](https://drive.google.com/file/d/0B2TMeZ6iEFvHQnJqS19JRUhzSmM/view?usp=sharing)| [List](https://docs.google.com/spreadsheets/d/1gpuoZx78kDDdnf_yADicsSZHMfpOxNySSov7UdCDAik/edit?usp=sharing) |
-| [lr-imame4all](https://github.com/RetroPie/RetroPie-Setup/wiki/MAME) | 0.37b5 | [2270](http://code.google.com/p/imame4all/wiki/GameList) | [.DAT](https://drive.google.com/file/d/0B2TMeZ6iEFvHQnJqS19JRUhzSmM/view?usp=sharing)| [List](https://docs.google.com/spreadsheets/d/1Fmx2RPcgVgIIeKpaBKNEGWCDuu3DGfR-VkrnIVsIpeE/edit?usp=sharing) |
-| [lr-mame2003](https://github.com/RetroPie/RetroPie-Setup/wiki/MAME) | 0.78 | 4705 | [.DAT](https://drive.google.com/file/d/0B2TMeZ6iEFvHTkc2TXZOOFhCRzQ/view?usp=sharing)| [List](https://docs.google.com/spreadsheets/d/1LP1MELCvcxu7TfiowF_0ZuvRVEMqlfQyTVetnOJvuJc/edit?usp=sharing) |
-| [lr-mame2010](https://github.com/RetroPie/RetroPie-Setup/wiki/MAME) | 0.139 | 8782 | [.DAT](https://drive.google.com/file/d/0B2TMeZ6iEFvHUFdCc04zZ3o4dnM/view?usp=sharing)| [List](https://docs.google.com/spreadsheets/d/1IRSmFrSDvIc6gAw0gn12TcQ3HDOwmrETTor8wvvb7VI/edit?usp=sharing) |
-| [advmame-.94](https://github.com/RetroPie/RetroPie-Setup/wiki/MAME) | 0.94 | 5563 | [.DAT](https://drive.google.com/file/d/0B2TMeZ6iEFvHa2E5Rzl4ZEdMdjQ/view?usp=sharing)| [List](https://docs.google.com/spreadsheets/d/1AEQ94buG0rvbW0xdnYKeuEhHeCbuZlRfRJQCb1Dt8fw/edit?usp=sharing) |
-| [advmame-1.4](https://github.com/RetroPie/RetroPie-Setup/wiki/MAME) | 0.106 | 6166 | [.DAT](https://drive.google.com/file/d/0B2TMeZ6iEFvHMEZnb1RxQWNmdHM/view?usp=sharing)| [List](https://docs.google.com/spreadsheets/d/1RapyxChe2BMOfbX-FsCup9SXGxvS1WmXAofwaTJtmxc/edit?usp=sharing) |
-| [pifba](https://github.com/RetroPie/RetroPie-Setup/wiki/FinalBurn-Alpha) | 0.114 (fba 0.2.96.71) | 684 | [.DAT](https://drive.google.com/file/d/0B2TMeZ6iEFvHaHUta2dQYk1HTGM/view?usp=sharing)| [List](https://docs.google.com/spreadsheets/d/1OZioLrz16ptaNbjQUDP5hhVzQDTOTn9Nz46Hbj3-06k/edit?usp=sharing) |
-| [lr-fbalpha2012](https://github.com/RetroPie/RetroPie-Setup/wiki/FinalBurn-Alpha) | 0.154 (fba 0.2.97.30) | [3369](https://raw.githubusercontent.com/libretro/fbalpha2012/master/svn-current/trunk/gamelist.txt) | [.DAT](https://drive.google.com/file/d/0B2TMeZ6iEFvHcF96YmdjaWlEdXM/view?usp=sharing)| [List](https://docs.google.com/spreadsheets/d/1rWO7Lm0bTGNpak6J-CPzde0GNIDP0NHDoQdJ6iWosfA/edit?usp=sharing) |
-| [lr-fbalpha](https://github.com/RetroPie/RetroPie-Setup/wiki/FinalBurn-Alpha) | 0.175 (fba 0.2.97.39) | [4375](https://raw.githubusercontent.com/libretro/fbalpha/master/gamelist.txt) | [.DAT](https://github.com/libretro/fbalpha/blob/master/dats/FB%20Alpha%20v0.2.97.39%20(ClrMame%20Pro%20XML).dat.zip?raw=true)| [List](https://docs.google.com/spreadsheets/d/1GaqIIoiWbzKHwZ52S2xCSDQXILo81Ls1mHK6czKGAtM/edit?usp=sharing) |
-| [gngeopi](https://github.com/RetroPie/RetroPie-Setup/wiki/Neo-Geo) | 0.138 | 203 | [.DAT](https://drive.google.com/file/d/0B2TMeZ6iEFvHZVVCYmVtaUM1VlU/view?usp=sharing)| [List](https://docs.google.com/spreadsheets/d/1A_a_9t14uzDUMrrO0RgLDwiVUiycmclcPIs6cU6Iox8/edit?usp=sharing) |
+| [mame4all](https://github.com/RetroPie/RetroPie-Setup/wiki/MAME) | MAME 0.37b5 | [2270](http://code.google.com/p/imame4all/wiki/GameList) | [.DAT](https://drive.google.com/file/d/0B2TMeZ6iEFvHQnJqS19JRUhzSmM/view?usp=sharing)| [List](https://docs.google.com/spreadsheets/d/1gpuoZx78kDDdnf_yADicsSZHMfpOxNySSov7UdCDAik/edit?usp=sharing) |
+| [lr-imame4all](https://github.com/RetroPie/RetroPie-Setup/wiki/MAME) | MAME 0.37b5 | [2270](http://code.google.com/p/imame4all/wiki/GameList) | [.DAT](https://drive.google.com/file/d/0B2TMeZ6iEFvHQnJqS19JRUhzSmM/view?usp=sharing)| [List](https://docs.google.com/spreadsheets/d/1Fmx2RPcgVgIIeKpaBKNEGWCDuu3DGfR-VkrnIVsIpeE/edit?usp=sharing) |
+| [lr-mame2003](https://github.com/RetroPie/RetroPie-Setup/wiki/MAME) | MAME 0.78 | 4705 | [.DAT](https://drive.google.com/file/d/0B2TMeZ6iEFvHTkc2TXZOOFhCRzQ/view?usp=sharing)| [List](https://docs.google.com/spreadsheets/d/1LP1MELCvcxu7TfiowF_0ZuvRVEMqlfQyTVetnOJvuJc/edit?usp=sharing) |
+| [lr-mame2010](https://github.com/RetroPie/RetroPie-Setup/wiki/MAME) | MAME 0.139 | 8782 | [.DAT](https://drive.google.com/file/d/0B2TMeZ6iEFvHUFdCc04zZ3o4dnM/view?usp=sharing)| [List](https://docs.google.com/spreadsheets/d/1IRSmFrSDvIc6gAw0gn12TcQ3HDOwmrETTor8wvvb7VI/edit?usp=sharing) |
+| [advmame-.94](https://github.com/RetroPie/RetroPie-Setup/wiki/MAME) | MAME 0.94 | 5563 | [.DAT](https://drive.google.com/file/d/0B2TMeZ6iEFvHa2E5Rzl4ZEdMdjQ/view?usp=sharing)| [List](https://docs.google.com/spreadsheets/d/1AEQ94buG0rvbW0xdnYKeuEhHeCbuZlRfRJQCb1Dt8fw/edit?usp=sharing) |
+| [advmame-1.4](https://github.com/RetroPie/RetroPie-Setup/wiki/MAME) | MAME 0.106 | 6166 | [.DAT](https://drive.google.com/file/d/0B2TMeZ6iEFvHMEZnb1RxQWNmdHM/view?usp=sharing)| [List](https://docs.google.com/spreadsheets/d/1RapyxChe2BMOfbX-FsCup9SXGxvS1WmXAofwaTJtmxc/edit?usp=sharing) |
+| [pifba](https://github.com/RetroPie/RetroPie-Setup/wiki/FinalBurn-Alpha) | FB Alpha v0.2.96.71 | 684 | [.DAT](https://drive.google.com/file/d/0B2TMeZ6iEFvHaHUta2dQYk1HTGM/view?usp=sharing)| [List](https://docs.google.com/spreadsheets/d/1OZioLrz16ptaNbjQUDP5hhVzQDTOTn9Nz46Hbj3-06k/edit?usp=sharing) |
+| [lr-fbalpha2012](https://github.com/RetroPie/RetroPie-Setup/wiki/FinalBurn-Alpha) | FB Alpha v0.2.97.30 | [3369](https://raw.githubusercontent.com/libretro/fbalpha2012/master/svn-current/trunk/gamelist.txt) | [.DAT](https://drive.google.com/file/d/0B2TMeZ6iEFvHcF96YmdjaWlEdXM/view?usp=sharing)| [List](https://docs.google.com/spreadsheets/d/1rWO7Lm0bTGNpak6J-CPzde0GNIDP0NHDoQdJ6iWosfA/edit?usp=sharing) |
+| [lr-fbalpha](https://github.com/RetroPie/RetroPie-Setup/wiki/FinalBurn-Alpha) | FB Alpha v0.2.97.39 | [4375](https://raw.githubusercontent.com/libretro/fbalpha/master/gamelist.txt) | [.DAT](https://github.com/libretro/fbalpha/blob/master/dats/FB%20Alpha%20v0.2.97.39%20(ClrMame%20Pro%20XML).dat.zip?raw=true)| [List](https://docs.google.com/spreadsheets/d/1GaqIIoiWbzKHwZ52S2xCSDQXILo81Ls1mHK6czKGAtM/edit?usp=sharing) |
+| [gngeopi](https://github.com/RetroPie/RetroPie-Setup/wiki/Neo-Geo) | [Varies - read more](https://github.com/retropie/retropie-setup/wiki/neo-geo#roms) | 203 | [.DAT](https://drive.google.com/file/d/0B2TMeZ6iEFvHZVVCYmVtaUM1VlU/view?usp=sharing)| [List](https://docs.google.com/spreadsheets/d/1A_a_9t14uzDUMrrO0RgLDwiVUiycmclcPIs6cU6Iox8/edit?usp=sharing) |
 
 For further details, see the system-specific wiki pages for [MAME](https://github.com/petrockblog/RetroPie-Setup/wiki/MAME) and [FBA](https://github.com/petrockblog/RetroPie-Setup/wiki/FinalBurn-Alpha).
 
@@ -26,23 +33,19 @@ Arcade ROMs are tied to the version of the arcade emulator, because the definiti
 
 For example, MAME2003 is based off the MAME 0.78 source code, so you must use a MAME 0.78 ROM set with MAME2003. If you use ROMs which are from an earlier or later MAME version, such as 0.50 or 0.100 or 0.173, then those ROMs probably will not work with MAME2003 because that other version's definition of the correct ROM is different from 0.78's definition of the correct ROM.
 
-RetroPie includes forks of the [MAME](http://mamedev.org/) emulator that work well on the Raspberry Pi hardware, but are based on older versions of the emulator code. The [Final Burn Alpha](http://www.fbalpha.com/) emulator usually performs better than MAME but supports less games, a current and earlier FBA are available in RetroPie.
-
-The recommended emulators are:
-
-* Pi 2 and Pi 3: `lr-mame2003` and `lr-fbalpha`
-* Pi 1 and Pi Zero: `mame4all`  (the native emulator, not the RetroArch core) and `pi-fba`
-
-If the game you wish to play is supported by different emulator versions, try each version, as one may perform better than another. Earlier versions usually run faster than later versions (but not always). Earlier versions also support less games than later versions. Native emulators like mame4all and AdvMame may perform better than RetroArch cores but cannot take advantage of global RetroArch configurations so must be configured individually. Generally most 2D games work well on the Pi 3, but most 3D and vector games do not run at playable speed or at all.
+RetroPie includes forks of the [MAME](http://mamedev.org/) emulator that work well on the Raspberry Pi hardware, but are based on older versions of the emulator code. The [Final Burn Alpha](http://www.fbalpha.com/) emulator usually performs better than MAME but supports less games.
 
 Further good resources for understanding more about MAME/FBA arcade ROMs and their usage are:
 
 * [RetroPie Forum: How to use MAME with RetroPie Help Guide](https://retropie.org.uk/forum/topic/2859/how-to-use-mame-with-retropie-help-guide)
 * [Demystifying MAME ROMs Tutorial by ChoccyHobNob](http://choccyhobnob.com/tutorials/demystifying-mame-roms/).
 
-So how do you tell you have the right ROM? The details of correct ROMs are stored in DAT files. A DAT file describes the correct ROM contents such filenames, file sizes, and checksums to verify contents are not wrong or corrupt. DAT files are just (extremely large) text files. You can open them in a text editor if you wish to see the contents.
+# Verifying or Rebuilding ROMs 
+So how do you tell you have the right ROM if you aren't sure that your set matches the version required by the emulator you chose?
 
-You can use a ROM verification tool to check your ROMs against a given DAT file. Some popular ROM verification tools are:
+The details of correct ROMs are stored in DAT files. A DAT file describes the correct ROM contents such filenames, file sizes, and checksums to verify contents are not incorrect or corrupt. DAT files are just (extremely large) text files. You can open them in a text editor if you wish to see the contents.
+
+ROM verification tools check ROMs against a given DAT file. Some popular ROM verification tools are:
 
 * [clrmamepro](http://mamedev.emulab.it/clrmamepro/) (Windows)
 * [clrmamepro](http://www.emulab.it) (OSX)
@@ -50,13 +53,9 @@ You can use a ROM verification tool to check your ROMs against a given DAT file.
 * [Romulus](http://romulus.net63.net/) (Windows)
 * [RomVault](http://www.romvault.com/) (Windows)
 
-All of the Windows tools can be run on Linux (x86) using [Wine](https://www.winehq.org/).
+All of the Windows tools can be run on Linux (x86) using [Wine](https://www.winehq.org/). **The remainder of this section will focus on clrmamepro for Windows, one of the most popular tools.**
 
-# clrmamepro Tutorial
-
-This section will focus on the clrmamepro Windows utility for verifying and converting romsets.
-
-clrmamepro is very powerful, but also somewhat complex and not friendly to new users.
+Please be aware that clrmamepro is very powerful, but it is also complex and not friendly to new users.
 
 ## Video Tutorial
 
