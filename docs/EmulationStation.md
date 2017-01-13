@@ -113,3 +113,6 @@ When configuring the inputs in EmulationStation, take into account that the Left
 Because of the development hiatus, there has been some attention towards other front-ends.
 * Attract-Mode ([site](http://attractmode.org/), [forum thread](https://retropie.org.uk/forum/topic/93/attract-mode-with-retropie-alternative-to-emulationstation))
 * mehstation ([site](https://remy.io/mehstation))
+
+# Emulation Station CEC support 
+* https://github.com/dillbyrne/es-cec-input (Be sure to read the README)
