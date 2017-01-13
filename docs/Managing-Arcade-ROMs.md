@@ -25,8 +25,6 @@ If the ROM you wish to play is only supported by other emulator versions in the 
 | [lr-fbalpha](https://github.com/RetroPie/RetroPie-Setup/wiki/FinalBurn-Alpha) | FB Alpha v0.2.97.39 | [4375](https://raw.githubusercontent.com/libretro/fbalpha/master/gamelist.txt) | [.DAT](https://github.com/libretro/fbalpha/blob/master/dats/FB%20Alpha%20v0.2.97.39%20(ClrMame%20Pro%20XML).dat.zip?raw=true)| [List](https://docs.google.com/spreadsheets/d/1GaqIIoiWbzKHwZ52S2xCSDQXILo81Ls1mHK6czKGAtM/edit?usp=sharing) |
 | [gngeopi](https://github.com/RetroPie/RetroPie-Setup/wiki/Neo-Geo) | [Varies - read more](https://github.com/retropie/retropie-setup/wiki/neo-geo#roms) | 203 | [.DAT](https://drive.google.com/file/d/0B2TMeZ6iEFvHZVVCYmVtaUM1VlU/view?usp=sharing)| [List](https://docs.google.com/spreadsheets/d/1A_a_9t14uzDUMrrO0RgLDwiVUiycmclcPIs6cU6Iox8/edit?usp=sharing) |
 
-For further details, see the system-specific wiki pages for [MAME](https://github.com/petrockblog/RetroPie-Setup/wiki/MAME) and [FBA](https://github.com/petrockblog/RetroPie-Setup/wiki/FinalBurn-Alpha).
-
 ## Crash Course in Arcade ROMs
 
 Arcade ROMs are tied to the version of the arcade emulator, because the definition of what is the "correct" contents and usage of the ROM can change from version to version of the emulator.
@@ -35,7 +33,7 @@ For example, MAME2003 is based off the MAME 0.78 source code, so you must use a 
 
 RetroPie includes forks of the [MAME](http://mamedev.org/) emulator that work well on the Raspberry Pi hardware, but are based on older versions of the emulator code. The [Final Burn Alpha](http://www.fbalpha.com/) emulator usually performs better than MAME but supports less games.
 
-Further good resources for understanding more about MAME/FBA arcade ROMs and their usage are:
+For further details, see the system-specific wiki pages for [MAME](https://github.com/petrockblog/RetroPie-Setup/wiki/MAME) and [FBA](https://github.com/petrockblog/RetroPie-Setup/wiki/FinalBurn-Alpha). Recommended external resources for understanding more about MAME/FBA arcade ROMs and their usage are:
 
 * [RetroPie Forum: How to use MAME with RetroPie Help Guide](https://retropie.org.uk/forum/topic/2859/how-to-use-mame-with-retropie-help-guide)
 * [Demystifying MAME ROMs Tutorial by ChoccyHobNob](http://choccyhobnob.com/tutorials/demystifying-mame-roms/).
