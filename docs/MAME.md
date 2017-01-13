@@ -29,7 +29,7 @@ Accepted File Extensions: **.zip**
 When working with these ROMs *you will need to know which romset it belongs to, then use a compatible emulator to run it*. There are many ways to figure this out, so some resources are linked below. For example, let's say you have a ROM file such as **anAwesomeGame.zip** and you learn that it belongs to romset 0.37b5. Then place **anAwesomeGame.zip** file (without extracting it) into the *arcade or mame-mame4all* ROM directories (as mentioned in the above table). Then, make sure you have the corresponding BIOS file, **neogeo.zip**, *in that same directory*. That's it. Be sure that in the game's run configuration that the correct emulator is used and you are good to go.
 
 **For information on how to rebuild newer romsets to be compatible with these emulators see this post:**
-**[Managing ROMs](https://github.com/RetroPie/RetroPie-Setup/wiki/Managing-Arcade-ROMs)**
+**[Managing Arcade ROMs](https://github.com/RetroPie/RetroPie-Setup/wiki/Managing-ROMs)**
 
 ## **Arcade**
 
