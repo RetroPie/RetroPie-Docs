@@ -1,8 +1,11 @@
-## Quick Reference
+## Getting Started
 
-The following chart is a quick reference for all the arcade emulators in RetroPie:
+**Working with arcade ROMs requires a different approach than ROMs for console systems.** The overall process for using an arcade emulator in RetroPie:
 
-| Emulator | Romset | # of ROMs | [.DAT Files](https://github.com/HerbFargus/retropie-dat/archive/master.zip) | Compatibility List |
+1. Choose one of the arcade emulators listed in the table below that your system is powerful enough to run
+2. Either download or 'rebuild' a set of arcade ROMs with a version number that exactly matches the emulator you selected
+
+| Emulator | Required ROM Version | # of ROMs | [.DAT Files](https://github.com/HerbFargus/retropie-dat/archive/master.zip) | Compatibility List |
 | :---: | :---: | :---: | :---: | :---: |
 | [mame4all](https://github.com/RetroPie/RetroPie-Setup/wiki/MAME) | 0.37b5 | [2270](http://code.google.com/p/imame4all/wiki/GameList) | [.DAT](https://drive.google.com/file/d/0B2TMeZ6iEFvHQnJqS19JRUhzSmM/view?usp=sharing)| [List](https://docs.google.com/spreadsheets/d/1gpuoZx78kDDdnf_yADicsSZHMfpOxNySSov7UdCDAik/edit?usp=sharing) |
 | [lr-imame4all](https://github.com/RetroPie/RetroPie-Setup/wiki/MAME) | 0.37b5 | [2270](http://code.google.com/p/imame4all/wiki/GameList) | [.DAT](https://drive.google.com/file/d/0B2TMeZ6iEFvHQnJqS19JRUhzSmM/view?usp=sharing)| [List](https://docs.google.com/spreadsheets/d/1Fmx2RPcgVgIIeKpaBKNEGWCDuu3DGfR-VkrnIVsIpeE/edit?usp=sharing) |
