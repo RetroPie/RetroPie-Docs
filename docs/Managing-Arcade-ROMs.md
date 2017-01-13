@@ -2,7 +2,7 @@
 
 **Working with arcade ROMs requires a different approach than ROMs for console systems.** The overall process for using an arcade emulator in RetroPie:
 
-1. Choose one of the arcade emulators listed in the table below that your system is powerful enough to run
+1. Choose an arcade emulator listed in the table below that your system is powerful enough to run
 2. Either download or 'rebuild' a set of arcade ROMs with a version number that exactly matches the emulator you selected
 
 | Emulator | Required ROM Version | # of ROMs | [.DAT Files](https://github.com/HerbFargus/retropie-dat/archive/master.zip) | Compatibility List |
