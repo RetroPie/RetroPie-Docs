@@ -45,7 +45,7 @@ So how do you tell you have the right ROM if you aren't sure that your set match
 
 **Note: the process of verifying and rebuilding ROMs is complex and requires a substantial investment of time and effort in order to master. If your goal is to have working arcade ROMs, it is almost always simpler to download a full ROM set that has already been verified to match the arcade emulator you chose.**
 
-In order to verify or rebuild a set, you need its correct DAT file and a software tool to process the DAT. DATs describe the ROM contents including filenames, file sizes, and checksums to verify contents are not incorrect or corrupt. DAT files are just (extremely large) text files, so you can open them in a text editor if you wish to see the contents.
+In order to verify or rebuild a set, you need its DAT file and a software tool to process the DAT. DATs describe the ROM contents including filenames, file sizes, and checksums to verify contents are not incorrect or corrupt.
 
 Popular ROM verification tools include:
 
@@ -66,24 +66,17 @@ All of the Windows tools can be run on Linux (x86) using [Wine](https://www.wine
 * The current version of RetroPie. Romsets and packaged MAME/FBA emulators occasionally change.
 * A Windows PC for setting up RetroPie and running clrmamepro. This tutorial assumes you are running a 64 bit version of Windows, but the steps for 32 bit Windows will be the same once you get past downloading the clrmamepro software.
 
-**NOTE:** There are unsupported WINE versions available for OSX and Linux, if you Google.
-
-## Step 1 - Back up your ROMs
+### Step 1 - Back up your ROMs
 It is possible with clrmamepro to change one or two options and when it runs it will delete all your existing ROMs. OK, not really - using the default options it will make backups of any files it removes, but I have seen a lot of people when getting started mess up their ROMs beyond repair.
 
-##Step 2 - Download [clrmamepro](http://mamedev.emulab.it/clrmamepro/#downloads)
-The version at the time of this article is 4.016.  I would recommend the 64 bit version if you are running a 64 bit OS, it will be significantly faster.  I would also recommend the zip version, just extract it to C:\clrmamepro.  There's no need to run the installer.
+### Step 2 - Download [clrmamepro](http://mamedev.emulab.it/clrmamepro/#downloads)
 
-##Step 3 - Acquire DAT files
-DAT files are the [XML-based](http://en.wikipedia.org/wiki/XML) database definitions of the exact ROMs an emulator uses. Using the DAT files and [CRC](http://en.wikipedia.org/wiki/Cyclic_redundancy_check) checks, clrmamepro is able to identify which of your ROMs are valid for a given emulator.
-
+### Step 3 - Acquire DAT files
 You can download all .DAT files for all arcade emulators [**HERE**](https://github.com/HerbFargus/retropie-dat/archive/master.zip)
 * For this tutorial, extract the zip file into `C:\` (but you can really put it anywhere you want)
 * Open retropie-dat-master and you should see a list of folders. Each folder contains the .DAT files for the respective emulator. We will only be using `C:\retropie-dat-master\mame4all\MAME 0.37b5.dat` in this tutorial.
 * Create a subdirectory `C:\retropie-dat-master\mame4allroms` (this will be used in the next step)
 * Create a subdirectory `C:\retropie-dat-master\pifbaroms`
-
-**NOTE:** Use the appropriate .DAT from the zip file if you want to target a different MAME/FBA emulator. The table at the top of this page details the files needed.
 
 ##Step 4 - Run clrmamepro for the first time
 * Run `C:\clrmamepro\cmpro64.exe`.  The welcome screen explains that common first steps are to 1) Create a Profile, 2) Set up your paths and 3) Scan your ROMs. We will be doing things slightly differently, in order to leave your source ROMs intact.  
@@ -99,21 +92,21 @@ You can download all .DAT files for all arcade emulators [**HERE**](https://gith
 * Select the folder you created in the last step called `C:\retropie-dat-master\mame4allroms` and click **"OK"**
 * Close the settings window with the **"X"** button in the upper right
 
-At this point, you could scan the ROMs folder you just selected, but we just created this folder and it is empty.  Instead, we will rebuild into this folder.  Clrmamepro can scan other locations for matching ROMs and build a new ROM set from them.
+At this point, you could scan the ROMs folder you just selected, but we just created this folder and it is empty.  Instead, we will rebuild into this folder.
 
-##Step 5- Rebuild a ROM set
+### Step 5- Rebuild a ROM set
 
 * In the main clrmamepro window, select **"Rebuilder"**
 * The destination should already be filled in for you - it is the same as the ROM path you defined above in the settings window: `C:\retropie-dat-master\mame4allroms`
 * Use the browse button **"..."** to select your source path.  For example you might have a full set of MAME v0.156 ROMs - point clrmamepro to that directory as your source.
-* When rebuilding there are three options: **Non-Merged, Merged, and Split**. (**NOTE**: This process requires a .dat file that contains merge data for the romset. Using Non-Merged ROMs is the most straightforward way to copy individual games to a RetroPie system rather than an entire MAME set.)
+* When rebuilding there are three options: **Non-Merged, Merged, and Split**. (**NOTE**: Using Non-Merged ROMs is the most straightforward way to copy individual games to a RetroPie system.)
 
 To understand what these options mean, we must first understand the MAME concept of **parents** and **clones**:
 
-* **Parent:** The main version of the game. This is _normally_ the most common variant, in the English language. They have all the files needed to play them within the .zip file.
+* **Parent:** This is _normally_ the most common variant of a ROM in the English language. In some cases it is not the best working version of the game, however.
 * **Clone:** A variant of the Parent. Typically different language, or other small changes. Their .zips only contain the files that have been changed from the parent, meaning that the parent .zip must be present in the ROM directory for the clone to be ran.
-* **Non-Merged Set:** parents and clones in their own stand-alone .zip files. This removes clone's dependencies on parents, meaning you can take ANY of these .zip files (even the clones), put them in the appropriate ROM directory, and they should work! However, since every .zip has every required file, they will use higher total disk space. If you only want certain MAME ROMs on your system, use this method to ensure each .zip is usable stand-alone.
-* **Merged Set:** puts _all_ files of the parents and clones of the game into a single .zip file. The version that will be launched will be the version that which is the .zip's name. To run a different version, rename the merged .zip to that of the version you want.
+* **Non-Merged Set:** parents and clones in their own stand-alone .zip files. This removes clone's dependencies on parents, meaning you can take ANY of these .zip files (even the clones), put them in the appropriate ROM directory, and they should work. However, since every .zip has every required file, they will use higher total disk space. If you only want certain MAME ROMs on your system, use this method to ensure each .zip is usable stand-alone.
+* **Merged Set:** puts _all_ files of the parents and clones of the game into a single .zip file. The version that will be launched will be the version that which is the .zip's name.
 * **Split Set:** parents are complete .zip files with everything needed, and clones are .zip files with _only_ their unique files, saving disk space. This means that you will have to transfer the appropriate parent .zip to your ROM directory for every clone .zip you wish to use. For example, pacman.zip (a clone), will not work without puckman.zip (its parent). This quickly gets confusing, so it's recommended to simply transfer the whole set to your ROM directory, to avoid missing file errors. **NOTE:** split sets are how most downloaded complete MAME romsets are presented.
 
 * Click **"Rebuild..."**.  Depending on the size of the directory you chose as a source, this could take some time
@@ -123,18 +116,18 @@ To understand what these options mean, we must first understand the MAME concept
 
 Time to find out how well your source ROMs matched up...
 
-##Step 6 - Scan a ROM set
+### Step 6 - Scan a ROM set
 * In the main clrmamepro window, select **"Scanner"**
 * Leave all settings at default and click **"New Scan..."**
 * When clrmamepro finishes scanning, you will see a "Statistics" window with high level information and a "Scan Results" window with detailed information about your missing ROMs
 
-##Repeat Steps 4 through 6 for the FBA ROM set#
+### Repeat Steps 4 through 6 for the FBA ROM set#
 * From clrmamepro "Profiler" window load the DAT file for PiFBA `C:\retropie-dat-master\pifba\fba_029671_od_release_10_working_roms.dat`
 * From clrmamepro "Settings" windows set the ROM path to `C:\retropie-dat-master\pifbaroms`
 * Use clrmamepro's "Rebuilder" to rebuild your existing ROMs to a new ROM set
 * Scan the rebuilt ROMs using the "Scanner"
 
-##Notes
+## Notes
 
 That's the basics of using clrmamepro.  Some additional notes:
 
@@ -353,27 +346,7 @@ Active Sets 4375/4375
 * BIOS 6/6
 
 Dat File:  [FB Alpha v0.2.97.39 (ClrMame Pro XML, Arcade Only)](https://dl.dropboxusercontent.com/u/51705339/fba%20029739%20dats/FB%20Alpha%20v0.2.97.39%20(ClrMame%20Pro%20XML%2C%20Arcade%20Only).dat)
-
-Dat File: [FB Alpha v0.2.97.39 (ClrMame Pro XML, ColecoVision only)](https://dl.dropboxusercontent.com/u/51705339/fba%20029739%20dats/FB%20Alpha%20v0.2.97.39%20(ClrMame%20Pro%20XML%2C%20ColecoVision%20only).dat)
-
-Dat File:  [FB Alpha v0.2.97.39 (ClrMame Pro XML, Game Gear only)](https://dl.dropboxusercontent.com/u/51705339/fba%20029739%20dats/FB%20Alpha%20v0.2.97.39%20(ClrMame%20Pro%20XML%2C%20Game%20Gear%20only).dat)
-
-Dat File: [FB Alpha v0.2.97.39 (ClrMame Pro XML, Master System only)](https://dl.dropboxusercontent.com/u/51705339/fba%20029739%20dats/FB%20Alpha%20v0.2.97.39%20(ClrMame%20Pro%20XML%2C%20Master%20System%20only).dat)
-
-Dat File: [FB Alpha v0.2.97.39 (ClrMame Pro XML, Megadrive only)](https://dl.dropboxusercontent.com/u/51705339/fba%20029739%20dats/FB%20Alpha%20v0.2.97.39%20(ClrMame%20Pro%20XML%2C%20Megadrive%20only).dat)
-
-Dat File:  [FB Alpha v0.2.97.39 (ClrMame Pro XML, MSX 1 Games only)](https://dl.dropboxusercontent.com/u/51705339/fba%20029739%20dats/FB%20Alpha%20v0.2.97.39%20(ClrMame%20Pro%20XML%2C%20MSX%201%20Games%20only).dat)
-
-Dat File: [FB Alpha v0.2.97.39 (ClrMame Pro XML, PC-Engine only)](https://dl.dropboxusercontent.com/u/51705339/fba%20029739%20dats/FB%20Alpha%20v0.2.97.39%20(ClrMame%20Pro%20XML%2C%20PC-Engine%20only).dat)
-
-Dat File: [FB Alpha v0.2.97.39 (ClrMame Pro XML, Sega SG-1000 only)](https://dl.dropboxusercontent.com/u/51705339/fba%20029739%20dats/FB%20Alpha%20v0.2.97.39%20(ClrMame%20Pro%20XML%2C%20Sega%20SG-1000%20only).dat)
-
-Dat File: [FB Alpha v0.2.97.39 (ClrMame Pro XML, SuprGrafx only)](https://dl.dropboxusercontent.com/u/51705339/fba%20029739%20dats/FB%20Alpha%20v0.2.97.39%20(ClrMame%20Pro%20XML%2C%20SuprGrafx%20only).dat)
-
-Dat File: [FB Alpha v0.2.97.39 (ClrMame Pro XML, TurboGrafx16 only)](https://dl.dropboxusercontent.com/u/51705339/fba%20029739%20dats/FB%20Alpha%20v0.2.97.39%20(ClrMame%20Pro%20XML%2C%20TurboGrafx16%20only).dat)
-
 Dat File: [FB Alpha v0.2.97.39 (ClrMame Pro XML) (NeoGeo Only)](https://dl.dropboxusercontent.com/u/51705339/fba%20029739%20dats/FB%20Alpha%20v0.2.97.39%20(ClrMame%20Pro%20XML)%20(NeoGeo%20Only).dat) "Rebuild using Non-merged-sets, Place the roms in the neogeo roms folder and use FB Alpha v0.2.97.39 as the default emulator."
-
 
 [**lr-fbalpha COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1GaqIIoiWbzKHwZ52S2xCSDQXILo81Ls1mHK6czKGAtM/edit?usp=sharing)  feel free to contribute to the list.
 
