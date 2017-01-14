@@ -4,12 +4,12 @@
 |---|
 |4.1|
 1. [Hardware](https://github.com/RetroPie/RetroPie-Setup/wiki/First-Installation#hardware-needed)
-1. [Installation](https://github.com/RetroPie/RetroPie-Setup/wiki/First-Installation#installation)
-1. [Controller Configuration](https://github.com/RetroPie/RetroPie-Setup/wiki/First-Installation#controller-configurations)
-1. [EmulationStation](https://github.com/RetroPie/RetroPie-Setup/wiki/First-Installation#emulationstation)
-1. [Configure Wifi](https://github.com/RetroPie/RetroPie-Setup/wiki/First-Installation#configuring-wifi)
-1. [Installing Additional Emulators](https://github.com/RetroPie/RetroPie-Setup/wiki/First-Installation#installing-additional-emulators--ports)
-1. [Transferring Roms](https://github.com/RetroPie/RetroPie-Setup/wiki/First-Installation#transferring-roms)
+2. [Installation](https://github.com/RetroPie/RetroPie-Setup/wiki/First-Installation#installation)
+3. [Controller Configuration](https://github.com/RetroPie/RetroPie-Setup/wiki/First-Installation#controller-configurations)
+4. [EmulationStation](https://github.com/RetroPie/RetroPie-Setup/wiki/First-Installation#emulationstation)
+5. [Configure Wifi](https://github.com/RetroPie/RetroPie-Setup/wiki/First-Installation#configuring-wifi)
+6. [Installing Additional Emulators](https://github.com/RetroPie/RetroPie-Setup/wiki/First-Installation#installing-additional-emulators--ports)
+7. [Transferring Roms](https://github.com/RetroPie/RetroPie-Setup/wiki/First-Installation#transferring-roms)
 
 Congratulations! You have discovered the wonderful world of RetroPie- your entire childhood is within reach! RetroPie is a combination of multiple projects including [RetroArch](http://www.libretro.com), [EmulationStation](http://www.emulationstation.org), and many others. 
 
@@ -48,13 +48,13 @@ Download the SD image for your version of Raspberry Pi from the following page:
 
 **https://retropie.org.uk/download/**
 
-If you are unsure which version of Raspberry Pi you have there is an easy way to check:
+If you are unsure which version of Raspberry Pi you have just count the raspberries on boot:
 
-Rpi 0/1= 1 raspberry when the pi boots up
+Raspberry Pi 0/1 | Raspberry Pi 2/3
+| :---: | :---: |
+![rpi1](https://cloud.githubusercontent.com/assets/10035308/21957849/f64fe008-da54-11e6-9a1c-09cb9e87c8f5.png) | ![rpi2](https://cloud.githubusercontent.com/assets/10035308/21957850/f66f2120-da54-11e6-876b-6d7f276c31e3.png)
 
-Rpi 2/3= 4 raspberries when the pi boots up
-
-If you get the error `Illegal Instruction`  when it boots, you picked the wrong SD image.
+If you get the error `Illegal Instruction` when it boots or if it just boots into the terminal, you picked the wrong SD image or the image was corrupted on download or extraction.
 
 ### Extract
 
@@ -108,13 +108,13 @@ Hotkeys enable you to press a combination of buttons to access functions such as
 
 Hotkeys | Action
 | :---: | :---: |
-Select+Start | Exit
-Select+Right Shoulder | Save
-Select+Left Shoulder | Load
-Select+Right | Input State Slot Increase
-Select+Left | Input State Slot Decrease 
-Select+X | RGUI Menu
-Select+B | Reset
+| Select+Start | Exit |
+| Select+Right Shoulder | Save |
+| Select+Left Shoulder | Load |
+| Select+Right | Input State Slot Increase |
+| Select+Left | Input State Slot Decrease |
+| Select+X | RGUI Menu |
+| Select+B | Reset |
 
 ## EmulationStation
 
