@@ -78,7 +78,7 @@ You can download all .DAT files for all arcade emulators [**HERE**](https://gith
 * Create a subdirectory `C:\retropie-dat-master\mame4allroms` (this will be used in the next step)
 * Create a subdirectory `C:\retropie-dat-master\pifbaroms`
 
-##Step 4 - Run clrmamepro for the first time
+### Step 4 - Run clrmamepro for the first time
 * Run `C:\clrmamepro\cmpro64.exe`.  The welcome screen explains that common first steps are to 1) Create a Profile, 2) Set up your paths and 3) Scan your ROMs. We will be doing things slightly differently, in order to leave your source ROMs intact.  
 * Click OK to the Welcome screen
 * Click **"Add DatFile..."** and open the MAME4ALL DAT file at `C:\retropie-dat-master\mame4all\MAME 0.37b5.dat`
