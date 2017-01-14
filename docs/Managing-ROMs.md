@@ -10,7 +10,7 @@ The recommended emulators are:
 * Pi 2 and Pi 3: `lr-mame2003` and `lr-fbalpha`
 * Pi 1 and Pi Zero: `mame4all`  (the native emulator, not the RetroArch core) and `pi-fba`
 
-If the ROM you wish to play is only supported by other emulator versions in the table below, please be aware that earlier emulator versions usually run faster than later versions but also that earlier versions support fewer games than later versions. Native emulators like mame4all and AdvMame may perform better than RetroArch cores but cannot take advantage of global RetroArch configurations so they must be configured individually. Generally most 2D games work well on the Pi 3, but most 3D and vector games do not run at playable speed or at all.
+If the ROM you wish to play is only supported by other emulator versions in the table below, please be aware that earlier arcade emulator versions usually run faster than later versions but also that earlier versions support fewer games than later versions. Native emulators like mame4all and AdvMame may perform better than RetroArch cores but cannot take advantage of global RetroArch configurations so they must be configured individually. Generally most 2D games work well on the Pi 3, but most 3D and vector games do not run at playable speed or at all.
 
 | Emulator | Required ROM Version | # of ROMs | [.DAT Files](https://github.com/HerbFargus/retropie-dat/archive/master.zip) | Compatibility List |
 | :---: | :---: | :---: | :---: | :---: |
@@ -27,11 +27,7 @@ If the ROM you wish to play is only supported by other emulator versions in the 
 
 ## Crash Course in Arcade ROMs
 
-Arcade ROMs are tied to the version of the arcade emulator, because the definition of what is the "correct" contents and usage of the ROM can change from version to version of the emulator.
-
-For example, MAME2003 is based off the MAME 0.78 source code, so you must use a MAME 0.78 ROM set with MAME2003. If you use ROMs which are from an earlier or later MAME version, such as 0.50 or 0.100 or 0.173, then those ROMs probably will not work with MAME2003 because that other version's definition of the correct ROM is different from 0.78's definition of the correct ROM.
-
-RetroPie includes forks of the [MAME](http://mamedev.org/) emulator that work well on the Raspberry Pi hardware, but are based on older versions of the emulator code. The [Final Burn Alpha](http://www.fbalpha.com/) emulator usually performs better than MAME but supports less games.
+The version of any given arcade ROM must match the specific version of the arcade emulator because ROMs change from version to version of the emulator. For example, MAME2003 is based off the MAME 0.78 source code, so you must use a MAME 0.78 ROM set with MAME2003. If you use ROMs which are from an earlier or later MAME version, such as 0.50 or 0.100 or 0.173, then those ROMs probably will not work with MAME2003.
 
 For further details, see the system-specific wiki pages for [MAME](https://github.com/petrockblog/RetroPie-Setup/wiki/MAME) and [FBA](https://github.com/petrockblog/RetroPie-Setup/wiki/FinalBurn-Alpha). Recommended external resources for understanding more about MAME/FBA arcade ROMs and their usage are:
 
@@ -39,11 +35,13 @@ For further details, see the system-specific wiki pages for [MAME](https://githu
 * [Demystifying MAME ROMs Tutorial by ChoccyHobNob](http://choccyhobnob.com/tutorials/demystifying-mame-roms/).
 
 # Verifying or Rebuilding ROMs 
-So how do you tell you have the right ROM if you aren't sure that your set matches the version required by the emulator you chose?
+So how do you tell you have the right ROM if you aren't sure that your set matches the version required by the emulator you chose? What if you don't have the right version?
 
-The details of correct ROMs are stored in DAT files. A DAT file describes the correct ROM contents such filenames, file sizes, and checksums to verify contents are not incorrect or corrupt. DAT files are just (extremely large) text files. You can open them in a text editor if you wish to see the contents.
+**Note: the process of verifying and rebuilding ROMs is complex and requires a substantial investment of time and effort in order to master. If your goal is to have working arcade ROMs, it is almost always simpler to download a full ROM set that has already been verified to match the arcade emulator you chose.**
 
-ROM verification tools check ROMs against a given DAT file. Some popular ROM verification tools are:
+In order to verify or rebuild a set, you need its correct DAT file and a software tool to process the DAT. DATs describe the ROM contents including filenames, file sizes, and checksums to verify contents are not incorrect or corrupt. DAT files are just (extremely large) text files, so you can open them in a text editor if you wish to see the contents.
+
+Popular ROM verification tools include:
 
 * [clrmamepro](http://mamedev.emulab.it/clrmamepro/) (Windows)
 * [clrmamepro](http://www.emulab.it) (OSX)
@@ -52,8 +50,6 @@ ROM verification tools check ROMs against a given DAT file. Some popular ROM ver
 * [RomVault](http://www.romvault.com/) (Windows)
 
 All of the Windows tools can be run on Linux (x86) using [Wine](https://www.winehq.org/). **The remainder of this section will focus on clrmamepro for Windows, one of the most popular tools.**
-
-Please be aware that clrmamepro is very powerful, but it is also complex and not friendly to new users.
 
 ## Video Tutorial
 
