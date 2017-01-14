@@ -58,6 +58,28 @@ Restart and check the folder to make sure it didn't have any issues mounting at 
 
 With any luck (and if you have a ton of SNES ROMs like myself), it will be fairly apparent that it was able to mount the share at boot.
 
+## Apple Time Capsule
+
+This will give you read/write access, so you could keep your saves there as well (i.e. no need to create separate saves folder and editing save paths).  
+First [create an account on your Time Capsule](https://discussions.apple.com/message/6801520#message6801520) with the same credentials as your Pi (default: pi/raspberry).
+
+Install `cifs-tools` if it's not already installed  
+```
+sudo apt-get update && sudo apt-get install cifs-tools
+```  
+Edit your `autostart.sh` file  
+```
+sudo nano /opt/retropie/configs/all/autostart.sh
+```
+And instead of 
+```
+sudo mount -t cifs -o username=something,password=something //hostname/retropie /home/pi/RetroPie
+```
+you enter 
+```
+sudo mount -t cifs //hostname/retropie -o username=USERNAME,password=PASSWORD,sec=ntlm,file_mode=0777,dir_mode=0777 /home/pi/RetroPie
+```
+
 ## Saving Games
 
 Go ahead and make sure everything works. Don't get to far into a game though, you might not be able to save. If you hit 'Select + R' (default save command) and it gives you an error, the easiest solution I've found is as follows.
