@@ -69,7 +69,7 @@ mame2003-cheats = "enabled"
 
 ## Samples
 
-Some sound effects in a few older (typically pre-1986) arcade games are difficult/impossible to emulate. Instead, audio clips of these effects can be downloaded and automatically played at the appropriate times. To do this, download the sample files you require (eg from http://www.progettosnaps.net/samples/) and place the individual audio files into a .zip file matching the ROM's title (eg `invaders.zip`) into the following location:
+Some sound effects in a few older (typically pre-1986) arcade games are difficult/impossible to emulate. Instead, audio clips of these effects can be downloaded and automatically played at the appropriate times. To do this, download the sample files you require (eg from http://www.progettosnaps.net/samples/) and place the individual audio files into a .zip file matching the ROM's title (eg `invaders.zip`) or into a folder matching the filename of the ROM (eg '\invaders\') into the following location:
 ```
 /home/pi/RetroPie/BIOS/mame2003/samples/
 ```
