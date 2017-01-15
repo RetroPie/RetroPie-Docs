@@ -45,7 +45,7 @@ So how do you tell you have the right ROM if you aren't sure that your set match
 
 **Note: the process of verifying and rebuilding ROMs is complex and requires a substantial investment of time and effort in order to master. If your goal is to have working arcade ROMs, it is almost always simpler to download a full ROM set that has already been verified to match the arcade emulator you chose.**
 
-In order to verify or rebuild a set, you need its DAT file and a software tool to process the DAT. DATs describe the ROM contents including filenames, file sizes, and checksums to verify contents are not incorrect or corrupt.
+In order to verify or rebuild a set, you need its DAT file and a software tool to process the DAT. DATs describe the ROM contents including filenames, file sizes, and checksums to verify contents are not incorrect or corrupt. The wiki pages for [MAME](https://github.com/RetroPie/RetroPie-Setup/wiki/MAME), [FB Alpha](https://github.com/RetroPie/RetroPie-Setup/wiki/FinalBurn-Alpha), and [Neo Geo](https://github.com/RetroPie/RetroPie-Setup/wiki/Neo-Geo) include DATs and detailed information about the ROM sets needed for the various arcade emulators.
 
 Popular ROM verification tools include:
 
