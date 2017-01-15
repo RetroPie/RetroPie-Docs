@@ -21,6 +21,11 @@ Accepted File Extensions: **.zip**
 **For information on how to rebuild newer romsets to be compatible with these emulators see this post:**
 **[Managing Arcade ROMs](https://github.com/RetroPie/RetroPie-Setup/wiki/Managing-ROMs)**
 
+## Arcade ROM paths
+
+In 3.0.0 some emulators share directories, so you need to choose which FBA, NeoGeo and mame4all version you want.
+So you can have 1 romset for each of these (mame4all, FBA, NeoGeo, advmame) To avoid having several EmulationStation menus for different arcade emulators, all arcade-based ROMs can be placed in the `arcade` ROM folder, but you will have to specify which emulator each will use from the [Runcommand Menu](runcommand)
+
 ### lr-fbalpha
 
 **Please see [[lr-fbalpha]] for information on how to configure specific features of this emulator.**
