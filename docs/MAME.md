@@ -31,24 +31,36 @@ When working with these ROMs *you will need to know which romset it belongs to, 
 **For information on how to rebuild newer romsets to be compatible with these emulators see this post:**
 **[Managing Arcade ROMs](https://github.com/RetroPie/RetroPie-Setup/wiki/Managing-ROMs)**
 
-## **Arcade**
+## Arcade ROM paths
 
-To avoid having several EmulationStation menus for different arcade emulators, all arcade-based ROMs can be placed in the `arcade` ROM folder, but you will have to specify which emulator each will use from the [Runcommand Menu](runcommand)
+In 3.0.0 some emulators share directories, so you need to choose which FBA, NeoGeo and mame4all version you want.
+So you can have 1 romset for each of these (mame4all, FBA, NeoGeo, advmame) To avoid having several EmulationStation menus for different arcade emulators, all arcade-based ROMs can be placed in the `arcade` ROM folder, but you will have to specify which emulator each will use from the [Runcommand Menu](runcommand)
 
 [**All Arcade ROMS Compatibility List**](https://docs.google.com/spreadsheets/d/1antILt7D12EWOFzyJwTfB86NceghMJKXG7CdYumuHec/edit?usp=sharing) feel free to contribute to the list.
 
 ## **Emulators**
 
-### **MAME4ALL-Pi**
+Note: These details are as per the default installed binaries on the RetroPie 3.0.0 image.
 
-Place your MAME4ALL-Pi ROMs and the BIOS file in
+### [mame4all-pi](http://sourceforge.net/projects/mame4allpi/)
+
+```shell
+Roms Dir: /home/pi/RetroPie/roms/mame-mame4all
+Binary Dir: /opt/retropie/emulators/mame4all
+Config Dir: /opt/retropie/configs/mame-mame4all
 ```
-/home/pi/RetroPie/roms/mame-mame4all
-```
+MAME Version: Based on **0.37b5** (July 2000)
+Total Games Emulated: [2270](http://code.google.com/p/imame4all/wiki/GameList)
 
-Romset Used: **0.37b5**
+Active Sets 2241/2241
+* Parents 560/560
+* Clones 990/990
+* Others 690/690
+* BIOS 1/1
 
-Total Games Emulated: [2270](http://code.google.com/p/imame4all/wiki/GameList) 
+Dat File: [mame4all-037b5-RetroPie-260.zip](https://drive.google.com/file/d/0B2TMeZ6iEFvHVUNfWHpUZk82bkk/view?usp=sharing)
+
+Dat File (no clones, no neogeo): [mame4all-no-clones-no-neogeo](https://drive.google.com/file/d/0B2TMeZ6iEFvHNm5OYndFUHM3djg/view?usp=sharing)
 
 [**MAME4ALL-PI COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1gpuoZx78kDDdnf_yADicsSZHMfpOxNySSov7UdCDAik/edit?usp=sharing)  feel free to contribute to the list.
 
