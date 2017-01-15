@@ -103,40 +103,85 @@ Total Games Emulated: **5563** (0.94.0) **6166** (1.4) (includes clones etc..)
 
 [**AdvMame 1.4 COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1RapyxChe2BMOfbX-FsCup9SXGxvS1WmXAofwaTJtmxc/edit?usp=sharing)  feel free to contribute to the list.
 
-### lr-Mame2003
+### [lr-mame2003](https://github.com/libretro/mame2003-libretro)
 
 **Please see [[lr-mame2003]] for information on how to configure specific features of this emulator.**
 
-Place your lr-mame2003 ROMs and the BIOS file in
+```shell
+Roms Dir: /home/pi/RetroPie/roms/mame-libretro
+Samples Dir: /home/pi/RetroPie/BIOS/mame2003/samples/
+Binary Dir: /opt/retropie/libretrocores/lr-mame2003
+Config Dir: /opt/retropie/configs/mame-libretro/retroarch.cfg
 ```
-/home/pi/RetroPie/roms/mame-libretro
-```
+MAME Version: Based on **0.78** (December 2003)
+Romsets emulated: 4705 (includes clones etc..)
 
-Place your samples in
-```
-/home/pi/RetroPie/BIOS/mame2003/samples/
-```
+Active Sets 4705/4705
+* Parents 1042/1042
+* Clones 2039/2039
+* Others 1624/1624
+* BIOS 1/1
 
-Romset Used: **.78**
+Dat File (with merge data): [MAME 0.78.dat](https://drive.google.com/file/d/0B2TMeZ6iEFvHTkc2TXZOOFhCRzQ/view?usp=sharing) 
 
-Total Games Emulated: 4705 (includes clones etc...)
+Dat File (working only, no clones): [mame2003-lr-working-no-clones](https://drive.google.com/file/d/0B2TMeZ6iEFvHV21wRVh6TF9uQ1U/view?usp=sharing) **Please note that this DAT file is intended for an 0.78u5 ROM set and may not be an exact match for a 0.78 set or the MAME 2003 core.**
+
+Dat File ('lite' set: working, no clones, neogeo, PlayChoice (NES multiplay), no rotary/dial/trackball/lightgun controls, no casino/multiplay/quiz/mahjong/fruit_machines/rhythm/mature): [mame2003-lr-lite](https://drive.google.com/file/d/0B2TMeZ6iEFvHY1VzcXYyT09iRGs/view?usp=sharing) (No. roms: 1615) **Please note that this DAT file is intended for an 0.78u5 ROM set and may not be an exact match for a 0.78 set or the MAME 2003 core.**
+
+Dat File: [MAME 078u5.dat](https://dl.dropboxusercontent.com/u/51705339/MAME%200.78u5%20Dats/MAME%20078u5.dat)
 
 [**lr-mame2003 COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1LP1MELCvcxu7TfiowF_0ZuvRVEMqlfQyTVetnOJvuJc/edit?usp=sharing)  feel free to contribute to the list.
 
-### lr-mame2010 (EXPERIMENTAL)
+### [lr-mame2010](https://github.com/libretro/mame2010-libretro) (Experimental)
+Note: This emulator has limited functionality. For example, only 2 players are supported.
 
-Place your lr-Mame2010 ROMs in
+```shell
+Roms Dir: /home/pi/RetroPie/roms/mame-libretro
+Binary Dir: /opt/retropie/libretrocores/lr-mame2010
+Config Dir: /opt/retropie/configs/mame-libretro/retroarch.cfg
 ```
-/home/pi/RetroPie/roms/mame-libretro
-```
+MAME Version: Based on **0.139** (August 2010)
+Romsets emulated: 8782 (includes clones etc..)
 
-Romset Used: **.139**
+Active Sets 8782/8782
+* Parents 1835/1835
+* Clones 4265/4265
+* Others 2683/2683
+* BIOS 1/1
 
-Total Games Emulated: 8782 (includes clones etc...)
+Dat File (with merge data): [MAME 0.139.dat](https://drive.google.com/file/d/0B2TMeZ6iEFvHUFdCc04zZ3o4dnM/view?usp=sharing) 
 
 [**lr-mame2010 COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1IRSmFrSDvIc6gAw0gn12TcQ3HDOwmrETTor8wvvb7VI/edit?usp=sharing) feel free to contribute to the list.
 
-This emulator has limited functionality. For example, only 2 players are supported.
+
+### [AdvanceMAME 0.94.0 and 1.4](http://sourceforge.net/projects/advancemame/files/advancemame/0.94.0/)
+```shell
+Roms Dir: /home/pi/RetroPie/roms/mame-advmame
+Binary Dir: /opt/retropie/emulators/advmame/bin
+Config Dir: /opt/retropie/configs/mame-advmame
+```
+MAME Version: Based on **MAME 0.94** (March 2005) or (for 1.4) Based on **MAME 0.106** (May 2006)
+Romsets Emulated: 5563 (0.94.0) 6166 (1.4) (includes clones etc..)
+
+Active Sets (For 0.94.0) 5563/5563
+* Parents 1236/1236
+* Clones 2473/2473
+* Others 1829/1829
+* BIOS 25/25
+
+Active Sets (For 1.4) 6166/6166
+* Parents 1388/1388
+* Clones 2824/2824
+* Others 1928/1928
+* BIOS 26/26
+
+Dat File: [advmame-0.94-RetroPie-260.7z](https://drive.google.com/file/d/0B2TMeZ6iEFvHa2E5Rzl4ZEdMdjQ/view?usp=sharing)
+
+[**AdvMame .94 COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1AEQ94buG0rvbW0xdnYKeuEhHeCbuZlRfRJQCb1Dt8fw/edit?usp=sharing)  feel free to contribute to the list.
+
+Dat File: [advmame12-106.7z](https://drive.google.com/file/d/0B2TMeZ6iEFvHMEZnb1RxQWNmdHM/view?usp=sharing)
+
+[**AdvMame 1.4 COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1RapyxChe2BMOfbX-FsCup9SXGxvS1WmXAofwaTJtmxc/edit?usp=sharing)  feel free to contribute to the list.
 
 ## BIOS
 Some ROMs may need the **neogeo.zip** BIOS in order to run. Place the neogeo.zip BIOS file in the same folder as your MAME ROMs. For example:
