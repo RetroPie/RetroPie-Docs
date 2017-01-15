@@ -26,63 +26,76 @@ Accepted File Extensions: **.zip**
 In 3.0.0 some emulators share directories, so you need to choose which FBA, NeoGeo and mame4all version you want.
 So you can have 1 romset for each of these (mame4all, FBA, NeoGeo, advmame) To avoid having several EmulationStation menus for different arcade emulators, all arcade-based ROMs can be placed in the `arcade` ROM folder, but you will have to specify which emulator each will use from the [Runcommand Menu](runcommand)
 
-### lr-fbalpha
+### [lr-fbalpha](https://github.com/libretro/fbalpha) 
+```shell
+Roms Dir: /home/pi/RetroPie/roms/fba
+Binary Dir: /opt/retropie/libretrocores/lr-fbalpha
+Config Dir: /opt/retropie/configs/fba/retroarch.cfg
+```
+ROM Version: **FBA 0.2.97.39**
+Romsets emulated: 4375 (includes clones etc..)
 
+Active Sets 4375/4375
+* Parents 923/923
+* Clones 2850/2850
+* Others 596/596
+* BIOS 6/6
+
+Dat File:  [FB Alpha v0.2.97.39 (ClrMame Pro XML, Arcade Only)](https://dl.dropboxusercontent.com/u/51705339/fba%20029739%20dats/FB%20Alpha%20v0.2.97.39%20(ClrMame%20Pro%20XML%2C%20Arcade%20Only).dat)
+Dat File: [FB Alpha v0.2.97.39 (ClrMame Pro XML) (NeoGeo Only)](https://dl.dropboxusercontent.com/u/51705339/fba%20029739%20dats/FB%20Alpha%20v0.2.97.39%20(ClrMame%20Pro%20XML)%20(NeoGeo%20Only).dat) "Rebuild using Non-merged-sets, Place the roms in the neogeo roms folder and use FB Alpha v0.2.97.39 as the default emulator."
+
+[**lr-fbalpha COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1GaqIIoiWbzKHwZ52S2xCSDQXILo81Ls1mHK6czKGAtM/edit?usp=sharing)  feel free to contribute to the list.
 **Please see [[lr-fbalpha]] for information on how to configure specific features of this emulator.**
 
-Romset Used: FBA **0.2.97.39** which is based on MAME 0.175
-
-Total Games Emulated: [8982](https://raw.githubusercontent.com/libretro/fbalpha/master/gamelist.txt) (includes clones etc..)
- 
-Place your lr-fbalpha ROMs in
+### [PiFBA](http://sourceforge.net/projects/pifba/)
 ```shell
-/home/pi/RetroPie/roms/fba
+Roms Dir: /home/pi/RetroPie/roms/fba
+Binary Dir: /opt/retropie/emulators/pifba
+Config Dir: /opt/retropie/configs/fba/fba2x.cfg
 ```
-you can also place your ROMs in
+RMM Version: **FBA 0.2.96.71**
+Size: 3.62 GB
+Romsets emulated: 684 (no clones)
 
+Dat File: [fba_0.2.96.71_clrmame_dat.zip](https://drive.google.com/file/d/0B2TMeZ6iEFvHaHUta2dQYk1HTGM/view?usp=sharing)
+
+Dat File (With merge data): [FB Alpha v0.2.96.71 (ClrMame Pro).dat](https://drive.google.com/file/d/0B2TMeZ6iEFvHZFJOckQyRVZ5OG8/view?usp=sharing)
+
+All clones (current tested) non-working\mahjong\quiz\adult\casino\rythm removed
+
+Romsets emulated: 291
+
+Dat File: [fba_029671_od_release_10_working_roms_filtered.zip] (https://drive.google.com/file/d/0B2TMeZ6iEFvHMTV2TnlrZWwxRXc/view?usp=sharing)
+
+[**PiFBA COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1OZioLrz16ptaNbjQUDP5hhVzQDTOTn9Nz46Hbj3-06k/edit?usp=sharing)  feel free to contribute to the list.
+
+### [lr-fbalpha2012](https://github.com/libretro/fbalpha2012) 
 ```shell
-/home/pi/RetroPie/roms/neogeo
+Roms Dir: /home/pi/RetroPie/roms/fba
+Binary Dir: /opt/retropie/libretrocores/lr-fbalpha2012
+Config Dir: /opt/retropie/configs/fba/retroarch.cfg
 ```
+MAME Version: **FBA 0.2.97.30** which is based on MAME 0.154 (Jul 2014)
+Size: 9.15 GB
+Romsets emulated: 3369 (includes clones etc..)
 
-### [**lr-fbalpha COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1GaqIIoiWbzKHwZ52S2xCSDQXILo81Ls1mHK6czKGAtM/edit?usp=sharing)  feel free to contribute to the list.
+Active Sets 3369/3369
+* Parents 710/710
+* Clones 2146/2146
+* Others 508/508
+* BIOS 5/5
 
-### PiFBA 
+Dat File: [FB Alpha v0.2.97.30.dat.zip](https://drive.google.com/file/d/0B2TMeZ6iEFvHcF96YmdjaWlEdXM/view?usp=sharing)
 
-Romset Used: FBA **0.2.96.71 romset** which is based on MAME 0.114 (April 2007) (see list below) 
+Neo Geo Only .Dat File: [fba-lr-neogeo](https://drive.google.com/file/d/0B2TMeZ6iEFvHVk1Ud1RoSHpfcFU/view?usp=sharing)
 
-Total Games Emulated: 684 (no clones)
-
-### [**PiFBA COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1OZioLrz16ptaNbjQUDP5hhVzQDTOTn9Nz46Hbj3-06k/edit?usp=sharing)  feel free to contribute to the list.
-
-Place your PiFBA ROMS in
-
-```shell
-/home/pi/RetroPie/roms/fba
-```
-
-you can also place your ROMs in
-
-```shell
-/home/pi/RetroPie/roms/neogeo
-```
-
-### lr-fbalpha2012
-
+[**lr-fbalpha2012 COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1rWO7Lm0bTGNpak6J-CPzde0GNIDP0NHDoQdJ6iWosfA/edit?usp=sharing)  feel free to contribute to the list.
 Romset Used: FBA **0.2.97.30** which is based on MAME 0.154 (Jul 2014)
 
 Total Games Emulated: [3369](https://github.com/libretro/fbalpha2012/blob/master/svn-current/trunk/gamelist.txt) (includes clones etc..)
 
 ### [**lr-fbalpha2012 COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1rWO7Lm0bTGNpak6J-CPzde0GNIDP0NHDoQdJ6iWosfA/edit?usp=sharing)  feel free to contribute to the list.
- 
-Place your lr-fbalpha2012 ROMs in
-```shell
-/home/pi/RetroPie/roms/fba
-```
-you can also place your ROMs in
 
-```shell
-/home/pi/RetroPie/roms/neogeo
-```
 
 ## BIOS
 
