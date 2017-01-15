@@ -91,3 +91,7 @@ That's the basics of using clrmamepro.  Some additional notes:
 * clrmamepro is very stable.  It has been around for a long time, it is regularly updated and it is widely used.  If it reports problems reading your ROMs, you most likely have corrupt ROM archives (zip files) or a failing hard drive.
 
 * If you feel the need to reset clrmamepro's settings, just delete your existing profile(s) and reload your DAT file, selecting **"Default"** settings for the new profile.  Almost all of clrmamepro's settings are per-profile.
+
+# Filtering ROMs
+
+To be written
