@@ -6,12 +6,12 @@ _Atari released a series of 8 bit computers (400, 800, 1200XL, 600XL, 800XL, 130
 
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
-| [Atari800](http://atari800.sourceforge.net/)  | atari800 **or** atari5200  | .a52 .bas .bin .xex .atr .xfd .dcm .atr.gz .xfd.gz | ATARIXL.ROM **and** ATARIBAS.ROM **and** ATARIOSA.ROM **and** ATARIOSB.ROM **and** 5200.rom | /opt/retropie/configs/atari800/atari800.cfg or /opt/retropie/configs/atari800.cfg on older releases|
+| [Atari800](http://atari800.sourceforge.net/)  | atari800 **or** atari5200  | .a52 .bas .bin .car .xex .atr .xfd .dcm .atr.gz .xfd.gz | ATARIXL.ROM **and** ATARIBAS.ROM **and** ATARIOSA.ROM **and** ATARIOSB.ROM **and** 5200.rom | /opt/retropie/configs/atari800/atari800.cfg or /opt/retropie/configs/atari800.cfg on older releases|
 
 ## Emulator: [Atari800](http://atari800.sourceforge.net/) 
 This emulator emulates the Atari 8 bit family: 400, 800, 1200XL, 600XL, 800XL, 130XE, XEGS and the Atari 5200. This one of the more tricky emulators to get set up as it requires a multiplicity of BIOS files and configurations depending on what systems you want to utilise but it seems to run Atari 5200 games pretty well.
 ## ROMS
-Accepted File Extensions: **.a52 .bas .bin .xex .atr .xfd .dcm .atr.gz .xfd.gz**
+Accepted File Extensions: **.a52 .bas .bin .car .xex .atr .xfd .dcm .atr.gz .xfd.gz**
 
 Place your Atari 400,800, ROMS in
 ```shell
