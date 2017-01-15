@@ -29,19 +29,30 @@ Place your Neo Geo ROMs in
 /home/pi/RetroPie/roms/neogeo
 ```
 
-#### Gngeo-pi
+### [GnGeo 0.8](https://github.com/ymartel06/GnGeo-Pi)
+```shell
+Roms Dir: /home/pi/RetroPie/roms/neogeo
+Binary Dir: /opt/retropie/emulators/gngeopi/bin
+Config Dir: /opt/retropie/configs/neogeo
+```
+MAME Version: Based on **0.138** romsets (May 2010)
+Romsets emulated: 203
 
-As a lovely caveat if you're using gngeopi, the ROMs you have must match the file in `gngeo_data.zip` located at:
+Dat File: [pandora_gngeo_084_dat.zip](https://drive.google.com/file/d/0B2TMeZ6iEFvHZVVCYmVtaUM1VlU/view?usp=sharing)
+
+All clones non-working\mahjong\quiz removed
+
+Romsets emulated: 128
+
+Dat File: [pandora_gngeo_084_filtered.zip](https://drive.google.com/file/d/0B2TMeZ6iEFvHb1RhaTF0NzJaRlU/view?usp=sharing)
+
+[**GnGeo-Pi COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1A_a_9t14uzDUMrrO0RgLDwiVUiycmclcPIs6cU6Iox8/edit?usp=sharing)  feel free to contribute to the list.
+
+As a caveat if you're using gngeopi, the ROMs you have must match the file in `gngeo_data.zip` located at:
 ```
 /opt/retropie/emulators/gngeopi/share/gngeo
 ```
 You can only play roms that have the same name as these .drv files, e.g. `mslug2.zip` (rom) and `mslug2.drv` (data). If the names of these files don't match, GnGeo-Pi will crash. (see the list at the bottom of this page for compatible ROMs)
-
-GnGeo-Pi is based on **MAME 0.138** romsets (May 2010)
-
-Total Games Emulated: 203
-
-[**GnGeo-Pi COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1A_a_9t14uzDUMrrO0RgLDwiVUiycmclcPIs6cU6Iox8/edit?usp=sharing)  feel free to contribute to the list.
 
 ## BIOS
 
