@@ -1,11 +1,8 @@
 ***
-![retropie](https://cloud.githubusercontent.com/assets/10035308/11631694/6fa8e356-9cc0-11e5-8bce-4b8305f0fe8f.png)
+![retropie](https://retropie.org.uk/wp-content/uploads/2016/04/RetroPieWebsiteLogo.png)
 ***
-
-| Current Version|
-| :---: |
-| [**4.1**](https://retropie.org.uk/download/) |
-|[Changelog](Changelogs)|
+| Latest Version  | [**4.1**](https://retropie.org.uk/download/)  | [Changelog](Changelogs)  |
+|:---:|:---:|:---:|
 
 # What is RetroPie?
 
@@ -30,4 +27,3 @@ ROMs are copyrighted content and as such are not included with RetroPie
 # Getting Started
 
 To install RetroPie for the first time follow the the [**First Installation**](First-Installation) page
-
