@@ -65,15 +65,26 @@ Dat File (no clones, no neogeo): [mame4all-no-clones-no-neogeo](https://drive.go
 [**MAME4ALL-PI COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1gpuoZx78kDDdnf_yADicsSZHMfpOxNySSov7UdCDAik/edit?usp=sharing)  feel free to contribute to the list.
 
 ### **lr-imame4all**
-
-Place your lr-imame4all ROMs and the BIOS file in
+### [lr-imame4all](https://github.com/libretro/imame4all-libretro)
+```shell
+Roms Dir: /home/pi/RetroPie/roms/mame-mame4all
+Binary Dir: /opt/retropie/libretrocores/lr-imame4all
+Config Dir: /opt/retropie/configs/mame-mame4all/retroarch.cfg
 ```
-/home/pi/RetroPie/roms/mame-mame4all
-```
-
-Romset Used: **0.37b5**
-
+MAME Version: Based on **0.37b5** (July 2000)
 Total Games Emulated: [2270](http://code.google.com/p/imame4all/wiki/GameList) 
+
+Active Sets 2241/2241
+* Parents 560/560
+* Clones 990/990
+* Others 690/690
+* BIOS 1/1
+
+Dat File: [mame4all-037b5-RetroPie-260.zip](https://drive.google.com/file/d/0B2TMeZ6iEFvHVUNfWHpUZk82bkk/view?usp=sharing)
+
+Dat File (with merge data): [MAME 0.37b5.dat](https://drive.google.com/file/d/0B2TMeZ6iEFvHQnJqS19JRUhzSmM/view?usp=sharing)
+
+Dat File (no clones, no neogeo): [mame4all-no-clones-no-neogeo](https://drive.google.com/file/d/0B2TMeZ6iEFvHNm5OYndFUHM3djg/view?usp=sharing)
 
 [**lr-IMAME4ALL COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1Fmx2RPcgVgIIeKpaBKNEGWCDuu3DGfR-VkrnIVsIpeE/edit?usp=sharing)  feel free to contribute to the list.
 
