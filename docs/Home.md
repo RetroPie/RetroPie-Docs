@@ -13,6 +13,7 @@ RetroPie sits on top of a full OS, you can install it on an existing Raspbian, o
 ## What is an Emulator?
 
 An emulator is software that makes one computer behave like another computer or in the case of RetroPie a computer that behaves like a video game console such as the Super Nintendo. The RetroPie SD image comes pre-installed with many different emulators.
+![console_white](https://cloud.githubusercontent.com/assets/10035308/21967587/fced4db6-db3e-11e6-9da9-2d7eadc9a607.png)
 ![console_gray](https://cloud.githubusercontent.com/assets/10035308/21967574/afe1dd20-db3e-11e6-9a20-ff74c2067e4e.png)
 ![console](https://cloud.githubusercontent.com/assets/10035308/21967515/8330109a-db3d-11e6-8eb1-ee09e380ee33.png)
 
