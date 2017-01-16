@@ -1,6 +1,6 @@
 # Validating and Rebuilding ROMs
 
-In order to verify or rebuild a set, you need its DAT file and a software tool to process the DAT. DATs describe the ROM contents including filenames, file sizes, and checksums to verify contents are not incorrect or corrupt. The wiki pages for [MAME](https://github.com/RetroPie/RetroPie-Setup/wiki/MAME), [FB Alpha](https://github.com/RetroPie/RetroPie-Setup/wiki/FinalBurn-Alpha), and [Neo Geo](https://github.com/RetroPie/RetroPie-Setup/wiki/Neo-Geo) include DATs and detailed information about the ROM sets needed for the various arcade emulators.
+In order to verify or rebuild a set, you need its corresponding DAT file and a software tool to process the DAT. DATs describe the ROM contents including filenames, file sizes, and checksums to verify contents are not incorrect or corrupt. The wiki pages for [MAME](https://github.com/RetroPie/RetroPie-Setup/wiki/MAME), [FB Alpha](https://github.com/RetroPie/RetroPie-Setup/wiki/FinalBurn-Alpha), and [Neo Geo](https://github.com/RetroPie/RetroPie-Setup/wiki/Neo-Geo) include DATs and detailed information about the ROM sets needed for the various arcade emulators.
 
 Popular ROM verification tools include:
 
@@ -16,19 +16,14 @@ All of the Windows tools can be run on Linux (x86) using [Wine](https://www.wine
 
 * [Easy ClrMamePro Tutorial](https://www.youtube.com/watch?v=_lssz2pAba8)
 
-## Requirements
-
-* The current version of RetroPie. Romsets and packaged MAME/FBA emulators occasionally change.
-* A Windows PC for setting up RetroPie and running clrmamepro. This tutorial assumes you are running a 64 bit version of Windows, but the steps for 32 bit Windows will be the same once you get past downloading the clrmamepro software.
-
 ### Step 1 - Back up your ROMs
-It is possible with clrmamepro to change one or two options and when it runs it will delete all your existing ROMs. OK, not really - using the default options it will make backups of any files it removes, but I have seen a lot of people when getting started mess up their ROMs beyond repair.
+It is possible with clrmamepro to change one or two options and when it runs it will delete all your existing ROMs. OK, not really - using the default options it will make backups of any files it removes, but it is still possible to mess up their ROMs beyond repair when getting started with clrmamepro.
 
 ### Step 2 - Download [clrmamepro](http://mamedev.emulab.it/clrmamepro/#downloads)
 
 ### Step 3 - Acquire DAT files
 You can download all .DAT files for all arcade emulators [**HERE**](https://github.com/HerbFargus/retropie-dat/archive/master.zip)
-* For this tutorial, extract the zip file into `C:\` (but you can really put it anywhere you want)
+* For this tutorial, extract the zip file into `C:\` (but you can put it anywhere you want)
 * Open retropie-dat-master and you should see a list of folders. Each folder contains the .DAT files for the respective emulator. We will only be using `C:\retropie-dat-master\mame4all\MAME 0.37b5.dat` in this tutorial.
 * Create a subdirectory `C:\retropie-dat-master\mame4allroms` (this will be used in the next step)
 * Create a subdirectory `C:\retropie-dat-master\pifbaroms`
@@ -56,13 +51,12 @@ At this point, you could scan the ROMs folder you just selected, but we just cre
 * Use the browse button **"..."** to select your source path.  For example you might have a full set of MAME v0.156 ROMs - point clrmamepro to that directory as your source.
 * When rebuilding there are three options: **Non-Merged, Merged, and Split**. (**NOTE**: Using Non-Merged ROMs is the most straightforward way to copy individual games to a RetroPie system.)
 
-To understand what these options mean, we must first understand the MAME concept of **parents** and **clones**:
+***
+* **Non-merged**: All ROMs are standalone, meaning that each zip contains all the files needed to run that game including any files from 'parent ROMs'. This is the recommended format for RetroPie arcade emulators.
+* **Split**: Some ROMS that are considered clones, translations, or bootlegs also require a "parent ROM" to run. The parent ROM is normally the most common variant of a game in the English language. In some cases the parent is not the best working version of the game, however. For example, in a Split set pacman.zip (a clone), will not work without puckman.zip (its parent).
+* **Merged**: Clones are merged into the parent ROM zip, meaning that more than one game is stored per file. Merged ROM sets are not supported.
 
-* **Parent:** This is _normally_ the most common variant of a ROM in the English language. In some cases it is not the best working version of the game, however.
-* **Clone:** A variant of the Parent. Typically different language, or other small changes. Their .zips only contain the files that have been changed from the parent, meaning that the parent .zip must be present in the ROM directory for the clone to be ran.
-* **Non-Merged Set:** parents and clones in their own stand-alone .zip files. This removes clone's dependencies on parents, meaning you can take ANY of these .zip files (even the clones), put them in the appropriate ROM directory, and they should work. However, since every .zip has every required file, they will use higher total disk space. If you only want certain MAME ROMs on your system, use this method to ensure each .zip is usable stand-alone.
-* **Merged Set:** puts _all_ files of the parents and clones of the game into a single .zip file. The version that will be launched will be the version that which is the .zip's name.
-* **Split Set:** parents are complete .zip files with everything needed, and clones are .zip files with _only_ their unique files, saving disk space. This means that you will have to transfer the appropriate parent .zip to your ROM directory for every clone .zip you wish to use. For example, pacman.zip (a clone), will not work without puckman.zip (its parent). This quickly gets confusing, so it's recommended to simply transfer the whole set to your ROM directory, to avoid missing file errors. **NOTE:** split sets are how most downloaded complete MAME romsets are presented.
+***
 
 * Click **"Rebuild..."**.  Depending on the size of the directory you chose as a source, this could take some time
 * When clrmamepro is finished rebuilding, you will see a window with statistics showing how many matching files were found, how many files were created and how many were skipped.  Click "OK" 
