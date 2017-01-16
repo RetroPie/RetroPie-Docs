@@ -156,7 +156,7 @@ Hotkeys are combinations of buttons you can press in order to access options suc
 #### Default joypad hotkeys:
 Hotkeys | Action | Code Example
 | :---: | :---: | :---: |
-Select | Hotkey | input_enable_hotkey_btn = "6"
+Select | Hotkey | input_enable_hotkey = "6"
 Select+Start | Exit | input_exit_emulator_btn = "7"
 Select+Right Shoulder | Save | input_save_state_btn = "5"
 Select+Left Shoulder | Load | input_load_state_btn = "4"
