@@ -3,6 +3,8 @@
 ***
 _MAME stands for Multiple Arcade Machine Emulator. MAME can emulate thousands of games that otherwise would have been lost in the ash-heaps of history._
 
+[**All Arcade ROMS Compatibility List**](https://docs.google.com/spreadsheets/d/1antILt7D12EWOFzyJwTfB86NceghMJKXG7CdYumuHec/edit?usp=sharing) feel free to contribute to the list.
+
 ***
 
 | Emulator | Rom Folder | Romset  | Controller Config |
@@ -29,19 +31,18 @@ Accepted File Extensions: **.zip**
 When working with these ROMs *you will need to know which romset it belongs to, then use a compatible emulator to run it*. There are many ways to figure this out, so some resources are linked below. For example, let's say you have a ROM file such as **anAwesomeGame.zip** and you learn that it belongs to romset 0.37b5. Then place **anAwesomeGame.zip** file (without extracting it) into the *arcade or mame-mame4all* ROM directories (as mentioned in the above table). Then, make sure you have the corresponding BIOS file, **neogeo.zip**, *in that same directory*. That's it. Be sure that in the game's run configuration that the correct emulator is used and you are good to go.
 
 **For information on how to rebuild newer romsets to be compatible with these emulators see this post:**
-**[Managing Arcade ROMs](https://github.com/RetroPie/RetroPie-Setup/wiki/Managing-ROMs)**
+**[Managing Arcade ROMs](https://github.com/RetroPie/RetroPie-Setup/wiki/Validating,-Rebuilding,-and-Filtering-Arcade-ROMs)**
 
 ## Arcade ROM paths
 
 In 3.0.0 some emulators share directories, so you need to choose which FBA, NeoGeo and mame4all version you want.
 So you can have 1 romset for each of these (mame4all, FBA, NeoGeo, advmame) To avoid having several EmulationStation menus for different arcade emulators, all arcade-based ROMs can be placed in the `arcade` ROM folder, but you will have to specify which emulator each will use from the [Runcommand Menu](runcommand)
 
-[**All Arcade ROMS Compatibility List**](https://docs.google.com/spreadsheets/d/1antILt7D12EWOFzyJwTfB86NceghMJKXG7CdYumuHec/edit?usp=sharing) feel free to contribute to the list.
-
 ## **Emulators**
 
 Note: These details are as per the default installed binaries on the RetroPie 3.0.0 image.
 
+---
 ### [mame4all-pi](http://sourceforge.net/projects/mame4allpi/)
 
 ```shell
@@ -64,7 +65,7 @@ Dat File (no clones, no neogeo): [mame4all-no-clones-no-neogeo](https://drive.go
 
 [**MAME4ALL-PI COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1gpuoZx78kDDdnf_yADicsSZHMfpOxNySSov7UdCDAik/edit?usp=sharing)  feel free to contribute to the list.
 
-### **lr-imame4all**
+---
 ### [lr-imame4all](https://github.com/libretro/imame4all-libretro)
 ```shell
 Roms Dir: /home/pi/RetroPie/roms/mame-mame4all
@@ -88,21 +89,7 @@ Dat File (no clones, no neogeo): [mame4all-no-clones-no-neogeo](https://drive.go
 
 [**lr-IMAME4ALL COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1Fmx2RPcgVgIIeKpaBKNEGWCDuu3DGfR-VkrnIVsIpeE/edit?usp=sharing)  feel free to contribute to the list.
 
-### **AdvanceMAME**
-
-Place your AdvanceMAME ROMs and the BIOS file in
-```
-/home/pi/RetroPie/roms/mame-advmame
-```
-
-Romset Used: **.94** (AdvMame .94) or **0.106** (AdvMame 1.4)
-
-Total Games Emulated: **5563** (0.94.0) **6166** (1.4) (includes clones etc..)
-
-[**AdvMame .94 COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1AEQ94buG0rvbW0xdnYKeuEhHeCbuZlRfRJQCb1Dt8fw/edit?usp=sharing)  feel free to contribute to the list.
-
-[**AdvMame 1.4 COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1RapyxChe2BMOfbX-FsCup9SXGxvS1WmXAofwaTJtmxc/edit?usp=sharing)  feel free to contribute to the list.
-
+---
 ### [lr-mame2003](https://github.com/libretro/mame2003-libretro)
 
 **Please see [[lr-mame2003]] for information on how to configure specific features of this emulator.**
@@ -132,6 +119,7 @@ Dat File: [MAME 078u5.dat](https://dl.dropboxusercontent.com/u/51705339/MAME%200
 
 [**lr-mame2003 COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1LP1MELCvcxu7TfiowF_0ZuvRVEMqlfQyTVetnOJvuJc/edit?usp=sharing)  feel free to contribute to the list.
 
+---
 ### [lr-mame2010](https://github.com/libretro/mame2010-libretro) (Experimental)
 Note: This emulator has limited functionality. For example, only 2 players are supported.
 
@@ -153,6 +141,7 @@ Dat File (with merge data): [MAME 0.139.dat](https://drive.google.com/file/d/0B2
 
 [**lr-mame2010 COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1IRSmFrSDvIc6gAw0gn12TcQ3HDOwmrETTor8wvvb7VI/edit?usp=sharing) feel free to contribute to the list.
 
+---
 
 ### [AdvanceMAME 0.94.0 and 1.4](http://sourceforge.net/projects/advancemame/files/advancemame/0.94.0/)
 ```shell
