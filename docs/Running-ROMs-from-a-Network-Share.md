@@ -63,9 +63,9 @@ With any luck (and if you have a ton of SNES ROMs like myself), it will be fairl
 This will give you read/write access, so you could keep your saves there as well (i.e. no need to create separate saves folder and editing save paths).  
 First [create an account on your Time Capsule](https://discussions.apple.com/message/6801520#message6801520) with the same credentials as your Pi (default: pi/raspberry).
 
-Install `cifs-tools` if it's not already installed  
+Install `cifs-utils` if it's not already installed  
 ```
-sudo apt-get update && sudo apt-get install cifs-tools
+sudo apt-get update && sudo apt-get install cifs-utils
 ```  
 Edit your `autostart.sh` file  
 ```
