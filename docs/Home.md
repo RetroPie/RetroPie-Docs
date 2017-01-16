@@ -10,24 +10,24 @@ RetroPie allows you to turn your Raspberry Pi or PC into a retro-gaming machine.
 
 RetroPie sits on top of a full OS, you can install it on an existing Raspbian, or start with the RetroPie SD image and add additional software later. It's up to you. 
 
-## What is an Emulator?
+## What Is An Emulator?
 
-An emulator is software that makes one computer behave like another computer or in the case of RetroPie a computer that behaves like a video game console such as the Super Nintendo. The RetroPie SD image comes pre-installed with many different emulators.
+An emulator is software that makes a computer behave like another computer, or in the case of RetroPie a computer that behaves like a video game console such as the Super Nintendo. The RetroPie SD image comes pre-installed with many different emulators.
 
+![console_maroon](https://cloud.githubusercontent.com/assets/10035308/21968953/11ec4126-db4f-11e6-90bc-b2dbcd35fec1.png)
 
-![console_blank](https://cloud.githubusercontent.com/assets/10035308/21967648/e841e196-db3f-11e6-8bc1-6a8bd816acb6.png)
-![console_white](https://cloud.githubusercontent.com/assets/10035308/21967587/fced4db6-db3e-11e6-9da9-2d7eadc9a607.png)
-![console_gray](https://cloud.githubusercontent.com/assets/10035308/21967574/afe1dd20-db3e-11e6-9a20-ff74c2067e4e.png)
-![console](https://cloud.githubusercontent.com/assets/10035308/21967515/8330109a-db3d-11e6-8eb1-ee09e380ee33.png)
-
-## What are ROMs?
+## What Are ROMs?
 
 ROMs are digital versions of game cartridges. Loading up a ROM in an emulator is the equivalent of putting a cartridge in a game console. 
 
-ROMs are copyrighted content and as such are not included with RetroPie
+ROMs are copyrighted content and as such are not included with RetroPie.
 
-![roms](https://cloud.githubusercontent.com/assets/10035308/21966954/5a765a16-db32-11e6-8fce-46a2376201c0.png)
+![rom_maroon](https://cloud.githubusercontent.com/assets/10035308/21968954/11ecf1a2-db4f-11e6-892f-8416754dad1e.png)
 
-# Getting Started
+## Getting Started
 
-To install RetroPie for the first time follow the the [**First Installation**](First-Installation) page
+Select your system for installation instructions:
+
+| [Raspberry Pi](First-Installation)  | [PC](RetroPie-Ubuntu-16.04-LTS-x86-Flavor)  | [Odroid](Odroid)  |
+|:---:|:---:|:---:|
+|![computer_icon_maroon](https://cloud.githubusercontent.com/assets/10035308/21969043/b5c38cdc-db4f-11e6-8839-14576b84aec8.png)|![computer_icon_maroon](https://cloud.githubusercontent.com/assets/10035308/21969043/b5c38cdc-db4f-11e6-8839-14576b84aec8.png)|![computer_icon_maroon](https://cloud.githubusercontent.com/assets/10035308/21969043/b5c38cdc-db4f-11e6-8839-14576b84aec8.png)|
