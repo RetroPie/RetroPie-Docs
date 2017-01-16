@@ -1,6 +1,6 @@
 # Getting Started
 
-Working with arcade ROMs requires a different approach than ROMs for console systems. The overall process for using an arcade emulator in RetroPie:
+Arcade emulation requires a different planning approach than console systems.
 
 1. Choose an arcade emulator listed in the table below that your system is powerful enough to run
 2. **Either download or 'rebuild' a set of arcade ROMs with a version number that exactly matches the emulator you selected**
@@ -10,7 +10,7 @@ The recommended emulators are:
 * Pi 2 and Pi 3: `lr-mame2003` and `lr-fbalpha`
 * Pi 1 and Pi Zero: `mame4all`  (the native emulator, not the RetroArch core) and `pi-fba`
 
-If the ROM you wish to play is only supported by other emulator versions in the table below, please be aware that earlier arcade emulator versions usually run faster than later versions but also that earlier versions support fewer games than later versions. Native emulators like mame4all and AdvMame may perform better than RetroArch cores but cannot take advantage of global RetroArch configurations so they must be configured individually. Generally most 2D games work well on the Pi 3, but most 3D and vector games do not run at playable speed or at all.
+If the ROM you wish to play is only supported by other emulator versions, please be aware that earlier arcade emulator versions usually run faster than later versions, but also that earlier versions support fewer games. Native emulators like MAME4ALL or AdvanceMAME perform better than RetroArch cores but they cannot take advantage of global RetroArch configurations so they must be configured individually. Generally 2D games can be emulated by the Pi 3's prococessor, but most 3D and vector games do not run at playable speed or at all.
 
 | Emulator | Required ROM Version | # of ROMs | [.DAT Files](https://github.com/HerbFargus/retropie-dat/archive/master.zip) | Compatibility List |
 | :---: | :---: | :---: | :---: | :---: |
@@ -25,15 +25,17 @@ If the ROM you wish to play is only supported by other emulator versions in the 
 | [lr-fbalpha](https://github.com/RetroPie/RetroPie-Setup/wiki/FinalBurn-Alpha) | FB Alpha v0.2.97.39 | [4375](https://raw.githubusercontent.com/libretro/fbalpha/master/gamelist.txt) | [.DAT](https://github.com/libretro/fbalpha/blob/master/dats/FB%20Alpha%20v0.2.97.39%20(ClrMame%20Pro%20XML).dat.zip?raw=true)| [List](https://docs.google.com/spreadsheets/d/1GaqIIoiWbzKHwZ52S2xCSDQXILo81Ls1mHK6czKGAtM/edit?usp=sharing) |
 | [gngeopi](https://github.com/RetroPie/RetroPie-Setup/wiki/Neo-Geo) | [Varies - read more](https://github.com/retropie/retropie-setup/wiki/neo-geo#roms) | 203 | [.DAT](https://drive.google.com/file/d/0B2TMeZ6iEFvHZVVCYmVtaUM1VlU/view?usp=sharing)| [List](https://docs.google.com/spreadsheets/d/1A_a_9t14uzDUMrrO0RgLDwiVUiycmclcPIs6cU6Iox8/edit?usp=sharing) |
 
+[**All Arcade ROMS Compatibility List**](https://docs.google.com/spreadsheets/d/1antILt7D12EWOFzyJwTfB86NceghMJKXG7CdYumuHec/edit?usp=sharing) feel free to contribute to the list.
+
 ## Crash Course in Arcade ROMs
 
-Arcade ROMs usually distributed as ZIP files which should not be unzipped or renamed. The version of any given arcade ROM must match the specific version of the arcade emulator because ROMs change from version to version of the emulator. For example, MAME2003 is based off the MAME 0.78 source code, so you must use a MAME 0.78 ROM set with MAME2003. If you use ROMs which are from an earlier or later MAME version, such as 0.50 or 0.100 or 0.173, then those ROMs probably will not work with MAME2003.
+Arcade ROMs are usually distributed as ZIP files which should not be unzipped or renamed. The version of any given arcade ROM must match the specific version of the arcade emulator because ROMs change from version to version of the emulator. For example, MAME2003 is based on MAME 0.78, so you must use MAME 0.78 ROMs with MAME2003. ROMs from an earlier or later MAME version, such as 0.50 or 0.173, will probably not work with MAME2003.
 
 In addition to having a version number, arcade ROMs can be formatted three ways:
 
-* Non-merged: ROMs are standalone, each zip contain all the files needed to run the game, including any 'parent ROM'. This is the recommended format for RetroPie arcade emulators.
-* Split: Some ROMS also require a 'parent ROM' to run.
-* Merged: Clones are merged in the parent. You end up with more than one game in a single zip. Merged ROM sets are not supported.
+* **Non-merged**: All ROMs are standalone, each zip contains all the files needed to run that game, including any files from 'parent ROMs'. This is the recommended format for RetroPie arcade emulators.
+* **Split**: Some ROMS that are considered clones, translations, or bootlegs also require a "parent ROM" to run. The parent ROM is normally the most common variant of a game in the English language. In some cases the parent is not the best working version of the game, however. For example, in a Split set pacman.zip (a clone), will not work without puckman.zip (its parent).
+* **Merged**: Clones are merged into the parent ROM zip, meaning that more than one game is stored per file. Merged ROM sets are not supported.
 
 For further details, see the system-specific wiki pages for [MAME](https://github.com/petrockblog/RetroPie-Setup/wiki/MAME) and [FBA](https://github.com/petrockblog/RetroPie-Setup/wiki/FinalBurn-Alpha). Recommended external resources for understanding more about MAME/FBA arcade ROMs and their usage are:
 
