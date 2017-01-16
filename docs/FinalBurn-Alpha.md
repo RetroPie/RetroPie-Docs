@@ -2,6 +2,8 @@
 ![fba](https://cloud.githubusercontent.com/assets/10035308/12213772/eb6a317c-b63b-11e5-847f-2c03ffde43f3.png)
 ***
 _Final Burn Alpha is a Multiple Arcade Emulator most popular for emulating Neo-Geo, Capcom, Konami, and Cave games. It is developed by the final burn team and originated from FinalBurn by Dave_
+
+[**All Arcade ROMS Compatibility List**](https://docs.google.com/spreadsheets/d/1antILt7D12EWOFzyJwTfB86NceghMJKXG7CdYumuHec/edit?usp=sharing) feel free to contribute to the list.
 ***
 
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
@@ -19,7 +21,7 @@ lr-fbalpha is favoured as it is mature, runs the current FBA romset, and enjoys 
 Accepted File Extensions: **.zip**
 
 **For information on how to rebuild newer romsets to be compatible with these emulators see this post:**
-**[Managing Arcade ROMs](https://github.com/RetroPie/RetroPie-Setup/wiki/Managing-ROMs)**
+**[Validating, Rebuilding, and Filtering ROMs](https://github.com/RetroPie/RetroPie-Setup/wiki/Validating,-Rebuilding,-and-Filtering-Arcade-ROMs)**
 
 ## Arcade ROM paths
 
@@ -47,6 +49,8 @@ Dat File: [FB Alpha v0.2.97.39 (ClrMame Pro XML) (NeoGeo Only)](https://dl.dropb
 [**lr-fbalpha COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1GaqIIoiWbzKHwZ52S2xCSDQXILo81Ls1mHK6czKGAtM/edit?usp=sharing)  feel free to contribute to the list.
 **Please see [[lr-fbalpha]] for information on how to configure specific features of this emulator.**
 
+---
+
 ### [PiFBA](http://sourceforge.net/projects/pifba/)
 ```shell
 Roms Dir: /home/pi/RetroPie/roms/fba
@@ -68,6 +72,8 @@ Romsets emulated: 291
 Dat File: [fba_029671_od_release_10_working_roms_filtered.zip] (https://drive.google.com/file/d/0B2TMeZ6iEFvHMTV2TnlrZWwxRXc/view?usp=sharing)
 
 [**PiFBA COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1OZioLrz16ptaNbjQUDP5hhVzQDTOTn9Nz46Hbj3-06k/edit?usp=sharing)  feel free to contribute to the list.
+
+---
 
 ### [lr-fbalpha2012](https://github.com/libretro/fbalpha2012) 
 ```shell
