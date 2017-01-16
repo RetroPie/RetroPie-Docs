@@ -1,15 +1,15 @@
-![retropie-original-flat-outline](https://cloud.githubusercontent.com/assets/10035308/11428906/0300d80c-942e-11e5-8675-1e033d731d49.png)
+![retropie_logo](https://cloud.githubusercontent.com/assets/10035308/21968193/e1670f2a-db46-11e6-8ff7-eb6d7188c9e7.png)
 
-|Version|
-|---|
-|4.1|
-1. [Hardware](https://github.com/RetroPie/RetroPie-Setup/wiki/First-Installation#hardware-needed)
-2. [Installation](https://github.com/RetroPie/RetroPie-Setup/wiki/First-Installation#installation)
-3. [Controller Configuration](https://github.com/RetroPie/RetroPie-Setup/wiki/First-Installation#controller-configurations)
-4. [EmulationStation](https://github.com/RetroPie/RetroPie-Setup/wiki/First-Installation#emulationstation)
-5. [Configure Wifi](https://github.com/RetroPie/RetroPie-Setup/wiki/First-Installation#configuring-wifi)
-6. [Installing Additional Emulators](https://github.com/RetroPie/RetroPie-Setup/wiki/First-Installation#installing-additional-emulators--ports)
-7. [Transferring Roms](https://github.com/RetroPie/RetroPie-Setup/wiki/First-Installation#transferring-roms)
+|Version|4.1|
+|:---:|:---:|
+
+1. [Hardware](First-Installation#hardware-needed)
+2. [Installation](First-Installation#installation)
+3. [Controller Configuration](First-Installation#controller-configurations)
+4. [EmulationStation](First-Installation#emulationstation)
+5. [Configure Wifi](First-Installation#configuring-wifi)
+6. [Installing Additional Emulators](First-Installation#installing-additional-emulators--ports)
+7. [Transferring Roms](First-Installation#transferring-roms)
 
 Congratulations! You have discovered the wonderful world of RetroPie- your entire childhood is within reach! RetroPie is a combination of multiple projects including [RetroArch](http://www.libretro.com), [EmulationStation](http://www.emulationstation.org), and many others. 
 
@@ -50,9 +50,9 @@ Download the SD image for your version of Raspberry Pi from the following page:
 
 If you are unsure which version of Raspberry Pi you have just count the raspberries on boot:
 
-Raspberry Pi 0/1 | Raspberry Pi 2/3
+|Raspberry Pi 0/1 | Raspberry Pi 2/3|
 | :---: | :---: |
-![rpi1](https://cloud.githubusercontent.com/assets/10035308/21957849/f64fe008-da54-11e6-9a1c-09cb9e87c8f5.png) | ![rpi2](https://cloud.githubusercontent.com/assets/10035308/21957850/f66f2120-da54-11e6-876b-6d7f276c31e3.png)
+|![rpi1](https://cloud.githubusercontent.com/assets/10035308/21957849/f64fe008-da54-11e6-9a1c-09cb9e87c8f5.png) | ![rpi2](https://cloud.githubusercontent.com/assets/10035308/21957850/f66f2120-da54-11e6-876b-6d7f276c31e3.png)|
 
 If you get the error `Illegal Instruction` when it boots or if it just boots into the terminal, you picked the wrong SD image or the image was corrupted on download or extraction.
 
@@ -74,7 +74,7 @@ To install the RetroPie SD image on your MicroSD card. (You may need a MicroSD c
 
 **Note** RetroPie is built on top of Raspbian (a linux based OS for the Raspberry Pi) and as such the partition on the SD card is EXT4 (a linux filesystem) which is not visible on windows systems, so the card will show up as a smaller size than usual and you wont be able to see everything on the card, but it is all there. You will be able to access the filesystem over the network as described in the transferring roms section below.
 
-If you're updating from a previous version of retropie see [**HERE**](https://github.com/RetroPie/RetroPie-Setup/wiki/Updating-RetroPie)
+If you're updating from a previous version of retropie see [**HERE**](Updating-RetroPie)
 
 # Configurations
 
@@ -92,7 +92,7 @@ Follow the onscreen instructions to configure your gamepad- if you run out of bu
 
 ![welcomescreengamepadconfigure](https://cloud.githubusercontent.com/assets/10035308/9140518/0263b9c8-3cef-11e5-922f-42f790f3be91.png)
 
-If you wish to configure more than one controller, you can do so from the start menu of emulationstation. For more details on manual controller configurations see this page [Here](https://github.com/petrockblog/RetroPie-Setup/wiki/RetroArch-Configuration). See also [HERE](https://github.com/RetroPie/RetroPie-Setup/wiki#controller-configurations)
+If you wish to configure more than one controller, you can do so from the start menu of emulationstation. For more details on manual controller configurations see this page [Here](https://github.com/petrockblog/RetroPie-Setup/wiki/RetroArch-Configuration).
 
 See the following diagrams for reference:
 
@@ -106,7 +106,7 @@ See the following diagrams for reference:
 
 Hotkeys enable you to press a combination of buttons to access functions such as saving, loading, and exiting emulators. The following chart shows the default hotkey combinations. By default, the hotkey is select so that means you hold down select while pressing another button to execute a command. **Note** that hotkeys are only specific to the retroarch/libretro based emulators.
 
-Hotkeys | Action
+|Hotkeys | Action|
 | :---: | :---: |
 | Select+Start | Exit |
 | Select+Right Shoulder | Save |
@@ -143,7 +143,7 @@ After it's done configuring you should see your wifi info in the original menu:
 
 ![wifi4](https://cloud.githubusercontent.com/assets/10035308/16217944/92cb07fa-3735-11e6-9239-66fba394c669.png)
 
-For more WiFi configuration options see this page [HERE](https://github.com/RetroPie/RetroPie-Setup/wiki/Wifi)
+For more WiFi configuration options see this page [HERE](Wifi)
 
 ## Installing additional Emulators / Ports
 On RetroPie 4.0+, not everything is installed by default. The pre-made images contain the best working emulators for each system supported by the hardware. This should cover everything most users would be doing. Ports like quake and doom and some other emulators like ScummVM can be installed later.
@@ -197,7 +197,7 @@ You can also log in as root if you wish to change more files than just the roms,
 
 After you've added your roms you need to restart emulationstation in order for them to show up. You can restart emulationstation from the start menu, or by rebooting your pi with `sudo reboot`. 
 
-- see the rest of the [wiki](https://github.com/RetroPie/RetroPie-Setup/wiki) for more detailed information on individual emulators, advanced settings etc. If you still can't figure it out, the RetroPie community is very helpful on the [forum](https://retropie.org.uk/forum/). 
+- see the rest of the [wiki](wiki) for more detailed information on individual emulators, advanced settings etc. If you still can't figure it out, the RetroPie community is very helpful on the [forum](https://retropie.org.uk/forum/). 
 
 - **The RetroPie Project is primarily maintained by a few developers who develop the project in their free time. If you have found the RetroPie project useful please consider donating to the project [here](https://retropie.org.uk/donate/). As you become more familiar with RetroPie, pay it forward by helping others on the forum. The RetroPie Project is what it is today because of the many contributions of the community.**
 
