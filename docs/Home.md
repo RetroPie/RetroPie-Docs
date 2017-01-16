@@ -1,4 +1,6 @@
 ***
+
+![retropie_logo](https://cloud.githubusercontent.com/assets/10035308/21968193/e1670f2a-db46-11e6-8ff7-eb6d7188c9e7.png)
 ![retropie](https://retropie.org.uk/wp-content/uploads/2016/04/RetroPieWebsiteLogo.png)
 ***
 | Latest Version  | [**4.1**](https://retropie.org.uk/download/)  | [Changelog](Changelogs)  |
