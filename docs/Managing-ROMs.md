@@ -33,9 +33,9 @@ Arcade ROMs are usually distributed as ZIP files which should not be unzipped or
 
 In addition to having a version number, arcade ROMs can be formatted three ways:
 
-* **Non-merged**: All ROMs are standalone, each zip contains all the files needed to run that game, including any files from 'parent ROMs'. This is the recommended format for RetroPie arcade emulators.
-* **Split**: Some ROMS that are considered clones, translations, or bootlegs also require a "parent ROM" to run. The parent ROM is normally the most common variant of a game in the English language. In some cases the parent is not the best working version of the game, however. For example, in a Split set pacman.zip (a clone), will not work without puckman.zip (its parent).
-* **Merged**: Clones are merged into the parent ROM zip, meaning that more than one game is stored per file. Merged ROM sets are not supported.
+* **Non-merged**: All ROMs can be used standalone because each zip contains all the files needed to run that game, including any files from 'parent ROMs'. This is the recommended format for RetroPie arcade emulators.
+* **Split**: Some ROMS that are considered clones, translations, or bootlegs also require a "parent ROM" to run. The parent ROM is often the first or most common variant of a game. In some cases the parent is not the most popular or best working version of the game, however. For example, in a Split set pacman.zip (a clone), will not work without puckman.zip (its parent).
+* **Merged**: Clones are merged into the parent ROM zip, meaning that more than one game is stored per file. Merged ROM sets are not recommended.
 
 For further details, see the system-specific wiki pages for [MAME](https://github.com/petrockblog/RetroPie-Setup/wiki/MAME) and [FBA](https://github.com/petrockblog/RetroPie-Setup/wiki/FinalBurn-Alpha). Recommended external resources for understanding more about MAME/FBA arcade ROMs and their usage are:
 
