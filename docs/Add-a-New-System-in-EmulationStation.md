@@ -41,7 +41,7 @@ This is the folder where the roms in your new system will be located. This folde
 ####<em>\<extension> &amp; \<command></em>
 These define the list of extensions that EmulationStation will look for in the rom folder defined in `<path>` and the shell command executed when a game is selected. 
 
-Roms can be launched using shell scripts or the runcommand script. Both methods are involved so it is your choice how you wish to proceed. The entries for these tags are covered [[below|step-31-launch-roms-with-the-runcommand-script]] so check the steps required if you are unsure which is best for you.
+Roms can be launched using shell scripts or the runcommand script. Both methods are involved so it is your choice how you wish to proceed. The entries for these tags are covered [below](https://github.com/RetroPie/RetroPie-Setup/wiki/Add-a-New-System-in-EmulationStation#step-31-launch-roms-with-the-runcommand-script) so check the steps required if you are unsure which is best for you.
 
 ####<em>\<platform>
 This information is used for scraping. This tag is optional so it may be best to  omit it. If you intend to use multiple emulators, for a favourites section for instance, then you can use existing gamelists to manually create a new gamelist. If you are creating a section for mods or hacks, then it's unlikely you'll be able scrape metadata.
@@ -67,7 +67,7 @@ Once you have completed your entry for the new system, then save your custom `es
 
 Contra will now appear in the favorites section and launch as normal once you've completed tutorial.
 
-When you restart EmulationStation, the new system will be added together with your roms. (See below for [[troubleshooting|troubleshooting]])
+When you restart EmulationStation, the new system will be added together with your roms. (See below for [troubleshooting](https://github.com/RetroPie/RetroPie-Setup/wiki/Add-a-New-System-in-EmulationStation#troubleshooting))
 
 ###Step 2. Create a Theme for the New System
 
