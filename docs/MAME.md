@@ -9,7 +9,9 @@ See Also: [[FinalBurn-Alpha]], [[Neo Geo]]
 
 ***
 
-There are a variety of MAME emulator version available in RetroPie. There are significant differences in performance, compatibility, and configuration between them. If you're getting started with MAME or arcade emulation, start by reading [Managing Arcade ROMs](Managing-Arcade-ROMs). This page is a resource for additional details on RetroPie's MAME emulators including configuration, controls, and the ROM sets which each emulator requires.
+There are a variety of MAME emulator versions available in RetroPie. There are significant differences in performance, compatibility, and configuration between them. If you're getting started with MAME or arcade emulation, start by reading [Managing Arcade ROMs](https://github.com/RetroPie/RetroPie-Setup/wiki/Managing-ROMs).
+
+This page is a resource for additional details on RetroPie's MAME emulators including configuration paths, controls, and the ROM sets which each emulator requires.
 
 | Emulator | Rom Folder | Required ROM Vesion | Controller Config |
 | :---: | :---: | :---: | :---: | :---: | :---: |
