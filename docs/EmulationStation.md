@@ -74,6 +74,14 @@ Now edit es_systems.cfg, moving systems, everything from `<system>...</system>`,
 
 Bear in mind that, if you update any systems, this will be reflected in `/etc/emulationstation/es_systems.cfg` and you will need to manually update your copy in `/home/pi/.emulationstation`.
 
+### How do I add a new system to EmulationStation?
+
+It is possible to manually add a new system in EmulationStation but it is a process recommended for experienced users because, before you start, you should be comfortable with finding, creating, editing text files on your pi, using the command line, manually maintaining EmulationStation config files and possibly creating or modifying themes. It can be a lengthy and repetitive process so patience is a must. Having said this, this is a good opportunity to learn how to do all this and get an idea of how RetroPie works beneath the hood.
+
+If you are looking to create a favourites lists within a system, then you may wish to consider the [child-friendly version of EmulationStation](https://github.com/retropie/retropie-setup/wiki/Child-friendly-EmulationStation#favorites) which has this feature .
+
+You can find the tutorial to do this [HERE](https://github.com/RetroPie/RetroPie-Setup/wiki/Add-a-New-System-in-EmulationStation)
+
 ### My emulator won't close through my gamepad!
 
 This sometimes happens. ES does not monitor input while an emulator is running. If you want to close your emulator, you will have to do it from within the emulator. RetroArch has a binding for this and should automatically be generated when you first configure your controller in emulationstation. default to exit is `select+start`, see [Here](https://github.com/retropie/retropie-setup/wiki/RetroArch-Configuration) for more info.
