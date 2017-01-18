@@ -47,7 +47,7 @@ Config Dir: /opt/retropie/configs/mame-mame4all
 MAME Version: **0.37b5** (July 2000)
 
 Active Sets: **[2241](http://code.google.com/p/imame4all/wiki/GameList)**
-* BIOS: ?
+* BIOS: 1
 * CHDs: 0
 * Samples: 35
 
@@ -79,7 +79,7 @@ Config Dir: /opt/retropie/configs/mame-mame4all/retroarch.cfg
 MAME Version: Based on **0.37b5** (July 2000)
 
 Active Sets: **[2241](http://code.google.com/p/imame4all/wiki/GameList)**
-* BIOS: ?
+* BIOS: 1
 * CHDs: 0
 * Samples: 35
 
