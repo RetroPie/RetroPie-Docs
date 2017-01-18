@@ -5,18 +5,19 @@ _The Neo Geo is a cartridge-based arcade system board and home video game consol
 
 See also: [[MAME]], [[Neo Geo]]
 ***
+
 There are a variety of arcade emulators available in RetroPie which can emulate Neo Geo games. There are significant differences in performance, compatibility, and configuration between them. If you're getting started with arcade emulation, start by reading [Managing Arcade ROMs](https://github.com/RetroPie/RetroPie-Setup/wiki/Managing-ROMs).
 
 This page is a resource for additional details on configuring a dedicated set of Neo Geo ROMs including configuration paths, controls, and the ROM sets which each emulator requires.
 
 ## Recommended Neo Geo emulators
 
-For Neo Geo games lr-fbalpha is the recommended because it features the libretro control system, shaders, and all other libretro advantages. Please also refer to [FB Alpha](FinalBurn-Alpha) and specifically [[lr-fbalpha]] for configuration information.
+`lr-fbalpha` is recommended for emulating Neo Geo games because it features the libretro control system, shaders, and all other libretro advantages. Please also refer to [FB Alpha](FinalBurn-Alpha) and specifically [[lr-fbalpha]] for configuration information.
 
-Users with Raspberry Pi 1s may prefer the standalone emulator PiFBA, which will have better performance on limited hardware. The GnGeo-Pi emulator is also available.
+Users with Raspberry Pi 1s may prefer the standalone emulator `PiFBA`, which will have better performance on limited hardware. The GnGeo-Pi emulator is also available. 
 
 | Emulator | Rom Folder | Required ROM Version | Controller Config |
-| :---: | :---: | :---: | :---: | :---: |
+| :---: | :---: | :---: | :---: | 
 | [lr-fbalpha](https://github.com/libretro/fbalpha) | arcade **or** fba **or** neogeo  | FB Alpha v0.2.97.39 |  /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/fba/retroarch.cfg, **or** /opt/retropie/configs/neogeo/retroarch.cfg |
 | [PiFBA](https://github.com/RetroPie/pifba) | arcade **or** fba **or** neogeo  | FBA 0.2.96.71 | /opt/retropie/emulators/pifba/fba2x.cfg **or** /opt/retropie/configs/fba/fba2x.cfg |
 | [GnGeo-Pi](https://github.com/ymartel06/GnGeo-Pi) | arcade **or** neogeo | MAME 0.138 | /opt/retropie/configs/neogeo/gngeorc |
@@ -27,7 +28,6 @@ Place Neo Geo ROMs in
 ```
 /home/pi/RetroPie/roms/neogeo
 ```
-
 ## BIOS
 
 Neo-Geo ROMs require a `neogeo.zip` BIOS file with the exact same MAME or FB Alpha version as the emulator you select. Place the correct `neogeo.zip` with your ROMs in:
