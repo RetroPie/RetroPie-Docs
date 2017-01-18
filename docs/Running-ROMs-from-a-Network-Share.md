@@ -16,7 +16,7 @@ If you haven't already, now is a good time to tell your Pi to wait for network a
 
     sudo raspi-config
 
-In there, select the 4th option and tell it Yes.
+In there, select "Boot Options" and tell it Yes.
 
 ### Option 1: Add to autostart.sh (Preferred if using v4.0+)
 
