@@ -1,16 +1,20 @@
-# Getting Started
+# Getting Started with Arcade Emulation
 
-Arcade emulation requires a different planning approach than console systems.
+**Arcade emulation requires a different planning approach than console systems. Please read this entire page before beginning your RetroPie arcade emulation project.**
 
-1. Choose an arcade emulator listed in the table below that your system is powerful enough to run
-2. **Either download or 'rebuild' a set of arcade ROMs with a version number that exactly matches the emulator you selected**
+## Step One: Choose an arcade emulator
 
-The recommended emulators are:
+| System | Recommended emulators | 
+|---|---|
+|Pi 2 and Pi 3| `lr-mame2003` and `lr-fbalpha`|
+|Pi 1 and Pi Zero| `mame4all`  (the native emulator, not the RetroArch core) and `pi-fba`|
 
-* Pi 2 and Pi 3: `lr-mame2003` and `lr-fbalpha`
-* Pi 1 and Pi Zero: `mame4all`  (the native emulator, not the RetroArch core) and `pi-fba`
+If the ROM you wish to play is only supported by one of the other emulator versions below, please be aware that earlier arcade emulator versions generally run faster than later versions, but also that earlier emulator versions support fewer games.
 
-If the ROM you wish to play is only supported by other emulator versions, please be aware that earlier arcade emulator versions usually run faster than later versions, but also that earlier versions support fewer games. Native emulators like MAME4ALL or AdvanceMAME perform better than RetroArch cores but they cannot take advantage of global RetroArch configurations so they must be configured individually. Generally 2D games can be emulated by the Pi 3's prococessor, but most 3D and vector games do not run at playable speed or at all.
+MAME4ALL, AdvanceMAME, and pi-fba perform better than RetroArch cores but they cannot take advantage of global RetroArch configurations so they must be configured individually. Generally 2D games can be emulated by the Pi 3's prococessor, but most 3D and vector games do not run at playable speed or at all.
+
+## Step Two: Use the right ROM Version
+Arcade ROMs are distributed in collections that have a version number that exactly matches the emulator versions listed in the table below. In other words, lr-mame2003 will only work with a collection of MAME 0.78 ROMs, mame4all will only work with a collection of MAME 0.37b5 ROMs, and so on.
 
 | Emulator | Required ROM Version | # of ROMs | [.DAT Files](https://github.com/HerbFargus/retropie-dat/archive/master.zip) | Compatibility List |
 | :---: | :---: | :---: | :---: | :---: |
@@ -27,7 +31,7 @@ If the ROM you wish to play is only supported by other emulator versions, please
 
 [**All Arcade ROMS Compatibility List**](https://docs.google.com/spreadsheets/d/1antILt7D12EWOFzyJwTfB86NceghMJKXG7CdYumuHec/edit?usp=sharing) feel free to contribute to the list.
 
-## Crash Course in Arcade ROMs
+### Crash Course in Arcade ROMs
 
 Arcade ROMs are usually distributed as ZIP files which should not be unzipped or renamed. The version of any given arcade ROM must match the specific version of the arcade emulator because ROMs change from version to version of the emulator. For example, MAME2003 is based on MAME 0.78, so you must use MAME 0.78 ROMs with MAME2003. ROMs from an earlier or later MAME version, such as 0.50 or 0.173, will probably not work with MAME2003.
 
@@ -42,9 +46,11 @@ For further details, see the system-specific wiki pages for [MAME](https://githu
 * [RetroPie Forum: How to use MAME with RetroPie Help Guide](https://retropie.org.uk/forum/topic/2859/how-to-use-mame-with-retropie-help-guide)
 * [Demystifying MAME ROMs Tutorial by ChoccyHobNob](http://choccyhobnob.com/tutorials/demystifying-mame-roms/).
 
-# Verifying and Rebuilding ROMs 
+# Correct ROM versions are essential
 So how do you tell you have the right ROM if you aren't sure that your set matches the version required by the emulator you chose? What if you don't have the right version?
+
+It is possible to 'rebuild' from one version of an arcade ROM collection to another. If you also have access to a newer ROM collection you can 'roll forward' your ROM version, of if you have access to an older ROM collection or a 'rollback' collection you can rebuild to a lower ROM version. 
 
 **Note: the process of verifying and rebuilding ROMs is complex and requires a substantial investment of time and effort in order to master. If your goal is to have working arcade ROMs, it is almost always simpler to download a full ROM set that has already been verified to match the arcade emulator you chose.**
 
-Visit the page on [Validating, Rebuilding, and Filtering ROMs](https://github.com/RetroPie/RetroPie-Setup/wiki/Validating,-Rebuilding,-and-Filtering-Arcade-ROMs) to learn more.
+Visit the page on [Validating, Rebuilding, and Filtering ROMs](https://github.com/RetroPie/RetroPie-Setup/wiki/Validating,-Rebuilding,-and-Filtering-Arcade-ROMs) to learn more about rebuilding.
