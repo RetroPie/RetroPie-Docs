@@ -4,14 +4,18 @@
 
 ## Step One: Choose an arcade emulator
 
-| System | Recommended emulators | 
-|---|---|
-|Pi 2 and Pi 3| `lr-mame2003` and `lr-fbalpha`|
-|Pi 1 and Pi Zero| `mame4all`  (the native emulator, not the RetroArch core) and `pi-fba`|
+| System | Recommended MAME Emulator| Recommended FBA Emulator|
+|---|---|---|
+|Pi 2 and Pi 3| `lr-mame2003` | `lr-fbalpha`|
+|Pi 1 and Pi Zero| `mame4all`  (not lr-mame4all) | `pi-fba`|
 
 If the ROM you wish to play is only supported by one of the other emulator versions below, please be aware that earlier arcade emulator versions generally run faster than later versions, but also that earlier emulator versions support fewer games.
 
 MAME4ALL, AdvanceMAME, and pi-fba perform better than RetroArch cores but they cannot take advantage of global RetroArch configurations so they must be configured individually. Generally 2D games can be emulated by the Pi 3's prococessor, but most 3D and vector games do not run at playable speed or at all.
+
+**Further Reading**
+
+* [Arcade games and how to play them, A non-technical MAME and FBA tutorial by rbaker](https://retropie.org.uk/forum/topic/7247/guide-arcade-games-and-how-to-play-them-a-non-technical-mame-fba-tutorial)
 
 ## Step Two: Use the right ROM Version
 Arcade ROMs are distributed in collections that have a version number that exactly matches the emulator versions listed in the table below. In other words, lr-mame2003 will only work with a collection of MAME 0.78 ROMs, mame4all will only work with a collection of MAME 0.37b5 ROMs, and so on.
@@ -41,9 +45,9 @@ In addition to having a version number, arcade ROMs can be formatted three ways:
 * **Split**: Some ROMS that are considered clones, translations, or bootlegs also require a "parent ROM" to run. The parent ROM is often the first or most common variant of a game. In some cases the parent is not the most popular or best working version of the game, however. For example, in a Split set pacman.zip (a clone), will not work without puckman.zip (its parent).
 * **Merged**: Clones are merged into the parent ROM zip, meaning that more than one game is stored per file. Merged ROM sets are not recommended.
 
-For further details, see the system-specific wiki pages for [MAME](https://github.com/petrockblog/RetroPie-Setup/wiki/MAME) and [FBA](https://github.com/petrockblog/RetroPie-Setup/wiki/FinalBurn-Alpha). Recommended external resources for understanding more about MAME/FBA arcade ROMs and their usage are:
-
-* [RetroPie Forum: How to use MAME with RetroPie Help Guide](https://retropie.org.uk/forum/topic/2859/how-to-use-mame-with-retropie-help-guide)
+**Further Reading**
+* Wiki pages for [MAME](https://github.com/petrockblog/RetroPie-Setup/wiki/MAME) and [FB Alpha](https://github.com/petrockblog/RetroPie-Setup/wiki/FinalBurn-Alpha).
+* [How to use MAME with RetroPie Help Guide by Floob](https://retropie.org.uk/forum/topic/2859/how-to-use-mame-with-retropie-help-guide)
 * [Demystifying MAME ROMs Tutorial by ChoccyHobNob](http://choccyhobnob.com/tutorials/demystifying-mame-roms/).
 
 # Correct ROM versions are essential
