@@ -7,9 +7,14 @@ See Also: [[FinalBurn-Alpha]], [[Neo Geo]]
 
 ***
 
-There are a variety of MAME emulator versions available in RetroPie. There are significant differences in performance, compatibility, and configuration between them. If you're getting started with MAME or arcade emulation, start by reading [Managing Arcade ROMs](https://github.com/RetroPie/RetroPie-Setup/wiki/Managing-ROMs).
+There are a variety of arcade emulator versions available in RetroPie. There are significant differences in performance, compatibility, and configuration between them. If you're getting started with arcade emulation, start by reading [Managing Arcade ROMs](https://github.com/RetroPie/RetroPie-Setup/wiki/Managing-ROMs).
 
 This page is a resource for additional details on RetroPie's MAME emulators including configuration paths, controls, and the ROM sets which each emulator requires.
+
+**MAME Terminology**
+* **ROM, ROM set, and romset** - MAME games are packaged as zip files, most of which a composed of more than one individual 'ROM' files. That is why some resources refer to an individual MAME game as a ROM (like people use to describe a zipped game cartridge ROM) while other resources refer to an individual MAME game as a ROM set or romset.
+* **Sample** - Some games require an additional zip file with recorded sounds or music in order for audio to work correctly. The path where these samples should be copied varies from emulator to emulator.
+* **CHD** - Some games require data from an internal hard drive, CD-ROM, laserdisk, or other media in order to be emulated -- those forms of media are packaged as CHD files. CHDs files should be copied to subfolders within the folder where the MAME ROM zips have been installed.
 
 [**All Arcade ROMS Compatibility List**](https://docs.google.com/spreadsheets/d/1antILt7D12EWOFzyJwTfB86NceghMJKXG7CdYumuHec/edit?usp=sharing) feel free to contribute to the list.
 
@@ -39,13 +44,13 @@ Binary Dir: /opt/retropie/emulators/mame4all
 Config Dir: /opt/retropie/configs/mame-mame4all
 ```
 MAME Version: Based on **0.37b5** (July 2000)
-Total Games Emulated: [2270](http://code.google.com/p/imame4all/wiki/GameList)
-
-Active Sets 2241/2241
-* Parents 560/560
-* Clones 990/990
-* Others 690/690
-* BIOS 1/1
+Active Sets: [2241](http://code.google.com/p/imame4all/wiki/GameList)
+* Parents: 560
+* Clones: 990
+* Others: 690
+* BIOS: ?
+* CHDs: 0
+* Samples: 35
 
 Dat File: [mame4all-037b5-RetroPie-260.zip](https://drive.google.com/file/d/0B2TMeZ6iEFvHVUNfWHpUZk82bkk/view?usp=sharing)
 
@@ -73,13 +78,13 @@ Binary Dir: /opt/retropie/libretrocores/lr-imame4all
 Config Dir: /opt/retropie/configs/mame-mame4all/retroarch.cfg
 ```
 MAME Version: Based on **0.37b5** (July 2000)
-Total Games Emulated: [2270](http://code.google.com/p/imame4all/wiki/GameList) 
-
-Active Sets 2241/2241
-* Parents 560/560
-* Clones 990/990
-* Others 690/690
-* BIOS 1/1
+Active Sets [2241](http://code.google.com/p/imame4all/wiki/GameList) 
+* Parents: 560
+* Clones: 990
+* Others: 690
+* BIOS: ?
+* CHDs: 0
+* Samples: 35
 
 Dat File: [mame4all-037b5-RetroPie-260.zip](https://drive.google.com/file/d/0B2TMeZ6iEFvHVUNfWHpUZk82bkk/view?usp=sharing)
 
@@ -108,13 +113,13 @@ Binary Dir: /opt/retropie/libretrocores/lr-mame2003
 Config Dir: /opt/retropie/configs/mame-libretro/retroarch.cfg
 ```
 MAME Version: Based on **0.78** (December 2003)
-Romsets emulated: 4705 (includes clones etc..)
-
-Active Sets 4705/4705
-* Parents 1042/1042
-* Clones 2039/2039
-* Others 1624/1624
-* BIOS 1/1
+Active Sets: 4705
+* Parents: 1042
+* Clones: 2039
+* Others: 1624
+* BIOS: 15
+* CHDs: ?
+* Samples: 56
 
 Dat File (with merge data): [MAME 0.78.dat](https://drive.google.com/file/d/0B2TMeZ6iEFvHTkc2TXZOOFhCRzQ/view?usp=sharing)
 
@@ -145,13 +150,13 @@ Binary Dir: /opt/retropie/libretrocores/lr-mame2010
 Config Dir: /opt/retropie/configs/mame-libretro/retroarch.cfg
 ```
 MAME Version: Based on **0.139** (August 2010)
-Romsets emulated: 8782 (includes clones etc..)
-
-Active Sets 8782/8782
-* Parents 1835/1835
-* Clones 4265/4265
-* Others 2683/2683
-* BIOS 1/1
+Active Sets: 8782
+* Parents: 1835
+* Clones: 4265
+* Others: 2683
+* BIOS: ?
+* CHDs: ?
+* Samples: 70 (4 more samples are not in circulation)
 
 Dat File (with merge data): [MAME 0.139.dat](https://drive.google.com/file/d/0B2TMeZ6iEFvHUFdCc04zZ3o4dnM/view?usp=sharing) 
 
@@ -175,13 +180,13 @@ Binary Dir: /opt/retropie/emulators/advmame/bin
 Config Dir: /opt/retropie/configs/mame-advmame
 ```
 MAME Version: Based on **MAME 0.94** (March 2005)
-Romsets Emulated: 5563 (includes clones etc..)
-
-Active Sets (For 0.94.0) 5563/5563
-* Parents 1236/1236
-* Clones 2473/2473
-* Others 1829/1829
-* BIOS 25/25
+Active Sets (For MAME 0.94) 5563
+* Parents: 1236
+* Clones: 2473
+* Others: 1829
+* BIOS: 25
+* CHDs: ?
+* Samples: ?
 
 AdvanceMAME 0.94 DAT File: [advmame-0.94-RetroPie-260.7z](https://drive.google.com/file/d/0B2TMeZ6iEFvHa2E5Rzl4ZEdMdjQ/view?usp=sharing)
 
@@ -208,13 +213,13 @@ Binary Dir: /opt/retropie/emulators/advmame/bin
 Config Dir: /opt/retropie/configs/mame-advmame
 ```
 MAME Version: Based on **MAME 0.106** (May 2006)
-Romsets Emulated: 6166 (includes clones etc..)
-
-Active Sets (For 1.4) 6166/6166
-* Parents 1388/1388
-* Clones 2824/2824
-* Others 1928/1928
-* BIOS 26/26
+Active Sets (For MAME 0.106) 6166
+* Parents: 1388
+* Clones: 2824
+* Others: 1928
+* BIOS: 26
+* CHDs: ?
+* Samples: ?
 
 AdvanceMAME 1.4 DAT File: [advmame12-106.7z](https://drive.google.com/file/d/0B2TMeZ6iEFvHMEZnb1RxQWNmdHM/view?usp=sharing)
 
