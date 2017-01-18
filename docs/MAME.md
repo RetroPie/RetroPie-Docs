@@ -97,7 +97,7 @@ lr-imame4all utilises [RetroArch control configuration](https://github.com/petro
 ---
 ### [lr-mame2003 on github](https://github.com/libretro/mame2003-libretro)
 
-**Please see [lr-mame2003 on RetroPie]([lr-mame2003]) for information on how to configure specific features of this emulator.**
+**Please see [lr-mame2003 on RetroPie](lr-mame2003) for information on how to configure specific features of this emulator.**
 
 ```shell
 Roms Dir: /home/pi/RetroPie/roms/mame-libretro
