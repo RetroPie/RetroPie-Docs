@@ -2,120 +2,39 @@
 ![neogeo](https://cloud.githubusercontent.com/assets/10035308/12213399/9cd6b3c0-b634-11e5-9279-97d936f8028c.png)
 ***
 _The Neo Geo is a cartridge-based arcade system board and home video game console released by SNK in 1990._
+
+See also: [[MAME]], [[Neo Geo]]
 ***
+There are a variety of arcade emulators available in RetroPie which can emulate Neo Geo games. There are significant differences in performance, compatibility, and configuration between them. If you're getting started with arcade emulation, start by reading [Managing Arcade ROMs](https://github.com/RetroPie/RetroPie-Setup/wiki/Managing-ROMs).
 
-| Emulator | Rom Folder | Extension | BIOS |  Controller Config |
+This page is a resource for additional details on configuring a dedicated set of Neo Geo ROMs including configuration paths, controls, and the ROM sets which each emulator requires.
+
+## Recommended Neo Geo emulators
+
+For Neo Geo games lr-fbalpha is the recommended because it features the libretro control system, shaders, and all other libretro advantages. Please also refer to [FB Alpha](FinalBurn-Alpha) and specifically [[lr-fbalpha]] for configuration information.
+
+Users with Raspberry Pi 1s may prefer the standalone emulator PiFBA, which will have better performance on limited hardware. The GnGeo-Pi emulator is also available.
+
+| Emulator | Rom Folder | Required ROM Version | Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
-| [lr-fbalpha](https://github.com/libretro/fbalpha) | arcade **or** fba **or** neogeo  | .zip | neogeo.zip | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/fba/retroarch.cfg, **or** /opt/retropie/configs/neogeo/retroarch.cfg |
-| [lr-fbalpha2012](https://github.com/libretro/fbalpha2012) | arcade **or** fba **or** neogeo  | .zip | neogeo.zip | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/fba/retroarch.cfg, **or** /opt/retropie/configs/neogeo/retroarch.cfg |
-| [PiFBA](https://github.com/RetroPie/pifba) | arcade **or** fba **or** neogeo  | .zip | neogeo.zip | /opt/retropie/emulators/pifba/fba2x.cfg **or** /opt/retropie/configs/fba/fba2x.cfg |
-| [GnGeo-Pi](https://github.com/ymartel06/GnGeo-Pi) | arcade **or** neogeo | .zip | neogeo.zip | /opt/retropie/configs/neogeo/gngeorc |
-
-## Emulators: [GnGeo-Pi](https://github.com/ymartel06/GnGeo-Pi), [PiFBA](https://github.com/RetroPie/pifba), [lr-fbalpa2012](https://github.com/libretro/fbalpha2012), [lr-fbalpha](https://github.com/libretro/fbalpha)
-
-For Neo Geo games lr-fbalpha is the default as it features the libretro control system, shaders, and all other libretro advantages. Since lr-fbalpha is an FBA emulator, please also refer to [[FinalBurn-Alpha]] and specifically [[lr-fbalpha]] for configuration information.
-
-However, those on Raspberry Pi 1s may prefer the standalone emulator PiFBA, which will have better performance on limited hardware. 
+| [lr-fbalpha](https://github.com/libretro/fbalpha) | arcade **or** fba **or** neogeo  | FB Alpha v0.2.97.39 |  /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/fba/retroarch.cfg, **or** /opt/retropie/configs/neogeo/retroarch.cfg |
+| [PiFBA](https://github.com/RetroPie/pifba) | arcade **or** fba **or** neogeo  | FBA 0.2.96.71 | /opt/retropie/emulators/pifba/fba2x.cfg **or** /opt/retropie/configs/fba/fba2x.cfg |
+| [GnGeo-Pi](https://github.com/ymartel06/GnGeo-Pi) | arcade **or** neogeo | MAME 0.138 | /opt/retropie/configs/neogeo/gngeorc |
 
 ## ROMS
 
-Accepted File Extension: **.zip**
-
-**For information on how to rebuild newer romsets to be compatible with these emulators see this post:**
-**[Managing ROMs](https://github.com/petrockblog/RetroPie-Setup/wiki/Managing-ROMs)**
-
-Place your Neo Geo ROMs in
+Place Neo Geo ROMs in
 ```
 /home/pi/RetroPie/roms/neogeo
 ```
-
-### [GnGeo 0.8](https://github.com/ymartel06/GnGeo-Pi)
-```shell
-Roms Dir: /home/pi/RetroPie/roms/neogeo
-Binary Dir: /opt/retropie/emulators/gngeopi/bin
-Config Dir: /opt/retropie/configs/neogeo
-```
-MAME Version: Based on **0.138** romsets (May 2010)
-Romsets emulated: 203
-
-Dat File: [pandora_gngeo_084_dat.zip](https://drive.google.com/file/d/0B2TMeZ6iEFvHZVVCYmVtaUM1VlU/view?usp=sharing)
-
-All clones non-working\mahjong\quiz removed
-
-Romsets emulated: 128
-
-Dat File: [pandora_gngeo_084_filtered.zip](https://drive.google.com/file/d/0B2TMeZ6iEFvHb1RhaTF0NzJaRlU/view?usp=sharing)
-
-[**GnGeo-Pi COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1A_a_9t14uzDUMrrO0RgLDwiVUiycmclcPIs6cU6Iox8/edit?usp=sharing)  feel free to contribute to the list.
-
-As a caveat if you're using gngeopi, the ROMs you have must match the file in `gngeo_data.zip` located at:
-```
-/opt/retropie/emulators/gngeopi/share/gngeo
-```
-You can only play roms that have the same name as these .drv files, e.g. `mslug2.zip` (rom) and `mslug2.drv` (data). If the names of these files don't match, GnGeo-Pi will crash. (see the list at the bottom of this page for compatible ROMs)
 
 ## BIOS
 
-Neo-Geo ROMs require a `neogeo.zip` BIOS file (md5um `9323dfa8b1fd45b071f5ec84317d01aa`). Place this with your ROMs in
+Neo-Geo ROMs require a `neogeo.zip` BIOS file with the exact same MAME or FB Alpha version as the emulator you select. Place the correct `neogeo.zip` with your ROMs in:
 ```
 /home/pi/RetroPie/roms/neogeo
 ```
-
-The contents of a verified working `neogeo.zip` BIOS file are as follows:
-
-```
-# Required (probably)
-
-sm1.sm1           # Z80 BIOS
-sfix.sfix         # Text layer tiles
-000-lo.lo         # Zoom table
-
-# MVS/AES BIOS
-# At least one must be present for MVS Arcade (default) or AES Console mode
-
-asia-s3.rom       # MVS Asia/Europe ver. 6 (1 slot)
-sp-s2.sp1         # MVS Asia/Europe ver. 5 (1 slot)
-sp-s.sp1          # MVS Asia/Europe ver. 3 (4 slot)
-sp-u2.sp1         # MVS USA ver. 5 (2 slot)
-v2.bin            # MVS USA ver. 5 (4 slot)
-sp-e.sp1          # MVS USA ver. 5 (6 slot)
-vs-bios.rom       # MVS Japan ver. 6 (? slot)
-sp-j2.sp1         # MVS Japan ver. 5 (? slot)
-sp1.jipan.1024    # MVS Japan ver. 3 (4 slot)
-sp-45.sp1         # NEO-MVH MV1C
-japan-j3.bin      # MVS Japan (J3)
-neo-po.bin        # AES Japan
-neo-epo.bin       # AES Asia
-neodebug.bin      # Development Kit
-sp-1v1_3db8c.bin  # Deck ver. 6 (Git Ver 1.3)
-
-# Universe BIOS
-# At least one must be present for UNIBIOS mode
-
-uni-bios_3_2.rom  # Universe BIOS ver. 3.2 (free)
-uni-bios_3_1.rom  # Universe BIOS ver. 3.1 (free)
-uni-bios_3_0.rom  # Universe BIOS ver. 3.0 (free)
-uni-bios_2_3.rom  # Universe BIOS ver. 2.3
-uni-bios_2_3o.rom # Universe BIOS ver. 2.3 (alt)
-uni-bios_2_2.rom  # Universe BIOS ver. 2.2
-uni-bios_2_1.rom  # Universe BIOS ver. 2.1
-uni-bios_2_0.rom  # Universe BIOS ver. 2.0
-uni-bios_1_3.rom  # Universe BIOS ver. 1.3
-uni-bios_1_2.rom  # Universe BIOS ver. 1.2
-uni-bios_1_2o.rom # Universe BIOS ver. 1.2 (alt)
-uni-bios_1_1.rom  # Universe BIOS ver. 1.1
-uni-bios_1_0.rom  # Universe BIOS ver. 1.0
-
-# Unknown Purpose
-
-neopen.sp1        # NeoOpen BIOS v0.1 beta
-```
-
-## Using the Universe BIOS (UNIBIOS)
-
-Instructions on how to install the UNIBIOS on lr-fbalpha can be found here: [[lr-fbalpha#neo-geo-unibios]]
-
-The Unibios can be used as documented on the official page: <http://unibios.free.fr/howitworks.html>
+Instructions on how to install the Neo Geo Unibios on lr-fbalpha can be found here: [[lr-fbalpha#neo-geo-unibios]] The Unibios can be used as documented on the official page: <http://unibios.free.fr/howitworks.html>
 
 * On the Unibios boot screen
     * Neo-Geo **A+B+C** (RetroPad B+A+Y) for BIOS Menu
@@ -123,60 +42,34 @@ The Unibios can be used as documented on the official page: <http://unibios.free
 * At any time
     * Neo-Geo **Start+A+B+C** (RetroPad Start+B+A+Y) for In-Game Menu
 
-The menus allow you to change various settings like region, dip switch settings for gameplay options like difficulty or blood, and coin or free play settings.
+The menus allow you to change various settings like region, dip switch settings for gameplay options like difficulty or blood, and coin or free play settings. Unibios settings will persist after quitting FBA, launching another Neo-Geo game, or rebooting RetroPie.
 
-BIOS settings will persist after quitting FBA, launching another Neo-Geo game, or rebooting RetroPie.
+## Emulators
 
-## Controls
+### lr-fbalpha
 
-### lr-fbalpha2012 and lr-fbalpha
+**lr-fbalpha Controls**
 
-lr-fbalpha2012 and lr-fbalpha utilise RetroArch configs.
-
-Add custom RetrAarch controls to the `retroarch.cfg` file in
-
+lr-fbalpha utilises RetroArch configs. Add custom RetrAarch controls to the `retroarch.cfg` file in:
 ```
 /opt/retropie/configs/fba/retroarch.cfg
 ```
 
 For more information on custom RetroArch controls see: [RetroArch Configuration](https://github.com/petrockblog/RetroPie-Setup/wiki/RetroArch-Configuration) 
 
-![neogeodiagram](https://cloud.githubusercontent.com/assets/10035308/8245309/a575cc8c-15e9-11e5-8735-0a4ab2a4e137.png)
+---
 
-### GnGeo-Pi Controls
+### PiFBA
 
-Once you've started GnGeo-Pi at least once a file called `gngeorc` will be created in
-```
-/home/pi/.gngeo/gngeorc
-```
+**PiFBA Controls**
 
-**Example Configurations**
-
-```shell
- Xbox360
- p1control A=J0B0,B=J0B1,C=J0B2,D=J0B3,START=J0B6,COIN=J0B10,UP=J0a1,DOWN=J0a1,LEFT=J0A0,RIGHT=J0A0,MENU=J0B7
- Dualshock2
- p1control A=J0B2,B=J0B1,C=J0B3,D=J0B0,START=J0B9,COIN=J0B8,UP=J0a1,DOWN=J0a1,LEFT=J0A0,RIGHT=J0A0
-
- Meaning of the code:
- Kxxx : keyboad key number xxx
- JxByy : Joystick number x Button
- JxAyy : Joystick number x Axe yy (use a lowercase 'a' if you need to invert the axis)
- JxHyy : Joystick number x Hat yy
-
- you can define a button multiple time, for example A=J0B0,A=K123,etc..
-```
-
-### PiFBA Controls
-
-PiFBA controls are located in
+PiFBA controls are located in:
 ```shell
 /opt/retropie/emulators/pifba/fba2x.cfg
 ```
 As there is no menu to configure controllers with PiFBA like there is with Mame4all, you'll have to edit the aforementioned file manually.
 
-**Example of fba2x.cfg**
-
+**Example fba2x.cfg**:
 ```shell
 [Keyboard]
 # Get codes from /usr/include/SDL/SDL_keysym.h
@@ -245,8 +138,57 @@ MaintainAspectRatio=1
 [Sound]
 ```
 
-## List of GnGeo-Pi ROMS
+---
 
+### [GnGeo 0.8 on github](https://github.com/ymartel06/GnGeo-Pi)
+```shell
+Roms Dir: /home/pi/RetroPie/roms/neogeo
+Binary Dir: /opt/retropie/emulators/gngeopi/bin
+Config Dir: /opt/retropie/configs/neogeo
+```
+**MAME Version**: 0.138 (May 2010)
+
+**Romsets emulated: 203**
+
+**GnGeo-Pi DAT File**: [pandora_gngeo_084_dat.zip](https://drive.google.com/file/d/0B2TMeZ6iEFvHZVVCYmVtaUM1VlU/view?usp=sharing)
+
+**GnGeo-Pi Filtered DAT File**: [pandora_gngeo_084_filtered.zip](https://drive.google.com/file/d/0B2TMeZ6iEFvHb1RhaTF0NzJaRlU/view?usp=sharing)All clones non-working\mahjong\quiz removed
+
+**Romsets emulated**: 128
+
+[**GnGeo-Pi Compatibility List**](https://docs.google.com/spreadsheets/d/1A_a_9t14uzDUMrrO0RgLDwiVUiycmclcPIs6cU6Iox8/edit?usp=sharing)  feel free to contribute to the list.
+
+As a caveat if you're using gngeopi, the ROMs you have must match the file in `gngeo_data.zip` located at:
+```
+/opt/retropie/emulators/gngeopi/share/gngeo
+```
+You can only play roms that have the same name as these .drv files, e.g. `mslug2.zip` (rom) and `mslug2.drv` (data). If the names of these files don't match, GnGeo-Pi will crash. (see the list at the bottom of this page for compatible ROMs)
+
+**GnGeo-Pi Controls**
+
+Once you've started GnGeo-Pi at least once a file called `gngeorc` will be created in:
+```
+/home/pi/.gngeo/gngeorc
+```
+
+**Example Configuration:**
+
+```shell
+ Xbox360
+ p1control A=J0B0,B=J0B1,C=J0B2,D=J0B3,START=J0B6,COIN=J0B10,UP=J0a1,DOWN=J0a1,LEFT=J0A0,RIGHT=J0A0,MENU=J0B7
+ Dualshock2
+ p1control A=J0B2,B=J0B1,C=J0B3,D=J0B0,START=J0B9,COIN=J0B8,UP=J0a1,DOWN=J0a1,LEFT=J0A0,RIGHT=J0A0
+
+ Meaning of the code:
+ Kxxx : keyboad key number xxx
+ JxByy : Joystick number x Button
+ JxAyy : Joystick number x Axe yy (use a lowercase 'a' if you need to invert the axis)
+ JxHyy : Joystick number x Hat yy
+
+ you can define a button multiple time, for example A=J0B0,A=K123,etc..
+```
+
+**List of GnGeo-Pi ROMS**:
 ```shell
 2020bb.drv
 2020bba.drv
