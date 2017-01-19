@@ -6,18 +6,17 @@ _Final Burn Alpha is a Multiple Arcade Emulator most popular for emulating Neo-G
 See also: [[MAME]], [[Neo Geo]]
 
 ***
-
 There are a variety of arcade emulators available in RetroPie. There are significant differences in performance, compatibility, and configuration between them. If you're getting started with arcade emulation, start by reading [Managing Arcade ROMs](https://github.com/RetroPie/RetroPie-Setup/wiki/Managing-ROMs).
 
 This page is a resource for additional details on RetroPie's Final Burn Alpha emulators including configuration paths, controls, and the ROM sets which each emulator requires.
 
 [**All Arcade ROMS Compatibility List**](https://docs.google.com/spreadsheets/d/1antILt7D12EWOFzyJwTfB86NceghMJKXG7CdYumuHec/edit?usp=sharing) feel free to contribute to the list.
 
-| Emulator | Rom Folder | Extension |  Controller Config |
+| Emulator | Rom Folder | Required ROM Version | Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
-| [lr-fbalpha](https://github.com/libretro/fbalpha) | arcade **or** fba **or** neogeo  | .zip | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/fba/retroarch.cfg, **or** /opt/retropie/configs/neogeo/retroarch.cfg |
-| [lr-fbalpha2012](https://github.com/libretro/fbalpha2012) | arcade **or** fba **or** neogeo  | .zip | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/fba/retroarch.cfg, **or** /opt/retropie/configs/neogeo/retroarch.cfg |
-| [PiFBA](https://github.com/RetroPie/pifba) | arcade **or** fba **or** neogeo  | .zip | /opt/retropie/emulators/pifba/fba2x.cfg **or** /opt/retropie/configs/fba/fba2x.cfg |
+| [lr-fbalpha](https://github.com/libretro/fbalpha) | arcade **or** fba **or** neogeo  | FB Alpha v0.2.97.39| /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/fba/retroarch.cfg, **or** /opt/retropie/configs/neogeo/retroarch.cfg |
+| [lr-fbalpha2012](https://github.com/libretro/fbalpha2012) | arcade **or** fba **or** neogeo  | FB Alpha v0.2.97.30 | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/fba/retroarch.cfg, **or** /opt/retropie/configs/neogeo/retroarch.cfg |
+| [PiFBA](https://github.com/RetroPie/pifba) | arcade **or** fba **or** neogeo  | FB Alpha 0.2.96.71 | /opt/retropie/emulators/pifba/fba2x.cfg **or** /opt/retropie/configs/fba/fba2x.cfg |
 
 ## Arcade ROM paths
 
@@ -26,109 +25,50 @@ So you can have 1 romset for each of these (mame4all, FBA, NeoGeo, advmame) To a
 
 ## Emulators
 
-### [lr-fbalpha](https://github.com/libretro/fbalpha) 
+### [lr-fbalpha on github](https://github.com/libretro/fbalpha)
+
+**Note: Please see [[lr-fbalpha]] for information on how to configure specific features of this emulator.**
+
 ```shell
 Roms Dir: /home/pi/RetroPie/roms/fba
 Binary Dir: /opt/retropie/libretrocores/lr-fbalpha
 Config Dir: /opt/retropie/configs/fba/retroarch.cfg
 ```
-ROM Version: **FBA 0.2.97.39**
-Romsets emulated: 4375 (includes clones etc..)
+**ROM Version**: FB Alpha 0.2.97.39
 
-Active Sets 4375/4375
-* Parents 923/923
-* Clones 2850/2850
-* Others 596/596
-* BIOS 6/6
+**Total games emulated: 4375**
+* BIOS: 6
+* Samples: ?
 
-Dat File:  [FB Alpha v0.2.97.39 (ClrMame Pro XML, Arcade Only)](https://dl.dropboxusercontent.com/u/51705339/fba%20029739%20dats/FB%20Alpha%20v0.2.97.39%20(ClrMame%20Pro%20XML%2C%20Arcade%20Only).dat)
-Dat File: [FB Alpha v0.2.97.39 (ClrMame Pro XML) (NeoGeo Only)](https://dl.dropboxusercontent.com/u/51705339/fba%20029739%20dats/FB%20Alpha%20v0.2.97.39%20(ClrMame%20Pro%20XML)%20(NeoGeo%20Only).dat) "Rebuild using Non-merged-sets, Place the roms in the neogeo roms folder and use FB Alpha v0.2.97.39 as the default emulator."
+**FB Alpha v0.2.97.39 DAT File**:  [FB Alpha v0.2.97.39 (Arcade Only)](https://dl.dropboxusercontent.com/u/51705339/fba%20029739%20dats/FB%20Alpha%20v0.2.97.39%20(ClrMame%20Pro%20XML%2C%20Arcade%20Only).dat)
 
-[**lr-fbalpha COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1GaqIIoiWbzKHwZ52S2xCSDQXILo81Ls1mHK6czKGAtM/edit?usp=sharing)  feel free to contribute to the list.
-**Please see [[lr-fbalpha]] for information on how to configure specific features of this emulator.**
+**FB Alpha v0.2.97.39 DAT File**: [FB Alpha v0.2.97.39 (NeoGeo Only)](https://dl.dropboxusercontent.com/u/51705339/fba%20029739%20dats/FB%20Alpha%20v0.2.97.39%20(ClrMame%20Pro%20XML)%20(NeoGeo%20Only).dat) Instructions: Rebuild using Non-merged-sets, Place the ROMs in the neogeo ROMs folder and use FB Alpha v0.2.97.39 as the default emulator."
+
+**[lr-fbalpha Compatibility List](https://docs.google.com/spreadsheets/d/1GaqIIoiWbzKHwZ52S2xCSDQXILo81Ls1mHK6czKGAtM/edit?usp=sharing)** feel free to contribute to the list.
 
 ---
 
-### [PiFBA](http://sourceforge.net/projects/pifba/)
+### [PiFBA on sourceforge](http://sourceforge.net/projects/pifba/)
 ```shell
 Roms Dir: /home/pi/RetroPie/roms/fba
 Binary Dir: /opt/retropie/emulators/pifba
 Config Dir: /opt/retropie/configs/fba/fba2x.cfg
 ```
-RMM Version: **FBA 0.2.96.71**
-Size: 3.62 GB
-Romsets emulated: 684 (no clones)
+**ROM Version**: FB Alpha 0.2.96.71
 
-Dat File: [fba_0.2.96.71_clrmame_dat.zip](https://drive.google.com/file/d/0B2TMeZ6iEFvHaHUta2dQYk1HTGM/view?usp=sharing)
+**Total games emulated: 684**
+* BIOS: ?
+* Samples: ?
 
-Dat File (With merge data): [FB Alpha v0.2.96.71 (ClrMame Pro).dat](https://drive.google.com/file/d/0B2TMeZ6iEFvHZFJOckQyRVZ5OG8/view?usp=sharing)
+**FB Alpha DAT File (With merge data**: [FB Alpha v0.2.96.71 (ClrMame Pro).dat](https://drive.google.com/file/d/0B2TMeZ6iEFvHZFJOckQyRVZ5OG8/view?usp=sharing)
 
-All clones (current tested) non-working\mahjong\quiz\adult\casino\rythm removed
+**FB Alpha v0.2.96.71 'Lite' DAT File**: [fba_029671_od_release_10_working_roms_filtered.zip] (https://drive.google.com/file/d/0B2TMeZ6iEFvHMTV2TnlrZWwxRXc/view?usp=sharing) (clones, non-working, mahjong, quiz, adult, casino, rythm removed)
 
-Romsets emulated: 291
+[**PiFBA Compatibility List**](https://docs.google.com/spreadsheets/d/1OZioLrz16ptaNbjQUDP5hhVzQDTOTn9Nz46Hbj3-06k/edit?usp=sharing)  feel free to contribute to the list.
 
-Dat File: [fba_029671_od_release_10_working_roms_filtered.zip] (https://drive.google.com/file/d/0B2TMeZ6iEFvHMTV2TnlrZWwxRXc/view?usp=sharing)
+**Controls**
 
-[**PiFBA COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1OZioLrz16ptaNbjQUDP5hhVzQDTOTn9Nz46Hbj3-06k/edit?usp=sharing)  feel free to contribute to the list.
-
----
-
-### [lr-fbalpha2012](https://github.com/libretro/fbalpha2012) 
-```shell
-Roms Dir: /home/pi/RetroPie/roms/fba
-Binary Dir: /opt/retropie/libretrocores/lr-fbalpha2012
-Config Dir: /opt/retropie/configs/fba/retroarch.cfg
-```
-MAME Version: **FBA 0.2.97.30** which is based on MAME 0.154 (Jul 2014)
-Size: 9.15 GB
-Romsets emulated: 3369 (includes clones etc..)
-
-Active Sets 3369/3369
-* Parents 710/710
-* Clones 2146/2146
-* Others 508/508
-* BIOS 5/5
-
-Dat File: [FB Alpha v0.2.97.30.dat.zip](https://drive.google.com/file/d/0B2TMeZ6iEFvHcF96YmdjaWlEdXM/view?usp=sharing)
-
-Neo Geo Only .Dat File: [fba-lr-neogeo](https://drive.google.com/file/d/0B2TMeZ6iEFvHVk1Ud1RoSHpfcFU/view?usp=sharing)
-
-[**lr-fbalpha2012 COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1rWO7Lm0bTGNpak6J-CPzde0GNIDP0NHDoQdJ6iWosfA/edit?usp=sharing)  feel free to contribute to the list.
-Romset Used: FBA **0.2.97.30** which is based on MAME 0.154 (Jul 2014)
-
-Total Games Emulated: [3369](https://github.com/libretro/fbalpha2012/blob/master/svn-current/trunk/gamelist.txt) (includes clones etc..)
-
-### [**lr-fbalpha2012 COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1rWO7Lm0bTGNpak6J-CPzde0GNIDP0NHDoQdJ6iWosfA/edit?usp=sharing)  feel free to contribute to the list.
-
-
-## BIOS
-
-Neo-Geo ROMs require a `neogeo.zip` BIOS file. Place this with your ROMs in
-```
-/home/pi/RetroPie/roms/fba
-```
-or
-```
-/home/pi/RetroPie/roms/neogeo
-```
-
-For more information relating to the BIOS contents, MVS/AES modes, and Universe BIOS (UNIBIOS) mode, refer to the [Neo-Geo](https://github.com/RetroPie/RetroPie-Setup/wiki/Neo-Geo) wiki page.
-
-## Controls
-As there are 2 emulators there are two sets of controls.
-### lr-fbalpha2012 and lr-fbalpha Controls
-lr-fbalpha2012 and lr-fbalpha utilise RetroArch configs.
-
-Add custom retroarch controls to the retroarch.cfg file in
-```shell
-/opt/retropie/configs/fba/retroarch.cfg
-```
-For more information on custom RetroArch controls see: [RetroArch Configuration](https://github.com/petrockblog/RetroPie-Setup/wiki/RetroArch-Configuration) 
-
-![neogeodiagram](https://cloud.githubusercontent.com/assets/10035308/8245309/a575cc8c-15e9-11e5-8735-0a4ab2a4e137.png)
-
-### PiFBA Controls
-PiFBA controls are located in
+PiFBA controls are located in:
 ```shell
 /opt/retropie/emulators/pifba/fba2x.cfg
 ```
@@ -205,29 +145,140 @@ MaintainAspectRatio=1
 
 [Sound]
 ```
-## Video Tutorial:
 
-<a href="https://www.youtube.com/watch?v=C7ETQUBNVRo" target="_blank"><img src="https://i.ytimg.com/vi_webp/C7ETQUBNVRo/mqdefault.webp" 
-alt="N64 Configuration Video" width="300" height="180" border="10" /></a>
 
-## List of Hardware Supported
-* Capcom CPS-1
-* Capcom CPS-2
-* Capcom CPS-3
-* Cave
-* Data East DEC-0, DEC-8 and DECO IC16 based games
-* Galaxian based hardware
-* Irem M62, M63, M72, M90, M92 and M107 hardware
-* Kaneko 16
-* Konami
-* Neo-Geo
-* NMK16
-* Pacman based hardware
-* PGM
-* Psikyo 68EC020 and SH-2 based hardware
-* Sega System 1, System 16 (and similar), System 18, X-Board and Y-Board
-* Super Kaneko Nova System
-* Toaplan 1
-* Toaplan 2
-* Taito F2, X, Z and others
-* Miscellaneous drivers for lots of other hardware
+**Controls**
+
+lr-fbalpha utilises RetroArch configs. Add custom retroarch controls to the retroarch.cfg file in
+```shell
+/opt/retropie/configs/fba/retroarch.cfg
+```
+For more information on custom RetroArch controls see: [RetroArch Configuration](https://github.com/petrockblog/RetroPie-Setup/wiki/RetroArch-Configuration) 
+
+
+---
+
+### [lr-fbalpha2012 on github](https://github.com/libretro/fbalpha2012) 
+```shell
+Roms Dir: /home/pi/RetroPie/roms/fba
+Binary Dir: /opt/retropie/libretrocores/lr-fbalpha2012
+Config Dir: /opt/retropie/configs/fba/retroarch.cfg
+```
+**ROM Version**: FB Alpha v0.2.97.30
+
+**Total games emulated: [3369](https://github.com/libretro/fbalpha2012/blob/master/svn-current/trunk/gamelist.txt)**
+* BIOS: 5
+* Samples: ?
+
+**FB Alpha v0.2.97.30 DAT File**: [FB Alpha v0.2.97.30.dat.zip](https://drive.google.com/file/d/0B2TMeZ6iEFvHcF96YmdjaWlEdXM/view?usp=sharing)
+
+**FB Alpha v0.2.97.30 Neo Geo Only DAT File**: [fba-lr-neogeo](https://drive.google.com/file/d/0B2TMeZ6iEFvHVk1Ud1RoSHpfcFU/view?usp=sharing)
+
+[**lr-fbalpha2012 Compatibility List**](https://docs.google.com/spreadsheets/d/1rWO7Lm0bTGNpak6J-CPzde0GNIDP0NHDoQdJ6iWosfA/edit?usp=sharing)  feel free to contribute to the list.
+
+**Controls**
+lr-fbalpha2012 utilises RetroArch configs. Add custom retroarch controls to the retroarch.cfg file in:
+```shell
+/opt/retropie/configs/fba/retroarch.cfg
+```
+For more information on custom RetroArch controls see: [RetroArch Configuration](https://github.com/petrockblog/RetroPie-Setup/wiki/RetroArch-Configuration) 
+
+---
+
+### [PiFBA on sourceforge](http://sourceforge.net/projects/pifba/)
+```shell
+Roms Dir: /home/pi/RetroPie/roms/fba
+Binary Dir: /opt/retropie/emulators/pifba
+Config Dir: /opt/retropie/configs/fba/fba2x.cfg
+```
+**ROM Version**: FB Alpha 0.2.96.71
+
+**Total games emulated: 684**
+* BIOS: ?
+* Samples: ?
+
+**FB Alpha DAT File (With merge data**: [FB Alpha v0.2.96.71 (ClrMame Pro).dat](https://drive.google.com/file/d/0B2TMeZ6iEFvHZFJOckQyRVZ5OG8/view?usp=sharing)
+
+**FB Alpha v0.2.96.71 'Lite' DAT File**: [fba_029671_od_release_10_working_roms_filtered.zip] (https://drive.google.com/file/d/0B2TMeZ6iEFvHMTV2TnlrZWwxRXc/view?usp=sharing) (clones, non-working, mahjong, quiz, adult, casino, rythm removed)
+
+[**PiFBA Compatibility List**](https://docs.google.com/spreadsheets/d/1OZioLrz16ptaNbjQUDP5hhVzQDTOTn9Nz46Hbj3-06k/edit?usp=sharing)  feel free to contribute to the list.
+
+**Controls**
+
+PiFBA controls are located in:
+```shell
+/opt/retropie/emulators/pifba/fba2x.cfg
+```
+As there is no menu to configure controllers with PiFBA like there is with Mame4all, you'll have to edit the aforementioned file manually. 
+
+**NOTE** PiFBA currently only supports 2 players.
+
+**Example of fba2x.cfg**
+
+```shell
+[Keyboard]
+# Get codes from /usr/include/SDL/SDL_keysym.h
+A_1=306 #LCTRL (button1)
+B_1=32 #SPACE (button3)
+X_1=308 #LALT (button2
+Y_1=304 #LSHIFT
+L_1=122 #z
+R_1=120 #x
+START_1=49 #1
+SELECT_1=53 #5
+LEFT_1=276 #left
+RIGHT_1=275 #right
+UP_1=273 #up
+DOWN_1=274 #down
+QUIT=27 #escape
+#player 2 keyboard controls, disabled by default
+A_2=97 #a (button1)
+B_2=113 #q (button3)
+X_2=115 #s (button2)
+Y_2=119 #w
+L_2=105 #i
+R_2=107 #k
+START_2=50 #2
+SELECT_2=54 #6
+LEFT_2=100 #d
+RIGHT_2=103 #g
+UP_2=114 #r
+DOWN_2=102 #f
+
+[Joystick]
+# Get codes from "jstest /dev/input/js0"
+# from package "joystick"
+A_1=3
+B_1=1
+X_1=2
+Y_1=0
+L_1=4
+R_1=5
+START_1=9
+SELECT_1=8
+#Joystick axis
+JA_LR=0
+JA_UD=1
+#player 2 button configuration
+A_2=3
+B_2=1
+X_2=2
+Y_2=0
+L_2=4
+R_2=5
+START_2=9
+SELECT_2=8
+#Joystick axis
+JA_LR=0
+JA_UD=1
+
+
+[Graphics]
+DisplaySmoothStretch=1
+# Display Effect: 0 none, 1 scanlines
+DisplayEffect=0
+DisplayBorder=0
+MaintainAspectRatio=1
+
+[Sound]
+```
