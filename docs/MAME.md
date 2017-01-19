@@ -19,7 +19,7 @@ This page is a resource for additional details on RetroPie's MAME emulators incl
 
 [**All Arcade ROMS Compatibility List**](https://docs.google.com/spreadsheets/d/1antILt7D12EWOFzyJwTfB86NceghMJKXG7CdYumuHec/edit?usp=sharing) feel free to contribute to the list.
 
-| Emulator | ROM Folder | Required ROM Vesion | Controller Configuration |
+| Emulator | ROM Folder | Required ROM Set Version | Controller Configuration |
 | :---: | :---: | :---: | :---: | :---: | :---: |
 | [mame4all-pi](https://github.com/RetroPie/mame4all-pi) | arcade **or** mame-mame4all | MAME 0.37b5 | /opt/retropie/configs/mame-mame4all/cfg/default.cfg |
 | [lr-imame4all](https://github.com/libretro/imame4all-libretro) | arcade **or** mame-mame4all | MAME 0.37b5 | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/mame-mame4all/retroarch.cfg |
