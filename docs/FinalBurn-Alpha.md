@@ -48,116 +48,6 @@ Config Dir: /opt/retropie/configs/fba/retroarch.cfg
 
 ---
 
-### [PiFBA on sourceforge](http://sourceforge.net/projects/pifba/)
-```shell
-Roms Dir: /home/pi/RetroPie/roms/fba
-Binary Dir: /opt/retropie/emulators/pifba
-Config Dir: /opt/retropie/configs/fba/fba2x.cfg
-```
-**ROM Version**: FB Alpha 0.2.96.71
-
-**Total games emulated: 684**
-* BIOS: ?
-* Samples: ?
-
-**FB Alpha DAT File (With merge data**: [FB Alpha v0.2.96.71 (ClrMame Pro).dat](https://drive.google.com/file/d/0B2TMeZ6iEFvHZFJOckQyRVZ5OG8/view?usp=sharing)
-
-**FB Alpha v0.2.96.71 'Lite' DAT File**: [fba_029671_od_release_10_working_roms_filtered.zip] (https://drive.google.com/file/d/0B2TMeZ6iEFvHMTV2TnlrZWwxRXc/view?usp=sharing) (clones, non-working, mahjong, quiz, adult, casino, rythm removed)
-
-[**PiFBA Compatibility List**](https://docs.google.com/spreadsheets/d/1OZioLrz16ptaNbjQUDP5hhVzQDTOTn9Nz46Hbj3-06k/edit?usp=sharing)  feel free to contribute to the list.
-
-**Controls**
-
-PiFBA controls are located in:
-```shell
-/opt/retropie/emulators/pifba/fba2x.cfg
-```
-As there is no menu to configure controllers with PiFBA like there is with Mame4all, you'll have to edit the aforementioned file manually. 
-
-**NOTE** PiFBA currently only supports 2 players.
-
-**Example of fba2x.cfg**
-
-```shell
-[Keyboard]
-# Get codes from /usr/include/SDL/SDL_keysym.h
-A_1=306 #LCTRL (button1)
-B_1=32 #SPACE (button3)
-X_1=308 #LALT (button2
-Y_1=304 #LSHIFT
-L_1=122 #z
-R_1=120 #x
-START_1=49 #1
-SELECT_1=53 #5
-LEFT_1=276 #left
-RIGHT_1=275 #right
-UP_1=273 #up
-DOWN_1=274 #down
-QUIT=27 #escape
-#player 2 keyboard controls, disabled by default
-A_2=97 #a (button1)
-B_2=113 #q (button3)
-X_2=115 #s (button2)
-Y_2=119 #w
-L_2=105 #i
-R_2=107 #k
-START_2=50 #2
-SELECT_2=54 #6
-LEFT_2=100 #d
-RIGHT_2=103 #g
-UP_2=114 #r
-DOWN_2=102 #f
-
-[Joystick]
-# Get codes from "jstest /dev/input/js0"
-# from package "joystick"
-A_1=3
-B_1=1
-X_1=2
-Y_1=0
-L_1=4
-R_1=5
-START_1=9
-SELECT_1=8
-#Joystick axis
-JA_LR=0
-JA_UD=1
-#player 2 button configuration
-A_2=3
-B_2=1
-X_2=2
-Y_2=0
-L_2=4
-R_2=5
-START_2=9
-SELECT_2=8
-#Joystick axis
-JA_LR=0
-JA_UD=1
-
-
-[Graphics]
-DisplaySmoothStretch=1
-# Display Effect: 0 none, 1 scanlines
-DisplayEffect=0
-DisplayBorder=0
-MaintainAspectRatio=1
-
-[Sound]
-```
-
-
-**Controls**
-
-lr-fbalpha utilises RetroArch configs. Add custom retroarch controls to the retroarch.cfg file in
-```shell
-/opt/retropie/configs/fba/retroarch.cfg
-```
-For more information on custom RetroArch controls see: [RetroArch Configuration](https://github.com/petrockblog/RetroPie-Setup/wiki/RetroArch-Configuration) 
-
-
----
-
 ### [lr-fbalpha2012 on github](https://github.com/libretro/fbalpha2012) 
 ```shell
 Roms Dir: /home/pi/RetroPie/roms/fba
@@ -197,7 +87,7 @@ Config Dir: /opt/retropie/configs/fba/fba2x.cfg
 * BIOS: ?
 * Samples: ?
 
-**FB Alpha DAT File (With merge data**: [FB Alpha v0.2.96.71 (ClrMame Pro).dat](https://drive.google.com/file/d/0B2TMeZ6iEFvHZFJOckQyRVZ5OG8/view?usp=sharing)
+**FB Alpha v0.2.96.71 DAT File**: [FB Alpha v0.2.96.71 (ClrMame Pro).dat](https://drive.google.com/file/d/0B2TMeZ6iEFvHZFJOckQyRVZ5OG8/view?usp=sharing)
 
 **FB Alpha v0.2.96.71 'Lite' DAT File**: [fba_029671_od_release_10_working_roms_filtered.zip] (https://drive.google.com/file/d/0B2TMeZ6iEFvHMTV2TnlrZWwxRXc/view?usp=sharing) (clones, non-working, mahjong, quiz, adult, casino, rythm removed)
 
