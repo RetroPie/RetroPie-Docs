@@ -16,12 +16,6 @@ There are three main methods of transferring roms: via USB stick, via SFTP, and 
  * wait for it to finish blinking
  * refresh emulationstation by pressing F4, or choosing quit from the start menu
 
-see this video for reference:
-
-<a href="https://www.youtube.com/watch?v=OYMoxvbkYD4
-" target="_blank"><img src="https://i.ytimg.com/vi_webp/OYMoxvbkYD4/mqdefault.webp" 
-alt="Configuration Video" width="300" height="190" border="10" /></a>
-
 ### SFTP (needs to be able to establish a connection to your Raspberry Pi, either via internet or internal network)
 
 * Wired (needs ethernet cable)
