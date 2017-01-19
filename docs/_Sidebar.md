@@ -8,7 +8,7 @@
 * [Transferring games (ROMs)](Transferring-Roms)
 * [Scraping Games](scraper)
 * [Runcommand](runcommand)
-* [Getting the right MAME ROMs](Managing-ROMs)
+* [Getting the right Arcade ROMs](Managing-ROMs)
 * [Updating RetroPie](Updating-RetroPie)
 * [Using SSH](ssh)
 
