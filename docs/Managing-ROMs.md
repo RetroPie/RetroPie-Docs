@@ -27,9 +27,13 @@ Start with a full Non-Merged ROM collection (not an individual ROM) with the exa
 | [lr-fbalpha](https://github.com/RetroPie/RetroPie-Setup/wiki/FinalBurn-Alpha) | FB Alpha v0.2.97.39 | [4375](https://raw.githubusercontent.com/libretro/fbalpha/master/gamelist.txt) | [.DAT](https://github.com/libretro/fbalpha/blob/master/dats/FB%20Alpha%20v0.2.97.39%20(ClrMame%20Pro%20XML).dat.zip?raw=true)| [List](https://docs.google.com/spreadsheets/d/1GaqIIoiWbzKHwZ52S2xCSDQXILo81Ls1mHK6czKGAtM/edit?usp=sharing) |
 
 
-### Crash Course in Arcade ROMs
+# Crash Course in Arcade ROMs
 
-Arcade ROMs are usually distributed as ZIP files which should not be unzipped or renamed. The version of any given arcade ROM must match the specific version of the arcade emulator because ROMs change from version to version of the emulator. For example, MAME2003 is based on MAME 0.78, so you must use MAME 0.78 ROMs with MAME2003. ROMs from an earlier or later MAME version, such as 0.50 or 0.173, will probably not work with MAME2003.
+**Arcade Emulator Terminology**
+* **ROM, ROM set, and romset**: Arcade games are packaged as zip files, most of which are composed of more than one individual 'ROM' files. That is why some resources refer to an individual arcade game as a ROM (like people use to describe a zipped game cartridge ROM) while other resources refer to an individual game as a ROM set or romset.
+* **ROM version or ROM set version**: Each version of an arcade emulator must be used with ROMs that have the same exact version number. For example, MAME 0.37b5 ROMs are required by the MAME4ALL emulator, but will not work correctly with the lr-mame2010 emulator, which requires MAME 0.139 ROMs.
+* **Sample**: Some games require an additional zip file with recorded sounds or music in order for audio to work correctly. The path where these samples should be copied varies from emulator to emulator.
+* **CHD**: Some MAME games require data from an internal hard drive, CD-ROM, laserdisk, or other media in order to be emulated -- those forms of media are packaged as CHD files. CHDs files should be copied to subfolders within the folder where the MAME ROM zips have been installed.
 
 In addition to having a version number, arcade ROMs can be formatted three ways:
 
@@ -42,7 +46,7 @@ In addition to having a version number, arcade ROMs can be formatted three ways:
 * [How to use MAME with RetroPie Help Guide by Floob](https://retropie.org.uk/forum/topic/2859/how-to-use-mame-with-retropie-help-guide)
 * [Demystifying MAME ROMs Tutorial by ChoccyHobNob](http://choccyhobnob.com/tutorials/demystifying-mame-roms/).
 
-# Correct ROM versions are essential
+## Correct ROM versions are essential
 So how do you tell you have the right ROM if you aren't sure that your set matches the version required by the emulator you chose? What if you don't have the right version?
 
 It is possible to 'rebuild' from one version of an arcade ROM collection to another. If you also have access to a newer ROM collection you can 'roll forward' your ROM version, of if you have access to an older ROM collection or a 'rollback' collection you can rebuild to a lower ROM version. 
