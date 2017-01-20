@@ -21,12 +21,17 @@ Place your GameCube ROMs in
 /home/pi/RetroPie/roms/gc
 ```
 ## Controls
-Dolphin controls must currently be mapped via the GUI. You will need to drop down into terminal mode press F4 on your keyboard if you are currently in emulation station, hit the unity button and search for terminal. Click to launch. Change to the Dolphin directory
+Dolphin controls must currently be mapped via the GUI. You will need to drop down into terminal mode press F4 on your keyboard if you are currently in emulation station, hit the unity button and search for terminal. Click to launch. 
 
-cd /opt/retropie/emulators/bin/dolphin-emu 
-Launch dolphin emu
-./dolphin-emu 
-From there there graphical client will launch and you can bind your controller in the Dolphin Interface as well as change settings.
+Change to the Dolphin directory:
+```
+cd /opt/retropie/emulators/bin/dolphin-emu
+```
+Launch Dolphin:
+```
+./dolphin-emu
+``` 
+From there the graphical client will launch and you can bind your controller in the Dolphin Interface as well as change settings.
 
 ##Exiting Dolphin
 Currently the only way I have found to exit dolphin is with the Keyboard combination Alt+F4
