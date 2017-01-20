@@ -11,12 +11,6 @@ There are a variety of arcade emulator versions available in RetroPie. There are
 
 This page is a resource for additional details on RetroPie's MAME emulators including configuration paths, controls, and the ROM sets which each emulator requires.
 
-**MAME Terminology**
-* **ROM, ROM set, and romset** - MAME games are packaged as zip files, most of which are composed of more than one individual 'ROM' files. That is why some resources refer to an individual MAME game as a ROM (like people use to describe a zipped game cartridge ROM) while other resources refer to an individual MAME game as a ROM set or romset.
-* **ROM version or ROM set version** - Each version of the MAME emulator must be used with ROMs that have the same exact version number. For example, MAME 0.37b5 ROMs are required by the MAME4ALL emulator, but will not work correctly with the lr-mame2010 emulator, which requires MAME 0.139 ROMs.
-* **Sample** - Some games require an additional zip file with recorded sounds or music in order for audio to work correctly. The path where these samples should be copied varies from emulator to emulator.
-* **CHD** - Some games require data from an internal hard drive, CD-ROM, laserdisk, or other media in order to be emulated -- those forms of media are packaged as CHD files. CHDs files should be copied to subfolders within the folder where the MAME ROM zips have been installed.
-
 [**All Arcade ROMS Compatibility List**](https://docs.google.com/spreadsheets/d/1antILt7D12EWOFzyJwTfB86NceghMJKXG7CdYumuHec/edit?usp=sharing) feel free to contribute to the list.
 
 | Emulator | ROM Folder | Required ROM Set Version | Controller Configuration |
