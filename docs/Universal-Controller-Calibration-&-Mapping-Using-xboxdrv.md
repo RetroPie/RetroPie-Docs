@@ -185,7 +185,8 @@ Once added, the games will perform just as fluidly as they did using their origi
 # **(3) Key-Mapping For Individual Emulators**
 
 ## **(3A) Key-Mapping and Launch Fundamentals**
-**Note:** This section is soon to be replaced with the information found [here](https://retropie.org.uk/forum/topic/7096/xboxdrv-guidance-needed/17)
+
+**Note:** This section is soon to be replaced with the simplified information found [here](https://retropie.org.uk/forum/topic/7096/xboxdrv-guidance-needed/17)
 
 The foundation has been laid. Controller's have been fine-tuned. Now, we'll take a look at how to map keyboard keys and mouse movements to a controller's analog sticks and buttons for use in emulators that lack native controller support and how to launch and maintain multiple mappings accordingly. So far we have dealt with xboxdrv on a system level. This first step in facilitating program-specific key-mappings requires that xboxdrv be able to run at a user level. To do this, drop down to the command line by pressing 'F4' on your keyboard, then type:
 ```
