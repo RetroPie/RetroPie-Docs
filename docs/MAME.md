@@ -3,7 +3,7 @@
 ***
 _MAME stands for Multiple Arcade Machine Emulator. MAME can emulate thousands of games that otherwise would have been lost in the ash-heaps of history._
 
-See Also: [[FinalBurn-Alpha]], [[Neo Geo]]
+See Also: [[FB Alpha|FinalBurn-Alpha]], [[Neo Geo]]
 
 ***
 
@@ -40,7 +40,7 @@ Config Dir: /opt/retropie/configs/mame-mame4all
 ```
 **MAME Version**: 0.37b5 (July 2000)
 
-**Active Sets: [2241](http://code.google.com/p/imame4all/wiki/GameList)**
+**Active Sets: 2241**
 * BIOS: 1
 * CHDs: 0
 * Samples: 35
@@ -70,7 +70,7 @@ Config Dir: /opt/retropie/configs/mame-mame4all/retroarch.cfg
 ```
 **MAME Version**: 0.37b5 (July 2000)
 
-**Active Sets: [2241](http://code.google.com/p/imame4all/wiki/GameList)**
+**Active Sets: 2241**
 * BIOS: 1
 * CHDs: 0
 * Samples: 35
