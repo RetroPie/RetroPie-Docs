@@ -6,28 +6,50 @@ The Nintendo DS is a handheld video game console that was released by Nintendo i
 
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
-| [lr-desmume](https://github.com/libretro/desmume) | nds  | .nds .bin | none | /opt/retropie/configs/nds/retroarch.cfg |
+| [DraStic](http://drastic-ds.com) | nds | .nds .zip | drastic_bios_arm7.bin, drastic_bios_arm9.bin | /home/pi/config/drastic.cfg |
+| [lr-desmume](https://github.com/libretro/desmume) | nds | .nds .zip | none | /opt/retropie/configs/nds/retroarch.cfg |
 
-Note that this is very experimental and lags quite a bit even with an overclocked Rpi 2. But it can be installed through the experimental menu in the [RetroPie Setup Script](Updating RetroPie).
+Note that lr-desmume is very experimental and lags quite a bit even with an overclocked RPI 3. Now DraStic on the other hand, runs at around 100% game speed. Both can be installed through the experimental menu in the [RetroPie Setup Script](Updating RetroPie).
 
-## Emulator: [lr-desmume](https://github.com/libretro/desmume) :small_red_triangle: 
+## Emulator: [DraStic](http://drastic-ds.com) :small_red_triangle: , [lr-desmume](https://github.com/libretro/desmume) :small_red_triangle:
 
 ## ROMS
-Accepted File Extensions: **.nds .bin**
+Accepted File Extensions: **.nds .zip**
 
 Place your DS ROMs in 
 ```
 /home/pi/RetroPie/roms/nds
 ```
 
+## BIOS
+
+DraStic uses two bios files, **drastic_bios_arm7.bin** and **drastic_bios_arm9.bin**.
+
+Move the directory containing the bios files
+```
+/opt/retropie/emulators/drastic/system
+```
+
+to
+```
+/home/pi
+```
+
 ## Controls
 
+### lr-desmume Controls
 lr-desmume utilises Retroarch configurations
 
 Add custom retroarch controls to the retroarch.cfg file in
 ```shell
 /opt/retropie/configs/nds/retroarch.cfg
 ```
-For more information on custom RetroArch controls see: [RetroArch Configuration](https://github.com/petrockblog/RetroPie-Setup/wiki/RetroArch-Configuration)
+For more information on custom RetroArch controls see: [RetroArch Configuration](https://github.com/RetroPie/RetroPie-Setup/wiki/RetroArch-Configuration)
 
 ![nintendo_ds_diagram](https://cloud.githubusercontent.com/assets/10035308/16599645/7f549f56-42c0-11e6-88a8-3acda5287da3.png)
+
+### DraStic Controls
+DraStic controls and configurations are located in
+```
+/home/pi/config/drastic.cfg
+```
