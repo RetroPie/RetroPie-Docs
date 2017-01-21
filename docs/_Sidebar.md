@@ -1,4 +1,4 @@
-# [Wiki Home Page](https://github.com/petrockblog/RetroPie-Setup/wiki)
+# [Wiki Home Page](https://github.com/RetroPie/RetroPie-Setup/wiki)
 
 ## [Getting Started](First-Installation)
 
