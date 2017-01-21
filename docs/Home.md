@@ -30,3 +30,4 @@ Select your system for installation instructions:
 
 |[![blue_rpi_shadow](https://cloud.githubusercontent.com/assets/10035308/22178093/cf7ecf00-dfe2-11e6-8fb3-dab3b1e17f7d.png)](First-Installation)|[![blue_pc_icon_shadow](https://cloud.githubusercontent.com/assets/10035308/22178091/cf7ebdf8-dfe2-11e6-9d19-f7bd06cc7751.png)](RetroPie-Ubuntu-16.04-LTS-x86-Flavor)|[![blue_odroid_icon_shadow](https://cloud.githubusercontent.com/assets/10035308/22178092/cf7ec15e-dfe2-11e6-910a-44531acffffb.png)](Odroid)|
 |:---:|:---:|:---:|
+|**Raspberry Pi** | **PC** | **Odroid** |
