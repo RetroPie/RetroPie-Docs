@@ -37,5 +37,5 @@ For more information on custom RetroArch controls see: [RetroArch Configuration]
 ### DraStic Controls
 DraStic controls and configurations are located in
 ```
-/home/pi/config/drastic.cfg
+/opt/retropie/configs/nds/drastic/config/drastic.cfg
 ```
