@@ -21,20 +21,6 @@ Place your DS ROMs in
 /home/pi/RetroPie/roms/nds
 ```
 
-## BIOS
-
-DraStic uses two bios files, **drastic_bios_arm7.bin** and **drastic_bios_arm9.bin**.
-
-Move the "system" directory containing the bios files from:
-```
-/opt/retropie/emulators/drastic
-```
-
-to:
-```
-/home/pi
-```
-
 ## Controls
 
 ### lr-desmume Controls
