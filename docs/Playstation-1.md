@@ -182,7 +182,7 @@ The standalone pcsx-rearmed controller type can be changed in the in-game menu.
 
 ### Disc Swapping for Multi-disc Games in RetroArch 
 
-To changes disks in-game, go to Core Disk Options > Disk Image Append.
+To change disks in-game, go to Core Disk Options > Disk Image Append.
 
 Some games like Metal Gear Solid require the disk tray to be opened before changing disks. To do this, change 'Disk Index' to 'No Disk' first. 
 
