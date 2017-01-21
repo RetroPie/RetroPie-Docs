@@ -25,12 +25,12 @@ Place your DS ROMs in
 
 DraStic uses two bios files, **drastic_bios_arm7.bin** and **drastic_bios_arm9.bin**.
 
-Move the directory containing the bios files
+Move the directory containing the bios files from:
 ```
 /opt/retropie/emulators/drastic/system
 ```
 
-to
+to:
 ```
 /home/pi
 ```
