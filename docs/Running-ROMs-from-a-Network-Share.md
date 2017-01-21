@@ -1,18 +1,23 @@
-Storing your ROMs on a seperate computer all-together solves a number of problems and has equally as many benefits.
+Storing your ROMs on a separate computer (NAS) solves a number of problems and has equally as many benefits.
 
-* It's faster
 * It's more convenient
-* Negates the need to transfer ROMs
-* It has practically unlimited storage
-* You'll (almost) never corrupt your SD card
+* It Negates the need to transfer ROMs to your Raspberry PI MicroSD card
+* Your storage is limited only by the size of your server
+* By reducing the number of times you write to your MicroSD card you minimize the chance at corrupting it
 
-## Mirror the 'RetroPie' or 'roms' folder to your server
+> **Good to know**: If you are accessing your RetroPie installation over SSH the default Raspbian username is `pi` and the default password is `raspberry`.
 
-This can be done a number of different ways. If you installed the RetroPie image to your SD card, the easiest thing is to go to your main computer, navigate to the hostname or ip address of your raspberry pi and copy the contents to wherever you want on your share (preferably in a simple path). If you're unable to move/copy all of the contents or you haven't setup smb shares for RetroPie, I found FTP to be favorable. Grab a copy of WinSCP or whatever you prefer to use.
+## Copy the existing 'roms' folder structure to your server
+
+For EmulationStation to be able to see your rom files the paths given to it within `/etc/es_systems.cfg` need to be recreated on your networked server. Connect to your RetroPie and browse to its roms folder for reference on how each system folder is named. Either copy these folders to your networked server or manually create the folders on your networked server using the same directory names.
+
+If you prefer to not use the EmulationStation system directory names and keep the current folder structure you have on your networked server you'll need to edit `es_systems.cfg`. Use this command to copy the configuration file to the home directory wherein it will be editable through SMB (//RETROPIE/configs/all/emulationstation) or FTP.
+
+    cp /etc/emulationstation/es_systems.cfg /home/pi/.emulationstation/es_systems.cfg
 
 ## Mount your Share
 
-If you haven't already, now is a good time to tell your Pi to wait for network at boot
+If you haven't already, now is a good time to tell Raspbian to wait for your network at boot.
 
     sudo raspi-config
 
@@ -22,16 +27,15 @@ In there, select "Boot Options" and tell it Yes.
 
     sudo nano /opt/retropie/configs/all/autostart.sh
 
-Add the following line to the top of that file, being sure to adjust it for your personal settings, paths and options.
+Add the following line to the top of that file, being sure to adjust it for your personal settings, paths and options. This will make the local roms folder use your remote server roms folder instead.
 
-    sudo mount -t cifs -o username=something,password=something //hostname/retropie /home/pi/RetroPie
+    sudo mount -t cifs -o username=something,password=something //REMOTEHOST/path/to/roms /home/pi/RetroPie/roms
 
-Restart and make sure it mounted the folder
+> **Good to know**: If you'd like to host the entire RetroPie folder remotely you can do so by removing the `/roms` directories from the mount command above. Make sure to have a copy of the RetroPie installation on your remote server or EmulationStation won't be able to start RetroPie!
 
-    sudo reboot
-    ls RetroPie
+Restart your Raspberry Pi with `sudo reboot` or by simply unplugging the power cord.
 
-Alternatively, if you have a shard folder that allows guest access, you can use the following line in your `autostart.sh`:
+Alternatively, if you have a shared folder that allows guest access, you can use the following line in your `autostart.sh`:
 
     sudo mount -t cifs -o guest,uid=pi //hostname/retropie /home/pi/RetroPie
 
