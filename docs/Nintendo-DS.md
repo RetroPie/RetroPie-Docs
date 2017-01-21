@@ -9,7 +9,7 @@ The Nintendo DS is a handheld video game console that was released by Nintendo i
 | [DraStic](http://drastic-ds.com) | nds | .nds .zip | drastic_bios_arm7.bin, drastic_bios_arm9.bin | /opt/retropie/configs/nds/drastic/config/drastic.cfg |
 | [lr-desmume](https://github.com/libretro/desmume) | nds | .nds .zip | none | /opt/retropie/configs/nds/retroarch.cfg |
 
-Note that lr-desmume is very experimental and lags quite a bit even with an overclocked RPI 3. Now DraStic on the other hand, runs at around 100% game speed. Both can be installed through the experimental menu in the [RetroPie Setup Script](Updating RetroPie).
+Note that lr-desmume is very experimental and lags quite a bit even with an overclocked RPI 2/3. Now DraStic on the other hand, runs at about full speed on a RPI 2/3. Both can be installed through the experimental menu in the [RetroPie Setup Script](Updating RetroPie).
 
 ## Emulator: [DraStic](http://drastic-ds.com) :small_red_triangle: , [lr-desmume](https://github.com/libretro/desmume) :small_red_triangle:
 
