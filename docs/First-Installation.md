@@ -46,7 +46,7 @@ There are currently two versions of RetroPie. There is one version for Raspberry
 
 Download the SD image for your version of Raspberry Pi from the following page:
 
-**https://retropie.org.uk/download/**
+**[https://retropie.org.uk/download/](https://retropie.org.uk/download/)**
 
 If you are unsure which version of Raspberry Pi you have just count the raspberries on boot:
 
@@ -78,9 +78,9 @@ See [the official Raspberry Pi "WRITING AN IMAGE TO THE SD CARD" instructions](h
 
 If you're updating from a previous version of retropie see [**HERE**](Updating-RetroPie)
 
-# Configurations
+## Configurations
 
-## Controller Configurations
+### Controller Configurations
 
 On first boot your filesystem will be expanded automatically, you will then be welcomed with the following screen- this menu will configure your controls for both Emulationstation and RetroArch Emulators:
 
