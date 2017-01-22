@@ -542,8 +542,6 @@ Like the Switches, these come in four colors. When you can see their outlines, y
 
 Some of the blocks in the game are able to be hidden in maps. To reveal a hidden block, simply jump and hit it from below. Hidden blocks can rehide themselves after a set amount of time, depending on how they're set in the options menu. (See the Item Settings menu section further down.)
 
-</div>
-
 ## Items
 
 Items in the game can be acquired in three ways: from item boxes ("?" blocks), from Bonus Wheel spins, or in the World Map Mode. When collecting an item from an item box, it may be used instantly or it may be stored for later use, depending on the item. Items that are acquired by spinning the Bonus Wheel will always become a stored item at the beginning of each game you play, until they are overridden by another wheel spin or are cleared via the options menu. Items acquired in the World Map modes are accessed and used on the map from your inventory.
