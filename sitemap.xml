@@ -20,6 +20,58 @@
     
         
     <url>
+     <loc>/Managing-ROMs/</loc>
+     <lastmod>2017-01-22</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/Transferring-Roms/</loc>
+     <lastmod>2017-01-22</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/Scraper/</loc>
+     <lastmod>2017-01-22</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/Themes/</loc>
+     <lastmod>2017-01-22</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/Runcommand/</loc>
+     <lastmod>2017-01-22</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/Updating-RetroPie/</loc>
+     <lastmod>2017-01-22</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/SSH/</loc>
+     <lastmod>2017-01-22</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/Wifi/</loc>
+     <lastmod>2017-01-22</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
      <loc>/3do/</loc>
      <lastmod>2017-01-22</lastmod>
      <changefreq>daily</changefreq>
@@ -622,18 +674,6 @@
     </url>
         
     <url>
-     <loc>/Setting-up-Wii-U-Pro-controller/</loc>
-     <lastmod>2017-01-22</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/GPIO-Modules/</loc>
-     <lastmod>2017-01-22</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
      <loc>/Logitech-controllers/</loc>
      <lastmod>2017-01-22</lastmod>
      <changefreq>daily</changefreq>
@@ -670,7 +710,19 @@
     </url>
         
     <url>
+     <loc>/Setting-up-Wii-U-Pro-controller/</loc>
+     <lastmod>2017-01-22</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
      <loc>/Wiimotes-with-classic-controllers/</loc>
+     <lastmod>2017-01-22</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/GPIO-Modules/</loc>
      <lastmod>2017-01-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -681,12 +733,6 @@
         
     <url>
      <loc>/BIOS/</loc>
-     <lastmod>2017-01-22</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/Child-friendly-EmulationStation/</loc>
      <lastmod>2017-01-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -704,30 +750,6 @@
     </url>
         
     <url>
-     <loc>/Creating-Your-Own-EmulationStation-Theme/</loc>
-     <lastmod>2017-01-22</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/EmulationStation/</loc>
-     <lastmod>2017-01-22</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/Managing-ROMs/</loc>
-     <lastmod>2017-01-22</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/Manual-Installation/</loc>
-     <lastmod>2017-01-22</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
      <loc>/Mapping-a-Controller-for-Intellivision/</loc>
      <lastmod>2017-01-22</lastmod>
      <changefreq>daily</changefreq>
@@ -735,18 +757,6 @@
         
     <url>
      <loc>/Memory-Split/</loc>
-     <lastmod>2017-01-22</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/Netplay/</loc>
-     <lastmod>2017-01-22</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/Odroid/</loc>
      <lastmod>2017-01-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -764,48 +774,6 @@
     </url>
         
     <url>
-     <loc>/RetroAchievements/</loc>
-     <lastmod>2017-01-22</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/RetroArch-Configuration/</loc>
-     <lastmod>2017-01-22</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/RetroArch/</loc>
-     <lastmod>2017-01-22</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/RetroPie-Arch-Linux-Flavor/</loc>
-     <lastmod>2017-01-22</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/RetroPie-install-for-OSMC-with-external-memory-USB-Drive/</loc>
-     <lastmod>2017-01-22</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/RetroPie-Ubuntu-16.04-LTS-x86-Flavor/</loc>
-     <lastmod>2017-01-22</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/Runcommand/</loc>
-     <lastmod>2017-01-22</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
      <loc>/Running-ROMs-from-a-Network-Share/</loc>
      <lastmod>2017-01-22</lastmod>
      <changefreq>daily</changefreq>
@@ -818,43 +786,7 @@
     </url>
         
     <url>
-     <loc>/Scraper/</loc>
-     <lastmod>2017-01-22</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/Shaders-and-Smoothing/</loc>
-     <lastmod>2017-01-22</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/Smaller-RetroArch-Screen/</loc>
-     <lastmod>2017-01-22</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/Sound-Issues/</loc>
-     <lastmod>2017-01-22</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/Speed-Issues/</loc>
-     <lastmod>2017-01-22</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
      <loc>/Splashscreen/</loc>
-     <lastmod>2017-01-22</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/SSH/</loc>
      <lastmod>2017-01-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
@@ -872,43 +804,131 @@
     </url>
         
     <url>
-     <loc>/Themes/</loc>
-     <lastmod>2017-01-22</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/Transferring-Roms/</loc>
-     <lastmod>2017-01-22</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
      <loc>/Universal-Controller-Calibration-&-Mapping-Using-xboxdrv/</loc>
      <lastmod>2017-01-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
+    
+
+    
+        
     <url>
-     <loc>/Updating-RetroPie/</loc>
+     <loc>/RetroArch/</loc>
+     <lastmod>2017-01-22</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/RetroArch-Configuration/</loc>
+     <lastmod>2017-01-22</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/RetroAchievements/</loc>
+     <lastmod>2017-01-22</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/Netplay/</loc>
+     <lastmod>2017-01-22</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/Shaders-and-Smoothing/</loc>
+     <lastmod>2017-01-22</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/Smaller-RetroArch-Screen/</loc>
+     <lastmod>2017-01-22</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/EmulationStation/</loc>
+     <lastmod>2017-01-22</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/Child-friendly-EmulationStation/</loc>
+     <lastmod>2017-01-22</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/Creating-Your-Own-EmulationStation-Theme/</loc>
+     <lastmod>2017-01-22</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/Manual-Installation/</loc>
+     <lastmod>2017-01-22</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/RetroPie-Ubuntu-16.04-LTS-x86-Flavor/</loc>
+     <lastmod>2017-01-22</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/Odroid/</loc>
+     <lastmod>2017-01-22</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/RetroPie-Arch-Linux-Flavor/</loc>
+     <lastmod>2017-01-22</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/RetroPie-install-for-OSMC-with-external-memory-USB-Drive/</loc>
+     <lastmod>2017-01-22</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/FAQ/</loc>
+     <lastmod>2017-01-22</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/Sound-Issues/</loc>
+     <lastmod>2017-01-22</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/Speed-Issues/</loc>
      <lastmod>2017-01-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/Video-Issues/</loc>
-     <lastmod>2017-01-22</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/Wifi/</loc>
-     <lastmod>2017-01-22</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/FAQ/</loc>
      <lastmod>2017-01-22</lastmod>
      <changefreq>daily</changefreq>
     </url>
