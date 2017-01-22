@@ -1,0 +1,48 @@
+.md-typeset table:not([class]) th:not([align]){text-align:left}.md-typeset table:not([class]) th{min-width:10rem;padding:1.2rem 1.6rem;background-color:rgba(0, 0, 0, 1);color:#fff;vertical-align:top}
+
+/*
+.md-header-nav__button.md-logo{
+    display: inline-block;
+    margin: 0rem;
+    padding: 0rem; 
+    font-size: 2.4rem;
+    cursor: pointer;
+}
+*/
+
+.md-header-nav__button.md-logo img {
+    display: block;
+    height: 50px;
+    width: 50px;
+}
+
+.md-header-nav__button.md-logo {
+    margin: 0rem;
+    padding: 0rem;
+}
+
+.md-nav__button img {
+    width: 50px;
+    height: 50px;
+}
+
+
+/*
+.md-nav__button img {
+    width: 100%;
+    height: 50px;
+}
+
+a.md-logo > img:nth-child(1){
+    width: 48px;
+    height: 48px;
+}
+
+.md-content__edit, .md-footer-nav__button, .md-header-nav__button, .md-nav__button, .md-nav__title::before {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    font-size: 2.4rem;
+    cursor: pointer;
+}
+*/
