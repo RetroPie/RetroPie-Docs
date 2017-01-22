@@ -3,7 +3,9 @@
 This page is a list of all of the changelogs for each version of RetroPie. For a complete list of all commits to the source code see [here:](https://github.com/petrockblog/RetroPie-Setup/commits/master)  
 
 ### Version 4.1: (November 5, 2016)
+
 Changes since 4.0.2:
+
 * Updated RetroArch and many libretro cores to the latest versions.
 * Some libretro packages have been renamed to match the upstream core names:
  * lr-fba to lr-fbalpha2012
@@ -38,7 +40,9 @@ Changes since 4.0.2:
 * Various other improvements / bugfixes
 
 ### Version 4.0: (August 19, 2016)
+
 Changes since 3.8.1:
+
 * Setup script improvements:
   * Added the ability to install/update and remove packages.
   * Added help docs to the setup script.
@@ -68,6 +72,7 @@ Changes since 3.8.1:
  * Various other bug fixes and improvements.
 
 ### Version 3.8.1: (June 4, 2016)
+
  - Fix escaping in iniSet causing initial backslashes to be incorrect in ini files (Affected some +Start Scripts with spaces such as DOSBox).
  - Don’t overwrite existing configs when updating advmame.
  - SSelph’s scraper – Add option to set -append and -use_nointro_name=false flags
@@ -463,3 +468,7 @@ the a related emulator is needed after to update the emulationstation configurat
 * Added AdvMAME emulator
 * (Re-)added Genesis-GX RetroArch core
 * Added Final Burn Alpha emulator
+
+### Version 1.0 (July 22, 2012)
+
+**RetroPie is Born!**
