@@ -38,11 +38,11 @@ This section of the manual explains how to navigate the game's menus, and contai
 
 From this menu, you can access everything else in the game.
 
-*   **Start** will take you to the Match Type Menu (see below). 
-*   **Players** allows you to change players between Player (human), Bot (computer), and None. You can't have less than two players active at any one time.
-*   **Options** takes you to the Options menu. For more information, check its section towards the end of this manual.  
-*   **Controls** lets you configure the players' control schemes to your liking. For more info, check the Controls section of this manual.
-*   **Exit** causes the game to exit.
+- **Start** will take you to the Match Type Menu (see below). 
+- **Players** allows you to change players between Player (human), Bot (computer), and None. You can't have less than two players active at any one time.
+- **Options** takes you to the Options menu. For more information, check its section towards the end of this manual.  
+- **Controls** lets you configure the players' control schemes to your liking. For more info, check the Controls section of this manual.
+- **Exit** causes the game to exit.
 
 ### Match Type Menu
 
@@ -50,11 +50,11 @@ From this menu, you can access everything else in the game.
 
 From this screen, you can choose which type of match you'd like to play.
 
-*   You can change the type of match by selecting the Match option and pressing Enter.   
-*   (If you're using a joystick, press Jump to lock in your selection.)  
-*   The match choices available are Single Game, Tournament, Tour, and the new World Map mode.  
-*   Once the Match option has been selected, you can choose the type of match with Left and Right. 
-*   After you've decided on a match type, select Start and press Enter (or Jump using a joystick) to go to the Team and Character Selection Menu.
+- You can change the type of match by selecting the Match option and pressing Enter.   
+- (If you're using a joystick, press Jump to lock in your selection.)  
+- The match choices available are Single Game, Tournament, Tour, and the new World Map mode.  
+- Once the Match option has been selected, you can choose the type of match with Left and Right. 
+- After you've decided on a match type, select Start and press Enter (or Jump using a joystick) to go to the Team and Character Selection Menu.
 
 ### Team and Character Selection
 
@@ -62,12 +62,12 @@ From this screen, you can choose which type of match you'd like to play.
 
 From this screen, you can configure who is using which character and is on which team.
 
-*   You can select what character you'd like to be, out of all the skins you have on your machine, with Up and Down.   
-*   You can select what team you want to be on with Left and Right.   
-*   If you want to have the game select a skin for you at random, press Up and Down together (or if using a joystick, press the Random button).*   
-*   If you want to have a different random skin at the beginning of each match, without being able to see it beforehand, press Left and Right together (or with a joystick, press the Fast-Scroll and Random buttons together), which will change your skin into a flashing letter R.   
-*   Press your Turbo key to lock in your selection, unless you're Player 1, who uses Enter. (If you're using a joystick, press Jump to lock in your selection, no matter which player you are.) 
-*   After all players have locked in, you can press Enter on this screen to start your selected match type.
+- You can select what character you'd like to be, out of all the skins you have on your machine, with Up and Down.   
+- You can select what team you want to be on with Left and Right.   
+- If you want to have the game select a skin for you at random, press Up and Down together (or if using a joystick, press the Random button).
+- If you want to have a different random skin at the beginning of each match, without being able to see it beforehand, press Left and Right together (or with a joystick, press the Fast-Scroll and Random buttons together), which will change your skin into a flashing letter R.   
+- Press your Turbo key to lock in your selection, unless you're Player 1, who uses Enter. (If you're using a joystick, press Jump to lock in your selection, no matter which player you are.) 
+- After all players have locked in, you can press Enter on this screen to start your selected match type.
 
 ### Single Game Menu
 
@@ -75,12 +75,12 @@ From this screen, you can configure who is using which character and is on which
 
 From this menu, you can select your game mode, select the map you wish to use, change various mode settings, and tag your maps for easy selection. (When playing a Tour or World Map, all options on this screen, besides Start, are disabled.)
 
-*   **Start** starts the game.   
-*   **Mode** allows you to change game modes. For info on these, please refer to the Game Modes section of this manual.   
-*   **Lives/Kills/Time/Etc.** allows you to change the current game mode's basic parameter (i.e. the game length).  
-*   **Map** allows you to change the map you want to use. You can press Left or Right to pick another map, or hold Left Shift and press Left or Right to go forward or backward 10 maps at a time. You can also repeatedly press a letter or a number to cycle through maps whose names start with it, or quickly type in part of a map's name to search for it.  
-*   **Filters** allows you to select maps that only meet certain criteria. You can select one or more categories (such as whether or not the map contains moving platforms) and the game will only give you maps that meet all the criteria established. The bottom category, Simple, can be used as a custom filter by selecting the green question mark icon, which will give you a thumbnail view (see below) of all the maps. From there, maps can be toggled on (signified by a little coin) and off.
-*   **Thumbs** allows you to view many maps at once with a "thumbnail"-style view. To view other pages, scroll up or down off the screen, or hold Left Shift and press Up or Down.
+- **Start** starts the game.   
+- **Mode** allows you to change game modes. For info on these, please refer to the Game Modes section of this manual.   
+- **Lives/Kills/Time/Etc.** allows you to change the current game mode's basic parameter (i.e. the game length).  
+- **Map** allows you to change the map you want to use. You can press Left or Right to pick another map, or hold Left Shift and press Left or Right to go forward or backward 10 maps at a time. You can also repeatedly press a letter or a number to cycle through maps whose names start with it, or quickly type in part of a map's name to search for it.  
+- **Filters** allows you to select maps that only meet certain criteria. You can select one or more categories (such as whether or not the map contains moving platforms) and the game will only give you maps that meet all the criteria established. The bottom category, Simple, can be used as a custom filter by selecting the green question mark icon, which will give you a thumbnail view (see below) of all the maps. From there, maps can be toggled on (signified by a little coin) and off.
+- **Thumbs** allows you to view many maps at once with a "thumbnail"-style view. To view other pages, scroll up or down off the screen, or hold Left Shift and press Up or Down.
 
 ### Playing the Game
 
@@ -125,13 +125,13 @@ The following are the default controls. Controls can be configured within the Co
 | Pause | Enter | n/a | n/a | n/a |
 | Exit | Esc | n/a | n/a | n/a |
 
-*   Press **Left** or **Right** to move left or right.   
-*   Press **Jump** to jump. Press **Down** to jump down through certain platforms.   
-*   Press **Turbo** to fire your weapon or to explode if you are a Bob-Omb. Hold **Turbo** and press **Left** or **Right** to run. While running, you can pick up shells and blue blocks that are not moving. To throw these items forward, release the Turbo key. To drop shells without throwing them, hold **Down** and release the Turbo key.   
-*   Press **Use Item** to use whatever item is stored in your Item box. For more information on items, see their section below.  
-*   Press **Pause** to pause the game. Press it a second time to resume.   
-*   Press **Exit** to pause the game and bring up a dialog box. From there, you can either resume play or quit the game and return to the Single Game Menu or Scoreboard if in a Tournament, Tour, or World Map.   
-*   Once the game has ended and the victory fanfare has played, pressing either **Pause** or **Exit** will exit the game and return you to the Game Selection menu (or to the Scoreboard if in a Tournament, Tour, or World Map).
+- Press **Left** or **Right** to move left or right.   
+- Press **Jump** to jump. Press **Down** to jump down through certain platforms.   
+- Press **Turbo** to fire your weapon or to explode if you are a Bob-Omb. Hold **Turbo** and press **Left** or **Right** to run. While running, you can pick up shells and blue blocks that are not moving. To throw these items forward, release the Turbo key. To drop shells without throwing them, hold **Down** and release the Turbo key.   
+- Press **Use Item** to use whatever item is stored in your Item box. For more information on items, see their section below.  
+- Press **Pause** to pause the game. Press it a second time to resume.   
+- Press **Exit** to pause the game and bring up a dialog box. From there, you can either resume play or quit the game and return to the Single Game Menu or Scoreboard if in a Tournament, Tour, or World Map.   
+- Once the game has ended and the victory fanfare has played, pressing either **Pause** or **Exit** will exit the game and return you to the Game Selection menu (or to the Scoreboard if in a Tournament, Tour, or World Map).
 
 #### Menu controls
 
@@ -146,15 +146,15 @@ Action | Player 1 | Player 2 | Player 3 | Player 4 |
 | Random | Space Bar | n/a | n/a | n/a |
 | Fast Scroll | L. Shift | n/a | n/a | n/a |
 
-*   Only Player 1's menu controls may be used in most menus.*   
-*   Use **Up**, **Down**, **Left**, and **Right** to navigate through menu choices, map thumbnails, etc.*   
-*   Press **Select** to select options and confirm choices.*   
-*   Press **Cancel** to return to the previous menu.*   
-*   To change a configurable choice, highlight it and press **Select**. Use **Left** or **Right** to cycle between available options, or press **Random** to have the computer select an available option at random. Press **Select** or **Cancel** to lock in your selection. When using a slider, like the ones on the Item Selection screen, you can also hold **Fast Scroll** and press **Left** or **Right** to jump from to one end or the other.  
-*   On the main menu, to change player settings, press **Left** or **Right** to select a player, and **Up** or **Down** to change between Player, Bot, and Off.   
-*   On the Player Select screen, press **Up** or **Down** to select a skin to use. Press **Left** or **Right** to select the team you want to be on. Press **Select** to lock in your choice. If you want to cancel your selection and pick something else, press **Cancel**. Once everyone has locked in their choices, have Player 1 press Select to advance to the Game Select menu.   
-*   When selecting a skin, press **Up** and **Down** together to have the computer pick one for you at random. Press **Left** and **Right** together to make the computer pick a skin for you at random at the beginning of each round, even in the middle of a Tournament or Tour.  
-*   When selecting a map, hold **Fast Map** and press **Left** or **Right** to go 10 maps at a time. When viewing maps by thumbnails, hold **Fast Scroll** and press **Up** or **Down** to quickly scroll through pages.
+- Only Player 1's menu controls may be used in most menus.
+- Use **Up**, **Down**, **Left**, and **Right** to navigate through menu choices, map thumbnails, etc.
+- Press **Select** to select options and confirm choices.
+- Press **Cancel** to return to the previous menu.
+- To change a configurable choice, highlight it and press **Select**. Use **Left** or **Right** to cycle between available options, or press **Random** to have the computer select an available option at random. Press **Select** or **Cancel** to lock in your selection. When using a slider, like the ones on the Item Selection screen, you can also hold **Fast Scroll** and press **Left** or **Right** to jump from to one end or the other.  
+- On the main menu, to change player settings, press **Left** or **Right** to select a player, and **Up** or **Down** to change between Player, Bot, and Off.   
+- On the Player Select screen, press **Up** or **Down** to select a skin to use. Press **Left** or **Right** to select the team you want to be on. Press **Select** to lock in your choice. If you want to cancel your selection and pick something else, press **Cancel**. Once everyone has locked in their choices, have Player 1 press Select to advance to the Game Select menu.   
+- When selecting a skin, press **Up** and **Down** together to have the computer pick one for you at random. Press **Left** and **Right** together to make the computer pick a skin for you at random at the beginning of each round, even in the middle of a Tournament or Tour.  
+- When selecting a map, hold **Fast Map** and press **Left** or **Right** to go 10 maps at a time. When viewing maps by thumbnails, hold **Fast Scroll** and press **Up** or **Down** to quickly scroll through pages.
 
 ### PC - Joystick
 
@@ -162,8 +162,9 @@ When using joysticks, it is important to note that there are a couple of differe
 
 The following are the changes to the controls when using a joystick. For information on controls not listed here, see the Keyboard section.
 
-*   In-game, to jump down through platforms, you have to hold **Down** and press **Jump**, instead of just pressing Down.*   All players with joysticks have **Random** and **Fast Map** menu controls. In addition, all players with joysticks have control in menus, not just Player 1.*   
-*   When selecting skins, to have the game select one at random, you must press **Random** instead of Up and Down together. Similarly, instead of pressing Left and Right toegether to get a random skin for each match, you have to hold **Fast Map** and press **Random**.
+- In-game, to jump down through platforms, you have to hold **Down** and press **Jump**, instead of just pressing Down. 
+- All players with joysticks have **Random** and **Fast Map** menu controls. In addition, all players with joysticks have control in menus, not just Player 1.
+- When selecting skins, to have the game select one at random, you must press **Random** instead of Up and Down together. Similarly, instead of pressing Left and Right toegether to get a random skin for each match, you have to hold **Fast Map** and press **Random**.
 
 ### Xbox
 
@@ -186,12 +187,12 @@ The following are the default controls. All controls can be reconfigured via the
 | Pause | Start |
 | Exit | Back |
 
-*   Press **Left** or **Right** to move left or right. 
-*   Press **Jump** to jump. Hold **Down** and press **Jump** to jump down through certain platforms.   
-*   Press **Turbo** to fire your weapon or to explode if you are a Bob-Omb. Hold **Turbo** and press **Left** or **Right** to run. While running, you can pick up shells and blue blocks that are not moving. To throw these items forward, release the Turbo key. To drop shells without throwing them, hold **Down** and release the Turbo key.   
-*   Press **Use Item** to use whatever item is stored in your Item box. For more information on items, see their section below.*   Press **Pause** to pause the game. Press it a second time to resume.   
-*   Press **Exit** to pause the game and bring up a dialog box. From there, you can either resume play or quit the game and return to the Game Selection menu or Scoreboard if in a Tournament, Tour, or World Map.  
-*   Once the game has ended and the victory fanfare has played, pressing either **Pause** or **Exit** will exit the game and return you to the Game Selection menu (or to the Scoreboard if in a Tournament, Tour, or World Map).
+- Press **Left** or **Right** to move left or right. 
+- Press **Jump** to jump. Hold **Down** and press **Jump** to jump down through certain platforms.   
+- Press **Turbo** to fire your weapon or to explode if you are a Bob-Omb. Hold **Turbo** and press **Left** or **Right** to run. While running, you can pick up shells and blue blocks that are not moving. To throw these items forward, release the Turbo key. To drop shells without throwing them, hold **Down** and release the Turbo key.   
+- Press **Use Item** to use whatever item is stored in your Item box. For more information on items, see their section below.*   Press **Pause** to pause the game. Press it a second time to resume.   
+- Press **Exit** to pause the game and bring up a dialog box. From there, you can either resume play or quit the game and return to the Game Selection menu or Scoreboard if in a Tournament, Tour, or World Map.  
+- Once the game has ended and the victory fanfare has played, pressing either **Pause** or **Exit** will exit the game and return you to the Game Selection menu (or to the Scoreboard if in a Tournament, Tour, or World Map).
 
 #### Menu controls
 
@@ -208,11 +209,12 @@ The following are the default controls. All controls can be reconfigured via the
 | Random | X |
 | Fast Scroll | Y |
 
-*   Use **Up**, **Down**, **Left**, and **Right** to navigate through menu choices, map thumbnails, etc.*   
-*   Press **Select** to select options and confirm choices.*   Press **Cancel** to return to the previous menu.*   
-*   To change a configurable choice, highlight it and press **Select**. Use **Left** or **Right** to cycle between available options, or press **Random** to have the computer select an available option at random. Press **Select** or **Cancel** to lock in your selection. When using a slider, like the ones on the Item Selection screen, you can also hold **Fast Scroll** and press **Left** or **Right** to jump from to one end or the other.*   On the main menu, to change player settings, press **Left** or **Right** to select a player, and **Up** or **Down** to change between Player, Bot, and Off.*   
-*   On the Player Select screen, press **Up** or **Down** to select a skin to use. Press **Left** or **Right** to select the team you want to be on. Press **Select** to lock in your choice. If you want to cancel your selection and pick something else, press **Cancel**. Once everyone has locked in their choices, press Select to advance to the Game Select menu.*   
-*   When selecting a skin, press **Random** to have the computer pick one for you at random. Hold **Fast Scroll** and press **Random** to make the computer pick a skin for you at random at the beginning of each round, even in the middle of a Tournament or Tour.*   When selecting a map, hold **Fast Scroll** and press **Left** or **Right** to go 10 maps at a time. When viewing maps by thumbnails, hold **Fast Scroll** and press **Up** or **Down** to quickly scroll through pages.</div>
+- Use **Up**, **Down**, **Left**, and **Right** to navigate through menu choices, map thumbnails, etc.
+- Press **Select** to select options and confirm choices.*   Press **Cancel** to return to the previous menu.
+- To change a configurable choice, highlight it and press **Select**. Use **Left** or **Right** to cycle between available options, or press **Random** to have the computer select an available option at random. Press **Select** or **Cancel** to lock in your selection. When using a slider, like the ones on the Item Selection screen, you can also hold **Fast Scroll** and press **Left** or **Right** to jump from to one end or the other.
+- On the main menu, to change player settings, press **Left** or **Right** to select a player, and **Up** or **Down** to change between Player, Bot, and Off.
+- On the Player Select screen, press **Up** or **Down** to select a skin to use. Press **Left** or **Right** to select the team you want to be on. Press **Select** to lock in your choice. If you want to cancel your selection and pick something else, press **Cancel**. Once everyone has locked in their choices, press Select to advance to the Game Select menu.
+- When selecting a skin, press **Random** to have the computer pick one for you at random. Hold **Fast Scroll** and press **Random** to make the computer pick a skin for you at random at the beginning of each round, even in the middle of a Tournament or Tour.*   When selecting a map, hold **Fast Scroll** and press **Left** or **Right** to go 10 maps at a time. When viewing maps by thumbnails, hold **Fast Scroll** and press **Up** or **Down** to quickly scroll through pages.
 
 ## Game Modes
 
@@ -228,7 +230,7 @@ Basic Parameter: **Lives** (5 to 100 by 5s, **10** default)
 
 Additional Parameters:
 
-*   **On Kill** (whether you respawn upon death):**Respawn** default, Shield
+- **On Kill** (whether you respawn upon death):**Respawn** default, Shield
 
 ### ![](https://github.com/HerbFargus/Super-Mario-War/blob/master/gfx/docs/m02.png)Frag Limit
 
@@ -238,8 +240,8 @@ Basic Parameter: **Kills** (5 to 100 by 5s, **20** default)
 
  Additional Parameters:
 
-*   **On Kill** (whether you respawn upon death):**Respawn** default, Shield*   
-*   **Scoring** (what type of kills count): **All Kills** default, Push Kills Only
+- **On Kill** (whether you respawn upon death):**Respawn** default, Shield
+- **Scoring** (what type of kills count): **All Kills** default, Push Kills Only
 
 ### ![](https://github.com/HerbFargus/Super-Mario-War/blob/master/gfx/docs/m03.png)Time Limit
 
@@ -249,9 +251,9 @@ Basic Parameter: **Time** (30 to 600 by 30s, **60** default)
 
 Additional Parameters:
 
- *   **On Kill** (whether you respawn upon death):**Respawn** default, Shield*   
- *   **Scoring** (what type of kills count): **All Kills** default, Push Kills Only*   
- *   **Extra Time Slider** (how often an extra time powerup appears from item blocks): 0 to 20 (default of ?)
+- **On Kill** (whether you respawn upon death):**Respawn** default, Shield
+- **Scoring** (what type of kills count): **All Kills** default, Push Kills Only*   
+- **Extra Time Slider** (how often an extra time powerup appears from item blocks): 0 to 20 (default of ?)
 
 ### ![](https://github.com/HerbFargus/Super-Mario-War/blob/master/gfx/docs/m04.png)Jail
 
@@ -261,10 +263,10 @@ Basic Parameter: **Kills** (5 to 100 by 5s, **20** default)
 
 Additional Parameters:
 
-*   **Style** (jailed player behavior): **Free For All** default, Classic, Owned*   
-*   **Free Timer** (# of seconds to get out of jail): None, 5, 10, 15, **20**, 25, 30, 35, 40, 45, 50, 55, 60*   
-*   **Tag Free** (whether you can tag your teammates to free them): **On**, Off*   
-*   **Jail Key Slider** (how often a jail key powerup appears from item blocks): 0 to 20 (default of ?)
+- **Style** (jailed player behavior): **Free For All** default, Classic, Owned
+- **Free Timer** (# of seconds to get out of jail): None, 5, 10, 15, **20**, 25, 30, 35, 40, 45, 50, 55, 60
+- **Tag Free** (whether you can tag your teammates to free them): **On**, Off
+- **Jail Key Slider** (how often a jail key powerup appears from item blocks): 0 to 20 (default of ?)
 
 ### ![](https://github.com/HerbFargus/Super-Mario-War/blob/master/gfx/docs/m05.png)Coin Collection
 
@@ -274,8 +276,8 @@ Basic Parameter: **Coins** (5 to 100 by 5s, **20** default)
 
 Additional Parameters:
 
-*   **Penalty** (whether there is a -1 penalty for death): On, **Off***   
-*   **Quantity** (how many coins will appear at once): **1**, 2, 3, 4, 5
+- **Penalty** (whether there is a -1 penalty for death): On, **Off**
+- **Quantity** (how many coins will appear at once): **1**, 2, 3, 4, 5
 
 ### ![](https://github.com/HerbFargus/Super-Mario-War/blob/master/gfx/docs/m06.png)Stomp
 
@@ -285,8 +287,8 @@ Basic Parameter: **Kills** (10 to 200 by 10s, **10** default)
 
 Additional Parameters:
 
-*   **Rate** (how often, in general, enemies appear): Very Slow, Slow, **Moderate**, Fast, Very Fast*   
-*   **Goomba, Koopa, Cheep Cheep, Red Koopa, Spiny, Buzzy Beetle, Paragoomba, Parakoopa, and Red Parakoopa Sliders** (comparative rates of each enemy appearing): 0 to 10 each (defaults of 1, 1, 2, ?, ?, ?, ?, ?, and ? respectively)
+- **Rate** (how often, in general, enemies appear): Very Slow, Slow, **Moderate**, Fast, Very Fast
+- **Goomba, Koopa, Cheep Cheep, Red Koopa, Spiny, Buzzy Beetle, Paragoomba, Parakoopa, and Red Parakoopa Sliders** (comparative rates of each enemy appearing): 0 to 10 each (defaults of 1, 1, 2, ?, ?, ?, ?, ?, and ? respectively)
 
 ### ![](https://github.com/HerbFargus/Super-Mario-War/blob/master/gfx/docs/m07.png)Yoshi's Eggs
 
@@ -296,8 +298,8 @@ Basic Parameter: **Eggs** (5 to 100 by 5s, **20** default)
 
 Additional Parameters:
 
-*   **Egg and Yoshi Sliders** (how many of each color egg and Yoshi will appear at once): 0 to 4 each (defaults of ?, ?, ?, ?, ?, ?, ?, and ? respectively)*   
-*   **Explosion Timer** (# of seconds before eggs explode): **Off**, 3, 5, 8, 10, 15, 20
+- **Egg and Yoshi Sliders** (how many of each color egg and Yoshi will appear at once): 0 to 4 each (defaults of ?, ?, ?, ?, ?, ?, ?, and ? respectively)
+- **Explosion Timer** (# of seconds before eggs explode): **Off**, 3, 5, 8, 10, 15, 20
 
 ### ![](https://github.com/HerbFargus/Super-Mario-War/blob/master/gfx/docs/m08.png)Capture The Flag
 
@@ -307,11 +309,12 @@ Basic Parameter: **Flags** (5 to 100 by 5s, **20** default)
 
 Additional Parameters:
 
-*   **Speed Slider** (for adjusting the speed of the bases' movement): 0 to 8 (default of 0)*   
-*   **Touch Return** (whether you can return your own flag to base just by touching it): On, **Off***   
-*   **Point Move** (whether your base moves after you score): **On**, Off*  
-*   **Auto Return** (seconds before your flag returns itself): None, 5, 10, 15, **20**, 25, 30, 35, 40, 45, 50, 55, 60*   **Need Home** (whether your flag has to be in the base for you to score): On, **Off***   
-*   **Center Flag** (whether you have to steal other teams' flags or return a single flag to your base): On, **Off**
+- **Speed Slider** (for adjusting the speed of the bases' movement): 0 to 8 (default of 0)
+- **Touch Return** (whether you can return your own flag to base just by touching it): On, **Off**
+- **Point Move** (whether your base moves after you score): **On**, Off
+- **Auto Return** (seconds before your flag returns itself): None, 5, 10, 15, **20**, 25, 30, 35, 40, 45, 50, 55, 60
+- **Need Home** (whether your flag has to be in the base for you to score): On, **Off**
+- **Center Flag** (whether you have to steal other teams' flags or return a single flag to your base): On, **Off**
 
 ### ![](https://github.com/HerbFargus/Super-Mario-War/blob/master/gfx/docs/m09.png)Chicken
 
@@ -321,8 +324,8 @@ Basic Parameter: **Points** (50 to 1000 by 50s, **200** default)
 
 Additional Parameters:
 
-*   **Show Target** (whether an extra crosshair is displayed around the chicken): **On**, Off*   
-*   **Chicken Glide** (whether the chicken has a floating ability): On, **Off**
+- **Show Target** (whether an extra crosshair is displayed around the chicken): **On**, Off
+- **Chicken Glide** (whether the chicken has a floating ability): On, **Off**
 
 ### ![](https://github.com/HerbFargus/Super-Mario-War/blob/master/gfx/docs/m10.png)Tag
 
@@ -332,16 +335,16 @@ Basic Parameter: **Points** (50 to 1000 by 50s, **200** default)
 
 Additional Parameters:
 
-*   **Touch Tag** (whether you can transfer the tag by just touching): **On**, Off
+- **Touch Tag** (whether you can transfer the tag by just touching): **On**, Off
 
 ### ![](https://github.com/HerbFargus/Super-Mario-War/blob/master/gfx/docs/m11.png)Star
 
 In this mode, there will either be a Ztar, a Shine Sprite, or Multi Stars, depending on how the options are set. One player will be designated to be the owner of one of these objects, and if other players touch it, they will steal the object's ownership status. There is also a timer that gradually counts down.
 
-*   If the object in play is a Ztar, whoever has it when the clock hits 0 will lose a life. The clock will reset, and the same person will own the Ztar next time. Once a player is eliminated, the Ztar will go to the next player who has the most lives remaining (chosen at random if there is a tie). If you own the Ztar, you should try to hit other people with it (either by tagging or by throwing) so that they will take ownership.*   
-*   If the object in play is a Shine, whoever _doesn't_ have it when the clock hits 0 will lose a life. The clock will reset, and the Shine will change owners to whoever has the least number of lives remaining (chosen at random if there is a tie). If you own the Shine, you should try to keep it away from other players so that they can't take ownership.*   
-*   If the objects in play are Multi Stars, all but one player will have ownership of a colored star. Whoever is left without a star when the clock hits 0 will lose a life. The clock will reset, and whoever has the most lives will lose ownership of their star. If you own a Multi Star, you should try to keep it away from the player without one.*   
-*   In all three cases, if the object in play stays out of its owner's hands for too long, it will warp right to them so they can start using it/keeping it away again.
+- If the object in play is a Ztar, whoever has it when the clock hits 0 will lose a life. The clock will reset, and the same person will own the Ztar next time. Once a player is eliminated, the Ztar will go to the next player who has the most lives remaining (chosen at random if there is a tie). If you own the Ztar, you should try to hit other people with it (either by tagging or by throwing) so that they will take ownership.*   
+- If the object in play is a Shine, whoever _doesn't_ have it when the clock hits 0 will lose a life. The clock will reset, and the Shine will change owners to whoever has the least number of lives remaining (chosen at random if there is a tie). If you own the Shine, you should try to keep it away from other players so that they can't take ownership.*   
+- If the objects in play are Multi Stars, all but one player will have ownership of a colored star. Whoever is left without a star when the clock hits 0 will lose a life. The clock will reset, and whoever has the most lives will lose ownership of their star. If you own a Multi Star, you should try to keep it away from the player without one.*   
+- In all three cases, if the object in play stays out of its owner's hands for too long, it will warp right to them so they can start using it/keeping it away again.
 
 Dying in any way other than from the countdown ending has no effect on your score. It's also important to know that in this mode, since the number of lives you start with is quite small, and extra lives are very valuable, 2UPs and 3UPs are only worth 1 extra life, and 5UPs are worth only 2.
 
@@ -349,9 +352,9 @@ Basic Parameter: **Lives** (1 to 20, **5** default)
 
 Additional Parameters:
 
-*   **Time** (# of seconds on the timer): 5, 10, 15, 20, 25, **30**, 35, 40, 45, 50, 55, 60*   
-*   **Star Type** (which object is used): **Ztar**, Shine, Multi Star, Random*   
-*   **Extra Time Slider** (how often an extra time powerup appears from item blocks): 0 to 20 (default of ?)
+- **Time** (# of seconds on the timer): 5, 10, 15, 20, 25, **30**, 35, 40, 45, 50, 55, 60
+- **Star Type** (which object is used): **Ztar**, Shine, Multi Star, Random
+- **Extra Time Slider** (how often an extra time powerup appears from item blocks): 0 to 20 (default of ?)
 
 ### ![](https://github.com/HerbFargus/Super-Mario-War/blob/master/gfx/docs/m12.png)Domination
 
@@ -361,14 +364,14 @@ Basic Parameter: **Points** (50 to 1000 by 50s, **200** default)
 
 Additional Parameters:
 
-*   **Quantity** (the number of bases that appear): 1 to 10, # Players - 1, # Players, **# Players + 1**, # Players + 2 to 6, 2x Players - 3 to 1, 2x Players, 2x Players + 1 or 2*   
-*   **Relocate** (time between relocations): Never, 5, 10, 15, **20**, 25, 30, or 45 seconds, 1, 1.5, 2, 2.5, or 3 minutes 
+- **Quantity** (the number of bases that appear): 1 to 10, # Players - 1, # Players, **# Players + 1**, # Players + 2 to 6, 2x Players - 3 to 1, 2x Players, 2x Players + 1 or 2
+- **Relocate** (time between relocations): Never, 5, 10, 15, **20**, 25, 30, or 45 seconds, 1, 1.5, 2, 2.5, or 3 minutes 
 
 On Death:
 
- *   **Lose Bases** (whether your bases reset to neutral): **On**, Off*   
- *   **Move Bases** (whether your bases move): On, **Off***   
- *   **Steal Bases** (whether your bases are taken by who killed you): On, **Off***   Steal Bases overrides Lose Bases when it is on.
+- **Lose Bases** (whether your bases reset to neutral): **On**, Off
+- **Move Bases** (whether your bases move): On, **Off**
+- **Steal Bases** (whether your bases are taken by who killed you): On, **Off** Steal Bases overrides Lose Bases when it is on.
 
 ### ![](https://github.com/HerbFargus/Super-Mario-War/blob/master/gfx/docs/m17.png)King Of The Hill
 
@@ -378,9 +381,9 @@ Basic Parameter: **Points** (50 to 1000 by 50s, **200** default)
 
 Additional Parameters:
 
-*   **Size** (size of the scoring zone): 2x2, **3x3**, 4x4, 5x5*   
-*   **Relocate** (time between relocations): Never, 5, 10, 15, **20**, 25, 30, or 45 seconds, 1, 1.5, 2, 2.5, or 3 minutes* 
-*   **Max Multiplier** (increase in point gain over control time): **None**, 2, 3, 4, 5
+- **Size** (size of the scoring zone): 2x2, **3x3**, 4x4, 5x5*   
+- **Relocate** (time between relocations): Never, 5, 10, 15, **20**, 25, 30, or 45 seconds, 1, 1.5, 2, 2.5, or 3 minutes
+- **Max Multiplier** (increase in point gain over control time): **None**, 2, 3, 4, 5
 
 ### ![](https://github.com/HerbFargus/Super-Mario-War/blob/master/gfx/docs/m13.png)Race
 
@@ -390,9 +393,9 @@ Basic Parameter: **Laps** (5 to 100 by 5s, **10** default)
 
 Additional Parameters:
 
-*   **Quantity** (the number of targets, including the checkered flag): 2, 3, **4**, 5, 6, 7, 8*   
-*   **Speed** (how fast the targets move): Stationary, Very Slow, Slow, **Moderate**, Fast, Very Fast*   
-*   **Penalty** (what you lose when you die): None, One Goal, **All Goals**
+- **Quantity** (the number of targets, including the checkered flag): 2, 3, **4**, 5, 6, 7, 8
+- **Speed** (how fast the targets move): Stationary, Very Slow, Slow, **Moderate**, Fast, Very Fast
+- **Penalty** (what you lose when you die): None, One Goal, **All Goals**
 
 ### ![](https://github.com/HerbFargus/Super-Mario-War/blob/master/gfx/docs/m14.png)Owned
 
@@ -410,12 +413,12 @@ Basic Parameter: **Kills** (5 to 100 by 5s, **20** default)
 
 Additional Parameters:
 
-*   **Limit** (the number of item cards shown at once): Single Powerup, 1 to 5 Powerups, **# Players - 1**, # Players, # Players + 1 to 3*   
-*   **Rate** (how long it takes for new cards to appear when they can): Instant, 1, 2, **3**, 5, 10, 15, 20, 25, or 30 seconds*   **Store Shells** (see note): **On**, Off*   
-*   **Sliders for Items** (comparative frequencies of each one appearing on cards): 0 to 10 each (defaults of 1 for Fire Flowers and Hammers, and 0 for everything else)
+- **Limit** (the number of item cards shown at once): Single Powerup, 1 to 5 Powerups, **# Players - 1**, # Players, # Players + 1 to 3
+- **Rate** (how long it takes for new cards to appear when they can): Instant, 1, 2, **3**, 5, 10, 15, 20, 25, or 30 seconds*   **Store Shells** (see note): **On**, Off
+- **Sliders for Items** (comparative frequencies of each one appearing on cards): 0 to 10 each (defaults of 1 for Fire Flowers and Hammers, and 0 for everything else)
  
-*   If Limit is set to Single Item, no more cards will appear until the person who picked up the first one uses it (in the case of Stored items or the Bob-Omb), no longer has it (in the case of Weapon items or the Bob-Omb), or has touched it (in case of Shells). In either case there is no delay for the card to appear after the first time. (This is the same way that the card in Bob-Omb mode worked in version 1.5.)*   
-*   If Store Shells is set to On, then when you touch a shell card, the shell will become a Stored item. If it is set to Off, then touching a shell card has the same effect as touching a regular shell (i.e. if you are holding Turbo then you will grab the shell; otherwise you will just kick it out of midair).
+- If Limit is set to Single Item, no more cards will appear until the person who picked up the first one uses it (in the case of Stored items or the Bob-Omb), no longer has it (in the case of Weapon items or the Bob-Omb), or has touched it (in case of Shells). In either case there is no delay for the card to appear after the first time. (This is the same way that the card in Bob-Omb mode worked in version 1.5.)
+- If Store Shells is set to On, then when you touch a shell card, the shell will become a Stored item. If it is set to Off, then touching a shell card has the same effect as touching a regular shell (i.e. if you are holding Turbo then you will grab the shell; otherwise you will just kick it out of midair).
 
 ### ![](https://github.com/HerbFargus/Super-Mario-War/blob/master/gfx/docs/m16.png)Survival
 
@@ -425,10 +428,10 @@ Basic Parameter: **Lives** (5 to 100 by 5s, **20** default)
 
 Additional Parameters:
 
-*   **Thwomp, Podoboo, and Fireball sliders** (comparative frequencies of each one appearing): 0 to 10 each (defaults of 1, 0, and 0 respectively)*   
-*   **Density** (how often hazards appear overall): Very Low, Low, **Medium**, High, Very High*   
-*   **Speed** (how fast Thwomps fall down): Very Slow, Slow, **Moderate**, Fast, Very Fast*   
-*   **Shield** (allows you to set a separate shield setting for this mode): **On**, Off
+- **Thwomp, Podoboo, and Fireball sliders** (comparative frequencies of each one appearing): 0 to 10 each (defaults of 1, 0, and 0 respectively)
+- **Density** (how often hazards appear overall): Very Low, Low, **Medium**, High, Very High   
+- **Speed** (how fast Thwomps fall down): Very Slow, Slow, **Moderate**, Fast, Very Fast   
+- **Shield** (allows you to set a separate shield setting for this mode): **On**, Off
 
 ### ![](https://github.com/HerbFargus/Super-Mario-War/blob/master/gfx/docs/m18.png)Greed
 
@@ -438,7 +441,7 @@ Basic Parameter: **Coins** (10 to 200 by 10s, **20** default)
 
 Additional Parameters:
 
-*   **Coin Life** (# of seconds before dropped coins disappear): 1 to 10, 12, 15, 18, 20, 25, **30**
+- **Coin Life** (# of seconds before dropped coins disappear): 1 to 10, 12, 15, 18, 20, 25, **30**
 
 ### ![](https://github.com/HerbFargus/Super-Mario-War/blob/master/gfx/docs/m19.png)Health
 
@@ -448,9 +451,9 @@ Basic Parameter: **Lives** (1 to 20 **5** default)
 
 Additional Parameters:
 
-*   **Start Life** (# of health points players start a match with): **2**, 3, 4, 5, 6, 7, 8, 9, 10*   
-*   **Max Life** (max # of health points players can have in a match): **2**, 3, 4, 5, 6, 7, 8, 9, 10*   
-*   **Extra Life Slider** (how often a heart powerup appears from item blocks): 0 to 20 (default of 10)
+- **Start Life** (# of health points players start a match with): **2**, 3, 4, 5, 6, 7, 8, 9, 10*   
+- **Max Life** (max # of health points players can have in a match): **2**, 3, 4, 5, 6, 7, 8, 9, 10*   
+- **Extra Life Slider** (how often a heart powerup appears from item blocks): 0 to 20 (default of 10)
 
 ### ![](https://github.com/HerbFargus/Super-Mario-War/blob/master/gfx/docs/m20.png)Card Collection
 
@@ -460,9 +463,9 @@ Basic Parameter: **Points** (10 to 200 by 10s, **20** default)
 
 Additional Parameters:
 
-*   **Limit** (the number of item cards shown at once): 1 to 5, **# Players -1**, # Players, # Players +1 to 3*   
-*   **Rate** (# of seconds for new cards to appear when they can): Instant, 1 to **3**, 5, 10, 15, 20, 25, 30*   
-*   **Bank Time** (how long players have to swap their third card): Instant, 1 to 10 (default of 3)
+- **Limit** (the number of item cards shown at once): 1 to 5, **# Players -1**, # Players, # Players +1 to 3*   
+- **Rate** (# of seconds for new cards to appear when they can): Instant, 1 to **3**, 5, 10, 15, 20, 25, 30*   
+- **Bank Time** (how long players have to swap their third card): Instant, 1 to 10 (default of 3)
 
 ### ![](https://github.com/HerbFargus/Super-Mario-War/blob/master/gfx/docs/m21.png)Phanto
 
@@ -472,8 +475,8 @@ Basic Parameter: **Points** (50 to 1000 by 50's, **500** default)
 
 Additional Parameters:
 
-*   **Speed** (how fast the Phantos travel): Very Slow, Slow, **Moderate**, Fast, Very Fast, Extremely Fast, Insanely Fast* 
-*   **Phanto Sliders** (how many plain, green, and red Phantos chase the key carrier): 0 to 5 (defaults of 1, 0, and 0 respectively)</div>
+- **Speed** (how fast the Phantos travel): Very Slow, Slow, **Moderate**, Fast, Very Fast, Extremely Fast, Insanely Fast
+- **Phanto Sliders** (how many plain, green, and red Phantos chase the key carrier): 0 to 5 (defaults of 1, 0, and 0 respectively)
 
 ## Special Blocks
 
@@ -547,185 +550,185 @@ Items in the game can be acquired in three ways: from item boxes ("?" blocks), f
 
 Here are the classes of items:
 
-*   **<font color="007700">Instant</font>** - These will be used immediately by the player upon picking it up.*   
-*   **<font color="770077">Stored</font>** - These will be stored in the player's item box and can be used at any time by pressing the Item button.*   
-*   **<font color="0000ff">Collectable</font>** - These will be treated as Instant items if the player doesn't already have them; otherwise they will be treated as Stored items.*   
-*   **<font color="ff0000">Weapon</font>** - These are just like Collectables, except that if you already have another Weapon, the one you already had becomes stored instead of the one you just got. Each player's current Weapon is displayed on top of their player icon on the score display.*   
-*   **<font color="ff7700">Throwable</font>** - These items cannot be gathered like other items, but you can pick them up when they are not moving by holding the Turbo button. When you release the button, you will throw the item.*   
-*   **<font color="77aaff">Map Items</font>** - These items are like throwable items, but they are a part of the map itself. They have different uses, depending on the map item.*   
-*   **<font color="00cc33">World Map</font>** - These items can only be found and used in a World Map match. Their uses range from score alteration to stealing control of the board!
+- **Instant** - These will be used immediately by the player upon picking it up.
+- **Stored** - These will be stored in the player's item box and can be used at any time by pressing the Item button.
+- **Collectable** - These will be treated as Instant items if the player doesn't already have them; otherwise they will be treated as Stored items.
+- **Weapon** - These are just like Collectables, except that if you already have another Weapon, the one you already had becomes stored instead of the one you just got. Each player's current Weapon is displayed on top of their player icon on the score display.
+- **Throwable** - These items cannot be gathered like other items, but you can pick them up when they are not moving by holding the Turbo button. When you release the button, you will throw the item.   
+- **Map Items** - These items are like throwable items, but they are a part of the map itself. They have different uses, depending on the map item.
+- **World Map** - These items can only be found and used in a World Map match. Their uses range from score alteration to stealing control of the board!
 
 ### ![](https://github.com/HerbFargus/Super-Mario-War/blob/master/gfx/docs/i01.png)1UP Mushroom
 
-**Type: <font color="007700">Instant</font>**
+**Type: Instant**
 
 In game modes where the score is a measure of lives, frags, Goomba kills, etc., this item will grant you an extra life, frag, lap, etc. In all other modes, this item will grant you 10 extra points.
 
 ### ![](https://github.com/HerbFargus/Super-Mario-War/blob/master/gfx/docs/i02.png)2UP Mushroom
 
-**Type: <font color="007700">Instant</font>**
+**Type: Instant**
 
 Catching this pretty pink 'shroom counts as having collected 2 1UP Mushrooms (so you will receive either 2 extra lives, frags, etc., or 20 points towards the goal, with the exception of Race and Star modes in which this item still grants only 1 extra point). However, it moves a little faster than a 1UP.
 
 ### ![](https://github.com/HerbFargus/Super-Mario-War/blob/master/gfx/docs/i03.png)3UP Mushroom
 
-**Type: <font color="007700">Instant</font>**
+**Type: Instant**
 
 Grabbing a blue mushie counts as having collected 3 1UP Mushrooms (so you will receive either 3 extra lives, frags, etc., or 30 points towards the goal, with the exception of Race and Star modes in which this item still grants only 1 extra point). However, it moves quite a bit faster than a 1UP.
 
 ### ![](https://github.com/HerbFargus/Super-Mario-War/blob/master/gfx/docs/i04.png)5UP Mushroom
 
-**Type: <font color="007700">Instant</font>**
+**Type: Instant**
 
 Snagging this golden treat counts as having collected 5 1UP Mushrooms (so you will receive either 5 extra lives, frags, etc., or a whopping 50 points towards the goal, with the exception of Race and Star modes in which this item grants only 2 extra points). However, it is the fastest-moving of all the mushrooms, as well as the rarest item in the game!
 
 ### ![](https://github.com/HerbFargus/Super-Mario-War/blob/master/gfx/docs/i07.png)Poison Mushroom
 
-**Type: <font color="007700">Instant</font>**
+**Type: Instant**
 
 Upon collecting this item, unless you are invincible, you will die. This will have the same effect on your score as hitting spikes or lava.
 
 ### ![](https://github.com/HerbFargus/Super-Mario-War/blob/master/gfx/docs/i20.png)Mystery Mushroom
 
-**Type: <font color="007700">Instant</font>**
+**Type: Instant**
 
 When you grab this item, everyone on the map will immediately switch positions and stored items with each other. The actual switching is random, so you could swap with Player 2 one time and with Player 3 the next. If whoever takes your place dies within one second of getting there, you will be credited with a kill. Additionally, whoever's place you take, you will also take their stored item in place of yours, even if they didn't have anything (in which case you will then have nothing stored). The effect used when players switch can be changed in the Options menu under Item Settings.
 
-### ![](https://github.com/HerbFargus/Super-Mario-War/blob/master/gfx/docs/i27.png)Extra Time **<font color="993300">(Mode Specific Powerup)</font>**
+### ![](https://github.com/HerbFargus/Super-Mario-War/blob/master/gfx/docs/i27.png)Extra Time **(Mode Specific Powerup)**
 
-**Type: <font color="007700">Instant</font>**
+**Type: Instant**
 
 When you grab this item in Timed or Star modes, an additional amount of time is added to the clock. How often this item appears can be set in the Additional Parameters for each mode.
 
-### ![](https://github.com/HerbFargus/Super-Mario-War/blob/master/gfx/docs/i28.png)Heart **<font color="993300">(Mode Specific Powerup)</font>**
+### ![](https://github.com/HerbFargus/Super-Mario-War/blob/master/gfx/docs/i28.png)Heart **(Mode Specific Powerup)**
 
-**Type: <font color="007700">Instant</font>**
+**Type: Instant**
 
 This item only appears in Health mode. When you grab this item, an extra half-heart is added to your player's health, depending on the Max Health option. How often this item appears can be set in the Additional Parameters.
 
 ### ![](https://github.com/HerbFargus/Super-Mario-War/blob/master/gfx/docs/i05.png)Fire Flower
 
-**Type: <font color="ff0000">Weapon</font>**
+**Type: Weapon**
 
 This item gives you the ability to shoot deadly fireballs with the turbo button. Fireballs bounce along the ground for a while until they disappear, but they will also disappear if they hit a wall or another player.
 
 ### ![](https://github.com/HerbFargus/Super-Mario-War/blob/master/gfx/docs/i08.png)Hammer
 
-**Type: <font color="ff0000">Weapon</font>**
+**Type: Weapon**
 
 This item will give you the ability to throw hammers. Hammers travel in an arc whose lateral distance is determined by how fast you are moving, and as a result, hammers are not very easy to aim - but they can give you a big advantage over players who are trying to jump you if you can use them well.
 
 ### ![](https://github.com/HerbFargus/Super-Mario-War/blob/master/gfx/docs/i19.png)Boomerang
 
-**Type: <font color="ff0000">Weapon</font>**
+**Type: Weapon**
 
 This item gives you the ability to shoot boomerangs. Using the default behavior, Boomerangs will travel ahead in a long arc before turning around and going in a straight line until they disappear. However, there are other trajectory types you can choose, under the Options menu (see below), if you don't like the default. Boomerangs, like hammers, can be shot through solid walls.
 
 ### ![](https://github.com/HerbFargus/Super-Mario-War/blob/master/gfx/docs/i18.png)Feather
 
-**Type: <font color="ff0000">Weapon</font>**
+**Type: Weapon**
 
 When you grab this item, you will don a cape and be granted the ability to jump a second time in midair! The second jump will be weaker than the first, though. This item is great for reaching high ledges, items, and targets. You can even attack enemies with a spin move! (Note that the Feather counts as a Weapon, so you can't combine it with others.)
 
 ### ![](https://github.com/HerbFargus/Super-Mario-War/blob/master/gfx/docs/i21.png)P-Wings
 
-**Type: <font color="ff0000">Weapon</font>**
+**Type: Weapon**
 
 When you grab this item, you will don a pair of wings and be granted the ability to take flight after a jump! The flight lasts for a limited time or until you release Jump. Like the Feather, this item is great for reaching high ledges, items, and targets. (Note that, the P-Wings don't allow you to shoot anything, but it also counts as a Weapon.)
 
 ### ![](https://github.com/HerbFargus/Super-Mario-War/blob/master/gfx/docs/i22.png)Raccoon Leaf
 
-**Type: <font color="ff0000">Weapon</font>**
+**Type: Weapon**
 
 When you grab this item, you will don a tail and be granted the ability to float safely to the ground after a jump! How slowly you float down depends on how fast you tap Jump. There is a limit to how slowly you can float down, though. Like the Feather, you can attack enemies with a spin move. (Like the Feather and P-Wings, the Raccoon Leaf also counts as a weapon.)
 
 ### ![](https://github.com/HerbFargus/Super-Mario-War/blob/master/gfx/docs/i23.png)Bomb
 
-**Type: <font color="0000ff">Weapon</font>**
+**Type: Weapon**
 
 This item gives you the ability to throw bombs. Pressing the turbo button causes you to spawn a bomb in your player's hands, which you can throw or carry around. The bombs take a few seconds to explode, but do so with the force of a Bob-Omb explosion.
 
 ### ![](https://github.com/HerbFargus/Super-Mario-War/blob/master/gfx/docs/i24.png)Ice Wand
 
-**Type: <font color="0000ff">Weapon</font>**
+**Type: Weapon**
 
 This item gives you the ability to shoot a Magikoopa wand blast across the screen. The wand blast freezes any players it hits in a block of ice. Frozen players can be shattered simply by touching them. The Ice Wand can go through walls and hit multiple players, but it doesn't work on the enemies of Stomp Mode.
 
 ### ![](https://github.com/HerbFargus/Super-Mario-War/blob/master/gfx/docs/i06.png)Invincibility Star
 
-**Type: <font color="0000ff">Collectable</font>**
+**Type: Collectable**
 
 Gives the player invincibility for 10 seconds. During this time, the player can walk on spikes/lava, stay above the map as long as they want, continually fall without burning up, and kill other players just by touching them.
 
 ### ![](https://github.com/HerbFargus/Super-Mario-War/blob/master/gfx/docs/i10.png)Bob-Omb
 
-Type: <font color="0000ff">Collectable</font>**
+**Type: Collectable**
 
 This item turns you into a Bob-Omb. Pressing the turbo button causes you to explode and kill players around you. However, you can only explode once before you return to normal again. If you kill a player who is a Bob-Omb, and you aren't one already (which includes if you were one and just exploded), you will steal their Bob-Omb status.
 
 ### ![](https://github.com/HerbFargus/Super-Mario-War/blob/master/gfx/docs/i25.png)Tanooki Suit
 
-**Type: <font color="0000ff">Collectable</font>**
+**Type: Collectable**
 
 This item gives you the ability to become a statue. While your player is a statue, you cannot be killed by stomping, projectiles, enemies, map hazards, spikes, and lava. If you change your player into a statue in midair, the player will do a super smash like with the Goomba's Shoe. This can be used to drop down quickly for an item or to crush another player. Upon landing, the impact clouds can kill other players at close range. Statue players can still be crushed.
 
 ### ![](https://github.com/HerbFargus/Super-Mario-War/blob/master/gfx/docs/i09.png)Clock
 
-**Type: <font color="770077">Stored</font>**
+**Type: Stored**
 
 When you use this item, all players that are not on your team will be slowed down and will only be able to jump 2 blocks high. These effects last for 10 seconds.
 
 ### ![](https://github.com/HerbFargus/Super-Mario-War/blob/master/gfx/docs/i13.png)Bullet Bill
 
-**Type: <font color="770077">Stored</font>**
+**Type: Stored**
 
 When this item is used, Bullet Bills of your team color will fire in from the sides of the screen for about 5 seconds. Players on the opposing team must dodge or jump on the Bullet Bills to avoid death. Additionally, If two players' Bullet Bills collide, they will explode. This explosion will kill anyone it touches, including the owners of the Bullet Bills.
 
 ### ![](https://github.com/HerbFargus/Super-Mario-War/blob/master/gfx/docs/i11.png)POW Block
 
-**Type: <font color="770077">Stored</font>**
+**Type: Stored**
 
 When this item is used, the screen shakes for about half a second and any players that touch the ground during this time are killed. You should watch for when an opponent uses one of these, and make sure you make a big jump so you don't die.
 
 ### ![](https://github.com/HerbFargus/Super-Mario-War/blob/master/gfx/docs/i12.png)MOd Block
 
-**Type: <font color="770077">Stored</font>**
+**Type: Stored**
 
 This item acts exactly like the POW block, except that when you use it, instead of killing players on the _ground_, you kill players in the _air_. So, when an opponent is using one of these, you should stay on the ground for a bit to avoid getting killed.
 
 ### ![](https://github.com/HerbFargus/Super-Mario-War/blob/master/gfx/docs/i26.png)Golden Podobo
 
-**Type: <font color="770077">Stored</font>**
+**Type: Stored**
 
 When this item is used, a single wave of podobos rise from the bottom of the screen, killing anything they touch that isn't on your team. When an opponent is using one of these, make sure you get to high ground, and fast!
 
-### ![](https://github.com/HerbFargus/Super-Mario-War/blob/master/gfx/docs/i29.png)Jail Key **<font color="993300">(Mode Specific Powerup)</font>**
+### ![](https://github.com/HerbFargus/Super-Mario-War/blob/master/gfx/docs/i29.png)Jail Key **(Mode Specific Powerup)**
 
-**Type: <font color="770077">Stored</font>**
+**Type: Stored**
 
 This item only appears in Jail mode. When you use this item, your player is instantly released from jail, if not already free. Even if you don't need it, grab the Jail Key so others can't use it! How often this item appears can be set in the Additional Parameters.
 
 ### ![](https://github.com/HerbFargus/Super-Mario-War/blob/master/gfx/docs/i14.png)Green Shell
 
-**Type: <font color="ff7700">Throwable</font>**
+**Type: Throwable**
 
 When this item is thrown or stomped on, it will start bouncing around the map. It can be jumped a second time to stop it. It will kill the first person it hits while it is moving, and will disappear afterwards. It will also disappear if it stays moving for too long without hitting anyone. You can also kill Green Shells with projectile weapons such as fireballs. Green shells will not disappear by themselves if they are not moving or if someone is carrying them.
 
 ### ![](https://github.com/HerbFargus/Super-Mario-War/blob/master/gfx/docs/i15.png)Red Shell
 
-**Type: <font color="ff7700">Throwable</font>**
+**Type: Throwable**
 
 This item is exactly like a Green Shell except for one detail: it doesn't stop when it hits one player, and will instead plow through as many things as are in its way until its time runs out or until someone shoots it.
 
 ### ![](https://github.com/HerbFargus/Super-Mario-War/blob/master/gfx/docs/i16.png)Spiny Shell
 
-**Type: <font color="ff7700">Throwable</font>**
+**Type: Throwable**
 
 This item is exactly like the Red Shell, except that it is covered in spikes and so it can't be jumped on to stop it once it's going. It can still be shot, though.
 
 ### ![](https://github.com/HerbFargus/Super-Mario-War/blob/master/gfx/docs/i17.png)Buzzy Shell
 
-**Type: <font color="ff7700">Throwable</font>**
+**Type: Throwable**
 
 This item is exactly like the Red Shell, except that it is immune to projectile weapons. It can still be jumped, though.
 
@@ -735,127 +738,127 @@ When two shells collide, if they are both the same "strength" (i.e. if they are 
 
 ### ![](https://github.com/HerbFargus/Super-Mario-War/blob/master/gfx/docs/i30.png)Green Springboard
 
-**Type: <font color="77aaff">Map Items</font>**
+**Type: Map Items**
 
 This item can be carried through the map and used as a portable Note Block. The Green Springboard allows you to make timed jumps like regular Note Blocks. Keep in mind that if the Green Springboard gets destroyed by lava or spikes, it is gone for the rest of the match.
 
 ### ![](https://github.com/HerbFargus/Super-Mario-War/blob/master/gfx/docs/i31.png)Gold Springboard
 
-**Type: <font color="77aaff">Map Items</font>**
+**Type: Map Items**
 
 This item can be carried through the map and used as a portable Note Block. The Green Springboard allows you to make timed jumps like the Orange Note Blocks. Keep in mind that if the Green Springboard gets destroyed by lava or spikes, it is gone for the rest of the match.
 
 ### ![](https://github.com/HerbFargus/Super-Mario-War/blob/master/gfx/docs/i32.png)Carryable Spike
 
-**Type: <font color="77aaff">Map Items</font>**
+**Type: Map Items**
 
 This item can be carried through the map and used as a weapon over and over. The Carryable Spike allows you to turn areas of a map into a small trap. The Carryable Spike does **not** protect you from being stomped, so be careful. Keep in mind that if the Carryable Spike gets destroyed by lava or spikes, it is gone for the rest of the match.
 
 ### ![](https://github.com/HerbFargus/Super-Mario-War/blob/master/gfx/docs/i33.png)Goomba's Shoe
 
-**Type: <font color="77aaff">Map Items</font>**
+**Type: Map Items**
 
 Jumping into the Goomba's Shoe allows you to perform a super smash move in midair. This can be used to drop down quickly for an item or to crush other players. Your player also gets a weight boost, allowing you to bump opponents much farther than normal! Unlike the other map items, the Goomba's Shoe can also travel safely over lava and spikes!
 
 ### ![](https://github.com/HerbFargus/Super-Mario-War/blob/master/gfx/docs/i34.png)Music Box
 
-**Type: <font color="00cc33">World Map</font>**
+**Type: World Map**
 
 Using one of these will stop the movement of all vehicles on the World Map for a few turns. During this time, you won't be pulled into the levels upon passing over them. If you want to play the level anyways, just enter it like a normal level.
 
 ### ![](https://github.com/HerbFargus/Super-Mario-War/blob/master/gfx/docs/i35.png)Lakitu's Cloud
 
-**Type: <font color="00cc33">World Map</font>**
+**Type: World Map**
 
 This item allows you to pass over a level without playing it. Great for bypassing a level with a mode you're not very good at!
 
 ### ![](https://github.com/HerbFargus/Super-Mario-War/blob/master/gfx/docs/i36.png)Swap Badge
 
-**Type: <font color="00cc33">World Map</font>**
+**Type: World Map**
 
 This useful item allows you to take control of the board from another player! Great for making sure you get a Mushroom House!
 
 ### ![](https://github.com/HerbFargus/Super-Mario-War/blob/master/gfx/docs/i37.png)Hourglass
 
-**Type: <font color="00cc33">World Map</font>**
+**Type: World Map**
 
 This item can be used to advance the map one turn. This will cause vehicles to move and bridges to lower or rise.
 
 ### ![](https://github.com/HerbFargus/Super-Mario-War/blob/master/gfx/docs/i38.png)Replay Block
 
-**Type: <font color="00cc33">World Map</font>**
+**Type: World Map**
 
 This item can be used to revive any level that's already been played. This includes Pipe Minigame levels and Mushroom Houses!
 
 ### ![](https://github.com/HerbFargus/Super-Mario-War/blob/master/gfx/docs/i39.png)Red Key
 
-**Type: <font color="00cc33">World Map</font>**
+**Type: World Map**
 
 This item is used to unlock red doors on a map. This key can only be used to open one door.
 
 ### ![](https://github.com/HerbFargus/Super-Mario-War/blob/master/gfx/docs/i40.png)Yellow Key
 
-**Type: <font color="00cc33">World Map</font>**
+**Type: World Map**
 
 This item is used to unlock yellow doors on a map. This key can only be used to open one door.
 
 ### ![](https://github.com/HerbFargus/Super-Mario-War/blob/master/gfx/docs/i41.png)Green Key
 
-**Type: <font color="00cc33">World Map</font>**
+**Type: World Map**
 
 This item is used to unlock green doors on a map. This key can only be used to open one door.
 
 ### ![](https://github.com/HerbFargus/Super-Mario-War/blob/master/gfx/docs/i42.png)Blue Key
 
-**Type: <font color="00cc33">World Map</font>**
+**Type: World Map**
 
 This item is used to unlock blue doors on a map. This key can only be used to open one door.
 
 ### ![](https://github.com/HerbFargus/Super-Mario-War/blob/master/gfx/docs/i43.png)X Coin
 
-**Type: <font color="00cc33">World Map</font>**
+**Type: World Map**
 
 This item can be used to negate the point value for a level. Simply use it on the map, and the next level played will have no point value. Keep in mind that using other score coins after using an X Coin cancels it out, and vice versa.
 
 ### ![](https://github.com/HerbFargus/Super-Mario-War/blob/master/gfx/docs/i44.png)+1 Coin
 
-**Type: <font color="00cc33">World Map</font>**
+**Type: World Map**
 
 This item can be used to add one to the point value for a level. Simply use it on the map, and the next level played will have a single point higher value. Keep in mind that using other score coins after using a +1 Coin cancels it out, and vice versa.
 
 ### ![](https://github.com/HerbFargus/Super-Mario-War/blob/master/gfx/docs/i45.png)+2 Coin
 
-**Type: <font color="00cc33">World Map</font>**
+**Type: World Map**
 
 This item can be used to add two to the point value for a level. Simply use it on the map, and the next level played will have a two point higher value. Keep in mind that using other score coins after using a +2 Coin cancels it out, and vice versa.
 
 ### ![](https://github.com/HerbFargus/Super-Mario-War/blob/master/gfx/docs/i46.png)+3 Coin
 
-**Type: <font color="00cc33">World Map</font>**
+**Type: World Map**
 
 This item can be used to add three to the point value for a level. Simply use it on the map, and the next level played will have a three point higher value. Keep in mind that using other score coins after using a +3 Coin cancels it out, and vice versa.
 
 ### ![](https://github.com/HerbFargus/Super-Mario-War/blob/master/gfx/docs/i47.png)x2 Coin
 
-**Type: <font color="00cc33">World Map</font>**
+**Type: World Map**
 
 This item can be used to double the point value for a level. Simply use it on the map, and the next level played will have twice the point value. Keep in mind that using other score coins after using a x2 Coin cancels it out, and vice versa.
 
 ### ![](https://github.com/HerbFargus/Super-Mario-War/blob/master/gfx/docs/i48.png)x3 Coin
 
-**Type: <font color="00cc33">World Map</font>**
+**Type: World Map**
 
 This item can be used to triple the point value for a level. Simply use it on the map, and the next level played will have three times the point value. Keep in mind that using other score coins after using a x3 Coin cancels it out, and vice versa.
 
 ### ![](https://github.com/HerbFargus/Super-Mario-War/blob/master/gfx/docs/i49.png)1-10 Green Spheres
 
-**Type: <font color="00cc33">World Map</font>**
+**Type: World Map**
 
 These items can only be obtained from Mushroom Houses, and are very useful. Getting any of the Green Spheres from a chest adds the number on the Sphere to your total points!
 
 ### ![](https://github.com/HerbFargus/Super-Mario-War/blob/master/gfx/docs/i50.png)1-10 Red Spheres
 
-**Type: <font color="00cc33">World Map</font>**
+**Type: World Map**
 
 These items can only be obtained from Mushroom Houses, and should be avoided! Getting any of the Red Spheres from a chest subtracts the number on the Sphere from your total points!
 
@@ -971,9 +974,9 @@ This can be set between 1 and 5, and it simply determines how many extra midair 
 
 With this, you can switch between Flat, SMB3, and Zelda styles.
 
-*   Flat style makes the boomerangs travel straight forward until they hit the edge of the screen, after which they "bounce" back and travel straight towards the other edge of the screen.  
-*   SMB3 style makes the boomerangs travel in a long forward arc before turning around and coming back in a straight line. 
-*   Zelda style makes the boomerangs travel straight forward for a short distance before turning around and seeking out the player that shot them.
+- Flat style makes the boomerangs travel straight forward until they hit the edge of the screen, after which they "bounce" back and travel straight towards the other edge of the screen.  
+- SMB3 style makes the boomerangs travel in a long forward arc before turning around and coming back in a straight line. 
+- Zelda style makes the boomerangs travel straight forward for a short distance before turning around and seeking out the player that shot them.
 
 #### Boomerang Life
 
@@ -1067,10 +1070,10 @@ This simply allows you to change between Fullscreen and Windowed modes. (This do
 
 This will take you to a menu where you can change various screen settings. **We are NOT responsible if you screw up your TV with these - use at your own risk!!**
 
-*   **Screen Resize** allows you to resize the picture on the screen so that it shows up better on your TV - use the left thumbstick to move the upper-left corner of the screen, the right thumbstick to move the lower-left corner of the screen, or press X to switch to a pre-set size.
-*   **Screen Filter** will change the method by which the picture is rendered on the screen. The different options are Point, Bilinear, Trilinear, Anisotropic, Quincunx, and Gaussian Cubic. The default is Bilinear. Different settings will look better or worse on different screens.   
-*   **Flicker Filter** will attempt to filter out the flicker which some TVs generate. It can be set between 0 and 5, with a default of 5\. Different settings will look better on different screens.  
-*   **Soften Filter** will add a softening effect (a blur) to the screen. It can be set to On or Off, default to Off.
+- **Screen Resize** allows you to resize the picture on the screen so that it shows up better on your TV - use the left thumbstick to move the upper-left corner of the screen, the right thumbstick to move the lower-left corner of the screen, or press X to switch to a pre-set size.
+- **Screen Filter** will change the method by which the picture is rendered on the screen. The different options are Point, Bilinear, Trilinear, Anisotropic, Quincunx, and Gaussian Cubic. The default is Bilinear. Different settings will look better or worse on different screens.   
+- **Flicker Filter** will attempt to filter out the flicker which some TVs generate. It can be set between 0 and 5, with a default of 5\. Different settings will look better on different screens.  
+- **Soften Filter** will add a softening effect (a blur) to the screen. It can be set to On or Off, default to Off.
 
 #### Menu, World, and Game Graphics
 
@@ -1082,20 +1085,20 @@ This allows you to select custom graphics packs if you have any installed on you
 
 This allows you to change the way players appear on the map.
 
-*   When set to **Instant**, players will simply appear out of nowhere.   
-*   When set to **Door**, players will drop out of doors, as in the original DOS Mario War. The door's appearance causes about one half second of extra delay between the start and end of spawning.  
-*   When set to **Swirl**, a large, colorful swirl will appear just before players spawn. This option makes the spawn very easy to spot, but also causes around one full second of extra delay.
+- When set to **Instant**, players will simply appear out of nowhere.   
+- When set to **Door**, players will drop out of doors, as in the original DOS Mario War. The door's appearance causes about one half second of extra delay between the start and end of spawning.  
+- When set to **Swirl**, a large, colorful swirl will appear just before players spawn. This option makes the spawn very easy to spot, but also causes around one full second of extra delay.
 
 #### Award Style
 
 This allows you to change the type of extra eyecandy shown on screen when a player gets three or more consecutive kills.
 
-*   **Fireworks** causes basic eyecandy to shoot out of the player, like a fireworks display.   
-*   **Spiral** causes basic eyecandy to spiral out from the player.   
-*   **Ring** causes small icons to circle the player. These icons represent the last 10 kill types (so, for example, when you hit someone with a fireball, you will receive a Fire Flower icon). When the player is killed, these icons will scatter.
-*   **Souls** causes nothing to be displayed until the player's chain of kills is broken, after which several icons will fly out of the dead player, representing the souls of the players he killed.  
-*   **Text** causes a simple text indicator to pop out of the player. (This is also the only option which gives an award for only 2 consecutive kills.)  
-*   **None** disables all effects.
+- **Fireworks** causes basic eyecandy to shoot out of the player, like a fireworks display.   
+- **Spiral** causes basic eyecandy to spiral out from the player.   
+- **Ring** causes small icons to circle the player. These icons represent the last 10 kill types (so, for example, when you hit someone with a fireball, you will receive a Fire Flower icon). When the player is killed, these icons will scatter.
+- **Souls** causes nothing to be displayed until the player's chain of kills is broken, after which several icons will fly out of the dead player, representing the souls of the players he killed.  
+- **Text** causes a simple text indicator to pop out of the player. (This is also the only option which gives an award for only 2 consecutive kills.)  
+- **None** disables all effects.
 
 #### Score Location
 
@@ -1177,162 +1180,156 @@ As a general rule, if you want to place something, you should click with the lef
 
 ### Controls
 
-<dl>
+>T
 
-<dt>T</dt>
+Brings up the tileset - select a tile by left clicking on it. You can scroll through the selected tileset with the arrow keys. You can also go to another page of tiles by pressing the number keys. Pressing a number that doesn't have a tileset assigned or any key aside from the number keys will simply return you to your map. (DON'T RIGHT CLICK ON TILES unless you want to change the type of tile it is; however, changes to tile types will only affect how they act on your machine, NOT the machines you distribute the maps to). Now you're in "Tile Mode". Look to the upper left corner for the mode you're in. Tiles are collision detected blocks that don't move or background non-collision detected images.
 
-<dd>Brings up the tileset - select a tile by left clicking on it. You can scroll through the selected tileset with the arrow keys. You can also go to another page of tiles by pressing the number keys. Pressing a number that doesn't have a tileset assigned or any key aside from the number keys will simply return you to your map. (DON'T RIGHT CLICK ON TILES unless you want to change the type of tile it is; however, changes to tile types will only affect how they act on your machine, NOT the machines you distribute the maps to). Now you're in "Tile Mode". Look to the upper left corner for the mode you're in. Tiles are collision detected blocks that don't move or background non-collision detected images.</dd>
+>I
 
-dt>I
+This brings up the interaction block set - select a block by left-clicking on it. Now you're in "Block Mode". For a list of blocks and their descriptions, see the Special Blocks section, above. Blocks can be placed over tiles without replacing the tile. So, for example, if a brick is placed over a tile block and in the game the player destroys the brick, then the tile block will become visible.
 
-<dd>This brings up the interaction block set - select a block by left-clicking on it. Now you're in "Block Mode". For a list of blocks and their descriptions, see the Special Blocks section, above. Blocks can be placed over tiles without replacing the tile. So, for example, if a brick is placed over a tile block and in the game the player destroys the brick, then the tile block will become visible.</dd>
+>O
 
-<dt>O</dt>
+This brings up the map items set - to select a map item, left click on it. Now you're in "Map Item Mode". Like interaction blocks, map items can be placed over tile blocks, but not over interaction blocks and vice versa.
 
-<dd>This brings up the map items set - to select a map item, left click on it. Now you're in "Map Item Mode". Like interaction blocks, map items can be placed over tile blocks, but not over interaction blocks and vice versa.</dd>
+>W
 
-<dt>W</dt>
+This brings up the warps set - select a warp by left clicking on it. Now you're in "Warp Mode". Warps face outward; this means that if you want a player to be able to warp down into a pipe below him, you should place an upward facing arrow on those blocks. All warps with the same number are considered connected, and players will randomly exit from another warp with the same number that they entered from.
 
-<dd>This brings up the warps set - select a warp by left clicking on it. Now you're in "Warp Mode". Warps face outward; this means that if you want a player to be able to warp down into a pipe below him, you should place an upward facing arrow on those blocks. All warps with the same number are considered connected, and players will randomly exit from another warp with the same number that they entered from.</dd>
+>M
 
-<dt>M</dt>
+This puts you into "Move Mode" - you can now select areas and items on the map and move them around. Pressing "M" again switches between the "Replace" and "Merge" options. "Replace" overlaps any and all tile blocks the selected area is moved over. "Merge" blends the selected area in with any tile blocks already placed in the map. First select an area so it is highlighted in red. Now click and hold on that area and move the mouse to drag it around. There are some more tools you can use to make this more powerful:
 
-<dd>This puts you into "Move Mode" - you can now select areas and items on the map and move them around. Pressing "M" again switches between the "Replace" and "Merge" options. "Replace" overlaps any and all tile blocks the selected area is moved over. "Merge" blends the selected area in with any tile blocks already placed in the map. First select an area so it is highlighted in red. Now click and hold on that area and move the mouse to drag it around. There are some more tools you can use to make this more powerful:
+- Shift - This allows you to select multiple areas at once. Hold down the shift key then select areas on the map. All the areas will stay selected.  
+- Ctrl - This allows you to select areas freehand. Hold down the left control key then select areas on the map. The areas are now selected just under the mouse instead of the drag select box.   
+- C - This will make a copy the areas currently selected. Move your mouse around to see what it will look like when you paste it back to the map. When you are happy with the placement of the copied areas, left click the mouse to add it to the map. If you want to abort the paste, right click the mouse.   
+- Delete - If you want to delete certain areas of the map, simply select them and hit the Delete or Backspace key.
 
-*   Shift - This allows you to select multiple areas at once. Hold down the shift key then select areas on the map. All the areas will stay selected.  
-*   Ctrl - This allows you to select areas freehand. Hold down the left control key then select areas on the map. The areas are now selected just under the mouse instead of the drag select box.   
-*   C - This will make a copy the areas currently selected. Move your mouse around to see what it will look like when you paste it back to the map. When you are happy with the placement of the copied areas, left click the mouse to add it to the map. If you want to abort the paste, right click the mouse.   
-*   Delete - If you want to delete certain areas of the map, simply select them and hit the Delete or Backspace key.</dd>
+>L
 
-<dt>L</dt>
+This brings up the Tile Types set - pick one by clicking on it. Now you're in "Tile Type Mode". Left-click to set tiles to the type you picked, or right-click to clear tile-types (players can move freely through a tile if there is no tile-type associated with it). Pressing "delete" in Tile Type Mode clears all the tile types throughout the map.
 
-<dd>This brings up the Tile Types set - pick one by clicking on it. Now you're in "Tile Type Mode". Left-click to set tiles to the type you picked, or right-click to clear tile-types (players can move freely through a tile if there is no tile-type associated with it). Pressing "delete" in Tile Type Mode clears all the tile types throughout the map.</dd>
+>P
 
-<dt>P</dt>
+This puts you into "Platform Mode" - from here, you can set up all the moving parts of your map. Here are the things you can do:
 
-<dd>This puts you into "Platform Mode" - from here, you can set up all the moving parts of your map. Here are the things you can do:
+- Click the "New" button and select a platform type to create a new platform. When creating a platform, the controls are more or less the same as when editing a map. (Bear in mind that you can create platforms anywhere on the screen. Also bear in mind that you can only put tiles into your platform - interactive blocks are not allowed.)   
+- If, instead of making a new platform, you'd like to edit an existing one, click on one of the numbered buttons.   
+- While making a platform, press P to change the path the platform will take. Use the left mouse button to place the starting point (green), and the right mouse button to place the endpoint (red). Holding the shift key while pressing a mouse button will snap the platform to a grid. While editing the path, pressing T will allow you to change the platform type, should you change your mind.   
+- A "Line Segment" type platform is the basic back and forth platform, it can travel at any angle that you choose.   
+- A "Continuous" type platform is similar to a "Line Segment" type, but it loops across the map continuously. Press the left mouse button to place the platform, and the right mouse button to alter the angle of the path.   
+- An "Ellipse" type platform is similar to a "Continuous" type, but instead of looping across the map, it loops in a circular motion. Press the left mouse button to set the point that the path rotates around, and the right mouse button to set where the platform starts on that path. Holding X while pressing the mouse button allows you to alter the X radius (height) of the circular path. Holding Z allows you to alter the Y radius (width). Holding C allows you to change the size of the circular path.   
+- While on the platform-making screen, press + or - to change the speed (and direction if you're making an Ellipse type) that the current platform will have. The current speed is shown at the top of the screen. If you're making an Ellipse type, the speed is shown as a slider between clockwise and counterclockwise.   
+- Press Delete while working on a platform to delete it altogether.
 
-*   Click the "New" button and select a platform type to create a new platform. When creating a platform, the controls are more or less the same as when editing a map. (Bear in mind that you can create platforms anywhere on the screen. Also bear in mind that you can only put tiles into your platform - interactive blocks are not allowed.)   
-*   If, instead of making a new platform, you'd like to edit an existing one, click on one of the numbered buttons.   
-*   While making a platform, press P to change the path the platform will take. Use the left mouse button to place the starting point (green), and the right mouse button to place the endpoint (red). Holding the shift key while pressing a mouse button will snap the platform to a grid. While editing the path, pressing T will allow you to change the platform type, should you change your mind.   
-*   A "Line Segment" type platform is the basic back and forth platform, it can travel at any angle that you choose.   
-*   A "Continuous" type platform is similar to a "Line Segment" type, but it loops across the map continuously. Press the left mouse button to place the platform, and the right mouse button to alter the angle of the path.   
-*   An "Ellipse" type platform is similar to a "Continuous" type, but instead of looping across the map, it loops in a circular motion. Press the left mouse button to set the point that the path rotates around, and the right mouse button to set where the platform starts on that path. Holding X while pressing the mouse button allows you to alter the X radius (height) of the circular path. Holding Z allows you to alter the Y radius (width). Holding C allows you to change the size of the circular path.   
-*   While on the platform-making screen, press + or - to change the speed (and direction if you're making an Ellipse type) that the current platform will have. The current speed is shown at the top of the screen. If you're making an Ellipse type, the speed is shown as a slider between clockwise and counterclockwise.   
-*   Press Delete while working on a platform to delete it altogether.</dd>
+>X
 
-<dt>X</dt>
+This puts you into "No Player Spawn Mode" - you can now select areas of the map that you don't want the players to spawn in, which will appear as grey boxes with grey Xs on them. This is useful if you have a part of your map that would cause problems if players could spawn there, such as places where it is impossible to get jumped on or to jump out of. While in No Player Spawn Mode, pressing 1-4 will allow you to designate team spawn areas. Pressing A will fill the map with marks for the selected spawn type. Pressing N will remove all marks for the selected spawn type.
 
-<dd>This puts you into "No Player Spawn Mode" - you can now select areas of the map that you don't want the players to spawn in, which will appear as grey boxes with grey Xs on them. This is useful if you have a part of your map that would cause problems if players could spawn there, such as places where it is impossible to get jumped on or to jump out of. While in No Player Spawn Mode, pressing 1-4 will allow you to designate team spawn areas. Pressing A will fill the map with marks for the selected spawn type. Pressing N will remove all marks for the selected spawn type.</dd>
+>Z
 
-<dt>Z</dt>
+This puts you into "No Item Spawn Mode" - you can now select places on the map that you don't want mode objects (such as coins, eggs, and bases) to appear. These areas will appear as green boxes with red Xs on them. These should be used to keep important things from appearing in places that players cannot reach.
 
-<dd>This puts you into "No Item Spawn Mode" - you can now select places on the map that you don't want mode objects (such as coins, eggs, and bases) to appear. These areas will appear as green boxes with red Xs on them. These should be used to keep important things from appearing in places that players cannot reach.</dd>
+>H
 
-<dt>H</dt>
+This puts you into "Map Hazards Mode" - from here, you can set up any dangerous elements you want in your map. Here are the things you can do:
 
-<dd>This puts you into "Map Hazards Mode" - from here, you can set up any dangerous elements you want in your map. Here are the things you can do:
+- Click the "New" button and select a hazard type to create a new hazard. When creating a hazard, the controls are more or less the same as when editing a map. (Bear in mind that you can create hazards anywhere on the screen.)  
+- If, instead of making a new hazard, you'd like to edit an existing one, click on one of the numbered buttons.  
+- Keep in mind that, like platforms, pressing delete while working on a hazard will delete it altogether.
 
-*   Click the "New" button and select a hazard type to create a new hazard. When creating a hazard, the controls are more or less the same as when editing a map. (Bear in mind that you can create hazards anywhere on the screen.)  
-*   If, instead of making a new hazard, you'd like to edit an existing one, click on one of the numbered buttons.  
-*   Keep in mind that, like platforms, pressing delete while working on a hazard will delete it altogether.</dd>
+- When making a "Fireballs" hazard, the left mouse button sets the location of the hazard on the map. Pressing P allows you to edit the properties, where you can set the starting point of the hazard's rotation, the radius, and the speed. Pressing L allows you to change the location of the hazard again, should you change your mind.   
+- When making a "Rotodisc" hazard, the left mouse button sets the location of the hazard on the map. Pressing P allows you to edit the properties, where you can set the starting point of the hazard's rotation, the radius, the speed, and the number of Rotodiscs rotating around the selected point. Pressing L allows you to change the location of the hazard again, should you change your mind.   
+- When making a "Bullet Bill" hazard, the left mouse button sets the location of the hazard on the map. Pressing P allows you to edit the properties, where you can set the direction of the hazard, the frequency at which it fires, and the speed. Pressing L allows you to change the location of the hazard again, should you change your mind.  
+- When making a "Flame" hazard, the left mouse button sets the location of the hazard on the map. Pressing P allows you to edit the properties, where you can set the direction of the hazard, and the frequency at which it fires. Pressing L allows you to change the location of the hazard again, should you change your mind.  
+- When making a "Green Pirhana" hazard, the left mouse button sets the location of the hazard on the map. Pressing P allows you to edit the properties, where you can set the direction of the hazard, and the frequency at which it appears. Pressing L allows you to change the location of the hazard again, should you change your mind.  
+- When making a "Red Pirhana" hazard, the left mouse button sets the location of the hazard on the map. Pressing P allows you to edit the properties, where you can set the direction of the hazard, and the frequency at which it appears. Pressing L allows you to change the location of the hazard again, should you change your mind.   
+- When making a "Tall Pirhana" hazard, the left mouse button sets the location of the hazard on the map. Pressing P allows you to edit the properties, where you can set the direction of the hazard, and the frequency at which it appears. Pressing L allows you to change the location of the hazard again, should you change your mind.   
+- When making a "Short Pirhana" hazard, the left mouse button sets the location of the hazard on the map. Pressing P allows you to edit the properties, where you can set the direction of the hazard, and the frequency at which it appears. Pressing L allows you to change the location of the hazard again, should you change your mind.
 
-*   When making a "Fireballs" hazard, the left mouse button sets the location of the hazard on the map. Pressing P allows you to edit the properties, where you can set the starting point of the hazard's rotation, the radius, and the speed. Pressing L allows you to change the location of the hazard again, should you change your mind.   
-*   When making a "Rotodisc" hazard, the left mouse button sets the location of the hazard on the map. Pressing P allows you to edit the properties, where you can set the starting point of the hazard's rotation, the radius, the speed, and the number of Rotodiscs rotating around the selected point. Pressing L allows you to change the location of the hazard again, should you change your mind.   
-*   When making a "Bullet Bill" hazard, the left mouse button sets the location of the hazard on the map. Pressing P allows you to edit the properties, where you can set the direction of the hazard, the frequency at which it fires, and the speed. Pressing L allows you to change the location of the hazard again, should you change your mind.  
-*   When making a "Flame" hazard, the left mouse button sets the location of the hazard on the map. Pressing P allows you to edit the properties, where you can set the direction of the hazard, and the frequency at which it fires. Pressing L allows you to change the location of the hazard again, should you change your mind.  
-*   When making a "Green Pirhana" hazard, the left mouse button sets the location of the hazard on the map. Pressing P allows you to edit the properties, where you can set the direction of the hazard, and the frequency at which it appears. Pressing L allows you to change the location of the hazard again, should you change your mind.  
-*   When making a "Red Pirhana" hazard, the left mouse button sets the location of the hazard on the map. Pressing P allows you to edit the properties, where you can set the direction of the hazard, and the frequency at which it appears. Pressing L allows you to change the location of the hazard again, should you change your mind.   
-*   When making a "Tall Pirhana" hazard, the left mouse button sets the location of the hazard on the map. Pressing P allows you to edit the properties, where you can set the direction of the hazard, and the frequency at which it appears. Pressing L allows you to change the location of the hazard again, should you change your mind.   
-*   When making a "Short Pirhana" hazard, the left mouse button sets the location of the hazard on the map. Pressing P allows you to edit the properties, where you can set the direction of the hazard, and the frequency at which it appears. Pressing L allows you to change the location of the hazard again, should you change your mind.
+>A
 
-<dt>A</dt>
+Pressing A will brings up the animated tileset. Select a tile by left clicking on it. This puts you into "Animated Tile Mode". Animated tiles are like regular tiles, but are really just for looks. They don't have a tile type of their own, so you have to place one over the animated tile yourself.
 
-<dd>Pressing A will brings up the animated tileset. Select a tile by left clicking on it. This puts you into "Animated Tile Mode". Animated tiles are like regular tiles, but are really just for looks. They don't have a tile type of their own, so you have to place one over the animated tile yourself.</dd>
+>K
 
-<dt>K</dt>
+Pressing K while holding the cursor over an Item Block, View Block, Note Block, Flip block, or Bounce Block will bring up a few options, depending on the block. Item and View Blocks will bring up an item weight menu, where you can set which items can be knocked out of the block. There is also an checkbox that, if marked, will make the block use the game's item weights. Along with the Item and View Block, all of the other blocks mentioned have a checkbox that, when marked, makes it a hidden block. For more information on hidden blocks, check the Special Blocks section further up.
 
-<dd>Pressing K while holding the cursor over an Item Block, View Block, Note Block, Flip block, or Bounce Block will bring up a few options, depending on the block. Item and View Blocks will bring up an item weight menu, where you can set which items can be knocked out of the block. There is also an checkbox that, if marked, will make the block use the game's item weights. Along with the Item and View Block, all of the other blocks mentioned have a checkbox that, when marked, makes it a hidden block. For more information on hidden blocks, check the Special Blocks section further up.</dd>
+>V
 
-<dt>V</dt>
+Pressing V will hide all the interactive blocks on the map so you can see what's behind them.
 
-<dd>Pressing V will hide all the interactive blocks on the map so you can see what's behind them.</dd>
+>Y
 
-<dt>Y</dt>
+Since there are 4 layers to a map, you need to be able to select which layer you want to add tiles to. Use the "Y" key to do this. On the upper left, you'll see a little 0,1,2,3 icon. The colored number is the layer you are currently working with. When you add tiles, they will be added to this layer. The layers are ordered, with 0 being the bottom-most layer, and 3 being the top-most. You can use this key in conjuction with the "U" key to view just a single layer.
 
-<dd>Since there are 4 layers to a map, you need to be able to select which layer you want to add tiles to. Use the "Y" key to do this. On the upper left, you'll see a little 0,1,2,3 icon. The colored number is the layer you are currently working with. When you add tiles, they will be added to this layer. The layers are ordered, with 0 being the bottom-most layer, and 3 being the top-most. You can use this key in conjuction with the "U" key to view just a single layer.</dd>
+>U
 
-<dt>U</dt>
+Toggles viewing just the selected layer or all the layers at once. Sometimes it is helpful to just be able to modify a single layer without having to look at everything else.
 
-<dd>Toggles viewing just the selected layer or all the layers at once. Sometimes it is helpful to just be able to modify a single layer without having to look at everything else.</dd>
+>End
 
-<dt>End</dt>
+Optimizes the layers. This essentially moves all solid tiles down to the deepest available layer. There is a performance hit for tiles in layers 2 and 3 of the map. You should try to place as many solid tiles that a player would never be behind in layers 0 and 1\. This optimize tool helps you do that. Save your map prior to using this feature because it can split up tiles across layers which makes the map hard to work on after you optimize it. Optimized maps should behave in the game exactly the same way unoptimized maps do, except for the fact that they will not tax your machine as much.
 
-<dd>Optimizes the layers. This essentially moves all solid tiles down to the deepest available layer. There is a performance hit for tiles in layers 2 and 3 of the map. You should try to place as many solid tiles that a player would never be behind in layers 0 and 1\. This optimize tool helps you do that. Save your map prior to using this feature because it can split up tiles across layers which makes the map hard to work on after you optimize it. Optimized maps should behave in the game exactly the same way unoptimized maps do, except for the fact that they will not tax your machine as much.</dd>
+>B
 
-<dt>B</dt>
+This will bring up a menu of background thumbnails. Press Page Up or Page Down to view more thumbs. Left-click a background to select it and use its music category as well, or right-click a background to select it without selecting its music category.
 
-<dd>This will bring up a menu of background thumbnails. Press Page Up or Page Down to view more thumbs. Left-click a background to select it and use its music category as well, or right-click a background to select it without selecting its music category.</dd>
+>G
 
-<dt>G</dt>
+This will change the current map's background image.
 
-<dd>This will change the current map's background image.</dd>
+>R
 
-<dt>R</dt>
+This will change the current map's music category. This affects what songs, out of the current music pack, that the game will decide to play when you use this map.
 
-<dd>This will change the current map's music category. This affects what songs, out of the current music pack, that the game will decide to play when you use this map.</dd>
+>E
 
-<dt>E</dt>
+This will bring up a dialog which will allow you to select what kind, if any, of extra eyecandy you want on the map.
 
-<dd>This will bring up a dialog which will allow you to select what kind, if any, of extra eyecandy you want on the map.</dd>
+>CTRL + DELETE
 
-<dt>CTRL + DELETE</dt>
+This will clear all tiles and blocks from the current map.
 
-<dd>This will clear all tiles and blocks from the current map.</dd>
+>Insert
 
-<dt>Insert</dt>
+As mentioned before, this will take a set of three screenshots of the currently selected map.
 
-<dd>As mentioned before, this will take a set of three screenshots of the currently selected map.</dd>
+>N
 
-<dt>N</dt>
+Creates a new map with the current map's background. You will be prompted to enter a name for the new map.
 
-<dd>Creates a new map with the current map's background. You will be prompted to enter a name for the new map.</dd>
+>S
 
-<dt>S</dt>
+As stated above, this key will immediately save the map to the name in the upper right corner of the screen.
 
-<dd>As stated above, this key will immediately save the map to the name in the upper right corner of the screen.</dd>
+>Shift + S
 
-<dt>Shift + S</dt>
+This allows you to save another copy of the map with a new name. However, the editor will not switch to that copy - if you want to work on the new map, you'll have to go select it yourself (although you can use Shift + F to find it, as explained below).
 
-<dd>This allows you to save another copy of the map with a new name. However, the editor will not switch to that copy - if you want to work on the new map, you'll have to go select it yourself (although you can use Shift + F to find it, as explained below).</dd>
+>Shift + F
 
-<dt>Shift + F</dt>
+Find a map by name - This will bring up a dialog where you can enter part of a map name and it will open the first map whose filename contains a match for that string (if no map matches, the program will stay on the current map). You can then repeatedly press F to view all the maps that match that string.
 
-<dd>Find a map by name - This will bring up a dialog where you can enter part of a map name and it will open the first map whose filename contains a match for that string (if no map matches, the program will stay on the current map). You can then repeatedly press F to view all the maps that match that string.</dd>
+>F
 
-<dt>F</dt>
+Repeatedly press the F key to view all the maps that match the current find string. If you haven't used "Shift + F" yet, pressing F will bring up the find dialog.
 
-<dd>Repeatedly press the F key to view all the maps that match the current find string. If you haven't used "Shift + F" yet, pressing F will bring up the find dialog.</dd>
+>Page Up/Page Down
 
-<dt>Page Up/Page Down</dt>
+This will immediately go to the previous or next map in the list, respectively. Don't forget to save before using these!
 
-<dd>This will immediately go to the previous or next map in the list, respectively. Don't forget to save before using these!</dd>
+>Left click
 
-<dt>Left click</dt>
+This will simply place a tile in the currently selected layer, or place a block in the block layer.
 
-<dd>This will simply place a tile in the currently selected layer, or place a block in the block layer.</dd>
+>Right click
 
-<dt>Right click</dt>
+This will remove tiles and blocks from the currently selected layer.
 
-<dd>This will remove tiles and blocks from the currently selected layer.</dd>
+>ESC
 
-<dt>ESC</dt>
-
-<dd>Exits back to Tile Mode if in any other mode. If in Tile Mode, ESC exits the level editor.</dd>
-
-</dl>
-
-
+Exits back to Tile Mode if in any other mode. If in Tile Mode, ESC exits the level editor.
 
 ## World Editor
 
@@ -1356,97 +1353,93 @@ As a general rule, if you want to place something, you should click with the lef
 
 ### Controls
 
-<dl>
+>1
 
-<dt>1</dt>
+Brings up the choice of water types to place on a world map. After you select a water type, click on the world map to place the selected water type. This can be used to make areas of light water, dark water, or lava in a world map.
 
-<dd>Brings up the choice of water types to place on a world map. After you select a water type, click on the world map to place the selected water type. This can be used to make areas of light water, dark water, or lava in a world map.</dd>
+>2
 
-<dt>2</dt>
+Brings up the choice of land types to place on a world map. There are two pages you can choose from by pressing the number for that page. After you select a land type, the world map editor changes to Background Mode. This is used to place the land that players travel along to play through a world map.
 
-<dd>Brings up the choice of land types to place on a world map. There are two pages you can choose from by pressing the number for that page. After you select a land type, the world map editor changes to Background Mode. This is used to place the land that players travel along to play through a world map.</dd>
+>3
 
-<dt>3</dt>
+Brings up the choice of objects you can place on a world map. There are six pages you can choose from by pressing the number for that page. After you select an object type, the world map editor changes to Foreground Mode. This is used to place level tiles, hills, and more across the land players travel along.
 
-<dd>Brings up the choice of objects you can place on a world map. There are six pages you can choose from by pressing the number for that page. After you select an object type, the world map editor changes to Foreground Mode. This is used to place level tiles, hills, and more across the land players travel along.</dd>
+>4
 
-<dt>4</dt>
+Brings up the choice of paths you can place on a world map. After you select a path type, the world editor changes to Path Mode. This is used to place the paths players travel along on a world map.
 
-<dd>Brings up the choice of paths you can place on a world map. After you select a path type, the world editor changes to Path Mode. This is used to place the paths players travel along on a world map.</dd>
+>P
 
-<dt>P</dt>
+Brings up the choice of connection paths you can place on a world map. After you select a path type, the world editor changes to Path Sprite Mode. This is used to place the actual paths players travel along. Without these, players cannot move through a world map, so be sure to place these along the paths on your world map!
 
-<dd>Brings up the choice of connection paths you can place on a world map. After you select a path type, the world editor changes to Path Sprite Mode. This is used to place the actual paths players travel along. Without these, players cannot move through a world map, so be sure to place these along the paths on your world map!</dd>
+>W
 
-<dt>W</dt>
+Brings up a choice of 10 warp connections. After you select a connection, the world editor changes to Warp Mode. This is used to set up warp pipes on a world map for players to use.
 
-<dd>Brings up a choice of 10 warp connections. After you select a connection, the world editor changes to Warp Mode. This is used to set up warp pipes on a world map for players to use.</dd>
+>V
 
-<dt>V</dt>
+Brings up a choice of vehicles to place on a world map. After you select a vehicle, the world editor changes to Vehicle Mode. This is used to place mobile levels on a world map. Keep in mind that these require further editing in the txt file.
 
-<dd>Brings up a choice of vehicles to place on a world map. After you select a vehicle, the world editor changes to Vehicle Mode. This is used to place mobile levels on a world map. Keep in mind that these require further editing in the txt file.</dd>
+>T
 
-<dt>T</dt>
+Brings up a choice of start tiles and locks to place on a world map. After you select a tile or lock, the world editor changes to Stage Mode. This is used to place start tiles or locks on a world map. This is used to place levels onto a world map after you've edited a list of levels into the txt file.
 
-<dd>Brings up a choice of start tiles and locks to place on a world map. After you select a tile or lock, the world editor changes to Stage Mode. This is used to place start tiles or locks on a world map. This is used to place levels onto a world map after you've edited a list of levels into the txt file.</dd>
+>B
 
-<dt>B</dt>
+Brings up a choice of vehicle boundaries to place on a world map. After you select a vehicle boundary, the world editor changes to Boundary Mode. This is used to place limits on the movement range of vehicles.
 
-<dd>Brings up a choice of vehicle boundaries to place on a world map. After you select a vehicle boundary, the world editor changes to Boundary Mode. This is used to place limits on the movement range of vehicles.</dd>
+>N
 
-<dt>N</dt>
+Creates a new world map. You will be prompted to enter a name and set the height and width for the new world map.
 
-<dd>Creates a new world map. You will be prompted to enter a name and set the height and width for the new world map.</dd>
+>S
 
-<dt>S</dt>
+As stated above, this key will immediately save the world map to the name in the upper right corner of the screen.
 
-<dd>As stated above, this key will immediately save the world map to the name in the upper right corner of the screen.</dd>
+>Shift + S
 
-<dt>Shift + S</dt>
+This allows you to save another copy of the world map with a new name. However, the editor will not switch to that copy - if you want to work on the new world map, you'll have to go select it yourself (although you can use Shift + F to find it, as explained below).
 
-<dd>This allows you to save another copy of the world map with a new name. However, the editor will not switch to that copy - if you want to work on the new world map, you'll have to go select it yourself (although you can use Shift + F to find it, as explained below).</dd>
+>Shift + F
 
-<dt>Shift + F</dt>
+Find a world map by name - This will bring up a dialog where you can enter part of a world map name and it will open the first world map whose filename contains a match for that string (if no world map matches, the program will stay on the current world map). You can then repeatedly press F to view all the world maps that match that string.
 
-<dd>Find a world map by name - This will bring up a dialog where you can enter part of a world map name and it will open the first world map whose filename contains a match for that string (if no world map matches, the program will stay on the current world map). You can then repeatedly press F to view all the world maps that match that string.</dd>
+>F
 
-<dt>F</dt>
+Repeatedly press the F key to view all the world maps that match the current find string. If you haven't used "Shift + F" yet, pressing F will bring up the find dialog.
 
-<dd>Repeatedly press the F key to view all the world maps that match the current find string. If you haven't used "Shift + F" yet, pressing F will bring up the find dialog.</dd>
+>Page Up/Page Down
 
-<dt>Page Up/Page Down</dt>
+This will immediately go to the previous or next world map in the list, respectively. Don't forget to save before using these!
 
-<dd>This will immediately go to the previous or next world map in the list, respectively. Don't forget to save before using these!</dd>
+>Left click
 
-<dt>Left click</dt>
+This will simply place the select tile in the currently selected mode. Foreground objects, path graphics, and start tiles are on the same layers, so they can't be placed over each other.
 
-<dd>This will simply place the select tile in the currently selected mode. Foreground objects, path graphics, and start tiles are on the same layers, so they can't be placed over each other.</dd>
+>Right click
 
-<dt>Right click</dt>
+This will remove objects from the world map in the currently selected mode.
 
-<dd>This will remove objects from the world map in the currently selected mode.</dd>
+>R
 
-<dt>R</dt>
+This changes the music category for the selected world map. This affects what songs, out of the current music pack, that the game will decide to play when you use this world map.
 
-<dd>This changes the music category for the selected world map. This affects what songs, out of the current music pack, that the game will decide to play when you use this world map.</dd>
+>Arrow Keys
 
-<dt>Arrow Keys</dt>
+This is used to navigate the currrently selected world map.
 
-<dd>This is used to navigate the currrently selected world map.</dd>
+>A
 
-<dt>A</dt>
+This is used to toggle the Auto Paint option for connection paths and land. This can be used to gain more control over the layout of the land and path connections you place on a world map.
 
-<dd>This is used to toggle the Auto Paint option for connection paths and land. This can be used to gain more control over the layout of the land and path connections you place on a world map.</dd>
+>CTRL + DELETE
 
-<dt>CTRL + DELETE</dt>
+This is used to clear everything from a world map and start over from scratch.
 
-<dd>This is used to clear everything from a world map and start over from scratch.</dd>
+>ESC
 
-<dt>ESC</dt>
-
-<dd>Exits back to Background Mode. If already in Background Mode, ESC exits out of the world map editor.</dd>
-
-</dl>
+Exits back to Background Mode. If already in Background Mode, ESC exits out of the world map editor.
 
 ### 
 Have fun, and don't forget to [visit our website!](http://supermariowar.supersanctuary.net/)
