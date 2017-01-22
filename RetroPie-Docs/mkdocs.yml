@@ -1,0 +1,182 @@
+site_name: RetroPie Docs
+theme: material
+extra:
+  logo: 'images/logo.svg'
+  palette:
+    primary: 'red'
+    accent: 'red'
+  social:
+    - type: 'github'
+      link: 'https://github.com/RetroPie'
+    - type: 'twitter'
+      link: 'https://twitter.com/retropieproject'
+extra_css:
+  - 'stylesheets/extra.css'
+repo_name: 'RetroPie-Setup'
+repo_url: 'https://github.com/RetroPie/RetroPie-Setup'
+
+copyright: 'Copyright &copy; 2017 The RetroPie Project'
+      
+pages:
+- Home: index.md
+- First Installation: First-Installation.md
+- Getting Started: 
+    - Arcade Quick Start: Managing-ROMs.md
+    - Transferring Roms: Transferring-Roms.md
+    - Scraper: Scraper.md
+    - Themes: Themes.md
+    - Runcommand: Runcommand.md
+    - Updating RetroPie: Updating-RetroPie.md
+    - SSH: SSH.md
+    - Wifi: Wifi.md
+- Emulators:
+    - 3do: 3do.md
+    - Amiga: Amiga.md
+    - Amstrad CPC: Amstrad-CPC.md
+    - Apple II: Apple-II.md
+    - Atari 2600: Atari-2600.md
+    - Atari 7800: Atari-7800.md
+    - Atari 800 and 5200: Atari-800-and-5200.md
+    - Atari Jaguar: Atari-Jaguar.md
+    - Atari Lynx: Atari-Lynx.md
+    - Atari ST-STE-TT-Falcon: Atari-ST-STE-TT-Falcon.md
+    - Coco: Coco.md
+    - Colecovision: Colecovision.md
+    - Commodore 64: Commodore-64.md
+    - Daphne: Daphne.md
+    - Dragon: Dragon.md
+    - Dreamcast: Dreamcast.md
+    - FinalBurn Alpha: FinalBurn-Alpha.md
+    - Game Boy Advance: Game-Boy-Advance.md
+    - Game Boy Color: Game-Boy-Color.md
+    - Game Boy: Game-Boy.md
+    - GameCube: GameCube.md
+    - Game Gear: Game-Gear.md
+    - Game & Watch: Game-&-Watch.md
+    - GemRB: GemRB.md
+    - Genesis/Megadrive: Genesis-Megadrive.md
+    - Intellivision: Intellivision.md
+    - Love: Love.md
+    - lr-fbalpha: lr-fbalpha.md
+    - lr-mame2003: lr-mame2003.md
+    - Macintosh: Macintosh.md
+    - MAME: MAME.md
+    - Master System: Master-System.md
+    - MESS: MESS.md
+    - MSX: MSX.md
+    - Neo Geo: Neo-Geo.md
+    - Neo Geo Pocket Color: Neo-Geo-Pocket-Color.md
+    - Neo Geo Pocket: Neo-Geo-Pocket.md
+    - Nintendo 64: Nintendo-64.md
+    - Nintendo DS: Nintendo-DS.md
+    - Nintendo Entertainment System: Nintendo-Entertainment-System.md
+    - OpenBOR: OpenBOR.md
+    - Oric: Oric.md
+    - PC Engine: PC-Engine.md
+    - PC: PC.md
+    - Playstation 1: Playstation-1.md
+    - Playstation 2: Playstation-2.md
+    - PSP: PSP.md
+    - Sam Coupe: Sam-Coupe.md
+    - Saturn: Saturn.md
+    - ScummVM: ScummVM.md
+    - Sega 32X: Sega-32X.md
+    - Sega CD: Sega-CD.md
+    - SG 1000: SG-1000.md
+    - Super Nintendo Entertainment System: Super-Nintendo-Entertainment-System.md
+    - TI99: TI99.md
+    - TRS-80: TRS-80.md
+    - Vectrex: Vectrex.md
+    - VideoPac / Odyssey 2: VideoPac-Odyssey-2.md
+    - Virtual Boy: Virtual-Boy.md
+    - Wii: Wii.md
+    - Wonderswan Color: Wonderswan-Color.md
+    - WonderSwan: WonderSwan.md
+    - Zmachine: Zmachine.md
+    - ZX Spectrum: ZX-Spectrum.md
+- Ports: 
+    - Adventure Game Studio: Adventure-Game-Studio.md
+    - Cannonball: Cannonball.md
+    - CaveStory: CaveStory.md
+    - Commander Keen: Commander-Keen.md
+    - Descent: Descent.md
+    - Dinothawr: Dinothawr.md
+    - Doom: Doom.md
+    - Duke Nukem 3D: Duke-Nukem-3D.md
+    - GameMaker Games: GameMaker-Games.md
+    - KODI: KODI.md
+    - Limelight: Limelight.md
+    - Lincity: Lincity.md
+    - Marathon: Marathon.md
+    - Micropolis: Micropolis.md
+    - Minecraft: Minecraft.md
+    - OpenTTD: OpenTTD.md
+    - OpenTyrian: OpenTyrian.md
+    - Ports: Ports.md
+    - Quake: Quake.md
+    - ResidualVM: ResidualVM.md
+    - SDLPoP: SDLPoP.md
+    - Solarus: Solarus.md
+    - Stratagus: Stratagus.md
+    - Super Mario War: Super-Mario-War.md
+    - SuperTux: SuperTux.md
+    - The Ur Quan Masters: The-Ur-Quan-Masters.md
+    - Wolfenstein 3D: Wolfenstein-3D.md
+    - Xrick: Xrick.md
+- Controllers:
+    - Bluetooth: Setting-up-a-Bluetooth-controller.md
+    - 8bitdo: Setting-up-an-8bitdo-Bluetooth-controller.md
+    - N64: Setting-up-an-N64-controller.md
+    - PS3: Setting-up-a-PS3-controller.md
+    - PS4: Setting-up-a-PS4-controller.md
+    - Ouya: Setting-up-a-Wireless-Ouya-Controller.md
+    - XBox 360: Setting-up-the-XBox360-controller.md
+    - Logitech: Logitech-controllers.md
+    - Xiaomi Gamepad: Xiaomi-Gamepad.md
+    - Xin-Mo: Xin-Mo-Controller.md
+    - Spinners and Trackballs: Spinners-and-Trackballs.md
+    - Mobile Gamepad: Mobile-Gamepad.md
+    - Virtual Gamepad: Virtual-Gamepad.md
+    - Wii U Pro: Setting-up-Wii-U-Pro-controller.md
+    - Wiimotes with classic controllers: Wiimotes-with-classic-controllers.md
+    - GPIO Modules: GPIO-Modules.md
+- Advanced Configuration:
+    - BIOS: BIOS.md
+    - Changelogs: Changelogs.md
+    - Configuration Editor: Configuration-Editor.md
+    - Mapping a Controller for Intellivision: Mapping-a-Controller-for-Intellivision.md
+    - Memory Split: Memory-Split.md
+    - Optimization for Nintendo 64: Optimization-for-Nintendo-64.md
+    - Overclocking: Overclocking.md
+    - Running ROMs from a Network Share: Running-ROMs-from-a-Network-Share.md
+    - Running ROMs from a USB drive: Running-ROMs-from-a-USB-drive.md
+    - Splashscreen: Splashscreen.md
+    - Supported Systems: Supported-Systems.md
+    - Take and Scrape Your Own Screenshots: Take-and-Scrape-Your-Own-Screenshots.md
+    - Universal Controller Calibration & Mapping Using xboxdrv: Universal-Controller-Calibration-&-Mapping-Using-xboxdrv.md
+- RetroArch:
+    - RetroArch: RetroArch.md
+    - RetroArch Configuration: RetroArch-Configuration.md
+    - RetroAchievements: RetroAchievements.md
+    - Netplay: Netplay.md
+    - Shaders and Smoothing: Shaders-and-Smoothing.md
+    - Smaller RetroArch Screen: Smaller-RetroArch-Screen.md
+- EmulationStation:
+    - EmulationStation: EmulationStation.md
+    - Child friendly EmulationStation: Child-friendly-EmulationStation.md
+    - Creating Your Own EmulationStation Theme: Creating-Your-Own-EmulationStation-Theme.md
+- Platforms:
+    - Raspbian: Manual-Installation.md
+    - Ubuntu: RetroPie-Ubuntu-16.04-LTS-x86-Flavor.md
+    - Odroid: Odroid.md
+    - Arch Linux: RetroPie-Arch-Linux-Flavor.md
+    - OSMC: RetroPie-install-for-OSMC-with-external-memory-USB-Drive.md
+- Troubleshooting:
+    - FAQ: FAQ.md
+    - Sound Issues: Sound-Issues.md
+    - Speed Issues: Speed-Issues.md
+    - Video Issues: Video-Issues.md
+- Developers:
+    - Building RetroPie Archives: Building-RetroPie-Archives.md
+    - Convert RetroPie SD Card Image to NOOBS Image: Convert-RetroPie-SD-Card-Image-to-NOOBS-Image.md
+    - Shell Style Guide: Shell-Style-Guide.md
