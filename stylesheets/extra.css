@@ -10,6 +10,18 @@
 }
 */
 
+[data-md-color-primary="red"] .md-nav__source {
+    background-color: rgba(70,70,70,.9675);
+}
+
+[data-md-color-primary="red"] .md-header {
+    background-color: #000;
+}
+
+html [data-md-color-primary="red"] .md-nav--primary .md-nav__title--site {
+    background-color: #000;
+}
+
 .md-header-nav__button.md-logo img {
     display: block;
     height: 50px;
