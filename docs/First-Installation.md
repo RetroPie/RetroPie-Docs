@@ -72,6 +72,8 @@ To install the RetroPie SD image on your MicroSD card. (You may need a MicroSD c
 2. For mac you can use [Apple Pi Baker](http://www.tweaking4all.com/hardware/raspberry-pi/macosx-apple-pi-baker/) 
 3. For Linux you can use `dd` command or [Etcher](https://etcher.io/)
 
+See [the official Raspberry Pi "WRITING AN IMAGE TO THE SD CARD" instructions](https://www.raspberrypi.org/documentation/installation/installing-images/).
+
 **Note** RetroPie is built on top of Raspbian (a linux based OS for the Raspberry Pi) and as such the partition on the SD card is EXT4 (a linux filesystem) which is not visible on windows systems, so the card will show up as a smaller size than usual and you wont be able to see everything on the card, but it is all there. You will be able to access the filesystem over the network as described in the transferring roms section below.
 
 If you're updating from a previous version of retropie see [**HERE**](Updating-RetroPie)
