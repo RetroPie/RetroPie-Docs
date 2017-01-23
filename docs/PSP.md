@@ -26,7 +26,7 @@ Place your PSP ROMs in
 
 ### lr-ppsspp
 
-lr-ppsspp utilises Retroarch configurations
+lr-ppsspp use Retroarch configurations
 
 Add custom retroarch controls to the retroarch.cfg file in
 ```shell
