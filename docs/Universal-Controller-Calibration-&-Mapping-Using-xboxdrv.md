@@ -197,7 +197,7 @@ Press 'Enter" and type the following:
 ```
 #!/bin/sh
 ```
-On a line below that, we will wrap our xboxdrv configuration for ScummVM inside a simple if/else statement, beginning with `if [ "$1" = "scummvm" ]` and ending with `fi`. When using this technique for other emulators/ports, you would of course replace "scummvm" with the appropriate name that can be found used also as the folder name for the system/port in either `/opt/retropie/configs/` or `/opt/retropie/configs/ports`. We're also going to prevent any unsightly messages from being printed to the screen, we'll add `> /dev/null 2>&1` after every command that would otherwise give visual feedback. It is important to note that while troubleshooting any problems, it may become necessary to temporarily remove these entries so that errors that might give insight the cause can be seen. Below we see the full example in practice:
+On a line below that, we will wrap our xboxdrv configuration for ScummVM inside a simple if/else statement, beginning with `if [ "$1" = "scummvm" ]` and ending with `fi`. When using this technique for other emulators/ports, you would of course replace "scummvm" with the appropriate name that can be found used also as the folder name for the system/port in either `/opt/retropie/configs/` or `/opt/retropie/configs/ports`. We're also going to prevent any unsightly messages from being printed to the screen, we'll add `> /dev/null 2>&1` after every command that would otherwise give visual feedback. It is important to note that while troubleshooting any problems, it may become necessary to temporarily remove these entries so that errors that might give insight as to the cause can be seen. Below we see the full example in practice:
 
 ```
 if [ "$1" = "scummvm" ]
