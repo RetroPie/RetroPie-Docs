@@ -107,7 +107,7 @@ Press 'Enter' and look for the controller in the list of devices. It can be iden
 ```
 jstest /dev/input/js*
 ```
-Make sure to replace the star with your joystick's number and press 'Enter'. You should now see the joystick testing interface. Starting with the left joystick, slowly push in the left direction until it will not move anymore. You should see numerical onscreen feedback representing the absolute minimum X-axis value. Make a note of that value and release the joystick completely. At this point, make a note of the absolute center X-axis numerical value. Then, slowly push in the right direction until it will not move anymore and make note of the absolute maximum X-axis numerical value. Repeat that process moving slowly from top, center to bottom of the Y-axis, making notes of each value. When completed, you will then repeat the entire process on the right joystick. This process can also be applied to your analog triggers as well if needed. Once of of the values are known for your analog controls, you will add them to your xboxdrv configuration formatted as: `--calibration AXIS=MIN:CENTER:MAX`. Using the base configuration example from the first section, it would look like this in practice:
+Make sure to replace the star with your joystick's number and press 'Enter'. You should now see the joystick testing interface. Starting with the left joystick, slowly push in the left direction until it will not move anymore. You should see numerical onscreen feedback representing the absolute minimum X-axis value. Make a note of that value and release the joystick completely. At this point, make a note of the absolute center X-axis numerical value. Then, slowly push in the right direction until it will not move anymore and make note of the absolute maximum X-axis numerical value. Repeat that process moving slowly from top, center to bottom of the Y-axis, making notes of each value. When completed, you will then repeat the entire process on the right joystick. This process can also be applied to your analog triggers as well if needed. Once all of the values are known for your analog controls, you will add them to your xboxdrv configuration formatted as: `--calibration AXIS=YourMinimumValue:YourCenterValue:YourMaximumValue`. Using the base configuration example from the first section, it would look like this in practice:
 ```
 sudo /opt/retropie/supplementary/xboxdrv/bin/xboxdrv \
 	--evdev /dev/input/by-id/* \
@@ -116,7 +116,7 @@ sudo /opt/retropie/supplementary/xboxdrv/bin/xboxdrv \
 	--force-feedback \
 	--deadzone-trigger 15% \
 	--deadzone 4000 \
-	--calibration x1=MIN:CENTER:MAX,y1=MIN:CENTER:MAX,x2=MIN:CENTER:MAX,y2=MIN:CENTER:MAX \
+	--calibration x1=YourMinimumX1Value:YourCenterX1Value:YourMaximumX1Value,y1=YourMinimumY1Value:YourCenterY1Value:YourMaximumY1Value \
 	--mimic-xpad \
 	--evdev-absmap ABS_*=x1,ABS_*=y1,ABS_*=x2,ABS_*=y2,ABS_*=lt,ABS_*=rt,ABS_*=dpad_x,ABS_*=dpad_y \
 	--evdev-keymap BTN_*=a,BTN_*=b,BTN_*=x,BTN_*=y,BTN_*=lb,BTN_*=rb,BTN_*=tl,BTN_*=tr,BTN_*=guide,BTN_*=back,BTN_*=start \
@@ -186,41 +186,24 @@ Once added, the games will perform just as fluidly as they did using their origi
 
 ## **(3A) Key-Mapping and Launch Fundamentals**
 
-**Note:** This section is soon to be replaced with the simplified information found [here](https://retropie.org.uk/forum/topic/7096/xboxdrv-guidance-needed/17)
+The foundation has been laid. Controller's have been fine-tuned. Now, we'll take a look at how to map keyboard keys and mouse movements to a controller's analog sticks and buttons for use in emulators that lack native controller support and how to launch and maintain multiple mappings accordingly. We'll be using ScummVM as an example because it's easy and it involves mapping both keyboard keys to buttons and the mouse to the analog stick. Those who have tried using the internal joystick support in ScummVM know that it leaves much to be desired. The cursor movement is shakey and you still need a keyboard to quit the program. This mapping will solve both of those problems.
 
-The foundation has been laid. Controller's have been fine-tuned. Now, we'll take a look at how to map keyboard keys and mouse movements to a controller's analog sticks and buttons for use in emulators that lack native controller support and how to launch and maintain multiple mappings accordingly. So far we have dealt with xboxdrv on a system level. This first step in facilitating program-specific key-mappings requires that xboxdrv be able to run at a user level. To do this, drop down to the command line by pressing 'F4' on your keyboard, then type:
+If it doesn't already exist, start by creating the `runcommand-onstart.sh` file. To do this, drop down to the command line by pressing 'F4' on your keyboard, then type:
+
 ```
-sudo nano /etc/udev/rules.d/55-permissions-uinput.rules
+nano /opt/retropie/configs/all/runcommand-onstart.sh
 ```
 Press 'Enter" and type the following:
 ```
-KERNEL=="uinput", MODE="0660", GROUP="users"
-```
-Now press 'ctrl+o' to save the file, 'Enter' to confirm and 'ctrl+x' to exit. Seeing as how this command is run as the system boots up, you'll now need to reboot by typing:
-```
-sudo reboot
-```
-Now that we've prepared xboxdrv to operate at a user level, we are ready to key-map our emulator. I've chosen to use ScummVM as an example because it's easy and it involves mapping both keyboard keys to buttons and the mouse to the analog stick. Those who have tried using the internal joystick support in ScummVM know that it leaves much to be desired. The cursor movement is shakey and you still need a keyboard to quit the program. This mapping will solve both of those problems. As with any emulator or port in RetroPie, you'll first need to figure out where the launch command is located for the specific emulator or port you wish to map. This command is usually found in the `/opt/retropie/configs/systemname/emulators.cfg` file. However, it is sometimes located in different places. In the case of ScummVM, we find by checking it's `emulators.cfg` file that it is actually launched from a script located at `/home/pi/RetroPie/roms/scummvm/+Start\ ScummVM.sh`. Once located, adding an xboxdrv mapping is just a matter of adding the configuration to the beginning of the command and separating it by using the `--` entry. Using the base configuration example from the first section, below is a before and after look at how this should be formatted. 
-
-**Before**
-```
-#!/bin/bash
-game="$1"
-pushd "/home/pi/RetroPie/roms/scummvm" >/dev/null
-/opt/retropie/emulators/scummvm/bin/scummvm --fullscreen --joystick=0 --extrapath="/opt/retropie/emulators/scummvm/extra" $game
-while read line; do
-    id=($line);
-    touch "/home/pi/RetroPie/roms/scummvm/$id.svm"
-done < <(/opt/retropie/emulators/scummvm/bin/scummvm --list-targets | tail -n +3)
-popd >/dev/null
-```
-**After**
-```
 #!/bin/sh
-game="$1"
-pushd "/home/pi/RetroPie/roms/scummvm" >/dev/null
-sudo killall >/dev/null xboxdrv
-/opt/retropie/supplementary/xboxdrv/bin/xboxdrv \
+```
+On a line below that, we will wrap our xboxdrv configuration for ScummVM inside a simple if/else statement, beginning with `if [ "$1" = "scummvm" ]` and ending with `fi`. When using this technique for other emulators/ports, you would of course replace "scummvm" with the appropriate name that can be found used also as the folder name for the system/port in either `/opt/retropie/configs/` or `/opt/retropie/configs/ports`. We're also going to prevent any unsightly messages from being printed to the screen, we'll add `> /dev/null 2>&1` after every command that would otherwise give visual feedback. It is important to note that while troubleshooting any problems, it may become necessary to temporarily remove these entries so that errors that might give insight the cause can be seen. Below we see the full example in practice:
+
+```
+if [ "$1" = "scummvm" ]
+then
+sudo killall > /dev/null 2>&1 xboxdrv
+sudo /opt/retropie/supplementary/xboxdrv/bin/xboxdrv > /dev/null 2>&1 \
 	>/dev/null \
 	--evdev /dev/input/by-id/* \
 	--silent \
@@ -236,19 +219,18 @@ sudo killall >/dev/null xboxdrv
 	--ui-buttonmap b=BTN_LEFT,a=BTN_RIGHT,start=KEY_F5 \
 	--ui-buttonmap guide=void,x=void,y=void,lb=void,rb=void,tl=void,tr=void,lt=void,rt=void,back=void \
 	--ui-axismap x2=void \
-	-- \
-	/opt/retropie/emulators/scummvm/bin/scummvm --fullscreen --joystick=0 --extrapath="/opt/retropie/emulators/scummvm/extra" $game
-while read line; do
-    id=($line);
-    touch "/home/pi/RetroPie/roms/scummvm/$id.svm"
-done < <(/opt/retropie/emulators/scummvm/bin/scummvm --list-targets | tail -n +3)
-popd >/dev/null
+&
+fi
 ```
-Notice that it begins with a sudo command to kill any other instances of xboxdrv. This is in case you have already configured your controller with a system-wide mapping from the earlier steps. We'll go over later how to re-enable that system-wide mapping automatically when the emulator shuts down so that you will be left where you started. If you have no system-wide mapping, the basic controls you have set up in Emulation Station will return once the emulator quits without any further setting. For this particular mapping, we have enabled mouse support to the left joystick, mouse left and right buttons to controller buttons 'b' and 'a', as well as mapping the 'F5' key to the controller's 'start' button so that we can bring up the menu and control the entire software from the controller. To do this, we added two new lines to our basic configuration in the form of `--ui-axismap` and `--ui-buttonmap`. 
+Now, press 'ctrl+o' to save the file, 'Enter' to confirm and 'ctrl+x' to exit. All that is left is to make the script executable in the terminal by typing:
+```
+chmod +x /opt/retropie/configs/all/runcommand-onstart.sh
+```
+Notice that our entry begins with a sudo command to kill any other instances of xboxdrv. This is in case you have already configured your controller with a system-wide mapping from the earlier steps. We'll go over later how to re-enable that system-wide mapping automatically when the emulator shuts down so that you will be left where you started. If you have no system-wide mapping, the basic controls you have set up in Emulation Station will return once the emulator quits without any further setting. For this particular mapping, we have enabled mouse support to the left joystick, mouse left and right buttons to controller buttons 'b' and 'a', as well as mapping the 'F5' key to the controller's 'start' button so that we can bring up the menu and control the entire software from the controller. To do this, we added two new lines to our basic configuration in the form of `--ui-axismap` and `--ui-buttonmap`. 
 
 This particular example works well for mapping a controller's left analog stick to mouse support using the `--ui-axismap` variable and can be changed to the right stick by simply altering the line to `--ui-axismap x2=REL_X:10,y2=REL_Y:10`. To change the speed of the mouse, just change the `REL_*:*` integer of the X and Y axis higher or lower than `10`. If you should ever want to map keyboard keys to an analog stick, a classic example would look like `--ui-axismap X1=KEY_A:KEY_D,Y1=KEY_W:KEY_S`, giving you the ADWS control scheme found in many classic computer titles. As far as key-mapping buttons is concerned, first you must consider which buttons are available to you. Seeing as how xboxdrv emulates a standard XBox 360 controller, you will have any of those buttons that you have already assigned to your controller in the earlier steps. If you have assigned all the buttons that are possible, you'll have access to a,b,x,y,lb,rb,lt,rt,tl,tr,start,back and guide. The placement of these buttons can be seen [here](https://s32.postimg.org/zcs0wosth/xbox.jpg). By using the `--ui-buttonmap` variable, you can then map any one of the buttons to a key using the format above. To discover all the possible keyboard keys that are available to you, type `/opt/retropie/supplementary/xboxdrv/bin/xboxdrv --help-key`. Finally, you'll notice that their are two more lines added with the `--ui-axismap` and `--ui-buttonmap` variables that are solely responsible for voiding the unused control elements. This is optional, but it will make the control scheme cleaner by eliminating the possibility of those elements conflicting in any way.
 
-So now that we have our control scheme added to the launch command, we can save it and try it out. I've had this particular example running for some time, so it should load right up and tear itself down once the emulator quits. If it doesn't, you'll want to troubleshoot your xboxdrv command separately by removing the `>/dev/null \` line and executing it from the command line. It should report any errors that need correcting. From there you would add the `>/dev/null \` back to the command and place it back in the launch command. For those who have a system-wide xboxdrv mapping that should be restored afterward, copy that same configuration from your `/etc/rc.local` to the '/opt/retropie/configs/all/runcommand-onend.sh' bash script. If the script doesn't exist, drop to the command line and type:
+Now we need to ensure that or xboxdrv mapping is torn down as the emulator/port exits back to Emulation station. We'll do this by adding `sudo killall > /dev/null 2>&1 xboxdrv` to '/opt/retropie/configs/all/runcommand-onend.sh'. Also, for those who have a system-wide xboxdrv mapping that should be restored afterward, we'll copy the same configuration from your `/etc/rc.local` to '/opt/retropie/configs/all/runcommand-onend.sh' as well. If the `uncommand-onend.sh' file doesn't exist yet, drop to the command line and type:
 ```
 nano /opt/retropie/configs/all/runcommand-onend.sh
 ```
@@ -256,12 +238,22 @@ Press 'Enter" and type the following:
 ```
 #!/bin/sh
 ```
-On a line below, you can now add the global xboxdrv command you previously added to `/etc/rc.local`. To keep things nice and silent, you may wish to alter your original command by changing the first two lines to read:
+On a line below, you can now add the `killall` command, followed by the global xboxdrv command you previously added to `/etc/rc.local` if applicable. To continue to keep keep things nice and silent, we'll add `> /dev/null 2>&1` to that original command. Using the base configuration example from the first section, it would look like this in practice:
 ```
-/opt/retropie/supplementary/xboxdrv/bin/xboxdrv \
-	>/dev/null \
+sudo killall > /dev/null 2>&1 xboxdrv
+/opt/retropie/supplementary/xboxdrv/bin/xboxdrv > /dev/null 2>&1 \
+	--evdev /dev/input/by-id/* \
+	--silent \
+	--detach-kernel-driver \
+	--force-feedback \
+	--deadzone-trigger 15% \
+	--deadzone 4000 \
+	--mimic-xpad \
+	--evdev-absmap ABS_*=x1,ABS_*=y1,ABS_*=x2,ABS_*=y2,ABS_*=lt,ABS_*=rt,ABS_*=dpad_x,ABS_*=dpad_y \
+	--evdev-keymap BTN_*=a,BTN_*=b,BTN_*=x,BTN_*=y,BTN_*=lb,BTN_*=rb,BTN_*=tl,BTN_*=tr,BTN_*=guide,BTN_*=back,BTN_*=start \
+	&
 ```
-This will keep xboxdrv from printing any onscreen feedback, making the whole process completely transparent to the user. Now, press 'ctrl+o' to save the file, 'Enter' to confirm and 'ctrl+x' to exit. All that is left is to make the script executable in the terminal by typing:
+Now, press 'ctrl+o' to save the file, 'Enter' to confirm and 'ctrl+x' to exit. All that is left is to make the script executable in the terminal by typing:
 ```
 chmod +x /opt/retropie/configs/all/runcommand-onend.sh
 ```
@@ -277,9 +269,9 @@ Now press 'ctrl+o' to save the file, 'Enter' to confirm and 'ctrl+x' to exit. Th
 
 ## **(3B) Expanding Launch Capabilities**
 
-The above method of combining the xboxdrv configuration with the launch command is a function that is built in to xboxdrv. However, it can be a bit unwieldy when considering the multiple launch methods found in RetroPie. What follows is an alternate method that utilizes the `runcommand-onstart.sh` shell script, allowing a unified location and format for multiple xboxdrv configurations that launch based on a case statement. In addition, all the xboxdrv parameters are assigned to variables, making the case statement easier to read.
+For mapping one or two systems, the above method is the simplest approach. However, it can be a bit unwieldy when mapping a large number of systems. What follows is an alternate method that utilizes the `runcommand-onstart.sh` shell script, allowing a unified location and format for multiple xboxdrv configurations that launch based on a case statement. In addition, all the xboxdrv parameters are assigned to variables, making the case statement easier to read.
 
-If it doesn't already exist, start by creating the `runcommand-onstart.sh`:
+If it doesn't already exist, start by creating the `runcommand-onstart.sh` file:
 
 ```
 nano /opt/retropie/configs/all/runcommand-onstart.sh
