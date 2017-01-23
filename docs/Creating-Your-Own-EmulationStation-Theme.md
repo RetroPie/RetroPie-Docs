@@ -50,17 +50,17 @@ I made this tutorial on a Windows PC, but all the main parts (the XML and images
 **What You Will Need**
 
 - A text editor
-  - Notepad will do fine, but something with syntax highlighting is helpful. I use Sublime Text 3, but others
+    - Notepad will do fine, but something with syntax highlighting is helpful. I use Sublime Text 3, but others
 like Notepad++ are good too.
 - Emulationstation
-  - I use a version on my PC (more on that below), but the version on your Pi is fine.
+    - I use a version on my PC (more on that below), but the version on your Pi is fine.
 - An image editor
-  - This is optional as all the images will be supplied, however you can use these images as a base to create your own, or make your own from scratch. I use Photoshop, but other programs like GIMP or Paint.net would work too.
+    - This is optional as all the images will be supplied, however you can use these images as a base to create your own, or make your own from scratch. I use Photoshop, but other programs like GIMP or Paint.net would work too.
 - The ES Theme Helper by @Rookervik
-  - Not essential, but very, very handy
-  -  [Get it from @Rookervik's DropBox here](https://dl.dropboxusercontent.com/u/60872572/EmulationStation/ES%20Theme%20Helper3.rar)
+    - Not essential, but very, very handy
+    -  [Get it from @Rookervik's DropBox here](https://dl.dropboxusercontent.com/u/60872572/EmulationStation/ES%20Theme%20Helper3.rar)
 - Any coding experience
-  - Again, not essential, but it makes things easier. To be honest, as long as you know that `<tag>` opens a tag and `</tag>` closes a tag, then you should be fine.
+    - Again, not essential, but it makes things easier. To be honest, as long as you know that `<tag>` opens a tag and `</tag>` closes a tag, then you should be fine.
 
 There will be a list of all links and resources at the end of the tutorial.
 
