@@ -269,7 +269,7 @@ Now press 'ctrl+o' to save the file, 'Enter' to confirm and 'ctrl+x' to exit. Th
 
 ## **(3B) Expanding Launch Capabilities**
 
-For mapping one or two systems, the above method is the simplest approach. However, it can be a bit unwieldy when mapping a large number of systems. What follows is an alternate method that again utilizes the `runcommand-onstart.sh` shell script, now based on a unified case statement for multiple systems. In addition, all the xboxdrv parameters are assigned to variables, making the case statement easier to read.
+For mapping one or two systems, the above method is the simplest approach. However, it can be a bit unwieldy when mapping a large number of systems. What follows is an alternate method that again utilizes the `runcommand-onstart.sh` shell script, now based on a unified case statement designed specifically for mapping multiple systems. In addition, all the xboxdrv parameters are assigned to variables, making the case statement easier to read.
 
 If it doesn't already exist, start by creating the `runcommand-onstart.sh` file:
 
