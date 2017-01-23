@@ -34,11 +34,11 @@ Place the BIOS in
 
 Place your FDS Roms in
 ```
-/home/pi/RetroPie/roms/nes
+/home/pi/RetroPie/roms/fds
 ```
 Or if you want them separate from NES Roms
 ```
-/home/pi/RetroPie/roms/fds
+/home/pi/RetroPie/roms/nes
 ```
 ## Controls
 
