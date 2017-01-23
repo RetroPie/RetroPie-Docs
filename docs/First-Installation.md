@@ -5,10 +5,10 @@
 
 1. [Hardware](First-Installation#hardware-needed)
 2. [Installation](First-Installation#installation)
-3. [Controller Configuration](First-Installation#controller-configurations)
+3. [Controller Configuration](First-Installation#configure-controllers)
 4. [EmulationStation](First-Installation#emulationstation)
-5. [Configure Wifi](First-Installation#configuring-wifi)
-6. [Installing Additional Emulators](First-Installation#installing-additional-emulators--ports)
+5. [Configure Wifi](First-Installation#wifi)
+6. [Installing Additional Emulators](First-Installation#installing-additional-emulators)
 7. [Transferring Roms](First-Installation#transferring-roms)
 
 Congratulations! You have discovered the wonderful world of RetroPie- your entire childhood is within reach! RetroPie is a combination of multiple projects including [RetroArch](http://www.libretro.com), [EmulationStation](http://www.emulationstation.org), and many others. 
@@ -23,7 +23,7 @@ If you hate reading then see this video. Otherwise read on!
 " target="_blank"><img src="https://i.ytimg.com/vi/xvYX_7iRRI0/maxresdefault.jpg" 
 alt="Configuration Video" width="1280" height="400" border="10" /></a>
 
-## [Hardware Needed:](https://retropie.org.uk/documentation/building-your-own-retropie-machine/)
+## [Hardware](https://retropie.org.uk/documentation/building-your-own-retropie-machine/)
 
  * Raspberry Pi (A, A+, B, B+, 2, Zero, or 3) - for best performance use a **Raspberry Pi 3 Model B**
  * Raspberry Pi Case (optional but recommended)
@@ -40,8 +40,7 @@ The simplest way to get most of these components is through a kit such as the [C
 
 ## Installation
 
-### SD Images
-
+### Download
 There are currently two versions of RetroPie. There is one version for Raspberry Pi 0/1 (Model A, A+, B, B+) and there is a version for Raspberry Pi 2/3. 
 
 Download the SD image for your version of Raspberry Pi from the following page:
@@ -64,7 +63,7 @@ To extract from the command line, you can type the following into a Terminal win
 
 `gunzip retropie-4.X.X-rpi2_rpi3.img.gz`
 
-### Install RetroPie Image on SD Card
+### Install
 
 To install the RetroPie SD image on your MicroSD card. (You may need a MicroSD card reader to plug it into your computer) 
 
@@ -78,9 +77,7 @@ See [the official Raspberry Pi "WRITING AN IMAGE TO THE SD CARD" instructions](h
 
 If you're updating from a previous version of retropie see [**HERE**](Updating-RetroPie)
 
-## Configurations
-
-### Controller Configurations
+## Configure Controllers
 
 On first boot your filesystem will be expanded automatically, you will then be welcomed with the following screen- this menu will configure your controls for both Emulationstation and RetroArch Emulators:
 
@@ -98,13 +95,19 @@ If you wish to configure more than one controller, you can do so from the start 
 
 See the following diagrams for reference:
 
-![nintendo_snes_diagram](https://cloud.githubusercontent.com/assets/10035308/16599633/7f34d356-42c0-11e6-92c0-f8774d795bd1.png)
+| SNES Controller | 
+|:---:|
+|![snes_controller](https://cloud.githubusercontent.com/assets/10035308/22185414/f129dc28-e099-11e6-8524-93facf275eda.png)|
 
-![microsoft_xbox360_diagram](https://cloud.githubusercontent.com/assets/10035308/16599644/7f50121a-42c0-11e6-8ef5-50c4b5672216.png)
+| XBox 360 Controller |
+|:---:|
+|![xbox360_controller](https://cloud.githubusercontent.com/assets/10035308/22185415/f12ff342-e099-11e6-8adb-d18e9c638e94.png)|
 
-![playstation3_diagram](https://cloud.githubusercontent.com/assets/10035308/16599634/7f353148-42c0-11e6-9023-dbaf074bc933.png)
+| PS3 Controller |
+|:---:|
+|![ps3_controller](https://cloud.githubusercontent.com/assets/10035308/22185413/f10f27de-e099-11e6-97a4-ecbbc82c9e46.png)|
 
-### Default Hotkeys
+### Hotkeys
 
 Hotkeys enable you to press a combination of buttons to access functions such as saving, loading, and exiting emulators. The following chart shows the default hotkey combinations. By default, the hotkey is select so that means you hold down select while pressing another button to execute a command. **Note** that hotkeys are only specific to the retroarch/libretro based emulators.
 
@@ -125,29 +128,29 @@ Hotkeys enable you to press a combination of buttons to access functions such as
 **When you first see EmulationStation you may wonder why you don't see systems like the SNES or Game Boy- worry not- they are installed on the system, roms just need to be added to their respective rom folders before they will become visible. Transferring roms are described in the following steps.**|
 |![firstboot](https://cloud.githubusercontent.com/assets/10035308/16217874/c6bbdb3a-3734-11e6-998f-8cc714a320ce.png)|
 
-## Configuring Wifi
+## Wifi
 
 If you wish to use wifi to transfer roms over the network rather than a USB stick or Ethernet cable you'll need to setup your wifi- which can also be done from the Retropie menu in emulationstation:
 
-It will open into this menu:
+| Connect to Wifi Network: |
+|:---:|
+|![wifi1](https://cloud.githubusercontent.com/assets/10035308/16217941/92b08b8c-3735-11e6-8f20-5d1550af0882.png)|
 
-![wifi1](https://cloud.githubusercontent.com/assets/10035308/16217941/92b08b8c-3735-11e6-8f20-5d1550af0882.png)
+| Choose your SSID from a list: |
+|:---:|
+|![wifi2](https://cloud.githubusercontent.com/assets/10035308/16217942/92c5a8a0-3735-11e6-86ed-721c1bb81990.png)|
 
-Choose your SSID from a list:
+| Type your Wifi Password (may take a moment to connect) |
+|:---:|
+|![wifi3](https://cloud.githubusercontent.com/assets/10035308/16217943/92c64c24-3735-11e6-8f62-893f111c5bd2.png)|
 
-![wifi2](https://cloud.githubusercontent.com/assets/10035308/16217942/92c5a8a0-3735-11e6-86ed-721c1bb81990.png)
-
-Type your Wifi Password (You may need to wait a bit after you finish for the configurations to save)
-
-![wifi3](https://cloud.githubusercontent.com/assets/10035308/16217943/92c64c24-3735-11e6-8f62-893f111c5bd2.png)
-
-After it's done configuring you should see your wifi info in the original menu:
-
-![wifi4](https://cloud.githubusercontent.com/assets/10035308/16217944/92cb07fa-3735-11e6-9239-66fba394c669.png)
+|Once configured you will see your IP address|
+|:---:|
+|![wifi4](https://cloud.githubusercontent.com/assets/10035308/16217944/92cb07fa-3735-11e6-9239-66fba394c669.png)|
 
 For more WiFi configuration options see this page [HERE](Wifi)
 
-## Installing additional Emulators / Ports
+## Installing additional Emulators
 On RetroPie 4.0+, not everything is installed by default. The pre-made images contain the best working emulators for each system supported by the hardware. This should cover everything most users would be doing. Ports like quake and doom and some other emulators like ScummVM can be installed later.
 
 Software can be installed from the RetroPie-Setup script - which is accessible from the RetroPie menu on EmulationStation. Once there you can navigate to "Manage Packages" where you will see various sections. In each section are lists of packages that can be installed (and it will show what is currently installed). Stable additional packages are under the "Optional" section, with more unstable packages listed under experimental. The packages are ordered first by type (emulators / libretro cores / ports), then alphabetically. By selecting a package you can choose to install it, or remove it. Some packages also have additional configurations.
@@ -174,7 +177,7 @@ see this video for reference:
 " target="_blank"><img src="https://i.ytimg.com/vi_webp/OYMoxvbkYD4/mqdefault.webp" 
 alt="Configuration Video" width="300" height="190" border="10" /></a>
 
-### SFTP (needs an active network connection) 
+### SFTP
 * Wired (needs ethernet cable)
 * Wireless (needs wifi dongle)
 There are many SFTP programs out there, for windows many people use [WinSCP](https://winscp.net/eng/download.php) for mac you can use something like [Cyberduck](https://cyberduck.io/?l=en)
@@ -187,7 +190,7 @@ Default Password: **raspberry**
 
 You can also log in as root if you wish to change more files than just the roms, but you first need to enable the root password which is explained [here](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#why-cant-i-ssh-as-root-anymore)
 
-### Samba-Shares (needs an active network connection)
+### Samba-Shares
 
 - if on windows type `\\retropie` into the computer folder. You can also replace `retropie` with your Raspberry Pi's IP address
 
@@ -199,8 +202,8 @@ You can also log in as root if you wish to change more files than just the roms,
 
 After you've added your roms you need to restart emulationstation in order for them to show up. You can restart emulationstation from the start menu, or by rebooting your pi with `sudo reboot`. 
 
-- see the rest of the [wiki](wiki) for more detailed information on individual emulators, advanced settings etc. If you still can't figure it out, the RetroPie community is very helpful on the [forum](https://retropie.org.uk/forum/). 
+See the rest of the [wiki](wiki) for more detailed information on individual emulators, advanced settings etc. If you still can't figure it out, the RetroPie community is very helpful on the [forum](https://retropie.org.uk/forum/). 
 
-- **The RetroPie Project is primarily maintained by a few developers who develop the project in their free time. If you have found the RetroPie project useful please consider donating to the project [here](https://retropie.org.uk/donate/). As you become more familiar with RetroPie, pay it forward by helping others on the forum. The RetroPie Project is what it is today because of the many contributions of the community.**
+**The RetroPie Project is primarily maintained by a few developers who develop the project in their free time. If you have found the RetroPie project useful please consider donating to the project [here](https://retropie.org.uk/donate/). As you become more familiar with RetroPie, pay it forward by helping others on the forum. The RetroPie Project is what it is today because of the many contributions of the community.**
 
 THANK YOU!
