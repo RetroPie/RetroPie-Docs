@@ -238,7 +238,7 @@ Press 'Enter" and type the following:
 ```
 #!/bin/sh
 ```
-On a line below, you can now add the `killall` command, followed by the global xboxdrv command you previously added to `/etc/rc.local` if applicable. To continue to keep keep things nice and silent, we'll add `> /dev/null 2>&1` to that original command. Using the base configuration example from the first section, it would look like this in practice:
+On a line below, you can now add the `killall` command, followed by the global xboxdrv command you previously added to `/etc/rc.local` if applicable. To continue to keep things nice and silent, we'll add `> /dev/null 2>&1` to that original command. Using the base configuration example from the first section, it would look like this in practice:
 ```
 sudo killall > /dev/null 2>&1 xboxdrv
 /opt/retropie/supplementary/xboxdrv/bin/xboxdrv > /dev/null 2>&1 \
