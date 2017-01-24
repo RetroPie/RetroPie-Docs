@@ -257,7 +257,7 @@ Now, press 'ctrl+o' to save the file, 'Enter' to confirm and 'ctrl+x' to exit. A
 ```
 chmod +x /opt/retropie/configs/all/runcommand-onend.sh
 ```
-To fully round out this section on key-mapping, it should be mentioned that in some rare scenarios, the keyboard that xbmc virtualizes may not be recognized as being a keyboard by the software you intend to use it with. In this situation, you can create a udev rule that will authenticate the input as being from an actual keyboard at a system level, allowing it to function anywhere. To add this udev rule, drop to the command line and type:
+To fully round out this section on key-mapping, it should be mentioned that in some scenarios, the keyboard that xbmc virtualizes may not be recognized as being a keyboard by the software you intend to use it with. In this situation, you can create a udev rule that will authenticate the input as being from an actual keyboard at a system level, allowing it to function anywhere. To add this udev rule, drop to the command line and type:
 ```
 sudo nano /etc/udev/rules.d/99-xboxdrv.rules
 ```
