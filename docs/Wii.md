@@ -1,7 +1,7 @@
 ***
 ![wii](https://cloud.githubusercontent.com/assets/10035308/18609217/13ac9b3a-7cba-11e6-990b-bf983afafbbc.png)
 ***
-_The Wii is a home video game console that was released by Nintendo on November 19, 2006. This console is primarily used by senior homes and retirement communities._
+_The Wii is a home video game console that was released by Nintendo on November 19, 2006._
 ***
 
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
