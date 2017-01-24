@@ -39,7 +39,8 @@ Similarly to the [Service menu](#service-menu), many arcade games had hardware s
 
 ## High scores
 
-lr-mame2003 will attempt to keep a permanent record of any high scores you set, but some games will not save these by default. There is a supplementary file that you can transfer to your Pi that will enable high score saving for more games, called `hiscore.dat`. This file can be downloaded from http://highscore.mameworld.info/ - you need the one labeled "**old format hiscore.dat (pre mame v0174)**". Transfer it to:
+lr-mame2003 will attempt to keep a permanent record of any high scores you set, but some games will not save these by default. A supplementary file called `hiscore.dat` is required for these ROMs to save scores. This file can be [downloaded from the MAME 2003 'metadata' repository](https://raw.githubusercontent.com/libretro/mame2003-libretro/master/metadata/highscore.dat).
+Save and transfer 'highscore.dat' to:
 ```
 /home/pi/RetroPie/BIOS/mame2003/
 ```
