@@ -35,7 +35,7 @@ Place pcfx.rom in
 
 ## Controls
 
-utilise Retroarch configurations
+lr-beetle-pcfx utilise Retroarch configurations
 
 Add custom retroarch controls to the retroarch.cfg file in
 ```shell
