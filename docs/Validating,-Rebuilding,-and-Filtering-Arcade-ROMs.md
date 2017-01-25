@@ -1,7 +1,7 @@
 ##Table of Contents
-* [Crash Course in Arcade ROMs](#Crash-Course-in-Arcade-ROMs)
-* [Validating and Rebuilding ROMs](#Validating-and-Rebuilding-ROMs)
-* [Filtering ROMs](#Filtering-ROMs)
+* [Crash Course in Arcade ROMs](#crash-course-in-arcade-roms)
+* [Validating and Rebuilding ROMs](#validating-and-rebuilding-roms)
+* [Filtering ROMs](#filtering-roms)
 
 ***
 
