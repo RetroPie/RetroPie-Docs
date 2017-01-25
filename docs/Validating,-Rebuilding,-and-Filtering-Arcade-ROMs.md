@@ -1,6 +1,11 @@
-# Validating and Rebuilding ROMs
+**Table of Contents**
+* [[Crash Course in Arcade ROMs|Validating, Rebuilding, and Filtering Arcade ROMs#Crash Course in Arcade ROMs]]
+* [[Validating and Rebuilding ROMs|Validating, Rebuilding, and Filtering Arcade ROMs#Validating and Rebuilding ROMs]]
+* [[Filtering ROMs|Validating, Rebuilding, and Filtering Arcade ROMs#Filtering ROMs]]
 
-## Crash Course in Arcade ROMs
+***
+
+# Crash Course in Arcade ROMs
 
 **Arcade Emulator Terminology**
 * **ROM, ROM set, and romset**: Arcade games are packaged as zip files, most of which are composed of more than one individual 'ROM' files. That is why some resources refer to an individual arcade game as a ROM (like people use to describe a zipped game cartridge ROM) while other resources refer to an individual game as a ROM set or romset.
@@ -21,6 +26,7 @@ It is possible to 'rebuild' from one version of an arcade ROM collection to anot
 
 **Note: the process of verifying and rebuilding ROMs is complex and requires a substantial investment of time and effort in order to master. If your goal is to have working arcade ROMs, it is almost always simpler to download a full ROM set that has already been verified to match the arcade emulator you chose.**
 
+# Validating and Rebuilding ROMs
 In order to verify or rebuild a set, you need its corresponding DAT file and a software tool to process the DAT. DATs describe the ROM contents including filenames, file sizes, and checksums to verify contents are not incorrect or corrupt. The wiki pages for [MAME](https://github.com/RetroPie/RetroPie-Setup/wiki/MAME), [FB Alpha](https://github.com/RetroPie/RetroPie-Setup/wiki/FinalBurn-Alpha), and [Neo Geo](https://github.com/RetroPie/RetroPie-Setup/wiki/Neo-Geo) include DATs and detailed information about the ROM sets needed for the various arcade emulators.
 
 Popular ROM verification tools include:
@@ -99,8 +105,6 @@ Time to find out how well your source ROMs matched up...
 
 ## Notes
 
-That's the basics of using clrmamepro.  Some additional notes:
-
 * Be careful with the "Fix" settings in the Scanner window and the "Remove Matched Sourcefiles" setting in the Rebuilder window. These settings will remove and rename your ROMs.
 * If clrmamepro does delete any ROMs (because you told it to), you should be able to find backups in C:\clrmamepro\backup as long as you didn't change the default settings.
 * clrmamepro is very stable.  It has been around for a long time, it is regularly updated and it is widely used.  If it reports problems reading your ROMs, you most likely have corrupt ROM archives (zip files) or a failing hard drive.
@@ -108,5 +112,7 @@ That's the basics of using clrmamepro.  Some additional notes:
 * If you feel the need to reset clrmamepro's settings, just delete your existing profile(s) and reload your DAT file, selecting **"Default"** settings for the new profile.  Almost all of clrmamepro's settings are per-profile.
 
 # Filtering ROMs
+
+The [lr-mame2003](https://github.com/libretro/mame2003-libretro/tree/master/metadata) core and [lr-mame2010](https://github.com/libretro/mame2010-libretro/tree/master/metadata) core maintain a `catver.ini` file in their github repositories. `catver.ini` can be used with ROM management tools such as [ROMLister](https://www.waste.org/~winkles/ROMLister/) in order to sort and filter a MAME collection by genre or by other tags, such as whether it includes "Mature" content.
 
 To be written
