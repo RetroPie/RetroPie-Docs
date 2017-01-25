@@ -31,4 +31,4 @@ Start with a full Non-Merged ROM collection (not an individual ROM) with the exa
 * Wiki pages for [[MAME]] and [[FB Alpha|FinalBurn-Alpha]].
 * [How to use MAME with RetroPie Help Guide by Floob](https://retropie.org.uk/forum/topic/2859/how-to-use-mame-with-retropie-help-guide)
 * [Demystifying MAME ROMs Tutorial by ChoccyHobNob](http://choccyhobnob.com/tutorials/demystifying-mame-roms/).
-* Advanced: [[Validating,-Rebuilding,-and-Filtering-Arcade-ROMs|Validating, Rebuilding, and Filtering Arcade ROMs]]
+* Advanced: [[Validating, Rebuilding, and Filtering Arcade ROMs]]
