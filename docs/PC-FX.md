@@ -11,6 +11,8 @@ _PC-FX is a 32-bit home video game console by NEC Home Electronics released in J
 
 ## Emulator: [lr-beetle-pcfx](https://github.com/libretro/beetle-pcfx-libretro)
 
+Note that this is experimental and suffers from slowness and sound shuttering. Probably won't be coming out of experimental any time soon. It can be installed from the experimental menu of the [RetroPie Setup Script](Updating RetroPie).
+
 ## ROMS
 
 Place your PC-FX ROMs in
@@ -57,3 +59,7 @@ then ensure the first line of the CUE file contains:
 ~~~
 FILE "Chip Chan Kick.bin" BINARY
 ~~~
+
+## Additional Documentation
+
+[Mednafen PC-FX Documentation](https://mednafen.github.io/documentation/pcfx.html)
