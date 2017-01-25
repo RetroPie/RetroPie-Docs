@@ -31,7 +31,12 @@ Place your the syscard3.pce file in
 /home/pi/RetroPie/BIOS
 ```
 
-A working BIOS file md5sum is `ff1a674273fe3540ccef576376407d1d`
+Working BIOS files:
+
+| md5sum          |        CRC32 |
+|--------------|--------------------|
+| 0754f903b52e3b3342202bdafb13efa5 | 2b5b75fe |
+| ff1a674273fe3540ccef576376407d1d | |
 
 ## Controls
 
