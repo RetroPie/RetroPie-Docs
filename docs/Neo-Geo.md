@@ -18,9 +18,9 @@ Users with Raspberry Pi 1s may prefer the standalone emulator `PiFBA`, which wil
 
 | Emulator | Rom Folder | Required ROM Version | Controller Config |
 | :---: | :---: | :---: | :---: | 
-| [lr-fbalpha](https://github.com/libretro/fbalpha) | arcade **or** fba **or** neogeo  | FB Alpha v0.2.97.39 |  /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/fba/retroarch.cfg, **or** /opt/retropie/configs/neogeo/retroarch.cfg |
-| [PiFBA](https://github.com/RetroPie/pifba) | arcade **or** fba **or** neogeo  | FBA 0.2.96.71 | /opt/retropie/emulators/pifba/fba2x.cfg **or** /opt/retropie/configs/fba/fba2x.cfg |
-| [GnGeo-Pi](https://github.com/ymartel06/GnGeo-Pi) | arcade **or** neogeo | MAME 0.138 | /opt/retropie/configs/neogeo/gngeorc |
+| [lr-fbalpha](#lr-fbalpha) | arcade **or** fba **or** neogeo  | FB Alpha v0.2.97.39 |  /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/fba/retroarch.cfg, **or** /opt/retropie/configs/neogeo/retroarch.cfg |
+| [PiFBA](#pifba) | arcade **or** fba **or** neogeo  | FBA 0.2.96.71 | /opt/retropie/emulators/pifba/fba2x.cfg **or** /opt/retropie/configs/fba/fba2x.cfg |
+| [GnGeo-Pi](#gngeo-pi) | arcade **or** neogeo | MAME 0.138 | /opt/retropie/configs/neogeo/gngeorc |
 
 ## ROMS
 
@@ -47,7 +47,7 @@ The menus allow you to change various settings like region, dip switch settings 
 ## Emulators
 
 ### lr-fbalpha
-
+[Visit the Final Burn Alpha homepage on github](https://github.com/libretro/fbalpha)
 **lr-fbalpha Controls**
 
 lr-fbalpha utilises RetroArch configs. Add custom RetrAarch controls to the `retroarch.cfg` file in:
@@ -60,7 +60,7 @@ For more information on custom RetroArch controls see: [RetroArch Configuration]
 ---
 
 ### PiFBA
-
+[Visit the PiFBA homepage on github](https://github.com/RetroPie/pifba)
 **PiFBA Controls**
 
 PiFBA controls are located in:
@@ -139,8 +139,8 @@ MaintainAspectRatio=1
 ```
 
 ---
-
-### [GnGeo 0.8 on github](https://github.com/ymartel06/GnGeo-Pi)
+### [GnGeo-Pi]
+[Visit the GnGeo-Pi homepage on github](https://github.com/ymartel06/GnGeo-Pi)
 ```shell
 Roms Dir: /home/pi/RetroPie/roms/neogeo
 Binary Dir: /opt/retropie/emulators/gngeopi/bin
