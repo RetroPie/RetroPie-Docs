@@ -33,10 +33,10 @@ Place your the syscard3.pce file in
 
 Working BIOS files:
 
-| md5sum          |        CRC32 |
-|--------------|--------------------|
-| 0754f903b52e3b3342202bdafb13efa5 | 2b5b75fe |
-| ff1a674273fe3540ccef576376407d1d | |
+| md5sum | CRC32 | Comment |
+| :--: | :--: | :--: |
+| ff1a674273fe3540ccef576376407d1d | 64f78e3c | |
+| 0754f903b52e3b3342202bdafb13efa5 | 2b5b75fe | Most games work but some like Mirai Shounen Conan and Sylphia will not |
 
 ## Controls
 
@@ -80,7 +80,7 @@ FILE "AKUMAJOU DRACULA X.bin" BINARY
 FILE "Akumajou_Dracula_X_-_Chi_no_Rinne_(NTSC-J)_[KMCD3005].bin" BINARY
 ~~~
 
-### Advanced Configuration:
+## Advanced Configuration
 
 If you are from the United States, it is likely that you had the TurboGrafx-16 rather than the PC Engine. If you want EmulationStation to show the TurboGrafx-16 logo instead of PC Engine, then you can change the file in `/etc/emulationstation/es_systems.cfg`
 
