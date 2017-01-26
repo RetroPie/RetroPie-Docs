@@ -16,9 +16,9 @@ This page is a resource for additional details on RetroPie's MAME emulators incl
 | Emulator | ROM Folder | Required ROM Set Version | Controller Configuration |
 | :---: | :---: | :---: | :---: | :---: | :---: |
 | [mame4all-pi](#mame4all-pi) | arcade **or** mame-mame4all | MAME 0.37b5 | /opt/retropie/configs/mame-mame4all/cfg/default.cfg |
-| [lr-imame4all](#lr-imame4all-(mame 2000)) | arcade **or** mame-mame4all | MAME 0.37b5 | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/mame-mame4all/retroarch.cfg |
-| [lr-mame2003](#lr-mame2003-(mame 2003)) | arcade **or** mame-libretro | MAME 0.78 | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/mame-libretro/retroarch.cfg |
-| [lr-mame2010](#lr-mame2010-(mame 2010)) | arcade **or** mame-libretro | MAME 0.139 | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/mame-libretro/retroarch.cfg |
+| [lr-imame4all](#lr-imame4all-mame-2000) | arcade **or** mame-mame4all | MAME 0.37b5 | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/mame-mame4all/retroarch.cfg |
+| [lr-mame2003](#lr-mame2003-mame-2003) | arcade **or** mame-libretro | MAME 0.78 | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/mame-libretro/retroarch.cfg |
+| [lr-mame2010](#lr-mame2010-mame-2010) | arcade **or** mame-libretro | MAME 0.139 | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/mame-libretro/retroarch.cfg |
 | [AdvanceMAME 0.94](#advancemame-0.94) | arcade **or** mame-advmame | MAME 0.94 | /opt/retropie/configs/mame-advmame/advmame-0.94.0.rc |
 | [AdvanceMAME 1.4](#advancemame-1.4) | arcade **or** mame-advmame | MAME 0.106 | /opt/retropie/configs/mame-advmame/advmame-1.4.rc |
 
@@ -125,7 +125,7 @@ lr-mame2003 utilises [RetroArch control configurations](https://github.com/petro
 ```
 
 ---
-### lr-mame2010
+### lr-mame2010 (MAME 2010)
 [Visit mame2010-libretro on github](https://github.com/libretro/mame2010-libretro)
 **Note: This emulator is considered experimental in RetroPie and has limited functionality. For example, only 2 players are supported.**
 
