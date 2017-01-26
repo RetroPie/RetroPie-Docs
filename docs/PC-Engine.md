@@ -33,10 +33,11 @@ Place your the syscard3.pce file in
 
 Working BIOS files:
 
-| md5sum | CRC32 | Comment |
-| :--: | :--: | :--: |
-| ff1a674273fe3540ccef576376407d1d | 64f78e3c | |
-| 0754f903b52e3b3342202bdafb13efa5 | 2b5b75fe | Most games work but some like Mirai Shounen Conan and Sylphia will not |
+| Region | md5sum | CRC32 | Comment |
+| :--: | :--: | :--: | :--: |
+| | ff1a674273fe3540ccef576376407d1d | 64f78e3c | |
+| Japan | 38179df8f4ac870017db21ebcbf53114 | 6d9a73ef | |
+| USA | 0754f903b52e3b3342202bdafb13efa5 | 2b5b75fe | Most games work but some like Mirai Shounen Conan and Sylphia will not |
 
 ## Controls
 
