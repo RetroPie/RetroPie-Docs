@@ -15,12 +15,12 @@ This page is a resource for additional details on RetroPie's MAME emulators incl
 
 | Emulator | ROM Folder | Required ROM Set Version | Controller Configuration |
 | :---: | :---: | :---: | :---: | :---: | :---: |
-| [mame4all-pi](https://github.com/RetroPie/mame4all-pi) | arcade **or** mame-mame4all | MAME 0.37b5 | /opt/retropie/configs/mame-mame4all/cfg/default.cfg |
-| [lr-imame4all](https://github.com/libretro/imame4all-libretro) | arcade **or** mame-mame4all | MAME 0.37b5 | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/mame-mame4all/retroarch.cfg |
-| [lr-mame2003](https://github.com/libretro/mame2003-libretro) | arcade **or** mame-libretro | MAME 0.78 | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/mame-libretro/retroarch.cfg |
-| [lr-mame2010](https://github.com/libretro/mame2010-libretro) | arcade **or** mame-libretro | MAME 0.139 | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/mame-libretro/retroarch.cfg |
-| [AdvanceMAME 0.94](http://advancemame.sourceforge.net/) | arcade **or** mame-advmame | MAME 0.94 | /opt/retropie/configs/mame-advmame/advmame-0.94.0.rc |
-| [AdvanceMAME 1.4](http://advancemame.sourceforge.net/) | arcade **or** mame-advmame | MAME 0.106 | /opt/retropie/configs/mame-advmame/advmame-1.4.rc |
+| [mame4all-pi](#mame4all-pi) | arcade **or** mame-mame4all | MAME 0.37b5 | /opt/retropie/configs/mame-mame4all/cfg/default.cfg |
+| [lr-imame4all](#lr-imame4all-(mame 2000)) | arcade **or** mame-mame4all | MAME 0.37b5 | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/mame-mame4all/retroarch.cfg |
+| [lr-mame2003](#lr-mame2003-(mame 2003)) | arcade **or** mame-libretro | MAME 0.78 | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/mame-libretro/retroarch.cfg |
+| [lr-mame2010](#lr-mame2010-(mame 2010)) | arcade **or** mame-libretro | MAME 0.139 | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/mame-libretro/retroarch.cfg |
+| [AdvanceMAME 0.94](#advancemame-0.94) | arcade **or** mame-advmame | MAME 0.94 | /opt/retropie/configs/mame-advmame/advmame-0.94.0.rc |
+| [AdvanceMAME 1.4](#advancemame-1.4) | arcade **or** mame-advmame | MAME 0.106 | /opt/retropie/configs/mame-advmame/advmame-1.4.rc |
 
 ## Arcade ROM paths
 
@@ -31,7 +31,8 @@ In RetroPie 3.0.0 some emulators share directories, so you need to choose which 
 Note: These details are as per the default installed binaries on the RetroPie 3.0.0 image.
 
 ---
-### [mame4all-pi on sourceforge](http://sourceforge.net/projects/mame4allpi/)
+### mame4all-pi
+[Visit the mame4all homepage on sourceforge](http://sourceforge.net/projects/mame4allpi/)
 
 ```shell
 Roms Dir: /home/pi/RetroPie/roms/mame-mame4all
@@ -62,7 +63,8 @@ Other files in this cfg directory are ROM specific configs.
 Note: Should your input configuration or other aspect of the configuration need resetting to defaults, remove the default.cfg or ROM specific .cfg file, and it will be re-created with default values next time you start MAME4ALL or modify the ROM configuration.
 
 ---
-### [lr-imame4all on github](https://github.com/libretro/imame4all-libretro)
+### lr-imame4all (MAME 2000)
+[Visit the mame2000-libretro homepage on github](https://github.com/libretro/mame2000-libretro)
 ```shell
 Roms Dir: /home/pi/RetroPie/roms/mame-mame4all
 Binary Dir: /opt/retropie/libretrocores/lr-imame4all
@@ -89,7 +91,8 @@ lr-imame4all utilises [RetroArch control configuration](https://github.com/petro
 ```
 
 ---
-### [lr-mame2003 on github](https://github.com/libretro/mame2003-libretro)
+### lr-mame2003 (MAME 2003)
+[Visit the mame2003-libretro homepage on github](https://github.com/libretro/mame2003-libretro)
 
 **Please see [lr-mame2003 on RetroPie](lr-mame2003) for information on how to configure specific features of this emulator.**
 
@@ -122,7 +125,8 @@ lr-mame2003 utilises [RetroArch control configurations](https://github.com/petro
 ```
 
 ---
-### [lr-mame2010 on github](https://github.com/libretro/mame2010-libretro)
+### lr-mame2010
+[Visit mame2010-libretro on github](https://github.com/libretro/mame2010-libretro)
 **Note: This emulator is considered experimental in RetroPie and has limited functionality. For example, only 2 players are supported.**
 
 ```shell
@@ -133,7 +137,7 @@ Config Dir: /opt/retropie/configs/mame-libretro/retroarch.cfg
 **MAME Version**: 0.139 (August 2010)
 
 **Active Sets: 8782**
-* BIOS: ?
+* BIOS: 67
 * CHDs: 406
 * Samples: 70 (4 more samples are not in circulation)
 
@@ -150,7 +154,8 @@ lr-mame2010 utilises [RetroArch control configurations](https://github.com/petro
 
 ---
 
-### [AdvanceMAME 0.94 on sourceforge](http://sourceforge.net/projects/advancemame/)
+### AdvanceMAME 0.94
+[Visit the AdvanceMAME homepage on sourceforge](http://sourceforge.net/projects/advancemame/)
 ```shell
 Roms Dir: /home/pi/RetroPie/roms/mame-advmame
 Binary Dir: /opt/retropie/emulators/advmame/bin
@@ -179,7 +184,8 @@ Note: Should your input configuration or other aspect of the configuration need 
 
 ---
 
-### [AdvanceMAME 1.4 on sourceforge](http://sourceforge.net/projects/advancemame/)
+### AdvanceMAME 1.4
+[Visit the AdvanceMAME homepage on sourceforge](http://sourceforge.net/projects/advancemame/)
 ```shell
 Roms Dir: /home/pi/RetroPie/roms/mame-advmame
 Binary Dir: /opt/retropie/emulators/advmame/bin
