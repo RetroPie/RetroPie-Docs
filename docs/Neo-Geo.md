@@ -139,7 +139,7 @@ MaintainAspectRatio=1
 ```
 
 ---
-### [GnGeo-Pi]
+### GnGeo-Pi
 [Visit the GnGeo-Pi homepage on github](https://github.com/ymartel06/GnGeo-Pi)
 ```shell
 Roms Dir: /home/pi/RetroPie/roms/neogeo
