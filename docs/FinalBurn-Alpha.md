@@ -14,9 +14,9 @@ This page is a resource for additional details on RetroPie's Final Burn Alpha em
 
 | Emulator | Rom Folder | Required ROM Version | Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
-| [lr-fbalpha](https://github.com/libretro/fbalpha) | arcade **or** fba **or** neogeo  | FB Alpha v0.2.97.39| /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/fba/retroarch.cfg, **or** /opt/retropie/configs/neogeo/retroarch.cfg |
-| [lr-fbalpha2012](https://github.com/libretro/fbalpha2012) | arcade **or** fba **or** neogeo  | FB Alpha v0.2.97.30 | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/fba/retroarch.cfg, **or** /opt/retropie/configs/neogeo/retroarch.cfg |
-| [PiFBA](https://github.com/RetroPie/pifba) | arcade **or** fba **or** neogeo  | FB Alpha 0.2.96.71 | /opt/retropie/emulators/pifba/fba2x.cfg **or** /opt/retropie/configs/fba/fba2x.cfg |
+| [lr-fbalpha](#lr-fbalpha) | arcade **or** fba **or** neogeo  | FB Alpha v0.2.97.39| /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/fba/retroarch.cfg, **or** /opt/retropie/configs/neogeo/retroarch.cfg |
+| [lr-fbalpha2012](#lr-fbalpha2012) | arcade **or** fba **or** neogeo  | FB Alpha v0.2.97.30 | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/fba/retroarch.cfg, **or** /opt/retropie/configs/neogeo/retroarch.cfg |
+| [PiFBA](#pifba) | arcade **or** fba **or** neogeo  | FB Alpha 0.2.96.71 | /opt/retropie/emulators/pifba/fba2x.cfg **or** /opt/retropie/configs/fba/fba2x.cfg |
 
 ## Arcade ROM paths
 
@@ -25,7 +25,8 @@ So you can have 1 romset for each of these (mame4all, FBA, NeoGeo, advmame) To a
 
 ## Emulators
 
-### [lr-fbalpha on github](https://github.com/libretro/fbalpha)
+### [lr-fbalpha]
+[Visit the Final Burn Alpha homepage on github](https://github.com/libretro/fbalpha)
 
 **Note: Please see [[lr-fbalpha]] for information on how to configure specific features of this emulator.**
 
@@ -48,7 +49,8 @@ Config Dir: /opt/retropie/configs/fba/retroarch.cfg
 
 ---
 
-### [lr-fbalpha2012 on github](https://github.com/libretro/fbalpha2012) 
+### [lr-fbalpha2012]
+[Visit the Final Burn Alpha 2012 homepage on github](https://github.com/libretro/fbalpha2012) 
 ```shell
 Roms Dir: /home/pi/RetroPie/roms/fba
 Binary Dir: /opt/retropie/libretrocores/lr-fbalpha2012
@@ -75,7 +77,8 @@ For more information on custom RetroArch controls see: [RetroArch Configuration]
 
 ---
 
-### [PiFBA on sourceforge](http://sourceforge.net/projects/pifba/)
+### [PiFBA]
+[Visit the PiFBA homepage on sourceforge](http://sourceforge.net/projects/pifba/)
 ```shell
 Roms Dir: /home/pi/RetroPie/roms/fba
 Binary Dir: /opt/retropie/emulators/pifba
