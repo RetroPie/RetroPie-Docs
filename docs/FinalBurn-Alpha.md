@@ -25,7 +25,7 @@ So you can have 1 romset for each of these (mame4all, FBA, NeoGeo, advmame) To a
 
 ## Emulators
 
-### [lr-fbalpha]
+### lr-fbalpha
 [Visit the Final Burn Alpha homepage on github](https://github.com/libretro/fbalpha)
 
 **Note: Please see [[lr-fbalpha]] for information on how to configure specific features of this emulator.**
@@ -49,7 +49,7 @@ Config Dir: /opt/retropie/configs/fba/retroarch.cfg
 
 ---
 
-### [lr-fbalpha2012]
+### lr-fbalpha2012
 [Visit the Final Burn Alpha 2012 homepage on github](https://github.com/libretro/fbalpha2012) 
 ```shell
 Roms Dir: /home/pi/RetroPie/roms/fba
@@ -77,7 +77,7 @@ For more information on custom RetroArch controls see: [RetroArch Configuration]
 
 ---
 
-### [PiFBA]
+### PiFBA
 [Visit the PiFBA homepage on sourceforge](http://sourceforge.net/projects/pifba/)
 ```shell
 Roms Dir: /home/pi/RetroPie/roms/fba
