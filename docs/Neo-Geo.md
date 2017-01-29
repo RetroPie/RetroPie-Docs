@@ -3,7 +3,7 @@
 ***
 _The Neo Geo is a cartridge-based arcade system board and home video game console released by SNK in 1990._
 
-See also: [[MAME]], [[Neo Geo]]
+See also: [[MAME]], [[FB Alpha|FinalBurn Alpha]]
 ***
 
 There are a variety of arcade emulators available in RetroPie which can emulate Neo Geo games. There are significant differences in performance, compatibility, and configuration between them. If you're getting started with arcade emulation, start by reading [Managing Arcade ROMs](https://github.com/RetroPie/RetroPie-Setup/wiki/Managing-ROMs).
