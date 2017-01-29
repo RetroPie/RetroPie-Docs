@@ -8,6 +8,7 @@ There are three main methods of transferring roms: via USB stick, via SFTP, and 
 
 ### USB stick
  * (ensure that your USB is formatted to FAT32)
+ * (you may need to disconnect your Raspberry Pi from the internet, either by disconnecting an Ethernet cord or turning off WiFi)
  * first create a folder called `retropie` on your USB stick
  * plug it into the pi and wait for it to finish blinking
  * pull the USB out and plug it into a computer
