@@ -47,6 +47,8 @@ If any of the above configuration lines are unset (particularly LANG, LANGUAGE, 
 
 Users can also set the local through the `raspi-config` tool.
 
+A reboot is required before these changes will be reflected by the `locale` command.
+
 ## Install RetroPie
 
 After that, we install the needed packages for the RetroPie setup script:
