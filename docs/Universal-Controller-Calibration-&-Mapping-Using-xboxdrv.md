@@ -204,7 +204,6 @@ if [ "$1" = "scummvm" ]
 then
 sudo killall > /dev/null 2>&1 xboxdrv
 sudo /opt/retropie/supplementary/xboxdrv/bin/xboxdrv > /dev/null 2>&1 \
-	>/dev/null \
 	--evdev /dev/input/by-id/* \
 	--silent \
 	--detach-kernel-driver \
