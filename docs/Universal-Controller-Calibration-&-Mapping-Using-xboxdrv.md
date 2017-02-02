@@ -301,7 +301,7 @@ rom="${3##*/}"
 
 ### Set variables for your joypad and emulator
 ### Basic Configuraions - Standard controller mappings 
-basicPS3="/opt/retropie/supplementary/xboxdrv/bin/xboxdrv >/dev/null \
+basicPS3="sudo /opt/retropie/supplementary/xboxdrv/bin/xboxdrv >/dev/null \
 	--evdev /dev/input/event2 \
 	--silent \
 	--detach-kernel-driver \
