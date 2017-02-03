@@ -6,7 +6,7 @@ _The Game Boy was released by Nintendo in 1989 thus kicking off the era of handh
 
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
-| [lr-gambatte](https://github.com/libretro/gambatte-libretro) | gb  | .gb | none | /opt/retropie/configs/gb/retroarch.cfg |
+| [lr-gambatte](https://github.com/libretro/gambatte-libretro) | gb  | .gb .zip | none | /opt/retropie/configs/gb/retroarch.cfg |
 
 ## Emulator: [lr-gambatte](https://github.com/libretro/gambatte-libretro)
 
