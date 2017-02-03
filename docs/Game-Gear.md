@@ -7,7 +7,7 @@ _The Sega Game Gear was an 8 bit handheld gaming console released in 1990_
 
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
-| [lr-genesis-plus-gx](https://github.com/libretro/Genesis-Plus-GX) | gamegear  | .gg | none | /opt/retropie/configs/gamegear/retroarch.cfg |
+| [lr-genesis-plus-gx](https://github.com/libretro/Genesis-Plus-GX) | gamegear  | .gg .zip| none | /opt/retropie/configs/gamegear/retroarch.cfg |
 | [Osmose](https://github.com/RetroPie/osmose-rpi) | gamegear  | .gg | none | /home/pi/osmose_files/osmose.ini |
 
 ## Emulators: [Osmose](https://github.com/RetroPie/osmose-rpi), [lr-genesis-plus-gx](https://github.com/libretro/Genesis-Plus-GX)
