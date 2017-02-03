@@ -7,7 +7,7 @@ _This console, known as the Genesis in North America and the Mega Drive everywhe
 
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
-| [lr-picodrive](https://github.com/libretro/picodrive) | megadrive  | .smd .bin .md .iso | none | /opt/retropie/configs/megadrive/retroarch.cfg |
+| [lr-picodrive](https://github.com/libretro/picodrive) | megadrive  | .smd .bin .md .iso .zip | none | /opt/retropie/configs/megadrive/retroarch.cfg |
 | [lr-genesis-plus-gx](https://github.com/libretro/Genesis-Plus-GX) | megadrive  | .smd .bin .md .iso | none | /opt/retropie/configs/megadrive/retroarch.cfg |
 | [DGen](http://dgen.sourceforge.net/) | megadrive | .smd .bin .md .iso | none | /opt/retropie/configs/megadrive/dgenrc |
 
