@@ -99,7 +99,7 @@ proc            /proc           proc    defaults          0       0
 /dev/mmcblk0p2  /               ext4    defaults,noatime  0       1
 # a swapfile is not a swap partition, no line here
 #   use  dphys-swapfile swap[on|off]  for that
-UUID=E44B-FC4E  /home/pi/RetroPie      vfat    rw,exec,uid=pi,gid=pi,umask=022 0       2
+UUID=E44B-FC4E  /home/pi/RetroPie      vfat    nofail,user,uid=pi,gid=pi 0       2
 ```
 ...where `UUID=` the UUID of your drive, and everything else is the same as the example. Note that each item is *tab delimited.* If you use spaces instead of tabs this will not work.
 
@@ -108,6 +108,10 @@ In the case of errors with ext4 file systems use
 UUID="XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXX" /home/pi/RetroPie ext4 nofail,defaults 0    0
 ``` 
 
+In the case you want to allow execution of file with fat32 file system (E.g : openbard), use
+```
+UUID=E44B-FC4E  /home/pi/RetroPie      vfat    rw,exec,uid=pi,gid=pi,umask=022 0       2
+``` 
 ## Restart system
 This must be a full restart, not just emulationstation. When it boots up you should see any ROMs you previously had show up in emulationstation.
 
