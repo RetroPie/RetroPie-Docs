@@ -53,6 +53,7 @@
 * [Oric-1/Atmos](Oric)
 * [PC](PC)
 * [PC Engine/TurboGrafx-16](PC-Engine)
+* [PC-FX](PC-FX)
 * [PSP](PSP)
 * [PlayStation 1](Playstation-1)
 * [PlayStation 2](Playstation-2)
