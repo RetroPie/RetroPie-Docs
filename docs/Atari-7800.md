@@ -6,7 +6,7 @@ _The Atari 7800 was a video game console released by Atari in 1986._
 
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
-| [lr-prosystem](https://github.com/libretro/prosystem-libretro) | atari7800  | .a78 .bin | 7800 BIOS (U).rom | /opt/retropie/configs/atari7800/retroarch.cfg |
+| [lr-prosystem](https://github.com/libretro/prosystem-libretro) | atari7800  | .a78 .bin .zip| 7800 BIOS (U).rom | /opt/retropie/configs/atari7800/retroarch.cfg |
 
 ## Emulator: [lr-prosystem](https://github.com/libretro/prosystem-libretro)
 
