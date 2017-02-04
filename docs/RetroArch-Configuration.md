@@ -9,7 +9,7 @@ RetroArch and libretro provide ability to configure controllers once for many em
 
 For emulators which are not libretro cores, there are emulator-specific configurations under the respective system's wiki page.
 
-### The RetroPad concept
+## The RetroPad concept
 
 When you configure your controller in EmulationStation, the RetroPie setup script automatically configures RetroArch with the same controls.
 
@@ -19,13 +19,13 @@ You don't have to map all of the RetroPad buttons to a real world button. If you
 
 As RetroArch starts an emulator core, it maps the RetroPad configuration to the emulated system's original controls. The mapping for many consoles is represented by the pictures below and on each system's wiki page. If you wish, you can reconfigure this control mapping, either for all RetroArch, for a specific system, or even for a specific ROM.
 
-# Retroarch Controls
+## Retroarch Controls
 
 There are 3 main ways to configure input for RetroArch:
 
-- [**Autoconfigurations**](https://github.com/RetroPie/RetroPie-Setup/wiki/RetroArch-Configuration#autoconfigurations) - made in EmulationStation
-- [**Hardcoded Configurations**](https://github.com/RetroPie/RetroPie-Setup/wiki/RetroArch-Configuration#hardcoded-configurations) - made by editing `retroarch.cfg` file(s)
-- [**Core Input Remapping**](https://github.com/RetroPie/RetroPie-Setup/wiki/RetroArch-Configuration#core-input-remapping) - an easy way to do specific control configurations for specific cores, made in the RetroArch RGUI
+- [**Autoconfigurations**](RetroArch-Configuration#autoconfigurations) - made in EmulationStation
+- [**Hardcoded Configurations**](RetroArch-Configuration#hardcoded-configurations) - made by editing `retroarch.cfg` file(s)
+- [**Core Input Remapping**](RetroArch-Configuration#core-input-remapping) - an easy way to do specific control configurations for specific cores, made in the RetroArch RGUI
 
 ## AutoConfigurations
 
@@ -80,16 +80,17 @@ For example, suppose the "A" button on a USB SNES controller has a value of "1."
 Hotkeys are combinations of buttons you can press in order to access options such as saving, loading, and exiting games. The following defaults are set automatically the first time you set up your controller from EmulationStation (the numbers will vary depending the controller you use).
 
 #### Default joypad hotkeys:
-Hotkeys | Action | Code Example
-| :---: | :---: | :---: |
-Select | Hotkey | input_enable_hotkey_btn = "6"
-Select+Start | Exit | input_exit_emulator_btn = "7"
-Select+Right Shoulder | Save | input_save_state_btn = "5"
-Select+Left Shoulder | Load | input_load_state_btn = "4"
-Select+Right | Input State Slot Increase | input_state_slot_increase_btn = "h0right"
-Select+Left | Input State Slot Decrease | input_state_slot_decrease_btn = "h0left"
-Select+X | RGUI Menu | input_menu_toggle_btn = "3"
-Select+B | Reset | input_reset_btn = "0"
+
+|Hotkeys | Action | Code Example|
+| :---: | :---: | :--- |
+|Select | Hotkey | input_enable_hotkey_btn = "6" |
+|Select+Start | Exit | input_exit_emulator_btn = "7"|
+|Select+Right Shoulder | Save | input_save_state_btn = "5"|
+|Select+Left Shoulder | Load | input_load_state_btn = "4"|
+|Select+Right | Input State Slot Increase | input_state_slot_increase_btn = "h0right"|
+|Select+Left | Input State Slot Decrease | input_state_slot_decrease_btn = "h0left"|
+|Select+X | RGUI Menu | input_menu_toggle_btn = "3"|
+|Select+B | Reset | input_reset_btn = "0"|
 
 #### Determining Button Values
 
@@ -108,7 +109,7 @@ If you are interested in figuring out which is your "Select" button, pressing an
 
 Using these values, you can edit the .cfg file for that controller as needed.  For example, if you were interested in switching the default "Select" button as your Hotkey button to a "Home" button available on your controller, you would edit `input_enable_hotkey_btn = "some number"`, replacing "some number" with the value you found for your "Home" button in _jstest_.
 
-### Video Tutorial
+**Video Tutorial**
 
 * [RetroPie: Using hotkeys in retroarch - mapping to joypad by Floob](https://www.youtube.com/watch?v=DBnKFRflEV4)
 
@@ -116,7 +117,7 @@ Using these values, you can edit the .cfg file for that controller as needed.  F
 
 These configurations are manual edits you can make that are locked to a specific libretro core and controller. Hardcoded controls can be configured either globally, specific to the emulator core, or specific to an individual game.
 
-### Config Hierarchy
+#### Config Hierarchy
 
 All RetroArch based emulators can be configured in the following way:
 
@@ -126,7 +127,7 @@ All RetroArch based emulators can be configured in the following way:
 /opt/retropie/configs/all/retroarch.cfg
 ```
 
-([example](https://github.com/RetroPie/RetroPie-Setup/wiki/RetroArch-Configuration#example-default-per-system-retroarchcfg))
+([example](RetroArch-Configuration#example-default-per-system-retroarchcfg))
 
 **System-specific** settings are done in the files:
 
@@ -134,23 +135,23 @@ All RetroArch based emulators can be configured in the following way:
 /opt/retropie/configs/SYSTEMNAME/retroarch.cfg
 ```
 
-([example](https://github.com/RetroPie/RetroPie-Setup/wiki/RetroArch-Configuration#example-per-system-control-override-retroarchcfg))
+([example](RetroArch-Configuration#example-per-system-control-override-retroarchcfg))
 
 Here, SYSTEMNAME is `atari2600`, `snes`, etc. All settings in these files will overwrite the corresponding global setting as long as they are placed **above** the `#includeconfig` line.
 
-**ROM-specific** settings can be created in the [runcommand](https://github.com/RetroPie/RetroPie-Setup/wiki/runcommand) menu and show up as configuration files by ROM title:
+**ROM-specific** settings can be created in the [runcommand](Runcommand) menu and show up as configuration files by ROM title:
 
 ```
 /home/pi/RetroPie/roms/SYSTEMNAME/ROMNAME.cfg
 ```
 
-([example](https://github.com/RetroPie/RetroPie-Setup/wiki/RetroArch-Configuration#example-per-system-control-override-retroarchcfg))
+([example](RetroArch-Configuration#example-per-system-control-override-retroarchcfg))
 
 The `ROMNAME` includes the original file extension before the `.cfg`, e.g. `supermariobros.zip.cfg` These configurations are used when starting this specific ROM.
  
-## Custom RetroArch Override Examples
+### Custom RetroArch Override Examples
 
-### Example Default Per-System retroarch.cfg
+#### Example Default Per-System retroarch.cfg
 
 ```
 # Settings made here will only override settings in the global retroarch.cfg if placed above the #include line
@@ -161,7 +162,7 @@ input_remapping_directory = /opt/retropie/configs/megadrive/
 #include "/opt/retropie/configs/all/retroarch.cfg"
 ```
 
-### Example Per-System Control Override retroarch.cfg
+#### Example Per-System Control Override retroarch.cfg
 
 **Note** the values below are for one person's controller, your values may differ. Make sure that these values are placed **above** the `#includeconfig` line:
 
@@ -215,7 +216,7 @@ input_state_slot_decrease_axis = -0
 #include "/opt/retropie/configs/all/retroarch.cfg"
 ```
 
-### Example Per-ROM Override retroarch.cfg
+#### Example Per-ROM Override retroarch.cfg
 
 ```
 aspect_ratio_index = "19"
@@ -238,7 +239,7 @@ Quick way to do it:
 * Select **Save Core Remap File**
 * OR, if you want to save this remapping for the current game only, select **Save Game Remap File**
 
-## Video Tutorials
+**Video Tutorials**
 
 * Core input remapping: [Remapping your controller](https://www.youtube.com/watch?v=liJKFUZX4PM) by Floob
 * Testing Joypad: [Testing joystick](https://www.youtube.com/watch?v=fcRVcPkpLfQ) by Floob
@@ -246,60 +247,60 @@ Quick way to do it:
 * [Configure a wireless PS3 controller with RetroPie 3](https://www.youtube.com/watch?v=oCq6drv5wbE) by Floob
 * [XBox 360 Wireless Controller Configuration](https://www.youtube.com/watch?v=IjEA85BUDKs) by Herb Fargus
 
-## Default Core Controls for All Emulators
+### Default Core Controls for All Emulators
 
 ***
 
-## 3do
+#### 3do
 ![goldstar_3do_diagram](https://cloud.githubusercontent.com/assets/10035308/16599643/7f450bd6-42c0-11e6-84d7-9cc0944e7b01.png)
-## Atari 2600
+#### Atari 2600
 ![atari2600diagram](https://cloud.githubusercontent.com/assets/10035308/8237960/02aa13fc-15b0-11e5-92c2-311e8960883b.png)
-## Atari Lynx
+#### Atari Lynx
 ![atari_lynx_diagram](https://cloud.githubusercontent.com/assets/10035308/16599640/7f435408-42c0-11e6-8034-d04fec9310ce.png)
-## Gameboy
+#### Gameboy
 ![gameboy](https://cloud.githubusercontent.com/assets/10035308/7334402/bd640072-eb4e-11e4-8251-d2bc3b876153.png)
-## Gameboy Color
+#### Gameboy Color
 ![gameboycolor](https://cloud.githubusercontent.com/assets/10035308/7334404/bd65e496-eb4e-11e4-82e6-78494534d305.png)
-## Gameboy Advance
+#### Gameboy Advance
 ![nintendo_gameboyadvance_diagram](https://cloud.githubusercontent.com/assets/10035308/16599631/7f238b14-42c0-11e6-90e0-eac12cb4db3d.png)
-## Game Gear
+#### Game Gear
 ![segagamegeardiagram](https://cloud.githubusercontent.com/assets/10035308/8245009/b4c87e72-15e5-11e5-8ee5-691daa4d1dd5.png)
-## Mastersystem
+#### Mastersystem
 ![mastersystem](https://cloud.githubusercontent.com/assets/10035308/7334954/59794038-eb60-11e4-989d-6367c1fda8ef.png)
-## Megadrive/Genesis (3 Button)
+#### Megadrive/Genesis (3 Button)
 ![genesis](https://cloud.githubusercontent.com/assets/10035308/7336303/aec335e0-ebb4-11e4-93b3-26037dd26ffb.png)
-## Megadrive/Genesis (6 Button)
+#### Megadrive/Genesis (6 Button)
 ![sega_megadrive_6button_arcadepad_diagram](https://cloud.githubusercontent.com/assets/10035308/16599641/7f43ae62-42c0-11e6-924a-50ca4e44f401.png)
 ![sega_megadrive_6button_diagram](https://cloud.githubusercontent.com/assets/10035308/16599642/7f43e53a-42c0-11e6-9152-c33099878ccc.png)
-## Nintendo 64
+#### Nintendo 64
 ![nintendo_n64_diagram](https://cloud.githubusercontent.com/assets/10035308/16599636/7f3630fc-42c0-11e6-952f-60d97a511f38.png)
-## Nintendo DS
+#### Nintendo DS
 ![nintendo_ds_diagram](https://cloud.githubusercontent.com/assets/10035308/16599645/7f549f56-42c0-11e6-88a8-3acda5287da3.png)
-## NES
+#### NES
 ![nesdiagram](https://cloud.githubusercontent.com/assets/10035308/8245062/4f0c5b8e-15e6-11e5-9255-b920543518d6.png)
-## Neo Geo
+#### Neo Geo
 ![neogeodiagram](https://cloud.githubusercontent.com/assets/10035308/8245309/a575cc8c-15e9-11e5-8735-0a4ab2a4e137.png)
-## Neo Geo Pocket
+#### Neo Geo Pocket
 ![neogeopocketdiagram](https://cloud.githubusercontent.com/assets/10035308/8244887/0e06c54a-15e4-11e5-8f8f-28758d16c446.png)
-## PS1
+#### PS1
 ![playstation3_diagram](https://cloud.githubusercontent.com/assets/10035308/16599634/7f353148-42c0-11e6-9023-dbaf074bc933.png)
-## PSP
+#### PSP
 ![psp_diagram](https://cloud.githubusercontent.com/assets/10035308/16599632/7f34c9ec-42c0-11e6-8988-0b2d6e795d10.png)
-## SG-1000
+#### SG-1000
 ![sg-1000diagram](https://cloud.githubusercontent.com/assets/10035308/8238988/4aee1770-15b6-11e5-90d4-5bf66ac7e3dd.png)
-## Super Nintendo
+#### Super Nintendo
 ![snes](https://cloud.githubusercontent.com/assets/10035308/7334403/bd655d6e-eb4e-11e4-8fd7-a4424aad1034.png)
-## Sega Saturn
+#### Sega Saturn
 ![sega_saturn_diagram](https://cloud.githubusercontent.com/assets/10035308/16599639/7f42ac24-42c0-11e6-8978-5f3cce723393.png)
-## Turbografx16
+#### Turbografx16
 ![turbografx16diagram](https://cloud.githubusercontent.com/assets/10035308/8239221/aa5f3602-15b7-11e5-9c9f-54322c0a18bc.png)
-## Videopac/Odyssey2
+#### Videopac/Odyssey2
 ![videopacdiagram](https://cloud.githubusercontent.com/assets/10035308/8236975/679e6a58-15a9-11e5-98de-4ca681404eca.png)
-## Vectrex
+#### Vectrex
 ![vectrex](https://cloud.githubusercontent.com/assets/10035308/8196876/168671c6-144e-11e5-8139-d2d980a936fa.png)
-## VirtualBoy
+#### VirtualBoy
 ![nintendo_virtualboy_diagram](https://cloud.githubusercontent.com/assets/10035308/16599637/7f382d3a-42c0-11e6-8e7d-bdbacf7afd82.png)
-## Sega Dreamcast
+#### Sega Dreamcast
 ![sega_dreamcast_diagram](https://cloud.githubusercontent.com/assets/10035308/16599638/7f411634-42c0-11e6-811c-456f02b2ea47.png)
-## Intellivision
+#### Intellivision
 ![intellivision](https://cloud.githubusercontent.com/assets/10035308/8246393/3e98c8c2-15fb-11e5-9398-3f5abd60361b.png)
