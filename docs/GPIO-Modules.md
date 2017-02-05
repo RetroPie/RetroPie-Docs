@@ -2,7 +2,7 @@
 
 The module for retro game controllers allows connecting various home computer joysticks and console gamepads to Raspberry Pi via GPIO with a minimal amount of extra hardware. The module consists of 2 drivers, each of which supports different types of controllers:
 
-[gamecon_gpio_rpi](https://github.com/RetroPie/RetroPie-Setup/wiki/GPIO-Modules#gamecon_gpio_rpi):
+[gamecon_gpio_rpi](GPIO-Modules#gamecon_gpio_rpi):
 
 * NES gamepads
 * SNES gamepads and mouses
@@ -10,7 +10,7 @@ The module for retro game controllers allows connecting various home computer jo
 * N64 controllers
 * Gamecube controllers
 
-[db9_gpio_rpi](https://github.com/RetroPie/RetroPie-Setup/wiki/GPIO-Modules#db9_gpio_rpi):
+[db9_gpio_rpi](GPIO-Modules#db9_gpio_rpi):
 
 * Atari, Commodore, Amiga etc. DB9 multisystem joysticks
 * Sega Mega Drive (Genesis) pads
