@@ -79,6 +79,9 @@ They can also be accessed over [samba shares](https://github.com/retropie/retrop
 ```
 \\retropie\configs\all\emulationstation
 ```
+
+Note if you are going to make edits to any gamelist.xml you need to have exited emulationstation first
+
 # EmulationStation Built-In Scraper:
 
 EmulationStation has a built in scraper that pulls from [thegamesdb](http://thegamesdb.net/). It can be accessed from the start menu in emulationstation.
