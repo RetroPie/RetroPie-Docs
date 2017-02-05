@@ -65,7 +65,7 @@
 * [Sega CD](Sega-CD)
 * [Sega SG-1000](SG-1000)
 * [Super Nintendo Entertainment System](Super-Nintendo-Entertainment-System)
-* [TI-99/4A](TI99)
+* [TI-99/4A](TI-99)
 * [TRS-80](TRS-80)
 * [Vectrex](Vectrex)
 * [Videopac/Odyssey2](VideoPac-Odyssey-2)
