@@ -1,5 +1,6 @@
 site_name: RetroPie Docs
 theme: material
+
 extra:
   logo: 'images/logo.svg'
   palette:
@@ -10,11 +11,14 @@ extra:
       link: 'https://github.com/RetroPie'
     - type: 'twitter'
       link: 'https://twitter.com/retropieproject'
+
+extra_css:
+  - 'stylesheets/extra.css'
+
 google_analytics:
   - 'UA-76418872-1'
   - 'auto'
-extra_css:
-  - 'stylesheets/extra.css'
+
 repo_name: 'RetroPie-Setup'
 repo_url: 'https://github.com/RetroPie/RetroPie-Setup'
 
