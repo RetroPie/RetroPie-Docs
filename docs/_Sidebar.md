@@ -146,7 +146,7 @@
 * [Logitech controllers](Logitech-Controller)
 * [Mobile Gamepad](https://github.com/sbidolach/mobile-gamepad)
 * [Smartphone Gamepad](Virtual-Gamepad)
-* [Wiimote](Wiimote)
+* [Wiimote](Wiimote-Controller)
 * [Wii U Pro Controller (Debian jessie only)](Wii-U-Pro-Controller)
 * [Xin-Mo Driver](Xin-Mo-Controller)
 * [GPIO Controller Modules](GPIO-Modules)
