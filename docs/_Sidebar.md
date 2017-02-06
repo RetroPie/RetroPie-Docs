@@ -147,11 +147,11 @@
 * [Mobile Gamepad](https://github.com/sbidolach/mobile-gamepad)
 * [Smartphone Gamepad](Virtual-Gamepad)
 * [Wiimote](Wiimote-Controller)
-* [Wii U Pro Controller (Debian jessie only)](Wii-U-Pro-Controller)
+* [Wii U Pro Controller](Wii-U-Pro-Controller)
 * [Xin-Mo Driver](Xin-Mo-Controller)
 * [GPIO Controller Modules](GPIO-Modules)
 * [Spinners and Trackballs](Spinners-and-Trackballs)
-* [Xiaomi Gamepad](Xiaomi-Gamepad)
+* [Xiaomi Gamepad](Xiaomi-Controller)
 * [Universal Controller Calibration & Mapping Using xboxdrv](https://github.com/RetroPie/RetroPie-Setup/wiki/Universal-Controller-Calibration-&-Mapping-Using-xboxdrv)
 
 ## Troubleshooting
