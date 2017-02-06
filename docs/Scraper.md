@@ -3,20 +3,14 @@ Scraping is a way to get metadata and boxart for your games from the internet. T
 ![](https://cloud.githubusercontent.com/assets/10035308/10357565/b97b4ec4-6d40-11e5-9f44-6b27ae31ebc3.png)
 
 
-# Steven Selph's Scraper
+## Steven Selph's Scraper
 
 Steven Selph's scraper is the simplest and best way of scraping roms (provided that the systems are supported.) It can be installed and used from the setup menu using the following steps:
 
-1) Quit EmulationStation (from the start menu or press F4) and type on the command line
-```
-sudo /home/pi/RetroPie-Setup/retropie_setup.sh
-```
-
-2) In 3.x Choose 'Setup'. In 4.x Choose 'Configuration / Tools'.
-
-3) Select Scraper
-
-4) Wait for the installation to complete (it may take some time as it has to install various software libraries)
+1. Quit EmulationStation (from the start menu or press F4) and type `sudo /home/pi/RetroPie-Setup/retropie_setup.sh`
+2. In 3.x Choose 'Setup'. In 4.x Choose 'Configuration / Tools'.
+3. Select Scraper
+4. Wait for the installation to complete (it may take some time as it has to install various software libraries)
 
 **Note that if you are remotely running this script you must be logged in with pi otherwise it will confuse the scraper. It may take some time for the xml files to build. This will also only work if your roms are located in the local roms folder and not on an external device.**
 
@@ -56,11 +50,11 @@ Make sure to update to the latest version of Retropie-Setup script if you're mis
 
 - **Update scraper to the latest version:** This updates the scraper to the latest version.
 
-#### Slow Boot and Shutdown Times
+### Slow Boot and Shutdown Times
 
 You'll notice after adding lots of ROMs and scraping them that your boot and shutdown time can increase substantially- some solutions to speed up your boot and shutdown times are described [**HERE**](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#why-does-shut-down-and-reboot-take-ages)
 
-#### Where are my scraped images and metadata saved?
+### Where are my scraped images and metadata saved?
 
 Once your games have been scraped they will be located in two parts: `Downloaded Images` and `Gamelists`
 ```
@@ -80,9 +74,9 @@ They can also be accessed over [samba shares](https://github.com/retropie/retrop
 \\retropie\configs\all\emulationstation
 ```
 
-Note if you are going to make edits to any gamelist.xml you need to have exited emulationstation first
+**Note** if you are going to make edits to any `gamelist.xml` you need to have exited emulationstation first
 
-# EmulationStation Built-In Scraper:
+## EmulationStation Built-In Scraper:
 
 EmulationStation has a built in scraper that pulls from [thegamesdb](http://thegamesdb.net/). It can be accessed from the start menu in emulationstation.
 
@@ -142,7 +136,7 @@ And this was the resulting gamelist.xml:
   </gameList>
 ```
 
-#### Parameter list:
+### Parameter list:
 ```
 Usage of /opt/retropie/supplementary/scraper/scraper:
   -add_not_found=false: If true, add roms that are not found as an empty gamelist entry.
