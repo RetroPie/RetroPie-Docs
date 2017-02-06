@@ -4,9 +4,9 @@ If you have a Raspberry Pi 3, wifi is built into the pi, if you have a pi2 or ea
 
 There are 5 main methods to configure Wifi:
 
-1. [Wifi Module](https://github.com/retropie/retropie-setup/wiki/Wifi#method-1-easiest)
-2. [Connecting to Wifi Without a Keyboard](https://github.com/retropie/retropie-setup/wiki/Wifi#method-2-connecting-to-wifi-without-a-keyboard)
-3. [Manual Configuration (Interfaces)](https://github.com/retropie/retropie-setup/wiki/Wifi#method-3-interfaces)
+1. [Wifi Module](Wifi#method-1-easiest)
+2. [Connecting to Wifi Without a Keyboard](Wifi#method-2-connecting-to-wifi-without-a-keyboard)
+3. [Manual Configuration (Interfaces)](Wifi#method-3-interfaces)
 4. [Manual Configuration (WPA_Supplicant)](https://github.com/retropie/retropie-setup/wiki/Wifi#method-4-wpa_supplicantconf)
 5. [WCID-Curses Daemon](https://github.com/retropie/retropie-setup/wiki/Wifi#method-5-wicd-curses)
 
