@@ -175,6 +175,77 @@ Now that this is complete you will want to go back two directories so that we ar
 
  Having completed this step, you will now want to reboot EmulationStation, navigate to `Ports` and test your new `Darkest Hour` entry.
 
+### How to setup Freedoom
+
+[Freedoom](https://freedoom.github.io/index.html) is a collection of reusable assets (textures, sound effects and music tracks) that will completely replace the original Doom assets and are liberally licensed under the [BSD license](https://en.wikipedia.org/wiki/BSD_licenses).
+
+Why is this important to me?
+
+[id Software](http://www.idsoftware.com/) released the source code for Doom's engine under the [GNU General Public License](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html) but not the assets so to legally use this source code, you would still need to own the original game  (which you can still purchase online on [Steam](http://store.steampowered.com/sub/18397/), [GOG.com](https://www.gog.com/game/the_ultimate_doom) and other places like eBay).
+
+Freedoom aims to be compatible with many of the thousands of Doom levels and other “mods” already released for the original game making them playable without the need to use non-free software.  This project has been a work-in-progress for many years now and has already replaced a considerable amount of the game's content but still haven't reached the targeted version 1.0.
+
+Freedoom is divided into three [IWADs](https://zdoom.org/wiki/IWAD).
+
+* Phase 1, which is a replacement for the original Doom and The Ultimate Doom containing 4 chapters with 9 levels each.
+
+* Phase 2, which replaces Doom II and Final Doom and contains a massive 32-level chapter.
+
+* Last FreeDM, which also replaces Doom II and Final Doom and is designed to be a fast-paced competitive deathmatch only campaign containing no monsters.
+
+First you need to download Freedoom:
+https://freedoom.github.io/download.html
+
+As of this writing, the newest version of Freedoom is 0.10.1 so you can use wget to download the 2 files needed:
+
+`cd`
+`wget https://github.com/freedoom/freedoom/releases/download/v0.10.1/freedoom-0.10.1.zip && wget https://github.com/freedoom/freedoom/releases/download/v0.10.1/freedm-0.10.1.zip`
+
+Next extract both files:
+
+`unzip freedoom-0.10.1.zip && unzip freedm-0.10.1.zip`
+
+The files will be extracted to folders named `freedoom-0.10.1` and `freedm-0.10.1` respectively and I like to keep all the Doom WADs in the same folder so why not put them with the shareware doom1.wad.
+
+`mv freedoom-0.10.1/freedoom*.wad freedm-0.10.1/freedm.wad /home/pi/RetroPie/roms/ports/doom/`
+
+Now we need to make scripts so we can launch Freedoom from EmulationStation using lr-prboom. We want to place these scripts in the Ports directory.
+
+`nano /home/pi/RetroPie/roms/ports/Freedoom\ Phase\ 1.sh`
+```
+#!/bin/bash
+/opt/retropie/supplementary/runcommand/runcommand.sh 0 "/opt/retropie/emulators/retroarch/bin/retroarch -L /opt/retropie/libretrocores/lr-prboom/prboom_libretro.so --config /opt/retropie/configs/ports/doom/retroarch.cfg /home/pi/RetroPie/roms/ports/doom/freedoom1.wad" "lr-prboom"
+```
+
+`nano /home/pi/RetroPie/roms/ports/Freedoom\ Phase\ 2.sh`
+```
+#!/bin/bash
+/opt/retropie/supplementary/runcommand/runcommand.sh 0 "/opt/retropie/emulators/retroarch/bin/retroarch -L /opt/retropie/libretrocores/lr-prboom/prboom_libretro.so --config /opt/retropie/configs/ports/doom/retroarch.cfg /home/pi/RetroPie/roms/ports/doom/freedoom2.wad" "lr-prboom"
+```
+
+`nano /home/pi/RetroPie/roms/ports/FreeDM.sh`
+```
+#!/bin/bash
+/opt/retropie/supplementary/runcommand/runcommand.sh 0 "/opt/retropie/emulators/retroarch/bin/retroarch -L /opt/retropie/libretrocores/lr-prboom/prboom_libretro.so --config /opt/retropie/configs/ports/doom/retroarch.cfg /home/pi/RetroPie/roms/ports/doom/freedm.wad" "lr-prboom"
+```
+
+If you would rather use [ZDoom](https://zdoom.org/News) use this with the correct WAD filename:
+```
+#!/bin/bash
+/opt/retropie/supplementary/runcommand/runcommand.sh 0 "/opt/retropie/ports/zdoom/zdoom -iwad /home/pi/RetroPie/roms/ports/doom/freedoom1.wad" "zdoom"
+```
+
+After all the scripts have been made, you will need to set them to be executable.
+
+`chmod +x /home/pi/RetroPie/roms/ports/Freedoom\ Phase\ 1.sh /home/pi/RetroPie/roms/ports/Freedoom\ Phase\ 2.sh /home/pi/RetroPie/roms/ports/FreeDM.sh`
+
+Last step is to reboot EmulationStation and navigate to the Ports.  You should now see these 3 Freedoom games on the list.
+
+To delete the left over extracted folders and downloaded files:
+
+`cd`
+`rm -rf freedoom-0.10.1/ freedm-0.10.1/ freedoom-0.10.1.zip freedm-0.10.1.zip`
+
 ### Music
 
 The most ideal and authentic way to listen to the the original Doom (1&2) tracks is to google 'doom 1 and 2 midis' and download them. You can then convert the midi files into MP3s.
