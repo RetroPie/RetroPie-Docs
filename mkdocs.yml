@@ -43,7 +43,7 @@ pages:
     - lr-fbalpha: lr-fbalpha.md
     - FinalBurn Alpha: FinalBurn-Alpha.md
     - Neo Geo: Neo-Geo.md
-    - Validating, Rebuilding, and Filtering Arcade ROMs: Validating,-Rebuilding,-and-Filtering-Arcade-ROMs
+    - Validating, Rebuilding, and Filtering Arcade ROMs: Validating,-Rebuilding,-and-Filtering-Arcade-ROMs.md
 - Emulators:
     - 3do: 3do.md
     - Amiga: Amiga.md
