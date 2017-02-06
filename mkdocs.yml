@@ -36,7 +36,7 @@ pages:
     - Updating RetroPie: Updating-RetroPie.md
     - SSH: SSH.md
     - Wifi: Wifi.md
-- Arcade
+- Arcade:
     - Arcade Quick Start: Managing-ROMs.md
     - MAME: MAME.md
     - lr-mame2003: lr-mame2003.md
