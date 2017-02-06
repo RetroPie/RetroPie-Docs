@@ -136,7 +136,7 @@
 
 ## Controllers
 
-* [XBox 360 Controller](Setting-up-the-XBox360-controller)
+* [XBox 360 Controller](Xbox-360-Controller)
 * [PS3 controller](Setting-up-a-PS3-controller)
 * [PS4 controller](Setting-up-a-PS4-controller)
 * [N64 controller](Setting-up-an-N64-controller)
