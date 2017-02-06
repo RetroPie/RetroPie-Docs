@@ -16,7 +16,7 @@ Steven Selph's scraper is the simplest and best way of scraping roms (provided t
 
 If your roms are located on another source then the default one you can download the stand alone releases.
 [sselph's scraper releases](https://github.com/sselph/scraper/releases)
-Please refer to [Sselphs Scraper Advanced Configuration](https://github.com/RetroPie/RetroPie-Setup/wiki/Scraper#sselphs-scraper-advanced-configuration) when using this method.
+Please refer to [Sselphs Scraper Advanced Configuration](Scraper#sselphs-scraper-advanced-configuration) when using this method.
 
 Make sure to update to the latest version of Retropie-Setup script if you're missing any options mentioned below!
 
@@ -69,16 +69,16 @@ or
 /opt/retropie/configs/all/emulationstation/gamelists
 ```
 
-They can also be accessed over [samba shares](https://github.com/retropie/retropie-setup/wiki/First-Installation#samba-shares-needs-an-active-internet-connection)
+They can also be accessed over [samba shares](First-Installation#samba-shares)
 ```
 \\retropie\configs\all\emulationstation
 ```
 
-**Note** if you are going to make edits to any `gamelist.xml` you need to have exited emulationstation first
+**Note** if you are going to make edits to any `gamelist.xml` you need to have exited EmulationStation first
 
 ## EmulationStation Built-In Scraper:
 
-EmulationStation has a built in scraper that pulls from [thegamesdb](http://thegamesdb.net/). It can be accessed from the start menu in emulationstation.
+EmulationStation has a built in scraper that pulls from [thegamesdb](http://thegamesdb.net/). It can be accessed from the start menu in EmulationStation.
 
 ![srapermenu](https://cloud.githubusercontent.com/assets/10035308/10713271/534a0560-7a73-11e5-8076-90131881c054.png)
 
