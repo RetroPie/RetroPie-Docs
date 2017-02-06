@@ -98,8 +98,10 @@ To do this, type the following to open into the Nano text editor.
 
  Next we will want type out the following so that it appears exactly as you see it here:
 
-`#!/bin/bash
-"/opt/retropie/supplementary/runcommand/runcommand.sh" 0 _SYS_ darkesthour`
+```shell
+#!/bin/bash
+"/opt/retropie/supplementary/runcommand/runcommand.sh" 0 _SYS_ darkesthour
+```
 
  In order to save your work, hold Down `CONTROL + X`. Type `Y` to confirm, then give it the title of `Darkest Hour.sh`, then confirm the save. 
 
@@ -197,9 +199,10 @@ First you need to download Freedoom:
 https://freedoom.github.io/download.html
 
 As of this writing, the newest version of Freedoom is 0.10.1 so you can use wget to download the 2 files needed:
-
-`cd`
-`wget https://github.com/freedoom/freedoom/releases/download/v0.10.1/freedoom-0.10.1.zip && wget https://github.com/freedoom/freedoom/releases/download/v0.10.1/freedm-0.10.1.zip`
+```
+cd
+wget https://github.com/freedoom/freedoom/releases/download/v0.10.1/freedoom-0.10.1.zip && wget https://github.com/freedoom/freedoom/releases/download/v0.10.1/freedm-0.10.1.zip
+```
 
 Next extract both files:
 
@@ -212,25 +215,29 @@ The files will be extracted to folders named `freedoom-0.10.1` and `freedm-0.10.
 Now we need to make scripts so we can launch Freedoom from EmulationStation using lr-prboom. We want to place these scripts in the Ports directory.
 
 `nano /home/pi/RetroPie/roms/ports/Freedoom\ Phase\ 1.sh`
-```
+
+```shell
 #!/bin/bash
 /opt/retropie/supplementary/runcommand/runcommand.sh 0 "/opt/retropie/emulators/retroarch/bin/retroarch -L /opt/retropie/libretrocores/lr-prboom/prboom_libretro.so --config /opt/retropie/configs/ports/doom/retroarch.cfg /home/pi/RetroPie/roms/ports/doom/freedoom1.wad" "lr-prboom"
 ```
 
 `nano /home/pi/RetroPie/roms/ports/Freedoom\ Phase\ 2.sh`
-```
+
+```shell
 #!/bin/bash
 /opt/retropie/supplementary/runcommand/runcommand.sh 0 "/opt/retropie/emulators/retroarch/bin/retroarch -L /opt/retropie/libretrocores/lr-prboom/prboom_libretro.so --config /opt/retropie/configs/ports/doom/retroarch.cfg /home/pi/RetroPie/roms/ports/doom/freedoom2.wad" "lr-prboom"
 ```
 
 `nano /home/pi/RetroPie/roms/ports/FreeDM.sh`
-```
+
+```shell
 #!/bin/bash
 /opt/retropie/supplementary/runcommand/runcommand.sh 0 "/opt/retropie/emulators/retroarch/bin/retroarch -L /opt/retropie/libretrocores/lr-prboom/prboom_libretro.so --config /opt/retropie/configs/ports/doom/retroarch.cfg /home/pi/RetroPie/roms/ports/doom/freedm.wad" "lr-prboom"
 ```
 
 If you would rather use [ZDoom](https://zdoom.org/News) use this with the correct WAD filename:
-```
+
+```shell
 #!/bin/bash
 /opt/retropie/supplementary/runcommand/runcommand.sh 0 "/opt/retropie/ports/zdoom/zdoom -iwad /home/pi/RetroPie/roms/ports/doom/freedoom1.wad" "zdoom"
 ```
@@ -242,9 +249,10 @@ After all the scripts have been made, you will need to set them to be executable
 Last step is to reboot EmulationStation and navigate to the Ports.  You should now see these 3 Freedoom games on the list.
 
 To delete the left over extracted folders and downloaded files:
-
-`cd`
-`rm -rf freedoom-0.10.1/ freedm-0.10.1/ freedoom-0.10.1.zip freedm-0.10.1.zip`
+```
+cd
+rm -rf freedoom-0.10.1/ freedm-0.10.1/ freedoom-0.10.1.zip freedm-0.10.1.zip
+```
 
 ### Music
 
