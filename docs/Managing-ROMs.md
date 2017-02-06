@@ -5,7 +5,7 @@
 ## Step One: Choose an arcade emulator
 
 | System | Recommended MAME Emulator| Recommended FB Alpha Emulator|
-|---|---|---|
+| :---: | :---: | :---: |
 |Pi 2 and Pi 3| `lr-mame2003` | `lr-fbalpha`|
 |Pi 1 and Pi Zero| `mame4all`  (not `lr-mame4all`) | `pi-fba`|
 
