@@ -144,7 +144,7 @@
 * [Bluetooth controller](Bluetooth-Controller)
 * [8bitdo controllers](8bitdo-Controller)
 * [Logitech controllers](Logitech-Controller)
-* [Mobile Gamepad](https://github.com/sbidolach/mobile-gamepad)
+* [Mobile Gamepad](Mobile-Gamepad)
 * [Smartphone Gamepad](Virtual-Gamepad)
 * [Wiimote](Wiimote-Controller)
 * [Wii U Pro Controller](Wii-U-Pro-Controller)
