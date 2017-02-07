@@ -25,7 +25,7 @@ Dolphin controls must currently be mapped via the GUI. You will need to drop dow
 
 Change to the Dolphin directory:
 ```
-cd /opt/retropie/emulators/bin/dolphin-emu
+cd /opt/retropie/emulators/dolphin/bin/dolphin-emu
 ```
 Launch Dolphin:
 ```
@@ -35,4 +35,4 @@ From there the graphical client will launch and you can bind your controller in 
 
 ##Exiting Dolphin
 Currently the only way I have found to exit dolphin is with the Keyboard combination Alt+F4
-If someone is smart enough to hard code a single exit button that is assignable and or find a way to map a button press or button combination preess to Alt F4 we would have a valid way of exiting the emulator back to EmulationStation
+If someone is smart enough to hard code a single exit button that is assignable and/or find a way to map a button press or button combination press to do an Alt+F4 we would have a valid way of exiting the emulator back to EmulationStation
