@@ -127,7 +127,7 @@ lr-mame2003 utilises [RetroArch control configurations](https://github.com/petro
 ---
 ### lr-mame2010 (MAME 2010)
 [Visit mame2010-libretro on github](https://github.com/libretro/mame2010-libretro)
-**Note: This emulator is considered experimental in RetroPie and has limited functionality. For example, only 2 players are supported.**
+**Note: This emulator is considered 'optional' in RetroPie and has limited functionality. For example, only 2 players are supported.**
 
 ```shell
 Roms Dir: /home/pi/RetroPie/roms/mame-libretro
