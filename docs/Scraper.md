@@ -15,7 +15,7 @@ Steven Selph's scraper is the simplest and best way of scraping roms (provided t
 
 **It may take some time for the xml files to build. This will also only work if your roms are located in the local roms folder and not on an external device.**
 
-If your roms are located on another source then the default one you can download the stand alone releases.
+If your roms are located on another source than the default one you can download the stand alone releases.
 [sselph's scraper releases](https://github.com/sselph/scraper/releases)
 Please refer to [Sselphs Scraper Advanced Configuration](Scraper#sselphs-scraper-advanced-configuration) when using this method.
 
