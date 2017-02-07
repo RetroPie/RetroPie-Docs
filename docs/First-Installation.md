@@ -3,7 +3,7 @@
 |Version|4.1|
 |:---:|:---:|
 
-1. [Hardware](First-Installation#hardware-needed)
+1. [Hardware](First-Installation#hardware)
 2. [Installation](First-Installation#installation)
 3. [Controller Configuration](First-Installation#configure-controllers)
 4. [EmulationStation](First-Installation#emulationstation)
@@ -13,7 +13,7 @@
 
 Congratulations! You have discovered the wonderful world of RetroPie- your entire childhood is within reach! RetroPie is a combination of multiple projects including [RetroArch](http://www.libretro.com), [EmulationStation](http://www.emulationstation.org), and many others. 
 
-This page is for people just getting started on RetroPie. The easiest way to install RetroPie is the SD image which is a ready to go system built upon top of the Raspbian OS - this is the method described in the following guide. Alternatively, advanced users can install RetroPie [manually](https://github.com/RetroPie/RetroPie-Setup/wiki/Manual-Installation). 
+This page is for people just getting started on RetroPie. The easiest way to install RetroPie is the SD image which is a ready to go system built upon top of the Raspbian OS - this is the method described in the following guide. Alternatively, advanced users can install RetroPie [manually](Manual-Installation). 
 
 This guide will give you the very basics to get you up and running from a blank SD card to first boot into EmulationStation.
 
@@ -23,7 +23,7 @@ If you hate reading then see this video. Otherwise read on!
 " target="_blank"><img src="https://i.ytimg.com/vi/xvYX_7iRRI0/maxresdefault.jpg" 
 alt="Configuration Video" width="1280" height="400" border="10" /></a>
 
-## [Hardware](https://retropie.org.uk/documentation/building-your-own-retropie-machine/)
+## [Hardware](https://retropie.org.uk/about/building/)
 
  * Raspberry Pi (A, A+, B, B+, 2, Zero, or 3) - for best performance use a **Raspberry Pi 3 Model B**
  * Raspberry Pi Case (optional but recommended)
@@ -91,7 +91,7 @@ Follow the onscreen instructions to configure your gamepad- if you run out of bu
 
 ![welcomescreengamepadconfigure](https://cloud.githubusercontent.com/assets/10035308/9140518/0263b9c8-3cef-11e5-922f-42f790f3be91.png)
 
-If you wish to configure more than one controller, you can do so from the start menu of emulationstation. For more details on manual controller configurations see this page [Here](https://github.com/petrockblog/RetroPie-Setup/wiki/RetroArch-Configuration).
+If you wish to configure more than one controller, you can do so from the start menu of emulationstation. For more details on manual controller configurations see this page [Here](RetroArch-Configuration).
 
 See the following diagrams for reference:
 
@@ -188,7 +188,7 @@ Default username: **pi**
 
 Default Password: **raspberry**
 
-You can also log in as root if you wish to change more files than just the roms, but you first need to enable the root password which is explained [here](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#why-cant-i-ssh-as-root-anymore)
+You can also log in as root if you wish to change more files than just the roms, but you first need to enable the root password which is explained [here](FAQ#why-cant-i-ssh-as-root-anymore)
 
 ### Samba-Shares
 
@@ -202,7 +202,7 @@ You can also log in as root if you wish to change more files than just the roms,
 
 After you've added your roms you need to restart emulationstation in order for them to show up. You can restart emulationstation from the start menu, or by rebooting your pi with `sudo reboot`. 
 
-See the rest of the [wiki](https://github.com/retropie/retropie-setup/wiki) for more detailed information on individual emulators, advanced settings etc. If you still can't figure it out, the RetroPie community is very helpful on the [forum](https://retropie.org.uk/forum/). 
+See the rest of the [docs](https://retropie.org.uk/docs/) for more detailed information on individual emulators, advanced settings etc. If you still can't figure it out, the RetroPie community is very helpful on the [forum](https://retropie.org.uk/forum/). 
 
 **The RetroPie Project is primarily maintained by a few developers who develop the project in their free time. If you have found the RetroPie project useful please consider donating to the project [here](https://retropie.org.uk/donate/). As you become more familiar with RetroPie, pay it forward by helping others on the forum. The RetroPie Project is what it is today because of the many contributions of the community.**
 
