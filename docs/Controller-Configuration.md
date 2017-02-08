@@ -49,4 +49,3 @@ Hotkeys enable you to press a combination of buttons to access functions such as
 | Select+Left | Input State Slot Decrease |
 | Select+X | RGUI Menu |
 | Select+B | Reset |
-
