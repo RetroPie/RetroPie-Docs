@@ -49,3 +49,15 @@ Hotkeys enable you to press a combination of buttons to access functions such as
 | Select+Left | Input State Slot Decrease |
 | Select+X | RGUI Menu |
 | Select+B | Reset |
+
+### Supported Controllers
+
+The following is a list of supported controllers in RetroPie
+
+**Note** The Raspberry Pi 3 has bluetooth built in. The Pi 2 and below will require a bluetooth dongle
+
+| Controller | Hardware | Driver |
+| :---: | :---: | :---: | :---: |
+| iBuffalo SNES | - | - |
+| Xbox 360 Wireless | Xbox 360 Wireless Receiver | Xpad |
+| PS3 Wireless | Bluetooth | PS3 Driver |
