@@ -4,13 +4,13 @@ If you have a Raspberry Pi 3, wifi is built into the pi, if you have a pi2 or ea
 
 There are 5 main methods to configure Wifi:
 
-1. [Wifi Module](Wifi#method-1-easiest)
-2. [Connecting to Wifi Without a Keyboard](Wifi#method-2-connecting-to-wifi-without-a-keyboard)
-3. [Manual Configuration (Interfaces)](Wifi#method-3-interfaces)
-4. [Manual Configuration (WPA_Supplicant)](https://github.com/retropie/retropie-setup/wiki/Wifi#method-4-wpa_supplicantconf)
-5. [WCID-Curses Daemon](https://github.com/retropie/retropie-setup/wiki/Wifi#method-5-wicd-curses)
+1. [Wifi Module](#wifi-module)
+2. [Connecting to Wifi Without a Keyboard](#connecting-to-wifi-without-a-keyboard)
+3. [Manual Configuration (Interfaces)](#manual-configuration-interfaces)
+4. [Manual Configuration (WPA_Supplicant)](#manual-configuration-wpa_supplicant)
+5. [WICD-Curses](#wicd-curses)
 
-## Method 1 (Easiest)
+## WiFi Module
 
 You can access this from the Retropie menu in emulationstation (you can also access it from option 3 in the RetroPie setup script):
 
@@ -32,7 +32,7 @@ After it's done configuring you should see your wifi info in the original menu:
 
 ![wifiinfo](https://cloud.githubusercontent.com/assets/10035308/9141742/226f50de-3cf8-11e5-8b6b-328f2110e655.png)
 
-## Method 2 (Connecting to Wifi without a keyboard)
+## Connecting to Wifi Without a Keyboard
 
 If you wish to connect to wifi without needing an extra keyboard you can add a file to the boot partition of the sd card called `wifikeyfile.txt`
 
@@ -48,7 +48,7 @@ You can then access the wifi module and select the option to "Import wifi creden
 
 
 
-## Method 3 (INTERFACES)
+## Manual Configuration (Interfaces)
 
 `sudo nano /etc/network/interfaces`
 
@@ -137,13 +137,13 @@ gateway 192.168.0.1 #(almost always the same as well. you can verify with netsta
 
 on reboot (if configured correctly) your wifi will be working.
 
-## Method 4 (wpa_supplicant.conf)
+## Manual Configuration (WPA_Supplicant)
 
 **Taken from the Raspberry Pi Foundation [here](http://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md):**
 
 This method is suitable if you do not have access to the graphical user interface normally used to set up WiFi on the Raspberry Pi. It is especailly suited for use with a serial console cable if you don't have access to a screen or wired Ethernet network. Also note that no additional software is required; everything you need is already included on the Raspberry Pi.
 
-### GETTING WIFI NETWORK DETAILS
+### Getting Network Details
 
 To scan for WiFi networks, use the command `sudo iwlist wlan0` scan. This will list all available WiFi networks along with other useful information. Look out for:
 
@@ -152,7 +152,7 @@ To scan for WiFi networks, use the command `sudo iwlist wlan0` scan. This will l
 2. `IE: IEEE 802.11i/WPA2 Version 1`. This is the authentication used; in this case it is WPA2, the newer and more secure wireless standard which replaces WPA1. This guide should work for WPA or WPA2, but may not work for WPA2 enterprise; for WEP hex keys see the last example [here](http://netbsd.gw.com/cgi-bin/man-cgi?wpa_supplicant.conf+5+NetBSD-current). 
 You will also need the password for the WiFi network. For most home routers this is located on a sticker on the back of the router. The ESSID (ssid) for the network in this case is `testing` and the password (psk) `testingPassword`.
 
-### ADDING THE NETWORK DETAILS TO THE RASPBERRY PI
+### Adding Network Details to Raspberry Pi
 
 First you'll need to ammend `/etc/network/interfaces` to point to wpa-supplicant if it isn't already:
 
@@ -182,18 +182,19 @@ network={
     psk="Your_wifi_password"
 }
 ```
-In the case of the example network, we would enter:
 
-### WPA/WPA2
+The following are different ways of configuring your network depending on what encryption your router is configured to.
+
+#### WPA/WPA2
 
 ```shell
 network={
-    ssid="testing"
-    psk="testingPassword"
+    ssid="NETWORK_NAME"
+    psk="NETWORK_PASSWORD"
 }
 ```
 
-### WEP
+#### WEP
 
 ```shell
 network={
@@ -204,7 +205,7 @@ network={
 }
 ```
 
-### Open Network
+#### Open Network
 
 ```shell
 network={
@@ -213,7 +214,7 @@ network={
 }
 ```
 
-### Hidden SSID
+#### Hidden SSID
 
 ```shell
 network={
@@ -228,7 +229,7 @@ At this point,` wpa-supplicant` will normally notice a change has occurred withi
 
 You can verify if it has successfully connected using `ifconfig wlan0`. If the `inet addr` field has an address beside it, the Pi has connected to the network. If not, check your password and ESSID are correct.
 
-## Method 5 (Wicd-Curses) 
+## WICD-Curses 
 
 Note that this may cause a small amount of background cpu usage, which can stop the CPU from scaling to lowest frequency.
 
