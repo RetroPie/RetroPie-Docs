@@ -27,7 +27,8 @@ copyright: 'Copyright &copy; 2017 The RetroPie Project'
 pages:
 - Home: index.md
 - First Installation: First-Installation.md
-- Getting Started: 
+- Getting Started:
+    - Controller Configuration: Controller-Configuration.md
     - Transferring Roms: Transferring-Roms.md
     - Runcommand: Runcommand.md
     - Scraper: Scraper.md
@@ -165,7 +166,7 @@ pages:
     - Universal Controller Calibration & Mapping Using xboxdrv: Universal-Controller-Calibration-&-Mapping-Using-xboxdrv.md
 - RetroArch:
     - RetroArch: RetroArch.md
-    - RetroArch Configuration: RetroArch-Configuration.md
+    - RetroArch Controller Configuration: RetroArch-Configuration.md
     - RetroAchievements: RetroAchievements.md
     - Netplay: Netplay.md
     - Shaders and Smoothing: Shaders-and-Smoothing.md
