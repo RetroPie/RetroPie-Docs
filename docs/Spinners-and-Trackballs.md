@@ -1,5 +1,5 @@
 # Arcade System Hardware
-Spinners and Trackballs appear on the control panels of many arcade classics. Although MAME is often able to accommodate the use of a joystick instead, _many_ popular titles are best played with their native controls. Even the steering wheels on racing games can be thought of like a large spinner.
+Spinners and Trackballs appear on the control panels of many arcade classics. Although MAME is often able to accommodate the use of a joystick instead, _many_ popular titles are best played with their native controls. Even the steering wheel on racing games can be thought of as a large spinner.
 
 Spinners and Trackballs are often described together because of the way they work. Spinners operate by rotating a spindle which turns an encoder wheel. Optical sensors detect the movement of the encoder wheel and forward the speed and rotational direction to the arcade game. Trackballs are essentially the same but they have two spindles oriented perpendicular to one another. By rolling a ball that is in direct contact with the spindles, trackballs can provide two-dimensional input like a mouse. In this respect, a spinner is also like a mouse that only moves in a straight line (left/right or up/down).
 
