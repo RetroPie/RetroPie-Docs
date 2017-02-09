@@ -34,6 +34,19 @@ Place your BIOS files in
 /home/pi/RetroPie/BIOS
 ```
 
+BIOS files
+
+| File | Region | md5sum | CRC32 | Comment |
+| :--: | :--: | :--: | :--: | :--: |
+| dc_boot.bin | World | e10c53c2f8b90bab96ead2d368858623 | 89f2b1a1 | |
+| dc_flash.bin | USA | 0a93f7940c455905bea6e392dfde92a4 | c611b498 | |
+| dc_flash.bin | Europe | 23df18aa53c8b30784cd9a84e061d008 | b7e5aeeb | |
+| dc_flash.bin | Japan | 69c036adfca4ebea0b0c6fa4acfc8538 | 5f92bf76 | |
+| dc_boot.bin | Free | d407fcf70b56acb84b8c77c93b0e5327 | 61d5613f | Hack |
+| dc_flash.bin | Free | 93a9766f14159b403178ac77417c6b68 | e0d202a2 | Hack |
+| dc_boot.bin | Free | d552d8b577faa079e580659cd3517f86 | 558f456e | atreyu187 Hack |
+| dc_flash.bin | Free | 74e3f69c2bb92bc1fc5d9a53dcf6ffe2 | bda0e9aa | atreyu187 Hack |
+
 ## Video Setup Guide  
 
 <a href="https://www.youtube.com/watch?v=yAB0_kkaa5s
