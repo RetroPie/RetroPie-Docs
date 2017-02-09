@@ -110,7 +110,7 @@ input_map[p2_dialx] -mouse[0,y]
 Notice that from MAME's perspective, both DIAL inputs use the x-axis, but we are using two spinners on the same USB interface, so player 1 of our "mouse0" is x and player 2 is on y. As you can see, AdvanceMAME can handle this easily. Also note that we are not mapping mouse1, 2, 3. On this arcade cabinet we have a dedicated trackball on mouse1 and we don't want people to be able to interfere with our game if they touch the trackball while the spinners are in use.
 
 ## Other Considerations
-Sometimes, a game doesn't use the DIAL input. It uses Paddle. It can be convenient map inputs for the paddel device just in case:
+Sometimes, a game doesn't use the DIAL input. It uses Paddle. It can be convenient map inputs for the paddle device just in case:
 
 ```input_map[p1_paddlex] mouse[0,x] mouse[1,x] mouse[2,x] mouse[3,x]```
 
