@@ -80,7 +80,7 @@
 
 * [Adventure Game Studio](Adventure-Game-Studio)
 * [Baldur's Gate](GemRB)
-* [Cave Story](CaveStory)
+* [Cave Story](Cave-Story)
 * [Commander Keen](Commander-Keen) 
 * [Descent](Descent)  
 * [Dinothawr](Dinothawr)  
