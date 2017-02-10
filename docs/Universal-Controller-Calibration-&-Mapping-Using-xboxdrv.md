@@ -1,3 +1,5 @@
+**To ensure you are reading the most recent version of this guide, [click here](https://github.com/RetroPie/RetroPie-Setup/wiki/Universal-Controller-Calibration-&-Mapping-Using-xboxdrv)**
+
 This guide will attempt to detail several advanced controller mappings and calibration techniques suitable for just about any controller. The focus will be on the use of xboxdrv, as it is an extremely versatile tool that can handle almost any situation and is able to be installed directly from from the 'RetroPie Setup' menu. A complete list of its capabilities can be found [here](http://manpages.ubuntu.com/manpages/precise/man1/xboxdrv.1.html). What follows is a grouping of use case scenarios that would be of direct interest to RetroPie Users. New scenarios will be added from time to time. Some of these scenarios will include:
 
 - Keyboard mapping for emulators that don't support controllers natively
