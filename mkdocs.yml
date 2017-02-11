@@ -31,8 +31,6 @@ pages:
     - Controller Configuration: Controller-Configuration.md
     - Transferring Roms: Transferring-Roms.md
     - Runcommand: Runcommand.md
-    - Scraper: Scraper.md
-    - Themes: Themes.md
     - Updating RetroPie: Updating-RetroPie.md
     - SSH: SSH.md
     - Wifi: Wifi.md
@@ -150,9 +148,10 @@ pages:
     - Wii U Pro: Wii-U-Pro-Controller.md
     - Wiimotes: Wiimote-Controller.md
     - GPIO Modules: GPIO-Modules.md
+    - Mapping a Controller for Intellivision: Mapping-a-Controller-for-Intellivision.md
+    - Universal Controller Calibration & Mapping Using xboxdrv: Universal-Controller-Calibration-&-Mapping-Using-xboxdrv.md
 - Advanced Configuration:
     - BIOS: BIOS.md
-    - Changelogs: Changelogs.md
     - Configuration Editor: Configuration-Editor.md
     - Memory Split: Memory-Split.md
     - Overclocking: Overclocking.md
@@ -160,10 +159,7 @@ pages:
     - Running ROMs from a Network Share: Running-ROMs-from-a-Network-Share.md
     - Running ROMs from a USB drive: Running-ROMs-from-a-USB-drive.md
     - Splashscreen: Splashscreen.md
-    - Supported Systems: Supported-Systems.md
     - Take and Scrape Your Own Screenshots: Take-and-Scrape-Your-Own-Screenshots.md
-    - Mapping a Controller for Intellivision: Mapping-a-Controller-for-Intellivision.md
-    - Universal Controller Calibration & Mapping Using xboxdrv: Universal-Controller-Calibration-&-Mapping-Using-xboxdrv.md
 - RetroArch:
     - RetroArch: RetroArch.md
     - RetroArch Controller Configuration: RetroArch-Configuration.md
@@ -173,9 +169,11 @@ pages:
     - Smaller RetroArch Screen: Smaller-RetroArch-Screen.md
 - EmulationStation:
     - EmulationStation: EmulationStation.md
-    - Child friendly EmulationStation: Child-friendly-EmulationStation.md
+    - Scraper: Scraper.md
+    - Themes: Themes.md
     - Creating Your Own EmulationStation Theme: Creating-Your-Own-EmulationStation-Theme.md
     - Add a New System in EmulationStation: Add-a-New-System-in-EmulationStation.md
+    - Child friendly EmulationStation: Child-friendly-EmulationStation.md
 - Platforms:
     - Raspbian: Manual-Installation.md
     - Ubuntu: RetroPie-Ubuntu-16.04-LTS-x86-Flavor.md
@@ -191,3 +189,6 @@ pages:
     - Building RetroPie Archives: Building-RetroPie-Archives.md
     - Convert RetroPie SD Card Image to NOOBS Image: Convert-RetroPie-SD-Card-Image-to-NOOBS-Image.md
     - Shell Style Guide: Shell-Style-Guide.md
+- About:
+    - Changelogs: Changelogs.md
+    - Supported Systems: Supported-Systems.md
