@@ -116,3 +116,13 @@ comment out
 BLANK_TIME
 POWERDOWN_TIME
 ```
+
+#### Fix sound not working/stuttering
+
+If you have troubles with no sound or sound stuttering badly in menu or game, check your CPU usage via top or htop. If pulseaudio is using more than 20% then it may be the culprit. In my case, it was using 80%! I had only one sound card output (hdmi) so I completely removed pulseaudio with:
+
+```
+sudo apt-get --purge remove pulseaudio
+```
+
+And rebooted. 
