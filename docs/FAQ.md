@@ -189,7 +189,7 @@ See [HERE](RetroArch-Configuration) for more information on custom controller co
 
 ### Does Super Mario All Stars work?
 
-The ROM does work with PocketSnes (RetroArch) and lr-snes9x2010.
+The ROM does work with lr-snes9x2002 and lr-snes9x2010.
 
 From http://blog.petrockblock.com/2012/07/22/retropie-setup-an-initialization-script-for-retroarch-on-the-raspberry-pi/#comment-818063235:
 
@@ -214,7 +214,7 @@ From http://www.raspberrypi.org/forums/viewtopic.php?f=78&t=79083
 You can run a SNES rom by calling 
 
 ```
-retroarch -L /opt/retropie/libretrocores/lr-pocketsnes/libretro.so /home/pi/RetroPie/roms/snes/nameofyourrom.smc
+retroarch -L /opt/retropie/libretrocores/lr-snes9x2010/libretro.so /home/pi/RetroPie/roms/snes/nameofyourrom.smc
 ```
 
 If you'd like keyboard configurations to work add
