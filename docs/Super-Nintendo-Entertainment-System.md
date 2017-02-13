@@ -9,13 +9,13 @@ _The Super Nintendo Entertainment System (or SNES) was a 4th generation video ga
 | [lr-snes9x2010](https://github.com/libretro/snes9x2010) | snes  | .zip .smc .sfc .fig .swc | none | /opt/retropie/configs/snes/retroarch.cfg |
 | [lr-armsnes](https://github.com/RetroPie/ARMSNES-libretro) | snes  | .zip .smc .sfc .fig .swc | none | /opt/retropie/configs/snes/retroarch.cfg |
 | [lr-catsfc](https://github.com/libretro/CATSFC-libretro) | snes  | .zip .smc .sfc .fig .swc | none | /opt/retropie/configs/snes/retroarch.cfg |
-| [lr-pocketsnes](https://github.com/libretro/pocketsnes-libretro) | snes  | .zip .smc .sfc .fig .swc | none | /opt/retropie/configs/snes/retroarch.cfg |
+| [lr-snes9x2002](https://github.com/libretro/snes9x2002) | snes  | .zip .smc .sfc .fig .swc | none | /opt/retropie/configs/snes/retroarch.cfg |
 | [snes9x-rpi](https://github.com/RetroPie/snes9x-rpi) | snes  | .zip .smc .sfc .fig .swc | none | /opt/retropie/configs/snes/snes9x.cfg |
 | [PiSNES](https://github.com/RetroPie/pisnes) | snes  | .zip .smc .sfc .fig .swc | none | /opt/retropie/configs/snes/snes9x.cfg |
 
-## Emulators: [lr-snes9x-2010](https://github.com/libretro/snes9x2010), [PiSNES](https://github.com/RetroPie/pisnes), [snes9x-rpi](https://github.com/RetroPie/snes9x-rpi), [lr-armsnes](https://github.com/RetroPie/ARMSNES-libretro), [lr-catsfc](https://github.com/libretro/CATSFC-libretro), [lr-pocketsnes](https://github.com/libretro/pocketsnes-libretro)
+## Emulators: [lr-snes9x-2010](https://github.com/libretro/snes9x2010), [PiSNES](https://github.com/RetroPie/pisnes), [snes9x-rpi](https://github.com/RetroPie/snes9x-rpi), [lr-armsnes](https://github.com/RetroPie/ARMSNES-libretro), [lr-catsfc](https://github.com/libretro/CATSFC-libretro), [lr-snes9x2002](https://github.com/libretro/snes9x2002)
 
-RetroPie comes included with multiple SNES emulators. If you have a Pi 2, the preference is **lr-snes9x2010** due to better speed and sound emulation. PocketSnes is recommended for Super FX chip games.
+RetroPie comes included with multiple SNES emulators. If you have a Pi 2, the preference is **lr-snes9x2010** due to better speed and sound emulation. lr-snes9x2002 is recommended for Super FX chip games.
 
 ## ROMS
 
@@ -30,9 +30,9 @@ Place your SNES ROMs in
 
 ## Controls
 
-### lr-armsnes, lr-catsfc, lr-pocketsnes, lr-snes9x2010
+### lr-armsnes, lr-catsfc, lr-snes9x2002, lr-snes9x2010
 
-lr-armsnes, lr-catsfc, lr-pocketsnes, lr-snes9x2010 all utilise RetroArch configurations
+lr-armsnes, lr-catsfc, lr-snes9x2002, lr-snes9x2010 all utilise RetroArch configurations
 
 Add custom retroarch controls to the retroarch.cfg file in
 ```shell
