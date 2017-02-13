@@ -3,7 +3,7 @@
 
 RetroArch is the official front end for the [libretro API](http://www.libretro.com/). RetroArch and libretro provide a way to take an existing emulator and load that emulator as a library or "core". RetroArch then handles the input (controls) and output (graphics and audio) while the emulator core handles the emulation of the original system. With a few simple changes to the emulator source code, almost any existing emulator could become a libretro core.
 
-In RetroPie, the libretro emulator cores are identified with a `lr-` in front of their name. For example, `lr-snes9x-next` is the libretro core of the SNES emulator called snes9x.
+In RetroPie, the libretro emulator cores are identified with a `lr-` in front of their name. For example, `lr-snes9x2010` is the libretro core of the SNES emulator called snes9x2010.
 
 RetroArch and libretro provide ability to configure controllers once for many emulators instead of having to configure each emulator individually. However, RetroArch also provides the freedom to configure specific emulators individually and even individual games differently if the user wants. This allows a specific setting or button mapping for a certain console or even just for a certain game.
 
