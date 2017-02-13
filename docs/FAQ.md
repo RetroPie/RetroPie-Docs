@@ -189,7 +189,7 @@ See [HERE](RetroArch-Configuration) for more information on custom controller co
 
 ### Does Super Mario All Stars work?
 
-The ROM does work with PocketSnes (RetroArch) and lr-snes9x-next.
+The ROM does work with PocketSnes (RetroArch) and lr-snes9x2010.
 
 From http://blog.petrockblock.com/2012/07/22/retropie-setup-an-initialization-script-for-retroarch-on-the-raspberry-pi/#comment-818063235:
 
