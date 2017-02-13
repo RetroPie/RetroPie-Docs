@@ -10,6 +10,8 @@ _The Colecovision is a home video game console released by Coleco in 1982. It fe
 
 ## Emulator [CoolCV](http://atariage.com/forums/topic/240800-coolcv-emulator-for-mac-os-x-linux-windows-and-raspberry/page-1)
 
+Note that CoolCV is only available for the Raspberry Pi currently.
+
 ## ROMS
 
 Accepted File Extensions: **.bin .col .rom .zip**
