@@ -84,6 +84,8 @@ open new terminal `ctrl+alt+F1`
 
 - Option 3: Enable Samba Shares
 
+### Ubuntu 14
+
 #### Boot to Console:
 
 ```
@@ -125,4 +127,76 @@ If you have troubles with no sound or sound stuttering badly in menu or game, ch
 sudo apt-get --purge remove pulseaudio
 ```
 
-And rebooted. 
+### Ubuntu 16 (systemd)
+
+#### Boot to Console:
+
+    sudo systemctl disable lightdm
+
+To start lightdm on command:
+
+    sudo systemctl start lightdm
+
+To restore your system so that lightdm is always started on boot:
+    
+    sudo systemctl enable lightdm
+
+#### Auto-login on startup
+ 
+Update visudo editor:
+
+	sudo update-alternatives --config editor
+
+Run visudo:
+
+	sudo visudo
+
+This will open up /etc/sudoers file in editor you configured in first step. Add the following line to the end of the file:
+
+	odroid ALL=(ALL) NOPASSWD:ALL
+
+This tells sudo that the odroid user doesn't need a password. Save and quit.
+
+Then remove your password:
+
+	sudo passwd -d `whoami`
+
+Test it all worked:
+
+        sudo date
+
+Should give you the date without asking for a password.
+
+Edit the startup of our tty1 (replace with any tty of choice):
+
+	sudo systemctl edit getty@tty1
+
+Add the following text, save and exit
+
+	[Service]
+	ExecStart=
+	ExecStart=-/sbin/agetty -a odroid --noclear %I $TERM
+
+Finally, restart the whole mess:
+
+        sudo systemctl restart getty@tty1
+
+#### Disable Screen Blanking in Console:
+
+Edit /media/boot/boot.ini with your editor of choice.
+
+Search for:
+
+    no_console_suspend 
+
+and replace it with:
+
+    no_console_suspend consoleblank=0
+
+Finally, run:
+
+    bootini
+
+and reboot for good luck:
+
+    sudo reboot
