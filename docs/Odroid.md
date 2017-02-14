@@ -1,4 +1,4 @@
-# Odroid C1/C1+
+# Odroid C1/C1+/C2
 
 This is a guide on how to build RetroPie on the Odroid C1/C1+. This is assuming you are starting with a prebuilt image of Ubuntu from HardKernel's Website:
 
