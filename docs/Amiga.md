@@ -16,6 +16,7 @@ UAE4ALL2 is no longer developed and we recommend using UAE4ARM on the Raspberry 
 
 ## ROMS
 Accepted File Extensions: **.adf**
+UAE4Arm also supports: **.dms .exe .rp9** and compressed formats **.zip .adz**
 
  Place your Amiga disks images in
 
