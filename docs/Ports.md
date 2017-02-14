@@ -6,7 +6,7 @@
 Current software ported to RetroPie:
 
 * [Baldur's Gate](GemRB) [(GemRB)](https://github.com/gemrb/gemrb) (EXPERIMENTAL)
-* [Cave Story](CaveStory) [(nxengine-libretro)](https://github.com/libretro/nxengine-libretro)
+* [Cave Story](Cave-Story) [(nxengine-libretro)](https://github.com/libretro/nxengine-libretro)
 * [Descent](Descent) [(DXX-Rebirth)](http://www.dxx-rebirth.com/) (EXPERIMENTAL) 
 * [DOOM](Doom) [(lr-prboom)](https://github.com/libretro/libretro-prboom), [(ZDOOM)](https://github.com/rheit/zdoom)
 * [Duke Nukem 3D](Duke-Nukem-3D) [(Eduke32)](http://www.eduke32.com/)
