@@ -78,7 +78,7 @@ Add custom retroarch controls to the retroarch.cfg file in
 ```shell
 /opt/retropie/configs/psx/retroarch.cfg
 ```
-For more information on custom RetroArch controls see: [RetroArch Configuration](https://github.com/petrockblog/RetroPie-Setup/wiki/RetroArch-Configuration)
+For more information on custom RetroArch controls see: [RetroArch Configuration](RetroArch-Configuration)
 
 ![playstation3_diagram](https://cloud.githubusercontent.com/assets/10035308/16599634/7f353148-42c0-11e6-9023-dbaf074bc933.png)
 
@@ -147,7 +147,7 @@ pcsx_rearmed_neon_enhancement_no_main = "enabled"
 
 ### Multitap (3-8 player)
 
-The latest version of lr-pcsx-rearmed has the ability to emulate up to two Multitaps, allowing 3-8 player support in games that permit it. It does this via core options. However, just as with the original hardware, many games do not support the multitap and will not recognise _any_ inputs with it turned on, so it is recommended to only enable multitaps for games that support it, via the 'Game Specific Options' retroarch functionality which allows you to create core options files for specific games. To enable this, use the [[Configuration Editor]] > **Advanced Configuration** > **Configure Libretro options** > **psx/retroarch.cfg** > Set **game_specific_options** to **true**.
+The latest version of lr-pcsx-rearmed has the ability to emulate up to two Multitaps, allowing 3-8 player support in games that permit it. It does this via core options. However, just as with the original hardware, many games do not support the multitap and will not recognise _any_ inputs with it turned on, so it is recommended to only enable multitaps for games that support it, via the 'Game Specific Options' retroarch functionality which allows you to create core options files for specific games. To enable this, use the [Configuration Editor](Configuration-Editor) > **Advanced Configuration** > **Configure Libretro options** > **psx/retroarch.cfg** > Set **game_specific_options** to **true**.
 
 Alternatively, you can manually edit `retroarch.cfg` in:
 ```
