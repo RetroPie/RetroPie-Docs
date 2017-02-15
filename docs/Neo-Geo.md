@@ -3,16 +3,16 @@
 ***
 _The Neo Geo is a cartridge-based arcade system board and home video game console released by SNK in 1990._
 
-See also: [[MAME]], [[FB Alpha|FinalBurn Alpha]]
+See also: [MAME](MAME), [FinalBurn Alpha](FinalBurn-Alpha)
 ***
 
-There are a variety of arcade emulators available in RetroPie which can emulate Neo Geo games. There are significant differences in performance, compatibility, and configuration between them. If you're getting started with arcade emulation, start by reading [Managing Arcade ROMs](https://github.com/RetroPie/RetroPie-Setup/wiki/Managing-ROMs).
+There are a variety of arcade emulators available in RetroPie which can emulate Neo Geo games. There are significant differences in performance, compatibility, and configuration between them. If you're getting started with arcade emulation, start by reading [Arcade](Arcade).
 
 This page is a resource for additional details on configuring a dedicated set of Neo Geo ROMs including configuration paths, controls, and the ROM sets which each emulator requires.
 
 ## Recommended Neo Geo emulators
 
-`lr-fbalpha` is recommended for emulating Neo Geo games because it features the libretro control system, shaders, and all other libretro advantages. Please also refer to [FB Alpha](FinalBurn-Alpha) and specifically [[lr-fbalpha]] for configuration information.
+`lr-fbalpha` is recommended for emulating Neo Geo games because it features the libretro control system, shaders, and all other libretro advantages. Please also refer to [FB Alpha](FinalBurn-Alpha) and specifically [lr-fbalpha](lr-fbalpha) for configuration information.
 
 Users with Raspberry Pi 1s may prefer the standalone emulator `PiFBA`, which will have better performance on limited hardware. The GnGeo-Pi emulator is also available. 
 
@@ -55,7 +55,7 @@ lr-fbalpha utilises RetroArch configs. Add custom RetrAarch controls to the `ret
 /opt/retropie/configs/fba/retroarch.cfg
 ```
 
-For more information on custom RetroArch controls see: [RetroArch Configuration](https://github.com/petrockblog/RetroPie-Setup/wiki/RetroArch-Configuration) 
+For more information on custom RetroArch controls see: [RetroArch Configuration](RetroArch-Configuration) 
 
 ---
 
