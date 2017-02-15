@@ -35,6 +35,6 @@ Add custom retroarch controls to the retroarch.cfg file in
 ```shell
 /opt/retropie/configs/atari7800/retroarch.cfg
 ```
-For more information on custom RetroArch controls see: [RetroArch Configuration](https://github.com/petrockblog/RetroPie-Setup/wiki/RetroArch-Configuration)
+For more information on custom RetroArch controls see: [RetroArch Configuration](RetroArch-Configuration)
 
 ![atari7800diagram](https://cloud.githubusercontent.com/assets/10035308/8268732/d7b4236c-174a-11e5-8386-6fa948235267.png)
