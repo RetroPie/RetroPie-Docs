@@ -30,7 +30,7 @@ Add custom retroarch controls to the retroarch.cfg file in
 ```
 /opt/retropie/configs/msx/retroarch.cfg
 ```
-For more information on custom RetroArch controls see: [RetroArch Configuration](https://github.com/petrockblog/RetroPie-Setup/wiki/RetroArch-Configuration)
+For more information on custom RetroArch controls see: [RetroArch Configuration](RetroArch-Configuration)
 
 Many games will have varying keyboard controls.
 
