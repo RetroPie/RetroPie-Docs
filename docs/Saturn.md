@@ -8,7 +8,7 @@ _The Sega Saturn is a 32 bit 5th generation home video game console released by 
 | :---: | :---: | :---: | :---: | :---: |
 | [lr-Yabause](https://github.com/libretro/yabause) | saturn  | .bin .iso .mdf | saturn_bios.bin | /opt/retropie/configs/saturn/retroarch.cfg |
 
-## Emulator: [lr-Yabause](https://github.com/libretro/yabause) :small_red_triangle:
+## Emulator: [lr-Yabause](https://github.com/libretro/yabause)
 
 Yabause stands for: Yet Another Buggy And Uncomplete Sega Emulator. It stands by its name. Currently you need to install it from the setup script under experimental builds. Any Raspberry Pi model will achieve only 1-2 frames-per-second, rendering it unplayable on those systems.
 
@@ -38,7 +38,7 @@ Add custom retroarch controls to the retroarch.cfg file in
 ```shell
 /opt/retropie/configs/saturn/retroarch.cfg
 ```
-For more information on custom RetroArch controls see: [RetroArch Configuration](https://github.com/petrockblog/RetroPie-Setup/wiki/RetroArch-Configuration)
+For more information on custom RetroArch controls see: [RetroArch Configuration](RetroArch-Configuration)
 
 ![sega_saturn_diagram](https://cloud.githubusercontent.com/assets/10035308/16599639/7f42ac24-42c0-11e6-8978-5f3cce723393.png)
 
