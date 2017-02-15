@@ -1,23 +1,23 @@
-- [Why do some emulators not show up?](https://github.com/retropie/RetroPie-Setup/wiki/FAQ#why-do-some-emulators-not-show-up)
-- [Why can't I SSH as root anymore?](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#why-cant-i-ssh-as-root-anymore)
-- [Where did the desktop go?](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#where-did-the-desktop-go)
-- [Why does shut down and reboot take ages?](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#why-does-shut-down-and-reboot-take-ages)
-- [How do I hide the boot text?](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#how-do-i-hide-the-boot-text)
-- [How do I boot to the desktop or Kodi](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ/#how-do-i-boot-to-the-desktop-or-kodi)
-- [How do I remove the black borders](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ/#how-do-i-remove-the-black-borders)
-- [How do I change which buttons to press to exit an emulator with a controller?](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#how-do-i-change-which-buttons-to-press-to-exit-an-emulator-with-a-controller)
-- [Does Super Mario All Stars work?](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#does-super-mario-all-stars-work)
-- [How do I extend the available space when upgrading to a larger SD card](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#how-do-i-extend-the-available-space-when-upgrading-to-a-larger-sd-card)
-- [How would I start from command line, say, the SNES emulator by itself?](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#how-would-i-start-from-command-line-say-the-snes-emulator-by-itself)
-- [Is there another way to set up the gamepad for use, e.g., within the snes emulator?](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#is-there-another-way-to-set-up-the-gamepad-for-use-eg-within-the-snes-emulator)
-- [The PSX emulator reports no BIOS found. What do I do?](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#the-psx-emulator-reports-no-bios-found-what-do-i-do)
-- [Which memory split should I use?](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#which-memory-split-should-i-use)
-- [Why aren't my in-game saves working properly?](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#why-arent-my-in-game-saves-working-properly)
-- [Why Can't I Insert Coins in Arcade Emulators?](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#why-cant-i-insert-coins-in-arcade-emulators)
+- [Why do some emulators not show up?](FAQ#why-do-some-emulators-not-show-up)
+- [Why can't I SSH as root anymore?](FAQ#why-cant-i-ssh-as-root-anymore)
+- [Where did the desktop go?](FAQ#where-did-the-desktop-go)
+- [Why does shut down and reboot take ages?](FAQ#why-does-shut-down-and-reboot-take-ages)
+- [How do I hide the boot text?](FAQ#how-do-i-hide-the-boot-text)
+- [How do I boot to the desktop or Kodi](FAQ/#how-do-i-boot-to-the-desktop-or-kodi)
+- [How do I remove the black borders](FAQ/#how-do-i-remove-the-black-borders)
+- [How do I change which buttons to press to exit an emulator with a controller?](FAQ#how-do-i-change-which-buttons-to-press-to-exit-an-emulator-with-a-controller)
+- [Does Super Mario All Stars work?](FAQ#does-super-mario-all-stars-work)
+- [How do I extend the available space when upgrading to a larger SD card](FAQ#how-do-i-extend-the-available-space-when-upgrading-to-a-larger-sd-card)
+- [How would I start from command line, say, the SNES emulator by itself?](FAQ#how-would-i-start-from-command-line-say-the-snes-emulator-by-itself)
+- [Is there another way to set up the gamepad for use, e.g., within the snes emulator?](FAQ#is-there-another-way-to-set-up-the-gamepad-for-use-eg-within-the-snes-emulator)
+- [The PSX emulator reports no BIOS found. What do I do?](FAQ#the-psx-emulator-reports-no-bios-found-what-do-i-do)
+- [Which memory split should I use?](FAQ#which-memory-split-should-i-use)
+- [Why aren't my in-game saves working properly?](FAQ#why-arent-my-in-game-saves-working-properly)
+- [Why Can't I Insert Coins in Arcade Emulators?](FAQ#why-cant-i-insert-coins-in-arcade-emulators)
 
 ### Why do some emulators not show up?
 
-The RetroPie SD image only ships with the most common emulators, if a system you want is missing you first need to make sure that emulator is installed. The details for installing additional emulators is explained on the [first installation page](https://github.com/RetroPie/RetroPie-Setup/wiki/First-Installation#installing-additional-emulators--ports)
+The RetroPie SD image only ships with the most common emulators, if a system you want is missing you first need to make sure that emulator is installed. The details for installing additional emulators is explained on the [first installation page](First-Installation#installing-additional-emulators--ports)
 
 If the system still doesn't show up in Emulation Station, only emulators with ROMs inside its respective folder will show up in the EmulationStation GUI (given that the specific emulator is installed). For example, for the Nintendo 64 emulator to show up, you must have at least one ROM in the `~/RetroPie/roms/n64/` folder. For ROM types supported by each emulator, go to the wiki page for that specific system/emulator. 
 
@@ -58,11 +58,11 @@ http://elinux.org/R-Pi_Troubleshooting#I_don.27t_know_the_root_password
 
 The PIXEL (formerly LXDE) desktop environment was removed from the RetroPie image to keep it smaller.
 
-It can easily be installed from the [RetroPie Setup Script](https://github.com/retropie/retropie-setup/wiki/Updating-RetroPie)
+It can easily be installed from the [RetroPie Setup Script](Updating-RetroPie)
 
 in **Configuration / Tools >> Raspbiantools >> Install Pixel Desktop Environment**
 
-after installation it will be accessible from the ports menu of emulationstation or can be called from the command line with `startx`
+after installation it will be accessible from the ports menu of EmulationStation or can be called from the command line with `startx`
 
 ![raspbian](https://cloud.githubusercontent.com/assets/10035308/19827420/347e1d6a-9d5e-11e6-8146-d814c8dd087b.png)
 
@@ -129,7 +129,7 @@ In retropie setup script>>Configuration / tools>>autostart
 
 ### How do I remove the black borders?
 
-Depending on the resolution of your television you may get black borders around your tv. You can full the whole expanse of your screen by editing the overscan settings. Exit to the terminal with F4 or access your pi over [SSH](https://github.com/RetroPie/RetroPie-Setup/wiki/ssh)
+Depending on the resolution of your television you may get black borders around your tv. You can full the whole expanse of your screen by editing the overscan settings. Exit to the terminal with F4 or access your pi over [SSH](ssh)
 
 ```
 sudo nano /boot/config.txt
@@ -224,9 +224,7 @@ If you'd like keyboard configurations to work add
 
 ### Is there another way to set up the gamepad for use, e.g., within the snes emulator?
 
-Follow the RetroArch-Configuration guide:
-
-https://github.com/petrockblog/RetroPie-Setup/wiki/RetroArch-Configuration
+Follow the [RetroArch-Configuration guide:](RetroArch-Configuration)
 
 ### The PSX emulator reports no BIOS found. What do I do?
 
@@ -235,7 +233,7 @@ Ensure the bios file(s) is/are all lowercase and put them in
 /home/pi/RetroPie/BIOS
 ```
 
-More information about PSX BIOS files can be found on the [PSX page](https://github.com/petrockblog/RetroPie-Setup/wiki/Playstation-1).
+More information about PSX BIOS files can be found on the [PSX page](Playstation-1).
 
 ### Which memory split should I use?
 
