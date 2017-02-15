@@ -8,7 +8,7 @@ _The Wii is a home video game console that was released by Nintendo on November 
 | :---: | :---: | :---: | :---: | :---: |
 | [dolphin](https://github.com/dolphin-emu/dolphin.git) | wii  | .iso | none | /opt/retropie/configs/wii/Config |
 
-> :exclamation: This is only for x86 builds- Not the Raspberry Pi!.
+> **Note This is only for x86 builds- Not the Raspberry Pi!.**
 
 ## Emulator: [dolphin](https://github.com/dolphin-emu/dolphin.git)
 
