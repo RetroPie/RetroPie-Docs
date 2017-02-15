@@ -3,7 +3,7 @@
 ***
 _MAME stands for Multiple Arcade Machine Emulator. MAME can emulate thousands of games that otherwise would have been lost in the ash-heaps of history._
 
-See Also: [[FB Alpha|FinalBurn-Alpha]], [[Neo Geo]]
+See Also: [FinalBurn-Alpha](FinalBurn-Alpha), [Neo Geo](Neo-Geo)
 
 ***
 
@@ -119,7 +119,7 @@ Config Dir: /opt/retropie/configs/mame-libretro/retroarch.cfg
 
 **Controls**
 
-lr-mame2003 utilises [RetroArch control configurations](https://github.com/petrockblog/RetroPie-Setup/wiki/RetroArch-Configuration). Add custom retroarch controls to the retroarch.cfg file in:
+lr-mame2003 utilises [RetroArch control configurations](RetroArch-Configuration). Add custom retroarch controls to the retroarch.cfg file in:
 ```shell
 /opt/retropie/configs/mame-libretro/retroarch.cfg
 ```
@@ -147,7 +147,7 @@ Config Dir: /opt/retropie/configs/mame-libretro/retroarch.cfg
 
 **Controls**
 
-lr-mame2010 utilises [RetroArch control configurations](https://github.com/petrockblog/RetroPie-Setup/wiki/RetroArch-Configuration). Add custom retroarch controls to the retroarch.cfg file in:
+lr-mame2010 utilises [RetroArch control configurations](RetroArch-Configuration). Add custom retroarch controls to the retroarch.cfg file in:
 ```shell
 /opt/retropie/configs/mame-libretro/retroarch.cfg
 ```
