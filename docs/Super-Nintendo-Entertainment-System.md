@@ -26,8 +26,6 @@ Place your SNES ROMs in
 /home/pi/RetroPie/roms/snes
 ```
 
-
-
 ## Controls
 
 ### lr-armsnes, lr-snes9x2005, lr-snes9x2002, lr-snes9x2010
@@ -38,7 +36,7 @@ Add custom retroarch controls to the retroarch.cfg file in
 ```shell
 /opt/retropie/configs/snes/retroarch.cfg
 ```
-For more information on custom RetroArch controls see: [RetroArch Configuration](https://github.com/petrockblog/RetroPie-Setup/wiki/RetroArch-Configuration)
+For more information on custom RetroArch controls see: [RetroArch Configuration](RetroArch-Configuration)
 
 ![nintendo_snes_diagram](https://cloud.githubusercontent.com/assets/10035308/16599633/7f34d356-42c0-11e6-92c0-f8774d795bd1.png)
 
