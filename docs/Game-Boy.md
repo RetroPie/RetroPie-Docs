@@ -28,7 +28,7 @@ Add custom retroarch controls to the retroarch.cfg file in
 ```shell
 /opt/retropie/configs/gb/retroarch.cfg
 ```
-For more information on custom RetroArch controls see: [RetroArch Configuration](https://github.com/petrockblog/RetroPie-Setup/wiki/RetroArch-Configuration)
+For more information on custom RetroArch controls see: [RetroArch Configuration](RetroArch-Configuration)
 
 ![gameboy](https://cloud.githubusercontent.com/assets/10035308/7334402/bd640072-eb4e-11e4-8251-d2bc3b876153.png)
 
