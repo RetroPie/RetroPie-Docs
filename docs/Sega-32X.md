@@ -28,7 +28,7 @@ Add custom retroarch controls to the retroarch.cfg file in
 ```
 /opt/retropie/configs/sega32x/retroarch.cfg
 ```
-For more information on custom RetroArch controls see: [RetroArch Configuration](https://github.com/petrockblog/RetroPie-Setup/wiki/RetroArch-Configuration)
+For more information on custom RetroArch controls see: [RetroArch Configuration](RetroArch-Configuration)
 
 ### Configuring a 6 button controller
 
