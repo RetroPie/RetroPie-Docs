@@ -39,7 +39,7 @@ Add custom retroarch controls to the retroarch.cfg file in
 ```shell
 /opt/retropie/configs/videopac/retroarch.cfg
 ```
-For more information on custom RetroArch controls see: [RetroArch Configuration](https://github.com/petrockblog/RetroPie-Setup/wiki/RetroArch-Configuration)
+For more information on custom RetroArch controls see: [RetroArch Configuration](RetroArch-Configuration)
 
 ![philips_videopac](https://cloud.githubusercontent.com/assets/10035308/8192731/79eeaea2-142d-11e5-924d-9d284d280981.png)
 
