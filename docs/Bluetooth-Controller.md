@@ -34,7 +34,7 @@ You will get a window popping up telling you if the connection was successful or
 
 ## Manual Bluetooth Configuration
 ## !!Please note this is for pre v4.0 RetroPie - New 8bitdo details here!!:
-https://github.com/RetroPie/RetroPie-Setup/wiki/Setting-up-an-8bitdo-Bluetooth-controller
+https://github.com/RetroPie/RetroPie-Setup/wiki/8bitdo-Controller
 
 
 
