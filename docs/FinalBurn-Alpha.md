@@ -3,10 +3,10 @@
 ***
 _Final Burn Alpha is a Multiple Arcade Emulator most popular for emulating Neo-Geo, Capcom, Konami, and Cave games. It is developed by the final burn team and originated from FinalBurn by Dave_
 
-See also: [[MAME]], [[Neo Geo]]
+See also: [MAME](MAME), [Neo Geo](Neo-Geo)
 
 ***
-There are a variety of arcade emulators available in RetroPie. There are significant differences in performance, compatibility, and configuration between them. If you're getting started with arcade emulation, start by reading [Managing Arcade ROMs](https://github.com/RetroPie/RetroPie-Setup/wiki/Managing-ROMs).
+There are a variety of arcade emulators available in RetroPie. There are significant differences in performance, compatibility, and configuration between them. If you're getting started with arcade emulation, start by reading [Arcade](Arcade).
 
 This page is a resource for additional details on RetroPie's Final Burn Alpha emulators including configuration paths, controls, and the ROM sets which each emulator requires.
 
@@ -28,7 +28,7 @@ So you can have 1 romset for each of these (mame4all, FBA, NeoGeo, advmame) To a
 ### lr-fbalpha
 [Visit the Final Burn Alpha homepage on github](https://github.com/libretro/fbalpha)
 
-**Note: Please see [[lr-fbalpha]] for information on how to configure specific features of this emulator.**
+**Note: Please see [lr-fbalpha](lr-fbalpha) for information on how to configure specific features of this emulator.**
 
 ```shell
 Roms Dir: /home/pi/RetroPie/roms/fba
@@ -73,7 +73,7 @@ lr-fbalpha2012 utilises RetroArch configs. Add custom retroarch controls to the 
 ```shell
 /opt/retropie/configs/fba/retroarch.cfg
 ```
-For more information on custom RetroArch controls see: [RetroArch Configuration](https://github.com/petrockblog/RetroPie-Setup/wiki/RetroArch-Configuration) 
+For more information on custom RetroArch controls see: [RetroArch Configuration](RetroArch-Configuration) 
 
 ---
 
