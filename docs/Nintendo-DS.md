@@ -11,7 +11,7 @@ The Nintendo DS is a handheld video game console that was released by Nintendo i
 
 Note that lr-desmume is very experimental and lags quite a bit even with an overclocked RPI 2/3. Now DraStic on the other hand, runs at about full speed on a RPI 2/3. Both can be installed through the experimental menu in the [RetroPie Setup Script](Updating RetroPie).
 
-## Emulator: [DraStic](http://drastic-ds.com) :small_red_triangle: , [lr-desmume](https://github.com/libretro/desmume) :small_red_triangle:
+## Emulator: [DraStic](http://drastic-ds.com), [lr-desmume](https://github.com/libretro/desmume)
 
 ## ROMS
 Accepted File Extensions: **.nds .zip**
@@ -30,7 +30,7 @@ Add custom retroarch controls to the retroarch.cfg file in
 ```shell
 /opt/retropie/configs/nds/retroarch.cfg
 ```
-For more information on custom RetroArch controls see: [RetroArch Configuration](https://github.com/RetroPie/RetroPie-Setup/wiki/RetroArch-Configuration)
+For more information on custom RetroArch controls see: [RetroArch Configuration](RetroArch-Configuration)
 
 ![nintendo_ds_diagram](https://cloud.githubusercontent.com/assets/10035308/16599645/7f549f56-42c0-11e6-88a8-3acda5287da3.png)
 
