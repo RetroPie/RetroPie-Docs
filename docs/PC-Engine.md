@@ -47,7 +47,7 @@ Add custom retroarch controls to the retroarch.cfg file in
 ```shell
 /opt/retropie/configs/pcengine/retroarch.cfg
 ```
-For more information on custom RetroArch controls see: [RetroArch Configuration](https://github.com/petrockblog/RetroPie-Setup/wiki/RetroArch-Configuration)
+For more information on custom RetroArch controls see: [RetroArch Configuration](RetroArch-Configuration)
 
 ![nec_turbografx16_diagram](https://cloud.githubusercontent.com/assets/10035308/10822284/1bde9cc4-7e1c-11e5-9683-c29b5a5a49e8.png)
 
