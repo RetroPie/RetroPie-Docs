@@ -9,7 +9,7 @@ _The Atari Jaguar was the first 64 bit video game console released in 1993. It w
 | :---: | :---: | :---: | :---: | :---: |
 | [lr-virtualjaguar](https://github.com/libretro/virtualjaguar-libretro) | atarijaguar  | .j64 .jag | none | /opt/retropie/configs/atarijaguar/retroarch.cfg |
 
-## Emulator: [lr-virtualjaguar](https://github.com/libretro/virtualjaguar-libretro) :small_red_triangle: 
+## Emulator: [lr-virtualjaguar](https://github.com/libretro/virtualjaguar-libretro) 
 
 Note that this emulator is currently experimental and will need to be installed through the experimental menu in the setup script. 
 
@@ -33,6 +33,6 @@ Add custom retroarch controls to the retroarch.cfg file in
 ```shell
 /opt/retropie/configs/atarijaguar/retroarch.cfg
 ```
-For more information on custom RetroArch controls see: [RetroArch Configuration](https://github.com/petrockblog/RetroPie-Setup/wiki/RetroArch-Configuration)
+For more information on custom RetroArch controls see: [RetroArch Configuration](RetroArch-Configuration)
 
 ![atarijaguardiagram](https://cloud.githubusercontent.com/assets/10035308/8268598/4a5d1868-1748-11e5-994d-e0d508d8877b.png)
