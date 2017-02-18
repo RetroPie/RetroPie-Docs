@@ -14,7 +14,7 @@ Either on linux, or on a PC, format the USB drive to FAT32 (used in this guide a
 -  [Instructions to format on Windows 10](http://answers.microsoft.com/en-us/windows/forum/windows_10-files/formatting-usb-drive-to-fat32-file-in-windows-10/5d50af44-9dc0-4024-bfec-2e095bb22caf)
 -  [Instructions to format on OSX](http://qsee.custhelp.com/app/answers/detail/a_id/2560/~/mac%3A-how-to-format-a-flash-drive-to-fat32-in-mac-os-x)
 
-# Automatic Mount (Easiest Method)
+## Automatic Mount (Easiest Method)
 
 As of December 30, 2016 a simple automated method was added to run roms from a USB drive. 
 
@@ -29,21 +29,21 @@ NOTE if you have a large ROM collection already on the SD card it will copy all 
 
 Once the folder structure is copied over the USB will be mounted over the RetroPie folder so any ROMs you add to your pi will be run off of the USB. 
 
-# Manual Mount
+# M#anual Mount
 
 After formatting your USB based on the above step:
 
-## Disable USB transfer daemon
+### Disable USB transfer daemon
 
 1. Enter the **RetroPie Setup** menu within the **RetroPie** menu in [[EmulationStation]].
 2. Select **Setup / Tools**.
 3. Select **usbromservice - USB ROM Service**
 4. **Disable USB ROM Service**.
 
-## Plug in USB drive
+### Plug in USB drive
 This can be done when the system is powered on.
 
-## Transfer the existing RetroPie file structure
+### Transfer the existing RetroPie file structure
 This step is mandatory regardless of whether you have any roms on your system. RetroPie has a specific directory structure and a number of files required packaged with even empty installations.
 
 Either via [SFTP](Transferring-Roms#sftp-needs-an-active-internet-connection), or using the terminal (via exiting emulationstation, pressing F4, or remotely using [[SSH]]), move the `/home/pi/RetroPie` folder into your USB stick. The reason for moving the whole folder, and not just `/home/pi/RetroPie/roms` is that there are other folders, such as /home/pi/RetroPie/BIOS` that are worth keeping on the external drive also.
@@ -84,7 +84,7 @@ drwxrwxrwx 52 root root 16384 Jun  3 00:11 roms
 drwxrwxrwx  2 root root 16384 Apr 13 16:14 splashscreens
 ```
 
-## Configure fstab to automatically mount USB drive
+### Configure fstab to automatically mount USB drive
 Establish the drive's UUID number by entering the command `ls -l /dev/disk/by-uuid/`. Example output:
 ```
 pi@retropie:~ $ ls -l /dev/disk/by-uuid/
@@ -115,13 +115,13 @@ In the case you want to allow execution of file with fat32 file system (E.g : Op
 ```
 UUID=E44B-FC4E  /home/pi/RetroPie      vfat    rw,exec,uid=pi,gid=pi,umask=022 0       2
 ``` 
-## Restart system
+### Restart system
 This must be a full restart, not just emulationstation. When it boots up you should see any ROMs you previously had show up in emulationstation.
 
-## Transfer ROMs
+### Transfer ROMs
 Now transfer ROMs either directly to the USB drive, or via any of the usual methods (aside from using the automatic USB copy, obviously!). Now that the USB drive is mounted directly to `home/pi/RetroPie`, every time this directory is accessed, you're actually accessing the USB drive.
 
-## Edit command launcher for ports
+### Edit command launcher for ports
 You may start seeing permission denied errors when launching a .sh file, especially for FAT formatted drives/keys. In that case you need to prefix the command with bash.
 
 Notably to get the 'Ports' launchers working:
