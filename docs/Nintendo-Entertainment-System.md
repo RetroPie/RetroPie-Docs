@@ -8,12 +8,12 @@ _The Nintendo Entertainment System (NES) is an 8-bit home video game console tha
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
 | [lr-fceumm](https://github.com/libretro/libretro-fceumm) | nes  | .zip .nes .smc .sfc .fig .swc .mgd .fds | none | /opt/retropie/configs/nes/retroarch.cfg |
-| [lr-nestopia](https://github.com/libretro/nestopia) | nes  | .zip .nes .smc .sfc .fig .swc .mgd .fds | disksys.rom | /opt/retropie/configs/nes/retroarch.cfg |
+| [lr-nestopia](https://github.com/libretro/nestopia) | nes  | .zip .nes .smc .sfc .fig .swc .mgd .fds | none | /opt/retropie/configs/nes/retroarch.cfg |
 | [lr-quicknes](https://github.com/libretro/QuickNES_Core) | nes  | .zip .nes .smc .sfc .fig .swc .mgd | none | /opt/retropie/configs/nes/retroarch.cfg |
 
-## Emulators: [lr-nestopia](https://github.com/libretro/nestopia), [lr-fceumm](https://github.com/libretro/libretro-fceumm), [lr-quicknes](https://github.com/libretro/QuickNES_Core)
+If you want to play Famicom Disk System games see the wiki page [HERE](Famicom-Disk-System)
 
-Both emulators utilise RetroArch configurations for controllers. lr-nestopia is preferred due to better accuracy and the ability to play Famicom Disk System games, plus [better input latency](http://libretro.com/forums/showthread.php?t=5428&p=41746&viewfull=1#post41746). lr-fceumm is slightly faster, which may give a benefit to Raspberry Pi 1/0 users.
+## Emulators: [lr-nestopia](https://github.com/libretro/nestopia), [lr-fceumm](https://github.com/libretro/libretro-fceumm), [lr-quicknes](https://github.com/libretro/QuickNES_Core)
 
 ## ROMS
 
@@ -23,23 +23,7 @@ Place your NES Roms in
 ```
 /home/pi/RetroPie/roms/nes
 ```
-## BIOS
 
-Both lr-nestopia and lr-fceumm are able to play Famicom Disk System (FDS) games with a **disksys.rom** bios file.
-
-Place the BIOS in
-```
-/home/pi/RetroPie/BIOS
-```
-
-Place your FDS Roms in
-```
-/home/pi/RetroPie/roms/fds
-```
-Or if you want them separate from NES Roms
-```
-/home/pi/RetroPie/roms/nes
-```
 ## Controls
 
 Both emulators utilise Retroarch configurations
