@@ -159,7 +159,7 @@ This tells sudo that the odroid user doesn't need a password. Save and quit.
 
 Then remove your password:
 
-	sudo passwd -d `whoami`
+	sudo passwd -d odroid
 
 Test it all worked:
 
