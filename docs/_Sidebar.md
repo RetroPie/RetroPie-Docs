@@ -30,6 +30,7 @@
 * [Daphne](Daphne)
 * [Dragon 32](Dragon)
 * [Dreamcast](Dreamcast)
+* [Famicom Disk System](Famicom-Disk-System)
 * [FinalBurn Alpha](FinalBurn-Alpha)
 * [GameCube](GameCube)
 * [Game & Watch](Game-&-Watch)
