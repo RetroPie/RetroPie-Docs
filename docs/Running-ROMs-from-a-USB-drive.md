@@ -7,7 +7,7 @@ Rather than running everything from an SD card, it can be desirable to store and
 
 There are a number of ways you can achieve this, but the following method is desirable as it fully integrates the USB drive with the existing directory structure, rather than requiring you to tweak configuration files so RetroPie is looking for ROMs in a different place. Below there are two ways to accomplish this: an automated method, or a manual method.
 
-## Format USB drive
+### Format USB drive
 Either on linux, or on a PC, format the USB drive to FAT32 (used in this guide as it is the most compatible across different operating systems).
 
 -  [Instructions to format on Linux](https://ksearch.wordpress.com/2010/09/29/format-usb-in-linux/)
@@ -29,7 +29,7 @@ NOTE if you have a large ROM collection already on the SD card it will copy all 
 
 Once the folder structure is copied over the USB will be mounted over the RetroPie folder so any ROMs you add to your pi will be run off of the USB. 
 
-# M#anual Mount
+## Manual Mount
 
 After formatting your USB based on the above step:
 
