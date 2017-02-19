@@ -57,7 +57,7 @@ http://elinux.org/R-Pi_Troubleshooting#I_don.27t_know_the_root_password
 
 ### Reset ownership/permissions of /home/pi/RetroPie roms
 
-To reset all your rom file's ownership back to the "pi" user, within the [RetroPie-Setup Script](https://github.com/retropie/retropie-setup/wiki/Updating-RetroPie).
+To reset all your rom file ownerships back to the "pi" user, enter the [RetroPie-Setup Script](https://github.com/retropie/retropie-setup/wiki/Updating-RetroPie)
 
 navigate to **Configuration / Tools >> resetromdirs**
 
