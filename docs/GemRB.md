@@ -87,4 +87,4 @@ Default configs are automagically configured with the install script but you can
 
 ## Extra Configurations
 
-If you are using demo data some configs need to be manually changed, see more info [HERE](http://www.raspians.com/Knowledgebase/gemrb-baldurs-gate-on-the-raspberry-pi/)
+If you are using demo data some configs need to be manually changed, see more info [HERE](http://web.archive.org/web/20150331014917/http://www.raspians.com/Knowledgebase/gemrb-baldurs-gate-on-the-raspberry-pi/)
