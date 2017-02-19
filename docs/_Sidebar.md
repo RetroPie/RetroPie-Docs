@@ -80,7 +80,7 @@
 ## [Ports](Ports)
 
 * [Adventure Game Studio](Adventure-Game-Studio)
-* [Cave Story](Cave-Stoery)
+* [Cave Story](Cave-Story)
 * [Commander Keen](Commander-Keen) 
 * [Descent](Descent)  
 * [Dinothawr](Dinothawr)  
