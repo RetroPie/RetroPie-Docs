@@ -200,3 +200,13 @@ Finally, run:
 and reboot for good luck:
 
     sudo reboot
+
+#### Fix sound not working/stuttering
+
+If you have troubles with no sound or sound stuttering badly in menu or game, try disabling pulseaudio:
+
+    mkdir ~/.pulse
+    echo "autospawn=no" >> ~/.pulse/client.conf
+    pulseaudio -k
+
+Then reboot, or restart emulationstation. This seems to fix sound in-game, but breaks the sounds in emulationstation. I will update this guide if I can figure out how to fix the menu sound.
