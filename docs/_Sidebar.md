@@ -80,8 +80,8 @@
 ## [Ports](Ports)
 
 * [Adventure Game Studio](Adventure-Game-Studio)
-* [Baldur's Gate](GemRB)
-* [Cave Story](Cave-Story)
+* [GemRB](GemRB)
+* [Cave Story](Cave-Stoery)
 * [Commander Keen](Commander-Keen) 
 * [Descent](Descent)  
 * [Dinothawr](Dinothawr)  
