@@ -96,7 +96,7 @@ lrwxrwxrwx 1 root root 15 Jun 19 21:59 7cc81461-50b9-45a8-a561-fd5c4aa71934 -> .
 lrwxrwxrwx 1 root root 15 Jun 19 21:59 AE51-7D54 -> ../../mmcblk0p1
 lrwxrwxrwx 1 root root 10 Jun 19 21:59 E44B-FC4E -> ../../sda1
 ```
-`sda1` was our device tree position from earlier, so `E44B-FC4E` is our UUID.
+`sda1` was our device tree position from earlier (the section above describes how to find this), so `E44B-FC4E` is our UUID.
 
 Edit fstab with this command: `sudo nano /etc/fstab` and add a new line like the below:
 ```
