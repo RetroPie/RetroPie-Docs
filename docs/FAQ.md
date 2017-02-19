@@ -1,5 +1,6 @@
 - [Why do some emulators not show up?](FAQ#why-do-some-emulators-not-show-up)
 - [Why can't I SSH as root anymore?](FAQ#why-cant-i-ssh-as-root-anymore)
+- [Reset ownership/permissions of /home/pi/RetroPie roms](FAQ#reset-ownershippermissions-of-homepiretropie-roms)
 - [Where did the desktop go?](FAQ#where-did-the-desktop-go)
 - [Why does shut down and reboot take ages?](FAQ#why-does-shut-down-and-reboot-take-ages)
 - [How do I hide the boot text?](FAQ#how-do-i-hide-the-boot-text)
@@ -53,6 +54,12 @@ see these posts for more details:
 https://www.raspberrypi.org/documentation/linux/usage/root.md
 
 http://elinux.org/R-Pi_Troubleshooting#I_don.27t_know_the_root_password
+
+### Reset ownership/permissions of /home/pi/RetroPie roms
+
+To reset all your rom file's ownership back to the "pi" user, within the [RetroPie-Setup Script](https://github.com/retropie/retropie-setup/wiki/Updating-RetroPie).
+
+navigate to **Configuration / Tools >> resetromdirs**
 
 ### Where did the desktop go?
 
