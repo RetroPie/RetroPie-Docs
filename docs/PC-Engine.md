@@ -23,6 +23,8 @@ Place your PC Engine/ TurboGrafx-16 ROMs in
 
 ## BIOS
 
+**Note: the BIOS file is only needed to play CD based games**
+
 The BIOS file necessary is called: **syscard3.pce** 
 
 Place your the syscard3.pce file in
@@ -114,6 +116,7 @@ to
     <directlaunch/>
   </system>
 ```
+**Note: these above changes to `es_systems.cfg` with be overwritten when updating RetroPie** and you can find more information about this [here](EmulationStation#my-es_sytemscfg-is-being-overwritten-on-updates).
 
 ### Switching Emulation Station to the TurboGrafx-16 logo:
 
