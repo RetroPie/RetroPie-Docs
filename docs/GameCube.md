@@ -25,7 +25,7 @@ Dolphin controls must currently be mapped via the GUI. You will need to drop dow
 
 Change to the Dolphin directory:
 ```
-cd /opt/retropie/emulators/dolphin/bin/dolphin-emu
+cd /opt/retropie/emulators/dolphin/bin
 ```
 Launch Dolphin:
 ```
