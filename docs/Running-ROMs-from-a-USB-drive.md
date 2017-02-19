@@ -4,6 +4,9 @@ Rather than running everything from an SD card, it can be desirable to store and
 -  **Separation of data**: In the event that a RetroPie installation becomes corrupted or a new image is required, any ROMs, saves, etc, are not lost. Simply remove the USB stick, re-image the SD card, re-apply these setup instructions, and all that data is retained.
 -  **Easy ROM transfer**: When the system is off, you can remove the stick and plug it into any other computer and easily copy-and-paste ROMs into the correct folders.
 -  **Speed**: USB transfer speeds can be faster than SD card transfer speeds (see http://www.roylongbottom.org.uk/Raspberry%20Pi%20Benchmarks.htm#anchor21).
+-  **Cost**: USB storage tends to be cheaper than the equivalent microSD card.
+-  **Capacity**: USB storage can reach huge capacities, whereas microSD is limited.
+-  **Compatibility**: microSD cards suffer from [compatibility issues](http://elinux.org/RPi_SD_cards) with Raspberry Pi systems. USB storage devices should mostly all work.
 
 There are a number of ways you can achieve this, but the following method is desirable as it fully integrates the USB drive with the existing directory structure, rather than requiring you to tweak configuration files so RetroPie is looking for ROMs in a different place. Below there are two ways to accomplish this: an automated method, or a manual method.
 
@@ -18,12 +21,12 @@ Either on linux, or on a PC, format the USB drive to FAT32 (used in this guide a
 
 As of December 30, 2016 a simple automated method was added to run roms from a USB drive. 
 
--  First Update the RetroPie Setup Script
--  Re-Enable the USB ROM Transfer Service
--  Format your USB drive to FAT32 per directions above
--  Create a folder called `retropie-mount` on the USB drive
--  Plug into Raspberry Pi
--  It will proceed to automatically copy the `RetroPie` folder AND all of its contents (you may need to reboot to start the copying)
+1. First Update the RetroPie Setup Script
+2. Re-Enable the USB ROM Transfer Service
+3. Format your USB drive to FAT32 per directions above
+4. Create a folder called `retropie-mount` on the USB drive
+5. Plug into Raspberry Pi
+6. It will proceed to automatically copy the `RetroPie` folder AND all of its contents (you may need to reboot to start the copying)
 
 NOTE if you have a large ROM collection already on the SD card it will copy all of the ROMs too so make sure your USB is large enough. It is easiest if you haven't added any roms yet.
 
