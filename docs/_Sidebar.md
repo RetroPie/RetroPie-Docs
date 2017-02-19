@@ -80,7 +80,6 @@
 ## [Ports](Ports)
 
 * [Adventure Game Studio](Adventure-Game-Studio)
-* [GemRB](GemRB)
 * [Cave Story](Cave-Stoery)
 * [Commander Keen](Commander-Keen) 
 * [Descent](Descent)  
@@ -88,6 +87,7 @@
 * [DOOM](Doom) 
 * [Duke Nukem 3D](Duke-Nukem-3D)
 * [GameMaker Games](GameMaker-Games)
+* [GemRB](GemRB)
 * [Giana's Return](Giana's-Return)
 * [Lincity](Lincity)
 * [Löve](Love) 
