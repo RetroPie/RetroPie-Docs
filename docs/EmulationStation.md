@@ -39,6 +39,20 @@ A great deal of information can be found in EmulationStation's [README.md](https
 
 [Creating your own themes.](https://github.com/Aloshi/EmulationStation/blob/master/THEMES.md#themes)
 
+## Command Line Arguments
+
+EmulationStation has a few command line arguments that could be helpful to you for various customisation.  Let's say you wanted to setup a kiosk but did not want to give access to the builtin scraper function or you didn't want the end user to be able to exit EmulationStation, you can simply edit `/opt/retropie/configs/all/autostart.sh` and append the corresponding command line argument.
+
+For example, to disable the Exit option from inside the Quit menu, edit `/opt/retropie/configs/all/autostart.sh` with
+```
+emulationstation --no-exit #auto
+```
+
+To see a complete list of the supported command line arguments
+```
+emulationstation --help
+```
+
 ## Common Problems
 
 
