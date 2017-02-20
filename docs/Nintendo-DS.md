@@ -13,6 +13,17 @@ Note that lr-desmume is very experimental and lags quite a bit even with an over
 
 ## Emulator: [DraStic](http://drastic-ds.com), [lr-desmume](https://github.com/libretro/desmume)
 
+## BIOS
+
+### DraStic BIOS Files
+
+DraStic requires two BIOS files named **drastic_bios_arm7.bin** and **drastic_bios_arm9.bin**.
+
+Place these BIOS files in
+```
+/opt/retropie/configs/nds/drastic/system/
+```
+
 ## ROMS
 Accepted File Extensions: **.nds .zip**
 
