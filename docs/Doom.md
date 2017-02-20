@@ -63,7 +63,7 @@ A permission denied error after launching a script from EmulationStation means t
 
 ### How to Launch Doom IWADs and Mods (PWADs) from Emulationstation using ZDOOM.
 
-First off, you will want to go into RetroPie-Setup, and install ZDOOM from Experimental Packages. 
+First off, you will want to go into RetroPie-Setup, and install ZDOOM from Optional Packages. 
 
 Once installed, we will employ [Rex Claussen's, The Darkest Hour](http://doomnexus.drdteam.org/DH_Pix.html).
 
