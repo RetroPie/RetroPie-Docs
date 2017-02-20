@@ -17,7 +17,7 @@ Note that lr-desmume is very experimental and lags quite a bit even with an over
 
 ### DraStic BIOS Files
 
-DraStic requires two BIOS files named **drastic_bios_arm7.bin** and **drastic_bios_arm9.bin**.
+DraStic requires two BIOS files named **drastic_bios_arm7.bin** and **drastic_bios_arm9.bin**
 
 Place these BIOS files in
 ```
