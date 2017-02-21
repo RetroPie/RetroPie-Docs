@@ -183,7 +183,7 @@ Now that this is complete you will want to go back two directories so that we ar
 
 Why is this important to me?
 
-[id Software](http://www.idsoftware.com/) released the source code for Doom's engine under the [GNU General Public License](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html) but not the assets so to legally use this source code, you would still need to own the original game  (which you can still purchase online on [Steam](http://store.steampowered.com/sub/18397/), [GOG.com](https://www.gog.com/game/the_ultimate_doom) and other places like eBay).
+[id Software](http://www.idsoftware.com/) released the source code for Doom's engine under the [GNU General Public License](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html) but not the assets so to legally use this, you would either need the [shareware version](ftp://ftp.idsoftware.com/idstuff/doom/) or you would need to own the original game (which you can still purchase online on [Steam](http://store.steampowered.com/sub/18397/), [GOG.com](https://www.gog.com/game/the_ultimate_doom) and other places like eBay).
 
 Freedoom aims to be compatible with many of the thousands of Doom levels and other “mods” already released for the original game making them playable without the need to use non-free software.  This project has been a work-in-progress for many years now and has already replaced a considerable amount of the game's content but still haven't reached the targeted version 1.0.
 
@@ -195,22 +195,21 @@ Freedoom is divided into three [IWADs](https://zdoom.org/wiki/IWAD).
 
 * Last FreeDM, which also replaces Doom II and Final Doom and is designed to be a fast-paced competitive deathmatch only campaign containing no monsters.
 
-First you need to download Freedoom:
-https://freedoom.github.io/download.html
+First you need to download Freedoom: [https://freedoom.github.io/download.html](https://freedoom.github.io/download.html)
 
-As of this writing, the newest version of Freedoom is 0.10.1 so you can use wget to download the 2 files needed:
+As of this writing, the newest version of Freedoom is 0.11 so you can use wget to download the 2 files needed:
 ```
 cd
-wget https://github.com/freedoom/freedoom/releases/download/v0.10.1/freedoom-0.10.1.zip && wget https://github.com/freedoom/freedoom/releases/download/v0.10.1/freedm-0.10.1.zip
+wget https://github.com/freedoom/freedoom/releases/download/v0.11/freedoom-0.11.zip && wget https://github.com/freedoom/freedoom/releases/download/v0.11/freedm-0.11.zip
 ```
 
 Next extract both files:
 
-`unzip freedoom-0.10.1.zip && unzip freedm-0.10.1.zip`
+`unzip freedoom-0.11.zip && unzip freedm-0.11.zip`
 
-The files will be extracted to folders named `freedoom-0.10.1` and `freedm-0.10.1` respectively and I like to keep all the Doom WADs in the same folder so why not put them with the shareware doom1.wad.
+The files will be extracted to folders named `freedoom-0.11` and `freedm-0.11` respectively and I like to keep all the Doom WADs in the same folder so why not put them with the shareware doom1.wad.
 
-`mv freedoom-0.10.1/freedoom*.wad freedm-0.10.1/freedm.wad /home/pi/RetroPie/roms/ports/doom/`
+`mv freedoom-0.11/freedoom*.wad freedm-0.11/freedm.wad /home/pi/RetroPie/roms/ports/doom/`
 
 Now we need to make scripts so we can launch Freedoom from EmulationStation using lr-prboom. We want to place these scripts in the Ports directory.
 
@@ -251,7 +250,7 @@ Last step is to reboot EmulationStation and navigate to the Ports.  You should n
 To delete the left over extracted folders and downloaded files:
 ```
 cd
-rm -rf freedoom-0.10.1/ freedm-0.10.1/ freedoom-0.10.1.zip freedm-0.10.1.zip
+rm -rf freedoom-0.11/ freedm-0.11/ freedoom-0.11.zip freedm-0.11.zip
 ```
 
 ### Music
