@@ -1,45 +1,88 @@
-# EmulationStation
-# Introduction
+## Introduction
 
-This is the graphical front-end installed by RetroPie. EmulationStation is designed to allow you to use your Pi as if it were a retro console - with only a controller, not requiring a keyboard. 
+[EmulationStation](http://emulationstation.org/) is the official graphical frontend of the RetroPie project. 
 
-It was developed specifically for the Raspberry Pi, on the Raspberry Pi. However, it uses cross-platform libraries, so it can be run on pretty much any Linux machine. If you try, you can also build it on Windows.
+| ![firstboot](https://cloud.githubusercontent.com/assets/10035308/16217874/c6bbdb3a-3734-11e6-998f-8cc714a320ce.png)|
+| :---: | 
 
-From the dictionary:
-> # front end
->1. the front of a car or other vehicle.
->2. the part of a radio or television receiver to which the aerial signal goes first.
->3. **COMPUTING - a part of a computer or program that allows access to other parts.**
+EmulationStation is not an emulator, rather it is a polished game launcher that includes:
 
-EmulationStation is used to provide a polished user interface to present and interact with all the different aspects of the RetroPie distribution. It allows the user to use a UI that is controllable using a joypad or arcade controllers to navigate through the different emulators, and make (simple) edits to the systems configuration.
+- Controller and keyboard support
+- Custom themes
+- Scraper for box art and game metadata
 
-As it is the first thing that many users see, EmulationStation is often conflated with RetroPie as a whole, while ES is only a part of the RetroPie distribution.
+### Configuration Files
 
-EmulationStation was developed by Alec Lofquist (programming) and Nils Bonenberger (design & UI), see the [official EmulationStation page](http://www.emulationstation.org/). For the code and more info, see also the [Github Repository](https://github.com/Aloshi/EmulationStation).
+There are different configuration files for the different aspects of EmulationStation:
 
-# Features
-EmulationStation offers the following features:
-* Listing of emulated systems (systemlist), and their respective games (gamelist)
-* Keyboard-less navigation
-* Controller configuration which is propagated to RetroArch emulators
-* Theming of certain elements (background, position/size of text elements)
-* Scraping of game information (see [here for more info](https://github.com/retropie/retropie-setup/wiki/scraper))
+#### es_systems.cfg
 
-# Development status
-Since spring 2015, there has been little or no activity from the original ES developer, Aloshi. Recently, there has been some activities to get the project moving again (see the [discussion here](https://github.com/Aloshi/EmulationStation/issues/563#issuecomment-198787794)). It remains to be seen if this will gather enough momentum to become a viable alternative for RetroPie or not.
+`es_systems.cfg` defines the systems that show up in ES. The RetroPie-Setup script will automatically generate this config file alphabetically when you install any new systems. ES will check two places for an es_systems.cfg file, in the following order, stopping after it finds one that works:
 
-Until that time, further developments are done by 'unofficial' forks, which are not necessarily maintained/updated often. One example is [this extension of ES](https://github.com/retropie/retropie-setup/wiki/Child-friendly-EmulationStation), which is currently under experimental features.
+- `~/.emulationstation/es_systems.cfg`
+- `/etc/emulationstation/es_systems.cfg`
 
-# Help
-A great deal of information can be found in EmulationStation's [README.md](https://github.com/Aloshi/EmulationStation/blob/master/README.md) and [THEMES.md](https://github.com/Aloshi/EmulationStation/blob/master/THEMES.md), also viewable on GitHub. Some links:
+Example config:
 
-[Building from source (if you're getting dependency errors, this might help).](https://github.com/Aloshi/EmulationStation#building)
+```
+<?xml version="1.0"?>
+<systemList>
+  <system>
+    <name>nes</name>
+    <fullname>Nintendo Entertainment System</fullname>
+    <path>/home/pi/RetroPie/roms/nes</path>
+    <extension>.nes .zip .NES .ZIP</extension>
+    <command>/opt/retropie/supplementary/runcommand/runcommand.sh 0 _SYS_ nes %ROM%</command>
+    <platform>nes</platform>
+    <theme>nes</theme>
+  </system>
+</systemList>
+```
 
-[Configuring EmulationStation.](https://github.com/Aloshi/EmulationStation#configuring)
+More information [HERE](https://github.com/Aloshi/EmulationStation/blob/master/README.md#writing-an-es_systemscfg)
 
-[Creating your own themes.](https://github.com/Aloshi/EmulationStation/blob/master/THEMES.md#themes)
+#### Scraper (gamelist.xml)
 
-## Command Line Arguments
+There are two scrapers for RetroPie: the built in EmulationStation scraper and Sselphs scraper. More information [HERE](Scraper)
+
+The gamelist.xml file for a system defines metadata for a system's games, such as a name, image (like a screenshot or box art), description, release date, and rating.
+
+ES will check three places for a `gamelist.xml` in the following order, using the first one it finds:
+
+- `[SYSTEM_PATH]/gamelist.xml`
+- `~/.emulationstation/gamelists/[SYSTEM_NAME]/gamelist.xml`
+- `/etc/emulationstation/gamelists/[SYSTEM_NAME]/gamelist.xml`
+
+An example gamelist.xml:
+```xml
+<gameList>
+	<game>
+		<path>/home/pi/ROMs/nes/mm2.nes</path>
+		<name>Mega Man 2</name>
+		<desc>Mega Man 2 is a classic NES game which follows Mega Man as he murders eight robot masters in cold blood.</desc>
+		<image>~/.emulationstation/downloaded_images/nes/Mega Man 2-image.png</image>
+	</game>
+</gameList>
+```
+
+See more information [HERE](https://github.com/Aloshi/EmulationStation#gamelistxml)
+
+#### Themes
+
+The RetroPie community has developed many themes for ES. See Themes page [HERE](themes)
+
+ES will check two places for a theme in the following order, using the first one it finds:
+
+- `~/.emulationstation/themes`
+- `/etc/emulationstation/themes`
+
+Themes installed from the RetroPie-Setup script will be installed in `/etc/emulationstation/themes`
+
+See more information [HERE](https://github.com/Aloshi/EmulationStation#themes)
+
+See here for a tutorial on [Creating Your Own EmulationStation Theme](Creating-Your-Own-EmulationStation-Theme)
+
+#### Command Line Arguments
 
 EmulationStation has a few command line arguments that could be helpful to you for various customisation.  Let's say you wanted to setup a kiosk but did not want to give access to the builtin scraper function or you didn't want the end user to be able to exit EmulationStation, you can simply edit `/opt/retropie/configs/all/autostart.sh` and append the corresponding command line argument.
 
@@ -53,88 +96,95 @@ To see a complete list of the supported command line arguments
 emulationstation --help
 ```
 
-## Common Problems
+### Editing ES Configs
 
+ES uses xml files for its database and caches them on loading and exit, so any edits to the configuration files will need to be changed when ES is closed.
 
-### My ES_Sytems.cfg is being overwritten on updates!
+Because of the way the RetroPie-Setup script works custom configurations will need to be copied and edited in specific places.
 
-When you install themes from the retropie setup script they are installed to `/etc/emulationstation` and are overwritten when new themes are installed or RetroPie is updated.
+Note that any configs in `~/.emulationstation/` are symlinked to `/opt/retropie/configs/all/emulationstation/` which means both paths will work.
 
-If you want to customise your es_systems.cfg or add themes without them being overwritten on updates you can add them to `/home/pi/.emulationstation` EmulationStation first checks in `/home/pi/.emulationstation` and then checks `/etc/emulationstation`.
+#### Editing es_systems.cfg (Systems)
 
-For customising themes you'll place them in `/home/pi/.emulationstation/themes` 
+Custom es_systems.cfg should be in `~/.emulationstation/es_systems.cfg`
 
-
-### EmulationStation isn't detecting my ROMs!
-
-* Are they in the right folders? *Remember, paths are case sensitive*. You can check what folders ES is using with: `nano /etc/emulationstation/es_systems.cfg` or better yet look at the documentation here on the wiki.
-* Is ES looking for the right file extension? *Remember, the extension is case sensitive*. You can check what format ES is searching with: `nano /etc/emulationstation/es_systems.cfg` and again see the pages here on the wiki
-* Are your ROMs in a compressed format? *EmulationStation does not search inside zip files*, though some emulators (like MAME) will expect a zip file.
-
-
-### All I see is the Amiga screen! Where are the rest of the emulators?
-
-You've gone one screen too far ;) Press `B` to get back to the system screen and use the left and right arrows to navigate between the emulators. If you are wondering why some systems aren't there you need to add roms to their respective folders first before that system will show up.
-
-### How do I hide unused/unwanted systems?
-
-You can delete the rom folders for the systems you don't want or you can move the rom folders you dont want into a folder you create called unused.
-
-### How do I change the order of the systems in EmulationStation?
-
-The systems will appear in EmulationStation in the same order as they appear in the file `es_systems.cfg`. The order can be changed by editing this file so, first of all before you make any edits exit emulationstation by pressing f4 or exiting from the start menu. copy `/etc/emulationstation/es_systems.cfg` to the `/home/pi/.emulationstation` folder.
-
-Now edit es_systems.cfg, moving systems, everything from `<system>...</system>`, to the order you are looking for. To keep things tidy, you can delete systems that you are not using.
-
-Bear in mind that, if you update any systems, this will be reflected in `/etc/emulationstation/es_systems.cfg` and you will need to manually update your copy in `/home/pi/.emulationstation`.
-
-### How do I add a new system to EmulationStation?
-
-It is possible to manually add a new system in EmulationStation but it is a process recommended for experienced users because, before you start, you should be comfortable with finding, creating, editing text files on your pi, using the command line, manually maintaining EmulationStation config files and possibly creating or modifying themes. It can be a lengthy and repetitive process so patience is a must. Having said this, this is a good opportunity to learn how to do all this and get an idea of how RetroPie works beneath the hood.
-
-If you are looking to create a favourites lists within a system, then you may wish to consider the [child-friendly version of EmulationStation](https://github.com/retropie/retropie-setup/wiki/Child-friendly-EmulationStation#favorites) which has this feature .
-
-You can find the tutorial to do this [HERE](https://github.com/RetroPie/RetroPie-Setup/wiki/Add-a-New-System-in-EmulationStation)
-
-### My emulator won't close through my gamepad!
-
-This sometimes happens. ES does not monitor input while an emulator is running. If you want to close your emulator, you will have to do it from within the emulator. RetroArch has a binding for this and should automatically be generated when you first configure your controller in emulationstation. default to exit is `select+start`, see [Here](https://github.com/retropie/retropie-setup/wiki/RetroArch-Configuration) for more info.
-
-### All I see is this weird white dot in the middle of the screen!
-
-This dot is the "fake" SDL window ES uses to get input. Actual rendering is done through OpenGL ES. If all you see is this dot, then odds are something went wrong initializing the OpenGL ES surface. Are you sure you're running at least the 192/64mb memory split?
-
-### ES doesn't detect my controller when started at boot!
-
-Your controller driver is likely being started after EmulationStation. An easy way around this is to add a "sleep" command in the EmulationStation start script in `/usr/bin/emulationstation`.  [More information here.](http://www.reddit.com/r/raspberry_pi/comments/16w9qn/emulationstation_and_a_logitech_dual_action/c816dz1)
-
-### How do I add another controller to navigate and control ES?
-
-Open the Main Menu by pressing ```Start``` on the original controller that you have already setup. Then navigate to Configure Input and press ```A``` to start. Now on the other controller press and hold down any button. This should bring up the option to setup this controller. Just follow the on-screen directions. When finished, navigate to the OK button on screen, then press the button that you set as ```A``` on your recently configured controller to exit.
-
-### I don't have enough buttons to finish the Configure Input screen?!
-
-Just hold down a button to skip each unused button until you get to the end of the configuration
-
-### I messed up on the initial prompt that appears when Emulation Station starts for the first time. My controls are completely messed up and out of order. Is there a way to redo this prompt?
-
-You need to delete the configurations you've made in `/home/pi/.emulationstation/es_input.cfg` but IMPORTANT: YOU NEED TO KEEP IN THE FOLLOWING LINES IF YOU WANT AUTOCONFIGURATIONS TO WORK:
+copy `es_systems.cfg` from `/etc/emulationstation` to `~/.emulationstation`
 
 ```
-  <inputAction type="onfinish">
-    <command>/opt/retropie/supplementary/emulationstation/scripts/inputconfiguration.sh</command>
-  </inputAction>
+cp /etc/emulationstation/es_systems.cfg ~/.emulationstation/es_systems.cfg
 ```
 
-If you lose the config you can re-install Emulation Station from Retropie-Setup. Note that you exit Emulation Station by pressing ```F4```. When you (re-)start Emulation Station, the configuration prompt will appear again.
+Note that anytime you add a new system from the RetroPie-Setup Script you will need to manually copy over the new system to the new location in order to keep parity.
 
-### Page-Up and Page-Down
-When configuring the inputs in EmulationStation, take into account that the Left Shoulder button will be used for Page-Up and the Right shoulder button will be used for Page-Down in the EmulationStation user interface. This in particular applies to using the keyboard with EmulationStation, you should map Left Shoulder and Right Shoulder to Page-Up and Page-Down respectively.
+#### Editing Themes
 
-# Alternative Frontends
-Because of the development hiatus, there has been some attention towards other front-ends.
-* Attract-Mode ([site](http://attractmode.org/), [forum thread](https://retropie.org.uk/forum/topic/93/attract-mode-with-retropie-alternative-to-emulationstation))
-* mehstation ([site](https://remy.io/mehstation))
+Custom themes should be in `~/.emulationstation/themes`
 
-# Emulation Station CEC support 
-* [es-cec-input](https://github.com/dillbyrne/es-cec-input)  Be sure to read the README
+if you want to make custom themes or edit an existing theme:
+
+First make a themes directory if it doesn't exist
+
+```
+mkdir ~/.emulationstation/themes
+```
+
+add your theme to the themes folder or if you are copying an existing theme to edit, we'll use carbon as an example:
+
+```
+cp -R /etc/emulationstation/themes/carbon ~/.emulationstation/themes/carbon_custom
+```
+
+#### Editing es_input.cfg (Controller Input)
+
+EmulationStation controller configurations are found in `~/.emulationstation/es_input.cfg`
+
+RetroPie uses custom generation scripts that will generate controller configurations for many emulators through the initial ES controller configuration, so if you remove or make any edits to this configuration you need to regenerate that hook 
+
+```
+Retropie Setup Script >> Manage Packages >> Manage Core Packages >> EmulationStation >> Configuration / Options >> Clear / Reset EmulationStation Input Configuration 
+```
+
+#### Editing gamelist.xml (Scraped data)
+
+If you use the built in ES Scraper your gamelist.xml and images folder will be in 
+
+- `~/.emulationstation/gamelists/[SYSTEM_NAME]/gamelist.xml`
+
+If you use Sselph's Scraper you can choose whether your scraped data goes in 
+
+- `[SYSTEM_PATH]/gamelist.xml` (the rom folder) or
+- `~/.emulationstation/gamelists/[SYSTEM_NAME]/gamelist.xml`
+
+## Development Status
+
+ES was originally developed by Aloshi (code) and Nils Bonenberger (UI) but they have since moved on to other projects. There is no longer any maintained upstream project so any modifications done to ES are on uofficial/partially maintained forks of the project. 
+
+RetroPie's fork of EmulationStation has made some improvements like video support, faster load times, and controller integration among others.  
+
+
+### Experimental ES Forks
+
+There are a few experimental forks of ES that are worth checking out if you enjoy customising your system USE AT YOUR OWN RISK!
+
+#### Child Friendly 
+
+A RetroPie user known as Zigurana created a child friendly version of ES that is great for parents looking to simplify their builds against accidental modifications from their young ones. It is also great for when friends come by or if your build is in a public place.
+
+It can be installed from the experimental menu of the setup script
+
+More information [HERE](Child-friendly-EmulationStation)
+
+#### Grid View 
+
+A RetroPie user known as Jacobfk20 created a fork of ES that incorporates a grid view, it also includes wifi integration, an on screen keyboard, and some system diagnostics.
+
+a basic install module can be found [HERE](https://gist.github.com/PokeEngineer/e319fbe347f2da23239e2eefbe93c5a8)
+
+More discussion on the forum [HERE](https://retropie.org.uk/forum/topic/3121/emulationstation-mod)
+
+### Alternative Frontends
+
+Because of the development hiatus, there has been some attention towards other front-ends. The following alternate frontends can be installed from experimental packages of the RetroPie Setup-Script but support is currently only preliminary.
+
+-  Attract-Mode ([site](http://attractmode.org/)) 
+-  mehstation ([site](https://remy.io/mehstation))
