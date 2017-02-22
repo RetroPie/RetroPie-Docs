@@ -37,10 +37,10 @@ a few more notes on cue sheets [HERE](https://github.com/libretro/beetle-saturn-
 
 ## BIOS
 
-The BIOS file needed is **saturn_bios.bin**
+The BIOS file needed for lr-yabause is **saturn_bios.bin** or for lr-beetle-saturn **sega_101.bin**
 
 Place your BIOS in
-```Place your Sega Saturn ROMs in 
+
 ```
 /home/pi/RetroPie/roms/saturn
 ```
