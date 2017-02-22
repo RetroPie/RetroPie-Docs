@@ -29,36 +29,43 @@ To add a new system to EmulationStation, you will need to create a new entry beg
 
 The simplest way of adding a new system in your custom `es_systems.cfg` file is to open it in a text editor, copy an existing system and replace the contents of each tag.
 
-####<em>\<name></em>
+**<name>**
+
 This is the short name used by ES internally as well as the text used in the EmulationStation UI unless replaced by an image or logo in the theme. It is advised to choose something short and descriptive, e.g. favourites, hacks. 
 
-####<em>\<fullname></em>
+**<fullname>**
+
 This is the long name used in menus. This tag is optional so it may be best to omit it unless you are not using a theme for the new section.
 
-####<em>\<path></em>
+**<path>**
+
 This is the folder where the roms in your new system will be located. This folder, e.g. `/home/pi/RetroPie/roms/favorites`, may need to be created if it does not already exist. Multiple paths are not currently permitted.
 
-####<em>\<extension> &amp; \<command></em>
+**<extension> and <command>**
+
 These define the list of extensions that EmulationStation will look for in the rom folder defined in `<path>` and the shell command executed when a game is selected. 
 
 Roms can be launched using shell scripts or the runcommand script. Both methods are involved so it is your choice how you wish to proceed. The entries for these tags are covered [below](https://github.com/RetroPie/RetroPie-Setup/wiki/Add-a-New-System-in-EmulationStation#step-31-launch-roms-with-the-runcommand-script) so check the steps required if you are unsure which is best for you.
 
-####<em>\<platform>
+**<platform>**
+
 This information is used for scraping. This tag is optional so it may be best to  omit it. If you intend to use multiple emulators, for a favourites section for instance, then you can use existing gamelists to manually create a new gamelist. If you are creating a section for mods or hacks, then it's unlikely you'll be able scrape metadata.
 
-####<em>\<theme></em>
+**<theme>**
+
 This is the theme EmulationStation loads from the current theme set. You can use an existing theme, e.g. `<theme>nes</theme>`, or you can create a new one. If you do the latter, then it may an idea to make it the same as the `<name>` tag.
 
 Here is an example entry for a section for rom hacks in a custom `es_systems.cfg` file that will run on a number of emulators, Atari 2600, NES, Megadrive, and SNES.
 
-	<system>
-		<name>hacks</name>
-		<path>~/RetroPie/roms/hacks</path>
-		<extension>.bin .gen .int .nes .rom .smc .BIN .GEN .INT .NES .ROM .SMC</extension>
-		<command>/opt/retropie/supplementary/runcommand/runcommand.sh 0 _SYS_ hacks %ROM%</command>
-		<theme>hacks</theme>
-	</system> 
-
+```
+<system>
+	<name>hacks</name>
+	<path>~/RetroPie/roms/hacks</path>
+	<extension>.bin .gen .int .nes .rom .smc .BIN .GEN .INT .NES .ROM .SMC</extension>
+	<command>/opt/retropie/supplementary/runcommand/runcommand.sh 0 _SYS_ hacks %ROM%</command>
+	<theme>hacks</theme>
+</system> 
+```
 Once you have completed your entry for the new system, then save your custom `es_system.cfg` file and place your roms in the folder specified in the `<path>` tag.
 
 **Tip** If you are creating a favourites section where you have roms in two folders, then, to save space, you can use symbolic links. For example, if you wish to have Contra available in the NES system and a new Favorites section, then you can create a symbolic link with the command:
