@@ -29,12 +29,10 @@ This means that a .cue file is required to start the game.
 A .cue file is basically a plain text file that tells the emulator where in the .bin file the (data and/or audio) track(s) are. This is often important in the case where multiple audio files are in the single .bin file. These are often called "mixed mode" discs. [Wikipedia .cue files](https://en.wikipedia.org/wiki/Cue_sheet_(computing))
   
 If you only have a .bin file and no .cue file, you can generate it:
-* Manually:
-http://www.shivaranjan.com/2007/01/03/how-to-create-cue-file-for-a-bin-file-in-5-steps/  
-* Individually:
-http://www.dslreports.com/r0/download/373724~1e45059000cfc371c157f544cc5aef07/MakeCue.zip
-* En masse or individually: https://github.com/thorst/CueMaker
-  
+-  [Manually](http://www.shivaranjan.com/2007/01/03/how-to-create-cue-file-for-a-bin-file-in-5-steps/)  
+-  [Individually](http://www.dslreports.com/r0/download/373724~1e45059000cfc371c157f544cc5aef07/MakeCue.zip)
+-  [En masse or individually](https://github.com/thorst/CueMaker)  
+
 ### Cue files
 You can also find cue files for many games here, obviously you will need to make sure the .bin filename is correct when you use it.  
 [Link to .cue files](http://s000.tinyupload.com/index.php?file_id=08258966889995234828)
