@@ -7,7 +7,7 @@ _The Sega Saturn is a 32 bit 5th generation home video game console released by 
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
 | [lr-Yabause](https://github.com/libretro/yabause) | saturn  | .bin .cue .iso .mdf | saturn_bios.bin | /opt/retropie/configs/saturn/retroarch.cfg |
-|[lr-beetle-saturn](https://github.com/libretro/beetle-saturn-libretro)| saturn | sega_101.bin | .bin .cue .iso .mdf | /opt/retropie/configs/saturn/retroarch.cfg
+|[lr-beetle-saturn](https://github.com/libretro/beetle-saturn-libretro)| saturn | .bin .cue .iso .mdf | sega_101.bin | /opt/retropie/configs/saturn/retroarch.cfg
 
 ## Emulators: [lr-Yabause](https://github.com/libretro/yabause), [lr-beetle-saturn](https://github.com/libretro/beetle-saturn-libretro)
 
