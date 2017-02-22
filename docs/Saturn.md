@@ -6,15 +6,29 @@ _The Sega Saturn is a 32 bit 5th generation home video game console released by 
 
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
-| [lr-Yabause](https://github.com/libretro/yabause) | saturn  | .bin .iso .mdf | saturn_bios.bin | /opt/retropie/configs/saturn/retroarch.cfg |
+| [lr-Yabause](https://github.com/libretro/yabause) | saturn  | .bin .cue .iso .mdf | saturn_bios.bin | /opt/retropie/configs/saturn/retroarch.cfg |
+|[lr-beetle-saturn](https://github.com/libretro/beetle-saturn-libretro)| saturn | .bin .cue .iso .mdf | /opt/retropie/configs/saturn/retroarch.cfg
 
-## Emulator: [lr-Yabause](https://github.com/libretro/yabause)
+## Emulators: [lr-Yabause](https://github.com/libretro/yabause), [lr-beetle-saturn](https://github.com/libretro/beetle-saturn-libretro)
 
-Yabause stands for: Yet Another Buggy And Uncomplete Sega Emulator. It stands by its name. Currently you need to install it from the setup script under experimental builds. Any Raspberry Pi model will achieve only 1-2 frames-per-second, rendering it unplayable on those systems.
+Yabause stands for: Yet Another Buggy And Uncomplete Sega Emulator. It stands by its name. Currently you need to install it from the setup script under experimental builds. Any Raspberry Pi model will achieve only 1-2 frames-per-second, rendering it unplayable on those systems. **Saturn is really only recommended for use on a PC and even then emulation is less than perfect.**
 
 ## ROMS
 
-Accepted File Extensions: **.bin .iso .mdf**
+Accepted File Extensions: **.cue .bin .iso .mdf**
+
+### Why don't my .bin or .iso files show up?
+
+RetroPie is configured to only show .cue files in EmulationStation so that you do not have two copies showing up of all your games.  
+
+A .cue file is basically a plain text file that tells the emulator where in the .bin file the (data and/or audio) track(s) are. This is often important in the case where multiple audio files are in the single .bin file. These are often called "mixed mode" discs. [Wikipedia .cue files](https://en.wikipedia.org/wiki/Cue_sheet_(computing))
+  
+If you only have a .bin file and no .cue file, you can generate it:
+-  [Manually](http://www.shivaranjan.com/2007/01/03/how-to-create-cue-file-for-a-bin-file-in-5-steps/)  
+-  [Individually](http://www.dslreports.com/r0/download/373724~1e45059000cfc371c157f544cc5aef07/MakeCue.zip)
+-  [En masse or individually](https://github.com/thorst/CueMaker)  
+
+a few more notes on cue sheets [HERE](https://github.com/libretro/beetle-saturn-libretro#loading-isos)
 
 Place your Sega Saturn ROMs in 
 ```
