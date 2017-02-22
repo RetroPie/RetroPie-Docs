@@ -117,6 +117,7 @@
 * [EmulationStation Themes](themes)
 * [Take and Scrape Your Own Screenshots](Take-and-Scrape-Your-Own-Screenshots)
 * [Create Your Own Theme](Creating-Your-Own-EmulationStation-Theme)
+* [Add a New System in Emulationstation](Add-a-New-System-in-EmulationStation)
 * [Configuration Editor](Configuration-Editor)
 * [RetroAchievements](RetroAchievements)
 * [Netplay](Netplay)
