@@ -7,7 +7,7 @@ _The Sega Saturn is a 32 bit 5th generation home video game console released by 
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
 | [lr-Yabause](https://github.com/libretro/yabause) | saturn  | .bin .cue .iso .mdf | saturn_bios.bin | /opt/retropie/configs/saturn/retroarch.cfg |
-|[lr-beetle-saturn](https://github.com/libretro/beetle-saturn-libretro)| saturn | .bin .cue .iso .mdf | /opt/retropie/configs/saturn/retroarch.cfg
+|[lr-beetle-saturn](https://github.com/libretro/beetle-saturn-libretro)| saturn | sega_101.bin | .bin .cue .iso .mdf | /opt/retropie/configs/saturn/retroarch.cfg
 
 ## Emulators: [lr-Yabause](https://github.com/libretro/yabause), [lr-beetle-saturn](https://github.com/libretro/beetle-saturn-libretro)
 
@@ -16,6 +16,11 @@ Yabause stands for: Yet Another Buggy And Uncomplete Sega Emulator. It stands by
 ## ROMS
 
 Accepted File Extensions: **.cue .bin .iso .mdf**
+
+Place your Sega Saturn ROMs in 
+```
+/home/pi/RetroPie/roms/saturn
+```
 
 ### Why don't my .bin or .iso files show up?
 
@@ -30,16 +35,14 @@ If you only have a .bin file and no .cue file, you can generate it:
 
 a few more notes on cue sheets [HERE](https://github.com/libretro/beetle-saturn-libretro#loading-isos)
 
-Place your Sega Saturn ROMs in 
-```
-/home/pi/RetroPie/roms/saturn
-```
-
 ## BIOS
 
 The BIOS file needed is **saturn_bios.bin**
 
 Place your BIOS in
+```Place your Sega Saturn ROMs in 
+```
+/home/pi/RetroPie/roms/saturn
 ```
 /home/pi/RetroPie/BIOS
 ```
