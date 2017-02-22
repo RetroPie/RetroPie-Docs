@@ -15,7 +15,7 @@ EmulationStation is not an emulator, rather it is a polished game launcher that 
 
 ES uses xml files for its database and caches them on loading and exit, so **any edits to the configuration files will need to be changed when ES is closed.**
 
-Because of the way the RetroPie-Setup script works custom configurations will need to be copied and edited in specific places.
+Because of the way the RetroPie-Setup script works custom configurations will need to be copied and edited in specific places, otherwise your custom edits would be overwritten anytime a system was updated from the RetroPie setup script.
 
 Note that any configs in `~/.emulationstation/` are symlinked to `/opt/retropie/configs/all/emulationstation/` which means both paths will work.
 
