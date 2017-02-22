@@ -18,6 +18,7 @@ Yabause stands for: Yet Another Buggy And Uncomplete Sega Emulator. It stands by
 Accepted File Extensions: **.cue .bin .iso .mdf**
 
 Place your Sega Saturn ROMs in 
+
 ```
 /home/pi/RetroPie/roms/saturn
 ```
@@ -41,8 +42,6 @@ The BIOS file needed for lr-yabause is **saturn_bios.bin** or for lr-beetle-satu
 
 Place your BIOS in
 
-```
-/home/pi/RetroPie/roms/saturn
 ```
 /home/pi/RetroPie/BIOS
 ```
