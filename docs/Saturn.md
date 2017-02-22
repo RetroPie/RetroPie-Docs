@@ -48,7 +48,7 @@ Place your BIOS in
 
 ## Controls
 
-lr-yabause utilises Retroarch configurations
+lr-yabause and lr-beetle-saturn utilise Retroarch configurations
 
 Add custom retroarch controls to the retroarch.cfg file in
 ```shell
