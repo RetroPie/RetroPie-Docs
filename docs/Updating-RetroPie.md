@@ -98,24 +98,24 @@ if you don't want to create a sd image you can just back up your bios, roms, and
 ## Making a Backup (OS X)
 
 Open a terminal window and type `diskutil list`. A list of all hard disks and partitions shows up. Find a partition with the name `boot` - it should say (internal,physical) beside the /dev/disk#. Example:
-    user@host$ diskutil list
-    /dev/disk0 (internal, physical):
-       #:                       TYPE NAME                    SIZE       IDENTIFIER
-       0:      GUID_partition_scheme                        *500.3 GB   disk0
-       1:                        EFI EFI                     209.7 MB   disk0s1
-       2:          Apple_CoreStorage Mac HD                  499.4 GB   disk0s2
-       3:                 Apple_Boot Recovery HD             650.0 MB   disk0s3
-    /dev/disk1 (internal, virtual):
-       #:                       TYPE NAME                    SIZE       IDENTIFIER
-       0:                  Apple_HFS Mac HD                 +499.0 GB   disk1
-                                     Logical Volume on disk0s2
-                                     3BAC0F9E-19F8-4AAB-8752-6514B573B497
-                                     Unencrypted
-    /dev/disk2 (internal, physical):
-       #:                       TYPE NAME                    SIZE       IDENTIFIER
-       0:     FDisk_partition_scheme                        *15.9 GB    disk2
-       1:             Windows_FAT_16 boot                    59.8 MB    disk2s1
-       2:                      Linux                         15.9 GB    disk2s2
-    user@host$
+`    user@host$ diskutil list`
+    `/dev/disk0 (internal, physical):`
+       `#:                       TYPE NAME                    SIZE       IDENTIFIER`
+       `0:      GUID_partition_scheme                        *500.3 GB   disk0`
+       `1:                        EFI EFI                     209.7 MB   disk0s1`
+       `2:          Apple_CoreStorage Mac HD                  499.4 GB   disk0s2`
+       `3:                 Apple_Boot Recovery HD             650.0 MB   disk0s3`
+    `/dev/disk1 (internal, virtual):`
+       `#:                       TYPE NAME                    SIZE       IDENTIFIER`
+       `0:                  Apple_HFS Mac HD                 +499.0 GB   disk1`
+                                     `Logical Volume on disk0s2`
+                                     `3BAC0F9E-19F8-4AAB-8752-6514B573B497`
+                                     `Unencrypted`
+    `/dev/disk2 (internal, physical):`
+       `#:                       TYPE NAME                    SIZE       IDENTIFIER`
+       `0:     FDisk_partition_scheme                        *15.9 GB    disk2`
+       `1:             Windows_FAT_16 boot                    59.8 MB    disk2s1`
+       `2:                      Linux                         15.9 GB    disk2s2`
+    `user@host$`
 In this case /dev/disk2 partition 1 is named `boot`. That disk# is the retropie sd card - in the example it is /dev/disk2. Confirm that the size (on the right) matches the size of your SD card.
 Type `cd ~ ; sudo dd if=/dev/disk2 of=backup.img bs=1m` to write a disk image to your home directory. Note that you need to use the entire disk (/dev/disk2) and not just a partition (/dev/disk2s0).
