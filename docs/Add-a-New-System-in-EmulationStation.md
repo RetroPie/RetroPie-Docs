@@ -29,29 +29,29 @@ To add a new system to EmulationStation, you will need to create a new entry beg
 
 The simplest way of adding a new system in your custom `es_systems.cfg` file is to open it in a text editor, copy an existing system and replace the contents of each tag.
 
-**<name>**
+`<name>`
 
 This is the short name used by ES internally as well as the text used in the EmulationStation UI unless replaced by an image or logo in the theme. It is advised to choose something short and descriptive, e.g. favourites, hacks. 
 
-**<fullname>**
+`<fullname>`
 
 This is the long name used in menus. This tag is optional so it may be best to omit it unless you are not using a theme for the new section.
 
-**<path>**
+`<path>`
 
 This is the folder where the roms in your new system will be located. This folder, e.g. `/home/pi/RetroPie/roms/favorites`, may need to be created if it does not already exist. Multiple paths are not currently permitted.
 
-**<extension> and <command>**
+`<extension> and <command>`
 
 These define the list of extensions that EmulationStation will look for in the rom folder defined in `<path>` and the shell command executed when a game is selected. 
 
 Roms can be launched using shell scripts or the runcommand script. Both methods are involved so it is your choice how you wish to proceed. The entries for these tags are covered [below](https://github.com/RetroPie/RetroPie-Setup/wiki/Add-a-New-System-in-EmulationStation#step-31-launch-roms-with-the-runcommand-script) so check the steps required if you are unsure which is best for you.
 
-**<platform>**
+`<platform>`
 
 This information is used for scraping. This tag is optional so it may be best to  omit it. If you intend to use multiple emulators, for a favourites section for instance, then you can use existing gamelists to manually create a new gamelist. If you are creating a section for mods or hacks, then it's unlikely you'll be able scrape metadata.
 
-**<theme>**
+`<theme>`
 
 This is the theme EmulationStation loads from the current theme set. You can use an existing theme, e.g. `<theme>nes</theme>`, or you can create a new one. If you do the latter, then it may an idea to make it the same as the `<name>` tag.
 
