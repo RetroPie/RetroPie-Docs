@@ -11,11 +11,19 @@ EmulationStation is not an emulator, rather it is a polished game launcher that 
 - Custom themes
 - Scraper for box art and game metadata
 
-### Configuration Files
+## Editing ES Configs
+
+ES uses xml files for its database and caches them on loading and exit, so **any edits to the configuration files will need to be changed when ES is closed.**
+
+Because of the way the RetroPie-Setup script works custom configurations will need to be copied and edited in specific places.
+
+Note that any configs in `~/.emulationstation/` are symlinked to `/opt/retropie/configs/all/emulationstation/` which means both paths will work.
+
+## Configuration Files
 
 There are different configuration files for the different aspects of EmulationStation:
 
-#### es_systems.cfg
+### Systems
 
 `es_systems.cfg` defines the systems that show up in ES. The RetroPie-Setup script will automatically generate this config file alphabetically when you install any new systems. ES will check two places for an es_systems.cfg file, in the following order, stopping after it finds one that works:
 
@@ -41,7 +49,59 @@ Example config:
 
 More information [HERE](https://github.com/Aloshi/EmulationStation/blob/master/README.md#writing-an-es_systemscfg)
 
-#### Scraper (gamelist.xml)
+#### es_systems.cfg edits
+
+Custom es_systems.cfg should be in `~/.emulationstation/es_systems.cfg`
+
+copy `es_systems.cfg` from `/etc/emulationstation` to `~/.emulationstation`
+
+```
+cp /etc/emulationstation/es_systems.cfg ~/.emulationstation/es_systems.cfg
+```
+
+Note that anytime you add a new system from the RetroPie-Setup Script you will need to manually copy over the new system to the new location in order to keep parity.
+
+#### platforms.cfg edits
+
+Retropie uses a file called `platforms.cfg` to generate the system configurations for `es_systems.cfg` you can create a custom platforms.cfg to override the default system for regional variants such as the Sega Genesis instead of Megadrive, Turbografx instead of PC-Engine, and the Magnavox Odyssey instead of the Videopac.
+
+Create a `platforms.cfg` in 
+
+```
+/opt/retropie/configs/all/platforms.cfg
+```
+
+name, extensions, platform (used by es for scraping), and the theme can be overriden, see [HERE](https://github.com/RetroPie/RetroPie-Setup/blob/master/platforms.cfg) for the default platforms.cfg
+
+The following is an example of a custom platforms.cfg
+
+```
+megadrive_theme="genesis"
+megadrive_platform="genesis"
+
+pcengine_theme="tg16"
+pcengine_platform="tg16"
+
+videopac_theme="odyssey2"
+videopac_platform="odyssey2"
+```
+
+**Note that with any custom platforms.cfg you create you'll need to update all systems from the setup script to generate a new es_systems.cfg with your changes.**
+
+### Controller Configs
+
+After configuring your controller in ES, your controller configurations will be saved to 
+```
+~/.emulationstation/es_input.cfg
+```
+
+#### es_input.cfg edits
+
+RetroPie uses custom generation scripts that will generate controller configurations for many emulators through the initial ES controller configuration, so if you remove or make any edits to this configuration you need to regenerate that hook 
+
+Retropie Setup Script >> Manage Packages >> Manage Core Packages >> EmulationStation >> Configuration / Options >> Clear / Reset EmulationStation Input Configuration 
+
+### Scraper
 
 There are two scrapers for RetroPie: the built in EmulationStation scraper and Sselphs scraper. More information [HERE](Scraper)
 
@@ -67,7 +127,18 @@ An example gamelist.xml:
 
 See more information [HERE](https://github.com/Aloshi/EmulationStation#gamelistxml)
 
-#### Themes
+#### gamelist.xml edits
+
+If you use the built in ES Scraper your gamelist.xml and images folder will be in 
+
+- `~/.emulationstation/gamelists/[SYSTEM_NAME]/gamelist.xml`
+
+If you use Sselph's Scraper you can choose whether your scraped data goes in 
+
+- `[SYSTEM_PATH]/gamelist.xml` (the rom folder) or
+- `~/.emulationstation/gamelists/[SYSTEM_NAME]/gamelist.xml`
+
+### Themes
 
 The RetroPie community has developed many themes for ES. See Themes page [HERE](themes)
 
@@ -82,41 +153,7 @@ See more information [HERE](https://github.com/Aloshi/EmulationStation#themes)
 
 See here for a tutorial on [Creating Your Own EmulationStation Theme](Creating-Your-Own-EmulationStation-Theme)
 
-#### Command Line Arguments
-
-EmulationStation has a few command line arguments that could be helpful to you for various customisation.  Let's say you wanted to setup a kiosk but did not want to give access to the builtin scraper function or you didn't want the end user to be able to exit EmulationStation, you can simply edit `/opt/retropie/configs/all/autostart.sh` and append the corresponding command line argument.
-
-For example, to disable the Exit option from inside the Quit menu, edit `/opt/retropie/configs/all/autostart.sh` with
-```
-emulationstation --no-exit #auto
-```
-
-To see a complete list of the supported command line arguments
-```
-emulationstation --help
-```
-
-### Editing ES Configs
-
-ES uses xml files for its database and caches them on loading and exit, so any edits to the configuration files will need to be changed when ES is closed.
-
-Because of the way the RetroPie-Setup script works custom configurations will need to be copied and edited in specific places.
-
-Note that any configs in `~/.emulationstation/` are symlinked to `/opt/retropie/configs/all/emulationstation/` which means both paths will work.
-
-#### Editing es_systems.cfg (Systems)
-
-Custom es_systems.cfg should be in `~/.emulationstation/es_systems.cfg`
-
-copy `es_systems.cfg` from `/etc/emulationstation` to `~/.emulationstation`
-
-```
-cp /etc/emulationstation/es_systems.cfg ~/.emulationstation/es_systems.cfg
-```
-
-Note that anytime you add a new system from the RetroPie-Setup Script you will need to manually copy over the new system to the new location in order to keep parity.
-
-#### Editing Themes
+#### Theme edits
 
 Custom themes should be in `~/.emulationstation/themes`
 
@@ -134,26 +171,19 @@ add your theme to the themes folder or if you are copying an existing theme to e
 cp -R /etc/emulationstation/themes/carbon ~/.emulationstation/themes/carbon_custom
 ```
 
-#### Editing es_input.cfg (Controller Input)
+### Command Line Arguments
 
-EmulationStation controller configurations are found in `~/.emulationstation/es_input.cfg`
+EmulationStation has a few command line arguments that could be helpful to you for various customisation.  Let's say you wanted to setup a kiosk but did not want to give access to the builtin scraper function or you didn't want the end user to be able to exit EmulationStation, you can simply edit `/opt/retropie/configs/all/autostart.sh` and append the corresponding command line argument.
 
-RetroPie uses custom generation scripts that will generate controller configurations for many emulators through the initial ES controller configuration, so if you remove or make any edits to this configuration you need to regenerate that hook 
-
+For example, to disable the Exit option from inside the Quit menu, edit `/opt/retropie/configs/all/autostart.sh` with
 ```
-Retropie Setup Script >> Manage Packages >> Manage Core Packages >> EmulationStation >> Configuration / Options >> Clear / Reset EmulationStation Input Configuration 
+emulationstation --no-exit #auto
 ```
 
-#### Editing gamelist.xml (Scraped data)
-
-If you use the built in ES Scraper your gamelist.xml and images folder will be in 
-
-- `~/.emulationstation/gamelists/[SYSTEM_NAME]/gamelist.xml`
-
-If you use Sselph's Scraper you can choose whether your scraped data goes in 
-
-- `[SYSTEM_PATH]/gamelist.xml` (the rom folder) or
-- `~/.emulationstation/gamelists/[SYSTEM_NAME]/gamelist.xml`
+To see a complete list of the supported command line arguments
+```
+emulationstation --help
+```
 
 ## Development Status
 
