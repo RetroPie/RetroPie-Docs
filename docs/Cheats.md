@@ -34,7 +34,7 @@ Your cheats should now be enabled
 
 ### Create Cheat Files
 
-You can create .cht files in /opt/retropie/configs/all/retroarch/cheats/<system>/<rom_name>.cht
+You can create .cht files in `/opt/retropie/configs/all/retroarch/cheats/<system>/<rom_name>.cht`
 
 The following is a reference chart for the types of cheat codes for each system:
 
