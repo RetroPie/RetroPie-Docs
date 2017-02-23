@@ -2,7 +2,7 @@ If you're like me, there are some games I could just never win as a kid. This gu
 
 ## Download Cheats
 
-As a preface cheats only work through libretro/retroarch so take not of the emulators you are using.
+As a preface cheats only work through libretro/retroarch so take note of the emulators you are using.
 
 You first need to open the RGUI. There are two ways of accessing the RGUI:
 
