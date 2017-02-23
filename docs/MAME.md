@@ -21,6 +21,7 @@ This page is a resource for additional details on RetroPie's MAME emulators incl
 | [lr-mame2010](#lr-mame2010-mame-2010) | arcade **or** mame-libretro | MAME 0.139 | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/mame-libretro/retroarch.cfg |
 | [AdvanceMAME 0.94](#advancemame-0.94) | arcade **or** mame-advmame | MAME 0.94 | /opt/retropie/configs/mame-advmame/advmame-0.94.0.rc |
 | [AdvanceMAME 1.4](#advancemame-1.4) | arcade **or** mame-advmame | MAME 0.106 | /opt/retropie/configs/mame-advmame/advmame-1.4.rc |
+| [AdvanceMAME 3.3](#advancemame-3.3) | arcade **or** mame-advmame | MAME 0.106 | /opt/retropie/configs/mame-advmame/advmame.rc |
 
 ## Arcade ROM paths
 
@@ -201,6 +202,34 @@ Config Dir: /opt/retropie/configs/mame-advmame
 **AdvanceMAME 1.4 DAT File**: [advmame12-106.7z](https://drive.google.com/file/d/0B2TMeZ6iEFvHMEZnb1RxQWNmdHM/view?usp=sharing)
 
 **[AdvanceMAME 1.4 Compatibility List](https://docs.google.com/spreadsheets/d/1RapyxChe2BMOfbX-FsCup9SXGxvS1WmXAofwaTJtmxc/edit?usp=sharing)** feel free to contribute to the list.
+
+**Controls**
+
+While in a game press Tab to open the menu to set up controls. advmame tab menu configuration is stored in:
+```shell 
+/opt/retropie/configs/advmame/cfg/default.cfg
+```
+Other files in this cfg directory are ROM specific configs.
+
+Note: Should your input configuration or other aspect of the configuration need resetting to defaults, remove the default.cfg or ROM specific .cfg file, and it will be re-created with default values next time you start AdvanceMAME or modify the ROM configuration.
+
+### AdvanceMAME 3.3
+[Visit the AdvanceMAME homepage on sourceforge](http://sourceforge.net/projects/advancemame/)
+```shell
+Roms Dir: /home/pi/RetroPie/roms/mame-advmame
+Binary Dir: /opt/retropie/emulators/advmame/bin
+Config Dir: /opt/retropie/configs/mame-advmame
+```
+**MAME Version**: MAME 0.106 (May 2006)
+
+**Active Sets: 6166**
+* BIOS: 26
+* CHDs: 86
+* Samples: 64 (3 more samples are not in circulation)
+
+**AdvanceMAME 3.3 DAT File**: To be added
+
+**AdvanceMAME 3.3 Compatibility List**:To be added
 
 **Controls**
 
