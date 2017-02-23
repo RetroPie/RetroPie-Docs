@@ -116,24 +116,48 @@ iface wlan0 inet dhcp
 
 ### Static IP
 
-```shell
-auto lo
+The following only applies to Raspbian Jessie
 
+You can use the default `/etc/network/interfaces`
+```shell
+# interfaces(5) file used by ifup(8) and ifdown(8)
+
+# Please note that this file is written to be used with dhcpcd
+# For static IP, consult /etc/dhcpcd.conf and 'man dhcpcd.conf'
+
+# Include files from /etc/network/interfaces.d:
+source-directory /etc/network/interfaces.d
+
+auto lo
 iface lo inet loopback
-iface eth0 inet dhcp
+
+iface eth0 inet manual
 
 allow-hotplug wlan0
-auto wlan0
+iface wlan0 inet manual
+    wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
 
-iface wlan0 inet static 
-   wpa-ssid "NETWORK_NAME" #(set these lines for their respective encryption type- wpa, wep, etc.)
-   wpa-psk "NETWORK_PASSWORD"
-address 192.168.0.110 #(This is the IP you want your raspberry pi to have)
-netmask 255.255.255.0 #(This is almost always the same)
-gateway 192.168.0.1 #(almost always the same as well. you can verify with netstat -nr)
+allow-hotplug wlan1
+iface wlan1 inet manual
+    wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
+```
+Then you'll need to edit `/etc/dhcpcd.conf` and add at the top modifying it for your own router and IP address:
+
+```
+interface wlan0
+ static ip_address=192.168.0.120/24
+ static routers=192.168.0.1
+ static domain_name_servers=8.8.8.8
+```
+If you want a static IP with ethernet then change it to:
+```
+interface eth0
+ static ip_address=192.168.0.120/24
+ static routers=192.168.0.1
+ static domain_name_servers=8.8.8.8
 ```
 
-`sudo reboot`
+`sudo reboot` for changes to take effect.
 
 on reboot (if configured correctly) your wifi will be working.
 
