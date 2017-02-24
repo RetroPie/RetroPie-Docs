@@ -18,6 +18,7 @@ _The RetroPie Setup Script automatically installs the Quake 1 shareware game dat
 
 * [libretro-tyrquake](https://github.com/libretro/tyrquake) (recommended)
 * [tyrquake](https://github.com/RetroPie/tyrquake)
+* [Darkplaces Quake](https://github.com/autonomous1/darkplacesrpi)
 
 ## Controls
 
