@@ -7,7 +7,7 @@ See Also: [FinalBurn-Alpha](FinalBurn-Alpha), [Neo Geo](Neo-Geo)
 
 ***
 
-There are a variety of arcade emulator versions available in RetroPie. There are significant differences in performance, compatibility, and configuration between them. If you're getting started with an arcade emulation project, begin by reading [Managing Arcade ROMs](https://github.com/RetroPie/RetroPie-Setup/wiki/Managing-ROMs).
+There are a variety of arcade emulator versions available in RetroPie. There are significant differences in performance, compatibility, and configuration between them. If you're getting started with an arcade emulation project, begin by reading the [Arcade](Arcade) page.
 
 This page is a resource for additional details on RetroPie's MAME emulators including configuration paths, controls, and the ROM sets which each emulator requires.
 
@@ -86,7 +86,7 @@ Config Dir: /opt/retropie/configs/mame-mame4all/retroarch.cfg
 
 **Controls**
 
-lr-imame4all utilises [RetroArch control configuration](https://github.com/petrockblog/RetroPie-Setup/wiki/RetroArch-Configuration). Add custom retroarch controls to the retroarch.cfg file in:
+lr-imame4all utilises [RetroArch control configuration](RetroArch-Configuration). Add custom retroarch controls to the retroarch.cfg file in:
 ```shell
 /opt/retropie/configs/mame-mame4all/retroarch.cfg
 ```
