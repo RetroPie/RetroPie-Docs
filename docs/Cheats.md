@@ -94,6 +94,6 @@ cheat1_code = "800D4A01+0063"
 cheat1_enable = "true"
 ```
 
-### Mame Cheats
+#### Mame Cheats
 
 Mame has it's own configurations for cheats. You can see a guide [HERE](lr-mame2003#cheats)
