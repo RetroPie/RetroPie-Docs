@@ -14,7 +14,7 @@ Current software ported to RetroPie:
 * [KODI](KODI)
 * [Minecraft Pi Edition](Minecraft) (EXPERIMENTAL)
 * [OpenBOR](OpenBOR) [(OpenBOR)](https://github.com/rofl0r/openbor.git) (EXPERIMENTAL)
-* [OpenTTD](OpenTTD) (EXPERIMENTAL)
+* [OpenTTD](OpenTTD)
 * [OpenTyrian](OpenTyrian) [(OpenTyrian)](https://bitbucket.org/opentyrian/opentyrian/wiki/Home)
 * [OutRun Engine](Cannonball) [(Cannonball)](https://github.com/djyt/cannonball/wiki/Cannonball-Manual)
 * [Quake Series](Quake) [(lr-tyrquake)](https://github.com/libretro/tyrquake), [(Tyrquake)](https://github.com/RetroPie/tyrquake), [(Darkplaces Quake)](https://github.com/autonomous1/darkplacesrpi), [(ioQuake3)](https://github.com/raspberrypi/quake3)
