@@ -48,6 +48,6 @@ P0 Booster Top Trigger: 4
 P0 Booster Handle Grip: 5
 
 Configuration Menu: TAB
+```
 
 Press Tab to access configuration menu- choose input settings and under the tab Emul. Events you can create custom controller mappings to work for your individual controllers
-```
