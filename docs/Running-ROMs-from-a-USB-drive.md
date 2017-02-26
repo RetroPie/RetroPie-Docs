@@ -123,10 +123,3 @@ This must be a full restart, not just emulationstation. When it boots up you sho
 
 ### Transfer ROMs
 Now transfer ROMs either directly to the USB drive, or via any of the usual methods (aside from using the automatic USB copy, obviously!). Now that the USB drive is mounted directly to `home/pi/RetroPie`, every time this directory is accessed, you're actually accessing the USB drive.
-
-### Edit command launcher for ports
-You may start seeing permission denied errors when launching a .sh file, especially for FAT formatted drives/keys. In that case you need to prefix the command with bash.
-
-Notably to get the 'Ports' launchers working:
- - edit es_systems.cfg with ```sudo nano /etc/emulationstation/es_systems.cfg``` and search for the PORTS Section
- - Find the < command > section and simply add bash so it looks ```<command>bash %ROM</command>```
