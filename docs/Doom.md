@@ -27,7 +27,7 @@ Create a shell script to launch your WAD. For example, for The Plutonia Exprimen
 nano /home/pi/RetroPie/roms/ports/The\ Plutonia\ Experiment.sh
 ```
 
-Add the following to it's contents.
+The nano text editor will open, where you will now add the following to the text edit field.
 
 ```
 #!/bin/bash
@@ -35,9 +35,9 @@ Add the following to it's contents.
 "
 ```
 
-press 'ctrl+o' to save and 'enter' to confirm.
+press 'ctrl+o' to save, 'enter' to confirm and 'ctrl+x' to exit out of the nano text editor.
 
-Setting the proper file permissions for the script with:
+Set the proper file permissions for the script with:
 
 ```
 chmod 0755 "/home/pi/RetroPie/roms/ports/The\ Plutonia\ Experiment.sh"
@@ -72,15 +72,15 @@ Create a shell script named 'Batman Doom.sh' that will launch the custom WAD.
 nano /home/pi/RetroPie/roms/ports/Batman\ Doom.sh
 ```
 
-Add the following to it's contents. It's the same as Doom 2 script but it points to the Doom 2 IWAD in the batman folder instead.
+The nano text editor will open, where you will now add the following to the text edit field. It's the same as Doom 2 script but it points to the Doom 2 IWAD in the batman folder instead.
 
 ```shell
 #!/bin/bash
 /opt/retropie/supplementary/runcommand/runcommand.sh 0 "/opt/retropie/emulators/retroarch/bin/retroarch -L /opt/retropie/libretrocores/lr-prboom/prboom_libretro.so --config /opt/retropie/configs/ports/doom/retroarch.cfg /home/pi/RetroPie/roms/doom/batman/doom2.wad" "lr-prboom"
 ```
-press 'ctrl+o' to save and 'enter' to confirm.
+press 'ctrl+o' to save, 'enter' to confirm and 'ctrl+x' to exit out of the nano text editor.
 
-Setting the proper file permissions for the script with:
+Set the proper file permissions for the script with:
 
 ```
 chmod 0755 "/home/pi/RetroPie/roms/ports/Batman\ Doom.sh"
@@ -113,16 +113,16 @@ To do this, type:
 nano /home/pi/RetroPie/roms/ports/Darkest\ Hour.sh
 ```
 
-Add the following to it's contents.
+The nano text editor will open, where you will now add the following to the text edit field.
 
 ```shell
 #!/bin/bash
 "/opt/retropie/supplementary/runcommand/runcommand.sh" 0 _PORT_ darkesthour
 ```
 
-press 'ctrl+o' to save and 'enter' to confirm.
+press 'ctrl+o' to save, 'enter' to confirm and 'ctrl+x' to exit out of the nano text editor.
 
-Setting the proper file permissions for the script with:
+Set the proper file permissions for the script with:
 
 ```
 chmod 0755 "/home/pi/RetroPie/roms/ports/Darkest\ Hour.sh"
@@ -140,14 +140,14 @@ Once this is complete you will want to create a 'emulators.cfg' file for this ne
 nano /opt/retropie/configs/ports/darkesthour/emulators.cfg
 ```
 
-Add the following to it's contents.
+The nano text editor will open, where you will now add the following to the text edit field.
 
 ```
 zdoom="/opt/retropie/ports/zdoom/zdoom -iwad /home/pi/RetroPie/roms/ports/doom/doom2.wad -file /home/pi/RetroPie/roms/ports/darkesthour/DarkHour.wad"`
 default="zdoom"
 ```
 
-press 'ctrl+o' to save and 'enter' to confirm.
+press 'ctrl+o' to save, 'enter' to confirm and 'ctrl+x' to exit out of the nano text editor.
 
 You'll notice that in the above example that ZDoom is making use of the 'Doom II' wad as a base for the 'Darkest Hour' modification. This is common in most cases. However, some mods will need to make use of the 'Ultimate Doom' wad file entitled `doom.wad` instead. Both `doom.wad` and `doom2.wad` should be installed to `/home/pi/RetroPie/roms/ports/doom/` and the above example should be set accordingly.
 
