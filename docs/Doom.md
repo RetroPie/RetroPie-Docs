@@ -113,7 +113,7 @@ Next you'll want to create a new script that we will use to launch The Darkest H
 To do this, type:
 
 ```
-nano /home/pi/RetroPie/roms/ports/The \Darkest\ Hour.sh
+nano /home/pi/RetroPie/roms/ports/The\ Darkest\ Hour.sh
 ```
 
 The nano text editor will open, where you will now add the following to the text edit field.
