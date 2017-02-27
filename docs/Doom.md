@@ -90,6 +90,8 @@ Repeat for each mod (PWAD), creating a new folder for each one and a copy of the
 
 ### How to Launch Doom IWADs and Mods (PWADs) from Emulationstation using ZDOOM.
 
+#### To Launch Doom Mods (PWADS)
+
 To begin, you'll want to use the RetroPie-Setup to install ZDOOM from Optional Packages if you haven't already done so. Once installed, we will employ [Rex Claussen's, The Darkest Hour](http://doomnexus.drdteam.org/DH_Pix.html) as an example that can be used for any mod.
 
 Go ahead and [Download The Darkest Hour](ftp://ftp.fu-berlin.de/pc/msdos/games/idgames/levels/doom2/Ports/d-f/darkhour.zip). Next you will either want to SSH into your Pi, or drop out of EmulationStation using F4 on your keyboard. 
