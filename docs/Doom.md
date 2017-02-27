@@ -43,6 +43,8 @@ Set the proper file permissions for the script with:
 chmod 0755 "/home/pi/RetroPie/roms/ports/The\ Plutonia\ Experiment.sh"
 ```
 
+Set the default emulator to 'lr-prboom' at launch in the runcommand menu.
+
 #### To Launch Doom Mods (PWADS)
 
 In the doom rom folder, you will need prboom.wad and whichever Doom IWAD is required for the particular mod (`doom.wad` and/or `doom2.wad`).
@@ -90,9 +92,13 @@ Repeat for each mod (PWAD), creating a new folder for each one and a copy of the
 
 ### How to Launch Doom IWADs and Mods (PWADs) from Emulationstation using ZDOOM.
 
+#### To Launch Doom, Ultimate Doom, Doom 2, TNT, Plutonia, Final Doom (IWADS)
+
+Use the same method for IWADS detailed above for lr-prboom, only set the default emulator to 'zdoom' at launch in the runcommand menu.
+
 #### To Launch Doom Mods (PWADS)
 
-To begin, you'll want to use the RetroPie-Setup to install ZDOOM from Optional Packages if you haven't already done so. Once installed, we will employ [Rex Claussen's, The Darkest Hour](http://doomnexus.drdteam.org/DH_Pix.html) as an example that can be used for any mod.
+Here, we'll use [Rex Claussen's, The Darkest Hour](http://doomnexus.drdteam.org/DH_Pix.html) as an example that can be used for any mod.
 
 Go ahead and [Download The Darkest Hour](ftp://ftp.fu-berlin.de/pc/msdos/games/idgames/levels/doom2/Ports/d-f/darkhour.zip). Next you will either want to SSH into your Pi, or drop out of EmulationStation using F4 on your keyboard. 
 At the command line, type the following to create a directory for the `DarkHour.wad` file from the 'Darkest Hour' download.
@@ -141,7 +147,7 @@ nano /opt/retropie/configs/ports/darkesthour/emulators.cfg
 The nano text editor will open, where you will now add the following to the text edit field.
 
 ```
-zdoom = "/opt/retropie/ports/zdoom/zdoom -iwad /home/pi/RetroPie/roms/ports/doom/doom2.wad -file /home/pi/RetroPie/roms/ports/darkesthour/DarkHour.wad"`
+zdoom = "/opt/retropie/ports/zdoom/zdoom +set fullscreen 1 /home/pi/RetroPie/roms/ports/doom/doom2.wad -file /home/pi/RetroPie/roms/ports/darkesthour/DarkHour.wad"`
 default="zdoom"
 ```
 
