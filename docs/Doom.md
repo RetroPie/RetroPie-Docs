@@ -40,7 +40,7 @@ press 'ctrl+o' to save and 'enter' to confirm.
 Make the script executable with:
 
 ```
-chmod +x "/home/pi/RetroPie/roms/ports/The\ Plutonia\ Experiment.sh"
+chmod 0755 "/home/pi/RetroPie/roms/ports/The\ Plutonia\ Experiment.sh"
 ```
 
 #### To Launch Doom Mods (PWADS)
@@ -83,7 +83,7 @@ press 'ctrl+o' to save and 'enter' to confirm.
 Make the script executable with:
 
 ```
-chmod +x "/home/pi/RetroPie/roms/ports/Batman\ Doom.sh"
+chmod 0755 "/home/pi/RetroPie/roms/ports/Batman\ Doom.sh"
 ```
 
 Repeat for each mod (PWAD), creating a new folder for each one and a copy of the script above replacing the folder name as required.
@@ -125,7 +125,7 @@ press 'ctrl+o' to save and 'enter' to confirm.
 Make the script executable with:
 
 ```
-chmod +x "/home/pi/RetroPie/roms/ports/Darkest\ Hour.sh"
+chmod 0755 "/home/pi/RetroPie/roms/ports/Darkest\ Hour.sh"
 ```
 
 Now we want to create a config folder by typing the following:
@@ -219,7 +219,7 @@ If you would rather use [ZDoom](https://zdoom.org/News) use this with the correc
 
 After all the scripts have been made, you will need to set them to be executable.
 
-`chmod +x /home/pi/RetroPie/roms/ports/Freedoom\ Phase\ 1.sh /home/pi/RetroPie/roms/ports/Freedoom\ Phase\ 2.sh /home/pi/RetroPie/roms/ports/FreeDM.sh`
+`chmod 0755 /home/pi/RetroPie/roms/ports/Freedoom\ Phase\ 1.sh /home/pi/RetroPie/roms/ports/Freedoom\ Phase\ 2.sh /home/pi/RetroPie/roms/ports/FreeDM.sh`
 
 Last step is to reboot EmulationStation and navigate to the Ports.  You should now see these 3 Freedoom games on the list.
 
@@ -308,3 +308,4 @@ File Name | mp3
 * mus_read_m          |      "track 03 main menu.mp3" 
 * mus_dm2ttl          |      "track 02 title screen.mp3" 
 * mus_dm2int         |       "track 05 stats screen.mp3"
+
