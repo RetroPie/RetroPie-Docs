@@ -98,9 +98,8 @@ Use the same method for IWADS detailed above for lr-prboom, only set the default
 
 #### To Launch Doom Mods (PWADS)
 
-Here, we'll use [Rex Claussen's, The Darkest Hour](http://doomnexus.drdteam.org/DH_Pix.html) as an example that can be used for any mod.
+Here, we'll use [Rex Claussen's, The Darkest Hour](http://doomnexus.drdteam.org/DH_Pix.html) as an example that can be used for any mod. Start by downloading [The Darkest Hour](ftp://ftp.fu-berlin.de/pc/msdos/games/idgames/levels/doom2/Ports/d-f/darkhour.zip). Next you will either want to SSH into your Pi, or drop out of EmulationStation using F4 on your keyboard. 
 
-Go ahead and [Download The Darkest Hour](ftp://ftp.fu-berlin.de/pc/msdos/games/idgames/levels/doom2/Ports/d-f/darkhour.zip). Next you will either want to SSH into your Pi, or drop out of EmulationStation using F4 on your keyboard. 
 At the command line, type the following to create a directory for the `DarkHour.wad` file from the 'Darkest Hour' download.
 
 ```
@@ -114,7 +113,7 @@ Next you'll want to create a new script that we will use to launch The Darkest H
 To do this, type:
 
 ```
-nano /home/pi/RetroPie/roms/ports/Darkest\ Hour.sh
+nano /home/pi/RetroPie/roms/ports/The \Darkest\ Hour.sh
 ```
 
 The nano text editor will open, where you will now add the following to the text edit field.
@@ -129,7 +128,7 @@ press 'ctrl+o' to save, 'y' to confirm and 'ctrl+x' to exit out of the nano text
 Set the proper file permissions for the script with:
 
 ```
-chmod 0755 "/home/pi/RetroPie/roms/ports/Darkest\ Hour.sh"
+chmod 0755 "/home/pi/RetroPie/roms/ports/The\ Darkest\ Hour.sh"
 ```
 
 Now we want to create a config folder by typing the following:
