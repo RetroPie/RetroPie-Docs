@@ -143,7 +143,7 @@ nano /opt/retropie/configs/ports/darkesthour/emulators.cfg
 The nano text editor will open, where you will now add the following to the text edit field.
 
 ```
-zdoom="/opt/retropie/ports/zdoom/zdoom -iwad /home/pi/RetroPie/roms/ports/doom/doom2.wad -file /home/pi/RetroPie/roms/ports/darkesthour/DarkHour.wad"`
+zdoom = "/opt/retropie/ports/zdoom/zdoom -iwad /home/pi/RetroPie/roms/ports/doom/doom2.wad -file /home/pi/RetroPie/roms/ports/darkesthour/DarkHour.wad"`
 default="zdoom"
 ```
 
