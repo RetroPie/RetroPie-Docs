@@ -274,6 +274,53 @@ btn_trigger_left = 309
 btn_trigger_right = 311
 ```
 
+**8Bitdo NES30 Pro**
+---
+
+sudo nano /opt/retropie/configs/dreamcast/mappings/controller_8BitdoNES30Pro.cfg
+
+
+[emulator]
+mapping_name = 8Bitdo NES30 Pro
+btn_escape = 314
+
+[dreamcast]
+btn_a = 304
+btn_b = 305
+btn_c =
+btn_d =
+btn_x = 307
+btn_y = 308
+btn_z =
+btn_start = 315
+btn_dpad1_left =
+btn_dpad1_right =
+btn_dpad1_up =
+btn_dpad1_down =
+btn_dpad2_left =
+btn_dpad2_right =
+btn_dpad2_up =
+btn_dpad2_down =
+axis_x = 0
+axis_y = 1
+axis_trigger_left = 24
+axis_trigger_right =
+
+[compat]
+btn_trigger_left = 310
+btn_trigger_right = 311
+axis_dpad1_x = 16
+axis_dpad1_y = 17
+axis_dpad2_x =
+axis_dpad2_y =
+axis_x_inverted = no
+axis_y_inverted = no
+axis_trigger_left_inverted =
+axis_trigger_right_inverted =
+axis_dpad1_y_inverted = no
+axis_dpad1_x_inverted = no
+---
+
 **Mobile Gamepad [EXPERIMENTAL]**
 ```
 [emulator]
