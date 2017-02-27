@@ -35,7 +35,7 @@ The nano text editor will open, where you will now add the following to the text
 "
 ```
 
-press 'ctrl+o' to save, 'enter' to confirm and 'ctrl+x' to exit out of the nano text editor.
+press 'ctrl+o' to save, 'y' to confirm and 'ctrl+x' to exit out of the nano text editor.
 
 Set the proper file permissions for the script with:
 
@@ -78,7 +78,7 @@ The nano text editor will open, where you will now add the following to the text
 #!/bin/bash
 /opt/retropie/supplementary/runcommand/runcommand.sh 0 "/opt/retropie/emulators/retroarch/bin/retroarch -L /opt/retropie/libretrocores/lr-prboom/prboom_libretro.so --config /opt/retropie/configs/ports/doom/retroarch.cfg /home/pi/RetroPie/roms/doom/batman/doom2.wad" "lr-prboom"
 ```
-press 'ctrl+o' to save, 'enter' to confirm and 'ctrl+x' to exit out of the nano text editor.
+press 'ctrl+o' to save, 'y' to confirm and 'ctrl+x' to exit out of the nano text editor.
 
 Set the proper file permissions for the script with:
 
@@ -120,7 +120,7 @@ The nano text editor will open, where you will now add the following to the text
 "/opt/retropie/supplementary/runcommand/runcommand.sh" 0 _PORT_ darkesthour
 ```
 
-press 'ctrl+o' to save, 'enter' to confirm and 'ctrl+x' to exit out of the nano text editor.
+press 'ctrl+o' to save, 'y' to confirm and 'ctrl+x' to exit out of the nano text editor.
 
 Set the proper file permissions for the script with:
 
@@ -147,7 +147,7 @@ zdoom="/opt/retropie/ports/zdoom/zdoom -iwad /home/pi/RetroPie/roms/ports/doom/d
 default="zdoom"
 ```
 
-press 'ctrl+o' to save, 'enter' to confirm and 'ctrl+x' to exit out of the nano text editor.
+press 'ctrl+o' to save, 'y' to confirm and 'ctrl+x' to exit out of the nano text editor.
 
 You'll notice that in the above example that ZDoom is making use of the 'Doom II' wad as a base for the 'Darkest Hour' modification. This is common in most cases. However, some mods will need to make use of the 'Ultimate Doom' wad file entitled `doom.wad` instead. Both `doom.wad` and `doom2.wad` should be installed to `/home/pi/RetroPie/roms/ports/doom/` and the above example should be set accordingly.
 
