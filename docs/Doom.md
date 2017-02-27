@@ -32,7 +32,6 @@ The nano text editor will open, where you will now add the following to the text
 ```
 #!/bin/bash
 "/opt/retropie/supplementary/runcommand/runcommand.sh" 0 _PORT_ "doom" "/home/pi/RetroPie/roms/ports/doom/plutonia.wad"
-"
 ```
 
 press 'ctrl+o' to save, 'y' to confirm and 'ctrl+x' to exit out of the nano text editor.
