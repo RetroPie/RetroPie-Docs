@@ -94,9 +94,7 @@ To begin, you'll want to use the RetroPie-Setup to install ZDOOM from Optional P
 
 Once installed, we will employ [Rex Claussen's, The Darkest Hour](http://doomnexus.drdteam.org/DH_Pix.html) as an example that can be used for any mod.
 
-Go ahead and [Download The Darkest Hour](ftp://ftp.fu-berlin.de/pc/msdos/games/idgames/levels/doom2/Ports/d-f/darkhour.zip).
-
-Next you will either want to SSH into your Pi, or drop out of EmulationStation using F4 on your keyboard. 
+Go ahead and [Download The Darkest Hour](ftp://ftp.fu-berlin.de/pc/msdos/games/idgames/levels/doom2/Ports/d-f/darkhour.zip). Next you will either want to SSH into your Pi, or drop out of EmulationStation using F4 on your keyboard. 
 At the command line, type the following to create a directory for the `DarkHour.wad` file from the 'Darkest Hour' download.
 
 ```
