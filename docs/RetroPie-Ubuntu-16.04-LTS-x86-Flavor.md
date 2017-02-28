@@ -129,7 +129,7 @@ https://bugs.freedesktop.org/show_bug.cgi?id=93946#c36
 
 ### Section 3.9: Xbox360 Controller mappings not working correctly
 
-The X86 version of Retropie install does nto have the xboxdrv installed correctly.  Please launch Retropie-Setup Manage Packacges - Drivers and install xbox drv and remap your inputs. 
+The X86 version of Retropie install does not have the xboxdrv installed correctly.  Please launch Retropie-Setup Manage Packages - Drivers and install xboxdrv and remap your inputs. 
 
 
 ### Section 3.10: How do I map controls to Dolphin
