@@ -42,7 +42,7 @@ Set the proper file permissions for the script with:
 chmod 0755 "/home/pi/RetroPie/roms/ports/The\ Plutonia\ Experiment.sh"
 ```
 
-Set the default emulator to 'lr-prboom' at launch in the runcommand menu.
+Set the default emulator for ROM to 'lr-prboom' at launch in the runcommand menu.
 
 #### To Launch Doom Mods (PWADS)
 
@@ -93,7 +93,7 @@ Repeat for each mod (PWAD), creating a new folder for each one and a copy of the
 
 #### To Launch Doom, Ultimate Doom, Doom 2, TNT, Plutonia, Final Doom (IWADS)
 
-Use the same method for IWADS detailed above for lr-prboom, only set the default emulator to 'zdoom' at launch in the runcommand menu.
+Use the same method for IWADS detailed above for lr-prboom, only set the default emulator for ROM to 'zdoom' at launch in the runcommand menu.
 
 #### To Launch Doom Mods (PWADS)
 
