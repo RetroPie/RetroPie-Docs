@@ -4,7 +4,7 @@
 _Doom was the one game that popularised First Person Shooting as a genre. It was developed by Id Software in 1993._
 
 ***
-## Emulator: [lr-prboom](https://github.com/petrockblog/RetroPie-Setup/blob/master/scriptmodules/libretrocores/lr-prboom.sh), [ZDOOM](https://github.com/rheit/zdoom)
+## Emulator: [lr-prboom](https://github.com/petrockblog/RetroPie-Setup/blob/master/scriptmodules/libretrocores/lr-prboom.sh), [ZDoom](https://github.com/rheit/zdoom)
 
 ## Controls
 
@@ -92,7 +92,7 @@ chmod 0755 "/home/pi/RetroPie/roms/ports/Batman\ Doom.sh"
 
 Repeat for each mod (PWAD), creating a new folder for each one and a copy of the script above replacing the folder name as required.
 
-### How to Launch Doom IWADs and Mods (PWADs) from Emulationstation using ZDOOM.
+### How to Launch Doom IWADs and Mods (PWADs) from Emulationstation using ZDoom.
 
 #### To Launch Doom, Ultimate Doom, Doom 2, TNT, Plutonia, Final Doom (IWADS)
 
