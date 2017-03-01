@@ -10,13 +10,13 @@ _Doom was the one game that popularised First Person Shooting as a genre. It was
 
 ### Configuring controls for lr-prboom
 
-lr-prboom utilises normal Retroarch control configurations found in the RetroArch menu by pressing 'select+x' after the game software has launched. After opening the RetroArch menu, navigate to 'Quick Menu' and then to 'Controls'.
+lr-prboom utilises normal Retroarch control configurations found in the RetroArch menu by pressing 'select+x' on your controller after the game software has launched. From the RetroArch menu, navigate to 'Quick Menu' and then to 'Controls'.
 
 For more information on custom RetroArch controls see: [RetroArch Configuration](https://github.com/retropie/retropie-setup/wiki/retroarch-configuration)
 
 ### Configuring controls for ZDoom
 
-ZDoom controls can be set from the Doom options menu by pressing 'esc' after the game software has launched.
+ZDoom controls can be found in the Doom options menu by pressing any button or key after the game software has launched. Although the initial configuration may need to be started with a keyboard, full joystick autonomy is possible after being set.
 
 ### How to Launch Doom IWADs and Mods (PWADs) from Emulationstation using lr-prboom
 
