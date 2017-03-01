@@ -16,7 +16,7 @@ For more information on custom RetroArch controls see: [RetroArch Configuration]
 
 ### Configuring controls for ZDoom
 
-ZDoom controls can be set from the Doom menu after the game software has launched.
+ZDoom controls can be set from the Doom options menu by pressing 'esc' after the game software has launched.
 
 ### How to Launch Doom IWADs and Mods (PWADs) from Emulationstation using lr-prboom
 
