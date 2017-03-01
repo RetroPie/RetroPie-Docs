@@ -4,16 +4,19 @@
 _Doom was the one game that popularised First Person Shooting as a genre. It was developed by Id Software in 1993._
 
 ***
-## Emulator: [libretro-prboom](https://github.com/petrockblog/RetroPie-Setup/blob/master/scriptmodules/libretrocores/lr-prboom.sh), [ZDOOM](https://github.com/rheit/zdoom)
+## Emulator: [lr-prboom](https://github.com/petrockblog/RetroPie-Setup/blob/master/scriptmodules/libretrocores/lr-prboom.sh), [ZDOOM](https://github.com/rheit/zdoom)
 
 ## Controls
-libretro-prboom utilises Retroarch configurations
 
-Add custom retroarch controls to the retroarch.cfg file in
-```shell
-/opt/retropie/configs/doom/retroarch.cfg
-```
-For more information on custom RetroArch controls see: [RetroArch Configuration](https://github.com/petrockblog/RetroPie-Setup/wiki/RetroArch-Configuration)
+### Configuring controls for lr-prboom
+
+lr-prboom utilises the normal Retroarch control configurations, found in the RetroArch menu by pressing 'select+x' after the game software has launched. Then navigate to 'Quick Menu' an finally 'Controls'.
+
+For more information on custom RetroArch controls see: [RetroArch Configuration](https://github.com/retropie/retropie-setup/wiki/retroarch-configuration)
+
+### Configuring controls for ZDoom
+
+ZDoom controls can be set from the Doom menu after the game software has launched.
 
 ### How to Launch Doom IWADs and Mods (PWADs) from Emulationstation using lr-prboom
 
