@@ -10,7 +10,7 @@ _Doom was the one game that popularised First Person Shooting as a genre. It was
 
 ### Configuring controls for lr-prboom
 
-lr-prboom utilises normal Retroarch control configurations, found in the RetroArch menu by pressing 'select+x' after the game software has launched. Then navigate to 'Quick Menu' an finally 'Controls'.
+lr-prboom utilises normal Retroarch control configurations found in the RetroArch menu by pressing 'select+x' after the game software has launched. Then navigate to 'Quick Menu' an finally 'Controls'.
 
 For more information on custom RetroArch controls see: [RetroArch Configuration](https://github.com/retropie/retropie-setup/wiki/retroarch-configuration)
 
