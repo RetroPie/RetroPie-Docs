@@ -4,7 +4,7 @@
 _Doom was the one game that popularized First Person Shooting as a genre. It was developed by Id Software in 1993._
 
 ***
-## Emulator: [lr-prboom](https://github.com/petrockblog/RetroPie-Setup/blob/master/scriptmodules/libretrocores/lr-prboom.sh), [ZDoom](https://github.com/rheit/zdoom)
+## Emulators: [lr-prboom](https://github.com/petrockblog/RetroPie-Setup/blob/master/scriptmodules/libretrocores/lr-prboom.sh), [ZDoom](https://github.com/rheit/zdoom)
 
 ## Controls
 
