@@ -57,7 +57,7 @@ input_l2_axis = "+2"
 
 **Note! There are known incompatibilities with this driver when used in it's default configuration with the latest kernel. As such, xpad is currently the best driver option to simply make an XBox 360 controller operational in RetroPie.**
 
-**However, these incompatibilities are not an issue when [using xboxdrv as a universal calibration and key-mapping tool](https://github.com/retropie/retropie-setup/wiki/Universal-Controller-Calibration-&-Mapping-Using-xboxdrv) for any number of gamepads, including the XBox 360 controller. When used this way, it's even possible for both xpad and xboxdrv to coexist together.**
+**However, these incompatibilities are not an issue when [using xboxdrv as a universal calibration and key-mapping tool](https://github.com/retropie/retropie-setup/wiki/Universal-Controller-Calibration-&-Mapping-Using-xboxdrv) for almost any gamepad, including the XBox 360 controller. When used this way, it's even possible for both xpad and xboxdrv to coexist together.**
 
 Access the [RetroPie Setup Script](Updating-RetroPie) and navigate to **Manage Packages >> Manage Driver Packages >> xboxdrv** 
 
