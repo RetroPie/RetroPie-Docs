@@ -50,8 +50,9 @@ A more general launching image (not related to a specific system) can be named a
 Once these images are installed, the timing to activate the the runcommand menu differs, in that pressing a button will not register successfully until just after the image has disappeared.
 
 You can get some cool launching images in these forum topics:
-- https://retropie.org.uk/forum/topic/36/splashscreens/97
+- https://retropie.org.uk/forum/topic/7193/runcommand-launching-images-for-any-theme
 - https://retropie.org.uk/forum/topic/4611/runcommand-system-splashscreens
+- https://retropie.org.uk/forum/topic/36/splashscreens/97
 
 ## runcommand-onstart and runcommand-onend scripts
 
