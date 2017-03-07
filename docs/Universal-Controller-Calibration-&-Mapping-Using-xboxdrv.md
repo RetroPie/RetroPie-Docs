@@ -42,6 +42,8 @@ sudo /opt/retropie/supplementary/xboxdrv/bin/xboxdrv \
 	--evdev-keymap BTN_*=a,BTN_*=b,BTN_*=x,BTN_*=y,BTN_*=lb,BTN_*=rb,BTN_*=tl,BTN_*=tr,BTN_*=guide,BTN_*=back,BTN_*=start \
 	&
 ```
+If you want to use event number rather than the controller's name, change `--evdev /dev/input/by-id/*` to `--evdev /dev/input/event*`
+
 If the directional pad of your controller outputs individual `BTN_` names instead of `ABS_` axis names, the command is altered to accommodate as seen below. Notice the addition of `--dpad-as-button` as well as the inclusion of individual 'BTN_' assignments marked 'du,dd,dl&dr' under `--evdev-keymap`.
 ```
 sudo /opt/retropie/supplementary/xboxdrv/bin/xboxdrv \
