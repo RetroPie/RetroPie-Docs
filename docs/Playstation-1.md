@@ -184,6 +184,16 @@ To change disks in-game, go to Core Disk Options > Disk Image Append.
 
 Some games like Metal Gear Solid require the disk tray to be opened before changing disks. To do this, change 'Disk Index' to 'No Disk' first. 
 
+### M3U playlist for Multi-disc Games
+
+Remove the .cue extension on the multi-disc files so that es_systems.cfg won't list them.
+Remove the .cue extension you reference them in the M3U.
+
+An M3U for Chrono Cross looks like this for example:
+Chrono Cross CD1
+Chrono Cross CD2
+
+This will function the same as EBOOT-format without altering the files.
 ### Multi-disc games or CD image not working
 
 Note that all the emulators accept `.pbp` files, which are EBOOT-format PlayStation executables. These are also known as PSX2PSP files, used to play PlayStation 1 games on the PSP.
