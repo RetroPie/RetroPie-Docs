@@ -47,6 +47,8 @@ BIOS files
 | dc_boot.bin | Free | d552d8b577faa079e580659cd3517f86 | 558f456e | atreyu187 Hack |
 | dc_flash.bin | Free | 74e3f69c2bb92bc1fc5d9a53dcf6ffe2 | bda0e9aa | atreyu187 Hack |
 
+**Note:** If you are having trouble with having to set the date/time every time you load Reicast, [see this forum post.](https://retropie.org.uk/forum/post/53941) 
+
 ## Video Setup Guide  
 
 <a href="https://www.youtube.com/watch?v=yAB0_kkaa5s
