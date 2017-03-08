@@ -186,7 +186,7 @@ Some games like Metal Gear Solid require the disk tray to be opened before chang
 
 ### M3U playlist for Multi-disc Games
 
-Multiple discs can be loaded simultaneously from Emulation Station into RetroArch by creating an M3U file(plain-text, ".m3u" extension). In it's contents, enter the filenames of the CUE/TOC/CCD files one per line. In game you can then swap disks from the core disk options menu (under Options). Make sure to cycle tray status before attempting to change disks.
+Multiple discs can be loaded simultaneously from Emulation Station into RetroArch by creating an M3U file (plain-text, ".m3u" extension). In it's contents, enter the filenames of the CUE/TOC/CCD files one per line. In game you can then swap disks from the core disk options menu (under Options). Make sure to cycle tray status before attempting to change disks.
 
 To have the M3U file be the only item listed in Emulation Station to reduced menu clutter:
 
