@@ -186,14 +186,22 @@ Some games like Metal Gear Solid require the disk tray to be opened before chang
 
 ### M3U playlist for Multi-disc Games
 
+Multiple discs can be loaded simultaneously from Emulation Station into RetroArch by creating an M3U file(plain-text, ".m3u" extension). In it's contents, enter the filenames of the CUE/TOC/CCD files one per line. In game you can then swap disks from the core disk options menu (under Options). Make sure to cycle tray status before attempting to change disks.
+
+To have the M3U file be the only item listed in Emulation Station to reduced menu clutter:
+
 Remove the .cue extension on the multi-disc files so that es_systems.cfg won't list them.
 Remove the .cue extension you reference them in the M3U.
 
 An M3U for Chrono Cross looks like this for example:
+
+```
 Chrono Cross CD1
 Chrono Cross CD2
+```
 
 This will function the same as EBOOT-format without altering the files.
+
 ### Multi-disc games or CD image not working
 
 Note that all the emulators accept `.pbp` files, which are EBOOT-format PlayStation executables. These are also known as PSX2PSP files, used to play PlayStation 1 games on the PSP.
