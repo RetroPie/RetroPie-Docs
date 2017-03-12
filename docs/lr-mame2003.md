@@ -42,7 +42,7 @@ Similarly to the [Service menu](#service-menu), many arcade games had hardware s
 > **Note** As of January 29, 2017 it is no longer necessary to manually add `hiscore.dat` to your installation as it is automatically included by RetroPie-Setup
 
 lr-mame2003 will attempt to keep a permanent record of any high scores you set, but some games will not save these by default. A supplementary file called `hiscore.dat` is required for these ROMs to save scores. This file can be [downloaded from the MAME 2003 'metadata' repository](https://raw.githubusercontent.com/libretro/mame2003-libretro/master/metadata/).
-Save and transfer 'highscore.dat' to:
+Save and transfer 'hiscore.dat' to:
 ```
 /home/pi/RetroPie/BIOS/mame2003/
 ```
@@ -57,7 +57,7 @@ or, if you're using the arcade folder:
 
 ## Cheats
 
-lr-mame2003 supports the MAME cheat engine, allowing you to use the 'TAB' menu to enable various in-game cheats. To active these, there is a supplementary file that you need to transfer to your Pi, called `cheat.dat`. This file can be downloaded from http://cheat.retrogames.com/mame_downloads.htm. You need the version of the file that is equal-to or greater-than the MAME version in question, which in our case is 0.78, so the file needed is [Cheat File for MAME 0.81 (Release Date: 21st April 2004)](http://cheat.retrogames.com/download/cheat081.zip). Extract `cheat.dat` from this .zip and place in:
+lr-mame2003 supports the MAME cheat engine, allowing you to use the 'TAB' menu to enable various in-game cheats. To active these, there is a supplementary file that you need to transfer to your Pi, called `cheat.dat`. This file can be downloaded from https://github.com/libretro/mame2003-libretro/tree/master/metadata. Place `cheat.dat` in:
 ```
 /home/pi/RetroPie/BIOS/mame2003/
 ```
@@ -72,7 +72,7 @@ mame2003-cheats = "enabled"
 
 ## Samples
 
-Some sound effects in a few older (typically pre-1986) arcade games are difficult/impossible to emulate. Instead, audio clips of these effects can be downloaded and automatically played at the appropriate times. To do this, download the sample files you require (eg from http://www.progettosnaps.net/samples/) and place the individual audio files into a .zip file matching the ROM's title (eg `invaders.zip`) or into a folder matching the filename of the ROM (eg `/invaders/`) into the following location:
+Some sound effects in a few older (typically pre-1986) arcade games are difficult/impossible to emulate. Instead, audio clips of these effects can be downloaded and automatically played at the appropriate times. To do this, download the sample files you require and place the .zip files into:
 ```
 /home/pi/RetroPie/BIOS/mame2003/samples/
 ```
