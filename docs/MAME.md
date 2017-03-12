@@ -176,7 +176,9 @@ Config Dir: /opt/retropie/configs/mame-advmame
 **Controls**
 
 While in a game press <TAB> to open the menu to set up controls. AdvanceMAME configuration for controls are all stored in the .rc file corresponding to the version of AdvanceMAME you are running. Changes to specific games result in .rc file entries with a prefix for the ROM (i.e. ```bwidow/input_map[p1_doubleleft_up] keyboard[0,up]```)
+
 Note: The .rc file can also be edited manually. Any config can be made ROM-specific using a ```romname/``` prefix which is handy for overriding a setting for a specific ROM or class of ROMs, such as ```vertical/```. However, a single mistake in the .rc file will stop MAME from launching. It is always best to make a backup of the .rc file before manual edits.
+
 ---
 
 ### AdvanceMAME 1.4
@@ -200,9 +202,10 @@ Config Dir: /opt/retropie/configs/mame-advmame
 **Controls**
 
 While in a game press <TAB> to open the menu to set up controls. AdvanceMAME configuration for controls are all stored in the .rc file corresponding to the version of AdvanceMAME you are running. Changes to specific games result in .rc file entries with a prefix for the ROM (i.e. ```bwidow/input_map[p1_doubleleft_up] keyboard[0,up]```)
-Note: The .rc file can also be edited manually. Any config can be made ROM-specific using a ```romname/``` prefix which is handy for overriding a setting for a specific ROM or class of ROMs, such as ```vertical/```. However, a single mistake in the .rc file will stop MAME from launching. It is always best to make a backup of the .rc file before manual edits.
----
 
+Note: The .rc file can also be edited manually. Any config can be made ROM-specific using a ```romname/``` prefix which is handy for overriding a setting for a specific ROM or class of ROMs, such as ```vertical/```. However, a single mistake in the .rc file will stop MAME from launching. It is always best to make a backup of the .rc file before manual edits.
+
+---
 
 ### AdvanceMAME 3
 [Visit the AdvanceMAME homepage on sourceforge](http://sourceforge.net/projects/advancemame/)
@@ -225,4 +228,5 @@ Config Dir: /opt/retropie/configs/mame-advmame
 **Controls**
 
 While in a game press <TAB> to open the menu to set up controls. AdvanceMAME configuration for controls are all stored in the .rc file corresponding to the version of AdvanceMAME you are running. Changes to specific games result in .rc file entries with a prefix for the ROM (i.e. ```bwidow/input_map[p1_doubleleft_up] keyboard[0,up]```)
+
 Note: The .rc file can also be edited manually. Any config can be made ROM-specific using a ```romname/``` prefix which is handy for overriding a setting for a specific ROM or class of ROMs, such as ```vertical/```. However, a single mistake in the .rc file will stop MAME from launching. It is always best to make a backup of the .rc file before manual edits.
