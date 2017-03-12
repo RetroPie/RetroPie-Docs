@@ -9,7 +9,7 @@ Steven Selph's scraper is the simplest and best way of scraping roms (provided t
 
 1. (Optional)If you are remotely running this script you must be logged in with pi otherwise it will confuse the scraper
 2. Quit EmulationStation (from the start menu or press F4) and type `sudo ~/RetroPie-Setup/retropie_setup.sh`
-3. In 3.x Choose 'Setup'. In 4.x Choose 'Configuration / Tools'.
+3. In 3.x Choose 'Setup'. In 4.x Choose 'Manage Packages' then 'Optional Packages'.
 4. Select Scraper
 5. Wait for the installation to complete (it may take some time as it has to install various software libraries)
 
