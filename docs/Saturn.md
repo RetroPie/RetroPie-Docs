@@ -47,6 +47,13 @@ Place your BIOS in
 /home/pi/RetroPie/BIOS
 ```
 
+BIOS files
+
+| File | md5sum | CRC32 |
+| :--: | :--: | :--: | :--: |
+| saturn_bios.bin | af5828fdff51384f99b3c4926be27762 | 2aba43c2 |
+| sega_101.bin | 85ec9ca47d8f6807718151cbcca8b964 | 224b752c |
+
 ## Controls
 
 lr-yabause and lr-beetle-saturn utilise Retroarch configurations
