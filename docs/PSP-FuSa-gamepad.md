@@ -2,7 +2,7 @@ With a custom firmware such as the pro CFW and ME CFW and thanks to the natural 
 
 # What we need?
 
-* A **PSP** model 1xxx 2xxx or 3xxx (PSP Go and street are not supported)
+* A **PSP** model 1xxx 2xxx or 3xxx
 * A 1GB+ memory stick pro duo
 * A mini USB to USB A cable
 * A custom firmware
@@ -19,3 +19,10 @@ To configure it follow the RetroPie input configuration.
 # FuSa with Kodi
 
 To make it work on kodi take your keyboard and go to settings > advanced > input and chose the gamepad configuration, inside that dialog go to the keys and push enter, now configure it at your style, do not press anything in the moments it asks for a key you do not have and a little sugestion I can do to be able to change the volume inside Kodi with your PSP's volume buttons is to configure the right stick, right stick up = volume +, right stick right = d-pad up (temporaly) right stick down = volume - and right stick left let  the countdown go to zero, now go back to D-Pad up and set it agin to D-Pad up, let the countdown reach zero in the next item and press ok
+
+# Considerations
+
+* the PSP Go and street are not supported
+* If your PSP is in a good condition this is much better than a generic controller or a 360 gamepad, the buttons are really responsive and the D Pad ideal for retro gaming
+* the pi may not be able to charge your PSP, turn off USB charging and charge your PSP with its AC adapter
+* the volume buttons does not works in emulationstation or RetroArch
