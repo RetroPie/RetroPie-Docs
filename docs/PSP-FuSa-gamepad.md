@@ -2,7 +2,7 @@ With a custom firmware such as the pro CFW and ME CFW and thanks to the natural 
 
 # What we need?
 
-* A **PSP** model 1xxx 2xxx or 3xxx
+* A **PSP** model 1xxx 2xxx or 3xxx (PSP Go and street are not supported)
 * A 1GB+ memory stick pro duo
 * A mini USB to USB A cable
 * A custom firmware
