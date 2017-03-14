@@ -12,6 +12,6 @@ With a custom firmware such as the pro CFW and ME CFW and thanks to the natural 
 
 Downliad the FuSa gamepad zip and then turn your PSP on with your memory stick allready inside your console and if it is a model 3000 run your CFW (older models do not need to run it because those models allready boots with the CFW loaded) plug your USB cable to your PSP and PC now uncompress your zip inside > /PSP/GAMES/ and safely unplug it from your PC, now run the app and connect it to your pi, the screen of your PSP sould be turned off and a LED should be lighted, the final result is this one
 
-![FuSa gamepad working](http://imgur.com/cUnEP0O)
+![FuSa gamepad working](http://i.imgur.com/cUnEP0O.jpg)
 
 To configure it follow the RetroPie input configuration.
