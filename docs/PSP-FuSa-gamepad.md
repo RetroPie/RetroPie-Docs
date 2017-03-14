@@ -22,7 +22,8 @@ To make it work on kodi take your keyboard and go to settings > advanced > input
 
 # Considerations
 
-* the PSP Go and street are not supported
+* The PSP Go and street are not supported
 * If your PSP is in a good condition this is much better than a generic controller or a 360 gamepad, the buttons are really responsive and the D Pad ideal for retro gaming
-* the pi may not be able to charge your PSP, turn off USB charging and charge your PSP with its AC adapter
-* the volume buttons does not works in emulationstation or RetroArch
+* The pi may not be able to charge your PSP, turn off USB charging and charge your PSP with its AC adapter
+* The volume buttons does not works in emulationstation or RetroArch
+* You can access to a more in depth configuration in the FuSa's ini files
