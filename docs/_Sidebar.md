@@ -141,6 +141,7 @@
 * [XBox 360 Controller](Xbox-360-Controller)
 * [PS3 controller](PS3-Controller)
 * [PS4 controller](PS4-Controller)
+* [PSP FuSa gamepad](PSP-FuSa-gamepad)
 * [N64 controller](N64-Controller)
 * [Ouya controller](Ouya-Controller)
 * [Bluetooth controller](Bluetooth-Controller)
