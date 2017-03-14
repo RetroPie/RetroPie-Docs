@@ -15,3 +15,7 @@ Downliad the FuSa gamepad zip and then turn your PSP on with your memory stick a
 ![FuSa gamepad working](http://i.imgur.com/cUnEP0O.jpg)
 
 To configure it follow the RetroPie input configuration.
+
+# FuSa with Kodi
+
+To make it work on kodi take your keyboard and go to settings > advanced > input and chose the gamepad configuration, inside that dialog go to the keys and push enter, now configure it at your style, do not press anything in the moments it asks for a key you do not have and a little sugestion I can do to be able to change the volume inside Kodi with your PSP's volume buttons is to configure the right stick,right stick up = volume +, right stick right = d-pad up (temporaly) right stick down = volume - and right stick left let  the countdown go to zero, now go back to D-Pad up and set it agin to D-Pad up, let the countdown reach zero in the next item and press ok
