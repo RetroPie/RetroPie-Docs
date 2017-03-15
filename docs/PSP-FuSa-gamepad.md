@@ -20,10 +20,16 @@ To configure it follow the RetroPie input configuration.
 
 To make it work on kodi take your keyboard and go to settings > advanced > input and chose the gamepad configuration, inside that dialog go to the keys and push enter, now configure it at your style, do not press anything in the moments it asks for a key you do not have and a little sugestion I can do to be able to change the volume inside Kodi with your PSP's volume buttons is to configure the right stick, right stick up = volume +, right stick right = d-pad up (temporaly) right stick down = volume - and right stick left let  the countdown go to zero, now go back to D-Pad up and set it agin to D-Pad up, let the countdown reach zero in the next item and press ok
 
+## recomended Kodi layout
+
+For a consistent experience inside and outside Emulationstation and because all the PS gamepads in Japan uses the same layout as a SNES gamepad but with diferent symbols I suggest use this buttons map plus my little suggestion for the volume buttons
+
+![PSP layout](https://cloud.githubusercontent.com/assets/10035308/16599632/7f34c9ec-42c0-11e6-8988-0b2d6e795d10.png)
+
 # Considerations
 
 * The PSP Go and street are not supported
 * If your PSP is in a good condition this is much better than a generic controller or a 360 gamepad, the buttons are really responsive and the D Pad ideal for retro gaming
-* The pi may not be able to charge your PSP, turn off USB charging and charge your PSP with its AC adapter
+* The pi may not be able to charge your PSP, turn off USB charging and charge your PSP with its AC adapter, however it may (I am not sure at all) charge it if you turn off WLAN, my PSP did not went under 100% the last time I saw how many battery it had left
 * The volume buttons does not works in emulationstation or RetroArch
 * You can access to a more in depth configuration in the FuSa's ini files
