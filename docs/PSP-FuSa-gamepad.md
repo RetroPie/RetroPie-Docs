@@ -1,4 +1,4 @@
-With a custom firmware such as the pro CFW and ME CFW and thanks to the natural flexibility of the PSP with the help of FuSa gamepad (a homebrew app for the PSP) you canget one of the best SNES gamepads for your Raspberry Pi
+With a custom firmware such as the pro CFW and ME CFW and thanks to the natural flexibility of the PSP with the help of FuSa gamepad (a homebrew app for the PSP) you can get one of the best SNES gamepads for your Raspberry Pi
 
 # What we need?
 
