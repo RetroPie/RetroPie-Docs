@@ -20,9 +20,9 @@ To configure it follow the RetroPie input configuration.
 
 To make it work on kodi take your keyboard and go to settings > advanced > input and chose the gamepad configuration, inside that dialog go to the keys and push enter, now configure it at your style, do not press anything in the moments it asks for a key you do not have and a little sugestion I can do to be able to change the volume inside Kodi with your PSP's volume buttons is to configure the right stick, right stick up = volume +, right stick right = d-pad up (temporaly) right stick down = volume - and right stick left let  the countdown go to zero, now go back to D-Pad up and set it agin to D-Pad up, let the countdown reach zero in the next item and press ok
 
-## recomended Kodi layout
+## recomended layout
 
-For a consistent experience inside and outside Emulationstation and because all the PS gamepads in Japan uses the same layout as a SNES gamepad but with diferent symbols I suggest use this buttons map plus my little suggestion for the volume buttons
+For a consistent experience inside and outside Emulationstation includibg in Kodi and all the ReteoArch cores and because all the PS gamepads in Japan uses the same layout as a SNES gamepad but with diferent symbols I suggest use this buttons map plus my little suggestion for the volume buttons and the home button inside Kodi
 
 ![PSP layout](https://cloud.githubusercontent.com/assets/10035308/16599632/7f34c9ec-42c0-11e6-8988-0b2d6e795d10.png)
 
