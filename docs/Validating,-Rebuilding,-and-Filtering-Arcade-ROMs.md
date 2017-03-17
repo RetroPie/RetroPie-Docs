@@ -4,7 +4,7 @@ See also: [[MAME]], [[Final Burn Alpha|FinalBurn Alpha]]
 
 ---
 
-##Table of Contents
+## Table of Contents
 * [Crash Course in Arcade ROMs](#crash-course-in-arcade-roms)
 * [Validating and Rebuilding ROMs](#validating-and-rebuilding-roms)
 * [Filtering ROMs](#filtering-roms)
