@@ -89,17 +89,81 @@ So instead of using one of those large shield with the RCA jacks on it, a small 
 4.    Find our card number.  More than likely, the "C-Media USB Headphone Set" will be set to `Card 1`.  You will need to remember this number for the next step.
 5.    Use `nano` to create `/etc/asound.conf` with this content.  Press <kbd>Ctrl</kbd>+<kbd>X</kbd> followed by <kbd>Y</kbd> when finished.  Replace the card number in the code below with the correct card number if it is other than `1`.
 
-     ```
+
     pcm.!default {
      type hw card 1
     }
     ctl.!default {
      type hw card 1
     }
-    ```
+
 
 6.    `sudo reboot`.  When EmulationStation or a video game is played, you will start to notice sound.
 
 7.    If you want to test stereo, <kbd>F4</kbd> again to do a speaker test using `speaker-test -c2 hw:Set,0` where `-c2` indicates the number of channels. If you have just one speaker, use `-c1` instead.  You should hear a hiss in each speaker separately.  This test will go on continuously until you press <kbd>Ctrl</kbd>+<kbd>C</kbd>.
 
 > :warning: **Note:** There is a pitfall with these instructions, and that is I (@jrcharney) don't know what will happen if you plug this into HDMI later.  If anybody knows, append that information to this section.
+
+## Alternate USB Audio Method
+This method was originally documented on the [sudomod forum](http://www.sudomod.com/forum/viewtopic.php?t=144)
+
+1. Attach the USB audio dongle into one of the USB ports connected the RPi. Reboot the system.
+
+2. Once EmulationStation has loaded, exit from it by pressing <kbd>F4</kbd>. This will take you to the terminal.
+
+3. Check if your USB audio has been detected by Raspbian Jessie by typing the command below:
+
+       lsusb
+
+Output should be:
+
+       Bus 001 Device 007: ID 0d8c:0014 C-Media Electronics, Inc.
+       Bus 001 Device 004: ID 0424:2517 Standard Microsystems Corp. Hub
+       Bus 001 Device 003: ID 0424:ec00 Standard Microsystems Corp. SMSC9512/9514 Fast Ethernet Adapter
+       Bus 001 Device 002: ID 0424:9514 Standard Microsystems Corp.
+       Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+The C-Media Electronics, Inc line shows that the USB audio device is detected.
+
+4. Once we're sure the USB audio device is detected, let's check the order of priority of the sound cards being used by the system. Do so by typing this command:
+
+       cat /proc/asound/modules
+
+Output should be:
+
+        0 snd_bcm2835
+        1 snd_usb_audio
+
+As you can see from the output above, the snd_bcm2835 is the built-in sound card but we want the system to use snd_usb_audio
+
+5. We can change and force the system to load the sound cards in a different order by creating a sound configuration file. Create the file by using the command below:
+
+       sudo nano /etc/modprobe.d/alsa-base.conf
+
+You will then enter the Nano editor environment and type the following lines:
+
+       options snd_usb_audio index=0
+       options snd_bcm2835 index=1
+       options snd slots=snd-usb-audio,snd-bcm2835
+
+Afterwards, press Ctrl+X to exit and answer Yes when prompted to save.
+
+6. Reboot the system, exit EmulationStation once again to go to the terminal.
+
+7. If you've successfully completed all the above steps, you should see the output below when you type the command:
+
+       cat /proc/asound/modules
+
+Output should be:
+
+       0 snd_usb_audio
+       1 snd_bcm2835
+
+Notice that the order has changed and it's now the snd_usb_audio that's on top of the list with an index of 0
+
+8. Test the sound by going to EmulationStation and playing a game. You should immediately hear EmulationStation sounds when you go select from the list of games.
+
+Load EmulationStation by typing the following command:
+
+       emulationstation
+
