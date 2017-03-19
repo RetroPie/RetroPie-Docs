@@ -2,6 +2,51 @@
 
 This page is a list of all of the changelogs for each version of RetroPie. For a complete list of all commits to the source code see [here:](https://github.com/petrockblog/RetroPie-Setup/commits/master)  
 
+### Version 4.2: (March 19, 2017)
+
+Changes since 4.1
+
+- EmulationStation Improvements
+    - Video Support
+    - White Screen of Death Fix
+- Support for the ODroid-C2  (on top of the Ubuntu 16.04 minimal image).
+- Kodi 17 now installable from optional packages.
+- AdvanceMame has been updated and split into three separate packages -  0.94, 1.4 and v3.3.
+- Updated to RetroArch v1.5.0
+- To match upstream changes, lr-mupen64plus has been renamed to lr-parallel-n64, and lr-glupen64 has been renamed to lr-mupen64plus.
+- Fixed launching Pixel desktop and other X11 apps from Emulation Station.
+- Fixed problems building Zdoom, ResidualVM and Mupen64Plus and PPSSPP.
+- Doom ports will automatically add launch scripts if it finds doom1.wad, doom2.wad, tnt.wad, or plutonia.wad.
+- lr-snes9x emulator added - a libretro port of the current snes9x codebase.
+- Added Amiberry (an Amiga emulator), which is an updated fork of uae4arm, with more features.
+- Multi disk zip support for Vice (C64 emulator), fs-uae, uae4arm and Amiberry (Amiga). You can now launch Amiga disk images directly from Emulation Station with uae4arm and Amiberry.
+- Standalone version of Stella (Atari 2600 emulator) updated to v4.7.3.
+- usbromservice - support mounting of usb stick over ~/RetroPie to keep roms on USB.
+- Ability to set custom ES themes in configs/all/platforms.cfg (can override any setting in RetroPie-Setup/platforms.cfg).
+- SDL2 updated to 2.0.5. Our patched SDL2 is now used on the PC version of RetroPie, which should resolve an issue with ps3 controller mapping.
+- Sselph’s scraper updated to the latest version, and new options added. Scraper has been moved to optional packages and need to be installed before it will show up in configuration / tools.
+- Include PowerBlock and ControlBlock driver packages.
+- Input configuration script for Daphne.
+- RetroPie-Setup menus now works with all connected joysticks (mapping is still hardcoded).
+- Updated RPI detection code to support BRANCH=next firmware/kernel.
+- Overhaul of the runcommand launch script.
+- Raspbian Wheezy support removed.
+- Support Xbian on RPI,  and Devuan, Elementary OS, and Neon on X86.
+- New packages added to experimental section:
+- lr-mrboom (an 8 player bomberman clone).
+- lr-mame2016 (Arcade emulator).
+- lr-mess2016 (Multiple omputers/console emulator).
+- DraStic (Nintendo DS Emulator - RPI only).
+- lr-beetle-saturn (Sega Saturn emulator - x86_64 only).
+- Minivmac (Macintosh Plus Emulator).
+- Quasi88 (NEC PC-8801 emulator).
+- np2pi (NEC PC-9801 emulator).
+- Xm7 (FM-7 / Fujitsu Micro 7 emulator).
+- Mehstation and Attract-Mode Frontends.
+- launchingimages (a script from Meleu to generate system launch images based on installed Emulation Station themes).
+- Many other code changes and bugfixes.
+
+
 ### Version 4.1: (November 5, 2016)
 
 Changes since 4.0.2:
