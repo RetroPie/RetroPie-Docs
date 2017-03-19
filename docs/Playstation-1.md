@@ -241,7 +241,7 @@ Now go to RetroPie and run your game in the PSX emulator. You should be able to 
 Add different bios' that you've tested and tell the community if it works or not.
 
 Name |Description| md5          |        CRC32       | Comment
------|----------|--------------|--------------------|-----------|------
+-----|----------|--------------|--------------------|-----------|
 ps-10j|SCPH-1000/DTL-H1000 (Version 1.0 J)|239665b1a3dade1b5a52c06338011044|3b601fc8||
 ps-11j|SCPH-3000/DTL-H1000H (Version 1.1 01/22/95)|849515939161e62f6b866f6853006780|3539def6||
 ps-20a|DTL-H1001 (Version 2.0 05/07/95 A)|dc2b9bf8da62ec93e868cfd29f0d067d|55847d8c||
