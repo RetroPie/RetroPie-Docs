@@ -13,7 +13,7 @@ This page is a resource for additional details on RetroPie's Final Burn Alpha em
 [**All Arcade ROMS Compatibility List**](https://docs.google.com/spreadsheets/d/1antILt7D12EWOFzyJwTfB86NceghMJKXG7CdYumuHec/edit?usp=sharing) feel free to contribute to the list.
 
 | Emulator | Rom Folder | Required ROM Version | Controller Config |
-| :---: | :---: | :---: | :---: | :---: |
+| :---: | :---: | :---: | :---: |
 | [lr-fbalpha](#lr-fbalpha) | arcade **or** fba **or** neogeo  | FB Alpha v0.2.97.39| /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/fba/retroarch.cfg, **or** /opt/retropie/configs/neogeo/retroarch.cfg |
 | [lr-fbalpha2012](#lr-fbalpha2012) | arcade **or** fba **or** neogeo  | FB Alpha v0.2.97.30 | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/fba/retroarch.cfg, **or** /opt/retropie/configs/neogeo/retroarch.cfg |
 | [PiFBA](#pifba) | arcade **or** fba **or** neogeo  | FB Alpha 0.2.96.71 | /opt/retropie/emulators/pifba/fba2x.cfg **or** /opt/retropie/configs/fba/fba2x.cfg |
