@@ -29,7 +29,7 @@ Some graphic effects in some games can cause lag when displaying specific screen
 
 ### PlayStation, N64, Dreamcast, PSP
 
-Due to limited processing power and/or lack of emulator efficiency, some games will never achieve playable speeds.
+Due to limited processing power and/or lack of emulator efficiency, some games will never achieve playable speeds. PlayStation runs very good on Pi 3, but N64 emulation is hit or miss, mostly miss. If you want to play it at reasonable speeds, try to overclock it by using a heat sink. 
 
 ## Configuration Improvements
 
