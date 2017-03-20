@@ -6,6 +6,7 @@ With a custom firmware such as the pro CFW and ME CFW, and thanks to the natural
 * A 1GB+ memory stick pro duo
 * A mini USB to USB A cable
 * A custom firmware
+* A PC or your Pi to transfer the files
 * The [FuSa gamepad](http://foosa.do.am/load/fusa_gamepad_version_03/3-1-0-33) app
 
 # How to get started
@@ -33,3 +34,4 @@ For a consistent experience inside and outside Emulationstation includibg in Kod
 * The pi may not be able to charge your PSP, turn off USB charging and charge your PSP with its AC adapter, however it may (I am not sure at all) charge it if you turn off WLAN, my PSP did not went under 100% the last time I saw how many battery it had left
 * The volume buttons does not works in emulationstation or RetroArch
 * You can access to a more in depth configuration in the FuSa's ini files
+* You can use your cellphone with a Samba compatible file manager and a keyboard to transfer FuSa gamepad to your PC or Raspberry Pi rom folder, then with the keyboard you will need to open the RetroPie's file manager and navigate to your FuSa gamepad folder, plug your PSP, navigate to /PSP/GAME/ and copy your FuSa gamepad folder there; quit the USB mode in your PSP and from the file manager and run FuSa, you are good to go
