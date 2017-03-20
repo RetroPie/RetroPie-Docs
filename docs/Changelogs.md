@@ -32,18 +32,19 @@ Changes since 4.1
 - Overhaul of the runcommand launch script.
 - Raspbian Wheezy support removed.
 - Support Xbian on RPI,  and Devuan, Elementary OS, and Neon on X86.
+- Added emulationstation themes: fundamental, futura, and flat.
 - New packages added to experimental section:
-- lr-mrboom (an 8 player bomberman clone).
-- lr-mame2016 (Arcade emulator).
-- lr-mess2016 (Multiple omputers/console emulator).
-- DraStic (Nintendo DS Emulator - RPI only).
-- lr-beetle-saturn (Sega Saturn emulator - x86_64 only).
-- Minivmac (Macintosh Plus Emulator).
-- Quasi88 (NEC PC-8801 emulator).
-- np2pi (NEC PC-9801 emulator).
-- Xm7 (FM-7 / Fujitsu Micro 7 emulator).
-- Mehstation and Attract-Mode Frontends.
-- launchingimages (a script from Meleu to generate system launch images based on installed Emulation Station themes).
+    - lr-mrboom (an 8 player bomberman clone).
+    - lr-mame2016 (Arcade emulator).
+    - lr-mess2016 (Multiple omputers/console emulator).
+    - DraStic (Nintendo DS Emulator - RPI only).
+    - lr-beetle-saturn (Sega Saturn emulator - x86_64 only).
+    - Minivmac (Macintosh Plus Emulator).
+    - Quasi88 (NEC PC-8801 emulator).
+    - np2pi (NEC PC-9801 emulator).
+    - Xm7 (FM-7 / Fujitsu Micro 7 emulator).
+    - Mehstation and Attract-Mode Frontends.
+    - launchingimages (a script from Meleu to generate system launch images based on installed Emulation Station themes).
 - Many other code changes and bugfixes.
 
 
