@@ -32,7 +32,7 @@ You need to make sure your controller is running the relevant firmware for this 
 ![Hack Off](https://s22.postimg.org/df349yl29/2_5_Turn_hack_off.jpg)
 
 **5)** Make sure your controller is powered on and searching for a connection.
-With the FC30 Pro, this is done by holding the power button (left hand side of base of controller) on until the side blue lights illuminate. With the SFC30 this is done by holding the Start button until the blue LED lights up.
+With the FC30 Pro, this is done by holding the power button (left hand side of base of controller) on until the side blue lights illuminate. With the SFC30 this is done by holding the R+Start buttons until the blue LED lights up. Holding down the R shoulder button and then pressing start button ensures the controller is in the correct mode.
 
 **6)** Choose the "Register and Connect to Bluetooth Device"
 ![Main Bluetooth Menu](https://s22.postimg.org/lai92ik2p/3_Main_Bluetooth_Menu.jpg)
