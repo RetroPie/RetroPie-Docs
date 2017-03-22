@@ -1,6 +1,6 @@
 ![retropie_logo](https://cloud.githubusercontent.com/assets/10035308/21968193/e1670f2a-db46-11e6-8ff7-eb6d7188c9e7.png)
 
-|Version|4.1|
+|Version|4.2|
 |:---:|:---:|
 
 1. [Hardware](First-Installation#hardware)
@@ -178,6 +178,9 @@ see this video for reference:
 alt="Configuration Video" width="300" height="190" border="10" /></a>
 
 ### SFTP
+
+**NOTE** you need to [enable ssh](ssh) in order for SFTP to work.
+
 * Wired (needs ethernet cable)
 * Wireless (needs wifi dongle)
 There are many SFTP programs out there, for windows many people use [WinSCP](https://winscp.net/eng/download.php) for mac you can use something like [Cyberduck](https://cyberduck.io/?l=en)
