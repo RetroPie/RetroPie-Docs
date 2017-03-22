@@ -1,4 +1,4 @@
-# Install Emulationstation Themes
+## Install Emulationstation Themes
 
 Alternate themes can be easily installed with the RetroPie Theme Installer.
 
@@ -12,12 +12,7 @@ change to your new theme (you may need to press f4 or quit to refresh emulations
 
 ![emutheme](https://cloud.githubusercontent.com/assets/10035308/10356601/0b44d06e-6d36-11e5-89f6-e471ffafa54e.png)
 
-
-## White Screen of Death
-
-The white screen of death is no longer an issue. It has been resolved as of RetroPie 4.2
-
-#THEME GALLERY
+## Theme Gallery
 
 Access theme gallery in the esthemes menu
 
@@ -64,3 +59,6 @@ For an in depth tutorial see this thread [HERE](Creating-Your-Own-EmulationStati
 
 For the official documentation on themes see [HERE](https://github.com/Aloshi/EmulationStation/blob/master/THEMES.md)
 
+## White Screen of Death
+
+The white screen of death is no longer an issue. It has been resolved as of RetroPie 4.2
