@@ -179,7 +179,7 @@ alt="Configuration Video" width="300" height="190" border="10" /></a>
 
 ### SFTP
 
-**NOTE** you need to [enable ssh](ssh) in order for SFTP to work.
+**NOTE** you need to [enable SSH](SSH) in order for SFTP to work.
 
 * Wired (needs ethernet cable)
 * Wireless (needs wifi dongle)
