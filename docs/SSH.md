@@ -6,6 +6,8 @@ SSH stands for secure shell. You can remotely connect to the raspberry pi termin
 
 **Starting with RetroPie 4.2, in order to keep the default image secure SSH is disabled by default. It can be re-enabled in raspi-config in interfacing options >> SSH >> Enable >> reboot your pi**
 
+_For more information on why SSH was disabled see [HERE](https://www.raspberrypi.org/blog/a-security-update-for-raspbian-pixel/)_
+
 When you first start putty you can sign in with the following credentials:
 
 ![putty](https://cloud.githubusercontent.com/assets/10035308/10655671/23eaa6b2-7834-11e5-8c85-9266c5ab808a.png)
