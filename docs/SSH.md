@@ -1,5 +1,3 @@
-# SSH
-
 SSH stands for secure shell. You can remotely connect to the raspberry pi terminal with an SSH client. A popular ssh client is [Putty](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html) 
 
 **NOTE** Your Raspberry Pi needs to be connected to the same network (either via Ethernet or Wifi Dongle) as the computer you are accessing it from. 
@@ -70,7 +68,7 @@ sudo chown -R pi:pi /folder/to/be/changed
 sudo chmod +x yourshellscript.sh
 ```
 
-### Extra Configurations
+## Extra Configurations
 
 If you find that you are getting weird characters on the dialog gui for the RetroPie Setup script you can change the font encoding to make it look pretty again.
 
