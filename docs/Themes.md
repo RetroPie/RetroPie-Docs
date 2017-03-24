@@ -57,7 +57,7 @@ Access theme gallery in the esthemes menu
 
 For an in depth tutorial see this thread [HERE](Creating-Your-Own-EmulationStation-Theme)
 
-For the official documentation on themes see [HERE](https://github.com/Aloshi/EmulationStation/blob/master/THEMES.md)
+For the official documentation on themes see [HERE](https://github.com/RetroPie/EmulationStation/blob/master/THEMES.md)
 
 ## White Screen of Death
 
