@@ -136,26 +136,8 @@ In retropie setup script>>Configuration / tools>>autostart
 
 ### How do I remove the black borders?
 
-Depending on the resolution of your television you may get black borders around your tv. You can full the whole expanse of your screen by editing the overscan settings. Exit to the terminal with F4 or access your pi over [SSH](ssh)
+See [[Overscan]]
 
-```
-sudo nano /boot/config.txt
-```
-uncomment (i.e. delete the `#` preceding the line) 
-
-```
-#disable_overscan=1
-```
-
-to
-
-```
-disable_overscan=1
-```
-
-save with `ctrl+x` 
-
-then reboot. If it doesn't work then try messing with some of the other [overscan](http://elinux.org/R-Pi_Troubleshooting#Big_black_borders_around_small_image_on_HD_monitors) settings manually 
 ### How do I change which buttons to press to exit an emulator with a controller?
 
 Hotkeys are combinations of buttons you can press in order to access options such as saving, loading, and exiting games. The following defaults are set automatically the first time you set up your controller from emulationstation.
