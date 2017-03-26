@@ -22,7 +22,7 @@ This should be a rarer scenario. In this case you need to do some configuration 
 
 https://www.youtube.com/watch?v=AYB6r7q9JkU
 
-Summarised: You can filll the whole expanse of your screen by editing the overscan settings. Exit to the terminal with F4 or access your pi over [SSH](ssh)
+Summarised: You can fill the whole expanse of your screen by editing the overscan settings. Exit to the terminal with F4 or access your pi over [SSH](ssh)
 ```
 sudo nano /boot/config.txt
 ```
