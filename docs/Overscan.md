@@ -21,3 +21,19 @@ Look for "Dot by Dot".
 This should be a rarer scenario. In this case you need to do some configuration changes. Please consult this video:
 
 https://www.youtube.com/watch?v=AYB6r7q9JkU
+
+Summarised: You can filll the whole expanse of your screen by editing the overscan settings. Exit to the terminal with F4 or access your pi over [SSH](ssh)
+```
+sudo nano /boot/config.txt
+```
+uncomment (i.e. delete the `#` preceding the line) 
+```
+#disable_overscan=1
+```
+to
+```
+disable_overscan=1
+```
+save with `ctrl+x` 
+
+Then reboot. If it doesn't work then try messing with some of the other [overscan](http://elinux.org/R-Pi_Troubleshooting#Big_black_borders_around_small_image_on_HD_monitors) settings manually 
