@@ -1,5 +1,3 @@
-Draft page...
-
 "Overscan" is the term used to describe the practice of TVs hiding the extreme edges of the picture they receive. In old CRT TVs this was because the edge of the tube would have produced a bad image, so the viewable area was reduced. This has since become a broadcast standard so there is often garbage and computer signals carried on the border of television broadcasts, so even HDTVs presume these extreme edges should be hidden. You can read more about overscan [here](https://www.engadget.com/2010/05/27/hd-101-overscan-and-why-all-tvs-do-it/).
 
 The various components of RetroPie typically don't account for overscan, and will often include important information across the entire image. For this reason, overscan can be an issue.
@@ -20,4 +18,6 @@ Look for "Dot by Dot".
 
 ## My image has a border!
 
-This should be a rarer scenario. In this case you need to do some configuration changes ...
+This should be a rarer scenario. In this case you need to do some configuration changes. Please consult this video:
+
+https://www.youtube.com/watch?v=AYB6r7q9JkU
