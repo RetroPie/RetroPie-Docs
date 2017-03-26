@@ -1,4 +1,4 @@
-Setting in in `/boot/config.txt`
+Setting in `/boot/config.txt`
 ```
 hdmi_drive=2
 ```
