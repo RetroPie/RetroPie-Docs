@@ -277,11 +277,15 @@ btn_trigger_right = 311
 ```
 
 **8Bitdo NES30 Pro**
----
 
+Open the configuration file using a text editor, e.g.:
+```
 sudo nano /opt/retropie/configs/dreamcast/mappings/controller_8BitdoNES30Pro.cfg
+```
 
+The content of the file should look like this:
 
+```
 [emulator]
 mapping_name = 8Bitdo NES30 Pro
 btn_escape = 314
@@ -321,7 +325,7 @@ axis_trigger_left_inverted =
 axis_trigger_right_inverted =
 axis_dpad1_y_inverted = no
 axis_dpad1_x_inverted = no
----
+```
 
 **Mobile Gamepad [EXPERIMENTAL]**
 ```
