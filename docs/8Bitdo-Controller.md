@@ -89,9 +89,12 @@ The process will have written various controller configuration files for you.
 The main RetroArch controller file will now be in:
 `/opt/retropie/configs/all/retroarch-joypads/`
 
-Here are some examples of the file that should be written.  
-[FC30 Pro RetroArch config file](http://pastebin.com/raw/YCj3NW0h) (Firmware 1.69 - 8BitdoFC30Pro.cfg)  
+Here are some examples of the file that should be written. 
+******FC30 ******
+[FC30 Pro RetroArch config file](http://pastebin.com/raw/YCj3NW0h) (Firmware 1.69 - 8BitdoFC30Pro.cfg) 
+******SFC30 ******
 [SFC30 RetroArch config file](http://pastebin.com/raw/ZKbDkCBt) (Firmware 2.68 - 8BitdoSFC30GamePad.cfg)
+******SNES30******
 [SNES30 RetroArch config file](https://pastebin.com/pfRyAk9s) (Firmware 3.00 - 8Bitdo SNES30 GamePad.cfg)
 
 ## Video Guide:
