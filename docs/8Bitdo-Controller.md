@@ -92,13 +92,14 @@ The main RetroArch controller file will now be in:
 Here are some examples of the file that should be written.  
 [FC30 Pro RetroArch config file](http://pastebin.com/raw/YCj3NW0h) (Firmware 1.69 - 8BitdoFC30Pro.cfg)  
 [SFC30 RetroArch config file](http://pastebin.com/raw/ZKbDkCBt) (Firmware 2.68 - 8BitdoSFC30GamePad.cfg)
+[SNES30 RetroArch config file](https://pastebin.com/pfRyAk9s) (Firmware 3.00 - 8Bitdo SNES30 GamePad.cfg)
 
 ## Video Guide:
 <a href="https://www.youtube.com/watch?v=e2We6AElqg8" target="_blank"><img src="https://i.ytimg.com/vi_webp/e2We6AElqg8/mqdefault.webp" 
 alt="8bitdo controller with RetroPie" width="300" height="180" border="10" /></a>
 
 ### Firmware Versions for 8bitdo controllers
-SNES30 (Firmware version 2.68 - 6th August 2016)  
+SNES30 (Firmware version 3.00 - 20th March 2017)  
 SFC30 (Firmware version 2.68 - 6th August 2016)  
   
 NES30 Pro (Firmware version 1.69 - 21st March 2016)  
