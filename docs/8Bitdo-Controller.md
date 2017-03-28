@@ -101,7 +101,7 @@ Here are some examples of the file that should be written.
 
 **SNES30**
 
-[SNES30 RetroArch config file](https://pastebin.com/pfRyAk9s) (Firmware 3.00 - 8Bitdo SNES30 GamePad.cfg)
+[SNES30 RetroArch config file](https://pastebin.com/raw/pfRyAk9s) (Firmware 3.00 - 8Bitdo SNES30 GamePad.cfg)
 
 ## Video Guide:
 <a href="https://www.youtube.com/watch?v=e2We6AElqg8" target="_blank"><img src="https://i.ytimg.com/vi_webp/e2We6AElqg8/mqdefault.webp" 
