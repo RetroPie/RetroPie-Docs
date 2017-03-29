@@ -16,7 +16,6 @@ Note that lr-desmume is very experimental and lags quite a bit even with an over
 ## BIOS
 
 Not needed
-```
 
 ## ROMS
 Accepted File Extensions: **.nds .zip**
