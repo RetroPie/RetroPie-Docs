@@ -31,7 +31,7 @@ For a consistent experience inside and outside Emulationstation includibg in Kod
 
 * The PSP Go and street are not supported
 * If your PSP is in a good condition this is much better than a generic controller or a 360 gamepad, the buttons are really responsive and the D Pad ideal for retro gaming
-* The pi is capable to fully charge the PSP but is recommended to turn off the Wlan switch and to use a good quality Micro USB type B, the retractible multi connector cable used in the picture can not charge it
+* The pi is capable to fully charge the PSP but is recommended to use a good quality Micro USB type B, the retractible multi connector cable used in the picture can not charge it
 * The volume buttons does not works in emulationstation or RetroArch
 * You can access to a more in depth configuration in the FuSa's ini files
 * If you are using a Raspberry pi you can use a cellphone with a Samba compatible file manager and a keyboard to transfer FuSa gamepad to your Pi's rom folder, then with a keyboard you will need to open the RetroPie's file manager and navigate to your FuSa gamepad folder, plug your PSP, navigate to /PSP/GAME/ and copy your FuSa gamepad folder there; quit the USB mode in the PSP and from the file manager and run FuSa, you are good to go
