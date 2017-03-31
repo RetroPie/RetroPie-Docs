@@ -1,12 +1,17 @@
-**Note** that if you have wireless controllers you will need a wireless receiver plugged into your raspberry pi (Official Microsoft xbox360 receiver, or knock offs like zettaguard, VicTsing also work. Play and charge cables will not work. You need a wireless receiver), then to connect:
+## Wireless Receiver
 
-- press the button on the receiver 
-- then press the tiny wireless button on the top of the controller 
-- you may need to repeat for each controller
+To use wireless Xbox 360 controllers, you will also need a USB wireless receiver plugged into your Raspberry Pi. The Official Microsoft Xbox 360 receiver or a generic brand like zettaguard, VicTsing will work. You can pair multiple controllers to a single wireless receiver. Play and charging cables will not work.
 
-## Automatic Configuration (Easiest)
+To pair your controller(s) with the wireless receiver:
 
-## Xpad Driver:
+- turn on your wireless Xbox 360 controller (hold down the Guide button)
+- press the connect button on the receiver (green light will start flash)
+- then press the tiny connect button on the top of the controller 
+- you will need to repeat these steps to pair each additional controller
+
+# Automatic Configuration (Easiest)
+
+## Xpad Driver
 
 Starting with the RetroPie 4.1 SD image, the Xpad driver is enabled by default and the following steps are unnecessary.
 
@@ -14,7 +19,7 @@ With the recent kernel issues of xboxdrv rendering images unusable, there is an 
 
 You access the driver through **Manage Packages** >> **Manage Driver Packages** >> **Xpad Driver** and you'll install it from source. Reboot for good measure, reconfigure your controllers and the lights should work properly.
 
-A complete working config (that was generated from the emulationstation configuration) is listed below at `/opt/retropie/configs/all/retroarch-joypads/Xbox360WirelessReceiver(XBOX).cfg`
+A complete working config (that was generated from the EmulationStation configuration) is listed below at `/opt/retropie/configs/all/retroarch-joypads/Xbox360WirelessReceiver(XBOX).cfg`
 
 ```
 input_device = "Xbox 360 Wireless Receiver (XBOX)"
@@ -55,9 +60,9 @@ input_l2_axis = "+2"
 
 ## Xboxdrv Driver
 
-**Note! There are known incompatibilities with this driver when used in it's default configuration with the latest kernel. As such, xpad is currently the best driver option to simply make an XBox 360 controller operational in RetroPie.**
+**Note! There are known incompatibilities with this driver when used in it's default configuration with the latest kernel. As such, the xpad drive is currently the best option to simply make an Xbox 360 controller operational in RetroPie.**
 
-**However, these incompatibilities are not an issue when [using xboxdrv as a calibration and key-mapping tool](https://github.com/retropie/retropie-setup/wiki/Universal-Controller-Calibration-&-Mapping-Using-xboxdrv) for almost any gamepad, including the XBox 360 controller. When used this way, it's even possible for both xpad and xboxdrv to coexist together.**
+**However, these incompatibilities are not an issue when [using xboxdrv as a calibration and key-mapping tool](https://github.com/retropie/retropie-setup/wiki/Universal-Controller-Calibration-&-Mapping-Using-xboxdrv) for almost any gamepad, including the Xbox 360 controller. When used this way, it's even possible for both xpad and xboxdrv to coexist together.**
 
 Access the [RetroPie Setup Script](Updating-RetroPie) and navigate to **Manage Packages >> Manage Driver Packages >> xboxdrv** 
 
@@ -70,11 +75,11 @@ Access the [RetroPie Setup Script](Updating-RetroPie) and navigate to **Manage P
 5. **Set dwc_otg.speed=1 in /boot/config.txt:** May help if controller is being glitchy.
 6. **Remove dwc_otg.speed=1 from /boot/config.txt:** Removes the config.
 
-**After you have enabled the driver and rebooted you'll need to reconfigure your controller(s) in emulationstation as described on the [first installation page](https://github.com/RetroPie/RetroPie-Setup/wiki/First-Installation#controller-configurations)**
+**After you have enabled the driver and rebooted you'll need to reconfigure your controller(s) in EmulationStation as described on the [first installation page](https://github.com/RetroPie/RetroPie-Setup/wiki/First-Installation#controller-configurations)**
 
 Alternatively if you prefer you can manually install it..
 
-## Manual Configuration
+# Manual Configuration
 
 RetroPie 3.3 contains a newer xboxdrv at /opt/retropie/supplementary/xboxdrv/bin/xboxdrv - which is preferable over the older Debian package. On older RetroPie images you can install the Debian package.
 
@@ -248,6 +253,8 @@ To specifiy the amount of controller, edit the variable CONTROLLER_NUM. If you h
 
 It is generally advisable to use the daemon mode, 'cause it uses less CPU and RAM instead of several xboxdrv processes for each controller.
 
+# Additional Configuration Information
+
 ## Xbox 360 controller glitchy?
 
 According to [this post](https://github.com/petrockblog/RetroPie-Setup/issues/214#issuecomment-21796016) it might help to add the line ```dwc_otg.speed=1```to the file ```/boot/cmdline.txt```.
@@ -395,7 +402,7 @@ This is what makes the Xbox 360 controller the best for this project.
 
 
 
-Now, whenever you press the xbox (guide) button on either controller 1 or 2, it will change the control scheme. For player 1, the controller starts up in normal mode. Hitting the xbox button will change to player1.cfg. Hitting it again will enable mouse emulation. One more time will bring back normal operation. Controller 2 cycles between normal operation and player2.cfg. Controllers 3 and 4 are uneffected.
+Now, whenever you press the Xbox (guide) button on either controller 1 or 2, it will change the control scheme. For player 1, the controller starts up in normal mode. Hitting the Xbox button will change to player1.cfg. Hitting it again will enable mouse emulation. One more time will bring back normal operation. Controller 2 cycles between normal operation and player2.cfg. Controllers 3 and 4 are unaffected.
 
 
 Here's a little explanation of xboxdrv_player1.cfg (player2 is similar):
