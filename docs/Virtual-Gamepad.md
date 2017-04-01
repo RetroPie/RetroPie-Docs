@@ -44,6 +44,13 @@ wget http://node-arm.herokuapp.com/node_archive_armhf.deb
 sudo dpkg -i node_archive_armhf.deb
 rm node_archive_armhf.deb
 
+### Update Node.js and NPM
+
+sudo npm cache clean -f
+sudo npm install -g n
+sudo n stable
+sudo npm install -g npm
+
 ### Install Virtual Gamepad (Must Be Run As Root!)
 
 su
