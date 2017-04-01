@@ -9,9 +9,9 @@ To pair your controller(s) with the wireless receiver:
 - then press the tiny connect button on the top of the controller 
 - you will need to repeat these steps to pair each additional controller
 
-# Automatic Configuration (Easiest)
+## Automatic Configuration (Easiest)
 
-## Xpad Driver
+### Xpad Driver
 
 Starting with the RetroPie 4.1 SD image, the Xpad driver is enabled by default and the following steps are unnecessary.
 
@@ -79,7 +79,7 @@ Access the [RetroPie Setup Script](Updating-RetroPie) and navigate to **Manage P
 
 Alternatively if you prefer you can manually install it..
 
-# Manual Configuration
+## Manual Configuration
 
 RetroPie 3.3 contains a newer xboxdrv at /opt/retropie/supplementary/xboxdrv/bin/xboxdrv - which is preferable over the older Debian package. On older RetroPie images you can install the Debian package.
 
@@ -253,9 +253,9 @@ To specifiy the amount of controller, edit the variable CONTROLLER_NUM. If you h
 
 It is generally advisable to use the daemon mode, 'cause it uses less CPU and RAM instead of several xboxdrv processes for each controller.
 
-# Additional Configuration Information
+### Additional Configuration Information
 
-## Xbox 360 controller glitchy?
+#### Xbox 360 controller glitchy?
 
 According to [this post](https://github.com/petrockblog/RetroPie-Setup/issues/214#issuecomment-21796016) it might help to add the line ```dwc_otg.speed=1```to the file ```/boot/cmdline.txt```.
 
@@ -331,7 +331,7 @@ JA_UD_2=1
 Up until now, I didn't figure out how to change the configuration from the analog sticks to the digipad. To exit the emulator, press START and SELECT together.
 
 
-## Alternate Controller Configurations
+#### Alternate Controller Configurations
 This is what makes the Xbox 360 controller the best for this project.
 
 [xboxdrv_player1.cfg](http://blog.petrockblock.com/wp-content/uploads/2016/01/xboxdrv_player1.cfg_.txt)
