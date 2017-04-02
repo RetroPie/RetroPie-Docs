@@ -1,0 +1,2919 @@
+
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="shortcut icon" href="../assets/images/favicon.ico">
+      
+      <meta name="generator" content="mkdocs+mkdocs-material#1.0.3">
+    
+    
+      
+        <title>Wiimotes - RetroPie Docs</title>
+      
+    
+    
+      <script src="../assets/javascripts/modernizr-facb31f4a3.js"></script>
+    
+    
+      
+        
+        
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application-f3ab63f78a.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/application-02ce7adcc2.palette.css">
+      
+      
+        <link rel="stylesheet" href="../stylesheets/extra.css">
+      
+    
+    
+  </head>
+  
+  
+  
+  
+    <body data-md-color-primary="red" data-md-color-accent="red">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <header class="md-header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href=".." title="RetroPie Docs" class=" md-logo  md-header-nav__button">
+          
+            <img src="../images/logo.svg" width="24" height="24">
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <span class="md-flex__ellipsis md-header-nav__title">
+          
+            
+              
+                <span class="md-header-nav__parent">
+                  Controllers
+                </span>
+              
+            
+            Wiimotes
+          
+        </span>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+          
+<div class="md-search" data-md-component="search">
+  <div class="md-search__overlay"></div>
+  <div class="md-search__inner">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" accesskey="s" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false">
+      <label class="md-icon md-search__icon" for="search"></label>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+              
+
+
+  
+
+
+  <a href="https://github.com/RetroPie/RetroPie-Setup" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      RetroPie-Setup
+    </div>
+  </a>
+
+            
+          </div>
+      </div>
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    <i class=" md-logo  md-nav__button">
+      
+        <img src="../images/logo.svg">
+      
+    </i>
+    RetroPie Docs
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/RetroPie/RetroPie-Setup" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      RetroPie-Setup
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  <li class="md-nav__item">
+    
+      <a href=".." title="Home" class="md-nav__link">
+        Home
+      </a>
+    
+  </li>
+
+    
+      
+      
+  <li class="md-nav__item">
+    
+      <a href="../First-Installation/" title="First Installation" class="md-nav__link">
+        First Installation
+      </a>
+    
+  </li>
+
+    
+      
+      
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Getting Started
+    </label>
+    <nav class="md-nav" data-md-component="collapsible">
+      <label class="md-nav__title" for="nav-3">
+        Getting Started
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Controller-Configuration/" title="Controller Configuration" class="md-nav__link">
+        Controller Configuration
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Transferring-Roms/" title="Transferring Roms" class="md-nav__link">
+        Transferring Roms
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Runcommand/" title="Runcommand" class="md-nav__link">
+        Runcommand
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Updating-RetroPie/" title="Updating RetroPie" class="md-nav__link">
+        Updating RetroPie
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../SSH/" title="SSH" class="md-nav__link">
+        SSH
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Wifi/" title="Wifi" class="md-nav__link">
+        Wifi
+      </a>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Arcade
+    </label>
+    <nav class="md-nav" data-md-component="collapsible">
+      <label class="md-nav__title" for="nav-4">
+        Arcade
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Arcade/" title="Arcade Quick Start" class="md-nav__link">
+        Arcade Quick Start
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../MAME/" title="MAME" class="md-nav__link">
+        MAME
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../lr-mame2003/" title="lr-mame2003" class="md-nav__link">
+        lr-mame2003
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../FinalBurn-Alpha/" title="FinalBurn Alpha" class="md-nav__link">
+        FinalBurn Alpha
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../lr-fbalpha/" title="lr-fbalpha" class="md-nav__link">
+        lr-fbalpha
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Neo-Geo/" title="Neo Geo" class="md-nav__link">
+        Neo Geo
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Validating,-Rebuilding,-and-Filtering-Arcade-ROMs/" title="Validating, Rebuilding, and Filtering Arcade ROMs" class="md-nav__link">
+        Validating, Rebuilding, and Filtering Arcade ROMs
+      </a>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Emulators
+    </label>
+    <nav class="md-nav" data-md-component="collapsible">
+      <label class="md-nav__title" for="nav-5">
+        Emulators
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../3do/" title="3do" class="md-nav__link">
+        3do
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Amiga/" title="Amiga" class="md-nav__link">
+        Amiga
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Amstrad-CPC/" title="Amstrad CPC" class="md-nav__link">
+        Amstrad CPC
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Apple-II/" title="Apple II" class="md-nav__link">
+        Apple II
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Atari-2600/" title="Atari 2600" class="md-nav__link">
+        Atari 2600
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Atari-7800/" title="Atari 7800" class="md-nav__link">
+        Atari 7800
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Atari-800-and-5200/" title="Atari 800 and 5200" class="md-nav__link">
+        Atari 800 and 5200
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Atari-Jaguar/" title="Atari Jaguar" class="md-nav__link">
+        Atari Jaguar
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Atari-Lynx/" title="Atari Lynx" class="md-nav__link">
+        Atari Lynx
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Atari-ST-STE-TT-Falcon/" title="Atari ST-STE-TT-Falcon" class="md-nav__link">
+        Atari ST-STE-TT-Falcon
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Coco/" title="Coco" class="md-nav__link">
+        Coco
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Colecovision/" title="Colecovision" class="md-nav__link">
+        Colecovision
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Commodore-64/" title="Commodore 64" class="md-nav__link">
+        Commodore 64
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Daphne/" title="Daphne" class="md-nav__link">
+        Daphne
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Dragon/" title="Dragon" class="md-nav__link">
+        Dragon
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Dreamcast/" title="Dreamcast" class="md-nav__link">
+        Dreamcast
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Famicom-Disk-System/" title="Famicom Disk System" class="md-nav__link">
+        Famicom Disk System
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Game-Boy-Advance/" title="Game Boy Advance" class="md-nav__link">
+        Game Boy Advance
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Game-Boy-Color/" title="Game Boy Color" class="md-nav__link">
+        Game Boy Color
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Game-Boy/" title="Game Boy" class="md-nav__link">
+        Game Boy
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../GameCube/" title="GameCube" class="md-nav__link">
+        GameCube
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Game-Gear/" title="Game Gear" class="md-nav__link">
+        Game Gear
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Game-&-Watch/" title="Game & Watch" class="md-nav__link">
+        Game & Watch
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../GemRB/" title="GemRB" class="md-nav__link">
+        GemRB
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Genesis-Megadrive/" title="Genesis/Megadrive" class="md-nav__link">
+        Genesis/Megadrive
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Intellivision/" title="Intellivision" class="md-nav__link">
+        Intellivision
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Love/" title="Love" class="md-nav__link">
+        Love
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Macintosh/" title="Macintosh" class="md-nav__link">
+        Macintosh
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Master-System/" title="Master System" class="md-nav__link">
+        Master System
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../MESS/" title="MESS" class="md-nav__link">
+        MESS
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../MSX/" title="MSX" class="md-nav__link">
+        MSX
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Neo-Geo-Pocket-Color/" title="Neo Geo Pocket Color" class="md-nav__link">
+        Neo Geo Pocket Color
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Neo-Geo-Pocket/" title="Neo Geo Pocket" class="md-nav__link">
+        Neo Geo Pocket
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Nintendo-64/" title="Nintendo 64" class="md-nav__link">
+        Nintendo 64
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Nintendo-DS/" title="Nintendo DS" class="md-nav__link">
+        Nintendo DS
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Nintendo-Entertainment-System/" title="Nintendo Entertainment System" class="md-nav__link">
+        Nintendo Entertainment System
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../OpenBOR/" title="OpenBOR" class="md-nav__link">
+        OpenBOR
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Oric/" title="Oric" class="md-nav__link">
+        Oric
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../PC-Engine/" title="PC Engine" class="md-nav__link">
+        PC Engine
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../PC/" title="PC" class="md-nav__link">
+        PC
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Playstation-1/" title="Playstation 1" class="md-nav__link">
+        Playstation 1
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Playstation-2/" title="Playstation 2" class="md-nav__link">
+        Playstation 2
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../PSP/" title="PSP" class="md-nav__link">
+        PSP
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Sam-Coupe/" title="Sam Coupe" class="md-nav__link">
+        Sam Coupe
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Saturn/" title="Saturn" class="md-nav__link">
+        Saturn
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../ScummVM/" title="ScummVM" class="md-nav__link">
+        ScummVM
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Sega-32X/" title="Sega 32X" class="md-nav__link">
+        Sega 32X
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Sega-CD/" title="Sega CD" class="md-nav__link">
+        Sega CD
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../SG-1000/" title="SG 1000" class="md-nav__link">
+        SG 1000
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Super-Nintendo-Entertainment-System/" title="Super Nintendo Entertainment System" class="md-nav__link">
+        Super Nintendo Entertainment System
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../TI-99/" title="TI-99" class="md-nav__link">
+        TI-99
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../TRS-80/" title="TRS-80" class="md-nav__link">
+        TRS-80
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Vectrex/" title="Vectrex" class="md-nav__link">
+        Vectrex
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../VideoPac-Odyssey-2/" title="VideoPac / Odyssey 2" class="md-nav__link">
+        VideoPac / Odyssey 2
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Virtual-Boy/" title="Virtual Boy" class="md-nav__link">
+        Virtual Boy
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Wii/" title="Wii" class="md-nav__link">
+        Wii
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Wonderswan-Color/" title="Wonderswan Color" class="md-nav__link">
+        Wonderswan Color
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../WonderSwan/" title="WonderSwan" class="md-nav__link">
+        WonderSwan
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Zmachine/" title="Zmachine" class="md-nav__link">
+        Zmachine
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../ZX-Spectrum/" title="ZX Spectrum" class="md-nav__link">
+        ZX Spectrum
+      </a>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Ports
+    </label>
+    <nav class="md-nav" data-md-component="collapsible">
+      <label class="md-nav__title" for="nav-6">
+        Ports
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Adventure-Game-Studio/" title="Adventure Game Studio" class="md-nav__link">
+        Adventure Game Studio
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Cannonball/" title="Cannonball" class="md-nav__link">
+        Cannonball
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Cave-Story/" title="CaveStory" class="md-nav__link">
+        CaveStory
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Commander-Keen/" title="Commander Keen" class="md-nav__link">
+        Commander Keen
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Descent/" title="Descent" class="md-nav__link">
+        Descent
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Dinothawr/" title="Dinothawr" class="md-nav__link">
+        Dinothawr
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Doom/" title="Doom" class="md-nav__link">
+        Doom
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Duke-Nukem-3D/" title="Duke Nukem 3D" class="md-nav__link">
+        Duke Nukem 3D
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../GameMaker-Games/" title="GameMaker Games" class="md-nav__link">
+        GameMaker Games
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../KODI/" title="KODI" class="md-nav__link">
+        KODI
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Limelight/" title="Limelight" class="md-nav__link">
+        Limelight
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Lincity/" title="Lincity" class="md-nav__link">
+        Lincity
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Marathon/" title="Marathon" class="md-nav__link">
+        Marathon
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Micropolis/" title="Micropolis" class="md-nav__link">
+        Micropolis
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Minecraft/" title="Minecraft" class="md-nav__link">
+        Minecraft
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../OpenTTD/" title="OpenTTD" class="md-nav__link">
+        OpenTTD
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../OpenTyrian/" title="OpenTyrian" class="md-nav__link">
+        OpenTyrian
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Ports/" title="Ports" class="md-nav__link">
+        Ports
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Quake/" title="Quake" class="md-nav__link">
+        Quake
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../ResidualVM/" title="ResidualVM" class="md-nav__link">
+        ResidualVM
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../SDLPoP/" title="SDLPoP" class="md-nav__link">
+        SDLPoP
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Solarus/" title="Solarus" class="md-nav__link">
+        Solarus
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Stratagus/" title="Stratagus" class="md-nav__link">
+        Stratagus
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Super-Mario-War/" title="Super Mario War" class="md-nav__link">
+        Super Mario War
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../SuperTux/" title="SuperTux" class="md-nav__link">
+        SuperTux
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../The-Ur-Quan-Masters/" title="The Ur Quan Masters" class="md-nav__link">
+        The Ur Quan Masters
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Wolfenstein-3D/" title="Wolfenstein 3D" class="md-nav__link">
+        Wolfenstein 3D
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Xrick/" title="Xrick" class="md-nav__link">
+        Xrick
+      </a>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7" checked>
+    
+    <label class="md-nav__link" for="nav-7">
+      Controllers
+    </label>
+    <nav class="md-nav" data-md-component="collapsible">
+      <label class="md-nav__title" for="nav-7">
+        Controllers
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Xbox-360-Controller/" title="Xbox 360" class="md-nav__link">
+        Xbox 360
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../PS3-Controller/" title="PS3" class="md-nav__link">
+        PS3
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../8Bitdo-Controller/" title="8Bitdo" class="md-nav__link">
+        8Bitdo
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Bluetooth-Controller/" title="Bluetooth" class="md-nav__link">
+        Bluetooth
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Logitech-Controller/" title="Logitech" class="md-nav__link">
+        Logitech
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../N64-Controller/" title="N64" class="md-nav__link">
+        N64
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../PS4-Controller/" title="PS4" class="md-nav__link">
+        PS4
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Ouya-Controller/" title="Ouya" class="md-nav__link">
+        Ouya
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Xiaomi-Controller/" title="Xiaomi" class="md-nav__link">
+        Xiaomi
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Xin-Mo-Controller/" title="Xin-Mo" class="md-nav__link">
+        Xin-Mo
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Spinners-and-Trackballs/" title="Spinners and Trackballs" class="md-nav__link">
+        Spinners and Trackballs
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Mobile-Gamepad/" title="Mobile Gamepad" class="md-nav__link">
+        Mobile Gamepad
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Virtual-Gamepad/" title="Virtual Gamepad" class="md-nav__link">
+        Virtual Gamepad
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Wii-U-Pro-Controller/" title="Wii U Pro" class="md-nav__link">
+        Wii U Pro
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+      
+    
+    
+    <a href="./" title="Wiimotes" class="md-nav__link md-nav__link--active">
+      Wiimotes
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../GPIO-Modules/" title="GPIO Modules" class="md-nav__link">
+        GPIO Modules
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Mapping-a-Controller-for-Intellivision/" title="Mapping a Controller for Intellivision" class="md-nav__link">
+        Mapping a Controller for Intellivision
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Universal-Controller-Calibration-&-Mapping-Using-xboxdrv/" title="Universal Controller Calibration & Mapping Using xboxdrv" class="md-nav__link">
+        Universal Controller Calibration & Mapping Using xboxdrv
+      </a>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
+    
+    <label class="md-nav__link" for="nav-8">
+      Advanced Configuration
+    </label>
+    <nav class="md-nav" data-md-component="collapsible">
+      <label class="md-nav__title" for="nav-8">
+        Advanced Configuration
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../BIOS/" title="BIOS" class="md-nav__link">
+        BIOS
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Configuration-Editor/" title="Configuration Editor" class="md-nav__link">
+        Configuration Editor
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Memory-Split/" title="Memory Split" class="md-nav__link">
+        Memory Split
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Overclocking/" title="Overclocking" class="md-nav__link">
+        Overclocking
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Optimization-for-Nintendo-64/" title="Optimization for Nintendo 64" class="md-nav__link">
+        Optimization for Nintendo 64
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Running-ROMs-from-a-Network-Share/" title="Running ROMs from a Network Share" class="md-nav__link">
+        Running ROMs from a Network Share
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Running-ROMs-from-a-USB-drive/" title="Running ROMs from a USB drive" class="md-nav__link">
+        Running ROMs from a USB drive
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Splashscreen/" title="Splashscreen" class="md-nav__link">
+        Splashscreen
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Take-and-Scrape-Your-Own-Screenshots/" title="Take and Scrape Your Own Screenshots" class="md-nav__link">
+        Take and Scrape Your Own Screenshots
+      </a>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-9" type="checkbox" id="nav-9">
+    
+    <label class="md-nav__link" for="nav-9">
+      RetroArch
+    </label>
+    <nav class="md-nav" data-md-component="collapsible">
+      <label class="md-nav__title" for="nav-9">
+        RetroArch
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../RetroArch/" title="RetroArch" class="md-nav__link">
+        RetroArch
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../RetroArch-Configuration/" title="RetroArch Controller Configuration" class="md-nav__link">
+        RetroArch Controller Configuration
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../RetroAchievements/" title="RetroAchievements" class="md-nav__link">
+        RetroAchievements
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Cheats/" title="Cheats" class="md-nav__link">
+        Cheats
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Netplay/" title="Netplay" class="md-nav__link">
+        Netplay
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Shaders-and-Smoothing/" title="Shaders and Smoothing" class="md-nav__link">
+        Shaders and Smoothing
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Smaller-RetroArch-Screen/" title="Smaller RetroArch Screen" class="md-nav__link">
+        Smaller RetroArch Screen
+      </a>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-10" type="checkbox" id="nav-10">
+    
+    <label class="md-nav__link" for="nav-10">
+      EmulationStation
+    </label>
+    <nav class="md-nav" data-md-component="collapsible">
+      <label class="md-nav__title" for="nav-10">
+        EmulationStation
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../EmulationStation/" title="EmulationStation" class="md-nav__link">
+        EmulationStation
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Scraper/" title="Scraper" class="md-nav__link">
+        Scraper
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Themes/" title="Themes" class="md-nav__link">
+        Themes
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Creating-Your-Own-EmulationStation-Theme/" title="Creating Your Own EmulationStation Theme" class="md-nav__link">
+        Creating Your Own EmulationStation Theme
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Add-a-New-System-in-EmulationStation/" title="Add a New System in EmulationStation" class="md-nav__link">
+        Add a New System in EmulationStation
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Child-friendly-EmulationStation/" title="Child friendly EmulationStation" class="md-nav__link">
+        Child friendly EmulationStation
+      </a>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11" type="checkbox" id="nav-11">
+    
+    <label class="md-nav__link" for="nav-11">
+      Platforms
+    </label>
+    <nav class="md-nav" data-md-component="collapsible">
+      <label class="md-nav__title" for="nav-11">
+        Platforms
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Manual-Installation/" title="Raspbian" class="md-nav__link">
+        Raspbian
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../RetroPie-Ubuntu-16.04-LTS-x86-Flavor/" title="Ubuntu" class="md-nav__link">
+        Ubuntu
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Odroid/" title="Odroid" class="md-nav__link">
+        Odroid
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../RetroPie-Arch-Linux-Flavor/" title="Arch Linux" class="md-nav__link">
+        Arch Linux
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../RetroPie-install-for-OSMC-with-external-memory-USB-Drive/" title="OSMC" class="md-nav__link">
+        OSMC
+      </a>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-12" type="checkbox" id="nav-12">
+    
+    <label class="md-nav__link" for="nav-12">
+      Troubleshooting
+    </label>
+    <nav class="md-nav" data-md-component="collapsible">
+      <label class="md-nav__title" for="nav-12">
+        Troubleshooting
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../FAQ/" title="FAQ" class="md-nav__link">
+        FAQ
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Sound-Issues/" title="Sound Issues" class="md-nav__link">
+        Sound Issues
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Speed-Issues/" title="Speed Issues" class="md-nav__link">
+        Speed Issues
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Video-Issues/" title="Video Issues" class="md-nav__link">
+        Video Issues
+      </a>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-13" type="checkbox" id="nav-13">
+    
+    <label class="md-nav__link" for="nav-13">
+      Developers
+    </label>
+    <nav class="md-nav" data-md-component="collapsible">
+      <label class="md-nav__title" for="nav-13">
+        Developers
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Building-RetroPie-Archives/" title="Building RetroPie Archives" class="md-nav__link">
+        Building RetroPie Archives
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Convert-RetroPie-SD-Card-Image-to-NOOBS-Image/" title="Convert RetroPie SD Card Image to NOOBS Image" class="md-nav__link">
+        Convert RetroPie SD Card Image to NOOBS Image
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Shell-Style-Guide/" title="Shell Style Guide" class="md-nav__link">
+        Shell Style Guide
+      </a>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-14" type="checkbox" id="nav-14">
+    
+    <label class="md-nav__link" for="nav-14">
+      About
+    </label>
+    <nav class="md-nav" data-md-component="collapsible">
+      <label class="md-nav__title" for="nav-14">
+        About
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Changelogs/" title="Changelogs" class="md-nav__link">
+        Changelogs
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Supported-Systems/" title="Supported Systems" class="md-nav__link">
+        Supported Systems
+      </a>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+               
+              
+                
+                <h2 id="about">About</h2>
+<p>Three different tutorials to help get your wiimotes/nunchuck/classic controllers etc.. to work with RetroPie. </p>
+<p><code>Method 1</code> uses wminput and cwiid to get the wiimotes to connect. Its fairly simple method to follow with easy instructions to follow. I recommend this one for beginners who are new to RetroPie and don't want to dabble too much with linux.   </p>
+<p><code>Method 2</code> uses MoltenGamepad which is described as a flexible input device remapper, geared towards gamepads. This method is also simple to follow along if you can't get the first method working.  </p>
+<p><code>Method 3</code> was the original tutorial using xwiimote before we found and developed easier ways of connecting wiimotes for use with RetroPie. It is simply listed here for those wishing to still view it. </p>
+<hr />
+<h2 id="method-1-wminput-and-cwiid">Method 1 (wminput and cwiid):</h2>
+<p>The basis of this method was taken from <a href="http://blog.petrockblock.com/forums/topic/tutorial-to-get-wiimotes-with-classic-controllers-to-work-with-retropie/">here</a>. It has however been slightly updated and modified to work with the current version of RetroPie(3.7). </p>
+<p>This tutorial shows how to get one to four wiimotes (the controller of Nintendo Wii) running with RetroPie with or without a classic controller (attached to the wiimote).</p>
+<h3 id="prerequisites">Prerequisites</h3>
+<ol>
+<li>
+<p>For the following I assume that RetroPi was installed and is running with other controls (like keyboard, joystick etc.). I followed the excellent tutorial http://supernintendopi.wordpress.com/2013/01/23/an-a-to-z-beginners-guide-to-installing-retropie-on-a-raspberry-pi/  for this (using the “RetroPie Project SD Card Image”).</p>
+</li>
+<li>
+<p>You have a blue-tooth dongle (sometimes called blue-tooth adapter). For a list of dongles known to work with Raspberry Pi see http://elinux.org/RPi_USB_Bluetooth_adapters#Working_Bluetooth_adapters ).</p>
+</li>
+</ol>
+<p>I can confirm putting the bluetooth adapter into a USB 2.0 powered hub works. Your results may vary though depending on your hardware.      </p>
+<p>Its important to update RetroPie to the latest version to avoid problems later down in the tutorial. Type the following into the command line:</p>
+<pre><code class="shell">cd RetroPie-Setup/
+</code></pre>
+
+<p>In this folder, we will load up the Retropie post install script:</p>
+<pre><code class="shell"> sudo ./retropie_setup.sh
+</code></pre>
+
+<p>In the menu, choose to update the RetroPie-Setup script (option U) first. The pi will connect to the internet and fetch the latest version. After that's done, choose Binary-based installation (option 1). Depending on your pi version, this can take a while. On a pi zero, it took about 30 minutes.  </p>
+<h3 id="installation">Installation</h3>
+<p>Now install the needed parts:</p>
+<pre><code class="shell">sudo apt-get install bluetooth vorbis-tools python-cwiid wminput
+</code></pre>
+
+<h3 id="getting-the-wiimotes-to-work">Getting the wiimotes to work</h3>
+<p>uinput device needs to work with non-root users. To do so, create a wiimote rule file.</p>
+<pre><code class="shell">sudo tee /etc/udev/rules.d/wiimote.rules &lt;&lt; EOF
+KERNEL==&quot;uinput&quot;, MODE=&quot;0666&quot;
+EOF
+</code></pre>
+
+<p>That's the rule implementation done. Save the text file with <code>CTRL + X</code> and press <code>Y</code> to confirm. To make this change active, reboot the Raspberry Pi, or paste this command at the command line:</p>
+<pre><code class="shell">sudo service udev restart
+</code></pre>
+
+<p>Check that the bluetooth dongle works with the command below:</p>
+<pre><code class="shell">/etc/init.d/bluetooth status
+</code></pre>
+
+<p>You should get something similar to the below output which returns that the bluetooth is working.</p>
+<pre><code class="shell">● bluetooth.service - Bluetooth service
+   Loaded: loaded (/lib/systemd/system/bluetooth.service; enabled)
+   Active: active (running) since Tue 2016-03-22 16:10:39 GMT; 33min ago
+     Docs: man:bluetoothd(8)
+ Main PID: 337 (bluetoothd)
+   Status: &quot;Running&quot;
+   CGroup: /system.slice/bluetooth.service
+           └─337 /usr/lib/bluetooth/bluetoothd
+</code></pre>
+
+<h3 id="correct-usage-of-wminput">Correct usage of wminput</h3>
+<p>For every wiimote, we need one wminput command to map the wiimote (and the classic controller) buttons to something emulationstation and the emulators can work with. wminput comes with configuration files (in directory /etc/cwiid/wminput). I created my own configuration file, which works if you use a wiimote with or without a classic controller. Create the file wminput which will reside in our pi's home directory:</p>
+<pre><code class="shell">tee /home/pi/mywminput &lt;&lt; EOF
+# Classic-Controller
+Classic.Dpad.X = ABS_X
+Classic.Dpad.Y = ABS_Y
+Classic.LStick.X = ABS_HAT0X
+Classic.LStick.Y = ABS_HAT0Y
+Classic.RStick.X = ABS_HAT1X
+Classic.RStick.Y = ABS_HAT1Y
+Classic.A = BTN_A
+Classic.B = BTN_B
+Classic.X = BTN_X
+Classic.Y = BTN_Y
+Classic.Minus = BTN_SELECT
+Classic.Plus  = BTN_START
+Classic.Home  = BTN_MODE
+Classic.L  = BTN_TL
+Classic.R  = BTN_TR
+Classic.ZL = BTN_TL2
+Classic.ZR = BTN_TR2
+
+# WiiMote
+Wiimote.A       = BTN_A
+Wiimote.B       = BTN_B
+Wiimote.Dpad.X      = ABS_Y
+Wiimote.Dpad.Y      = -ABS_X
+Wiimote.Minus   = BTN_SELECT
+Wiimote.Plus    = BTN_START
+Wiimote.Home    = BTN_MODE
+Wiimote.1       = BTN_X
+Wiimote.2       = BTN_Y
+
+# Nunchuk
+Nunchuk.C = BTN_C
+Nunchuk.Z = BTN_Z
+EOF
+</code></pre>
+
+<p>If you want your WiiMotes giving a connection status, just add an additional line to your <code>mywminput</code> file:</p>
+<pre><code class="shell">Plugin.led.Led1 = 1
+#Plugin.led.Led2 = 1
+#Plugin.led.Led3 = 1
+#Plugin.led.Led4 = 1
+</code></pre>
+
+<p>You probably also want different LEDs active on two controllers, which means you have to provide different <code>mywminput</code> files to wminput, e.g. <code>mywminputA</code>, <code>mywminputB</code> etc with <code>LED1</code> and another with <code>LED2</code> activated. In the above example, <code>LED 1</code> is activated and <code>LED's 2</code>, <code>3</code> and <code>4</code> are commented out. You can replace the above example with your chosen <code>LED</code> status. </p>
+<p><code>Updated Note</code>: I've had problems using the above button layout with a classic controller. It will cause the button remapping which we will do later in emulationstation to be off. I fixed this by just copy pasting the classic controls only. (I will use the classic controller to control everything and have no intention of using any buttons on the actual wiimote itself).</p>
+<pre><code class="shell">Classic.Dpad.X = ABS_X
+Classic.Dpad.Y = ABS_Y
+Classic.LStick.X = ABS_HAT0X
+Classic.LStick.Y = ABS_HAT0Y
+Classic.RStick.X = ABS_HAT1X
+Classic.RStick.Y = ABS_HAT1Y
+Classic.A = BTN_A
+Classic.B = BTN_B
+Classic.X = BTN_X
+Classic.Y = BTN_Y
+Classic.Minus = BTN_SELECT
+Classic.Plus  = BTN_START
+Classic.Home  = BTN_MODE
+Classic.L  = BTN_TL
+Classic.R  = BTN_TR
+Classic.ZL = BTN_TL2
+Classic.ZR = BTN_TR2
+Plugin.led.Led1 = 1
+</code></pre>
+
+<h4 id="quick-and-dirty-wiimote-configuration-option-a">Quick and Dirty Wiimote Configuration (Option A)</h4>
+<p>If you don't mind registering your wiimotes each time you restart your raspberrypi (or maybe you want the opportunity to use new wiimotes each time), you can save this script as "/home/pi/bin/attachwii.sh":</p>
+<pre><code class="shell">#! /bin/bash
+
+ttl=30
+alert=&quot;/home/pi/complete.oga&quot;
+fail=&quot;/home/pi/bark.oga&quot;
+begin_sound=&quot;/home/pi/robot-blip.wav&quot;
+end_sound=&quot;/home/pi/service-logout.oga&quot;
+mac=&quot;\([[:xdigit:]]\{2\}:\)\{5\}[[:xdigit:]]&quot; # &quot;00:&quot; * 5 + &quot;00&quot;
+device_file=&quot;/tmp/wiimote-scan&quot;
+
+function play {
+    ogg123 $1 &amp;&gt; /dev/null &amp;
+}
+
+function match {
+    echo $1 | grep $2
+}
+
+function show {
+    if [[ -n $DEBUG ]]
+    then
+        echo $1
+    fi
+}
+
+# prevent scans from interfering with one another?
+killall hcitool &amp;&amp; sleep 5
+
+if [[ `hcitool dev | grep hci` ]]
+then
+    play $begin_sound &amp;&gt; /dev/null &amp;
+    echo &quot;Bluetooth detected, starting scan with ${ttl}s timeout...&quot;
+
+    timeout $ttl hcitool scan | while read device
+    do
+        show &quot;found $device&quot;
+
+        if [[ `match &quot;$device&quot; &quot;Nintendo&quot;` ]]
+        then
+            show &quot;matched Nintendo in $device&quot;
+
+            id=`echo $device | cut -d&quot; &quot; -f1`
+
+            if [[ `match $id $mac` &amp;&amp; \
+                &quot;$id&quot;!=&quot;00:00:00:00:00:00&quot; ]]
+            then
+                show &quot;matched MAC in $id&quot;
+
+                echo -n &quot;Detected Wiimote with ID: ${id}...&quot;
+                wminput -d -c /home/pi/mywminput $id &amp;
+                echo &quot; registered.&quot;
+                play $alert
+            fi
+        fi
+    done
+
+    play $end_sound
+    echo &quot;Scan complete.&quot;
+
+    if [[ &quot;$rebootWithoutWiimotes&quot; == &quot;1&quot; &amp;&amp; -z `pidof wminput` ]]
+    then
+        echo &quot;No Wiimotes detected!  Restarting...&quot;
+        sudo reboot
+    fi
+else
+    echo &quot;Blue-tooth adapter not present!&quot;
+    play $fail
+fi
+</code></pre>
+
+<p>Replace the sounds above with your own preferred sounds.</p>
+<p>When you restart your pi, press 1+2 on each wiimote after you hear the begin-sound.  After a few seconds, you'll hear a ding for each wiimote registered, followed by the end-sound.  If the bluetooth device isn't available, you'll hear a triple-ding warning you of the error.</p>
+<p>Now, you can skip directly to the "Register Wiimotes Before Emulationstation Starts" section.</p>
+<h4 id="manual-wiimote-configuration-option-b">Manual Wiimote Configuration (Option B)</h4>
+<p>Use this method if you want to use the same wiimotes every time and don't want to re-register the wiimotes every time you restart your Raspberrypi.</p>
+<p>First, scan for the wiimotes.</p>
+<pre><code class="shell">hcitool scan
+</code></pre>
+
+<p>and press buttons 1+2 on your wiimote(s). After a short while, the output should be something like</p>
+<pre><code class="shell">Scanning ...
+    00:19:1D:87:90:38       Nintendo RVL-CNT-01
+    00:19:1D:88:EF:12       Nintendo RVL-CNT-01
+</code></pre>
+
+<p>Take a note of the addresses of your wiimotes (the 00:19:1D:87:90:38 in the output above), we need that later.
+Note: If the scan is not successful try it again using the red sync button on the back.</p>
+<p>If the Raspberry Pi is started and emulationstation starts, we want to register the wiimotes so they can be used with emulationstation and the emulators.
+I did it the following way:</p>
+<pre><code class="shell">mkdir /home/pi/bin
+</code></pre>
+
+<p>Create the file /home/pi/bin/attachwii.sh by using the command below:</p>
+<pre><code class="shell">nano /home/pi/bin/attachwii.sh
+</code></pre>
+
+<p>and paste the following contents:</p>
+<pre><code class="shell">#!/bin/bash
+sleep 1 # Wait until Bluetooth services are fully initialized
+hcitool dev | grep hci &gt;/dev/null
+if test $? -eq 0 ; then
+    wminput -d -c  /home/pi/mywminput 00:19:1D:92:90:38 &amp;
+    wminput -d -c  /home/pi/mywminput 00:19:1D:84:EF:33 &amp;
+else
+    echo &quot;Blue-tooth adapter not present!&quot;
+    exit 1
+fi
+</code></pre>
+
+<p><code>Note</code>: You need one wminput line for every wiimote you want to use (i.e. the above is for two wiimotes)</p>
+<p><code>Note 2</code>: You need to replace the addresses of the wiimotes above by the addresses of your wiimotes (shown by command "hcitool scan" as shown above).</p>
+<p><code>Note 3</code>: I've had more success with 2 classic controllers pairing when both are sharing the same mywminput path. Since both wiimotes are using the same "mywminput" config, the LED status on port 1 of the wiimote will light up on both wiimotes. This is fine and does not interfere with anything. I simply use the light to tell me when and if both controllers are paired successfully. That is it's only purpose. I've had less success configuring a second mywinput to the 2nd controller so the LED lights differs on the 2nd controller. </p>
+<h3 id="register-wiimotes-before-emulationstation-starts">Register Wiimotes Before Emulationstation Starts</h3>
+<p>Make your wiimote detection script executable with:</p>
+<pre><code class="shell">chmod 775 /home/pi/bin/attachwii.sh
+</code></pre>
+
+<h4 id="retropie-3x-4x">RetroPie 3.x &amp; 4.x</h4>
+<p>To start the script before emulationstation starts, edit the file: <code>/etc/profile.d/10-emulationstation.sh</code> (for 3.x) or <code>/etc/profile.d/10-retropie.sh</code> (for 4.x). Write the following line before the line with <code>[ "`tty`" = "/dev/tty1" ]</code> in it.</p>
+<pre><code class="shell">rebootWithoutWiimotes=0 /home/pi/bin/attachwii.sh
+</code></pre>
+
+<p>and save the file.</p>
+<p>To make the Pi restart automatically if no wiimotes are detected, change rebootWithoutWiimotes to 1.</p>
+<h3 id="register-wiimotes-before-emulationstation-starts-continued">Register Wiimotes Before Emulationstation Starts (continued)</h3>
+<p>If you now do a reboot using <code>sudo reboot</code>, wait until emulationstation has been started. When it does, <code>press 1+2</code> on all of your wiimotes to register the wiimotes.
+If it's your first time booting emulationstation then you will be automatically at the controller config menu. If you've configured a controller previously then get to the menu using a configured keyboard or an alternative controller. </p>
+<p>Hold any button on the wiimote (or if your using classic controller only method) then any button the classic controller.
+It should say <code>NintendoWiimote</code>. Define the controls and skip and inputs that aren't necessary. Click OK, by pressing A either on the wiimote or classic controller. If your using 2 or more wiimotes/classic controllers, you only need to define one classic controller/wiimote as they will ALL share the same controls.   </p>
+<p>You can compare my config to yours if you'd like. Don't copy and paste my config though. emulationstation needs to create this file in the menu and copy/pasting this part may cause problems later.  </p>
+<p>In emulationstation, the mapping is located here: <code>/home/pi/.emulationstation/es_input.cfg</code>:</p>
+<pre><code class="xml">&lt;?xml version=&quot;1.0&quot;?&gt;
+&lt;inputList&gt;
+  &lt;inputAction type=&quot;onfinish&quot;&gt;
+    &lt;command&gt;/opt/retropie/supplementary/emulationstation/scripts/inputconfiguration.sh&lt;/command&gt;
+  &lt;/inputAction&gt;
+  &lt;inputConfig type=&quot;joystick&quot; deviceName=&quot;Nintendo Wiimote&quot;&gt;
+    &lt;input name=&quot;pagedown&quot; type=&quot;button&quot; id=&quot;5&quot; value=&quot;1&quot;/&gt;
+    &lt;input name=&quot;start&quot; type=&quot;button&quot; id=&quot;9&quot; value=&quot;1&quot;/&gt;
+    &lt;input name=&quot;pageup&quot; type=&quot;button&quot; id=&quot;4&quot; value=&quot;1&quot;/&gt;
+    &lt;input name=&quot;up&quot; type=&quot;axis&quot; id=&quot;1&quot; value=&quot;1&quot;/&gt;
+    &lt;input name=&quot;a&quot; type=&quot;button&quot; id=&quot;0&quot; value=&quot;1&quot;/&gt;
+    &lt;input name=&quot;b&quot; type=&quot;button&quot; id=&quot;1&quot; value=&quot;1&quot;/&gt;
+    &lt;input name=&quot;down&quot; type=&quot;axis&quot; id=&quot;1&quot; value=&quot;-1&quot;/&gt;
+    &lt;input name=&quot;right&quot; type=&quot;axis&quot; id=&quot;0&quot; value=&quot;1&quot;/&gt;
+    &lt;input name=&quot;select&quot; type=&quot;button&quot; id=&quot;8&quot; value=&quot;1&quot;/&gt;
+    &lt;input name=&quot;left&quot; type=&quot;axis&quot; id=&quot;0&quot; value=&quot;-1&quot;/&gt;
+  &lt;/inputConfig&gt;
+  &lt;inputConfig type=&quot;keyboard&quot; deviceName=&quot;Keyboard&quot;&gt;
+    &lt;input name=&quot;start&quot; type=&quot;key&quot; id=&quot;13&quot; value=&quot;1&quot;/&gt;
+    &lt;input name=&quot;up&quot; type=&quot;key&quot; id=&quot;1073741906&quot; value=&quot;1&quot;/&gt;
+    &lt;input name=&quot;a&quot; type=&quot;key&quot; id=&quot;97&quot; value=&quot;1&quot;/&gt;
+    &lt;input name=&quot;b&quot; type=&quot;key&quot; id=&quot;115&quot; value=&quot;1&quot;/&gt;
+    &lt;input name=&quot;down&quot; type=&quot;key&quot; id=&quot;1073741905&quot; value=&quot;1&quot;/&gt;
+    &lt;input name=&quot;right&quot; type=&quot;key&quot; id=&quot;1073741903&quot; value=&quot;1&quot;/&gt;
+    &lt;input name=&quot;select&quot; type=&quot;key&quot; id=&quot;1073742053&quot; value=&quot;1&quot;/&gt;
+    &lt;input name=&quot;left&quot; type=&quot;key&quot; id=&quot;1073741904&quot; value=&quot;1&quot;/&gt;
+  &lt;/inputConfig&gt;
+&lt;/inputList&gt;
+</code></pre>
+
+<h3 id="configuring-retroarch">Configuring RetroArch</h3>
+<p>We are going to define the controls for 2 classic controllers/wiimotes in retroarch's emulator config file:</p>
+<pre><code class="shell">sudo nano /opt/retropie/emulators/retroarch/retroarch.cfg
+</code></pre>
+
+<p>and at the end of the file, paste the following:</p>
+<pre><code class="shell"># PLAYER 1
+input_player1_joypad_index = &quot;0&quot;
+input_player1_a_btn = &quot;0&quot;
+input_player1_b_btn = &quot;1&quot;
+input_player1_x_btn = &quot;2&quot;
+input_player1_y_btn = &quot;3&quot;
+input_player1_l_btn = &quot;4&quot;
+input_player1_r_btn = &quot;5&quot;
+input_player1_l2_btn = &quot;6&quot;
+input_player1_r2_btn = &quot;7&quot;
+input_player1_select_btn = &quot;8&quot;
+input_player1_start_btn = &quot;9&quot;
+input_player1_up_axis = &quot;+1&quot;
+input_player1_down_axis = &quot;-1&quot;
+input_player1_left_axis = &quot;-0&quot;
+input_player1_right_axis = &quot;+0&quot;
+input_player1_l_x_plus_axis = &quot;+2&quot;
+input_player1_l_x_minus_axis = &quot;-2&quot;
+input_player1_l_y_plus_axis = &quot;-3&quot;
+input_player1_l_y_minus_axis = &quot;+3&quot;
+input_player1_r_x_plus_axis = &quot;+4&quot;
+input_player1_r_x_minus_axis = &quot;-4&quot;
+input_player1_r_y_plus_axis = &quot;-5&quot;
+input_player1_r_y_minus_axis = &quot;+5&quot;
+# PLAYER 2
+input_player2_joypad_index = &quot;1&quot;
+input_player2_a_btn = &quot;0&quot;
+input_player2_b_btn = &quot;1&quot;
+input_player2_x_btn = &quot;2&quot;
+input_player2_y_btn = &quot;3&quot;
+input_player2_l_btn = &quot;4&quot;
+input_player2_r_btn = &quot;5&quot;
+input_player2_l2_btn = &quot;6&quot;
+input_player2_r2_btn = &quot;7&quot;
+input_player2_select_btn = &quot;8&quot;
+input_player2_start_btn = &quot;9&quot;
+input_player2_up_axis = &quot;+1&quot;
+input_player2_down_axis = &quot;-1&quot;
+input_player2_left_axis = &quot;-0&quot;
+input_player2_right_axis = &quot;+0&quot;
+input_player2_l_x_plus_axis = &quot;+2&quot;
+input_player2_l_x_minus_axis = &quot;-2&quot;
+input_player2_l_y_plus_axis = &quot;-3&quot;
+input_player2_l_y_minus_axis = &quot;+3&quot;
+input_player2_r_x_plus_axis = &quot;+4&quot;
+input_player2_r_x_minus_axis = &quot;-4&quot;
+input_player2_r_y_plus_axis = &quot;-5&quot;
+input_player2_r_y_minus_axis = &quot;+5&quot;
+</code></pre>
+
+<p>We need to make sure that the settings show only one time in retroarch.cfg file (i.e. if you have a line </p>
+<pre><code class="shell">input_player1_b_btn = &quot;0&quot;
+</code></pre>
+
+<p>in the retroarch.cfg file before adding my lines, remove (or out-comment) the whole section. If you want to use more than two wiimotes, search for the line</p>
+<pre><code class="shell">input_player1_joypad_index = 0
+</code></pre>
+
+<p>in retroarch.cfg and add the a corresponding line for the other wiimotes. For example you should have the following lines in retroarch.cfg for four wiimotes:</p>
+<pre><code class="shell">input_player1_joypad_index = 0
+input_player2_joypad_index = 1
+input_player3_joypad_index = 2
+input_player4_joypad_index = 3
+</code></pre>
+
+<p>Finally we are going to define a button to exit out the emulator.</p>
+<pre><code class="shell">sudo nano /opt/retropie/configs/all/retroarch.cfg
+</code></pre>
+
+<p>Add the following lines at the end of the file:</p>
+<pre><code class="shell">#savestate_auto_save = true
+#savestate_auto_load = true
+input_enable_hotkey_btn = &quot;8&quot;
+input_exit_emulator_btn = &quot;9&quot;
+input_menu_toggle_btn = &quot;10&quot;
+</code></pre>
+
+<p>If you want to use savestates, then uncomment it out. When you quit a game through this method, your game state will be saved and reloaded. </p>
+<p>The input commands specified above, allow you to exit out the emulator when <code>SELECT</code> and <code>START</code> are pressed at the same time. Pressing <code>SELECT</code> enables the hotkey whilst <code>START</code> is assigned to exit. Pressing <code>SELECT</code> and the <code>HOME</code> button however, will enable retroarch's menu for in game adjustments. </p>
+<p><strong>DONE!</strong>
+*I highly encourage you to read the "Known Issues" section below for optional fixes that complement this method:</p>
+<hr />
+<h4 id="known-issues">Known issues</h4>
+<p><strong>1. My SSH terminal is unusable and giving me socket control errors!</strong></p>
+<p>In some cases the connection with the Wiimotes through <code>wminput</code> daemon can 
+start flooding your terminal session with the message <code>Socket connect error 
+(control channel)</code>. So far there is only one 
+<a href="https://www.raspberrypi.org/forums/viewtopic.php?t=63784&amp;p=482624">solution</a>: 
+Redirecting the <em>standard out</em> and <em>standard error</em> respectively to <code>/dev/null</code>.</p>
+<pre><code class="shell">wminput -d -q -c  /home/pi/mywminput XX:XX:XX:XX:XX:XX &gt; /dev/null 2&gt;&amp;1 &amp;
+</code></pre>
+
+<p>Anyway, remember to undo this <strong>hack</strong> for debugging purposes.</p>
+<p><code>Note</code>: I actively use SSH with my retropie so I had to apply this fix so I could use my SSH terminal without being hammered with socket control errors. 
+This is what my revised attachwii looks like for comparison. We created this file earlier in /home/pi/bin/attachwii.sh</p>
+<pre><code class="shell">#!/bin/bash
+sleep 1 # Wait until Bluetooth services are fully initialized
+hcitool dev | grep hci &gt;/dev/null
+if test $? -eq 0 ; then
+    wminput -d -q -c  /home/pi/mywminput 00:19:1D:92:90:38 &gt; /dev/null 2&gt;&amp;1 &amp;
+    wminput -d -q -c  /home/pi/mywminput 00:19:1D:84:EF:33 &gt; /dev/null 2&gt;&amp;1 &amp;
+else
+    echo &quot;Blue-tooth adapter not present!&quot;
+    exit 1
+fi
+</code></pre>
+
+<p>As you can see the addition of the -q is supposed to help keep wminput quiet. If you're doing troubleshooting of any kind remember to remove the <code>&gt; /dev/null 2&gt;&amp;1 &amp;"</code>. </p>
+<p><strong>2. My wiimotes paired the first time and now they won't pair or hold pairing!</strong></p>
+<p>I have had some trouble with the fact that the USB Bluetooth adapter, after a restart, the bluetooth dongle would cease to scan for new devices. For me the following fix helped. It basically restarts the the bluetooth controller and enables it to scan before the "attachwii" script activates.
+To apply the fix use the command below:</p>
+<pre><code class="shell">sudo nano /etc/rc.local
+````
+Delete anything there and and overwrite with the following: 
+
+```shell
+#!/bin/sh -e
+#
+# rc.local
+#
+# This script is executed at the end of each multiuser runlevel.
+# Make sure that the script will &quot;exit 0&quot; on success or any other
+# value on error.
+#
+# In order to enable or disable this script just change the execution
+# bits.
+#
+# By default this script does nothing.
+hciconfig hci0 up
+hciconfig hci0 pscan
+exit 0
+</code></pre>
+
+<p><strong>3. My retroarch controls aren't working/messed up!</strong></p>
+<p>After creating the controls in emulationstation a .cfg was created and resides in the directory along with any other controllers configured here: <code>/opt/retropie/configs/all/retroarch-joypads/</code>
+Mine is named <code>NintendoWiimote.cfg</code>. This is what my config file looks like:</p>
+<pre><code class="shell">input_device = &quot;Nintendo Wiimote&quot;
+input_driver = &quot;udev&quot;
+input_r_btn = &quot;5&quot;
+input_save_state_btn = &quot;5&quot;
+input_l2_btn = &quot;6&quot;
+input_start_btn = &quot;9&quot;
+input_exit_emulator_btn = &quot;9&quot;
+input_l_btn = &quot;4&quot;
+input_load_state_btn = &quot;4&quot;
+input_up_axis = &quot;+1&quot;
+input_a_btn = &quot;0&quot;
+input_b_btn = &quot;1&quot;
+input_reset_btn = &quot;1&quot;
+input_down_axis = &quot;-1&quot;
+input_r2_btn = &quot;7&quot;
+input_right_axis = &quot;+0&quot;
+input_state_slot_increase_axis = &quot;+0&quot;
+input_x_btn = &quot;2&quot;
+input_menu_toggle_btn = &quot;2&quot;
+input_select_btn = &quot;8&quot;
+input_enable_hotkey_btn = &quot;8&quot;
+input_y_btn = &quot;3&quot;
+input_left_axis = &quot;-0&quot;
+input_state_slot_decrease_axis = &quot;-0&quot;
+</code></pre>
+
+<p>Compare the controls located here, to the ones we configured in Retroarch. If the values in your .cfg above is different then make sure to update the retroarch controls. For example, in my cfg, <code>input_b_btn = "1"</code> but yours may be of a different value. </p>
+<pre><code class="shell"># PLAYER 1
+input_player1_joypad_index = &quot;0&quot;
+input_player1_a_btn = &quot;0&quot;
+input_player1_b_btn = &quot;1&quot;
+input_player1_x_btn = &quot;2&quot;
+input_player1_y_btn = &quot;3&quot;......
+..
+</code></pre>
+
+<p>If your using just the classic controls then you shouldn't be having this problem, but this is what I was referring to earlier when I said the controls may be "off" if you try and combine wiimote controls, nunchuck controls in addition to the classic controller to your mywminput file. </p>
+<p><strong>4. I want to update my pi's bluetooth to the latest version!</strong></p>
+<p>As of writing, the version shipped with RetroPie 3.7 comes with Bluez version <code>5.23.</code> We will update it to the latest stretch version which is <code>5.36.</code></p>
+<pre><code class="shell">sudo nano /etc/apt/sources.list
+</code></pre>
+
+<p>Copy and paste the <code>jessie</code> line and then change jessie to <code>stretch</code>. Save with <code>CTRL+X</code> and <code>Y</code> to confirm changes.  </p>
+<p>We are going to tell APT to (still) default to jessie:</p>
+<pre><code class="shell">sudo nano /etc/apt/apt.conf.d/40defaultrelease
+</code></pre>
+
+<p>and paste in with the following contents:</p>
+<pre><code class="shell">APT::Default-Release &quot;jessie&quot;;
+</code></pre>
+
+<p>In the terminal, do and update followed by the Bluez install:</p>
+<pre><code class="shell">sudo apt-get update
+</code></pre>
+
+<p>then:</p>
+<pre><code class="shell">sudo apt-get install bluez -t stretch
+</code></pre>
+
+<p>BlueZ will be updated from 5.23 =&gt; 5.36. You can check the change with <code>bluetoothd -v</code>. </p>
+<p>Now you can undo the changes we made to <code>/etc/apt/sources.list</code> and  <code>/etc/apt/apt.conf.d/40defaultrelease</code>. </p>
+<hr />
+<h2 id="method-2-moltengamepad">Method 2 (MoltenGamepad):</h2>
+<p>The original tutorial was posted by a user named rockfireredmoon on the RetroPie github. You can view it <a href="https://github.com/RetroPie/RetroPie-Setup/issues/256/#issuecomment-205283258">here.</a></p>
+<p>You can view more information about MoltenGamepad <a href="https://github.com/jgeumlek/MoltenGamepad">here.</a></p>
+<p>It's on a github repository which we will need to copy onto our Pi. </p>
+<p>In the terminal, paste the command:</p>
+<pre><code class="shell">sudo apt-get install git-core -y
+</code></pre>
+
+<p>followed by:</p>
+<pre><code class="shell">git clone https://github.com/jgeumlek/MoltenGamepad
+</code></pre>
+
+<p>Move to the MoltenGamepad folder:</p>
+<pre><code class="shell">cd MoltenGamepad/
+</code></pre>
+
+<p>Let's try making the MoltenGamepad binary file:</p>
+<pre><code class="shell">make eventlists
+</code></pre>
+
+<p>followed by:</p>
+<pre><code class="shell">make
+</code></pre>
+
+<p>Once completed, we should have our MoltenGamepad binary file. You can check this with the command terminal command <code>ls</code> </p>
+<p>Let's copy this to where it needs to go. We should already be in the MoltenGamepad directory.</p>
+<pre><code class="shell">sudo cp moltengamepad /usr/sbin
+</code></pre>
+
+<p>We are going to need to create a system service for MoltenGamepad. 
+Lets create the file:</p>
+<pre><code class="shell">sudo nano /lib/systemd/system/moltengamepad.service
+</code></pre>
+
+<p>and paste in:</p>
+<pre><code class="shell">[Unit]
+Description=MoltenGamepad
+After=network.target
+After=bluetooth.target
+
+[Service]
+Type=forking
+PIDFile=/var/run/moltengamepad.pid
+Environment=&quot;XDG_CONFIG_HOME=/etc/moltengamepad&quot;
+ExecStart=/usr/sbin/moltengamepad --daemon --pidfile /var/run/moltengamepad.pid
+ExecStop=/usr/bin/kill $MAINPID
+
+[Install]
+WantedBy=default.target
+</code></pre>
+
+<p>Lets enable the service with the following command:</p>
+<pre><code class="shell">sudo systemctl enable moltengamepad
+</code></pre>
+
+<p>and lets make the settings permanent by rebooting:</p>
+<pre><code class="shell">sudo reboot
+</code></pre>
+
+<p>Thats MoltenGamepad installed, but we need to pair our wiimotes with <code>bluetoothctl</code>. Nothing fancy, just simple bluetooth pairing in linux.</p>
+<p>Lets first load the hid-wiimote kernel module:</p>
+<pre><code class="shell">sudo modprobe hid-wiimote
+</code></pre>
+
+<p>follwed by the bluetooth protocol:</p>
+<pre><code class="shell">sudo bluetoothctl
+</code></pre>
+
+<p>The following was taken from the bluetooth page on the <code>archlinux wiki</code>. You can view it here under the "Configuration via the CLI"</p>
+<p><strong>Bluetoothctl</strong></p>
+<p>Pairing a device from the shell is one of the simplest and most reliable options. The exact procedure depends on the devices involved and their input functionality. What follows is a general outline of pairing a device using <code>/usr/bin/bluetoothctl</code>:
+<em> Start the <code>bluetoothctl</code> interactive command. There one can input <code>help</code> to get a list of available commands.
+</em> Turn the power to the controller on by entering <code>power on</code>. It is off by default.
+<em> Enter device discovery mode with <code>scan on</code> command if device is not yet on the list.
+</em> Turn the agent on with <code>agent on</code>.
+<em> Enter <code>pair MAC Address</code> to do the pairing (tab completion works).
+</em> If using a device without a PIN, one may need to manually trust the device before it can reconnect successfully. Enter <code>trust MAC Address</code> to do so.
+<em> Finally, use <code>connect MAC_address</code> to establish a connection.
+</em> An example session may look this way:</p>
+<pre><code class="shell"># bluetoothctl 
+[NEW] Controller 00:10:20:30:40:50 pi [default]
+[bluetooth]# agent KeyboardOnly 
+Agent registered
+[bluetooth]# default-agent 
+Default agent request successful
+[bluetooth]# scan on
+Discovery started
+[CHG] Controller 00:10:20:30:40:50 Discovering: yes
+[NEW] Device 00:12:34:56:78:90 myLino
+[CHG] Device 00:12:34:56:78:90 LegacyPairing: yes
+[bluetooth]# pair 00:12:34:56:78:90
+Attempting to pair with 00:12:34:56:78:90
+[CHG] Device 00:12:34:56:78:90 Connected: yes
+[CHG] Device 00:12:34:56:78:90 Connected: no
+[CHG] Device 00:12:34:56:78:90 Connected: yes
+Request PIN code
+[agent] Enter PIN code: 1234
+[CHG] Device 00:12:34:56:78:90 Paired: yes
+Pairing successful
+[CHG] Device 00:12:34:56:78:90 Connected: no
+</code></pre>
+
+<p>All we need to do is pair the wiimotes and MoltenGamepad will handle any extra devices such as Classic Controllers, Nunchuck, Wii Balance Board etc.</p>
+<p>You can start emulationstation directly from the terminal by typing in <code>emulationstation</code></p>
+<p>You can now use ES the map all the buttons as you wish in the normal way.</p>
+<p><strong>Some notes</strong>:
+The original tutorial stated that once the initial pairing was completed, you wont need to manually pair and enter the commands in the terminal. </p>
+<ul>
+<li>reboot</li>
+<li>"Press a key once to connect, then again to activate moltengamepad."</li>
+</ul>
+<p>I couldn't quite get mine to pair from a cold boot. Currently I still have to use the bluetoothctl <code>connect</code> command to pair my wiimotes attached to Classic Controlers and then manually start emulationstation from the terminal for the pairing to work. Your experience may vary however.</p>
+<p>I am currently working on a script to automate the the pairing process without the need to press any buttons at all when EmulationStation starts to activate MoltenGamepad. At the moment its a bit hit and miss. I will update the tutorial once I've ironed the kinks out. :) </p>
+<p>You may want to read further into MoltenGamepad's controller documentation which you can view <a href="../MoltenGamepad Generic Device Driver Documentation">here.</a>. It has a few examples, and like I mentioned above may create one for this method adding the LED Status as mentioned in Method 2. Stay tuned.  </p>
+<p><strong>I also encourage anyone to edit this page and any other page if you have valid useful information that can make other Pi users have an easier time with connecting devices for use with RetroPie.</strong></p>
+<hr />
+<h1 id="method-3-old-xwiimote">Method 3 OLD (xwiimote):</h1>
+<p>Hi there,</p>
+<p>while trying to associate a non official wiimote classic controller, I found this: <a href="http://github.com/dvdhrm/xwiimote">http://github.com/dvdhrm/xwiimote</a>.
+Since recent kernel releases (including the one used by RetroPie), an optional module, <code>hid-wiimote</code> can be loaded using the command <code>modprobe hid-wiimote</code>, then you use the command <code>sudo hidd --search</code> to find the wiimote without a pin (bluez is not good at this, asking for a pin), and in the syslog :</p>
+<pre><code>Jan 18 21:55:21 raspberrypi hidd: New HID device 00:18:00:B2:F5:35 (Nintendo RVL-CNT-01)
+Jan 18 21:55:21 raspberrypi kernel: [168934.199087] wiimote 0005:057E:0306.0007: hidraw0: BLUETOOTH HID v3a.1c Gamepad [Nintendo RVL-CNT-01] on 00:1A:7D:DA:71:13
+Jan 18 21:55:21 raspberrypi kernel: [168934.200264] input: Nintendo Wii Remote Accelerometer as /devices/platform/bcm2708_usb/usb1/1-1/1-1.3/1-1.3:1.0/bluetooth/hci0/hci0:71/0005:057E:0306.0007/input/input30
+Jan 18 21:55:21 raspberrypi kernel: [168934.201753] input: Nintendo Wii Remote IR as /devices/platform/bcm2708_usb/usb1/1-1/1-1.3/1-1.3:1.0/bluetooth/hci0/hci0:71/0005:057E:0306.0007/input/input31
+Jan 18 21:55:21 raspberrypi kernel: [168934.213406] input: Nintendo Wii Remote as /devices/platform/bcm2708_usb/usb1/1-1/1-1.3/1-1.3:1.0/bluetooth/hci0/hci0:71/0005:057E:0306.0007/input/input32
+Jan 18 21:55:22 raspberrypi kernel: [168935.216422] input: Nintendo Wii Remote Extension as /devices/platform/bcm2708_usb/usb1/1-1/1-1.3/1-1.3:1.0/bluetooth/hci0/hci0:71/0005:057E:0306.0007/input/input33
+Jan 18 21:55:22 raspberrypi kernel: [168935.223466] input: Nintendo Wii Remote Motion+ as /devices/platform/bcm2708_usb/usb1/1-1/1-1.3/1-1.3:1.0/bluetooth/hci0/hci0:71/0005:057E:0306.0007/input/input34
+Jan 18 21:55:22 raspberrypi kernel: [168935.224051] wiimote 0005:057E:0306.0007: New device registered
+</code></pre>
+
+<p>You can run a test with <code>evtest</code> or <code>xwiishow</code>.</p>
+<p>Please note <a href="https://github.com/petrockblog/RetroPie-Setup/issues/256#issuecomment-32708108">this comment</a>:</p>
+<p>Actually, the hid-wiimote included in 3.6.y kernel is buggy.
+Here's the version I use: <a href="https://github.com/Alex131089/raspberrypi-linux/compare/raspberrypi:rpi-3.6.y...rpi-3.6.y-hid-wiimote">https://github.com/Alex131089/raspberrypi-linux/compare/raspberrypi:rpi-3.6.y...rpi-3.6.y-hid-wiimote</a></p>
+<p>But to make the classic controller work with my remote, <a href="http://www.thinkgeek.com/product/f3a7/">http://www.thinkgeek.com/product/f3a7/</a>, I had to force ext as WIICLASSIC, so it's a bit hacky for this part ; the rest is only bug fix (from 3.11 version) / adaptation to be working with RetroArch (D-Pad).</p>
+<p>Also, while a simple <code>hidd --search</code> handles the connection, it doesn't handle the Wii leds enumeration, I'll try to write a script that continuously search for specified Wiimote (or all) and set the right leds.</p>
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../Wii-U-Pro-Controller/" title="Wii U Pro" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Wii U Pro
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../GPIO-Modules/" title="GPIO Modules" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                GPIO Modules
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2017 The RetroPie Project
+          </div>
+        
+        powered by
+        <a href="http://www.mkdocs.org" title="MkDocs">MkDocs</a>
+        and
+        <a href="http://squidfunk.github.io/mkdocs-material/" title="Material for MkDocs">
+          Material for MkDocs</a>
+      </div>
+      
+        
+  <div class="md-footer-social">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+      <a href="https://github.com/RetroPie" class="md-footer-social__link fa fa-github"></a>
+    
+      <a href="https://twitter.com/retropieproject" class="md-footer-social__link fa fa-twitter"></a>
+    
+  </div>
+
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application-2afe21e0b2.js"></script>
+      <script>var config={url:{base:".."}},app=new Application(config);app.initialize()</script>
+      
+    
+    
+      
+      <script>!function(e,t,a,n,o,c,i){e.GoogleAnalyticsObject=o,e[o]=e[o]||function(){(e[o].q=e[o].q||[]).push(arguments)},e[o].l=1*new Date,c=t.createElement(a),i=t.getElementsByTagName(a)[0],c.async=1,c.src=n,i.parentNode.insertBefore(c,i)}(window,document,"script","https://www.google-analytics.com/analytics.js","ga"),ga("create","UA-76418872-1","auto"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var t=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",t,e.href)})});var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})</script>
+      
+    
+  </body>
+</html>

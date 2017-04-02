@@ -4,7 +4,7 @@
     
     <url>
      <loc>/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -12,7 +12,7 @@
     
     <url>
      <loc>/First-Installation/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
     
@@ -20,50 +20,84 @@
     
         
     <url>
-     <loc>/Managing-ROMs/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <loc>/Controller-Configuration/</loc>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/Transferring-Roms/</loc>
-     <lastmod>2017-01-22</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/Scraper/</loc>
-     <lastmod>2017-01-22</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/Themes/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/Runcommand/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/Updating-RetroPie/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/SSH/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/Wifi/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/Arcade/</loc>
+     <lastmod>2017-04-01</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/MAME/</loc>
+     <lastmod>2017-04-01</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/lr-mame2003/</loc>
+     <lastmod>2017-04-01</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/FinalBurn-Alpha/</loc>
+     <lastmod>2017-04-01</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/lr-fbalpha/</loc>
+     <lastmod>2017-04-01</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/Neo-Geo/</loc>
+     <lastmod>2017-04-01</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/Validating,-Rebuilding,-and-Filtering-Arcade-ROMs/</loc>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -73,385 +107,361 @@
         
     <url>
      <loc>/3do/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/Amiga/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/Amstrad-CPC/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/Apple-II/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/Atari-2600/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/Atari-7800/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/Atari-800-and-5200/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/Atari-Jaguar/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/Atari-Lynx/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/Atari-ST-STE-TT-Falcon/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/Coco/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/Colecovision/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/Commodore-64/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/Daphne/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/Dragon/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/Dreamcast/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/FinalBurn-Alpha/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <loc>/Famicom-Disk-System/</loc>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/Game-Boy-Advance/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/Game-Boy-Color/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/Game-Boy/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/GameCube/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/Game-Gear/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/Game-&-Watch/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/GemRB/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/Genesis-Megadrive/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/Intellivision/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/Love/</loc>
-     <lastmod>2017-01-22</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/lr-fbalpha/</loc>
-     <lastmod>2017-01-22</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/lr-mame2003/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/Macintosh/</loc>
-     <lastmod>2017-01-22</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/MAME/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/Master-System/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/MESS/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/MSX/</loc>
-     <lastmod>2017-01-22</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/Neo-Geo/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/Neo-Geo-Pocket-Color/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/Neo-Geo-Pocket/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/Nintendo-64/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/Nintendo-DS/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/Nintendo-Entertainment-System/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/OpenBOR/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/Oric/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/PC-Engine/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/PC/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/Playstation-1/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/Playstation-2/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/PSP/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/Sam-Coupe/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/Saturn/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/ScummVM/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/Sega-32X/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/Sega-CD/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/SG-1000/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/Super-Nintendo-Entertainment-System/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/TI99/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <loc>/TI-99/</loc>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/TRS-80/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/Vectrex/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/VideoPac-Odyssey-2/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/Virtual-Boy/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/Wii/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/Wonderswan-Color/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/WonderSwan/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/Zmachine/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/ZX-Spectrum/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -461,169 +471,169 @@
         
     <url>
      <loc>/Adventure-Game-Studio/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/Cannonball/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/CaveStory/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <loc>/Cave-Story/</loc>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/Commander-Keen/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/Descent/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/Dinothawr/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/Doom/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/Duke-Nukem-3D/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/GameMaker-Games/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/KODI/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/Limelight/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/Lincity/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/Marathon/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/Micropolis/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/Minecraft/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/OpenTTD/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/OpenTyrian/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/Ports/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/Quake/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/ResidualVM/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/SDLPoP/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/Solarus/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/Stratagus/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/Super-Mario-War/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/SuperTux/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/The-Ur-Quan-Masters/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/Wolfenstein-3D/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/Xrick/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -632,98 +642,110 @@
     
         
     <url>
-     <loc>/Setting-up-a-Bluetooth-controller/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <loc>/Xbox-360-Controller/</loc>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/Setting-up-an-8bitdo-Bluetooth-controller/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <loc>/PS3-Controller/</loc>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/Setting-up-an-N64-controller/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <loc>/8Bitdo-Controller/</loc>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/Setting-up-a-PS3-controller/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <loc>/Bluetooth-Controller/</loc>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/Setting-up-a-PS4-controller/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <loc>/Logitech-Controller/</loc>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/Setting-up-a-Wireless-Ouya-Controller/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <loc>/N64-Controller/</loc>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/Setting-up-the-XBox360-controller/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <loc>/PS4-Controller/</loc>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/Logitech-controllers/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <loc>/Ouya-Controller/</loc>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/Xiaomi-Gamepad/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <loc>/Xiaomi-Controller/</loc>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/Xin-Mo-Controller/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/Spinners-and-Trackballs/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/Mobile-Gamepad/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/Virtual-Gamepad/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/Setting-up-Wii-U-Pro-controller/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <loc>/Wii-U-Pro-Controller/</loc>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/Wiimotes-with-classic-controllers/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <loc>/Wiimote-Controller/</loc>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/GPIO-Modules/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/Mapping-a-Controller-for-Intellivision/</loc>
+     <lastmod>2017-04-01</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/Universal-Controller-Calibration-&-Mapping-Using-xboxdrv/</loc>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -733,79 +755,55 @@
         
     <url>
      <loc>/BIOS/</loc>
-     <lastmod>2017-01-22</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/Changelogs/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/Configuration-Editor/</loc>
-     <lastmod>2017-01-22</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/Mapping-a-Controller-for-Intellivision/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/Memory-Split/</loc>
-     <lastmod>2017-01-22</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/Optimization-for-Nintendo-64/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/Overclocking/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/Optimization-for-Nintendo-64/</loc>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/Running-ROMs-from-a-Network-Share/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/Running-ROMs-from-a-USB-drive/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/Splashscreen/</loc>
-     <lastmod>2017-01-22</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/Supported-Systems/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/Take-and-Scrape-Your-Own-Screenshots/</loc>
-     <lastmod>2017-01-22</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/Universal-Controller-Calibration-&-Mapping-Using-xboxdrv/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -815,37 +813,43 @@
         
     <url>
      <loc>/RetroArch/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/RetroArch-Configuration/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/RetroAchievements/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/Cheats/</loc>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/Netplay/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/Shaders-and-Smoothing/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/Smaller-RetroArch-Screen/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -855,19 +859,37 @@
         
     <url>
      <loc>/EmulationStation/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/Child-friendly-EmulationStation/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <loc>/Scraper/</loc>
+     <lastmod>2017-04-01</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/Themes/</loc>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/Creating-Your-Own-EmulationStation-Theme/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/Add-a-New-System-in-EmulationStation/</loc>
+     <lastmod>2017-04-01</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/Child-friendly-EmulationStation/</loc>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -877,31 +899,31 @@
         
     <url>
      <loc>/Manual-Installation/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/RetroPie-Ubuntu-16.04-LTS-x86-Flavor/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/Odroid/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/RetroPie-Arch-Linux-Flavor/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/RetroPie-install-for-OSMC-with-external-memory-USB-Drive/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -911,25 +933,25 @@
         
     <url>
      <loc>/FAQ/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/Sound-Issues/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/Speed-Issues/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/Video-Issues/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
@@ -939,19 +961,35 @@
         
     <url>
      <loc>/Building-RetroPie-Archives/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/Convert-RetroPie-SD-Card-Image-to-NOOBS-Image/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
      <loc>/Shell-Style-Guide/</loc>
-     <lastmod>2017-01-22</lastmod>
+     <lastmod>2017-04-01</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
+    
+        
+    <url>
+     <loc>/Changelogs/</loc>
+     <lastmod>2017-04-01</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/Supported-Systems/</loc>
+     <lastmod>2017-04-01</lastmod>
      <changefreq>daily</changefreq>
     </url>
         

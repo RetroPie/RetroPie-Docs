@@ -1,0 +1,2481 @@
+
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="shortcut icon" href="../assets/images/favicon.ico">
+      
+      <meta name="generator" content="mkdocs+mkdocs-material#1.0.3">
+    
+    
+      
+        <title>Add a New System in EmulationStation - RetroPie Docs</title>
+      
+    
+    
+      <script src="../assets/javascripts/modernizr-facb31f4a3.js"></script>
+    
+    
+      
+        
+        
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application-f3ab63f78a.css">
+      
+        <link rel="stylesheet" href="../assets/stylesheets/application-02ce7adcc2.palette.css">
+      
+      
+        <link rel="stylesheet" href="../stylesheets/extra.css">
+      
+    
+    
+  </head>
+  
+  
+  
+  
+    <body data-md-color-primary="red" data-md-color-accent="red">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+          <svg xmlns="http://www.w3.org/2000/svg" width="416" height="448" viewBox="0 0 416 448" id="github"><path fill="currentColor" d="M160 304q0 10-3.125 20.5t-10.75 19T128 352t-18.125-8.5-10.75-19T96 304t3.125-20.5 10.75-19T128 256t18.125 8.5 10.75 19T160 304zm160 0q0 10-3.125 20.5t-10.75 19T288 352t-18.125-8.5-10.75-19T256 304t3.125-20.5 10.75-19T288 256t18.125 8.5 10.75 19T320 304zm40 0q0-30-17.25-51T296 232q-10.25 0-48.75 5.25Q229.5 240 208 240t-39.25-2.75Q130.75 232 120 232q-29.5 0-46.75 21T56 304q0 22 8 38.375t20.25 25.75 30.5 15 35 7.375 37.25 1.75h42q20.5 0 37.25-1.75t35-7.375 30.5-15 20.25-25.75T360 304zm56-44q0 51.75-15.25 82.75-9.5 19.25-26.375 33.25t-35.25 21.5-42.5 11.875-42.875 5.5T212 416q-19.5 0-35.5-.75t-36.875-3.125-38.125-7.5-34.25-12.875T37 371.5t-21.5-28.75Q0 312 0 260q0-59.25 34-99-6.75-20.5-6.75-42.5 0-29 12.75-54.5 27 0 47.5 9.875t47.25 30.875Q171.5 96 212 96q37 0 70 8 26.25-20.5 46.75-30.25T376 64q12.75 25.5 12.75 54.5 0 21.75-6.75 42 34 40 34 99.5z"/></svg>
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <header class="md-header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <a href=".." title="RetroPie Docs" class=" md-logo  md-header-nav__button">
+          
+            <img src="../images/logo.svg" width="24" height="24">
+          
+        </a>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <span class="md-flex__ellipsis md-header-nav__title">
+          
+            
+              
+                <span class="md-header-nav__parent">
+                  EmulationStation
+                </span>
+              
+            
+            Add a New System in EmulationStation
+          
+        </span>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+          
+<div class="md-search" data-md-component="search">
+  <div class="md-search__overlay"></div>
+  <div class="md-search__inner">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" placeholder="Search" accesskey="s" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false">
+      <label class="md-icon md-search__icon" for="search"></label>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+          <div class="md-header-nav__source">
+            
+              
+
+
+  
+
+
+  <a href="https://github.com/RetroPie/RetroPie-Setup" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      RetroPie-Setup
+    </div>
+  </a>
+
+            
+          </div>
+      </div>
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    <i class=" md-logo  md-nav__button">
+      
+        <img src="../images/logo.svg">
+      
+    </i>
+    RetroPie Docs
+  </label>
+  
+    <div class="md-nav__source">
+      
+
+
+  
+
+
+  <a href="https://github.com/RetroPie/RetroPie-Setup" title="Go to repository" class="md-source" data-md-source="github">
+    
+      <div class="md-source__icon">
+        <svg viewBox="0 0 24 24" width="24" height="24">
+          <use xlink:href="#github" width="24" height="24"></use>
+        </svg>
+      </div>
+    
+    <div class="md-source__repository">
+      RetroPie-Setup
+    </div>
+  </a>
+
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  <li class="md-nav__item">
+    
+      <a href=".." title="Home" class="md-nav__link">
+        Home
+      </a>
+    
+  </li>
+
+    
+      
+      
+  <li class="md-nav__item">
+    
+      <a href="../First-Installation/" title="First Installation" class="md-nav__link">
+        First Installation
+      </a>
+    
+  </li>
+
+    
+      
+      
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-3" type="checkbox" id="nav-3">
+    
+    <label class="md-nav__link" for="nav-3">
+      Getting Started
+    </label>
+    <nav class="md-nav" data-md-component="collapsible">
+      <label class="md-nav__title" for="nav-3">
+        Getting Started
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Controller-Configuration/" title="Controller Configuration" class="md-nav__link">
+        Controller Configuration
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Transferring-Roms/" title="Transferring Roms" class="md-nav__link">
+        Transferring Roms
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Runcommand/" title="Runcommand" class="md-nav__link">
+        Runcommand
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Updating-RetroPie/" title="Updating RetroPie" class="md-nav__link">
+        Updating RetroPie
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../SSH/" title="SSH" class="md-nav__link">
+        SSH
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Wifi/" title="Wifi" class="md-nav__link">
+        Wifi
+      </a>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+    
+    <label class="md-nav__link" for="nav-4">
+      Arcade
+    </label>
+    <nav class="md-nav" data-md-component="collapsible">
+      <label class="md-nav__title" for="nav-4">
+        Arcade
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Arcade/" title="Arcade Quick Start" class="md-nav__link">
+        Arcade Quick Start
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../MAME/" title="MAME" class="md-nav__link">
+        MAME
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../lr-mame2003/" title="lr-mame2003" class="md-nav__link">
+        lr-mame2003
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../FinalBurn-Alpha/" title="FinalBurn Alpha" class="md-nav__link">
+        FinalBurn Alpha
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../lr-fbalpha/" title="lr-fbalpha" class="md-nav__link">
+        lr-fbalpha
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Neo-Geo/" title="Neo Geo" class="md-nav__link">
+        Neo Geo
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Validating,-Rebuilding,-and-Filtering-Arcade-ROMs/" title="Validating, Rebuilding, and Filtering Arcade ROMs" class="md-nav__link">
+        Validating, Rebuilding, and Filtering Arcade ROMs
+      </a>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+    
+    <label class="md-nav__link" for="nav-5">
+      Emulators
+    </label>
+    <nav class="md-nav" data-md-component="collapsible">
+      <label class="md-nav__title" for="nav-5">
+        Emulators
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../3do/" title="3do" class="md-nav__link">
+        3do
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Amiga/" title="Amiga" class="md-nav__link">
+        Amiga
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Amstrad-CPC/" title="Amstrad CPC" class="md-nav__link">
+        Amstrad CPC
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Apple-II/" title="Apple II" class="md-nav__link">
+        Apple II
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Atari-2600/" title="Atari 2600" class="md-nav__link">
+        Atari 2600
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Atari-7800/" title="Atari 7800" class="md-nav__link">
+        Atari 7800
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Atari-800-and-5200/" title="Atari 800 and 5200" class="md-nav__link">
+        Atari 800 and 5200
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Atari-Jaguar/" title="Atari Jaguar" class="md-nav__link">
+        Atari Jaguar
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Atari-Lynx/" title="Atari Lynx" class="md-nav__link">
+        Atari Lynx
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Atari-ST-STE-TT-Falcon/" title="Atari ST-STE-TT-Falcon" class="md-nav__link">
+        Atari ST-STE-TT-Falcon
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Coco/" title="Coco" class="md-nav__link">
+        Coco
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Colecovision/" title="Colecovision" class="md-nav__link">
+        Colecovision
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Commodore-64/" title="Commodore 64" class="md-nav__link">
+        Commodore 64
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Daphne/" title="Daphne" class="md-nav__link">
+        Daphne
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Dragon/" title="Dragon" class="md-nav__link">
+        Dragon
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Dreamcast/" title="Dreamcast" class="md-nav__link">
+        Dreamcast
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Famicom-Disk-System/" title="Famicom Disk System" class="md-nav__link">
+        Famicom Disk System
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Game-Boy-Advance/" title="Game Boy Advance" class="md-nav__link">
+        Game Boy Advance
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Game-Boy-Color/" title="Game Boy Color" class="md-nav__link">
+        Game Boy Color
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Game-Boy/" title="Game Boy" class="md-nav__link">
+        Game Boy
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../GameCube/" title="GameCube" class="md-nav__link">
+        GameCube
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Game-Gear/" title="Game Gear" class="md-nav__link">
+        Game Gear
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Game-&-Watch/" title="Game & Watch" class="md-nav__link">
+        Game & Watch
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../GemRB/" title="GemRB" class="md-nav__link">
+        GemRB
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Genesis-Megadrive/" title="Genesis/Megadrive" class="md-nav__link">
+        Genesis/Megadrive
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Intellivision/" title="Intellivision" class="md-nav__link">
+        Intellivision
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Love/" title="Love" class="md-nav__link">
+        Love
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Macintosh/" title="Macintosh" class="md-nav__link">
+        Macintosh
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Master-System/" title="Master System" class="md-nav__link">
+        Master System
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../MESS/" title="MESS" class="md-nav__link">
+        MESS
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../MSX/" title="MSX" class="md-nav__link">
+        MSX
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Neo-Geo-Pocket-Color/" title="Neo Geo Pocket Color" class="md-nav__link">
+        Neo Geo Pocket Color
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Neo-Geo-Pocket/" title="Neo Geo Pocket" class="md-nav__link">
+        Neo Geo Pocket
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Nintendo-64/" title="Nintendo 64" class="md-nav__link">
+        Nintendo 64
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Nintendo-DS/" title="Nintendo DS" class="md-nav__link">
+        Nintendo DS
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Nintendo-Entertainment-System/" title="Nintendo Entertainment System" class="md-nav__link">
+        Nintendo Entertainment System
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../OpenBOR/" title="OpenBOR" class="md-nav__link">
+        OpenBOR
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Oric/" title="Oric" class="md-nav__link">
+        Oric
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../PC-Engine/" title="PC Engine" class="md-nav__link">
+        PC Engine
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../PC/" title="PC" class="md-nav__link">
+        PC
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Playstation-1/" title="Playstation 1" class="md-nav__link">
+        Playstation 1
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Playstation-2/" title="Playstation 2" class="md-nav__link">
+        Playstation 2
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../PSP/" title="PSP" class="md-nav__link">
+        PSP
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Sam-Coupe/" title="Sam Coupe" class="md-nav__link">
+        Sam Coupe
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Saturn/" title="Saturn" class="md-nav__link">
+        Saturn
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../ScummVM/" title="ScummVM" class="md-nav__link">
+        ScummVM
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Sega-32X/" title="Sega 32X" class="md-nav__link">
+        Sega 32X
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Sega-CD/" title="Sega CD" class="md-nav__link">
+        Sega CD
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../SG-1000/" title="SG 1000" class="md-nav__link">
+        SG 1000
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Super-Nintendo-Entertainment-System/" title="Super Nintendo Entertainment System" class="md-nav__link">
+        Super Nintendo Entertainment System
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../TI-99/" title="TI-99" class="md-nav__link">
+        TI-99
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../TRS-80/" title="TRS-80" class="md-nav__link">
+        TRS-80
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Vectrex/" title="Vectrex" class="md-nav__link">
+        Vectrex
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../VideoPac-Odyssey-2/" title="VideoPac / Odyssey 2" class="md-nav__link">
+        VideoPac / Odyssey 2
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Virtual-Boy/" title="Virtual Boy" class="md-nav__link">
+        Virtual Boy
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Wii/" title="Wii" class="md-nav__link">
+        Wii
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Wonderswan-Color/" title="Wonderswan Color" class="md-nav__link">
+        Wonderswan Color
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../WonderSwan/" title="WonderSwan" class="md-nav__link">
+        WonderSwan
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Zmachine/" title="Zmachine" class="md-nav__link">
+        Zmachine
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../ZX-Spectrum/" title="ZX Spectrum" class="md-nav__link">
+        ZX Spectrum
+      </a>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+    
+    <label class="md-nav__link" for="nav-6">
+      Ports
+    </label>
+    <nav class="md-nav" data-md-component="collapsible">
+      <label class="md-nav__title" for="nav-6">
+        Ports
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Adventure-Game-Studio/" title="Adventure Game Studio" class="md-nav__link">
+        Adventure Game Studio
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Cannonball/" title="Cannonball" class="md-nav__link">
+        Cannonball
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Cave-Story/" title="CaveStory" class="md-nav__link">
+        CaveStory
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Commander-Keen/" title="Commander Keen" class="md-nav__link">
+        Commander Keen
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Descent/" title="Descent" class="md-nav__link">
+        Descent
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Dinothawr/" title="Dinothawr" class="md-nav__link">
+        Dinothawr
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Doom/" title="Doom" class="md-nav__link">
+        Doom
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Duke-Nukem-3D/" title="Duke Nukem 3D" class="md-nav__link">
+        Duke Nukem 3D
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../GameMaker-Games/" title="GameMaker Games" class="md-nav__link">
+        GameMaker Games
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../KODI/" title="KODI" class="md-nav__link">
+        KODI
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Limelight/" title="Limelight" class="md-nav__link">
+        Limelight
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Lincity/" title="Lincity" class="md-nav__link">
+        Lincity
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Marathon/" title="Marathon" class="md-nav__link">
+        Marathon
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Micropolis/" title="Micropolis" class="md-nav__link">
+        Micropolis
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Minecraft/" title="Minecraft" class="md-nav__link">
+        Minecraft
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../OpenTTD/" title="OpenTTD" class="md-nav__link">
+        OpenTTD
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../OpenTyrian/" title="OpenTyrian" class="md-nav__link">
+        OpenTyrian
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Ports/" title="Ports" class="md-nav__link">
+        Ports
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Quake/" title="Quake" class="md-nav__link">
+        Quake
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../ResidualVM/" title="ResidualVM" class="md-nav__link">
+        ResidualVM
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../SDLPoP/" title="SDLPoP" class="md-nav__link">
+        SDLPoP
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Solarus/" title="Solarus" class="md-nav__link">
+        Solarus
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Stratagus/" title="Stratagus" class="md-nav__link">
+        Stratagus
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Super-Mario-War/" title="Super Mario War" class="md-nav__link">
+        Super Mario War
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../SuperTux/" title="SuperTux" class="md-nav__link">
+        SuperTux
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../The-Ur-Quan-Masters/" title="The Ur Quan Masters" class="md-nav__link">
+        The Ur Quan Masters
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Wolfenstein-3D/" title="Wolfenstein 3D" class="md-nav__link">
+        Wolfenstein 3D
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Xrick/" title="Xrick" class="md-nav__link">
+        Xrick
+      </a>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-7" type="checkbox" id="nav-7">
+    
+    <label class="md-nav__link" for="nav-7">
+      Controllers
+    </label>
+    <nav class="md-nav" data-md-component="collapsible">
+      <label class="md-nav__title" for="nav-7">
+        Controllers
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Xbox-360-Controller/" title="Xbox 360" class="md-nav__link">
+        Xbox 360
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../PS3-Controller/" title="PS3" class="md-nav__link">
+        PS3
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../8Bitdo-Controller/" title="8Bitdo" class="md-nav__link">
+        8Bitdo
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Bluetooth-Controller/" title="Bluetooth" class="md-nav__link">
+        Bluetooth
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Logitech-Controller/" title="Logitech" class="md-nav__link">
+        Logitech
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../N64-Controller/" title="N64" class="md-nav__link">
+        N64
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../PS4-Controller/" title="PS4" class="md-nav__link">
+        PS4
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Ouya-Controller/" title="Ouya" class="md-nav__link">
+        Ouya
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Xiaomi-Controller/" title="Xiaomi" class="md-nav__link">
+        Xiaomi
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Xin-Mo-Controller/" title="Xin-Mo" class="md-nav__link">
+        Xin-Mo
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Spinners-and-Trackballs/" title="Spinners and Trackballs" class="md-nav__link">
+        Spinners and Trackballs
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Mobile-Gamepad/" title="Mobile Gamepad" class="md-nav__link">
+        Mobile Gamepad
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Virtual-Gamepad/" title="Virtual Gamepad" class="md-nav__link">
+        Virtual Gamepad
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Wii-U-Pro-Controller/" title="Wii U Pro" class="md-nav__link">
+        Wii U Pro
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Wiimote-Controller/" title="Wiimotes" class="md-nav__link">
+        Wiimotes
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../GPIO-Modules/" title="GPIO Modules" class="md-nav__link">
+        GPIO Modules
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Mapping-a-Controller-for-Intellivision/" title="Mapping a Controller for Intellivision" class="md-nav__link">
+        Mapping a Controller for Intellivision
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Universal-Controller-Calibration-&-Mapping-Using-xboxdrv/" title="Universal Controller Calibration & Mapping Using xboxdrv" class="md-nav__link">
+        Universal Controller Calibration & Mapping Using xboxdrv
+      </a>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
+    
+    <label class="md-nav__link" for="nav-8">
+      Advanced Configuration
+    </label>
+    <nav class="md-nav" data-md-component="collapsible">
+      <label class="md-nav__title" for="nav-8">
+        Advanced Configuration
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../BIOS/" title="BIOS" class="md-nav__link">
+        BIOS
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Configuration-Editor/" title="Configuration Editor" class="md-nav__link">
+        Configuration Editor
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Memory-Split/" title="Memory Split" class="md-nav__link">
+        Memory Split
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Overclocking/" title="Overclocking" class="md-nav__link">
+        Overclocking
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Optimization-for-Nintendo-64/" title="Optimization for Nintendo 64" class="md-nav__link">
+        Optimization for Nintendo 64
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Running-ROMs-from-a-Network-Share/" title="Running ROMs from a Network Share" class="md-nav__link">
+        Running ROMs from a Network Share
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Running-ROMs-from-a-USB-drive/" title="Running ROMs from a USB drive" class="md-nav__link">
+        Running ROMs from a USB drive
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Splashscreen/" title="Splashscreen" class="md-nav__link">
+        Splashscreen
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Take-and-Scrape-Your-Own-Screenshots/" title="Take and Scrape Your Own Screenshots" class="md-nav__link">
+        Take and Scrape Your Own Screenshots
+      </a>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-9" type="checkbox" id="nav-9">
+    
+    <label class="md-nav__link" for="nav-9">
+      RetroArch
+    </label>
+    <nav class="md-nav" data-md-component="collapsible">
+      <label class="md-nav__title" for="nav-9">
+        RetroArch
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../RetroArch/" title="RetroArch" class="md-nav__link">
+        RetroArch
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../RetroArch-Configuration/" title="RetroArch Controller Configuration" class="md-nav__link">
+        RetroArch Controller Configuration
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../RetroAchievements/" title="RetroAchievements" class="md-nav__link">
+        RetroAchievements
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Cheats/" title="Cheats" class="md-nav__link">
+        Cheats
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Netplay/" title="Netplay" class="md-nav__link">
+        Netplay
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Shaders-and-Smoothing/" title="Shaders and Smoothing" class="md-nav__link">
+        Shaders and Smoothing
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Smaller-RetroArch-Screen/" title="Smaller RetroArch Screen" class="md-nav__link">
+        Smaller RetroArch Screen
+      </a>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-10" type="checkbox" id="nav-10" checked>
+    
+    <label class="md-nav__link" for="nav-10">
+      EmulationStation
+    </label>
+    <nav class="md-nav" data-md-component="collapsible">
+      <label class="md-nav__title" for="nav-10">
+        EmulationStation
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../EmulationStation/" title="EmulationStation" class="md-nav__link">
+        EmulationStation
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Scraper/" title="Scraper" class="md-nav__link">
+        Scraper
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Themes/" title="Themes" class="md-nav__link">
+        Themes
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Creating-Your-Own-EmulationStation-Theme/" title="Creating Your Own EmulationStation Theme" class="md-nav__link">
+        Creating Your Own EmulationStation Theme
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        Add a New System in EmulationStation
+      </label>
+    
+    <a href="./" title="Add a New System in EmulationStation" class="md-nav__link md-nav__link--active">
+      Add a New System in EmulationStation
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#step-1-edit-es_systemscfg" title="Step 1. Edit es_systems.cfg" class="md-nav__link">
+    Step 1. Edit es_systems.cfg
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-create-a-theme-for-the-new-system" title="Step 2. Create a Theme for the New System" class="md-nav__link">
+    Step 2. Create a Theme for the New System
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-31-launch-roms-with-the-runcommand-script" title="Step 3.1. Launch roms with the Runcommand script" class="md-nav__link">
+    Step 3.1. Launch roms with the Runcommand script
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-32-launch-roms-with-the-shell-scripts" title="Step 3.2. Launch roms with the shell scripts" class="md-nav__link">
+    Step 3.2. Launch roms with the shell scripts
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting" title="Troubleshooting" class="md-nav__link">
+    Troubleshooting
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Child-friendly-EmulationStation/" title="Child friendly EmulationStation" class="md-nav__link">
+        Child friendly EmulationStation
+      </a>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-11" type="checkbox" id="nav-11">
+    
+    <label class="md-nav__link" for="nav-11">
+      Platforms
+    </label>
+    <nav class="md-nav" data-md-component="collapsible">
+      <label class="md-nav__title" for="nav-11">
+        Platforms
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Manual-Installation/" title="Raspbian" class="md-nav__link">
+        Raspbian
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../RetroPie-Ubuntu-16.04-LTS-x86-Flavor/" title="Ubuntu" class="md-nav__link">
+        Ubuntu
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Odroid/" title="Odroid" class="md-nav__link">
+        Odroid
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../RetroPie-Arch-Linux-Flavor/" title="Arch Linux" class="md-nav__link">
+        Arch Linux
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../RetroPie-install-for-OSMC-with-external-memory-USB-Drive/" title="OSMC" class="md-nav__link">
+        OSMC
+      </a>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-12" type="checkbox" id="nav-12">
+    
+    <label class="md-nav__link" for="nav-12">
+      Troubleshooting
+    </label>
+    <nav class="md-nav" data-md-component="collapsible">
+      <label class="md-nav__title" for="nav-12">
+        Troubleshooting
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../FAQ/" title="FAQ" class="md-nav__link">
+        FAQ
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Sound-Issues/" title="Sound Issues" class="md-nav__link">
+        Sound Issues
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Speed-Issues/" title="Speed Issues" class="md-nav__link">
+        Speed Issues
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Video-Issues/" title="Video Issues" class="md-nav__link">
+        Video Issues
+      </a>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-13" type="checkbox" id="nav-13">
+    
+    <label class="md-nav__link" for="nav-13">
+      Developers
+    </label>
+    <nav class="md-nav" data-md-component="collapsible">
+      <label class="md-nav__title" for="nav-13">
+        Developers
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Building-RetroPie-Archives/" title="Building RetroPie Archives" class="md-nav__link">
+        Building RetroPie Archives
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Convert-RetroPie-SD-Card-Image-to-NOOBS-Image/" title="Convert RetroPie SD Card Image to NOOBS Image" class="md-nav__link">
+        Convert RetroPie SD Card Image to NOOBS Image
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Shell-Style-Guide/" title="Shell Style Guide" class="md-nav__link">
+        Shell Style Guide
+      </a>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-toggle md-nav__toggle" data-md-toggle="nav-14" type="checkbox" id="nav-14">
+    
+    <label class="md-nav__link" for="nav-14">
+      About
+    </label>
+    <nav class="md-nav" data-md-component="collapsible">
+      <label class="md-nav__title" for="nav-14">
+        About
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Changelogs/" title="Changelogs" class="md-nav__link">
+        Changelogs
+      </a>
+    
+  </li>
+
+        
+          
+          
+  <li class="md-nav__item">
+    
+      <a href="../Supported-Systems/" title="Supported Systems" class="md-nav__link">
+        Supported Systems
+      </a>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#step-1-edit-es_systemscfg" title="Step 1. Edit es_systems.cfg" class="md-nav__link">
+    Step 1. Edit es_systems.cfg
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-2-create-a-theme-for-the-new-system" title="Step 2. Create a Theme for the New System" class="md-nav__link">
+    Step 2. Create a Theme for the New System
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-31-launch-roms-with-the-runcommand-script" title="Step 3.1. Launch roms with the Runcommand script" class="md-nav__link">
+    Step 3.1. Launch roms with the Runcommand script
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#step-32-launch-roms-with-the-shell-scripts" title="Step 3.2. Launch roms with the shell scripts" class="md-nav__link">
+    Step 3.2. Launch roms with the shell scripts
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#troubleshooting" title="Troubleshooting" class="md-nav__link">
+    Troubleshooting
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+               
+              
+                
+                  <h1>Add a New System in EmulationStation</h1>
+                
+                <p>This tutorial is intended for those who wish to add a new system in EmulationStation. For example if you are looking to create a system for favourite games across different platforms or a separate system for roms hacks. </p>
+<p>If you are looking to create a favourites lists <strong>within</strong> a system, then you may wish to consider the <a href="https://github.com/retropie/retropie-setup/wiki/Child-friendly-EmulationStation#favorites****">child-friendly version of EmulationStation</a> which has this feature.</p>
+<p>Before you begin, it is recommended that you back up your image, at least making a copy of the <code>/opt/retropie/configs</code> folder.</p>
+<h3 id="step-1-edit-es_systemscfg">Step 1. Edit es_systems.cfg</h3>
+<p>Each system in EmulationStation is defined in the file <code>es_system.cfg</code>. The default version resides in the <code>/etc/emulationstation</code> folder. It is recommended that you make a copy of this file into the <code>/opt/retropie/configs/all/emulationstation</code> folder. The default version will be overwritten whenever you make updates to your RetroPie system so any manual changes such as a new system will be lost. Remember if you do make any updates to RetroPie then you should add any updates to <code>/etc/emulationstationes_systems.cfg</code> to the custom version in the <code>/opt/retropie/configs/all/emulationstation</code> folder.</p>
+<p>You can create a custom copy with the following command:</p>
+<pre><code>sudo cp /etc/emulationstation/es_systems.cfg /opt/retropie/configs/all/emulationstation/es_systems.cfg.
+</code></pre>
+<p>To appreciate how this process works, it is worth becoming familiar with the contents of the <code>es_systems.cfg</code> file. Each system will have an entry like the example for NES below.</p>
+<pre><code>&lt;system&gt;
+    &lt;name&gt;nes&lt;/name&gt;
+    &lt;fullname&gt;Nintendo Entertainment System&lt;/fullname&gt;
+    &lt;path&gt;/home/pi/RetroPie/roms/nes&lt;/path&gt;
+    &lt;extension&gt;.nes .zip .NES .ZIP&lt;/extension&gt;
+    &lt;command&gt;/opt/retropie/supplementary/runcommand/runcommand.sh 0 _SYS_ nes %ROM%&lt;/command&gt;
+    &lt;platform&gt;nes&lt;/platform&gt;
+    &lt;theme&gt;nes&lt;/theme&gt;
+&lt;/system&gt;
+</code></pre>
+<p>To add a new system to EmulationStation, you will need to create a new entry beginning with a <code>&lt;system&gt;</code> tag and ending with a <code>&lt;/system&gt;</code> tag in <code>/opt/retropie/configs/all/emulationstation/es_systems.cfg</code>. Before you make any changes, you should exit EmulationStation first by pressing F4 on a keyboard or using the Quit EmulationStation option in the start menu.</p>
+<p>The simplest way of adding a new system in your custom <code>es_systems.cfg</code> file is to open it in a text editor, copy an existing system and replace the contents of each tag.</p>
+<p><code>&lt;name&gt;</code></p>
+<p>This is the short name used by ES internally as well as the text used in the EmulationStation UI unless replaced by an image or logo in the theme. It is advised to choose something short and descriptive, e.g. favourites, hacks. </p>
+<p><code>&lt;fullname&gt;</code></p>
+<p>This is the long name used in menus. This tag is optional so it may be best to omit it unless you are not using a theme for the new section.</p>
+<p><code>&lt;path&gt;</code></p>
+<p>This is the folder where the roms in your new system will be located. This folder, e.g. <code>/home/pi/RetroPie/roms/favorites</code>, may need to be created if it does not already exist. Multiple paths are not currently permitted.</p>
+<p><code>&lt;extension&gt; and &lt;command&gt;</code></p>
+<p>These define the list of extensions that EmulationStation will look for in the rom folder defined in <code>&lt;path&gt;</code> and the shell command executed when a game is selected. </p>
+<p>Roms can be launched using shell scripts or the runcommand script. Both methods are involved so it is your choice how you wish to proceed. The entries for these tags are covered <a href="https://github.com/RetroPie/RetroPie-Setup/wiki/Add-a-New-System-in-EmulationStation#step-31-launch-roms-with-the-runcommand-script">below</a> so check the steps required if you are unsure which is best for you.</p>
+<p><code>&lt;platform&gt;</code></p>
+<p>This information is used for scraping. This tag is optional so it may be best to  omit it. If you intend to use multiple emulators, for a favourites section for instance, then you can use existing gamelists to manually create a new gamelist. If you are creating a section for mods or hacks, then it's unlikely you'll be able scrape metadata.</p>
+<p><code>&lt;theme&gt;</code></p>
+<p>This is the theme EmulationStation loads from the current theme set. You can use an existing theme, e.g. <code>&lt;theme&gt;nes&lt;/theme&gt;</code>, or you can create a new one. If you do the latter, then it may an idea to make it the same as the <code>&lt;name&gt;</code> tag.</p>
+<p>Here is an example entry for a section for rom hacks in a custom <code>es_systems.cfg</code> file that will run on a number of emulators, Atari 2600, NES, Megadrive, and SNES.</p>
+<pre><code>&lt;system&gt;
+    &lt;name&gt;hacks&lt;/name&gt;
+    &lt;path&gt;~/RetroPie/roms/hacks&lt;/path&gt;
+    &lt;extension&gt;.bin .gen .int .nes .rom .smc .BIN .GEN .INT .NES .ROM .SMC&lt;/extension&gt;
+    &lt;command&gt;/opt/retropie/supplementary/runcommand/runcommand.sh 0 _SYS_ hacks %ROM%&lt;/command&gt;
+    &lt;theme&gt;hacks&lt;/theme&gt;
+&lt;/system&gt; 
+</code></pre>
+
+<p>Once you have completed your entry for the new system, then save your custom <code>es_system.cfg</code> file and place your roms in the folder specified in the <code>&lt;path&gt;</code> tag.</p>
+<p><strong>Tip</strong> If you are creating a favourites section where you have roms in two folders, then, to save space, you can use symbolic links. For example, if you wish to have Contra available in the NES system and a new Favorites section, then you can create a symbolic link with the command:</p>
+<pre><code>ln -s /home/pi/RetroPie/roms/nes/Contra.nes /home/pi/RetroPie/roms/favorites/Contra.nes
+</code></pre>
+<p>Contra will now appear in the favorites section and launch as normal once you've completed tutorial.</p>
+<p>When you restart EmulationStation, the new system will be added together with your roms. (See below for <a href="https://github.com/RetroPie/RetroPie-Setup/wiki/Add-a-New-System-in-EmulationStation#troubleshooting">troubleshooting</a>)</p>
+<h3 id="step-2-create-a-theme-for-the-new-system">Step 2. Create a Theme for the New System</h3>
+<p>If you are not using an existing theme for your system and have not created a theme for your new system, then once you have restarted EmulationStation, the new system will appear like this.</p>
+<p><img alt="ES System View Unthemed" src="https://cloud.githubusercontent.com/assets/8166945/22026883/f5106b3c-dcc9-11e6-8d89-e1d5dc323fc5.png" /></p>
+<p>If your system appears as above, then a theme needs to be defined for the new system. It is recommended that you copy your current theme from <code>/etc/emulationstation/themes</code> to the <code>/opt/retropie/configs/all/emulationstation/themes</code> folder for the similar reasons why the <code>es_systems.cfg</code> file was copied. It's a good idea to rename the copied folder, e.g. <code>carbon-custom</code>, so that the default and customised themes can be differentiated in the EmulationStation UI.</p>
+<p>In the hacks example above, EmulationStation looks for a theme in the <code>hacks</code> folder of the current theme as defined in the <code>&lt;theme&gt;</code> tag in your custom <code>es_systems.cfg</code> file. The simplest way to do this is to copy an existing folder in the themes folder and rename it to <code>hacks</code>. You can then add or replace images or logos to the <code>art</code> folder and edit the <code>theme.xml</code> file to incorporate them.</p>
+<p>Here is the Hacks system using the Carbon theme where only a new vector logo has been added.</p>
+<p><img alt="ES System View Unthemed" src="https://cloud.githubusercontent.com/assets/8166945/22027062/825e06fc-dcca-11e6-8e7e-8479517dcdae.png" /></p>
+<p>You can find more information on creating themes and images or logos at the following links:</p>
+<p><a href="https://github.com/retropie/retropie-setup/wiki/Creating-Your-Own-EmulationStation-Theme">Creating Your Own Emulation Theme</a></p>
+<p><a href="https://www.youtube.com/watch?v=q9Fk6OzX86U">Video Tutorial on creating Vector (svg) logos from Bitmaps (png)</a></p>
+<h3 id="step-31-launch-roms-with-the-runcommand-script">Step 3.1. Launch roms with the Runcommand script</h3>
+<p><em>This is recommended for console games, especially those that use libretro emulators such as those for NES, SNES, Megadrive/Genesis.</em></p>
+<p>For the <code>&lt;command&gt;</code> tag in your custom <code>es_systems.cfg</code> file, the simplest thing to do is change the line in an existing system, for example <code>nes</code>, to the new one, e.g. <code>hacks</code>, as below:</p>
+<pre><code>&lt;command&gt;/opt/retropie/supplementary/runcommand/runcommand.sh 0 _SYS_ hacks %ROM%&lt;/command&gt;
+</code></pre>
+<p>The <code>&lt;command&gt;</code> tag tells the runcommand script to look for a <code>emulators.cfg</code> file in the <code>hacks</code> folder in  <code>/opt/retropie/configs</code> for launch commands. The <code>hacks</code> folder does not exist by default so will need to be created as well as the <code>emulators.cfg</code> file in that folder. The simplest way to do this is to copy an existing folder in <code>/opt/retropie/configs/</code> and rename it.</p>
+<p>For example, to launch the NES rom hack <a href="http://www.romhacking.net/hacks/70">Mario Adventure</a>, make a copy of the <code>nes</code> folder in <code>/opt/retropie/configs</code> and rename it <code>hacks</code>. The folder will already include an <code>emulators.cfg</code> file with appropriate commands to launch NES roms.</p>
+<p>In your custom <code>es_systems.cfg</code> file, the <code>&lt;extension&gt;</code> tag should read:</p>
+<pre><code>    &lt;extension&gt;.nes .NES&lt;/extension&gt;
+</code></pre>
+<p>Update your custom <code>es_systems.cfg</code> file and restart EmulationStation. It will now be possible to launch Mario Adventure from your newly created Hacks system in EmulationStation.</p>
+<p>Say that you now want to add the SNES rom hack <a href="http://www.romhacking.net/hacks/131/">Super Metroid: Redesign</a> to your hacks section. Open <code>/opt/retropie/configs/snes/emulators.cfg</code> and copy the line for the emulator you wish to use, eg lr-snes9x2010, into the <code>emulators.cfg</code> file in the <code>hacks</code> folder. This file will now read as follows:</p>
+<pre><code>lr-fceumm = "/opt/retropie/emulators/retroarch/bin/retroarch -L /opt/retropie/libretrocores/lr-fceumm/fceumm_libretro.so --config /opt/retropie/configs/nes/retroarch.cfg %ROM%"
+default = "lr-fceumm"
+lr-snes9x2010 = "/opt/retropie/emulators/retroarch/bin/retroarch -L /opt/retropie/libretrocores/lr-snes9x2010/snes9x2010_libretro.so --config /opt/retropie/configs/snes/retroarch.cfg %ROM%"
+</code></pre>
+<p>Add .smc and .SMC (or any relevant extensions) to the <code>&lt;extension&gt;</code> tag in your custom <code>es_systems.cfg file</code>and restart EmulationStation.</p>
+<p>To launch Super Metroid: Redesign from EmulationStation, you will need to bring up the <a href="https://github.com/retropie/retropie-setup/wiki/runcommand">runcommand menu</a> by pressing any key on a keyboard or button 0 on your controller before the game begins. In the menu, choose the lr-snes9x2010 as the emulator for your rom and then launch.</p>
+<p>This process can be repeated for more systems by adding launch commands to <code>emulators.cfg</code> and using the runcommand menu to select the appropriate emulator for each rom. Make sure to add the extensions for your roms to the <code>&lt;extension&gt;</code> entry in your custom <code>es_systems.cfg</code> file.</p>
+<p><strong>Tip:</strong> Before you begin editing files, it may be an idea to make a list of emulators you wish to use, find their launch commands and then add them to the <code>emulators.cfg</code> file in one go. You can do similar for the accepted extensions.</p>
+<h3 id="step-32-launch-roms-with-the-shell-scripts">Step 3.2. Launch roms with the shell scripts</h3>
+<p><em>This is recommended for games that already launch from shell scripts such as ports.</em></p>
+<p>If you wish to launch your games using shell scripts, then the <code>&lt;extension&gt;</code> and <code>&lt;command&gt;</code> entries in your custom <code>es_systems.cfg</code> file can read:</p>
+<pre><code>&lt;extension&gt;.sh .SH&lt;/extension&gt;
+&lt;command&gt;%ROM%&lt;/command&gt;
+</code></pre>
+<p>For each game, a shell script will need to be created in the roms folder as defined in the <code>&lt;path&gt;</code> tag  in in your custom <code>es_systems.cfg</code> file. </p>
+<p>Using the example from the <a href="https://github.com/retropie/retropie-setup/wiki/Doom#to-launch-doom-mods-pwads">Doom Mods</a> page, the shell script to launch the Batman Doom mod in pr-boom would be:</p>
+<pre><code>#!/bin/bash
+/opt/retropie/supplementary/runcommand/runcommand.sh 0 "/opt/retropie/emulators/retroarch/bin/retroarch -L /opt/retropie/libretrocores/lr-prboom/prboom_libretro.so --config /opt/retropie/configs/ports/doom/retroarch.cfg /home/pi/RetroPie/roms/doom/batman/doom2.wad" "lr-prboom"
+</code></pre>
+<p>Note: please check the link above as there is more to do to get Batman Doom running than creating a shell script.</p>
+<p>You can ensure the script is executable by running the command:</p>
+<pre><code>sudo chmod +x "~/RetroPie/roms/hacks/Batman Doom.sh"
+</code></pre>
+<p>You can create individual shell scripts for each game in your new system. When you restart EmulationStation, the scripts should appear in your new system.</p>
+<p><strong>Tip:</strong> If you're not sure what the launch command for a system is, then check the <code>emulators.cfg</code> file for that system and copy the launch command replacing <code>%ROM%</code> with the full path and name of the rom.</p>
+<h3 id="troubleshooting">Troubleshooting</h3>
+<ul>
+<li>
+<p>After making changes to your custom <code>es_systems.cfg</code> file, if EmulationStation fails to load or your system does not appear then check the EmulationStation log at <code>/opt/retropie/configs/all/emulationstation/es_log.txt</code> for any errors. </p>
+</li>
+<li>
+<p>You can use an <a href="https://www.xmlvalidation.com/">online XML validator</a> to check for errors in your custom <code>es_systems.cfg</code> file though this won't pick up on errors such as incorrect rom paths.</p>
+</li>
+<li>
+<p>After restarting EmulationStation, if your new system does not include the roms you were expecting, then check that the extensions are included in the <code>&lt;extension&gt;</code> tag in your custom <code>es_systems.cfg</code> file. Remember Linux is case-sensitve.</p>
+</li>
+<li>
+<p>If a rom doesn't run, then check the runcommand log at <code>/dev/shm/runcommand.log</code> for errors. </p>
+</li>
+</ul>
+              
+            </article>
+          </div>
+        </div>
+      </main>
+      
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../Creating-Your-Own-EmulationStation-Theme/" title="Creating Your Own EmulationStation Theme" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
+            </div>
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
+                Creating Your Own EmulationStation Theme
+              </span>
+            </div>
+          </a>
+        
+        
+          <a href="../Child-friendly-EmulationStation/" title="Child friendly EmulationStation" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
+                Child friendly EmulationStation
+              </span>
+            </div>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
+            </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright &copy; 2017 The RetroPie Project
+          </div>
+        
+        powered by
+        <a href="http://www.mkdocs.org" title="MkDocs">MkDocs</a>
+        and
+        <a href="http://squidfunk.github.io/mkdocs-material/" title="Material for MkDocs">
+          Material for MkDocs</a>
+      </div>
+      
+        
+  <div class="md-footer-social">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+      <a href="https://github.com/RetroPie" class="md-footer-social__link fa fa-github"></a>
+    
+      <a href="https://twitter.com/retropieproject" class="md-footer-social__link fa fa-twitter"></a>
+    
+  </div>
+
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    
+      <script src="../assets/javascripts/application-2afe21e0b2.js"></script>
+      <script>var config={url:{base:".."}},app=new Application(config);app.initialize()</script>
+      
+    
+    
+      
+      <script>!function(e,t,a,n,o,c,i){e.GoogleAnalyticsObject=o,e[o]=e[o]||function(){(e[o].q=e[o].q||[]).push(arguments)},e[o].l=1*new Date,c=t.createElement(a),i=t.getElementsByTagName(a)[0],c.async=1,c.src=n,i.parentNode.insertBefore(c,i)}(window,document,"script","https://www.google-analytics.com/analytics.js","ga"),ga("create","UA-76418872-1","auto"),ga("set","anonymizeIp",!0),ga("send","pageview");var links=document.getElementsByTagName("a");Array.prototype.map.call(links,function(e){e.host!=document.location.host&&e.addEventListener("click",function(){var t=e.getAttribute("data-md-action")||"follow";ga("send","event","outbound",t,e.href)})});var query=document.forms.search.query;query.addEventListener("blur",function(){if(this.value){var e=document.location.pathname;ga("send","pageview",e+"?q="+this.value)}})</script>
+      
+    
+  </body>
+</html>
