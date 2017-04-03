@@ -20,6 +20,42 @@ Place your folders of game files in
 
 After you've added you files into the stratagus rom folder, the folder names appear in the selection UI and you can start them from there directly. All graphics settings are done in-game.
 
+### Installing Starcraft using Stargus for Stratagus
+
+Stargus is a Starcraft Mod that allows you to play Starcraft with the Stratagus engine. The game looks and sounds exactly like Starcraft.
+
+#### Install Stargus
+
+Install details for platforms are found here: https://github.com/Wargus/stargus
+
+This guide shows the method for installing on windows. Download and install the executable found [HERE](https://github.com/Wargus/stargus/releases/tag/master-builds)
+
+#### Extract Starcraft Assets
+
+Make sure you have the original CD install files. Install starcraft and take note of the path where it is installed. Copy the `INSTALL.EXE` from the CD to where starcraft was installed and rename to `starcraft.mpq`
+
+Start up stargus and select `starcraft.mpq` and it will begin extracting the assets needed to run on Stratagus. They will be etracted to:
+
+```
+C:\Users\<USERNAME>\AppData\Roaming\Stratagus\data.Stargus
+```
+
+It should be ~500MB
+
+There are also some assets in the the following folder but they may or may not need to be copied over.
+
+```
+C:\Program Files (x86)\Stargus
+```
+
+Copy the contents of the paths above into 
+
+```
+/home/pi/RetroPie/roms/stratagus/starcraft.data
+```
+
+restart emulationstation and it should show up as an option in stratagus
+
 ### How to install Warcraft II using Wargus for Stratagus
 
 Wargus is a Warcraft II Mod that allows you to play Warcraft II with the Stratagus engine. The game looks and sounds exactly like Warcraft II.
