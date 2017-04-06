@@ -33,6 +33,6 @@ Launch Dolphin:
 ``` 
 From there the graphical client will launch and you can bind your controller in the Dolphin Interface as well as change settings.
 
-##Exiting Dolphin
+## Exiting Dolphin
 Currently the only way I have found to exit dolphin is with the Keyboard combination Alt+F4
 If someone is smart enough to hard code a single exit button that is assignable and/or find a way to map a button press or button combination press to do an Alt+F4 we would have a valid way of exiting the emulator back to EmulationStation
