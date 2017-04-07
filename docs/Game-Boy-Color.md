@@ -13,6 +13,7 @@ _The Game Boy Color was an 8 bit handheld gaming console released by Nintendo in
 ## Emulator: [lr-gambatte](https://github.com/libretro/gambatte-libretro)
 
 lr-gambatte is a libretro port of Gambatte that utilises RetroArch configurations for your controller
+
 ## ROMS
 
 Accepted File Extensions: **.gbc**
@@ -31,8 +32,29 @@ Add custom retroarch controls to the retroarch.cfg file in
 ```
 For more information on custom RetroArch controls see: [RetroArch Configuration](RetroArch-Configuration)
 
-![gameboycolor](https://cloud.githubusercontent.com/assets/10035308/7334404/bd65e496-eb4e-11e4-82e6-78494534d305.png)
+## Emulator: [lr-tgbdual](https://github.com/libretro/tgbdual-libretro)
+
+lr-tgbdual is a libretro port of TGB Dual that utilises RetroArch configurations for your controller
+## ROMS
+
+Accepted File Extensions: **.gbc**
+
+Place your Game Boy Color ROMs in
+```
+/home/pi/RetroPie/roms/gbc
+```
+## Controls
+
+lr-tgbdual utilises Retroarch configurations
+
+Add custom retroarch controls to the retroarch.cfg file in
+```shell
+/opt/retropie/configs/gbc/retroarch.cfg
+```
+For more information on custom RetroArch controls see: [RetroArch Configuration](RetroArch-Configuration)
 
 ## Com Link
 
 Com link support is currently only available in lr-tgbdual. Once a ROM is launched with lr-tgbdual, two synced game screens will be displayed side-by-side. Player one is then able to control the left screen, while player two controls the right.
+
+![gameboycolor](https://cloud.githubusercontent.com/assets/10035308/7334404/bd65e496-eb4e-11e4-82e6-78494534d305.png)
