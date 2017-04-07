@@ -36,7 +36,7 @@ For more information on custom RetroArch controls see: [RetroArch Configuration]
 
 ## Emulator: [lr-tgbdual](https://github.com/libretro/tgbdual-libretro)
 
-lr-tgbdual is a libretro port of TGB Dual that utilises RetroArch configurations for your controller
+lr-tgbdual is a libretro port of TGB Dual that utilises RetroArch configurations for your controllers
 ## ROMS
 
 Accepted File Extensions: **.gbc**
@@ -57,4 +57,4 @@ For more information on custom RetroArch controls see: [RetroArch Configuration]
 
 ## Com Link
 
-Com link support is currently only available in lr-tgbdual. Once a ROM is launched with lr-tgbdual, two synced game screens will be displayed side-by-side. Player one is then able to control the left screen, while player two controls the right.
+Once a ROM is launched with lr-tgbdual, two synced game screens will be displayed side-by-side by default. Player one is then able to control the left screen, while player two controls the right.
