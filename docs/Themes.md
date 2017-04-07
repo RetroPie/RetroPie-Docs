@@ -2,7 +2,7 @@
 
 Alternate themes can be easily installed with the RetroPie Theme Installer.
 
-RetroPie Setup Script >> Setup >> EmulationStation Themes
+RetroPie Setup Script >> Configuration / Tools >> esthemes
 
 Access the ui settings from the start menu in emulationstation
 
