@@ -8,6 +8,7 @@ _The Game Boy Color was an 8 bit handheld gaming console released by Nintendo in
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
 | [lr-gambatte](https://github.com/libretro/gambatte-libretro) | gbc  | .gbc .zip | none | /opt/retropie/configs/gbc/retroarch.cfg |
+| [lr-tgbdual](https://github.com/libretro/tgbdual-libretro) | gb  | .gb .zip | none | /opt/retropie/configs/gb/retroarch.cfg |
 
 ## Emulator: [lr-gambatte](https://github.com/libretro/gambatte-libretro)
 
