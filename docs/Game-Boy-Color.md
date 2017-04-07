@@ -32,6 +32,8 @@ Add custom retroarch controls to the retroarch.cfg file in
 ```
 For more information on custom RetroArch controls see: [RetroArch Configuration](RetroArch-Configuration)
 
+![gameboycolor](https://cloud.githubusercontent.com/assets/10035308/7334404/bd65e496-eb4e-11e4-82e6-78494534d305.png)
+
 ## Emulator: [lr-tgbdual](https://github.com/libretro/tgbdual-libretro)
 
 lr-tgbdual is a libretro port of TGB Dual that utilises RetroArch configurations for your controller
@@ -56,5 +58,3 @@ For more information on custom RetroArch controls see: [RetroArch Configuration]
 ## Com Link
 
 Com link support is currently only available in lr-tgbdual. Once a ROM is launched with lr-tgbdual, two synced game screens will be displayed side-by-side. Player one is then able to control the left screen, while player two controls the right.
-
-![gameboycolor](https://cloud.githubusercontent.com/assets/10035308/7334404/bd65e496-eb4e-11e4-82e6-78494534d305.png)
