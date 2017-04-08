@@ -83,7 +83,7 @@ Try yours and see how it goes. If it doesn't work, then proceed to the next head
 
 * Enter the RetroPie Setup Script
 * Configuration / Tools
-* 802 - bluetooth
+* 802 - bluetooth (as of RetroPie v4.2, it is now listed as _**804 - bluetooth**_)
 * Register and Connect to Bluetooth Device
 * Put the controller into pairing mode with **Share** and **PS**
 * Choose the first/top/default method of pairing in the menu
