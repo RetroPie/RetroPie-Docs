@@ -42,11 +42,15 @@ You can enable and disable different functions of the Runcommand Launch Menu. Th
 
 ## Adding custom launching images
 
-Since 4.0.3 the runcommand can show a custom "launching" image instead of the traditional dialog infobox. The custom launching images must be placed at `/opt/retropie/configs/SYSTEM_NAME/` and named as "launching.jpg" or "launching.png". But be aware that if "Launch Menu Art" is enabled, the scraped box art image takes precedence.
+Since 4.0.3 the runcommand can show a custom "launching" image instead of the traditional dialog infobox. The images must be placed at `/opt/retropie/configs/SYSTEM_NAME/` and named as `launching.png` (or `.jpg`). But be aware that if "Launch Menu Art" is enabled, the scraped box art image takes precedence.
 
-Example: if you have a cool NES related image and want to show it right before launching a NES game, you have to name the image file as `/opt/retropie/configs/nes/launching.jpg`.
+**Example:** if you have a cool NES related image and want to show it right before launching a NES game, you have to name the image file as `/opt/retropie/configs/nes/launching.jpg`.
 
 A more general launching image (not related to a specific system) can be named as `/opt/retropie/configs/all/launching.jpg`.
+
+Since 4.1.5 runcommand is able to show specific game launching art. The image must be placed at `$HOME/RetroPie/roms/SYSTEM_NAME/images/` and named as `RomName-launching.png` (or `.jpg`), where `RomName` must be the exact name of the ROM minus the trailing extension.
+
+**Example:** if you have a launching image for the "Mega Man" NES game and the ROM is named `Mega Man (USA).nes`, you have to name the image file as `RetroPie/roms/nes/images/Mega Man (USA)-launching.png`.
 
 Once these images are installed, the timing to activate the the runcommand menu differs, in that pressing a button will not register successfully until just after the image has disappeared.
 
