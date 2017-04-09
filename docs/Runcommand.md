@@ -9,13 +9,13 @@ The runcommand is the script responsible to launch your emulators/games. This wi
 
 ## Runcommand Launch Menu
 
-Each time you load a ROM there is an option to open what is called the Runcommand Launch Menu. This is accessed by pressing any key on the keyboard or js0 (button 0 on your first connected joypad - it will vary depending on the gamepad used)
+Each time you load a ROM there is an option to open what is called the Runcommand Launch Menu. This is accessed by pressing any key on the keyboard or button 0 on a joystick (what is the button 0 vary depending on the gamepad used).
 
 
 ![runcommandlaunch](https://cloud.githubusercontent.com/assets/10035308/12870184/99acb464-ccf6-11e5-9f32-7f2ef3c17b3a.png)
 
 
-Once you press js0 or a button on your keyboard, it will open up into this menu (this menu may vary depending on the emulator you are running and version of retropie you are using- this image is for the super nintendo):
+Once you press button 0 on a joystick or a key on your keyboard, it will open up into this menu (this menu may vary depending on the emulator you are running and version of retropie you are using- this image is for the super nintendo):
 
 ![runcommandmenu](https://cloud.githubusercontent.com/assets/10035308/10265893/b65c94ee-69ff-11e5-9195-f6a996f4b35b.png)
 
