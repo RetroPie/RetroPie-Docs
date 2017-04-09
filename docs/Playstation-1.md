@@ -131,7 +131,7 @@ alt="RetroPie Playstation 1 emulation" width="300" height="190" border="10" /></
 
 ### Enhanced Graphics
 
-lr-pcsx-rearmed has a core option to improve graphical fidelity by doubling the normal resolution. On a Pi 2 this introduces some slowdown and audio skipping, but on a Pi 3 it appears to work without issue. The 'speed hack' option is required for good results, but has some minor visual glitches.
+lr-pcsx-rearmed has a core option to improve graphical fidelity by doubling the normal resolution. This increases the resolution of the 3D polygons, producing a far sharper image, however all 2D bitmaps and texture maps retain the original resolution.  On a Pi 2 this introduces some slowdown and audio skipping, but on a Pi 3 it appears to work without issue. The 'speed hack' option is required for good results, but has some minor visual glitches.
 
 To enable this, edit the `retroarch-core-options.cfg` file, found in:
 ```
@@ -139,8 +139,21 @@ To enable this, edit the `retroarch-core-options.cfg` file, found in:
 ```
 The option is:
 ```
-pcsx_rearmed_neon_enhancement_enable = "enabled"
-pcsx_rearmed_neon_enhancement_no_main = "enabled"
+pcsx_rearmed_neon_enhancement_enable = "enabled" # Double resolution
+pcsx_rearmed_neon_enhancement_no_main = "enabled" # Speed hack
+```
+
+#### Bilinear Smoothing
+
+To further refine the graphics, enable bilinear smoothing.
+
+To enable this, edit the `retroarch.cfg` file, found in:
+```
+/opt/retropie/configs/psx/
+```
+The option is:
+```
+video_smooth = true
 ```
 
 ### Multitap (3-8 player)
