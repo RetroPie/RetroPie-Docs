@@ -153,7 +153,7 @@ To enable this, edit the `retroarch.cfg` file, found in:
 ```
 The option is:
 ```
-video_smooth = true
+video_smooth = "true"
 ```
 
 ### Multitap (3-8 player)
