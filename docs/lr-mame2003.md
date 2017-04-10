@@ -57,6 +57,8 @@ or, if you're using the arcade folder:
 
 ## Cheats
 
+> **Note** As RetroPie 4.2 it is no longer necessary to manually add `cheat.dat` to your installation as it is automatically included by RetroPie-Setup.
+
 lr-mame2003 supports the MAME cheat engine, allowing you to use the 'TAB' menu to enable various in-game cheats. To active these, there is a supplementary file that you need to transfer to your Pi, called `cheat.dat`. This file can be downloaded from https://github.com/libretro/mame2003-libretro/tree/master/metadata. Place `cheat.dat` in:
 ```
 /home/pi/RetroPie/BIOS/mame2003/
