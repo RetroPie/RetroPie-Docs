@@ -171,6 +171,11 @@ game_specific_options = "true"
 
 Then, within a multiplayer game, load up the Retroarch menu via the menu hotkey combination (select & X/Triangle, by default), go to **Quick Menu** > **Options** > Find the **Multitap 1** and **Multitap 2** options and turn them on, as appropriate. Then scroll to the top, and choose **Create game options file**. Once this is completed, restart the game, and multiplayer options should become available.
 
+**Create game options file** will create a game specific core options file located at:
+```
+/opt/retropie/configs/all/retroarch/config/PCSX-ReARMed/GAME_TITLE.opt
+```
+
 ### Analog Controller Type
 
 lr-pcsc-rearmed controller type can be changed in-game and in a configuration file to support games that require the analog/dualshock controller type.<br>
