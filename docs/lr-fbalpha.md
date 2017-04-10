@@ -48,6 +48,22 @@ Use the **B** button to go back to the **Quick Menu** and select **Restart Conte
 
 Instructions on how to use the UNIBIOS can be found here: [[Neo-Geo#using-the-universe-bios-unibios]]
 
+## Neo Geo Overclocking
+
+The Neo Geo system infamously has several games in its library that push the system beyond its original capabilities, causing 'slow-down' during busy moments. Metal Slug 2 is a particularly egregious example. With lr-fbalpha you can inauthentically reduce and sometimes avoid such situations by 'overclocking' the emulated CPU.
+
+> **Note:** This may have undesired effects such as increasing the music or game speed.
+
+To do this, adjust the `CPU overclock` core option via the RetroArch GUI (accessed be **Select** + **X**). By raising the number beyond 100, you increase the CPU speed. Alternatively this can be adjusted via a setting in the `retroarch-core-options.cfg` file, found in:
+```
+/opt/retropie/configs/all/
+```
+The option is:
+```
+fba-cpu-speed-adjust = 100
+```
+(raise it in increments of 10, with a maximum of 200)
+
 ## Feature requests
 
 Please use the [forum](https://retropie.org.uk/forum) for all support issues, but feature requests can be made on the [GitHub page](https://github.com/libretro/fbalpha).
