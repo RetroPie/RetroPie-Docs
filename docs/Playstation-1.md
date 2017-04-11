@@ -226,7 +226,7 @@ All current emulators accept `.pbp` files, which are EBOOT-format PlayStation ex
 
 This a streamlined, single file alternative for playing multi-disc PlayStation games on RetroPie.
 
-CD images can be converted to EBOOT `.pbp` files with the **PSX2PSP v1.4.2** application for Windows.
+CD images can be converted to EBOOT `.pbp` files with the **PSX2PSP v1.4.2** application for Windows, or **iPoPS** for Mac OSX.
 
 EBOOTs are also often smaller than CD images, so this is a good option if you're tight on space. It should be noted that this compression comes at a minor cost to load speed, but the difference is mostly negligible.
 
