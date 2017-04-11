@@ -222,7 +222,7 @@ This will function the same as EBOOT-format without altering the files.
 
 ### EBOOT-format (.pbp) for Multi-disc games
 
-All current emulators accept `.pbp` files, which are EBOOT-format PlayStation executables. These are also known as PSX2PSP files, used to play PlayStation 1 games on the PSP.
+All current emulators accept `.pbp` files, which are EBOOT-format PlayStation executables. These are traditionally used to play PlayStation 1 games on the PSP.
 
 This a streamlined, single file alternative for playing multi-disc PlayStation games on RetroPie.
 
