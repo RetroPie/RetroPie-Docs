@@ -224,7 +224,7 @@ This will function the same as EBOOT-format without altering the files.
 
 All current emulators accept `.pbp` files, which are EBOOT-format PlayStation executables. These are also known as PSX2PSP files, used to play PlayStation 1 games on the PSP.
 
-This a streamlined, single file alternative to playing multi-disc PlayStation games on RetroPie.
+This a streamlined, single file alternative for playing multi-disc PlayStation games on RetroPie.
 
 CD images can be converted to EBOOT `.pbp` files with the **PSX2PSP v1.4.2** application for Windows.
 
