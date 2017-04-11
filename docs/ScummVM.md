@@ -24,19 +24,19 @@ Place Your folders of game files in
 
 **Quick Start**
 
--After you've added you files into the scummvm rom folder, open up the +LAUNCH GUI
+- After you've added you files into the scummvm rom folder, open up the +LAUNCH GUI
 
--then hold down shift and click mass add
+- then hold down shift and click mass add
 
--Navigate to the scummvm folder and select it to add all of your files
+- Navigate to the scummvm folder and select it to add all of your files
 
--quit out of the GUI
+- quit out of the GUI
 
--Press F4 to get out of emulationstation
+- Press F4 to get out of emulationstation
 
--Type in emulationstation to open up emulationstation
+- Type in emulationstation to open up emulationstation
 
--navigate to scummvm and your games will all be there on the list and you'll have no need of a GUI
+- navigate to scummvm and your games will all be there on the list and you'll have no need of a GUI
 
 
 ## Troublshooting
