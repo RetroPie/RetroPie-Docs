@@ -220,17 +220,15 @@ Chrono Cross CD2
 
 This will function the same as EBOOT-format without altering the files.
 
-### Multi-disc games or CD image not working
+### EBOOT-format (.pbp) for Multi-disc games
 
-Note that all the emulators accept `.pbp` files, which are EBOOT-format PlayStation executables. These are also known as PSX2PSP files, used to play PlayStation 1 games on the PSP.
+All current emulators accept `.pbp` files, which are EBOOT-format PlayStation executables. These are also known as PSX2PSP files, used to play PlayStation 1 games on the PSP.
 
-This is the easiest way to play multi-disc PlayStation games on RetroPie.
-
-If a CD image such as `.iso` or `.bin/.cue` does not work, try the EBOOT version.
+This a streamlined, single file alternative to playing multi-disc PlayStation games on RetroPie.
 
 CD images can be converted to EBOOT `.pbp` files with the **PSX2PSP v1.4.2** application for Windows.
 
-EBOOTs are also often smaller than CD images, so could be a good option if you're tight on space.
+EBOOTs are also often smaller than CD images, so this is a good option if you're tight on space. It should be noted that this compression comes at a minor cost to load speed, but the difference is mostly negligible.
 
 ### Importing Save Files
 
