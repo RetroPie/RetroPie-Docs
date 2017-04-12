@@ -19,6 +19,7 @@ This page is a resource for additional details on RetroPie's MAME emulators incl
 | [lr-imame4all](#lr-imame4all-mame-2000) | arcade **or** mame-mame4all | MAME 0.37b5 | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/mame-mame4all/retroarch.cfg |
 | [lr-mame2003](#lr-mame2003-mame-2003) | arcade **or** mame-libretro | MAME 0.78 | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/mame-libretro/retroarch.cfg |
 | [lr-mame2010](#lr-mame2010-mame-2010) | arcade **or** mame-libretro | MAME 0.139 | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/mame-libretro/retroarch.cfg |
+| [lr-mame2014](#lr-mame2014-mame-2014) | arcade **or** mame-libretro | MAME 0.159 | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/mame-libretro/retroarch.cfg |
 | [AdvanceMAME 0.94](#advancemame-094) | arcade **or** mame-advmame | MAME 0.94 | /opt/retropie/configs/mame-advmame/advmame-0.94.0.rc |
 | [AdvanceMAME 1.4](#advancemame-14) | arcade **or** mame-advmame | MAME 0.106 | /opt/retropie/configs/mame-advmame/advmame-1.4.rc |
 | [AdvanceMAME 3](#advancemame-3) | arcade **or** mame-advmame | MAME 0.106 | /opt/retropie/configs/mame-advmame/advmame.rc |
@@ -154,7 +155,34 @@ lr-mame2010 utilises [RetroArch control configurations](RetroArch-Configuration)
 ```
 
 ---
+### lr-mame2014 (MAME 2014)
+[Visit mame2014-libretro on github](https://github.com/libretro/mame2010-libretro)
+**Note: This emulator is considered 'optional' in RetroPie and has limited functionality. It requires more processing power than earlier MAME versions and will not run as many games at full speed on rPi hardware.**
 
+```shell
+Roms Dir: /home/pi/RetroPie/roms/mame-libretro
+Binary Dir: /opt/retropie/libretrocores/lr-mame2010
+Config Dir: /opt/retropie/configs/mame-libretro/retroarch.cfg
+```
+**MAME Version**: 0.159
+
+**Active Sets: ??**
+* BIOS: ??
+* CHDs: ??
+* Samples: ?? (4 more samples are not in circulation)
+
+**MAME 0.159 DAT File**: Coming soon
+
+**lr-mame2014 Compatibility List: Coming soon
+
+**Controls**
+
+lr-mame2014 utilises [RetroArch control configurations](RetroArch-Configuration). Add custom retroarch controls to the retroarch.cfg file in:
+```shell
+/opt/retropie/configs/mame-libretro/retroarch.cfg
+```
+
+---
 ### AdvanceMAME 0.94
 [Visit the AdvanceMAME homepage on sourceforge](http://sourceforge.net/projects/advancemame/)
 ```shell
