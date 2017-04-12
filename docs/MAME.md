@@ -173,7 +173,7 @@ Config Dir: /opt/retropie/configs/mame-libretro/retroarch.cfg
 
 **MAME 0.159 DAT File**: Coming soon
 
-**lr-mame2014 Compatibility List: Coming soon
+**lr-mame2014 Compatibility List**: Coming soon
 
 **Controls**
 
