@@ -2,7 +2,7 @@
 ![](https://alephone.lhowon.org/images/marathon_title.png)
 
 ***
-_Marathon is the Apple version of DOOM._
+_Marathon is a first-person shooter video game developed and published by Bungie, and released in December 1994 for the Apple Macintosh._
 
 ***
 
