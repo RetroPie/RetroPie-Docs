@@ -59,7 +59,7 @@ rp_module_flags="!arm"
 
 ## BIOS
 
-The BIOS file is named **SCPH1001.BIN** (both name and extension are case-sensitive so MUST be in capitals)
+The BIOS file is named **SCPH1001.BIN**
 
 Place SCPH1001.BIN in
 ```
