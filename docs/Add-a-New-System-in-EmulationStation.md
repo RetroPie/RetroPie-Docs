@@ -6,7 +6,7 @@ Before you begin, it is recommended that you back up your image, at least making
 
 ###Step 1. Edit es_systems.cfg
 
-Each system in EmulationStation is defined in the file `es_system.cfg`. The default version resides in the `/etc/emulationstation` folder. It is recommended that you make a copy of this file into the `/opt/retropie/configs/all/emulationstation` folder. The default version will be overwritten whenever you make updates to your RetroPie system so any manual changes such as a new system will be lost. Remember if you do make any updates to RetroPie then you should add any updates to `/etc/emulationstationes_systems.cfg` to the custom version in the `/opt/retropie/configs/all/emulationstation` folder.
+Each system in EmulationStation is defined in the file `es_system.cfg`. The default version resides in the `/etc/emulationstation` folder. It is recommended that you make a copy of this file into the `/opt/retropie/configs/all/emulationstation` folder. The default version will be overwritten whenever you make updates to your RetroPie system so any manual changes such as a new system will be lost. Remember if you do make any updates to RetroPie then you should add any updates to `/etc/emulationstation/es_system.cfg` to the custom version in the `/opt/retropie/configs/all/emulationstation` folder.
 
 You can create a custom copy with the following command:
 
