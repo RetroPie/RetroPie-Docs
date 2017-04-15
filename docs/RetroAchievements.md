@@ -15,7 +15,7 @@ cheevos_hardcore_mode_enable = true
 ```
 
 
-##Supported Systems:
+## Supported Systems:
 
 * NES
 * SNES
@@ -26,7 +26,7 @@ cheevos_hardcore_mode_enable = true
 
 A libretro core compatibility list with RetroAchievements can be found here: https://github.com/libretro/RetroArch/wiki/RetroAchievements
 
-##RetroAchievements Messages
+## RetroAchievements Messages
 
 A common user question is "How do I increase the size of the RetroAchievements messages on RetroArch?".
 
