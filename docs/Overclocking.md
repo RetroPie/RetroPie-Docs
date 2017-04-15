@@ -303,6 +303,7 @@ Whilst every individual Pi is differerent, experience shows *most* are able to r
 
 As much as copying someone else's settings simply may not work, people still ask for them, so here are some usually-safe baselines to start from:
 
+Note: On the Raspberry Pi 2/3 you have the option of a [additional 16MB of RAM](https://www.raspberrypi.org/forums/viewtopic.php?f=29&t=180420)
 #### Raspberry Pi 1
 
 ~~~
@@ -318,6 +319,7 @@ sdram_over_voltage=2
 #### Raspberry Pi 2
 
 ~~~
+total_mem=1024
 arm_freq=1000
 gpu_freq=500
 core_freq=500
