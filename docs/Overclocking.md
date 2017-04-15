@@ -330,6 +330,7 @@ sdram_over_voltage=2
 #### Raspberry Pi 3
 
 ~~~
+total_mem=1024
 arm_freq=1300
 gpu_freq=500
 core_freq=500
