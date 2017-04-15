@@ -41,7 +41,7 @@ Place Your folders of game files in
 - navigate to scummvm and your games will all be there on the list and you'll have no need of a GUI
 
 
-## Troublshooting
+## Troubleshooting
 
 #### FUZZY MENU?
 
