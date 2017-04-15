@@ -24,6 +24,8 @@ Place Your folders of game files in
 
 **Quick Start**
 
+- Quit running rom without saving : Alt + X
+
 - After you've added you files into the scummvm rom folder, open up the +LAUNCH GUI
 
 - then hold down shift and click mass add
