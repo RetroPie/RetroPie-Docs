@@ -12,6 +12,16 @@ sudo raspi-config
 
 For more information on why SSH was disabled see [HERE](https://www.raspberrypi.org/blog/a-security-update-for-raspbian-pixel/)
 
+### When using BerryBoot
+
+When using RetroPie with [BerryBoot](http://www.berryterminal.com/doku.php/berryboot) you cannot use `raspi-config`. There is a workaround to enable SSH:
+* Boot to RetroPie (via BerryBoot)
+* Enter shell by pressing Ctrl + F4
+* `cd /boot`
+* `sudo touch ssh`
+* `sudo reboot now`
+* Done!
+
 ## Connecting
 
 When you first start putty you can sign in with the following credentials:
