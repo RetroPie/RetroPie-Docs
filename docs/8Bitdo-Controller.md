@@ -1,4 +1,4 @@
-#Setting up an 8bitdo Bluetooth controller
+# Setting up an 8bitdo Bluetooth controller
 ![8bitdo Logo](http://www.8bitdo.com/images/logo.png)
 
 ![FC30](https://s21.postimg.org/nvr2zk54j/fc30.png)
