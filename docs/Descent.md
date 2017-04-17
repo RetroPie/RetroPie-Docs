@@ -5,7 +5,7 @@
 _Descent and Descent 2 are first person shooter games that were developed in the 90's for PC. DXX-Rebirth is a Source Port of the Descent and Descent 2 Engines for Windows, Mac OS, Linux (most *NIX systems), offering OpenGL graphics and effects, advanced Multiplayer, many improvements and new features._
 ***
 
-DXX-Rebirth is currently an experimental build that can be installed from the experimental menu of the setup script.  It will build from the current [source](https://github.com/dxx-rebirth/dxx-rebirth).  Build time make take up to 30 minutes or more. It may have some issues with sound.
+DXX-Rebirth is currently an experimental build that can be installed from the experimental menu of the setup script.  It will build from the current [source](https://github.com/dxx-rebirth/dxx-rebirth).  Build time may take up to 30 minutes or more. It may have some issues with sound.
 
 
 # Descent 1
