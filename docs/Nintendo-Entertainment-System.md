@@ -38,9 +38,20 @@ For more information on custom RetroArch controls see: [RetroArch Configuration]
 
 ## Tweaks
 
-### How to disable Crop Overscan in lr-fceumm
+### How to setup Turbo Buttons for lr-fceumm
 
 Open the RetroArch RGUI by pressing **Select+X** on the controller, or **Hotkey+F1** on the keyboard then navigate to:
+
+* Quick Menu
+    * Options
+        * Change `Turbo Enable` to either `Player 1`, `Player 2`, `Both` or `None` by pressing left or right
+        * You can also change the `Turbo Delay (in frames)` (Default is `3`)
+
+Go back to the **Quick Menu** and then to **Resume**.
+
+### How to disable Crop Overscan in lr-fceumm
+
+Open the RetroArch RGUI:
 
 * Quick Menu
     * Options
