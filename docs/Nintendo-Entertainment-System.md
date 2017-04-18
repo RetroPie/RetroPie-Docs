@@ -35,3 +35,23 @@ Add custom retroarch controls to the retroarch.cfg file in
 For more information on custom RetroArch controls see: [RetroArch Configuration](RetroArch-Configuration)
 
 ![nesdiagram](https://cloud.githubusercontent.com/assets/10035308/8245062/4f0c5b8e-15e6-11e5-9255-b920543518d6.png)
+
+## Tweaks
+
+### How to disable Crop Overscan in lr-fceumm
+
+Open the RetroArch RGUI by pressing **Select+X** on the controller, or **Hotkey+F1** on the keyboard then navigate to:
+
+* Quick Menu
+    * Options
+        * Change `Crop Overscan` to `disabled` by pressing left or right
+
+Go back to the **Quick Menu** and then to **Resume**.
+
+### How to disable Crop Overscan in lr-quicknes
+
+Add this to your `/opt/retropie/configs/nes/retroarch.cfg` file. Make sure that this is placed **above** the `#include` line.
+
+```shell
+video_crop_overscan = false
+```
