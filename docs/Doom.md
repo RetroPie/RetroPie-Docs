@@ -178,19 +178,19 @@ Freedoom is divided into three [IWADs](https://zdoom.org/wiki/IWAD).
 
 First you need to download Freedoom: [https://freedoom.github.io/download.html](https://freedoom.github.io/download.html)
 
-As of this writing, the newest version of Freedoom is 0.11 so you can use wget to download the 2 files needed:
+As of this writing, the newest version of Freedoom is 0.11.2 so you can use wget to download the 2 files needed:
 ```
 cd
-wget https://github.com/freedoom/freedoom/releases/download/v0.11/freedoom-0.11.zip && wget https://github.com/freedoom/freedoom/releases/download/v0.11/freedm-0.11.zip
+wget https://github.com/freedoom/freedoom/releases/download/v0.11.2/freedoom-0.11.2.zip && wget https://github.com/freedoom/freedoom/releases/download/v0.11.2/freedm-0.11.2.zip
 ```
 
 Next extract both files:
 
-`unzip freedoom-0.11.zip && unzip freedm-0.11.zip`
+`unzip freedoom-0.11.2.zip && unzip freedm-0.11.2.zip`
 
-The files will be extracted to folders named `freedoom-0.11` and `freedm-0.11` respectively and I like to keep all the Doom WADs in the same folder so why not put them with the shareware doom1.wad.
+The files will be extracted to folders named `freedoom-0.11.2` and `freedm-0.11.2` respectively and I like to keep all the Doom WADs in the same folder so why not put them with the shareware doom1.wad.
 
-`mv freedoom-0.11/freedoom*.wad freedm-0.11/freedm.wad /home/pi/RetroPie/roms/ports/doom/`
+`mv freedoom-0.11.2/freedoom*.wad freedm-0.11.2/freedm.wad /home/pi/RetroPie/roms/ports/doom/`
 
 Now we need to make scripts so we can launch Freedoom from EmulationStation using lr-prboom. We want to place these scripts in the Ports directory.
 
@@ -231,7 +231,7 @@ Last step is to reboot EmulationStation and navigate to the Ports.  You should n
 To delete the left over extracted folders and downloaded files:
 ```
 cd
-rm -rf freedoom-0.11/ freedm-0.11/ freedoom-0.11.zip freedm-0.11.zip
+rm -rf freedoom-0.11.2/ freedm-0.11.2/ freedoom-0.11.2.zip freedm-0.11.2.zip
 ```
 
 ### Music
