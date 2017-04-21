@@ -8,7 +8,7 @@ cheevos_password = "yourpassword"
 cheevos_enable = true
 ```
 
-Since RetroArch 1.3.2 (used in RetroPie 3.7), the Hardcore Mode is supported. It disables the savestates and is optional. If you want to enable it add this line too:
+The Hardcore Mode disables the savestates and is optional. If you want to enable it add this line too:
 
 ```
 cheevos_hardcore_mode_enable = true
@@ -23,6 +23,7 @@ cheevos_hardcore_mode_enable = true
 * Game Boy / Game Boy Color
 * Game Boy Advance
 * PC Engine
+* Master System (started in April-2017 and is in a preliminary stage)
 
 A libretro core compatibility list with RetroAchievements can be found here: https://github.com/libretro/RetroArch/wiki/RetroAchievements
 
