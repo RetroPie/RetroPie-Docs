@@ -6,7 +6,7 @@ _The Commodore 64 is an 8 Bit personal computer introduced in 1982 by Commodore 
 
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
-| [VICE](http://vice-emu.sourceforge.net/) | c64 | .crt .d64 .g64 .t64 .tap .x64 .zip | none | /opt/retropie/configs/c64/sdl-vicerc **and** /opt/retropie/configs/c64/sdl-joymap-c64.vjm|
+| [VICE](http://vice-emu.sourceforge.net/) | c64 | .crt .d64 .g64 .t64 .tap .x64 .zip .prg | none | /opt/retropie/configs/c64/sdl-vicerc **and** /opt/retropie/configs/c64/sdl-joymap-c64.vjm|
 
 ## Emulator: [VICE](http://vice-emu.sourceforge.net/)
 
