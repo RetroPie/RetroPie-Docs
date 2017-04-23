@@ -116,7 +116,7 @@ The corresponding images are in the folder ` carbon_v4\art `. Of course, the val
 
 
 # Future developments
-The difference between the stock ES and this branch is rather large, with many small changes in a lot of files. Consequently, when any update occurs in the original ES branch (upstream), this might impact this branch as well. Therefore, the risk of a high maintenance burden for this branch was deemed too high to incorporate it into the RetroPie branch proper. Kid Mode ES will remain in the experimental packages menu, where it is available for users who which to test it out.
+The difference between the stock ES and this branch is rather large, with many small changes in a lot of files. Consequently, when any update occurs in the original ES branch (upstream), this might impact this branch as well. Therefore, the risk of a high maintenance burden for this branch was deemed too high to incorporate it into the RetroPie branch proper. Kid Mode ES will remain in the experimental packages menu, where it is available for users who wish to test it out.
 
 For the foreseeable future this ES version will be maintained by https://github.com/zigurana, merging in all relevant changes when they occur (or when someone alerts him to it).
 
