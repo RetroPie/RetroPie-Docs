@@ -113,13 +113,13 @@ Special 2
 Special 3
 ~~~
 
-##How to add a custom palette
+## How to add a custom palette
 
 You may also add custom palettes by adding your new .pal file to 
 ~~~
 /home/pi/RetroPie/BIOS/palettes
 ~~~ 
-Set the following value in ~~~/opt/retropie/configs/all/retroarch-core-options.cfg~~~ gambatte_gb_colorization = "custom"
+Set the following value in'/opt/retropie/configs/all/retroarch-core-options.cfg' gambatte_gb_colorization = "custom"
 
 You can define different palettes for specific games by creating a .pal file in the "palettes" folder with "INTERNALROMNAME.pal" or "rom-name.pal". If no specific palette is found for a ROM then the default palette is used.
 
