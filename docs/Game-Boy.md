@@ -113,6 +113,8 @@ Special 2
 Special 3
 ~~~
 
+https://github.com/libretro/gambatte-libretro/blob/master/libgambatte/libretro/libretro.cpp
+
 ## How to add a custom palette
 
 You may also add custom palettes by adding your new .pal file to 
@@ -136,7 +138,6 @@ Press **B** to go back to the Quick Menu and **Resume Content**.
 
 To make the change permanent, choose **Save Configuration** on the main RGUI menu.
 
-https://github.com/libretro/gambatte-libretro/blob/master/libgambatte/libretro/libretro.cpp
 
 ## Emulator: [lr-tgbdual](https://github.com/libretro/tgbdual-libretro)
 
