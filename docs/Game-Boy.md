@@ -113,6 +113,10 @@ Special 2
 Special 3
 ~~~
 
+~~
+You may also add custom palettes by adding your new .pal file to /home/pi/RetroPie/BIOS/palettes.
+~~  
+
 https://github.com/libretro/gambatte-libretro/blob/master/libgambatte/libretro/libretro.cpp
 
 ## Emulator: [lr-tgbdual](https://github.com/libretro/tgbdual-libretro)
