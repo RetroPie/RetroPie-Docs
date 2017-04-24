@@ -113,10 +113,28 @@ Special 2
 Special 3
 ~~~
 
+##How to add a custom palette
+
 You may also add custom palettes by adding your new .pal file to 
 ~~~
 /home/pi/RetroPie/BIOS/palettes
 ~~~ 
+Set the following value in ~~~/opt/retropie/configs/all/retroarch-core-options.cfg~~~ gambatte_gb_colorization = "custom"
+
+You can define different palettes for specific games by creating a .pal file in the "palettes" folder with "INTERNALROMNAME.pal" or "rom-name.pal". If no specific palette is found for a ROM then the default palette is used.
+
+You may also use the Retroarch RGUI to accomplish this as well by following the steps below once you have added a custom palette. 
+
+Open the RetroArch RGUI by pressing **Select+X** on the controller, or **Hotkey+F1** on the keyboard then navigate to:
+
+* Quick Menu
+    * Core Options
+        * Change `GB Colorization` to `custom` by pressing left or right
+        * Select an `Internal Palette` with left and right
+
+Press **B** to go back to the Quick Menu and **Resume Content**.
+
+To make the change permanent, choose **Save Configuration** on the main RGUI menu.
 
 https://github.com/libretro/gambatte-libretro/blob/master/libgambatte/libretro/libretro.cpp
 
