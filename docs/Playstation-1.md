@@ -21,7 +21,7 @@ Place your PlayStation ROMs in
 /home/pi/RetroPie/roms/psx
 ```
 
-### Why arent my .bin files showing in Emulation Station?
+### Why aren't my .bin files showing in Emulation Station?
   
 Since June 16th 2016 the RetroPie script has configured Emulation Station to no longer show .bin files in the UI.
 This means that a .cue file is required to start the game.  
