@@ -27,7 +27,7 @@ alt="Kid Friendly EmulationStation" width="300" height="190" border="10" /></a>
 ***
 
 # Installation
-The ES branch is located at: https://github.com/zigurana/EmulationStation/tree/UI_modes_Kiosk_Kid_Full . It can be installed **over your current installation of ES** via the RetroPie-Setup script. It is located under `Experimental Packages > option 306: emulationstation-kids`
+The ES branch is located at: https://github.com/zigurana/EmulationStation/tree/UI_modes_Kiosk_Kid_Full . It can be installed **over your current installation of ES** via the RetroPie-Setup script. It is located under `Experimental Packages > option 807: emulationstation-kids`
 
 # Features
 ## UI modes
