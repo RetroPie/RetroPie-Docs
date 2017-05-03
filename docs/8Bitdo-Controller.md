@@ -14,13 +14,17 @@ Please make sure you are using at least RetroPie v4.0, and the **controller firm
 
 Please see the [8bitdo support page](http://www.8bitdo.com/Support.html) for details on how to upgrade the firmware. Before you upgrade your firmware or attempt to register your controller, please make sure your controller is fully charged.  
 
-**PLEASE MAKE SURE IF YOU ARE USING AN 8BITDO ZERO YOU START THE CONTROLLER WITH R+START WHEN YOU ARE COMPLETING THESE STEPS FOR AT LEAST THE FIRST TIME.**
+#  A quick note about the 8bitdo Zero controller.
+
+**PLEASE MAKE SURE IF YOU ARE USING AN 8BITDO ZERO YOU START THE CONTROLLER WITH R1+START WHEN YOU ARE COMPLETING THESE STEPS FOR AT LEAST THE FIRST TIME.
+
+It also may help to reset the controller by holding down the select button for 8 seconds if this does not work. Please note that using the R+START mode does result in different values for the buttons themselves so it may or may not function properly if started under any different mode in the future aside from R1+START.**
 
 ***
 
 # Guide to add your controller
 
-**1)** Run the RetroPie setup script, either through the Emulation Station menu option, or via the command line.  
+**1)** Run the RetroPie setup script, either through the Emulation Station menu option or via the command line.  
 If you want to run this via the command line, quit Emulation Station by pressing F4 on the keyboard and type this at the command line: `sudo /home/pi/RetroPie-Setup/retropie_setup.sh`
 
 **2)** Choose the "Configuration / Tools" menu choice
@@ -34,7 +38,7 @@ You need to make sure your controller is running the relevant firmware for this 
 ![Hack Off](https://s22.postimg.org/df349yl29/2_5_Turn_hack_off.jpg)
 
 **5)** Make sure your controller is powered on and searching for a connection.
-With the FC30 Pro, this is done by holding the power button (left hand side of base of controller) on until the side blue lights illuminate. With the SFC30 this is done by holding the R+Start buttons until the blue LED lights up. Holding down the R shoulder button and then pressing start button ensures the controller is in the correct mode.
+With the FC30 Pro, this is done by holding the power button (left-hand side of the base of the controller) on until the side blue lights illuminate. With the SFC30 this is done by holding the R+Start buttons until the blue LED lights up. Holding down the R shoulder button and then pressing start button ensures the controller is in the correct mode.
 
 **6)** Choose the "Register and Connect to Bluetooth Device"
 ![Main Bluetooth Menu](https://s22.postimg.org/lai92ik2p/3_Main_Bluetooth_Menu.jpg)
@@ -42,7 +46,7 @@ With the FC30 Pro, this is done by holding the power button (left hand side of b
 **7)** You will then see the "Searching" screen. If you have issues with the detection of the controller, you may find it helps to press some buttons on the controller when this screen is showing.
 ![Searching](https://s22.postimg.org/3lqiaw8bl/4_Searching.jpg)
 
-**8)** It may be the case that the first time the results are returned, the name of the controller doesnt show, or that the MAC address doesnt show at all. If thats the case, you can either select the device if you know the MAC, or simply search again.
+**8)** It may be the case that the first time the results are returned, the name of the controller doesn't show, or that the MAC address doesn't show at all. If that's the case, you can either select the device if you know the MAC or simply search again.
 ![No Name](https://s22.postimg.org/g1n84n1nl/5_Search_Results_No_Name.jpg)
 
 **9)** Here it has successfully detected the name of the controller, select OK here.
@@ -60,18 +64,18 @@ With the FC30 Pro, this is done by holding the power button (left hand side of b
 **13)** Select your controller from the list.
 ![Select controller](https://s22.postimg.org/tc6hkf2u9/10_Choose_device_for_udev.jpg)
 
-**14)** This then adds the rule to the file specified, you dont need to manually take any extra steps here.
+**14)** This then adds the rule to the file specified, you don't need to manually take any extra steps here.
 As indicated, you will need to reboot after completing these steps to make sure all the changes have taken effect.
 ![udev added](https://s22.postimg.org/w7jkra6u9/11_Udev_rule_added.jpg)
 
 **15)** The menu "Configure bluetooth connect mode" is optional, but using this can be very useful.
 ![Optional Settings](https://s22.postimg.org/cqyv4rbq9/12_Optional_settings.jpg)
 
-**16)** If your controller wont connect (LED change from flashing to solid) when restarting, change the mode to "boot". In most cases this should also enable the "background" option automatically, so you dont have to select this. If you have issues with the controller not auto connecting after waking from sleep/off mode, then try "background".
+**16)** If your controller won't connect (LED change from flashing to solid) when restarting, change the mode to "boot". In most cases this should also enable the "background" option automatically, so you don't have to select this. If you have issues with the controller not auto connecting after waking from sleep/off mode, then try "background".
 ![Bluetooth connect modes](https://s22.postimg.org/7gyhr7gv5/13_Bluetooth_connect_modes.jpg)
 
 **17)** When this has been set, please reboot the Raspberry Pi.
-Either during boot up, or once in Emulation Station, when you turn the controller on it should connect without issue.
+Either during boot up or once in Emulation Station, when you turn the controller on it should connect without issue.
 
 **18)** Configure the controller for Emulation Station and the emulators. Press Start in Emulation Station using your non-8bitdo controller and choose the "Configure Input" option.
 ![Configure Input](https://s22.postimg.org/9msslpkbl/14_Configure_Input_ES.jpg)
