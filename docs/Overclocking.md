@@ -3,7 +3,7 @@
 The Raspberry Pi's VideoCore IV System-on-Chip has several components, each of which can be run at different clock speeds. They are:
 
 * ARM - the main general-purpose CPU
-* SDRAM - the 1Gb or 512Mb or 256Mb of main memory
+* SDRAM - the 1GB or 512MB or 256MB of main memory
 * Core - the GPU processor core (confusingly named)
 * GPU - a quick way to collectively refer to the following three parts:
     * H264 - the hardware x264 decoder used when watching movies and TV shows
