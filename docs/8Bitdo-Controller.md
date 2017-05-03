@@ -16,9 +16,9 @@ Please see the [8bitdo support page](http://www.8bitdo.com/Support.html) for det
 
 #  A quick note about the 8bitdo Zero controller.
 
-**PLEASE MAKE SURE IF YOU ARE USING AN 8BITDO ZERO YOU START THE CONTROLLER WITH R1+START WHEN YOU ARE COMPLETING THESE STEPS FOR AT LEAST THE FIRST TIME.
+**PLEASE MAKE SURE IF YOU ARE USING AN 8BITDO ZERO YOU START THE CONTROLLER WITH R1+START WHEN YOU ARE COMPLETING THESE STEPS FOR AT LEAST THE FIRST TIME.**
 
-It also may help to reset the controller by holding down the select button for 8 seconds if this does not work. Please note that using the R+START mode does result in different values for the buttons themselves so it may or may not function properly if started under any different mode in the future aside from R1+START.**
+It also may help to reset the controller by holding down the select button for 8 seconds if this does not work. Please note that using the R+START mode does result in different values for the buttons themselves so it may or may not function properly if started under any different mode in the future aside from R1+START.
 
 ***
 
