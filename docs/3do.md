@@ -3,7 +3,7 @@
 ![3do right](https://cloud.githubusercontent.com/assets/10035308/12186059/8d7ec76a-b55c-11e5-9231-b0c561de271c.png)
 
 ***
-_The Panasonic 3do Real Multiplayer was a Home Video Game Console developed by the 3do company in 1994_
+_The Panasonic 3do Real Multiplayer was a Home Video Game Console developed by the 3do company in 1994. Its humongous price tag of $700 meant it was a commercial failure._
 
 ***
 
