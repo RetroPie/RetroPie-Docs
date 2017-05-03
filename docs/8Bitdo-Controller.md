@@ -14,6 +14,8 @@ Please make sure you are using at least RetroPie v4.0, and the **controller firm
 
 Please see the [8bitdo support page](http://www.8bitdo.com/Support.html) for details on how to upgrade the firmware. Before you upgrade your firmware or attempt to register your controller, please make sure your controller is fully charged.  
 
+**PLEASE MAKE SURE IF YOU ARE USING AN 8BITDO ZERO YOU START THE CONTROLLER WITH R+START WHEN YOU ARE COMPLETING THESE STEPS FOR AT LEAST THE FIRST TIME.**
+
 ***
 
 # Guide to add your controller
