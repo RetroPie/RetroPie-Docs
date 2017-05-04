@@ -46,7 +46,7 @@ Update and upgrade the existing APT packages:
 ```
 Install the needed packages for the RetroPie setup script:
 ```
-    sudo apt-get install -y git dialog
+    sudo apt-get install -y git dialog unzip xmlstarlet
 ```
 Download the latest RetroPie setup script:
 ```
