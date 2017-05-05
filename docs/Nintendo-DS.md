@@ -6,12 +6,11 @@ The Nintendo DS is a handheld video game console that was released by Nintendo i
 
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
-| [DraStic](http://drastic-ds.com) | nds | .nds .zip | none | /opt/retropie/configs/nds/drastic/config/drastic.cfg |
 | [lr-desmume](https://github.com/libretro/desmume) | nds | .nds .zip | none | /opt/retropie/configs/nds/retroarch.cfg |
 
-Note that lr-desmume is very experimental and lags quite a bit even with an overclocked RPI 2/3. Now DraStic on the other hand, runs at about full speed on a RPI 2/3. Both can be installed through the experimental menu in the [RetroPie Setup Script](Updating RetroPie).
+Note that lr-desmume is very experimental and lags quite a bit even with an overclocked RPI 2/3.
 
-## Emulator: [DraStic](http://drastic-ds.com), [lr-desmume](https://github.com/libretro/desmume)
+## Emulator: [lr-desmume](https://github.com/libretro/desmume)
 
 ## BIOS
 
@@ -37,9 +36,3 @@ Add custom retroarch controls to the retroarch.cfg file in
 For more information on custom RetroArch controls see: [RetroArch Configuration](RetroArch-Configuration)
 
 ![nintendo_ds_diagram](https://cloud.githubusercontent.com/assets/10035308/16599645/7f549f56-42c0-11e6-88a8-3acda5287da3.png)
-
-### DraStic Controls
-DraStic controls and configurations are located in
-```
-/opt/retropie/configs/nds/drastic/config/drastic.cfg
-```
