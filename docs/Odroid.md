@@ -209,4 +209,24 @@ If you have troubles with no sound or sound stuttering badly in menu or game, tr
     echo "autospawn=no" >> ~/.pulse/client.conf
     pulseaudio -k
 
-Then reboot, or restart emulationstation. This seems to fix sound in-game, but breaks the sounds in emulationstation. I will update this guide if I can figure out how to fix the menu sound.
+Then reboot, or restart emulationstation.
+
+If the audio still isn't great, stutters or pops or echos, try the following:
+
+Go to: `RetroPie -> RetroArch -> Settings -> Audio`
+
+And set: `Audio Latency (ms) = 192`
+
+Then don't forget to save! `Configurations -> Save Current Configuration`
+
+Feel free to play with the value until it sounds right for you.
+
+#### Fix games running too quickly or inconsistently
+
+Go to: `RetroPie -> RetroArch -> Settings -> Frame Throttle`
+
+And set: `Maximum Run Speed = 1.0x`
+
+Then don't forget to save! `Configurations -> Save Current Configuration`
+
+
