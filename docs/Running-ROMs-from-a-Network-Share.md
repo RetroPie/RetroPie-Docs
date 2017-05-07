@@ -9,7 +9,7 @@ Storing your ROMs on a separate computer (NAS) solves a number of problems and h
 
 ## Copy the existing 'roms' folder structure to your server
 
-For EmulationStation to be able to see your rom files the paths given to it within `/etc/es_systems.cfg` need to be recreated on your networked server. Connect to your RetroPie and browse to its roms folder for reference on how each system folder is named. Either copy these folders to your networked server or manually create the folders on your networked server using the same directory names.
+For EmulationStation to be able to see your rom files the paths given to it within `/etc/emulationstation/es_systems.cfg` need to be recreated on your networked server. Connect to your RetroPie and browse to its roms folder for reference on how each system folder is named. Either copy these folders to your networked server or manually create the folders on your networked server using the same directory names.
 
 If you prefer to not use the EmulationStation system directory names and keep the current folder structure you have on your networked server you'll need to edit `es_systems.cfg`. Use this command to copy the configuration file to the home directory wherein it will be editable through SMB (//RETROPIE/configs/all/emulationstation) or FTP.
 
