@@ -1,27 +1,11 @@
-Scraping is a way to get metadata and boxart for your games from the internet.
+Scraping is a way to get metadata and boxart for your games from the internet. The scrapers RetroPie uses pull primarily from thegamesdb.net. If the scraper isn't working either you are not connected to the Internet or thegamesdb.net is down (which happens quite frequently) and in that case you'll just have to wait until it comes back up.
 
 ![](https://cloud.githubusercontent.com/assets/10035308/10357565/b97b4ec4-6d40-11e5-9f44-6b27ae31ebc3.png)
 
 
-## THE scraper, the BEST, FAST and MORE ACCURATE scraper from RetroPie Italia
+## Steven Selph's Scraper
 
-If you want to use the best, fast and more accurate scraper for RetroPie, try THE scraper.
-
-Here an English guide with detailed information:
-http://retropie-italia.it/viewtopic.php?f=20&t=243#p2456
-
-Here an Italian guide with detailed information:
-http://retropie-italia.it/viewtopic.php?f=20&t=243#p1025
-
-Here the download link for version 2.70:
-https://drive.google.com/open?id=0B0uf-e7QJPKJcmxBY2YyZ2lmZXc
-
-Thanks for using it :-)
-
-
-## Integrated Steven Selph's Scraper (not recommended)
-
-Steven Selph's scraper can be installed and used from the setup menu using the following steps:
+Steven Selph's scraper is the simplest and best way of scraping roms (provided that the systems are supported.) It can be installed and used from the setup menu using the following steps:
 
 1. (Optional)If you are remotely running this script you must be logged in with pi otherwise it will confuse the scraper
 2. Quit EmulationStation (from the start menu or press F4) and type `sudo ~/RetroPie-Setup/retropie_setup.sh`
