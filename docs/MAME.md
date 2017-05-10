@@ -162,7 +162,7 @@ lr-mame2010 utilises [RetroArch control configurations](RetroArch-Configuration)
 
 ```shell
 Roms Dir: /home/pi/RetroPie/roms/mame-libretro
-Binary Dir: /opt/retropie/libretrocores/lr-mame2010
+Binary Dir: /opt/retropie/libretrocores/lr-mame2014
 Config Dir: /opt/retropie/configs/mame-libretro/retroarch.cfg
 ```
 **MAME Version**: 0.159
@@ -192,7 +192,7 @@ lr-mame2014 utilises [RetroArch control configurations](RetroArch-Configuration)
 
 ```shell
 Roms Dir: /home/pi/RetroPie/roms/mame-libretro
-Binary Dir: /opt/retropie/libretrocores/lr-mame2010
+Binary Dir: /opt/retropie/libretrocores/lr-mame2016
 Config Dir: /opt/retropie/configs/mame-libretro/retroarch.cfg
 ```
 **MAME Version**: 0.174
