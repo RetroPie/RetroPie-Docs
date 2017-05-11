@@ -43,7 +43,7 @@ Config Dir: /opt/retropie/configs/fba/retroarch.cfg
 
 **FB Alpha v0.2.97.40 DAT File**:  [FB Alpha v0.2.97.40 (Arcade Only)](https://github.com/libretro/fbalpha/blob/master/dats/FB%20Alpha%20v0.2.97.40%20(ClrMame%20Pro%20XML).dat.zip?raw=true)
 
-**FB Alpha v0.2.97.39 DAT File**: [FB Alpha v0.2.97.39 (NeoGeo Only)](https://dl.dropboxusercontent.com/u/51705339/fba%20029739%20dats/FB%20Alpha%20v0.2.97.39%20(ClrMame%20Pro%20XML)%20(NeoGeo%20Only).dat) Instructions: Rebuild using Non-merged-sets, Place the ROMs in the neogeo ROMs folder and use FB Alpha v0.2.97.39 as the default emulator."
+**FB Alpha v0.2.97.39 DAT File**: [FB Alpha v0.2.97.39 (NeoGeo Only)](https://dl.dropboxusercontent.com/u/51705339/fba%20029739%20dats/FB%20Alpha%20v0.2.97.39%20(ClrMame%20Pro%20XML)%20(NeoGeo%20Only).dat) Instructions: Rebuild using Non-merged-sets, Place the ROMs in the /neogeo/ ROMs folder and use lr-fbalpha as the default emulator. This should still work with .40.
 
 **[lr-fbalpha Compatibility List](https://docs.google.com/spreadsheets/d/1GaqIIoiWbzKHwZ52S2xCSDQXILo81Ls1mHK6czKGAtM/edit?usp=sharing)** feel free to contribute to the list.
 
