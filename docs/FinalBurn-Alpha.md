@@ -37,7 +37,7 @@ Config Dir: /opt/retropie/configs/fba/retroarch.cfg
 ```
 **ROM Version**: FBA 0.2.97.40
 
-**Total games emulated: 4375**
+**Total games emulated: 4759**
 * BIOS: 6
 * Samples: ?
 
