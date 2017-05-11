@@ -14,7 +14,7 @@ This page is a resource for additional details on RetroPie's Final Burn Alpha em
 
 | Emulator | Rom Folder | Required ROM Version | Controller Config |
 | :---: | :---: | :---: | :---: |
-| [lr-fbalpha](#lr-fbalpha) | arcade **or** fba **or** neogeo  | FB Alpha v0.2.97.39| /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/fba/retroarch.cfg, **or** /opt/retropie/configs/neogeo/retroarch.cfg |
+| [lr-fbalpha](#lr-fbalpha) | arcade **or** fba **or** neogeo  | FB Alpha v0.2.97.40| /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/fba/retroarch.cfg, **or** /opt/retropie/configs/neogeo/retroarch.cfg |
 | [lr-fbalpha2012](#lr-fbalpha2012) | arcade **or** fba **or** neogeo  | FB Alpha v0.2.97.30 | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/fba/retroarch.cfg, **or** /opt/retropie/configs/neogeo/retroarch.cfg |
 | [PiFBA](#pifba) | arcade **or** fba **or** neogeo  | FB Alpha 0.2.96.71 | /opt/retropie/emulators/pifba/fba2x.cfg **or** /opt/retropie/configs/fba/fba2x.cfg |
 
@@ -35,13 +35,13 @@ Roms Dir: /home/pi/RetroPie/roms/fba
 Binary Dir: /opt/retropie/libretrocores/lr-fbalpha
 Config Dir: /opt/retropie/configs/fba/retroarch.cfg
 ```
-**ROM Version**: FB Alpha 0.2.97.39
+**ROM Version**: FBA 0.2.97.40
 
 **Total games emulated: 4375**
 * BIOS: 6
 * Samples: ?
 
-**FB Alpha v0.2.97.39 DAT File**:  [FB Alpha v0.2.97.39 (Arcade Only)](https://dl.dropboxusercontent.com/u/51705339/fba%20029739%20dats/FB%20Alpha%20v0.2.97.39%20(ClrMame%20Pro%20XML%2C%20Arcade%20Only).dat)
+**FB Alpha v0.2.97.40 DAT File**:  [FB Alpha v0.2.97.40 (Arcade Only)](https://github.com/libretro/fbalpha/blob/master/dats/FB%20Alpha%20v0.2.97.40%20(ClrMame%20Pro%20XML).dat.zip?raw=true)
 
 **FB Alpha v0.2.97.39 DAT File**: [FB Alpha v0.2.97.39 (NeoGeo Only)](https://dl.dropboxusercontent.com/u/51705339/fba%20029739%20dats/FB%20Alpha%20v0.2.97.39%20(ClrMame%20Pro%20XML)%20(NeoGeo%20Only).dat) Instructions: Rebuild using Non-merged-sets, Place the ROMs in the neogeo ROMs folder and use FB Alpha v0.2.97.39 as the default emulator."
 
