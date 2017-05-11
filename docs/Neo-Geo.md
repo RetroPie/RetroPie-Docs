@@ -18,7 +18,7 @@ Users with Raspberry Pi 1s may prefer the standalone emulator `PiFBA`, which wil
 
 | Emulator | Rom Folder | Required ROM Version | Controller Config |
 | :---: | :---: | :---: | :---: | 
-| [lr-fbalpha](#lr-fbalpha) | arcade **or** fba **or** neogeo  | FB Alpha v0.2.97.39 |  /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/fba/retroarch.cfg, **or** /opt/retropie/configs/neogeo/retroarch.cfg |
+| [lr-fbalpha](#lr-fbalpha) | arcade **or** fba **or** neogeo  | FB Alpha v0.2.97.40 |  /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/fba/retroarch.cfg, **or** /opt/retropie/configs/neogeo/retroarch.cfg |
 | [PiFBA](#pifba) | arcade **or** fba **or** neogeo  | FBA 0.2.96.71 | /opt/retropie/emulators/pifba/fba2x.cfg **or** /opt/retropie/configs/fba/fba2x.cfg |
 | [GnGeo-Pi](#gngeo-pi) | arcade **or** neogeo | MAME 0.138 | /opt/retropie/configs/neogeo/gngeorc |
 
