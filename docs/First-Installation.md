@@ -33,7 +33,7 @@ alt="Configuration Video" width="1280" height="400" border="10" /></a>
  * Television or Computer Monitor- really any screen with HDMI or RCA ports
  * Wifi Dongle or Ethernet Cable (Wifi is built into the Pi 3- see wifi dongle compatible list [**here**)](http://elinux.org/RPi_USB_Wi-Fi_Adapters)
  * 5V 2A Micro USB Power Supply (2.5A for pi 3)
- * USB Keyboard and Mouse (to get things set up or you can use [SSH](ssh))
+ * USB Keyboard and Mouse (to get things set up or you can use [SSH](SSH))
  * USB Game Controller of your choice (or you can get the [Control Block](http://blog.petrockblock.com/2014/12/29/controlblock-power-switch-and-io-for-the-raspberry-pi/) to use original SNES controllers)
 
 The simplest way to get most of these components is through a kit such as the [Canakit](https://www.amazon.com/gp/product/B01C6Q2GSY/). 
