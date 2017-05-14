@@ -1,4 +1,4 @@
-##Hardware and hardware setup. 
+## Hardware and hardware setup. 
 
 Nintendo 64 emulation requires at a bare minimum a Raspberry Pi 2 and a Raspberry  Pi 3 is highly suggested due to its increased performance. 
 
@@ -26,7 +26,7 @@ This can be scaled up for some games that perform really well like Mario kart an
 If you wish to enable a High Resolution Texture pack you will want to select the Glide or Rice High Rez options under category 2. 
 
 
-##CPU-Governor
+## CPU-Governor
 The CPU governor can be throttled to max performance mode in one of two ways.
 
 ```
@@ -36,7 +36,7 @@ Or you can enable it from Runcommand  Go to Retropie-Setup - Setup and Configura
 then cancel exit and reboot
 
 
-##Notes on Audio
+## Notes on Audio
 Audio
 
 Use HDMI as composite requires more CPU usage.
@@ -127,7 +127,7 @@ Continue research as to why increasing options like vire_refresh and full screen
 
 
 
-##Optimizations to mupen64plus.cfg
+## Optimizations to mupen64plus.cfg
 
 These are all experimental settings I am playing with
 
