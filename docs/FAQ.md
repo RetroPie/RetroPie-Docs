@@ -194,8 +194,8 @@ From http://www.raspberrypi.org/forums/viewtopic.php?f=78&t=79083
 
 1. Navigate to the command line interface by either hitting F4 in EmulationStation or using the main menu to exit
 1. Type in the following command: `sudo raspi-config`
-
-1. Select option "1. Expand Filesystem"
+1. Select option "7. Advanced Options"
+1. Select option "A1. Expand Filesystem"
 1. Reboot your Raspberry Pi
 
 ### How would I start from command line, say, the SNES emulator by itself?
