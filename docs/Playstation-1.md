@@ -208,17 +208,38 @@ Multiple discs can be loaded simultaneously from Emulation Station into RetroArc
 
 To have the M3U file be the only item listed in Emulation Station to reduced menu clutter:
 
-Remove the .cue extension on the multi-disc files so that es_systems.cfg won't list them.
-Remove the .cue extension you reference them in the M3U.
+Replace the .cue extension on the multi-disc files with .CD1 .CD2 and so on so that es_systems.cfg won't list them.  
+Replace the .cue extension you reference them in the M3U with appropriate ones (.CD1 .CD2 etc).
 
-An M3U for Chrono Cross looks like this for example:
+Example for Metal Gear Solid:
 
+`Folder Structure:`
 ```
-Chrono Cross CD1
-Chrono Cross CD2
+Metal Gear Solid (E) (Disc 1).bin
+Metal Gear Solid (E) (Disc 1).CD1 (this is the renamed .cue file)
+Metal Gear Solid (E) (Disc 2).bin
+Metal Gear Solid (E) (Disc 2).CD2 (this is the renamed .cue file)
+Metal Gear Solid.m3u
+```
+
+`Metal Gear Solid.m3u:`
+```
+Metal Gear Solid (E) (Disc 1).CD1
+Metal Gear Solid (E) (Disc 2).CD2
 ```
 
 This will function the same as EBOOT-format without altering the files.
+
+**WARNING!** M3U Playlist files won't load a game with multi-bin files, you need to pack all .bin files plus cue file, in a single .bin file plus a new cue file. This can be easly achieved with ISOBuster (free edition) with the following procedure:
+> * Run ISOBuster
+> * Open Image File and select the .cue file of a game with multi-bin files.
+> * Right-Click on "CD" (the top one on tree-structure) then select Extract CD <Image> and select RAW (.bin .iso)
+> * Now select a path where to save the file, change from the dropdown .iso to .bin
+> * Rename your file and add .bin at the end of the name.
+> * Save the file, and you are promped to save a new cue file.
+> * Now you have a multi-bin game with .cue file, packed in a single .bin file plus a new .cue file.
+> * Now .m3u can read the file and load the game. 
+
 
 ### EBOOT-format (.pbp) for Multi-disc games
 
