@@ -19,7 +19,6 @@ Unlike the RetroPie SD Image, the Odroid image will autoexpand the filesystem so
 Preliminary steps:
 
 1. As the fresh install of Ubuntu Minimal includes only the root user (password: odroid) a new user has to be created:
-
 ```
 adduser NameOfYourChoice
 ```
@@ -46,7 +45,7 @@ wget https://github.com/mdrjr/odroid-utility/archive/master.zip
 unzip master.zip
 ./odroid-utility-master/odroid-utility.sh
 ```
-6. Set the locale settings. Below you can find example settings:
+6. Set the locale settings. Below you can find an example:
 ```    
 apt-get install language-pack-en-base
 update-locale LC_ALL="en_US.UTF-8"
@@ -54,19 +53,34 @@ update-locale LANG="en_US.UTF-8"
 update-locale LANGUAGE="en_US.UTF-8"
 dpkg-reconfigure locales
 ```
-
-sudo apt-get install -y git
-Installing the RetroPie Setup Script:
+7. Check if all locale variables were correctly set by using the "locale" command. Below you will find an exemplary output: 
+```
+LANG=en_US.UTF-8
+LANGUAGE=en_US.UTF-8
+LC_CTYPE="en_US.UTF-8"
+LC_NUMERIC="en_US.UTF-8"
+LC_TIME="en_US.UTF-8"
+LC_COLLATE="en_US.UTF-8"
+LC_MONETARY="en_US.UTF-8"
+LC_MESSAGES="en_US.UTF-8"
+LC_PAPER="en_US.UTF-8"
+LC_NAME="en_US.UTF-8"
+LC_ADDRESS="en_US.UTF-8"
+LC_TELEPHONE="en_US.UTF-8"
+LC_MEASUREMENT="en_US.UTF-8"
+LC_IDENTIFICATION="en_US.UTF-8"
+LC_ALL=en_US.UTF-8
+```
+8. Install the nano editor:
+```
+apt-get install nano
+```
+9. Install the RetroPie Setup Script
 ```
 cd
 git clone --depth=1 https://github.com/RetroPie/RetroPie-Setup.git
 ```
-
-Run the Setup Script:
-
-```
-cd RetroPie-Setup
-sudo ./retropie_setup.sh
+10. Run the Setup Script:
 ```
 
 **Note** if you have issues while compiling modules and it freezes up on you, then you need to tell it to only compile with one core by running the setup script with this:
@@ -113,49 +127,6 @@ open new terminal `ctrl+alt+F1`
 #### Samba Shares
 
 - Option 3: Enable Samba Shares
-
-### Ubuntu 14
-
-#### Boot to Console:
-
-```
-sudo -s
-
-sudo echo "manual" >> /etc/init/lightdm.override
-
-```
-
-To start lightdm on command:
-
-```
-sudo start lightdm
-```
-
-To restore your system so that lightdm is always started on boot:
-
-```
-sudo rm /etc/init/lightdm.override
-```
-
-#### Disable Screen Blanking in Console:
-
-```
-sudo nano /etc/kbd/config
-```
-comment out
-
-```
-BLANK_TIME
-POWERDOWN_TIME
-```
-
-#### Fix sound not working/stuttering
-
-If you have troubles with no sound or sound stuttering badly in menu or game, check your CPU usage via top or htop. If pulseaudio is using more than 20% then it may be the culprit. In my case, it was using 80%! I had only one sound card output (hdmi) so I completely removed pulseaudio with:
-
-```
-sudo apt-get --purge remove pulseaudio
-```
 
 ### Ubuntu 16 (systemd)
 
