@@ -18,7 +18,7 @@ Unlike the RetroPie SD Image, the Odroid image will autoexpand the filesystem so
 
 Preliminary steps:
 
-1. As the fresh install of Ubuntu includes only the root user (password: odroid) a new user has to be created:
+1. As the fresh install of Ubuntu Minimal includes only the root user (password: odroid) a new user has to be created:
 
 ```
 adduser NameOfYourChoice
