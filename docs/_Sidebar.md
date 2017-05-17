@@ -124,7 +124,7 @@
 * [Overclocking](Overclocking)
 * [Memory Split](Memory-Split)
 * [Manual Installation](Manual-Installation)
-* [Odroid](Odroid)
+* [Odroid XU4](Odroid XU4)
 * [Arch Linux](RetroPie-Arch-Linux-Flavor)
 * [Ubuntu x86](RetroPie-Ubuntu-16.04-LTS-x86-Flavor)
 * [Install via NOOBS](convert-retropie-sd-card-image-to-noobs-image)
