@@ -124,6 +124,7 @@
 * [Overclocking](Overclocking)
 * [Memory Split](Memory-Split)
 * [Manual Installation](Manual-Installation)
+* [Odroid C1 C2](Odroid C1 C2)
 * [Odroid XU4](Odroid XU4)
 * [Arch Linux](RetroPie-Arch-Linux-Flavor)
 * [Ubuntu x86](RetroPie-Ubuntu-16.04-LTS-x86-Flavor)
