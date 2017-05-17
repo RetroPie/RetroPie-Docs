@@ -1,8 +1,10 @@
 # Odroid XU4
 
-This is a guide on how to build RetroPie on the Odroid XU4. This is assuming you are starting with a prebuilt image of Ubuntu from HardKernel's Website:
+This is a guide on how to build RetroPie on the Odroid XU4. This is assuming you are starting with a prebuilt image of Ubuntu 16.04 Minimal from HardKernel's Website:
 
-## Download Ubuntu Minimal Image for Odroid XU3/XU4:
+## Download Ubuntu 16.04 Minimal Image for Odroid XU3/XU4:
+
+### The XU4 is fully software compatible with XU3!
 
 https://odroid.in/ubuntu_16.04lts/
 
@@ -75,12 +77,53 @@ LC_ALL=en_US.UTF-8
 ```
 apt-get install nano
 ```
+9. Update visudo editor:
+```
+sudo update-alternatives --config editor
+```
+10. Run visudo:
+```
+sudo visudo
+```
+This will open up /etc/sudoers file in editor you configured in first step. Add the following line to the end of the file:
+```
+odroid ALL=(ALL) NOPASSWD:ALL
+```
+This tells sudo that the odroid user doesn't need a password. Save and quit.
+
+11. Remove your password:
+```
+sudo passwd -d odroid
+```
+Test it all worked:
+```
+sudo date
+```
+Should give you the date without asking for a password.
+
+Edit the startup of our tty1 (replace with any tty of choice):
+
+	sudo systemctl edit getty@tty1
+
+Add the following text, save and exit
+
+	[Service]
+	ExecStart=
+	ExecStart=-/sbin/agetty -a odroid --noclear %I $TERM
+
+Finally, restart the whole mess:
+
+        sudo systemctl restart getty@tty1
+
 9. Install the RetroPie Setup Script
 ```
 cd
 git clone --depth=1 https://github.com/RetroPie/RetroPie-Setup.git
 ```
 10. Run the Setup Script:
+```
+cd RetroPie-Setup
+sudo ./retropie_setup.sh
 ```
 
 **Note** if you have issues while compiling modules and it freezes up on you, then you need to tell it to only compile with one core by running the setup script with this:
@@ -127,60 +170,6 @@ open new terminal `ctrl+alt+F1`
 #### Samba Shares
 
 - Option 3: Enable Samba Shares
-
-### Ubuntu 16 (systemd)
-
-#### Boot to Console:
-
-    sudo systemctl disable lightdm
-
-To start lightdm on command:
-
-    sudo systemctl start lightdm
-
-To restore your system so that lightdm is always started on boot:
-    
-    sudo systemctl enable lightdm
-
-#### Auto-login on startup
- 
-Update visudo editor:
-
-	sudo update-alternatives --config editor
-
-Run visudo:
-
-	sudo visudo
-
-This will open up /etc/sudoers file in editor you configured in first step. Add the following line to the end of the file:
-
-	odroid ALL=(ALL) NOPASSWD:ALL
-
-This tells sudo that the odroid user doesn't need a password. Save and quit.
-
-Then remove your password:
-
-	sudo passwd -d odroid
-
-Test it all worked:
-
-        sudo date
-
-Should give you the date without asking for a password.
-
-Edit the startup of our tty1 (replace with any tty of choice):
-
-	sudo systemctl edit getty@tty1
-
-Add the following text, save and exit
-
-	[Service]
-	ExecStart=
-	ExecStart=-/sbin/agetty -a odroid --noclear %I $TERM
-
-Finally, restart the whole mess:
-
-        sudo systemctl restart getty@tty1
 
 #### Disable Screen Blanking in Console:
 
