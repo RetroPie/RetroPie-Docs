@@ -1,12 +1,12 @@
-# Odroid C1/C1+/C2
+# Odroid XU4
 
-This is a guide on how to build RetroPie on the Odroid C1/C1+. This is assuming you are starting with a prebuilt image of Ubuntu from HardKernel's Website:
+This is a guide on how to build RetroPie on the Odroid XU4. This is assuming you are starting with a prebuilt image of Ubuntu from HardKernel's Website:
 
-## Download Ubuntu Image for Odroid:
+## Download Ubuntu Minimal Image for Odroid XU3/XU4:
 
-http://odroid.com/dokuwiki/doku.php?id=en:c1_release_linux_ubuntu
+https://odroid.in/ubuntu_16.04lts/
 
-Direct Link [Here](http://odroid.in/ubuntu_14.04lts/ubuntu-14.04.3lts-lubuntu-odroid-c1-20151020.img.xz)
+Direct Link [Here](https://odroid.in/ubuntu_16.04lts/ubuntu-16.04-minimal-odroid-xu3-20160706.img.xz)
 
 Extract the .xz file with a program like [7zip](http://www.7-zip.org/download.html)
 
