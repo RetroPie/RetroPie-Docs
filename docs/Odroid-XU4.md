@@ -16,17 +16,47 @@ Unlike the RetroPie SD Image, the Odroid image will autoexpand the filesystem so
 
 ## Install RetroPie:
 
-Optional preliminary steps:
+Preliminary steps:
+
+1. As the fresh install of Ubuntu includes only the root user (password: odroid) a new user has to be created:
 
 ```
-sudo apt-get update && sudo apt-get upgrade
+adduser NameOfYourChoice
+```
+2. Add new created user to the sudo group:
+```
+usermod -a -G sudo NameOfYourChoice
+```
+3. Upgrade system including the kernel:
+```
+sudo apt update
+sudo apt upgrade
+sudo apt dist-upgrade
+sudo apt install linux-image-xu3
+shutdown -r now
+```
+4. Adjust your time and timezone:
+```
+sudo dpkg-reconfigure tzdata
+```
+5. Install the odroid-utility in order to resize the root partition:
+```
+sudo apt-get install unzip
+wget https://github.com/mdrjr/odroid-utility/archive/master.zip
+unzip master.zip
+./odroid-utility-master/odroid-utility.sh
+```
+6. Set the locale settings. Below you can find example settings:
+```    
+apt-get install language-pack-en-base
+update-locale LC_ALL="en_US.UTF-8"
+update-locale LANG="en_US.UTF-8"
+update-locale LANGUAGE="en_US.UTF-8"
+dpkg-reconfigure locales
+```
 
 sudo apt-get install -y git
-
-```
-
 Installing the RetroPie Setup Script:
-
 ```
 cd
 git clone --depth=1 https://github.com/RetroPie/RetroPie-Setup.git
