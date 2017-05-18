@@ -18,7 +18,7 @@ Unlike the RetroPie SD Image, the Odroid image will autoexpand the filesystem so
 
 ## Install RetroPie:
 
-Preliminary steps:
+### Preliminary steps:
 
 1. As the fresh install of Ubuntu Minimal includes only the root user (password: odroid) a new user has to be created:
 ```
@@ -36,18 +36,14 @@ sudo apt dist-upgrade
 sudo apt install linux-image-xu3
 shutdown -r now
 ```
-4. Adjust your time and timezone:
-```
-sudo dpkg-reconfigure tzdata
-```
-5. Install the odroid-utility in order to resize the root partition:
+4. Install the odroid-utility in order to resize the root partition:
 ```
 sudo apt-get install unzip
 wget https://github.com/mdrjr/odroid-utility/archive/master.zip
 unzip master.zip
 ./odroid-utility-master/odroid-utility.sh
 ```
-6. Set the locale settings. Below you can find an example:
+5. Set the locale settings. Below you can find an example:
 ```    
 apt-get install language-pack-en-base
 update-locale LC_ALL="en_US.UTF-8"
@@ -55,7 +51,7 @@ update-locale LANG="en_US.UTF-8"
 update-locale LANGUAGE="en_US.UTF-8"
 dpkg-reconfigure locales
 ```
-7. Check if all locale variables were correctly set by using the "locale" command. Below you will find an exemplary output: 
+6. Check if all locale variables were correctly set by using the "locale" command. Below you will find an exemplary output: 
 ```
 LANG=en_US.UTF-8
 LANGUAGE=en_US.UTF-8
@@ -73,27 +69,23 @@ LC_MEASUREMENT="en_US.UTF-8"
 LC_IDENTIFICATION="en_US.UTF-8"
 LC_ALL=en_US.UTF-8
 ```
-8. Install the nano editor:
-```
-apt-get install nano
-```
-9. Update visudo editor:
+7. Update visudo editor:
 ```
 sudo update-alternatives --config editor
 ```
-10. Run visudo:
+8. Enable NOPASSWD for the new created user:
 ```
 sudo visudo
 ```
 This will open up /etc/sudoers file in editor you configured in first step. Add the following line to the end of the file:
 ```
-odroid ALL=(ALL) NOPASSWD:ALL
+NameOfYourChoice ALL=(ALL) NOPASSWD:ALL
 ```
 This tells sudo that the odroid user doesn't need a password. Save and quit.
 
-11. Remove your password:
+9. Remove password for the new created user:
 ```
-sudo passwd -d odroid
+sudo passwd -d NameOfYourChoice
 ```
 Test it all worked:
 ```
@@ -102,25 +94,39 @@ sudo date
 Should give you the date without asking for a password.
 
 Edit the startup of our tty1 (replace with any tty of choice):
-
-	sudo systemctl edit getty@tty1
-
+```
+sudo systemctl edit getty@tty1
+```
 Add the following text, save and exit
-
-	[Service]
-	ExecStart=
-	ExecStart=-/sbin/agetty -a odroid --noclear %I $TERM
-
+```
+[Service]
+ExecStart=
+ExecStart=-/sbin/agetty -a odroid --noclear %I $TERM
+```
 Finally, restart the whole mess:
-
-        sudo systemctl restart getty@tty1
-
-9. Install the RetroPie Setup Script
+```
+sudo systemctl restart getty@tty1
+```
+10. Disable Screen Blanking in Console:
+Edit /media/boot/boot.ini with your editor of choice and add before "setenv bootargs":
+```
+setenv RetroPie "no_console_suspend consoleblank=0"
+```
+Add the value of the new created variable to "setenv bootargs":
+```
+${RetroPie}
+```
+Finally, run bootini and reboot:
+```
+bootini
+sudo reboot
+```
+11. Install the RetroPie Setup Script
 ```
 cd
 git clone --depth=1 https://github.com/RetroPie/RetroPie-Setup.git
 ```
-10. Run the Setup Script:
+12. Run the Setup Script:
 ```
 cd RetroPie-Setup
 sudo ./retropie_setup.sh
@@ -130,9 +136,16 @@ sudo ./retropie_setup.sh
 
 ```
 sudo MAKEFLAGS="-j1" ./retropie_setup.sh
-
 ```
-
+### Optional steps:
+* Install the nano editor:
+```
+apt-get install nano
+```
+* Adjust your time and timezone:
+```
+sudo dpkg-reconfigure tzdata
+```
 ## Installing Modules
 
 All modules can be installed from the RetroPie Setup Script. First and foremost the two main packages you need in order for the majority of your system to run are RetroArch and EmulationStation:
@@ -170,26 +183,6 @@ open new terminal `ctrl+alt+F1`
 #### Samba Shares
 
 - Option 3: Enable Samba Shares
-
-#### Disable Screen Blanking in Console:
-
-Edit /media/boot/boot.ini with your editor of choice.
-
-Search for:
-
-    no_console_suspend 
-
-and replace it with:
-
-    no_console_suspend consoleblank=0
-
-Finally, run:
-
-    bootini
-
-and reboot for good luck:
-
-    sudo reboot
 
 #### Fix sound not working/stuttering
 
