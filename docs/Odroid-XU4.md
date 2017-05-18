@@ -93,7 +93,7 @@ sudo date
 ```
 Should give you the date without asking for a password.
 
-Edit the startup of our tty1 (replace with any tty of choice):
+10. Edit the startup of our tty1 (replace with any tty of choice):
 ```
 sudo systemctl edit getty@tty1
 ```
@@ -107,7 +107,7 @@ Finally, restart the whole mess:
 ```
 sudo systemctl restart getty@tty1
 ```
-10. Disable Screen Blanking in Console:
+11. Disable Screen Blanking in Console:
 Edit /media/boot/boot.ini with your editor of choice and add before "setenv bootargs":
 ```
 setenv RetroPie "no_console_suspend consoleblank=0"
@@ -121,12 +121,12 @@ Finally, run bootini and reboot:
 bootini
 sudo reboot
 ```
-11. Install the RetroPie Setup Script
+12. Install the RetroPie Setup Script
 ```
 cd
 git clone --depth=1 https://github.com/RetroPie/RetroPie-Setup.git
 ```
-12. Run the Setup Script:
+13. Run the Setup Script:
 ```
 cd RetroPie-Setup
 sudo ./retropie_setup.sh
