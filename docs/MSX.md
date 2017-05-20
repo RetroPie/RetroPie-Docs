@@ -30,6 +30,13 @@ Add custom retroarch controls to the retroarch.cfg file in
 ```
 /opt/retropie/configs/msx/retroarch.cfg
 ```
+
+keyboard support can also be enable here by adding:
+
+```
+input_libretro_device_p2 = "3"
+````
+
 For more information on custom RetroArch controls see: [RetroArch Configuration](RetroArch-Configuration)
 
 Many games will have varying keyboard controls.
