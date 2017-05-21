@@ -40,3 +40,15 @@ For more information on custom RetroArch controls see: [RetroArch Configuration]
 
 Controls can be mapped from the main menu under Settings >> Controls >> Control Mapping . To access this, connect a keyboard and press Esc during a game.
 
+## Enhancements
+
+### ppsspp
+From the [RetroPie Subreddit](https://www.reddit.com/r/RetroPie/comments/5jieuu/how_to_get_most_psp_games_to_run_beautifully/)
+```
+What I've done so far with a very noticeable difference is set frameskip to 2 (will probably increase this a bit) Turn on auto frameskip (will limit frame skipping to whatever you set for the previous value) then tick Prevent FPS from exceeding 60.
+
+After that you want to change rendering resolution to 2x1, this will make everything look better on bigger screens.
+
+Then you want to goto the audio menu and set Audio Latency to high.
+```
+
