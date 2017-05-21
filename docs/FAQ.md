@@ -132,7 +132,7 @@ In retropie setup script>>Configuration / tools>>autostart
 - **Start Kodi at Boot:** Boots into Kodi- if you exit Kodi you will be returned to EmulationStation.
 - **Manually Edit /opt/retropie/configs/autostart.sh:** you can manually add other programs to start on boot.
 - **Boot to text console (autologin):** Boots into the terminal.
-- **Boot to Desktop:** If you have a desktop environment installed like LXDE this will boot into the desktop.
+- **Boot to Desktop:** If you have a desktop environment installed like LXDE this will boot into the desktop. Note you'll want to disable the retropie splash from the setup script first.
 
 ### How do I remove the black borders?
 
