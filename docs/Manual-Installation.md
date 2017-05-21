@@ -106,6 +106,8 @@ If you want to use samba shares you can set them up from the setup/tools option 
 
 Follow the steps here: https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#how-do-i-boot-to-the-desktop-or-kodi
 
+If you're booting to the desktop you'll want to disable the retropie splashscreen from the setup script first.
+
 ## Further Optimizations:
 On Debian Jessie add `consoleblank=0` to the existing line in `/boot/cmdline.txt` (with a space before it so it's an additional parameter). This prevents the screenblanker kicking in. With it, runcommand dialog is always displayed.  
 There is also a gui option in RetroPie-Setup -> Configuration / Tools -> Raspbian Tools to disable the blanker, but it doesn't work in Jessie due to a Debian bug.
