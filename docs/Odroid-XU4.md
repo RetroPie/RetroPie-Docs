@@ -101,7 +101,7 @@ Add the following text, save and exit
 ```
 [Service]
 ExecStart=
-ExecStart=-/sbin/agetty -a odroid --noclear %I $TERM
+ExecStart=-/sbin/agetty -a NameOfYourChoice --noclear %I $TERM
 ```
 Finally, restart the whole mess:
 ```
