@@ -43,6 +43,13 @@ Use HDMI as composite requires more CPU usage.
 
 
 ## High Resolution texture packs
+Special note on High Resolution texture packs, as of Retropie 4.2 mupen64plus.cfg is being overwritten when launched via runcommand so any changes that enabled hi-res will be reverted.  This is a bug and has been filed, https://github.com/RetroPie/RetroPie-Setup/issues/1983 
+Also referenced in the support forum 
+https://retropie.org.uk/forum/topic/10338/n64-hi-res-no-longer-working
+
+I will leave the steps in the page as for now, but until the bug is addressed the functionality will not work, older versions such as 3.8 were not known to overwrite the mupen64plus.cfg
+
+
 The steps for this are to change the configuration in 
 ```/opt/retropie/configs/n64/mupen64plus.cfg  ```
 Replacing False for True in the Glide and Rice plugin
@@ -118,8 +125,7 @@ Overclocking past 1400
 Well not going to say its impossible but 1400 is the only stable option I can get after testing on about 8 different pi 3s.  
 
 
-vire_refresh / fullspeed screen rate in mupen64plus.cfg
-Continue research as to why increasing options like vire_refresh and full screen framerate in the standalone config file seems to increase performance in plugin loaded non standalone application even though those configs are not supposed to apply to plugin versions.  
+  
 
 
 
