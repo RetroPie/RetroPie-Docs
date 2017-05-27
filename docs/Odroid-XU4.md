@@ -28,16 +28,14 @@ adduser NameOfYourChoice
 ```
 usermod -a -G sudo NameOfYourChoice
 ```
-3. Upgrade system including the kernel:
+3. Upgrade system:
 ```
 sudo apt update
 sudo apt upgrade
 sudo apt dist-upgrade
-sudo apt install linux-image-xu3
 shutdown -r now
 ```
-
-5. Set the locale settings. Below you can find an example:
+4. Set the locale settings. Below you can find an example for English lenguage:
 ```    
 apt-get install language-pack-en-base
 update-locale LC_ALL="en_US.UTF-8"
@@ -45,7 +43,7 @@ update-locale LANG="en_US.UTF-8"
 update-locale LANGUAGE="en_US.UTF-8"
 dpkg-reconfigure locales
 ```
-6. Check if all locale variables were correctly set by using the "locale" command. Below you will find an exemplary output: 
+5. Check if all locale variables were correctly set by using the "locale" command. Below you will find an exemplary output: 
 ```
 LANG=en_US.UTF-8
 LANGUAGE=en_US.UTF-8
@@ -63,11 +61,11 @@ LC_MEASUREMENT="en_US.UTF-8"
 LC_IDENTIFICATION="en_US.UTF-8"
 LC_ALL=en_US.UTF-8
 ```
-7. Update visudo editor:
+6. Update visudo editor:
 ```
 sudo update-alternatives --config editor
 ```
-8. Enable NOPASSWD for the new created user:
+7. Enable NOPASSWD for the new created user:
 ```
 sudo visudo
 ```
@@ -77,7 +75,7 @@ NameOfYourChoice ALL=(ALL) NOPASSWD:ALL
 ```
 This tells sudo that the odroid user doesn't need a password. Save and quit.
 
-9. Remove password for the new created user:
+8. Remove password for the new created user:
 ```
 sudo passwd -d NameOfYourChoice
 ```
@@ -87,7 +85,7 @@ sudo date
 ```
 Should give you the date without asking for a password.
 
-10. Edit the startup of our tty1 (replace with any tty of choice):
+9. Edit the startup of our tty1 (replace with any tty of choice):
 ```
 sudo systemctl edit getty@tty1
 ```
@@ -101,21 +99,21 @@ Finally, restart the whole mess:
 ```
 sudo systemctl restart getty@tty1
 ```
-11. Disable Screen Blanking in Console:
+10. Disable Screen Blanking in Console:
 Edit /media/boot/boot.ini with your editor of choice and add before "setenv bootargs":
 ```
 setenv RetroPie "no_console_suspend consoleblank=0"
 ```
-Add the value of the new created variable to "setenv bootargs":
+and add the value of the new created variable to "setenv bootargs":
 ```
-${RetroPie}
+setenv bootargs "${bootrootfs} ${videoconfig} ${hdmi_phy_control} ${hud_quirks} smsc95xx.macaddr=${macaddr} ${external_watchdog} governor=${governor} ${RetroPie}"
+
 ```
-Finally, run bootini and reboot:
+11. Reboot and log in as the new created user (NameOfYourChoice):
 ```
-bootini
 sudo reboot
 ```
-12. Install the RetroPie Setup Script
+12. Install the RetroPie Setup Script (logged in as NameOfYourChoice)
 ```
 cd
 git clone --depth=1 https://github.com/RetroPie/RetroPie-Setup.git
@@ -132,15 +130,19 @@ sudo ./retropie_setup.sh
 sudo MAKEFLAGS="-j1" ./retropie_setup.sh
 ```
 ### Optional steps:
-* Install the nano editor:
+A. Adjust your time and timezone:
 ```
-apt-get install nano
-```
-* Adjust your time and timezone:
-```
-
 sudo dpkg-reconfigure tzdata
 ```
+B. Upgrade the kernel:
+```
+sudo apt update
+sudo apt upgrade
+sudo apt dist-upgrade
+sudo apt install linux-image-xu3
+shutdown -r now
+```
+
 ## Installing Modules
 
 All modules can be installed from the RetroPie Setup Script. First and foremost the two main packages you need in order for the majority of your system to run are RetroArch and EmulationStation:
