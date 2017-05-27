@@ -2,13 +2,13 @@
 
 This is a guide on how to build RetroPie on the Odroid XU4. This is assuming you are starting with a prebuilt image of Ubuntu 16.04 Minimal from HardKernel's Website:
 
-## Download Ubuntu 16.04 Minimal Image for Odroid XU3/XU4:
+## Download Ubuntu 16.04.2 Minimal Image for Odroid XU3/XU4:
 
 ### The XU4 is fully software compatible with XU3!
 
 https://odroid.in/ubuntu_16.04lts/
 
-Direct Link [Here](https://odroid.in/ubuntu_16.04lts/ubuntu-16.04-minimal-odroid-xu3-20160706.img.xz)
+Direct Link [Here](https://odroid.in/ubuntu_16.04lts/ubuntu-16.04.2-minimal-odroid-xu4-20170516.img.xz)
 
 Extract the .xz file with a program like [7zip](http://www.7-zip.org/download.html)
 
@@ -36,13 +36,7 @@ sudo apt dist-upgrade
 sudo apt install linux-image-xu3
 shutdown -r now
 ```
-4. Install the odroid-utility in order to resize the root partition:
-```
-sudo apt-get install unzip
-wget https://github.com/mdrjr/odroid-utility/archive/master.zip
-unzip master.zip
-./odroid-utility-master/odroid-utility.sh
-```
+
 5. Set the locale settings. Below you can find an example:
 ```    
 apt-get install language-pack-en-base
@@ -144,6 +138,7 @@ apt-get install nano
 ```
 * Adjust your time and timezone:
 ```
+
 sudo dpkg-reconfigure tzdata
 ```
 ## Installing Modules
