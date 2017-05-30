@@ -177,6 +177,7 @@ sudo /opt/retropie/supplementary/xboxdrv/bin/xboxdrv \
 	--deadzone-trigger 15% \
 	--deadzone 4000 \
 	--mimic-xpad \
+	--four-way-restrictor
 	--evdev-absmap ABS_*=x1,ABS_*=y1,ABS_*=x2,ABS_*=y2,ABS_*=lt,ABS_*=rt,ABS_*=dpad_x,ABS_*=dpad_y \
 	--evdev-keymap BTN_*=a,BTN_*=b,BTN_*=x,BTN_*=y,BTN_*=lb,BTN_*=rb,BTN_*=tl,BTN_*=tr,BTN_*=guide,BTN_*=back,BTN_*=start \
 ```
