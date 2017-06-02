@@ -7,7 +7,7 @@ The Nintendo DS is a handheld video game console that was released by Nintendo i
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
 | [lr-desmume](https://github.com/libretro/desmume) | nds | .nds .zip | none | /opt/retropie/configs/nds/retroarch.cfg |
-| [DraStic](http://drastic-ds.com/) | nds | .nds .zip | nds_bios_arm9.bin nds_bios_arm7.bin nds_firmware.bin | /opt/retropie/configs/nds/drastic/config/drastic.cfg |
+| [DraStic](http://drastic-ds.com/) | nds | .nds .zip | (Optional) nds_bios_arm9.bin nds_bios_arm7.bin nds_firmware.bin | /opt/retropie/configs/nds/drastic/config/drastic.cfg |
 
 Note that lr-desmume is very experimental and lags quite a bit even with an overclocked RPI 2/3.
 
@@ -42,7 +42,7 @@ For more information on custom RetroArch controls see: [RetroArch Configuration]
 
 ## BIOS
 
-The default installation of DraStic includes simulated BIOS files that will work in most situations. Actual BIOS files (listed above) can be added to
+The default installation of DraStic includes simulated BIOS files that will work in most cases. Actual BIOS files (listed above) can be added to
 ```
 /opt/retropie/configs/nds/drastic/system
 ```
