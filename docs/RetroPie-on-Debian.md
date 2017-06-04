@@ -1,6 +1,6 @@
 # Retropie on Debian
 
-A guide to build the RetroPie setup on Ubuntu 16.04 LTS x86 and Debian-based distros.
+A guide to build the RetroPie setup on Ubuntu 16.04 LTS x86 and Debian based distros.
 
   - [Install Ubuntu](#installation)
   - [Download RetroPie](#download-retropie)
