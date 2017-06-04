@@ -166,7 +166,7 @@ Create the file `/etc/asound.conf` with the contents:
 
 Make sure to change the values of **card** and **device** to the values found by running `aplay -l` above.
 
-Now the SDL driver in Mupen64Plus will use the proper audio device, but it will still conflict with PulseAudio in EmulationStation. Open `/opt/retropie/emulators/mupen64plus/bin/mupen64plus.sh` in your favorite editor. Find the following lines at the bottom of the file:
+The SDL driver in Mupen64Plus will now use the proper audio device, but it will still conflict with PulseAudio in EmulationStation. Open `/opt/retropie/emulators/mupen64plus/bin/mupen64plus.sh` in your favorite editor. Find the following lines at the bottom of the file:
 
     else
         "$rootdir/emulators/mupen64plus/bin/mupen64plus" --noosd --fullscreen --rsp ${RSP_PLUGIN}.so --gfx ${VIDEO_PLUGIN}.so --audio mupen64plus-audio-sdl.so --configdir "$configdir/n64" --datadir "$configdir/n64" "$ROM"
