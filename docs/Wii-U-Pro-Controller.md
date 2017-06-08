@@ -16,6 +16,7 @@ This will only work on Debian Jessie based distributions. So you either have to 
 ```shell
 power on
 agent on
+pairable on
 <press red sync button>                                         # not a command press the button on the controller
 scan on
 pair <MAC of the found wiimote, use TAB for autocompletion>     # note: we do not explicitly connect, we just pair!
