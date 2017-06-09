@@ -9,9 +9,9 @@ The Nintendo DS is a handheld video game console that was released by Nintendo i
 | [lr-desmume](https://github.com/libretro/desmume) | nds | .nds .zip | none | /opt/retropie/configs/nds/retroarch.cfg |
 | [DraStic](http://drastic-ds.com/) | nds | .nds .zip | (Optional) nds_bios_arm9.bin nds_bios_arm7.bin nds_firmware.bin | /opt/retropie/configs/nds/drastic/config/drastic.cfg |
 
-Note that lr-desmume is very experimental and lags quite a bit even with an overclocked RPI 2/3.
-
 ## Emulator: [lr-desmume](https://github.com/libretro/desmume)
+
+Note that lr-desmume is very experimental and lags quite a bit even with an overclocked RPI 2/3.
 
 ## BIOS
 
@@ -39,6 +39,8 @@ For more information on custom RetroArch controls see: [RetroArch Configuration]
 ![nintendo_ds_diagram](https://cloud.githubusercontent.com/assets/10035308/16599645/7f549f56-42c0-11e6-88a8-3acda5287da3.png)
 
 ## Emulator: [DraStic](http://drastic-ds.com/)
+
+Note that while DraStic may run very well, it is currently experimental beta software.
 
 ## BIOS
 
