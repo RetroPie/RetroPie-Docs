@@ -81,7 +81,7 @@ create an es_systems.cfg file so that Kodi will show up in emulationstation
 sudo cp /etc/emulationstation/es_systems.cfg /home/pi/.emulationstation/es_systems.cfg
 sudo nano /home/pi/.emulationstation/es_systems.cfg
 ```
-add the following codeblock anywhere after `<systemList>`:
+add the following codeblock anywhere after `<systemList>` and before `</systemList>`:
 ```
   <system>
     <fullname>Kodi</fullname>
