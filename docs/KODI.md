@@ -14,7 +14,7 @@ See [here](http://blog.petrockblock.com/forums/topic/kodi-tab-in-emulationstatio
 
 Visit the RetroPie-Setup Screen, select Optional Packages, and select Kodi.  Installation can take 10 minutes.  After installation, you will be able to go to the Ports section and view Kodi as an option.
 
-RetroPie currently installs Kodi 16.1 Jarvis
+RetroPie currently installs Kodi 17.3 Krypton
 
 ### PVRs Installation
 
@@ -35,7 +35,7 @@ sudo apt-get install kodi-pvr*
 
 ## Joypad Support
 
-The latest Kodi module (Kodi 16/16.1) includes joypad support by default. Some joypads are detected and work out-of-the-box like PS3, Xbox360, Logitech, Ibuffalo, Retrolink Snes and more. If your joypad doesn't work OOTB or you prefer to add your custom keymap, create the file `/home/pi/.kodi/userdata/keymaps/joystick.xml` like the following
+The latest Kodi module (Kodi 17/17.3) includes joypad support by default. Some joypads are detected and work out-of-the-box like PS3, Xbox360, Logitech, Ibuffalo, Retrolink Snes and more. If your joypad doesn't work OOTB or you prefer to add your custom keymap, create the file `/home/pi/.kodi/userdata/keymaps/joystick.xml` like the following
 
 **Example** `joystick.xml`
 ```
@@ -73,9 +73,9 @@ If you are experiencing problems with your Xbox controls, see the following exam
 
 ## Kodi as its own system instead of in ports
 
-The first method here is a cleaner method that wont mess with the RetroPie setup script updates (note that in the future you will have to manually update the es_systems.cfg in .emulationstation as they arent overwritten on updates from RetroPie). Once you've installed kodi from the experimental menu of the setup script, Drop into a terminal with f4 or access the pi over [SSH](https://github.com/retropie/retropie-setup/wiki/ssh)
+The first method here is a cleaner method that wont mess with the RetroPie setup script updates (note that in the future you will have to manually update the es_systems.cfg in .emulationstation as they aren't overwritten on updates from RetroPie). Once you've installed Kodi from the experimental menu of the setup script, Drop into a terminal with f4 or access the pi over [SSH](https://github.com/retropie/retropie-setup/wiki/ssh)
 
-create an es_systems.cfg file so that kodi will show up in emulationstation
+create an es_systems.cfg file so that Kodi will show up in emulationstation
 
 ```
 sudo cp /etc/emulationstation/es_systems.cfg /home/pi/.emulationstation/es_systems.cfg
@@ -96,7 +96,7 @@ add the following codeblock anywhere after `<systemList>`:
 
 save you changes with `ctrl+x` , `y` , `enter`
 
-Then make a kodi rom directory
+then make a kodi rom directory
 
 ```
 mkdir /home/pi/RetroPie/roms/kodi
@@ -128,7 +128,7 @@ type `emulationstation` to go back into emulationstation and kodi should be ther
 # Kodi on Raspbian Wheezy
 ## Black Screen Freeze Fix
 
-If you find yourself having troubles with your screen freezing when you exit kodi, you can replace the code in `/roms/ports/kodi.sh` with
+If you find yourself having troubles with your screen freezing when you exit Kodi, you can replace the code in `/roms/ports/kodi.sh` with
 
 #!/bin/bash
  
