@@ -15,6 +15,7 @@
 - [Which memory split should I use?](FAQ#which-memory-split-should-i-use)
 - [Why aren't my in-game saves working properly?](FAQ#why-arent-my-in-game-saves-working-properly)
 - [Why Can't I Insert Coins in Arcade Emulators?](FAQ#why-cant-i-insert-coins-in-arcade-emulators)
+- [The `retropie_setup` and `runcommand` menus have very small fonts on my screen, how can I increase the console font size?](FAQ#how-can-i-increase-the-console-font-size)
 
 ### Why do some emulators not show up?
 
@@ -268,3 +269,11 @@ Another simple workaround is to use player 2's select key to insert coins but it
 
 Related post  
 http://blog.petrockblock.com/forums/topic/fba-retroarch-core-coin-controls/#post-93014
+
+### How can I increase the console font size?
+
+Execute the following command and follow the instructions on screen:
+
+```
+sudo dpkg-reconfigure console-setup
+```
