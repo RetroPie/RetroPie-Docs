@@ -65,6 +65,7 @@ Access theme gallery in the esthemes menu
 |          crt-centered         | <img src="https://raw.githubusercontent.com/wetriner/es-theme-gallery/master/crt-centered.png" width="500">                  | <img src="https://raw.githubusercontent.com/wetriner/es-theme-gallery/master/crt-centered-gamelist.png" width="500">                  | yes           |
 |           ComicBook           | <img src="https://raw.githubusercontent.com/wetriner/es-theme-gallery/master/ComicBook.png" width="500">                     | <img src="https://raw.githubusercontent.com/wetriner/es-theme-gallery/master/ComicBook-gamelist.png" width="500">                     | yes           |
 |             cygnus            | <img src="https://raw.githubusercontent.com/wetriner/es-theme-gallery/master/cygnus.png" width="500">                        | <img src="https://raw.githubusercontent.com/wetriner/es-theme-gallery/master/cygnus-gamelist.png" width="500">                        | yes           |
+|           steampunk           | <img src="https://raw.githubusercontent.com/wetriner/es-theme-gallery/master/steampunk.png" width="500">                     | <img src="https://raw.githubusercontent.com/wetriner/es-theme-gallery/master/steampunk-gamelist.png" width="500">                     | yes           |
 
 
 ## Creating Your Own EmulationStation Theme
