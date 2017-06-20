@@ -25,7 +25,7 @@ You can post your configuration here to give other people an idea about what kin
 
 From [puncrathod](http://www.raspberrypi.org/phpBB3/viewtopic.php?p=159708#p159708):
 > I managed to get perfect sound with retroarch+ lr-snes9x2002 core by defining sdl as the audio backend with 44100 samplerate. However I never managed to get the thing run faster than 70% speed during actual gameplay.
-I tested it with lostvikings and when you pause the game the game runs fullspeed and the sound is perfect. But while playing the speed goes below 80% and the sound and music gets this echoing sound. I'll see if I can make it run at full speed by a little overclock and some addinational video settings.
+I tested it with lostvikings and when you pause the game the game runs fullspeed and the sound is perfect. But while playing the speed goes below 80% and the sound and music gets this echoing sound. I'll see if I can make it run at full speed by a little overclock and some additional video settings.
 
 * The only /boot/config.txt setting I had was sdtv_mode=2 "I have a pal tv that I use for the pi"
 I did try increasing the cpu_freq to 900 and core_freq to 450 and that helped a little but still were not getting full speed.
@@ -34,7 +34,7 @@ I did try increasing the cpu_freq to 900 and core_freq to 450 and that helped a 
         audio_out_rate=44100
         audio_driver=sdl
 * (alsa works perfect too if the game is running at full speed but even with 1% drop in speed and starts making a static noise)
-* I'm running a fresh rasbian installed from http://archive.raspbian.org/installer/rpi_installer_08-19-12.zip with nothing more extra installed than retroarch+lr-snes9x2002+sdl and the libraries needed to run them. I don't have DE installed and run everything from the console
+* I'm running a fresh Raspbian installed from http://archive.raspbian.org/installer/rpi_installer_08-19-12.zip with nothing more extra installed than retroarch+lr-snes9x2002+sdl and the libraries needed to run them. I don't have DE installed and run everything from the console
 * I realize that the sdl audio is a bit slower than alsa and makes the snes run even slower but atleast it doesn't turn the audio into a garbled mess when the emulator doesn't run at full speed.
 
 ***
@@ -73,18 +73,18 @@ I didn't change any other sound parameters in the config files.
 To remove hiss or static or white noise when using the 3.5mm headphone jack:
 
 1. Run at the command line: `sudo nano /boot/config.txt` and insert at the bottom of the file: `disable_audio_dither=1`
-1. turn up Retropie volume to 100% in the settings menu in the program.
-1. get an inline volume control: http://www.amazon.com/Koss-155954-VC20-Volume-Control/dp/B00001P4XH/ref=pd_bxgy_23_img_y
-1. Another option is to set audio_pwm_mode=2 in the same config - this is a new audio driver that should significantly improve the sound quality - see https://www.raspberrypi.org/forums/viewtopic.php?f=29&t=136445
+1. Turn up Retropie volume to 100% in the settings menu in the program.
+1. Get an inline volume control: http://www.amazon.com/Koss-155954-VC20-Volume-Control/dp/B00001P4XH
+1. Another option is to set audio_pwm_mode=2 in the same config - this is a new audio driver that should significantly improve the sound quality - see [this topic on Analogue audio testing](https://www.raspberrypi.org/forums/viewtopic.php?f=29&t=136445).
 
 ## USB Audio
 
-There's a lot of **old** documentation on how to set this up.  To fix this, especially if you are using a **USB Audio** dongle in leu of the Raspberry Pi's scratchy 3.5 mm audio jack. (Blame the manufacturer of that part. Hopefully the foundation will fix it when the next Pi comes out.)
+There's a lot of **old** documentation on how to set this up.  To fix this, especially if you are using a **USB Audio** dongle in lieu of the Raspberry Pi's scratchy 3.5 mm audio jack. (Blame the manufacturer of that part. Hopefully the foundation will fix it when the next Pi comes out.)
 
 So instead of using one of those large shield with the RCA jacks on it, a small [USB Audio Dongle](http://www.amazon.com/gp/product/B003UBKR4U) and a few commands.
 
 1.    At startup, press <kbd>F4</kbd> to exit EmulationStation and go to the console.
-2.    Assuiming the USB Audio dongle is plugged in, type `lsusb`, and look for some device with "C-Media Electronics, Inc. Audio Adapter" in it.
+2.    Assuming the USB Audio dongle is plugged in, type `lsusb`, and look for some device with "C-Media Electronics, Inc. Audio Adapter" in it.
 3.   Not a necessary step but one that you should note. Type, `amixer`.  You'll see the default bcm2835 set up. Our device is not set up yet. Knowing about this command is still helpful.
 4.    Find our card number.  More than likely, the "C-Media USB Headphone Set" will be set to `Card 1`.  You will need to remember this number for the next step.
 5.    Use `nano` to create `/etc/asound.conf` with this content.  Press <kbd>Ctrl</kbd>+<kbd>X</kbd> followed by <kbd>Y</kbd> when finished.  Replace the card number in the code below with the correct card number if it is other than `1`.
