@@ -38,6 +38,10 @@ a860e8c0b6d573d191e4ec7db1b1e4f6  /home/pi/RetroPie/BIOS/gba_bios.bin
 
 If you get something else besides that `a860...` string, that's not the correct file.
 
+| md5sum          |        CRC32 |
+|--------------|--------------------|
+| a860e8c0b6d573d191e4ec7db1b1e4f6 | 81977335 |
+
 ## Controls
 
 There are two ways to configure your Game Boy Advance controls depending on the emulator.
