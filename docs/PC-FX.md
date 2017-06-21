@@ -1,5 +1,5 @@
 ***
-
+![pc-fx](https://retropie.org.uk/forum/assets/uploads/files/1498080299430-nec_pc-fx_logo.svg-resized.png)
 ***
 _PC-FX is a 32-bit home video game console by NEC Home Electronics released in Japan on December 23, 1994._
 
@@ -11,7 +11,7 @@ _PC-FX is a 32-bit home video game console by NEC Home Electronics released in J
 
 ## Emulator: [lr-beetle-pcfx](https://github.com/libretro/beetle-pcfx-libretro)
 
-Note that this is experimental and suffers from slowness and sound shuttering. Probably won't be coming out of experimental any time soon. It can be installed from the experimental menu of the [RetroPie Setup Script](Updating RetroPie).
+**NOTE:** this emulator is experimental and suffers from slowness and sound shuttering. Probably won't be coming out of experimental any time soon. It can be installed from the experimental menu of the [RetroPie-Setup Script](Updating-RetroPie#using-the-retropie-setup-script).
 
 ## ROMS
 
@@ -32,6 +32,8 @@ Place pcfx.rom in
 | md5sum          |        CRC32 |
 |--------------|--------------------|
 | 08e36edbea28a017f79f8d4f7ff9b6d7 | 76ffb97a |
+
+[How do I calculate the md5sum or CRC32 of a BIOS file?](FAQ#how-do-i-calculate-the-md5sum-or-crc32-of-a-bios-file)
 
 ## Controls
 
