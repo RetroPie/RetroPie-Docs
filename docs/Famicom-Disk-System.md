@@ -28,6 +28,10 @@ Place the BIOS in
 /home/pi/RetroPie/BIOS
 ```
 
+| md5sum          |        CRC32 |
+|--------------|--------------------|
+| ca30b50f880eb660a320674ed365ef7a | 5e607dcf |
+
 ## Controls
 
 Both emulators utilise Retroarch configurations
