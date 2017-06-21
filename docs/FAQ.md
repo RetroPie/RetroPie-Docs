@@ -12,6 +12,7 @@
 - [How would I start from command line, say, the SNES emulator by itself?](FAQ#how-would-i-start-from-command-line-say-the-snes-emulator-by-itself)
 - [Is there another way to set up the gamepad for use, e.g., within the snes emulator?](FAQ#is-there-another-way-to-set-up-the-gamepad-for-use-eg-within-the-snes-emulator)
 - [The PSX emulator reports no BIOS found. What do I do?](FAQ#the-psx-emulator-reports-no-bios-found-what-do-i-do)
+- [How do I calculate the md5sum or CRC32 of a BIOS file?](FAQ#how-do-i-calculate-the-md5sum-or-crc32-of-a-bios-file)
 - [Which memory split should I use?](FAQ#which-memory-split-should-i-use)
 - [Why aren't my in-game saves working properly?](FAQ#why-arent-my-in-game-saves-working-properly)
 - [Why Can't I Insert Coins in Arcade Emulators?](FAQ#why-cant-i-insert-coins-in-arcade-emulators)
@@ -224,6 +225,22 @@ Ensure the bios file(s) is/are all lowercase and put them in
 ```
 
 More information about PSX BIOS files can be found on the [PSX page](Playstation-1).
+
+### How do I calculate the md5sum or CRC32 of a BIOS file?
+
+An example to calculate the **md5sum** for the Game Boy Advance BIOS file `gba_bios.bin`
+```
+md5sum /home/pi/RetroPie/BIOS/gba_bios.bin
+```
+And this would be how to calculate the **CRC32** for `gba_bios.bin`
+```
+crc32 /home/pi/RetroPie/BIOS/gba_bios.bin
+```
+
+If these commands are not found, then you will need to install **md5sum** and **CRC32**
+```
+sudo apt-get install libarchive-zip-perl
+```
 
 ### Which memory split should I use?
 
