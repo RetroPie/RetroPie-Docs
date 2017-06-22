@@ -129,5 +129,5 @@ You can download new firmware [here.](http://support.8bitdo.com)
 Please confirm your firmware version before raising a support ticket
 
 ### Some useful links
-http://support.8bitdo.com
+http://support.8bitdo.com  
 https://github.com/libretro/retroarch-joypad-autoconfig/tree/master/udev
