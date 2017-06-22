@@ -114,14 +114,7 @@ Here are some examples of the file that should be written.
 alt="8bitdo controller with RetroPie" width="300" height="180" border="10" /></a>
 
 ### Firmware Versions for 8bitdo controllers
-SNES30 (Firmware version 3.00 - 20th March 2017)  
-SFC30 (Firmware version 2.68 - 6th August 2016)  
-  
-NES30 Pro (Firmware version 1.69 - 21st March 2016)  
-FC30 Pro (Firmware version 1.69 - 21st March 2016)  
-  
-NES30 (Firmware version 2.68 - 6th August 2016)  
-FC30 (Firmware version 2.68 - 6th August 2016)  
+![8bitdo controllers firmware](https://s1.postimg.org/4upng3phr/20170622_210037.jpg)  
 
 You can download new firmware [here.](http://support.8bitdo.com)
 
