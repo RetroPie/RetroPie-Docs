@@ -12,7 +12,7 @@
 This guide will show how to use an 8bitdo controller with RetroPie.
 Please make sure you are using at least RetroPie v4.0, and the **controller firmware versions listed below** (newer versions shouldn't cause an issue). It is not recommended to use beta firmware versions.
 
-Please see the [8bitdo support page](http://www.8bitdo.com/Support.html) for details on how to upgrade the firmware. Before you upgrade your firmware or attempt to register your controller, please make sure your controller is fully charged.  
+Please see the [8bitdo support page](http://support.8bitdo.com) for details on how to upgrade the firmware. Before you upgrade your firmware or attempt to register your controller, please make sure your controller is fully charged.  
 
 #  A quick note about the 8bitdo Zero controller.
 
@@ -123,11 +123,11 @@ FC30 Pro (Firmware version 1.69 - 21st March 2016)
 NES30 (Firmware version 2.68 - 6th August 2016)  
 FC30 (Firmware version 2.68 - 6th August 2016)  
 
-You can download new firmware [here.](http://www.8bitdo.com/Support.html)
+You can download new firmware [here.](http://support.8bitdo.com)
 
 ### Troubleshooting
 Please confirm your firmware version before raising a support ticket
 
 ### Some useful links
-http://8bitdo.com/Support.html  
+http://support.8bitdo.com
 https://github.com/libretro/retroarch-joypad-autoconfig/tree/master/udev
