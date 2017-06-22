@@ -114,7 +114,7 @@ Here are some examples of the file that should be written.
 alt="8bitdo controller with RetroPie" width="300" height="180" border="10" /></a>
 
 ### Firmware Versions for 8bitdo controllers
-![8bitdo controllers firmware](https://s1.postimg.org/4upng3phr/20170622_210037.jpg)  
+![8bitdo controllers firmware](https://s3.postimg.org/j47k633fn/8bitdo-firmware.png)  
 
 You can download new firmware [here.](http://support.8bitdo.com)
 
