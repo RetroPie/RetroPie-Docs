@@ -113,7 +113,7 @@ Here are some examples of the file that should be written.
 <a href="https://www.youtube.com/watch?v=e2We6AElqg8" target="_blank"><img src="https://i.ytimg.com/vi_webp/e2We6AElqg8/mqdefault.webp" 
 alt="8bitdo controller with RetroPie" width="300" height="180" border="10" /></a>
 
-### Firmware Versions for 8bitdo controllers
+### Firmware Versions for 8bitdo controllers (June 2017)
 ![8bitdo controllers firmware](https://s3.postimg.org/j47k633fn/8bitdo-firmware.png)  
 
 You can download new firmware [here.](http://support.8bitdo.com)
