@@ -147,7 +147,7 @@
 * [N64 controller](N64-Controller)
 * [Ouya controller](Ouya-Controller)
 * [Bluetooth controller](Bluetooth-Controller)
-* [8bitdo controllers](8Bitdo-Controllers)
+* [8bitdo controllers](8Bitdo-Controller)
 * [Logitech controllers](Logitech-Controller)
 * [Mobile Gamepad](Mobile-Gamepad)
 * [Smartphone Gamepad](Virtual-Gamepad)
