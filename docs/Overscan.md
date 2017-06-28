@@ -14,7 +14,7 @@ Menu > Picture > Screen Adjustment > Picture Size > change to "Screen Fit"
 ### Pioneer
 Look for "Dot by Dot". 
 
-(please add more examples if you work it for your TV!)
+(please add more examples if you work it out for your TV!)
 
 ## My image has a border!
 
