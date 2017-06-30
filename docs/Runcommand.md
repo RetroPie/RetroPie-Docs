@@ -5,7 +5,7 @@ The runcommand is the script responsible to launch your emulators/games. This wi
 - [Runcommand Launch Menu](#runcommand-launch-menu)
 - [Adding custom launching images](#adding-custom-launching-images)
 - [runcommand-onstart and runcommand-onend scripts](#runcommand-onstart-and-runcommand-onend-scripts)
-
+- [runcommand-menu custom scripts](#runcommand-menu-custom-scripts)
 
 ## Runcommand Launch Menu
 
@@ -87,3 +87,17 @@ Some examples of what can be done with these scripts:
 
 - In the [Take and Scrape Your Own Screenshots wiki](Take-and-Scrape-Your-Own-Screenshots) there are two methods to achieve the same goal. In method 1 the `runcommand-onstart.sh` is used to automatically set some configurations in the system specific retroarch.cfg file. In method 2 the `runcommand-onend.sh` is used to check if you have a screenshot for the game you are leaving, and if yes, it will make the most recent screenshot be the emulationstation image for this game.
 - In [RetroPie-joystick-selection tool](https://github.com/meleu/RetroPie-joystick-selection) the joystick selection by name method uses the `runcommand-onstart.sh` to get the joystick name, look for its index and set the index in the proper retroarch.cfg file.
+
+
+## runcommand-menu custom scripts
+
+Since version 4.2.8 runcommand menu creates an option named **User Menu** where is possible to choose a custom script to launch. The custom scripts must be placed at `/opt/retropie/configs/all/runcommand-menu` and file name must end with `.sh`.
+
+Useful data are passed as arguments to the custom scripts in the same way they are passed for [runcommand-onstart/onend scripts](#runcommand-onstart-and-runcommand-onend-scripts).
+
+What happens after the end of a custom script execution depends on the exit status:
+
+- exit status 0, returns to user menu (script list).
+- exit status 1, exits runcommand without launching the game.
+- exit status 2, launch the game.
+- any other exit status, returns to user menu (script list).
