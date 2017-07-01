@@ -7,7 +7,7 @@
 | System | Recommended MAME Emulator| Recommended FB Alpha Emulator|
 | :---: | :---: | :---: |
 |Pi 2 and Pi 3| `lr-mame2003` | `lr-fbalpha`|
-|Pi 1 and Pi Zero| `mame4all`  (not `lr-mame4all`) | `pi-fba`|
+|Pi 1 and Pi Zero| `mame4all` | `pi-fba`|
 
 Other [MAME](MAME) and [FB Alpha](FinalBurn-Alpha) emulator versions are also available in RetroPie. Please be aware that earlier versions generally run faster than later versions, but also support fewer games.
 
