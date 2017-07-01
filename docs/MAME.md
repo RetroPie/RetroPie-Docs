@@ -16,7 +16,7 @@ This page is a resource for additional details on RetroPie's MAME emulators incl
 | Emulator | ROM Folder | Required ROM Set Version | Controller Configuration |
 | :---: | :---: | :---: | :---: |
 | [mame4all-pi](#mame4all-pi) | arcade **or** mame-mame4all | MAME 0.37b5 | /opt/retropie/configs/mame-mame4all/cfg/default.cfg |
-| [lr-mame2000](#lr-mame2000) | arcade **or** mame-libretro | MAME 0.37b5 | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/mame-mame4all/retroarch.cfg |
+| [lr-mame2000](#lr-mame2000-mame-2000) | arcade **or** mame-libretro | MAME 0.37b5 | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/mame-mame4all/retroarch.cfg |
 | [lr-mame2003](#lr-mame2003-mame-2003) | arcade **or** mame-libretro | MAME 0.78 | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/mame-libretro/retroarch.cfg |
 | [lr-mame2010](#lr-mame2010-mame-2010) | arcade **or** mame-libretro | MAME 0.139 | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/mame-libretro/retroarch.cfg |
 | [lr-mame2014](#lr-mame2014-mame-2014) | arcade **or** mame-libretro | MAME 0.159 | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/mame-libretro/retroarch.cfg |
