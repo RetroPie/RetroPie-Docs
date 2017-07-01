@@ -16,7 +16,7 @@ This page is a resource for additional details on RetroPie's MAME emulators incl
 | Emulator | ROM Folder | Required ROM Set Version | Controller Configuration |
 | :---: | :---: | :---: | :---: |
 | [mame4all-pi](#mame4all-pi) | arcade **or** mame-mame4all | MAME 0.37b5 | /opt/retropie/configs/mame-mame4all/cfg/default.cfg |
-| [lr-imame4all](#lr-imame4all-mame-2000) | arcade **or** mame-mame4all | MAME 0.37b5 | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/mame-mame4all/retroarch.cfg |
+| [lr-mame2000](#lr-mame2000) | arcade **or** mame-libretro | MAME 0.37b5 | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/mame-mame4all/retroarch.cfg |
 | [lr-mame2003](#lr-mame2003-mame-2003) | arcade **or** mame-libretro | MAME 0.78 | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/mame-libretro/retroarch.cfg |
 | [lr-mame2010](#lr-mame2010-mame-2010) | arcade **or** mame-libretro | MAME 0.139 | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/mame-libretro/retroarch.cfg |
 | [lr-mame2014](#lr-mame2014-mame-2014) | arcade **or** mame-libretro | MAME 0.159 | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/mame-libretro/retroarch.cfg |
@@ -66,7 +66,7 @@ Other files in this cfg directory are ROM specific configs.
 Note: Should your input configuration or other aspect of the configuration need resetting to defaults, remove the default.cfg or ROM specific .cfg file, and it will be re-created with default values next time you start MAME4ALL or modify the ROM configuration.
 
 ---
-### lr-imame4all (MAME 2000)
+### lr-mame2000 (MAME 2000)
 [Visit the mame2000-libretro homepage on github](https://github.com/libretro/mame2000-libretro)
 ```shell
 Roms Dir: /home/pi/RetroPie/roms/mame-mame4all
@@ -84,13 +84,13 @@ Config Dir: /opt/retropie/configs/mame-mame4all/retroarch.cfg
 
 **MAME 0.37b5 'Lite' DAT File (no clones, no neogeo)**: [mame4all-no-clones-no-neogeo](https://drive.google.com/file/d/0B2TMeZ6iEFvHNm5OYndFUHM3djg/view?usp=sharing)
 
-**[lr-IMAME4ALL Compatibility List](https://docs.google.com/spreadsheets/d/1Fmx2RPcgVgIIeKpaBKNEGWCDuu3DGfR-VkrnIVsIpeE/edit?usp=sharing)** feel free to contribute to the list.
+**[lr-mame2000 Compatibility List](https://docs.google.com/spreadsheets/d/1Fmx2RPcgVgIIeKpaBKNEGWCDuu3DGfR-VkrnIVsIpeE/edit?usp=sharing)** feel free to contribute to the list.
 
 **Controls**
 
-lr-imame4all utilises [RetroArch control configuration](RetroArch-Configuration). Add custom retroarch controls to the retroarch.cfg file in:
+lr-mame2000 utilises [RetroArch control configuration](RetroArch-Configuration). Add custom retroarch controls to the retroarch.cfg file in:
 ```shell
-/opt/retropie/configs/mame-mame4all/retroarch.cfg
+/opt/retropie/configs/lr-mame2000/retroarch.cfg
 ```
 
 ---
