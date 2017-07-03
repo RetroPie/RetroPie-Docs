@@ -16,7 +16,7 @@ _Run and jump through 11 crazy worlds to feed the monsters in this 360° gravity
 ## Controls:
 Key  |  Action
  --- | ---
-Left Mouse Click | Navigate HUD
+Left Mouse Click | Navigate GUI
 Space | Jump
 Arrow Keys | Move
 ESC | Return to Menu/Quit
@@ -34,7 +34,7 @@ _Grab your baseball cap and loosen your pants, it's time to fight endless hordes
 ## Controls:
 Key  |  Action
  --- | ---
-Arrow Keys | Navigate HUD/Move
+Arrow Keys | Navigate GUI/Move
 Z/Up Arrow | Jump
 X | Fire
 ESC | Return to Menu/Quit
@@ -52,7 +52,7 @@ _Maldita Castilla (Cursed/damn Castile) is an action arcade game full of myths f
 ## Controls:
 Key  |  Action
  --- | ---
-Arrow Keys | Navigate HUD/Move/Aim
+Arrow Keys | Navigate GUI/Move/Aim
 Z | Attack
 X | Jump
 ESC | Return to Menu
