@@ -34,6 +34,18 @@ When high scores are saved, they are kept in the same directory as `gamename.hi`
 
 lr-fbalpha supports a useful feature where you can rebind the keys for individual games, without impacting the internal libretro hotkey macros (select & R = quicksave, etc). These rebinding options are accessed and saved in the same way as the dipswitches above.
 
+## Arcade layouts
+
+lr-fbalpha has been configured to use the SNES layout in six-button fighting games. That is:
+```
++---------+
+| Y  X  L |
+|         |
+| B  A  R |
++---------+
+```
+So arcade stick should be setup accordingly.
+
 ## Samples
 
 Some sound effects in a few older (typically pre-1986) arcade games are difficult/impossible to emulate. Instead, audio clips of these effects can be downloaded and automatically played at the appropriate times. FBA additionally supports the use of some higher quality samples such as the CD audio rips from the console version of Donpachi. Samples are often included in a romset, or you can find some at http://www.progettosnaps.net/samples/. Place them into:
