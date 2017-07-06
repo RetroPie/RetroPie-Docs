@@ -68,7 +68,7 @@ Decreasing the screen size the emulator has to calculate can lead to an overall 
 
 Ensure you're using your TV's native resolution to prevent any overhead due to upscaling. Most modern HD TVs can display at 1080p (1920x1080) and 720p (1280x720) without issue.
 
-Enable **Game Mode** in the TV settings for the input used for the Pi. This disables some image processing (smoothing, etc) which makes movies look better, but which introduces latency when playing games.
+Enable **Game Mode** in the TV settings for the input used for the Pi. This disables some image processing (smoothing, etc) which introduces latency when playing games.
 
 ## Overclocking
 
