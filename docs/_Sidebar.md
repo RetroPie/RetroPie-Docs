@@ -26,7 +26,7 @@
 * [Atari ST/STE/TT/Falcon](Atari-ST-STE-TT-Falcon)
 * [CoCo](Coco)
 * [Colecovision](Colecovision)
-* [Commodore 64](Commodore-64)
+* [Commodore 64/VIC 20/PET](Commodore-64-VIC-20-PET)
 * [Daphne](Daphne)
 * [Dragon 32](Dragon)
 * [Dreamcast](Dreamcast)
