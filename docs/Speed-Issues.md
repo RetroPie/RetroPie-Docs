@@ -49,10 +49,6 @@ audio_driver = alsathread
 
 # Enable rewinding
 rewind_enable = false
-
-# May reduce latency at cost of higher risk of stuttering
-# Probably not recommended for Pi Zero
-video_frame_delay = 5
 ```
 
 The Video Hard Sync settings don't actually have any effect, as this is not available on the Pi, there is no benefit from having them set or unset:
