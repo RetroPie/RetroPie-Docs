@@ -66,7 +66,7 @@ function configure_supertux() {
 }
 ```
 
-##Installing the software
+## Installing the software
 
 To install the software, typically find the website that hosts the project that works on the software. They may mention how to install it. It may be in the repositories already which makes installing super simple. We are going to use quake as an example on this page. The package is acctually called darkplaces. Exit to the commandline to begin.
 
@@ -125,11 +125,11 @@ Information to put in the file:
 sudo darkplaces-sdl -quake -basedir /opt/retropie/emulators/darkplaces/
 ```
 
-##How to adapt to other games/software
+## How to adapt to other games/software
 
 There are only 2 parts to having software appear in the ports menu and have it work. The first is that you must have installed the software, however it gets done. You need to make sure it runs from the command-line before the next part. The second part is simply making a shell script that does the command line arguments to start the game/software. EmulationStation will launch it and then wait for it to exit. 
 
-##GameMaker Games
+## GameMaker Games
 
 Here's a module for the GameMaker Games. Just create a file called `gamemaker.sh` in `/home/pi/RetroPie-Setup/scriptmodules/ports`
 
