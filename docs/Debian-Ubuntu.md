@@ -1,4 +1,4 @@
-# Retropie on Debian
+## Retropie on Debian/Ubuntu
 
 A guide to build the RetroPie setup on Ubuntu 16.04 LTS x86 and Debian based distros.
 
