@@ -7,6 +7,7 @@ _The Colecovision is a home video game console released by Coleco in 1982. It fe
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
 | [CoolCV](http://atariage.com/forums/topic/240800-coolcv-emulator-for-mac-os-x-linux-windows-and-raspberry/page-1) | coleco  | .bin .col .rom .zip | coleco.rom | /opt/retropie/configs/coleco/coolcv_mapping.txt |
+| [lr-blueMSX](https://github.com/libretro/blueMSX-libretro) | coleco  | .bin .col .rom .zip | coleco.rom | /opt/retropie/configs/coleco/retroarch.cfg |
 
 ## Emulator [CoolCV](http://atariage.com/forums/topic/240800-coolcv-emulator-for-mac-os-x-linux-windows-and-raspberry/page-1)
 
@@ -20,7 +21,16 @@ Place your Colecovision ROMs in
 ```
 /home/pi/RetroPie/roms/coleco
 ```
-## Controls
+
+
+### lr-blueMSX BIOS:
+
+lr-blueMSX requires the `coleco.rom` BIOS. Place your BIOS in:
+```
+/home/pi/RetroPie/BIOS/Machines/COL - ColecoVision/
+```
+
+## CoolCV Controls
 
 Keyboard is the default controller. Press Right Shift + Enter to exit
 
@@ -74,3 +84,14 @@ key_exit	key1073741939
 key_pause	key1073741884
 key_reset	key8
 ```
+
+### lr-blueMSX Controls
+
+lr-blueMSX utilises Retroarch configurations
+
+Add custom retroarch controls to the retroarch.cfg file in
+```shell
+/opt/retropie/configs/coleco/retroarch.cfg
+```
+For more information on custom RetroArch controls see: [RetroArch Configuration](RetroArch-Configuration)
+
