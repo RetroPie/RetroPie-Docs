@@ -30,6 +30,16 @@ lr-blueMSX requires the `coleco.rom` BIOS. Place your BIOS in:
 /home/pi/RetroPie/BIOS/Machines/COL - ColecoVision/
 ```
 
+### lr-blueMSX Controls
+
+lr-blueMSX utilises Retroarch configurations
+
+Add custom retroarch controls to the retroarch.cfg file in
+```shell
+/opt/retropie/configs/coleco/retroarch.cfg
+```
+For more information on custom RetroArch controls see: [RetroArch Configuration](RetroArch-Configuration)
+
 ## CoolCV Controls
 
 Keyboard is the default controller. Press Right Shift + Enter to exit
@@ -85,13 +95,4 @@ key_pause	key1073741884
 key_reset	key8
 ```
 
-### lr-blueMSX Controls
-
-lr-blueMSX utilises Retroarch configurations
-
-Add custom retroarch controls to the retroarch.cfg file in
-```shell
-/opt/retropie/configs/coleco/retroarch.cfg
-```
-For more information on custom RetroArch controls see: [RetroArch Configuration](RetroArch-Configuration)
 
