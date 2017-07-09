@@ -55,7 +55,7 @@ pages:
     - Atari ST-STE-TT-Falcon: Atari-ST-STE-TT-Falcon.md
     - Coco: Coco.md
     - Colecovision: Colecovision.md
-    - Commodore 64: Commodore-64.md
+    - Commodore 64/VIC-20/PET: Commodore-64-VIC-20-PET.md
     - Daphne: Daphne.md
     - Dragon: Dragon.md
     - Dreamcast: Dreamcast.md
@@ -178,10 +178,11 @@ pages:
     - Child friendly EmulationStation: Child-friendly-EmulationStation.md
 - Platforms:
     - Raspbian: Manual-Installation.md
-    - Ubuntu: RetroPie-Ubuntu-16.04-LTS-x86-Flavor.md
-    - Odroid: Odroid.md
-    - Arch Linux: RetroPie-Arch-Linux-Flavor.md
-    - OSMC: RetroPie-install-for-OSMC-with-external-memory-USB-Drive.md
+    - Debian/Ubuntu: Debian.md
+    - Odroid C1/C2: Odroid-C1-C2.md
+    - Odroid XU4: Odroid-XU4.md
+    - Arch Linux: Arch-Linux.md
+    - OSMC: OSMC.md
 - Troubleshooting:
     - FAQ: FAQ.md
     - Sound Issues: Sound-Issues.md
