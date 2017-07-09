@@ -41,7 +41,14 @@ For more information on custom RetroArch controls see: [RetroArch Configuration]
 
 Many games will have varying keyboard controls.
 
-## BIOS List
+
+## BlueMSX BIOS
+
+Depending on the CORE option and machine you are running, it may require a different BIOS. Each machine folder has an ini file that explains which BIOS is needed, the following are some examples.
+
+## BlueMSX BIOS List
+
+* COL - ColecoVision: coleco.rom
 * MSX : MSX.ROM - PHILIPSDISK.ROM 
 * MSX Brazilian : MSXBR.ROM - MICROSOLDISK.ROM 
 * MSX German : MSXG.ROM - PHILIPSDISK.ROM 
@@ -60,6 +67,76 @@ Many games will have varying keyboard controls.
 * MSX2 Spanish : MSX2SP.ROM - MSX2SPEXT.ROM - MSX2PMUS.ROM - MOONSOUND.ROM - XBASIC2.ROM - PHILIPSDISK.ROM 
 * MSX2+ : MSX2P.ROM - MSX2PEXT.ROM - MSX2PMUS.ROM - MOONSOUND.ROM - XBASIC2.ROM - PANASONICDISK.ROM - KANJI.ROM - MSXKANJI.ROM 
 * Turbo-R : FSA1GT.ROM - KANJI.ROM - MOONSOUND.ROM - XBASIC2.ROM
+
+If you're not sure about where to place your BIOS there is a Shared Roms folder you can also put them into (this only applies to ROMS that can be shared between different variants of MSX; Colecovision BIOS for example will not work if placed in the shared Roms folder.
+
+```
+/home/pi/RetroPie/BIOS/Machines/Shared Roms/
+```
+
+The following is a list of roms that can be added to the shared folder:
+
+
+- ARAB1.ROM
+- ARABIC.rom
+- BEERIDE.ROM
+- FMPAC.rom
+- GCVMX80.ROM
+- HANGUL.rom
+- KANJI.rom
+- MICROSOLDISK.ROM
+- MOONSOUND.rom
+- MSX2AREXT.ROM
+- MSX2AR.ROM
+- MSX2BREXT.rom
+- MSX2BR.rom
+- MSX2EXT.rom
+- MSX2FREXT.rom
+- MSX2FR.rom
+- MSX2GEXT.rom
+- MSX2G.rom
+- MSX2HAN.rom
+- MSX2JEXT.rom
+- MSX2J.rom
+- MSX2KREXT.rom
+- MSX2KR.rom
+- MSX2PEXT.rom
+- MSX2PMUS.rom
+- MSX2P.rom
+- MSX2R2.ROM
+- MSX2REXT.rom
+- MSX2.rom
+- MSX2R.rom
+- MSX2SE.rom
+- MSX2SPEXT.rom
+- MSX2SP.rom
+- MSXAR.ROM
+- MSXBR.rom
+- MSXDOS23.ROM
+- MSXFR.rom
+- MSXG.rom
+- MSXHAN.rom
+- MSXJ.rom
+- MSXKANJI.rom
+- MSXKR.rom
+- MSXR2.rom
+- MSX.rom
+- MSXR.rom
+- MSXSE.ROM
+- MSXSP.rom
+- MSXTREXT.ROM
+- MSXTRMUS.ROM
+- MSXTROPT.ROM
+- MSXTR.ROM
+- NATIONALDISK.rom
+- NOVAXIS.rom
+- PAINT.rom
+- PANASONICDISK.rom
+- PHILIPSDISK.rom
+- RS232.ROM
+- SUNRISEIDE.rom
+- SWP.rom
+- XBASIC2.rom
 
 ## openMSX
 openMSX will by default use a MSX2+ c-bios rom image. c-bios is not a real BIOS rom and has certain restrictions, such as no support for anything other then cartridges (ROMs). So there is no support for disk or cassette for instance.
