@@ -57,7 +57,7 @@ sudo nano /etc/udev/rules.d/85-jseventname.rules
 ```
 In the resulting text field, type:
 ```
-ATTRS{name}=="[•]", ENV{DEVNAME}=="/dev/input/event[•]", ENV{ID_MODEL}="[•]", SYMLINK+="/dev/input/mycontroller"
+ATTRS{name}=="[•]", ENV{DEVNAME}=="/dev/input/event*", ENV{ID_MODEL}="[•]", SYMLINK+="/dev/input/mycontroller"
 ```
 Make sure to replace [•] with the information we collected, then press 'ctrl+o' to save the file, 'Enter' to confirm and 'ctrl+x' to exit. After the system is rebooted, you can then reference the controller reliably with `--evdev /dev/input/mycontroller`.
 
