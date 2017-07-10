@@ -24,30 +24,47 @@ ls /dev/input/by-id/
 ```
 Press 'Enter' and your device should be listed here by name. In the event that you see multiple entries, look for the listing containing "event" in the title. If you find that your controller is not listed by name, you can substitute the event number when it comes time. Now let's move on to discovering the event codes for each button of the controller by typing:
 ```
-evtest /dev/input/event*
+evtest /dev/input/event[•]
 ```
-Make sure to replace the star with the controllers event number, then press 'Enter'. Here you will see a printout of information regarding your controller. Wait for it to finish and you will be met with a message that reads, "Testing ... (interrupt to exit)". Now, when you press any button on your controller, a few lines of text will appear that make reference to the button's event `BTN_` name. Make a note of it's name and repeat with each button until all the names are known. After that, press your left analog stick in the up direction and you will notice that it is given an `ABS_` name. As up and down make the complete Y-Axis, both will have an identical name. The same goes for left and right that make up the X-Axis. After you note those two names, repeat the process for the right analog stick, as well as the directional pad. Depending on whether or not your controller has analog triggers, pressing them will either produce a `BTN_` name or an `ABS_` name. Also, you may find that your directional pad outputs a separate `BTN_` name for each direction rather than `ABS_` axis names. If your controller doesn't have any analog sticks or triggers, you will still be able to move forward using only the `BTN_` codes.
+Make sure to replace [•] with the controllers event number, then press 'Enter'. Here you will see a printout of information regarding your controller. Wait for it to finish and you will be met with a message that reads, "Testing ... (interrupt to exit)". Now, when you press any button on your controller, a few lines of text will appear that make reference to the button's event `BTN_` name. Make a note of it's name and repeat with each button until all the names are known. After that, press your left analog stick in the up direction and you will notice that it is given an `ABS_` name. As up and down make the complete Y-Axis, both will have an identical name. The same goes for left and right that make up the X-Axis. After you note those two names, repeat the process for the right analog stick, as well as the directional pad. Depending on whether or not your controller has analog triggers, pressing them will either produce a `BTN_` name or an `ABS_` name. Also, you may find that your directional pad outputs a separate `BTN_` name for each direction rather than `ABS_` axis names. If your controller doesn't have any analog sticks or triggers, you will still be able to move forward using only the `BTN_` codes.
 
-Now that we have all the event codes from the controller, we can begin mapping them to the virtual XBox360 controller in a command that will be added to `/etc/rc.local` so that it may launch along with RetroPie as it boots up. Below is a template that illustrates the command format. In essence, this command is simply mapping each of the event codes from the physical controller to the virtual XBox360 controller that xboxdrv will create. The specific information gathered from the steps above are marked with an asterisks. A legend for the virtual Xbox 360 controls can be found [here](https://s32.postimg.org/zcs0wosth/xbox.jpg).
+Now that we have all the event codes from the controller, we can begin mapping them to the virtual XBox360 controller in a command that will be added to `/etc/rc.local` so that it may launch along with RetroPie as it boots up. Below is a template that illustrates the command format. In essence, this command is simply mapping each of the event codes from the physical controller to the virtual XBox360 controller that xboxdrv will create. The specific information gathered from the steps above are marked with [•]. A legend for the virtual Xbox 360 controls can be found [here](https://s32.postimg.org/zcs0wosth/xbox.jpg).
 ```
 sudo /opt/retropie/supplementary/xboxdrv/bin/xboxdrv \
-	--evdev /dev/input/by-id/* \
+	--evdev /dev/input/by-id/[•] \
 	--silent \
 	--detach-kernel-driver \
 	--force-feedback \
 	--deadzone-trigger 15% \
 	--deadzone 4000 \
 	--mimic-xpad \
-	--evdev-absmap ABS_*=x1,ABS_*=y1,ABS_*=x2,ABS_*=y2,ABS_*=lt,ABS_*=rt,ABS_*=dpad_x,ABS_*=dpad_y \
-	--evdev-keymap BTN_*=a,BTN_*=b,BTN_*=x,BTN_*=y,BTN_*=lb,BTN_*=rb,BTN_*=tl,BTN_*=tr,BTN_*=guide,BTN_*=back,BTN_*=start \
+	--evdev-absmap ABS_[•]=x1,ABS_[•]=y1,ABS_[•]=x2,ABS_[•]=y2,ABS_[•]=lt,ABS_[•]=rt,ABS_[•]=dpad_x,ABS_[•]=dpad_y \
+	--evdev-keymap BTN_[•]=a,BTN_[•]=b,BTN_[•]=x,BTN_[•]=y,BTN_[•]=lb,BTN_[•]=rb,BTN_[•]=tl,BTN_[•]=tr,BTN_[•]=guide,BTN_[•]=back,BTN_[•]=start \
 	&
 ```
-If you want to use event number rather than the controller's name, change `--evdev /dev/input/by-id/*` to `--evdev /dev/input/event*`
+You can alternatively use the controller's event number if it lacks name designation, by changing `--evdev /dev/input/by-id/[•]` to `--evdev /dev/input/event[•]`. Bluetooth controllers can potentially present a problem when assigned this way, as their event numbers will shift between powering off and back on again. However, we can assign our own named event designation by first typing:
+```
+udevadm info -a -n /dev/input/event[•]
+```
+Make a note of the 'ATTRS{name}' and then type:
+```
+udevadm info -q all -n /dev/input/event[•]
+```
+Make make a note of the 'ID_MODEL' and then type:
+
+```
+sudo nano /etc/udev/rules.d/85-jseventname.rules
+```
+In the resulting text field, type:
+```
+ATTRS{name}=="[•]", ENV{DEVNAME}=="/dev/input/event[•]", ENV{ID_MODEL}="[•]", SYMLINK+="/dev/input/mycontroller"
+```
+Make sure to replace [•] with the information we collected, then press 'ctrl+o' to save the file, 'Enter' to confirm and 'ctrl+x' to exit. After the system is rebooted, you can then reference the controller reliably with `--evdev /dev/input/mycontroller`.
 
 If the directional pad of your controller outputs individual `BTN_` names instead of `ABS_` axis names, the command is altered to accommodate as seen below. Notice the addition of `--dpad-as-button` as well as the inclusion of individual 'BTN_' assignments marked 'du,dd,dl&dr' under `--evdev-keymap`.
 ```
 sudo /opt/retropie/supplementary/xboxdrv/bin/xboxdrv \
-	--evdev /dev/input/by-id/* \
+	--evdev /dev/input/by-id/[•] \
 	--silent \
 	--detach-kernel-driver \
 	--force-feedback \
@@ -55,22 +72,22 @@ sudo /opt/retropie/supplementary/xboxdrv/bin/xboxdrv \
 	--deadzone 4000 \
 	--mimic-xpad \
 	--dpad-as-button \
-	--evdev-absmap ABS_*=x1,ABS_*=y1,ABS_*=x2,ABS_*=y2,ABS_*=lt,ABS_*=rt \
-	--evdev-keymap BTN_*=a,BTN_*=b,BTN_*=x,BTN_*=y,BTN_*=lb,BTN_*=rb,BTN_*=tl,BTN_*=tr,BTN_*=guide,BTN_*=back,BTN_*=start,BTN_*=du,BTN_*=dd,BTN_*=dl,BTN_*=dr \
+	--evdev-absmap ABS_[•]=x1,ABS_[•]=y1,ABS_[•]=x2,ABS_[•]=y2,ABS_[•]=lt,ABS_[•]=rt \
+	--evdev-keymap BTN_[•]=a,BTN_[•]=b,BTN_[•]=x,BTN_[•]=y,BTN_[•]=lb,BTN_[•]=rb,BTN_[•]=tl,BTN_[•]=tr,BTN_[•]=guide,BTN_[•]=back,BTN_[•]=start,BTN_[•]=du,BTN_[•]=dd,BTN_[•]=dl,BTN_[•]=dr \
 	&
 ```
 If you're mapping a controller that doesn't have analog controls, or the full set of buttons found on an XBox360 controller, below is a SNES controller type example of how you would ignore those unused controls to prevent some software from trying to access them automatically. Here you will notice the addition of `--dpad-only`, which will ignore both sticks as well as the added argument for `--ui-axismap` and `--ui-buttonmap` where the voided buttons are defined. You can also use the `--dpad-as-button` argument and the accompanying `-evdev-keymap` direction buttons found in the example above if this controller also outputs it's Dpad as individual buttons.
 ```
 sudo /opt/retropie/supplementary/xboxdrv/bin/xboxdrv \
-	--evdev /dev/input/by-id/* \
+	--evdev /dev/input/by-id/[•] \
 	--silent \
 	--detach-kernel-driver \
 	--force-feedback \
 	--deadzone-trigger 15% \
 	--deadzone 4000 \
 	--mimic-xpad \
-	--evdev-absmap ABS_*=dpad_x,ABS_*=dpad_y \
-	--evdev-keymap BTN_*=a,BTN_*=b,BTN_*=x,BTN_*=y,BTN_*=lb,BTN_*=rb,BTN_*=back,BTN_*=start \
+	--evdev-absmap ABS_[•]=dpad_x,ABS_[•]=dpad_y \
+	--evdev-keymap BTN_[•]=a,BTN_[•]=b,BTN_[•]=x,BTN_[•]=y,BTN_[•]=lb,BTN_[•]=rb,BTN_[•]=back,BTN_[•]=start \
 	--dpad-only \
 	--ui-axismap lt=void,rt=void
 	--ui-buttonmap tl=void,tr-void,guide=void \
@@ -100,19 +117,19 @@ To further adjust the accuracy of your analog controls, you can also set the min
 ```
 sudo killall xboxdrv
 ```
-Press 'Enter' and then we will need to determine which js* you controller is at. To do this, type:
+Press 'Enter' and then we will need to determine which js[•] you controller is at. To do this, type:
 ```
 cat /proc/bus/input/devices
 
 ```
-Press 'Enter' and look for the controller in the list of devices. It can be identified by it's name in the device groupings next to the line beginning with `N: Name=`. Once you find it, make a note of it's js* number next to the line beginning with `H: Handlers= `. After you know the js* number, you will then type:
+Press 'Enter' and look for the controller in the list of devices. It can be identified by it's name in the device groupings next to the line beginning with `N: Name=`. Once you find it, make a note of it's js[•] number next to the line beginning with `H: Handlers= `. After you know the js[•] number, you will then type:
 ```
-jstest /dev/input/js*
+jstest /dev/input/js[•]
 ```
-Make sure to replace the star with your joystick's number and press 'Enter'. You should now see the joystick testing interface. Starting with the left joystick, slowly push in the left direction until it will not move anymore. You should see numerical onscreen feedback representing the absolute minimum X-axis value. Make a note of that value and release the joystick completely. At this point, make a note of the absolute center X-axis numerical value. Then, slowly push in the right direction until it will not move anymore and make note of the absolute maximum X-axis numerical value. Repeat that process moving slowly from top, center to bottom of the Y-axis, making notes of each value. When completed, you will then repeat the entire process on the right joystick. This process can also be applied to your analog triggers as well if needed. Once all of the values are known for your analog controls, you will add them to your xboxdrv configuration formatted as: `--calibration AXIS=YourMinimumValue:YourCenterValue:YourMaximumValue`. Using the base configuration example from the first section, it would look like this in practice:
+Make sure to replace [•] with your joystick's number and press 'Enter'. You should now see the joystick testing interface. Starting with the left joystick, slowly push in the left direction until it will not move anymore. You should see numerical onscreen feedback representing the absolute minimum X-axis value. Make a note of that value and release the joystick completely. At this point, make a note of the absolute center X-axis numerical value. Then, slowly push in the right direction until it will not move anymore and make note of the absolute maximum X-axis numerical value. Repeat that process moving slowly from top, center to bottom of the Y-axis, making notes of each value. When completed, you will then repeat the entire process on the right joystick. This process can also be applied to your analog triggers as well if needed. Once all of the values are known for your analog controls, you will add them to your xboxdrv configuration formatted as: `--calibration AXIS=YourMinimumValue:YourCenterValue:YourMaximumValue`. Using the base configuration example from the first section, it would look like this in practice:
 ```
 sudo /opt/retropie/supplementary/xboxdrv/bin/xboxdrv \
-	--evdev /dev/input/by-id/* \
+	--evdev /dev/input/by-id/[•] \
 	--silent \
 	--detach-kernel-driver \
 	--force-feedback \
@@ -120,8 +137,8 @@ sudo /opt/retropie/supplementary/xboxdrv/bin/xboxdrv \
 	--deadzone 4000 \
 	--calibration x1=YourMinimumX1Value:YourCenterX1Value:YourMaximumX1Value,y1=YourMinimumY1Value:YourCenterY1Value:YourMaximumY1Value \
 	--mimic-xpad \
-	--evdev-absmap ABS_*=x1,ABS_*=y1,ABS_*=x2,ABS_*=y2,ABS_*=lt,ABS_*=rt,ABS_*=dpad_x,ABS_*=dpad_y \
-	--evdev-keymap BTN_*=a,BTN_*=b,BTN_*=x,BTN_*=y,BTN_*=lb,BTN_*=rb,BTN_*=tl,BTN_*=tr,BTN_*=guide,BTN_*=back,BTN_*=start \
+	--evdev-absmap ABS_[•]=x1,ABS_[•]=y1,ABS_[•]=x2,ABS_[•]=y2,ABS_[•]=lt,ABS_[•]=rt,ABS_[•]=dpad_x,ABS_[•]=dpad_y \
+	--evdev-keymap BTN_[•]=a,BTN_[•]=b,BTN_[•]=x,BTN_[•]=y,BTN_[•]=lb,BTN_[•]=rb,BTN_[•]=tl,BTN_[•]=tr,BTN_[•]=guide,BTN_[•]=back,BTN_[•]=start \
 	&
 ```
 Once this is added, each of your joysticks will benefit from the absolute full range of movement possible allowing for much finer control. If your xboxdrv configuration is invoked in `/etc/rc.local`, you'll need to reboot your system to see the changes.
@@ -132,7 +149,7 @@ Once this is added, each of your joysticks will benefit from the absolute full r
 This next one is a quick, easy and very effective for retro-gamers. Pressure sensitive analog triggers bring an extra level of realism and control to the few games that can make use of them, such as Mame racing games. However, most retro games and console emulation software don't really benefit from analog triggers and in some cases, they can slow response time and even prevent functionality altogether. For these reasons, it is generally suggested that analog triggers be converted to digital input in almost all cases. to do this, you would simply add `--trigger-as-button` to your xboxdrv configuration. Using the base configuration example from the first section, it would look like this in practice:
 ```
 sudo /opt/retropie/supplementary/xboxdrv/bin/xboxdrv \
-	--evdev /dev/input/by-id/* \
+	--evdev /dev/input/by-id/[•] \
 	--silent \
 	--detach-kernel-driver \
 	--force-feedback \
@@ -140,8 +157,8 @@ sudo /opt/retropie/supplementary/xboxdrv/bin/xboxdrv \
 	--deadzone 4000 \
 	--trigger-as-button \
 	--mimic-xpad \
-	--evdev-absmap ABS_*=x1,ABS_*=y1,ABS_*=x2,ABS_*=y2,ABS_*=lt,ABS_*=rt,ABS_*=dpad_x,ABS_*=dpad_y \
-	--evdev-keymap BTN_*=a,BTN_*=b,BTN_*=x,BTN_*=y,BTN_*=lb,BTN_*=rb,BTN_*=tl,BTN_*=tr,BTN_*=guide,BTN_*=back,BTN_*=start \
+	--evdev-absmap ABS_[•]=x1,ABS_[•]=y1,ABS_[•]=x2,ABS_[•]=y2,ABS_[•]=lt,ABS_[•]=rt,ABS_[•]=dpad_x,ABS_[•]=dpad_y \
+	--evdev-keymap BTN_[•]=a,BTN_[•]=b,BTN_[•]=x,BTN_[•]=y,BTN_[•]=lb,BTN_[•]=rb,BTN_[•]=tl,BTN_[•]=tr,BTN_[•]=guide,BTN_[•]=back,BTN_[•]=start \
 	&
 ```
 Once added, the system will register any analog increase or decrease as an on/off digital button state. If your xboxdrv configuration is invoked in `/etc/rc.local`, you'll need to reboot your system to see the changes.
@@ -151,15 +168,15 @@ Once added, the system will register any analog increase or decrease as an on/of
 After fine-tuning your controller, you may want to give it a personalized ID. Outside of the novelty, this technique can be used as a tool to separate identification of multiple identical controllers in some software that can otherwise get confused when identically named controllers are discovered. To do this, you would replace `--mimic-xpad` with `--device-name "My Most Non-Non-Triumphant Controller Name Here"`. Using the base configuration example from the first section, it would look like this in practice:
 ```
 sudo /opt/retropie/supplementary/xboxdrv/bin/xboxdrv \
-	--evdev /dev/input/by-id/* \
+	--evdev /dev/input/by-id/[•] \
 	--silent \
 	--detach-kernel-driver \
 	--force-feedback \
 	--deadzone-trigger 15% \
 	--deadzone 4000 \
 	--device-name "My Most Non-Non-Triumphant Controller Name Here" \
-	--evdev-absmap ABS_*=x1,ABS_*=y1,ABS_*=x2,ABS_*=y2,ABS_*=lt,ABS_*=rt,ABS_*=dpad_x,ABS_*=dpad_y \
-	--evdev-keymap BTN_*=a,BTN_*=b,BTN_*=x,BTN_*=y,BTN_*=lb,BTN_*=rb,BTN_*=tl,BTN_*=tr,BTN_*=guide,BTN_*=back,BTN_*=start \
+	--evdev-absmap ABS_[•]=x1,ABS_[•]=y1,ABS_[•]=x2,ABS_[•]=y2,ABS_[•]=lt,ABS_[•]=rt,ABS_[•]=dpad_x,ABS_[•]=dpad_y \
+	--evdev-keymap BTN_[•]=a,BTN_[•]=b,BTN_[•]=x,BTN_[•]=y,BTN_[•]=lb,BTN_[•]=rb,BTN_[•]=tl,BTN_[•]=tr,BTN_[•]=guide,BTN_[•]=back,BTN_[•]=start \
 	&
 ```
 Once added the entire system will identify the controller by the new name, so remapping will be necessary in Emulation Station. If your xboxdrv configuration is invoked in `/etc/rc.local`, you'll need to reboot your system to see the changes.
@@ -170,7 +187,7 @@ When emulating classic video games, sometimes having a modern controller can wor
 
 ```
 sudo /opt/retropie/supplementary/xboxdrv/bin/xboxdrv \
-	--evdev /dev/input/by-id/* \
+	--evdev /dev/input/by-id/[•] \
 	--silent \
 	--detach-kernel-driver \
 	--force-feedback \
@@ -178,8 +195,8 @@ sudo /opt/retropie/supplementary/xboxdrv/bin/xboxdrv \
 	--deadzone 4000 \
 	--mimic-xpad \
 	--four-way-restrictor
-	--evdev-absmap ABS_*=x1,ABS_*=y1,ABS_*=x2,ABS_*=y2,ABS_*=lt,ABS_*=rt,ABS_*=dpad_x,ABS_*=dpad_y \
-	--evdev-keymap BTN_*=a,BTN_*=b,BTN_*=x,BTN_*=y,BTN_*=lb,BTN_*=rb,BTN_*=tl,BTN_*=tr,BTN_*=guide,BTN_*=back,BTN_*=start \
+	--evdev-absmap ABS_[•]=x1,ABS_[•]=y1,ABS_[•]=x2,ABS_[•]=y2,ABS_[•]=lt,ABS_[•]=rt,ABS_[•]=dpad_x,ABS_[•]=dpad_y \
+	--evdev-keymap BTN_[•]=a,BTN_[•]=b,BTN_[•]=x,BTN_[•]=y,BTN_[•]=lb,BTN_[•]=rb,BTN_[•]=tl,BTN_[•]=tr,BTN_[•]=guide,BTN_[•]=back,BTN_[•]=start \
 ```
 Once added, the games will perform just as fluidly as they did using their original joysticks.
 
@@ -207,15 +224,15 @@ if [ "$1" = "scummvm" ]
 then
 sudo killall > /dev/null 2>&1 xboxdrv
 sudo /opt/retropie/supplementary/xboxdrv/bin/xboxdrv > /dev/null 2>&1 \
-	--evdev /dev/input/by-id/* \
+	--evdev /dev/input/by-id/[•] \
 	--silent \
 	--detach-kernel-driver \
 	--force-feedback \
 	--deadzone-trigger 15% \
 	--deadzone 4000 \
 	--mimic-xpad \
-	--evdev-absmap ABS_*=x1,ABS_*=y1,ABS_*=x2,ABS_*=y2,ABS_*=lt,ABS_*=rt,ABS_*=dpad_x,ABS_*=dpad_y \
-	--evdev-keymap BTN_*=a,BTN_*=b,BTN_*=x,BTN_*=y,BTN_*=lb,BTN_*=rb,BTN_*=tl,BTN_*=tr,BTN_*=guide,BTN_*=back,BTN_*=start \
+	--evdev-absmap ABS_[•]=x1,ABS_[•]=y1,ABS_[•]=x2,ABS_[•]=y2,ABS_[•]=lt,ABS_[•]=rt,ABS_[•]=dpad_x,ABS_[•]=dpad_y \
+	--evdev-keymap BTN_[•]=a,BTN_[•]=b,BTN_[•]=x,BTN_[•]=y,BTN_[•]=lb,BTN_[•]=rb,BTN_[•]=tl,BTN_[•]=tr,BTN_[•]=guide,BTN_[•]=back,BTN_[•]=start \
 	--axismap -Y1=Y1,-Y2=Y2 \
 	--ui-axismap x1=REL_X:10,y1=REL_Y:10 \
 	--ui-buttonmap b=BTN_LEFT,a=BTN_RIGHT,start=KEY_F5 \
@@ -230,7 +247,7 @@ chmod +x /opt/retropie/configs/all/runcommand-onstart.sh
 ```
 Notice that our entry begins with a sudo command to kill any other instances of xboxdrv. This is in case you have already configured your controller with a system-wide mapping from the earlier steps. We'll go over later how to re-enable that system-wide mapping automatically when the emulator shuts down so that you will be left where you started. If you have no system-wide mapping, the basic controls you have set up in Emulation Station will return once the emulator quits without any further setting. For this particular mapping, we have enabled mouse support to the left joystick, mouse left and right buttons to controller buttons 'b' and 'a', as well as mapping the 'F5' key to the controller's 'start' button so that we can bring up the menu and control the entire software from the controller. To do this, we added two new lines to our basic configuration in the form of `--ui-axismap` and `--ui-buttonmap`. 
 
-This particular example works well for mapping a controller's left analog stick to mouse support using the `--ui-axismap` variable and can be changed to the right stick by simply altering the line to `--ui-axismap x2=REL_X:10,y2=REL_Y:10`. To change the speed of the mouse, just change the `REL_*:*` integer of the X and Y axis higher or lower than `10`. If you should ever want to map keyboard keys to an analog stick, a classic example would look like `--ui-axismap X1=KEY_A:KEY_D,Y1=KEY_W:KEY_S`, giving you the ADWS control scheme found in many classic computer titles. As far as key-mapping buttons is concerned, first you must consider which buttons are available to you. Seeing as how xboxdrv emulates a standard XBox 360 controller, you will have any of those buttons that you have already assigned to your controller in the earlier steps. If you have assigned all the buttons that are possible, you'll have access to a,b,x,y,lb,rb,lt,rt,tl,tr,start,back and guide. The placement of these buttons can be seen [here](https://s32.postimg.org/zcs0wosth/xbox.jpg). By using the `--ui-buttonmap` variable, you can then map any one of the buttons to a key using the format above. To discover all the possible keyboard keys that are available to you, type `/opt/retropie/supplementary/xboxdrv/bin/xboxdrv --help-key`. Finally, you'll notice that their are two more lines added with the `--ui-axismap` and `--ui-buttonmap` variables that are solely responsible for voiding the unused control elements. This is optional, but it will make the control scheme cleaner by eliminating the possibility of those elements conflicting in any way.
+This particular example works well for mapping a controller's left analog stick to mouse support using the `--ui-axismap` variable and can be changed to the right stick by simply altering the line to `--ui-axismap x2=REL_X:10,y2=REL_Y:10`. To change the speed of the mouse, just change the `REL_[•]:[•]` integer of the X and Y axis higher or lower than `10`. If you should ever want to map keyboard keys to an analog stick, a classic example would look like `--ui-axismap X1=KEY_A:KEY_D,Y1=KEY_W:KEY_S`, giving you the ADWS control scheme found in many classic computer titles. As far as key-mapping buttons is concerned, first you must consider which buttons are available to you. Seeing as how xboxdrv emulates a standard XBox 360 controller, you will have any of those buttons that you have already assigned to your controller in the earlier steps. If you have assigned all the buttons that are possible, you'll have access to a,b,x,y,lb,rb,lt,rt,tl,tr,start,back and guide. The placement of these buttons can be seen [here](https://s32.postimg.org/zcs0wosth/xbox.jpg). By using the `--ui-buttonmap` variable, you can then map any one of the buttons to a key using the format above. To discover all the possible keyboard keys that are available to you, type `/opt/retropie/supplementary/xboxdrv/bin/xboxdrv --help-key`. Finally, you'll notice that their are two more lines added with the `--ui-axismap` and `--ui-buttonmap` variables that are solely responsible for voiding the unused control elements. This is optional, but it will make the control scheme cleaner by eliminating the possibility of those elements conflicting in any way.
 
 Now we need to ensure that or xboxdrv mapping is torn down as the emulator/port exits back to Emulation station. We'll do this by adding `sudo killall > /dev/null 2>&1 xboxdrv` to `/opt/retropie/configs/all/runcommand-onend.sh`. Also, for those who have a system-wide xboxdrv mapping that should be restored afterward, we'll copy the same configuration from your `/etc/rc.local` to '/opt/retropie/configs/all/runcommand-onend.sh' as well. If the `runcommand-onend.sh` file doesn't exist yet, drop to the command line and type:
 ```
@@ -244,15 +261,15 @@ On a line below, you can now add the `killall` command, followed by the global x
 ```
 sudo killall > /dev/null 2>&1 xboxdrv
 /opt/retropie/supplementary/xboxdrv/bin/xboxdrv > /dev/null 2>&1 \
-	--evdev /dev/input/by-id/* \
+	--evdev /dev/input/by-id/[•] \
 	--silent \
 	--detach-kernel-driver \
 	--force-feedback \
 	--deadzone-trigger 15% \
 	--deadzone 4000 \
 	--mimic-xpad \
-	--evdev-absmap ABS_*=x1,ABS_*=y1,ABS_*=x2,ABS_*=y2,ABS_*=lt,ABS_*=rt,ABS_*=dpad_x,ABS_*=dpad_y \
-	--evdev-keymap BTN_*=a,BTN_*=b,BTN_*=x,BTN_*=y,BTN_*=lb,BTN_*=rb,BTN_*=tl,BTN_*=tr,BTN_*=guide,BTN_*=back,BTN_*=start \
+	--evdev-absmap ABS_[•]=x1,ABS_[•]=y1,ABS_[•]=x2,ABS_[•]=y2,ABS_[•]=lt,ABS_[•]=rt,ABS_[•]=dpad_x,ABS_[•]=dpad_y \
+	--evdev-keymap BTN_[•]=a,BTN_[•]=b,BTN_[•]=x,BTN_[•]=y,BTN_[•]=lb,BTN_[•]=rb,BTN_[•]=tl,BTN_[•]=tr,BTN_[•]=guide,BTN_[•]=back,BTN_[•]=start \
 	&
 ```
 Now, press 'ctrl+o' to save the file, 'Enter' to confirm and 'ctrl+x' to exit. All that is left is to make the script executable in the terminal by typing:
