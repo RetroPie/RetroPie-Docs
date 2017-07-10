@@ -42,7 +42,9 @@ sudo /opt/retropie/supplementary/xboxdrv/bin/xboxdrv \
 	--evdev-keymap BTN_[•]=a,BTN_[•]=b,BTN_[•]=x,BTN_[•]=y,BTN_[•]=lb,BTN_[•]=rb,BTN_[•]=tl,BTN_[•]=tr,BTN_[•]=guide,BTN_[•]=back,BTN_[•]=start \
 	&
 ```
-You can alternatively use the controller's event number if it lacks name designation, by changing `--evdev /dev/input/by-id/[•]` to `--evdev /dev/input/event[•]`. Bluetooth controllers can potentially present a problem when assigned this way, as their event numbers will shift between powering off and back on again. However, we can assign our own named event designation by first typing:
+You can alternatively use the controller's event number if it lacks name designation, by changing `--evdev /dev/input/by-id/[•]` to `--evdev /dev/input/event[•]`
+
+Bluetooth controllers can potentially present a problem when assigned this way, as their event numbers will shift between powering off and back on again. However, we can assign our own named event designation by first typing:
 ```
 udevadm info -a -n /dev/input/event[•]
 ```
