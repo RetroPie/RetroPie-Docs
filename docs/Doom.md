@@ -4,23 +4,23 @@
 _Doom was the one game that popularized First Person Shooting as a genre. It was developed by Id Software in 1993._
 
 ***
-## Emulators: [lr-prboom](https://github.com/petrockblog/RetroPie-Setup/blob/master/scriptmodules/libretrocores/lr-prboom.sh), [ZDoom](https://github.com/rheit/zdoom)
+# Emulators: [lr-prboom](https://github.com/petrockblog/RetroPie-Setup/blob/master/scriptmodules/libretrocores/lr-prboom.sh), [ZDoom](https://github.com/rheit/zdoom)
 
-## Controls
+# Controls
 
-### Configuring controls for lr-prboom
+## Configuring controls for lr-prboom
 
 lr-prboom utilises normal Retroarch control configurations found in the RetroArch menu by pressing 'select+x' on your controller after the game software has launched. From the RetroArch menu, navigate to 'Quick Menu' and then to 'Controls'.
 
 For more information on custom RetroArch controls see: [RetroArch Configuration](https://github.com/retropie/retropie-setup/wiki/retroarch-configuration)
 
-### Configuring controls for ZDoom
+## Configuring controls for ZDoom
 
 ZDoom controls can be found in the Doom options menu by pressing any button or key after the game software has launched. Although the initial configuration may need to be started with a keyboard, full joystick autonomy is possible after being set.
 
-### How to Launch Doom IWADs and Mods (PWADs) from Emulationstation using lr-prboom
+## How to Launch Doom IWADs and Mods (PWADs) from Emulationstation using lr-prboom
 
-#### To Launch Doom, Ultimate Doom, Doom 2, TNT, Plutonia, Final Doom (IWADS) - Method 1 (savegames issue)
+### To Launch Doom, Ultimate Doom, Doom 2, TNT, Plutonia, Final Doom (IWADS) - Method 1 (savegames issue)
 
 Place your WADs in the doom rom folder, `/home/pi/RetroPie/roms/ports/doom`.
 
@@ -47,11 +47,16 @@ chmod 0755 "/home/pi/RetroPie/roms/ports/The\ Plutonia\ Experiment.sh"
 
 Set the default emulator for ROM to 'lr-prboom' at launch in the runcommand menu.
 
-#### To Launch Doom, Ultimate Doom, Doom 2, TNT, Plutonia, Final Doom (IWADS) - Method 2 (savegames separated)
+### To Launch Doom, Ultimate Doom, Doom 2, TNT, Plutonia, Final Doom (IWADS) - Method 2 (savegames separated)
 
-Place your WADs - like method 1 - in the doom rom folder, `/home/pi/RetroPie/roms/ports/doom`.
-Keep in mind that PrBoom treats all games equal, so every game got the same saving structure and if you save gamestate for __The Ultimate DOOM__ in first position and you launch __DOOM 2 - Hell on Earth__ then the savestate of the first gameplay is displayed during loading/saving actions. So you can overwrite savegames by mistake...
-This will happen an all WADs DOOM, DOOM2, TNT, Plutonia, FreeDoom1, FreeDoom2.....
+* Place your WADs - like method 1 - in the doom rom folder, `/home/pi/RetroPie/roms/ports/doom`.
+* Install zip extension via aptitude `sudo apt install zip`
+
+__Why?__
+
+Keep in mind that PrBoom treats all games equal, so every game got the same saving structure and if you save gamestate for __The Ultimate DOOM__ in first position and you launch __DOOM 2 - Hell on Earth__ then the savestate of the first gameplay is displayed during loading/saving actions in first position. So you can overwrite savegames by mistake... or of you want to load this then PrBoom gives an error message.
+
+This will happen an all WADs DOOM, DOOM2, TNT, Plutonia, FreeDoom1, FreeDoom2..... We have only 8 savepoints at all!
 
 __How to solve?__
  
@@ -84,7 +89,7 @@ Set the default emulator for ROM to 'lr-prboom' at launch in the runcommand menu
 
 More scripts can be [downloaded here](https://github.com/crcerror/launch-doom-packs-RP)
 
-#### To Launch Doom Mods (PWADS)
+### To Launch Doom Mods (PWADS)
 
 In the doom rom folder, you will need prboom.wad and whichever Doom IWAD is required for the particular mod (`doom.wad` and/or `doom2.wad`).
 
@@ -129,13 +134,13 @@ chmod 0755 "/home/pi/RetroPie/roms/ports/Batman\ Doom.sh"
 
 Repeat for each mod (PWAD), creating a new folder for each one and a copy of the script above replacing the folder name as required.
 
-### How to Launch Doom IWADs and Mods (PWADs) from Emulationstation using ZDoom.
+## How to Launch Doom IWADs and Mods (PWADs) from Emulationstation using ZDoom.
 
-#### To Launch Doom, Ultimate Doom, Doom 2, TNT, Plutonia, Final Doom (IWADS)
+### To Launch Doom, Ultimate Doom, Doom 2, TNT, Plutonia, Final Doom (IWADS)
 
 Use the same method for IWADS detailed above for lr-prboom, only set the default emulator for ROM to 'zdoom' at launch in the runcommand menu.
 
-#### To Launch Doom Mods (PWADS)
+### To Launch Doom Mods (PWADS)
 
 Here, we'll use [Rex Claussen's, The Darkest Hour](http://doomnexus.drdteam.org/DH_Pix.html) as an example that can be used for any mod. Start by downloading [The Darkest Hour](ftp://ftp.fu-berlin.de/pc/msdos/games/idgames/levels/doom2/Ports/d-f/darkhour.zip). Next you will either want to SSH into your Pi, or drop out of EmulationStation using F4 on your keyboard. 
 
@@ -195,7 +200,7 @@ You'll notice that in the above example that ZDoom is making use of the 'Doom II
 
 Having completed this step, you will now want to restart Emulation Station, navigate to 'Ports' and test your new menu entry.
 
-### How to setup Freedoom
+## How to setup Freedoom
 
 [Freedoom](https://freedoom.github.io/index.html) is a collection of reusable assets (textures, sound effects and music tracks) that will completely replace the original Doom assets and are liberally licensed under the [BSD license](https://en.wikipedia.org/wiki/BSD_licenses).
 
@@ -271,7 +276,7 @@ cd
 rm -rf freedoom-0.11.2/ freedm-0.11.2/ freedoom-0.11.2.zip freedm-0.11.2.zip
 ```
 
-### Music
+## Music
 
 The most ideal and authentic way to listen to the the original Doom (1&2) tracks is to google 'doom 1 and 2 midis' and download them. You can then convert the midi files into MP3s.
 
