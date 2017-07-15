@@ -20,11 +20,11 @@ ZDoom controls can be found in the Doom options menu by pressing any button or k
 
 ### How to Launch Doom IWADs and Mods (PWADs) from Emulationstation using lr-prboom
 
-#### To Launch Doom, Ultimate Doom, Doom 2, TNT, Plutonia, Final Doom (IWADS)
+#### To Launch Doom, Ultimate Doom, Doom 2, TNT, Plutonia, Final Doom (IWADS) - Method 1 (savegames issue)
 
 Place your WADs in the doom rom folder, `/home/pi/RetroPie/roms/ports/doom`.
 
-Create a shell script to launch your WAD. For example, for The Plutonia Expriment, 
+Create a shell script to launch your WAD. For example, for The Plutonia Experiment, 
 
 ```
 nano /home/pi/RetroPie/roms/ports/The\ Plutonia\ Experiment.sh
@@ -46,6 +46,43 @@ chmod 0755 "/home/pi/RetroPie/roms/ports/The\ Plutonia\ Experiment.sh"
 ```
 
 Set the default emulator for ROM to 'lr-prboom' at launch in the runcommand menu.
+
+#### To Launch Doom, Ultimate Doom, Doom 2, TNT, Plutonia, Final Doom (IWADS) - Method 2 (savegames separated)
+
+Place your WADs - like method 1 - in the doom rom folder, `/home/pi/RetroPie/roms/ports/doom`.
+Keep in mind that PrBoom treats all games equal, so every game got the same saving structure and if you save gamestate for __The Ultimate DOOM__ in first position and you launch __DOOM 2 - Hell on Earth__ then the savestate of the first gameplay is displayed during loading/saving actions. So you can overwrite savegames by mistake...
+This will happen an all WADs DOOM, DOOM2, TNT, Plutonia, FreeDoom1, FreeDoom2.....
+
+__How to solve?__
+ 
+Create a shell script to launch your WAD. For example, for The Plutonia Experiment, 
+```
+nano /home/pi/RetroPie/roms/ports/The\ Plutonia\ Experiment.sh
+```
+
+The nano text editor will open, where you will now add the following to the text edit field.
+
+```bash
+#!/bin/bash
+path="/home/pi/RetroPie/roms/ports/doom"
+wadfile="plutonia.wad"
+
+unzip -qq -o "${path}/savegames_${wadfile%.*}.zip" -d "$path"
+"/opt/retropie/supplementary/runcommand/runcommand.sh" 0 _PORT_ "doom" "${path}/$wadfile"
+cd "$path" && zip -mj "savegames_${wadfile%.*}.zip" prbmsav?.dsg
+```
+
+press 'ctrl+o' to save, 'y' to confirm and 'ctrl+x' to exit out of the nano text editor.
+
+Set the proper file permissions for the script with:
+
+```
+chmod 0755 "/home/pi/RetroPie/roms/ports/The\ Plutonia\ Experiment.sh"
+```
+
+Set the default emulator for ROM to 'lr-prboom' at launch in the runcommand menu.
+
+More scripts can be [downloaded here](https://github.com/crcerror/launch-doom-packs-RP)
 
 #### To Launch Doom Mods (PWADS)
 
