@@ -116,11 +116,40 @@ With the contents:
 "/opt/retropie/supplementary/runcommand/runcommand.sh" 0 _PORT_ "quake" "/home/pi/RetroPie/roms/ports/quake/dopa/pak0.pak"
 ~~~
 
+### Directory structure, an overview
+
+The files `s0.sav` up to `s11.sav` represents structure of savegams. 
+
+~~~
+id1
+├── pak0.pak
+├── pak1.pak
+├── s0.sav
+├── s1.sav
+│
+├── hipnotic
+│   ├── pak0.pak
+│   ├── s0.sav
+│   └── s1.sav
+│
+├── rogue
+│   ├── pak0.pak
+│   ├── s0.sav
+│   └── s1.sav
+│
+└── dopa
+    ├── pak0.pak ## copy from id1=shareware version
+    ├── pak1.pak ## copy from id1=registered version
+    ├── pak2.pak ## dopa
+    ├── s0.sav
+    └── s1.sav
+~~~
+
 ## References
 
 * https://retropie.org.uk/forum/topic/2431/solved-partly-issue-with-joypad-control-how-to-start-doom-doom2-heretic-and-all-episodes-of-quake-dopa-rogue-hipnotic
 * https://twitter.com/machinegames/status/746363189768650752
-
+* https://retropie.org.uk/forum/topic/11508/launching-quake-and-it-s-extras-1-year-anniversary-release
 # Quake III Arena
 
 ![](http://cdn.akamai.steamstatic.com/steam/apps/2200/header.jpg?t=1343157282)
