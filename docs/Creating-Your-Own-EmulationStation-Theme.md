@@ -1,5 +1,3 @@
-##Table of Contents
-
 - [About This Tutorial](#about-this-tutorial)
 - [Notes](#notes)
 - [About Emulationstation Views](#about-emulationstation-views)
@@ -7,12 +5,13 @@
 - [System View](#system-view)
 - [Basic View](#basic-view)
 - [Detailed View](#detailed-view)
+- [Video View](#video-view)
 - [The End](#the-end)
 - [Important Links](#important-links)
 
 ---
 
-##About This Tutorial
+## About This Tutorial
 
 In this tutorial I'm going to take you through the basics of creating a theme for Emulationstation and RetroPie.
 
@@ -43,7 +42,7 @@ It is a simple, clean theme, not very outlandish, but it's enough to teach the e
 
 ---
 
-##Notes
+## Notes
 
 I made this tutorial on a Windows PC, but all the main parts (the XML and images) can be done on any Operating System, and as long as you can FTP or SSH into the 'theme' folder on your Raspberry Pi, then you can test your theme there.
 
@@ -66,7 +65,7 @@ There will be a list of all links and resources at the end of the tutorial.
 
 ---
 
-##About Emulationstation Views
+## About Emulationstation Views
 
 Emulationstation has 3 main sections, called Views:
 *[All images taken from the default Carbon theme]*
@@ -94,11 +93,20 @@ The Detailed View is what you see if you *have* scraped metadata. Different them
 - md_playcount
 - md_description
 
+**Video View**
+
+```Image Coming Soon```
+
+The Video View is what you see if your scraped metadata includes videos. The video view is an extension of the Detailed View.  It can display all of the values found in the Detailed View along with these additions:
+
+- md_video
+- md_marquee
+
 Extra values can be added by the Theme Maker, but the ones above are the only ones that get scraped by Emulationstation. Any others have to have their data entered by hand. (More on 'Extra' fields later)
 
 ---
 
-##Setup
+## Setup
 
 I do the first 90% of my theme work on a portable version of Emulationstation created by @herb_fargus. I personally find it much easier to work on my Windows PC than directly on the Pi. It makes saving, testing and taking screenshots much simpler. I'm sorry Mac and Linux users, I don't know if there are any equivalents for you.
 
@@ -122,7 +130,7 @@ Double click `Launch Portable (Windowed).bat` to start Emulationstation.
 
 ---
 
-##Creating a Theme
+## Creating a Theme
 
 We're going to make the theme straight in the Portable Emulationstation's theme folder. This makes things a lot easier, because you can view a change straight away without having to move files each time.
 
@@ -144,7 +152,7 @@ We'll start by setting up a simple file structure, with folders for the 3 consol
 
 Your folder structure should now look like this:
 
-![Carbon Theme Detailed View](http://i.imgur.com/BlJ48ai.jpg)
+![Folder Structure](http://i.imgur.com/BlJ48ai.jpg)
 
 Now onto the code.
 
@@ -169,6 +177,7 @@ based on:       "Carbon" by Eric Hettervik
     <view name="system"></view>
     <view name="basic"></view>
     <view name="detailed"></view>
+    <view name="video"></view>
 
 </theme>
 ```
@@ -194,6 +203,7 @@ Open `spare/gb/theme.xml` and add these lines:
     <view name="system"></view>
     <view name="basic"></view>
     <view name="detailed"></view>
+    <view name="video"></view>
     
 </theme>
 ```
@@ -226,7 +236,7 @@ It's our job as Themers to change that.
 
 ---
 
-##System View
+## System View
 
 Now let's create the System View.
 
@@ -471,7 +481,7 @@ Refresh ES and have a look at the **System View**. It should now look like this:
 
 ---
 
-##Basic View
+## Basic View
 
 The Basic View should look like this:
 
@@ -530,6 +540,7 @@ based on:       "Carbon" by Eric Hettervik
     </view>
     <view name="basic"></view>
     <view name="detailed"></view>
+    <view name="video"></view>
 
 </theme>
 ```
@@ -538,9 +549,9 @@ Now, we could just copy all the `<image>` Elements and paste them into `<view na
 Change:
 `<view name="system">`
 to
-`<view name="system, basic, detailed">`
+`<view name="system, basic, detailed, video">`
 
-Done. Now, instead of saying that the following code is just for the System View, it's also for the Basic View and Detailed View. How easy was that? This trick will come in handy a lot later on.
+Done. Now, instead of saying that the following code is just for the System View, it's also for the Basic, Detailed and Video Views. How easy was that? This trick will come in handy a lot later on.
 
 Now we just need to style the System Logo and the Gamelist.
 
@@ -551,9 +562,9 @@ Now we just need to style the System Logo and the Gamelist.
 For the **System Logo**, we're going to use the same trick as above. Open `spare/gb/theme.xml` and change:
 `<view name="system">`
 to
-`<view name="system, basic, detailed">`
+`<view name="system, basic, detailed, video">`
 
-That means anything within that `<view>` will apply to all 3 views.
+That means anything within that `<view>` will apply to all 4 views.
 
 The Basic View should now look like this:
 
@@ -663,7 +674,7 @@ You should now be the owner of a shiny new Basic View:
 
 ---
 
-##Detailed View
+## Detailed View
 
 Now for the Big One; the **Detailed View**. This one isn't too bad mostly, but the metadata can be a real hassle to order so it looks nice. Each part of the metadata has to be done individually... but we'll jump off that bridge when we come to it.
 
@@ -1069,6 +1080,57 @@ Note how I used more Helper boxes for each piece of metadata? This was a long pr
 
 Now just remove the second layer of padding Helpers, and change the main helper boxes color to `FFFFFF99`. I also renamed the white Helper boxes to "background_" because they are now backgrounds rather than helpers.
 
+---
+
+## Video View
+Now for the **Video View**.  Video support is a newer feature of EmulationStation so we have to take care to ensure our theme is backward compatible.  Video view is an extension of the **Detailed View** and should only require a few modifications.
+
+The first step is to open `spare.xml`.  We will be moving `md_image` into a separate view definition.  Then we will add `video` to the original `detail` view element.  The result should look like the following.
+```
+<view name="detailed">
+    <image name="md_image">
+        <origin>0.5 0.5</origin>
+        <pos>0.545 0.33</pos>
+        <maxSize>0.33 0.58</maxSize>
+    </image>
+</view>
+
+<view name="video"></view>
+
+<view name="detailed, video">
+<!-- everything else -->
+</view>
+```
+
+Next we want to theme the new elements that video view adds.
+```
+<view name="detailed">
+    <image name="md_image">
+        <origin>0.5 0.5</origin>
+        <pos>0.545 0.33</pos>
+        <maxSize>0.33 0.58</maxSize>
+    </image>
+</view>
+
+<view name="video">
+    <image name="md_video">
+        <origin>0.5 0.5</origin>
+        <pos>0.545 0.33</pos>
+        <maxSize>0.33 0.58</maxSize>
+    </image>
+    <image name="md_marquee">
+        <origin>0.5 0.5</origin>
+        <pos>0.545 0.13</pos>
+        <maxSize>0.2 0.1</maxSize>
+    </image>
+</view>
+
+<view name="detailed, video">
+<!-- everything else -->
+</view>
+```
+---
+
 You're all done. Congratulations!
 
 ![Spare Theme Detailed View - Complete](http://i.imgur.com/r5SHwkc.jpg)
@@ -1338,13 +1400,13 @@ And my complete `theme.xml`, which is identical in each system folder:
 
 ---
 
-##The End
+## The End
 
 Congratulations to those that made it this far. It's been a heck of a journey. You now have everything you need to make your own themes. If I've missed something, or glossed over it, or I just didn't explain it very well, just let me know in the comments and I'll do my best to rectify it.
 
 ---
 
-###Important Links
+### Important Links
 
 - The full **Spare** theme on GitHub:
   - [es-theme-spare](https://github.com/mattrixk/es-theme-spare)
@@ -1355,8 +1417,8 @@ Congratulations to those that made it this far. It's been a heck of a journey. Y
   - [Download the file](https://drive.google.com/file/d/0B2TMeZ6iEFvHYkNrMGVQSldkZ0U/view?usp=sharing)
 - The ES Theme Helper by @Rookervik:
   -  [Get it from @Rookervik's DropBox here](https://dl.dropboxusercontent.com/u/60872572/EmulationStation/ES%20Theme%20Helper3.rar)
-- Official Emulationstation Themes documention:
-  - [GitHub Docs](https://github.com/Aloshi/EmulationStation/blob/master/THEMES.md)
+- Official RetroPie Emulationstation Themes documention:
+  - [GitHub Docs](https://github.com/RetroPie/EmulationStation/blob/master/THEMES.md)
 - The full album of images used in this tutorial:
   - [Imgur](http://imgur.com/a/LjRZk)
 - My other theme:
