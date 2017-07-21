@@ -1115,13 +1115,13 @@ Next we want to theme the new elements that video view adds.
 <view name="video">
     <image name="md_video">
         <origin>0.5 0.5</origin>
-        <pos>0.545 0.33</pos>
-        <maxSize>0.33 0.58</maxSize>
+        <pos>0.545 0.39</pos>
+        <maxSize>0.33 0.46</maxSize>
     </image>
     <image name="md_marquee">
         <origin>0.5 0.5</origin>
-        <pos>0.545 0.13</pos>
-        <maxSize>0.2 0.1</maxSize>
+        <pos>0.545 0.11</pos>
+        <maxSize>0.33 0.15</maxSize>
     </image>
 </view>
 
@@ -1129,6 +1129,37 @@ Next we want to theme the new elements that video view adds.
 <!-- everything else -->
 </view>
 ```
+
+The final step is to ensure backward compatibility with earlier versions of EmulationStation that do no support video.  To do this, we use a `feature` element.  The feature element is used to hide portions of the theme xml from versions that do not support the specified feature.
+
+```
+<view name="detailed">
+    <image name="md_image">
+        <origin>0.5 0.5</origin>
+        <pos>0.545 0.33</pos>
+        <maxSize>0.33 0.58</maxSize>
+    </image>
+</view>
+<feature supported="video">
+    <view name="video">
+        <image name="md_video">
+            <origin>0.5 0.5</origin>
+            <pos>0.545 0.39</pos>
+            <maxSize>0.33 0.46</maxSize>
+        </image>
+        <image name="md_marquee">
+            <origin>0.5 0.5</origin>
+            <pos>0.545 0.11</pos>
+            <maxSize>0.33 0.15</maxSize>
+        </image>
+    </view>
+</feature>
+
+<view name="detailed, video">
+<!-- everything else -->
+</view>
+```
+
 ---
 
 You're all done. Congratulations!
