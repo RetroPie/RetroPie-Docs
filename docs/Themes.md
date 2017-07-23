@@ -67,6 +67,8 @@ Access theme gallery in the esthemes menu
 |           hurstyblue          | <img src="https://raw.githubusercontent.com/wetriner/es-theme-gallery/master/hurstyblue.png" width="500">                    | <img src="https://raw.githubusercontent.com/wetriner/es-theme-gallery/master/hurstyblue-gamelist.png" width="500">                    | yes           |
 |           maximuspie          | <img src="https://raw.githubusercontent.com/wetriner/es-theme-gallery/master/maximuspie.png" width="500">                    | <img src="https://raw.githubusercontent.com/wetriner/es-theme-gallery/master/maximuspie-gamelist.png" width="500">                    | yes           |
 |           Retrorama           | <img src="https://raw.githubusercontent.com/wetriner/es-theme-gallery/master/Retrorama.png" width="500">                     | <img src="https://raw.githubusercontent.com/wetriner/es-theme-gallery/master/Retrorama-gamelist.png" width="500">                     | yes           |
+|             gbz35             | <img src="https://raw.githubusercontent.com/wetriner/es-theme-gallery/master/gbz35.png" width="500">                         | <img src="https://raw.githubusercontent.com/wetriner/es-theme-gallery/master/gbz35-gamelist.png" width="500">                         | yes           |
+|           gbz35-dark          | <img src="https://raw.githubusercontent.com/wetriner/es-theme-gallery/master/gbz35-dark.png" width="500">                    | <img src="https://raw.githubusercontent.com/wetriner/es-theme-gallery/master/gbz35-dark-gamelist.png" width="500">                    | yes           |
 
 
 ## Creating Your Own EmulationStation Theme
