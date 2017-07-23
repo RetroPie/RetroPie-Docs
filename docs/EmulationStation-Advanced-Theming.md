@@ -8,7 +8,7 @@ Themes can now provide a default theme that will be used when then the theme doe
 
 An existing feature of EmulationStation is that the system logo will default to text if an image is not specified.  Additional theme options have been added for the logo text to give theme creators more control over the appearance.
 
-Below is an example implementation of a default theme for [carbon](https://github.com/RetroPie/es-theme-carbon).  It is very similar to the existing system themes.  The main change is the addition of the `logoText` element.  In addition the paths for the logos have been adjusted to take advantage of the new theme variables feature.  In this case, it will try to load the logo image, if it is not found, then it will render the logo as text. 
+Below is an example implementation of a default theme for [carbon](https://github.com/RetroPie/es-theme-carbon).  It is very similar to the existing system themes.  The main change is the addition of the `logoText` element.  In addition, the paths for the logos have been adjusted to take advantage of the new theme variables feature.  In this case, it will try to load the logo image, if it is not found, then it will render the logo as text.
 ```
 <theme>
     <formatVersion>3</formatVersion>
