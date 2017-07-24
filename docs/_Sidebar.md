@@ -113,6 +113,7 @@
 ## Advanced Configuration
 
 * [EmulationStation](EmulationStation)
+* [EmulationStation Changelog] (EmulationStation-Changelog)
 * [Custom Splash Screens](splashscreen)
 * [EmulationStation Themes](themes)
 * [Take and Scrape Your Own Screenshots](Take-and-Scrape-Your-Own-Screenshots)
