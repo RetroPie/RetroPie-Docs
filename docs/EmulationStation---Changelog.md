@@ -1,0 +1,78 @@
+This page is a list of all of the changelogs for each version of EmulationStation. For a complete list of all commits to the source code see [here](https://github.com/RetroPie/EmulationStation/commits/master):
+
+- 2.4.1
+  - [BUGFIX](https://github.com/RetroPie/EmulationStation/pull/180): Fixed bug with random game selection.
+- 2.4.0
+  - [NEW FEATURE](https://github.com/RetroPie/EmulationStation/pull/168): Game Collections: Currently supports "All", "Favorites" and "Last Played" systems.
+  - [BUGFIX](https://github.com/RetroPie/EmulationStation/pull/178): Moved slider menu items back to the top of menu to work around bug affecting some users.
+  - [ENHANCEMENT](https://github.com/RetroPie/EmulationStation/pull/177): Fix for lack of zoom transition on video view for systems without marquees.
+  - [NEW FEATURE](https://github.com/RetroPie/EmulationStation/pull/173): Variable support for themes.
+    - Themes can now define and reference variables.
+    - Themes can now define a default theme that will be used for any systems that the theme does not explicitly support.
+    - Additional Theme options available for logoText element on System and Gamelist views.
+  - [ENHANCEMENT](https://github.com/RetroPie/EmulationStation/pull/170): Carousel sliding transition can now be disabled.
+  - [ENHANCEMENT](https://github.com/RetroPie/EmulationStation/pull/175): Returned 'JUMP TO LETTER' option back to top of menu.
+- 2.3.2
+  - [BUGFIX](https://github.com/RetroPie/EmulationStation/pull/169): Fixed gamelist sizing by using max of computed size vs set size
+- 2.3.1
+  - [BUGFIX](https://github.com/RetroPie/EmulationStation/pull/162): Fixed show snapshot on delay option for video element.
+  - [BUGFIX](https://github.com/RetroPie/EmulationStation/pull/161): Fixed default color for rating component
+- 2.3.0
+  - [NEW FEATURE](https://github.com/RetroPie/EmulationStation/pull/153): Adding Random Video Screensaver/Attract Mode
+  - [ENHANCEMENT](https://github.com/RetroPie/EmulationStation/pull/159): Make color themable for ratings like image component.
+  - [BUGFIX](https://github.com/RetroPie/EmulationStation/pull/157): Game names are no longer cut off in gamelist when using `horizontalMargin` option.
+  - [BUGFIX](https://github.com/RetroPie/EmulationStation/pull/157): Selector bar now lines up properly when using `lineSpacing` option.
+  - [ENHANCEMENT](https://github.com/RetroPie/EmulationStation/pull/157): Added additional theme options for gamelist to provide better control over rendering of the selector bar.
+  - [ENHANCEMENT](https://github.com/RetroPie/EmulationStation/pull/): Fixes for USB sound cards
+      - Ability to change device used for Volume control (PCM/Speaker/Master) only on Pi.
+      - Ability to change Audio device used for OMX player (local/hdmi/both/ALSA:HW:0,0/ALSA:HW:1,0)
+- 2.2.1
+  - [BUGFIX](https://github.com/RetroPie/EmulationStation/pull/154): Fixed broken zoom launch transition.
+- 2.2.0
+  - [NEW FEATURE](https://github.com/RetroPie/EmulationStation/pull/149): Added Instant transition.
+  - [NEW FEATURE](https://github.com/RetroPie/EmulationStation/pull/74): Allow configuring the "hotkey enable" button
+  - [ENHANCEMENT](https://github.com/RetroPie/EmulationStation/pull/146): Help Component now maintains styling from theme when in menus.
+  - [BUGFIX](https://github.com/RetroPie/EmulationStation/pull/150): Prevent views from overflow onto an adjacent view.
+    - use clip rects to prevent views overflow onto other views
+  - [ENHANCEMENT](https://github.com/RetroPie/EmulationStation/pull/143): Scaper is no longer blocks UI rendering and properly shows the busy animation.
+  - [BUGFIX](https://github.com/RetroPie/EmulationStation/pull/148): Fixed image stretch in video component.
+  - [ENHANCEMENT](https://github.com/RetroPie/EmulationStation/pull/): Adding OMX Player option on RPI for improved video rendering.
+  - [BUGFIX](https://github.com/RetroPie/EmulationStation/pull/145): Fixed Game Count display in System View when system is filtered.
+  - [BUGFIX](https://github.com/RetroPie/EmulationStation/pull/142): Fixed default z-index values for metadata fields on detail view.
+  - [ENHANCEMENT](https://github.com/RetroPie/EmulationStation/pull/140): Added new platforms to scraper
+- 2.1.9
+  - [ENHANCEMENT](https://github.com/RetroPie/EmulationStation/pull/139): Scrapper improvements.
+    - Added FDS to scraper.
+    - Added support to search for specific game id using id:###
+  - [ENHANCEMENT](https://github.com/RetroPie/EmulationStation/pull/134): Slide transition will slide vertically for vertical carousel.
+  - [ENCHANCEMENT](https://github.com/RetroPie/EmulationStation/pull/125): Added sorting options for the number of players, release date, genre, developer and publisher.
+  - [ENHANCEMENT](https://github.com/RetroPie/EmulationStation/pull/52): Switch to new splashscreen with black background
+  - [NEW FEATURE](https://github.com/RetroPie/EmulationStation/pull/130): z-index support allow themes to specify drawing order ([docs](https://github.com/RetroPie/EmulationStation/blob/master/THEMES.md#element-rendering-order-with-z-index))
+  - [BUGFIX](https://github.com/RetroPie/EmulationStation/pull/129): Changes to mitigate white flashes in heavier themes
+  - [BUGFIX](https://github.com/RetroPie/EmulationStation/pull/128): Fixed Scrapping PSP games.
+- 2.1.8
+  - [ENCHANCEMENT](https://github.com/RetroPie/EmulationStation/pull/108): Added menu option to explicitly choose the Gamelist type.
+  - [NEW FEATURE](https://github.com/RetroPie/EmulationStation/pull/115): Added ability to filter gamelists by genre, players, ratings and publisher/developer.
+- 2.1.7
+  - [BUGFIX](https://github.com/RetroPie/EmulationStation/pull/122): Fix black boxes appearing on gamelist after scrolling
+  - [NEW FEATURE](https://github.com/RetroPie/EmulationStation/pull/118): Added Go-to Random Game feature.
+  - [ENHANCEMENT](https://github.com/RetroPie/EmulationStation/pull/109): Added support for additional metadata fields on folders.
+  - [BUGFIX](https://github.com/RetroPie/EmulationStation/pull/116): Fixed bug where carousel theme fails to load under certain conditions.
+- 2.1.6
+  - [BUGFIX](https://github.com/RetroPie/EmulationStation/pull/112): Fix image ratio for first image in video game list view.
+  - [NEW FEATURE](https://github.com/RetroPie/EmulationStation/pull/101): Added ability to theme the system carousel
+- 2.1.5
+  - [ENHANCEMENT](https://github.com/RetroPie/EmulationStation/pull/93): Fix initial text positioning and improve keyboard handling in TextEditComponent
+  - [ENHANCEMENT](https://github.com/RetroPie/EmulationStation/pull/102): Added maxSize support for videos.
+  - [ENHANCEMENT](https://github.com/RetroPie/EmulationStation/pull/94): Video view will no longer activate if the current theme does not support it.
+  - [BUGFIX](https://github.com/RetroPie/EmulationStation/pull/99): Fix for Neo Geo games not being scraped.
+- 2.1.4
+  - [BUGFIX](https://github.com/RetroPie/EmulationStation/pull/88): Fix WSOD by loading textures on demand in a separate thread when a user configurable texture memory threshold is reached.
+- 2.1.3
+  - [NEW FEATURE](https://github.com/RetroPie/EmulationStation/pull/): Added ability to disable the splashscreen.
+- 2.1.2
+  - [ENHANCEMENT](https://github.com/RetroPie/EmulationStation/pull/78): Improve Shutdown time by only writing changes to gamelist.xml.
+- 2.1.1
+  - [BUGFIX](https://github.com/RetroPie/EmulationStation/pull/79): Fix crash when saving metadata.
+- 2.1.0
+  - [NEW FEATURE](https://github.com/RetroPie/EmulationStation/pull/): Added video view to allow video preview of games in gamelist
