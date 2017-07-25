@@ -7,8 +7,9 @@ This page is a list of all of the changelogs for each version of EmulationStatio
   - [BUGFIX](https://github.com/RetroPie/EmulationStation/pull/178): Moved slider menu items back to the top of menu to work around bug affecting some users.
   - [ENHANCEMENT](https://github.com/RetroPie/EmulationStation/pull/177): Fix for lack of zoom transition on video view for systems without marquees.
   - [NEW FEATURE](https://github.com/RetroPie/EmulationStation/pull/173): Variable support for themes.
-    - Themes can now define and reference variables.
+    - Themes can now define and reference variables. ([docs](https://github.com/RetroPie/EmulationStation/blob/master/THEMES.md#theme-variables))
     - Themes can now define a default theme that will be used for any systems that the theme does not explicitly support.
+ ([tutorial](EmulationStation-Advanced-Theming#default-theme))
     - Additional Theme options available for logoText element on System and Gamelist views.
   - [ENHANCEMENT](https://github.com/RetroPie/EmulationStation/pull/170): Carousel sliding transition can now be disabled.
   - [ENHANCEMENT](https://github.com/RetroPie/EmulationStation/pull/175): Returned 'JUMP TO LETTER' option back to top of menu.
