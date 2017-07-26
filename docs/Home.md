@@ -10,13 +10,13 @@ RetroPie allows you to turn your Raspberry Pi or PC into a retro-gaming machine.
 
 RetroPie sits on top of a full OS, you can install it on an existing Raspbian, or start with the RetroPie SD image and add additional software later. It's up to you. 
 
-## What Is An Emulator?
+## What is an Emulator?
 
 An emulator is software that makes a computer behave like another computer, or in the case of RetroPie a computer that behaves like a video game console such as the Super Nintendo. The RetroPie SD image comes pre-installed with many different emulators. Additional emulators may be installed from within RetroPie.
 
 ![blue_console_shadow](https://cloud.githubusercontent.com/assets/10035308/22178094/cf801644-dfe2-11e6-8327-71a61d540d2f.png)
 
-## What Are ROMs?
+## What are ROMs?
 
 ROMs are digital versions of game cartridges. Loading up a ROM in an emulator is the equivalent of putting a cartridge in a game console. 
 
@@ -24,7 +24,7 @@ ROMs are copyrighted content and as such are not included with RetroPie.
 
 ![blue_cartridge_shadow](https://cloud.githubusercontent.com/assets/10035308/22178090/cf5cad76-dfe2-11e6-8c63-ec48cc4755f6.png)
 
-## What Is A BIOS?
+## What is a BIOS?
 A BIOS is a small piece of software that tells hardware how to work. Many emulators emulate their system's BIOS, but others require you to supply a BIOS file. If a BIOS is required, the emulator's page will say so.
 
 BIOSs are also copyrighted and are therefore not included with RetroPie.
