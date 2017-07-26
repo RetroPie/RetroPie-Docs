@@ -18,7 +18,7 @@ Please see the [8bitdo support page](http://support.8bitdo.com) for details on h
 
 **PLEASE MAKE SURE IF YOU ARE USING AN 8BITDO ZERO YOU START THE CONTROLLER WITH R1+START WHEN YOU ARE COMPLETING THESE STEPS FOR AT LEAST THE FIRST TIME.**
 
-It also may help to reset the controller by holding down the select button for 8 seconds if this does not work. Please note that using the R+START mode does result in different values for the buttons themselves so it may or may not function properly if started under any different mode in the future aside from R1+START.
+It also may help to reset the controller by holding down the select button for 8 seconds if this does not work. Please note that using the R+START mode does result in different values for the buttons themselves so it may or may not function properly if started under any different mode in the future aside from R1+START. Also, ignore step 4 and turn the hack option on.
 
 ***
 
