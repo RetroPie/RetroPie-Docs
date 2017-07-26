@@ -24,7 +24,7 @@ ROMs are copyrighted content and as such are not included with RetroPie.
 
 ![blue_cartridge_shadow](https://cloud.githubusercontent.com/assets/10035308/22178090/cf5cad76-dfe2-11e6-8c63-ec48cc4755f6.png)
 
-## What is a BIOS?
+## What Is A BIOS?
 A BIOS is a small piece of software that tells hardware how to work. Many emulators emulate their system's BIOS, but others require you to supply a BIOS file. If a BIOS is required, the emulator's page will say so.
 
 BIOSs are also copyrighted and are therefore not included with RetroPie.
