@@ -62,7 +62,7 @@ Scourge of Armagon (aka `hipnotic`) was the first official Quake Mission Pack, s
 Place the data file at:
 
 ~~~
-/home/pi/RetroPie/roms/ports/quake/id1/hipnotic/pak0.pak
+/home/pi/RetroPie/roms/ports/quake/hipnotic/pak0.pak
 ~~~
 
 Reinstall the Quake port from the Setup Script, and a new option **Quake Mission Pack 1 (hipnotic)** will be created.
@@ -74,7 +74,7 @@ Dissolution of Eternity (aka `rogue`) is the second official Quake Mission Pack,
 Place the data file at:
 
 ~~~
-/home/pi/RetroPie/roms/ports/quake/id1/rogue/pak0.pak
+/home/pi/RetroPie/roms/ports/quake/rogue/pak0.pak
 ~~~
 
 Reinstall the Quake port from the Setup Script, and a new option **Quake Mission Pack 2 (rogue)** will be created.
@@ -89,60 +89,39 @@ To get DOPA working in the RetroPie Quake ports, create a directory at:
 /home/pi/RetroPie/roms/ports/quake/dopa/
 ~~~
 
-Copy the DOPA `pak0.pak` file into this directory then rename it to `pak2.pak`, so you have:
+Copy the DOPA `pak0.pak` file into this directory, so you have:
 
 ~~~
-/home/pi/RetroPie/roms/ports/quake/dopa/pak2.pak
+/home/pi/RetroPie/roms/ports/quake/dopa/pak0.pak
 ~~~
 
-Now copy the original shareware and registered data files into this directory as well. Your files should look like:
-
-~~~
-/home/pi/RetroPie/roms/ports/quake/dopa/pak0.pak  ## shareware
-/home/pi/RetroPie/roms/ports/quake/dopa/pak1.pak  ## registered
-/home/pi/RetroPie/roms/ports/quake/dopa/pak2.pak  ## dopa
-~~~
-
-The extra episode can now be launched with a launcher script at:
-
-~~~
-/home/pi/RetroPie/roms/ports/Quake Episode 5 (dopa).sh
-~~~
-
-With the contents:
-
-~~~
-#!/bin/bash
-"/opt/retropie/supplementary/runcommand/runcommand.sh" 0 _PORT_ "quake" "/home/pi/RetroPie/roms/ports/quake/dopa/pak0.pak"
-~~~
+Reinstall the Quake port from the Setup Script, and a new option **Quake Episode 5 (dopa)** will be created.
 
 ### Directory structure, an overview
 
-The files `s0.sav` up to `s11.sav` represents structure of savegams. 
+The files `s0.sav` up to `s11.sav` represents structure of savegames. 
 
 ~~~
 id1
-├── pak0.pak
-├── pak1.pak
+├── pak0.pak ## shareware data
+├── pak1.pak ## registered data
 ├── s0.sav
 ├── s1.sav
 │
-├── hipnotic
-│   ├── pak0.pak
-│   ├── s0.sav
-│   └── s1.sav
+hipnotic
+├── pak0.pak
+├── s0.sav
+├── s1.sav
 │
-├── rogue
-│   ├── pak0.pak
-│   ├── s0.sav
-│   └── s1.sav
+rogue
+├── pak0.pak
+├── s0.sav
+├── s1.sav
 │
-└── dopa
-    ├── pak0.pak ## copy from id1=shareware version
-    ├── pak1.pak ## copy from id1=registered version
-    ├── pak2.pak ## dopa
-    ├── s0.sav
-    └── s1.sav
+dopa
+├── pak0.pak
+├── s0.sav
+└── s1.sav
 ~~~
 
 ## References
