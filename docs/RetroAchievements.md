@@ -14,6 +14,12 @@ The Hardcore Mode disables the savestates and is optional. If you want to enable
 cheevos_hardcore_mode_enable = true
 ```
 
+If you want to see some more RetroAchievements related message right after launching a game (such as successfull login and the number of cheevos you have unlocked) you can use the Achievements Verbose Mode:
+
+```
+cheevos_verbose_enable = true
+```
+
 
 ## Supported Systems:
 
