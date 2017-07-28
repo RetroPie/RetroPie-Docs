@@ -1,5 +1,7 @@
 This page is a list of all of the changelogs for each version of EmulationStation. For a complete list of all commits to the source code see [here](https://github.com/RetroPie/EmulationStation/commits/master):
 
+- Latest from Source
+  - [NEW FEATURE](https://github.com/RetroPie/EmulationStation/pull/172): Implemented Power Saver feature.
 - 2.4.1
   - [BUGFIX](https://github.com/RetroPie/EmulationStation/pull/180): Fixed bug with random game selection.
 - 2.4.0
