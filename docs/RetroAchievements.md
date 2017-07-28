@@ -30,6 +30,7 @@ cheevos_verbose_enable = true
 * Game Boy Advance
 * PC Engine
 * Master System (started in April-2017 and is in a preliminary stage)
+* Nintendo 64 (started in April-2017 and is in a preliminary stage)
 
 A libretro core compatibility list with RetroAchievements can be found here: https://github.com/libretro/RetroArch/wiki/RetroAchievements
 
