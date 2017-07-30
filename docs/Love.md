@@ -35,9 +35,9 @@ or you can just follow the links and download the .love files and place them int
 [**Mr. Rescue**](http://tangramgames.dk/games/mrrescue/)
 
 ```
-    # get mrrescue-1.02d.love (freeware game data)
-    if [[ ! -f "$romdir/love/mrrescue-1.02d.love" ]]; then
-        wget "https://github.com/SimonLarsen/mrrescue/releases/download/v1.02d/mrrescue-1.02e.love" -O "$romdir/love/mrrescue-1.02e.love"
+    # get mrrescue-1.02e.love (freeware game data)
+    if [[ ! -f "$romdir/love/mrrescue-1.02e.love" ]]; then
+        wget "https://github.com/SimonLarsen/mrrescue/releases/download/1.02e/mrrescue1.02e.love" -O "$romdir/love/mrrescue-1.02e.love"
         chown $user:$user "$romdir/love/mrrescue-1.02e.love"
     fi
 ```
