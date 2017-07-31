@@ -64,7 +64,7 @@ This page is a list of all of the changelogs for each version of EmulationStatio
 - 2.1.6
   - [BUGFIX](https://github.com/RetroPie/EmulationStation/pull/112): Fix image ratio for first image in video game list view.
   - [NEW FEATURE](https://github.com/RetroPie/EmulationStation/pull/101): Added ability to theme the system carousel
-- 2.1.5
+- 2.1.5 (RetroPie 4.2)
   - [ENHANCEMENT](https://github.com/RetroPie/EmulationStation/pull/93): Fix initial text positioning and improve keyboard handling in TextEditComponent
   - [ENHANCEMENT](https://github.com/RetroPie/EmulationStation/pull/102): Added maxSize support for videos.
   - [ENHANCEMENT](https://github.com/RetroPie/EmulationStation/pull/94): Video view will no longer activate if the current theme does not support it.
