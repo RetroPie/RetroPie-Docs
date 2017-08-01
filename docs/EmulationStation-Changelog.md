@@ -1,6 +1,9 @@
 This page is a list of all of the changelogs for each version of EmulationStation. For a complete list of all commits to the source code see [here](https://github.com/RetroPie/EmulationStation/commits/master):
 
 - Latest from Source
+  - [BUGFIX](https://github.com/RetroPie/EmulationStation/pull/192): Fixed default font sizes when running in vertical orientation.
+- 2.5.0
+  - [NEW FEATURE](https://github.com/RetroPie/EmulationStation/pull/183): Added option to hide *nux hidden files.
   - [NEW FEATURE](https://github.com/RetroPie/EmulationStation/pull/172): Implemented Power Saver feature.
 - 2.4.1
   - [BUGFIX](https://github.com/RetroPie/EmulationStation/pull/180): Fixed bug with random game selection.
