@@ -1113,11 +1113,12 @@ Next we want to theme the new elements that video view adds.
 </view>
 
 <view name="video">
-    <image name="md_video">
+    <video name="md_video">
         <origin>0.5 0.5</origin>
         <pos>0.545 0.39</pos>
         <maxSize>0.33 0.46</maxSize>
-    </image>
+        <showSnapshotNoVideo>true</showSnapshotNoVideo>
+    </video>
     <image name="md_marquee">
         <origin>0.5 0.5</origin>
         <pos>0.545 0.11</pos>
