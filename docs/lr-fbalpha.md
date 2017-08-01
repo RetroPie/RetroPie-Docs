@@ -1,6 +1,6 @@
 **Please check [[FinalBurn-Alpha]] for for basic information about controls and managing ROMs - this page is for specific information about the lr-fbalpha emulator's features.**
 
-lr-fbalpha is a popular choice for the Raspberry Pi 2 and up, as it supports the latest FBA romset (v0.2.97.40), and a broad set of features. FBA also should always outperform MAME in the games they both support, as it is tailored for speed, rather than accuracy. Also, it is a libretro core, so enjoys all the benefits of that: centralised controller configurations, many customisation options, netplay, shader/overlay support, etc.
+lr-fbalpha is a popular choice for the Raspberry Pi 2 and up, as it supports the latest FBA romset (v0.2.97.42), and a broad set of features. FBA also should always outperform MAME in the games they both support, as it is tailored for speed, rather than accuracy. Also, it is a libretro core, so enjoys all the benefits of that: centralised controller configurations, many customisation options, netplay, shader/overlay support, etc.
 
 ## System menu
 
