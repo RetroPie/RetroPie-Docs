@@ -174,8 +174,10 @@ pages:
     - Scraper: Scraper.md
     - Themes: Themes.md
     - Creating Your Own EmulationStation Theme: Creating-Your-Own-EmulationStation-Theme.md
+    - Advanced EmulationStation Theming: EmulationStation-Advanced-Theming.md
     - Add a New System in EmulationStation: Add-a-New-System-in-EmulationStation.md
     - Child friendly EmulationStation: Child-friendly-EmulationStation.md
+    - EmulationStation Changelog: EmulationStation-Changelog.md
 - Platforms:
     - Raspbian: Manual-Installation.md
     - Debian/Ubuntu: Debian.md
