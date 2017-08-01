@@ -138,7 +138,7 @@ In retropie setup script>>Configuration / tools>>autostart
 
 ### How do I remove the black borders?
 
-See [[Overscan]]
+See [Overscan](Overscan)
 
 ### How do I change which buttons to press to exit an emulator with a controller?
 
