@@ -116,6 +116,7 @@ sudo reboot
 12. Install the RetroPie Setup Script (logged in as NameOfYourChoice)
 ```
 cd
+sudo apt install git
 git clone --depth=1 https://github.com/RetroPie/RetroPie-Setup.git
 ```
 13. Run the Setup Script:
