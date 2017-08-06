@@ -89,7 +89,7 @@ To get DOPA working in the RetroPie Quake ports, create a directory at:
 /home/pi/RetroPie/roms/ports/quake/dopa/
 ~~~
 
-Copy the DOPA `pak0.pak` file into this directory, so you have:
+Place the data file at:
 
 ~~~
 /home/pi/RetroPie/roms/ports/quake/dopa/pak0.pak
@@ -97,28 +97,46 @@ Copy the DOPA `pak0.pak` file into this directory, so you have:
 
 Reinstall the Quake port from the Setup Script, and a new option **Quake Episode 5 (dopa)** will be created.
 
+### Soundtrack Files
+
+The CD audio from the base game and mission packs can be used if they are ripped into MP3 or OGG format files and placed into a subfolder named `music` of the relevant folder (`id1`, `dopa` or `rogue`). The ripped CD tracks must be named `trackXX.ogg` or `trackXX.mp3`, corresponding to the original track index of the CD for each song. Considering that the first track is always the data track, the first audio track will always begin with track 02, which should be reflected in the filename of the ripped audio files.
+
+For more information refer to [this guide](https://steamcommunity.com/sharedfiles/filedetails/?id=119489135) and the directory structure below.
+
 ### Directory structure, an overview
 
 The files `s0.sav` up to `s11.sav` represents structure of savegames. 
 
 ~~~
-id1
+id1/
 ├── pak0.pak ## shareware data
 ├── pak1.pak ## registered data
 ├── s0.sav
 ├── s1.sav
+├── music/
+│   ├── track02.ogg ## or .mp3
+│   ├── ...
+│   └── track11.ogg
 │
-hipnotic
+hipnotic/
 ├── pak0.pak
 ├── s0.sav
 ├── s1.sav
+├── music/
+│   ├── track02.ogg
+│   ├── ...
+│   └── track09.ogg
 │
-rogue
+rogue/
 ├── pak0.pak
 ├── s0.sav
 ├── s1.sav
+├── music/
+│   ├── track02.ogg
+│   ├── ...
+│   └── track09.ogg
 │
-dopa
+dopa/
 ├── pak0.pak
 ├── s0.sav
 └── s1.sav
