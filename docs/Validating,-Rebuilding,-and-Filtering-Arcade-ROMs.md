@@ -44,9 +44,9 @@ Popular ROM verification tools include:
 * [clrmamepro](http://www.emulab.it) (OSX)
 * [romcenter](http://romcenter.com/) (Windows)
 * [Romulus](http://romulus.net63.net/) (Windows)
-* [RomVault](http://www.romvault.com/) (Windows)
+* [RomVault](http://www.romvault.com/) (Windows & Linux)
 
-All of the Windows tools can be run on Linux (x86) using [Wine](https://www.winehq.org/). **The remainder of this section will focus on clrmamepro for Windows, one of the most popular tools.**
+All of the Windows tools can be run on Linux (x86) using [Wine](https://www.winehq.org/). RomVault can be run natively on Linux using Mono. **The remainder of this section will focus on clrmamepro for Windows, one of the most popular tools.**
 
 ## Video Tutorial
 
