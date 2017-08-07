@@ -195,7 +195,7 @@ There is a complex mathematical relationship between the clocks for the GPU core
 
 You are better to just set `core_freq` and `gpu_freq` to the same thing and don't worry about it. The individual components only get faster when they are used anyway.
 
-By setting `avoid_pwm_pll=1` (which negatively affects 3.5mm audio quality) and `force_turbo=1` (which voids the warranty) you can overclock the individual GPU components with the parameters:
+By setting `avoid_pwm_pll=1` (which negatively affects 3.5mm audio quality) you can overclock the individual GPU components with the parameters:
 
 * `v3d_freq` - speed of OpenGL 3D graphics processor
 * `isp_freq` - speed of Image Sensor Pipeline
@@ -284,11 +284,13 @@ The LINPACK benchmark runs a multi-computer CPU-based workload on one computer: 
 
 A test script which runs simple processes in the background then does sdcard I/O is available at: http://elinux.org/RPiconfig#Overclock_stability_test
 
+A very thorough set of tests which exercise many components of the Pi is documented at: https://www.raspberrypi.org/forums/viewtopic.php?p=952371
+
 #### Help! I Overclocked Too Far and Cannot Boot
 
 Place the sdcard in your computer, both Windows and Mac will see the small FAT32 partition which contains `config.txt` which you can edit and change the bad overclock settings.
 
-If you have a USB keyboard attached to your Pi, holding Shift key while powering on tells the GPU core to avoid applying overclock settings until the next boot.
+If you have a USB keyboard attached to your Pi, holding the **Shift** key while powering on tells the GPU core to avoid applying overclock settings until the next boot.
 
 #### What Speeds Can I Expect?
 
@@ -303,7 +305,6 @@ Whilst every individual Pi is differerent, experience shows *most* are able to r
 
 As much as copying someone else's settings simply may not work, people still ask for them, so here are some usually-safe baselines to start from:
 
-Note: On the Raspberry Pi 2/3 you have the option of a [additional 16MB of RAM](https://www.raspberrypi.org/forums/viewtopic.php?f=29&t=180420)
 #### Raspberry Pi 1
 
 ~~~
@@ -376,7 +377,7 @@ The currently applied `config.txt` parameters which differ from default can be q
 vcgencmd get_config int | egrep "(arm|core|gpu|sdram)_freq|over_volt"
 ~~~
 
-The current frequency of the components (remember they only increase speed under load) can be queried with:
+The current frequency of the components can be queried with (remember they only increase speed under load unless using `force_turbo`):
 
 ~~~
 for src in arm core h264 isp v3d; do echo -e "$src:\t$(vcgencmd measure_clock $src)"; done
@@ -463,3 +464,4 @@ For example, setting 100MHz on a Pi 3 results in 100MHz, but setting 99MHz actua
 
 * http://www.elinux.org/RPI_vcgencmd_usage
 * https://github.com/nezticle/RaspberryPi-BuildRoot/wiki/VideoCore-Tools
+* [Extra 16M memory on Pi2/Pi3](https://www.raspberrypi.org/forums/viewtopic.php?f=29&t=180420)
