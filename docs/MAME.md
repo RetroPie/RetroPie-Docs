@@ -157,7 +157,7 @@ lr-mame2010 utilises [RetroArch control configurations](RetroArch-Configuration)
 
 ---
 ### lr-mame2014 (MAME 2014)
-[Visit mame2014-libretro on github](https://github.com/libretro/mame2010-libretro)
+[Visit mame2014-libretro on github](https://github.com/libretro/mame2014-libretro)
 **Note: This emulator is considered 'optional' in RetroPie and has limited functionality. It requires more processing power than earlier MAME versions and will not run as many games at full speed on rPi hardware.**
 
 ```shell
