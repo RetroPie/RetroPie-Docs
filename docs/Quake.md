@@ -97,9 +97,11 @@ Place the data file at:
 
 Reinstall the Quake port from the Setup Script, and a new option **Quake Episode 5 (dopa)** will be created.
 
-### Soundtrack Files
+### Soundtrack Files 
 
-The CD audio from the base game and mission packs can be used if they are ripped into MP3 or OGG format files and placed into a subfolder named `music` of the relevant folder (`id1`, `dopa` or `rogue`). The ripped CD tracks must be named `trackXX.ogg` or `trackXX.mp3`, corresponding to the original track index of the CD for each song. Considering that the first track is always the data track, the first audio track will always begin with track 02, which should be reflected in the filename of the ripped audio files.
+The `libretro-tyrquake` and `Darkplaces` clients support playback of the original soundtrack from the base game and official mission packs' CDs.
+
+CD audio should be ripped into OGG format files, and placed into a subfolder named `music` of the appropriate folder (`id1`, `hipnotic` or `rogue`). The ripped CD tracks must be named `trackXX.ogg`, corresponding to the original CD track index for each audio track. Considering that the first CD track in all cases is the data track, the first audio track will always begin with track 02, which should be reflected in the filename of the ripped audio files.
 
 For more information refer to [this guide](https://steamcommunity.com/sharedfiles/filedetails/?id=119489135) and the directory structure below.
 
@@ -114,7 +116,7 @@ id1/
 ├── s0.sav
 ├── s1.sav
 ├── music/
-│   ├── track02.ogg ## or .mp3
+│   ├── track02.ogg
 │   ├── ...
 │   └── track11.ogg
 │
