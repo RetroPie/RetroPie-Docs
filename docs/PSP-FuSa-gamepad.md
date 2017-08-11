@@ -30,7 +30,7 @@ For a consistent experience inside and outside Emulationstation includibg in Kod
 # Considerations
 
 * The PSP Go and street are not supported
-* If your PSP is in a good condition this is much better than a generic controller or a 360 gamepad, the buttons are really responsive and the D Pad ideal for retro gaming
-* The pi is capable to fully charge a PSP if it is model 3000 or 2000 but is recommended to use a good quality Mini USB type B, the retractible multi connector cable used in the picture can not charge it
-* The volume buttons does not works in emulationstation or RetroArch
+* If your PSP is in a good condition, this is much better than a generic controller or a 360 gamepad. The buttons are really responsive and the D Pad ideal for retro gaming
+* The pi is capable to fully charge a PSP if it is model 3000 or 2000 but is recommended to use a good quality Mini USB type B. The retractible multi connector cable used in the picture can not charge it
+* The volume buttons do not work in emulationstation or RetroArch
 * You can access to a more in depth configuration in the FuSa's ini files
