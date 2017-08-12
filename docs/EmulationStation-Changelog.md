@@ -1,9 +1,16 @@
 This page is a list of all of the changelogs for each version of EmulationStation. For a complete list of all commits to the source code see [here](https://github.com/RetroPie/EmulationStation/commits/master):
 
 - Latest from Source
+  - [ENHANCEMENT](https://github.com/RetroPie/EmulationStation/pull/195): Theme enhancements
+    - Origin now supported for `<text>`, `<rating>` and `<textlist>` theme elements.
+    - Rotation support added for `<image>`, `<text>`, `<rating>`, and `<video>` theme elements.
+- 2.5.2
+  - [BUGFIX](https://github.com/RetroPie/EmulationStation/pull/202): Fix screensaver not triggering when using PowerSaver
+  - [BUGFIX](https://github.com/RetroPie/EmulationStation/pull/199): Various bugfixes and enhancements for PowerSaver.
+- 2.5.1
   - [BUGFIX](https://github.com/RetroPie/EmulationStation/pull/192): Fixed default font sizes when running in vertical orientation.
 - 2.5.0
-  - [NEW FEATURE](https://github.com/RetroPie/EmulationStation/pull/183): Added option to hide *nux hidden files.
+  - [NEW FEATURE](https://github.com/RetroPie/EmulationStation/pull/183): Added option to hide *nix hidden files.
   - [NEW FEATURE](https://github.com/RetroPie/EmulationStation/pull/172): Implemented Power Saver feature.
 - 2.4.1
   - [BUGFIX](https://github.com/RetroPie/EmulationStation/pull/180): Fixed bug with random game selection.
