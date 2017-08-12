@@ -82,7 +82,7 @@ This page is a list of all of the changelogs for each version of EmulationStatio
 - 2.1.4
   - [BUGFIX](https://github.com/RetroPie/EmulationStation/pull/88): Fix WSOD by loading textures on demand in a separate thread when a user configurable texture memory threshold is reached.
 - 2.1.3
-  - [NEW FEATURE](https://github.com/RetroPie/EmulationStation/pull/): Added ability to disable the splashscreen.
+  - [NEW FEATURE](https://github.com/RetroPie/EmulationStation/pull/83): Added ability to disable the splashscreen.
 - 2.1.2
   - [ENHANCEMENT](https://github.com/RetroPie/EmulationStation/pull/78): Improve Shutdown time by only writing changes to gamelist.xml.
 - 2.1.1
