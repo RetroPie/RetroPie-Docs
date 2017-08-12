@@ -64,20 +64,10 @@ Below is an example implementation of a default theme for [carbon](https://githu
 </theme>
 ```
 
-## Theme Variables
-
-Coming Soon.
-
----
-
 ## System Carousel
 
 Coming Soon.
 
----
-
 ## Adding Video Support
 
 Coming Soon.
-
----
