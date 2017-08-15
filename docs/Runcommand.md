@@ -58,7 +58,7 @@ The launching images can also be used in a per game basis. The image must be pla
 
 **Example:** if you have a launching image for the "Mega Man" NES game and the ROM is named `Mega Man (USA).nes`, you have to name the image file as `RetroPie/roms/nes/images/Mega Man (USA)-launching.png`.
 
-Once these images are installed, the timing to activate the the runcommand menu differs, in that pressing a button will not register successfully until just after the image has disappeared.
+**Once these images are installed, the timing to activate the runcommand menu differs, in that pressing a button will not register successfully until just after the image has disappeared.**
 
 You can get some cool launching images in these forum topics:
 
