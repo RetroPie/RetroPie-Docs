@@ -70,6 +70,8 @@ Ensure you're using your TV's native resolution to prevent any overhead due to u
 
 Enable **Game Mode** in the TV settings for the input used for the Pi. This disables some image processing (smoothing, etc) which introduces latency when playing games.
 
+Certain models of older Vizio TVs (and possibly others) may exhibit input lag if switching over to the Raspberry Pi from a different HDMI source.  Users have discovered that if the TV's HDMI input for the Pi is already selected/activated when the TV is powered on (as opposed to a Blu-ray player, game console, etc.), this input lag can be avoided. [source](https://retropie.org.uk/forum/topic/8552/psa-possible-source-of-controller-input-lag)
+
 ## Overclocking
 
 ### With RetroPie Setup Script
