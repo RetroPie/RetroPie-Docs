@@ -1,6 +1,7 @@
 This page is a list of all of the changelogs for each version of EmulationStation. For a complete list of all commits to the source code see [here](https://github.com/RetroPie/EmulationStation/commits/master):
 
 - Latest from Source
+  - [NEW FEATURE](https://github.com/RetroPie/EmulationStation/pull/210): Custom Game Collections
   - [ENHANCEMENT](https://github.com/RetroPie/EmulationStation/pull/195): Theme enhancements
     - Origin now supported for `<text>`, `<rating>` and `<textlist>` theme elements.
     - Rotation support added for `<image>`, `<text>`, `<rating>`, and `<video>` theme elements.
