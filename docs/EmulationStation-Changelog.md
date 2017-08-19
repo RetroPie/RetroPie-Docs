@@ -3,7 +3,7 @@ This page is a list of all of the changelogs for each version of EmulationStatio
 - Latest from Source
   - [ENHANCEMENT](https://github.com/RetroPie/EmulationStation/pull/212): Carousel enhancements
     - Size and opacity of logos are now animated and transition smoothly when scrolling.
-    - Origin now supported for `<carousel>` theme elements.
+    - Origin now supported for `<carousel>` theme element.
     - Support for new vertical wheel carousel type.
     - BUGFIX: Text logos now increase in size properly.
     - BUGFIX: Background extras and logos no longer bleed into gamelists when using vertical carousel.
