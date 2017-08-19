@@ -1,6 +1,13 @@
 This page is a list of all of the changelogs for each version of EmulationStation. For a complete list of all commits to the source code see [here](https://github.com/RetroPie/EmulationStation/commits/master):
 
 - Latest from Source
+  - [ENHANCEMENT](https://github.com/RetroPie/EmulationStation/pull/212): Carousel enhancements
+    - Size and opacity of logos are now animated and transition smoothly when scrolling.
+    - Origin now supported for `<carousel>` theme elements.
+    - Support for new vertical wheel carousel type.
+    - BUGFIX: Text logos now increase in size properly.
+    - BUGFIX: Background extras and logos no longer bleed into gamelists when using vertical carousel.
+- 2.6.0
   - [NEW FEATURE](https://github.com/RetroPie/EmulationStation/pull/210): Custom Game Collections
   - [ENHANCEMENT](https://github.com/RetroPie/EmulationStation/pull/195): Theme enhancements
     - Origin now supported for `<text>`, `<rating>` and `<textlist>` theme elements.
