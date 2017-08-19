@@ -153,7 +153,7 @@ txHiresFullAlphaChannel = True
 
 # Save texture cache to hard disk.
 txSaveCache = True
-This is currently set to True Investigating if setting to false will overload ram or not If texture cache is 500 by default is there enough overhead on ram to go with this setting.   
+# This is currently set to True Investigating if setting to false will overload ram or not If texture cache is 500 by default is there enough overhead on ram to go with this setting.   
 
 Rice Settings
 # Use a faster algorithm to speed up texture loading and CRC computation
@@ -161,16 +161,16 @@ FastTextureLoading = True
 
 # Enable this option to have better render-to-texture quality
 DoubleSizeForSmallTxtrBuf = True
-A quality improver  need to verify any performance hit is negligible
+# A quality improver - need to verify any performance hit is negligible
 
 # N64 Texture Memory Full Emulation (may fix some games, may break others)
 FullTMEMEmulation = False
-What games does this fix?  Which ones does it break?
+# What games does this fix?  Which ones does it break?
 
 # Widescreen hack
 WideScreenHack = True
 
-Fix aspect ratio?
+# Fix aspect ratio?
 ```
 
 
