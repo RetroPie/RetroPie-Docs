@@ -18,9 +18,9 @@ This tutorial shows how to get one to four wiimotes (the controller of Nintendo 
 
 1. For the following I assume that RetroPi was installed and is running with other controls (like keyboard, joystick etc.). I followed the excellent tutorial http://supernintendopi.wordpress.com/2013/01/23/an-a-to-z-beginners-guide-to-installing-retropie-on-a-raspberry-pi/  for this (using the “RetroPie Project SD Card Image”).
 
-2. You have a blue-tooth dongle (sometimes called blue-tooth adapter). For a list of dongles known to work with Raspberry Pi see http://elinux.org/RPi_USB_Bluetooth_adapters#Working_Bluetooth_adapters ).
+2. You have a Raspberry Pi 3 or for Raspberry Pi 2 and below, you need a Bluetooth dongle (sometimes called Bluetooth adapter). For a list of dongles known to work with Raspberry Pi see http://elinux.org/RPi_USB_Bluetooth_adapters#Working_Bluetooth_adapters ).
 
-I can confirm putting the bluetooth adapter into a USB 2.0 powered hub works. Your results may vary though depending on your hardware.      
+I can confirm putting the Bluetooth adapter into a USB 2.0 powered hub works. Your results may vary though depending on your hardware.      
 
 Its important to update RetroPie to the latest version to avoid problems later down in the tutorial. Type the following into the command line:
 
