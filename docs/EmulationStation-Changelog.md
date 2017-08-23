@@ -1,6 +1,8 @@
 This page is a list of all of the changelogs for each version of EmulationStation. For a complete list of all commits to the source code see [here](https://github.com/RetroPie/EmulationStation/commits/master):
 
 - Latest from Source
+  - [BUGFIX](https://github.com/RetroPie/EmulationStation/pull/221): Fix blank screen occurring when exit game animation is interrupted by key press.
+  - [ENHANCEMENT](https://github.com/RetroPie/EmulationStation/pull/220): Volume setting now controls video volume when using OMX player.
   - [ENHANCEMENT](https://github.com/RetroPie/EmulationStation/pull/212): Carousel enhancements
     - Size and opacity of logos are now animated and transition smoothly when scrolling.
     - Origin now supported for `<carousel>` theme element.
