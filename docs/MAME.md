@@ -27,11 +27,11 @@ This page is a resource for additional details on RetroPie's MAME emulators incl
 
 ## Arcade ROM paths
 
-In RetroPie 3.0.0 some emulators share directories, so you need to choose which FBA, NeoGeo and mame4all version you want. So you can have one zipped ROMset for each of these (mame4all, FBA, NeoGeo, advmame) To avoid having several EmulationStation menus for different arcade emulators, all arcade-based ROMs can be placed in the `arcade` ROM folder, but you will have to specify which emulator each will use from the [Runcommand Menu](runcommand)
+Three of the arcade ROM paths are shared directories which are used by more than one emulator: `arcade`, `mame-libretro`, and `mame-advmame`. In order to successfully load zipped ROM sets in these locations you must specify the arcade emulator version which matches your ROMs.
+
+To avoid having several menus for different arcade emulators, all arcade-based ROMs can be placed in the `arcade` ROM folder, but you will have to specify which emulator each zipped ROM set will use from the [Runcommand Menu](runcommand)
 
 ## Emulators
-
-Note: These details are as per the default installed binaries on the RetroPie 3.0.0 image.
 
 ---
 ### mame4all-pi
