@@ -20,8 +20,9 @@ This page is a resource for additional details on RetroPie's Final Burn Alpha em
 
 ## Arcade ROM paths
 
-In 3.0.0 some emulators share directories, so you need to choose which FBA, NeoGeo and mame4all version you want.
-So you can have 1 romset for each of these (mame4all, FBA, NeoGeo, advmame) To avoid having several EmulationStation menus for different arcade emulators, all arcade-based ROMs can be placed in the `arcade` ROM folder, but you will have to specify which emulator each will use from the [Runcommand Menu](runcommand)
+Five of the available arcade ROM paths in RetroPie are shared directories which are used by more than one emulator: `arcade`, `mame-libretro`, `mame-advmame`, `fba`, and `neogeo`. In order to successfully load zipped ROM sets in these locations you must specify the arcade emulator version which matches your ROMs.
+
+To avoid having several menus for different arcade emulators, all arcade-based ROMs can be placed in the `arcade` ROM folder, but you will have to specify which emulator each zipped ROM set will use from the [Runcommand Menu](runcommand).
 
 ## Emulators
 
