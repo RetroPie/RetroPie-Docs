@@ -6,7 +6,7 @@ lr-mame2003 is a popular choice for the Raspberry Pi 2 and up, as it combines a 
 
 ## MAME menu
 
-To access the MAME internal menu, press the 'TAB' key.
+To access the MAME internal menu, press the 'TAB' key or R2.
 
 Whilst lr-mame2003 is a libretro emulator and benefits from automatic controller configuration, sometimes you may still want to rebind how it internally deals with inputs. For example, the default control setup might make sense in one game, but in another they don't. In which case, you can use the 'Input (this game)' option to rebind keys for a single game, generating a .cfg file in:
 ```
