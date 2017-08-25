@@ -64,7 +64,7 @@ The md5 checksums for supported game data are as follow:
 	a08905e2b0d299b3fad259f90c0efb1a  vgahead.wl6
 	a6d901dfb455dfac96db5e4705837cdb  vswap.wl6
 
-**Steam (GT/ID/Activision)**
+**Steam/GOG.com (GT/ID/Activision/Bethesda)**
 
 	a41af25a2f193e7d4afbcc4301b3d1ce  audiohed.wl6
 	2385b488b18f8721633e5b2bdf054853  audiot.wl6
