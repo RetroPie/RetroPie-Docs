@@ -1,6 +1,8 @@
 This page is a list of all of the changelogs for each version of EmulationStation. For a complete list of all commits to the source code see [here](https://github.com/RetroPie/EmulationStation/commits/master):
 
 - Latest from Source
+  - [BUGFIX](https://github.com/RetroPie/EmulationStation/pull/225): System Carousel now properly renders when only one system is present.
+  - [ENHANCEMENT](https://github.com/RetroPie/EmulationStation/pull/222): Swap time for Video Screensaver now configurable in settings menu.
   - [BUGFIX](https://github.com/RetroPie/EmulationStation/pull/221): Fix blank screen occurring when exit game animation is interrupted by key press.
   - [ENHANCEMENT](https://github.com/RetroPie/EmulationStation/pull/220): Volume setting now controls video volume when using OMX player.
   - [ENHANCEMENT](https://github.com/RetroPie/EmulationStation/pull/212): Carousel enhancements
