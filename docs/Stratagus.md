@@ -34,7 +34,7 @@ This guide shows the method for installing on windows. Download and install the 
 
 Make sure you have the original CD install files. Install StarCraft and take note of the path where it is installed. Copy the `INSTALL.EXE` from the CD to where the game was installed and rename it to `starcraft.mpq`.
 
-Additionally, you could download the StarCraft: Remastered installer from Blizzard and install the game from it, as it will provide the files you need, usually to "C:\Program Files (x86)\StarCraft". 
+Alternatively, you could download the StarCraft: Remastered installer from Blizzard and install the game from it, as it will provide the files you need, usually to "C:\Program Files (x86)\StarCraft". 
 
 Start up Stargus and select `starcraft.mpq` and it will begin extracting the assets needed to run on Stratagus. They will be extracted to:
 
