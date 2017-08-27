@@ -72,6 +72,10 @@ Enable **Game Mode** in the TV settings for the input used for the Pi. This disa
 
 Certain models of older Vizio TVs (and possibly others) may exhibit input lag if switching over to the Raspberry Pi from a different HDMI source.  Users have discovered that if the TV's HDMI input for the Pi is already selected/activated when the TV is powered on (as opposed to a Blu-ray player, game console, etc.), this input lag can be avoided. [source](https://retropie.org.uk/forum/topic/8552/psa-possible-source-of-controller-input-lag)
 
+### Performance Governor
+
+Try to set the performance governor in the "Run Command Configuration" menu under "CPU configuration". This will enure that the Raspberry Pi is set to the highest possible clock speed.
+
 ## Overclocking
 
 ### With RetroPie Setup Script
