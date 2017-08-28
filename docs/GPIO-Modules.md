@@ -154,6 +154,9 @@ and 3.3V (P1-01) if you use it with PSX/PS2 pad.
 * A: These pads use an asynchronous communication prototol, and the bitbanging done by the driver assumes a fixed CPU frequency within certain limits. Power-saving features may break the operation, and should be disabled when using N64/GC pads. You can check whether frequency scaling is active by looking at /sys/devices/system/cpu/cpu0/cpufreq/scaling_* -nodes. It can be disabled by selecting "performance"-governor - see [this](https://wiki.debian.org/HowTo/CpuFrequencyScaling) page for more info.
 
 ## Version history
+### 1.3 (27.8.2017)
+* Fixed build on recent kernels
+
 ### 1.2 (27.12.2015)
 * Optimized PSX driver code
 
@@ -290,6 +293,9 @@ Related [thread](http://www.raspberrypi.org/phpBB3/viewtopic.php?f=78&t=15787) i
 
 
 ## Version history
+### 1.1 (27.8.2017)
+* Fixed build on recent kernels
+
 ### 1.0 (27.2.2015)
 * Added support for RPi2
 * Fixed issues with 3rd-party MD pads
