@@ -159,6 +159,7 @@
 * [Xin-Mo Driver](Xin-Mo-Controller)
 * [GPIO Controller Modules](GPIO-Modules)
 * [Spinners and Trackballs](Spinners-and-Trackballs)
+* [X-Arcade](X-Arcade)
 * [Xiaomi Gamepad](Xiaomi-Controller)
 * [Universal Controller Calibration & Mapping Using xboxdrv](https://github.com/RetroPie/RetroPie-Setup/wiki/Universal-Controller-Calibration-&-Mapping-Using-xboxdrv)
 
