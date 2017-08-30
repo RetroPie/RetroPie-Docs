@@ -10,6 +10,7 @@ _The Oric was a series of home computers originally released by the Tangerine Co
 | [oricutron](https://github.com/pete-gordon/oricutron) | oric  | .dsk .tap | -| hardcoded |
 
 ## Emulator: [oricutron](https://github.com/pete-gordon/oricutron)
+This emulator must be installed from the experimental section in RetroPie Setup.
 
 ## ROMS
 Accepted File Extensions: **.dsk .tap**
