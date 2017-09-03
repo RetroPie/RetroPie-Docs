@@ -1,6 +1,10 @@
 This page is a list of all of the changelogs for each version of EmulationStation. For a complete list of all commits to the source code see [here](https://github.com/RetroPie/EmulationStation/commits/master):
 
 - Latest from Source
+- 2.6.2
+  - [ENHANCEMENT](https://github.com/RetroPie/EmulationStation/pull/226): Adjust menu widths to be dependent on lesser of two dimensions.
+  - [BUGFIX](https://github.com/RetroPie/EmulationStation/pull/226): Fix bug causing crash when entering gamelist on some platforms.
+- 2.6.1
   - [BUGFIX](https://github.com/RetroPie/EmulationStation/pull/225): System Carousel now properly renders when only one system is present.
   - [ENHANCEMENT](https://github.com/RetroPie/EmulationStation/pull/222): Swap time for Video Screensaver now configurable in settings menu.
   - [BUGFIX](https://github.com/RetroPie/EmulationStation/pull/221): Fix blank screen occurring when exit game animation is interrupted by key press.
