@@ -43,6 +43,21 @@ sudo dpkg-reconfigure x11-common
 ```
 Then choose "anybody" from the provided menu options. This will allow AGS to load from within EmulationStation.
 
+## Editing es_systems.cfg
+After installing xinit and configuring the .cfg file, you do have to edit the es_systems.cfg file to make AGS work.
+
+To do this `sudo nano` into:
+```
+sudo nano /etc/emulationstation/es_systems.cfg
+```
+
+And change the `<extension> </extension>` portion located under `<name>ags</name>` to:
+```
+<extension>.exe</extension>
+```
+
+Save, exit, and restart emulation station and Adventure Game Studio should show up on your RetroPie dashboard.
+
 ### Video Guide  
 
 <a href="https://www.youtube.com/watch?v=cH_784XOsiM" target="_blank"><img src="https://i.ytimg.com/vi_webp/cH_784XOsiM/mqdefault.webp" 
