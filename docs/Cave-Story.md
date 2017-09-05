@@ -25,7 +25,7 @@ nxengine-libretro utilises Retroarch configurations
 
 Add custom retroarch controls to the retroarch.cfg file in
 ```shell
-/opt/retropie/configs/cavestory/retroarch.cfg
+/opt/retropie/configs/ports/cavestory/retroarch.cfg
 ```
 For more information on custom RetroArch controls see: [RetroArch Configuration](https://github.com/RetroPie/RetroPie-Setup/wiki/RetroArch-Configuration)
 
