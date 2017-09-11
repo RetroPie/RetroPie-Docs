@@ -658,36 +658,16 @@ The following was taken from the bluetooth page on the ```archlinux wiki```. You
 Pairing a device from the shell is one of the simplest and most reliable options. The exact procedure depends on the devices involved and their input functionality. What follows is a general outline of pairing a device using ```/usr/bin/bluetoothctl```:
 * Start the ```bluetoothctl``` interactive command. There one can input ```help``` to get a list of available commands.
 * Turn the power to the controller on by entering ```power on```. It is off by default.
-* Enter device discovery mode with ```scan on``` command if device is not yet on the list.
 * Turn the agent on with ```agent on```.
+* Enter device discovery mode with ```scan on``` command if device is not yet on the list.
+* Now press the red sync button behind the battery cover on the back of the wiimote. (This will also unpair it with your wii.)
 * Enter ```pair MAC Address``` to do the pairing (tab completion works).
 * If using a device without a PIN, one may need to manually trust the device before it can reconnect successfully. Enter ```trust MAC Address``` to do so.
 * Finally, use ```connect MAC_address``` to establish a connection.
-* An example session may look this way:
-
-```shell
-# bluetoothctl 
-[NEW] Controller 00:10:20:30:40:50 pi [default]
-[bluetooth]# agent KeyboardOnly 
-Agent registered
-[bluetooth]# default-agent 
-Default agent request successful
-[bluetooth]# scan on
-Discovery started
-[CHG] Controller 00:10:20:30:40:50 Discovering: yes
-[NEW] Device 00:12:34:56:78:90 myLino
-[CHG] Device 00:12:34:56:78:90 LegacyPairing: yes
-[bluetooth]# pair 00:12:34:56:78:90
-Attempting to pair with 00:12:34:56:78:90
-[CHG] Device 00:12:34:56:78:90 Connected: yes
-[CHG] Device 00:12:34:56:78:90 Connected: no
-[CHG] Device 00:12:34:56:78:90 Connected: yes
-Request PIN code
-[agent] Enter PIN code: 1234
-[CHG] Device 00:12:34:56:78:90 Paired: yes
-Pairing successful
-[CHG] Device 00:12:34:56:78:90 Connected: no
-```
+* Now disconnect with ```disconnect MAC_adress```. The wiimote should turn off.
+* Now press the power button on the wiimote to reconnect. This should work after a reboot of RetroPie.
+* If it didn't work, you may need to ```remove MAC-adress``` and try the whole process again.
+* See also: https://wiki.archlinux.org/index.php/XWiimote#Auto-Reconnect_is_not_working_after_pairing_with_red_sync-button
 
 All we need to do is pair the wiimotes and MoltenGamepad will handle any extra devices such as Classic Controllers, Nunchuck, Wii Balance Board etc.
 
