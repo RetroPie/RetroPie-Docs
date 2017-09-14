@@ -1,4 +1,15 @@
-Installation
+## Installation
+
+Follow the instructions from here: https://github.com/mcobit/retrosmc
+1. Download and run install-retrosmc.sh
+2. Select "install retrosmc", select "Basic installation"
+3. Go outside, grab a drink, this will take ages.
+4. Reboot, re-run install-retrosmc.sh
+5. Select "install launcher addon"
+6. Reboot, go to kodi settings->addons, activate Retropi addon.
+7. Launch Retropi in Programs menu. Done!
+
+## Install RetroPie to USB drive:
 
 If you're like me you have a tiny SDCard in your RPi running OSMC, but now you want to play some roms, if you try to install full RetroPie you will run out of space and OSMC will panic and die with no space left.
     
