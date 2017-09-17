@@ -289,7 +289,9 @@ http://blog.petrockblock.com/forums/topic/fba-retroarch-core-coin-controls/#post
 
 ### How can I increase the console font size?
 
-Execute the following command and follow the instructions on screen:
+Recent versions of the RetroPie-Setup script include a Console Font script module at **Configuration / tools -> consolefont**. 
+
+Alternatively, you can execute the following command and follow the instructions on screen:
 
 ```
 sudo dpkg-reconfigure console-setup
