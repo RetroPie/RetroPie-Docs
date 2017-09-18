@@ -4,6 +4,10 @@ _Duke Nukem 3D is a First Person Shooter game developed by 3D Realms in 1996._
 
 ## Port: [Eduke32](http://www.eduke32.com/)
 
+## Basic Installation
+
+The shareware port can be installed under RetroPie setup. Go to **Manage packages** > **Manage optional packages** and select **eduke32**. You can install from binary or from source.
+
 ## ROMs
 
 Shareware versions of **duke3d.grp** and **duke.rts** are provided via symlinks in
