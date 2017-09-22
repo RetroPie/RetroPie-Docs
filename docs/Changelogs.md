@@ -2,6 +2,47 @@
 
 This page is a list of all of the changelogs for each version of RetroPie. For a complete list of all commits to the source code see [here:](https://github.com/petrockblog/RetroPie-Setup/commits/master)  
 
+### Version 4.3: (September 21, 2017)
+
+Changes since 4.2
+
+* Many updates to Emulation Station including:
+* Collections support including Favourite, All, Recently Played and custom collections.
+  * Video and Image Screensaver support.
+  * Power saving modes.
+  * Many theming fixes and improvements.
+  * Configuration of RetroArch hotkey enable button.
+  * Allow using OMXPlayer for video playback on the RPI.
+  * Many other fixes and improvements. Full changelog can be found here – https://retropie.org.uk/docs/EmulationStation-Changelog/
+* Added basic Odroid-XU3/4 support.
+* RetroArch updated to v1.6.7. Include minimal retroarch assets for the xmb interface by default.
+* AdvanceMAME updated to v3.5
+* fuse updated to v1.4.0
+* zesarux updated to v5.0
+* lr-fbalpha updated to 0.2.97.42
+* lr-imame4all renamed to lr-imame2000 to match upstream name.
+* lr-bluemsx updated to add Colecovision support.
+* lr-mame2003 updated with fixed audio for the Mortal Kombat series.
+* Added SDL1 version of scummvm – scummvm-sdl1 – for those with joypad and MT32 issues with the standard SDL2 version.
+* gamecon_gpio_rpi and db9_gpio_rpi updated for Kernel 4.9 compatibility.
+* Workaround for using PCSX2 on 64bit without our custom SDL library.
+* Updates/improvements to mupen64plus and the GLideN64 plugin.
+* Improved controller button mapping in the RetroPie-Setup menus.
+* esthemes – Many new themes available to install from esthemes configuration. Ability to update all installed themes.
+* Runcommand – user menu support.
+* usbromservice – fix BIOS and configuration folders not copying.
+* Enabled some additional packages on Odroid boards – hatari, zdoom, openblok, alephone and lr-ppsspp.
+* Bluetooth configuration – improved interoperability with the ps3 controller driver.
+* New configuration tool to change terminal font size
+* New packages added to experimental section:
+  * pegasus-fe – Pegasus Frontend – new launcher/frontend in development.
+  * lr-vice (C64 Emulator).
+  * srb2 – Sonic Robo Blast 2 port.
+  * cdogs-sdl – C-Dogs SDL – Classic overhead run-and-gun game.
+  * lr-px68k (x68000 emulator).
+* Many other fixes and improvements.
+
+
 ### Version 4.2: (March 19, 2017)
 
 Changes since 4.1
