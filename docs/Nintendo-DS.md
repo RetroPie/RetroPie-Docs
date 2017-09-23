@@ -61,7 +61,7 @@ Place your DS ROMs in
 
 ### lr-desmume Controls
 
-Add custom controls using the DraStic GUI, or by editing
+Add custom controls using the DraStic GUI (by pressing RIGHT ANALOG RIGHT), or by editing
 ```
 /opt/retropie/configs/nds/drastic/config/drastic.cfg
 ```
