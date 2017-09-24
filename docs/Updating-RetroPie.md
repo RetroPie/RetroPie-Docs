@@ -87,13 +87,19 @@ You can create an sd image of your current sd card with [win32diskimager](http:/
 ![win32diskimager](https://cloud.githubusercontent.com/assets/10035308/10266156/79baadf6-6a0d-11e5-9c98-62211328c68a.png)
 
 - Click **read** to create your backup. (after you've backed this image up if you screw something up later and want to start from this image you can just click write and it will write this sd image back to your sd card.)
-- note if you have a 64GB sd card it will create a 64GB backup file even if you don't have it completely filled up. If you don't want a file that large see the next option.   
+- note if you have a 64GB sd card it will create a 64GB backup file even if you don't have it completely filled up. If you don't want a file that large see the next option. 
+
+Note: images created this way can only be written to a microSD card of the EXACT same size or bigger.  As an example you may not be able to write an image of a 64GB microSD onto another 64GB card. That's because actual real usable space may vary by manufacturer and in some cases even with the same manufacturer. To avoid this issue you can use option 3.
 
 ## Making a Backup (Option 2)
 
 if you don't want to create a sd image you can just back up your bios, roms, and configuration files from the samba shares
 
 ![samba](https://cloud.githubusercontent.com/assets/10035308/12865893/d2eab264-cc77-11e5-9ec6-003e13322a5a.png)
+
+## Making a Backup / transferring to another SD (Option 3)
+You can use Rpi-clone, a shell script that runs directly on your Raspberry Pi. Requires a USB microSD card reader.
+Detailed instructions [here](https://github.com/billw2/rpi-clone).
 
 ## Making a Backup (OS X)
 
