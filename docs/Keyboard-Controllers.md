@@ -1,4 +1,4 @@
-Using a keyboard as a controller for emulation can be very easy, or it can be challenging and complex depending on your specific hardware and design needs. In principle, a keyboard should be the simplest, most traditional interface to understand, but in practice, a keyboard is rarely used as an _actual keyboard_ when playing games. Usually, a keyboard interface is wired to arcade buttons, for example, introducing another layer of abstraction to your configuration and additional considerations when you are trying to troubleshoot controls.
+Using a keyboard as a controller for emulation can be very easy, or it can be challenging and complex depending on your specific hardware and design needs. In principle, a keyboard should be the simplest, most traditional interface to understand, but in practice, a keyboard is rarely used as an _actual keyboard_ when playing games. Usually, a keyboard interface is wired to arcade buttons which introduces another layer of abstraction to your configuration and additional considerations when you are trying to troubleshoot controls.
 
 ## Types of Keyboard Interfaces
 ### USB Keyboard
