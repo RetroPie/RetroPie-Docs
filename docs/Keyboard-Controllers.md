@@ -2,7 +2,7 @@ Using a keyboard as a controller for emulation can be very easy, or it can be ch
 
 ## Types of Keyboard Interfaces
 ### USB Keyboard
-The most basic use of a keyboard is to just plug any PC USB keyboard and start using it as-is. If you were only planning to emulate a computer--like maybe an Apple II for example--this would be sufficient. At minimum, you would want to hold down a key after the first boot into Emulation Station in order to setup navigation capabilities (arrows for up, down, etc.). 
+The most basic use of a keyboard is to just connect any PC USB keyboard and start using it as-is. If you were only planning to emulate a computer--like maybe an Apple II for example--this would be sufficient. At minimum, you would want to hold down a key after the first boot into Emulation Station in order to setup navigation capabilities (arrows for up, down, etc.). 
 ### USB Keyboard Controller Board
 Dedicated controllers like the Ultimarc IPAC series and similar USB interfaces are essentially robust keyboards without keys. Instead, they have screw-down terminals to which you wire your own buttons. The terminals typically have labels for the buttons/switches and player numbers that should be connected (Coin1, Start1, UP1, DOWN1, LEFT1, etc.). These usually correspond the common key mapping used in MAME. Yet, triggering a button actually just sends a particular keystroke to the computer. Note that some boards have a gamepad mode (or firmware) instead of keyboard mode.
 ### GPIO (virtual) Keyboard Driver
