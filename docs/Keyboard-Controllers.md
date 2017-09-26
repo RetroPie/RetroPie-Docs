@@ -56,9 +56,7 @@ START 2		2
 2 B			ESC
 ```
 ### Emulation Station and RetroArch
-When you first boot into Emulation Station, it may not detect any gamepads/joysticks, but you can press a wired pushbutton and it will detect the keyboard. Simply proceed through the menu configuring your controls as described here
-https://github.com/RetroPie/RetroPie-Setup/wiki/First-Installation#controller-configurations
-in the First Installation documentation. It is ultimately up to you to decide which of your wired buttons will correspond to the virtual gamepad inputs used by the different emulators. Just be aware of the layers of abstraction. For example, you may be configuring "button A" by pressing a pushbutton wired to IPAC Player1_SW1, which will correspond to LEFT_CONTROL on a keyboard. Logically speaking, you are mapping LEFT_CONTROL to "button A". Understanding how your keyboard interface works, how you have it wired to your buttons, and how pushing buttons actually sends keystrokes can be helpful later on if you decide to deviate from your initial mapping for one particular emulator, or for a single ROM.
+When you first boot into Emulation Station, it may not detect any gamepads/joysticks, but you can press a wired pushbutton and it will detect the keyboard. Simply proceed through the menu configuring your controls as described in the [First Installation documentation](https://github.com/RetroPie/RetroPie-Setup/wiki/First-Installation#controller-configurations). It is ultimately up to you to decide which of your wired buttons will correspond to the virtual gamepad inputs used by the different emulators. Just be aware of the layers of abstraction. For example, you may be configuring "button A" by pressing a pushbutton wired to IPAC Player1_SW1, which will correspond to LEFT_CONTROL on a keyboard. Logically speaking, you are mapping LEFT_CONTROL to "button A". Understanding how your keyboard interface works, how you have it wired to your buttons, and how pushing buttons actually sends keystrokes can be helpful later on if you decide to deviate from your initial mapping for one particular emulator, or for a single ROM.
 
 Here is an example of a possible RetroArch configuration (a section of the `opt/retropie/configs/all/retroarch.cfg`) which can also be manually edited:
 ```
@@ -75,9 +73,7 @@ input_player1_right = right
 input_player1_up = up
 input_player1_down = down
 ```
-RetroArch's use of these configuration files is described in detail here
-https://github.com/RetroPie/RetroPie-Setup/wiki/RetroArch-Configuration
-with references to gamepad/joystick controllers. The main difference in the configuration files with respect to keyboard controllers is the lack of `_btn` in the mapping. For example, notice how we have
+RetroArch's use of these configuration files is [described in detail here](https://github.com/RetroPie/RetroPie-Setup/wiki/RetroArch-Configuration) with references to gamepad/joystick controllers. The main difference in the configuration files with respect to keyboard controllers is the lack of `_btn` in the mapping. For example, notice how we have
 `input_player1_a = alt`
 for a keyboard input instead of
 `input_player1_a_btn = 1`
