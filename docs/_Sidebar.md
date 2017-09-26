@@ -157,6 +157,7 @@
 * [Wiimote](Wiimote-Controller)
 * [Wii U Pro Controller](Wii-U-Pro-Controller)
 * [Xin-Mo Driver](Xin-Mo-Controller)
+* [Keyboard Controllers](Keyboard Controllers)
 * [GPIO Controller Modules](GPIO-Modules)
 * [Spinners and Trackballs](Spinners-and-Trackballs)
 * [X-Arcade](X-Arcade)
