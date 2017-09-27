@@ -26,7 +26,8 @@ It is important to understand that the IPAC is a highly capable board with sever
 ### Keyboard Mode, DEFAULT KEYS
 Assuming the an IPAC2 is setup in Keyboard Mode using factory-default keys, you can wire your controller to your pushbuttons and joystick switches following the labels on the board. If done correctly, when you plug the IPAC into a USB port, the computer sees a keyboard, and pressing on your wired buttons will trigger keypresses as follows:
 ```
-**Label		Key**
+Label		Key
+------		------
 COIN 1		5	
 COIN 2		6	
 START 1		1	
