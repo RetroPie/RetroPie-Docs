@@ -1,6 +1,8 @@
 This page is a list of all of the changelogs for each version of EmulationStation. For a complete list of all commits to the source code see [here](https://github.com/RetroPie/EmulationStation/commits/master):
 
 - Latest from Source
+  - [BUGFIX](https://github.com/RetroPie/EmulationStation/pull/246): Fix scrolling bug when using Power Saver.
+- 2.6.3 (RetroPie 4.3)
   - [NEW FEATURE](https://github.com/RetroPie/EmulationStation/pull/207): Image slideshow screensaver. 
 - 2.6.2
   - [ENHANCEMENT](https://github.com/RetroPie/EmulationStation/pull/226): Adjust menu widths to be dependent on lesser of two dimensions.
