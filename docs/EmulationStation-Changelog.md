@@ -1,6 +1,8 @@
 This page is a list of all of the changelogs for each version of EmulationStation. For a complete list of all commits to the source code see [here](https://github.com/RetroPie/EmulationStation/commits/master):
 
 - Latest from Source
+  - [NEW FEATURE](https://github.com/RetroPie/EmulationStation/pull/235): Kiosk Mode allows certain menu items.
+- 2.6.4
   - [BUGFIX](https://github.com/RetroPie/EmulationStation/pull/246): Fix scrolling bug when using Power Saver.
 - 2.6.3 (RetroPie 4.3)
   - [NEW FEATURE](https://github.com/RetroPie/EmulationStation/pull/207): Image slideshow screensaver. 
