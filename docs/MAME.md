@@ -49,7 +49,7 @@ Config Dir: /opt/retropie/configs/mame-mame4all
 * CHDs: 0
 * Samples: 35
 
-**MAME 0.37b5 DAT File**: [mame4all-037b5-RetroPie-260.zip](https://drive.google.com/file/d/0B2TMeZ6iEFvHVUNfWHpUZk82bkk/view?usp=sharing)
+**MAME 0.37b5 DAT File**: [mame4all-037b5-RetroPie-260.dat](https://drive.google.com/file/d/0B2TMeZ6iEFvHVUNfWHpUZk82bkk/view?usp=sharing)
 
 **MAME 0.37b5 DAT File**: [mame4all-no-clones-no-neogeo](https://drive.google.com/file/d/0B2TMeZ6iEFvHNm5OYndFUHM3djg/view?usp=sharing) (no clones, no neogeo)
 
