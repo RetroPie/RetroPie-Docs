@@ -51,7 +51,7 @@ Config Dir: /opt/retropie/configs/mame-mame4all
 
 **MAME 0.37b5 DAT File**: [mame4all-037b5-RetroPie-260.dat](https://drive.google.com/file/d/0B2TMeZ6iEFvHVUNfWHpUZk82bkk/view?usp=sharing)
 
-**MAME 0.37b5 DAT File**: [mame4all-no-clones-no-neogeo](https://drive.google.com/file/d/0B2TMeZ6iEFvHNm5OYndFUHM3djg/view?usp=sharing) (no clones, no neogeo)
+**MAME 0.37b5 XML File**: [mame4all-no-clones-no-neogeo](https://drive.google.com/file/d/0B2TMeZ6iEFvHNm5OYndFUHM3djg/view?usp=sharing) (no clones, no neogeo)
 
 **[MAME4ALL-PI Compatibility List](https://docs.google.com/spreadsheets/d/1SHspjyHavY9-PKbO2swDr52BS2Wl_mB_Vjx2Z1SXiD8/edit?usp=sharing)** feel free to contribute to the list.
 
