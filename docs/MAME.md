@@ -52,7 +52,7 @@ Config Dir: /opt/retropie/configs/mame-mame4all
 **Based on the MAME4ALL-PI Compatibility list below:**
 * 1126 Parent Roms
 * 1025 Clones Roms
-* 129 NeoGeo Roms
+* 129 NeoGeo Roms (Parent+Clone)
 
 **MAME 0.37b5 DAT File**: [mame4all-037b5-RetroPie-260.dat](https://drive.google.com/file/d/0B2TMeZ6iEFvHVUNfWHpUZk82bkk/view?usp=sharing)
 
