@@ -48,7 +48,8 @@ Config Dir: /opt/retropie/configs/mame-mame4all
 * BIOS: 1
 * CHDs: 0
 * Samples: 35
-**Based on the MAME4ALL-PI Compatibility list below:
+
+**Based on the MAME4ALL-PI Compatibility list below:**
 * 1126 Parent Roms
 * 1025 Clones Roms
 * 129 NeoGeo Roms
