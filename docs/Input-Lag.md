@@ -12,8 +12,9 @@ Whilst wireless controllers are a brilliant innovation, they can add further del
 
 ***
 
-## Warning
-The internet is full of input lag configuration changes for retropie, yet almost all of them will have some horrible side effects. I have listed the typical offenders below. **DO NOT USE ANY OF THESE SETTINGS!!**
+## Dangerous Tweaks
+The internet is full of input lag configuration changes for retropie, yet almost all of them will have some horrible side effects. I have listed the typical offenders below. **DO NOT USE ANY OF THESE SETTINGS!!** This section is purely to disuade people from using them.
+
 ### `video_hard_sync`
 ```
 video_hard_sync = true
@@ -35,3 +36,17 @@ video_driver = dispmanx
 video_frame_delay = (0-15)
 ```
 This is a complex setting that can reduce input lag at the cost of CPU usage. Emulation on even a Raspberry Pi 3 has very little headroom, so almost any change from the default will cause stuttering in certain situations.
+
+### `video_max_swapchain_images`
+```
+video_max_swapchain_images = 2
+```
+This setting switches between using two or three buffers for rendering. Without going into details, a setting of 3 allows the emulator to run ahead and prepare the next frame before the current one has even been shown. This improves performance (i.e. makes framerate hiccups less likely), especially on slow hardware, but increases input lag by one whole frame in the general case.
+
+In RetroPie, the default is 3. A setting lower than this will likely cause performance issues, even on a Pi 3.
+
+### `video_threaded`
+```
+video_threaded = false
+```
+Another setting that can reduce input lag, but will reduce performance by forcing both emulation and video tasks to be executed on the same core, rather than default of 'threading' (sharing) these tasks across multiple cores.
