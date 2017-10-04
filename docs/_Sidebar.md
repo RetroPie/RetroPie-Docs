@@ -140,6 +140,7 @@
 * [Smaller RetroArch Screen](Smaller-RetroArch-Screen)
 * [[Shaders and Smoothing]]
 * [[Overscan]]
+* [[Input Lag]]
 
 ## Controllers
 
