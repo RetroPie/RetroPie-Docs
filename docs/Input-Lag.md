@@ -2,7 +2,7 @@ Input Lag describes the delay between pressing a button on the controller, and t
 
 Typically, emulated games come from the CRT and wired controller era. Digital controllers connected to dedicated games consoles, pumping raw analogue images straight to the screen. The games created for them assumed this level of response, and were fast and unforgiving.
 
-Input Lag, therefor, can be a real problem in a Retropie environment, but fortunately there are a number of simple fixes:
+Input Lag, therefor, can be a real problem in a RetroPie environment, but fortunately there are a number of simple fixes:
 
 ## Set TV to 'GAME MODE'
 Almost every HDTV or monitor will have a way of setting any given AV channel to a special mode that cuts out all non-essential post-processing, ensuring the lowest possible response time. This mode is generally called 'GAME MODE', and can be activated by switching to the AV channel used for RetroPie, and searching in the display or picture options for such an option.
@@ -13,7 +13,7 @@ Whilst wireless controllers are a brilliant innovation, they can add further del
 ***
 
 ## Dangerous Tweaks
-The internet is full of input lag configuration changes for retropie, yet almost all of them will have some horrible side effects. I have listed the typical offenders below. **DO NOT USE ANY OF THESE SETTINGS!!** This section is purely to disuade people from using them.
+The internet is full of input lag configuration changes for RetroPie, yet almost all of them will have some horrible side effects. I have listed the typical offenders below. **DO NOT USE ANY OF THESE SETTINGS!!** This section is purely to dissuade people from using them.
 
 ### `video_hard_sync`
 ```
