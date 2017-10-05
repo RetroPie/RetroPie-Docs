@@ -22,7 +22,7 @@ Another test can be performed at the command prompt. Type:`cat /dev/input/mice` 
 * Start RetroArch with the option `--verbose` so that you can generate a detailed log.
 * Make sure that your input driver is set to one with multi-mouse support.
 * Load any ROM with a RetroArch emulator. We are doing this only to learn what index numbers have been assigned to the attached mice. If you are using `udev`, there should be a section of the log similar to this.
-
+-----
     [INFO] [udev] Adding device /dev/input/event11 as type ID_INPUT_KEYBOARD.
     [INFO] [udev] Adding device /dev/input/event3 as type ID_INPUT_KEYBOARD.
     [INFO] [udev] Adding device /dev/input/event12 as type ID_INPUT_MOUSE.
@@ -30,7 +30,7 @@ Another test can be performed at the command prompt. Type:`cat /dev/input/mice` 
     [INFO] [udev] Adding device /dev/input/mouse1 as type ID_INPUT_MOUSE.
     [INFO] [udev] Adding device /dev/input/event4 as type ID_INPUT_MOUSE.
     [INFO] [udev] Adding device /dev/input/mouse0 as type ID_INPUT_MOUSE.
-
+-----
 * For each user and mouse you wish to configure, visit the corresponding user 'binds' screen and set `Mouse Index` to match the indexes discovered earlier.
 
 _Note that the laptop which generated these logs registers two internal mice even though there is only a single trackpoint. However with this as a starting point you can now configure the individual player inputs even if there is a final bit of trial and error._
