@@ -42,7 +42,7 @@ The latest Kodi module (Kodi 17/17.3) includes joypad support by default. Some j
 <?xml version="1.0" encoding="UTF-8"?>
 <keymap>
   <global>
-    <joystick name="USB gamepad           ">
+    <joystick name="USB gamepad">
       <button id="3">Select</button>
       <button id="2">Back</button>
       <axis id="1" limit="+1">Right</axis>
