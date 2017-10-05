@@ -1,7 +1,7 @@
-# Arcade System Hardware
-Spinners and Trackballs appear on the control panels of many arcade classics. Although MAME is often able to accommodate the use of a joystick instead, _many_ popular titles are best played with their native controls. Even the steering wheel on racing games can be thought of as a large spinner.
+# Overview
+Spinners and Trackballs appear on the control panels of many arcade classics. Lightguns were common accessories for both arcade and console games. Although RetroPie is often able to accommodate the use of a joystick instead, _many_ popular titles are best played with their native controls.
 
-Spinners and Trackballs are often described together because of the way they work. Spinners operate by rotating a spindle which turns an encoder wheel. Optical sensors detect the movement of the encoder wheel and forward the speed and rotational direction to the arcade game. Trackballs are essentially the same but they have two spindles oriented perpendicular to one another. By rolling a ball that is in direct contact with the spindles, trackballs can provide two-dimensional input like a mouse. In this respect, a spinner is also like a mouse that only moves in a straight line (left/right or up/down).
+Spinners, Trackballs, and Lightguns are often described together because they are seen as mouse devices by the operating system. Spinners operate by rotating a spindle which turns an encoder wheel. Optical sensors detect the movement of the encoder wheel and forward the speed and rotational direction to the arcade game. Trackballs are essentially the same but they have two spindles oriented perpendicular to one another. By rolling a ball that is in direct contact with the spindles, trackballs can provide two-dimensional input like a mouse. In this respect, a spinner is also like a mouse that only moves in a straight line (left/right or up/down).
 
 # Hardware for Emulators
 Because mouse input is ubiquitous on modern computers, spinners and trackballs translate nicely to emulators that can accept input from a mouse. For trackballs, the input is practically identical to a mouse. Spinners can also be setup like a mouse with separate X and Y tracking (like an Etch-a-Sketch).
@@ -13,8 +13,30 @@ A convenient hardware test is to simply boot the Pi to a desktop and see if you 
 
 Another test can be performed at the command prompt. Type:`cat /dev/input/mice` and press enter. Now, rotate your spinner or move your trackball. It should produce characters on the screen and move the cursor from side to side on the line. Depending on other devices you have attached, Linux might see more than one USB mouse at the same time. You can determine which one is your spinner or trackball by trying each device individually using `cat /dev/input/mouse0` or `cat /dev/input/mouse1` and so on.
 
+## Configuring RetroArch for multi-mouse use
+
+**Input Drivers**: As of September 2017, there is only one RetroArch input driver for Linux with support for multi-mouse: `udev`.
+
+### Determining mice index numbers
+
+* Start RetroArch with the option `--verbose` so that you can generate a detailed log.
+* Make sure that your input driver is set to one with multi-mouse support.
+* Load any ROM with a RetroArch emulator. We are doing this only to learn what index numbers have been assigned to the attached mice. If you are using `udev`, there should be a section of the log similar to this.
+
+    [INFO] [udev] Adding device /dev/input/event11 as type ID_INPUT_KEYBOARD.
+    [INFO] [udev] Adding device /dev/input/event3 as type ID_INPUT_KEYBOARD.
+    [INFO] [udev] Adding device /dev/input/event12 as type ID_INPUT_MOUSE.
+    [INFO] [udev] Adding device /dev/input/js0 as type ID_INPUT_MOUSE.
+    [INFO] [udev] Adding device /dev/input/mouse1 as type ID_INPUT_MOUSE.
+    [INFO] [udev] Adding device /dev/input/event4 as type ID_INPUT_MOUSE.
+    [INFO] [udev] Adding device /dev/input/mouse0 as type ID_INPUT_MOUSE.
+
+* For each user and mouse you wish to configure, visit the corresponding user 'binds' screen and set `Mouse Index` to match the indexes discovered earlier.
+
+_Note that the laptop which generated these logs registers two internal mice even though there is only a single trackpoint. However with this as a starting point you can now configure the individual player inputs even if there is a final bit of trial and error._
+
 # Configuring Emulators
-Not all emulators support mouse input for arcade games. Fortunately, software evolves as developers add more functionality. The two MAME emulators that offer the best mouse support for arcade games in RetroPie are lr-mame2003 and AdvanceMAME 1.4 (or 0.94).
+Not all emulators support mouse input. Fortunately, software evolves as developers add more functionality. The two MAME emulators that offer the best mouse support for arcade games in RetroPie are lr-mame2003 and AdvanceMAME.
 
 # lr-mame2003
 As of August 4, 2016, [mame2003-libretro](https://github.com/libretro/mame2003-libretro) is capable of 1-player trackball support and  2-player spinner support once configured. The standard configuration leverages both X and Y axes of mouse input for player one. The Player 1 DIAL control (spinner, steering, etc.) receives input from the X-axis, and TRACKBALL from both X and Y. It doesn't matter how many mice you connect, they all map to X and Y for Player 1.
