@@ -19,6 +19,8 @@ Another test can be performed at the command prompt. Type:`cat /dev/input/mice` 
 
 ### Determining mice index numbers
 
+_**Warning**: Depending on your setup, you might have an external mouse, a spinner, a mouse and a spinner, no mouse and two spinners, one spinner and a trackball, a mouse only during setup, etc. Linux will see all of these as mouse inputs, but the index of a specific device may change depending on what device you have attached to which port. For example, if you boot with an external mouse, it might be detected as mouse0 and your spinner as mouse1, but if you boot the same system without the external mouse attached, everything might ratchet down (spinner becomes mouse0)._
+
 * Start RetroArch with the option `--verbose` so that you can generate a detailed log.
 * Make sure that your input driver is set to one with multi-mouse support.
 * Load any ROM with a RetroArch emulator. We are doing this only to learn what index numbers have been assigned to the attached mice. If you are using `udev`, there should be a section of the log similar to this.
