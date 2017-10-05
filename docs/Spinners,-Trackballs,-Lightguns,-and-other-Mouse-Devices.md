@@ -31,9 +31,13 @@ Another test can be performed at the command prompt. Type:`cat /dev/input/mice` 
     [INFO] [udev] Adding device /dev/input/event4 as type ID_INPUT_MOUSE.
     [INFO] [udev] Adding device /dev/input/mouse0 as type ID_INPUT_MOUSE.
 -----
-* For each user and mouse you wish to configure, visit the corresponding user 'binds' screen and set `Mouse Index` to match the indexes discovered earlier.
+* For each user and mouse you wish to configure, visit the corresponding RetroArch user 'binds' screen and set `Mouse Index` to match the indexes discovered earlier.
 
 _Note that the laptop which generated these logs registers two internal mice even though there is only a single trackpoint. However with this as a starting point you can now configure the individual player inputs even if there is a final bit of trial and error._
+
+### retroarch.cfg
+
+As an alternative to using the RetroArch GUI to set the mouse indices, you can map mice to users via the `retroarch.cfg` in this format: `input_player1_mouse_index = "0"`
 
 # Configuring Emulators
 Not all emulators support mouse input. Fortunately, software evolves as developers add more functionality. The two MAME emulators that offer the best mouse support for arcade games in RetroPie are lr-mame2003 and AdvanceMAME.
