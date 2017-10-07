@@ -36,7 +36,7 @@ _**Warning**: Depending on your setup, you might have an external mouse, a spinn
 
 * For each user and mouse you wish to configure, visit the corresponding RetroArch user 'binds' screen and set `Mouse Index` to match the indexes discovered earlier. Please note that `/dev/input/mouse*` and `/dev/input/js*` are legacy interfaces and shouldn't be used, so udev users should focus on `/dev/input/event*` indices.
 
-_You will also see that there are two internal mice even though there was only a single trackpoint on the host machine. With the log as a starting point you can now configure the individual player inputs even if there is a final bit of trial and error._
+_This log was generated on a laptop. You may have noticed that there are two internal mice listed even though there was only a single trackpoint on the host machine. With the log as a starting point you can now configure the individual player inputs even if there is a final bit of trial and error._
 
 ### retroarch.cfg
 
