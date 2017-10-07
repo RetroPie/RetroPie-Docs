@@ -38,7 +38,7 @@ Please disregard devices located at the legacy interfaces `/dev/input/mouse*` an
 
 For each user and mouse you wish to configure, visit the corresponding RetroArch user 'binds' screen and set `Mouse Index` to match the indexes discovered earlier.
 
-### retroarch.cfg
+### Setting mouse indexes via retroarch.cfg
 
 As an alternative to using the RetroArch GUI to set the mouse indexes, you can map mice to users via the `retroarch.cfg` in this format: `input_player1_mouse_index = "0"`
 
