@@ -23,7 +23,7 @@ _**Warning**: Depending on your setup, you might have an external mouse, a spinn
 
 * Start RetroArch with the option `--verbose` so that you can generate a detailed log.
 * Make sure that your input driver is set to one with multi-mouse support.
-* Load any ROM with a RetroArch emulator. We are doing this only to learn what index numbers have been assigned to the attached mice. If you are using `udev`, there should be a section of the log similar to this.
+* Start a RetroArch emulator. If you are using `udev`, there should be a section of the log similar to this.
 -----
     [INFO] [udev] Adding device /dev/input/event11 as type ID_INPUT_KEYBOARD.
     [INFO] [udev] Adding device /dev/input/event3 as type ID_INPUT_KEYBOARD.
@@ -33,9 +33,10 @@ _**Warning**: Depending on your setup, you might have an external mouse, a spinn
     [INFO] [udev] Adding device /dev/input/event4 as type ID_INPUT_MOUSE.
     [INFO] [udev] Adding device /dev/input/mouse0 as type ID_INPUT_MOUSE.
 -----
-* For each user and mouse you wish to configure, visit the corresponding RetroArch user 'binds' screen and set `Mouse Index` to match the indexes discovered earlier.
 
-_Note that the laptop which generated these logs registers two internal mice even though there is only a single trackpoint. However with this as a starting point you can now configure the individual player inputs even if there is a final bit of trial and error._
+* For each user and mouse you wish to configure, visit the corresponding RetroArch user 'binds' screen and set `Mouse Index` to match the indexes discovered earlier. Please note that `/dev/input/mouse*` and `/dev/input/js*` are legacy interfaces and shouldn't be used, so udev users should focus on `/dev/input/event*` indices.
+
+_You will also see that there are two internal mice even though there was only a single trackpoint on the host machine. With the log as a starting point you can now configure the individual player inputs even if there is a final bit of trial and error._
 
 ### retroarch.cfg
 
