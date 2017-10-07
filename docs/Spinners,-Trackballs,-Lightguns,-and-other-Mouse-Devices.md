@@ -25,22 +25,22 @@ _**Warning**: Depending on your setup, you might have an external mouse, a spinn
 * Make sure that your input driver is set to one with multi-mouse support.
 * Start a RetroArch emulator. If you are using `udev`, there should be a section of the log similar to this.
 -----
-    [INFO] [udev] Adding device /dev/input/event11 as type ID_INPUT_KEYBOARD.
-    [INFO] [udev] Adding device /dev/input/event3 as type ID_INPUT_KEYBOARD.
-    [INFO] [udev] Adding device /dev/input/event12 as type ID_INPUT_MOUSE.
-    [INFO] [udev] Adding device /dev/input/js0 as type ID_INPUT_MOUSE.
-    [INFO] [udev] Adding device /dev/input/mouse1 as type ID_INPUT_MOUSE.
-    [INFO] [udev] Adding device /dev/input/event4 as type ID_INPUT_MOUSE.
-    [INFO] [udev] Adding device /dev/input/mouse0 as type ID_INPUT_MOUSE.
+If you are using `udev`, there should be a section of the log similar to this:
+
+    [INFO] [udev]: Keyboard #0 (/dev/input/event3).
+    [INFO] [udev]: Mouse #0 (/dev/input/event4).
+    [INFO] [udev]: Mouse #1 (/dev/input/mouse0).
 -----
 
-* For each user and mouse you wish to configure, visit the corresponding RetroArch user 'binds' screen and set `Mouse Index` to match the indexes discovered earlier. Please note that `/dev/input/mouse*` and `/dev/input/js*` are legacy interfaces and shouldn't be used, so udev users should focus on `/dev/input/event*` indices.
+Please disregard devices located at the legacy interfaces `/dev/input/mouse*` and `/dev/input/js*`. udev users should focus on `/dev/input/event*` indexes. This example log was generated on a laptop. You may notice that there are two mice listed even though there was only a single trackpoint available on the host machine. With the log as a starting point you can now configure the individual player inputs even if there is a final bit of trial and error.
 
-_This log was generated on a laptop. You may have noticed that there are two internal mice listed even though there was only a single trackpoint on the host machine. With the log as a starting point you can now configure the individual player inputs even if there is a final bit of trial and error._
+### Setting mouse indexes via the RetroArch GUI
+
+For each user and mouse you wish to configure, visit the corresponding RetroArch user 'binds' screen and set `Mouse Index` to match the indexes discovered earlier.
 
 ### retroarch.cfg
 
-As an alternative to using the RetroArch GUI to set the mouse indices, you can map mice to users via the `retroarch.cfg` in this format: `input_player1_mouse_index = "0"`
+As an alternative to using the RetroArch GUI to set the mouse indexes, you can map mice to users via the `retroarch.cfg` in this format: `input_player1_mouse_index = "0"`
 
 # Configuring Emulators
 Not all emulators support mouse input. Fortunately, software evolves as developers add more functionality. The two MAME emulators that offer the best mouse support for arcade games in RetroPie are lr-mame2003 and AdvanceMAME.
