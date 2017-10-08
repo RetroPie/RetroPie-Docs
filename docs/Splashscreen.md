@@ -1,6 +1,6 @@
 # Splashcreen Menu
 
-The Splash Screen Menu can be accessed from the RetroPie Menu in EmulationStation or through the setup script under option 3. 
+The Splash Screen Menu can be accessed from the RetroPie Menu in EmulationStation or through the setup script under option 3 - it is only available on the Raspberry Pi.
 
 ![splashes](https://cloud.githubusercontent.com/assets/10035308/16179686/82420dcc-362a-11e6-963d-13d4471f813e.png)
 
