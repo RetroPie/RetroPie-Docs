@@ -21,7 +21,7 @@ Another test can be performed at the command prompt. Type:`cat /dev/input/mice` 
 
 _**Warning**: Depending on your setup, you might have an external mouse, a spinner, a mouse and a spinner, no mouse and two spinners, one spinner and a trackball, a mouse only during setup, etc. Linux will see all of these as mouse inputs, but the index of a specific device may change depending on what device you have attached to which port. For example, if you boot with an external mouse, it might be detected as mouse0 and your spinner as mouse1, but if you boot the same system without the external mouse attached, everything might ratchet down (spinner becomes mouse0)._
 
-* Start RetroArch with the option `--verbose` so that you can generate a detailed log.
+* Start a RetroArch emulator with the option `--verbose` to generate a detailed log. Verbose mode is selected via the [runcommand](https://retropie.org.uk/docs/Runcommand/), and the resulting log is saved to `/dev/shm/runcommand.log`
 * Make sure that your input driver is set to one with multi-mouse support.
 * Start a RetroArch emulator. If you are using `udev`, there should be a section of the log similar to this.
 -----
