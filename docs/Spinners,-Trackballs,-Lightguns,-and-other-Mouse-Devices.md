@@ -30,7 +30,7 @@ There should be a section of the log similar to this:
     [INFO] [udev]: Mouse #1 (/dev/input/mouse0).
     [INFO] [udev]: Mouse #2 (/dev/input/event5).
 -----
-**Interpretation**: Please disregard any devices listed for the legacy interfaces `/dev/input/mouse*` and `/dev/input/js*`. Look instead for the `/dev/input/event*` indexes. **In this example, there are two lightgun devices attached, along with a keyboard-style arcade control panel. To use both lightguns, the correct mouse indexes to use would be `4` and `5`.
+**Interpretation**: Please disregard any devices listed for the legacy interfaces `/dev/input/mouse*` and `/dev/input/js*`. Look instead for the `/dev/input/event*` indexes. **In this example, there are two lightgun devices attached, along with a keyboard-style arcade control panel. To use both lightguns, the correct mouse indexes to use would be `4` and `5`.**
 
 **Beware**: Depending on your configuration, you might have an external mouse, a spinner, a mouse and a spinner, no mouse and two spinners, a mouse only during setup, etc. Linux will see all of these as mouse inputs, but the index of a specific device may change depending on what device you have attached to which port. For example, if you boot with an external mouse, it might be detected as event0 and your spinner as event1, but if you boot the same system without the external mouse attached, everything might ratchet down (spinner becomes event0).
 
