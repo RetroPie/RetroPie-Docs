@@ -21,18 +21,18 @@ Another test can be performed at the command prompt. Type:`cat /dev/input/mice` 
 
 _**Warning**: Depending on your setup, you might have an external mouse, a spinner, a mouse and a spinner, no mouse and two spinners, one spinner and a trackball, a mouse only during setup, etc. Linux will see all of these as mouse inputs, but the index of a specific device may change depending on what device you have attached to which port. For example, if you boot with an external mouse, it might be detected as mouse0 and your spinner as mouse1, but if you boot the same system without the external mouse attached, everything might ratchet down (spinner becomes mouse0)._
 
-* Start a RetroArch emulator with the option `--verbose` to generate a detailed log. Verbose mode is selected via the [runcommand](https://retropie.org.uk/docs/Runcommand/), and the resulting log is saved to `/dev/shm/runcommand.log`
-* Make sure that your input driver is set to one with multi-mouse support.
-* Start a RetroArch emulator. If you are using `udev`, there should be a section of the log similar to this.
+* Make sure that your RetroArch input driver is set to `udev`
+* Start a RetroArch emulator with the option `--verbose` to generate a detailed log. Verbose mode is selected via the [runcommand](https://retropie.org.uk/docs/Runcommand/)
+* The resulting log is saved to `/dev/shm/runcommand.log`
 -----
-If you are using `udev`, there should be a section of the log similar to this:
+There should be a section of the log similar to this:
 
     [INFO] [udev]: Keyboard #0 (/dev/input/event3).
     [INFO] [udev]: Mouse #0 (/dev/input/event4).
     [INFO] [udev]: Mouse #1 (/dev/input/mouse0).
 -----
 
-Please disregard devices located at the legacy interfaces `/dev/input/mouse*` and `/dev/input/js*`. udev users should focus on `/dev/input/event*` indexes. This example log was generated on a laptop. You may notice that there are two mice listed even though there was only a single trackpoint available on the host machine. With the log as a starting point you can now configure the individual player inputs even if there is a final bit of trial and error.
+Please disregard any devices listed for the legacy interfaces `/dev/input/mouse*` and `/dev/input/js*`. Focus instead on `/dev/input/event*` indexes. This example log was generated on a laptop. You may notice that there are two mice listed even though there was only a single trackpoint available on the host machine. With the log as a starting point you can now configure the individual player inputs even if there is a final bit of trial and error.
 
 ### Setting mouse indexes via the RetroArch GUI
 
