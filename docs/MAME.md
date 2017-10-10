@@ -125,6 +125,8 @@ Config Dir: /opt/retropie/configs/mame-libretro/retroarch.cfg
 
 **[lr-mame2003 Compatibility List](https://docs.google.com/spreadsheets/d/1LP1MELCvcxu7TfiowF_0ZuvRVEMqlfQyTVetnOJvuJc/edit?usp=sharing)** feel free to contribute to the list.
 
+**[The mame2003 catver.ini](https://github.com/libretro/mame2003-libretro/blob/master/metadata/catver.ini)** also contains data on games definitively known not to work, as well as sorting data for pornographic games and other less desirable romsets.
+
 **Controls**
 
 lr-mame2003 utilises [RetroArch control configurations](RetroArch-Configuration). Add custom retroarch controls to the retroarch.cfg file in:
