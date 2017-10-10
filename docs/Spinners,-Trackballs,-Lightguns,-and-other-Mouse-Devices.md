@@ -19,8 +19,6 @@ Another test can be performed at the command prompt. Type:`cat /dev/input/mice` 
 
 ### Determining mice index numbers
 
-_**Warning**: Depending on your setup, you might have an external mouse, a spinner, a mouse and a spinner, no mouse and two spinners, one spinner and a trackball, a mouse only during setup, etc. Linux will see all of these as mouse inputs, but the index of a specific device may change depending on what device you have attached to which port. For example, if you boot with an external mouse, it might be detected as mouse0 and your spinner as mouse1, but if you boot the same system without the external mouse attached, everything might ratchet down (spinner becomes mouse0)._
-
 * Make sure that your RetroArch input driver is set to `udev`
 * Start a RetroArch emulator with the option `--verbose` to generate a detailed log. Verbose mode is selected via the [runcommand](https://retropie.org.uk/docs/Runcommand/)
 * The resulting log is saved to `/dev/shm/runcommand.log`
@@ -30,9 +28,11 @@ There should be a section of the log similar to this:
     [INFO] [udev]: Keyboard #0 (/dev/input/event3).
     [INFO] [udev]: Mouse #0 (/dev/input/event4).
     [INFO] [udev]: Mouse #1 (/dev/input/mouse0).
+    [INFO] [udev]: Mouse #2 (/dev/input/event5).
 -----
+**Interpretation**: Please disregard any devices listed for the legacy interfaces `/dev/input/mouse*` and `/dev/input/js*`. Look instead for the `/dev/input/event*` indexes. **In this example, there are two lightgun devices attached, along with a keyboard-style arcade control panel. To use both lightguns, the correct mouse indexes to use would be `4` and `5`.
 
-Please disregard any devices listed for the legacy interfaces `/dev/input/mouse*` and `/dev/input/js*`. Focus instead on `/dev/input/event*` indexes. This example log was generated on a laptop. You may notice that there are two mice listed even though there was only a single trackpoint available on the host machine. With the log as a starting point you can now configure the individual player inputs even if there is a final bit of trial and error.
+**Beware**: Depending on your configuration, you might have an external mouse, a spinner, a mouse and a spinner, no mouse and two spinners, a mouse only during setup, etc. Linux will see all of these as mouse inputs, but the index of a specific device may change depending on what device you have attached to which port. For example, if you boot with an external mouse, it might be detected as event0 and your spinner as event1, but if you boot the same system without the external mouse attached, everything might ratchet down (spinner becomes event0).
 
 ### Setting mouse indexes via the RetroArch GUI
 
