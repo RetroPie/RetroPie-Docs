@@ -5,13 +5,13 @@ _The Vectrex is a vector display-based home video game console released in 1982_
 
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
-| [lr-vecx](https://github.com/libretro/libretro-vecx) | vectrex  | .vec .gam .bin | none | /opt/retropie/configs/vectrex/retroarch.cfg |
+| [lr-vecx](https://github.com/libretro/libretro-vecx) | vectrex  | .7z .bin .gam .vec .zip | none | /opt/retropie/configs/vectrex/retroarch.cfg |
 
 ## Emulator: [lr-vecx](https://github.com/libretro/libretro-vecx)
 
 ## ROMS
 
-Accepted File Extensions: **.vec .gam .bin**
+Accepted File Extensions: **.7z .bin .gam .vec .zip**
 
 Place your Vectrex ROMs in 
 ```
