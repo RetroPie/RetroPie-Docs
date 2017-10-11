@@ -7,14 +7,14 @@ _The TurboGrafx-16 Entertainment SuperSystem, originally known in Japan as the P
 
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
-| [lr-beetle-pce-fast](https://github.com/libretro/beetle-pce-fast-libretro) | pcengine  | .pce .cue .zip | syscard3.pce | /opt/retropie/configs/pcengine/retroarch.cfg |
-| [lr-beetle-supergrafx](https://github.com/libretro/beetle-supergrafx-libretro) | pcengine  | .pce .cue .zip | syscard3.pce | /opt/retropie/configs/pcengine/retroarch.cfg |
+| [lr-beetle-pce-fast](https://github.com/libretro/beetle-pce-fast-libretro) | pcengine  | .7z .ccd .chd .cue .pce .zip | syscard3.pce | /opt/retropie/configs/pcengine/retroarch.cfg |
+| [lr-beetle-supergrafx](https://github.com/libretro/beetle-supergrafx-libretro) | pcengine  | .7z .pce .zip | syscard3.pce | /opt/retropie/configs/pcengine/retroarch.cfg |
 
 ## Emulator: [lr-beetle-pce-fast](https://github.com/libretro/beetle-pce-fast-libretro), [lr-beetle-supergrafx](https://github.com/libretro/beetle-supergrafx-libretro)
 
 ## ROMS
 
-Accepted File Extensions: **.pce**
+Accepted File Extensions: **.7z .ccd .chd .cue .pce .zip**
 
 Place your PC Engine/ TurboGrafx-16 ROMs in
 ```
@@ -37,9 +37,9 @@ Working BIOS files:
 
 | Region | md5sum | CRC32 | Comment |
 | :--: | :--: | :--: | :--: |
-| | ff1a674273fe3540ccef576376407d1d | 64f78e3c | |
-| Japan | 38179df8f4ac870017db21ebcbf53114 | 6d9a73ef | |
-| USA | 0754f903b52e3b3342202bdafb13efa5 | 2b5b75fe | Most games work but some like Mirai Shounen Conan and Sylphia will not |
+| RP Manager's Prefered Verfification (Unknown) | ff1a674273fe3540ccef576376407d1d | 64f78e3c | |
+| Super CD-ROM System (Japan) (v3.0) | 38179df8f4ac870017db21ebcbf53114 | 6d9a73ef | |
+| TurboGrafx CD Super System Card (USA) (v3.0) | 0754f903b52e3b3342202bdafb13efa5 | 2b5b75fe | Most games work but some like Mirai Shounen Conan and Sylphia will not. |
 
 ## Controls
 
