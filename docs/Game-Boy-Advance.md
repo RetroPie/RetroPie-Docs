@@ -6,15 +6,15 @@ _The Game Boy Advance is a 32 bit handheld video game console released by Ninten
 
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
-| [lr-gpSP](https://github.com/libretro/gpsp) | gba  | .gba | gba_bios.bin | /opt/retropie/configs/gba/retroarch.cfg |
-| [lr-vba-next](https://github.com/libretro/vba-next) | gba  | .gba | gba_bios.bin | /opt/retropie/configs/gba/retroarch.cfg |
-| [lr-mgba](https://github.com/libretro/mgba) | gba  | .gba .zip | gba_bios.bin | /opt/retropie/configs/gba/retroarch.cfg |
+| [lr-gpSP](https://github.com/libretro/gpsp) | gba  | .7z .gba .zip | gba_bios.bin | /opt/retropie/configs/gba/retroarch.cfg |
+| [lr-vba-next](https://github.com/libretro/vba-next) | gba  | .7z .gba .zip | gba_bios.bin | /opt/retropie/configs/gba/retroarch.cfg |
+| [lr-mgba](https://github.com/libretro/mgba) | gba  | .7z .gba .zip | gba_bios.bin | /opt/retropie/configs/gba/retroarch.cfg |
 | [gpSP](https://github.com/DPRCZ/gpsp) | gba  | .gba | gba_bios.bin | /opt/retropie/emulators/gpsp/gpsp.cfg |
 
 ## Emulators: [gpSP](https://github.com/DPRCZ/gpsp), [lr-gpSP](https://github.com/libretro/gpsp), [lr-vba-next](https://github.com/libretro/vba-next), [lr-mgba](https://github.com/libretro/mgba)
 
 ## ROMS
-Accepted File Extensions: **.gba**
+Accepted File Extensions: **.7z .gba .zip**
 
 Place your Game Boy Advance ROMS in 
 ```
