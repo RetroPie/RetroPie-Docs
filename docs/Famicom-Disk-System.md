@@ -6,14 +6,14 @@ The Family Computer Disk System a.k.a. Famicom Disk System was released in Japan
 
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
-| [lr-fceumm](https://github.com/libretro/libretro-fceumm) | fds  | .fds | disksys.rom | /opt/retropie/configs/nes/retroarch.cfg |
-| [lr-nestopia](https://github.com/libretro/nestopia) | fds  | .fds | disksys.rom | /opt/retropie/configs/nes/retroarch.cfg |
+| [lr-fceumm](https://github.com/libretro/libretro-fceumm) | fds  | .7z .fds .zip | disksys.rom | /opt/retropie/configs/nes/retroarch.cfg |
+| [lr-nestopia](https://github.com/libretro/nestopia) | fds  | .7z .fds .zip | disksys.rom | /opt/retropie/configs/nes/retroarch.cfg |
 
 ## Emulators: [lr-nestopia](https://github.com/libretro/nestopia), [lr-fceumm](https://github.com/libretro/libretro-fceumm)
 
 ## ROMS
 
-Accepted File Extensions: **.fds**
+Accepted File Extensions: **.7z .fds .zip**
 
 Place your FDS Roms in
 ```
