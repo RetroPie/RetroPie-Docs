@@ -7,14 +7,14 @@ _This console, known as the Genesis in North America and the Mega Drive everywhe
 
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
-| [lr-picodrive](https://github.com/libretro/picodrive) | megadrive  | .smd .bin .md .iso .zip | none | /opt/retropie/configs/megadrive/retroarch.cfg |
-| [lr-genesis-plus-gx](https://github.com/libretro/Genesis-Plus-GX) | megadrive  | .smd .bin .md .iso | none | /opt/retropie/configs/megadrive/retroarch.cfg |
-| [DGen](http://dgen.sourceforge.net/) | megadrive | .smd .bin .md .iso | none | /opt/retropie/configs/megadrive/dgenrc |
+| [lr-picodrive](https://github.com/libretro/picodrive) | megadrive  | .7z .bin .iso .md .smd .zip | none | /opt/retropie/configs/megadrive/retroarch.cfg |
+| [lr-genesis-plus-gx](https://github.com/libretro/Genesis-Plus-GX) | megadrive  | .7z .bin .chd .iso .md .smd .zip | none | /opt/retropie/configs/megadrive/retroarch.cfg |
+| [DGen](http://dgen.sourceforge.net/) | megadrive | .bin .iso .md .smd | none | /opt/retropie/configs/megadrive/dgenrc |
 
 ## Emulators: [DGen](http://dgen.sourceforge.net/), [lr-picodrive](https://github.com/libretro/picodrive), [lr-genesis-plus-gx](https://github.com/libretro/Genesis-Plus-GX)
 DGEN has the worst performance and can be tedious to configure controls, lr-picodrive seems to be the favourite for older Pi's, lr-genesis-plus-gx seems to be the favourite for the Pi 2.
 ## ROMS
-Accepted File Extensions: **.smd .bin .gen .md .sg .zip**
+Accepted File Extensions: **.7z .bin .iso .gen .md .sg .smd .zip**
 
 Place your ROMS in either
 ```
