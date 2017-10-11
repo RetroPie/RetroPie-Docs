@@ -6,16 +6,16 @@ _The Game Boy was released by Nintendo in 1989 thus kicking off the era of handh
 
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
-| [lr-gambatte](https://github.com/libretro/gambatte-libretro) | gb  | .gb .zip | none | /opt/retropie/configs/gb/retroarch.cfg |
-| [lr-tgbdual](https://github.com/libretro/tgbdual-libretro) | gb  | .gb .zip | none | /opt/retropie/configs/gb/retroarch.cfg |
+| [lr-gambatte](https://github.com/libretro/gambatte-libretro) | gb  | .7z .gb .zip | none | /opt/retropie/configs/gb/retroarch.cfg |
+| [lr-tgbdual](https://github.com/libretro/tgbdual-libretro) | gb  | .7z .gb .zip | none | /opt/retropie/configs/gb/retroarch.cfg |
 
-## Emulator: [lr-gambatte](https://github.com/libretro/gambatte-libretro)
+## Emulators: [lr-gambatte](https://github.com/libretro/gambatte-libretro), [lr-tgbdual](https://github.com/libretro/tgbdual-libretro)
 
-lr-gambatte is a libretro port of Gambatte that utilises RetroArch configurations for your controller
+lr-gambatte is the prefered single-player emulator, while lr-tgbdual runs two instances of the same game for either two-player link cable games or parallel play on the same system.
 
 ## ROMS
 
-Accepted File Extensions: **.gb**
+Accepted File Extensions: **.7z .gb .zip**
 
 Place your Game Boy ROMs in
 ```
@@ -23,7 +23,7 @@ Place your Game Boy ROMs in
 ```
 ## Controls
 
-lr-gambatte utilises Retroarch configurations
+Both emulators utilise Retroarch configurations
 
 Add custom retroarch controls to the retroarch.cfg file in
 ```shell
@@ -115,7 +115,7 @@ Special 3
 
 https://github.com/libretro/gambatte-libretro/blob/master/libgambatte/libretro/libretro.cpp
 
-## How to add a custom palette
+## How to Add a Custom Palette
 
 You may also add custom palettes by adding your new .pal file to 
 ~~~
@@ -137,29 +137,3 @@ Open the RetroArch RGUI by pressing **Select+X** on the controller, or **Hotkey+
 Press **B** to go back to the Quick Menu and **Resume Content**.
 
 To make the change permanent, choose **Save Configuration** on the main RGUI menu.
-
-
-## Emulator: [lr-tgbdual](https://github.com/libretro/tgbdual-libretro)
-
-lr-tgbdual is a libretro port of TGB Dual that utilises RetroArch configurations for your controllers
-## ROMS
-
-Accepted File Extensions: **.gb**
-
-Place your Game Boy ROMs in
-```
-/home/pi/RetroPie/roms/gb
-```
-## Controls
-
-lr-tgbdual utilises Retroarch configurations
-
-Add custom retroarch controls to the retroarch.cfg file in
-```shell
-/opt/retropie/configs/gb/retroarch.cfg
-```
-For more information on custom RetroArch controls see: [RetroArch Configuration](RetroArch-Configuration)
-
-## Com Link
-
-Once a ROM is launched with lr-tgbdual, two synced game screens will be displayed side-by-side by default. Player one is then able to control the left screen, while player two controls the right.
