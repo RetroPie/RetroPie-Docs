@@ -6,20 +6,21 @@ _The Super Nintendo Entertainment System (or SNES) was a 4th generation video ga
 
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
-| [lr-snes9x2010](https://github.com/libretro/snes9x2010) | snes  | .zip .smc .sfc .fig .swc | none | /opt/retropie/configs/snes/retroarch.cfg |
-| [lr-armsnes](https://github.com/RetroPie/ARMSNES-libretro) | snes  | .zip .smc .sfc .fig .swc | none | /opt/retropie/configs/snes/retroarch.cfg |
-| [lr-snes9x2005](https://github.com/libretro/snes9x2005) | snes  | .zip .smc .sfc .fig .swc | none | /opt/retropie/configs/snes/retroarch.cfg |
-| [lr-snes9x2002](https://github.com/libretro/snes9x2002) | snes  | .zip .smc .sfc .fig .swc | none | /opt/retropie/configs/snes/retroarch.cfg |
-| [snes9x-rpi](https://github.com/RetroPie/snes9x-rpi) | snes  | .zip .smc .sfc .fig .swc | none | /opt/retropie/configs/snes/snes9x.cfg |
-| [PiSNES](https://github.com/RetroPie/pisnes) | snes  | .zip .smc .sfc .fig .swc | none | /opt/retropie/configs/snes/snes9x.cfg |
+| lr-snes9x | snes | .7z .bin .fig .mgd .sfc .smc .swc .zip | none | /opt/retropie/configs/snes/retroarch.cfg |
+| [lr-snes9x2010](https://github.com/libretro/snes9x2010) | snes  | .7z .bin .fig .mgd .sfc .smc .swc .zip | none | /opt/retropie/configs/snes/retroarch.cfg |
+| [lr-armsnes](https://github.com/RetroPie/ARMSNES-libretro) | snes | .7z .bin .fig .mgd .sfc .smc .swc .zip | none | /opt/retropie/configs/snes/retroarch.cfg |
+| [lr-snes9x2005](https://github.com/libretro/snes9x2005) | snes | .7z .bin .fig .mgd .sfc .smc .swc .zip | none | /opt/retropie/configs/snes/retroarch.cfg |
+| [lr-snes9x2002](https://github.com/libretro/snes9x2002) | snes | .7z .bin .fig .mgd .sfc .smc .swc .zip | none | /opt/retropie/configs/snes/retroarch.cfg |
+| [snes9x-rpi](https://github.com/RetroPie/snes9x-rpi) | snes | .fig .sfc .smc .swc .zip | none | /opt/retropie/configs/snes/snes9x.cfg |
+| [PiSNES](https://github.com/RetroPie/pisnes) | snes | .fig .sfc .smc .swc .zip | none | /opt/retropie/configs/snes/snes9x.cfg |
 
-## Emulators: [lr-snes9x-2010](https://github.com/libretro/snes9x2010), [PiSNES](https://github.com/RetroPie/pisnes), [snes9x-rpi](https://github.com/RetroPie/snes9x-rpi), [lr-armsnes](https://github.com/RetroPie/ARMSNES-libretro), [lr-snes9x2005](https://github.com/libretro/snes9x2005), [lr-snes9x2002](https://github.com/libretro/snes9x2002)
+## Emulators: lr-snes9x, [lr-snes9x-2010](https://github.com/libretro/snes9x2010), [PiSNES](https://github.com/RetroPie/pisnes), [snes9x-rpi](https://github.com/RetroPie/snes9x-rpi), [lr-armsnes](https://github.com/RetroPie/ARMSNES-libretro), [lr-snes9x2005](https://github.com/libretro/snes9x2005), [lr-snes9x2002](https://github.com/libretro/snes9x2002)
 
-RetroPie comes included with multiple SNES emulators. If you have a Pi 2, the preference is **lr-snes9x2010** due to better speed and sound emulation. lr-snes9x2002 is recommended for Super FX chip games.
+RetroPie comes included with multiple SNES emulators. If you have a Pi 2, the preference is **lr-snes9x2010** due to better speed and sound emulation. lr-snes9x2002 is recommended for Super FX chip games on the Pi 2. lr-snes9x is an optional emulator that requires a sufficiently overclocked Pi 3, but has MSU-1 support and more accurate emulation.
 
 ## ROMS
 
-Accepted File Extensions: **.zip .smc .sfc .fig .swc**
+Accepted File Extensions: **.7z .bin .fig .mgd .sfc .smc .swc .zip**
 
 Place your SNES ROMs in
 ```
@@ -28,9 +29,9 @@ Place your SNES ROMs in
 
 ## Controls
 
-### lr-armsnes, lr-snes9x2005, lr-snes9x2002, lr-snes9x2010
+### lr-snes9x, lr-armsnes, lr-snes9x2005, lr-snes9x2002, lr-snes9x2010
 
-lr-armsnes, lr-snes9x2005, lr-snes9x2002, lr-snes9x2010 all utilise RetroArch configurations
+lr-snes9x, lr-armsnes, lr-snes9x2005, lr-snes9x2002, lr-snes9x2010 all utilise RetroArch configurations
 
 Add custom retroarch controls to the retroarch.cfg file in
 ```shell
