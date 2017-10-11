@@ -7,13 +7,13 @@ WonderSwan is a handheld gaming device that was released by Bandai solely in Jap
 
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
-| [lr-beetle-wswan](https://github.com/libretro/beetle-wswan-libretro.git) | wonderswan  | .ws | none | /opt/retropie/configs/wonderswan/retroarch.cfg |
+| [lr-beetle-wswan](https://github.com/libretro/beetle-wswan-libretro.git) | wonderswan  | .7z .ws .zip | none | /opt/retropie/configs/wonderswan/retroarch.cfg |
 
 ## Emulator: [lr-beetle-wswan](https://github.com/libretro/beetle-wswan-libretro.git)
 
 ## ROMS
 
-Accepted File Extensions **.ws**
+Accepted File Extensions **.7z .ws .zip**
 
 Place your WonderSwan ROMs in
 ```
