@@ -37,7 +37,7 @@ Working BIOS files:
 
 | Region | md5sum | CRC32 | Comment |
 | :--: | :--: | :--: | :--: |
-| RP Manager's Prefered Verfification (Unknown) | ff1a674273fe3540ccef576376407d1d | 64f78e3c | |
+| RP Manager's Prefered Verification (Unknown) | ff1a674273fe3540ccef576376407d1d | 64f78e3c | |
 | Super CD-ROM System (Japan) (v3.0) | 38179df8f4ac870017db21ebcbf53114 | 6d9a73ef | |
 | TurboGrafx CD Super System Card (USA) (v3.0) | 0754f903b52e3b3342202bdafb13efa5 | 2b5b75fe | Most games work but some like Mirai Shounen Conan and Sylphia will not. |
 
