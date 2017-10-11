@@ -12,11 +12,11 @@ This page is a resource for additional details on RetroPie's Final Burn Alpha em
 
 [**All Arcade ROMS Compatibility List**](https://docs.google.com/spreadsheets/d/1antILt7D12EWOFzyJwTfB86NceghMJKXG7CdYumuHec/edit?usp=sharing) feel free to contribute to the list.
 
-| Emulator | Rom Folder | Required ROM Version | Controller Config |
-| :---: | :---: | :---: | :---: |
-| [lr-fbalpha](#lr-fbalpha) | arcade **or** fba **or** neogeo  | FB Alpha v0.2.97.42| /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/fba/retroarch.cfg, **or** /opt/retropie/configs/neogeo/retroarch.cfg |
-| [lr-fbalpha2012](#lr-fbalpha2012) | arcade **or** fba **or** neogeo  | FB Alpha v0.2.97.30 | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/fba/retroarch.cfg, **or** /opt/retropie/configs/neogeo/retroarch.cfg |
-| [PiFBA](#pifba) | arcade **or** fba **or** neogeo  | FB Alpha 0.2.96.71 | /opt/retropie/emulators/pifba/fba2x.cfg **or** /opt/retropie/configs/fba/fba2x.cfg |
+| Emulator | Rom Folder | Extension | Required ROM Version | Controller Config |
+| :---: | :---: | :---: | :---: | :---: |
+| [lr-fbalpha](#lr-fbalpha) | arcade **or** fba **or** neogeo  | .7z .zip | FB Alpha v0.2.97.42| /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/fba/retroarch.cfg, **or** /opt/retropie/configs/neogeo/retroarch.cfg |
+| [lr-fbalpha2012](#lr-fbalpha2012) | arcade **or** fba **or** neogeo  | .7z .zip | FB Alpha v0.2.97.30 | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/fba/retroarch.cfg, **or** /opt/retropie/configs/neogeo/retroarch.cfg |
+| [PiFBA](#pifba) | arcade **or** fba **or** neogeo  | .zip | FB Alpha 0.2.96.71 | /opt/retropie/emulators/pifba/fba2x.cfg **or** /opt/retropie/configs/fba/fba2x.cfg |
 
 ## Arcade ROM paths
 
@@ -30,6 +30,8 @@ To avoid having several menus for different arcade emulators, all arcade-based R
 [Visit the Final Burn Alpha homepage on github](https://github.com/libretro/fbalpha)
 
 **Note: Please see [lr-fbalpha](lr-fbalpha) for information on how to configure specific features of this emulator.**
+
+Accepted File Extensions: **.7z .zip**
 
 ```shell
 Roms Dir: /home/pi/RetroPie/roms/fba
@@ -46,14 +48,22 @@ Config Dir: /opt/retropie/configs/fba/retroarch.cfg
 
 **FB Alpha v0.2.97.42 DAT File**:  [FB Alpha v0.2.97.42 (NeoGeo Only)](https://drive.google.com/file/d/0BygnFI5SL7x2NXcwcEdhaUNEOFE/view?usp=sharing)
 
-**FB Alpha v0.2.97.39 DAT File**: [FB Alpha v0.2.97.39 (NeoGeo Only)](https://dl.dropboxusercontent.com/u/51705339/fba%20029739%20dats/FB%20Alpha%20v0.2.97.39%20(ClrMame%20Pro%20XML)%20(NeoGeo%20Only).dat) Instructions: Rebuild using Non-merged-sets, Place the ROMs in the /neogeo/ ROMs folder and use lr-fbalpha as the default emulator. This should still work with .42.
-
 **[lr-fbalpha Compatibility List](https://docs.google.com/spreadsheets/d/1GaqIIoiWbzKHwZ52S2xCSDQXILo81Ls1mHK6czKGAtM/edit?usp=sharing)** feel free to contribute to the list.
+
+**Controls:**
+lr-fbalpha utilises RetroArch configs. Add custom retroarch controls to the retroarch.cfg file in:
+```shell
+/opt/retropie/configs/fba/retroarch.cfg
+```
+For more information on custom RetroArch controls see: [RetroArch Configuration](RetroArch-Configuration) 
 
 ---
 
 ### lr-fbalpha2012
 [Visit the Final Burn Alpha 2012 homepage on github](https://github.com/libretro/fbalpha2012) 
+
+Accepted File Extensions: **.7z .zip**
+
 ```shell
 Roms Dir: /home/pi/RetroPie/roms/fba
 Binary Dir: /opt/retropie/libretrocores/lr-fbalpha2012
@@ -71,7 +81,7 @@ Config Dir: /opt/retropie/configs/fba/retroarch.cfg
 
 [**lr-fbalpha2012 Compatibility List**](https://docs.google.com/spreadsheets/d/1rWO7Lm0bTGNpak6J-CPzde0GNIDP0NHDoQdJ6iWosfA/edit?usp=sharing)  feel free to contribute to the list.
 
-**Controls**
+**Controls:**
 lr-fbalpha2012 utilises RetroArch configs. Add custom retroarch controls to the retroarch.cfg file in:
 ```shell
 /opt/retropie/configs/fba/retroarch.cfg
@@ -82,6 +92,9 @@ For more information on custom RetroArch controls see: [RetroArch Configuration]
 
 ### PiFBA
 [Visit the PiFBA homepage on sourceforge](http://sourceforge.net/projects/pifba/)
+
+Accepted File Extensions: **.zip**
+
 ```shell
 Roms Dir: /home/pi/RetroPie/roms/fba
 Binary Dir: /opt/retropie/emulators/pifba
