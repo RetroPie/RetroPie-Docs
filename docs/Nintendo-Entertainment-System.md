@@ -7,9 +7,9 @@ _The Nintendo Entertainment System (NES) is an 8-bit home video game console tha
 
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
-| [lr-fceumm](https://github.com/libretro/libretro-fceumm) | nes  | .zip .nes .smc .sfc .fig .swc .mgd .fds | none | /opt/retropie/configs/nes/retroarch.cfg |
-| [lr-nestopia](https://github.com/libretro/nestopia) | nes  | .zip .nes .smc .sfc .fig .swc .mgd .fds | none | /opt/retropie/configs/nes/retroarch.cfg |
-| [lr-quicknes](https://github.com/libretro/QuickNES_Core) | nes  | .zip .nes .smc .sfc .fig .swc .mgd | none | /opt/retropie/configs/nes/retroarch.cfg |
+| [lr-fceumm](https://github.com/libretro/libretro-fceumm) | nes  | .7z .fds .fig .mgd .nes .sfc .smc .swc .zip | none | /opt/retropie/configs/nes/retroarch.cfg |
+| [lr-nestopia](https://github.com/libretro/nestopia) | nes  | .7z .fds .fig .mgd .nes .sfc .smc .swc .zip | none | /opt/retropie/configs/nes/retroarch.cfg |
+| [lr-quicknes](https://github.com/libretro/QuickNES_Core) | nes  | .7z .fig .mgd .nes .sfc .smc .swc .zip | none | /opt/retropie/configs/nes/retroarch.cfg |
 
 If you want to play Famicom Disk System games see the wiki page [HERE](Famicom-Disk-System)
 
@@ -17,7 +17,7 @@ If you want to play Famicom Disk System games see the wiki page [HERE](Famicom-D
 
 ## ROMS
 
-Accepted File Extensions: **.zip .nes .smc .sfc .fig .swc .mgd** - Make sure your roms have headers. Roms without headers will not work. If you want to use PAL roms, make sure they contain `(E)` or `(Europe)` in the filename, or else they may be run at the wrong speed.
+Accepted File Extensions: **.7z .fds .fig .mgd .nes .sfc .smc .swc .zip** - Make sure your roms have headers. Roms without headers will not work. If you want to use PAL roms, make sure they contain `(E)` or `(Europe)` in the filename, or else they may be run at the wrong speed.
 
 Place your NES Roms in
 ```
@@ -26,7 +26,7 @@ Place your NES Roms in
 
 ## Controls
 
-Both emulators utilise Retroarch configurations
+All three emulators utilise Retroarch configurations
 
 Add custom retroarch controls to the retroarch.cfg file in
 ```shell
