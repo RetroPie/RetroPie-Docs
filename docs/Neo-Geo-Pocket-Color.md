@@ -7,12 +7,12 @@ The Neo Geo Pocket Color was a handheld video game system released by SNK in 199
 
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
-| [lr-beetle-ngp](https://github.com/libretro/beetle-ngp-libretro.git) | ngpc  | .ngc .zip| none | /opt/retropie/configs/ngpc/retroarch.cfg |
+| [lr-beetle-ngp](https://github.com/libretro/beetle-ngp-libretro.git) | ngpc  | .7z .ngc .zip | none | /opt/retropie/configs/ngpc/retroarch.cfg |
 
 ## Emulator: [lr-beetle-ngp](https://github.com/libretro/beetle-ngp-libretro.git)
 
 ## ROMS
-Accept File Extensions: **.ngc**
+Accept File Extensions: **.7z .ngc .zip**
 
 Place your Neo Geo Pocket Color ROMs in
 ```
