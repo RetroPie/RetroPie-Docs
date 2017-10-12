@@ -7,11 +7,11 @@ _The Nintendo Entertainment System (NES) is an 8-bit home video game console tha
 
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
-| [lr-fceumm](https://github.com/libretro/libretro-fceumm) | nes  | .7z .fds .fig .mgd .nes .sfc .smc .swc .zip | none | /opt/retropie/configs/nes/retroarch.cfg |
-| [lr-nestopia](https://github.com/libretro/nestopia) | nes  | .7z .fds .fig .mgd .nes .sfc .smc .swc .zip | none | /opt/retropie/configs/nes/retroarch.cfg |
+| [lr-fceumm](https://github.com/libretro/libretro-fceumm) | nes  | .7z .fds .fig .mgd .nes .sfc .smc .swc .zip | disksys.rom | /opt/retropie/configs/nes/retroarch.cfg |
+| [lr-nestopia](https://github.com/libretro/nestopia) | nes  | .7z .fds .fig .mgd .nes .sfc .smc .swc .zip | disksys.rom | /opt/retropie/configs/nes/retroarch.cfg |
 | [lr-quicknes](https://github.com/libretro/QuickNES_Core) | nes  | .7z .fig .mgd .nes .sfc .smc .swc .zip | none | /opt/retropie/configs/nes/retroarch.cfg |
 
-If you want to play Famicom Disk System games see the wiki page [HERE](Famicom-Disk-System)
+If you want Famicom Disk System as a seperate system, see the wiki page [HERE](Famicom-Disk-System)
 
 ## Emulators: [lr-nestopia](https://github.com/libretro/nestopia), [lr-fceumm](https://github.com/libretro/libretro-fceumm), [lr-quicknes](https://github.com/libretro/QuickNES_Core)
 
@@ -23,6 +23,18 @@ Place your NES Roms in
 ```
 /home/pi/RetroPie/roms/nes
 ```
+## BIOS
+
+FDS games require the **disksys.rom** bios file.
+
+Place the BIOS in
+```
+/home/pi/RetroPie/BIOS
+```
+
+| Name | md5sum | CRC32 |
+| :--: | :--: | :--: |
+| Family Computer Disk System (Japan) (Rev 1) | ca30b50f880eb660a320674ed365ef7a | 5e607dcf |
 
 ## Controls
 
