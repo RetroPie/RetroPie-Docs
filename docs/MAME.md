@@ -13,17 +13,17 @@ This page is a resource for additional details on RetroPie's MAME emulators incl
 
 [**All Arcade ROMS Compatibility List**](https://docs.google.com/spreadsheets/d/1antILt7D12EWOFzyJwTfB86NceghMJKXG7CdYumuHec/edit?usp=sharing) feel free to contribute to the list.
 
-| Emulator | ROM Folder | Required ROM Set Version | Controller Configuration |
-| :---: | :---: | :---: | :---: |
-| [mame4all-pi](#mame4all-pi) | arcade **or** mame-mame4all | MAME 0.37b5 | /opt/retropie/configs/mame-mame4all/cfg/default.cfg |
-| [lr-mame2000](#lr-mame2000-mame-2000) | arcade **or** mame-libretro | MAME 0.37b5 | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/mame-mame4all/retroarch.cfg |
-| [lr-mame2003](#lr-mame2003-mame-2003) | arcade **or** mame-libretro | MAME 0.78 | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/mame-libretro/retroarch.cfg |
-| [lr-mame2010](#lr-mame2010-mame-2010) | arcade **or** mame-libretro | MAME 0.139 | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/mame-libretro/retroarch.cfg |
-| [lr-mame2014](#lr-mame2014-mame-2014) | arcade **or** mame-libretro | MAME 0.159 | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/mame-libretro/retroarch.cfg |
-| [lr-mame2016](#lr-mame2016-mame-2016) | arcade **or** mame-libretro | MAME 0.174 | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/mame-libretro/retroarch.cfg |
-| [AdvanceMAME 0.94](#advancemame-094) | arcade **or** mame-advmame | MAME 0.94 | /opt/retropie/configs/mame-advmame/advmame-0.94.0.rc |
-| [AdvanceMAME 1.4](#advancemame-14) | arcade **or** mame-advmame | MAME 0.106 | /opt/retropie/configs/mame-advmame/advmame-1.4.rc |
-| [AdvanceMAME 3](#advancemame-3) | arcade **or** mame-advmame | MAME 0.106 | /opt/retropie/configs/mame-advmame/advmame.rc |
+| Emulator | ROM Folder | Extension | Required ROM Set Version | Controller Configuration |
+| :---: | :---: | :---: | :---: | :---: |
+| [mame4all-pi](#mame4all-pi) | arcade **or** mame-mame4all | .zip | MAME 0.37b5 | /opt/retropie/configs/mame-mame4all/cfg/default.cfg |
+| [lr-mame2000](#lr-mame2000-mame-2000) | arcade **or** mame-libretro | .zip | MAME 0.37b5 | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/mame-mame4all/retroarch.cfg |
+| [lr-mame2003](#lr-mame2003-mame-2003) | arcade **or** mame-libretro | .zip | MAME 0.78 | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/mame-libretro/retroarch.cfg |
+| [lr-mame2010](#lr-mame2010-mame-2010) | arcade **or** mame-libretro | .zip | MAME 0.139 | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/mame-libretro/retroarch.cfg |
+| [lr-mame2014](#lr-mame2014-mame-2014) | arcade **or** mame-libretro | .zip | MAME 0.159 | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/mame-libretro/retroarch.cfg |
+| [lr-mame2016](#lr-mame2016-mame-2016) | arcade **or** mame-libretro | .zip | MAME 0.174 | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/mame-libretro/retroarch.cfg |
+| [AdvanceMAME 0.94](#advancemame-094) | arcade **or** mame-advmame | .zip | MAME 0.94 | /opt/retropie/configs/mame-advmame/advmame-0.94.0.rc |
+| [AdvanceMAME 1.4](#advancemame-14) | arcade **or** mame-advmame | .zip | MAME 0.106 | /opt/retropie/configs/mame-advmame/advmame-1.4.rc |
+| [AdvanceMAME 3](#advancemame-3) | arcade **or** mame-advmame | .zip | MAME 0.106 | /opt/retropie/configs/mame-advmame/advmame.rc |
 
 ## Arcade ROM paths
 
