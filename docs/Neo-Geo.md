@@ -18,7 +18,7 @@ This page is a resource for additional details on configuring a dedicated set of
 | [GnGeo-Pi](https://github.com/ymartel06/GnGeo-Pi) | neogeo | .zip | MAME 0.138 | /opt/retropie/configs/neogeo/gngeorc |
 
 ## Emulators: [lr-fbalpha](https://github.com/RetroPie/RetroPie-Setup/wiki/FinalBurn-Alpha#lr-fbalpha), [lr-fbalpha2012](https://github.com/RetroPie/RetroPie-Setup/wiki/FinalBurn-Alpha#lr-fbalpha2012), [PiFBA](https://github.com/RetroPie/RetroPie-Setup/wiki/FinalBurn-Alpha#pifba), [GnGeo-Pi](https://github.com/RetroPie/RetroPie-Setup/wiki/Neo-Geo#gngeo-pi)
-Refer to the main [FB Alpha](https://github.com/RetroPie/RetroPie-Setup/wiki/FinalBurn-Alpha) page for general information on all FBA emulator or the direct links above for in-depth infomation on lr-fbalpha, lr-fbalpha2012, or PiFBA. In-depth information on GnGeo-Pi can be found below, which is also linked directly above.
+Refer to the main [FB Alpha](https://github.com/RetroPie/RetroPie-Setup/wiki/FinalBurn-Alpha) page for general information on all FBA emulators or the direct links above for in-depth infomation on lr-fbalpha, lr-fbalpha2012, or PiFBA. In-depth information on GnGeo-Pi can be found below, which is also linked directly above.
 
 lr-fbalpha is the prefered Pi 2/Pi 3 Neo Geo emulator due to its accuracy. lr-fbalpha2012 is useful for any games that may be running slow in the latest version of lr-fbalpha and, if used exclusively instead of lr-fbalpha, will allow you to do full system updates without worrying about needing to update your ROM Set. PiFBA is recommended for those on a Pi 0 or Pi 1.
 
