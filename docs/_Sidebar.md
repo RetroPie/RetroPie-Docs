@@ -75,7 +75,7 @@
 * [Virtual Boy](Virtual-Boy)
 * [Wii](Wii)
 * [WonderSwan](WonderSwan)
-* [WonderSwan Color](Wonderswan-Color)
+* [WonderSwan Color](WonderSwan-Color)
 * [Zmachine](Zmachine)
 * [ZX Spectrum](ZX-Spectrum)
 
