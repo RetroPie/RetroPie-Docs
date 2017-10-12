@@ -25,9 +25,9 @@ Place your PC Engine/ TurboGrafx-16 ROMs in
 
 **Note: the BIOS file is only needed to play CD based games**
 
-The BIOS file necessary is called: **syscard3.pce** 
+The BIOS file must be named: **syscard3.pce** 
 
-Place your the syscard3.pce file in
+Place your syscard3.pce file in
 
 ```
 /home/pi/RetroPie/BIOS
@@ -35,11 +35,11 @@ Place your the syscard3.pce file in
 
 Working BIOS files:
 
-| Region | md5sum | CRC32 | Comment |
+| Filename | md5sum | CRC32 | Comment |
 | :--: | :--: | :--: | :--: |
-| RP Manager's Prefered Verification (Unknown) | ff1a674273fe3540ccef576376407d1d | 64f78e3c | |
-| Super CD-ROM System (Japan) (v3.0) | 38179df8f4ac870017db21ebcbf53114 | 6d9a73ef | |
-| TurboGrafx CD Super System Card (USA) (v3.0) | 0754f903b52e3b3342202bdafb13efa5 | 2b5b75fe | Most games work but some like Mirai Shounen Conan and Sylphia will not. |
+| syscard3.pce | ff1a674273fe3540ccef576376407d1d | 64f78e3c | This is the prefered BIOS for lr-beetle-pce-fast. It is unknown which region or version it is from and is not No-Intro verified, which indicates it is not a perfect copy, but it should be found fairly easily and is what lr-beetle-pce-fast was developed with.|
+| Super CD-ROM System (Japan) (v3.0).pce | 38179df8f4ac870017db21ebcbf53114 | 6d9a73ef | |
+| TurboGrafx CD Super System Card (USA) (v3.0).pce | 0754f903b52e3b3342202bdafb13efa5 | 2b5b75fe | Most games work but some like Mirai Shounen Conan and Sylphia will not. |
 
 ## Controls
 
