@@ -3,26 +3,27 @@
 ***
 _The Neo Geo is a cartridge-based arcade system board and home video game console released by SNK in 1990._
 
-See also: [MAME](MAME), [FinalBurn Alpha](FinalBurn-Alpha)
+See also: [FinalBurn Alpha](FinalBurn-Alpha), [MAME](MAME)
 ***
-
 There are a variety of arcade emulators available in RetroPie which can emulate Neo Geo games. There are significant differences in performance, compatibility, and configuration between them. If you're getting started with arcade emulation, start by reading [Arcade](Arcade).
 
 This page is a resource for additional details on configuring a dedicated set of Neo Geo ROMs including configuration paths, controls, and the ROM sets which each emulator requires.
+***
 
-## Recommended Neo Geo emulators
+| Emulator | Rom Folder | Extension | Required ROM Version | Controller Config |
+| :---: | :---: | :---: | :---: | :---: |
+| [lr-fbalpha](https://github.com/libretro/fbalpha) | neogeo  | .7z .zip | FB Alpha v0.2.97.42| /opt/retropie/configs/neogeo/retroarch.cfg |
+| [lr-fbalpha2012](https://github.com/libretro/fbalpha2012) | neogeo  | .7z .zip | FB Alpha v0.2.97.30 | /opt/retropie/configs/neogeo/retroarch.cfg |
+| [PiFBA](https://github.com/RetroPie/pifba) | neogeo  | .zip | FB Alpha 0.2.96.71 | /opt/retropie/emulators/pifba/fba2x.cfg |
+| [GnGeo-Pi](https://github.com/ymartel06/GnGeo-Pi) | neogeo | .zip | MAME 0.138 | /opt/retropie/configs/neogeo/gngeorc |
 
-`lr-fbalpha` is recommended for emulating Neo Geo games because it features the libretro control system, shaders, and all other libretro advantages. Please also refer to [FB Alpha](FinalBurn-Alpha) and specifically [lr-fbalpha](lr-fbalpha) for configuration information.
+## Emulators: [lr-fbalpha](https://github.com/RetroPie/RetroPie-Setup/wiki/FinalBurn-Alpha#lr-fbalpha), [lr-fbalpha2012](https://github.com/RetroPie/RetroPie-Setup/wiki/FinalBurn-Alpha#lr-fbalpha2012), [PiFBA](https://github.com/RetroPie/RetroPie-Setup/wiki/FinalBurn-Alpha#pifba), [GnGeo-Pi](https://github.com/RetroPie/RetroPie-Setup/wiki/Neo-Geo#gngeo-pi)
+Refer to the main [FB Alpha](https://github.com/RetroPie/RetroPie-Setup/wiki/FinalBurn-Alpha) page for general information on all FBA emulator or the direct links above for in-depth infomation on lr-fbalpha, lr-fbalpha2012, or PiFBA. In-depth information on GnGeo-Pi can be found below, which is also linked directly above.
 
-Users with Raspberry Pi 1s may prefer the standalone emulator `PiFBA`, which will have better performance on limited hardware. The GnGeo-Pi emulator is also available. 
-
-| Emulator | Rom Folder | Required ROM Version | Controller Config |
-| :---: | :---: | :---: | :---: | 
-| [lr-fbalpha](#lr-fbalpha) | arcade **or** fba **or** neogeo  | FB Alpha v0.2.97.40 |  /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/fba/retroarch.cfg, **or** /opt/retropie/configs/neogeo/retroarch.cfg |
-| [PiFBA](#pifba) | arcade **or** fba **or** neogeo  | FBA 0.2.96.71 | /opt/retropie/emulators/pifba/fba2x.cfg **or** /opt/retropie/configs/fba/fba2x.cfg |
-| [GnGeo-Pi](#gngeo-pi) | arcade **or** neogeo | MAME 0.138 | /opt/retropie/configs/neogeo/gngeorc |
+lr-fbalpha is the prefered Pi 2/Pi 3 Neo Geo emulator due to its accuracy. lr-fbalpha2012 is useful for any games that may be running slow in the latest version of lr-fbalpha and, if used exclusively instead of lr-fbalpha, will allow you to do full system updates without worrying about needing to update your ROM Set. PiFBA is recommended for those on a Pi 0 or Pi 1.
 
 ## ROMS
+Accepted File Extensions: **.7z .zip**
 
 Place Neo Geo ROMs in
 ```
@@ -30,27 +31,26 @@ Place Neo Geo ROMs in
 ```
 ## BIOS
 
-Neo-Geo ROMs require a `neogeo.zip` BIOS file with the exact same MAME or FB Alpha version as the emulator you select. Place the correct `neogeo.zip` with your ROMs in:
+Neo Geo ROMs require a `neogeo.zip` BIOS file with the exact same MAME or FB Alpha version as the emulator you select. Place the correct `neogeo.zip` with your ROMs in:
 ```
 /home/pi/RetroPie/roms/neogeo
 ```
 Instructions on how to install the Neo Geo Unibios on lr-fbalpha can be found here: [[lr-fbalpha#neo-geo-unibios]] The Unibios can be used as documented on the official page: <http://unibios.free.fr/howitworks.html>
 
 * On the Unibios boot screen
-    * Neo-Geo **A+B+C** (RetroPad B+A+Y) for BIOS Menu
-    * Neo-Geo **B+C+D** (RetroPad A+Y+X) for Test Menu
+    * Neo Geo **A+B+C** (RetroPad B+A+Y) for BIOS Menu
+    * Neo Geo **B+C+D** (RetroPad A+Y+X) for Test Menu
 * At any time
-    * Neo-Geo **Start+A+B+C** (RetroPad Start+B+A+Y) for In-Game Menu
+    * Neo Geo **Start+A+B+C** (RetroPad Start+B+A+Y) for In-Game Menu
 
-The menus allow you to change various settings like region, dip switch settings for gameplay options like difficulty or blood, and coin or free play settings. Unibios settings will persist after quitting FBA, launching another Neo-Geo game, or rebooting RetroPie.
+The menus allow you to change various settings like region, dip switch settings for gameplay options like difficulty or blood, and coin or free play settings. Unibios settings will persist after quitting FBA, launching another Neo Geo game, or rebooting RetroPie.
 
-## Emulators
+## Controls
+You will configure controls differently depending on which emulator you use:
 
-### lr-fbalpha
-[Visit the Final Burn Alpha homepage on github](https://github.com/libretro/fbalpha)
-**lr-fbalpha Controls**
+### lr-fbalpha and lr-fbalpha2012
 
-lr-fbalpha utilises RetroArch configs. Add custom RetrAarch controls to the `retroarch.cfg` file in:
+lr-fbalpha and lr-fbalpha2012 utilise RetroArch configs. Add custom RetroArch controls to the `retroarch.cfg` file in:
 ```
 /opt/retropie/configs/fba/retroarch.cfg
 ```
@@ -60,8 +60,6 @@ For more information on custom RetroArch controls see: [RetroArch Configuration]
 ---
 
 ### PiFBA
-[Visit the PiFBA homepage on github](https://github.com/RetroPie/pifba)
-**PiFBA Controls**
 
 PiFBA controls are located in:
 ```shell
