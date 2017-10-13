@@ -45,6 +45,46 @@ Since ES version 2.4.0 you can create a list of your favorite games. You can als
 It's pretty simple: just move to the game you want to add and press the button you set to be `Y`. Pressing `Y` when the cursor is on a game already present in the Favorites, removes it from the list.
 
 
+## Custom collections
+
+Since ES version 2.6.0 you can create a custom list of games. You can group games by any category you want. Examples: shoot'em ups, beat'em ups, Street Fighter, RPGs, Batman, TMNT, Mega Man or any other category you can think.
+
+In the example below we'll create a custom collection to group Mega Man games:
+
+1. press `Start` to access the ES main menu and then select "**GAME COLLECTIONS SETTINGS**".
+
+2. Select the option "**CREATE NEW CUSTOM COLLECTION**".
+
+| ![es-create-new-custom-collection](https://user-images.githubusercontent.com/8508804/31518386-7443b3ea-af75-11e7-9873-fc9339ab6a1f.png) |
+| :---: |
+
+3. An input box will be shown. Type the name of your custom collection.
+
+| ![es-new-collection-name](https://user-images.githubusercontent.com/8508804/31518302-2ab0ec2a-af75-11e7-917b-557a28a1f87f.png) |
+| :---: |
+
+4. After typing the name and pressing OK, you're now in a mode where the button you set to be `Y` adds a game to the collection. Look the message on top of the image below. (**Note: while in this mode you can't add games to your favorites**).
+
+| ![es-editing-custom-collection](https://user-images.githubusercontent.com/8508804/31518300-2a6180ae-af75-11e7-9919-baec90244166.png) |
+| :---: |
+
+5. Move the cursor to the game you want to add to your collection and press `Y`, just like you do to add a game to Favorites. After adding a game you'll see a message on the top of screen, like in the image below.
+
+| ![es-added-to-custom-collection](https://user-images.githubusercontent.com/8508804/31518291-29af22ce-af75-11e7-8b02-947eb1765e09.png) |
+| :---: |
+
+6. After adding some games, you can go to the "collections system" and you'll see the "megaman" collection.
+
+
+| ![es-collections](https://user-images.githubusercontent.com/8508804/31518292-29d7d5e8-af75-11e7-9c0a-857f7a2acf07.png) |
+| :---: |
+
+| ![es-collections2](https://user-images.githubusercontent.com/8508804/31518296-2a03acf4-af75-11e7-9b15-342a8c6845f9.png) |
+| :---: |
+
+| ![es-megaman-custom-collection](https://user-images.githubusercontent.com/8508804/31518301-2a8557b8-af75-11e7-87b0-b363ced3d0c2.png) |
+| :---: |
+
 ## Editing ES Configs
 
 ES uses xml files for its database and caches them on loading and exit, so **any edits to the configuration files will need to be changed when ES is closed.**
