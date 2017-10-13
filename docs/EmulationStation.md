@@ -49,7 +49,7 @@ It's pretty simple: just move to the game you want to add and press the button y
 
 Since ES version 2.6.0 you can create a custom list of games. You can group games by any category you want. Examples: shoot'em ups, beat'em ups, Street Fighter, RPGs, Batman, TMNT, Mega Man or any other category you can think.
 
-In the example below we'll create a custom collection to group Mega Man games:
+In the example below we'll create a custom collection to group Mega Man games. **Note: You need a keyboard to type the name of your custom collection**.
 
 1. press `Start` to access the ES main menu and then select "**GAME COLLECTIONS SETTINGS**".
 
