@@ -219,27 +219,6 @@ To see a complete list of the supported command line arguments
 emulationstation --help
 ```
 
-
-### Experimental ES Forks
-
-There are a few experimental forks of ES that are worth checking out if you enjoy customising your system USE AT YOUR OWN RISK!
-
-#### Child Friendly 
-
-A RetroPie user known as Zigurana created a child friendly version of ES that is great for parents looking to simplify their builds against accidental modifications from their young ones. It is also great for when friends come by or if your build is in a public place.
-
-It can be installed from the experimental menu of the setup script
-
-More information [HERE](Child-friendly-EmulationStation)
-
-#### Grid View 
-
-A RetroPie user known as Jacobfk20 created a fork of ES that incorporates a grid view, it also includes wifi integration, an on screen keyboard, and some system diagnostics.
-
-a basic install module can be found [HERE](https://gist.github.com/PokeEngineer/e319fbe347f2da23239e2eefbe93c5a8)
-
-More discussion on the forum [HERE](https://retropie.org.uk/forum/topic/3121/emulationstation-mod)
-
 ### Alternative Frontends
 
 Because of the development hiatus, there has been some attention towards other front-ends. The following alternate frontends can be installed from experimental packages of the RetroPie Setup-Script but support is currently only preliminary.
