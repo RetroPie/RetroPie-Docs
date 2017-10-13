@@ -68,19 +68,18 @@ In the example below we'll create a custom collection to group Mega Man games. *
 | ![es-editing-custom-collection](https://user-images.githubusercontent.com/8508804/31518300-2a6180ae-af75-11e7-9919-baec90244166.png) |
 | :---: |
 
-5. Move the cursor to the game you want to add to your collection and press `Y`, just like you do to add a game to Favorites. After adding a game you'll see a message on the top of screen, like in the image below.
+5. Move the cursor to the game you want to add to your collection and press `Y`, just like you do to add/remove a game to Favorites. After adding a game you'll see a message on the top of screen, like in the image below.
 
 | ![es-added-to-custom-collection](https://user-images.githubusercontent.com/8508804/31518291-29af22ce-af75-11e7-8b02-947eb1765e09.png) |
 | :---: |
 
-6. After adding some games, you can "**FINISH EDITING 'YOUR CUSTOM' COLLECTION**" in the "**GAME COLLECTIONS SETTINGS**" menu.
+6. After adding the games you want in your collection, go to "**GAME COLLECTIONS SETTINGS**" menu and then select "**FINISH EDITING 'YOUR CUSTOM' COLLECTION**".
 
 | ![es-finish-editing-custom-collection](https://user-images.githubusercontent.com/8508804/31546747-fdde5b20-affa-11e7-86ae-970427d84a2c.png) |
 | :---: |
 
 
-7. Now go to the "collections system" and you'll see the "megaman" collection.
-
+7. Now go to the "collections system" and you'll see your custom collection.
 
 | ![es-collections](https://user-images.githubusercontent.com/8508804/31518292-29d7d5e8-af75-11e7-9c0a-857f7a2acf07.png) |
 | :---: |
@@ -89,6 +88,11 @@ In the example below we'll create a custom collection to group Mega Man games. *
 | :---: |
 
 | ![es-megaman-custom-collection](https://user-images.githubusercontent.com/8508804/31518301-2a8557b8-af75-11e7-87b0-b363ced3d0c2.png) |
+| :---: |
+
+8. Once you "**FINISH EDITING 'YOUR CUSTOM' COLLECTION**", the `Y` button recover the behavior of adding/removing games to the favorites list. If you want to put ES on "editing custom collection mode" again, go the custom collection game list, press `Select` and then choose "**ADD/REMOVE GAMES TO THIS GAME COLLECTION**".
+
+| ![es-addremove-games-to-collection](https://user-images.githubusercontent.com/8508804/31560129-8264bcc6-b029-11e7-949a-b6eec79a98fa.png) |
 | :---: |
 
 ## Editing ES Configs
