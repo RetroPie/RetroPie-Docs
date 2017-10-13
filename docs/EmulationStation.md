@@ -73,7 +73,13 @@ In the example below we'll create a custom collection to group Mega Man games:
 | ![es-added-to-custom-collection](https://user-images.githubusercontent.com/8508804/31518291-29af22ce-af75-11e7-8b02-947eb1765e09.png) |
 | :---: |
 
-6. After adding some games, you can go to the "collections system" and you'll see the "megaman" collection.
+6. After adding some games, you can "**FINISH EDITING 'YOUR CUSTOM' COLLECTION**" in the "**GAME COLLECTIONS SETTINGS**" menu.
+
+| ![es-finish-editing-custom-collection](https://user-images.githubusercontent.com/8508804/31546747-fdde5b20-affa-11e7-86ae-970427d84a2c.png) |
+| :---: |
+
+
+7. Now go to the "collections system" and you'll see the "megaman" collection.
 
 
 | ![es-collections](https://user-images.githubusercontent.com/8508804/31518292-29d7d5e8-af75-11e7-9c0a-857f7a2acf07.png) |
