@@ -1,6 +1,6 @@
 ## Introduction
 
-[EmulationStation](http://emulationstation.org/) is the official graphical frontend of the RetroPie project. 
+EmulationStation is the official graphical frontend of the RetroPie project. 
 
 | ![firstboot](https://cloud.githubusercontent.com/assets/10035308/16217874/c6bbdb3a-3734-11e6-998f-8cc714a320ce.png)|
 | :---: | 
@@ -10,6 +10,40 @@ EmulationStation is not an emulator, rather it is a polished game launcher that 
 - Controller and keyboard support
 - Custom themes
 - Scraper for box art and game metadata
+
+ES was originally developed by Aloshi (code) and Nils Bonenberger (UI) but, since they have moved on to other projects, the RetroPie project keeps [its own fork](https://github.com/RetroPie/EmulationStation/). That fork has made some improvements like video support, faster load times, favorites, and controller integration among others. Any reference for versions in this doc is related to the [RetroPie's fork](https://github.com/RetroPie/EmulationStation/).
+
+
+## Enabling Favorites, All Games, and Last Played systems
+
+Since ES version 2.4.0 you can create a list of your favorite games. You can also have a list of all games, and your last played games. These lists are all optional and in the example below we'll see how to enable them.
+
+**Note: In order to use this feature, the theme you're using MUST support it**.
+
+1. press `Start` to access the ES main menu and then select "**GAME COLLECTIONS SETTINGS**".
+
+| ![es-main-menu](https://user-images.githubusercontent.com/8508804/31517232-a9998532-af71-11e7-83bf-85973b96a1f8.png) |
+| :---: |
+
+2. Next, select the first option: "**AUTOMATIC GAME COLLECTIONS**".
+
+| ![es-game-collection-settings](https://user-images.githubusercontent.com/8508804/31517231-a967c09c-af71-11e7-8a22-f8aba2a84073.png) |
+| :---: |
+
+3. And then mark those you want to enable.
+
+| ![es-select-collections](https://user-images.githubusercontent.com/8508804/31517233-a9c60cce-af71-11e7-84be-8d67bef4004d.png) |
+| :---: |
+
+4. After marking those you want, go back to the default ES user interface. Note that now you have more systems, like in the example below:
+
+| ![es-favorites-lastplayed](https://user-images.githubusercontent.com/8508804/31517230-a9422364-af71-11e7-9157-5943dbd45bb7.png) |
+| :---: |
+
+### Adding games to Favorites
+
+It's pretty simple: just move to the game you want to add and press the button you set to be `Y`. Pressing `Y` when the cursor is on a game already present in the Favorites, removes it from the list.
+
 
 ## Editing ES Configs
 
@@ -184,12 +218,6 @@ To see a complete list of the supported command line arguments
 ```
 emulationstation --help
 ```
-
-## Development Status
-
-ES was originally developed by Aloshi (code) and Nils Bonenberger (UI) but they have since moved on to other projects. There is no longer any maintained upstream project so any modifications done to ES are on uofficial/partially maintained forks of the project. 
-
-RetroPie's fork of EmulationStation has made some improvements like video support, faster load times, and controller integration among others.  
 
 
 ### Experimental ES Forks
