@@ -49,7 +49,7 @@ It's pretty simple: just move to the game you want to add and press the button y
 
 Since ES version 2.6.0 you can create a custom list of games. You can group games by any category you want. Examples: shoot'em ups, beat'em ups, Street Fighter, RPGs, Batman, TMNT, Mega Man or any other category you can think.
 
-If the name of the collection you're creating matches an unused theme folder, it will be shown in the main carousel as a new system entry. If there's no matching theme folder for the name you selected, it will be grouped under a new "My Collections" carousel system entry.
+If the name of the collection you're creating matches an unused theme folder, it will be shown in the main carousel as a new system entry. If there's no matching theme folder for the name you selected, it will be grouped under a new "Collections" carousel system entry.
 
 In the example below we'll create a custom collection to group Mega Man games. **Note: You can either choose to create a collection based on an unused theme folder, or if creating from scratch you'll need a keyboard to type the name of your custom collection**.
 
@@ -75,7 +75,9 @@ In the example below we'll create a custom collection to group Mega Man games. *
 | ![es-added-to-custom-collection](https://user-images.githubusercontent.com/8508804/31518291-29af22ce-af75-11e7-8b02-947eb1765e09.png) |
 | :---: |
 
-6. After adding the games you want in your collection, go to "**GAME COLLECTIONS SETTINGS**" menu and then select "**FINISH EDITING 'YOUR CUSTOM' COLLECTION**".
+6. After adding the games you want in your collection, you can finish editing the collection by either:
+a) going to any game list, pressing `Select` and selecting "**FINISH EDITING 'YOUR CUSTOM' COLLECTION**", or
+b) going to "**GAME COLLECTIONS SETTINGS**" menu and then select "**FINISH EDITING 'YOUR CUSTOM' COLLECTION**".
 
 | ![es-finish-editing-custom-collection](https://user-images.githubusercontent.com/8508804/31546747-fdde5b20-affa-11e7-86ae-970427d84a2c.png) |
 | :---: |
