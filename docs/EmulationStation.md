@@ -11,7 +11,7 @@ EmulationStation is not an emulator, rather it is a polished game launcher that 
 - Custom themes
 - Scraper for box art and game metadata
 
-ES was originally developed by Aloshi (code) and Nils Bonenberger (UI) but, since they have moved on to other projects, the RetroPie project keeps [its own fork](https://github.com/RetroPie/EmulationStation/). That fork has made some improvements like video support, faster load times, favorites, and controller integration among others. Any reference for versions in this doc is related to the [RetroPie's fork](https://github.com/RetroPie/EmulationStation/).
+ES was originally developed by Aloshi (code) and Nils Bonenberger (UI) but, since they have moved on to other projects, the RetroPie project keeps [its own fork](https://github.com/RetroPie/EmulationStation/). That fork has made some improvements like [video support](../Scraper#scraping-videos), faster load times, favorites, and controller integration among others. Any reference for versions in this doc is related to the [RetroPie's fork](https://github.com/RetroPie/EmulationStation/).
 
 
 ## Enabling Favorites, All Games, and Last Played systems
