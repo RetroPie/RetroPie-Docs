@@ -51,6 +51,14 @@ Make sure to update to the latest version of Retropie-Setup script if you're mis
 
 - **Update scraper to the latest version:** This updates the scraper to the latest version.
 
+### Scraping videos
+
+Since EmulationStation 2.1.0 you can have a video preview as scraped art. Here is a video showing how to scrape videos using the Steven Selph's Scraper
+
+<a href="https://youtube.com/watch?v=rj1841sL8ro
+" target="_blank"><img src="https://i.ytimg.com/vi/rj1841sL8ro/maxresdefault.jpg" 
+alt="Scraping Videos"/></a>
+
 ### Slow Boot and Shutdown Times
 
 You'll notice after adding lots of ROMs and scraping them that your boot and shutdown time can increase substantially- some solutions to speed up your boot and shutdown times are described [**HERE**](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#why-does-shut-down-and-reboot-take-ages)
