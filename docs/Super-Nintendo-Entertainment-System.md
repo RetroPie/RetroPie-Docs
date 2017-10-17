@@ -29,11 +29,11 @@ Place your SNES ROMs in
 
 ## Satellaview
 
-Satellaview games are supported, but most you will find on the internet have the ".bs" extension, which causes issues such as the fact ".bs" is not included in any of the emulators' compression support and that it isn't currently a valid extension in EmulationStation default "es_systems.cfg".
+Satellaview games are supported, but most you will find on the internet have the ".bs" extension, which is an issue if the ROM is compressed with the extension since ".bs" is not included in any of the emulators' compression support.
 
-First you will need to uncompress your ROMs from ".zip" or ".7z" (if you have them compressed that is), then either add ".bs" to a custom "es_systems.cfg" SNES system's extension section detailed [HERE](https://github.com/RetroPie/RetroPie-Setup/wiki/Add-a-New-System-in-EmulationStation), or change all of the ROMs' extension from ".bs" to ".sfc" then recompress the ".sfc" files back to ".zip" or ".7z" archive formats.
+First you will need to uncompress your ROMs from ".zip" or ".7z" (if you have them compressed that is), then either leave them uncompressed, or change all of the ROMs' extension from ".bs" to ".sfc" then recompress the ".sfc" files back to ".zip" or ".7z" archive formats.
 
-A quick way to change all of your ".bs" ROMs for Windows users is to open NotePad, put the command below in it, save the file with a ".bat" (name it something like "bs to sfc.bat"), then place the new batch file in the folder containing your uncompressed ".bs" ROMs.
+A quick way to change all of your ".bs" ROMs for Windows users is to open NotePad, put the command found below in it, save the file with a ".bat" extension (name it something like "bs to sfc.bat"), then place the new batch file in the folder containing your uncompressed ".bs" ROMs.
 
 `rename *.bs *.sfc`
 
