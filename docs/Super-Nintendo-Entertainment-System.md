@@ -6,15 +6,15 @@ _The Super Nintendo Entertainment System (or SNES) was a 4th generation video ga
 
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
-| lr-snes9x | snes | .7z .bin .fig .mgd .sfc .smc .swc .zip | none | /opt/retropie/configs/snes/retroarch.cfg |
 | [lr-snes9x2010](https://github.com/libretro/snes9x2010) | snes  | .7z .bin .fig .mgd .sfc .smc .swc .zip | none | /opt/retropie/configs/snes/retroarch.cfg |
-| [lr-armsnes](https://github.com/RetroPie/ARMSNES-libretro) | snes | .7z .bin .fig .mgd .sfc .smc .swc .zip | none | /opt/retropie/configs/snes/retroarch.cfg |
-| [lr-snes9x2005](https://github.com/libretro/snes9x2005) | snes | .7z .bin .fig .mgd .sfc .smc .swc .zip | none | /opt/retropie/configs/snes/retroarch.cfg |
+| lr-snes9x | snes | .7z .bin .fig .mgd .sfc .smc .swc .zip | none | /opt/retropie/configs/snes/retroarch.cfg |
 | [lr-snes9x2002](https://github.com/libretro/snes9x2002) | snes | .7z .bin .fig .mgd .sfc .smc .swc .zip | none | /opt/retropie/configs/snes/retroarch.cfg |
-| [snes9x-rpi](https://github.com/RetroPie/snes9x-rpi) | snes | .fig .sfc .smc .swc .zip | none | /opt/retropie/configs/snes/snes9x.cfg |
 | [PiSNES](https://github.com/RetroPie/pisnes) | snes | .fig .sfc .smc .swc .zip | none | /opt/retropie/configs/snes/snes9x.cfg |
+| [lr-snes9x2005](https://github.com/libretro/snes9x2005) | snes | .7z .bin .fig .mgd .sfc .smc .swc .zip | none | /opt/retropie/configs/snes/retroarch.cfg |
+| [lr-armsnes](https://github.com/RetroPie/ARMSNES-libretro) | snes | .7z .bin .fig .mgd .sfc .smc .swc .zip | none | /opt/retropie/configs/snes/retroarch.cfg |
+| [snes9x-rpi](https://github.com/RetroPie/snes9x-rpi) | snes | .fig .sfc .smc .swc .zip | none | /opt/retropie/configs/snes/snes9x.cfg |
 
-## Emulators: lr-snes9x, [lr-snes9x-2010](https://github.com/libretro/snes9x2010), [PiSNES](https://github.com/RetroPie/pisnes), [snes9x-rpi](https://github.com/RetroPie/snes9x-rpi), [lr-armsnes](https://github.com/RetroPie/ARMSNES-libretro), [lr-snes9x2005](https://github.com/libretro/snes9x2005), [lr-snes9x2002](https://github.com/libretro/snes9x2002)
+## Emulators: [lr-snes9x-2010](https://github.com/libretro/snes9x2010), lr-snes9x, [lr-snes9x2002](https://github.com/libretro/snes9x2002), [PiSNES](https://github.com/RetroPie/pisnes), [lr-snes9x2005](https://github.com/libretro/snes9x2005), [lr-armsnes](https://github.com/RetroPie/ARMSNES-libretro), [snes9x-rpi](https://github.com/RetroPie/snes9x-rpi)
 
 RetroPie comes included with multiple SNES emulators. If you have a Pi 2, the preference is **lr-snes9x2010** due to better speed and sound emulation. lr-snes9x2002 is recommended for Super FX chip games on the Pi 2. lr-snes9x is an optional emulator that requires a sufficiently overclocked Pi 3, but has MSU-1 support and more accurate emulation.
 
@@ -27,11 +27,23 @@ Place your SNES ROMs in
 /home/pi/RetroPie/roms/snes
 ```
 
+## Satellaview
+
+Satellaview games are supported, but most you will find on the internet have the ".bs" extension, which causes issues such as the fact ".bs" is not included in any of the emulators' compression support and that it isn't currently a valid extension in EmulationStation default "es_systems.cfg".
+
+First you will need to uncompress your ROMs from ".zip" or ".7z" (if you have them compressed that is), then either add ".bs" to a custom "es_systems.cfg" SNES system's extension section detailed [HERE](https://github.com/RetroPie/RetroPie-Setup/wiki/Add-a-New-System-in-EmulationStation), or change all of the ROMs' extension from ".bs" to ".sfc" then recompress the ".sfc" files back to ".zip" or ".7z" archive formats.
+
+A quick way to change all of your ".bs" ROMs for Windows users is to open NotePad, put the command below in it, save the file with a ".bat" (name it something like "bs to sfc.bat"), then place the new batch file in the folder containing your uncompressed ".bs" ROMs.
+
+`rename *.bs *.sfc`
+
+Programs such as PeaZip or WinRAR can be used to batch compress all of the newly renamed ROMs back into separate ".zip" or ".7z" archives.
+
 ## Controls
 
-### lr-snes9x, lr-armsnes, lr-snes9x2005, lr-snes9x2002, lr-snes9x2010
+### lr-snes9x2010, lr-snes9x, lr-snes9x2002, lr-snes9x2005, lr-armsnes
 
-lr-snes9x, lr-armsnes, lr-snes9x2005, lr-snes9x2002, lr-snes9x2010 all utilise RetroArch configurations
+lr-snes9x2010, lr-snes9x, lr-snes9x2002, lr-snes9x2005, lr-armsnes all utilise RetroArch configurations
 
 Add custom retroarch controls to the retroarch.cfg file in
 ```shell
