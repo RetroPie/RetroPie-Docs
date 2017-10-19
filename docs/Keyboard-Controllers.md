@@ -64,6 +64,7 @@ START 2		2
 2 B		ESC
 ```
 **Potential conflicts with A, B switches**
+
 Looking at these defaults, all of the directional keys and switches 1-8  for each player ("1 SW 1", "1 SW 2", etc.) align with MAME defaults, so when wiring pushbuttons, it makes sense to use these. However, newer IPAC models also have the "1 A", "1 B", "2 A" and "2 B" switches. The default keys sent by these are "P", "ENTER", "TAB", and "ESC" respectively. MAME uses those keys for administrative functions: TAB brings up the GUI menu in MAME, P is for pause, ESC is exit. Enter makes menu selections. This can lead to confusion, as "A" "B" happen to be common gamepad buttons (like on the Nintendo NES) but using these switches for pushbuttons and expecting seamless gameplay in MAME will be problematic. It is perhaps better to set aside "1 A", "1 B", "2 A" and "2 B" as dedicated admin buttons. They are convenient if you have an Exit button on your control panel, for example, but will require confusing remapping in software to eliminate conflicts in MAME if you use them for your player pushbuttons.
 
 ### Emulation Station and RetroArch
