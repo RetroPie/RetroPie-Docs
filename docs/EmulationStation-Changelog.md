@@ -1,6 +1,7 @@
 This page is a list of all of the changelogs for each version of EmulationStation. For a complete list of all commits to the source code see [here](https://github.com/RetroPie/EmulationStation/commits/master):
 
 - Latest from Source
+- 2.6.5
   - [ENHANCEMENT](https://github.com/RetroPie/EmulationStation/pull/256): Default image paths in themes.
   - [ENHANCEMENT](https://github.com/RetroPie/EmulationStation/pull/255): Normalize volume level for OMX player.
   - [NEW FEATURE](https://github.com/RetroPie/EmulationStation/pull/235): Kiosk Mode allows certain menu items.
