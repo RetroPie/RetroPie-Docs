@@ -48,9 +48,9 @@ Config Dir: /opt/retropie/configs/fba/retroarch.cfg
 
 **FB Alpha v0.2.97.42 DAT File**:  [FB Alpha v0.2.97.42 (NeoGeo Only)](https://drive.google.com/file/d/0BygnFI5SL7x2NXcwcEdhaUNEOFE/view?usp=sharing)
 
-**[lr-fbalpha Compatibility List]
-(https://raw.githubusercontent.com/libretro/fbalpha/master/gamelist.txt)** This is the official and accurate list, sadly the spreadsheet below, being public, contains a lot of false report about non-working games.
-(https://docs.google.com/spreadsheets/d/1GaqIIoiWbzKHwZ52S2xCSDQXILo81Ls1mHK6czKGAtM/edit?usp=sharing)** feel free to contribute to the list.
+**[lr-fbalpha Compatibility Lists]**
+(https://raw.githubusercontent.com/libretro/fbalpha/master/gamelist.txt) : This is the official and accurate list, sadly the spreadsheet below, being public, contains a lot of false report about non-working games.
+(https://docs.google.com/spreadsheets/d/1GaqIIoiWbzKHwZ52S2xCSDQXILo81Ls1mHK6czKGAtM/edit?usp=sharing) : feel free to contribute to the list.
 
 **Controls:**
 lr-fbalpha utilises RetroArch configs. Add custom retroarch controls to the retroarch.cfg file in:
