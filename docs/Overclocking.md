@@ -440,6 +440,7 @@ For example, setting 100MHz on a Pi 3 results in 100MHz, but setting 99MHz actua
 * http://elinux.org/RPiconfig#Overclocking (some outdated info for Pi 1, not Pi 2/3/Zero)
 * Official Pi Foundation forums thread (long): https://www.raspberrypi.org/forums/viewtopic.php?f=29&t=6201
 * http://linuxonflash.blogspot.com/2015/02/a-look-at-raspberry-pi-2-performance.html
+* Raspberry Pi 3 overclocking: https://haydenjames.io/raspberry-pi-3-overclock/
 
 #### Cooling
 
