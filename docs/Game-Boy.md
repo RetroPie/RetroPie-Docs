@@ -12,6 +12,7 @@ _The Game Boy was released by Nintendo in 1989 thus kicking off the era of handh
 ## Emulators: [lr-gambatte](https://github.com/libretro/gambatte-libretro), [lr-tgbdual](https://github.com/libretro/tgbdual-libretro)
 
 lr-gambatte is the prefered single-player emulator, while lr-tgbdual runs two instances of the same game for either two-player link cable games or parallel play on the same system.
+lr-gambatte supports playing link cable games over network (not to be mixed up with netplay).
 
 ## ROMS
 
@@ -137,3 +138,31 @@ Open the RetroArch RGUI by pressing **Select+X** on the controller, or **Hotkey+
 Press **B** to go back to the Quick Menu and **Resume Content**.
 
 To make the change permanent, choose **Save Configuration** on the main RGUI menu.
+
+## Playing two-player link cable games
+
+To play two-player link cable games with lr-tgbdual no further configuration needs to be done. The only thing needed of course are two controllers. Two synced game screens will be displayed side-by-side by default. Player one is able to control the left screen, while player two controls the right.
+
+To play two-player link cable games with lr-gambatte, two RetroPie systems in the same network are needed.
+Make the following changes to `/opt/retropie/configs/all/retroarch-core-options.cfg` :
+
+System 1 (Server, e.g. 192.168.0.1):
+~~~
+gambatte_gb_link_mode = "Network Server"
+gambatte_gb_link_network_port = "56400"
+gambatte_gb_link_network_server_ip_octet1 = "0"
+gambatte_gb_link_network_server_ip_octet2 = "0"
+gambatte_gb_link_network_server_ip_octet3 = "0"
+gambatte_gb_link_network_server_ip_octet4 = "0"
+~~~
+
+System 2 (Client):
+~~~
+gambatte_gb_link_mode = "Network Client"
+gambatte_gb_link_network_port = "56400"
+gambatte_gb_link_network_server_ip_octet1 = "192"
+gambatte_gb_link_network_server_ip_octet2 = "168"
+gambatte_gb_link_network_server_ip_octet3 = "0"
+gambatte_gb_link_network_server_ip_octet4 = "1"
+~~~
+To begin the network game first start the game on system 1 and then join system 2.
