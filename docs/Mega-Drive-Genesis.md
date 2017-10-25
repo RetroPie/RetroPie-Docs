@@ -12,7 +12,7 @@ _This console, known as the Mega Drive everywhere except in the USA where it was
 | [DGen](http://dgen.sourceforge.net/) | megadrive | .bin .md .smd | none | /opt/retropie/configs/megadrive/dgenrc |
 
 ## Emulators: [lr-genesis-plus-gx](https://github.com/libretro/Genesis-Plus-GX), [lr-picodrive](https://github.com/libretro/picodrive), [DGen](http://dgen.sourceforge.net/)
-lr-genesis-plus-gx is best for the Pi 3/Pi 2 due to its accuracy. lr-picodrive is more suited for use on the Pi 0/Pi 1 due to its speed. DGEN has the worst performance and can be tedious to configure the controls for.
+lr-genesis-plus-gx is best for the Pi 3/Pi 2 due to its accuracy. lr-picodrive is more suited for use on the Pi 0/Pi 1 due to its speed. DGen has the worst performance and can be tedious to configure the controls for.
 ## ROMS
 Accepted File Extensions: **.7z .bin .gen .md .sg .smd .zip**
 
@@ -27,7 +27,7 @@ or
 
 ## Controls
 
-There are two methods for configuring controls - one for lr-picodrive and lr-genesis-plus-gx and another for DGen.
+There are two methods for configuring controls - one way for both lr-genesis-plus-gx and lr-picodrive, and another way for DGen.
 
 ### lr-genesis-plus-gx and lr-picodrive
 
@@ -108,7 +108,7 @@ picodrive_input2 = "6 button pad"
 
 ![sega_megadrive_6button_arcadepad_diagram](https://cloud.githubusercontent.com/assets/10035308/16599641/7f43ae62-42c0-11e6-924a-50ca4e44f401.png)
 
-### Dgen
+### DGen
 
 DGen uses a configuration file called dgenrc located in
 ```
