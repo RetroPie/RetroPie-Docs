@@ -16,7 +16,7 @@ _The Super Nintendo Entertainment System (or SNES) was a 4th generation video ga
 
 ## Emulators: [lr-snes9x-2010](https://github.com/libretro/snes9x2010), lr-snes9x, [lr-snes9x2002](https://github.com/libretro/snes9x2002), [PiSNES](https://github.com/RetroPie/pisnes), [lr-snes9x2005](https://github.com/libretro/snes9x2005), [lr-armsnes](https://github.com/RetroPie/ARMSNES-libretro), [snes9x-rpi](https://github.com/RetroPie/snes9x-rpi)
 
-RetroPie comes included with multiple SNES emulators. If you have a Pi 2, the preference is **lr-snes9x2010** due to better speed and sound emulation. lr-snes9x2002 is recommended for Super FX chip games on the Pi 2. lr-snes9x is an optional emulator that has has MSU-1 support and more accurate emulation, but requires a sufficiently overclocked Pi 3 for constant full speed emulation for a majority of games, and is sometimes too demanding for enhancement chip games.
+RetroPie comes included with multiple SNES emulators. If you have a Pi 2, the preference is **lr-snes9x2010** due to better speed and sound emulation. lr-snes9x2002 is recommended for Super FX chip games on the Pi 2. lr-snes9x is an optional emulator that has has MSU-1 support and more accurate emulation, but requires a sufficiently overclocked Pi 3 for guaranteed constant full speed emulation, and is sometimes too demanding for enhancement chip games.
 
 ## ROMS
 
