@@ -1,18 +1,18 @@
 ***
-![genesis](https://cloud.githubusercontent.com/assets/10035308/12213160/ee91d720-b630-11e5-8d66-46fc0eae4b84.png)
 ![megadrive](https://cloud.githubusercontent.com/assets/10035308/12213157/e8e39520-b630-11e5-8d3a-543bf24b1052.png)
+![genesis](https://cloud.githubusercontent.com/assets/10035308/12213160/ee91d720-b630-11e5-8d66-46fc0eae4b84.png)
 ***
-_This console, known as the Genesis in North America and the Mega Drive everywhere else in the world, was released by Sega in 1988_
+_This console, known as the Mega Drive everywhere except in the USA where it was renamed Genesis, was released by Sega in 1988_
 ***
 
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
-| [lr-picodrive](https://github.com/libretro/picodrive) | megadrive  | .7z .bin .gen .md .smd .zip | none | /opt/retropie/configs/megadrive/retroarch.cfg |
 | [lr-genesis-plus-gx](https://github.com/libretro/Genesis-Plus-GX) | megadrive  | .7z .bin .gen .md .sg .smd .zip | none | /opt/retropie/configs/megadrive/retroarch.cfg |
+| [lr-picodrive](https://github.com/libretro/picodrive) | megadrive  | .7z .bin .gen .md .smd .zip | none | /opt/retropie/configs/megadrive/retroarch.cfg |
 | [DGen](http://dgen.sourceforge.net/) | megadrive | .bin .md .smd | none | /opt/retropie/configs/megadrive/dgenrc |
 
-## Emulators: [DGen](http://dgen.sourceforge.net/), [lr-picodrive](https://github.com/libretro/picodrive), [lr-genesis-plus-gx](https://github.com/libretro/Genesis-Plus-GX)
-DGEN has the worst performance and can be tedious to configure controls, lr-picodrive seems to be the favourite for older Pi's, lr-genesis-plus-gx seems to be the favourite for the Pi 2.
+## Emulators: [lr-genesis-plus-gx](https://github.com/libretro/Genesis-Plus-GX), [lr-picodrive](https://github.com/libretro/picodrive), [DGen](http://dgen.sourceforge.net/)
+lr-genesis-plus-gx is best for the Pi 3/Pi 2 due to its accuracy. lr-picodrive is more suited for use on the Pi 0/Pi 1 due to its speed. DGEN has the worst performance and can be tedious to configure the controls for.
 ## ROMS
 Accepted File Extensions: **.7z .bin .gen .md .sg .smd .zip**
 
@@ -27,11 +27,11 @@ or
 
 ## Controls
 
-There are two methods for configuring controls- one for DGen and the other for lr-picodrive and lr-Genesis-Plus-GX.
+There are two methods for configuring controls - one for lr-picodrive and lr-genesis-plus-gx and another for DGen.
 
-### lr-picodrive and lr-genesis-plus-gx
+### lr-genesis-plus-gx and lr-picodrive
 
-lr-picodrive and lr-genesis-plus-gx utilise RetroArch configurations
+lr-genesis-plus-gx and lr-picodrive utilise RetroArch configurations
 
 Add custom retroarch controls to the retroarch.cfg file in
 
@@ -43,31 +43,6 @@ For more information on custom RetroArch controls see: [RetroArch Configuration]
 ### Configuring a 6 button controller
 
 First you need to tell retroarch to use 6 buttons, because the default is to use 3.
-
-#### lr-picodrive
-
-There are two ways to achieve this, most people will want to use Option 1:
-
-##### Option 1 - RetroArch Menu
-
-Launch a Megadrive game and go to the Retroarch menu (default mapping: **Select + X**).
-
-Go to **Quick Menu -> Options** and set the two input devices to **6 button pad**.
-
-Exit the Retroarch menu.
-
-Once you quit the game, the configuration will be saved within the `/opt/retropie/configs/all/retroarch-core-options.cfg` file. You do not need to edit this file.
-
-These core options will also take affect on any other system which you may use lr-picodrive for (eg. Sega 32X, Sega CD).
-
-##### Option 2 - Config file edit
-
-If you don't have access to the Quick Menu (due to misconfigured controls or some other reason), then edit the `/opt/retropie/configs/all/retroarch-core-options.cfg` file and add:
-
-~~~
-picodrive_input1 = "6 button pad"
-picodrive_input2 = "6 button pad"
-~~~
 
 #### lr-genesis-plus-gx
 
@@ -95,6 +70,31 @@ input_libretro_device_p2 = "513"
 ~~~
 
 This will set the controller type to a 6 button pad, and will reload this configuration every time the emulator is launched.
+
+#### lr-picodrive
+
+There are two ways to achieve this, most people will want to use Option 1:
+
+##### Option 1 - RetroArch Menu
+
+Launch a Megadrive game and go to the Retroarch menu (default mapping: **Select + X**).
+
+Go to **Quick Menu -> Options** and set the two input devices to **6 button pad**.
+
+Exit the Retroarch menu.
+
+Once you quit the game, the configuration will be saved within the `/opt/retropie/configs/all/retroarch-core-options.cfg` file. You do not need to edit this file.
+
+These core options will also take affect on any other system which you may use lr-picodrive for (eg. Sega 32X, Sega CD).
+
+##### Option 2 - Config file edit
+
+If you don't have access to the Quick Menu (due to misconfigured controls or some other reason), then edit the `/opt/retropie/configs/all/retroarch-core-options.cfg` file and add:
+
+~~~
+picodrive_input1 = "6 button pad"
+picodrive_input2 = "6 button pad"
+~~~
 
 ### 3 Button Genesis/MegaDrive Controller
 
