@@ -45,7 +45,7 @@ There are currently two versions of RetroPie. There is one version for Raspberry
 
 Download the SD image for your version of Raspberry Pi from the following page:
 
-**[https://retropie.org.uk/download/](https://retropie.org.uk/download/)**
+**[https://retropie.org.uk/download/](https://retropie.org.uk/download/){:target="_blank"}**
 
 If you are unsure which version of Raspberry Pi you have just count the raspberries on boot:
 
