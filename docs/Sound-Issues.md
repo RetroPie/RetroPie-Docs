@@ -44,6 +44,11 @@ I did try increasing the cpu_freq to 900 and core_freq to 450 and that helped a 
 [Another potentially helpful post about configuring ALSA.](http://www.raspberrypi.org/phpBB3/viewtopic.php?p=245126#p245126)
 
 ***
+To reset ALSA, run the following from the command line:
+
+    alsactl restore -P
+
+***
 
 DGEN sound configuration (according to [this post](http://www.raspberrypi.org/phpBB3/viewtopic.php?p=207923#p207923)):
 
