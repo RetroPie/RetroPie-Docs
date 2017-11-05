@@ -368,7 +368,7 @@ axis_trigger_left_inverted =
 axis_trigger_right_inverted =
 ```
 
-##For mapping non-standard controller via @Folly
+**Mapping a Nonstandard Controller via @Folly**
 
 run in terminal :
 ```
