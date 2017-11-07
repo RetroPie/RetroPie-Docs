@@ -96,7 +96,7 @@ You can find more information on creating themes and images or logos at the foll
 
 [Video Tutorial on creating Vector (svg) logos from Bitmaps (png)](https://www.youtube.com/watch?v=q9Fk6OzX86U)
 
-###Step 3.1. Launch roms with the Runcommand script
+### Step 3.1. Launch roms with the Runcommand script
 *This is recommended for console games, especially those that use libretro emulators such as those for NES, SNES, Megadrive/Genesis.*
 
 For the `<command>` tag in your custom `es_systems.cfg` file, the simplest thing to do is change the line in an existing system, for example `nes`, to the new one, e.g. `hacks`, as below:
@@ -127,7 +127,7 @@ This process can be repeated for more systems by adding launch commands to `emul
 
 **Tip:** Before you begin editing files, it may be an idea to make a list of emulators you wish to use, find their launch commands and then add them to the `emulators.cfg` file in one go. You can do similar for the accepted extensions.
 
-###Step 3.2. Launch roms with the shell scripts
+### Step 3.2. Launch roms with the shell scripts
 *This is recommended for games that already launch from shell scripts such as ports.*
 
 If you wish to launch your games using shell scripts, then the `<extension>` and `<command>` entries in your custom `es_systems.cfg` file can read:
@@ -153,7 +153,7 @@ You can create individual shell scripts for each game in your new system. When y
 
 **Tip:** If you're not sure what the launch command for a system is, then check the `emulators.cfg` file for that system and copy the launch command replacing `%ROM%` with the full path and name of the rom.
 
-###Troubleshooting
+### Troubleshooting
 
 * After making changes to your custom `es_systems.cfg` file, if EmulationStation fails to load or your system does not appear then check the EmulationStation log at `/opt/retropie/configs/all/emulationstation/es_log.txt` for any errors. 
 
