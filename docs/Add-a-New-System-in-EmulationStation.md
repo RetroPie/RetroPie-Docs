@@ -4,7 +4,7 @@ If you are looking to create a favourites lists **within** a system, then you ma
 
 Before you begin, it is recommended that you back up your image, at least making a copy of the `/opt/retropie/configs` folder.
 
-###Step 1. Edit es_systems.cfg
+### Step 1. Edit es_systems.cfg
 
 Each system in EmulationStation is defined in the file `es_systems.cfg`. The default version resides in the `/etc/emulationstation` folder. It is recommended that you make a copy of this file into the `/opt/retropie/configs/all/emulationstation` folder. The default version will be overwritten whenever you make updates to your RetroPie system so any manual changes such as a new system will be lost. Remember if you do make any updates to RetroPie then you should add any updates to `/etc/emulationstation/es_systems.cfg` to the custom version in the `/opt/retropie/configs/all/emulationstation` folder.
 
@@ -76,7 +76,7 @@ Contra will now appear in the favorites section and launch as normal once you've
 
 When you restart EmulationStation, the new system will be added together with your roms. (See below for [troubleshooting](https://github.com/RetroPie/RetroPie-Setup/wiki/Add-a-New-System-in-EmulationStation#troubleshooting))
 
-###Step 2. Create a Theme for the New System
+### Step 2. Create a Theme for the New System
 
 If you are not using an existing theme for your system and have not created a theme for your new system, then once you have restarted EmulationStation, the new system will appear like this.
 
