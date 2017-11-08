@@ -25,10 +25,10 @@ Another test can be performed at the command prompt. Type:`cat /dev/input/mice` 
 -----
 There should be a section of the log similar to this:
 
-    [INFO] [udev]: Keyboard #0 (/dev/input/event3).
-    [INFO] [udev]: Mouse #0 (/dev/input/event4).
-    [INFO] [udev]: Mouse #1 (/dev/input/mouse0).
-    [INFO] [udev]: Mouse #2 (/dev/input/event5).
+    [INFO] [udev] Adding device /dev/input/event1 as type ID_INPUT_MOUSE.
+    [INFO] [udev] Adding device /dev/input/mouse0 as type ID_INPUT_MOUSE.
+    [INFO] [udev] Adding device /dev/input/event2 as type ID_INPUT_MOUSE.
+    [INFO] [udev] Adding device /dev/input/mouse1 as type ID_INPUT_MOUSE.
 -----
 **Interpretation**: Please disregard any devices listed for the legacy interfaces `/dev/input/mouse*` and `/dev/input/js*`. Look instead for the `/dev/input/event*` indexes. **In this example, there are two lightgun devices attached, along with a keyboard-style arcade control panel. To use both lightguns, the correct mouse indexes to use would be `0` and `2`.**
 
