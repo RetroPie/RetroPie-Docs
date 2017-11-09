@@ -26,3 +26,5 @@ disconnect <MAC of the wiimote>
 ```
 Now you're done, press any button on the controller and it should connect, press the power button and it should disconnect, it also persists after a reboot
 
+# Lights
+There is a github project you can easily install that will light up the appropriate lights on your controllers based upon their order on your system.  It's just a matter of running 2 commands on your pi.  The project is found here: https://github.com/pyhammond/retropie_wiimote_lights
