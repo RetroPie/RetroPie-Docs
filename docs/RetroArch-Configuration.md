@@ -137,7 +137,7 @@ All RetroArch based emulators can be configured in the following way:
 
 ([example](RetroArch-Configuration#example-per-system-control-override-retroarchcfg))
 
-Here, SYSTEMNAME is `atari2600`, `snes`, etc. All settings in these files will overwrite the corresponding global setting as long as they are placed **above** the `#includeconfig` line.
+Here, SYSTEMNAME is `atari2600`, `snes`, etc. All settings in these files will override the corresponding global setting as long as they are placed **above** the `#includeconfig` line.
 
 **ROM-specific** settings can be created in the [runcommand](Runcommand) menu and show up as configuration files by ROM title:
 
