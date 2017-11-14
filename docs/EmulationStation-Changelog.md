@@ -1,11 +1,16 @@
-This page is a list of all of the changelogs for each version of EmulationStation. For a complete list of all commits to the source code see [here](https://github.com/RetroPie/EmulationStation/commits/master):
-
-- 2.7.0 (Dev)
+This page is a list of all of the changelogs for each version of EmulationStation. For a complete list of all commits to 
+the source code see [here](https://github.com/RetroPie/EmulationStation/commits/master):
+- 2.7.2 (Stable) (Dev)
+  - [NEW FEATURE](https://github.com/RetroPie/EmulationStation/pull/292): CEC support.
+- 2.7.1
+  - [ENHANCEMENT](https://github.com/RetroPie/EmulationStation/pull/283): Improved title scrolling in gamelist.
+  - [BUGFIX](https://github.com/RetroPie/EmulationStation/pull/287): Fix for video screensaver when menu is open.
+- 2.7.0
   - [ENHANCEMENT](https://github.com/RetroPie/EmulationStation/pull/282): Enable Jump to letter when gamelist is filtered.
   - [NEW FEATURE](https://github.com/RetroPie/EmulationStation/pull/252): Support for file filtering and hiding systems via Kids Mode.
   - [ENHANCEMENT](https://github.com/RetroPie/EmulationStation/pull/257): Option to launch directly to a gamelist vs. system view.
   - [ENHANCEMENT](https://github.com/RetroPie/EmulationStation/pull/266): Support for default paths to game image/video.
-- 2.6.5 (Stable)
+- 2.6.5
   - [ENHANCEMENT](https://github.com/RetroPie/EmulationStation/pull/256): Default image paths in themes.
   - [ENHANCEMENT](https://github.com/RetroPie/EmulationStation/pull/255): Normalize volume level for OMX player.
   - [NEW FEATURE](https://github.com/RetroPie/EmulationStation/pull/235): Kiosk Mode allows certain menu items.
