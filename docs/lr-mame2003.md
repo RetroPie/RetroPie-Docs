@@ -1,4 +1,4 @@
-**Please check the [MAME documentation](../MAME) for for basic information about controls and managing ROMs - this page is for specific information about the mame2003 emulator's features.**
+**Please check the [MAME documentation](../wiki/MAME) for for basic information about controls and managing ROMs - this page is for specific information about the mame2003 emulator's features.**
 
 > **WARNING:** As of 2016-05-03 (2016-05-05 for binary installs), the directory structure that lr-mame2003 uses has been updated to better match MAME norms. Thus, if you upgrade from a previous version, various directories will need moving/updating to ensure existing MAME configurations and save files are used. Please see [this github PR](https://github.com/libretro/mame2003-libretro/pull/29#issue-152552464) for full details on what has changed.
 
