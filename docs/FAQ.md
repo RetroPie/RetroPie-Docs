@@ -17,6 +17,7 @@
 - [Why aren't my in-game saves working properly?](FAQ#why-arent-my-in-game-saves-working-properly)
 - [Why Can't I Insert Coins in Arcade Emulators?](FAQ#why-cant-i-insert-coins-in-arcade-emulators)
 - [The `retropie_setup` and `runcommand` menus have very small fonts on my screen, how can I increase the console font size?](FAQ#how-can-i-increase-the-console-font-size)
+- [How can I recover my RetroPie after I enabled the experimental OpenGL driver ?](FAQ#how-can-i-recover-my-retropie-after-i-enabled-the-experimental-opengl-diver)
 
 ### Why do some emulators not show up?
 
@@ -296,3 +297,28 @@ Alternatively, you can execute the following command and follow the instructions
 ```
 sudo dpkg-reconfigure console-setup
 ```
+
+### How can I recover my RetroPie after I enabled the experimental OpenGL driver ?
+Note: this entry applies to the Raspbian Jessie based RetroPie installations.
+
+The OpenGL driver for the Raspberry PI VideoCore GPU was introduced to provide hardware accelerated OpenGL for the X11 OpenGL applications, during the Raspbian Jessie version. From the [original release](https://www.raspberrypi.org/blog/another-new-raspbian-release/):
+
+> [...] In this release we are shipping an experimental OpenGL driver for the desktop which uses the GPU to provide hardware acceleration
+
+>[...]. 
+If you don’t use this option, the desktop does have OpenGL support, but it uses a very slow software renderer, which makes all but the most basic OpenGL applications pretty much unusable. The hardware-accelerated version is much faster, and makes some quite decent OpenGL games playable on the Pi.
+
+RetroPie - and the underlying components - are not using the X11 server for display, enabling the OpenGL driver will not add any features or benefits for the system. It also disables with the VideoCore kernel driver used by RetroPie, having the unpleasant side effect of locking the interface and making any direct access to your RetroPie system impossible.
+  
+To recover from such a situation, there are 2 options:
+
+* Get the SD card out from the Raspberry PI and insert it into a Windows/Linux system. You'll have access to the `boot` partition, where you can find the `config.txt` file used to enable the OpenGL driver. Edit this file and comment/remove the line containing
+
+        dtoverlay=vc4-fkms-v3d           
+Insert the SD card back into your RetroPie system and start the system, without the OpenGL driver enabled.
+ 
+ * Access your system via [SSH](SSH) and run `raspi-config` again to disable the OpenGL driver, then reboot the RetroPie system.  
+  **Note**: If you haven't previously enabled [SSH](SSH) access to the system, then use the instructions to enable SSH on a headless Raspbian system from  the [Raspbian site](https://www.raspberrypi.org/documentation/remote-access/ssh/):
+ > For headless setup, SSH can be enabled by placing a file named ssh, without any extension, onto the boot partition of the SD card from another computer. When the Pi boots, it looks for the ssh file. If it is found, SSH is enabled and the file is deleted. The content of the file does not matter; it could contain text, or nothing at all.
+>
+> If you have loaded Raspbian onto a blank SD card, you will have two partitions. The first one, which is the smaller one, is the boot partition. Place the file into this one.
