@@ -35,7 +35,7 @@ keyboard support can also be enable here by adding:
 
 ```
 input_libretro_device_p2 = "3"
-````
+```
 
 For more information on custom RetroArch controls see: [RetroArch Configuration](RetroArch-Configuration)
 
