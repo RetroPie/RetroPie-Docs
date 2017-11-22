@@ -19,7 +19,7 @@ Accepted File Extensions: **.cso .iso .pbp**
 Place your PSP ROMs in 
 ```
 /home/pi/RetroPie/roms/psp
-````
+```
 #### [**PSP COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1V-MEx1tOXqCcJL1fQzGh9xLHny-qL-PSWqvY7F80Y90/edit?usp=sharing) feel free to contribute!
 
 ## Controls
