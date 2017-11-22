@@ -17,7 +17,7 @@
 - [Why aren't my in-game saves working properly?](FAQ#why-arent-my-in-game-saves-working-properly)
 - [Why Can't I Insert Coins in Arcade Emulators?](FAQ#why-cant-i-insert-coins-in-arcade-emulators)
 - [The `retropie_setup` and `runcommand` menus have very small fonts on my screen, how can I increase the console font size?](FAQ#how-can-i-increase-the-console-font-size)
-- [How can I recover my RetroPie after I enabled the experimental OpenGL driver ?](FAQ#how-can-i-recover-my-retropie-after-enabling-the-desktop-opengl-driver)
+- [How can I recover my RetroPie after I enabled the experimental OpenGL driver ?](FAQ#how-can-i-recover-my-retropie-after-enabling-the-desktop-opengl-driver-)
 
 ### Why do some emulators not show up?
 
