@@ -17,7 +17,7 @@
 - [Why aren't my in-game saves working properly?](FAQ#why-arent-my-in-game-saves-working-properly)
 - [Why Can't I Insert Coins in Arcade Emulators?](FAQ#why-cant-i-insert-coins-in-arcade-emulators)
 - [The `retropie_setup` and `runcommand` menus have very small fonts on my screen, how can I increase the console font size?](FAQ#how-can-i-increase-the-console-font-size)
-- [How can I recover my RetroPie after I enabled the experimental OpenGL driver ?](FAQ#how-can-i-recover-my-retropie-after-i-enabled-the-experimental-opengl-driver-)
+- [How can I recover my RetroPie after I enabled the experimental OpenGL driver ?](FAQ#how-can-i-recover-my-retropie-after-enabling-the-desktop-opengl-driver)
 
 ### Why do some emulators not show up?
 
@@ -298,7 +298,7 @@ Alternatively, you can execute the following command and follow the instructions
 sudo dpkg-reconfigure console-setup
 ```
 
-### How can I recover my RetroPie after I enabled the experimental OpenGL driver ?
+### How can I recover my RetroPie after enabling the desktop OpenGL driver ?
 Note: this entry applies to the Raspbian Jessie based RetroPie installations.
 
 The OpenGL driver for the Raspberry PI VideoCore GPU was introduced to provide hardware accelerated OpenGL for the X11 OpenGL applications, during the Raspbian Jessie version. From the [original release](https://www.raspberrypi.org/blog/another-new-raspbian-release/):
