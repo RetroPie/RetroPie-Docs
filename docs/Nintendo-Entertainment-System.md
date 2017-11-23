@@ -78,3 +78,33 @@ Add this to your `/opt/retropie/configs/nes/retroarch.cfg` file. Make sure that 
 ```shell
 video_crop_overscan = false
 ```
+
+### The NES Select Button
+
+The NES controller has a select button that would be used to make selections in menu or change function in-game. For a list, see [here](http://www.racketboy.com/retro/nintendo/nes/so-what-was-the-nes-select-button-for).
+
+When configuring RetroArch emulators, the select button is usually mapped to the physical select button on your controller as is the hotkey. Consequently, when you press the select button on your controller in a NES game to make a selection in a menu, in The Legend of Zelda, for example, nothing will happen as RetroArch is expecting a second button to be pressed such as start to exit the emulator.
+
+There are two solutions to overcome this.
+
+**Either Remap the select button**
+
+In the NES RetroArch config file, `/opt/retropie/configs/nes/retroarch.cfg`, **above** the `#include"` line, add the following line:
+
+```
+input_player1_select_btn = "x"
+```
+
+where x is the button number you wish to remap the select button to.
+
+**Or Remap the hotkey button**
+
+In the NES RetroArch config file, `/opt/retropie/configs/nes/retroarch.cfg`, **above** the `#include"` line, add the following line:
+
+```
+input_enable_hotkey_btn = "x"
+```
+
+where x is the button number you wish to remap the hotkey to.
+
+Both of these changes can also be made using the RGUI.
