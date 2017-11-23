@@ -4,7 +4,11 @@ SSH stands for secure shell. You can remotely connect to the raspberry pi termin
 
 ## Enable SSH
 
-**Note:** Starting with RetroPie 4.2, in order to keep the default image secure SSH is disabled by default. It can be re-enabled in **raspi-config**: 
+**Note:** Starting with RetroPie 4.2, in order to keep the default image secure, SSH is disabled by default. It can be enabled in either of the two ways listed below.
+
+1) Pre-boot. From a system with an SD-card reader, access the /boot/ directory and create an empty file called ssh
+
+2) In **raspi-config**: after booting.
 ```
 sudo raspi-config
 ```
