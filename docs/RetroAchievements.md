@@ -31,7 +31,8 @@ cheevos_leaderboards_enable = true
 * NES
 * SNES
 * Mega Drive / Genesis
-* Game Boy / Game Boy Color
+* Game Boy
+* Game Boy Color
 * Game Boy Advance
 * PC Engine
 * Master System
