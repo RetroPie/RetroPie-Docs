@@ -20,6 +20,11 @@ If you want to see some more RetroAchievements related message right after launc
 cheevos_verbose_enable = true
 ```
 
+Since RetroArch 1.6.8 the RetroAchievements Leaderboards feature is also supported. You can enable it with this config:
+
+```
+cheevos_leaderboards_enable = true
+```
 
 ## Supported Systems:
 
@@ -29,8 +34,9 @@ cheevos_verbose_enable = true
 * Game Boy / Game Boy Color
 * Game Boy Advance
 * PC Engine
-* Master System (started in April-2017 and is in a preliminary stage)
-* Nintendo 64 (started in April-2017 and is in a preliminary stage)
+* Master System
+* Nintendo 64
+* Atari Lynx
 
 A libretro core compatibility list with RetroAchievements can be found in [libretro docs](https://buildbot.libretro.com/docs/guides/retroachievements/).
 
