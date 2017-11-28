@@ -47,6 +47,9 @@ https://retropie.org.uk/forum/topic/735/psx-please-remove-bin-from-the-file-type
 
 if your psx game is a .ecm extension, its a compressed file that needs to be extracted with ecmtools.
 
+    sudo apt-get install ecm
+    ecm-uncompress game-file.bin.ecm
+
 ### Where is lr-beetle-psx?
 
 The Beetle/Mednafen PSX core is not available for systems with ARM CPUs (like the Raspberry Pi) because it does not perform well enough. This emulator is supplied for people who are running RetroPie on more powerful x86 systems.
