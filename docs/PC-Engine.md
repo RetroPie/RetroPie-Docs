@@ -124,7 +124,6 @@ If you are from the United States it is likely that you had the TurboGrafx-16 ra
 
 ```
 pcengine_theme="tg16"
-pcengine_platform="tg16"
 ```
 
 Once this is done, please update any of the currently installed PC Engine emulators from RetroPie-Setup and Emulation Station will now use the TurboGrafx-16 logo. Scraping from within Emulation Station should also return TurboGrafx-16 artwork.
