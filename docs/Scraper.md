@@ -148,39 +148,104 @@ And this was the resulting gamelist.xml:
 ### Parameter list:
 ```
 Usage of /opt/retropie/supplementary/scraper/scraper:
-  -add_not_found=false: If true, add roms that are not found as an empty gamelist entry.
-  -append=false: If the gamelist file already exist skip files that are already listed and only append new files.
-  -download_images=true: If false, don't download any images, instead see if the expected file is stored locally already.
-  -extra_ext="": Comma separated list of extensions to also include in the scraper.
-  -gdb_img="b": Comma seperated order to prefer images, s=snapshot, b=boxart, f=fanart, a=banner, l=logo.
-  -hash_file="": The `file` containing hash information.
-  -image_dir="images": The `directory` to place downloaded images to locally.
-  -image_path="images": The `path` to use for images in gamelist.xml.
-  -image_suffix="-image": The `suffix` added after rom name when creating image files.
-  -img_format="jpg": `jpg or png`, the format to write the images.
-  -img_workers=0: Use `N` worker threads to process images. If 0, then use the same value as workers.
-  -mame=false: If true we want to run in MAME mode.
-  -mame_img="s,t,m,c": Comma separated order to prefer images, s=snap, t=title, m=marquee, c=cabniet.
-  -max_width=400: The max `width` of images. Larger images will be resized.
-  -missing="": The `file` where information about ROMs that weren't scraped is added.
-  -nested_img_dir=false: Use a nested img directory structure that matches rom structure.
-  -no_thumb=false: Don't add thumbnails to the gamelist.
-  -output_file="gamelist.xml": The XML `file` to output to.
-  -overview_len=0: If set it will truncate the overview of roms to `N` characters + ellipsis.
-  -refresh=false: Information will be attempted to be downloaded again but won't remove roms that are not scraped.
-  -retries=2: Retry a rom `N` times on an error.
-  -rom_dir=".": The `directory` containing the roms file to process.
-  -rom_path=".": The `path` to use for roms in gamelist.xml.
-  -scrape_all=false: If true, scrape all systems listed in es_systems.cfg. All dir/path flags will be ignored.
-  -skip_check=false: Skip the check if thegamesdb.net is up.
-  -start_pprof=false: If true, start the pprof service used to profile the application.
-  -strip_unicode=true: If true, remove all non-ascii characters.
-  -thumb_only=false: Download the thumbnail for both the image and thumb (faster).
-  -thumb_suffix="-thumb": The `suffix` added after rom name when creating thumb files.
-  -use_filename=false: If true, use the filename minus the extension as the game title in xml.
-  -use_gdb=true: Use the hash.csv and theGamesDB metadata.
-  -use_nointro_name=true: Use the name in the No-Intro DB instead of the one in the GDB.
-  -use_ovgdb=false: Use the OpenVGDB if the hash isn't in hash.csv.
-  -version=false: Print the release version and exit.
-  -workers=1: Use `N` worker threads to process roms.
+  -add_not_found
+    	If true, add roms that are not found as an empty gamelist entry.
+  -append
+    	If the gamelist file already exist skip files that are already listed and only append new files.
+  -console_img string
+    	Comma seperated order to prefer images, s=snapshot, b=boxart, f=fanart, a=banner, l=logo, 3b=3D boxart, cart=cartridge, clabel=cartridge label, mix3=Standard 3 mix, mix4=Standard 4 mix. (default "b")
+  -console_src string
+    	Comma seperated order to prefer console sources, ss=screenscraper, ovgdb=OpenVGDB, gdb=theGamesDB (default "gdb")
+  -convert_videos
+    	If true, convert videos for the Raspberry Pi (e.g. 320x240@30fps) NOTE: This needs HandBrakeCLI installed
+  -download_images
+    	If false, don't download any images, instead see if the expected file is stored locally already. (default true)
+  -download_marquees
+    	If true, download marquees.
+  -download_videos
+    	If true, download videos.
+  -extra_ext string
+    	Comma separated list of extensions to also include in the scraper.
+  -hash_file file
+    	The file containing hash information.
+  -image_dir directory
+    	The directory to place downloaded images to locally. (default "images")
+  -image_path path
+    	The path to use for images in gamelist.xml. If scrape_all is used, only image_dir is used. (default "images")
+  -image_suffix suffix
+    	The suffix added after rom name when creating image files. (default "-image")
+  -img_format jpg or png
+    	jpg or png, the format to write the images. (default "jpg")
+  -img_workers N
+    	Use N worker threads to process images. If 0, then use the same value as workers.
+  -lang string
+    	The order to choose for language if there is more than one for a value. (en, fr, es, de, pt) (default "en")
+  -mame
+    	If true we want to run in MAME mode.
+  -mame_img string
+    	Comma separated order to prefer images, s=snap, t=title, m=marquee, c=cabniet, b=boxart, 3b=3D-boxart, fly=flyer. (default "t,m,s,c")
+  -mame_src string
+    	Comma seperated order to prefer mame sources, ss=screenscraper, adb=arcadeitalia, mamedb=mamedb-mirror, gdb=theGamesDB-neogeo (default "adb,gdb")
+  -marquee_dir directory
+    	The directory to place downloaded marquees to locally. (default "images")
+  -marquee_format jpg or png
+    	jpg or png, the format to write the marquees. (default "png")
+  -marquee_path path
+    	The path to use for marquees in gamelist.xml. If scrape_all is used, only marquee_dir is used. (default "images")
+  -marquee_suffix suffix
+    	The suffix added after rom name when creating marquee files. (default "-marquee")
+  -max_height height
+    	The max height of images. Larger images will be resized.
+  -max_width width
+    	The max width of images. Larger images will be resized. (default 400)
+  -missing file
+    	The file where information about ROMs that weren't scraped is added.
+  -nested_img_dir
+    	Use a nested img directory structure that matches rom structure.
+  -no_thumb
+    	Don't add thumbnails to the gamelist.
+  -output_file file
+    	The XML file to output to. If scrape_all is used, this is ignored and the gamelist in the system path. (default "gamelist.xml")
+  -overview_len N
+    	If set it will truncate the overview of roms to N characters + ellipsis.
+  -refresh
+    	Information will be attempted to be downloaded again but won't remove roms that are not scraped.
+  -region string
+    	The order to choose for region if there is more than one for a value. xx is a special region that will choose any region. (default "us,wor,eu,jp,fr,xx")
+  -retries N
+    	Retry a rom N times on an error. (default 2)
+  -rom_dir directory
+    	The directory containing the roms file to process. (default ".")
+  -rom_path path
+    	The path to use for roms in gamelist.xml. (default ".")
+  -scrape_all
+    	If true, scrape all systems listed in es_systems.cfg. All dir/path flags will be ignored.
+  -skip_check
+    	Skip the check if thegamesdb.net is up.
+  -ss_password password
+    	The password for registered ScreenScraper users.
+  -ss_user username
+    	The username for registered ScreenScraper users.
+  -strip_unicode
+    	If true, remove all non-ascii characters.
+  -thumb_only
+    	Download the thumbnail for both the image and thumb (faster).
+  -thumb_suffix suffix
+    	The suffix added after rom name when creating thumb files. (default "-thumb")
+  -update_cache
+    	If false, don't check for updates on locally cached files. (default true)
+  -use_filename
+    	If true, use the filename minus the extension as the game title in xml.
+  -use_nointro_name
+    	Use the name in the No-Intro DB instead of the one in the GDB. (default true)
+  -version
+    	Print the release version and exit.
+  -video_dir directory
+    	The directory to place downloaded videos to locally. (default "images")
+  -video_path path
+    	The path to use for videos in gamelist.xml. If scrape_all is used, only video_dir is used. (default "images")
+  -video_suffix suffix
+    	The suffix added after rom name when creating video files. (default "-video")
+  -workers N
+    	Use N worker threads to process roms. (default 1)
 ```
