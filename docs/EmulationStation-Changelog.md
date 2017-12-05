@@ -1,6 +1,10 @@
 This page is a list of all of the changelogs for each version of EmulationStation. For a complete list of all commits to 
 the source code see [here](https://github.com/RetroPie/EmulationStation/commits/master):
-- 2.7.2 (Stable) (Dev)
+- Latest (Dev)
+  - [NEW FEATURE](https://github.com/RetroPie/EmulationStation/pull/324): Custom Viewport support.
+- 2.7.4 (Stable)
+  - [BUGFIX](https://github.com/RetroPie/EmulationStation/pull/323): Fix crash when removing last entry in favorites.
+- 2.7.2
   - [NEW FEATURE](https://github.com/RetroPie/EmulationStation/pull/292): CEC support.
 - 2.7.1
   - [ENHANCEMENT](https://github.com/RetroPie/EmulationStation/pull/283): Improved title scrolling in gamelist.
