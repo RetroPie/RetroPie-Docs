@@ -69,6 +69,8 @@ Place SCPH1001.BIN in
 ```
 /home/pi/RetroPie/BIOS
 ```
+The BIOS file names are case sensitive.
+
 See table at the bottom for alternative BIOS options that may or may not work.
 
 ## Controls
