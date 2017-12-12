@@ -138,6 +138,14 @@ The following is a list of roms that can be added to the shared folder:
 - SWP.rom
 - XBASIC2.rom
 
+### Disc Swapping for Multi-disk Games in RetroArch (lr-blueMSX)
+
+To change disks in-game, go to Core Disk Options > Disk Image Append.
+
+### M3U playlist for Multi-disc Games
+
+Multiple disks can be loaded simultaneously from Emulation Station into RetroArch by creating an M3U file (plain-text, ".m3u" extension). In it's contents, enter the filenames of the DSK files one per line. In game you can then swap disks from the core disk options menu (under Options). Make sure to cycle tray status before attempting to change disks.
+
 ## openMSX
 openMSX will by default use a MSX2+ c-bios rom image. c-bios is not a real BIOS rom and has certain restrictions, such as no support for anything other then cartridges (ROMs). So there is no support for disk or cassette for instance.
 
