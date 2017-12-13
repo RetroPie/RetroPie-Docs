@@ -74,7 +74,7 @@ This setting can be enabled in the [[Configuration Editor]]. Look for 'Video Smo
 
 ## Shader Presets
 
-Setting a shader just for a particular core or game works with presets. Presets can easily be set in `Quick Menu/Shaders`.
+Setting a shader just for a particular core or game works with presets. Presets can easily be set in `RGUI Menu` `Quick Menu` `Shaders`.
 
 ![](https://i.imgur.com/EOCVSbT.png?1)
 
