@@ -20,7 +20,7 @@ The shareware files are physically located in a different directory, but if you 
 
 The files tested for this method came from the Megaton Edition on Steam on Windows and these instructions assume that you'll be modifying files on your RetroPie instance via the Samba network share from your Windows PC. If you have a different version of the game or a different method of modifying files on your RetroPie instance then you should be able to interpret these instructions for the game version and method you have.
 
-1. Install full Duke Nukem 3D Atomic Edition as already documented on this page.
+1. Install full Duke Nukem 3D Megaton Edition as already documented on this page.
 
 2. Copy the three folders in `C:\Program Files (x86)\Steam\steamapps\common\Duke Nukem 3D\gameroot\addons` from your PC to your `\\RETROPIE\roms\ports\duke3d` folder. This means you will have `nw`, `dc` and `vacation` subfolders.
 
