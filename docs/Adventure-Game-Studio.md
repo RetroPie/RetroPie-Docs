@@ -22,46 +22,8 @@ Place your AGS files in
 /home/pi/RetroPie/roms/ags
 ```
 
-## Config changes
-In RetroPie 3.5, you need to install xinit
-```
-sudo apt-get install xinit
-```
-
-Also edit the following file
-```
-/opt/retropie/configs/ags/emulators.cfg
-```
-so that it reads
-```
-ags="sudo xinit /opt/retropie/emulators/ags/bin/ags --fullscreen %ROM%"
-```
---or-- 
-Alternatively to adding "sudo" to the command in "emulators.cfg", you can instead run
-```
-sudo dpkg-reconfigure x11-common
-```
-Then choose "anybody" from the provided menu options. This will allow AGS to load from within EmulationStation.
-
-## Editing es_systems.cfg
-After installing xinit and configuring the .cfg file, you do have to edit the es_systems.cfg file to make AGS work.
-
-To do this `sudo nano` into:
-```
-sudo nano /etc/emulationstation/es_systems.cfg
-```
-
-And change the `<extension> </extension>` portion located under `<name>ags</name>` to:
-```
-<extension>.exe</extension>
-```
-
-Save, exit, and restart emulation station and Adventure Game Studio should show up on your RetroPie dashboard.
-
-### Video Guide  
-
-<a href="https://www.youtube.com/watch?v=cH_784XOsiM" target="_blank"><img src="https://i.ytimg.com/vi_webp/cH_784XOsiM/mqdefault.webp" 
-alt="RetroPie Adventure Game Studio" width="300" height="190" border="10" /></a>  
+## Troubleshooting
+Ensure that you have RetroPie-Setup script version 4.3.8 or later before installing AGS, as several issues (such as content not appearing in EmulationStation and MIDI music playback) have been fixed.
 
 ## Controls
 
