@@ -1,6 +1,7 @@
 This page is a list of all of the changelogs for each version of EmulationStation. For a complete list of all commits to 
 the source code see [here](https://github.com/RetroPie/EmulationStation/commits/master):
 - Latest (Dev)
+  - [BUGFIX](https://github.com/RetroPie/EmulationStation/pull/334): Fix VLC not muting audio after first loop.
   - [NEW FEATURE](https://github.com/RetroPie/EmulationStation/pull/324): Custom Viewport support.
 - 2.7.4 (Stable)
   - [BUGFIX](https://github.com/RetroPie/EmulationStation/pull/323): Fix crash when removing last entry in favorites.
