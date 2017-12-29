@@ -100,7 +100,6 @@ JA_UD=1
 
 ### 3-5 Players
 
-Some games allow more than 2 players. Currently, the only emulator which supports this is [lr-snes9x2010](https://github.com/libretro/snes9x2010). In order to active this feature, you'll need to enable [Multi-tap](https://en.wikipedia.org/wiki/Multitap) by adding this line to the ``retroarch.cfg``:
-```shell
-input_libretro_device_p2 = "257"
-```
+lr-snes9x and lr-snes9x2010 are the only emulators that support multitap. Multitap support is disabled by default due to it breaking two-player games that don't support it.
+
+To enable multitap, launch the multitap supported game you wish to enable multitap support in, go to "RGUI/Main Menu/Quick Menu/Controls", change "User 2 Device Type" to "Multitap", then go back to the "Quick Menu" and select "Save Game Overrides" at the bottom of the menu.
