@@ -8,6 +8,8 @@ sudo apt-get install raspberrypi-sys-mods
 ```
 If it asks you anything about the /etc/udev/rules.d/99-com.rules configuration file, type Y to overwrite.
 
+If you want to use a bluetooth dongle with the pi3, you should first disable the onboard BT controller by adding `dtoverlay=pi3-disable-bt` to `/boot/config.txt`, then rebooting and plugging your dongle, which should now work.
+
 # Adding a Bluetooth controller to RetroPie  
 
 The simplest way of setting up a Bluetooth controller is through the Bluetooth Configuration menu of the RetroPie Setup script. There are also manual methods that may vary depending on what Bluetooth controller you are using, some of which are described further below on this page.
