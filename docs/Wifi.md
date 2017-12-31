@@ -1,6 +1,6 @@
 # Configuring Wifi
 
-If you have a Raspberry Pi 3, wifi is built into the pi, if you have a pi2 or earlier you'll need a wifi dongle, you can check to see if your wifi dongle is compatible [here](http://elinux.org/RPi_USB_Wi-Fi_Adapters):
+If you have a Raspberry Pi 3, wifi is built into the pi, if you have a pi2 or earlier you'll need a wifi dongle, you can check to see if your wifi dongle is compatible [here](http://elinux.org/RPi_USB_Wi-Fi_Adapters). You may want to use a dongle with a pi3, in this case see [here](#using-an-external-dongle).
 
 There are 5 main methods to configure Wifi:
 
