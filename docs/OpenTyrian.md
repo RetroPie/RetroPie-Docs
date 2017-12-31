@@ -8,6 +8,8 @@ _OpenTyrian is a port of the DOS shoot-em-up Tyrian. Jason Emery generously gave
 ***
 ## Emulator: [OpenTyrian](https://bitbucket.org/opentyrian/opentyrian/wiki/Home)
 
+This emulator can be installed from the [retropie setup script](https://github.com/RetroPie/RetroPie-Setup/wiki/Updating-RetroPie)
+
 ## Controls:
 
 ```
