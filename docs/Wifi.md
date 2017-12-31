@@ -270,3 +270,12 @@ Navigate to your wireless network and Press the `RIGHT` arrow to configure your 
 check automatically connect to this network (by pressing enter) and type in your wifi password where it says "key" press `F10` to save and then press `SHIFT+c` to connect and press `Q` to exit back to the terminal. 
 
 There are some noted issues with the daemon using some CPU and preventing the Pi from scaling to lowest frequency, so if that's the case you can remove wicd-curses by typing `sudo apt-get remove wicd-curses` and proceed to setup your wifi using method 2 or 3.
+
+# Using an external dongle
+
+You may want to use an external Wifi dongle: maybe your pi case is blocking or slowing the signal (with a metal case it's pretty common), for instance.
+
+The easiest way is to first configure wifi with the internal controller, using one of the above methods.  
+Plug your dongle, reboot, and make sure it's connected using `ifconfig` : it should appear as wlan1, and have an IP address.  
+Then, disable the onboard wifi by editing `/boot/config.txt` and adding `dtoverlay=pi3-disable-wifi`.  
+That's it :)
