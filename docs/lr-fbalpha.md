@@ -17,18 +17,11 @@ The dipswitches available will vary from game-to-game. Any changes made will be 
 
 ## High scores
 
-> **Note** As of January 29, 2017 it is no longer necessary to manually add `hiscore.dat` to your installation as it is automatically included by RetroPie-Setup
-
-lr-fbalpha will attempt to keep a permanent record of any high scores you set, but some games will not save these by default. There is a supplementary file that you can transfer to your Pi that will enable high score saving for more games, called `hiscore.dat`. This file can be downloaded from http://highscore.mameworld.info/ - you need the one labeled "**old format hiscore.dat (pre mame v0174)**". Transfer it to:
+lr-fbalpha will attempt to keep a permanent record of any high scores you set, but some games will not save these by default. There is a supplementary file that is automatically installed to your Pi that will enable high score saving for more games, called `hiscore.dat`. This file is the same as that from http://highscore.mameworld.info/ (labeled "**old format hiscore.dat (pre mame v0174)**"). It is located in:
 ```
-/home/pi/RetroPie/roms/fba/
+/home/pi/RetroPie/BIOS/fba/
 ```
-or, if you're using the arcade folder:
-```
-/home/pi/RetroPie/roms/arcade/
-```
-
-When high scores are saved, they are kept in the same directory as `gamename.hi` files.
+When high scores are saved, they are kept in the current rom directory as `gamename.hi` files.
 
 ## Button rebinding
 
