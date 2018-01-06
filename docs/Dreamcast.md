@@ -6,7 +6,7 @@ _The Sega Dreamcast is a 6th generation home video game console released by Sega
 
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
-| [Reicast](https://github.com/reicast/reicast-emulator) | dreamcast  | .cdi .gdi | dc_boot.bin, dc_flash.bin | /opt/retropie/configs/dreamcast/mappings |
+| [Reicast](https://github.com/reicast/reicast-emulator) | dreamcast  | .cdi .chd .gdi | dc_boot.bin, dc_flash.bin | /opt/retropie/configs/dreamcast/mappings |
 
 ## Emulator: [Reicast](https://github.com/reicast/reicast-emulator) 
 
