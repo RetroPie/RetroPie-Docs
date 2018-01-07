@@ -123,8 +123,8 @@ M | Medkit
 Backspace | Turnaround
 T | Send Message
 Tab | Map
-- | Shrink Screen
-+ | Enlarge Screen
+\- | Shrink Screen
+\+ | Enlarge Screen
 5 | Center View
 Scroll Lock | Holster Weapon
 Y | Show Opponents Weapon
