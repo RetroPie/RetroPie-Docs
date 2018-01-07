@@ -6,7 +6,7 @@ _The Sharp X68000 was a Japan-only home computer released in 1987._
 
 | Emulator | Rom Folder | Extension | BIOS Files | Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
-| [lr-px68k](https://github.com/libretro/px68k-libretro/) | x68000 | .dim | iplrom30.dat, iplromco.dat, iplrom.dat,  iplromxv.dat, cgrom.dat | /opt/retropie/configs/x68000/retroarch.cfg |
+| [lr-px68k](https://github.com/libretro/px68k-libretro/) | x68000 | .dim, .m3u | iplrom30.dat, iplromco.dat, iplrom.dat,  iplromxv.dat, cgrom.dat | /opt/retropie/configs/x68000/retroarch.cfg |
 
 ## Emulator: [lr-px68k](https://github.com/libretro/px68k-libretro/)
 This emulator must be installed from the experimental section in RetroPie Setup.
@@ -48,3 +48,5 @@ Add custom retroarch controls to the retroarch.cfg file in:
 ```
 
 For more information on custom RetroArch controls, see: [RetroArch Configuration](RetroArch-Configuration)
+
+## Swapping Discs
