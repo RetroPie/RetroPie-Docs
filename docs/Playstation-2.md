@@ -25,7 +25,7 @@ Place your Playstation 2 BIOS in
 ```
 /home/pi/.config/PCSX2/bios/
 ```
-On First run the GUI will run it will ask you to select which BIOS to use.  Select the Appropriate one and use iso' that match that region. 
+On first run the GUI will ask you to select which BIOS to use.  Select the appropriate one and use iso' that match that region. 
 ## Controls
 
 ![playstation3_diagram](https://cloud.githubusercontent.com/assets/10035308/16599634/7f353148-42c0-11e6-9023-dbaf074bc933.png)
