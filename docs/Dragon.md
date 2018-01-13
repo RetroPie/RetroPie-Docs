@@ -7,7 +7,7 @@ _The Dragon 32 and Dragon 64 were home computers originally released in 1980. Th
 
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
-| [XRoar](http://www.6809.org.uk/xroar/) | coco  | .cas .wav .bas .asc .dmk .jvc .os9 .dsk .vdk .rom .ccc .sna | d32.rom | hardcoded |
+| [XRoar](http://www.6809.org.uk/xroar/) | dragon32 | .cas .wav .bas .asc .dmk .jvc .os9 .dsk .vdk .rom .ccc .sna | d32.rom | hardcoded |
 
 ## Emulator: [XRoar](http://www.6809.org.uk/xroar/)
 
