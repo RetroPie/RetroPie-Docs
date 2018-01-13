@@ -8,29 +8,27 @@ _The Intellivision is a home video game console released by Mattel in 1979_
 
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
-| [jzintv](http://spatula-city.org/~im14u2c/intv/) | intellivision  | .int .bin | exec.bin grom.bin | hardcoded |
-
-## Emulator: [jzintv](http://spatula-city.org/~im14u2c/intv/)
+| jzintv | intellivision  | .int .bin | exec.bin grom.bin | hardcoded |
+| FreeIntv | intellivision | .int | exec.bin grom.bin | /opt/retropie/configs/intellivision/retroarch.cfg |
 
 ## ROMS
-Accepted File Extensions: **.int .bin**
-
-Place your Intellivision ROMs in
+Place Intellivision ROMs in
 ```
 /home/pi/RetroPie/roms/intellivision
 ```
 ## BIOS
 There are a few BIOS files for the Intellevision. The first two are the main ones you'll probably use.
-* Executive ROM: **exec.bin**
-* Graphics ROM: **grom.bin**
-* Entertainment Computer System ROM: Commonly named ECS.BIN. Required to play ECS games. 
-* Intellivoice ROM: Commonly named IVOICE.BIN. Required to play Intellivoice games. 
+* Executive ROM: **exec.bin** MD5: `62e761035cb657903761800f4437b8af`
+* Graphics ROM: **grom.bin** MD5: `0cd5946c6473e42e8e4c2137785e427f`
+* Entertainment Computer System ROM: ECS.BIN. Required to play ECS games. 
+* Intellivoice ROM: IVOICE.BIN. Required to play Intellivoice games. 
 
 Place your BIOS files in:
 ```
 /home/pi/RetroPie/BIOS
 ```
 
+## Emulator: [jzintv](http://spatula-city.org/~im14u2c/intv/)
 
 ## Controls:
 
@@ -119,5 +117,13 @@ For example, you are trying to get `atlantis.int` to work. From the spreadsheet,
 
 Full details about using memory map config files can be found [here](http://atariage.com/forums/topic/203179-config-files-to-use-with-various-intellivision-titles/#entry2605274).
 
-
 ![intellivision](https://cloud.githubusercontent.com/assets/10035308/8246393/3e98c8c2-15fb-11e5-9398-3f5abd60361b.png)
+
+**********
+## Emulator: [FreeIntv](http://neocomputer.org/projects/freeintv/)
+
+## Controls:
+
+FreeIntv utilises Retroarch configurations. Add custom retroarch controls to the retroarch.cfg file in `/opt/retropie/configs/intellivision/retroarch.cfg`
+
+For more information on RetroArch controls see: [RetroArch Configuration](RetroArch-Configuration)
