@@ -124,7 +124,7 @@ Full details about using memory map config files can be found [here](http://atar
 ## FreeIntv
 [Visit the FreeIntv homepage](http://neocomputer.org/projects/freeintv/)
 
-FreeIntv a libretro emulation core for the Mattell Intellivision designed to be compatible with joypads from the SNES era forward even if they originally required a number pad.
+FreeIntv a libretro emulation core for the Mattel Intellivision designed to be compatible with joypads from the SNES era forward even if they originally required a number pad.
 
 ### Controls:
 
