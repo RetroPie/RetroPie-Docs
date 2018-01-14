@@ -8,8 +8,8 @@ _The Intellivision is a home video game console released by Mattel in 1979_
 
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
-| jzintv | intellivision  | .int .bin | exec.bin grom.bin | hardcoded |
-| FreeIntv | intellivision | .int | exec.bin grom.bin | /opt/retropie/configs/intellivision/retroarch.cfg |
+| [jzintv](#jzintv) | intellivision  | .int .bin | exec.bin grom.bin | hardcoded |
+| [FreeIntv](#FreeIntv) | intellivision | .int | exec.bin grom.bin | /opt/retropie/configs/intellivision/retroarch.cfg |
 
 ## ROMS
 Place Intellivision ROMs in
@@ -17,7 +17,7 @@ Place Intellivision ROMs in
 /home/pi/RetroPie/roms/intellivision
 ```
 ## BIOS
-There are a few BIOS files for the Intellevision. The first two are the main ones you'll probably use.
+The first two files listed below are the most important:
 * Executive ROM: **exec.bin** MD5: `62e761035cb657903761800f4437b8af`
 * Graphics ROM: **grom.bin** MD5: `0cd5946c6473e42e8e4c2137785e427f`
 * Entertainment Computer System ROM: ECS.BIN. Required to play ECS games. 
@@ -28,12 +28,12 @@ Place your BIOS files in:
 /home/pi/RetroPie/BIOS
 ```
 
-## Emulator: [jzintv](http://spatula-city.org/~im14u2c/intv/)
+# Emulators
 
-## Controls:
+## jzintv
+[Visit the jzintv homepage](http://spatula-city.org/~im14u2c/intv/)
 
-#### Gamepad Controls
-
+### Controls:
 By default, jzIntv maps the first (left) analog stick to the left controller's disc input. In addition, the first 9 buttons are mapped to the 3 action buttons as follows:
 <pre>
 Buttons 0, 3, 6:  Top action buttons, left controller
@@ -105,7 +105,7 @@ Fine-grain directional pad inputs:
       / | \
     Z   X   C
 ```
-## Memory Map Config Files:
+### Memory Map Config Files:
 
 If a rom does not load leaving you with a black screen (and the files dump.cpu and dump.mem in your home folder upon exit), then you need a memory map config file. This is likely to be the case for titles from Atarisoft, Imagic or INTV Corp.
 
@@ -120,12 +120,15 @@ Full details about using memory map config files can be found [here](http://atar
 ![intellivision](https://cloud.githubusercontent.com/assets/10035308/8246393/3e98c8c2-15fb-11e5-9398-3f5abd60361b.png)
 
 **********
-## Emulator: [FreeIntv](http://neocomputer.org/projects/freeintv/)
+
+## FreeIntv
+[Visit the FreeIntv homepage](http://neocomputer.org/projects/freeintv/)
 
 FreeIntv a libretro emulation core for the Mattell Intellivision designed to be compatible with joypads from the SNES era forward even if they originally required a number pad.
 
-## Controls:
+### Controls:
 
+* The d-pad will give you 8-way movement. If available, the left analog stick will function like the 16-way disc. 
 * The FreeIntv "mini keypad" allows you to view and press keys on a small keypad that appears in the lower-corner of the display while L or R is being held.
 * The "X" button is also mapped to the last selected keypad button, giving quick access. In Astrosmash, for example, you can leave "3" selected to enable instant access to hyperspace.
 * The select button lets you switch the left and right controllers. Some games expect the left controller to be player one, others expect the right controller. This isn't a problem if you have two controllers (and don't mind juggling them) but users with only one controller or using a portable setup would be effectively locked out of some games. Pressing select from either controller with swap the left controller for the right and vice-versa.
