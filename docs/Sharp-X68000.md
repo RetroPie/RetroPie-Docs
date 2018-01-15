@@ -11,6 +11,8 @@ _The Sharp X68000 was a Japan-only home computer released in 1987._
 ## Emulator: [lr-px68k](https://github.com/libretro/px68k-libretro/)
 This emulator must be installed from the experimental section in RetroPie Setup.
 
+Currently, MIDI/sound module capabilities are not supported in the emulator.
+
 ## ROMS
 
 Accepted File Extensions: **.dim** 
@@ -49,4 +51,7 @@ Add custom retroarch controls to the retroarch.cfg file in:
 
 For more information on custom RetroArch controls, see: [RetroArch Configuration](RetroArch-Configuration)
 
-## Swapping Discs
+## Swapping Disks
+By default, when loaded through a .m3u file, lr-px68k places the first disk listed in Drive 0, and the second disk listed in Drive 1.
+
+To swap either drive, press F12 to access the PX68k menu, then select your drive.  You'll then need to navigate to /home/pi/RetroPie/roms/x68000 and select the disk you want to use.
