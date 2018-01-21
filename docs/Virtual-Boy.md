@@ -30,3 +30,9 @@ Add custom retroarch controls to the retroarch.cfg file in
 For more information on custom RetroArch controls see: [RetroArch Configuration](RetroArch-Configuration)
 
 ![nintendo_virtualboy_diagram](https://cloud.githubusercontent.com/assets/10035308/16599637/7f382d3a-42c0-11e6-8e7d-bdbacf7afd82.png)
+
+## Enabling Right D-Pad to Right Analog
+
+As of January 2018, lr-beetle-vb now has proper support for mapping the right d-pad to the right analog stick.
+
+To enable this feature, just go to the Options in the Quick Menu and enable "Right analog to digital". If the option isn't in the menu, then try updating lr-beetle-vb from binary. If the option still isn't there, then try updating from source.
