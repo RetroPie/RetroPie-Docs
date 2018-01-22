@@ -126,6 +126,9 @@ Full details about using memory map config files can be found [here](http://atar
 
 FreeIntv a libretro emulation core for the Mattel Intellivision designed to be compatible with joypads from the SNES era forward even if they originally required a number pad.
 
+## Controller overlays
+Mattel Intellivision games were often meant to be played with game-specific cards overlaid on the numeric keypad. These overlays convey information which can be very useful in gameplay. Images of a limited selection of Intellivision titles are available at: http://www.intellivisionlives.com/bluesky/games/instructions.shtml
+
 ### Controls:
 
 * The d-pad will give you 8-way movement. If available, the left analog stick will function like the 16-way disc. 
@@ -136,3 +139,6 @@ FreeIntv a libretro emulation core for the Mattel Intellivision designed to be c
 FreeIntv utilises Retroarch controller configurations. Add custom retroarch controls to the retroarch.cfg file in `/opt/retropie/configs/intellivision/retroarch.cfg`
 
 For more information on RetroArch controls see: [RetroArch Configuration](RetroArch-Configuration)
+
+## Entertainment Computer System and Intellivoice
+FreeIntv does not currently support Entertainment Computer System (ECS) and Intellivoice funcationality. Contributions to the source are welcome!
