@@ -8,14 +8,15 @@ There are three main methods of transferring roms: via USB stick, via SFTP, and 
 
 ### USB stick
 
-  - (ensure that your USB is formatted to FAT32)
-  - first create a folder called `retropie` on your USB stick
-  - plug it into the pi and wait for it to finish blinking
-  - pull the USB out and plug it into a computer
-  - add the roms to their respective folders (in the `retropie/roms` folder)
-  - plug it back into the raspberry pi
-  - wait for it to finish blinking
-  - refresh emulationstation by pressing F4, or choosing quit from the start menu
+1. (ensure that your USB is formatted to FAT32)
+2. first create a folder called `retropie` on your USB stick
+3. plug it into the pi and wait for it to finish blinking
+4. pull the USB out and plug it into a computer
+5. add the roms to their respective folders (in the `retropie/roms` folder)
+6. plug it back into the raspberry pi
+7. wait for it to finish blinking
+8. you can now remove the USB stick.
+9. refresh emulationstation by pressing F4, or choosing quit from the start menu
 
 ### SFTP
 
