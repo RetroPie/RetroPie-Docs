@@ -77,7 +77,7 @@ Useful data are passed as arguments to these scripts:
 - `$3` - the full path to the rom file.
 - `$4` - the full command line used to launch the emulator.
 
-All the error messages from these scripts will be logged in `runcommand.log`. If you want to log something to this file you have to redirect the output to the standard error. This way:
+All the error messages from these scripts will be logged in `/dev/shm/runcommand.log`. If you want to log something to this file you have to redirect the output to the standard error. This way:
 
 ```sh
 echo "message to log" >&2
