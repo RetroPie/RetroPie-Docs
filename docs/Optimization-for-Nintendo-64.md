@@ -63,18 +63,16 @@ Rice Line
 LoadHiResTextures = False
 ```
 
-You would then place high res texture packs in the directory
+You would then place high res texture packs in the directory `/home/pi/.local/share/mupen64plus/hires_texture`
 
-/home/pi/.local/share/mupen64plus/hires_texture
-
-I would suggest 
+Download the texture packs to that directory and then unzip them:
+```
 mkdir /home/pi/.local/share/mupen64plus/hires_texture
 cd /home/pi/.local/share/mupen64plus/hires_texture
-and then you can use the command wget to download the texture packs to that directory and then unzip them. 
 
 wget http://websitewithtexturepack/texturepack.zip
 sudo unzip texturepack.zip
-
+```
 
 
 Texture packs are available for download [here](
@@ -83,7 +81,7 @@ http://textures.emulation64.com/index.php?id=downloads)
 The folder name in that directory must match the core name in the rom header. 
 Most cases the default directory name is ok but you may need to check if you find if your rom is not correctly launching the texture pack. 
 
-To find that you can use the command to display the core name just use the command below in terminal then exit and scroll up I do it from a ssh session cause i can scroll up and read it.  But in the first few lines it will show the core name 
+To find that you can use the command to display the core name just use the command below in terminal then exit and scroll up I do it from a ssh session cause I can scroll up and read it.  But in the first few lines it will show the core name 
 ```
 cd /home/pi/RetroPie/roms/n64
 /opt/retropie/emulators/mupen64plus/bin/mupen64plus.sh mupen64plus-video-rice rom name
@@ -116,10 +114,10 @@ https://github.com/mupen64plus/mupen64plus-video-rice
 
 
 Quality of Roms
-There is a definite difference in some roms.  There are multiple versions of the SOTE rom some of which have noticeable stuttering and seizure screens but there are clean versions which play without the buggy effects.  I believe some of this could be due to the core name in the rom header not correctly matching what is in the .ini files for different plugins which apply different effects per game or could be as simple as bad rips which were never noticed on more powerfull hardware. 
+There is a definite difference in some roms.  There are multiple versions of the SOTE rom some of which have noticeable stuttering and seizure screens but there are clean versions which play without the buggy effects.  I believe some of this could be due to the core name in the rom header not correctly matching what is in the .ini files for different plugins which apply different effects per game or could be as simple as bad rips which were never noticed on more powerful hardware. 
 
 Overclocking past 1400
-Well not going to say its impossible but 1400 is the only stable option I can get after testing on about 8 different pi 3s.  
+Well, not going to say its impossible but 1400 is the only stable option I can get after testing on about 8 different pi 3s.  
 
 
   
