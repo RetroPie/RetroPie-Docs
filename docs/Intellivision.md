@@ -11,18 +11,11 @@ _The Intellivision is a home video game console released by Mattel in 1979_
 | [jzintv](#jzintv) | intellivision  | .int .bin | exec.bin grom.bin | hardcoded |
 | [FreeIntv](#freeintv) | intellivision | .int .bin .rom | exec.bin grom.bin | /opt/retropie/configs/intellivision/retroarch.cfg |
 
-## ROMS
+## ROM and BIOS Paths
 Place Intellivision ROMs in
 ```
 /home/pi/RetroPie/roms/intellivision
 ```
-## BIOS
-The first two files listed below are the most important:
-* Executive ROM: **exec.bin** MD5: `62e761035cb657903761800f4437b8af`
-* Graphics ROM: **grom.bin** MD5: `0cd5946c6473e42e8e4c2137785e427f`
-* Entertainment Computer System ROM: ECS.BIN. Required to play ECS games. 
-* Intellivoice ROM: IVOICE.BIN. Required to play Intellivoice games. 
-
 Place your BIOS files in:
 ```
 /home/pi/RetroPie/BIOS
@@ -32,6 +25,19 @@ Place your BIOS files in:
 
 ## jzintv
 [Visit the jzintv homepage](http://spatula-city.org/~im14u2c/intv/)
+
+## BIOS
+
+jzIntv requires at least the first two Intellivision BIOS files listed below to be placed in the libretro 'system' folder:
+
+| Function | Filename* | MD5 Hash |
+| --- | --- | --- | 
+| Executive ROM | `exec.bin`  | `62e761035cb657903761800f4437b8af` |
+| Graphics ROM | `grom.bin` | `0cd5946c6473e42e8e4c2137785e427f`|
+| Entertainment Computer System (ECS) ROM | `ECS.BIN` | ? |
+| Intellivoice ROM | `IVOICE.BIN` | ? |
+
+* BIOS filenames are case-sensitive
 
 ### Controls:
 By default, jzIntv maps the first (left) analog stick to the left controller's disc input. In addition, the first 9 buttons are mapped to the 3 action buttons as follows:
@@ -126,11 +132,23 @@ Full details about using memory map config files can be found [here](http://atar
 
 FreeIntv a libretro emulation core for the Mattel Intellivision designed to be compatible with joypads from the SNES era forward even if they originally required a number pad.
 
-## Controller overlays
+### BIOS
+FreeIntv requires two Intellivision BIOS files to be placed in the libretro 'system' folder:
+
+| Function | Filename* | MD5 Hash |
+| --- | --- | --- | 
+| Executive ROM | `exec.bin`  | `62e761035cb657903761800f4437b8af` |
+| Graphics ROM | `grom.bin` | `0cd5946c6473e42e8e4c2137785e427f` |
+
+* BIOS filenames are case-sensitive
+
+### Entertainment Computer System and Intellivoice
+FreeIntv does not currently support Entertainment Computer System (ECS) and Intellivoice funcationality. Contributions to the source are welcome!
+
+### Controller overlays
 Mattel Intellivision games were often meant to be played with game-specific cards overlaid on the numeric keypad. These overlays convey information which can be very useful in gameplay. Images of a limited selection of Intellivision titles are available at: http://www.intellivisionlives.com/bluesky/games/instructions.shtml
 
-### Controls:
-
+### Controls
 
 | RetroPad | FreeIntv Function |
 | --- | --- |
@@ -146,6 +164,3 @@ Mattel Intellivision games were often meant to be played with game-specific card
 FreeIntv utilises Retroarch controller configurations. Add custom retroarch controls to the retroarch.cfg file in `/opt/retropie/configs/intellivision/retroarch.cfg`
 
 For more information on RetroArch controls see: [RetroArch Configuration](RetroArch-Configuration)
-
-## Entertainment Computer System and Intellivoice
-FreeIntv does not currently support Entertainment Computer System (ECS) and Intellivoice funcationality. Contributions to the source are welcome!
