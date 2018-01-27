@@ -32,10 +32,11 @@ jzIntv requires at least the first two Intellivision BIOS files listed below to 
 
 | Function | Filename* | MD5 Hash |
 | --- | --- | --- | 
-| Executive ROM | `exec.bin`  | `62e761035cb657903761800f4437b8af` |
-| Graphics ROM | `grom.bin` | `0cd5946c6473e42e8e4c2137785e427f`|
-| Entertainment Computer System (ECS) ROM | `ECS.BIN` | ? |
-| Intellivoice ROM | `IVOICE.BIN` | ? |
+| **Executive ROM** | `exec.bin`  | `62e761035cb657903761800f4437b8af` |
+| **Graphics ROM** - 213 predefined character images and some EXEC routines; Tutorvision variant | `grom.bin` | `0cd5946c6473e42e8e4c2137785e427f`|
+| **Entertainment Computer System (ECS) ROM** - additional EXEC routines, the BASIC programming interpreter, and graphics of musical notes | `ECS.BIN` | ? |
+| **Intellivoice RESROM** - resident ROM containing common speech words and phrases as well as program instructions | `IVOICE.BIN` | ? |
+| Keyboard Component EXEC ROM - BIOS for the Keyboard Component peripheral; PicSe (picture sequencer) routines for multimedia software | ? | ? |
 
 * BIOS filenames are case-sensitive
 
