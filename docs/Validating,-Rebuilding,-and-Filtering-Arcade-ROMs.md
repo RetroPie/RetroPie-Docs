@@ -1,4 +1,4 @@
-**Note: If you're getting started with an arcade emulation project, begin by reading [[Managing Arcade ROMs|Managing ROMs]].**
+**Note: If you're getting started with an arcade emulation project, begin by reading [[Getting Started with Arcade Emulation|Arcade]].**
 
 See also: [MAME](MAME), [Final Burn Alpha](FinalBurn-Alpha)
 
