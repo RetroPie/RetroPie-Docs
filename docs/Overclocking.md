@@ -197,6 +197,8 @@ You are better to just set `core_freq` and `gpu_freq` to the same thing and don'
 
 By setting `avoid_pwm_pll=1` (which negatively affects 3.5mm audio quality) you can overclock the individual GPU components with the parameters:
 
+**According to https://github.com/raspberrypi/firmware/issues/726 the avoid_pwm_pll=1 setting no longer exists. Is this obsolete information?**
+
 * `v3d_freq` - speed of OpenGL 3D graphics processor
 * `isp_freq` - speed of Image Sensor Pipeline
 * `h264_freq` - speed of x264 video decoder (not used by emulators, used by Kodi)
