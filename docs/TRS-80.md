@@ -20,7 +20,7 @@ Place your TRS-80 ROMs in
 
 ## BIOS
 
-The file needed is **level2.rom**
+The BIOS file needed is **level2.rom** . An overview of the options for legally obtaining one of the various compatible BIOS files can be found [in the sdltrs README file](https://github.com/RetroPie/sdltrs).
 
 Place your level2.rom BIOS file in
 ```
