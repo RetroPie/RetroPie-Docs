@@ -33,7 +33,7 @@ Add the following line to the top of that file, being sure to adjust it for your
 
 > **Good to know**: If you'd like to host the entire RetroPie folder remotely you can do so by removing the `/roms` directories from the mount command above. Make sure to have a copy of the RetroPie installation on your remote server or EmulationStation won't be able to start RetroPie!
 
-Restart your Raspberry Pi with `sudo reboot` or by simply unplugging the power cord.
+Restart your Raspberry Pi with `sudo reboot`.
 
 Alternatively, if you have a shared folder that allows guest access, you can use the following line in your `autostart.sh`:
 
