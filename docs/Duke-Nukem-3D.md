@@ -155,3 +155,5 @@ ESC | Menu
 If you start EDuke32 and it is not recognizing your controller bring down the console and type:
 
 `in_joystick 1`
+
+For information on how to configure an XBox360 controller to work in eduke32, check out [this forum post](https://retropie.org.uk/forum/post/130059).
