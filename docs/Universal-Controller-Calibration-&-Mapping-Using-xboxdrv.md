@@ -1,7 +1,7 @@
 This guide will attempt to detail several advanced controller mappings and calibration techniques suitable for just about any controller. The focus will be on the use of xboxdrv, as it is an extremely versatile tool that can handle almost any situation and is able to be installed directly from from the 'RetroPie Setup' menu. A complete list of its capabilities can be found [here](http://manpages.ubuntu.com/manpages/precise/man1/xboxdrv.1.html). What follows is a grouping of use case scenarios that would be of direct interest to RetroPie Users. New scenarios will be added from time to time. Some of these scenarios will include:
 
 - Keyboard mapping for emulators that don't support controllers natively
-- Mouse mapping to analog joysticks for full use of certain computer games as well as improved performance in ScummVM and Atari emulators
+- Mouse mapping to analog joysticks for full control of certain arcade and computer games, as well as most Atari system emulators
 - Mapping analog triggers as buttons for a faster response time (Commonly seen in the competitive Smash Bros community pre-WiiU)
 - Four-way directional input restriction for games like Pac-Man that suffer when diagonal control input is introduced
 - Correcting the inner and outer deadzones of analog sticks for finer control and to prevent drifting problems in overly-sensitive or well-worn controllers.
