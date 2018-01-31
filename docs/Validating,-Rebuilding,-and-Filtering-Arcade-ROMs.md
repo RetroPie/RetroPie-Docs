@@ -41,21 +41,6 @@ The [lr-mame2003](https://github.com/libretro/mame2003-libretro/tree/master/meta
 
 ***
 
-# Crash Course in Arcade ROMs
-
-**Arcade Emulator Terminology**
-
-- **ROM, ROM set, and romset**: Arcade games are packaged as zip files, most of which are composed of more than one individual 'ROM' files. That is why some resources refer to an individual arcade game as a ROM (like people use to describe a zipped game cartridge ROM) while other resources refer to an individual game as a ROM set or romset.
-- **ROM version or ROM set version**: Each version of an arcade emulator must be used with ROMs that have the same exact version number. For example, MAME 0.37b5 ROMs are required by the MAME4ALL emulator, but will not work correctly with the lr-mame2010 emulator, which requires MAME 0.139 ROMs.
-- **Sample**: Some games require an additional zip file with recorded sounds or music in order for audio to work correctly. The path where these samples should be copied varies from emulator to emulator.
-- **CHD**: Some MAME games require data from an internal hard drive, CD-ROM, laserdisk, or other media in order to be emulated -- those forms of media are packaged as CHD files. CHD files should be copied to subfolders within the folder where the MAME ROM zips have been installed.
-
-In addition to having a version number, arcade ROMs can be formatted three ways:
-
-- **Non-merged**: All ROMs can be used standalone because each zip contains all the files needed to run that game, including any files from 'parent ROMs'. This is the recommended format for RetroPie arcade emulators.
-- **Split**: Some ROMS that are considered clones, translations, or bootlegs also require a "parent ROM" to run. The parent ROM is often the first or most common variant of a game. In some cases the parent is not the most popular or best working version of the game, however. For example, in a Split set pacman.zip (a clone), will not work without puckman.zip (its parent).
-- **Merged**: Clones are merged into the parent ROM zip, meaning that more than one game is stored per file. Merged ROM sets are not recommended.
-
 # Validating and Rebuilding ROMs
 
 It is possible to 'rebuild' from one version of an ROM collection to another. If you also have access to ROMs from a newer or older ROM collection you can 'roll forward' or 'roll back' your ROM version.
@@ -77,7 +62,26 @@ All of the Windows tools can be run on Linux (x86) using [Wine](https://www.wine
 The remainder of the ClrMamePro docs is devoted to a demonstration of using ClrMamePro to rebuild and validate arcade ROM sets. This part of the tutorial uses a MAME 0.37b5 collection as well as a PiFBA collection (in the video version) to demonstrate the process.
 
 * **[View the ClrMamePro video tutorial on facebook](https://www.youtube.com/watch?v=_lssz2pAba8)**
-* **Read the written tutorial below**
+* **[Read the written tutorial below](#written-clrmamepro-tutorial]**
+
+Before manipulating arcade ROMs, please be sure you are familiar with their unique terminology.
+
+***
+
+#### Crash Course in Arcade ROM terminology
+
+- **ROM, ROM set, and romset**: Arcade games are packaged as zip files, most of which are composed of more than one individual 'ROM' files. That is why some resources refer to an individual arcade game as a ROM (like people use to describe a zipped game cartridge ROM) while other resources refer to an individual game as a ROM set or romset.
+- **ROM version or ROM set version**: Each version of an arcade emulator must be used with ROMs that have the same exact version number. For example, MAME 0.37b5 ROMs are required by the MAME4ALL emulator, but will not work correctly with the lr-mame2010 emulator, which requires MAME 0.139 ROMs.
+- **Sample**: Some games require an additional zip file with recorded sounds or music in order for audio to work correctly. The path where these samples should be copied varies from emulator to emulator.
+- **CHD**: Some MAME games require data from an internal hard drive, CD-ROM, laserdisk, or other media in order to be emulated -- those forms of media are packaged as CHD files. CHD files should be copied to subfolders within the folder where the MAME ROM zips have been installed.
+
+In addition to having a version number, arcade ROMs can be formatted three ways:
+
+- **Non-merged**: All ROMs can be used standalone because each zip contains all the files needed to run that game, including any files from 'parent ROMs'. This is the recommended format for RetroPie arcade emulators.
+- **Split**: Some ROMS that are considered clones, translations, or bootlegs also require a "parent ROM" to run. The parent ROM is often the first or most common variant of a game. In some cases the parent is not the most popular or best working version of the game, however. For example, in a Split set pacman.zip (a clone), will not work without puckman.zip (its parent).
+- **Merged**: Clones are merged into the parent ROM zip, meaning that more than one game is stored per file. Merged ROM sets are not recommended.
+
+***
 
 ### Written ClrMamePro tutorial 
 
