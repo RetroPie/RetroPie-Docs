@@ -5,13 +5,39 @@ See also: [MAME](MAME), [Final Burn Alpha](FinalBurn-Alpha)
 ---
 
 ## Table of Contents
-* [Crash Course in Arcade ROMs](#crash-course-in-arcade-roms)
+* [DAT Files: The Cornerstone](#dat-files-the-cornerstone)
+* [Filtering ROM collections](#filtering-rom-collections)
 * [Validating and Rebuilding ROMs](#validating-and-rebuilding-roms)
-* [Filtering ROMs](#filtering-roms)
+***
+
+# DAT Files: The Cornerstone
+
+**Correct ROM versions are essential.**
+
+So how do you tell you have the right ROM if you aren't sure that your set matches the version required by the emulator you chose? What if you don't have the right version?
+
+**Note: the process of verifying and rebuilding ROMs is complex and requires a substantial investment of time and effort in order to master. If your goal is to have working ROMs, it is almost always simpler to download a full ROM set that has already been verified to match the emulator you chose.**
+
+Once you begin working with software tools to help validate, rebuild, or filter your ROM collection, you will quickly encounter the need for "DAT" files, so named because they usually (but not always!) have the file extension `.dat`.
+
+DATs describe the ROM contents including filenames, file sizes, and checksums to verify contents are not incorrect or corrupt. DATs are usually maintained either by emulator developers (such as with MAME or Final Burn Alpha) or digital preservation organizations like TOSEC and No-Intro. Almost all DATs are volunteer efforts and represent one of the most important and impressive outcomes of the video game preservation community.
+
+In order to verify or rebuild a set, you need its corresponding DAT file and a software tool to process the DAT. For example, the authors of RetroArch recommend that Super Nintendo Entertainment System ROM collections be validated against the No-Intro "Nintendo - Super Nintendo Entertainment System" DAT. ROM collections for use with the MAME 2003 emulator should be validated against a "MAME 0.78" DAT [(such as the one found in its metadata folder)](https://github.com/libretro/mame2003-libretro/tree/master/metadata). And so on.
 
 ***
 
-## Crash Course in Arcade ROMs
+## Filtering ROM collections
+
+### Filtering console collections
+To be written
+
+### Filtering arcade collections
+
+The [lr-mame2003](https://github.com/libretro/mame2003-libretro/tree/master/metadata) core and [lr-mame2010](https://github.com/libretro/mame2010-libretro/tree/master/metadata) core maintain a `catver.ini` file in their github repositories. `catver.ini` can be used with ROM management tools such as [ROMLister](https://www.waste.org/~winkles/ROMLister/) in order to sort and filter a MAME collection by genre or by other tags, such as whether it includes "Mature" content.
+
+***
+
+# Crash Course in Arcade ROMs
 
 **Arcade Emulator Terminology**
 
@@ -26,17 +52,11 @@ In addition to having a version number, arcade ROMs can be formatted three ways:
 - **Split**: Some ROMS that are considered clones, translations, or bootlegs also require a "parent ROM" to run. The parent ROM is often the first or most common variant of a game. In some cases the parent is not the most popular or best working version of the game, however. For example, in a Split set pacman.zip (a clone), will not work without puckman.zip (its parent).
 - **Merged**: Clones are merged into the parent ROM zip, meaning that more than one game is stored per file. Merged ROM sets are not recommended.
 
-## Correct ROM versions are essential
+# Validating and Rebuilding ROMs
 
-So how do you tell you have the right ROM if you aren't sure that your set matches the version required by the emulator you chose? What if you don't have the right version?
+It is possible to 'rebuild' from one version of an ROM collection to another. If you also have access to ROMs from a newer or older ROM collection you can 'roll forward' or 'roll back' your ROM version.
 
-It is possible to 'rebuild' from one version of an arcade ROM collection to another. If you also have access to a newer ROM collection you can 'roll forward' your ROM version, of if you have access to an older ROM collection or a 'rollback' collection you can rebuild to a lower ROM version. 
-
-**Note: the process of verifying and rebuilding ROMs is complex and requires a substantial investment of time and effort in order to master. If your goal is to have working arcade ROMs, it is almost always simpler to download a full ROM set that has already been verified to match the arcade emulator you chose.**
-
-## Validating and Rebuilding ROMs
-
-In order to verify or rebuild a set, you need its corresponding DAT file and a software tool to process the DAT. DATs describe the ROM contents including filenames, file sizes, and checksums to verify contents are not incorrect or corrupt. The wiki pages for [MAME](https://github.com/RetroPie/RetroPie-Setup/wiki/MAME), [FB Alpha](https://github.com/RetroPie/RetroPie-Setup/wiki/FinalBurn-Alpha), and [Neo Geo](https://github.com/RetroPie/RetroPie-Setup/wiki/Neo-Geo) include DATs and detailed information about the ROM sets needed for the various arcade emulators.
+The wiki pages for [MAME](https://github.com/RetroPie/RetroPie-Setup/wiki/MAME), [FB Alpha](https://github.com/RetroPie/RetroPie-Setup/wiki/FinalBurn-Alpha), and [Neo Geo](https://github.com/RetroPie/RetroPie-Setup/wiki/Neo-Geo) include DATs and detailed information about the ROM sets needed for the various arcade emulators.
 
 Popular ROM verification tools include:
 
@@ -110,9 +130,3 @@ Time to find out how well your source ROMs matched up...
 * clrmamepro is very stable.  It has been around for a long time, it is regularly updated and it is widely used.  If it reports problems reading your ROMs, you most likely have corrupt ROM archives (zip files) or a failing hard drive.
 
 * If you feel the need to reset clrmamepro's settings, just delete your existing profile(s) and reload your DAT file, selecting **"Default"** settings for the new profile.  Almost all of clrmamepro's settings are per-profile.
-
-## Filtering ROMs
-
-The [lr-mame2003](https://github.com/libretro/mame2003-libretro/tree/master/metadata) core and [lr-mame2010](https://github.com/libretro/mame2010-libretro/tree/master/metadata) core maintain a `catver.ini` file in their github repositories. `catver.ini` can be used with ROM management tools such as [ROMLister](https://www.waste.org/~winkles/ROMLister/) in order to sort and filter a MAME collection by genre or by other tags, such as whether it includes "Mature" content.
-
-To be written
