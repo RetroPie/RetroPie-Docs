@@ -142,6 +142,7 @@
 * [[Shaders and Smoothing]]
 * [[Overscan]]
 * [[Input Lag]]
+* [Validating, Rebuilding, and Filtering ROM Collections]]
 
 ## Controllers
 
