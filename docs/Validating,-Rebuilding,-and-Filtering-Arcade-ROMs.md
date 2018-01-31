@@ -27,11 +27,17 @@ In order to verify or rebuild a set, you need its corresponding DAT file and a s
 ## Filtering ROM collections
 
 ### Filtering console collections
-To be written
+
+#### No-Intro 1 Game, 1 ROM DATs (aka Parent-Clone DATs)
+1G1R DATs (aka Parent-Clone DATs) allow you to create a '1 game, 1 ROM' collection from a full No-Intro set. For example, you can set ClrMamePro to filter your set based on a preference of USA ROMs > then EUR > then JPN. 
+
+The resulting set of ROMs will feature a USA version of a game whenever possible, then look for a EUR region ROM for that title, and finally use the JPN only if no USA or EUR ROMs are in the folder. All regions with releases in a given system are supported (in other words you could set a preference of Spain > Europe > USA > Italy > Japan > etc.)
+
+No-Intro's DAT-o-MATIC (DoM) also allows you to download DATs for their currently supported systems, and DATs in latest Logiqx's XML format which contain Parent-Clone information for the system. Both of these DATs can be obtained, as available, from the DAT-o-MATIC on the No-Intro website.
 
 ### Filtering arcade collections
 
-The [lr-mame2003](https://github.com/libretro/mame2003-libretro/tree/master/metadata) core and [lr-mame2010](https://github.com/libretro/mame2010-libretro/tree/master/metadata) core maintain a `catver.ini` file in their github repositories. `catver.ini` can be used with ROM management tools such as [ROMLister](https://www.waste.org/~winkles/ROMLister/) in order to sort and filter a MAME collection by genre or by other tags, such as whether it includes "Mature" content.
+The [lr-mame2003](https://github.com/libretro/mame2003-libretro/tree/master/metadata) core and [lr-mame2010](https://github.com/libretro/mame2010-libretro/tree/master/metadata) core maintain a `catver.ini` file in their github repositories. `catver.ini` can be used with ROM management tools such as [ROMLister](https://www.waste.org/~winkles/ROMLister/) and [Simple Arcade Multifilter](https://retropie.org.uk/forum/topic/7606/simple-arcade-multifilter-app-for-mame-and-fb-alpha-sets-get-rid-of-adult-and-mahjong-games/) in order to sort and filter a MAME collection by genre or by other tags, such as whether it includes "Mature" content.
 
 ***
 
