@@ -48,9 +48,14 @@ Popular ROM verification tools include:
 
 All of the Windows tools can be run on Linux (x86) using [Wine](https://www.winehq.org/). RomVault can be run natively on Linux using Mono. **The remainder of this section will focus on clrmamepro for Windows, one of the most popular tools.**
 
-## Video Tutorial
+## ClrMamePro walkthrough
 
-* [Easy ClrMamePro Tutorial](https://www.youtube.com/watch?v=_lssz2pAba8)
+The remainder of the ClrMamePro docs is devoted to a demonstration of using ClrMamePro to rebuild and validate arcade ROM sets. This part of the tutorial uses a MAME 0.37b5 collection as well as a PiFBA collection (in the video version) to demonstrate the process.
+
+* **[View the ClrMamePro video tutorial on facebook](https://www.youtube.com/watch?v=_lssz2pAba8)**
+* **Read the written tutorial below**
+
+### Written ClrMamePro tutorial 
 
 ### Step 1 - Back up your ROMs
 It is possible with clrmamepro to change one or two options and when it runs it will delete all your existing ROMs. OK, not really - using the default options it will make backups of any files it removes, but it is still possible to mess up their ROMs beyond repair when getting started with clrmamepro.
@@ -85,14 +90,7 @@ At this point, you could scan the ROMs folder you just selected, but we just cre
 * In the main clrmamepro window, select **"Rebuilder"**
 * The destination should already be filled in for you - it is the same as the ROM path you defined above in the settings window: `C:\retropie-dat-master\mame4allroms`
 * Use the browse button **"..."** to select your source path.  For example you might have a full set of MAME v0.156 ROMs - point clrmamepro to that directory as your source.
-* When rebuilding there are three options: **Non-Merged, Merged, and Split**. (**NOTE**: Using Non-Merged ROMs is the most straightforward way to copy individual games to a RetroPie system.)
-
-***
-- **Non-merged**: All ROMs can be used standalone because each zip contains all the files needed to run that game, including any files from 'parent ROMs'. This is the recommended format for RetroPie arcade emulators.
-- **Split**: Some ROMS that are considered clones, translations, or bootlegs also require a "parent ROM" to run. The parent ROM is often the first or most common variant of a game. In some cases the parent is not the most popular or best working version of the game, however. For example, in a Split set pacman.zip (a clone), will not work without puckman.zip (its parent).
-- **Merged**: Clones are merged into the parent ROM zip, meaning that more than one game is stored per file. Merged ROM sets are not recommended.
-***
-
+* When rebuilding there are three options: **Non-Merged, Merged, and Split**. (**NOTE**: Using Non-Merged ROMs is the most straightforward way to copy individual games to a RetroPie system.
 * Click **"Rebuild..."**.  Depending on the size of the directory you chose as a source, this could take some time
 * When clrmamepro is finished rebuilding, you will see a window with statistics showing how many matching files were found, how many files were created and how many were skipped.  Click "OK" 
 * Repeat for any other source paths you might have.  You can rebuild from multiple sources, but leave the Destination path the same
@@ -104,12 +102,6 @@ Time to find out how well your source ROMs matched up...
 * In the main clrmamepro window, select **"Scanner"**
 * Leave all settings at default and click **"New Scan..."**
 * When clrmamepro finishes scanning, you will see a "Statistics" window with high level information and a "Scan Results" window with detailed information about your missing ROMs
-
-### Repeat Steps 4 through 6 for the FBA ROM set#
-* From clrmamepro "Profiler" window load the DAT file for PiFBA `C:\retropie-dat-master\pifba\fba_029671_od_release_10_working_roms.dat`
-* From clrmamepro "Settings" windows set the ROM path to `C:\retropie-dat-master\pifbaroms`
-* Use clrmamepro's "Rebuilder" to rebuild your existing ROMs to a new ROM set
-* Scan the rebuilt ROMs using the "Scanner"
 
 ### Notes
 
