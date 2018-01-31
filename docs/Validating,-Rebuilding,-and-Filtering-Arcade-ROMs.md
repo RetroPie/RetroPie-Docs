@@ -1,7 +1,5 @@
 **Note: If you're reading this doc because you're starting an arcade emulation project, begin by reading [[Getting Started with Arcade Emulation|Arcade]].**
 
-See also: [MAME](MAME), [Final Burn Alpha](FinalBurn-Alpha)
-
 ---
 
 ## Table of Contents
