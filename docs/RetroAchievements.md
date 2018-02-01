@@ -39,7 +39,7 @@ cheevos_leaderboards_enable = true
 * Nintendo 64
 * Atari Lynx
 
-A libretro core compatibility list with RetroAchievements can be found in [libretro docs](https://buildbot.libretro.com/docs/guides/retroachievements/).
+A libretro core compatibility list with RetroAchievements can be found in [libretro docs](https://docs.libretro.com/guides/retroachievements/).
 
 ## RetroAchievements Messages
 
