@@ -14,8 +14,6 @@ Extract the .xz file with a program like [7zip](http://www.7-zip.org/download.ht
 
 Write the .img file to your SD card or EMMC module with something like [Win32DiskImager](http://sourceforge.net/projects/win32diskimager/)
 
-Unlike the RetroPie SD Image, the Odroid image will autoexpand the filesystem so there is no need for that step here.
-
 ## Install RetroPie:
 
 ### Preliminary steps:
