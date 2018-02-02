@@ -62,7 +62,7 @@ All of the Windows tools can be run on Linux (x86) using [Wine](https://www.wine
 The remainder of the ClrMamePro docs is devoted to a demonstration of using ClrMamePro to rebuild and validate arcade ROM sets. This part of the tutorial uses a MAME 0.37b5 collection as well as a PiFBA collection (in the video version) to demonstrate the process.
 
 * **[View the ClrMamePro video tutorial on YouTube](https://www.youtube.com/watch?v=_lssz2pAba8)**
-* **[Read the written ClrMamePro tutorial below](#written-clrmamepro-tutorial)
+* **[Read the written ClrMamePro tutorial below](#written-clrmamepro-tutorial)**
 
 Before manipulating arcade ROMs, please be sure you are familiar with their unique terminology.
 
