@@ -75,9 +75,10 @@ Before manipulating arcade ROMs, please be sure you are familiar with their uniq
 - **Sample**: Some games require an additional zip file with recorded sounds or music in order for audio to work correctly. The path where these samples should be copied varies from emulator to emulator.
 - **CHD**: Some MAME games require data from an internal hard drive, CD-ROM, laserdisk, or other media in order to be emulated -- those forms of media are packaged as CHD files. CHD files should be copied to subfolders within the folder where the MAME ROM zips have been installed.
 
-In addition to having a version number, arcade ROMs can be formatted three ways:
+In addition to having a version number, arcade ROMs can be formatted four ways:
 
-- **Non-merged**: All ROMs can be used standalone because each zip contains all the files needed to run that game, including any files from 'parent ROMs'. This is the recommended format for RetroPie arcade emulators.
+- **Non-merged ROM**: All ROMs can be used standalone because each zip contains all the files needed to run that game, including any files from 'parent ROMs'. The only exception are BIOS ROMs, which are formatted as 'Split' and must be kept in the same folder as the ROM set which uses it. **Non-Merged ROM sets are the recommended format for RetroPie arcade emulators.**
+- **Non-merged ROM and BIOS**: All ROMs can be used standalone because each zip contains all the files needed to run that game, including any ROMs from 'parent' ROM sets and BIOS sets. (ClrMamePro users: access through the "Advanced" button in the Rebuild menu.)
 - **Split**: Some ROMS that are considered clones, translations, or bootlegs also require a "parent ROM" to run. The parent ROM is often the first or most common variant of a game. In some cases the parent is not the most popular or best working version of the game, however. For example, in a Split set pacman.zip (a clone), will not work without puckman.zip (its parent).
 - **Merged**: Clones are merged into the parent ROM zip, meaning that more than one game is stored per file. Merged ROM sets are not recommended.
 
