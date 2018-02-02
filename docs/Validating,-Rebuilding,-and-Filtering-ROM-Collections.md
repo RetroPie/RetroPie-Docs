@@ -4,6 +4,7 @@
 
 ## Table of Contents
 * [DAT Files: The Cornerstone](#dat-files-the-cornerstone)
+* [ROM management tools](#rom-management-tools)
 * [Filtering ROM collections](#filtering-rom-collections)
 * [Validating and Rebuilding ROMs](#validating-and-rebuilding-roms)
 ***
@@ -21,6 +22,19 @@ Once you begin working with software tools to help validate, rebuild, or filter 
 DATs describe the ROM contents including filenames, file sizes, and checksums to verify contents are not incorrect or corrupt. DATs are usually maintained either by emulator developers (such as with MAME or Final Burn Alpha) or digital preservation organizations like TOSEC and No-Intro. Almost all DATs are volunteer efforts and represent one of the most important and impressive outcomes of the video game preservation community.
 
 In order to verify or rebuild a set, you need its corresponding DAT file and a software tool to process the DAT. For example, the authors of RetroArch recommend that Super Nintendo Entertainment System ROM collections be validated against the No-Intro "Nintendo - Super Nintendo Entertainment System" DAT. ROM collections for use with the MAME 2003 emulator should be validated against a "MAME 0.78" DAT [(such as the one found in its metadata folder)](https://github.com/libretro/mame2003-libretro/tree/master/metadata). And so on.
+
+***
+# ROM management tools
+
+**This doc assumes that the user is working with ClrMamePro, one of the most popular ROM management tools.** ClrMamePro is not the only option available, however. Popular ROM verification tools include:
+
+* [clrmamepro](http://mamedev.emulab.it/clrmamepro/) (Windows)
+* [clrmamepro](http://www.emulab.it) (OSX)
+* [romcenter](http://romcenter.com/) (Windows)
+* [Romulus](http://romulus.net63.net/) (Windows)
+* [RomVault](http://www.romvault.com/) (Windows & Linux)
+
+These Windows tools can be run on Linux (x86) using [Wine](https://www.winehq.org/). RomVault can be run natively on Linux using Mono. 
 
 ***
 
@@ -47,19 +61,7 @@ It is possible to 'rebuild' from one version of an ROM collection to another. If
 
 The wiki pages for [MAME](https://github.com/RetroPie/RetroPie-Setup/wiki/MAME), [FB Alpha](https://github.com/RetroPie/RetroPie-Setup/wiki/FinalBurn-Alpha), and [Neo Geo](https://github.com/RetroPie/RetroPie-Setup/wiki/Neo-Geo) include DATs and detailed information about the ROM sets needed for the various arcade emulators.
 
-Popular ROM verification tools include:
-
-* [clrmamepro](http://mamedev.emulab.it/clrmamepro/) (Windows)
-* [clrmamepro](http://www.emulab.it) (OSX)
-* [romcenter](http://romcenter.com/) (Windows)
-* [Romulus](http://romulus.net63.net/) (Windows)
-* [RomVault](http://www.romvault.com/) (Windows & Linux)
-
-All of the Windows tools can be run on Linux (x86) using [Wine](https://www.winehq.org/). RomVault can be run natively on Linux using Mono. **The remainder of this section will focus on clrmamepro for Windows, one of the most popular tools.**
-
-## ClrMamePro walkthrough
-
-The remainder of the ClrMamePro docs is devoted to a demonstration of using ClrMamePro to rebuild and validate arcade ROM sets. This part of the tutorial uses a MAME 0.37b5 collection as well as a PiFBA collection (in the video version) to demonstrate the process.
+The remainder of this section of the docs is devoted to a demonstration of using ClrMamePro to rebuild and validate arcade ROM sets. The tutorial uses a MAME 0.37b5 collection as well as a PiFBA collection (in the video version) to demonstrate the process.
 
 * **[View the ClrMamePro video tutorial on YouTube](https://www.youtube.com/watch?v=_lssz2pAba8)**
 * **[Read the written ClrMamePro tutorial below](#written-clrmamepro-tutorial)**
