@@ -1,6 +1,11 @@
 This page is a list of all of the changelogs for each version of EmulationStation. For a complete list of all commits to 
 the source code see [here](https://github.com/RetroPie/EmulationStation/commits/master):
 - Latest (Dev)
+  - [BUGFIX](https://github.com/RetroPie/EmulationStation/pull/364): Fix size of snapshot for `md_video` when using `<size>` theme option.
+  - [BUGFIX](https://github.com/RetroPie/EmulationStation/pull/363): Fix scraper for Game & Watch.
+  - [BUGFIX](https://github.com/RetroPie/EmulationStation/pull/362): Fix to properly allow `md_video` snapshot to display a different image then `md_image`.
+  - [ENHANCEMENT](https://github.com/RetroPie/EmulationStation/pull/353): New horizontal wheel type for System View carousel.
+  - [BUGFIX](https://github.com/RetroPie/EmulationStation/pull/351): Fix filters not updating properly after creating first favorite.
   - [NEW FEATURE](https://github.com/RetroPie/EmulationStation/pull/348): Rotate Screen support.
   - [ENHANCEMENT](https://github.com/RetroPie/EmulationStation/pull/337): Improved performance when fetching MAME names.
   - [BUGFIX](https://github.com/RetroPie/EmulationStation/pull/334): Fix VLC not muting audio after first loop.
