@@ -15,7 +15,7 @@
 
 So how do you tell you have the right ROM if you aren't sure that your set matches the version required by the emulator you chose? What if you don't have the right version?
 
-**Note: the process of verifying and rebuilding ROMs is complex and requires a substantial investment of time and effort in order to master. If your goal is to have working ROMs, it is almost always simpler to download a full ROM set that has already been verified to match the emulator you chose.**
+**Note: the process of verifying and rebuilding ROMs is complex and requires a substantial investment of time and effort in order to master. If your goal is to have working ROMs, it is almost always simpler to download a full ROM collection that has already been verified to match the emulator you chose.**
 
 Once you begin working with software tools to help validate, rebuild, or filter your ROM collection, you will quickly encounter the need for "DAT" files, so named because they usually (but not always!) have the file extension `.dat`.
 
