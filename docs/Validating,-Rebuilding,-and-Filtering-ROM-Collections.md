@@ -121,7 +121,7 @@ At this point, you could scan the ROMs folder you just selected, but we just cre
 * In the main ClrMamePro window, select **"Rebuilder"**
 * The destination should already be filled in for you - it is the same as the ROM path you defined above in the settings window: `C:\retropie-dat-master\mame4allroms`
 * Use the browse button **"..."** to select your source path. For example you might have a full set of MAME v0.156 ROMs - point ClrMamePro to that directory as your source.
-* When rebuilding there are three options: **Non-Merged, Merged, and Split**. (**NOTE**: Using Non-Merged ROMs is the most straightforward way to copy individual games to a RetroPie system.
+* When rebuilding there are three options: **Non-Merged, Merged, and Split**. (**NOTE**: Using Non-Merged ROMs is the most straightforward way to copy individual games to a RetroPie system.) In order to rebuild "Full Non-merged" ROM sets select "Non-Merged in this menu, then click the "Advanced" button and deselect "Separate BIOS sets".
 * Click **"Rebuild..."**.  Depending on the size of the directory you chose as a source, this could take some time
 * When ClrMamePro is finished rebuilding, you will see a window with statistics showing how many matching files were found, how many files were created and how many were skipped.  Click "OK" 
 * Repeat for any other source paths you might have.  You can rebuild from multiple sources, but leave the Destination path the same
