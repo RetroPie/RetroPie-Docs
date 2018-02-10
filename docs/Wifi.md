@@ -46,7 +46,25 @@ You can then access the wifi module and select the option to "Import wifi creden
 
 ![wifi_text](https://cloud.githubusercontent.com/assets/10035308/21238882/8fe42822-c2b9-11e6-9506-ddfc41fa2016.png)
 
+## Connecting to Wifi Without a Keyboard (Raspbian Stretch)
 
+Starting with Raspbian Stretch, loading the wifikeyfile from the setup script is not necessary.
+
+Create a file called `wpa_supplicant.conf` in the boot partition
+
+```
+
+country=US
+ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
+update_config=1
+
+network={
+    ssid="your_real_wifi_ssid"
+    psk="your_real_password"
+}
+```
+
+If you want ssh to be enabled by default as well you can create a blank file called `ssh` in the boot partition too.
 
 ## Manual Configuration (Interfaces)
 
