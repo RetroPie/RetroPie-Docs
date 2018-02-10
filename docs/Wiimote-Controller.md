@@ -143,6 +143,7 @@ Classic.ZR = BTN_TR2
 Plugin.led.Led1 = 1
 ```
 
+**N.B.:** The configurations below use wminput in "daemon mode" (with the -d command line switch), which causes it to constantly poll for Wii Remotes until it finds them. If you have separate Bluetooth and wifi hardware or otherwise don't suffer severely from interference (or just don't plan to use wifi), this is the most convenient behavior. However, if you do see poor wifi performance during heavy Bluetooth activity this can become a problem, particularly when you disconnect a Wii Remote (either manually or via loss of battery power), because wminput will hammer away attempting to reconnect and likely kill or at least significantly hamper your wifi connection. If you are in this situation, you may wish to use -q command line switch **instead** of -d. This will cause wmimput to attempt to connect for a short period before giving up, and it will never attempt to reconnect by itself.
 
 #### Quick and Dirty Wiimote Configuration (Option A)
 
@@ -450,15 +451,15 @@ This is what my revised attachwii looks like for comparison. We created this fil
 sleep 1 # Wait until Bluetooth services are fully initialized
 hcitool dev | grep hci >/dev/null
 if test $? -eq 0 ; then
-    wminput -d -q -c  /home/pi/mywminput 00:19:1D:92:90:38 > /dev/null 2>&1 &
-    wminput -d -q -c  /home/pi/mywminput 00:19:1D:84:EF:33 > /dev/null 2>&1 &
+    wminput -d -c  /home/pi/mywminput 00:19:1D:92:90:38 > /dev/null 2>&1 &
+    wminput -d -c  /home/pi/mywminput 00:19:1D:84:EF:33 > /dev/null 2>&1 &
 else
     echo "Blue-tooth adapter not present!"
     exit 1
 fi
 ```
 
-As you can see the addition of the -q is supposed to help keep wminput quiet. If you're doing troubleshooting of any kind remember to remove the `> /dev/null 2>&1 &"`. 
+If you're doing troubleshooting of any kind remember to remove the `> /dev/null 2>&1 &"`. 
 
 **2. My wiimotes paired the first time and now they won't pair or hold pairing!**
 
