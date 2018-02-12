@@ -79,9 +79,9 @@ tee /home/pi/mywminput << EOF
 Classic.Dpad.X = ABS_HAT0X
 Classic.Dpad.Y = -ABS_HAT0Y
 Classic.LStick.X = ABS_X
-Classic.LStick.Y = ABS_Y
+Classic.LStick.Y = -ABS_Y
 Classic.RStick.X = ABS_RX
-Classic.RStick.Y = ABS_RY
+Classic.RStick.Y = -ABS_RY
 Classic.A = BTN_A
 Classic.B = BTN_B
 Classic.X = BTN_X
@@ -125,9 +125,9 @@ You probably also want different LEDs active on two controllers, which means you
 Classic.Dpad.X = ABS_HAT0X
 Classic.Dpad.Y = -ABS_HAT0Y
 Classic.LStick.X = ABS_X
-Classic.LStick.Y = ABS_Y
+Classic.LStick.Y = -ABS_Y
 Classic.RStick.X = ABS_RX
-Classic.RStick.Y = ABS_RY
+Classic.RStick.Y = -ABS_RY
 Classic.A = BTN_A
 Classic.B = BTN_B
 Classic.X = BTN_X
