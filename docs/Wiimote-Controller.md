@@ -76,12 +76,12 @@ For every wiimote, we need one wminput command to map the wiimote (and the class
 ```shell
 tee /home/pi/mywminput << EOF
 # Classic-Controller
-Classic.Dpad.X = ABS_X
-Classic.Dpad.Y = ABS_Y
-Classic.LStick.X = ABS_HAT0X
-Classic.LStick.Y = ABS_HAT0Y
-Classic.RStick.X = ABS_HAT1X
-Classic.RStick.Y = ABS_HAT1Y
+Classic.Dpad.X = ABS_HAT0X
+Classic.Dpad.Y = -ABS_HAT0Y
+Classic.LStick.X = ABS_X
+Classic.LStick.Y = ABS_Y
+Classic.RStick.X = ABS_RX
+Classic.RStick.Y = ABS_RY
 Classic.A = BTN_A
 Classic.B = BTN_B
 Classic.X = BTN_X
@@ -110,7 +110,6 @@ Nunchuk.C = BTN_C
 Nunchuk.Z = BTN_Z
 EOF
 ```
-
 If you want your WiiMotes giving a connection status, just add an additional line to your `mywminput` file:
 ```shell
 Plugin.led.Led1 = 1
@@ -123,12 +122,12 @@ You probably also want different LEDs active on two controllers, which means you
 ```Updated Note```: I've had problems using the above button layout with a classic controller. It will cause the button remapping which we will do later in emulationstation to be off. I fixed this by just copy pasting the classic controls only. (I will use the classic controller to control everything and have no intention of using any buttons on the actual wiimote itself).
 
 ```shell
-Classic.Dpad.X = ABS_X
-Classic.Dpad.Y = ABS_Y
-Classic.LStick.X = ABS_HAT0X
-Classic.LStick.Y = ABS_HAT0Y
-Classic.RStick.X = ABS_HAT1X
-Classic.RStick.Y = ABS_HAT1Y
+Classic.Dpad.X = ABS_HAT0X
+Classic.Dpad.Y = -ABS_HAT0Y
+Classic.LStick.X = ABS_X
+Classic.LStick.Y = ABS_Y
+Classic.RStick.X = ABS_RX
+Classic.RStick.Y = ABS_RY
 Classic.A = BTN_A
 Classic.B = BTN_B
 Classic.X = BTN_X
@@ -143,7 +142,7 @@ Classic.ZR = BTN_TR2
 Plugin.led.Led1 = 1
 ```
 
-**N.B.:** The configurations below use wminput in "daemon mode" (with the -d command line switch), which causes it to constantly poll for Wii Remotes until it finds them. If you have separate Bluetooth and wifi hardware or otherwise don't suffer severely from interference (or just don't plan to use wifi), this is the most convenient behavior. However, if you do see poor wifi performance during heavy Bluetooth activity this can become a problem, particularly when you disconnect a Wii Remote (either manually or via loss of battery power), because wminput will hammer away attempting to reconnect and likely kill or at least significantly hamper your wifi connection. If you are in this situation, you may wish to use -q command line switch **instead** of -d. This will cause wmimput to attempt to connect for a short period before giving up, and it will never attempt to reconnect by itself.
+**N.B.:** The configurations below use wminput in "daemon mode" (with the -d command line switch), which causes it to constantly poll for Wii Remotes until it finds them. If you have separate Bluetooth and wifi hardware or otherwise don't suffer severely from interference (or just don't plan to use wifi), this is the most convenient behavior. However, if you do see poor wifi performance during heavy Bluetooth activity this can become a problem, particularly when you disconnect a Wii Remote (either manually or via loss of battery power), because wminput will hammer away attempting to reconnect and likely kill or at least significantly hamper your wifi connection. If you are in this situation, you may wish to use the -q command line switch **instead** of -d. This will cause wmimput to attempt to connect for a short period before giving up, and it will never attempt to reconnect by itself.
 
 #### Quick and Dirty Wiimote Configuration (Option A)
 
