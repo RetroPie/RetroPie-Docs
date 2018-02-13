@@ -122,6 +122,36 @@ sudo chmod +x /home/pi/RetroPie/roms/kodi/kodi.sh
 
 type `emulationstation` to go back into emulationstation and kodi should be there as its own system. 
 
+## Adding a VPN
+
+Install Dependencies:
+
+```
+sudo apt-get update
+sudo apt-get install openvpn
+sudo apt-get install psmisc
+```
+
+From the terminal in RetroPie Download Addon:
+
+```
+wget https://github.com/Zomboided/repository.zomboided.plugins/releases/download/1.0.0/repository.zomboided.plugins-1.0.0.zip
+```
+
+In Kodi
+
+- go to addons
+- Select the open box icon
+- Install from Zip
+- navigate to where you just downloaded the repo
+- Install the repository
+- Go back to addons
+- select the open box icon
+- Now select install from repository
+- Select VPN Manager for OpenVPN
+
+Then follow the directions to configure your VPN provider. If it's unsupported like NordVPN you can set it to user defined and manually import the server configurations and set them up as their own source in the file manager on kodi so they are accessible to the addon. 
+
 ## Old configs
 
 ```
