@@ -109,31 +109,57 @@ An option has been added starting with RetroPie 3.7 to decide whether or not you
 
 **NOTE that you should be comfortable with editing files in Linux as any wrong edits on the following file can break your boot sequence requiring a reimage of your SD card!**
 
-`sudo nano /boot/cmdline.txt`
+There are many parts that contribute to the boot text. The boot text is a valuable tool for debugging but if you know you aren't going to be debugging and just want a polished system this outlines some steps that can be taken to make a cleaner boot.
 
-change `console=tty1` to `console=tty3` 
-
-If not present add `quiet loglevel=3 plymouth.enable=0 logo.nologo vt.global_cursor_default=0` at the end (note that recent RetroPie images include `quiet loglevel=3 by default`)
-
-**make sure it is all on the same line!!!** 
+**/boot/cmdline.txt**
 
 A quick summary of the options:
 
 - **logo.nologo**: turns off raspberry(s) at boot
 - **quiet**: hide messages
 - **console=tty3**: hide more messages (redirect boot messages to the third console)
-- **loglevel=3**: hide even more messages (disable non-critical kernel log messages)
+- **loglevel=3**: hide even more messages (disable non-critical kernel log messages) (Included with default RetroPie image)
 - **vt.global_cursor_default=0**: hide blinking cursor
+- **plymouth.enable=0**: disable plymouth boot text (Included with default RetroPie Image)
 
-If using plymouth:
+If using a plymouth bootsplash:
 
 - **plymouth.ignore-serial-consoles**: ignore serial consoles
+- **plymouth.enable=0**: remove to enable plymouth boot text
+- **splash**: enable plymouth splash
 
-You can also disable the rainbow splash at the beginning (not to be confused with the underpowered rainbow square the appears in the top right corner of your screen indicating you have an insufficient power supply)
+You can add the any of the options to the end of the cmdline.txt file **make sure it is all on the same line or else it will break your boot sequence!!!** 
 
-Add `disable_splash=1` in `/boot/config.txt`
+**/boot/config.txt**
 
-**As of 01/10/2016 the latest set of Raspbian updates causes boot text to be displayed again**. To restore default RetroPie image behaviour you need to add `plymouth.enable=0` - future RetroPie images will include this by default.
+- **disable_splash=1**: Disable [large rainbow screen](https://lifehacker.com/what-the-raspberry-pis-rainbow-boot-screen-and-rainbow-1768470271) on initial boot
+- **avoid_warnings=1**: will disable warnings such as undervoltage/overheating and isn't really recommended.
+
+Autologin Text:
+
+**Hide login text:**
+
+`touch ~/.hushlogin`
+
+**Hide/modify message of the day** (superseded by .hushlogin if used): 
+
+`nano /etc/motd`
+
+**Hide Autologin Text:**
+
+`sudo nano /etc/systemd/system/autologin@.service`
+
+change
+
+```
+ExecStart=-/sbin/agetty --autologin pi --noclear %I $TERM
+```
+
+to
+
+```
+ExecStart=-/sbin/agetty --skip-login --noclear --noissue --login-options "-f pi" %I $TERM
+```
 
 ### How do I boot to the desktop or Kodi
 
