@@ -92,6 +92,18 @@ Add your new themes to:
 /usr/share/plymouth/themes/
 ```
 
+You'll want to disable the splashscreen from the setup script if you don't want plymouth conflicting with the default retropie splash integration.
+
 More plymouth themes can be found [HERE](https://github.com/HerbFargus/plymouth-themes)
+
+If you want to install them directly through the terminal you can run these commands:
+
+```
+sudo wget https://github.com/HerbFargus/plymouth-themes/archive/master.zip -O plymouththemes.zip
+unzip plymouththemes.zip
+sudo cp -a plymouth-themes-master/. /usr/share/plymouth/themes/
+rm plymouththemes.zip
+rm -r plymouth-themes-master/
+```
 
 Guide on Plymouth Scripting [HERE](http://brej.org/blog/?p=158)
