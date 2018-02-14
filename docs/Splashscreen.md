@@ -56,6 +56,8 @@ add `quiet splash plymouth.ignore-serial-consoles` on the same line
 
 and remove `plymouth.enable=0` if you're using retropie
 
+You can see [HERE](FAQ#how-do-i-hide-the-boot-text) on more info on how to hide the boot text
+
 ### Using Plymouth
 
 #### List Themes:
@@ -82,7 +84,6 @@ If you want a little more debugging while testing:
 ```
 sudo plymouthd --debug --debug-file=/tmp/plymouth-debug-out ; sudo plymouth --show-splash ; for ((I=0;I<10;I++)); do sleep 1 ; sudo plymouth --update=event$I ; done ;sudo  plymouth --quit
 ```
-
 
 #### Adding a new plymouth theme
 
