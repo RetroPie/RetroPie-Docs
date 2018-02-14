@@ -121,8 +121,8 @@ A quick summary of the options:
 
 - **logo.nologo**: turns off raspberry(s) at boot
 - **quiet**: hide messages
-- **console=tty3**: hide more messages
-- **loglevel=3**: hide even more messages
+- **console=tty3**: hide more messages (redirect boot messages to the third console)
+- **loglevel=3**: hide even more messages (disable non-critical kernel log messages)
 - **vt.global_cursor_default=0**: hide blinking cursor
 
 If using plymouth:
