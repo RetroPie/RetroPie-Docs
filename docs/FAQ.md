@@ -113,11 +113,21 @@ An option has been added starting with RetroPie 3.7 to decide whether or not you
 
 change `console=tty1` to `console=tty3` 
 
-If not present add `quiet loglevel=3 plymouth.enable=0 logo.nologo` at the end (note that recent RetroPie images include `quiet loglevel=3 by default`)
+If not present add `quiet loglevel=3 plymouth.enable=0 logo.nologo vt.global_cursor_default=0` at the end (note that recent RetroPie images include `quiet loglevel=3 by default`)
 
 **make sure it is all on the same line!!!** 
 
-The logo.nologo option is what turns off the raspberries on boot.
+A quick summary of the options:
+
+- **logo.nologo**: turns off raspberry(s) at boot
+- **quiet**: hide messages
+- **console=tty3**: hide more messages
+- **loglevel=3**: hide even more messages
+- **vt.global_cursor_default=0**: hide blinking cursor
+
+If using plymouth:
+
+- **plymouth.ignore-serial-consoles**: ignore serial consoles
 
 You can also disable the rainbow splash at the beginning (not to be confused with the underpowered rainbow square the appears in the top right corner of your screen indicating you have an insufficient power supply)
 
