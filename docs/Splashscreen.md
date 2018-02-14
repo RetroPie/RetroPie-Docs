@@ -31,3 +31,63 @@ A few notes:
 - For a raspberry pi 1 a good video time is ~20-40 seconds, for the rpi 2 a good video time is ~5-10 seconds. It will vary depending on the number of roms and systems you have installed on RetroPie. 
 
 - OMXPlayer is coded to play on the highest layer of the framebuffer while EmulationStation loads up, so you no longer have to worry about EmulationStation cutting in front of your video before the video finishes. This way your video can be as long or as short as you want it to be.
+
+## Plymouth Splash Screen
+
+This is for more advanced users.
+
+Plymouth should already be installed on the full Raspbian, but if you're using Raspian Lite then you'll need to go through the following steps to enable it:
+
+```
+sudo apt-get install plymouth plymouth-themes
+```
+
+Install Raspberry Pi Foundation Pixel splash
+
+```
+sudo apt-get install pix-plym-splash
+```
+
+Enable in /boot/cmdline.txt
+
+add `quiet splash plymouth.ignore-serial-consoles` on the same line
+
+and remove `plymouth.enable=0` if you're using retropie
+
+### Using Plymouth
+
+#### List Themes:
+
+```
+plymouth-set-default-theme --list
+```
+
+#### Set Default Theme:
+
+```
+sudo plymouth-set-default-theme yourtheme
+```
+
+#### Test Theme:
+
+```
+sudo plymouthd
+sudo plymouth --show-splash
+sudo plymouth quit 
+```
+
+If you want a little more debugging while testing:
+```
+sudo plymouthd --debug --debug-file=/tmp/plymouth-debug-out ; sudo plymouth --show-splash ; for ((I=0;I<10;I++)); do sleep 1 ; sudo plymouth --update=event$I ; done ;sudo  plymouth --quit
+```
+
+
+#### Adding a new plymouth theme
+
+Add your new themes to:
+
+```
+/usr/share/plymouth/themes/
+```
+
+More plymouth themes can be found at [HERE](https://github.com/HerbFargus/plymouth-themes)
