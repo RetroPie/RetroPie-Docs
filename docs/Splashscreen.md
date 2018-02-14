@@ -36,6 +36,8 @@ A few notes:
 
 This is for more advanced users.
 
+Plymouth is more integrated into the boot process than OMX player. It won't have audio and takes more effort to code
+
 Plymouth should already be installed on the full Raspbian, but if you're using Raspian Lite then you'll need to go through the following steps to enable it:
 
 ```
@@ -90,4 +92,6 @@ Add your new themes to:
 /usr/share/plymouth/themes/
 ```
 
-More plymouth themes can be found at [HERE](https://github.com/HerbFargus/plymouth-themes)
+More plymouth themes can be found [HERE](https://github.com/HerbFargus/plymouth-themes)
+
+Guide on Plymouth Scripting [HERE](http://brej.org/blog/?p=158)
