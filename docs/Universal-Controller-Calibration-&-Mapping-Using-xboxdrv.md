@@ -219,13 +219,13 @@ Press 'Enter" and type the following:
 ```
 #!/bin/sh
 ```
-On a line below that, we will wrap our xboxdrv configuration for ScummVM inside a simple if/else statement, beginning with `if [ "$1" = "scummvm" ]` and ending with `fi`. When using this technique for other emulators/ports, you would of course replace "scummvm" with the appropriate name that can be found used also as the folder name for the system/port in either `/opt/retropie/configs/` or `/opt/retropie/configs/ports/`. We're also going to prevent any unsightly messages from being printed to the screen by adding `> /dev/null 2>&1` after every command that would otherwise give visual feedback. It is important to note that while troubleshooting any problems, it may become necessary to temporarily remove these particular entries so that errors that might give insight as to the cause can be seen. Below we see the full example in practice:
+On a line below that, we will wrap our xboxdrv configuration for ScummVM inside a simple if/else statement, beginning with `if [ "$1" = "scummvm" ]` and ending with `fi`. When using this technique for other emulators/ports, you would of course replace "scummvm" with the appropriate name that can be found used also as the folder name for the system/port in either `/opt/retropie/configs/` or `/opt/retropie/configs/ports/`. We're also going to prevent any unsightly messages from being printed to the screen by adding `>> /dev/shm/runcommand.log 2>&1` after every command that would otherwise give visual feedback. This will also send errors to `/dev/shm/runcommand.log`, where you can view them to troubleshoot any issues that may arise. Below we see the full example in practice:
 
 ```
 if [ "$1" = "scummvm" ]
 then
-sudo killall > /dev/null 2>&1 xboxdrv
-sudo /opt/retropie/supplementary/xboxdrv/bin/xboxdrv > /dev/null 2>&1 \
+sudo killall >> /dev/shm/runcommand.log 2>&1 xboxdrv
+sudo /opt/retropie/supplementary/xboxdrv/bin/xboxdrv >> /dev/shm/runcommand.log 2>&1 \
 	--evdev /dev/input/by-id/[•] \
 	--silent \
 	--detach-kernel-driver \
@@ -251,7 +251,7 @@ Notice that our entry begins with a sudo command to kill any other instances of 
 
 This particular example works well for mapping a controller's left analog stick to mouse support using the `--ui-axismap` variable and can be changed to the right stick by simply altering the line to `--ui-axismap x2=REL_X:10,y2=REL_Y:10`. To change the speed of the mouse, just change the `REL_[•]:[•]` integer of the X and Y axis higher or lower than `10`. If you should ever want to map keyboard keys to an analog stick, a classic example would look like `--ui-axismap X1=KEY_A:KEY_D,Y1=KEY_W:KEY_S`, giving you the ADWS control scheme found in many classic computer titles. As far as key-mapping buttons is concerned, first you must consider which buttons are available to you. Seeing as how xboxdrv emulates a standard XBox 360 controller, you will have any of those buttons that you have already assigned to your controller in the earlier steps. If you have assigned all the buttons that are possible, you'll have access to a,b,x,y,lb,rb,lt,rt,tl,tr,start,back and guide. The placement of these buttons can be seen [here](https://s32.postimg.org/zcs0wosth/xbox.jpg). By using the `--ui-buttonmap` variable, you can then map any one of the buttons to a key using the format above. To discover all the possible keyboard keys that are available to you, type `/opt/retropie/supplementary/xboxdrv/bin/xboxdrv --help-key`. Finally, you'll notice that their are two more lines added with the `--ui-axismap` and `--ui-buttonmap` variables that are solely responsible for voiding the unused control elements. This is optional, but it will make the control scheme cleaner by eliminating the possibility of those elements conflicting in any way.
 
-Now we need to ensure that or xboxdrv mapping is torn down as the emulator/port exits back to Emulation station. We'll do this by adding `sudo killall > /dev/null 2>&1 xboxdrv` to `/opt/retropie/configs/all/runcommand-onend.sh`. Also, for those who have a system-wide xboxdrv mapping that should be restored afterward, we'll copy the same configuration from your `/etc/rc.local` to '/opt/retropie/configs/all/runcommand-onend.sh' as well. If the `runcommand-onend.sh` file doesn't exist yet, drop to the command line and type:
+Now we need to ensure that or xboxdrv mapping is torn down as the emulator/port exits back to Emulation station. We'll do this by adding `sudo killall >> /dev/shm/runcommand.log 2>&1 xboxdrv` to `/opt/retropie/configs/all/runcommand-onend.sh`. Also, for those who have a system-wide xboxdrv mapping that should be restored afterward, we'll copy the same configuration from your `/etc/rc.local` to '/opt/retropie/configs/all/runcommand-onend.sh' as well. If the `runcommand-onend.sh` file doesn't exist yet, drop to the command line and type:
 ```
 nano /opt/retropie/configs/all/runcommand-onend.sh
 ```
@@ -259,10 +259,10 @@ Press 'Enter" and type the following:
 ```
 #!/bin/sh
 ```
-On a line below, you can now add the `killall` command, followed by the global xboxdrv command you previously added to `/etc/rc.local` if applicable. To continue to keep things nice and silent, we'll add `> /dev/null 2>&1` to that original command. Using the base configuration example from the first section, it would look like this in practice:
+On a line below, you can now add the `killall` command, followed by the global xboxdrv command you previously added to `/etc/rc.local` if applicable. To continue to keep things nice and silent, we'll add `>> /dev/shm/runcommand.log 2>&1` to that original command. Using the base configuration example from the first section, it would look like this in practice:
 ```
-sudo killall > /dev/null 2>&1 xboxdrv
-/opt/retropie/supplementary/xboxdrv/bin/xboxdrv > /dev/null 2>&1 \
+sudo killall >> /dev/shm/runcommand.log 2>&1 xboxdrv
+/opt/retropie/supplementary/xboxdrv/bin/xboxdrv >> /dev/shm/runcommand.log 2>&1 \
 	--evdev /dev/input/by-id/[•] \
 	--silent \
 	--detach-kernel-driver \
@@ -356,7 +356,7 @@ fourway="--four-way-restrictor"
 invert="--ui-buttonmap du=KEY_DOWN,dd=KEY_UP"
 
 ### Kill Command
-xboxkill="sudo killall >/dev/null xboxdrv"
+xboxkill="sudo killall >>/dev/shm/runcommand.log xboxdrv"
 
 ### Execute the driver with the configuration you need
 # $1 is the name of the emulation, not the name of the software used
@@ -436,7 +436,7 @@ nano /opt/retropie/configs/all/runcommand-onend.sh
 
 ```
 #!/bin/sh
-sudo killall >/dev/null xboxdrv
+sudo killall >>/dev/shm/runcommand.log xboxdrv
 ```
 
 and make it executable
