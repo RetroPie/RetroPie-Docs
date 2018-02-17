@@ -351,7 +351,7 @@ gpu_freq=500
 core_freq=500
 sdram_freq=500
 sdram_schmoo=0x02000020
-over_voltage=2
+over_voltage=6 (default)
 sdram_over_voltage=2
 ~~~
 
