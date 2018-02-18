@@ -7,8 +7,13 @@ _The Apple Macintosh, later renamed the Macintosh 128K, was a personal computer 
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
 | [BasiliskII](http://basilisk.cebix.net/) | macintosh  | .img .rom | mac.rom, disk.img | hardcoded |
+| [MinivMac](http://www.gryphel.com/c/minivmac/) | macintosh  | .dsk | vMac.ROM | hardcoded |
 
-## Emulator: [BasiliskII](http://basilisk.cebix.net/)
+## Emulators: [BasiliskII](http://basilisk.cebix.net/), [MinivMac](http://www.gryphel.com/c/minivmac/)
+
+Mini vMac emulates the 68K processor macs (older software) e.g. Macintosh Plus, BasiliskII also emulates 68K but supports newer hardware as well e.g. Macintosh Classic, Macintosh II.
+
+## BasiliskII
 
 ## ROMS
 Accepted File Extensions: **.img .rom  (.dsk?, .sit?)**
@@ -41,3 +46,33 @@ Once you have a working disk image large enough to install other software on, yo
 a keyboard and a mouse
 
 Ctrl + Escape will exit the emulator
+
+
+## Mini vMac (Macintosh Plus)
+
+Place your Macintosh Plus ROMs in
+```
+/home/pi/RetroPie/roms/macintosh
+```
+
+## ROMS
+
+Place your Macintosh Plus disks in
+
+```
+/home/pi/RetroPie/roms/macintosh
+```
+
+at minimum you'll need to include a Macintosh operating system file named **System Tools.dsk** as when choosing any dsk the launch script launches into the OS first by default.
+
+## BIOS
+
+Place your **vMac.ROM** (Macintosh Plus Firmware) in
+
+```
+/home/pi/RetroPie/BIOS
+```
+
+## Controls
+
+You'll want to shutdown from within the emulator to make sure to not corrupt your dsk and then you can use `Ctrl+Q` to exit the emulator.
