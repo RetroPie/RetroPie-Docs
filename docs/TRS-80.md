@@ -27,6 +27,12 @@ Place your level2.rom BIOS file in
 /home/pi/RetroPie/BIOS
 ```
 
+## Controls:
+
+- F7: Emulator Options
+- F10: Reset Emulator
+- F12: System Menu (Quit)
+
 ### Advanced Configuration
 
 For more detailed information on autolaunching disks and games see this guide [HERE](https://github.com/RetroPie/RetroPie-Setup/files/114630/sdltrs.configuration.pdf)
