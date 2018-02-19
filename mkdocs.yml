@@ -1,10 +1,27 @@
+# Project information
 site_name: RetroPie Docs
+site_description: 'Material Design Theme for the RetroPie Documentation'
+site_author: 'The RetroPie Project'
+site_url: 'https://retropie.org.uk/'
 
-theme: material
+# Repository
+repo_name: 'RetroPie-Setup'
+repo_url: 'https://github.com/RetroPie/RetroPie-Setup'
+
+# Copyright
+copyright: 'Copyright &copy; 2017 The RetroPie Project'
+
+# Configuration
+theme:
+  name: 'material'
+  language: 'en'
   logo: 'images/logo.svg'
   palette:
     primary: 'red'
     accent: 'red'
+
+# Customisation
+extra:
   social:
     - type: 'github'
       link: 'https://github.com/RetroPie'
@@ -14,14 +31,10 @@ theme: material
 extra_css:
   - 'stylesheets/extra.css'
 
+# Google Analytics
 google_analytics:
   - 'UA-76418872-1'
   - 'auto'
-
-repo_name: 'RetroPie-Setup'
-repo_url: 'https://github.com/RetroPie/RetroPie-Setup'
-
-copyright: 'Copyright &copy; 2017 The RetroPie Project'
       
 pages:
 - Home: index.md
