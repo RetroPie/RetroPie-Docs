@@ -41,7 +41,7 @@ pages:
     - FinalBurn Alpha: FinalBurn-Alpha.md
     - lr-fbalpha: lr-fbalpha.md
     - Neo Geo: Neo-Geo.md
-    - Validating, Rebuilding, and Filtering Arcade ROMs: Validating,-Rebuilding,-and-Filtering-Arcade-ROMs.md
+    - Validating, Rebuilding, and Filtering Arcade ROMs: Validating,-Rebuilding,-and-Filtering-ROM-Collections.md
 - Emulators:
     - 3do: 3do.md
     - Amiga: Amiga.md
@@ -67,7 +67,7 @@ pages:
     - Game Gear: Game-Gear.md
     - Game & Watch: Game-&-Watch.md
     - GemRB: GemRB.md
-    - Genesis/Megadrive: Genesis-Megadrive.md
+    - Genesis/Megadrive: Mega-Drive-Genesis.md
     - Intellivision: Intellivision.md
     - Love: Love.md
     - Macintosh: Macintosh.md
