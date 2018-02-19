@@ -1,7 +1,6 @@
 site_name: RetroPie Docs
-theme: material
 
-theme:
+theme: material
   logo: 'images/logo.svg'
   palette:
     primary: 'red'
