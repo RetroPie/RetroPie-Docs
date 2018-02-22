@@ -78,11 +78,11 @@ Two files need to be modified to enable the gamecon_gpio_rpi driver and gamecon 
 
 **IMPORTANT: ‘#’ must be replaced with your configuration of controller types (No Controller='0', SNES='1', NES='2', etc.) at the location that corresponds to the physical pin location you are using as outlined below in "Additional Gamecon Configuration Details".**  
 
-**Example 1:** On a RPI2 or RPI3 to have a NES controller connected to physical pin 3 (Gamepad5) and an SNES controller connected to physical pin 5 (Gamepad6) write: `gamecon_gpio_rpi map=0,0,0,0,2,1` to the file `/etc/modprobe.d/gamecon.conf`
+**Example 1:** On a RPI2 or RPI3 to have a NES controller connected to physical pin 3 (Gamepad5) and an SNES controller connected to physical pin 5 (Gamepad6) write: `options gamecon_gpio_rpi map=0,0,0,0,2,1` to the file `/etc/modprobe.d/gamecon.conf`
 
-**Example 2:** On a RPI2 or RPI3 to have a SNES controller connected to physical pin 7 (Gamepad3) and an SNES controller connected to physical pin 26 (Gamepad4) write: `gamecon_gpio_rpi map=0,0,1,1,0,0` to the file `/etc/modprobe.d/gamecon.conf`
+**Example 2:** On a RPI2 or RPI3 to have a SNES controller connected to physical pin 7 (Gamepad3) and an SNES controller connected to physical pin 26 (Gamepad4) write: `options gamecon_gpio_rpi map=0,0,1,1,0,0` to the file `/etc/modprobe.d/gamecon.conf`
 
-**Example 3:** On a Raspberry Pi B to have a NES controller connected to physical pin 3 (Gamepad1) and an SNES controller connected to physical pin 5 (Gamepad2) write: `gamecon_gpio_rpi map=2,1,0,0,0,0` to the file `/etc/modprobe.d/gamecon.conf`
+**Example 3:** On a Raspberry Pi B to have a NES controller connected to physical pin 3 (Gamepad1) and an SNES controller connected to physical pin 5 (Gamepad2) write: `options gamecon_gpio_rpi map=2,1,0,0,0,0` to the file `/etc/modprobe.d/gamecon.conf`
 
 ### Additional Gamecon Configuration Details  
 
