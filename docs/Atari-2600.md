@@ -32,7 +32,7 @@ Add custom retroarch controls to the retroarch.cfg file in
 For more information on custom RetroArch controls see: [RetroArch Configuration](RetroArch-Configuration)
 
 
-![atari2600diagram](https://cloud.githubusercontent.com/assets/10035308/8237960/02aa13fc-15b0-11e5-92c2-311e8960883b.png)
+![atari2600diagram](https://retropie.org.uk/forum/assets/uploads/files/1519507692128-1485898073630-wiki.jpg)
 
 
 ### Stella
