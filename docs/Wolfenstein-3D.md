@@ -76,6 +76,30 @@ The md5 checksums for supported game data are as follow:
 	8e75e3ffb842ed3d08abe6ffea97b231  vgahead.wl6
 	b8ff4997461bafa5ef2a94c11f9de001  vswap.wl6
 
+**Steam (Spear of Destiny)**
+
+	6e914d15335125872737718470061ad8  audiohed.sod
+	10020fce0f04d21bd07b1b5b951c360a  audiot.sod
+	3e676d1c1350de03d1bd58e7b8dda498  config.sod
+	04f16534235b4b57fc379d5709f88f4a  gamemaps.sd1
+	fa5752c5b1e25ee5c4a9ec0e9d4013a9  gamemaps.sd2
+	29860b87c31348e163e10f8aa6f19295  gamemaps.sd3
+	276c79a4a6419db6b23e7699e41cb9fa  maphead.sd1
+	d55508cd58e2e61076ac81b98aeb9269  maphead.sd2
+	a8b24dd3d3271e0b7fc6f2f995915f27  maphead.sd3
+	30b11372b9ec6bc06289eb3e9b2ef0b9  vgadict.sod
+	3b85f170098fb48d91d8bedd0cac4e0d  vgagraph.sod
+	fb75007a1167bba05c4acadf90bc30d8  vgahead.sod
+	b1dac0a8786c7cdbb09331a4eba00652  vswap.sd1
+	25d92ac0ba012a1e9335c747eb4ab177  vswap.sd2
+	94aeef7980ef640c448087f92be16d83  vswap.sd3
+
 Check also that you have all of the files above.
+
+N.B. If your Spear of Destiny installation is missing the ```.sd1``` files, rename the following files to ensure that Episode 1 will launch correctly:
+
+	gamemaps.sod -> gamemaps.sd1
+	maphead.sod -> maphead.sd1
+	vswap.sod -> vswap.sd1
 
 If you have game data that do not match the md5sums above, then please post at the [RetroPie Forum](http://blog.petrockblock.com/forums/forum/retropie-project-forum/emulators/).
