@@ -63,6 +63,8 @@ rp_module_flags="!arm"
 
 ## BIOS
 
+Whilst pcsx_rearmed has an emulated BIOS to fall back on, this has limited compatibility meaning most games will have issues running with it, and others will not work at all. It should be considered mandatory to manually an official BIOS.
+
 The BIOS file is named **SCPH1001.BIN**
 
 Place SCPH1001.BIN in
