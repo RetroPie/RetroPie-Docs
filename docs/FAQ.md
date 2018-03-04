@@ -182,6 +182,7 @@ See [Overscan](Overscan)
 Hotkeys are combinations of buttons you can press in order to access options such as saving, loading, and exiting games. The following defaults are set automatically the first time you set up your controller from emulationstation.
 
 #### Default joypad hotkeys:
+
 Hotkeys | Action | Code Example
 | :---: | :---: | :---: |
 Select | Hotkey | input_enable_hotkey = "6"
