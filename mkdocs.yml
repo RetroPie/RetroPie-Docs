@@ -197,7 +197,6 @@ pages:
     - Debian/Ubuntu: Debian.md
     - Odroid C1/C2: Odroid-C1-C2.md
     - Odroid XU4: Odroid-XU4.md
-    - Arch Linux: Arch-Linux.md
     - OSMC: OSMC.md
 - Troubleshooting:
     - FAQ: FAQ.md
