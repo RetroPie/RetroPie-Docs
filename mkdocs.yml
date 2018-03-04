@@ -1,6 +1,6 @@
 # Project information
 site_name: 'RetroPie Docs'
-site_description: 'Material Design Theme for the RetroPie Documentation'
+site_description: 'RetroPie Project Documentation'
 site_author: 'The RetroPie Project'
 site_url: 'https://retropie.org.uk/'
 
@@ -9,7 +9,7 @@ repo_name: 'RetroPie-Setup'
 repo_url: 'https://github.com/RetroPie/RetroPie-Setup'
 
 # Copyright
-copyright: 'Copyright &copy; 2017 The RetroPie Project'
+copyright: 'Copyright &copy; 2018 The RetroPie Project'
 
 # Configuration
 theme:
