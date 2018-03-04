@@ -1,5 +1,5 @@
 # Project information
-site_name: RetroPie Docs
+site_name: 'RetroPie Docs'
 site_description: 'Material Design Theme for the RetroPie Documentation'
 site_author: 'The RetroPie Project'
 site_url: 'https://retropie.org.uk/'
@@ -169,6 +169,7 @@ pages:
     - Configuration Editor: Configuration-Editor.md
     - Memory Split: Memory-Split.md
     - Overclocking: Overclocking.md
+    - Overscan: Overscan.md
     - Optimization for Nintendo 64: Optimization-for-Nintendo-64.md
     - Running ROMs from a Network Share: Running-ROMs-from-a-Network-Share.md
     - Running ROMs from a USB drive: Running-ROMs-from-a-USB-drive.md
