@@ -8,8 +8,8 @@ _The Intellivision is a home video game console released by Mattel in 1979_
 
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
-| [jzintv](#jzintv) | intellivision  | .int .bin | exec.bin grom.bin | hardcoded |
-| [FreeIntv](#freeintv) | intellivision | .int .bin .rom | exec.bin grom.bin | /opt/retropie/configs/intellivision/retroarch.cfg |
+| [lr-freeintv](#lr-freeintv) | intellivision | .7z .bin .int .rom .zip | exec.bin grom.bin | /opt/retropie/configs/intellivision/retroarch.cfg |
+| [jzintv](#jzintv) | intellivision  | .bin .int  | exec.bin grom.bin | hardcoded |
 
 ## ROM and BIOS Paths
 Place Intellivision ROMs in
@@ -22,6 +22,50 @@ Place your BIOS files in:
 ```
 
 # Emulators
+
+## lr-freeintv
+[Visit the lr-freeintv github repository](http://github.com/libretro/FreeIntv)
+
+lr-freeintv is a libretro emulation core for the Mattel Intellivision designed to be compatible with joypads from the SNES era forward even if they originally required a number pad.
+
+### BIOS
+lr-freeintv requires two Intellivision BIOS files to be placed in the libretro 'system' folder:
+
+| Function | Filename* | MD5 Hash |
+| --- | --- | --- | 
+| Executive ROM | `exec.bin`  | `62e761035cb657903761800f4437b8af` |
+| Graphics ROM | `grom.bin` | `0cd5946c6473e42e8e4c2137785e427f` |
+
+* BIOS filenames are case-sensitive
+
+### Entertainment Computer System and Intellivoice
+lr-freeintv does not currently support Entertainment Computer System (ECS) and Intellivoice functionality. Contributions to the source are welcome!
+
+### Controller overlays
+Mattel Intellivision games were often meant to be played with game-specific cards overlaid on the numeric keypad. These overlays convey information which can be very useful in gameplay. Images of a limited selection of Intellivision titles are available at: http://www.intellivisionlives.com/bluesky/games/instructions.shtml
+
+### Controls
+
+
+* **Mini-Keypad** - Allows the user to view and select keys from a small Intellivision pad in the lower corner of the display.
+* **Controller Swap** - Some Intellivision games expect the left controller to be player one, others expect the right controller. This isn't a problem if you have two controllers (and don't mind juggling them) but users with only one controller or using a portable setup would be effectively locked out of some games. Controller Swap swaps the two controller interfaces so that the player does not have to physically swap controllers.
+
+| RetroPad | lr-freeintv Function |
+| --- | --- |
+| D-Pad| 8-way movement |
+| Left Analog Stick | 16-way disc |
+| A | Left Action Button |
+| Y | Top Action Button |
+| X | Use the Last Selected Intellivision Keypad Button. In Astrosmash, for example, you can leave "3" selected to enable instant access to hyperspace. |
+| L/R | Activate the Mini-Keypad |
+| Start | Pause Game |
+| Select | Controller Swap |
+
+lr-freeintv utilises Retroarch controller configurations. Add custom retroarch controls to the retroarch.cfg file in `/opt/retropie/configs/intellivision/retroarch.cfg`
+
+For more information on RetroArch controls see: [RetroArch Configuration](RetroArch-Configuration)
+
+**********
 
 ## jzintv
 [Visit the jzintv homepage](http://spatula-city.org/~im14u2c/intv/)
@@ -125,47 +169,3 @@ For example, you are trying to get `atlantis.int` to work. From the spreadsheet,
 Full details about using memory map config files can be found [here](http://atariage.com/forums/topic/203179-config-files-to-use-with-various-intellivision-titles/#entry2605274).
 
 ![intellivision](https://cloud.githubusercontent.com/assets/10035308/8246393/3e98c8c2-15fb-11e5-9398-3f5abd60361b.png)
-
-**********
-
-## FreeIntv
-[Visit the FreeIntv github repository](http://github.com/libretro/FreeIntv)
-
-FreeIntv a libretro emulation core for the Mattel Intellivision designed to be compatible with joypads from the SNES era forward even if they originally required a number pad.
-
-### BIOS
-FreeIntv requires two Intellivision BIOS files to be placed in the libretro 'system' folder:
-
-| Function | Filename* | MD5 Hash |
-| --- | --- | --- | 
-| Executive ROM | `exec.bin`  | `62e761035cb657903761800f4437b8af` |
-| Graphics ROM | `grom.bin` | `0cd5946c6473e42e8e4c2137785e427f` |
-
-* BIOS filenames are case-sensitive
-
-### Entertainment Computer System and Intellivoice
-FreeIntv does not currently support Entertainment Computer System (ECS) and Intellivoice funcationality. Contributions to the source are welcome!
-
-### Controller overlays
-Mattel Intellivision games were often meant to be played with game-specific cards overlaid on the numeric keypad. These overlays convey information which can be very useful in gameplay. Images of a limited selection of Intellivision titles are available at: http://www.intellivisionlives.com/bluesky/games/instructions.shtml
-
-### Controls
-
-
-* **Mini-Keypad** - Allows the user to view and select keys from a small Intellivision pad in the lower corner of the display.
-* **Controller Swap** - Some Intellivision games expect the left controller to be player one, others expect the right controller. This isn't a problem if you have two controllers (and don't mind juggling them) but users with only one controller or using a portable setup would be effectively locked out of some games. Controller Swap swaps the two controller interfaces so that the player does not have to physically swap controllers.
-
-| RetroPad | FreeIntv Function |
-| --- | --- |
-| D-Pad| 8-way movement |
-| Left Analog Stick | 16-way disc |
-| A | Left Action Button |
-| Y | Top Action Button |
-| X | Use the Last Selected Intellivision Keypad Button. In Astrosmash, for example, you can leave "3" selected to enable instant access to hyperspace. |
-| L/R | Activate the Mini-Keypad |
-| Start | Pause Game |
-| Select | Controller Swap |
-
-FreeIntv utilises Retroarch controller configurations. Add custom retroarch controls to the retroarch.cfg file in `/opt/retropie/configs/intellivision/retroarch.cfg`
-
-For more information on RetroArch controls see: [RetroArch Configuration](RetroArch-Configuration)
