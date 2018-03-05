@@ -72,7 +72,7 @@ The screen should look like this then:
 
 ### Full Install
 
-**Manage Packages >> Quick Install**
+**Basic Install >> Quick Install**
 
 This will install the core and main packages which are equivalent to what is provided with the RetroPie SD image.
 
@@ -82,9 +82,11 @@ EmulationStation can be run from the terminal by typing `emulationstation` in th
 
 ### Partial Install
 
-Say you don't want to bloat your system with all of RetroPie- you also have the option to only install the emulators you want. 
+**Managed Packages
 
-You will want to start by installing the core packages.
+Say you don't want to bloat your system with all of RetroPie - you also have the option to only install the emulators you want.
+
+When you select Manage Packages, you will first want to start by installing the core packages.
 
 ### Core Packages
 
