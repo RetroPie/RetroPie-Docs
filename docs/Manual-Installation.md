@@ -82,7 +82,7 @@ EmulationStation can be run from the terminal by typing `emulationstation` in th
 
 ### Partial Install
 
-**Managed Packages
+**Managed Packages**
 
 Say you don't want to bloat your system with all of RetroPie - you also have the option to only install the emulators you want.
 
