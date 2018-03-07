@@ -1,4 +1,4 @@
-RetroAchievements are a way to log your achievements on oldschool console games. It is integrated into RetroArch and is only supported by select cores ([see chart](https://github.com/RetroPie/RetroPie-Setup/wiki/RetroAchievements/#supported-systems)).
+RetroAchievements are a way to log your achievements on oldschool console games. It is integrated into RetroArch and is only supported by select cores ([see list below](#supported-systems)).
 
 You first need to create an account at http://retroachievements.org/ and then add your credentials to `/opt/retropie/configs/all/retroarch.cfg`
 
@@ -38,6 +38,10 @@ cheevos_leaderboards_enable = true
 * Master System
 * Nintendo 64
 * Atari Lynx
+* Neo Geo Pocket
+* Neo Geo Pocket Color
+* Atari 2600
+* Nintendo Virtual Boy
 
 A libretro core compatibility list with RetroAchievements can be found in [libretro docs](https://docs.libretro.com/guides/retroachievements/).
 
