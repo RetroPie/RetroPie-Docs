@@ -50,7 +50,7 @@ You can then access the wifi module and select the option to "Import wifi creden
 
 Starting with Raspbian Stretch, loading the wifikeyfile from the setup script is not necessary.
 
-Create a file called `wpa_supplicant.conf` in the boot partition. (This will be moved at boot 
+Create a file called `wpa_supplicant.conf` in the boot partition using the following template. (This will be moved at boot 
 to the /etc/wpa_supplicant directory).
 
 ```
@@ -59,11 +59,16 @@ country=US
 ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
 update_config=1
 
+# RETROPIE CONFIG START
 network={
     ssid="your_real_wifi_ssid"
     psk="your_real_password"
 }
+# RETROPIE CONFIG END
 ```
+
+Make sure to include the ```RETROPIE CONFIG ...``` lines as shown to ensure that the RetroPie-Setup wifi configuration module will be able to cleanly edit/delete your configuration if you wish to change it later.
+
 Wifi will not start up if you have an hard wired ethernet connection. After disconnecting the ethernet cable you'll need to reboot to get Wifi started.
 
 If you want ssh to be enabled by default as well you can create a blank file called `ssh` in the boot partition too. This is a 'flag' file and will be deleted during boot after ssh is enabled.
