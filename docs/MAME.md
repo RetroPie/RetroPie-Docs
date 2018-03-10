@@ -56,7 +56,7 @@ Config Dir: /opt/retropie/configs/mame-mame4all
 
 **MAME 0.37b5 DAT File**: [mame4all-037b5-RetroPie-260.dat](https://drive.google.com/file/d/0B2TMeZ6iEFvHVUNfWHpUZk82bkk/view?usp=sharing)
 
-**MAME 0.37b5 XML File**: [mame4all-no-clones-no-neogeo](https://drive.google.com/file/d/0B2TMeZ6iEFvHNm5OYndFUHM3djg/view?usp=sharing) (no clones, no neogeo)
+**MAME 0.37b5 XML File**: [mame4all-no-clones-no-neogeo](https://drive.google.com/file/d/0B2TMeZ6iEFvHNm5OYndFUHM3djg/view?usp=sharing) Does not include clones or NeoGeo romsets.
 
 **[MAME4ALL-PI Compatibility List](https://docs.google.com/spreadsheets/d/1SHspjyHavY9-PKbO2swDr52BS2Wl_mB_Vjx2Z1SXiD8/edit?usp=sharing)** feel free to contribute to the list.
 
@@ -87,7 +87,7 @@ Config Dir: /opt/retropie/configs/mame-mame4all/retroarch.cfg
 
 **MAME 0.37b5 DAT File**: [mame4all-037b5-RetroPie-260.zip](https://drive.google.com/file/d/0B2TMeZ6iEFvHVUNfWHpUZk82bkk/view?usp=sharing)
 
-**MAME 0.37b5 'Lite' DAT File (no clones, no neogeo)**: [mame4all-no-clones-no-neogeo](https://drive.google.com/file/d/0B2TMeZ6iEFvHNm5OYndFUHM3djg/view?usp=sharing)
+**MAME 0.37b5 'Lite' DAT File**: [mame4all-no-clones-no-neogeo](https://drive.google.com/file/d/0B2TMeZ6iEFvHNm5OYndFUHM3djg/view?usp=sharing) - Does not include clones or NeoGeo romsets.
 
 **[lr-mame2000 Compatibility List](https://docs.google.com/spreadsheets/d/1Fmx2RPcgVgIIeKpaBKNEGWCDuu3DGfR-VkrnIVsIpeE/edit?usp=sharing)** feel free to contribute to the list.
 
@@ -117,11 +117,11 @@ Config Dir: /opt/retropie/configs/mame-libretro/retroarch.cfg
 * CHDs: 30
 * Samples: 56
 
-**MAME 0.78 DAT File**: [MAME 0.78.dat](https://drive.google.com/file/d/0B2TMeZ6iEFvHTkc2TXZOOFhCRzQ/view?usp=sharing)
+**MAME 0.78 XML DAT File**: [MAME 0.78.dat](https://github.com/libretro/mame2003-libretro/raw/master/metadata/MAME%200.78%20XML.dat)
 
-**MAME 0.78u5 DAT File**: [mame2003-lr-working-no-clones](https://drive.google.com/file/d/0B2TMeZ6iEFvHV21wRVh6TF9uQ1U/view?usp=sharing) (working only, no clones)
+**MAME 0.78u5 DAT File**: [mame2003-lr-working-no-clones](https://drive.google.com/file/d/0B2TMeZ6iEFvHV21wRVh6TF9uQ1U/view?usp=sharing) - Working romsets only. Does not include clones.
 
-**MAME 0.78u5 'Lite' DAT File**: [mame2003-lr-lite](https://drive.google.com/file/d/0B2TMeZ6iEFvHY1VzcXYyT09iRGs/view?usp=sharing) (working, no clones, neogeo, PlayChoice/NES multiplay, no rotary/dial/trackball/lightgun controls, no casino/multiplay/quiz/mahjong/fruit_machines/rhythm/mature)
+**MAME 0.78u5 'Lite' DAT File**: [mame2003-lr-lite](https://drive.google.com/file/d/0B2TMeZ6iEFvHY1VzcXYyT09iRGs/view?usp=sharing) - Working romsets only. Does not include: clones, NeoGeo, PlayChoice NES/multiplay, romsets with rotary/dial/trackball/lightgun controls, or romsets classified as casino/quiz/mahjong/fruit_machines/rhythm/mature.
 
 **[lr-mame2003 Compatibility List](https://docs.google.com/spreadsheets/d/1LP1MELCvcxu7TfiowF_0ZuvRVEMqlfQyTVetnOJvuJc/edit?usp=sharing)** feel free to contribute to the list.
 
