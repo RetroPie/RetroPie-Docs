@@ -137,7 +137,6 @@ lr-mame2003 utilises [RetroArch control configurations](RetroArch-Configuration)
 ---
 ### lr-mame2010 (MAME 2010)
 [Visit mame2010-libretro on github](https://github.com/libretro/mame2010-libretro)
-**Note: This emulator is considered 'optional' in RetroPie and has limited functionality. For example, only 2 players are supported.**
 
 ```shell
 Roms Dir: /home/pi/RetroPie/roms/mame-libretro
@@ -151,7 +150,7 @@ Config Dir: /opt/retropie/configs/mame-libretro/retroarch.cfg
 * CHDs: 406
 * Samples: 70 (4 more samples are not in circulation)
 
-**MAME 0.139 DAT File**: [MAME 0.139.dat](https://drive.google.com/file/d/0B2TMeZ6iEFvHUFdCc04zZ3o4dnM/view?usp=sharing) 
+**MAME 0.139 DAT File**: [MAME 0.139.dat](https://github.com/libretro/mame2010-libretro/raw/master/metadata/MAME%200.139%20XML.dat) 
 
 **[lr-mame2010 Compatibility List](https://docs.google.com/spreadsheets/d/1IRSmFrSDvIc6gAw0gn12TcQ3HDOwmrETTor8wvvb7VI/edit?usp=sharing)** feel free to contribute to the list.
 
@@ -162,6 +161,44 @@ lr-mame2010 utilises [RetroArch control configurations](RetroArch-Configuration)
 /opt/retropie/configs/mame-libretro/retroarch.cfg
 ```
 
+#### Default Player 1 and 2 Controls: 
+
+	RETRO_DEVICE_ID_JOYPAD_START        MAME: KEY_START
+	RETRO_DEVICE_ID_JOYPAD_SELECT       MAME: KEY_COIN
+	RETRO_DEVICE_ID_JOYPAD_A            MAME: KEY_BUTTON_1
+	RETRO_DEVICE_ID_JOYPAD_B            MAME: KEY_BUTTON_2
+	RETRO_DEVICE_ID_JOYPAD_X            MAME: KEY_BUTTON_3
+	RETRO_DEVICE_ID_JOYPAD_Y            MAME: KEY_BUTTON_4
+	RETRO_DEVICE_ID_JOYPAD_L            MAME: KEY_BUTTON_5
+	RETRO_DEVICE_ID_JOYPAD_R            MAME: KEY_BUTTON_6
+	RETRO_DEVICE_ID_JOYPAD_L2           MAME: KEY_BUTTON_7
+	RETRO_DEVICE_ID_JOYPAD_UP           MAME: KEY_JOYSTICK_U
+	RETRO_DEVICE_ID_JOYPAD_DOWN         MAME: KEY_JOYSTICK_D
+	RETRO_DEVICE_ID_JOYPAD_LEFT         MAME: KEY_JOYSTICK_L
+	RETRO_DEVICE_ID_JOYPAD_RIGHT        MAME: KEY_JOYSTICK_R
+	RETRO_DEVICE_ID_JOYPAD_R2           Turbo Button
+
+#### Default Player 3 and 4 Controls: 
+
+	RETRO_DEVICE_ID_JOYPAD_START        MAME: KEY_START
+	RETRO_DEVICE_ID_JOYPAD_SELECT       MAME: KEY_COIN
+	RETRO_DEVICE_ID_JOYPAD_A            MAME: KEY_BUTTON_1
+	RETRO_DEVICE_ID_JOYPAD_B            MAME: KEY_BUTTON_2
+	RETRO_DEVICE_ID_JOYPAD_X            MAME: KEY_BUTTON_3
+	RETRO_DEVICE_ID_JOYPAD_UP           MAME: KEY_JOYSTICK_U
+	RETRO_DEVICE_ID_JOYPAD_DOWN         MAME: KEY_JOYSTICK_D
+	RETRO_DEVICE_ID_JOYPAD_LEFT         MAME: KEY_JOYSTICK_L
+	RETRO_DEVICE_ID_JOYPAD_RIGHT        MAME: KEY_JOYSTICK_R
+	RETRO_DEVICE_ID_JOYPAD_R2           Turbo Button
+    
+#### Native MAME UI Controls:
+
+_Note: these controls are only operational for Player 1_
+
+	RETRO_DEVICE_ID_JOYPAD_L3           Test/Service Mode
+        RETRO_DEVICE_ID_JOYPAD_R3           Enter MAME UI
+	RETRO_DEVICE_ID_JOYPAD_A            MAME: IPT_UI_SELECT (Make selections in the MAME GUI)
+      
 ---
 ### lr-mame2014 (MAME 2014)
 [Visit mame2014-libretro on github](https://github.com/libretro/mame2014-libretro)
