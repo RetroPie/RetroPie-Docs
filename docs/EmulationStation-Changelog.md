@@ -1,5 +1,6 @@
 This page is a list of all of the changelogs for each version of EmulationStation. For a complete list of all commits to 
 the source code see [here](https://github.com/RetroPie/EmulationStation/commits/master):
+
 * Latest (Dev)
   * [BUGFIX](https://github.com/RetroPie/EmulationStation/pull/364): Fix size of snapshot for `md_video` when using `<size>` theme option.
   * [BUGFIX](https://github.com/RetroPie/EmulationStation/pull/363): Fix scraper for Game & Watch.
