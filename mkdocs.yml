@@ -11,6 +11,10 @@ repo_url: 'https://github.com/RetroPie/RetroPie-Setup'
 # Copyright
 copyright: 'Copyright &copy; 2018 The RetroPie Project'
 
+# Extensions
+markdown_extensions:
+  - mdx_truly_sane_lists
+
 # Configuration
 theme:
   name: 'material'
