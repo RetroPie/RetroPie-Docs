@@ -12,17 +12,23 @@ First install the appropriate packages (if not available):
 `sudo apt-get install jstest-gtk `
 
 ## **Calibration with _jstest-gtk_**
-Usage of jstest-gtk is straightforward. When running it, it will first show a page to select your joystick(s). When selecting the appropriate device, a second screen is shown in which you can test the axes and button response. In the bottom of this screen there are two buttons, which will have you configure the button mapping and axes calibration.
-<<add image>>
+Usage of jstest-gtk is straightforward. When running it, it will first show a page to select your joystick(s). 
+
+![jscal-gtk-01](https://user-images.githubusercontent.com/1189058/37540633-0002f9f2-2958-11e8-8f90-8a559a32a0b6.png)
+
+When selecting the appropriate device, a second screen is shown in which you can test the axes and button response. In the bottom of this screen there are two buttons, which will have you configure the button mapping and axes calibration.
+
+![jscal-gtk-02](https://user-images.githubusercontent.com/1189058/37540634-002a7694-2958-11e8-815e-92053260fff7.png)
 
 ### Button and axis remapping 
 Button remapping can be done, by dragging and dropping the appropriate buttons in a new order.
 
-<<add image>>
+![jscal-gtk-03](https://user-images.githubusercontent.com/1189058/37540636-0056b5ce-2958-11e8-8b66-b3aee59e7c4d.png)
 
 ### Axis calibration
 With axis calibration you can remove deadzones in your joystick. You can also invert the axis direction, if necessary, by ticking the box behind the axis number.
-<<add image>>
+
+![jscal-gtk-04](https://user-images.githubusercontent.com/1189058/37540637-0070056a-2958-11e8-9908-52fca2e74b35.png)
 
 ### Calibration from the commandline
 Calibration can also be done from commandline by using _jscal_. This is much less straightforward, so please study the manpages carefully on how to use these commands. Calibration and mapping is split in two separate commandline commands:
@@ -63,9 +69,9 @@ udev/js-acrux %E{DEVNAME}"
 Please note that the UDEV rule above maps the joystick to an arbitrary device number. The device number is mapped in order of connection. The first connected device is mapped as _/dev/input/js0_, the following _/js1_, etc.... It is not possible to use an UDEV rule to rename these mappings (although a lot of older websites say otherwise). 
 
 
-## ** References**
+# References
 * image source: [https://pingus.seul.org/~grumbel/jstest-gtk/](https://pingus.seul.org/~grumbel/jstest-gtk/)
 * Jstest-gtk [Manpage](http://manpages.ubuntu.com/manpages/artful/man1/jstest-gtk.1.html)
 * jscal [Manpage](http://manpages.ubuntu.com/manpages/trusty/man1/jscal.1.html)
 * jscal-store [Manpage](http://manpages.ubuntu.com/manpages/xenial/man1/jscal-store.1.html)
-* jscal-restore [Manpage] (http://manpages.ubuntu.com/manpages/xenial/man1/jscal-restore.1.html) 
+* jscal-restore [Manpage](http://manpages.ubuntu.com/manpages/xenial/man1/jscal-restore.1.html) 
