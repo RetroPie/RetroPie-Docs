@@ -166,6 +166,7 @@
 * [X-Arcade](X-Arcade)
 * [Xiaomi Gamepad](Xiaomi-Controller)
 * [Universal Controller Calibration & Mapping Using xboxdrv](https://github.com/RetroPie/RetroPie-Setup/wiki/Universal-Controller-Calibration-&-Mapping-Using-xboxdrv)
+* [Controller Configuration (driver level)](https://github.com/RetroPie/RetroPie-Setup/wiki/Controller-configuration-(driver-level))
 
 ## Troubleshooting
 
