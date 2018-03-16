@@ -19,7 +19,9 @@ Other [MAME](MAME) and [FB Alpha](FinalBurn-Alpha) emulator versions are also av
 ## Step Two: Use the right ROM Set Version
 Start by locating a **Reference Set** for the MAME or FB-Alpha emulator you wish to use. Incorrect versions will cause most or all games to immediately exit. In other words, lr-mame2003 will only work correctly with MAME 0.78 ROMs, mame4all will only work with MAME 0.37b5 ROMs, and so on. (see chart below)
 
-Each game zip contains multiple files needed for that game. Some games also have a "**Samples**" column entry which is referring to a zip file containing a set of audio files included in the Reference Set in a "samples" folder. These zip files are generally installed in the /BIOS/[emulator]/samples folder ( e.g. /BIOS/mame2003/samples ) but this can vary depending on the emulator.
+Each game zip contains multiple files needed for that game and many games share some of those same files. It is **critical that you refer to the compatibility list** for the emulator you are using (see chart below) and check the "**Parent**" and "**BIOS**" columns.
+
+Some games also have a "**Samples**" column entry which is referring to a zip file containing a set of audio files included in the Reference Set in a "samples" folder. These zip files are generally installed in the /BIOS/[emulator]/samples folder ( e.g. /BIOS/mame2003/samples ) but this can vary depending on the emulator.
 
 Other games may also require disk image data (chd) files that need to be installed into a folder within the appropriate roms folder of the same name as the game zip file. ( roms/arcade/game.zip, and roms/arcade/game/ folder with chd files )
 
