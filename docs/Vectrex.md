@@ -1,6 +1,6 @@
 ![Vectrex](http://standalonepost.com/sites/all/pictures/Nikopik/Vectrex_logo.png)
 ***
-_The Vectrex is a vector display-based home video game console released in 1982.
+_The Vectrex is a vector display-based home video game console released in 1982. On October 27, 1992, Smith Engineering granted permission for the original Vectrex ROMs, manuals, and other original content to be freely distributed for non-commercial purposes._ 
 ***
 
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
