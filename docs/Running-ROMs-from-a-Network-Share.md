@@ -134,11 +134,11 @@ I started a discussion on the forums for this article. I haven't written any gui
 
 If you are getting permission denied errors when you try to scrap or save states try editing your autostart.sh and replacing:
 
-   sudo mount -t cifs -o username=something,password=something //REMOTEHOST/path/to/roms /home/pi/RetroPie/roms
+    sudo mount -t cifs -o username=something,password=something //REMOTEHOST/path/to/roms /home/pi/RetroPie/roms
 
 with
 
-   sudo mount -t cifs -o username=something,password=something,rw,file_mode=0777,dir_mode=0777 //REMOTEHOST/path/to/roms /home/pi/RetroPie/roms
+    sudo mount -t cifs -o username=something,password=something,rw,file_mode=0777,dir_mode=0777 //REMOTEHOST/path/to/roms /home/pi/RetroPie/roms
 
 This will give your write access and should solve your problem.
 
