@@ -130,5 +130,17 @@ Sometimes this box will have a check mark or it may just be filled with gray, ei
 I started a discussion on the forums for this article. I haven't written any guides for many years so this will be a good place to provide any feedback or ask any questions. If I'm not advanced enough to help, hopefully someone else can chime in or you may need to make your own thread depending on the nature of the issue.
 [ROMs from a Network Share (Discussion)](https://retropie.org.uk/forum/topic/2870/running-roms-from-a-network-share)
 
+### Permission Denied
+
+If you are getting permission denied errors when you try to scrap or save states try editing your autostart.sh and replacing:
+
+   sudo mount -t cifs -o username=something,password=something //REMOTEHOST/path/to/roms /home/pi/RetroPie/roms
+
+with
+
+   sudo mount -t cifs -o username=something,password=something,rw,file_mode=0777,dir_mode=0777 //REMOTEHOST/path/to/roms /home/pi/RetroPie/roms
+
+This will give your write access and should solve your problem.
+
 ## Thank You
 Thank you, everyone at the Raspberry Pi foundation, everyone involved in the development of EmulationStation and RetroPie, authors of several guides that I can't recall the names of, @sselph, @BuZz and probably a few other people.
