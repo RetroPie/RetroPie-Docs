@@ -10,6 +10,8 @@ You first need to open the RGUI. There are two ways of accessing the RGUI:
 or
 - Use the default hotkey combo **select+x** to open the rgui from within a game
 
+If you haven't done so already, you'll need to enable the advanced settings by navigating to **Settings >> User Interface >> Show Advanced Settings**
+
 Navigate to **Online Updater >> Update Cheats**
 
 this will download a set of preconfigured cheat files for many games into `/opt/retropie/configs/all/retroarch/cheats`
