@@ -91,6 +91,10 @@ function install_bin_gamemaker() {
     wget -O- -q https://www.yoyogames.com/download/pi/crate | tar -xvz -C "$md_inst"
     # Install Maldita Castilla Game
     wget -O- -q https://www.yoyogames.com/download/pi/castilla | tar -xvz -C "$md_inst"
+
+    patchVendorGraphics "$md_inst/TheyNeedToBeFed/TheyNeedToBeFed"
+    patchVendorGraphics "$md_inst/SuperCrateBox/SuperCrateBox"
+    patchVendorGraphics "$md_inst/MalditaCastilla/MalditaCastilla"
 }
 
 function configure_gamemaker() {
