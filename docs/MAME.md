@@ -140,6 +140,7 @@ lr-mame2003 utilises [RetroArch control configurations](RetroArch-Configuration)
 
 ```shell
 Roms Dir: /home/pi/RetroPie/roms/mame-libretro
+Samples Dir: /home/pi/RetroPie/BIOS/mame2010/samples
 Binary Dir: /opt/retropie/libretrocores/lr-mame2010
 Config Dir: /opt/retropie/configs/mame-libretro/retroarch.cfg
 ```
