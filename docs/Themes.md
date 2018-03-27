@@ -103,6 +103,7 @@ Access theme gallery in the esthemes menu
 |          tributeSWars         | <img src="https://raw.githubusercontent.com/wetriner/es-theme-gallery/master/tributeSWars.png" width="500">                  | <img src="https://raw.githubusercontent.com/wetriner/es-theme-gallery/master/tributeSWars-gamelist.png" width="500">                  | yes           |
 |             scv720            | <img src="https://raw.githubusercontent.com/wetriner/es-theme-gallery/master/scv720.png" width="500">                        | <img src="https://raw.githubusercontent.com/wetriner/es-theme-gallery/master/scv720-gamelist.png" width="500">                        | yes           |
 |            Chicuelo           | <img src="https://raw.githubusercontent.com/wetriner/es-theme-gallery/master/Chicuelo.png" width="500">                      | <img src="https://raw.githubusercontent.com/wetriner/es-theme-gallery/master/Chicuelo-gamelist.png" width="500">                      | yes           |
+|           nostalgic           | <img src="https://raw.githubusercontent.com/wetriner/es-theme-gallery/master/nostalgic.png" width="500">                     | <img src="https://raw.githubusercontent.com/wetriner/es-theme-gallery/master/nostalgic-gamelist.png" width="500">                     | yes           |
 
 
 ## Creating Your Own EmulationStation Theme
