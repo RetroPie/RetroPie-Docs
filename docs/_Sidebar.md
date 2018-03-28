@@ -177,5 +177,4 @@
 
 ## Developers
 
- * [Building RetroPie Archives](Building-RetroPie-Archives)
  * [Shell Style Guide](Shell-Style-Guide)
