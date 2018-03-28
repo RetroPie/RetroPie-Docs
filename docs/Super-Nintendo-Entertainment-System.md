@@ -6,12 +6,12 @@ _The Super Nintendo Entertainment System (or SNES) was a 4th generation video ga
 
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
-| [lr-snes9x2010](https://github.com/libretro/snes9x2010) | snes  | .7z .bin .fig .mgd .sfc .smc .swc .zip | none | /opt/retropie/configs/snes/retroarch.cfg |
-| lr-snes9x | snes | .7z .bin .fig .mgd .sfc .smc .swc .zip | none | /opt/retropie/configs/snes/retroarch.cfg |
-| [lr-snes9x2002](https://github.com/libretro/snes9x2002) | snes | .7z .bin .fig .mgd .sfc .smc .swc .zip | none | /opt/retropie/configs/snes/retroarch.cfg |
+| [lr-snes9x2010](https://github.com/libretro/snes9x2010) | snes  | .7z .bin .bs .fig .mgd .sfc .smc .swc .zip | none | /opt/retropie/configs/snes/retroarch.cfg |
+| lr-snes9x | snes | .7z .bin .bs .fig .mgd .sfc .smc .swc .zip | none | /opt/retropie/configs/snes/retroarch.cfg |
+| [lr-snes9x2002](https://github.com/libretro/snes9x2002) | snes | .7z .bin .bs .fig .mgd .sfc .smc .swc .zip | none | /opt/retropie/configs/snes/retroarch.cfg |
 | [PiSNES](https://github.com/RetroPie/pisnes) | snes | .fig .sfc .smc .swc .zip | none | /opt/retropie/configs/snes/snes9x.cfg |
-| [lr-snes9x2005](https://github.com/libretro/snes9x2005) | snes | .7z .bin .fig .mgd .sfc .smc .swc .zip | none | /opt/retropie/configs/snes/retroarch.cfg |
-| [lr-armsnes](https://github.com/RetroPie/ARMSNES-libretro) | snes | .7z .bin .fig .mgd .sfc .smc .swc .zip | none | /opt/retropie/configs/snes/retroarch.cfg |
+| [lr-snes9x2005](https://github.com/libretro/snes9x2005) | snes | .7z .bin .bs .fig .mgd .sfc .smc .swc .zip | none | /opt/retropie/configs/snes/retroarch.cfg |
+| [lr-armsnes](https://github.com/RetroPie/ARMSNES-libretro) | snes | .7z .bin .bs .fig .mgd .sfc .smc .swc .zip | none | /opt/retropie/configs/snes/retroarch.cfg |
 | [snes9x-rpi](https://github.com/RetroPie/snes9x-rpi) | snes | .fig .sfc .smc .swc .zip | none | /opt/retropie/configs/snes/snes9x.cfg |
 
 ## Emulators: [lr-snes9x-2010](https://github.com/libretro/snes9x2010), lr-snes9x, [lr-snes9x2002](https://github.com/libretro/snes9x2002), [PiSNES](https://github.com/RetroPie/pisnes), [lr-snes9x2005](https://github.com/libretro/snes9x2005), [lr-armsnes](https://github.com/RetroPie/ARMSNES-libretro), [snes9x-rpi](https://github.com/RetroPie/snes9x-rpi)
