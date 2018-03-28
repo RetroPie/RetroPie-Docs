@@ -6,7 +6,7 @@ _The Atari ST, STE, TT, and Falcon were a series of personal computers released 
 
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
-| [Hatari](http://hatari.tuxfamily.org/) | atarist  | .st .stx .img .rom .raw .ipf .ctr | none | hardcoded |
+| [Hatari](http://hatari.tuxfamily.org/) | atarist  | .st .stx .msa .img .rom .raw .ipf .ctr | none | hardcoded |
 
 ## Emulator: [Hatari](http://hatari.tuxfamily.org/)
 
