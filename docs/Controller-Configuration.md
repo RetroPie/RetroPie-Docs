@@ -2,7 +2,7 @@ RetroPie supports many popular controllers out of the box. On first boot you wil
 
 Some emulators will still require manual controller configuration which will be detailed on their respective system page here in the documentation. 
 
-You can also configure controls for individual systems and individual games. For more advanced controller configuration with libretro cores (any emulator that starts with `lr`) see the [RetroArch-Configuration](retroarch-configuration) page.  
+You can also configure controls for individual systems and individual games. For more advanced controller configuration with libretro cores (any emulator that starts with `lr`) see the [RetroArch-Configuration](Retroarch-Configuration) page.  
 
 **Note** that some controllers (primarily wireless or bluetooth controllers) may require special drivers to be installed through the RetroPie Setup Script which are detailed on their individual controller page.
 
