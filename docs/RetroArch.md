@@ -1,5 +1,5 @@
 ***
-![Retroarch Logo](http://libretro.com/forums/images/styles/TheBeaconLight/style_blue/logo.png)
+![Retroarch Logo](https://docs.libretro.com/image/branding/retroarch_banner.png)
 ***
 
 RetroArch is the Frontend for the Libretro API and makes a up a large portion of the emulators included in RetroPie.
