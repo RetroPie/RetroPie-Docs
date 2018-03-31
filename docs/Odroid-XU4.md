@@ -97,10 +97,20 @@ Finally, restart the whole mess:
 ```
 sudo systemctl restart getty@tty1
 ```
-10. Disable Screen Blanking in Console:
+10. Disable Screen Blanking in Console and set the CPU Governor Setup:
+
 Edit /media/boot/boot.ini with your editor of choice and add before "setenv bootargs":
 ```
 setenv RetroPie "no_console_suspend consoleblank=0"
+
+# --- CPU Governor Setup ---
+# Uncomment only one line. New governor is set after 90secs after boot.
+# ------------------------------------------
+# - Performance (Keep all the CPU's at Maximum frequency)
+# setenv governor "performance"
+# ------------------------------------------
+# - Ondemand (recommended)
+setenv governor "ondemand"
 ```
 and add the value of the new created variable to "setenv bootargs":
 ```
