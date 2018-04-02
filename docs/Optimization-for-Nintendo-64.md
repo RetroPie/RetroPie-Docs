@@ -73,10 +73,10 @@ If it is critical to check that everything is enabled simply run this command in
 
 and you should get a result looking like
 
-LoadHiResTextures = True
+``LoadHiResTextures = True
 DumpTexturesToFiles = False
 txHiresEnable = True
-txHiresEnable = True
+txHiresEnable = True``
 
 Which will confirm that Hi Rez is turned on for both Glide and Rice Plugins
 
