@@ -59,6 +59,7 @@ then cancel exit and reboot
 
 
 
+
 ## Enabling Frame Skip
 modify your mupen64plus.cfg file to enable frame skipping
 `sudo nano -w /opt/retropie/configs/n64/mupen64plus.cfg`
