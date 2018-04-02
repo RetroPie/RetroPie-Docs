@@ -52,4 +52,4 @@ In RetroPie, the default is 3. A setting lower than this will likely cause perfo
 ```
 video_threaded = false
 ```
-Another setting that can reduce input lag, but will reduce performance by forcing both emulation and video tasks to be executed on the same core, rather than default of 'threading' (sharing) these tasks across multiple cores. Again, this may be better suited at a system-level, or game-level setting.
+Another setting that can reduce input lag, but will reduce performance by forcing both emulation and video tasks to be executed on the same core, rather than default of 'threading' (sharing) these tasks across multiple cores. Again, this may be better suited as a system-level, or game-level setting.
