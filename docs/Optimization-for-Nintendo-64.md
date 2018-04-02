@@ -80,9 +80,6 @@ txHiresEnable = True``
 
 Which will confirm that Hi Rez is turned on for both Glide and Rice Plugins
 
-
-The steps for this are to change the configuration in 
-```/opt/retropie/configs/n64/mupen64plus.cfg  ```
 Make sure you have launched a rom with both Rice and Glide before checking the file or the variables will not be there to confirm. 
 
 Glide Line
