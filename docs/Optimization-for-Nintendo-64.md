@@ -29,7 +29,7 @@ Raspberry Pi 3 Model B+
 Heavy Overclock settings only recommended for those who do not mind blowing warranty and have proper cooling. 
 ```
 #Overclock Settings
-arm_freq=1580
+arm_freq=1525
 gpu_freq=510
 core_freq=510
 sdram_freq=510
