@@ -84,7 +84,7 @@ It is not possible to restart/shutdown if a sudo requests an password. To disabl
  
     <user> ALL=(ALL) NOPASSWD:ALL
 
-at the end of `/etc/sudoers`. Replace **\<user\>** with the name of your current user.
+at the end of `/etc/sudoers`. Replace **<user\>** with the name of your current user.
 
 ### Cannot Install PS3 driver
 
