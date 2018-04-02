@@ -62,9 +62,13 @@ then cancel exit and reboot
 
 ## Enabling Frame Skip
 modify your mupen64plus.cfg file to enable frame skipping
+
 `sudo nano -w /opt/retropie/configs/n64/mupen64plus.cfg`
+
 Edit the variable below from false to True
+
 `SkipFrame=True`
+
 Test your game with it by ensuring that when the game launches you press any button and select the emulator for the rom to gles-rice 
 
 Essentially this forces the game to skip every other frame while it hurts perfect emulation it can be a big help to unplayable games to almost playable.  In example modifying this variable doubles the framerate in Crusin USA from 10 to 20  and the game goes from abysmal to slightly playable. 
