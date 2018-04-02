@@ -63,20 +63,20 @@ You can go into Setup / Configuration and enable autostart as you like.
 
 ## FAQ
 
-  - [Emulationstation hangs if shutdown/restart was selected](#emulationstation-hangs-if-shutdownrestart-was-selected)
-  - [Cannot Install PS3 driver](#cannot-install-ps3-driver)
-  - [Screen blanks after some minutes](#screen-blanks-after-some-minutes)
-  - [Ubuntu does not autologin](#ubuntu-does-not-autologin)
-  - [How to setup a splashscreen](#how-to-setup-a-splashscreen)
-  - [My NUC or Intel Baytrail/Braswell powered device hangs](#my-nuc-or-intel-baytrailbraswell-powered-device-hangs)
-  - [No audio](#no-audio)
-  - [No HDMI audio](#no-hdmi-audio)
-  - [No audio in Mupen64Plus](#no-audio-in-mupen64plus)
-  - [XBOX 360 Controller mappings not working](#xbox-360-controller-mappings-not-working)
-  - [How do I map controls to Dolphin](#how-do-i-map-controls-to-dolphin)
-  - [Start+Select does not exit Dolphin](#startselect-does-not-exit-dolphin)
-  - [SteamOS hack to allow installation](#steamos-hack-to-allow-installation)
-  - [How to i get latest graphics drivers](#how-to-i-get-latest-graphics-driver)
+- [Emulationstation hangs if shutdown/restart was selected](#emulationstation-hangs-if-shutdownrestart-was-selected)
+- [Cannot Install PS3 driver](#cannot-install-ps3-driver)
+- [Screen blanks after some minutes](#screen-blanks-after-some-minutes)
+- [Ubuntu does not autologin](#ubuntu-does-not-autologin)
+- [How to setup a splashscreen](#how-to-setup-a-splashscreen)
+- [My NUC or Intel Baytrail/Braswell powered device hangs](#my-nuc-or-intel-baytrailbraswell-powered-device-hangs)
+- [No audio](#no-audio)
+- [No HDMI audio](#no-hdmi-audio)
+- [No audio in Mupen64Plus](#no-audio-in-mupen64plus)
+- [XBOX 360 Controller mappings not working](#xbox-360-controller-mappings-not-working)
+- [How do I map controls to Dolphin](#how-do-i-map-controls-to-dolphin)
+- [Start+Select does not exit Dolphin](#startselect-does-not-exit-dolphin)
+- [SteamOS hack to allow installation](#steamos-hack-to-allow-installation)
+- [How to i get latest graphics drivers](#how-to-i-get-latest-graphics-driver)
 
 ### Emulationstation hangs if shutdown/restart was selected
 
