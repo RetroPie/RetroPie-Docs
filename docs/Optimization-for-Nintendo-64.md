@@ -62,11 +62,14 @@ Audio
 
 Use HDMI as composite requires more CPU usage.
 
+## High Resolution Texture Packs
 
 From Current version forward Hi Resolution Texture options are automatically configured to True in the configuration files.  You should not need to modify them as you did with previous versions.  
 
 If it is critical to check that everything is enabled simply run this command in one line
-cat /opt/retropie/configs/n64/mupen64plus.cfg | grep Textures && cat /opt/retropie/configs/n64/mupen64plus.cfg | grep txHiresEnable
+
+
+``cat /opt/retropie/configs/n64/mupen64plus.cfg | grep Textures && cat /opt/retropie/configs/n64/mupen64plus.cfg | grep txHiresEnable``
 
 and you should get a result looking like
 
