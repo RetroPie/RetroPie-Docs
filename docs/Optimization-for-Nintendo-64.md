@@ -4,6 +4,7 @@ Nintendo 64 emulation requires at a bare minimum a Raspberry Pi 2 and a Raspberr
 
 Suggested overclock for Raspi 3 for optimal N64 emulation (This to be paired with proper power, cooling, please see [this article](https://github.com/retropie/retropie-setup/wiki/Overclocking) for further information.)
 
+please note that these are just suggested settings, the manufacture of Pi's silicon can differ from unit to unit so while some have reported success with clock speeds above 1300 and v3d_freq up to 525 you may not be able to hit that stably.  Some trial and error is suggested.  
 
 Raspberry Pi 3 Model B
 ```
