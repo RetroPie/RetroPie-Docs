@@ -16,7 +16,7 @@ Whilst wireless controllers are a brilliant innovation, they can add further del
 ***
 
 ## Cautionary Tweaks
-The internet is full of input lag configuration changes for RetroPie. However, some will have unwanted side effects, or no effect whatsoever. Listed below are a few examples.
+The internet is full of input lag configuration changes for RetroPie. However, some may have unwanted side effects, or no effect whatsoever. Listed below are a few examples.
 
 ### `video_hard_sync`
 ```
