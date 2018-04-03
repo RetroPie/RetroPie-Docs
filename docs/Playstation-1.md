@@ -34,10 +34,6 @@ If you only have a .bin file and no .cue file, you can generate it:
 -  [Individually](http://www.dslreports.com/r0/download/373724~1e45059000cfc371c157f544cc5aef07/MakeCue.zip)
 -  [En masse or individually](https://github.com/thorst/CueMaker)  
 
-### Cue files
-You can also find cue files for many games here, obviously you will need to make sure the .bin filename is correct when you use it.  
-[Link to .cue files](http://s000.tinyupload.com/index.php?file_id=08258966889995234828)
-
 ### Why .bin was removed
 - It is very common for PSX games to be in 2 parts, a .bin and .cue, this means that Emulation Station will show duplicates for each game which no-one really wants. This is because it used to show extensions .bin and .cue
 - A PSX game will only ever need one .cue file, so by hiding a .bin it prevents duplicates showing (as it could have multiple .bin files)
