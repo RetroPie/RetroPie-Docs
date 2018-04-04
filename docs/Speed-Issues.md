@@ -7,7 +7,7 @@ Systems from fastest to slowest:
 
 How much faster depends on the specific game and emulator you are interested in.
 
-Most SNES, Mega Drive, GameBoy Advance, and simpler emulators should run at full speed of close on a Pi 2.
+Most SNES, Mega Drive, GameBoy Advance, and simpler emulators should run at full speed or close on a Pi 2.
 
 ## Specific System Observations
 
