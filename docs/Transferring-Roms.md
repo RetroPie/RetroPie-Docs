@@ -22,8 +22,20 @@ There are three main methods of transferring roms: via USB stick, via SFTP, and 
 
 [SFTP](https://en.wikipedia.org/wiki/SSH_File_Transfer_Protocol) or SSH File Transfer Protocol also called Secure File Transfer Protocol is a network protocol that allows you to securely transfer files over a network. Naturally both your PC and Pi will need to be connected to the same network via Ethernet or Wifi in order to successfully transfer your files. 
 
-  - Wired (needs ethernet cable)
-  - Wireless (needs Pi >= 3 or wifi dongle for Pi <= 2 )
+- Wired (needs ethernet cable)
+- Wireless (needs Pi >= 3 or wifi dongle for Pi <= 2 )
+
+To use SFTP, you must first [enable SSH](https://www.raspberrypi.org/documentation/remote-access/ssh/). As of the November 2016 release, Raspbian has the SSH server disabled by default.
+
+To enable SSH from within RetroPie:
+
+1. Navigate to the RetroPie configuration area.
+1. Select `raspi-config`
+1. Select `Interfacing Options`
+1. Select `SSH`
+1. Choose `Yes`
+1. Select `Ok`
+1. Choose `Finish`
 
 There are many SFTP programs out there:
 
