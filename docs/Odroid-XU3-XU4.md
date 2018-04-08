@@ -1,6 +1,5 @@
-# Odroid XU4
 
-This is a guide on how to build RetroPie on the Odroid XU4. This is assuming you are starting with a prebuilt image of Ubuntu 16.04 Minimal from HardKernel's Website:
+This is a guide on how to build RetroPie on the Odroid XU3/XU4. This is assuming you are starting with a prebuilt image of Ubuntu 16.04 Minimal from HardKernel's Website:
 
 ## Download Ubuntu 16.04.2 Minimal Image for Odroid XU3/XU4:
 
