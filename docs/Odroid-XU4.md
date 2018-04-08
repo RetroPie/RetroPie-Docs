@@ -33,7 +33,7 @@ sudo apt upgrade
 sudo apt dist-upgrade
 shutdown -r now
 ```
-4. Set the locale settings. Below you can find an example for English lenguage:
+4. Set the locale settings. Below you can find an example for American English:
 ```    
 apt-get install language-pack-en-base
 update-locale LC_ALL="en_US.UTF-8"
@@ -71,7 +71,7 @@ This will open up /etc/sudoers file in editor you configured in first step. Add 
 ```
 NameOfYourChoice ALL=(ALL) NOPASSWD:ALL
 ```
-This tells sudo that the odroid user doesn't need a password. Save and quit.
+This tells sudo that the NameOfYourChoice user doesn't need a password. Save and quit.
 
 8. Remove password for the new created user:
 ```
