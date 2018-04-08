@@ -129,7 +129,7 @@
 * [Memory Split](Memory-Split)
 * [Manual Installation](Manual-Installation)
 * [Odroid C1 C2](Odroid-C1-C2)
-* [Odroid XU4](Odroid-XU4)
+* [Odroid XU3 XU4](Odroid-XU3-XU4)
 * [Arch Linux](Arch-Linux)
 * [Debian/Ubuntu/Mint](Debian)
 * [Install via NOOBS](convert-retropie-sd-card-image-to-noobs-image)
