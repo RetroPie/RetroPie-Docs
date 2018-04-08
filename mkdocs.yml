@@ -201,7 +201,7 @@ pages:
     - Raspbian: Manual-Installation.md
     - Debian/Ubuntu: Debian.md
     - Odroid C1/C2: Odroid-C1-C2.md
-    - Odroid XU4: Odroid-XU4.md
+    - Odroid XU4: Odroid-XU3-XU4.md
     - OSMC: OSMC.md
 - Troubleshooting:
     - FAQ: FAQ.md
