@@ -56,7 +56,7 @@ Another setting that can reduce input lag, but will reduce performance by forcin
 
 Leaving `video_hard_sync` aside, the rest can be useful under the proper circumstances. It's important to keep in mind that even when using Retropie on the Raspberry Pi 3, there is very little headroom to allow these tweaks without a hit on performance in many of the available RetroArch cores. However, the majority of systems being emulated weren't so heavily dependent on input timed to the millisecond in the first place. In fact, the Nintendo Entertainment System is likely to be the only system you'll hear consistently discussed as having this trait. Listening even closer, the two games mentioned as being the main offenders are 'Battletoads' and 'Mike Tyson's Punch-out!!'.
 
-Fortunately, the NES is a system that leaves just enough overhead on a Raspberry Pi 3 to allow the above tweaks to be implemented without a drop in performance. Below is an example of the four applicable tweaks that can be made to reduce input lag as much as possible on a Raspberry Pi 3, while maintaining a full 60fps in the available NES cores. The one setting that allows some flexibility is `video_frame_delay`, but a setting above 4 is likely to reduce performance.
+Fortunately, the NES is a system that happens to leave just enough overhead on a Raspberry Pi 3 to allow the above tweaks to be implemented without a drop in performance. Below is an example of the four applicable tweaks that can be made to reduce input lag as much as possible on a Raspberry Pi 3, while maintaining a full 60fps in the available NES cores. The one setting that allows some flexibility is `video_frame_delay`, but a setting above 4 is likely to reduce performance.
 
 ```
 video_driver = "dispmanx"
