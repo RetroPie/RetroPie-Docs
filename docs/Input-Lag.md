@@ -65,5 +65,5 @@ video_frame_delay = 4
 video_max_swapchain_images = 2
 ```
 
-These settings can be applied at a [NES system level, or even a game-specific level](https://github.com/RetroPie/RetroPie-Setup/wiki/RetroArch-Configuration#config-hierarchy) leaving all other systems and games unaffected. For those who wish to make use of shaders, overlays and the OSD, simply remove `video_driver = "dispmanx"`.
+These settings can be applied at a [NES system level, or even a game-specific level](https://github.com/RetroPie/RetroPie-Setup/wiki/RetroArch-Configuration#config-hierarchy) leaving all other systems and games unaffected if so desired. For those who wish to make use of shaders, overlays and the OSD, simply remove `video_driver = "dispmanx"`.
 
