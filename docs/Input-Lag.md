@@ -44,9 +44,7 @@ This is a complex setting that can reduce input lag at the cost of CPU usage. Em
 ```
 video_max_swapchain_images = 2
 ```
-This setting switches between using two or three buffers for rendering. Without going into detail, The default setting of 3 allows the emulator to run ahead and prepare the next frame before the current one has even been shown. This improves performance (i.e. makes framerate hiccups less likely), especially on slow hardware, but generally increases input lag by one frame. A setting of 2 allows less preparation, but has less of an affect on input lag.
-
-In RetroPie, the default is 3. A setting lower than this will likely cause performance issues, even on a Pi 3.
+This setting switches between using two or three buffers for rendering. Without going into detail, The default setting of 3 allows the emulator to run ahead and prepare the next frame before the current one has even been shown. This improves performance (i.e. makes framerate hiccups less likely), especially on slow hardware, but generally increases input lag by one frame. A setting of 2 allows less preparation, which can affect performance, but has much less of an affect on input lag.
 
 ### `video_threaded`
 ```
@@ -54,7 +52,7 @@ video_threaded = false
 ```
 Another setting that can reduce input lag, but will reduce performance by forcing both emulation and video tasks to be executed on the same core, rather than default of 'threading' (sharing) these tasks across multiple cores.
 
-## Example Application of Cautionary Tweaks
+## Application of Cautionary Tweaks
 
 Leaving `video_hard_sync` aside, the rest can be useful under the proper circumstances. It's important to keep in mind that even when using Retropie on the Raspberry Pi 3, there is very little headroom to allow these tweaks without a hit on performance in many of the available RetroArch cores. However, the majority of systems being emulated weren't so heavily dependent on input timed to the millisecond in the first place. In fact, the Nintendo Entertainment System is likely to be the only system you'll hear consistently discussed as having this trait. Listening even closer, the two games mentioned as being the main offenders are 'Battletoads' and 'Mike Tyson's Punch-out!!'.
 
