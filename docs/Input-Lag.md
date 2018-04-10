@@ -15,8 +15,8 @@ Whilst wireless controllers are a brilliant innovation, they can add further del
 
 ***
 
-## Cautionary Tweaks
-The internet is full of input lag configuration changes for RetroPie. However, some may have unwanted side effects, or no effect whatsoever. Listed below are a few examples and how they might be used effectively.
+## Unsupported Tweaks
+The internet is full of input lag configuration changes for RetroPie. However, some may have unwanted side effects, or no effect whatsoever. Listed below are a few examples. As these settings can potentially cause performance issues if not applied correctly, they will be unsupported on the RetroPie user forums. If you should choose to make use of them, always keep in mind that you have done so if performance issues arise and be prepare to try removing them as a potential cause.
 
 ### `video_hard_sync`
 ```
@@ -52,9 +52,9 @@ video_threaded = false
 ```
 Another setting that can reduce input lag, but will reduce performance by forcing both emulation and video tasks to be executed on the same core, rather than default of 'threading' (sharing) these tasks across multiple cores.
 
-## Application of Cautionary Tweaks
+## Application of Unsupported Tweaks
 
-Leaving `video_hard_sync` aside, the rest can be useful under the proper circumstances. It's important to keep in mind that even when using Retropie on the Raspberry Pi 3, there is very little headroom to allow these tweaks without a hit on performance in many of the available RetroArch cores. However, the majority of systems being emulated weren't so heavily dependent on input timed to the millisecond in the first place. In fact, the Nintendo Entertainment System is likely to be the only system you'll hear consistently discussed as having this trait. Listening even closer, the two games mentioned as being the main offenders are 'Battletoads' and 'Mike Tyson's Punch-out!!'.
+Leaving `video_hard_sync` aside, the rest can be useful under the proper circumstances. Even when using Retropie on the Raspberry Pi 3, there is very little headroom to allow these tweaks without a hit on performance in many of the available RetroArch cores. However, the majority of systems being emulated weren't so heavily dependent on input timed to the millisecond in the first place. In fact, the Nintendo Entertainment System is likely to be the only system you'll hear consistently discussed as having this trait. Listening even closer, the two games mentioned as being the main offenders are 'Battletoads' and 'Mike Tyson's Punch-out!!'.
 
 Fortunately, the NES is a system that happens to leave just enough overhead on a Raspberry Pi 3 to allow the above tweaks to be implemented without a drop in performance. Using it as an example, below are the four applicable tweaks that can be made to reduce input lag as much as possible on a Raspberry Pi 3, while maintaining a full 60fps in the available NES cores. The one setting that allows some flexibility is `video_frame_delay`, but a setting above 4 is likely to reduce performance in the NES cores.
 
@@ -67,6 +67,6 @@ video_max_swapchain_images = 2
 
 These settings can be applied at a [system level, or even a game-specific level](https://github.com/RetroPie/RetroPie-Setup/wiki/RetroArch-Configuration#config-hierarchy) leaving all other systems and/or games unaffected if so desired. For those who wish to make use of shaders, overlays and the OSD, simply remove `video_driver = "dispmanx"`.  When used with a less demanding core, `video_frame_delay` can likely be increased to some degree, with the maximum limit being 15.
 
-Although the SNES cores may not always be the best candidates for these settings, below is a graph depicting the affect they can potentially have, using 'Super Mario World' as an example.
+Although the SNES cores should only ever have these settings applied at a game level, below is a graph depicting the affect they can potentially have, using 'Super Mario World' as an example.
 
 ![SNES Input Lag Graph](https://user-images.githubusercontent.com/18494695/38519182-f5616840-3c0c-11e8-89fb-dae734d01e81.gif)
