@@ -57,8 +57,7 @@ Launch it from Emulation Station, and you get the GUI where you can configure di
 
 ## Video Tutorial
 
-<a href="https://www.youtube.com/watch?v=dleumwWZp6Q
-" target="_blank"><img src="https://i.ytimg.com/vi_webp/dleumwWZp6Q/mqdefault.webp" 
+<a href="https://www.youtube.com/watch?v=dleumwWZp6Q" target="_blank"><img src="https://i.ytimg.com/vi_webp/dleumwWZp6Q/mqdefault.webp" 
 alt="Testing joypad in RetroPie" width="300" height="190" border="10" /></a> 
 
 ## Tips and troubleshooting
