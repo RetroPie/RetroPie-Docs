@@ -23,8 +23,7 @@ Place your ZX Spectrum ROMs in
 ```
 
 ## Video Overview:
-<a href="https://www.youtube.com/watch?v=_Rs20bAy-sY" target="_blank"><img src="https://i.ytimg.com/vi_webp/_Rs20bAy-sY/mqdefault.webp" 
-alt="ZX Spectrum Video" width="300" height="180" border="10" /></a>
+[![ZX Spectrum Video](http://img.youtube.com/vi/_Rs20bAy-sY/0.jpg)](http://www.youtube.com/watch?v=_Rs20bAy-sY)
 
 ## Controls
 
