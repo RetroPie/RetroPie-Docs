@@ -1,4 +1,4 @@
-**Please check [[FinalBurn-Alpha]] for for basic information about controls and managing ROMs - this page is for specific information about the lr-fbalpha emulator's features.**
+**Please check [FinalBurn-Alpha](FinalBurn-Alpha.md) for for basic information about controls and managing ROMs - this page is for specific information about the lr-fbalpha emulator's features.**
 
 lr-fbalpha is a popular choice for the Raspberry Pi 2 and up, as it supports the latest FBA romset (v0.2.97.42), and a broad set of features. FBA also should always outperform MAME in the games they both support, as it is tailored for speed, rather than accuracy. Also, it is a libretro core, so enjoys all the benefits of that: centralised controller configurations, many customisation options, netplay, shader/overlay support, etc.
 
@@ -53,7 +53,7 @@ Note that this will automatically use the latest version of the UNIBIOS avaialbl
 
 Use the **B** button to go back to the **Quick Menu** and select **Restart Content** then **Resume Content**. You should see the Unibios boot screen before the usual "Max 330 Mega Pro-Gear Spec" screen.
 
-Instructions on how to use the UNIBIOS can be found here: [[Neo-Geo#using-the-universe-bios-unibios]]
+Instructions on how to use the UNIBIOS can be found here: [Neo-Geo - Bios](Neo-Geo#bios).
 
 ## Neo Geo Overclocking
 
