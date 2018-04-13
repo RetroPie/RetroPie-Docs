@@ -82,6 +82,26 @@ To remove hiss or static or white noise when using the 3.5mm headphone jack:
 1. Get an inline volume control: http://www.amazon.com/Koss-155954-VC20-Volume-Control/dp/B00001P4XH
 1. Another option is to set audio_pwm_mode=2 in the same config - this is a new audio driver that should significantly improve the sound quality - see [this topic on Analogue audio testing](https://www.raspberrypi.org/forums/viewtopic.php?f=29&t=136445).
 
+### aplay: audio open error: Device or resource busy
+
+You must do the following from command line:
+To extract info on the application hogging the sound device, do:
+
+    lsof | grep snd
+This displayed:
+
+    xmms2d  31732  patrick   7u    CHR  116,9  0t0  3885 /dev/snd/controlC0
+I could see evidence of the app that was blocking access. I had nothing obvious running, so I killed the process.
+
+    killall xmms2d OR kill -9 31732 (which is the PID)
+Then checked again.
+
+    lsof | grep snd
+Nothing. Its clear.
+Done.
+
+**Original credit to:**
+[aplay-device-or-resource-busy](http://stray-notes.blogspot.com/2010/12/aplay-device-or-resource-busy.html)
 ## USB Audio
 
 There's a lot of **old** documentation on how to set this up.  To fix this, especially if you are using a **USB Audio** dongle in lieu of the Raspberry Pi's scratchy 3.5 mm audio jack. (Blame the manufacturer of that part. Hopefully the foundation will fix it when the next Pi comes out.)
