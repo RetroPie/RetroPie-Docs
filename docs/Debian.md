@@ -102,8 +102,7 @@ Open Ubuntu system settings menu and select user accounts. Enable autologin for 
 
 ### How to setup a splashscreen
 
-Use Plymouth to setup a splash screen:
-https://wiki.ubuntu.com/Plymouth
+Use Plymouth to setup a splash screen. See the [Plymouth Ubuntu wiki](https://wiki.ubuntu.com/Plymouth) or use this [simple ES theme](https://github.com/raelgc/es-logo).
 
 ### My NUC or Intel Baytrail/Braswell powered device hangs
 
