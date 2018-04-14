@@ -2,6 +2,43 @@
 
 This page is a list of all of the changelogs for each version of RetroPie. For a complete list of all commits to the source code see [here:](https://github.com/RetroPie/RetroPie-Setup/commits/master)  
 
+### Version 4.4: (April 14, 2018)
+
+Changes since 4.3
+
+* Added support for Raspbian Stretch, and switched to it for our main images, as Raspbian Jessie is no longer receiving kernel/firmware updates. Many changes were needed around the codebase to work correctly with Raspbian Stretch.
+* Added basic support for the ASUS Tinker Board.
+* RetroArch updated to v1.7.1 (built with video recording support via ffmpeg on Raspbian Stretch).
+* AdvanceMAME updated to v3.7
+* ScummVM - updated to v2.0. This fixes the controller issues and adds support for additional games.
+* Stella (Atari 2600 emulator) updated to v5.0.2
+* Fuse (ZX Spectrum emulator) updated to v1.4.1
+* SDL2 - updated to 2.0.8
+* Dosbox - Updated to latest code, implemented software MIDI synth support, and launching via .conf files directly.
+* lr-freeintv libretro Intellivision emulator
+* AGS - enable DIGMID support for MIDI playback on devices with no hardware MIDI Support.
+* Fixes for xarcade2jstick.
+* Added customhidsony, a custom hid-sony dkms driver module patched to fix the eternal vibrate bug with third-party Shanwan controllers.
+* wolf4sdl - fix spear of destiny mission support.
+* Zdoom - add support for launching Hexen 1 Series, Heretic, Strife and Chex 3.
+* cgenius - updated to v2.2.0.
+* Amiberry - update to the new SDL2 release (still using SDL1 on the Raspberry Pi due to performance reasons).
+* Emulation Station improvements including Kiosk mode, and a new experimental module emulationstation-dev for those wanting to try our the very latest Emulation Station code.
+* Various mupen64plus (N64 emulator) fixes.
+* Removed lr-armsnes as it’s no longer developed and has only minor changes over lr-snes9x2002.
+* Fix non working xm7 (Fujitsu FM-7) emulator.
+* Joy2key - input mapping improvements and fixes.
+* Identify and allow installing on Linux Mint Debian Edition and Deepin.
+*Added various new Emulation Station themes, installable from RetroPie-Setup.
+* Added new experimental modules:
+  * lr-dosbox (Dosbox port for libretro)
+  * dosbox-sdl2 (DOSBox port with SDL2 & FluidSynth support)
+  * mame2003-plus-libretro (mame2003 with backported fixes)
+  * Update lr-desmume and split 2015 version off to lr-desume2015.
+  * digger - digger remastered.
+  * yquake2 - Supports Quake II and both official mission packs.
+  * Abuse - port of run and gun game.
+
 ### Version 4.3: (September 21, 2017)
 
 Changes since 4.2
