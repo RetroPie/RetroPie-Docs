@@ -110,8 +110,9 @@ Here are some examples of the file that should be written.
 [SNES30 RetroArch config file](https://pastebin.com/raw/pfRyAk9s) (Firmware 3.00 - 8Bitdo SNES30 GamePad.cfg)
 
 ## Video Guide:
-<a href="https://www.youtube.com/watch?v=e2We6AElqg8" target="_blank"><img src="https://i.ytimg.com/vi_webp/e2We6AElqg8/mqdefault.webp" 
-alt="8bitdo controller with RetroPie" width="300" height="180" border="10" /></a>
+<div class="video-wrapper">
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/e2We6AElqg8" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
 
 ### Firmware Versions for 8bitdo controllers (June 2017)
 ![8bitdo controllers firmware](https://s3.postimg.cc/j47k633fn/8bitdo-firmware.png)  
