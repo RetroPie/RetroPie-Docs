@@ -22,7 +22,7 @@ It can also be accessed from the terminal with `sudo ~/RetroPie-Setup/retropie_s
 
 - **Basic Install:** This is intended as a first install and is not required if using a pre-built image. eg When installing RetroPie on top of an existing OS.
 - **Update All Installed Packages:** This will update the RetroPie-Setup script and all installed packages.
-- **Manage Packages:** This will alllow you to install and update individual emulators, ports, controller drivers (like the ps3 or xboxdrv) other optional packages.
+- **Manage Packages:** This will allow you to install and update individual emulators, ports, controller drivers (like the ps3 or xboxdrv) other optional packages.
 - **Configuration / Tools:** Configuration and tools including BlueTooth and WiFi setup, splashscreens and theme. You can also access any packages that have additional configuration here.
 - **Update RetroPie-Setup Script:** Updates the RetroPie-Setup script to the latest version.
 - **Uninstall RetroPie:** Uninstalls RetroPie from the system.
