@@ -28,6 +28,7 @@ Place your Game Boy ROMs in
 ## BIOS
 
 `lr-mgba` can use the original Game Boy BIOS: **gb_bios.bin**
+
 `lr-mgba` can use the original Super Game Boy BIOS: **sgb_bios.bin**
 
 Place the BIOS in
@@ -36,6 +37,7 @@ Place the BIOS in
 ```
 
 The correct MD5 for **gb_bios.bin** is `32fbbd84168d3482956eb3c5051637f5`
+
 The correct MD5 for **sgb_bios.bin** is `d574d4f9c12f305074798f54c091a8b4`
 
 ## Controls
