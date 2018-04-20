@@ -8,11 +8,13 @@ _The Game Boy was released by Nintendo in 1989 thus kicking off the era of handh
 | :---: | :---: | :---: | :---: | :---: |
 | [lr-gambatte](https://github.com/libretro/gambatte-libretro) | gb  | .7z .gb .zip | none | /opt/retropie/configs/gb/retroarch.cfg |
 | [lr-tgbdual](https://github.com/libretro/tgbdual-libretro) | gb  | .7z .gb .zip | none | /opt/retropie/configs/gb/retroarch.cfg |
+| [lr-mgba](https://github.com/libretro/mgba) | gb  | .7z .gb .zip | gb_bios.bin | /opt/retropie/configs/gb/retroarch.cfg |
 
-## Emulators: [lr-gambatte](https://github.com/libretro/gambatte-libretro), [lr-tgbdual](https://github.com/libretro/tgbdual-libretro)
+## Emulators: [lr-gambatte](https://github.com/libretro/gambatte-libretro), [lr-tgbdual](https://github.com/libretro/tgbdual-libretro), [lr-mgba](https://github.com/libretro/mgba)
 
 lr-gambatte is the prefered single-player emulator, while lr-tgbdual runs two instances of the same game for either two-player link cable games or parallel play on the same system.
 lr-gambatte supports playing link cable games over network (not to be mixed up with netplay).
+lr-mgba is an alternative emulator, supports local cable games, Game Boy BIOS and Super Game Boy.
 
 ## ROMS
 
@@ -22,9 +24,21 @@ Place your Game Boy ROMs in
 ```
 /home/pi/RetroPie/roms/gb
 ```
+
+## BIOS
+
+`lr-mgba` can use the original Game Boy BIOS: **gb_bios.bin**
+
+Place the BIOS in
+```
+/home/pi/RetroPie/BIOS
+```
+
+The correct MD5 for **gb_bios.bin** is `32fbbd84168d3482956eb3c5051637f5`
+
 ## Controls
 
-Both emulators utilise Retroarch configurations
+All the emulators utilise Retroarch configurations
 
 Add custom retroarch controls to the retroarch.cfg file in
 ```shell
