@@ -14,7 +14,7 @@ _The Game Boy was released by Nintendo in 1989 thus kicking off the era of handh
 
 lr-gambatte is the prefered single-player emulator, while lr-tgbdual runs two instances of the same game for either two-player link cable games or parallel play on the same system.
 lr-gambatte supports playing link cable games over network (not to be mixed up with netplay).
-lr-mgba is an alternative emulator, supports local cable games, Game Boy BIOS and Super Game Boy.
+lr-mgba is a modern emulator that aims to be fast and accurate, supports local cable games, external BIOS, Super Game Boy emulation, among many other features. It also emulates Game Boy Color and Game Boy Advance.
 
 ## ROMS
 
@@ -27,18 +27,14 @@ Place your Game Boy ROMs in
 
 ## BIOS
 
-`lr-mgba` can use the original Game Boy BIOS: **gb_bios.bin**
+lr-mgba can load external Game Boy and Super Game Boy BIOSes: **gb_bios.bin**, **sgb_bios.bin**
 
-`lr-mgba` can use the original Super Game Boy BIOS: **sgb_bios.bin**
-
-Place the BIOS in
+Place these BIOS in
 ```
 /home/pi/RetroPie/BIOS
 ```
 
-The correct MD5 for **gb_bios.bin** is `32fbbd84168d3482956eb3c5051637f5`
-
-The correct MD5 for **sgb_bios.bin** is `d574d4f9c12f305074798f54c091a8b4`
+The correct MD5 for **gb_bios.bin** is `32fbbd84168d3482956eb3c5051637f5` and for **sgb_bios.bin** is `d574d4f9c12f305074798f54c091a8b4`
 
 ## Controls
 
