@@ -8,7 +8,7 @@ _The Game Boy was released by Nintendo in 1989 thus kicking off the era of handh
 | :---: | :---: | :---: | :---: | :---: |
 | [lr-gambatte](https://github.com/libretro/gambatte-libretro) | gb  | .7z .gb .zip | none | /opt/retropie/configs/gb/retroarch.cfg |
 | [lr-tgbdual](https://github.com/libretro/tgbdual-libretro) | gb  | .7z .gb .zip | none | /opt/retropie/configs/gb/retroarch.cfg |
-| [lr-mgba](https://github.com/libretro/mgba) | gb  | .7z .gb .zip | gb_bios.bin | /opt/retropie/configs/gb/retroarch.cfg |
+| [lr-mgba](https://github.com/libretro/mgba) | gb  | .7z .gb .zip | gb_bios.bin sgb_bios.bin | /opt/retropie/configs/gb/retroarch.cfg |
 
 ## Emulators: [lr-gambatte](https://github.com/libretro/gambatte-libretro), [lr-tgbdual](https://github.com/libretro/tgbdual-libretro), [lr-mgba](https://github.com/libretro/mgba)
 
