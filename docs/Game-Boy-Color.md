@@ -14,6 +14,7 @@ _The Game Boy Color was an 8 bit handheld gaming console released by Nintendo in
 ## Emulators: [lr-gambatte](https://github.com/libretro/gambatte-libretro), [lr-tgbdual](https://github.com/libretro/tgbdual-libretro),  [lr-mgba](https://github.com/libretro/mgba)
 
 lr-gambatte is the prefered single-player emulator, while lr-tgbdual runs two instances of the same game for either two-player link cable games or parallel play on the same system.
+
 lr-mgba is a modern emulator that aims to be fast and accurate, supports local cable games, external BIOS, Super Game Boy emulation, among many other features. It also emulates [[Game Boy]] and [[Game Boy Advance]].
 
 ## ROMS
