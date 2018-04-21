@@ -1,5 +1,5 @@
 # Setting up an 8bitdo Bluetooth controller
-![8bitdo Logo](http://www.8bitdo.com/images/logo.png)
+![8bitdo Logo](http://www.8bitdo.com/images/Logo-white.svg)
 
 ![FC30](https://s21.postimg.cc/nvr2zk54j/fc30.png)
 ![FC30 Pro](https://s21.postimg.cc/muquafo4z/FC30_Pro.jpg)
