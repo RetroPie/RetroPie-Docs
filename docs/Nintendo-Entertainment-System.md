@@ -1,7 +1,7 @@
 ***
 ![nes](https://cloud.githubusercontent.com/assets/10035308/12213379/4a0e517a-b634-11e5-98c4-91cc27549706.png)
 ***
-_The Nintendo Entertainment System (NES) is an 8-bit home video game console that was released by Nintendo in 1985. This console officially ended the video game crash of 1983-1984._
+_The Nintendo Entertainment System (NES) is an 8-bit home video game console that was released by Nintendo in 1985. This console officially ended the (video game crash of 1983-1984)(https://en.wikipedia.org/wiki/Video_game_crash_of_1983)._
 
 ***
 
