@@ -28,7 +28,7 @@ Place your Game Boy Color ROMs in
 
 ## BIOS
 
-lr-mgba can load external Game Boy Color and Super Game Boy BIOSes: **gbc_bios.bin**, **sgb_bios.bin**
+lr-mgba can load external BIOS for Game Boy Color (**gbc_bios.bin**) and Super Game Boy (**sgb_bios.bin**).
 
 Place these BIOS in
 ```
