@@ -14,7 +14,7 @@ _The Game Boy was released by Nintendo in 1989 thus kicking off the era of handh
 
 lr-gambatte is the prefered single-player emulator, while lr-tgbdual runs two instances of the same game for either two-player link cable games or parallel play on the same system.
 lr-gambatte supports playing link cable games over network (not to be mixed up with netplay).
-lr-mgba is a modern emulator that aims to be fast and accurate, supports local cable games, external BIOS, Super Game Boy emulation, among many other features. It also emulates Game Boy Color and Game Boy Advance.
+lr-mgba is a modern emulator that aims to be fast and accurate, supports local cable games, external BIOS, Super Game Boy emulation, among many other features. It also emulates [[Game Boy Color]] and [[Game Boy Advance]].
 
 ## ROMS
 
