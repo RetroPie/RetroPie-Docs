@@ -27,12 +27,16 @@ Place your Nintendo 64 ROMs in
 /home/pi/RetroPie/roms/n64
 ```
 
-## [Rom Compatibility List](https://docs.google.com/spreadsheets/d/1Wjzbu90l6eCEW1w6ar9NtfyDBQrSPILQL5MbRSpYSzw/edit?usp=sharing) feel free to contribute! (the file is locked :/)
+## Rom Compatibility Lists
 
-Secondary Rom Compatibility list with testing on Raspberry Pi 3 need to [merge 2 lists](https://docs.google.com/spreadsheets/d/1Sn3Ks3Xv8cIx3-LGCozVFF7wGLagpVG0csWybnwFHXk/edit). 
+[Rom Compatibility List](https://docs.google.com/spreadsheets/d/1Wjzbu90l6eCEW1w6ar9NtfyDBQrSPILQL5MbRSpYSzw/edit?usp=sharing) feel free to contribute! (the file is locked :/)
+
+[Secondary Rom Compatibility](https://docs.google.com/spreadsheets/d/1Sn3Ks3Xv8cIx3-LGCozVFF7wGLagpVG0csWybnwFHXk/edit) list with testing on Raspberry Pi 3 need to merge 2 lists. 
 
 
 Don't want to step on any toes and Credit to the author of the original list, but here is [another](https://docs.google.com/spreadsheets/d/1e9o3sNLKxlUBDDG6Sr0n6VBwAgwlFGPYr8Al46MdAqE/edit?usp=sharing). I just took the original sheet and did some formatting. Use the first tab for Comments and Suggestions. Just trying to help get this to one sheet.
+
+[Another list](https://docs.google.com/spreadsheets/d/12JtPecqKpCaU-3MawcVzrnHHiwLIkVT1K3I4Lf7o81o/) by Dan Kruse for an overclocked Pi 3, containing overclock specs, and status, best plugins, and notes for 294 games.
 
 
 ## Performance
