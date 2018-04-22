@@ -41,7 +41,7 @@ Then I type:
 ```
 RUN"CABAL
 ```
-if your keyboard can't seem to make the " then try holding shift and pressing the number 2 and it should type a quotation mark
+If your keyboard types `@` when you try to type `"`, then the Pi may be configured for the English (UK) keyboard layout, in which case you can type `"` by trying to type `@`.
 
 **QUICK START CONTROLS**
 ```
