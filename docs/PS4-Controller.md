@@ -11,7 +11,7 @@ There are a few ways to use the Dualshock 4 with the Raspberry Pi:
     All official PS4 controllers should be able to pair with the official Sony Dualshock 4 USB Wireless Adapter.
 
 * **Mayflash Magic-NS Wireless Adapter & Mayflash Magic-S Wireless Adapter**  
-    Both of these adapters by Mayflash are affordable and solid third-party wireless adapters that perform almost exactly the same as the official adapter with the added bonus of being able to use either for other types of controllers as well.
+    Both of these adapters by Mayflash are affordable and solid third-party wireless adapters that perform almost exactly the same as the official adapter with the added bonus of being able to use either for other types of controllers as well. However, their method of d-pad input does not work with PPSSPP for PSP emulation.
 
 * **Bluetooth**  
     If you wish to use either a USB Bluetooth adapter or the Pi 3's built-in Bluetooth then regular Bluetooth pairing in the menu may work, or you may need to use the userspace controller driver called `ds4drv`. It depends on your individual controller.
