@@ -14,7 +14,7 @@ A Raspberry Pi 2 or Raspberry Pi 3 is highly suggested.
 
 Overclocking is setting a hardware component to run faster than originally intended by the manufacturer. It can add instability if not done properly. It will also make your pi run hotter. There is are no standard settings for overclocking and not all pis will handle the same amount of overclocking. Therefore before you begin overclocking please review [this article](https://github.com/retropie/retropie-setup/wiki/Overclocking) first for proper overclocking methods and stability testing to prevent SD card corruption and potential loss of your data.
 
-For boosting N64 performance, ```gpu_freq``` and ```core_freq``` are the two settings that will give the most benefit to N64 performance. Most pis seem to be stable at ```gpu_freq=500``` and ```core_freq=550``` with some amount of ```over_voltage``` applied. Again it is important to remember that not all pis are equal, some will only overclock a little or not at all. If your pi freezes or crashes then your overclock is unstable. 
+For boosting N64 performance, ```gpu_freq``` and ```core_freq``` are the two settings that will give the most benefit. Most pis seem to be stable at ```gpu_freq=500``` and ```core_freq=550``` with some amount of ```over_voltage``` applied. Again it is important to remember that not all pis are equal, some will only overclock a little or not at all. If your pi freezes or crashes then your overclock is unstable. 
 
 ```arm_freq```(CPU) and ```sdram_freq```overclocking are of little to no help for boosting N64 performance on the pi. Though they may help increase performance for other high demand emulators such as PSX or MAME.
 
