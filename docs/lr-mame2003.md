@@ -1,7 +1,5 @@
 **Please check the [MAME documentation](../wiki/MAME) for for basic information about controls and managing ROMs - this page is for specific information about the mame2003 emulator's features.**
 
-> **WARNING:** As of 2016-05-03 (2016-05-05 for binary installs), the directory structure that lr-mame2003 uses has been updated to better match MAME norms. Thus, if you upgrade from a previous version, various directories will need moving/updating to ensure existing MAME configurations and save files are used. Please see [this github PR](https://github.com/libretro/mame2003-libretro/pull/29#issue-152552464) for full details on what has changed.
-
 lr-mame2003 is a popular choice for the Raspberry Pi 2 and up, as it combines a large romset (MAME 0.78) playing host to most 2D-era arcade games that people would be interested in, and a broad set of features. It also is still a relatively old MAME core, which is actually a good thing for lower-end hardware such as the Raspberry Pis, as later MAME cores feature increasingly accurate emulation which requires greater CPU power. Also, it is a libretro core, so enjoys all the benefits of that: centralised controller configurations, many customisation options, netplay, shader/overlay support, etc.
 
 ## MAME menu
@@ -39,14 +37,9 @@ Similarly to the [Service menu](#service-menu), many arcade games had hardware s
 
 ## High scores
 
-> **Note** As of January 29, 2017 it is no longer necessary to manually add `hiscore.dat` to your installation as it is automatically included by RetroPie-Setup
+lr-mame2003 will attempt to keep a permanent record of any high scores you set. A supplementary file called `hiscore.dat` used to be required for these ROMs to save scores. This file can be [downloaded from the MAME 2003 'metadata' repository](https://raw.githubusercontent.com/libretro/mame2003-libretro/master/metadata/). Today this file is built into mame2003 and the only reason to use the standalone `hiscore.dat` file is for development and experimentation.
 
-lr-mame2003 will attempt to keep a permanent record of any high scores you set, but some games will not save these by default. A supplementary file called `hiscore.dat` is required for these ROMs to save scores. This file can be [downloaded from the MAME 2003 'metadata' repository](https://raw.githubusercontent.com/libretro/mame2003-libretro/master/metadata/).
-Save and transfer 'hiscore.dat' to:
-```
-/home/pi/RetroPie/BIOS/mame2003/
-```
-When high scores are saved, they are kept in:
+When high scores are saved by the mame2003 hiscore engine, they are kept in:
 ```
 /home/pi/RetroPie/roms/mame-libretro/mame2003/hi/
 ```
@@ -57,20 +50,11 @@ or, if you're using the arcade folder:
 
 ## Cheats
 
-> **Note** As RetroPie 4.2 it is no longer necessary to manually add `cheat.dat` to your installation as it is automatically included by RetroPie-Setup.
-
-lr-mame2003 supports the MAME cheat engine, allowing you to use the 'TAB' menu to enable various in-game cheats. To active these, there is a supplementary file that you need to transfer to your Pi, called `cheat.dat`. This file can be downloaded from https://github.com/libretro/mame2003-libretro/tree/master/metadata. Place `cheat.dat` in:
+lr-mame2003 supports the MAME cheat engine, allowing you to use cheats bia the MAME menu by pressing `Tab`. To active these, there is a supplementary file that you need to transfer to your Pi, called `cheat.dat`. The RetroPie Setup script copies this file automatically to the correct location for you:
 ```
 /home/pi/RetroPie/BIOS/mame2003/
 ```
-Further to this, the 'enabled cheats' core option needs to be turned on via a setting in the `retroarch-core-options.cfg` file, found in:
-```
-/opt/retropie/configs/all/
-```
-The option is:
-```
-mame2003-cheats = "enabled"
-```
+
 
 ## Samples
 
