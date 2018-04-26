@@ -20,7 +20,7 @@ Overclocking ```sdram_freq``` will give a very small boost to performance.
 
 ```v3d_freq``` or ```gpu_freq``` can also be overclocked for a small boost in performance.
 
-```arm_freq```(CPU) overclocking is of little to no help for boosting N64 performance on the pi. Though they may help increase performance for other high demand emulators such as PSX or MAME.
+```arm_freq```(CPU) overclocking is of little to no help for boosting N64 performance on the pi. Though it may help increase performance for other high demand emulators such as PSX or MAME.
 ### CPU-Governor
 
 The CPU governor controls when your overclock is applied. With the cpu-governor set to performance mode your pi will run at full speed while running ROMs but will down-clock when sitting idle in Emulation Station. The CPU governor can be set to max performance mode in one of two ways.
