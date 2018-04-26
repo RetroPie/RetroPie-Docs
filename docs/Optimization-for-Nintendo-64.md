@@ -10,7 +10,7 @@ A Raspberry Pi 2 or Raspberry Pi 3 is highly suggested.
 
 ### Overclocking
 
-**Overclocking should only be attempted by advanced users who understand the risks. There is a possibility that your warranty will be voided. An unstable overclock will lead to freezing and instability. Proceed at your own risk!**
+**Overclocking should only be attempted by advanced users who understand the risks. There is a possibility that your warranty will be voided. An unstable overclock will lead to freezing, crashing and SD card corruption. Proceed at your own risk!**
 
 Overclocking is setting a hardware component to run faster than originally intended by the manufacturer. It can add instability if not done properly. It will also make your pi run hotter. There is are no standard settings for overclocking and not all pis will handle the same amount of overclocking. Therefore before you begin overclocking please review [this article](https://github.com/retropie/retropie-setup/wiki/Overclocking) first for proper overclocking methods and stability testing to prevent SD card corruption and potential loss of your data.
 
