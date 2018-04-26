@@ -1,84 +1,50 @@
-## Hardware and hardware setup. 
+## READ FIRST - Why N64 emulation on the Pi is not so great
 
-Nintendo 64 emulation requires at a bare minimum a Raspberry Pi 2 and a Raspberry  Pi 3 is highly suggested due to its increased performance. 
+N64 emulation on the raspberry pi is difficult due to the pi's under powered GPU (Graphics Processing Unit) and lack of certain GPU features found in more modern devices. For a more detailed explanation please see [this post](https://www.reddit.com/r/RetroPie/comments/6se5nj/why_n64_emulation_on_the_pi_isnt_so_great_from_a/) by a mupen64plus developer. 
 
-Suggested overclock for Raspi 3 for optimal N64 emulation (This to be paired with proper power, cooling, please see [this article](https://github.com/retropie/retropie-setup/wiki/Overclocking) for further information.)
+If you are looking for a more perfect N64 emulation experience you should seriously consider different hardware first (i.e. a desktop computer, modern mobile phone/tablet etc.). However, listed below are several tweaks that can be made to your raspberry pi that will help maximize N64 performance and make many of the popular N64 titles playable. 
 
-please note that these are just suggested settings, the manufacture of Pi's silicon can differ from unit to unit so while some have reported success with clock speeds above 1300 and v3d_freq up to 525 you may not be able to hit that stably.  Some trial and error is suggested.  
+## Hardware and Configuration 
 
-Raspberry Pi 3 Model B
-```
-#Overclock Settings
-arm_freq=1300
-gpu_freq=500
-sdram_freq=500
-over_voltage=6
-v3d_freq=525
-```
+A Raspberry Pi 2 or Raspberry Pi 3 is highly suggested. 
 
-Raspberry Pi 3 Model B+    (Highly Experimental) moderate overclock
-```
-#Overclock Settings
-arm_freq=1500
-gpu_freq=510
-sdram_freq=510
-over_voltage=6
-v3d_freq=550
-```
+### Overclocking
 
-Raspberry Pi 3 Model B+  
-Heavy Overclock settings only recommended for those who do not mind blowing warranty and have proper cooling. 
-```
-#Overclock Settings
-arm_freq=1525
-gpu_freq=510
-core_freq=510
-sdram_freq=510
-sdram_schmoo=0x02000020
-over_voltage=8
-sdram_over_voltage=3
-v3d_freq=550
-```
+**Overclocking should only be attempted by advanced users who understand the risks. There is a possibility that your warranty will be voided. An unstable overclock will lead to freezing and instability. Proceed at your own risk!**
 
-Of most important note of categories that most correctly benefit the Nintendo 64 is v3d_freq this is not a setting that when increased fails warranty or even really has a huge impact on heat but it has a great effect on higher performing emulators such as N64 and Dreamcast. 
+Overclocking is setting a hardware component to run faster than originally intended by the manufacturer. It can add instability if not done properly. It will also make your pi run hotter. There is are no standard settings for overclocking and not all pis will handle the same amount of overclocking. Therefore before you begin overclocking please review [this article](https://github.com/retropie/retropie-setup/wiki/Overclocking) first for proper overclocking methods and stability testing to prevent SD card corruption and potential loss of your data.
 
-Run Command  (rom compatibility lists are all in need of retesting with new hardware sets and updates to software)
-To learn the community tested optimal settings please view either of the 2 rom compatibility lists located [here](https://docs.google.com/spreadsheets/d/1Sn3Ks3Xv8cIx3-LGCozVFF7wGLagpVG0csWybnwFHXk/edit) or [here](
-https://docs.google.com/spreadsheets/d/1Wjzbu90l6eCEW1w6ar9NtfyDBQrSPILQL5MbRSpYSzw/edit?usp=sharing).
-Current Default Emulator is mupen64plus-auto  and default render should be 640x480
-This can be scaled up for some games that perform really well like Mario kart and Super Mario 64 at your own discretion. 
+For boosting N64 performance, ```gpu_freq``` and ```core_freq``` are the two settings that will give the most benefit to N64 performance. Most pis seem to be stable at ```gpu_freq=500``` and ```core_freq=550``` with some amount of ```over_voltage``` applied. Again it is important to remember that not all pis are equal, some will only overclock a little or not at all. If your pi freezes or crashes then your overclock is unstable. 
+
+```arm_freq```(CPU) and ```sdram_freq```overclocking are of little to no help for boosting N64 performance on the pi. Though they may help increase performance for other high demand emulators such as PSX or MAME.
+
+```v3d_freq``` is set by the ```gpu_freq``` setting so it does not need to be set separately. 
 
 
-## CPU-Governor
-The CPU governor can be throttled to max performance mode in one of two ways.
+### CPU-Governor
 
+The CPU governor controls when your overclock is applied. With the cpu-governor set to performance mode your pi will run at full speed while running ROMs but will down-clock when sitting idle in Emulation Station. The CPU governor can be set to max performance mode in one of two ways.
 ```
 echo "performance" |sudo tee /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
 ```
 Or you can enable it from Runcommand  Go to Retropie-Setup - Setup and Configuration to be used post install - Configure the runcommand launch script - cpu configuration force performance
-then cancel exit and reboot
+then cancel, exit and reboot.
 
+## Selecting the Correct Emulator and Graphics Plugin
 
+Just as important as overclocking, selecting the right emulator/graphics plugin from the [runcommand](https://github.com/RetroPie/RetroPie-Setup/wiki/runcommand) menu on a per game basis will also increase performance. Selecting the right plugin can make all the difference in making a game playable. 
 
+To learn the community tested optimal settings please view either of the two rom compatibility lists located [here](https://docs.google.com/spreadsheets/d/1Sn3Ks3Xv8cIx3-LGCozVFF7wGLagpVG0csWybnwFHXk/edit) or [here](
+https://docs.google.com/spreadsheets/d/1Wjzbu90l6eCEW1w6ar9NtfyDBQrSPILQL5MbRSpYSzw/edit?usp=sharing). (rom compatibility lists are all in need of retesting with new hardware sets and updates to software). Do not accept these lists as 100% accurate as they are community maintained and with updates may change over time. There may be some inaccuracies so it is best just to use the lists as a general starting point. Some games listed as playable have with recent updates become playable and vice versa. The current default emulator is mupen64plus-auto which will attempt to select the correct graphics plugin for you, however for best results it is best to test each plugin for yourself on a per game basis. It is recommended that you confirm a game runs well with the standard low-res plugin before attempting to use the hi-res option. 
 
-## Enabling Frame Skip
-modify your mupen64plus.cfg file to enable frame skipping
+Each plugin should be set to the lowest resolution (CEA-1) through the runcommand menu. This will slightly increase performance. This can be scaled up for some games that perform really well like Mario kart and Super Mario 64 at your own discretion. 
 
-`sudo nano -w /opt/retropie/configs/n64/mupen64plus.cfg`
-
-Edit the variable below from false to True
-
-`SkipFrame=True`
-
-Test your game with it by ensuring that when the game launches you press any button and select the emulator for the rom to gles-rice 
-
-Essentially this forces the game to skip every other frame while it hurts perfect emulation it can be a big help to unplayable games to almost playable.  In example modifying this variable doubles the framerate in Crusin USA from 10 to 20  and the game goes from abysmal to slightly playable. 
 
 
 ## Notes on Audio
-Audio
+The SDL audio plugin produces less audio drop out during lag and makes for an improved experience over the the OMX audio plugin. Previously, the SDL audio produced an audio crackling that was undesirable. With recent updates the audio crackle has been fixed so it is now fine to use SDL audio. To switch to the SDL audio plugin you should first update your mupen64plus emulator to the latest binary version. Then navigate to: ```/opt/retropie/configs/all/autoconf.cfg``` and make sure that ```mupen64plus_audio = "0"```
 
-Use HDMI as composite requires more CPU usage.
+As a side benefit from using SDL audio, save/load states will now function properly with mupen64plus.
 
 ## High Resolution Texture Packs
 
@@ -142,7 +108,7 @@ To get the texture pack to load from emulation station you must do the following
 Launch Retropie Setup
 Update Retropie Setup Script
 Go to Manage Packages 
-update the mupen64plus package  (I Suggest installing from source)
+update the mupen64plus package  (I suggest installing from source)
 
 Go to launch one of the N64 games you have uploaded a high resolution texture pack for. 
 Launch that game
@@ -157,38 +123,6 @@ Then hit launch
 Please also feel free to reference the Rice 64 github page for the source documentation 
 https://github.com/mupen64plus/mupen64plus-video-rice
 
-
-
-
-
-
-
-
-Quality of Roms
-There is a definite difference in some roms.  There are multiple versions of the SOTE rom some of which have noticeable stuttering and seizure screens but there are clean versions which play without the buggy effects.  I believe some of this could be due to the core name in the rom header not correctly matching what is in the .ini files for different plugins which apply different effects per game or could be as simple as bad rips which were never noticed on more powerful hardware. 
-
-
-
-## Optimizations to mupen64plus.cfg
-
-These are all experimental settings I am playing with
-
-Glide
-
-```
-# Size of texture cache in megabytes. Good value is VRAM*3/4
-CacheSize = 900
-
-# Enable N64 depth compare instead of OpenGL standard one. Experimental.
-EnableN64DepthCompare = True
-
-# Allow to use alpha channel of high-res texture fully.
-txHiresFullAlphaChannel = True
-
-# Save texture cache to hard disk.
-txSaveCache = True
-# This is currently set to True Investigating if setting to false will overload ram or not If texture cache is 500 by default is there enough overhead on ram to go with this setting.   
-```
 
 
 
