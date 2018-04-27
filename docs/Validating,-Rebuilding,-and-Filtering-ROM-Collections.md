@@ -82,9 +82,9 @@ Before manipulating arcade ROMs, please be sure you are familiar with their uniq
 
 In addition to having a version number, arcade ROMs can be formatted four ways:
 
-- **Non-merged ROM**: All ROMs can be used standalone because each zip contains all the files needed to run that game, including any files from 'parent ROMs'. The only exception are BIOS ROMs, which are formatted as 'Split' and must be kept in the same folder as the ROM set which uses it. **Non-Merged ROM sets are the recommended format for RetroPie arcade emulators.**
-- **Full Non-merged**: All ROMs can be used standalone because each zip contains all the files needed to run that game, including any ROMs from 'parent' ROM sets and BIOS sets. (ClrMamePro users: access through the "Advanced" button in the Rebuild and Scanner menus, then deselect "Separate BIOS sets".)
-- **Split**: Some ROMS that are considered clones, translations, or bootlegs also require a "parent ROM" to run. The parent ROM is often the first or most common variant of a game. In some cases the parent is not the most popular or best working version of the game, however. For example, in a Split set pacman.zip (a clone), will not work without puckman.zip (its parent).
+- **Full Non-merged**: All ROM sets can be used standalone because each zip contains all the files needed to run that game, including any ROMs from 'parent' ROM sets and BIOS sets. (ClrMamePro users: access through the "Advanced" button in the Rebuild and Scanner menus, then deselect "Separate BIOS sets".) **Full non-Merged ROM sets are the recommended format for RetroPie arcade emulators.**
+- **Non-merged ROM**: All ROM sets can be used standalone because each zip contains all the files needed to run that game, including any files from 'parent romsets'. The only exceptions are games which use BIOS ROMs, which are formatted as 'Split' and must be kept in the same folder as the game ROM set which uses it.
+- **Split**: Some ROM sets that are considered clones, translations, or bootlegs also require a "parent" ROM set to run. The parent is often the first or most common variant of a game. In some cases the parent is not the most popular or best working version of the game, however. For example, in a Split set pacman.zip (a clone), will not work without puckman.zip (its parent).
 - **Merged**: Clones are merged into the parent ROM zip, meaning that more than one game is stored per file. Merged ROM sets are not recommended.
 
 ***
