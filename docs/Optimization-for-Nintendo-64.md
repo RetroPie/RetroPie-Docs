@@ -12,22 +12,22 @@ A Raspberry Pi 2 or Raspberry Pi 3 is highly suggested.
 
 **Overclocking should only be attempted by advanced users who understand the risks. There is a possibility that your warranty will be voided. An unstable overclock will lead to freezing, crashing and SD card corruption. Proceed at your own risk!**
 
-Overclocking is setting a hardware component to run faster than originally intended by the manufacturer. It can add instability if not done properly. It will also make your pi run hotter. There is are no standard settings for overclocking and not all pis will handle the same amount of overclocking. Therefore before you begin overclocking please review [this article](https://github.com/retropie/retropie-setup/wiki/Overclocking) first for proper overclocking methods and stability testing to prevent SD card corruption and potential loss of your data.
+Overclocking is setting a hardware component to run faster than originally intended by the manufacturer. It can add instability if not done properly. It will also make your pi run hotter. There are no standard settings for overclocking and not all pis will handle the same amount of overclocking. Therefore before you begin overclocking please review [this article](https://github.com/retropie/retropie-setup/wiki/Overclocking) first for proper overclocking methods and stability testing to prevent SD card corruption and potential loss of your data.
 
-For boosting N64 performance, ```core_freq``` (this is the GPU core frequency setting) is the setting that will give the most benefit. Most pis seem to be stable at ```core_freq=550``` with some amount of ```over_voltage``` applied. Again it is important to remember that not all pis are equal, some will only overclock a little or not at all. You will need to experiment to see how much your pi can handle. If your pi freezes or crashes then your overclock is unstable. 
+For boosting N64 performance, it is the```core_freq```(GPU core) setting that will give the most benefit not the ```v3d_freq```. Most pis seem to be stable at ```core_freq=550``` with some amount of ```over_voltage``` applied. Again, it is important to remember that not all pis are equal, some will only overclock a little or not at all. You will need to experiment to see how much your pi can handle. If your pi freezes or crashes then your overclock is unstable. 
 
-Overclocking ```sdram_freq``` will give a very small boost to performance.
+Overclocking ```sdram_freq``` will give a very small boost to performance. Going from 450mhz to 550mhz yielded at best about a 1FPS increase. Sdram has its own over voltage value ```over_voltage_sdram```.  You may also need to add ```sdram_schmoo=0x02000020```to your config.txt. This is a set of timings that can help add stability if your sdram is overclocked.
 
-```v3d_freq``` or ```gpu_freq``` can also be overclocked for a small boost in performance.
+```v3d_freq``` or ```gpu_freq``` can also be overclocked for possibly a small boost in performance. 
 
-```arm_freq```(CPU) overclocking is of little to no help for boosting N64 performance on the pi. Though it may help increase performance for other high demand emulators such as PSX or MAME.
+```arm_freq```(CPU) overclocking is of little to no help for boosting N64 performance on the pi. There was no discernible FPS increase overclocking from the Pi3's stock ARM speed of 1200mhz to 1350mhz. Though it may help increase performance for other high demand emulators such as PSX or MAME.
 ### CPU-Governor
 
 The CPU governor controls when your overclock is applied. With the cpu-governor set to performance mode your pi will run at full speed while running ROMs but will down-clock when sitting idle in Emulation Station. The CPU governor can be set to max performance mode in one of two ways.
 ```
 echo "performance" |sudo tee /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
 ```
-Or you can enable it from Runcommand  Go to Retropie-Setup - Setup and Configuration to be used post install - Configure the runcommand launch script - cpu configuration force performance
+Or you can enable it from the retropie setup menu. In Emulation Station go to Retropie-Setup - Setup and Configuration to be used post install - Configure the runcommand launch script - cpu configuration - force performance
 then cancel, exit and reboot.
 
 ## Selecting the Correct Emulator and Graphics Plugin
@@ -37,12 +37,12 @@ Just as important as overclocking, selecting the right emulator/graphics plugin 
 To learn the community tested optimal settings please view either of the two rom compatibility lists located [here](https://docs.google.com/spreadsheets/d/1Sn3Ks3Xv8cIx3-LGCozVFF7wGLagpVG0csWybnwFHXk/edit) or [here](
 https://docs.google.com/spreadsheets/d/1Wjzbu90l6eCEW1w6ar9NtfyDBQrSPILQL5MbRSpYSzw/edit?usp=sharing). (rom compatibility lists are a mess and all are in need of retesting). Do not accept these lists as 100% accurate as they are community maintained and with updates may change over time. There may be some inaccuracies so it is best just to use the lists as a general starting point. Some games listed as unplayable have with recent updates become playable and vice versa. The current default emulator is mupen64plus-auto which will attempt to select the correct graphics plugin for you, however for best results it is best to test each plugin for yourself on a per game basis. It is recommended that you confirm a game runs well with the standard low-res plugin before attempting to use the hi-res option. 
 
-Each plugin should be set to the lowest resolution (CEA-1) through the runcommand menu. This will slightly increase performance. This can be scaled up for some games that perform really well like Mario kart and Super Mario 64 at your own discretion. 
+Each emulator/plugin should be set to the lowest resolution (CEA-1 for most displays) through the runcommand menu. This will slightly increase performance by limiting the up-scaling.
 
 
 
 ## Notes on Audio
-The SDL audio plugin produces less audio drop out during lag and makes for an improved experience over the the OMX audio plugin. Previously, the SDL audio produced an audio crackling that was undesirable. With recent updates the audio crackle has been fixed so it is now fine to use SDL audio. To switch to the SDL audio plugin you should first update your mupen64plus emulator to the latest binary version. Then navigate to: ```/opt/retropie/configs/all/autoconf.cfg``` and make sure that ```mupen64plus_audio = "0"```
+The SDL audio plugin produces less audio drop out during lag and makes for an improved experience over the OMX audio plugin. Previously, the SDL audio plugin produced an audio crackling that was undesirable. With recent updates the audio crackle has been fixed so it is now fine to use SDL audio. To switch to the SDL audio plugin you should first update your mupen64plus emulator to the latest binary version. Then navigate to: ```/opt/retropie/configs/all/autoconf.cfg``` and make sure that ```mupen64plus_audio = "0"```
 
 As a side benefit from using SDL audio, save/load states will now function properly with mupen64plus.
 
