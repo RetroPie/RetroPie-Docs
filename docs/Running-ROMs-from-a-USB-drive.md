@@ -39,9 +39,9 @@ After formatting your USB based on the above step:
 ### Disable USB transfer daemon
 
 1. Enter the **RetroPie Setup** menu within the **RetroPie** menu in [EmulationStation](EmulationStation).
-2. Select **Setup / Tools**.
+2. Select **Configuration / Tools**.
 3. Select **usbromservice - USB ROM Service**
-4. **Disable USB ROM Service**.
+4. **Disable USB ROM Service scripts**.
 
 ### Plug in USB drive
 This can be done when the system is powered on.
