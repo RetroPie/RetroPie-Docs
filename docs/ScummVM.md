@@ -13,7 +13,7 @@ _ScummVM stands for Script Creation Utility for Maniac Mansion (VM stands for vi
 ## ROMS
 Accepted File Extensions: This is a tricky question as ScummVM has it's own particular filesets and method of loading- but when all is said and done **.sh .svm** are the filetypes EmulationStation will read.
 
-ScummVM is much different than most romsets in that there are a set of files for each game. 
+ScummVM is very different to most romsets in that there are a set of files for each game. 
 
 See the list here: http://wiki.scummvm.org/index.php/Datafiles
 
