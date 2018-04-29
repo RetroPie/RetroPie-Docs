@@ -9,7 +9,7 @@ _Wolfenstein 3D is a first-person shooter video game developed by id Software an
 
 ## Port: [Wolf4SDL](https://github.com/mozzwald/wolf4sdl)
 
-Wolf4SDL can be installed from the experimental menu of the RetroPie setup script. By default, shareware version 1.4 of Wolfenstein 3D will be installed.
+Wolf4SDL can be installed from the optional menu of the RetroPie setup script. By default, shareware version 1.4 of Wolfenstein 3D will be installed.
 
 ## Playing Full Version of Wolfenstein 3D
 
@@ -23,25 +23,6 @@ The file names must be in lower case. The simplest way to do this is to run the 
 
     cd RetroPie/roms/ports/wolf3d
     rename 'y/A-Z/a-z/' *
-
-Wolf4SDL creates separate binaries for each version of game data. You need to select the correct binary for your game data. 
-
-Launch Wolfenstein 3D script from the Ports section of EmulationStation. Bring up the [runcommand menu](https://github.com/RetroPie/RetroPie-Setup/wiki/runcommand) by pressing any key or js0 on your gamepad. Now select from the menu
-> 2 - Select emulator for rom ().
-
-You will be presented with the following screen:
-
-![](https://a123516c-a-62cb3a1a-s-sites.googlegroups.com/site/dosonthepi/wolf4sdl-rom-selection.png?attachauth=ANoY7cosBgHONtrzOQX3viZ--s0TrNsppucBOMmm7TIzEKVT4cPhJnTaLy0RO_FiuUbnGnUjfdsXiLg01-LDLslLMQl-ODbePEOKALnniWFphrKcBHW_I6zxQqMoDkfxoQ3psCobXd8i6HtRscADiMm2bNAQ3qgpHnXRJCLNk4StHxLglEnFkNu4FGpZ_oHPWZwCCCMwNDZmydodoIsa-orPPmwJU2B-kFClF1DQsmCNtWcAqUAC2Kg%3D&attredirects=0)
-
-The default is **wolf4sdl-sw-v14**, the shareware 1.4 version.
-
-If you have the **3D Realms** version, then select the **wolf4sdl-3dr-v14** binary.
-
-If you have the **Steam** version, the select the **wolf4sdl-gt-v14** binary.
-
-If you would like to play **Spear of Destiny**, then select **wolf4sdl-spear-v14**.
-
-Once you have made your selection, exit the menu and then launch rom from the runcommand menu.
 
 ## Troubleshooting
 
