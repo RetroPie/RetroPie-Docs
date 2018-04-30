@@ -19,11 +19,6 @@ The game data required are the files with *.wl6 extension (see below for list). 
 
 > /home/pi//RetroPie/roms/ports/wolf3d
 
-The file names must be in lower case. The simplest way to do this is to run the following commands:
-
-    cd RetroPie/roms/ports/wolf3d
-    rename 'y/A-Z/a-z/' *
-
 ## Troubleshooting
 
 If you are getting NO WOLFENSTEIN 3-D DATA FILES to be found! or NUMCHUNKS errors or you are not sure which version of game data you have, then check your game data by finding the md5 checksums. To do this, once you have placed your game data in the rom folder and made sure the file names are lower case, run the following commands:
