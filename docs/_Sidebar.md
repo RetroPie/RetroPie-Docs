@@ -136,6 +136,7 @@
 * [OSMC](OSMC)
 * [Favorites and Child-friendly EmulationStation](Child-friendly-EmulationStation)
 * [Optimization for Nintendo 64](Optimization-for-Nintendo-64)
+* [PSP Compatibility List for Overclockers](https://github.com/RetroPie/RetroPie-Setup/wiki/PSP-Compatibility-List)
 * [[Running ROMs from a USB drive]]
 * [[Running ROMs from a Network Share]]
 * [Smaller RetroArch Screen](Smaller-RetroArch-Screen)
