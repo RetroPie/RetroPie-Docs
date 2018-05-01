@@ -8,10 +8,10 @@ What this article intends to do is inform you which games can be played through 
 
 ## Contents
 
-1. [Testing Method]()
-2. [Legend]()
-3. [PSP Compatibility List - Overclocked Raspberry Pi 3B - PPSSPP]()
-4. [WiP - PSP Compatibility List - Overclocked Raspberry Pi 3B+ - PPSSPP]()
+1. [Testing Method](https://github.com/RetroPie/RetroPie-Setup/wiki/PSP-Compatibility-List#testing-method)
+2. [Legend](https://github.com/RetroPie/RetroPie-Setup/wiki/PSP-Compatibility-List#legend)
+3. [PSP Compatibility List - Overclocked Raspberry Pi 3B - PPSSPP](https://github.com/RetroPie/RetroPie-Setup/wiki/PSP-Compatibility-List#psp-compatibility-list---overclocked-raspberry-pi-3b---ppsspp)
+4. [WiP - PSP Compatibility List - Overclocked Raspberry Pi 3B+ - PPSSPP](https://github.com/RetroPie/RetroPie-Setup/wiki/PSP-Compatibility-List#wip---psp-compatibility-list---overclocked-raspberry-pi-3b---ppsspp)
 
 ## Testing Method
 
