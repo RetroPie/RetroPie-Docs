@@ -39,7 +39,7 @@ https://docs.google.com/spreadsheets/d/1Wjzbu90l6eCEW1w6ar9NtfyDBQrSPILQL5MbRSpY
 
 Each emulator/plugin should be set to the lowest resolution (CEA-1 for most displays) through the runcommand menu. This will slightly increase performance by limiting the up-scaling.
 
-*NOTE* The glide plugin currently has a bug that causes visual glitches which lead to a crash after about 10-20 mins of playtime. Until the problem is resolved make use of save states so you dont lose your progress or use an alternate plugin.
+**NOTE** The glide plugin currently has a bug that causes visual glitches which lead to a crash after about 10-20 mins of playtime. Until the problem is resolved make use of save states so you dont lose your progress or use an alternate plugin.
 
 
 ## Notes on Audio
