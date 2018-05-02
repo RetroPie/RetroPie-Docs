@@ -22,7 +22,7 @@ Place your PSP ROMs in
 ```
 #### [**PSP COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1V-MEx1tOXqCcJL1fQzGh9xLHny-qL-PSWqvY7F80Y90/edit?usp=sharing) feel free to contribute!
 
-#### [PSP Compatibility List - Overclocked Hardware Edition](https://github.com/RetroPie/RetroPie-Setup/wiki/PSP-Compatibility-List) - Pi 3B+ Testing Needed
+#### [PSP Compatibility List - Overclocked Pi 3B](https://docs.google.com/spreadsheets/d/1BXWzTOV2nHBMg--r4x80xH6A25w2NDbb1LQSY5rLRXs/edit?usp=sharing) feel free to contribute as well.
 This is mostly a selection of PSP games that were tested against an overclocked Raspberry Pi 3B. Upsides of this list over the other are you'll have an easy list of 51 games to look through that will without a doubt run well on your hardware if you are overclocking near or exceeding the provided overclock example and will also know not to bother with a little over 100 other games that will not run well.
 
 ## Controls
