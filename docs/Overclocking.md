@@ -175,8 +175,8 @@ arm_freq=1000
 The following speed parameters can be set:
 
 * `arm_freq` - speed of the ARM core
-* `core_freq` - speed of GPU processor core, keep it the same as `gpu_freq`
-* `gpu_freq` - speed of all GPU components, keep it the same as `core_freq`
+* `core_freq` - speed of GPU processor core
+* `gpu_freq` - speed of all GPU components
 * `sdram_freq` - speed of SDRAM
 * `sdram_schmoo` - a set of SDRAM timings
 
@@ -191,9 +191,7 @@ To set voltage greater than `6` you must set `force_turbo=1` which voids the war
 
 #### Other Parameters
 
-There is a complex mathematical relationship between the clocks for the GPU core and the individual GPU components. Setting these without understanding their relationship may result in running a component faster or slower than intended.
-
-You are better to just set `core_freq` and `gpu_freq` to the same thing and don't worry about it. The individual components only get faster when they are used anyway.
+There is a complex mathematical relationship between the clocks for the GPU core and the individual GPU components. Setting these without understanding their relationship may result in running a component faster or slower than intended. You are better to just set `core_freq` and `gpu_freq` to the same thing and don't worry about it. The individual components only get faster when they are used anyway. *Note* This section no longer applies. Currently the GPU core and individual GPU components do not have need to have related PLLs.
 
 By setting `avoid_pwm_pll=1` (which negatively affects 3.5mm audio quality) you can overclock the individual GPU components with the parameters:
 
