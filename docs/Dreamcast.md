@@ -6,7 +6,7 @@ _The Sega Dreamcast is a 6th generation home video game console released by Sega
 
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
-| [Reicast](https://github.com/reicast/reicast-emulator) | dreamcast  | .cdi .gdi | dc_boot.bin, dc_flash.bin | /opt/retropie/configs/dreamcast/mappings |
+| [Reicast](https://github.com/reicast/reicast-emulator) | dreamcast  | .cdi .chd .gdi | dc_boot.bin, dc_flash.bin | /opt/retropie/configs/dreamcast/mappings |
 
 ## Emulator: [Reicast](https://github.com/reicast/reicast-emulator) 
 
@@ -16,7 +16,7 @@ Audio is choppy and not great, and degrades the longer the emulator is in use.  
 
 ## ROMS
 
-Accepted File Extensions: **.cdi .gdi** 
+Accepted File Extensions: **.cdi .chd .gdi** 
 
 Place your Dreamcast ROMs in
 ```
@@ -24,6 +24,12 @@ Place your Dreamcast ROMs in
 ```
 
 [**DREAMCAST COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1AD91IcudqHP7dDmEXLO25Pzb85uUgAy4chU2QxlZBQk/edit?usp=sharing) feel free to contribute to the list.
+
+## CHD Archive Usage
+
+Reicast has support for the CHD format, but its support is currently only for CHD V4 of the archive format. The problem with CHD V4 is that its compression for ".gdi" is not lossless, which is what CHDMAN V5 addressed.
+
+If you don't mind the data being altered (the alteration appears to be harmless outside of losing their release scene verification), then all you need to do is have your Dreamcast GDI games (uncompress them if they are in the ".rar", ".7z", or ".zip" archive formats) in individual folders within a folder, download [THIS](https://drive.google.com/file/d/1cBtH3lI--VXtTyJ6k-q1yE7DmOYG333v/view?usp=sharing) archive containing "Dreamcast GDI to CHD", run Dreamcast GDI to CHD.exe to select a game folder as a source and destination wherever you want, then repeat the process for every GDI game you want in the CHD format.
 
 ## BIOS
 
