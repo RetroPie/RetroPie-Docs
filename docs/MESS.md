@@ -52,13 +52,13 @@ Go to your roms directory, wherever you have it (default: `/home/pi/RetroPie/rom
 
 For example, if you wanted to run the Donkey Kong Colecovision rom (dkong.zip) through lr-mess, you would place your files like this:
 ````
-Main rom directory (/home/pi/RetroPie/roms)
+/home/pi/RetroPie/roms: Main rom directory
 |
-+- Coleco Driver BIOS zip: coleco.zip (/home/pi/RetroPie/roms/coleco.zip)
++- coleco.zip: Coleco Driver BIOS zip (/home/pi/RetroPie/roms/coleco.zip)
 |
-+- coleco (/home/pi/RetroPie/roms/coleco)
-|
-+- dkong.zip (/home/pi/RetroPie/roms/coleco/dkong.zip)
++- /home/pi/RetroPie/roms/coleco
+       |
+       +- dkong.zip (/home/pi/RetroPie/roms/coleco/dkong.zip)
 ````
 
 If the driver you wish to use does not require a ROM, you do not need to put one into your roms directory.
