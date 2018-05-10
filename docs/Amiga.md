@@ -10,6 +10,7 @@ _The Amiga was a family of personal computers released by Commodore in the 1980'
 | :---: | :---: | :---: | :---: | :---: |
 | [UAE4ALL2](https://github.com/RetroPie/uae4all2) | amiga  | .adf | kick13.rom, kick20.rom, kick31.rom | Hardcoded |
 | [UAE4ARM](https://github.com/Chips-fr/uae4arm-rpi/) | amiga  | .zip .adf .dms .exe .adz .rp9 | kick13.rom, kick20.rom, kick31.rom | Hardcoded |
+| [lr-puae](https://github.com/libretro/libretro-uae) | amiga | .zip .uae | kick13.rom, kick20.rom, kick31.rom | /opt/retropie/configs/amiga/retroarch.cfg |
 
 ## Emulators: [UAE4ALL2](https://github.com/RetroPie/uae4all2), [UAE4ARM](https://github.com/Chips-fr/uae4arm-rpi/)
 
@@ -115,3 +116,65 @@ Note: The old script from Mark Dunning has a problem with games with more than 9
 
 Alternatively, a native BASH script to perform the same steps directly on the RetroPie machine can be found here:
 https://github.com/Douggernaut/RetroPieAssistant/tree/master/Amiga
+
+## Emulator: [lr-puae](https://github.com/libretro/libretro-uae)
+
+lr-puae is an experimental emulator.  It can be installed from the experimental section of the [RetroPie-Setup Script.](https://github.com/RetroPie/RetroPie-Setup/wiki/Updating-RetroPie#using-the-retropie-setup-script)
+
+## ROMS
+
+Accepted File Extensions: **.zip .uae**
+
+Place your Amiga ROMs and configuration files in 
+```
+/home/pi/RetroPie/roms/amiga
+```
+
+lr-puae requires the user to create .uae files manually, pointing to the ADF and Kickstart ROM like this:
+```shell
+kickstart_rom_file=/home/pi/RetroPie/BIOS/[insert kickstart ROM filename here]
+floppy0=/home/pi/RetroPie/roms/amiga/[insert ADF filename here]
+```
+
+Below is a sample to use as a template for creating your own .uae file:
+```ini
+kickstart_rom_file=/home/pi/RetroPie/BIOS/kick31.rom
+chipmem_size=1
+bogomem_size=2
+use_gui=no
+nr_floppies=2
+cpu_type=68000
+cpu_speed=real
+cpu_compatible=true
+ntsc=false
+chipset=ocs
+immediate_blits=false
+gfx_linemode=double
+gfx_framerate=1
+sound_output=normal
+sound_frequency=44100
+sound_channels=mixed
+sound_interpol=none
+show_leds=true
+floppy_speed=100
+gfx_center_vertical=smart
+gfx_center_horizontal=smart
+gfx_color_mode=16
+floppy0=/home/pi/RetroPie/roms/amiga/Rick Dangerous.adf
+```
+## BIOS
+
+Place your desired Kickstart ROM in:
+```shell
+/home/pi/RetroPie/BIOS/
+```
+
+## Controls
+
+lr-puae utilizes Retroarch configurations
+
+Add custom retroarch controls to the retroarch.cfg file in
+```shell
+/opt/retropie/configs/amiga/retroarch.cfg
+```
+For more information on custom RetroArch controls see: [RetroArch Configuration](RetroArch-Configuration)
