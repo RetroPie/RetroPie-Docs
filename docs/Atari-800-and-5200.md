@@ -6,9 +6,10 @@ _Atari released a series of 8 bit computers (400, 800, 1200XL, 600XL, 800XL, 130
 
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
-| [Atari800](https://atari800.github.io/)  | atari800 **or** atari5200  | .a52 .bas .bin .car .xex .atr .xfd .dcm .atr.gz .xfd.gz | ATARIXL.ROM **and** ATARIBAS.ROM **and** ATARIOSA.ROM **and** ATARIOSB.ROM **and** 5200.rom | /opt/retropie/configs/atari800/atari800.cfg or /opt/retropie/configs/atari800.cfg on older releases|
+| [Atari800](https://atari800.github.io/)  | atari800 **or** atari5200  | .a52 .atr .bas .bin .car .dcm .xex .xfd .atr.gz .xfd.gz | ATARIXL.ROM **and** ATARIBAS.ROM **and** ATARIOSA.ROM **and** ATARIOSB.ROM **and** 5200.rom | /opt/retropie/configs/atari800/atari800.cfg or /opt/retropie/configs/atari800.cfg on older releases|
+| [lr-atari800](https://github.com/libretro/libretro-atari800)  | atari800 **or** atari5200  | .7z .a52 .atr .bas .bin .car .dcm .xex .xfd .zip .atr.gz .xfd.gz | ATARIXL.ROM **and** ATARIBAS.ROM **and** ATARIOSA.ROM **and** ATARIOSB.ROM **and** 5200.rom | /opt/retropie/configs/atari5200/retroarch.cfg |
 
-## Emulator: [Atari800](https://atari800.github.io/) 
+## Emulator: [Atari800](https://atari800.github.io/)
 This emulator emulates the Atari 8 bit family: 400, 800, 1200XL, 600XL, 800XL, 130XE, XEGS and the Atari 5200. This one of the more tricky emulators to get set up as it requires a multiplicity of BIOS files and configurations depending on what systems you want to utilise but it seems to run Atari 5200 games pretty well.
 ## ROMS
 Accepted File Extensions: **.a52 .bas .bin .car .xex .atr .xfd .dcm .atr.gz .xfd.gz**
