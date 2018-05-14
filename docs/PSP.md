@@ -11,7 +11,7 @@ _The PlayStation Portable or PSP is a handheld video game system released by Son
 | [lr-ppsspp](https://github.com/libretro/libretro-ppsspp) | psp  | .cso .iso .pbp | none | /opt/retropie/configs/psp/retroarch.cfg |
 
 ## Emulators: [lr-ppsspp](https://github.com/libretro/libretro-ppsspp), [ppsspp](https://github.com/hrydgard/ppsspp)
-Not available for the Raspberry Pi 1. Lr-ppsspp has the convenience of retroarch controller configs, but standalone ppsspp has the best performance and compatibility.
+Not available for the Raspberry Pi 1. lr-ppsspp has the convenience of retroarch controller configs, but standalone ppsspp has the best performance and compatibility.
 
 ## ROMS
 Accepted File Extensions: **.cso .iso .pbp**
@@ -24,9 +24,7 @@ Place your PSP ROMs in
 
 #### [PSP Compatibility List - Overclocked Pi 3B](https://docs.google.com/spreadsheets/d/1BXWzTOV2nHBMg--r4x80xH6A25w2NDbb1LQSY5rLRXs/edit?usp=sharing) feel free to contribute as well.
 
-This is mostly a selection of PSP games that were tested against an overclocked Raspberry Pi 3B paired with the setting suggestions for PPSSPP in the Enhancement section below, having the CPU-Governor set to Force Performance, and using ISOs instead of CSOs to avoid wasting processing power on compression. Upsides of this list over the other are you'll have an easy list of games to look through that will without a doubt run well on your hardware if you are overclocking near or exceeding the provided overclock example and will also know not to bother with other games that will not run well.
-
-**Upon further investigation, this spreadsheet is flawed due to its use of the Enhancements section's setting changes below (mostly the "Buffered rendering" change). Use it with a grain of salt and suspect all titles marked as "Good" used "Buffered rendering" and happened to work well with it, while any marked as bad or noted with emulation errors to be ones that didn't work well with "Buffered rendering".**
+>This is mostly a selection of PSP games that were tested against an overclocked Raspberry Pi 3B paired with the setting suggestions for PPSSPP in the Enhancement section below, having the CPU-Governor set to Force Performance, and using ISOs instead of CSOs to avoid wasting processing power on compression. 
 
 ## Controls
 
@@ -57,4 +55,4 @@ From the [RetroPie Subreddit](https://www.reddit.com/r/RetroPie/comments/5jieuu/
 >
 > Then you want to goto the audio menu and set Audio Latency to high.
 
-**Upon investigation of these *enhancements* for ppsspp, it has become clear that they will cause numerous games to no longer render properly due to the renderer being changed to "Buffered rendering" because of the "Auto frameskip" being turned on. The games that "Buffered rendering" does work well in will be smoother at the cost of additional processing power that may result in game performance loss.**
+**This will cause numerous games to no longer render properly due to the renderer being changed to "Buffered rendering" because of the "Auto frameskip" being turned on. "Frameskip" in general can cause black frames depending on if the chosen game runs at an odd or even framerate and the accompanying frameskip isn't set to a matching odd or even number.**
