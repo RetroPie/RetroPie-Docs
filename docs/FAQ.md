@@ -184,7 +184,7 @@ Hotkeys are combinations of buttons you can press in order to access options suc
 #### Default joypad hotkeys:
 
 Hotkeys | Action | Code Example
-| :---: | :---: | :---: |
+:---: | :---: | :---: 
 Select | Hotkey | input_enable_hotkey = "6"
 Select+Start | Exit | input_exit_emulator_btn = "7"
 Select+Right Shoulder | Save | input_save_state_btn = "5"
@@ -202,7 +202,7 @@ You can change it per controller with your autoconfig file here
 /opt/retropie/configs/all/retroarch-joypads/yourgamepad.cfg
 ```
 
-You can Hardcode it globally for all systems here:
+You can hardcode it globally for all systems here:
 
 ```
 /opt/retropie/configs/all/retroarch.cfg 
