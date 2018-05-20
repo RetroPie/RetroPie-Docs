@@ -43,7 +43,7 @@ cheevos_leaderboards_enable = true
 * Atari 2600
 * Atari Lynx
 * PC Engine
-* Arcade (Neo Geo, CPS1, CPS2 and CPS3)
+* Arcade (Neo Geo, CPS1, CPS2 and CPS3) - *only with fbalpha core*.
 
 A libretro core compatibility list with RetroAchievements can be found in [libretro docs](https://docs.libretro.com/guides/retroachievements/).
 
