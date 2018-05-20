@@ -30,18 +30,20 @@ cheevos_leaderboards_enable = true
 
 * NES
 * SNES
-* Mega Drive / Genesis
 * Game Boy
 * Game Boy Color
 * Game Boy Advance
-* PC Engine
-* Master System
 * Nintendo 64
-* Atari Lynx
+* Nintendo Virtual Boy
+* Mega Drive / Genesis
+* Master System
+* Game Gear
 * Neo Geo Pocket
 * Neo Geo Pocket Color
 * Atari 2600
-* Nintendo Virtual Boy
+* Atari Lynx
+* PC Engine
+* Arcade (Neo Geo, CPS1, CPS2 and CPS3)
 
 A libretro core compatibility list with RetroAchievements can be found in [libretro docs](https://docs.libretro.com/guides/retroachievements/).
 
