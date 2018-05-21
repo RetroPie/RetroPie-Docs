@@ -25,7 +25,7 @@ lr-fbalpha is the prefered Pi 3/Pi 2 Neo Geo emulator due to its accuracy. lr-fb
 ## ROMS
 Accepted File Extensions: **.7z .zip**
 
-Place Neo Geo ROMs in
+Place Neo Geo ROMs in:
 ```
 /home/pi/RetroPie/roms/neogeo
 ```
@@ -35,13 +35,13 @@ Neo Geo ROMs require a `neogeo.zip` BIOS file with the exact same MAME or FB Alp
 ```
 /home/pi/RetroPie/roms/neogeo
 ```
-Instructions on how to install the Neo Geo Unibios on lr-fbalpha can be found here: [[lr-fbalpha#neo-geo-unibios]] The Unibios can be used as documented on the official page: <http://unibios.free.fr/howitworks.html>
+Instructions on how to install the Neo Geo Unibios on lr-fbalpha can be found here: [lr-fbalpha Neo Geo Bios](lr-fbalpha#neo-geo-unibios). The Unibios can be used as documented on the official page at <http://unibios.free.fr/howitworks.html>.
 
 * On the Unibios boot screen
-    * Neo Geo **A+B+C** (RetroPad B+A+Y) for BIOS Menu
-    * Neo Geo **B+C+D** (RetroPad A+Y+X) for Test Menu
+  * Neo Geo **A+B+C** (RetroPad B+A+Y) for BIOS Menu
+  * Neo Geo **B+C+D** (RetroPad A+Y+X) for Test Menu
 * At any time
-    * Neo Geo **Start+A+B+C** (RetroPad Start+B+A+Y) for In-Game Menu
+  * Neo Geo **Start+A+B+C** (RetroPad Start+B+A+Y) for In-Game Menu
 
 The menus allow you to change various settings like region, dip switch settings for gameplay options like difficulty or blood, and coin or free play settings. Unibios settings will persist after quitting FBA, launching another Neo Geo game, or rebooting RetroPie.
 
