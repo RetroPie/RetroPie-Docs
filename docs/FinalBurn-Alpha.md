@@ -14,8 +14,8 @@ This page is a resource for additional details on RetroPie's Final Burn Alpha em
 
 | Emulator | Rom Folder | Extension | Required ROM Version | Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
-| [lr-fbalpha](#lr-fbalpha) | arcade **or** fba **or** neogeo  | .7z .zip | FB Alpha v0.2.97.42| /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/fba/retroarch.cfg, **or** /opt/retropie/configs/neogeo/retroarch.cfg |
-| [lr-fbalpha2012](#lr-fbalpha2012) | arcade **or** fba **or** neogeo  | .7z .zip | FB Alpha v0.2.97.30 | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/fba/retroarch.cfg, **or** /opt/retropie/configs/neogeo/retroarch.cfg |
+| [lr-fbalpha](#lr-fbalpha) | arcade **or** fba **or** neogeo  | .7z .zip | FB Alpha v0.2.97.43| /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/fba/retroarch.cfg, **or** /opt/retropie/configs/neogeo/retroarch.cfg |
+| [lr-fbalpha2012](#lr-fbalpha2012) | arcade **or** fba **or** neogeo  | .7z .zip | FB Alpha v0.2.97.29 | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/fba/retroarch.cfg, **or** /opt/retropie/configs/neogeo/retroarch.cfg |
 | [PiFBA](#pifba) | arcade **or** fba **or** neogeo  | .zip | FB Alpha 0.2.96.71 | /opt/retropie/emulators/pifba/fba2x.cfg **or** /opt/retropie/configs/fba/fba2x.cfg |
 
 ## Arcade ROM paths
