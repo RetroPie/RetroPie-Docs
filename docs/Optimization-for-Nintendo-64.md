@@ -1,4 +1,4 @@
-## READ FIRST - Why N64 emulation on the Pi is not so great
+## READ FIRST - Why N64 emulation on the Pi difficult
 
 N64 emulation on the raspberry pi is difficult due to the pi's under powered GPU (Graphics Processing Unit) and lack of certain GPU features found in more modern devices. For a more detailed explanation please see [this post](https://www.reddit.com/r/RetroPie/comments/6se5nj/why_n64_emulation_on_the_pi_isnt_so_great_from_a/) by a mupen64plus developer. 
 
@@ -20,7 +20,7 @@ Overclocking ```sdram_freq``` will give a very small boost to performance. Going
 
 ```v3d_freq``` or ```gpu_freq``` can also be overclocked for possibly a small boost in performance. 
 
-```arm_freq```(CPU) overclocking is of little to no help for boosting N64 performance on the pi. There was no discernible FPS increase overclocking from the Pi3's stock ARM speed of 1200mhz to 1350mhz. Though it may help increase performance for other high demand emulators such as PSX or MAME.
+```arm_freq```(CPU) overclocking is of little to no help for boosting N64 performance on the pi. There was no discernible FPS increase overclocking the Pi 3's CPU from the standard 1200mhz to 1350mhz. Though it may help increase performance for other high demand emulators such as PSX or MAME.
 ### CPU-Governor
 
 The CPU governor controls when your overclock is applied. With the cpu-governor set to performance mode your pi will run at full speed while running ROMs but will down-clock when sitting idle in Emulation Station. The CPU governor can be set to max performance mode in one of two ways.
@@ -39,7 +39,7 @@ https://docs.google.com/spreadsheets/d/1Wjzbu90l6eCEW1w6ar9NtfyDBQrSPILQL5MbRSpY
 
 Each emulator/plugin should be set to the lowest resolution (CEA-1 for most displays) through the runcommand menu. This will slightly increase performance by limiting the up-scaling.
 
-**NOTE** The glide plugin currently has a bug that causes visual glitches which lead to a crash after about 10-20 mins of playtime. Until the problem is resolved make use of save states so you dont lose your progress or use an alternate plugin.
+**NOTE** The glide plugin currently has issues with frame buffer emulation on the pi that causes visual glitches which lead to a crash after about 10-20 mins of playtime. Until the problem is resolved make use of save states so you don't lose your progress or you could try an alternate plugin. 
 
 
 ## Notes on Audio
