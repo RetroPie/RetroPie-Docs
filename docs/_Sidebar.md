@@ -54,6 +54,7 @@
 * [Oric-1/Atmos](Oric)
 * [PC](PC)
 * [PC-8800](PC-8800)
+* [PC-9800](PC-9800)
 * [PC Engine/TurboGrafx-16](PC-Engine)
 * [PC-FX](PC-FX)
 * [PSP](PSP)
