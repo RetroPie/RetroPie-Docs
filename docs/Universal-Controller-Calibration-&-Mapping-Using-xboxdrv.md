@@ -91,8 +91,8 @@ sudo /opt/retropie/supplementary/xboxdrv/bin/xboxdrv \
 	--evdev-absmap ABS_[•]=dpad_x,ABS_[•]=dpad_y \
 	--evdev-keymap BTN_[•]=a,BTN_[•]=b,BTN_[•]=x,BTN_[•]=y,BTN_[•]=lb,BTN_[•]=rb,BTN_[•]=back,BTN_[•]=start \
 	--dpad-only \
-	--ui-axismap lt=void,rt=void
-	--ui-buttonmap tl=void,tr-void,guide=void \
+	--ui-axismap lt=void,rt=void \
+	--ui-buttonmap tl=void,tr=void,guide=void \
 	&
 ```
 All that is really left is to add the command to `/etc/rc.local`. To do this type:
