@@ -36,7 +36,7 @@ Place the BIOS in
 
 Both emulators utilise Retroarch configurations
 
-*Side Note: In order to "switch to side B" of a ROM most controllers have this set to a default of the upper right bumper of trigger button
+*Side Note: In order to "switch to side B" of a ROM most controllers have this set to a default of the upper right bumper or right trigger button
 
 Add custom retroarch controls to the retroarch.cfg file in
 ```shell
