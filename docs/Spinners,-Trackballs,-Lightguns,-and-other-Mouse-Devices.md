@@ -13,7 +13,7 @@ A convenient hardware test is to simply boot the Pi to a desktop and see if you 
 
 Another test can be performed at the command prompt. Type:`cat /dev/input/mice` and press enter. Now, rotate your spinner or move your trackball. It should produce characters on the screen and move the cursor from side to side on the line. Depending on other devices you have attached, Linux might see more than one USB mouse at the same time. You can determine which one is your spinner or trackball by trying each device individually using `cat /dev/input/mouse0` or `cat /dev/input/mouse1` and so on.
 
-## Configuring RetroArch emulators for multi-mouse use
+## Configuring RetroArch emulators for mouse-like device use
 
 **Input Drivers**: As of September 2017, there is only one RetroArch input driver for Linux with support for multi-mouse: `udev`.
 
