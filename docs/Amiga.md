@@ -37,6 +37,13 @@ If you want to use a kickstart 1.3, 2.0, 3.1 rom place your **kick13.rom, kick20
 /home/pi/RetroPie/BIOS/
 ```
 
+|Name |Description |md5          |CRC32       |Comment |
+| :--- | :--- | :--- | :--- | :--- |
+|kick13.rom|KS ROM v1.3 (A500,A1000,A2000) rev 34.5 (256k)|82a21c1890cae844b3df741f2762d48d|c4f0f55f||
+|kick20.rom|KS ROM v2.04 (A500+) rev 37.175 (512k)|dc10d7bdd1b6f450773dfb558477c230|c3bdb240||
+|kick31.rom|KS ROM v1.3 (A1200) rev 40.68 (512k)|646773759326fbac3b2311fd8c8793ee|1483a091||
+
+
 ## Controls
 These are hardcoded currently. This initial mapping was chosen as it's somewhat similar to MAME, and should mostly work on any controllers that use that input mapping (such as the picade). Joypad/Joystick is currently untested.
 
