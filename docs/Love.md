@@ -5,7 +5,7 @@ _Löve is a 2d game engine programmed primarily in lua._
 ***
 ## Emulator [Löve](https://bitbucket.org/rude/love/src) (Experimental)
 
-It only really works well on a Raspberry Pi 2. Games are programmed for different versions of Löve. RetroPie uses Love 0.10.0 and so it is likely a lot of games will not work because they have not been updated for version 0.10.0
+It only really works well on a Raspberry Pi 2. Games are programmed for different versions of Löve. RetroPie uses Love 0.11.1 and so it is likely a lot of games will not work because they have not been updated for version 0.11.1. See the section "Versions" below for step by step instruction how to install the older version 0.10.2 of Löve.
 
 ## ROMS
 
