@@ -89,12 +89,12 @@ hg clone https://bitbucket.org/rude/love "$md_build"
 ```
 hg clone https://bitbucket.org/rude/love/#0.10.2 "$md_build"
 ```
-- Press CTRL-x and y to save the changes
+- Press CTRL-x and then y to save the changes
 - Enter ```sudo reboot``` to restart Emulationstation
 - In Emulationstation, select Retropie -> Retropie Setup
 - In the Retropie Setup menu, select Manage Packages -> Optional Packages
 - In the list of optional packages, select love
-- Select "Install from source" (if Love is already installed, select uninstall first)
-- The source code of Love 0.10.2 is now being downloaded and installed automatically
-
-After a many text screens filled with compilation messages screens and a long wait of 10 minutes or so, Love 0.10.2 will be installed. After a reboot, Emulationstation should show Love as a selection, and the pre-installed Mari0 game should now work.
+- Select "Install from source" (if Love is already installed, select 'uninstall' first and then 'install from source')
+- Love 0.10.2 is now being downloaded and installed automatically. This takes a while.
+- Perform a reboot once installation is done
+- Emulationstation should now show Love as a selection, and the pre-installed Love game Mari0 should now work without errors.
