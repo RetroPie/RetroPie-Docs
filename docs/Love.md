@@ -69,3 +69,32 @@ It can be run with
 cd RetroPie-Setup
 sudo ./retropie_packages.sh love configure
 ```
+
+## Versions
+
+The default behavior of RetroPie is to always install the latest version of Love. Currently, this is version 11. However, most games are written for version 10 and are incompatible with this version. This includes the bundled Mari0 game which will just show a blue screen and an error message.
+
+In order get Mari0 and other games to work, it is necessary to install version 10 of Love. This requires editing the install script to point it to the older version of Love, and re-installing Love from source. For this, a keyboard and internet access are required:
+
+- in Emulationstation, press F4 to open a command line, then enter
+```
+sudo nano RetroPie-Setup/scriptmodules/ports/love.sh
+```
+- An editor should open
+- Use the cursor keys to navigate to the line
+```
+hg clone https://bitbucket.org/rude/love "$md_build"
+```
+- Change it to read
+```
+hg clone https://bitbucket.org/rude/love/#0.10.2 "$md_build"
+```
+- Press CTRL-x and y to save the changes
+- Enter ```sudo reboot``` to restart Emulationstation
+- In Emulationstation, select Retropie -> Retropie Setup
+- In the Retropie Setup menu, select Manage Packages -> Optional Packages
+- In the list of optional packages, select love
+- Select "Install from source" (if Love is already installed, select uninstall first)
+- The source code of Love 0.10.2 is now being downloaded and installed automatically
+
+After a many text screens filled with compilation messages screens and a long wait of 10 minutes or so, Love 0.10.2 will be installed. After a reboot, Emulationstation should show Love as a selection, and the pre-installed Mari0 game should now work.
