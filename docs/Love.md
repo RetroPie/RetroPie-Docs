@@ -72,9 +72,9 @@ sudo ./retropie_packages.sh love configure
 
 ## Versions
 
-The default behavior of RetroPie is to always install the latest version of Love. Currently, this is version 11. However, most games are written for version 10 and are incompatible with this version. This includes the bundled Mari0 game which will just show a blue screen and an error message.
+The default behavior of RetroPie is to always install the latest version of Love. Currently, this is version 11. However, most games are written for version 10 and are incompatible with this version. This includes the bundled Mari0 game which will just show a blue screen and an error message if it is started with version 11 of Love.
 
-In order get Mari0 and other games to work, it is necessary to install version 10 of Love. This requires editing the install script to point it to the older version of Love, and re-installing Love from source. For this, a keyboard and internet access are required:
+In order get Mari0 and most other games to work, it is necessary to install the older version 10 of Love. This requires editing the install script to point it to the older version, and then (re-)installing Love from source. For this, a keyboard and internet access are required:
 
 - in Emulationstation, press F4 to open a command line, then enter
 ```
