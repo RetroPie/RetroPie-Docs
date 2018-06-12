@@ -97,4 +97,4 @@ hg clone https://bitbucket.org/rude/love/#0.10.2 "$md_build"
 - Select "Install from source" (if Love is already installed, select 'uninstall' first and then 'install from source')
 - Love 0.10.2 is now being downloaded and installed automatically. This takes a while.
 - Perform a reboot once installation is done
-- Emulationstation should now show Love as a selection, and the pre-installed Love game Mari0 should now work without errors.
+- Emulationstation should now show Love as a selection, and the pre-installe game Mari0 should work without errors.
