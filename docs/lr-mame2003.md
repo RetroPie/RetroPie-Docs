@@ -50,7 +50,7 @@ or, if you're using the arcade folder:
 
 ## Cheats
 
-lr-mame2003 supports the MAME cheat engine, allowing you to use cheats bia the MAME menu by pressing `Tab`. To active these, there is a supplementary file that you need to transfer to your Pi, called `cheat.dat`. The RetroPie Setup script copies this file automatically to the correct location for you:
+lr-mame2003 supports the MAME cheat engine, allowing you to use cheats via the MAME menu by pressing `Tab`. To active these, there is a supplementary file that you need to transfer to your Pi, called `cheat.dat`. The RetroPie Setup script copies this file automatically to the correct location for you:
 ```
 /home/pi/RetroPie/BIOS/mame2003/
 ```
