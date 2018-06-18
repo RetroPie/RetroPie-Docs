@@ -17,7 +17,7 @@ ScummVM is very different to most romsets in that there are a set of files for e
 
 See the list here: http://wiki.scummvm.org/index.php/Datafiles
 
-Place Your folders of game files in
+Place your folders of game files in
 ```
 /home/pi/RetroPie/roms/scummvm
 ```
@@ -26,9 +26,9 @@ Place Your folders of game files in
 
 - Quit running rom without saving : Alt + X
 
-- After you've added you files into the scummvm rom folder, open up the +LAUNCH GUI
+- After you've added files to the scummvm rom folder, open up the +LAUNCH GUI
 
-- then hold down shift and click mass add
+- then hold down _shift_ and click "Mass Add..."
 
 - Navigate to the scummvm folder and select it to add all of your files
 
@@ -36,9 +36,9 @@ Place Your folders of game files in
 
 - Press F4 to get out of emulationstation
 
-- Type in emulationstation to open up emulationstation
+- Type `emulationstation` to re-launch emulationstation
 
-- navigate to scummvm and your games will all be there on the list and you'll have no need of a GUI
+- navigate to scummvm and your games will be there on the list and you'll have no need for a GUI
 
 
 ## Troubleshooting
