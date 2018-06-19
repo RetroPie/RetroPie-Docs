@@ -7,11 +7,38 @@ _The PlayStation 1 is a 5th generation video game console released by Sony in 19
 
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
-| [lr-pcsx-rearmed](https://github.com/libretro/pcsx_rearmed) | psx  | .cue .cbn .img .iso .m3u .mdf .pbp .toc .z .znx | SCPH1001.BIN | /opt/retropie/configs/psx/retroarch.cfg |
-| [pcsx-rearmed](https://github.com/notaz/pcsx_rearmed) | psx  | .cue .cbn .img .iso .m3u .mdf .pbp .toc .z .znx | SCPH1001.BIN | /opt/retropie/configs/psx/pcsx.cfg |
-| [lr-beetle-psx](https://github.com/libretro/beetle-psx-libretro) | psx  | .cue .cbn .img .iso .m3u .mdf .pbp .toc .z .znx | scph5500.bin scph5501.bin scph5502.bin | /opt/retropie/configs/psx/retroarch.cfg |
+| [lr-pcsx-rearmed](https://github.com/libretro/pcsx_rearmed) | psx  | .cue .cbn .img .iso .m3u .mdf .pbp .toc .z .znx | SCPH101.BIN SCPH7001.BIN SCPH5501.BIN SCPH1001.BIN | /opt/retropie/configs/psx/retroarch.cfg |
+| [pcsx-rearmed](https://github.com/notaz/pcsx_rearmed) | psx  | .cue .cbn .img .iso .m3u .mdf .pbp .toc .z .znx | SCPH101.BIN SCPH7001.BIN SCPH5501.BIN SCPH1001.BIN | /opt/retropie/configs/psx/pcsx.cfg |
+| [lr-beetle-psx](https://github.com/libretro/beetle-psx-libretro) | psx  | .cue .cbn .chd .img .iso .m3u .mdf .pbp .toc .z .znx | scph5500.bin scph5501.bin scph5502.bin | /opt/retropie/configs/psx/retroarch.cfg |
 
-## Emulators: [lr-pcsx-rearmed](https://github.com/libretro/pcsx_rearmed), [pcsx-rearmed](https://github.com/notaz/pcsx_rearmed), 
+## Emulators: [lr-pcsx-rearmed](https://github.com/libretro/pcsx_rearmed), [pcsx-rearmed](https://github.com/notaz/pcsx_rearmed), [lr-beetle-psx](https://github.com/libretro/beetle-psx-libretro).
+
+### lr-pcsx-rearmed
+
+The prefered PSX emulator for those on a Raspberry Pi 2/3/3+. The features of RetroArch combined with pcsx-rearmed's excellent Dynamic Recompiler allow for an adequate PSX emulation experience on the Raspberry Pi.
+
+A significant number of games do suffer from a small amount of emulation slowdown: **Spyro the Dragon's** flight challenges are a prime example of this. In rare cases, emulation slowdown is so bad that most would consider the game unplayable: **Crusaders of Might and Magic** is one of these games and comes to an almost complete stop at every corner of gameplay. In other rare cases, some games will outright crash during gameplay: **Rayman 2 - The Great Escape** and **Driver: You Are the Wheelman** both have this problem.
+
+This emulator also doesn't handle Europe or Japan anti-piracy measures very well so it is advised to use USA versions of games whenever possible.
+
+Raspberry Pi 1/0 users that choose to use this emulator should be made aware that RetroArch's **Bilinear Filtering** will cause abnormal behavior in some games and should be disabled whenever emulation issues are encountered.
+
+### pcsx-rearmed
+
+This emulator is advised for those on a Raspberry Pi 1/0 due to the lower system requirements.
+
+Most emulation issues described above in lr-pcsx-rearmed's details should also apply to this emulator as well since those issues are unrelated to the processing power of the hardware.
+
+### Where is lr-beetle-psx?
+
+The Beetle/Mednafen PSX core is not available for systems with ARM CPUs (like the Raspberry Pi) because it does not perform well enough. This emulator is supplied for people who are running RetroPie on more powerful x86 systems.
+
+* [RetroPie commit - Add Beetle PSX emulator](https://github.com/RetroPie/RetroPie-Setup/commit/6f0ce53857bd9eab2d78ad1dd6eefc112cf61e6d)
+
+~~~shell
+$ grep flags scriptmodules/libretrocores/lr-beetle-psx.sh
+rp_module_flags="!arm"
+~~~
 
 ## ROMS
 Accepted File Extensions: **.cue .cbn .img .iso .m3u .mdf .pbp .toc .z .znx**
@@ -41,40 +68,50 @@ If you only have a .bin file and no .cue file, you can generate it:
 - Any PSX game that has multi tracks will work better (usually audio tracks) if it has a .cue to point to the audio.  
 https://retropie.org.uk/forum/topic/735/psx-please-remove-bin-from-the-file-types
 
-if your psx game is a .ecm extension, its a compressed file that needs to be extracted with ecmtools.
+If your PSX game is a .ecm extension, its a compressed file that needs to be extracted with ecmtools.
 
     sudo apt-get install ecm
     ecm-uncompress game-file.bin.ecm
 
-### Where is lr-beetle-psx?
-
-The Beetle/Mednafen PSX core is not available for systems with ARM CPUs (like the Raspberry Pi) because it does not perform well enough. This emulator is supplied for people who are running RetroPie on more powerful x86 systems.
-
-* [RetroPie commit - Add Beetle PSX emulator](https://github.com/RetroPie/RetroPie-Setup/commit/6f0ce53857bd9eab2d78ad1dd6eefc112cf61e6d)
-
-~~~shell
-$ grep flags scriptmodules/libretrocores/lr-beetle-psx.sh
-rp_module_flags="!arm"
-~~~
-
 ## BIOS
+
+### lr-pcsx-rearmed
 
 Whilst pcsx_rearmed has an emulated BIOS to fall back on, this has limited compatibility meaning most games will have issues running with it, and others will not work at all. It should be considered mandatory to manually install an official BIOS.
 
-The BIOS file is named **SCPH1001.BIN**
+The following BIOS are supported: 
 
-Place SCPH1001.BIN in
+| Recognized Name | Redump Name | CRC32 | MD5 |
+| :---: | :---: | :---: | :---: |
+SCPH101.BIN | psone-45a.bin | 171BDCEC | 6E3735FF4C7DC899EE98981385F6F3D0
+SCPH7001.BIN | ps-41a.bin | 502224B6 | 1E68C231D0896B7EADCAD1D7D8E76129
+SCPH5501.BIN | ps-30a.bin | 8D8CB7E4 | 490F666E1AFB15B7362B406ED1CEA246
+SCPH1001.BIN | ps-20a.bin | 55847D8C | DC2B9BF8DA62EC93E868CFD29F0D067D
+
+Place BIOS in
 ```
 /home/pi/RetroPie/BIOS
 ```
+The BIOS is chosen automatically from later revision to early revision.
+
 The BIOS file names are case sensitive.
 
-See table at the bottom for alternative BIOS options that may or may not work.
+### lr-beetle-psx
+
+The following BIOS are supported: 
+
+| Recognized Name | Redump Name | CRC32 | MD5 |
+| :---: | :---: | :---: | :---: |
+scph5500.bin | ps-30j | FF3EEB8C | 8DD7D5296A650FAC7319BCE665A6A53C
+scph5501.bin | ps-30a | 8D8CB7E4 | 490F666E1AFB15B7362B406ED1CEA246
+scph5502.bin | ps-30e | D786F0B9 | 32736F17079D0B2B7024407C39BD3050
+
+The BIOS is automatically chosen based upon the region of the ROM.
 
 ## Controls
 
-### lr-pcsx-rearmed Controls
-lr-pcsx-rearmed utilises Retroarch configurations
+### lr-pcsx-rearmed & lr-beetle-psx Controls
+lr-pcsx-rearmed and lr-beetle-psx utilize Retroarch configurations.
 
 Add custom retroarch controls to the retroarch.cfg file in
 ```shell
@@ -276,31 +313,3 @@ In your memory card on the left, click **Save As** and save over the blank card 
 Quit MemManager and rename your new memory card from `.mcr` to `.srm`. Following our example above, we'd now have a file called `Diablo.srm`. Copy this memory card file to your RetroPie ROMs directory.
 
 Now go to RetroPie and run your game in the PSX emulator. You should be able to see the contents of the memory card and load the saved game which you downloaded.
-
-### Alternative BIOS files
-
-Add different bios' that you've tested and tell the community if it works or not.
-
-|Name |Description |md5          |CRC32       |Comment |
-| :--- | :--- | :--- | :--- | :--- |
-|ps-10j|SCPH-1000/DTL-H1000 (Version 1.0 J)|239665b1a3dade1b5a52c06338011044|3b601fc8||
-|ps-11j|SCPH-3000/DTL-H1000H (Version 1.1 01/22/95)|849515939161e62f6b866f6853006780|3539def6||
-|ps-20a|DTL-H1001 (Version 2.0 05/07/95 A)|dc2b9bf8da62ec93e868cfd29f0d067d|55847d8c||
-|ps-20e|DTL-H1002/SCPH-1002 (Version 2.0 05/10/95 E)|54847e693405ffeb0359c6287434cbef|9bb87c4b||
-|ps-21j|SCPH-3500 (Version 2.1 07/17/95 J)|cba733ceeff5aef5c32254f1d617fa62|bc190209||
-|ps-21a|DTL-H1101 (Version 2.1 07/17/95 A)|da27e8b6dab242d8f91a9b25d80c63b8|aff00f2f||
-|ps-21e|SCPH-1002/DTL-H1102 (Version 2.1 07/17/95 E)|417b34706319da7cf001e76e40136c23|86c30531||
-|ps-22j|SCPH-5000/DTL-H1200/DTL-H3000 (Version 2.2 12/04/95 J)|57a06303dfa9cf9351222dfcbb4a29d9|24fc7e17||
-|ps-22a|SCPH-1001/DTL-H1201/DTL-H3001 (Version 2.2 12/04/95 A)|924e392ed05558ffdb115408c263dccf|37157331||
-|ps-22e|SCPH-1002/DTL-H1202/DTL-H3002 (Version 2.2 12/04/95 E)|e2110b8a2b97a8e0b857a45d32f7e187|1e26792f||
-|ps-22d|DTL-H1100 (Version 2.2 03/06/96 D)|ca5cfc321f916756e3f0effbfaeba13b|decb22f5||
-|ps-30j|SCPH-5500 (Version 3.0 09/09/96 J)|8dd7d5296a650fac7319bce665a6a53c|ff3eeb8c||
-|ps-30a|SCPH-5501/SCPH-5503/SCPH-7003 (Version 3.0 11/18/96 A)|490f666e1afb15b7362b406ed1cea246|8d8cb7e4||
-|ps-30e|SCPH-5502/SCPH-5552 (Version 3.0 01/06/97 E)|32736f17079d0b2b7024407c39bd3050|d786f0b9||
-|ps-40j|SCPH-7000/SCPH-7500/SCPH-9000 (Version 4.0 08/18/97 J)|8e4c14f567745eff2f0408c8129f72a6|ec541cd0||
-|ps-41a|SCPH-7001/SCPH-7501/SCPH-7503/SCPH-9001/SCPH-9003/SCPH-9903 (Version 4.1 12/16/97 A)|1e68c231d0896b7eadcad1d7d8e76129|502224b6||
-|ps-41e|SCPH-7002/SCPH-7502/SCPH-9002 (Version 4.1 12/16/97 E)|b9d9a0286c33dc6b7237bb13cd46fdee|318178bf||
-|psone-43j|SCPH-100 (Version 4.3 03/11/00 J)|8abc1b549a4a80954addc48ef02c4521|f2af798b||
-|psone-44e|SCPH-102 (Version 4.4 03/24/00 E)|b10f5e0e3d9eb60e5159690680b1e774|0bad7ea9||
-|psone-45a|SCPH-101 (Version 4.5 05/25/00 A)|6e3735ff4c7dc899ee98981385f6f3d0|171bdcec||
-|psone-45e|SCPH-102 (Version 4.5 05/25/00 E)|de93caec13d1a141a40a79f5c86168d6|76b880e5||
