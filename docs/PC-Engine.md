@@ -23,7 +23,7 @@ Place your PC Engine/ TurboGrafx-16 ROMs in
 
 ## BIOS
 
-**Note: the BIOS file is only needed to play CD based games**
+**The BIOS file is only needed to play CD-based games.**
 
 The BIOS file must be named: **syscard3.pce** 
 
@@ -37,9 +37,8 @@ Working BIOS files:
 
 | Filename | md5sum | CRC32 | Comment |
 | :--: | :--: | :--: | :--: |
-| syscard3.pce | ff1a674273fe3540ccef576376407d1d | 64f78e3c | This is the prefered BIOS for lr-beetle-pce-fast. It is unknown which region or version it is from and is not No-Intro verified, which indicates it is not a perfect copy, but it should be found fairly easily and is what lr-beetle-pce-fast was developed with.|
-| Super CD-ROM System (Japan) (v3.0).pce | 38179df8f4ac870017db21ebcbf53114 | 6d9a73ef | |
-| TurboGrafx CD Super System Card (USA) (v3.0).pce | 0754f903b52e3b3342202bdafb13efa5 | 2b5b75fe | Most games work but some like Mirai Shounen Conan and Sylphia will not. |
+| Super CD-ROM System (Japan) (v3.0).pce | 38179df8f4ac870017db21ebcbf53114 | 6d9a73ef | This is the prefered BIOS for lr-beetle-pce-fast and should play all games. |
+| TurboGrafx CD Super System Card (USA) (v3.0).pce | 0754f903b52e3b3342202bdafb13efa5 | 2b5b75fe | Most games work, but some Japan games will not. |
 
 ## Controls
 
@@ -85,39 +84,6 @@ FILE "Akumajou_Dracula_X_-_Chi_no_Rinne_(NTSC-J)_[KMCD3005].bin" BINARY
 
 ## Advanced Configuration
 
-If you are from the United States, it is likely that you had the TurboGrafx-16 rather than the PC Engine. If you want EmulationStation to show the TurboGrafx-16 logo instead of PC Engine, then you can change the file in `/etc/emulationstation/es_systems.cfg`
-
-from 
-
-```
-  <system>
-    <name>pcengine</name>
-    <fullname>TurboGrafx 16 (PC Engine)</fullname>
-    <path>/home/pi/RetroPie/roms/pcengine</path>
-    <extension>.pce .cue .zip .PCE .CUE .ZIP</extension>
-    <command>/opt/retropie/supplementary/runcommand/runcommand.sh 0 _SYS_ pcengine %ROM%</command>
-    <platform>pcengine</platform>
-    <theme>pcengine</theme>
-    <directlaunch/>
-  </system>
-```
-
-to
-
-```
-  <system>
-    <name>pcengine</name>
-    <fullname>TurboGrafx 16 (PC Engine)</fullname>
-    <path>/home/pi/RetroPie/roms/pcengine</path>
-    <extension>.pce .cue .zip .PCE .CUE .ZIP</extension>
-    <command>/opt/retropie/supplementary/runcommand/runcommand.sh 0 _SYS_ pcengine %ROM%</command>
-    <platform>pcengine</platform>
-    <theme>tg16</theme>
-    <directlaunch/>
-  </system>
-```
-**Note: these above changes to `es_systems.cfg` with be overwritten when updating RetroPie** and you can find more information about this [here](EmulationStation#my-es_sytemscfg-is-being-overwritten-on-updates).
-
 ### Switching Emulation Station to the TurboGrafx-16 logo:
 
 If you are from the United States it is likely that you had the TurboGrafx-16 rather than the PC Engine. If you want EmulationStation to show the TurboGrafx-16 graphics instead of PC Engine then you should create a file /opt/retropie/configs/all/platforms.cfg with the following contents (note this requires at least v4.1.6 of the RetroPie-Setup script).
@@ -126,4 +92,4 @@ If you are from the United States it is likely that you had the TurboGrafx-16 ra
 pcengine_theme="tg16"
 ```
 
-Once this is done, please update any of the currently installed PC Engine emulators from RetroPie-Setup and Emulation Station will now use the TurboGrafx-16 logo. Scraping from within Emulation Station should also return TurboGrafx-16 artwork.
+Once this is done, please update any of the currently installed PC Engine emulators from RetroPie-Setup and Emulation Station will now use the TurboGrafx-16 logo.
