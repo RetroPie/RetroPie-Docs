@@ -38,15 +38,15 @@ Roms Dir: /home/pi/RetroPie/roms/fba
 Binary Dir: /opt/retropie/libretrocores/lr-fbalpha
 Config Dir: /opt/retropie/configs/fba/retroarch.cfg
 ```
-**ROM Version**: FBA 0.2.97.42
+**ROM Version**: FBA 0.2.97.43
 
 **Total games emulated: 4896**
 * BIOS: 6
 * Samples: ?
 
-**FB Alpha v0.2.97.42 DAT File**:  [FB Alpha v0.2.97.42 (Arcade Only)](https://github.com/libretro/fbalpha/raw/master/dats/FB%20Alpha%20v0.2.97.42%20(ClrMame%20Pro%20XML).dat.zip)
+**FB Alpha v0.2.97.43 DAT File**:  [FB Alpha v0.2.97.43 (Arcade Only)](https://drive.google.com/file/d/1CdEBUc5X8yCPdVnHs3q3tLgdaYTnAcrn/view?usp=sharing)
 
-**FB Alpha v0.2.97.42 DAT File**:  [FB Alpha v0.2.97.42 (NeoGeo Only)](https://drive.google.com/file/d/0BygnFI5SL7x2NXcwcEdhaUNEOFE/view?usp=sharing)
+**FB Alpha v0.2.97.43 DAT File**:  [FB Alpha v0.2.97.43 (NeoGeo Only)](https://drive.google.com/file/d/1HVtn3Si6KPxpYOhSyAof2eJB5kFSipoV/view?usp=sharing)
 
 [lr-fbalpha compatibility list](https://docs.google.com/spreadsheets/d/1GaqIIoiWbzKHwZ52S2xCSDQXILo81Ls1mHK6czKGAtM/edit?usp=sharing) feel free to contribute to the list.
 
