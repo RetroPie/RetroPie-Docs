@@ -77,24 +77,22 @@ If your PSX game is a .ecm extension, its a compressed file that needs to be ext
 
 ### lr-pcsx-rearmed
 
-Whilst pcsx_rearmed has an emulated BIOS to fall back on, this has limited compatibility meaning most games will have issues running with it, and others will not work at all. It should be considered mandatory to manually install an official BIOS.
+Whilst lr-pcsx_rearmed has an emulated BIOS to fall back on, this has limited compatibility meaning most games will have issues running with it, and others will not work at all. It should be considered mandatory to manually install an official BIOS.
 
 The following BIOS are supported: 
 
 | Recognized Name | Redump Name | CRC32 | MD5 |
 | :---: | :---: | :---: | :---: |
-| SCPH101.BIN | psone-45a.bin | 171BDCEC | 6E3735FF4C7DC899EE98981385F6F3D0
-| SCPH7001.BIN | ps-41a.bin | 502224B6 | 1E68C231D0896B7EADCAD1D7D8E76129
-| SCPH5501.BIN | ps-30a.bin | 8D8CB7E4 | 490F666E1AFB15B7362B406ED1CEA246
-| SCPH1001.BIN | ps-22a.bin | 352A0966 | 924E392ED05558FFDB115408C263DCCF
+| scph101.bin | psone-45a.bin | 171BDCEC | 6E3735FF4C7DC899EE98981385F6F3D0
+| scph7001.bin | ps-41a.bin | 502224B6 | 1E68C231D0896B7EADCAD1D7D8E76129
+| scph5501.bin | ps-30a.bin | 8D8CB7E4 | 490F666E1AFB15B7362B406ED1CEA246
+| scph1001.bin | ps-22a.bin | 352A0966 | 924E392ED05558FFDB115408C263DCCF
 
 Place BIOS in
 ```
 /home/pi/RetroPie/BIOS
 ```
-The BIOS is chosen automatically from later revision to early revision.
-
-The BIOS file names are case sensitive.
+If more than one of the BIOS above is provided, then the latest revision of the BIOS available is automatically chosen.
 
 ### lr-beetle-psx
 
