@@ -7,7 +7,7 @@ _The PlayStation 1 is a 5th generation video game console released by Sony in 19
 
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
-| [lr-pcsx-rearmed](https://github.com/libretro/pcsx_rearmed) | psx  | .cue .cbn .img .iso .m3u .mdf .pbp .toc .z .znx | SCPH101.BIN SCPH7001.BIN SCPH5501.BIN SCPH1001.BIN | /opt/retropie/configs/psx/retroarch.cfg |
+| [lr-pcsx-rearmed](https://github.com/libretro/pcsx_rearmed) | psx  | .cue .cbn .img .iso .m3u .mdf .pbp .toc .z .znx | scph101.bin scph7001.bin scph5501.bin scph1001.bin | /opt/retropie/configs/psx/retroarch.cfg |
 | [pcsx-rearmed](https://github.com/notaz/pcsx_rearmed) | psx  | .cue .cbn .img .iso .m3u .mdf .pbp .toc .z .znx | SCPH1001.BIN | /opt/retropie/configs/psx/pcsx.cfg |
 | [lr-beetle-psx](https://github.com/libretro/beetle-psx-libretro) | psx  | .cue .cbn .chd .img .iso .m3u .mdf .pbp .toc .z .znx | scph5500.bin scph5501.bin scph5502.bin | /opt/retropie/configs/psx/retroarch.cfg |
 
