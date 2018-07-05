@@ -30,7 +30,7 @@ Place your DS ROMs in
 
 ## Controls
 
-### lr-desmume Controls
+### Drastic Controls
 
 Add custom controls using the DraStic GUI (by pressing RIGHT ANALOG RIGHT), or by editing
 ```
