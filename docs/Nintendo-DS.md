@@ -30,9 +30,9 @@ Place your DS ROMs in
 
 ## Controls
 
-### Drastic Controls
+### DraStic Controls
 
-Add custom controls using the DraStic GUI (by pressing RIGHT ANALOG RIGHT), or by editing
+Add custom controls using the DraStic GUI (by pressing RIGHT ANALOG RIGHT or DOWN ANALOG RIGHT (in some case) or "m" key on the keybord), or by editing
 ```
 /opt/retropie/configs/nds/drastic/config/drastic.cfg
 ```
