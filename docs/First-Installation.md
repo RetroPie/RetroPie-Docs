@@ -25,7 +25,7 @@ alt="Configuration Video" width="1280" height="400" border="10" /></a>
 
 ## [Hardware](https://retropie.org.uk/about/building/)
 
- * Raspberry Pi (A, A+, B, B+, 2, Zero, or 3) - for best performance use a **Raspberry Pi 3 Model B**
+ * Raspberry Pi (A, A+, B, B+, 2, Zero, or 3) - for best performance use a **Raspberry Pi 3 Model B+**
  * Raspberry Pi Case (optional but recommended)
  * MicroSD Card (see compatible SD card list [**here**)](http://elinux.org/RPi_SD_cards)
  * MicroSD Card Reader (For installing retropie from your computer)
