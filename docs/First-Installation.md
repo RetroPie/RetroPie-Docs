@@ -21,7 +21,7 @@ If you hate reading then see this video. Otherwise read on!
 
 <a href="https://www.youtube.com/watch?v=E1sbnPZ_A8w
 " target="_blank"><img src="https://i.ytimg.com/vi/E1sbnPZ_A8w/maxresdefault.jpg" 
-alt="Configuration Video" width="1280" height="400" border="10" /></a>
+alt="RetroPie First Installation Video" width="1280" height="400" border="10" /></a>
 
 ## [Hardware](https://retropie.org.uk/about/building/)
 
