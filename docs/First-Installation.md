@@ -1,6 +1,6 @@
 ![retropie_logo](https://cloud.githubusercontent.com/assets/10035308/21968193/e1670f2a-db46-11e6-8ff7-eb6d7188c9e7.png)
 
-|Version|4.3|
+|Version|4.4|
 |:---:|:---:|
 
 1. [Hardware](First-Installation#hardware)
@@ -19,8 +19,8 @@ This guide will give you the very basics to get you up and running from a blank 
 
 If you hate reading then see this video. Otherwise read on! 
 
-<a href="https://youtube.com/watch?v=xvYX_7iRRI0
-" target="_blank"><img src="https://i.ytimg.com/vi/xvYX_7iRRI0/maxresdefault.jpg" 
+<a href="https://www.youtube.com/watch?v=E1sbnPZ_A8w
+" target="_blank"><img src="https://i.ytimg.com/vi/E1sbnPZ_A8w/maxresdefault.jpg" 
 alt="Configuration Video" width="1280" height="400" border="10" /></a>
 
 ## [Hardware](https://retropie.org.uk/about/building/)
