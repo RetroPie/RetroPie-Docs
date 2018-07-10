@@ -142,7 +142,7 @@ with
 
 This will give you write access and should solve your problem.
 
-> **Good to know**: Most problems with samba shares running on Windows are due to the fact that Windows 10 now no longer supports SMB1 by default. Ensure that you have a user setup on windows with the credentials given and that you have granted user access by right-clicking the shared folder and selecting the user from the 'Give Access To...' selection menu.
+> **Good to know**: Most problems with samba shares running on Windows are due to the fact that Windows 10 now no longer supports SMB1 by default. Ensure that you have a user setup on Windows with the credentials given, and that you have granted user access by right-clicking the shared folder and selecting the user from the 'Give Access To...' selection menu.
 
 ## Thank You
 Thank you, everyone at the Raspberry Pi foundation, everyone involved in the development of EmulationStation and RetroPie, authors of several guides that I can't recall the names of, @sselph, @BuZz and probably a few other people.
