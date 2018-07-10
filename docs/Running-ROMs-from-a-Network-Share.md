@@ -1,7 +1,7 @@
 Storing your ROMs on a separate computer (NAS) solves a number of problems and has equally as many benefits.
 
 * It's more convenient
-* It Negates the need to transfer ROMs to your Raspberry PI MicroSD card
+* It negates the need to transfer ROMs to your Raspberry PI MicroSD card
 * Your storage is limited only by the size of your server
 * By reducing the number of times you write to your MicroSD card you minimize the chance at corrupting it
 
