@@ -132,7 +132,7 @@ I started a discussion on the forums for this article. I haven't written any gui
 
 ### Permission Denied
 
-If you are getting permission denied errors when you try to scrap or save states try editing your autostart.sh and replacing:
+If you are getting permission denied errors when you try to scrape or save states, try editing your autostart.sh and replacing:
 
     sudo mount -t cifs -o username=something,password=something //REMOTEHOST/path/to/roms /home/pi/RetroPie/roms
 
@@ -140,7 +140,7 @@ with
 
     sudo mount -t cifs -o sec=ntlmv2,username=something,password=something,rw,file_mode=0777,dir_mode=0777 //REMOTEHOST/path/to/roms /home/pi/RetroPie/roms
 
-This will give your write access and should solve your problem.
+This will give you write access and should solve your problem.
 
 > **Good to know**: Most problems with samba shares running on Windows are due to the fact that Windows 10 now no longer supports SMB1 by default. Ensure that you have a user setup on windows with the credentials given and that you have granted user access by right-clicking the shared folder and selecting the user from the 'Give Access To...' selection menu.
 
