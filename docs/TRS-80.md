@@ -6,7 +6,11 @@ _The TRS-80 was a home computer originally released by the Tandy Corporation in 
 
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
-| [sdltrs](https://github.com/RetroPie/sdltrs) | trs-80  | .dsk | level2.rom | hardcoded |
+| [sdltrs](https://github.com/RetroPie/sdltrs) | trs-80 model I  | .dsk | level2.rom | hardcoded |
+| [sdltrs](https://github.com/RetroPie/sdltrs) | trs-80 model III  | .dsk | level3.rom | hardcoded |
+| [sdltrs](https://github.com/RetroPie/sdltrs) | trs-80 model 4  | .dsk | level4.rom | hardcoded |
+| [sdltrs](https://github.com/RetroPie/sdltrs) | trs-80 model 4P  | .dsk | level4P.rom | hardcoded |
+
 
 ## Emulator: [sdltrs](https://github.com/RetroPie/sdltrs)
 
@@ -20,7 +24,7 @@ Place your TRS-80 ROMs in
 
 ## BIOS
 
-The BIOS file needed is **level2.rom** . An overview of the options for legally obtaining one of the various compatible BIOS files can be found [in the sdltrs README file](https://github.com/RetroPie/sdltrs).
+The BIOS file needed is **level2.rom** for Model I, **level3.rom** for Model III, **level4.rom** for Model 4 and **level4p.rom** for Model 4P. An overview of the options for legally obtaining one of the various compatible BIOS files can be found [in the sdltrs README file](https://github.com/RetroPie/sdltrs).
 
 Place your level2.rom BIOS file in
 ```
