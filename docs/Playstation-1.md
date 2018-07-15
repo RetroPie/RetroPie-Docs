@@ -57,7 +57,7 @@ A .cue file is basically a plain text file that tells the emulator where in the 
   
 If you only have a .bin file and no .cue file, you can generate it:
 
--  [Online[(http://nielsbuus.dk/pg/psx_cue_maker/) or [Offline](https://github.com/nielsbuus/psx_cue_maker)
+-  [Online](http://nielsbuus.dk/pg/psx_cue_maker/) or [Offline](https://github.com/nielsbuus/psx_cue_maker)
 -  [Manually](http://www.shivaranjan.com/2007/01/03/how-to-create-cue-file-for-a-bin-file-in-5-steps/)  
 -  [Individually](http://www.dslreports.com/r0/download/373724~1e45059000cfc371c157f544cc5aef07/MakeCue.zip)
 -  [En masse or individually](https://github.com/thorst/CueMaker)  
