@@ -1,3 +1,9 @@
+Video Tutorial
+
+<a href="https://www.youtube.com/watch?v=KBhDmGaTQG8
+" target="_blank"><img src="https://img.youtube.com/vi/KBhDmGaTQG8/0.jpg" 
+alt="Running Roms from USB" width="1280" height="400" border="10" /></a>
+
 Rather than running everything from an SD card, it can be desirable to store and run ROMs from an external USB drive. The benefits of this are as follows:
 
 -  **Reliability**: USB storage can be less sensitive to corruption than SD cards.
