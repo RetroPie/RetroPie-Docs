@@ -20,7 +20,7 @@ This guide will give you the very basics to get you up and running from a blank 
 If you hate reading then see this video. Otherwise read on! 
 
 <a href="https://www.youtube.com/watch?v=E1sbnPZ_A8w
-" target="_blank"><img src="https://user-images.githubusercontent.com/10035308/42426327-00a2afc8-82dc-11e8-99de-c589d5c4bec5.png" 
+" target="_blank"><img src="https://img.youtube.com/vi/E1sbnPZ_A8w/maxresdefault.jpg" 
 alt="RetroPie First Installation Video" width="1280" height="400" border="10" /></a>
 
 ## [Hardware](https://retropie.org.uk/about/building/)
