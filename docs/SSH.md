@@ -36,9 +36,9 @@ You can also use your raspberry pi's ip address instead of `retropie`
 
 ### Default Login:
 
-username: **pi**
+username: **pigaming**
 
-password: **raspberry**
+password: **retropie**
 
 See [here](FAQ#why-cant-i-ssh-as-root-anymore) if you wish to log in as root.
 
