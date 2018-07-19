@@ -30,3 +30,7 @@ See more info from the OpenBOR Community [HERE](http://www.chronocrash.com/forum
 
 You need a keyboard to navigate the menus
 
+### Hints:
+
+[How to create OpenBOR system in ES](https://retropie.org.uk/forum/topic/13784)
+[OpenBOR - the complete guide](https://retropie.org.uk/forum/topic/18565)
