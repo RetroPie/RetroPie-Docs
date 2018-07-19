@@ -32,5 +32,5 @@ You need a keyboard to navigate the menus
 
 ### Hints:
 
-[How to create OpenBOR system in ES](https://retropie.org.uk/forum/topic/13784)
-[OpenBOR - the complete guide](https://retropie.org.uk/forum/topic/18565)
+* [How to create OpenBOR system in ES](https://retropie.org.uk/forum/topic/13784)
+* [OpenBOR - the complete guide](https://retropie.org.uk/forum/topic/18565)
