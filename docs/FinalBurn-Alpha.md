@@ -35,6 +35,7 @@ Accepted File Extensions: **.7z .zip**
 
 ```shell
 Roms Dir: /home/pi/RetroPie/roms/fba
+Samples Dir: /home/pi/RetroPie/BIOS/fba/samples/
 Binary Dir: /opt/retropie/libretrocores/lr-fbalpha
 Config Dir: /opt/retropie/configs/fba/retroarch.cfg
 ```
@@ -69,6 +70,9 @@ Roms Dir: /home/pi/RetroPie/roms/fba
 Binary Dir: /opt/retropie/libretrocores/lr-fbalpha2012
 Config Dir: /opt/retropie/configs/fba/retroarch.cfg
 ```
+
+>lr-fbalpha2012 does not have support for Samples in any form.
+
 **ROM Version**: FB Alpha v0.2.97.30
 
 **Total games emulated: [3369](https://github.com/libretro/fbalpha2012/blob/master/svn-current/trunk/gamelist.txt)**
