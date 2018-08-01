@@ -95,6 +95,18 @@ Place BIOS in
 ```
 If more than one of the BIOS above is provided, then the latest revision of the BIOS available is automatically chosen.
 
+The recognized name can be all uppercase or all lowercase so if saving space and using **pcsx-rearmed** is a concern, then you may want to consider renaming **scph1001.bin** to **SCPH1001.BIN** instead of having two copies of the same BIOS.
+
+### pcsx-rearmed
+
+The following BIOS is supported: 
+
+| Recognized Name | Redump Name | CRC32 | MD5 |
+| :---: | :---: | :---: | :---: |
+| SCPH1001.BIN | ps-22a.bin | 37157331 | 924E392ED05558FFDB115408C263DCCF
+
+The recognized name is case-sensitive.
+
 ### lr-beetle-psx
 
 The following BIOS are supported: 
