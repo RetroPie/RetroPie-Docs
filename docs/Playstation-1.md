@@ -105,6 +105,10 @@ The following BIOS is supported:
 | :---: | :---: | :---: | :---: |
 | SCPH1001.BIN | ps-22a.bin | 37157331 | 924E392ED05558FFDB115408C263DCCF
 
+Place BIOS in
+```
+/home/pi/RetroPie/BIOS
+```
 The recognized name is case-sensitive.
 
 ### lr-beetle-psx
