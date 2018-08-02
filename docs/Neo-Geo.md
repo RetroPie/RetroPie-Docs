@@ -12,7 +12,7 @@ This page is a resource for additional details on configuring a dedicated set of
 
 | Emulator | Rom Folder | Extension | Required ROM Version | Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
-| [lr-fbalpha](https://github.com/libretro/fbalpha) | neogeo  | .7z .zip | FB Alpha v0.2.97.42| /opt/retropie/configs/neogeo/retroarch.cfg |
+| [lr-fbalpha](https://github.com/libretro/fbalpha) | neogeo  | .7z .zip | FB Alpha v0.2.97.43| /opt/retropie/configs/neogeo/retroarch.cfg |
 | [lr-fbalpha2012](https://github.com/libretro/fbalpha2012) | neogeo  | .7z .zip | FB Alpha v0.2.97.30 | /opt/retropie/configs/neogeo/retroarch.cfg |
 | [PiFBA](https://github.com/RetroPie/pifba) | neogeo  | .zip | FB Alpha 0.2.96.71 | /opt/retropie/emulators/pifba/fba2x.cfg |
 | [GnGeo-Pi](https://github.com/ymartel06/GnGeo-Pi) | neogeo | .zip | MAME 0.138 | /opt/retropie/configs/neogeo/gngeorc |
