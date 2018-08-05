@@ -78,7 +78,6 @@
 * [Wii](Wii)
 * [WonderSwan](WonderSwan)
 * [WonderSwan Color](WonderSwan-Color)
-* [Zmachine](Zmachine)
 * [ZX-81](ZX81)
 * [ZX Spectrum](ZX-Spectrum)
 
@@ -114,6 +113,7 @@
 * [Warcraft/Starcraft](Stratagus)
 * [Wolfenstein 3D](Wolfenstein-3D)
 * [Zelda Engine](Solarus) 
+* [Zmachine](Zmachine)
 
 ## Advanced Configuration
 
