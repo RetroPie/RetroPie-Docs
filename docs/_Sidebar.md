@@ -60,6 +60,7 @@
 * [PSP](PSP)
 * [PlayStation 1](Playstation-1)
 * [PlayStation 2](Playstation-2)
+* [PSP](PSP)
 * [ResidualVM](ResidualVM)
 * [SAM Coupé](Sam-Coupe)
 * [Saturn](Saturn)
