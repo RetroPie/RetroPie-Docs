@@ -78,9 +78,9 @@
 * [Wii](Wii)
 * [WonderSwan](WonderSwan)
 * [WonderSwan Color](WonderSwan-Color)
+* [Zmachine](Zmachine)
 * [ZX-81](ZX81)
 * [ZX Spectrum](ZX-Spectrum)
-* [Zmachine](Zmachine)
 
 ## [Ports](Ports)
 
