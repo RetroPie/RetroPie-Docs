@@ -80,6 +80,7 @@
 * [WonderSwan Color](WonderSwan-Color)
 * [ZX-81](ZX81)
 * [ZX Spectrum](ZX-Spectrum)
+* [Zmachine](Zmachine)
 
 ## [Ports](Ports)
 
@@ -112,7 +113,6 @@
 * [The-Ur-Quan-Masters](The-Ur-Quan-Masters) 
 * [Wolfenstein 3D](Wolfenstein-3D)
 * [Zelda Engine](Solarus) 
-* [Zmachine](Zmachine)
 
 ## Advanced Configuration
 
