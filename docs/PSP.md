@@ -20,11 +20,7 @@ Place your PSP ROMs in
 ```
 /home/pi/RetroPie/roms/psp
 ```
-#### [**PSP COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1V-MEx1tOXqCcJL1fQzGh9xLHny-qL-PSWqvY7F80Y90/edit?usp=sharing) feel free to contribute!
-
-#### [PSP Compatibility List - Overclocked Pi 3B](https://docs.google.com/spreadsheets/d/1BXWzTOV2nHBMg--r4x80xH6A25w2NDbb1LQSY5rLRXs/edit?usp=sharing) feel free to contribute as well.
-
->This is mostly a selection of PSP games that were tested against an overclocked Raspberry Pi 3B paired with the setting suggestions for PPSSPP in the Enhancement section below, having the CPU-Governor set to Force Performance, and using ISOs instead of CSOs to avoid wasting processing power on compression. 
+#### [**PSP COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1V-MEx1tOXqCcJL1fQzGh9xLHny-qL-PSWqvY7F80Y90/edit?usp=sharing) feel free to contribute! 
 
 ## Controls
 
@@ -55,4 +51,6 @@ From the [RetroPie Subreddit](https://www.reddit.com/r/RetroPie/comments/5jieuu/
 >
 > Then you want to goto the audio menu and set Audio Latency to high.
 
-**This will cause numerous games to no longer render properly due to the renderer being changed to "Buffered rendering" because of the "Auto frameskip" being turned on. "Frameskip" in general can cause black frames depending on if the chosen game runs at an odd or even framerate and the accompanying frameskip isn't set to a matching odd or even number.**
+**This will cause numerous games to no longer work properly due to the renderer being changed to the error-prone "Buffered rendering" because of the "Auto frameskip" being turned on. "Frameskip" in general can cause black frames depending on if the chosen game runs at an odd or even framerate and the accompanying frameskip isn't set to a matching odd or even number.**
+
+Regardless, for the games this does work in, the results will be much smoother gameplay, though a sufficiently overclocked Raspberry Pi 3B/3B+ may also be required to achieve full speed emulation.
