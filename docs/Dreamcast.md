@@ -39,7 +39,7 @@ The BIOS files needed are: **dc_boot.bin, dc_flash.bin**. The boot file is often
 
 Place your BIOS files in
 ```
-/home/pi/RetroPie/BIOS
+/home/pi/RetroPie/BIOS/dc
 ```
 
 BIOS files
