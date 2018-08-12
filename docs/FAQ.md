@@ -35,7 +35,7 @@ before setting a root password, the following must be edited
 
 look for 
 
-```PermitRootLogin without-password```
+```#PermitRootLogin without-password```
 
 change it to
 
