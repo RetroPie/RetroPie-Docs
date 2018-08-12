@@ -10,7 +10,7 @@ You first need to open the RGUI. There are two ways of accessing the RGUI:
 or
 - Use the default hotkey combo **select+x** to open the rgui from within a game
 
-If you haven't done so already, you'll need to enable the advanced settings by navigating to **Settings >> User Interface >> Show Advanced Settings**
+If you haven't done so already, you'll need to enable the advanced settings by navigating to **Settings >> User Interface >> Show Advanced Settings**, then enabling the Online Updater in **View >> Show Online Updater**
 
 Next, navigate to **Online Updater >> Update Cheats**
 
