@@ -1,4 +1,4 @@
-## READ FIRST - Why N64 emulation on the Pi difficult
+## READ FIRST - Why N64 emulation on the Pi is difficult
 
 N64 emulation on the raspberry pi is difficult due to the pi's under powered GPU (Graphics Processing Unit) and lack of certain GPU features found in more modern devices. For a more detailed explanation please see [this post](https://www.reddit.com/r/RetroPie/comments/6se5nj/why_n64_emulation_on_the_pi_isnt_so_great_from_a/) by a mupen64plus developer. 
 
