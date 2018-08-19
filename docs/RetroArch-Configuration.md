@@ -42,7 +42,7 @@ The following diagrams are for the 3 most common controllers: Super Nintendo, Xb
 After you've configured your controller the autoconfig will be created here:
 
 ```
-/opt/retropie/configs/all/retroarch-joypads
+/opt/retropie/configs/all/retroarch/autoconfig
 ```
 
 This is an example config for a USB SNES controller
