@@ -35,10 +35,14 @@ Optionally: 20. If the boot process is halting at the resizing of the ext4 parti
 
 ![resizing on first boot](http://www.pommehappy.fr/wp-content/uploads/2016/03/Capture-décran-2016-03-21-16.43.43.png)
 
-use command line : sudo rm 01_expand.sh
+use command line:
+
+    sudo rm 01_expand.sh
 
 If the 01-expand.sh file isn't yet in this directory, just delete the bash_completion.sh 
-with this command line : sudo rm bash_completion.sh
+with this command line:
+
+    sudo rm bash_completion.sh
 
 
 [retropiedownload]: http://blog.petrockblock.com/retropie/retropie-downloads/
