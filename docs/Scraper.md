@@ -21,7 +21,7 @@ Please refer to [Sselphs Scraper Advanced Configuration](Scraper#sselphs-scraper
 
 Make sure to update to the latest version of Retropie-Setup script if you're missing any options mentioned below!
 
-<img width="500" alt="sselph" src="https://cloud.githubusercontent.com/assets/8129878/21742130/4c1f6ebc-d4b6-11e6-8f8d-75bf2ecb7b30.png">
+<img src="https://raw.githubusercontent.com/UncleRus/__crap/master/sselph_scraper_shot.png" width="400">
 
 - **Scrape All Systems:** This will scrape all the systems the scraper supports
 
@@ -31,7 +31,7 @@ Make sure to update to the latest version of Retropie-Setup script if you're mis
 
 - **Thumbnails Only:** When enabled it will load lower resolution images to save space (enabled by default).
 
-- **Prefer screenshots:** When enabled it will load screenshots of the games instead of box art
+- **Prefer screenshots:** When enabled it will load screenshots of the games instead of box art.
 
 - **Max Image Width/Height:** Specify the max image width or height to scrape.
 
