@@ -1,6 +1,6 @@
 ## Retropie on Debian/Ubuntu/Mint
 
-A guide to build the RetroPie setup on Ubuntu 16.04 LTS x86 and Debian based distros.
+A guide to build the RetroPie setup on Ubuntu (16.04 LTS or later) x86 and Debian based distros.
 
 - [Install Ubuntu](#installation)
 - [Download RetroPie](#download-retropie)
@@ -12,7 +12,7 @@ A guide to build the RetroPie setup on Ubuntu 16.04 LTS x86 and Debian based dis
 
 ## Installation
 
-First, install Ubuntu 16.04 LTS or a related Debian based distro such as Linux Mint 17 and 18. ISO images can be used to create a bootable DVD or a USB stick.
+First, install Ubuntu (16.04 LTS or later) or a related Debian based distro such as Linux Mint 17 / 18. ISO images can be used to create a bootable DVD or a USB stick.
 http://www.ubuntu.com/download/desktop
 
 To run RetroPie-Setup, you must be a member of the group root/admin.
@@ -26,6 +26,8 @@ Update and upgrade the existing APT packages:
 Install the needed packages for the RetroPie setup script:
 
     sudo apt-get install -y git dialog unzip xmlstarlet
+
+NOTE: if you get any errors about any package not being found and you're using Ubuntu, make sure the `universe` APT repository has been added and enabled on the system by running `sudo add-apt-repository universe` and then starting again with the previous step. 
 
 Download the latest RetroPie setup script:
 
