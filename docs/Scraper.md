@@ -31,6 +31,8 @@ Make sure to update to the latest version of Retropie-Setup script if you're mis
 
 - **Thumbnails Only:** When enabled it will load lower resolution images to save space (enabled by default).
 
+- **Prefer screenshots:** When enabled it will load screenshots of the games instead of box art
+
 - **Max Image Width/Height:** Specify the max image width or height to scrape.
 
 - **Console Source:** Choose which database to scrape for console games: 
