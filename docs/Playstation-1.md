@@ -127,7 +127,7 @@ The BIOS is automatically chosen based upon the region of the ROM.
 
 ### Game Specific Control Information
 
-If you have a limited input method such as an snes-style controller or handheld, then the spreadsheet below will help you figure out which games you'll be able to play.
+If you have a limited input method such as an snes-style controller or handheld, then the spreadsheet below will help you figure out which games you will be able to play.
 
 https://docs.google.com/spreadsheets/d/1D4FKPOWCi11zhVvUcS8Bv4-IzyxH9MZRldugigTc59E/edit?usp=sharing
 
