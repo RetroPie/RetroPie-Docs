@@ -125,6 +125,14 @@ The BIOS is automatically chosen based upon the region of the ROM.
 
 ## Controls
 
+### Game Specific Control Information
+
+If you have a limited input method such as an snes-style controller or handheld, then the spreadsheet below will help you figure out which games you'll be able to play.
+
+https://docs.google.com/spreadsheets/d/1D4FKPOWCi11zhVvUcS8Bv4-IzyxH9MZRldugigTc59E/edit?usp=sharing
+
+>If you want to improve the spreadsheet, then request editing permission and you will be approved in a timely manner.
+
 ### lr-pcsx-rearmed & lr-beetle-psx Controls
 lr-pcsx-rearmed and lr-beetle-psx utilize Retroarch configurations.
 
