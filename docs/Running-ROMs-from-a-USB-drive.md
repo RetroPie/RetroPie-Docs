@@ -9,7 +9,7 @@ Rather than running everything from an SD card, it can be desirable to store and
 -  **Reliability**: USB storage can be less sensitive to corruption than SD cards.
 -  **Separation of data**: In the event that a RetroPie installation becomes corrupted or a new image is required, any ROMs, saves, etc, are not lost. Simply remove the USB stick, re-image the SD card, re-apply these setup instructions, and all that data is retained.
 -  **Easy ROM transfer**: When the system is off, you can remove the stick and plug it into any other computer and easily copy-and-paste ROMs into the correct folders.
--  **Speed**: USB transfer speeds can be faster than SD card transfer speeds (see http://www.roylongbottom.org.uk/Raspberry%20Pi%20Benchmarks.htm#anchor21).
+-  **Speed**: USB transfer speeds can be faster than SD card transfer speeds (see [Raspberry Pi Benchmarks](http://www.roylongbottom.org.uk/Raspberry%20Pi%20Benchmarks.htm#anchor21)).
 -  **Cost**: USB storage tends to be cheaper than the equivalent microSD card.
 -  **Capacity**: USB storage can reach huge capacities, whereas microSD is limited.
 -  **Compatibility**: microSD cards suffer from [compatibility issues](http://elinux.org/RPi_SD_cards) with Raspberry Pi systems. USB storage devices should mostly all work.
