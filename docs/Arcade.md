@@ -1,23 +1,47 @@
-# Getting Started with Arcade Emulation
+# Getting started with arcade emulation
 
-**Arcade emulation requires a different planning approach than console systems. Please read this entire page before beginning your RetroPie arcade emulation project.**
+**Arcade emulation requires a different approach than console emulation. Please read this entire page before beginning your RetroPie arcade emulation project.**
 
-## Step One: Choose an arcade emulator
+## Overview
 
-| System | Recommended MAME Emulator| Recommended FB Alpha Emulator|
+Here are the general steps you will follow. Each step is explained in detail in the sections below.
+
+1. **Choose your arcade emulator(s)**
+
+    RetroPie comes equipped with several arcade emulators. Depending on your hardware and software setup, some emulators are a better option than others.
+
+1. **Download the right ROMs**
+
+    We don't like telling people where to download ROMs. But we can tell you which ROM _versions_ to get, based on your setup.
+
+1. **Transfer ROMs to Raspberry Pi**
+
+    Arcade ROMs go in `/home/pi/RetroPie/roms/arcade`.
+
+## Step 1: Choose your arcade emulator(s)
+
+RetroPie's arcade emulators come in two main flavors: [MAME](MAME) and [FinalBurn Alpha](FinalBurn-Alpha).
+
+[MAME](MAME) is the most well-known and works with thousands of games. [FinalBurn Alpha](FinalBurn-Alpha) is optimized for classic beat-em-up games like those from [Neo Geo](Neo-Geo) and Capcom.
+
+RetroPie offers multiple versions of both MAME and FinalBurn Alpha. Older versions require less processing power, but newer versions support more games.
+
+Use this table as a guide when choosing an emulator version:
+
+| Raspberry Pi version | Recommended MAME Emulator| Recommended FB Alpha Emulator|
 | :---: | :---: | :---: |
-|Pi 2 and Pi 3| `lr-mame2003` | `lr-fbalpha`|
-|Pi 1 and Pi Zero| `mame4all` | `pi-fba`|
+|2 or 3| `lr-mame2003` | `lr-fbalpha`|
+|1 or Zero| `mame4all` | `pi-fba`|
 
-Other [MAME](MAME) and [FB Alpha](FinalBurn-Alpha) emulator versions are also available in RetroPie. Please be aware that earlier versions generally run faster than later versions, but also support fewer games.
+Learn about other available versions on the pages about [MAME](MAME) and [FinalBurn Alpha](FinalBurn-Alpha).
 
-**Further Reading**
+## Step 2: Download the right ROMs
 
-* [Arcade games and how to play them, A non-technical MAME and FBA tutorial by rbaker](https://retropie.org.uk/forum/topic/7247/guide-arcade-games-and-how-to-play-them-a-non-technical-mame-fba-tutorial)
-* [Instructions for how to set up FB Alpha as a separate Neo Geo system](Neo-Geo)
+In most countries, **downloading games is illegal unless you own legal copies of them**. We're not going to tell you where to download ROMs. A search engine may help. What follows is a technical description of compatibility between different emulators and ROM versions.
 
-## Step Two: Use the right ROM Set Version
-Start with a full Non-Merged ROM collection (not an individual ROM) with the exact MAME or FB Alpha version number for the emulator you wish to use. An incorrect version or missing files will cause most or all games to immediately exit. In other words, lr-mame2003 will only work correctly with a collection of MAME 0.78 ROMs, mame4all will only work with a collection of MAME 0.37b5 ROMs, and so on.
+In general, you will only get good results with a full ROM set. Incomplete sets (i.e. smaller collections of individual ROMs) are unlikely to work well. This is because a full ROM set contains certain common files shared by multiple ROMs. Without these files, most games will immediately exit.
+
+Each arcade emulator requires a different ROM set version. Not every ROM set contains the same games. This table tells you which ROM set version each emulator requires, and which games are in each set:
 
 | Emulator | Required ROM Version | # of ROMs | DAT File | Compatibility List |
 | :---: | :---: | :---: | :---: | :---: |
@@ -26,9 +50,21 @@ Start with a full Non-Merged ROM collection (not an individual ROM) with the exa
 | [pifba](FinalBurn-Alpha) | FB Alpha v0.2.96.71 | 684 | [.DAT](https://drive.google.com/file/d/0B2TMeZ6iEFvHaHUta2dQYk1HTGM/view?usp=sharing)| [List](https://docs.google.com/spreadsheets/d/1OZioLrz16ptaNbjQUDP5hhVzQDTOTn9Nz46Hbj3-06k/edit?usp=sharing) |
 | [lr-fbalpha](FinalBurn-Alpha) | FB Alpha v0.2.97.43 | 4896 | [.DAT](https://github.com/libretro/fbalpha/raw/master/dats/FB%20Alpha%20v0.2.97.42%20(ClrMame%20Pro%20XML).dat.zip)| [List](https://docs.google.com/spreadsheets/d/1GaqIIoiWbzKHwZ52S2xCSDQXILo81Ls1mHK6czKGAtM/edit?usp=sharing) |
 
+To sum up, for best results:
 
-**Further Reading**
+* use a full ROMset;
+* use a ROMset version that matches [the emulator you're using](#step-1-choose-your-arcade-emulators).
 
+## Step 3: Transfer ROMs to Raspberry Pi
+
+As mentioned earlier, arcade ROMs go in the folder `/home/pi/RetroPie/roms/arcade`. You can transfer ROMs to your Raspberry Pi in [multiple ways](Transferring-Roms).
+
+After transferring your ROMs, restart RetroPie. The games will appear in the Arcade section.
+
+## Further Reading
+
+- [Arcade games and how to play them, A non-technical MAME and FBA tutorial by rbaker](https://retropie.org.uk/forum/topic/7247/guide-arcade-games-and-how-to-play-them-a-non-technical-mame-fba-tutorial)
+- [Instructions for how to set up FB Alpha as a separate Neo Geo system](Neo-Geo)
 - RetroPie docs for [MAME](Mame) and [FB Alpha](FinalBurn-Alpha).
 - [How to use MAME with RetroPie Help Guide by Floob](https://retropie.org.uk/forum/topic/2859/how-to-use-mame-with-retropie-help-guide)
 - [Demystifying MAME ROMs Tutorial by ChoccyHobNob](http://choccyhobnob.com/tutorials/demystifying-mame-roms/).
