@@ -37,11 +37,11 @@ Learn about other available versions on the pages about [MAME](MAME) and [FinalB
 
 ## Step 2: Download the right ROMs
 
-In most countries, **downloading games is illegal unless you own legal copies of them**. We're not going to tell you where to download ROMs. A search engine may help. What follows is a technical description of compatibility between different emulators and ROM versions.
+In most countries, **downloading games is illegal unless you also own legal copies of those games**. We're not going to tell you where to download ROMs. A search engine may help. What follows is a technical description of compatibility between different emulators and ROM versions.
 
-In general, you will only get good results with a full ROM set. Incomplete sets (i.e. smaller collections of individual ROMs) are unlikely to work well. This is because a full ROM set contains certain common files shared by multiple ROMs. Without these files, most games will immediately exit.
+In general, you will only get good results with a full "reference set" of ROMs. Incomplete ROM sets (i.e. smaller collections of individual ROMs) are unlikely to work well. This is because a reference set contains common files shared by multiple ROMs. Without these files, most games will immediately exit.
 
-Each arcade emulator requires a different ROM set version. Not every ROM set contains the same games. This table tells you which ROM set version each emulator requires, and which games are in each set:
+There are a number of different reference set versions. Different versions contain different games (although there's plenty of overlap). This table tells you which reference set version you need for each emulator, and which games are in each set:
 
 | Emulator | Required ROM Version | # of ROMs | DAT File | Compatibility List |
 | :---: | :---: | :---: | :---: | :---: |
@@ -52,12 +52,12 @@ Each arcade emulator requires a different ROM set version. Not every ROM set con
 
 To sum up, for best results:
 
-* use a full ROMset;
-* use a ROMset version that matches [the emulator you're using](#step-1-choose-your-arcade-emulators).
+* use a full ROM reference set;
+* use the reference set version that matches [the emulator you're using](#step-1-choose-your-arcade-emulators).
 
 ## Step 3: Transfer ROMs to Raspberry Pi
 
-As mentioned earlier, arcade ROMs go in the folder `/home/pi/RetroPie/roms/arcade`. You can transfer ROMs to your Raspberry Pi in [multiple ways](Transferring-Roms).
+You can transfer ROMs in [multiple ways](Transferring-Roms). If you downloaded a reference set zip file, extract the zip, then copy the contents of the `roms` folder to `/home/pi/RetroPie/roms/arcade` on your Raspberry Pi. 
 
 After transferring your ROMs, restart RetroPie. The games will appear in the Arcade section.
 
