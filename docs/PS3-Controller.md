@@ -158,3 +158,6 @@ if you have any issues with the controller you can debug it with `sudo jstest /d
 
 #### Disconnect Bluetooth Controller
 To disconnect the controller, hold down the ps3 button for 10 seconds.
+
+#### Ghost inputs, controller sending key presses on its own
+That's a problem with the controller itself rather than RetroPie. The controller sends very short key presses (usually d-pad directions) that are commonly ignored by games, but might be noticed outside them. Even genuine brand-new controllers may or may not suffer this issue. The same problem has been observed on other brands like Buffalo and Wii. If analog input isn't strictly necessary to you, you can try to map one of the sticks as a d-pad and adjust its dead zone if you still have phantom menu navigation.
