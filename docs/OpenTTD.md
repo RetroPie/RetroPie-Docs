@@ -38,6 +38,6 @@ Then finally, in order to get your music playing you have to start a new game an
 
 ![sounds4](https://cloud.githubusercontent.com/assets/10035308/11429543/c4faa84a-9436-11e5-8c0d-907ce61dad2c.png)
 
-Optionally you can also try to download **zBase** for 32-bit HD graphics and change the Base graphics set in the game options to zBase instead of OpenGFX.
+_Optionally_, you can also download **zBase** for 32-bit HD graphics and change the Base graphics set in the game options to zBase instead of OpenGFX.
 
 For more information on how to play the game see the Official OpenTTD Wiki: [https://wiki.openttd.org/OpenTTD](https://wiki.openttd.org/OpenTTD)
