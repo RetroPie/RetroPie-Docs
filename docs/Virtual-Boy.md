@@ -21,6 +21,16 @@ Place your Virtual Boy ROMs in
 
 ## Controls
 
+### Game Specific Control Information
+
+If you have a limited input method such as an snes-style controller or handheld, then the spreadsheet below will help you figure out which games you will be able to play.
+
+[Virtual Boy - General Game Info](https://docs.google.com/spreadsheets/d/1Om4WsHFk7y5xyc2HMFH3IRUclgkRG4XSe452yiJbykk/edit?usp=sharing)
+
+>If you want to improve the spreadsheet, then request editing permission and you will be approved in a timely manner.
+
+### lr-beetle-vb Controls
+
 lr-beetle-vb utilises Retroarch configurations
 
 Add custom retroarch controls to the retroarch.cfg file in
