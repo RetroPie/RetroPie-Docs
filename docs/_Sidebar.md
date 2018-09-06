@@ -59,6 +59,7 @@
 * [PC-FX](PC-FX)
 * [PlayStation 1](Playstation-1)
 * [PlayStation 2](Playstation-2)
+* [Pokemon Mini](Pokemon-Mini)
 * [PSP](PSP)
 * [ResidualVM](ResidualVM)
 * [SAM Coupé](Sam-Coupe)
