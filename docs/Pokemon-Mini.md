@@ -6,7 +6,7 @@ _The Pokemon Mini is a handheld game console that was released by Nintendo in 20
 
 | Emulator | Rom Folder | Extension |
 | :---: | :---: | :---: |
-| [lr-pokemini](https://github.com/libretro/pokemini) | pokemini | .min |
+| [lr-pokemini](https://github.com/libretro/pokemini) | pokemini | .min .zip |
 
 ## Emulator: [lr-pokemini](https://github.com/libretro/pokemini)
 This emulator can be installed from the experimental menu of the [RetroPie-Setup script.](https://github.com/RetroPie/RetroPie-Setup/wiki/Updating-RetroPie#using-the-retropie-setup-script)
@@ -15,12 +15,26 @@ A bug in the emulator causes two titles to not be able to save properly.  These 
 
 ## ROMS
 
-Accepted File Extensions: **.min** 
+Accepted File Extensions: **.min .zip** 
 
 Place your Pokemon Mini ROMs in:
 ```
 /home/pi/RetroPie/roms/pokemini
 ```
+## BIOS
+
+### lr-pokemini
+
+lr-pokemini supports the **bios.min** BIOS file, but it isn't required.
+
+Place the BIOS in
+```
+/home/pi/RetroPie/BIOS
+```
+
+| Recognized Name | No-Intro Name | md5sum | CRC32 |
+| :--: | :--: | :--: | :--: |
+| bios.min | [BIOS] Nintendo Pokemon Mini (World) | 1E4FB124A3A886865ACB574F388C803D | AED3C14D |
 
 ## Controls
 
