@@ -28,9 +28,9 @@ Place the BIOS in
 /home/pi/RetroPie/BIOS
 ```
 
-| Name | md5sum | CRC32 |
-| :--: | :--: | :--: |
-| Family Computer Disk System (Japan) (Rev 1) | ca30b50f880eb660a320674ed365ef7a | 5e607dcf |
+| Recognized Name | No-Intro Name | md5sum | CRC32 |
+| :--: | :--: | :--: | :--: |
+| disksys.rom | [BIOS] Family Computer Disk System (Japan) (Rev 1) | ca30b50f880eb660a320674ed365ef7a | 5e607dcf |
 
 ## Controls
 
