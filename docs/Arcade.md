@@ -10,11 +10,11 @@ Here are the general steps you will follow. Each step is explained in detail in 
 
     RetroPie comes equipped with several arcade emulators. Depending on your hardware and software setup, some emulators are a better option than others.
 
-1. **Download the right ROMs**
+2. **Download the right ROMs**
 
     We don't like telling people where to download ROMs. But we can tell you which ROM _versions_ to get, based on your setup.
 
-1. **Transfer ROMs to Raspberry Pi**
+3. **Transfer ROMs to Raspberry Pi**
 
     Arcade ROMs go in `/home/pi/RetroPie/roms/arcade`.
 
