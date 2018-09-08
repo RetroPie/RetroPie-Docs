@@ -51,6 +51,10 @@ Follow the guide on Transferring ROMs [HERE](Transferring-Roms).
 
 Unlike some other system, arcade games should be zipped, if you extract them, they won't work.
 
+You can place any of the rom sets in the `arcade` rom folder but you'll be required to pick the correct emulator for your rom set through the [runcommand menu](runcommand). 
+
+They can also be placed in their respective emulator rom folders, this information is included in the system pages: [MAME](MAME), [FBA](FinalBurn-Alpha) 
+
 ## Further Reading
 
 - [Arcade games and how to play them, A non-technical MAME and FBA tutorial by rbaker](https://retropie.org.uk/forum/topic/7247/guide-arcade-games-and-how-to-play-them-a-non-technical-mame-fba-tutorial)
