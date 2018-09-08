@@ -4,19 +4,9 @@
 
 ## Overview
 
-Here are the general steps you will follow. Each step is explained in detail in the sections below.
+RetroPie comes with multiple arcade emulators and each emulator requires a specific romset to work.
 
-1. **Choose your arcade emulator(s)**
-
-    RetroPie comes equipped with several arcade emulators. Depending on your hardware and software setup, some emulators are a better option than others.
-
-2. **Download the right ROMs**
-
-    We don't like telling people where to download ROMs. But we can tell you which ROM _versions_ to get, based on your setup.
-
-3. **Transfer ROMs to Raspberry Pi**
-
-    Arcade ROMs go in `/home/pi/RetroPie/roms/arcade`.
+Each emulator is optimised for different hardware and different games so read the following sections to know which emulator to use and subsequently which romset is required for that emulator.
 
 ## Step 1: Choose your arcade emulator(s)
 
@@ -24,7 +14,7 @@ RetroPie's arcade emulators come in two main flavors: [MAME](MAME) and [FinalBur
 
 [MAME](MAME) is the most well-known and works with thousands of games. [FinalBurn Alpha](FinalBurn-Alpha) is optimized for classic beat-em-up games like those from [Neo Geo](Neo-Geo) and Capcom.
 
-RetroPie offers multiple versions of both MAME and FinalBurn Alpha. Older versions require less processing power, but newer versions support more games.
+RetroPie includes multiple versions of both MAME and FinalBurn Alpha. Older versions require less processing power, but newer versions support more games.
 
 Use this table as a guide when choosing an emulator version:
 
@@ -35,13 +25,13 @@ Use this table as a guide when choosing an emulator version:
 
 Learn about other available versions on the pages about [MAME](MAME) and [FinalBurn Alpha](FinalBurn-Alpha).
 
-## Step 2: Download the right ROMs
+## Step 2: Select the right ROM set
 
-In most countries, **downloading games is illegal unless you also own legal copies of those games**. We're not going to tell you where to download ROMs. A search engine may help. What follows is a technical description of compatibility between different emulators and ROM versions.
+ROMS are not included with RetroPie. Copyright law varies by country and is up to the user to determine legality.
 
-In general, you will only get good results with a full "reference set" of ROMs. Incomplete ROM sets (i.e. smaller collections of individual ROMs) are unlikely to work well. This is because a reference set contains common files shared by multiple ROMs. Without these files, most games will immediately exit.
+In general, you will only get good results with a full set of ROMs. Incomplete ROM sets (i.e. smaller collections of individual ROMs) are unlikely to work well. This is because certain roms (known as child roms) are dependent on files in other ROMs (known as parent ROMs) for example Pacman is actually an american clone (child) of the original japanese game Puckman (Parent) . Without both files, most games will immediately exit.
 
-There are a number of different reference set versions. Different versions contain different games (although there's plenty of overlap). This table tells you which reference set version you need for each emulator, and which games are in each set:
+There are a number of different rom set versions. Different versions contain different games (although there's plenty of overlap). This table tells you which rom set version you need for each emulator, and which games are in each set:
 
 | Emulator | Required ROM Version | # of ROMs | DAT File | Compatibility List |
 | :---: | :---: | :---: | :---: | :---: |
@@ -52,14 +42,14 @@ There are a number of different reference set versions. Different versions conta
 
 To sum up, for best results:
 
-* use a full ROM reference set;
-* use the reference set version that matches [the emulator you're using](#step-1-choose-your-arcade-emulators).
+* use a full ROM set;
+* use the ROM set version that matches [the emulator you're using](#step-1-choose-your-arcade-emulators).
 
 ## Step 3: Transfer ROMs to Raspberry Pi
 
-You can transfer ROMs in [multiple ways](Transferring-Roms). If you downloaded a reference set zip file, extract the zip, then copy the contents of the `roms` folder to `/home/pi/RetroPie/roms/arcade` on your Raspberry Pi. 
+Follow the guide on Transferring ROMs [HERE](Transferring-Roms). 
 
-After transferring your ROMs, restart RetroPie. The games will appear in the Arcade section.
+Unlike some other system, arcade games should be zipped, if you extract them, they won't work.
 
 ## Further Reading
 
