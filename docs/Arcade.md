@@ -38,7 +38,7 @@ There are a number of different rom set versions. Different versions contain dif
 | [mame4all](MAME) | MAME 0.37b5 | 2270 | [.DAT](https://drive.google.com/file/d/0B2TMeZ6iEFvHVUNfWHpUZk82bkk/view?usp=sharing)| [List](https://docs.google.com/spreadsheets/d/1SHspjyHavY9-PKbO2swDr52BS2Wl_mB_Vjx2Z1SXiD8/edit) |
 | [lr-mame2003](MAME) | MAME 0.78 | 4705 | [.DAT](https://drive.google.com/file/d/0B2TMeZ6iEFvHTkc2TXZOOFhCRzQ/view?usp=sharing)| [List](https://docs.google.com/spreadsheets/d/1LP1MELCvcxu7TfiowF_0ZuvRVEMqlfQyTVetnOJvuJc/edit?usp=sharing) |
 | [pifba](FinalBurn-Alpha) | FB Alpha v0.2.96.71 | 684 | [.DAT](https://drive.google.com/file/d/0B2TMeZ6iEFvHaHUta2dQYk1HTGM/view?usp=sharing)| [List](https://docs.google.com/spreadsheets/d/1OZioLrz16ptaNbjQUDP5hhVzQDTOTn9Nz46Hbj3-06k/edit?usp=sharing) |
-| [lr-fbalpha](FinalBurn-Alpha) | FB Alpha v0.2.97.43 | 4896 | [.DAT](https://github.com/libretro/fbalpha/raw/master/dats/FB%20Alpha%20v0.2.97.42%20(ClrMame%20Pro%20XML).dat.zip)| [List](https://docs.google.com/spreadsheets/d/1GaqIIoiWbzKHwZ52S2xCSDQXILo81Ls1mHK6czKGAtM/edit?usp=sharing) |
+| [lr-fbalpha](FinalBurn-Alpha) | FB Alpha v0.2.97.43 | 4896 | [.DAT](https://raw.githubusercontent.com/libretro/fbalpha/master/dats/FB%20Alpha%20v0.2.97.43%20(ClrMame%20Pro%20XML).dat)| [List](https://docs.google.com/spreadsheets/d/1GaqIIoiWbzKHwZ52S2xCSDQXILo81Ls1mHK6czKGAtM/edit?usp=sharing) |
 
 To sum up, for best results:
 
