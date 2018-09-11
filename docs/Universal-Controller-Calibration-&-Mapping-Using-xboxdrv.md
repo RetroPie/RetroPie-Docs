@@ -320,10 +320,16 @@ The following is just an example, everyone should change the configuration based
 #Get ROM name striping full path
 rom="${3##*/}"
 
+### Try to automatically find the correct event[•] of the connected controllers
+controller1=`cat /proc/bus/input/devices | egrep -i "js*" | sort | grep -o 'event[0-9]' | sed -n -e '1{p;q}'`
+controller2=`cat /proc/bus/input/devices | egrep -i "js*" | sort | grep -o 'event[0-9]' | sed -n -e '2{p;q}'`
+controller3=`cat /proc/bus/input/devices | egrep -i "js*" | sort | grep -o 'event[0-9]' | sed -n -e '3{p;q}'`
+controller4=`cat /proc/bus/input/devices | egrep -i "js*" | sort | grep -o 'event[0-9]' | sed -n -e '4{p;q}'`
+
 ### Set variables for your joypad and emulator
 ### Basic Configuraions - Standard controller mappings 
 basicPS3="sudo /opt/retropie/supplementary/xboxdrv/bin/xboxdrv >/dev/null \
-	--evdev /dev/input/event2 \
+	--evdev /dev/input/$controller1 \
 	--silent \
 	--detach-kernel-driver \
 	--force-feedback \
