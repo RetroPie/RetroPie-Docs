@@ -68,6 +68,7 @@
 * [Sega 32X](Sega-32X)
 * [Sega CD](Sega-CD)
 * [Sega SG-1000](SG-1000)
+* [Sharp X1](Sharp-X1)
 * [Sharp X68000](Sharp-X68000)
 * [Super Nintendo Entertainment System](Super-Nintendo-Entertainment-System)
 * [TI-99/4A](TI-99)
