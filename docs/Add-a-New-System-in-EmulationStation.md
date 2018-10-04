@@ -10,7 +10,7 @@ Each system in EmulationStation is defined in the file `es_systems.cfg`. The def
 
 You can create a custom copy with the following command:
 
-	sudo cp /etc/emulationstation/es_systems.cfg /opt/retropie/configs/all/emulationstation/es_systems.cfg.
+	sudo cp /etc/emulationstation/es_systems.cfg /opt/retropie/configs/all/emulationstation/es_systems.cfg
 
 To appreciate how this process works, it is worth becoming familiar with the contents of the `es_systems.cfg` file. Each system will have an entry like the example for NES below.
 
