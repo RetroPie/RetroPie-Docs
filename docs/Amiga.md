@@ -8,9 +8,47 @@ _The Amiga was a family of personal computers released by Commodore in the 1980'
 
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
+| [Amiberry](https://github.com/midwan/amiberry) | amiga  | .lha | kick13.rom, kick31.rom | Hardcoded |
 | [UAE4ALL2](https://github.com/RetroPie/uae4all2) | amiga  | .adf | kick13.rom, kick20.rom, kick31.rom | Hardcoded |
 | [UAE4ARM](https://github.com/Chips-fr/uae4arm-rpi/) | amiga  | .zip .adf .dms .exe .adz .rp9 | kick13.rom, kick20.rom, kick31.rom | Hardcoded |
 | [lr-puae](https://github.com/libretro/libretro-uae) | amiga | .zip .uae | kick13.rom, kick20.rom, kick31.rom | /opt/retropie/configs/amiga/retroarch.cfg |
+
+## Emulators: [Amiberry](https://github.com/midwan/amiberry)
+
+Amiberry is a fork of UAE4ARM with support for WHDLoad, which offers a better console-like experience.
+
+Please refer to the official Amiberry wiki for [**a detailed step-by-step installation and config guide**](https://github.com/midwan/amiberry/wiki/Using-Amiberry-WHDBooter-with-RetroPie).
+
+## ROMS
+
+For the optimal Amiberry experience, it is recommended that pre-installed WHDLoad packages are used. Amiberry has been designed to have compatibility with the 'Retroplay' WHDLoad packs. For more information on WHDLoad packages, see [here](https://github.com/midwan/amiberry/wiki/WHDLoad-Booter-(WHDBooter)-F.A.Q.#what-is-whdload-anyway).
+
+Accepted File Extensions: **.lha**
+
+ Place your WHDLoad packages in
+
+```shell
+/home/pi/RetroPie/roms/amiga/
+```
+More information on adding game data can be found [here](https://github.com/midwan/amiberry/wiki/Using-Amiberry-WHDBooter-with-RetroPie-(Step-3)).
+
+## BIOS
+
+Full documentation on the Kickstart roms required by Amiberry can be found [here](https://github.com/midwan/amiberry/wiki/Using-Amiberry-WHDBooter-with-RetroPie-(Step-2)).
+
+Place your Kickstart roms in 
+
+```shell
+/home/pi/RetroPie/BIOS/
+```
+## Controls
+
+Amiberry makes use the RetroArch configs created on [first controller configuration](https://retropie.org.uk/docs/Controller-Configuration/) in EmulationStation. Consequently, hotkey+X will bring up the UI and hotkey+Start can be used to exit Amiberry. For full documentation, please refer [here](https://github.com/midwan/amiberry/wiki/RetroArch-Commands).
+
+Default controller choice can be edited in `/opt/retropie/configs/amiga/amiberry/whdboot/hostprefs.conf`. It is also possible to set the default controller choice as well as other Amiberry settings for individual games. For full documentation, please refer [here](https://github.com/midwan/amiberry/wiki/WHDLoad-Auto-booting#game-specific-settings-improving-game-compatibility).
+
+It is possible to customise controls for individual games using the Amiberry UI. For full documentation, please refer [here](https://github.com/midwan/amiberry/wiki/Customised-Controls).
+
 
 ## Emulators: [UAE4ALL2](https://github.com/RetroPie/uae4all2), [UAE4ARM](https://github.com/Chips-fr/uae4arm-rpi/)
 
