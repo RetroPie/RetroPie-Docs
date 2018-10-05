@@ -1,30 +1,30 @@
 ![](http://www.grandrapidsdevs.com/wp-content/uploads/2015/06/kodiLogo.png)
 ***
 
-_Kodi is a Home Media Server (basically your own personal netflix) formerly known as XBMC. Kodi is currently an optional build that can be installed from the optional menu of the setup script._
+_Kodi is a Home Media Server (basically your own personal Netflix) formerly known as XBMC. Kodi is currently an optional build that can be installed from the optional menu of the setup script._
 
 ***
 ## General Information
 
 See here for more info: http://kodi.tv/
 
-See [here](http://blog.petrockblock.com/forums/topic/kodi-tab-in-emulationstation/) for more information on setting up Kodi
+See [here](http://blog.petrockblock.com/forums/topic/kodi-tab-in-emulationstation/) for more information on setting up Kodi.
 
 ## Installation
 
 Visit the RetroPie-Setup Screen, select Optional Packages, and select Kodi.  Installation can take 10 minutes.  After installation, you will be able to go to the Ports section and view Kodi as an option.
 
-RetroPie currently installs Kodi 17.3 Krypton
+RetroPie currently installs Kodi 17.6 "Krypton".
 
 ### PVRs Installation
 
-By default, RetroPie doesn't install any PVRs. If you want to install them, run the following commands in a terminal:
+By default, RetroPie doesn't install any PVRs (personal video recorders). If you want to install them, run the following commands in a terminal:
 
 Search available PVRs:
 ````
 apt-cache search kodi-pvr
 ````
-Install one PVR, in this case IPTV Simple Client:
+Install one PVR, in this case the IPTV Simple Client:
 ````
 sudo apt-get install kodi-pvr-iptvsimple
 ````
@@ -35,7 +35,7 @@ sudo apt-get install kodi-pvr*
 
 ## Joypad Support
 
-The latest Kodi module (Kodi 17/17.3) includes joypad support by default. Some joypads are detected and work out-of-the-box like PS3, Xbox360, Logitech, Ibuffalo, Retrolink Snes and more. If your joypad doesn't work OOTB or you prefer to add your custom keymap, create the file `/home/pi/.kodi/userdata/keymaps/joystick.xml` like the following
+The latest Kodi module (Kodi 17/17.6) includes joypad support by default. Some joypads are detected and work out-of-the-box like PS3, Xbox360, Logitech, iBuffalo, Retrolink SNES, and more. If your joypad doesn't work OOTB or you prefer to add your custom keymap, create the file `/home/pi/.kodi/userdata/keymaps/joystick.xml` like the following:
 
 **Example** `joystick.xml`
 ```
@@ -54,7 +54,7 @@ The latest Kodi module (Kodi 17/17.3) includes joypad support by default. Some j
 </keymap>
 ```
 
-You can see what your joystick name is with `cat /proc/bus/input/devices`
+You can see what your joystick name is with `cat /proc/bus/input/devices`.
 
 For more information on how to create your custom keymaps for Kodi, check [here](http://kodi.wiki/view/keymap)
 
@@ -73,15 +73,15 @@ If you are experiencing problems with your Xbox controls, see the following exam
 
 ## Kodi as its own system instead of in ports
 
-The first method here is a cleaner method that wont mess with the RetroPie setup script updates (note that in the future you will have to manually update the es_systems.cfg in .emulationstation as they aren't overwritten on updates from RetroPie). Once you've installed Kodi from the experimental menu of the setup script, Drop into a terminal with f4 or access the pi over [SSH](https://github.com/retropie/retropie-setup/wiki/ssh)
+The first method here is a cleaner method that won't mess with the RetroPie setup script updates. (Note: in the future, you will have to manually update `/home/pi/.emulationstation/es_systems.cfg`, as it will not be overwritten by RetroPie updates.) Once you've installed Kodi from the optional menu of the setup script, drop into a terminal with F4 or access the pi over [SSH](https://github.com/retropie/retropie-setup/wiki/ssh).
 
-create an es_systems.cfg file so that Kodi will show up in emulationstation
+Create an es_systems.cfg file so that Kodi will show up in EmulationStation:
 
 ```
-sudo cp /etc/emulationstation/es_systems.cfg /home/pi/.emulationstation/es_systems.cfg
-sudo nano /home/pi/.emulationstation/es_systems.cfg
+cp /etc/emulationstation/es_systems.cfg /home/pi/.emulationstation/es_systems.cfg
+nano /home/pi/.emulationstation/es_systems.cfg
 ```
-add the following codeblock anywhere after `<systemList>` and before `</systemList>`:
+Add the following codeblock anywhere after `<systemList>` and before `</systemList>`:
 ```
   <system>
     <fullname>Kodi</fullname>
@@ -94,37 +94,26 @@ add the following codeblock anywhere after `<systemList>` and before `</systemLi
   </system>
 ```
 
-save you changes with `ctrl+x` , `y` , `enter`
+Save your changes with `ctrl+x` , `y` , `enter`.
 
-then make a kodi rom directory
+Then make a Kodi ROM directory:
 
 ```
 mkdir /home/pi/RetroPie/roms/kodi
 ```
 
-make a launch script:
+Create the launch script and make it executable:
 
 ```
-sudo nano /home/pi/RetroPie/roms/kodi/kodi.sh
+echo "kodi-standalone" > /home/pi/RetroPie/roms/kodi/kodi.sh
+chmod +x /home/pi/RetroPie/roms/kodi/kodi.sh
 ```
 
-add the following line:
-
-```
-kodi-standalone
-```
-save you changes with `ctrl+x` , `y` , `enter`
-
-make the launch script executable:
-```
-sudo chmod +x /home/pi/RetroPie/roms/kodi/kodi.sh
-```
-
-type `emulationstation` to go back into emulationstation and kodi should be there as its own system. 
+Type `emulationstation` to go back into EmulationStation, and Kodi should be there as its own system. 
 
 ## Adding a VPN
 
-Install Dependencies:
+Install dependencies:
 
 ```
 sudo apt-get update
@@ -138,19 +127,19 @@ From the terminal in RetroPie Download Addon:
 wget https://github.com/Zomboided/repository.zomboided.plugins/releases/download/1.0.0/repository.zomboided.plugins-1.0.0.zip
 ```
 
-In Kodi
+In Kodi:
 
-- go to addons
+- Go to addons
 - Select the open box icon
 - Install from Zip
-- navigate to where you just downloaded the repo
+- Navigate to where you just downloaded the repo
 - Install the repository
 - Go back to addons
-- select the open box icon
+- Select the open box icon
 - Now select install from repository
 - Select VPN Manager for OpenVPN
 
-Then follow the directions to configure your VPN provider. If it's unsupported like NordVPN you can set it to user defined and manually import the server configurations and set them up as their own source in the file manager on kodi so they are accessible to the addon. 
+Then follow the directions to configure your VPN provider. If it's unsupported (like NordVPN) you can set it to user defined, manually import the server configurations, and set them up as their own source in the Kodi file manager so they are accessible to the addon. 
 
 ## Old configs
 
