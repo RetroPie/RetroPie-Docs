@@ -7,7 +7,7 @@ _This console, known as the Mega Drive everywhere except in the USA where it was
 
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
-| [lr-genesis-plus-gx](https://github.com/libretro/Genesis-Plus-GX) | megadrive  | .7z .bin .gen .md .sg .smd .zip | none | /opt/retropie/configs/megadrive/retroarch.cfg |
+| [lr-genesis-plus-gx](https://github.com/libretro/Genesis-Plus-GX) | megadrive  | .7z .bin .gen .md .sg .smd .zip | bios_MD.bin (optional)| /opt/retropie/configs/megadrive/retroarch.cfg |
 | [lr-picodrive](https://github.com/libretro/picodrive) | megadrive  | .7z .bin .gen .md .smd .zip | none | /opt/retropie/configs/megadrive/retroarch.cfg |
 | [DGen](http://dgen.sourceforge.net/) | megadrive | .bin .md .smd | none | /opt/retropie/configs/megadrive/dgenrc |
 
@@ -24,7 +24,14 @@ or
 ```
 /home/pi/RetroPie/roms/genesis (symlinked to megadrive folder to remove confusion)
 ```
+## BIOS
 
+lr-genesis-plus-gx can load MegaDrive TMSS startup ROM (bootrom): **bios_MD.bin**
+
+Place your bios_MD.bin BIOS file in
+```
+/home/pi/RetroPie/BIOS
+```
 ## Controls
 
 There are two methods for configuring controls - one way for both lr-genesis-plus-gx and lr-picodrive, and another way for DGen.
