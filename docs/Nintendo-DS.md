@@ -6,8 +6,8 @@ The Nintendo DS is a handheld video game console that was released by Nintendo i
 
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
-| [DraStic](http://drastic-ds.com/) | nds | .nds .zip | nds_bios_arm7.bin (Optional), nds_bios_arm9.bin (Optional), nds_firmware.bin (Optional) | /opt/retropie/configs/nds/drastic/config/drastic.cfg |
-| [lr-desmume](https://github.com/libretro/desmume) | nds | .nds .zip | none | /opt/retropie/configs/nds/retroarch.cfg |
+| [DraStic](http://drastic-ds.com/) | nds | .nds .zip | nds_bios_arm7.bin (optional), nds_bios_arm9.bin (optional), nds_firmware.bin (optional) | /opt/retropie/configs/nds/drastic/config/drastic.cfg |
+| [lr-desmume](https://github.com/libretro/desmume) | nds | .nds .zip | bios_arm7.bin (optional), bios_arm9.bin (optional), firmware.bin (optional) | /opt/retropie/configs/nds/retroarch.cfg |
 
 ## Emulator: [DraStic](http://drastic-ds.com/)
 
@@ -43,7 +43,12 @@ Note that lr-desmume is very experimental and lags quite a bit even with an over
 
 ## BIOS
 
-Not needed
+lr-desmume can load BIOS file: **bios_arm7.bin**, **bios_arm9.bin** and **firmware.bin**
+
+Place your bios_arm7.bin, bios_arm9.bin and firmware.bin BIOS file in
+```
+/home/pi/RetroPie/BIOS
+```
 
 ## ROMS
 Accepted File Extensions: **.nds .zip**
