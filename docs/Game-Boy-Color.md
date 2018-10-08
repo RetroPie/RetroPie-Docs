@@ -7,9 +7,9 @@ _The Game Boy Color was an 8 bit handheld gaming console released by Nintendo in
 
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
-| [lr-gambatte](https://github.com/libretro/gambatte-libretro) | gbc  | .7z .gbc .zip | none | /opt/retropie/configs/gbc/retroarch.cfg |
+| [lr-gambatte](https://github.com/libretro/gambatte-libretro) | gbc  | .7z .gbc .zip | gbc_bios.bin (optional)| /opt/retropie/configs/gbc/retroarch.cfg |
 | [lr-tgbdual](https://github.com/libretro/tgbdual-libretro) | gbc  | .7z .gbc .zip | none | /opt/retropie/configs/gb/retroarch.cfg |
-| [lr-mgba](https://github.com/libretro/mgba) | gbc  | .7z .gb .zip | gbc_bios.bin sgb_bios.bin | /opt/retropie/configs/gbc/retroarch.cfg |
+| [lr-mgba](https://github.com/libretro/mgba) | gbc  | .7z .gb .zip | gbc_bios.bin (optional), sgb_bios.bin (optional) | /opt/retropie/configs/gbc/retroarch.cfg |
 
 ## Emulators: [lr-gambatte](https://github.com/libretro/gambatte-libretro), [lr-tgbdual](https://github.com/libretro/tgbdual-libretro),  [lr-mgba](https://github.com/libretro/mgba)
 
@@ -27,6 +27,7 @@ Place your Game Boy Color ROMs in
 ```
 
 ## BIOS
+lr-gambatte can load external BIOS for Game Boy Color (**gbc_bios.bin**).
 
 lr-mgba can load external BIOS for Game Boy Color (**gbc_bios.bin**) and Super Game Boy (**sgb_bios.bin**).
 
