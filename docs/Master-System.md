@@ -7,7 +7,7 @@ _The Sega Master System was a 4th generation video game console released by Sega
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
 | [lr-picodrive](https://github.com/libretro/picodrive) | mastersystem  | .7z .bin .sms .zip | none | /opt/retropie/configs/mastersystem/retroarch.cfg |
-| [lr-genesis-plus-gx](https://github.com/libretro/Genesis-Plus-GX) | mastersystem  | .7z .bin .sms .zip | none | /opt/retropie/configs/mastersystem/retroarch.cfg |
+| [lr-genesis-plus-gx](https://github.com/libretro/Genesis-Plus-GX) | mastersystem  | .7z .bin .sms .zip | bios_E.sms (optional), bios_U.sms (optional), bios_J.sms (optional) | /opt/retropie/configs/mastersystem/retroarch.cfg |
 | [Osmose](https://github.com/RetroPie/osmose-rpi) | mastersystem  | .sms | none | /home/pi/osmose_files/osmose.ini |
 
 ## Emulators: [Osmose](https://github.com/RetroPie/osmose-rpi), [lr-genesis-plus-gx](https://github.com/libretro/Genesis-Plus-GX), [lr-picodrive](https://github.com/libretro/picodrive)
@@ -20,6 +20,14 @@ Accepted File Extensions: **.7z .bin .sms .zip**
 Place your Master System ROMs in
 ```
 /home/pi/RetroPie/roms/mastersystem
+```
+## BIOS
+
+lr-genesis-plus-gx can load BIOS file: **bios_E.sms**, **bios_U.sms** and **bios_J.sms**
+
+Place your bios_E.sms, bios_U.sms and bios_J.sms BIOS file in
+```
+/home/pi/RetroPie/BIOS
 ```
 ## Controls
 
