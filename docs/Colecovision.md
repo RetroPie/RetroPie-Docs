@@ -6,7 +6,7 @@ _The Colecovision is a home video game console released by Coleco in 1982. It fe
 
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
-| [CoolCV](http://atariage.com/forums/topic/240800-coolcv-emulator-for-mac-os-x-linux-windows-and-raspberry/page-1) | coleco  | .bin .col .rom .zip | coleco.rom | /opt/retropie/configs/coleco/coolcv_mapping.txt |
+| [CoolCV](http://atariage.com/forums/topic/240800-coolcv-emulator-for-mac-os-x-linux-windows-and-raspberry/page-1) | coleco  | .bin .col .rom .zip | none (integrated) | /opt/retropie/configs/coleco/coolcv_mapping.txt |
 | [lr-blueMSX](https://github.com/libretro/blueMSX-libretro) | coleco  | .bin .col .rom .zip | coleco.rom | /opt/retropie/configs/coleco/retroarch.cfg |
 
 ## Emulators [CoolCV](http://atariage.com/forums/topic/240800-coolcv-emulator-for-mac-os-x-linux-windows-and-raspberry/page-1), [lr-blueMSX](https://github.com/libretro/blueMSX-libretro)
