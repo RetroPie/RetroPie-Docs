@@ -8,10 +8,10 @@ _The Amiga was a family of personal computers released by Commodore in the 1980'
 
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
-| [Amiberry](https://github.com/midwan/amiberry) | amiga  | .lha | kick13.rom, kick31.rom | Hardcoded |
-| [UAE4ALL2](https://github.com/RetroPie/uae4all2) | amiga  | .adf | kick13.rom, kick20.rom, kick31.rom | Hardcoded |
+| [Amiberry](https://github.com/midwan/amiberry) | amiga  | .lha | kick33180.A500, kick34005.A500, kick40068.A1200 | Hardcoded |
+| [UAE4ALL2](https://github.com/RetroPie/uae4all2) | amiga  | .adf | kick13.rom, kick13.rom, kick20.rom, kick31.rom | Hardcoded |
 | [UAE4ARM](https://github.com/Chips-fr/uae4arm-rpi/) | amiga  | .zip .adf .dms .exe .adz .rp9 | kick13.rom, kick20.rom, kick31.rom | Hardcoded |
-| [lr-puae](https://github.com/libretro/libretro-uae) | amiga | .zip .uae | kick13.rom, kick20.rom, kick31.rom | /opt/retropie/configs/amiga/retroarch.cfg |
+| [lr-puae](https://github.com/libretro/libretro-uae) | amiga | .zip .uae | kick34005.A500, kick40063.A600, kick40068.A1200 | /opt/retropie/configs/amiga/retroarch.cfg |
 
 ## Emulators: [Amiberry](https://github.com/midwan/amiberry)
 
