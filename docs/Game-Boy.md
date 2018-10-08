@@ -6,9 +6,9 @@ _The Game Boy was released by Nintendo in 1989 thus kicking off the era of handh
 
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
-| [lr-gambatte](https://github.com/libretro/gambatte-libretro) | gb  | .7z .gb .zip | none | /opt/retropie/configs/gb/retroarch.cfg |
+| [lr-gambatte](https://github.com/libretro/gambatte-libretro) | gb  | .7z .gb .zip | gb_bios.bin (optional)| /opt/retropie/configs/gb/retroarch.cfg |
 | [lr-tgbdual](https://github.com/libretro/tgbdual-libretro) | gb  | .7z .gb .zip | none | /opt/retropie/configs/gb/retroarch.cfg |
-| [lr-mgba](https://github.com/libretro/mgba) | gb  | .7z .gb .zip | gb_bios.bin sgb_bios.bin | /opt/retropie/configs/gb/retroarch.cfg |
+| [lr-mgba](https://github.com/libretro/mgba) | gb  | .7z .gb .zip | gb_bios.bin (optional), sgb_bios.bin (optional) | /opt/retropie/configs/gb/retroarch.cfg |
 
 ## Emulators: [lr-gambatte](https://github.com/libretro/gambatte-libretro), [lr-tgbdual](https://github.com/libretro/tgbdual-libretro), [lr-mgba](https://github.com/libretro/mgba)
 
@@ -27,6 +27,7 @@ Place your Game Boy ROMs in
 ```
 
 ## BIOS
+lr-gambatte can load external BIOS for Game Boy (**gb_bios.bin**).
 
 lr-mgba can load external BIOS for Game Boy (**gb_bios.bin**) and Super Game Boy (**sgb_bios.bin**).
 
@@ -35,7 +36,7 @@ Place these BIOS in
 /home/pi/RetroPie/BIOS
 ```
 
-The correct MD5 for **gb_bios.bin** is `32fbbd84168d3482956eb3c5051637f5` and for **sgb_bios.bin** is `d574d4f9c12f305074798f54c091a8b4`
+The correct MD5 for **gb_bios.bin** is `32fbbd84168d3482956eb3c5051637f5`and for **sgb_bios.bin** is `d574d4f9c12f305074798f54c091a8b4`
 
 ## Controls
 
