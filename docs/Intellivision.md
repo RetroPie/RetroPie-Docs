@@ -8,8 +8,8 @@ _The Intellivision is a home video game console released by Mattel in 1979_
 
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
-| [lr-freeintv](#lr-freeintv) | intellivision | .7z .bin .int .itv .rom .zip | exec.bin grom.bin | /opt/retropie/configs/intellivision/retroarch.cfg |
-| [jzintv](#jzintv) | intellivision  | .bin .int .itv .rom  | exec.bin grom.bin | hardcoded |
+| [lr-freeintv](#lr-freeintv) | intellivision | .7z .bin .int .itv .rom .zip | exec.bin, grom.bin | /opt/retropie/configs/intellivision/retroarch.cfg |
+| [jzintv](#jzintv) | intellivision  | .bin .int .itv .rom  | exec.bin, grom.bin, ECS.BIN (optional), IVOICE.BIN (optional) | hardcoded |
 
 ## ROM and BIOS Paths
 Place Intellivision ROMs in
