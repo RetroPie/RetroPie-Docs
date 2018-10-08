@@ -7,7 +7,7 @@ The Family Computer Disk System a.k.a. Famicom Disk System was released in Japan
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
 | [lr-fceumm](https://github.com/libretro/libretro-fceumm) | fds  | .7z .fds .nes .zip | disksys.rom | /opt/retropie/configs/nes/retroarch.cfg |
-| [lr-nestopia](https://github.com/libretro/nestopia) | fds  | .7z .fds .nes .zip | disksys.rom | /opt/retropie/configs/nes/retroarch.cfg |
+| [lr-nestopia](https://github.com/libretro/nestopia) | fds  | .7z .fds .nes .zip | disksys.rom **and** <br> NstDatabase.xml (already exist in /opt/retropie/libretrocores/lr-nestopia folder) | /opt/retropie/configs/nes/retroarch.cfg |
 
 ## Emulators: [lr-nestopia](https://github.com/libretro/nestopia), [lr-fceumm](https://github.com/libretro/libretro-fceumm)
 
