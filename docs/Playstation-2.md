@@ -6,7 +6,7 @@ _The PlayStation 2 is a home video game console released by Sony in 2000._
 
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
-| [PCSX2](http://pcsx2.net/) | ps2  | .iso .img .bin .mdf .z .z2 .bz2 .dump .cso .ima .gz |  |  |
+| [PCSX2](http://pcsx2.net/) | ps2  | .iso .img .bin .mdf .z .z2 .bz2 .dump .cso .ima .gz | rom1.bin, rom2.bin, erom.bin, SCPH-XXXXX.nvm  |  |
 
 > **Note This is only for x86 builds- Not the Raspberry Pi!.**
 
