@@ -5,9 +5,12 @@
 _The Magnavox Odyssey2 known in Europe as the Philips Videopac G7000 (and a bunch of other names a bunch of other places) is a home video game console released in 1978. One of the earliest gaming consoles, it is one of the least known today. Games are quite similar in detail to that of Atari 2600._
 ***
 
-| Emulator | Rom Folder | Extension | BIOS |  Controller Config |
-| :---: | :---: | :---: | :---: | :---: |
-| [lr-o2em](https://github.com/libretro/libretro-o2em) | videopac  | .bin | o2rom.bin | /opt/retropie/configs/videopac/retroarch.cfg |
+| Emulator | Rom Folder | Machine Type | Extension | BIOS |  Controller Config |
+| :---: | :---: | :---: | :---: | :---: | :---: |
+| [lr-o2em](https://github.com/libretro/libretro-o2em) | videopac  | Videopac / Odyssey 2 G7000 model | .bin | o2rom.bin | /opt/retropie/configs/videopac/retroarch.cfg |
+| [lr-o2em](https://github.com/libretro/libretro-o2em) | videopac  | Videopac+ (french) G7000 model | .bin | c52.bin | /opt/retropie/configs/videopac/retroarch.cfg |
+| [lr-o2em](https://github.com/libretro/libretro-o2em) | videopac  | Videopac+ (european) G7400  model | .bin | g7400.bin | /opt/retropie/configs/videopac/retroarch.cfg |
+| [lr-o2em](https://github.com/libretro/libretro-o2em) | videopac  | Videopac+ (french) G7400  model | .bin | jopac.bin | /opt/retropie/configs/videopac/retroarch.cfg |
 
 ## Emulator: [lr-o2em](https://github.com/libretro/libretro-o2em)
 
