@@ -4,12 +4,12 @@
 _The TRS-80 was a home computer originally released by the Tandy Corporation in 1977. T=Tandy RS=Radio Shack 80=Z-80 microprocessor._
 *** 
 
-| Emulator | Rom Folder | Extension | BIOS |  Controller Config |
-| :---: | :---: | :---: | :---: | :---: |
-| [sdltrs](https://github.com/RetroPie/sdltrs) | trs-80 model I  | .dsk | level2.rom | hardcoded |
-| [sdltrs](https://github.com/RetroPie/sdltrs) | trs-80 model III  | .dsk | level3.rom | hardcoded |
-| [sdltrs](https://github.com/RetroPie/sdltrs) | trs-80 model 4  | .dsk | level4.rom | hardcoded |
-| [sdltrs](https://github.com/RetroPie/sdltrs) | trs-80 model 4P  | .dsk | level4P.rom | hardcoded |
+| Emulator | Rom Folder | trs-80 type | Extension | BIOS |  Controller Config |
+| :---: | :---: | :---: | :---: | :---: | :---: |
+| [sdltrs](https://github.com/RetroPie/sdltrs) | trs-80 | trs-80 model I  | .dsk | level2.rom | hardcoded |
+| [sdltrs](https://github.com/RetroPie/sdltrs) | trs-80 | trs-80 model III  | .dsk | level3.rom | hardcoded |
+| [sdltrs](https://github.com/RetroPie/sdltrs) | trs-80 | trs-80 model 4  | .dsk | level4.rom | hardcoded |
+| [sdltrs](https://github.com/RetroPie/sdltrs) | trs-80 | trs-80 model 4P  | .dsk | level4P.rom | hardcoded |
 
 
 ## Emulator: [sdltrs](https://github.com/RetroPie/sdltrs)
