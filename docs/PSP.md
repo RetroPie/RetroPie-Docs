@@ -8,7 +8,7 @@ _The PlayStation Portable or PSP is a handheld video game system released by Son
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
 | [ppsspp](https://github.com/hrydgard/ppsspp) | psp  | .cso .iso .pbp | none | hardcoded |
-| [lr-ppsspp](https://github.com/libretro/ppsspp) | psp  | .cso .iso .pbp | none | /opt/retropie/configs/psp/retroarch.cfg |
+| [lr-ppsspp](https://github.com/libretro/ppsspp) | psp  | .cso .iso .pbp | see below | /opt/retropie/configs/psp/retroarch.cfg |
 
 ## Emulators: [lr-ppsspp](https://github.com/libretro/ppsspp), [ppsspp](https://github.com/hrydgard/ppsspp)
 Not available for the Raspberry Pi 1. lr-ppsspp has the convenience of retroarch controller configs, but standalone ppsspp has the best performance and compatibility.
@@ -21,6 +21,17 @@ Place your PSP ROMs in
 /home/pi/RetroPie/roms/psp
 ```
 #### [**PSP COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1V-MEx1tOXqCcJL1fQzGh9xLHny-qL-PSWqvY7F80Y90/edit?usp=sharing) feel free to contribute! 
+
+## BIOS [lr-ppsspp](https://github.com/libretro/ppsspp)
+
+The PPSSPP core requires assets files to be fully functional. 
+Assets such as fonts and backgrounds that are required for memory card screens.
+In order to acquire PPSSPP's assets files and install them succcessfully, follow these steps.
+
+1. Create a directory named PPSSPP in RetroArch's System directory (RetroArch/system/PPSSPP)
+2. Visit [https://github.com/hrydgard/ppsspp](https://github.com/hrydgard/ppsspp) and download the repository
+3. Extract ppsspp-master.zip
+4. Copy the contents of ppsspp-master/assets into 'system/PPSSPP'
 
 ## Controls
 
