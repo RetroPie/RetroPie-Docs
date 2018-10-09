@@ -7,7 +7,7 @@ _The Sega Saturn is a 32 bit 5th generation home video game console released by 
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
 | [lr-Yabause](https://github.com/libretro/yabause) | saturn  | .bin .cue .iso .mdf | saturn_bios.bin | /opt/retropie/configs/saturn/retroarch.cfg |
-|[lr-beetle-saturn](https://github.com/libretro/beetle-saturn-libretro)| saturn | .bin .cue .iso .mdf | sega_101.bin | /opt/retropie/configs/saturn/retroarch.cfg
+|[lr-beetle-saturn](https://github.com/libretro/beetle-saturn-libretro)| saturn | .bin .cue .iso .mdf | sega_101.bin, mpr-17933.bin | /opt/retropie/configs/saturn/retroarch.cfg
 
 ## Emulators: [lr-Yabause](https://github.com/libretro/yabause), [lr-beetle-saturn](https://github.com/libretro/beetle-saturn-libretro)
 
@@ -39,7 +39,7 @@ a few more notes on cue sheets [HERE](https://github.com/libretro/beetle-saturn-
 
 ## BIOS
 
-The BIOS file needed for lr-yabause is **saturn_bios.bin** or for lr-beetle-saturn **sega_101.bin**
+The BIOS file needed for lr-yabause is **saturn_bios.bin** or for lr-beetle-saturn **sega_101.bin** (Required for JP games) and **mpr-17933.bin** (Required for US/EU games)
 
 Place your BIOS in
 
@@ -53,6 +53,7 @@ Place your BIOS in
 |------|--------|-------|
 | saturn_bios.bin | af5828fdff51384f99b3c4926be27762 | 2aba43c2 |
 | sega_101.bin | 85ec9ca47d8f6807718151cbcca8b964 | 224b752c |
+| mpr-17933.bin | 3240872C70984B6CBFDA1586CAB68DBE | 4AFCF0FA |
 
 ## Controls
 
