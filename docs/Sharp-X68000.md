@@ -6,7 +6,7 @@ _The Sharp X68000 was a Japan-only home computer released in 1987._
 
 | Emulator | Rom Folder | Extension | BIOS Files | Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
-| [lr-px68k](https://github.com/libretro/px68k-libretro/) | x68000 | .dim, .m3u | iplrom30.dat, iplromco.dat, iplrom.dat,  iplromxv.dat, cgrom.dat | /opt/retropie/configs/x68000/retroarch.cfg |
+| [lr-px68k](https://github.com/libretro/px68k-libretro/) | x68000 | .dim, .m3u | iplrom.dat, cgrom.dat, iplrom30.dat (optional), iplromco.dat (optional),  iplromxv.dat (optional) | /opt/retropie/configs/x68000/retroarch.cfg |
 
 ## Emulator: [lr-px68k](https://github.com/libretro/px68k-libretro/)
 This emulator must be installed from the experimental section in RetroPie Setup.
@@ -26,13 +26,14 @@ Place your X68000 ROMs in:
 
 lr-px68k only requires a single BIOS file (out of a selection of four) and a font file.  Below is a list of all the BIOS files to choose from, plus the required font file:
 
-| BIOS File | CRC-32 | File type |
-| :---: | :---: | :---: |
-| iplrom.dat | 72BDF532 | BIOS file |
-| iplrom30.dat | E8F8FDAD | BIOS file |
-| iplromco.dat | 6C7EF608 | BIOS file |
-| iplromxv.dat | 00EEB408 | BIOS file |
-| cgrom.dat | 9F3195F1 | Font file |
+| BIOS File | CRC-32 | MD5 | File type |
+| :---: | :---: | :---: | :---: |
+| iplrom.dat | 72BDF532 | 7FD4CAABAC1D9169E289F0F7BBF71D8E | BIOS file |
+| cgrom.dat | 9F3195F1 | CB0A5CFCF7247A7EAB74BB2716260269 | Font file |
+| iplrom30.dat | E8F8FDAD | F373003710AB4322642F527F567E020A | BIOS file |
+| iplromco.dat | 6C7EF608 | CC78D4F4900F622BD6DE1AED7F52592F | BIOS file |
+| iplromxv.dat | 00EEB408 | 0617321DAA182C3F3D6F41FD02FB3275 | BIOS file |
+
 
 Place your BIOS files in:
 ```
