@@ -66,7 +66,7 @@
 * [Saturn](Saturn)
 * [ScummVM](ScummVM)
 * [Sega 32X](Sega-32X)
-* [Sega CD](Sega-CD)
+* [Sega CD/Mega CD](Sega-CD)
 * [Sega SG-1000](SG-1000)
 * [Sharp X1](Sharp-X1)
 * [Sharp X68000](Sharp-X68000)
