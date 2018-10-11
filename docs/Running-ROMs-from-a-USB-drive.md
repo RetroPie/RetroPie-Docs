@@ -17,7 +17,7 @@ Rather than running everything from an SD card, it can be desirable to store and
 There are a number of ways you can achieve this, but the following method is desirable as it fully integrates the USB drive with the existing directory structure, rather than requiring you to tweak configuration files so RetroPie is looking for ROMs in a different place. Below there are two ways to accomplish this: an automated method, or a manual method.
 
 ### For XU4 owners
-The XU4 and its OS do not respond the same and it does not provide a way to know when the sync is completed unfortunately. It is recommended that you allow a decent amount of time for the process to sync when using the Automatic Mount (Easiest Method).
+The XU4 and its OS do not respond the same as the Raspberry Pi with Rasbian and it does not provide a way to know when the sync is completed. It is recommended that you allow a decent amount of time for the process to sync when using the Automatic Mount (Easiest Method).
 
 ### Format USB drive
 Either on linux, or on a PC, format the USB drive to FAT32 (used in this guide as it is the most compatible across different operating systems).
