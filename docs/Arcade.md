@@ -18,7 +18,7 @@ RetroPie includes multiple versions of both MAME and FinalBurn Alpha. Older vers
 
 Use this table as a guide when choosing an emulator version:
 
-| Raspberry Pi version | Recommended MAME Emulator| Recommended FB Alpha Emulator|
+| Raspberry Pi version | Recommended MAME Emulator | Recommended FB Alpha Emulator |
 | :---: | :---: | :---: |
 |2 or 3| `lr-mame2003` | `lr-fbalpha`|
 |1 or Zero| `mame4all` | `pi-fba`|
@@ -34,7 +34,7 @@ In general, you will only get good results with a full set of ROMs. Incomplete R
 There are a number of different rom set versions. Different versions contain different games (although there's plenty of overlap). This table tells you which rom set version you need for each emulator, and which games are in each set:
 
 | Emulator | Required ROM Version | # of ROMs | Compatibility List |
-| :---: | :---: | :---: | :---: | :---: |
+| :---: | :---: | :---: | :---: |
 | [mame4all](MAME) | MAME 0.37b5 | 2270 | [List](https://docs.google.com/spreadsheets/d/1SHspjyHavY9-PKbO2swDr52BS2Wl_mB_Vjx2Z1SXiD8/edit) |
 | [lr-mame2003](MAME) | MAME 0.78 | 4705 | [List](https://docs.google.com/spreadsheets/d/1LP1MELCvcxu7TfiowF_0ZuvRVEMqlfQyTVetnOJvuJc/edit?usp=sharing) |
 | [pifba](FinalBurn-Alpha) | FB Alpha v0.2.96.71 | 684 | [List](https://docs.google.com/spreadsheets/d/1OZioLrz16ptaNbjQUDP5hhVzQDTOTn9Nz46Hbj3-06k/edit?usp=sharing) |
