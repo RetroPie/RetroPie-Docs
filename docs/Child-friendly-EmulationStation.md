@@ -6,15 +6,11 @@ These modes allow administrators to lock down (part of) the system, so that naiv
 >**UI modes are for you!**
 
 # Overview
-* [Installation](#installation)
 * [UI modes](#ui-modes)  
 * [Switching modes](#switching-modes)  
 * [Gamelist.xml](#gamelist.xml)
 * [Themes](#themes)
 ***
-
-# Installation
-As of Nov 2nd 2017, this functionality is merged into the Retropie-EmulationStation repository, but is not yet part of the stable branch. To install this, you will need to update retropie-setup and install emulationstation-dev from experimental.
 
 # UI modes
 To allow different levels of system protection, user modes were introduced with different sets of functionalities. These modes are Full, Kiosk and Kid. Generally speaking, kids do not need to edit system settings, nor will visiting friends. The full set of options also complicates the UI, and the kid and kiosk modes hide these when they are not needed.
