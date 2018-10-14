@@ -56,8 +56,8 @@ For example, the GBA config file is `/opt/retropie/configs/gba/retroarch.cfg` so
 Now add the following above the `#include` line in that file:
 
 ~~~
-# 19 = Config, 20 = 1:1 PAR, 21 = Core Provided, 22 = Custom Viewport
-aspect_ratio_index = "22"
+# 20 = Config, 21 = 1:1 PAR, 22 = Core Provided, 23 = Custom Viewport
+aspect_ratio_index = "23"
 
 # these two define the pixel size of the emulated screen
 # keep this in the same ratio as the original console
