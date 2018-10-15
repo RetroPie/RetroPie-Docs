@@ -18,6 +18,7 @@ This page is a resource for additional details on RetroPie's MAME emulators incl
 | [mame4all-pi](#mame4all-pi) | arcade **or** mame-mame4all | .zip | MAME 0.37b5 | /opt/retropie/configs/mame-mame4all/cfg/default.cfg |
 | [lr-mame2000](#lr-mame2000-mame-2000) | arcade **or** mame-libretro | .zip | MAME 0.37b5 | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/mame-mame4all/retroarch.cfg |
 | [lr-mame2003](#lr-mame2003-mame-2003) | arcade **or** mame-libretro | .zip | MAME 0.78 | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/mame-libretro/retroarch.cfg |
+| [lr-mame2003-plus](#lr-mame2003-mame-2003-plus) | arcade **or** mame-libretro | .zip | MAME 0.78-MAME 0.188  | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/mame-libretro/retroarch.cfg |
 | [lr-mame2010](#lr-mame2010-mame-2010) | arcade **or** mame-libretro | .zip | MAME 0.139 | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/mame-libretro/retroarch.cfg |
 | [lr-mame2014](#lr-mame2014-mame-2014) | arcade **or** mame-libretro | .zip | MAME 0.159 | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/mame-libretro/retroarch.cfg |
 | [lr-mame2016](#lr-mame2016-mame-2016) | arcade **or** mame-libretro | .zip | MAME 0.174 | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/mame-libretro/retroarch.cfg |
@@ -133,7 +134,39 @@ lr-mame2003 utilises [RetroArch control configurations](RetroArch-Configuration)
 ```shell
 /opt/retropie/configs/mame-libretro/retroarch.cfg
 ```
+---
+### lr-mame2003-plus (MAME 2003-Plus) 
+[Visit the mame2003-libretro homepage on github](https://github.com/libretro/mame2003-libretro-plus)
 
+MAME 2003-Plus (also referred to as MAME 2003+ and mame2003-plus) is a libretro arcade system emulator core with an emphasis on high performance and broad compatibility with mobile devices, single board computers, embedded systems, and similar platforms.
+
+In order to take advantage of the performance and lower hardware requirements of an earlier MAME architecture, MAME 2003-Plus began with the MAME 2003 codebase which is itself derived from xmame 0.78. Upon that base, MAME 2003-Plus contributors have backported support for several hundred additional games as well as other functionality not originally present in MAME 0.78.
+
+**Please see [the libretro MAME 2003-Plus core documentation](https://docs.libretro.com/library/mame2003_plus/) for information on how to configure specific features of this emulator.**
+
+```shell
+Roms Dir: /home/pi/RetroPie/roms/mame-libretro
+Samples Dir: /home/pi/RetroPie/BIOS/mame2003-plus/samples/
+Binary Dir: /opt/retropie/libretrocores/lr-mame2003-plus
+Config Dir: /opt/retropie/configs/mame-libretro/retroarch.cfg
+```
+**MAME Version**: 0.78-0.188 (MAME 0.78 as a baseline with other ROMs backported from later MAME romsets)
+
+**Active Sets: 4705**
+* BIOS: 15
+* CHDs: 30
+* Samples: 66 + 6 Optional "Soundtrack Samples"
+
+[**MAME 2003-Plus XML DAT File**](https://raw.githubusercontent.com/libretro/mame2003-plus-libretro/master/metadata/mame2003-plus.xml)
+
+**[The mame2003-plus catver.ini](https://github.com/libretro/mame2003-plus-libretro/blob/master/metadata/catver.ini)** also contains data on games definitively known not to work, as well as sorting data for pornographic games and other less desirable romsets.
+
+**Controls**
+
+lr-mame2003-plus utilises [RetroArch control configurations](RetroArch-Configuration). Add custom retroarch controls to the retroarch.cfg file in:
+```shell
+/opt/retropie/configs/mame-libretro/retroarch.cfg
+```
 ---
 ### lr-mame2010 (MAME 2010)
 [Visit mame2010-libretro on github](https://github.com/libretro/mame2010-libretro)
