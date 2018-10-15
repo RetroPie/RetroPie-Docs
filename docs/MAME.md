@@ -18,7 +18,7 @@ This page is a resource for additional details on RetroPie's MAME emulators incl
 | [mame4all-pi](#mame4all-pi) | arcade **or** mame-mame4all | .zip | MAME 0.37b5 | /opt/retropie/configs/mame-mame4all/cfg/default.cfg |
 | [lr-mame2000](#lr-mame2000-mame-2000) | arcade **or** mame-libretro | .zip | MAME 0.37b5 | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/mame-mame4all/retroarch.cfg |
 | [lr-mame2003](#lr-mame2003-mame-2003) | arcade **or** mame-libretro | .zip | MAME 0.78 | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/mame-libretro/retroarch.cfg |
-| [lr-mame2003-plus](#lr-mame2003-mame-2003-plus) | arcade **or** mame-libretro | .zip | MAME 0.78-MAME 0.188  | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/mame-libretro/retroarch.cfg |
+| [lr-mame2003-plus](#lr-mame2003-plus-mame-2003-plus) | arcade **or** mame-libretro | .zip | MAME 0.78-MAME 0.188  | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/mame-libretro/retroarch.cfg |
 | [lr-mame2010](#lr-mame2010-mame-2010) | arcade **or** mame-libretro | .zip | MAME 0.139 | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/mame-libretro/retroarch.cfg |
 | [lr-mame2014](#lr-mame2014-mame-2014) | arcade **or** mame-libretro | .zip | MAME 0.159 | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/mame-libretro/retroarch.cfg |
 | [lr-mame2016](#lr-mame2016-mame-2016) | arcade **or** mame-libretro | .zip | MAME 0.174 | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/mame-libretro/retroarch.cfg |
@@ -135,7 +135,7 @@ lr-mame2003 utilises [RetroArch control configurations](RetroArch-Configuration)
 /opt/retropie/configs/mame-libretro/retroarch.cfg
 ```
 ---
-### lr-mame2003-plus (MAME 2003-Plus) 
+### lr-mame2003-plus (MAME 2003-Plus)
 [Visit the mame2003-libretro homepage on github](https://github.com/libretro/mame2003-libretro-plus)
 
 MAME 2003-Plus (also referred to as MAME 2003+ and mame2003-plus) is a libretro arcade system emulator core with an emphasis on high performance and broad compatibility with mobile devices, single board computers, embedded systems, and similar platforms.
