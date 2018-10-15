@@ -152,7 +152,7 @@ Config Dir: /opt/retropie/configs/mame-libretro/retroarch.cfg
 ```
 **MAME Version**: 0.78-0.188 (MAME 0.78 as a baseline with other ROMs backported from later MAME romsets)
 
-**Active Sets: **
+**Active Sets: 4850**
 * BIOS: 15
 * CHDs: 30
 * Samples: 66 + 6 Optional "Soundtrack Samples"
