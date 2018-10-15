@@ -136,7 +136,7 @@ lr-mame2003 utilises [RetroArch control configurations](RetroArch-Configuration)
 ```
 ---
 ### lr-mame2003-plus (MAME 2003-Plus)
-[Visit the mame2003-libretro homepage on github](https://github.com/libretro/mame2003-libretro-plus)
+[Visit mame2003-plus on github](https://github.com/libretro/mame2003-libretro-plus)
 
 MAME 2003-Plus (also referred to as MAME 2003+ and mame2003-plus) is a libretro arcade system emulator core with an emphasis on high performance and broad compatibility with mobile devices, single board computers, embedded systems, and similar platforms.
 
@@ -152,7 +152,7 @@ Config Dir: /opt/retropie/configs/mame-libretro/retroarch.cfg
 ```
 **MAME Version**: 0.78-0.188 (MAME 0.78 as a baseline with other ROMs backported from later MAME romsets)
 
-**Active Sets: 4705**
+**Active Sets: **
 * BIOS: 15
 * CHDs: 30
 * Samples: 66 + 6 Optional "Soundtrack Samples"
