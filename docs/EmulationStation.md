@@ -191,9 +191,9 @@ Retropie Setup Script >> Manage Packages >> Manage Core Packages >> EmulationSta
 
 ### Scraper
 
-There are two scrapers for RetroPie: the built in EmulationStation scraper and Sselphs scraper. More information [HERE](Scraper)
+There are several scrapers available in RetroPie: the built in EmulationStation scraper, Steven Selph's `scraper` and Lars Muldjord's `Skyscraper`. More information [HERE](Scraper).
 
-The gamelist.xml file for a system defines metadata for a system's games, such as a name, image (like a screenshot or box art), description, release date, and rating.
+The `gamelist.xml` file for a system defines metadata for a system's games, such as a name, image (like a screenshot or box art), description, release date, and rating.
 
 ES will check three places for a `gamelist.xml` in the following order, using the first one it finds:
 
@@ -221,7 +221,7 @@ If you use the built in ES Scraper your gamelist.xml and images folder will be i
 
 - `~/.emulationstation/gamelists/[SYSTEM_NAME]/gamelist.xml`
 
-If you use Sselph's Scraper you can choose whether your scraped data goes in 
+If you use another scraper (Steven Sselph's `scraper` or Lars Muldjord's `Skyscraper) you can choose whether your scraped data goes in 
 
 - `[SYSTEM_PATH]/gamelist.xml` (the rom folder) or
 - `~/.emulationstation/gamelists/[SYSTEM_NAME]/gamelist.xml`
