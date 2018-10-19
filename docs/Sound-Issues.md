@@ -114,7 +114,7 @@ So instead of using one of those large shield with the RCA jacks on it, a small 
 4.    Find our card number.  More than likely, the "C-Media USB Headphone Set" will be set to `Card 1`.  You will need to remember this number for the next step.
 5.    Use `nano` to create `/etc/asound.conf` with this content.  Press <kbd>Ctrl</kbd>+<kbd>X</kbd> followed by <kbd>Y</kbd> when finished.  Replace the card number in the code below with the correct card number if it is other than `1`.
 
-
+```
     pcm.!default {
      type hw card 1
     }
@@ -122,7 +122,7 @@ So instead of using one of those large shield with the RCA jacks on it, a small 
      type hw card 1
     }
 
-
+```
 6.    `sudo reboot`.  When EmulationStation or a video game is played, you will start to notice sound.
 
 7.    If you want to test stereo, <kbd>F4</kbd> again to do a speaker test using `speaker-test -c2 hw:Set,0` where `-c2` indicates the number of channels. If you have just one speaker, use `-c1` instead.  You should hear a hiss in each speaker separately.  This test will go on continuously until you press <kbd>Ctrl</kbd>+<kbd>C</kbd>.
