@@ -82,7 +82,7 @@ You can go into Setup / Configuration and enable autostart as you like.
 
 ### Emulationstation hangs if shutdown/restart was selected
 
-It is not possible to restart/shutdown if a sudo requests an password. To disable sudo password request add the line
+It is not possible to restart/shutdown if a sudo requests a password. To disable sudo password request add the line
  
     <user> ALL=(ALL) NOPASSWD:ALL
 
