@@ -1,13 +1,14 @@
 ## Installation
 
 Follow the instructions from here: https://github.com/mcobit/retrosmc
+
 1. Download and run install-retrosmc.sh
 2. Select "install retrosmc", select "Basic installation"
 3. Go outside, grab a drink, this will take ages.
-4. Reboot, re-run install-retrosmc.sh
+4. Reboot, re-run `install-retrosmc.sh`.
 5. Select "install launcher addon"
-6. Reboot, go to kodi settings->addons, activate Retropi addon.
-7. Launch Retropi in Programs menu. Done!
+6. Reboot, go to kodi settings->addons, activate RetroPie addon.
+7. Launch RetroPie in Programs menu. Done!
 
 ## Install RetroPie to USB drive:
 
@@ -120,11 +121,9 @@ Let's move the roms folder to the Flash Drive as well now and make a soft system
     
     cd ../RetroPie
     mv roms roms2
-    
     mkdir /media/RETROPIE/roms
-    
+       
     sudo apt-get install rsync
-    
     rsync roms2 /media/RETROPIE/roms
     
     ln -s /media/RETROPIE/roms roms
