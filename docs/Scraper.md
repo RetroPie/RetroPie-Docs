@@ -51,6 +51,9 @@ Please refer to [Sselphs Scraper Advanced Configuration](Scraper#sselphs-scraper
 Make sure to update to the latest version of Retropie-Setup script if you're missing any options mentioned below!
 
 ### Using Scraper
+
+Scraper is started from inside the Retropie Setup Menu. Navigate to **Manage Packages** > **Manage Optional Packages** and select scraper. You will navigate to the **Choose an option for scraper** window. Select option C **Configuration / Options**. It will take you to the window shown below and allow you to run/configure the various functions of the scraper.
+
 <img src="https://raw.githubusercontent.com/UncleRus/__crap/master/sselph_scraper_shot.png" width="550">
 
 - **Scrape All Systems:** This will scrape all the systems the scraper supports
