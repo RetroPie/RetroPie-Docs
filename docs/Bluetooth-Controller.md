@@ -193,7 +193,7 @@ for example
 Now we will recreate this using the retroarch controller script, type  
 `sudo /home/pi/RetroPie-Setup/retropie_setup.sh`  
  
---- This section is no longer accurate for Newer Releases of RetroPie- Please update these instructions. thanks----
+**--- This section is no longer accurate for Newer Releases of RetroPie- Please update these instructions. thanks----**
 
 Choose the "Setup" option, then "Configure input devices for RetroArch" (Do **not** choose the "Install RetroArch joypad autoconfigs)  
 Then choose the "Configure joystick/controller for use with RetroArch" option  
