@@ -192,12 +192,15 @@ for example
   
 Now we will recreate this using the retroarch controller script, type  
 `sudo /home/pi/RetroPie-Setup/retropie_setup.sh`  
-  
+ 
+--- This section is no longer accurate for Newer Releases of RetroPie- Please update these instructions. thanks----
+
 Choose the "Setup" option, then "Configure input devices for RetroArch" (Do **not** choose the "Install RetroArch joypad autoconfigs)  
 Then choose the "Configure joystick/controller for use with RetroArch" option  
 Follow the on-screen prompts to press the buttons when prompted.  
 If you make a mistake, just run it again, it happily overwrites the file it needs to.  
 
+-------------
 There should be no need to edit the retroarch.cfg to get your controller working.  
   
 That should be all you need. Now when you start your Pi, set the controller to connect and it should be detected by Emulation Station and RetroArch based emulators.  
