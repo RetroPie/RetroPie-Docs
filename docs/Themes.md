@@ -147,6 +147,7 @@ Access theme gallery in the esthemes menu
 |           Blade-360           | <img src="https://raw.githubusercontent.com/wetriner/es-theme-gallery/master/Blade-360.png" width="500">                     | <img src="https://raw.githubusercontent.com/wetriner/es-theme-gallery/master/Blade-360-gamelist.png" width="500">                     | yes           |
 |             Venom             | <img src="https://raw.githubusercontent.com/wetriner/es-theme-gallery/master/Venom.png" width="500">                         | <img src="https://raw.githubusercontent.com/wetriner/es-theme-gallery/master/Venom-gamelist.png" width="500">                         | yes           |
 |           Spider-Man          | <img src="https://raw.githubusercontent.com/wetriner/es-theme-gallery/master/Spider-Man.png" width="500">                    | <img src="https://raw.githubusercontent.com/wetriner/es-theme-gallery/master/Spider-Man-gamelist.png" width="500">                    | yes           |
+|           locomotion          | <img src="https://raw.githubusercontent.com/wetriner/es-theme-gallery/master/locomotion.png" width="500">                    | <img src="https://raw.githubusercontent.com/wetriner/es-theme-gallery/master/locomotion-gamelist.png" width="500">                    | yes           |
 
 
 ## Creating Your Own EmulationStation Theme
