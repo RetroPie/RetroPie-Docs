@@ -107,19 +107,19 @@ See the following diagrams for reference:
 |:---:|
 |![ps3_controller](https://cloud.githubusercontent.com/assets/10035308/22185413/f10f27de-e099-11e6-97a4-ecbbc82c9e46.png)|
 
-### Hotkeys
+### Hotkey
 
-Hotkeys enable you to press a combination of buttons to access functions such as saving, loading, and exiting emulators. The following chart shows the default hotkey combinations. By default, the hotkey is select so that means you hold down select while pressing another button to execute a command. **Note** that hotkeys are only specific to the retroarch/libretro based emulators.
+The Hotkey button enables you to press it in combination with another button to access functions such as saving, loading, and exiting emulators. It is suggested to use the *Select* button as the hotkey. The following chart shows the default hotkey combinations. For example, if you chose Select as your Hotkey, that means you hold down Select while pressing the other button to execute the command. **Note** Hotkey combinations are specific to the retroarch/libretro based emulators.
 
-|Hotkeys | Action|
+|Hotkey Combination | Action|
 | :---: | :---: |
-| Select+Start | Exit |
-| Select+Right Shoulder | Save |
-| Select+Left Shoulder | Load |
-| Select+Right | Input State Slot Increase |
-| Select+Left | Input State Slot Decrease |
-| Select+X | RGUI Menu |
-| Select+B | Reset |
+| Hotkey+Start | Exit |
+| Hotkey+Right Shoulder | Save |
+| Hotkey+Left Shoulder | Load |
+| Hotkey+Right | Input State Slot Increase |
+| Hotkey+Left | Input State Slot Decrease |
+| Hotkey+X | RGUI Menu |
+| Hotkey+B | Reset |
 
 ## EmulationStation
 
