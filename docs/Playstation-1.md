@@ -17,10 +17,6 @@ _The PlayStation 1 is a 5th generation video game console released by Sony in 19
 
 The prefered PSX emulator for those on a Raspberry Pi 2/3/3+. The features of RetroArch combined with pcsx-rearmed's excellent Dynamic Recompiler allow for an adequate PSX emulation experience on the Raspberry Pi.
 
-Emulation isn't perfect, with a common issue that affects several games in the PSX library being slight emulation slowdown, and, in rare cases, have emulation slowdown so severe they are unplayable. In other rare cases, some games will freeze or crash the emulator during gameplay.
-
-This emulator also doesn't handle Europe or Japan anti-piracy measures very well so it is advised to use USA versions of games whenever possible.
-
 Raspberry Pi 1/0 users that choose to use this emulator should be made aware that RetroArch's **Bilinear Filtering** will cause abnormal behavior in some games and should be disabled whenever emulation issues are encountered.
 
 ### pcsx-rearmed
