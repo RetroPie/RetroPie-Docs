@@ -109,7 +109,7 @@ See the following diagrams for reference:
 
 ### Hotkey
 
-The Hotkey button enables you to press it in combination with another button to access functions such as saving, loading, and exiting emulators. It is suggested to use the *Select* button as the hotkey. The following chart shows the default hotkey combinations. For example, if you chose Select as your Hotkey, that means you hold down Select while pressing the other button to execute the command. **Note** Hotkey combinations are specific to the retroarch/libretro based emulators.
+The Hotkey button enables you to press it in combination with another button to access functions such as saving, loading, and exiting emulators. It is suggested to use the **Select** button as the hotkey. The following chart shows the default hotkey combinations. For example, if you chose Select as your Hotkey, that means you hold down Select while pressing the other button to execute the command. **Note** Hotkey combinations are specific to the retroarch/libretro based emulators.
 
 |Hotkey Combination | Action|
 | :---: | :---: |
