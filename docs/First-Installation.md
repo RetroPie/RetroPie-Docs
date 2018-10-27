@@ -67,7 +67,7 @@ To extract from the command line, you can type the following into a Terminal win
 
 To install the RetroPie SD image on your MicroSD card. (You may need a MicroSD card reader to plug it into your computer) 
 
-1. For Windows you can use a program called [Win32DiskImager](http://sourceforge.net/projects/win32diskimager/) 
+1. For Windows you can use a [Etcher](https://etcher.io/) or [Win32DiskImager](http://sourceforge.net/projects/win32diskimager/) 
 2. For macOS you can use [Etcher](https://etcher.io/) or [Apple Pi Baker](http://www.tweaking4all.com/hardware/raspberry-pi/macosx-apple-pi-baker/) 
 3. For Linux you can use `dd` command or [Etcher](https://etcher.io/)
 
