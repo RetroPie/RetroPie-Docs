@@ -17,7 +17,7 @@ If you want Famicom Disk System as a seperate system, see the wiki page [HERE](F
 
 ## ROMS
 
-Accepted File Extensions: **.7z .fds .nes .zip** - Make sure your roms have headers. Roms without headers will not work. If you want to use PAL roms, make sure they contain `(E)` or `(Europe)` in the filename, or else they may be run at the wrong speed.
+Accepted File Extensions: **.7z .fds .nes .zip** - make sure your roms have headers. Roms without headers will not work. If you want to use PAL roms, make sure they contain `(E)` or `(Europe)` in the filename, or else they may be run at the wrong speed.
 
 Place your NES Roms in
 ```
@@ -25,9 +25,7 @@ Place your NES Roms in
 ```
 ## BIOS
 
-FDS games require the **disksys.rom** bios file.
-
-Place the BIOS in
+FDS games require the **disksys.rom** bios file. Place the BIOS in
 ```
 /home/pi/RetroPie/BIOS
 ```
@@ -38,9 +36,8 @@ Place the BIOS in
 
 ## Controls
 
-All three emulators utilise Retroarch configurations
+All three emulators utilise Retroarch configurations. Add custom retroarch controls to the retroarch.cfg file in
 
-Add custom retroarch controls to the retroarch.cfg file in
 ```shell
 /opt/retropie/configs/nes/retroarch.cfg
 ```
