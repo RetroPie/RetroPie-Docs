@@ -20,7 +20,7 @@ With RPi3 (stock and overclocked) no real difference in performance compared to 
 With the Odroid XU4 performance is increased with many games being playable as of July 2018 when development was taken over by a newer developer. CPU threading being added for the CPU/GPU found in the XU4 continues to increase performance as of September 2018.
 
 ## ROMS
-Accepted File Extensions: **.iso**
+Accepted File Extensions: **.iso** **.bin/cue**
 
 Place your 3do ROMs in
 ```
