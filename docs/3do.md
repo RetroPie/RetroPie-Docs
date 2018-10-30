@@ -17,6 +17,8 @@ Note that this is experimental- even with an overclocked RPi2 it was incredibly 
 
 With RPi3 (stock and overclocked) no real difference in performance compared to the RPi2. Bust-A-Move took around 1 minute to load on stock speed and 39 seconds overclocked. Both had choppy sound and controller lag. As of 8/6/2016.
 
+With the Odroid XU4 performance is increased with many games being playable as of July 2018 when development was taken over by a newer developer. CPU threading being added for the CPU/GPU found in the XU4 continues to increase performance as of September 2018.
+
 ## ROMS
 Accepted File Extensions: **.iso**
 
