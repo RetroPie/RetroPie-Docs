@@ -1,6 +1,6 @@
 # ROMS
 
-ROMs stand for Read Only Memory. ROMs are essentially digital versions of old game cartridges which allow you to play games on emulators (software that mimics your old gaming consoles.) There are many issues involving Copyrights laws regarding the usage of ROMs, as a result in order to preserve the integrity and longevity of the RetroPie project, the locations of ROMs will not and cannot be added to the Wiki. That being said, in the search of your childhood - Google is your friend. You should only have ROMs of games that you own.
+ROM stands for Read Only Memory. ROMs are essentially digital copies of old game cartridges which allow you to play games on emulators (software that mimics your old gaming consoles). There are many issues involving Copyright laws regarding the usage of ROMs, so in order to preserve the integrity and longevity of the RetroPie project, the download locations of ROMs will not and cannot be added to the Wiki. That being said, in the search of your childhood - Google is your friend.
 
 ## Transferring Roms
 
