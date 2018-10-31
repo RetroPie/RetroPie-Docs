@@ -129,6 +129,20 @@ If you have a limited input method such as an snes-style controller or handheld,
 
 >If you want to improve the spreadsheet, then request editing permission and you will be approved in a timely manner.
 
+Snes controller - 4 main buttons, no R2/L2 buttons needed
+
+Modern controller - 4 main buttons, **no** R2/L2 buttons needed
+
+#### Printable version
+
+A Reddit user called generic_rocker [has published on a Reddit post](https://old.reddit.com/r/RetroPie/comments/9n4dg1/psx_games_playable_without_r2l2_or_dual_analog/) a printable list of games playable with Modern and SNES controller types.
+
+Direct link:
+
+* [Games playable with a modern controller](https://docs.google.com/document/d/1jwP378voRAO1k938e5MsKawkaGNTz6G7wymD9bap1Iw/edit)
+
+* [Games playable with a SNES controller](https://docs.google.com/document/d/1syAIH-WyZCFCAHZZvUiIg1L0Slz6lIuF_6DBweoLBf4/edit?usp=sharing)
+
 ### lr-pcsx-rearmed & lr-beetle-psx Controls
 lr-pcsx-rearmed and lr-beetle-psx utilize Retroarch configurations.
 
