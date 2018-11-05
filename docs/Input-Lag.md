@@ -12,7 +12,7 @@ If RetroPie outputs a resolution lower or higher than the maximum that your TV s
 
 By default RetroPie will output to your TVs native resolution, but this can be overriden via [[Runcommand]] and configuration settings. Be sure you haven’t done this.
 
-**NOTE: The above only applies to modern digital TVs. CRTs do not process and display video signals in the same way.
+**NOTE**: The above only applies to modern digital TVs. CRTs do not process and display video signals in the same way.
 
 ## Run the NTSC version of games.
 NTSC (eg USA/Japanese) versions of games will run at 60Hz, but PAL (eg European) versions will run at 50Hz. The latter will feel noticeably slower and less responsive. 
