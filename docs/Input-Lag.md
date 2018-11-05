@@ -7,6 +7,16 @@ Input Lag, therefor, can be a real problem in a RetroPie environment, but fortun
 ## Set TV to 'GAME MODE'
 Almost every HDTV or monitor will have a way of setting any given AV channel to a special mode that cuts out all non-essential post-processing, ensuring the lowest possible response time. This mode is generally called 'GAME MODE', and can be activated by switching to the AV channel used for RetroPie, and searching in the display or picture options for such an option.
 
+## Use HDTV’s native display resolution
+If RetroPie outputs a resolution lower or higher than the maximum that your TV supports, your TV will always up or downscale the image to that maximum. Such operations are often VERY slow. 
+
+By default RetroPie will output to your TVs native resolution, but this can be overriden via [[Runcommand]] and configuration settings. Be sure you haven’t done this.
+
+**NOTE: The above only applies to modern digital TVs. CRTs do not process and display video signals in the same way.
+
+## Run the NTSC version of games.
+NTSC (eg USA/Japanese) versions of games will run at 60Hz, but PAL (eg European) versions will run at 50Hz. The latter will feel noticeably slower and less responsive. 
+
 ## HDMI source
 Certain models of older Vizio TVs (and possibly others) may exhibit input lag after switching over to the Raspberry Pi from a different HDMI source. Users have discovered that if the TV's HDMI input for the Pi is already selected/activated when the TV is powered on (as opposed to a Blu-ray player, game console, etc.), this input lag can be avoided.[source](https://retropie.org.uk/forum/topic/8552/psa-possible-source-of-controller-input-lag)
 
