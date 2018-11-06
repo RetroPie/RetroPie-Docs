@@ -5,17 +5,22 @@ Add the following to `/boot/cmdline.txt` -- just add a space to the end of the e
 `usbhid.quirks=0x16c0:0x05e1:0x040`
   
 The first two numbers are the vendor ID `16c0` and product ID `05e1`.
-
-If you have a "Juyao Dual Arcade", it is the same device, but the vendor ID is `0314` and the product ID is `0328`:
+If you have a **Juyao Dual Arcade**, it is the same device, but the vendor ID is `0314` and the product ID is `0328`:
 
 `usbhid.quirks=0x0314:0x0328:0x040`
 
-You can find your vendor/product using `lsusb`  
+An alternate configuration method is to create a kernel module configuration file for the `usbhid` driver. Create a new file by running `sudo nano /etc/modprobe.d/rp-usbhid-quirks.conf` (the file name is not important, but the file extension is), with the contents
+``` 
+options usbhid quirks=0x0314:0x0328:0x040
+```
+This method works for both Raspberry Pi and PC based installations. 
+
+You can find your Vendor/Product IDs by running the `lsusb` command from the command line.  
   
 More details in these threads generally.  
-http://blog.petrockblock.com/forums/topic/autofire-on-the-axis/page/5/#post-104325
-http://blog.petrockblock.com/forums/topic/autofire-on-the-axis/page/5/#post-104433  
-http://blog.petrockblock.com/forums/topic/how-to-get-xin-mo-dual-arcade-working-with-retropie-easy-guide/
+* http://blog.petrockblock.com/forums/topic/autofire-on-the-axis/page/5/#post-104325
+* http://blog.petrockblock.com/forums/topic/autofire-on-the-axis/page/5/#post-104433  
+* http://blog.petrockblock.com/forums/topic/how-to-get-xin-mo-dual-arcade-working-with-retropie-easy-guide/
 
 ### Older Info
 
