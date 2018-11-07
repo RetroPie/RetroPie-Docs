@@ -17,7 +17,8 @@ This method works for both Raspberry Pi and PC based installations.
 
 You can find your Vendor/Product IDs by running the `lsusb` command from the command line.  
   
-More details in these threads generally.  
+More details in these threads
+
 * http://blog.petrockblock.com/forums/topic/autofire-on-the-axis/page/5/#post-104325
 * http://blog.petrockblock.com/forums/topic/autofire-on-the-axis/page/5/#post-104433  
 * http://blog.petrockblock.com/forums/topic/how-to-get-xin-mo-dual-arcade-working-with-retropie-easy-guide/
