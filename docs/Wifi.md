@@ -2,6 +2,8 @@
 
 If you have a Raspberry Pi 3, wifi is built into the pi, if you have a pi2 or earlier you'll need a wifi dongle, you can check to see if your wifi dongle is compatible [here](http://elinux.org/RPi_USB_Wi-Fi_Adapters). You may want to use a dongle with a pi3, in this case see [here](#using-an-external-dongle).
 
+*NOTE:* In order to use the WiFi on the new Raspberry Pi 3 Model B+, you will need to first configure the **WiFi Country** via `raspi-config`. It’s under menu 4 of `raspi-config` (_Localisation options_). You can start `raspi-config` from the `RetroPie` menu in Emulationstation or from the command line with `sudo raspi-config`.
+
 There are 5 main methods to configure Wifi:
 
 1. [Wifi Module](#wifi-module)
