@@ -84,6 +84,7 @@ A Dreamcast soft-reset (A+B+X+Y+Start buttons at the same time) at the ROM's tit
 
 ## Controls
 Starting with RetroPie 3.3 controls for the Dreamcast Emulator are automatically configured when you configure your controls through emulationstation.
+Please notice that you may be interested in disabled the input auto config ( described above ) in case of any autoconfig issue.
 
 ![sega_dreamcast_diagram](https://cloud.githubusercontent.com/assets/10035308/16599638/7f411634-42c0-11e6-811c-456f02b2ea47.png)
 
