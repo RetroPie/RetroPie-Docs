@@ -392,15 +392,17 @@ run it :
 
 Choose your joystick.
 Now you can map your buttons.
-When all is done it outputs the text for making a file in 
-/home/pi/.reicast/mappings
+When all is done it outputs the text for making a file in `/home/pi/.reicast/mappings`.
 
-It outputs something like this (numbers are in decimals not hexadecimal such as in other contoller.cfg's(0x13b)):
+It outputs something like this (numbers are in decimals not hexadecimal such as in other contollers' config file):
+
+```
 [emulator]
 mapping_name = Your Gamepad
 btn_escape = 316
 
 [dreamcast]
 .......etc
+```
 
-make a file in /home/pi/.reicast/mappings called controller_Your Gamepad.cfg and paste the text in this file.
+Create a file in `/home/pi/.reicast/mappings` called `controller_Your Gamepad.cfg` and paste the text in this file, then modify the `/home/pi/.reicast/emu.cfg` and reference this file in the **`evdev_mapping_1`** (change the number according to the player you want to configure) configuration option.
