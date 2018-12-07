@@ -240,16 +240,20 @@ From http://www.raspberrypi.org/forums/viewtopic.php?f=78&t=79083
 
 ### How would I start from command line, say, the SNES emulator by itself?
 
-You can run a SNES rom by calling 
+First you need to make sure your emulators and systems are configured and working properly from EmulationStation.
 
-```
-retroarch -L /opt/retropie/libretrocores/lr-snes9x2010/libretro.so /home/pi/RetroPie/roms/snes/nameofyourrom.smc
-```
+To **manually start** a specific system and a game from the command line, use `runcommand`, replacing `<SYSTEM>` with the system you want (nes, snes, gba, ...) and `<ROM>` with the full path to the ROM to launch:
 
-If you'd like keyboard configurations to work add
-```
---config /opt/retropie/configs/all/retroarch.cfg
-```
+    /opt/retropie/supplementary/runcommand/runcommand.sh 0 _SYS_ "<SYSTEM>" "<ROM>"
+
+To **automatically start** a specific system and a game directly instead of EmulationStation, you need to edit `/opt/retropie/configs/all/autostart.sh` and add the following (replacing the variables with your own values):
+
+    SYSTEM="snes"
+    ROM="Name Of Your ROM.smc"
+    /opt/retropie/supplementary/runcommand/runcommand.sh 0 _SYS_ \
+        "$SYSTEM" "$HOME/RetroPie/roms/$SYSTEM/$ROM"
+
+Then, in the same file, remove the line containing `emulationstation` entirely to avoid EmulationStation to autostart.
 
 ### Is there another way to set up the gamepad for use, e.g., within the snes emulator?
 
