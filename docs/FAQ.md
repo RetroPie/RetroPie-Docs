@@ -242,18 +242,12 @@ From http://www.raspberrypi.org/forums/viewtopic.php?f=78&t=79083
 
 First you need to make sure your emulators and systems are configured and working properly from EmulationStation.
 
-To **manually start** a specific system and a game from the command line, use `runcommand`, replacing `<SYSTEM>` with the system you want (nes, snes, gba, ...) and `<ROM>` with the full path to the ROM to launch:
+To **manually start** a specific system and a game from the command line, use `runcommand` as shown below, replacing `<SYSTEM>` with the system you want (nes, snes, gba, arcade, ...) and `<ROM>` with the full path to the ROM to launch (example: `$HOME/RetroPie/roms/snes/My Rom.smc`). Do not forget the quotes `"`.
 
     /opt/retropie/supplementary/runcommand/runcommand.sh 0 _SYS_ "<SYSTEM>" "<ROM>"
 
-To **automatically start** a specific system and a game directly instead of EmulationStation, you need to edit `/opt/retropie/configs/all/autostart.sh` and add the following (replacing the variables with your own values):
-
-    SYSTEM="snes"
-    ROM="Name Of Your ROM.smc"
-    /opt/retropie/supplementary/runcommand/runcommand.sh 0 _SYS_ \
-        "$SYSTEM" "$HOME/RetroPie/roms/$SYSTEM/$ROM"
-
-Then, in the same file, remove any line containing `#auto` entirely to avoid EmulationStation or KODI to autostart.
+To **automatically start** a specific system and a game directly instead of EmulationStation, you need to edit `/opt/retropie/configs/all/autostart.sh` and add the above line (again replacing the variables with your own values).
+Then, in the same file, remove any line containing `#auto` entirely to avoid EmulationStation or KODI to autostart again.
 
 ### Is there another way to set up the gamepad for use, e.g., within the snes emulator?
 
