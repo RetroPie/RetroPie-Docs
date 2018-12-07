@@ -253,7 +253,7 @@ To **automatically start** a specific system and a game directly instead of Emul
     /opt/retropie/supplementary/runcommand/runcommand.sh 0 _SYS_ \
         "$SYSTEM" "$HOME/RetroPie/roms/$SYSTEM/$ROM"
 
-Then, in the same file, remove the line containing `emulationstation` entirely to avoid EmulationStation to autostart.
+Then, in the same file, remove any line containing `#auto` entirely to avoid EmulationStation or KODI to autostart.
 
 ### Is there another way to set up the gamepad for use, e.g., within the snes emulator?
 
