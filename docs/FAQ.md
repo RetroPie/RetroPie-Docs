@@ -242,7 +242,7 @@ From http://www.raspberrypi.org/forums/viewtopic.php?f=78&t=79083
 
 First you need to make sure your emulators and systems are configured and working properly from EmulationStation.
 
-To **manually start** a specific system and a game from the command line, use `runcommand` as shown below, replacing `<SYSTEM>` with the system you want (nes, snes, gba, arcade, ...) and `<ROM>` with the full path to the ROM to launch (example: `$HOME/RetroPie/roms/snes/My Rom.smc`). Do not forget the quotes `"`.
+To **manually start** a specific system and a game from the command line, use `runcommand` as shown below, replacing `<SYSTEM>` with the system you want (nes, snes, gba, arcade, ...) and `<ROM>` with the full path to the ROM to launch (example: `$HOME/RetroPie/roms/snes/My Rom.smc`). Do not forget to keep the surrounding quotes `"`.
 
     /opt/retropie/supplementary/runcommand/runcommand.sh 0 _SYS_ "<SYSTEM>" "<ROM>"
 
