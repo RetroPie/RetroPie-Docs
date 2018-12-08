@@ -11,7 +11,7 @@ With a custom firmware such as the pro CFW and ME CFW, and thanks to the natural
 
 # How to get started
 
-Downliad the FuSa gamepad zip and then turn your PSP on with your memory stick allready inside your console and if it is a model 3000 run your CFW (older models do not need to run it because those models allready boots with the CFW loaded) plug your USB cable to your PSP and PC now uncompress your zip inside > /PSP/GAMES/ and safely unplug it from your PC, now run the app and connect it to your pi, the screen of your PSP should be turned off and a LED should be lighted, the final result is this one
+Downliad the FuSa gamepad zip and then turn your PSP on with your memory stick allready inside your console and if it is a model 3000 or Go run your CFW (older models do not need to run it because those models allready boots with the CFW loaded) plug your USB cable to your PSP and PC now uncompress your zip inside > /PSP/GAMES/ and safely unplug it from your PC, now run the app and connect it to your pi, the screen of your PSP should be turned off and a LED should be lighted, the final result is this one
 
 ![FuSa gamepad working](http://i.imgur.com/cUnEP0O.jpg)
 
@@ -29,8 +29,8 @@ For a consistent experience inside and outside Emulationstation includibg in Kod
 
 # Considerations
 
-* The PSP Go and street are not supported
-* If your PSP is in a good condition, this is much better than a generic controller or a 360 gamepad. The buttons are really responsive and the D Pad ideal for retro gaming
-* The pi is capable to fully charge a PSP if it is model 3000 or 2000 but is recommended to use a good quality Mini USB type B. The retractible multi connector cable used in the picture can not charge it
-* The volume buttons do not work in emulationstation or RetroArch
-* You can access to a more in depth configuration in the FuSa's ini files
+- The PSP street is not supported
+- If your PSP is in a good condition, this is much better than a generic controller or a 360 gamepad. The buttons are really responsive and the D Pad ideal for retro gaming
+- The pi is NOT capable to fully charge a PSP
+- The volume buttons do not work in emulationstation or RetroArch
+- You can access to a more in depth configuration in the FuSa's ini files
