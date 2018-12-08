@@ -11,7 +11,7 @@ With a custom firmware such as the pro CFW and ME CFW, and thanks to the natural
 
 # How to get started
 
-Downliad the FuSa gamepad zip and then turn your PSP on with your memory stick allready inside your console and if it is a model 3000 or Go run your CFW (older models do not need to run it because those models allready boots with the CFW loaded) plug your USB cable to your PSP and PC now uncompress your zip inside > /PSP/GAMES/ and safely unplug it from your PC, now run the app and connect it to your pi, the screen of your PSP should be turned off and the power light should stay on, the final result is this one
+Downliad the FuSa gamepad zip and then turn your PSP on with your memory stick allready inside your console and if it is a model 3000 or Go run your CFW (older models do not need to run it because those models allready boots with the CFW loaded) plug your USB cable to your PSP and PC now uncompress your zip inside > /PSP/GAMES/ and safely unplug it from your PC, now run the app and connect it to your pi, the screen of your PSP should be turned off and the power light should stay on the final result is this one
 
 ![FuSa gamepad working](http://i.imgur.com/cUnEP0O.jpg)
 
@@ -30,6 +30,7 @@ For a consistent experience inside and outside Emulationstation includibg in Kod
 # Considerations
 
 - The PSP street is not supported
+. In FuSa gamepad the wireless switch works as an analogue stick switch
 - If your PSP is in a good condition, this is much better than a generic controller or a 360 gamepad. The buttons are really responsive and the D Pad ideal for retro gaming
 - The pi is NOT capable to fully charge a PSP
 - The volume buttons do not work in emulationstation or RetroArch
