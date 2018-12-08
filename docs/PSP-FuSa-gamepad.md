@@ -30,7 +30,7 @@ For a consistent experience inside and outside Emulationstation includibg in Kod
 # Considerations
 
 - The PSP street is not supported
-. In FuSa gamepad the wireless switch works as an analogue stick switch
+- In FuSa gamepad the wireless switch works as an analogue stick switch
 - If your PSP is in a good condition, this is much better than a generic controller or a 360 gamepad. The buttons are really responsive and the D Pad ideal for retro gaming
 - The pi is NOT capable to fully charge a PSP
 - The volume buttons do not work in emulationstation or RetroArch
