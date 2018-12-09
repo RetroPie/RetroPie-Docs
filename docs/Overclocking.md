@@ -224,6 +224,7 @@ The default settings for each model Pi are:
 Pi 1    700    250    250   400
 Pi 2    900    250    250   400
 Pi 3   1200    400    300   450
+Pi 3B+ 1400    400    300   500  
 Zero   1000    400    300   450
 ~~~
 
