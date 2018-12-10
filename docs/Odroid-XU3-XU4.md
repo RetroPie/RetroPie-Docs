@@ -1,13 +1,13 @@
 
 This is a guide on how to build RetroPie on the Odroid XU3/XU4. This is assuming you are starting with a prebuilt image of Ubuntu 16.04 Minimal from HardKernel's Website:
 
-## Download Ubuntu 16.04.2 Minimal Image for Odroid XU3/XU4:
+## Download Ubuntu 18.04.2 Minimal Image for Odroid XU3/XU4:
 
 ### The XU4 is fully software compatible with XU3!
 
-https://odroid.in/ubuntu_16.04lts/
+https://odroid.in/?directory=.%2Fubuntu_18.04lts%2F
 
-Direct Link [Here](https://odroid.in/ubuntu_16.04lts/ubuntu-16.04.2-minimal-odroid-xu4-20170516.img.xz)
+DirectLink: [Here](https://odroid.in/ubuntu_18.04lts/ubuntu-18.04.1-4.14-minimal-odroid-xu4-20181203.img.xz)
 
 Extract the .xz file with a program like [7zip](http://www.7-zip.org/download.html)
 
@@ -38,6 +38,7 @@ apt-get install language-pack-en-base
 update-locale LC_ALL="en_US.UTF-8"
 update-locale LANG="en_US.UTF-8"
 update-locale LANGUAGE="en_US.UTF-8"
+shutdown -r now
 dpkg-reconfigure locales
 ```
 5. Check if all locale variables were correctly set by using the "locale" command. Below you will find an exemplary output: 
@@ -120,13 +121,18 @@ setenv bootargs "${bootrootfs} ${videoconfig} ${hdmi_phy_control} ${hud_quirks} 
 ```
 sudo reboot
 ```
-12. Install the RetroPie Setup Script (logged in as NameOfYourChoice)
+12. Install libsdl2-dev and xorg
+```
+sudo apt install libsdl2-dev
+sudo apt install xorg
+```
+13. Install the RetroPie Setup Script (logged in as NameOfYourChoice)
 ```
 cd
 sudo apt install git
 git clone --depth=1 https://github.com/RetroPie/RetroPie-Setup.git
 ```
-13. Run the Setup Script:
+14. Run the Setup Script:
 ```
 cd RetroPie-Setup
 sudo ./retropie_setup.sh
