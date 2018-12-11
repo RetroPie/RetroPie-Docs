@@ -47,7 +47,7 @@ Download the SD image for your version of Raspberry Pi from the following page:
 
 **[https://retropie.org.uk/download/](https://retropie.org.uk/download/)**
 
-If you are unsure which version of Raspberry Pi you have just count the raspberries on boot:
+If you are unsure which version of Raspberry Pi you have, you can count the raspberries on boot:
 
 |Raspberry Pi 0/1 | Raspberry Pi 2/3|
 | :---: | :---: |
