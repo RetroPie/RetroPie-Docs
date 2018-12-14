@@ -58,7 +58,7 @@ This flexibility is sufficient for most games, but there are exceptions on compl
 AdvanceMAME offers the most versatility when it comes to trackball and spinner controls. Using the configuration file, You can exert very granular control to override the setup for specific games, or just configure your default settings for all games. This section describes important configuration steps necessary to enable mouse inputs in AdvanceMAME.
 
 ## AdvanceMAME Mouse Input Testing
-If you were successful with the Linux tests above, you might be able to skip this step, as the configuration below is flexible enough for most situations. However, if you plan to configure multiple input devices, it can be helpful to know how AdvanceMAME will see them. Like the Linux test above, AdvanceMAME has its own mouse testing command that allows you to see which mouse is controlling which axis. At a command prompt, type this: `/opt/retropie/emulators/advmame/1.4/bin/advm` and press ENTER. You will see output like this:
+If you were successful with the Linux tests above, you might be able to skip this step, as the configuration below is flexible enough for most situations. However, if you plan to configure multiple input devices, it can be helpful to know how AdvanceMAME will see them. Like the Linux test above, AdvanceMAME has its own mouse testing command that allows you to see which mouse is controlling which axis. At a command prompt, type this: `/opt/retropie/emulators/advmame-1.4/bin/advm` and press ENTER. You will see output like this:
 ```
 Driver event, mouses 2
 mouse 0, axes 3, buttons 3
