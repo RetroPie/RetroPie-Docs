@@ -14,7 +14,7 @@ This page is a resource for additional details on RetroPie's Final Burn Alpha em
 
 | Emulator | Rom Folder | Extension | Required ROM Version | Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
-| [lr-fbalpha](#lr-fbalpha) | arcade **or** fba **or** neogeo  | .7z .zip | FB Alpha v0.2.97.43| /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/fba/retroarch.cfg, **or** /opt/retropie/configs/neogeo/retroarch.cfg |
+| [lr-fbalpha](#lr-fbalpha) | arcade **or** fba **or** neogeo  | .7z .zip | FB Alpha v0.2.97.44| /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/fba/retroarch.cfg, **or** /opt/retropie/configs/neogeo/retroarch.cfg |
 | [lr-fbalpha2012](#lr-fbalpha2012) | arcade **or** fba **or** neogeo  | .7z .zip | FB Alpha v0.2.97.29 | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/fba/retroarch.cfg, **or** /opt/retropie/configs/neogeo/retroarch.cfg |
 | [PiFBA](#pifba) | arcade **or** fba **or** neogeo  | .zip | FB Alpha 0.2.96.71 | /opt/retropie/emulators/pifba/fba2x.cfg **or** /opt/retropie/configs/fba/fba2x.cfg |
 
@@ -39,15 +39,13 @@ Samples Dir: /home/pi/RetroPie/BIOS/fba/samples/
 Binary Dir: /opt/retropie/libretrocores/lr-fbalpha
 Config Dir: /opt/retropie/configs/fba/retroarch.cfg
 ```
-**ROM Version**: FBA 0.2.97.43
+**ROM Version**: FBA 0.2.97.44
 
 **Total games emulated: 4896**
 * BIOS: 6
 * Samples: ?
 
-**FB Alpha v0.2.97.43 DAT File**:  [FB Alpha v0.2.97.43 (Arcade Only)](https://drive.google.com/file/d/1CdEBUc5X8yCPdVnHs3q3tLgdaYTnAcrn/view?usp=sharing)
-
-**FB Alpha v0.2.97.43 DAT File**:  [FB Alpha v0.2.97.43 (NeoGeo Only)](https://drive.google.com/file/d/1HVtn3Si6KPxpYOhSyAof2eJB5kFSipoV/view?usp=sharing)
+**FB Alpha v0.2.97.44 DAT File**:  [FB Alpha v0.2.97.44](https://github.com/libretro/fbalpha/blob/master/dats/FB%20Alpha%20v0.2.97.44%20(ClrMame%20Pro%20XML).dat)
 
 [lr-fbalpha compatibility list](https://docs.google.com/spreadsheets/d/1GaqIIoiWbzKHwZ52S2xCSDQXILo81Ls1mHK6czKGAtM/edit?usp=sharing) feel free to contribute to the list.
 
