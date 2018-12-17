@@ -29,6 +29,8 @@ To avoid having several menus for different arcade emulators, all arcade-based R
 ### lr-fbalpha
 [Visit the Final Burn Alpha homepage on github](https://github.com/libretro/fbalpha)
 
+[Important announcement about FBAlpha romset constantly changing](https://retropie.org.uk/forum/topic/19741/new-fb-alpha-libretro-pre-v0-2-97-44)
+
 **Note: Please see [lr-fbalpha](lr-fbalpha) for information on how to configure specific features of this emulator.**
 
 Accepted File Extensions: **.7z .zip**
@@ -39,13 +41,19 @@ Samples Dir: /home/pi/RetroPie/BIOS/fba/samples/
 Binary Dir: /opt/retropie/libretrocores/lr-fbalpha
 Config Dir: /opt/retropie/configs/fba/retroarch.cfg
 ```
-**ROM Version**: FBA 0.2.97.44
+**ROM Version**: Subset of latest MAME/HBMAME roms available
 
-**Total games emulated: 4896**
-* BIOS: 6
+**Total arcade games emulated: 5500+**
+* BIOS: 7
 * Samples: ?
 
-**FB Alpha v0.2.97.44 DAT File**:  [FB Alpha v0.2.97.44](https://github.com/libretro/fbalpha/blob/master/dats/FB%20Alpha%20v0.2.97.44%20(ClrMame%20Pro%20XML).dat)
+**FB Alpha DAT Files**:
+
+[FB Alpha (All Arcade)](https://github.com/libretro/fbalpha/raw/master/dats/FB%20Alpha%20(ClrMame%20Pro%20XML%2C%20Arcade%20only).dat)
+
+[FB Alpha (Neogeo only)](https://github.com/libretro/fbalpha/raw/master/dats/FB%20Alpha%20(ClrMame%20Pro%20XML%2C%20Neogeo%20only).dat)
+
+[Other Dats for home console systems available here](https://github.com/libretro/fbalpha/tree/master/dats)
 
 [lr-fbalpha compatibility list](https://docs.google.com/spreadsheets/d/1GaqIIoiWbzKHwZ52S2xCSDQXILo81Ls1mHK6czKGAtM/edit?usp=sharing) feel free to contribute to the list.
 
