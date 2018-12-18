@@ -186,15 +186,15 @@ Once you've made the change, save the file, restart your Raspberry Pi, and move 
 
 Once you've made sure the operating system configuration has been made correctly, then the next step is to configure EmulationStation. You can select which ALSA Audio Card you want EmulationStation to use, by choosing the relevant AUDIO CARD option from the SOUND SETTINGS menu. You can choose from one of the following options:
 
-* "local": (RPi specific) This sets the sound output to the 3.5mm Onboard Audio Card. This is the 2nd most common option for RPi Systems.
-* "hdmi": (RPi specific) This sets the sound output to the HDMI Audio Card. This is the most common option for RPi Systems.
-* "both": (RPi specific) This sets the sound output to both the HDMI Audio Card and the 3.5mm Onboard Audio Card. 
-* "default": This sets the sound output to the ALSA "default" audio card. This is the most common option for Linux Operating Systems.
-* "sysdefault": This sets the sound output to the ALSA "default" audio card. This is the 2nd most common option for Linux Operating Systems.
-* "dmix": This sets the sound output to the ALSA dmix plugin, which allows direct mixing of multiple audio streams. This option is unlikely to be used.
-* "hw": This sets the sound output to the ALSA hw plugin, which talks directly to the ALSA kernel. This option is unlikely to be used.
-* "plughw": This sets the sound output to the ALSA plughw plugin, which talks directly to the ALSA kernel but allows you to set things like the sample rate, sample format and number of channels. This option is unlikely to be used.
-* "null": This sets the sound output to the ALSA "null" audio card, which effectively plays no sound anywhere. This option is unlikely to be used.
+* **local**: (RPi specific) This sets the sound output to the 3.5mm Onboard Audio Card. This is the 2nd most common option for RPi Systems.
+* **hdmi**: (RPi specific) This sets the sound output to the HDMI Audio Card. This is the most common option for RPi Systems.
+* **both**: (RPi specific) This sets the sound output to both the HDMI Audio Card and the 3.5mm Onboard Audio Card. 
+* **default**: This sets the sound output to the ALSA "default" audio card. This is the most common option for Linux Operating Systems.
+* **sysdefault**: This sets the sound output to the ALSA "default" audio card. This is the 2nd most common option for Linux Operating Systems.
+* **dmix**: This sets the sound output to the ALSA dmix plugin, which allows direct mixing of multiple audio streams. This option is unlikely to be used.
+* **hw**: This sets the sound output to the ALSA hw plugin, which talks directly to the ALSA kernel. This option is unlikely to be used.
+* **plughw**: This sets the sound output to the ALSA plughw plugin, which talks directly to the ALSA kernel but allows you to set things like the sample rate, sample format and number of channels. This option is unlikely to be used.
+* **null**: This sets the sound output to the ALSA "null" audio card, which effectively plays no sound anywhere. This option is unlikely to be used.
 
 NOTE: If you do not  see any of these options when you run aplay -L on your system, do not despair. You can [add your own custom audio card using these instructions](#adding-custom-audio-card-audio-device-or-omx-player-audio-device) and everything will work!
 
@@ -224,17 +224,17 @@ plughw:CARD=sndrpijustboomd,DEV=0
     Hardware device with all software conversions
 ````
 	
-As you can see from the list above, I have a justboom RPi HAT, and the justboom sound driver has configured itself as the "default" Audio Card, meaning that I would need to select the "default" AUDIO CARD option from within EmulationStation in order to use my JustBoom Audio HAT.
+As you can see from the list above, I have a justboom RPi HAT, and the justboom sound driver has configured itself as the "default" Audio Card, meaning that I have disabled the on-board built-in sound card, and the Justboom RPi HAT has been assigned as the default Audio Card in Raspbian. I would need to select the "default" AUDIO CARD option from within EmulationStation in order to use my JustBoom Audio HAT.
 
 ## Step 3: Choosing the Audio Device (Mixer)
 
 Third step is to select which Audio Mixer you want EmulationStation to use on the ALSA Audio Card you selected in Step 2, by choosing the relevant AUDIO DEVICE option from the SOUND SETTINGS menu. You can choose from one of the following options:
 
-* "PCM": This controls the volume of the sound going into the audio device from the Operating System. This is a common audio mixer option for the standard RPi.
-* "Speaker": This is another mixer option, but I'm unsure what it selects as I've never used it.
-* "Master": This is typically the main volume control and is the most common audio mixer option. This is the option that you should use for most devices (including Hifiberry Audio RPi HATs). 
-* "Digital": This audio mixer controls the volume levels when it's still digital. This is the option that you should use for Justboom Audio RPi HATs. 
-* "Analogue": This is another option for use for sound cards that use the Analogue mixer to control the main volume.
+* **PCM**: This controls the volume of the sound going into the audio device from the Operating System. This is a common audio mixer option for the standard RPi.
+* **Speaker**: This is another mixer option, but I'm unsure what it selects as I've never used it.
+* **Master**: This is typically the main volume control and is the most common audio mixer option. This is the option that you should use for most devices (including Hifiberry Audio RPi HATs). 
+* **Digital**: This audio mixer controls the volume levels when it's still digital. This is the option that you should use for Justboom Audio RPi HATs. 
+* **Analogue**: This is another option for use for sound cards that use the Analogue mixer to control the main volume.
 
 NOTE: If you do not see any of these options when you run 'amixer scontrols -D <AudioCard>' on your system, do not despair. You can [add your own custom audio device mixer using these instructions](#adding-custom-audio-card-audio-device-or-omx-player-audio-device) and everything will work!
 
@@ -270,11 +270,11 @@ As you can see, I don't have a "Master" audio mixer, or a "PCM" audio mixer, but
 
 The last step is to select which Audio Device that OMXPlayer will use to play videos. EmulationStation uses OMX Player to play videos, and it doesn't use the ALSA settings we set earlier - it has it's own OMX PLAYER AUDIO DEVICE setting within the EmulationStation SOUND SETTINGS menu. You can choose from one of the following options:
 
-* "local": (RPi specific) This sets the OMX Player sound output to the 3.5mm Onboard Audio Card. This is the 2nd most common option for RPi Systems.
-* "hdmi": (RPi specific) This sets the OMX Player sound output to the HDMI Audio Card. This is the most common option for RPi Systems.
-* "both": (RPi specific) This sets the OMX Player sound output to both the HDMI Audio Card and the 3.5mm Onboard Audio Card. 
-* "alsa:hw:0,0": This sets the OMX Player sound output to the first Audio Mixer on the first Audio Card on the system. For the RPi this is the onboard audio (unless you've disabled it, in which case this is the RPi Audio HAT or USB Audio Device you've added)
-* "alsa:hw:1,0": This sets the OMX Player sound output to the first Audio Mixer on the second Audio Card on the system. For the RPi this is the RPi Audio HAT or USB Audio Device you've added (only if you have NOT disabled the onboard audio!).
+* **local**: (RPi specific) This sets the OMX Player sound output to the 3.5mm Onboard Audio Card. This is the 2nd most common option for RPi Systems.
+* **hdmi**: (RPi specific) This sets the OMX Player sound output to the HDMI Audio Card. This is the most common option for RPi Systems.
+* **both: (RPi specific) This sets the OMX Player sound output to both the HDMI Audio Card and the 3.5mm Onboard Audio Card. 
+* **alsa:hw:0,0**: This sets the OMX Player sound output to the first Audio Mixer on the first Audio Card on the system. For the RPi this is the onboard audio (unless you've disabled it, in which case this is the RPi Audio HAT or USB Audio Device you've added)
+* **alsa:hw:1,0**: This sets the OMX Player sound output to the first Audio Mixer on the second Audio Card on the system. For the RPi this is the RPi Audio HAT or USB Audio Device you've added (only if you have NOT disabled the onboard audio!).
 
 NOTE: If you do not see any of these options when you run aplay -L on your system, do not despair. You can [add your own custom OMX Audio Device using these instructions](#adding-custom-audio-card-audio-device-or-omx-player-audio-device) and everything will work!
 
