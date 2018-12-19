@@ -1,6 +1,6 @@
 # How to configure sound for RetroPie EmulationStation
 
-In July 2018, the range of audio configuration options for Linux and RPi EmulationStation users was greatly enhanced. Prior to July 2018, users could only select the audio card (known as an AudioCard in EmulationStation), and were unable to select which audio mixer to use on that audio card. EmulationStation only looked for the 'default' audio mixer, which was too restrictive when used with unusual hardware, or Rpi Audio HATs. The July 2018 change added the ability to choose the audio mixer name from a far greater range of options, as well as allowing custom options to be set in the es_settings.cfg file. More details on how that works is below. The hope was that it would give people the flexibility that they needed to avoid the many sound issues that people with people were having with USB Audio devices and aftermarket Linux and RPi audio cards.
+In July 2018, the range of audio configuration options for Linux and RPi RetroPie EmulationStation users was greatly enhanced. Prior to July 2018, users could only select the audio card (known as an AudioCard in EmulationStation), and were unable to select which audio mixer to use on that audio card. EmulationStation only looked for the 'default' audio mixer, which was too restrictive when used with unusual hardware, or Rpi Audio HATs. The July 2018 change added the ability to choose the audio mixer name from a far greater range of options, as well as allowing custom options to be set in the es_settings.cfg file. More details on how that works is below. The hope was that it would give people the flexibility that they needed to avoid the many sound issues that people with people were having with USB Audio devices and aftermarket Linux and RPi audio cards.
 
 NOTE: Windows uses a different audio subsystem, so the changes below do not apply to a Windows version of EmulationStation... only the Linux and RPi versions.
 
@@ -10,6 +10,8 @@ NOTE: Windows uses a different audio subsystem, so the changes below do not appl
 
 EmulationStation does not configure the operating system at all. You need to have a working ALSA setup in order for EmulationStation to make use of it. The rest of this document goes into some detail regarding configuring your operating system to get your sound working, so we won't go into too much detail here. But we will cover some standard functionality.
 
+NOTE: If you need to exit from EmulationStation to back to the Raspbian operating system, then press <kbd>F4</kbd> while in EmulationStation to exit and go to the console (terminal).
+
 #### Raspberry Pi Sound in Raspbian
 
 If you have a Raspberry Pi, this will cover the basic sound configuration in Raspbian to get the platform working.
@@ -18,7 +20,7 @@ If you have a Raspberry Pi, this will cover the basic sound configuration in Ras
 
 If you have a standard RPi and want to use the 3.5mm headphone jack then you are in luck. You're pretty much ready to go without any real modification, as the RPi will automatically use the headphone jack when it senses a plug in the socket. 
 
-In some instances though, you will need to manually modify the raspberry pi boot config file (/boot/config.txt) and ADD the following lines to those already there: 
+In some instances though, you will need to manually modify the raspberry pi boot config file (`sudo nano/boot/config.txt`) and ADD the following lines to those already there: 
 
 ````
 # This line should already be in the file, but if it's not then make sure to add it.
@@ -33,7 +35,7 @@ Once you've made the change, save the file, restart your Raspberry Pi, and move 
 
 
 ##### Using the built-in HDMI Audio
-If you have a standard RPi and want to send audio over the HDMI connector then it should just work. In some instances though, you will need to manually modify the raspberry pi boot config file (/boot/config.txt) and ADD the following lines to those already there: 
+If you have a standard RPi and want to send audio over the HDMI connector then it should just work. In some instances though, you will need to manually modify the raspberry pi boot config file (`sudo nano/boot/config.txt`) and ADD the following lines to those already there: 
 
 ````
 # forces HDMI mode
@@ -57,12 +59,12 @@ If you want better sound than the standard on-board sound chip can provide, then
 
 You don't need to disable the on-board sound if you don't want to, but I would recommend it as can simply ALSA configuration and avoid some configuration issues later. The commands to enable USB audio and disable the on-board sound card are below:
 
-Modify the raspberry pi boot config file (`nano /boot/config.txt`) and comment out the `dtparam=audio=on` line by putting a `#` in front of it like this: 
+Modify the raspberry pi boot config file (`sudo nano/boot/config.txt`) and comment out the `dtparam=audio=on` line by putting a `#` in front of it like this: 
 ````
 #dtparam=audio=on
 ````
 
-Modify the raspberry pi boot config file (`nano /boot/config.txt`) and ADD the following lines to those already there: 
+Modify the raspberry pi boot config file (`sudo nano/boot/config.txt`) and ADD the following lines to those already there: 
 ````
 dtparam=audio=off
 ````
@@ -82,12 +84,12 @@ You don't need to disable the on-board sound if you don't want to, but I would r
 
 **For the JustBoom Amp, Amp Zero, DAC and DAC Zero**
 
-Modify the raspberry pi boot config file (`nano /boot/config.txt`) and comment out the `dtparam=audio=on` line by putting a `#` in front of it like this: 
+Modify the raspberry pi boot config file (`sudo nano/boot/config.txt`) and comment out the `dtparam=audio=on` line by putting a `#` in front of it like this: 
 ````
 #dtparam=audio=on
 ````
 
-Modify the raspberry pi boot config file (`nano /boot/config.txt`) and ADD the following lines to those already there: 
+Modify the raspberry pi boot config file (`sudo nano/boot/config.txt`) and ADD the following lines to those already there: 
 ````
 dtparam=audio=off
 dtoverlay=justboom-dac
@@ -102,12 +104,12 @@ Once you've made the change, save the file, restart your Raspberry Pi, and move 
 
 **For the JustBoom Digi and Digi Zero**
 
-Modify the raspberry pi boot config file (`nano /boot/config.txt`) and comment out the `dtparam=audio=on` line by putting a `#` in front of it like this: 
+Modify the raspberry pi boot config file (`sudo nano/boot/config.txt`) and comment out the `dtparam=audio=on` line by putting a `#` in front of it like this: 
 ````
 #dtparam=audio=on
 ````
 
-Modify the raspberry pi boot config file (`nano /boot/config.txt`) and ADD the following lines to those already there: 
+Modify the raspberry pi boot config file (`sudo nano/boot/config.txt`) and ADD the following lines to those already there: 
 ````
 dtparam=audio=off
 dtoverlay=justboom-digi
@@ -122,12 +124,12 @@ Once you've made the change, save the file, restart your Raspberry Pi, and move 
 
 **For the Hifiberry DAC FOR RASPBERRY PI 1/DAC+ LIGHT/DAC ZERO/MINIAMP/BEOCREATE/DAC+ DSP**
 
-Modify the raspberry pi boot config file (`nano /boot/config.txt`) and comment out the `dtparam=audio=on` line by putting a `#` in front of it like this: 
+Modify the raspberry pi boot config file (`sudo nano/boot/config.txt`) and comment out the `dtparam=audio=on` line by putting a `#` in front of it like this: 
 ````
 #dtparam=audio=on
 ````
 
-Modify the raspberry pi boot config file (`nano /boot/config.txt`) and ADD the following lines to those already there: 
+Modify the raspberry pi boot config file (`sudo nano/boot/config.txt`) and ADD the following lines to those already there: 
 ````
 dtparam=audio=off
 dtoverlay=hifiberry-dac
@@ -137,12 +139,12 @@ Once you've made the change, save the file, restart your Raspberry Pi, and move 
 
 **For the Hifiberry DAC+ STANDARD/PRO/AMP2**
 
-Modify the raspberry pi boot config file (`nano /boot/config.txt`) and comment out the `dtparam=audio=on` line by putting a `#` in front of it like this: 
+Modify the raspberry pi boot config file (`sudo nano/boot/config.txt`) and comment out the `dtparam=audio=on` line by putting a `#` in front of it like this: 
 ````
 #dtparam=audio=on
 ````
 
-Modify the raspberry pi boot config file (`nano /boot/config.txt`) and ADD the following lines to those already there: 
+Modify the raspberry pi boot config file (`sudo nano/boot/config.txt`) and ADD the following lines to those already there: 
 ````
 dtparam=audio=off
 dtoverlay=hifiberry-dacplus
@@ -152,7 +154,7 @@ Once you've made the change, save the file, restart your Raspberry Pi, and move 
 
 **For the Hifiberry DIGI/DIGI+ ALL MODELS**
 
-Modify the raspberry pi boot config file (`nano /boot/config.txt`) and comment out the `dtparam=audio=on` line by putting a `#` in front of it like this: 
+Modify the raspberry pi boot config file (`sudo nano/boot/config.txt`) and comment out the `dtparam=audio=on` line by putting a `#` in front of it like this: 
 ````
 #dtparam=audio=on
 ````
@@ -167,12 +169,12 @@ Once you've made the change, save the file, restart your Raspberry Pi, and move 
 
 **For the Hifiberry AMP+ (NOT AMP2!)**
 
-Modify the raspberry pi boot config file (`nano /boot/config.txt`) and comment out the `dtparam=audio=on` line by putting a `#` in front of it like this: 
+Modify the raspberry pi boot config file (`sudo nano/boot/config.txt`) and comment out the `dtparam=audio=on` line by putting a `#` in front of it like this: 
 ````
 #dtparam=audio=on
 ````
 
-Modify the raspberry pi boot config file (`nano /boot/config.txt`) and ADD the following lines to those already there: 
+Modify the raspberry pi boot config file (`sudo nano/boot/config.txt`) and ADD the following lines to those already there: 
 ````
 dtparam=audio=off
 dtoverlay=hifiberry-amp
@@ -188,7 +190,7 @@ Once you've made sure the operating system configuration has been made correctly
 * **hdmi**: (RPi specific) This sets the sound output to the HDMI Audio Card. This is the most common option for RPi Systems.
 * **both**: (RPi specific) This sets the sound output to both the HDMI Audio Card and the 3.5mm Onboard Audio Card. 
 * **default**: This sets the sound output to the ALSA "default" audio card. This is the most common option for Linux Operating Systems.
-* **sysdefault**: This sets the sound output to the ALSA "default" audio card. This is the 2nd most common option for Linux Operating Systems.
+* **sysdefault**: This sets the sound output to the ALSA "sysdefault" audio card. This is the 2nd most common option for Linux Operating Systems.
 * **dmix**: This sets the sound output to the ALSA dmix plugin, which allows direct mixing of multiple audio streams. This option is unlikely to be used.
 * **hw**: This sets the sound output to the ALSA hw plugin, which talks directly to the ALSA kernel. This option is unlikely to be used.
 * **plughw**: This sets the sound output to the ALSA plughw plugin, which talks directly to the ALSA kernel but allows you to set things like the sample rate, sample format and number of channels. This option is unlikely to be used.
@@ -196,7 +198,7 @@ Once you've made sure the operating system configuration has been made correctly
 
 NOTE: If you do not  see any of these options when you run aplay -L on your system, do not despair. You can [add your own custom audio card using these instructions](#adding-custom-audio-card-audio-device-or-omx-player-audio-device) and everything will work!
 
-In order to figure out what the name of your Audio Card is on your device, open a terminal window and run 'aplay -L'. This will generate a list of Audio Cards similar to the one below:
+In order to figure out what the name of your Audio Card is on your device, open a terminal window and run `aplay -L`. This will generate a list of Audio Cards similar to the one below:
 
 ````
 pi@raspberrypi:~ $ aplay -L
@@ -234,9 +236,9 @@ Third step is to select which Audio Mixer you want EmulationStation to use on th
 * **Digital**: This audio mixer controls the volume levels when it's still digital. This is the option that you should use for Justboom Audio RPi HATs. 
 * **Analogue**: This is another option for use for sound cards that use the Analogue mixer to control the main volume.
 
-NOTE: If you do not see any of these options when you run 'amixer scontrols -D <AudioCard>' on your system, do not despair. You can [add your own custom audio device mixer using these instructions](#adding-custom-audio-card-audio-device-or-omx-player-audio-device) and everything will work!
+NOTE: If you do not see any of these options when you run `amixer scontrols -D <AudioCard>` on your system, do not despair. You can [add your own custom audio device mixer using these instructions](#adding-custom-audio-card-audio-device-or-omx-player-audio-device) and everything will work!
 
-In order to figure out what the name of your Audio Device (mixer) is on your selected Audio Card, open a terminal window and running 'amixer scontrols -D <AudioCard>', where <AudioCard> is replaced with the name of your Audio Card that you
+In order to figure out what the name of your Audio Device (mixer) is on your selected Audio Card, open a terminal window and running `amixer scontrols -D <AudioCard>`, where `<AudioCard>` is replaced with the name of your Audio Card that you
 found in Step 1. This will generate a list of Audio Cards similar to the one below:
 
 ````
@@ -284,7 +286,7 @@ EmulationStation now has the ability to use custom settings entered into the es_
 
 ### Adding a Custom Audio Card
 
-To add a custom Audio Card, edit the "AudioCard" setting in the es_settings.cfg file and replace the value with the name of your Audio Card. You can find this out by opening a terminal window and running 'aplay -L'. This will generate a list of Audio Cards similar to the one below:
+To add a custom Audio Card, edit the "AudioCard" setting in the es_settings.cfg file and replace the value with the name of your Audio Card. You can find this out by opening a terminal window and running `aplay -L`. This will generate a list of Audio Cards similar to the one below:
 
 ````
 pi@raspberrypi:~ $ aplay -L
@@ -316,11 +318,11 @@ Select any one of the Audio Cards listed by using the first word on the line in 
 <string name="AudioCard" value="default" />
 ````
 
-NOTE: If the AudioCard value is not listed, please either close and reopen EmulationStation (the settings is created upon close if it doesn't exist), or add it manually to the es_settings.cfg file.
+IMPORTANT NOTE: If the AudioCard value is not listed, please either close and reopen EmulationStation (the settings is created upon close if it doesn't exist), or add it manually to the es_settings.cfg file.
 
 ### Adding a Custom Audio Device (Audio Mixer)
 
-To add a custom Audio Device (mixer), edit the "AudioDevice" setting and replace the value with the name of your Audio Device. You can get a list off avilable Audio Devices on the Audio Card by opening a terminal window and running 'amixer scontrols -D <AudioCard>', where <AudioCard> is replaced with the name of your Audio Card that you found in Step 1.  This command will generate a list of Audio Devices (mixers) that you can use in the AudioDevice setting in the es_settings.cfg file, e.g.
+To add a custom Audio Device (mixer), edit the "AudioDevice" setting and replace the value with the name of your Audio Device. You can get a list off available Audio Devices on the Audio Card by opening a terminal window and running `amixer scontrols -D <AudioCard>`, where `<AudioCard>` is replaced with the name of your Audio Card that you found in Step 1.  This command will generate a list of Audio Devices (mixers) that you can use in the AudioDevice setting in the es_settings.cfg file, e.g.
 
 ````
 pi@raspberrypi:~ $ amixer scontrols -D default
@@ -351,14 +353,14 @@ Select any one of the Simple mixer controls listed by using the name within the 
 <string name="AudioDevice" value="Digital" />`
 ````
 
-Using the above example as a starting point, changing the AudoCard and AudioDevice settings within the es_settings.cfg file to the following values will use the 'default' Audio Card to play sounds, and will use the 'Digital' mixer (Audio Device) to control the volume.
-
+The AudioDeviceSetting works in conjunction with the your AudioCard setting to select the Audio Mixer that RetroPie will use. This of course means that you will need both in your es_settings.cfg file for the setting to take effect. Using my JustBoom DAC HAT as an example this is what I get within the es_settings.cfg file:
 ````
 <string name="AudioCard" value="default" />
 <string name="AudioDevice" value="Digital" />
 ````
+It uses the 'default' Audio Card to play sounds, and will use the 'Digital' mixer (Audio Device) on the default AudioCard to play sounds and control the volume.
 
-NOTE: Any custom manually used settings will be overwritten if you select any of the other options in the GUI and exit the Sound Settings window, as the Sound Settings GUI window overwrites the es_settings.cfg options when you exit the window.
+IMPORTANT NOTE: Any custom manually used settings will be overwritten if you select any of the other options in the GUI and exit the Sound Settings window, as the Sound Settings GUI window overwrites the es_settings.cfg options when you exit the window.
 
 ### Adding a Custom OMX Player Audio Card
 
@@ -396,7 +398,7 @@ Select any one of the Simple mixer controls listed by using the name within the 
 The above example will tell OMX Player to use the third mixer on the second Audio Card to play video sounds.
 
 
-NOTE: Any custom manually used settings will be overwritten if you select any of the other options in the GUI and exit the Sound Settings window, as the Sound Settings GUI window overwrites the es_settings.cfg options when you exit the window.
+IMPORTANT NOTE: Any custom manually used settings will be overwritten if you select any of the other options in the GUI and exit the Sound Settings window, as the Sound Settings GUI window overwrites the es_settings.cfg options when you exit the window.
 
 # Sound Troubleshooting
 
