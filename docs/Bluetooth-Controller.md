@@ -226,6 +226,12 @@ This should keep the Pi scanning for bluetooth devices in case the pair is lost.
 `enter`  
 `sudo reboot`  
 
+### Connection issues and input lags (especially if you connect more than one BT controller)
+
+1. Try reducing distance from your controller to Raspberry (helps sometimes)
+2. Try to disable internal WiFi - this helps to extent signal strength, [you can use this script to disable/enable Wifi on the fly](https://retropie.org.uk/forum/topic/19734) (several users report PS3 controller connections problems are vanished since)
+3. Buy a new BT adapter and put it to your Raspberry. Add `dtoverlay=pi3-disable-bt` in `/boot/config.txt` to disable internal BT module (ultima ratio, speeds up communication, extents range and speed depending on your BT adapter model)
+
 **Some useful threads**  
 http://blog.petrockblock.com/forums/topic/8bitdo-bluetooth-controller-setup-retropie-v3/  
 http://blog.petrockblock.com/forums/topic/the-old-story-setting-up-2x-8bitdo-nes30-bluetooth/  
@@ -235,3 +241,4 @@ https://wiki.archlinux.org/index.php/bluetooth_keyboard
 http://8bitdo.com/Support.html  
 https://www.reddit.com/r/RetroPie/comments/4d5hcf/how_to_setup_8bitdo_nes30_fc30_pro_controllers_on/  
 https://github.com/libretro/retroarch-joypad-autoconfig/tree/master/udev
+https://retropie.org.uk/forum/topic/20303/rpi-3-b-tricky-bluetooth-problem-with-multiple-ps3-controllers/
