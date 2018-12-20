@@ -219,29 +219,6 @@ axis_dpad1_y_inverted = no
 axis_dpad1_x_inverted = no
 ```
 
-**iBuffalo Classic USB GamePad** 
-
-```
-[emulator]
-mapping_name = USB,2-axis 8-button gamepad  
-btn_escape = 294
-
-[dreamcast]
-btn_a = 288
-btn_b = 289
-btn_x = 290
-btn_y = 291
-btn_start = 295
-axis_x = 0
-axis_y = 1
-
-[compat]
-btn_trigger_left = 292
-btn_trigger_right = 293
-axis_x_inverted = no
-axis_y_inverted = no
-```
-
 **PS4 Controller:**
 
 ```
@@ -342,6 +319,29 @@ axis_trigger_left_inverted =
 axis_trigger_right_inverted =
 axis_dpad1_y_inverted = no
 axis_dpad1_x_inverted = no
+```
+
+**iBuffalo Classic USB GamePad [EXPERIMENTAL]** 
+
+```
+[emulator]
+mapping_name = USB,2-axis 8-button gamepad  
+btn_escape = 294
+
+[dreamcast]
+btn_a = 288
+btn_b = 289
+btn_x = 290
+btn_y = 291
+btn_start = 295
+axis_x = 0
+axis_y = 1
+
+[compat]
+btn_trigger_left = 292
+btn_trigger_right = 293
+axis_x_inverted = no
+axis_y_inverted = no
 ```
 
 **Mobile Gamepad [EXPERIMENTAL]**
