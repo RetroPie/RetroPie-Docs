@@ -322,7 +322,7 @@ axis_dpad1_x_inverted = no
 ```
 
 **iBuffalo Classic USB GamePad [EXPERIMENTAL]** 
-
+Analog movement not supported
 ```
 [emulator]
 mapping_name = USB,2-axis 8-button gamepad  
@@ -343,7 +343,6 @@ btn_trigger_right = 293
 axis_x_inverted = no
 axis_y_inverted = no
 ```
-Analog movement not supported
 
 **Mobile Gamepad [EXPERIMENTAL]**
 ```
