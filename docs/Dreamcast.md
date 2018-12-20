@@ -322,6 +322,7 @@ axis_dpad1_x_inverted = no
 ```
 
 **iBuffalo Classic USB GamePad [EXPERIMENTAL]** 
+
 Analog movement not supported
 ```
 [emulator]
