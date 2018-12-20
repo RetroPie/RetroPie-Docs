@@ -343,6 +343,8 @@ btn_trigger_right = 293
 axis_x_inverted = no
 axis_y_inverted = no
 ```
+Analog movement not supported
+```
 
 **Mobile Gamepad [EXPERIMENTAL]**
 ```
