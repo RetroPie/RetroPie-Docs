@@ -144,7 +144,7 @@ The option is:
 ```
 mame2003-tate_mode = "enabled"
 ```
-In addition to this, you will want to stop rotating the games and instead show them in along the length of the screen, `video_allow_rotate` in mame-libretro/arcade to false via the [[Configuration Editor]].
+In addition to this, you will want to stop rotating the games and instead show them in along the length of the screen, `video_allow_rotate` in mame-libretro/arcade to false via the [Configuration Editor](Configuration-Editor.md).
 
 ## Save states
 Beyond [High scores](#high-scores), lr-mame2003 supports save states through the [usual Retroarch hotkeys](https://github.com/retropie/retropie-setup/wiki/retroarch-configuration#default-joypad-hotkeys). However, save state support has to be implemented per-driver, so they won't work with all games.
