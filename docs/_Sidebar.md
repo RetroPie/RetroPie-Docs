@@ -57,7 +57,7 @@
 * [PC-9800](PC-9800)
 * [PC Engine/TurboGrafx-16](PC-Engine)
 * [PC-FX](PC-FX)
-* [PlayStation 1](Playstation-1)
+* [PlayStation 1](PlayStation-1)
 * [PlayStation 2](Playstation-2)
 * [Pokemon Mini](Pokemon-Mini)
 * [PSP](PSP)
