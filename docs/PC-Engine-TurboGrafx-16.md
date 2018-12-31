@@ -2,7 +2,7 @@
 ![pce](https://cloud.githubusercontent.com/assets/10035308/12213634/206dcb84-b639-11e5-8111-e0dfe0890107.png)
 ![tg16](https://cloud.githubusercontent.com/assets/10035308/12213633/206e0090-b639-11e5-9c39-3fada1f9b4f4.png)
 ***
-_The TurboGrafx-16 Entertainment SuperSystem, originally known in Japan as the PC Engine, is a home video game console joint-developed by Hudson Soft and NEC, released in 1987._
+_This console, known as the PC Engine in Japan and as the TurboGrafx-16 Entertainment SuperSystem in the USA, is a home video game console joint-developed by Hudson Soft and NEC, released in 1987._
 ***
 
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
@@ -16,29 +16,35 @@ _The TurboGrafx-16 Entertainment SuperSystem, originally known in Japan as the P
 
 Accepted File Extensions: **.7z .ccd .chd .cue .pce .zip**
 
-Place your PC Engine/ TurboGrafx-16 ROMs in
+Place your PC Engine/PC Engine CD/TurboGrafx-16/TurboGrafx-CD/SuperGrafx ROMs in
 ```
 /home/pi/RetroPie/roms/pcengine
 ```
 
 ## BIOS
 
-**The BIOS file is only needed to play CD-based games.**
+**A BIOS file is only needed to play CD-based games.**
 
-The BIOS file must be named: **syscard3.pce** 
+Several BIOS are supported, but **syscard3.pce** is the most compatible with games.
 
-Place your syscard3.pce file in
+Recognized Name | No-Into Name | CRC32 | MD5 | Comment |
+| :--: | :--: | :--: | :--: | :--: |
+| syscard3.pce | [BIOS] Super CD-ROM System (Japan) (v3.0).pce | 6D9A73EF | 38179DF8F4AC870017DB21EBCBF53114 | This is the prefered BIOS for lr-beetle-pce-fast and should play most games. |
+| syscard2.pce | [BIOS] CD-ROM System (Japan) (v2.1).pce | 283B74E0 | 3CDD6614A918616BFC41C862E889DD79 ||
+| syscard2.pce | [BIOS] CD-ROM System (Japan) (v2.0).pce | 52520BC6 | 3A456F0ECCFF039EB5FF045F56EC1C3B ||
+| syscard1.pce | [BIOS] CD-ROM System (Japan) (v1.0).pce | 3F9F95A4 | 2B7CCB3D86BAA18F6402C176F3065082 ||
+| gexpress.pce | [BIOS] Games Express CD Card (Japan).pce | 51A12D90 | 6D2CB14FC3E1F65CEB135633D1694122 | Required to play four unlicensed games. |
+| gexpress.pce | [BIOS] Games Express CD Card (Japan) (Alt).pce | 9D1E81B8 | CCF8590E2E7AC4A08BCC1D77EC168917 | Required to play four unlicensed games. |
+| syscard3u.pce | [BIOS] TurboGrafx CD Super System Card (USA) (v3.0).pce | 2B5B75FE | 0754F903B52E3B3342202BDAFB13EFA5 | Most games work, but some Japan games will not. |
+| syscard2u.pce | [BIOS] TurboGrafx CD System Card (USA) (v2.0).pce | FF2A5EC3 | 94279F315E8B52904F65AB3108542AFE ||
+
+Place your BIOS in
 
 ```
 /home/pi/RetroPie/BIOS
 ```
 
-Working BIOS files:
-
-| Filename | md5sum | CRC32 | Comment |
-| :--: | :--: | :--: | :--: |
-| Super CD-ROM System (Japan) (v3.0).pce | 38179df8f4ac870017db21ebcbf53114 | 6d9a73ef | This is the prefered BIOS for lr-beetle-pce-fast and should play all games. |
-| TurboGrafx CD Super System Card (USA) (v3.0).pce | 0754f903b52e3b3342202bdafb13efa5 | 2b5b75fe | Most games work, but some Japan games will not. |
+You can change which BIOS is used in the Quick Menu's Options.
 
 ## Controls
 
