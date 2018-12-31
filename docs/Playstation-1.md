@@ -74,7 +74,7 @@ If your PSX game is a .ecm extension, its a compressed file that needs to be ext
 
 ### lr-pcsx-rearmed
 
-Whilst lr-pcsx_rearmed has an emulated BIOS to fall back on, this has limited compatibility meaning most games will have issues running with it, and others will not work at all. It should be considered mandatory to manually install an official BIOS.
+Whilst lr-pcsx_rearmed has an emulated BIOS to fall back on, this has limited compatibility meaning most games will have issues running with it, others will not work at all, and all games that use memory card saves are prone to save corruption. It should be considered mandatory to manually install an official BIOS.
 
 The following BIOS are supported: 
 
