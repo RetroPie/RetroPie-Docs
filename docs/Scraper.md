@@ -259,7 +259,9 @@ Make sure to update to the latest version of Retropie-Setup script if you don't 
 
 Recommended usage is to scrape your platform(s) with as many online sources as you'd like. All of the data will be cached while doing so. Then, when you have gathered enough data, be sure to always scrape it one last time using the *Local: LocalDb* source. This will combine all of your cached data into the most complete results for each rom.
 
- Skyscraper can be started from the RetroPie-Setup script, opening the **Configuration/Tools** menu and choosing `skyscraper`. If you wish to run it from the command line, for more advanced options and parameters, you can find it installed in `/opt/retropie/supplementary/skyscraper/Skyscraper`.
+Skyscraper can be started from the RetroPie-Setup script, opening the **Configuration/Tools** menu and choosing `skyscraper`. Since you have to exit Emulationstation first, you can start the RetroPie-Setup script from the command line by running `sudo $HOME/RetroPie-Setup/retropie_setup.sh`.
+
+If you wish to run it from the command line, for more advanced options and parameters, you can find it installed in `/opt/retropie/supplementary/skyscraper/Skyscraper`.
 
 <img src="https://user-images.githubusercontent.com/31816814/46992642-c127e080-d113-11e8-8fd0-c372c3852838.png" width="550">
 
