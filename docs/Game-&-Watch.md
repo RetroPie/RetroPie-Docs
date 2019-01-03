@@ -13,7 +13,7 @@ _Game & Watch is a line of handheld electronic games produced by Nintendo from 1
 
 ## Emulator: [lr-gw](https://github.com/libretro/gw-libretro) (Optional Packages)
 
-Note that this is optional. It can be installed from the options menu of the [RetroPie Setup Script](Updating RetroPie).
+Note that this is optional. It can be installed from the options menu of the [RetroPie Setup Script](Updating-RetroPie).
 
 ## ROMS
 Accepted File Extensions: **.mgw**
@@ -23,7 +23,7 @@ Place your Game & Watch ROMs in
 /home/pi/RetroPie/roms/gameandwatch
 ```
 
-Games can be found at http://bot.libretro.com/assets/cores/Handheld%20Electronic%20Game/
+Games can be found at the [Libretro Handheld Electronic Games page](https://bot.libretro.com/assets/cores/HandheldElectronicGame/).
 
 ### Video Guide  
 
