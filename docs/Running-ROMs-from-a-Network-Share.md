@@ -138,7 +138,7 @@ If you are getting permission denied errors when you try to scrape or save state
 
 with
 
-    sudo mount -t cifs -o sec=ntlmv2,username=something,password=something,rw,file_mode=0777,dir_mode=0777 //REMOTEHOST/path/to/roms /home/pi/RetroPie/roms
+    sudo mount -t cifs -o sec=ntlmv2,username=something,rw,file_mode=0777,dir_mode=0777,password=something //REMOTEHOST/path/to/roms /home/pi/RetroPie/roms
 
 This will give you write access and should solve your problem.
 
