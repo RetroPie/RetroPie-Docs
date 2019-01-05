@@ -381,7 +381,7 @@ This is what makes the Xbox 360 controller the best for this project.
 
         xboxdrv --trigger-as-button --wid 0 --led 2 --alt-config /usr/local/xboxdrv_player1.cfg --alt-config /usr/local/mouse.cfg --deadzone 4000 --silent &
         sleep 1
-        xboxdrv --trigger-as-button --wid 1 --led 3  --alt-config /usr/local/xboxdrv_player2.cfg --deadzone 4000 --silent &
+        xboxdrv --trigger-as-button --wid 1 --led 3 --alt-config /usr/local/xboxdrv_player2.cfg --deadzone 4000 --silent &
         sleep 1
         xboxdrv --trigger-as-button --wid 2 --led 4 --deadzone 4000 --silent &
         sleep 1
