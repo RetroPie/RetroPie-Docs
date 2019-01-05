@@ -11,6 +11,15 @@ For this reason, a common scenario is that part of the image is 'cut off'. For e
 The easiest way to fix it is to adjust your TV. Modern HDTVs will usually have a setting somewhere in the options that displays the entire 1080p image, including the areas that would be ignored as "overscan". For example:
 ### Samsung
 Menu > Picture > Screen Adjustment > Picture Size > change to "Screen Fit"
+
+### LG
+
+First disable overscan for the TV and then press the settings button (wheel).
+
+Settings -> All Settings -> Picture -> Setting for aspect ratio -> Just Scan
+
+Select "On"
+
 ### Pioneer
 Look for "Dot by Dot". 
 
