@@ -361,12 +361,12 @@ Insert the SD card back into your RetroPie system and start the system, without 
 
 ### How can I disable a USB device without disconnecting it?
 
-USB devices can be disabled via authorization in udev. For example, the following udev rule will disable a Mayflash Wireless Wii U Adapter:
+USB devices can be disabled via deauthorization in udev. For example, the following udev rule will disable a Mayflash Wireless Wii U Adapter:
 
 ```
 SUBSYSTEM=="usb", ATTRS{idVendor}=="0079", ATTRS{idProduct}=="1800", ATTR{authorized}="0"
 ```
-The values for idVendor and idProduct can be determined by the command ```lsusb``` in the Retropie console. Alternatively, the following command(s) will show them for a particular joystick device (js…).
+The values for idVendor and idProduct can be determined by the command ```lsusb``` in the Retropie console. Alternatively, the following command(s) will show them for a particular joystick device (js**X**).
 ```
 udevadm info -q all -n /dev/input/js0 | grep 'VENDOR_ID\|MODEL_ID'
 ```
