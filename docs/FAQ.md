@@ -4,8 +4,8 @@
 - [Where did the desktop go?](FAQ#where-did-the-desktop-go)
 - [Why does shut down and reboot take ages?](FAQ#why-does-shut-down-and-reboot-take-ages)
 - [How do I hide the boot text?](FAQ#how-do-i-hide-the-boot-text)
-- [How do I boot to the desktop or Kodi?](FAQ/#how-do-i-boot-to-the-desktop-or-kodi)
-- [How do I remove the black borders?](FAQ/#how-do-i-remove-the-black-borders)
+- [How do I boot to the desktop or Kodi?](FAQ#how-do-i-boot-to-the-desktop-or-kodi)
+- [How do I remove the black borders?](FAQ#how-do-i-remove-the-black-borders)
 - [How do I change which buttons to press to exit an emulator with a controller?](FAQ#how-do-i-change-which-buttons-to-press-to-exit-an-emulator-with-a-controller)
 - [Does Super Mario All Stars work?](FAQ#does-super-mario-all-stars-work)
 - [How do I extend the available space when upgrading to a larger SD card?](FAQ#how-do-i-extend-the-available-space-when-upgrading-to-a-larger-sd-card)
@@ -18,7 +18,7 @@
 - [Why Can't I Insert Coins in Arcade Emulators?](FAQ#why-cant-i-insert-coins-in-arcade-emulators)
 - [The `retropie_setup` and `runcommand` menus have very small fonts on my screen, how can I increase the console font size?](FAQ#how-can-i-increase-the-console-font-size)
 - [How can I recover my RetroPie after I enabled the experimental OpenGL driver?](FAQ#how-can-i-recover-my-retropie-after-enabling-the-desktop-opengl-driver-)
-- [How can I disable a USB device without disconnecting it?](FAQ#how-can-i-disable-a-usb-device-without-disconnecting-it-)
+- [How can I disable a USB device without disconnecting it?](FAQ#how-can-i-disable-a-usb-device-without-disconnecting-it)
 
 ### Why do some emulators not show up?
 
