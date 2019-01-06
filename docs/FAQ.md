@@ -4,11 +4,11 @@
 - [Where did the desktop go?](FAQ#where-did-the-desktop-go)
 - [Why does shut down and reboot take ages?](FAQ#why-does-shut-down-and-reboot-take-ages)
 - [How do I hide the boot text?](FAQ#how-do-i-hide-the-boot-text)
-- [How do I boot to the desktop or Kodi](FAQ/#how-do-i-boot-to-the-desktop-or-kodi)
-- [How do I remove the black borders](FAQ/#how-do-i-remove-the-black-borders)
+- [How do I boot to the desktop or Kodi?](FAQ/#how-do-i-boot-to-the-desktop-or-kodi)
+- [How do I remove the black borders?](FAQ/#how-do-i-remove-the-black-borders)
 - [How do I change which buttons to press to exit an emulator with a controller?](FAQ#how-do-i-change-which-buttons-to-press-to-exit-an-emulator-with-a-controller)
 - [Does Super Mario All Stars work?](FAQ#does-super-mario-all-stars-work)
-- [How do I extend the available space when upgrading to a larger SD card](FAQ#how-do-i-extend-the-available-space-when-upgrading-to-a-larger-sd-card)
+- [How do I extend the available space when upgrading to a larger SD card?](FAQ#how-do-i-extend-the-available-space-when-upgrading-to-a-larger-sd-card)
 - [How would I start from command line, say, the SNES emulator by itself?](FAQ#how-would-i-start-from-command-line-say-the-snes-emulator-by-itself)
 - [Is there another way to set up the gamepad for use, e.g., within the snes emulator?](FAQ#is-there-another-way-to-set-up-the-gamepad-for-use-eg-within-the-snes-emulator)
 - [The PSX emulator reports no BIOS found. What do I do?](FAQ#the-psx-emulator-reports-no-bios-found-what-do-i-do)
@@ -17,8 +17,8 @@
 - [Why aren't my in-game saves working properly?](FAQ#why-arent-my-in-game-saves-working-properly)
 - [Why Can't I Insert Coins in Arcade Emulators?](FAQ#why-cant-i-insert-coins-in-arcade-emulators)
 - [The `retropie_setup` and `runcommand` menus have very small fonts on my screen, how can I increase the console font size?](FAQ#how-can-i-increase-the-console-font-size)
-- [How can I recover my RetroPie after I enabled the experimental OpenGL driver ?](FAQ#how-can-i-recover-my-retropie-after-enabling-the-desktop-opengl-driver-)
-- [How can I disable a USB device without disconnecting it?](FAQ#how-can-I-disable-a-USB-device-without-disconnecting-it)
+- [How can I recover my RetroPie after I enabled the experimental OpenGL driver?](FAQ#how-can-i-recover-my-retropie-after-enabling-the-desktop-opengl-driver-)
+- [How can I disable a USB device without disconnecting it?](FAQ#how-can-i-disable-a-usb-device-without-disconnecting-it-)
 
 ### Why do some emulators not show up?
 
@@ -162,7 +162,7 @@ to
 ExecStart=-/sbin/agetty --skip-login --noclear --noissue --login-options "-f pi" %I $TERM
 ```
 
-### How do I boot to the desktop or Kodi
+### How do I boot to the desktop or Kodi?
 
 In retropie setup script>>Configuration / tools>>autostart
 
@@ -231,7 +231,7 @@ From http://www.raspberrypi.org/forums/viewtopic.php?f=78&t=79083
 
 > I managed to figure out a fix so the controls work in Super Mario All-Stars and also doesn't break other games (Mario Kart, Super Bomberman etc). This problem has been bugging me for ages and I had to figure out a way to play this game for nostalgia sake. This fix will unfortunately mean player two controls wont work for other games (but I play alone anyway and this is for people with one controller). Simply post this in your blank retroarch.cfg in the snes folder. P.S Remember to change the button numbers/axis for you own controller.
 
-### How do I extend the available space when upgrading to a larger SD card
+### How do I extend the available space when upgrading to a larger SD card?
 
 1. Navigate to the command line interface by either hitting F4 in EmulationStation or using the main menu to exit
 1. Type in the following command: `sudo raspi-config`
@@ -334,7 +334,7 @@ Alternatively, you can execute the following command and follow the instructions
 sudo dpkg-reconfigure console-setup
 ```
 
-### How can I recover my RetroPie after enabling the desktop OpenGL driver ?
+### How can I recover my RetroPie after enabling the desktop OpenGL driver?
 Note: this entry applies to the Raspbian Jessie based RetroPie installations.
 
 The OpenGL driver for the Raspberry PI VideoCore GPU was introduced to provide hardware accelerated OpenGL for the X11 OpenGL applications, during the Raspbian Jessie version. From the [original release](https://www.raspberrypi.org/blog/another-new-raspbian-release/):
@@ -359,9 +359,9 @@ Insert the SD card back into your RetroPie system and start the system, without 
 >
 > If you have loaded Raspbian onto a blank SD card, you will have two partitions. The first one, which is the smaller one, is the boot partition. Place the file into this one.
 
-**How can I disable a USB device without disconnecting it?**
+### How can I disable a USB device without disconnecting it?
 
-USB devices can be disabled via usb authorisation in udev. For example, this udev rule will disable a Mayflash Wireless Wii U Adapter:
+USB devices can be disabled via authorization in udev. For example, the following udev rule will disable a Mayflash Wireless Wii U Adapter:
 
 ```
 SUBSYSTEM=="usb", ATTRS{idVendor}=="0079", ATTRS{idProduct}=="1800", ATTR{authorized}="0"
@@ -370,6 +370,6 @@ The values for idVendor and idProduct can be determined by the command ```lsusb`
 ```
 udevadm info -q all -n /dev/input/js0 | grep 'VENDOR_ID\|MODEL_ID'
 ```
-To disable the device in question, put your vendor and model ids as idVendor and idProduct values in the above udev rule and save it in the text file `/etc/udev/rules.d/60-disabled_devices.rules` (the name between `60-` and `.rules` is arbitrary). That should disable the usb device on the next reboot or after running the command ```sudo udevadm trigger```.
+To disable the device in question, substitute your idVendor and idProduct values in the above udev rule and save it to a file named `/etc/udev/rules.d/60-disabled_devices.rules` (the name between `60-` and `.rules` is arbitrary). That should disable the USB device on the next reboot or after running the command ```sudo udevadm trigger```.
 
-To re-enable the device, just delete the file or change the value "autorized" to `1`.
+To re-enable the device, just delete the file or change ATTR{authorized}="0" to `1`.
