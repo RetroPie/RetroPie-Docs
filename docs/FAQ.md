@@ -357,3 +357,18 @@ Insert the SD card back into your RetroPie system and start the system, without 
  > For headless setup, SSH can be enabled by placing a file named ssh, without any extension, onto the boot partition of the SD card from another computer. When the Pi boots, it looks for the ssh file. If it is found, SSH is enabled and the file is deleted. The content of the file does not matter; it could contain text, or nothing at all.
 >
 > If you have loaded Raspbian onto a blank SD card, you will have two partitions. The first one, which is the smaller one, is the boot partition. Place the file into this one.
+
+**How can I disable a USB device without disconnecting it?**
+
+USB devices can be disabled via usb authorisation in udev. For example, this udev rule will disable a Mayflash Wireless Wii U Adapter:
+
+```
+SUBSYSTEM=="usb", ATTRS{idVendor}=="0079", ATTRS{idProduct}=="1800", ATTR{authorized}="0"
+```
+The values for idVendor and idProduct can be determined by the command ```lsusb``` in the Retropie console. Alternatively, the following command(s) will show them for a particular joystick device (js…).
+```
+udevadm info -q all -n /dev/input/js0 | grep 'VENDOR_ID\|MODEL_ID'
+```
+To disable the device in question, put your vendor and model ids as idVendor and idProduct values in the above udev rule and save it in the text file `/etc/udev/rules.d/60-disabled_devices.rules` (the name between `60-` and `.rules` is arbitrary). That should disable the usb device on the next reboot or after running the command ```sudo udevadm trigger```.
+
+To re-enable the device, just delete the file or change the value "autorized" to `1`.
