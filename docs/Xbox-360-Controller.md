@@ -257,7 +257,7 @@ It is generally advisable to use the daemon mode, 'cause it uses less CPU and RA
 
 #### Xbox 360 controller glitchy?
 
-According to [this post](https://github.com/petrockblog/RetroPie-Setup/issues/214#issuecomment-21796016) it might help to add the line ```dwc_otg.speed=1```to the file ```/boot/cmdline.txt```.
+According to [this post](https://github.com/retropie/RetroPie-Setup/issues/214#issuecomment-21796016) it might help to add the line ```dwc_otg.speed=1```to the file ```/boot/cmdline.txt```.
 
 #### *Outdated* optional manual configs
 
