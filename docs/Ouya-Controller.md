@@ -223,6 +223,7 @@ After steps 1 and 2, ssh into your raspberry pi and go to the "~/.config/retroar
 
 Type sudo nano 'OUYA Game Controller.cfg' and change the values.  My working values are:
 
+```
 input_device = "OUYA Game Controller"
 input_driver = "udev"
 input_r_y_plus_axis = "+4"
@@ -254,5 +255,6 @@ input_menu_toggle_btn = "5"
 input_l_x_minus_axis = "-0"
 input_y_btn = "4"
 input_r_x_plus_axis = "+3"
+```
 
 That's all that is needed to get it working.  As noted in step 2, make sure your controller is set up as user 1.
