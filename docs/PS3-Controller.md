@@ -16,6 +16,7 @@ After your Pi boots up, you need to enter RetroPie setup. You can do this one of
 1. Navigate to the "RetroPie" icon in the Home Screen and select it using whatever key you mapped "A" to on your gamepad, and go to RetroPie Setup
 1. Once in the RetroPie GUI, choose [Manage packages] > [driver].
 1. Select PS3 Controller Driver ("ps3controller"), and then select [Install from source].
+   * If you have a Tpfoon PS3 Controller you need to go to `[Configuration / Options]` > `[Install/Pair PS3 Controller (Clone support Shanwan)]`
 1. Once installation completes, exit RetroPie setup and return to the EmulationStation Home Screen.
 1. Press "Start" to enter the EmulationStation Menu, and select Configure Input.
 1. Disconnect your PS3 controller from USB. Now hold the PS button on the controller down until you see the lights on it flash sequentially. The controller should now be connected via Bluetooth.
