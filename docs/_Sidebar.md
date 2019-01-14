@@ -56,7 +56,7 @@
 * [PC](PC)
 * [PC-8800](PC-8800)
 * [PC-9800](PC-9800)
-* [PC Engine/TurboGrafx-16](PC-Engine-TurboGrafx-16)
+* [PC Engine/TurboGrafx-16](PC-Engine)
 * [PC-FX](PC-FX)
 * [PlayStation 1](PlayStation-1)
 * [PlayStation 2](Playstation-2)
