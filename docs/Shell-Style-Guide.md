@@ -27,7 +27,7 @@
 
 ## Introduction
 
-This document describes the style guide that has to be used used for the devlopment of the RetroPie-Setup Script sources. This guide is adapted from the [Google Shell Style Guide](https://google.github.io/styleguide/shell.xml).
+This document describes the style guide that has to be used for the development of the RetroPie-Setup Script sources. This guide is adapted from the [Google Shell Style Guide](https://google.github.io/styleguide/shell.xml).
 
 ## Features and Bugs
 
