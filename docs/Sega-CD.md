@@ -15,7 +15,7 @@ The Sega CD was an add-on to the Sega Genesis. It was released in 1991.
 
 ## ROMS
 Accepted File Extensions: **.bin .chd .cue .iso**  
-Note: .bin files wont be displayed within Emulation Station, they will be referenced via the .cue.
+Note: .bin files won't be displayed within Emulation Station, they will be referenced via the .cue.
 
 
 Place your Sega CD ROMS (.chd .iso OR .bin AND .cue) in
