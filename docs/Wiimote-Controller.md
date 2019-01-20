@@ -677,7 +677,7 @@ You can now use ES the map all the buttons as you wish in the normal way.
 
 
 **Some notes**:
-The original tutorial stated that once the initial pairing was completed, you wont need to manually pair and enter the commands in the terminal. 
+The original tutorial stated that once the initial pairing was completed, you won't need to manually pair and enter the commands in the terminal. 
 
 * reboot
 * "Press a key once to connect, then again to activate moltengamepad."
