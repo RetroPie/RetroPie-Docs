@@ -19,6 +19,8 @@
 - [The `retropie_setup` and `runcommand` menus have very small fonts on my screen, how can I increase the console font size?](FAQ#how-can-i-increase-the-console-font-size)
 - [How can I recover my RetroPie after I enabled the experimental OpenGL driver?](FAQ#how-can-i-recover-my-retropie-after-enabling-the-desktop-opengl-driver)
 - [How can I disable a USB device without disconnecting it?](FAQ#how-can-i-disable-a-usb-device-without-disconnecting-it)
+- [Why Emulationstation doesn't start anymore after an update?](FAQ#why-emulationstation-doesnt-start-automatically-after-an-update)
+
 
 ### Why do some emulators not show up?
 
@@ -373,3 +375,17 @@ udevadm info -q all -n /dev/input/js0 | grep 'VENDOR_ID\|MODEL_ID'
 To disable the device in question, substitute your idVendor and idProduct values in the above udev rule and save it to a file named `/etc/udev/rules.d/60-disabled_devices.rules` (the name between `60-` and `.rules` is arbitrary). That should disable the USB device on the next reboot or after running the command ```sudo udevadm trigger```.
 
 To re-enable the device, just delete the file or change ATTR{authorized}="0" to `1`.
+
+### Why Emulationstation doesn't start automatically after an update ?
+
+Due to a bug in the `systemd` Raspbian package, certain OS upgrades will break the auto-login configuration for the `pi` user, stopping Emulationstation to start automatically. After the update, you're presented with a text mode screen and login prompt (`retropie login:`).
+
+To fix this, login to the system with the `pi` user (default password is `raspberry`), then start the Raspbian configuration utility by running:
+
+```
+sudo raspi-config
+```
+
+To fix the auto-login configuration, go to **3 Boot Options**, choose **Desktop/CLI** and finally choose the **Console Autologin** option. Go back to the main menu and choose <kbd>Finish</kbd> and Reboot your Pi. 
+
+After the reboot, Emulationstation should start automatically.
