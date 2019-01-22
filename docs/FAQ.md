@@ -19,7 +19,7 @@
 - [The `retropie_setup` and `runcommand` menus have very small fonts on my screen, how can I increase the console font size?](FAQ#how-can-i-increase-the-console-font-size)
 - [How can I recover my RetroPie after I enabled the experimental OpenGL driver?](FAQ#how-can-i-recover-my-retropie-after-enabling-the-desktop-opengl-driver)
 - [How can I disable a USB device without disconnecting it?](FAQ#how-can-i-disable-a-usb-device-without-disconnecting-it)
-- [Why Emulationstation doesn't start anymore after an update?](FAQ#why-emulationstation-doesnt-start-automatically-after-an-update)
+- [Why Emulationstation doesn't start anymore after an update?](FAQ#why-emulationstation-doesnt-start-automatically-after-an-update-)
 
 
 ### Why do some emulators not show up?
