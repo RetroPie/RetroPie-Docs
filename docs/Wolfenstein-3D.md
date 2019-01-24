@@ -72,10 +72,10 @@ The md5 checksums for supported game data are as follow:
 
 Check also that you have all of the files above.
 
-N.B. If your Spear of Destiny installation is missing the ```.sd1``` files, rename the following files to ensure that Episode 1 will launch correctly:
+N.B. If your Spear of Destiny installation is missing the `.sd1` files, rename the following files to ensure that Episode 1 will launch correctly:
 
 	gamemaps.sod -> gamemaps.sd1
 	maphead.sod -> maphead.sd1
 	vswap.sod -> vswap.sd1
 
-If you have game data that do not match the md5sums above, then please post at the [RetroPie Forum](http://blog.petrockblock.com/forums/forum/retropie-project-forum/emulators/).
+If you have game data that do not match the md5sums above, then please post at the [RetroPie Forum](https://retropie.org.uk/forum).
