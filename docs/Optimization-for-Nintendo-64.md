@@ -6,21 +6,22 @@ If you are looking for a more perfect N64 emulation experience you should seriou
 
 ## Hardware and Configuration 
 
-A Raspberry Pi 2 or Raspberry Pi 3 is highly suggested. 
+A Raspberry Pi 3 is highly suggested to maximuz
 
 ### Overclocking
 
-**Overclocking should only be attempted by advanced users who understand the risks. There is a possibility that your warranty will be voided. An unstable overclock will lead to freezing, crashing and SD card corruption. Proceed at your own risk!**
+**Overclocking should only be attempted by advanced users who understand the risks. There is a possibility that your warranty will be voided. An unstable overclock will lead to freezing, crashing and SD card corruption. Back up your image before attempting to overclock. Proceed at your own risk!**
 
 Overclocking is setting a hardware component to run faster than originally intended by the manufacturer. It can add instability if not done properly. It will also make your pi run hotter. There are no standard settings for overclocking and not all pis will handle the same amount of overclocking. Therefore before you begin overclocking please review [this article](https://github.com/retropie/retropie-setup/wiki/Overclocking) first for proper overclocking methods and stability testing to prevent SD card corruption and potential loss of your data.
 
-For boosting N64 performance, it is the```core_freq```(GPU core) setting that will give the most benefit not the ```v3d_freq```. Most pis seem to be stable at ```core_freq=550``` with some amount of ```over_voltage``` applied. Again, it is important to remember that not all pis are equal, some will only overclock a little or not at all. You will need to experiment to see how much your pi can handle. If your pi freezes or crashes then your overclock is unstable. 
+For boosting N64 performance, it is the```core_freq```(GPU core) setting that will give the most benefit. Most pis I tested were stable between ```core_freq=500``` and ```core_freq=575``` with some amount of ```over_voltage``` applied. Again, it is important to remember that not all pis are equal, some will only overclock a little or not at all. You will need to experiment to see how much your pi can handle. If your pi freezes or crashes then your overclock is unstable. 
 
 Overclocking ```sdram_freq``` will give a very small boost to performance. Going from 450mhz to 550mhz yielded at best about a 1FPS increase. Sdram has its own over voltage value ```over_voltage_sdram```.  You may also need to add ```sdram_schmoo=0x02000020```to your config.txt. This is a set of timings that can help add stability if your sdram is overclocked.
 
-```v3d_freq``` or ```gpu_freq``` can also be overclocked for possibly a small boost in performance. 
+```v3d_freq```can also be overclocked. This helped improve performance for a couple games I tested. Most of the raspberry pis I tested were stable to at least ```v3d_freq=500``` but not much past this.
 
-```arm_freq```(CPU) overclocking is of little to no help for boosting N64 performance on the pi. There was no discernible FPS increase overclocking the Pi 3's CPU from the standard 1200mhz to 1350mhz. Though it may help increase performance for other high demand emulators such as PSX or MAME.
+```arm_freq```(CPU) overclocking is of little to no help for boosting N64 performance on the pi. There was no discernible FPS increase overclocking the Pi 3's CPU from the standard 1200mhz to 1350mhz. Though it may help increase performance for other high demand emulators such as PSX or MAME. Overclocking ```arm_freq``` may benefit earlier pi models though additional testing is needed to confirm. 
+
 ### CPU-Governor
 
 The CPU governor controls when your overclock is applied. With the cpu-governor set to performance mode your pi will run at full speed while running ROMs but will down-clock when sitting idle in Emulation Station. The CPU governor can be set to max performance mode in one of two ways.
@@ -37,9 +38,9 @@ Just as important as overclocking, selecting the right emulator/graphics plugin 
 To learn the community tested optimal settings please view either of the two rom compatibility lists located [here](https://docs.google.com/spreadsheets/d/1Sn3Ks3Xv8cIx3-LGCozVFF7wGLagpVG0csWybnwFHXk/edit) or [here](
 https://docs.google.com/spreadsheets/d/1Wjzbu90l6eCEW1w6ar9NtfyDBQrSPILQL5MbRSpYSzw/edit?usp=sharing). (rom compatibility lists are a mess and all are in need of retesting). Do not accept these lists as 100% accurate as they are community maintained and with updates may change over time. There may be some inaccuracies so it is best just to use the lists as a general starting point. Some games listed as unplayable have with recent updates become playable and vice versa. The current default emulator is mupen64plus-auto which will attempt to select the correct graphics plugin for you, however for best results it is best to test each plugin for yourself on a per game basis. It is recommended that you confirm a game runs well with the standard low-res plugin before attempting to use the hi-res option. 
 
-Each emulator/plugin should be set to the lowest resolution (CEA-1 for most displays) through the runcommand menu. This will slightly increase performance by limiting the up-scaling.
+Each N64 emulator/video plugin should be set to the lowest resolution (CEA-1 for most displays) through the runcommand menu. This will slightly increase performance by limiting the up-scaling the pi has to perform. This is not necessary for the gles2n64 video plugin.
 
-**NOTE** The glide plugin currently has issues with frame buffer emulation on the pi that causes visual glitches which lead to a crash after about 10-20 mins of playtime. Until the problem is resolved make use of save states so you don't lose your progress or you could try an alternate plugin. 
+**NOTE** The gliden64 video plugin currently has issues with frame buffer emulation on the pi that causes visual glitches which lead to a crash after about 10-20 mins of playtime. A recent update has taken care of this issue so it is highly recommended that you update mupen64plus from SOURCE.
 
 
 ## Notes on Audio
