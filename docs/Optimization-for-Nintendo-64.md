@@ -44,9 +44,9 @@ Each N64 emulator/video plugin should be set to the lowest resolution (CEA-1 for
 
 
 ## Notes on Audio
-The SDL audio plugin produces less audio drop out during lag and makes for an improved experience over the OMX audio plugin. Previously, the SDL audio plugin produced an audio crackling that was undesirable. With recent updates the audio crackle has been fixed so it is now fine to use SDL audio. To switch to the SDL audio plugin you should first update your mupen64plus emulator to the latest binary version. Then navigate to: ```/opt/retropie/configs/all/autoconf.cfg``` and make sure that ```mupen64plus_audio = "0"```
+The SDL audio plugin produces less audio drop out and makes for an improved experience over the OMX audio plugin. Previously, the SDL audio plugin produced an audio crackling that was undesirable. With recent updates the audio crackle has been fixed so it is now fine to use SDL audio. To switch to the SDL audio plugin you should first update your mupen64plus emulator to the latest binary version. Then navigate to: ```/opt/retropie/configs/all/autoconf.cfg``` and make sure that ```mupen64plus_audio = "0"```
 
-As a side benefit from using SDL audio, save/load states will now function properly with mupen64plus.
+As a side benefit from using the SDL audio plugin, save/load states will now function properly with mupen64plus.
 
 ## High Resolution Texture Packs
 
