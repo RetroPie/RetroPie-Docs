@@ -6,7 +6,7 @@ If you are looking for a more perfect N64 emulation experience you should seriou
 
 ## Hardware and Configuration 
 
-A Raspberry Pi 3 is highly suggested to maximuz
+A Raspberry Pi 3 is highly suggested to maximize performance
 
 ### Overclocking
 
