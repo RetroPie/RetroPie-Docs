@@ -1,4 +1,4 @@
-![](http://www.grandrapidsdevs.com/wp-content/uploads/2015/06/kodiLogo.png)
+![](https://kodi.tv/sites/default/themes/kodi/logo-stacked.svg)
 ***
 
 _Kodi is a Home Media Server (basically your own personal Netflix) formerly known as XBMC. Kodi is currently an optional build that can be installed from the optional menu of the setup script._
@@ -14,7 +14,7 @@ See [here](http://blog.petrockblock.com/forums/topic/kodi-tab-in-emulationstatio
 
 Visit the RetroPie-Setup Screen, select Optional Packages, and select Kodi.  Installation can take 10 minutes.  After installation, you will be able to go to the Ports section and view Kodi as an option.
 
-RetroPie currently installs Kodi 17.6 "Krypton".
+RetroPie currently installs Kodi 17.6 "Krypton" on Raspbian Jessie and Kodi 18 "Leia" on Raspbian Stretch and Ubuntu PC systems.
 
 ### PVRs Installation
 
