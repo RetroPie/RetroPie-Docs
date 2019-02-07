@@ -1,4 +1,5 @@
-![](https://kodi.tv/sites/default/themes/kodi/logo-stacked.svg)
+<img src="https://kodi.tv/sites/default/themes/kodi/logo-sbs.svg" alt="Kodi" width="240">
+
 ***
 
 _Kodi is a Home Media Server (basically your own personal Netflix) formerly known as XBMC. Kodi is currently an optional build that can be installed from the optional menu of the setup script._
