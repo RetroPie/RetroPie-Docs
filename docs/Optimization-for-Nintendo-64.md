@@ -10,7 +10,9 @@ A Raspberry Pi 3 is highly suggested to maximize performance
 
 ### Overclocking
 
-**Overclocking should only be attempted by advanced users who understand the risks. There is a possibility that your warranty will be voided. An unstable overclock will lead to freezing, crashing and SD card corruption. Back up your image before attempting to overclock. Proceed at your own risk!**
+**Overclocking should only be attempted by advanced users who understand the risks. An unstable overclock will lead to freezing, crashing and SD card corruption. Back up your image before attempting to overclock. Proceed at your own risk!**
+
+**NOTE** Setting any overclocking parameters to values other than those used by raspi-config may set a permanent bit within the SoC, making it possible to detect that your Pi has been overclocked. The specific circumstances where the overclock bit is set are if force_turbo is set to 1 AND any of the over_voltage_* options are set to a value > 0. Setting the overclock bit can void your warranty.
 
 Overclocking is setting a hardware component to run faster than originally intended by the manufacturer. It can add instability if not done properly. It will also make your pi run hotter. There are no standard settings for overclocking and not all pis will handle the same amount of overclocking. Therefore before you begin overclocking please review [this article](https://github.com/retropie/retropie-setup/wiki/Overclocking) first for proper overclocking methods and stability testing to prevent SD card corruption and potential loss of your data.
 
