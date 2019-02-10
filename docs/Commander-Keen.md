@@ -1,7 +1,7 @@
 ***
 ![](http://clonekeenplus.sourceforge.net/img/title.png)
 ***
-Commander Keen was a video game series originally on DOS. 
+Commander Keen was a video game series originally on DOS created by id Software. There never was an official 'Universe if Toast' trilogy, because other projects like Wolfenstein 3D were more interesting for the market. Nevertheless fans created an unofficial trilogy of that one and many other mods, like other stories with new levels, which can be play using Commander Genius.
 ***
 
 ## Emulator: [Commander Genius](http://clonekeenplus.sourceforge.net/)
@@ -36,6 +36,8 @@ By default the emulator comes with 3 Commander Keen games, follow the file forma
 | Episode 7: The Keys of Krodacia         | keen7 | keen 4 mod | ![Episode 7: The Keys of Krodacia](http://www.shikadi.net/wiki/keen/images/5/50/The_Keys_of_Krodacia.png) |
 | Episode 8: Dead in the Desert           | keen8 | keen 6 mod | ![Episode 8: Dead in the Desert](http://www.shikadi.net/wiki/keen/images/5/5d/Dead_in_the_Desert.png)     |
 | Episode 9: Battle of the Brains         | keen9 | keen 5 mod | ![Episode 9: Battle of the Brains](http://www.shikadi.net/wiki/keen/images/3/3b/Battle_of_the_Brains.png) |
+
+
 
 ## Controls:
 
