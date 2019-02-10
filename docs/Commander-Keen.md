@@ -39,4 +39,4 @@ By default the emulator comes with 3 Commander Keen games, follow the file forma
 
 ## Controls:
 
-Keyboard 
+Keyboard and Joysticks for gameplay. Mouse for some menu elements.
