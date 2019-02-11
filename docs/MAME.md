@@ -20,7 +20,7 @@ This page is a resource for additional details on RetroPie's MAME emulators incl
 | [lr-mame2003](#lr-mame2003-mame-2003) | arcade **or** mame-libretro | .zip | MAME 0.78 | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/mame-libretro/retroarch.cfg |
 | [lr-mame2003-plus](#lr-mame2003-plus-mame-2003-plus) | arcade **or** mame-libretro | .zip | MAME 0.78-MAME 0.188  | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/mame-libretro/retroarch.cfg |
 | [lr-mame2010](#lr-mame2010-mame-2010) | arcade **or** mame-libretro | .zip **or** .7z | MAME 0.139 | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/mame-libretro/retroarch.cfg |
-| [lr-mame2014](#lr-mame2014-mame-2014) | arcade **or** mame-libretro | .zip **or** .7z | MAME 0.160 | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/mame-libretro/retroarch.cfg |
+| [lr-mame2015](#lr-mame2015-mame-2015) | arcade **or** mame-libretro | .zip **or** .7z | MAME 0.160 | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/mame-libretro/retroarch.cfg |
 | [lr-mame2016](#lr-mame2016-mame-2016) | arcade **or** mame-libretro | .zip **or** .7z | MAME 0.174 | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/mame-libretro/retroarch.cfg |
 | [AdvanceMAME 0.94](#advancemame-094) | arcade **or** mame-advmame | .zip | MAME 0.94 | /opt/retropie/configs/mame-advmame/advmame-0.94.0.rc |
 | [AdvanceMAME 1.4](#advancemame-14) | arcade **or** mame-advmame | .zip | MAME 0.106 | /opt/retropie/configs/mame-advmame/advmame-1.4.rc |
@@ -234,13 +234,13 @@ _Note: these controls are only operational for Player 1_
 	RETRO_DEVICE_ID_JOYPAD_A            MAME: IPT_UI_SELECT (Make selections in the MAME GUI)
       
 ---
-### lr-mame2014 (MAME 2014)
-[Visit mame2014-libretro on github](https://github.com/libretro/mame2014-libretro)
+### lr-mame2015 (MAME 2015)
+[Visit mame2015-libretro on github](https://github.com/libretro/mame2015-libretro)
 **Note: This emulator is considered 'optional' in RetroPie and has limited functionality. It requires more processing power than earlier MAME versions and will not run as many games at full speed on rPi hardware.**
 
 ```shell
 Roms Dir: /home/pi/RetroPie/roms/mame-libretro
-Binary Dir: /opt/retropie/libretrocores/lr-mame2014
+Binary Dir: /opt/retropie/libretrocores/lr-mame2015
 Config Dir: /opt/retropie/configs/mame-libretro/retroarch.cfg
 ```
 **MAME Version**: 0.160
@@ -252,11 +252,9 @@ Config Dir: /opt/retropie/configs/mame-libretro/retroarch.cfg
 
 **MAME 0.160 DAT File**: Coming soon
 
-**lr-mame2014 Compatibility List**: Coming soon
-
 **Controls**
 
-lr-mame2014 utilises [RetroArch control configurations](RetroArch-Configuration). Add custom retroarch controls to the retroarch.cfg file in:
+lr-mame2015 utilises [RetroArch control configurations](RetroArch-Configuration). Add custom retroarch controls to the retroarch.cfg file in:
 ```shell
 /opt/retropie/configs/mame-libretro/retroarch.cfg
 ```
