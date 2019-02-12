@@ -184,7 +184,7 @@ Config Dir: /opt/retropie/configs/mame-libretro/retroarch.cfg
 * CHDs: 406
 * Samples: 70 (4 more samples are not in circulation)
 
-**MAME 0.139 DAT File**: [MAME 0.139.dat](https://github.com/libretro/mame2010-libretro/raw/master/metadata/MAME%200.139%20XML.dat) 
+**MAME 0.139 DAT File**: [MAME 0.139.dat](https://raw.githubusercontent.com/libretro/mame2010-libretro/master/metadata/mame2010.xml) 
 
 **[lr-mame2010 Compatibility List](https://docs.google.com/spreadsheets/d/1IRSmFrSDvIc6gAw0gn12TcQ3HDOwmrETTor8wvvb7VI/edit?usp=sharing)** feel free to contribute to the list.
 
