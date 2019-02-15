@@ -21,6 +21,14 @@ Place your PC Engine/PC Engine CD/TurboGrafx-16/TurboGrafx-CD/SuperGrafx ROMs in
 /home/pi/RetroPie/roms/pcengine
 ```
 
+## CHD Archive Usage
+
+lr-beetle-pce-fast has support for the CHD (V5) archive format.
+
+This format will save space and allow you to keep your PC Engine CD/TurboGrafx-CD ROM folder tidy.
+
+The following archive contains a MAME 0.205 version of CHDMAN and Windows batch files that can be used to quickly convert your PC Engine CD/TurboGrafx-CD games to CHD (V5): [Download](https://drive.google.com/file/d/0B-ElaPpvBHs5aUd0QUM3c05kY2c/view?usp=sharing)
+
 ## BIOS
 
 **A BIOS file is only needed to play CD-based games.**
