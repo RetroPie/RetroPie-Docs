@@ -27,11 +27,11 @@ Place your Dreamcast ROMs in
 
 ## CHD Archive Usage
 
-Reicast has support for the CHD archive format, but its support is currently only for CHD V4. The problem with CHD V4 is that its compression for ".gdi" is not lossless, which is what CHD V5 addressed.
+Reicast has support for the CHD (V5) archive format.
 
-The reasons you would want to use CHD isn't just for saving space, but also because you can put the CHD compressed ROMs in the "dreamcast" folder instead of putting the GDI and its accompanying files in individual folders within the "dreamcast" folder due to Reicast's strict track naming requirements.
+This format will save space and allow you to keep your Dreamcast ROM folder tidy.
 
-If you don't mind the ROMs being altered permanently or will keep backups of the original ROMs, then all you need to do is have your Dreamcast GDI ROMs (uncompress them if they are in the ".rar", ".7z", or ".zip" archive formats) in individual folders within a folder, download [THIS](https://drive.google.com/file/d/1cBtH3lI--VXtTyJ6k-q1yE7DmOYG333v/view?usp=sharing) archive containing "Dreamcast GDI to CHD", run Dreamcast GDI to CHD.exe to select a ROM's folder as a source and set the destination to wherever you want, then repeat the process for every other ROM you want in the CHD format.
+The following archive contains a MAME 0.205 version CHDMAN and Windows batch files that can be used to quickly convert your Dreamcast games to CHD (V5): [Download](https://drive.google.com/file/d/0B-ElaPpvBHs5aUd0QUM3c05kY2c/view?usp=sharing)
 
 ## BIOS
 
