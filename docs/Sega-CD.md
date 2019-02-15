@@ -11,7 +11,7 @@ The Sega CD was an add-on to the Sega Genesis. It was released in 1991.
 | [lr-picodrive](https://github.com/libretro/picodrive) | segacd | .bin .cue .iso | us_scd1_9210.bin, eu_mcd1_9210.bin, jp_mcd1_9112.bin | /opt/retropie/configs/segacd/retroarch.cfg |
 
 ## Emulators: [lr-genesis-plus-gx](https://github.com/libretro/Genesis-Plus-GX), [lr-picodrive](https://github.com/libretro/picodrive)
-**lr-genesis-plus-gx** is recommended for the Pi 2/3 as it has better accuracy. **lr-picodrive** is required for multidisc games due to lr-genesis-plus-gx's lack of support for disc swapping.
+**lr-genesis-plus-gx** is recommended for the Pi 2/3 as it has better accuracy. **lr-picodrive** is required for multi-disc games due to lr-genesis-plus-gx's lack of support for disc swapping.
 
 ## ROMS
 Accepted File Extensions: **.bin .chd .cue .iso**  
@@ -22,8 +22,17 @@ Place your Sega CD ROMS (.chd .iso OR .bin AND .cue) in
 ```
 /home/pi/RetroPie/roms/segacd
 ```
-
 If you don't have the corresponding .cue file in the same folder as your .bin file, your game may not have sound.
+
+## CHD Archive Usage
+
+lr-genesis-plus-gx has support for the CHD (V5) archive format.
+
+This format will save space and allow you to keep your Mega CD/Sega CD ROM folder tidy.
+
+The following archive contains a MAME 0.205 version of CHDMAN and Windows batch files that can be used to quickly convert your Mega CD/Sega CD games to CHD (V5): [Download](https://drive.google.com/file/d/0B-ElaPpvBHs5aUd0QUM3c05kY2c/view?usp=sharing)
+
+**Keep in mind that lr-picodrive does not support CHD and only lr-picodrive can play multi-disc games.**
 
 ## BIOS
 
@@ -74,7 +83,7 @@ First you need to tell retroarch to use 6 buttons, because the default is to use
 
 #### lr-picodrive
 
-Launch a Sega CD game and go to the Retroarch menu (default mapping: `select + x`). Go to `Quick Menu -> Core Options` and set the two input devices to `6 button pad`. Then exit the Retroarch menu. Once you quit the game, the configuration will be saved within the `retroarch-core-options.cfg` file under `/opt/retropie/configs/all`. You do not need to edit this file. These core options will also take affect on any other system which you may use lr-picodrive for (eg. Sega 32X, Sega Megadrive).
+Launch a Sega CD game and go to the Retroarch menu (default mapping: `select + x`). Go to `Quick Menu -> Core Options` and set the two input devices to `6 button pad`. Then exit the Retroarch menu. Once you quit the game, the configuration will be saved within the `retroarch-core-options.cfg` file under `/opt/retropie/configs/all`. You do not need to edit this file. These core options will also take effect on any other system which you may use lr-picodrive for (eg. Sega 32X, Sega Megadrive).
 
 #### lr-genesis-plus-gx
 
