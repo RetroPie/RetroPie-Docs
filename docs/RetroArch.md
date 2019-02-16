@@ -11,24 +11,6 @@ The menu system is a graphical way of making changes to retroach configurations 
 ```
 ## Skeleton config file for RetroArch
 
-# Save all save files (*.srm) to this directory. This includes related files like .bsv, .rtc, .psrm, etc ...
-# This will be overridden by explicit command line options.
-# savefile_directory =
-
-# Save all save states (*.state) to this directory.
-# This will be overridden by explicit command line options.
-# savestate_directory =
-
-# If set to a directory, Content which is temporarily extracted
-# will be extracted to this directory.
-# extraction_directory =
-
-# Save all input remapping files to this directory.
-# input_remapping_directory =
-
-# Save all playlist files to this directory.
-# playlist_directory =
-
 # If set to a directory, the content history playlist will be saved
 # to this directory.
 # content_history_dir =
@@ -45,12 +27,6 @@ The menu system is a graphical way of making changes to retroach configurations 
 # Path to a libretro implementation.
 # libretro_path = "/path/to/libretro.so"
 
-# A directory for where to search for libretro core implementations.
-# libretro_directory =
-
-# A directory for where to search for libretro core information.
-# libretro_info_path =
-
 # Sets log level for libretro cores (GET_LOG_INTERFACE).
 # If a log level issued by a libretro core is below libretro_log_level, it is ignored.
 # DEBUG logs are always ignored unless verbose mode is activated (--verbose).
@@ -64,44 +40,41 @@ The menu system is a graphical way of making changes to retroach configurations 
 # automatically added to a history list.
 # history_list_enable = true
 
-# Enable or disable RetroArch performance counters
+# Enable performance counters
 # perfcnt_enable = false
 
 # Path to core options config file.
 # This config file is used to expose core-specific options.
 # It will be written to by RetroArch.
 # A default path will be assigned if not set.
-core_options_path = /opt/retropie/configs/all/retroarch-core-options.cfg
+core_options_path = "/opt/retropie/configs/all/retroarch-core-options.cfg"
 
-# Path to content load history file.
+# Path to content history file.
 # RetroArch keeps track of all content loaded in the menu and from CLI directly for convenient quick loading.
 # A default path will be assigned if not set.
 # content_history_path =
 
+# Path to music content history file (optional).
+# RetroArch keeps track of all music content loaded in the menu and from CLI directly for convenient quick loading.
+# A default path will be assigned if not set.
+# content_music_history_path =
+
+# Path to image content history file (optional).
+# RetroArch keeps track of all image content loaded in the menu and from CLI directly for convenient quick loading.
+# A default path will be assigned if not set.
+# content_image_history_path =
+
+# Path to video content history file (optional).
+# RetroArch keeps track of all video content loaded in the menu and from CLI directly for convenient quick loading.
+# A default path will be assigned if not set.
+# content_video_history_path =
+
 # Number of entries that will be kept in content history file.
 # content_history_size = 100
-
-# Sets the "system" directory.
-# Implementations can query for this directory to load BIOSes, system-specific configs, etc.
-system_directory = /home/pi/RetroPie/BIOS
-
-# Sets start directory for menu content browser.
-# rgui_browser_directory =
 
 # Content directory. Interacts with RETRO_ENVIRONMENT_GET_CONTENT_DIRECTORY.
 # Usually set by developers who bundle libretro/RetroArch apps to point to assets.
 # content_directory =
-
-# Assets directory. This location is queried by default when menu interfaces try to look for
-# loadable assets, etc.
-assets_directory = /opt/retropie/emulators/retroarch/assets
-
-# Dynamic wallpapers directory. The place to store the wallpapers dynamically
-# loaded by the menu depending on context.
-# dynamic_wallpapers_directory =
-
-# Boxarts directory. To store boxart PNG files.
-# boxarts_directory =
 
 # Sets start directory for menu config browser.
 # rgui_config_directory =
@@ -109,42 +82,110 @@ assets_directory = /opt/retropie/emulators/retroarch/assets
 # Show startup screen in menu.
 # Is automatically set to false when seen for the first time.
 # This is only updated in config if config_save_on_exit is set to true, however.
-# rgui_show_start_screen = true
+rgui_show_start_screen = "false"
 
 # Flushes config to disk on exit. Useful for menu as settings can be modified.
 # Overwrites the config. #include's and comments are not preserved.
-config_save_on_exit = false
+config_save_on_exit = "false"
 
-# Load up a specific config file based on the core being used.
-# core_specific_config = false
+# Shows hidden files and folders in directory listings.
+# show_hidden_files = false
 
-#### Video
+#### Driver
 
-# Video driver to use. "gl", "xvideo", "sdl"
+# Input driver. Depending on video driver, it might force a different input driver.
+# input_driver = sdl
+
+# Joypad driver. ("udev", "linuxraw", "paraport", "sdl2", "hid", "dinput")
+input_joypad_driver = "udev"
+
+# Video driver to use. "gl", "xvideo", "sdl", "d3d"
 # video_driver = "gl"
 
-# Which OpenGL context implementation to use.
+# Which context implementation to use.
 # Possible ones for desktop are: glx, x-egl, kms-egl, sdl-gl, wgl.
 # By default, tries to use first suitable driver.
 # video_context_driver =
 
-# Windowed x resolution scale and y resolution scale
-# (Real x res: base_size * xscale * aspect_ratio, real y res: base_size * yscale)
-# video_scale = 3.0
+# Audio driver backend. Depending on configuration possible candidates are: alsa, pulse, oss, jack, rsound, roar, openal, sdl, xaudio.
+# audio_driver =
+
+# Audio resampler driver backend. Which audio resampler to use.
+# Default will use "sinc".
+# audio_resampler =
+
+# Camera driver.
+# camera_driver =
+
+# Location driver.
+# location_driver =
+
+# Menu driver to use. ("rgui", "xmb", "glui")
+menu_driver = "rgui"
+
+# Record driver. Used when recording video.
+# record_driver =
+
+#### Video
+
+# Suspends the screensaver if set to true. Is a hint that does not necessarily have to be honored
+# by video driver.
+# suspend_screensaver_enable  = true
+
+# Display framerate.
+# fps_show = false
+
+# Display memory.
+# memory_show = false
+
+# Display total number of frames rendered. (only displays if fps_show is enabled)
+# framecount_show =
+
+# Which monitor to prefer. 0 (default) means no particular monitor is preferred, 1 and up (1 being first monitor),
+# suggests RetroArch to use that particular monitor.
+# video_monitor_index = 0
+
+# Start in fullscreen. Can be changed at runtime.
+video_fullscreen = "true"
+
+# If fullscreen, prefer using a windowed fullscreen mode.
+# video_windowed_fullscreen = true
 
 # Fullscreen resolution. Resolution of 0 uses the resolution of the desktop.
 # video_fullscreen_x = 0
 # video_fullscreen_y = 0
 
-# Start in fullscreen. Can be changed at runtime.
-# video_fullscreen = false
+# Video refresh rate of your CRT monitor.
+# Used to calculate a suitable audio input rate.
+# crt_video_refresh_rate = 59.94
 
-# If fullscreen, prefer using a windowed fullscreen mode.
-# video_windowed_fullscreen = true
+# Video refresh rate of your monitor.
+# Used to calculate a suitable audio input rate.
+# video_refresh_rate = 59.94
 
-# Which monitor to prefer. 0 (default) means no particular monitor is preferred, 1 and up (1 being first monitor),
-# suggests RetroArch to use that particular monitor.
-# video_monitor_index = 0
+# Forcibly disable sRGB FBO support. Some Intel OpenGL drivers on Windows
+# have video problems with sRGB FBO support enabled.
+# video_force_srgb_disable = false
+
+# If this is true and video_aspect_ratio is not set,
+# aspect ratio is decided by libretro implementation.
+# If this is false, 1:1 PAR will always be assumed if video_aspect_ratio is not set.
+video_aspect_ratio_auto = "true"
+
+# A floating point value for video aspect ratio (width / height).
+# If this is not set, aspect ratio is assumed to be automatic.
+# Behavior then is defined by video_aspect_ratio_auto.
+# video_aspect_ratio =
+
+# Windowed x resolution scale and y resolution scale
+# (Real x res: base_size * xscale * aspect_ratio, real y res: base_size * yscale)
+# video_scale = 3.0
+
+# Percentage of opacity to use for the window (100 is completely opaque).
+# video_window_opacity = 100
+
+# Whether to enable the default window decorations like border, titlebar etc.
+# video_window_show_decorations = true
 
 # Forcibly disable composition. Only works in Windows Vista/7 for now.
 # video_disable_composition = false
@@ -152,9 +193,13 @@ config_save_on_exit = false
 # Video vsync.
 # video_vsync = true
 
-# Forcibly disable sRGB FBO support. Some Intel OpenGL drivers on Windows
-# have video problems with sRGB FBO support enabled.
-# video_force_srgb_disable = false
+# Interval at which a Vsync swap is performed.
+# 1 is normal, 2 is doubled frames, 3 is tripled frames, etc.
+# video_swap_interval = 1
+
+# Max amount of swapchain images.
+# Single buffering = 1, Double buffering = 2, 3 = Triple buffering
+# video_max_swapchain_images = 3
 
 # Attempts to hard-synchronize CPU and GPU. Can reduce latency at cost of performance.
 # video_hard_sync = false
@@ -174,14 +219,14 @@ config_save_on_exit = false
 # video_black_frame_insertion = false
 
 # Use threaded video driver. Using this might improve performance at possible cost of latency and more video stuttering.
-video_threaded = true
+# video_threaded = false
 
 # Use a shared context for HW rendered libretro cores.
 # Avoids having to assume HW state changes inbetween frames.
 # video_shared_context = false
 
 # Smoothens picture with bilinear filtering. Should be disabled if using pixel shaders.
-video_smooth = true
+video_smooth = "false"
 
 # Forces rendering area to stay equal to content aspect ratio or as defined in video_aspect_ratio.
 # video_force_aspect = true
@@ -191,19 +236,13 @@ video_smooth = true
 # If video_force_aspect is not set, X/Y will be integer scaled independently.
 # video_scale_integer = false
 
-# A floating point value for video aspect ratio (width / height).
-# If this is not set, aspect ratio is assumed to be automatic.
-# Behavior then is defined by video_aspect_ratio_auto.
-# video_aspect_ratio =
-
-# If this is true and video_aspect_ratio is not set,
-# aspect ratio is decided by libretro implementation.
-# If this is false, 1:1 PAR will always be assumed if video_aspect_ratio is not set.
-video_aspect_ratio_auto = true
+# Index of the aspect ratio selection in the menu.
+# 19 = Config, 20 = 1:1 PAR, 21 = Core Provided, 22 = Custom Aspect Ratio
+# aspect_ratio_index = 19
 
 # Forces cropping of overscanned frames.
 # Exact behavior of this option is implementation specific.
-# video_crop_overscan = true 
+# video_crop_overscan = true
 
 # Path to shader. Shader can be either Cg, CGP (Cg preset) or GLSL, GLSLP (GLSL preset)
 # video_shader = "/path/to/shader.{cg,cgp,glsl,glslp}"
@@ -212,26 +251,20 @@ video_aspect_ratio_auto = true
 # Other shaders can still be loaded later in runtime.
 # video_shader_enable = false
 
-# Defines a directory where shaders (Cg, CGP, GLSL) are kept for easy access.
-video_shader_dir = /opt/retropie/emulators/retroarch/shader/
-
 # CPU-based video filter. Path to a dynamic library.
 # video_filter =
 
-# Defines a directory where CPU-based video filters are kept.
-# video_filter_dir =
-
 # Path to a font used for rendering messages. This path must be defined to enable fonts.
 # Do note that the _full_ path of the font is necessary!
-# video_font_path = 
+# video_font_path =
 
-# Size of the font rendered.
-video_font_size = 12
+# Size of the font rendered in points.
+video_font_size = "12"
 
 # Enable usage of OSD messages.
 # video_font_enable = true
 
-# Offset for where messages will be placed on screen. Values are in range 0.0 to 1.0 for both x and y values. 
+# Offset for where messages will be placed on screen. Values are in range 0.0 to 1.0 for both x and y values.
 # [0.0, 0.0] maps to the lower left corner of the screen.
 # video_message_pos_x = 0.05
 # video_message_pos_y = 0.05
@@ -240,9 +273,12 @@ video_font_size = 12
 # It is a regular RGB hex number, i.e. red is "ff0000".
 # video_message_color = ffffff
 
-# Video refresh rate of your monitor.
-# Used to calculate a suitable audio input rate.
-# video_refresh_rate = 59.95
+# Background color for OSD messages. Red/Green/Blue values are from 0 to 255 and opacity is 0.0 to 1.0.
+# video_message_bgcolor_enable = false
+# video_message_bgcolor_red = 0
+# video_message_bgcolor_green = 0
+# video_message_bgcolor_blue = 0
+# video_message_bgcolor_opacity = 1.0
 
 # Allows libretro cores to set rotation modes.
 # Setting this to false will honor, but ignore this request.
@@ -259,27 +295,27 @@ video_font_size = 12
 # Enable audio.
 # audio_enable = true
 
+# Enable menu audio sounds.
+# audio_enable_menu = false
+# audio_enable_menu_ok = false
+# audio_enable_menu_cancel = false
+# audio_enable_menu_notice = false
+# audio_enable_menu_bgm = false
+
 # Mutes audio.
 # audio_mute_enable = false
 
+# Mutes audio mixer volume globally.
+# audio_mixer_mute_enable = false
+
 # Audio output samplerate.
 # audio_out_rate = 48000
-
-# Audio resampler backend. Which audio resampler to use.
-# Default will use "sinc".
-# audio_resampler =
-
-# Audio driver backend. Depending on configuration possible candidates are: alsa, pulse, oss, jack, rsound, roar, openal, sdl, xaudio.
-# audio_driver =
 
 # Override the default audio device the audio_driver uses. This is driver dependant. E.g. ALSA wants a PCM device, OSS wants a path (e.g. /dev/dsp), Jack wants portnames (e.g. system:playback1,system:playback_2), and so on ...
 # audio_device =
 
 # Audio DSP plugin that processes audio before it's sent to the driver. Path to a dynamic library.
 # audio_dsp_plugin =
-
-# Directory where DSP plugins are kept.
-# audio_filter_dir =
 
 # Will sync (block) on audio. Recommended.
 # audio_sync = true
@@ -303,53 +339,35 @@ video_font_size = 12
 # Gain can be controlled in runtime with input_volume_up/input_volume_down.
 # audio_volume = 0.0
 
+# Audio mixer volume. Volume is expressed in dB.
+# 0 dB is normal volume. No gain will be applied.
+# audio_mixer_volume = 0.0
+
 #### Overlay
 
-# Defines a directory where overlays are kept for easy access.
-overlay_directory = /opt/retropie/emulators/retroarch/overlays
-
-# Enable or disable the current overlay.
+# Enable the overlay.
 # input_overlay_enable = true
 
-# Hide the current overlay from appearing in menu screens.
+# Hide the current overlay from appearing inside the menu.
 # input_overlay_hide_in_menu = true
 
-# Path to input overlay
+# Path to input overlay.
 # input_overlay =
 
-# Overlay opacity
+# Opacity of all the UI elements of the overlay.
 # input_overlay_opacity = 1.0
 
-# Overlay scale
+# Scale of all UI elements of the overlay.
 # input_overlay_scale = 1.0
-
-#### OSK (Onscreen Keyboard) Overlay
-
-# Defines a directory where overlays are kept for easy access.
-# osk_overlay_directory =
-
-# Enable OSK overlay.
-# input_osk_overlay_enable = true
-
-# Path to OSK overlay
-# input_osk_overlay =
-
-# OSK Overlay opacity
-# input_osk_overlay_opacity = 1.0
-
-# OSK Overlay scale
-# input_osk_overlay_scale = 1.0
 
 #### Input
 
-# Input driver. Depending on video driver, it might force a different input driver.
-# input_driver = sdl
-
-# Input device driver. (Valid: linuxraw, sdl, dinput)
-input_joypad_driver = udev
-
 # Path to input remapping file.
 # input_remapping_path =
+
+# Input bind timer timeout.
+# Amount of seconds to wait until proceeding to the next bind. Default: 5, minimum: 1
+# input_bind_timeout = 1
 
 # If enabled, overrides the input binds with the remapped binds set for the current core.
 # input_remap_binds_enable = true
@@ -366,7 +384,7 @@ input_joypad_driver = udev
 
 # Enable input auto-detection. Will attempt to autoconfigure
 # joypads, Plug-and-Play style.
-input_autodetect_enable = true
+input_autodetect_enable = "true"
 
 # Show the input descriptors set by the core instead of the
 # default ones.
@@ -375,13 +393,19 @@ input_autodetect_enable = true
 # Hide input descriptors that were not set by the core.
 # input_descriptor_hide_unbound = false
 
-# Directory for joypad autoconfigs.
-# If a joypad is plugged in, that joypad will be autoconfigured if a config file
-# corresponding to that joypad is present in joypad_autoconfig_dir.
-# Input binds which are made explicit (input_playerN_*_btn/axis) will take priority over autoconfigs.
-# Autoconfigs can be created with retroarch-joyconfig, manually, or with a frontend.
-# Requires input_autodetect_enable to be enabled.
-joypad_autoconfig_dir = /opt/retropie/configs/all/retroarch-joypads/
+# Influence how input polling is done inside RetroArch.
+# 0 : Early  - Input polling is performed before call to retro_run.
+# 1 : Normal - Input polling is performed when retro_input_poll is
+#     requested.
+# 2 : Late   - Input polling is performed on first call to retro_input_state
+#     per frame
+#
+# Setting it to 0 or 2 can result in less latency depending on
+# your configuration.
+#
+# When netplay is enabled, the default polling behavior (1) will
+# be used regardless of the value set here.
+# input_poll_type_behavior = 1
 
 # Sets which libretro device is used for a user.
 # Devices are indentified with a number.
@@ -420,20 +444,20 @@ joypad_autoconfig_dir = /opt/retropie/configs/all/retroarch-joypads/
 #   tilde, backquote, pause, quote, comma, minus, slash, semicolon, equals, leftbracket,
 #   backslash, rightbracket, kp_period, kp_equals, rctrl, ralt
 #
-# Keyboard input, Joypad and Joyaxis will all obey the "nul" bind, which disables the bind completely, 
+# Keyboard input, Joypad and Joyaxis will all obey the "nul" bind, which disables the bind completely,
 # rather than relying on a default.
-input_player1_a = x
-input_player1_b = z
-input_player1_y = a
-input_player1_x = s
-input_player1_start = enter
-input_player1_select = rshift
-input_player1_l = q
-input_player1_r = w
-input_player1_left = left
-input_player1_right = right
-input_player1_up = up
-input_player1_down = down
+input_player1_a = "x"
+input_player1_b = "z"
+input_player1_y = "a"
+input_player1_x = "s"
+input_player1_start = "enter"
+input_player1_select = "rshift"
+input_player1_l = "q"
+input_player1_r = "w"
+input_player1_left = "left"
+input_player1_right = "right"
+input_player1_up = "up"
+input_player1_down = "down"
 # input_player1_l2 =
 # input_player1_r2 =
 # input_player1_l3 =
@@ -465,7 +489,7 @@ input_player1_down = down
 
 # Input device buttons.
 # Figure these out by using RetroArch-Phoenix or retroarch-joyconfig.
-# You can use joypad hats with hnxx, where n is the hat, and xx is a string representing direction. 
+# You can use joypad hats with hnxx, where n is the hat, and xx is a string representing direction.
 # E.g. "h0up"
 # input_player1_a_btn =
 # input_player1_b_btn =
@@ -485,16 +509,17 @@ input_player1_down = down
 # input_player1_r3_btn =
 
 # Menu buttons.
-# menu_ok_btn          =
-# menu_cancel_btn      =
 # menu_search_btn      =
 # menu_info_btn        =
 # menu_default_btn     =
 # menu_scroll_down_btn =
 # menu_scroll_up_btn   =
 
-# Axis for RetroArch D-Pad. 
-# Needs to be either '+' or '-' in the first character signaling either positive or negative direction of the axis, then the axis number. 
+# Swap buttons for OK/Cancel
+menu_swap_ok_cancel_buttons = "true"
+
+# Axis for RetroArch D-Pad.
+# Needs to be either '+' or '-' in the first character signaling either positive or negative direction of the axis, then the axis number.
 # Do note that every other input option has the corresponding _btn and _axis binds as well; they are omitted here for clarity.
 # input_player1_left_axis =
 # input_player1_right_axis =
@@ -533,18 +558,18 @@ input_player1_down = down
 # Hold for fast-forward. Releasing button disables fast-forward.
 # input_hold_fast_forward = l
 
-# Key to exit RetroArch cleanly. 
+# Key to exit RetroArch cleanly.
 # Killing it in any hard way (SIGKILL, etc) will terminate RetroArch without saving RAM, etc.
 # On Unix-likes, SIGINT/SIGTERM allows a clean deinitialization.
-input_exit_emulator = escape
+input_exit_emulator = "escape"
 
 
 # Applies next and previous shader in directory.
-input_shader_next = m
-input_shader_prev = n
+input_shader_next = "m"
+input_shader_prev = "n"
 
 # Hold button down to rewind. Rewinding must be enabled.
-input_rewind = r
+input_rewind = "r"
 
 # Toggle between recording and not.
 # input_movie_record_toggle = o
@@ -604,8 +629,11 @@ input_rewind = r
 # input_menu_toggle = f1
 
 # RetroPad button combination to toggle menu
-# 0 = none, 1 = L + R + Y + D-Pad Down, 2 = L3 + R3
+# 0 = none, 1 = L + R + Y + D-Pad Down, 2 = L3 + R3, 3 = Start + Select
 # input_menu_toggle_gamepad_combo = 0
+
+# allow any RetroPad to control the menu
+all_users_control_menu = "true"
 
 # Toggles mouse grab. When mouse is grabbed, RetroArch hides the mouse,
 # and keeps the mouse pointer inside the window to allow relative mouse input
@@ -614,55 +642,72 @@ input_rewind = r
 
 #### Menu
 
-# Menu driver to use. "rgui", "lakka", etc. 
-# menu_driver = "rgui"
+# If disabled, will hide 'Online Updater' inside the menu.
+menu_show_online_updater = "false"
 
-# If enabled, the libretro core will keep running in the background when we
+# If disabled, will hide the ability to update cores (and core info files) inside the menu.
+menu_show_core_updater = "false"
+
+# If disabled, the libretro core will keep running in the background when we
 # are in the menu.
 # menu_pause_libretro = false
 
-# Enable mouse input inside the menu.
+# If disabled, we use separate controls for menu operation.
+# menu_unified_controls = false
+
+# Enable mouse controls inside the menu.
 # menu_mouse_enable = false
 
-# Enable touch input inside the menu.
+# Enable touch controls inside the menu.
 # menu_pointer_enable = false
 
 # Shows current date and/or time inside menu.
 # menu_timedate_enable = true
 
+# Shows current battery level inside menu.
+# menu_battery_level_enable = true
+
 # Shows current core inside menu.
 # menu_core_enable = true
 
-# Path to a .png image to set as menu wallpaper.
+# Path to an image to set as menu wallpaper.
 # menu_wallpaper =
 
 # Dynamically load a new wallpaper depending on context.
 # menu_dynamic_wallpaper_enable = false
 
-# Display boxart in place of the content icon if available
-# menu_boxart_enable = false
+# Type of thumbnail to display. 0 = none, 1 = snaps, 2 = titles, 3 = boxarts
+# menu_thumbnails = 0
+# menu_left_thumbnails = 0
 
-# Wrap-around toe beginning and/or end if boundary of list reached horizontally
-# menu_navigation_wraparound_horizontal_enable = false
+# Wrap-around to beginning and/or end if boundary of list is reached horizontally or vertically.
+# menu_navigation_wraparound_enable = false
 
-# Wrap-around to beginning and/or end if boundary of list reached vertically
-# menu_navigation_wraparound_vertical_enable = false
-
-# Filter files being show in 'Load Content' by supported extensions
+# Filter files being shown in filebrowser by supported extensions.
 # menu_navigation_browser_filter_supported_extensions_enable = true
 
 # Collapse subgroup settings into main group to create one big listing of settings
 # per category.
 # menu_collapse_subgroups_enable = false
 
-#### UI
+#### Core
+#
+# Prevent libretro cores from closing RetroArch on exit by loading a dummy core.
+# load_dummy_on_core_shutdown = "true"
 
-# Suspends the screensaver if set to true. Is a hint that does not necessarily have to be honored
-# by video driver.
-# suspend_screensaver_enable  = true
+# Check for firmware requirement(s) before loading a content.
+# check_firmware_before_loading = "false"
+
+#### User Interface
 
 # Start UI companion driver's interface on boot (if available).
 # ui_companion_start_on_boot  = true
+
+# Toggle companion UI on startup (currently only used to show the WIMP UI)
+# ui_companion_toggle = false
+
+# Only init the WIMP UI for this session if this is enabled
+# desktop_menu_enable = true
 
 #### Camera
 
@@ -685,7 +730,7 @@ input_rewind = r
 # URL to assets update directory on buildbot.
 # core_updater_buildbot_assets_url = "http://buildbot.libretro.com/assets/"
 
-# Automatically extract archives that the cores are contained in to the libretro cores directory.
+# After downloading, automatically extract archives that the downloads are contained inside.
 # core_updater_auto_extract_archive = true
 
 #### Network
@@ -694,7 +739,7 @@ input_rewind = r
 # netplay_client_swap_input = false
 
 # The username of the person running RetroArch. This will be used for playing online, for instance.
-# netplay_nickname = 
+# netplay_nickname =
 
 # The amount of delay frames to use for netplay. Increasing this value will increase
 # performance, but introduce more latency.
@@ -708,22 +753,113 @@ input_rewind = r
 # netplay_spectator_mode_enable = false
 
 # The IP Address of the host to connect to.
-# netplay_ip_address = 
+# netplay_ip_address =
 
-# The port of the host IP Address. Can be either a TCP or an UDP port.
+# The port of the host IP Address. Can be either a TCP or UDP port.
 # netplay_ip_port = 55435
+
+# Force game hosting to go through a man-in-the-middle server to get around firewalls and NAT/UPnP problems.
+# netplay_use_mitm_server = false
+
+# The requested MITM server to use.
+# netplay_mitm_server = "nyc"
+
+#### Directory
+
+# Sets the System/BIOS directory.
+# Implementations can query for this directory to load BIOSes, system-specific configs, etc.
+system_directory = "/home/pi/RetroPie/BIOS"
+
+# Save all downloaded files to this directory.
+# core_assets_directory =
+
+# Assets directory. This location is queried by default when menu interfaces try to look for
+# loadable assets, etc.
+# assets_directory =
+
+# Dynamic wallpapers directory. The place to store the wallpapers dynamically
+# loaded by the menu depending on context.
+# dynamic_wallpapers_directory =
+
+# Thumbnails directory. To store thumbnail files.
+# thumbnails_directory =
+
+# File browser directory. Sets start directory for menu file browser.
+# rgui_browser_directory =
+
+# Core directory for libretro core implementations.
+# libretro_directory =
+
+# Core info directory for libretro core information.
+# libretro_info_path =
+
+# Path to content database directory.
+# content_database_path =
+
+# Saved queries are stored to this directory.
+# cursor_directory =
+
+# Path to cheat database directory.
+# cheat_database_path =
+
+# Defines a directory where CPU-based video filters are kept.
+# video_filter_dir =
+
+# Directory where DSP plugins are kept.
+# audio_filter_dir =
+
+# Defines a directory where shaders (Cg, CGP, GLSL) are kept for easy access.
+# video_shader_dir =
+
+# Recording output directory. Where recordings are saved.
+# recording_output_directory =
+
+# Recording config directory. Where recording settings are kept.
+# recording_config_directory =
+
+# Overlay directory. Where overlays are kept for easy access.
+# overlay_directory =
+
+# Directory to dump screenshots to.
+# screenshot_directory =
+
+# Directory for joypad autoconfigs.
+# If a joypad is plugged in, that joypad will be autoconfigured if a config file
+# corresponding to that joypad is present in joypad_autoconfig_dir.
+# Input binds which are made explicit (input_playerN_*_btn/axis) will take priority over autoconfigs.
+# Autoconfigs can be created with retroarch-joyconfig, manually, or with a frontend.
+# Requires input_autodetect_enable to be enabled.
+# joypad_autoconfig_dir =
+
+# Save all remapped controls to this directory.
+# input_remapping_directory =
+
+# Save all playlists/collections to this directory.
+# playlist_directory =
+
+# Save all save files (*.srm) to this directory. This includes related files like .bsv, .rtc, .psrm, etc ...
+# This will be overridden by explicit command line options.
+# savefile_directory =
+
+# Save all save states (*.state) to this directory.
+# This will be overridden by explicit command line options.
+# savestate_directory =
+
+# If set to a directory, content which is temporarily extracted
+# will be extracted to this directory.
+cache_directory = "/tmp/retroarch"
 
 #### Misc
 
 # Enable rewinding. This will take a performance hit when playing, so it is disabled by default.
-rewind_enable = false
+rewind_enable = "false"
 
 # Rewinding buffer size in megabytes. Bigger rewinding buffer means you can rewind longer.
 # The buffer should be approx. 20MB per minute of buffer time.
-rewind_buffer_size = 10
+rewind_buffer_size = "10"
 
 # Rewind granularity. When rewinding defined number of frames, you can rewind several frames at a time, increasing the rewinding speed.
-rewind_granularity = 2
+rewind_granularity = "2"
 
 # Pause gameplay when window focus is lost.
 # pause_nonactive = true
@@ -732,20 +868,6 @@ rewind_granularity = 2
 # The interval is measured in seconds. A value of 0 disables autosave.
 # autosave_interval =
 
-# Path to content database directory.
-# content_database_path =
-
-# Path to cheat database directory.
-# cheat_database_path =
-
-# Path to XML cheat config, a file which keeps track of which
-# cheat settings are used for individual games.
-# If the file does not exist, it will be created.
-# cheat_settings_path =
-
-# Directory to dump screenshots to.
-# screenshot_directory =
-
 # Records video after CPU video filter.
 # video_post_filter_record = false
 
@@ -753,7 +875,10 @@ rewind_granularity = 2
 # video_gpu_record = false
 
 # Screenshots output of GPU shaded material if available.
-video_gpu_screenshot = true
+video_gpu_screenshot = "true"
+
+# Watch content shader files for changes and auto-apply as necessary.
+# video_shader_watch_files = false
 
 # Block SRAM from being overwritten when loading save states.
 # Might potentially lead to buggy games.
@@ -778,6 +903,17 @@ video_gpu_screenshot = true
 # network_cmd_enable = false
 # network_cmd_port = 55355
 # stdin_cmd_enable = false
-input_enable_hotkey = nul
-auto_remaps_enable = true
+
+# Enable Sustained Performance Mode in Android 7.0+
+# sustained_performance_mode = true
+
+# File format to use when writing playlists to disk
+# playlist_use_old_format = false
+input_enable_hotkey = "nul"
+auto_remaps_enable = "true"
+xmb_show_add = "false"
+xmb_show_history = "false"
+xmb_show_images = "false"
+xmb_show_music = "false"
+xmb_shadows_enable = "false"
 ```
