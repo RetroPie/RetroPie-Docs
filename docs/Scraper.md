@@ -8,13 +8,13 @@ Since EmulationStation 2.1.0 you can have a video preview as scraped art, provid
 
 RetroPie includes the following scrapers:
 
-* The built-in EmulationStation scraper, which pulls information from TheGamesDb.net.
+* The built-in EmulationStation scraper, which pulls information from TheGamesDb.net or ScreenScraper.fr.
 * Steven Selph's Scraper (`scraper`), which pulls information from TheGamesDB.net, ScreenScraper.fr, [OpenVGDB](https://github.com/OpenVGDB), ArcadeItalia.net. It can also use your local media for scraping, adding it to EmulationStation's gamelist.
 * Lars Muldjord's Skyscraper (`skyscraper`), which pulls information from TheGamesDB.net, ScreenScraper.fr, OpenRetro.org, MobyGames.com, IGDB.com and WorldOfSpectrum.org. It also has the ability to import your local media into the final gamelist.
 
 ## EmulationStation Built-In Scraper
 
-EmulationStation has a built in scraper that pulls from [thegamesdb](http://thegamesdb.net/). It can be accessed from the main menu in EmulationStation, opened by the `Start` button.
+EmulationStation has a built in scraper that pulls from [TheGamesDB](http://thegamesdb.net/) or [ScreenScraper](https://screenscraper.fr). It can be accessed from the main menu in EmulationStation, opened by the `Start` button.
 
 ![scrapermenu](https://cloud.githubusercontent.com/assets/10035308/10713271/534a0560-7a73-11e5-8076-90131881c054.png)
 
@@ -26,6 +26,7 @@ EmulationStation has a built in scraper that pulls from [thegamesdb](http://theg
 
 ![scrapermenu5](https://cloud.githubusercontent.com/assets/10035308/10713306/b89d2d56-7a74-11e5-9415-485b1b5dbc0f.png)
 
+**Note**: during the *first* scraping session using TheGamesDB as scraping source, Emulationstation will download additional information (list of publishers, developers, genres) from TheGamesDB. The scraper will seem unresponsive for a very short period of time - depending on the download speed - but after the necessary information is downloaded and saved, the scraping will resume. Any subsequent scraping operations will re-use the downloaded information, without any additional downloads.
 
 ### Scraper Not Saving Manual Edits
 
