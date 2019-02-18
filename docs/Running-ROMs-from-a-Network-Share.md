@@ -29,7 +29,7 @@ In there, select "Boot Options" and tell it Yes.
 
 Add the following line to the top of that file, being sure to adjust it for your personal settings, paths and options. This will make the local roms folder use your remote server roms folder instead.
 
-    sudo mount -t cifs -o username=something,password=something //REMOTEHOST/path/to/roms /home/pi/RetroPie/roms
+    sudo mount -t cifs -o username=something,password=something,nounix,noserverino //REMOTEHOST/path/to/roms /home/pi/RetroPie/roms
 
 > **Good to know**: If you'd like to host the entire RetroPie folder remotely you can do so by removing the `/roms` directories from the mount command above. Make sure to have a copy of the RetroPie installation on your remote server or EmulationStation won't be able to start RetroPie!
 
@@ -37,7 +37,7 @@ Restart your Raspberry Pi with `sudo reboot`.
 
 Alternatively, if you have a shared folder that allows guest access, you can use the following line in your `autostart.sh`:
 
-    sudo mount -t cifs -o guest,uid=pi //hostname/retropie /home/pi/RetroPie
+    sudo mount -t cifs -o guest,uid=pi,nounix,noserverino //hostname/retropie /home/pi/RetroPie
 
 This should also allow you to write save files to your NAS.
 
@@ -138,7 +138,7 @@ If you are getting permission denied errors when you try to scrape or save state
 
 with
 
-    sudo mount -t cifs -o sec=ntlmv2,username=something,rw,file_mode=0777,dir_mode=0777,password=something //REMOTEHOST/path/to/roms /home/pi/RetroPie/roms
+    sudo mount -t cifs -o sec=ntlmv2,username=something,rw,file_mode=0777,dir_mode=0777,password=something,nounix,noserverino //REMOTEHOST/path/to/roms /home/pi/RetroPie/roms
 
 This will give you write access and should solve your problem.
 
