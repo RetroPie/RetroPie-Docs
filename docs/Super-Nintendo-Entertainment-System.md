@@ -17,11 +17,11 @@ _The Super Nintendo Entertainment System (or SNES) was a 4th generation video ga
 
 RetroPie includes multiple SNES emulators. 
 
-**lr-snes9x2010** is prefered on the RPi2 or RPi3B due to its adequate balance between speed and accuracy, though an overclocked RPi3B or stock RPi3B+ are recommended for full speed emulation of SA1/SFX2 enhancement chip games throughout most gameplay. 
+**lr-snes9x2010** is prefered on the RPi2 or RPi3B due to its adequate balance between speed and accuracy, though an overclocked RPi3B or stock RPi3B+ are recommended for attempting full speed emulation of SA1/SFX2 enhancement chip games throughout most gameplay. 
 
 **lr-snes9x2005** or **lr-snes9x2002** are recommended for attempting full speed emulation of SFX/SA1/SFX2 enhancement chip games on the RPi2 throughout most gameplay, and the same could be said for a stock RPi3B to attempt emulating SA1/SFX2 games at full speed throughout most gameplay, though accuracy will suffer in all cases.
 
-**lr-snes9x** is an optional emulator that has MSU-1 support and is the most accurate SNES emulator available on the Raspberry Pi, but requires an overclocked RPi3B or stock RPi3B+ for full speed emulation of SFX/SA1/SFX2 throughout most gameplay, and is sometimes too demanding for SA1/SFX2 enhancement chip games unless on an overclocked RPi3B+.
+**lr-snes9x** is an optional emulator that has MSU-1 support and is the most accurate SNES emulator available on the Raspberry Pi, but requires an overclocked RPi3B or stock RPi3B+ for attempting full speed emulation of SFX/SA1/SFX2 throughout most gameplay, and is sometimes too demanding for SA1/SFX2 enhancement chip games unless on an overclocked RPi3B+.
 
 ## ROMS
 
