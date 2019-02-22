@@ -6,17 +6,22 @@ _The Super Nintendo Entertainment System (or SNES) was a 4th generation video ga
 
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
+| [lr-snes9x](https://github.com/libretro/snes9x) | snes | .7z .bin .bs .fig .mgd .sfc .smc .swc .zip | none | /opt/retropie/configs/snes/retroarch.cfg |
 | [lr-snes9x2010](https://github.com/libretro/snes9x2010) | snes  | .7z .bin .bs .fig .mgd .sfc .smc .swc .zip | none | /opt/retropie/configs/snes/retroarch.cfg |
-| lr-snes9x | snes | .7z .bin .bs .fig .mgd .sfc .smc .swc .zip | none | /opt/retropie/configs/snes/retroarch.cfg |
+| [lr-snes9x2005](https://github.com/libretro/snes9x2005) | snes | .7z .bin .bs .fig .mgd .sfc .smc .swc .zip | none | /opt/retropie/configs/snes/retroarch.cfg |
 | [lr-snes9x2002](https://github.com/libretro/snes9x2002) | snes | .7z .bin .bs .fig .mgd .sfc .smc .swc .zip | none | /opt/retropie/configs/snes/retroarch.cfg |
 | [PiSNES](https://github.com/RetroPie/pisnes) | snes | .fig .sfc .smc .swc .zip | none | /opt/retropie/configs/snes/snes9x.cfg |
-| [lr-snes9x2005](https://github.com/libretro/snes9x2005) | snes | .7z .bin .bs .fig .mgd .sfc .smc .swc .zip | none | /opt/retropie/configs/snes/retroarch.cfg |
-| [lr-armsnes](https://github.com/RetroPie/ARMSNES-libretro) | snes | .7z .bin .bs .fig .mgd .sfc .smc .swc .zip | none | /opt/retropie/configs/snes/retroarch.cfg |
 | [snes9x-rpi](https://github.com/RetroPie/snes9x-rpi) | snes | .fig .sfc .smc .swc .zip | none | /opt/retropie/configs/snes/snes9x.cfg |
 
-## Emulators: [lr-snes9x-2010](https://github.com/libretro/snes9x2010), lr-snes9x, [lr-snes9x2002](https://github.com/libretro/snes9x2002), [PiSNES](https://github.com/RetroPie/pisnes), [lr-snes9x2005](https://github.com/libretro/snes9x2005), [lr-armsnes](https://github.com/RetroPie/ARMSNES-libretro), [snes9x-rpi](https://github.com/RetroPie/snes9x-rpi)
+## Emulators: [lr-snes9x](https://github.com/libretro/snes9x), [lr-snes9x2010](https://github.com/libretro/snes9x2010), [lr-snes9x2005](https://github.com/libretro/snes9x2005), [lr-snes9x2002](https://github.com/libretro/snes9x2002), [PiSNES](https://github.com/RetroPie/pisnes), [snes9x-rpi](https://github.com/RetroPie/snes9x-rpi)
 
-RetroPie comes included with multiple SNES emulators. If you have a Pi 2, the preference is **lr-snes9x2010** due to better speed and sound emulation. lr-snes9x2002 is recommended for Super FX chip games on the Pi 2. lr-snes9x is an optional emulator that has MSU-1 support and more accurate emulation, but requires a sufficiently overclocked Pi 3 for guaranteed constant full speed emulation, and is sometimes too demanding for enhancement chip games.
+RetroPie includes multiple SNES emulators. 
+
+**lr-snes9x2010** is prefered on the RPi2 or RPi3B due to its adequate balance between speed and accuracy, though an overclocked RPi3B or stock RPi3B+ are recommended for full speed emulation of SA1/SFX2 enhancement chip games throughout most gameplay. 
+
+**lr-snes9x2005** or **lr-snes9x2002** are recommended for attempting full speed emulation of SFX/SA1/SFX2 enhancement chip games on the RPi2 throughout most gameplay, and the same could be said for a stock RPi3B to attempt emulating SA1/SFX2 games at full speed throughout most gameplay, though accuracy will suffer in all cases.
+
+**lr-snes9x** is an optional emulator that has MSU-1 support and is the most accurate SNES emulator available on the Raspberry Pi, but requires an overclocked RPi3B or stock RPi3B+ for full speed emulation of SFX/SA1/SFX2 throughout most gameplay, and is sometimes too demanding for SA1/SFX2 enhancement chip games unless on an overclocked RPi3B+.
 
 ## ROMS
 
@@ -29,9 +34,18 @@ Place your SNES ROMs in
 
 ## Satellaview
 
-Satellaview games are supported, but most you will find on the internet have the ".bs" extension, which is an issue if the ROM is compressed with the extension since ".bs" is not included in any of the emulators' compression support.
+Satellaview games are properly emulated by **lr-snes9x**, but do require a BIOS to run.
 
-First you will need to uncompress your ROMs from ".zip" or ".7z" (if you have them compressed that is), then either leave them uncompressed, or change all of the ROMs' extension from ".bs" to ".sfc" then recompress the ".sfc" files back to ".zip" or ".7z" archive formats.
+| Recognized Name | Description | CRC32 |
+| :---: | :---: | :---: |
+| BS-X.bin | English - No DRM | E5A91AD4 |
+| BS-X.bin | English - DRM | 8ECC1963 |
+| BS-X.bin | Japan - No DRM | B6BFB9B9 |
+| BS-X.bin | Japan - DRM | F51F07A0 |
+
+For emulators like **lr-snes9x2010**, the ".bs" extension is not recognized when inside a ".zip" or ".7z" archive.
+
+First you will need to uncompress your ROMs from ".zip" or ".7z", then either leave them uncompressed, or change all of the ROMs' extension from ".bs" to ".sfc" then recompress the ".sfc" files back to ".zip" or ".7z" archives.
 
 A quick way to change all of your ".bs" ROMs for Windows users is to open NotePad, put the command found below in it, save the file with a ".bat" extension (name it something like "bs to sfc.bat"), then place the new batch file in the folder containing your uncompressed ".bs" ROMs.
 
@@ -41,21 +55,21 @@ Programs such as PeaZip or WinRAR can be used to batch compress all of the newly
 
 ## Controls
 
-### lr-snes9x2010, lr-snes9x, lr-snes9x2002, lr-snes9x2005, lr-armsnes
+### lr-snes9x, lr-snes9x2010, lr-snes9x2005, lr-snes9x2002
 
-lr-snes9x2010, lr-snes9x, lr-snes9x2002, lr-snes9x2005, lr-armsnes all utilise RetroArch configurations
+lr-snes9x, lr-snes9x2010, lr-snes9x2005, and lr-snes9x2002 all utilise RetroArch configurations.
 
-Add custom retroarch controls to the retroarch.cfg file in
+Add custom RetroArch controls to the retroarch.cfg file in:
 ```shell
 /opt/retropie/configs/snes/retroarch.cfg
 ```
-For more information on custom RetroArch controls see: [RetroArch Configuration](RetroArch-Configuration)
+For more information on custom RetroArch controls see: [RetroArch Configuration](RetroArch-Configuration).
 
 ![nintendo_snes_diagram](https://cloud.githubusercontent.com/assets/10035308/16599633/7f34d356-42c0-11e6-92c0-f8774d795bd1.png)
 
 ### PiSNES
 
-Controller configurations are kept in a file named snes9x.cfg located in 
+Controller configurations are kept in a file named snes9x.cfg located in: 
 ```
 /opt/retropie/emulators/pisnes
 ```
@@ -100,6 +114,6 @@ JA_UD=1
 
 ### 3-5 Players
 
-lr-snes9x and lr-snes9x2010 are the only emulators that support multitap. Multitap support is disabled by default due to it breaking two-player games that don't support it.
+**lr-snes9x** and **lr-snes9x2010** are the only emulators that support multitap. Multitap support is disabled by default due to it breaking two-player games that don't support it.
 
 To enable multitap, launch the multitap supported game you wish to enable multitap support in, go to "RGUI/Main Menu/Quick Menu/Controls", change "User 2 Device Type" to "Multitap", then go back to the "Quick Menu" and select "Save Game Overrides" at the bottom of the menu.
