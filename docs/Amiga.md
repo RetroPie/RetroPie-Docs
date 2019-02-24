@@ -17,7 +17,7 @@ _The Amiga was a family of personal computers released by Commodore in the 1980'
 
 Amiberry is a fork of UAE4ARM with support for WHDLoad, which offers a better console-like experience.
 
-Please refer to the official Amiberry wiki for [**a detailed step-by-step installation and config guide**](https://github.com/midwan/amiberry/wiki/Using-Amiberry-WHDBooter-with-RetroPie).
+Please refer to the official Amiberry wiki for [**a detailed step-by-step installation and config guide**](https://github.com/midwan/amiberry/wiki/Using-Amiberry-with-RetroPie---Installation-and-Setup).
 
 ## ROMS
 
