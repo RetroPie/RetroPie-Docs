@@ -300,6 +300,7 @@ This will function the same as EBOOT-format without altering the files.
 > * Now you have a multi-bin game with .cue file, packed in a single .bin file plus a new .cue file.
 > * Now .m3u can read the file and load the game. 
 
+You can also use [romtool](https://github.com/jordond/romtool) which is a command-line tool for [merging](https://github.com/jordond/romtool/blob/master/docs/merge.md) multi-track `.bin`'s into a single `.bin`/`.cue` pair.  It can also create a `.m3u` [playlist](https://github.com/jordond/romtool/blob/master/docs/playlist.md) for your games as well.
 
 ### EBOOT-format (.pbp) for Multi-disc games
 
