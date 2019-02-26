@@ -18,11 +18,11 @@ Overclocking is setting a hardware component to run faster than originally inten
 
 For boosting N64 performance, it is the```core_freq```(GPU core) setting that will give the most benefit. Most pis I tested were stable between ```core_freq=500``` and ```core_freq=575``` with some amount of ```over_voltage``` applied. Again, it is important to remember that not all pis are equal, some will only overclock a little or not at all. You will need to experiment to see how much your pi can handle. If your pi freezes or crashes then your overclock is unstable. 
 
-Overclocking ```sdram_freq``` will give a very small boost to performance. Going from 450mhz to 550mhz yielded at best about a 1FPS increase. Sdram has its own over voltage value ```over_voltage_sdram```.  You may also need to add ```sdram_schmoo=0x02000020```to your config.txt. This is a set of timings that can help add stability if your sdram is overclocked.
+Overclocking ```sdram_freq``` will give a very small boost to performance. Going from 450mhz to 550mhz yielded at best about a 1FPS increase. Sdram has its own over voltage value ```over_voltage_sdram```. 
 
 ```v3d_freq```can also be overclocked. This helped improve performance for a couple games I tested. Most of the raspberry pis I tested were stable to at least ```v3d_freq=500``` but not much past this.
 
-```arm_freq```(CPU) overclocking is of little to no help for boosting N64 performance on the pi. There was no discernible FPS increase overclocking the Pi 3's CPU from the standard 1200mhz to 1350mhz. Though it may help increase performance for other high demand emulators such as PSX or MAME. Overclocking ```arm_freq``` may benefit earlier pi models though additional testing is needed to confirm. 
+```arm_freq```(CPU) overclocking is of little to no help for boosting N64 performance on a pi3. There was no discernible FPS increase overclocking the Pi 3b's CPU from the standard 1200mhz to 1350mhz. Though it may help increase performance for other high CPU usage emulators such as PSX or MAME. Overclocking ```arm_freq``` may benefit pi 1, 2 and zero models for some N64 games but offers no benefits for the pi3b or pi3b+.
 
 ### CPU-Governor
 
@@ -46,7 +46,7 @@ Each N64 emulator/video plugin should be set to the lowest resolution (CEA-1 for
 
 
 ## Notes on Audio
-The SDL audio plugin produces less audio drop out and makes for an improved experience over the OMX audio plugin. Previously, the SDL audio plugin produced an audio crackling that was undesirable. With recent updates the audio crackle has been fixed so it is now fine to use SDL audio. To switch to the SDL audio plugin you should first update your mupen64plus emulator to the latest binary version. Then navigate to: ```/opt/retropie/configs/all/autoconf.cfg``` and make sure that ```mupen64plus_audio = "0"```
+The SDL audio plugin produces less audio drop out and makes for an improved experience over the OMX audio plugin. Previously, the SDL audio plugin produced an audio crackling that was undesirable. With recent updates the audio crackle has been fixed so it is now fine to use SDL audio. To switch to the SDL audio plugin you should first update your mupen64plus emulator to the latest version. Then navigate to: ```/opt/retropie/configs/all/autoconf.cfg``` and make sure that ```mupen64plus_audio = "0"```
 
 As a side benefit from using the SDL audio plugin, save/load states will now function properly with mupen64plus.
 
