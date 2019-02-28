@@ -157,6 +157,9 @@ if we want it at boot time then we use this command:
 
 if you have any issues with the controller you can debug it with `sudo jstest /dev/input/js0`
 
+#### Input Lags or problems to connect more then 2 players
+[Refer to here: Connection issues and input lags especially if you connect more than one BT device](https://github.com/RetroPie/RetroPie-Setup/wiki/Bluetooth-Controller#connection-issues-and-input-lags-especially-if-you-connect-more-than-one-bt-controller)
+
 #### Disconnect Bluetooth Controller
 To disconnect the controller, hold down the ps3 button for 10 seconds.
 
