@@ -39,7 +39,7 @@ The BIOS files needed are: **dc_boot.bin, dc_flash.bin**. The boot file is often
 
 Place your BIOS files in
 ```
-/home/pi/RetroPie/BIOS/
+/home/pi/RetroPie/BIOS/dc
 ```
 
 BIOS files
@@ -55,7 +55,8 @@ BIOS files
 | dc_boot.bin | Free | d552d8b577faa079e580659cd3517f86 | 558f456e | atreyu187 Hack |
 | dc_flash.bin | Free | 74e3f69c2bb92bc1fc5d9a53dcf6ffe2 | bda0e9aa | atreyu187 Hack |
 
-**Note:** If you are having trouble with having to set the date/time every time you load Reicast, [see this forum post](https://retropie.org.uk/forum/post/53941) for a guide on how to replace dc_flash.bin. The MD5 of the dc_flash.bin generated from that guide should be `2f818338f47701c606ade664a3e16a8a`
+**Note:** If you are having trouble with having to set the date/time every time you load Reicast, [see this forum post](https://retropie.org.uk/forum/post/53941) for a guide on how to replace dc_flash.bin. The MD5 of the dc_flash.bin generated from that guide should be `2f818338f47701c606ade664a3e16a8a`.
+**Note:** As of February 2019, the date/time prompt should appear only the 1st time Reicast is started.
 
 ## Video Setup Guide  
 
