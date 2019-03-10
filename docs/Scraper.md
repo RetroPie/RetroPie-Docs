@@ -265,7 +265,7 @@ The recommended usage is to scrape your system(s) by gathering data (image/video
 
 **Skyscraper** can be started from the RetroPie-Setup script, opening the **Configuration/Tools** menu and choosing `skyscraper`.If you wish to run it from the command line, for more advanced options and parameters, you can find it installed in `/opt/retropie/supplementary/skyscraper/Skyscraper`.
 
-<img width="579" alt="Skyscraper RetroPie package menu" src="https://user-images.githubusercontent.com/31816814/51629947-896dd780-1f51-11e9-97d8-d5cf812be513.png">
+<img width="579" alt="Skyscraper RetroPie package menu" src="https://retropie.org.uk/forum/assets/uploads/files/1551116278774-4ef4d83b-7b8d-481b-a4f9-bff542fca40f-image.png">
 
 Scraping your ROMs and games consists of at least 2 actions:
 
@@ -276,7 +276,7 @@ When using the **Skyscraper** module from the RetroPie-Setup script, the followi
 
 - **Gather for All Systems:** This will gather information/media for all the systems found in the RetroPie's ROM folder.
 
-- **Gather for Chosen Systems:** This will gather information/media only for the systems you choose.  
+- **Gather resources:** This will gather information/media only for the systems you choose.  
   Press <kbd>Space</kbd> to select each system you wish to include and <kbd>OK</kbd> to start scraping.
 
 - **Gathering source:** Choose from a menu which source to use for gathering information and media for your ROMs:
@@ -313,10 +313,11 @@ When using the **Skyscraper** module from the RetroPie-Setup script, the followi
 
   * **Purge commands**  
     **Skyscraper** caches locally the media downloaded from online sources. In time, this cache can grow and consume a considerable amount of disk space - especially if videos have been enabled. The cache size is displayed on top in this menu screen.  
-    You can delete the files from the cache using the following actions available in this menu: 
-    * **Purge system:** deletes all the locally cached resources for a chosen platform.
-    * **Purge all:** deletes all locally cached resources.  
-    **NOTE:** use this with care, it will completely remove the cached resources used when generating the game lists for the chosen platform(s). Generating game lists after you've cleared the cache requires you to re-download the media from the scraping sources all over again.
+    You can delete the files from the cache using the following actions available in this menu:
+    * **Vacuum chosen platform:** deletes the locally cached resources that don't have a ROM/Game file anymore. Useful to clean up space after deleting ROMs.
+    * **Purge chosen platform:** deletes all the locally cached resources for a chosen platform.
+    * **Purge all platforms:** deletes all locally cached resources, for all platforms.  
+    **NOTE:** use these options with care, they will completely remove the cached resources. Generating game lists after you've cleared the cache requires you to re-download the media from the scraping sources all over again.
 
 - **Generate game list(s)** This will generate the EmulationStation game list(s) for the systems you choose using all previously cached resources. Press Space to select the system(s) you wish to include and OK to start the generator..
 
