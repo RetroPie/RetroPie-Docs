@@ -34,6 +34,13 @@ You will get a window popping up telling you if the connection was successful or
 
 ![bluetooth 4](https://cloud.githubusercontent.com/assets/10035308/14411882/129be622-ff12-11e5-87bf-f549a4e0ab63.PNG)
 
+
+## Connection issues and input lags (especially if you connect more than one BT controller)
+
+1. Try reducing distance from your controller to Raspberry (helps sometimes)
+2. Try to disable internal WiFi - this helps to extent signal strength, [you can use this script to disable/enable Wifi on the fly](https://retropie.org.uk/forum/topic/19734) (several users report PS3 controller connections problems are vanished since)
+3. Buy a new BT adapter and put it to your Raspberry. Add `dtoverlay=pi3-disable-bt` in `/boot/config.txt` to disable internal BT module (ultima ratio, speeds up communication, extents range and speed depending on your BT adapter model)
+
 ## Manual Bluetooth Configuration
 ## !!Please note this is for pre v4.0 RetroPie - New 8bitdo details here!!:
 https://github.com/RetroPie/RetroPie-Setup/wiki/8bitdo-Controller
@@ -225,12 +232,6 @@ This should keep the Pi scanning for bluetooth devices in case the pair is lost.
 `y`  
 `enter`  
 `sudo reboot`  
-
-### Connection issues and input lags (especially if you connect more than one BT controller)
-
-1. Try reducing distance from your controller to Raspberry (helps sometimes)
-2. Try to disable internal WiFi - this helps to extent signal strength, [you can use this script to disable/enable Wifi on the fly](https://retropie.org.uk/forum/topic/19734) (several users report PS3 controller connections problems are vanished since)
-3. Buy a new BT adapter and put it to your Raspberry. Add `dtoverlay=pi3-disable-bt` in `/boot/config.txt` to disable internal BT module (ultima ratio, speeds up communication, extents range and speed depending on your BT adapter model)
 
 **Some useful threads**  
 http://blog.petrockblock.com/forums/topic/8bitdo-bluetooth-controller-setup-retropie-v3/  
