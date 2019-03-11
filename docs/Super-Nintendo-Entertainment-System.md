@@ -23,7 +23,11 @@ RetroPie includes multiple SNES emulators.
 
 **lr-snes9x** is an optional emulator that has proper Satellaview emulation, MSU-1 hack support, and is the most accurate SNES emulator available on the Raspberry Pi, but an overclocked RPi3B or stock RPi3B+ are recommended to avoid slowdown in most regular games. This emulator is generally too demanding for SFX/SA1/SFX2 games and an overclocked RPi3B+ is recommended for attempting full speed emulation of said games.
 
-**lr-snes9x2002** is the default emulator for the RPi1 and RPi0: expect inaccurate emulation. With this emulator, full speed emulation of SFX/SA1/SFX2 games is not possible on a RPi1 or a RPi0, expect some regular games not to run full speed on a RPi0, and do not expect full speed emulation for any game on a RPi1.
+**lr-snes9x2002** is the default emulator for the RPi0 and RPi1: expect inaccurate emulation. With this emulator, full speed emulation of SFX/SA1/SFX2 games is not possible on a RPi0 or a RPi1, expect some regular games not to run full speed on a RPi0, and do not expect full speed emulation for any game on a RPi1.
+
+**PiSNES** is an optional emulator that is recommended for full speed emulation of some games that run slow on a RPi0 or RPi1 in lr-snes9x2002, though it has inaccurate sound emulation and SFX/SA1/SFX2 games do not work.
+
+**snes9x-rpi** is an optional emulator that is identical to PiSNES in that it has inaccurate sound emulation and SFX/SA1/SFX2 games do not work. Where this emulator differs is that it does have the option of exiting the emulator by using Select+Start and requires a keyboard to exit.
 
 ## ROMS
 
