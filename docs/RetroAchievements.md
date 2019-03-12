@@ -38,6 +38,7 @@ cheevos_leaderboards_enable = true
 * Nintendo 64
 * Nintendo Virtual Boy
 * Mega Drive / Genesis
+* SG-1000
 * Master System
 * Game Gear
 * Neo Geo Pocket
