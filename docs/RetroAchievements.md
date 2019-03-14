@@ -2,7 +2,7 @@ RetroAchievements are a way to log your achievements on oldschool console games.
 
 **IMPORTANT NOTE**: The RetroAchievements feature is continuously being worked and improved. Then if you downloaded (or even worse: bought) a custom RetroPie image, there's a chance you have an outdated RetroArch version and face compatibility issues with the achievements feature. For a better experience, it's recommended to use the [official RetroPie image](https://retropie.org.uk/download/) and keep RetroArch and libretro cores [up to date](https://retropie.org.uk/docs/Updating-RetroPie/#updatinginstalling-individual-packages).
 
-You first need to create an account at http://retroachievements.org/ and then add your credentials to `/opt/retropie/configs/all/retroarch.cfg`
+You first need to create an account at [retroachievements.org/](https://retroachievements.org/) and then add your credentials to `/opt/retropie/configs/all/retroarch.cfg`
 
 ```
 cheevos_username = "yourusername"
