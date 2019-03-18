@@ -274,8 +274,6 @@ Scraping your ROMs and games consists of at least 2 actions:
 
 When using the **Skyscraper** module from the RetroPie-Setup script, the following actions are available in the menu:
 
-- **Gather for All Systems:** This will gather information/media for all the systems found in the RetroPie's ROM folder.
-
 - **Gather resources:** This will gather information/media only for the systems you choose.  
   Press <kbd>Space</kbd> to select each system you wish to include and <kbd>OK</kbd> to start scraping.
 
