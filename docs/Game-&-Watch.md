@@ -23,7 +23,7 @@ Place your Game & Watch ROMs in
 /home/pi/RetroPie/roms/gameandwatch
 ```
 
-Games can be found at the [Libretro Handheld Electronic Games page](https://bot.libretro.com/assets/cores/HandheldElectronicGame/).
+Games can be found at the [Libretro Handheld Electronic Games page](https://bot.libretro.com/assets/cores/Handheld%20Electronic%20Game/).
 
 ### Video Guide  
 
