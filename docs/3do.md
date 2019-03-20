@@ -13,11 +13,9 @@ _The Panasonic 3do Real Multiplayer was a Home Video Game Console developed by t
 
 ## Emulator: [lr-4do](https://github.com/libretro/4do-libretro)
 
-Note that this is experimental- even with an overclocked RPi2 it was incredibly laggy and slow. Definitely won't be coming out of experimental any time soon. It can be installed from the experimental menu of the [RetroPie-Setup Script](Updating-RetroPie#using-the-retropie-setup-script).
+**lr-4do** is experimental, and even with an overclocked RPi3B+ it is slow so it isn't recommended for Raspberry Pi users at this time.
 
-With RPi3 (stock and overclocked) no real difference in performance compared to the RPi2. Bust-A-Move took around 1 minute to load on stock speed and 39 seconds overclocked. Both had choppy sound and controller lag. As of 8/6/2016.
-
-With the Odroid XU4 performance is increased with many games being playable as of July 2018 when development was taken over by a newer developer. CPU threading being added for the CPU/GPU found in the XU4 continues to increase performance as of September 2018.
+With the Odroid-XU4, performance has increased and made many games playable as of July 2018 when development was taken over by a newer developer. CPU threading being added for the CPU/GPU found in the XU4 continues to increase performance as of September 2018.
 
 ## ROMS
 Accepted File Extensions: **.iso** **.bin/cue**
