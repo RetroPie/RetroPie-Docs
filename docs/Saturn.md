@@ -6,12 +6,14 @@ _The Sega Saturn is a 32 bit 5th generation home video game console released by 
 
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
-| [lr-Yabause](https://github.com/libretro/yabause) | saturn  | .bin .cue .iso .mdf | saturn_bios.bin | /opt/retropie/configs/saturn/retroarch.cfg |
+| [lr-yabause](https://github.com/libretro/yabause) | saturn  | .bin .cue .iso .mdf | saturn_bios.bin | /opt/retropie/configs/saturn/retroarch.cfg |
 |[lr-beetle-saturn](https://github.com/libretro/beetle-saturn-libretro)| saturn | .bin .cue .iso .mdf | sega_101.bin, mpr-17933.bin | /opt/retropie/configs/saturn/retroarch.cfg
 
-## Emulators: [lr-Yabause](https://github.com/libretro/yabause), [lr-beetle-saturn](https://github.com/libretro/beetle-saturn-libretro)
+## Emulators: [lr-yabause](https://github.com/libretro/yabause), [lr-beetle-saturn](https://github.com/libretro/beetle-saturn-libretro)
 
-Yabause stands for: Yet Another Buggy And Uncomplete Sega Emulator. It stands by its name. Currently you need to install it from the setup script under experimental builds. Any Raspberry Pi model will achieve only 1-2 frames-per-second, rendering it unplayable on those systems. **Saturn is really only recommended for use on a PC and even then emulation is less than perfect.**
+**lr-yabause**  is experimental, and even with an overclocked RPi3B+ it is slow so it isn't recommended for Raspberry Pi users at this time.
+
+**lr-beetle-saturn** is for x86 PCs only, and is recommended for those with such hardware.
 
 ## ROMS
 
