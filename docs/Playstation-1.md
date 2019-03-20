@@ -95,7 +95,7 @@ The recognized name can be all uppercase or all lowercase so if saving space and
 
 ### pcsx-rearmed
 
-The following BIOS is supported: 
+The following BIOS is supported:
 
 | Recognized Name | Redump Name | CRC32 | MD5 |
 | :---: | :---: | :---: | :---: |
@@ -103,9 +103,9 @@ The following BIOS is supported:
 
 Place BIOS in
 ```
-/home/pi/RetroPie/BIOS
+/opt/retropie/emulators/pcsx-rearmed/bios/
 ```
-The recognized name is case-sensitive.
+The recognized BIOS filename is case-sensitive (must be in all uppercase).
 
 ### lr-beetle-psx
 
@@ -118,6 +118,29 @@ scph5501.bin | ps-30a | 8D8CB7E4 | 490F666E1AFB15B7362B406ED1CEA246
 scph5502.bin | ps-30e | D786F0B9 | 32736F17079D0B2B7024407C39BD3050
 
 The BIOS is automatically chosen based upon the region of the ROM.
+
+## Memory Card and Save State
+
+### lr-pcsx-rearmed
+
+Memory Card saves have the .srm extension and are located in
+```
+/home/pi/RetroPie/roms/psx/
+```
+A new memory card .srm file with the same name as the ROM is created for each game as needed.
+
+### pcsx-rearmed
+
+Memory Card saves are located in
+```
+/opt/retropie/configs/psx/pcsx/memcards/
+```
+Their naming convention is cardX.mcd where 'X' is a number between 0 and 9.  Numbers 0 and 1 represent the first 2 Memory Card slots respectively.
+
+Save States are located in
+```
+/opt/retropie/configs/psx/pcsx/sstates/
+```
 
 ## Controls
 
