@@ -11,9 +11,9 @@ _Game & Watch is a line of handheld electronic games produced by Nintendo from 1
 | :---: | :---: | :---: | :---: | :---: |
 | [lr-gw](https://github.com/libretro/gw-libretro) | gameandwatch  | .mgw | none | /opt/retropie/configs/gameandwatch/retroarch.cfg |
 
-## Emulator: [lr-gw](https://github.com/libretro/gw-libretro) (Optional Packages)
+## Emulator: [lr-gw](https://github.com/libretro/gw-libretro)
 
-Note that this is optional. It can be installed from the options menu of the [RetroPie Setup Script](Updating-RetroPie).
+**lr-gw** is a simulator and not an emulator. This means that the games that can be played with it aren't actually the original games, but recreations of the games combined with the original artwork and an image of the handheld.
 
 ## ROMS
 Accepted File Extensions: **.mgw**
