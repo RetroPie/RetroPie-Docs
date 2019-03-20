@@ -22,6 +22,10 @@ Place your folders of game files in
 /home/pi/RetroPie/roms/scummvm
 ```
 
+**List ScummVM games in EmulationStation**
+
+Place an empty .svm file in scummvm's rom folder for each game which you want to appear in EmulationStation. This can be used to directly launch that game without starting the GUI first. Recalbox uses .scummvm files instead of .svm files.
+
 **Quick Start**
 
 - Quit running rom without saving : Alt + X
