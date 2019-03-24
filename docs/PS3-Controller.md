@@ -2,6 +2,10 @@
 
 The most recent versions of RetroPie include the packages needed for setting up a PS3 controller. Connecting over USB is Plug-and-Play--literally just plug your controller into the Pi while EmulationStation is running and it should detect a gamepad to configure. Connecting a PS3 controller via Bluetooth requires installation of a special PS3 driver located in RetroPie setup.
 
+Two drivers are available: 
+* `sixaxis` (since RetroPie 4.4.9): this is a helper service that configures the default kernel driver (`hid-sony`) and BlueZ plugin (`sixaxis`). This is the recommended driver, but third-party support is not well-tested.
+* `ps3controller`: this driver is well-tested and works with third-party controllers, but has the disadvantage of crippling the Bluetooth stack, as well as requiring a different button mapping to be defined compared to the USB connection.
+
 ## Configuring a PS3 controller to connect via Bluetooth
 
 Before booting the Raspberry Pi, make sure that a supported Bluetooth adapter is connected (for the Pi 3, onboard Bluetooth works perfectly as of RetroPie 4.0+). If you have a Playstation 3 console near by, make sure it is **totally powered off**--either unplugged or switched off in the back--because the PS3 controller may try to automatically pair with the console otherwise.  While a separate powered USB hub is not required to set up a controller, be mindful of your overall power draw when attaching peripherals. If you are overclocking, for example, it will be much safer to use a powered USB hub than drawing current from the Pi itself.
@@ -11,10 +15,40 @@ After your Pi boots up, you need to enter RetroPie setup. You can do this one of
 * Setting up your keyboard or PS3 controller as a USB gamepad in EmulationStation (you **must** configure a gamepad before you can use EmulationStation), navigating to the "RetroPie" icon in the Home Screen, and selecting it using whatever key you mapped "A" to on your gamepad. 
 * Pressing F4 to quit EmulationStation and running the Retropie script from the terminal. Once you're in the terminal, follow these instructions to run the `retropie_setup.sh` script.
 
-### Using the RetroPie GUI to configure the PS3 Controller Bluetooth Connection
+### Using the RetroPie-Setup GUI to configure the PS3 Controller Bluetooth Connection (for `sixaxis`)
+1. Navigate to the "RetroPie" icon in the Home Screen and select it using whatever key you mapped "A" to on your gamepad, and go to "RetroPie Setup".
+1. Once in the RetroPie Setup GUI, choose `[Manage packages]` > `[driver]`.
+1. Select the `sixaxis` driver, and then select `[Install from source]`.
+   * If you have a third-party controller, you must also navigate to `[Configuration / Options]` and select `[Enable support for third-party controllers]`; installation may take several minutes, so be patient.
+1. Once installation completes, exit RetroPie Setup and return to the EmulationStation Home Screen.
+1. While staying in the "RetroPie" section, select the "Bluetooth" item.
+1. Select `[Register and Connect to Bluetooth Device]` and follow the on-screen prompts to pair your controller.
+1. Once successfully paired, exit the Bluetooth menu. 
 
-1. Navigate to the "RetroPie" icon in the Home Screen and select it using whatever key you mapped "A" to on your gamepad, and go to RetroPie Setup
-1. Once in the RetroPie GUI, choose [Manage packages] > [driver].
+Your controller should now work using the same mappings configured via USB.
+
+### Using the RetroPie shell to configure the PS3 Controller Bluetooth Connection (for `sixaxis`)
+
+At the EmulationStation Home Screen, press F4 to quit EmulationStation and run the RetroPie Setup script from the terminal. Once you're in the terminal, follow these instructions to run the `retropie_setup.sh` script.
+
+    shell
+    sudo RetroPie-Setup/retropie_setup.sh
+
+Although it is not required, it is always a good idea to update the setup script by selecting
+
+    S Update RetroPie-Setup Script
+
+After updating, run the `retropie_setup.sh` script again.
+
+Now select `Manage packages` > `Manage driver packages` > `sixaxis` -> `Install from source`.
+ * If you also require third-party controller support, navigate to (`Manage packages` > `Manage driver packages` > `sixaxis`) -> `Configuration / Options` -> `Enable support for third-party controllers` (keeping in mind that this may take several minutes to complete).
+
+In order to pair controllers, use RetroPie-Setup's Bluetooth menu, which can be accessed via `Configuration / tools` -> `bluetooth`. Select `Register and Connect to Bluetooth Device` and follow the on-screen steps to pair your controller.
+
+### Using the RetroPie-Setup GUI to configure the PS3 Controller Bluetooth Connection (for `ps3controller`)
+
+1. Navigate to the "RetroPie" icon in the Home Screen and select it using whatever key you mapped "A" to on your gamepad, and go to "RetroPie Setup".
+1. Once in the RetroPie Setup GUI, choose [Manage packages] > [driver].
 1. Select PS3 Controller Driver ("ps3controller"), and then select [Install from source].
    * If you have a Tpfoon PS3 Controller you need to go to `[Configuration / Options]` > `[Install/Pair PS3 Controller (Clone support Shanwan)]`
 1. Once installation completes, exit RetroPie setup and return to the EmulationStation Home Screen.
@@ -26,7 +60,7 @@ And you now have a functional PS3 controller over Bluetooth.
 
 Some PS3 Controller clones (such as the Shanwan PS3 Controllers) will not connect over bluetooth until they are physically connected and removed from a normal USB connection.  If you are having issues pairing a controller, try connecting it via USB for several seconds, disconnecting it, and then pairing it over Bluetooth.
 
-### Using the RetroPie shell to configure the PS3 Controller Bluetooth Connection
+### Using the RetroPie shell to configure the PS3 Controller Bluetooth Connection (for `ps3controller`)
 
 __Note: Do not enable other bluetooth options as these will conflict with the PS3 specific bluetooth setup (sixad)__
 
@@ -49,7 +83,7 @@ Once this is done, you can disconnect the controller USB cable, and press the Pl
 
 After installation of PS3 controller driver bluetooth connection of new controllers will be configured automatically if you connect them over usb. 
 
-### Persisting bluetooth
+### Persisting bluetooth (`ps3controller` only)
 For bluetooth pairing to persist between reboots you need to make sure sixad is executed during startup.
 Exit EmulationStation and and edit `rc.local`.
 
@@ -58,7 +92,7 @@ Exit EmulationStation and and edit `rc.local`.
 
 Add `sixad --start &` before the line `exit 0` and save (ctrl-x then y)
 
-## Manually setting input
+## Manually setting input (`ps3controller` only)
 If the keys stop working in-game after switching to bluetooth or you want to configure inputs manually you can do this the recommended way using the RetroArch configuration UI (under `settings` > `input`) or by creating a input map manually:
 
     cd /opt/retropie/configs/all/retroarch-joypads/
