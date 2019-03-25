@@ -13,7 +13,7 @@ _The Game Boy Advance is a 32 bit handheld video game console released by Ninten
 
 ## Emulators: [gpSP](https://github.com/DPRCZ/gpsp), [lr-gpSP](https://github.com/libretro/gpsp), [lr-vba-next](https://github.com/libretro/vba-next), [lr-mgba](https://github.com/libretro/mgba)
 
-lr-mgba is a modern emulator that aims to be fast and accurate, supports local cable games, external BIOS, Super Game Boy emulation, among many other features. It also emulates [Game Boy](../Game-Boy) and [Game Boy Color](../Game-Boy-Color).
+lr-mgba is a modern emulator that aims to be fast and accurate, supports local cable games, external BIOS, Super Game Boy emulation, among many other features. It also emulates [Game Boy](Game-Boy) and [Game Boy Color](Game-Boy-Color).
 
 ## ROMS
 Accepted File Extensions: **.7z .gba .zip**
