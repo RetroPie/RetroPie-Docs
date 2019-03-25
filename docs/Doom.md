@@ -278,80 +278,14 @@ rm -rf freedoom-0.11.2/ freedm-0.11.2/ freedoom-0.11.2.zip freedm-0.11.2.zip
 
 ## Music
 
-The most ideal and authentic way to listen to the the original Doom (1&2) tracks is to google 'doom 1 and 2 midis' and download them. You can then convert the midi files into MP3s.
+### lr-prboom
 
-To enable music in your Doom game(s) you need to copy MP3s with specific names into the same folder as your ROMs are located. You can find a list of names [here](https://github.com/libretro/libretro-prboom/blob/master/src/m_misc.c#L605): They follow the scheme e1m1.mp3, e1m2.mp3, ..., e2m1.mp, e2m2.mp3, ... . There are freely available tracks available - find them by searching for "PSX Doom Music".
+To enable music in your Doom games, you need to copy MP3s with specific names into the same folder your WAD for the game is located. You can find a list of the names [here](https://github.com/libretro/libretro-prboom/blob/master/src/m_misc.c#L605).
+
+The easiest and highest quality music you can get for lr-prboom is that made by a Roland SC-55 digitized to MP3. Due to the copyright on said music, it can't be linked here. If this music is found, it will have a leading `d_` on each MP3 for each game's soundtrack that will need to be removed.
+
+Keep in mind that the soundtracks for Doom 2, Final Doom: TNT: Evilution, and Final Doom: The Plutonia Experiment are different even though their tracks are named identically. This means that the WADs/MP3s for Doom 2, Final Doom: TNT: Evilution, and Final Doom: The Plutonia Experiment must be in separate folders to avoid file name conflicts.
 
 If you are having trouble with the audio not playing after you have renamed all the MP3s, try clearing all the ID3 tag information for each of the MP3s.
 
-Below are the corresponding tracks if the MP3s are named:
-
-File Name | mp3 
- --- | ---
-* e1m1       |           "level 01 (hangar).mp3" 
-* e1m2        |          "level 02 (plant).mp3" 
-* e1m3         |         "level 03 (toxin refinery).mp3" 
-* e1m4          |        "level 04 (command control).mp3" 
-* e1m5           |       "level 05 (phobos lab).mp3" 
-* e1m6            |      "level 06 (central processing).mp3" 
-* e1m7            |      "level 07 (computer station).mp3" 
-* e1m8          |        "level 08 (phobos anomaly).mp3" 
-* e1m9           |       "level 06 (fistula).mp3" 
-* e2m1          |        "level 09 (deimos anomaly).mp3" 
-* e2m2          |        "level 10 (containment area).mp3" 
-* e2m3          |        "level 11 (refinery).mp3" 
-* e2m4          |        "level 12 (deimos lab).mp3" 
-* e2m5          |        "level 13 (command center).mp3" 
-* e2m6          |        "level 02 (plant).mp3" 
-* e2m7          |        "level 01 (hangar).mp3" 
-* e2m8          |        "level 03 (toxin refinery).mp3" 
-* e2m9          |        "level 02 (virgil).mp3" 
-* e3m1          |        "level 17 (hell keep).mp3" 
-* e3m2          |        "level 03 (canyon).mp3" 
-* e3m3          |        "level 18 (pandemonium).mp3" 
-* e3m4          |        "level 06 (central processing).mp3" 
-* e3m5          |        "level 20 (unholy cathedral).mp3" 
-* e3m6          |        "level 21 (mt erebus).mp3" 
-* e3m7          |        "level 22 (limbo).mp3" 
-* e3m8          |        "level 09 (nessus).mp3" 
-* e3m9          |        "level 10 (paradox).mp3" 
-* inter         |        "e2m3.mp3" 
-* intro         |        "track 02 title screen.mp3" 
-* bunny         |        "track 03 main menu.mp3" 
-* victor        |        "track 09 endgame.mp3" 
-* introa        |        "track 02 title screen.mp3" 
-* runnin        |        "level 01 (hangar).mp3" 
-* stalks        |        "level 10 (containment area).mp3" 
-* countd        |        "level 22 (limbo).mp3" 
-* betwee        |        "level 16 (hell gate).mp3" 
-* doom          |        "level 08 (phobos anomaly).mp3" 
-* the_da        |        "level 21 (mt erebus).mp3" 
-* shawn         |        "level 20 (unholy cathedral).mp3" 
-* ddtblu        |        "level 24 (hell beneath).mp3" 
-* in_cit        |        "level 11 (refinery).mp3" 
-* dead          |        "level 13 (command center).mp3" 
-* stlks2           |     "level 09 (deimos anomaly).mp3" 
-* theda2           |     "level 17 (hell keep).mp3" 
-* doom2            |     "level 08 (minos).mp3" 
-* ddtbl2            |    "level 16 (hell gate).mp3" 
-* runni2           |     "level 04 (combine).mp3" 
-* dead2            |     "level 18 (pandemonium).mp3" 
-* stlks3          |      "level 06 (central processing).mp3" 
-* romero          |      "level 05 (phobos lab).mp3" 
-* shawn2          |      "level 10 (containment area).mp3" 
-* messag          |      "level 01 (attack).mp3" 
-* count2          |      "level 02 (plant).mp3" 
-* ddtbl3         |       "level 03 (toxin refinery).mp3" 
-* ampie          |       "level 01 (hangar).mp3" 
-* theda3         |       "level 06 (fistula).mp3" 
-* adrian           |     "level 07 (computer station).mp3" 
-* messg2          |      "level 08 (phobos anomaly).mp3" 
-* romer2          |      "level 11 (refinery).mp3" 
-* tense           |      "level 07 (geryon).mp3" 
-* shawn3          |      "level 05 (catwalk).mp3" 
-* openin          |      "level 04 (command control).mp3" 
-* evil            |      "level 16 (hell gate).mp3" 
-* ultima          |      "level 03 (toxin refinery).mp3" 
-* read_m          |      "track 03 main menu.mp3" 
-* dm2ttl          |      "track 02 title screen.mp3" 
-* dm2int         |       "track 05 stats screen.mp3"
+An alternative source for alternative music for your Doom games would be from [Aubrey Hodges](https://aubreyhodges.bandcamp.com/), who scored Doom/Doom 2 and Final Doom: TNT: Evilution/The Plutonia Experiment on the PSX, though properly renaming/duplicating the MP3s for each game would currently be an arduous task due to lack of a chart to reference.
