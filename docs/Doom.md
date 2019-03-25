@@ -278,7 +278,7 @@ rm -rf freedoom-0.11.2/ freedm-0.11.2/ freedoom-0.11.2.zip freedm-0.11.2.zip
 
 ## Music
 
-### lr-prboom
+### Music for lr-prboom
 
 To enable music in your Doom games, you need to copy MP3s with specific names into the same folder your WAD for the game is located. You can find a list of the names [here](https://github.com/libretro/libretro-prboom/blob/master/src/m_misc.c#L605).
 
