@@ -239,6 +239,10 @@ Quick way to do it:
 * Select **Save Core Remap File**
 * OR, if you want to save this remapping for the current game only, select **Save Game Remap File**
 
+## Retroarch Controls Cheat-Sheet
+
+![Retroarch Controls Cheat-Sheet](https://user-images.githubusercontent.com/3280180/54955719-78771d80-4f24-11e9-9fca-a1a58c52dc8c.PNG)
+
 **Video Tutorials**
 
 * Core input remapping: [Remapping your controller](https://www.youtube.com/watch?v=liJKFUZX4PM) by Floob
