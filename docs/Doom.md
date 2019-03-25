@@ -282,9 +282,9 @@ rm -rf freedoom-0.11.2/ freedm-0.11.2/ freedoom-0.11.2.zip freedm-0.11.2.zip
 
 To enable music in your Doom games, you need to copy MP3s with specific names into the same folder your WAD for the game is located. You can find a list of the names [here](https://github.com/libretro/libretro-prboom/blob/master/src/m_misc.c#L605).
 
-The easiest and highest quality music you can get for lr-prboom is that made by a Roland SC-55 digitized to MP3. Due to the copyright on said music, it can't be linked here. If this music is found, it will have a leading `d_` on each MP3 for each game's soundtrack that will need to be removed.
+The easiest and highest quality music you can get for lr-prboom is that made by a Roland SC-55 digitized to MP3. Due to the copyright on said music, it can't be linked here. If this music is found, a leading `d_` will need to be removed from each MP3's filename.
 
-Keep in mind that the soundtracks for Doom 2, Final Doom: TNT: Evilution, and Final Doom: The Plutonia Experiment are different even though their tracks are named identically. This means that the WADs/MP3s for Doom 2, Final Doom: TNT: Evilution, and Final Doom: The Plutonia Experiment must be in separate folders to avoid file name conflicts.
+Keep in mind that the soundtracks for Doom 2, Final Doom: TNT: Evilution, and Final Doom: The Plutonia Experiment are different even though their tracks are named identically. This means that the WADs/MP3s for Doom 2, Final Doom: TNT: Evilution, and Final Doom: The Plutonia Experiment must be in separate folders to avoid filename conflicts.
 
 If you are having trouble with the audio not playing after you have renamed all the MP3s, try clearing all the ID3 tag information for each of the MP3s.
 
