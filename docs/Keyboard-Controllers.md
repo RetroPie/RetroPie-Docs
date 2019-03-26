@@ -32,7 +32,6 @@ COIN 1		5
 COIN 2		6	
 START 1		1	
 START 2		2
-Select          rshift
 1 RIGHT		R arrow
 1 LEFT		L arrow
 1 UP		U arrow
