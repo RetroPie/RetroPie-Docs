@@ -8,7 +8,7 @@ _This console, known as the PC Engine in Japan and as the TurboGrafx-16 Entertai
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
 | [lr-beetle-pce-fast](https://github.com/libretro/beetle-pce-fast-libretro) | pcengine  | .7z .ccd .chd .cue .pce .zip | syscard3.pce | /opt/retropie/configs/pcengine/retroarch.cfg |
-| [lr-beetle-supergrafx](https://github.com/libretro/beetle-supergrafx-libretro) | pcengine  | .7z .pce .zip | syscard3.pce | /opt/retropie/configs/pcengine/retroarch.cfg |
+| [lr-beetle-supergrafx](https://github.com/libretro/beetle-supergrafx-libretro) | pcengine  | .7z .pce .zip .chd| syscard3.pce | /opt/retropie/configs/pcengine/retroarch.cfg |
 
 ## Emulator: [lr-beetle-pce-fast](https://github.com/libretro/beetle-pce-fast-libretro), [lr-beetle-supergrafx](https://github.com/libretro/beetle-supergrafx-libretro)
 
@@ -23,7 +23,7 @@ Place your PC Engine/PC Engine CD/TurboGrafx-16/TurboGrafx-CD/SuperGrafx ROMs in
 
 ## CHD Archive Usage
 
-lr-beetle-pce-fast has support for the CHD (V5) archive format.
+lr-beetle-pce-fast and lr-beetle-supergrafx has support for the CHD (V5) archive format.
 
 This format will save space and allow you to keep your PC Engine CD/TurboGrafx-CD ROM folder tidy.
 
