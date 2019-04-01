@@ -70,7 +70,7 @@ You can adjust the sample rate for _all_ audio. Lowering it from the default of 
 ```
 The option is:
 ```
-mame2003-sample_rate = "48000"
+mame2003_sample_rate = "48000"
 ```
 The valid possibilities are 8000, 11025, 22050, 44100 and 48000.
 
@@ -82,7 +82,7 @@ The copyright warning should be hidden by default, but can be controlled via a s
 ```
 The option is:
 ```
-mame2003-skip_disclaimer = "enabled"
+mame2003_skip_disclaimer = "enabled"
 ```
 
 ## Skip warnings screen
@@ -93,7 +93,7 @@ Games that feature incomplete emulation, or other side-effects will have a warni
 ```
 The option is:
 ```
-mame2003-skip_warnings = "enabled"
+mame2003_skip_warnings = "enabled"
 ```
 
 ## Mouse/Trackball/Analog Controller support
@@ -108,7 +108,7 @@ Absolute pointer devices are supported, but need to be turned on via a setting i
 ```
 The option is:
 ```
-mame2003-mouse_device = "pointer"
+mame2003_mouse_device = "pointer"
 ```
 **NOTE:** This will disable [Mouse support](#mousetrackballanalog-controller-support).
 
@@ -120,7 +120,7 @@ Some (all?) 2 player spinner/dial devices are represented as 1 device with 2 axe
 ```
 The option is:
 ```
-mame2003-dialsharexy = "enabled"
+mame2003_dialsharexy = "enabled"
 ```
 
 ## Dual stick games
@@ -131,7 +131,7 @@ The right analog stick can now be used a second joystick. This is enabled by def
 ```
 The option is:
 ```
-mame2003-rstick_to_btns = "enabled"
+mame2003_rstick_to_btns = "enabled"
 ```
 
 ## TATE mode
@@ -142,7 +142,7 @@ For users who have a rotatable display, this mode shows vertical games (e.g. Pac
 ```
 The option is:
 ```
-mame2003-tate_mode = "enabled"
+mame2003_tate_mode = "enabled"
 ```
 In addition to this, you will want to stop rotating the games and instead show them in along the length of the screen, `video_allow_rotate` in mame-libretro/arcade to false via the [Configuration Editor](Configuration-Editor.md).
 
