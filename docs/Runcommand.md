@@ -65,6 +65,7 @@ You can get some cool launching images in these forum topics:
 - https://retropie.org.uk/forum/topic/7193/runcommand-launching-images-for-any-theme
 - https://retropie.org.uk/forum/topic/4611/runcommand-system-splashscreens
 - https://retropie.org.uk/forum/topic/36/splashscreens/97
+- https://retropie.org.uk/forum/topic/13580/arcade-games-launching-images-collection
 
 ## runcommand-onstart and runcommand-onend scripts
 
