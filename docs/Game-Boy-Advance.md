@@ -6,14 +6,20 @@ _The Game Boy Advance is a 32 bit handheld video game console released by Ninten
 
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
-| [lr-gpSP](https://github.com/libretro/gpsp) | gba  | .7z .gba .zip | gba_bios.bin | /opt/retropie/configs/gba/retroarch.cfg |
-| [lr-vba-next](https://github.com/libretro/vba-next) | gba  | .7z .gba .zip | gba_bios.bin (optional) | /opt/retropie/configs/gba/retroarch.cfg |
 | [lr-mgba](https://github.com/libretro/mgba) | gba  | .7z .gba .zip | gba_bios.bin | /opt/retropie/configs/gba/retroarch.cfg |
+| [lr-vba-next](https://github.com/libretro/vba-next) | gba  | .7z .gba .zip | gba_bios.bin (optional) | /opt/retropie/configs/gba/retroarch.cfg |
+| [lr-gpSP](https://github.com/libretro/gpsp) | gba  | .7z .gba .zip | gba_bios.bin | /opt/retropie/configs/gba/retroarch.cfg |
 | [gpSP](https://github.com/DPRCZ/gpsp) | gba  | .gba .zip | gba_bios.bin | /opt/retropie/emulators/gpsp/gpsp.cfg |
 
-## Emulators: [gpSP](https://github.com/DPRCZ/gpsp), [lr-gpSP](https://github.com/libretro/gpsp), [lr-vba-next](https://github.com/libretro/vba-next), [lr-mgba](https://github.com/libretro/mgba)
+## Emulators: [lr-mgba](https://github.com/libretro/mgba), [lr-vba-next](https://github.com/libretro/vba-next), [lr-gpSP](https://github.com/libretro/gpsp), [gpSP](https://github.com/DPRCZ/gpsp)
 
-lr-mgba is a modern emulator that aims to be fast and accurate, supports local cable games, external BIOS, Super Game Boy emulation, among many other features. It also emulates [Game Boy](Game-Boy) and [Game Boy Color](Game-Boy-Color).
+**lr-mgba** is a modern emulator that aims to be fast and accurate, supports local cable games, external BIOS, Super Game Boy palette and border, and many other features. It also emulates [Game Boy](Game-Boy) and [Game Boy Color](Game-Boy-Color). This is the advised emulator for the RPi3B/RPi3B+.
+
+**lr-vba-next** is a faster yet less accurate emulator possibly useful for those on a RPi2B: it is not available on the RPi0 or RPi1.
+
+**lr-gpSP** is the default emulator for the RPi0 and RPi1: expect inaccurate emulation. It runs full speed on the RPi0, but doesn't run full speed on a RPi1.
+
+**gpSP** is advised for full speed emulation on the RPi1. It requires manual controller configuration through the built-in menu using F10, but outside of that has a user-friendly Select+Start exit hotkey and a Select+R hotkey to access the built-in menu (if enabled).
 
 ## ROMS
 Accepted File Extensions: **.7z .gba .zip**
@@ -48,9 +54,9 @@ If you get something else besides that `a860...` string, that's not the correct 
 
 There are two ways to configure your Game Boy Advance controls depending on the emulator.
 
-### lr-gpSP, lr-vba-next, and lr-mgba
+### lr-mgba, lr-vba-next, lr-gpSP
 
-lr-gpSP, lr-vba-next, and lr-mgba utilise Retroarch configurations
+lr-mgba, lr-vba-next, lr-gpSP utilise Retroarch configurations
 
 Add custom retroarch controls to the retroarch.cfg file in
 ```shell
