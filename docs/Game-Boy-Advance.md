@@ -46,9 +46,9 @@ a860e8c0b6d573d191e4ec7db1b1e4f6  /home/pi/RetroPie/BIOS/gba_bios.bin
 
 If you get something else besides that `a860...` string, that's not the correct file.
 
-| md5sum          |        CRC32 |
-|--------------|--------------------|
-| a860e8c0b6d573d191e4ec7db1b1e4f6 | 81977335 |
+| Filename | No-intro | CRC32 | MD5 | SHA-1 |
+|--------------|--------------|--------------|--------------|--------------|
+| gba_bios.bin | [BIOS] Game Boy Advance (World).gba | 81977335 | a860e8c0b6d573d191e4ec7db1b1e4f6 | 300c20df6731a33952ded8c436f7f186d25d3492 |
 
 ## Controls
 
