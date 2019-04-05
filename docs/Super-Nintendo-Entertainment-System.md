@@ -25,7 +25,7 @@ RetroPie includes multiple SNES emulators.
 
 **lr-snes9x2002** is the default emulator for the RPi0 and RPi1: expect inaccurate emulation. With this emulator, full speed emulation of SFX/SA1/SFX2 games is not possible on a RPi0 or a RPi1, expect some regular games not to run full speed on a RPi0, and do not expect full speed emulation for any game on a RPi1.
 
-**PiSNES** is an optional emulator that is recommended for full speed emulation of some games that run slow on a RPi0 or RPi1 in lr-snes9x2002, though it has inaccurate sound emulation and SFX/SA1/SFX2 games do not work.
+**PiSNES** is an optional emulator that is recommended for full speed emulation of some games that run slow on a RPi0 in lr-snes9x2002, and should be the primary emulator on a RPi1, though it has inaccurate sound emulation and SFX/SA1/SFX2 games do not work.
 
 **snes9x-rpi** is an optional emulator that is identical to PiSNES in that it is based on the same version of SNES9x, has the same inaccurate sound emulation, and SFX/SA1/SFX2 games do not work. Where this emulator differs is that it does have the option of exiting the emulator by using Select+Start and requires a keyboard to exit without [advanced controller configuration](https://retropie.org.uk/docs/Universal-Controller-Calibration-&-Mapping-Using-xboxdrv/). How well it performs compared to PiSNES is currently unknown.
 
