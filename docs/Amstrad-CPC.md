@@ -91,3 +91,4 @@ For more information on custom RetroArch controls see: [RetroArch Configuration]
 
 ## Links of interest / References
 [[Solved] Amstrad CPC - Virtual Keyboard? lr-caprice32](https://retropie.org.uk/forum/topic/21885)
+[How to remap Keyboard chars to specific Joypad buttons](https://retropie.org.uk/forum/topic/20708/)
