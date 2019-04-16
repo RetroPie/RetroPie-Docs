@@ -38,7 +38,7 @@ The following archive contains a MAME 0.205 version of CHDMAN and Windows batch 
 
 ## BIOS
 
-The BIOS files needed are: **dc_boot.bin, dc_flash.bin**. The boot file is often found named something else, such as dc_**bios**.bin. It must be renamed to dc_**boot**.bin when placed in the BIOS folder. lr-reicast has support for the Sega Naomi and Atomiswave arcade systems but you will also need the corresponding BIOS.
+The BIOS files needed are: **dc_boot.bin, dc_flash.bin**. The boot file is often found named something else, such as dc_**bios**.bin. It must be renamed to dc_**boot**.bin when placed in the BIOS folder. lr-reicast has support for the Sega Naomi and Atomiswave arcade systems but you will also need the corresponding BIOS from the MAME romset.
 
 Place your BIOS files in
 ```
@@ -57,8 +57,8 @@ BIOS files
 | dc_flash.bin | Free | 93a9766f14159b403178ac77417c6b68 | e0d202a2 | Hack |
 | dc_boot.bin | Free | d552d8b577faa079e580659cd3517f86 | 558f456e | atreyu187 Hack |
 | dc_flash.bin | Free | 74e3f69c2bb92bc1fc5d9a53dcf6ffe2 | bda0e9aa | atreyu187 Hack |
-| naomi.zip | World | eb4099aeb42ef089cfe94f8fe95e51f6 | | NAOMI BIOS |
-| awbios.zip | World | 0ec5ae5b5a5c4959fa8b43fcf8687f7c | | Atomiswave BIOS |
+| naomi.zip | World | eb4099aeb42ef089cfe94f8fe95e51f6 | c295a8c2 | NAOMI BIOS |
+| awbios.zip | World | 0ec5ae5b5a5c4959fa8b43fcf8687f7c | ab628024 | Atomiswave BIOS |
 
 **Note:** If you are having trouble with having to set the date/time every time you load Reicast, [see this forum post](https://retropie.org.uk/forum/post/53941) for a guide on how to replace dc_flash.bin. The MD5 of the dc_flash.bin generated from that guide should be `2f818338f47701c606ade664a3e16a8a`.
 **Note:** As of February 2019, the date/time prompt should appear only the 1st time Reicast is started.
