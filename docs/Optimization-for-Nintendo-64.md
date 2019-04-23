@@ -26,11 +26,7 @@ Overclocking ```sdram_freq``` will give a very small boost to performance. Going
 
 ### CPU-Governor
 
-The CPU governor controls when your overclock is applied. With the cpu-governor set to performance mode your pi will run at full speed while running ROMs but will down-clock when sitting idle in Emulation Station. The CPU governor can be set to max performance mode in one of two ways.
-```
-echo "performance" |sudo tee /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor
-```
-Or you can enable it from the retropie setup menu. In Emulation Station go to Retropie-Setup - Setup and Configuration to be used post install - Configure the runcommand launch script - cpu configuration - force performance
+The CPU governor controls when your overclock is applied. With the cpu-governor set to performance mode your pi will run at full speed while running ROMs but will down-clock when sitting idle in Emulation Station. You can enable it from the retropie setup menu. In Emulation Station go to Retropie-Setup - Setup and Configuration to be used post install - Configure the runcommand launch script - cpu configuration - force performance
 then cancel, exit and reboot.
 
 ## Selecting the Correct Emulator and Graphics Plugin
