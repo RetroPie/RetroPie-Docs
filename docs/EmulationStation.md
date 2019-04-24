@@ -277,5 +277,6 @@ emulationstation --help
 
 Because of the development hiatus, there has been some attention towards other front-ends. The following alternate frontends can be installed from experimental packages of the RetroPie Setup-Script but support is currently only preliminary.
 
--  Attract-Mode ([site](http://attractmode.org/)) 
--  mehstation ([site](https://remy.io/mehstation))
+- Attract-Mode ([site](http://attractmode.org/)) 
+- mehstation ([site](https://remy.io/mehstation))
+- Pegasus ([site](https://pegasus-frontend.org/))
