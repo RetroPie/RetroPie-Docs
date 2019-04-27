@@ -19,7 +19,7 @@ _The Game Boy Advance is a 32 bit handheld video game console released by Ninten
 
 **lr-gpSP** is the default emulator for the RPi0 and RPi1: expect inaccurate emulation. It runs full speed on the RPi0, but doesn't run full speed on a RPi1.
 
-**gpSP** is advised for full speed emulation on the RPi1. It requires manual controller configuration through the built-in menu using F10, but outside of that has a user-friendly Select+Start exit hotkey and a Select+R hotkey to access the built-in menu (if enabled).
+**gpSP** is advised for full speed emulation on the RPi1. It may require manual controller reconfiguration, but outside of that has a user-friendly Select+Start exit hotkey and a Select+R hotkey to access the built-in menu enabled by default.
 
 ## ROMS
 Accepted File Extensions: **.7z .gba .zip**
