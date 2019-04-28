@@ -6,18 +6,18 @@ _The Game Boy Advance is a 32 bit handheld video game console released by Ninten
 
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
-| [lr-mgba](https://github.com/libretro/mgba) | gba  | .7z .gba .zip | gba_bios.bin | /opt/retropie/configs/gba/retroarch.cfg |
+| [lr-mgba](https://github.com/libretro/mgba) | gba  | .7z .gba .zip | gba_bios.bin (optional) gb_bios.bin (optional) gbc_bios.bin (optional) sgb_bios.bin (optional) | /opt/retropie/configs/gba/retroarch.cfg |
 | [lr-vba-next](https://github.com/libretro/vba-next) | gba  | .7z .gba .zip | gba_bios.bin (optional) | /opt/retropie/configs/gba/retroarch.cfg |
-| [lr-gpSP](https://github.com/libretro/gpsp) | gba  | .7z .gba .zip | gba_bios.bin | /opt/retropie/configs/gba/retroarch.cfg |
+| [lr-gpsp](https://github.com/libretro/gpsp) | gba  | .7z .gba .zip | gba_bios.bin | /opt/retropie/configs/gba/retroarch.cfg |
 | [gpSP](https://github.com/DPRCZ/gpsp) | gba  | .gba .zip | gba_bios.bin | /opt/retropie/emulators/gpsp/gpsp.cfg |
 
-## Emulators: [lr-mgba](https://github.com/libretro/mgba), [lr-vba-next](https://github.com/libretro/vba-next), [lr-gpSP](https://github.com/libretro/gpsp), [gpSP](https://github.com/DPRCZ/gpsp)
+## Emulators: [lr-mgba](https://github.com/libretro/mgba), [lr-vba-next](https://github.com/libretro/vba-next), [lr-gpsp](https://github.com/libretro/gpsp), [gpSP](https://github.com/DPRCZ/gpsp)
 
 **lr-mgba** is a modern emulator that aims to be fast and accurate, supports local cable games, external BIOS, Super Game Boy palette and border, and many other features. It also emulates [Game Boy](Game-Boy) and [Game Boy Color](Game-Boy-Color). This is the advised emulator for the RPi3B/RPi3B+.
 
 **lr-vba-next** is a faster yet less accurate emulator possibly useful for those on a RPi2B: it is not available on the RPi0 or RPi1.
 
-**lr-gpSP** is the default emulator for the RPi0 and RPi1: expect inaccurate emulation. It runs full speed on the RPi0, but doesn't run full speed on a RPi1.
+**lr-gpsp** is the default emulator for the RPi0 and RPi1: expect inaccurate emulation. It runs full speed on the RPi0, but doesn't run full speed on a RPi1.
 
 **gpSP** is advised for full speed emulation on the RPi1. It may require manual controller reconfiguration, but outside of that has a user-friendly Select+Start exit hotkey and a Select+R hotkey to access the built-in menu enabled by default.
 
@@ -30,33 +30,31 @@ Place your Game Boy Advance ROMS in
 ```
 
 ## BIOS
-The Game Boy Advance requires a BIOS called **gba_bios.bin**
+Only lr-gpsp and gpSP require the **gba_bios.bin**.
 
-Place the BIOS in
+Additional BIOS are used by lr-mgba and are optional.
+
+In order for a BIOS to be used in emulators where they are optional, the "Use bios if available" core option must be set to "On".
+
+Place BIOS in
 ```
 /home/pi/RetroPie/BIOS
 ```
 
-To verify your BIOS file:
-
-```
-$ md5sum /home/pi/RetroPie/BIOS/gba_bios.bin 
-a860e8c0b6d573d191e4ec7db1b1e4f6  /home/pi/RetroPie/BIOS/gba_bios.bin
-```
-
-If you get something else besides that `a860...` string, that's not the correct file.
-
-| Filename | No-intro | CRC32 | MD5 | SHA-1 |
-|--------------|--------------|--------------|--------------|--------------|
-| gba_bios.bin | [BIOS] Game Boy Advance (World).gba | 81977335 | a860e8c0b6d573d191e4ec7db1b1e4f6 | 300c20df6731a33952ded8c436f7f186d25d3492 |
+| Recognized Name | No-Intro Name | CRC32 | MD5 |
+|--------------|--------------|--------------|--------------|
+| gba_bios.bin | [BIOS] Game Boy Advance (World).gba | 81977335 | a860e8c0b6d573d191e4ec7db1b1e4f6 |
+| gb_bios.bin | [BIOS] Nintendo Game Boy Boot ROM (World) (Rev 1).gb | 59C8598E | 32FBBD84168D3482956EB3C5051637F5 |
+| gbc_bios.bin | [BIOS] Nintendo Game Boy Color Boot ROM (World).gbc | 41884E46 | DBFCE9DB9DEAA2567F6A84FDE55F9680 |
+| sgb_bios.bin | SGB-CPU (World) (Enhancement Chip).bin | EC8A83B9 | D574D4F9C12F305074798F54C091A8B4 |
 
 ## Controls
 
 There are two ways to configure your Game Boy Advance controls depending on the emulator.
 
-### lr-mgba, lr-vba-next, lr-gpSP
+### lr-mgba, lr-vba-next, lr-gpsp
 
-lr-mgba, lr-vba-next, lr-gpSP utilise Retroarch configurations
+lr-mgba, lr-vba-next, lr-gpsp utilise Retroarch configurations
 
 Add custom retroarch controls to the retroarch.cfg file in
 ```shell
