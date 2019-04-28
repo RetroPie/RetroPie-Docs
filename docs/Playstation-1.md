@@ -21,11 +21,9 @@ Raspberry Pi 1/0 users that choose to use this unrecommended emulator should be 
 
 ### PCSX-ReARMed
 
-This emulator is advised for those on a Raspberry Pi 1/0 due to the lower system requirements.
+This emulator is advised for those on a Raspberry Pi 1/0 due to the lower system requirements, though expect some inaccurate emulation.
 
-Most emulation issues described above in lr-pcsx-rearmed's details should also apply to this emulator as well since those issues are unrelated to the processing power of the hardware.
-
-Lowering the Runcommand's resolution setting for this emulator on the RPi0 or RPi1 is advised for faster emulation, though 480i (CEA-6) is the lowest recommended CEA resolution due to anything lower causing visual issues or the system to become frozen outside of remote commands.
+Setting the Runcommand's resolution setting for this emulator to a low 4:3 resolution on the RPi0 or RPi1 is recommended for faster emulation and correct aspect ratio, though 480i (CEA-6) is the lowest recommended 4:3 CEA resolution due to CEA-2 causing visual issues and CEA-1 causing the system to lock up entirely.
 
 ### Where is lr-beetle-psx?
 
