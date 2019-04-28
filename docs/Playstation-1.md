@@ -1,29 +1,31 @@
 ***
 ![psx](https://cloud.githubusercontent.com/assets/10035308/12213692/20e2fe3a-b63a-11e5-9e49-c47c33bc659d.png)
 ***
-_The PlayStation 1 is a 5th generation video game console released by Sony in 1994._
+_The PlayStation is a 5th generation video game console released by Sony in 1994._
 
 ***
 
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
 | [lr-pcsx-rearmed](https://github.com/libretro/pcsx_rearmed) | psx  | .cue .cbn .img .iso .m3u .mdf .pbp .toc .z .znx | scph101.bin scph7001.bin scph5501.bin scph1001.bin | /opt/retropie/configs/psx/retroarch.cfg |
-| [pcsx-rearmed](https://github.com/notaz/pcsx_rearmed) | psx  | .cue .cbn .img .iso .m3u .mdf .pbp .toc .z .znx | SCPH1001.BIN | /opt/retropie/configs/psx/pcsx.cfg |
+| [PCSX-ReARMed](https://github.com/notaz/pcsx_rearmed) | psx  | .cue .cbn .img .iso .m3u .mdf .pbp .toc .z .znx | SCPH1001.BIN | /opt/retropie/configs/psx/pcsx.cfg |
 | [lr-beetle-psx](https://github.com/libretro/beetle-psx-libretro) | psx  | .cue .cbn .chd .img .iso .m3u .mdf .pbp .toc .z .znx | scph5500.bin scph5501.bin scph5502.bin | /opt/retropie/configs/psx/retroarch.cfg |
 
-## Emulators: [lr-pcsx-rearmed](https://github.com/libretro/pcsx_rearmed), [pcsx-rearmed](https://github.com/notaz/pcsx_rearmed), [lr-beetle-psx](https://github.com/libretro/beetle-psx-libretro).
+## Emulators: [lr-pcsx-rearmed](https://github.com/libretro/pcsx_rearmed), [PCSX-ReARMed](https://github.com/notaz/pcsx_rearmed), [lr-beetle-psx](https://github.com/libretro/beetle-psx-libretro).
 
 ### lr-pcsx-rearmed
 
-The prefered PSX emulator for those on a Raspberry Pi 2/3/3+. The features of RetroArch combined with pcsx-rearmed's excellent Dynamic Recompiler allow for an adequate PSX emulation experience on the Raspberry Pi.
+The prefered PSX emulator for those on a Raspberry Pi 2/3/3+. The features of RetroArch combined with PCSX-ReARMed's excellent Dynamic Recompiler allow for an adequate PSX emulation experience on the Raspberry Pi, though expect some inaccurate emulation.
 
-Raspberry Pi 1/0 users that choose to use this emulator should be made aware that RetroArch's **Bilinear Filtering** will cause abnormal behavior in some games and should be disabled whenever emulation issues are encountered.
+Raspberry Pi 1/0 users that choose to use this unrecommended emulator should be made aware that RetroArch's **Bilinear Filtering** will cause abnormal behavior in some games and should be disabled whenever emulation issues are encountered.
 
-### pcsx-rearmed
+### PCSX-ReARMed
 
 This emulator is advised for those on a Raspberry Pi 1/0 due to the lower system requirements.
 
 Most emulation issues described above in lr-pcsx-rearmed's details should also apply to this emulator as well since those issues are unrelated to the processing power of the hardware.
+
+Lowering the Runcommand's resolution setting for this emulator is advised for better emulation, though 480i (CEA-6) is the lowest recommended CEA resolution due to anything lower causing visual issues or the system to become frozen outside of remote commands.
 
 ### Where is lr-beetle-psx?
 
@@ -46,7 +48,7 @@ Place your PlayStation ROMs in
 
 ### Why aren't my .bin files showing in Emulation Station?
   
-Since June 16th 2016 the RetroPie script has configured Emulation Station to no longer show .bin files in the UI.
+Since June 16th 2016 the RetroPie script has configured EmulationStation to no longer show .bin files in the UI.
 This means that a .cue file is required to start the game.  
   
 A .cue file is basically a plain text file that tells the emulator where in the .bin file the (data and/or audio) track(s) are. This is often important in the case where multiple audio files are in the single .bin file. These are often called "mixed mode" discs. [Wikipedia entry on .cue files](https://en.wikipedia.org/wiki/Cue_sheet_(computing))
@@ -74,7 +76,7 @@ If your PSX game is a .ecm extension, its a compressed file that needs to be ext
 
 ### lr-pcsx-rearmed
 
-Whilst lr-pcsx_rearmed has an emulated BIOS to fall back on, this has limited compatibility meaning most games will have issues running with it, others will not work at all, and all games that use memory card saves are prone to save corruption. It should be considered mandatory to manually install an official BIOS.
+Whilst lr-pcsx-rearmed has an emulated BIOS to fall back on, this has limited compatibility meaning most games will have issues running with it, others will not work at all, and all games that use memory card saves are prone to save corruption. It should be considered mandatory to manually install an official BIOS.
 
 The following BIOS are supported: 
 
@@ -91,9 +93,11 @@ Place BIOS in
 ```
 If more than one of the BIOS above is provided, then the latest revision of the BIOS available is automatically chosen.
 
-The recognized name can be all uppercase or all lowercase so if saving space and using **pcsx-rearmed** is a concern, then you may want to consider renaming **scph1001.bin** to **SCPH1001.BIN** instead of having two copies of the same BIOS.
+The recognized name can be all uppercase or all lowercase so if saving space and using **PCSX-ReARMed** is a concern, then you may want to consider renaming **scph1001.bin** to **SCPH1001.BIN** instead of having two copies of the same BIOS.
 
-### pcsx-rearmed
+### PCSX-ReARMed
+
+Whilst PCSX-ReARMed has an emulated BIOS to fall back on, this has limited compatibility meaning most games will have issues running with it, others will not work at all, and all games that use memory card saves are prone to save corruption. It should be considered mandatory to manually install an official BIOS.
 
 The following BIOS is supported:
 
@@ -103,7 +107,7 @@ The following BIOS is supported:
 
 Place BIOS in
 ```
-/opt/retropie/emulators/pcsx-rearmed/bios/
+/home/pi/RetroPie/BIOS
 ```
 The recognized BIOS filename is case-sensitive (must be in all uppercase).
 
@@ -129,7 +133,7 @@ Memory Card saves have the .srm extension and are located in
 ```
 A new memory card .srm file with the same name as the ROM is created for each game as needed.
 
-### pcsx-rearmed
+### PCSX-ReARMed
 
 Memory Card saves are located in
 ```
@@ -146,7 +150,7 @@ Save States are located in
 
 ### Game Specific Control Information
 
-If you have a limited input method such as an snes-style controller or handheld, then the spreadsheet below will help you figure out which games you will be able to play.
+If you have a limited input method such as an SNES-style controller or handheld, then the spreadsheet below will help you figure out which games you will be able to play.
 
 [PSX - General Game Info](https://docs.google.com/spreadsheets/d/1D4FKPOWCi11zhVvUcS8Bv4-IzyxH9MZRldugigTc59E/edit?usp=sharing)
 
@@ -163,12 +167,12 @@ For more information on custom RetroArch controls see: [RetroArch Configuration]
 
 ![playstation3_diagram](https://cloud.githubusercontent.com/assets/10035308/16599634/7f353148-42c0-11e6-9023-dbaf074bc933.png)
 
-### pcsx-rearmed Controls
-pcsx-rearmed controls and configurations are located in
+### PCSX-ReARMed Controls
+PCSX-ReARMed controls and configurations are located in
 ```
 /opt/retropie/configs/psx/pcsx.cfg
 ```
-An example mapping for pcsx-rearmed using an Xbox 360 controller is below for reference:
+An example mapping for PCSX-ReARMed using an Xbox 360 controller is below for reference:
 
 **Xbox 360 Controller**
 ```
@@ -261,7 +265,7 @@ Then, within a multiplayer game, load up the Retroarch menu via the menu hotkey 
 
 ### Analog Controller Type
 
-lr-pcsc-rearmed controller type can be changed in-game and in a configuration file to support games that require the analog/dualshock controller type.<br>
+lr-pcsx-rearmed controller type can be changed in-game and in a configuration file to support games that require the analog/dualshock controller type.<br>
 **NOTE:** Games that do not support analog controls will be unresponsive in this mode.
 * Use the Retroarch GUI hotkey(default select+X) in-game
 * Navigate to Quick Menu -> Core Options
@@ -274,12 +278,12 @@ pcsx_rearmed_pad1type = "analog"
 pcsx_rearmed_pad2type = "standard"
 ```
 
-The standalone pcsx-rearmed controller type can be changed in the in-game menu.
+The standalone PCSX-ReARMed controller type can be changed in the in-game menu.
 * Enter the in-game menu using ESC on a keyboard
 * Navigate to the controls menu
 * Change Port # device from Standard to Analog
 
-### Disc Swapping for Multi-disc Games in RetroArch 
+### Disc Swapping for Multi-Disc Games in RetroArch 
 
 To change disks in-game, open the Retroarch GUI (RGUI), then from the **Quick Menu**, open the **Disk Control** and in the **Core Disk Options** screen use **Disk Image Append** to browse for the disk.
 
