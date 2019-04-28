@@ -17,17 +17,35 @@ _The Super Nintendo Entertainment System (or SNES) was a 4th generation video ga
 
 RetroPie includes multiple SNES emulators. 
 
-**lr-snes9x2010** is the prefered emulator on the RPi2 or RPi3B due to its balance between speed and accuracy, though an overclocked RPi3B or stock RPi3B+ are recommended for attempting full speed emulation of SA1/SFX2 games.
+### lr-snes9x2010
 
-**lr-snes9x2005** or **lr-snes9x2002** are recommended for attempting full speed emulation of SFX/SA1/SFX2 games on the RPi2, and the same could be said when attempting full speed emulation of SA1/SFX2 games on a stock RPi3B, though accuracy will suffer in all cases.
+The prefered emulator on the RPi2 or RPi3B due to its balance between speed and accuracy, though an overclocked RPi3B or stock RPi3B+ are recommended for attempting full speed emulation of SA1/SFX2 games.
 
-**lr-snes9x** is an optional emulator that has proper Satellaview emulation, MSU-1 hack support, and is the most accurate SNES emulator available on the Raspberry Pi, but an overclocked RPi3B or stock RPi3B+ are recommended to avoid slowdown in most regular games. This emulator is generally too demanding for SFX/SA1/SFX2 games and an overclocked RPi3B+ is recommended for attempting full speed emulation of said games.
+### lr-snes9x2005
 
-**lr-snes9x2002** is the default emulator for the RPi0 and RPi1: expect inaccurate emulation. With this emulator, full speed emulation of SFX/SA1/SFX2 games is not possible on a RPi0 or a RPi1, expect some regular games not to run full speed on a RPi0, and do not expect full speed emulation for any game on a RPi1.
+Recommended for attempting full speed emulation of SFX/SA1/SFX2 games on the RPi2 alongside, and the same could be said when attempting full speed emulation of SA1/SFX2 games on a stock RPi3B, though accuracy will suffer in all cases.
 
-**PiSNES** is an optional emulator that is recommended for full speed emulation of some games that run slow on a RPi0 in lr-snes9x2002, and should be the primary emulator on a RPi1, though it has inaccurate sound emulation and SFX/SA1/SFX2 games do not work.
+### lr-snes9x
 
-**snes9x-rpi** is an optional emulator that is identical to PiSNES in that it is based on the same version of SNES9x, has the same inaccurate sound emulation, and SFX/SA1/SFX2 games do not work. Where this emulator differs is that it does have the option of exiting the emulator by using Select+Start and requires a keyboard to exit without [advanced controller configuration](https://retropie.org.uk/docs/Universal-Controller-Calibration-&-Mapping-Using-xboxdrv/). How well it performs compared to PiSNES is currently unknown.
+An optional emulator that has proper Satellaview emulation, MSU-1 hack support, and is the most accurate SNES emulator available on the Raspberry Pi, but an overclocked RPi3B or stock RPi3B+ are recommended to avoid slowdown in most regular games. This emulator is generally too demanding for SFX/SA1/SFX2 games and an overclocked RPi3B+ is recommended for attempting full speed emulation of said games.
+
+### lr-snes9x2002
+
+The default emulator for the RPi0 and RPi1: expect inaccurate emulation. With this emulator, full speed emulation of SFX/SA1/SFX2 games is not possible on a RPi0 or a RPi1, expect some regular games not to run full speed on a RPi0, and do not expect full speed emulation for any game on a RPi1.
+
+This emulator may also be of use to RPi2 and RPi3B owners that need the additional speed to emulate SFX/SA1/SFX2 games at full speed consistently, though **lr-snes9x2005** should be their first choice.
+
+Setting the Runcommand's resolution setting for this emulator to a low 4:3 resolution on the RPi0 or RPi1 is recommended for faster emulation, though 480i (CEA-6) is the lowest recommended 4:3 CEA resolution due to CEA-2 and CEA-1 causing visual issues.
+
+### PiSNES
+
+An optional emulator that is recommended for full speed emulation of some games that run slow on a RPi0 in lr-snes9x2002, and should be the primary emulator on a RPi1, though it has inaccurate sound emulation and SFX/SA1/SFX2 games do not work.
+
+Setting the Runcommand's resolution setting for this emulator to a low 4:3 resolution on the RPi0 or RPi1 is recommended for faster emulation: VGA (640x480) (CEA-1) will produce a 4:3 resolution with screen tearing on a modern TV and 480i (CEA-6) will not produce a 4:3 resolution and not have screen tearing on a modern TV.
+
+### snes9x-rpi
+
+An optional emulator that is identical to PiSNES in that it is based on the same version of SNES9x, has the same inaccurate sound emulation, and SFX/SA1/SFX2 games do not work. Where this emulator differs is that it doesn't have the option of exiting the emulator by using Select+Start and requires a keyboard to exit without [advanced controller configuration](https://retropie.org.uk/docs/Universal-Controller-Calibration-&-Mapping-Using-xboxdrv/). How well it performs compared to PiSNES is currently unknown.
 
 ## ROMS
 
@@ -40,7 +58,9 @@ Place your SNES ROMs in
 
 ## Satellaview
 
-Satellaview games are properly emulated by **lr-snes9x**, but do require a BIOS to run.
+Satellaview games are properly emulated by **lr-snes9x**, but require a BIOS to do so. 
+
+**English - No DRM** is the recommended version to use.
 
 | Recognized Name | Description | CRC32 |
 | :---: | :---: | :---: |
@@ -48,6 +68,11 @@ Satellaview games are properly emulated by **lr-snes9x**, but do require a BIOS 
 | BS-X.bin | English - DRM | 8ECC1963 |
 | BS-X.bin | Japan - No DRM | B6BFB9B9 |
 | BS-X.bin | Japan - DRM | F51F07A0 |
+
+Place BIOS in
+```
+/home/pi/RetroPie/BIOS
+```
 
 For emulators like **lr-snes9x2010**, the ".bs" extension is not recognized when inside a ".zip" or ".7z" archive.
 
