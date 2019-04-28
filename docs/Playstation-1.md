@@ -25,7 +25,7 @@ This emulator is advised for those on a Raspberry Pi 1/0 due to the lower system
 
 Most emulation issues described above in lr-pcsx-rearmed's details should also apply to this emulator as well since those issues are unrelated to the processing power of the hardware.
 
-Lowering the Runcommand's resolution setting for this emulator is advised for better emulation, though 480i (CEA-6) is the lowest recommended CEA resolution due to anything lower causing visual issues or the system to become frozen outside of remote commands.
+Lowering the Runcommand's resolution setting for this emulator on the RPi0 or RPi1 is advised for faster emulation, though 480i (CEA-6) is the lowest recommended CEA resolution due to anything lower causing visual issues or the system to become frozen outside of remote commands.
 
 ### Where is lr-beetle-psx?
 
