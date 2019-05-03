@@ -8,7 +8,7 @@ For this reason, a common scenario is that part of the image is 'cut off'. For e
 
 ![](https://retropie.org.uk/forum/uploads/files/1486482968213-upload-fc5e98db-7e40-4375-8033-9ca4afeed159.png)
 
-The easiest way to fix it is to adjust your TV. Modern HDTVs will usually have a setting somewhere in the options that displays the entire 1080p image, including the areas that would be ignored as "overscan". For example:
+The easiest and best way to fix it is to adjust your TV. **All other methods of overscan correction may introduce unwanted scaling artefacts**. Modern HDTVs will usually have a setting somewhere in the options that displays the entire 1080p image, including the areas that would be ignored as "overscan". For example:
 ### Samsung
 Menu > Picture > Screen Adjustment > Picture Size > change to "Screen Fit"
 
