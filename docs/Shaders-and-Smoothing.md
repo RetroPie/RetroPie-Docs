@@ -50,7 +50,7 @@ You can select either preset via the [Configuration editor](Configuration-editor
 
 ### Scaling artifacts (particularly in Vertical games)
 
-Some arcade games were run on a vertical CRT; literally a regular TV flipped over on its side. Whilst libretro shaders are will automatically rotate for this, the shadow mask effect does not, causing an unsightly 'rainbow' effect. Rather than add logic to the shader (making it slower), a special version for vertical games is available:
+Some arcade games were run on a vertical CRT; literally a regular TV flipped over on its side. Whilst libretro shaders  automatically rotate for this, the shadow mask effect does not, causing an unsightly 'rainbow' effect. Rather than add logic to the shader (making it slower), a special version for vertical games is available:
 
 3. `crt-pi-vertical.glslp`
 ![](http://i.imgur.com/oL7BOvk.jpg)
