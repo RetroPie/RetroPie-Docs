@@ -16,9 +16,6 @@ Rather than running everything from an SD card, it can be desirable to store and
 
 There are a number of ways you can achieve this, but the following method is desirable as it fully integrates the USB drive with the existing directory structure, rather than requiring you to tweak configuration files so RetroPie is looking for ROMs in a different place. Below there are two ways to accomplish this: an automated method, or a manual method.
 
-### For XU4 owners
-The XU4 and its OS do not respond the same as the Raspberry Pi with Rasbian and it does not provide a way to know when the sync is completed. It is recommended that you allow a decent amount of time for the process to sync when using the Automatic Mount (Easiest Method).
-
 ### Format USB drive
 Either on linux, or on a PC, format the USB drive to FAT32 (used in this guide as it is the most compatible across different operating systems).
 
@@ -37,6 +34,9 @@ As of December 30, 2016 a simple automated method was added to run roms from a U
 NOTE if you have a large ROM collection already on the SD card it will copy all of the ROMs too so make sure your USB is large enough. It is easiest if you haven't added any roms yet.
 
 Once the folder structure is copied over the USB will be mounted over the RetroPie folder so any ROMs you add to your pi will be run off of the USB. 
+
+**Note: XU4 owners**
+The XU4 and its OS do not respond the same as the Raspberry Pi with Rasbian and it does not provide a way to know when the sync is completed. It is recommended that you allow a decent amount of time for the process to sync.
 
 ## Manual Mount
 
