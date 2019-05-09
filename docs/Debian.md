@@ -78,7 +78,7 @@ You can go into Setup / Configuration and enable autostart as you like.
 - [How do I map controls to Dolphin](#how-do-i-map-controls-to-dolphin)
 - [Start+Select does not exit Dolphin](#startselect-does-not-exit-dolphin)
 - [SteamOS hack to allow installation](#steamos-hack-to-allow-installation)
-- [How to i get latest graphics drivers](#how-to-i-get-latest-graphics-driver)
+- [How do I get latest graphics drivers](#how-do-i-get-latest-graphics-driver)
 
 ### Emulationstation hangs if shutdown/restart was selected
 
@@ -243,7 +243,7 @@ To
 
 This will obviously override any platform checking done by the script and is very hacky, but it will let the retropie setup continue properly until actual support exists
 
-### How to i get latest graphics drivers?
+### How do I get latest graphics drivers?
 
 Install hardware enablement stack (HWE) to get kernels and MESA packages from newer ubuntu versions.  
 
