@@ -34,6 +34,22 @@ The following archive contains a MAME 0.205 version of CHDMAN and Windows batch 
 
 **Keep in mind that lr-picodrive does not support CHD and only lr-picodrive can play multi-disc games.**
 
+This is a list of all the games released for the SEGA CD add-on for the Genesis that had two or more discs. 
+
+Dracula Unleashed (2 discs)
+
+Fahrenheit (2 discs)
+
+Ground Zero Texas (2 discs)
+
+Night Trap (2 discs)
+
+Sherlock Holmes - Consulting 
+
+Detective Volume II (2 discs)
+
+Slam City with Scottie Pippen (4 discs)
+
 ## BIOS
 
 ### lr-picodrive
