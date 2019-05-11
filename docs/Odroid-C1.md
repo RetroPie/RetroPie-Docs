@@ -4,9 +4,9 @@ Note : RetroPie doesn't work on C2.
 
 ## Download Ubuntu Image for Odroid:
 
-http://odroid.com/dokuwiki/doku.php?id=en:c1_release_linux_ubuntu
+https://wiki.odroid.com/odroid-c1/os_images/ubuntu/ubuntu
 
-Direct Link [Here](http://odroid.in/ubuntu_14.04lts/ubuntu-14.04.3lts-lubuntu-odroid-c1-20151020.img.xz)
+Direct Link [Here](https://odroid.in/ubuntu_18.04lts/C0_C1/ubuntu-18.04-3.10-mate-odroid-c1-20180726.img.xz)
 
 Extract the .xz file with a program like [7zip](http://www.7-zip.org/download.html)
 
