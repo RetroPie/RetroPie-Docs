@@ -9,23 +9,19 @@ The runcommand is the script responsible to launch your emulators/games. This wi
 
 ## Runcommand Launch Menu
 
-Each time you load a ROM there is an option to open what is called the Runcommand Launch Menu. This is accessed by pressing any key on the keyboard or button 0 on a joystick (what is the button 0 vary depending on the gamepad used).
-
+Each time you load a ROM there is an option to open what is called the Runcommand Launch Menu. This is accessed by pressing any button on a controller (the bottom face button is recommended as to not accidentally change anything) or pressing any key on a keyboard, while the prompt in the image below is displayed or right after a launching image disappears if you have those setup.
 
 ![runcommandlaunch](https://cloud.githubusercontent.com/assets/10035308/12870184/99acb464-ccf6-11e5-9f32-7f2ef3c17b3a.png)
 
-
-Once you press button 0 on a joystick or a key on your keyboard, it will open up into this menu (this menu may vary depending on the emulator you are running and version of retropie you are using- this image is for the super nintendo):
+Once you press any button on a gamepad or any key on a keyboard, it will open up into this menu (the menu options will vary depending on the system you are running and version of RetroPie you are using:
 
 ![runcommandmenu](https://cloud.githubusercontent.com/assets/10035308/10265893/b65c94ee-69ff-11e5-9195-f6a996f4b35b.png)
 
-If you select the first option, if there is more than one emulator, you can swap which emulator is used:
+If you select the first option, you can swap which emulator is used if there is more than one emulator:
 
 ![defaultemulator](https://cloud.githubusercontent.com/assets/10035308/10265899/de7127ec-69ff-11e5-99b6-aa2df9247da6.png)
 
 There are also varying options to change video settings, RetroArch configs for that system, etc. 
-
-In the past there were multiple rom folders for each emulator but they got confusing so now there is only one rom folder for each system and the emulator used can be loaded dynamically so there is no longer a need for multiple rom folders for each system. 
 
 ### Configuring Runcommand:
 
