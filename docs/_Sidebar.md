@@ -131,7 +131,7 @@
 * [Overclocking](Overclocking)
 * [Memory Split](Memory-Split)
 * [Manual Installation](Manual-Installation)
-* [Odroid C1](Odroid-C1)
+* [Odroid C1 C2](Odroid-C1-C2)
 * [Odroid XU3 XU4](Odroid-XU3-XU4)
 * [Arch Linux](Arch-Linux)
 * [Debian/Ubuntu/Mint](Debian)
