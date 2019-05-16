@@ -13,7 +13,7 @@ Each time you load a ROM there is an option to open what is called the Runcomman
 
 ![runcommandlaunch](https://cloud.githubusercontent.com/assets/10035308/12870184/99acb464-ccf6-11e5-9f32-7f2ef3c17b3a.png)
 
-Once you press any button on a gamepad or any key on a keyboard, it will open up into this menu (the menu options will vary depending on the system you are running and version of RetroPie you are using:
+Once you press any button on a controller or any key on a keyboard, it will open up into this menu (the menu options will vary depending on the system you are running and version of RetroPie you are using:
 
 ![runcommandmenu](https://cloud.githubusercontent.com/assets/10035308/10265893/b65c94ee-69ff-11e5-9195-f6a996f4b35b.png)
 
