@@ -288,17 +288,17 @@ Keep in mind that the soundtracks for Doom 2, Final Doom: TNT: Evilution, and Fi
 
 An alternative source for alternative music for your Doom games would be from [Aubrey Hodges](https://aubreyhodges.bandcamp.com/), who scored Doom/Doom 2 and Final Doom: TNT: Evilution/The Plutonia Experiment on the PSX, though properly renaming/duplicating the MP3s for each game would currently be an arduous task due to lack of a chart to reference.
 
-### Where to put the mp3 tracks
+### Where to put the mp3 tracks for doom
 
 Make sure you've launched Ir-prboom at least once within Emulationstation as this would generate the prboom.cfg file.
 
 Log into your raspberry pi via ftp client(hostname: ip address, username: pi, password: raspberry). 
 
-Navigate to /home/pi/RetroPie/roms/ports/doom/. 
+Navigate to /home/pi/RetroPie/roms/ports/doom.
 
-We will need to create a new directory within /doom that you will store all your mp3 tracks in. Lets call it         mp3-directory. 
+We will need to create a new directory within /doom where you will store all your mp3 tracks in. Lets call it         mp3-directory. 
 
-Navigate to /home/pi/RetroPie/roms/ports/doom/doom1 and open prboom.cfg. 
+Navigate to /home/pi/RetroPie/roms/ports/doom/doom1 and open prboom.cfg
 
 Scroll down until you see the line #Music.
 
@@ -308,6 +308,10 @@ Now, just follow this naming scheme for each track:
 
 
 "./mp3-directory/trackname.mp3"
+
+###Note
+Same concept with Doom 2!
+
 
 
 
