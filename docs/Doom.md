@@ -309,8 +309,9 @@ Now, just follow this naming scheme for each track:
 
 "./mp3-directory/trackname.mp3"
 
-###Note
-Same concept with Doom 2!
+### Note
+
+For Doom 2, prboom.cfg file would be located in /doom2.
 
 
 
