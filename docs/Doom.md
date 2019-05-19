@@ -311,7 +311,7 @@ Now, just follow this naming scheme for each track:
 
 ### Note
 
-For Doom 2, prboom.cfg file would be located in /doom2.
+For Doom 2,  the prboom.cfg file would be located in /doom2.
 
 
 
