@@ -190,13 +190,13 @@ nano /opt/retropie/configs/ports/darkesthour/emulators.cfg
 The nano text editor will open, where you will now add the following to the text edit field.
 
 ```
-zdoom = "/opt/retropie/ports/zdoom/zdoom +set fullscreen 1 -iwad /home/pi/RetroPie/roms/ports/doom/doom2.wad -file /home/pi/RetroPie/roms/ports/darkesthour/DarkHour.wad"
+zdoom = "/opt/retropie/ports/zdoom/zdoom +set fullscreen 1 -iwad /home/pi/RetroPie/roms/ports/doom/doom2.wad -file /home/pi/RetroPie/roms/ports/darkesthour/DarkHour.wad -config /home/pi/RetroPie/roms/ports/darkesthour/zdoom.ini -savedir /home/pi/RetroPie/roms/ports/darkesthour/"
 default="zdoom"
 ```
 
 press 'ctrl+o' to save, 'y' to confirm and 'ctrl+x' to exit out of the nano text editor.
 
-You'll notice that in the above example that ZDoom is making use of the 'Doom II' wad as a base for the 'Darkest Hour' modification. This is common in most cases. However, some mods will need to make use of the 'Ultimate Doom' wad file entitled `doom.wad` instead. Both `doom.wad` and `doom2.wad` should be installed to `/home/pi/RetroPie/roms/ports/doom/` and the above example should be set accordingly.
+You'll notice that in the above example that ZDoom is making use of the 'Doom II' wad as a base for the 'Darkest Hour' modification. This is common in most cases. However, some mods will need to make use of the 'Ultimate Doom' wad file entitled `doom.wad` instead. Both `doom.wad` and `doom2.wad` should be installed to `/home/pi/RetroPie/roms/ports/doom/` and the above example should be set accordingly. Also you will notice the use of the commands "-config" and "-savedir", using these allow each game set to use it's own directory for game and saves and settings. 
 
 Having completed this step, you will now want to restart Emulation Station, navigate to 'Ports' and test your new menu entry.
 
