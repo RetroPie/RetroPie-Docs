@@ -9,7 +9,6 @@ _Atari released a series of 8 bit computers (400, 800, 1200XL, 600XL, 800XL, 130
 | [Atari800](https://atari800.github.io/)  | atari800 **or** atari5200  | .a52 .atr .bas .bin .car .dcm .xex .xfd .atr.gz .xfd.gz | ATARIXL.ROM **and** ATARIBAS.ROM **and** ATARIOSA.ROM **and** ATARIOSB.ROM **and** 5200.rom | /opt/retropie/configs/atari800/atari800.cfg or /opt/retropie/configs/atari800.cfg on older releases|
 | [lr-atari800](https://github.com/libretro/libretro-atari800)  | atari800 **or** atari5200  | .7z .a52 .atr .bas .bin .car .dcm .xex .xfd .zip .atr.gz .xfd.gz | ATARIXL.ROM **and** ATARIBAS.ROM **and** ATARIOSA.ROM **and** ATARIOSB.ROM **and** 5200.rom | /opt/retropie/configs/atari5200/retroarch.cfg |
 
-## Emulator: [Atari800](https://atari800.github.io/)
 These emulators emulate the Atari 8 bit family: 400, 800, 1200XL, 600XL, 800XL, 130XE, XEGS and the Atari 5200. This can be one of the more tricky emulators to get set up as they require a multiplicity of BIOS files and configurations depending on what systems you want to utilise but it seems to run Atari 5200 games pretty well.
 
 Atari800 is currently a port of version 4.1.0, whereas lr-Atari800 is based on version 3.1.0. Because of this, setup is substantially similar, with some differences. The lr-Atari800 core is currently the default in Retropie.
@@ -44,7 +43,93 @@ Place these files in
 ```shell
 /home/pi/RetroPie/BIOS
 ```
-Once you have your ROMS and your BIOS files where they belong there is one more step of configuration needed where you tell the emulator where to look for your BIOS files.
+Once you have your ROMS and your BIOS files where they belong there is one more step of configuration needed where you tell the emulator where to look for your BIOS files. It varies based on the emulator.
+
+## Emulator: [lr-atari800](https://github.com/libretro/libretro-atari800)
+
+Make sure you have the appropriate system files in RetroArch's system directory. Then, load a content file. The Atari800 core should boot to the 'Atari Computer - Memo Pad' screen.
+
+The Atari800 core will generate a '.atari800.cfg' config file in RetroArch's home directory and will add the required BIOS files it detects in the system directory to the config file.
+
+Now you can manually select what Atari system you want to emulate through the 'Atari System' core option.
+
+Finally, you can load any content files compatible with the system chosen through RetroArch's Load Content menu.
+
+Alternatively, you can manually configure how the Atari800 will look for and handle BIOS files. While the Atari800 core is running, you can press F1 to get into the internal emulator menu. There - emulator configuration, system rom settings.
+
+From there, You can go to the 'Emulator Configuration' section and then the System ROM settings section to configure BIOS options. (Press Enter to confirm menu selections and press Escape to go back a menu)
+
+Then press Escape a few times to go back to the 'Emulator Configuration' section and select Save Configuration File or alternatively change Save configuration file on exit from no to yes
+
+Then you can exit the emulator by pressing F9 and then try the game again or press Shift+F5 to reboot the game.
+
+You can set per-game core option settings by creating a game-options file through RetroArch's Core Opitons menu.
+
+### Options
+
+The Atari800 core has the following option(s) that can be tweaked from the core options menu. The default setting is bolded. Settings with (Restart) means that core has to be closed for the new setting to be applied on next launch.
+
+| Option | Choices | Description |
+| Atari System | (400/800 (OS B)/800XL (64K)/130XE (128K)/5200) | Choose what Atari System to emulate. |
+| Video Standard | (NTSC/PAL) |  |
+| Internal BASIC (hold OPTION on boot)  | (Off/On) | Whether to launch with BASIC enabled. Most games want this off. |
+| SIO Acceleration | (Off/On) | Speeds up emulation during file loading. You probably want this on but a few games will fail to load with it on. |
+| Boot from Cassette | (Off/On) | Causes a .CAS file to serve as the boot drive instead of the normal precedence (Cartridge first if present, then Disk) |
+| Hi-Res Artifacting | (Off/On) | Enables artificial color filters in high-res mode to mimic actual hardware. See Advanced Config for more | 
+| Autodetect A5200 CartType |  (Off/On) | There are many kinds of 5200 carts. This attempts to determine what sort a file is automatically. It often fails. See Advanced Config for more. |
+| Joy hack A5200 for Robotron | (Off/On) | Treats the second analog stick on a modern controller as joystick 2 |
+| Internal resolution (336x240/320x240/384x240/384x272/384x288/400x300) | Enables alternate resolutions. Note that most software actually runs in 320x192 and the rest is overscan. |
+| Retroarch Keyboard type | (poll/callback) | Default is poll for performance. |
+
+### Controllers
+**Device types**
+
+The Atari800 core supports the following device type(s) in the controls menu, bolded device types are the default for the specified user(s):
+
+**User 1 - 2 device types**
+
+    None - Input disabled.
+    RetroPad - Joypad - Don't use this, switch to ATARI Joystick for joypad usage.
+    ATARI Joystick - Joypad
+    ATARI Keyboard - Keyboard - For keyboard usage
+
+**Controller tables**
+
+_Joypad and analog device type table_
+
+| User 1 Remap descriptors | RetroPad Inputs | ATARI Joystick |
+| B | |KEY RETURN | 
+| Y| | Virtual keyboard ON/OFF | 
+| Select | | Select key |
+| Start| | Start key |
+| Up | | Up |
+| Down | | Down |
+| Left | | Left |
+| Right | | Right |
+| A |  | Joystick button and Return key in emulator menu | 
+| X |  | Atari 5200 second button and ESC key in emulator menu |
+| L | | Option key |
+| R | | Open emulator menu |
+| L2 | | Space key |
+| R2 | | ESC key |
+
+_Keyboard device type table_
+
+See the section below for Atari800 keyboard controls, they are the same.
+
+### Known issues with lr-atari800
+
+* NTSC filters do not work.
+* "New artifacts" do not render properly.
+* Sliders for adjusting anything in th emenus do not work correctly. Adjust these values by editing the config file.
+* The SHIFT and CTRL keys do not work when typing, including when used from the virtual keyboard.
+* Analog stick implementation for several Atari 5200 games is broken (Gorf, Missile Command, etc)
+
+Note that any option settable in the RGUI will override the atari.cfg config file.
+
+## Emulator: [Atari800](https://atari800.github.io/)
+
+**BIOS setup**
 
 Navigate to either the Atari 800 or Atari 5200 system on emulationstation and choose a game. A screen will open up with a bunch of different cartridge options. If you are playing a 5200 game then choose a 5200 cartridge option (Option #5 seems to work). You will then get a warning telling you that it needs a real Atari/OS. (you need to legally own the 5200 hardware to have the BIOS) Then press F1 to open the menu and navigate down to "Emulator Configuration" and press enter. Then navigate down to System ROM settings and then press Enter (Quick hint: use the escape button to go back up a step in the GUI)
 
@@ -233,6 +318,18 @@ Exit Emulator: F9
 * If it freezes up on you on the cartridge screen then try rebooting your pi and try again. If it keeps failing you either have the wrong BIOS, your ROM isn't compatible, or you chose the wrong cartridge option.
 
 ## Advanced Config
+
+### BASIC and games
+See [this thread](https://retropie.org.uk/forum/topic/22392/lr-atari800-5200-artifacting-basic-and-other-guidance)
+
+### Atari 5200 cart types
+See [this thread](https://retropie.org.uk/forum/topic/22392/lr-atari800-5200-artifacting-basic-and-other-guidance)
+
+### Artifacting
+See [this thread](https://retropie.org.uk/forum/topic/22392/lr-atari800-5200-artifacting-basic-and-other-guidance)
+
+### Automatic handling of BASIC games and artifacting
+See the script [in this thread.](https://retropie.org.uk/forum/topic/22392/lr-atari800-5200-artifacting-basic-and-other-guidance/9)
 
 ### Other BIOSes and BASIC versions
 
