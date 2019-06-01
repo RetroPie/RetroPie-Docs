@@ -10,7 +10,10 @@ _Atari released a series of 8 bit computers (400, 800, 1200XL, 600XL, 800XL, 130
 | [lr-atari800](https://github.com/libretro/libretro-atari800)  | atari800 **or** atari5200  | .7z .a52 .atr .bas .bin .car .dcm .xex .xfd .zip .atr.gz .xfd.gz | ATARIXL.ROM **and** ATARIBAS.ROM **and** ATARIOSA.ROM **and** ATARIOSB.ROM **and** 5200.rom | /opt/retropie/configs/atari5200/retroarch.cfg |
 
 ## Emulator: [Atari800](https://atari800.github.io/)
-This emulator emulates the Atari 8 bit family: 400, 800, 1200XL, 600XL, 800XL, 130XE, XEGS and the Atari 5200. This one of the more tricky emulators to get set up as it requires a multiplicity of BIOS files and configurations depending on what systems you want to utilise but it seems to run Atari 5200 games pretty well.
+These emulators emulate the Atari 8 bit family: 400, 800, 1200XL, 600XL, 800XL, 130XE, XEGS and the Atari 5200. This can be one of the more tricky emulators to get set up as they require a multiplicity of BIOS files and configurations depending on what systems you want to utilise but it seems to run Atari 5200 games pretty well.
+
+Atari800 is currently a port of version 4.1.0, whereas lr-Atari800 is based on version 3.1.0. Because of this, setup is substantially similar, with some differences. The lr-Atari800 core is currently the default in Retropie.
+
 ## ROMS
 Accepted File Extensions: **.a52 .bas .bin .car .xex .atr .xfd .dcm .atr.gz .xfd.gz**
 
@@ -27,21 +30,21 @@ Place your Atari 5200 ROMS in
 ## BIOS
 There are 5 main BIOS needed for the Atari800 emulator:
 
-**ATARIXL.ROM** (BIOS for Atari XL/XE OS)
+| BIOS name | Description | MD5 | CRC32 | Notes |
+| :---: | :---: | :---: | :---: |  :---: |
+|**ATARIXL.ROM** | BIOS for Atari XL/XE OS | 06daac977823773a3eea3422fd26a703 | 0x1f9cd270 | Version BB01R2 OS from Atari 800XL and early Atari 65XE/130XE |
+|**ATARIBAS.ROM** | BIOS for the BASIC interpreter | 0bac0c6a50104045d902df4503a4c30b | 0x7d684184 | Basic Rev. C, Atari BASIC from 800XL and all Atari XE/XEGS, also sold on cartridge |
+|**ATARIOSA.ROM** | BIOS for Atari 400/800 PAL | eb1f32f5d9f382db1bbfb8d7f9cb343a| 0x72b3fed4 | OS A from PAL Atari 400/800 |
+|**ATARIOSB.ROM** | BIOS for Atari 400/800 NTSC | a3e8d617c95d08031fe1b20d541434b2 | 0x3e28a1fe | PCXFormer hack ROM, based on LINBUG version; a bugfixed NTSC OS B for 400/800 |
+|**5200.rom** | BIOS for the Atari 5200 | 281f20ea4320404ec820fb7ec0693b38 |0x4248d3e3 | Original (not Rev. A) BIOS from 4-port and early 2-port 5200 |
 
-**ATARIBAS.ROM** (BIOS for the BASIC interpreter)
-
-**ATARIOSA.ROM** (BIOS for Atari 400/800 PAL)
-
-**ATARIOSB.ROM** (BIOS for Atari 400/800 NTSC)
-
-**5200.rom** (BIOS for the Atari 5200)
+See Advanced Config below for other alternate BIOSes which may be required to run certain software.
 
 Place these files in
 ```shell
 /home/pi/RetroPie/BIOS
 ```
-Once you have your ROMS and your BIOS files where they belong there is one more step of configurations needed where you tell the emulator where to look for your BIOS files.
+Once you have your ROMS and your BIOS files where they belong there is one more step of configuration needed where you tell the emulator where to look for your BIOS files.
 
 Navigate to either the Atari 800 or Atari 5200 system on emulationstation and choose a game. A screen will open up with a bunch of different cartridge options. If you are playing a 5200 game then choose a 5200 cartridge option (Option #5 seems to work). You will then get a warning telling you that it needs a real Atari/OS. (you need to legally own the 5200 hardware to have the BIOS) Then press F1 to open the menu and navigate down to "Emulator Configuration" and press enter. Then navigate down to System ROM settings and then press Enter (Quick hint: use the escape button to go back up a step in the GUI)
 
@@ -228,3 +231,100 @@ Exit Emulator: F9
 ## Troubleshooting
 
 * If it freezes up on you on the cartridge screen then try rebooting your pi and try again. If it keeps failing you either have the wrong BIOS, your ROM isn't compatible, or you chose the wrong cartridge option.
+
+## Advanced Config
+
+### Other BIOSes and BASIC versions
+
+While the five BIOS files listed above will deal with 99% of the software you likely want to run, both versions of the emulator support many alternate versions, some of which permit loading software that would otherwise crash or run in graphically distorted form.
+
+The following table gives the other BIOS checksums accepted by the emulators. These can be manually set in
+
+```shell
+/opt/retropie/configs/atari800/atari.cfg
+```
+
+which is also symlinked from
+
+```shell
+~/.atari.cfg
+```
+by adding the full path to the relevant line. Alternatively, you can use the emulator's internal menu. In lr-atari800, this can be reached via F1 or the R button; in Atari800 you can reach it via F1. Navigate to _Emulator Configuration > System ROM Settings_. Place all the BIOS files in
+
+```shell
+~/RetroPie/BIOS
+```
+
+and select _Find ROM Images in a Directory_. The emulator will find all BIOS files that match these, regardless of their filename. (Info drawn from [Peter Dell's Atari ROM Checker website](http://www.wudsn.com/productions/atari800/atariromchecker/help/AtariROMChecker.html)).
+
+| BIOS version | MD5 | CRC | Notes |
+| :---: | :---: | :---: | :---: |
+| ROM_OS_A_NTSC | a3c1585b5d19719f8acfa2b093bea75f | 0x4248d3e3 | OS from early NTSC Atari 400/800 |
+| ROM_OS_A_PAL | eb1f32f5d9f382db1bbfb8d7f9cb343a | 0x72b3fed4 | OS from PAL Atari 400/800 |
+| ROM_OS_B_NTSC | 4177f386a3bac989a981d3fe3388cb6c | 0x0e86d61d | late NTSC Atari 400/800, LINBUG version with incorrect checksums |
+| **or** | f5b246fa5237b44c41c6c831ccf18a2d | 0xf28bc97d | Corrected LINBUG version with correct checksums |
+| ROM_OS_AA00R10 | e3e8c74bfe1dcd6b56af50bd9a82dc15 | 0xc5c11546 | NTSC & PAL OS from Atari 1200XL |
+| ROM_OS_AA00R11 | eacb8069c45e2ec4e0a19978bf2fc334 | 0x1a1d7b1b | NTSC & PAL OS from Atari 1200XL |
+| ROM_OS_BB00R1 | 9aea45e724d2588fbbeda658c7dc53ee | 0x643bcc98 | NTSC & PAL 600XL |
+| ROM_OS_BB01R2 | 06daac977823773a3eea3422fd26a703 | 0x1f9cd270 | NTSC & PAL 800XL/65XE/130XE |
+| ROM_OS_BB02R3 | 2dbc73da0d34994d1e2e62e22eb49224 | 0x4149fd2c | OS from Atari 1450XLD prototype, known as OSR3V2-416.BIN |
+| ROM_OS_BB02R3V4 | 9f5449c881475a5cca40849c743205f8 | 0xd425a9cf | OS from Atari 1450XLD prototype, known as OS1450.128 and 1450R3VX.ROM |
+| ROM_OS_CC01R4 | 65020266380e33cce50ebf8b9d91122a | 0x0e000b99 | Potential Production ROM, compiled from sources by Tomasz Krasuski on 2014-05-31 |
+| ROM_OS_BB01R3 | 54e704558a6aedfc45cebf8f8ac9c312 | 0x29f133f7 | NTSC & PAL OS from late Atari 65XE/130XE | 
+| ROM_OS_BB01R4 | b7a2a04677d34f069eeb643d5238bf86 | 0x1eaf4002 | NTSC/PAL XEGS |
+| ROM_OS_BB01R59 | d467f55fb7643553b69b34bf7e805b7d | 0x45f47988 | Arabic Atari XEGS |
+| ROM_OS_BB01R59A | 69396860e53f58d798421d06d766c3ba | 0xf0a236d3 | Arabic Atari 65XE |
+| ROM_XEGAME | d7eb37aec6960cba36bc500e0e5d00bc | 0xbdca01fb | Missile Command, built-in version from Atari XEGS |
+
+In addition, custom BIOSes can also be loaded; in fact, the default recommendation for an OS B BIOS is actually a hacked version from the PCXFormer emulator.
+
+| BIOS version | MD5 | CRC | Notes |
+| :---: | :---: | :---: | :---: |
+| ROM_400/800_CUSTOM | a3e8d617c95d08031fe1b20d541434b2 | 0x3e28a1fe | NTSC PCXFormer hack ROM, based on LINBUG version |
+| | 7e5e4ce9508edef684ebe2c5a0e6f0d3 | 0x0ffce3cb | NTSC Corrected PCXFormer hack ROM with correct checksums | 
+
+There are three different versions of BASIC. Some BASIC software requires OS A and Rev. A BASIC; this is usually noted in the filename as [OSa]. The vast majority of the time, you will want Rev. C.
+
+| BIOS version | MD5 | CRC | Notes |
+| :---: | :---: | :---: | :---: |
+| ROM_BASIC_A | a4dc52536d526ecc51ea857b9fa2b90f | 0x4bec4de2 | Atari BASIC sold on cartridge for the 400/800 | 
+| ROM_BASIC_B | 04ea6a4e386601445ca5bfc8e37fb620 | 0xf0202fb3 | Atari BASIC from Atari 600XL/early Atari 800XL, also sold on cartridge | 
+| ROM_BASIC_C | 0bac0c6a50104045d902df4503a4c30b | 0x7d684184 | Atari BASIC from 800XL and all Atari XE/XEGS, also sold on cartridge |
+
+In Atari800, you can select which of these to boot into using command line switches.
+
+```shell
+-osa_rom <filename>   Use specified OS/A ROM image
+-osb_rom <filename>   Use specified OS/B ROM image
+-xlxe_rom <filename>  Use specified XL/XE OS ROM image
+-5200_rom <filename>  Use specified 5200 OS ROM image
+-basic_rom <filename> Use specified Atari BASIC ROM image
+
+-800-rev auto|a-ntsc|a-pal|b-ntsc|custom              Select OS revision for Atari 400/800
+-xl-rev auto|10|11|1|2|3a|3b|5|3|4|59|59a|custom      Select OS revision for Atari XL/XE
+-5200-rev auto|orig|a|custom                          Select OS revision for Atari 5200
+-basic-rev auto|a|b|c|custom                          Select BASIC revision
+-xegame-rev auto|orig|custom                          Select XEGS builtin game version
+``` 
+
+In lr-atari800, Retroarch has hardcoded these choices into the Options menu. These are saved in 
+
+```shell
+/opt/retropie/configs/all/retroarch-core-options.cfg
+```
+where the options are
+
+```shell
+400/800 (OS B)
+800XL (64K)
+130XE (128K)
+5200
+```
+
+and the option line is 
+
+```shell
+atari800_system = "800XL (64K)"
+```
+
+Note that since core options override the emulator's own config file, but Retroarch doesn't cover all the sub-options, you can set different versions of BASIC or different BIOSes for the supported systems via the emulator menu.
