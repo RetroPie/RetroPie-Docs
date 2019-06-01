@@ -50,6 +50,7 @@ In both emulators, the atari.cfg file is shared between Atari computers and the 
 
 Make sure you have a file called /opt/retropie/configs/atari5200/retroarch-core-options.cfg with this in it:
 
+```shell
 atari800_artifacting = "enabled"
 atari800_cassboot = "disabled"
 atari800_internalbasic = "disabled"
@@ -60,7 +61,7 @@ atari800_opt2 = "disabled"
 atari800_resolution = "336x240"
 atari800_sioaccel = "enabled"
 atari800_system = "5200"
-
+```
 See "Advanced Config" for solutions to problems booting 5200 games.
 
 ## Emulator: [lr-atari800](https://github.com/libretro/libretro-atari800)
@@ -102,7 +103,7 @@ The Atari800 core has the following options that can be tweaked from the core op
 | Hi-Res Artifacting | (**Off**/On) | Enables artificial color filters in high-res mode to mimic actual hardware. See Advanced Config for more | 
 | Autodetect A5200 CartType |  (**Off**/On) | There are many kinds of 5200 carts. This attempts to determine what sort a file is automatically. It often fails. See Advanced Config for more. |
 | Joy hack A5200 for Robotron | (**Off**/On) | Treats the second analog stick on a modern controller as joystick 2 |
-| Internal resolution (**336x240**/320x240/384x240/384x272/384x288/400x300) | Enables alternate resolutions. Note that most software actually runs in 320x192 and the rest is overscan. |
+| Internal resolution | (**336x240**/320x240/384x240/384x272/384x288/400x300) | Enables alternate resolutions. Note that most software actually runs in 320x192 and the rest is overscan. |
 | Retroarch Keyboard type | (**poll**/callback) | Default is poll for performance. |
 
 ### Controllers
@@ -304,7 +305,7 @@ SDL_JOY_1_UP=119
 SDL_JOY_1_DOWN=115
 SDL_JOY_1_TRIGGER=306
 ```
-## Controls
+### Controls
 ```shell
 F1 Built in user interface
 F2 Option key
@@ -344,7 +345,6 @@ Exit Emulator: F9
 
 ### Typical file formats
 
-
 * **.atr**: an Atari disk image. Typically needs BASIC disabled. You load these from the gamelist, basically you boot the Atari with this in the drive.
 * **.dcm** and **.xfd** are two other disk formats that lr-atari800 can read.
 * **.cas** is an Atari cassette image. It's not listed on the Retropie page, but I'd be surprised if the emu couldn't load it. You can actually boot from a cassette.
@@ -353,7 +353,7 @@ Exit Emulator: F9
 * **.bin** and **.xex** are executables. You may also see .com. These are just binary executables, but not entire disk images. You can load these from the gamelist, or from the Disk Operating System, which on an Atari was a menu. Boot a disk with DOS on it (and there were like a dozen different DOSes you could use, often with incompatible disk formats) and you can use the menu to launch the executable. Game compilation disk images often have collections of these.
 * **.bas** is a BASIC file. You cannot run these directly from the gamelist. You have to load them from disk while in BASIC (use LOAD "D:FILENAME.EXT" and once it loads, type RUN.) Many games consist of a disk image with DOS (a directory listing of the disk contents will show DOS.SYS and DUP.SYS), a BASIC program, and a little executable named AUTORUN.SYS. This basically makes the disk bootable and runs the .BAS program directly. These end up being .atr images that require BASIC.
 
-[See here for an exuastive list of Atari formats.](http://www.atarimania.com/faq-atari-400-800-xl-xe-what-file-formats-for-entire-disks-tapes-cartridges-are-there_106.html)
+[See here for an exhaustive list of Atari formats.](http://www.atarimania.com/faq-atari-400-800-xl-xe-what-file-formats-for-entire-disks-tapes-cartridges-are-there_106.html)
 
 Note that the emulators let you fully manipulate disks! You can accidentally reformat your rom, and it will look the same from the outside. Many games require you to have a blank disk to save player state on. Don't mess up and save your player file over the game! Similarly, quite a lot of "player disks" and "scenario disks" and the like out there actually have people's saved games on them.
 
@@ -395,9 +395,11 @@ On the other hand, because of the way artifacting is implemented in the emulator
 See [this thread](https://retropie.org.uk/forum/topic/22392/lr-atari800-5200-artifacting-basic-and-other-guidance/4) for an exhaustive discussion of artifacting with many screenshot examples.
 
 **Atari 800**
-To get the best artifacting results, press F1 for the emulator menu. Go to Display Settings. Select "Full NTSC filter" for the artifacting. Under NTSC filter settings, set Burst Mode at one of -1, -.05, 0.5, or 1 (or adjust to taste).
+
+To get the best artifacting results, press F1 for the emulator menu. Go to Display Settings. Select "Full NTSC filter" for the artifacting. Under NTSC filter settings, set Burst Mode at one of -1, -0.5, 0.5, or 1 (or adjust to taste).
 
 **lr-atari800**
+
 NTSC filters do not work in this emulator. Retroarch will default to "Old artifacts." No other choices will render correctly, but you can use the F1 menu to switch between four different versions of artifacts which will give different colors. As a rule of thumb, you'll find that most games are either mode 1 or GTIA. 
 
 ### Automatic handling of BASIC games and artifacting
