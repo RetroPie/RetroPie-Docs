@@ -291,6 +291,14 @@ There are three different versions of BASIC. Some BASIC software requires OS A a
 | ROM_BASIC_B | 04ea6a4e386601445ca5bfc8e37fb620 | 0xf0202fb3 | Atari BASIC from Atari 600XL/early Atari 800XL, also sold on cartridge | 
 | ROM_BASIC_C | 0bac0c6a50104045d902df4503a4c30b | 0x7d684184 | Atari BASIC from 800XL and all Atari XE/XEGS, also sold on cartridge |
 
+There are two possible BIOSes for the Atari 5200.
+
+| BIOS version | MD5 | CRC | Notes |
+| :---: | :---: | :---: | :---: |
+| ROM_5200 | 281f20ea4320404ec820fb7ec0693b38 | 0x4248d3e3 | BIOS from 4-port and early 2-port 5200 |
+| ROM_5200_A | ee7b85f5ca384dcb1f284946f3c12ac4 | 0xc2ba2613 | BIOS from late 2-port 5200 |
+
+
 In Atari800, you can select which of these to boot into using command line switches.
 
 ```shell
