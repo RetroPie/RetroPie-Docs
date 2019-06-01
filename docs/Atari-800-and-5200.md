@@ -70,6 +70,7 @@ You can set per-game core option settings by creating a game-options file throug
 The Atari800 core has the following option(s) that can be tweaked from the core options menu. The default setting is bolded. Settings with (Restart) means that core has to be closed for the new setting to be applied on next launch.
 
 | Option | Choices | Description |
+| :---: | :---: | :---: |
 | Atari System | (400/800 (OS B)/800XL (64K)/130XE (128K)/5200) | Choose what Atari System to emulate. |
 | Video Standard | (NTSC/PAL) |  |
 | Internal BASIC (hold OPTION on boot)  | (Off/On) | Whether to launch with BASIC enabled. Most games want this off. |
@@ -98,6 +99,7 @@ The Atari800 core supports the following device type(s) in the controls menu, bo
 _Joypad and analog device type table_
 
 | User 1 Remap descriptors | RetroPad Inputs | ATARI Joystick |
+| :---: | :---: | :---: |
 | B | |KEY RETURN | 
 | Y| | Virtual keyboard ON/OFF | 
 | Select | | Select key |
