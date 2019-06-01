@@ -43,11 +43,36 @@ Place these files in
 ```shell
 /home/pi/RetroPie/BIOS
 ```
-Once you have your ROMS and your BIOS files where they belong there is one more step of configuration needed where you tell the emulator where to look for your BIOS files. It varies based on the emulator.
+Once you have your ROMS and your BIOS files where they belong there is one more step of configuration needed where you tell the emulator where to look for your BIOS files. It varies based on the emulator, so look below to those sections for instructions.
+
+## Atari 5200 setup
+In both emulators, the atari.cfg file is shared between Atari computers and the 5200. In lr-atari800, the core options likewise apply to both by default. However, for either emulator, if you have a core options file in your atari5200 directory, it will let you have separate settings for just the 5200 system.
+
+Make sure you have a file called /opt/retropie/configs/atari5200/retroarch-core-options.cfg with this in it:
+
+atari800_artifacting = "enabled"
+atari800_cassboot = "disabled"
+atari800_internalbasic = "disabled"
+atari800_keyboard = "poll"
+atari800_ntscpal = "NTSC"
+atari800_opt1 = "disabled"
+atari800_opt2 = "disabled"
+atari800_resolution = "336x240"
+atari800_sioaccel = "enabled"
+atari800_system = "5200"
+
+See "Advanced Config" for solutions to problems booting 5200 games.
 
 ## Emulator: [lr-atari800](https://github.com/libretro/libretro-atari800)
 
-Make sure you have the appropriate system files in RetroArch's system directory. Then, load a content file. The Atari800 core should boot to the 'Atari Computer - Memo Pad' screen.
+### BIOS setup
+Make sure you have the appropriate system files in RetroArch's system directory:
+
+```shell
+~/RetroPie/BIOS
+```
+
+Then, load a content file. The Atari800 core should boot to the 'Atari Computer - Memo Pad' screen.
 
 The Atari800 core will generate a '.atari800.cfg' config file in RetroArch's home directory and will add the required BIOS files it detects in the system directory to the config file.
 
@@ -55,32 +80,30 @@ Now you can manually select what Atari system you want to emulate through the 'A
 
 Finally, you can load any content files compatible with the system chosen through RetroArch's Load Content menu.
 
-Alternatively, you can manually configure how the Atari800 will look for and handle BIOS files. While the Atari800 core is running, you can press F1 to get into the internal emulator menu. There - emulator configuration, system rom settings.
+Alternatively, you can manually configure how the Atari800 will look for and handle BIOS files. While the Atari800 core is running, you can press F1 to get into the internal emulator menu. From there, You can go to the 'Emulator Configuration' section and then the System ROM Settings section to configure BIOS options. (Press Enter to confirm menu selections and press Escape to go back a menu).
 
-From there, You can go to the 'Emulator Configuration' section and then the System ROM settings section to configure BIOS options. (Press Enter to confirm menu selections and press Escape to go back a menu)
-
-Then press Escape a few times to go back to the 'Emulator Configuration' section and select Save Configuration File or alternatively change Save configuration file on exit from no to yes
+Then press Escape a few times to go back to the 'Emulator Configuration' section and select Save Configuration File or alternatively change Save configuration file on exit from no to yes.
 
 Then you can exit the emulator by pressing F9 and then try the game again or press Shift+F5 to reboot the game.
 
-You can set per-game core option settings by creating a game-options file through RetroArch's Core Opitons menu.
+You can set per-game core option settings by creating a game-options file through RetroArch's Core Options menu.
 
 ### Options
 
-The Atari800 core has the following option(s) that can be tweaked from the core options menu. The default setting is bolded. Settings with (Restart) means that core has to be closed for the new setting to be applied on next launch.
+The Atari800 core has the following options that can be tweaked from the core options menu. The default setting is bolded. Settings with (Restart) means that core has to be closed for the new setting to be applied on next launch.
 
 | Option | Choices | Description |
 | :---: | :---: | :---: |
-| Atari System | (400/800 (OS B)/800XL (64K)/130XE (128K)/5200) | Choose what Atari System to emulate. |
-| Video Standard | (NTSC/PAL) |  |
-| Internal BASIC (hold OPTION on boot)  | (Off/On) | Whether to launch with BASIC enabled. Most games want this off. |
-| SIO Acceleration | (Off/On) | Speeds up emulation during file loading. You probably want this on but a few games will fail to load with it on. |
-| Boot from Cassette | (Off/On) | Causes a .CAS file to serve as the boot drive instead of the normal precedence (Cartridge first if present, then Disk) |
-| Hi-Res Artifacting | (Off/On) | Enables artificial color filters in high-res mode to mimic actual hardware. See Advanced Config for more | 
-| Autodetect A5200 CartType |  (Off/On) | There are many kinds of 5200 carts. This attempts to determine what sort a file is automatically. It often fails. See Advanced Config for more. |
-| Joy hack A5200 for Robotron | (Off/On) | Treats the second analog stick on a modern controller as joystick 2 |
-| Internal resolution (336x240/320x240/384x240/384x272/384x288/400x300) | Enables alternate resolutions. Note that most software actually runs in 320x192 and the rest is overscan. |
-| Retroarch Keyboard type | (poll/callback) | Default is poll for performance. |
+| Atari System | **(400/800 (OS B)**/800XL (64K)/130XE (128K)/5200) | Choose what Atari System to emulate. |
+| Video Standard | (**NTSC**/PAL) |  |
+| Internal BASIC (hold OPTION on boot)  | (**Off**/On) | Whether to launch with BASIC enabled. Most games want this off. |
+| SIO Acceleration | (**Off**/On) | Speeds up emulation during file loading. You probably want this on but a few games will fail to load with it on. |
+| Boot from Cassette | (**Off**/On) | Causes a .CAS file to serve as the boot drive instead of the normal precedence (Cartridge first if present, then Disk) |
+| Hi-Res Artifacting | (**Off**/On) | Enables artificial color filters in high-res mode to mimic actual hardware. See Advanced Config for more | 
+| Autodetect A5200 CartType |  (**Off**/On) | There are many kinds of 5200 carts. This attempts to determine what sort a file is automatically. It often fails. See Advanced Config for more. |
+| Joy hack A5200 for Robotron | (**Off**/On) | Treats the second analog stick on a modern controller as joystick 2 |
+| Internal resolution (**336x240**/320x240/384x240/384x272/384x288/400x300) | Enables alternate resolutions. Note that most software actually runs in 320x192 and the rest is overscan. |
+| Retroarch Keyboard type | (**poll**/callback) | Default is poll for performance. |
 
 ### Controllers
 **Device types**
@@ -123,17 +146,17 @@ See the section below for Atari800 keyboard controls, they are the same.
 
 * NTSC filters do not work.
 * "New artifacts" do not render properly.
-* Sliders for adjusting anything in th emenus do not work correctly. Adjust these values by editing the config file.
+* Sliders for adjusting anything in the menus do not work correctly. Adjust these values by editing the config file.
 * The SHIFT and CTRL keys do not work when typing, including when used from the virtual keyboard.
 * Analog stick implementation for several Atari 5200 games is broken (Gorf, Missile Command, etc)
 
-Note that any option settable in the RGUI will override the atari.cfg config file.
+Note that any option settable in the RGUI will override the atari.cfg config file. Numerous options are only settable via the emulator menu.
 
 ## Emulator: [Atari800](https://atari800.github.io/)
 
-**BIOS setup**
+### BIOS setup
 
-Navigate to either the Atari 800 or Atari 5200 system on emulationstation and choose a game. A screen will open up with a bunch of different cartridge options. If you are playing a 5200 game then choose a 5200 cartridge option (Option #5 seems to work). You will then get a warning telling you that it needs a real Atari/OS. (you need to legally own the 5200 hardware to have the BIOS) Then press F1 to open the menu and navigate down to "Emulator Configuration" and press enter. Then navigate down to System ROM settings and then press Enter (Quick hint: use the escape button to go back up a step in the GUI)
+Navigate to either the Atari 800 or Atari 5200 system on emulationstation and choose a game. Either a screen will open up with a bunch of different cartridge options, or the game will crash. If you are playing a 5200 game then choose a 5200 cartridge option (Option #5 seems to work). You will then get a warning telling you that it needs a real Atari OS. (You need to legally own the 5200 hardware to have the BIOS). Then press F1 to open the menu and navigate down to "Emulator Configuration" and press enter. Then navigate down to System ROM Settings and then press Enter (Quick hint: use the escape button to go back up a step in the GUI).
 
 The easiest option is to just select "Find ROM images in a directory" then navigate into the BIOS directory and press the space bar. If you have the right files and file names it should automatically place the BIOS files where they belong. 
 
@@ -157,11 +180,11 @@ Alternatively you can configure them manually:
 ```      
 Rev. C:  Select ATARIBAS.ROM in /home/pi/RetroPie/BIOS/ATARIBAS.ROM 
 ```
-Then press escape a few times to go back to the "Emulator Settings" and select Save Configuration File or alternatively change Save configuration file on exit from no to yes
+Then press escape a few times to go back to the "Emulator Settings" and select Save Configuration File or alternatively change Save configuration file on exit from no to yes.
 
 Then you can exit the emulator by pressing F9 and then try the game again or press shift+F5 to reboot the game.
 
-if you can't seem to make it work that way, once you have tried to start a game and use F9 to exit the emulator a file called .atari800.cfg will be created in the /home/pi directory 
+If you can't seem to make it work that way, once you have tried to start a game and use F9 to exit the emulator a file called .atari800.cfg will be created in the /home/pi directory.
 
 This is a verified working .atari800.cfg file     
 ```shell
@@ -319,18 +342,71 @@ Exit Emulator: F9
 
 * If it freezes up on you on the cartridge screen then try rebooting your pi and try again. If it keeps failing you either have the wrong BIOS, your ROM isn't compatible, or you chose the wrong cartridge option.
 
+### Typical file formats
+
+
+* **.atr**: an Atari disk image. Typically needs BASIC disabled. You load these from the gamelist, basically you boot the Atari with this in the drive.
+* **.dcm** and **.xfd** are two other disk formats that lr-atari800 can read.
+* **.cas** is an Atari cassette image. It's not listed on the Retropie page, but I'd be surprised if the emu couldn't load it. You can actually boot from a cassette.
+* **.rom** and **.bin** are typically cartridges. Note that you can have a disk in the drive AND a cart in the cartridge slot at the same time. Carts always take precedence over disks. Also note that these formats are not the same as a .car file because they usually don't need header information.
+* **.a52** and **.car** are typically Atari 5200 cartridges, but you can find .car Atari 8 bit carts as well. These usually have header information, because there are over a dozen cart formats with added banks of memory, etc. See "5200" above for how to convert a cart to a bin and back in order to put the right header info on the cart.
+* **.bin** and **.xex** are executables. You may also see .com. These are just binary executables, but not entire disk images. You can load these from the gamelist, or from the Disk Operating System, which on an Atari was a menu. Boot a disk with DOS on it (and there were like a dozen different DOSes you could use, often with incompatible disk formats) and you can use the menu to launch the executable. Game compilation disk images often have collections of these.
+* **.bas** is a BASIC file. You cannot run these directly from the gamelist. You have to load them from disk while in BASIC (use LOAD "D:FILENAME.EXT" and once it loads, type RUN.) Many games consist of a disk image with DOS (a directory listing of the disk contents will show DOS.SYS and DUP.SYS), a BASIC program, and a little executable named AUTORUN.SYS. This basically makes the disk bootable and runs the .BAS program directly. These end up being .atr images that require BASIC.
+
+[See here for an exuastive list of Atari formats.](http://www.atarimania.com/faq-atari-400-800-xl-xe-what-file-formats-for-entire-disks-tapes-cartridges-are-there_106.html)
+
+Note that the emulators let you fully manipulate disks! You can accidentally reformat your rom, and it will look the same from the outside. Many games require you to have a blank disk to save player state on. Don't mess up and save your player file over the game! Similarly, quite a lot of "player disks" and "scenario disks" and the like out there actually have people's saved games on them.
+
 ## Advanced Config
 
 ### BASIC and games
-See [this thread](https://retropie.org.uk/forum/topic/22392/lr-atari800-5200-artifacting-basic-and-other-guidance)
+The Atari 400 and 800 systems ran a Memo Pad when you turned the machine on without loading a program or having a cartridge inserted. The BASIC cart was packed into the box. All the XL and XE models came with BASIC built into the machine. This meant that when booting the system, you had to tell the machine "the BASIC cart isn't actually plugged in" whenever you wanted to load anything else. This was accomplished by holding down the Option key while booting. If you didn't load anything, you ended up instead in a self-test mode. Lastly, carts always disabled BASIC automatically.
 
-### Atari 5200 cart types
-See [this thread](https://retropie.org.uk/forum/topic/22392/lr-atari800-5200-artifacting-basic-and-other-guidance)
+    400/800 with BASIC: Blue screen with READY. This is BASIC.
+    400/800 with cart: the cart.
+    400/800 without BASIC: Memo Pad.
+    400/800 with .atr or .bin or .xex etc: the program
+    XL/XE with BASIC: Blue screen with READY.
+    XL/XE without BASIC: Self-test.
+    XL/XE with cart: the cart.
+    XL/XE with .atr or .bin or .xex: likely a crash
+    XL/XE with .atr or .bin or .xex and BASIC disabled: the program
+    5200 without cart: nothing but Atari logo.
+    5200 with cart: the game.
+
+Most games you will find for the Atari are machine language, and require that BASIC be disabled. See [this thread](https://retropie.org.uk/forum/topic/22392/lr-atari800-5200-artifacting-basic-and-other-guidance)
+
+### Booting Atari 5200 cartridges
+
+Often when you boot an Atari 5200 game, it gets stuck at the Atari logo, or just crashes, or it asks you to specify a cart type. There's a bunch of kinds, and they all have to do with how much memory was embedded in the cart, and how many chips that memory was using, and what order the banks were in, etc. There is supposed to be a header on the cart that tells the machine how to interpret it, but lots of cart dumps don't have the header.
+
+The emulator, though, has the facility to create carts, and this can add the missing header back in. Then you'll never see this menu again. Do this by going to the emulator menu (F1), Cartridge Management, Extract ROM from cartridge, save it, then Create Cartridge from ROM image, and select the file you just created. You will be asked which cart type to use. A handy list gathered by forum members is here: [https://retropie.org.uk/forum/topic/16556/cartridge-type-code-list-for-atari-5200-games](https://retropie.org.uk/forum/topic/16556/cartridge-type-code-list-for-atari-5200-games). Be sure to test after making your choice; if it doesn't work, just try another one. Go through the entire 5200 library (it's not that big!) and you'll never get the choose cart menu again. Be sure to have a backup of all your 5200 roms, of course.
+
+### Missile Command and Gorf on the 5200
+Don't expect Missile Command, Gorf, and other games that use analog absolute position to work correctly with your controller. Both emulators mimic this analog controls using a mouse, and this may not work well in either core.
 
 ### Artifacting
-See [this thread](https://retropie.org.uk/forum/topic/22392/lr-atari800-5200-artifacting-basic-and-other-guidance)
+High resolution graphics mode on Atari 8-bits was a one-color, two luminance mode. You could have one color for the background, and the same color at a different brightness for the pixels drawn. However, similar to the Apple II, the Atari supported what is called _artifacting_. This is a literal "artifact," a graphical glitch, caused by the way the chroma circuits in the original hardware worked.
+
+If artifacting is turned off, many games which ought to be in color will appear in black and white. Among them are games like Lode Runner, Drol, A.E., most pinball games, and many others.
+
+On the other hand, because of the way artifacting is implemented in the emulators, turning it on for all games will make text harder to read and many graphics not look crisp in games that no hi-res mode.
+
+See [this thread](https://retropie.org.uk/forum/topic/22392/lr-atari800-5200-artifacting-basic-and-other-guidance/4) for an exhaustive discussion of artifacting with many screenshot examples.
+
+**Atari 800**
+To get the best artifacting results, press F1 for the emulator menu. Go to Display Settings. Select "Full NTSC filter" for the artifacting. Under NTSC filter settings, set Burst Mode at one of -1, -.05, 0.5, or 1 (or adjust to taste).
+
+**lr-atari800**
+NTSC filters do not work in this emulator. Retroarch will default to "Old artifacts." No other choices will render correctly, but you can use the F1 menu to switch between four different versions of artifacts which will give different colors. As a rule of thumb, you'll find that most games are either mode 1 or GTIA. 
 
 ### Automatic handling of BASIC games and artifacting
+If you are using lr-atari800, there is a runcommand-onstart script that will
+
+* Automatically launch PAL games in PAL.
+* Automatically enable BASIC for games that require it.
+* Let you choose from the four NTSC artifacting modes at the runcommand menu by setting an emulator for a specific rom.
+
 See the script [in this thread.](https://retropie.org.uk/forum/topic/22392/lr-atari800-5200-artifacting-basic-and-other-guidance/9)
 
 ### Other BIOSes and BASIC versions
@@ -396,7 +472,6 @@ There are two possible BIOSes for the Atari 5200.
 | :---: | :---: | :---: | :---: |
 | ROM_5200 | 281f20ea4320404ec820fb7ec0693b38 | 0x4248d3e3 | BIOS from 4-port and early 2-port 5200 |
 | ROM_5200_A | ee7b85f5ca384dcb1f284946f3c12ac4 | 0xc2ba2613 | BIOS from late 2-port 5200 |
-
 
 In Atari800, you can select which of these to boot into using command line switches.
 
