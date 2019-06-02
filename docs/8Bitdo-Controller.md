@@ -52,7 +52,7 @@ With the FC30 Pro, this is done by holding the power button (left-hand side of t
 **9)** Here it has successfully detected the name of the controller, select OK here.
 ![Name](https://s22.postimg.cc/tju4gxdsx/6_Search_Results_Name.jpg)
 
-**10)** Choose the "DisplayYesNo" optin to complete the registration process.
+**10)** Choose the "DisplayYesNo" option to complete the registration process.
 ![Pairing](https://s22.postimg.cc/v05mz2gpt/7_Pairing.jpg)
 
 **11)** Registration of the 8bitdo controller is complete and your blue LED lights should now be solid on (the FC30 Pro will glow).
