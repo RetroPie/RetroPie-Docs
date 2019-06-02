@@ -97,7 +97,7 @@ The main RetroArch controller file will now be in:
 
 Here are some examples of the file that should be written. 
 
-**FC30**
+**FC30 Pro**
 
 [FC30 Pro RetroArch config file](http://pastebin.com/raw/YCj3NW0h) (Firmware 1.69 - 8BitdoFC30Pro.cfg) 
 
