@@ -116,7 +116,7 @@ https://www.youtube-nocookie.com/embed/e2We6AElqg8
 ### Firmware Versions for 8bitdo controllers (June 2017)
 ![8bitdo controllers firmware](https://s3.postimg.cc/j47k633fn/8bitdo-firmware.png)  
 
-You can download new firmware [here.](http://support.8bitdo.com)
+You can download new firmware [here](http://support.8bitdo.com) and [here](https://github.com/hughsie/8bitdo-firmware/).
 
 ### Troubleshooting
 Please confirm your firmware version before raising a support ticket
