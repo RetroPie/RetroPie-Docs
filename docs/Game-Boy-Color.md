@@ -27,16 +27,18 @@ Place your Game Boy Color ROMs in
 ```
 
 ## BIOS
-lr-gambatte can load external BIOS for Game Boy Color (**gbc_bios.bin**).
-
+lr-gambatte can load external BIOS for Game Boy Color (**gbc_bios.bin**).   
 lr-mgba can load external BIOS for Game Boy Color (**gbc_bios.bin**) and Super Game Boy (**sgb_bios.bin**).
 
-Place these BIOS in
+Place the BIOS files in
 ```
 /home/pi/RetroPie/BIOS
 ```
+| BIOS |  MD5 Checksum |
+| :---: | :---: |
+| **gbc_bios.bin** | `dbfce9db9deaa2567f6a84fde55f9680` |
+| **sgb_bios.bin** | `d574d4f9c12f305074798f54c091a8b4` |
 
-The correct MD5 for **gbc_bios.bin** is `dbfce9db9deaa2567f6a84fde55f9680` and for **sgb_bios.bin** is `d574d4f9c12f305074798f54c091a8b4`
 
 ## Controls
 
