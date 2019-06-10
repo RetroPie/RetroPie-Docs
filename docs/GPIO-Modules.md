@@ -23,6 +23,11 @@ The easiest way to install the drivers is via RetroPie-Setup script by selecting
 
 Alternatively, .deb-packages for the drivers and kernel headers can be directly downloaded [here](http://www.niksula.hut.fi/~mhiienka/Rpi/).
 
+Upstream project source can be obtained directly from:
+
+* https://github.com/marqs85/gamecon_gpio_rpi
+* https://github.com/marqs85/db9_gpio_rpi
+
 ## Configuration
 
 The drivers are loaded/unloaded with `modprobe`. More information and connection diagrams are found in the driver sub-pages and in provided READMEs.
@@ -154,6 +159,9 @@ and 3.3V (P1-01) if you use it with PSX/PS2 pad.
 * A: These pads use an asynchronous communication prototol, and the bitbanging done by the driver assumes a fixed CPU frequency within certain limits. Power-saving features may break the operation, and should be disabled when using N64/GC pads. You can check whether frequency scaling is active by looking at /sys/devices/system/cpu/cpu0/cpufreq/scaling_* -nodes. It can be disabled by selecting "performance"-governor - see [this](https://wiki.debian.org/HowTo/CpuFrequencyScaling) page for more info.
 
 ## Version history
+### 1.4 (30.05.2019)
+* Fixed build on recent kernels
+
 ### 1.3 (27.8.2017)
 * Fixed build on recent kernels
 
@@ -293,6 +301,9 @@ Related [thread](http://www.raspberrypi.org/phpBB3/viewtopic.php?f=78&t=15787) i
 
 
 ## Version history
+### 1.2 (30.05.2019)
+* Fixed build on recent kernels
+
 ### 1.1 (27.8.2017)
 * Fixed build on recent kernels
 
