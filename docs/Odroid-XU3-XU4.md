@@ -5,12 +5,10 @@ This is a guide on how to build RetroPie on the Odroid XU3/XU4. This is assuming
 
 ### The XU4 is fully software compatible with XU3!
 
-https://odroid.in/?directory=.%2Fubuntu_18.04lts%2F
+https://odroid.in/?directory=.%2Fubuntu_18.04lts%2F   
+Direct link to the image - [Here](https://odroid.in/ubuntu_18.04lts/XU3_XU4_MC1_HC1_HC2/ubuntu-18.04.1-4.14-minimal-odroid-xu4-20181203.img.xz).
 
-DirectLink: [Here](https://odroid.in/ubuntu_18.04lts/ubuntu-18.04.1-4.14-minimal-odroid-xu4-20181203.img.xz)
-
-Extract the .xz file with a program like [7zip](http://www.7-zip.org/download.html)
-
+Extract the .xz file with a program like [7zip](http://www.7-zip.org/download.html).    
 Write the .img file to your SD card or EMMC module with something like [Win32DiskImager](http://sourceforge.net/projects/win32diskimager/)
 
 ## Install RetroPie:
