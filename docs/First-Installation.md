@@ -167,15 +167,15 @@ There are three main methods of transferring roms:
  * plug it into the pi and wait for it to finish blinking
  * pull the USB out and plug it into a computer
  * add the roms to their respective folders (in the `retropie/roms` folder)
- * plug it back into the raspberry pi
+ * plug it back into the Raspberry Pi
  * wait for it to finish blinking
  * refresh emulationstation by choosing restart emulationstation from the start menu
 
-see this video for reference:
+See this video for reference:
 
 <a href="https://www.youtube.com/watch?v=OYMoxvbkYD4
-" target="_blank"><img src="https://i.ytimg.com/vi_webp/OYMoxvbkYD4/mqdefault.webp" 
-alt="Configuration Video" width="300" height="190" border="10" /></a>
+" target="_blank"><img src="https://img.youtube.com/vi/OYMoxvbkYD4/hqdefault.jpg" 
+alt="Transferring ROMs using an USB drive" width="640" height="400" border="10" /></a>
 
 ### SFTP
 
