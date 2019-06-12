@@ -45,7 +45,7 @@ LC_ALL=en_US.UTF-8
 
 If any of the above configuration lines are unset (particularly LANG, LANGUAGE, and LC_ALL), you should set them before installing RetroPie. The easiest way to set each item is to use the `update-locale` command, such as `$ sudo update-locale LC_ALL="en_US.UTF-8"`.
 
-Users can also set the local through the `raspi-config` tool.
+Users can also set the locale through the `raspi-config` tool.
 
 A reboot is required before these changes will be reflected by the `locale` command.
 
