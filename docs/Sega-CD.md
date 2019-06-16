@@ -13,7 +13,7 @@ The Sega CD was an add-on to the Sega Genesis. It was released in 1991.
 ## Emulators: [lr-genesis-plus-gx](https://github.com/libretro/Genesis-Plus-GX), [lr-picodrive](https://github.com/libretro/picodrive)
 **lr-genesis-plus-gx** is recommended for the Pi 2/3 as it has better accuracy. 
 
-**lr-picodrive** is required for multi-disc games due to lr-genesis-plus-gx's lack of support for disc swapping.
+**lr-picodrive** is required for multi-disc games due to lr-genesis-plus-gx's lack of support for disc swapping and for 32x version disc versions.
 
 ## ROMS
 Accepted File Extensions: **.bin .chd .cue .iso**  
