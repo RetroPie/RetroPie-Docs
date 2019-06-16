@@ -53,9 +53,11 @@ Sherlock Holmes - Consulting
 Detective Volume II (2 discs)
 
 Prize Fighter (2 discs)
+     
      ** can be played as individual discs in chd file format with lr-genesis-plus-gx if desired
 
 Slam City with Scottie Pippen (4 discs) 
+     
      ** NON 32x version can be played as individual discs in chd file format with lr-genesis-plus-gx if desired
 
 Supreme Warrior 32x version Only (2 discs)
