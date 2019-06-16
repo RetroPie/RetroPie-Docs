@@ -32,7 +32,7 @@ This format will save space and allow you to keep your Mega CD/Sega CD ROM folde
 
 The following archive contains a MAME 0.205 version of CHDMAN and Windows batch files that can be used to quickly convert your Mega CD/Sega CD games to CHD (V5): [Download](https://drive.google.com/file/d/0B-ElaPpvBHs5aUd0QUM3c05kY2c/view?usp=sharing)
 
-**Keep in mind that lr-picodrive does not support CHD and only lr-picodrive can play multi-disc games.**
+**Keep in mind that lr-picodrive does not support CHD and only lr-picodrive can play multi-disc and 32x games.**
 
 This is a list of all the games released for the SEGA CD add-on for the Genesis that had two or more discs. 
 
@@ -48,7 +48,11 @@ Sherlock Holmes - Consulting
 
 Detective Volume II (2 discs)
 
+Prize Fighter (2 discs)
+
 Slam City with Scottie Pippen (4 discs)
+
+Supreme Warrior 32x version Only (2 discs)
 
 ## BIOS
 
