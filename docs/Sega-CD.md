@@ -34,7 +34,7 @@ The following archive contains a MAME 0.205 version of CHDMAN and Windows batch 
 
 **Keep in mind that lr-picodrive does not support CHD and only lr-picodrive can play multi-disc and 32x games.**
 
-This is a list of all the games released for the SEGA CD add-on for the Genesis/Mega Drive that had two or more discs or are 32x discs and must e played with lr-picodrive. 
+This is a list of all the games released for the SEGA CD add-on for the Genesis/Mega Drive that had two or more discs or are 32x discs and must be played with lr-picodrive. 
 
 Corpse Killer 32x version only (1 disc)
 
