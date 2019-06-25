@@ -77,6 +77,18 @@ Properties of the system carousel:
 * `horizontal_wheel` Logos/logotext scrolls left/right but with curvature.
 * `vertical_wheel` Logos/logotext scrolls up/down but with curvature.
 
+`<logoRotation></logoRotation>` **Coming soon**
+`<logoRotationOrigin></logoRotationOrigin>` **Coming soon**
+
+`<logoCount></logoCount>` Specifies the number of systems/logos/logotexts that will appear in the carousel.
+`<maxLogoCount></maxLogoCount>` **Same thing?**
+
+`<logoScale></logoScale>` Specifies how much bigger the currently selected logo/logotext will be. For example, a value of 2 will make the currently selected logo/logotext 2 times bigger than the other logos in the carousel.
+
+`<size></size>` Specifies how big the carousel 'bar' or 'wheel' will be. This has no bearing on how big the logos/logotext will be. Basically only affects the size of the background color of the carousel and how the carousel is positioned.
+
+`<color></color>` Specifies the background color of the carousel using hexadecimal notation. A fourth octet can be added to specify opacity of the background. For example, FFFFFF would make the background white. So would FFFFFFFF. However, FFFFFF00 would make the background white but completely transparent.
+
 ## Adding Video Support
 
 Coming Soon.
