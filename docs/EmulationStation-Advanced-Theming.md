@@ -65,8 +65,17 @@ Below is an example implementation of a default theme for [carbon](https://githu
 ```
 
 ## System Carousel
+Properties of the system carousel:
 
-Coming Soon.
+`<pos>x y</pos>` Specifies where the carousel will be placed on the screen. X is the horizontal position. Y is the vertical position. Values for X and Y can range from 0 to 1.
+
+`<origin></origin>` Specifies which part of the carousel is used by the <pos> tag. <origin>0 0</origin> is the default and will position the carousel using the top, left corner. <origin>0.5 0.5</origin> will use the center of the carousel for positioning. <origin>1 1</origin> will the bottom, right corner.
+
+`<type></type>` Specifies the type of carousel. The types are:
+* `horizontal` (default) Logos/logotext scrolls left/right.
+* `vertical` Logos/logotext scrolls up/down.
+* `horizontal_wheel` Logos/logotext scrolls left/right but with curvature.
+* `vertical_wheel` Logos/logotext scrolls up/down but with curvature.
 
 ## Adding Video Support
 
