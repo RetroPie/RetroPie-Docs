@@ -78,9 +78,11 @@ Properties of the system carousel:
 * `vertical_wheel` Logos/logotext scrolls up/down but with curvature.
 
 `<logoRotation></logoRotation>` **Coming soon**
+
 `<logoRotationOrigin></logoRotationOrigin>` **Coming soon**
 
 `<logoCount></logoCount>` Specifies the number of systems/logos/logotexts that will appear in the carousel.
+
 `<maxLogoCount></maxLogoCount>` **Same thing?**
 
 `<logoScale></logoScale>` Specifies how much bigger the currently selected logo/logotext will be. For example, a value of 2 will make the currently selected logo/logotext 2 times bigger than the other logos in the carousel.
