@@ -7,24 +7,25 @@ _The Sega Dreamcast is a 6th generation home video game console released by Sega
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
 | [Reicast](https://github.com/reicast/reicast-emulator) | dreamcast  | .cdi .chd .gdi | dc_boot.bin, dc_flash.bin | /opt/retropie/configs/dreamcast/mappings |
-| [lr-reicast](https://github.com/libretro/reicast-emulator) | dreamcast  | .cdi .chd .gdi | dc_boot.bin, dc_flash.bin | /opt/retropie/configs/dreamcast/retroarch.cfg |
+| [lr-flycast](https://github.com/libretro/flycast.git) | dreamcast  | .cdi .chd .gdi .zip | dc_boot.bin, dc_flash.bin | /opt/retropie/configs/dreamcast/retroarch.cfg |
 
-## Emulators: [Reicast](https://github.com/reicast/reicast-emulator), [lr-reicast](https://github.com/libretro/reicast-emulator)
+## Emulators: [Reicast](https://github.com/reicast/reicast-emulator), [lr-flycast](https://github.com/libretro/flycast.git)
 
 Reicast can be very laggy and buggy, but some games work great (see compatibility list below). Pi 2 or later is required.  
 
 Audio is choppy and not great, and degrades the longer the emulator is in use.  Restarting the emulator (and ultimately the Pi) may become a good idea after a couple hours of gameplay. There is a memory leak somewhere in the Reicast code. Low screen resolution are recommended to get best performance. Performance greatly suffers if HD resolutions are used.   
 
-lr-reicast is considered experimental at the moment and can be found in the Manage Experimental Packages menu in the RetroPie Setup Script.
+lr-flycast is considered experimental at the moment and can be found in the Manage Experimental Packages menu in the RetroPie Setup Script.
 
 ## ROMS
 
-Accepted File Extensions: **.cdi .chd .gdi** 
+Accepted File Extensions: **.cdi .chd .gdi** for Dreamcast ROMs, **.zip** for Naomi/Atomiswave games.
 
-Place your Dreamcast ROMs in
+Place your ROM files in
 ```
 /home/pi/RetroPie/roms/dreamcast
 ```
+
 
 [**DREAMCAST COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1AD91IcudqHP7dDmEXLO25Pzb85uUgAy4chU2QxlZBQk/edit?usp=sharing) feel free to contribute to the list.
 
@@ -38,7 +39,7 @@ The following archive contains a MAME 0.205 version of CHDMAN and Windows batch 
 
 ## BIOS
 
-The BIOS files needed are: **dc_boot.bin, dc_flash.bin**. The boot file is often found named something else, such as dc_**bios**.bin. It must be renamed to dc_**boot**.bin when placed in the BIOS folder. lr-reicast has support for the Sega Naomi and Atomiswave arcade systems but you will also need the corresponding BIOS from the MAME romset.
+The BIOS files needed are: **dc_boot.bin, dc_flash.bin**. The boot file is often found named something else, such as dc_**bios**.bin. It must be renamed to dc_**boot**.bin when placed in the BIOS folder. lr-flycast has support for the Sega Naomi and Atomiswave arcade systems but you will also need the corresponding BIOS from the MAME romset.
 
 Place your BIOS files in
 ```
@@ -61,6 +62,7 @@ BIOS files
 | awbios.zip | World | 0ec5ae5b5a5c4959fa8b43fcf8687f7c | ab628024 | Atomiswave BIOS |
 
 **Note:** If you are having trouble with having to set the date/time every time you load Reicast, [see this forum post](https://retropie.org.uk/forum/post/53941) for a guide on how to replace dc_flash.bin. The MD5 of the dc_flash.bin generated from that guide should be `2f818338f47701c606ade664a3e16a8a`.
+
 **Note:** As of February 2019, the date/time prompt should appear only the 1st time Reicast is started.
 
 ## Video Setup Guide  
