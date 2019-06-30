@@ -100,17 +100,28 @@ Place your Amiga ROMs and configuration files in
 /home/pi/RetroPie/roms/amiga
 ```
 
+| extension | file description | requirements |
+| :---: | :---: | :---: |
+| .uae | text config file | needs to be created per ROM |
+| .adf | disk image | loads directly |
+| .dms | disk image | loads directly |
+| .fdi | disk image | loads directly |
+| .ipf | disk image | requires capsimg.so in retroarch directory |
+| .hdf | hard disk image | requires WHDLoad set up |
+| .hdz | hard disk image | requires WHDLoad set up |
+| .m3u | text config file | needs to be created for multidisk games |
+
 #### Disk images, WHDLoad and M3U support
 You can pass a disk or hdd image (WHDLoad) as a rom.
 
 Supported format are :
-- `.adf`, `.dms`, `.fdi`, `.ipf`, `.zip` files for disk images.
-- `.hdf`, `.hdz` for hdd images.
-- `.m3u` for multiple disk images.
+- `.adf`, `.dms`, `.fdi`, `.ipf`, `.zip` files for disk images. Note that `.ipf` files require additional files, see below.
+- `.hdf`, `.hdz` for hdd images. Note that hdd images require WHDLoad to be set up, see below.
+- `.m3u` for multiple disk images. Note that these have special requirements, see below.
 
 Note that `.lha` files are not supported.
 
-When passing a disk image, a hdd image or a m3u file as parameter the core will generate a temporary uae configuration file in RetroArch saves directory and use it to automatically launch the game.
+When passing a disk image, a hdd image or a m3u file as parameter the core will generate a temporary `.uae` configuration file in RetroArch saves directory and use it to automatically launch the game.
 
 #### Configuration
 To generate the temporary `.uae` configuration file the core will use the core options configured in RetroArch.
@@ -130,16 +141,16 @@ As the configuration file is only generated when launching a game you must resta
 #### IPF Support
 Most full-price commercial Amiga games had some form of custom disk format and/or copy protection on them. For this reason, most commercial Amiga games cannot be stored in ADF files unaltered, but there is an alternative called Interchangeable Preservation Format (IPF) which was specifically designed for this purpose.
 
-IPF support is done through the CAPSIMG library. To enable it you have to put a dynamic library called capsimg.dll (Windows) or capsimg.so (Linux, macOS) in your retroarch root directory (where retroarch executable is located).
+IPF support is done through the CAPSIMG library. To enable it you have to put a dynamic library called capsimg.dll (Windows) or capsimg.so (Linux, macOS) in your retroarch root directory (where the retroarch executable is located; in a default install, this is `/opt/retropie/emulators/retroarch/bin/`).
 
 Compatible CAPSIMG libraries for Windows, macOS and Linux can be found at https://fs-uae.net/download#plugins
 
-Please be aware that there are 32-bits and 64-bits versions of the library. Choose the one corresponding to your RetroArch executable.
+Please be aware that there are 32-bit and 64-bit versions of the library. Choose the one corresponding to your RetroArch executable.
 
 #### M3U Support
-When you have a multi disk game, you can use a `.m3u` file to specify each disk of the game and change them from the RetroArch Disk control interface.
+When you have a multi disk game, you can use an `.m3u` file to specify each disk of the game and change them from the RetroArch Disk control interface.
 
-A M3U file is a simple text file with one disk per line (see https://en.wikipedia.org/wiki/M3U).
+An M3U file is a simple text file with one disk per line (see https://en.wikipedia.org/wiki/M3U).
 
 Example :
 
@@ -158,13 +169,13 @@ When a game asks for it, you can change the current disk in the RetroArch 'Disk 
 Note : zip support is provided by RetroArch and is done before passing the game to the core. So, when using a m3u file, the specified disk image must be uncompressed (`.adf`, `.dms`, `.fdi`, `.ipf` file formats).
 
 #### WHDLoad
-To use WHDLoad games you'll need to have a prepared WHDLoad image named 'WHDLoad.hdf' in RetroArch system directory.
+To use WHDLoad games you'll need to have a prepared WHDLoad image named 'WHDLoad.hdf' in RetroArch system directory (`~/RetroPie/BIOS`).
 
 In this WHDLoad image you must have the three kickstart roms (kick34005.A500, kick40063.A600, kick40068.A1200) in 'Dev/Kickstart' directory.
 
 To do this, you can consult the excellent tutorial made by Allan Lindqvist (http://lindqvist.synology.me/wordpress/?page_id=182) just jump to the 'Create WHDLoad.hdf' section.
 
-The core only support HDD image files format (hdf and hdz) and slave file must be named 'game.Slave'. 
+The core only supports HDD image files format (hdf and hdz) and slave file must be named 'game.Slave'. 
 
 #### Create a hdf file for a game 
 If you have a WHDLoad game in a zip or a directory, you will have to create an image file.
@@ -201,7 +212,7 @@ If no special string is found the core will use the model configured in core opt
 #### .uae: Using a configuration file for your games
 You can pass an '.uae' configuration file as a rom and the core will load the settings and start emulation without first showing the gui. 
 
-Look at the sample configuration file "RickDangerous.uae" for help. You can use that sample as a starting point for making your own configuration files for each of your games.
+Look at the sample configuration file "RickDangerous.uae" for help  (see below). You can use that sample as a starting point for making your own configuration files for each of your games.
 
 You can find the whole documentation in [configuration.txt](https://github.com/libretro/libretro-uae/blob/master/configuration.txt).
 
@@ -210,6 +221,8 @@ lr-puae requires the user to create .uae files manually, pointing to the ADF and
 kickstart_rom_file=/home/pi/RetroPie/BIOS/[insert kickstart ROM filename here]
 floppy0=/home/pi/RetroPie/roms/amiga/[insert ADF filename here]
 ```
+
+Files may be `.hdf` or `.adf`. Note that `.m3u` files are not supported.
 
 Below is a sample to use as a template for creating your own .uae file:
 ```ini
@@ -271,7 +284,7 @@ With this settings all the standards resolutions of the amiga are available :
 
 When using a high resolution mode, rendering will be doubled horizontally and vertically for low res games. It's compatible with High res games and the Workbench but scaling shaders (ex: scalefx) will look ugly.
 
-When using a low resolution, scaling shaders (scalefx) looks greats but high res games and and the workbench are badly rendered (but still usable).
+When using a low resolution, scaling shaders (scalefx) look great but high res games and and the workbench are badly rendered (but still usable).
 
 ### Known Bugs
 - When load savestate, exiting GUI without reset. You have to re-enter GUI and do the reset.
