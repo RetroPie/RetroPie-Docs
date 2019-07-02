@@ -93,30 +93,7 @@ For more information on custom RetroArch controls see: [RetroArch Configuration]
 | X  |  |
 | Y  | Emulator GUI|
 
-### ROMS
-
-Place your Amiga ROMs and configuration files in 
-```
-/home/pi/RetroPie/roms/amiga
-```
-
-| extension | file description | requirements |
-| :---: | :---: | :---: |
-| .uae | text config file pointing to .hdf, .adf, or .ipf | needs to be created per ROM |
-| .adf | disk image | loads directly |
-| .adz | zipped disk image | loads directly |
-| .dms | disk image, seems rare | loads directly |
-| .fdi | disk image, seems rare | loads directly |
-| .ipf | disk image | requires capsimg.so in retroarch directory |
-| .hdf | hard disk image | requires WHDLoad set up |
-| .hdz | zipped hard disk image | requires WHDLoad set up |
-| .m3u | text config file | needs to be created for multidisk games |
-| .zip | must contain an .adf, .hdf, or .ipf | unzip is handled by Retroarch |
-| .lha | zipped hard disk image in an *Amiga-specific* compression format, not handled by lr-puae | unzip is handled within the emulator |
-
-One thing that Amiga enthusiasts seem to point out repeatedly is that although you may be able to expand an `.lha` file on Windows, you often shouldn't; the Amiga operating system and Windows don't always agree on paths and special characters, with the result that you can corrupt the file when unzipping it.
-
-#### Retroarch configs
+### Retroarch configs
 
 | Setting | Choices (default in bold) | Notes |
 | :---: |  :---: | :---: |
@@ -135,8 +112,32 @@ One thing that Amiga enthusiasts seem to point out repeatedly is that although y
 | Floppy speed | **100** / 200 / 300 / 400 / 500 / 600 / 700 / 800 |  Valid values are 1x to 8x the speed of a  standard Amiga floppy drive.  Values other than 100 may affect compatibility with Amiga software, especially the floppy-based copy-protection systems included with some games. |
 | Immediate blit | true / **false** |  If enabled then blits performed by the Amiga chipset emulation will be reported as finishing immediately. This may improve performance at the price of compatibility. |
 | NTSC chipset | true / **false** | Set this to match the video system |
+| Correct aspect ratio | true / false | 
 | Vertical centering | none / **simple** / smart | Used for centering the screen vertically within the emulator display (which is then positioned by the Retroarch display) |
 | Horizontal centering | none / **simple** / smart | See above. |
+
+### ROMS
+
+Place your Amiga ROMs and configuration files in 
+```
+/home/pi/RetroPie/roms/amiga
+```
+
+| extension | file description | requirements |
+| :---: | :---: | :---: |
+| .uae | text config file pointing to .hdf, .adf, or .ipf | needs to be created per ROM |
+| .adf | disk image | loads directly |
+| .adz | zipped disk image, seems rare | not supported |
+| .dms | disk image, seems rare | loads directly |
+| .fdi | disk image, seems rare | loads directly |
+| .ipf | disk image | requires capsimg.so in retroarch directory |
+| .hdf | hard disk image | requires WHDLoad set up |
+| .hdz | zipped hard disk image | requires WHDLoad set up |
+| .m3u | text config file | needs to be created for multidisk games |
+| .zip | must contain an .adf, .hdf, or .ipf | unzip is handled by Retroarch |
+| .lha | zipped hard disk image in an *Amiga-specific* compression format, not handled by lr-puae | unzip is handled within the emulator |
+
+One thing that Amiga enthusiasts seem to point out repeatedly is that although you may be able to expand an `.lha` file on Windows, you often shouldn't; the Amiga operating system and Windows don't always agree on paths and special characters, with the result that you can corrupt the file when unzipping it.
 
 #### Disk images, WHDLoad and M3U support
 You can pass a disk or hdd image (WHDLoad) as a rom.
