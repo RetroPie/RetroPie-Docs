@@ -102,14 +102,19 @@ Place your Amiga ROMs and configuration files in
 
 | extension | file description | requirements |
 | :---: | :---: | :---: |
-| .uae | text config file | needs to be created per ROM |
+| .uae | text config file pointing to .hdf, .adf, or .ipf | needs to be created per ROM |
 | .adf | disk image | loads directly |
-| .dms | disk image | loads directly |
-| .fdi | disk image | loads directly |
+| .adz | zipped disk image | loads directly |
+| .dms | disk image, seems rare | loads directly |
+| .fdi | disk image, seems rare | loads directly |
 | .ipf | disk image | requires capsimg.so in retroarch directory |
 | .hdf | hard disk image | requires WHDLoad set up |
-| .hdz | hard disk image | requires WHDLoad set up |
+| .hdz | zipped hard disk image | requires WHDLoad set up |
 | .m3u | text config file | needs to be created for multidisk games |
+| .zip | must contain an .adf, .hdf, or .ipf | unzip is handled by Retroarch |
+| .lha | zipped hard disk image in an *Amiga-specific* compression format, not handled by lr-puae | unzip is handled within the emulator |
+
+One thing that Amiga enthusiasts seem to point out repeatedly is that although you may be able to expand an `.lha` file on Windows, you often shouldn't; the Amiga operating system and Windows don't always agree on paths and special characters, with the result that you can corrupt the file when unzipping it.
 
 #### Disk images, WHDLoad and M3U support
 You can pass a disk or hdd image (WHDLoad) as a rom.
@@ -119,9 +124,9 @@ Supported format are :
 - `.hdf`, `.hdz` for hdd images. Note that hdd images require WHDLoad to be set up, see below.
 - `.m3u` for multiple disk images. Note that these have special requirements, see below.
 
-Note that `.lha` files are not supported.
+_Note that `.lha` files are not supported._
 
-When passing a disk image, a hdd image or a m3u file as parameter the core will generate a temporary `.uae` configuration file in RetroArch saves directory and use it to automatically launch the game.
+When passing a disk image, a hdd image or a m3u file as parameter the core will generate a temporary `puae_libretro.uae` configuration file in RetroArch saves directory and use it to automatically launch the game.
 
 #### Configuration
 To generate the temporary `.uae` configuration file the core will use the core options configured in RetroArch.
@@ -147,6 +152,8 @@ Compatible CAPSIMG libraries for Windows, macOS and Linux can be found at https:
 
 Please be aware that there are 32-bit and 64-bit versions of the library. Choose the one corresponding to your RetroArch executable.
 
+_As of July 1 2019, .ipf support may not work on Raspberry Pi, though it is apparently working on Windows_.
+
 #### M3U Support
 When you have a multi disk game, you can use an `.m3u` file to specify each disk of the game and change them from the RetroArch Disk control interface.
 
@@ -171,11 +178,11 @@ Note : zip support is provided by RetroArch and is done before passing the game 
 #### WHDLoad
 To use WHDLoad games you'll need to have a prepared WHDLoad image named 'WHDLoad.hdf' in RetroArch system directory (`~/RetroPie/BIOS`).
 
-In this WHDLoad image you must have the three kickstart roms (kick34005.A500, kick40063.A600, kick40068.A1200) in 'Dev/Kickstart' directory.
+In this WHDLoad image you must have the three kickstart roms (kick34005.A500, kick40063.A600, kick40068.A1200) in the 'Dev/Kickstart' directory.
 
 To do this, you can consult the excellent tutorial made by Allan Lindqvist (http://lindqvist.synology.me/wordpress/?page_id=182) just jump to the 'Create WHDLoad.hdf' section.
 
-The core only supports HDD image files format (hdf and hdz) and slave file must be named 'game.Slave'. 
+The core only supports HDD image files format (hdf and hdz) and slave file must be named 'game.slave'. 
 
 #### Create a hdf file for a game 
 If you have a WHDLoad game in a zip or a directory, you will have to create an image file.
@@ -185,7 +192,7 @@ To do this you can use ADFOpus (http://adfopus.sourceforge.net/) or amitools (ht
 Example, to create a hdf file from a zipped WHDLoad game :
 - Extract files from the zip to a directory.
 - Go to the directory where files were extracted.
-- Rename the main slave file (ending with '.Slave') to 'game.Slave' (certains games have many slave files, guess wich is the right one).
+- Rename the main slave file (ending with '.Slave') to 'game.Slave' (certain games have many slave files, guess which is the right one).
 - Pack the directory in a hdf file :
 	- Using ADFOpus (see [Allan Lindqvist's tutorial](http://lindqvist.synology.me/wordpress/?page_id=182)).
 	- Using amitools.
@@ -197,13 +204,54 @@ xdftool -f <NAME_OF_HDF> pack <GAME_DIRECTORY> size=<SIZE_OF_HDF>
 
 Note the size of the HDF specified by SIZE_OF_HDF must be greater than size of the directory to store the additional filesystem informations (I use a 1.25 ratio).
 
+Many files out there have a directory structure that looks like this:
+
+```
+Agony (1992)(Psygnosis).hdf
+  Agony.info
+  Agony (folder)
+    Agony.info
+    Disk.1
+    Disk.2
+    Disk.3
+    Agony.slave
+    Manual
+    Manual.info
+    ReadMe
+    ReadMe.info
+    scores.sav
+```
+
+This will not work in lr-puae. You can use ADF Opus to create an HDF file that looks like this:
+
+```
+Agony (1992)(Psygnosis).hdf
+    Agony.info
+    Disk.1
+    Disk.2
+    Disk.3
+    game.slave
+    Manual
+    Manual.info
+    ReadMe
+    ReadMe.info
+    scores.sav
+```
+
+The two big changes:
+1. there isn't a folder at the top level. _If your .slave file isn't at the top level of the .hdf,_ you will get a DOS window popup stating "DOS Error #205 (object not found) on reading '.slave'".
+2. Instead of <gamename>.slave, that file must be named `game.slave`. It doesn't matter (despite what you may see on the net) whether it's `.Slave` or `.slave`, based on my testing.
+
 #### Game that needs a specific Amiga model (AGA games for instance)
 If a game needs a specific Amiga model (AGA games for instance), you can specify which amiga model to use.
 
 To do this just add these strings to your adf, hdf or m3u filename :
-- "(A500)" or "(OCS)" to use an Amiga 500 model.
-- "(A600)" or "(ECS)" to use an Amiga 600 model.
-- "(A1200)" or "(AGA)" to use an Amiga 1200 model.
+
+* "(A500)" or "(OCS)" to use an Amiga 500 model.
+
+* "(A600)" or "(ECS)" to use an Amiga 600 model.
+
+* "(A1200)" or "(AGA)" to use an Amiga 1200 model.
 
 Example : When launching "Alien Breed 2 (AGA).hdf" file the core will use an Amiga 1200 model.
 
@@ -216,7 +264,7 @@ Look at the sample configuration file "RickDangerous.uae" for help  (see below).
 
 You can find the whole documentation in [configuration.txt](https://github.com/libretro/libretro-uae/blob/master/configuration.txt).
 
-lr-puae requires the user to create .uae files manually, pointing to the ADF and Kickstart ROM like this:
+lr-puae auto-generates a .uae file called `/roms/amiga/puae_libretro.uae` based on your Retroarch settings, but you can create them manually, pointing to the ADF and Kickstart ROM like this:
 ```shell
 kickstart_rom_file=/home/pi/RetroPie/BIOS/[insert kickstart ROM filename here]
 floppy0=/home/pi/RetroPie/roms/amiga/[insert ADF filename here]
@@ -250,6 +298,7 @@ gfx_center_horizontal=smart
 gfx_color_mode=16
 floppy0=/home/pi/RetroPie/roms/amiga/Rick Dangerous.adf
 ```
+
 ### Resolution and rendering
 
 A said in P-UAE configuration.txt:
@@ -273,14 +322,14 @@ Three parameters control the output resolution of the core :
 |Crop overscan|false, true|false|
 
 With this settings all the standards resolutions of the amiga are available :
-- **360x284**: PAL Low resolution with overscan
-- **320x256**: PAL Low resolution cropped/clipped (without the "borders")
-- **360x240**: NTSC Low resolution with overscan
-- **320×200**: NTSC Low resolution cropped/clipped (without the "borders")
-- **720x568**: PAL High resolution with overscan
-- **640×512**: PAL High resolution cropped/clipped (without the "borders")
-- **720x480**: NTSC High resolution with overscan
-- **640×400**: NTSC High resolution cropped/clipped (without the "borders")
+* **360x284**: PAL Low resolution with overscan
+* **320x256**: PAL Low resolution cropped/clipped (without the "borders")
+* **360x240**: NTSC Low resolution with overscan
+* **320×200**: NTSC Low resolution cropped/clipped (without the "borders")
+* **720x568**: PAL High resolution with overscan
+* **640×512**: PAL High resolution cropped/clipped (without the "borders")
+* **720x480**: NTSC High resolution with overscan
+* **640×400**: NTSC High resolution cropped/clipped (without the "borders")
 
 When using a high resolution mode, rendering will be doubled horizontally and vertically for low res games. It's compatible with High res games and the Workbench but scaling shaders (ex: scalefx) will look ugly.
 
@@ -345,16 +394,6 @@ Launch it from Emulation Station, and you get the GUI where you can configure di
 
 [![Testing joypad in RetroPie](http://img.youtube.com/vi/dleumwWZp6Q/0.jpg)](http://www.youtube.com/watch?v=dleumwWZp6Q)
 
-### Tips and troubleshooting
-
-- Stuttering? Amiga systems/games are PAL (50Hz), but modern TVs typically default to a 60Hz mode when connected to a Raspberry Pi. Enter the RunCommand menu for your Amiga emulator, and select a valid mode that uses a 50Hz refresh rate in order to match the original PAL rate, and thus, eliminate stuttering.
-
-- Some games work better with the '512Kb Chip' + '512Kb Slow' memory configuration rather than the default A500 '1MB Chip'. If your game crashes or fails to load, change the memory settings in the 'CPU RAM' tab of the UAE4ALL2 GUI.
-
-- Some games do not work properly if more than one floppy drive is in use. If your game crashes or fails to load try to use just DF0 (change disc image during game if required) and not use DF1, DF2 and DF3.
-
-- For Raspberry Pi 1 users - make sure you overclock your device. Amiga emulation works much faster when overclocked to maximum. Without overclocking some games do not run at full speed.
-
 ### Launching games directly from EmulationStation
 
 #### Script for creating configuration files 
@@ -402,7 +441,15 @@ Note: The old script from Mark Dunning has a problem with games with more than 9
 Alternatively, a native BASH script to perform the same steps directly on the RetroPie machine can be found here:
 https://github.com/Douggernaut/RetroPieAssistant/tree/master/Amiga
 
+## Tips and troubleshooting
 
+- Stuttering? Amiga systems/games are PAL (50Hz), but modern TVs typically default to a 60Hz mode when connected to a Raspberry Pi. Enter the RunCommand menu for your Amiga emulator, and select a valid mode that uses a 50Hz refresh rate in order to match the original PAL rate, and thus, eliminate stuttering.
+
+- Some games work better with the '512Kb Chip' + '512Kb Slow' memory configuration rather than the default A500 '1MB Chip'. If your game crashes or fails to load, change the memory settings in the 'CPU RAM' tab of the UAE4ALL2 GUI.
+
+- Some games do not work properly if more than one floppy drive is in use. If your game crashes or fails to load try to use just DF0 (change disc image during game if required) and not use DF1, DF2 and DF3.
+
+- For Raspberry Pi 1 users - make sure you overclock your device. Amiga emulation works much faster when overclocked to maximum. Without overclocking some games do not run at full speed.
 
 
 
