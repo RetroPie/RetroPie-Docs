@@ -116,6 +116,28 @@ Place your Amiga ROMs and configuration files in
 
 One thing that Amiga enthusiasts seem to point out repeatedly is that although you may be able to expand an `.lha` file on Windows, you often shouldn't; the Amiga operating system and Windows don't always agree on paths and special characters, with the result that you can corrupt the file when unzipping it.
 
+#### Retroarch configs
+
+| Setting | Choices (default in bold) | Notes |
+| :---: |  :---: | :---: |
+| Model | **A500** / A600 / A1200 |  This setting predefines a range of other settings including CPU, memory, and which Kickstart BIOS to use. |
+|  Video standard | **PAL** / NTSC |  Most software is PAL. |
+| High resolution | **true** / false |  If off, high-res Amiga screens will have their horizontal resolution halved (only every other horizontal pixel will be drawn). Most classic games employ low-resolution screens. |
+| Crop overscan | **true** / false | Crops the overscan, which may result in clipped images in some games. A combination of NTSC and overscan settings will let you achieve all the possible resolutions for the Amiga screen; see the table under "Rendering" in the docs. |
+| Use analog | false / true | 
+| LEDs | **standard** / simplified / none | Shows drive activity and power LEDs at the bottom right. |
+| CPU speed | **real** / max |  'real' is recommended for games designed to run on   an A500-class Amiga but which won't work on faster Amigas. This includes  many classic Amiga games.  If set to 'max', the CPU emulation will run at the maximum speed that the host CPU can achieve. lr-puae will spend as much time as it can emulating the 68000 CPU and will not wait at all per frame.
+| CPU compatible | **false** / true |  If enabled, E-UAE will use a slower but more compatible version of the CPU false  emulation. This may be necessary to run some some demos and games correctly. |
+| Sound output | none / interrupts / **normal** / exact | *  *none* - audio emulation is disabled.  * *interrupts* - audio emulation is enabled but audio output is disabled. * *normal*    - audio emulation is enabled and output enabled. * *exact* - audio emulation is enabled and exact output enabled. | 
+| Sound frequency | 11025 / 22050 / **44100** |  The frequency of emulated audio output in Hertz. Typically, higher frequencies will require more work, but have better quality. |
+| Sound channels | mono / **stereo** / mixed | The Amiga supports 4-voice stereo sound, with two channels output on the left channel and two on the right. *mono*   - monophonic output; all Amiga voices are output on a single channel.  *stereo* - stereo output; two Amiga voices are output on the left channel and two on the right.   *mixed*  - stereo output; the four Amiga voices are mixed and output on both left and right channels.
+| Sound interpolation | **none** / rh / crux / sinc | Interpolation is a technique which "smoothes out" the audio. The three other choices are different algorithms for it which may give varying results and performance hits. |
+| Floppy speed | **100** / 200 / 300 / 400 / 500 / 600 / 700 / 800 |  Valid values are 1x to 8x the speed of a  standard Amiga floppy drive.  Values other than 100 may affect compatibility with Amiga software, especially the floppy-based copy-protection systems included with some games. |
+| Immediate blit | true / **false** |  If enabled then blits performed by the Amiga chipset emulation will be reported as finishing immediately. This may improve performance at the price of compatibility. |
+| NTSC chipset | true / **false** | Set this to match the video system |
+| Vertical centering | none / **simple** / smart | Used for centering the screen vertically within the emulator display (which is then positioned by the Retroarch display) |
+| Horizontal centering | none / **simple** / smart | See above. |
+
 #### Disk images, WHDLoad and M3U support
 You can pass a disk or hdd image (WHDLoad) as a rom.
 
