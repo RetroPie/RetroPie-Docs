@@ -74,7 +74,7 @@ If your PSX game is a .ecm extension, its a compressed file that needs to be ext
 
 lr-pcsx-rearmed has support for the CHD (V5) archive format, though a source update of the emulator may be required for said support.
 
-This format will save space and allow you to keep your PSX ROM folder tidy, though it is currently unknown if lr-pcsx-rearmed's M3U playlist support will work with CHD.
+This format will save spac, allow you to keep your PSX ROM folder tidy, and lr-pcsx-rearmed's M3U playlist support works with CHD.
 
 The following archive contains a MAME 0.205 version of CHDMAN and Windows batch files that can be used to quickly convert your PSX games to CHD (V5): [Download](https://drive.google.com/file/d/0B-ElaPpvBHs5aUd0QUM3c05kY2c/view?usp=sharing)
 
