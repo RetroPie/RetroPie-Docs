@@ -1,6 +1,6 @@
 ![retropie_logo](https://cloud.githubusercontent.com/assets/10035308/21968193/e1670f2a-db46-11e6-8ff7-eb6d7188c9e7.png)
 
-|Version|4.4|
+|Version|4.5|
 |:---:|:---:|
 
 1. [Hardware](First-Installation#hardware)
