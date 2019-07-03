@@ -2,6 +2,10 @@
 
 This page is a list of all of the changelogs for each version of RetroPie. For a complete list of all commits to the source code see [here:](https://github.com/RetroPie/RetroPie-Setup/commits/master)  
 
+### Version 4.5: (July 3, 2019)
+
+Changes since 4.4
+
 ### Version 4.4: (April 14, 2018)
 
 Changes since 4.3
