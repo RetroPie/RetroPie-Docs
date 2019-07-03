@@ -6,6 +6,60 @@ This page is a list of all of the changelogs for each version of RetroPie. For a
 
 Changes since 4.4
 
+* Dropped Raspbian/Debian Jessie support
+* Raspberry Pi 3 A+ support (via Stretch firmware update)
+* Many new es themes added
+* Added Skyscraper (Scraper for Emulation Station game lists) 
+* RetroArch updated to v1.7.6
+* Amiberry (Amiga emulator) updated to v2.25, including support for launching whdload and CD32 titles from ES.
+* Jzintv (Intellivision emulator) updated to 20181225 release
+* atari800 - updated to v4.0.0
+* Mupen64plus - updated to latest version (GlideN64 stability and compatibility improved), as well as other changes.
+* Fuse (ZX Spectrum emulator) updated to v1.5.7
+* ZEsarUX (ZX Spectrum emulator) updated to v7
+* advmame (Advance MAME arcade emulator) - updated to v3.9
+* Fixed building of quake3 for RPI.
+* Added love-0.10.2 (2d Game Engine) for compatibility with older games.
+* Dosbox updated to SVN r4194 including joystick fix for 360 controllers.
+* CGenius - updated to v2.3.1 
+* lr-flycast (libretro Dreamcast emulator) - renamed from lr-reicast and enabled for arm platforms including the RPI. 
+* reicast - Switched to updated upstream repository - the latest code includes bugfixes and improvements including better game compatibility as well as our RPI fixes.
+* lr-ppsspp - switched to upstream repository for latest version
+* lr-fbneo  (Arcade and console emulator) - renamed from lr-fblpha - lots of improvements including neo geo cd support, and optional cyclone 68k core for better performance on slower devices for some games.The emulator can now be selected as an alternate emulator for Sega Genesis/Mastersystem/SG-1000, PC-Engine, MSX, ColecoVision and ZXSpectrum.
+* Fixes and updates to many libretro cores
+* Kodi updated to the 18 “Leia” release (only available in Raspbian Stretch)
+* Improvements/fixes to joystick control in runcommand launch menu
+* Fixes / Improvements to bluetooth pairing
+* Added sixaxis driver - better DualShock 3 controller support with full bluetooth coexistence
+* Third-party (Shanwan/Gasia) controller support via customhidsony & custombluez drivers
+* lr-mame2014 renamed to lr-mame2015
+* Emulationstation - updated to v2.8.4 which includes:
+  * 2 new scrapers added for the TheGamesDB and ScreenScraper. Also many bugfixes and improvements including:
+  * Gridview support now in main version
+  * Hide MAME bios files by default
+  * Graphical / rendering fixes
+  * Loading progress
+  * Allow using analog sticks for navigation
+  * More flexible audio configuration
+  * Lots of code refactoring, bugfixes and performance improvements, including removing boost libraries making compilation faster (and code smaller).
+  * Search and load artwork based on ROM name (image and video)
+  * Experimental scripting support, triggered by events.
+* Added new experimental modules
+  * moonlight - NVIDIA GameStream client
+  * steamlink - Steam Link streaming client for Raspberry Pi 3
+  * jumpnbump - multiplayer platform game
+  * mysticmine - open source indie game
+  * bombermaaan - Classic bomberman game
+  * lr-superflappybirds - Multiplayer Flappy Bird Clone
+  * lr-scummvm - libretro version of scummvm (Allows playing of many classic point and click adventures)
+  * lr-x1 - Sharp X1 libretro core
+  * lr-redream - Dreamcast emulator
+  * lr-pokemini - Pokemon Mini emulator
+  * lr-81 - Sinclair ZX81 emulator
+  * lr-quasi88 - NEC PC-8801 emulator
+  * splitwolf - 2-4 player split-screen Wolfenstein 3D / Spear of Destiny port
+  * lr-mupen64plus-next - a new WIP Libretro core which aims to be improve upon the existing lr-mupen64plus core.
+
 ### Version 4.4: (April 14, 2018)
 
 Changes since 4.3
