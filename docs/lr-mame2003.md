@@ -149,6 +149,23 @@ In addition to this, you will want to stop rotating the games and instead show t
 ## Save states
 Beyond [High scores](#high-scores), lr-mame2003 supports save states through the [usual Retroarch hotkeys](https://github.com/retropie/retropie-setup/wiki/retroarch-configuration#default-joypad-hotkeys). However, save state support has to be implemented per-driver, so they won't work with all games.
 
+## Backdrops and bezels
+
+Backdrops (and bezels too!) will work if you have the artwork in ```~/RetroPie/BIOS/mame2003/artwork```. It doesn't work if they are in the `/roms` folder, which is where you usually put them if you are using AdvMame or mame4all.
+
+They need to be in the old MAME format (a `.zip` file containing images and an `.art` file) and *not* the new MAME format (a `.zip` containing a `.lay` file and images). Artwork in the old format can be downloaded from Mr Do's discontinued artwork page at lowish resolution, but there are higher-quality sources out there for individual games. Don't confuse artwork intended for a 1080p Retroarch *overlay* with MAME artwork files.
+
+Once you have copied the files to the right location, you can go into RGUI -> Quick Menu -> Options -> Display artwork and set it to enabled. You will have to exit the emulator altogether and launch the game, but it will save the preference for artwork for all games.
+
+This setting and the artwork resolution setting are saved in ```/opt/retropie/configs/all/retroarch-core-options.cfg``` as 
+```
+mame2003_display_artwork = "enabled"
+mame2003_art_resolution = "1"
+```
+In lr-mame you cannot use ```-nobezel``` on a command line to selectively show only the backdrop and not the bezel, in case you wanted to use overlays for bezels, cf https://retropie.org.uk/forum/topic/21495/passing-rom-specific-command-line-options-to-mame-through-retroarch.
+
+Unlike Retroarch overlays, MAME backdrops and bezels *are* affected by custom settings (RGUI -> Settings -> Video) because they are drawn within the core, not on top of it like overlays are.
+
 ## Feature requests
 
 Please use the [forum](https://retropie.org.uk/forum) for all support issues, but feature requests can be made on the [GitHub page](https://github.com/libretro/mame2003-libretro).
