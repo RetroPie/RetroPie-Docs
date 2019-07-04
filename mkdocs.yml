@@ -10,7 +10,7 @@ repo_name: 'RetroPie-Setup'
 repo_url: 'https://github.com/RetroPie/RetroPie-Setup'
 
 # Copyright
-copyright: 'Copyright &copy; 2018 The RetroPie Project'
+copyright: 'Copyright &copy; 2019 The RetroPie Project'
 
 # Extensions
 markdown_extensions:
@@ -56,8 +56,8 @@ pages:
     - Arcade Quick Start: Arcade.md
     - MAME: MAME.md
     - lr-mame2003: lr-mame2003.md
-    - FinalBurn Alpha: FinalBurn-Alpha.md
-    - lr-fbalpha: lr-fbalpha.md
+    - FinalBurn Neo: FinalBurn-Neo.md
+    - lr-fbneo: lr-fbneo.md
     - Neo Geo: Neo-Geo.md
     - Validating, Rebuilding, and Filtering Arcade ROMs: Validating,-Rebuilding,-and-Filtering-ROM-Collections.md
 - Emulators:
