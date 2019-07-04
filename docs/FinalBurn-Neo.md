@@ -1,20 +1,22 @@
 ***
 ![fba](https://cloud.githubusercontent.com/assets/10035308/12213772/eb6a317c-b63b-11e5-847f-2c03ffde43f3.png)
 ***
-_Final Burn Alpha is a Multiple Arcade Emulator most popular for emulating Neo-Geo, Capcom, Konami, and Cave games. It is developed by the final burn team and originated from FinalBurn by Dave_
+_FinalBurn Neo is a Multiple Arcade Emulator most popular for emulating Neo-Geo, Capcom, Konami, and Cave games. It is developed by the FinalBurn team and originated from FinalBurn by Dave and old MAME versions_.
 
-See also: [MAME](MAME), [Neo Geo](Neo-Geo)
+FinalBurn Neo is an active fork of the FinalBurn Alpha emulator, created by former FBA developers.
+
+See also: [MAME](MAME), [Neo Geo](Neo-Geo).
 
 ***
-There are a variety of arcade emulators available in RetroPie. There are significant differences in performance, compatibility, and configuration between them. If you're getting started with arcade emulation, start by reading [Arcade](Arcade).
+There are a variety of arcade emulators available in RetroPie. There are significant differences in performance, compatibility, and configuration between them. If you're just getting started with arcade emulation, start by reading [Arcade](Arcade) page.
 
-This page is a resource for additional details on RetroPie's Final Burn Alpha emulators including configuration paths, controls, and the ROM sets which each emulator requires.
+This page is a resource for additional details on RetroPie's FinalBurn emulators including configuration paths, controls, and the ROM sets required by each emulator.
 
 [**All Arcade ROMS Compatibility List**](https://docs.google.com/spreadsheets/d/1antILt7D12EWOFzyJwTfB86NceghMJKXG7CdYumuHec/edit?usp=sharing) feel free to contribute to the list.
 
 | Emulator | Rom Folder | Extension | Required ROM Version | Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
-| [lr-fbalpha](#lr-fbalpha) | arcade **or** fba **or** neogeo  | .7z .zip | FB Alpha v0.2.97.44| /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/fba/retroarch.cfg, **or** /opt/retropie/configs/neogeo/retroarch.cfg |
+| [lr-fbneo](#lr-fbneo) | arcade **or** fba **or** neogeo  | .7z .zip | FB Neo v0.2.97.44| /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/fba/retroarch.cfg, **or** /opt/retropie/configs/neogeo/retroarch.cfg |
 | [lr-fbalpha2012](#lr-fbalpha2012) | arcade **or** fba **or** neogeo  | .7z .zip | FB Alpha v0.2.97.29 | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/fba/retroarch.cfg, **or** /opt/retropie/configs/neogeo/retroarch.cfg |
 | [PiFBA](#pifba) | arcade **or** fba **or** neogeo  | .zip | FB Alpha 0.2.96.71 | /opt/retropie/emulators/pifba/fba2x.cfg **or** /opt/retropie/configs/fba/fba2x.cfg |
 
@@ -26,19 +28,19 @@ To avoid having several menus for different arcade emulators, all arcade-based R
 
 ## Emulators
 
-### lr-fbalpha
-[Visit the Final Burn Alpha homepage on github](https://github.com/libretro/fbalpha)
+### lr-fbneo
+[Visit the FinalBurn Neo homepage on github](https://github.com/libretro/fbneo)
 
-[Important announcement about FBAlpha romset constantly changing](https://retropie.org.uk/forum/topic/19741/new-fb-alpha-libretro-pre-v0-2-97-44)
+[Important announcement about FBNeo romset constantly changing](https://retropie.org.uk/forum/topic/19741/new-fb-alpha-libretro-pre-v0-2-97-44)
 
-**Note: Please see [lr-fbalpha](lr-fbalpha) for information on how to configure specific features of this emulator.**
+**Note: Please see [lr-neo](lr-fbneo) for information on how to configure specific features of this emulator.**
 
 Accepted File Extensions: **.7z .zip**
 
 ```shell
 Roms Dir: /home/pi/RetroPie/roms/fba
 Samples Dir: /home/pi/RetroPie/BIOS/fba/samples/
-Binary Dir: /opt/retropie/libretrocores/lr-fbalpha
+Binary Dir: /opt/retropie/libretrocores/lr-fbneo
 Config Dir: /opt/retropie/configs/fba/retroarch.cfg
 ```
 **ROM Version**: Subset of latest MAME/HBMAME roms available
@@ -47,18 +49,18 @@ Config Dir: /opt/retropie/configs/fba/retroarch.cfg
 * BIOS: 7
 * Samples: ?
 
-**FB Alpha DAT Files**:
+**FB Neo DAT Files**:
 
-[FB Alpha (All Arcade)](https://github.com/libretro/fbalpha/raw/master/dats/FB%20Alpha%20(ClrMame%20Pro%20XML%2C%20Arcade%20only).dat)
+[FB Neo (All Arcade)](https://github.com/libretro/FBNeo/raw/master/dats/FinalBurn%20Neo%20(ClrMame%20Pro%20XML%2C%20Arcade%20only).dat)
 
-[FB Alpha (Neogeo only)](https://github.com/libretro/fbalpha/raw/master/dats/FB%20Alpha%20(ClrMame%20Pro%20XML%2C%20Neogeo%20only).dat)
+[FB Neo (NeoGeo only)](https://github.com/libretro/FBNeo/blob/master/dats/FinalBurn%20Neo%20(ClrMame%20Pro%20XML%2C%20Neogeo%20only).dat)
 
-[Other Dats for home console systems available here](https://github.com/libretro/fbalpha/tree/master/dats)
+[Other Dats for home console systems available here](https://github.com/libretro/fbeo/tree/master/dats)
 
-[lr-fbalpha compatibility list](https://docs.google.com/spreadsheets/d/1GaqIIoiWbzKHwZ52S2xCSDQXILo81Ls1mHK6czKGAtM/edit?usp=sharing) feel free to contribute to the list.
+[lr-fbneo compatibility list](https://docs.google.com/spreadsheets/d/1GaqIIoiWbzKHwZ52S2xCSDQXILo81Ls1mHK6czKGAtM/edit?usp=sharing) feel free to contribute to the list.
 
 **Controls:**
-lr-fbalpha utilises RetroArch configs. Add custom retroarch controls to the retroarch.cfg file in:
+lr-fbneo utilises RetroArch configs. Add custom retroarch controls to the retroarch.cfg file in:
 ```shell
 /opt/retropie/configs/fba/retroarch.cfg
 ```
@@ -67,7 +69,7 @@ For more information on custom RetroArch controls see: [RetroArch Configuration]
 ---
 
 ### lr-fbalpha2012
-[Visit the Final Burn Alpha 2012 homepage on github](https://github.com/libretro/fbalpha2012) 
+[Visit the FinalBurn Alpha 2012 homepage on github](https://github.com/libretro/fbalpha2012) 
 
 Accepted File Extensions: **.7z .zip**
 
