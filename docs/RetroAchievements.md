@@ -48,7 +48,7 @@ cheevos_leaderboards_enable = true
 * Atari Lynx
 * PC Engine
 * ColecoVision
-* Arcade (Neo Geo, CPS1, CPS2 and CPS3) - *only with fbalpha core*.
+* Arcade (Neo Geo, CPS1, CPS2 and CPS3) - *only with the fbneo core*.
 * *PC-8800* - *unfortunately there's no libretro core for it. You'll have to use their Windows-only emulator RAQUASI88*
 
 A libretro core compatibility list with RetroAchievements can be found in [libretro docs](https://docs.libretro.com/guides/retroachievements/).
