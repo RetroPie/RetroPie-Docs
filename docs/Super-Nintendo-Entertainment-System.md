@@ -39,7 +39,7 @@ Setting the Runcommand's resolution setting for this emulator to a low 4:3 resol
 
 ### PiSNES
 
-An optional emulator that is recommended for full speed emulation of some games that run slow on a RPi0 in lr-snes9x2002, and should be the primary emulator on a RPi1, though it has inaccurate sound emulation and SFX/SA1/SFX2 games do not work.
+An optional emulator that is recommended for full speed emulation of some games that run slow on a RPi0 in lr-snes9x2002, though it has inaccurate sound emulation and SFX/SA1/SFX2 games do not work.
 
 Setting the Runcommand's resolution setting for this emulator to a low 4:3 resolution on the RPi0 or RPi1 is recommended for faster emulation. VGA (640x480) (CEA-1) will produce a 4:3 resolution with screen tearing on a modern TV. 480i (CEA-6) will not produce a 4:3 resolution with this emulator, not have screen tearing on a modern TV, and will decrease visual quality.
 
