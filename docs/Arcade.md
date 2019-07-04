@@ -10,20 +10,18 @@ Each emulator is optimised for different hardware and different games so read th
 
 ## Step 1: Choose your arcade emulator(s)
 
-RetroPie's arcade emulators come in two main flavors: [MAME](MAME) and [FinalBurn Alpha](FinalBurn-Alpha).
+RetroPie's arcade emulators come in two main flavors: [MAME](MAME) and [FinalBurn](FinalBurn-Neo).
 
-[MAME](MAME) is the most well-known and works with thousands of games. [FinalBurn Alpha](FinalBurn-Alpha) is optimized for classic beat-em-up games like those from [Neo Geo](Neo-Geo) and Capcom.
-
-RetroPie includes multiple versions of both MAME and FinalBurn Alpha. Older versions require less processing power, but newer versions support more games.
+[MAME](MAME) is the most well-known and works with thousands of games. [FinalBurn](FinalBurn-Neo) is optimized for classic beat-em-up games like those from [Neo Geo](Neo-Geo) and Capcom.RetroPie includes multiple versions of both MAME and FinalBurn. Older versions require less processing power, but newer versions support more games and feature more accurate emulation.
 
 Use this table as a guide when choosing an emulator version:
 
-| Raspberry Pi version | Recommended MAME Emulator | Recommended FB Alpha Emulator |
+| Raspberry Pi version | Recommended MAME Emulator | Recommended FB Emulator |
 | :---: | :---: | :---: |
-|2 or 3| `lr-mame2003` | `lr-fbalpha`|
+|2 or 3| `lr-mame2003` | `lr-fbneo`|
 |1 or Zero| `mame4all` | `pi-fba`|
 
-Learn about other available versions on the pages about [MAME](MAME) and [FinalBurn Alpha](FinalBurn-Alpha).
+Learn about other available versions on the pages about [MAME](MAME) and [FinalBurn Neo](FinalBurn-Neo).
 
 ## Step 2: Select the right ROM set
 
@@ -38,7 +36,7 @@ There are a number of different rom set versions. Different versions contain dif
 | [mame4all](MAME) | MAME 0.37b5 | 2270 | [List](https://docs.google.com/spreadsheets/d/1SHspjyHavY9-PKbO2swDr52BS2Wl_mB_Vjx2Z1SXiD8/edit) |
 | [lr-mame2003](MAME) | MAME 0.78 | 4705 | [List](https://docs.google.com/spreadsheets/d/1LP1MELCvcxu7TfiowF_0ZuvRVEMqlfQyTVetnOJvuJc/edit?usp=sharing) |
 | [pifba](FinalBurn-Alpha) | FB Alpha v0.2.96.71 | 684 | [List](https://docs.google.com/spreadsheets/d/1OZioLrz16ptaNbjQUDP5hhVzQDTOTn9Nz46Hbj3-06k/edit?usp=sharing) |
-| [lr-fbalpha](FinalBurn-Alpha) | FB Alpha v0.2.97.43 | 4896 | [List](https://docs.google.com/spreadsheets/d/1GaqIIoiWbzKHwZ52S2xCSDQXILo81Ls1mHK6czKGAtM/edit?usp=sharing) |
+| [lr-fbneo](FinalBurn-Neo) | FB Neo v0.2.97.44-WIP | 4896 | [List](https://docs.google.com/spreadsheets/d/1GaqIIoiWbzKHwZ52S2xCSDQXILo81Ls1mHK6czKGAtM/edit?usp=sharing) |
 
 To sum up, for best results:
 
@@ -53,13 +51,13 @@ Unlike some other system, arcade games should be zipped, if you extract them, th
 
 You can place any of the rom sets in the `arcade` rom folder but you'll be required to pick the correct emulator for your rom set through the [runcommand menu](Runcommand). 
 
-They can also be placed in their respective emulator rom folders, this information is included in the system pages: [MAME](MAME), [FBA](FinalBurn-Alpha) 
+They can also be placed in their respective emulator rom folders, this information is included in the system pages: [MAME](MAME), [FBNeo](FinalBurn-Neo) 
 
 ## Further Reading
 
-- [Arcade games and how to play them, A non-technical MAME and FBA tutorial by rbaker](https://retropie.org.uk/forum/topic/7247/guide-arcade-games-and-how-to-play-them-a-non-technical-mame-fba-tutorial)
-- [Instructions for how to set up FB Alpha as a separate Neo Geo system](Neo-Geo)
-- RetroPie docs for [MAME](Mame) and [FB Alpha](FinalBurn-Alpha)
+- [Arcade games and how to play them, A non-technical MAME and FBNeo (FBA) tutorial by rbaker](https://retropie.org.uk/forum/topic/7247/guide-arcade-games-and-how-to-play-them-a-non-technical-mame-fba-tutorial)
+- [Instructions for how to set up FB Neo as a separate Neo Geo system](Neo-Geo)
+- RetroPie docs for [MAME](Mame) and [FB Neo](FinalBurn-Neo)
 - [How to use MAME with RetroPie Help Guide by Floob](https://retropie.org.uk/forum/topic/2859/how-to-use-mame-with-retropie-help-guide)
 - [Demystifying MAME ROMs Tutorial by ChoccyHobNob](https://web.archive.org/web/20161116054839/http://choccyhobnob.com/articles/demystifying-mame-roms/) (via archive.org)
 - Advanced: [Validating, Rebuilding, and Filtering ROM Collections](Validating,-Rebuilding,-and-Filtering-ROM-Collections)
