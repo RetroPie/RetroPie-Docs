@@ -265,6 +265,8 @@ The two big changes:
 1. there isn't a folder at the top level. _If your .slave file isn't at the top level of the .hdf,_ you will get a DOS window popup stating "DOS Error #205 (object not found) on reading '.slave'".
 2. Instead of <gamename>.slave, that file must be named `game.slave`. It doesn't matter (despite what you may see on the net) whether it's `.Slave` or `.slave`, based on my testing.
 
+If you want to use the 'RetroPlay' WHDLoad set, there is [a conversion script here](https://github.com/raphkoster/Amiga-LHA-ZIP-to-HDF-converter) that can do all the above on Raspberry Pi and convert the roms into a format playable with lr-puae.
+
 #### Game that needs a specific Amiga model (AGA games for instance)
 If a game needs a specific Amiga model (AGA games for instance), you can specify which amiga model to use.
 
