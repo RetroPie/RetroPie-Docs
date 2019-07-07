@@ -147,7 +147,7 @@ Supported format are :
 - `.hdf`, `.hdz` for hdd images. Note that hdd images require WHDLoad to be set up, see below.
 - `.m3u` for multiple disk images. Note that these have special requirements, see below.
 
-_Note that `.lha` files are not supported._
+_Note that `.lha` files are not supported._ If you want to use the 'RetroPlay' WHDLoad set, there is [a conversion script here](https://github.com/raphkoster/Amiga-LHA-ZIP-to-HDF-converter) that can convert the roms into a format playable with lr-puae.
 
 When passing a disk image, a hdd image or a m3u file as parameter the core will generate a temporary `puae_libretro.uae` configuration file in RetroArch saves directory and use it to automatically launch the game.
 
