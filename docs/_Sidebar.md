@@ -31,7 +31,7 @@
 * [Dragon 32](Dragon)
 * [Dreamcast](Dreamcast)
 * [Famicom Disk System](Famicom-Disk-System)
-* [FinalBurn Alpha](FinalBurn-Alpha)
+* [FinalBurn Neo](FinalBurn-Neo)
 * [GameCube](GameCube)
 * [Game & Watch](Game-&-Watch)
 * [Game Gear](Game-Gear)
