@@ -20,7 +20,7 @@ If you have a Raspberry Pi, this will cover the basic sound configuration in Ras
 
 If you have a standard RPi and want to use the 3.5mm headphone jack then you are in luck. You're pretty much ready to go without any real modification, as the RPi will automatically use the headphone jack when it senses a plug in the socket. 
 
-In some instances though, you will need to manually modify the raspberry pi boot config file (`sudo nano/boot/config.txt`) and ADD the following lines to those already there: 
+In some instances though, you will need to manually modify the raspberry pi boot config file (`sudo nano /boot/config.txt`) and ADD the following lines to those already there: 
 
 ````
 # This line should already be in the file, but if it's not then make sure to add it.
