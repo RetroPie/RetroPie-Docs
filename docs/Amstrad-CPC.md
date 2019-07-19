@@ -21,7 +21,7 @@ Place your Amstrad CPC ROMs in
 /home/pi/RetroPie/roms/amstradcpc
 ```
 ## Joystick Controls Setup
-As usual for a "classic" computer, a keyboard is needed for optimum input control. Flight simulators or complex building simulations require a variety of key combinations. For further input we need a connected (real) keyboard or a **Virtual Keyboard**. This can be called with the **Y-Button** of your PAD (both lr-caprice32 and CapriceRPI)
+As usual for a "classic" computer, a keyboard is needed for optimum input control. Flight simulators or complex building simulations require a variety of key combinations. For further input we need a connected (real) keyboard or a **Virtual Keyboard**. This can be called with the **START+Y-Button** of your PAD in lr-caprice32 (older versions < 4.5 make use of Y-Button only)
 
 When we talk about joysticks, these are directly interpreted as cursor inputs by the CPC. The fire button is displayed as `X`. So if you press right HAT button a right arrow will be printed. So you see the CPC interprets the joysticks input as ASCII code, very unsimilar to the Atari 2600 or C64. But the devices use all a D-SUB-9 connector and theoretically even a Megadrive/Genesis PAD could be connected to this mashines (afaik Start or Select button bridges 5V and Ground -- risk of a short circuit with possible damage to original hardware). 
 
