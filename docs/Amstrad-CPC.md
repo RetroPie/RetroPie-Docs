@@ -26,7 +26,7 @@ As usual for a "classic" computer, a keyboard is needed for optimum input contro
 When we talk about joysticks, these are directly interpreted as cursor inputs by the CPC. The fire button is displayed as `X`. So if you press right HAT button a right arrow will be printed. So you see the CPC interprets the joysticks input as ASCII code, very unsimilar to the Atari 2600 or C64. But the devices use all a D-SUB-9 connector and theoretically even a Megadrive/Genesis PAD could be connected to this mashines (afaik Start or Select button bridges 5V and Ground -- risk of a short circuit with possible damage to original hardware). 
 
 ### JoyPad setup for lr-caprice32
-By default the `RetroPad` is selected as controller input we have to select `Amstrad Joystick` to make the Virtual Keyboard work. Enter the retroarch core by using `START + Y` on your pad, now use *Retroarch -> Quickmenu -> Controls -> User [1-4] Select Device Type Amstrad Joystick* and save the overlay.
+By default the `RetroPad` is selected as controller input we have to select `Amstrad Joystick` to make the Virtual Keyboard work. Enter the retroarch core by using `SELECT + Y` on your pad, now use *Retroarch -> Quickmenu -> Controls -> User [1-4] Select Device Type Amstrad Joystick* and save the overlay.
 
 Now you can launch the **Virtual Keyboard** to configurate any game. If the overlay window seems to stuck then press Select-Button on your pad to activate it and move its white cursor with the HATs. A-Button selects the character.
 
