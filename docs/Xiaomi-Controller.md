@@ -1,4 +1,4 @@
-After pairing the device as shown in this [guide](https://github.com/retropie/retropie-setup/wiki/Setting-up-a-Bluetooth-controller) and mapping it thorugh emulationstation menú, the first thing you will notice is that it isn't working ingame.
+After pairing the device as shown in this [guide](https://retropie.org.uk/docs/Bluetooth-Controller/) and mapping it through emulationstation menú, the first thing you will notice is that it isn't working ingame.
 
 The problem is that the keys detected in emulationstation are not the same as the ones detected in retroarch. To fix this you can either bind the keys through the retroarch config (in emulationstation: Retropie -> Retroarch -> Config -> Input) or start from the following cfg that must be placed at `/opt/retropie/configs/all/retroarch-joypads/udev/小米蓝牙手柄.cfg`. The name is the same as the one in `/opt/retropie/configs/all/retroarch-joypads` that represents the Xiaomi Gamepad.
 
