@@ -28,7 +28,7 @@ Place an empty .svm file in scummvm's rom folder for each game which you want to
 
 **Quick Start**
 
-- Quit running rom without saving : Alt + X
+- Quit running rom without saving : Alt + X or Alt + Q
 
 - After you've added files to the scummvm rom folder, open up the +LAUNCH GUI
 
