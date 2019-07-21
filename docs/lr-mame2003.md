@@ -37,7 +37,7 @@ Similarly to the [Service menu](#service-menu), many arcade games had hardware s
 
 ## High scores
 
-lr-mame2003 will attempt to keep a permanent record of any high scores you set. A supplementary file called `hiscore.dat` used to be required for these ROMs to save scores. This file can be [downloaded from the MAME 2003 'metadata' repository](https://raw.githubusercontent.com/libretro/mame2003-libretro/master/metadata/). Today this file is built into mame2003 and the only reason to use the standalone `hiscore.dat` file is for development and experimentation.
+lr-mame2003 will attempt to keep a permanent record of any high scores you set. A supplementary file called `hiscore.dat` used to be required for these ROMs to save scores. This file can be [downloaded from the MAME 2003 'metadata' repository](https://github.com/libretro/mame2003-libretro/raw/master/metadata/hiscore.dat). Today this file is built into mame2003 and the only reason to use the standalone `hiscore.dat` file is for development and experimentation.
 
 When high scores are saved by the mame2003 hiscore engine, they are kept in:
 ```
