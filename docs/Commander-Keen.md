@@ -1,7 +1,7 @@
 ***
 ![](http://clonekeenplus.sourceforge.net/img/title.png)
 ***
-Commander Keen was a video game series originally on DOS created by id Software. There never was an official 'Universe if Toast' trilogy, because other projects like Wolfenstein 3D were more interesting for the market. Nevertheless fans created an unofficial trilogy of that one and many other mods, like other stories with new levels, which can be play using Commander Genius.
+Commander Keen was a video game series originally on DOS created by id Software. There never was an official 'Universe is Toast' trilogy, because other projects like Wolfenstein 3D were more interesting for the market. Nevertheless fans created an unofficial trilogy of that one and many other mods, like other stories with new levels, which can be play using Commander Genius.
 ***
 
 ## Emulator: [Commander Genius](http://clonekeenplus.sourceforge.net/)
