@@ -2,6 +2,12 @@
 
 This page is a list of all of the changelogs for each version of RetroPie. For a complete list of all commits to the source code see [here:](https://github.com/RetroPie/RetroPie-Setup/commits/master)  
 
+### Version 4.5.1: (July 17, 2019)
+
+Changes since 4.5
+
+* Downgraded to 4.14 kernel to resolve some 4.19 kernel/firmware issues
+
 ### Version 4.5: (July 3, 2019)
 
 Changes since 4.4
