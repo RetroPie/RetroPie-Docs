@@ -64,6 +64,10 @@ atari800_system = "5200"
 ```
 See "Advanced Config" for solutions to problems booting 5200 games.
 
+Please be sure to read through the docs below specific to each emulator version. 
+
+If you are using lr-atari800 you will want to set the controller type to “Atari Joystick” and not “RetroPad” in order to get all the keys mapped to your controller.
+
 ## Emulator: [lr-atari800](https://github.com/libretro/libretro-atari800)
 
 ### BIOS setup
@@ -121,6 +125,8 @@ The Atari800 core supports the following device type(s) in the controls menu, bo
 **Controller tables**
 
 _Joypad and analog device type table_
+
+If your controller is set to “Atari Joystick” you will have the following mappings:
 
 | User 1 Remap descriptors | RetroPad Inputs | ATARI Joystick |
 | :---: | :---: | :---: |
