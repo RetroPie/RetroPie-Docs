@@ -1,11 +1,10 @@
-As of 8/3/19 this guide isn't the way to install the 3 expansion packs. I had followed this guide and it used to infact work. An update of retropie script and then subsequent update of all installed packages that I had done changed where the grp files go and eliminated the individual eduke32.cfg files. So now all you need to do is Install eduke32 as described and put nwinter.grp, dukedc.grp, and vacation.grp in the duke3d folder. You may need to make the .sh files described below for each duke3d expansion pack but maybe not. I dont know as mine were already created using this guide before the devs changed how the duke3d install works. 
+As of 8/3/19 this guide isn't the way to install the 3 expansion packs. I had followed this guide and it used to infact work. An update of retropie script and then subsequent update of all installed packages that I had done, changed where the grp go. So now all you need to do is put nwinter.grp, dukedc.grp, and vacation.grp in the duke3d folder you create and then Install eduke32 as described. You may need to make the .sh files described below for each duke3d expansion pack but maybe not. Same with the emulators.cfg and eduke32.cfg files in the configs/ports/duke3d folders. 
+I dont know as mine were already created using this guide before the devs changed how the duke3d install works. 
 
-eduke32.cfg is now located in /home/pi/.eduke32/ and only says selectedGRP=duke3d.grp.  No need to change it to run the expansion packs. 
+ NAM however will run and continue to run everytime you start it up but it changes the eduke32.cfg file located in .etc/eduke32 on its own and breaks duke3d and all expansion packs till you manually modify eduke32.cfg selectedgrp field back to duke3d.grp. I've tried multiple times and nam breaks duke 3d and any expansion packs every single time. To avoid this change the permissions on the eduke3d.cfg file so no one can change it. And then you can run duke 3d the expansion packs and nam without anything breaking or having to modify anything after running nam. 
 
- NAM however will run and continue to run but it changes the eduke32.cfg file on its own and breaks duke3d and all expansion packs till you manually modify eduke32.cfg selectedgrp field back to duke3d.grp. I've tried multiple times and nam breaks duke 3d and any expansion packs every single time. 
-I also had to modify the screen res from 1024 x 768 (iirc) in eduke32.cfg to make the screen visible if anyone else is having issues with a blurred screen smashed at the top of the monitor or tv
+I also had to modify the screen res from 1024 x 768 (iirc) in eduke32.cfg to make the screen visible if anyone else is having issues with a blurred screen smashed at the top of the monitor or tv. 
 
-I'm sure the devs did this modification to try to simplify the duke3d and expansion pack install (like quake and its expansion paks) but it actually now broke what did work in this guide as I described. 
 
 ![](http://playsmart.fr/wp-content/uploads/2015/02/Duke-Nukem-3D.png)
 ***
