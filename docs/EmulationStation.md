@@ -258,6 +258,40 @@ add your theme to the themes folder or if you are copying an existing theme to e
 ```
 cp -R /etc/emulationstation/themes/carbon ~/.emulationstation/themes/carbon_custom
 ```
+### Scripting
+
+EmulationStation supports calling external scripts and executables on certain program events.
+
+#### 1. The scripts directory
+
+First, create a new directory called scripts inside the config directory:
+
+Linux (as user `pi`): `mkdir ~/.emulationstation/scripts`
+
+#### 2. Event directories
+
+Inside the scripts folder, create a new directory for the kind of event you want to script:
+
+|        Name         |                                   When                                    |     Arguments (max. 2)      |
+|:-------------------:|:-------------------------------------------------------------------------:|:---------------------------:|
+|       `quit`        |                              on program quit                              |        `%quit_mode%`        |
+|      `reboot`       |                 on system reboot (also calls quit first)                  |                             |
+|     `shutdown`      |                on system shutdown (also calls quit first)                 |                             |
+|  `config-changed`   |                 on the change of any configuration option                 |                             |
+| `controls-changed`  |        on change of the control settings (also calls config first)        |                             |
+| `settings-changed`  | on change of the regular (non-control) settings (also calls config first) |                             |
+|   `theme-changed`   |          on change of theme (also calls settings-changed after)           | `%new_theme%` `%old_theme%` |
+|    `game-start`     |                          before starting a game                           |  `%rom_path%` `%rom_name%`  |
+|     `game-end`      |                          after finishing a game                           |                             |
+|       `sleep`       |       station is without user input for more than `systemSleepTime`       |        see note (\*)        |
+|       `wake`        |               station returns from sleep (i.e. user input)                |                             |
+
+(\*) sleep/wake use no arguments. `systemSleepTime` is usually after `screenSaverTime` (both editable in Screensaver Menu). A value of `0` disables disables sleep respective screensaver.
+
+#### 3. Script calling
+
+Put your executable scripts or binaries into these new directories. They will be called in alphabetic order when the event happens.
+
 
 ### Command Line Arguments
 
