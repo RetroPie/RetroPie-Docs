@@ -1,1 +1,1 @@
-![](C:\Users\Binary90\Desktop\SIGIL)
+https://www.google.com/imgres?imgurl=http%3A%2F%2Fretrosensei.com%2Fwp-content%2Fuploads%2F2019%2F05%2Fsigil-doom.jpg&imgrefurl=http%3A%2F%2Fretrosensei.com%2F2019%2F05%2Fdlc-review-doom-sigil%2F&docid=DyXSLg_E08gABM&tbnid=wnhSSTsqkvQ47M%3A&vet=10ahUKEwiZ3JuQz_bjAhWIc98KHeqIBOQQMwhSKAQwBA..i&w=1100&h=825&client=firefox-b-1-d&bih=959&biw=1231&q=doom%20sigil&ved=0ahUKEwiZ3JuQz_bjAhWIc98KHeqIBOQQMwhSKAQwBA&iact=mrc&uact=8
