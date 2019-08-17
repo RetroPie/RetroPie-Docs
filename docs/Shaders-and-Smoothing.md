@@ -46,7 +46,7 @@ The second two presets are `crt-pi-vertical.glslp` and `crt-pi-curvature-vertica
 
 **Note:** Shaders can only be used in Libretro emulators. Most default emulators in RetroPie are Libretro emulators, but you can confirm by looking for the lr- prefix in the emulator name via the [Runcommand](Runcommand).
 
-You can select either preset via the [Configuration editor](Configuration-editor). Choose `Configure basic libretro emulator options`, then choose a specific emulator or `Configure default options for all libretro emulators` to make the change system-wide. Then, set `Video Shader Enable` to `true` and then set `Video Shader File` to the desired shader.
+You can select either preset via the [Configuration Editor](Configuration-Editor). Choose `Configure basic libretro emulator options`, then choose a specific emulator or `Configure default options for all libretro emulators` to make the change system-wide. Then, set `Video Shader Enable` to `true` and then set `Video Shader File` to the desired shader.
 
 ### Scaling artifacts (particularly in Vertical games)
 
