@@ -21,6 +21,9 @@ _The Game Boy Advance is a 32 bit handheld video game console released by Ninten
 
 **gpSP** is advised for full speed emulation on the RPi1. It may require manual controller reconfiguration, but outside of that has a user-friendly Select+Start exit hotkey and a Select+R hotkey to access the built-in menu enabled by default.
 
+## NETPLAY
+Sadly Netplay is not Supported on link cable games
+
 ## ROMS
 Accepted File Extensions: **.7z .gba .zip**
 
