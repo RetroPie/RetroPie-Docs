@@ -345,6 +345,7 @@ From there you will be able to use your joystick as analogue inputs in 64 games.
 
 ##Configuring N64 USB Controller for use with Retropie accurately
 What I do is I will configure via Retropie the config how I like it for all the general emulators and then i will edit the /opt/retropie/configs/n64/InputAutoCfg.ini file with the below which as long as your using the USB N64 pad should get your 64 controller mapped correctly.
+This works for the "iNNEXT N64 Controller" aswell. Just Label the "[Generic USB Joystick ]" as "[DragonRise Inc.   Generic   USB  Joystick  ]"
 
 I sacrifice Ltrigger to Select and don't define it so It can be used to xit the emulator with start
 ```
