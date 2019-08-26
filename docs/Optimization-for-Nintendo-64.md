@@ -127,4 +127,71 @@ https://github.com/mupen64plus/mupen64plus-video-rice
 
 
 
+## Raspberry Pi 4
+The Raspberry Pi 4 has much improved hardware.  But it is still early in its development.
+Overclocking is possible on a Raspberry Pi 4 and as always offers a better N64 emulation experience.  
+
+I have found the following Overclock to be stable
+
+```
+#Overclock
+force_turbo=0
+over_voltage=6
+arm_freq=2000
+gpu_freq=600
+v3d_freq=650
+```
+
+To get to 2.0 GHZ overclock on a Raspberry Pi 4 Active Cooling is highly recommended and installing the latest rpi firmware is required.  
+You need to do the following to update the firmware
+```
+sudo rpi-update && sudo apt dist-upgrade
+```
+
+Example videos
+Rpi4 Mupen64plus https://www.youtube.com/watch?v=QGXwVTXEgqk&feature=youtu.be
+Rpi4 Texture packs https://youtu.be/WuYailLfUVU
+
+
+
+Information on manually compiling mupen64plus can be removed when devs add mupen64plus binary to Retropie-Setup
+
+To install mupen64plus on a raspberry pi 4 currently you must compile from source 
+
+Here are the instructions to compile currently 
+```
+cd ~
+sudo apt install libboost-dev
+sudo apt install libboost-filesystem-dev
+wget https://github.com/mupen64plus/mupen64plus-core/releases/download/2.5.9/mupen64plus-bundle-src-2.5.9.tar.gz
+tar -zxf mupen64plus-bundle-src-2.5.9.tar.gz 
+cd mupen64plus-bundle-src-2.5.9/
+sudo CFLAGS='-mfpu=neon -mtune=cortex-a72 -march=armv8-a' ./m64p_build.sh NEON=1 USE_GLES=1 VFP_HARD=1 NEW_DYNAREC=1
+```
+
+And to run 
+```
+cd ~/mupen64plus-bundle-src-2.5.9/test
+./mupen64plus ~/Downloads/GoldenEye007.z64
+./mupen64plus /home/pi/Retropie/roms/n64/romname.z64
+./mupen64plus --gfx mupen64plus-video-rice.so /home/pi/Retropie/roms/n64/romname.z64
+./mupen64plus --gfx mupen64plus-video-glide64mk2.so /home/pi/Retropie/roms/n64/romname.z64
+```
+
+You should compare a .mupen64plus.cg file from a Rpi3 to the one you end up with in 
+/home/pi/.config/mupen64plus/mupen64plus.cfg
+and edit most settings to match.  
+
+
+Specifically
+```
+# Z-buffer depth (only 16 or 32)
+OpenGLDepthBufferSetting = 16
+```
+
+and 
+```
+# If this option is enabled, the plugin will skip every other frame
+to enabled
+```
 
