@@ -105,6 +105,8 @@ input_disk_eject_toggle_btn = "11"
 input_disk_next_btn = "12"
 ```
 
+The example above should assign these hotkeys to L3 and R3 on XInput controllers, but should be verified by the user and they can be assigned to any other button like every other hotkey.
+
 ## BIOS
 
 ### lr-pcsx-rearmed
