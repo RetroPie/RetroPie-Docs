@@ -3,7 +3,7 @@
 ***
 _MAME stands for Multiple Arcade Machine Emulator. MAME can emulate thousands of games that otherwise would have been lost in the ash-heaps of history._
 
-See Also: [FinalBurn-Alpha](FinalBurn-Alpha), [Neo Geo](Neo-Geo)
+See Also: [FinalBurn-Neo](FinalBurn-Neo), [Neo Geo](Neo-Geo)
 
 ***
 
