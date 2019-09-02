@@ -37,43 +37,50 @@ The files tested for this method came from the Megaton Edition on Steam on Windo
 4. In each of the three folders, edit `eduke32.cfg` so that `SelectedGRP = "nwinter.grp"`, `"dukedc.grp"` and `"vacation.grp"` respectively, instead of plain `"duke3d.grp"` Change any other settings you want for these addons, like maybe some Christmas-themed taunts for Nuclear Winter or some political taunts for Duke It Out in DC.
 
 5. `\\RETROPIE\configs\ports\duke3d\emulators.cfg` in the duke3d config folder normally looks like this:
-
->  `eduke32 = "/opt/retropie/ports/eduke32/eduke32 -j/home/pi/RetroPie/roms/ports/duke3d"`
-> `default = "eduke32"`
+```
+eduke32 = "/opt/retropie/ports/eduke32/eduke32 -j/home/pi/RetroPie/roms/ports/duke3d"
+default = "eduke32"
+```
 
 Change`\\RETROPIE\configs\ports\duke3d-nw\emulators.cfg` to look like this:
-
-> `eduke32 = "/opt/retropie/ports/eduke32/eduke32 -g nw/nwinter.grp -x nw/nwinter.con -j/home/pi/RetroPie/roms/ports/duke3d"`
-> `default = "eduke32"`
+```
+eduke32 = "/opt/retropie/ports/eduke32/eduke32 -g nw/nwinter.grp -x nw/nwinter.con -j/home/pi/RetroPie/roms/ports/duke3d"
+default = "eduke32"
+```
 
 (Note the `-x nw/nwinter.con`. You need that.)
 
-Change`\\RETROPIE\configs\ports\duke3d-dc\emulators.cfg` to look like this:
+Change `\\RETROPIE\configs\ports\duke3d-dc\emulators.cfg` to look like this:
+```
+eduke32 = "/opt/retropie/ports/eduke32/eduke32 -g dc/dukedc.grp -j/home/pi/RetroPie/roms/ports/duke3d"`
+default = "eduke32"
+```
 
-> `eduke32 = "/opt/retropie/ports/eduke32/eduke32 -g dc/dukedc.grp -j/home/pi/RetroPie/roms/ports/duke3d"`
-> `default = "eduke32"`
-
-Change`\\RETROPIE\configs\ports\duke3d-vacation\emulators.cfg` to look like this:
-
-> `eduke32 = "/opt/retropie/ports/eduke32/eduke32 -g vacation/vacation.grp -j/home/pi/RetroPie/roms/ports/duke3d"`
-> `default = "eduke32"`
+Change `\\RETROPIE\configs\ports\duke3d-vacation\emulators.cfg` to look like this:
+```
+eduke32 = "/opt/retropie/ports/eduke32/eduke32 -g vacation/vacation.grp -j/home/pi/RetroPie/roms/ports/duke3d"
+default = "eduke32"
+```
 
 6. In `\\RETROPIE\roms\ports` make three copies of `Duke Nukem 3D.sh`.
 
 Name the first one `Duke Nukem 3D - Nuclear Winter.sh` and it should say:
-
-> `#!/bin/bash`
-> `"/opt/retropie/supplementary/runcommand/runcommand.sh" 0 _PORT_ "duke3d-nw" ""`
+```
+#!/bin/bash
+"/opt/retropie/supplementary/runcommand/runcommand.sh" 0 _PORT_ "duke3d-nw" ""
+```
 
 Name the second one `Duke Nukem 3D - Duke It Out In DC.sh` and it should say:
-
-> `#!/bin/bash`
-> `"/opt/retropie/supplementary/runcommand/runcommand.sh" 0 _PORT_ "duke3d-dc" ""`
+```
+#!/bin/bash
+"/opt/retropie/supplementary/runcommand/runcommand.sh" 0 _PORT_ "duke3d-dc" ""
+```
 
 Name the third one `Duke Nukem 3D - Lifes a Beach.sh` and it should say:
-
-> `#!/bin/bash`
-> `"/opt/retropie/supplementary/runcommand/runcommand.sh" 0 _PORT_ "duke3d-vacation" ""`
+```
+#!/bin/bash
+"/opt/retropie/supplementary/runcommand/runcommand.sh" 0 _PORT_ "duke3d-vacation" ""
+```
 
 ### Installing NAM
 
@@ -88,14 +95,17 @@ The files tested for this method came from NAM on Steam on Windows and these ins
 4. Edit `\\RETROPIE\configs\ports\nam\eduke32.cfg` so that `SelectedGRP = "NAM.GRP"` and choose some taunts about giving free helicopter rides to Commies.
 
 5. Edit `\\RETROPIE\configs\ports\nam\emulators.cfg` to look like this:
+```
+eduke32 = "/opt/retropie/ports/eduke32/eduke32 -nam -g NAM.GRP -x NAM.CON -j/home/pi/RetroPie/roms/ports/duke3d/nam"
+default = "eduke32"
+```
 
->  `eduke32 = "/opt/retropie/ports/eduke32/eduke32 -nam -g NAM.GRP -x NAM.CON -j/home/pi/RetroPie/roms/ports/duke3d/nam"`
-> `default = "eduke32"`
+6. Add a file `\\RETROPIE\roms\ports\NAM.sh`, which should contain:
 
-6. Add a file `\\RETROPIE\roms\ports\NAM.sh` which should say:
-
-> `#!/bin/bash`
-> `"/opt/retropie/supplementary/runcommand/runcommand.sh" 0 _PORT_ "nam" ""`
+```
+#!/bin/bash
+"/opt/retropie/supplementary/runcommand/runcommand.sh" 0 _PORT_ "nam" ""
+```
 
 ## Controls:
 
