@@ -1,15 +1,16 @@
 |Version|
 |---|
-|4.1|
+|4.5.1|
 
 # Updating RetroPie
 
-The conventional way to update RetroPie and install new features is through the setup script. 
+The conventional way to update RetroPie and install new features is through the setup script.     
+The setup script can be accessed from the **RetroPie menu** in EmulationStation. 
 
-The setup script can be accessed from the **RetroPie menu** in emulationstation. 
+It can also be accessed from the terminal with `sudo ~/RetroPie-Setup/retropie_setup.sh`.
 
-It can also be accessed from the terminal with `sudo ~/RetroPie-Setup/retropie_setup.sh`
-
+**NOTE**: any updates require the RetroPie system to be **online**, otherwise downloading and installing the files required in the process will not work.
+ 
 **Before making any major updates it is important to make backups just in case [(see backup options below)](#making-a-backup-option-1).**
 
 ## Using the RetroPie Setup Script
