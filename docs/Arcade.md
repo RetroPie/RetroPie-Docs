@@ -12,7 +12,7 @@ Each emulator is optimised for different hardware and different games so read th
 
 RetroPie's arcade emulators come in two main flavors: [MAME](MAME) and [FinalBurn](FinalBurn-Neo).
 
-[MAME](MAME) is the most well-known and works with thousands of games. [FinalBurn](FinalBurn-Neo) is optimized for classic beat-em-up games like those from [Neo Geo](Neo-Geo) and Capcom.RetroPie includes multiple versions of both MAME and FinalBurn. Older versions require less processing power, but newer versions support more games and feature more accurate emulation.
+[MAME](MAME) is the most well-known and works with thousands of games. [FinalBurn](FinalBurn-Neo) is optimized for classic beat-em-up games like those from [Neo Geo](Neo-Geo) and Capcom. RetroPie includes multiple versions of both MAME and FinalBurn. Older versions require less processing power, but newer versions support more games and feature more accurate emulation.
 
 Use this table as a guide when choosing an emulator version:
 
@@ -27,7 +27,7 @@ Learn about other available versions on the pages about [MAME](MAME) and [FinalB
 
 ROMS are not included with RetroPie. Copyright law varies by country and is up to the user to determine legality.
 
-In general, you will only get good results with a full set of ROMs. Incomplete ROM sets (i.e. smaller collections of individual ROMs) are unlikely to work well. This is because certain roms (known as child roms) are dependent on files in other ROMs (known as parent ROMs) for example Pacman is actually an american clone (child) of the original japanese game Puckman (Parent) . Without both files, most games will immediately exit.
+In general, you will only get good results with a full set of ROMs. Incomplete ROM sets (i.e. smaller collections of individual ROMs) are unlikely to work well. This is because certain roms (known as child roms) are dependent on files in other ROMs (known as parent ROMs) for example Pacman is actually an american clone (child) of the original japanese game Puckman (Parent). Without both files, most games will immediately exit.
 
 There are a number of different rom set versions. Different versions contain different games (although there's plenty of overlap). This table tells you which rom set version you need for each emulator, and which games are in each set:
 
@@ -36,7 +36,7 @@ There are a number of different rom set versions. Different versions contain dif
 | [mame4all](MAME) | MAME 0.37b5 | 2270 | [List](https://docs.google.com/spreadsheets/d/1SHspjyHavY9-PKbO2swDr52BS2Wl_mB_Vjx2Z1SXiD8/edit) |
 | [lr-mame2003](MAME) | MAME 0.78 | 4705 | [List](https://docs.google.com/spreadsheets/d/1LP1MELCvcxu7TfiowF_0ZuvRVEMqlfQyTVetnOJvuJc/edit?usp=sharing) |
 | [pifba](FinalBurn-Alpha) | FB Alpha v0.2.96.71 | 684 | [List](https://docs.google.com/spreadsheets/d/1OZioLrz16ptaNbjQUDP5hhVzQDTOTn9Nz46Hbj3-06k/edit?usp=sharing) |
-| [lr-fbneo](FinalBurn-Neo) | FB Neo v0.2.97.44-WIP | 4896 | [List](https://docs.google.com/spreadsheets/d/1GaqIIoiWbzKHwZ52S2xCSDQXILo81Ls1mHK6czKGAtM/edit?usp=sharing) |
+| [lr-fbneo](FinalBurn-Neo) | FB Neo v0.2.97.44-WIP | 4898 | [List](https://docs.google.com/spreadsheets/d/1GaqIIoiWbzKHwZ52S2xCSDQXILo81Ls1mHK6czKGAtM/edit?usp=sharing) |
 
 To sum up, for best results:
 
