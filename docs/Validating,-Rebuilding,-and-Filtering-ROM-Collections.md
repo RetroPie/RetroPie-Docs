@@ -19,7 +19,7 @@ So how do you tell you have the right ROM if you aren't sure that your set match
 
 Once you begin working with software tools to help validate, rebuild, or filter your ROM collection, you will quickly encounter the need for "DAT" files, so named because they usually (but not always!) have the file extension `.dat`.
 
-DATs describe the ROM contents including filenames, file sizes, and checksums to verify contents are not incorrect or corrupt. DATs are usually maintained either by emulator developers (such as with MAME or Final Burn Alpha) or digital preservation organizations like TOSEC and No-Intro. Almost all DATs are volunteer efforts and represent one of the most important and impressive outcomes of the video game preservation community.
+DATs describe the ROM contents including filenames, file sizes, and checksums to verify contents are not incorrect or corrupt. DATs are usually maintained either by emulator developers (such as with MAME or FinalBurn Neo) or digital preservation organizations like TOSEC and No-Intro. Almost all DATs are volunteer efforts and represent one of the most important and impressive outcomes of the video game preservation community.
 
 In order to verify or rebuild a set, you need its corresponding DAT file and a software tool to process the DAT. For example, the authors of RetroArch recommend that Super Nintendo Entertainment System ROM collections be validated against the No-Intro "Nintendo - Super Nintendo Entertainment System" DAT. ROM collections for use with the MAME 2003 emulator should be validated against a "MAME 0.78" DAT [(such as the one found in its metadata folder)](https://github.com/libretro/mame2003-libretro/tree/master/metadata). And so on.
 
