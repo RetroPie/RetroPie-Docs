@@ -34,9 +34,9 @@ There are a number of different rom set versions. Different versions contain dif
 | Emulator | Required ROM Version | # of ROMs | Compatibility List |
 | :---: | :---: | :---: | :---: |
 | [mame4all](MAME) | MAME 0.37b5 | 2270 | [List](https://docs.google.com/spreadsheets/d/1SHspjyHavY9-PKbO2swDr52BS2Wl_mB_Vjx2Z1SXiD8/edit) |
-| [lr-mame2003](MAME) | MAME 0.78 | 4705 | [List](https://docs.google.com/spreadsheets/d/1LP1MELCvcxu7TfiowF_0ZuvRVEMqlfQyTVetnOJvuJc/edit?usp=sharing) |
+| [lr-mame2003](MAME) | MAME 0.78 | 4720 | [List](https://docs.google.com/spreadsheets/d/1LP1MELCvcxu7TfiowF_0ZuvRVEMqlfQyTVetnOJvuJc/edit?usp=sharing) |
 | [pifba](FinalBurn-Alpha) | FB Alpha v0.2.96.71 | 684 | [List](https://docs.google.com/spreadsheets/d/1OZioLrz16ptaNbjQUDP5hhVzQDTOTn9Nz46Hbj3-06k/edit?usp=sharing) |
-| [lr-fbneo](FinalBurn-Neo) | FB Neo v0.2.97.44-WIP | 4898 | [List](https://docs.google.com/spreadsheets/d/1GaqIIoiWbzKHwZ52S2xCSDQXILo81Ls1mHK6czKGAtM/edit?usp=sharing) |
+| [lr-fbneo](FinalBurn-Neo) | FB Neo v0.2.97.44-WIP | 4896 | [List](https://docs.google.com/spreadsheets/d/1GaqIIoiWbzKHwZ52S2xCSDQXILo81Ls1mHK6czKGAtM/edit?usp=sharing) |
 
 To sum up, for best results:
 
