@@ -62,7 +62,7 @@ The [lr-mame2003](https://github.com/libretro/mame2003-libretro/tree/master/meta
 
 It is possible to 'rebuild' from one version of an ROM collection to another. If you also have access to ROMs from a newer or older ROM collection you can 'roll forward' or 'roll back' your ROM version.
 
-The wiki pages for [MAME](https://github.com/RetroPie/RetroPie-Setup/wiki/MAME), [FB Alpha](https://github.com/RetroPie/RetroPie-Setup/wiki/FinalBurn-Alpha), and [Neo Geo](https://github.com/RetroPie/RetroPie-Setup/wiki/Neo-Geo) include DATs and detailed information about the ROM sets needed for the various arcade emulators.
+The wiki pages for [MAME](https://github.com/RetroPie/RetroPie-Setup/wiki/MAME), [FB Neo](https://github.com/RetroPie/RetroPie-Setup/wiki/FinalBurn-Neo), and [Neo Geo](https://github.com/RetroPie/RetroPie-Setup/wiki/Neo-Geo) include DATs and detailed information about the ROM sets needed for the various arcade emulators.
 
 The remainder of this section of the docs is devoted to a demonstration of using ClrMamePro to rebuild and validate arcade ROM sets. The tutorial uses a MAME 0.37b5 collection as well as a PiFBA collection (in the video version) to demonstrate the process.
 
