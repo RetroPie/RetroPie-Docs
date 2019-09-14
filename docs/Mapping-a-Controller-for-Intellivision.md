@@ -132,10 +132,146 @@ For the right controller, it is advised that every input is mapped as this is no
 
 Once amended to suit, save the keyboard hack file as `hackfile.cfg` in your Intellivision roms folder.
 
-###Configuring jzIntv
+## Configuring jzIntv
 
 To use the keyboard hack file, you need to add the `--kbdhackfile` flag when launching jzIntv.
 
 Amend the line in `/opt/retropie/configs/intellivision/emulators.cfg` to launch jzIntv to :
 
     jzintv = "/opt/retropie/emulators/jzintv/bin/jzintv -p /home/pi/RetroPie/BIOS -q --kbdhackfile=/home/pi/RetroPie/roms/intellivision/hackfile.cfg %ROM%"
+
+## Advanced Controller Mapping
+
+**Combo Events**
+
+Pairs of events can be combined into "combination events."  jzIntv lets you define up to 32 combo events named "COMBO0" through "COMBO31". These events look like normal event inputs.  You can bind these to event actions like any other event input.
+
+To define a combo event, use the ADD_COMBO keyword:
+<pre>ADD_COMBO [combo_number] [event_input] [event_input]</pre>
+
+For example:
+<pre>ADD_COMBO 0 JS0_BTN_02 JS0_BTN_03  ; Left Controller Button 2 + Left Controller Button 3 now generates COMBO0</pre>
+
+Combo events can then be assigned to INTV controller inputs:
+<pre>COMBO0 PD0R_KP1  ; Pressing Left Controller Button 2 + Left Controller Button 3 now returns input PD0R_KP1</pre>
+
+Combo events can be particularly useful in mapping games that use the INTV keypad for 8-direction shooting (AD&D, Night Stalker, TRON) and those where keypad presses refer to game zone locations (Super Pro Football, Spiker Super Pro Volleyball). For example, the following Xbox 360 controller example enables 8-direction shooting using just the ABXY controller buttons:
+<pre>ADD_COMBO 0 JS0_BTN_02 JS0_BTN_03
+ADD_COMBO 1 JS0_BTN_03 JS0_BTN_01
+ADD_COMBO 2 JS0_BTN_00 JS0_BTN_01
+ADD_COMBO 3 JS0_BTN_00 JS0_BTN_02
+COMBO0 PD0R_KP1  ; X+Y - Shoot northwest
+COMBO1 PD0R_KP3  ; B+Y - Shoot northeast
+COMBO2 PD0R_KP9  ; A+B - Shoot southeast
+COMBO3 PD0R_KP7  ; A+X - Shoot southwest
+JS0_BTN_00 PD0R_KP8  ; A - Shoot south
+JS0_BTN_01 PD0R_KP6  ; B - Shoot east
+JS0_BTN_02 PD0R_KP4  ; X - Shoot west
+JS0_BTN_03 PD0R_KP2  ; Y - Shoot north</pre>
+
+**Creating RetroArch Hotkey Equivalents**
+
+Adding the following to a keyboard hack file will add RetroArch equivalent hotkey functionality to jzIntv:
+<pre>; -----------------------------------------------------------------------------------------
+MAP 0      ; keymap 0 (default keymap)
+; -----------------------------------------------------------------------------------------
+
+JS0_BTN_08 PSH3  ; Replace existing JS0_BTN_08 row with this
+JS1_BTN_08 PSH3  ; Replace existing JS1_BTN_08 row with this
+
+; -----------------------------------------------------------------------------------------
+MAP 3      ; keymap 3 (hotkey keymap)
+; -----------------------------------------------------------------------------------------
+
+; ***** Joystick #0 - Left Controller *****
+; ** Side Buttons and Numeric Keypad **
+JS0_BTN_00 NA
+JS0_BTN_01 RESET
+JS0_BTN_02 NA
+JS0_BTN_03 NA
+JS0_BTN_04 NA
+JS0_BTN_05 NA
+JS0_BTN_06 NA
+JS0_BTN_07 NA
+JS0_BTN_08 PSH3
+JS0_BTN_09 QUIT
+JS0_BTN_10 NA
+JS0_BTN_11 NA
+JS0_BTN_12 NA
+JS0_HAT0_W NA
+JS0_HAT0_E NA
+JS0_HAT0_N NA
+JS0_HAT0_S NA
+
+; ***** Joystick #1 - Right Controller *****
+; ** Side Buttons and Numeric Keypad **
+JS1_BTN_00 NA
+JS1_BTN_01 RESET
+JS1_BTN_02 NA
+JS1_BTN_03 NA
+JS1_BTN_04 NA
+JS1_BTN_05 NA
+JS1_BTN_06 NA
+JS1_BTN_07 NA
+JS1_BTN_08 PSH3
+JS1_BTN_09 QUIT
+JS1_BTN_10 NA
+JS1_BTN_11 NA
+JS1_BTN_12 NA
+JS1_HAT0_W NA
+JS1_HAT0_E NA
+JS1_HAT0_N NA
+JS1_HAT0_S NA</pre>
+**Event Actions**
+
+Each event input can also be assigned to trigger a single system action.  Here are some commonly used jzIntv defined actions:
+<pre>NA          Ignore keystroke
+QUIT        Quit jzIntv
+RESET       Reset the Intellivision
+PAUSE       Pause the game
+MOVIE       Toggle movie recording
+AVI         Toggle AVI recording
+SHOT        Request a screen shot
+VOLUP       Increase jzIntv's volume
+VOLDN       Decrease jzIntv's volume</pre>
+## Advanced Configuration
+
+**Enabling Intellivoice and ECS Support**
+
+For games that require Intellivoice support, add an additional "jzintv-voice" line that includes the 'v1' parameter to `/opt/retropie/configs/intellivision/emulators.cfg` per below:
+<pre>jzintv-voice = "/opt/retropie/emulators/jzintv/bin/jzintv -p /home/pi/RetroPie/BIOS -q --kbdhackfile=/home/pi/RetroPie/roms/intellivision/hackfile.cfg %ROM%" -v1</pre>
+For games that require Intellivision ECS support, add an additional "jzintv-ecs" line that includes the 's1' parameter to `/opt/retropie/configs/intellivision/emulators.cfg` per below:
+<pre>jzintv-ecs = "/opt/retropie/emulators/jzintv/bin/jzintv -p /home/pi/RetroPie/BIOS -q --kbdhackfile=/home/pi/RetroPie/roms/intellivision/hackfile.cfg %ROM%" -s1</pre>
+Note that games requiring Intellivoice and/or ECS support must be assigned to the lines defined above using the [Runcommand Launch Menu](https://github.com/RetroPie/RetroPie-Setup/wiki/runcommand).
+
+**Screen and Resolution Settings**
+
+To enable full screen display, add the "-f1" parameter to `/opt/retropie/configs/intellivision/emulators.cfg`.
+
+To change jzIntv's default display resolution, add the "-z#" parameter to `/opt/retropie/configs/intellivision/emulators.cfg`. Predefined resolutions include:
+<pre>-z0 : 320x200x8
+-z1 : 640x480x8
+-z2 : 320x240x16
+-z3 : 1024x768x8
+-z4 : 1680x1050x8  ; This resolution seems to scale most accurately on a 1080p television
+-z5 : 800x400x16
+-z6 : 1600x1200x32
+-z7 : 3280x1200x32</pre>
+Alternatively, custom resolutions can specified using the following:
+<pre>z#x#,#  display resolution and colour bit depth; eg. -z14400x1080,8</pre>
+**Using Custom Palettes**
+
+Newer versions of jzIntv support custom color palettes through use of the "--gfx-" parameter in `/opt/retropie/configs/intellivision/emulators.cfg`. See the "Combining Parameters" section below for an example.  Also see the sample files [here](https://github.com/ts-x4/jzIntv_on_RetroPie/tree/master/gfx) for formatting requirements.
+
+**Advanced Joystick Settings**
+
+Per the [official documentation](http://spatula-city.org/~im14u2c/intv/jzintv/doc/jzintv/joystick.txt), a number of advanced parameters can be specified for joysticks used with jzIntv.  The following combination can be used to eliminate analog dead-zone issues with Xbox 360 controllers:
+<pre>--js0="ac,push=30,rels=25" --js1="ac,push=30,rels=25"</pre>
+
+**Combining Parameters**
+
+The parameters above can be combined as needed.  As an example, adding the following line to `/opt/retropie/configs/intellivision/emulators.cfg` would create an emulator option that enables Intellivoice support, 1680x1050x8 resolution, fullscreen display, a custom palette, joystick autocenter, and an analog joystick dead-zone:
+<pre>jzintv-voice-plus = "/opt/retropie/emulators/jzintv/bin/jzintv -p /home/pi/RetroPie/BIOS --gfx-palette=/home/pi/RetroPie/roms/intellivision/gfx-default.gfx --js0="ac,push=30,rels=25" --js1="ac,push=30,rels=25" --kbdhackfile=/home/pi/RetroPie/roms/intellivision/hackfile.cfg %ROM%" -z4 -f1 -q -v1 -s0</pre>
+## Pre-Built Customized Keyboard Hack and Configuration Files
+
+A library of customized keyboard hack, configuration, palette, controller card, and control description files for 140+ Intellivision games can be found here (LINK COMING SOON).
