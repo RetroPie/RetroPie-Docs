@@ -238,9 +238,9 @@ VOLDN       Decrease jzIntv's volume</pre>
 
 **Enabling Intellivoice and ECS Support**
 
-For games that require Intellivoice support, add an additional "jzintv-voice" line that includes the 'v1' parameter to `/opt/retropie/configs/intellivision/emulators.cfg` per below:
+For games that require Intellivoice support, add an additional "jzintv-voice" line that includes the '-v1' parameter to `/opt/retropie/configs/intellivision/emulators.cfg` per below:
 <pre>jzintv-voice = "/opt/retropie/emulators/jzintv/bin/jzintv -p /home/pi/RetroPie/BIOS -q --kbdhackfile=/home/pi/RetroPie/roms/intellivision/hackfile.cfg %ROM%" -v1</pre>
-For games that require Intellivision ECS support, add an additional "jzintv-ecs" line that includes the 's1' parameter to `/opt/retropie/configs/intellivision/emulators.cfg` per below:
+For games that require Intellivision ECS support, add an additional "jzintv-ecs" line that includes the '-s1' parameter to `/opt/retropie/configs/intellivision/emulators.cfg` per below:
 <pre>jzintv-ecs = "/opt/retropie/emulators/jzintv/bin/jzintv -p /home/pi/RetroPie/BIOS -q --kbdhackfile=/home/pi/RetroPie/roms/intellivision/hackfile.cfg %ROM%" -s1</pre>
 Note that games requiring Intellivoice and/or ECS support must be assigned to the lines defined above using the [Runcommand Launch Menu](https://github.com/RetroPie/RetroPie-Setup/wiki/runcommand).
 
@@ -258,7 +258,7 @@ To change jzIntv's default display resolution, add the "-z#" parameter to `/opt/
 -z6 : 1600x1200x32
 -z7 : 3280x1200x32</pre>
 Alternatively, custom resolutions can specified using the following:
-<pre>z#x#,#  display resolution and colour bit depth; eg. -z14400x1080,8</pre>
+<pre>-z#x#,#  display resolution and colour bit depth; eg. -z14400x1080,8</pre>
 **Using Custom Palettes**
 
 Newer versions of jzIntv support custom color palettes through use of the "--gfx-" parameter in `/opt/retropie/configs/intellivision/emulators.cfg`. See the "Combining Parameters" section below for an example.  Also see the sample files [here](https://github.com/ts-x4/jzIntv_on_RetroPie/tree/master/gfx) for formatting requirements.
