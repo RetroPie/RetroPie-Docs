@@ -18,7 +18,7 @@ Make a note of these bindings as they will be used in creating the keyboard hack
 
 ## Mappings in a Keyboard Hack File
 
-To create a keyboard hack file, it is a case of taking each joystick event and mapping it to the appropriate INTV controller input. The latter is detailed in the [official documentation](http://spatula-city.org/~im14u2c/intv/jzintv-1.0-beta3/doc/jzintv/kbdhackfile.txt) and the relevant section is given below:
+To create a keyboard hack file, it is a case of taking each joystick event and mapping it to the appropriate INTV controller input. The latter is detailed in the [official documentation](http://spatula-city.org/~im14u2c/intv/jzintv/doc/jzintv/kbdhackfile.txt) and the relevant section is given below:
 
 <pre>
 Controller inputs start with one of the following four prefixes:
