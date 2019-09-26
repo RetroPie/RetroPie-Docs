@@ -56,6 +56,9 @@ No-Intro's DAT-o-MATIC (DoM) also allows you to download DATs for their currentl
 
 The [lr-mame2003](https://github.com/libretro/mame2003-libretro/tree/master/metadata) core and [lr-mame2010](https://github.com/libretro/mame2010-libretro/tree/master/metadata) core maintain a `catver.ini` file in their github repositories. `catver.ini` can be used with ROM management tools such as [ROMLister](https://www.waste.org/~winkles/ROMLister/), [Simple Arcade Multifilter](https://retropie.org.uk/forum/topic/7606/simple-arcade-multifilter-app-for-mame-and-fb-alpha-sets-get-rid-of-adult-and-mahjong-games/) and [MFM - Mame File Manager](https://github.com/phweda/MFM/) in order to sort and filter a MAME collection by genre or by other tags, such as whether it includes "Mature" content.
 
+[MAME Clones Worth Playing](https://github.com/superjamie/lazyweb/wiki/MAME-Clones-Worth-Playing/)
+
+
 ***
 
 # Validating and Rebuilding ROMs
