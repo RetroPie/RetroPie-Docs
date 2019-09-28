@@ -42,6 +42,12 @@ Roms Dir: /home/pi/RetroPie/roms/fba
 Samples Dir: /home/pi/RetroPie/BIOS/fbneo/samples/
 Binary Dir: /opt/retropie/libretrocores/lr-fbneo
 Config Dir: /opt/retropie/configs/fba/retroarch.cfg
+
+Game remaps: /opt/retropie/configs/arcade/FinalBurn Neo, **or** /opt/retropie/configs/fba/FinalBurn Neo, **or** /opt/retropie/configs/neogeo/FinalBurn Neo
+
+High scores / NVRAM files: /home/pi/RetroPie/roms/arcade/fbneo, **or** /home/pi/RetroPie/roms/fba/fbneo, **or** /home/pi/RetroPie/roms/neogeo/fbneo
+
+NOTE: If you have updated RetroPie from an existing installation since 27th May 2019, lr-fbneo now replaces lr-fbalpha. However if you have existing game remaps, samples, or high scores, you will need to rename the directories to match the above, otherwise lr-fbneo will not be able to find these files.
 ```
 **ROM Version**: Subset of latest MAME/HBMAME roms available
 
