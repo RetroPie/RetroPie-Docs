@@ -39,7 +39,7 @@ Accepted File Extensions: **.7z .zip**
 
 ```shell
 Roms Dir: /home/pi/RetroPie/roms/fba
-Samples Dir: /home/pi/RetroPie/BIOS/fba/samples/
+Samples Dir: /home/pi/RetroPie/BIOS/fbneo/samples/
 Binary Dir: /opt/retropie/libretrocores/lr-fbneo
 Config Dir: /opt/retropie/configs/fba/retroarch.cfg
 ```
