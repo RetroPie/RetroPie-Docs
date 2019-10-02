@@ -80,7 +80,7 @@ For example the warcraft II settings are located here:
 `/home/pi/.stratagus/wc2/preferences.lua`
 ```
 
-### Installing Starcraft using Stargus for Stratagus
+### Detailed Instructions - Installing Starcraft 
 
 Stargus is a Starcraft Mod that allows you to play Starcraft with the Stratagus engine. It should be noted that this emulator is still in pre-alpha stage & development is far from complete. From the developer website "Terran and most Zerg units work, with Protoss being less complete. Many of the special features are not implemented, such as flying Terran buildings, Zerg creep, or Protoss shields. Many animations are also missing. The campaign is not being worked on at all."
 
