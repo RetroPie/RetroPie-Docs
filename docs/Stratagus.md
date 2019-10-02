@@ -11,24 +11,80 @@ _Stratagus is a free cross-platform real-time strategy gaming engine. Besides ma
 ## Emulator: [Stratagus](https://wargus.github.io/)
 
 ## ROMS
-Stratagus runs games from properly configured game directories. For the Warcraft and Starcraft titles, run the appropriate extraction tools to extract the original data into a Stratagus game folder. You can get the extraction tools from https://github.com/Wargus/wargus for Warcraft 2, https://github.com/Wargus/war1gus for Warcraft 1, https://github.com/Wargus/stargus for Starcraft. Copy the extracted folder to the roms directory, adding a ".data" to the folder name.
-
-Place your folders of game files in
+Stratagus runs games from properly configured game directories. For the Warcraft and Starcraft titles, extraction tools are required to extract the original game assets into a Stratagus-compatible game folder. You can get the extraction tools for linux here:
 ```
-/home/pi/RetroPie/roms/stratagus
+https://github.com/Wargus/war1gus
+(Warcraft 1)
+https://github.com/Wargus/wargus
+(Warcraft 2)
+https://github.com/Wargus/stargus
+(Starcraft)
 ```
 
-After you've added you files into the stratagus rom folder, the folder names appear in the selection UI and you can start them from there directly. All graphics settings are done in-game.
+Or windows versions of the tools may be downloaded from here:
+```
+https://wargus.github.io/war1gus.html  
+(Warcraft 1)
+https://wargus.github.io/
+(Warcraft 2)
+https://wargus.github.io/stargus.html
+(Starcraft)
+```
+
+The tools are designed to be used in conjunction with an official installation CD or installation directory. Run the extraction tools as shown in the detailed installation instructions section and once finished, copy the relevant folder(s) into the retropie roms directory, adding a ".data" to the folder name.
+
+For example -
+```
+/home/pi/RetroPie/roms/stratagus/<GAME>.data
+```
+
+After you've added your files into the stratagus rom folder with the correct names and restarted emulationstation, the names should appear in the Emulationstation UI and you can start them directly from there. All graphics settings are configured in-game.
+
+### Detailed instructions - Installing Warcraft / Warcraft 
+II
+**Note 1: this will not work with the Battle.net Edition of Warcraft II**
+** Note 2: Windows XP users might have trouble extracting the data needed from the Warcraft II installation location. Please see http://wargus.github.io/faq.html#winxp for further details **
+
+Firstly, the installation will not work just by copying the contents of the Warcraft or Warcraft 2 CD over to the roms folder of the Raspberry Pi. You must run the Wargus and/or War1gus installer from either Windows, Mac OS X or Linux to correctly extract the game assets. Running the tools from windows is arguably the most straightforward option and can be carried out as follows: 
+
+* Go to the official Wargus website (http://wargus.github.io/) and download the latest stable Windows version of Wargus and/or War1gus
+* Install Wargus and/or War1gus. During installation, the installer will ask for the location of your Warcraft / Warcraft II data. You can point the installer to the official installation CD (or if you have the game already installed, the game installation directory should also work)
+* (Optional) if you have the Expansion Pack "Beyond the Dark Portal" for Warcraft II, then point the installer to that data as well (this can be skipped if you don't have the Expansion Pack)
+* At the end of the install you can go ahead and launch the game from Windows to make sure it works. If it does then we're ready to start copying data over to the Raspberry Pi
+* In Windows navigate to "C:\Program Files (x86)\Wargus" or "C:\Program Files\Wargus" and copy only the sub-directories to `/home/pi/RetroPie/roms/stratagus/warcraft2.data` on your Raspberry Pi
+
+The sub-directories that need to be copied are as followed:
+
+* campaigns
+* graphics
+* maps
+* music
+* scripts
+* sounds
+* videos
+
+#### Wargus/War1gus settings file Location for Stratagus
+
+The settings files for stratagus are located here:
+```
+`/home/pi/.stratagus/
+```
+For example the warcraft II settings are located here:
+```
+`/home/pi/.stratagus/wc2/preferences.lua`
+```
 
 ### Installing Starcraft using Stargus for Stratagus
 
-Stargus is a Starcraft Mod that allows you to play Starcraft with the Stratagus engine. The game looks and sounds exactly like Starcraft.
+Stargus is a Starcraft Mod that allows you to play Starcraft with the Stratagus engine. It should be noted that this emulator is still in pre-alpha stage & development is far from complete. From the developer website "Terran and most Zerg units work, with Protoss being less complete. Many of the special features are not implemented, such as flying Terran buildings, Zerg creep, or Protoss shields. Many animations are also missing. The campaign is not being worked on at all."
 
 #### Install Stargus
 
-Install details for platforms are found here: https://github.com/Wargus/stargus
+Install details for all platforms can be found here: https://github.com/Wargus/stargus
 
-This guide shows the method for installing on windows. Download and install the executable found [HERE](https://github.com/Wargus/stargus/releases/tag/master-builds)
+This guide shows the method for installing on windows:
+
+Download and install the executable found [HERE](https://github.com/Wargus/stargus/releases/tag/master-builds) or download the extraction tool for Windows from https://wargus.github.io/stargus.html 
 
 #### Extract Starcraft Assets
 
@@ -44,50 +100,19 @@ C:\Users\<USERNAME>\AppData\Roaming\Stratagus\data.Stargus
 
 It should be ~500MB
 
-There are also some assets in the the following folder but they may or may not need to be copied over.
+There are also some assets in the the following folder - these should also be copied over.
 
 ```
 C:\Program Files (x86)\Stargus
 ```
 
-Copy the contents of the paths above into 
+Copy the contents of both paths to
 
 ```
 /home/pi/RetroPie/roms/stratagus/starcraft.data
 ```
 
-restart emulationstation and it should show up as an option in stratagus
-
-### How to install Warcraft II using Wargus for Stratagus
-
-Wargus is a Warcraft II Mod that allows you to play Warcraft II with the Stratagus engine. The game looks and sounds exactly like Warcraft II.
-
-**Note: this will not work with the Battle.net Edition of Warcraft II**
-
-Windows XP users might have trouble extracting the data needed from the Warcraft II installation location.
-http://wargus.github.io/faq.html#winxp
-
-First, you don't get it to work just by copying your Warcraft II CD over to your Raspberry Pi. You actually run the Wargus installer from either Windows, Mac OS X or Linux (not sure if it works on an ARM Linux). I did the Windows route and this is how I did it:
-
-* Go to the [official Wargus website](http://wargus.github.io/) and download the Windows version of Wargus v2.4.1 or newer (there is also a [YouTube video](https://www.youtube.com/watch?v=fnY13i105LE) showing you how to install this)
-* Now install Wargus and the installation will ask for your Warcraft II data so point it to your CD (or if you have your data copied to your hard drive then point to that directory)
-* (Optional) if you have the Expansion Pack "Beyond the Dark Portal" then point the installer to that data (this can be skipped if you don't have the Expansion Pack)
-* At the end of the install you can go ahead and launch Warcraft II to make sure it works and if it does then we're ready to start copying data over to your Raspberry Pi
-* In Windows navigate to "C:\Program Files (x86)\Wargus" or "C:\Program Files\Wargus" and only copy the sub-directories to `/home/pi/RetroPie/roms/stratagus/warcraft2.data` on your Raspberry Pi
-
-The sub-directories that need to be copied are as followed:
-
-* campaigns
-* graphics
-* maps
-* music
-* scripts
-* sounds
-* videos
-
-#### Wargus/Warcraft II settings file Location for Stratagus
-
-`/home/pi/.stratagus/wc2/preferences.lua`
+Restart emulationstation and it should show up as an option in stratagus
 
 ### Stratagus Hotkeys
 
