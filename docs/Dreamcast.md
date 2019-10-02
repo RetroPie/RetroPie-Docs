@@ -118,6 +118,20 @@ If you want to be able to use 2 controllers at the same time, then you would add
 nb = 2
 ```
 
+In more recent builds of reicast, the +Start Reicast script launches a landing page with a game menu with containing a  'settings' button. Controllers can be mapped directly from the settings menu - this creates config files looking like:
+
+```
+/opt/retropie/configs/dreamcast/mappings/evdev_Xbox360WirelessReceiver(XBOX).cfg
+```
+
+In stock configuration, access to this menu is controlled from the D-Pad of a controller with an analog stick. In the case where your controller does not have an analog stick, it may be necessary to connect one in order to access this part of the menu and create mappings for your other controllers.
+
+Some example mappings are provided below for various controllers which can be directly edited from the 
+```
+/opt/retropie/configs/dreamcast/mappings/
+```
+Folder listed above.
+
 An example mapping for a PS3 controller is below for reference:
 
 **PlayStation 3 Controller**
