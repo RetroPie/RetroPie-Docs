@@ -52,7 +52,12 @@ Firstly, the installation will not work just by copying the contents of the Warc
 * Install Wargus and/or War1gus. During installation, the installer will ask for the location of your Warcraft / Warcraft II data. You can point the installer to the official installation CD (or if you have the game already installed, the game installation directory should also work)
 * (Optional) if you have the Expansion Pack "Beyond the Dark Portal" for Warcraft II, then point the installer to that data as well (this can be skipped if you don't have the Expansion Pack)
 * At the end of the install you can go ahead and launch the game from Windows to make sure it works. If it does then we're ready to start copying data over to the Raspberry Pi
-* In Windows navigate to "C:\Program Files (x86)\Wargus" or "C:\Program Files\Wargus" and copy only the sub-directories to `/home/pi/RetroPie/roms/stratagus/warcraft2.data` on your Raspberry Pi
+* In Windows navigate to "C:\Program Files (x86)\Wargus" or "C:\Program Files\Wargus" and copy only the sub-directories to 
+```
+/home/pi/RetroPie/roms/stratagus/<GAME>.data`
+(e.g. /home/pi/RetroPie/roms/stratagus/warcraft2.data)
+```
+On your Raspberry Pi
 
 The sub-directories that need to be copied are as followed:
 
