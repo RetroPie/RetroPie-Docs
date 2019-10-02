@@ -1,7 +1,7 @@
 ***
 ![](http://clonekeenplus.sourceforge.net/img/title.png)
 ***
-Commander Keen was a video game series originally on DOS created by id Software. There never was an official 'Universe is Toast' trilogy, because other projects like Wolfenstein 3D were more interesting for the market. Nevertheless fans created an unofficial trilogy of that one and many other mods, like other stories with new levels, which can be play using Commander Genius.
+Commander Keen was a video game series originally on DOS created by id Software. There never was an official 'Universe is Toast' trilogy, because other projects like Wolfenstein 3D were more interesting for the market. Nevertheless fans created an unofficial trilogy and many other mods, which can be played using Commander Genius.
 ***
 
 ## Emulator: [Commander Genius](http://clonekeenplus.sourceforge.net/)
@@ -10,9 +10,21 @@ Commander Keen was a video game series originally on DOS created by id Software.
 
 Place your Commander Keen Games in:
 ```
-/home/pi/RetroPie/roms/ports/cgenius/games/gamename/
+/home/pi/RetroPie/roms/ports/cgenius/games/gamename/ (It is recommended to use keen1, keen2, keen3 etc. for the gamename)
 ```
-By default the emulator comes with 3 Commander Keen games, follow the file format of the games that are there when adding new games. You can then select them from the Commander Genius Launch Menu.
+
+By default the emulator comes with 3 Commander Keen games, follow the file format of the games that are already there where possible when adding new games - A typical set of files look like this (example taken from commander Keen 5): 
+AUDIO.CK5
+CONFIG.CK5
+EGAGRAPH.CK5
+GAMEMAPS.CK5
+KEEN5E.EXE
+
+Please note that for Commander Keen 6, the executable KEEN6C.EXE will not work with Commander Genius (If you have this version, it it from a cracked source and was originally created to remove the 'creature question' at the start of the game, which asked you for information on the names of some of the enemies from the user manual). 
+
+Commander Genius removes this prompt from the official version in the emulator anyway, but it requires the official KEEN6.EXE file from the game to be used.
+
+Once the relevant files are copied to the folder locations you can then select them from the Commander Genius Launch Menu.
 
 ### Supported official Games
 
