@@ -17,20 +17,16 @@ Place your Commander Keen Games in:
 By default the emulator comes with 3 Commander Keen games, follow the file format of the games that are already there where possible when adding new games - A typical set of files look like this (example taken from commander Keen 5): 
 
 AUDIO.CK5
-
 CONFIG.CK5
-
 EGAGRAPH.CK5
-
 GAMEMAPS.CK5
-
 KEEN5E.EXE
 
-Please note that for Commander Keen 6, the executable KEEN6C.EXE will not work with Commander Genius (If you have this version, it it from a cracked source and was originally created to remove the 'creature question' at the start of the game, which asked you for information on the names of some of the enemies from the user manual). 
+Please note that for Commander Keen 6, the executable KEEN6C.EXE will not work with Commander Genius (If you have this version, it it from an unofficial source and was originally created to remove the 'creature question' at the start of the game, which asked you for information on the names of some of the enemies from the user manual). 
 
-Commander Genius removes this prompt from the official version in the emulator anyway, but it requires the official KEEN6.EXE file from the game to be used.
+Commander Genius removes this prompt from the official version in the emulator anyway, but it requires the KEEN6.EXE file from the official game to be used.
 
-Once the relevant files are copied to the folder locations you can then select them from the Commander Genius Launch Menu.
+Once the relevant files are copied to the folder locations you can then select the games from the Commander Genius Launch Menu.
 
 ### Supported official Games
 
