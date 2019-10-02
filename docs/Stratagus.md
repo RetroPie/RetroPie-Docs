@@ -54,9 +54,9 @@ Firstly, the installation will not work just by copying the contents of the Warc
 * At the end of the install you can go ahead and launch the game from Windows to make sure it works. If it does then we're ready to start copying data over to the Raspberry Pi
 * In Windows navigate to "C:\Program Files (x86)\Wargus" or "C:\Program Files\Wargus" and copy only the sub-directories to 
 ```
-/home/pi/RetroPie/roms/stratagus/<GAME>.data`
-(e.g. /home/pi/RetroPie/roms/stratagus/warcraft2.data)
+/home/pi/RetroPie/roms/stratagus/<GAME>.data
 ```
+e.g. /home/pi/RetroPie/roms/stratagus/warcraft2.data
 On your Raspberry Pi
 
 The sub-directories that need to be copied are as followed:
