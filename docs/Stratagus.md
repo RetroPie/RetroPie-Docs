@@ -93,13 +93,18 @@ Install details for all platforms can be found here: https://github.com/Wargus/s
 
 This guide shows the method for installing on windows:
 
-Download and install the executable found [HERE](https://github.com/Wargus/stargus/releases/tag/master-builds) or download the extraction tool for Windows from https://wargus.github.io/stargus.html 
+Download and install the full executable found [HERE](https://github.com/Wargus/stargus/releases/tag/master-builds) or download the extraction tool for Windows from https://wargus.github.io/stargus.html. In order to use the extraction tool you may also have to install the stratagus engine. Binaries are available here: 
+```
+https://github.com/wargus/stratagus
+```
 
 #### Extract Starcraft Assets
 
-Make sure you have the original CD install files. Install StarCraft and take note of the path where it is installed. Copy the `INSTALL.EXE` from the CD to where the game was installed and rename it to `starcraft.mpq`.
+The installer may ask you to point it to the starcraft location. This can be done by mounting the official CD image, or by pointing the installer at the starcraft installation folder. 
 
-Alternatively, you could download the StarCraft: Remastered installer from Blizzard and install the game from it, as it will provide the files you need, usually to "C:\Program Files (x86)\StarCraft". 
+If using the installation folder, make sure to also copy the `INSTALL.EXE` from the CD to where the game was installed, and rename it to `starcraft.mpq` before progressing.
+
+Alternatively, you can download the StarCraft: Remastered installer from Blizzard and install the game from it - this will will provide all the files you need, usually to the "C:\Program Files (x86)\StarCraft" directory.
 
 Start up Stargus and select `starcraft.mpq` and it will begin extracting the assets needed to run on Stratagus. They will be extracted to:
 
