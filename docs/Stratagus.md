@@ -40,10 +40,11 @@ For example -
 
 After you've added your files into the stratagus rom folder with the correct names and restarted emulationstation, the names should appear in the Emulationstation UI and you can start them directly from there. All graphics settings are configured in-game.
 
-### Detailed instructions - Installing Warcraft / Warcraft 
-II
+### Detailed instructions - Installing Warcraft / Warcraft II
+
 **Note 1: this will not work with the Battle.net Edition of Warcraft II**
-** Note 2: Windows XP users might have trouble extracting the data needed from the Warcraft II installation location. Please see http://wargus.github.io/faq.html#winxp for further details **
+
+** Note 2: Windows XP users might have trouble extracting the data needed from the Warcraft II installation location** Please see http://wargus.github.io/faq.html#winxp for further details
 
 Firstly, the installation will not work just by copying the contents of the Warcraft or Warcraft 2 CD over to the roms folder of the Raspberry Pi. You must run the Wargus and/or War1gus installer from either Windows, Mac OS X or Linux to correctly extract the game assets. Running the tools from windows is arguably the most straightforward option and can be carried out as follows: 
 
