@@ -18,6 +18,19 @@ For more information on custom RetroArch controls see: [RetroArch Configuration]
 
 ZDoom controls can be found in the Doom options menu by pressing any button or key after the game software has launched. Although the initial configuration may need to be started with a keyboard, full joystick autonomy is possible after being set.
 
+In-game controls can be mapped easily from the ZDoom options menu, however Joystick control of the menus is not well implemented. There are a number of community solutions - one of the easier solutions to implement is to replace zdoom and zdoom.pk3 in this folder: 
+```
+/opt/retropie/ports/zdoom/
+```
+
+With the files from this source:
+```
+https://github.com/protocultor/zdoom/releases/tag/2.8.12.2
+```
+
+This adds menu options to the ZDoom menu for "menu forward" and "menu back" which can be assigned to joypad buttons. Please note that this may not work with all versions and builds of Zdoom - this information is provided for users specifically having issues with menu controls in ZDoom.
+
+
 ## How to Launch Doom IWADs and Mods (PWADs) from Emulationstation using lr-prboom
 
 ### To Launch Doom, Ultimate Doom, Doom 2, TNT, Plutonia, Final Doom (IWADS) - Method 1 (savegames issue)
