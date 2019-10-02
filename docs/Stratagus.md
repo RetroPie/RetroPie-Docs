@@ -56,7 +56,10 @@ Firstly, the installation will not work just by copying the contents of the Warc
 ```
 /home/pi/RetroPie/roms/stratagus/<GAME>.data
 ```
-e.g. /home/pi/RetroPie/roms/stratagus/warcraft2.data
+e.g. 
+```
+/home/pi/RetroPie/roms/stratagus/warcraft2.data
+```
 On your Raspberry Pi
 
 The sub-directories that need to be copied are as followed:
