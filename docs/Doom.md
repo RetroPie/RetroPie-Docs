@@ -326,11 +326,6 @@ Now, just follow this naming scheme for each track:
 
 For Doom 2,  the prboom.cfg file would be located in the /doom2 directory(or folder).
 
+### Music for ZDoom
 
-
-
-
-
-
-   
-
+ZDoom handles the midi music from the Doom games automatically - options are provided in the ZDoom menu for various midi emulation devices, including OPL3 and Timidity for midi output. A number of fan-created music 'remasters' also exist, which can be loaded with ZDoom as PWAD / PK3 files using the methods outlined above. These packs will generally replace all of the original in-game music.
