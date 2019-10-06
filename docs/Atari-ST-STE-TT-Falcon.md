@@ -20,10 +20,15 @@ lr-hatari can currently be found under the experimental installs in RetroPie.
 TOS (The Operating System; also Tramiel Operating System, from Jack Tramiel, owner of Atari Corp. at the time) is the operating system of the Atari ST range of computers. Atari's TOS was usually run from ROM chips contained in the computer. See https://en.wikipedia.org/wiki/Atari_TOS
 
 To use this core you need a valid TOS ROM image named 'tos.img' in your RetroArch system directory:
-
 ```
 ~/RetroPie/BIOS/tos.img
 ```
+For compatibility purposes it may also help to put the file in this folder:
+```
+/opt/retropie/emulators/retroarch/bin/tos.img
+```
+
+Using a Version 1.04 TOS file is also a good choice for general compatibility.
 
 ### ROMS
 
@@ -43,6 +48,14 @@ The Atari ST was a disk based computer so you need a disk image of the software 
 Accepted File Extensions: .st .msa .ipf
 
 When launched with a valid disk image the emulator will automatically launch the program (most of the time) or open the TOS with disk inserted into drive A. In the TOS you need to manually launch the program by opening Drive A (double-click on the drive icon) and finding/selecting a .prg file (double-click on the file icon).
+
+Note that certain global retroarch configurations can cause crashes with the emulator - If this appears to be happening (i.e. The emulator crashes back to emulationstation when loading .st files), try placing a factory-set retroarch.cfg file into the directory below:
+
+```
+/opt/retropie/configs/atarist
+```
+
+This will over-ride the global retroarch configuration and should allow access to the emulator to configure the controls for the system specifically.
 
 ### M3U Support and Disk control
 
@@ -68,6 +81,14 @@ When a game asks for it, you can change the current disk in the RetroArch 'Disk 
     Insert the new disk with 'Disk Cycle Tray Status'.
 
 Note : zip support is provided by RetroArch and is done before passing the game to the core. So, when using a m3u file, the specified disk image must be uncompressed (.st, .msa, .ipf file formats).
+
+It may be necessary to add .m3u as a supported file format to the Atari ST section of:
+
+```
+/opt/configs/all/emulationstation/es_systems.cfg
+```
+
+In order to be able to see the created m3u files directly in emulationstation.
 
 ### Default Controls
 
