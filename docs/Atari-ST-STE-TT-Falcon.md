@@ -92,7 +92,13 @@ In order to be able to see the created m3u files directly in emulationstation.
 
 ### Default Controls
 
-lr-hatari uses Retroarch control configuration. The mouse is emulated by the joystick and can be toggled between mouse and joystick modes.
+lr-hatari uses Retroarch control configuration. The mouse is emulated by the joystick and can be toggled between mouse and joystick modes. The libretro port of Hatari also takes some settings from 
+
+```
+/opt/retropie/configs/atarist/hatari.cfg
+```
+
+If you are experiencing joystick issues, it may be helpful to check that the joystick setup in hatari.cfg is correct. To do this, launch a ROM with the standard Hatari (non-libretro version), launch the GUI and check that all joystick mappings are correct. Save the configuration settings and then reload lr-Hatari afterwards.
 
 | Button | Command |
 | :---: | :---: | 
