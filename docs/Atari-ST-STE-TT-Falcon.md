@@ -100,8 +100,6 @@ lr-hatari uses Retroarch control configuration. The mouse is emulated by the joy
 
 If you are experiencing joystick issues, it may be helpful to check that the joystick setup in hatari.cfg is correct. To do this, launch a ROM with the standard Hatari (non-libretro version), launch the GUI and check that all joystick mappings are correct. Save the configuration settings and then reload lr-Hatari afterwards.
 
-In some games (e.g. Gauntlet II), it may be necessary to simulate the 'plugging-in' of a joystick. This can be done from the hatari gui by selecting 'disabled' followed by 'enabled' in the joysticks tab. This type of behaviour is not currently supported in lr-hatari as the retroarch pads are set up permanently at launch.
-
 | Button | Command |
 | :---: | :---: | 
 | Left Joystick | Up, down, left, right |
@@ -115,6 +113,10 @@ In some games (e.g. Gauntlet II), it may be necessary to simulate the 'plugging-
 | B   | Mouse button B |
 | X   |   |
 | Y   | lr-hatari GUI |
+
+Note that some games (e.g. Gauntlet II) require the simulation of the 'plugging-in' of a joystick. This can be done from the standard hatari gui by selecting 'disabled' followed by 'enabled' in the joysticks tab. However, this type of behaviour is not currently supported in lr-hatari as the retroarch pads are set up permanently at launch.
+
+Furthermore, there is no current mapping of the space bar to a joystick button in lr-hatari as there is in the 'standard' version - this must currently be done using the on-screen keyboard. 
 
 ## Emulator: [Hatari](http://hatari.tuxfamily.org/)
 
