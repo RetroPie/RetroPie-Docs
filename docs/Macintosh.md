@@ -34,10 +34,10 @@ You will also place these files in
 ```
 /home/pi/RetroPie/roms/macintosh
 ```
-For more details see the forum post at http://blog.petrockblock.com/forums/topic/installing-basiliskii-an-early-macintosh-emulator/ and the links therein for detailed instructions about how to set up Basilisk II.
+For more details see the forum post at https://blog.petrockblock.com/forums/topic/installing-basiliskii-an-early-macintosh-emulator/ and the links therein for detailed instructions about how to set up Basilisk II.
 
 If your **disk.img** file (from MacStartup.img) only has a few MB of free space on it while running the emulator, you must create a new larger one if you want more free space. Since the disk setup GUI is not included in RetroPie's version of Basilisk, you must install Basilisk on your PC to create a larger image and copy your disk.img file to it. Similar instructions can be found at
-http://www.emaculation.com/forum/viewtopic.php?f=6&t=8068
+https://www.emaculation.com/forum/viewtopic.php?f=6&t=8068
 
 Once you have a working disk image large enough to install other software on, you can access other install disk images from the "Unix" icon on the Mac desktop which can access the file system of the Raspberry Pi.
 
