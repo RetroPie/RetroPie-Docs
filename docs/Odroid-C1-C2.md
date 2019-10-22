@@ -4,7 +4,7 @@ This is a guide on how to build RetroPie on the Odroid C1/C1+/C2. This is assumi
 
 http://odroid.com/dokuwiki/doku.php?id=en:c1_release_linux_ubuntu
 
-Direct Link [Here](http://odroid.in/ubuntu_14.04lts/ubuntu-14.04.3lts-lubuntu-odroid-c1-20151020.img.xz)
+Direct Link [Here](https://odroid.in/ubuntu_16.04lts/ubuntu-16.04.3-mate-odroid-c1-20170908.img.xz)
 
 Extract the .xz file with a program like [7zip](http://www.7-zip.org/download.html)
 
