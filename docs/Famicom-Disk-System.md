@@ -7,7 +7,7 @@ The Family Computer Disk System a.k.a. Famicom Disk System was released in Japan
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
 | [lr-fceumm](https://github.com/libretro/libretro-fceumm) | fds  | .7z .fds .nes .zip | disksys.rom | /opt/retropie/configs/nes/retroarch.cfg |
-| [lr-nestopia](https://github.com/libretro/nestopia) | fds  | .7z .fds .nes .zip | disksys.rom **and** <br> NstDatabase.xml (already exist in /opt/retropie/libretrocores/lr-nestopia folder) | /opt/retropie/configs/nes/retroarch.cfg |
+| [lr-nestopia](https://github.com/libretro/nestopia) | fds  | .7z .fds .nes .zip | disksys.rom **and** <br> NstDatabase.xml (already exist in /opt/retropie/libretrocores/lr-nestopia folder) | /opt/retropie/configs/fds/retroarch.cfg |
 
 ## Emulators: [lr-nestopia](https://github.com/libretro/nestopia), [lr-fceumm](https://github.com/libretro/libretro-fceumm)
 
@@ -38,9 +38,11 @@ Both emulators utilise Retroarch configurations
 
 *Side Note: In order to "switch to side B" of a ROM most controllers have this set to a default of the upper right bumper or right trigger button
 
+*Side Note: Games that display Ｂメンヲセットシテクダサ are asking for the disk to be flipped to side B in order to continue.  It is common for a game to display a title screen that asks for side B before the game can start.
+
 Add custom retroarch controls to the retroarch.cfg file in
 ```shell
-/opt/retropie/configs/nes/retroarch.cfg
+/opt/retropie/configs/fds/retroarch.cfg
 ```
 For more information on custom RetroArch controls see: [RetroArch Configuration](RetroArch-Configuration)
 
