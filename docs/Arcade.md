@@ -12,7 +12,7 @@ Each emulator is optimised for different hardware and different games so read th
 
 RetroPie's arcade emulators come in two main flavors: [MAME](MAME) and [FinalBurn](FinalBurn-Neo).
 
-[MAME](MAME) is the most well-known and works with thousands of games. [FinalBurn](FinalBurn-Neo) is optimized for classic beat-em-up games like those from [Neo Geo](https://www.retrostic.com/roms/neo-geo) and Capcom. RetroPie includes multiple versions of both MAME and FinalBurn. Older versions require less processing power, but newer versions support more games and feature more accurate emulation.
+[MAME](MAME) is the most well-known and works with thousands of games. [FinalBurn](FinalBurn-Neo) is optimized for classic beat-em-up games like those from Neo Geo and Capcom. RetroPie includes multiple versions of both MAME and FinalBurn. Older versions require less processing power, but newer versions support more games and feature more accurate emulation.
 
 Use this table as a guide when choosing an emulator version:
 
