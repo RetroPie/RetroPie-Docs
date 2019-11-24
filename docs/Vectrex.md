@@ -1,4 +1,5 @@
 ![Vectrex](https://upload.wikimedia.org/wikipedia/commons/e/ef/Vectrex_vector_logo.svg)
+![Vectrex console](https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Vectrex-Console-Set.jpg/192px-Vectrex-Console-Set.jpg)
 ***
 _The Vectrex is a vector display-based home video game console released in 1982. On October 27, 1992, Smith Engineering granted permission for the original Vectrex ROMs, manuals, and other original content to be freely distributed for non-commercial purposes._ 
 ***
