@@ -64,7 +64,7 @@ Add custom retroarch controls to the retroarch.cfg file in
 ```
 For more information on custom RetroArch controls see: [RetroArch Configuration](RetroArch-Configuration)
 
-![nec_turbografx16_diagram](https://cloud.githubusercontent.com/assets/10035308/10822284/1bde9cc4-7e1c-11e5-9683-c29b5a5a49e8.png)
+![nec_turbografx16_diagram](https://user-images.githubusercontent.com/35534553/70554981-2a568880-1b4c-11ea-9953-7200002a1d63.png)
 
 ## PC Engine CD
 
