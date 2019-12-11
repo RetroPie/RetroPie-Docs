@@ -14,25 +14,25 @@ Unlike the RetroPie SD Image, the Odroid image will autoexpand the filesystem so
 
 ## Install RetroPie:
 
-Optional preliminary steps:
+Odroid default user is "*root*" and his password is "*odroid*"
+.
+Preliminary steps:
 
 ```
-sudo apt-get update && sudo apt-get upgrade
-
-sudo apt-get install -y git
-
+apt-get update && apt-get upgrade
+apt-get install -y git
+useradd -mb /home -s /bin/bash -G input,video pi
+echo 'pi ALL=(ALL) NOPASSWD:ALL' > /etc/sudoers.d/pi
+passwd pi
 ```
 
 Installing the RetroPie Setup Script:
 
+Login as "*pi*" user and run
+
 ```
 cd
 git clone --depth=1 https://github.com/RetroPie/RetroPie-Setup.git
-```
-
-Run the Setup Script:
-
-```
 cd RetroPie-Setup
 sudo ./retropie_setup.sh
 ```
@@ -41,7 +41,6 @@ sudo ./retropie_setup.sh
 
 ```
 sudo MAKEFLAGS="-j1" ./retropie_setup.sh
-
 ```
 
 ## Installing Modules
