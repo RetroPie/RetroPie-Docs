@@ -34,6 +34,6 @@ Launch Dolphin:
 From there the graphical client will launch and you can bind your controller in the Dolphin Interface as well as change settings.
 
 ## Exiting Dolphin
-If you're using an updated version of `dolphin-emu-nogui`, now there is a [fix](https://github.com/dolphin-emu/dolphin/pull/6187), enabling the use of `Esc` key to exit. You can map this to a gamepad button using a keyboard -> gamepad mapper like [joymap](https://sourceforge.net/projects/linuxjoymap/) for non desktop environments or the more friendly [antimicro](https://github.com/AntiMicro/antimicro) under desktop environments.
+If you're using an updated version of `dolphin-emu-nogui`, now there is a [fix](https://github.com/dolphin-emu/dolphin/pull/6187), enabling the use of `Esc` key to exit. You can map this to a gamepad button using Dolphin -> Options -> Hotkey Settings.  Modify the "Exit" field to map the buttons to your liking.  For example, `KEY_MENU` & `Button 8` will exit Dolphin using the hotkey + start button combo on the Xbox wireless controller. 
   
 For old dolphin builds, the only alternative is to exit dolphin is with the Keyboard combination Alt+F4.
