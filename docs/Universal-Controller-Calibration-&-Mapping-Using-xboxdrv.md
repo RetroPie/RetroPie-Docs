@@ -1,4 +1,4 @@
-This guide will attempt to detail several advanced controller mappings and calibration techniques suitable for just about any controller. The focus will be on the use of xboxdrv, as it is an extremely versatile tool that can handle almost any situation and is able to be installed directly from from the 'RetroPie Setup' menu. A complete list of its capabilities can be found [here](http://manpages.ubuntu.com/manpages/precise/man1/xboxdrv.1.html). What follows is a grouping of use case scenarios that would be of direct interest to RetroPie Users. New scenarios will be added from time to time. Some of these scenarios will include:
+ This guide will attempt to detail several advanced controller mappings and calibration techniques suitable for just about any controller. The focus will be on the use of xboxdrv, as it is an extremely versatile tool that can handle almost any situation and is able to be installed directly from from the 'RetroPie Setup' menu. A complete list of its capabilities can be found [here](http://manpages.ubuntu.com/manpages/precise/man1/xboxdrv.1.html). What follows is a grouping of use case scenarios that would be of direct interest to RetroPie Users. New scenarios will be added from time to time. Some of these scenarios will include:
 
 - Keyboard mapping for emulators that don't support controllers natively
 - Mouse mapping to analog joysticks for full control of certain arcade and computer games, as well as most Atari system emulators
@@ -8,9 +8,8 @@ This guide will attempt to detail several advanced controller mappings and calib
 - Configuring a toggle or utilizing unused buttons for auto-fire in any game or emulator
 - Correcting unruly analog trigger behavior found in some controllers
 
-`------------------------------------------------------------------------------`
 
-# **(1) Mapping any controller to be read as a standard XBox360 controller.**
+# Mapping any controller to be read as a standard XBox360 controller
 
 None of what is to follow can be accomplished without this first step. The sheer multitude of existing controllers and their loose implementation of "standards" presents a problem to computer software that has a limited definition of what to expect from controller input. Simply mapping a troublesome controller to be read as a standardized XBox360 controller can solve many communication problems without any additional tweaking. However, this same process can also be used to fine-tune a controller in much the same way that you might normally only find in Windows-based solutions. 
 
@@ -105,13 +104,11 @@ sudo reboot
 ```
 Press 'Enter' and wait for Emulation Station to load where you can then remap the controller which will now be seen as being no different from a standard XBox 360 wired Controller. If for some reason you should wish your controller to be seen as a wireless XBox360 controller, just change `--mimic-xpad` to `--mimic-xpad-wireless` in the configuration.
 
-`------------------------------------------------------------------------------`
-
-# **(2) Fine tuning your controller.**
+# Fine tuning your controller
 
 As mentioned in the first section, xboxdrv can also be used to fine-tune a controller's operation in ways that aren't often found in most Linux tools. This is very important when you have a controller that misbehaves in one way or another and would be unusable without proper calibration. 
 
-## **(2A) Analog control calibration**
+## Analog control calibration
 
 You may have noticed that we've already done a bit of fine-tuning with "deadzones" in the three examples from section one. When a pressure-sensitive analog control is used, activity is reported from the controller. The problem is that many controllers, both new and old, sometimes report applied pressure when at rest. This can be due to an overly sensitive new controller or a worn out old controller. Setting a deadzone value specifies that a certain amount of pressure be applied before any activity is reported. This prevents drifting and unwanted character movement. The applied values from the examples above are recommended in the xboxdrv manual, but naturally adjustments can be made when needed.
 
@@ -146,7 +143,7 @@ sudo /opt/retropie/supplementary/xboxdrv/bin/xboxdrv \
 Once this is added, each of your joysticks will benefit from the absolute full range of movement possible allowing for much finer control. If your xboxdrv configuration is invoked in `/etc/rc.local`, you'll need to reboot your system to see the changes.
 
 
-## **(2B) Converting analog triggers to digital**
+## Converting analog triggers to digital
 
 This next one is a quick, easy and very effective for retro-gamers. Pressure sensitive analog triggers bring an extra level of realism and control to the few games that can make use of them, such as Mame racing games. However, most retro games and console emulation software don't really benefit from analog triggers and in some cases, they can slow response time and even prevent functionality altogether. For these reasons, it is generally suggested that analog triggers be converted to digital input in almost all cases. to do this, you would simply add `--trigger-as-button` to your xboxdrv configuration. Using the base configuration example from the first section, it would look like this in practice:
 ```
@@ -165,7 +162,7 @@ sudo /opt/retropie/supplementary/xboxdrv/bin/xboxdrv \
 ```
 Once added, the system will register any analog increase or decrease as an on/off digital button state. If your xboxdrv configuration is invoked in `/etc/rc.local`, you'll need to reboot your system to see the changes.
 
-## **(2C) Personalizing your controller's ID name**
+## Personalizing your controller's ID name
 
 After fine-tuning your controller, you may want to give it a personalized ID. Outside of the novelty, this technique can be used as a tool to separate identification of multiple identical controllers in some software that can otherwise get confused when identically named controllers are discovered. To do this, you would replace `--mimic-xpad` with `--device-name "My Most Non-Non-Triumphant Controller Name Here"`. Using the base configuration example from the first section, it would look like this in practice:
 ```
@@ -183,7 +180,7 @@ sudo /opt/retropie/supplementary/xboxdrv/bin/xboxdrv \
 ```
 Once added the entire system will identify the controller by the new name, so remapping will be necessary in Emulation Station. If your xboxdrv configuration is invoked in `/etc/rc.local`, you'll need to reboot your system to see the changes.
 
-## **(2D) Restricting directional control to four ways**
+## Restricting directional control to four ways
 
 When emulating classic video games, sometimes having a modern controller can work against you. Games like 'Burger Time' or the 'Pac-Man' series were only ever designed for 4-way directional control. This becomes a problem when using a controller with a free range of analog movement. When Pac-Man tries to turn a corner or Chef Peter Pepper tries to climb a ladder, a brief, but deadly pause often happens as a result of getting mixed directional input when the joystick hits a diagonal position. This can be eliminated in an xboxdrv control scheme by simply adding `--four-way-restrictor`. Using the base configuration example from the first section, it would look like this in practice:
 
@@ -202,11 +199,9 @@ sudo /opt/retropie/supplementary/xboxdrv/bin/xboxdrv \
 ```
 Once added, the games will perform just as fluidly as they did using their original joysticks.
 
-`------------------------------------------------------------------------------`
+# Key-Mapping For Individual Emulators
 
-# **(3) Key-Mapping For Individual Emulators**
-
-## **(3A) Key-Mapping and Launch Fundamentals**
+## Key-Mapping and Launch Fundamentals
 
 The foundation has been laid. Controller's have been fine-tuned. Now, we'll take a look at how to map keyboard keys and mouse movements to a controller's analog sticks and buttons for use in emulators that lack native controller support and how to launch and maintain multiple mappings accordingly. We'll be using ScummVM as an example because it's easy and it involves mapping both keyboard keys to buttons and the mouse to the analog stick. Those who have tried using the internal joystick support in ScummVM know that it leaves much to be desired. The cursor movement is shakey and you still need a keyboard to quit the program. This mapping will solve both of those problems.
 
@@ -288,7 +283,7 @@ SUBSYSTEM=="input", ATTRS{name}=="Microsoft X-Box 360 pad - Keyboard Emulation",
 ```
 Now press 'ctrl+o' to save the file, 'Enter' to confirm and 'ctrl+x' to exit. The name "Microsoft X-Box 360 pad - Keyboard Emulation" is dependent on the use of the `--mimic-xpad` variable used in your xboxdrv command. If you have customized that name using the `--device-name` variable instead, as seen in the earlier example, it would then be replaced with "My Most Non-Non-Triumphant Controller Name Here - Keyboard Emulation".
 
-## **(3B) Expanding Launch Capabilities**
+## Expanding Launch Capabilities
 
 For mapping one or two systems, the above method is the simplest approach. However, it can be a bit unwieldy when mapping a large number of systems. What follows is an alternate method that again utilizes the `runcommand-onstart.sh` shell script, now based on a unified case statement designed specifically for mapping multiple systems. In addition, all the xboxdrv parameters are assigned to variables, making the case statement easier to read.
 
@@ -450,5 +445,3 @@ and make it executable
 ```
 sudo chmod +x /opt/retropie/configs/all/runcommand-onend.sh
 ```
-
-`------------------------------------------------------------------------------`
