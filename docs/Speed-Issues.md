@@ -1,5 +1,6 @@
 Systems from fastest to slowest:
 
+* Raspberry Pi 4
 * Raspberry Pi 3
 * Raspberry Pi 2
 * Raspberry Pi Zero
