@@ -10,6 +10,7 @@
 5. [Configure Wifi](First-Installation#wifi)
 6. [Installing Additional Emulators](First-Installation#installing-additional-emulators)
 7. [Transferring Roms](First-Installation#transferring-roms)
+8. [Configure Audio (if needed)](First-Installation#audio)
 
 Congratulations! You have discovered the wonderful world of RetroPie- your entire childhood is within reach! RetroPie is a combination of multiple projects including [RetroArch](http://www.libretro.com), [EmulationStation](http://www.emulationstation.org), and many others. 
 
