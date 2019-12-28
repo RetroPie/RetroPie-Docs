@@ -201,6 +201,10 @@ You can also log in as root if you wish to change more files than just the roms,
 
 - if on MAC OS X open finder, select "Go" menu and "Connect to Server". Type `smb://retropie` and hit "Connect".
 
+## AUDIO
+
+In general RetroPie audio will work out of the box without any tweaking, but if you have audio issues you should follow the [instructions on the Sound Issues page](https://github.com/RetroPie/RetroPie-Setup/wiki/Sound-Issues) to fix them. You will most likely need to visit the [Sound Issues](https://github.com/RetroPie/RetroPie-Setup/wiki/Sound-Issues) page if you are using a USB Audio device, or if you are using an aftermarket RPi HAT add-on audio device (such as a Justboom sound card).
+
 ## PLAY!
 
 After you've added your roms you need to restart emulationstation in order for them to show up. You can restart emulationstation from the start menu, or by rebooting your pi with `sudo reboot`. 
