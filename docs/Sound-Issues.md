@@ -73,8 +73,6 @@ This simply will turn off the on-board sound card during boot up. This in turn w
 
 Once you've made the change, save the file, restart your Raspberry Pi, and move onto Step 2.
 
-> :exclamation: If the above doesn't work, then you can use some other instructions on this page to [get USB Audio set up](https://github.com/RetroPie/RetroPie-Setup/wiki/Sound-Issues#usb-audio).
-
 
 ##### Using a Raspberry Pi Audio HAT (e.g. Justboom, Hifiberry)
 
@@ -392,15 +390,17 @@ Simple mixer control 'Volume Ramp Up Step',0
 Select any one of the Simple mixer controls listed by using the name within the quotes within the OMXAudioDev setting in your es_settings.cfg file, or you can use the "alsa:hw:x,y" format, where the x is the number of the AudioCard (0 = first audio card, 1 = 2nd audio card ...) and y is the number of the audio mixer device on that card (0 = first audio mixer device, 1 = 2nd audio mixer device ...) e.g.
 
 ````
-<string name="OMXAudioDev" value="alsa:hw:1,2" />
+<string name="OMXAudioDev" value="alsa:hw:0,0" />
 ````
 
-The above example will tell OMX Player to use the third mixer on the second Audio Card to play video sounds.
+The above example will tell OMX Player to use the first mixer on the first Audio Card to play video sounds (which is the most common option.
 
 
 IMPORTANT NOTE: Any custom manually used settings will be overwritten if you select any of the other options in the GUI and exit the Sound Settings window, as the Sound Settings GUI window overwrites the es_settings.cfg options when you exit the window.
 
-# Sound Troubleshooting
+# Archived Sound Troubleshooting Instructions
+
+> :exclamation: Please note the instructions after this point are older and may be out of date.
 
 Sound still is a problem child with the Raspberry Pi. Currently, there does not seem to be a best solution for all the sound issues. General information about sound issues can be found at http://elinux.org/R-Pi_Troubleshooting#Sound.
 
