@@ -272,13 +272,13 @@ The last step is to select which Audio Device that OMXPlayer will use to play vi
 
 * **local**: (RPi specific) This sets the OMX Player sound output to the 3.5mm Onboard Audio Card. This is the 2nd most common option for RPi Systems.
 * **hdmi**: (RPi specific) This sets the OMX Player sound output to the HDMI Audio Card. This is the most common option for RPi Systems.
-* **both: (RPi specific) This sets the OMX Player sound output to both the HDMI Audio Card and the 3.5mm Onboard Audio Card. 
+* **both**: (RPi specific) This sets the OMX Player sound output to both the HDMI Audio Card and the 3.5mm Onboard Audio Card. 
 * **alsa:hw:0,0**: This sets the OMX Player sound output to the first Audio Mixer on the first Audio Card on the system. For the RPi this is the onboard audio (unless you've disabled it, in which case this is the RPi Audio HAT or USB Audio Device you've added)
 * **alsa:hw:1,0**: This sets the OMX Player sound output to the first Audio Mixer on the second Audio Card on the system. For the RPi this is the RPi Audio HAT or USB Audio Device you've added (only if you have NOT disabled the onboard audio!).
 
-NOTE: If you do not see any of these options when you run aplay -L on your system, do not despair. You can [add your own custom OMX Audio Device using these instructions](#adding-custom-audio-card-audio-device-or-omx-player-audio-device) and everything will work!
+NOTE: If you do not see any of these options when you run `aplay -L` on your system, do not despair. You can [add your own custom OMX Audio Device using these instructions](#adding-custom-audio-card-audio-device-or-omx-player-audio-device) and everything will work!
 
-I had disabled the RPi onboard audio on my device, so I selected "alsa:hw:0,0" for the OMX PLAYER AUDIO DEVICE within EmulationStation SOUND SETTINGS. This was the final bit of configuration required, and I was able to play video games with sound coming out the right places, and watch the preview videos with sound. 
+I had disabled the RPi onboard audio on my device, so I selected `"alsa:hw:0,0"` for the OMX PLAYER AUDIO DEVICE within EmulationStation SOUND SETTINGS. This was the final bit of configuration required, and I was able to play video games with sound coming out the right places, and watch the preview videos with sound. 
 
 ## Adding custom Audio Card, Audio Device or OMX Player Audio Device
 
