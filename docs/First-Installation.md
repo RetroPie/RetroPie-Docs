@@ -3,14 +3,14 @@
 |Version|4.5|
 |:---:|:---:|
 
-1. [Hardware](First-Installation#hardware)
-2. [Installation](First-Installation#installation)
-3. [Controller Configuration](First-Installation#configure-controllers)
-4. [EmulationStation](First-Installation#emulationstation)
-5. [Configure Wifi](First-Installation#wifi)
-6. [Installing Additional Emulators](First-Installation#installing-additional-emulators)
-7. [Transferring Roms](First-Installation#transferring-roms)
-8. [Configure Audio (if needed)](First-Installation#audio)
+1. [Hardware](#hardware)
+2. [Installation](#installation)
+3. [Controller Configuration](#configure-controllers)
+4. [EmulationStation](#emulationstation)
+5. [Configure Wifi](#wifi)
+6. [Installing Additional Emulators](#installing-additional-emulators)
+7. [Transferring Roms](#transferring-roms)
+8. [Configure Audio (if needed)](#audio)
 
 Congratulations! You have discovered the wonderful world of RetroPie- your entire childhood is within reach! RetroPie is a combination of multiple projects including [RetroArch](http://www.libretro.com), [EmulationStation](http://www.emulationstation.org), and many others. 
 
