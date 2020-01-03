@@ -69,7 +69,7 @@ To extract from the command line, you can type the following into a Terminal win
 To install the RetroPie SD image on your MicroSD card. (You may need a MicroSD card reader to plug it into your computer) 
 
 1. For Windows you can use a [Etcher](https://etcher.io/) or [Win32DiskImager](http://sourceforge.net/projects/win32diskimager/) 
-2. For macOS you can use [Etcher](https://etcher.io/) or [Apple Pi Baker](http://www.tweaking4all.com/hardware/raspberry-pi/macosx-apple-pi-baker/) 
+2. For macOS you can use [Etcher](https://etcher.io/) or [Apple Pi Baker](https://www.tweaking4all.com/hardware/raspberry-pi/applepi-baker-v2/) 
 3. For Linux you can use `dd` command or [Etcher](https://etcher.io/)
 
 See [the official Raspberry Pi "WRITING AN IMAGE TO THE SD CARD" instructions](https://www.raspberrypi.org/documentation/installation/installing-images/).
@@ -110,7 +110,9 @@ See the following diagrams for reference:
 
 ### Hotkey
 
-The Hotkey button enables you to press it in combination with another button to access functions such as saving, loading, and exiting emulators. It is suggested to use the **Select** button as the hotkey. The following chart shows the default hotkey combinations. For example, if you chose Select as your Hotkey, that means you hold down Select while pressing the other button to execute the command. **Note** Hotkey combinations are specific to the retroarch/libretro based emulators.
+The Hotkey button enables you to press it in combination with another button to access functions such as saving, loading, and exiting emulators. It is suggested to use the **Select** button as the hotkey. The following chart shows the default hotkey combinations. For example, if you chose Select as your Hotkey, that means you hold down Select while pressing the other button to execute the command. 
+
+**Note** Hotkey combinations are specific to the retroarch/libretro based emulators.
 
 |Hotkey Combination | Action|
 | :---: | :---: |
