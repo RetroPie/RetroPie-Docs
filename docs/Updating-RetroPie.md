@@ -46,10 +46,11 @@ It can also be accessed from the terminal with `sudo ~/RetroPie-Setup/retropie_s
 Each section of the manage packages portion of the setup script have the option to install/update all packages and remove all installed packages. You can also update/install and remove packages individually.
 
 The core components needed for RetroPie to function are:
-- **RetroArch:** Frontend for the libretro api, necessary for most emulators to run.
+
+- **RetroArch:** Frontend for the Libretro api, necessary for most emulators to run.
 - **EmulationStation:** Frontend for sorting and launching all of your games.
-- **RetroPie Menu:** Menu in emulationstation for simpler configuration of your system.
-- **Runcommand:** The runcommand launch menu that assists launching your games with proper configurations see related wiki page [HERE](https://github.com/RetroPie/RetroPie-Setup/wiki/runcommand).
+- **RetroPie Menu:** Menu in EmulationStation for simpler configuration of your system.
+- **Runcommand:** The Runcommand launch menu that assists launching your games with proper configurations, see the related documentation page [HERE](Runcommand).
 
 ### Updating/Installing individual packages
 
