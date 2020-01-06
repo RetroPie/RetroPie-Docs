@@ -46,6 +46,8 @@ The SDL audio plugin produces less audio drop out and makes for an improved expe
 
 As a side benefit from using the SDL audio plugin, save/load states will now function properly with mupen64plus.
 
+I believe this section to be obsolete, and in need of audit. Retropie builds have newer versions of mupen64plus and this config flag is already set. 
+
 ## High Resolution Texture Packs
 
 From Current version forward Hi Resolution Texture options are automatically configured to True in the configuration files for Rice and Glide.  You should not need to modify them as you did with previous versions.  Some libretro emulators support loading Hi-Rez textures and you can look for enabling those options in the libretro xmb.  
