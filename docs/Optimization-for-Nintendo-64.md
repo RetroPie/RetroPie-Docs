@@ -48,38 +48,10 @@ As a side benefit from using the SDL audio plugin, save/load states will now fun
 
 ## High Resolution Texture Packs
 
-From Current version forward Hi Resolution Texture options are automatically configured to True in the configuration files.  You should not need to modify them as you did with previous versions.  
-
-If it is critical to check that everything is enabled simply run this command in one line
+From Current version forward Hi Resolution Texture options are automatically configured to True in the configuration files for Rice and Glide.  You should not need to modify them as you did with previous versions.  Some libretro emulators support loading Hi-Rez textures and you can look for enabling those options in the libretro xmb.  
 
 
-``cat /opt/retropie/configs/n64/mupen64plus.cfg | grep Textures && cat /opt/retropie/configs/n64/mupen64plus.cfg | grep txHiresEnable``
-
-and you should get a result looking like
-
-```
-LoadHiResTextures = True
-DumpTexturesToFiles = False
-txHiresEnable = True
-txHiresEnable = True
-```
-
-Which will confirm that Hi Rez is turned on for both Glide and Rice Plugins
-
-Make sure you have launched a rom with both Rice and Glide before checking the file or the variables will not be there to confirm. 
-
-Glide Line
-```
-# Use high-resolution texture packs if available.
-txHiresEnable = False
-```
-Rice Line
-```
-# Enable hi-resolution texture file loading
-LoadHiResTextures = False
-```
-
-You would then place high res texture packs in the directory `/home/pi/.local/share/mupen64plus/hires_texture`
+You need to place high res texture packs in the directory `/home/pi/.local/share/mupen64plus/hires_texture`
 
 Download the texture packs to that directory and then unzip them:
 ```
@@ -94,10 +66,22 @@ sudo unzip texturepack.zip
 Texture packs are available for download [here](
 http://textures.emulation64.com/index.php?id=downloads)
 
-The folder name in that directory must match the core name in the rom header. 
+The folder name in that directory must match the core name in the rom header or the texture pack will not be properly applied.  
 Most cases the default directory name is ok but you may need to check if you find if your rom is not correctly launching the texture pack. 
 
-To find that you can use the command to display the core name just use the command below in terminal then exit and scroll up I do it from a ssh session cause I can scroll up and read it.  But in the first few lines it will show the core name 
+Here is a list of the proper format of names for the top level folder on texture packs I have tested
+F-ZERO X
+MARIOKART64
+PAPER MARIO
+SMASH BROTHERS
+STARFOX64
+SUPER MARIO 64
+THE LEGEND OF ZELDA
+WAVE RACE 64
+ZELDA MAJORA'S MASK
+
+
+To confirm the correct name for a texture pack you may not be able to get to load  you can use the command to display the core name just use the command below in terminal then exit and scroll up I do it from a remote ssh session like putty cause you can scroll up and read it.  In the first few lines it will show the core name 
 ```
 cd /home/pi/RetroPie/roms/n64
 /opt/retropie/emulators/mupen64plus/bin/mupen64plus.sh mupen64plus-video-rice rom name
@@ -105,22 +89,12 @@ cd /home/pi/RetroPie/roms/n64
 
 You can use the same command to launch the rom correctly loading the texture pack. 
 
+Two things you need to do once you have texture packs placed in the proper directory and named correctly. 
 
-To get the texture pack to load from emulation station you must do the following.
-Launch Retropie Setup
-Update Retropie Setup Script
-Go to Manage Packages 
-update the mupen64plus package  (I suggest installing from source)
+You need to make sure you are launching that rom specifically with either Glide or Rice (maybe libretro if you have enabled libretro specifically to load hi rez textures)
+and
+You need to make sure you are using a resolution at 800x600 or higher in order for the texture pack to load.  You should use the highest resolution setting you can get the game performing well on it will look better the higher the resolution.
 
-Go to launch one of the N64 games you have uploaded a high resolution texture pack for. 
-Launch that game
-Press x or any key when it launches 
-change the video mode to one of the following options
-mupen64plus-gles2rice-highres
-or
-mupen64plus-GLideN64-highres
-
-Then hit launch 
 
 Please also feel free to reference the Rice 64 github page for the source documentation 
 https://github.com/mupen64plus/mupen64plus-video-rice
@@ -130,8 +104,26 @@ https://github.com/mupen64plus/mupen64plus-video-rice
 ## Raspberry Pi 4
 The Raspberry Pi 4 has much improved hardware.  But it is still early in its development.
 Overclocking is possible on a Raspberry Pi 4 and as always offers a better N64 emulation experience.  
+Please use the latest unofficial build until such point as an official build is made available. 
+You can check for the latest build here, 
+https://files.retropie.org.uk/images/weekly/
 
-I have found the following Overclock to be stable
+It is important to install and update from source as development is usually adding things that will help with your emulation of the N64
+
+To get to 2.0 GHZ overclock on a Raspberry Pi 4 Active Cooling is highly recommended and installing the latest rpi firmware is required.  
+You need to do the following to update the firmware
+```
+sudo apt update && sudo apt upgrade -y && sudo apt dist-upgrade -y && sudo rpi-update -y
+```
+
+I can recommend the following overclocks
+
+```
+#Overclock Options
+arm_freq=1900
+over_voltage=6
+force_turbo=0
+```
 
 ```
 #Overclock
@@ -142,56 +134,21 @@ gpu_freq=600
 v3d_freq=650
 ```
 
-To get to 2.0 GHZ overclock on a Raspberry Pi 4 Active Cooling is highly recommended and installing the latest rpi firmware is required.  
-You need to do the following to update the firmware
-```
-sudo rpi-update && sudo apt dist-upgrade
-```
+I have two overclocks listed here because the latest firmware seems to have created an issue with overclocking gpu_freq 
+The second overclock was stable previous to the last update of the firmware client and is unstable on the current, and have confirmed with other pi 4 users that gpu_freq on that firmware cannot be changed without causing a failure to boot.  
+
+Current Raspberry Pi 4 Comparability and Optimum plugin list [here](
+https://docs.google.com/spreadsheets/d/1zFPt58OvjztHHfIIIfBeX_QA_hquQgVUM6snHXDpePk/edit#gid=578864431)
+
 
 Example videos
-Rpi4 Mupen64plus https://www.youtube.com/watch?v=QGXwVTXEgqk&feature=youtu.be
-Rpi4 Texture packs https://youtu.be/WuYailLfUVU
+RPI4 capabilities over the Pi3B+ [here](https://www.youtube.com/watch?v=UVMHdSRsFew&t=635s)
+RPI 4 9 games tested [here](https://www.youtube.com/watch?v=_bUWsag1IHM&t=172s)
+Rpi4 Texture packs [here](https://youtu.be/WuYailLfUVU)
 
 
 
-Information on manually compiling mupen64plus can be removed when devs add mupen64plus binary to Retropie-Setup
-
-To install mupen64plus on a raspberry pi 4 currently you must compile from source 
-
-Here are the instructions to compile currently 
-```
-cd ~
-sudo apt install libboost-dev
-sudo apt install libboost-filesystem-dev
-wget https://github.com/mupen64plus/mupen64plus-core/releases/download/2.5.9/mupen64plus-bundle-src-2.5.9.tar.gz
-tar -zxf mupen64plus-bundle-src-2.5.9.tar.gz 
-cd mupen64plus-bundle-src-2.5.9/
-sudo CFLAGS='-mfpu=neon -mtune=cortex-a72 -march=armv8-a' ./m64p_build.sh NEON=1 USE_GLES=1 VFP_HARD=1 NEW_DYNAREC=1
-```
-
-And to run 
-```
-cd ~/mupen64plus-bundle-src-2.5.9/test
-./mupen64plus ~/Downloads/GoldenEye007.z64
-./mupen64plus /home/pi/Retropie/roms/n64/romname.z64
-./mupen64plus --gfx mupen64plus-video-rice.so /home/pi/Retropie/roms/n64/romname.z64
-./mupen64plus --gfx mupen64plus-video-glide64mk2.so /home/pi/Retropie/roms/n64/romname.z64
-```
-
-You should compare a .mupen64plus.cg file from a Rpi3 to the one you end up with in 
-/home/pi/.config/mupen64plus/mupen64plus.cfg
-and edit most settings to match.  
 
 
-Specifically
-```
-# Z-buffer depth (only 16 or 32)
-OpenGLDepthBufferSetting = 16
-```
 
-and 
-```
-# If this option is enabled, the plugin will skip every other frame
-to enabled
-```
 
