@@ -39,7 +39,8 @@ You will get a window popping up telling you if the connection was successful or
 
 1. Try reducing distance from your controller to Raspberry (helps sometimes)
 2. Try to disable internal WiFi - this helps to extent signal strength, [you can use this script to disable/enable Wifi on the fly](https://retropie.org.uk/forum/topic/19734) (several users report PS3 controller connections problems are vanished since)
-3. Buy a new BT adapter and put it to your Raspberry. Add `dtoverlay=pi3-disable-bt` in `/boot/config.txt` to disable internal BT module (ultima ratio, speeds up communication, extents range and speed depending on your BT adapter model)
+3. Try forcing a lower baud rate in `/usr/bin/btuart`, on line 22: `$HCIATTACH /dev/serial1 bcm43xx xxxxxx noflow - $BDADDR`. Smaller values of 115200 or 230400 have been known to alleviate input lag on a Pi 3B.
+4. Buy a new BT adapter and put it to your Raspberry. Add `dtoverlay=pi3-disable-bt` in `/boot/config.txt` to disable internal BT module (ultima ratio, speeds up communication, extents range and speed depending on your BT adapter model)
 
 ## Manual Bluetooth Configuration
 ## !!Please note this is for pre v4.0 RetroPie - New 8bitdo details here!!:
