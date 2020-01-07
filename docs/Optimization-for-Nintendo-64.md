@@ -49,6 +49,9 @@ As a side benefit from using the SDL audio plugin, save/load states will now fun
 I believe this section to be obsolete, and in need of audit. Retropie builds have newer versions of mupen64plus and this config flag is already set. 
 
 ## High Resolution Texture Packs
+Instructional Video https://www.youtube.com/watch?v=b3p9pYvDT-Y 
+
+
 
 From Current version forward Hi Resolution Texture options are automatically configured to True in the configuration files for Rice and Glide.  You should not need to modify them as you did with previous versions.  Some libretro emulators support loading Hi-Rez textures and you can look for enabling those options in the libretro xmb.  
 
@@ -67,6 +70,7 @@ sudo unzip texturepack.zip
 
 Texture packs are available for download [here](
 http://textures.emulation64.com/index.php?id=downloads)
+
 
 The folder name in that directory must match the core name in the rom header or the texture pack will not be properly applied.  
 Most cases the default directory name is ok but you may need to check if you find if your rom is not correctly launching the texture pack. 
