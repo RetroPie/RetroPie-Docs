@@ -56,7 +56,7 @@ For games which can share save games, such as Pokemon Blue and Pokemon Red, it i
 
 This procedure assumes you have *one* save game. If you've played both games, you'll need to delete one save, it's not possible to combine both after you've played them.
 
-Get to the commandline with F4 or [SSH](ssh), change directory to the Game Boy folder, and look at the save files:
+Get to the command line with F4 or [SSH](SSH), change directory to the Game Boy folder, and look at the save files:
 
 ~~~
 cd RetroPie/roms/gb
