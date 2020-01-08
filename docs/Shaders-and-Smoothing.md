@@ -58,7 +58,7 @@ Some arcade games were run on a vertical CRT; literally a regular TV flipped ove
 4. `crt-pi-curvature-vertical.glslp`
 ![](http://i.imgur.com/I9X0SJr.jpg)
 
-Both vertical and horizontal games can be improved further by using special override CFGs that increase the accuracy and alignment of the scanline effect. A set of these overrides is available for [lr-mame2003](lr-mame2003), [lr-fbneo](lr-fbneo) and [lr-nestopia](nintendo-entertainment-system#lr-nestopia) in [this forum topic](https://retropie.org.uk/forum/topic/4046/crt-pi-shader-users-reduce-scaling-artifacts-in-lr-mame2003-lr-fbalpha-horizontal-and-vertical-games).
+Both vertical and horizontal games can be improved further by using special override CFGs that increase the accuracy and alignment of the scanline effect. A set of these overrides is available for [lr-mame2003](lr-mame2003), [lr-fbneo](lr-fbneo) and [lr-nestopia](Nintendo-Entertainment-System#lr-nestopia) in [this forum topic](https://retropie.org.uk/forum/topic/4046/crt-pi-shader-users-reduce-scaling-artifacts-in-lr-mame2003-lr-fbalpha-horizontal-and-vertical-games).
 
 ## NTSC filters
 
@@ -70,7 +70,7 @@ Retroarch includes the facility to apply a basic bilinear smoothing filter acros
 
 ![](https://retropie.org.uk/forum/uploads/files/1478902457187-upload-4c1d9b59-a473-43d3-9a56-cc50506ef690.png)
 
-This setting can be enabled in the [Configuration Editor](Configuration Editor). Look for 'Video Smoothing'. It won't affect shaders, which control this setting independently.
+This setting can be enabled in the [Configuration Editor](Configuration-Editor). Look for 'Video Smoothing'. It won't affect shaders, which control this setting independently.
 
 ## Shader Presets
 
