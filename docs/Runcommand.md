@@ -11,7 +11,7 @@ The runcommand is the script responsible to launch your emulators/games. This wi
 
 Each time you load a ROM there is an option to open what is called the Runcommand Launch Menu. This is accessed by pressing any button on a controller (the bottom face button is recommended as to not accidentally change anything) or pressing any key on a keyboard, while the prompt in the image below is displayed or right after a launching image disappears if you have those setup.
 
-![runcommandlaunch](https://cloud.githubusercontent.com/assets/10035308/12870184/99acb464-ccf6-11e5-9f32-7f2ef3c17b3a.png)
+![runcommandlaunch](https://user-images.githubusercontent.com/647452/72018057-cf33b680-321b-11ea-872a-3e8d4ad78b87.png)
 
 Once you press any button on a controller or any key on a keyboard, it will open up into this menu (the menu options will vary depending on the system you are running and version of RetroPie you are using:
 
