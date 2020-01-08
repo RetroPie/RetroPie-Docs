@@ -1,4 +1,4 @@
-**Please check the [MAME documentation](../wiki/MAME) for for basic information about controls and managing ROMs - this page is for specific information about the mame2003 emulator's features.**
+**NOTE:** Please check the [MAME documentation](MAME) for for basic information about controls and managing ROMs - this page is for specific information about the mame2003 emulator's features.
 
 lr-mame2003 is a popular choice for the Raspberry Pi 2 and up, as it combines a large romset (MAME 0.78) playing host to most 2D-era arcade games that people would be interested in, and a broad set of features. It also is still a relatively old MAME core, which is actually a good thing for lower-end hardware such as the Raspberry Pis, as later MAME cores feature increasingly accurate emulation which requires greater CPU power. Also, it is a libretro core, so enjoys all the benefits of that: centralised controller configurations, many customisation options, netplay, shader/overlay support, etc.
 
