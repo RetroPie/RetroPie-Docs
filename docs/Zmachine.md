@@ -27,10 +27,8 @@ By default 3 versions of Zork are already in the Z-Machine ROM folder
 
 Follow the onscreen instructions and type responses- So for example it narrates that it is dark- in turn you type `light` or `turn on light` and then it will progress in the story. 
 
-if you get tired of the story:
-
-to quit type: `quit`
+If you get tired of the story and would like to quit, just type: `quit` at the prompt.
 
 ## Larger Font Size
 
-If you are on a high resolution screen and the font size is tiny you can change the framebuffer's resolution using the [runcommand](runcommand) menu to 640x480 and it should make the font more visible. As an alternative to the [Runcommand](runcommand) launch menu, you can use the [Consolefonts](FAQ/#how-can-i-increase-the-console-font-size) module to change the font size globally on your RetroPie system.
+If you are on a high resolution screen and the font size is tiny you can change the framebuffer's resolution using the [runcommand](Runcommand) menu to 640x480 and it should make the font more visible. As an alternative to the [Runcommand](Runcommand) launch menu, you can use the [Consolefonts](FAQ.md#how-can-i-increase-the-console-font-size) module to change the font size globally on your RetroPie system.
