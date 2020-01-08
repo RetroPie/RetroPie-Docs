@@ -101,8 +101,6 @@ Open the RetroArch RGUI by pressing **Select+X** on the controller, or **Hotkey+
 
 Press **B** to go back to the Quick Menu and **Resume Content**.
 
-To make the change permanent, choose **Save Configuration** on the main RGUI menu.
-
 It's also possible to edit `/opt/retropie/configs/all/retroarch-core-options.cfg` and set the palette like:
 
 ~~~
