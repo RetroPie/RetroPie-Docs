@@ -35,7 +35,7 @@ There are a number of different rom set versions. Different versions contain dif
 | :---: | :---: | :---: | :---: |
 | [mame4all](MAME) | MAME 0.37b5 | 2270 | [List](https://docs.google.com/spreadsheets/d/1SHspjyHavY9-PKbO2swDr52BS2Wl_mB_Vjx2Z1SXiD8/edit) |
 | [lr-mame2003](MAME) | MAME 0.78 | 4720 | [List](https://docs.google.com/spreadsheets/d/1LP1MELCvcxu7TfiowF_0ZuvRVEMqlfQyTVetnOJvuJc/edit?usp=sharing) |
-| [pifba](FinalBurn-Alpha) | FB Alpha v0.2.96.71 | 684 | [List](https://docs.google.com/spreadsheets/d/1OZioLrz16ptaNbjQUDP5hhVzQDTOTn9Nz46Hbj3-06k/edit?usp=sharing) |
+| [pifba](FinalBurn-Neo#pifba) | FB Alpha v0.2.96.71 | 684 | [List](https://docs.google.com/spreadsheets/d/1OZioLrz16ptaNbjQUDP5hhVzQDTOTn9Nz46Hbj3-06k/edit?usp=sharing) |
 | [lr-fbneo](FinalBurn-Neo) | FB Neo v0.2.97.44-WIP | 4896 | [List](https://docs.google.com/spreadsheets/d/1GaqIIoiWbzKHwZ52S2xCSDQXILo81Ls1mHK6czKGAtM/edit?usp=sharing) |
 
 To sum up, for best results:
@@ -57,7 +57,7 @@ They can also be placed in their respective emulator rom folders, this informati
 
 - [Arcade games and how to play them, A non-technical MAME and FBNeo (FBA) tutorial by rbaker](https://retropie.org.uk/forum/topic/7247/guide-arcade-games-and-how-to-play-them-a-non-technical-mame-fba-tutorial)
 - [Instructions for how to set up FB Neo as a separate Neo Geo system](Neo-Geo)
-- RetroPie docs for [MAME](Mame) and [FB Neo](FinalBurn-Neo)
+- RetroPie docs for [MAME](MAME) and [FB Neo](FinalBurn-Neo)
 - [How to use MAME with RetroPie Help Guide by Floob](https://retropie.org.uk/forum/topic/2859/how-to-use-mame-with-retropie-help-guide)
 - [Demystifying MAME ROMs Tutorial by ChoccyHobNob](https://web.archive.org/web/20161116054839/http://choccyhobnob.com/articles/demystifying-mame-roms/) (via archive.org)
 - Advanced: [Validating, Rebuilding, and Filtering ROM Collections](Validating,-Rebuilding,-and-Filtering-ROM-Collections)
