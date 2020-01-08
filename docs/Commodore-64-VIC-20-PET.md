@@ -79,6 +79,6 @@ Note that the VICE emulator also emulates systems other than the Commodore 64
 - CBM-II (aka C610) 
 - VIC20
 
-which can be accessed through the [Runcommand Launch Menu](runcommand)
+which can be accessed through the [Runcommand Launch Menu](Runcommand).
 
 ![03062016_2322241](https://cloud.githubusercontent.com/assets/10035308/13558061/dc5eeade-e3b7-11e5-94cc-4891ccafe15a.png)
