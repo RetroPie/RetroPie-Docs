@@ -156,7 +156,7 @@ This menu shows the options for Pi 1, the Pi 2 has only None and Turbo.
 
 ### Manual Overclocking
 
-All Raspberry Pi models can be manually overclocked by editing `/boot/config.txt` and rebooting. Read the [SSH](ssh) page if you are not familiar with editing text files in Linux.
+All Raspberry Pi models can be manually overclocked by editing `/boot/config.txt` and rebooting. Read the [SSH](SSH.md) page if you are not familiar with editing text files in Linux.
 
 Parameters are set like:
 
@@ -362,7 +362,7 @@ To display a Frames Per Second counter in RetroArch cores to see the effect on e
 fps_show = "true"
 ~~~
 
-You can [SSH](ssh) into your Pi while playing a game and run these commands to measure the effect of normal operation.
+You can [SSH](SSH.md) into your Pi while playing a game and run these commands to measure the effect of normal operation.
 
 The temperature of the SoC can be queried with the command:
 
