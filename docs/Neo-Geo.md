@@ -18,7 +18,7 @@ This page is a resource for additional details on configuring a dedicated set of
 | [GnGeo-Pi](https://github.com/ymartel06/GnGeo-Pi) | neogeo | .zip | MAME 0.138 | /opt/retropie/configs/neogeo/gngeorc |
 
 ## Emulators: [lr-fbneo](lr-fbneo), [lr-fbalpha2012](FinalBurn-Neo#lr-fbalpha2012), [PiFBA](FinalBurn-Neo#pifba), [GnGeo-Pi](Neo-Geo#gngeo-pi)
-Refer to the main [FB Neo](FB Neo) page for general information on all FinalBurn emulators or the direct links above for in-depth infomation on lr-fbneo, lr-fbalpha2012, or PiFBA. In-depth information on GnGeo-Pi can be found below, which is also linked directly above.
+Refer to the main [FinalBurn Neo](FinalBurn-Neo) page for general information on all FinalBurn emulators or the direct links above for in-depth infomation on lr-fbneo, lr-fbalpha2012, or PiFBA. In-depth information on GnGeo-Pi can be found below, which is also linked directly above.
 
 *lr-fbneo* is the prefered Pi 3/Pi 2 Neo Geo emulator due to its accuracy. 
 
