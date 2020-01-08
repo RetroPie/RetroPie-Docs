@@ -14,7 +14,7 @@ A few disclaimers first:
 
 - This only works with RetroArch emulators
 
-- If using the methods described here, the [Runcommand's Launch Menu Art option](runcommand#configuring-runcommand) won't show the scraped screenshot image.
+- If using the methods described here, the [Runcommand's Launch Menu Art option](Runcommand#configuring-runcommand) won't show the scraped screenshot image.
 
 
 ### Take a Screenshot
@@ -24,7 +24,7 @@ Before talk about the "scraping your own screenshots" trick, we need to know how
 
 #### via RGUI
 
-Access the RGUI (usually with Select+X) and go to `Quick Menu` -> `Take Screenshot`.
+Access the RGUI (usually with `Select+X`) and go to `Quick Menu` -> `Take Screenshot`.
 
 
 #### via hotkeys
