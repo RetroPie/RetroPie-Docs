@@ -531,7 +531,7 @@ input_player1_y_btn = "3"......
 
 If your using just the classic controls then you shouldn't be having this problem, but this is what I was referring to earlier when I said the controls may be "off" if you try and combine wiimote controls, nunchuck controls in addition to the classic controller to your mywminput file. 
 
-**4. I want to update my pi's bluetooth to the latest version!**
+**4. I want to update my Pi's bluetooth to the latest version!**
 
 As of writing, the version shipped with RetroPie 3.7 comes with Bluez version ```5.23.``` We will update it to the latest stretch version which is ```5.36.```
 
@@ -566,18 +566,12 @@ Now you can undo the changes we made to ```/etc/apt/sources.list``` and  ```/etc
 
 ## Method 2 (MoltenGamepad):
 
-The original tutorial was posted by a user named rockfireredmoon on the RetroPie github. You can view it [here.](https://github.com/RetroPie/RetroPie-Setup/issues/256/#issuecomment-205283258)
+The original tutorial was posted by a user named rockfireredmoon on the RetroPie github. You can view it [here](https://github.com/RetroPie/RetroPie-Setup/issues/256/#issuecomment-205283258).
 
-You can view more information about MoltenGamepad [here.](https://github.com/jgeumlek/MoltenGamepad)
-
+You can view more information about MoltenGamepad [here](https://github.com/jgeumlek/MoltenGamepad).    
 It's on a github repository which we will need to copy onto our Pi. 
 
 In the terminal, paste the command:
-```shell
-sudo apt-get install git-core -y
-```
-
-followed by:
 ```shell
 git clone https://github.com/jgeumlek/MoltenGamepad
 ```
@@ -685,8 +679,6 @@ The original tutorial stated that once the initial pairing was completed, you wo
 I couldn't quite get mine to pair from a cold boot. Currently I still have to use the bluetoothctl ```connect``` command to pair my wiimotes attached to Classic Controlers and then manually start emulationstation from the terminal for the pairing to work. Your experience may vary however.
 
 I am currently working on a script to automate the the pairing process without the need to press any buttons at all when EmulationStation starts to activate MoltenGamepad. At the moment its a bit hit and miss. I will update the tutorial once I've ironed the kinks out. :) 
-
-You may want to read further into MoltenGamepad's controller documentation which you can view [here.](MoltenGamepad Generic Device Driver Documentation). It has a few examples, and like I mentioned above may create one for this method adding the LED Status as mentioned in Method 2. Stay tuned.  
 
 **I also encourage anyone to edit this page and any other page if you have valid useful information that can make other Pi users have an easier time with connecting devices for use with RetroPie.**
 
