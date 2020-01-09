@@ -33,8 +33,7 @@ then cancel, exit and reboot.
 
 Just as important as overclocking, selecting the right emulator/graphics plugin from the [runcommand](https://github.com/RetroPie/RetroPie-Setup/wiki/runcommand) menu on a per game basis will also increase performance. Selecting the right plugin can make all the difference in making a game playable. 
 
-To learn the community tested optimal settings please view either of the two rom compatibility lists located [here](https://docs.google.com/spreadsheets/d/1Sn3Ks3Xv8cIx3-LGCozVFF7wGLagpVG0csWybnwFHXk/edit) or [here](
-https://docs.google.com/spreadsheets/d/1Wjzbu90l6eCEW1w6ar9NtfyDBQrSPILQL5MbRSpYSzw/edit?usp=sharing). (rom compatibility lists are a mess and all are in need of retesting). Do not accept these lists as 100% accurate as they are community maintained and with updates may change over time. There may be some inaccuracies so it is best just to use the lists as a general starting point. Some games listed as unplayable have with recent updates become playable and vice versa. The current default emulator is mupen64plus-auto which will attempt to select the correct graphics plugin for you, however for best results it is best to test each plugin for yourself on a per game basis. It is recommended that you confirm a game runs well with the standard low-res plugin before attempting to use the hi-res option. 
+To learn the community tested optimal settings please view either of the two rom compatibility lists located [here](https://docs.google.com/spreadsheets/d/1Sn3Ks3Xv8cIx3-LGCozVFF7wGLagpVG0csWybnwFHXk/edit) or [here](https://docs.google.com/spreadsheets/d/1Wjzbu90l6eCEW1w6ar9NtfyDBQrSPILQL5MbRSpYSzw/edit?usp=sharing). (rom compatibility lists are a mess and all are in need of retesting). Do not accept these lists as 100% accurate as they are community maintained and with updates may change over time. There may be some inaccuracies so it is best just to use the lists as a general starting point. Some games listed as unplayable have with recent updates become playable and vice versa. The current default emulator is mupen64plus-auto which will attempt to select the correct graphics plugin for you, however for best results it is best to test each plugin for yourself on a per game basis. It is recommended that you confirm a game runs well with the standard low-res plugin before attempting to use the hi-res option. 
 
 Each N64 emulator/video plugin should be set to the lowest resolution (CEA-1 for most displays) through the runcommand menu. This will slightly increase performance by limiting the up-scaling the pi has to perform. This is not necessary for the gles2n64 video plugin.
 
@@ -52,8 +51,7 @@ I believe this section to be obsolete, and in need of audit. Retropie builds hav
 Instructional Video https://www.youtube.com/watch?v=b3p9pYvDT-Y 
 
 
-
-From Current version forward Hi Resolution Texture options are automatically configured to True in the configuration files for Rice and Glide.  You should not need to modify them as you did with previous versions.  Some libretro emulators support loading Hi-Rez textures and you can look for enabling those options in the libretro xmb.  
+From Current version forward High Resolution Texture options are automatically configured to `True` in the configuration files for Rice and Glide.  You should not need to modify them as you did with previous versions.  Some libretro emulators support loading Hi-Rez textures and you can look for enabling those options in the libretro xmb.  
 
 
 You need to place high res texture packs in the directory `/home/pi/.local/share/mupen64plus/hires_texture`
@@ -67,24 +65,20 @@ wget http://websitewithtexturepack/texturepack.zip
 sudo unzip texturepack.zip
 ```
 
+Texture packs are available for download [here](http://textures.emulation64.com/index.php?id=downloads).
 
-Texture packs are available for download [here](
-http://textures.emulation64.com/index.php?id=downloads)
+The folder name in that directory must match the core name in the rom header or the texture pack will not be properly applied.Most cases the default directory name is ok but you may need to check if you find if your rom is not correctly launching the texture pack. 
 
-
-The folder name in that directory must match the core name in the rom header or the texture pack will not be properly applied.  
-Most cases the default directory name is ok but you may need to check if you find if your rom is not correctly launching the texture pack. 
-
-Here is a list of the proper format of names for the top level folder on texture packs I have tested
-F-ZERO X
-MARIOKART64
-PAPER MARIO
-SMASH BROTHERS
-STARFOX64
-SUPER MARIO 64
-THE LEGEND OF ZELDA
-WAVE RACE 64
-ZELDA MAJORA'S MASK
+Here is a list of the proper format of names for the top level folder on texture packs that have been tested:
+- F-ZERO X
+- MARIOKART64
+- PAPER MARIO
+- SMASH BROTHERS
+- STARFOX64
+- SUPER MARIO 64
+- THE LEGEND OF ZELDA
+- WAVE RACE 64
+- ZELDA MAJORA'S MASK
 
 
 To confirm the correct name for a texture pack you may not be able to get to load  you can use the command to display the core name just use the command below in terminal then exit and scroll up I do it from a remote ssh session like putty cause you can scroll up and read it.  In the first few lines it will show the core name 
