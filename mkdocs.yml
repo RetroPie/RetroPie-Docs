@@ -10,7 +10,12 @@ repo_name: 'RetroPie-Setup'
 repo_url: 'https://github.com/RetroPie/RetroPie-Setup'
 
 # Copyright
-copyright: 'Copyright &copy; 2019 The RetroPie Project'
+copyright: 'Copyright &copy; 2020 The RetroPie Project'
+
+# Plugins
+plugins:
+  - search
+  - alternate-link
 
 # Extensions
 markdown_extensions:
@@ -42,7 +47,7 @@ google_analytics:
   - 'UA-76418872-1'
   - 'auto'
       
-pages:
+nav:
 - Home: index.md
 - First Installation: First-Installation.md
 - Getting Started:
