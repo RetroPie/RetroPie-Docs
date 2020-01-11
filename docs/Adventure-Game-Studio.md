@@ -3,7 +3,7 @@
 ![Adventure Game Studio](http://i.imgur.com/eBMyMvj.png)
 
 ***
-_Adventure Game Studio is an open source development tool that is primarily used to create graphic adventure games._
+_[Adventure Game Studio](https://www.adventuregamestudio.co.uk/) is an open source development tool that is primarily used to create graphic adventure games._
 
 ***
 
@@ -33,10 +33,10 @@ In order to rectify this I followed these steps:
 After opening the Retropie setup script (either from the command line or via ES): Configuration / Tools -> Raspbian tools -> Install pixel desktop environment
 ### Modify AGS emulators.cfg file
 Edit the contents of /opt/retropie/configs/ags/emulators.cfg to contain:
-
-`ags = "sudo xinit /opt/retropie/emulators/ags/bin/ags --fullscreen --gfxdriver software --gfxfilter hqx 1 %ROM%"`
-
-`default = "ags"`
+```
+ags = "sudo xinit /opt/retropie/emulators/ags/bin/ags --fullscreen --gfxdriver software --gfxfilter hqx 1 %ROM%"`
+default = "ags"
+```
 
 Note that the "--gfxfilter hqx 1" is not required and can be omitted if you prefer to have the non-filtered graphics.
 
@@ -47,7 +47,6 @@ I elected to change the driver AGS was using rather than enable the OpenGL drive
 AGS requires a mouse attached to the Raspberry Pi
 
 ## Useful Links
-http://www.adventuregamestudio.co.uk/  
 https://github.com/adventuregamestudio/ags/tree/master/debian  
 https://en.wikipedia.org/wiki/Adventure_Game_Studio  
 https://wiki.ubuntuusers.de/Adventure_Game_Studio/
