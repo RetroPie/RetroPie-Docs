@@ -34,7 +34,7 @@ After opening the Retropie setup script (either from the command line or via ES)
 ### Modify AGS emulators.cfg file
 Edit the contents of /opt/retropie/configs/ags/emulators.cfg to contain:
 ```
-ags = "sudo xinit /opt/retropie/emulators/ags/bin/ags --fullscreen --gfxdriver software --gfxfilter hqx 1 %ROM%"`
+ags = "xinit /opt/retropie/emulators/ags/bin/ags --fullscreen --gfxdriver software --gfxfilter hqx 1 %ROM%"
 default = "ags"
 ```
 
