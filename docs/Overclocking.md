@@ -256,7 +256,7 @@ For RAM, start with the original speed and again go up in small steps of 20MHz o
 
 ~~~
 sdram_schmoo=0x02000020
-sdram_over_voltage=2
+over_voltage_sdram=2
 ~~~
 
 After many config file edits and reboots it's difficult to remember exactly which settings were best and which didn't have any effect and which broke things. It's best to:
@@ -313,7 +313,7 @@ core_freq=400
 sdram_freq=400
 sdram_schmoo=0x02000020
 over_voltage=2
-sdram_over_voltage=2
+over_voltage_sdram=2
 ~~~
 
 #### Raspberry Pi 2
@@ -326,7 +326,7 @@ core_freq=500
 sdram_freq=500
 sdram_schmoo=0x02000020
 over_voltage=2
-sdram_over_voltage=2
+over_voltage_sdram=2
 ~~~
 
 #### Raspberry Pi 3
@@ -339,7 +339,7 @@ core_freq=500
 sdram_freq=500
 sdram_schmoo=0x02000020
 over_voltage=2
-sdram_over_voltage=2
+over_voltage_sdram=2
 ~~~
 
 #### Raspberry Pi Zero
@@ -351,7 +351,7 @@ core_freq=500
 sdram_freq=500
 sdram_schmoo=0x02000020
 over_voltage=6 (default)
-sdram_over_voltage=2
+over_voltage_sdram=2
 ~~~
 
 ## Measurement Tools
