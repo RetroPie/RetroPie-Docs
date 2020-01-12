@@ -136,7 +136,7 @@ lr-mame2003 utilises [RetroArch control configurations](RetroArch-Configuration)
 ```
 ---
 ### lr-mame2003-plus (MAME 2003-Plus)
-[Visit mame2003-plus on github](https://github.com/libretro/mame2003-libretro-plus)
+[Visit mame2003-plus on github](https://github.com/libretro/mame2003-plus-libretro)
 
 MAME 2003-Plus (also referred to as MAME 2003+ and mame2003-plus) is a libretro arcade system emulator core with an emphasis on high performance and broad compatibility with mobile devices, single board computers, embedded systems, and similar platforms.
 
