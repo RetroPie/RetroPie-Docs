@@ -10,7 +10,6 @@ _[Adventure Game Studio](https://www.adventuregamestudio.co.uk/) is an open sour
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
 | [AGS](https://github.com/adventuregamestudio/ags/tree/master/debian) | ags | .exe | none | mouse |
-## Emulator: [AGS](https://github.com/adventuregamestudio/ags/tree/master/debian) 
 
 
 
