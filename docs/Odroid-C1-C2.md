@@ -4,13 +4,9 @@ This is a guide on how to build RetroPie on the Odroid C1/C1+/C2. This is assumi
 
 http://odroid.com/dokuwiki/doku.php?id=en:c1_release_linux_ubuntu
 
-Direct Link [Here](https://odroid.in/ubuntu_16.04lts/ubuntu-16.04.3-mate-odroid-c1-20170908.img.xz)
-
-Extract the .xz file with a program like [7zip](http://www.7-zip.org/download.html)
-
+Direct Link [here](https://odroid.in/ubuntu_16.04lts/ubuntu-16.04.3-mate-odroid-c1-20170908.img.xz)  
+Extract the .xz file with a program like [7zip](http://www.7-zip.org/download.html).  
 Write the .img file to your SD card or EMMC module with something like [Win32DiskImager](http://sourceforge.net/projects/win32diskimager/)
-
-Unlike the RetroPie SD Image, the Odroid image will autoexpand the filesystem so there is no need for that step here.
 
 ## Install RetroPie:
 
