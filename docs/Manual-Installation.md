@@ -101,7 +101,7 @@ The core components needed for RetroPie to function are:
 - **RetroArch:** Frontend for the libretro api, necessary for most emulators to run.
 - **EmulationStation:** Frontend for sorting and launching all of your games.
 - **RetroPie Menu:** Menu in emulationstation for simpler configuration of your system.
-- **Runcommand:** The runcommand launch menu that assists launching your games with proper configurations see related wiki page [HERE](https://github.com/RetroPie/RetroPie-Setup/wiki/runcommand).
+- **Runcommand:** The runcommand launch menu that assists launching your games with proper configurations see related wiki page [HERE](Runcommand).
 
 ### Main / Optional / Experimental
 
@@ -113,8 +113,7 @@ If you want to use samba shares you can set them up from the setup/tools option 
 
 ## Boot to emulationstation
 
-Follow the steps here: https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#how-do-i-boot-to-the-desktop-or-kodi
-
+Follow the steps in the [FAQ](FAQ#how-do-i-boot-to-the-desktop-or-kodi).  
 If you're booting to the desktop you'll want to disable the retropie splashscreen from the setup script first.
 
 ## Further Optimizations:
