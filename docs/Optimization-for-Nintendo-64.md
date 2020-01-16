@@ -110,35 +110,57 @@ https://files.retropie.org.uk/images/weekly/
 
 It is important to install and update from source as development is usually adding things that will help with your emulation of the N64
 
-To get to 2.0 GHZ overclock on a Raspberry Pi 4 Active Cooling is highly recommended and installing the latest rpi firmware is required.  
-You need to do the following to update the firmware
-```
-sudo apt update && sudo apt upgrade -y && sudo apt dist-upgrade -y && sudo rpi-update -y
-```
 
 I can recommend the following overclocks
 
 ```
-#Overclock Options
+#Overclock option with some form of active cooling
 arm_freq=1900
 over_voltage=6
 force_turbo=0
 ```
 
 ```
-#Overclock
+#Overclock option with beefy form of active cooling
+over_voltage=7
+arm_freq=2147
 force_turbo=0
-over_voltage=6
-arm_freq=2000
-gpu_freq=600
-v3d_freq=650
 ```
 
-I have two overclocks listed here because the latest firmware seems to have created an issue with overclocking gpu_freq 
-The second overclock was stable previous to the last update of the firmware client and is unstable on the current, and have confirmed with other pi 4 users that gpu_freq on that firmware cannot be changed without causing a failure to boot.  
+A note on overclocking gpu_freq and v3d_freq firmware updates etc
+In the latest unofficial 4.5.9 (or older 4.5.8) development build available here https://retropie.bret.dk/weekly/
+You should have firmware version  
+sudo rpi-eeprom-update
+BOOTLOADER: up-to-date
+CURRENT: Tue 10 Sep 10:41:50 UTC 2019 (1568112110)
+ LATEST: Tue 10 Sep 10:41:50 UTC 2019 (1568112110)
+VL805: up-to-date
+CURRENT: 000137ab
+ LATEST: 000137ab
+
+I would recommend against doing any form of firmware update at this time, you have a firmware that can overclock to 2147 
+if you upgrade the firmware  attempting to overclock gpu_freq or v3d_freq will cause a failure to boot. 
+On this current firmware even applying an overclock between 600-750 MHZ does not seem to successfully take. 
+Measuring the clock past applying produces results of 
+vcgencmd measure_clock v3d
+frequency(46)=500000992
+
+
 
 Current Raspberry Pi 4 Comparability and Optimum plugin list [here](
 https://docs.google.com/spreadsheets/d/1zFPt58OvjztHHfIIIfBeX_QA_hquQgVUM6snHXDpePk/edit#gid=578864431)
+
+For games that are optimally launched with rice (Killer Instinct Gold, Star Wars Pod Racer, ExciteBike 64 for example)
+You may notice flickering on your screen.  This can be cleared up by changing the screen update setting for the rice plugin. 
+
+Config File =/opt/retropie/configs/n64/mupen64plus.cfg 
+Under the [Video-Rice] section there is a setting
+# Control when the screen will be updated (0=ROM default, 1=VI origin update, 2=                    VI origin change, 3=CI change, 4=first CI change, 5=first primitive draw, 6=befo                    re screen clear, 7=after screen drawn)
+ScreenUpdateSetting = 4
+
+Modifying this setting to 2 or 4 , currently much improves flickering in games like ExciteBike 64, Killer Instinct possibly others (This is subject to change as drivers and improvements will fast be being made for the Pi 4)
+
+
 
 
 Example videos
