@@ -155,8 +155,11 @@ You may notice flickering on your screen.  This can be cleared up by changing th
 
 Config File =/opt/retropie/configs/n64/mupen64plus.cfg 
 Under the [Video-Rice] section there is a setting
+```
 # Control when the screen will be updated (0=ROM default, 1=VI origin update, 2=                    VI origin change, 3=CI change, 4=first CI change, 5=first primitive draw, 6=befo                    re screen clear, 7=after screen drawn)
 ScreenUpdateSetting = 4
+```
+
 
 Modifying this setting to 2 or 4 , currently much improves flickering in games like ExciteBike 64, Killer Instinct possibly others (This is subject to change as drivers and improvements will fast be being made for the Pi 4)
 
