@@ -40,12 +40,6 @@ Each N64 emulator/video plugin should be set to the lowest resolution (CEA-1 for
 **NOTE** The gliden64 video plugin currently has issues with frame buffer emulation on the pi that causes visual glitches which lead to a crash after about 10-20 mins of playtime. A recent update has taken care of this issue so it is highly recommended that you update mupen64plus to the latest version.
 
 
-## Notes on Audio
-The SDL audio plugin produces less audio drop out and makes for an improved experience over the OMX audio plugin. Previously, the SDL audio plugin produced an audio crackling that was undesirable. With recent updates the audio crackle has been fixed so it is now fine to use SDL audio. To switch to the SDL audio plugin you should first update your mupen64plus emulator to the latest version. Then navigate to: ```/opt/retropie/configs/all/autoconf.cfg``` and make sure that ```mupen64plus_audio = "0"```
-
-As a side benefit from using the SDL audio plugin, save/load states will now function properly with mupen64plus.
-
-I believe this section to be obsolete, and in need of audit. Retropie builds have newer versions of mupen64plus and this config flag is already set. 
 
 ## High Resolution Texture Packs
 Instructional Video https://www.youtube.com/watch?v=b3p9pYvDT-Y 
