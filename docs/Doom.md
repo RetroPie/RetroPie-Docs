@@ -329,3 +329,15 @@ For Doom 2,  the prboom.cfg file would be located in the /doom2 directory(or fol
 ### Music for ZDoom
 
 ZDoom handles the midi music from the Doom games automatically - options are provided in the ZDoom menu for various midi emulation devices, including OPL3 and Timidity for midi output. A number of fan-created music 'remasters' also exist, which can be loaded with ZDoom as PWAD / PK3 files using the methods outlined above. These packs will generally replace all of the original in-game music.
+
+## Video issues
+
+### Deformed Ceiling and Floor textures in lr-prboom
+
+If you are trying to run **lr-prboom** on a RPI4 you may encounter an issue with the ceiling and floor textures like this:
+
+![](https://user-images.githubusercontent.com/39132563/63890203-740dcf80-c9b0-11e9-8406-e29906b9a22b.png)
+
+This is caused by a bug in lr-prboom. The easiest way to fix it is by going to the game settings and turning off the `wiggle geometry fix`.
+
+Here is the discussion about the bug: https://github.com/libretro/libretro-prboom/issues/112
