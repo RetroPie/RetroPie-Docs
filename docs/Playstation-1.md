@@ -61,6 +61,11 @@ sudo apt-get install ecm
 ecm-uncompress game-file.bin.ecm
 ```
 
+If on a PC running Ubuntu 19.X+(or derivative) you can install ecm from the ubuntu archive with the following
+```
+curl -sLO http://archive.ubuntu.com/ubuntu/pool/universe/c/cmdpack/ecm_1.03-1build1_amd64.deb && sudo dpkg -i ecm_1.03-1build1_amd64.deb && sudo rm ecm_1.03-1build1_amd64.deb
+```
+
 ### CHD Archive Usage
 
 lr-pcsx-rearmed has support for the CHD (V5) archive format, though a source update of the emulator may be required for said support.
