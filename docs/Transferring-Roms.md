@@ -1,6 +1,6 @@
 # ROMS
 
-ROM stands for Read Only Memory. ROMs are essentially digital copies of old game cartridges which allow you to play games on emulators (software that mimics your old gaming consoles). There are many issues involving Copyright laws regarding the usage of ROMs, so in order to preserve the integrity and longevity of the RetroPie project, the download locations of ROMs will not and cannot be added to the Wiki. That being said, in the search of your childhood - Google is your friend.
+ROM stands for Read Only Memory. In a RetroPie context, ROMs are digital copies of games which allow you to run them emulators (software that mimics your old gaming consoles). There are many issues involving Copyright laws regarding the usage of ROMs, so in order to preserve the integrity and longevity of the RetroPie project, the download locations of ROMs will not and cannot be added to the Wiki. That being said, in the search of your childhood - Google is your friend.
 
 ## Transferring Roms
 
@@ -20,10 +20,10 @@ There are three main methods of transferring roms: via USB stick, via SFTP, and 
 
 ### SFTP
 
-[SFTP](https://en.wikipedia.org/wiki/SSH_File_Transfer_Protocol) or SSH File Transfer Protocol also called Secure File Transfer Protocol is a network protocol that allows you to securely transfer files over a network. Naturally both your PC and Pi will need to be connected to the same network via Ethernet or Wifi in order to successfully transfer your files. 
+[SFTP](https://en.wikipedia.org/wiki/SSH_File_Transfer_Protocol) or SSH File Transfer Protocol also called Secure File Transfer Protocol is a network protocol that allows you to securely transfer files over a network. Naturally both your PC and RetroPie system will need to be connected to the same network via Ethernet or Wifi in order to successfully transfer your files. 
 
 - Wired (needs ethernet cable)
-- Wireless (needs Pi >= 3 or wifi dongle for Pi <= 2 )
+- Wireless (Raspberry Pi Zero W, 3 and 4 models have onboard Wifi, so Pi 1 and 2 will need a dongle)
 
 To use SFTP, you must first [enable SSH](https://www.raspberrypi.org/documentation/remote-access/ssh/). As of the November 2016 release, Raspbian has the SSH server disabled by default.
 
