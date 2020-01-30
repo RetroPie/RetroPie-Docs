@@ -56,7 +56,7 @@ They can also be placed in their respective emulator rom folders, this informati
 ## Further Reading
 
 - [Arcade games and how to play them, A non-technical MAME and FBNeo (FBA) tutorial by rbaker](https://retropie.org.uk/forum/topic/7247/guide-arcade-games-and-how-to-play-them-a-non-technical-mame-fba-tutorial)
-- [Instructions for how to set up FB Neo as a separate Neo Geo system](Neo-Geo)
+- [Instructions for how to set up FB Neo as a separate Neo Geo system, by thelostsoul](https://retropie.org.uk/forum/topic/19976/)
 - RetroPie docs for [MAME](MAME) and [FB Neo](FinalBurn-Neo)
 - [How to use MAME with RetroPie Help Guide by Floob](https://retropie.org.uk/forum/topic/2859/how-to-use-mame-with-retropie-help-guide)
 - [Demystifying MAME ROMs Tutorial by ChoccyHobNob](https://web.archive.org/web/20161116054839/http://choccyhobnob.com/articles/demystifying-mame-roms/) (via archive.org)
