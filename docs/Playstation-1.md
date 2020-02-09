@@ -80,17 +80,17 @@ All you have to do is run the appropriate batch file in the same folder as the R
 
 Multiple discs can be loaded simultaneously from EmulationStation into RetroArch by creating a `.m3u` file (plain text with `.m3u` extension).
 
-While `.m3u` playlists can be used with a `.cue` and a single `.bin` format ROM, any multi-disc game that has multiple `.bin` files will not work with `.m3u`. Due to this, converting your multi-disc games to `.chd` is the easiest and most efficient method of setting up multi-disc games to be playable with RetroPie.
+`.m3u` playlists can be used with games that have a `.cue` and a single `.bin` format ROM per disc, any multi-disc game that has multiple `.bin` files on a single disc will not work with `.m3u`. Due to this, converting your multi-track games to `.chd` is the easiest and most efficient method of setting up multi-disc games to be playable with RetroPie. Another option for Linux is to use [romtool](https://github.com/jordond/romtool) to [merge](https://github.com/jordond/romtool/blob/master/docs/merge.md) multi-track `.bin`'s into a single `.bin`/`.cue` pair.  It can also be used to create a `.m3u` [playlist](https://github.com/jordond/romtool/blob/master/docs/playlist.md).
 
-Replace the `.chd` extension for each disc of the game with an appropriate `.CD1`, `.CD2`, etc so that EmulationStation won't list the individual discs.
+Replace the `.cue` or `.chd` extension for each disc of the game with an appropriate `.CD1`, `.CD2`, etc so that EmulationStation will list only the `.m3u` and not the individual discs.
 
 Example for Final Fantasy VII:
 
 **Folder Structure:**
 ```
-Final Fantasy VII (USA) (Disc 1).CD1 < This is the renamed .chd file.
-Final Fantasy VII (USA) (Disc 2).CD2 < This is the renamed .chd file.
-Final Fantasy VII (USA) (Disc 3).CD3 < This is the renamed .chd file.
+Final Fantasy VII (USA) (Disc 1).CD1 < This is the renamed .cue or .chd file.
+Final Fantasy VII (USA) (Disc 2).CD2 < This is the renamed .cue or .chd file.
+Final Fantasy VII (USA) (Disc 3).CD3 < This is the renamed .cue or .chd file.
 Final Fantasy VII (USA).m3u
 ```
 
