@@ -35,7 +35,7 @@ The following archive contains a MAME 0.205 version of CHDMAN and Windows batch 
 
 Several BIOS are supported, but **syscard3.pce** is the most compatible with games.
 
-Recognized Name | No-Into Name | CRC32 | MD5 | Comment |
+Recognized Name | No-Intro Name | CRC32 | MD5 | Comment |
 | :--: | :--: | :--: | :--: | :--: |
 | syscard3.pce | [BIOS] Super CD-ROM System (Japan) (v3.0).pce | 6D9A73EF | 38179DF8F4AC870017DB21EBCBF53114 | This is the prefered BIOS for lr-beetle-pce-fast and should play most games. |
 | syscard2.pce | [BIOS] CD-ROM System (Japan) (v2.1).pce | 283B74E0 | 3CDD6614A918616BFC41C862E889DD79 ||
