@@ -9,11 +9,11 @@ _The Panasonic 3do Real Multiplayer was a Home Video Game Console developed by t
 
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
-| [lr-4do](https://github.com/libretro/4do-libretro) | 3do  | .iso .cue | panafz10.bin | /opt/retropie/configs/3do/retroarch.cfg |
+| [lr-opera](https://github.com/libretro/opera-libretro) | 3do  | .iso .cue | panafz10.bin | /opt/retropie/configs/3do/retroarch.cfg |
 
-## Emulator: [lr-4do](https://github.com/libretro/4do-libretro)
+## Emulator: [lr-opera](https://github.com/libretro/opera-libretro) (formerly known as `lr-4do`).
 
-**lr-4do** is experimental, and even with an overclocked RPi3B+ it is slow so it isn't recommended for Raspberry Pi users at this time.
+**lr-opera** is experimental, and even with an overclocked RPi3B+ it is slow so it isn't recommended for Raspberry Pi users at this time.
 
 With the Odroid-XU4, performance has increased and made many games playable as of July 2018 when development was taken over by a newer developer. CPU threading being added for the CPU/GPU found in the XU4 continues to increase performance as of September 2018.
 
@@ -26,15 +26,14 @@ Place your 3do ROMs in
 ```
 ## BIOS
 
-The file needed is **panafz10.bin**
-
+The file needed is **panafz10.bin** (md5 hash `f47264dd47fe30f73ab3c010015c155b`).    
 Place your panafz10.bin BIOS file in
 ```
 /home/pi/RetroPie/BIOS
 ```
 ## Controls
 
-lr-4do utilises Retroarch configurations
+lr-opera utilises Retroarch configurations
 
 Add custom retroarch controls to the retroarch.cfg file in
 ```shell
