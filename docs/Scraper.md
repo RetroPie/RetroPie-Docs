@@ -249,7 +249,7 @@ For a more thorough description of any functionality described here, please chec
 
 1. Quit EmulationStation (from the start menu or press F4) and type 
    `sudo ~/RetroPie-Setup/retropie_setup.sh`.
-2. Choose **Manage Packages** then **Manage experimental packages**.
+2. Choose **Manage Packages** then **Manage optional packages**.
 3. Select `skyscraper` and install the package.
 4. Wait for the installation to complete.
 
