@@ -92,7 +92,7 @@ On occasion, these VMUs do not get formatted quite right during creation, and th
 ### lr-flycast
 VMUs are stored as .BIN files under `/home/pi/RetroPie/BIOS/dc/`, and will be automatically created the first time you run lr-flycast.
 
-There is an option for the core to enable `pre-game` VMU's. This option is recommended if you have several games or a game that takes a large amount of space.
+There is an option for the core to enable `per-game` VMU's. This option is recommended if you have several games or a game that takes a large amount of space.
 
 ### Management
 
