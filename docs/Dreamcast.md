@@ -84,11 +84,19 @@ reicast_input | enable input auto configuration | (0/1)
 
 ## VMUs
 
+### Reicast
 VMUs are stored as .BIN files under `/home/pi/.reicast/`, and will be automatically created the first time you run Reicast without VMU files.  
 
 On occasion, these VMUs do not get formatted quite right during creation, and the Dreamcast can't save or load data from them.  They just need to be reformatted -- run the `SYSTEMMANAGER` entry in the EmulationStation Dreamcast menu and / or see [this post](http://blog.petrockblock.com/forums/topic/configuring-controllers-in-reicast/page/2/#post-99715) for details. 
 
-A Dreamcast soft-reset (A+B+X+Y+Start buttons at the same time) at the ROM's title screen will also take you into the Dreamcast BIOS to manage the VMU's. After formatting VMU's, exit the emulator and restart. Pressing 'Play' will cause Reicast to crash.
+### lr-flycast
+VMUs are stored as .BIN files under `/home/pi/RetroPie/BIOS/dc/`, and will be automatically created the first time you run lr-flycast.
+
+There is an option for the core to enable `pre-game` VMU's. This option is recommended if you have several games or a game that takes a large amount of space.
+
+### Management
+
+A Dreamcast soft-reset (A+B+X+Y+Start buttons at the same time) at the ROM's title screen will also take you into the Dreamcast BIOS to manage the VMU's. After formatting VMU's, exit the emulator and restart if using Reicast. Pressing 'Play' will cause Reicast to crash.
 
 ## Controls
 Starting with RetroPie 3.3 controls for the Dreamcast Emulator are automatically configured when you configure your controls through emulationstation.
