@@ -41,6 +41,7 @@ Changing Controls:
      -Down/Right: 3
      -Fire: 0
 -to use a Joystick (gamepad) instead, navigate to Joystick and press enter
+- to go back to the previous menu, use the left arrow key
 
 SAVING CONFIGURATIONS:
 
