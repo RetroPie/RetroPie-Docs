@@ -14,7 +14,7 @@ _This console, known as the PC Engine in Japan and as the TurboGrafx-16 Entertai
 
 ## ROMS
 
-Accepted File Extensions: **.7z .ccd .chd .cue .pce .zip**
+Accepted File Extensions: **.7z .ccd .chd .cue .iso .pce .zip**
 
 Place your PC Engine/PC Engine CD/TurboGrafx-16/TurboGrafx-CD/SuperGrafx ROMs in
 ```
