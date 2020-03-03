@@ -123,6 +123,10 @@ UUID="XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXX" /home/pi/RetroPie ext4 nofail,default
 In the case you want to allow execution of file with fat32 file system (E.g : OpenBOR), use
 ```
 UUID=E44B-FC4E  /home/pi/RetroPie      vfat    rw,exec,uid=pi,gid=pi,umask=022 0       2
+```
+In the case you want to allow execution of file with ntfs file system (E.g : OpenBOR), use
+```
+UUID=E44B-FC4E  /home/pi/RetroPie      ntfs    rw,exec,uid=pi,gid=pi,umask=022 0       2
 ``` 
 ### Restart system
 This must be a full restart, not just Emulationstation. When it boots up you should see any ROMs you previously had show up in Emulationstation.
