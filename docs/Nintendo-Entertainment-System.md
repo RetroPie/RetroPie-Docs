@@ -10,7 +10,7 @@ _The Nintendo Entertainment System (NES) is an 8-bit home video game console tha
 | [lr-fceumm](https://github.com/libretro/libretro-fceumm) | nes  | .7z .fds .nes .zip | disksys.rom | /opt/retropie/configs/nes/retroarch.cfg |
 | [lr-nestopia](https://github.com/libretro/nestopia) | nes  | .7z .fds .nes .zip | disksys.rom | /opt/retropie/configs/nes/retroarch.cfg |
 | [lr-quicknes](https://github.com/libretro/QuickNES_Core) | nes  | .7z .nes .zip | none | /opt/retropie/configs/nes/retroarch.cfg |
-| [lr-fbneo](https://github.com/libretro/FBNeo) | nes  | .7z .zip | fdsbios.zip (with `disksys.rom`) | /opt/retropie/configs/nes/retroarch.cfg |
+| [lr-fbneo](https://github.com/libretro/FBNeo) | nes  | .7z .zip | fdsbios.zip (containing `disksys.rom`) | /opt/retropie/configs/nes/retroarch.cfg |
 
 If you want Famicom Disk System as a separate system, see the wiki page [HERE](Famicom-Disk-System)
 
@@ -20,12 +20,13 @@ If you want Famicom Disk System as a separate system, see the wiki page [HERE](F
 
 Accepted File Extensions: **.7z .fds .nes .zip** - make sure your roms have headers. Roms without headers will not work. If you want to use PAL roms, make sure they contain `(E)` or `(Europe)` in the filename, or else they may be run at the wrong speed.
 
-*NOTE*: [lr-fbneo](lr-fbneo) expects the game roms to be in `.zip`/`.7z` archives named in a similar fashion to arcade romsets, so the filenames of the roms is important. Use a romset validation/building program like Clrmamepro or RomCenter to have the correct filenames, using the [FBNeo NES DAT file](https://github.com/libretro/FBNeo/blob/master/dats/FinalBurn%20Neo%20(ClrMame%20Pro%20XML%2C%20NES%20Games%20only).dat) file and a No-Intro NES ROM collection.
-
 Place your NES Roms in
 ```
 /home/pi/RetroPie/roms/nes
 ```
+
+**NOTE**: [lr-fbneo](lr-fbneo) expects the game roms to be in `.zip`/`.7z` archives named in a similar fashion to arcade romsets, so the filenames of the roms is important. Use a romset validation/building program like Clrmamepro or RomCenter to have the correct filenames, using the [FBNeo NES DAT file](https://github.com/libretro/FBNeo/blob/master/dats/FinalBurn%20Neo%20(ClrMame%20Pro%20XML%2C%20NES%20Games%20only).dat) file and a No-Intro NES ROM collection.
+
 ## BIOS
 
 FDS games require the **disksys.rom** bios file. Place the BIOS in:
@@ -35,7 +36,7 @@ FDS games require the **disksys.rom** bios file. Place the BIOS in:
 
 | Filename | No-Intro name | MD5 | CRC32 | 
 | :--: | :--: | :--: | :--: |
-| disksys.rom | Family Computer Disk System (Japan) (Rev 1) | ca30b50f880eb660a320674ed365ef7a | 5e607dcf |
+| disksys.rom | [BIOS] Family Computer Disk System (Japan) (Rev 1) | ca30b50f880eb660a320674ed365ef7a | 5e607dcf |
 
 ## Controls
 
