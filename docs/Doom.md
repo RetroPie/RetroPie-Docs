@@ -1,159 +1,317 @@
 ![](http://1.bp.blogspot.com/-q1BVHMrTq7M/UT9Y6D_tCLI/AAAAAAAAD40/fM2ZUTzEIqE/s1600/risen3d+3d+models+doom+title.png)
 
 ***
-_Doom was the one game that popularized First Person Shooting as a genre. It was developed by Id Software in 1993._
+
+_Doom was the game that popularized First Person Shooting as a genre. It was developed by Id Software in 1993._
 
 ***
-# Emulators: [lr-prboom](https://github.com/petrockblog/RetroPie-Setup/blob/master/scriptmodules/libretrocores/lr-prboom.sh), [ZDoom](https://github.com/rheit/zdoom)
+## Ports: [lr-prboom](https://github.com/petrockblog/RetroPie-Setup/blob/master/scriptmodules/libretrocores/lr-prboom.sh), [ZDoom](https://github.com/rheit/zdoom)
 
-# Controls
+**lr-prboom**
 
-## Configuring controls for lr-prboom
+Port of PrBoom to Libretro. This port supports Doom, Doom 2, Final Doom and Freedoom alongside the simple mods that don't require other source port enhancements. Unlike other source ports that concentrate on offering many new game features or changes, such as ZDoom, PrBoom aims to act as a stable port of the more established or traditional engines.
 
-lr-prboom utilises normal Retroarch control configurations found in the RetroArch menu by pressing 'select+x' on your controller after the game software has launched. From the RetroArch menu, navigate to 'Quick Menu' and then to 'Controls'.
+**ZDoom**
 
-For more information on custom RetroArch controls see: [RetroArch Configuration](https://github.com/retropie/retropie-setup/wiki/retroarch-configuration)
+ZDoom is a family of enhanced ports of the Doom engine for running on modern operating systems and adds new features not found in the games as originally published by id Software.
 
-## Configuring controls for ZDoom
+This port officially supports the following Doom engine games: Doom, Doom 2, Final Doom, Heretic, Hexen, Strife and Chex Quest. It also has official support for the following stand-alone mods: Action Doom 2: Urban Brawl, The Adventures of Square, Chex Quest 3, Hacx and Harmony. Additional stand-alone mods may work with this port: they just aren't officially supported.
 
-ZDoom controls can be found in the Doom options menu by pressing any button or key after the game software has launched. Although the initial configuration may need to be started with a keyboard, full joystick autonomy is possible after being set.
+## Installation
 
-In-game controls can be mapped easily from the ZDoom options menu, however Joystick control of the menus is not well implemented. There are a number of community solutions - one of the easier solutions to implement is to replace zdoom and zdoom.pk3 in this folder: 
-```
-/opt/retropie/ports/zdoom/
-```
+### lr-prboom Installation
 
-With the files from this source:
-```
-https://github.com/protocultor/zdoom/releases/tag/2.8.12.2
-```
+lr-prboom is found under Optional Packages in RetroPie Setup. After installation and a restart of EmulationStation, you will have the shareware version of Doom in the Ports section. 
 
-This adds menu options to the ZDoom menu for "menu forward" and "menu back" which can be assigned to joypad buttons. Please note that this may not work with all versions and builds of Zdoom - this information is provided for users specifically having issues with menu controls in ZDoom.
+Below you will find `.sh` and folder structure examples for Ultimate Doom, Doom 2, Final Doom, Freedoom IWADs and various Doom/Doom 2 PWADs that don't depend on the features more robust source ports provide. The reason for putting each game/mod in its own folder is so that each game has separate saves and allows you to install the additional high quality MP3s detailed later without naming conflicts.
 
+**Full Games (IWADs)**
 
-## How to Launch Doom IWADs and Mods (PWADs) from Emulationstation using lr-prboom
+The following game IWADs can be run with `lr-prboom` and are used to play various Doom/Doom 2 PWADs that don't depend on the features more robust source ports provide. Ultimate Doom, Doom 2 and Final Doom are available on GOG and Steam, while Freedoom is available for free.
 
-### To Launch Doom, Ultimate Doom, Doom 2, TNT, Plutonia, Final Doom (IWADS) - Method 1 (savegames issue)
+**Ultimate Doom**
 
-Place your WADs in the doom rom folder, `/home/pi/RetroPie/roms/ports/doom`.
+Available on [GOG](https://www.gog.com/game/the_ultimate_doom) and [Steam](https://store.steampowered.com/app/2280/Ultimate_Doom/)
 
-Create a shell script to launch your WAD. For example, for The Plutonia Experiment, 
-
-```
-nano /home/pi/RetroPie/roms/ports/The\ Plutonia\ Experiment.sh
-```
-
-The nano text editor will open, where you will now add the following to the text edit field.
+`Ultimate Doom.sh` Example
 
 ```
 #!/bin/bash
-"/opt/retropie/supplementary/runcommand/runcommand.sh" 0 _PORT_ "doom" "/home/pi/RetroPie/roms/ports/doom/plutonia.wad"
+"/opt/retropie/supplementary/runcommand/runcommand.sh" 0 _PORT_ "doom" "/home/pi/RetroPie/roms/ports/doom/ultimate-doom/DOOM.WAD"
 ```
 
-press 'ctrl+o' to save, 'y' to confirm and 'ctrl+x' to exit out of the nano text editor.
-
-Set the proper file permissions for the script with:
+Folder Structure Example
 
 ```
-chmod 0755 "/home/pi/RetroPie/roms/ports/The\ Plutonia\ Experiment.sh"
+/home/pi/RetroPie/roms/ports/doom/ultimate-doom
+                                               DOOM.WAD
+                                               prboom.wad
 ```
 
-Set the default emulator for ROM to 'lr-prboom' at launch in the runcommand menu.
+**Doom 2**
 
-### To Launch Doom, Ultimate Doom, Doom 2, TNT, Plutonia, Final Doom (IWADS) - Method 2 (savegames separated)
+Available on [GOG](https://www.gog.com/game/doom_ii_final_doom) and [Steam](https://store.steampowered.com/app/2300/DOOM_II/)
 
-* Place your WADs - like method 1 - in the doom rom folder, `/home/pi/RetroPie/roms/ports/doom`.
-* Install zip extension via aptitude `sudo apt install zip`
+`Doom 2.sh` Example
 
-__Why?__
-
-Keep in mind that PrBoom treats all games equal, so every game got the same saving structure and if you save gamestate for __The Ultimate DOOM__ in first position and you launch __DOOM 2 - Hell on Earth__ then the savestate of the first gameplay is displayed during loading/saving actions in first position. So you can overwrite savegames by mistake... or of you want to load this then PrBoom gives an error message.
-
-This will happen an all WADs DOOM, DOOM2, TNT, Plutonia, FreeDoom1, FreeDoom2..... We have only 8 savepoints at all!
-
-__How to solve?__
- 
-Create a shell script to launch your WAD. For example, for The Plutonia Experiment, 
 ```
-nano /home/pi/RetroPie/roms/ports/The\ Plutonia\ Experiment.sh
-```
-
-The nano text editor will open, where you will now add the following to the text edit field.
-
-```bash
 #!/bin/bash
-path="/home/pi/RetroPie/roms/ports/doom"
-wadfile="plutonia.wad"
-
-unzip -qq -o "${path}/savegames_${wadfile%.*}.zip" -d "$path"
-"/opt/retropie/supplementary/runcommand/runcommand.sh" 0 _PORT_ "doom" "${path}/$wadfile"
-cd "$path" && zip -mj "savegames_${wadfile%.*}.zip" prbmsav?.dsg
+"/opt/retropie/supplementary/runcommand/runcommand.sh" 0 _PORT_ "doom" "/home/pi/RetroPie/roms/ports/doom/doom2/DOOM2.WAD"
 ```
 
-press 'ctrl+o' to save, 'y' to confirm and 'ctrl+x' to exit out of the nano text editor.
-
-Set the proper file permissions for the script with:
+Folder Structure Example
 
 ```
-chmod 0755 "/home/pi/RetroPie/roms/ports/The\ Plutonia\ Experiment.sh"
+/home/pi/RetroPie/roms/ports/doom/doom2
+                                       DOOM2.WAD
+                                       prboom.wad
 ```
 
-Set the default emulator for ROM to 'lr-prboom' at launch in the runcommand menu.
+**Final Doom - The Plutonia Experiment**
 
-More scripts can be [downloaded here](https://github.com/crcerror/launch-doom-packs-RP)
+Available on [GOG](https://www.gog.com/game/doom_ii_final_doom) and [Steam](https://store.steampowered.com/app/2290/Final_DOOM/)
 
-### To Launch Doom Mods (PWADS)
-
-In the doom rom folder, you will need prboom.wad and whichever Doom IWAD is required for the particular mod (`doom.wad` and/or `doom2.wad`).
-
-Create a folder named for the intended mod and transfer the custom PWAD there. 
-
-Using the 'Batman Doom' mod as an example, we'll create a folder called 'batman_doom' by typing:
+`Final Doom - The Plutonia Experiment.sh` Example
 
 ```
-mkdir /home/pi/RetroPie/roms/ports/batman_doom/
-```
-
-Create symlinks to prboom.wad and Doom2 WAD in the batman_doom folder with the following commands. If you have problems creating these links, you can also just copy these files.
-
-```shell
-ln -s /home/pi/RetroPie/roms/ports/doom/prboom.wad /home/pi/RetroPie/roms/ports/batman_doom/prboom.wad
-```
-```shell
-ln -s /home/pi/RetroPie/roms/ports/doom/doom2.wad /home/pi/RetroPie/roms/ports/batman_doom/doom2.wad
-```
-
-Copy prboom.cfg from the Doom folder to the custom WAD folder. Add the name(s) of the custom WADs to #Files section (line 15/16).
-
-Create a shell script named 'Batman Doom.sh' that will launch the custom WAD. 
-
-```
-nano /home/pi/RetroPie/roms/ports/Batman\ Doom.sh
-```
-
-The nano text editor will open, where you will now add the following to the text edit field. It's the same as Doom 2 script but it points to the Doom 2 IWAD in the batman folder instead.
-
-```shell
 #!/bin/bash
-/opt/retropie/supplementary/runcommand/runcommand.sh 0 "/opt/retropie/emulators/retroarch/bin/retroarch -L /opt/retropie/libretrocores/lr-prboom/prboom_libretro.so --config /opt/retropie/configs/ports/doom/retroarch.cfg /home/pi/RetroPie/roms/doom/batman/doom2.wad" "lr-prboom"
-```
-press 'ctrl+o' to save, 'y' to confirm and 'ctrl+x' to exit out of the nano text editor.
-
-Set the proper file permissions for the script with:
-
-```
-chmod 0755 "/home/pi/RetroPie/roms/ports/Batman\ Doom.sh"
+"/opt/retropie/supplementary/runcommand/runcommand.sh" 0 _PORT_ "doom" "/home/pi/RetroPie/roms/ports/doom/final-doom-plutonia-experiment/PLUTONIA.WAD"
 ```
 
-Repeat for each mod (PWAD), creating a new folder for each one and a copy of the script above replacing the folder name as required.
+Folder Structure Example
 
-## How to Launch Doom IWADs and Mods (PWADs) from Emulationstation using ZDoom.
+```
+/home/pi/RetroPie/roms/ports/doom/final-doom-plutonia-experiment
+                                                                PLUTONIA.WAD
+                                                                prboom.wad
+```
 
-### To Launch Doom, Ultimate Doom, Doom 2, TNT, Plutonia, Final Doom (IWADS)
+**Final Doom - TNT - Evilution**
+
+Available on [GOG](https://www.gog.com/game/doom_ii_final_doom) and [Steam](https://store.steampowered.com/app/2290/Final_DOOM/)
+
+`Final Doom - TNT - Evilution.sh` Example
+```
+#!/bin/bash
+"/opt/retropie/supplementary/runcommand/runcommand.sh" 0 _PORT_ "doom" "/home/pi/RetroPie/roms/ports/doom/final-doom-tnt-evilution/TNT.WAD"
+```
+
+Folder Structure Example
+```
+/home/pi/RetroPie/roms/ports/doom/final-doom-tnt-evilution
+                                                          prboom.wad
+                                                          TNT.WAD
+```
+
+**Freedoom - Phase 1**
+
+Available for free [here](https://freedoom.github.io/download.html).
+
+`Freedoom - Phase 1.sh` Example
+```
+#!/bin/bash
+"/opt/retropie/supplementary/runcommand/runcommand.sh" 0 _PORT_ "doom" "/home/pi/RetroPie/roms/ports/doom/freedoom/FREEDOOM1.WAD""
+```
+
+Folder Structure Example
+```
+/home/pi/RetroPie/roms/ports/doom/freedoom
+                                          FREEDOOM1.WAD
+                                          prboom.wad
+```
+
+**Freedoom - Phase 2**
+
+Available for free [here](https://freedoom.github.io/download.html).
+
+`Freedoom - Phase 2.sh` Example
+```
+#!/bin/bash
+"/opt/retropie/supplementary/runcommand/runcommand.sh" 0 _PORT_ "doom" "/home/pi/RetroPie/roms/ports/doom/freedoom2/FREEDOOM2.WAD""
+```
+
+Folder Structure Example
+```
+/home/pi/RetroPie/roms/ports/doom/freedoom2
+                                           FREEDOOM2.WAD
+                                           prboom.wad
+```
+
+**Mods (PWADs)**
+
+These are used in conjunction with Doom/Freedoom - Phase 1 to play Doom mods and with Doom 2/Final Doom/Freedoom - Phase 2 to play Doom 2 mods.
+
+**Doom - Sigil**
+
+A Doom mod made by John Romero for Doom's 35th anniversary. It is available for free [here](https://www.romerogames.ie/si6il): it is currently unknown if the purchasable Buckethead soundtrack WAD can be played by `lr-prboom` and if the COMPAT version of the WADs is required instead of the regular WADs. The regular Sigil WAD does load the first level of Sigil when selecting the fifth episode, though it also breaks all other episodes so that they load episode one when selected.
+
+`Doom - Sigil.sh` Example
+```
+#!/bin/bash
+"/opt/retropie/supplementary/runcommand/runcommand.sh" 0 _PORT_ "doom" "/home/pi/RetroPie/roms/ports/doom/sigil/DOOM.WAD"
+```
+
+Folder Structure Example
+```
+/home/pi/RetroPie/roms/ports/doom/sigil
+                                       DOOM.WAD
+                                       prboom.wad
+                                       SIGIL_v1_21.wad
+```
+
+`prboom.cfg` "Example
+```
+## Files
+wadfile_1                 "SIGIL_v1_21.wad"
+#wadfile_2                 ""
+#wadfile_3                 ""
+#wadfile_4                 ""
+#wadfile_5                 ""
+#wadfile_6                 ""
+#wadfile_7                 ""
+#wadfile_8                 ""
+#dehfile_1                 ""
+#dehfile_2                 ""
+
+```
+
+**Doom 2 - No Rest for the Living**
+
+`Doom 2 - No Rest for the Living.sh` Example
+```
+#!/bin/bash
+"/opt/retropie/supplementary/runcommand/runcommand.sh" 0 _PORT_ "doom" "/home/pi/RetroPie/roms/ports/doom/no-rest-for-the-living/DOOM2.WAD"
+```
+
+Folder Structure Example
+```
+/home/pi/RetroPie/roms/ports/doom/no-rest-for-the-living
+                                                        DOOM2.WAD
+                                                        NERVE.WAD
+                                                        prboom.wad
+```
+
+`prboom.cfg` "## Files" Section Example
+```
+## Files
+wadfile_1                 "NERVE.WAD"
+#wadfile_2                 ""
+#wadfile_3                 ""
+#wadfile_4                 ""
+#wadfile_5                 ""
+#wadfile_6                 ""
+#wadfile_7                 ""
+#wadfile_8                 ""
+#dehfile_1                 ""
+#dehfile_2                 ""
+```
+
+**Lost Episodes of Doom**
+
+`Lost Episodes of Doom.sh` Example
+```
+#!/bin/bash
+"/opt/retropie/supplementary/runcommand/runcommand.sh" 0 _PORT_ "doom" "/home/pi/RetroPie/roms/ports/doom/lost-episodes-of-doom/DOOM.WAD"
+```
+
+Folder Structure Example
+```
+/home/pi/RetroPie/roms/ports/doom/lost-episodes-of-doom
+                                                       DOOM.WAD
+                                                       JPTR_V40.WAD
+                                                       Jptr_fix.wad
+                                                       prboom.wad
+```
+
+`prboom.cfg` "## Files" Section Example
+```
+## Files
+wadfile_1                 "JPTR_V40.WAD"
+wadfile_2                 "Jptr_fix.wad"
+#wadfile_3                 ""
+#wadfile_4                 ""
+#wadfile_5                 ""
+#wadfile_6                 ""
+#wadfile_7                 ""
+#wadfile_8                 ""
+#dehfile_1                 ""
+#dehfile_2                 ""
+```
+
+**Hell to Pay**
+
+`Hell to Pay.sh` Example
+```
+#!/bin/bash
+"/opt/retropie/supplementary/runcommand/runcommand.sh" 0 _PORT_ "doom" "/home/pi/RetroPie/roms/ports/doom/hell-to-pay/DOOM2.WAD"
+```
+
+Folder Structure Example
+```
+/home/pi/RetroPie/roms/ports/doom/hell-to-pay
+                                             HTP-RAW.WAD
+                                             HTPDMO16.WAD
+                                             HTPDMO17.WAD
+                                             HTPDMO18.WAD
+                                             HTPDMO19.WAD
+                                             HTP-RAW.WAD
+                                             prboom.wad
+```
+
+`prboom.cfg` "## Files" Section Example
+```
+## Files
+wadfile_1                 "HTP-RAW.WAD"
+wadfile_2                 "HTPDMO16.WAD"
+wadfile_3                 "HTPDMO17.WAD"
+wadfile_4                 "HTPDMO18.WAD"
+wadfile_5                 "HTPDMO19.WAD"
+#wadfile_6                 ""
+#wadfile_7                 ""
+#wadfile_8                 ""
+#dehfile_1                 ""
+#dehfile_2                 ""
+```
+
+**Perdition's Gate**
+
+`Perdition's Gate.sh` Example
+```
+#!/bin/bash
+"/opt/retropie/supplementary/runcommand/runcommand.sh" 0 _PORT_ "doom" "/home/pi/RetroPie/roms/ports/doom/perditions-gate/DOOM2.WAD"
+```
+
+Folder Structure Example
+```
+/home/pi/RetroPie/roms/ports/doom/perditions-gate
+                                                 DOOM2.WAD
+                                                 PG-RAW-X.WAD
+                                                 prboom.wad
+```
+
+`prboom.cfg` "## Files" Section Example
+
+```
+## Files
+wadfile_1                 "PG-RAW-X.WAD"
+#wadfile_2                 ""
+#wadfile_3                 ""
+#wadfile_4                 ""
+#wadfile_5                 ""
+#wadfile_6                 ""
+#wadfile_7                 ""
+#wadfile_8                 ""
+#dehfile_1                 ""
+#dehfile_2                 ""
+```
+
+### ZDoom Installation
+
+**To Launch Doom, Ultimate Doom, Doom 2, TNT, Plutonia, Final Doom (IWADS)**
 
 Use the same method for IWADS detailed above for lr-prboom, only set the default emulator for ROM to 'zdoom' at launch in the runcommand menu.
 
-### To Launch Doom Mods (PWADS)
+**To Launch Doom Mods (PWADS)**
 
 Here, we'll use [Rex Claussen's, The Darkest Hour](http://doomnexus.drdteam.org/DH_Pix.html) as an example that can be used for any mod. Start by downloading [The Darkest Hour](ftp://ftp.fu-berlin.de/pc/msdos/games/idgames/levels/doom2/Ports/d-f/darkhour.zip). Next you will either want to SSH into your Pi, or drop out of EmulationStation using F4 on your keyboard. 
 
@@ -213,128 +371,746 @@ You'll notice that in the above example that ZDoom is making use of the 'Doom II
 
 Having completed this step, you will now want to restart Emulation Station, navigate to 'Ports' and test your new menu entry.
 
-## How to setup Freedoom
+## Controls
 
-[Freedoom](https://freedoom.github.io/index.html) is a collection of reusable assets (textures, sound effects and music tracks) that will completely replace the original Doom assets and are liberally licensed under the [BSD license](https://en.wikipedia.org/wiki/BSD_licenses).
+**lr-prboom**
 
-Why is this important to me?
+lr-prboom utilises normal Retroarch control configurations found in the RetroArch menu by pressing 'select+x' on your controller after the game software has launched. From the RetroArch menu, navigate to 'Quick Menu' and then to 'Controls'.
 
-[id Software](http://www.idsoftware.com/) released the source code for Doom's engine under the [GNU General Public License](https://www.gnu.org/licenses/old-licenses/gpl-2.0.html) but not the assets so to legally use this, you would either need the [shareware version](ftp://ftp.idsoftware.com/idstuff/doom/) or you would need to own the original game (which you can still purchase online on [Steam](http://store.steampowered.com/sub/18397/), [GOG.com](https://www.gog.com/game/the_ultimate_doom) and other places like eBay).
+For more information on custom RetroArch controls see: [RetroArch Configuration](https://github.com/retropie/retropie-setup/wiki/retroarch-configuration)
 
-Freedoom aims to be compatible with many of the thousands of Doom levels and other “mods” already released for the original game making them playable without the need to use non-free software.  This project has been a work-in-progress for many years now and has already replaced a considerable amount of the game's content but still haven't reached the targeted version 1.0.
+**ZDoom**
 
-Freedoom is divided into three [IWADs](https://zdoom.org/wiki/IWAD).
+ZDoom controls can be found in the Doom options menu by pressing any button or key after the game software has launched. Although the initial configuration may need to be started with a keyboard, full joystick autonomy is possible after being set.
 
-* Phase 1, which is a replacement for the original Doom and The Ultimate Doom containing 4 chapters with 9 levels each.
-
-* Phase 2, which replaces Doom II and Final Doom and contains a massive 32-level chapter.
-
-* Last FreeDM, which also replaces Doom II and Final Doom and is designed to be a fast-paced competitive deathmatch only campaign containing no monsters.
-
-First you need to download Freedoom: [https://freedoom.github.io/download.html](https://freedoom.github.io/download.html)
-
-As of this writing, the newest version of Freedoom is 0.11.2 so you can use wget to download the 2 files needed:
+In-game controls can be mapped easily from the ZDoom options menu, however Joystick control of the menus is not well implemented. There are a number of community solutions - one of the easier solutions to implement is to replace zdoom and zdoom.pk3 in this folder: 
 ```
-cd
-wget https://github.com/freedoom/freedoom/releases/download/v0.11.2/freedoom-0.11.2.zip && wget https://github.com/freedoom/freedoom/releases/download/v0.11.2/freedm-0.11.2.zip
+/opt/retropie/ports/zdoom/
 ```
 
-Next extract both files:
-
-`unzip freedoom-0.11.2.zip && unzip freedm-0.11.2.zip`
-
-The files will be extracted to folders named `freedoom-0.11.2` and `freedm-0.11.2` respectively and I like to keep all the Doom WADs in the same folder so why not put them with the shareware doom1.wad.
-
-`mv freedoom-0.11.2/freedoom*.wad freedm-0.11.2/freedm.wad /home/pi/RetroPie/roms/ports/doom/`
-
-Now we need to make scripts so we can launch Freedoom from EmulationStation using lr-prboom. We want to place these scripts in the Ports directory.
-
-`nano /home/pi/RetroPie/roms/ports/Freedoom\ Phase\ 1.sh`
-
-```shell
-#!/bin/bash
-/opt/retropie/supplementary/runcommand/runcommand.sh 0 "/opt/retropie/emulators/retroarch/bin/retroarch -L /opt/retropie/libretrocores/lr-prboom/prboom_libretro.so --config /opt/retropie/configs/ports/doom/retroarch.cfg /home/pi/RetroPie/roms/ports/doom/freedoom1.wad" "lr-prboom"
+With the files from this source:
+```
+https://github.com/protocultor/zdoom/releases/tag/2.8.12.2
 ```
 
-`nano /home/pi/RetroPie/roms/ports/Freedoom\ Phase\ 2.sh`
+This adds menu options to the ZDoom menu for "menu forward" and "menu back" which can be assigned to joypad buttons. Please note that this may not work with all versions and builds of Zdoom - this information is provided for users specifically having issues with menu controls in ZDoom.
 
-```shell
-#!/bin/bash
-/opt/retropie/supplementary/runcommand/runcommand.sh 0 "/opt/retropie/emulators/retroarch/bin/retroarch -L /opt/retropie/libretrocores/lr-prboom/prboom_libretro.so --config /opt/retropie/configs/ports/doom/retroarch.cfg /home/pi/RetroPie/roms/ports/doom/freedoom2.wad" "lr-prboom"
-```
-
-`nano /home/pi/RetroPie/roms/ports/FreeDM.sh`
-
-```shell
-#!/bin/bash
-/opt/retropie/supplementary/runcommand/runcommand.sh 0 "/opt/retropie/emulators/retroarch/bin/retroarch -L /opt/retropie/libretrocores/lr-prboom/prboom_libretro.so --config /opt/retropie/configs/ports/doom/retroarch.cfg /home/pi/RetroPie/roms/ports/doom/freedm.wad" "lr-prboom"
-```
-
-If you would rather use [ZDoom](https://zdoom.org/News) use this with the correct WAD filename:
-
-```shell
-#!/bin/bash
-/opt/retropie/supplementary/runcommand/runcommand.sh 0 "/opt/retropie/ports/zdoom/zdoom -iwad /home/pi/RetroPie/roms/ports/doom/freedoom1.wad" "zdoom"
-```
-
-After all the scripts have been made, you will need to set them to be executable.
-
-`chmod +x /home/pi/RetroPie/roms/ports/Freedoom\ Phase\ 1.sh /home/pi/RetroPie/roms/ports/Freedoom\ Phase\ 2.sh /home/pi/RetroPie/roms/ports/FreeDM.sh`
-
-Last step is to reboot EmulationStation and navigate to the Ports.  You should now see these 3 Freedoom games on the list.
-
-To delete the left over extracted folders and downloaded files:
-```
-cd
-rm -rf freedoom-0.11.2/ freedm-0.11.2/ freedoom-0.11.2.zip freedm-0.11.2.zip
-```
-
-## Music
+## Enhancements
 
 ### Music for lr-prboom
 
-To enable music in your Doom games, you need to copy MP3s with specific names into the same folder your WAD for the game is located via ftp client such as this one https://winscp.net/eng/download.php. You can find a list of the names [here](https://github.com/libretro/libretro-prboom/blob/master/src/m_misc.c#L605).
+To enable music in your Doom games, you need to copy MP3s with specific names into the same folder your WAD for the game is located.
 
-The easiest to use and highest quality soundtrack you can get for games running in lr-prboom are the ones generated by a Roland SC-55 then digitized to MP3. Due to legal reasons, these soundtracks can't be linked here, but if this music is found, a leading `d_` will need to be removed from each MP3's filename.
+The easiest to use and highest quality authentic soundtrack you can get for games running in lr-prboom are the ones generated by a Roland SC-55 then digitized to MP3. Due to legal reasons, these soundtracks can't be linked here, but if this music is found, a leading `d_` will need to be removed from each MP3's filename, the `ream.mp3` will need to be renamed to `read_m.mp3`, and `mus_e2m5                  "e1m5.mp3"` needs to be changed to `mus_e2m5                  "e2m5.mp3"` in the `prboom.cfg` (if just copying and pasting the examples then this is fixed in them).
 
 Keep in mind that the soundtracks for Doom 2, Final Doom: TNT: Evilution, and Final Doom: The Plutonia Experiment are different even though their tracks are named identically. This means that the WADs/MP3s for those three games must be in separate folders to avoid filename conflicts between the MP3s.
 
 An alternative source for alternative music for your Doom games would be from [Aubrey Hodges](https://aubreyhodges.bandcamp.com/), who scored Doom/Doom 2 and Final Doom: TNT: Evilution/The Plutonia Experiment on the PSX, though properly renaming/duplicating the MP3s for each game would currently be an arduous task due to lack of a chart to reference.
 
-### Where to put the mp3 tracks for Doom
+Below you will find examples of the MP3s in the folders for Doom, Doom 2, Final Doom, and Sigil alongside `prboom.cfg` examples that allow you to copy just the required IWAD and respective folder containing the `prboom.cfg` for mods without needing to copy the MP3s.
 
-Make sure you've launched Ir-prboom at least once within Emulationstation as this would generate the prboom.cfg file.
+#### Ultimate Doom
 
-Log into your raspberry pi via ftp client(hostname: ip address, username: pi, password: raspberry). 
+<details>
+  <summary>Folder Structure</summary> 
 
-Navigate to /home/pi/RetroPie/roms/ports/doom.
+```
+/home/pi/RetroPie/roms/ports/doom/ultimate-doom
+                                               bunny.mp3
+                                               DOOM
+                                                   prboom.cfg
+                                               DOOM.WAD
+                                               e1m1.mp3
+                                               e1m2.mp3
+                                               e1m3.mp3
+                                               e1m4.mp3
+                                               e1m5.mp3
+                                               e1m6.mp3
+                                               e1m7.mp3
+                                               e1m8.mp3
+                                               e1m9.mp3
+                                               e2m1.mp3
+                                               e2m2.mp3
+                                               e2m3.mp3
+                                               e2m4.mp3
+                                               e2m5.mp3
+                                               e2m6.mp3
+                                               e2m7.mp3
+                                               e2m8.mp3
+                                               e2m9.mp3
+                                               e3m1.mp3
+                                               e3m2.mp3
+                                               e3m3.mp3
+                                               e3m4.mp3
+                                               e3m5.mp3
+                                               e3m6.mp3
+                                               e3m7.mp3
+                                               e3m8.mp3
+                                               e3m9.mp3
+                                               inter.mp3
+                                               intro.mp3
+                                               prboom.wad
+                                               victor.mp3
+```
 
-We will need to create a new directory within /doom where you will store all your mp3 tracks in. Lets call it         mp3-directory. 
+</details>
 
-Navigate to /home/pi/RetroPie/roms/ports/doom/doom1 and open prboom.cfg
+<details>
+  <summary>prboom.cfg "## Music" Section Example</summary> 
 
-Scroll down until you see the line #Music.
+```
+## Music
+mus_bunny                 "./ultimate-doom/bunny.mp3"
+mus_e1m1                  "./ultimate-doom/e1m1.mp3"
+mus_e1m2                  "./ultimate-doom/e1m2.mp3"
+mus_e1m3                  "./ultimate-doom/e1m3.mp3"
+mus_e1m4                  "./ultimate-doom/e1m4.mp3"
+mus_e1m5                  "./ultimate-doom/e1m5.mp3"
+mus_e1m6                  "./ultimate-doom/e1m6.mp3"
+mus_e1m7                  "./ultimate-doom/e1m7.mp3"
+mus_e1m8                  "./ultimate-doom/e1m8.mp3"
+mus_e1m9                  "./ultimate-doom/e1m9.mp3"
+mus_e2m1                  "./ultimate-doom/e2m1.mp3"
+mus_e2m2                  "./ultimate-doom/e2m2.mp3"
+mus_e2m3                  "./ultimate-doom/e2m3.mp3"
+mus_e2m4                  "./ultimate-doom/e2m4.mp3"
+mus_e2m5                  "./ultimate-doom/e2m5.mp3"
+mus_e2m6                  "./ultimate-doom/e2m6.mp3"
+mus_e2m7                  "./ultimate-doom/e2m7.mp3"
+mus_e2m8                  "./ultimate-doom/e2m8.mp3"
+mus_e2m9                  "./ultimate-doom/e2m9.mp3"
+mus_e3m1                  "./ultimate-doom/e3m1.mp3"
+mus_e3m2                  "./ultimate-doom/e3m2.mp3"
+mus_e3m3                  "./ultimate-doom/e3m3.mp3"
+mus_e3m4                  "./ultimate-doom/e3m4.mp3"
+mus_e3m5                  "./ultimate-doom/e3m5.mp3"
+mus_e3m6                  "./ultimate-doom/e3m6.mp3"
+mus_e3m7                  "./ultimate-doom/e3m7.mp3"
+mus_e3m8                  "./ultimate-doom/e3m8.mp3"
+mus_e3m9                  "./ultimate-doom/e3m9.mp3"
+mus_e4m1                  "./ultimate-doom/e3m4.mp3"
+mus_e4m2                  "./ultimate-doom/e3m2.mp3"
+mus_e4m3                  "./ultimate-doom/e3m3.mp3"
+mus_e4m4                  "./ultimate-doom/e1m5.mp3"
+mus_e4m5                  "./ultimate-doom/e2m7.mp3"
+mus_e4m6                  "./ultimate-doom/e2m4.mp3"
+mus_e4m7                  "./ultimate-doom/e2m6.mp3"
+mus_e4m8                  "./ultimate-doom/e2m5.mp3"
+mus_e4m9                  "./ultimate-doom/e1m9.mp3"
+mus_e5m1                  "./sigil/e5m1.mp3"
+mus_e5m2                  "./sigil/e5m2.mp3"
+mus_e5m3                  "./sigil/e5m3.mp3"
+mus_e5m4                  "./sigil/e5m4.mp3"
+mus_e5m5                  "./sigil/e5m5.mp3"
+mus_e5m6                  "./sigil/e5m6.mp3"
+mus_e5m7                  "./sigil/e5m7.mp3"
+mus_e5m8                  "./sigil/e5m8.mp3"
+mus_e5m9                  "./sigil/e5m9.mp3"
+mus_inter                 "./ultimate-doom/inter.mp3"
+mus_introa                "./ultimate-doom/intro.mp3"
+mus_intro                 "./ultimate-doom/intro.mp3"
+mus_victor                "./ultimate-doom/victor.mp3"
+mus_adrian                "./doom2/adrian.mp3"
+mus_ampie                 "./doom2/ampie.mp3"
+mus_betwee                "./doom2/betwee.mp3"
+mus_count2                "./doom2/count2.mp3"
+mus_countd                "./doom2/countd.mp3"
+mus_ddtbl2                "./doom2/ddtbl2.mp3"
+mus_ddtbl3                "./doom2/ddtbl3.mp3"
+mus_ddtblu                "./doom2/ddtblu.mp3"
+mus_dead2                 "./doom2/dead2.mp3"
+mus_dead                  "./doom2/dead.mp3"
+mus_dm2int                "./doom2/dm2int.mp3"
+mus_dm2ttl                "./doom2/dm2ttl.mp3"
+mus_doom2                 "./doom2/doom2.mp3"
+mus_doom                  "./doom2/doom.mp3"
+mus_evil                  "./doom2/evil.mp3"
+mus_in_cit                "./doom2/in_cit.mp3"
+mus_messag                "./doom2/messag.mp3"
+mus_messg2                "./doom2/messg2.mp3"
+mus_openin                "./doom2/openin.mp3"
+mus_read_m                "./doom2/read_m.mp3"
+mus_romer2                "./doom2/romer2.mp3"
+mus_romero                "./doom2/romero.mp3"
+mus_runni2                "./doom2/runni2.mp3"
+mus_runnin                "./doom2/runnin.mp3"
+mus_shawn2                "./doom2/shawn2.mp3"
+mus_shawn3                "./doom2/shawn3.mp3"
+mus_shawn                 "./doom2/shawn.mp3"
+mus_stalks                "./doom2/stalks.mp3"
+mus_stlks2                "./doom2/stlks2.mp3"
+mus_stlks3                "./doom2/stlks3.mp3"
+mus_tense                 "./doom2/tense.mp3"
+mus_theda2                "./doom2/theda2.mp3"
+mus_theda3                "./doom2/theda3.mp3"
+mus_the_da                "./doom2/the_da.mp3"
+mus_ultima                "./doom2/ultima.mp3"
+```
 
-From there you will see the track names off to the right.
+</details>
 
-Now, just follow this naming scheme for each track: 
+#### Doom 2
 
+<details>
+  <summary>Folder Structure</summary> 
 
-"./mp3-directory/trackname.mp3"
+```
+/home/pi/RetroPie/roms/ports/doom/doom2
+                                               adrian.mp3
+                                               ampie.mp3
+                                               betwee.mp3
+                                               count2.mp3
+                                               countd.mp3
+                                               ddtbl2.mp3
+                                               ddtbl3.mp3
+                                               ddtblu.mp3
+                                               dead.mp3
+                                               dead2.mp3
+                                               dm2int.mp3
+                                               dm2ttl.mp3
+                                               doom.mp3
+                                               DOOM2
+                                                    prboom.cfg
+                                               doom2.mp3
+                                               DOOM2.WAD
+                                               evil.mp3
+                                               in_cit.mp3
+                                               messag.mp3
+                                               messg2.mp3
+                                               openin.mp3
+                                               prboom.wad
+                                               read_m.mp3
+                                               romer2.mp3
+                                               romero.mp3
+                                               runni2.mp3
+                                               runnin.mp3
+                                               shawn.mp3
+                                               shawn2.mp3
+                                               shawn3.mp3
+                                               stalks.mp3
+                                               stlks2.mp3
+                                               stlks3.mp3
+                                               tense.mp3
+                                               theda2.mp3
+                                               theda3.mp3
+                                               the_da.mp3
+                                               ultima.mp3
+```
 
-### Note
+</details>
 
-For Doom 2,  the prboom.cfg file would be located in the /doom2 directory(or folder).
+<details>
+  <summary>prboom.cfg "## Music" Section Example</summary> 
+
+```
+## Music
+mus_bunny                 "./ultimate-doom/bunny.mp3"
+mus_e1m1                  "./ultimate-doom/e1m1.mp3"
+mus_e1m2                  "./ultimate-doom/e1m2.mp3"
+mus_e1m3                  "./ultimate-doom/e1m3.mp3"
+mus_e1m4                  "./ultimate-doom/e1m4.mp3"
+mus_e1m5                  "./ultimate-doom/e1m5.mp3"
+mus_e1m6                  "./ultimate-doom/e1m6.mp3"
+mus_e1m7                  "./ultimate-doom/e1m7.mp3"
+mus_e1m8                  "./ultimate-doom/e1m8.mp3"
+mus_e1m9                  "./ultimate-doom/e1m9.mp3"
+mus_e2m1                  "./ultimate-doom/e2m1.mp3"
+mus_e2m2                  "./ultimate-doom/e2m2.mp3"
+mus_e2m3                  "./ultimate-doom/e2m3.mp3"
+mus_e2m4                  "./ultimate-doom/e2m4.mp3"
+mus_e2m5                  "./ultimate-doom/e2m5.mp3"
+mus_e2m6                  "./ultimate-doom/e2m6.mp3"
+mus_e2m7                  "./ultimate-doom/e2m7.mp3"
+mus_e2m8                  "./ultimate-doom/e2m8.mp3"
+mus_e2m9                  "./ultimate-doom/e2m9.mp3"
+mus_e3m1                  "./ultimate-doom/e3m1.mp3"
+mus_e3m2                  "./ultimate-doom/e3m2.mp3"
+mus_e3m3                  "./ultimate-doom/e3m3.mp3"
+mus_e3m4                  "./ultimate-doom/e3m4.mp3"
+mus_e3m5                  "./ultimate-doom/e3m5.mp3"
+mus_e3m6                  "./ultimate-doom/e3m6.mp3"
+mus_e3m7                  "./ultimate-doom/e3m7.mp3"
+mus_e3m8                  "./ultimate-doom/e3m8.mp3"
+mus_e3m9                  "./ultimate-doom/e3m9.mp3"
+mus_e4m1                  "./ultimate-doom/e3m4.mp3"
+mus_e4m2                  "./ultimate-doom/e3m2.mp3"
+mus_e4m3                  "./ultimate-doom/e3m3.mp3"
+mus_e4m4                  "./ultimate-doom/e1m5.mp3"
+mus_e4m5                  "./ultimate-doom/e2m7.mp3"
+mus_e4m6                  "./ultimate-doom/e2m4.mp3"
+mus_e4m7                  "./ultimate-doom/e2m6.mp3"
+mus_e4m8                  "./ultimate-doom/e2m5.mp3"
+mus_e4m9                  "./ultimate-doom/e1m9.mp3"
+mus_e5m1                  "./sigil/e5m1.mp3"
+mus_e5m2                  "./sigil/e5m2.mp3"
+mus_e5m3                  "./sigil/e5m3.mp3"
+mus_e5m4                  "./sigil/e5m4.mp3"
+mus_e5m5                  "./sigil/e5m5.mp3"
+mus_e5m6                  "./sigil/e5m6.mp3"
+mus_e5m7                  "./sigil/e5m7.mp3"
+mus_e5m8                  "./sigil/e5m8.mp3"
+mus_e5m9                  "./sigil/e5m9.mp3"
+mus_inter                 "./ultimate-doom/inter.mp3"
+mus_introa                "./ultimate-doom/intro.mp3"
+mus_intro                 "./ultimate-doom/intro.mp3"
+mus_victor                "./ultimate-doom/victor.mp3"
+mus_adrian                "./doom2/adrian.mp3"
+mus_ampie                 "./doom2/ampie.mp3"
+mus_betwee                "./doom2/betwee.mp3"
+mus_count2                "./doom2/count2.mp3"
+mus_countd                "./doom2/countd.mp3"
+mus_ddtbl2                "./doom2/ddtbl2.mp3"
+mus_ddtbl3                "./doom2/ddtbl3.mp3"
+mus_ddtblu                "./doom2/ddtblu.mp3"
+mus_dead2                 "./doom2/dead2.mp3"
+mus_dead                  "./doom2/dead.mp3"
+mus_dm2int                "./doom2/dm2int.mp3"
+mus_dm2ttl                "./doom2/dm2ttl.mp3"
+mus_doom2                 "./doom2/doom2.mp3"
+mus_doom                  "./doom2/doom.mp3"
+mus_evil                  "./doom2/evil.mp3"
+mus_in_cit                "./doom2/in_cit.mp3"
+mus_messag                "./doom2/messag.mp3"
+mus_messg2                "./doom2/messg2.mp3"
+mus_openin                "./doom2/openin.mp3"
+mus_read_m                "./doom2/read_m.mp3"
+mus_romer2                "./doom2/romer2.mp3"
+mus_romero                "./doom2/romero.mp3"
+mus_runni2                "./doom2/runni2.mp3"
+mus_runnin                "./doom2/runnin.mp3"
+mus_shawn2                "./doom2/shawn2.mp3"
+mus_shawn3                "./doom2/shawn3.mp3"
+mus_shawn                 "./doom2/shawn.mp3"
+mus_stalks                "./doom2/stalks.mp3"
+mus_stlks2                "./doom2/stlks2.mp3"
+mus_stlks3                "./doom2/stlks3.mp3"
+mus_tense                 "./doom2/tense.mp3"
+mus_theda2                "./doom2/theda2.mp3"
+mus_theda3                "./doom2/theda3.mp3"
+mus_the_da                "./doom2/the_da.mp3"
+mus_ultima                "./doom2/ultima.mp3"
+```
+
+</details>
+
+#### Final Doom - Plutonia Experiment
+
+<details>
+  <summary>Folder Structure</summary> 
+
+```
+/home/pi/RetroPie/roms/ports/doom/final-doom-plutonia-experiment
+                                                                adrian.mp3
+                                                                ampie.mp3
+                                                                betwee.mp3
+                                                                count2.mp3
+                                                                countd.mp3
+                                                                ddtbl2.mp3
+                                                                ddtbl3.mp3
+                                                                ddtblu.mp3
+                                                                dead.mp3
+                                                                dead2.mp3
+                                                                dm2int.mp3
+                                                                dm2ttl.mp3
+                                                                doom.mp3
+                                                                doom2.mp3
+                                                                evil.mp3
+                                                                in_cit.mp3
+                                                                messag.mp3
+                                                                messg2.mp3
+                                                                openin.mp3
+                                                                PLUTONIA
+                                                                        prboom.cfg
+                                                                PLUTONIA.WAD
+                                                                prboom.wad
+                                                                read_m.mp3
+                                                                romer2.mp3
+                                                                romero.mp3
+                                                                runni2.mp3
+                                                                runnin.mp3
+                                                                shawn.mp3
+                                                                shawn2.mp3
+                                                                shawn3.mp3
+                                                                stalks.mp3
+                                                                stlks2.mp3
+                                                                stlks3.mp3
+                                                                tense.mp3
+                                                                theda2.mp3
+                                                                theda3.mp3
+                                                                the_da.mp3
+                                                                ultima.mp3
+```
+
+</details>
+
+<details>
+  <summary>prboom.cfg "## Music" Section Example</summary> 
+
+```
+## Music
+mus_bunny                 "./ultimate-doom/bunny.mp3"
+mus_e1m1                  "./ultimate-doom/e1m1.mp3"
+mus_e1m2                  "./ultimate-doom/e1m2.mp3"
+mus_e1m3                  "./ultimate-doom/e1m3.mp3"
+mus_e1m4                  "./ultimate-doom/e1m4.mp3"
+mus_e1m5                  "./ultimate-doom/e1m5.mp3"
+mus_e1m6                  "./ultimate-doom/e1m6.mp3"
+mus_e1m7                  "./ultimate-doom/e1m7.mp3"
+mus_e1m8                  "./ultimate-doom/e1m8.mp3"
+mus_e1m9                  "./ultimate-doom/e1m9.mp3"
+mus_e2m1                  "./ultimate-doom/e2m1.mp3"
+mus_e2m2                  "./ultimate-doom/e2m2.mp3"
+mus_e2m3                  "./ultimate-doom/e2m3.mp3"
+mus_e2m4                  "./ultimate-doom/e2m4.mp3"
+mus_e2m5                  "./ultimate-doom/e2m5.mp3"
+mus_e2m6                  "./ultimate-doom/e2m6.mp3"
+mus_e2m7                  "./ultimate-doom/e2m7.mp3"
+mus_e2m8                  "./ultimate-doom/e2m8.mp3"
+mus_e2m9                  "./ultimate-doom/e2m9.mp3"
+mus_e3m1                  "./ultimate-doom/e3m1.mp3"
+mus_e3m2                  "./ultimate-doom/e3m2.mp3"
+mus_e3m3                  "./ultimate-doom/e3m3.mp3"
+mus_e3m4                  "./ultimate-doom/e3m4.mp3"
+mus_e3m5                  "./ultimate-doom/e3m5.mp3"
+mus_e3m6                  "./ultimate-doom/e3m6.mp3"
+mus_e3m7                  "./ultimate-doom/e3m7.mp3"
+mus_e3m8                  "./ultimate-doom/e3m8.mp3"
+mus_e3m9                  "./ultimate-doom/e3m9.mp3"
+mus_e4m1                  "./ultimate-doom/e3m4.mp3"
+mus_e4m2                  "./ultimate-doom/e3m2.mp3"
+mus_e4m3                  "./ultimate-doom/e3m3.mp3"
+mus_e4m4                  "./ultimate-doom/e1m5.mp3"
+mus_e4m5                  "./ultimate-doom/e2m7.mp3"
+mus_e4m6                  "./ultimate-doom/e2m4.mp3"
+mus_e4m7                  "./ultimate-doom/e2m6.mp3"
+mus_e4m8                  "./ultimate-doom/e2m5.mp3"
+mus_e4m9                  "./ultimate-doom/e1m9.mp3"
+mus_e5m1                  "./sigil/e5m1.mp3"
+mus_e5m2                  "./sigil/e5m2.mp3"
+mus_e5m3                  "./sigil/e5m3.mp3"
+mus_e5m4                  "./sigil/e5m4.mp3"
+mus_e5m5                  "./sigil/e5m5.mp3"
+mus_e5m6                  "./sigil/e5m6.mp3"
+mus_e5m7                  "./sigil/e5m7.mp3"
+mus_e5m8                  "./sigil/e5m8.mp3"
+mus_e5m9                  "./sigil/e5m9.mp3"
+mus_inter                 "./ultimate-doom/inter.mp3"
+mus_introa                "./ultimate-doom/intro.mp3"
+mus_intro                 "./ultimate-doom/intro.mp3"
+mus_victor                "./ultimate-doom/victor.mp3"
+mus_adrian                "./final-doom-plutonia-experiment/adrian.mp3"
+mus_ampie                 "./final-doom-plutonia-experiment/ampie.mp3"
+mus_betwee                "./final-doom-plutonia-experiment/betwee.mp3"
+mus_count2                "./final-doom-plutonia-experiment/count2.mp3"
+mus_countd                "./final-doom-plutonia-experiment/countd.mp3"
+mus_ddtbl2                "./final-doom-plutonia-experiment/ddtbl2.mp3"
+mus_ddtbl3                "./final-doom-plutonia-experiment/ddtbl3.mp3"
+mus_ddtblu                "./final-doom-plutonia-experiment/ddtblu.mp3"
+mus_dead2                 "./final-doom-plutonia-experiment/dead2.mp3"
+mus_dead                  "./final-doom-plutonia-experiment/dead.mp3"
+mus_dm2int                "./final-doom-plutonia-experiment/dm2int.mp3"
+mus_dm2ttl                "./final-doom-plutonia-experiment/dm2ttl.mp3"
+mus_doom2                 "./final-doom-plutonia-experiment/doom2.mp3"
+mus_doom                  "./final-doom-plutonia-experiment/doom.mp3"
+mus_evil                  "./final-doom-plutonia-experiment/evil.mp3"
+mus_in_cit                "./final-doom-plutonia-experiment/in_cit.mp3"
+mus_messag                "./final-doom-plutonia-experiment/messag.mp3"
+mus_messg2                "./final-doom-plutonia-experiment/messg2.mp3"
+mus_openin                "./final-doom-plutonia-experiment/openin.mp3"
+mus_read_m                "./final-doom-plutonia-experiment/read_m.mp3"
+mus_romer2                "./final-doom-plutonia-experiment/romer2.mp3"
+mus_romero                "./final-doom-plutonia-experiment/romero.mp3"
+mus_runni2                "./final-doom-plutonia-experiment/runni2.mp3"
+mus_runnin                "./final-doom-plutonia-experiment/runnin.mp3"
+mus_shawn2                "./final-doom-plutonia-experiment/shawn2.mp3"
+mus_shawn3                "./final-doom-plutonia-experiment/shawn3.mp3"
+mus_shawn                 "./final-doom-plutonia-experiment/shawn.mp3"
+mus_stalks                "./final-doom-plutonia-experiment/stalks.mp3"
+mus_stlks2                "./final-doom-plutonia-experiment/stlks2.mp3"
+mus_stlks3                "./final-doom-plutonia-experiment/stlks3.mp3"
+mus_tense                 "./final-doom-plutonia-experiment/tense.mp3"
+mus_theda2                "./final-doom-plutonia-experiment/theda2.mp3"
+mus_theda3                "./final-doom-plutonia-experiment/theda3.mp3"
+mus_the_da                "./final-doom-plutonia-experiment/the_da.mp3"
+mus_ultima                "./final-doom-plutonia-experiment/ultima.mp3"
+```
+
+</details>
+
+#### Final Doom - TNT Evilution
+
+<details>
+  <summary>Folder Structure</summary> 
+
+```
+/home/pi/RetroPie/roms/ports/doom/final-doom-tnt-evilution
+                                                          adrian.mp3
+                                                          ampie.mp3
+                                                          betwee.mp3
+                                                          count2.mp3
+                                                          countd.mp3
+                                                          ddtbl2.mp3
+                                                          ddtbl3.mp3
+                                                          ddtblu.mp3
+                                                          dead.mp3
+                                                          dead2.mp3
+                                                          dm2int.mp3
+                                                          dm2ttl.mp3
+                                                          doom.mp3
+                                                          doom2.mp3
+                                                          evil.mp3
+                                                          in_cit.mp3
+                                                          messag.mp3
+                                                          messg2.mp3
+                                                          openin.mp3
+                                                          prboom.wad
+                                                          read_m.mp3
+                                                          romer2.mp3
+                                                          romero.mp3
+                                                          runni2.mp3
+                                                          runnin.mp3
+                                                          shawn.mp3
+                                                          shawn2.mp3
+                                                          shawn3.mp3
+                                                          stalks.mp3
+                                                          stlks2.mp3
+                                                          stlks3.mp3
+                                                          tense.mp3
+                                                          theda2.mp3
+                                                          theda3.mp3
+                                                          the_da.mp3
+                                                          TNT
+                                                             prboom.cfg
+                                                          TNT.WAD
+                                                          ultima.mp3
+```
+
+</details>
+
+<details>
+  <summary>prboom.cfg "## Music" Section Example</summary> 
+
+```
+## Music
+mus_bunny                 "./ultimate-doom/bunny.mp3"
+mus_e1m1                  "./ultimate-doom/e1m1.mp3"
+mus_e1m2                  "./ultimate-doom/e1m2.mp3"
+mus_e1m3                  "./ultimate-doom/e1m3.mp3"
+mus_e1m4                  "./ultimate-doom/e1m4.mp3"
+mus_e1m5                  "./ultimate-doom/e1m5.mp3"
+mus_e1m6                  "./ultimate-doom/e1m6.mp3"
+mus_e1m7                  "./ultimate-doom/e1m7.mp3"
+mus_e1m8                  "./ultimate-doom/e1m8.mp3"
+mus_e1m9                  "./ultimate-doom/e1m9.mp3"
+mus_e2m1                  "./ultimate-doom/e2m1.mp3"
+mus_e2m2                  "./ultimate-doom/e2m2.mp3"
+mus_e2m3                  "./ultimate-doom/e2m3.mp3"
+mus_e2m4                  "./ultimate-doom/e2m4.mp3"
+mus_e2m5                  "./ultimate-doom/e2m5.mp3"
+mus_e2m6                  "./ultimate-doom/e2m6.mp3"
+mus_e2m7                  "./ultimate-doom/e2m7.mp3"
+mus_e2m8                  "./ultimate-doom/e2m8.mp3"
+mus_e2m9                  "./ultimate-doom/e2m9.mp3"
+mus_e3m1                  "./ultimate-doom/e3m1.mp3"
+mus_e3m2                  "./ultimate-doom/e3m2.mp3"
+mus_e3m3                  "./ultimate-doom/e3m3.mp3"
+mus_e3m4                  "./ultimate-doom/e3m4.mp3"
+mus_e3m5                  "./ultimate-doom/e3m5.mp3"
+mus_e3m6                  "./ultimate-doom/e3m6.mp3"
+mus_e3m7                  "./ultimate-doom/e3m7.mp3"
+mus_e3m8                  "./ultimate-doom/e3m8.mp3"
+mus_e3m9                  "./ultimate-doom/e3m9.mp3"
+mus_e4m1                  "./ultimate-doom/e3m4.mp3"
+mus_e4m2                  "./ultimate-doom/e3m2.mp3"
+mus_e4m3                  "./ultimate-doom/e3m3.mp3"
+mus_e4m4                  "./ultimate-doom/e1m5.mp3"
+mus_e4m5                  "./ultimate-doom/e2m7.mp3"
+mus_e4m6                  "./ultimate-doom/e2m4.mp3"
+mus_e4m7                  "./ultimate-doom/e2m6.mp3"
+mus_e4m8                  "./ultimate-doom/e2m5.mp3"
+mus_e4m9                  "./ultimate-doom/e1m9.mp3"
+mus_e5m1                  "./sigil/e5m1.mp3"
+mus_e5m2                  "./sigil/e5m2.mp3"
+mus_e5m3                  "./sigil/e5m3.mp3"
+mus_e5m4                  "./sigil/e5m4.mp3"
+mus_e5m5                  "./sigil/e5m5.mp3"
+mus_e5m6                  "./sigil/e5m6.mp3"
+mus_e5m7                  "./sigil/e5m7.mp3"
+mus_e5m8                  "./sigil/e5m8.mp3"
+mus_e5m9                  "./sigil/e5m9.mp3"
+mus_inter                 "./ultimate-doom/inter.mp3"
+mus_introa                "./ultimate-doom/intro.mp3"
+mus_intro                 "./ultimate-doom/intro.mp3"
+mus_victor                "./ultimate-doom/victor.mp3"
+mus_adrian                "./final-doom-tnt-evilution/adrian.mp3"
+mus_ampie                 "./final-doom-tnt-evilution/ampie.mp3"
+mus_betwee                "./final-doom-tnt-evilution/betwee.mp3"
+mus_count2                "./final-doom-tnt-evilution/count2.mp3"
+mus_countd                "./final-doom-tnt-evilution/countd.mp3"
+mus_ddtbl2                "./final-doom-tnt-evilution/ddtbl2.mp3"
+mus_ddtbl3                "./final-doom-tnt-evilution/ddtbl3.mp3"
+mus_ddtblu                "./final-doom-tnt-evilution/ddtblu.mp3"
+mus_dead2                 "./final-doom-tnt-evilution/dead2.mp3"
+mus_dead                  "./final-doom-tnt-evilution/dead.mp3"
+mus_dm2int                "./final-doom-tnt-evilution/dm2int.mp3"
+mus_dm2ttl                "./final-doom-tnt-evilution/dm2ttl.mp3"
+mus_doom2                 "./final-doom-tnt-evilution/doom2.mp3"
+mus_doom                  "./final-doom-tnt-evilution/doom.mp3"
+mus_evil                  "./final-doom-tnt-evilution/evil.mp3"
+mus_in_cit                "./final-doom-tnt-evilution/in_cit.mp3"
+mus_messag                "./final-doom-tnt-evilution/messag.mp3"
+mus_messg2                "./final-doom-tnt-evilution/messg2.mp3"
+mus_openin                "./final-doom-tnt-evilution/openin.mp3"
+mus_read_m                "./final-doom-tnt-evilution/read_m.mp3"
+mus_romer2                "./final-doom-tnt-evilution/romer2.mp3"
+mus_romero                "./final-doom-tnt-evilution/romero.mp3"
+mus_runni2                "./final-doom-tnt-evilution/runni2.mp3"
+mus_runnin                "./final-doom-tnt-evilution/runnin.mp3"
+mus_shawn2                "./final-doom-tnt-evilution/shawn2.mp3"
+mus_shawn3                "./final-doom-tnt-evilution/shawn3.mp3"
+mus_shawn                 "./final-doom-tnt-evilution/shawn.mp3"
+mus_stalks                "./final-doom-tnt-evilution/stalks.mp3"
+mus_stlks2                "./final-doom-tnt-evilution/stlks2.mp3"
+mus_stlks3                "./final-doom-tnt-evilution/stlks3.mp3"
+mus_tense                 "./final-doom-tnt-evilution/tense.mp3"
+mus_theda2                "./final-doom-tnt-evilution/theda2.mp3"
+mus_theda3                "./final-doom-tnt-evilution/theda3.mp3"
+mus_the_da                "./final-doom-tnt-evilution/the_da.mp3"
+mus_ultima                "./final-doom-tnt-evilution/ultima.mp3"
+```
+
+</details>
+
+**Doom - Sigil**
+
+<details>
+  <summary>Folder Structure</summary> 
+
+```
+/home/pi/RetroPie/roms/ports/doom/sigil
+                                       DOOM
+                                           prboom.cfg
+                                       DOOM.WAD
+                                       e5m1.mp3
+                                       e5m2.mp3
+                                       e5m3.mp3
+                                       e5m4.mp3
+                                       e5m5.mp3
+                                       e5m6.mp3
+                                       e5m7.mp3
+                                       e5m8.mp3
+                                       e5m9.mp3
+                                       inter.mp3
+                                       intro.mp3
+                                       prboom.wad
+                                       SIGIL_v1_21.wad
+```
+
+</details>
+
+<details>
+  <summary>prboom.cfg "## Music" Section Example</summary> 
+
+```
+## Music
+mus_bunny                 "./ultimate-doom/bunny.mp3"
+mus_e1m1                  "./ultimate-doom/e1m1.mp3"
+mus_e1m2                  "./ultimate-doom/e1m2.mp3"
+mus_e1m3                  "./ultimate-doom/e1m3.mp3"
+mus_e1m4                  "./ultimate-doom/e1m4.mp3"
+mus_e1m5                  "./ultimate-doom/e1m5.mp3"
+mus_e1m6                  "./ultimate-doom/e1m6.mp3"
+mus_e1m7                  "./ultimate-doom/e1m7.mp3"
+mus_e1m8                  "./ultimate-doom/e1m8.mp3"
+mus_e1m9                  "./ultimate-doom/e1m9.mp3"
+mus_e2m1                  "./ultimate-doom/e2m1.mp3"
+mus_e2m2                  "./ultimate-doom/e2m2.mp3"
+mus_e2m3                  "./ultimate-doom/e2m3.mp3"
+mus_e2m4                  "./ultimate-doom/e2m4.mp3"
+mus_e2m5                  "./ultimate-doom/e2m5.mp3"
+mus_e2m6                  "./ultimate-doom/e2m6.mp3"
+mus_e2m7                  "./ultimate-doom/e2m7.mp3"
+mus_e2m8                  "./ultimate-doom/e2m8.mp3"
+mus_e2m9                  "./ultimate-doom/e2m9.mp3"
+mus_e3m1                  "./ultimate-doom/e3m1.mp3"
+mus_e3m2                  "./ultimate-doom/e3m2.mp3"
+mus_e3m3                  "./ultimate-doom/e3m3.mp3"
+mus_e3m4                  "./ultimate-doom/e3m4.mp3"
+mus_e3m5                  "./ultimate-doom/e3m5.mp3"
+mus_e3m6                  "./ultimate-doom/e3m6.mp3"
+mus_e3m7                  "./ultimate-doom/e3m7.mp3"
+mus_e3m8                  "./ultimate-doom/e3m8.mp3"
+mus_e3m9                  "./ultimate-doom/e3m9.mp3"
+mus_e4m1                  "./ultimate-doom/e3m4.mp3"
+mus_e4m2                  "./ultimate-doom/e3m2.mp3"
+mus_e4m3                  "./ultimate-doom/e3m3.mp3"
+mus_e4m4                  "./ultimate-doom/e1m5.mp3"
+mus_e4m5                  "./ultimate-doom/e2m7.mp3"
+mus_e4m6                  "./ultimate-doom/e2m4.mp3"
+mus_e4m7                  "./ultimate-doom/e2m6.mp3"
+mus_e4m8                  "./ultimate-doom/e2m5.mp3"
+mus_e4m9                  "./ultimate-doom/e1m9.mp3"
+mus_e5m1                  "./sigil/e5m1.mp3"
+mus_e5m2                  "./sigil/e5m2.mp3"
+mus_e5m3                  "./sigil/e5m3.mp3"
+mus_e5m4                  "./sigil/e5m4.mp3"
+mus_e5m5                  "./sigil/e5m5.mp3"
+mus_e5m6                  "./sigil/e5m6.mp3"
+mus_e5m7                  "./sigil/e5m7.mp3"
+mus_e5m8                  "./sigil/e5m8.mp3"
+mus_e5m9                  "./sigil/e5m9.mp3"
+mus_inter                 "./sigil/inter.mp3"
+mus_introa                "./sigil/intro.mp3"
+mus_intro                 "./sigil/intro.mp3"
+mus_victor                "./ultimate-doom/victor.mp3"
+mus_adrian                "./doom2/adrian.mp3"
+mus_ampie                 "./doom2/ampie.mp3"
+mus_betwee                "./doom2/betwee.mp3"
+mus_count2                "./doom2/count2.mp3"
+mus_countd                "./doom2/countd.mp3"
+mus_ddtbl2                "./doom2/ddtbl2.mp3"
+mus_ddtbl3                "./doom2/ddtbl3.mp3"
+mus_ddtblu                "./doom2/ddtblu.mp3"
+mus_dead2                 "./doom2/dead2.mp3"
+mus_dead                  "./doom2/dead.mp3"
+mus_dm2int                "./doom2/dm2int.mp3"
+mus_dm2ttl                "./doom2/dm2ttl.mp3"
+mus_doom2                 "./doom2/doom2.mp3"
+mus_doom                  "./doom2/doom.mp3"
+mus_evil                  "./doom2/evil.mp3"
+mus_in_cit                "./doom2/in_cit.mp3"
+mus_messag                "./doom2/messag.mp3"
+mus_messg2                "./doom2/messg2.mp3"
+mus_openin                "./doom2/openin.mp3"
+mus_read_m                "./doom2/read_m.mp3"
+mus_romer2                "./doom2/romer2.mp3"
+mus_romero                "./doom2/romero.mp3"
+mus_runni2                "./doom2/runni2.mp3"
+mus_runnin                "./doom2/runnin.mp3"
+mus_shawn2                "./doom2/shawn2.mp3"
+mus_shawn3                "./doom2/shawn3.mp3"
+mus_shawn                 "./doom2/shawn.mp3"
+mus_stalks                "./doom2/stalks.mp3"
+mus_stlks2                "./doom2/stlks2.mp3"
+mus_stlks3                "./doom2/stlks3.mp3"
+mus_tense                 "./doom2/tense.mp3"
+mus_theda2                "./doom2/theda2.mp3"
+mus_theda3                "./doom2/theda3.mp3"
+mus_the_da                "./doom2/the_da.mp3"
+mus_ultima                "./doom2/ultima.mp3"
+```
+
+</details>
 
 ### Music for ZDoom
 
 ZDoom handles the midi music from the Doom games automatically - options are provided in the ZDoom menu for various midi emulation devices, including OPL3 and Timidity for midi output. A number of fan-created music 'remasters' also exist, which can be loaded with ZDoom as PWAD / PK3 files using the methods outlined above. These packs will generally replace all of the original in-game music.
 
-## Video issues
+## Issues
 
-### Deformed Ceiling and Floor textures in lr-prboom
+### lr-prboom - Deformed Ceiling and Floor Textures
 
-If you are trying to run **lr-prboom** on a RPI4 you may encounter an issue with the ceiling and floor textures like this:
+As of a an update to **lr-prboom**, an issue with the ceiling and floor textures like this has started:
 
 ![](https://user-images.githubusercontent.com/39132563/63890203-740dcf80-c9b0-11e9-8406-e29906b9a22b.png)
 
