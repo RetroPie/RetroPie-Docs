@@ -7,11 +7,11 @@ _Doom was the game that popularized First Person Shooting as a genre. It was dev
 ***
 ## Ports: [lr-prboom](https://github.com/petrockblog/RetroPie-Setup/blob/master/scriptmodules/libretrocores/lr-prboom.sh), [ZDoom](https://github.com/rheit/zdoom)
 
-**lr-prboom**
+### lr-prboom
 
 Port of PrBoom to Libretro. This port supports Doom, Doom 2, Final Doom and Freedoom alongside the simple mods that don't require other source port enhancements. Unlike other source ports that concentrate on offering many new game features or changes, such as ZDoom, PrBoom aims to act as a stable port of the more established or traditional engines.
 
-**ZDoom**
+### ZDoom
 
 ZDoom is a family of enhanced ports of the Doom engine for running on modern operating systems and adds new features not found in the games as originally published by id Software.
 
@@ -25,11 +25,11 @@ lr-prboom is found under Optional Packages in RetroPie Setup. After installation
 
 Below you will find `.sh` and folder structure examples for Ultimate Doom, Doom 2, Final Doom, Freedoom IWADs and various Doom/Doom 2 PWADs that don't depend on the features more robust source ports provide. The reason for putting each game/mod in its own folder is so that each game has separate saves and allows you to install the additional high quality MP3s detailed later without naming conflicts.
 
-**Full Games (IWADs)**
+#### Full Games (IWADs)
 
 The following game IWADs can be run with lr-prboom and are used to play various Doom/Doom 2 PWADs that don't depend on the features more robust source ports provide. Ultimate Doom, Doom 2 and Final Doom are available on GOG and Steam, while Freedoom is available for free.
 
-**Ultimate Doom**
+####  Ultimate Doom
 
 Available on [GOG](https://www.gog.com/game/the_ultimate_doom) and [Steam](https://store.steampowered.com/app/2280/Ultimate_Doom/)
 
@@ -48,7 +48,7 @@ Folder Structure Example
                                                prboom.wad
 ```
 
-**Doom 2**
+#### Doom 2
 
 Available on [GOG](https://www.gog.com/game/doom_ii_final_doom) and [Steam](https://store.steampowered.com/app/2300/DOOM_II/)
 
@@ -67,7 +67,7 @@ Folder Structure Example
                                        prboom.wad
 ```
 
-**Final Doom - The Plutonia Experiment**
+#### Final Doom - The Plutonia Experiment
 
 Available on [GOG](https://www.gog.com/game/doom_ii_final_doom) and [Steam](https://store.steampowered.com/app/2290/Final_DOOM/)
 
@@ -86,7 +86,7 @@ Folder Structure Example
                                                                 prboom.wad
 ```
 
-**Final Doom - TNT - Evilution**
+#### Final Doom - TNT - Evilution
 
 Available on [GOG](https://www.gog.com/game/doom_ii_final_doom) and [Steam](https://store.steampowered.com/app/2290/Final_DOOM/)
 
@@ -103,7 +103,7 @@ Folder Structure Example
                                                           TNT.WAD
 ```
 
-**Freedoom - Phase 1**
+#### Freedoom - Phase 1
 
 Available for free [here](https://freedoom.github.io/download.html).
 
@@ -120,7 +120,7 @@ Folder Structure Example
                                           prboom.wad
 ```
 
-**Freedoom - Phase 2**
+#### Freedoom - Phase 2
 
 Available for free [here](https://freedoom.github.io/download.html).
 
@@ -137,11 +137,13 @@ Folder Structure Example
                                            prboom.wad
 ```
 
-**Mods (PWADs)**
+#### Mods (PWADs)
 
 These are used in conjunction with Doom/Freedoom - Phase 1 to play Doom mods and with Doom 2/Final Doom/Freedoom - Phase 2 to play Doom 2 mods. Ideally, you will want to have run the IWAD games before working on these so that you will be able to simply copy the folder with the IWAD, `prboom.wad` and respective `DOOM`/`DOOM2`/`PLUTONIA`/`TNT`/`FREEDOOM1`/`FREEDOOM2` folder containing the `prboom.cfg` to edit.
 
-**Doom - Sigil**
+Due to the extensive number of PWADs out there, only these commercial PWADs are included in the documentation here, though they should give you a good idea of how to use other PWADs.
+
+#### Doom - Sigil
 
 A Doom mod made by John Romero for Doom's 35th anniversary. It is available for free [here](https://www.romerogames.ie/si6il): it is currently unknown if the purchasable Buckethead soundtrack WAD can be played by lr-prboom and if the COMPAT version of the WADs is required instead of the regular WADs for a full playthrough. The regular Sigil WAD does load the first level of Sigil when selecting the fifth episode, though it also breaks all other episodes so that they load episode one when selected: the COMPAT version of the WAD replaces episode three without breaking the other episodes one, two, and four.
 
@@ -177,7 +179,7 @@ wadfile_1                 "SIGIL_v1_21.wad"
 
 ```
 
-**Doom 2 - No Rest for the Living**
+#### Doom 2 - No Rest for the Living
 
 No Rest for the Living was developed by Nerve Software for the release of Doom 2 on the XBLA. The episode consists of nine levels in all, eight standard levels and a single secret level, as a homage to the similarly structured nine-map episodes in the original Doom, particularly Knee-Deep in the Dead.
 
@@ -212,7 +214,7 @@ wadfile_1                 "NERVE.WAD"
 #dehfile_2                 ""
 ```
 
-**Lost Episodes of Doom**
+#### Lost Episodes of Doom
 
 The Lost Episodes of Doom is a collection of three eight-level episodes for Doom by Christen Klie and Bob Carter. It takes place on the Jovian moons Callisto and Io, and on Jupiter itself. It was a commercial product.
 
@@ -248,7 +250,7 @@ wadfile_2                 "Jptr_fix.wad"
 #dehfile_2                 ""
 ```
 
-**Hell to Pay**
+#### Hell to Pay
 
 Hell To Pay is a partial conversion for Doom II created by Wraith Corporation in 1996 and published by WizardWorks. In the plot of Hell To Pay, Earth is invaded by demonic aliens, and the player must journey to Planet Hell in order to activate the planet-killer bomb meant for Earth. Compared to Perdition's Gate, which has only new music and some new textures, this conversion has new graphics for textures, monsters, and weapons.
 
@@ -288,7 +290,7 @@ wadfile_5                 "HTPDMO19.WAD"
 #dehfile_2                 ""
 ```
 
-**Perdition's Gate**
+#### Perdition's Gate
 
 Perdition's Gate is a 32-level commercial megawad for Doom II designed by Wraith Corporation and published by WizardWorks. Unlike its sister release, Hell to Pay, which is a partial conversion, Perdition's Gate only contains new graphics for various textures and new music besides its levels.
 
@@ -326,11 +328,11 @@ wadfile_1                 "PG-RAW-X.WAD"
 
 ### ZDoom Installation
 
-**To Launch Doom, Ultimate Doom, Doom 2, TNT, Plutonia, Final Doom (IWADS)**
+#### To Launch Doom, Ultimate Doom, Doom 2, TNT, Plutonia, Final Doom (IWADS)
 
 Use the same method for IWADS detailed above for lr-prboom, only set the default emulator for ROM to 'zdoom' at launch in the runcommand menu.
 
-**To Launch Doom Mods (PWADS)**
+#### To Launch Doom Mods (PWADS)
 
 Here, we'll use [Rex Claussen's, The Darkest Hour](http://doomnexus.drdteam.org/DH_Pix.html) as an example that can be used for any mod. Start by downloading [The Darkest Hour](ftp://ftp.fu-berlin.de/pc/msdos/games/idgames/levels/doom2/Ports/d-f/darkhour.zip). Next you will either want to SSH into your Pi, or drop out of EmulationStation using F4 on your keyboard. 
 
@@ -392,13 +394,13 @@ Having completed this step, you will now want to restart Emulation Station, navi
 
 ## Controls
 
-**lr-prboom**
+### lr-prboom Controls
 
 lr-prboom utilises normal Retroarch control configurations found in the RetroArch menu by pressing 'select+x' on your controller after the game software has launched. From the RetroArch menu, navigate to 'Quick Menu' and then to 'Controls'.
 
 For more information on custom RetroArch controls see: [RetroArch Configuration](https://github.com/retropie/retropie-setup/wiki/retroarch-configuration)
 
-**ZDoom**
+### ZDoom Controls
 
 ZDoom controls can be found in the Doom options menu by pressing any button or key after the game software has launched. Although the initial configuration may need to be started with a keyboard, full joystick autonomy is possible after being set.
 
@@ -1000,7 +1002,7 @@ mus_ultima                "./final-doom-tnt-evilution/ultima.mp3"
 
 </details>
 
-**Doom - Sigil**
+#### Doom - Sigil
 
 The naming for the MP3 soundtrack can be found [here](https://doomwiki.org/wiki/SIGIL).
 
