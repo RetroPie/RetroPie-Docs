@@ -23,7 +23,7 @@ This port officially supports the following Doom engine games: Doom, Doom 2, Fin
 
 lr-prboom is found under Optional Packages in RetroPie Setup. After installation and a restart of EmulationStation, you will have the shareware version of Doom in the Ports section. 
 
-Below you will find `.sh` and folder structure examples for Ultimate Doom, Doom 2, Final Doom, Freedoom IWADs and various Doom/Doom 2 PWADs that don't depend on the features more robust source ports provide. The reason for putting each game/mod in its own folder is so that each game has separate saves and allows you to install the additional high quality MP3s detailed later without naming conflicts.
+Below you will find `.sh` and folder structure examples for Ultimate Doom, Doom 2, Final Doom, and Freedoom IWADs, and various Doom/Doom 2 PWADs that don't depend on the features more robust source ports provide. The reason for putting each game/mod in separate folders is so that each game has separate saves and settings, and allows you to install the additional high-quality MP3s detailed later without naming conflicts.
 
 #### Full Games (IWADs)
 
@@ -105,7 +105,7 @@ Folder Structure Example
 
 #### Freedoom - Phase 1
 
-Available for free [here](https://freedoom.github.io/download.html).
+Available for free [HERE](https://freedoom.github.io/download.html).
 
 `Freedoom - Phase 1.sh` Example
 ```
@@ -122,7 +122,7 @@ Folder Structure Example
 
 #### Freedoom - Phase 2
 
-Available for free [here](https://freedoom.github.io/download.html).
+Available for free [HERE](https://freedoom.github.io/download.html).
 
 `Freedoom - Phase 2.sh` Example
 ```
@@ -139,13 +139,17 @@ Folder Structure Example
 
 #### Mods (PWADs)
 
-These are used in conjunction with Doom/Freedoom - Phase 1 to play Doom mods and with Doom 2/Final Doom/Freedoom - Phase 2 to play Doom 2 mods. Ideally, you will want to have run the IWAD games before working on these so that you will be able to simply copy the folder with the IWAD, `prboom.wad` and respective `DOOM`/`DOOM2`/`PLUTONIA`/`TNT`/`FREEDOOM1`/`FREEDOOM2` folder containing the `prboom.cfg` to edit.
+These are used in conjunction with Doom/Freedoom - Phase 1 to play Doom mods and with Doom 2/Final Doom/Freedoom - Phase 2 to play Doom 2 mods. Ideally, you will want to have run the IWAD games before working on these so that you will be able to simply copy one of the appropriate game folders you made above that contains the IWAD you want/need to use, the `prboom.wad` and the respective `DOOM`/`DOOM2`/`PLUTONIA`/`TNT`/`FREEDOOM1`/`FREEDOOM2` folder containing the `prboom.cfg` to edit.
 
 Due to the extensive number of PWADs out there, only these commercial PWADs are included in the documentation here, though they should give you a good idea of how to use other PWADs.
 
+**If you plan to use MP3 music over lr-prboom's MIDI, then it is advised that you follow the guide for that in the Enhancements section before copying any game folder for PWAD use to avoid additional work.**
+
+**It is advised that you also apply the fix for lr-prboom's current floor and ceiling bug found in the Issues section to all games before copying any game folder for PWAD use to avoid additional work.**
+
 #### Doom - Sigil
 
-A Doom mod made by John Romero for Doom's 35th anniversary. It is available for free [here](https://www.romerogames.ie/si6il): it is currently unknown if the purchasable Buckethead soundtrack WAD can be played by lr-prboom and if the COMPAT version of the WADs is required instead of the regular WADs for a full playthrough. The regular Sigil WAD does load the first level of Sigil when selecting the fifth episode, though it also breaks all other episodes so that they load episode one when selected: the COMPAT version of the WAD replaces episode three without breaking the other episodes one, two, and four.
+A Doom mod made by John Romero for Doom's 35th anniversary. It is available for free [HERE](https://www.romerogames.ie/si6il): it is currently unknown if the purchasable Buckethead soundtrack WAD can be played by lr-prboom and if the COMPAT version of the WADs is required instead of the regular WADs for a full playthrough. The regular Sigil WAD does load the first level of Sigil when selecting the fifth episode, though it also breaks all other episodes so that they load episode one when selected: the COMPAT version of the WAD replaces episode three without breaking the other episodes.
 
 `Doom - Sigil.sh` Example
 ```
@@ -252,7 +256,7 @@ wadfile_2                 "Jptr_fix.wad"
 
 #### Hell to Pay
 
-Hell To Pay is a partial conversion for Doom II created by Wraith Corporation in 1996 and published by WizardWorks. In the plot of Hell To Pay, Earth is invaded by demonic aliens, and the player must journey to Planet Hell in order to activate the planet-killer bomb meant for Earth. Compared to Perdition's Gate, which has only new music and some new textures, this conversion has new graphics for textures, monsters, and weapons.
+Hell To Pay is a partial conversion for Doom II created by Wraith Corporation in 1996 and published by WizardWorks. In the plot of Hell To Pay, Earth is invaded by demonic aliens, and the player must journey to Planet Hell to activate the planet-killer bomb meant for Earth. Compared to Perdition's Gate, which has only new music and some new textures, this conversion has new graphics for textures, monsters, and weapons.
 
 `Hell to Pay.sh` Example
 ```
@@ -330,11 +334,11 @@ wadfile_1                 "PG-RAW-X.WAD"
 
 #### To Launch Doom, Ultimate Doom, Doom 2, TNT, Plutonia, Final Doom (IWADS)
 
-Use the same method for IWADS detailed above for lr-prboom, only set the default emulator for ROM to 'zdoom' at launch in the runcommand menu.
+Use the same method for IWADS detailed above for lr-prboom, only set the default emulator for ROM to 'zdoom' at launch in the Runcommand menu.
 
 #### To Launch Doom Mods (PWADS)
 
-Here, we'll use [Rex Claussen's, The Darkest Hour](http://doomnexus.drdteam.org/DH_Pix.html) as an example that can be used for any mod. Start by downloading [The Darkest Hour](ftp://ftp.fu-berlin.de/pc/msdos/games/idgames/levels/doom2/Ports/d-f/darkhour.zip). Next you will either want to SSH into your Pi, or drop out of EmulationStation using F4 on your keyboard. 
+Here, we'll use [Rex Claussen's, The Darkest Hour](http://doomnexus.drdteam.org/DH_Pix.html) as an example that can be used for any mod. Start by downloading [The Darkest Hour](ftp://ftp.fu-berlin.de/pc/msdos/games/idgames/levels/doom2/Ports/d-f/darkhour.zip). Next, you will either want to SSH into your Pi or drop out of EmulationStation using F4 on your keyboard. 
 
 At the command line, type the following to create a directory for the `DarkHour.wad` file from the 'Darkest Hour' download.
 
@@ -344,7 +348,7 @@ mkdir /home/pi/RetroPie/roms/ports/darkesthour
 
 You may now transfer the `DarkHour.wad` file to this location via SFTP or Samba.
 
-Next you'll want to create a new script that we will use to launch The Darkest Hour from EmulationStation.
+Next, you'll want to create a new script that we will use to launch The Darkest Hour from EmulationStation.
 
 To do this, type:
 
@@ -388,7 +392,7 @@ default="zdoom"
 
 press 'ctrl+o' to save, 'y' to confirm and 'ctrl+x' to exit out of the nano text editor.
 
-You'll notice that in the above example that ZDoom is making use of the 'Doom II' wad as a base for the 'Darkest Hour' modification. This is common in most cases. However, some mods will need to make use of the 'Ultimate Doom' wad file entitled `doom.wad` instead. Both `doom.wad` and `doom2.wad` should be installed to `/home/pi/RetroPie/roms/ports/doom/` and the above example should be set accordingly. Also you will notice the use of the commands "-config" and "-savedir", using these allow each game set to use it's own directory for game and saves and settings. 
+You'll notice that in the above example that ZDoom is making use of the 'Doom II' wad as a base for the 'Darkest Hour' modification. This is common in most cases. However, some mods will need to make use of the 'Ultimate Doom' wad file entitled `doom.wad` instead. Both `doom.wad` and `doom2.wad` should be installed to `/home/pi/RetroPie/roms/ports/doom/` and the above example should be set accordingly. Also, you will notice the use of the commands "-config" and "-savedir", using these allow each game to have separate saves and settings. 
 
 Having completed this step, you will now want to restart Emulation Station, navigate to 'Ports' and test your new menu entry.
 
@@ -396,7 +400,7 @@ Having completed this step, you will now want to restart Emulation Station, navi
 
 ### lr-prboom Controls
 
-lr-prboom utilises normal Retroarch control configurations found in the RetroArch menu by pressing 'select+x' on your controller after the game software has launched. From the RetroArch menu, navigate to 'Quick Menu' and then to 'Controls'.
+lr-prboom utilises normal Retroarch control configurations found in the RetroArch menu by pressing 'Hotkey Enable+X' on your controller after the game software has launched. From the RetroArch Quick Menu, navigate to 'Controls'.
 
 For more information on custom RetroArch controls see: [RetroArch Configuration](https://github.com/retropie/retropie-setup/wiki/retroarch-configuration)
 
@@ -404,7 +408,7 @@ For more information on custom RetroArch controls see: [RetroArch Configuration]
 
 ZDoom controls can be found in the Doom options menu by pressing any button or key after the game software has launched. Although the initial configuration may need to be started with a keyboard, full joystick autonomy is possible after being set.
 
-In-game controls can be mapped easily from the ZDoom options menu, however Joystick control of the menus is not well implemented. There are a number of community solutions - one of the easier solutions to implement is to replace zdoom and zdoom.pk3 in this folder: 
+In-game controls can be mapped easily from the ZDoom options menu, however, Joystick control of the menus is not well implemented. The advised solution is to replace zdoom and zdoom.pk3 in this folder: 
 ```
 /opt/retropie/ports/zdoom/
 ```
@@ -418,15 +422,17 @@ This adds menu options to the ZDoom menu for "menu forward" and "menu back" whic
 
 ## Enhancements
 
-### Music for lr-prboom
+### Alternative Music for lr-prboom
 
-To enable music in your Doom games running in lr-prboom, you need to copy MP3s with specific names into the same folder your WAD for the game is located. You will also need to set PrBoom to use external music always within its menu options.
+While lr-prboom does support playing MIDI music from the WADs, its quality leaves something to be desired.
+
+To have higher quality music in your Doom games running in lr-prboom, you need to copy MP3s with specific names into the same folder your WAD for the game is located. You will also need to set PrBoom to use external music always within its internal menu options.
 
 The easiest to use and highest quality authentic soundtrack you can get for games running in lr-prboom are the ones generated by a Roland SC-55 then digitized to MP3. Due to legal reasons, these soundtracks can't be linked here, but if this music is found, a leading `d_` will need to be removed from each MP3's filename, the `ream.mp3` will need to be renamed to `read_m.mp3`, and `mus_e2m5                  "e1m5.mp3"` needs to be changed to `mus_e2m5                  "e2m5.mp3"` in the `prboom.cfg` (if just copying and pasting the examples then this is fixed in them).
 
 Keep in mind that the soundtracks for Doom 2, Final Doom: TNT: Evilution, and Final Doom: The Plutonia Experiment are different even though their tracks are named identically. This means that the WADs/MP3s for those three games must be in separate folders to avoid filename conflicts between the MP3s.
 
-An alternative source for alternative music for your Doom games would be from [Aubrey Hodges](https://aubreyhodges.bandcamp.com/), who scored Doom/Doom 2 and Final Doom: TNT: Evilution/The Plutonia Experiment on the PSX, though properly renaming/duplicating the MP3s for each game would currently be an arduous task due to lack of a chart to reference.
+An alternative ambient horror music option for your Doom games would be from [Aubrey Hodges](https://aubreyhodges.bandcamp.com/), who scored Doom/Doom 2 and Final Doom: TNT: Evilution/The Plutonia Experiment on the PSX, and will require extensive renaming and copying: [THIS](https://doomwiki.org/wiki/PlayStation_Doom_music) chart should be useful in identifying which tracks play on each map.
 
 Below you will find examples of the MP3s in the folders for Doom, Doom 2, Final Doom, and Sigil alongside `prboom.cfg` examples that allow you to copy just the required IWAD and respective folder containing the `prboom.cfg` for mods without needing to copy the MP3s.
 
@@ -1004,7 +1010,9 @@ mus_ultima                "./final-doom-tnt-evilution/ultima.mp3"
 
 #### Doom - Sigil
 
-The naming for the MP3 soundtrack can be found [here](https://doomwiki.org/wiki/SIGIL).
+A chart to assist with renaming the MP3 soundtrack can be found [HERE](https://doomwiki.org/wiki/SIGIL).
+
+The soundtrack for the levels can be found [HERE](https://music.bucketheadpikes.com/album/sigil-soundtrack), the music for the title screen can be found [HERE](https://music.bucketheadpikes.com/track/eye-on-spiral-part-1), and the music for the intermission screen can be found [HERE](https://music.bucketheadpikes.com/track/triceratoptron).
 
 <details>
   <summary>Folder Structure</summary> 
@@ -1127,16 +1135,16 @@ mus_ultima                "./doom2/ultima.mp3"
 
 ### Music for ZDoom
 
-ZDoom handles the midi music from the Doom games automatically - options are provided in the ZDoom menu for various midi emulation devices, including OPL3 and Timidity for midi output. A number of fan-created music 'remasters' also exist, which can be loaded with ZDoom as PWAD / PK3 files using the methods outlined above.
+ZDoom handles the midi music from the Doom games automatically - options are provided in the ZDoom menu for various midi emulation devices, including OPL3 and Timidity for midi output. Several fan-created music packs also exist, which can be loaded with ZDoom as PWAD / PK3 files using the methods outlined above.
 
 ## Issues
 
 ### lr-prboom - Deformed Ceiling and Floor Textures
 
-As of a an update to lr-prboom, an issue with the ceiling and floor textures like this has started:
+As of an update to lr-prboom, an issue with the ceiling and floor textures like this has started:
 
 ![](https://user-images.githubusercontent.com/39132563/63890203-740dcf80-c9b0-11e9-8406-e29906b9a22b.png)
 
-This is caused by a bug in lr-prboom. The easiest way to fix it is by going to the game settings and turning off the `wiggle geometry fix`.
+This is caused by a bug in lr-prboom. The easiest way to fix it is by going to the internal menu's settings and turning off the `wiggle geometry fix`.
 
 Here is the discussion about the bug: https://github.com/libretro/libretro-prboom/issues/112
