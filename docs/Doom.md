@@ -29,7 +29,7 @@ Below you will find `.sh` and folder structure examples for Ultimate Doom, Doom 
 
 The following game IWADs can be run with lr-prboom and are used to play various Doom/Doom 2 PWADs that don't depend on the features more robust source ports provide. Ultimate Doom, Doom 2 and Final Doom are available on GOG and Steam, while Freedoom is available for free.
 
-####  Ultimate Doom
+#####  Ultimate Doom
 
 Available on [GOG](https://www.gog.com/game/the_ultimate_doom) and [Steam](https://store.steampowered.com/app/2280/Ultimate_Doom/)
 
@@ -48,7 +48,7 @@ Folder Structure Example
                                                prboom.wad
 ```
 
-#### Doom 2
+##### Doom 2
 
 Available on [GOG](https://www.gog.com/game/doom_ii_final_doom) and [Steam](https://store.steampowered.com/app/2300/DOOM_II/)
 
@@ -67,7 +67,7 @@ Folder Structure Example
                                        prboom.wad
 ```
 
-#### Final Doom - The Plutonia Experiment
+##### Final Doom - The Plutonia Experiment
 
 Available on [GOG](https://www.gog.com/game/doom_ii_final_doom) and [Steam](https://store.steampowered.com/app/2290/Final_DOOM/)
 
@@ -86,7 +86,7 @@ Folder Structure Example
                                                                 prboom.wad
 ```
 
-#### Final Doom - TNT - Evilution
+##### Final Doom - TNT - Evilution
 
 Available on [GOG](https://www.gog.com/game/doom_ii_final_doom) and [Steam](https://store.steampowered.com/app/2290/Final_DOOM/)
 
@@ -103,7 +103,7 @@ Folder Structure Example
                                                           TNT.WAD
 ```
 
-#### Freedoom - Phase 1
+##### Freedoom - Phase 1
 
 Available for free [HERE](https://freedoom.github.io/download.html).
 
@@ -120,7 +120,7 @@ Folder Structure Example
                                           prboom.wad
 ```
 
-#### Freedoom - Phase 2
+##### Freedoom - Phase 2
 
 Available for free [HERE](https://freedoom.github.io/download.html).
 
@@ -147,7 +147,7 @@ Due to the extensive number of PWADs out there, only these commercial PWADs are 
 
 **It is advised that you also apply the fix for lr-prboom's current floor and ceiling bug found in the Issues section to all games before copying any game folder for PWAD use to avoid additional work.**
 
-#### Doom - Sigil
+##### Doom - Sigil
 
 A Doom mod made by John Romero for Doom's 35th anniversary. It is available for free [HERE](https://www.romerogames.ie/si6il): it is currently unknown if the purchasable Buckethead soundtrack WAD can be played by lr-prboom and if the COMPAT version of the WADs is required instead of the regular WADs for a full playthrough. The regular Sigil WAD does load the first level of Sigil when selecting the fifth episode, though it also breaks all other episodes so that they load episode one when selected: the COMPAT version of the WAD replaces episode three without breaking the other episodes.
 
@@ -183,7 +183,7 @@ wadfile_1                 "SIGIL_v1_21.wad"
 
 ```
 
-#### Doom 2 - No Rest for the Living
+##### Doom 2 - No Rest for the Living
 
 No Rest for the Living was developed by Nerve Software for the release of Doom 2 on the XBLA. The episode consists of nine levels in all, eight standard levels and a single secret level, as a homage to the similarly structured nine-map episodes in the original Doom, particularly Knee-Deep in the Dead.
 
@@ -218,7 +218,7 @@ wadfile_1                 "NERVE.WAD"
 #dehfile_2                 ""
 ```
 
-#### Lost Episodes of Doom
+##### Lost Episodes of Doom
 
 The Lost Episodes of Doom is a collection of three eight-level episodes for Doom by Christen Klie and Bob Carter. It takes place on the Jovian moons Callisto and Io, and on Jupiter itself. It was a commercial product.
 
@@ -254,7 +254,7 @@ wadfile_2                 "Jptr_fix.wad"
 #dehfile_2                 ""
 ```
 
-#### Hell to Pay
+##### Hell to Pay
 
 Hell To Pay is a partial conversion for Doom II created by Wraith Corporation in 1996 and published by WizardWorks. In the plot of Hell To Pay, Earth is invaded by demonic aliens, and the player must journey to Planet Hell to activate the planet-killer bomb meant for Earth. Compared to Perdition's Gate, which has only new music and some new textures, this conversion has new graphics for textures, monsters, and weapons.
 
@@ -294,7 +294,7 @@ wadfile_5                 "HTPDMO19.WAD"
 #dehfile_2                 ""
 ```
 
-#### Perdition's Gate
+##### Perdition's Gate
 
 Perdition's Gate is a 32-level commercial megawad for Doom II designed by Wraith Corporation and published by WizardWorks. Unlike its sister release, Hell to Pay, which is a partial conversion, Perdition's Gate only contains new graphics for various textures and new music besides its levels.
 
