@@ -51,9 +51,11 @@ A reboot is required before these changes will be reflected by the `locale` comm
 
 ### Verify the allocated video memory (memory split)
 
-Running Emulationstation requires a larger than default GPU memory split. Make sure you reserve enough memory for Emulationstation by modifying the _/boot/config.txt_ configuration file or by using `raspi-config` as described in the [Memory Split](Memory-Split) page.
+Running Emulationstation requires a larger than default GPU memory split. Make sure you reserve enough memory for EmulationStation by modifying the _/boot/config.txt_ configuration file or by using `raspi-config` as described in the [Memory Split](Memory-Split) page.
 
 A reboot is required after any modifications to the video memory allocation.
+
+**NOTE:** The above configurations are not needed when installing on a Raspberry Pi4 model.
 
 ## Install RetroPie
 
