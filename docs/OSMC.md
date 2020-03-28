@@ -124,7 +124,7 @@ Let's move the roms folder to the Flash Drive as well now and make a soft system
     mkdir /media/RETROPIE/roms
        
     sudo apt-get install rsync
-    rsync roms2 /media/RETROPIE/roms
+    rsync -avzh roms2/ /media/RETROPIE/roms/
     
     ln -s /media/RETROPIE/roms roms
 
