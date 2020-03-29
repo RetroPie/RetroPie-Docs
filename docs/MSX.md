@@ -7,7 +7,7 @@ _The MSX was a 8bit personal computer standard developed by ASCII in 1983. Micro
 
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
-| [lr-bluemsx](https://github.com/libretro/blueMSX-libretro) | msx  | .rom .mx1 .mx2 .col .dsk .m3u | see below  | /opt/retropie/configs/msx/retroarch.cfg |
+| [lr-bluemsx](https://github.com/libretro/blueMSX-libretro) | msx  | .rom .mx1 .mx2 .col .dsk .m3u .zip | see below  | /opt/retropie/configs/msx/retroarch.cfg |
 | [lr-fmsx](https://github.com/libretro/fmsx-libretro) | msx  | .rom .mx1 .mx2 .col .dsk | see below | /opt/retropie/configs/msx/retroarch.cfg |
 | [OpenMSX](http://openmsx.org/) | msx | .rom .mx1 .mx2 .col .dsk | see below | hardcoded |
 
