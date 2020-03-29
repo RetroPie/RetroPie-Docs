@@ -241,10 +241,4 @@ To
             ;;
     esac
 
-This will obviously override any platform checking done by the script and is very hacky, but it will let the retropie setup continue properly until actual support exists
-
-### How do I get latest graphics drivers?
-
-Install hardware enablement stack (HWE) to get kernels and MESA packages from newer ubuntu versions.  
-
-    sudo apt-get install --install-recommends linux-generic-hwe-16.04 xserver-xorg-hwe-16.04 
+This will obviously override any platform checking done by the script and is very hacky, but it will let the retropie setup continue properly until actual support exists.
