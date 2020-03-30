@@ -8,7 +8,7 @@ There are three main methods of transferring roms: via USB stick, via SFTP, and 
 
 ### USB stick
 
-1. (ensure that your USB stick is formatted to FAT32)
+1. (ensure that your USB stick is formatted to FAT32 or exFAT)
 2. create a folder called `retropie` on your USB stick
 3. plug it into the RetroPie system and wait for it to finish blinking
 4. pull the USB stick out and plug it into a computer
