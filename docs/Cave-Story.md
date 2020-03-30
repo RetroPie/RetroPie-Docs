@@ -6,13 +6,13 @@ _Cave Story (doukutsu monogatari) is a Freeware Platform-Adventure Video Game Re
 
 ## ROMs
 
-:warning: You must install the optional "lr-nxengine" package via the RetroPie setup tool, otherwise, Cave Story will not show up in the list of available games.
+**NOTE:** You must install the optional "lr-nxengine" package via the RetroPie setup script, otherwise, Cave Story will not show up in the list of available Ports.
 
-Create a folder called `CaveStory` in
+After the installation of the `lr-nxengine` package, create a folder called `CaveStory` in
 ```
 /home/pi/RetroPie/roms/ports/
 ```
-Add all of the game files into the CaveStory folder- particularly Doukotsu.exe into
+Add all of the game files into the CaveStory folder - particularly `Doukotsu.exe` - into
 ```
 /home/pi/RetroPie/roms/ports/CaveStory
 ```
@@ -21,9 +21,7 @@ Due to Copyrights we can't provide sources, but Google is your friend.
 
 ## Controls
 
-nxengine-libretro utilises Retroarch configurations
-
-Add custom retroarch controls to the retroarch.cfg file in
+nxengine-libretro uses Retroarch configurations. Add custom retroarch controls to the `retroarch.cfg` file in
 ```shell
 /opt/retropie/configs/ports/cavestory/retroarch.cfg
 ```
@@ -35,5 +33,4 @@ nxengine-libretro does not support save states, but Cave Story itself includes m
 /home/pi/RetroPie/roms/ports/CaveStory/profile.dat
 /home/pi/RetroPie/roms/ports/CaveStory/profile2.dat
 /home/pi/RetroPie/roms/ports/CaveStory/profile3.dat
-...
 ```
