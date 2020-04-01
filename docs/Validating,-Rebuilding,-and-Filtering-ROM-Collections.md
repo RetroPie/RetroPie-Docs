@@ -31,7 +31,7 @@ In order to verify or rebuild a set, you need its corresponding DAT file and a s
 * [clrmamepro](http://mamedev.emulab.it/clrmamepro/) (Windows)
 * [clrmamepro](http://www.emulab.it) (OSX)
 * [romcenter](http://romcenter.com/) (Windows)
-* [Romulus](http://romulus.net63.net/) (Windows)
+* [Romulus](https://romulus.cc/) (Windows)
 * [RomVault](http://www.romvault.com/) (Windows & Linux)
 
 These Windows tools can be run on Linux (x86) using [Wine](https://www.winehq.org/). RomVault can be run natively on Linux using Mono. 
