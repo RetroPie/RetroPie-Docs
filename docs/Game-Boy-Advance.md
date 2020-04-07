@@ -17,12 +17,12 @@ _The Game Boy Advance is a 32 bit handheld video game console released by Ninten
 
 **lr-vba-next** is a faster yet less accurate emulator possibly useful for those on a RPi2B: it is not available on the RPi0 or RPi1.
 
-**lr-gpsp** is the default emulator for the RPi0 and RPi1: expect inaccurate emulation. It runs full speed on the RPi0, but doesn't run full speed on a RPi1.
+**lr-gpsp** is the default emulator for the RPi0 and RPi1: expect inaccurate emulation. It runs most games full speed on the RPi0, but doesn't run all games full speed, and some games may not even be playable.
 
-**gpSP** is advised for full speed emulation on the RPi1. It may require manual controller reconfiguration, but outside of that has a user-friendly Select+Start exit hotkey and a Select+R hotkey to access the built-in menu enabled by default.
+**gpSP** is advised for general full speed emulation on the RPi1 and for problematic titles on the RPi0. It may require manual controller reconfiguration, but outside of that has a user-friendly Select+Start exit hotkey and a Select+R hotkey to access the built-in menu enabled by default.
 
-## NETPLAY
-Sadly Netplay is not Supported on link cable games
+## Netplay
+Sadly, netplay is not supported on link cable games.
 
 ## ROMS
 Accepted File Extensions: **.7z .gba .zip**
