@@ -36,7 +36,6 @@ To know if we pressed a button with success, the web application provides an hap
 
 You can also install manually using these steps:
 
-```
 ### Install Node.js
 
 ```
