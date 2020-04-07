@@ -39,33 +39,54 @@ You can also install manually using these steps:
 ```
 ### Install Node.js
 
+```
 sudo apt-get update && sudo apt-get upgrade
 wget http://node-arm.herokuapp.com/node_archive_armhf.deb
 sudo dpkg -i node_archive_armhf.deb
 rm node_archive_armhf.deb
+```
+
+:zap: if for whatever reason is returning Error 502 bad gateway you can follow [source](https://www.raspberrypi.org/forums/viewtopic.php?t=130217)
+
+```
+curl -sL https://deb.nodesource.com/setup_4.x | sudo bash -
+sudo apt-get install -y build-essential python-dev nodejs npm
+```
 
 ### Update Node.js and NPM
 
+```
 sudo npm cache clean -f
 sudo npm install -g n
-sudo n stable
+sudo n 9
 sudo npm install -g npm
+```
 
 ### Install Virtual Gamepad (Must Be Run As Root!)
 
-su
+```
+sudo -i
+cd /
 git clone https://github.com/miroof/node-virtual-gamepads
 cd node-virtual-gamepads
 npm install
-
+```
 
 ### Enable Virtual Gamepad on Boot
 
+```
 sudo npm install pm2 -g
 sudo pm2 start main.js
 sudo pm2 startup
 sudo pm2 save
 ```
+
+In this way everytime you turn your raspberry on an http server will show up in port 80.
+Be sure to have your smartphone in the same network as the raspberry
+
+After all this mess you will realize 2 things:
+- **it's working!** but the inputs are sensitive to the **network delay**, therefore you cannot really play the games which requires fast interactions :unamused:
+- i suggest you to buy a controller with usb. [link](https://www.androidcentral.com/best-raspberry-pi-controller)
 
 ### EmulationStation Controller Config:
 
