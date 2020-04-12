@@ -15,7 +15,7 @@ Reicast can be very laggy and buggy, but some games work great (see compatibilit
 
 Audio is choppy and not great, and degrades the longer the emulator is in use.  Restarting the emulator (and ultimately the Pi) may become a good idea after a couple hours of gameplay. There is a memory leak somewhere in the Reicast code. Low screen resolution are recommended to get best performance. Performance greatly suffers if HD resolutions are used.   
 
-lr-flycast is considered experimental at the moment and can be found in the Manage Experimental Packages menu in the RetroPie Setup Script.
+lr-flycast is can be found in the Manage Optional Packages menu in the RetroPie Setup Script.
 
 ## ROMS
 
@@ -31,11 +31,11 @@ Place your ROM files in
 
 ## CHD Archive Usage
 
-Reicast has support for the CHD (V5) archive format.
-
+Both Reicast and Flycast have support for the CHD (V5) archive format.    
 This format will save space and allow you to keep your Dreamcast ROM folder tidy.
 
-The following archive contains a MAME 0.205 version of CHDMAN and Windows batch files that can be used to quickly convert your Dreamcast games to CHD (V5): [Download](https://drive.google.com/file/d/0B-ElaPpvBHs5aUd0QUM3c05kY2c/view?usp=sharing)
+The following archive contains a MAME 0.205 version of CHDMAN and Windows batch files that can be used to quickly convert your Dreamcast games to CHD (V5): [Download](https://drive.google.com/file/d/0B-ElaPpvBHs5aUd0QUM3c05kY2c/view?usp=sharing).    
+Alternatively, `chdman` can be found in the `mame-tools` Debian package, which can be installed using `apt`.
 
 ## BIOS
 
