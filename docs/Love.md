@@ -63,6 +63,15 @@ or you can just follow the links and download the .love files and place them int
      fi
 ```
 
+[**Duck Marines**](http://tangramgames.dk/games/duckmarines/)
+
+```
+    # get duckmarines-1.0c.love (freeware game data)
+    if [[ ! -f "$romdir/love/duckmarines-1.0c.love" ]]; then
+        wget "https://github.com/SimonLarsen/duckmarines/releases/download/v1.0c/duckmarines-1.0c.love" -O "$romdir/love/duckmarines-1.0c.love"
+        chown $user:$user "$romdir/love/duckmarines-1.0c.love"
+   fi
+```
 It can be run with
 
 ```
