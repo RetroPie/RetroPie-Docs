@@ -40,9 +40,9 @@ For more information on custom RetroArch controls see: [RetroArch Configuration]
 
 Controls can be mapped from the main menu under Settings >> Controls >> Control Mapping . To access this, connect a keyboard and press Esc during a game.
 
-## Enhancements
+## PPSSPP - Enhancements
 
-### ppsspp
+### Performance
 From the [RetroPie Subreddit](https://www.reddit.com/r/RetroPie/comments/5jieuu/how_to_get_most_psp_games_to_run_beautifully/)
 
 > What I've done so far with a very noticeable difference is set frameskip to 2 (will probably increase this a bit) Turn on auto frameskip (will limit frame skipping to whatever you set for the previous value) then tick Prevent FPS from exceeding 60.
@@ -54,3 +54,7 @@ From the [RetroPie Subreddit](https://www.reddit.com/r/RetroPie/comments/5jieuu/
 **This will cause numerous games to no longer work properly due to the renderer being changed to the error-prone "Buffered rendering" because of the "Auto frameskip" being turned on. "Frameskip" in general can cause black frames depending on if the chosen game runs at an odd or even framerate and the accompanying frameskip isn't set to a matching odd or even number.**
 
 Regardless, for the games this does work in, the results will be much smoother gameplay, though a sufficiently overclocked Raspberry Pi 3B/3B+ may also be required to achieve full speed emulation.
+
+### Stuttering when streaming data from disc
+
+If you find the game stuttering in repeatable occasions when reading data from disc, changing Settings > System > I/O Timing Method to "Host" will alleviate those issues. Especially noticeable on OutRun 2006 when changing stages, or on the GTA games running from slower storage devices.
