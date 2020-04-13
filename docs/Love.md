@@ -46,10 +46,10 @@ or you can just follow the links and download the .love files and place them int
 [**Sienna**](http://tangramgames.dk/games/sienna/)
 
 ```
-    # get sienna-1.0c.love (freeware game data)
-    if [[ ! -f "$romdir/love/sienna-1.0c.love" ]]; then
-        wget "https://github.com/SimonLarsen/sienna/releases/download/v1.0c/sienna-1.0c.love" -O "$romdir/love/sienna-1.0c.love"
-        chown $user:$user "$romdir/love/sienna-1.0c.love"
+    # get sienna-1.0d.love (freeware game data)
+    if [[ ! -f "$romdir/love/sienna-1.0d.love" ]]; then
+        wget "https://github.com/SimonLarsen/sienna/releases/download/v1.0d/sienna-1.0d.love" -O "$romdir/love/sienna-1.0d.love"
+        chown $user:$user "$romdir/love/sienna-1.0d.love"
     fi
 ```
 
