@@ -44,6 +44,9 @@ For more information see http://www.dosbox.com/wiki/Main_Page
 
 see also forum post [here](http://blog.petrockblock.com/forums/topic/resource-dosbox-compatibility-list/)
 
+## DOS/32A extender
+check [here](https://github.com/dosbox-staging/dosbox-staging/wiki/DOS32A-compatibility-list) to get further information and what benefit it could bring (stability mostly). Also a compatibility list here as well as a guide on how to proceed.
+
 ## Troubleshooting
 
 If the keyboard input in DOSBox is not correct, you need to edit the DOSBox config file, dosbox-SVN.conf, which is located in the hidden folder, .dosbox, in your home folder.
