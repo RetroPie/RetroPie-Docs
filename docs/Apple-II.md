@@ -11,7 +11,7 @@ _The Apple II was a series of personal computers starting from 1977 to 1993._
 ## Emulator: [Linapple](http://sourceforge.net/projects/linapple/)
 
 ## ROMS
-Accepted File Extensions: **.dsk**
+Accepted File Extensions: **.dsk .nib .DSK .NIB**
 
 Place your Apple II disk image files in
 ```shell
