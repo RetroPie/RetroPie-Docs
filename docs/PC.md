@@ -81,6 +81,19 @@ Note: it's ok to move the "ULTRASND" directory to another location. Just remembe
 
 [List of DOS games with GUS support](https://www.mobygames.com/attribute/sheet/attributeId,20/).
 
+## Tips
+With DOSbox on a **Pi3B+** without overclocking (stock) I was able to get up to **34000 cycles**. Meaning a solid equivalent of a good 486DX2 or even Pentium 60 (according to [this page](https://www.dosbox.com/wiki/Performance)). Below the `cpu` setting I'm currently using for the majority of games ([DOSbox' doc](https://www.dosbox.com/wiki/Configuration:CPU)).
+```
+[cpu]
+cycles = max 95% limit 34000
+```
+
+Whenever a game is running **too fast** you'll have to rely on the `fixed` parameter of `cycles`. Good example with Wing Commander (1 and 2):
+```
+[cpu]
+cycles = fixed 4000
+```
+
 ## Troubleshooting
 
 If the keyboard input in DOSBox is not correct, you need to edit the DOSBox config file, dosbox-SVN.conf, which is located in the hidden folder, .dosbox, in your home folder.
