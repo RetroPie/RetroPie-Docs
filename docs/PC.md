@@ -81,8 +81,10 @@ Note: it's ok to move the "ULTRASND" directory to another location. Just remembe
 
 [List of DOS games with GUS support](https://www.mobygames.com/attribute/sheet/attributeId,20/).
 
-## Tips
-With DOSbox on a **Pi3B+** without overclocking (stock) I was able to get up to **34000 cycles**. Meaning a solid equivalent of a good 486DX2 or even Pentium 60 (according to [this page](https://www.dosbox.com/wiki/Performance)). Below the `cpu` setting I'm currently using for the majority of games ([DOSbox' doc](https://www.dosbox.com/wiki/Configuration:CPU)).
+[Thread](https://www.vogons.org/viewtopic.php?p=184969#p184969) to **fix** games relying on H**uman Machines Interface/HMI setup**. Those will fail detection of GUS soundcard (like Terminator Future Shock, Daggerfall, Whitchaven, etc).
+
+## Tips and tricks
+With DOSbox on a **Pi3B+** without overclocking (stock) I was able to get up to **34000 cycles**. Meaning a solid equivalent of a good 486DX2 or even Pentium 60 according to [this page](https://www.dosbox.com/wiki/Performance). Below the `cpu` setting I'm currently using for the majority of games. Feel free to look at the [DOSbox' documentation](https://www.dosbox.com/wiki/Configuration:CPU) for further details.
 ```
 [cpu]
 cycles = max 95% limit 34000
