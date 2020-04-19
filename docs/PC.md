@@ -54,6 +54,25 @@ Yet not all games will work with DOS/32A, some not at all. For example, Shadowca
 
 Check [Dosbox' documentation](https://www.dosbox.com/wiki/TOOLS:DOS32A) to get further information as well as a guide on how to proceed.
 
+## Install Gravis Ultrasound (GUS)
+DOSBox comes with **Gravis Ultrasound** support, but you need a little effort to set it up. It's worth it definitely as the difference with a SoundBlaster 16 is impressive (check that for yourself with a game like Rise of the Triad, it's night and day).
+1. You must first find the GUS driver for Dosbox. As I'm not 100% of the legality of the file I can't link it from this wiki. 
+2. If you get the file it should typically be containing a "ULTRASND" folder with various files and folders within.
+3. Simply copy that "ULTRASND" folder straight in your Retropie "roms" directory for Dosbox (eg. roms/pc).
+4. Edit the .conf of your game(s) and get to the [gus] section. Modify it this way:
+```
+[gus]
+[...]
+gus      = true
+gusrate  = 44100
+gusbase  = 240
+gusirq   = 5
+gusdma   = 3
+ultradir = C:\ULTRASND
+```
+5. All left to do is to **configure the game with GUS as the soundcard for music and digital effects**. You can do that usually via `setup.exe` or `install.exe` located in your game's directory.
+6. That's it if your game(s) and "ULTRASND" folders are all located under the default "roms/pc". 
+
 ## Troubleshooting
 
 If the keyboard input in DOSBox is not correct, you need to edit the DOSBox config file, dosbox-SVN.conf, which is located in the hidden folder, .dosbox, in your home folder.
