@@ -48,7 +48,7 @@ see also forum post [here](http://blog.petrockblock.com/forums/topic/resource-do
 ## DOS/32A extender
 As per Dosbox' documentation: [DOS/32A (DOS/32 Advanced DOS Extender)](https://dos32a.narechk.net/index_en.html) is a free and open source software that can be used to replace the DOS4GW.EXE DOS Extender file that many DOS games use. Once a game uses this, it is expected to run faster and better in DOSBox. 
 
-Yet not all games will work with DOS/32A, some not at all. For example, Shadowcaster is incompatible with it because RAVEN.EXE run with DOS/32A is unable to find the A32SBDG.DLL file that is in the same directory, while with DOS4GW it can. 
+**Note**: **_not all games will work with DOS/32A_**. For example, Shadowcaster is incompatible with it because RAVEN.EXE run with DOS/32A is unable to find the A32SBDG.DLL file that is in the same directory, while with DOS4GW it can. 
 
 [**DOS/32A compatibility list**](https://github.com/dosbox-staging/dosbox-staging/wiki/DOS32A-compatibility-list)
 
