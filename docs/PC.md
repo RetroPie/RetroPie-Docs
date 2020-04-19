@@ -54,6 +54,12 @@ As per Dosbox' documentation: [DOS/32A (DOS/32 Advanced DOS Extender)](https://d
 
 Check [Dosbox' documentation](https://www.dosbox.com/wiki/TOOLS:DOS32A) to get further information as well as a guide on how to proceed.
 
+Once "patched" your file executable should look like this:
+```
+$ file hospital.exe
+MS-DOS executable, LE executable for MS-DOS, DOS/32A DOS extender (embedded)
+```
+
 ## Install Gravis Ultrasound (GUS)
 DOSBox comes with **Gravis Ultrasound** support, but you need a little effort to set it up. It's worth it definitely as the difference with a SoundBlaster 16 is impressive (check that for yourself with a game like Rise of the Triad, it's night and day).
 1. You must first find the GUS driver for Dosbox. As I'm not 100% of the legality of the file I can't link it from this wiki. 
