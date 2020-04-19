@@ -62,7 +62,7 @@ MS-DOS executable, LE executable for MS-DOS, DOS/32A DOS extender (embedded)
 
 ## Install Gravis Ultrasound (GUS)
 DOSBox comes with **Gravis Ultrasound** support, but you need a little effort to set it up. It's worth it definitely as the difference with a SoundBlaster 16 is impressive (check that for yourself with a game like Rise of the Triad, it's night and day).
-1. You must first find the GUS driver for Dosbox. As I'm not 100% of the legality of the file I can't link it from this wiki. 
+1. You must first find the GUS driver for Dosbox. As I'm not 100% sure about the legality of the file no link can be shared from this wiki. 
 2. If you get the file it should typically be containing a "ULTRASND" folder with various files and folders within.
 3. Simply copy that "ULTRASND" folder straight under your Retropie "roms" directory for Dosbox (default: roms/pc).
 4. Edit the .conf of your game(s) and get to the `[gus]` section. Modify it this way:
