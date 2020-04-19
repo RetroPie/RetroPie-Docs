@@ -32,7 +32,8 @@ For more information see http://www.dosbox.com/wiki/Main_Page
 
 [How to add games to RetroPie and launch them directly from EmulationStation.](http://dosonthepi.blogspot.co.uk/2015/01/run-dos-games-in-retropie_15.html#add-dosgames)
 
-[How to configure DOSBOX for individual games.](http://dosonthepi.blogspot.co.uk/2015/02/dosbox-configuration-for-individual.html) <<<<<< Recommended way to add games in order to keep a clean setup and ease debug process (whenever needed).
+[How to configure DOSBOX for individual games.](http://dosonthepi.blogspot.co.uk/2015/02/dosbox-configuration-for-individual.html)
+**aka one .conf file per game. Recommended way to add games in order to keep a clean setup and ease debug process (whenever needed).**
 
 [How to configure USB game controllers in DOSBox.](http://dosonthepi.blogspot.co.uk/2015/01/configure-game-controllers-in-dosbox_29.html)
 
@@ -45,7 +46,7 @@ For more information see http://www.dosbox.com/wiki/Main_Page
 see also forum post [here](http://blog.petrockblock.com/forums/topic/resource-dosbox-compatibility-list/)
 
 ## DOS/32A extender
-As per [Dosbox' documentation](https://www.dosbox.com/wiki/TOOLS:DOS32A): [DOS/32A (DOS/32 Advanced DOS Extender)](https://dos32a.narechk.net/index_en.html) is a free and open source software that can be used to replace the DOS4GW.EXE DOS Extender file that many DOS games use. Once a game uses this, it is expected to run faster and better in DOSBox. 
+As per Dosbox' documentation: [DOS/32A (DOS/32 Advanced DOS Extender)](https://dos32a.narechk.net/index_en.html) is a free and open source software that can be used to replace the DOS4GW.EXE DOS Extender file that many DOS games use. Once a game uses this, it is expected to run faster and better in DOSBox. 
 
 Yet not all games will work with DOS/32A, some not at all. For example, Shadowcaster is incompatible with it because RAVEN.EXE run with DOS/32A is unable to find the A32SBDG.DLL file that is in the same directory, while with DOS4GW it can. 
 
