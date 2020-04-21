@@ -77,6 +77,7 @@ gusdma   = 3
 ultradir = C:\ULTRASND
 ```
 5. All left to do is to **configure the game with GUS as the soundcard for music and digital effects**. You can do that usually via `setup.exe` or `install.exe` located in your game's directory.
+
 Note: it's ok to move the "ULTRASND" directory to another location. Just remember to "mount" it whenever you launch the game and to edit the `ultradir` path from `.conf` accordingly.
 
 [List of DOS games with GUS support](https://www.mobygames.com/attribute/sheet/attributeId,20/).
