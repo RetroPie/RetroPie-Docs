@@ -18,15 +18,21 @@ Place your ROMs in
 ```
 You can also place your games within folders in the pc folder if it helps keep you organised.
 
+## Documentation
+
+DOSbox: http://www.dosbox.com/wiki/Main_Page
+
 ## Controls
 
 Keyboard
 
 **Quick Keys:**
 
+ctrl+F1: display keymapper configuration screen (to assign key/buttons)
+ctrl+F4: to change CD
 ctrl+F9: exit emulator
 
-For more information see http://www.dosbox.com/wiki/Main_Page
+For more information see: https://www.dosbox.com/wiki/Special_Keys
 
 ## Tutorials
 
