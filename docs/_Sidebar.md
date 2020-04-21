@@ -135,7 +135,6 @@
 * [Odroid XU3 XU4](Odroid-XU3-XU4)
 * [Arch Linux](Arch-Linux)
 * [Debian/Ubuntu/Mint](Debian)
-* [Install via NOOBS](convert-retropie-sd-card-image-to-noobs-image)
 * [OSMC](OSMC)
 * [Favorites and Child-friendly EmulationStation](Child-friendly-EmulationStation)
 * [Optimization for Nintendo 64](Optimization-for-Nintendo-64)
