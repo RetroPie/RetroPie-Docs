@@ -77,11 +77,11 @@ gusdma   = 3
 ultradir = C:\ULTRASND
 ```
 5. All left to do is to **configure the game with GUS as the soundcard for music and digital effects**. You can do that usually via `setup.exe` or `install.exe` located in your game's directory.
-Note: it's ok to move the "ULTRASND" directory to another location. Just remember to "mount" it whenever you launch the game.
+Note: it's ok to move the "ULTRASND" directory to another location. Just remember to "mount" it whenever you launch the game and to edit the `ultradir` path from `.conf` accordingly.
 
 [List of DOS games with GUS support](https://www.mobygames.com/attribute/sheet/attributeId,20/).
 
-[Thread](https://www.vogons.org/viewtopic.php?p=184969#p184969) to **fix** games relying on H**uman Machines Interface/HMI setup**. Those will fail detection of GUS soundcard (like Terminator Future Shock, Daggerfall, Whitchaven, etc).
+[Thread](https://www.vogons.org/viewtopic.php?p=184969#p184969) to **fix** games relying on **Human Machines Interface/HMI setup**. Those will fail detection of GUS soundcard (like Terminator Future Shock, Daggerfall, Whitchaven, etc).
 
 ## Tips and tricks
 With DOSbox on a **Pi3B+** without overclocking (stock) I was able to get up to **34000 cycles**. Meaning a solid equivalent of a good 486DX2 or even Pentium 60 according to [this page](https://www.dosbox.com/wiki/Performance). Below the `cpu` setting I'm currently using for the majority of games. Feel free to look at the [DOSbox' documentation](https://www.dosbox.com/wiki/Configuration:CPU) for further details.
