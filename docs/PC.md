@@ -27,9 +27,7 @@ Rpix86 http://rpix86.patrickaalto.com/rfaq.html
 
 ## Controls
 
-DOSBox
-
-**Quick Keys:**
+**DOSBox Quick Keys:**
 
 ctrl+F1: display keymapper configuration screen (to assign key/buttons)
 
