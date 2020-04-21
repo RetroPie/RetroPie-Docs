@@ -22,7 +22,7 @@ You can also place your games within folders in the pc folder if it helps keep y
 
 DOSbox: http://www.dosbox.com/wiki/Main_Page
 
-Rpix86 http://rpix86.patrickaalto.com/rfaq.html
+Rpix86: http://rpix86.patrickaalto.com/rfaq.html
 
 
 ## Controls
