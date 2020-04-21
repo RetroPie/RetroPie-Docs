@@ -27,7 +27,7 @@ Rpix86 http://rpix86.patrickaalto.com/rfaq.html
 
 ## Controls
 
-Keyboard
+DOSBox
 
 **Quick Keys:**
 
