@@ -92,7 +92,18 @@ You can press CONTROL-C to exit the test. In this example, moving the second spi
 
 ## Configuring RAW, PS2 for all possible mouse inputs
 
-**Beware**: The index of a specific device may change depending on what device you have attached to which port. For example, if you boot with an external mouse, it might be detected by `udev` as `event0` and your spinner as `event1`, but if you boot the same system without the external mouse attached, everything might ratchet down (spinner becomes `event0`). As long as you aren't changing your hardware configuration everything should stay where it is, but if you routinely connect an external mouse to troubleshoot or launch the desktop, this can be frustrating. We can overcome it by mapping multiple inputs _together_ in AdvanceMAME.
+**Beware**: The index of a specific device may change depending on what device you have attached to which port. For example, if you boot with an external mouse, it might be detected by `udev` as `event0` and your spinner as `event1`, but if you boot the same system without the external mouse attached, everything might ratchet down (spinner becomes `event0`). As long as you aren't changing your hardware configuration everything should stay where it is, but if you routinely connect an external mouse to troubleshoot or launch the desktop, this can be frustrating. We can overcome it by mapping multiple inputs _together_ in AdvanceMAME or by using a persistent device path, both methods shown below.
+
+To overcome the problem with an inconsistent device index, you can use the `/dev/input/by-id/` device symlinks set for each `/dev/input/mouse<X>` device file. For instance, given the mouse device `/dev/input/mouse1`, find out the correspoding symlink by running:  
+```
+udevadm info /dev/input/mouse1 | grep S:
+```
+Look for the line containing the `/dev/input/by-id` symlink:
+```
+S: input/by-id/usb-1241_1111-mouse
+```
+You can then can substitute `/dev/input/mouse1` with `/dev/input/by-id/usb-1241_1111-mouse` in AdvanceMAME's configuration file wherever you need to set the mouse device path.  
+Depending on the device type and vendor/model, the will be different than in the example above.
 
 For starters, we need to enable all possible mouse inputs in the configuration file (we will edit the configuration for AdvanceMAME 1.4, but if you use multiple versions of AdvanceMAME, you need to make edits in each respective config).
 
