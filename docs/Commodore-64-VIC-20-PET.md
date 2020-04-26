@@ -71,7 +71,8 @@ to VICIIDoubleSize=1
 ## Troubleshooting
 * There have been some reports of the emulator crashing when it exits requiring a hard reboot
 
-Note that the VICE emulator also emulates systems other than the Commodore 64 
+## Other Commodore supported systems
+In addition to Commodore 64, VICE emulator also emulates the following Commodore systems: 
 
 - C128
 - C64DTV
