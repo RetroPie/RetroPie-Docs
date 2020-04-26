@@ -1,4 +1,4 @@
-As of 8/3/19 this guide isn't the way to install the 3 expansion packs. I had followed this guide and it used to infact work. An update of retropie script and then subsequent update of all installed packages that I had done, changed where the grp go. So now all you need to do is put nwinter.grp, dukedc.grp, and vacation.grp in the duke3d folder you create and then Install eduke32 as described. You may need to make the .sh files described below for each duke3d expansion pack but maybe not. Same with the emulators.cfg and eduke32.cfg files in the configs/ports/duke3d folders. 
+As of 8/3/19 this guide isn't the way to install the 3 expansion packs. I had followed this guide and it used to infact work. An update of retropie script and then subsequent update of all installed packages that I had done, changed where the grp go. So now all you need to do is put _nwinter.grp_, _dukedc.grp_, and _vacation.grp_ in the duke3d folder you create and then install eduke32 as described. You may need to make the .sh files described below for each duke3d expansion pack but maybe not. Same with the emulators.cfg and eduke32.cfg files in the configs/ports/duke3d folders. 
 I dont know as mine were already created using this guide before the devs changed how the duke3d install works. 
 
  NAM however will run and continue to run everytime you start it up but it changes the eduke32.cfg file located in .etc/eduke32 on its own and breaks duke3d and all expansion packs till you manually modify eduke32.cfg selectedgrp field back to duke3d.grp. I've tried multiple times and nam breaks duke 3d and any expansion packs every single time. To avoid this change the permissions on the eduke3d.cfg file so no one can change it. And then you can run duke 3d the expansion packs and nam without anything breaking or having to modify anything after running nam. 
@@ -24,8 +24,25 @@ Shareware versions of **duke3d.grp** and **duke.rts** are provided via symlinks 
 ```
 The shareware files are physically located in a different directory, but if you just replace the links in the folder above with your full version game data, it should work.
 
-### Installing Duke Nukem 3D Official Addons "Nuclear Winter", "Duke It Out in DC" and "Life's a Beach"
+### Installing Duke Nukem 3D Official Addons "Nuclear Winter", "Duke It Out in DC" and "Duke Caribbean: Life's a Beach"
 
+#### Automated installation
+
+Since September 2019, the EDuke32 port installation can automatically setup launching entries for the official addons and the NAM mod. To use this method, copy each addon files to `ports/duke32/addons/<addon_name>`. 
+
+
+|Addon | Mod `.grp` file |Location |
+|---|:---|:--|
+| Duke It Out in DC | `dukedc.grp` | `/home/pi/RetroPie/roms/ports/duke3d/addons/dc` |
+| Nuclear Winter | `nw.grp` | `/home/pi/RetroPie/roms/ports/duke3d/addons/nw` |
+| Duke Caribbean: Life's a Beach | `vacation.grp` | `/home/pi/RetroPie/roms/ports/duke3d/addons/vacation` |
+| NAM | `nam.grp`* | `/home/pi/RetroPie/roms/ports/duke3d/addons/nam` |
+
+* `NAM` requires copying the `GAME.CON` file and renaming it to `NAM.CON`, in addition to the main `.grp` file.
+
+After copying the files, install the `eduke32` package and addons launching entries will be added to the Ports system. As with all new games, EmulationStation must be restarted after the installation/re-installation for the new addon entries be picked up and displayed.
+
+#### Manual installation
 The files tested for this method came from the Megaton Edition on Steam on Windows and these instructions assume that you'll be modifying files on your RetroPie instance via the Samba network share from your Windows PC. If you have a different version of the game or a different method of modifying files on your RetroPie instance then you should be able to interpret these instructions for the game version and method you have.
 
 1. Install full Duke Nukem 3D Megaton Edition as already documented on this page.
