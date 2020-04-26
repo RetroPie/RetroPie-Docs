@@ -84,3 +84,7 @@ In addition to Commodore 64, VICE emulator also emulates the following Commodore
 which can be accessed through the [Runcommand Launch Menu](Runcommand).
 
 ![03062016_2322241](https://cloud.githubusercontent.com/assets/10035308/13558061/dc5eeade-e3b7-11e5-94cc-4891ccafe15a.png)
+
+You can create dedicated systems (e.g. VIC20 ) in Emulation Station following these [instructions] (https://retropie.org.uk/docs/Add-a-New-System-in-EmulationStation/).
+
+Logos in SVG for Commodore Systems are [available](https://retropie.org.uk/forum/topic/3226/es-custom-svg-logo-pack-includes-specific-mame-logos).
