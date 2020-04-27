@@ -704,7 +704,7 @@ Jan 18 21:55:22 raspberrypi kernel: [168935.224051] wiimote 0005:057E:0306.0007:
 
 You can run a test with ```evtest``` or ```xwiishow```.
 
-Please note [this comment](https://github.com/petrockblog/RetroPie-Setup/issues/256#issuecomment-32708108):
+Please note [this comment (Broken Link)](https://github.com/petrockblog/RetroPie-Setup/issues/256#issuecomment-32708108):
 
 Actually, the hid-wiimote included in 3.6.y kernel is buggy.
 Here's the version I use: [https://github.com/Alex131089/raspberrypi-linux/compare/raspberrypi:rpi-3.6.y...rpi-3.6.y-hid-wiimote](https://github.com/Alex131089/raspberrypi-linux/compare/raspberrypi:rpi-3.6.y...rpi-3.6.y-hid-wiimote)
