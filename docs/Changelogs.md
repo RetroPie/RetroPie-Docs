@@ -8,7 +8,7 @@ Changes since 4.5
 
 * Raspberry Pi 4 support! Support is labelled as beta currently as there are still things to improve, but most emulators now run well.
 * The RetroPie images are now based on Raspbian Buster - Stretch is no longer supported by Raspberry Pi (Trading) ltd. RetroPie will stop updating pre-built binaries for Stretch later in the year.
-* Improvements to RetroPie packaging system and core RetroPie-Setup code so package state is remembered and binary updates will only be done if an updated binary is available. Source installs won’t be overwritten by a pre-built binary when updating also.
+* Improvements to RetroPie packaging system and core RetroPie-Setup code so package state is remembered and binary updates will only be done if an updated binary is available. Source installs won’t be overwritten by a pre-built binary when updating also. We started providing pre-built binaries for the packages in the experimental section for the supported platforms.
 * RetroArch updated to v1.8.5.
   * New notification system with cheevos badges support.
   * RGUI can be themed.
