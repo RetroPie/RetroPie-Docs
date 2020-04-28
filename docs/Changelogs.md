@@ -2,6 +2,46 @@
 
 This page is a list of all of the changelogs for each version of RetroPie. For a complete list of all commits to the source code see [here:](https://github.com/RetroPie/RetroPie-Setup/commits/master)  
 
+### Vesrion 4.6: (April 28, 2020)
+
+Changes since 4.5
+
+* Raspberry Pi 4 support! Support is labelled as beta currently as there are still things to improve, but most emulators now run well.
+* The RetroPie images are now based on Raspbian Buster - Stretch is no longer supported by Raspberry Pi (Trading) ltd. RetroPie will stop updating pre-built binaries for Stretch later in the year.
+* Improvements to RetroPie packaging system and core RetroPie-Setup code so package state is remembered and binary updates will only be done if an updated binary is available. Source installs won’t be overwritten by a pre-built binary when updating also.
+* RetroArch updated to v1.8.5.
+  * New notification system with cheevos badges support.
+  * RGUI can be themed.
+  * Support for real CD ROM, with the ability to dump the disc image.
+  * Improved disk control system, with support for labeling disks in .m3u files.
+  * RetroAchievements support for PS1/Sega CD/PCEngine CD.
+* EmulationStation updated to v2.9.1.
+  * Scraper fixes for the TheGameDBNet.
+  * Grid view improvements and bugfixes.
+  * Theming improvements.
+  * New options for "disable system name on custom collections" and "save gamelist metadata after each modification".
+* Added videomode switching support to runcommand for KMS and X11 targets. SDL2 applications only.
+* Added ioquake3 module for platforms other than Raspberry Pi 1-3.
+* Replaced zdoom with lzdoom as zdoom is no longer maintained.
+* amiberry - updated to 3.1.3 including ipf support.
+* stella - updated to 6.0.1.
+* SDL updated to 2.0.10 with rpi4/kms fixes.
+* solarus - lots of updates to modernise the port.
+* eduke32 - major overhaul including adding package for IonFury.
+* zesarux - updated to v8.0.
+* cgenius - updated to v2.3.6.
+* drastic -  update to 2.5.0.4 with RPI4 compatibility.
+* scummvm - updated to v2.1.1.
+* atari800 - updated to v4.2.0 (lr-atari800 config has been moved to lr-atari800.cfg to avoid conflicting)
+* lr-mupen64plus / lr-mupen64plus-next - enable GLES3 support on rpi4.
+* lr-opera - renamed from lr-4do.
+* Sonic Robo Blast - updated to 2.2.
+* Lots of other fixes and improvements.
+* Added new experimental modules.
+  * vvvvvv - Port of the popular platform / puzzle game VVVVVV.
+  * lr-neocd - Neo Geo CD emulator.
+  * redream - Dreamcast emulator for the Raspberry Pi 4.
+
 ### Version 4.5.1: (July 17, 2019)
 
 Changes since 4.5
