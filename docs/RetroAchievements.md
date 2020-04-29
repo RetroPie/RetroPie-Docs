@@ -10,23 +10,52 @@ cheevos_password = "yourpassword"
 cheevos_enable = true
 ```
 
-The Hardcore Mode disables the savestates and is optional. If you want to enable it add this line too:
+Below you can see all the RetroAchievements related options that you can use in the `retroarch.cfg` and the explanation in the comments:
 
 ```
-cheevos_hardcore_mode_enable = true
+## RetroAchievements configs
+
+# Enable the retroachievements feature.
+cheevos_enable = "true"
+
+# RetroAchievements.org credentials
+cheevos_username = "YourUsername"
+cheevos_password = "YourPassword"
+
+# The hardcore mode makes your achievements points worth double the points.
+# But it disables the savestates and other cheating features.
+# It is optional and if you want to enable it, set it to true.
+cheevos_hardcore_mode_enable = "true"
+
+# If you want to see some RetroAchievements related message right after
+# launching a game (such as successfull login and the number of cheevos you
+# have unlocked for that game), set the Achievements Verbose Mode to true.
+cheevos_verbose_enable = "true"
+
+# While playing you can see the Achievements List by calling the
+# RetroArch Quick Menu. If you want to see the achievements' badges on
+# that list, set this option to true (note: it has no effect if you're
+# using menu_driver = rgui).
+cheevos_badges_enable = "true"
+
+# The auto screenshot feature makes RetroArch take an screenshot when
+# an achievement is triggered.
+cheevos_auto_screenshot = "true"
+
+# Besides achievements, some games also have leaderboards, where you can
+# compete for high-scores, speedruns, etc. To enable such feature, set 
+# it to true.
+cheevos_leaderboards_enable = "false"
+
+# Sends some messages to the RetroAchievements.org saying, for example,
+# where you are in the game, how many lives you have, your score, etc.
+cheevos_richpresence_enable = "true"
+
+# Unnoficial achievements are usually used only for achievement creators
+# and testers. Regular users don't need this.
+cheevos_test_unofficial = "false"
 ```
 
-If you want to see some more RetroAchievements related message right after launching a game (such as successfull login and the number of cheevos you have unlocked) you can use the Achievements Verbose Mode:
-
-```
-cheevos_verbose_enable = true
-```
-
-Since RetroArch 1.6.8 the RetroAchievements Leaderboards feature is also supported. You can enable it with this config:
-
-```
-cheevos_leaderboards_enable = true
-```
 
 ## Supported Systems:
 
@@ -47,11 +76,15 @@ cheevos_leaderboards_enable = true
 * Atari 7800
 * Atari Lynx
 * PC Engine
+* PlayStation
+* Nintendo DS
 * ColecoVision
 * Arcade (Neo Geo, CPS1, CPS2 and CPS3) - *only with the fbneo core*.
 * PC-8800
+* and some others (check on [their page](https://retroachievements.org))
 
 A libretro core compatibility list with RetroAchievements can be found in [libretro docs](https://docs.libretro.com/guides/retroachievements/).
+
 
 ## RetroAchievements Messages
 
