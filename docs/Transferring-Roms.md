@@ -8,15 +8,35 @@ There are three main methods of transferring roms: via USB stick, via SFTP, and 
 
 ### USB stick
 
-1. (ensure that your USB stick is formatted to FAT32 or exFAT)
+#### Run your ROMs from the SD card
+
+1. (ensure that your USB stick is formatted to FAT32 or exFAT, and that your SD card has enough free space to hold all your ROMs)
 2. create a folder called `retropie` on your USB stick
 3. plug it into the RetroPie system and wait for it to finish blinking
 4. pull the USB stick out and plug it into a computer
 5. add the roms to their respective folders (within the `retropie/roms` folder)
 6. plug it back into the RetroPie system
 7. wait for it to finish blinking
-8. you can now remove the USB stick
+8. you can now remove the USB stick, the ROMs have been transferred from the USB to the SD card.
 9. refresh the game listing in Emulationstation by pressing F4, or choosing 'Restart Emulationstation'/'Restart System' via the start menu.
+10. You can start playing now!
+
+#### Run your ROMs from a USB Stick
+
+Here the 'automount'-method is used. For more information, please look here: ### [Running ROMs From a USB](Running-ROMs-from-a-USB-drive)
+
+
+1. (ensure that your USB stick is formatted to FAT32 or exFAT)
+2. create a folder called `retropie-mount` on your USB stick
+3. plug it into the RetroPie system and wait for it to finish blinking
+4. pull the USB stick out and plug it into a computer
+5. add the roms to their respective folders (within the `retropie/roms` folder)
+6. plug it back into the RetroPie system
+7. wait for it to finish blinking
+8. refresh the game listing in Emulationstation by pressing F4, or choosing 'Restart Emulationstation'/'Restart System' via the start menu.
+9. You can start playing now, the respective ROM will be loaded from the USB stick each time you start a game.
+
+
 
 ### SFTP
 
