@@ -171,6 +171,8 @@ Most full-price commercial Amiga games had some form of custom disk format and/o
 
 IPF support is done through the CAPSIMG library. To enable it you have to put a dynamic library called capsimg.dll (Windows) or capsimg.so (Linux, macOS) in your retroarch root directory (where the retroarch executable is located; in a default install, this is `/opt/retropie/emulators/retroarch/bin/`).
 
+On linux system (x86 or x86_64) correct architecture library must copied into BIOS folder instead of retroarch/bin folder.
+
 Compatible CAPSIMG libraries for Windows, macOS and Linux can be found at https://fs-uae.net/download#plugins
 
 Please be aware that there are 32-bit and 64-bit versions of the library. Choose the one corresponding to your RetroArch executable.
