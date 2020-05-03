@@ -85,7 +85,7 @@ By default, only the first HDMI (HDMI0) port has audio enabled, so if you plug y
 
 ####Video drivers/GPU Changes 
 
-The Raspberry Pi 4 model features a new GPU (Videocore VI), capable of OpenGL ES 3.2 and Vulkan. Support for the new GPU is offered GPU Mesa/Linux `v3d` driver - without support from the legacy 3D Broadcom drivers. Currently, the open source driver included in Raspbian implements OpenGL ES 3.1 and OpenGL 2.1, but support for Vulkan under development in the upstream Mesa3d project.
+The Raspberry Pi 4 model features a new GPU (Videocore VI), capable of OpenGL ES 3.2 and Vulkan. Support for the new GPU is offered GPU Mesa/Linux `v3d` driver - without support from the legacy 3D Broadcom drivers. Currently, the open source driver included in Raspbian implements OpenGL ES 3.1 and OpenGL 2.1, but support for ES 3.2 and Vulkan is under development in the upstream Mesa3d project.
 
 Key differences from the previous Raspberry Pi models:
 
