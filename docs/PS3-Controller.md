@@ -2,6 +2,8 @@
 
 The most recent versions of RetroPie include the packages needed for setting up a PS3 controller. Connecting over USB is Plug-and-Play--literally just plug your controller into the Pi while EmulationStation is running and it should detect a gamepad to configure. Connecting a PS3 controller via Bluetooth requires installation of a special PS3 driver located in RetroPie setup.
 
+> NOTE: Installing multiple controller drivers may cause conflicting issues. If you are having trouble pairing, check if other drivers are installed and try removing them.
+
 Two drivers are available: 
 
 * `sixaxis` (since RetroPie 4.4.9): this is a helper service that configures the default kernel driver (`hid-sony`) and BlueZ plugin (`sixaxis`). This is the recommended driver, but third-party support is not well-tested.
