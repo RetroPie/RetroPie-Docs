@@ -1,6 +1,6 @@
 #Raspberry Pi 4 and Retropie [Draft]
 
-Raspberry Pi 4B specific questions, configuration and differences to previous models.
+Raspberry Pi 4B specific questions, configurations and differences.
 
 ## Which PI 4 model ?
 
@@ -10,7 +10,7 @@ There are currenlty 3 Raspberry Pi 4 models available, differentiated only by th
 
 ### Connecting a Tv/Monitor
 
-The Pi 4B model has 2 microHDMI ports. It's recommended to use the port adjacent to the UCB-C power input (labelled HDMI0) to connect your display, since is the only one that has sound enabled (by default) and supports CEC.
+The Pi 4B model has 2 microHDMI ports. It's **strongly** recommended to use the port adjacent to the UCB-C power input (labelled __HDMI0__) to connect your display, since is has sound enabled and supports CEC.
  
 **NOTE**: The Pi 0 _miniHDMI_ cables are not usable for the Pi 4B _microHDMI_ ports.
  
@@ -67,16 +67,54 @@ If you have the official power supply for your Pi 4, you shouldn't have any prob
 
 The Raspberry Pi 4 model is supported by Raspbian starting with Raspbian Buster (based on [Debian 10 'buster'](https://www.debian.org/News/2019/20190706)), while RetroPie added support the the 4.6 image version.
 
-### Configuration changes
+###Configuration changes
 
-* ** Memory Split** 
-    Previous models' GPU memory configuration ([Memory split](Memory-Split.md)) are not needed for the Pi 4B. The 3D component of the GPU is able to use the main (ARM) memory, without any additional settings. Reserving additional memory with the `gpu_mem` configuration settings in `config.txt` is only necessary for hardware video decoding (i.e. 4k movies in Kodi).
+####Memory Split  
 
-### RetroPie changes for the Pi 4B
+Previous models' GPU memory configuration ([Memory split](Memory-Split.md)) are not needed for the Pi 4B. The 3D component of the GPU is able to use the main (ARM) memory, without any additional settings. Reserving additional memory with the `gpu_mem` configuration settings in `config.txt` is only necessary for hardware video decoding (i.e. 4k movies in Kodi).
+    
+####Audio Configuration
 
-- uses the KMS/DRM video system for display and the `vc4-fkms-v3d` overlay to enable the firmware KMS driver.
-- emulators that used directly the legacy proprietary drivers have been re-compiled for KMS support or disabled on the Pi 4. Some examples 
-   - `pcsx_rearmed` is disabled since it's using the old video drivers
-   - `attractmode` is disabled since it's using the old video drivers
-   - `advmame-1.4`, `advmame-0.39` are not properly working with the emulated DRM framebuffer, so they're disabled
+By default, only the first HDMI (HDMI0) port has audio enabled, so if you plug your TV/Monitor to the 2nd port, audio will not work.
+    If you'd like to use the 2nd HDMI port specifically, then the following commands will switch the audio output correctly.
+
+    sudo amixer cset numid=3 3
+    sudo alsactl store
+
+**NOTE**: the above configuration with EmulationStation poses an issue when `omxplayer` is used to play video snapshots, so for the moment is recommended to use `vlc` in this specific configuration.
+
+####Video drivers/GPU Changes 
+
+The Raspberry Pi 4 model features a new GPU (Videocore VI), capable of OpenGL ES 3.2 and Vulkan. Support for the new GPU is offered GPU Mesa/Linux `v3d` driver - without support from the legacy 3D Broadcom drivers. Currently, the open source driver included in Raspbian implements OpenGL ES 3.1 and OpenGL 2.1, but support for Vulkan under development in the upstream Mesa3d project.
+
+Key differences from the previous Raspberry Pi models:
+
+* the new GPU driver is implemented using the standard Linux [KMS/DRM APIs](https://en.wikipedia.org/wiki/Direct_Rendering_Manager)
+* the new GPU does not offer hardware OpenVG support
+* display rotation works only for simple 180 ° rotations, there's no direct rotation support for 90 ° and 270 ° (see the current [Video Documentation](https://www.raspberrypi.org/documentation/configuration/config-txt/video.md))
+* directly changing the screen resolution using `tvservice`/`fbset` does not affect DRM/KMS enabled application, so dynamically changing the framebuffer resolution will not work propertly
+
+    **NOTE** this affects the existing CRT-geared configurations or emulators that rely on `vcgencmd` to generate custom `hdmi_timings` mode and load it dynamically at runtime with `tvservice`. One alternative route would be to use X11 and `xrandr` for custom mode generation and mode switching
+ 
+* applications using the legacy GL drivers will not function anymore, with the dreaded:
+
+        * failed to add service - already in use?
+
+* new ports/emulators can use the OpenGL 2.1 API.
+
+### RetroPie changes for  Raspberry Pi 4
+* [Runcommand](Runcommand.md) had extensive changes to implement video resolution switching for KMS/DRM. The option for using a different RetroArch _render resolution_ is no included when KMS/DRM is included, since it relied on [Dispmanx](Dispmanx.md) for scaling the resolution
+
+* Emulators that used directly the legacy proprietary drivers have been re-compiled for KMS support or disabled on the Pi 4. Some examples:
+   - `pcsx_rearmed` - disabled since it's using the legacy GL drivers
+   - `attractmode` - disabled since it's using the legacy GL drivers
+   - `advmame-1.4` / `advmame-0.39` - disabled because are not properly working with the emulated KMS/DRM framebuffer
    - `advmame` is compiled and configured with the SDL2 video/input drivers, so it loses the ability to create custom video timings for emulation
+
+    For a list of emulators/packages supported on the Raspberry Pi 4, you can consult the [Platform support page](https://retropie.org.uk/stats/pkgflags/), updated automatically from the current RetroPie-Setup Github repository.
+
+* GPIO based controller drivers might not work correctly. They are currently compatible witht the Pi 4 GPIO changes (they build and install), but due to the lack of hardware available for testing, their status should be considered experimental.  
+   - Reported working - `gamecondriver`
+   - Reported non-working - `mkarcadejoystick`, consider using [GPIOnext](https://github.com/mholgatem/GPIOnext/)
+
+    If you happen to use one of the GPIO controller drivers, please consider testing and reporting any problems in the [RetroPie forums](https://retropie.org.uk/forums)
