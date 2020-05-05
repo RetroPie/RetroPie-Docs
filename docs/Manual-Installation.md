@@ -103,17 +103,19 @@ The core components needed for RetroPie to function are:
 - **RetroArch:** Frontend for the libretro api, necessary for most emulators to run.
 - **EmulationStation:** Frontend for sorting and launching all of your games.
 - **RetroPie Menu:** Menu in emulationstation for simpler configuration of your system.
-- **Runcommand:** The runcommand launch menu that assists launching your games with proper configurations see related wiki page [HERE](Runcommand).
+- **Runcommand:** The runcommand launch menu that assists launching your games with proper configurations, see the related [Runcommand documentation page](Runcommand.md).
 
 ### Main / Optional / Experimental
 
-Emulators can be installed and updated individually from the Main, Optional, and Experimental packages.
+Emulators can be installed and updated individually from the Main, Optional, and Experimental packages.    
+
+**NOTE**: If you intend to [run ROMs from a USB drive](Running-ROMs-from-a-USB-drive.md) or use an [USB drive for transferring ROMs](Transferring-Roms.md#run-your-roms-from-a-usb-stick), don't forget to install and enable the `usbromservice`, located in the Optional packages section.
 
 ### Samba Roms
 
-If you want to use samba shares you can set them up from the setup/tools option of the retropie setup script.
+If you want to use Samba shares you can set them up from the setup/tools option of the RetroPie setup script.
 
-## Boot to emulationstation
+## Boot to EmulationStation
 
 Follow the steps in the [FAQ](FAQ#how-do-i-boot-to-the-desktop-or-kodi).  
 If you're booting to the desktop you'll want to disable the retropie splashscreen from the setup script first.
