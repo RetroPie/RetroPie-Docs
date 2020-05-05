@@ -27,7 +27,7 @@ Setting the Runcommand's resolution setting for this emulator to a low 4:3 resol
 
 This emulator is supplied for people who are running RetroPie on more powerful x86 CPU systems. It is accurate and the best you could ask for when it comes to a PSX core for RetroArch.
 
-lr-beetle-psx is not available for systems with ARM CPUs (like the Raspberry Pi) due to its poor performance on ARM CPUs.
+lr-beetle-psx is not available for ARM systems (like the Raspberry Pi) due to its poor performance on ARM.
 
 ## ROMS
 Accepted File Extensions: **.cue .ccd .chd .exe .iso .m3u .pbp .toc**
@@ -50,29 +50,24 @@ If you only have a `.bin` ROM and no `.cue` file, you can generate it:
 
 If your PSX game has an `.ecm` extension, it's a compressed file that needs to be extracted.
 
-If on Windows, then the following program will do the job. - [ECM Decompressor](https://www.romhacking.net/utilities/1177/)
-
-If familiar with the Terminal on the Raspberry Pi, then all you have to do is
-
+Directly on RetroPie, input to terminal:
 ```
 sudo apt-get install ecm
 ecm-uncompress game-file.bin.ecm
 ```
 
-If on a PC running Ubuntu 19.X+(or derivative) you can install ecm from the ubuntu archive with the following
+Alternatively, on Windows, use [ECM Decompressor](https://www.romhacking.net/utilities/1177/), or on Ubuntu 19.X+(or derivative), install ecm from the ubuntu archive with the following:
 ```
 curl -sLO http://archive.ubuntu.com/ubuntu/pool/universe/c/cmdpack/ecm_1.03-1build1_amd64.deb && sudo dpkg -i ecm_1.03-1build1_amd64.deb && sudo rm ecm_1.03-1build1_amd64.deb
 ```
 
 ### CHD Archive Usage
 
-lr-pcsx-rearmed has support for the CHD (V5) archive format, though a source update of the emulator may be required for said support.
-
-This format will save space and allow you to keep your PSX ROM folder tidy without much work at all, and is the most efficient way to play multi-disc games.
+lr-pcsx-rearmed has support for the CHD (V5) archive format. This is a lossless compression format, that (like .PBP) can collect multiple discs into one file.
 
 The following archive contains a MAME 0.205 version of CHDMAN and Windows batch files that can be used to quickly convert your PSX games to CHD (V5): [Download](https://drive.google.com/file/d/0B-ElaPpvBHs5aUd0QUM3c05kY2c/view?usp=sharing)
 
-All you have to do is run the appropriate batch file in the same folder as the ROM(s) you wish to compress, though keep in mind the program will search subfolders for `.cue` files to compress as well so you'll want to isolate it unless you want it to do that. If you don't get a `.chd` after running the appropriate batch, then something is wrong with the ROM(s) `.cue`.
+Run the appropriate batch file in the same folder as the ROM(s) you wish to compress, and it will search subfolders for `.cue` files to compress. If a `.chd` is not generated after running the appropriate batch, then something is wrong with the ROM(s) `.cue`.
 
 ### M3U playlist for Multi-Disc Games
 
@@ -114,7 +109,7 @@ The example above should assign these hotkeys to L3 and R3 on XInput controllers
 
 ### lr-pcsx-rearmed
 
-While lr-pcsx-rearmed has an emulated BIOS to fall back on, this has limited compatibility meaning most games will have issues running with it, others will not work at all, and all games that use memory card saves are prone to save corruption. It should be considered mandatory to manually install an official BIOS.
+While lr-pcsx-rearmed has an emulated BIOS to fall back on, it has limited compatibility so most games will have issues running with it (others will not work at all), and all games that use memory card saves are prone to save corruption. It should be considered mandatory to manually install an official BIOS.
 
 The following BIOS are supported: 
 
@@ -131,7 +126,7 @@ Place BIOS in
 ```
 If more than one of the BIOS above is provided, then the latest revision of the BIOS available is automatically chosen.
 
-The recognized name can be all uppercase or all lowercase so if saving space and using **PCSX-ReARMed** is a concern, then you may want to consider renaming **scph1001.bin** to **SCPH1001.BIN** instead of having two copies of the same BIOS.
+The recognized name can be all uppercase OR all lowercase.
 
 ### PCSX-ReARMed
 
