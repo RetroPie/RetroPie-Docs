@@ -25,15 +25,15 @@ Either on linux, or on a PC, format the USB drive to FAT32 (used in this guide a
 
 ## Automatic Mount (Easiest Method)
 
-As of December 30, 2016 a simple automated method was added to run roms from a USB drive. 
+As of December 30, 2016 a simple automated method was added to run roms from a USB drive. Before proceeding, make sure the `usbromservice` (Optional packages section) is installed and enabled, especially if you have installed RetroPie manually.
 
 1. Create a folder called `retropie-mount` on the USB drive
 2. Plug into Raspberry Pi
 3. It will proceed to automatically copy the `RetroPie` folder AND all of its contents (you may need to reboot to start the copying)
 
-NOTE if you have a large ROM collection already on the SD card it will copy all of the ROMs too so make sure your USB is large enough. It is easiest if you haven't added any roms yet.
+**NOTE:** if you have a large ROM collection already on the SD card it will copy all of the ROMs too so make sure your USB is large enough. It is easiest if you haven't added any roms yet.
 
-Once the folder structure is copied over the USB will be mounted over the RetroPie folder so any ROMs you add to your pi will be run off of the USB. 
+Once the folder structure is copied over the USB will be mounted over the RetroPie folder so any ROMs you add to your Pi will be run off of the USB. 
 
 **Note: XU4 owners**
 The XU4 and its OS do not respond the same as the Raspberry Pi with Rasbian and it does not provide a way to know when the sync is completed. It is recommended that you allow a decent amount of time for the process to sync.
