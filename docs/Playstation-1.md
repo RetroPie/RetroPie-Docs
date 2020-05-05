@@ -15,9 +15,7 @@ _The PlayStation is a 5th generation video game console released by Sony in 1994
 
 ### lr-pcsx-rearmed
 
-The prefered PSX emulator for those on a Raspberry Pi 2/3. The features of RetroArch combined with PCSX-ReARMed's excellent Dynamic Recompiler allow for an adequate PSX emulation experience on the Raspberry Pi, though expect some inaccurate emulation.
-
-Raspberry Pi 0/1 users that choose to use this unrecommended emulator should be made aware that RetroArch's **Bilinear Filtering** will cause abnormal behavior in some games and should be disabled whenever emulation issues are encountered.
+The prefered PSX emulator for those on a Raspberry Pi 2-4. The features of RetroArch combined with PCSX-ReARMed's excellent Dynamic Recompiler allow for an adequate PSX emulation experience on the Raspberry Pi, though expect some inaccuracies.
 
 ### PCSX-ReARMed
 
