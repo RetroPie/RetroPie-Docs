@@ -198,11 +198,11 @@ You can also log in as root if you wish to change more files than just the roms,
 
 ### Samba-Shares
 
-- if on windows type `\\retropie` into the computer folder. You can also replace `retropie` with your Raspberry Pi's IP address
+- if on Windows type `\\retropie` into the computer folder. You can also replace `retropie` with your Raspberry Pi's IP address
 
 ![samba](https://cloud.githubusercontent.com/assets/10035308/12865893/d2eab264-cc77-11e5-9ec6-003e13322a5a.png)
 
-- if on MAC OS X open finder, select "Go" menu and "Connect to Server". Type `smb://retropie` and hit "Connect".
+- if on MAC OS X open Finder, select "Go" menu and "Connect to Server...". Type `smb://retropie` or `smb://retropie.local` and hit "Connect". Then choose Guest and hit "Connect" again.
 
 ## AUDIO
 
