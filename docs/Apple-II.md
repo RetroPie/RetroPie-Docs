@@ -59,4 +59,4 @@ Grey * - Normal speed
 
 ## Running Disks From EmulationStation
 
-http://blog.petrockblock.com/forums/topic/how-to-get-linapple-disk-images-running-from-emulation-station-in-retropie/
+[http://blog.petrockblock.com/forums/topic/how-to-get-linapple-disk-images-running-from-emulation-station-in-retropie/](http://blog.petrockblock.com/forums/topic/how-to-get-linapple-disk-images-running-from-emulation-station-in-retropie/)
