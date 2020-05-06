@@ -11,8 +11,6 @@ _The Pokemon Mini is a handheld game console that was released by Nintendo in 20
 ## Emulator: [lr-pokemini](https://github.com/libretro/pokemini)
 This emulator can be installed from the experimental menu of the [RetroPie-Setup script.](https://github.com/RetroPie/RetroPie-Setup/wiki/Updating-RetroPie#using-the-retropie-setup-script)
 
-A bug in the emulator causes two titles to not be able to save properly.  These two titles are "Pokemon Pinball Mini" and "Pokemon Race Mini".
-
 ## ROMS
 
 Accepted File Extensions: **.min .zip** 
