@@ -72,12 +72,14 @@ The main difference between them is:
 Now you have to choose which one you want to follow (or read about both):
 
 [Method 1](#method-1):
+
 - [runcommand-onstart.sh](#runcommand-onstartsh)
 - [Create gamelist with Sselphs scraper](#create-gamelist-with-sselphs-scraper)
 - [Behind the Code](#behind-the-code)
 
 
 [Method 2](#method-2):
+
 - [retroarch.cfg](#retroarchcfg)
 - [runcommand-onend.sh](#runcommand-onendsh)
 - ["I didn't like how it looks! I want my old images back and disable this stuff!"](#i-didnt-like-how-it-looks-i-want-my-old-images-back-and-disable-this-stuff)
