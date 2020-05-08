@@ -165,6 +165,7 @@ Access theme gallery in the esthemes menu
 |             Venom             | <img src="https://raw.githubusercontent.com/wetriner/es-theme-gallery/master/Venom.png" width="500">                         | <img src="https://raw.githubusercontent.com/wetriner/es-theme-gallery/master/Venom-gamelist.png" width="500">                         | yes           |
 |           Spider-Man          | <img src="https://raw.githubusercontent.com/wetriner/es-theme-gallery/master/Spider-Man.png" width="500">                    | <img src="https://raw.githubusercontent.com/wetriner/es-theme-gallery/master/Spider-Man-gamelist.png" width="500">                    | yes           |
 |           locomotion          | <img src="https://raw.githubusercontent.com/wetriner/es-theme-gallery/master/locomotion.png" width="500">                    | <img src="https://raw.githubusercontent.com/wetriner/es-theme-gallery/master/locomotion-gamelist.png" width="500">                    | yes           |
+|           arcade-crt          | <img src="https://github.com/AndreaMav/es-theme-arcade-crt/raw/master/preview.png" width="500">                    | <img src="https://github.com/AndreaMav/es-theme-arcade-crt/raw/master/preview%20amiga.JPG" width="500">                    | yes           |
 
 
 ## Creating Your Own EmulationStation Theme
