@@ -63,19 +63,28 @@ curl -sLO http://archive.ubuntu.com/ubuntu/pool/universe/c/cmdpack/ecm_1.03-1bui
 
 ### CHD Archive Usage
 
-lr-pcsx-rearmed has support for the CHD (V5) archive format. This is a lossless compression format, that (like .PBP) can collect multiple discs into one file.
+lr-pcsx-rearmed has support for the CHD (V5) archive format. This is a lossless compression format which can be useful to tidy up multi-.bin ROMs into one file.
 
 The following archive contains a MAME 0.205 version of CHDMAN and Windows batch files that can be used to quickly convert your PSX games to CHD (V5): [Download](https://drive.google.com/file/d/0B-ElaPpvBHs5aUd0QUM3c05kY2c/view?usp=sharing)
 
 Run the appropriate batch file in the same folder as the ROM(s) you wish to compress, and it will search subfolders for `.cue` files to compress. If a `.chd` is not generated after running the appropriate batch, then something is wrong with the ROM(s) `.cue`.
 
-### M3U playlist for Multi-Disc Games
+### Multi-Disc Games
 
-Multiple discs can be loaded simultaneously from EmulationStation into RetroArch by creating a `.m3u` file (plain text with `.m3u` extension).
+.pbp format ROMs can package together multiple discs in one file. To change the disc through RetroArch, from the "Quick Menu", enter "Disk Control", use the "Disk Cycle Tray Status" to open the virtual disk tray, change the disk number to the correct one, then use the "Disk Cycle Tray Status" to close the virtual disk tray.
 
-`.m3u` playlists can be used with games that have a `.cue` and a single `.bin` format ROM per disc, any multi-disc game that has multiple `.bin` files on a single disc will not work with `.m3u`. Due to this, converting your multi-track games to `.chd` is the easiest and most efficient method of setting up multi-disc games to be playable with RetroPie. Another option for Linux is to use [romtool](https://github.com/jordond/romtool) to [merge](https://github.com/jordond/romtool/blob/master/docs/merge.md) multi-track `.bin`'s into a single `.bin`/`.cue` pair.  It can also be used to create a `.m3u` [playlist](https://github.com/jordond/romtool/blob/master/docs/playlist.md).
+Alternatively, you could add the following hotkeys to your controller's config file in `/opt/retropie/configs/all/retroarch/autoconfig` so that you can change the disc using hotkeys.
 
-Replace the `.cue` or `.chd` extension for each disc of the game with an appropriate `.CD1`, `.CD2`, etc so that EmulationStation will list only the `.m3u` and not the individual discs.
+```
+input_disk_eject_toggle_btn = "11"
+input_disk_next_btn = "12"
+```
+
+The example above should assign these hotkeys to L3 and R3 on XInput controllers, but should be verified by the user and they can be assigned to any other button like every other hotkey.
+
+#### M3U playlists for .cue & .bins, or .chds
+
+For multi-disc games on .cue & .bin ROM pairs or .chds, you can create a .m3u playlist file to enable you to change discs by the above method. Replace the `.cue` or `.chd` extension for each disc of the game with an appropriate `.CD1`, `.CD2`, etc so that EmulationStation will list only the `.m3u` and not the individual discs.
 
 Example for Final Fantasy VII:
 
@@ -93,17 +102,6 @@ Final Fantasy VII (USA) (Disc 1).CD1
 Final Fantasy VII (USA) (Disc 2).CD2
 Final Fantasy VII (USA) (Disc 3).CD3
 ```
-
-To change the disc through RetroArch, from the "Quick Menu", enter "Disk Control", use the "Disk Cycle Tray Status" to open the virtual disk tray, change the disk number to the correct one, then use the "Disk Cycle Tray Status" to close the virtual disk tray.
-
-Alternatively, you could add the following hotkeys to your controller's config file in `/opt/retropie/configs/all/retroarch/autoconfig` so that you can change the disc using hotkeys.
-
-```
-input_disk_eject_toggle_btn = "11"
-input_disk_next_btn = "12"
-```
-
-The example above should assign these hotkeys to L3 and R3 on XInput controllers, but should be verified by the user and they can be assigned to any other button like every other hotkey.
 
 ## BIOS
 
