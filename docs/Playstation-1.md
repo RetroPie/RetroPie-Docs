@@ -176,7 +176,7 @@ You will need a keyboard to press Escape on to access the emulator's menu so tha
 
 A common issue people using RetroPie have with PSX emulation is their analog sticks do not work. The reason for this is related to a default lr-pcsx_rearmed core setting, and there is a very good reason the setting is the way it is that we will get into later.
 
-Using a controller while a PSX game is running, navigate to RetroArch's Quick Menu (Hotkey Enable + Top Face Button by default), then enter the Options section. In Options, you will want to change "Pad 1 Type" and "Pad 2 Type" from "standard" to "dualshock". 
+Change the **Core Options** for **Pad 1 Type** and **Pad 2 Type** from **standard** to **dualshock**. See [[ Setting Core Options | RetroArch-Core-Options#setting-core-options ]].
 
 After the previous two settings have been changed, back out to the Quick Menu so that you can enter the Controls section. In Controls, you need to change all controllers from "RetroPad" to "RetroPad w/ Analog", then use the "Save Core Remap File" function to save this setting as a default for all games.
 
@@ -186,15 +186,15 @@ The reason for the problem is due to the PSX originally being released with a co
 
 Unfortunately, this is a problem that doesn't have an easy solution. The reason the emulator was set the way is was is because that was 100% compatible even if it removed all analog functionality. If you want all your games with analog support to work correctly, you will have to manually fix the Digital-Only games one by one.
 
-The process of fixing a Digital-Only game manually is mostly reverting the changes you made, but with a couple extra steps. From RetroArch's Quick Menu, go into Options, use the "Create game-options file" function at the top, then change "Pad 1 Type" and "Pad 2 Type" back to "standard".
+The process of fixing a Digital-Only game is to set per-ROM Core Options, changing **Pad 1 Type** and **Pad 2 Type** back to **standard**. See [[ Setting Core Options per-ROM | RetroArch-Core-Options#setting-core-options-per-rom ]].
 
-With those three things done, now we need to go back to the Quick Menu and go into the Controls section. In Controls, change all "RetroPad w/ Analog" back to ""RetroPad", change all "Analog To Digital" settings for each controller from "None" to "Left Analog", then use the "Save Game Remap File".
+With those three things done, now we need to go back to the **Quick Menu** and go into the Controls section. In **Controls**, change all **RetroPad w/ Analog** back to **RetroPad**, change all **Analog To Digital** settings for each controller from **None** to **Left Analog**, then use the **Save Game Remap File**.
 
 After a complete exit back to EmulationStation, the game you've manually fixed will function correctly plus you will be able to use the left analog stick for upto 8-way movement if you want to. Keep in mind the "Analog To Digital" step is completely optional and included for those that may want to still use an analog stick for movement in games that didn't support it originally.
 
 For a decent list of which games are Digital-Only, check the spreadsheet and website found in the "Game Specific Control Information" section below.
 
-The "analog" setting found between "standard" and "dualshock" in the Quick Menu's Options for lr-pcsx_rearmed is for the [NeGcon](https://en.wikipedia.org/wiki/NeGcon).
+The **negcon** setting found between pad type is for the [NeGcon](https://en.wikipedia.org/wiki/NeGcon).
 
 While this section does focus on lr-pcsx_rearmed, what is done in this section could be done in PCSX-ReARMed's menu as well if not visually different.
 
@@ -212,11 +212,7 @@ For a more complete resource, please check the [PlayStation DataCenter](http://p
 
 ### Multitap (3-5 Players)
 
-lr-pcsx_rearmed has support for multitap, though due to RetroArch limitations you can only go up to five players.
-
-All you have to do is go into RetroArch's Quick Menu's Options while playing a PSX game that supports the multitap, use the "Create game-options file" function at the top, then set (depending on the number of players "Pad 3 Type", "Pad 4 Type", "Pad 5 Type" to the proper controller type as detailed in the "The Controller Problem: Digital-Only and Analog" section found above and do any relevant changes over in the Quick Menu's Controls as well alongside using the "Save Game Remap File" in there.
-
-After a complete exit back to EmulationStation, multitap should function correctly.
+lr-pcsx_rearmed has support for multitap, but not all games read input when a multitap is connected, so a per-ROM Core Options file should be created for multitap compatible games. Set the Core Options for **Pad 3 Type**, **Pad 4 Type** (and so on, depending on how many players are supported by the game) to the relevant Controller Type that the game supports. See [[ Setting Core Options per-ROM | RetroArch-Core-Options#setting-core-options-per-ROM ]].
 
 ## Tweaks
 
@@ -226,43 +222,29 @@ lr-pcsx_rearmed
 
 #### Performance - PSX CPU Clock
 
-The clock speed percentage of the emulated PSX hardware's CPU can be adjusted by the user. While the default setting of "57" is decent, it does cause some games to exceed their intended framerate and the setting of "55" is recommended to reduce this from happening in more games.
-
-Using a controller while a PSX game is running, navigate to RetroArch's Quick Menu (Hotkey Enable + Top Face Button by default), then enter the Options section. In Options, you will want to change "PSX cpu clock (default 57)" from "57" to "55".
-
-If you encounter slowdown in games, then increasing the "PSX cpu clock (default 57)" from "55" to something higher may fix that issue if the slowdown is CPU speed related.
-
-While 55 is considered a safe number, it will still cause games like "Final Fantasy 7" and "Final Fantasy Tactics" to exceed their framerate. In Options, you should use the "Create game-options file" function at the top, then change "PSX cpu clock (default 57)" from "55" to "54" for games like that. As for why "54" isn't recommended due to this happening, that is due to the possibility of more games requiring even less and these being two well known exceptions to the recommended setting of "55".
+The clock speed percentage of the emulated PSX hardware's CPU can be adjusted by the user. While the default setting of **57** is decent, it does cause some games to exceed their intended framerate and the setting of **55** is recommended to reduce this from happening in more games. Some games, such as "Final Fantasy 7" and "Final Fantasy Tactics", may need even lower CPU speeds. See [[ Setting Core Options per-ROM | RetroArch-Core-Options#setting-core-options-per-rom ]].
 
 #### Performance - Disable Vibration
 
-Vibration is known to cause slowdown in some games. Disabling vibration in-game (if possible) is recommended if you notice this happen, and you may want to disable it in lr-pcsx_rearmed as well if your controller doesn't have vibration or doesn't work.
+Vibration is known to cause slowdown in some games. Disabling vibration in-game (if possible) is recommended if you notice this happen, or don't have a controller with vibration ability. See [[ Setting Core Options | RetroArch-Core-Options#setting-core-options ]].
 
-Using a controller while a PSX game is running, navigate to RetroArch's Quick Menu (Hotkey Enable + Top Face Button by default), then enter the Options section. In Options, you will want to change "Enable Vibration" to "disabled".
+Change Core Option **Enable Vibration** to **disabled**
 
-Keep in mind that disabling vibration in-game is what is known to reduce the slowdown it causes, and may still cause the slowdown even if vibration is disabled in lr-pcsx_rearmed.
+Instances in-game where vibration occurs may still cause the slowdown even if vibration is disabled.
 
 #### Video - Double Internal Resolution
 
-lr-pcsx_rearmed has a core option to improve graphical fidelity by doubling the normal resolution, producing a sharper 3D image, however all 2D bitmaps and texture maps retain the original resolution.  On a Pi 2 this introduces some slowdown and audio skipping, but on a Pi 3 it appears to work without issue. The 'speed hack' option is required for good results, but has some (sometimes game-breaking) visual glitches.
+lr-pcsx_rearmed has a Core Option **Enahance Resolution (Slow)** that improves graphical fidelity by doubling the normal resolution, producing a sharper 3D image, however all 2D bitmaps and texture maps retain their original resolution. It can present some (sometimes game-breaking) visual glitches. It should be used in tandem with the **Enhanced Resolution (Speed Hack)** for best performance, but this can increase the glitches. See [[ Setting Core Options | RetroArch-Core-Options#setting-core-options ]].
 
-Using a controller while a PSX game is running, navigate to RetroArch's Quick Menu (Hotkey Enable + Top Face Button by default), then enter the Options section. In Options, you will want to change "Enhanced resolution (slow)" to "enabled" and "Enhanced resolution speed hack" to "enabled".
-
-If you encounter issues using the above settings, then there are two things you can do. In Options, you should use the "Create game-options file" function at the top, then try changing "Enhanced resolution speed hack" to "disabled", exit back to EmulationStation, and see if the problem is corrected without gameplay slowdown. If problems persist, then change "Enhanced resolution (slow)" to "disabled".
+On a Pi 2 it can introduce performance issues, even with the speed hak, but on a Pi 3 and up it should be perform better, sometimes even without the speed hack. To disable these options for games which exhibit issues, or to only enable it for games that perform well, see [[ Setting Core Options per-ROM | RetroArch-Core-Options#setting-core-options-per-rom ]].
 
 #### Video - Disable Dithering
 
-The PSX had a dithering trick that blended colors together in an attempt to make games look more colorful. On modern TVs, this makes the graphics look dirty to some people.
-
-Using a controller while a PSX game is running, navigate to RetroArch's Quick Menu (Hotkey Enable + Top Face Button by default), then enter the Options section. In Options, you will want to change "Enable Dithering" to "disabled".
+The PSX had a dithering trick that blended colors together in an attempt to make games look more colorful. On modern TVs this effect can be less desirable. To disable, set the Core Option **Enable Dithering** to **disabled**. See [[ Setting Core Options | RetroArch-Core-Options#setting-core-options ]].
 
 #### Audio - Switch Interpolation to Gaussian
 
-Some games like "Spyro: Year of the Dragon" have audio corruption issues using the default "simple" setting. The alternative "gaussian" setting fixes audio issue with minimal cost to performance.
-
-Using a controller while a PSX game is running, navigate to RetroArch's Quick Menu (Hotkey Enable + Top Face Button by default), then enter the Options section. In Options, you will want to change "Sound: Interpolation" to "gaussian".
-
-Users following the "Video - Double Internal Resolution" tweak should keep in mind that setting "Sound: Interpolation" to "gaussian" may affect performance to a more noticeable degree.
+Some games like "Spyro: Year of the Dragon" have audio corruption issues using the default Core Option **Sound: Interpolation** value of **simple**. The alternative **gaussian** setting fixes audio issue with minimal cost to performance. See [[ Setting Core Options | RetroArch-Core-Options#setting-core-options ]].
 
 ## Memory Card and Save State
 
