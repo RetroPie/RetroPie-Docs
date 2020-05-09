@@ -63,7 +63,7 @@ curl -sLO http://archive.ubuntu.com/ubuntu/pool/universe/c/cmdpack/ecm_1.03-1bui
 
 ### CHD files
 
-lr-pcsx-rearmed has support for the CHD (V5) archive format. This is a lossless compression format which can be useful to tidy up multi-.bin ROMs into one file. See [[ Creating CHDs from CD-ROMS | CHD-files#creating-chds-from-cd-roms ]].
+lr-pcsx-rearmed has support for the CHD (V5) archive format. This is a lossless compression format which can be useful to tidy up multi-.bin ROMs into one file. See [Creating CHDs from CD-ROMS](CHD-files.md#creating-chds-from-cd-roms).
 
 ### Multi-Disc Games
 
