@@ -61,13 +61,9 @@ Alternatively, on Windows, use [ECM Decompressor](https://www.romhacking.net/uti
 curl -sLO http://archive.ubuntu.com/ubuntu/pool/universe/c/cmdpack/ecm_1.03-1build1_amd64.deb && sudo dpkg -i ecm_1.03-1build1_amd64.deb && sudo rm ecm_1.03-1build1_amd64.deb
 ```
 
-### CHD Archive Usage
+### CHD files
 
-lr-pcsx-rearmed has support for the CHD (V5) archive format. This is a lossless compression format which can be useful to tidy up multi-.bin ROMs into one file.
-
-The following archive contains a MAME 0.205 version of CHDMAN and Windows batch files that can be used to quickly convert your PSX games to CHD (V5): [Download](https://drive.google.com/file/d/0B-ElaPpvBHs5aUd0QUM3c05kY2c/view?usp=sharing)
-
-Run the appropriate batch file in the same folder as the ROM(s) you wish to compress, and it will search subfolders for `.cue` files to compress. If a `.chd` is not generated after running the appropriate batch, then something is wrong with the ROM(s) `.cue`.
+lr-pcsx-rearmed has support for the CHD (V5) archive format. This is a lossless compression format which can be useful to tidy up multi-.bin ROMs into one file. See [[ Creating CHDs from CD-ROMS | CHD-files#creating-chds-from-cd-roms ]].
 
 ### Multi-Disc Games
 
