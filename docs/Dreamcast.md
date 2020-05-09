@@ -31,7 +31,7 @@ Place your ROM files in
 
 ## CHD files
 
-Both Reicast and Flycast have support for the CHD (V5) archive format. This format will save space and allow you to keep your Dreamcast ROM folder tidy. See [[ Creating CHDs from CD-ROMS | CHD-files#creating-chds-from-cd-roms ]].
+Both Reicast and Flycast have support for the CHD (V5) archive format. This format will save space and allow you to keep your Dreamcast ROM folder tidy. See [Creating CHDs from CD-ROMS](CHD-files.md#creating-chds-from-cd-roms).
 
 ## BIOS
 
