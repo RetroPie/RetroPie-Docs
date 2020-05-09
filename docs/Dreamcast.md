@@ -29,13 +29,9 @@ Place your ROM files in
 
 [**DREAMCAST COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1AD91IcudqHP7dDmEXLO25Pzb85uUgAy4chU2QxlZBQk/edit?usp=sharing) feel free to contribute to the list.
 
-## CHD Archive Usage
+## CHD files
 
-Both Reicast and Flycast have support for the CHD (V5) archive format.    
-This format will save space and allow you to keep your Dreamcast ROM folder tidy.
-
-The following archive contains a MAME 0.205 version of CHDMAN and Windows batch files that can be used to quickly convert your Dreamcast games to CHD (V5): [Download](https://drive.google.com/file/d/0B-ElaPpvBHs5aUd0QUM3c05kY2c/view?usp=sharing).    
-Alternatively, `chdman` can be found in the `mame-tools` Debian package, which can be installed using `apt`.
+Both Reicast and Flycast have support for the CHD (V5) archive format. This format will save space and allow you to keep your Dreamcast ROM folder tidy. See [[ Creating CHDs from CD-ROMS | CHD-files#creating-chds-from-cd-roms ]].
 
 ## BIOS
 
