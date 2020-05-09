@@ -23,7 +23,7 @@ Place your PC Engine/PC Engine CD/TurboGrafx-16/TurboGrafx-CD/SuperGrafx ROMs in
 
 ## CHD Files
 
-lr-beetle-pce-fast and lr-beetle-supergrafx have support for the CHD (V5) archive format. This format will save space and allow you to keep your PC Engine CD/TurboGrafx-CD ROM folder tidy. See [[ Creating CHDs from CD-ROMS | CHD-files#creating-chds-from-cd-roms ]].
+lr-beetle-pce-fast and lr-beetle-supergrafx have support for the CHD (V5) archive format. This format will save space and allow you to keep your PC Engine CD/TurboGrafx-CD ROM folder tidy. See [Creating CHDs from CD-ROMS](CHD-files.md#creating-chds-from-cd-roms).
 
 ## BIOS
 
