@@ -7,13 +7,13 @@ _The PlayStation is a 5th generation video game console released by Sony in 1994
 
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
-| [lr-pcsx-rearmed](https://github.com/libretro/pcsx_rearmed) | psx  | .cue .cbn .chd .img .iso .m3u .mdf .pbp .toc .z .znx | scph101.bin scph7001.bin scph5501.bin scph1001.bin | /opt/retropie/configs/psx/retroarch.cfg |
+| [lr-pcsx_rearmed](https://github.com/libretro/pcsx_rearmed) | psx  | .cue .cbn .chd .img .iso .m3u .mdf .pbp .toc .z .znx | scph101.bin scph7001.bin scph5501.bin scph1001.bin | /opt/retropie/configs/psx/retroarch.cfg |
 | [PCSX-ReARMed](https://github.com/notaz/pcsx_rearmed) | psx  | .cue .cbn .img .iso .m3u .mdf .pbp .toc .z .znx | SCPH1001.BIN | /opt/retropie/configs/psx/pcsx.cfg |
 | [lr-beetle-psx](https://github.com/libretro/beetle-psx-libretro) | psx  | .cue .ccd .chd .exe .iso .m3u .pbp .toc | scph5500.bin scph5501.bin scph5502.bin | /opt/retropie/configs/psx/retroarch.cfg |
 
-## Emulators: [lr-pcsx-rearmed](https://github.com/libretro/pcsx_rearmed), [PCSX-ReARMed](https://github.com/notaz/pcsx_rearmed), [lr-beetle-psx](https://github.com/libretro/beetle-psx-libretro).
+## Emulators: [lr-pcsx_rearmed](https://github.com/libretro/pcsx_rearmed), [PCSX-ReARMed](https://github.com/notaz/pcsx_rearmed), [lr-beetle-psx](https://github.com/libretro/beetle-psx-libretro).
 
-### lr-pcsx-rearmed
+### lr-pcsx_rearmed
 
 The prefered PSX emulator for those on a Raspberry Pi 2-4. The features of RetroArch combined with PCSX-ReARMed's excellent Dynamic Recompiler allow for an adequate PSX emulation experience on the Raspberry Pi, though expect some inaccuracies.
 
@@ -63,7 +63,7 @@ curl -sLO http://archive.ubuntu.com/ubuntu/pool/universe/c/cmdpack/ecm_1.03-1bui
 
 ### CHD files
 
-lr-pcsx-rearmed has support for the CHD (V5) archive format. This is a lossless compression format which can be useful to tidy up multi-.bin ROMs into one file. See [Creating CHDs from CD-ROMS](CHD-files.md#creating-chds-from-cd-roms).
+lr-pcsx_rearmed has support for the CHD (V5) archive format. This is a lossless compression format which can be useful to tidy up multi-.bin ROMs into one file. See [Creating CHDs from CD-ROMS](CHD-files.md#creating-chds-from-cd-roms).
 
 ### Multi-Disc Games
 
@@ -101,9 +101,9 @@ Final Fantasy VII (USA) (Disc 3).CD3
 
 ## BIOS
 
-### lr-pcsx-rearmed
+### lr-pcsx_rearmed
 
-While lr-pcsx-rearmed has an emulated BIOS to fall back on, it has limited compatibility so most games will have issues running with it (others will not work at all), and all games that use memory card saves are prone to save corruption. It should be considered mandatory to manually install an official BIOS.
+While lr-pcsx_rearmed has an emulated BIOS to fall back on, it has limited compatibility so most games will have issues running with it (others will not work at all), and all games that use memory card saves are prone to save corruption. It should be considered mandatory to manually install an official BIOS.
 
 The following BIOS are supported: 
 
@@ -154,8 +154,8 @@ The recognized BIOS filename is case-sensitive (must be in all lowercase).
 
 ## Controls
 
-### lr-pcsx-rearmed & lr-beetle-psx Controls
-lr-pcsx-rearmed and lr-beetle-psx utilize Retroarch configurations.
+### lr-pcsx_rearmed & lr-beetle-psx Controls
+lr-pcsx_rearmed and lr-beetle-psx utilize Retroarch configurations.
 
 Add custom retroarch controls to the retroarch.cfg file in
 ```shell
@@ -174,7 +174,7 @@ You will need a keyboard to press Escape on to access the emulator's menu so tha
 
 ### The Controller Problem: Digital-Only & Analog
 
-A common issue people using RetroPie have with PSX emulation is their analog sticks do not work. The reason for this is related to a default lr-pcsx-rearmed core setting, and there is a very good reason the setting is the way it is that we will get into later.
+A common issue people using RetroPie have with PSX emulation is their analog sticks do not work. The reason for this is related to a default lr-pcsx_rearmed core setting, and there is a very good reason the setting is the way it is that we will get into later.
 
 Using a controller while a PSX game is running, navigate to RetroArch's Quick Menu (Hotkey Enable + Top Face Button by default), then enter the Options section. In Options, you will want to change "Pad 1 Type" and "Pad 2 Type" from "standard" to "dualshock". 
 
@@ -194,9 +194,9 @@ After a complete exit back to EmulationStation, the game you've manually fixed w
 
 For a decent list of which games are Digital-Only, check the spreadsheet and website found in the "Game Specific Control Information" section below.
 
-The "analog" setting found between "standard" and "dualshock" in the Quick Menu's Options for lr-pcsx-rearmed is for the [NeGcon](https://en.wikipedia.org/wiki/NeGcon).
+The "analog" setting found between "standard" and "dualshock" in the Quick Menu's Options for lr-pcsx_rearmed is for the [NeGcon](https://en.wikipedia.org/wiki/NeGcon).
 
-While this section does focus on lr-pcsx-rearmed, what is done in this section could be done in PCSX-ReARMed's menu as well if not visually different.
+While this section does focus on lr-pcsx_rearmed, what is done in this section could be done in PCSX-ReARMed's menu as well if not visually different.
 
 ### Game Specific Control Information
 
@@ -212,7 +212,7 @@ For a more complete resource, please check the [PlayStation DataCenter](http://p
 
 ### Multitap (3-5 Players)
 
-lr-pcsx-rearmed has support for multitap, though due to RetroArch limitations you can only go up to five players.
+lr-pcsx_rearmed has support for multitap, though due to RetroArch limitations you can only go up to five players.
 
 All you have to do is go into RetroArch's Quick Menu's Options while playing a PSX game that supports the multitap, use the "Create game-options file" function at the top, then set (depending on the number of players "Pad 3 Type", "Pad 4 Type", "Pad 5 Type" to the proper controller type as detailed in the "The Controller Problem: Digital-Only and Analog" section found above and do any relevant changes over in the Quick Menu's Controls as well alongside using the "Save Game Remap File" in there.
 
@@ -220,7 +220,9 @@ After a complete exit back to EmulationStation, multitap should function correct
 
 ## Tweaks
 
-### lr-pcsx-rearmed
+### lr-pcsx_rearmed
+
+lr-pcsx_rearmed
 
 #### Performance - PSX CPU Clock
 
@@ -234,15 +236,15 @@ While 55 is considered a safe number, it will still cause games like "Final Fant
 
 #### Performance - Disable Vibration
 
-Vibration is known to cause slowdown in some games. Disabling vibration in-game (if possible) is recommended if you notice this happen, and you may want to disable it in lr-pcsx-rearmed as well if your controller doesn't have vibration or doesn't work.
+Vibration is known to cause slowdown in some games. Disabling vibration in-game (if possible) is recommended if you notice this happen, and you may want to disable it in lr-pcsx_rearmed as well if your controller doesn't have vibration or doesn't work.
 
 Using a controller while a PSX game is running, navigate to RetroArch's Quick Menu (Hotkey Enable + Top Face Button by default), then enter the Options section. In Options, you will want to change "Enable Vibration" to "disabled".
 
-Keep in mind that disabling vibration in-game is what is known to reduce the slowdown it causes, and may still cause the slowdown even if vibration is disabled in lr-pcsx-rearmed.
+Keep in mind that disabling vibration in-game is what is known to reduce the slowdown it causes, and may still cause the slowdown even if vibration is disabled in lr-pcsx_rearmed.
 
 #### Video - Double Internal Resolution
 
-lr-pcsx-rearmed has a core option to improve graphical fidelity by doubling the normal resolution, producing a sharper 3D image, however all 2D bitmaps and texture maps retain the original resolution.  On a Pi 2 this introduces some slowdown and audio skipping, but on a Pi 3 it appears to work without issue. The 'speed hack' option is required for good results, but has some (sometimes game-breaking) visual glitches.
+lr-pcsx_rearmed has a core option to improve graphical fidelity by doubling the normal resolution, producing a sharper 3D image, however all 2D bitmaps and texture maps retain the original resolution.  On a Pi 2 this introduces some slowdown and audio skipping, but on a Pi 3 it appears to work without issue. The 'speed hack' option is required for good results, but has some (sometimes game-breaking) visual glitches.
 
 Using a controller while a PSX game is running, navigate to RetroArch's Quick Menu (Hotkey Enable + Top Face Button by default), then enter the Options section. In Options, you will want to change "Enhanced resolution (slow)" to "enabled" and "Enhanced resolution speed hack" to "enabled".
 
@@ -264,7 +266,7 @@ Users following the "Video - Double Internal Resolution" tweak should keep in mi
 
 ## Memory Card and Save State
 
-### lr-pcsx-rearmed
+### lr-pcsx_rearmed
 
 Memory Card saves have the `.srm` extension and are located in
 ```
