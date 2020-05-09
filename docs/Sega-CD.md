@@ -28,7 +28,7 @@ If you don't have the corresponding .cue file in the same folder as your .bin fi
 
 ## CHD Files
 
-lr-genesis-plus-gx has support for the CHD (V1-V5) archive format. This format will save space and allow you to keep your Mega CD/Sega CD ROM folder tidy. See [[ Creating CHDs from CD-ROMS | CHD-files#creating-chds-from-cd-roms ]].
+lr-genesis-plus-gx has support for the CHD (V1-V5) archive format. This format will save space and allow you to keep your Mega CD/Sega CD ROM folder tidy. See [Creating CHDs from CD-ROMS](CHD-files.md#creating-chds-from-cd-roms).
 
 **Keep in mind that lr-picodrive does not support CHD and only lr-picodrive can play multi-disc and 32x games.**
 
