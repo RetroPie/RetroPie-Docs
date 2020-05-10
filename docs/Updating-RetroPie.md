@@ -1,6 +1,6 @@
 |Version|
 |---|
-|4.5.1|
+|4.6|
 
 # Updating RetroPie
 
