@@ -4,7 +4,7 @@ Raspberry Pi 4B specific questions, configurations and differences.
 
 ## Which PI 4 model ?
 
-There are currenlty 3 Raspberry Pi 4 models available, differentiated only by the RAM option - 1Gb, 2Gb or 4Gb. Either of them will be fine for RetroPie, the memory capacity doesn't influence the emulation speed.
+There are currently 3 Raspberry Pi 4 models available, differentiated only by the RAM option - 1Gb, 2Gb or 4Gb. Either of them will be fine for RetroPie, the memory capacity doesn't influence the emulation speed.
   
 ## Hardware
 
