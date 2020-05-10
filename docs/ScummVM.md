@@ -10,23 +10,62 @@ _ScummVM stands for Script Creation Utility for Maniac Mansion (VM stands for vi
 
 ## Emulator: [ScummVM](http://scummvm.org/)
 
-## ROMS
+### ROMs
+
 Accepted File Extensions: This is a tricky question as ScummVM has its own particular filesets and method of loading- but when all is said and done **.sh .svm** are the filetypes EmulationStation will read.
 
 ScummVM is very different to most romsets in that there are a set of files for each game. 
 
 See the list here: http://wiki.scummvm.org/index.php/Datafiles
 
-Place your folders of game files in
+Place your folders of game files in:
+
 ```
 /home/pi/RetroPie/roms/scummvm
 ```
 
-**List ScummVM games in EmulationStation**
+### List ScummVM games in EmulationStation
 
-Place an empty .svm file in scummvm's rom folder for each game which you want to appear in EmulationStation. This can be used to directly launch that game without starting the GUI first. Recalbox uses .scummvm files instead of .svm files.
+Place an `.svm` file in the ROM folder for each game which you want to appear in EmulationStation.
 
-**Quick Start**
+The `.svm` file contains the short name of the game. This can be used to directly launch that game without starting the ScummVM GUI first.
+
+The list of short names is at: https://www.scummvm.org/compatibility
+
+The [Recalbox documentation](https://www.lakka.tv/doc/ScummVM/) uses `.scummvm` files instead of `.svm` files.
+
+### Example
+
+The game **Day of the Tentacle** has the shortname `tentacle` and requires files:
+
+* `MONSTER.SOU`
+* `TENTACLE.000`
+* `TENTACLE.001`
+
+Create a directory `/home/pi/RetroPie/roms/scummvm/Day of the Tentacle` and place the game files in it.
+
+Create a launcher file with the same name as the directory: `/home/pi/RetroPie/roms/scummvm/Day of the Tentacle/Day of the Tentacle.svm`
+
+This laucher file `Day of the Tentacle.svm` contains the shortname `tentacle`
+
+You can create the launcher file like:
+
+```
+echo "tentacle" > "/home/pi/RetroPie/roms/scummvm/Day of the Tentacle/Day of the Tentacle.svm"
+```
+
+The final file layout is:
+
+```
+/home/pi/RetroPie/roms/scummvm/Day of the Tentacle/Day of the Tentacle.svm
+/home/pi/RetroPie/roms/scummvm/Day of the Tentacle/MONSTER.SOU
+/home/pi/RetroPie/roms/scummvm/Day of the Tentacle/TENTACLE.000
+/home/pi/RetroPie/roms/scummvm/Day of the Tentacle/TENTACLE.001
+```
+
+Restarting EmulationStation will show the name **Day of the Tentacle** which is used to launch the game.
+
+### Quick Start
 
 - Quit running rom without saving : Alt + X or Alt + Q
 
