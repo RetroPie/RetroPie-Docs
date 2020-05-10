@@ -11,7 +11,7 @@ The Nintendo DS is a handheld video game console that was released by Nintendo i
 
 ## Emulator: [DraStic](http://drastic-ds.com/)
 
-Note that while DraStic may run very well, it is currently experimental beta software. Previously, all games that require the microphone at any point would crash but with the newer version certain games will function that require microphone input. However, any games in "bookmode" (e.g Brain Training) will always play rotated at 90 degrees and cannot be rotated in Drastic. 
+Note that while DraStic may run very well, it is currently experimental beta software. Any games in "bookmode" (e.g Brain Training) will always play rotated at 90 degrees and cannot be rotated in Drastic. 
 
 ## BIOS
 
