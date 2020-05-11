@@ -63,7 +63,7 @@ For example, if you wanted to run the Donkey Kong Colecovision rom (dkong.zip) t
 
 If the driver you wish to use does not require a ROM, you do not need to put one into your roms directory.
 
-Check `/opt/retropie/configs/all/retroarch-core-options.cfg` and make sure that MAME CLI launching, MAME software lists and MAME auto media type are turned on. The compilation script should set these by default at the bottom of the file, but just make sure.
+Make sure **Core Options** for **MAME CLI Launching**, **MAME software lists** and **MAME auto media type** are enabled. See [Setting Core Options](RetroArch-Core-Options#setting-core-options).
 
 You may need to add .zip and .ZIP to your extensions in `/etc/emulationstation/es_systems.cfg` and restart emulationstation for it to pick up your ROMs.
 
