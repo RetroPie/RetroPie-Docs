@@ -186,7 +186,7 @@ The reason for the problem is due to the PSX originally being released with a co
 
 Unfortunately, this is a problem that doesn't have an easy solution. The reason the emulator was set the way is was is because that was 100% compatible even if it removed all analog functionality. If you want all your games with analog support to work correctly, you will have to manually fix the Digital-Only games one by one.
 
-The process of fixing a Digital-Only game is to set per-ROM Core Options, changing **Pad 1 Type** and **Pad 2 Type** back to **standard**. See [Setting Core Options per-ROM](RetroArch-Core-Options#setting-core-option-per-rom).
+The process of fixing a Digital-Only game is to set per-ROM Core Options, changing **Pad 1 Type** and **Pad 2 Type** back to **standard**. See [Setting Core Options per-ROM](RetroArch-Core-Options#setting-core-options-per-rom).
 
 With those three things done, now we need to go back to the **Quick Menu** and go into the Controls section. In **Controls**, change all **RetroPad w/ Analog** back to **RetroPad**, change all **Analog To Digital** settings for each controller from **None** to **Left Analog**, then use the **Save Game Remap File**.
 
@@ -212,7 +212,7 @@ For a more complete resource, please check the [PlayStation DataCenter](http://p
 
 ### Multitap (3-5 Players)
 
-lr-pcsx_rearmed has support for multitap, but not all games read input when a multitap is connected, so a per-ROM Core Options file should be created for multitap compatible games. Set the Core Options for **Pad 3 Type**, **Pad 4 Type** (and so on, depending on how many players are supported by the game) to the relevant Controller Type that the game supports. See [Setting Core Options per-ROM](RetroArch-Core-Options#setting-core-option-per-rom).
+lr-pcsx_rearmed has support for multitap, but not all games read input when a multitap is connected, so a per-ROM Core Options file should be created for multitap compatible games. Set the Core Options for **Pad 3 Type**, **Pad 4 Type** (and so on, depending on how many players are supported by the game) to the relevant Controller Type that the game supports. See [Setting Core Options per-ROM](RetroArch-Core-Options#setting-core-options-per-rom).
 
 ## Tweaks
 
@@ -222,11 +222,11 @@ lr-pcsx_rearmed
 
 #### Performance - PSX CPU Clock
 
-The clock speed percentage of the emulated PSX hardware's CPU can be adjusted by the user. While the default setting of **57** is decent, it does cause some games to exceed their intended framerate and the setting of **55** is recommended to reduce this from happening in more games. Some games, such as "Final Fantasy 7" and "Final Fantasy Tactics", may need even lower CPU speeds. See [Setting Core Options per-ROM](RetroArch-Core-Options#setting-core-option-per-rom).
+The clock speed percentage of the emulated PSX hardware's CPU can be adjusted by the user. While the default setting of **57** is decent, it does cause some games to exceed their intended framerate and the setting of **55** is recommended to reduce this from happening in more games. Some games, such as "Final Fantasy 7" and "Final Fantasy Tactics", may need even lower CPU speeds. See [Setting Core Options per-ROM](RetroArch-Core-Options#setting-core-options-per-rom).
 
 #### Performance - Disable Vibration
 
-Vibration is known to cause slowdown in some games. Disabling vibration in-game (if possible) is recommended if you notice this happen, or don't have a controller with vibration ability. See [Setting Core Options](RetroArch-Core-Options#setting-core-option).
+Vibration is known to cause slowdown in some games. Disabling vibration in-game (if possible) is recommended if you notice this happen, or don't have a controller with vibration ability. See [Setting Core Options](RetroArch-Core-Options#setting-core-options).
 
 Change Core Option **Enable Vibration** to **disabled**
 
@@ -234,17 +234,17 @@ Instances in-game where vibration occurs may still cause the slowdown even if vi
 
 #### Video - Double Internal Resolution
 
-lr-pcsx_rearmed has a Core Option **Enahance Resolution (Slow)** that improves graphical fidelity by doubling the normal resolution, producing a sharper 3D image, however all 2D bitmaps and texture maps retain their original resolution. It can present some (sometimes game-breaking) visual glitches. It should be used in tandem with the **Enhanced Resolution (Speed Hack)** for best performance, but this can increase the glitches. See [Setting Core Options](RetroArch-Core-Options#setting-core-option).
+lr-pcsx_rearmed has a Core Option **Enahance Resolution (Slow)** that improves graphical fidelity by doubling the normal resolution, producing a sharper 3D image, however all 2D bitmaps and texture maps retain their original resolution. It can present some (sometimes game-breaking) visual glitches. It should be used in tandem with the **Enhanced Resolution (Speed Hack)** for best performance, but this can increase the glitches. See [Setting Core Options](RetroArch-Core-Options#setting-core-options).
 
-On a Pi 2 it can introduce performance issues, even with the speed hak, but on a Pi 3 and up it should be perform better, sometimes even without the speed hack. To disable these options for games which exhibit issues, or to only enable it for games that perform well, see [Setting Core Options per-ROM](RetroArch-Core-Options#setting-core-option-per-rom).
+On a Pi 2 it can introduce performance issues, even with the speed hak, but on a Pi 3 and up it should be perform better, sometimes even without the speed hack. To disable these options for games which exhibit issues, or to only enable it for games that perform well, see [Setting Core Options per-ROM](RetroArch-Core-Options#setting-core-options-per-rom).
 
 #### Video - Disable Dithering
 
-The PSX had a dithering trick that blended colors together in an attempt to make games look more colorful. On modern TVs this effect can be less desirable. To disable, set the Core Option **Enable Dithering** to **disabled**. See [Setting Core Options](RetroArch-Core-Options#setting-core-option).
+The PSX had a dithering trick that blended colors together in an attempt to make games look more colorful. On modern TVs this effect can be less desirable. To disable, set the Core Option **Enable Dithering** to **disabled**. See [Setting Core Options](RetroArch-Core-Options#setting-core-options).
 
 #### Audio - Switch Interpolation to Gaussian
 
-Some games like "Spyro: Year of the Dragon" have audio corruption issues using the default Core Option **Sound: Interpolation** value of **simple**. The alternative **gaussian** setting fixes audio issue with minimal cost to performance. See [Setting Core Options](RetroArch-Core-Options#setting-core-option).
+Some games like "Spyro: Year of the Dragon" have audio corruption issues using the default Core Option **Sound: Interpolation** value of **simple**. The alternative **gaussian** setting fixes audio issue with minimal cost to performance. See [Setting Core Options](RetroArch-Core-Options#setting-core-options).
 
 ## Memory Card and Save State
 
