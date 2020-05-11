@@ -64,37 +64,15 @@ Some sound effects in a few older (typically pre-1986) arcade games are difficul
 ```
 ## Sample rate
 
-You can adjust the sample rate for _all_ audio. Lowering it from the default of 48000 KHz may increase performance, at the cost of audio fidelity. It can be controlled via a setting in the `retroarch-core-options.cfg` file, found in:
-```
-/opt/retropie/configs/all/
-```
-The option is:
-```
-mame2003_sample_rate = "48000"
-```
-The valid possibilities are 8000, 11025, 22050, 44100 and 48000.
+You can adjust the sample rate for _all_ audio. Lowering it from the default of 48000 KHz may increase performance, at the cost of audio fidelity. It can be controlled via lowering the **Core Option** for **Sample Rate** from the default of **48000**. See [Setting Core Options](RetroArch-Core-Options#setting-core-options).
 
 ## Nag-screen
 
-The copyright warning should be hidden by default, but can be controlled via a setting in the `retroarch-core-options.cfg` file, found in:
-```
-/opt/retropie/configs/all/
-```
-The option is:
-```
-mame2003_skip_disclaimer = "enabled"
-```
+The copyright warning should be hidden by default, but can be controlled via the **Core Option** **Skip Disclaimer**. See [Setting Core Options](RetroArch-Core-Options#setting-core-options).
 
 ## Skip warnings screen
 
-Games that feature incomplete emulation, or other side-effects will have a warning screen detailing these flaws similar to the 'nag screen' mentioned above. It is recommended to leave this screen visible to understand why a game may have such issues, but it can be controlled via a setting in the `retroarch-core-options.cfg` file, found in:
-```
-/opt/retropie/configs/all/
-```
-The option is:
-```
-mame2003_skip_warnings = "enabled"
-```
+Games that feature incomplete emulation, or other side-effects will have a warning screen detailing these flaws similar to the 'nag screen' mentioned above. It is recommended to leave this screen visible to understand why a game may have such issues, but it can be controlled via the **Core Option** **Skip Warnings**. See [Setting Core Options](RetroArch-Core-Options#setting-core-options).
 
 ## Mouse/Trackball/Analog Controller support
 
@@ -102,48 +80,22 @@ By default, mice/trackballs and analog sticks (the left one, for controllers wit
 
 ## Pointer/Trackpad/Touchscreen support
 
-Absolute pointer devices are supported, but need to be turned on via a setting in the `retroarch-core-options.cfg` file, found in:
-```
-/opt/retropie/configs/all/
-```
-The option is:
-```
-mame2003_mouse_device = "pointer"
-```
+Absolute pointer devices are supported, but need to be turned via the **Core Option** **Mouse Device** from to **pointer**. See [Setting Core Options](RetroArch-Core-Options#setting-core-options).
+
 **NOTE:** This will disable [Mouse support](#mousetrackballanalog-controller-support).
 
 ## 2 player dial/spinner devices
 
-Some (all?) 2 player spinner/dial devices are represented as 1 device with 2 axes. lr-mame2003 can be configured to share this device across both players: Player 1 = X axis, Player 2 = Y axis. This can be enabled via a setting in the `retroarch-core-options.cfg` file, found in:
-```
-/opt/retropie/configs/all/
-```
-The option is:
-```
-mame2003_dialsharexy = "enabled"
-```
+Some (all?) 2 player spinner/dial devices are represented as 1 device with 2 axes. lr-mame2003 can be configured to share this device across both players: Player 1 = X axis, Player 2 = Y axis. This can be enabled via the **Core Option** **Dial Share x/y**. See [Setting Core Options](RetroArch-Core-Options#setting-core-options).
 
 ## Dual stick games
 
-The right analog stick can now be used a second joystick. This is enabled by default, via a setting in the `retroarch-core-options.cfg` file, found in:
-```
-/opt/retropie/configs/all/
-```
-The option is:
-```
-mame2003_rstick_to_btns = "enabled"
-```
+The right analog stick can now be used a second joystick. This is enabled by default, via the **Core Option** **Right Stick to Buttons**. See [Setting Core Options](RetroArch-Core-Options#setting-core-options).
 
 ## TATE mode
 
-For users who have a rotatable display, this mode shows vertical games (e.g. Pac-Man, Centipede, Galaga, etc) at their original aspect ratio, and will display along the length of the screen with the right configuration. This is disabled by default, but can be enabled via a setting in the `retroarch-core-options.cfg` file, found in:
-```
-/opt/retropie/configs/all/
-```
-The option is:
-```
-mame2003_tate_mode = "enabled"
-```
+For users who have a rotatable display, this mode shows vertical games (e.g. Pac-Man, Centipede, Galaga, etc) at their original aspect ratio, and will display along the length of the screen with the right configuration. This is disabled by default, but can be enabled via **Core Options** **TATE Mode**. See [Setting Core Options](RetroArch-Core-Options#setting-core-options).
+
 In addition to this, you will want to stop rotating the games and instead show them in along the length of the screen, `video_allow_rotate` in mame-libretro/arcade to false via the [Configuration Editor](Configuration-Editor.md).
 
 ## Save states
@@ -157,11 +109,8 @@ They need to be in the old MAME format (a `.zip` file containing images and an `
 
 Once you have copied the files to the right location, you can go into RGUI -> Quick Menu -> Options -> Display artwork and set it to enabled. You will have to exit the emulator altogether and launch the game, but it will save the preference for artwork for all games.
 
-This setting and the artwork resolution setting are saved in ```/opt/retropie/configs/all/retroarch-core-options.cfg``` as 
-```
-mame2003_display_artwork = "enabled"
-mame2003_art_resolution = "1"
-```
+This setting and the artwork resolution settings are the **Core Options** **Display Artwork** and **Art Resolution**. See [Setting Core Options](RetroArch-Core-Options#setting-core-options).
+
 In lr-mame you cannot use ```-nobezel``` on a command line to selectively show only the backdrop and not the bezel, in case you wanted to use overlays for bezels, cf https://retropie.org.uk/forum/topic/21495/passing-rom-specific-command-line-options-to-mame-through-retroarch.
 
 Unlike Retroarch overlays, MAME backdrops and bezels *are* affected by custom settings (RGUI -> Settings -> Video) because they are drawn within the core, not on top of it like overlays are.
