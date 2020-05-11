@@ -176,7 +176,7 @@ You will need a keyboard to press Escape on to access the emulator's menu so tha
 
 A common issue people using RetroPie have with PSX emulation is their analog sticks do not work. The reason for this is related to a default lr-pcsx_rearmed core setting, and there is a very good reason the setting is the way it is that we will get into later.
 
-Change the **Core Options** for **Pad 1 Type** and **Pad 2 Type** from **standard** to **dualshock**. See [Setting Core Options](RetroArch-Core-Options#setting-core-option).
+Change the **Core Options** for **Pad 1 Type** and **Pad 2 Type** from **standard** to **dualshock**. See [Setting Core Options](RetroArch-Core-Options#setting-core-options).
 
 After the previous two settings have been changed, back out to the Quick Menu so that you can enter the Controls section. In Controls, you need to change all controllers from "RetroPad" to "RetroPad w/ Analog", then use the "Save Core Remap File" function to save this setting as a default for all games.
 
