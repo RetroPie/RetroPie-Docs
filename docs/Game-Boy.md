@@ -90,93 +90,45 @@ ln -s "Pokemon Blue.srm" "Pokemon Red.srm"
 
 The above example takes an existing Blue save and makes an imaginary Red save.
 
-## How to change the color palette
+## Changing colour palette
 
-Open the RetroArch RGUI by pressing **Select+X** on the controller, or **Hotkey+F1** on the keyboard then navigate to:
+Change the **Core Option** for **GB Colorization** to **Internal** and then change **Internal Palette* to your preference. See [Setting Core Options](RetroArch-Core-Options#setting-core-options).
 
-* Quick Menu
-    * Core Options
-        * Change `GB Colorization` to `internal` by pressing left or right
-        * Select an `Internal Palette` with left and right
-
-Press **B** to go back to the Quick Menu and **Resume Content**.
-
-It's also possible to edit `/opt/retropie/configs/all/retroarch-core-options.cfg` and set the palette like:
-
-~~~
-gambatte_gb_colorization = "internal"
-gambatte_gb_internal_palette = "GBC - Grayscale"
-~~~
-
-The complete list of palettes can be found in the emulator core source:
-
-~~~
-GBC - Blue
-GBC - Brown
-GBC - Dark Blue
-GBC - Dark Brown
-GBC - Dark Green
-GBC - Grayscale
-GBC - Green
-GBC - Inverted
-GBC - Orange
-GBC - Pastel Mix
-GBC - Red
-GBC - Yellow
-Special 1
-Special 2
-Special 3
-~~~
-
-https://github.com/libretro/gambatte-libretro/blob/master/libgambatte/libretro/libretro.cpp
-
-## How to Add a Custom Palette
+## Custom Palettes
 
 You may also add custom palettes by adding your new .pal file to 
 ~~~
 /home/pi/RetroPie/BIOS/palettes
 ~~~ 
-Set the following value in `/opt/retropie/configs/all/retroarch-core-options.cfg` gambatte_gb_colorization = "custom"
+To select, change the **Core Option** for **GB Colorization** to **custom**. See [Setting Core Options](RetroArch-Core-Options#setting-core-options).
 
 You can define different palettes for specific games by creating a .pal file in the "palettes" folder with "INTERNALROMNAME.pal" or "rom-name.pal". If no specific palette is found for a ROM then the default palette is used.
 
-You may also use the Retroarch RGUI to accomplish this as well by following the steps below once you have added a custom palette. 
-
-Open the RetroArch RGUI by pressing **Select+X** on the controller, or **Hotkey+F1** on the keyboard then navigate to:
-
-* Quick Menu
-    * Core Options
-        * Change `GB Colorization` to `custom` by pressing left or right
-        * Select an `Internal Palette` with left and right
-
-Press **B** to go back to the Quick Menu and **Resume Content**.
-
-To make the change permanent, choose **Save Configuration** on the main RGUI menu.
-
-## Playing two-player link cable games
+## Two-player link cable games
 
 To play two-player link cable games with lr-tgbdual no further configuration needs to be done. The only thing needed of course are two controllers. Two synced game screens will be displayed side-by-side by default. Player one is able to control the left screen, while player two controls the right.
 
 To play two-player link cable games with lr-gambatte, two RetroPie systems in the same network are needed.
-Make the following changes to `/opt/retropie/configs/all/retroarch-core-options.cfg` :
+Change the following **Core Options** to the values below (see [Setting Core Options](RetroArch-Core-Options#setting-core-options)):
 
 System 1 (Server, e.g. 192.168.0.1):
-~~~
-gambatte_gb_link_mode = "Network Server"
-gambatte_gb_link_network_port = "56400"
-gambatte_gb_link_network_server_ip_octet1 = "0"
-gambatte_gb_link_network_server_ip_octet2 = "0"
-gambatte_gb_link_network_server_ip_octet3 = "0"
-gambatte_gb_link_network_server_ip_octet4 = "0"
-~~~
+| Core Option | Value |
+| :---: | :---: |
+| Link Mode | Network Server |
+| Network Port | 56400 |
+| Network Server IP Octet1 | 0 |
+| Network Server IP Octet2 | 0 |
+| Network Server IP Octet3 | 0 |
+| Network Server IP Octet4 | 0 |
 
 System 2 (Client):
-~~~
-gambatte_gb_link_mode = "Network Client"
-gambatte_gb_link_network_port = "56400"
-gambatte_gb_link_network_server_ip_octet1 = "192"
-gambatte_gb_link_network_server_ip_octet2 = "168"
-gambatte_gb_link_network_server_ip_octet3 = "0"
-gambatte_gb_link_network_server_ip_octet4 = "1"
-~~~
+| Core Option | Value |
+| :---: | :---: |
+| Link Mode | Network Client |
+| Network Port | 56400 |
+| Network Server IP Octet1 | 192 |
+| Network Server IP Octet2 | 168 |
+| Network Server IP Octet3 | 0 |
+| Network Server IP Octet4 | 1 |
+
 To begin the network game first start the game on system 1 and then join system 2.
