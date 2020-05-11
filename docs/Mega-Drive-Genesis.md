@@ -55,7 +55,7 @@ The Genesis/Mega Drive had a 6 button controller released, with 3 extra buttons 
 
 You can save a Core Remap File which reloads every time the emulator is launched.
 
-Launch a Megadrive game and go into the RetroArch menu (default mapping: **Select + X**).
+Launch a Mega Drive/Genesis game and go into the RetroArch menu (default mapping: **Select + X**).
 
 Go to **Quick Menu -> Input Options** and set the User 1 Device Type and User 2 Device Type to **MD Joypad 6 Button**.
 
@@ -69,15 +69,15 @@ Change the **Core Options** for **Pad 1 Type** and **Pad 2 Type** from **standar
 
 This will also take effect on any other system which you may use lr-picodrive for (eg. Sega 32X, Sega CD).
 
-### 3 Button Genesis/MegaDrive Controller
+### Mega Drive/Genesis Controller
 
 ![genesis](https://cloud.githubusercontent.com/assets/10035308/7336303/aec335e0-ebb4-11e4-93b3-26037dd26ffb.png)
 
-### 6 Button Genesis/MegaDrive Wireless Controller
+### Mega Drive/Genesis Wireless Controller
 
 ![sega_megadrive_6button_diagram](https://cloud.githubusercontent.com/assets/10035308/16599642/7f43e53a-42c0-11e6-9152-c33099878ccc.png)
 
-### 6 Button Genesis/MegaDrive ArcadePad Controller
+### Mega Drive ArcadePad Controller
 
 ![sega_megadrive_6button_arcadepad_diagram](https://cloud.githubusercontent.com/assets/10035308/16599641/7f43ae62-42c0-11e6-924a-50ca4e44f401.png)
 
@@ -98,11 +98,11 @@ joy_quit = joystick0-button12
 
 ### Switching Emulation Station to the Genesis logo:
 
-If you are from the United States it is likely that you had the Sega Genesis rather than the Sega Megadrive. If you want EmulationStation to show the genesis graphics instead of megadrive then you should create a file `/opt/retropie/configs/all/platforms.cfg` with the following contents (note this requires at least v4.1.6 of the RetroPie-Setup script).
+If you are from the United States it is likely that you had the Sega Genesis rather than the Sega Mega Drive. If you want EmulationStation to show the genesis graphics instead of Mega Drive then you should create a file `/opt/retropie/configs/all/platforms.cfg` with the following contents (note this requires at least v4.1.6 of the RetroPie-Setup script).
 
 ```
 megadrive_theme="genesis"
 megadrive_platform="genesis"
 ```
 
-Once this is done, please update any of the currently installed megadrive emulators from RetroPie-Setup and Emulation Station will now use the Genesis logo. Scraping from within Emulation Station should also return Genesis artwork.
+Once this is done, please update any of the currently installed Mega Drive emulators from RetroPie-Setup and Emulation Station will now use the Genesis logo. Scraping from within Emulation Station should also return Genesis artwork.
