@@ -8,12 +8,7 @@ By default, if you hold the Start button for a few seconds, the ROM system menu 
 
 ## Dipswitches
 
-*lr-fbneo* exposes all the dipswitch options of any given game to libretro, allowing you to adjust them via the RetroArch GUI. Hold hotkey (by default, Select) & X (the top button) to access the GUI, and then **Quick Menu** > **Options**. You should be presented by a menu where you can enable/disable the various dipswitches.
-
-The dipswitches available will vary from game-to-game. Any changes made will be stored in the `retroarch-core-options.cfg` file, found in:
-```
-/opt/retropie/configs/all/
-```
+*lr-fbneo* exposes all the dipswitch options of any given game as **Core Options**. See [Setting Core Options](RetroArch-Core-Options#setting-core-options). The dipswitches available will vary from game-to-game.
 
 ## High scores
 
@@ -44,9 +39,9 @@ Some sound effects in a few older (typically pre-1986) arcade games are difficul
 ```
 
 ## Neo Geo UNIBIOS
-For Neo Geo games, you may want to use the [UNIVERSE BIOS/UNIBIOS](http://unibios.free.fr/) - an advanced Neo Geo bios that allows region selection, cheats, dip-switch control, and more. To activate, start a Neo Geo game, hold hotkey (by default, Select) & X (the top button) to access the GUI, and then **Quick Menu** > **Options** > Change **Neo Geo mode** to **UNIBIOS**.
+For Neo Geo games, you may want to use the [UNIVERSE BIOS/UNIBIOS](http://unibios.free.fr/) - an advanced Neo Geo bios that allows region selection, cheats, dip-switch control, and more. To active, change the **Core Option** for **Neo Geo mode** to **UNIBIOS**. See [Setting Core Options](RetroArch-Core-Options#setting-core-options).
 
-Note that this will automatically use the latest version of the UNIBIOS avaialble in your `neogeo.zip`. If you want to select a specific version, use the **BIOS** core option, however note that this setting applies per-game, rather than system-wide, like the **Neo Geo mode** setting.
+Note that this will automatically use the latest version of the UNIBIOS avaialble in your `neogeo.zip`. If you want to select a specific version, use the **BIOS** Core Option, however note that this setting applies per-game, rather than system-wide, like the **Neo Geo mode** setting.
 
 Use the **B** button to go back to the **Quick Menu** and select **Restart Content** then **Resume Content**. You should see the Unibios boot screen before the usual "Max 330 Mega Pro-Gear Spec" screen.
 
@@ -58,15 +53,7 @@ The Neo Geo system infamously has several games in its library that push the sys
 
 > **Note:** This may have undesired effects such as increasing the music or game speed.
 
-To do this, adjust the `CPU overclock` core option via the RetroArch GUI (accessed be **Hotkey** + **X**). By raising the number beyond 100, you increase the CPU speed. Alternatively this can be adjusted via a setting in the `retroarch-core-options.cfg` file, found in:
-```
-/opt/retropie/configs/all/
-```
-The option is:
-```
-fbneo-cpu-speed-adjust = 100
-```
-(raise it in increments of 10, with a maximum of 200)
+Change the **Core Option** for **CPU overclock**. See [Setting Core Options](RetroArch-Core-Options#setting-core-options). By raising the number beyond 100, you increase the CPU speed.
 
 ## Feature requests
 
