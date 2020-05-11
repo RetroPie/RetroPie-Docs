@@ -47,15 +47,11 @@ Add custom retroarch controls to the retroarch.cfg file in
 ```
 For more information on custom RetroArch controls see: [RetroArch Configuration](RetroArch-Configuration)
 
-### Configuring a 6 button controller
+### 6 button controller
 
-First you need to tell retroarch to use 6 buttons, because the default is to use 3.
+The Genesis/Mega Drive had a 6 button controller released, with 3 extra buttons (X, Y, Z) placed above the normal 3 (A, B, C). A small subset of games do not function with the 6 button controller, but the vast majority do. To emulate the 6 button controller, do the following:
 
 #### lr-genesis-plus-gx
-
-There are two ways to achieve this, most people will want to use Option 1:
-
-##### Option 1 - RetroArch Menu
 
 You can save a Core Remap File which reloads every time the emulator is launched.
 
@@ -67,41 +63,11 @@ Scroll down on the same page and select **Save Core Remap File*.
 
 This will save a core remap file (`.rmp`) to a folder called "Genesis Plus GX" in the `/opt/retropie/configs/megadrive` folder. By default this remap file will load every time the emulator is launched.
 
-##### Option 2 - Config file edit
-
-Edit the file `/opt/retropie/configs/megadrive/retroarch.cfg` and add:
-
-~~~
-input_libretro_device_p1 = "513"
-input_libretro_device_p2 = "513"
-~~~
-
-This will set the controller type to a 6 button pad, and will reload this configuration every time the emulator is launched.
-
 #### lr-picodrive
 
-There are two ways to achieve this, most people will want to use Option 1:
+Change the **Core Options** for **Pad 1 Type** and **Pad 2 Type** from **standard** to **dualshock**. See [Setting Core Options](RetroArch-Core-Options#setting-core-options).
 
-##### Option 1 - RetroArch Menu
-
-Launch a Megadrive game and go to the Retroarch menu (default mapping: **Select + X**).
-
-Go to **Quick Menu -> Options** and set the two input devices to **6 button pad**.
-
-Exit the Retroarch menu.
-
-Once you quit the game, the configuration will be saved within the `/opt/retropie/configs/all/retroarch-core-options.cfg` file. You do not need to edit this file.
-
-These core options will also take affect on any other system which you may use lr-picodrive for (eg. Sega 32X, Sega CD).
-
-##### Option 2 - Config file edit
-
-If you don't have access to the Quick Menu (due to misconfigured controls or some other reason), then edit the `/opt/retropie/configs/all/retroarch-core-options.cfg` file and add:
-
-~~~
-picodrive_input1 = "6 button pad"
-picodrive_input2 = "6 button pad"
-~~~
+This will also take effect on any other system which you may use lr-picodrive for (eg. Sega 32X, Sega CD).
 
 ### 3 Button Genesis/MegaDrive Controller
 
