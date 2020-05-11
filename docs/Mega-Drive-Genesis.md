@@ -34,8 +34,6 @@ Place your bios_MD.bin BIOS file in
 ```
 ## Controls
 
-There are two methods for configuring controls - one way for both lr-genesis-plus-gx and lr-picodrive, and another way for DGen.
-
 ### lr-genesis-plus-gx and lr-picodrive
 
 lr-genesis-plus-gx and lr-picodrive utilise RetroArch configurations
@@ -53,15 +51,7 @@ The Genesis/Mega Drive had a 6 button controller released, with 3 extra buttons 
 
 #### lr-genesis-plus-gx
 
-You can save a Core Remap File which reloads every time the emulator is launched.
-
-Launch a Mega Drive/Genesis game and go into the RetroArch menu (default mapping: **Select + X**).
-
-Go to **Quick Menu -> Input Options** and set the User 1 Device Type and User 2 Device Type to **MD Joypad 6 Button**.
-
-Scroll down on the same page and select **Save Core Remap File*.
-
-This will save a core remap file (`.rmp`) to a folder called "Genesis Plus GX" in the `/opt/retropie/configs/megadrive` folder. By default this remap file will load every time the emulator is launched.
+Save a **Core Input Remap** in the same manner as [Core Input Remapping](RetroArch-Configuration#core-input-remapping), with **User 1 Device Type** and **User 2 Device Type** set to **MD Joypad 6 Button**.
 
 #### lr-picodrive
 
