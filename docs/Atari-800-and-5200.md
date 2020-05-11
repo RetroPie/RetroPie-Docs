@@ -91,11 +91,11 @@ Then press Escape a few times to go back to the 'Emulator Configuration' section
 
 Then you can exit the emulator by pressing F9 and then try the game again or press Shift+F5 to reboot the game.
 
-You can set per-game core option settings by creating a game-options file through RetroArch's Core Options menu.
+To set per-ROM **Core Options**, see [Setting Core Options per-ROM](RetroArch-Core-Options#setting-core-options-per-rom).
 
 ### Options
 
-The Atari800 core has the following options that can be tweaked from the core options menu. The default setting is bolded. Settings with (Restart) means that core has to be closed for the new setting to be applied on next launch.
+The Atari800 core has the following **Core Options** (see [Setting Core Options](RetroArch-Core-Options#setting-core-options)). Settings with (Restart) means that core has to be closed for the new setting to be applied on next launch.
 
 | Option | Choices | Description |
 | :---: | :---: | :---: |
@@ -497,24 +497,6 @@ In Atari800, you can select which of these to boot into using command line switc
 -xegame-rev auto|orig|custom                          Select XEGS builtin game version
 ``` 
 
-In lr-atari800, Retroarch has hardcoded these choices into the Options menu. These are saved in 
-
-```shell
-/opt/retropie/configs/all/retroarch-core-options.cfg
-```
-where the options are
-
-```shell
-400/800 (OS B)
-800XL (64K)
-130XE (128K)
-5200
-```
-
-and the option line is 
-
-```shell
-atari800_system = "800XL (64K)"
-```
+In lr-atari800, Retroarch has these choices within the **Core Option** **System**: 400/800 (OS B), 800XL (64K), 130XE (128K) and 5200. See [Setting Core Options](RetroArch-Core-Options#setting-core-options).
 
 Note that since core options override the emulator's own config file, but Retroarch doesn't cover all the sub-options, you can set different versions of BASIC or different BIOSes for the supported systems via the emulator menu.
