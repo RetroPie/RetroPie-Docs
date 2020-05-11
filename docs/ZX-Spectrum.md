@@ -53,12 +53,7 @@ The default joystick emulated by lr-fuse is the Cursor joystick. If you wish to 
 
 Some ZX Spectrum games require a 16K machine (e.g. Deathchase) or will run only on a 48K machine, for example, titles from Ultimate Play The Game such as Atic Atac and Jetpac.
 
-By default, lr-fuse runs the 128K machine but it is possible to load the 48K machine on launch in the RetroArch Core options.
-
-1. Launch the game for which you wish to run on a 48K machine. 
-2. The game will not load but launch the RGUI by pressing hotkey+X and navigate to `Quick menu` -> `Options`. 
-3. Set `Model (needs content load)` to `48K` and then select `Game-options file`. This will save the setting to a game specific options file. 
-4. Exit lr-fuse and when you re-launch, the game should run.
+By default, lr-fuse emulates the 128K machine but it is possible to emulate a given ROM in a 48K machine via loading the ROM, changing the **Core Option** per-ROM for **Model (needs Content file)** to **48k** (see [Setting Core Options per-ROM](RetroArch-Core-Options#setting-core-options-per-rom)), then exiting and re-loading the ROM. 
 
 ### Joypad to Keyboard Mapping
 Thanks to forum member @pjft's [contribution](https://retropie.org.uk/forum/topic/16753/lr-fuse-joypad-to-keyboard-mapping) to lr-fuse, it is possible to play ZX Spectrum games without a need for a keyboard. This is useful for games that don't support joysticks such as Chuckie Egg and for games that require keyboard input in addition to a joystick (e.g. Head Over Heels).
