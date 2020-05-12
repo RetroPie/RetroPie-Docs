@@ -7,7 +7,9 @@ _Xrick is a port of Rick Dangerous_
 
 It can be installed from the experimental menu
 
-Game data is provided with the port
+Now the game data is not provided with the port, it is necessary to download the data.zip file
+http://www.bigorno.net/xrick/download.html
+And paste to /home/pi/RetroPie/ports/xrick/ 
 
 ## Controls
 
