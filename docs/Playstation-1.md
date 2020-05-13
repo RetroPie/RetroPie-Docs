@@ -217,8 +217,6 @@ lr-pcsx_rearmed has support for multitap, but not all games read input when a mu
 
 ### lr-pcsx_rearmed
 
-lr-pcsx_rearmed
-
 #### Performance - PSX CPU Clock
 
 The clock speed percentage of the emulated PSX hardware's CPU can be adjusted by the user. While the default setting of **57** is decent, it does cause some games to exceed their intended framerate and the setting of **55** is recommended to reduce this from happening in more games. Some games, such as "Final Fantasy 7" and "Final Fantasy Tactics", may need even lower CPU speeds. See [Setting Core Options per-ROM](RetroArch-Core-Options#setting-core-options-per-rom).
