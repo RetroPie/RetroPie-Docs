@@ -17,15 +17,15 @@ Rather than running everything from an SD card, it can be desirable to store and
 There are a number of ways you can achieve this, but the following method is desirable as it fully integrates the USB drive with the existing directory structure, rather than requiring you to tweak configuration files so RetroPie is looking for ROMs in a different place. Below there are two ways to accomplish this: an automated method, or a manual method.
 
 ### Format USB drive
-Either on linux, or on a PC, format the USB drive to FAT32 (used in this guide as it is the most compatible across different operating systems).
 
--  [Instructions to format on Linux](https://ksearch.wordpress.com/2010/09/29/format-usb-in-linux/)
--  [Instructions to format on Windows (various)](http://www.makeuseof.com/tag/format-large-hard-drive-fat-fat32/)
--  [Instructions to format on OSX](http://qsee.custhelp.com/app/answers/detail/a_id/2560/~/mac%3A-how-to-format-a-flash-drive-to-fat32-in-mac-os-x)
+Either on linux, or on a PC, format the USB drive to FAT32 (used in this guide as it is the most compatible across different operating systems):
+*  [Instructions to format on Linux](https://ksearch.wordpress.com/2010/09/29/format-usb-in-linux/)
+*  [Instructions to format on Windows (various)](http://www.makeuseof.com/tag/format-large-hard-drive-fat-fat32/)
+*  [Instructions to format on OSX](http://qsee.custhelp.com/app/answers/detail/a_id/2560/~/mac%3A-how-to-format-a-flash-drive-to-fat32-in-mac-os-x)
 
 ## Automatic Mount (Easiest Method)
 
-As of December 30, 2016 a simple automated method was added to run roms from a USB drive. Before proceeding, make sure the `usbromservice` (Optional packages section) is installed and enabled, especially if you have installed RetroPie manually.
+Before proceeding, make sure the `usbromservice` (Optional packages section) is installed and enabled, especially if you have installed RetroPie manually.
 
 1. Create a folder called `retropie-mount` on the USB drive
 2. Plug into Raspberry Pi
