@@ -101,9 +101,14 @@ Final Fantasy VII (USA) (Disc 3).CD3
 
 ## BIOS
 
-### lr-pcsx_rearmed
+Place BIOS in
+```
+/home/pi/RetroPie/BIOS
+```
 
-While lr-pcsx_rearmed has an emulated BIOS to fall back on, it has limited compatibility so most games will have issues running with it (others will not work at all), and all games that use memory card saves are prone to save corruption. It should be considered mandatory to manually install an official BIOS.
+While both **lr-pcsx_reamrmed** and **PCSX-ReARMed** have an emulated BIOS to fall back on, it has limited compatibility so most games will have issues running with it (or not work at all), and all games that use memory card saves are prone to save corruption. It should be considered mandatory to manually install an official BIOS.
+
+### lr-pcsx_rearmed
 
 The following BIOS are supported: 
 
@@ -114,17 +119,11 @@ The following BIOS are supported:
 | scph5501.bin | ps-30a.bin | 8D8CB7E4 | 490F666E1AFB15B7362B406ED1CEA246
 | scph1001.bin | ps-22a.bin | 37157331 | 924E392ED05558FFDB115408C263DCCF
 
-Place BIOS in
-```
-/home/pi/RetroPie/BIOS
-```
 If more than one of the BIOS above is provided, then the latest revision of the BIOS available is automatically chosen.
 
 The recognized name can be all uppercase OR all lowercase.
 
 ### PCSX-ReARMed
-
-Whilst PCSX-ReARMed has an emulated BIOS to fall back on, this has limited compatibility meaning most games will have issues running with it, others will not work at all, and all games that use memory card saves are prone to save corruption. It should be considered mandatory to manually install an official BIOS.
 
 The following BIOS is supported:
 
