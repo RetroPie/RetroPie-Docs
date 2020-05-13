@@ -15,9 +15,7 @@ It can also be accessed from the terminal with `sudo ~/RetroPie-Setup/retropie_s
 
 ## Using the RetroPie Setup Script
 
- * If updating from 3.x and earlier: Select **Update RetroPie-Setup Script** and then **Update All Installed Packages**
-
- *  If updating from 4.x and later: Select **Update All Installed Packages**
+ * Select **Update All Installed Packages**
 
 ![setup_script](https://cloud.githubusercontent.com/assets/10035308/17758599/fb76e94a-64ad-11e6-8dc6-e8ca545e2630.png)
 
