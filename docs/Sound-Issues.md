@@ -37,7 +37,9 @@ Once you've made the change, save the file, restart your Raspberry Pi, and move 
 
 
 ##### Using the built-in HDMI Audio
-If you have a standard RPi and want to send audio over the HDMI connector then it should just work. In some instances though, you will need to manually modify the raspberry pi boot config file (`sudo nano /boot/config.txt`) and ADD the following lines to those already there: 
+If you have a standard RPi and want to send audio over the HDMI connector then it should just work. In some instances though, you will need to manually modify the Raspberry Pi's boot config file. Please also note that only HDMI0 of Raspberry Pi 4's two HDMI ports has audio out.
+
+To edit the Rapsberry Pi's boot config file, do `sudo nano /boot/config.txt` and ADD the following lines to those already there: 
 
 ````
 # forces HDMI mode
