@@ -26,9 +26,9 @@ This page is a resource for additional details on RetroPie's MAME emulators incl
 | [AdvanceMAME 1.4](#advancemame-14) | arcade **or** mame-advmame | .zip | MAME 0.106 | /opt/retropie/configs/mame-advmame/advmame-1.4.rc |
 | [AdvanceMAME 3](#advancemame-3) | arcade **or** mame-advmame | .zip | MAME 0.106 | /opt/retropie/configs/mame-advmame/advmame.rc |
 
-## Arcade ROM paths
+## MAME ROM paths
 
-Five of the available arcade ROM paths in RetroPie are shared directories which are used by more than one emulator: `arcade`, `mame-libretro`, `mame-advmame`, `fba`, and `neogeo`. In order to successfully load zipped ROM sets in these locations you must specify the arcade emulator version which matches your ROMs.
+Three of the available MAME ROM paths in RetroPie are shared directories which are used by more than one emulator: `arcade`, `mame-libretro`, `mame-advmame`. In order to successfully load zipped ROM sets in these locations you must specify the arcade emulator version which matches your ROMs.
 
 To avoid having several menus for different arcade emulators, all arcade-based ROMs can be placed in the `arcade` ROM folder, but you will have to specify which emulator each zipped ROM set will use from the [Runcommand Menu](Runcommand).
 
