@@ -61,7 +61,7 @@ Config Dir: /opt/retropie/configs/mame-mame4all
 
 **[MAME4ALL-PI Compatibility List](https://docs.google.com/spreadsheets/d/1SHspjyHavY9-PKbO2swDr52BS2Wl_mB_Vjx2Z1SXiD8/edit?usp=sharing)** feel free to contribute to the list.
 
-**Controls**
+#### Controls
 
 While in a game press Tab to open the menu to set up controls. The MAME4ALL tab menu configuration is stored in:
 ```shell 
@@ -92,7 +92,7 @@ Config Dir: /opt/retropie/configs/mame-mame4all/retroarch.cfg
 
 **[lr-mame2000 Compatibility List](https://docs.google.com/spreadsheets/d/1Fmx2RPcgVgIIeKpaBKNEGWCDuu3DGfR-VkrnIVsIpeE/edit?usp=sharing)** feel free to contribute to the list.
 
-**Controls**
+#### Controls
 
 lr-mame2000 utilises [RetroArch control configuration](RetroArch-Configuration). Add custom retroarch controls to the retroarch.cfg file in:
 ```shell
@@ -128,7 +128,7 @@ Config Dir: /opt/retropie/configs/mame-libretro/retroarch.cfg
 
 **[The mame2003 catver.ini](https://github.com/libretro/mame2003-libretro/blob/master/metadata/catver.ini)** also contains data on games definitively known not to work, as well as sorting data for pornographic games and other less desirable romsets.
 
-**Controls**
+#### Controls
 
 lr-mame2003 utilises [RetroArch control configurations](RetroArch-Configuration). Add custom retroarch controls to the retroarch.cfg file in:
 ```shell
@@ -161,7 +161,7 @@ Config Dir: /opt/retropie/configs/mame-libretro/retroarch.cfg
 
 **[The mame2003-plus catver.ini](https://github.com/libretro/mame2003-plus-libretro/blob/master/metadata/catver.ini)** also contains data on games definitively known not to work, as well as sorting data for pornographic games and other less desirable romsets.
 
-**Controls**
+#### Controls
 
 lr-mame2003-plus utilises [RetroArch control configurations](RetroArch-Configuration). Add custom retroarch controls to the retroarch.cfg file in:
 ```shell
@@ -188,7 +188,7 @@ Config Dir: /opt/retropie/configs/mame-libretro/retroarch.cfg
 
 **[lr-mame2010 Compatibility List](https://docs.google.com/spreadsheets/d/1IRSmFrSDvIc6gAw0gn12TcQ3HDOwmrETTor8wvvb7VI/edit?usp=sharing)** feel free to contribute to the list.
 
-**Controls**
+#### Controls
 
 lr-mame2010 utilises [RetroArch control configurations](RetroArch-Configuration). Add custom retroarch controls to the retroarch.cfg file in:
 ```shell
@@ -252,7 +252,7 @@ Config Dir: /opt/retropie/configs/mame-libretro/retroarch.cfg
 
 **MAME 0.160 DAT File**: Coming soon
 
-**Controls**
+#### Controls
 
 lr-mame2015 utilises [RetroArch control configurations](RetroArch-Configuration). Add custom retroarch controls to the retroarch.cfg file in:
 ```shell
@@ -282,7 +282,7 @@ Config Dir: /opt/retropie/configs/mame-libretro/retroarch.cfg
 
 **lr-mame2016 Compatibility List**: Coming soon
 
-**Controls**
+#### Controls
 
 lr-mame2016 utilises [RetroArch control configurations](RetroArch-Configuration). Add custom retroarch controls to the retroarch.cfg file in:
 ```shell
@@ -308,7 +308,7 @@ Config Dir: /opt/retropie/configs/mame-advmame
 
 **[AdvanceMAME 0.94 Compatibility List](https://docs.google.com/spreadsheets/d/1AEQ94buG0rvbW0xdnYKeuEhHeCbuZlRfRJQCb1Dt8fw/edit?usp=sharing)** feel free to contribute to the list.
 
-**Controls**
+#### Controls
 
 While in a game press Tab to open the menu to set up controls. AdvanceMAME configuration for controls are all stored in the .rc file corresponding to the version of AdvanceMAME you are running. Changes to specific games result in .rc file entries with a prefix for the ROM (i.e. ```bwidow/input_map[p1_doubleleft_up] keyboard[0,up]```)
 
@@ -334,7 +334,7 @@ Config Dir: /opt/retropie/configs/mame-advmame
 
 **[AdvanceMAME 1.4 Compatibility List](https://docs.google.com/spreadsheets/d/1RapyxChe2BMOfbX-FsCup9SXGxvS1WmXAofwaTJtmxc/edit?usp=sharing)** feel free to contribute to the list.
 
-**Controls**
+#### Controls
 
 While in a game press Tab to open the menu to set up controls. AdvanceMAME configuration for controls are all stored in the .rc file corresponding to the version of AdvanceMAME you are running. Changes to specific games result in .rc file entries with a prefix for the ROM (i.e. ```bwidow/input_map[p1_doubleleft_up] keyboard[0,up]```)
 
@@ -360,7 +360,7 @@ Config Dir: /opt/retropie/configs/mame-advmame
 
 **AdvanceMAME 3 Compatibility List**: same as AdvanceMAME 1.4 -- see above
 
-**Controls**
+#### Controls
 
 While in a game press Tab to open the menu to set up controls. AdvanceMAME configuration for controls are all stored in the .rc file corresponding to the version of AdvanceMAME you are running. Changes to specific games result in .rc file entries with a prefix for the ROM (i.e. ```bwidow/input_map[p1_doubleleft_up] keyboard[0,up]```)
 
