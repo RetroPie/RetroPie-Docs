@@ -15,19 +15,15 @@ _The PlayStation is a 5th generation video game console released by Sony in 1994
 
 ### lr-pcsx_rearmed
 
-The prefered PSX emulator for those on a Raspberry Pi 2-4. The features of RetroArch combined with PCSX-ReARMed's excellent Dynamic Recompiler allow for an adequate PSX emulation experience on the Raspberry Pi, though expect some inaccuracies.
+Recommended for Raspberry Pi 2-4. The features of RetroArch combined with PCSX-ReARMed's excellent Dynamic Recompiler allow for an adequate PlayStation emulation experience, though expect some inaccurate emulation.
 
 ### PCSX-ReARMed
 
-This emulator is advised for those on a Raspberry Pi 0/1 due to the lower system requirements, though expect some inaccurate emulation.
-
-Setting the Runcommand's resolution setting for this emulator to a low 4:3 resolution on the RPi0 or RPi1 is recommended for faster emulation and correct aspect ratio, though 480i (CEA-6) is the lowest recommended 4:3 CEA resolution due to CEA-2 causing visual issues and CEA-1 causing the system to lock up entirely.
+Recommended for Raspberry Pi 0/1 due to its lower system requirements, though expect some inaccurate emulation. Additionally, setting the resolution via [Runcommand](Runcommand) to a low 4:3 resolution is recommended for faster emulation and correct aspect ratio, though 480i (CEA-6) is the lowest recommended 4:3 CEA resolution due to CEA-2 causing visual issues and CEA-1 causing the system to lock up entirely.
 
 ### lr-beetle-psx
 
-This emulator is supplied for people who are running RetroPie on more powerful x86 CPU systems. It is accurate and the best you could ask for when it comes to a PSX core for RetroArch.
-
-lr-beetle-psx is not available for ARM systems (like the Raspberry Pi) due to its poor performance on ARM.
+Recommended for more powerful x86 systems. It is accurate and includes several enhanced graphical features. Not available for ARM systems (like the Raspberry Pi) due to its poor performance on ARM.
 
 ## ROMS
 Accepted File Extensions: **.cue .ccd .chd .exe .iso .m3u .pbp .toc**
@@ -39,7 +35,7 @@ Place your PlayStation ROMs in
 
 ### `.bin` Only ROMs
   
-If you only have a `.bin` ROM and no `.cue` file, you can generate it:
+If you only have a `.bin` ROM and no `.cue` file, generate it via:
 
 -  [Online](http://nielsbuus.dk/pg/psx_cue_maker/) or [Offline](https://github.com/nielsbuus/psx_cue_maker)
 -  [Manually](http://www.shivaranjan.com/2007/01/03/how-to-create-cue-file-for-a-bin-file-in-5-steps/)
@@ -63,20 +59,11 @@ curl -sLO http://archive.ubuntu.com/ubuntu/pool/universe/c/cmdpack/ecm_1.03-1bui
 
 ### CHD files
 
-lr-pcsx_rearmed has support for the CHD (V5) archive format. This is a lossless compression format which can be useful to tidy up multi-.bin ROMs into one file. See [Creating CHDs from CD-ROMS](CHD-files#creating-chds-from-cd-roms).
+All supported PlayStation emulators have support for the CHD (V5) archive format. This is a lossless compression format which can be useful to tidy up multi-.bin ROMs into one file. See [Creating CHDs from CD-ROMS](CHD-files#creating-chds-from-cd-roms).
 
 ### Multi-Disc Games
 
 .pbp format ROMs can package together multiple discs in one file. To change the disc through RetroArch, from the "Quick Menu", enter "Disk Control", use the "Disk Cycle Tray Status" to open the virtual disk tray, change the disk number to the correct one, then use the "Disk Cycle Tray Status" to close the virtual disk tray.
-
-Alternatively, you could add the following hotkeys to your controller's config file in `/opt/retropie/configs/all/retroarch/autoconfig` so that you can change the disc using hotkeys.
-
-```
-input_disk_eject_toggle_btn = "11"
-input_disk_next_btn = "12"
-```
-
-The example above should assign these hotkeys to L3 and R3 on XInput controllers, but should be verified by the user and they can be assigned to any other button like every other hotkey.
 
 #### M3U playlists for .cue & .bins, or .chds
 
