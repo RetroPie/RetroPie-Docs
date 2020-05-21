@@ -164,6 +164,23 @@ to
 ExecStart=-/sbin/agetty --skip-login --noclear --noissue --login-options "-f pi" %I $TERM
 ```
 
+**Hide Autologin Text: (Raspbian 9 "Stretch" and newer)**
+
+`sudo nano /etc/systemd/system/getty@tty1.service.d/autologin.conf`
+
+change
+
+```
+ExecStart=-/sbin/agetty --autologin pi --noclear %I $TERM
+```
+
+to
+
+```
+ExecStart=-/sbin/agetty --skip-login --noclear --noissue --login-options "-f pi" %I $TERM
+```
+
+
 ### How do I boot to the desktop or Kodi?
 
 In retropie setup script>>Configuration / tools>>autostart
