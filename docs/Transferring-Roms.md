@@ -8,16 +8,15 @@ There are three main methods of transferring roms: via USB stick, via SFTP, and 
 
 ### USB stick
 
-1. (ensure that your USB stick is formatted to FAT32 or exFAT, and that your SD card has enough free space to hold all your ROMs)
-2. create a folder called `retropie` on your USB stick
-3. plug it into the RetroPie system and wait for it to finish blinking
-4. pull the USB stick out and plug it into a computer
-5. add the roms to their respective folders (within the `retropie/roms` folder)
-6. plug it back into the RetroPie system
-7. wait for it to finish blinking
-8. you can now remove the USB stick, the ROMs have been transferred from the USB to the SD card.
-9. refresh the game listing in Emulationstation by pressing F4, or choosing 'Restart Emulationstation'/'Restart System' via the start menu.
-10. You can start playing now!
+1. Ensure that the USB stick is formatted to FAT32 or exFAT, and that the SD card has enough free space to hold all ROMs
+2. Create a folder called `retropie` on the USB stick
+3. Plug it into the RetroPie system. If the USB stick has an activity light, wait for it to finish blinking, else wait a few minutes
+4. Remove the USB stick out and plug it into a computer
+5. Add the roms to their respective folders (within the `retropie/roms` folder)
+6. Plug it back into the RetroPie system. If the USB stick has an activity light, wait for it to finish blinking, else wait (with many GBs of ROMs, wait several hours)
+8. Remove the USB stick, the ROMs have been transferred from the USB to the SD card
+9. Refresh the game listing in Emulationstation by pressing F4, or choosing **Restart Emulationstation**/**Restart System** via the start menu
+10. The transferred games should now be visible within Emulationstation. If any are missing, return to step 6
 
 
 ### SFTP
@@ -31,13 +30,13 @@ To use SFTP, you must first [enable SSH](https://www.raspberrypi.org/documentati
 
 To enable SSH from within RetroPie:
 
-1. Navigate to the RetroPie configuration area.
-1. Select `raspi-config`
-1. Select `Interfacing Options`
-1. Select `SSH`
-1. Choose `Yes`
-1. Select `Ok`
-1. Choose `Finish`
+1. Select **Configuration/Tools** within **RetroPie Setup**
+2. Select **raspi-config**
+3. Select **Interfacing Options**
+4. Select **SSH**
+5. Choose **Yes**
+6. Select **Ok**
+7. Choose **Finish**
 
 There are many SFTP programs out there:
 
