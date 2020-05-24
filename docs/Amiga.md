@@ -287,7 +287,7 @@ If no special string is found the core will use the model configured in core opt
 #### .uae: Using a configuration file for your games
 You can pass an '.uae' configuration file as a rom and the core will load the settings and start emulation without first showing the gui. 
 
-Look at the sample configuration file "RickDangerous.uae" for help  (see below). You can use that sample as a starting point for making your own configuration files for each of your games.
+Look at the sample configuration file "Lemmings.uae" for help  (see below). You can use that sample as a starting point for making your own configuration files for each of your games.
 
 You can find the whole documentation in [configuration.txt](https://github.com/libretro/libretro-uae/blob/master/configuration.txt).
 
@@ -299,13 +299,13 @@ floppy0=/home/pi/RetroPie/roms/amiga/[insert ADF filename here]
 
 Files may be `.hdf` or `.adf`. Note that `.m3u` files are not supported.
 
-Below is a sample to use as a template for creating your own .uae file:
+Below is a sample to use as a template for creating your own .uae file. If you want to use more than one floppy disks, you need to activate them via `floppy1type=0`, `floppy2type=0`, etc. 
+
 ```ini
 kickstart_rom_file=/home/pi/RetroPie/BIOS/kick31.rom
-chipmem_size=1
+chipmem_size=2
 bogomem_size=2
 use_gui=no
-nr_floppies=2
 cpu_type=68000
 cpu_speed=real
 cpu_compatible=true
@@ -323,7 +323,9 @@ floppy_speed=100
 gfx_center_vertical=smart
 gfx_center_horizontal=smart
 gfx_color_mode=16
-floppy0=/home/pi/RetroPie/roms/amiga/Rick Dangerous.adf
+floppy1type=0
+floppy0=/home/pi/RetroPie/roms/amiga/Lemmings_1.adf
+floppy1=/home/pi/RetroPie/roms/amiga/Lemmings_2.adf
 ```
 
 ### Resolution and rendering
