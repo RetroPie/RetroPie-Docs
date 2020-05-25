@@ -219,7 +219,7 @@ Instances in-game where vibration occurs may still cause the slowdown even if vi
 
 #### Video - Double Internal Resolution
 
-lr-pcsx_rearmed has a Core Option **Enahance Resolution (Slow)** that improves graphical fidelity by doubling the normal resolution, producing a sharper 3D image, however all 2D bitmaps and texture maps retain their original resolution. It can present some (sometimes game-breaking) visual glitches. It should be used in tandem with the **Enhanced Resolution (Speed Hack)** for best performance, but this can increase the glitches. See [Setting Core Options](RetroArch-Core-Options#setting-core-options).
+lr-pcsx_rearmed has a Core Option **Enhance Resolution (Slow)** that improves graphical fidelity by doubling the normal resolution, producing a sharper 3D image, however all 2D bitmaps and texture maps retain their original resolution. It can present some (sometimes game-breaking) visual glitches. It should be used in tandem with the **Enhanced Resolution (Speed Hack)** for best performance, but this can increase the glitches. See [Setting Core Options](RetroArch-Core-Options#setting-core-options).
 
 On a Pi 2 it can introduce performance issues, even with the speed hak, but on a Pi 3 and up it should be perform better, sometimes even without the speed hack. To disable these options for games which exhibit issues, or to only enable it for games that perform well, see [Setting Core Options per-ROM](RetroArch-Core-Options#setting-core-options-per-rom).
 
