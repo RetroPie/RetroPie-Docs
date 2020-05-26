@@ -1145,6 +1145,6 @@ As of an update to lr-prboom, an issue with the ceiling and floor textures like 
 
 ![](https://user-images.githubusercontent.com/39132563/63890203-740dcf80-c9b0-11e9-8406-e29906b9a22b.png)
 
-This is caused by a bug in lr-prboom. The easiest way to fix it is by going to the internal menu's settings and turning off the `wiggle geometry fix`.
+This is caused by a bug in lr-prboom. This issue is fixed in latest source builds, please update lr-prboom from source if you encounter this issue.
 
 Here is the discussion about the bug: https://github.com/libretro/libretro-prboom/issues/112
