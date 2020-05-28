@@ -4,6 +4,8 @@ N64 emulation on the raspberry pi is difficult due to the pi's under powered GPU
 
 If you are looking for a more perfect N64 emulation experience you should seriously consider different hardware first (i.e. a desktop computer, modern mobile phone/tablet etc.). However, listed below are several tweaks that can be made to your raspberry pi that will help maximize N64 performance and make many of the popular N64 titles playable. 
 
+Alot of games will run perfectly but if the selected game uses the expansion pak it will suffer lag.
+
 ## Hardware and Configuration 
 
 A Raspberry Pi 3 or later model is highly suggested to maximize performance.
