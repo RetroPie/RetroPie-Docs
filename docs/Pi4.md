@@ -4,7 +4,7 @@ Raspberry Pi 4B specific questions, configurations and differences.
 
 ## Which PI 4 model ?
 
-There are currently 3 Raspberry Pi 4 models available, differentiated only by the RAM option - 1Gb, 2Gb or 4Gb. Either of them will be fine for RetroPie, the memory capacity doesn't influence the emulation speed.
+There are currently a few Raspberry Pi 4 models available, differentiated only by the RAM option - 1Gb, 2Gb, 4Gb or 8Gb. Either of them will be fine for RetroPie, the memory capacity doesn't influence the emulation speed.
   
 ## Hardware
 
@@ -103,7 +103,7 @@ Key differences from the previous Raspberry Pi models:
 * new ports/emulators can use the OpenGL 2.1 API.
 
 ### RetroPie changes for  Raspberry Pi 4
-* [Runcommand](Runcommand.md) had extensive changes to implement video resolution switching for KMS/DRM. The option for using a different RetroArch _render resolution_ is no included when KMS/DRM is included, since it relied on [Dispmanx](Dispmanx.md) for scaling the resolution
+* [Runcommand](Runcommand.md) had extensive changes to implement video resolution switching for KMS/DRM. The option for using a different RetroArch _render resolution_ is no included when KMS/DRM is included, since it relied on _the dispmanx_ video driver for scaling the resolution.
 
 * Emulators that used directly the legacy proprietary drivers have been re-compiled for KMS support or disabled on the Pi 4. Some examples:
    - `pcsx_rearmed` - disabled since it's using the legacy GL drivers
