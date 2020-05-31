@@ -14,7 +14,11 @@
 
 ## ROMS
 
-Accepted File Extensions:** .fd** and **.sap** (floppy disks),** .k7** (tapes),** .m5/.m7** and **.rom** (cartridges).
+Accepted File Extensions:
+
+* **.fd** and **.sap** (floppy disks)
+* **.k7** (tapes)
+* **.m5**/**.m7** and **.rom** (cartridges).
 
 Place your MO/TO roms in
 ```
