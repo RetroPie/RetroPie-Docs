@@ -3,7 +3,7 @@ Storing your ROMs on a separate computer (NAS) solves a number of problems and h
 * It's more convenient
 * It negates the need to transfer ROMs to your Raspberry PI MicroSD card
 * Your storage is limited only by the size of your server
-* By reducing the number of times you write to your MicroSD card you minimize the chance at corrupting it
+* By reducing the number of times you write to your MicroSD card you minimize the chance of corrupting it
 
 > **Good to know**: If you are accessing your RetroPie installation over SSH the default Raspbian username is `pi` and the default password is `raspberry`.
 
