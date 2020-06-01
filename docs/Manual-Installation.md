@@ -51,19 +51,19 @@ A reboot is required before these changes will be reflected by the `locale` comm
 
 ### Verify the allocated video memory (memory split)
 
+**NOTE:** The below configurations are not needed when installing on a Raspberry Pi4 model.
+
 Running Emulationstation requires a larger than default GPU memory split. Make sure you reserve enough memory for EmulationStation by modifying the _/boot/config.txt_ configuration file or by using `raspi-config` as described in the [Memory Split](Memory-Split) page.
 
 A reboot is required after any modifications to the video memory allocation.
 
-**NOTE:** The above configurations are not needed when installing on a Raspberry Pi4 model.
-
 ## Install RetroPie
 
-After that, we install the needed packages for the RetroPie setup script:
+Install the needed packages for the RetroPie setup script:
 ```
     sudo apt-get install git lsb-release
 ```
-Then we download the latest RetroPie setup script with
+Download the latest RetroPie setup script with
 ```
     cd
     git clone --depth=1 https://github.com/RetroPie/RetroPie-Setup.git
@@ -74,7 +74,7 @@ The script is executed with
     chmod +x retropie_setup.sh
     sudo ./retropie_setup.sh
 ```
-The screen should look like this then:
+The screen should look like this:
 
 ![4 0beta](https://cloud.githubusercontent.com/assets/10035308/16218285/f06f3ba8-3738-11e6-9ccc-be601172713b.png)
 
