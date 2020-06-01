@@ -14,12 +14,12 @@ Raspbian now automatically expands the filesystem so that step is no longer nece
 
 You can check your free disk space with
 ```
-    df -h
+df -h
 ```
 
 /dev/root is your main partition. Then, I would recommend to update and upgrade the existing APT packages with
 ```
-    sudo apt-get update && sudo apt-get upgrade
+sudo apt-get update && sudo apt-get upgrade
 ```
 
 ### Verify Locale Settings
@@ -43,7 +43,7 @@ LC_IDENTIFICATION="en_US.UTF-8"
 LC_ALL=en_US.UTF-8
 ```
 
-If any of the above configuration lines are unset (particularly LANG, LANGUAGE, and LC_ALL), you should set them before installing RetroPie. The easiest way to set each item is to use the `update-locale` command, such as `$ sudo update-locale LC_ALL="en_US.UTF-8"`.
+If any of the above configuration lines are unset (particularly LANG, LANGUAGE, and LC_ALL), you should set them before installing RetroPie. The easiest way to set each item is to use the `update-locale` command, such as `sudo update-locale LC_ALL="en_US.UTF-8"`.
 
 Users can also set the locale through the `raspi-config` tool.
 
@@ -61,18 +61,18 @@ A reboot is required after any modifications to the video memory allocation.
 
 Install the needed packages for the RetroPie setup script:
 ```
-    sudo apt-get install git lsb-release
+sudo apt-get install git lsb-release
 ```
 Download the latest RetroPie setup script with
 ```
-    cd
-    git clone --depth=1 https://github.com/RetroPie/RetroPie-Setup.git
+cd
+git clone --depth=1 https://github.com/RetroPie/RetroPie-Setup.git
 ```
 The script is executed with
 ```
-    cd RetroPie-Setup
-    chmod +x retropie_setup.sh
-    sudo ./retropie_setup.sh
+cd RetroPie-Setup
+chmod +x retropie_setup.sh
+sudo ./retropie_setup.sh
 ```
 The screen should look like this:
 
@@ -107,7 +107,7 @@ The core components needed for RetroPie to function are:
 
 ### Main / Optional / Experimental
 
-Emulators can be installed and updated individually from the Main, Optional, and Experimental packages.    
+Emulators can be installed and updated individually from the Main, Optional, and Experimental packages.
 
 **NOTE**: If you intend to [run ROMs from a USB drive](Running-ROMs-from-a-USB-drive.md) or use an [USB drive for transferring ROMs](Transferring-Roms.md#run-your-roms-from-a-usb-stick), don't forget to install and enable the `usbromservice`, located in the Optional packages section.
 
