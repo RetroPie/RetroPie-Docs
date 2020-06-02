@@ -10,7 +10,7 @@
 
 ## Emulator: [lr-theodore](https://github.com/Zlika/theodore)
 
-**lr-theodore** is alibretro core for emulation of Thomson computers. It is based on Daniel Coulom's [DCTO8D](http://dcto8.free.fr/), [DCTO9P](http://dcto9p.free.fr/) and [DCMO5](http://dcmo5.free.fr/) emulators, and supports the following models: TO7, TO7/70, TO8, TO8D, TO9, TO9+, MO5, MO6 and also the [Olivetti Prodest PC128](https://it.wikipedia.org/wiki/Olivetti_Prodest_PC_128) (a rebranded MO6 for the Italian market).
+**lr-theodore** is a libretro core for emulation of Thomson computers. It is based on Daniel Coulom's [DCTO8D](http://dcto8.free.fr/), [DCTO9P](http://dcto9p.free.fr/) and [DCMO5](http://dcmo5.free.fr/) emulators, and supports the following models: TO7, TO7/70, TO8, TO8D, TO9, TO9+, MO5, MO6 and also the [Olivetti Prodest PC128](https://it.wikipedia.org/wiki/Olivetti_Prodest_PC_128) (a rebranded MO6 for the Italian market).
 
 ## ROMS
 
