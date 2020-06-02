@@ -11,11 +11,9 @@ It can also be accessed from the terminal with `sudo ~/RetroPie-Setup/retropie_s
 
 **NOTE**: any updates require the RetroPie system to be **online**, otherwise downloading and installing the files required in the process will not work.
  
-**Before making any major updates it is important to make backups just in case [(see backup options below)](#making-a-backup-option-1).**
+**Before making any major updates it is important to make backups just in case [(see backup options below)](#making-a-backup).**
 
-## Using the RetroPie Setup Script
-
- * Select **Update All Installed Packages**
+## Update All Installed Packages
 
 ![setup_script](https://cloud.githubusercontent.com/assets/10035308/17758599/fb76e94a-64ad-11e6-8dc6-e8ca545e2630.png)
 
@@ -27,7 +25,7 @@ It can also be accessed from the terminal with `sudo ~/RetroPie-Setup/retropie_s
 - **Uninstall RetroPie:** Uninstalls RetroPie from the system.
 - **Reboot:** Reboots your system.
 
-**Manage Packages**
+## Manage Packages
 
 ![manage](https://cloud.githubusercontent.com/assets/10035308/17757080/913dbf7e-64a1-11e6-8370-05a3d2a720ed.png)
 
@@ -37,7 +35,7 @@ It can also be accessed from the terminal with `sudo ~/RetroPie-Setup/retropie_s
 - **Drivers:** Here you install gamepad drivers like the PS3 or Xboxdrv.
 - **Experimental:** These packages have not been fully tested and may have bugs.
  
-**Core Packages**
+## Manage Core Packages
 
 ![core packages](https://cloud.githubusercontent.com/assets/10035308/15919781/a18d06ca-2dd1-11e6-9cec-136fc5f0e727.png)
 
@@ -50,7 +48,7 @@ The core components needed for RetroPie to function are:
 - **RetroPie Menu:** Menu in EmulationStation for simpler configuration of your system.
 - **Runcommand:** The Runcommand launch menu that assists launching your games with proper configurations, see the related documentation page [HERE](Runcommand).
 
-### Updating/Installing individual packages
+## Updating/Installing individual packages
 
 You can update/install and remove packages individually.
 
@@ -58,7 +56,7 @@ When selecting a package there is also a help guide with extra information speci
 
 ![individual](https://cloud.githubusercontent.com/assets/10035308/15987047/5414269a-2fd8-11e6-87ff-a0021e244054.png)
 
-**Package Help:**
+### Package Help
 
 ![package_help](https://cloud.githubusercontent.com/assets/10035308/15987048/542d760e-2fd8-11e6-909f-827b120dfc34.png)
 
@@ -68,11 +66,13 @@ The Package Help for each emulator should show you:
 - ROM folder
 - BIOS filename and folder if applicable
 
-#### Latest SD image
+## Latest SD image
 
 If you are worried about conflicts during an update you can always just start with the latest fresh sd image which can be downloaded [**here**](https://retropie.org.uk/download/) and just copy all your files back over onto that instead of updating from an older image.
 
-## Making a Backup (Option 1)
+## Making a Backup
+
+### Backup Option 1
 
 You can create an sd image of your current sd card with [win32diskimager](http://sourceforge.net/projects/win32diskimager/files/Archive/) (if you're on windows)
 
@@ -91,17 +91,18 @@ You can create an sd image of your current sd card with [win32diskimager](http:/
 
 Note: images created this way can only be written to a microSD card of the EXACT same size or bigger.  As an example you may not be able to write an image of a 64GB microSD onto another 64GB card. That's because actual real usable space may vary by manufacturer and in some cases even with the same manufacturer. To avoid this issue you can use option 3.
 
-## Making a Backup (Option 2)
+### Backup Option 2
 
 if you don't want to create a sd image you can just back up your bios, roms, and configuration files from the samba shares
 
 ![samba](https://cloud.githubusercontent.com/assets/10035308/12865893/d2eab264-cc77-11e5-9ec6-003e13322a5a.png)
 
-## Making a Backup / transferring to another SD (Option 3)
-You can use Rpi-clone, a shell script that runs directly on your Raspberry Pi. Requires a USB microSD card reader.
+### Backup Option 3 (transferring to another SD)
+
+You can use **Rpi-clone**, a shell script that runs directly on your Raspberry Pi. Requires a USB microSD card reader.
 Detailed instructions [here](https://github.com/billw2/rpi-clone).
 
-## Making a Backup (OS X)
+### Backup Option 4 (OS X)
 
 Open a terminal window and type `diskutil list`. A list of all hard disks and partitions shows up. Find a partition with the name `boot` - it should say (internal,physical) beside the /dev/disk#. Example:
 
