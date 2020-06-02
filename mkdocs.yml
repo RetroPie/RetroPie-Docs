@@ -97,6 +97,8 @@ nav:
     - Master System: Master-System.md
     - MESS: MESS.md
     - MSX: MSX.md
+    - NEC PC8800: PC-8800.md
+    - NEC PC9800: PC-9800.md
     - Neo Geo Pocket Color: Neo-Geo-Pocket-Color.md
     - Neo Geo Pocket: Neo-Geo-Pocket.md
     - Nintendo 64: Nintendo-64.md
@@ -114,8 +116,11 @@ nav:
     - ScummVM: ScummVM.md
     - Sega 32X: Sega-32X.md
     - Sega CD: Sega-CD.md
+    - Sharp X1: Sharp-X1.md
+    - Sharp X68000: Sharp-X68000.md
     - SG 1000: SG-1000.md
     - Super Nintendo Entertainment System: Super-Nintendo-Entertainment-System.md
+    - Thomson MO/TO: Thomson-MOTO.md
     - TI-99: TI-99.md
     - TRS-80: TRS-80.md
     - Vectrex: Vectrex.md
