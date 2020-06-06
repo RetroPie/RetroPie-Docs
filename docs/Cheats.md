@@ -98,4 +98,4 @@ cheat1_enable = "true"
 
 #### Mame Cheats
 
-Mame has it's own configurations for cheats. You can see a guide [HERE](lr-mame2003#cheats)
+Mame has its own configurations for cheats. You can see a guide [HERE](lr-mame2003#cheats)
