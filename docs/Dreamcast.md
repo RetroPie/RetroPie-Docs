@@ -98,6 +98,8 @@ A Dreamcast soft-reset (A+B+X+Y+Start buttons at the same time) at the ROM's tit
 Starting with RetroPie 3.3 controls for the Dreamcast Emulator are automatically configured when you configure your controls through emulationstation.
 Please notice that you may be interested in disabled the input auto config ( described above ) in case of any autoconfig issue.
 
+**ATTENTION**: It seems like this diagram has the X/Y and A/B buttons the wrong way round.
+
 ![sega_dreamcast_diagram](https://cloud.githubusercontent.com/assets/10035308/16599638/7f411634-42c0-11e6-811c-456f02b2ea47.png)
 
 Controls can be mapped via the `/home/pi/.reicast/emu.cfg` file. Make sure that evdev_device_id_1 & evdev_device_id_2 are set to the corresponding controller's /dev/input/event* number you want to use. A -1 means no controller which we will use for player 3 and 4. Then have evdev_mapping_1 & evdev_mapping_2 point to the matching controller mapping configuration files and both can either point to the same file or different files if you want to use 2 different controllers types.
