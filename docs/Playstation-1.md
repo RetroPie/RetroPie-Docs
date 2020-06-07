@@ -101,11 +101,11 @@ The following BIOS are supported:
 
 | Recognized Name | Redump Name | CRC32 | MD5 |
 | :---: | :---: | :---: | :---: |
+| psxonpsp660.bin |  | 5660F34F | C53CA5908936D412331790F4426C6C33
 | scph101.bin | psone-45a.bin | 171BDCEC | 6E3735FF4C7DC899EE98981385F6F3D0
 | scph7001.bin | ps-41a.bin | 502224B6 | 1E68C231D0896B7EADCAD1D7D8E76129
 | scph5501.bin | ps-30a.bin | 8D8CB7E4 | 490F666E1AFB15B7362B406ED1CEA246
 | scph1001.bin | ps-22a.bin | 37157331 | 924E392ED05558FFDB115408C263DCCF
-| psxonpsp660.bin |  |  |
 
 If more than one of the BIOS above is provided, then the latest revision of the BIOS available is automatically chosen. *Note*: psxonpsp660.bin is a BIOS dumped from the [PSP](PSP)'s PlayStation emulator. It is said to improve performance for certain PlayStation games as is a streamlined version of the BIOS, lacking irrelevant features like the built-in CD Player and Memory Card manager.
 
