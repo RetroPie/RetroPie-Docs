@@ -146,7 +146,7 @@ Autologin Text:
 
 **Hide/modify message of the day** (superseded by .hushlogin if used): 
 
-`nano /etc/motd`
+`sudo nano /etc/motd`
 
 **Hide Autologin Text:**
 
