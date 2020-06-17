@@ -29,6 +29,7 @@ KEEN5E.EXE
 Please note that for Commander Keen 6, the executable KEEN6C.EXE will not work with Commander Genius (If you have this version, it is from an unofficial source and was originally created to remove the 'creature question' at the start of the game, which asked you for information on the names of some of the enemies from the user manual). 
 
 Commander Genius removes this prompt from the official version in the emulator anyway, but it requires the KEEN6.EXE file from the official game to be used.
+(If you are having issues getting your legitimate Keen 6 copy to launch, make sure you patch it to version 1.4!)
 
 Once the relevant files are copied to the folder locations you can then select the games from the Commander Genius Launch Menu.
 
