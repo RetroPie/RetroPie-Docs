@@ -7,7 +7,7 @@ _The PlayStation is a 5th generation video game console released by Sony in 1994
 
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
-| [lr-pcsx_rearmed](https://github.com/libretro/pcsx_rearmed) | psx  | .cue .cbn .chd .img .iso .m3u .mdf .pbp .toc .z .znx | scph101.bin scph7001.bin scph5501.bin scph1001.bin | /opt/retropie/configs/psx/retroarch.cfg |
+| [lr-pcsx_rearmed](https://github.com/libretro/pcsx_rearmed) | psx  | .cue .cbn .chd .img .iso .m3u .mdf .pbp .toc .z .znx | psxonpsp660.bin scph101.bin scph7001.bin scph5501.bin scph1001.bin | /opt/retropie/configs/psx/retroarch.cfg |
 | [PCSX-ReARMed](https://github.com/notaz/pcsx_rearmed) | psx  | .cue .cbn .img .iso .m3u .mdf .pbp .toc .z .znx | SCPH1001.BIN | /opt/retropie/configs/psx/pcsx.cfg |
 | [lr-beetle-psx](https://github.com/libretro/beetle-psx-libretro) | psx  | .cue .ccd .chd .exe .iso .m3u .pbp .toc | scph5500.bin scph5501.bin scph5502.bin | /opt/retropie/configs/psx/retroarch.cfg |
 
@@ -107,7 +107,8 @@ The following BIOS are supported:
 | scph5501.bin | ps-30a.bin | 8D8CB7E4 | 490F666E1AFB15B7362B406ED1CEA246
 | scph1001.bin | ps-22a.bin | 37157331 | 924E392ED05558FFDB115408C263DCCF
 
-If more than one of the BIOS above is provided, then the latest revision of the BIOS available is automatically chosen. *Note*: psxonpsp660.bin is a BIOS dumped from the [PSP](PSP)'s PlayStation emulator. It is said to improve performance for certain PlayStation games as is a streamlined version of the BIOS, lacking irrelevant features like the built-in CD Player and Memory Card manager.
+If more than one of the BIOS above is provided, then the latest revision of the BIOS available is automatically chosen.
+**Note**: psxonpsp660.bin is a BIOS dumped from the [PSP](PSP)'s PlayStation emulator. It is said to improve performance for certain PlayStation games as is a streamlined version of the BIOS, lacking irrelevant features like the built-in CD Player and Memory Card manager.
 
 The recognized name can be all uppercase OR all lowercase.
 
