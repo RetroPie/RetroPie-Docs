@@ -37,7 +37,7 @@ Only lr-gpsp and gpSP require the **gba_bios.bin**.
 
 Additional BIOS are used by lr-mgba and are optional.
 
-In order for a BIOS to be used in emulators where they are optional, the "Use bios if available" core option must be set to "On".
+In order for a BIOS to be used in emulators where they are optional, the "Use bios if available" core option must be set to "On".  See [Setting Core Options](RetroArch-Core-Options#setting-core-options).
 
 Place BIOS in
 ```
