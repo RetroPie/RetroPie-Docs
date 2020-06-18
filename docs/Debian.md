@@ -21,11 +21,11 @@ To run RetroPie-Setup, you must be a member of the group root/admin.
     
 Update and upgrade the existing APT packages:
 
-    sudo apt-get update && sudo apt-get upgrade
+    sudo apt update && sudo apt upgrade
 
 Install the needed packages for the RetroPie setup script:
 
-    sudo apt-get install -y git dialog unzip xmlstarlet
+    sudo apt install -y git dialog unzip xmlstarlet
 
 NOTE: if you get any errors about any package not being found and you're using Ubuntu, make sure the `universe` APT repository has been added and enabled on the system by running `sudo add-apt-repository universe` and then starting again with the previous step. 
 
