@@ -7,9 +7,7 @@ The driver button mapping, joystick axis and axis calibration can be changed wit
 ## **Prerequisites**
 First install the appropriate packages (if not available):
 
-`sudo apt-get install joystick`
-
-`sudo apt-get install jstest-gtk `
+`sudo apt install joystick jstest-gtk`
 
 ## **Calibration with _jstest-gtk_**
 Usage of jstest-gtk is straightforward. When running it, it will first show a page to select your joystick(s). 
