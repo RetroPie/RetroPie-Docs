@@ -284,7 +284,7 @@ You can verify if it has successfully connected using `ifconfig wlan0`. If the `
 
 Note that this may cause a small amount of background cpu usage, which can stop the CPU from scaling to lowest frequency.
 
-you first need to install it with `sudo apt-get install wicd wicd-curses` and then typ wicd-curses in the terminal to open it.
+you first need to install it with `sudo apt install wicd wicd-curses` and then type `wicd-curses` in the terminal to open it.
 
 _(of course you'll need to be connected by ethernet to install it)_
 
@@ -296,7 +296,7 @@ Navigate to your wireless network and Press the `RIGHT` arrow to configure your 
 
 check automatically connect to this network (by pressing enter) and type in your wifi password where it says "key" press `F10` to save and then press `SHIFT+c` to connect and press `Q` to exit back to the terminal. 
 
-There are some noted issues with the daemon using some CPU and preventing the Pi from scaling to lowest frequency, so if that's the case you can remove wicd-curses by typing `sudo apt-get remove wicd-curses` and proceed to setup your wifi using method 2 or 3.
+There are some noted issues with the daemon using some CPU and preventing the Pi from scaling to lowest frequency, so if that's the case you can remove wicd-curses by typing `sudo apt remove wicd-curses` and proceed to setup your wifi using method 2 or 3.
 
 # Using an external dongle
 
