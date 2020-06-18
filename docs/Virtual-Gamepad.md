@@ -39,7 +39,7 @@ You can also install manually using these steps:
 ### Install Node.js
 
 ```
-sudo apt-get update && sudo apt-get upgrade
+sudo apt update && sudo apt upgrade
 wget http://node-arm.herokuapp.com/node_archive_armhf.deb
 sudo dpkg -i node_archive_armhf.deb
 rm node_archive_armhf.deb
@@ -49,7 +49,7 @@ rm node_archive_armhf.deb
 
 ```
 curl -sL https://deb.nodesource.com/setup_4.x | sudo bash -
-sudo apt-get install -y build-essential python-dev nodejs npm
+sudo apt install -y build-essential python-dev nodejs npm
 ```
 
 ### Update Node.js and NPM
