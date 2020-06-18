@@ -3,9 +3,9 @@ This guide uses NordVPN as an example though there are many other VPN Providers.
 ### Install Dependencies
 
 ```
-sudo apt-get update
-sudo apt-get install openvpn
-sudo apt-get install unzip
+sudo apt update
+sudo apt install openvpn
+sudo apt install unzip
 ```
 
 ### Install NordVPN server configs
