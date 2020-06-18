@@ -73,8 +73,8 @@ For more information on custom RetroArch controls see: [RetroArch Configuration]
 
 The standalone version runs faster but requires X, QT, etc. Even then, it manages 10FPS so probably not worth adding to the scripts. If you're curious, here's the basic instructions to get it installed:
 ```
-sudo apt-get update
-sudo apt-get install xinit qt4-dev-tools build-essential libgl1-mesa-dev
+sudo apt update
+sudo apt install xinit qt4-dev-tools build-essential libgl1-mesa-dev
 ```
 make some directory, and go in it
 
