@@ -4,8 +4,7 @@ This guide uses NordVPN as an example though there are many other VPN Providers.
 
 ```
 sudo apt update
-sudo apt install openvpn
-sudo apt install unzip
+sudo apt install openvpn unzip
 ```
 
 ### Install NordVPN server configs
