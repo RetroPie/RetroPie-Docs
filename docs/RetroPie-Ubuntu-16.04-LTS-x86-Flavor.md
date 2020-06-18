@@ -42,11 +42,11 @@ To run RetroPie-Setup user must be a member of group root/admin.
     
 Update and upgrade the existing APT packages:
 ```
-    sudo apt-get update && sudo apt-get upgrade
+    sudo apt update && sudo apt upgrade
 ```
 Install the needed packages for the RetroPie setup script:
 ```
-    sudo apt-get install -y git dialog unzip xmlstarlet
+    sudo apt install -y git dialog unzip xmlstarlet
 ```
 Download the latest RetroPie setup script:
 ```
