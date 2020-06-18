@@ -1,10 +1,10 @@
 # Pi 3 Bluetooth
-Note that on the Pi 3 to use on-board Bluetooth you may need to install Bluetooth first with `sudo apt-get install pi-bluetooth` but fair warning, the on-board Bluetooth has been known to freeze up the Pi (on RetroPie 3.7 or under), but it can be fixed.
+Note that on the Pi 3 to use on-board Bluetooth you may need to install Bluetooth first with `sudo apt install pi-bluetooth` but fair warning, the on-board Bluetooth has been known to freeze up the Pi (on RetroPie 3.7 or under), but it can be fixed.
 
 ### Pi 3 Bluetooth Freeze Fix (for RetroPie 3.7 or below)
 ```
-sudo apt-get update && sudo apt-get dist-upgrade
-sudo apt-get install raspberrypi-sys-mods
+sudo apt update && sudo apt full-upgrade
+sudo apt install raspberrypi-sys-mods
 ```
 If it asks you anything about the /etc/udev/rules.d/99-com.rules configuration file, type Y to overwrite.
 
@@ -144,9 +144,8 @@ alt="RetroPie with Bluetooth" width="300" height="190" border="10" /></a>
 
 ### Step 1 - Download and install the Bluetooth packages  
 Quit Emulation Station with F4 (stop it restarting by pressing another key within 5 secs) and type this at the command line:  
-`sudo apt-get update`  
-`sudo apt-get install bluetooth bluez-utils` (_Press Y if prompted_)  
-`sudo apt-get install bluez python-gobject`  
+`sudo apt update`  
+`sudo apt install bluetooth bluez python-gobject`  
 
 ### Step 2 - Pairing and connecting the Bluetooth controller  
 Set your Bluetooth controller to pair in "joypad" mode. For example, for the FC30 Pro, you do this by holding the power switch for 3 secs. The guide is here: [FC30 Pro Manual](http://download.8bitdo.com/Manual/FC30_Pro_Manual_ENG_v1.0.pdf)  
@@ -215,7 +214,7 @@ That should be all you need. Now when you start your Pi, set the controller to c
   
 ### Troubleshooting  
 If you have installed other bluetooth programs, perhaps to support a PS3 controller, you may find there are conflicts and the above steps produce an error when you try to pair. One way around this is to uninstall the sixad program with:  
-`sudo apt-get --purge remove sixad`
+`sudo apt purge sixad`
   
 If you are unsure your USB Bluetooth dongle is detected with the Pi, you can list the USB devices with:  
 `lsusb`  
