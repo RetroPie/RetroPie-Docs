@@ -394,7 +394,7 @@ CPU usage of currently-running processes can be viewed with
 top
 ~~~
 
-A nicer display of CPU usage can be installed with `sudo apt update; sudo apt install htop` and then:
+A nicer display of CPU usage can be installed with `sudo apt update && sudo apt install htop` and then:
 
 ~~~
 htop
