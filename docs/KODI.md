@@ -23,15 +23,15 @@ By default, RetroPie doesn't install any PVRs (personal video recorders). If you
 
 Search available PVRs:
 ````
-apt-cache search kodi-pvr
+apt search kodi-pvr
 ````
 Install one PVR, in this case the IPTV Simple Client:
 ````
-sudo apt-get install kodi-pvr-iptvsimple
+sudo apt install kodi-pvr-iptvsimple
 ````
 Install all PVRs:
 ````
-sudo apt-get install kodi-pvr*
+sudo apt install kodi-pvr*
 ````
 
 ## Joypad Support
@@ -117,9 +117,8 @@ Type `emulationstation` to go back into EmulationStation, and Kodi should be the
 Install dependencies:
 
 ```
-sudo apt-get update
-sudo apt-get install openvpn
-sudo apt-get install psmisc
+sudo apt update
+sudo apt install openvpn psmisc
 ```
 
 From the terminal in RetroPie Download Addon:
