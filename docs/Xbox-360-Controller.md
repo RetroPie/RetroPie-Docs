@@ -85,7 +85,7 @@ RetroPie 3.3 contains a newer xboxdrv at /opt/retropie/supplementary/xboxdrv/bin
 
 install it by running
 
-    sudo apt-get install xboxdrv
+    sudo apt install xboxdrv
 
 **Then you must choose one of the 3 methods below**
 
