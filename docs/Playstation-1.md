@@ -48,7 +48,7 @@ If your PSX game has an `.ecm` extension, it's a compressed file that needs to b
 
 Directly on RetroPie, input to terminal:
 ```
-sudo apt-get install ecm
+sudo apt install ecm
 ecm-uncompress game-file.bin.ecm
 ```
 
