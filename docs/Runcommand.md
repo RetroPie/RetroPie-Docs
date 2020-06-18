@@ -35,6 +35,9 @@ You can enable and disable different functions of the Runcommand Launch Menu. Th
 - **Launch image delay in seconds:** Set how many seconds the [launching image](#adding-custom-launching-images) will be displayed before start the game.
 - **CPU Configuration:** Allows setting the CPU governor (default is ondemand on RetroPie on the Raspberry Pi). You can use this to set the CPU governor - ie to "performance", which will be set on launching a game, and reset after. More information regarding CPU governors can be found in the Linux Kernel documentation - https://www.kernel.org/doc/Documentation/cpu-freq/governors.txt
 
+### Launch with verbose logging
+
+When launching Libretro cores (those prefixed by **lr-**) the Runcommand launch menu presents the option to **Launch with verbose logging**. This outputs more information to the log file found in `/dev/shm/runcommand.log` which is useful, and often necessary, when diagnosing problems. Once the game is exited, the log file can be downloaded via [SFTP](SFTP Transferring-Roms#sftp) or viewed directly via the command line.
 
 ## Adding custom launching images
 
