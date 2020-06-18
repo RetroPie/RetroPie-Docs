@@ -121,8 +121,7 @@ sudo reboot
 ```
 12. Install libsdl2-dev and xorg
 ```
-sudo apt install libsdl2-dev
-sudo apt install xorg
+sudo apt install libsdl2-dev xorg
 ```
 13. Install the RetroPie Setup Script (logged in as NameOfYourChoice)
 ```
