@@ -19,7 +19,7 @@ df -h
 
 /dev/root is your main partition. Then, I would recommend to update and upgrade the existing APT packages with
 ```
-sudo apt-get update && sudo apt-get upgrade
+sudo apt update && sudo apt upgrade
 ```
 
 ### Verify Locale Settings
@@ -61,7 +61,7 @@ A reboot is required after any modifications to the video memory allocation.
 
 Install the needed packages for the RetroPie setup script:
 ```
-sudo apt-get install git lsb-release
+sudo apt install git lsb-release
 ```
 Download the latest RetroPie setup script with
 ```
