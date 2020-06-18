@@ -9,25 +9,26 @@ The runcommand is the script responsible to launch your emulators/games. This wi
 
 ## Runcommand Launch Menu
 
-Each time you load a ROM there is an option to open what is called the Runcommand Launch Menu. This is accessed by pressing any button on a controller (the bottom face button is recommended as to not accidentally change anything) or pressing any key on a keyboard, while the prompt in the image below is displayed or right after a launching image disappears if you have those setup.
+Each time you load a ROM there is an option to open what is called the Runcommand Launch Menu. This is accessed by pressing any button on a controller (the bottom face button is recommended as to not accidentally change anything) or pressing any key on a keyboard, while the prompt in the image below is displayed or right after a launching image disappears, if you have those set up.
 
-![runcommandlaunch](https://user-images.githubusercontent.com/647452/72018057-cf33b680-321b-11ea-872a-3e8d4ad78b87.png)
+<img src="https://user-images.githubusercontent.com/31816814/85049757-ccab9480-b19d-11ea-984e-27941838440e.png" width="80%" title="Runcommand launch dialog">
 
-Once you press any button on a controller or any key on a keyboard, it will open up into this menu (the menu options will vary depending on the system you are running and version of RetroPie you are using:
+Once you press any button on a controller or any key on a keyboard, it will open up into this menu. The menu options will vary depending on the system you are running and version of RetroPie you are using:
 
-![runcommandmenu](https://cloud.githubusercontent.com/assets/10035308/10265893/b65c94ee-69ff-11e5-9195-f6a996f4b35b.png)
+<img src="https://user-images.githubusercontent.com/31816814/85049707-c1586900-b19d-11ea-98a9-35752f39108d.png" width="80%" title="Runcommand launch menu">
 
-If you select the first option, you can swap which emulator is used if there is more than one emulator:
+If you select the first option, you can swap which emulator is used, if there is more than one emulator available for the System:
 
-![defaultemulator](https://cloud.githubusercontent.com/assets/10035308/10265899/de7127ec-69ff-11e5-99b6-aa2df9247da6.png)
+<img src="https://user-images.githubusercontent.com/31816814/85049729-c7e6e080-b19d-11ea-88ec-74d32981239d.png" width="80%" title="Choosing an Emulator">
 
 There are also varying options to change video settings, RetroArch configs for that system, etc. 
 
-### Configuring Runcommand:
+### Configuring Runcommand
 
 You can enable and disable different functions of the Runcommand Launch Menu. This is configured via RetroPie-Setup or via the runcommand configuration option in the RetroPie area of Emulation Station. 
 
-![runcommand_config](https://retropie.org.uk/forum/assets/uploads/files/1490801740403-runcommand_config-resized.png)
+<img title="Runcommand configuration options" src="https://user-images.githubusercontent.com/31816814/85050776-43955d00-b19f-11ea-98a1-279faded0f3d.png" width="80%">
+
 
 - **Launch Menu:** Enable or disable the runcommand launch menu
 - **Launch Menu Art:** If enabled, any scraped box art you have for a game will show up as a splashscreen while your game loads up.
