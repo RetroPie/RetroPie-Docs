@@ -15,8 +15,8 @@ Odroid default user is "*root*" and his password is "*odroid*"
 Preliminary steps:
 
 ```
-apt-get update && apt-get upgrade
-apt-get install -y git
+apt update && apt upgrade
+apt install -y git
 useradd -mb /home -s /bin/bash -G input,video pi
 echo 'pi ALL=(ALL) NOPASSWD:ALL' > /etc/sudoers.d/pi
 passwd pi
@@ -117,7 +117,7 @@ POWERDOWN_TIME
 If you have troubles with no sound or sound stuttering badly in menu or game, check your CPU usage via top or htop. If pulseaudio is using more than 20% then it may be the culprit. In my case, it was using 80%! I had only one sound card output (hdmi) so I completely removed pulseaudio with:
 
 ```
-sudo apt-get --purge remove pulseaudio
+sudo apt purge pulseaudio
 ```
 
 ### Ubuntu 16 (systemd)
