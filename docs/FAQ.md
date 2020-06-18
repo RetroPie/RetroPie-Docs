@@ -82,8 +82,8 @@ after installation it will be accessible from the ports menu of EmulationStation
 You can also install it manually with:
 
 ```
-sudo apt-get install --no-install-recommends lxde
-sudo apt-get install xorg raspberrypi-ui-mods rpi-chromium-mods
+sudo apt install --no-install-recommends lxde
+sudo apt install xorg raspberrypi-ui-mods rpi-chromium-mods
 ```
 
 And then you can access it from the terminal by typing in
@@ -295,7 +295,7 @@ crc32 /home/pi/RetroPie/BIOS/gba_bios.bin
 
 If these commands are not found, then you will need to install **md5sum** and **CRC32**
 ```
-sudo apt-get install libarchive-zip-perl
+sudo apt install libarchive-zip-perl
 ```
 
 ### Which memory split should I use?
