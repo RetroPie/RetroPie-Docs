@@ -27,12 +27,12 @@ usermod -a -G sudo NameOfYourChoice
 ```
 sudo apt update
 sudo apt upgrade
-sudo apt dist-upgrade
+sudo apt full-upgrade
 shutdown -r now
 ```
 4. Set the locale settings. Below you can find an example for American English:
 ```    
-apt-get install language-pack-en-base
+apt install language-pack-en-base
 update-locale LC_ALL="en_US.UTF-8"
 update-locale LANG="en_US.UTF-8"
 update-locale LANGUAGE="en_US.UTF-8"
@@ -150,7 +150,7 @@ B. Upgrade the kernel:
 ```
 sudo apt update
 sudo apt upgrade
-sudo apt dist-upgrade
+sudo apt full-upgrade
 sudo apt install linux-image-xu3
 shutdown -r now
 ```
