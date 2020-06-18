@@ -69,7 +69,7 @@ The actual interconnect (NES/SNES/N64) can be made from female-to-female jumper 
 ## Installation and usage
 
 ### Automatic Installation  
-The easiest way to install the module is with the RetroPie-Setup script. Just remember to upgrade your firmware (`sudo apt-get update; sudo apt-get upgrade`) before installing the module, as it is built automatically using the configuration data from the latest RPi kernel. This also means that a firmware update afterwards can break the compatibility, but this is easily fixed by reconfiguration/update of the module (see FAQ).
+The easiest way to install the module is with the RetroPie-Setup script. Just remember to upgrade your firmware (`sudo apt update && sudo apt upgrade`) before installing the module, as it is built automatically using the configuration data from the latest RPi kernel. This also means that a firmware update afterwards can break the compatibility, but this is easily fixed by reconfiguration/update of the module (see FAQ).
 
 In addition to install/update, RetroPie-Setup also contains an option to permanently enable configuration for 2 SNES pads connected to PAD2 & PAD3 pins (designed for the RetroPie GPIO Adapter). This configures the driver as `gamecon_gpio_rpi map=0,1,1,0` for _rev01_ boards and `gamecon_gpio_rpi map=0,0,1,0,0,1` for _rev02_ boards, for a definition of these settings see below in "Additional Gamecon Configuration Details".
 
