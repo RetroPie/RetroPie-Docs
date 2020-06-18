@@ -41,13 +41,13 @@ Plymouth is more integrated into the boot process than OMX player. It won't have
 Plymouth should already be installed on the full Raspbian, but if you're using Raspian Lite then you'll need to go through the following steps to enable it:
 
 ```
-sudo apt-get install plymouth plymouth-themes
+sudo apt install plymouth plymouth-themes
 ```
 
 Install Raspberry Pi Foundation Pixel splash
 
 ```
-sudo apt-get install pix-plym-splash
+sudo apt install pix-plym-splash
 ```
 
 Enable in /boot/cmdline.txt
