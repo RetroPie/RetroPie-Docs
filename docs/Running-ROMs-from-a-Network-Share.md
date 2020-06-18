@@ -69,7 +69,7 @@ First [create an account on your Time Capsule](https://discussions.apple.com/mes
 
 Install `cifs-utils` if it's not already installed  
 ```
-sudo apt-get update && sudo apt-get install cifs-utils
+sudo apt update && sudo apt install cifs-utils
 ```  
 Edit your `autostart.sh` file  
 ```
