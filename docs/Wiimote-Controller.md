@@ -37,7 +37,7 @@ In the menu, choose to update the RetroPie-Setup script (option U) first. The pi
 
 Now install the needed parts:
 ```shell
-sudo apt-get install bluetooth vorbis-tools python-cwiid wminput
+sudo apt install bluetooth vorbis-tools python-cwiid wminput
 ```
 
 ### Getting the wiimotes to work
@@ -553,11 +553,11 @@ APT::Default-Release "jessie";
 
 In the terminal, do and update followed by the Bluez install:
 ```shell
-sudo apt-get update
+sudo apt update
 ```
 then:
 ```shell
-sudo apt-get install bluez -t stretch
+sudo apt install bluez -t stretch
 ```
 BlueZ will be updated from 5.23 => 5.36. You can check the change with ```bluetoothd -v```. 
 
