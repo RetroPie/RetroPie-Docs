@@ -18,24 +18,33 @@ Place your Löve games in
 ```
 
 Note that love games are basically .zip files with a .love extension instead of a .zip, so when building LÖVE files from repos, the files all need to be in the top level directory (especially main.lua)
+(If you are an advanced user you can edit these files to change things like the game resolution, gampad/keyboard mappings, or add gamepad support
 
 ## Controls
 
-Controls vary by game though most will need a keyboard. [**Mari0**](http://stabyourself.net/mari0/) (which is installed when you install Löve) has some support for gamepads but you still need to use a keyboard to navigate the menus. 
+Controls vary by game though most will need a keyboard. [**Mari0**](http://stabyourself.net/mari0/) (which is installed when you install Löve) has some support for gamepads but you still need to use a keyboard to navigate the menus.
 
+## Display
 For display it is best to leave the video settings alone in the runcommand menu and just use the in game settings to scale it to 5.
 
-### Other Games
+If the games you are playing are not scaled correctly and the in-game video options don't work (or don't exist) then adjust the resolution with the runcommand menu.
 
-* [**Mr. Rescue**](http://tangramgames.dk/games/mrrescue/), download [here](https://github.com/SimonLarsen/mrrescue/releases/download/1.02e/mrrescue1.02e.love)
+## Other Games
+
+* [Itch.io](https://itch.io/games/tag-love2d) games created with Löve
+
+### Full gamepad support
+* [**Mr. Rescue**](http://tangramgames.dk/games/mrrescue/), download [here](https://github.com/SimonLarsen/mrrescue/releases/download/1.02e/mrrescue1.02e.love) 
+
+* [**Duck Marines**](http://tangramgames.dk/games/duckmarines/), download [here](https://github.com/SimonLarsen/duckmarines/releases/download/v1.0c/duckmarines-1.0c.love")
+
+* [**Curse of the Arrow**](https://egordorichev.itch.io/curse-of-the-arrow/), download [here](https://egordorichev.itch.io/curse-of-the-arrow/purchase")
+
+### Keyboard/Mouse Only
 
 * [**Sienna**](http://tangramgames.dk/games/sienna/), download [here](https://github.com/SimonLarsen/sienna/releases/download/v1.0d/sienna-1.0d.love)
 
 * [**90 Second Portraits**](http://tangramgames.dk/games/90secondportraits/), download [here](https://github.com/SimonLarsen/90-Second-Portraits/releases/download/1.01b/90secondportraits-1.01b.love)
-
-* [**Duck Marines**](http://tangramgames.dk/games/duckmarines/), download [here](https://github.com/SimonLarsen/duckmarines/releases/download/v1.0c/duckmarines-1.0c.love")
-
-* [Itch.io](https://itch.io/games/tag-love2d) games created with Löve
 
 ## Versions
 
