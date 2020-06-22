@@ -1,4 +1,4 @@
-![Minecraft Pi Logo](http://www.geek.com/wp-content/uploads/2013/02/Screen-Shot-2013-02-11-at-11.29.21-AM-580x160.jpg)
+![Minecraft Pi Logo](https://www.teachwithict.com/uploads/5/5/8/2/5582303/1404981123_1.jpg)
 ***
 _Minecraft was created by Markus "Notch" Persson and his company Mojang which was later sold to Microsoft for 2.5 billion dollars- which explains why there has been pretty much no development on Minecraft Pi edition for more than 2 years now. Minecraft for Pi is based off of Minecraft Pocket Edition, and as such lacks creatures, adventures, night time, etc. It is unfortunately incredibly basic._
 ***
