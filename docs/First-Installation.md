@@ -14,7 +14,7 @@
 
 Congratulations! You have discovered the wonderful world of RetroPie- your entire childhood is within reach! RetroPie is a combination of multiple projects including [RetroArch](http://www.libretro.com), [EmulationStation](http://www.emulationstation.org), and many others. 
 
-This page is for people just getting started on RetroPie. The easiest way to install RetroPie is the SD image which is a ready to go system built upon top of the Raspbian OS - this is the method described in the following guide. Alternatively, advanced users can install RetroPie [manually](Manual-Installation). 
+This page is for people just getting started on RetroPie. The easiest way to install RetroPie is the SD image which is a ready to go system built upon top of the Rasberry Pi OS - this is the method described in the following guide. Alternatively, advanced users can install RetroPie [manually](Manual-Installation). 
 
 This guide will give you the very basics to get you up and running from a blank SD card to first boot into EmulationStation.
 
@@ -26,14 +26,14 @@ alt="RetroPie First Installation Video" width="1280" height="400" border="10" />
 
 ## [Hardware](https://retropie.org.uk/about/building/)
 
- * Raspberry Pi (A, A+, B, B+, 2, Zero, or 3) - for best performance use a **Raspberry Pi 3 Model B+**
+ * Raspberry Pi (A, A+, B, B+, 2, Zero, 3, 4) - for best performance use a **Raspberry Pi 4**
  * Raspberry Pi Case (optional but recommended)
  * MicroSD Card (see compatible SD card list [**here**](http://elinux.org/RPi_SD_cards))
- * MicroSD Card Reader (For installing retropie from your computer)
- * HDMI cable or 4 Pole RCA to 3.5mm Cable (HDMI works best)
+ * MicroSD Card Reader (optional - for installing RetroPie if your computer doesn't have a sdcard slot)
+ * HDMI cable or 4 Pole RCA to 3.5mm Cable (HDMI works best).
  * Television or Computer Monitor- really any screen with HDMI or RCA ports
- * Wifi Dongle or Ethernet Cable (Wifi is built into the Pi 3- see wifi dongle compatible list [**here**](http://elinux.org/RPi_USB_Wi-Fi_Adapters))
- * 5V 2A Micro USB Power Supply (2.5A for pi 3)
+ * Wifi Dongle or Ethernet Cable (Wifi is built-in for the Pi 3/4 model - see wifi dongle compatible list [**here**](http://elinux.org/RPi_USB_Wi-Fi_Adapters))
+ * 5V 2A Micro USB Power Supply (2.5A for Pi 3) / 5.1V 3A USB-C for Pi 4.
  * USB Keyboard and Mouse (to get things set up or you can use [SSH](SSH))
  * USB Game Controller of your choice (or you can get the [Control Block](http://blog.petrockblock.com/2014/12/29/controlblock-power-switch-and-io-for-the-raspberry-pi/) to use original SNES controllers)
 
@@ -42,7 +42,7 @@ The simplest way to get most of these components is through a kit such as the [C
 ## Installation
 
 ### Download
-There are currently two versions of RetroPie. There is one version for Raspberry Pi 0/1 (Model A, A+, B, B+) and there is a version for Raspberry Pi 2/3. 
+There are currently 3 versions of RetroPie. There is one version for Raspberry Pi 0/1 (Model A, A+, B, B+), a version for Raspberry Pi 2/3 and a version for Raspberry Pi 4. 
 
 Download the SD image for your version of Raspberry Pi from the following page:
 
@@ -50,7 +50,7 @@ Download the SD image for your version of Raspberry Pi from the following page:
 
 If you are unsure which version of Raspberry Pi you have, you can count the raspberries on boot:
 
-|Raspberry Pi 0/1 | Raspberry Pi 2/3|
+|Raspberry Pi 0/1 | Raspberry Pi 2/3/4|
 | :---: | :---: |
 |![rpi1](https://cloud.githubusercontent.com/assets/10035308/21957849/f64fe008-da54-11e6-9a1c-09cb9e87c8f5.png) | ![rpi2](https://cloud.githubusercontent.com/assets/10035308/21957850/f66f2120-da54-11e6-876b-6d7f276c31e3.png)|
 
@@ -68,15 +68,15 @@ To extract from the command line, you can type the following into a Terminal win
 
 To install the RetroPie SD image on your MicroSD card. (You may need a MicroSD card reader to plug it into your computer) 
 
-1. For Windows you can use a [Etcher](https://etcher.io/) or [Win32DiskImager](http://sourceforge.net/projects/win32diskimager/) 
-2. For macOS you can use [Etcher](https://etcher.io/) or [Apple Pi Baker](https://www.tweaking4all.com/hardware/raspberry-pi/applepi-baker-v2/) 
-3. For Linux you can use `dd` command or [Etcher](https://etcher.io/)
+1. For Windows you can use a [Etcher](https://etcher.io/), [Win32DiskImager](http://sourceforge.net/projects/win32diskimager/) or [Raspberry Pi Imager](https://www.raspberrypi.org/downloads/)
+2. For macOS you can use [Etcher](https://etcher.io/), [Apple Pi Baker](https://www.tweaking4all.com/hardware/raspberry-pi/applepi-baker-v2/) or [Raspberry Pi Imager](https://www.raspberrypi.org/downloads/)
+3. For Linux you can use `dd` command, [Etcher](https://etcher.io/) or [Raspberry Pi Imager](https://www.raspberrypi.org/downloads/).
 
 See [the official Raspberry Pi "WRITING AN IMAGE TO THE SD CARD" instructions](https://www.raspberrypi.org/documentation/installation/installing-images/).
 
-**Note** RetroPie is built on top of Raspbian Stretch (a linux based OS for the Raspberry Pi) and as such the partition on the SD card is EXT4 (a linux filesystem) which is not visible on windows systems, so the card will show up as a smaller size than usual and you won't be able to see everything on the card, but it is all there. You will be able to access the filesystem over the network as described in the transferring roms section below.
+**Note** RetroPie is built on top of Raspberry Pi OS Buster (a Linux based OS for the Raspberry Pi) and as such the partition on the SD card is EXT4 (a linux filesystem). This parition is is not visible on Windows systems, so the card will show up as a smaller size than usual and you won't be able to see everything on the card, but it is all there. You will be able to access the filesystem over the network as described in the transferring roms section below.
 
-If you're updating from a previous version of retropie see [**HERE**](Updating-RetroPie)
+If you're updating from a previous version of retropie see [**HERE**](Updating-RetroPie).
 
 ## Configure Controllers
 
