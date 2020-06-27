@@ -15,7 +15,7 @@ Mini vMac emulates the 68K processor macs (older software) e.g. Macintosh Plus, 
 
 ## BasiliskII
 
-## ROMS
+### ROMS
 Accepted File Extensions: **.img .rom  (.dsk?, .sit?)**
 
 Place your Macintosh ROMs in
@@ -23,7 +23,7 @@ Place your Macintosh ROMs in
 /home/pi/RetroPie/roms/macintosh
 ```
 
-## BIOS
+### BIOS
 To start up your mac you need two main files: 
 
 **mac.rom** (can be renamed from PERFORMA.ROM)
@@ -41,7 +41,7 @@ https://www.emaculation.com/forum/viewtopic.php?f=6&t=8068
 
 Once you have a working disk image large enough to install other software on, you can access other install disk images from the "Unix" icon on the Mac desktop which can access the file system of the Raspberry Pi.
 
-## Controls
+### Controls
 
 a keyboard and a mouse
 
@@ -55,7 +55,7 @@ Place your Macintosh Plus ROMs in
 /home/pi/RetroPie/roms/macintosh
 ```
 
-## ROMS
+### ROMS
 
 Place your Macintosh Plus disks in
 
@@ -65,7 +65,7 @@ Place your Macintosh Plus disks in
 
 at minimum you'll need to include a Macintosh operating system file named **System Tools.dsk** as when choosing any dsk the launch script launches into the OS first by default.
 
-## BIOS
+### BIOS
 
 Place your **vMac.ROM** (Macintosh Plus Firmware) in
 
@@ -73,6 +73,6 @@ Place your **vMac.ROM** (Macintosh Plus Firmware) in
 /home/pi/RetroPie/BIOS
 ```
 
-## Controls
+### Controls
 
 You'll want to shutdown from within the emulator to make sure to not corrupt your dsk and then you can use `Ctrl+Q` to exit the emulator.
