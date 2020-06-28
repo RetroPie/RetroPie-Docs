@@ -30,8 +30,9 @@ Place your NES Roms in
 ## BIOS
 
 FDS games require the **disksys.rom** bios file. Place the BIOS in:
+
 * `/home/pi/RetroPie/BIOS` for `lr-fceumm` and `lr-nestopia`
-* `/home/pi/RetroPie/BIOS` for `lr-fneo`, zipped in a file named `fdsbios.zip`
+* `/home/pi/RetroPie/BIOS/fbneo` for `lr-fbneo`, zipped in a file named `fdsbios.zip`
 
 
 | Filename | No-Intro name | MD5 | CRC32 | 
