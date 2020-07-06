@@ -1,5 +1,3 @@
-#Raspberry Pi 4 and Retropie [Draft]
-
 Raspberry Pi 4B specific questions, configurations and differences.
 
 ## Which PI 4 model ?
@@ -10,7 +8,7 @@ There are currently a few Raspberry Pi 4 models available, differentiated only b
 
 ### Connecting a Tv/Monitor
 
-The Pi 4B model has 2 microHDMI ports. It's **strongly** recommended to use the port adjacent to the UCB-C power input (labelled __HDMI0__) to connect your display, since is has sound enabled and supports CEC.
+The Pi 4B model has 2 microHDMI ports. It's recommended to use the port adjacent to the UCB-C power input (labelled __HDMI0__) to connect your display, since is has sound enabled by default and it's the only port that supports CEC.
  
 **NOTE**: The Pi 0 _miniHDMI_ cables are not usable for the Pi 4B _microHDMI_ ports.
  
@@ -76,12 +74,7 @@ Previous models' GPU memory configuration ([Memory split](Memory-Split.md)) are 
 ####Audio Configuration
 
 By default, only the first HDMI (HDMI0) port has audio enabled, so if you plug your TV/Monitor to the 2nd port, audio will not work.
-    If you'd like to use the 2nd HDMI port specifically, then the following commands will switch the audio output correctly.
-
-    sudo amixer cset numid=3 3
-    sudo alsactl store
-
-**NOTE**: the above configuration with EmulationStation poses an issue when `omxplayer` is used to play video snapshots, so for the moment is recommended to use `vlc` in this specific configuration.
+    If you'd like to use the 2nd HDMI port, then the use the **Audio** menu in the RetroPie system from EmulationStation to choose it.
 
 ####Video drivers/GPU Changes 
 
@@ -107,7 +100,6 @@ Key differences from the previous Raspberry Pi models:
 
 * Emulators that used directly the legacy proprietary drivers have been re-compiled for KMS support or disabled on the Pi 4. Some examples:
    - `pcsx_rearmed` - disabled since it's using the legacy GL drivers
-   - `attractmode` - disabled since it's using the legacy GL drivers
    - `advmame-1.4` / `advmame-0.39` - disabled because are not properly working with the emulated KMS/DRM framebuffer
    - `advmame` is compiled and configured with the SDL2 video/input drivers, so it loses the ability to create custom video timings for emulation
 
