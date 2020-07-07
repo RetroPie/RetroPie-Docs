@@ -34,9 +34,9 @@ theme:
 # Customisation
 extra:
   social:
-    - type: 'github'
+    - icon:  fontawesome/brands/github-alt
       link: 'https://github.com/RetroPie'
-    - type: 'twitter'
+    - icon:  fontawesome/brands/twitter
       link: 'https://twitter.com/retropieproject'
 
 extra_css:
