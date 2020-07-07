@@ -3,7 +3,7 @@ site_name: 'RetroPie Docs'
 site_description: 'RetroPie Project Documentation'
 site_author: 'The RetroPie Project'
 site_url: 'https://retropie.org.uk/'
-edit_uri: https://retropie.org.uk/wikiedit.php?page=
+edit_uri: https://github.com/RetroPie/RetroPie-Docs/edit/master/docs/
 
 # Repository
 repo_name: 'RetroPie-Setup'
