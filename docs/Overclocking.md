@@ -122,7 +122,7 @@ Another method to hold heatsinks on is a thermal glue/epoxy like [Arctic Silver 
 
 A fan is needed to make the Raspberry Pi cool very well. With the right heatsink and fan combination, flat-out running temperatures as low as 55C are possible.
 
-Fans can be powered externally, via the USB ports, or via the 5V GPIO pins. Do not power a fan off the 3.3V GPIO pin, it cannot supply enough current.
+Fans can be powered externally, via the USB ports, or via the 5V GPIO pins. Pi 2 and newer models can use the 3.3V pin to power a fan if the user wants slower/quieter fan.
 
 Fans are available from electronics suppliers, as well as the usual eBay and Amazon and Chinese gadget manufacturers. Specifically getting a *quiet fan* is a really good idea, some 5V fans sound like small jet engines!
 
