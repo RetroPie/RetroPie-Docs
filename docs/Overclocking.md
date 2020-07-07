@@ -191,7 +191,8 @@ To set voltage greater than `6` you must set `force_turbo=1` which voids the war
 
 #### Other Parameters
 
-There is a complex mathematical relationship between the clocks for the GPU core and the individual GPU components. Setting these without understanding their relationship may result in running a component faster or slower than intended. You are better to just set `core_freq` and `gpu_freq` to the same thing and don't worry about it. The individual components only get faster when they are used anyway. **Note** This section no longer applies. Currently the GPU core and individual GPU components do not have need to have related PLLs.
+There is a complex mathematical relationship between the clocks for the GPU core and the individual GPU components. Setting these without understanding their relationship may result in running a component faster or slower than intended. You are better to just set `gpu_freq` and not worry about it. The individual components only get faster when they are used anyway.
+**Note** This section no longer applies. Currently the GPU core and individual GPU components do not have need to have related PLLs.
 
 By setting `avoid_pwm_pll=1` (which negatively affects 3.5mm audio quality) you can overclock the individual GPU components with the parameters:
 
@@ -248,7 +249,7 @@ Some rules of thumb to start Raspberry Pi overclocking:
 
 If overclocking the CPU (`arm_freq`), start at the original speed and take it up in steps of 50MHz.
 
-If overclocking the GPU (`core_freq` and `gpu_freq`), start at `500` (or `400` for Pi 1)  and take both up in steps of 20MHz or 25MHz. Always set the two GPU frequencies to the same thing.
+If overclocking the GPU (`core_freq` or `gpu_freq`), start at `500` (or `400` for Pi 1)  and take them up in steps of 20MHz or 25MHz. Remember gpu_freq will overclock all of the GPU (including core_freq) and core_freq will over clock just the GPU processor itself. This also influences the L2 cache of the CPU which has very minor performance increase [mostly seen on the pi zero.](https://www.raspberrypi.org/documentation/configuration/config-txt/overclocking.md)
 
 For voltage, you are probably best to start with `over_voltage=2` then increase by `1` if the system becomes unstable.
 
