@@ -63,7 +63,7 @@ http://elinux.org/R-Pi_Troubleshooting#I_don.27t_know_the_root_password
 
 ### Reset ownership/permissions of /home/pi/RetroPie roms
 
-To reset all your rom file ownerships back to the "pi" user, enter the [RetroPie-Setup Script](https://github.com/retropie/retropie-setup/wiki/Updating-RetroPie)
+To reset all your rom file ownerships back to the "pi" user, enter the [RetroPie-Setup Script](Updating-RetroPie)
 
 navigate to **Configuration / Tools >> resetromdirs**
 
@@ -98,7 +98,7 @@ Note that failing to run startx after the installation may prevent other XWindow
 
 ### Why does shut down and reboot take ages?
 
-Previous to RetroPie 3.4, there was an issue whereby EmulationStation was terminated on reboot/shut down, rather than shut down 'cleanly'. This has now been fixed, so every time you reboot/shut down EmulationStation rewrites all metadata about your roms, so that play counts, last-played dates, etc., are saved. This has the side-effect of the causing the whole process to take longer, relative to how many ROMs you have. MAME/FBA ROMs can often form the bulk of libraries, so it might be helpful to remove clones by [rebuilding your set with a custom parent-only DAT](https://github.com/retropie/retropie-setup/wiki/Managing-ROMs).
+Previous to RetroPie 3.4, there was an issue whereby EmulationStation was terminated on reboot/shut down, rather than shut down 'cleanly'. This has now been fixed, so every time you reboot/shut down EmulationStation rewrites all metadata about your roms, so that play counts, last-played dates, etc., are saved. This has the side-effect of the causing the whole process to take longer, relative to how many ROMs you have. MAME/FBA ROMs can often form the bulk of libraries, so it might be helpful to remove clones by [rebuilding your set with a custom parent-only DAT](Managing-ROMs).
 
 An option has been added starting with RetroPie 3.7 to decide whether or not you want metadata saved on exit.
 ![main menu](https://cloud.githubusercontent.com/assets/10035308/14507387/a7ee93b8-017f-11e6-94f2-af5a2e158079.png)

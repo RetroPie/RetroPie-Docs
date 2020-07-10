@@ -349,7 +349,7 @@ Changes since 3.8.1:
 - lr-mame2003 updated with sample/nvram support and additional core settings.
 - Mupen64plus updated with fix for black screen with rice plugin.
 - Scummvm Improvements (updated to 1.8 with OpenGL and partial Myst support).
-- Updated Config Editor (https://github.com/RetroPie/RetroPie-Setup/wiki/Configuration-Editor).
+- Updated Config Editor (Configuration-Editor).
 - Updated Carbon and Pixel Themes and added default images to the RetroPie Menu.
 - Added “Other Settings” menu to Emulationstation with “save metadata on exit” and “parse gamelists only”. These options were added to mitigate the long boot and shutdown times with large romsets.
 - Various other improvements and fixes.
@@ -388,9 +388,9 @@ After taking into consideration the feedback from the vibrant RetroPie community
 
 ### Version 3.4: (January 19, 2016)
 
-Mostly fixes and improvements rather than new stuff this time folks. There were some problems with our RetroArch configuration defaults in RetroPie 3.3 which should be sorted now, and we have fixed up a few things that didn’t work correctly with Raspbian Jessie. We also have added early support for using the RetroPie-Setup script on a X86/X11 desktop setup, as well as some basic support for building EmulationStation & RetroArch + cores on the ODroid-C1. For more information regarding installation on x86 see https://github.com/RetroPie/RetroPie-Setup/wiki/RetroPie-Ubuntu-15.10-x86-Flavor.
+Mostly fixes and improvements rather than new stuff this time folks. There were some problems with our RetroArch configuration defaults in RetroPie 3.3 which should be sorted now, and we have fixed up a few things that didn’t work correctly with Raspbian Jessie. We also have added early support for using the RetroPie-Setup script on a X86/X11 desktop setup, as well as some basic support for building EmulationStation & RetroArch + cores on the ODroid-C1. For more information regarding installation on x86 see [RetroPie Ubuntu 15.10 x86 Flavor](RetroPie-Ubuntu-15.10-x86-Flavor).
 
-We are now using Raspbian Jessie as the base for the RetroPie image. Those using Wheezy can update RetroPie-Setup and emulators by following the instructions at https://github.com/RetroPie/RetroPie-setup/wiki/Updating-RetroPie - however moving to Jessie is recommended. As it takes time to pre-build binaries, in the future we will only be providing pre-built binaries for Raspbian Jessie.
+We are now using Raspbian Jessie as the base for the RetroPie image. Those using Wheezy can update RetroPie-Setup and emulators by following the instructions [here](Updating-RetroPie) - however moving to Jessie is recommended. As it takes time to pre-build binaries, in the future we will only be providing pre-built binaries for Raspbian Jessie.
 
 Changes since 3.3:
 

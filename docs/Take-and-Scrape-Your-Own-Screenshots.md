@@ -8,7 +8,7 @@ A few disclaimers first:
 
 - You have to be comfortable with basic Linux commands and simple file editing.
 
-- You need to have an updated version of RetroPie-Setup scripts (version 4+) ([updating instructions here](https://github.com/RetroPie/RetroPie-Setup/wiki/Updating-RetroPie)).
+- You need to have an updated version of RetroPie-Setup scripts (version 4+) ([updating instructions here](Updating-RetroPie)).
 
 - You can only create one screenshot per game
 
@@ -263,7 +263,7 @@ https://retropie.org.uk/forum/topic/3353/take-and-scrape-your-own-screenshots/
 
 https://github.com/RetroPie/EmulationStation/blob/master/GAMELISTS.md
 
-https://github.com/retropie/retropie-setup/wiki/scraper
+[Scraper](Scraper)
 
 https://github.com/sselph/scraper/wiki/Flags
 

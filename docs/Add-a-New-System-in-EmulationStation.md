@@ -1,6 +1,6 @@
 This tutorial is intended for those who wish to add a new system in EmulationStation. For example if you are looking to create a system for favourite games across different platforms or a separate system for roms hacks. 
 
-If you are looking to create a favourites lists **within** a system, then you may wish to consider the [child-friendly version of EmulationStation](https://github.com/retropie/retropie-setup/wiki/Child-friendly-EmulationStation#favorites****) which has this feature.
+If you are looking to create a favourites lists **within** a system, then you may wish to consider the [child-friendly version of EmulationStation](Child-friendly-EmulationStation) which has this feature.
 
 Before you begin, it is recommended that you back up your image, at least making a copy of the `/opt/retropie/configs` folder.
 
@@ -45,7 +45,7 @@ This is the folder where the roms in your new system will be located. This folde
 
 These define the list of extensions that EmulationStation will look for in the rom folder defined in `<path>` and the shell command executed when a game is selected. 
 
-Roms can be launched using shell scripts or the runcommand script. Both methods are involved so it is your choice how you wish to proceed. The entries for these tags are covered [below](https://github.com/RetroPie/RetroPie-Setup/wiki/Add-a-New-System-in-EmulationStation#step-31-launch-roms-with-the-runcommand-script) so check the steps required if you are unsure which is best for you.
+Roms can be launched using shell scripts or the runcommand script. Both methods are involved so it is your choice how you wish to proceed. The entries for these tags are covered [below](Add-a-New-System-in-EmulationStation#step-31-launch-roms-with-the-runcommand-script) so check the steps required if you are unsure which is best for you.
 
 `<platform>`
 
@@ -74,7 +74,7 @@ Once you have completed your entry for the new system, then save your custom `es
 
 Contra will now appear in the favorites section and launch as normal once you've completed tutorial.
 
-When you restart EmulationStation, the new system will be added together with your roms. (See below for [troubleshooting](https://github.com/RetroPie/RetroPie-Setup/wiki/Add-a-New-System-in-EmulationStation#troubleshooting))
+When you restart EmulationStation, the new system will be added together with your roms. (See below for [troubleshooting](Add-a-New-System-in-EmulationStation#troubleshooting))
 
 ### Step 2. Create a Theme for the New System
 
@@ -92,7 +92,7 @@ Here is the Hacks system using the Carbon theme where only a new vector logo has
 
 You can find more information on creating themes and images or logos at the following links:
 
-[Creating Your Own Emulation Theme](https://github.com/retropie/retropie-setup/wiki/Creating-Your-Own-EmulationStation-Theme)
+[Creating Your Own Emulation Theme](Creating-Your-Own-EmulationStation-Theme)
 
 [Video Tutorial on creating Vector (svg) logos from Bitmaps (png)](https://www.youtube.com/watch?v=q9Fk6OzX86U)
 
@@ -121,7 +121,7 @@ Say that you now want to add the SNES rom hack [Super Metroid: Redesign](http://
 
 Add .smc and .SMC (or any relevant extensions) to the `<extension>` tag in your custom `es_systems.cfg file `and restart EmulationStation.
 
-To launch Super Metroid: Redesign from EmulationStation, you will need to bring up the [runcommand menu](https://github.com/retropie/retropie-setup/wiki/runcommand) by pressing any key on a keyboard or button 0 on your controller before the game begins. In the menu, choose the lr-snes9x2010 as the emulator for your rom and then launch.
+To launch Super Metroid: Redesign from EmulationStation, you will need to bring up the [runcommand menu](Runcommand) by pressing any key on a keyboard or button 0 on your controller before the game begins. In the menu, choose the lr-snes9x2010 as the emulator for your rom and then launch.
 
 This process can be repeated for more systems by adding launch commands to `emulators.cfg` and using the runcommand menu to select the appropriate emulator for each rom. Make sure to add the extensions for your roms to the `<extension>` entry in your custom `es_systems.cfg` file.
 
@@ -138,7 +138,7 @@ If you wish to launch your games using shell scripts, then the `<extension>` and
 
 For each game, a shell script will need to be created in the roms folder as defined in the `<path>` tag  in in your custom `es_systems.cfg` file. 
 
-Using the example from the [Doom Mods](https://github.com/retropie/retropie-setup/wiki/Doom#to-launch-doom-mods-pwads) page, the shell script to launch the Batman Doom mod in pr-boom would be:
+Using the example from the [Doom Mods](Doom#to-launch-doom-mods-pwads) page, the shell script to launch the Batman Doom mod in pr-boom would be:
 
 	#!/bin/bash
 	/opt/retropie/supplementary/runcommand/runcommand.sh 0 "/opt/retropie/emulators/retroarch/bin/retroarch -L /opt/retropie/libretrocores/lr-prboom/prboom_libretro.so --config /opt/retropie/configs/ports/doom/retroarch.cfg /home/pi/RetroPie/roms/doom/batman/doom2.wad" "lr-prboom"

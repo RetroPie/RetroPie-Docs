@@ -8,7 +8,7 @@ _OpenTyrian is a port of the DOS shoot-em-up Tyrian. Jason Emery generously gave
 ***
 ## Emulator: [OpenTyrian](https://bitbucket.org/opentyrian/opentyrian/wiki/Home)
 
-This emulator can be installed from the [retropie setup script](https://github.com/RetroPie/RetroPie-Setup/wiki/Updating-RetroPie)
+This emulator can be installed from the [retropie setup script](Updating-RetroPie)
 
 ## Controls:
 
@@ -29,7 +29,7 @@ You can configure controllers in-game by starting a game in any mode, episode or
 
 ![opentyrian-joystick](https://cloud.githubusercontent.com/assets/8166945/21713337/6231b3ba-d3f1-11e6-870c-cb090ed45ce5.png)
 
-Bear in mind that the button and axes numbering in OpenTyrian is the number as reported by [jstest](https://github.com/RetroPie/RetroPie-Setup/wiki/RetroArch-Configuration#determining-button-values) +1. For example, button 0 on your controller will register as `BTN 1`.
+Bear in mind that the button and axes numbering in OpenTyrian is the number as reported by [jstest](RetroArch-Configuration#determining-button-values) +1. For example, button 0 on your controller will register as `BTN 1`.
 
 To re-configure, use the arrow keys on a keyboard to select an action, FIRE, CHANGE FIRE etc. Press ENTER on a keyboard to highlight and then the button on your game controller that you wish to map. Repeat for other buttons.
 

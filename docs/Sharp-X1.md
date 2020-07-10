@@ -9,7 +9,7 @@ _The X1, sometimes called the Sharp X1, is a series of home computers released b
 | [lr-x1](https://github.com/r-type/xmil-libretro) | x1 | .dx1 .zip .2d .2hd .tfd .d88 .88d .hdm .xdf .dup .cmd | IPLROM.X1, IPLROM.X1T |  /opt/retropie/configs/x1/retroarch.cfg |
 
 ## Emulator: [lr-x1](https://github.com/r-type/xmil-libretro)
-This emulator is a work in progress.  It can be installed from the experimental menu of the [RetroPie-Setup script.](https://github.com/RetroPie/RetroPie-Setup/wiki/Updating-RetroPie#using-the-retropie-setup-script)
+This emulator is a work in progress. It can be installed from the experimental menu of the [RetroPie-Setup script](Updating-RetroPie#using-the-retropie-setup-script).
 
 Note that the emulator freezes if you attempt to load a ROM through the emulator's built-in GUI.
 

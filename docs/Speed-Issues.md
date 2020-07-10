@@ -30,7 +30,7 @@ Some graphic effects in some games can cause lag when displaying specific screen
 
 ### PlayStation, N64, Dreamcast, PSP
 
-Due to limited processing power and/or lack of emulator efficiency, some games will never achieve playable speeds. PlayStation runs very good on Pi 3, but N64 emulation is hit or miss, mostly miss. If you want to play it at reasonable speeds, try [overclocking](https://github.com/RetroPie/RetroPie-setup/wiki/Speed-Issues#overclocking) in conjunction with a [heatsink](https://github.com/RetroPie/RetroPie-setup/wiki/Overclocking#heatsinks).
+Due to limited processing power and/or lack of emulator efficiency, some games will never achieve playable speeds. PlayStation runs very good on Pi 3, but N64 emulation is hit or miss, mostly miss. If you want to play it at reasonable speeds, try [overclocking](#overclocking) in conjunction with a [heatsink](Overclocking#heatsinks).
 
 ## Configuration Improvements
 
