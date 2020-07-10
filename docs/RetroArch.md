@@ -4,7 +4,7 @@
 
 RetroArch is the Frontend for the Libretro API and makes a up a large portion of the emulators included in RetroPie.
 
-The menu system is a graphical way of making changes to retroach configurations and has 3 different drivers (RGUI, XMB, GLUI) but the RGUI driver is the most common.   RetroArch configurations are kept in a file called retroarch.cfg by default.
+The menu system is a graphical way of making changes to RetroArch configurations and has 4 different drivers (RGUI, XMB, GLUI, Ozone), but the RGUI driver is the most common. RetroArch configurations are kept in a file called r`etroarch.cfg` by default.
 
 ### Default retroarch.cfg
 
