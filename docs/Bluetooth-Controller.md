@@ -43,8 +43,7 @@ You will get a window popping up telling you if the connection was successful or
 4. Buy a new BT adapter and put it to your Raspberry. Add `dtoverlay=pi3-disable-bt` in `/boot/config.txt` to disable internal BT module (ultima ratio, speeds up communication, extents range and speed depending on your BT adapter model)
 
 ## Manual Bluetooth Configuration
-## !!Please note this is for pre v4.0 RetroPie - New 8bitdo details here!!:
-https://github.com/RetroPie/RetroPie-Setup/wiki/8bitdo-Controller
+## !!Please note this is for pre v4.0 RetroPie - New 8bitdo details [here](8Bitdo-Controller)!!
 
 
 

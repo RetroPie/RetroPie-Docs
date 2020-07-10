@@ -52,7 +52,7 @@ It is possible to customise controls for individual games using the Amiberry UI.
 
 ## Emulator: [lr-puae](https://github.com/libretro/libretro-uae)
 
-lr-puae is an experimental emulator.  It can be installed from the experimental section of the [RetroPie-Setup Script.](https://github.com/RetroPie/RetroPie-Setup/wiki/Updating-RetroPie#using-the-retropie-setup-script)
+lr-puae is an experimental emulator.  It can be installed from the experimental section of the [RetroPie-Setup Script.](Updating-RetroPie#using-the-retropie-setup-script)
 
 ### BIOS
 

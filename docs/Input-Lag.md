@@ -75,7 +75,7 @@ video_frame_delay = 4
 video_max_swapchain_images = 2
 ```
 
-These settings can be applied at a [system level, or even a game-specific level](https://github.com/RetroPie/RetroPie-Setup/wiki/RetroArch-Configuration#config-hierarchy) leaving all other systems and/or games unaffected if so desired. For those who wish to make use of shaders, overlays and the OSD, simply remove `video_driver = "dispmanx"`. When used with a less demanding core, `video_frame_delay` can likely be increased to some degree, with the maximum limit being 15.
+These settings can be applied at a [system level, or even a game-specific level](RetroArch-Configuration#config-hierarchy) leaving all other systems and/or games unaffected if so desired. For those who wish to make use of shaders, overlays and the OSD, simply remove `video_driver = "dispmanx"`. When used with a less demanding core, `video_frame_delay` can likely be increased to some degree, with the maximum limit being 15.
 
 Although the SNES cores should only ever have these settings applied at a game level, below is a graph depicting the effect they can potentially have, using 'Super Mario World' as an example.
 

@@ -95,7 +95,7 @@ Buttons 2, 5, 8:  Lower left action button, left controller
 
 jzIntv maps the first joystick's first hat's 8 directions to the numeric keypad on the right controller, making the hat usable in games such as Night Stalker and TRON Deadly Discs. [[Source](http://spatula-city.org/~im14u2c/intv/jzintv-1.0-beta3/doc/jzintv/joystick.txt)]
 
-It is possible to remap these using a keyboard hack file. Instructions on creating these can be found [HERE](https://github.com/RetroPie/RetroPie-Setup/wiki/Mapping-a-Controller-for-Intellivision). Keys 0, Clear and Enter on the numeric keypad are not mapped by default so a keyboard hack file would be required to this.
+It is possible to remap these using a keyboard hack file. Instructions on creating these can be found [HERE](Mapping-a-Controller-for-Intellivision). Keys 0, Clear and Enter on the numeric keypad are not mapped by default so a keyboard hack file would be required to this.
 
 #### Keyboard Controls
 

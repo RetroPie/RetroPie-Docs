@@ -1,4 +1,4 @@
-To map a controller in jzintv, you need to create a Keyboard Hack File which is a text file that contains the mappings. This is a dirty fix meaning that you will have to manually create and edit text files on your pi. It would be useful that you are familiar with using SFTP and Samba shares for accessing files on your pi. Details can be found at the [wiki](https://github.com/RetroPie/RetroPie-Setup/wiki/First-Installation#sftp-needs-an-active-internet-connection).
+To map a controller in jzintv, you need to create a Keyboard Hack File which is a text file that contains the mappings. This is a dirty fix meaning that you will have to manually create and edit text files on your pi. It would be useful that you are familiar with using SFTP and Samba shares for accessing files on your pi. Details can be found at the [wiki](First-Installation#sftp-needs-an-active-internet-connection).
 
 ## Find Joystick Events
 
@@ -242,7 +242,7 @@ For games that require Intellivoice support, add an additional "jzintv-voice" li
 <pre>jzintv-voice = "/opt/retropie/emulators/jzintv/bin/jzintv -p /home/pi/RetroPie/BIOS -q --kbdhackfile=/home/pi/RetroPie/roms/intellivision/hackfile.cfg %ROM%" -v1</pre>
 For games that require Intellivision ECS support, add an additional "jzintv-ecs" line that includes the '-s1' parameter to `/opt/retropie/configs/intellivision/emulators.cfg` per below:
 <pre>jzintv-ecs = "/opt/retropie/emulators/jzintv/bin/jzintv -p /home/pi/RetroPie/BIOS -q --kbdhackfile=/home/pi/RetroPie/roms/intellivision/hackfile.cfg %ROM%" -s1</pre>
-Note that games requiring Intellivoice and/or ECS support must be assigned to the lines defined above using the [Runcommand Launch Menu](https://github.com/RetroPie/RetroPie-Setup/wiki/runcommand).
+Note that games requiring Intellivoice and/or ECS support must be assigned to the lines defined above using the [Runcommand Launch Menu](Runcommand#runcommand-launch-menu).
 
 **Screen and Resolution Settings**
 

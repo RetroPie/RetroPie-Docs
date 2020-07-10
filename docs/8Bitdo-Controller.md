@@ -34,11 +34,11 @@ If you want to run this via the command line, quit Emulation Station by pressing
 ![Bluetooth Menu](https://s22.postimg.cc/ofy9ezdb5/2_Bluetooth_Menu.jpg)
 
 **4)** **Make sure the hack option is turned "off"**  
-You need to make sure your controller is running the relevant [firmware](https://github.com/RetroPie/RetroPie-Setup/wiki/8Bitdo-Controller#firmware-versions-for-8bitdo-controllers) for this to work correctly, the versions are shown in this wiki article.
+You need to make sure your controller is running the relevant [firmware](8Bitdo-Controller#firmware-versions-for-8bitdo-controllers) for this to work correctly, the versions are shown in this wiki article.
 ![Hack Off](https://s22.postimg.cc/df349yl29/2_5_Turn_hack_off.jpg)
 
 **5)** Make sure your controller is powered on and searching for a connection.
-With the FC30 Pro, this is done by holding the power button (left-hand side of the base of the controller) on until the side blue lights illuminate. With the SFC30/SN30/SF30/N30/F30/NES30 (with [firmware](https://github.com/RetroPie/RetroPie-Setup/wiki/8Bitdo-Controller#firmware-versions-for-8bitdo-controllers) v4.0+), this is done by first powering on the controller by holding the Start button for one second until the blue LED flashes, then hold the Select button for 3 seconds. The blue LED will flash rapidly to indicate pairing mode.
+With the FC30 Pro, this is done by holding the power button (left-hand side of the base of the controller) on until the side blue lights illuminate. With the SFC30/SN30/SF30/N30/F30/NES30 (with [firmware](8Bitdo-Controller#firmware-versions-for-8bitdo-controllers) v4.0+), this is done by first powering on the controller by holding the Start button for one second until the blue LED flashes, then hold the Select button for 3 seconds. The blue LED will flash rapidly to indicate pairing mode.
 
 **6)** Choose the "Register and Connect to Bluetooth Device"
 ![Main Bluetooth Menu](https://s22.postimg.cc/lai92ik2p/3_Main_Bluetooth_Menu.jpg)

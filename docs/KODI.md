@@ -74,7 +74,7 @@ If you are experiencing problems with your Xbox controls, see the following exam
 
 ## Kodi as its own system instead of in ports
 
-The first method here is a cleaner method that won't mess with the RetroPie setup script updates. (Note: in the future, you will have to manually update `/home/pi/.emulationstation/es_systems.cfg`, as it will not be overwritten by RetroPie updates.) Once you've installed Kodi from the optional menu of the setup script, drop into a terminal with F4 or access the pi over [SSH](https://github.com/retropie/retropie-setup/wiki/ssh).
+The first method here is a cleaner method that won't mess with the RetroPie setup script updates. (Note: in the future, you will have to manually update `/home/pi/.emulationstation/es_systems.cfg`, as it will not be overwritten by RetroPie updates.) Once you've installed Kodi from the optional menu of the setup script, drop into a terminal with F4 or access the pi over [SSH](SSH).
 
 Create an es_systems.cfg file so that Kodi will show up in EmulationStation:
 

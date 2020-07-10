@@ -402,7 +402,7 @@ Having completed this step, you will now want to restart Emulation Station, navi
 
 lr-prboom utilises normal Retroarch control configurations found in the RetroArch menu by pressing 'Hotkey Enable+X' on your controller after the game software has launched. From the RetroArch Quick Menu, navigate to 'Controls'.
 
-For more information on custom RetroArch controls see: [RetroArch Configuration](https://github.com/retropie/retropie-setup/wiki/retroarch-configuration)
+For more information on custom RetroArch controls see: [RetroArch Configuration](RetroArch-Configuration)
 
 ### ZDoom Controls
 

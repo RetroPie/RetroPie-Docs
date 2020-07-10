@@ -29,7 +29,7 @@ Add custom RetroArch controls to the `retroarch.cfg` file in
 ```shell
 /opt/retropie/configs/quake/retroarch.cfg
 ```
-For more information on custom RetroArch controls see: [RetroArch Configuration](https://github.com/RetroPie/RetroPie-Setup/wiki/RetroArch-Configuration)
+For more information on custom RetroArch controls see: [RetroArch Configuration](RetroArch-Configuration)
 
 `tyrquake` does not support joystick/gamepad input, so is suitable only for those with a keyboard and mouse.
 

@@ -50,7 +50,7 @@ As of August 4, 2016, [mame2003-libretro](https://github.com/libretro/mame2003-l
 
 If your spinner rotates in the wrong direction (e.g. happens with Spintrak with own dedicated USB interface) you need to enter the Mame menu (thru TAB on your keyboard) and reverse the direction in the Analog input options.
 
-If you enable a core option ([described here](https://github.com/RetroPie/RetroPie-Setup/wiki/lr-mame2003#2-player-dialspinner-devices)), it is possible to share the mouse input to effectively copy the Y axis to the Player 2 DIAL control. This makes sense, as most interfaces are for either trackballs or two spinners. 
+If you enable a core option ([described here](lr-mame2003#2-player-dialspinner-devices)), it is possible to share the mouse input to effectively copy the Y axis to the Player 2 DIAL control. This makes sense, as most interfaces are for either trackballs or two spinners. 
 
 This flexibility is sufficient for most games, but there are exceptions on complex control panels. If you need to map multiple trackballs, or your Player 1 and Player 2 spinners are on different mouse inputs, you will need to assign the indices accordingly following the details above or use AdvanceMAME to map your devices to the proper controls.
 

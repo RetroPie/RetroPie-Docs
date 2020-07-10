@@ -2,13 +2,13 @@
 
 This guide is a manual process to recreate the stock SD image RetroPie released on the [RetroPie Website](https://retropie.org.uk/download/) for the Raspberry Pi. If you aren't comfortable with the terminal you would be wise to just use the RetroPie SD image provided. 
 
-If you are trying to follow this guide because you want the PIXEL desktop environment, you can already install it on the stock RetroPie SD image by following the guide [here](https://github.com/RetroPie/RetroPie-Setup/wiki/FAQ#where-did-the-desktop-go)
+If you are trying to follow this guide because you want the PIXEL desktop environment, you can already install it on the stock RetroPie SD image by following the guide [here](FAQ#where-did-the-desktop-go)
 
-RetroPie can also be installed on most debian based distros, a guide for installing RetroPie on Ubuntu on a PC can be found [here](https://github.com/retropie/retropie-setup/wiki/RetroPie-Ubuntu-16.04-LTS-x86-Flavor)
+RetroPie can also be installed on most debian based distros, a guide for installing RetroPie on Ubuntu on a PC can be found [here](RetroPie-Ubuntu-16.04-LTS-x86-Flavor)
 
 The RetroPie SD image is built on top of Raspbian lite (Raspbian without the PIXEL desktop environment) RetroPie can also be installed on top of the full Raspbian but you can't run Retropie and PIXEL at the same time, you will need to logout of the PIXEL desktop environment in order to run emulationstation and the emulators RetroPie installs. 
 
-You can download a fresh Raspbian Image from [here](http://www.raspberrypi.org/downloads). The Raspbian image can be installed the same way as the RetroPie image as described [here](https://github.com/RetroPie/RetroPie-Setup/wiki/First-Installation)). 
+You can download a fresh Raspbian Image from [here](http://www.raspberrypi.org/downloads). The Raspbian image can be installed the same way as the RetroPie image as described [here](First-Installation)). 
 
 Raspbian now automatically expands the filesystem so that step is no longer necessary.
 

@@ -206,7 +206,7 @@ You can also log in as root if you wish to change more files than just the roms,
 
 ## AUDIO
 
-In general RetroPie audio will work out of the box without any tweaking, but if you have audio issues you should follow the [instructions on the Sound Issues page](https://github.com/RetroPie/RetroPie-Setup/wiki/Sound-Issues) to fix them. You will most likely need to visit the [Sound Issues](https://github.com/RetroPie/RetroPie-Setup/wiki/Sound-Issues) page if you are using a USB Audio device, or if you are using an aftermarket RPi HAT add-on audio device (such as a Justboom sound card).
+In general RetroPie audio will work out of the box without any tweaking, but if you have audio issues you should follow the [instructions on the Sound Issues page](Sound-Issues) to fix them. You will most likely need to visit the [Sound Issues](Sound-Issues) page if you are using a USB Audio device, or if you are using an aftermarket RPi HAT add-on audio device (such as a Justboom sound card).
 
 ## PLAY!
 

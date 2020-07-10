@@ -62,7 +62,7 @@ input_l2_axis = "+2"
 
 **Note! There are known incompatibilities with this driver when used in it's default configuration with the latest kernel. As such, the xpad drive is currently the best option to simply make an Xbox 360 controller operational in RetroPie.**
 
-**However, these incompatibilities are not an issue when [using xboxdrv as a calibration and key-mapping tool](https://github.com/retropie/retropie-setup/wiki/Universal-Controller-Calibration-&-Mapping-Using-xboxdrv) for almost any gamepad, including the Xbox 360 controller. When used this way, it's even possible for both xpad and xboxdrv to coexist together.**
+**However, these incompatibilities are not an issue when [using xboxdrv as a calibration and key-mapping tool](Universal-Controller-Calibration-&-Mapping-Using-xboxdrv) for almost any gamepad, including the Xbox 360 controller. When used this way, it's even possible for both xpad and xboxdrv to coexist together.**
 
 Access the [RetroPie Setup Script](Updating-RetroPie) and navigate to **Manage Packages >> Manage Driver Packages >> xboxdrv** 
 
@@ -75,7 +75,7 @@ Access the [RetroPie Setup Script](Updating-RetroPie) and navigate to **Manage P
 5. **Set dwc_otg.speed=1 in /boot/config.txt:** May help if controller is being glitchy.
 6. **Remove dwc_otg.speed=1 from /boot/config.txt:** Removes the config.
 
-**After you have enabled the driver and rebooted you'll need to reconfigure your controller(s) in EmulationStation as described on the [first installation page](https://github.com/RetroPie/RetroPie-Setup/wiki/First-Installation#controller-configurations)**
+**After you have enabled the driver and rebooted you'll need to reconfigure your controller(s) in EmulationStation as described on the [first installation page](First-Installation#controller-configurations)**
 
 Alternatively if you prefer you can manually install it..
 

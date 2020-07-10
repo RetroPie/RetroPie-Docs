@@ -4,7 +4,7 @@
 SuperTux is a 2d sidescrolling platformer with marioesque tones of gameplay. It features the Linux mascot Tux the penguin.
 
 ***
-This emulator is experimental and can be installed from the experimental menu of the [retropie setup script](https://github.com/RetroPie/RetroPie-Setup/wiki/Updating-RetroPie)
+This emulator is experimental and can be installed from the experimental menu of the [retropie setup script](Updating-RetroPie)
 
 ### Controls
 |Control| 	Default mapping| 	Description|
