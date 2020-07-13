@@ -25,11 +25,8 @@ markdown_extensions:
 theme:
   name: 'material'
   language: 'en'
-  logo: 'images/logo.svg'
+  logo: 'images/logo.png'
   favicon: 'images/logo.png'
-  palette:
-    primary: 'red'
-    accent: 'red'
 
 # Customisation
 extra:
