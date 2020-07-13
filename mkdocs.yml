@@ -183,6 +183,7 @@ nav:
 - Advanced Configuration:
     - BIOS: BIOS.md
     - Configuration Editor: Configuration-Editor.md
+    - Input Lag: Input-Lag.md
     - Memory Split: Memory-Split.md
     - Overclocking: Overclocking.md
     - Overscan: Overscan.md
@@ -194,6 +195,7 @@ nav:
 - RetroArch:
     - RetroArch: RetroArch.md
     - RetroArch Controller Configuration: RetroArch-Configuration.md
+    - RetroArch Core Options: RetroArch-Core-Options.md
     - RetroAchievements: RetroAchievements.md
     - Cheats: Cheats.md
     - Netplay: Netplay.md
