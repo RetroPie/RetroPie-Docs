@@ -6,7 +6,7 @@ Github wiki to mkdocs hosted on github pages
 
 1.  mkdocs installation can be found here: [https://www.mkdocs.org/#installation](https://www.mkdocs.org/#installation).
 
-Make sure to use python3/pip3 or install will not work.
+    Make sure to use python3/pip3 or install will not work.
 
 2.  Install dependency packages
 
