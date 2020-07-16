@@ -2,7 +2,7 @@
 
 Github wiki to mkdocs hosted on github pages
 
-#installation of mkdocs
+# installation of mkdocs
 
 1.  mkdocs installation can be found here: [https://www.mkdocs.org/#installation](https://www.mkdocs.org/#installation).
 
