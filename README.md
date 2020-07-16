@@ -10,6 +10,4 @@ Github wiki to mkdocs hosted on github pages
 
 2.  Install dependency packages
 
-`pip install mkdocs-material`
-`pip install mdx_truly_sane_lists`
-`pip install git+https://github.com/cmitu/mkdocs-altlink-plugin/`
+`pip install mkdocs-material mdx_truly_sane_lists git+https://github.com/cmitu/mkdocs-altlink-plugin/`
