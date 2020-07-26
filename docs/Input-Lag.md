@@ -5,7 +5,18 @@ Typically, emulated games come from the CRT and wired controller era. Digital co
 Input Lag, therefore, can be a real problem in a RetroPie environment, but fortunately there are a number of simple fixes:
 
 ## Set TV to 'GAME MODE'
-Almost every HDTV or monitor will have a way of setting any given AV channel to a special mode that cuts out all non-essential post-processing, ensuring the lowest possible response time. This mode is generally called 'GAME MODE', and can be activated by switching to the AV channel used for RetroPie, and searching in the display or picture options for such an option.
+Almost every HDTV or monitor will have a way of setting any given AV channel to a special mode that cuts out all non-essential post-processing, ensuring the lowest possible response time. This mode is generally called 'GAME MODE', and can be activated in two ways:
+
+### Via TV
+Switch to the AV channel used for RetroPie, and search in the display or picture options for such an option.
+
+### Via /boot/config.txt
+Add the following line to `/boot/config.txt` to cause newer TVs to automatically attempt to request 'GAME MODE':
+```
+edid_content_type=4
+```
+
+**NOTE**: Some TVs are known to look worse via 'GAME MODE'; typically those that have atypical native panel resolusions like 1366x768, where it may force them to run at 1080p/720p, causing ugly scaling.
 
 ## Use HDTV’s native display resolution
 If RetroPie outputs a resolution lower or higher than the maximum that your TV supports, your TV will always up or downscale the image to that maximum. Such operations are often VERY slow. 
