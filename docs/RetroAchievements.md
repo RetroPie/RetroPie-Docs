@@ -90,8 +90,16 @@ A libretro core compatibility list with RetroAchievements can be found in [libre
 
 A common user question is "How do I increase the size of the RetroAchievements messages on RetroArch?".
 
-Actually this configuration is done by changing the font size of all the RetroArch messages, not only the RetroAchievements related ones. How to do it:
+Actually this configuration is done by changing the font size of all the RetroArch widgets, not only the RetroAchievements related ones. How to do it:
 
-Open the file `/opt/retropie/configs/all/retroarch.cfg` and change the line with `video_font_size`. Values between 26-32 should be good on a 40" TV.
+Open the file `/opt/retropie/configs/all/retroarch.cfg` and add the following lines:
+```
+# Change Widget Size
+menu_widget_scale_auto = "false"
+menu_widget_scale_factor = "2.000000"
+menu_widget_scale_factor_windowed = "2.000000"
+```
 
-If you are used to configure RetroArch with RGUI (not the default on RetroPie), you can go to `Settings` -> `Onscreen Display` -> `OSD Message Size` and change it.
+If you prefer to configure RetroArch with RGUI (per core), you can go to `Settings` -> `On-screen Display` -> `On-screen Notifications `:
+* Set `Auto Scale Graphics Widgets` to `OFF`
+* Set `Graphics Widgets Scale Override to` to what you like.
