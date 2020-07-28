@@ -103,3 +103,5 @@ menu_widget_scale_factor_windowed = "2.000000"
 If you prefer to configure RetroArch with RGUI (per core), you can go to `Settings` -> `On-screen Display` -> `On-screen Notifications `:
 * Set `Auto Scale Graphics Widgets` to `OFF`
 * Set `Graphics Widgets Scale Override to` to what you like.
+
+If you have disabled RetroArch widgets and are using standard notifications, open the file `/opt/retropie/configs/all/retroarch.cfg` and change the line with `video_font_size`. Values between 26-32 should be good on a 40" TV.
