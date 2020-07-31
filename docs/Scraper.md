@@ -304,6 +304,9 @@ When using the **Skyscraper** module from the RetroPie-Setup script, the followi
 
   * _Cache marquees:_ toggles the download and caching of marquees from the scraping source into the resource cache.  
   Default: _Enabled_
+  
+  * _Scrape only missing:_ runs the scraper only for games/roms without any scraped information/media in the resource cache.
+  Default: _Disabled_
 
   * _Force cache refresh:_ **Skyscraper** caches the media retrieved from online sources to speed up scraping and to combine multiple sources of information to give you the best scraped information available. This option forces the scraper to bypass the resource cache and re-download the resources from the online sources during the gathering action.  
   Default: _Disabled_.  
