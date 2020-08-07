@@ -59,7 +59,7 @@ As per Dosbox' documentation: [DOS/32A (DOS/32 Advanced DOS Extender)](https://d
 
 **Note**: **_not all games will work with DOS/32A_**. For example, Shadowcaster is incompatible with it because RAVEN.EXE run with DOS/32A is unable to find the A32SBDG.DLL file that is in the same directory, while with DOS4GW it can. 
 
-[**DOS/32A compatibility list**](https://github.com/dosbox-staging/dosbox-staging/wiki/DOS32A-compatibility-list)
+[**DOS/32A compatibility list**](https://github.com/dosbox-staging/dosbox-staging/wiki/DOS-32A-compatibility-list)
 
 Check [Dosbox' documentation](https://www.dosbox.com/wiki/TOOLS:DOS32A) to get further information as well as a guide on how to proceed.
 
