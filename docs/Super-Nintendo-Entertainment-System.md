@@ -45,7 +45,7 @@ Setting the Runcommand's resolution setting for this emulator to a low 4:3 resol
 
 ### snes9x-rpi
 
-An optional emulator that is identical to PiSNES in that it is based on the same version of SNES9x, has the same inaccurate sound emulation, and SFX/SA1/SFX2 games do not work. Where this emulator differs is that it doesn't have the option of exiting the emulator by using Select+Start and requires a keyboard to exit without [advanced controller configuration](https://retropie.org.uk/docs/Universal-Controller-Calibration-&-Mapping-Using-xboxdrv/). How well it performs compared to PiSNES is currently unknown.
+An optional emulator that is identical to PiSNES in that it is based on the same version of SNES9x, has the same inaccurate sound emulation, and SFX/SA1/SFX2 games do not work. Where this emulator differs is that it requires a keyboard to exit without [advanced controller configuration](Universal-Controller-Calibration-&-Mapping-Using-xboxdrv). How well it performs compared to PiSNES is currently unknown.
 
 ## ROMS
 

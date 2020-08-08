@@ -410,7 +410,7 @@ Next, we make the script executable:
 sudo chmod +x /opt/retropie/configs/all/runcommand-onstart.sh
 ```
 
-For some emulators we could face some problem, i have a PS3 controller recognized as input device `event2`, when i execute xboxdrv the controller is recognized as input device `event3`. The system now see 2 controller device, the PS3 as controller with id 0 and an Xbox360 controller with id 1, for the emulator you are now using the controller for player2 and this will cause some problem, for example you can only start a 2 players game, you can't quit the emulation pushing 'select+start'. To solve the problem we have to specify on `retroarch.cfg` the id of the controller used by player1 and player2.
+For some emulators we could face some problem, i have a PS3 controller recognized as input device `event2`, when i execute xboxdrv the controller is recognized as input device `event3`. The system now see 2 controller device, the PS3 as controller with id 0 and an Xbox360 controller with id 1, for the emulator you are now using the controller for player2 and this will cause some problem, for example you can only start a 2 players game, you can't quit the emulation via [Hotkey combination](Controller-Configuration#hotkey) **Hotkey+Start**. To solve the problem we have to specify on `retroarch.cfg` the id of the controller used by player1 and player2.
 
 This is the configuration for Final Burn Alpha, we have to add `input_playerx_joypad_index = "x"` for every controller between `input_remapping_directory = "/opt/retropie/configs/fba/"` and `#include "/opt/retropie/configs/all/retroarch.cfg"` where the first X is the player number, and the secon X is the controller ID.
 

@@ -16,23 +16,19 @@ A few disclaimers first:
 
 - If using the methods described here, the [Runcommand's Launch Menu Art option](Runcommand#configuring-runcommand) won't show the scraped screenshot image.
 
-
 ### Take a Screenshot
 
 Before talk about the "scraping your own screenshots" trick, we need to know how to take screenshots in RetroArch. If you already know how to do it, you can go to the [next section](#runcommand).
 
-
 #### via RGUI
 
-Access the RGUI (usually with `Select+X`) and go to `Quick Menu` -> `Take Screenshot`.
+Access the RGUI using [Hotkey Combination](Controller-Configuration#hotkey) **Hotkey+X** and go to **Quick Menu** > **Take Screenshot**.
 
-
-#### via hotkeys
+#### via Hotkeys
  
-The default screenshot button is `F8` which means if you've configured your keyboard through emulationstation you have to hold the hotkey button (by default the button you configured as select) and then press F8. If you want to have it so that you can take a screenshot with your controller you'll change the screenshot button to a button that isn't already being used for hotkey behaviour. To do this you'll edit the overall or global `retroarch.cfg` at
-`/opt/retropie/configs/all/retroarch.cfg`
+The default screenshot button is **F8** which means if you've configured your keyboard through emulationstation you have to hold the [Hotkey](Controller-Configuration#hotkey) button and then press F8. If you want to have it so that you can take a screenshot with your controller you'll change the screenshot button to a button that isn't already being used for Hotkey behaviour via [RetroArch Configuration](RetroArch-Configuration#default-joypad-hotkeys)
 
-The key line you want to change is ~line 580
+The line to change is:
 ```
 # Take screenshot
 # input_screenshot = f8
@@ -43,9 +39,7 @@ So in my case I changed it to my right analogue thumb on my xbox controller (num
 input_screenshot_btn = "12"
 ```
 
-So in game when I want to take a screenshot I hold select (or rather the back button on the xbox controller) and press the right analogue thumb.
-
-
+This results in a new Hotkey combination of **Hotkey+Right Thumb** = **Take Screenshot**.
 
 ## runcommand
 
@@ -84,7 +78,6 @@ Now you have to choose which one you want to follow (or read about both):
 - [runcommand-onend.sh](#runcommand-onendsh)
 - ["I didn't like how it looks! I want my old images back and disable this stuff!"](#i-didnt-like-how-it-looks-i-want-my-old-images-back-and-disable-this-stuff)
 
-
 ## METHOD 1
 
 ### runcommand-onstart.sh
@@ -119,9 +112,7 @@ if ! grep -q "screenshot_directory" "$systemretroarch"; then
     iniSet "screenshot_directory" "$imgdir" "$systemretroarch"
 fi
 ```
-
 Now you can play your games and take your screenshots and it will fill your images folder with your screenshots. 
-
 
 ### Create gamelist with Sselphs scraper
 
@@ -179,10 +170,7 @@ screenshot_directory = "/home/pi/RetroPie/roms/snes/images/"
 
 #include "/opt/retropie/configs/all/retroarch.cfg"
 ```
-
 then we would take our screenshots and use sselphs scraper to generate our gamelist.xml's as above.
-
-
 
 ## METHOD 2
 
@@ -242,11 +230,9 @@ mv screeper.sh /opt/retropie/configs/all/runcommand-onend.sh
 
 Now you can play your game and take your screenshots. The most recent screenshot will be put in your screenshots folder and will be the emulationstation image for this game.
 
-
 ### Restart emulationstation
 
 You have to restart emulationstation in order to see the changes. If all went according to plan, your screenshots will be the game images!
-
 
 ### "I didn't like how it looks! I want my old images back and disable this stuff!"
 

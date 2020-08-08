@@ -197,45 +197,6 @@ In retropie setup script>>Configuration / tools>>autostart
 
 See [Overscan](Overscan)
 
-### How do I change which buttons to press to exit an emulator with a controller?
-
-Hotkeys are combinations of buttons you can press in order to access options such as saving, loading, and exiting games. The following defaults are set automatically the first time you set up your controller from emulationstation.
-
-#### Default joypad hotkeys:
-
-Hotkeys | Action | Code Example
-:---: | :---: | :---: 
-Select | Hotkey | input_enable_hotkey = "6"
-Select+Start | Exit | input_exit_emulator_btn = "7"
-Select+Right Shoulder | Save | input_save_state_btn = "5"
-Select+Left Shoulder | Load | input_load_state_btn = "4"
-Select+Right | Input State Slot Increase | input_state_slot_increase_btn = "h0right"
-Select+Left | Input State Slot Decrease | input_state_slot_decrease_btn = "h0left"
-Select+X | RGUI Menu | input_menu_toggle_btn = "3"
-Select+B | Reset | input_reset_btn = "0"
-
-You can adapt the above code example and choose the button number to your desired button for each hotkey function in the retroarch.cfg files for most systems (at least all the emulators that are part of RetroArch) 
-
-You can change it per controller with your autoconfig file here 
-
-```
-/opt/retropie/configs/all/retroarch-joypads/yourgamepad.cfg
-```
-
-You can hardcode it globally for all systems here:
-
-```
-/opt/retropie/configs/all/retroarch.cfg 
-```
-
-or set it by system
-
-```
-/opt/retropie/configs/SYSTEMNAME/retroarch.cfg
-```
-
-See [HERE](RetroArch-Configuration) for more information on custom controller configs
-
 ### Does Super Mario All Stars work?
 
 The ROM does work with lr-snes9x2002 and lr-snes9x2010.
@@ -309,39 +270,15 @@ A Raspberry Pi B/B+/2 is highly recommended. The GPU should have at least 256MB 
 
 ### Why aren't my in-game saves working properly?
 
-All retroarch emulators use the same method to save to your .srm or SRAM. The default behavior is to only write to your srm file upon a clean exit back to emulationstation. This is done by default with the exit hotkey start+select. If the game happens to completely freeze or crash, it's likely that you will lose in-game progress even after saving.
+All retroarch emulators use the same method to save to disk. The default behavior is to only write to the save file upon a clean exit back to emulationstation. This is done by default when exiting the game (eg, via the Exit [Hotkey combination](Controller-Configurationn#hotkey)). Hence, if a game happens to completely freeze or crash, it's likely that you will lose in-game progress even after saving via the in-game method.
 
-Besides using save states, one optional method you can use to prevent this accidental loss in progress is the autosave_interval setting. This setting can be changed in `/opt/retropie/configs/all/retroarch.cfg`
-either with the terminal, Configure Retroarch / Launch RetroArch RGUI under `settings->saving`, or Edit RetroPie/RetroArch configurations under `Manually edit Retroarch configurations`. Once autosave_interval is set to equal a number of seconds, retroarch will automatically write your save data to the srm file every interval of that number of seconds.
+Besides using save states, one optional method you can use to prevent this accidental loss in progress is the autosave_interval setting. This setting can be changed in `/opt/retropie/configs/all/retroarch.cfg` either with the terminal, Configure Retroarch / Launch RetroArch RGUI under `settings->saving`, or Edit RetroPie/RetroArch configurations under `Manually edit Retroarch configurations`. Once autosave_interval is set to equal a number of seconds, retroarch will automatically write to the save file every interval of that number of seconds.
 
 ### Why Can't I Insert Coins in Arcade Emulators?
 
-It's the Select button in RetroArch. By default, it's right shift. Note that this issue should now be fixed.
+It's whatever is bound to [RetroPad Select](Controller-Configuration).
 
-Sometimes there are conflicts between the hotkeys and insert coin buttons so they need to be swapped manually in the retroarch.cfg in order for the select key to insert coins properly. The hotkey button was originally intended to be an unused button but some controllers like snes controllers don't have extra buttons.
-
-For example you can switch the hotkey button to a button that you don't use:
-
-so in mame retroarch.cfg
-```
-/opt/retropie/configs/mame-mame4all/retroarch.cfg
-```
-
-you could add 
-```
-input_enable_hotkey_btn = 5
-```
-which would make the hotkey the left bumper (on my controller- may be a different button for yours) then the select key should work for inserting coins. but in the future in order to exit mame I would then have to press left bumper+start as i changed my hotkey to the left bumper. 
-
-You can do the same thing for fba-libretro
-```
-/opt/retropie/configs/fba/retroarch.cfg
-```
-
-Another simple workaround is to use player 2's select key to insert coins but it may not work for some games.
-
-Related post  
-http://blog.petrockblock.com/forums/topic/fba-retroarch-core-coin-controls/#post-93014
+If there is not a button available to use as Select, [rebind](RetroArch-Configuration#core-input-remapping) to an unused button.
 
 ### How can I increase the console font size?
 

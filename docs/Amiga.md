@@ -44,7 +44,7 @@ Place your Kickstart roms in
 ```
 ### Controls
 
-Amiberry makes use the RetroArch configs created on [first controller configuration](https://retropie.org.uk/docs/Controller-Configuration/) in EmulationStation. Consequently, hotkey+X will bring up the UI and hotkey+Start can be used to exit Amiberry. For full documentation, please refer [here](https://github.com/midwan/amiberry/wiki/RetroArch-Commands).
+Amiberry makes use the RetroArch configs created during [Controller Configuration](Controller-Configuration). Consequently, **Hotkey+X** will bring up the UI and **Hotkey+Start** can be used to exit Amiberry. For full documentation, please refer [here](https://github.com/midwan/amiberry/wiki/RetroArch-Commands).
 
 Default controller choice can be edited in `/opt/retropie/configs/amiga/amiberry/whdboot/hostprefs.conf`. It is also possible to set the default controller choice as well as other Amiberry settings for individual games. For full documentation, please refer [here](https://github.com/midwan/amiberry/wiki/WHDLoad-Auto-booting#game-specific-settings-improving-game-compatibility).
 

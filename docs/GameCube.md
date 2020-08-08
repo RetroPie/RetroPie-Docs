@@ -21,19 +21,5 @@ Place your GameCube ROMs in
 /home/pi/RetroPie/roms/gc
 ```
 ## Controls
-Dolphin controls must currently be mapped via the GUI. You will need to drop down into terminal mode press F4 on your keyboard if you are currently in emulation station, hit the unity button and search for terminal. Click to launch. 
 
-Change to the Dolphin directory:
-```
-cd /opt/retropie/emulators/dolphin/bin
-```
-Launch Dolphin:
-```
-./dolphin-emu
-``` 
-From there the graphical client will launch and you can bind your controller in the Dolphin Interface as well as change settings.
-
-## Exiting Dolphin
-If you're using an updated version of `dolphin-emu-nogui`, now there is a [fix](https://github.com/dolphin-emu/dolphin/pull/6187), enabling the use of `Esc` key to exit. You can map this to a gamepad button using Dolphin -> Options -> Hotkey Settings.  Modify the "Exit" field to map the buttons to your liking.  For example, `KEY_MENU` & `Button 8` will exit Dolphin using the hotkey + start button combo on the Xbox wireless controller. 
-  
-For old dolphin builds, the only alternative is to exit dolphin is with the Keyboard combination Alt+F4.
+See [Wii Controls](Wii#controls)

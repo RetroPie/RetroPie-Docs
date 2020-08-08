@@ -86,19 +86,19 @@ sudo mount -t cifs //hostname/retropie -o username=USERNAME,password=PASSWORD,se
 
 ## Saving Games
 
-Go ahead and make sure everything works. Don't get to far into a game though, you might not be able to save. If you hit 'Select + R' (default save command) and it gives you an error, the easiest solution I've found is as follows.
+Go ahead and make sure everything works. Don't get to far into a game though, you might not be able to save. If you hit [Hotkey Combination](Controller-Configuration#Hotkey) **Hotkey + Right Shoulder** and it gives you an error, the easiest solution I've found is as follows.
 
 We need to edit retroarch.cfg by deleting the # infront of the savestate_directory and savefile_directory lines and put in the desired path. I'll be using ~/RetroPie-Save. First, make the target folder:
-
+```
     cd
     mkdir RetroPie-Save
     sudo nano /opt/retropie/configs/all/retroarch.cfg 
-
+```
 Mine looks like this:
-
+```
     savestate_directory = /home/pi/RetroPie-Save
     savefile_directory = /home/pi/RetroPie-Save
-
+```
 If you already have some save files, it would be a good idea to move them to the ~/RetroPie-Save folder we created.
 
 ## Scraping
