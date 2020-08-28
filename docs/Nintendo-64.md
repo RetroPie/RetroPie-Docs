@@ -123,13 +123,16 @@ and
 Note that, by default, the memory expansion pack is configured as installed.
 
 #### Hotkeys and special buttons
+
 Key | Description
 --- | ---
-SELECT + START | Exit emulator.
-SELECT + L1 | Load state.
-SELECT + R1 | Save state.
-THUMB LEFT | Enable memory expansion pak.
-THUMB RIGHT| Enable rumble expansion pak.
+Hotkey + Start | Exit emulator.
+Hotkey + Left Shoulder | Load state.
+Hotkey + Right Shoulder | Save state.
+Left Thumb | Enable memory expansion pak.
+Right Thumb | Enable rumble expansion pak.
+
+**Note:** Hotkey and other buttons refers to those bound during [Controller Configuration](Controller-Configuration).
 
 #### Example mupen64plus.cfg
 ```

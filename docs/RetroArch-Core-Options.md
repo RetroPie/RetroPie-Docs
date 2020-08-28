@@ -4,7 +4,7 @@ RetroArch Cores (emulators) typically have options unique to them, known as Core
 
 ### Setting Core Options
 
-Whilst a ROM for the Core in question is running, enter the RGUI via holding player 1's **Hotkey** (typically Select), and RetroPad X button (typically the north action button). This puts you in the **Quick Menu**. Navigate down to the **Options** sub-menu and press **RetroPad A** (typically the west action button) to confirm.
+Whilst a ROM for the Core in question is running, enter the RGUI via holding player 1's [Hotkey](Controller-Configuration#hotkey) combination **Hotkey+X**. This puts you in the **Quick Menu**. Navigate down to the **Options** sub-menu and press **RetroPad A** (typically the west action button) to confirm.
 
 Within this sub-menu are all the options available to that Core. Navigate to the one you want and press left and right to select the desired value. To apply, exit the RGUI using the previous combo. Some options will require you to restart the ROM to take effect. Core Options are saved automatically when you exit the ROM.
 

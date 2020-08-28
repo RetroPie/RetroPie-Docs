@@ -107,7 +107,7 @@ A multitude of rows and columns should appear.  Pressing buttons or moving analo
 
 If you are interested in figuring out which is your "Select" button, pressing and holding "Select" on your controller will cause one column to switch from off to on.  The value next to it corresponds to the "Select" button.  If you have a controller with a "Home" button, pressing the "Home" button will also cause one column to switch from off to on.  To exit _jstest_, press `Ctrl + c`.  To return to EmulationStation from the terminal, type and enter `emulationstation`.
 
-Using these values, you can edit the .cfg file for that controller as needed.  For example, if you were interested in switching the default "Select" button as your Hotkey button to a "Home" button available on your controller, you would edit `input_enable_hotkey_btn = "some number"`, replacing "some number" with the value you found for your "Home" button in _jstest_.
+Using these values, you can edit the .cfg file for that controller as needed.  For example, if you were interested in switching the your Hotkey button to a "Home" button available on your controller, you would edit `input_enable_hotkey_btn = "some number"`, replacing "some number" with the value you found for your "Home" button in _jstest_.
 
 **Video Tutorial**
 
@@ -233,7 +233,7 @@ Core Input Remapping differs from the other two methods as it remaps how the cor
 Quick way to do it:
 
 * Start a game of the system you want to remap the buttons
-* Invoke RGUI (**Select+X** with player 1)
+* Invoke RGUI (**Hotkey+X** with player 1)
 * Go to **Quick Menu** and then **Controls**
 * Configure the buttons the way you want
 * Select **Save Core Remap File**

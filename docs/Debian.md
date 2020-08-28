@@ -75,8 +75,6 @@ You can go into Setup / Configuration and enable autostart as you like.
 - [No HDMI audio](#no-hdmi-audio)
 - [No audio in Mupen64Plus](#no-audio-in-mupen64plus)
 - [XBOX 360 Controller mappings not working](#xbox-360-controller-mappings-not-working)
-- [How do I map controls to Dolphin](#how-do-i-map-controls-to-dolphin)
-- [Start+Select does not exit Dolphin](#startselect-does-not-exit-dolphin)
 - [SteamOS hack to allow installation](#steamos-hack-to-allow-installation)
 - [How do I get latest graphics drivers](#how-do-i-get-latest-graphics-driver)
 
@@ -190,33 +188,6 @@ This will stop PulseAudio from running while Mupen64Plus is running, but turn it
 ### XBOX 360 Controller mappings not working
 
 The X86 version of Retropie install does not have the xboxdrv installed correctly.  Please launch Retropie-Setup Manage Packages - Drivers and install xboxdrv and remap your inputs. 
-
-### How do I map controls to Dolphin?
-
-Dolphin controls must currently be mapped via the GUI. You will need to drop down into terminal mode press F4 on your keyboard if you are currently in emulation station, hit the unity button and search for terminal.  Click to launch. 
-Change to the Dolphin directory
-
-    cd /opt/retropie/emulators/bin/dolphin-emu 
-    Launch dolphin emu
-    ./dolphin-emu 
-
-From there there graphical client will launch and you can bind your controller in the Dolphin Interface as well as change settings.
-
-### Start+Select does not exit Dolphin
-
-Dolphin is not a libretro emulator. Currently exit for Dolphin is hard mapped to Alt + F4 
-You can manually exit via your keyboard, and come back to emulation station.
-To map a button on your controller to exit Dolphin you will need to launch via the gui method above. 
-Once in the menu navigate to Hotkey Behavior.  
-Switch the device indicator to your controller
-select the exit function and map a button like select to this function.
-You will also need to configure in the graphics window to always force window on top and to hide mouse/cursor
-
-Now enter back into emulationstation mode and launch a dolphin game from the gamecube menu
-press x when the game is starting
-Select Dolphin-Gui instead of dolphin as the runcommand default emulator.
-Launch game
-You will now be able to exit back to emulationstation with that button you mapped. 
 
 ### SteamOS hack to allow installation
 

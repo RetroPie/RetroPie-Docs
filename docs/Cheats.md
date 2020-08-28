@@ -8,7 +8,7 @@ You first need to open the RGUI. There are two ways of accessing the RGUI:
 
 - In the **RetroPie** menu of EmulationStation select **Retroarch**
 or
-- Use the default hotkey combo **select+x** to open the rgui from within a game
+- [Hotkey combination](Controller-Configuration#hotkey) **Hotkey+X** to open the RGUI from within a game
 
 If you haven't done so already, you'll need to enable the advanced settings by navigating to **Settings >> User Interface >> Show Advanced Settings**, then enabling the Online Updater in **View >> Show Online Updater**
 
@@ -20,7 +20,7 @@ this will download a set of preconfigured cheat files for many games into `/opt/
 
 Now you can launch the game you want to finally win:
 
-Open the RGUI with **select+x**
+Open the RGUI with [Hotkey combination](Controller-Configuration#hotkey) **Hotkey+X**
 
 Choose **Quick Menu >> Cheats >> Load Cheat File**
 
