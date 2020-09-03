@@ -52,4 +52,4 @@ The Hotkey button enables you to press it in combination with another button to 
 | Hotkey+X | RGUI Menu |
 | Hotkey+B | Reset |
 
-For more information, see [Hotkeys](retroarch-configuration#hotkeys)
+For more information, see [Hotkeys](RetroArch-Configuration#hotkeys)
