@@ -8,7 +8,7 @@ The following archive contains a MAME 0.205 version of CHDMAN and Windows batch 
 
 Run the appropriate batch file in the same folder as the ROM(s) you wish to compress, and it will search subfolders for `.cue` files to compress. If a `.chd` is not generated after running the appropriate batch, then something is wrong with the ROM(s) `.cue`.
 
-## MacOS
+#### MacOS
 
 In MacOS, you can install chdman through Homebrew, with the following:
 
