@@ -11,6 +11,21 @@ It is a commmand line application and creating a `.chd` file from an existing `.
 chdman created -i <game.cue> -o <game.chd>
 ```
 
+To compress every file in a directory, use:
+
+```shell
+cd /path/to/folder
+for i in *.cue; do chdman createcd -i "$i" -o "${i%.*}.chd"; done
+```
+
+To compress every file in subdirectories within a folder, use:
+
+```shell
+cd /path/to/folder
+for i in */*.cue; do chdman createcd -i "$i" -o "${i%.*}.chd"; done
+```
+
+
 #### Windows
 
 The following archive contains a MAME 0.205 version of CHDMAN and Windows batch files that can be used to quickly convert your PSX games to CHD (V5): [Download](https://drive.google.com/file/d/0B-ElaPpvBHs5aUd0QUM3c05kY2c/view?usp=sharing)
