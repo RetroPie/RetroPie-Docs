@@ -83,7 +83,7 @@
 * [ZX-81](ZX81)
 * [ZX Spectrum](ZX-Spectrum)
 
-## [Ports](Ports)
+## Ports
 
 * [Adventure Game Studio](Adventure-Game-Studio)
 * [Cave Story](Cave-Story)
@@ -169,7 +169,7 @@
 * [X-Arcade](X-Arcade)
 * [Xiaomi Gamepad](Xiaomi-Controller)
 * [Universal Controller Calibration & Mapping Using xboxdrv](Universal-Controller-Calibration-&-Mapping-Using-xboxdrv)
-* [Controller Configuration (driver level)](Controller-configuration-(driver-level))
+* [Controller Configuration (driver level)](Controller-configuration-%28driver-level%29)
 
 ## Troubleshooting
 

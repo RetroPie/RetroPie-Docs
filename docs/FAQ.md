@@ -270,7 +270,7 @@ A Raspberry Pi B/B+/2 is highly recommended. The GPU should have at least 256MB 
 
 ### Why aren't my in-game saves working properly?
 
-All retroarch emulators use the same method to save to disk. The default behavior is to only write to the save file upon a clean exit back to emulationstation. This is done by default when exiting the game (eg, via the Exit [Hotkey combination](Controller-Configurationn#hotkey)). Hence, if a game happens to completely freeze or crash, it's likely that you will lose in-game progress even after saving via the in-game method.
+All retroarch emulators use the same method to save to disk. The default behavior is to only write to the save file upon a clean exit back to emulationstation. This is done by default when exiting the game (eg, via the Exit [Hotkey combination](Controller-Configuration#hotkey)). Hence, if a game happens to completely freeze or crash, it's likely that you will lose in-game progress even after saving via the in-game method.
 
 Besides using save states, one optional method you can use to prevent this accidental loss in progress is the autosave_interval setting. This setting can be changed in `/opt/retropie/configs/all/retroarch.cfg` either with the terminal, Configure Retroarch / Launch RetroArch RGUI under `settings->saving`, or Edit RetroPie/RetroArch configurations under `Manually edit Retroarch configurations`. Once autosave_interval is set to equal a number of seconds, retroarch will automatically write to the save file every interval of that number of seconds.
 
