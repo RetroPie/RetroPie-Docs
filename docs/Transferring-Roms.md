@@ -12,7 +12,7 @@ There are three main methods of transferring roms: via USB stick, via SFTP, and 
 2. Create a folder called `retropie` on the USB stick
 3. Plug it into the RetroPie system. If the USB stick has an activity light, wait for it to finish blinking, else wait a few minutes
 4. Remove the USB stick out and plug it into a computer
-5. Add the roms to their respective folders (within the `retropie/roms` folder)
+5. Add the roms to their respective folders (within the `~/RetroPie/roms` folder)
 6. Plug it back into the RetroPie system. If the USB stick has an activity light, wait for it to finish blinking, else wait (with many GBs of ROMs, wait several hours)
 8. Remove the USB stick, the ROMs have been transferred from the USB to the SD card
 9. Refresh the game listing in Emulationstation by pressing F4, or choosing **Restart Emulationstation**/**Restart System** via the start menu
