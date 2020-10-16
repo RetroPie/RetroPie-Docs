@@ -1,3 +1,3 @@
 ## PAGE MOVED! 
 
-[Arcade](Arcade)
+[Arcade](Arcade.md)
