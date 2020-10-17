@@ -11,20 +11,22 @@ There are a variety of arcade emulator versions available in RetroPie. There are
 
 This page is a resource for additional details on RetroPie's MAME emulators including configuration paths, controls, and the ROM sets which each emulator requires.
 
-[**All Arcade ROMS Compatibility List**](https://docs.google.com/spreadsheets/d/1antILt7D12EWOFzyJwTfB86NceghMJKXG7CdYumuHec/edit?usp=sharing) feel free to contribute to the list.
+**All Arcade ROMS Compatibility List**: [Google Drive document](https://docs.google.com/spreadsheets/d/1antILt7D12EWOFzyJwTfB86NceghMJKXG7CdYumuHec/edit?usp=sharing).
 
-| Emulator | ROM Folder | Extension | Required ROM Set Version | Controller Configuration |
-| :---: | :---: | :---: | :---: | :---: |
-| [mame4all-pi](#mame4all-pi) | arcade **or** mame-mame4all | .zip | MAME 0.37b5 | /opt/retropie/configs/mame-mame4all/cfg/default.cfg |
-| [lr-mame2000](#lr-mame2000-mame-2000) | arcade **or** mame-libretro | .zip | MAME 0.37b5 | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/mame-mame4all/retroarch.cfg |
-| [lr-mame2003](#lr-mame2003-mame-2003) | arcade **or** mame-libretro | .zip | MAME 0.78 | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/mame-libretro/retroarch.cfg |
-| [lr-mame2003-plus](#lr-mame2003-plus-mame-2003-plus) | arcade **or** mame-libretro | .zip | MAME 0.78-MAME 0.188  | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/mame-libretro/retroarch.cfg |
-| [lr-mame2010](#lr-mame2010-mame-2010) | arcade **or** mame-libretro | .zip **or** .7z | MAME 0.139 | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/mame-libretro/retroarch.cfg |
-| [lr-mame2015](#lr-mame2015-mame-2015) | arcade **or** mame-libretro | .zip **or** .7z | MAME 0.160 | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/mame-libretro/retroarch.cfg |
-| [lr-mame2016](#lr-mame2016-mame-2016) | arcade **or** mame-libretro | .zip **or** .7z | MAME 0.174 | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/mame-libretro/retroarch.cfg |
-| [AdvanceMAME 0.94](#advancemame-094) | arcade **or** mame-advmame | .zip | MAME 0.94 | /opt/retropie/configs/mame-advmame/advmame-0.94.0.rc |
-| [AdvanceMAME 1.4](#advancemame-14) | arcade **or** mame-advmame | .zip | MAME 0.106 | /opt/retropie/configs/mame-advmame/advmame-1.4.rc |
-| [AdvanceMAME 3](#advancemame-3) | arcade **or** mame-advmame | .zip | MAME 0.106 | /opt/retropie/configs/mame-advmame/advmame.rc |
+| Emulator | ROM Folder(s) | Extension | Required ROM Set Version
+| :---: | :---: | :---: | :--- |
+| [mame4all-pi](#mame4all-pi) | arcade **or** mame-mame4all | .zip | MAME 0.37b5 
+| [lr-mame2000](#lr-mame2000-mame-2000) | arcade **or** mame-libretro | .zip | MAME 0.37b5
+| [lr-mame2003](#lr-mame2003-mame-2003) | arcade **or** mame-libretro | .zip | MAME 0.78
+| [lr-mame2003-plus](#lr-mame2003-plus-mame-2003-plus) | arcade **or** mame-libretro | .zip | MAME 0.78-MAME 0.188
+| [lr-mame2010](#lr-mame2010-mame-2010) | arcade **or** mame-libretro | .zip | MAME 0.139
+| [lr-mame2015](#lr-mame2015-mame-2015) | arcade **or** mame-libretro | .zip .7z | MAME 0.160
+| [lr-mame2016](#lr-mame2016-mame-2016) | arcade **or** mame-libretro | .zip .7z | MAME 0.174
+| [AdvanceMAME 0.94](#advancemame-094) | arcade **or** mame-advmame | .zip | MAME 0.94
+| [AdvanceMAME 1.4](#advancemame-14) | arcade **or** mame-advmame | .zip | MAME 0.106
+| [AdvanceMAME 3](#advancemame-3) | arcade **or** mame-advmame | .zip | MAME 0.106
+| [MAME](#mame) | arcade **or** mame | .zip .7z | same as MAME version
+| [lr-mame](#lr-mame) | arcade **or** mame-libretro | .zip .7z | same as MAME version
 
 ## MAME ROM paths
 
@@ -35,22 +37,26 @@ To avoid having several menus for different arcade emulators, all arcade-based R
 ## Emulators
 
 ---
-### mame4all-pi
-[Visit the mame4all homepage on sourceforge](http://sourceforge.net/projects/mame4allpi/)
+### [mame4all-pi](http://sourceforge.net/projects/mame4allpi/ "MAME4ALL-Pi website")
 
-```shell
-Roms Dir: /home/pi/RetroPie/roms/mame-mame4all
-Binary Dir: /opt/retropie/emulators/mame4all
-Config Dir: /opt/retropie/configs/mame-mame4all
-```
+| Folder | Location |
+|:------ |:------ |
+| Roms | `/home/pi/RetroPie/roms/mame-mame4all`
+| Binary | `/opt/retropie/emulators/mame4all`
+| Configuration | `/opt/retropie/configs/mame-mame4all`
+| Samples | `/home/pi/RetroPie/mame4-all/samples/`
+
+
 **MAME Version**: 0.37b5 (July 2000)
 
 **Active Sets: 2241**
+
 * BIOS: 1
 * CHDs: 0
 * Samples: 35
 
 **Based on the MAME4ALL-PI Compatibility list below:**
+
 * 1126 Parent Roms
 * 1025 Clones Roms
 * 129 NeoGeo Roms (Parent+Clone)
@@ -59,29 +65,33 @@ Config Dir: /opt/retropie/configs/mame-mame4all
 
 **MAME 0.37b5 XML File**: [mame4all-no-clones-no-neogeo](https://drive.google.com/file/d/0B2TMeZ6iEFvHNm5OYndFUHM3djg/view?usp=sharing) Does not include clones or NeoGeo romsets.
 
-**[MAME4ALL-PI Compatibility List](https://docs.google.com/spreadsheets/d/1SHspjyHavY9-PKbO2swDr52BS2Wl_mB_Vjx2Z1SXiD8/edit?usp=sharing)** feel free to contribute to the list.
+**MAME4ALL-PI Compatibility List**: [Google Drive document](https://docs.google.com/spreadsheets/d/1SHspjyHavY9-PKbO2swDr52BS2Wl_mB_Vjx2Z1SXiD8/edit?usp=sharing)
 
 #### Controls
 
-While in a game press Tab to open the menu to set up controls. The MAME4ALL tab menu configuration is stored in:
-```shell 
+While in a game press <kbd>Tab</kbd> to open the menu to set up controls. The **MAME4ALL** configuration is saved in:
+```shell
 /opt/retropie/configs/mame-mame4all/cfg/default.cfg
 ```
-Other files in this cfg directory are ROM specific configs.
 
-Note: Should your input configuration or other aspect of the configuration need resetting to defaults, remove the default.cfg or ROM specific .cfg file, and it will be re-created with default values next time you start MAME4ALL or modify the ROM configuration.
+Other files in the `cfg` directory are ROM specific configs.
+
+_**Note**_: If configuration or other aspect of the configuration need resetting to defaults, remove the `default.cfg` or ROM specific `.cfg` file, and it will be re-created with default values next time MAME4ALL is started or the ROM configuration modified.
 
 ---
-### lr-mame2000 (MAME 2000)
-[Visit the mame2000-libretro homepage on github](https://github.com/libretro/mame2000-libretro)
-```shell
-Roms Dir: /home/pi/RetroPie/roms/mame-mame4all
-Binary Dir: /opt/retropie/libretrocores/lr-imame4all
-Config Dir: /opt/retropie/configs/mame-mame4all/retroarch.cfg
-```
+### [lr-mame2000 (MAME 2000)](https://github.com/libretro/mame2000-libretro "MAME 2000 website")
+
+| Folder | Location |
+|:------ |:------ |
+| Roms | `/home/pi/RetroPie/roms/mame-mame4all` <br> `/home/pi/RetroPie/roms/mame-libretro` <br> `/home/pi/RetroPie/roms/arcade`
+| Binary | `/opt/retropie/libretrocores/lr-mame2000`
+| Configuration | `/opt/retropie/configs/mame-mame4all/retroarch.cfg`
+| Samples | `/home/pi/RetroPie/BIOS/mame2000/samples/`
+
 **MAME Version**: 0.37b5 (July 2000)
 
 **Active Sets: 2241**
+
 * BIOS: 1
 * CHDs: 0
 * Samples: 35
@@ -94,26 +104,28 @@ Config Dir: /opt/retropie/configs/mame-mame4all/retroarch.cfg
 
 #### Controls
 
-lr-mame2000 utilises [RetroArch control configuration](RetroArch-Configuration). Add custom retroarch controls to the retroarch.cfg file in:
-```shell
-/opt/retropie/configs/lr-mame2000/retroarch.cfg
-```
+MAME 2000 uses [RetroArch control configuration](RetroArch-Configuration). Custom Retroarch controls can be added to the `retroarch.cfg` file in
+
+ * `/opt/retropie/configs/mame-libretro/retroarch.cfg`
+ * `/opt/retropie/configs/arcade/retroarch.cfg`
 
 ---
-### lr-mame2003 (MAME 2003)
-[Visit the mame2003-libretro homepage on github](https://github.com/libretro/mame2003-libretro)
+### [lr-mame2003 (MAME 2003)](https://github.com/libretro/mame2003-libretro "MAME 2003 website")
 
-**Please see [lr-mame2003 on RetroPie](lr-mame2003) for information on how to configure specific features of this emulator.**
+Please see **[MAME 2003 on RetroPie](lr-mame2003)** for information on how to configure specific features of this emulator.
 
-```shell
-Roms Dir: /home/pi/RetroPie/roms/mame-libretro
-Samples Dir: /home/pi/RetroPie/BIOS/mame2003/samples/
-Binary Dir: /opt/retropie/libretrocores/lr-mame2003
-Config Dir: /opt/retropie/configs/mame-libretro/retroarch.cfg
-```
+| Folder | Location |
+|:------ |:------ |
+| Roms | `/home/pi/RetroPie/roms/mame-libretro` <br> `/home/pi/RetroPie/roms/arcade`
+| Binary | `/opt/retropie/libretrocores/lr-mame2003`
+| Configuration | `/opt/retropie/configs/mame-libretro/retroarch.cfg`
+| Samples | `/home/pi/RetroPie/BIOS/mame2003/samples/`
+
+
 **MAME Version**: 0.78 (December 2003)
 
 **Active Sets: 4705**
+
 * BIOS: 15
 * CHDs: 30
 * Samples: 56
@@ -122,80 +134,99 @@ Config Dir: /opt/retropie/configs/mame-libretro/retroarch.cfg
 
 **MAME 0.78u5 DAT File**: [mame2003-lr-working-no-clones](https://drive.google.com/file/d/0B2TMeZ6iEFvHV21wRVh6TF9uQ1U/view?usp=sharing) - Working romsets only. Does not include clones.
 
-**MAME 0.78u5 'Lite' DAT File**: [mame2003-lr-lite](https://drive.google.com/file/d/0B2TMeZ6iEFvHY1VzcXYyT09iRGs/view?usp=sharing) - Working romsets only. Does not include: clones, NeoGeo, PlayChoice NES/multiplay, romsets with rotary/dial/trackball/lightgun controls, or romsets classified as casino/quiz/mahjong/fruit_machines/rhythm/mature.
+**MAME 0.78u5 'Lite' DAT File**: [mame2003-lr-lite](https://drive.google.com/file/d/0B2TMeZ6iEFvHY1VzcXYyT09iRGs/view?usp=sharing) - Working romsets only. Does not include: clones, NeoGeo, PlayChoice NES/multiplay, romsets with rotary/dial/trackball/light gun controls, or romsets classified as casino/quiz/mahjong/fruit_machines/rhythm/mature.
 
-**[lr-mame2003 Compatibility List](https://docs.google.com/spreadsheets/d/1LP1MELCvcxu7TfiowF_0ZuvRVEMqlfQyTVetnOJvuJc/edit?usp=sharing)** feel free to contribute to the list.
+**Mame 2003 Compatibility List**: [Google Drive document](https://docs.google.com/spreadsheets/d/1LP1MELCvcxu7TfiowF_0ZuvRVEMqlfQyTVetnOJvuJc/edit?usp=sharing)
 
-**[The mame2003 catver.ini](https://github.com/libretro/mame2003-libretro/blob/master/metadata/catver.ini)** also contains data on games definitively known not to work, as well as sorting data for pornographic games and other less desirable romsets.
+**[Mame 2003 catver.ini](https://github.com/libretro/mame2003-libretro/blob/master/metadata/catver.ini)** also contains data on games definitively known not to work, as well as sorting data for mature games and other, less desirable, romsets.
 
 #### Controls
 
-lr-mame2003 utilises [RetroArch control configurations](RetroArch-Configuration). Add custom retroarch controls to the retroarch.cfg file in:
-```shell
-/opt/retropie/configs/mame-libretro/retroarch.cfg
-```
+
+MAME 2003-Plus uses both [RetroArch control configuration](RetroArch-Configuration) and the MAME input configuration menu (accessible by pressing <kbd>Tab</kbd>). Custom Retroarch controls can be added to the `retroarch.cfg` file in
+
+ * `/opt/retropie/configs/mame-libretro/retroarch.cfg`
+ * `/opt/retropie/configs/arcade/retroarch.cfg`
+
 ---
-### lr-mame2003-plus (MAME 2003-Plus)
-[Visit mame2003-plus on github](https://github.com/libretro/mame2003-plus-libretro)
+### [lr-mame2003-plus (MAME 2003-Plus)](https://github.com/libretro/mame2003-plus-libretro "MAME 2003-Plus website")
+
 
 MAME 2003-Plus (also referred to as MAME 2003+ and mame2003-plus) is a libretro arcade system emulator core with an emphasis on high performance and broad compatibility with mobile devices, single board computers, embedded systems, and similar platforms.
 
-In order to take advantage of the performance and lower hardware requirements of an earlier MAME architecture, MAME 2003-Plus began with the MAME 2003 codebase which is itself derived from xmame 0.78. Upon that base, MAME 2003-Plus contributors have backported support for several hundred additional games as well as other functionality not originally present in MAME 0.78.
+In order to take advantage of the performance and lower hardware requirements of an earlier MAME architecture, MAME 2003-Plus began with the MAME 2003 codebase, which is itself derived from xmame 0.78. Upon that base, MAME 2003-Plus contributors have back-ported support for several hundred additional games as well as other functionality not originally present in MAME 0.78.
 
 **Please see [the libretro MAME 2003-Plus core documentation](https://docs.libretro.com/library/mame2003_plus/) for information on how to configure specific features of this emulator.**
 
-```shell
-Roms Dir: /home/pi/RetroPie/roms/mame-libretro
-Samples Dir: /home/pi/RetroPie/BIOS/mame2003-plus/samples/
-Binary Dir: /opt/retropie/libretrocores/lr-mame2003-plus
-Config Dir: /opt/retropie/configs/mame-libretro/retroarch.cfg
-```
-**MAME Version**: 0.78-0.188 (MAME 0.78 as a baseline with other ROMs backported from later MAME romsets)
+| Folder/File | Location |
+|:------ |:------ |
+| Roms | `/home/pi/RetroPie/roms/mame-libretro` <br> `/home/pi/RetroPie/roms/arcade`
+| Binary | `/opt/retropie/libretrocores/lr-mame2003-plus`
+| Configuration | `/opt/retropie/configs/mame-libretro/retroarch.cfg` <br> `/opt/retropie/configs/arcade/retroarch.cfg`
+| Samples | `/home/pi/RetroPie/BIOS/mame2003-plus/samples/`
+
+**MAME Version**: 0.78-0.188 (MAME 0.78 as a baseline with other ROMs back-ported from later MAME romsets)
 
 **Active Sets: 4850**
+
 * BIOS: 15
 * CHDs: 30
 * Samples: 66 + 6 Optional "Soundtrack Samples"
 
-[**MAME 2003-Plus XML DAT File**](https://raw.githubusercontent.com/libretro/mame2003-plus-libretro/master/metadata/mame2003-plus.xml)
+**MAME 2003-Plus DAT File**: [Github project page](https://raw.githubusercontent.com/libretro/mame2003-plus-libretro/master/metadata/mame2003-plus.xml). An XML "DAT" file can be generated from the emulator, directly from the MAME menu.
 
-**[The mame2003-plus catver.ini](https://github.com/libretro/mame2003-plus-libretro/blob/master/metadata/catver.ini)** also contains data on games definitively known not to work, as well as sorting data for pornographic games and other less desirable romsets.
+**[The MAME 2003-Plus catver.ini](https://github.com/libretro/mame2003-plus-libretro/blob/master/metadata/catver.ini)** also contains data on games definitively known not to work, as well as sorting data for mature games or other, less desirable, romsets.
 
 #### Controls
 
-lr-mame2003-plus utilises [RetroArch control configurations](RetroArch-Configuration). Add custom retroarch controls to the retroarch.cfg file in:
-```shell
-/opt/retropie/configs/mame-libretro/retroarch.cfg
-```
----
-### lr-mame2010 (MAME 2010)
-[Visit mame2010-libretro on github](https://github.com/libretro/mame2010-libretro)
+MAME 2003-Plus uses both [RetroArch control configuration](RetroArch-Configuration) and the MAME input configuration menu (accessible by pressing <kbd>Tab</kbd>). Custom Retroarch controls can be added to the `retroarch.cfg` file in
 
-```shell
-Roms Dir: /home/pi/RetroPie/roms/mame-libretro
-Samples Dir: /home/pi/RetroPie/BIOS/mame2010/samples
-Binary Dir: /opt/retropie/libretrocores/lr-mame2010
-Config Dir: /opt/retropie/configs/mame-libretro/retroarch.cfg
-```
+ * `/opt/retropie/configs/mame-libretro/retroarch.cfg`
+ * `/opt/retropie/configs/arcade/retroarch.cfg`
+ 
+**Some notes** about extra controls options and configuration available in MAME 2003-Plus:
+
+* MAME 2003-Plus can use different [RetroPad layouts](https://docs.libretro.com/library/mame2003_plus/#default-retropad-layouts), chosen with the _Device Type_ configuration option in the _Controls_ menu in RetroArch:
+   * _Classic Gamepad_, based on mainline MAME's default Xbox 360 controller layout, likely to suit DualShock or SNES-style gamepads.
+   * _Modern Fightstick_, a fight stick and pad layout popularised by Street Fighter IV and assumes an 8+ button controller.
+   * _6-Button_, a layout intended for SNES-type RetroPad controls as well as 6-button arcade panels arcade panels.
+   * _8-Button_, a layout intended for an arcade panel (8 buttons)
+
+* MAME 2003-Plus maps the analog controls to joystick control by default, instead of the D-Pad. This can be changed from the [Core Options](RetroArch-Core-Options), switching the _Control mapping_ option to digital.
+
+* MAME 2003-Plus disables the MAME menu by default (usually mapped to <kbd>Tab</kbd>). It can be enabled by changing the _Input interface_ [Core Option](RetroArch-Core-Options) to `simultaneous`.
+ 
+ 
+---
+### [lr-mame2010 (MAME 2010)](https://github.com/libretro/mame2010-libretro "MAME 2010 website")
+
+| Folder | Location |
+|:------ |:------ |
+| Roms | `/home/pi/RetroPie/roms/mame-libretro` <br> `/home/pi/RetroPie/roms/arcade`
+| Binary | `/opt/retropie/libretrocores/lr-mame2010`
+| Configuration | `/opt/retropie/configs/mame-libretro/retroarch.cfg`
+| Samples | `/home/pi/RetroPie/BIOS/mame2010/samples`
+
 **MAME Version**: 0.139 (August 2010)
 
 **Active Sets: 8782**
+
 * BIOS: 67
 * CHDs: 406
 * Samples: 70 (4 more samples are not in circulation)
 
 **MAME 0.139 DAT File**: [MAME 0.139.dat](https://raw.githubusercontent.com/libretro/mame2010-libretro/master/metadata/mame2010.xml) 
 
-**[lr-mame2010 Compatibility List](https://docs.google.com/spreadsheets/d/1IRSmFrSDvIc6gAw0gn12TcQ3HDOwmrETTor8wvvb7VI/edit?usp=sharing)** feel free to contribute to the list.
+**MAME 2010 Compatibility List**: [Google Drive document](https://docs.google.com/spreadsheets/d/1IRSmFrSDvIc6gAw0gn12TcQ3HDOwmrETTor8wvvb7VI/edit#gid=1947139826)
 
 #### Controls
 
-lr-mame2010 utilises [RetroArch control configurations](RetroArch-Configuration). Add custom retroarch controls to the retroarch.cfg file in:
-```shell
-/opt/retropie/configs/mame-libretro/retroarch.cfg
-```
+MAME 2010 uses [RetroArch control configuration](RetroArch-Configuration). Custom Retroarch controls can be added to the `retroarch.cfg` file in
 
-#### Default Player 1 and 2 Controls: 
+ * `/opt/retropie/configs/mame-libretro/retroarch.cfg`
+ * `/opt/retropie/configs/arcade/retroarch.cfg`
+
+##### Default Player 1 and 2 Controls
 
 	RETRO_DEVICE_ID_JOYPAD_START        MAME: KEY_START
 	RETRO_DEVICE_ID_JOYPAD_SELECT       MAME: KEY_COIN
@@ -212,7 +243,7 @@ lr-mame2010 utilises [RetroArch control configurations](RetroArch-Configuration)
 	RETRO_DEVICE_ID_JOYPAD_RIGHT        MAME: KEY_JOYSTICK_R
 	RETRO_DEVICE_ID_JOYPAD_R2           Turbo Button
 
-#### Default Player 3 and 4 Controls: 
+##### Default Player 3 and 4 Controls
 
 	RETRO_DEVICE_ID_JOYPAD_START        MAME: KEY_START
 	RETRO_DEVICE_ID_JOYPAD_SELECT       MAME: KEY_COIN
@@ -225,143 +256,205 @@ lr-mame2010 utilises [RetroArch control configurations](RetroArch-Configuration)
 	RETRO_DEVICE_ID_JOYPAD_RIGHT        MAME: KEY_JOYSTICK_R
 	RETRO_DEVICE_ID_JOYPAD_R2           Turbo Button
     
-#### Native MAME UI Controls:
+##### Native MAME UI Controls
 
 _Note: these controls are only operational for Player 1_
 
 	RETRO_DEVICE_ID_JOYPAD_L3           Test/Service Mode
-        RETRO_DEVICE_ID_JOYPAD_R3           Enter MAME UI
+	RETRO_DEVICE_ID_JOYPAD_R3           Enter MAME UI
 	RETRO_DEVICE_ID_JOYPAD_A            MAME: IPT_UI_SELECT (Make selections in the MAME GUI)
       
 ---
-### lr-mame2015 (MAME 2015)
-[Visit mame2015-libretro on github](https://github.com/libretro/mame2015-libretro)
-**Note: This emulator is considered 'optional' in RetroPie and has limited functionality. It requires more processing power than earlier MAME versions and will not run as many games at full speed on rPi hardware.**
+### [lr-mame2015 (MAME 2015)](https://github.com/libretro/mame2015-libretro "MAME 2015 website")
 
-```shell
-Roms Dir: /home/pi/RetroPie/roms/mame-libretro
-Binary Dir: /opt/retropie/libretrocores/lr-mame2015
-Config Dir: /opt/retropie/configs/mame-libretro/retroarch.cfg
-```
+**Note**: This emulator is considered 'experimental' in RetroPie and has limited functionality. It requires more processing power than earlier MAME versions and will not run as many games at full speed on Raspberry Pi hardware.
+
+| Folder | Location |
+|:------ |:------ |
+| Roms | `/home/pi/RetroPie/roms/mame-libretro` <br> `/home/pi/RetroPie/roms/arcade`
+| Binary | `/opt/retropie/libretrocores/lr-mame2015`
+| Configuration | `/opt/retropie/configs/mame-libretro/retroarch.cfg`
+| Samples | `/home/pi/RetroPie/BIOS/mame2010/samples`
+
 **MAME Version**: 0.160
 
 **Active Sets: ??**
+
 * BIOS: ??
 * CHDs: ??
 * Samples: ?? (4 more samples are not in circulation)
 
-**MAME 0.160 DAT File**: Coming soon
+**MAME 0.160 DAT File**: [ProgettoSnaps MAME .dat page](http://www.progettosnaps.net/dats/MAME/)
 
 #### Controls
 
-lr-mame2015 utilises [RetroArch control configurations](RetroArch-Configuration). Add custom retroarch controls to the retroarch.cfg file in:
-```shell
-/opt/retropie/configs/mame-libretro/retroarch.cfg
-```
+MAME 2015 uses [RetroArch control configuration](RetroArch-Configuration). Custom Retroarch controls can be added to the `retroarch.cfg` file in
+
+ * `/opt/retropie/configs/mame-libretro/retroarch.cfg`
+ * `/opt/retropie/configs/arcade/retroarch.cfg`
 
 ---
+### [lr-mame2016 (MAME 2016)](https://github.com/libretro/mame2016-libretro "MAME 2015 website")
 
----
-### lr-mame2016 (MAME 2016)
-[Visit mame2016-libretro on github](https://github.com/libretro/mame2016-libretro)
-**Note: This emulator is considered 'experimental' in RetroPie and has limited functionality. It requires more processing power than earlier MAME versions and will not run as many games at full speed on rPi hardware.**
+**Note**: This emulator is considered 'experimental' in RetroPie and has limited functionality. It requires more processing power than earlier MAME versions and will not run as many games at full speed on Raspberry Pi hardware.
 
-```shell
-Roms Dir: /home/pi/RetroPie/roms/mame-libretro
-Binary Dir: /opt/retropie/libretrocores/lr-mame2016
-Config Dir: /opt/retropie/configs/mame-libretro/retroarch.cfg
-```
+| Folder | Location |
+|:------ |:------ |
+| Roms | `/home/pi/RetroPie/roms/mame-libretro` <br> `/home/pi/RetroPie/roms/arcade`
+| Binary | `/opt/retropie/libretrocores/lr-mame2016`
+| Configuration | `/opt/retropie/configs/mame-libretro/retroarch.cfg`
+
 **MAME Version**: 0.174
 
 **Active Sets: ??**
+
 * BIOS: ??
 * CHDs: ??
 * Samples: ?? (4 more samples are not in circulation)
 
-**MAME 0.174 DAT File**: Coming soon
-
-**lr-mame2016 Compatibility List**: Coming soon
+**MAME 0.174 DAT File**: [ProgettoSnaps MAME .dat page](http://www.progettosnaps.net/dats/MAME/)
 
 #### Controls
 
-lr-mame2016 utilises [RetroArch control configurations](RetroArch-Configuration). Add custom retroarch controls to the retroarch.cfg file in:
-```shell
-/opt/retropie/configs/mame-libretro/retroarch.cfg
-```
+MAME 2016 uses [RetroArch control configuration](RetroArch-Configuration). Custom Retroarch controls can be added to the `retroarch.cfg` file in
+
+ * `/opt/retropie/configs/mame-libretro/retroarch.cfg`
+ * `/opt/retropie/configs/arcade/retroarch.cfg`
 
 ---
-### AdvanceMAME 0.94
-[Visit the AdvanceMAME homepage on sourceforge](http://sourceforge.net/projects/advancemame/)
-```shell
-Roms Dir: /home/pi/RetroPie/roms/mame-advmame
-Binary Dir: /opt/retropie/emulators/advmame/bin
-Config Dir: /opt/retropie/configs/mame-advmame
-```
+### [AdvanceMAME 0.94](https://sourceforge.net/projects/advancemame/ "AdvanceMAME website")
+
+| Folder | Location |
+|:------ |:------ |
+| Roms | `/home/pi/RetroPie/roms/mame-advmame` <br> `/home/pi/RetroPie/roms/arcade`
+| Binary | `/opt/retropie/emulators/advmame/bin`
+| Configuration | `/opt/retropie/configs/mame-advmame`
+| Samples | `/home/pi/RetroPie/roms/mame-advmame/samples`
+
 **MAME Version**: MAME 0.94 (March 2005)
 
 **Active Sets: 5563**
+
 * BIOS: 25
 * CHDs: ?
 * Samples: ?
 
 **AdvanceMAME 0.94 DAT File**: [advmame-0.94-RetroPie-260.7z](https://drive.google.com/file/d/0B2TMeZ6iEFvHa2E5Rzl4ZEdMdjQ/view?usp=sharing)
 
-**[AdvanceMAME 0.94 Compatibility List](https://docs.google.com/spreadsheets/d/1AEQ94buG0rvbW0xdnYKeuEhHeCbuZlRfRJQCb1Dt8fw/edit?usp=sharing)** feel free to contribute to the list.
+**[AdvanceMAME 0.94 Compatibility List]**: [Google Drive document](https://docs.google.com/spreadsheets/d/1AEQ94buG0rvbW0xdnYKeuEhHeCbuZlRfRJQCb1Dt8fw/edit?usp=sharing)
 
 #### Controls
 
-While in a game press Tab to open the menu to set up controls. AdvanceMAME configuration for controls are all stored in the .rc file corresponding to the version of AdvanceMAME you are running. Changes to specific games result in .rc file entries with a prefix for the ROM (i.e. ```bwidow/input_map[p1_doubleleft_up] keyboard[0,up]```)
+While in a game, press <kbd>Tab</kbd> to open the menu and set up controls. AdvanceMAME configuration for controls is stored in `/opt/retropie/configs/mame-advmame/advmame-0.94.0.rc`. Changes to specific games result in `.rc` file entries with a prefix for the ROM (i.e. `bwidow/input_map[p1_doubleleft_up] keyboard[0,up]` for the `bwidow` game).
 
-Note: The .rc file can also be edited manually. Any config can be made ROM-specific using a ```romname/``` prefix which is handy for overriding a setting for a specific ROM or class of ROMs, such as ```vertical/```. However, a single mistake in the .rc file will stop MAME from launching. It is always best to make a backup of the .rc file before manual edits.
+_**Note**_: The `.rc` file can also be edited manually, with a text editor. Any config can be made ROM-specific using a `romname/` prefix which is handy for overriding a setting for a specific ROM or class of ROMs, such as `vertical/`. However, a single mistake in the .rc file will stop AdvanceMAME from launching. It is always best to make a backup of the configuration file before manual edits.
 
 ---
 
-### AdvanceMAME 1.4
-[Visit the AdvanceMAME homepage on sourceforge](http://sourceforge.net/projects/advancemame/)
-```shell
-Roms Dir: /home/pi/RetroPie/roms/mame-advmame
-Binary Dir: /opt/retropie/emulators/advmame/bin
-Config Dir: /opt/retropie/configs/mame-advmame
-```
+### [AdvanceMAME 1.4](https://sourceforge.net/projects/advancemame/ "AdvanceMAME website")
+
+| Folder | Location |
+|:------ |:------ |
+| Roms | `/home/pi/RetroPie/roms/mame-advmame` <br> `/home/pi/RetroPie/roms/arcade`
+| Binary | `/opt/retropie/emulators/advmame/bin`
+| Configuration | `/opt/retropie/configs/mame-advmame`
+| Samples | `/home/pi/RetroPie/roms/mame-advmame/samples`
+
 **MAME Version**: MAME 0.106 (May 2006)
 
 **Active Sets: 6166**
+
 * BIOS: 26
 * CHDs: 86
 * Samples: 64 (3 more samples are not in circulation)
 
 **AdvanceMAME 1.4 DAT File**: [advmame12-106.7z](https://drive.google.com/file/d/0B2TMeZ6iEFvHMEZnb1RxQWNmdHM/view?usp=sharing)
 
-**[AdvanceMAME 1.4 Compatibility List](https://docs.google.com/spreadsheets/d/1RapyxChe2BMOfbX-FsCup9SXGxvS1WmXAofwaTJtmxc/edit?usp=sharing)** feel free to contribute to the list.
+**AdvanceMAME 1.4 Compatibility**: [Google Drive document](https://docs.google.com/spreadsheets/d/1RapyxChe2BMOfbX-FsCup9SXGxvS1WmXAofwaTJtmxc/edit?usp=sharing)
 
 #### Controls
 
-While in a game press Tab to open the menu to set up controls. AdvanceMAME configuration for controls are all stored in the .rc file corresponding to the version of AdvanceMAME you are running. Changes to specific games result in .rc file entries with a prefix for the ROM (i.e. ```bwidow/input_map[p1_doubleleft_up] keyboard[0,up]```)
+While in a game press <kbd>Tab</kbd> to open the menu to set up controls. AdvanceMAME configuration for controls is stored in `/opt/retropie/configs/mame-advmame/advmame-1.4.rc`. Changes to specific games result in `.rc` file entries with a prefix for the ROM (i.e. `bwidow/input_map[p1_doubleleft_up] keyboard[0,up]`)
 
-Note: The .rc file can also be edited manually. Any config can be made ROM-specific using a ```romname/``` prefix which is handy for overriding a setting for a specific ROM or class of ROMs, such as ```vertical/```. However, a single mistake in the .rc file will stop MAME from launching. It is always best to make a backup of the .rc file before manual edits.
+Note: The `.rc` file can also be edited manually. Any config can be made ROM-specific using a `romname/` prefix which is handy for overriding a setting for a specific ROM or class of ROMs, such as `vertical/`. However, a single mistake in the `.rc` file will stop AdvanceMAME from launching. It is always best to make a backup of the configuration file before manual edits.
 
 ---
+### [AdvanceMAME 3](https://sourceforge.net/projects/advancemame/ "AdvanceMAME website")
 
-### AdvanceMAME 3
-[Visit the AdvanceMAME homepage on sourceforge](http://sourceforge.net/projects/advancemame/)
-```shell
-Roms Dir: /home/pi/RetroPie/roms/mame-advmame
-Binary Dir: /opt/retropie/emulators/advmame/bin
-Config Dir: /opt/retropie/configs/mame-advmame
-```
+| Folder | Location |
+|:------ |:------ |
+| Roms | `/home/pi/RetroPie/roms/mame-advmame` <br> `/home/pi/RetroPie/roms/arcade`
+| Binary | `/opt/retropie/emulators/advmame/bin`
+| Configuration | `/opt/retropie/configs/mame-advmame`
+| Samples | `/home/pi/RetroPie/roms/mame-advmame/samples`
+
 **MAME Version**: MAME 0.106 (May 2006)
 
 **Active Sets: 6166**
+
 * BIOS: 26
 * CHDs: 86
 * Samples: 64 (3 more samples are not in circulation)
 
-**AdvanceMAME 3 DAT File**: same as AdvanceMAME 1.4 -- see above
-
-**AdvanceMAME 3 Compatibility List**: same as AdvanceMAME 1.4 -- see above
+**AdvanceMAME 3 DAT File**: same as AdvanceMAME 1.4, see above.
 
 #### Controls
 
-While in a game press Tab to open the menu to set up controls. AdvanceMAME configuration for controls are all stored in the .rc file corresponding to the version of AdvanceMAME you are running. Changes to specific games result in .rc file entries with a prefix for the ROM (i.e. ```bwidow/input_map[p1_doubleleft_up] keyboard[0,up]```)
+While in a game, press <kbd>Tab</kbd> to open the menu and set up the controls. AdvanceMAME configuration for controls is stored in `/opt/retropie/configs/mame-advmame/advmame.rc`. Changes to specific games result in `.rc` file entries with a prefix for the ROM (i.e. `bwidow/input_map[p1_doubleleft_up] keyboard[0,up]`)
 
-Note: The .rc file can also be edited manually. Any config can be made ROM-specific using a ```romname/``` prefix which is handy for overriding a setting for a specific ROM or class of ROMs, such as ```vertical/```. However, a single mistake in the .rc file will stop MAME from launching. It is always best to make a backup of the .rc file before manual edits.
+_**Note**_: The .rc file can be edited manually. Any config can be made ROM-specific using a `romname/` prefix, which is handy for overriding a setting for a specific ROM or class of ROMs, such as `vertical/`. However, a single mistake in the `.rc` file will stop AdvanceMAME from launching. It is always best to make a backup of the `advmame.rc` file before manual edits.
+
+---
+### [MAME](https://mamedev.org "MAME project website")
+**Note**: This emulator is considered 'experimental' in RetroPie. It requires more processing power than earlier MAME versions and will not run as many games at full speed on Raspberry Pi hardware.
+
+| Folder | Location |
+|:------ |:------ |
+|Roms | `/home/pi/RetroPie/roms/mame` <br> `/home/pi/RetroPie/roms/arcade` |
+|Binary | `/opt/retropie/emulators/mame/bin` |
+|Configuration | `/opt/retropie/configs/mame` |
+|BIOS | `/home/pi/RetroPie/BIOS/mame` |
+|Samples | `/home/pi/RetroPie/roms/mame/samples` |
+
+**MAME Version**: MAME has monthly versioned releases, there is no single version. Version `0.221` was released for May 2020, `0.222` for June 2020, etc.   
+Installing from binary will probably get a version that's a little behind the current MAME, installing from source will always get the latest monthly release.
+
+**_NOTE_**: installing from source requires a lot of RAM and CPU power, on Pi3 and lower end systems could take more than one day - use the binary release when available, instead of installing from source.
+
+**MAME Dat Files**: [ProgettoSnaps MAME .dat page](http://www.progettosnaps.net/dats/MAME/) has versions for each MAME release.
+
+**Active Sets:** ???
+
+#### Controls
+
+While in a game, press <kbd>Tab</kbd> to open the MAME menu, then choose the Input configuration. MAME controls configuration is saved in `/home/pi/RetroPie/roms/mame/cfg` :
+
+* default/general input configuration file is `default.cfg`
+* per-game configurations are saved in `<romname>.cfg`
+
+---
+### [lr-mame](https://github.com/libretro/mame "lr-mame project website")
+**Note**: This emulator is considered 'experimental' in RetroPie. It requires more processing power than earlier MAME versions and will not run as many games at full speed on Raspberry Pi hardware.
+
+| Folder | Location |
+|:------ |:------ |
+|Roms | `/home/pi/RetroPie/roms/mame` <br> `/home/pi/RetroPie/roms/mame-libretro` |
+|Binary | `/opt/retropie/libretrocores/lr-mame` |
+|Configuration | `/opt/retropie/configs/arcade` |
+|BIOS | `/home/pi/RetroPie/BIOS/mame` |
+|Samples | `/home/pi/RetroPie/roms/mame/samples` |
+
+**MAME Version**: Similar to [MAME](#mame), `lr-mame` follows the monthtly MAME releases, so there is no single version. Installing from binary will probably get a version that's a little behind the current MAME, but the upstream Libretro repository tries to keep up with MAME's monthly releases, so installing from source 
+
+**_NOTE_**: installing from source requires a lot of RAM and CPU power, on Pi3 and lower end systems could take more than a day. Use the binary release when available.
+
+**MAME Dat Files**: [ProgettoSnaps MAME .dat page](http://www.progettosnaps.net/dats/MAME/) has versions for each MAME release.
+
+**Active Sets:** ???
+
+#### Controls
+
+`lr-mame` uses the [RetroArch control configuration](RetroArch-Configuration).
+
+ * `/opt/retropie/configs/mame-libretro/retroarch.cfg`
+ * `/opt/retropie/configs/arcade/retroarch.cfg`
