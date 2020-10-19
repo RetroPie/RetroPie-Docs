@@ -36,7 +36,7 @@ Shaders are small programs that a dedicated graphics chip (GPU) runs to alter th
 
 #### crt-pi
 
-[@davej](https://retropie.org.uk/forum/user/davej) has built shader **crt-pi**, that aims to maintain full speed at 1080p on even a Pi 1 (overclocked). It is highly configurable, but four presets are included in RetroPie:
+[@davej](https://retropie.org.uk/forum/user/davej) has developed the **crt-pi** shader, that aims to maintain full speed at 1080p on even a Pi 1 (overclocked). It is highly configurable, but four presets are included in RetroPie:
 
 1. `crt-pi.glslp`
 ![](http://i.imgur.com/TuZvVXe.jpg)
@@ -48,7 +48,7 @@ The second two presets are `crt-pi-vertical.glslp` and `crt-pi-curvature-vertica
 
 #### zfast
 
-[@ghogan42](https://retropie.org.uk/forum/user/ghogan42) has built shader **zfast**, which seems to perform even better. Five presets are included in RetroPie:
+[@ghogan42](https://retropie.org.uk/forum/user/ghogan42) has developed the **zfast** shader, which seems to perform even better. Five presets are included in RetroPie:
 
 1. `zfast_crt_standard.glslp`
 ![](https://i.imgur.com/KnUBAMu.jpg)
@@ -67,13 +67,15 @@ The final 2 presets are `zfast_crt_standard_vertical.glslp` and `zfast_crt_curve
 
 You can select either preset via the [Configuration Editor](Configuration-Editor). Choose **Configure basic libretro emulator options**, then choose a specific emulator or **Configure default options for all libretro emulators** to make the change system-wide. Then, set `Video Shader Enable` to `true` and then set `Video Shader File` to the desired shader.
 
-You can can save per-game (or per-core) within a game via the **RGUI** with player 1's [Hotkey](Controller-Configuration#Hotkey) combination **Hotkey+X**, then **Quick Menu** > **Shaders**:
+You can can save per-game or per-core, via opening the **RGUI** within a game with player 1's [Hotkey](Controller-Configuration#Hotkey) combination **Hotkey+X**, then **Quick Menu** > **Shaders**:
 
-![](https://i.imgur.com/EOCVSbT.png?1)
+![](https://i.imgur.com/9cbhrVu.png)
 
-Presets are beeing saved under the following folder:
+![](https://i.imgur.com/fXHP7Ac.png)
 
-`configs\all\retroarch\shaders\presets\`
+Presets are saved under the following folder:
+
+`configs\all\retroarch\config\<CORE_NAME>\<GAME_NAME>.glslp`
 
 #### Scaling artfacts (particularly in Vertical games)
 
