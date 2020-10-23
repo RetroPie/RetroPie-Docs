@@ -8,7 +8,7 @@ CHD is a lossless compression format originally developed for MAME, for the hard
 It is a commmand line application and creating a `.chd` file from an existing `.cue` is performed by running:
 
 ```shell
-chdman created -i <game.cue> -o <game.chd>
+chdman createcd -i <game.cue> -o <game.chd>
 ```
 
 To compress every file in a directory, use:
