@@ -205,14 +205,14 @@ To use WHDLoad games you'll need to have a prepared WHDLoad image named 'WHDLoad
 
 In this WHDLoad image you must have the three kickstart roms (kick34005.A500, kick40063.A600, kick40068.A1200) in the 'Dev/Kickstart' directory.
 
-To do this, you can consult the excellent tutorial made by Allan Lindqvist (http://lindqvist.synology.me/wordpress/?page_id=182) just jump to the 'Create WHDLoad.hdf' section.
+To do this, you can consult the excellent [tutorial made by Allan Lindqvist](http://lindqvist.synology.me/wordpress/?page_id=182) just jump to the 'Create WHDLoad.hdf' section.
 
 The core only supports HDD image files format (hdf and hdz) and slave file must be named 'game.slave'. 
 
 #### Create a hdf file for a game 
 If you have a WHDLoad game in a zip or a directory, you will have to create an image file.
 
-To do this you can use ADFOpus (http://adfopus.sourceforge.net/) or amitools (https://github.com/cnvogelg/amitools).
+To do this you can use [ADFOpus](http://adfopus.sourceforge.net/) or [amitools](https://github.com/cnvogelg/amitools).
 
 Example, to create a hdf file from a zipped WHDLoad game :
 - Extract files from the zip to a directory.
