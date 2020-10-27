@@ -21,7 +21,7 @@ sudo systemctl enable --now joycond
 ```
 ## Usage
 
-Just like in a Nintendo Switch, after you connect it to Retropie through Bluetooth in the Retropie Menu, you'll need to press triggers to select the position. After you press any button and the player indicator lights start blinking, do the following:
+Just like in a Nintendo Switch, after you connect it to Retropie through Bluetooth in the Retropie Menu (press the button next to the USB-C port to put the controller in pairing mode), you'll need to press triggers to select the position. After you press any button and the player indicator lights start blinking, do the following:
 
 |Position/Controller|Buttons to press|
 |--|--|
