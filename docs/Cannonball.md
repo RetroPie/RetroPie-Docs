@@ -16,7 +16,7 @@ Place the OutRun Revision B MAME rom in
 ### Custom music
 Cannonball can play WAVs instead of using the inbuilt game music.
 
-Custom WAV files can be copied to `/home/pi/RetroPie/roms/ports/cannonball/music`, then enabled by editing the `config.xml` configuration file. Each track can be configured individually in the `custom_music` section, by specifying the _full__ path to the WAV file and toggling the `enable` flag:
+Custom WAV files can be copied to `/home/pi/RetroPie/roms/ports/cannonball/music`, then enabled by editing the `config.xml` configuration file. Each track can be configured individually in the `custom_music` section, by specifying the _full_ path to the WAV file and toggling the `enable` flag:
 
 ``` xml
  <custom_music>
@@ -39,11 +39,11 @@ Custom WAV files can be copied to `/home/pi/RetroPie/roms/ports/cannonball/music
                <title>LAST WAVE REMIX</title>
           <filename>/home/pi/roms/ports/cannonball/music/track4.wav</filename>
           </track4>
-     </custom_music>
+</custom_music>
 ```
 
-The `config.xml` is located in `/opt/retropie/configs/ports/cannonball` or (via file shares) in `\\retropie\configs\ports\cannonball`.
+The `config.xml` file is located in `/opt/retropie/configs/ports/cannonball` or (via file shares) in `\\retropie\configs\ports\cannonball`.
 
 See [HERE](https://github.com/djyt/cannonball/blob/master/roms/roms.txt) for exact rom info.
 
-See [HERE](https://github.com/djyt/cannonball/wiki/Cannonball-Manual) for more complete documentation
+See [HERE](https://github.com/djyt/cannonball/wiki/Cannonball-Manual) for more complete documentation.
