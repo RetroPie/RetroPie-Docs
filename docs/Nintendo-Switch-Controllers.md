@@ -15,6 +15,7 @@ Then, you need [joycond](https://github.com/DanielOgorchock/joycond), a userspac
 
 ```shell
 git clone https://github.com/DanielOgorchock/joycond.git
+cd joycond
 cmake .
 sudo make install
 sudo systemctl enable --now joycond
