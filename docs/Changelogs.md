@@ -2,7 +2,50 @@
 
 This page is a list of all of the changelogs for each version of RetroPie. For a complete list of all commits to the source code see [here:](https://github.com/RetroPie/RetroPie-Setup/commits/master)  
 
-### Vesrion 4.6: (April 28, 2020)
+### Version 4.7: (Nov 2, 2020)
+
+Changes since 4.6
+
+* Updated to the latest Raspberry Pi OS Buster image, with support for USB boot on the Pi4. The RetroPie 4.7 image can be flashed directly to an USB drive and booted directly, the Pi4 boot EEPROM should be updated first using Raspberry Pi Imager as detailed in https://github.com/raspberrypi/documentation/blob/master/hardware/raspberrypi/booteeprom.md.
+* Added xpadneo - linux driver for xbox one wireless gamepad.
+* retroarch - updated to v1.8.8.
+* Added mame - standalone MAME emulator building from latest code.
+* srb2 (Sonic Robo Blast 2) - updated to v2.2.2.
+* cgenius - updated to 2.4.4.1.
+* hatari (Atari ST emulator) - updated to v2.2.1.
+* amiberry (Amiga emulator) - updated to v3.3.
+* scummvm -  updated to 2.2.0
+* xroar (Dragon 32 / CoCo emulator) - updated to v0.36
+* ti99sim -  update to version 0.16.0 and switch to SDL2.
+* Added ti99sim-sdl1 for older distros as new code requires GCC 8
+* sdltrs -  switch to the SDL2 version, enable for KMS
+* attractmode - now supports RPI4/KMS.
+* lr-vecx - now includes GPU rendering support for smooth vector output.
+* sdl1 / runcommand - fix aspect ratio using the dispmanx backend with sdl1 on fkms (this affects various sdl1 emulators such as dosbox, * daphne, openbor and others).
+* lr-gpsp - fixed crash on RaspberryPi OS Buster.
+* opentyrian - updated to latest code which now uses SDL2 backend.
+* darkplaces-quake - added optional gles version for RPI4 with better performance.
+* gemrb - updated to v0.8.6 and switched to SDL2 backend.
+* lr-bnses - updated to the current BSNES version of the libretro fork.
+* vice - updated to latest version, and re-enable fastsid which got disabled by default upstream.
+* Improved Aarch64 support (64bit Arm) - can be manually installed on the beta 64bit Raspberry Pi OS, but is not officially supported.
+* lzdoom -  update to 3.86a (This was announced as the final lzdoom release to support GL2 rendering.)
+* mupen64plus - reworking of module logic - now enabled on mali targets.
+* Added recognition for Jetson Nano and Tegra X1
+* Added gpg signing for pre-built binaries.
+* Improvements to runcommand and RPI4 videomode detection.
+* Updates to Skyscraper (Metadata scraper).
+* usbromservice - fixed bug with mounting ext3/ext4 partitions.
+* audiosettings -  updates for Pi4 and support for discrete internal ALSA devices.
+* New esthemes added.
+* Various other bug fixes and improvements.
+* Added new experimental modules:
+  * lr-mesen - Mesen NES/Famicom emulator.
+  * lr-theodore - Thomson MO/TO system emulator.
+  * lr-smsplus-gx -  Sega Master System/Game Gear emulator.
+  * lr-gearsystem -  Sega Master System/Game Gear/SG-1000 emulator.
+
+### Version 4.6: (April 28, 2020)
 
 Changes since 4.5
 
