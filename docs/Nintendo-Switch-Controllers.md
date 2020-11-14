@@ -10,8 +10,15 @@ sudo dkms build nintendo -v 3.0
 sudo dkms install nintendo -v 3.0
 ```
 
-Then, you need [joycond](https://github.com/DanielOgorchock/joycond), a userspace driver which manages the controllers and exposes their motion inputs:
+Then, you need [joycond](https://github.com/DanielOgorchock/joycond), a userspace driver which manages the controllers and exposes their motion inputs.
 
+On a fresh install, you might need to install the libevdev library first:
+
+```shell
+sudo apt-get install libevdev-dev
+```
+
+Then install the joycond itself:
 
 ```shell
 git clone https://github.com/DanielOgorchock/joycond.git
