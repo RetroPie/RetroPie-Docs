@@ -6,7 +6,7 @@ _The Sharp X68000 was a Japan-only home computer released in 1987._
 
 | Emulator | Rom Folder | Extension | BIOS Files | Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
-| [lr-px68k](https://github.com/libretro/px68k-libretro/) | x68000 | .dim, .m3u | iplrom.dat, cgrom.dat, iplrom30.dat (optional), iplromco.dat (optional),  iplromxv.dat (optional) | /opt/retropie/configs/x68000/retroarch.cfg |
+| [lr-px68k](https://github.com/libretro/px68k-libretro/) | x68000 | .dim .hdf .hdm .2hd .d88 .m3u | iplrom.dat, cgrom.dat, iplrom30.dat (optional), iplromco.dat (optional),  iplromxv.dat (optional) | /opt/retropie/configs/x68000/retroarch.cfg |
 
 ## Emulator: [lr-px68k](https://github.com/libretro/px68k-libretro/)
 This emulator must be installed from the experimental section in RetroPie Setup.
@@ -15,7 +15,7 @@ Currently, MIDI/sound module capabilities are not supported in the emulator.
 
 ## ROMS
 
-Accepted File Extensions: **.dim** 
+Accepted File Extensions: **.dim .hdf .hdm .2hd .d88 .m3u** 
 
 Place your X68000 ROMs in:
 ```
