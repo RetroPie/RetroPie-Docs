@@ -63,12 +63,12 @@ If you want better sound than the standard on-board sound chip can provide, then
 
 You don't need to disable the on-board sound if you don't want to, but I would recommend it as can simply ALSA configuration and avoid some configuration issues later. The commands to enable USB audio and disable the on-board sound card are below:
 
-Modify the raspberry pi boot config file (`sudo nano/boot/config.txt`) and comment out the `dtparam=audio=on` line by putting a `#` in front of it like this: 
+Modify the raspberry pi boot config file (`sudo nano /boot/config.txt`) and comment out the `dtparam=audio=on` line by putting a `#` in front of it like this: 
 ````
 #dtparam=audio=on
 ````
 
-Modify the raspberry pi boot config file (`sudo nano/boot/config.txt`) and ADD the following lines to those already there: 
+Modify the raspberry pi boot config file (`sudo nano /boot/config.txt`) and ADD the following lines to those already there: 
 ````
 dtparam=audio=off
 ````
@@ -86,12 +86,12 @@ You don't need to disable the on-board sound if you don't want to, but I would r
 
 **For the JustBoom Amp, Amp Zero, DAC and DAC Zero**
 
-Modify the raspberry pi boot config file (`sudo nano/boot/config.txt`) and comment out the `dtparam=audio=on` line by putting a `#` in front of it like this: 
+Modify the raspberry pi boot config file (`sudo nano /boot/config.txt`) and comment out the `dtparam=audio=on` line by putting a `#` in front of it like this: 
 ````
 #dtparam=audio=on
 ````
 
-Modify the raspberry pi boot config file (`sudo nano/boot/config.txt`) and ADD the following lines to those already there: 
+Modify the raspberry pi boot config file (`sudo nano /boot/config.txt`) and ADD the following lines to those already there: 
 ````
 dtparam=audio=off
 dtoverlay=justboom-dac
@@ -106,12 +106,12 @@ Once you've made the change, save the file, restart your Raspberry Pi, and move 
 
 **For the JustBoom Digi and Digi Zero**
 
-Modify the raspberry pi boot config file (`sudo nano/boot/config.txt`) and comment out the `dtparam=audio=on` line by putting a `#` in front of it like this: 
+Modify the raspberry pi boot config file (`sudo nano /boot/config.txt`) and comment out the `dtparam=audio=on` line by putting a `#` in front of it like this: 
 ````
 #dtparam=audio=on
 ````
 
-Modify the raspberry pi boot config file (`sudo nano/boot/config.txt`) and ADD the following lines to those already there: 
+Modify the raspberry pi boot config file (`sudo nano /boot/config.txt`) and ADD the following lines to those already there: 
 ````
 dtparam=audio=off
 dtoverlay=justboom-digi
@@ -126,12 +126,12 @@ Once you've made the change, save the file, restart your Raspberry Pi, and move 
 
 **For the Hifiberry DAC FOR RASPBERRY PI 1/DAC+ LIGHT/DAC ZERO/MINIAMP/BEOCREATE/DAC+ DSP**
 
-Modify the raspberry pi boot config file (`sudo nano/boot/config.txt`) and comment out the `dtparam=audio=on` line by putting a `#` in front of it like this: 
+Modify the raspberry pi boot config file (`sudo nano /boot/config.txt`) and comment out the `dtparam=audio=on` line by putting a `#` in front of it like this: 
 ````
 #dtparam=audio=on
 ````
 
-Modify the raspberry pi boot config file (`sudo nano/boot/config.txt`) and ADD the following lines to those already there: 
+Modify the raspberry pi boot config file (`sudo nano /boot/config.txt`) and ADD the following lines to those already there: 
 ````
 dtparam=audio=off
 dtoverlay=hifiberry-dac
@@ -141,12 +141,12 @@ Once you've made the change, save the file, restart your Raspberry Pi, and move 
 
 **For the Hifiberry DAC+ STANDARD/PRO/AMP2**
 
-Modify the raspberry pi boot config file (`sudo nano/boot/config.txt`) and comment out the `dtparam=audio=on` line by putting a `#` in front of it like this: 
+Modify the raspberry pi boot config file (`sudo nano /boot/config.txt`) and comment out the `dtparam=audio=on` line by putting a `#` in front of it like this: 
 ````
 #dtparam=audio=on
 ````
 
-Modify the raspberry pi boot config file (`sudo nano/boot/config.txt`) and ADD the following lines to those already there: 
+Modify the raspberry pi boot config file (`sudo nano /boot/config.txt`) and ADD the following lines to those already there: 
 ````
 dtparam=audio=off
 dtoverlay=hifiberry-dacplus
@@ -156,7 +156,7 @@ Once you've made the change, save the file, restart your Raspberry Pi, and move 
 
 **For the Hifiberry DIGI/DIGI+ ALL MODELS**
 
-Modify the raspberry pi boot config file (`sudo nano/boot/config.txt`) and comment out the `dtparam=audio=on` line by putting a `#` in front of it like this: 
+Modify the raspberry pi boot config file (`sudo nano /boot/config.txt`) and comment out the `dtparam=audio=on` line by putting a `#` in front of it like this: 
 ````
 #dtparam=audio=on
 ````
@@ -171,12 +171,12 @@ Once you've made the change, save the file, restart your Raspberry Pi, and move 
 
 **For the Hifiberry AMP+ (NOT AMP2!)**
 
-Modify the raspberry pi boot config file (`sudo nano/boot/config.txt`) and comment out the `dtparam=audio=on` line by putting a `#` in front of it like this: 
+Modify the raspberry pi boot config file (`sudo nano /boot/config.txt`) and comment out the `dtparam=audio=on` line by putting a `#` in front of it like this: 
 ````
 #dtparam=audio=on
 ````
 
-Modify the raspberry pi boot config file (`sudo nano/boot/config.txt`) and ADD the following lines to those already there: 
+Modify the raspberry pi boot config file (`sudo nano /boot/config.txt`) and ADD the following lines to those already there: 
 ````
 dtparam=audio=off
 dtoverlay=hifiberry-amp
