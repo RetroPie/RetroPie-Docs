@@ -114,6 +114,32 @@ Change the following **Core Options** to the values below (see [Setting Core Opt
 System 1 (Server, e.g. 192.168.0.1):
 | Core Option | Value |
 | :---: | :---: |
+| gambatte_gb_link_mode | Network Server |
+| gambatte_gb_link_network_port | 56400 |
+
+System 2 (Client):
+| Core Option | Value |
+| :---: | :---: |
+| gambatte_gb_link_mode | Network Client |
+| gambatte_gb_link_network_port | 56400 |
+| gambatte_gb_link_network_server_ip_1| 1 |
+| gambatte_gb_link_network_server_ip_2| 9 |
+| gambatte_gb_link_network_server_ip_3| 2 |
+| gambatte_gb_link_network_server_ip_4| 1 |
+| gambatte_gb_link_network_server_ip_5| 6 |
+| gambatte_gb_link_network_server_ip_6| 8 |
+| gambatte_gb_link_network_server_ip_7| 0 |
+| gambatte_gb_link_network_server_ip_8| 0 |
+| gambatte_gb_link_network_server_ip_9| 0 |
+| gambatte_gb_link_network_server_ip_10| 0 |
+| gambatte_gb_link_network_server_ip_11| 0 |
+| gambatte_gb_link_network_server_ip_12| 1 |
+
+For older versions of lr-gambatte use this config parameters: 
+
+System 1 (Server, e.g. 192.168.0.1):
+| Core Option | Value |
+| :---: | :---: |
 | Link Mode | Network Server |
 | Network Port | 56400 |
 | Network Server IP Octet1 | 0 |
