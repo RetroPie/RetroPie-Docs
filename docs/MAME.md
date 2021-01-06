@@ -11,8 +11,6 @@ There are a variety of arcade emulator versions available in RetroPie. There are
 
 This page is a resource for additional details on RetroPie's MAME emulators including configuration paths, controls, and the ROM sets which each emulator requires.
 
-**All Arcade ROMS Compatibility List**: [Google Drive document](https://docs.google.com/spreadsheets/d/1antILt7D12EWOFzyJwTfB86NceghMJKXG7CdYumuHec/edit?usp=sharing).
-
 | Emulator | ROM Folder(s) | Extension | Required ROM Set Version
 | :---: | :---: | :---: | :--- |
 | [mame4all-pi](#mame4all-pi) | arcade **or** mame-mame4all | .zip | MAME 0.37b5 
@@ -55,8 +53,6 @@ To avoid having several menus for different arcade emulators, all arcade-based R
 * CHDs: 0
 * Samples: 35
 
-**Based on the MAME4ALL-PI Compatibility list below:**
-
 * 1126 Parent Roms
 * 1025 Clones Roms
 * 129 NeoGeo Roms (Parent+Clone)
@@ -64,8 +60,6 @@ To avoid having several menus for different arcade emulators, all arcade-based R
 **MAME 0.37b5 DAT File**: [mame4all-037b5-RetroPie-260.dat](https://drive.google.com/file/d/0B2TMeZ6iEFvHVUNfWHpUZk82bkk/view?usp=sharing)
 
 **MAME 0.37b5 XML File**: [mame4all-no-clones-no-neogeo](https://drive.google.com/file/d/0B2TMeZ6iEFvHNm5OYndFUHM3djg/view?usp=sharing) Does not include clones or NeoGeo romsets.
-
-**MAME4ALL-PI Compatibility List**: [Google Drive document](https://docs.google.com/spreadsheets/d/1SHspjyHavY9-PKbO2swDr52BS2Wl_mB_Vjx2Z1SXiD8/edit?usp=sharing)
 
 #### Controls
 
@@ -100,8 +94,6 @@ _**Note**_: If configuration or other aspect of the configuration need resetting
 
 **MAME 0.37b5 'Lite' DAT File**: [mame4all-no-clones-no-neogeo](https://drive.google.com/file/d/0B2TMeZ6iEFvHNm5OYndFUHM3djg/view?usp=sharing) - Does not include clones or NeoGeo romsets.
 
-**[lr-mame2000 Compatibility List](https://docs.google.com/spreadsheets/d/1Fmx2RPcgVgIIeKpaBKNEGWCDuu3DGfR-VkrnIVsIpeE/edit?usp=sharing)** feel free to contribute to the list.
-
 #### Controls
 
 MAME 2000 uses [RetroArch control configuration](RetroArch-Configuration). Custom Retroarch controls can be added to the `retroarch.cfg` file in
@@ -135,8 +127,6 @@ Please see **[MAME 2003 on RetroPie](lr-mame2003)** for information on how to co
 **MAME 0.78u5 DAT File**: [mame2003-lr-working-no-clones](https://drive.google.com/file/d/0B2TMeZ6iEFvHV21wRVh6TF9uQ1U/view?usp=sharing) - Working romsets only. Does not include clones.
 
 **MAME 0.78u5 'Lite' DAT File**: [mame2003-lr-lite](https://drive.google.com/file/d/0B2TMeZ6iEFvHY1VzcXYyT09iRGs/view?usp=sharing) - Working romsets only. Does not include: clones, NeoGeo, PlayChoice NES/multiplay, romsets with rotary/dial/trackball/light gun controls, or romsets classified as casino/quiz/mahjong/fruit_machines/rhythm/mature.
-
-**Mame 2003 Compatibility List**: [Google Drive document](https://docs.google.com/spreadsheets/d/1LP1MELCvcxu7TfiowF_0ZuvRVEMqlfQyTVetnOJvuJc/edit?usp=sharing)
 
 **[Mame 2003 catver.ini](https://github.com/libretro/mame2003-libretro/blob/master/metadata/catver.ini)** also contains data on games definitively known not to work, as well as sorting data for mature games and other, less desirable, romsets.
 
@@ -216,8 +206,6 @@ MAME 2003-Plus uses both [RetroArch control configuration](RetroArch-Configurati
 * Samples: 70 (4 more samples are not in circulation)
 
 **MAME 0.139 DAT File**: [MAME 0.139.dat](https://raw.githubusercontent.com/libretro/mame2010-libretro/master/metadata/mame2010.xml) 
-
-**MAME 2010 Compatibility List**: [Google Drive document](https://docs.google.com/spreadsheets/d/1IRSmFrSDvIc6gAw0gn12TcQ3HDOwmrETTor8wvvb7VI/edit#gid=1947139826)
 
 #### Controls
 
@@ -341,8 +329,6 @@ MAME 2016 uses [RetroArch control configuration](RetroArch-Configuration). Custo
 
 **AdvanceMAME 0.94 DAT File**: [advmame-0.94-RetroPie-260.7z](https://drive.google.com/file/d/0B2TMeZ6iEFvHa2E5Rzl4ZEdMdjQ/view?usp=sharing)
 
-**[AdvanceMAME 0.94 Compatibility List]**: [Google Drive document](https://docs.google.com/spreadsheets/d/1AEQ94buG0rvbW0xdnYKeuEhHeCbuZlRfRJQCb1Dt8fw/edit?usp=sharing)
-
 #### Controls
 
 While in a game, press <kbd>Tab</kbd> to open the menu and set up controls. AdvanceMAME configuration for controls is stored in `/opt/retropie/configs/mame-advmame/advmame-0.94.0.rc`. Changes to specific games result in `.rc` file entries with a prefix for the ROM (i.e. `bwidow/input_map[p1_doubleleft_up] keyboard[0,up]` for the `bwidow` game).
@@ -369,8 +355,6 @@ _**Note**_: The `.rc` file can also be edited manually, with a text editor. Any 
 * Samples: 64 (3 more samples are not in circulation)
 
 **AdvanceMAME 1.4 DAT File**: [advmame12-106.7z](https://drive.google.com/file/d/0B2TMeZ6iEFvHMEZnb1RxQWNmdHM/view?usp=sharing)
-
-**AdvanceMAME 1.4 Compatibility**: [Google Drive document](https://docs.google.com/spreadsheets/d/1RapyxChe2BMOfbX-FsCup9SXGxvS1WmXAofwaTJtmxc/edit?usp=sharing)
 
 #### Controls
 

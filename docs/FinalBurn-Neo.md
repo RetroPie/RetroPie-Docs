@@ -12,8 +12,6 @@ There are a variety of arcade emulators available in RetroPie. There are signifi
 
 This page is a resource for additional details on RetroPie's FinalBurn emulators including configuration paths, controls, and the ROM sets required by each emulator.
 
-[**All Arcade ROMS Compatibility List**](https://docs.google.com/spreadsheets/d/1antILt7D12EWOFzyJwTfB86NceghMJKXG7CdYumuHec/edit?usp=sharing) feel free to contribute to the list.
-
 | Emulator | Rom Folder | Extension | Required ROM Version | Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
 | [lr-fbneo](#lr-fbneo) | arcade **or** fba **or** neogeo  | .7z .zip | FB Neo v0.2.97.44| /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/fba/retroarch.cfg, **or** /opt/retropie/configs/neogeo/retroarch.cfg |
@@ -70,8 +68,6 @@ NOTE: If you have updated RetroPie from an existing installation since 27th May 
 
 [Other Dats for home console systems available here](https://github.com/libretro/fbeo/tree/master/dats)
 
-[lr-fbneo compatibility list](https://docs.google.com/spreadsheets/d/1GaqIIoiWbzKHwZ52S2xCSDQXILo81Ls1mHK6czKGAtM/edit?usp=sharing) feel free to contribute to the list.
-
 **Controls:**
 lr-fbneo utilises RetroArch configs. Add custom retroarch controls to the retroarch.cfg file in:
 ```shell
@@ -104,8 +100,6 @@ Config Dir: /opt/retropie/configs/fba/retroarch.cfg
 
 **FB Alpha v0.2.97.30 Neo Geo Only DAT File**: [fba-lr-neogeo](https://drive.google.com/file/d/0B2TMeZ6iEFvHVk1Ud1RoSHpfcFU/view?usp=sharing)
 
-[**lr-fbalpha2012 Compatibility List**](https://docs.google.com/spreadsheets/d/1rWO7Lm0bTGNpak6J-CPzde0GNIDP0NHDoQdJ6iWosfA/edit?usp=sharing)  feel free to contribute to the list.
-
 **Controls:**
 lr-fbalpha2012 utilises RetroArch configs. Add custom retroarch controls to the retroarch.cfg file in:
 ```shell
@@ -134,8 +128,6 @@ Config Dir: /opt/retropie/configs/fba/fba2x.cfg
 **FB Alpha v0.2.96.71 DAT File**: [FB Alpha v0.2.96.71 (ClrMame Pro).dat](https://drive.google.com/file/d/0B2TMeZ6iEFvHZFJOckQyRVZ5OG8/view?usp=sharing)
 
 **FB Alpha v0.2.96.71 'Lite' DAT File**: [fba_029671_od_release_10_working_roms_filtered.zip] (https://drive.google.com/file/d/0B2TMeZ6iEFvHMTV2TnlrZWwxRXc/view?usp=sharing) (clones, non-working, mahjong, quiz, adult, casino, rythm removed)
-
-[**PiFBA Compatibility List**](https://docs.google.com/spreadsheets/d/1OZioLrz16ptaNbjQUDP5hhVzQDTOTn9Nz46Hbj3-06k/edit?usp=sharing)  feel free to contribute to the list.
 
 **Controls**
 

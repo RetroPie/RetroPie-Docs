@@ -154,8 +154,6 @@ Config Dir: /opt/retropie/configs/neogeo
 **GnGeo-Pi Filtered DAT File**: [pandora_gngeo_084_filtered.zip](https://drive.google.com/file/d/0B2TMeZ6iEFvHb1RhaTF0NzJaRlU/view?usp=sharing)All clones non-working\mahjong\quiz removed    
 **Romsets emulated**: 128
 
-[**GnGeo-Pi Compatibility List**](https://docs.google.com/spreadsheets/d/1A_a_9t14uzDUMrrO0RgLDwiVUiycmclcPIs6cU6Iox8/edit?usp=sharing)  feel free to contribute to the list.
-
 As a caveat, if you're using _gngeo-pi__, the ROMs you have must match the file in `gngeo_data.zip` located at:
 ```
 /opt/retropie/emulators/gngeopi/share/gngeo
