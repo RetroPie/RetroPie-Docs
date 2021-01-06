@@ -32,7 +32,7 @@ In general, you will only get good results with a full set of ROMs. Incomplete R
 There are a number of different rom set versions. Different versions contain different games (although there's plenty of overlap). This table tells you which rom set version you need for each emulator, and which games are in each set:
 
 | Emulator | Required ROM Version | # of ROMs |
-| :---: | :---: | :---: | :---: |
+| :---: | :---: | :---: |
 | [mame4all](MAME) | MAME 0.37b5 | 2270 |
 | [lr-mame2003](MAME) | MAME 0.78 | 4720 |
 | [pifba](FinalBurn-Neo#pifba) | FB Alpha v0.2.96.71 | 684 |
