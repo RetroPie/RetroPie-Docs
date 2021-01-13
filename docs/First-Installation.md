@@ -12,9 +12,9 @@
 7. [Transferring Roms](#transferring-roms)
 8. [Configure Audio (if needed)](#audio)
 
-Congratulations! You have discovered the wonderful world of RetroPie- your entire childhood is within reach! RetroPie is a combination of multiple projects including [RetroArch](http://www.libretro.com), [EmulationStation](http://www.emulationstation.org), and many others. 
+Congratulations! You have discovered the wonderful world of RetroPie- your entire childhood is within reach! RetroPie is a combination of multiple projects including RetroArch[**(link)**](http://www.libretro.com), EmulationStation[**(link)**](http://www.emulationstation.org), and many others. 
 
-This page is for people just getting started on RetroPie. The easiest way to install RetroPie is the SD image which is a ready to go system built upon top of the Rasberry Pi OS - this is the method described in the following guide. Alternatively, advanced users can install RetroPie [manually](Manual-Installation). 
+This page is for people just getting started on RetroPie. The easiest way to install RetroPie is the SD image which is a ready to go system built upon top of the Raspberry Pi OS - this is the method described in the following guide. Alternatively, advanced users can install RetroPie manually [**HERE**](Manual-Installation). 
 
 This guide will give you the very basics to get you up and running from a blank SD card to first boot into EmulationStation.
 
@@ -29,15 +29,15 @@ alt="RetroPie First Installation Video" width="1280" height="400" border="10" />
  * Raspberry Pi (A, A+, B, B+, 2, Zero, 3, 4) - for best performance use a **Raspberry Pi 4**
  * Raspberry Pi Case (optional but recommended)
  * MicroSD Card (see compatible SD card list [**here**](http://elinux.org/RPi_SD_cards))
- * MicroSD Card Reader (optional - for installing RetroPie if your computer doesn't have a sdcard slot)
- * HDMI cable or 4 Pole RCA to 3.5mm Cable (HDMI works best).
+ * MicroSD Card Reader (optional - for installing RetroPie if your computer doesn't have a SD card slot)
+ * HDMI cable or 4 Pole RCA to 3.5mm Cable (HDMI works best)
  * Television or Computer Monitor- really any screen with HDMI or RCA ports
  * Wifi Dongle or Ethernet Cable (Wifi is built-in for the Pi 3/4 model - see wifi dongle compatible list [**here**](http://elinux.org/RPi_USB_Wi-Fi_Adapters))
- * 5V 2A Micro USB Power Supply (2.5A for Pi 3) / 5.1V 3A USB-C for Pi 4.
- * USB Keyboard and Mouse (to get things set up or you can use [SSH](SSH))
- * USB Game Controller of your choice (or you can get the [Control Block](http://blog.petrockblock.com/2014/12/29/controlblock-power-switch-and-io-for-the-raspberry-pi/) to use original SNES controllers)
+ * 5V 2A Micro USB Power Supply (2.5A for Pi 3) / 5.1V 3A USB-C for Pi 4
+ * USB Keyboard and Mouse (to get things set up or you can use SSH[**(link)**](SSH))
+ * USB Game Controller of your choice (or you can get the Control Block[**(link)**](http://blog.petrockblock.com/2014/12/29/controlblock-power-switch-and-io-for-the-raspberry-pi/) to use original SNES controllers)
 
-The simplest way to get most of these components is through a kit such as the [Canakit](https://www.amazon.com/gp/product/B01C6Q2GSY/). 
+The simplest way to get most of these components is through a kit such as the Canakit[**(link)**](https://www.amazon.com/gp/product/B01C6Q2GSY/). 
 
 ## Installation
 
@@ -58,7 +58,7 @@ If you get the error `Illegal Instruction` when it boots or if it just boots int
 
 ### Extract
 
-Once you have downloaded your SD card image you need to extract it using a program such as [7-Zip](http://www.7-zip.org/). You will extract the downloaded **.gz** file and the extracted file will be a **.img** file.
+Once you have downloaded your SD card image you need to extract it using a program such as 7-zip[**(link)**](http://www.7-zip.org/). You will extract the downloaded **.gz** file and the extracted file will be a **.img** file.
 
 To extract from the command line, you can type the following into a Terminal window, placing X with version you downloaded:
 
@@ -68,19 +68,19 @@ To extract from the command line, you can type the following into a Terminal win
 
 To install the RetroPie SD image on your MicroSD card. (You may need a MicroSD card reader to plug it into your computer) 
 
-1. For Windows you can use a [Etcher](https://etcher.io/), [Win32DiskImager](http://sourceforge.net/projects/win32diskimager/) or [Raspberry Pi Imager](https://www.raspberrypi.org/downloads/)
-2. For macOS you can use [Etcher](https://etcher.io/), [Apple Pi Baker](https://www.tweaking4all.com/hardware/raspberry-pi/applepi-baker-v2/) or [Raspberry Pi Imager](https://www.raspberrypi.org/downloads/)
-3. For Linux you can use `dd` command, [Etcher](https://etcher.io/) or [Raspberry Pi Imager](https://www.raspberrypi.org/downloads/).
+1. For Windows you can use [**Etcher**](https://etcher.io/), [**Win32DiskImager**](http://sourceforge.net/projects/win32diskimager/) or [**Raspberry Pi Imager**](https://www.raspberrypi.org/downloads/)
+2. For macOS you can use [**Etcher**](https://etcher.io/), [**Apple Pi Baker**](https://www.tweaking4all.com/hardware/raspberry-pi/applepi-baker-v2/) or [**Raspberry Pi Imager**](https://www.raspberrypi.org/downloads/)
+3. For Linux you can use the `dd` command, [**Etcher**](https://etcher.io/) or [**Raspberry Pi Imager**](https://www.raspberrypi.org/downloads/).
 
-See [the official Raspberry Pi "WRITING AN IMAGE TO THE SD CARD" instructions](https://www.raspberrypi.org/documentation/installation/installing-images/).
+See the official Raspberry Pi "WRITING AN IMAGE TO THE SD CARD" [**instructions**](https://www.raspberrypi.org/documentation/installation/installing-images/).
 
-**Note** RetroPie is built on top of Raspberry Pi OS Buster (a Linux based OS for the Raspberry Pi) and as such the partition on the SD card is EXT4 (a linux filesystem). This parition is is not visible on Windows systems, so the card will show up as a smaller size than usual and you won't be able to see everything on the card, but it is all there. You will be able to access the filesystem over the network as described in the transferring roms section below.
+**Note** RetroPie is built on top of Raspberry Pi OS Buster (a Linux based OS for the Raspberry Pi) and as such the partition on the SD card is EXT4 (a linux filesystem). This partition is is not visible on Windows systems, so the card will show up as a smaller size than usual and you won't be able to see everything on the card, but it is all there. You will be able to access the filesystem over the network as described in the transferring roms section below.
 
-If you're updating from a previous version of retropie see [**HERE**](Updating-RetroPie).
+If you're updating from a previous version of RetroPie see [**HERE**](Updating-RetroPie).
 
 ## Configure Controllers
 
-On first boot your filesystem will be expanded automatically, you will then be welcomed with the following screen- this menu will configure your controls for both Emulationstation and RetroArch Emulators:
+On first boot your filesystem will be expanded automatically, you will then be welcomed with the following screen- this menu will configure your controls for both EmulationStation and RetroArch Emulators:
 
 ![welcomescreen](https://cloud.githubusercontent.com/assets/10035308/9140482/cf42f25c-3cee-11e5-8f91-c1fc1c57175c.png)
 
@@ -92,7 +92,7 @@ Follow the onscreen instructions to configure your gamepad- if you run out of bu
 
 ![welcomescreengamepadconfigure](https://cloud.githubusercontent.com/assets/10035308/9140518/0263b9c8-3cef-11e5-922f-42f790f3be91.png)
 
-If you wish to configure more than one controller, you can do so from the start menu of emulationstation. For more details on manual controller configurations see this page [Here](RetroArch-Configuration).
+If you wish to configure more than one controller, you can do so from the start menu of EmulationStation. For more details on manual controller configurations see this page [Here](RetroArch-Configuration).
 
 See the following diagrams for reference:
 
@@ -124,7 +124,7 @@ The Hotkey button enables you to press it in combination with another button to 
 | Hotkey+X | RGUI Menu |
 | Hotkey+B | Reset |
 
-For more information, see [Hotkeys](RetroArch-Configuration#hotkeys)
+For more information, see [**Hotkeys**](RetroArch-Configuration#hotkeys)
 
 ## EmulationStation
 
@@ -135,7 +135,7 @@ For more information, see [Hotkeys](RetroArch-Configuration#hotkeys)
 
 ## Wifi
 
-If you wish to use wifi to transfer roms over the network rather than a USB stick or Ethernet cable you'll need to setup your wifi- which can also be done from the Retropie menu in emulationstation:
+If you wish to use wifi to transfer roms over the network rather than a USB stick or Ethernet cable you'll need to setup your wifi- which can also be done from the RetroPie menu in EmulationStation:
 
 | Connect to Wifi Network: |
 |:---:|
@@ -153,7 +153,7 @@ If you wish to use wifi to transfer roms over the network rather than a USB stic
 |:---:|
 |![wifi4](https://cloud.githubusercontent.com/assets/10035308/16217944/92cb07fa-3735-11e6-9239-66fba394c669.png)|
 
-For more WiFi configuration options see this page [HERE](Wifi)
+For more WiFi configuration options see this [**page**](Wifi)
 
 ## Installing additional Emulators
 On RetroPie 4.0+, not everything is installed by default. The pre-made images contain the best working emulators for each system supported by the hardware. This should cover everything most users would be doing. Ports like quake and doom and some other emulators like ScummVM can be installed later.
@@ -174,7 +174,7 @@ There are three main methods of transferring roms:
  * add the roms to their respective folders (in the `retropie/roms` folder)
  * plug it back into the Raspberry Pi
  * wait for it to finish blinking
- * refresh emulationstation by choosing restart emulationstation from the start menu
+ * refresh EmulationStation by choosing RESTART EMULATIONSTATION from the start menu
 
 See this video for reference:
 
@@ -184,11 +184,11 @@ alt="Transferring ROMs using an USB drive" width="640" height="400" border="10" 
 
 ### SFTP
 
-**NOTE** you need to [enable SSH](SSH) in order for SFTP to work.
+**NOTE** you need to enable SSH[**(link)**](SSH) in order for SFTP to work.
 
 * Wired (needs ethernet cable)
 * Wireless (needs wifi dongle)
-There are many SFTP programs out there, for windows many people use [WinSCP](https://winscp.net/eng/download.php) for mac you can use something like [Cyberduck](https://cyberduck.io/?l=en)
+There are many SFTP programs out there, for windows many people use WinSCP[**(link)**](https://winscp.net/eng/download.php) for mac you can use something like Cyberduck[**(link)**](https://cyberduck.io/?l=en)
 
 ![winscp](https://cloud.githubusercontent.com/assets/10035308/12865832/7d9afb68-cc75-11e5-81b2-4529991e1821.png)
 
@@ -196,7 +196,7 @@ Default username: **pi**
 
 Default Password: **raspberry**
 
-You can also log in as root if you wish to change more files than just the roms, but you first need to enable the root password which is explained [here](FAQ#why-cant-i-ssh-as-root-anymore)
+You can also log in as root if you wish to change more files than just the roms, but you first need to enable the root password which is explained [**here**](FAQ#why-cant-i-ssh-as-root-anymore)
 
 ### Samba-Shares
 
@@ -208,13 +208,13 @@ You can also log in as root if you wish to change more files than just the roms,
 
 ## AUDIO
 
-In general RetroPie audio will work out of the box without any tweaking, but if you have audio issues you should follow the [instructions on the Sound Issues page](Sound-Issues) to fix them. You will most likely need to visit the [Sound Issues](Sound-Issues) page if you are using a USB Audio device, or if you are using an aftermarket RPi HAT add-on audio device (such as a Justboom sound card).
+In general RetroPie audio will work out of the box without any tweaking, but if you have audio issues you should follow the instructions on the [**Sound Issues Page**](Sound-Issues) to fix them. You will most likely need to visit the [**Sound Issues Page**](Sound-Issues) if you are using a USB Audio device, or if you are using an aftermarket RPi HAT add-on audio device (such as a Justboom sound card).
 
 ## PLAY!
 
-After you've added your roms you need to restart emulationstation in order for them to show up. You can restart emulationstation from the start menu, or by rebooting your pi with `sudo reboot`. 
+After you've added your roms you need to restart EmulationStation in order for them to show up. You can restart EmulationStation from the start menu, or by rebooting your pi with `sudo reboot`. 
 
-See the rest of the [docs](https://retropie.org.uk/docs/) for more detailed information on individual emulators, advanced settings etc. If you still can't figure it out, the RetroPie community is very helpful on the [forum](https://retropie.org.uk/forum/). 
+See the rest of the [**docs**](https://retropie.org.uk/docs/) for more detailed information on individual emulators, advanced settings etc. If you still can't figure it out, the RetroPie community is very helpful on the [**forum**](https://retropie.org.uk/forum/). 
 
 **The RetroPie Project is primarily maintained by a few developers who develop the project in their free time. If you have found the RetroPie project useful please consider donating to the project [here](https://retropie.org.uk/donate/). As you become more familiar with RetroPie, pay it forward by helping others on the forum. The RetroPie Project is what it is today because of the many contributions of the community.**
 
