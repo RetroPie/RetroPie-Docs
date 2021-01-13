@@ -143,9 +143,9 @@ The recognized BIOS filename is case-sensitive (must be in all lowercase).
 ## Controls
 
 ### lr-pcsx_rearmed & lr-beetle-psx Controls
-lr-pcsx_rearmed and lr-beetle-psx utilize Retroarch configurations.
+lr-pcsx_rearmed and lr-beetle-psx utilize RetroArch configurations.
 
-Add custom retroarch controls to the retroarch.cfg file in
+Add custom RetroArch controls to the retroarch.cfg file in
 ```shell
 /opt/retropie/configs/psx/retroarch.cfg
 ```
@@ -164,25 +164,25 @@ You will need a keyboard to press Escape on to access the emulator's menu so tha
 
 A common issue people using RetroPie have with PSX emulation is their analog sticks do not work. The reason for this is related to a default lr-pcsx_rearmed core setting, and there is a very good reason the setting is the way it is that we will get into later.
 
-Change the **Core Options** for **Pad 1 Type** and **Pad 2 Type** from **standard** to **dualshock**. See [Setting Core Options](RetroArch-Core-Options#setting-core-options).
+Open the **Core Options** Quick Menu, select **Controls** and for **Port 1 Controls** and **Port 2 Controls**, change the Device Type from **standard** to **dualshock**. See [Setting Core Options](RetroArch-Core-Options#setting-core-options).
 
-After the previous two settings have been changed, back out to the Quick Menu so that you can enter the Controls section. In Controls, you need to change all controllers from "RetroPad" to "RetroPad w/ Analog", then use the "Save Core Remap File" function to save this setting as a default for all games.
+On the **Controls** page, select **Save Core Remap File** to save this setting as a default for all games.
 
 After a complete exit back to EmulationStation, all games that should work with the analog sticks will function correctly, however, we have just created a problem: roughly 1/3 of the PSX library will no longer accept any input whatsoever.
 
-The reason for the problem is due to the PSX originally being released with a controller that didn't have analog sticks so the games released for the system before the analog sticks were added to the controller only accounted for the standard controller: these games are generally referred to as Digital-Only games.
+The reason for the problem is due to the PSX originally being released with a controller that didn't have analog sticks. The games released for the system prior to the analog sticks being added to the controller only account for the standard controller: these games are generally referred to as Digital-Only games.
 
 Unfortunately, this is a problem that doesn't have an easy solution. The reason the emulator was set the way is was is because that was 100% compatible even if it removed all analog functionality. If you want all your games with analog support to work correctly, you will have to manually fix the Digital-Only games one by one.
 
-The process of fixing a Digital-Only game is to set per-ROM Core Options, changing **Pad 1 Type** and **Pad 2 Type** back to **standard**. See [Setting Core Options per-ROM](RetroArch-Core-Options#setting-core-options-per-rom).
+The process of fixing a Digital-Only game is to set per-ROM Core Options, changing **Port 1 Device Type** and **Port 2 Device Type** back to **standard** and then do **Save Game Remap File**. See [Setting Core Options per-ROM](RetroArch-Core-Options#setting-core-options-per-rom).
 
-With those three things done, now we need to go back to the **Quick Menu** and go into the Controls section. In **Controls**, change all **RetroPad w/ Analog** back to **RetroPad**, change all **Analog To Digital** settings for each controller from **None** to **Left Analog**, then use the **Save Game Remap File**.
+(Optional) In **Controls**, change all **Analog To Digital Type** settings for each controller from **None** to **Left Analog**, then do **Save Game Remap File**.
 
-After a complete exit back to EmulationStation, the game you've manually fixed will function correctly plus you will be able to use the left analog stick for upto 8-way movement if you want to. Keep in mind the "Analog To Digital" step is completely optional and included for those that may want to still use an analog stick for movement in games that didn't support it originally.
+After a complete exit back to EmulationStation, the game you've manually fixed will function correctly plus you will be able to use the left analog stick for up to 8-way movement if you want to. Keep in mind the "Analog To Digital" step is completely optional and included for those that may want to still use an analog stick for movement in games that didn't support it originally.
 
 For a decent list of which games are Digital-Only, check the spreadsheet and website found in the "Game Specific Control Information" section below.
 
-The **negcon** setting found between pad type is for the [NeGcon](https://en.wikipedia.org/wiki/NeGcon).
+The **negcon** setting found between pad type is for the NeGcon[**(link)**](https://en.wikipedia.org/wiki/NeGcon).
 
 While this section does focus on lr-pcsx_rearmed, what is done in this section could be done in PCSX-ReARMed's menu as well if not visually different.
 
@@ -200,7 +200,8 @@ For a more complete resource, please check the [PlayStation DataCenter](http://p
 
 ### Multitap (3-5 Players)
 
-lr-pcsx_rearmed has support for multitap, but not all games read input when a multitap is connected, so a per-ROM Core Options file should be created for multitap compatible games. Set the Core Options for **Pad 3 Type**, **Pad 4 Type** (and so on, depending on how many players are supported by the game) to the relevant Controller Type that the game supports. See [Setting Core Options per-ROM](RetroArch-Core-Options#setting-core-options-per-rom).
+lr-pcsx_rearmed has support for multitap, but not all games read input when a multitap is connected, so a per-ROM Core Options file should be created for multitap compatible games. Set the Core Options for **Pad 3 Type**, **Pad 4 Type** (and so on, depending on how many players are supported by the game) to the relevant Controller Type that the game supports. See [Setting Core Options per-ROM](
+-Core-Options#setting-core-options-per-rom).
 
 ## Tweaks
 
@@ -208,7 +209,7 @@ lr-pcsx_rearmed has support for multitap, but not all games read input when a mu
 
 #### Performance - PSX CPU Clock
 
-The clock speed percentage of the emulated PSX hardware's CPU can be adjusted by the user. While the default setting of **57** is decent, it does cause some games to exceed their intended framerate and the setting of **55** is recommended to reduce this from happening in more games. Some games, such as "Final Fantasy 7" and "Final Fantasy Tactics", may need even lower CPU speeds. See [Setting Core Options per-ROM](RetroArch-Core-Options#setting-core-options-per-rom).
+The clock speed percentage of the emulated PSX hardware's CPU can be adjusted by the user. While the default setting of **57** is decent, it does cause some games to exceed their intended frame rate and the setting of **55** is recommended to reduce this from happening in more games. Some games, such as "Final Fantasy 7" and "Final Fantasy Tactics", may need even lower CPU speeds. See [Setting Core Options per-ROM](RetroArch-Core-Options#setting-core-options-per-rom).
 
 #### Performance - Disable Vibration
 
@@ -222,7 +223,7 @@ Instances in-game where vibration occurs may still cause the slowdown even if vi
 
 lr-pcsx_rearmed has a Core Option **Enhance Resolution (Slow)** that improves graphical fidelity by doubling the normal resolution, producing a sharper 3D image, however all 2D bitmaps and texture maps retain their original resolution. It can present some (sometimes game-breaking) visual glitches. It should be used in tandem with the **Enhanced Resolution (Speed Hack)** for best performance, but this can increase the glitches. See [Setting Core Options](RetroArch-Core-Options#setting-core-options).
 
-On a Pi 2 it can introduce performance issues, even with the speed hak, but on a Pi 3 and up it should be perform better, sometimes even without the speed hack. To disable these options for games which exhibit issues, or to only enable it for games that perform well, see [Setting Core Options per-ROM](RetroArch-Core-Options#setting-core-options-per-rom).
+On a Pi 2 it can introduce performance issues, even with the speed hack, but on a Pi 3 and up it should be perform better, sometimes even without the speed hack. To disable these options for games which exhibit issues, or to only enable it for games that perform well, see [Setting Core Options per-ROM](RetroArch-Core-Options#setting-core-options-per-rom).
 
 #### Video - Disable Dithering
 
