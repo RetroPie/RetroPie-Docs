@@ -1,0 +1,16 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+mkdocs = "*"
+mkdocs-material = "*"
+mkdocs-material-extensions = "*"
+mdx-truly-sane-lists = "*"
+mkdocs-altlink-plugin = {git = "https://github.com/cmitu/mkdocs-altlink-plugin/"}
+
+[dev-packages]
+
+[requires]
+python_version = "3"
