@@ -182,7 +182,7 @@ After a complete exit back to EmulationStation, the game you've manually fixed w
 
 For a decent list of which games are Digital-Only, check the spreadsheet and website found in the "Game Specific Control Information" section below.
 
-The **negcon** setting found between pad type is for the NeGcon[**(link)**](https://en.wikipedia.org/wiki/NeGcon).
+The **negcon** setting found between pad type is for the [NeGcon](https://en.wikipedia.org/wiki/NeGcon).
 
 While this section does focus on lr-pcsx_rearmed, what is done in this section could be done in PCSX-ReARMed's menu as well if not visually different.
 
@@ -200,8 +200,7 @@ For a more complete resource, please check the [PlayStation DataCenter](http://p
 
 ### Multitap (3-5 Players)
 
-lr-pcsx_rearmed has support for multitap, but not all games read input when a multitap is connected, so a per-ROM Core Options file should be created for multitap compatible games. Set the Core Options for **Pad 3 Type**, **Pad 4 Type** (and so on, depending on how many players are supported by the game) to the relevant Controller Type that the game supports. See [Setting Core Options per-ROM](
--Core-Options#setting-core-options-per-rom).
+lr-pcsx_rearmed has support for multitap, but not all games read input when a multitap is connected, so a per-ROM Core Options file should be created for multitap compatible games. Set the Core Options for **Pad 3 Type**, **Pad 4 Type** (and so on, depending on how many players are supported by the game) to the relevant Controller Type that the game supports. See [Setting Core Options per-ROM](RetroArch-Core-Options#setting-core-options-per-rom).
 
 ## Tweaks
 
