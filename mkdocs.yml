@@ -27,8 +27,6 @@ theme:
   language: 'en'
   logo: 'images/logo.png'
   favicon: 'images/logo.png'
-  palette:
-    primary: black
 
 # Customisation
 extra:
