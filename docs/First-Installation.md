@@ -12,7 +12,7 @@
 7. [Transferring Roms](#transferring-roms)
 8. [Configure Audio (if needed)](#audio)
 
-Congratulations! You have discovered the wonderful world of RetroPie- your entire childhood is within reach! RetroPie is a combination of multiple projects including RetroArch[**(link)**](http://www.libretro.com), EmulationStation[**(link)**](http://www.emulationstation.org), and many others. 
+Congratulations! You have discovered the wonderful world of RetroPie- your entire childhood is within reach! RetroPie is a combination of multiple projects including RetroArch(http://www.libretro.com), EmulationStation[**(link)**](http://www.emulationstation.org), and many others. 
 
 This page is for people just getting started on RetroPie. The easiest way to install RetroPie is the SD image which is a ready to go system built upon top of the Raspberry Pi OS - this is the method described in the following guide. Alternatively, advanced users can install RetroPie manually [**HERE**](Manual-Installation). 
 
