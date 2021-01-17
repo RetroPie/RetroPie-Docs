@@ -12,7 +12,7 @@
 7. [Transferring Roms](#transferring-roms)
 8. [Configure Audio (if needed)](#audio)
 
-Congratulations! You have discovered the wonderful world of RetroPie- your entire childhood is within reach! RetroPie is a combination of multiple projects including RetroArch(http://www.libretro.com), EmulationStation[**(link)**](http://www.emulationstation.org), and many others. 
+Congratulations! You have discovered the wonderful world of RetroPie- your entire childhood is within reach! RetroPie is a combination of multiple projects including [RetroArch](http://www.libretro.com), [EmulationStation](http://www.emulationstation.org), and many others. 
 
 This page is for people just getting started on RetroPie. The easiest way to install RetroPie is the SD image which is a ready to go system built upon top of the Raspberry Pi OS - this is the method described in the following guide. Alternatively, advanced users can install RetroPie manually [**HERE**](Manual-Installation). 
 
@@ -34,10 +34,10 @@ alt="RetroPie First Installation Video" width="1280" height="400" border="10" />
  * Television or Computer Monitor- really any screen with HDMI or RCA ports
  * Wifi Dongle or Ethernet Cable (Wifi is built-in for the Pi 3/4 model - see wifi dongle compatible list [**here**](http://elinux.org/RPi_USB_Wi-Fi_Adapters))
  * 5V 2A Micro USB Power Supply (2.5A for Pi 3) / 5.1V 3A USB-C for Pi 4
- * USB Keyboard and Mouse (to get things set up or you can use SSH[**(link)**](SSH))
- * USB Game Controller of your choice (or you can get the Control Block[**(link)**](http://blog.petrockblock.com/2014/12/29/controlblock-power-switch-and-io-for-the-raspberry-pi/) to use original SNES controllers)
+ * USB Keyboard and Mouse (to get things set up or you can use [SSH](SSH))
+ * USB Game Controller of your choice (or you can get the [Control Block](http://blog.petrockblock.com/2014/12/29/controlblock-power-switch-and-io-for-the-raspberry-pi/) to use original SNES controllers)
 
-The simplest way to get most of these components is through a kit such as the Canakit[**(link)**](https://www.amazon.com/gp/product/B01C6Q2GSY/). 
+The simplest way to get most of these components is through a kit such as the [Canakit](https://www.amazon.com/gp/product/B01C6Q2GSY/). 
 
 ## Installation
 
@@ -58,7 +58,7 @@ If you get the error `Illegal Instruction` when it boots or if it just boots int
 
 ### Extract
 
-Once you have downloaded your SD card image you need to extract it using a program such as 7-zip[**(link)**](http://www.7-zip.org/). You will extract the downloaded **.gz** file and the extracted file will be a **.img** file.
+Once you have downloaded your SD card image you need to extract it using a program such as [7-zip](http://www.7-zip.org/). You will extract the downloaded **.gz** file and the extracted file will be a **.img** file.
 
 To extract from the command line, you can type the following into a Terminal window, placing X with version you downloaded:
 
@@ -184,11 +184,11 @@ alt="Transferring ROMs using an USB drive" width="640" height="400" border="10" 
 
 ### SFTP
 
-**NOTE** you need to enable SSH[**(link)**](SSH) in order for SFTP to work.
+**NOTE** you need to enable [SSH](SSH) in order for SFTP to work.
 
 * Wired (needs ethernet cable)
 * Wireless (needs wifi dongle)
-There are many SFTP programs out there, for windows many people use WinSCP[**(link)**](https://winscp.net/eng/download.php) for mac you can use something like Cyberduck[**(link)**](https://cyberduck.io/?l=en)
+There are many SFTP programs out there, for windows many people use [WinSCP](https://winscp.net/eng/download.php) for mac you can use something like [Cyberduck](https://cyberduck.io/?l=en)
 
 ![winscp](https://cloud.githubusercontent.com/assets/10035308/12865832/7d9afb68-cc75-11e5-81b2-4529991e1821.png)
 
