@@ -14,7 +14,7 @@
 
 Congratulations! You have discovered the wonderful world of RetroPie- your entire childhood is within reach! RetroPie is a combination of multiple projects including [RetroArch](http://www.libretro.com), [EmulationStation](http://www.emulationstation.org), and many others. 
 
-This page is for people just getting started on RetroPie. The easiest way to install RetroPie is the SD image which is a ready to go system built upon top of the Raspberry Pi OS - this is the method described in the following guide. Alternatively, advanced users can install RetroPie manually [**HERE**](Manual-Installation). 
+This page is for people just getting started on RetroPie. The easiest way to install RetroPie is the SD image which is a ready to go system built upon top of the Raspberry Pi OS - this is the method described in the following guide. Alternatively, advanced users can install RetroPie [manually](Manual-Installation). 
 
 This guide will give you the very basics to get you up and running from a blank SD card to first boot into EmulationStation.
 
@@ -68,11 +68,11 @@ To extract from the command line, you can type the following into a Terminal win
 
 To install the RetroPie SD image on your MicroSD card. (You may need a MicroSD card reader to plug it into your computer) 
 
-1. For Windows you can use [**Etcher**](https://etcher.io/), [**Win32DiskImager**](http://sourceforge.net/projects/win32diskimager/) or [**Raspberry Pi Imager**](https://www.raspberrypi.org/downloads/)
-2. For macOS you can use [**Etcher**](https://etcher.io/), [**Apple Pi Baker**](https://www.tweaking4all.com/hardware/raspberry-pi/applepi-baker-v2/) or [**Raspberry Pi Imager**](https://www.raspberrypi.org/downloads/)
-3. For Linux you can use the `dd` command, [**Etcher**](https://etcher.io/) or [**Raspberry Pi Imager**](https://www.raspberrypi.org/downloads/).
+1. For Windows you can use [Etcher](https://etcher.io/), [Win32DiskImager](http://sourceforge.net/projects/win32diskimager/) or [Raspberry Pi Imager](https://www.raspberrypi.org/downloads/)
+2. For macOS you can use [Etcher](https://etcher.io/), [Apple Pi Baker](https://www.tweaking4all.com/hardware/raspberry-pi/applepi-baker-v2/) or [Raspberry Pi Imager](https://www.raspberrypi.org/downloads/)
+3. For Linux you can use the `dd` command, [Etcher](https://etcher.io/) or [Raspberry Pi Imager](https://www.raspberrypi.org/downloads/).
 
-See the official Raspberry Pi "WRITING AN IMAGE TO THE SD CARD" [**instructions**](https://www.raspberrypi.org/documentation/installation/installing-images/).
+See the official Raspberry Pi "WRITING AN IMAGE TO THE SD CARD" [instructions](https://www.raspberrypi.org/documentation/installation/installing-images/).
 
 **Note** RetroPie is built on top of Raspberry Pi OS Buster (a Linux based OS for the Raspberry Pi) and as such the partition on the SD card is EXT4 (a linux filesystem). This partition is is not visible on Windows systems, so the card will show up as a smaller size than usual and you won't be able to see everything on the card, but it is all there. You will be able to access the filesystem over the network as described in the transferring roms section below.
 
@@ -124,7 +124,7 @@ The Hotkey button enables you to press it in combination with another button to 
 | Hotkey+X | RGUI Menu |
 | Hotkey+B | Reset |
 
-For more information, see [**Hotkeys**](RetroArch-Configuration#hotkeys)
+For more information, see [Hotkeys](RetroArch-Configuration#hotkeys)
 
 ## EmulationStation
 
@@ -153,7 +153,7 @@ If you wish to use wifi to transfer roms over the network rather than a USB stic
 |:---:|
 |![wifi4](https://cloud.githubusercontent.com/assets/10035308/16217944/92cb07fa-3735-11e6-9239-66fba394c669.png)|
 
-For more WiFi configuration options see this [**page**](Wifi)
+For more WiFi configuration options see this [page](Wifi)
 
 ## Installing additional Emulators
 On RetroPie 4.0+, not everything is installed by default. The pre-made images contain the best working emulators for each system supported by the hardware. This should cover everything most users would be doing. Ports like quake and doom and some other emulators like ScummVM can be installed later.
@@ -196,7 +196,7 @@ Default username: **pi**
 
 Default Password: **raspberry**
 
-You can also log in as root if you wish to change more files than just the roms, but you first need to enable the root password which is explained [**here**](FAQ#why-cant-i-ssh-as-root-anymore)
+You can also log in as root if you wish to change more files than just the roms, but you first need to enable the root password which is explained [here](FAQ#why-cant-i-ssh-as-root-anymore)
 
 ### Samba-Shares
 
@@ -208,13 +208,13 @@ You can also log in as root if you wish to change more files than just the roms,
 
 ## AUDIO
 
-In general RetroPie audio will work out of the box without any tweaking, but if you have audio issues you should follow the instructions on the [**Sound Issues Page**](Sound-Issues) to fix them. You will most likely need to visit the [**Sound Issues Page**](Sound-Issues) if you are using a USB Audio device, or if you are using an aftermarket RPi HAT add-on audio device (such as a Justboom sound card).
+In general RetroPie audio will work out of the box without any tweaking, but if you have audio issues you should follow the instructions on the [Sound Issues Page](Sound-Issues) to fix them. You will most likely need to visit the [Sound Issues Page](Sound-Issues) if you are using a USB Audio device, or if you are using an aftermarket RPi HAT add-on audio device (such as a Justboom sound card).
 
 ## PLAY!
 
 After you've added your roms you need to restart EmulationStation in order for them to show up. You can restart EmulationStation from the start menu, or by rebooting your pi with `sudo reboot`. 
 
-See the rest of the [**docs**](https://retropie.org.uk/docs/) for more detailed information on individual emulators, advanced settings etc. If you still can't figure it out, the RetroPie community is very helpful on the [**forum**](https://retropie.org.uk/forum/). 
+See the rest of the [docs](https://retropie.org.uk/docs/) for more detailed information on individual emulators, advanced settings etc. If you still can't figure it out, the RetroPie community is very helpful on the [forum](https://retropie.org.uk/forum/). 
 
 **The RetroPie Project is primarily maintained by a few developers who develop the project in their free time. If you have found the RetroPie project useful please consider donating to the project [here](https://retropie.org.uk/donate/). As you become more familiar with RetroPie, pay it forward by helping others on the forum. The RetroPie Project is what it is today because of the many contributions of the community.**
 
