@@ -7,7 +7,21 @@
     --md-accent-fg-color: #FF0000;
 }
 
-.md-typeset table:not([class]) th:not([align]){text-align:left}.md-typeset table:not([class]) th{min-width:10rem;padding:1.2rem 1.6rem;background-color:rgba(0, 0, 0, 1);color:#fff;vertical-align:top}
+.md-typeset table:not([class]) th:not([align]){text-align:left}.md-typeset table:not([class]) th{
+  min-width:10rem;
+  padding:1.2rem 1.6rem;
+  background-color:rgba(0, 0, 0, 1);
+  color:#fff;
+  vertical-align:top
+}
+
+.md-typeset a {
+  color: var(--md-accent-fg-color);
+}
+
+article > a:hover {
+  text-decoration: underline;
+}
 
 .md-header {
     height: 50px;
