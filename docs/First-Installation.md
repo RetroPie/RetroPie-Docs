@@ -12,7 +12,7 @@
 7. [Transferring Roms](#transferring-roms)
 8. [Configure Audio (if needed)](#audio)
 
-Congratulations! You have discovered the wonderful world of RetroPie- your entire childhood is within reach! RetroPie is a combination of multiple projects including [RetroArch](http://www.libretro.com), [EmulationStation](http://www.emulationstation.org), and many others. 
+Congratulations! You have discovered the wonderful world of RetroPie- your entire childhood is within reach! RetroPie is a combination of multiple projects including [RetroArch](http://www.retroarch.com), [EmulationStation](https://www.emulationstation.org), and many others. 
 
 This page is for people just getting started on RetroPie. The easiest way to install RetroPie is the SD image which is a ready to go system built upon top of the Raspberry Pi OS - this is the method described in the following guide. Alternatively, advanced users can install RetroPie [manually](Manual-Installation). 
 
@@ -58,7 +58,7 @@ If you get the error `Illegal Instruction` when it boots or if it just boots int
 
 ### Extract
 
-Once you have downloaded your SD card image you need to extract it using a program such as [7-zip](http://www.7-zip.org/). You will extract the downloaded **.gz** file and the extracted file will be a **.img** file.
+Once you have downloaded your SD card image you need to extract it using a program such as [7-Zip](http://www.7-zip.org/). You will extract the downloaded **.gz** file and the extracted file will be a **.img** file.
 
 To extract from the command line, you can type the following into a Terminal window, placing X with version you downloaded:
 
@@ -68,9 +68,9 @@ To extract from the command line, you can type the following into a Terminal win
 
 To install the RetroPie SD image on your MicroSD card. (You may need a MicroSD card reader to plug it into your computer) 
 
-1. For Windows you can use [Etcher](https://etcher.io/), [Win32DiskImager](http://sourceforge.net/projects/win32diskimager/) or [Raspberry Pi Imager](https://www.raspberrypi.org/downloads/)
-2. For macOS you can use [Etcher](https://etcher.io/), [Apple Pi Baker](https://www.tweaking4all.com/hardware/raspberry-pi/applepi-baker-v2/) or [Raspberry Pi Imager](https://www.raspberrypi.org/downloads/)
-3. For Linux you can use the `dd` command, [Etcher](https://etcher.io/) or [Raspberry Pi Imager](https://www.raspberrypi.org/downloads/).
+1. For Windows you can use [Etcher](https://www.balena.io/etcher/), [Win32DiskImager](http://sourceforge.net/projects/win32diskimager/) or [Raspberry Pi Imager](https://www.raspberrypi.org/software/)
+2. For macOS you can use [Etcher](https://www.balena.io/etcher/), [Apple Pi Baker](https://www.tweaking4all.com/hardware/raspberry-pi/applepi-baker-v2/) or [Raspberry Pi Imager](https://www.raspberrypi.org/software/)
+3. For Linux you can use the `dd` command, [Etcher](https://www.balena.io/etcher/) or [Raspberry Pi Imager](https://www.raspberrypi.org/software/).
 
 See the official Raspberry Pi "WRITING AN IMAGE TO THE SD CARD" [instructions](https://www.raspberrypi.org/documentation/installation/installing-images/).
 
