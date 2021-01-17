@@ -38,7 +38,6 @@ Place your PlayStation ROMs in
 If you only have a `.bin` ROM and no `.cue` file, generate it via:
 
 -  [Online](http://nielsbuus.dk/pg/psx_cue_maker/) or [Offline](https://github.com/nielsbuus/psx_cue_maker)
--  [Manually](http://www.shivaranjan.com/2007/01/03/how-to-create-cue-file-for-a-bin-file-in-5-steps/)
 -  [Individually](http://www.dslreports.com/r0/download/373724~1e45059000cfc371c157f544cc5aef07/MakeCue.zip)
 -  [En Masse or Individually](https://github.com/thorst/CueMaker)
 
