@@ -164,7 +164,7 @@ You will need a keyboard to press Escape on to access the emulator's menu so tha
 
 A common issue people using RetroPie have with PSX emulation is their analog sticks do not work. The reason for this is related to a default lr-pcsx_rearmed core setting, and there is a very good reason the setting is the way it is that we will get into later.
 
-Open the **Core Options** Quick Menu, select **Controls** and for **Port 1 Controls** and **Port 2 Controls**, change the Device Type from **standard** to **dualshock**. See [Setting Core Options](RetroArch-Core-Options#setting-core-options).
+Open the **Quick Menu**, select **Controls** and for **Port 1 Controls** and **Port 2 Controls**, change the Device Type from **standard** to **dualshock**. See [Setting Core Options](RetroArch-Core-Options#setting-core-options).
 
 On the **Controls** page, select **Save Core Remap File** to save this setting as a default for all games.
 
@@ -172,11 +172,11 @@ After a complete exit back to EmulationStation, all games that should work with 
 
 The reason for the problem is due to the PSX originally being released with a controller that didn't have analog sticks. The games released for the system prior to the analog sticks being added to the controller only account for the standard controller: these games are generally referred to as Digital-Only games.
 
-Unfortunately, this is a problem that doesn't have an easy solution. The reason the emulator was set the way is was is because that was 100% compatible even if it removed all analog functionality. If you want all your games with analog support to work correctly, you will have to manually fix the Digital-Only games one by one.
+Unfortunately, this is a problem that doesn't have an easy solution. The reason the emulator was set the way it was is because it was 100% compatible even if it removed all analog functionality. If you want all your games with analog support to work correctly, you will have to manually fix the Digital-Only games one by one.
 
 The process of fixing a Digital-Only game is to set per-ROM Core Options, changing **Port 1 Device Type** and **Port 2 Device Type** back to **standard** and then do **Save Game Remap File**. See [Setting Core Options per-ROM](RetroArch-Core-Options#setting-core-options-per-rom).
 
-(Optional) In **Controls**, change all **Analog To Digital Type** settings for each controller from **None** to **Left Analog**, then do **Save Game Remap File**.
+(Optional) In **Port (#) Controls**, change all **Analog to Digital Type** settings from **None** to **Left Analog**, then do **Save Game Remap File**.
 
 After a complete exit back to EmulationStation, the game you've manually fixed will function correctly plus you will be able to use the left analog stick for up to 8-way movement if you want to. Keep in mind the "Analog To Digital" step is completely optional and included for those that may want to still use an analog stick for movement in games that didn't support it originally.
 
