@@ -1,21 +1,11 @@
 **Note:** If you're reading this doc because you're starting an arcade emulation project, begin by reading [Getting Started with Arcade Emulation](Arcade).
-
----
-
-## Table of Contents
-* [DAT Files: The Cornerstone](#dat-files-the-cornerstone)
-* [ROM management tools](#rom-management-tools)
-* [Filtering ROM collections](#filtering-rom-collections)
-* [Validating and Rebuilding ROMs](#validating-and-rebuilding-roms)
-***
-
-# DAT Files: The Cornerstone
+## DAT Files: The Cornerstone
 
 **Correct ROM versions are essential.**
 
 So how do you tell you have the right ROM if you aren't sure that your set matches the version required by the emulator you chose? What if you don't have the right version?
 
-**Note: the process of verifying and rebuilding ROMs is complex and requires a substantial investment of time and effort in order to master. If your goal is to have working ROMs, it is almost always simpler to download a full ROM collection that has already been verified to match the emulator you chose.**
+**Note**: the process of verifying and rebuilding ROMs is complex and requires a substantial investment of time and effort in order to master. If your goal is to have working ROMs, it is almost always simpler to download a full ROM collection that has already been verified to match the emulator you chose.
 
 Once you begin working with software tools to help validate, rebuild, or filter your ROM collection, you will quickly encounter the need for "DAT" files, so named because they usually (but not always!) have the file extension `.dat`.
 
@@ -24,7 +14,7 @@ DATs describe the ROM contents including filenames, file sizes, and checksums to
 In order to verify or rebuild a set, you need its corresponding DAT file and a software tool to process the DAT. For example, the authors of RetroArch recommend that Super Nintendo Entertainment System ROM collections be validated against the No-Intro "Nintendo - Super Nintendo Entertainment System" DAT. ROM collections for use with the MAME 2003 emulator should be validated against a "MAME 0.78" DAT [(such as the one found in its metadata folder)](https://github.com/libretro/mame2003-libretro/tree/master/metadata). And so on.
 
 ***
-# ROM management tools
+## ROM management tools
 
 **This doc assumes that the user is working with ClrMamePro, one of the most popular ROM management tools.** ClrMamePro is not the only option available, however. Popular ROM verification tools include:
 
@@ -52,7 +42,7 @@ No-Intro's DAT-o-MATIC (DoM) also allows you to download DATs for their currentl
 **Further reading**:
 * [Guide: How to trim duplicate roms](https://web.archive.org/save/https://www.reddit.com/r/RetroPie/comments/5njtvs/guide_how_to_trim_your_romset_of_duplicate_roms/)
 
-### Filtering arcade collections
+#### Filtering arcade collections
 
 The [lr-mame2003](https://github.com/libretro/mame2003-libretro/tree/master/metadata) core and [lr-mame2010](https://github.com/libretro/mame2010-libretro/tree/master/metadata) core maintain a `catver.ini` file in their github repositories. `catver.ini` can be used with ROM management tools such as [ROMLister](https://www.waste.org/~winkles/ROMLister/), [Simple Arcade Multifilter](https://retropie.org.uk/forum/topic/7606/simple-arcade-multifilter-app-for-mame-and-fb-alpha-sets-get-rid-of-adult-and-mahjong-games/) and [MFM - Mame File Manager](https://github.com/phweda/MFM/) in order to sort and filter a MAME collection by genre or by other tags, such as whether it includes "Mature" content.
 
@@ -61,7 +51,7 @@ The [lr-mame2003](https://github.com/libretro/mame2003-libretro/tree/master/meta
 
 ***
 
-# Validating and Rebuilding ROMs
+## Validating and Rebuilding ROMs
 
 It is possible to 'rebuild' from one version of an ROM collection to another. If you also have access to ROMs from a newer or older ROM collection you can 'roll forward' or 'roll back' your ROM version.
 
@@ -76,7 +66,7 @@ Before manipulating arcade ROMs, please be sure you are familiar with their uniq
 
 ***
 
-#### Crash Course in Arcade ROM terminology
+### Crash Course in Arcade ROM terminology
 
 - **ROM, ROM set, and romset**: Arcade games are packaged as zip files, most of which are composed of more than one individual 'ROM' files. That is why some resources refer to an individual arcade game as a ROM (like people use to describe a zipped game cartridge ROM) while other resources refer to an individual game as a ROM set or romset.
 - **ROM version or ROM set version**: Each version of an arcade emulator must be used with ROMs that have the same exact version number. For example, MAME 0.37b5 ROMs are required by the MAME4ALL emulator, but will not work correctly with the lr-mame2010 emulator, which requires MAME 0.139 ROMs.
@@ -92,7 +82,7 @@ In addition to having a version number, arcade ROMs can be formatted four ways:
 
 ***
 
-### Written ClrMamePro tutorial 
+###  ClrMamePro tutorial 
 
 ### Step 1 - Back up your ROMs
 It is possible with ClrMamePro to change one or two options and when it runs it will delete all your existing ROMs. OK, not really - using the default options it will make backups of any files it removes, but it is still possible to mess up their ROMs beyond repair when getting started with ClrMamePro.
