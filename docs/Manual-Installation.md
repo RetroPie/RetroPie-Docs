@@ -4,7 +4,7 @@ This guide is a manual process to recreate the stock SD image RetroPie released 
 
 If you are trying to follow this guide because you want the PIXEL desktop environment, you can already install it on the stock RetroPie SD image by following the guide [here](FAQ#where-did-the-desktop-go)
 
-RetroPie can also be installed on most debian based distros, a guide for installing RetroPie on Ubuntu on a PC can be found [here](RetroPie-Ubuntu-16.04-LTS-x86-Flavor)
+RetroPie can also be installed on most debian based distros, a guide for installing RetroPie on Ubuntu on a PC can be found [here](Debian)
 
 The RetroPie SD image is built on top of Raspbian lite (Raspbian without the PIXEL desktop environment) RetroPie can also be installed on top of the full Raspbian but you can't run Retropie and PIXEL at the same time, you will need to logout of the PIXEL desktop environment in order to run emulationstation and the emulators RetroPie installs. 
 
