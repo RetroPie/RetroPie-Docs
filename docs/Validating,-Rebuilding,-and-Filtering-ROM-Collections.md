@@ -42,7 +42,7 @@ No-Intro's DAT-o-MATIC (DoM) also allows you to download DATs for their currentl
 **Further reading**:
 * [Guide: How to trim duplicate roms](https://web.archive.org/save/https://www.reddit.com/r/RetroPie/comments/5njtvs/guide_how_to_trim_your_romset_of_duplicate_roms/)
 
-#### Filtering arcade collections
+### Filtering arcade collections
 
 The [lr-mame2003](https://github.com/libretro/mame2003-libretro/tree/master/metadata) core and [lr-mame2010](https://github.com/libretro/mame2010-libretro/tree/master/metadata) core maintain a `catver.ini` file in their github repositories. `catver.ini` can be used with ROM management tools such as [ROMLister](https://www.waste.org/~winkles/ROMLister/), [Simple Arcade Multifilter](https://retropie.org.uk/forum/topic/7606/simple-arcade-multifilter-app-for-mame-and-fb-alpha-sets-get-rid-of-adult-and-mahjong-games/) and [MFM - Mame File Manager](https://github.com/phweda/MFM/) in order to sort and filter a MAME collection by genre or by other tags, such as whether it includes "Mature" content.
 
@@ -84,19 +84,19 @@ In addition to having a version number, arcade ROMs can be formatted four ways:
 
 ###  ClrMamePro tutorial 
 
-### Step 1 - Back up your ROMs
+#### Step 1 - Back up your ROMs
 It is possible with ClrMamePro to change one or two options and when it runs it will delete all your existing ROMs. OK, not really - using the default options it will make backups of any files it removes, but it is still possible to mess up their ROMs beyond repair when getting started with ClrMamePro.
 
-### Step 2 - Download [ClrMamePro](http://mamedev.emulab.it/clrmamepro/#downloads)
+#### Step 2 - Download [ClrMamePro](http://mamedev.emulab.it/clrmamepro/#downloads)
 
-### Step 3 - Acquire DAT files
+#### Step 3 - Acquire DAT files
 You can download all .DAT files for all arcade emulators [**HERE**](https://github.com/HerbFargus/retropie-dat/archive/master.zip)
 * For this tutorial, extract the zip file into `C:\` (but you can put it anywhere you want)
 * Open retropie-dat-master and you should see a list of folders. Each folder contains the .DAT files for the respective emulator. We will only be using `C:\retropie-dat-master\mame4all\MAME 0.37b5.dat` in this tutorial.
 * Create a subdirectory `C:\retropie-dat-master\mame4allroms` (this will be used in the next step)
 * Create a subdirectory `C:\retropie-dat-master\pifbaroms`
 
-### Step 4 - Run ClrMamePro for the first time
+#### Step 4 - Run ClrMamePro for the first time
 * Run `C:\clrmamepro\cmpro64.exe`.  The welcome screen explains that common first steps are to 1) Create a Profile, 2) Set up your paths and 3) Scan your ROMs. We will be doing things slightly differently, in order to leave your source ROMs intact.  
 * Click OK to the Welcome screen
 * Click **"Add DatFile..."** and open the MAME4ALL DAT file at `C:\retropie-dat-master\mame4all\MAME 0.37b5.dat`
@@ -112,7 +112,7 @@ You can download all .DAT files for all arcade emulators [**HERE**](https://gith
 
 At this point, you could scan the ROMs folder you just selected, but we just created this folder and it is empty.  Instead, we will rebuild into this folder.
 
-### Step 5- Rebuild a ROM set
+#### Step 5- Rebuild a ROM set
 
 * In the main ClrMamePro window, select **"Rebuilder"**
 * The destination should already be filled in for you - it is the same as the ROM path you defined above in the settings window: `C:\retropie-dat-master\mame4allroms`
@@ -125,12 +125,12 @@ At this point, you could scan the ROMs folder you just selected, but we just cre
 
 Time to find out how well your source ROMs matched up...
 
-### Step 6 - Scan a ROM set
+#### Step 6 - Scan a ROM set
 * In the main ClrMamePro window, select **"Scanner"**
 * Leave all settings at default and click **"New Scan..."**
 * When ClrMamePro finishes scanning, you will see a "Statistics" window with high level information and a "Scan Results" window with detailed information about your missing ROMs
 
-### Notes
+#### Notes
 
 * Typically you cannot completely 'roll forward' from an old ROM collection version to a new version, since these will often feature entirely new roms or dumps that weren't present in your older version. The same is true for 'rolling back' from a new version to an older version, but there are 'rollback' sets available that collect all the previously deleted ROMs from old versions that you can use to fill in the gaps.
 * Be careful with the "Fix" settings in the Scanner window and the "Remove Matched Sourcefiles" setting in the Rebuilder window. These settings will remove and rename your ROMs.
