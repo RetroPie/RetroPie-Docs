@@ -7,7 +7,6 @@
 - [How do I boot to the desktop or Kodi?](FAQ#how-do-i-boot-to-the-desktop-or-kodi)
 - [How do I remove the black borders?](FAQ#how-do-i-remove-the-black-borders)
 - [How do I change which buttons to press to exit an emulator with a controller?](FAQ#how-do-i-change-which-buttons-to-press-to-exit-an-emulator-with-a-controller)
-- [Does Super Mario All Stars work?](FAQ#does-super-mario-all-stars-work)
 - [How do I extend the available space when upgrading to a larger SD card?](FAQ#how-do-i-extend-the-available-space-when-upgrading-to-a-larger-sd-card)
 - [How would I start from command line, say, the SNES emulator by itself?](FAQ#how-would-i-start-from-command-line-say-the-snes-emulator-by-itself)
 - [Is there another way to set up the gamepad for use, e.g., within the snes emulator?](FAQ#is-there-another-way-to-set-up-the-gamepad-for-use-eg-within-the-snes-emulator)
@@ -196,20 +195,6 @@ In retropie setup script>>Configuration / tools>>autostart
 ### How do I remove the black borders?
 
 See [Overscan](Overscan)
-
-### Does Super Mario All Stars work?
-
-The ROM does work with lr-snes9x2002 and lr-snes9x2010.
-
-From http://blog.petrockblock.com/2012/07/22/retropie-setup-an-initialization-script-for-retroarch-on-the-raspberry-pi/#comment-818063235:
-
-> I found out that after the selection of a game, the control goes over to the second controller! This seems to be somehow a speciality of the All-Stars ROM. But at least, it is playable :-)
-
-Alternatively, if you only have one controller (or play alone) you can do the following:
-
-From http://www.raspberrypi.org/forums/viewtopic.php?f=78&t=79083
-
-> I managed to figure out a fix so the controls work in Super Mario All-Stars and also doesn't break other games (Mario Kart, Super Bomberman etc). This problem has been bugging me for ages and I had to figure out a way to play this game for nostalgia sake. This fix will unfortunately mean player two controls won't work for other games (but I play alone anyway and this is for people with one controller). Simply post this in your blank retroarch.cfg in the snes folder. P.S Remember to change the button numbers/axis for you own controller.
 
 ### How do I extend the available space when upgrading to a larger SD card?
 
