@@ -14,7 +14,7 @@ There are three main methods of transferring roms: via USB stick, via SFTP, and 
 4. Remove the USB stick and plug it into the computer containing the ROMs
 5. Add the ROMs to the USB stick inside their respective folders within the `retropie/roms/$CONSOLE` folder, where $CONSOLE is the name of the target console, e.g. `snes` or `arcade`.
 6. Plug it back into the RetroPie system. If the USB stick has an activity light, wait for it to finish blinking, else wait (with many GBs of ROMs, wait several hours)
-8. Remove the USB stick. The ROMs have now been transferred from the USB to the Retropie system's SD card
+8. Remove the USB stick. The ROMs have now been transferred from the USB to the RetroPie system's SD card
 9. Refresh the game listing in EmulationStation by pressing F4, or press **Start** on your controller > **Quit** > **Restart EmulationStation**
 10. The transferred games should now be visible within EmulationStation. If any are missing, return to step 6
 
@@ -43,14 +43,14 @@ There are many SFTP programs out there:
 
 ![ftp](https://cloud.githubusercontent.com/assets/10035308/9144892/68994618-3d0d-11e5-8db0-2991f9068115.png)
 
-**Connection settings:** 
+**Connection settings** 
 
 - Protocol: `SFTP`
-- IP address/Host Name: To find the IP address of your RetroPie, go into the 'RetroPie' EmulationStation options menu and select **Show IP**. You can also find this information from the terminal on Retropie in the bash info or with the command `ifconfig`
+- IP address/Host Name: To find the IP address of your RetroPie, go into the 'RetroPie' EmulationStation options menu and select **Show IP**. You can also find this information from the terminal on RetroPie in the bash info or with the command `ifconfig`
 - Username: `pi` (default)
 - Password: `raspberry` (default)
 
-**Where to drop the files:**
+**Where to drop the files**
 
 Simply drop the files in the `~/RetroPie/roms/$CONSOLE` folder, where $CONSOLE is the name of the target console, e.g. `snes` or `arcade`.
 
@@ -66,7 +66,7 @@ For more information, check the [Raspberry Pi SSH documentation](https://www.ras
 
 ![samba](https://cloud.githubusercontent.com/assets/10035308/9141308/edee8b52-3cf4-11e5-8bf3-73f8c27f99fb.png)
 
-- On MAC OS X, open Finder, select "Go" menu and "Connect to Server". Type `smb://retropie` and hit "Connect".
+- On Mac OS X/macOS, open Finder, select "Go" menu and "Connect to Server". Type `smb://retropie` and hit "Connect".
 
 ### Manually copy files from USB-stick
 
