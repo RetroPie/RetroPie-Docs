@@ -15,7 +15,7 @@ It can also be accessed from the terminal with `sudo ~/RetroPie-Setup/retropie_s
 
 ## Update All Installed Packages
 
-![setup_script](https://cloud.githubusercontent.com/assets/10035308/17758599/fb76e94a-64ad-11e6-8dc6-e8ca545e2630.png)
+![update](https://user-images.githubusercontent.com/540857/106713057-e03e2b00-65c7-11eb-9529-766986334e8b.png)
 
 - **Basic Install:** This is intended as a first install and is not required if using a pre-built image. eg When installing RetroPie on top of an existing OS.
 - **Update All Installed Packages:** This will update the RetroPie-Setup script and all installed packages.
