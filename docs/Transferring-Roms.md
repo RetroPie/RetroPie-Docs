@@ -18,9 +18,9 @@ There are three main methods of transferring ROMs: via USB stick, via SFTP, and 
 
 ### SFTP
 
-SFTP (Secure File Transfer Protocol) is a network protocol that allows you to securely transfer files over the internet or locally on the same network when both the PC and RetroPie system are connected to the same router via ethernet or wifi using a program like WinSCP. 
+SFTP (Secure File Transfer Protocol) is a network protocol that allows you to securely transfer files over the internet or locally on the same network when both the PC and RetroPie system are connected to the same router via ethernet or wifi. 
 
-[SFTP/SSH connection instructions are available on the SSH page](SSH). Once you've enabled SSH and connected to your chosen client (Recommended: WinSCP), you can simply drop the files in the `~/RetroPie/roms/$CONSOLE` folder, where $CONSOLE is the name of the target console, e.g. `snes` or `arcade`.
+SFTP/SSH connection instructions are available on the [SSH page](SSH). Once you've enabled SSH and connected to your chosen client, you can simply drop the files in the `~/RetroPie/roms/$CONSOLE` folder, where $CONSOLE is the name of the target console, e.g. `snes` or `arcade`.
 
 ### Samba-Shares
 
