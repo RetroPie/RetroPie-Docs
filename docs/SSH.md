@@ -1,8 +1,6 @@
-Enabling SSH (Secure Shell) allows remote connection to the Raspberry Pi. This provides a means for adding roms, changing configuration, updates, and other convienient procedures by using SSH and SFTP clients to connect to the Raspberry Pi from anywhere in the world. For this instruction and for the sake of simplicity, this guide assumes that both the Raspberry Pi and the computer you are using to remotely connect to it are on the same local network.
+Enabling SSH (Secure Shell) allows remote connection to the Raspberry Pi. This provides a means for adding roms, changing configuration, updates, and other convienient procedures by using SSH and SFTP clients to connect to the Raspberry Pi. For this instruction and for the sake of simplicity, this guide assumes that both the Raspberry Pi and the computer you are using to remotely connect to it are on the same local network.
 
-> **NOTE:** 
->
-> Your Raspberry Pi needs to be connected to the same network/router (either via Ethernet or Wifi Dongle) as the computer you are accessing it from. 
+**NOTE: Your Raspberry Pi needs to be connected to the same network/router (either via Ethernet or Wifi Dongle) as the computer you are accessing it from.**
 
 Here are a few (free) popular clients to try. These need to be installed on the PC, Mac, or other computer you are using to connect *to* the Raspberry Pi:
 
@@ -14,17 +12,15 @@ Here are a few (free) popular clients to try. These need to be installed on the 
   * [CyberDuck](https://cyberduck.io/?l=en)
 
 
-# Enable SSH
+## Enable SSH
 
-> **NOTE:** 
->
-> Starting with RetroPie 4.2, in order to keep the default image secure, [SSH is disabled by default](https://www.raspberrypi.org/blog/a-security-update-for-raspbian-pixel/). You will not be able to remotely connect to it until it has been enabled using **ONE** of the instructions below.
+**NOTE: Starting with RetroPie 4.2, in order to keep the default image secure, [SSH is disabled by default](https://www.raspberrypi.org/blog/a-security-update-for-raspbian-pixel/). You will not be able to remotely connect to it until it has been enabled using `ONE` of the instructions below.**
 
-## (Option 1) From the SD Card
+### (Option 1) From the SD Card
 
 If your computer has an SD-card reader or a special USB stick that allows inserting an SD card, plug it into your computer, open the new drive to access your SD-card's `boot` partition,  and create an empty file called `ssh` or `ssh.txt` in the root directory. Ignore any warnings about the drive needing to be repaired.
 
-## (Option 2) From the RetroPie menu
+### (Option 2) From the RetroPie menu
 
 1. Select `raspi-config` from the RetroPie menu after booting up.
 2. Select `Interface Options`
@@ -33,9 +29,10 @@ If your computer has an SD-card reader or a special USB stick that allows insert
 5. Select `Ok`
 6. Choose `Finish`
 
-## (Option 3) When using BerryBoot
+### (Option 3) When using BerryBoot
 
 When using RetroPie with [BerryBoot](http://www.berryterminal.com/doku.php/berryboot) you cannot use `raspi-config`. There is a workaround to enable SSH:
+
 1. Boot to RetroPie (via BerryBoot)
 2. Enter shell by pressing <kbd>Ctrl + F4</kbd>
 3. `cd /boot`
@@ -43,11 +40,11 @@ When using RetroPie with [BerryBoot](http://www.berryterminal.com/doku.php/berry
 5. `sudo reboot now`
 6. Done!
 
-# Connecting
+## Connecting
 
 Four credentials are needed to remotely connect to your Raspberry Pi: IP address, port, username, and password. These will be the same with any client (WinSCP, Putty, MobaXterm, etc).
 
-## Default Login
+### Default Login
 In your chosen client, enter the following:
 
 * IP address: **See below note**
@@ -55,9 +52,7 @@ In your chosen client, enter the following:
 * Username: `pi`   
 * Password: `raspberry`
 
-> **Note:**
->
-> The IP address is unique to your local network, and can be found by selecting the `Show IP` option in the `RetroPie` menu after booting up your Raspberry Pi.
+**Note: The IP address is unique to your local network, and can be found by selecting the `Show IP` option in the `RetroPie` menu after booting up your Raspberry Pi.**
 
 Example using Putty:
 
@@ -67,17 +62,15 @@ Example using WinSCP:
 
 ![winscp](https://user-images.githubusercontent.com/540857/106331841-9f56b700-6253-11eb-8735-7e92b00375c5.png)
 
-## Root Access
+### Root Access
 
-> <span style="color:red">**Warning!**</span>
->
-> Root access is meant for advanced users only, and only for functions not possible with the `pi` user. Do not use `root` when transferring ROMs or other tasks available to the default `pi` user.
+**Warning! Root access is meant for advanced users only, and only for functions not possible with the `pi` user. Do not use `root` when transferring ROMs or other tasks available to the default `pi` user.**
 
 For more advanced users, root access can more easily allow for editing protected files such as the `config.txt` when [overclocking](Overclocking). This allows users to remotely make changes, reboot, and instantly view performance changes.
 
 [See here if you wish to log in as root](FAQ#why-cant-i-ssh-as-root-anymore).
 
-# Common Terminal Commands:
+## Common Terminal Commands:
 
 **Reboot:** 
 ```
@@ -117,7 +110,7 @@ sudo chown -R pi:pi /folder/to/be/changed
 sudo chmod +x yourshellscript.sh
 ```
 
-# Extra Configurations
+## Extra Configurations
 
 If you find that you are getting weird characters on the dialog gui for the RetroPie Setup script you can change the font encoding to make it look pretty again.
 
