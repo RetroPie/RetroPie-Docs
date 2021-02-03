@@ -18,7 +18,7 @@ There are three main methods of transferring ROMs: via USB stick, via SFTP, and 
 
 ### SFTP
 
-SFTP/SSH connection instructions are available on the [SSH page](SSH.md). Once you've enabled SSH and connected to your chosen client, you can simply drop the files in the `~/RetroPie/roms/$CONSOLE` folder, where $CONSOLE is the name of the target console, e.g. `snes` or `arcade`.
+SFTP/SSH connection instructions are available on the [SSH page](SSH). Once you've enabled SSH and connected to your chosen client, you can simply drop the files in the `~/RetroPie/roms/$CONSOLE` folder, where $CONSOLE is the name of the target console, e.g. `snes` or `arcade`.
 
 ### Samba-Shares
 
