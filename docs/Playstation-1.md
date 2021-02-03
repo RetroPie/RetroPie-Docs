@@ -92,7 +92,7 @@ Place BIOS in
 /home/pi/RetroPie/BIOS
 ```
 
-While both **lr-pcsx_reamrmed** and **PCSX-ReARMed** have an emulated BIOS to fall back on, it has limited compatibility so most games will have issues running with it (or not work at all), and all games that use memory card saves are prone to save corruption. It should be considered mandatory to manually install an official BIOS.
+While both **lr-pcsx_rearmed** and **PCSX-ReARMed** have an emulated BIOS to fall back on, it has limited compatibility so most games will have issues running with it (or not work at all), and all games that use memory card saves are prone to save corruption. It should be considered mandatory to manually install an official BIOS.
 
 ### lr-pcsx_rearmed
 
