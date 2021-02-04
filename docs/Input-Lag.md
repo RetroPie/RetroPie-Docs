@@ -21,7 +21,7 @@ edid_content_type=4
 ## Use HDTV’s native display resolution
 If RetroPie outputs a resolution lower or higher than the maximum that your TV supports, your TV will always up or downscale the image to that maximum. Such operations are often VERY slow. 
 
-By default RetroPie will output to your TV's native resolution, but this can be overridden via [[Runcommand]] - options 4 and 5 - "Video Mode". Be sure you haven’t done this by checking both of these options are set to blank for your emulators and games, which is the default.
+By default RetroPie will output to your TV's native resolution, but this can be overridden via [Runcommand](Runcommand) - options 4 and 5 - "Video Mode". Be sure you haven’t done this by checking both of these options are set to blank for your emulators and games, which is the default.
 
 **NOTE**: The above only applies to modern digital TVs. CRTs do not process and display video signals in the same way.
 
