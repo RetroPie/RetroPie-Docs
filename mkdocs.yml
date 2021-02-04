@@ -224,3 +224,4 @@ nav:
 - About:
     - Changelogs: Changelogs.md
     - Supported Systems: Supported-Systems.md
+    - Contributing to Docs: Style-Guide.md
