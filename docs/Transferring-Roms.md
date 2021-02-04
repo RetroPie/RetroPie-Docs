@@ -1,10 +1,8 @@
-# ROMS
-
 ROM stands for *Read Only Memory*. In a RetroPie context, ROMs are digital copies of games which can be run on emulators (software that mimics your old gaming consoles). There are many issues involving copyright laws regarding the usage of ROMs, so in order to preserve the integrity and longevity of the RetroPie project, the download locations of ROMs will not and cannot be added to the Wiki. That being said, in the search of your childhood - Google is your friend.
 
-## Transferring Roms
+## Transferring ROMs
 
-There are three main methods of transferring roms: via USB stick, via SFTP, and via Windows (Samba) shares.
+There are three main methods of transferring ROMs: via USB stick, via SFTP, and via Windows (Samba) shares.
 
 ### USB stick
 
@@ -20,43 +18,9 @@ There are three main methods of transferring roms: via USB stick, via SFTP, and 
 
 ### SFTP
 
-SFTP (Secure File Transfer Protocol) is a network protocol that allows you to securely transfer files over the internet or locally on the same network when both your PC and RetroPie system are connected to the same router via Ethernet or Wifi. 
+SFTP (Secure File Transfer Protocol) is a network protocol that allows you to securely transfer files over the internet or locally on the same network when both the PC and RetroPie system are connected to the same router via ethernet or wifi. 
 
-- Wired (needs ethernet cable)
-- Wireless (Raspberry Pi Zero W, 3 and 4 models have onboard Wifi, so Pi 1 and 2 will need a dongle)
-
-To enable SSH from within RetroPie:
-
-1. Within the 'RetroPie' EmulationStation options menu, select **raspi-config**
-2. Select **Interface Options**
-3. Select **SSH**
-4. Choose **Yes**
-5. Select **Ok**
-6. Choose **Finish**
-
-There are many SFTP programs out there:
-
-- Windows: 
-  - [WinSCP](https://winscp.net/eng/download.php) - For easy drag & drop file transfer
-  - [MobaXTerm](https://mobaxterm.mobatek.net/) - Feature-rich command line access and drag & drop file transfer
-- Mac: [Cyberduck](https://cyberduck.io/?l=en)
-
-![ftp](https://cloud.githubusercontent.com/assets/10035308/9144892/68994618-3d0d-11e5-8db0-2991f9068115.png)
-
-**Connection settings** 
-
-- Protocol: `SFTP`
-- IP address/Host Name: To find the IP address of your RetroPie, go into the 'RetroPie' EmulationStation options menu and select **Show IP**. You can also find this information from the terminal on RetroPie in the bash info or with the command `ifconfig`
-- Username: `pi` (default)
-- Password: `raspberry` (default)
-
-**Where to drop the files**
-
-Simply drop the files in the `~/RetroPie/roms/$CONSOLE` folder, where $CONSOLE is the name of the target console, e.g. `snes` or `arcade`.
-
-You can also log in as root if you wish to change more files than just the roms, but you first need to enable the root password by typing `sudo passwd root` into the terminal and choosing a new root password.
-
-For more information, check the [Raspberry Pi SSH documentation](https://www.raspberrypi.org/documentation/remote-access/ssh/).
+SFTP/SSH connection instructions are available on the [SSH page](SSH). Once you've enabled SSH and connected to your chosen client, you can simply drop the files in the `~/RetroPie/roms/$CONSOLE` folder, where $CONSOLE is the name of the target console, e.g. `snes` or `arcade`.
 
 ### Samba-Shares
 
