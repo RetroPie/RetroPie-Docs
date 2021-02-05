@@ -25,7 +25,7 @@ The FKMS driver still utilises the split for certain media tasks, e.g., hardware
 ~~~~
 gpu_mem=320
 ~~~~
-More information [here](raspberrypi.org/forums/viewtopic.php?f=66&t=251645).
+More information [here](https://raspberrypi.org/forums/viewtopic.php?f=66&t=251645).
 
 ### Raspberry Pi 0-3
 
@@ -38,7 +38,7 @@ gpu_mem_1024=256
 
 In order to ensure sensible memory splits across older Pi models, the RetroPie Pi image uses the `gpu_mem_256`, `gpu_mem_512` and `gpu_mem_1024` overrides, which apply to Pis with that amount of memory (for example, the Pi 2 has 1024MB memory, so will use the `gpu_mem_1024` setting). These settings **_override_** the `gpu_mem` setting, so if you still want to adjust the memory split, you will have to manually edit `/boot/config.txt` and adjust the relevant value, or delete the lines entirely. 
 
-These defaults should be adaquate, and you can test via observing the GPU memory usage whilst an emulator is running. A complex display of the GPU memory usage can be viewed with:
+These defaults should be adequate, and you can test via observing the GPU memory usage whilst an emulator is running. A complex display of the GPU memory usage can be viewed with:
 ~~~
 sudo vcdbg reloc
 ~~~
