@@ -153,7 +153,7 @@ Software can be installed from the RetroPie-Setup script - which is accessible f
 
 ## Transferring ROMs
 
-Visit the [Transferring ROMs](Transferring-Roms) page to learn how to transfer ROMs to RetroPie.
+You will not see any game systems (NES, n64, Playstation, etc) on the main menu until you add ROMs! Visit the [Transferring ROMs](Transferring-Roms) page to learn how to transfer ROMs to RetroPie.
 
 ## AUDIO
 
