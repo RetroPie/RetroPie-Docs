@@ -3,15 +3,6 @@
 |Version|4.7|
 |:---:|:---:|
 
-1. [Hardware](#hardware)
-2. [Installation](#installation)
-3. [Controller Configuration](#configure-controllers)
-4. [EmulationStation](#emulationstation)
-5. [Configure Wifi](#wifi)
-6. [Installing Additional Emulators](#installing-additional-emulators)
-7. [Transferring Roms](#transferring-roms)
-8. [Configure Audio (if needed)](#audio)
-
 Congratulations! You have discovered the wonderful world of RetroPie- your entire childhood is within reach! RetroPie is a combination of multiple projects including [RetroArch](http://www.retroarch.com), [EmulationStation](https://www.emulationstation.org), and many others. 
 
 This page is for people just getting started on RetroPie. The easiest way to install RetroPie is the SD image which is a ready to go system built upon top of the Raspberry Pi OS - this is the method described in the following guide. Alternatively, advanced users can install RetroPie [manually](Manual-Installation). 
@@ -160,51 +151,9 @@ On RetroPie 4.0+, not everything is installed by default. The pre-made images co
 
 Software can be installed from the RetroPie-Setup script - which is accessible from the RetroPie menu on EmulationStation. Once there you can navigate to "Manage Packages" where you will see various sections. In each section are lists of packages that can be installed (and it will show what is currently installed). Stable additional packages are under the "Optional" section, with more unstable packages listed under experimental. The packages are ordered first by type (emulators / libretro cores / ports), then alphabetically. By selecting a package you can choose to install it, or remove it. Some packages also have additional configurations.
 
-## Transferring Roms
+## Transferring ROMs
 
-Due to the nature/complexity of Copyright/Intellectual Property Rights Law, which differs significantly from Country to Country, ROMs cannot be provided with RetroPie and must be provided by the user. You should only have ROMs of games that you own. 
-
-There are three main methods of transferring roms: 
-
-### USB
- * (ensure that your USB is formatted to FAT32 or NTFS)
- * first create a folder called `retropie` on your USB stick
- * plug it into the pi and wait for it to finish blinking
- * pull the USB out and plug it into a computer
- * add the roms to their respective folders (in the `retropie/roms` folder)
- * plug it back into the Raspberry Pi
- * wait for it to finish blinking
- * refresh EmulationStation by choosing RESTART EMULATIONSTATION from the start menu
-
-See this video for reference:
-
-<a href="https://www.youtube.com/watch?v=OYMoxvbkYD4
-" target="_blank"><img src="https://img.youtube.com/vi/OYMoxvbkYD4/hqdefault.jpg" 
-alt="Transferring ROMs using an USB drive" width="640" height="400" border="10" /></a>
-
-### SFTP
-
-**NOTE** you need to enable [SSH](SSH) in order for SFTP to work.
-
-* Wired (needs ethernet cable)
-* Wireless (needs wifi dongle)
-There are many SFTP programs out there, for windows many people use [WinSCP](https://winscp.net/eng/download.php) for mac you can use something like [Cyberduck](https://cyberduck.io/?l=en)
-
-![winscp](https://cloud.githubusercontent.com/assets/10035308/12865832/7d9afb68-cc75-11e5-81b2-4529991e1821.png)
-
-Default username: **pi** 
-
-Default Password: **raspberry**
-
-You can also log in as root if you wish to change more files than just the roms, but you first need to enable the root password which is explained [here](FAQ#why-cant-i-ssh-as-root-anymore)
-
-### Samba-Shares
-
-- if on Windows type `\\retropie` into the computer folder. You can also replace `retropie` with your Raspberry Pi's IP address
-
-![samba](https://cloud.githubusercontent.com/assets/10035308/12865893/d2eab264-cc77-11e5-9ec6-003e13322a5a.png)
-
-- if on MAC OS X open Finder, select "Go" menu and "Connect to Server...". Type `smb://retropie` or `smb://retropie.local` and hit "Connect". Then choose Guest and hit "Connect" again.
+You will not see any game systems (NES, n64, Playstation, etc) on the main menu until you add ROMs! Visit the [Transferring ROMs](Transferring-Roms) page to learn how to transfer ROMs to RetroPie.
 
 ## AUDIO
 
