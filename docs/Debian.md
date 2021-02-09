@@ -76,7 +76,6 @@ You can go into Setup / Configuration and enable autostart as you like.
 - [No audio in Mupen64Plus](#no-audio-in-mupen64plus)
 - [XBOX 360 Controller mappings not working](#xbox-360-controller-mappings-not-working)
 - [SteamOS hack to allow installation](#steamos-hack-to-allow-installation)
-- [How do I get latest graphics drivers](#how-do-i-get-latest-graphics-driver)
 
 ### Emulationstation hangs if shutdown/restart was selected
 
