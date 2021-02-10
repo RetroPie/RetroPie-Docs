@@ -21,25 +21,25 @@ The simplest way to get most of these components is through an all-in-one kit su
 
 ### Required
 
- * A [Raspberry Pi](https://retropie.org.uk/about/building/)
- * A MicroSD Card ([list of compatible SD cards](http://elinux.org/RPi_SD_cards))
- * A screen (TV, computer monitor, projector, etc) - anything with HDMI
- * A video cable (HDMI is best)
-    * A Pi 4 will need a [Micro HDMI to HDMI](https://user-images.githubusercontent.com/540857/107463741-c3a47480-6b2c-11eb-8402-7313a490e234.jpg) cable
+ * [Raspberry Pi](https://retropie.org.uk/about/building/)
+ * MicroSD Card ([list of compatible SD cards](http://elinux.org/RPi_SD_cards))
+ * Screen (TV, computer monitor, projector, etc) - anything with HDMI
+ * Video cable (HDMI is best)
+    * Pi 4 will need a [Micro HDMI to HDMI](https://user-images.githubusercontent.com/540857/107463741-c3a47480-6b2c-11eb-8402-7313a490e234.jpg) cable
     * Pi 1, 2, and 3 will need a full-size [HDMI](https://user-images.githubusercontent.com/540857/107463845-ff3f3e80-6b2c-11eb-8031-3d0ed5563861.jpg) cable
- * A power supply
+ * Power supply
     * At least 3.0 amps for Raspberry Pi 4
     * At least 2.5 amps for Raspberry Pi 3
- * A game controller of your choice 
+ * Game controller of your choice 
     * Can be USB-wired, wireless (with a dongle), or Bluetooth (with or without a dongle. Pi 3+ models have built-in bluetooth and won't need a dongle)
     * The [Control Block](http://blog.petrockblock.com/2014/12/29/controlblock-power-switch-and-io-for-the-raspberry-pi/) can use original SNES controllers
 
 ### Optional
 
- * A Raspberry Pi case - **highly recommended** for proper cooling and better performance.
+ * Raspberry Pi case - **highly recommended** for proper cooling and better performance.
  * Wifi dongle or ethernet cable to connect to the internet for [Updating](Updating-RetroPie) and [Transferring ROMs](Transferring-Roms) (Wifi is built-in for the Pi 3+ models - see [wifi dongle compatible list](http://elinux.org/RPi_USB_Wi-Fi_Adapters))
- * A [MicroSD card reader](https://user-images.githubusercontent.com/540857/107463579-68728200-6b2c-11eb-9612-05c4d1931882.jpg) (for installing RetroPie if your computer doesn't have an SD card slot).
- * A USB Keyboard (to help with some configuration that cannot be done with a game controller, or you can use [SSH](SSH))
+ * [MicroSD card reader](https://user-images.githubusercontent.com/540857/107463579-68728200-6b2c-11eb-9612-05c4d1931882.jpg) (for installing RetroPie if your computer doesn't have an SD card slot).
+ * USB Keyboard (to help with some configuration that cannot be done with a game controller, or you can use [SSH](SSH))
 
 ## Installation
 
