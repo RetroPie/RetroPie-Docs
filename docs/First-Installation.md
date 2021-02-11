@@ -27,19 +27,21 @@ The simplest way to get most of these components is through an all-in-one kit su
  * Video cable (HDMI is best)
     * Pi 4 will need a [Micro HDMI to HDMI](https://user-images.githubusercontent.com/540857/107463741-c3a47480-6b2c-11eb-8402-7313a490e234.jpg) cable
     * Pi 1, 2, and 3 will need a full-size [HDMI](https://user-images.githubusercontent.com/540857/107463845-ff3f3e80-6b2c-11eb-8031-3d0ed5563861.jpg) cable
+    * Pi Zero will need a [Mini HDMI to HDMI](https://user-images.githubusercontent.com/540857/107686191-e3de4b80-6c72-11eb-8162-07a82afaac7b.jpg) cable
+    * [4-Pole RCA to 3.5mm](https://user-images.githubusercontent.com/540857/107688722-f3ab5f00-6c75-11eb-9837-ffe7f385b1c5.jpg) is also an option for older screens
  * Power supply
     * At least 3.0 amps for Raspberry Pi 4
     * At least 2.5 amps for Raspberry Pi 3
  * Game controller of your choice 
-    * Can be USB-wired, wireless (with a dongle), or Bluetooth (with or without a dongle. Pi 3+ models have built-in bluetooth and won't need a dongle)
+    * Can be USB-wired, wireless (with a dongle), or Bluetooth (with or without a dongle. Pi 3 and later models have built-in bluetooth and won't need a dongle)
     * The [Control Block](http://blog.petrockblock.com/2014/12/29/controlblock-power-switch-and-io-for-the-raspberry-pi/) can use original SNES controllers
 
 ### Optional
 
- * Raspberry Pi case - **highly recommended** for proper cooling and better performance.
- * Wifi dongle or ethernet cable to connect to the internet for [Updating](Updating-RetroPie) and [Transferring ROMs](Transferring-Roms) (Wifi is built-in for the Pi 3+ models - see [wifi dongle compatible list](http://elinux.org/RPi_USB_Wi-Fi_Adapters))
- * [MicroSD card reader](https://user-images.githubusercontent.com/540857/107463579-68728200-6b2c-11eb-9612-05c4d1931882.jpg) (for installing RetroPie if your computer doesn't have an SD card slot).
- * USB Keyboard (to help with some configuration that cannot be done with a game controller, or you can use [SSH](SSH))
+ * Raspberry Pi case - **highly recommended** for proper cooling and better performance
+ * Wifi dongle or ethernet cable to connect to the internet for [Updating](Updating-RetroPie) and [Transferring ROMs](Transferring-Roms) (Wifi is built-in for the Pi 3 and later models - see [wifi dongle compatible list](http://elinux.org/RPi_USB_Wi-Fi_Adapters))
+ * [USB MicroSD card reader](https://user-images.githubusercontent.com/540857/107463579-68728200-6b2c-11eb-9612-05c4d1931882.jpg) - for installing RetroPie if your computer doesn't have an SD card slot
+ * USB Keyboard - to help with some configuration that cannot be done with a game controller, or you can use [SSH](SSH)
 
 ## Installation
 
