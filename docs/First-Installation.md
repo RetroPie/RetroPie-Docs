@@ -7,9 +7,9 @@ Congratulations! You have discovered the wonderful world of RetroPie- your entir
 
 This page is for people just getting started on RetroPie. The easiest way to install RetroPie is the SD image which is a ready to go system built upon top of the Raspberry Pi OS - this is the method described in the following guide. Alternatively, advanced users can install RetroPie [manually](Manual-Installation). 
 
-This guide will give you the very basics to get you up and running from a blank SD card to first boot into EmulationStation.
+This guide will give you the very basics to get you up and running from a blank MicroSD card to first boot into EmulationStation.
 
-If you hate reading then see [this video](https://www.youtube.com/watch?v=E1sbnPZ_A8w). Otherwise read on! 
+The following video will also walk you through the installation process. Otherwise read on! 
 
 <a href="https://www.youtube.com/watch?v=E1sbnPZ_A8w
 " target="_blank"><img src="https://user-images.githubusercontent.com/540857/107464585-9fe22e00-6b2e-11eb-9927-b1ec32360838.jpg" 
@@ -23,22 +23,21 @@ The simplest way to get most of these components is through an all-in-one kit su
 
  * [Raspberry Pi](https://retropie.org.uk/about/building/)
  * MicroSD Card ([list of compatible SD cards](http://elinux.org/RPi_SD_cards))
- * Screen (TV, computer monitor, projector, etc) - anything with HDMI
- * Video cable (HDMI is best)
+ * Screen (TV, computer monitor, projector, etc) - anything with HDMI or RCA
+ * Video cable
     * Pi 4 will need a [Micro HDMI to HDMI](https://user-images.githubusercontent.com/540857/107463741-c3a47480-6b2c-11eb-8402-7313a490e234.jpg) cable
     * Pi 1, 2, and 3 will need a full-size [HDMI](https://user-images.githubusercontent.com/540857/107463845-ff3f3e80-6b2c-11eb-8031-3d0ed5563861.jpg) cable
     * Pi Zero will need a [Mini HDMI to HDMI](https://user-images.githubusercontent.com/540857/107686191-e3de4b80-6c72-11eb-8162-07a82afaac7b.jpg) cable
     * [4-Pole RCA to 3.5mm](https://user-images.githubusercontent.com/540857/107688722-f3ab5f00-6c75-11eb-9837-ffe7f385b1c5.jpg) is also an option for older screens
  * Power supply
-    * At least 3.0 amps for Raspberry Pi 4
-    * At least 2.5 amps for Raspberry Pi 3
+    * View the official [Raspberry Pi Power](https://www.raspberrypi.org/documentation/hardware/raspberrypi/power/) documentation for each model
  * Game controller of your choice 
     * Can be USB-wired, wireless (with a dongle), or Bluetooth (with or without a dongle. Pi 3 and later models have built-in bluetooth and won't need a dongle)
     * The [Control Block](http://blog.petrockblock.com/2014/12/29/controlblock-power-switch-and-io-for-the-raspberry-pi/) can use original SNES controllers
 
 ### Optional
 
- * Raspberry Pi case - **highly recommended** for proper cooling and better performance
+ * Raspberry Pi case - **highly recommended**
  * Wifi dongle or ethernet cable to connect to the internet for [Updating](Updating-RetroPie) and [Transferring ROMs](Transferring-Roms) (see [wifi dongle compatible list](http://elinux.org/RPi_USB_Wi-Fi_Adapters). Wifi is built-in for the Pi 3 and later models and will not need a dongle.)
  * [USB MicroSD card reader](https://user-images.githubusercontent.com/540857/107463579-68728200-6b2c-11eb-9612-05c4d1931882.jpg) - for installing RetroPie if your computer doesn't have an SD card slot
  * USB Keyboard - to help with some configuration that cannot be done with a game controller, or you can use [SSH](SSH)
