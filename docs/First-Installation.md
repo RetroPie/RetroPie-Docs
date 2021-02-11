@@ -39,7 +39,7 @@ The simplest way to get most of these components is through an all-in-one kit su
 ### Optional
 
  * Raspberry Pi case - **highly recommended** for proper cooling and better performance
- * Wifi dongle or ethernet cable to connect to the internet for [Updating](Updating-RetroPie) and [Transferring ROMs](Transferring-Roms) (Wifi is built-in for the Pi 3 and later models - see [wifi dongle compatible list](http://elinux.org/RPi_USB_Wi-Fi_Adapters))
+ * Wifi dongle or ethernet cable to connect to the internet for [Updating](Updating-RetroPie) and [Transferring ROMs](Transferring-Roms) (see [wifi dongle compatible list](http://elinux.org/RPi_USB_Wi-Fi_Adapters). Wifi is built-in for the Pi 3 and later models and will not need a dongle.)
  * [USB MicroSD card reader](https://user-images.githubusercontent.com/540857/107463579-68728200-6b2c-11eb-9612-05c4d1931882.jpg) - for installing RetroPie if your computer doesn't have an SD card slot
  * USB Keyboard - to help with some configuration that cannot be done with a game controller, or you can use [SSH](SSH)
 
