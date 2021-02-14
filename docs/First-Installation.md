@@ -110,6 +110,9 @@ See the following diagrams for reference:
 | PS3 Controller |
 |:---:|
 |![ps3_controller](https://cloud.githubusercontent.com/assets/10035308/22185413/f10f27de-e099-11e6-97a4-ecbbc82c9e46.png)|
+| N64 Controller |
+|:---:|
+|![N64 controller](https://user-images.githubusercontent.com/24857905/107877217-a0f9bf00-6e90-11eb-9854-d7b9b226a235.png)|
 
 ### Hotkey
 
