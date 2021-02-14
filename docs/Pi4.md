@@ -109,6 +109,5 @@ Key differences from the previous Raspberry Pi models:
    - Reported working - `gamecondriver`
    - Reported working - `mkarcadejoystick`. See [here](https://retropie.org.uk/forum/topic/25932/) for instructions to setup a 13 buttons configuration using the `hotkeybtn` variant of the driver.
 
-As an alternative to the drivers included in RetroPie, [GPIOnext](https://github.com/mholgatem/GPIOnext/) can be used.
-
-    If you happen to use one of the GPIO controller drivers, please consider testing and reporting any problems in the [RetroPie forums](https://retropie.org.uk/forums)
+As an alternative to the drivers included in RetroPie, [GPIOnext](https://github.com/mholgatem/GPIOnext/) can be used.    
+If you happen to use one of the GPIO controller drivers, please consider testing and reporting any problems in the [RetroPie forums](https://retropie.org.uk/forums)
