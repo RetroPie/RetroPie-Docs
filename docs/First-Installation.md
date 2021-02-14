@@ -21,65 +21,57 @@ The simplest way to get most of these components is through an all-in-one kit su
 
 ### Required
 
- * [Raspberry Pi](https://retropie.org.uk/about/building/)
- * MicroSD Card ([list of compatible SD cards](http://elinux.org/RPi_SD_cards))
- * Screen (TV, computer monitor, projector, etc) - anything with HDMI or RCA
- * Video cable
-   * Pi 4 will need a [Micro HDMI to HDMI](https://user-images.githubusercontent.com/540857/107463741-c3a47480-6b2c-11eb-8402-7313a490e234.jpg) cable
-   * Pi 1, 2, and 3 will need a full-size [HDMI](https://user-images.githubusercontent.com/540857/107463845-ff3f3e80-6b2c-11eb-8031-3d0ed5563861.jpg) cable
-   * Pi Zero will need a [Mini HDMI to HDMI](https://user-images.githubusercontent.com/540857/107686191-e3de4b80-6c72-11eb-8162-07a82afaac7b.jpg) cable
-   * [4-Pole RCA to 3.5mm](https://user-images.githubusercontent.com/540857/107688722-f3ab5f00-6c75-11eb-9837-ffe7f385b1c5.jpg) is also an option for older screens
- * Power supply
-   * View the official [Raspberry Pi Power](https://www.raspberrypi.org/documentation/hardware/raspberrypi/power/) documentation for each model
- * Game controller of your choice 
-   * Can be USB-wired, wireless (with a dongle), or Bluetooth (with or without a dongle. Pi 3 and later models have built-in bluetooth and won't need a dongle)
-   * The [Control Block](http://blog.petrockblock.com/2014/12/29/controlblock-power-switch-and-io-for-the-raspberry-pi/) can use original SNES controllers
+* [Raspberry Pi](https://retropie.org.uk/about/building/)
+* MicroSD Card ([list of compatible SD cards](http://elinux.org/RPi_SD_cards))
+* [USB MicroSD card reader](https://user-images.githubusercontent.com/540857/107463579-68728200-6b2c-11eb-9612-05c4d1931882.jpg) - an adapter that allows plugging the MiscroSD card into any USB port
+  * Some laptops have this functionality in the form of an SD card slot ([example #1](https://user-images.githubusercontent.com/540857/107868575-6f163780-6e53-11eb-9943-faec57cbf48e.png), [example #2](https://user-images.githubusercontent.com/540857/107868592-94a34100-6e53-11eb-91ed-e645be9827aa.jpg)). In this case, a USB MicroSD card reader may not be needed, but can still be useful to have to allow manipulation of the MicroSD card in any computer with a USB port.
+* Screen (TV, computer monitor, projector, etc) - anything with HDMI or RCA
+* Video cable
+  * Pi 4 will need a [Micro HDMI to HDMI](https://user-images.githubusercontent.com/540857/107463741-c3a47480-6b2c-11eb-8402-7313a490e234.jpg) cable
+  * Pi 1, 2, and 3 will need a full-size [HDMI](https://user-images.githubusercontent.com/540857/107463845-ff3f3e80-6b2c-11eb-8031-3d0ed5563861.jpg) cable
+  * Pi Zero will need a [Mini HDMI to HDMI](https://user-images.githubusercontent.com/540857/107686191-e3de4b80-6c72-11eb-8162-07a82afaac7b.jpg) cable
+  * [4-Pole RCA to 3.5mm](https://user-images.githubusercontent.com/540857/107688722-f3ab5f00-6c75-11eb-9837-ffe7f385b1c5.jpg) is also an option for older screens
+* Power supply
+  * View the official [Raspberry Pi Power](https://www.raspberrypi.org/documentation/hardware/raspberrypi/power/) documentation for each model
+* Game controller of your choice 
+  * Can be USB-wired, wireless (with a dongle), or Bluetooth (with or without a dongle. Pi 3 and later models have built-in bluetooth and won't need a dongle)
+  * The [Control Block](http://blog.petrockblock.com/2014/12/29/controlblock-power-switch-and-io-for-the-raspberry-pi/) can use original SNES controllers
 
 ### Optional
 
- * Raspberry Pi case - **highly recommended**
- * Wifi dongle or ethernet cable to connect to the internet for [Updating](Updating-RetroPie) and [Transferring ROMs](Transferring-Roms) (see [wifi dongle compatible list](http://elinux.org/RPi_USB_Wi-Fi_Adapters). Wifi is built-in for the Pi 3 and later models and will not need a dongle.)
- * [USB MicroSD card reader](https://user-images.githubusercontent.com/540857/107463579-68728200-6b2c-11eb-9612-05c4d1931882.jpg) - for installing RetroPie if your computer doesn't have an SD card slot
- * USB Keyboard - to help with some configuration that cannot be done with a game controller, or you can use [SSH](SSH)
+* Raspberry Pi case - **highly recommended**
+* Wifi dongle or ethernet cable to connect to the internet for [Updating](Updating-RetroPie) and [Transferring ROMs](Transferring-Roms) (see [wifi dongle compatible list](http://elinux.org/RPi_USB_Wi-Fi_Adapters). Wifi is built-in for the Pi 3 and later models and will not need a dongle.)
+* USB Keyboard - to help with some configuration that cannot be done with a game controller, or you can use [SSH](SSH)
 
 ## Installation
 
+### Plug in the MicroSD card
+
+The [MicroSD card](https://user-images.githubusercontent.com/540857/107868231-830c6a00-6e50-11eb-85d1-9a6ada5f28b4.jpg) needs to be plugged into your PC, but most PCs don't have a port for it (although some laptops do). You'll need to insert the MicroSD card into an adapter, such as a [USB MicroSD card reader](https://user-images.githubusercontent.com/540857/107463579-68728200-6b2c-11eb-9612-05c4d1931882.jpg). This allows it to be plugged into any USB port on your PC. Once it's plugged into your PC, continue to the next step.
 ### Download
-There are currently 3 versions of RetroPie. There is one version for Raspberry Pi 0/1 (Model A, A+, B, B+), a version for Raspberry Pi 2/3 and a version for Raspberry Pi 4. 
+Download the official [Raspberry Pi Imager](https://www.raspberrypi.org/software/), which allows downloading the different OS versions of Retropie.
 
-Download the SD image for your version of Raspberry Pi from the following page:
+1. Click the **Choose OS** button
+2. Select **Emulation and game OS**
+3. Select **RetroPie**.
+4. Select the image for the model of Raspberry Pi (RPI) that you have. For example, if you have a Raspberry Pi 4, select the RPI 4/400 option.
 
-**[https://retropie.org.uk/download/](https://retropie.org.uk/download/)**
+![rpi-imager](https://user-images.githubusercontent.com/540857/107868009-493a6400-6e4e-11eb-9272-7f45d569dc44.gif)
 
-If you are unsure which version of Raspberry Pi you have, you can count the raspberries on boot:
+If you don't know which model Raspberry Pi you have, there are a few methods to find out:
 
-|Raspberry Pi 0/1 | Raspberry Pi 2/3/4|
-| :---: | :---: |
-|![rpi1](https://cloud.githubusercontent.com/assets/10035308/21957849/f64fe008-da54-11e6-9a1c-09cb9e87c8f5.png) | ![rpi2](https://cloud.githubusercontent.com/assets/10035308/21957850/f66f2120-da54-11e6-876b-6d7f276c31e3.png)|
-
-If you get the error `Illegal Instruction` when it boots or if it just boots into the terminal, you picked the wrong SD image or the image was corrupted on download or extraction.
-
-### Extract
-
-Once you have downloaded your SD card image you need to extract it using a program such as [7-Zip](http://www.7-zip.org/). You will extract the downloaded **.gz** file and the extracted file will be a **.img** file.
-
-To extract from the command line, you can type the following into a Terminal window, placing X with version you downloaded:
-
-`gunzip retropie-4.X.X-rpi2_rpi3.img.gz`
+* The [Raspberry Pi Wikipedia page](https://en.wikipedia.org/wiki/Raspberry_Pi#Connectors) has user-friendly graphics to help determine model by looking at the board itself.
+* If you have SSH/commandline access, run `cat /proc/device-tree/model` and it will output your Pi's model
 
 ### Install
 
-To install the RetroPie SD image on your MicroSD card. (You may need a MicroSD card reader to plug it into your computer) 
+1. Click the **Choose SD Card** button. 
+2. The MicroSD card you plugged in earlier should appear in this list. Select it to continue.
+3. Once your "OS" and "SD card" have been chosen, select **Write**, and wait until the operation completes.
+4. Remove the MicroSD card from your PC, slide it back into the slot on your Raspberry Pi, and turn it on.
 
-1. For Windows you can use [Etcher](https://www.balena.io/etcher/), [Win32DiskImager](http://sourceforge.net/projects/win32diskimager/) or [Raspberry Pi Imager](https://www.raspberrypi.org/software/)
-2. For macOS you can use [Etcher](https://www.balena.io/etcher/), [Apple Pi Baker](https://www.tweaking4all.com/hardware/raspberry-pi/applepi-baker-v2/) or [Raspberry Pi Imager](https://www.raspberrypi.org/software/)
-3. For Linux you can use the `dd` command, [Etcher](https://www.balena.io/etcher/) or [Raspberry Pi Imager](https://www.raspberrypi.org/software/).
 
-See the official Raspberry Pi "WRITING AN IMAGE TO THE SD CARD" [instructions](https://www.raspberrypi.org/documentation/installation/installing-images/).
-
-**Note** RetroPie is built on top of Raspberry Pi OS Buster (a Linux based OS for the Raspberry Pi) and as such the partition on the SD card is EXT4 (a linux filesystem). This partition is is not visible on Windows systems, so the card will show up as a smaller size than usual and you won't be able to see everything on the card, but it is all there. You will be able to access the filesystem over the network as described in the transferring roms section below.
-
-If you're updating from a previous version of RetroPie see [**HERE**](Updating-RetroPie).
+**Note**: You can safely ignore Windows' warnings about this drive. You may see Windows complain that "There is a problem with this drive", but everything is fine. RetroPie is built on top of Raspberry Pi OS Buster (a Linux based OS for the Raspberry Pi) and as such the partition on the SD card is EXT4 (a linux filesystem). This partition is not visible on Windows systems, so the card will show up as a smaller size than usual and you won't be able to see everything on the card. 
 
 ## Configure Controllers
 
