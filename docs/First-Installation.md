@@ -21,6 +21,7 @@ The simplest way to get most of these components is through an all-in-one kit su
 
 ### Required
 
+* Computer (or laptop)
 * [Raspberry Pi](https://retropie.org.uk/about/building/)
 * [MicroSD card](https://user-images.githubusercontent.com/540857/107868231-830c6a00-6e50-11eb-85d1-9a6ada5f28b4.jpg) ([list of compatible SD cards](http://elinux.org/RPi_SD_cards))
 * MicroSD card reader - a way to plug the MicroSD card into your computer or laptop
@@ -46,31 +47,21 @@ The simplest way to get most of these components is through an all-in-one kit su
 
 ## Installation
 
-### Preferred Method
-
-1. First, insert the MicroSD card into into your computer.
-2. Download the official [Raspberry Pi Imager](https://www.raspberrypi.org/software/), which allows downloading the different OS versions of RetroPie.
-3. Click the **Choose OS** button
-4. Select **Emulation and game OS**
-5. Select **RetroPie**.
-6. Select the image for the model of Raspberry Pi (RPI) that you have. For example, if you have a Raspberry Pi 4, select the RPI 4/400 option ([example](https://user-images.githubusercontent.com/540857/107868009-493a6400-6e4e-11eb-9272-7f45d569dc44.gif)) 
-   * If you don't know which model Raspberry Pi you have, there are a few methods to find out: 
-     * The [Raspberry Pi Wikipedia page](https://en.wikipedia.org/wiki/Raspberry_Pi#Connectors) has user-friendly graphics to help determine model by looking at the board itself 
-     * If you have SSH/commandline access, run `cat /proc/device-tree/model` and it will output your Pi's model
-1. Click the **Choose SD Card** button. 
-2. The MicroSD card you plugged in earlier should appear in this list. Select it to continue
-3. Once your "OS" and "SD card" have been chosen, select **Write**, and wait until the operation completes
-4. Remove the MicroSD card from your PC, slide it back into the slot on your Raspberry Pi, and turn it on
-
-### Alternative Method
-
-1. [Download the RetroPie image](https://retropie.org.uk/download/) from the official website for your Raspberry Pi model.
-2. Download a program to write the image to your SD card.
+1. First, insert the MicroSD card into into your computer
+2. [Download the RetroPie .img.gz image](https://retropie.org.uk/download/) from the official website for your Raspberry Pi model.
+   * If you use [Raspberry Pi Imager](https://www.raspberrypi.org/software/) (recommended), you can omit this step and simply choose RetroPie from the list of included images. ([example](https://user-images.githubusercontent.com/540857/107868009-493a6400-6e4e-11eb-9272-7f45d569dc44.gif))
+   * Select the image for the model of Raspberry Pi (RPI) that you have. For example, if you have a Raspberry Pi 4, select the *RPI 4/400* image
+     * If you don't know which model Raspberry Pi you have, there are a few methods to find out: 
+       * The [Raspberry Pi Wikipedia page](https://en.wikipedia.org/wiki/Raspberry_Pi#Connectors) has user-friendly graphics to help determine model by looking at the board itself 
+       * If you have SSH/commandline access, run `cat /proc/device-tree/model` and it will output your Pi's model
+3. Download a program to write the RetroPie *.img.gz* image to your MicroSD card
    * For Windows: [Raspberry Pi Imager](https://www.raspberrypi.org/software/), [Etcher](https://www.balena.io/etcher/), or [Win32DiskImager](https://sourceforge.net/projects/win32diskimager/)
-   * For macOS: [Raspberry Pi Imager](https://www.raspberrypi.org/software/), [Etcher](https://www.balena.io/etcher/), or [Apple Pi Baker](https://www.tweaking4all.com/hardware/raspberry-pi/applepi-baker-v2/)
+     * Win32DiskImager requires an .img file extracted from the *.img.gz* image downloaded in step #2. You can use a program like [7zip](https://www.7-zip.org/download.html) to do this
+   * For macOS: [Raspberry Pi Imager](https://www.raspberrypi.org/software/), [Etcher](https://www.balena.io/etcher/), [Apple Pi Baker](https://www.tweaking4all.com/hardware/raspberry-pi/applepi-baker-v2/), or the `dd` command
    * For Linux: [Raspberry Pi Imager](https://www.raspberrypi.org/software/), [Etcher](https://www.balena.io/etcher/), or the `dd` command
-3. Insert the MicroSD card into into your computer, then follow the chosen program's instructions to write the image to the SD card.
-4. If you need to extract the *.img* file from the downloaded *.img.gz*, you can use a program like [7zip](https://www.7-zip.org/download.html).
+    * MacOS/Linux users can optionally extract the .img image from the downloaded .img.gz using `gunzip`
+4.  Once the program's image/OS and SD card have been chosen, *write* it to the SD card and wait until the operation completes
+5.  Remove the MicroSD card from your computer, slide it back into the slot on your Raspberry Pi, and turn it on
 
 **Note**: RetroPie is built on top of Raspberry Pi OS Buster (a Linux based OS for the Raspberry Pi) and as such the partition on the SD card is EXT4 (a Linux filesystem). This partition is not visible on Windows systems, so the card will show up as a smaller size than usual and you won't be able to see everything on the card. 
 
