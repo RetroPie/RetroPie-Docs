@@ -49,7 +49,7 @@ The simplest way to get most of these components is through an all-in-one kit su
 
 1. First, insert the MicroSD card into into your computer
 2. [Download the RetroPie .img.gz image](https://retropie.org.uk/download/) from the official website for your Raspberry Pi model.
-   * If you use [Raspberry Pi Imager](https://www.raspberrypi.org/software/) (recommended), you can omit this step and simply choose RetroPie from the list of included images. ([example](https://user-images.githubusercontent.com/540857/107868009-493a6400-6e4e-11eb-9272-7f45d569dc44.gif))
+   * If you use [Raspberry Pi Imager](https://www.raspberrypi.org/software/) (recommended), you can omit this step and simply choose RetroPie from the list of included images ([example](https://user-images.githubusercontent.com/540857/107868009-493a6400-6e4e-11eb-9272-7f45d569dc44.gif)). If needed, official instructions for using the Raspberry Pi Imager are [here](https://www.raspberrypi.org/documentation/installation/installing-images/)
    * Select the image for the model of Raspberry Pi (RPI) that you have. For example, if you have a Raspberry Pi 4, select the *RPI 4/400* image
      * If you don't know which model Raspberry Pi you have, there are a few methods to find out: 
        * The [Raspberry Pi Wikipedia page](https://en.wikipedia.org/wiki/Raspberry_Pi#Connectors) has user-friendly graphics to help determine model by looking at the board itself 
