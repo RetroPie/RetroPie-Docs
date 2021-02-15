@@ -22,9 +22,10 @@ The simplest way to get most of these components is through an all-in-one kit su
 ### Required
 
 * [Raspberry Pi](https://retropie.org.uk/about/building/)
-* MicroSD Card ([list of compatible SD cards](http://elinux.org/RPi_SD_cards))
-* [USB MicroSD card reader](https://user-images.githubusercontent.com/540857/107463579-68728200-6b2c-11eb-9612-05c4d1931882.jpg) - an adapter that allows plugging the MiscroSD card into any USB port
-  * Some laptops have this functionality in the form of an SD card slot ([example #1](https://user-images.githubusercontent.com/540857/107868575-6f163780-6e53-11eb-9943-faec57cbf48e.png), [example #2](https://user-images.githubusercontent.com/540857/107868592-94a34100-6e53-11eb-91ed-e645be9827aa.jpg)). In this case, a USB MicroSD card reader may not be needed, but can still be useful to have to allow manipulation of the MicroSD card in any computer with a USB port.
+* [MicroSD card](https://user-images.githubusercontent.com/540857/107868231-830c6a00-6e50-11eb-85d1-9a6ada5f28b4.jpg) ([list of compatible SD cards](http://elinux.org/RPi_SD_cards))
+* MicroSD card reader - a way to plug the MicroSD card into your computer or laptop
+  * Some laptops have this functionality in the form of an SD card slot ([example #1](https://user-images.githubusercontent.com/540857/107868575-6f163780-6e53-11eb-9943-faec57cbf48e.png), [example #2](https://user-images.githubusercontent.com/540857/107868592-94a34100-6e53-11eb-91ed-e645be9827aa.jpg)).
+  * A [USB MicroSD card reader](https://user-images.githubusercontent.com/540857/107463579-68728200-6b2c-11eb-9612-05c4d1931882.jpg) can be plugged into any USB port
 * Screen (TV, computer monitor, projector, etc) - anything with HDMI or RCA
 * Video cable
   * Pi 4 will need a [Micro HDMI to HDMI](https://user-images.githubusercontent.com/540857/107463741-c3a47480-6b2c-11eb-8402-7313a490e234.jpg) cable
@@ -34,7 +35,7 @@ The simplest way to get most of these components is through an all-in-one kit su
 * Power supply
   * View the official [Raspberry Pi Power](https://www.raspberrypi.org/documentation/hardware/raspberrypi/power/) documentation for each model
 * Game controller of your choice 
-  * Can be USB-wired, wireless (with a dongle), or Bluetooth (with or without a dongle. Pi 3 and later models have built-in bluetooth and won't need a dongle)
+  * Can be USB-wired, wireless (with a dongle), or Bluetooth (with or without a dongle. Pi 3 and later models have built-in Bluetooth and won't need a dongle)
   * The [Control Block](http://blog.petrockblock.com/2014/12/29/controlblock-power-switch-and-io-for-the-raspberry-pi/) can use original SNES controllers
 
 ### Optional
@@ -45,33 +46,33 @@ The simplest way to get most of these components is through an all-in-one kit su
 
 ## Installation
 
-### Plug in the MicroSD card
+### Preferred Method
 
-The [MicroSD card](https://user-images.githubusercontent.com/540857/107868231-830c6a00-6e50-11eb-85d1-9a6ada5f28b4.jpg) needs to be plugged into your PC, but most PCs don't have a port for it (although some laptops do). You'll need to insert the MicroSD card into an adapter, such as a [USB MicroSD card reader](https://user-images.githubusercontent.com/540857/107463579-68728200-6b2c-11eb-9612-05c4d1931882.jpg). This allows it to be plugged into any USB port on your PC. Once it's plugged into your PC, continue to the next step.
-### Download
-Download the official [Raspberry Pi Imager](https://www.raspberrypi.org/software/), which allows downloading the different OS versions of Retropie.
-
-1. Click the **Choose OS** button
-2. Select **Emulation and game OS**
-3. Select **RetroPie**.
-4. Select the image for the model of Raspberry Pi (RPI) that you have. For example, if you have a Raspberry Pi 4, select the RPI 4/400 option.
-
-![rpi-imager](https://user-images.githubusercontent.com/540857/107868009-493a6400-6e4e-11eb-9272-7f45d569dc44.gif)
-
-If you don't know which model Raspberry Pi you have, there are a few methods to find out:
-
-* The [Raspberry Pi Wikipedia page](https://en.wikipedia.org/wiki/Raspberry_Pi#Connectors) has user-friendly graphics to help determine model by looking at the board itself.
-* If you have SSH/commandline access, run `cat /proc/device-tree/model` and it will output your Pi's model
-
-### Install
-
+1. First, insert the MicroSD card into into your computer.
+2. Download the official [Raspberry Pi Imager](https://www.raspberrypi.org/software/), which allows downloading the different OS versions of RetroPie.
+3. Click the **Choose OS** button
+4. Select **Emulation and game OS**
+5. Select **RetroPie**.
+6. Select the image for the model of Raspberry Pi (RPI) that you have. For example, if you have a Raspberry Pi 4, select the RPI 4/400 option ([example](https://user-images.githubusercontent.com/540857/107868009-493a6400-6e4e-11eb-9272-7f45d569dc44.gif)) 
+   * If you don't know which model Raspberry Pi you have, there are a few methods to find out: 
+     * The [Raspberry Pi Wikipedia page](https://en.wikipedia.org/wiki/Raspberry_Pi#Connectors) has user-friendly graphics to help determine model by looking at the board itself 
+     * If you have SSH/commandline access, run `cat /proc/device-tree/model` and it will output your Pi's model
 1. Click the **Choose SD Card** button. 
-2. The MicroSD card you plugged in earlier should appear in this list. Select it to continue.
-3. Once your "OS" and "SD card" have been chosen, select **Write**, and wait until the operation completes.
-4. Remove the MicroSD card from your PC, slide it back into the slot on your Raspberry Pi, and turn it on.
+2. The MicroSD card you plugged in earlier should appear in this list. Select it to continue
+3. Once your "OS" and "SD card" have been chosen, select **Write**, and wait until the operation completes
+4. Remove the MicroSD card from your PC, slide it back into the slot on your Raspberry Pi, and turn it on
 
+### Alternative Method
 
-**Note**: You can safely ignore Windows' warnings about this drive. You may see Windows complain that "There is a problem with this drive", but everything is fine. RetroPie is built on top of Raspberry Pi OS Buster (a Linux based OS for the Raspberry Pi) and as such the partition on the SD card is EXT4 (a linux filesystem). This partition is not visible on Windows systems, so the card will show up as a smaller size than usual and you won't be able to see everything on the card. 
+1. [Download the RetroPie image](https://retropie.org.uk/download/) from the official website for your Raspberry Pi model.
+2. Download a program to write the image to your SD card.
+   * For Windows: [Raspberry Pi Imager](https://www.raspberrypi.org/software/), [Etcher](https://www.balena.io/etcher/), or [Win32DiskImager](https://sourceforge.net/projects/win32diskimager/)
+   * For macOS: [Raspberry Pi Imager](https://www.raspberrypi.org/software/), [Etcher](https://www.balena.io/etcher/), or [Apple Pi Baker](https://www.tweaking4all.com/hardware/raspberry-pi/applepi-baker-v2/)
+   * For Linux: [Raspberry Pi Imager](https://www.raspberrypi.org/software/), [Etcher](https://www.balena.io/etcher/), or the `dd` command
+3. Insert the MicroSD card into into your computer, then follow the chosen program's instructions to write the image to the SD card.
+4. If you need to extract the *.img* file from the downloaded *.img.gz*, you can use a program like [7zip](https://www.7-zip.org/download.html).
+
+**Note**: RetroPie is built on top of Raspberry Pi OS Buster (a Linux based OS for the Raspberry Pi) and as such the partition on the SD card is EXT4 (a Linux filesystem). This partition is not visible on Windows systems, so the card will show up as a smaller size than usual and you won't be able to see everything on the card. 
 
 ## Configure Controllers
 
