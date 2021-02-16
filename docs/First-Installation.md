@@ -59,9 +59,7 @@ The simplest way to get most of these components is through an all-in-one kit su
    * For Linux: [Raspberry Pi Imager](https://www.raspberrypi.org/software/), [Etcher](https://www.balena.io/etcher/), or the `dd` command
     * MacOS/Linux users can optionally extract the .img image from the downloaded .img.gz by using `gunzip` (macOS users can also simply double-click it)
 4. Once the program's image/OS and SD card have been chosen, *write* it to the SD card and wait until the operation completes
-5. Remove the MicroSD card from your computer, slide it back into the slot on your Raspberry Pi
-6. Plug in a controller or keyboard
-7. Turn on the Raspberry Pi
+5. Remove the MicroSD card from your computer, slide it back into the slot on your Raspberry Pi, and turn it on
 
 ## Configure Controllers
 
@@ -81,11 +79,17 @@ The [Hotkey](First-Installation#Hotkeys) button is explained in detail below and
 
 See the following diagrams for reference:
 
+| SNES Controller | 
+|:---:|
+|![snes_controller](https://cloud.githubusercontent.com/assets/10035308/22185414/f129dc28-e099-11e6-8524-93facf275eda.png)|
+
 | XBox 360 Controller |
 |:---:|
 |![xbox360_controller](https://cloud.githubusercontent.com/assets/10035308/22185415/f12ff342-e099-11e6-8adb-d18e9c638e94.png)|
 
-Also see the diagrams for [SNES Controller](https://cloud.githubusercontent.com/assets/10035308/22185414/f129dc28-e099-11e6-8524-93facf275eda.png) and [PS3 Controller](https://cloud.githubusercontent.com/assets/10035308/22185413/f10f27de-e099-11e6-97a4-ecbbc82c9e46.png)
+| PS3 Controller |
+|:---:|
+|![ps3_controller](https://cloud.githubusercontent.com/assets/10035308/22185413/f10f27de-e099-11e6-97a4-ecbbc82c9e46.png)|
 
 More info at [RetroArch Controller Configuration](RetroArch-Configuration)
 
