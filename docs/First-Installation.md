@@ -134,7 +134,7 @@ After you've transferred your ROMs, you need to restart EmulationStation in orde
 * Expand the power of your hotkeys (libretro emulators only). Additional features are available but not enabled by default, such as rewinding and fast-forwarding. From the RetroPie main menu, select *Retroarch*. In the following menu, select *Settings > Input > Hotkey binds*. Press **Y (West)** to erase a bind. Press **A (East)** to define a new button.
   * If you set a Rewind key, it won't work until the rewind functionality is turned on. Back out of the Hotkey binds menu to the main menu of Retroarch and select *Settings > Frame Throttle*.
   * Make sure to save! Retroarch does not save configuration by default. To save, back out to the main menu and select *Configuration File > Save Current Configuration*
-* Download cheat codes (libretro emulators only). From the RetroPie main menu, select *Retroarch*. In the Retroarch main menu, *Settings > User Interface > Views* and set *Online Updater* to *ON*. Now back all the way out to the Retroarch main menu and select *Online Updater > Update Cheats*. Now, whenever you are playing a game, you can open the Retroarch GUI (Default: Hotkey + X (North)) and scroll down to select *Cheats*.
+* [Cheat codes](Cheats)! (libretro emulators only)
 
 See the rest of the [docs](https://retropie.org.uk/docs/) for more detailed information on individual emulators, advanced settings etc. If you still can't figure it out, the RetroPie community is very helpful on the [RetroPie forum](https://retropie.org.uk/forum/). 
 
