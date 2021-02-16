@@ -63,7 +63,7 @@ The simplest way to get most of these components is through an all-in-one kit su
 6. Plug in a controller or keyboard
 7. Turn on the Raspberry Pi
 
-## First Boot
+## Configure Controllers
 
 On first boot you will be welcomed with the screen below. This menu will configure your controls for both EmulationStation and all RetroArch emulators:
 
@@ -87,11 +87,13 @@ See the following diagrams for reference:
 
 Also see the diagrams for [SNES Controller](https://cloud.githubusercontent.com/assets/10035308/22185414/f129dc28-e099-11e6-8524-93facf275eda.png) and [PS3 Controller](https://cloud.githubusercontent.com/assets/10035308/22185413/f10f27de-e099-11e6-97a4-ecbbc82c9e46.png)
 
-### Hotkeys
+More info at [RetroArch Controller Configuration](RetroArch-Configuration)
 
-The Hotkey button enables you to press it in combination with another button to access functions such as saving states, loading states, and exiting back to the EmulationStation main menu. The following chart shows the default hotkey combinations. For example, if you chose Select as your Hotkey, that means you hold down Select while pressing the other button to execute the command. 
+### Hotkey
 
-**Note** Hotkeys are specific to the retroarch/libretro based emulators and may not work on other emulators.
+The Hotkey Enable button enables you to press it in combination with another button to access functions such as saving states, loading states, and exiting back to the EmulationStation main menu. The following chart shows the default hotkey combinations. For example, if you chose Select as your Hotkey Enable button, that means you hold down Select while pressing the other button to execute the command. 
+
+**Note** Hotkeys are specific to the RetroArch/Libretro based emulators and may not work on other emulators.
 
 |Hotkey Combination | Action|
 | :---: | :---: |
@@ -129,12 +131,12 @@ After you've transferred your ROMs, you need to restart EmulationStation in orde
 * [Configure Wifi](Wifi) to allow for easy [Updating](Updating-RetroPie), downloading themes, and SSH
 * [Enable SSH](SSH) to connect to your Raspberry Pi remotely and make it easy for [Transferring ROMs](Transferring-Roms)
 * Configure more controllers. This can be done after plugging in the new controller and pressing *Start* on your controller and selecting *Configure Input*
-* Install additional emulators/cores. From the RetroPie main menu, select *RetroPie Setup > Manage Packages > Manage Optional Packages*. Stable additional packages are available here with more unstable packages listed in the *Manage experimental packages* section. The packages are ordered first by type (emulators / libretro cores / ports), then alphabetically. By selecting a package you can choose to install it or remove it. Some packages also have additional configurations.
+* Install additional emulators/cores. From the RetroPie main menu, select *RetroPie Setup > Manage Packages > Manage Optional Packages*. Stable additional packages are available here with more unstable packages listed in the *Manage experimental packages* section. The packages are ordered first by type (emulators / Libretro cores / ports), then alphabetically. By selecting a package you can choose to install it or remove it. Some packages also have additional configurations.
   * It is recommend to install emulators in the *RetroPie - libretrocores* section if you wish to retain hotkey functionality (saving states, rewinding, etc) as hotkeys will usually only work with these types of emulators. Libretro emulators have names that begin with "lr-", such as "lr-flycast" or "lr-mame2000".
-* Expand the power of your hotkeys (libretro emulators only). Additional features are available but not enabled by default, such as rewinding and fast-forwarding. From the RetroPie main menu, select *Retroarch*. In the following menu, select *Settings > Input > Hotkey binds*. Press **Y (West)** to erase a bind. Press **A (East)** to define a new button.
-  * If you set a Rewind key, it won't work until the rewind functionality is turned on. Back out of the Hotkey binds menu to the main menu of Retroarch and select *Settings > Frame Throttle*.
-  * Make sure to save! Retroarch does not save configuration by default. To save, back out to the main menu and select *Configuration File > Save Current Configuration*
-* [Cheat codes](Cheats)! (libretro emulators only)
+* Expand the power of your hotkeys (Libretro emulators only). Additional features are available but not enabled by default, such as rewinding and fast-forwarding. From the RetroPie main menu, select *RetroArch*. In the following menu, select *Settings > Input > Hotkey binds*. Press **Y (West)** to erase a bind. Press **A (East)** to define a new button.
+  * If you set a Rewind key, it won't work until the rewind functionality is turned on. Back out of the Hotkey binds menu to the main menu of RetroArch and select *Settings > Frame Throttle*.
+  * Make sure to save! RetroArch does not save configuration by default. To save, back out to the main menu and select *Configuration File > Save Current Configuration*
+* [Cheat codes](Cheats)! (Libretro emulators only)
 
 See the rest of the [docs](https://retropie.org.uk/docs/) for more detailed information on individual emulators, advanced settings etc. If you still can't figure it out, the RetroPie community is very helpful on the [RetroPie forum](https://retropie.org.uk/forum/). 
 
