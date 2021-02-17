@@ -273,7 +273,7 @@ Linux (as user `pi`): `mkdir ~/.emulationstation/scripts`
 Inside the scripts folder, create a new directory for the kind of event you want to script:
 
 |        Name         |                                   When                                    |     Arguments (max. 2)      |
-|:-------------------:|:-------------------------------------------------------------------------:|:---------------------------:|
+|:-------------------|:-------------------------------------------------------------------------|:---------------------------|
 |       `quit`        |                              on program quit                              |        `%quit_mode%`        |
 |      `reboot`       |                 on system reboot (also calls quit first)                  |                             |
 |     `shutdown`      |                on system shutdown (also calls quit first)                 |                             |
@@ -285,8 +285,10 @@ Inside the scripts folder, create a new directory for the kind of event you want
 |     `game-end`      |                          after finishing a game                           |                             |
 |       `sleep`       |       station is without user input for more than `systemSleepTime`       |        see note (\*)        |
 |       `wake`        |               station returns from sleep (i.e. user input)                |                             |
+|       `screensaver-start`        |             after screensaver starts                         |                             |
+|       `wake`        |               after screensaver stops                                     |                             |
 
-(\*) sleep/wake use no arguments. `systemSleepTime` is usually after `screenSaverTime` (both editable in Screensaver Menu). A value of `0` disables disables sleep respective screensaver.
+(\*) sleep/wake use no arguments. `systemSleepTime` is usually after `screenSaverTime` (both editable in the Screensaver Menu). A value of `0` disables sleep and the  screensaver respectively.
 
 #### 3. Script calling
 
