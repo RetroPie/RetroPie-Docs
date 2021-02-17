@@ -75,8 +75,6 @@ Follow the onscreen instructions to configure your gamepad. If your controller d
 
 The [Hotkey](First-Installation#Hotkeys) button is explained in detail below, but for now it is suggested to be defined as the **Select** button.
 
-**When you get to "OK" at the end, press the button you have configured as "A" (East) to complete this step**.
-
 See the following diagrams for reference:
 
 | SNES Controller | 
@@ -90,6 +88,8 @@ See the following diagrams for reference:
 | PS3 Controller |
 |:---:|
 |![ps3_controller](https://cloud.githubusercontent.com/assets/10035308/22185413/f10f27de-e099-11e6-97a4-ecbbc82c9e46.png)|
+
+**When you get to "OK" at the end, press the button you have configured as "A" (East) to complete this step**.
 
 More info at [RetroArch Controller Configuration](RetroArch-Configuration)
 
