@@ -95,7 +95,7 @@ More info at [RetroArch Controller Configuration](RetroArch-Configuration)
 
 ### Hotkey
 
-The Hotkey Enable button enables you to press it in combination with another button to access functions such as saving states, loading states, and exiting back to the EmulationStation main menu. The following chart shows the default hotkey combinations. For example, if you chose Select as your Hotkey Enable button, that means you hold down Select while pressing the other button to execute the command. 
+The Hotkey Enable button enables you to press it in combination with another button to access functions such as saving states, loading states, and exiting back to EmulationStation. The following chart shows the default hotkey combinations. For example, if you chose Select as your Hotkey Enable button, that means you hold down Select while pressing the other button to execute the command. 
 
 **Note** Hotkeys are specific to the RetroArch/Libretro based emulators and may not work on other emulators.
 
