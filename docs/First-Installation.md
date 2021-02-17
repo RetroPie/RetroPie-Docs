@@ -73,7 +73,7 @@ Hold down any button on your controller or keyboard. While holding, its name wil
 
 Follow the onscreen instructions to configure your gamepad. If your controller doesn't have a button that you're being asked to define, just hold down any button to skip it.
 
-The [Hotkey](First-Installation#Hotkeys) button is explained in detail below and can be changed later, but for now it is suggested to be defined as the **Select** button.
+The [Hotkey](First-Installation#Hotkeys) button is explained in detail below, but for now it is suggested to be defined as the **Select** button.
 
 **When you get to "OK" at the end, press the button you have configured as "A" (East) to complete this step**.
 
@@ -135,8 +135,8 @@ After you've transferred your ROMs, you need to restart EmulationStation in orde
 * [Configure Wifi](Wifi) to allow for easy [Updating](Updating-RetroPie), downloading themes, and SSH
 * [Enable SSH](SSH) to connect to your Raspberry Pi remotely and make it easy for [Transferring ROMs](Transferring-Roms)
 * Configure more controllers. This can be done after plugging in the new controller and pressing *Start* on your controller and selecting *Configure Input*
-* Install additional emulators/cores. From the RetroPie main menu, select *RetroPie Setup > Manage Packages > Manage Optional Packages*. Stable additional packages are available here with more unstable packages listed in the *Manage experimental packages* section. The packages are ordered first by type (emulators / Libretro cores / ports), then alphabetically. By selecting a package you can choose to install it or remove it. Some packages also have additional configurations.
-* [Cheat codes](Cheats)! (Libretro emulators only)
+* [Install additional emulators/cores](https://retropie.org.uk/docs/Updating-RetroPie/#updatinginstalling-individual-packages)
+* [Cheat codes](Cheats)!
 
 See the rest of the [docs](https://retropie.org.uk/docs/) for more detailed information on individual emulators, advanced settings etc. If you still can't figure it out, the RetroPie community is very helpful on the [RetroPie forum](https://retropie.org.uk/forum/). 
 
