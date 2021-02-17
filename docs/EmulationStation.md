@@ -286,7 +286,7 @@ Inside the scripts folder, create a new directory for the kind of event you want
 |       `sleep`       |       station is without user input for more than `systemSleepTime`       |        see note (\*)        |
 |       `wake`        |               station returns from sleep (i.e. user input)                |                             |
 |       `screensaver-start`        |             after screensaver starts                         |                             |
-|       `wake`        |               after screensaver stops                                     |                             |
+|       `scrensaver-stop`        |               after screensaver stops                                     |                             |
 
 (\*) sleep/wake use no arguments. `systemSleepTime` is usually after `screenSaverTime` (both editable in the Screensaver Menu). A value of `0` disables sleep and the  screensaver respectively.
 
