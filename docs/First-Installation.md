@@ -73,8 +73,6 @@ Hold down any button on your controller or keyboard. While holding, its name wil
 
 Follow the onscreen instructions to configure your gamepad. If your controller doesn't have a button that you're being asked to define, just hold down any button to skip it.
 
-The [Hotkey](First-Installation#Hotkeys) button is recommended to be defined as the controller's *Home* button, which is usually centered on the controller ("X" on Xbox controllers, "P" on Playstation controllers, "Logitech" button, etc.). If a Home button isn't available, the *Select* button is a good alternative. Hotkeys are explained in more detail below.
-
 See the following diagrams for reference:
 
 | SNES Controller | 
@@ -89,13 +87,13 @@ See the following diagrams for reference:
 |:---:|
 |![ps3_controller](https://cloud.githubusercontent.com/assets/10035308/22185413/f10f27de-e099-11e6-97a4-ecbbc82c9e46.png)|
 
-**When you get to "OK" at the end, press the button you have configured as "A" (East) to complete this step**.
-
 More info at [RetroArch Controller Configuration](RetroArch-Configuration)
 
 ### Hotkey
 
-The Hotkey Enable button enables you to press it in combination with another button to access functions such as saving states, loading states, and exiting back to EmulationStation. The following chart shows the default hotkey combinations. For example, if you chose Select as your Hotkey Enable button, that means you hold down Select while pressing the other button to execute the command. 
+The Hotkey Enable button enables you to press it in combination with another button to access functions such as saving states, loading states, opening the RetroArch GUI (RGUI), and exiting back to EmulationStation. It is recommended to define an unused button or key as your Hotkey Enable button. For example, the *Home* button on some controllers such as the center "X" on Xbox controllers. If your controller doesn't have a Home button, the *Select* button is a good alternative.
+
+The following chart shows the default hotkey combinations.
 
 **Note** Hotkeys are specific to the RetroArch/Libretro based emulators and may not work on other emulators.
 
@@ -111,6 +109,8 @@ The Hotkey Enable button enables you to press it in combination with another but
 
 For more information, see [Hotkeys](RetroArch-Configuration#hotkeys)
 
+**When you get to "OK" at the end, press the button you have configured as "A" (East) to complete this step**.
+
 ## EmulationStation
 
 | **Where are the systems?**|
@@ -120,7 +120,7 @@ For more information, see [Hotkeys](RetroArch-Configuration#hotkeys)
 
 ## Transferring ROMs
 
-You will not see any game systems (NES, n64, Playstation, etc) on the main menu until you add ROMs! Visit the [Transferring ROMs](Transferring-Roms) page to learn how to transfer ROMs to RetroPie.
+You will not see any game systems (NES, n64, Playstation, etc) on the system list until you add ROMs! Visit the [Transferring ROMs](Transferring-Roms) page to learn how to transfer ROMs to RetroPie.
 
 ## Audio
 
@@ -128,7 +128,7 @@ In general RetroPie audio will work out-of-the-box without any tweaking if using
 
 ## PLAY!
 
-After you've transferred your ROMs, you need to restart EmulationStation in order for them to show up. You can restart EmulationStation by pressing Start > Quit > Restart EmulationStation, or with SSH access by rebooting your pi with `sudo reboot`. Once rebooted, you should see the game systems appear on the main menu alongside the original "RetroPie" menu.
+After you've transferred your ROMs, you need to restart EmulationStation in order for them to show up. You can restart EmulationStation by pressing Start > Quit > Restart EmulationStation, or with SSH access by rebooting your pi with `sudo reboot`. Once rebooted, you should see the game systems appear on the system list.
 
 ## Additional Setup Options
 
