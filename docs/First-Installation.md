@@ -73,7 +73,7 @@ Hold down any button on your controller or keyboard. While holding, its name wil
 
 Follow the onscreen instructions to configure your gamepad. If your controller doesn't have a button that you're being asked to define, just hold down any button to skip it.
 
-The [Hotkey](First-Installation#Hotkeys) button is explained in detail below, but for now it is suggested to be defined as the **Select** button.
+The [Hotkey](First-Installation#Hotkeys) button is recommended to be defined as the controller's *Home* button, which is usually centered on the controller ("X" on Xbox controllers, "P" on Playstation controllers, "Logitech" button, etc.). If a Home button isn't available, the *Select* button is a good alternative. Hotkeys are explained in more detail below.
 
 See the following diagrams for reference:
 
