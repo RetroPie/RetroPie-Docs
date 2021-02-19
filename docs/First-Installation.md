@@ -91,7 +91,7 @@ More info at [RetroArch Controller Configuration](RetroArch-Configuration)
 
 ### Hotkey
 
-The Hotkey Enable button enables you to press it in combination with another button to access functions such as saving states, loading states, opening the RetroArch GUI (RGUI), and exiting back to EmulationStation. It is recommended to define an unused button or key as your Hotkey Enable button. For example, the *Home* button on some controllers such as the center "X" on Xbox controllers. If your controller doesn't have a Home button, the *Select* button is a good alternative.
+The Hotkey Enable button enables you to press it in combination with another button to access functions such as saving states, loading states, opening the RetroArch GUI (RGUI), and exiting back to EmulationStation. It is recommended to define an unused button or key as your Hotkey Enable button. For example, the *Home* button on some controllers such as the center "X" on Xbox controllers. If your controller doesn't have an unused button, the *Select* button is a good alternative.
 
 The following chart shows the default hotkey combinations.
 
