@@ -23,7 +23,7 @@ The simplest way to get most of these components is through an all-in-one kit su
 
 * Computer (or laptop)
 * [Raspberry Pi](https://retropie.org.uk/about/building/)
-* [MicroSD card](https://user-images.githubusercontent.com/540857/107868231-830c6a00-6e50-11eb-85d1-9a6ada5f28b4.jpg) ([list of compatible SD cards](http://elinux.org/RPi_SD_cards))
+* [MicroSD card](https://user-images.githubusercontent.com/540857/108582784-5f8b6880-7303-11eb-9652-26a0680f9cae.jpg) (see [compatible SD cards](http://elinux.org/RPi_SD_cards))
 * MicroSD card reader - a way to plug the MicroSD card into your computer or laptop
   * Some laptops have this functionality in the form of an SD card slot ([example #1](https://user-images.githubusercontent.com/540857/107868575-6f163780-6e53-11eb-9943-faec57cbf48e.png), [example #2](https://user-images.githubusercontent.com/540857/107868592-94a34100-6e53-11eb-91ed-e645be9827aa.jpg)).
   * A [USB MicroSD card reader](https://user-images.githubusercontent.com/540857/107463579-68728200-6b2c-11eb-9612-05c4d1931882.jpg) can be plugged into any USB port
@@ -132,13 +132,13 @@ After you've transferred your ROMs, you need to restart EmulationStation in orde
 
 ## Additional Setup Options
 
-* [Configure Wifi](Wifi) to allow for easy [Updating](Updating-RetroPie), downloading themes, and SSH
-* [Enable SSH](SSH) to connect to your Raspberry Pi remotely and make it easy for [Transferring ROMs](Transferring-Roms)
+* [Configure Wifi](Wifi)
+* [Enable SSH](SSH)
 * Configure more controllers. This can be done after plugging in the new controller and pressing *Start* on your controller and selecting *Configure Input*
 * [Install additional emulators/cores](https://retropie.org.uk/docs/Updating-RetroPie/#updatinginstalling-individual-packages)
 * [Cheat codes](Cheats)!
 
-See the rest of the [docs](https://retropie.org.uk/docs/) for more detailed information on individual emulators, advanced settings etc. If you still can't figure it out, the RetroPie community is very helpful on the [RetroPie forum](https://retropie.org.uk/forum/). 
+See the rest of the [RetroPie documentation](https://retropie.org.uk/docs/) for more detailed information on individual emulators, advanced settings, etc. If you're having trouble, you may find answers in the [FAQ](FAQ). Also, the RetroPie community is very helpful on the [RetroPie forum](https://retropie.org.uk/forum/). 
 
 **The RetroPie Project is primarily maintained by a few developers who develop the project in their free time. If you have found the RetroPie project useful please consider donating to the project [here](https://retropie.org.uk/donate/). As you become more familiar with RetroPie, pay it forward by helping others on the forum. The RetroPie Project is what it is today because of the many contributions of the community.**
 
