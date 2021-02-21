@@ -63,7 +63,7 @@ The simplest way to get most of these components is through an all-in-one kit su
 
 ## Configure Controllers
 
-On first boot you will be welcomed with the screen below. This menu will configure your controls for both EmulationStation and all RetroArch emulators:
+On first boot you will be welcomed with the screen below. This menu will configure your controls for EmulationStation, all RetroArch emulators, and select standalone emulators:
 
 ![welcomescreen](https://cloud.githubusercontent.com/assets/10035308/9140482/cf42f25c-3cee-11e5-8f91-c1fc1c57175c.png)
 
@@ -91,7 +91,7 @@ More info at [RetroArch Controller Configuration](RetroArch-Configuration)
 
 ### Hotkey
 
-The Hotkey Enable button enables you to press it in combination with another button to access functions such as saving states, loading states, opening the RetroArch GUI (RGUI), and exiting back to EmulationStation. It is recommended to define an unused button or key as your Hotkey Enable button. For example, the *Home* button on some controllers such as the center "X" on Xbox controllers. If your controller doesn't have an unused button, the *Select* button is a good alternative.
+The Hotkey Enable button enables you to press it in combination with another button to access functions such as saving states, loading states, opening the RetroArch GUI (RGUI), and exiting back to EmulationStation. It is recommended to define an unused button or key as your Hotkey Enable button. For example, the **Home** button on some controllers such as the center "X" on Xbox controllers. If your controller doesn't have an unused button, the **Select** button is a good alternative.
 
 The following chart shows the default hotkey combinations.
 
@@ -135,7 +135,7 @@ After you've transferred your ROMs, you need to restart EmulationStation in orde
 * [Configure Wifi](Wifi)
 * [Enable SSH](SSH)
 * Configure more controllers. This can be done after plugging in the new controller and pressing *Start* on your controller and selecting *Configure Input*
-* [Install additional emulators/cores](https://retropie.org.uk/docs/Updating-RetroPie/#updatinginstalling-individual-packages)
+* In RetroPie, not everything is installed by default. The pre-made images contain the best-working emulators for each system supported by the hardware. This should cover typical use, but if you want to install additional emulators or ports, the [Updating RetroPie](https://retropie.org.uk/docs/Updating-RetroPie/#updatinginstalling-individual-packages) page has this information. 
 * [Cheat codes](Cheats)!
 
 See the rest of the [RetroPie documentation](https://retropie.org.uk/docs/) for more detailed information on individual emulators, advanced settings, etc. If you're having trouble, you may find answers in the [FAQ](FAQ). Also, the RetroPie community is very helpful on the [RetroPie forum](https://retropie.org.uk/forum/). 
