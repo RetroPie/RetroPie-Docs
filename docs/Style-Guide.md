@@ -42,6 +42,10 @@ If it is a link to another documentation page, it should be the name of the page
 [Installation](Installation)
 ```
 
+You can link to a specific section of a document page by adding an anchor (`#`) to that particular section:
+```
+[NeoGeo BIOS talk](Neogeo#BIOS_Talk)
+```
 
 ### Code Blocks
 
@@ -63,26 +67,45 @@ will render as:
 
 ` ``` ` 
 
-
-will render as 
+will render as:
 ```
 code block
 ```
 
 
 
-### Bullets
+### Nesting lists
 
-If you are doing sub-nests on bullet pointsm you need 4 spaces on the sub bullet, not two. More details [here](https://pythonhosted.org/Markdown/#differences)
+If you are doing sub-nests on un-ordered lists, use 2 spaces to indent each list level.
 
 ```
-- Bullet one
-    - Bullet sub
+- 1st list level
+  - 2nd level
+    -  a 3rd level
+  - 2nd level again
 ```
+
 It should render like this:
 
-- Bullet one
-    - Bullet sub
+- 1st list level
+  - 2nd level
+    -  a 3rd level
+  - 2nd level again
+
+A line break in a list should be created by using 4 spaces:
+```
+- a list item
+    continued here on the 2nd paragraph
+- 2nd list item
+
+```
+
+Will render as:
+
+- a list item   
+    continued here on the 2nd paragraph
+- 2nd list item
+
 
 ### Numbering
 
@@ -102,11 +125,11 @@ Step 1.
 Step 2.
 Step 3.
 ```
-etc. or you can just use bullet points if the numbers really aren't that important.
+etc. or you can just use un-ordered lists if numbers really aren't that important.
 
 ### Symbols/Emojis
 
-Emojis are not supported with python markdown and should be avoided. Rather important text should be bolded or italicised.
+Emojis are not supported with Python markdown and should be avoided. Rather important text should be bolded or italicised.
 
 The following in Github:
 ```
@@ -119,6 +142,7 @@ but in the generated docs it will show
 :exclamation:
 ```
 
+### Comments
 
 This is a comment:
 ```
