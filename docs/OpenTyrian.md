@@ -1,14 +1,14 @@
 
 ***
-![](https://bitbucket.org/opentyrian/opentyrian/wiki/opentyrian_torm.png)
+![](https://raw.githubusercontent.com/wiki/opentyrian/opentyrian/opentyrian_torm.png)
 
 ***
 _OpenTyrian is a port of the DOS shoot-em-up Tyrian. Jason Emery generously gave the OpenTyrian developers a copy of the Tyrian 2.1 source code, which has since been ported from Turbo Pascal to C. The port uses SDL, making it easily cross-platform._
 
 ***
-## Emulator: [OpenTyrian](https://bitbucket.org/opentyrian/opentyrian/wiki/Home)
+## Emulator: [OpenTyrian](https://github.com/opentyrian/opentyrian/wiki)
 
-This emulator can be installed from the [retropie setup script](Updating-RetroPie)
+This emulator can be installed from the [Retropie Setup script](Updating-RetroPie#manage-packages)
 
 ## Controls:
 
