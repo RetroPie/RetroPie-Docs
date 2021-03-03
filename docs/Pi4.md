@@ -41,7 +41,8 @@ More details about video configuration options - [Video Options in the official 
 2. Disable 4k video modes completely.  
     Edit the boot configuration file `config.txt` file on the sdcard and add a line with: 
 
-         hdmi_max_pixel_freq=200000000
+         hdmi_max_pixel_freq:0=200000000
+         hdmi_max_pixel_freq:1=200000000
 
      The Pi will now ignore any 4k video modes and display using best matching video mode available (most likely 1080p).
 
