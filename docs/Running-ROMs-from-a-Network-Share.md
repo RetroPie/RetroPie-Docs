@@ -84,37 +84,7 @@ you enter
 sudo mount -t cifs //hostname/retropie -o username=USERNAME,password=PASSWORD,sec=ntlm,file_mode=0777,dir_mode=0777 /home/pi/RetroPie
 ```
 
-## Saving Games
 
-Go ahead and make sure everything works. Don't get to far into a game though, you might not be able to save. If you hit [Hotkey Combination](Controller-Configuration#Hotkey) **Hotkey + Right Shoulder** and it gives you an error, the easiest solution I've found is as follows.
-
-We need to edit retroarch.cfg by deleting the # infront of the savestate_directory and savefile_directory lines and put in the desired path. I'll be using ~/RetroPie-Save. First, make the target folder:
-```
-    cd
-    mkdir RetroPie-Save
-    sudo nano /opt/retropie/configs/all/retroarch.cfg 
-```
-Mine looks like this:
-```
-    savestate_directory = /home/pi/RetroPie-Save
-    savefile_directory = /home/pi/RetroPie-Save
-```
-If you already have some save files, it would be a good idea to move them to the ~/RetroPie-Save folder we created.
-
-## Scraping
-
-At this point, everything should be good to go. You can play and save games from your childhood. If you want to make things pretty, you'll need to scrape. You may also find that scraping just doesn't work. Thank you [@sselph](https://retropie.org.uk/forum/user/sselph) for this tip:
-
-> A simple solution if you just want things to work would be to run
-
-    sudo /opt/retropie/supplementary/scraper/scraper -scrape_all -thumb_only -workers 4
-
-> That will parse the config the same as EmulationStation does then it will check every listed folder and scrape it placing the gamelist.xml in the rom folder for that system and the images in a folder called images in each system's rom folder. If the system isn't supported you may see a bunch of errors about not finding hashes or it might just take a while to not do anything.
-
-> The other option that is a little slower is to cd to each directory and run the scraper
-
-    cd /home/pi/RetroPie/roms/nes
-    sudo /opt/retropie/supplementary/scraper/scraper -thumb_only -workers 4
 
 ## Troubleshooting
 
