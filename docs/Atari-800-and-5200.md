@@ -48,7 +48,7 @@ Once you have your ROMS and your BIOS files where they belong there is one more 
 ## Atari 5200 setup
 In both emulators, the atari.cfg file is shared between Atari computers and the 5200. In lr-atari800, the core options likewise apply to both by default. However, for either emulator, if you have a core options file in your atari5200 directory, it will let you have separate settings for just the 5200 system.
 
-Make sure you have a file called /opt/retropie/configs/atari5200/retroarch-core-options.cfg with this in it:
+Make sure you have a file called `/opt/retropie/configs/atari5200/retroarch-core-options.cfg` with this in it:
 
 ```shell
 atari800_artifacting = "enabled"
@@ -62,7 +62,15 @@ atari800_resolution = "336x240"
 atari800_sioaccel = "enabled"
 atari800_system = "5200"
 ```
-See "Advanced Config" for solutions to problems booting 5200 games.
+
+Edit `/opt/retropie/configs/atari5200/emulators.cfg` and replace `retroarch.cfg` with `retroarch-core-options.cfg`.
+
+Next, make sure the pi user (and not root) owns each of these files.
+```shell
+sudo chown pi:pi /opt/retropie/configs/atari5200/emulators.cfg /opt/retropie/configs/atari5200/retroarch-core-options.cfg`
+```
+
+You should now be able to launch Atari 5200 ROMs directly from EmulationStation. See "Advanced Config" for solutions to problems booting 5200 games.
 
 Please be sure to read through the docs below specific to each emulator version. 
 
