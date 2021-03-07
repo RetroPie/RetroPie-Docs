@@ -65,12 +65,12 @@ atari800_system = "5200"
 
 Edit `/opt/retropie/configs/atari5200/emulators.cfg` and replace `retroarch.cfg` with `retroarch-core-options.cfg`.
 
-Next, make sure the pi user (and not root) owns each of these files.
+Make sure the _pi_ user (and not root) owns each of these files.
 ```shell
-sudo chown pi:pi /opt/retropie/configs/atari5200/emulators.cfg /opt/retropie/configs/atari5200/retroarch-core-options.cfg`
+sudo chown pi:pi /opt/retropie/configs/atari5200/emulators.cfg /opt/retropie/configs/atari5200/retroarch-core-options.cfg
 ```
 
-You should now be able to launch Atari 5200 ROMs directly from EmulationStation. See "Advanced Config" for solutions to problems booting 5200 games.
+See "Advanced Config" for solutions to problems booting 5200 games.
 
 Please be sure to read through the docs below specific to each emulator version. 
 
