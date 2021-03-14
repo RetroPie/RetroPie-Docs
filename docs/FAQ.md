@@ -91,6 +91,8 @@ And then you can access it from the terminal by typing in
 
 After installation your pi will boot into the desktop environment, you can change the behaviour to boot into emulationstation by selecting the autostart option for emulationstation from the configuration/tools section of the setup script, or you can set the autologin to console option from the boot options of the raspi-config menu.
 
+In some cases you won't be able to hear sound after installing the PIXEL desktop environment. In that case it might help to select the sound output channel again in the PIXEL sound settings (for example HDMI).
+
 Note that failing to run startx after the installation may prevent other XWindow-based applications from starting (e.g. Micropolis port), so do launch the desktop after installation to ensure that it is fully set up.
 
 **Note that you cannot run PIXEL and Retropie at the same time. You will need to log out of PIXEL completely to start EmulationStation**
