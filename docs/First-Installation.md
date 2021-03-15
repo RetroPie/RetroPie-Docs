@@ -23,7 +23,7 @@ The simplest way to get most of these components is through an all-in-one kit su
 
 * Computer (or laptop)
 * [Raspberry Pi](https://retropie.org.uk/about/building/)
-* [MicroSD card](https://user-images.githubusercontent.com/540857/107868231-830c6a00-6e50-11eb-85d1-9a6ada5f28b4.jpg) ([list of compatible SD cards](http://elinux.org/RPi_SD_cards))
+* [MicroSD card](https://user-images.githubusercontent.com/540857/108582784-5f8b6880-7303-11eb-9652-26a0680f9cae.jpg) (see [compatible SD cards](http://elinux.org/RPi_SD_cards))
 * MicroSD card reader - a way to plug the MicroSD card into your computer or laptop
   * Some laptops have this functionality in the form of an SD card slot ([example #1](https://user-images.githubusercontent.com/540857/107868575-6f163780-6e53-11eb-9943-faec57cbf48e.png), [example #2](https://user-images.githubusercontent.com/540857/107868592-94a34100-6e53-11eb-91ed-e645be9827aa.jpg)).
   * A [USB MicroSD card reader](https://user-images.githubusercontent.com/540857/107463579-68728200-6b2c-11eb-9612-05c4d1931882.jpg) can be plugged into any USB port
@@ -58,24 +58,20 @@ The simplest way to get most of these components is through an all-in-one kit su
    * For macOS: [Raspberry Pi Imager](https://www.raspberrypi.org/software/), [Etcher](https://www.balena.io/etcher/), [Apple Pi Baker](https://www.tweaking4all.com/hardware/raspberry-pi/applepi-baker-v2/), or the `dd` command
    * For Linux: [Raspberry Pi Imager](https://www.raspberrypi.org/software/), [Etcher](https://www.balena.io/etcher/), or the `dd` command
     * MacOS/Linux users can optionally extract the .img image from the downloaded .img.gz by using `gunzip` (macOS users can also simply double-click it)
-4.  Once the program's image/OS and SD card have been chosen, *write* it to the SD card and wait until the operation completes
-5.  Remove the MicroSD card from your computer, slide it back into the slot on your Raspberry Pi, and turn it on
+4. Once the program's image/OS and SD card have been chosen, *write* it to the SD card and wait until the operation completes
+5. Remove the MicroSD card from your computer, slide it back into the slot on your Raspberry Pi, and turn it on
 
 ## Configure Controllers
 
-On first boot your filesystem will be expanded automatically, you will then be welcomed with the following screen- this menu will configure your controls for both EmulationStation and RetroArch Emulators:
+On first boot you will be welcomed with the screen below. This menu will configure your controls for EmulationStation, all RetroArch emulators, and select standalone emulators:
 
 ![welcomescreen](https://cloud.githubusercontent.com/assets/10035308/9140482/cf42f25c-3cee-11e5-8f91-c1fc1c57175c.png)
 
-Hold down any button on your keyboard or gamepad and the name will appear at the bottom and then open up into a configuration menu:
-
-![welcomescreengamepadname](https://cloud.githubusercontent.com/assets/10035308/9140505/f5c19e38-3cee-11e5-965e-0e4e85ddaf56.png)
-
-Follow the onscreen instructions to configure your gamepad- if you run out of buttons just hold down a button to skip each unused button. **When you get to OK press the button you have configured as "A"**.
+Hold down any button on your controller or keyboard. While holding, its name will appear at the bottom of the window for a few seconds and then open up into a configuration menu:
 
 ![welcomescreengamepadconfigure](https://cloud.githubusercontent.com/assets/10035308/9140518/0263b9c8-3cef-11e5-922f-42f790f3be91.png)
 
-If you wish to configure more than one controller, you can do so from the start menu of EmulationStation. For more details on manual controller configurations see this page [Here](RetroArch-Configuration).
+Follow the onscreen instructions to configure your gamepad. If your controller doesn't have a button that you're being asked to define, just hold down any button to skip it.
 
 See the following diagrams for reference:
 
@@ -91,11 +87,15 @@ See the following diagrams for reference:
 |:---:|
 |![ps3_controller](https://cloud.githubusercontent.com/assets/10035308/22185413/f10f27de-e099-11e6-97a4-ecbbc82c9e46.png)|
 
+More info at [RetroArch Controller Configuration](RetroArch-Configuration)
+
 ### Hotkey
 
-The Hotkey button enables you to press it in combination with another button to access functions such as saving, loading, and exiting in emulators. It is suggested to use the **Select** button as the hotkey. The following chart shows the default hotkey combinations. For example, if you chose Select as your Hotkey, that means you hold down Select while pressing the other button to execute the command. 
+The Hotkey Enable button enables you to press it in combination with another button to access functions such as saving states, loading states, opening the RetroArch GUI (RGUI), and exiting back to EmulationStation. It is recommended to define an unused button or key as your Hotkey Enable button. For example, the **Home** button on some controllers such as the center "X" on Xbox controllers. If your controller doesn't have an unused button, the **Select** button is a good alternative.
 
-**Note** Hotkey combinations are specific to the retroarch/libretro based emulators.
+The following chart shows the default hotkey combinations.
+
+**Note** Hotkeys are specific to the RetroArch/Libretro based emulators and may not work on other emulators.
 
 |Hotkey Combination | Action|
 | :---: | :---: |
@@ -109,53 +109,36 @@ The Hotkey button enables you to press it in combination with another button to 
 
 For more information, see [Hotkeys](RetroArch-Configuration#hotkeys)
 
+**When you get to "OK" at the end, press the button you have configured as "A" (East) to complete this step**.
+
 ## EmulationStation
 
 | **Where are the systems?**|
 | :---: | 
-**When you first see EmulationStation you may wonder why you don't see systems like the SNES or Game Boy- worry not- they are installed on the system, roms just need to be added to their respective rom folders before they will become visible. Transferring roms are described in the following steps.**|
+**When you first see EmulationStation you may wonder why you don't see systems like the SNES or Game Boy. Worry not - the emulators are installed on the system, but ROMs will need to be added to their respective rom folders before they will become visible**|
 |![firstboot](https://cloud.githubusercontent.com/assets/10035308/16217874/c6bbdb3a-3734-11e6-998f-8cc714a320ce.png)|
-
-## Wifi
-
-If you wish to use wifi to transfer roms over the network rather than a USB stick or Ethernet cable you'll need to setup your wifi- which can also be done from the RetroPie menu in EmulationStation:
-
-| Connect to Wifi Network: |
-|:---:|
-|![wifi1](https://cloud.githubusercontent.com/assets/10035308/16217941/92b08b8c-3735-11e6-8f20-5d1550af0882.png)|
-
-| Choose your SSID from a list: |
-|:---:|
-|![wifi2](https://cloud.githubusercontent.com/assets/10035308/16217942/92c5a8a0-3735-11e6-86ed-721c1bb81990.png)|
-
-| Type your Wifi Password (may take a moment to connect) |
-|:---:|
-|![wifi3](https://cloud.githubusercontent.com/assets/10035308/16217943/92c64c24-3735-11e6-8f62-893f111c5bd2.png)|
-
-|Once configured you will see your IP address|
-|:---:|
-|![wifi4](https://cloud.githubusercontent.com/assets/10035308/16217944/92cb07fa-3735-11e6-9239-66fba394c669.png)|
-
-For more WiFi configuration options see this [page](Wifi)
-
-## Installing additional Emulators
-On RetroPie 4.0+, not everything is installed by default. The pre-made images contain the best working emulators for each system supported by the hardware. This should cover everything most users would be doing. Ports like quake and doom and some other emulators like ScummVM can be installed later.
-
-Software can be installed from the RetroPie-Setup script - which is accessible from the RetroPie menu on EmulationStation. Once there you can navigate to "Manage Packages" where you will see various sections. In each section are lists of packages that can be installed (and it will show what is currently installed). Stable additional packages are under the "Optional" section, with more unstable packages listed under experimental. The packages are ordered first by type (emulators / libretro cores / ports), then alphabetically. By selecting a package you can choose to install it, or remove it. Some packages also have additional configurations.
 
 ## Transferring ROMs
 
-You will not see any game systems (NES, n64, Playstation, etc) on the main menu until you add ROMs! Visit the [Transferring ROMs](Transferring-Roms) page to learn how to transfer ROMs to RetroPie.
+You will not see any game systems (NES, n64, Playstation, etc) on the system list until you add ROMs! Visit the [Transferring ROMs](Transferring-Roms) page to learn how to transfer ROMs to RetroPie.
 
-## AUDIO
+## Audio
 
-In general RetroPie audio will work out of the box without any tweaking, but if you have audio issues you should follow the instructions on the [Sound Issues Page](Sound-Issues) to fix them. You will most likely need to visit the [Sound Issues Page](Sound-Issues) if you are using a USB Audio device, or if you are using an aftermarket RPi HAT add-on audio device (such as a Justboom sound card).
+In general RetroPie audio will work out-of-the-box without any tweaking if using HDMI, but if you have audio issues you should follow the instructions on the [Sound Issues Page](Sound-Issues) to fix them. You will most likely need to visit this page if you are using a USB audio device, or if you are using an aftermarket RPi HAT add-on audio device (such as a Justboom sound card).
 
 ## PLAY!
 
-After you've added your roms you need to restart EmulationStation in order for them to show up. You can restart EmulationStation from the start menu, or by rebooting your pi with `sudo reboot`. 
+After you've transferred your ROMs, you need to restart EmulationStation in order for them to show up. You can restart EmulationStation by pressing Start > Quit > Restart EmulationStation, or with SSH access by rebooting your pi with `sudo reboot`. Once rebooted, you should see the game systems appear on the system list.
 
-See the rest of the [docs](https://retropie.org.uk/docs/) for more detailed information on individual emulators, advanced settings etc. If you still can't figure it out, the RetroPie community is very helpful on the [forum](https://retropie.org.uk/forum/). 
+## Additional Setup Options
+
+* [Configure Wifi](Wifi)
+* [Enable SSH](SSH)
+* Configure more controllers. This can be done after plugging in the new controller and pressing *Start* on your controller and selecting *Configure Input*
+* In RetroPie, not everything is installed by default. The pre-made images contain the best-working emulators for the more common systems supported by the hardware. This should cover typical use, but if you want to install additional emulators or ports, the [Updating RetroPie](https://retropie.org.uk/docs/Updating-RetroPie/#updatinginstalling-individual-packages) page has this information. 
+* [Cheat codes](Cheats)!
+
+See the rest of the [RetroPie documentation](https://retropie.org.uk/docs/) for more detailed information on individual emulators, advanced settings, etc. If you're having trouble, you may find answers in the [FAQ](FAQ). Also, the RetroPie community is very helpful on the [RetroPie forum](https://retropie.org.uk/forum/). 
 
 **The RetroPie Project is primarily maintained by a few developers who develop the project in their free time. If you have found the RetroPie project useful please consider donating to the project [here](https://retropie.org.uk/donate/). As you become more familiar with RetroPie, pay it forward by helping others on the forum. The RetroPie Project is what it is today because of the many contributions of the community.**
 
