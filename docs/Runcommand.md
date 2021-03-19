@@ -17,11 +17,13 @@ Once you press any button on a controller or any key on a keyboard, it will open
 
 <img src="https://user-images.githubusercontent.com/31816814/85049707-c1586900-b19d-11ea-98a9-35752f39108d.png" width="80%" title="Runcommand launch menu">
 
-If you select the first option, you can swap which emulator is used, if there is more than one emulator available for the System:
+The first two options control which emulator is used for the current system or ROM, if there is more than one emulator available:
 
 <img src="https://user-images.githubusercontent.com/31816814/85049729-c7e6e080-b19d-11ea-88ec-74d32981239d.png" width="80%" title="Choosing an Emulator">
 
-There are also varying options to change video settings, RetroArch configs for that system, etc. 
+This preference is saved in `/opt/retropie/configs/all/emulators.cfg`
+
+The second two options select video modes for the current system or ROM. This preference is saved in `/opt/retropie/configs/all/videomodes.cfg`.
 
 ### Configuring Runcommand
 
@@ -36,9 +38,13 @@ You can enable and disable different functions of the Runcommand Launch Menu. Th
 - **Launch image delay in seconds:** Set how many seconds the [launching image](#adding-custom-launching-images) will be displayed before start the game.
 - **CPU Configuration:** Allows setting the CPU governor (default is ondemand on RetroPie on the Raspberry Pi). You can use this to set the CPU governor - ie to "performance", which will be set on launching a game, and reset after. More information regarding CPU governors can be found in the Linux Kernel documentation - https://www.kernel.org/doc/Documentation/cpu-freq/governors.txt
 
+These options are saved in `/opt/retropie/configs/all/runcommand.cfg`
+
 ### Launch with verbose logging
 
 When launching Libretro cores (those prefixed by **lr-**) the Runcommand launch menu presents the option to **Launch with verbose logging**. This outputs more information to the log file found in `/dev/shm/runcommand.log` which is useful, and often necessary, when diagnosing problems. Once the game is exited, the log file can be downloaded via [SFTP](Transferring-Roms#sftp) or viewed directly via the command line.
+
+**Note:** If launching a non-Libretro ("standalone") core, the option will not be available, but they typically will still write useful diagnostic information to `/dev/shm/runcommand.log`.
 
 ## Adding custom launching images
 
