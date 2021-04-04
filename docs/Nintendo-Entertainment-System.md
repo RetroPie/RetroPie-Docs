@@ -50,33 +50,22 @@ For more information on custom RetroArch controls see: [RetroArch Configuration]
 
 ![nesdiagram](https://cloud.githubusercontent.com/assets/10035308/8245062/4f0c5b8e-15e6-11e5-9255-b920543518d6.png)
 
-## Tweaks
+### Turbo Buttons for lr-fceumm
 
-### How to setup Turbo Buttons for lr-fceumm
+Change the **Core Option** for **Turbo Enable** to the player(s) you desire. You can also change the **Turbo Delay (in frames)** (default is **3**). See [Setting Core Options](RetroArch-Core-Options#setting-core-options).
 
-Open the RetroArch RGUI by pressing **Hotkey+X** on the controller, or **Hotkey+F1** on the keyboard then navigate to:
+## Overscan
 
-* Quick Menu
-   * Options
-    
-    Change `Turbo Enable` to either `Player 1`, `Player 2`, `Both` or `None` by pressing left or right
-    You can also change the `Turbo Delay (in frames)` (Default is `3`)
+Overscan is the part of the game field that is typically hidden behind the margins of consumer CRTs. However, you may want to enaable it for some games if anything seems cropped.
 
-### How to disable Crop Overscan in lr-fceumm
+### lr-fceumm
 
-Open the RetroArch RGUI:
+Change the **Core Option** for **Crop Overscan** to **disabled**. See [Setting Core Options](RetroArch-Core-Options#setting-core-options).
 
-* Quick Menu
-   * Options
-
-   Change `Crop Overscan` to `disabled` by pressing left or right
-
-Go back to the **Quick Menu** and then to **Resume**.
-
-### How to disable Crop Overscan in lr-quicknes
+### lr-quicknes
 
 Add this to your `/opt/retropie/configs/nes/retroarch.cfg` file. Make sure that this is placed **above** the `#include` line.
 
-```shell
+```
 video_crop_overscan = false
 ```
