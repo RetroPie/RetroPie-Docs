@@ -8,7 +8,7 @@ The Nintendo DS is a handheld video game console that was released by Nintendo i
 | :---: | :---: | :---: | :---: | :---: |
 | [DraStic](http://drastic-ds.com/) | nds | .nds .zip | nds_bios_arm7.bin (optional), nds_bios_arm9.bin (optional), nds_firmware.bin (optional) | /opt/retropie/configs/nds/drastic/config/drastic.cfg |
 | [lr-desmume](https://github.com/libretro/desmume) | nds | .nds .zip | bios7.bin (optional), bios9.bin (optional), firmware.bin (optional) | /opt/retropie/configs/nds/retroarch.cfg |
-| [lr-desmume-2015](https://github.com/libretro/desmume2016) | nds | .nds .bin .zip | bios7.bin (optional), bios9.bin (optional), firmware.bin (optional) | /opt/retropie/configs/nds/retroarch.cfg |
+| [lr-desmume-2015](https://github.com/libretro/desmume2015) | nds | .nds .bin .zip | bios7.bin (optional), bios9.bin (optional), firmware.bin (optional) | /opt/retropie/configs/nds/retroarch.cfg |
 
 ## Emulator: [DraStic](http://drastic-ds.com/)
 
