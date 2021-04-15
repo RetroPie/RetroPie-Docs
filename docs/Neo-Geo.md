@@ -12,17 +12,17 @@ This page is a resource for additional details on configuring a dedicated set of
 
 | Emulator | Rom Folder | Extension | Required ROM Version | Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
-| [lr-fbneo](https://github.com/libretro/fbneo) | neogeo  | .7z .zip | FB Neo v0.2.97.44-WIP | /opt/retropie/configs/neogeo/retroarch.cfg |
+| [lr-fbneo](https://github.com/libretro/fbneo) | neogeo  | .7z .zip | FB Neo v1.0.0.1 | /opt/retropie/configs/neogeo/retroarch.cfg |
 | [lr-fbalpha2012](https://github.com/libretro/fbalpha2012) | neogeo  | .7z .zip | FB Alpha v0.2.97.30 | /opt/retropie/configs/neogeo/retroarch.cfg |
 | [PiFBA](https://github.com/RetroPie/pifba) | neogeo  | .zip | FB Alpha 0.2.96.71 | /opt/retropie/emulators/pifba/fba2x.cfg |
 | [GnGeo-Pi](https://github.com/ymartel06/GnGeo-Pi) | neogeo | .zip | MAME 0.138 | /opt/retropie/configs/neogeo/gngeorc |
 
 ## Emulators: [lr-fbneo](lr-fbneo), [lr-fbalpha2012](FinalBurn-Neo#lr-fbalpha2012), [PiFBA](FinalBurn-Neo#pifba), [GnGeo-Pi](Neo-Geo#gngeo-pi)
-Refer to the main [FinalBurn Neo](FinalBurn-Neo) page for general information on all FinalBurn emulators or the direct links above for in-depth infomation on lr-fbneo, lr-fbalpha2012, or PiFBA. In-depth information on GnGeo-Pi can be found below, which is also linked directly above.
+Refer to the main [FinalBurn Neo](FinalBurn-Neo) page for general information on all FinalBurn emulators or the direct links above for in-depth infomation on `lr-fbneo`, `lr-fbalpha2012`, or `PiFBA`. In-depth information on `GnGeo-Pi` can be found below.
 
-*lr-fbneo* is the prefered Pi 3/Pi 2 Neo Geo emulator due to its accuracy. 
+*lr-fbneo* is the prefered Pi 2 (and later) Neo Geo emulator due to its accuracy. 
 
-*lr-fbalpha2012* is useful for any games that may be running slow in the latest version of lr-fbneo for a Pi 3/Pi 2, and if used exclusively instead of lr-fbneo will allow you to do full system updates without worrying about needing to update your ROM Set, but comes at the cost of inaccuracy such as games having audio issues across the entire library and other issues that have been fixed in the latest version of lr-fbalpha.
+*lr-fbalpha2012* is useful for any games that may be running slow in the latest version of lr-fbneo for a Pi 3/Pi 2, and if used exclusively instead of `lr-fbneo` will allow you to do full system updates without worrying about needing to update your ROM Set, but comes at the cost of inaccuracy such as games having audio issues across the entire library and other issues that have been fixed in the latest version of `lr-fbneo`.
 
 *PiFBA* is recommended for those on a Pi 0 or Pi 1.
 
@@ -35,11 +35,16 @@ Place Neo Geo ROMs in:
 ```
 ## BIOS
 
-Neo Geo ROMs require a `neogeo.zip` BIOS file with the exact same MAME or FB Neo version as the emulator you select. Place the correct `neogeo.zip` with your ROMs in:
+Neo Geo ROMs require a `neogeo.zip` BIOS file with the exact same MAME or FB Neo version as the emulator you select. If you're using `lr-fbneo` or `lr-fbneo-2012`, you can copy the BIOS file in:
+```
+/home/pi/RetroPie/BIOS/fbneo
+```
+For other emulators, you can copy the BIOS file in the same folder as the ROMS:
 ```
 /home/pi/RetroPie/roms/neogeo
 ```
-Instructions on how to install the Neo Geo Unibios on lr-neo can be found here: [lr-fbalpha Neo Geo Bios](lr-fbneo#neo-geo-unibios). The Unibios can be used as documented on the official page at <http://unibios.free.fr/howitworks.html>.
+
+Instructions on how to install the Neo Geo Unibios on lr-fbneo can be found here: [lr-fbneo Neo Geo Bios](lr-fbneo#neo-geo-unibios). The Unibios can be used as documented on the official page at <http://unibios.free.fr/howitworks.html>.
 
 * On the Unibios boot screen
   * Neo Geo **A+B+C** (RetroPad B+A+Y) for BIOS Menu
