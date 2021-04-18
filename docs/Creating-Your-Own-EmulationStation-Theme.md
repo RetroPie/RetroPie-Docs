@@ -456,7 +456,7 @@ Open `spare/gb/theme.xml`
 Expand `<view name="system"></view>` and insert the following line:
 ```
 <image name="logo">
-    <path>./logo.png</path>
+    <path>./system.svg</path>
 </image>
 ```
 So it looks like this:
