@@ -230,14 +230,17 @@ config_save_on_exit = false
 
 Core Input Remapping differs from the other two methods as it remaps how the core receives input rather than how the gamepad is coded, for example you can tell the snes core to switch button A and B on the controller for gameplay, but you can still use "A" to select in the RGUI and "B" to go back where as hard-coding would make B select and A back. Core Remapping is much more practical than hard-coded mapping but is limited to the cores that support it. 
 
-Quick way to do it:
-
 * Start a game of the system you want to remap the buttons
 * Invoke RGUI (**Hotkey+X** with player 1)
 * Go to **Quick Menu** and then **Controls**
 * Configure the buttons the way you want
 * Select **Save Core Remap File**
 * OR, if you want to save this remapping for the current game only, select **Save Game Remap File**
+
+Remaps are saved as `.rmp` files in directory:
+```
+/opt/retropie/configs/SYSTEMNAME/
+```
 
 ## Retroarch Controls Cheat-Sheet
 
