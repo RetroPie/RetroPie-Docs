@@ -80,6 +80,9 @@ This Retroarch feature calculates the frames as fast as possible in the backgrou
 ```
 run_ahead_enabled = "true"
 run_ahead_frames = "1"
+```
+It may be required to add the following workaround for some cores, to avoid certain save state limitations:
+```
 run_ahead_secondary_instance = "true"
 ```
 
