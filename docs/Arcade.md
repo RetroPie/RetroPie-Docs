@@ -36,7 +36,7 @@ There are a number of different rom set versions. Different versions contain dif
 | [mame4all](MAME) | MAME 0.37b5 | 2270 |
 | [lr-mame2003](MAME) | MAME 0.78 | 4720 |
 | [pifba](FinalBurn-Neo#pifba) | FB Alpha v0.2.96.71 | 684 |
-| [lr-fbneo](FinalBurn-Neo) | FB Neo v0.2.97.44-WIP | 4896 |
+| [lr-fbneo](FinalBurn-Neo) | FB Neo v1.0.0.XX | 4896 |
 
 To sum up, for best results:
 
