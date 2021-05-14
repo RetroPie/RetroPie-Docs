@@ -41,7 +41,7 @@ The script is executed with:
 
     sudo ./retropie_setup.sh
 
-The screen should look like/similar this at this point:
+The screen should then appear like this:
 
 ![retropie-setup script 4-0-2](https://cloud.githubusercontent.com/assets/8606384/18487839/c4e3da42-79c4-11e6-82a8-026afa67801b.png)
 
