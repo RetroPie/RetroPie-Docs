@@ -1,5 +1,5 @@
 ***
-![Dinothawr Logo](http://wiki.libretro.com/images/2/25/DinothawrTitleScreen.png)
+![Dinothawr Logo](https://raw.githubusercontent.com/Themaister/Dinothawr/master/dinothawr/assets/titlescreen.png)
 ***
 Dinothawr is a block pushing puzzle game on slippery surfaces. Our hero is a dinosaur whose friends are trapped in ice. Through puzzles it is your task to free the dinos from their ice prison.
 ***
