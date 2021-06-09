@@ -19,12 +19,14 @@
   color: var(--md-accent-fg-color);
 }
 
-article > a:hover {
+article a:hover {
   text-decoration: underline;
 }
 
+/* Force header height and color */
 .md-header {
     height: 50px;
+		background-color: #222;
 }
 
 .md-header-nav__button.md-logo {

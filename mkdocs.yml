@@ -10,7 +10,7 @@ repo_name: 'RetroPie-Setup'
 repo_url: 'https://github.com/RetroPie/RetroPie-Setup'
 
 # Copyright
-copyright: 'Copyright &copy; 2020 The RetroPie Project'
+copyright: 'Copyright &copy; 2021 The RetroPie Project'
 
 # Plugins
 plugins:
@@ -27,14 +27,27 @@ theme:
   language: 'en'
   logo: 'images/logo.png'
   favicon: 'images/logo.png'
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      accent: red
+      primary: red
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
 
 # Customisation
 extra:
   social:
-    - icon:  fontawesome/brands/github-alt
-      link: 'https://github.com/RetroPie'
-    - icon:  fontawesome/brands/twitter
-      link: 'https://twitter.com/retropieproject'
+    - icon: fontawesome/brands/github
+      link: https://github.com/RetroPie
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/retropieproject
 
 extra_css:
   - 'stylesheets/extra.css'
