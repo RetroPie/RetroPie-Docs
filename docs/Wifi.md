@@ -1,8 +1,8 @@
-# Configuring Wifi
+# Configuring WiFi
 
-If you have a Raspberry Pi 3, wifi is built into the pi, if you have a pi2 or earlier you'll need a wifi dongle, you can check to see if your wifi dongle is compatible [here](http://elinux.org/RPi_USB_Wi-Fi_Adapters). You may want to use a dongle with a pi3, in this case see [here](#using-an-external-dongle).
+If you have a Raspberry Pi 3, WiFi is built into the Pi, if you have a Pi2 or earlier model, then you'll need a wifi dongle. You can check to see if your wifi dongle is compatible [here](http://elinux.org/RPi_USB_Wi-Fi_Adapters). You may want to use an USB WiFi dongle, then see [here](#using-an-external-dongle).
 
-*NOTE:* In order to use the WiFi on the new Raspberry Pi 3 Model B+, you will need to first configure the **WLAN Country** via `raspi-config`. It’s under menu _5 Localisation options_ in `raspi-config`. You can start `raspi-config` from the `RetroPie` menu in EmulationStation or from the command line with `sudo raspi-config`.
+*NOTE:* In order to use the WiFi on the Raspberry Pi, you will need to first configure the **WLAN Country** via `raspi-config`. It’s under menu _5 Localisation options_ in `raspi-config`. You can start `raspi-config` from the `RetroPie` menu in EmulationStation or from the command line with `sudo raspi-config`.
 
 There are 5 main methods to configure Wifi:
 
@@ -34,7 +34,7 @@ After it's done configuring you should see your wifi info in the original menu:
 
 ![wifiinfo](https://cloud.githubusercontent.com/assets/10035308/9141742/226f50de-3cf8-11e5-8b6b-328f2110e655.png)
 
-## Connecting to Wifi Without a Keyboard
+## Connecting to WiFi Without a Keyboard
 
 If you wish to connect to wifi without needing an extra keyboard you can add a file to the boot partition of the sd card called `wifikeyfile.txt`
 
@@ -48,7 +48,7 @@ You can then access the wifi module and select the option to "Import wifi creden
 
 ![wifi_text](https://cloud.githubusercontent.com/assets/10035308/21238882/8fe42822-c2b9-11e6-9506-ddfc41fa2016.png)
 
-## Connecting to Wifi Without a Keyboard (Raspbian Stretch)
+## Connecting to WiFi Without a Keyboard (Raspbian Stretch)
 
 Starting with Raspbian Stretch, loading the wifikeyfile from the setup script is not necessary.
 
@@ -200,7 +200,7 @@ To scan for WiFi networks, use the command `sudo iwlist wlan0` scan. This will l
 
 1. `ESSID:"testing"`. This is the name of the WiFi network.
 
-2. `IE: IEEE 802.11i/WPA2 Version 1`. This is the authentication used; in this case it is WPA2, the newer and more secure wireless standard which replaces WPA1. This guide should work for WPA or WPA2, but may not work for WPA2 enterprise; for WEP hex keys see the last example [here](http://netbsd.gw.com/cgi-bin/man-cgi?wpa_supplicant.conf+5+NetBSD-current). 
+2. `IE: IEEE 802.11i/WPA2 Version 1`. This is the authentication used; in this case it is WPA2, the newer and more secure wireless standard which replaces WPA1. This guide should work for WPA or WPA2, but may not work for WPA2 enterprise; for WEP hex keys see the last example [here](https://www.freebsd.org/cgi/man.cgi?query=wpa_supplicant.conf&apropos=0&sektion=5&manpath=NetBSD+9.2&arch=default&format=html). 
 You will also need the password for the WiFi network. For most home routers this is located on a sticker on the back of the router. The ESSID (ssid) for the network in this case is `testing` and the password (psk) `testingPassword`.
 
 ### Adding Network Details to Raspberry Pi
