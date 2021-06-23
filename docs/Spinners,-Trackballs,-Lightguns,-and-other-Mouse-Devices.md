@@ -25,23 +25,23 @@ Another test can be performed at the command prompt. Type:`cat /dev/input/mice` 
 -----
 There should be a section of the log similar to this:
 ```
-[INFO] [udev]: Added Device Mouse G.SKILL Corporation G.SKILL RIPJAWS KM780 MX GAMING KEYBOARD (/dev/input/event9).
-[INFO] [udev] udev_input_add_device SKIPPED : /dev/input/mouse1 (Inappropriate ioctl for device).
-[INFO] [udev]: Added Device Mouse USB Laser Game Mouse (/dev/input/event14).
-[INFO] [udev] udev_input_add_device SKIPPED : /dev/input/mouse2 (Inappropriate ioctl for device).
-[INFO] [udev]: Added Device Mouse Valve Software Steam Controller (/dev/input/event18).
-[INFO] [udev] udev_input_add_device SKIPPED : /dev/input/mouse3 (Inappropriate ioctl for device).
-[INFO] [udev]: Added Device Mouse DELL0802:00 06CB:7E92 Mouse (/dev/input/event30).
-[INFO] [udev] udev_input_add_device SKIPPED : /dev/input/mouse4 (Inappropriate ioctl for device).
-[INFO] [udev]: Added Device Mouse DELL0802:00 06CB:7E92 Touchpad (/dev/input/event31).
-[INFO] [udev] udev_input_add_device SKIPPED : /dev/input/mouse5 (Inappropriate ioctl for device).
-[INFO] [udev]: Added Device Mouse SynPS/2 Synaptics TouchPad (/dev/input/event7).
-[INFO] [udev] udev_input_add_device SKIPPED : /dev/input/mouse0 (Inappropriate ioctl for device).
+[INFO] [udev]: Added Device Keyboard#0 G.SKILL Corporation G.SKILL RIPJAWS KM780 MX GAMING KEYBOARD (/dev/input/event8) .
+[INFO] [udev]: Added Device Keyboard#1 G.SKILL Corporation G.SKILL RIPJAWS KM780 MX GAMING KEYBOARD (/dev/input/event13) .
+[INFO] [udev]: Added Device Keyboard#2 USB Laser Game Mouse (/dev/input/event15) .
+[INFO] [udev]: Added Device Keyboard#3 Valve Software Steam Controller (/dev/input/event18) .
+[INFO] [udev]: Added Device Keyboard#4  (/dev/input/mouse3) .
+[INFO] [udev]: Added Device Keyboard#5 AT Translated Set 2 keyboard (/dev/input/event4) .
+[INFO] [udev]: Added Device mouse#0 G.SKILL Corporation G.SKILL RIPJAWS KM780 MX GAMING KEYBOARD (/dev/input/event9) .
+[INFO] [udev]: Added Device mouse#1 USB Laser Game Mouse (/dev/input/event14) .
+[INFO] [udev]: Added Device mouse#2 Valve Software Steam Controller (/dev/input/event18) .
+[INFO] [udev]: Added Device mouse#3 DELL0802:00 06CB:7E92 Mouse (/dev/input/event30) .
+[INFO] [udev]: Added Device mouse#4 DELL0802:00 06CB:7E92 Touchpad (/dev/input/event31) .
+[INFO] [udev]: Added Device mouse#5 SynPS/2 Synaptics TouchPad (/dev/input/event7) .
 ```
 -----
-**Interpretation**: Look for the `/dev/input/event*` indexes. **In this example, there are mouselike devices at `/dev/input/event9`, `/dev/input/event14`, `/dev/input/event18`, `/dev/input/event30`, `/dev/input/event31`, and `/dev/input/event7`.**
+**Interpretation**: Look for the `/dev/input/event*` indexes. **In this example, there are mouselike devices at indexes `0`, `1`, `2`, `3,` `4`, and `5`.
 
-**Beware**: The index of a specific device may change depending on what device you have attached to which port. For example, if you boot with an external mouse, it might be detected by `udev` as `event0` and your spinner as `event1`, but if you boot the same system without the external mouse attached, everything might ratchet down (spinner becomes `event0`).
+**Beware**: The index of a specific device may change depending on what device you have attached to which port. For example, if you boot with an external mouse, it might be detected by `udev` as `mouse#0` and your spinner as `mouse#1`, but if you boot the same system without the external mouse attached, everything might ratchet down (spinner becomes `mouse#0`).
 
 ### Setting mouse indexes via the RetroArch GUI
 
