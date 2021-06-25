@@ -39,7 +39,7 @@ There should be a section of the log similar to this:
 [INFO] [udev]: Added Device mouse#5 SynPS/2 Synaptics TouchPad (/dev/input/event7) .
 ```
 -----
-**Interpretation**: Look for the `/dev/input/event*` indexes. **In this example, there are mouselike devices at indexes `0`, `1`, `2`, `3,` `4`, and `5`.
+**Interpretation**: Look for the `/dev/input/event*` indexes. In this example, there are mouselike devices at indexes `0`, `1`, `2`, `3,` `4`, and `5`.
 
 **Beware**: The index of a specific device may change depending on what device you have attached to which port. For example, if you boot with an external mouse, it might be detected by `udev` as `mouse#0` and your spinner as `mouse#1`, but if you boot the same system without the external mouse attached, everything might ratchet down (spinner becomes `mouse#0`).
 
