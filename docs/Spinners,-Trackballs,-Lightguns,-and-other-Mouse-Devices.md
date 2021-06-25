@@ -24,15 +24,24 @@ Another test can be performed at the command prompt. Type:`cat /dev/input/mice` 
 * The resulting log is saved to `/dev/shm/runcommand.log`
 -----
 There should be a section of the log similar to this:
-
-    [INFO] [udev] Adding device /dev/input/event1 as type ID_INPUT_MOUSE.
-    [INFO] [udev] Adding device /dev/input/mouse0 as type ID_INPUT_MOUSE.
-    [INFO] [udev] Adding device /dev/input/event2 as type ID_INPUT_MOUSE.
-    [INFO] [udev] Adding device /dev/input/mouse1 as type ID_INPUT_MOUSE.
+```
+[INFO] [udev]: Added Device Keyboard#0 G.SKILL Corporation G.SKILL RIPJAWS KM780 MX GAMING KEYBOARD (/dev/input/event8) .
+[INFO] [udev]: Added Device Keyboard#1 G.SKILL Corporation G.SKILL RIPJAWS KM780 MX GAMING KEYBOARD (/dev/input/event13) .
+[INFO] [udev]: Added Device Keyboard#2 USB Laser Game Mouse (/dev/input/event15) .
+[INFO] [udev]: Added Device Keyboard#3 Valve Software Steam Controller (/dev/input/event18) .
+[INFO] [udev]: Added Device Keyboard#4  (/dev/input/mouse3) .
+[INFO] [udev]: Added Device Keyboard#5 AT Translated Set 2 keyboard (/dev/input/event4) .
+[INFO] [udev]: Added Device mouse#0 G.SKILL Corporation G.SKILL RIPJAWS KM780 MX GAMING KEYBOARD (/dev/input/event9) .
+[INFO] [udev]: Added Device mouse#1 USB Laser Game Mouse (/dev/input/event14) .
+[INFO] [udev]: Added Device mouse#2 Valve Software Steam Controller (/dev/input/event18) .
+[INFO] [udev]: Added Device mouse#3 DELL0802:00 06CB:7E92 Mouse (/dev/input/event30) .
+[INFO] [udev]: Added Device mouse#4 DELL0802:00 06CB:7E92 Touchpad (/dev/input/event31) .
+[INFO] [udev]: Added Device mouse#5 SynPS/2 Synaptics TouchPad (/dev/input/event7) .
+```
 -----
-**Interpretation**: Please disregard any devices listed for the legacy interfaces `/dev/input/mouse*` and `/dev/input/js*`. Look instead for the `/dev/input/event*` indexes. **In this example, there are two lightgun devices attached, along with a keyboard-style arcade control panel. To use both lightguns, the correct mouse indexes to use would be `0` and `2`.**
+**Interpretation**: Look for the `/dev/input/event*` indexes. In this example, there are mouselike devices at indexes `0`, `1`, `2`, `3,` `4`, and `5`.
 
-**Beware**: The index of a specific device may change depending on what device you have attached to which port. For example, if you boot with an external mouse, it might be detected by `udev` as `event0` and your spinner as `event1`, but if you boot the same system without the external mouse attached, everything might ratchet down (spinner becomes `event0`).
+**Beware**: The index of a specific device may change depending on what device you have attached to which port. For example, if you boot with an external mouse, it might be detected by `udev` as `mouse#0` and your spinner as `mouse#1`, but if you boot the same system without the external mouse attached, everything might ratchet down (spinner becomes `mouse#0`).
 
 ### Setting mouse indexes via the RetroArch GUI
 
