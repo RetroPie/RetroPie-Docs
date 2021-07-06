@@ -1,4 +1,4 @@
-To map a controller in jzintv, you need to create a Keyboard Hack File which is a text file that contains the mappings. This is a dirty fix meaning that you will have to manually create and edit text files on your pi. It would be useful that you are familiar with using SFTP and Samba shares for accessing files on your pi. Details can be found at the [wiki](First-Installation#sftp-needs-an-active-internet-connection).
+To map a controller in jzintv, you need to create a Keyboard Hack File which is a text file that contains the mappings. This is a dirty fix meaning that you will have to manually create and edit text files on your pi. It would be useful that you are familiar with using SFTP and Samba shares for accessing files on your pi. Details can be found [here](Transferring-Roms/#sftp).
 
 ## Find Joystick Events
 
@@ -20,21 +20,22 @@ Make a note of these bindings as they will be used in creating the keyboard hack
 
 To create a keyboard hack file, it is a case of taking each joystick event and mapping it to the appropriate INTV controller input. The latter is detailed in the [official documentation](http://spatula-city.org/~im14u2c/intv/jzintv/doc/jzintv/kbdhackfile.txt) and the relevant section is given below:
 
-<pre>
+
 Controller inputs start with one of the following four prefixes:
  
-PD0L_   Left controller, Master Component
-PD0R_   Right controller, Master Component
-PD1L_   Left controller, ECS
-PD1R_   Right controller, ECS
+* **PD0L_**   Left controller, Master Component
+* **PD0R_**   Right controller, Master Component
+* **PD1L_**   Left controller, ECS
+* **PD1R_**   Right controller, ECS
 
 Those four prefixes get combined with these suffixes:
  
-KPx     Keypad key.  x=0,1,2,3,4,5,6,7,8,9,C,E
-A_x     Action key.  x=T,L,R
-D_ddd   Disc input.  ddd=E,ENE,NE,NNE,N,NNW,NW,WNW,W,WSW,SW,SSW,S,SSE,SE,ESE
-J_ddd   Disc input from joystick.  ddd same as above.
-</pre>
+* **KPx**     Keypad key.  x=0,1,2,3,4,5,6,7,8,9,C,E
+* **A_x**     Action key.  x=T,L,R
+* **D_ddd**   Disc input.  ddd=E,ENE,NE,NNE,N,NNW,NW,WNW,W,WSW,SW,SSW,S,SSE,SE,ESE
+* **J_ddd**   Disc input from joystick.  ddd same as above.
+
+
 Below are example mappings.
 
 1. To map the Start button on a PS3 controller to the Enter key on the left Intellivision controller, it would be a case of mapping **JS0_BTN_03** to **PD0L_KPE**.
