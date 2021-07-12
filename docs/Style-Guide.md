@@ -47,6 +47,11 @@ You can link to a specific section of a document page by adding an anchor (`#`) 
 [NeoGeo BIOS talk](Neogeo#BIOS_Talk)
 ```
 
+Bare URLs can be formatted automatically as links by enclosing them with angle brackets (`<` , `>`):
+```
+<https://retropie.org.uk/forum>
+```
+
 ### Code Blocks
 
 Code blocks should be created with backticks: 1 set for inline code highlighting and 3 for code blocks
