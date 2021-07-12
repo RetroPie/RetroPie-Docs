@@ -1,11 +1,6 @@
 # runcommand
 
-The runcommand is the script responsible to launch your emulators/games. This wiki shows the runcommand's configurations and features.
-
-- [Runcommand Launch Menu](#runcommand-launch-menu)
-- [Adding custom launching images](#adding-custom-launching-images)
-- [runcommand-onstart and runcommand-onend scripts](#runcommand-onstart-and-runcommand-onend-scripts)
-- [runcommand-menu custom scripts](#runcommand-menu-custom-scripts)
+The runcommand is the script responsible to launch your emulators/games. This page shows the runcommand's configurations and features.
 
 ## Runcommand Launch Menu
 
@@ -68,14 +63,19 @@ The launching images can also be used in a per game basis. The image must be pla
 
 You can get some cool launching images in these forum topics:
 
-- https://retropie.org.uk/forum/topic/7193/runcommand-launching-images-for-any-theme
-- https://retropie.org.uk/forum/topic/4611/runcommand-system-splashscreens
-- https://retropie.org.uk/forum/topic/36/splashscreens/97
-- https://retropie.org.uk/forum/topic/13580/arcade-games-launching-images-collection
+- <https://retropie.org.uk/forum/topic/7193/runcommand-launching-images-for-any-theme>
+- <https://retropie.org.uk/forum/topic/4611/runcommand-system-splashscreens>
+- <https://retropie.org.uk/forum/topic/36/splashscreens/97>
+- <https://retropie.org.uk/forum/topic/13580/arcade-games-launching-images-collection>
 
-## runcommand-onstart and runcommand-onend scripts
+## <a name='runcommand-onstart-and-runcommand-onend-scripts'></a>Runcommand scripts
 
-Runcommand can execute an user script before the game launching (`runcommand-onstart.sh`) and after exiting the emulator (`runcommand-onend.sh`). Both scripts must be placed at `/opt/retropie/configs/all/`.
+Runcommand can execute an user script before the game launching (`runcommand-onstart.sh` and `runcommand-onlaunch.sh`) and after exiting the emulator (`runcommand-onend.sh`). Scripts must be placed at `/opt/retropie/configs/all/`.
+
+The startup scripts are run as follows:
+
+ - `runcommand-onstart.sh` is executed before any runcommand actions are performed and before the launch menu is displayed.
+ - `runcommand-onlaunch.sh` is executed after any runnncomand actions and right before the emulator/game is started.
 
 Useful data are passed as arguments to these scripts:
 
