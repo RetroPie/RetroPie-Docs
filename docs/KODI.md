@@ -1,4 +1,4 @@
-<img src="https://kodi.tv/sites/default/themes/kodi/logo-sbs.svg" alt="Kodi" width="240">
+<img src="https://kodi.tv/images/kodi-logo-with-text.svg" title="Kodi" alt="Kodi image" width="240">
 
 ***
 
