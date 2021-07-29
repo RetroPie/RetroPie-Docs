@@ -323,7 +323,18 @@ This allows:
 
 IPF support is done through the CAPSIMG library. To enable it, you have to put the dynamic library called `capsimg.so` (Linux) in RetroArch system directory (`/home/pi/RetroPie/BIOS`).
 
-Compatible CAPSIMG libraries for Windows, macOS and Linux can be found at http://www.softpres.org/download and https://fs-uae.net/download#plugins
+Compatible CAPSIMG libraries for Windows, macOS and Linux can be found at http://www.softpres.org/download and https://fs-uae.net/download#plugins.
+
+If you cannot find CAPSIMG library for your CPU architecture, you can always build `capsimg.so` from the source which is available at https://github.com/FrodeSolheim/capsimg.
+
+```bash
+git clone https://github.com/FrodeSolheim/capsimg
+cd capsimg
+./bootstrap
+./configure
+make
+cp capsimg.so ~/RetroPie/BIOS
+```
 
 ### Floppy drive sounds
 
