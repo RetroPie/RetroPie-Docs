@@ -331,7 +331,7 @@ If you cannot find CAPSIMG library for your CPU architecture, you can always bui
 git clone https://github.com/FrodeSolheim/capsimg
 cd capsimg
 ./bootstrap
-/.configure
+./configure
 make
 cp capsimg.so ~/RetroPie/BIOS
 ```
