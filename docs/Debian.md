@@ -1,6 +1,6 @@
 ## Retropie on Debian/Ubuntu/Mint
 
-A guide to build the RetroPie setup on Ubuntu (16.04 LTS or later) x86 and Debian based distros.
+A guide to build the RetroPie setup on Ubuntu (18.04 LTS or later) x86 and Debian based distros.
 
 - [Install Ubuntu](#installation)
 - [Download RetroPie](#download-retropie)
@@ -72,7 +72,6 @@ You can go into Setup / Configuration and enable autostart as you like.
 - [How to setup a splashscreen](#how-to-setup-a-splashscreen)
 - [My NUC or Intel Baytrail/Braswell powered device hangs](#my-nuc-or-intel-baytrailbraswell-powered-device-hangs)
 - [No audio](#no-audio)
-- [No HDMI audio](#no-hdmi-audio)
 - [No audio in Mupen64Plus](#no-audio-in-mupen64plus)
 - [XBOX 360 Controller mappings not working](#xbox-360-controller-mappings-not-working)
 - [SteamOS hack to allow installation](#steamos-hack-to-allow-installation)
@@ -114,14 +113,6 @@ http://sourcedigit.com/18333-how-to-install-linux-kernel-4-3-3-on-ubuntu-15-10-u
 ### No audio
 
 Open Ubuntu System Settings menu and select correct audio output device.  
-
-### No HDMI audio
-
-Ubuntu 16.04 uses PulseAudio 8 which has issues with HDMI if you suspend your device or change display resolutions at runtime. This problem will be solved with Ubuntu 16.10 and PulseAudio 9. You can disable PulseAudio auto output selection. Open `/etc/pulse/default.pa` and comment out the line:
-
-    #load-module module-switch-on-port-available
-
-https://bugs.freedesktop.org/show_bug.cgi?id=93946#c36
 
 ### No audio in Mupen64Plus
 
@@ -187,28 +178,3 @@ This will stop PulseAudio from running while Mupen64Plus is running, but turn it
 ### XBOX 360 Controller mappings not working
 
 The X86 version of Retropie install does not have the xboxdrv installed correctly.  Please launch Retropie-Setup Manage Packages - Drivers and install xboxdrv and remap your inputs. 
-
-### SteamOS hack to allow installation
-
-While SteamOS is not based on Ubuntu 16.04 it is based on Debian 8 which is supported.
-Currently you can install it and it will set everything up properly. EmulationStation has issues launching
-roms just like through a manual installation. However the samba share setup and all other parts of RetroPie
-appear to function normally.
-
-To start follow the same instructions of doing a git clone of the RetroPie repo. Then you have to edit
-
-      RetroPie-Setup/scriptmodules/system.sh
-
-In the get_os_version() function the work-around is to change:
-
-            error="Unsupported OS"
-            ;;
-    esac
-
-To
-
-            __os_debian_ver="8"
-            ;;
-    esac
-
-This will obviously override any platform checking done by the script and is very hacky, but it will let the retropie setup continue properly until actual support exists.
