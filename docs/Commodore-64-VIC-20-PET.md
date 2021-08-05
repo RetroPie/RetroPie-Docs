@@ -200,9 +200,12 @@ This allows:
 
 `lr-vice` supports a large number of Commodore systems, RetroPie includes:
 
+- C128
 - C64
-- VIC-20
-- Plus/4
+- C64DTV
+- almost all PET models
+- PLUS4
+- VIC20
 
 To select the emulated system, the [Runcommand Launch Menu](Runcommand) can be used before a ROM is started.
 
