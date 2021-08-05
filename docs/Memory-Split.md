@@ -19,14 +19,6 @@ You can choose a split from 16/32/64/128/256 (the settings may be different depe
 
 On the Raspberry Pi 4 the 3D component of the GPU has its own memory management unit (MMU), and does not use memory from the `gpu_mem` allocation. Instead memory is allocated dynamically within Linux. Increasing this amount can ***harm*** emulation performance.
 
-#### Kodi
-
-The FKMS driver still utilises the split for certain media tasks, e.g., hardware video decoding for 4K (HEVC) video. If you have issues with 4K videos in Kodi, try
-~~~~
-gpu_mem=320
-~~~~
-More information [here](https://raspberrypi.org/forums/viewtopic.php?f=66&t=251645).
-
 ### Raspberry Pi 0-3
 
 If you don't use the RetroPie provided image, and you install using the [manual installation method](Manual-Installation), you have to adjust the memory split settings manually before installation to reserve at enough video memory for running Emulationstation without problems. The default values used by the RetroPie image are:
