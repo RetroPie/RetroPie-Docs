@@ -21,7 +21,7 @@ On the Raspberry Pi 4 the 3D component of the GPU has its own memory management 
 
 #### Kodi
 
-Previously, the FKMS driver still utilised the split for certain media tasks, e.g., hardware video decoding for 4K (HEVC) video. If you have issues with 4K videos in Kodi, upgrade to the latest kernel/firmware, for example via RetroPie-Setup -> Configuration / Tools -> raspbiantools -> Upgrade Rasbina Packages
+Previously, the FKMS driver still utilised the memory split for certain media tasks, e.g., hardware video decoding for 4K (HEVC) video. If you have issues with 4K videos in Kodi, upgrade to the latest kernel/firmware, for example via _RetroPie-Setup -> Configuration / Tools -> raspbiantools -> Upgrade Raspbian packages_.
 
 ### Raspberry Pi 0-3
 
