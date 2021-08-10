@@ -225,6 +225,7 @@ nav:
     - Odroid C1/C2: Odroid-C1-C2.md
     - Odroid XU4: Odroid-XU3-XU4.md
     - OSMC: OSMC.md
+    - Pi 4: Pi4.md
 - Troubleshooting:
     - FAQ: FAQ.md
     - Sound Issues: Sound-Issues.md
