@@ -6,9 +6,12 @@ First, you need to install [dkms-hid-nintendo](https://github.com/nicman23/dkms-
 git clone https://github.com/nicman23/dkms-hid-nintendo
 cd dkms-hid-nintendo
 sudo dkms add .
-sudo dkms build nintendo -v 3.1
-sudo dkms install nintendo -v 3.1
+sudo dkms build nintendo -v 3.2
+sudo dkms install nintendo -v 3.2
 ```
+
+**NOTE** : the module version may change, check the [driver's page](https://github.com/nicman23/dkms-hid-nintendo) for the correct version to be used with the `dkms` commands above.
+
 
 Then, you need [joycond](https://github.com/DanielOgorchock/joycond), a userspace driver which manages the controllers and exposes their motion inputs.
 
