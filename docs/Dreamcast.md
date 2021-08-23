@@ -11,7 +11,7 @@ _The Sega Dreamcast is a 6th generation home video game console released by Sega
 
 ## Emulators: [Reicast](https://github.com/reicast/reicast-emulator), [lr-flycast](https://github.com/libretro/flycast.git)
 
-Reicast can be very laggy and buggy, but some games work great (see compatibility list below). Pi 2 or later is required.  
+Reicast can be very laggy and buggy, but some games work great. Pi 2 or later is required.  
 
 Audio is choppy and not great, and degrades the longer the emulator is in use.  Restarting the emulator (and ultimately the Pi) may become a good idea after a couple hours of gameplay. There is a memory leak somewhere in the Reicast code. Low screen resolution are recommended to get best performance. Performance greatly suffers if HD resolutions are used.   
 
@@ -25,9 +25,6 @@ Place your ROM files in
 ```
 /home/pi/RetroPie/roms/dreamcast
 ```
-
-
-[**DREAMCAST COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1AD91IcudqHP7dDmEXLO25Pzb85uUgAy4chU2QxlZBQk/edit?usp=sharing) feel free to contribute to the list.
 
 ## CHD files
 

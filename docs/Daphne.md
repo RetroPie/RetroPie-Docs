@@ -44,7 +44,6 @@ roms
 |         +-- dle21.zip
 ```
 
-[**DAPHNE COMPATIBILITY LIST**](https://docs.google.com/spreadsheets/d/1Hy2VpPXgs4a9imeu0_w3SpehKEkhUNOLzD1jhcgwS3o/edit?usp=sharing) feel free to contribute to the list.
 ## Controls
 
 Controls are located in 
