@@ -19,6 +19,7 @@
 - [How can I recover my RetroPie after I enabled the experimental OpenGL driver?](FAQ#how-can-i-recover-my-retropie-after-enabling-the-desktop-opengl-driver)
 - [How can I disable a USB device without disconnecting it?](FAQ#how-can-i-disable-a-usb-device-without-disconnecting-it)
 - [Why Emulationstation doesn't start anymore after an update?](FAQ#why-emulationstation-doesnt-start-automatically-after-an-update)
+- [My Xbox controller is not working properly with Moonlight Embedded/PPSSPP](#my-xbox-controller-is-not-working-properly-with-moonlight-embeddedppsspp)
 
 
 ### Why do some emulators not show up?
@@ -328,3 +329,21 @@ sudo raspi-config
 To fix the auto-login configuration, go to **3 Boot Options**, choose **Desktop/CLI** and finally choose the **Console Autologin** option. Go back to the main menu and choose <kbd>Finish</kbd> and Reboot your Pi. 
 
 After the reboot, Emulationstation should start automatically.
+
+### My Xbox controller is not working properly with Moonlight Embedded/PPSSPP
+
+Some applications like [Moonlight Embedded](https://github.com/moonlight-stream/moonlight-embedded) or emulators like [PPSSPP](https://ppsspp.org) expect the Xbox 360/One controllers to have the analog triggers (LT/RT) exposed as axis instead of buttons.
+
+RetroPie's `xpad` Xbox controller driver is configured to map the controller's LT/RT as buttons - insteads of axis - and this option makes the controller not working properly in applications that use SDL gamepad mappings.
+
+To solve the problem, one of the following solutions can be used:
+
+* uninstall the `xpad` driver, by running the RetroPie setup script and going to _Manage packages_ -> _Manage driver packages_. Select the `xpad` entry and then use the _Remove_ option.
+
+* configure the `xpad` driver's to retain the LT/RT original axis behavior. Edit the `/etc/modprobe.d/xpad.conf` file so it contains:
+
+   ````
+	 options xpad triggers_to_buttons=0
+	 ````
+
+After the modifications above, the controller _needs_ to be [re-configured](Controller-Configuration) again in EmulationStation.
