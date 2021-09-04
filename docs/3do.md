@@ -9,7 +9,7 @@ _The Panasonic 3do Real Multiplayer was a Home Video Game Console developed by t
 
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
-| [lr-opera](https://github.com/libretro/opera-libretro) | 3do  | .iso .cue | panafz10.bin | /opt/retropie/configs/3do/retroarch.cfg |
+| [lr-opera](https://github.com/libretro/opera-libretro) | 3do  | .chd .cue .iso .zip | panafz10.bin | /opt/retropie/configs/3do/retroarch.cfg |
 
 ## Emulator: [lr-opera](https://github.com/libretro/opera-libretro) (formerly known as `lr-4do`).
 
