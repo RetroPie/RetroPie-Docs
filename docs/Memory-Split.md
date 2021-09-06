@@ -1,6 +1,6 @@
 ## Memory Split
 
-Raspberry Pi systems use a shared memory architecture, allocating memory for GPU (2d, 3d and video) and CPU tasks. It is possible to manually set this allocation, however there is typically no reason to adjust it as the defaults are correct. As per the [official documentation](https://www.raspberrypi.org/documentation/configuration/config-txt/memory.md):
+Raspberry Pi systems use a shared memory architecture, allocating memory for GPU (2d, 3d and video) and CPU tasks. It is possible to manually set this allocation, however there is typically no reason to adjust it as the defaults are correct. As per the [official documentation](https://www.raspberrypi.org/documentation/computers/config_txt.html#memory-options):
 > Unlike GPU's found on x86 machines, where increasing memory can improve 3D performance, the architecture of the VideoCore means **there is no performance advantage from specifying values larger than is necessary, and in fact it can harm performance**.
 
 ### Adjusting the Memory Split
