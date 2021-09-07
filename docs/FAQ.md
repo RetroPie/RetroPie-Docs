@@ -293,7 +293,7 @@ To recover from such a situation, there are 2 options:
 Insert the SD card back into your RetroPie system and start the system, without the OpenGL driver enabled.
  
  * Access your system via [SSH](SSH) and run `raspi-config` again to disable the OpenGL driver, then reboot the RetroPie system.  
-  **Note**: If you haven't previously enabled [SSH](SSH) access to the system, then use the instructions to enable SSH on a headless Raspbian system from  the [Raspbian site](https://www.raspberrypi.org/documentation/remote-access/ssh/):
+  **Note**: If you haven't previously enabled [SSH](SSH) access to the system, then use the instructions to enable SSH on a headless Raspberry Pi OS system from  the [Raspberry Pi site](https://www.raspberrypi.org/documentation/computers/remote-access.html#setting-up-an-ssh-server/):
  > For headless setup, SSH can be enabled by placing a file named ssh, without any extension, onto the boot partition of the SD card from another computer. When the Pi boots, it looks for the ssh file. If it is found, SSH is enabled and the file is deleted. The content of the file does not matter; it could contain text, or nothing at all.
 >
 > If you have loaded Raspbian onto a blank SD card, you will have two partitions. The first one, which is the smaller one, is the boot partition. Place the file into this one.
