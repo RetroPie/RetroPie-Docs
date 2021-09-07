@@ -249,7 +249,7 @@ Some rules of thumb to start Raspberry Pi overclocking:
 
 If overclocking the CPU (`arm_freq`), start at the original speed and take it up in steps of 50MHz.
 
-If overclocking the GPU (`core_freq` or `gpu_freq`), start at `500` (or `400` for Pi 1)  and take them up in steps of 20MHz or 25MHz. Remember gpu_freq will overclock all of the GPU (including core_freq) and core_freq will over clock just the GPU processor itself. This also influences the L2 cache of the CPU which has very minor performance increase [mostly seen on the pi zero.](https://www.raspberrypi.org/documentation/configuration/config-txt/overclocking.md)
+If overclocking the GPU (`core_freq` or `gpu_freq`), start at `500` (or `400` for Pi 1)  and take them up in steps of 20MHz or 25MHz. Remember gpu_freq will overclock all of the GPU (including core_freq) and core_freq will over clock just the GPU processor itself. This also influences the L2 cache of the CPU which has very minor performance increase [mostly seen on the Pi Zero]https://www.raspberrypi.org/documentation/computers/config_txt.html#overclocking-options).
 
 For voltage, you are probably best to start with `over_voltage=2` then increase by `1` if the system becomes unstable.
 
