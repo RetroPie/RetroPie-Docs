@@ -34,7 +34,7 @@ The simplest way to get most of these components is through an all-in-one kit su
   * Pi Zero will need a [Mini HDMI to HDMI](https://user-images.githubusercontent.com/540857/107686191-e3de4b80-6c72-11eb-8162-07a82afaac7b.jpg) cable
   * [4-Pole RCA to 3.5mm](https://user-images.githubusercontent.com/540857/107688722-f3ab5f00-6c75-11eb-9837-ffe7f385b1c5.jpg) is also an option for older screens
 * Power supply
-  * View the official [Raspberry Pi Power](https://www.raspberrypi.org/documentation/hardware/raspberrypi/power/) documentation for each model
+  * View the official [Raspberry Pi Power](https://www.raspberrypi.org/documentation/computers/raspberry-pi.html#power-supply) documentation for each model
 * Game controller of your choice 
   * Can be USB-wired, wireless (with a dongle), or Bluetooth (with or without a dongle. Pi 3 and later models have built-in Bluetooth and won't need a dongle)
   * The [Control Block](http://blog.petrockblock.com/2014/12/29/controlblock-power-switch-and-io-for-the-raspberry-pi/) can use original SNES controllers
@@ -49,7 +49,7 @@ The simplest way to get most of these components is through an all-in-one kit su
 
 1. First, insert the MicroSD card into into your computer
 2. [Download the RetroPie .img.gz image](https://retropie.org.uk/download/) from the official website for your Raspberry Pi model.
-   * If you use [Raspberry Pi Imager](https://www.raspberrypi.org/software/) (recommended), you can omit this step and simply choose RetroPie from the list of included images ([example](https://user-images.githubusercontent.com/540857/107868009-493a6400-6e4e-11eb-9272-7f45d569dc44.gif)). If needed, official instructions for using the Raspberry Pi Imager are [here](https://www.raspberrypi.org/documentation/installation/installing-images/)
+   * If you use [Raspberry Pi Imager](https://www.raspberrypi.org/software/) (recommended), you can omit this step and simply choose RetroPie from the list of included images ([example](https://user-images.githubusercontent.com/540857/107868009-493a6400-6e4e-11eb-9272-7f45d569dc44.gif)). If needed, official instructions for using the Raspberry Pi Imager are [here](https://www.raspberrypi.org/documentation/computers/getting-started.html#using-raspberry-pi-imager)
    * Select the image for the model of Raspberry Pi (RPI) that you have. For example, if you have a Raspberry Pi 4, select the *RPI 4/400* image
      * If you don't know which model Raspberry Pi you have, the [Raspberry Pi Wikipedia page](https://en.wikipedia.org/wiki/Raspberry_Pi#Connectors) has user-friendly graphics to help determine model by looking at the board itself. If you have SSH/commandline access, run `cat /proc/device-tree/model` and it will output your Pi's model
 3. Download a program to write the RetroPie *.img.gz* image to your MicroSD card
