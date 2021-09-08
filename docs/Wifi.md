@@ -48,12 +48,12 @@ You can then access the wifi module and select the option to "Import wifi creden
 
 ![wifi_text](https://cloud.githubusercontent.com/assets/10035308/21238882/8fe42822-c2b9-11e6-9506-ddfc41fa2016.png)
 
-## Connecting to WiFi Without a Keyboard (Raspbian Stretch)
+## Connecting to WiFi Without a Keyboard
 
 Starting with Raspbian Stretch, loading the wifikeyfile from the setup script is not necessary.
 
 Create a file called `wpa_supplicant.conf` in the boot partition using the following template. (This will be moved at boot 
-to the /etc/wpa_supplicant directory).
+to the `/etc/wpa_supplicant directory`).
 
 ```
 
@@ -190,9 +190,9 @@ on reboot (if configured correctly) your wifi will be working.
 
 ## Manual Configuration (WPA_Supplicant)
 
-**Taken from the Raspberry Pi Foundation [here](http://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md):**
+**Taken from the Raspberry Pi Foundation [here](https://www.raspberrypi.org/documentation/computers/configuration.html#wireless-networking-command-line):**
 
-This method is suitable if you do not have access to the graphical user interface normally used to set up WiFi on the Raspberry Pi. It is especailly suited for use with a serial console cable if you don't have access to a screen or wired Ethernet network. Also note that no additional software is required; everything you need is already included on the Raspberry Pi.
+> This method is suitable if you do not have access to the graphical user interface normally used to set up WiFi on the Raspberry Pi. It is especailly suited for use with a serial console cable if you don't have access to a screen or wired Ethernet network. Also note that no additional software is required; everything you need is already included on the Raspberry Pi.
 
 ### Getting Network Details
 
