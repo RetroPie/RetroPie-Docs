@@ -57,9 +57,9 @@ To avoid having several menus for different arcade emulators, all arcade-based R
 * 1025 Clones Roms
 * 129 NeoGeo Roms (Parent+Clone)
 
-**MAME 0.37b5 DAT File**: [mame4all-037b5-RetroPie-260.dat](https://drive.google.com/file/d/0B2TMeZ6iEFvHVUNfWHpUZk82bkk/view?usp=sharing)
+**MAME 0.37b5 DAT File**: [mame4all-037b5-RetroPie-260.dat](https://raw.githubusercontent.com/HerbFargus/retropie-dat/master/mame4all/mame4all-037b5-RetroPie-260.dat)
 
-**MAME 0.37b5 XML File**: [mame4all-no-clones-no-neogeo](https://drive.google.com/file/d/0B2TMeZ6iEFvHNm5OYndFUHM3djg/view?usp=sharing) Does not include clones or NeoGeo romsets.
+**MAME 0.37b5 XML File**: [mame4all-no-clones-no-neogeo](https://raw.githubusercontent.com/HerbFargus/retropie-dat/master/mame4all/mame4all-no-clones-no-neogeo.xml) Does not include clones or NeoGeo romsets.
 
 #### Controls
 
@@ -90,9 +90,9 @@ _**Note**_: If configuration or other aspect of the configuration need resetting
 * CHDs: 0
 * Samples: 35
 
-**MAME 0.37b5 DAT File**: [mame4all-037b5-RetroPie-260.zip](https://drive.google.com/file/d/0B2TMeZ6iEFvHVUNfWHpUZk82bkk/view?usp=sharing)
+**MAME 0.37b5 DAT File**: [mame4all-037b5-RetroPie-260.zip](https://raw.githubusercontent.com/HerbFargus/retropie-dat/master/mame4all/mame4all-037b5-RetroPie-260.dat)
 
-**MAME 0.37b5 'Lite' DAT File**: [mame4all-no-clones-no-neogeo](https://drive.google.com/file/d/0B2TMeZ6iEFvHNm5OYndFUHM3djg/view?usp=sharing) - Does not include clones or NeoGeo romsets.
+**MAME 0.37b5 'Lite' DAT File**: [mame4all-no-clones-no-neogeo](https://raw.githubusercontent.com/HerbFargus/retropie-dat/master/mame4all/mame4all-no-clones-no-neogeo.xml) - Does not include clones or NeoGeo romsets.
 
 #### Controls
 
@@ -122,13 +122,13 @@ Please see **[MAME 2003 on RetroPie](lr-mame2003)** for information on how to co
 * CHDs: 30
 * Samples: 56
 
-**MAME 0.78 XML DAT File**: [MAME 0.78.dat](https://github.com/libretro/mame2003-libretro/raw/master/metadata/MAME%200.78%20XML.dat)
+**MAME 0.78 XML DAT File**: [MAME 0.78.dat](https://raw.githubusercontent.com/HerbFargus/retropie-dat/master/lr-mame2003/MAME%200.78.dat)
 
-**MAME 0.78u5 DAT File**: [mame2003-lr-working-no-clones](https://drive.google.com/file/d/0B2TMeZ6iEFvHV21wRVh6TF9uQ1U/view?usp=sharing) - Working romsets only. Does not include clones.
+**MAME 0.78u5 DAT File**: [mame2003-lr-working-no-clones](https://raw.githubusercontent.com/HerbFargus/retropie-dat/master/lr-mame2003/mame2003-lr-no-clones-no-neogeo.xml) - Working romsets only. Does not include clones.
 
-**MAME 0.78u5 'Lite' DAT File**: [mame2003-lr-lite](https://drive.google.com/file/d/0B2TMeZ6iEFvHY1VzcXYyT09iRGs/view?usp=sharing) - Working romsets only. Does not include: clones, NeoGeo, PlayChoice NES/multiplay, romsets with rotary/dial/trackball/light gun controls, or romsets classified as casino/quiz/mahjong/fruit_machines/rhythm/mature.
+**MAME 0.78u5 'Lite' DAT File**: [mame2003-lr-lite](https://raw.githubusercontent.com/HerbFargus/retropie-dat/master/lr-mame2003/mame2003-lr-lite.xml) - Working romsets only. Does not include: clones, NeoGeo, PlayChoice NES/multiplay, romsets with rotary/dial/trackball/light gun controls, or romsets classified as casino/quiz/mahjong/fruit_machines/rhythm/mature.
 
-**[Mame 2003 catver.ini](https://github.com/libretro/mame2003-libretro/blob/master/metadata/catver.ini)** also contains data on games definitively known not to work, as well as sorting data for mature games and other, less desirable, romsets.
+**[Mame 2003 catver.ini](https://raw.githubusercontent.com/libretro/mame2003-libretro/master/metadata/catver.ini)** also contains data on games definitively known not to work, as well as sorting data for mature games and other, less desirable, romsets.
 
 #### Controls
 
@@ -165,7 +165,7 @@ In order to take advantage of the performance and lower hardware requirements of
 
 **MAME 2003-Plus DAT File**: [Github project page](https://raw.githubusercontent.com/libretro/mame2003-plus-libretro/master/metadata/mame2003-plus.xml). An XML "DAT" file can be generated from the emulator, directly from the MAME menu.
 
-**[The MAME 2003-Plus catver.ini](https://github.com/libretro/mame2003-plus-libretro/blob/master/metadata/catver.ini)** also contains data on games definitively known not to work, as well as sorting data for mature games or other, less desirable, romsets.
+**[The MAME 2003-Plus catver.ini](https://raw.githubusercontent.com/libretro/mame2003-plus-libretro/master/metadata/catver.ini)** also contains data on games definitively known not to work, as well as sorting data for mature games or other, less desirable, romsets.
 
 #### Controls
 
@@ -327,7 +327,7 @@ MAME 2016 uses [RetroArch control configuration](RetroArch-Configuration). Custo
 * CHDs: ?
 * Samples: ?
 
-**AdvanceMAME 0.94 DAT File**: [advmame-0.94-RetroPie-260.7z](https://drive.google.com/file/d/0B2TMeZ6iEFvHa2E5Rzl4ZEdMdjQ/view?usp=sharing)
+**AdvanceMAME 0.94 DAT File**: [advmame-0.94-RetroPie-260.7z](https://raw.githubusercontent.com/HerbFargus/retropie-dat/master/advmame.94/advmame-0.94-RetroPie-260.dat)
 
 #### Controls
 
@@ -354,7 +354,7 @@ _**Note**_: The `.rc` file can also be edited manually, with a text editor. Any 
 * CHDs: 86
 * Samples: 64 (3 more samples are not in circulation)
 
-**AdvanceMAME 1.4 DAT File**: [advmame12-106.7z](https://drive.google.com/file/d/0B2TMeZ6iEFvHMEZnb1RxQWNmdHM/view?usp=sharing)
+**AdvanceMAME 1.4 DAT File**: [advmame12-106.7z](https://raw.githubusercontent.com/HerbFargus/retropie-dat/master/advmame1.2/advmame12-106.dat)
 
 #### Controls
 
