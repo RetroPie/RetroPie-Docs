@@ -96,9 +96,9 @@ Config Dir: /opt/retropie/configs/fba/retroarch.cfg
 * BIOS: 5
 * Samples: ?
 
-**FB Alpha v0.2.97.30 DAT File**: [FB Alpha v0.2.97.30.dat.zip](https://drive.google.com/file/d/0B2TMeZ6iEFvHcF96YmdjaWlEdXM/view?usp=sharing)
+**FB Alpha v0.2.97.30 DAT File**: [FB Alpha v0.2.97.30.dat.zip](https://raw.githubusercontent.com/HerbFargus/retropie-dat/master/lr-fbalpha2012/FB%20Alpha%20v0.2.97.30.dat)
 
-**FB Alpha v0.2.97.30 Neo Geo Only DAT File**: [fba-lr-neogeo](https://drive.google.com/file/d/0B2TMeZ6iEFvHVk1Ud1RoSHpfcFU/view?usp=sharing)
+**FB Alpha v0.2.97.30 Neo Geo Only DAT File**: [fba-lr-neogeo](https://raw.githubusercontent.com/HerbFargus/retropie-dat/master/lr-fbalpha2012/fba-lr-neogeo-only.xml)
 
 **Controls:**
 lr-fbalpha2012 utilises RetroArch configs. Add custom retroarch controls to the retroarch.cfg file in:
@@ -125,9 +125,9 @@ Config Dir: /opt/retropie/configs/fba/fba2x.cfg
 * BIOS: ?
 * Samples: ?
 
-**FB Alpha v0.2.96.71 DAT File**: [FB Alpha v0.2.96.71 (ClrMame Pro).dat](https://drive.google.com/file/d/0B2TMeZ6iEFvHZFJOckQyRVZ5OG8/view?usp=sharing)
+**FB Alpha v0.2.96.71 DAT File**: [FB Alpha v0.2.96.71 (ClrMame Pro).dat](https://raw.githubusercontent.com/HerbFargus/retropie-dat/master/pifba/FB%20Alpha%20v0.2.96.71%20(ClrMame%20Pro).dat)
 
-**FB Alpha v0.2.96.71 'Lite' DAT File**: [fba_029671_od_release_10_working_roms_filtered.zip] (https://drive.google.com/file/d/0B2TMeZ6iEFvHMTV2TnlrZWwxRXc/view?usp=sharing) (clones, non-working, mahjong, quiz, adult, casino, rythm removed)
+**FB Alpha v0.2.96.71 'Lite' DAT File**: [fba_029671_od_release_10_working_roms_filtered.zip] (https://raw.githubusercontent.com/HerbFargus/retropie-dat/master/pifba/fba_029671_od_release_10_working_roms_filtered.dat) (clones, non-working, mahjong, quiz, adult, casino, rythm removed)
 
 **Controls**
 
