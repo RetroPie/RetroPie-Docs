@@ -1,4 +1,4 @@
-## Install Raspbian
+## Install Raspbian/Raspberry Pi OS
 
 This guide is a manual process to recreate the stock SD image RetroPie released on the [RetroPie Website](https://retropie.org.uk/download/) for the Raspberry Pi. If you aren't comfortable with the terminal you would be wise to just use the RetroPie SD image provided. 
 
@@ -6,11 +6,9 @@ If you are trying to follow this guide because you want the PIXEL desktop enviro
 
 RetroPie can also be installed on most debian based distros, a guide for installing RetroPie on Ubuntu on a PC can be found [here](Debian)
 
-The RetroPie SD image is built on top of Raspbian lite (Raspbian without the PIXEL desktop environment) RetroPie can also be installed on top of the full Raspbian but you can't run Retropie and PIXEL at the same time, you will need to logout of the PIXEL desktop environment in order to run emulationstation and the emulators RetroPie installs. 
+The RetroPie SD image is built on top of Raspberry Pi OS Lite (without the PIXEL desktop environment), RetroPie can also be installed on top of the full Raspberry Pi OS but you can't run Retropie and PIXEL at the same time, you will need to logout of the PIXEL desktop environment in order to run emulationstation and the emulators RetroPie installs. 
 
-You can download a fresh Raspbian Image from [here](http://www.raspberrypi.org/downloads). The Raspbian image can be installed the same way as the RetroPie image as described [here](First-Installation)). 
-
-Raspbian now automatically expands the filesystem so that step is no longer necessary.
+You can download a fresh Raspberry Pi OS image from [here](http://www.raspberrypi.org/downloads). The image can be installed the same way as the RetroPie image as described [here](First-Installation)). 
 
 You can check your free disk space with
 ```
@@ -53,7 +51,7 @@ A reboot is required before these changes will be reflected by the `locale` comm
 
 **NOTE:** The below configurations are not needed when installing on a Raspberry Pi4 model.
 
-Running Emulationstation requires a larger than default GPU memory split. Make sure you reserve enough memory for EmulationStation by modifying the _/boot/config.txt_ configuration file or by using `raspi-config` as described in the [Memory Split](Memory-Split) page.
+Running EmulationStation requires a larger than default GPU memory split. Make sure you reserve enough memory for EmulationStation by modifying the _/boot/config.txt_ configuration file or by using `raspi-config` as described in the [Memory Split](Memory-Split) page.
 
 A reboot is required after any modifications to the video memory allocation.
 
