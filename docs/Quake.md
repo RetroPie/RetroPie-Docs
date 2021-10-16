@@ -2,38 +2,31 @@
 ***
 _Quake was a First Person Shooter series originally developed for the PC by Id Software. It is a successor to the Doom Series._
 
-_There are 4 Quake games: Quake, Quake II, and Quake III Arena and Quake 4. RetroPie includes Quake, TyrQuake (an optimised build of the original Quake Engine), and Quake III Arena._
+_There are 4 Quake games: Quake, Quake II, and Quake III Arena and Quake 4. RetroPie includes ports for Quake, Quake II and Quake III Arena._
 
 _The source code to the original Quake engine was released under the GPLv2 license on December 21st 1999. This has enabled a wide variety of source ports and improvements to be made and for the game to run on alternative operating systems and architectures._
 
 ***
-# Quake
-![](http://www.gameranx.com/images/updates/1294053269_quake_fps.jpg)
+## Quake
+![](https://cdn.cloudflare.steamstatic.com/steam/apps/2310/header.jpg)
 
 ***
 _The RetroPie Setup Script automatically installs the Quake 1 shareware game data._
 
-***
-## Emulator
+### Ports
 
 * [libretro-tyrquake](https://github.com/libretro/tyrquake) (recommended)
 * [tyrquake](https://github.com/RetroPie/tyrquake)
 * [Darkplaces Quake](https://github.com/autonomous1/darkplacesrpi)
 
-## Controls
+### Controls
 
-`libretro-tyrquake` utilises Retroarch configurations and is the recommended port.
+`libretro-tyrquake` utilises Retroarch configurations and is the recommended port, since it supports a joystick/gamepad to play. See [here](https://docs.libretro.com/library/tyrquake/#joypad) for how the inputs are mapped to the Quake's keyboard.    
+You can also switch to a mouse/keyboard combination by changing the the _Device Type_ of the Player 1 connected controller to _Keyboard + Mouse_.
 
-Add custom RetroArch controls to the `retroarch.cfg` file in
+The other ports use the keyboard and mouse for controls.
 
-```shell
-/opt/retropie/configs/quake/retroarch.cfg
-```
-For more information on custom RetroArch controls see: [RetroArch Configuration](RetroArch-Configuration)
-
-`tyrquake` does not support joystick/gamepad input, so is suitable only for those with a keyboard and mouse.
-
-## Upgrading Shareware to Registered
+### Upgrading Shareware version to Registered
 
 During installation of the port, the setup script places the shareware version of the Quake data files at:
 
@@ -41,47 +34,47 @@ During installation of the port, the setup script places the shareware version o
 /home/pi/RetroPie/roms/ports/quake/id1/pak0.pak
 ~~~
 
-If you own the registered version, you may add the registered version data file at:
+If you own the registered version, you may add the `id1` folder files from the installation of the registered version to:
 
 ~~~
-/home/pi/RetroPie/roms/ports/quake/id1/pak1.pak
+/home/pi/RetroPie/roms/ports/quake/id1/
 ~~~
 
 The shareware version is Quake v1.06. It is recommended your registered data file be from v1.06 or v1.08 versions of the game, earlier versions may not be compatible.
 
 There is no difference between the data files of v1.06 and v1.08, this was an update to the game engine only, not the data files.
 
-## Quake Mission Packs
+### Quake Mission Packs
 
 In addition to many community maps, Quake had some commercial add-ons which are considered "official".
 
-### Mission Pack 1: Scourge of Armagon
+#### Scourge of Armagon
 
-Scourge of Armagon (aka `hipnotic`) was the first official Quake Mission Pack, sold by Hipnotic Interactive in 1997.
+Scourge of Armagon (aka `hipnotic`) was the first official Quake Mission Pack, developed by Hipnotic Interactive and released in 1997.
 
-Place the data file at:
+Place the `hipnotic/pak0.pak` file from your registered installation at:
 
 ~~~
 /home/pi/RetroPie/roms/ports/quake/hipnotic/pak0.pak
 ~~~
 
-Reinstall the Quake port from the Setup Script, and a new option **Quake Mission Pack 1 (hipnotic)** will be created.
+Reinstall the Quake port from the Setup Script and a **Quake Mission Pack 1 (hipnotic)** launcher will be added in _Ports_.
 
-### Mission Pack 2 - Dissolution of Eternity
+#### Dissolution of Eternity
 
-Dissolution of Eternity (aka `rogue`) is the second official Quake Mission Pack, sold by Rogue Entertainment in 1997.
+Dissolution of Eternity (aka `rogue`) is the second official Quake Mission Pack, developed by Rogue Entertainment and released in 1997.
 
-Place the data file at:
+Place he `rogue/pak0.pak` file from your registered installation at:
 
 ~~~
 /home/pi/RetroPie/roms/ports/quake/rogue/pak0.pak
 ~~~
 
-Reinstall the Quake port from the Setup Script, and a new option **Quake Mission Pack 2 (rogue)** will be created.
+Reinstall the Quake port from the Setup Script, and a new entry - **Quake Mission Pack 2 (rogue)** - will be created in _Ports_.
 
-### Episode 5 - Dimension of the Past
+#### Episode 5 - Dimension of the Past
 
-To celebrate Quake's 20th anniversary, MachineGames (developer of Wolfenstein: The New Order) created a new 10-level pack named *Episode 5 - Dimension of the Past* and released it for free at https://cdn.bethsoft.com/quake/dopa.rar
+To celebrate Quake's 20th anniversary, MachineGames (developer of Wolfenstein: The New Order) created a new 10-level pack named *Episode 5 - Dimension of the Past* and released it for free at <https://cdn.bethsoft.com/quake/dopa.rar>.
 
 To get DOPA working in the RetroPie Quake ports, create a directory at:
 
@@ -89,13 +82,14 @@ To get DOPA working in the RetroPie Quake ports, create a directory at:
 /home/pi/RetroPie/roms/ports/quake/dopa/
 ~~~
 
-Place the data file at:
+Place the `pak0.pak` file from the DOPA archive file at:
 
 ~~~
 /home/pi/RetroPie/roms/ports/quake/dopa/pak0.pak
 ~~~
 
-Reinstall the Quake port from the Setup Script, and a new option **Quake Episode 5 (dopa)** will be created.
+Reinstall the Quake port from the Setup Script, and a new entry - **Quake Episode 5 (dopa)** - will be created in _Ports_.
+
 
 ### Soundtrack Files 
 
@@ -105,7 +99,7 @@ CD audio should be ripped into OGG format files, and placed into a subfolder nam
 
 For more information refer to [this guide](https://steamcommunity.com/sharedfiles/filedetails/?id=119489135) and the directory structure below.
 
-### Directory structure, an overview
+### Directory structure - overview
 
 The files `s0.sav` up to `s11.sav` represents structure of savegames. 
 
@@ -144,12 +138,72 @@ dopa/
 └── s1.sav
 ~~~
 
-## References
+### References
 
-* https://retropie.org.uk/forum/topic/2431/solved-partly-issue-with-joypad-control-how-to-start-doom-doom2-heretic-and-all-episodes-of-quake-dopa-rogue-hipnotic
-* https://twitter.com/machinegames/status/746363189768650752
-* https://retropie.org.uk/forum/topic/11508/launching-quake-and-it-s-extras-1-year-anniversary-release
-# Quake III Arena
+* <https://retropie.org.uk/forum/topic/2431/solved-partly-issue-with-joypad-control-how-to-start-doom-doom2-heretic-and-all-episodes-of-quake-dopa-rogue-hipnotic>
+* <https://twitter.com/machinegames/status/746363189768650752>
+* <https://retropie.org.uk/forum/topic/11508/launching-quake-and-it-s-extras-1-year-anniversary-release>
+
+
+## Quake II
+
+![](https://cdn.cloudflare.steamstatic.com/steam/apps/2320/header.jpg)
+
+***
+
+_Quake II is the 2nd game in the Quake Series, though not a sequel to the first installment._
+
+***
+_The RetroPie installation script downloads and configured the Q2 Shareware/Demo (v3.14)._
+
+The Quake II port installed is [Yamagi Quake II](https://github.com/yquake2/yquake2).
+
+### Controls
+
+Yamagi Quake II supports gamepad controls, they can be customized from the in-game menu.
+
+### Upgrading Shareware version to Registered
+
+During installation of the port, the setup script places the shareware version of the Quake II data files at:
+
+```
+/home/pi/RetroPie/roms/ports/quake2/baseq2/pak0.pak
+```
+
+If you own the registered version, you may add the `baseq2` folder files from the installation of the registered version to:
+
+```
+/home/pi/RetroPie/roms/ports/quake2/baseq2
+```
+
+### Mission Packs
+
+#### The Reckoning
+
+Quake II Mission Pack: The Reckoning (aka `xatrix`) is the first official Quake II Mission Pack, developed by Xatrix Entertainment and released in 1998.
+
+Copy the `xatrix` folder contents from your mission pack installation at:
+
+~~~
+/home/pi/RetroPie/roms/ports/quake2/xatrix
+~~~
+
+Reinstall the Quake II port from the Setup Script, and a new entry - **Quake II - The Reckoning** - will be created in _Ports_.
+
+#### Ground Zero
+
+Quake II Mission Pack: Ground Zero (aka `rogue`) is the second official Quake II Mission Pack, developed by Rogue Entertainment and released in 1998.
+
+Copy the `rogue` folder contents from your mission pack installation at:
+
+~~~
+/home/pi/RetroPie/roms/ports/quake2/rogue
+~~~
+
+Reinstall the Quake II port from the Setup Script, and a new entry - **Quake II - Ground Zero** - will be created in _Ports_.
+
+
+## Quake III Arena
 
 ![](http://cdn.akamai.steamstatic.com/steam/apps/2200/header.jpg?t=1343157282)
 
@@ -158,9 +212,12 @@ dopa/
 _Quake III Arena is the 3rd game in the Quake Series. It differs from the others in the sense that it is all multiplayer._
 
 ***
-## Port: [ioQuake3](https://github.com/raspberrypi/quake3)
+### Ports
+* an [ioQuake3](https://github.com/raspberrypi/quake3) Raspberry PI optimized build, useful for Pi3/Pi2.
+* the official [ioQuake3][https://github.com/ioquake/ioq3] engine, for PC and more powerful SBC (Pi4/Odroid) systems.
 
-## Controls:
+### Controls
+
 Key  |  Action
  --- | ---
 Ctrl or Left Mouse Click | Attack
