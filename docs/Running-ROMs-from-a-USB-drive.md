@@ -15,6 +15,7 @@ There are a number of ways you can achieve this, but the following method is des
 ### Format USB drive
 
 Either on linux, or on a PC, format the USB drive to FAT32 (used in this guide as it is the most compatible across different operating systems):
+
 *  [Instructions to format on Linux](https://ksearch.wordpress.com/2010/09/29/format-usb-in-linux/)
 *  [Instructions to format on Windows (various)](http://www.makeuseof.com/tag/format-large-hard-drive-fat-fat32/)
 *  [Instructions to format on OSX](http://qsee.custhelp.com/app/answers/detail/a_id/2560/~/mac%3A-how-to-format-a-flash-drive-to-fat32-in-mac-os-x)
