@@ -1,8 +1,9 @@
-![](http://www.hardcoregaming101.net/princeofpersia/old/LOGO.png)
--**
-_SDLPoP is an open source port of the game Prince of Persia._
+![383-prince-of-persia-dos-front-cover](https://user-images.githubusercontent.com/31816814/138679982-79bf35c9-d57b-4dc3-9baa-5d360aba1ce7.jpg)
 
--**
+***
+_SDLPoP is an open source port of the classic game [Prince of Persia](https://www.mobygames.com/game/dos/prince-of-persia)._
+
+***
 
 
 ### Emulator: [SDLPoP](https://github.com/NagyD/SDLPoP)
