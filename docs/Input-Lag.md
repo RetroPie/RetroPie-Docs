@@ -51,10 +51,11 @@ These have no effect on a Raspberry Pi, which cannot use `video_hard_sync` in an
 video_driver = dispmanx
 ```
 `dispmanx` is a 'bare-metal' graphics API for the Raspberry Pi 0-3, with which a Retroarch video driver has been written. Whilst it can shave a frame of input lag compared to the default `gl` video driver, it also has several issues:
+
 * No rotation support (vertical games appear on their side)
 * No OSD support (no more yellow text notifications)
 * No shader support
-* Not available on non-Raspberry Pi hardrware, or when using fkms/kms (mandatory on Pi 4)
+* Not available on non-Raspberry Pi hardware, or when using fkms/kms (mandatory on Pi 4)
 
 ### Frame Delay
 ```
