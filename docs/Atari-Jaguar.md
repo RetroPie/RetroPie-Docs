@@ -1,7 +1,7 @@
 ***
 ![atarijaguar](https://cloud.githubusercontent.com/assets/10035308/12190454/f776b6a4-b585-11e5-9b8b-1f7ed69480b3.png)
 ***
-_The Atari Jaguar was the first 64 bit video game console released in 1993. It was a bad enough commercial failure that it  put Atari out of the home video game console business for 25 years._
+_The Atari Jaguar was the first 64 bit video game console released in 1993. It was a bad enough commercial failure that it  put Atari out of the home video game console business. It's successor the Jaguar CD was an even worse failure._
 
 ***
 
@@ -11,7 +11,7 @@ _The Atari Jaguar was the first 64 bit video game console released in 1993. It w
 
 ## Emulator: [lr-virtualjaguar](https://github.com/libretro/virtualjaguar-libretro) 
 
-**lr-virtualjaguar** is experimental, and even with an overclocked RPi3B+ it is slow so it isn't recommended for Raspberry Pi users at this time.
+**lr-virtualjaguar** is experimental, but some games will run full speed on an overclocked pi4.
 
 ## ROMS
 
