@@ -11,7 +11,7 @@ _The Atari Jaguar was the first 64 bit video game console released in 1993. It w
 
 ## Emulator: [lr-virtualjaguar](https://github.com/libretro/virtualjaguar-libretro) 
 
-**lr-virtualjaguar** is experimental, and even with an overclocked RPi3B+ it is slow so it isn't recommended for Raspberry Pi users at this time.
+**lr-virtualjaguar** is experimental and too slow for most Raspberry Pi systems, but with an overclocked Pi4 it's possible to run some games at full speed. See [this forum topic](https://retropie.org.uk/forum/topic/27999/) for an overview of the tested games and the verclock settings used.
 
 ## ROMS
 
