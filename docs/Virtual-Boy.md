@@ -1,7 +1,7 @@
 ***
 ![virtualboy](https://cloud.githubusercontent.com/assets/10035308/12214017/8fcf5e08-b642-11e5-8ee6-7ee08f23c5c1.png)
 ***
-_The Virtual Boy was Nintendo's attempt at virtual reality in 1995 and it was a horrid commercial failure._
+_The Virtual Boy was Nintendo's attempt at early 32bit virtual reality in 1995,a year after the Playstation 1 released, and a year before the release of the Nintendo 64._
 
 ***
 
