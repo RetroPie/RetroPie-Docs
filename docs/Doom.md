@@ -406,19 +406,19 @@ For more information on custom RetroArch controls see: [RetroArch Configuration]
 
 ### ZDoom Controls
 
-ZDoom controls can be found in the Doom options menu by pressing any button or key after the game software has launched. Although the initial configuration may need to be started with a keyboard, full joystick autonomy is possible after being set.
+LZDoom controls can be found in the Doom options menu by pressing any button or key after the game software has launched. Although the initial configuration may need to be started with a keyboard, full joystick autonomy is possible after being set.
 
-In-game controls can be mapped easily from the ZDoom options menu, however, Joystick control of the menus is not well implemented. The advised solution is to replace zdoom and zdoom.pk3 in this folder: 
+Inside Options -> Joystick Options, under Configure Controllers, your controller should appear. Select it and you'll see assignments for Axes, which for a standard 2-stick style gamepad normally should be:
 ```
-/opt/retropie/ports/zdoom/
+Axis 1: Strafing
+Axis 2: Moving Forward
+Axis 3: Turning
+Axis 4: Looking Up/Down
+The rest should be set to None
 ```
+Depending on your type of controller, the axes assignment could vary.
 
-With the files from this source:
-```
-https://github.com/protocultor/zdoom/releases/tag/2.8.12.2
-```
-
-This adds menu options to the ZDoom menu for "menu forward" and "menu back" which can be assigned to joypad buttons. Please note that this may not work with all versions and builds of Zdoom - this information is provided for users specifically having issues with menu controls in ZDoom.
+If your character, or the menu cursor, move by themselves, in the same menu option you can add deadzone for each axis. Set it to something like 150-200 initially, and then decrease it if it's too much.
 
 ## Enhancements
 
