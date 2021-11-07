@@ -11,7 +11,7 @@ _The Colecovision is a home video game console released by Coleco in 1982. It fe
 
 ## Emulators [CoolCV](http://atariage.com/forums/topic/240800-coolcv-emulator-for-mac-os-x-linux-windows-and-raspberry/page-1), [lr-blueMSX](https://github.com/libretro/blueMSX-libretro)
 
-Note that CoolCV is only available for the Raspberry Pi currently.
+Note that CoolCV is only available for the Raspberry Pi currently. It is not able to run on the Pi4/400.
 
 ## ROMS
 
