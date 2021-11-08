@@ -11,7 +11,7 @@ _The Sega Saturn is a 32 bit 5th generation home video game console released by 
 
 ## Emulators: [lr-yabause](https://github.com/libretro/yabause), [lr-beetle-saturn](https://github.com/libretro/beetle-saturn-libretro)
 
-**lr-yabause**  is experimental, and even with an overclocked RPi3B+ it is slow so it isn't recommended for Raspberry Pi users at this time.
+**lr-yabause**  is experimental, and even with an overclocked RPi4B it is slow so it isn't recommended for Raspberry Pi users at this time.
 
 **lr-beetle-saturn** is for x86 PCs only, and is recommended for those with such hardware.
 
