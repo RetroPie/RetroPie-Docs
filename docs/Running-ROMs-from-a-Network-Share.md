@@ -13,23 +13,31 @@ For EmulationStation to be able to see your rom files the paths given to it with
 
 If you prefer to not use the EmulationStation system directory names and keep the current folder structure you have on your networked server you'll need to edit `es_systems.cfg`. Use this command to copy the configuration file to the home directory wherein it will be editable through SMB (//RETROPIE/configs/all/emulationstation) or FTP.
 
-    cp /etc/emulationstation/es_systems.cfg /home/pi/.emulationstation/es_systems.cfg
+```bash
+cp /etc/emulationstation/es_systems.cfg /home/pi/.emulationstation/es_systems.cfg
+```
 
 ## Mount your Share
 
 If you haven't already, now is a good time to tell Raspbian to wait for your network at boot.
 
-    sudo raspi-config
+```bash
+sudo raspi-config
+```
 
 In there, select System Options->Network at Boot and tell it Yes.
 
 ### Option 1: Add to autostart.sh (Preferred if using v4.0+)
 
-    sudo nano /opt/retropie/configs/all/autostart.sh
+```bash
+sudo nano /opt/retropie/configs/all/autostart.sh
+```
 
 Add the following line to the top of that file, being sure to adjust it for your personal settings, paths and options. This will make the local roms folder use your remote server roms folder instead.
 
-    sudo mount -t cifs -o username=something,password=something,nounix,noserverino //REMOTEHOST/path/to/roms /home/pi/RetroPie/roms
+```bash
+sudo mount -t cifs -o username=something,password=something,nounix,noserverino //REMOTEHOST/path/to/roms /home/pi/RetroPie/roms
+```
 
 > **Good to know**: If you'd like to host the entire RetroPie folder remotely you can do so by removing the `/roms` directories from the mount command above. Make sure to have a copy of the RetroPie installation on your remote server or EmulationStation won't be able to start RetroPie!
 
@@ -37,7 +45,9 @@ Restart your Raspberry Pi with `sudo reboot`.
 
 Alternatively, if you have a shared folder that allows guest access, you can use the following line in your `autostart.sh`:
 
-    sudo mount -t cifs -o guest,uid=pi,nounix,noserverino //hostname/retropie /home/pi/RetroPie
+```bash
+sudo mount -t cifs -o guest,uid=pi,nounix,noserverino //hostname/retropie /home/pi/RetroPie
+```
 
 This should also allow you to write save files to your NAS.
 
@@ -45,20 +55,28 @@ This should also allow you to write save files to your NAS.
 
 Using your favorite editor, open up fstab:
 
-    sudo nano /etc/fstab
+```bash
+sudo nano /etc/fstab
+```
 
 Add the line to mount your network share. Mine looks like this:
 
-    //192.168.1.10/Storage/ROMs /home/pi/RetroPie/roms cifs username=Username,password=Password,nounix,noserverino,defaults,users,auto 0 0
+```bash
+//192.168.1.10/Storage/ROMs /home/pi/RetroPie/roms cifs username=Username,password=Password,nounix,noserverino,defaults,users,auto 0 0
+```
 
 First, make sure it will mount:
 
-    sudo mount -a
+```bash
+sudo mount -a
+```
 
 Restart and check the folder to make sure it didn't have any issues mounting at boot
 
-    sudo reboot
-    sudo ls RetroPie/roms/snes
+```bash
+sudo reboot
+sudo ls RetroPie/roms/snes
+```
 
 With any luck (and if you have a ton of SNES ROMs like myself), it will be fairly apparent that it was able to mount the share at boot.
 
@@ -68,23 +86,28 @@ This will give you read/write access, so you could keep your saves there as well
 First [create an account on your Time Capsule](https://discussions.apple.com/message/6801520#message6801520) with the same credentials as your Pi (default: pi/raspberry).
 
 Install `cifs-utils` if it's not already installed  
-```
+
+```bash
 sudo apt update && sudo apt install cifs-utils
 ```  
+
 Edit your `autostart.sh` file  
-```
+
+```bash
 sudo nano /opt/retropie/configs/all/autostart.sh
 ```
-And instead of 
-```
+
+And instead of
+
+```bash
 sudo mount -t cifs -o username=something,password=something //hostname/retropie /home/pi/RetroPie
 ```
-you enter 
-```
+
+you enter
+
+```bash
 sudo mount -t cifs //hostname/retropie -o username=USERNAME,password=PASSWORD,sec=ntlm,file_mode=0777,dir_mode=0777 /home/pi/RetroPie
 ```
-
-
 
 ## Troubleshooting
 
@@ -104,15 +127,20 @@ I started a discussion on the forums for this article. I haven't written any gui
 
 If you are getting permission denied errors when you try to scrape or save states, try editing your autostart.sh and replacing:
 
-    sudo mount -t cifs -o username=something,password=something //REMOTEHOST/path/to/roms /home/pi/RetroPie/roms
+```bash
+sudo mount -t cifs -o username=something,password=something //REMOTEHOST/path/to/roms /home/pi/RetroPie/roms
+```
 
 with
 
-    sudo mount -t cifs -o sec=ntlmv2,username=something,rw,file_mode=0777,dir_mode=0777,password=something,nounix,noserverino //REMOTEHOST/path/to/roms /home/pi/RetroPie/roms
+```bash
+sudo mount -t cifs -o sec=ntlmv2,username=something,rw,file_mode=0777,dir_mode=0777,password=something,nounix,noserverino //REMOTEHOST/path/to/roms /home/pi/RetroPie/roms
+```
 
 This will give you write access and should solve your problem.
 
 > **Good to know**: Most problems with samba shares running on Windows are due to the fact that Windows 10 now no longer supports SMB1 by default. Ensure that you have a user setup on Windows with the credentials given, and that you have granted user access by right-clicking the shared folder and selecting the user from the 'Give Access To...' selection menu.
 
 ## Thank You
+
 Thank you, everyone at the Raspberry Pi foundation, everyone involved in the development of EmulationStation and RetroPie, authors of several guides that I can't recall the names of, @sselph, @BuZz and probably a few other people.
