@@ -30,7 +30,7 @@ In there, select System Options->Network at Boot and tell it Yes.
 ### Option 1: Add to autostart.sh (Preferred if using v4.0+)
 
 ```bash
-sudo nano /opt/retropie/configs/all/autostart.sh
+nano /opt/retropie/configs/all/autostart.sh
 ```
 
 Add the following line to the top of that file, being sure to adjust it for your personal settings, paths and options. This will make the local roms folder use your remote server roms folder instead.
