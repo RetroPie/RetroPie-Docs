@@ -21,7 +21,7 @@ If you haven't already, now is a good time to tell Raspbian to wait for your net
 
     sudo raspi-config
 
-In there, select "Boot Options" and tell it Yes.
+In there, select System Options->Network at Boot and tell it Yes.
 
 ### Option 1: Add to autostart.sh (Preferred if using v4.0+)
 
