@@ -1,4 +1,4 @@
-![Retroarch Logo](https://docs.libretro.com/image/branding/retroarch_banner.png)
+![Retroarch Logo](https://www.retroarch.com/images/logo.png)
 ***
 
 RetroArch is the official front end for the [libretro API](http://www.libretro.com/). RetroArch and libretro provide a way to take an existing emulator and load that emulator as a library or "core". RetroArch then handles the input (controls) and output (graphics and audio) while the emulator core handles the emulation of the original system. With a few simple changes to the emulator source code, almost any existing emulator could become a libretro core.
