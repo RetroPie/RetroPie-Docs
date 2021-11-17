@@ -43,9 +43,10 @@ I elected to change the driver AGS was using rather than enable the OpenGL drive
 
 ## Controls
 
-AGS requires a mouse attached to the Raspberry Pi
+AGS requires a mouse attached to the Raspberry Pi.
 
 ## Useful Links
-https://github.com/adventuregamestudio/ags/tree/master/debian  
-https://en.wikipedia.org/wiki/Adventure_Game_Studio  
-https://wiki.ubuntuusers.de/Adventure_Game_Studio/
+
+* <https://github.com/adventuregamestudio/ags/>
+* <https://en.wikipedia.org/wiki/Adventure_Game_Studio>
+* <https://wiki.ubuntuusers.de/Adventure_Game_Studio/> (in German)
