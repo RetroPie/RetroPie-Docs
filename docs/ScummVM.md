@@ -44,20 +44,20 @@ The game **Day of the Tentacle** has the shortname `tentacle` and requires files
 
 Create a directory `/home/pi/RetroPie/roms/scummvm/Day of the Tentacle` and place the game files in it.
 
-Create a launcher file with the same name as the directory: `/home/pi/RetroPie/roms/scummvm/Day of the Tentacle/Day of the Tentacle.svm`
+Create a launcher file with the same name as the directory: `/home/pi/RetroPie/roms/scummvm/Day of the Tentacle.svm`
 
 This laucher file `Day of the Tentacle.svm` contains the shortname `tentacle`
 
 You can create the launcher file like:
 
 ```
-echo "tentacle" > "/home/pi/RetroPie/roms/scummvm/Day of the Tentacle/Day of the Tentacle.svm"
+echo "tentacle" > "/home/pi/RetroPie/roms/scummvm/Day of the Tentacle.svm"
 ```
 
 The final file layout is:
 
 ```
-/home/pi/RetroPie/roms/scummvm/Day of the Tentacle/Day of the Tentacle.svm
+/home/pi/RetroPie/roms/scummvm/Day of the Tentacle.svm
 /home/pi/RetroPie/roms/scummvm/Day of the Tentacle/MONSTER.SOU
 /home/pi/RetroPie/roms/scummvm/Day of the Tentacle/TENTACLE.000
 /home/pi/RetroPie/roms/scummvm/Day of the Tentacle/TENTACLE.001
