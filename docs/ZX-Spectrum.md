@@ -7,9 +7,10 @@ _The ZX Spectrum was an 8 bit series of home computers released by Sinclair Rese
 
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
-| [lr-fuse](https://github.com/libretro/fuse-libretro) | zxspectrum  | sna .szx .z80 .tap .tzx .gz .udi .mgt .img .trd .scl .dsk | none | /opt/retropie/configs/zxspectrum/retroarch.cfg |
-| [FBZX](http://www.rastersoft.com/programas/fbzx.html) | zxspectrum  | sna .szx .z80 .tap .tzx .gz .udi .mgt .img .trd .scl .dsk | none | hardcoded |
-| [Fuse](http://fuse-emulator.sourceforge.net/) | zxspectrum  | sna .szx .z80 .tap .tzx .gz .udi .mgt .img .trd .scl .dsk | none | hardcoded |
+| [lr-fuse](https://github.com/libretro/fuse-libretro) | zxspectrum  | .sna .szx .z80 .tap .tzx .gz .udi .mgt .img .trd .scl .dsk | none | /opt/retropie/configs/zxspectrum/retroarch.cfg |
+| [FBZX](http://www.rastersoft.com/programas/fbzx.html) | zxspectrum  | .sna .szx .z80 .tap .tzx .gz .udi .mgt .img .trd .scl .dsk | none | hardcoded |
+| [Fuse](http://fuse-emulator.sourceforge.net/) | zxspectrum  | .sna .szx .z80 .tap .tzx .gz .udi .mgt .img .trd .scl .dsk | none | hardcoded |
+| [ZEsarUX](https://github.com/chernandezba/zesarux/) | zxspectrum  | .sna .szx .z80 .tap .tzx .gz .udi .mgt .img .trd .scl .dsk | none | configurable |
 
 ## Emulators: [lr-fuse](https://github.com/libretro/fuse-libretro), [FBZX](http://www.rastersoft.com/programas/fbzx.html), [Fuse](http://fuse-emulator.sourceforge.net/)
 
