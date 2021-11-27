@@ -9,6 +9,8 @@ _The Nintendo 64 is a 5th generation gaming console released by Nintendo in 1996
 | :---: | :---: | :---: | :---: | :---: |
 | [Mupen64Plus](http://www.mupen64plus.org) | n64  | .z64 .n64 .v64 | none | /opt/retropie/configs/n64/InputAutoCfg.ini **and** /opt/retropie/configs/n64/mupen64plus.cfg|
 | [lr-mupen64plus](https://github.com/libretro/mupen64plus-libretro) | n64 | .z64 .n64 .v64 .zip | none | /opt/retropie/configs/n64/retroarch.cfg |
+| [lr-mupen64plus-next](https://github.com/libretro/mupen64plus-libretro-nx) | n64 | .z64 .n64 .v64 .zip | none | /opt/retropie/configs/n64/retroarch.cfg |
+
 
 ## Emulators: [Mupen64Plus](https://github.com/mupen64plus/mupen64plus-core), [lr-mupen64plus](https://github.com/libretro/mupen64plus-libretro), [lr-mupen64plus-next](https://github.com/libretro/mupen64plus-libretro-nx)
 
