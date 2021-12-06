@@ -214,7 +214,7 @@ _Quake III Arena is the 3rd game in the Quake Series. It differs from the others
 ***
 ### Ports
 * an [ioQuake3](https://github.com/raspberrypi/quake3) Raspberry PI optimized build, useful for Pi3/Pi2.
-* the official [ioQuake3][https://github.com/ioquake/ioq3] engine, for PC and more powerful SBC (Pi4/Odroid) systems.
+* the official [ioQuake3](https://github.com/ioquake/ioq3) engine, for PC and more powerful SBC (Pi4/Odroid) systems.
 
 ### Controls
 
