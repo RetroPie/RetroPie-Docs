@@ -119,15 +119,17 @@ Roms Dir: /home/pi/RetroPie/roms/fba
 Binary Dir: /opt/retropie/emulators/pifba
 Config Dir: /opt/retropie/configs/fba/fba2x.cfg
 ```
+
 **ROM Version**: FB Alpha 0.2.96.71
 
 **Total games emulated: 684**
+
 * BIOS: ?
 * Samples: ?
 
 **FB Alpha v0.2.96.71 DAT File**: [FB Alpha v0.2.96.71 (ClrMame Pro).dat](https://raw.githubusercontent.com/HerbFargus/retropie-dat/master/pifba/FB%20Alpha%20v0.2.96.71%20(ClrMame%20Pro).dat)
 
-**FB Alpha v0.2.96.71 'Lite' DAT File**: [fba_029671_od_release_10_working_roms_filtered.zip] (https://raw.githubusercontent.com/HerbFargus/retropie-dat/master/pifba/fba_029671_od_release_10_working_roms_filtered.dat) (clones, non-working, mahjong, quiz, adult, casino, rythm removed)
+**FB Alpha v0.2.96.71 'Lite' DAT File**: [fba_029671_od_release_10_working_roms_filtered.zip](https://raw.githubusercontent.com/HerbFargus/retropie-dat/master/pifba/fba_029671_od_release_10_working_roms_filtered.dat) (clones, non-working, mahjong, quiz, adult, casino, rythm removed)
 
 **Controls**
 
