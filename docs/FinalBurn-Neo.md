@@ -66,7 +66,7 @@ NOTE: If you have updated RetroPie from an existing installation since 27th May 
 
 [FB Neo (NeoGeo only)](https://github.com/libretro/FBNeo/blob/master/dats/FinalBurn%20Neo%20(ClrMame%20Pro%20XML%2C%20Neogeo%20only).dat)
 
-[Other Dats for home console systems available here](https://github.com/libretro/fbeo/tree/master/dats)
+[Other Dats for home console systems available here](https://github.com/libretro/fbneo/tree/master/dats)
 
 **Controls:**
 lr-fbneo utilises RetroArch configs. Add custom retroarch controls to the retroarch.cfg file in:
