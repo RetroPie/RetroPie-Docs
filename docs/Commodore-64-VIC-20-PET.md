@@ -7,7 +7,7 @@ _The Commodore 64 is an 8 Bit personal computer introduced in 1982 by Commodore 
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
 | [VICE](https://vice-emu.sourceforge.io/) | c64 | .crt .d64 .g64 .t64 .tap .x64 .zip .prg | none | /opt/retropie/configs/c64/sdl-vicerc <br> /opt/retropie/configs/c64/sdl-joymap-c64.vjm|
-| [lr-vice](https://github/libretro/vice-libretro/) | c64 | .crt .d64 .d80 .d81 .g64 .t64 .tap .x64 .zip .prg .tap .t64 .crt .m3u .zip | optional | /opt/retropie/configs/c64/retroarch.cfg |
+| [lr-vice](https://github.com/libretro/vice-libretro/) | c64 | .crt .d64 .d80 .d81 .g64 .t64 .tap .x64 .zip .prg .tap .t64 .crt .m3u .zip | optional | /opt/retropie/configs/c64/retroarch.cfg |
 
 ## ROMS
 Accepted File Extensions: **.crt .d64 .g64 .t64 .tap .x64 .prg**
@@ -115,7 +115,9 @@ To select the emulated system, the [Runcommand Launch Menu](Runcommand) can be u
 | X               | Space                   |
 | L2              | Escape (RUN/STOP)       |
 | R2              | Enter (RETURN)          |
-| Select          | Toggle virtual keyboard |
+| Select (short)  | Toggle virtual keyboard |
+| Select (long)   | Toggle statusbar        |
+| Select (hold)   | Fast-forward.           |
 
 | Keyboard key      | Action                  |
 |-----------------  |-------------------------|
@@ -138,6 +140,7 @@ The virtual keyboard can be controlled with:
     | B        | Keypress            |
     | A        | Toggle transparency |
     | Y        | Toggle ShiftLock    |
+    | X        | Press Space         |
     | Start    | Press Return        |
 
 - **Keyboard**
@@ -162,9 +165,9 @@ Older C64 games tend to use joystick port 1 and newer ones tend to use port 2 fo
 
 ### M3U support and disk control
 
-For a multi disk game, an M3U playlist file can be used to group and change disks from the RetroArch Disc Control interface.
+For a multi disk game, an M3U playlist file can be used to group and change discs from the RetroArch _Disc Control_ interface.
 
-A M3U file is a simple text file, with one disk per line (see [Wiki](https://en.wikipedia.org/wiki/M3U)).
+A M3U file is a simple text file, with one disk per line (see the [Wiki M3U page](https://en.wikipedia.org/wiki/M3U)).
 
 Example:
 
@@ -181,11 +184,31 @@ Ultima VI - The False Prophet (1990)(Origin Systems)(Disk 3 of 3 Side B)(Populac
 
 Paths in the M3U file can be absolute or relative to the location of the M3U file.
 
-When the game asks for it, the current disk can be change from the RetroArch _Disc Control+ menu:
+When the game asks for it, the current disk can be change from the RetroArch _Disc Control_ menu:
 
-- Eject the current disk with _Eject Disc_
-- Select the right disk index with _Current Disc Index_ from the disk list drop-down
-- Insert the new disk with _Insert Disc_
+- Eject the current disc with _Eject Disc_
+- Select the right disc index with _Current Disc Index_ from the disk list drop-down
+- Insert the new disc with _Insert Disc_
+
+By default, RetroArch will display the filename (without extension) of each M3U entry when selecting a disc via the _Current Disc Index_ drop-down men_. Custom display labels may be set for each disc using the syntax: DISC_FILE|DISC_LABEL. For example, the following M3U file:
+
+```
+Ultima VI - The False Prophet (1990)(Origin Systems)(Disk 1 of 3 Side A)(Game).d64|Game
+Ultima VI - The False Prophet (1990)(Origin Systems)(Disk 1 of 3 Side B)(Surface).d64|Surface
+Ultima VI - The False Prophet (1990)(Origin Systems)(Disk 2 of 3 Side A)(Dungeon).d64|Dungeon
+Ultima VI - The False Prophet (1990)(Origin Systems)(Disk 2 of 3 Side B)(Populace A).d64|Populace A
+Ultima VI - The False Prophet (1990)(Origin Systems)(Disk 3 of 3 Side A)(Populace B).d64|Populace B
+Ultima VI - The False Prophet (1990)(Origin Systems)(Disk 3 of 3 Side B)(Populace C).d64|Populace C
+```
+will be shown in the selection menu as:
+```
+1: Game
+2: Surface
+3: Dungeon
+4: Populace A
+5: Populace B
+6: Populace C
+```
 
 ### Zip Archives Support
 
