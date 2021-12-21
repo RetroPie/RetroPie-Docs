@@ -17,15 +17,11 @@ lr-hatari can currently be found under the experimental installs in RetroPie.
 
 ### BIOS
 
-TOS (The Operating System; also Tramiel Operating System, from Jack Tramiel, owner of Atari Corp. at the time) is the operating system of the Atari ST range of computers. Atari's TOS was usually run from ROM chips contained in the computer. See https://en.wikipedia.org/wiki/Atari_TOS
+TOS (The Operating System; also Tramiel Operating System, from Jack Tramiel, owner of Atari Corp. at the time) is the operating system of the Atari ST range of computers. Atari's TOS was usually run from ROM chips contained in the computer. See <https://en.wikipedia.org/wiki/Atari_TOS>.
 
-To use this core you need a valid TOS ROM image named 'tos.img' in your RetroArch system directory:
+To use this core you need a valid TOS ROM image named `tos.img` in BIOS folder:
 ```
 ~/RetroPie/BIOS/tos.img
-```
-For compatibility purposes it may also help to put the file in this folder:
-```
-/opt/retropie/emulators/retroarch/bin/tos.img
 ```
 
 Using a Version 1.04 TOS file is also a good choice for general compatibility.
@@ -34,7 +30,7 @@ Using a Version 1.04 TOS file is also a good choice for general compatibility.
 
 Accepted File Extensions: **.st .stx .msa .img .rom .raw .ipf .ctr .m3u .zip**
 
-Unlike the standalone Hatari, lr-hatari supports .m3u files and .zip files.
+Unlike the standalone Hatari, lr-hatari supports `.m3u` files and `.zip` files.
 
 Place your Atari ST/STE/TT/Falcon ROMS in
 ```
@@ -45,7 +41,7 @@ Place your Atari ST/STE/TT/Falcon ROMS in
 
 The Atari ST was a disk based computer so you need a disk image of the software you want to use with the emulator.
 
-Accepted File Extensions: .st .msa .ipf
+Accepted File Extensions: **.st .msa .ipf**
 
 When launched with a valid disk image the emulator will automatically launch the program (most of the time) or open the TOS with disk inserted into drive A. In the TOS you need to manually launch the program by opening Drive A (double-click on the drive icon) and finding/selecting a .prg file (double-click on the file icon).
 
@@ -61,11 +57,11 @@ This will over-ride the global retroarch configuration and should allow access t
 
 When you have a multi disk game, you can use a m3u file to specify each disk of the game and change them from the RetroArch Disk control interface.
 
-A M3U file is a simple text file with one disk per line (see https://en.wikipedia.org/wiki/M3U).
+A M3U file is a simple text file with one disk per line (see <https://en.wikipedia.org/wiki/M3U>).
 
 Example:
 
-Simpsons, The - Bart vs. The Space Mutants.m3u
+File: _Simpsons, The - Bart vs. The Space Mutants.m3u_, containing:
 
 ```
 Simpsons, The - Bart vs. The Space Mutants_Disk1.st
@@ -76,19 +72,11 @@ Path can be absolute or relative to the location of the M3U file.
 
 When a game asks for it, you can change the current disk in the RetroArch 'Disk Control' menu :
 
-    Eject the current disk with 'Disk Cycle Tray Status'.
-    Select the right disk index.
-    Insert the new disk with 'Disk Cycle Tray Status'.
+    * Eject the current disk with 'Disk Cycle Tray Status'.
+    * Select the right disk index.
+    * Insert the new disk with 'Disk Cycle Tray Status'.
 
-Note : zip support is provided by RetroArch and is done before passing the game to the core. So, when using a m3u file, the specified disk image must be uncompressed (.st, .msa, .ipf file formats).
-
-It may be necessary to add .m3u as a supported file format to the Atari ST section of:
-
-```
-/opt/configs/all/emulationstation/es_systems.cfg
-```
-
-In order to be able to see the created m3u files directly in emulationstation.
+Note : zip support is provided by RetroArch and is done before passing the game to the core. So, when using a `.m3u` file, the specified disk image must be uncompressed (**.st, .msa, .ipf** file formats).
 
 ### Default Controls
 
