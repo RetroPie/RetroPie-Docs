@@ -159,9 +159,9 @@ Create a `platforms.cfg` in
 /opt/retropie/configs/all/platforms.cfg
 ```
 
-name, extensions, platform (used by es for scraping), and the theme can be overriden, see [HERE](https://github.com/RetroPie/RetroPie-Setup/blob/master/platforms.cfg) for the default platforms.cfg
+name, extensions, platform (used by es for scraping), and the theme can be overriden, see [HERE](https://github.com/RetroPie/RetroPie-Setup/blob/master/platforms.cfg) for the default _platforms.cfg_.
 
-The following is an example of a custom platforms.cfg
+The following is an example of a custom _platforms.cfg_:
 
 ```
 megadrive_theme="genesis"
@@ -221,7 +221,7 @@ If you use the built in ES Scraper your gamelist.xml and images folder will be i
 
 - `~/.emulationstation/gamelists/[SYSTEM_NAME]/gamelist.xml`
 
-If you use another scraper (Steven Sselph's `scraper` or Lars Muldjord's `Skyscraper) you can choose whether your scraped data goes in 
+If you use another scraper (Steven Sselph's `scraper` or Lars Muldjord's `Skyscraper`) you can choose whether your scraped data goes in 
 
 - `[SYSTEM_PATH]/gamelist.xml` (the rom folder) or
 - `~/.emulationstation/gamelists/[SYSTEM_NAME]/gamelist.xml`
