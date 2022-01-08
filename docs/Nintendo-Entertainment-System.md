@@ -7,7 +7,7 @@ _The Nintendo Entertainment System (NES) is an 8-bit home video game console tha
 
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
-| [lr-fceumm](https://github.com/libretro/libretro-fceumm) | nes  | .7z .fds .nes .zip | disksys.rom | /opt/retropie/configs/nes/retroarch.cfg |
+| [lr-fceumm](https://github.com/libretro/libretro-fceumm) | nes  | .7z .fds .nes .zip | disksys.rom, gamegenie.nes (optional) | /opt/retropie/configs/nes/retroarch.cfg |
 | [lr-nestopia](https://github.com/libretro/nestopia) | nes  | .7z .fds .nes .zip | disksys.rom | /opt/retropie/configs/nes/retroarch.cfg |
 | [lr-quicknes](https://github.com/libretro/QuickNES_Core) | nes  | .7z .nes .zip | none | /opt/retropie/configs/nes/retroarch.cfg |
 | [lr-fbneo](https://github.com/libretro/FBNeo) | nes  | .7z .zip | fdsbios.zip (containing `disksys.rom`) | /opt/retropie/configs/nes/retroarch.cfg |
@@ -69,3 +69,19 @@ Add this to your `/opt/retropie/configs/nes/retroarch.cfg` file. Make sure that 
 ```
 video_crop_overscan = false
 ```
+
+## Game Genie support
+
+Game Genie was a popular video game cheat cartridge that temporarily modify game data, allowing the player to cheat, manipulate various aspects of games, and sometimes access unused assets and functions. It was available for NES, SNES, Game Boy, Sega Genesis and Game Gear.
+
+Support for emulating a Game Genie cartridge is available in `lr-fceumm`:
+
+* switch on the `Game Genie Add-On (Restart)` [core option](RetroArch-Core-Options)
+* copy the Game Genie ROM file named `gamegenie.nes` in the BIOS folder (`/home/pi/RetroPie/BIOS`).
+    `gamegenie.nes` checksums - CRC: A5D0515C, MD5: E354FB5B20E1B9FE4E5CA330F9B3391A
+
+After enabling _Game Genie Add-On_ core option, launching a game will cause the Game Genie boot screen to appear. Codes can be entered with the gamepad (as on real hardware): D-Pad to move, A to select, B to delete. Pressing the _Start_ or _Select_ buttons will load the game with the cheat code applied.
+
+![](https://user-images.githubusercontent.com/38211560/138304680-7e433cfb-520f-47c3-8df4-26b62700b704.png)
+
+A list of known Game Genie codes can be found at the [gamegenie.com](https://www.gamegenie.com/cheats/gamegenie/nes/index.html) site.
