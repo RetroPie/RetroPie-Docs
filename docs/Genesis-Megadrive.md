@@ -1,1 +1,1 @@
-See [Mega Drive / Genesis](Mega-Drive-Genesis)
+See [Mega Drive / Genesis](Mega-Drive-Genesis.md)
