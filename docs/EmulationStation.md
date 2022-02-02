@@ -272,8 +272,8 @@ Linux (as user `pi`): `mkdir ~/.emulationstation/scripts`
 
 Inside the scripts folder, create a new directory for the kind of event you want to script:
 
-|        Name         |                                   When                                    |     Arguments (max. 2)      |
-|:-------------------|:-------------------------------------------------------------------------|:---------------------------|
+|        Name         |                                   When                                    |     Arguments (max. 4)      |
+|:--------------------|:--------------------------------------------------------------------------|:----------------------------|
 |       `quit`        |                              on program quit                              |        `%quit_mode%`        |
 |      `reboot`       |                 on system reboot (also calls quit first)                  |                             |
 |     `shutdown`      |                on system shutdown (also calls quit first)                 |                             |
@@ -281,14 +281,38 @@ Inside the scripts folder, create a new directory for the kind of event you want
 | `controls-changed`  |        on change of the control settings (also calls config first)        |                             |
 | `settings-changed`  | on change of the regular (non-control) settings (also calls config first) |                             |
 |   `theme-changed`   |          on change of theme (also calls settings-changed after)           | `%new_theme%` `%old_theme%` |
-|    `game-start`     |                          before starting a game                           |  `%rom_path%` `%rom_name%`  |
+|    `game-start`     |                          before starting a game                           |  `%rom_path%` `%rom_name%` `%game_name%` |
 |     `game-end`      |                          after finishing a game                           |                             |
-|       `sleep`       |       station is without user input for more than `systemSleepTime`       |        see note (\*)        |
-|       `wake`        |               station returns from sleep (i.e. user input)                |                             |
-|       `screensaver-start`        |             after screensaver starts                         |                             |
-|       `scrensaver-stop`        |               after screensaver stops                                     |                             |
+|       `sleep`       |       station is without user input for more than `systemSleepTime`       |        see note 1.          |
+|       `wake`        |               station returns from sleep (i.e. user input)                |        see note 1.          |
+|       `screensaver-start`      |             after screensaver starts                           |                             |
+|       `scrensaver-stop`        |               after screensaver stops                          |                             |
+|  `screensaver-game-select`     | screensaver is displaying the media for a game                 | `%system_name%` `%rom_path%` `%game_name%` `%media%` <br> see note 2. |
+|   `system-select`   |           after a system is selected                                      | `%system_name%`  `%access_type%` <br>see note 3. |
+|    `game-select`    |           after a game is selected in the gamelist                        | `%system_name%`  `%system_path%` `%game_name%` `%access_type%` <br> see note 4. |
 
-(\*) sleep/wake use no arguments. `systemSleepTime` is usually after `screenSaverTime` (both editable in the Screensaver Menu). A value of `0` disables sleep and the  screensaver respectively.
+**Notes**
+
+1. **sleep/wake** use no arguments.
+   
+   `systemSleepTime` is usually after `screenSaverTime` (both editable in the Screensaver Menu). A value of `0` disables sleep and the  screensaver respectively.
+
+2. **%media%** is one of:
+
+   * `randomvideo`: a video is played when screensaver is set to _Random Video_
+   * `slideshow`: a picture is displayed when screensaver is set to _Slideshow_
+
+3. **%access_type%** is one of:
+
+   * `gotostart`: when EmulationStation is set to start on a certain system and the system is opened on startup
+   * `input`: when the system is selected in the carousel
+
+4. **%access_type%** is one of:
+
+   * `requestedgame`: when EmulationStation is set to start on a certain system and the game is selected after startup
+   * `input`: when the game is selected while browsing a system's gamelist
+   
+   `%system_name%`, `%system_path%` and `%game_name%` will be set to **NULL** (literal string) when there are no games in the system
 
 #### 3. Script calling
 
