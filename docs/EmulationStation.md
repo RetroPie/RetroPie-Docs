@@ -289,7 +289,7 @@ Inside the scripts folder, create a new directory for the kind of event you want
 |       `scrensaver-stop`        |               after screensaver stops                          |                             |
 |  `screensaver-game-select`     | screensaver is displaying the media for a game                 | `%system_name%` `%rom_path%` `%game_name%` `%media%` <br> see note 2. |
 |   `system-select`   |           after a system is selected                                      | `%system_name%`  `%access_type%` <br>see note 3. |
-|    `game-select`    |           after a game is selected in the gamelist                        | `%system_name%`  `%system_path%` `%game_name%` `%access_type%` <br> see note 4. |
+|    `game-select`    |           after a game is selected in the gamelist                        | `%system_name%`  `%rom_path%` `%game_name%` `%access_type%` <br> see note 4. |
 
 **Notes**
 
