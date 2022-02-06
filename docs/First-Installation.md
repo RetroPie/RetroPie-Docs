@@ -46,6 +46,7 @@ The simplest way to get most of these components is through an all-in-one kit su
 * USB Keyboard - to help with some configuration that cannot be done with a game controller, or you can use [SSH](SSH)
 
 ## Installation
+**Feb. 2022 - Note for Pi 4 and Pi Zero 2W:** Recent Pi 4 boards, and the new Pi Zero 2W, require newer firmware and are not compatible with the official 4.7.1 image. You may install manually (use the legacy "Buster" OS) or use the latest weekly build of RetroPie from <https://files.retropie.org.uk/images/weekly/> (use the `rpi4_400.img.gz` file for Pi 4 or `rpi2_3_zero2w.img.gz` for the Pi Zero 2W.)
 
 1. First, insert the MicroSD card into into your computer
 2. [Download the RetroPie .img.gz image](https://retropie.org.uk/download/) from the official website for your Raspberry Pi model.
