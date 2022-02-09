@@ -31,7 +31,7 @@ To avoid having several menus for different arcade emulators, all arcade-based R
 
 [Important announcement about FBNeo romset constantly changing](https://retropie.org.uk/forum/topic/19741/new-fb-alpha-libretro-pre-v0-2-97-44)
 
-**Note: Please see [lr-neo](lr-fbneo) for information on how to configure specific features of this emulator.**
+**Note: Please see [lr-fbneo](lr-fbneo) for information on how to configure specific features of this emulator.**
 
 Accepted File Extensions: **.7z .zip**
 
@@ -52,21 +52,22 @@ High scores / NVRAM files:
 /home/pi/RetroPie/roms/neogeo/fbneo
 ```
 
-NOTE: If you have updated RetroPie from an existing installation since 27th May 2019, lr-fbneo now replaces lr-fbalpha. However if you have existing game remaps, samples, or high scores, you will need to rename the directories to match the above, otherwise lr-fbneo will not be able to find these files.
+NOTE: If you have updated RetroPie from an existing installation since 27th May 2019, lr-fbneo now replaces lr-fbalpha. However, if you have existing game remaps, samples, or high scores, you will need to rename the directories to match the above, otherwise lr-fbneo will not be able to find these files.
 
 **ROM Version**: Subset of latest MAME/HBMAME roms available
 
 **Total arcade games emulated: 5500+**
+
 * BIOS: 7
 * Samples: ?
 
 **FB Neo DAT Files**:
 
-[FB Neo (All Arcade)](https://github.com/libretro/FBNeo/raw/master/dats/FinalBurn%20Neo%20(ClrMame%20Pro%20XML%2C%20Arcade%20only).dat)
+* [FB Neo (All Arcade)](https://github.com/libretro/FBNeo/raw/master/dats/FinalBurn%20Neo%20(ClrMame%20Pro%20XML%2C%20Arcade%20only).dat)
 
-[FB Neo (NeoGeo only)](https://github.com/libretro/FBNeo/blob/master/dats/FinalBurn%20Neo%20(ClrMame%20Pro%20XML%2C%20Neogeo%20only).dat)
+* [FB Neo (NeoGeo only)](https://github.com/libretro/FBNeo/blob/master/dats/FinalBurn%20Neo%20(ClrMame%20Pro%20XML%2C%20Neogeo%20only).dat)
 
-[Other Dats for home console systems available here](https://github.com/libretro/fbneo/tree/master/dats)
+* [Other Dats for home console systems available here](https://github.com/libretro/fbneo/tree/master/dats)
 
 **Controls:**
 lr-fbneo utilises RetroArch configs. Add custom retroarch controls to the retroarch.cfg file in:
@@ -98,7 +99,10 @@ Config Dir: /opt/retropie/configs/fba/retroarch.cfg
 
 **FB Alpha v0.2.97.30 DAT File**: [FB Alpha v0.2.97.30.dat.zip](https://raw.githubusercontent.com/HerbFargus/retropie-dat/master/lr-fbalpha2012/FB%20Alpha%20v0.2.97.30.dat)
 
-**FB Alpha v0.2.97.30 Neo Geo Only DAT File**: [fba-lr-neogeo](https://raw.githubusercontent.com/HerbFargus/retropie-dat/master/lr-fbalpha2012/fba-lr-neogeo-only.xml)
+**FB Alpha v0.2.97.30 Neo Geo Only DAT File**: [fba-lr
+
+
+geo](https://raw.githubusercontent.com/HerbFargus/retropie-dat/master/lr-fbalpha2012/fba-lr-neogeo-only.xml)
 
 **Controls:**
 lr-fbalpha2012 utilises RetroArch configs. Add custom retroarch controls to the retroarch.cfg file in:
