@@ -1,6 +1,6 @@
 **Please check [FinalBurn-Neo](FinalBurn-Neo.md) for for basic information about controls and managing ROMs - this page is for specific information about the _lr-fbneo_ emulator's features.**
 
-*lr-fbneo* is a popular choice for the Raspberry Pi 2 and up, as it supports the latest FBNeo romset (v0.2.97.44), and a broad set of features. FBNeo also should always outperform MAME in the games they both support, as it is tailored for speed, rather than accuracy. Also, it is a libretro core, so enjoys all the benefits of that: centralised controller configurations, many customisation options, netplay, shader/overlay support, etc.
+*lr-fbneo* is a popular choice for the Raspberry Pi 2 and up, as it supports the latest FBNeo romset, and a broad set of features. FBNeo also should always outperform MAME in the games they both support, as it is tailored for speed, rather than accuracy. Also, it is a libretro core, so enjoys all the benefits of that: centralised controller configurations, many customisation options, netplay, shader/overlay support, etc.
 
 ## System menu
 
