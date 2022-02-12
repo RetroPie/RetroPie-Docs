@@ -31,14 +31,14 @@ theme:
     - media: "(prefers-color-scheme: light)"
       scheme: default
       toggle:
-        icon: material/weather-night
+        icon: material/lightbulb
         name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       accent: red
       primary: red
       toggle:
-        icon: material/weather-sunny
+        icon: material/lightbulb-outline
         name: Switch to light mode
 
 # Customisation
