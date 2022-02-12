@@ -14,7 +14,7 @@ This page is a resource for additional details on RetroPie's FinalBurn emulators
 
 | Emulator | Rom Folder | Extension | Required ROM Version | Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
-| [lr-fbneo](#lr-fbneo) | arcade **or** fba **or** neogeo  | .7z .zip | FB Neo v0.2.97.44| /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/fba/retroarch.cfg, **or** /opt/retropie/configs/neogeo/retroarch.cfg |
+| [lr-fbneo](#lr-fbneo) | arcade **or** fba **or** neogeo  | .7z .zip | - | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/fba/retroarch.cfg, **or** /opt/retropie/configs/neogeo/retroarch.cfg |
 | [lr-fbalpha2012](#lr-fbalpha2012) | arcade **or** fba **or** neogeo  | .7z .zip | FB Alpha v0.2.97.29 | /opt/retropie/configs/arcade/retroarch.cfg, **or** /opt/retropie/configs/fba/retroarch.cfg, **or** /opt/retropie/configs/neogeo/retroarch.cfg |
 | [PiFBA](#pifba) | arcade **or** fba **or** neogeo  | .zip | FB Alpha 0.2.96.71 | /opt/retropie/emulators/pifba/fba2x.cfg **or** /opt/retropie/configs/fba/fba2x.cfg |
 
@@ -27,9 +27,9 @@ To avoid having several menus for different arcade emulators, all arcade-based R
 ## Emulators
 
 ### lr-fbneo
-[Visit the FinalBurn Neo homepage on github](https://github.com/libretro/fbneo)
 
-[Important announcement about FBNeo romset constantly changing](https://retropie.org.uk/forum/topic/19741/new-fb-alpha-libretro-pre-v0-2-97-44)
+ * [FinalBurn Neo Github project page](https://github.com/libretro/fbneo)
+ * [Important announcement about FBNeo romset constantly changing](https://retropie.org.uk/forum/topic/19741/new-fb-alpha-libretro-pre-v0-2-97-44)
 
 **Note: Please see [lr-fbneo](lr-fbneo) for information on how to configure specific features of this emulator.**
 
@@ -64,9 +64,7 @@ NOTE: If you have updated RetroPie from an existing installation since 27th May 
 **FB Neo DAT Files**:
 
 * [FB Neo (All Arcade)](https://github.com/libretro/FBNeo/raw/master/dats/FinalBurn%20Neo%20(ClrMame%20Pro%20XML%2C%20Arcade%20only).dat)
-
 * [FB Neo (NeoGeo only)](https://github.com/libretro/FBNeo/blob/master/dats/FinalBurn%20Neo%20(ClrMame%20Pro%20XML%2C%20Neogeo%20only).dat)
-
 * [Other Dats for home console systems available here](https://github.com/libretro/fbneo/tree/master/dats)
 
 **Controls:**
