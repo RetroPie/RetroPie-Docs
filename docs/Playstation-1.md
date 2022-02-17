@@ -10,9 +10,8 @@ _The PlayStation is a 5th generation video game console released by Sony in 1994
 | [lr-pcsx_rearmed](https://github.com/libretro/pcsx_rearmed) | psx  | .cue .cbn .chd .img .iso .m3u .mdf .pbp .toc .z .znx | psxonpsp660.bin scph101.bin scph7001.bin scph5501.bin scph1001.bin | /opt/retropie/configs/psx/retroarch.cfg |
 | [PCSX-ReARMed](https://github.com/notaz/pcsx_rearmed) | psx  | .cue .cbn .img .iso .m3u .mdf .pbp .toc .z .znx | SCPH1001.BIN | /opt/retropie/configs/psx/pcsx.cfg |
 | [lr-beetle-psx](https://github.com/libretro/beetle-psx-libretro) | psx  | .cue .ccd .chd .exe .iso .m3u .pbp .toc | scph5500.bin scph5501.bin scph5502.bin | /opt/retropie/configs/psx/retroarch.cfg |
-| [lr-duckstation](https://github.com/stenzek/duckstation) | psx  | .exe .cue .bin .chd .psf .m3u .pbp | any valid BIOS dumps | /opt/retropie/configs/psx/duckstation.cfg |
 
-## Emulators: [lr-pcsx_rearmed](https://github.com/libretro/pcsx_rearmed), [PCSX-ReARMed](https://github.com/notaz/pcsx_rearmed), [lr-beetle-psx](https://github.com/libretro/beetle-psx-libretro), [lr-duckstation](https://github.com/stenzek/duckstation).
+## Emulators: [lr-pcsx_rearmed](https://github.com/libretro/pcsx_rearmed), [PCSX-ReARMed](https://github.com/notaz/pcsx_rearmed), [lr-beetle-psx](https://github.com/libretro/beetle-psx-libretro)
 
 ### lr-pcsx_rearmed
 
@@ -25,10 +24,6 @@ Recommended for Raspberry Pi 0/1 due to its lower system requirements, though ex
 ### lr-beetle-psx
 
 Recommended for more powerful x86 systems. It is accurate and includes several enhanced graphical features. Not available for ARM systems (like the Raspberry Pi) due to its poor performance on ARM.
-
-### lr-duckstation
-
-Experimental but promising fast, accurate emulation, including various graphial enhancements. Supported on all architectures aside from ARMv6 (Raspberyy Pi 0/1) and 32-bit x86.
 
 ## ROMS
 Accepted File Extensions: **.cue .ccd .chd .exe .iso .m3u .pbp .toc**
@@ -56,7 +51,7 @@ sudo apt install ecm
 ecm-uncompress game-file.bin.ecm
 ```
 
-Alternatively, on Windows, use [ECM Decompressor](https://www.romhacking.net/utilities/1177/), or on Ubuntu 19.X+(or derivative), install ecm from the ubuntu archive with the following:
+Alternatively, on Windows, use [ECM Decompressor](https://www.romhacking.net/utilities/1177/) or, on Ubuntu 19.X+ (or derivative), install `ecm` from the Ubuntu archive with the following:
 ```
 curl -sLO http://archive.ubuntu.com/ubuntu/pool/universe/c/cmdpack/ecm_1.03-1build1_amd64.deb && sudo dpkg -i ecm_1.03-1build1_amd64.deb && sudo rm ecm_1.03-1build1_amd64.deb
 ```
@@ -72,7 +67,6 @@ All supported PlayStation emulators have support for the CHD (V5) archive format
 #### M3U playlists for .cue & .bins, or .chds
 
 For multi-disc games on .cue & .bin ROM pairs or .chds, you can create a .m3u playlist file to enable you to change discs by the above method. Replace the `.cue` or `.chd` extension for each disc of the game with an appropriate `.CD1`, `.CD2`, etc so that EmulationStation will list only the `.m3u` and not the individual discs.
-**NOTE:** **lr-duckstation** does not support extension renaming within .m3u playlists.
 
 Example for Final Fantasy VII:
 
@@ -145,15 +139,9 @@ The BIOS is automatically chosen based upon the region of the ROM.
 
 The recognized BIOS filename is case-sensitive (must be in all lowercase).
 
-### lr-duckstation
-
-Any valid BIOS dump from real hardware is supported (too many to list). As such, any of the above BIOS dumps should be supported, when named appropriately with .bin extension.
-
-The BIOS is automatically chosen based upon the region of the ROM.
-
 ## Controls
 
-### lr-pcsx_rearmed, lr-beetle-psx & lr-duckstation Controls
+### lr-pcsx_rearmed & lr-beetle-psx
 lr-pcsx_rearmed and lr-beetle-psx utilize RetroArch configurations.
 
 Add custom RetroArch controls to the retroarch.cfg file in
