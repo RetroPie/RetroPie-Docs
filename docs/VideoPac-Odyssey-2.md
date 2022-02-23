@@ -32,6 +32,13 @@ Place your BIOS in
 /home/pi/RetroPie/BIOS
 ```
 
+### Voice support
+
+In order to emulator The Voice expansion module, additional voice samples need to be added to the `/home/pi/RetroPie/BIOS/voice` folder. There are two sets of voice samples: 
+ 
+ * `mainsamp.zip`, which contains the main voice samples
+ * `sidsamp.zip`,  which contains the samples used by the game _Sid the Spellbinder_. 
+ 
 ## Controls
 
 Really it says it uses Retroarch configurations and some gamepads work but for almost all of your games you will need a keyboard. Typically you will press 1 to start a game- for people who grew up in the 70's controls might be more intuitive, but they can be tricky to figure out as they change for each game...
