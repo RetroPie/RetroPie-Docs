@@ -72,6 +72,7 @@ cheevos_test_unofficial = "false"
 * Mega Drive / Genesis
 * SG-1000
 * Master System
+* MSX
 * Game Gear
 * Neo Geo Pocket
 * Neo Geo Pocket Color
@@ -80,6 +81,7 @@ cheevos_test_unofficial = "false"
 * Atari Lynx
 * PC Engine
 * PlayStation
+* PlayStation Portable (PSP)
 * Nintendo DS
 * ColecoVision
 * Arcade (Neo Geo, CPS1, CPS2 and CPS3) - *only with the fbneo core*.
