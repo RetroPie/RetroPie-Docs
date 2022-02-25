@@ -39,7 +39,7 @@ Some sound effects in a few older (typically pre-1986) arcade games are difficul
 ```
 
 ## Neo Geo UNIBIOS
-For Neo Geo games, you may want to use the [UNIVERSE BIOS/UNIBIOS](http://unibios.free.fr/) - an advanced Neo Geo bios that allows region selection, cheats, dip-switch control, and more. To active, change the **Core Option** for **Neo Geo mode** to **UNIBIOS**. See [Setting Core Options](RetroArch-Core-Options#setting-core-options).
+For Neo Geo games, you may want to use the [UNIVERSE BIOS/UNIBIOS](http://unibios.free.fr/) - an advanced Neo Geo bios that allows region selection, cheats, dip-switch control, and more. To enable it, change the **Core Option** for **Neo-Geo mode** to **UNIBIOS**. See [Setting Core Options](RetroArch-Core-Options#setting-core-options).
 
 Note that this will automatically use the latest version of the UNIBIOS avaialble in your `neogeo.zip`. If you want to select a specific version, use the **BIOS** Core Option, however note that this setting applies per-game, rather than system-wide, like the **Neo Geo mode** setting.
 
