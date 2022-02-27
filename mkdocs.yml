@@ -27,6 +27,8 @@ theme:
   language: 'en'
   logo: 'images/logo.png'
   favicon: 'images/logo.png'
+  features:
+    - navigation.top
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
