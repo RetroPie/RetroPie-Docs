@@ -35,6 +35,13 @@ More details about video configuration options - [Video Options in the official 
 
         hdmi_group=1
         hdmi_mode=16
+        
+    When using the 2nd HDMI port, the lines above need to be set to:
+    
+       hdmi_group:1=1
+       hdmi_mode:1=16
+       
+    To choose another video resolution, consult the options available for `hdmi_group`/`hdmi_mode` in the [Official RaspberryPi documentation](https://www.raspberrypi.com/documentation/computers/config_txt.html#hdmi_mode).
 
     You'll still be able to use 4k video resolutions in RetroPie for Kodi or the Pixel desktop, but the default resolution at boot will be 1080p.
   
