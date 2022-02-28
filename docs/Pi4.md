@@ -18,7 +18,7 @@ Composite video from the analog RCA port is not enabled by default on the Pi 4B,
 
 **IMPORTANT**: the configuration comes with a performance penalty. Because composite video requires a very specific clock, setting that clock to the required speed on the Pi 4 means that other clocks connected to it are detrimentally affected, which slightly slows down the entire system.
 
-More details about video configuration options - [Video Options in the official Raspberry Pi documentation](https://www.raspberrypi.org/documentation/configuration/config-txt/video.md).
+More details about video configuration options - [Video Options in the official Raspberry Pi documentation](https://www.raspberrypi.com/documentation/computers/configuration.html#hdmi-configuration).
 
 ### 4k video display
 
