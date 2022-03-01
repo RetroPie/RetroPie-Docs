@@ -292,7 +292,7 @@ By default openMSX will emulate a MSX2+ using the C-BIOS ROM. To change this, yo
 When the emulator is running, press <kbd>F10</kbd> and you will get a overlay where you can type commands, here you need to type the following to change the default MSX to be emulated:
 
 ````
-set default_emulator turbor
+set default_machine turbor
 ````
 
 In the above example we change the default to the MSX TurboR, which was the last MSX machine produced. Other options could be `msx1`, `msx2` or `msx2plus`. There are many MSX machines that can potentially be emulated, for a list look in the directory `/opt/retropie/emulators/openmsx/share/machines` or online [here](https://github.com/openMSX/openMSX/tree/master/share/machines). If, for instance, you wanted to emulate a _Spectravideo SVI-728_, you will find in that directory a file `Spectravideo_SVI-728.xml`. Simply use the name of the file, excluding the .xml extension, as the machine name.
