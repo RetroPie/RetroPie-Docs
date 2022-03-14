@@ -2,6 +2,61 @@
 
 This page is a list of all of the changelogs for each version of RetroPie. For a complete list of all commits to the source code see [here:](https://github.com/RetroPie/RetroPie-Setup/commits/master)  
 
+### Version 4.8: (Mar 14, 2022)
+
+Changes since 4.7.1
+
+* On screen keyboard for entering WiFi password in RetroPie-Setup
+* Improved joystick support in RetroPie-Setup dialogs.
+* Improvement to RetroPie package management and updating.
+* retroarch - updated to v1.10.0
+* Updates to many libretro cores - in depth details about libretro changes can be found on their site - [https://www.libretro.com](https://www.libretro.com)
+* EmulationStation updated to v2.10.2
+   * Better Random: Perfect shuffle of systems, games and screensaver items
+   * Fixes for event handling so startup events are cleared
+   * Pixel positioning/sizing support for themes
+   * Added a progress bar during loading + threaded loading for systems (threaded loading is disabled by default currently)
+   * Added a cache for stat checks (performance)
+   * Support for new scripting events - switching systems/selecting games/screensaver videos and image switching/etc.
+   * Improvements to text wrapping for CJK glyphs
+   * Updated Arcade resource lists (used to hide MAME devices/bioses and to provide friendly names for zip archives)
+   * Ability to use full screen paging with LB/RB
+* hatari - updated to v2.3.1
+* xpadneo (Xbox One Bluetooth driver) - updated to v0.9
+* zesarux - updated to v9.1
+* lzdoom - updated to 3.87c
+* xroar - updated to 1.0.9
+* srb2 - updated to 2.2.9
+* ags - switch to v3.5.1 release branch
+* eduke32 - fix for gameplay bug in E1L4
+* scummvm - updated to 2.5.1, first release since the ResidualVM merge includes bug-fixes and new games.
+* cgenius - updated to the latest stable version (Added Cosmos engine, GUI, sound and controller improvements)
+* tyrquake - updated to 0.69
+* yquake2 - updated to v8.00 and added add-ons game source
+* vice - switch to v3.5 branch
+* advmame - fixes for building on GCC 10+
+* audiosettings - add PulseAudio configuration support
+* esthemes - support branches, to allow multiple themes on a single repo and many new EmulationStation themes added
+* bluetooth - various fixes and improvements
+* kodi - scriptmodule compatibility improvements on Ubuntu
+* Improvements to handling of dkms drivers.
+* New modules
+   * lr-stella - added upstream / current Stella libretro core (Atari 2600 emulator)
+   * lr-tic80 - TIC-80 is a free and open source fantasy computer for making, playing and sharing tiny games (see [https://tic80.com](https://tic80.com))
+   * lr-retro8 - retro8 is an open source re-implementation of the PICO-8 fantasy console.
+   * yabasanshiro - standalone Saturn emulator based on Yabause (RPi4 only)
+   * hypseus - Hyseus Singe (Daphne) SDL2 Laserdisc emulator
+   * ppsspp-1.5.4 - Added old ppsspp module (performs better for some users)
+   * dosbox-staging - an enhanced and modernized DosBox fork
+   * lr-uae4arm - libretro core of the uae4arm Amiga emulator.
+
+### Version 4.7.1: (Nov 4, 2020))
+
+Changes since 4.7
+
+* Fixed performance issue with EmulationStation on Raspberry PI 0/1/2/3 with legacy drivers (Switch back to GLESv1 for now until issues with ES GLESv2 renderer are sorted)
+* Fixed ES scraper.
+
 ### Version 4.7: (Nov 2, 2020)
 
 Changes since 4.6
