@@ -10,7 +10,7 @@ Within this sub-menu are all the options available to that Core. Navigate to the
 
 ### Setting Core Options per-ROM
 
-You may prefer to apply Core Options to a specific ROM, and not for all ROMs within that core. To do so, follow the above instructions, but instead of exiting the RGUI at the end, select **Create game-options file** at the top of the Options menu. This will create a Core Options `.opt` file specifically for that ROM within:
+You may prefer to apply Core Options to a specific ROM, and not for all ROMs within that core. To do so, follow the above instructions, but instead of exiting the RGUI at the end, select **Manage Core Options ▶ Save Game Options** at the top of the Options menu. This will create a Core Options `.opt` file specifically for that ROM within:
 
 ```
 /opt/retropie/configs/all/retroarch/config/core
