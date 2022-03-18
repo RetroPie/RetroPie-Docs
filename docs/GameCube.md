@@ -6,15 +6,15 @@ _The GameCube is a home video game console that was released by Nintendo on Sept
 
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
-| [dolphin](https://github.com/dolphin-emu/dolphin.git) | gc  | .iso | none | /opt/retropie/configs/gc/Config |
+| [dolphin](https://github.com/dolphin-emu/dolphin.git) | gc  | .ciso .gcm .gcz .iso .rvz | none | /opt/retropie/configs/gc/Config |
 
-> **Note: This is only for x86 builds- Not the Raspberry Pi!.**
+> **Note**: This is only for x86 builds- Not the Raspberry Pi!
 
-## Emulator: [dolphin](https://github.com/dolphin-emu/dolphin.git)
+## Emulator: [Dolphin](https://github.com/dolphin-emu/dolphin.git)
 
 ## ROMS
 
-Accepted File Extensions: **.iso**
+Accepted File Extensions: **.ciso .gcm .gcz .iso .rvz*
 
 Place your GameCube ROMs in
 ```
