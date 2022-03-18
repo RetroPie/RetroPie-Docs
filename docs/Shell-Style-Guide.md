@@ -1,30 +1,5 @@
 # RetroPie-Setup Script Code Style Guide Snippets
 
-<!-- MarkdownTOC -->
-
-- [Introduction](#introduction)
-- [Features and Bugs](#features-and-bugs)
-    - [Command Substitution](#command-substitution)
-    - [Test and Square Braces](#test-and-square-braces)
-    - [Testing Strings](#testing-strings)
-- [Naming Conventions](#naming-conventions)
-    - [Function Names](#function-names)
-    - [Variable Names](#variable-names)
-    - [Constants and Environment Variable Names](#constants-and-environment-variable-names)
-    - [Read-only variables](#read-only-variables)
-    - [Use Local Variables](#use-local-variables)
-- [Comments](#comments)
-- [Function Comments](#function-comments)
-    - [Implementation Comments](#implementation-comments)
-- [Formatting](#formatting)
-    - [Indentation](#indentation)
-    - [Pipelines](#pipelines)
-    - [Braces](#braces)
-- [Conclusion](#conclusion)
-
-<!-- /MarkdownTOC -->
-
-
 ## Introduction
 
 This document describes the style guide that has to be used for the development of the RetroPie-Setup Script sources. This guide is adapted from the [Google Shell Style Guide](https://google.github.io/styleguide/shell.xml).
