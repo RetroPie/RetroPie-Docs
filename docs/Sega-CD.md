@@ -8,7 +8,7 @@ The Sega CD was an add-on to the Sega Mega Drive/Genesis. It was released in 199
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
 | [lr-genesis-plus-gx](https://github.com/libretro/Genesis-Plus-GX) | segacd | .bin .chd .cue .iso .m3u | bios_CD_U.bin, bios_CD_E.bin, bios_CD_J.bin | /opt/retropie/configs/segacd/retroarch.cfg |
-| [lr-picodrive](https://github.com/libretro/picodrive) | segacd | .bin .cue .iso .m3u | us_scd1_9210.bin, eu_mcd1_9210.bin, jp_mcd1_9112.bin | /opt/retropie/configs/segacd/retroarch.cfg |
+| [lr-picodrive](https://github.com/libretro/picodrive) | segacd | .bin .chd .cue .iso .m3u | us_scd1_9210.bin, eu_mcd1_9210.bin, jp_mcd1_9112.bin | /opt/retropie/configs/segacd/retroarch.cfg |
 
 ## Emulators: [lr-genesis-plus-gx](https://github.com/libretro/Genesis-Plus-GX), [lr-picodrive](https://github.com/libretro/picodrive)
 **lr-genesis-plus-gx** is recommended for the Pi 2/3 as it has better accuracy. 
@@ -46,7 +46,7 @@ Fahrenheit (Disc 2).cue
 
 ## CHD Files
 
-lr-genesis-plus-gx has support for the CHD (V1-V5) archive format. This format will save space and allow you to keep your Mega CD/Sega CD ROM folder tidy. See [Creating CHDs from CD-ROMS](CHD-files.md#creating-chds-from-cd-roms).
+lr-genesis-plus-gx and lr-picodrive have support for the CHD (V1-V5) archive format. This format will save space and allow you to keep your Mega CD/Sega CD ROM folder tidy. See [Creating CHDs from CD-ROMS](CHD-files.md#creating-chds-from-cd-roms).
 
 * Corpse Killer 32x version only (1 disc)
 * Dracula Unleashed (2 discs)
@@ -56,7 +56,7 @@ lr-genesis-plus-gx has support for the CHD (V1-V5) archive format. This format w
 * Penn & Teller - Smoke and Mirrors (2 disc)
 * Sherlock Holmes - Consulting Detective Volume II (2 discs)
 * Prize Fighter (2 discs) (can be played as individual discs in chd file format with lr-genesis-plus-gx)
-* Slam City with Scottie Pippen (4 discs) (non-32X version can be played as individual discs in chd file format with lr-genesis-plus-gx)
+* Slam City with Scottie Pippen (4 discs) (non-32X version can be played as individual discs in chd file format with either lr-genesis-plus-gx or lr-picodrive; 32x version can be played as individual discs in chd file format only with lr-picodrive)
 * Supreme Warrior (2 discs, 32x version only)
 * Surgical Strike (1 disc, 32x version only)
 
