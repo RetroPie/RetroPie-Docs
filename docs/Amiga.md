@@ -9,7 +9,7 @@ _The Amiga was a family of personal computers released by Commodore in the 1980'
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
 | [Amiberry](https://github.com/midwan/amiberry) | amiga  | .lha .zip .uae .adf .dms .fdi .ipf .hdf .hdz | kick33180.A500, kick34005.A500, kick40068.A1200 | /opt/retropie/configs/amiga/retroarch.cfg |
-| [lr-puae](https://github.com/libretro/libretro-uae) | amiga | .zip .uae .adf .dms .fdi .ipf .hdf .hdz .m3u | kick34005.A500, kick40063.A600, kick40068.A1200 | /opt/retropie/configs/amiga/retroarch.cfg |
+| [lr-puae](https://github.com/libretro/libretro-uae)/[lr-puae2021](https://github.com/libretro/libretro-uae/tree/2.6.1) | amiga | .zip .uae .adf .dms .fdi .ipf .hdf .hdz .m3u | kick34005.A500, kick40063.A600, kick40068.A1200 | /opt/retropie/configs/amiga/retroarch.cfg | | amiga | .zip .uae .adf .dms .fdi .ipf .hdf .hdz .m3u | kick34005.A500, kick40063.A600, kick40068.A1200 | /opt/retropie/configs/amiga/retroarch.cfg |
 | [UAE4ALL2](https://github.com/RetroPie/uae4all2) | amiga  | .adf | kick12.rom, kick13.rom, kick20.rom, kick31.rom | Hardcoded |
 | [UAE4ARM](https://github.com/Chips-fr/uae4arm-rpi/) | amiga  | .zip .adf .dms .exe .adz .rp9 | kick13.rom, kick20.rom, kick31.rom | Hardcoded |
 
@@ -50,9 +50,14 @@ Default controller choice can be edited in `/opt/retropie/configs/amiga/amiberry
 
 It is possible to customise controls for individual games using the Amiberry UI. For full documentation, please refer [here](https://github.com/midwan/amiberry/wiki/Customised-Controls).
 
-## Emulator: [lr-puae](https://github.com/libretro/libretro-uae)
+## Emulator: [lr-puae](https://github.com/libretro/libretro-uae)/[lr-puae2021](https://github.com/libretro/libretro-uae/tree/2.6.1)
 
-lr-puae is an experimental emulator.  It can be installed from the experimental section of the [RetroPie-Setup Script.](Updating-RetroPie#using-the-retropie-setup-script)
+The `lr-puae` is libretro Amiga core based on [WinUAE](https://www.winuae.net). There are 2 versions available:
+
+ * `lr-puae2021` (version 2.6.1) is recommended for low-power devices (Raspberry PI or other ARM based systems).
+ * `lr-puae` (version 4.5.0) is a more accurate and performance demanding version, recommended for x86/PC systems.
+  
+  Both versions can be installed from the optional section of the [RetroPie-Setup Script](Updating-RetroPie#using-the-retropie-setup-script).
 
 ### BIOS
 
@@ -83,7 +88,7 @@ Note:
 - For CD32 emulation, either **kick40060.CD32**(CD32 KS + extended v3.1 rev 40.060) or both **kick40060.CD32**(CD32 Kickstart v3.1 rev 40.060) and **kick40060.CD32.ext**(CD32 extended ROM rev 40.060)
 ### Controls
 
-lr-puae uses Retroarch input configurations.
+PUAE uses Retroarch input configurations.
 
 Add custom RetroArch controls to the `retroarch.cfg` file in
 ```shell
@@ -159,7 +164,7 @@ Some games use mouse instead of joystick. D-Pad can be switched between joystick
 
 ### Core configuration
 
-The P-UAE core has a comprehesive set of configuration options which control the emulation experience. A comprehensive list can be found [here](https://docs.libretro.com/library/puae/#core-options).
+The PUAE core has a comprehesive set of configuration options which control the emulation experience. A comprehensive list can be found [here](https://docs.libretro.com/library/puae/#core-options).
 
 ### Model selection
 
