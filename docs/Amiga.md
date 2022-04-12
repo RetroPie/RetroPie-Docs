@@ -86,6 +86,7 @@ Note:
 - The core has a built-in AROS fallback Kickstart, which is used when the real Kickstart is not found. It can be compatible enough for some A500 games.
 - Kickstart v1.2 (1) is only needed for WHDLoad Arcadia games
 - For CD32 emulation, either **kick40060.CD32**(CD32 KS + extended v3.1 rev 40.060) or both **kick40060.CD32**(CD32 Kickstart v3.1 rev 40.060) and **kick40060.CD32.ext**(CD32 extended ROM rev 40.060)
+
 ### Controls
 
 PUAE uses Retroarch input configurations.
@@ -98,16 +99,19 @@ For more information on custom RetroArch controls see: [RetroArch Configuration]
 
 #### Default Controls
 
-| RetroPad Button| Action  |
-| :------------- | :------- |
-| D-Pad          | Joystick |
-| Left Analog    | Mouse    |
-| Righ Analog    | Mouse    |
-| A  | Fire button 2 / Blue |
-| B  | Fire button 1 / Red  |
-| L2  | Left mouse button   |
-| R2  | Right mouse button  |
-| Select | Toggle virtual keyboard |
+| RetroPad button | Action                        |
+|:-----------------|:-------------------------------|
+| D-Pad           | Joystick                      |
+| Left Analog     | Mouse                         |
+| Right Analog    | Mouse                         |
+| B               | Fire button 1 / Red           |
+| A               | Fire button 2 / Blue          |
+| X               | Space                         |
+| L2              | Left mouse button             |
+| R2              | Right mouse button            |
+| Select (Short)  | Toggle virtual keyboard       |
+| Select (Long)   | Toggle statusbar              |
+| Select (Hold)   | Fast-Forward                  |
 
 | Keyboard key.  | Action   |
 | :------------- | :------- |
