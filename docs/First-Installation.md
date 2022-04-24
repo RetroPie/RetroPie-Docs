@@ -11,9 +11,8 @@ This guide will give you the very basics to get you up and running from a blank 
 
 The following video will also walk you through the installation process. Otherwise read on! 
 
-<a href="https://www.youtube.com/watch?v=E1sbnPZ_A8w
-" target="_blank"><img src="https://user-images.githubusercontent.com/540857/107464585-9fe22e00-6b2e-11eb-9927-b1ec32360838.jpg" 
-alt="RetroPie First Installation Video" border="10" /></a>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/E1sbnPZ_A8w" title="RetroPie First Installation Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 ## Hardware
 
