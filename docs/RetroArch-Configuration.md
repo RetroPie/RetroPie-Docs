@@ -47,7 +47,7 @@ After you've configured your controller the autoconfig will be created here:
 
 This is an example config for a USB SNES controller
 
-```
+``` ini title='USB gamepad.cfg'
 input_device = "USB gamepad           "
 input_driver = "udev"
 input_r_btn = "5"
@@ -111,7 +111,8 @@ Using these values, you can edit the .cfg file for that controller as needed.  F
 
 **Video Tutorial**
 
-* [RetroPie: Using hotkeys in retroarch - mapping to joypad by Floob](https://www.youtube.com/watch?v=DBnKFRflEV4)
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/DBnKFRflEV4" title="RetroPie: Using hotkeys in Retroarch" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 
 ## Hardcoded Configurations
 
@@ -153,7 +154,7 @@ The `ROMNAME` includes the original file extension before the `.cfg`, e.g. `supe
 
 #### Example Default Per-System retroarch.cfg
 
-```
+``` ini
 # Settings made here will only override settings in the global retroarch.cfg if placed above the #include line
 
 input_remapping_directory = /opt/retropie/configs/megadrive/
@@ -166,7 +167,7 @@ input_remapping_directory = /opt/retropie/configs/megadrive/
 
 **Note** the values below are for one person's controller, your values may differ. Make sure that these values are placed **above** the `#includeconfig` line:
 
-```
+``` ini title='retroarch.cfg'
 # Settings made here will only override settings in the global retroarch.cfg if placed above the #include line
 
 input_remapping_directory = /opt/retropie/configs/megadrive/
@@ -218,7 +219,7 @@ input_state_slot_decrease_axis = -0
 
 #### Example Per-ROM Override retroarch.cfg
 
-```
+``` ini
 aspect_ratio_index = "19"
 
 # Never save-on-exit after an override config
@@ -246,13 +247,17 @@ Remaps are saved as `.rmp` files in directory:
 
 ![Retroarch Controls Cheat-Sheet](https://user-images.githubusercontent.com/3280180/54955719-78771d80-4f24-11e9-9fca-a1a58c52dc8c.PNG)
 
-**Video Tutorials**
+### Video Tutorials
 
-* Core input remapping: [Remapping your controller](https://www.youtube.com/watch?v=liJKFUZX4PM) by Floob
-* Testing Joypad: [Testing joystick](https://www.youtube.com/watch?v=fcRVcPkpLfQ) by Floob
-* [Configuring USB Controllers With Retroarch, Controller not configured fix](https://www.youtube.com/watch?v=AhkEnDdygbQ) by Herb Fargus
-* [Configure a wireless PS3 controller with RetroPie 3](https://www.youtube.com/watch?v=oCq6drv5wbE) by Floob
-* [XBox 360 Wireless Controller Configuration](https://www.youtube.com/watch?v=IjEA85BUDKs) by Herb Fargus
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/liJKFUZX4PM" title="Remapping your controller" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/fcRVcPkpLfQ" title="Testing your joystick" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/fcRVcPkpLfQ" title="Configuring USB Controllers With Retroarch" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/IjEA85BUDKs" title="XBox 360 Wireless Controller Configuration" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### Default Core Controls for All Emulators
 
