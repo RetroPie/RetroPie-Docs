@@ -33,13 +33,11 @@ Before proceeding, make sure the `usbromservice` (Optional packages section) is 
 Once the folder structure is copied over the USB will be mounted over the RetroPie folder so any ROMs you add to your Pi will be run off of the USB. 
 
 **Note: XU4 owners**
-The XU4 and its OS do not respond the same as the Raspberry Pi with Rasbian and it does not provide a way to know when the sync is completed. It is recommended that you allow a decent amount of time for the process to sync.
+The XU4 and its OS do not respond the same as the Raspberry Pi with Raspbian and it does not provide a way to know when the sync is completed. It is recommended that you allow a decent amount of time for the process to sync.
 
 ### Video Tutorial
 
-<a href="https://www.youtube.com/watch?v=KBhDmGaTQG8
-" target="_blank"><img src="https://img.youtube.com/vi/KBhDmGaTQG8/maxresdefault.jpg" 
-alt="Running Roms from USB" width="1280" height="400" border="10" /></a>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/KBhDmGaTQG8" title="Running Roms from USB" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Manual Mount
 
