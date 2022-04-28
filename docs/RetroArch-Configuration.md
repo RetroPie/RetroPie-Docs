@@ -254,7 +254,7 @@ Remaps are saved as `.rmp` files in directory:
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/fcRVcPkpLfQ" title="Testing your joystick" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/fcRVcPkpLfQ" title="Configuring USB Controllers With Retroarch" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/AhkEnDdygbQ" title="Configuring USB Controllers With Retroarch" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/IjEA85BUDKs" title="XBox 360 Wireless Controller Configuration" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
