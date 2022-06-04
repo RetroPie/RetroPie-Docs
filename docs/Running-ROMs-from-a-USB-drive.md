@@ -86,7 +86,7 @@ sudo mv -v /home/pi/RetroPie/* /media/usb0/
 
 After this, the USB directory structure should look something like:
 ```
-pi@retropie:~ $ ls /media/usb0 -l
+pi@retropie:~ $ ls -l /media/usb0
 total 96
 drwxrwxrwx  8 root root 16384 Jun 15 00:17 BIOS
 drwxrwxrwx  3 root root 16384 Apr 22 17:05 retropiemenu
