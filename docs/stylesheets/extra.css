@@ -1,4 +1,4 @@
-:root {
+:root > * {
     /* Primary color shades */
     --md-primary-fg-color: #222;
     --md-primary-fg-color--dark: #222;
@@ -26,7 +26,7 @@ article a:hover {
 /* Force header height and color */
 .md-header {
     height: 50px;
-		background-color: #222;
+    background-color: #222;
 }
 
 .md-header-nav__button.md-logo {
