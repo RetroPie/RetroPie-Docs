@@ -12,13 +12,17 @@ Each emulator is optimised for different hardware and different games so read th
 
 RetroPie's arcade emulators come in two main flavors: [MAME](MAME) and [FinalBurn](FinalBurn-Neo).
 
-[MAME](MAME) is the most well-known and works with thousands of games. [FinalBurn](FinalBurn-Neo) is optimized for classic beat-em-up games like those from Neo Geo and Capcom. RetroPie includes multiple versions of both MAME and FinalBurn. Older versions require less processing power, but newer versions support more games and feature more accurate emulation.
+[MAME](MAME) is the most well-known and works with thousands of games, its focus is preservation. 
+
+[FinalBurn](FinalBurn-Neo) focus on 2D systems and playability, it includes support for features that have no place in a preservation-focused emulator (netplay, runahead, retroachievements, ...)
+
+RetroPie includes multiple versions of both MAME and FinalBurn. Older versions usually require less processing power, but newer versions support more games and feature more accurate emulation.
 
 Use this table as a guide when choosing an emulator version:
 
 | Raspberry Pi version | Recommended MAME Emulator | Recommended FB Emulator |
 | :---: | :---: | :---: |
-|2 or 3| `lr-mame2003` | `lr-fbneo`|
+|2, 3 or 4| `lr-mame2003` | `lr-fbneo`|
 |1 or Zero| `mame4all` | `pi-fba`|
 
 Learn about other available versions on the pages about [MAME](MAME) and [FinalBurn Neo](FinalBurn-Neo).
@@ -36,7 +40,7 @@ There are a number of different rom set versions. Different versions contain dif
 | [mame4all](MAME) | MAME 0.37b5 | 2270 |
 | [lr-mame2003](MAME) | MAME 0.78 | 4720 |
 | [pifba](FinalBurn-Neo#pifba) | FB Alpha v0.2.96.71 | 684 |
-| [lr-fbneo](FinalBurn-Neo) | FB Neo v1.0.0.XX | 6746 |
+| [lr-fbneo](FinalBurn-Neo) | FB Neo v1.0.0.XX | 7030 |
 
 To sum up, for best results:
 

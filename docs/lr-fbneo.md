@@ -1,6 +1,6 @@
 **Please check [FinalBurn-Neo](FinalBurn-Neo.md) for for basic information about controls and managing ROMs - this page is for specific information about the _lr-fbneo_ emulator's features.**
 
-*lr-fbneo* is a popular choice for the Raspberry Pi 2 and up, as it supports the latest FBNeo romset, and a broad set of features. FBNeo also should always outperform MAME in the games they both support, as it is tailored for speed, rather than accuracy. Also, it is a libretro core, so enjoys all the benefits of that: centralised controller configurations, many customisation options, netplay, shader/overlay support, etc.
+*lr-fbneo* is a popular choice for the Raspberry Pi 2 and up, as it supports the latest FBNeo romset, and a broad set of features. FBNeo will usually outperform recent MAME in the games they both support, as its framework is more minimalistic and it tries to avoid wasting cpu power. Also, it is a libretro core, so enjoys all the benefits of that: centralised controller configurations, many customisation options, netplay, shader/overlay support, etc.
 
 ## System menu
 
@@ -12,7 +12,7 @@ By default, if you hold the Start button for a few seconds, the ROM system menu 
 
 ## High scores
 
-*lr-fbneo* will attempt to keep a permanent record of any high scores you set, but some games will not save these by default. There is a supplementary file that is automatically installed to your Pi that will enable high score saving for more games, called `hiscore.dat`. This file is the same as that from http://highscore.mameworld.info/ (labeled "**old format hiscore.dat (pre mame v0174)**"). It is located in:
+*lr-fbneo* will attempt to keep a permanent record of any high scores you set, but some games will not save these by default. There is a supplementary file that is automatically installed to your Pi that will enable high score saving for more games, called `hiscore.dat`. This file is updated regularily from the latest hiscore.dat file available from http://highscore.mameworld.info/ (**not the "old format"**). It is located in:
 ```
 /home/pi/RetroPie/BIOS/fbneo/
 ```
