@@ -55,7 +55,7 @@ Save a **Core Input Remap** in the same manner as [Core Input Remapping](RetroAr
 
 #### lr-picodrive
 
-Change the **Core Options** for **Pad 1 Type** and **Pad 2 Type** from **standard** to **dualshock**. See [Setting Core Options](RetroArch-Core-Options#setting-core-options).
+Change the **Core Options** for **Pad 1 Type** and **Pad 2 Type** from **3 Button Pad** to **6 Button Pad**. See [Setting Core Options](RetroArch-Core-Options#setting-core-options).
 
 This will also take effect on any other system which you may use lr-picodrive for (eg. Sega 32X, Sega CD).
 
