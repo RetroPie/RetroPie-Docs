@@ -13,7 +13,7 @@ These modes allow administrators to lock down (part of) the system, so that naiv
 ***
 
 # UI modes
-To allow different levels of system protection, user modes have been introduced to allow the user to restrict certain settings and files from use. The three new modes are Full, Kiosk and Kid. In general, visiting friends and children do not need to modify system settings. The full set of options also complicates the UI, and the kid and kiosk modes hide these for an easier experience
+To allow different levels of system protection, user modes have been introduced to allow the user to restrict certain settings and files from use. The three new modes are Full, Kiosk and Kid. In general, visiting friends and children do not need to modify system settings. The full set of options also complicates the UI, and the kid and kiosk modes hide these for a simpler experience.
 
 Setting UI mode to Full will give you the default ES user interface. This includes options such as CONFIGURE INPUT, UI SETTINGS, SCRAPER, but also EDIT THIS GAMES METADATA, and many other menu items that allow you to configure the system.
 
