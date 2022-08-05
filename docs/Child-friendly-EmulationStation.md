@@ -17,7 +17,7 @@ To allow different levels of system protection, user modes have been introduced 
 
 Setting UI mode to Full will give you the default ES user interface. This includes options such as CONFIGURE INPUT, UI SETTINGS, SCRAPER, but also EDIT THIS GAMES METADATA, and many other menu items that allow you to configure the system.
 
-Kiosk and Kid mode expose fewer of the menu options of Emulation Station, only showing menu items that do not affect the system configuration (i.e. do not survive a reboot). In Kiosk Mode, the user is still able to toggle the favorite status of a game. In Kid-mode, this functionality is removed.
+Kiosk and Kid mode expose fewer of the menu options of Emulation Station, only showing menu items that do not affect the system configuration (i.e. do not survive a reboot). In Kiosk Mode, the user is still able to toggle the favorite status of a game. In Kid mode, this functionality is removed.
 
 In addition to this, the Kiosk and Kid modes allow for filtering of the game lists to hide unwanted games from view. This does not remove any files from the system. Kiosk mode only shows items in the game lists that are not explicitly set to be hidden (aka blacklisting). The Kid only shows items which are explicitly selected to be kid-friendly (aka whitelisting). Items which are set to be both `hidden` and `kidgame`, will be visible while in UI mode `kid`, but not while in UI mode `Kiosk`.
 
