@@ -13,23 +13,23 @@ These modes allow administrators to lock down (part of) the system, so that naiv
 ***
 
 # UI modes
-To allow different levels of system protection, user modes were introduced with different sets of functionalities. These modes are Full, Kiosk and Kid. Generally speaking, kids do not need to edit system settings, nor will visiting friends. The full set of options also complicates the UI, and the kid and kiosk modes hide these when they are not needed.
+To allow different levels of system protection, user modes have been introduced to allow the user to restrict certain settings and files from use. The two new modes are Kiosk and Kid. In general, visiting friends and children do not need to modify system settings. The full set of options also complicates the UI. The kid and kiosk modes hide these for a simpler experience.
 
 Setting UI mode to Full will give you the default ES user interface. This includes options such as CONFIGURE INPUT, UI SETTINGS, SCRAPER, but also EDIT THIS GAMES METADATA, and many other menu items that allow you to configure the system.
 
-Kiosk and Kid mode expose fewer of the menu options of Emulation station, only showing menu items that do not affect the system configuration (i.e. do not survive a reboot), with the exception of setting favorites. In Kiosk Mode, the user is still able to toggle the favorite status of a game. In Kid-mode, even this functionality is removed.
+Kiosk and Kid mode expose fewer of the menu options of Emulation Station, only showing menu items that do not affect the system configuration (i.e. do not survive a reboot). In Kiosk Mode, the user is still able to toggle the favorite status of a game. In Kid mode, this functionality is removed.
 
-In addition to this, the Kiosk and Kids modes allow for filtering of the game lists to remove unwanted items from the view, without actually removing the files from the system. The Kiosk mode only shows items in the game lists that are not explicitly set to be hidden (aka blacklisting). The Kid only shows items which are explicitly selected to be kid-friendly (aka whitelisting). Items which are set to be both `hidden` and `kidgame`, will be visible while in UI mode `kid`, but not while in UI mode `Kiosk`.
+In addition to this, the Kiosk and Kid modes allow for filtering of the game lists to hide unwanted games from view. This does not remove any files from the system. Kiosk mode only shows items in the game lists that are not explicitly set to be hidden (aka blacklisting). The Kid mode only shows items which are explicitly selected to be kid-friendly (aka whitelisting). Items which are set to be both `hidden` and `kidgame`, will be visible while in UI mode `kid`, but not while in UI mode `Kiosk`.
 
 # Switching modes
 To switch the UI mode from Full to one of the limited modes, a new menu option was implemented under UI OPTIONS:
 ![uimodemenu_comb](https://user-images.githubusercontent.com/6103768/32353188-ac071a64-c024-11e7-9882-70645d66f250.png)
 
 Switching back to the Full UI
-Once you are in one of the restricted modes, the UI options (where I put the UI Mode selector), is not shown anymore. So how to return to the full UI once your in Kid/kiosk mode? Well one way, is to go to the `/home/pi/.emulationstation/es_settings.cfg` file and edit the UI_mode value manually:
+Once the system is in one of the restricted modes, it is not possible to access the UI OPTIONS menu to revert to the full UI. To return to the full UI while the system is restricted, go to the `/home/pi/.emulationstation/es_settings.cfg` file and edit the UI_mode value to read:
 `<string name="UIMode" value="Full" />`
 
-Alternatively, you can use a pre-defined passkey sequence that you can enter while you are anywhere in the ES ui. The default passkey is [up,up, down, down, left, right, left, right, b, a] which some of you might recognize as the Konami cheat code from olden-times. This sequence can be changed in `es_settings.cfg ` if need be:
+Alternatively, you can use a pre-defined passkey sequence that you can enter while you are anywhere in the ES interface. The default passkey is [up,up, down, down, left, right, left, right, b, a] which some of you might recognize as the Konami cheat code from olden-times. This sequence can be changed in `es_settings.cfg ` if need be:
 `<string name="UIMode_passkey" value="uuddlrlrba" />`
 When succesfully entered, this will reset the UI mode to FULL.
 
