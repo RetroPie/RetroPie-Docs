@@ -195,7 +195,6 @@ nav:
     - Mapping a Controller for Intellivision: Mapping-a-Controller-for-Intellivision.md
     - Universal Controller Calibration & Mapping Using xboxdrv: Universal-Controller-Calibration-&-Mapping-Using-xboxdrv.md
 - Advanced Configuration:
-    - BIOS: BIOS.md
     - Configuration Editor: Configuration-Editor.md
     - Input Lag: Input-Lag.md
     - Memory Split: Memory-Split.md
