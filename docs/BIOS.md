@@ -1,6 +1,6 @@
 ## Retropie BIOS Configuration
 
-Supported bios files for the libretro cores can be scanned using the official [Bios.dat](https://github.com/libretro/libretro-database/blob/master/dat/BIOS.dat) from [Libretro-database](https://github.com/libretro/libretro-database/tree/master/dat)
+Supported bios files for the libretro cores can be scanned using the official [System.dat](https://github.com/libretro/libretro-database/blob/master/dat/System.dat) from [Libretro-database](https://github.com/libretro/libretro-database/tree/master/dat)
 
 |Tested Version
 |---
