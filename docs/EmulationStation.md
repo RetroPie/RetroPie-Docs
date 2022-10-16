@@ -286,7 +286,7 @@ Inside the scripts folder, create a new directory for the kind of event you want
 |       `sleep`       |       station is without user input for more than `systemSleepTime`       |        see note 1.          |
 |       `wake`        |               station returns from sleep (i.e. user input)                |        see note 1.          |
 |       `screensaver-start`      |             after screensaver starts                           |                             |
-|       `scrensaver-stop`        |               after screensaver stops                          |                             |
+|       `screensaver-stop`        |               after screensaver stops                          |                             |
 |  `screensaver-game-select`     | screensaver is displaying the media for a game                 | `%system_name%` `%rom_path%` `%game_name%` `%media%` <br> see note 2. |
 |   `system-select`   |           after a system is selected                                      | `%system_name%`  `%access_type%` <br>see note 3. |
 |    `game-select`    |           after a game is selected in the gamelist                        | `%system_name%`  `%rom_path%` `%game_name%` `%access_type%` <br> see note 4. |
