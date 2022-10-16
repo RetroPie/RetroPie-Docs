@@ -8,14 +8,18 @@ _The Sega Dreamcast is a 6th generation home video game console released by Sega
 | :---: | :---: | :---: | :---: | :---: |
 | [Reicast](https://github.com/reicast/reicast-emulator) | dreamcast  | .cdi .chd .gdi | dc_boot.bin, dc_flash.bin | /opt/retropie/configs/dreamcast/mappings |
 | [lr-flycast](https://github.com/libretro/flycast.git) | dreamcast  | .cdi .chd .gdi .zip | dc_boot.bin, dc_flash.bin | /opt/retropie/configs/dreamcast/retroarch.cfg |
+| [Redream](https://redream.io) | dreamcast  | .cdi .chd .gdi | dc_boot.bin, dc_flash.bin | /opt/retropie/configs/dreamcast/mappings |
 
-## Emulators: [Reicast](https://github.com/reicast/reicast-emulator), [lr-flycast](https://github.com/libretro/flycast.git)
 
-Reicast can be very laggy and buggy, but some games work great. Pi 2 or later is required.  
+## Emulators: [Reicast](https://github.com/reicast/reicast-emulator), [lr-flycast](https://github.com/libretro/flycast.git), [Redream](https://redream.io)
+
+Reicast can be very laggy and buggy, but some games work great. Pi 2 or later is required. 
 
 Audio is choppy and not great, and degrades the longer the emulator is in use.  Restarting the emulator (and ultimately the Pi) may become a good idea after a couple hours of gameplay. There is a memory leak somewhere in the Reicast code. Low screen resolution are recommended to get best performance. Performance greatly suffers if HD resolutions are used.   
 
-lr-flycast is can be found in the Manage Optional Packages menu in the RetroPie Setup Script.
+lr-flycast can be found in the Manage Optional Packages menu in the RetroPie Setup Script, on a Pi 4 it has much better performance than Reicast.
+
+Redream can be found in Experimental Packages and runs the best of the three options. However it can only be run on a pi4, it won't install and run on anything below that.
 
 ## ROMS
 
@@ -28,7 +32,7 @@ Place your ROM files in
 
 ## CHD files
 
-Both Reicast and Flycast have support for the CHD (V5) archive format. This format will save space and allow you to keep your Dreamcast ROM folder tidy. See [Creating CHDs from CD-ROMS](CHD-files#creating-chds-from-cd-roms).
+All three emulators have support for the CHD (V5) archive format. This format will save space and allow you to keep your Dreamcast ROM folder tidy. See [Creating CHDs from CD-ROMS](CHD-files#creating-chds-from-cd-roms).
 
 ## BIOS
 
