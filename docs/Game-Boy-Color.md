@@ -13,7 +13,9 @@ _The Game Boy Color was an 8 bit handheld gaming console released by Nintendo in
 
 ## Emulators: [lr-gambatte](https://github.com/libretro/gambatte-libretro), [lr-tgbdual](https://github.com/libretro/tgbdual-libretro),  [lr-mgba](https://github.com/libretro/mgba)
 
-lr-gambatte is the prefered single-player emulator, while lr-tgbdual runs two instances of the same game for either two-player link cable games or parallel play on the same system.
+lr-gambatte is the prefered single-player emulator, while lr-tgbdual runs two instances for either two-player link cable games or parallel play on the same system. 
+
+You can run two different ROMs on lr-tgbdual by going into the Retroarch Menu (Hotkey + X) and selecting subsystem. From there select the first rom you want to boot and then the second rom (e.g. Pokémon Yellow and Pokémon Blue).
 
 lr-mgba is a modern emulator that aims to be fast and accurate, supports local cable games, external BIOS, Super Game Boy emulation, among many other features. It also emulates [Game Boy](Game-Boy) and [Game Boy Advance](Game-Boy-Advance).
 
@@ -38,7 +40,6 @@ Place the BIOS files in
 | :---: | :---: |
 | **gbc_bios.bin** | `dbfce9db9deaa2567f6a84fde55f9680` |
 | **sgb_bios.bin** | `d574d4f9c12f305074798f54c091a8b4` |
-
 
 ## Controls
 
