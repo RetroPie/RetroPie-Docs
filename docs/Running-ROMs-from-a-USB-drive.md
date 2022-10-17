@@ -12,7 +12,7 @@ Rather than running everything from an SD card, it can be desirable to store and
 
 There are a number of ways you can achieve this, but the following method is desirable as it fully integrates the USB drive with the existing directory structure, rather than requiring you to tweak configuration files so RetroPie is looking for ROMs in a different place. Below there are two ways to accomplish this: an automated method, or a manual method.
 
-### Format USB drive
+## Format USB drive
 
 Either on linux, or on a PC, format the USB drive to FAT32 (used in this guide as it is the most compatible across different operating systems):
 
@@ -126,8 +126,8 @@ In the case you want to allow execution of file with fat32 file system (E.g : Op
 UUID=E44B-FC4E  /home/pi/RetroPie      vfat    rw,exec,uid=pi,gid=pi,umask=022 0       2
 ```
 
-### Restart system
+## Restart system
 This must be a full restart, not just Emulationstation. When it boots up you should see any ROMs you previously had show up in Emulationstation.
 
-### Transfer ROMs
+## Transfer ROMs
 Now transfer ROMs either directly to the USB drive, or via any of the usual methods (aside from using the automatic USB copy, obviously!). Now that the USB drive is mounted directly to `home/pi/RetroPie`, every time this directory is accessed, you're actually accessing the USB drive.
