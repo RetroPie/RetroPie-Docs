@@ -1,17 +1,16 @@
 This is a guide on how to build RetroPie on the Odroid C1/C1+/C2. This is assuming you are starting with a prebuilt image of Ubuntu from HardKernel's Website:
 
-## Download Ubuntu Image for Odroid:
+## Download Ubuntu image for Odroid
 
-http://odroid.com/dokuwiki/doku.php?id=en:c1_release_linux_ubuntu
+HardKernel's releases for Ubuntu can be downloaded from _https://wiki.odroid.com/odroid-c2/os_images/ubuntu/ubuntu_.
 
-Direct Link [here](https://odroid.in/ubuntu_16.04lts/ubuntu-16.04.3-mate-odroid-c1-20170908.img.xz)  
 Extract the .xz file with a program like [7zip](http://www.7-zip.org/download.html).  
 Write the .img file to your SD card or EMMC module with something like [Win32DiskImager](http://sourceforge.net/projects/win32diskimager/)
 
 ## Install RetroPie:
 
-Odroid default user is "*root*" and his password is "*odroid*"
-.
+Odroid default user is "*root*" with the password "*odroid*".
+
 Preliminary steps:
 
 ```
@@ -21,6 +20,12 @@ useradd -mb /home -s /bin/bash -G input,video pi
 echo 'pi ALL=(ALL) NOPASSWD:ALL' > /etc/sudoers.d/pi
 passwd pi
 ```
+
+**NOTE**: When the installation is done using the _20.04 LTS_ Ubuntu image, the `mali-fbdev_20200618-r6p1-2_arm64.deb` package (needed by the installation) will not install cleanly, due to a conflict with the `libegl-dev` package. To resolve the issue, force the overwriting of the conflicting file by installing the `mali-fbdev` package with the command
+```
+sudo apt-get -o Dpkg::Options::="--force-overwrite" install mali-fbdev
+``` 
+
 
 Installing the RetroPie Setup Script:
 
