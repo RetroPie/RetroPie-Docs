@@ -108,7 +108,7 @@ You can define different palettes for specific games by creating a .pal file in 
 
 ### Using _lr-tgbdual_
 
- To play two-player link cable games with _lr-tgbdual_, turn on the **Link cable emulation** option from the [Core Options](RetroArch-Core-Options#setting-core-options) and restart the game. Two synced game screens will be displayed side-by-side by default. Player one is able to control the left screen, while player two controls the right, but the screens can be switched using the *Screen layout* [core option](RetroArch-Core-Options#setting-core-options)).
+ To play two-player link cable games with _lr-tgbdual_, turn on the **Link cable emulation** option from the [Core Options](RetroArch-Core-Options#setting-core-options) and restart the game. Two synced game screens will be displayed side-by-side by default. Player one is able to control the left screen, while player two controls the right, but the screens can be switched using the **Screen layout** [core option](RetroArch-Core-Options#setting-core-options).
  
  The above configuration will enable playing the same game using link cable emulation, but if two different games need to be linked, the process is a bit more involved and it involves setting up the games through the *Subsystems* RetroArch menu. Here's a rundown of the steps needed:
     
