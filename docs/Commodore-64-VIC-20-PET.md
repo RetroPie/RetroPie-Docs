@@ -112,7 +112,7 @@ To select the emulated system, the [Runcommand Launch Menu](Runcommand) can be u
 | D-Pad         | Move                |
 | B             | Keypress            |
 | A             | Toggle transparency |
-| Y             | Toggle CapsLock     |
+| Y             | Toggle ShiftLock    |
 | Y (Long)      | Quick map button    |
 | Y (Very long) | Quick clear button  |
 | X             | Press Space         |
