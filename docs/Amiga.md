@@ -101,18 +101,15 @@ For more information on custom RetroArch controls see: [RetroArch Configuration]
 
 | RetroPad button | Action                        |
 |:-----------------|:-------------------------------|
-| D-Pad           | Joystick                      |
-| Left Analog     | Mouse                         |
-| Right Analog    | Mouse                         |
-| B               | Fire button 1 / Red           |
-| A               | Fire button 2 / Blue          |
-| X               | Space                         |
-| L2              | Left mouse button             |
-| R2              | Right mouse button            |
-| Select (Short)  | Toggle virtual keyboard       |
-| Select (Long)   | Toggle statusbar              |
-| Select (Hold)   | Fast-Forward                  |
-
+| D-Pad         | Move                |
+| B             | Keypress            |
+| A             | Toggle transparency |
+| Y             | Toggle CapsLock     |
+| Y (Long)      | Quick map button    |
+| Y (Very long) | Quick clear button  |
+| X             | Press Space         |
+| Start         | Press Return        |
+    
 | Keyboard key.  | Action   |
 | :------------- | :------- |
 | F12            | Toggle statusbar |
