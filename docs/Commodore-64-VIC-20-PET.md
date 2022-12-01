@@ -109,15 +109,14 @@ To select the emulated system, the [Runcommand Launch Menu](Runcommand) can be u
 
 | RetroPad button | Action                  |
 |-----------------|-------------------------|
-| D-Pad           | Joystick                |
-| Left Analog     | Mouse/paddles           |
-| B               | Fire button             |
-| X               | Space                   |
-| L2              | Escape (RUN/STOP)       |
-| R2              | Enter (RETURN)          |
-| Select (short)  | Toggle virtual keyboard |
-| Select (long)   | Toggle statusbar        |
-| Select (hold)   | Fast-forward.           |
+| D-Pad         | Move                |
+| B             | Keypress            |
+| A             | Toggle transparency |
+| Y             | Toggle CapsLock     |
+| Y (Long)      | Quick map button    |
+| Y (Very long) | Quick clear button  |
+| X             | Press Space         |
+| Start         | Press Return        |
 
 | Keyboard key      | Action                  |
 |-----------------  |-------------------------|
