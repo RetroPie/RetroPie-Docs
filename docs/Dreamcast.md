@@ -6,20 +6,24 @@ _The Sega Dreamcast is a 6th generation home video game console released by Sega
 
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
-| [Reicast](https://github.com/reicast/reicast-emulator) | dreamcast  | .cdi .chd .gdi | dc_boot.bin, dc_flash.bin | /opt/retropie/configs/dreamcast/mappings |
-| [lr-flycast](https://github.com/libretro/flycast.git) | dreamcast  | .cdi .chd .gdi .zip | dc_boot.bin, dc_flash.bin | /opt/retropie/configs/dreamcast/retroarch.cfg |
+| [Reicast](https://github.com/reicast/reicast-emulator) | dreamcast  | .cdi .chd .gdi| dc_boot.bin, dc_flash.bin | /opt/retropie/configs/dreamcast/mappings |
+| [lr-flycast](https://github.com/libretro/flycast.git) | dreamcast  | .cue .cdi .chd .gdi .m3u .zip | dc_boot.bin, dc_flash.bin | /opt/retropie/configs/dreamcast/retroarch.cfg |
+| [Redream](https://redream.io) | dreamcast  | .cue .cdi .chd .gdi | boot.bin (optional) | /opt/retropie/configs/dreamcast/redream/mappings |
 
-## Emulators: [Reicast](https://github.com/reicast/reicast-emulator), [lr-flycast](https://github.com/libretro/flycast.git)
 
-Reicast can be very laggy and buggy, but some games work great. Pi 2 or later is required.  
+## Emulators: [Reicast](https://github.com/reicast/reicast-emulator), [lr-flycast](https://github.com/libretro/flycast.git), [Redream](https://redream.io)
+
+Reicast can be very laggy and buggy, but some games work great. Pi 2 or later is required. 
 
 Audio is choppy and not great, and degrades the longer the emulator is in use.  Restarting the emulator (and ultimately the Pi) may become a good idea after a couple hours of gameplay. There is a memory leak somewhere in the Reicast code. Low screen resolution are recommended to get best performance. Performance greatly suffers if HD resolutions are used.   
 
-lr-flycast is can be found in the Manage Optional Packages menu in the RetroPie Setup Script.
+lr-flycast can be found in the _Optional_ packages section in the RetroPie Setup Script and on a Pi4 it has much better performance than Reicast.
+
+Redream can be found in the _Experimental_ packages section and runs the best of the three options. However it can only be run on a Pi4 or a 64bit PC system, due to the OpenGL(ES)3 requirement.
 
 ## ROMS
 
-Accepted File Extensions: **.cdi .chd .gdi** for Dreamcast ROMs, **.zip** for Naomi/Atomiswave games.
+Accepted File Extensions: **.cue .cdi .chd .gdi** for Dreamcast ROMs, **.zip** for Naomi/Atomiswave games.
 
 Place your ROM files in
 ```
@@ -28,7 +32,7 @@ Place your ROM files in
 
 ## CHD files
 
-Both Reicast and Flycast have support for the CHD (V5) archive format. This format will save space and allow you to keep your Dreamcast ROM folder tidy. See [Creating CHDs from CD-ROMS](CHD-files#creating-chds-from-cd-roms).
+All three emulators have support for the CHD (V5) archive format. This format will save space and allow you to keep your Dreamcast ROM folder tidy. See [Creating CHDs from CD-ROMS](CHD-files#creating-chds-from-cd-roms).
 
 ## BIOS
 
@@ -86,6 +90,9 @@ On occasion, these VMUs do not get formatted quite right during creation, and th
 VMUs are stored as .BIN files under `/home/pi/RetroPie/BIOS/dc/`, and will be automatically created the first time you run lr-flycast.
 
 There is an option for the core to enable `per-game` VMU's. This option is recommended if you have several games or a game that takes a large amount of space.
+
+### Redream
+VMUs are stored as `vmu[0-3].bin` files under `/opt/retropie/configs/dreamcast/redream/`.
 
 ### Management
 
