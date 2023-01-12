@@ -32,6 +32,9 @@ theme:
   favicon: 'images/logo.png'
   features:
     - navigation.top
+    - content.action.edit
+    - search.highlight
+    - search.suggest
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default
