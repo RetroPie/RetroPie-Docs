@@ -6,8 +6,9 @@ _The good old days of DOS._
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
 | [DOSBox](http://www.dosbox.com/) | pc  | .com .sh .bat .exe .conf | none | /opt/retropie/configs/pc/dosbox-SVN.conf |
+| [DOSBox Staging](https://dosbox-staging.github.io/) | pc  | .com .sh .bat .exe .conf | none | /opt/retropie/configs/pc/dosbox-staging.conf |
 
-## Emulator: [DOSBox](http://www.dosbox.com/), [Rpix86](http://rpix86.patrickaalto.com/)
+## Emulators: [DOSBox](http://www.dosbox.com/), [Rpix86](http://rpix86.patrickaalto.com/), [DOSBox Staging](https://dosbox-staging.github.io/)
 
 ## ROMS
 Accepted File Extensions: **.com .sh .bat .exe .conf**
@@ -20,9 +21,9 @@ You can also place your games within folders in the pc folder if it helps keep y
 
 ## Documentation
 
-DOSbox: http://www.dosbox.com/wiki/Main_Page
-
-Rpix86: http://rpix86.patrickaalto.com/rfaq.html
+* DOSbox: <http://www.dosbox.com/wiki/Main_Page>
+* Rpix86: <http://rpix86.patrickaalto.com/rfaq.html>
+* DOSBox Staging: <https://dosbox-staging.github.io>
 
 
 ## Controls
