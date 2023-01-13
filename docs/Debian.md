@@ -12,8 +12,7 @@ A guide to build the RetroPie setup on Ubuntu (18.04 LTS or later) x86 and Debia
 
 ## Installation
 
-First, install Ubuntu (18.04 LTS or later) or a related Debian based distro such as Linux Mint. ISO images can be used to create a bootable DVD or a USB stick.
-http://www.ubuntu.com/download/desktop
+First, install Ubuntu (18.04 LTS or later) or a related Debian based distro such as Linux Mint. ISO images can be used to create a bootable DVD or a USB stick and can be downloaded from <http://www.ubuntu.com/download/desktop>.
 
 To run RetroPie-Setup, you must be a member of the group root/admin.
 
