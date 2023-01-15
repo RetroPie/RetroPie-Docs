@@ -6,7 +6,7 @@ I dont know as mine were already created using this guide before the devs change
 I also had to modify the screen res from 1024 x 768 (iirc) in eduke32.cfg to make the screen visible if anyone else is having issues with a blurred screen smashed at the top of the monitor or tv. 
 
 
-![](http://playsmart.fr/wp-content/uploads/2015/02/Duke-Nukem-3D.png)
+![](https://static.3drealms.com/media/game_logos/7ac8171e68e941dd9147d57d9803575d.png)
 ***
 _Duke Nukem 3D is a First Person Shooter game developed by 3D Realms in 1996._
 

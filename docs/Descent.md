@@ -60,7 +60,7 @@ Accelerate	| A
 Reverse  	| Z
 
 # Descent 2
-![](http://upload.wikimedia.org/wikipedia/en/2/27/DescentII_DOS.jpg)
+![](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Descent_II_logo.svg/1280px-Descent_II_logo.svg.png)
 ### Emulator: [D2X-Rebirth](http://www.dxx-rebirth.com/)
 
 ## Game Files

@@ -1,6 +1,6 @@
 # OpenTTD
 
-![](https://wiki.openttd.org/images/f/fa/OpenttdLogo.png)
+![](https://upload.wikimedia.org/wikipedia/commons/c/c5/Openttdlogo.svg)
 
 ***
 _OpenTTD is an OpenSource Port of Transport Tycoon Deluxe_
