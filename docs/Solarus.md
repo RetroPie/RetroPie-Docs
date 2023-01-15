@@ -1,4 +1,5 @@
-![](https://www.solarus-games.org/data/en/entities/article/2019/08/2019-08-20-solarus-on-retropie/cover.jpg)
+![](https://gitlab.com/solarus-games/solarus-design/-/raw/master/emulationstation_art/carbon/theme/art/system.svg)
+
 
 _Solarus is a game engine for Zeldaesque games._
 
