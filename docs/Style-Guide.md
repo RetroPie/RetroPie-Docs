@@ -77,6 +77,54 @@ will render as:
 code block
 ```
 
+Code blocks can have syntax highlighting applied, by specifying the type of code/text file contained in the block. The list of supported lexers is available on the [Pygments site](https://pygments.org/languages/).
+
+Example highlighting for a shell script
+````
+``` sh
+function printMsgs() {
+    local type="$1"
+    shift
+    if [[ "$__nodialog" == "1" && "$type" == "dialog" ]]; then
+        type="console"
+    fi
+    for msg in "$@"; do
+        [[ "$type" == "dialog" ]] && dialog --backtitle "$__backtitle" --cr-wrap --no-collapse --msgbox "$msg" 20 60 >/dev/tty
+        [[ "$type" == "console" ]] && echo -e "$msg"
+        [[ "$type" == "heading" ]] && echo -e "\n= = = = = = = = = = = = = = = = = = = = =\n$msg\n= = = = = = = = = = = = = = = = = = = = =\n"
+    done
+    return 0
+}
+```
+````
+
+Optionally, a title attribute can be added to the code block, which will appear on top of the formatted block.
+````
+``` ini title="SNES Controller Configuration"
+input_device = "USB gamepad           "
+input_driver = "udev"
+input_r_btn = "5"
+input_save_state_btn = "5"
+input_start_btn = "9"
+input_exit_emulator_btn = "9"
+input_l_btn = "4"
+input_load_state_btn = "4"
+input_up_axis = "-1"
+input_a_btn = "1"
+input_b_btn = "2"
+input_reset_btn = "2"
+input_down_axis = "+1"
+input_right_axis = "+0"
+input_state_slot_increase_axis = "+0"
+input_x_btn = "0"
+input_menu_toggle_btn = "0"
+input_select_btn = "8"
+input_enable_hotkey_btn = "8"
+input_y_btn = "3"
+input_left_axis = "-0"
+input_state_slot_decrease_axis = "-0"
+```
+````
 
 
 ### Nesting lists
