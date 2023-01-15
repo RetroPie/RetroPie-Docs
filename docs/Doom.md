@@ -11,11 +11,11 @@ _Doom was the game that popularized First Person Shooting as a genre. It was dev
 
 Port of PrBoom to Libretro. This port supports Doom, Doom 2, Final Doom and Freedoom alongside the simple mods that don't require other source port enhancements. Unlike other source ports that concentrate on offering many new game features or changes, such as ZDoom, PrBoom aims to act as a stable port of the more established or traditional engines.
 
-### ZDoom
+### LZDoom
 
-ZDoom is a family of enhanced ports of the Doom engine for running on modern operating systems and adds new features not found in the games as originally published by id Software.
+LZDoom is a family of enhanced ports of the Doom engine for running on modern operating systems and adds new features not found in the games as originally published by id Software.
 
-This port officially supports the following Doom engine games: Doom, Doom 2, Final Doom, Heretic, Hexen, Strife and Chex Quest. It also has official support for the following stand-alone mods: Action Doom 2: Urban Brawl, The Adventures of Square, Chex Quest 3, Hacx and Harmony. Additional stand-alone mods may work with this port: they just aren't officially supported.
+This port officially supports the following Doom engine games: Doom, Doom 2, Final Doom, Heretic, Hexen, Strife and Chex Quest. It also has official support for the following stand-alone mods: Action Doom 2: Urban Brawl, The Adventures of Square, Chex Quest 3, Hacx and Harmony. Additional stand-alone mods may work with this port, they just aren't officially supported.
 
 ## Installation
 
@@ -27,112 +27,57 @@ Below you will find `.sh` and folder structure examples for Ultimate Doom, Doom 
 
 #### Full Games (IWADs)
 
-The following game IWADs can be run with lr-prboom and are used to play various Doom/Doom 2 PWADs that don't depend on the features more robust source ports provide. Ultimate Doom, Doom 2 and Final Doom are available on GOG and Steam, while Freedoom is available for free.
-
-#####  Ultimate Doom
-
-Available on [GOG](https://www.gog.com/game/the_ultimate_doom) and [Steam](https://store.steampowered.com/app/2280/Ultimate_Doom/)
-
-`Ultimate Doom.sh` Example
-
-```
-#!/bin/bash
-"/opt/retropie/supplementary/runcommand/runcommand.sh" 0 _PORT_ "doom" "/home/pi/RetroPie/roms/ports/doom/ultimate-doom/DOOM.WAD"
-```
-
-Folder Structure Example
-
-```
-/home/pi/RetroPie/roms/ports/doom/ultimate-doom
-                                               DOOM.WAD
-                                               prboom.wad
-```
-
 ##### Doom 2
 
-Available on [GOG](https://www.gog.com/game/doom_ii_final_doom) and [Steam](https://store.steampowered.com/app/2300/DOOM_II/)
+Available on [GOG](https://www.gog.com/game/doom_ii) and [Steam](https://store.steampowered.com/app/2300/DOOM_II/)
 
-`Doom 2.sh` Example
+Start script
 
-```
+``` sh title="Doom II.sh"
 #!/bin/bash
 "/opt/retropie/supplementary/runcommand/runcommand.sh" 0 _PORT_ "doom" "/home/pi/RetroPie/roms/ports/doom/doom2/DOOM2.WAD"
 ```
 
-Folder Structure Example
+Folder structure
 
-```
-/home/pi/RetroPie/roms/ports/doom/doom2
+``` sh
+/home/pi/RetroPie/roms/ports/doom/doom2/
                                        DOOM2.WAD
                                        prboom.wad
 ```
 
-##### Final Doom - The Plutonia Experiment
-
-Available on [GOG](https://www.gog.com/game/doom_ii_final_doom) and [Steam](https://store.steampowered.com/app/2290/Final_DOOM/)
-
-`Final Doom - The Plutonia Experiment.sh` Example
-
-```
-#!/bin/bash
-"/opt/retropie/supplementary/runcommand/runcommand.sh" 0 _PORT_ "doom" "/home/pi/RetroPie/roms/ports/doom/final-doom-plutonia-experiment/PLUTONIA.WAD"
-```
-
-Folder Structure Example
-
-```
-/home/pi/RetroPie/roms/ports/doom/final-doom-plutonia-experiment
-                                                                PLUTONIA.WAD
-                                                                prboom.wad
-```
-
-##### Final Doom - TNT - Evilution
-
-Available on [GOG](https://www.gog.com/game/doom_ii_final_doom) and [Steam](https://store.steampowered.com/app/2290/Final_DOOM/)
-
-`Final Doom - TNT - Evilution.sh` Example
-```
-#!/bin/bash
-"/opt/retropie/supplementary/runcommand/runcommand.sh" 0 _PORT_ "doom" "/home/pi/RetroPie/roms/ports/doom/final-doom-tnt-evilution/TNT.WAD"
-```
-
-Folder Structure Example
-```
-/home/pi/RetroPie/roms/ports/doom/final-doom-tnt-evilution
-                                                          prboom.wad
-                                                          TNT.WAD
-```
-
 ##### Freedoom - Phase 1
 
-Available for free [HERE](https://freedoom.github.io/download.html).
+Available for free [here](https://freedoom.github.io/download.html).
 
-`Freedoom - Phase 1.sh` Example
-```
+Start script 
+
+``` sh title="Freedoom - Phase 1.sh"
 #!/bin/bash
 "/opt/retropie/supplementary/runcommand/runcommand.sh" 0 _PORT_ "doom" "/home/pi/RetroPie/roms/ports/doom/freedoom/FREEDOOM1.WAD""
 ```
 
-Folder Structure Example
+Folder structure
 ```
-/home/pi/RetroPie/roms/ports/doom/freedoom
+/home/pi/RetroPie/roms/ports/doom/freedoom/
                                           FREEDOOM1.WAD
                                           prboom.wad
 ```
 
 ##### Freedoom - Phase 2
 
-Available for free [HERE](https://freedoom.github.io/download.html).
+Available for free [here](https://freedoom.github.io/download.html).
 
-`Freedoom - Phase 2.sh` Example
-```
+Start script
+
+``` sh title="Freedoom - Phase 2.sh"
 #!/bin/bash
 "/opt/retropie/supplementary/runcommand/runcommand.sh" 0 _PORT_ "doom" "/home/pi/RetroPie/roms/ports/doom/freedoom2/FREEDOOM2.WAD""
 ```
 
-Folder Structure Example
-```
-/home/pi/RetroPie/roms/ports/doom/freedoom2
+Folder structure
+``` sh
+/home/pi/RetroPie/roms/ports/doom/freedoom2/
                                            FREEDOOM2.WAD
                                            prboom.wad
 ```
@@ -143,32 +88,33 @@ These are used in conjunction with Doom/Freedoom - Phase 1 to play Doom mods and
 
 Due to the extensive number of PWADs out there, only these commercial PWADs are included in the documentation here, though they should give you a good idea of how to use other PWADs.
 
-**If you plan to use MP3 music over lr-prboom's MIDI, then it is advised that you follow the guide for that in the Enhancements section before copying any game folder for PWAD use to avoid additional work.**
+If you plan to use MP3 music over lr-prboom's MIDI, then it is advised that you follow the guide for that in the Enhancements section before copying any game folder for PWAD use to avoid additional work.
 
 **It is advised that you also apply the fix for lr-prboom's current floor and ceiling bug found in the Issues section to all games before copying any game folder for PWAD use to avoid additional work.**
 
 ##### Doom - Sigil
 
-A Doom mod made by John Romero for Doom's 35th anniversary. It is available for free [HERE](https://www.romerogames.ie/si6il): it is currently unknown if the purchasable Buckethead soundtrack WAD can be played by lr-prboom and if the COMPAT version of the WADs is required instead of the regular WADs for a full playthrough. The regular Sigil WAD does load the first level of Sigil when selecting the fifth episode, though it also breaks all other episodes so that they load episode one when selected: the COMPAT version of the WAD replaces episode three without breaking the other episodes.
+A Doom mod made by John Romero for Doom's 35th anniversary. It is available for free [here](https://romero.com/sigil). It is currently unknown if the purchasable Buckethead soundtrack WAD can be played by lr-prboom and if the COMPAT version of the WADs is required instead of the regular WADs for a full playthrough. The regular Sigil WAD does load the first level of Sigil when selecting the fifth episode, though it also breaks all other episodes so that they load episode one when selected: the COMPAT version of the WAD replaces episode three without breaking the other episodes.
 
-`Doom - Sigil.sh` Example
-```
+Start script
+
+``` sh title="Doom - Sigil.sh"
 #!/bin/bash
 "/opt/retropie/supplementary/runcommand/runcommand.sh" 0 _PORT_ "doom" "/home/pi/RetroPie/roms/ports/doom/sigil/DOOM.WAD"
 ```
 
-Folder Structure Example
+Folder structure
 ```
-/home/pi/RetroPie/roms/ports/doom/sigil
-                                       DOOM
+/home/pi/RetroPie/roms/ports/doom/sigil/
+                                       DOOM/
                                            prboom.cfg
                                        DOOM.WAD
                                        prboom.wad
                                        SIGIL_v1_21.wad
 ```
 
-prboom.cfg Example
-```
+
+``` sh title="prboom.cfg section (##Files)"
 ## Files
 wadfile_1                 "SIGIL_v1_21.wad"
 #wadfile_2                 ""
@@ -185,26 +131,26 @@ wadfile_1                 "SIGIL_v1_21.wad"
 
 ##### Doom 2 - No Rest for the Living
 
-No Rest for the Living was developed by Nerve Software for the release of Doom 2 on the XBLA. The episode consists of nine levels in all, eight standard levels and a single secret level, as a homage to the similarly structured nine-map episodes in the original Doom, particularly Knee-Deep in the Dead.
+[No Rest for the Living](https://doom.fandom.com/wiki/No_Rest_for_the_Living) was developed by Nerve Software for the release of Doom 2 on the XBLA. The episode consists of nine levels in all, eight standard levels and a single secret level, as a homage to the similarly structured nine-map episodes in the original Doom, particularly _Knee-Deep in the Dead_.
 
-`Doom 2 - No Rest for the Living.sh` Example
-```
+Start script
+
+``` sh title="Doom 2 - No Rest for the Living.sh"
 #!/bin/bash
 "/opt/retropie/supplementary/runcommand/runcommand.sh" 0 _PORT_ "doom" "/home/pi/RetroPie/roms/ports/doom/no-rest-for-the-living/DOOM2.WAD"
 ```
 
-Folder Structure Example
+Folder structure
 ```
-/home/pi/RetroPie/roms/ports/doom/no-rest-for-the-living
-                                                        DOOM2
+/home/pi/RetroPie/roms/ports/doom/no-rest-for-the-living/
+                                                        DOOM2/
                                                              prboom.cfg
                                                         DOOM2.WAD
                                                         NERVE.WAD
                                                         prboom.wad
 ```
 
-prboom.cfg "## Files" Section Example
-```
+``` sh title="prboom.cfg section (##Files)"
 ## Files
 wadfile_1                 "NERVE.WAD"
 #wadfile_2                 ""
@@ -220,18 +166,19 @@ wadfile_1                 "NERVE.WAD"
 
 ##### Lost Episodes of Doom
 
-The Lost Episodes of Doom is a collection of three eight-level episodes for Doom by Christen Klie and Bob Carter. It takes place on the Jovian moons Callisto and Io, and on Jupiter itself. It was a commercial product.
+[The Lost Episodes of Doom](https://doom.fandom.com/wiki/The_Lost_Episodes_of_Doom) is a collection of three eight-level episodes for Doom by Christen Klie and Bob Carter. It takes place on the Jovian moons Callisto and Io, and on Jupiter itself. It was a commercial product.
 
-`Lost Episodes of Doom.sh` Example
-```
+Start script
+
+``` sh title="Lost Episodes of Doom.sh"
 #!/bin/bash
 "/opt/retropie/supplementary/runcommand/runcommand.sh" 0 _PORT_ "doom" "/home/pi/RetroPie/roms/ports/doom/lost-episodes-of-doom/DOOM.WAD"
 ```
 
-Folder Structure Example
+Folder structure
 ```
-/home/pi/RetroPie/roms/ports/doom/lost-episodes-of-doom
-                                                       DOOM
+/home/pi/RetroPie/roms/ports/doom/lost-episodes-of-doom/
+                                                       DOOM/
                                                            prboom.cfg
                                                        DOOM.WAD
                                                        JPTR_V40.WAD
@@ -239,8 +186,7 @@ Folder Structure Example
                                                        prboom.wad
 ```
 
-prboom.cfg "## Files" Section Example
-```
+``` sh title="prboom.cfg section (##Files)"
 ## Files
 wadfile_1                 "JPTR_V40.WAD"
 wadfile_2                 "Jptr_fix.wad"
@@ -256,18 +202,18 @@ wadfile_2                 "Jptr_fix.wad"
 
 ##### Hell to Pay
 
-Hell To Pay is a partial conversion for Doom II created by Wraith Corporation in 1996 and published by WizardWorks. In the plot of Hell To Pay, Earth is invaded by demonic aliens, and the player must journey to Planet Hell to activate the planet-killer bomb meant for Earth. Compared to Perdition's Gate, which has only new music and some new textures, this conversion has new graphics for textures, monsters, and weapons.
+[Hell To Pay](https://doom.fandom.com/wiki/Hell_to_Pay) is a partial conversion for Doom II created by Wraith Corporation in 1996 and published by WizardWorks. In the plot of Hell To Pay, Earth is invaded by demonic aliens, and the player must journey to Planet Hell to activate the planet-killer bomb meant for Earth. Compared to Perdition's Gate, which has only new music and some new textures, this conversion has new graphics for textures, monsters, and weapons.
 
-`Hell to Pay.sh` Example
-```
+Start script
+``` sh title="Hell to Pay.sh"
 #!/bin/bash
 "/opt/retropie/supplementary/runcommand/runcommand.sh" 0 _PORT_ "doom" "/home/pi/RetroPie/roms/ports/doom/hell-to-pay/DOOM2.WAD"
 ```
 
-Folder Structure Example
+Folder structure
 ```
-/home/pi/RetroPie/roms/ports/doom/hell-to-pay
-                                             DOOM2
+/home/pi/RetroPie/roms/ports/doom/hell-to-pay/
+                                             DOOM2/
                                                   prboom.cfg
                                              DOOM2.WAD
                                              HTP-RAW.WAD
@@ -279,8 +225,7 @@ Folder Structure Example
                                              prboom.wad
 ```
 
-prboom.cfg "## Files" Section Example
-```
+``` sh title="prboom.cfg section (##Files)"
 ## Files
 wadfile_1                 "HTP-RAW.WAD"
 wadfile_2                 "HTPDMO16.WAD"
@@ -296,27 +241,26 @@ wadfile_5                 "HTPDMO19.WAD"
 
 ##### Perdition's Gate
 
-Perdition's Gate is a 32-level commercial megawad for Doom II designed by Wraith Corporation and published by WizardWorks. Unlike its sister release, Hell to Pay, which is a partial conversion, Perdition's Gate only contains new graphics for various textures and new music besides its levels.
+[Perdition's Gate](https://doom.fandom.com/wiki/Perdition%27s_Gate) is a 32-level commercial megawad for Doom II designed by Wraith Corporation and published by WizardWorks. Unlike its sister release, Hell to Pay, which is a partial conversion, Perdition's Gate only contains new graphics for various textures and new music besides its levels.
 
-`Perdition's Gate.sh` Example
-```
+Start script
+
+``` sh title="Perdition's Gate.sh"
 #!/bin/bash
 "/opt/retropie/supplementary/runcommand/runcommand.sh" 0 _PORT_ "doom" "/home/pi/RetroPie/roms/ports/doom/perditions-gate/DOOM2.WAD"
 ```
 
-Folder Structure Example
+Folder structure
 ```
-/home/pi/RetroPie/roms/ports/doom/perditions-gate
-                                                 DOOM2
+/home/pi/RetroPie/roms/ports/doom/perditions-gate/
+                                                 DOOM2/
                                                       prboom.cfg
                                                  DOOM2.WAD
                                                  PG-RAW-X.WAD
                                                  prboom.wad
 ```
 
-prboom.cfg "## Files" Section Example
-
-```
+``` sh title="prboom.cfg section (##Files)"
 ## Files
 wadfile_1                 "PG-RAW-X.WAD"
 #wadfile_2                 ""
@@ -330,11 +274,11 @@ wadfile_1                 "PG-RAW-X.WAD"
 #dehfile_2                 ""
 ```
 
-### ZDoom Installation
+### LZDoom Installation
 
 #### To Launch Doom, Ultimate Doom, Doom 2, TNT, Plutonia, Final Doom (IWADS)
 
-Use the same method for IWADS detailed above for lr-prboom, only set the default emulator for ROM to 'zdoom' at launch in the Runcommand menu.
+Use the same method for IWADS detailed above for lr-prboom, only set the default emulator for ROM to `lzdoom` at launch in the [runcommand launch menu](Runcommand#runcommand-launch-menu).
 
 #### To Launch Doom Mods (PWADS)
 
@@ -342,7 +286,7 @@ Here, we'll use [Rex Claussen's, The Darkest Hour](http://doomnexus.drdteam.org/
 
 At the command line, type the following to create a directory for the `DarkHour.wad` file from the 'Darkest Hour' download.
 
-```
+``` sh
 mkdir /home/pi/RetroPie/roms/ports/darkesthour
 ```
 
@@ -352,24 +296,18 @@ Next, you'll want to create a new script that we will use to launch The Darkest 
 
 To do this, type:
 
-```
+``` sh
 nano /home/pi/RetroPie/roms/ports/The\ Darkest\ Hour.sh
 ```
 
-The nano text editor will open, where you will now add the following to the text edit field.
+The Nano text editor will open, where you will now add the following to the text edit field.
 
-```shell
+``` sh
 #!/bin/bash
 "/opt/retropie/supplementary/runcommand/runcommand.sh" 0 _PORT_ darkesthour
 ```
 
-press 'ctrl+o' to save, 'y' to confirm and 'ctrl+x' to exit out of the nano text editor.
-
-Set the proper file permissions for the script with:
-
-```
-chmod 0755 "/home/pi/RetroPie/roms/ports/The\ Darkest\ Hour.sh"
-```
+press `Ctrl+o` to save, `y` to confirm and `Ctrl+x` to exit out of the nano text editor.
 
 Now we want to create a config folder by typing the following:
 
@@ -383,16 +321,16 @@ Once this is complete you will want to create a 'emulators.cfg' file for this ne
 nano /opt/retropie/configs/ports/darkesthour/emulators.cfg
 ```
 
-The nano text editor will open, where you will now add the following to the text edit field.
+The Nano text editor will open, where you will now add the following to the text edit field:
 
+``` sh
+lzdoom = "/opt/retropie/ports/lzdoom/lzdoom +set fullscreen 1 -iwad /home/pi/RetroPie/roms/ports/doom/doom2.wad -file /home/pi/RetroPie/roms/ports/darkesthour/DarkHour.wad -config /home/pi/RetroPie/roms/ports/darkesthour/zdoom.ini -savedir /home/pi/RetroPie/roms/ports/darkesthour/"
+default="lzdoom"
 ```
-zdoom = "/opt/retropie/ports/zdoom/zdoom +set fullscreen 1 -iwad /home/pi/RetroPie/roms/ports/doom/doom2.wad -file /home/pi/RetroPie/roms/ports/darkesthour/DarkHour.wad -config /home/pi/RetroPie/roms/ports/darkesthour/zdoom.ini -savedir /home/pi/RetroPie/roms/ports/darkesthour/"
-default="zdoom"
-```
 
-press 'ctrl+o' to save, 'y' to confirm and 'ctrl+x' to exit out of the nano text editor.
+press `Ctrl+o` to save, `y` to confirm and `Ctrl+x` to exit out of the Nano text editor.
 
-You'll notice that in the above example that ZDoom is making use of the 'Doom II' wad as a base for the 'Darkest Hour' modification. This is common in most cases. However, some mods will need to make use of the 'Ultimate Doom' wad file entitled `doom.wad` instead. Both `doom.wad` and `doom2.wad` should be installed to `/home/pi/RetroPie/roms/ports/doom/` and the above example should be set accordingly. Also, you will notice the use of the commands "-config" and "-savedir", using these allow each game to have separate saves and settings. 
+You'll notice that in the above example that LZDoom is making use of the 'Doom II' wad as a base for the 'Darkest Hour' modification.    This is common in most cases. However, some mods will need to make use of the _Ultimate Doom_ wad file entitled `doom.wad` instead. Both `doom.wad` and `doom2.wad` should be installed to `/home/pi/RetroPie/roms/ports/doom/` and the above example should be set accordingly. Also, you will notice the use of the commands "-config" and "-savedir", using these allow each game to have separate saves and settings. 
 
 Having completed this step, you will now want to restart Emulation Station, navigate to 'Ports' and test your new menu entry.
 
@@ -400,7 +338,7 @@ Having completed this step, you will now want to restart Emulation Station, navi
 
 ### lr-prboom Controls
 
-lr-prboom utilises normal Retroarch control configurations found in the RetroArch menu by pressing 'Hotkey Enable+X' on your controller after the game software has launched. From the RetroArch Quick Menu, navigate to 'Controls'.
+lr-prboom utilises normal Retroarch control configurations found in the RetroArch menu by pressing _Hotkey Enable+X_ on your controller after the game software has launched. From the RetroArch Quick Menu, navigate to _Controls_.
 
 For more information on custom RetroArch controls see: [RetroArch Configuration](RetroArch-Configuration)
 
@@ -414,8 +352,9 @@ Axis 1: Strafing
 Axis 2: Moving Forward
 Axis 3: Turning
 Axis 4: Looking Up/Down
-The rest should be set to None
 ```
+The rest should be set to None
+
 Depending on your type of controller, the axes assignment could vary.
 
 If your character, or the menu cursor, move by themselves, in the same menu option you can add deadzone for each axis. Set it to something like 150-200 initially, and then decrease it if it's too much.
@@ -430,21 +369,20 @@ To have higher quality music in your Doom games running in lr-prboom, you need t
 
 The easiest to use and highest quality authentic soundtrack you can get for games running in lr-prboom are the ones generated by a Roland SC-55 then digitized to MP3. Due to legal reasons, these soundtracks can't be linked here, but if this music is found, a leading `d_` will need to be removed from each MP3's filename, the `ream.mp3` will need to be renamed to `read_m.mp3`, and `mus_e2m5                  "e1m5.mp3"` needs to be changed to `mus_e2m5                  "e2m5.mp3"` in the `prboom.cfg` (if just copying and pasting the examples then this is fixed in them).
 
-Keep in mind that the soundtracks for Doom 2, Final Doom: TNT: Evilution, and Final Doom: The Plutonia Experiment are different even though their tracks are named identically. This means that the WADs/MP3s for those three games must be in separate folders to avoid filename conflicts between the MP3s.
+Keep in mind that the soundtracks for Doom 2, _Final Doom: TNT: Evilution_, and _Final Doom: The Plutonia Experiment_ are different even though their tracks are named identically. This means that the WADs/MP3s for those three games must be in separate folders to avoid filename conflicts between the MP3s.
 
-An alternative ambient horror music option for your Doom games would be from [Aubrey Hodges](https://aubreyhodges.bandcamp.com/), who scored Doom/Doom 2 and Final Doom: TNT: Evilution/The Plutonia Experiment on the PSX, and will require extensive renaming and copying: [THIS](https://doomwiki.org/wiki/PlayStation_Doom_music) chart should be useful in identifying which tracks play on each map.
+An alternative ambient horror music option for your Doom games would be from [Aubrey Hodges](https://aubreyhodges.bandcamp.com/), who scored Doom/Doom 2 and _Final Doom: TNT: Evilution/The Plutonia Experiment_ on the PSX, and will require extensive renaming and copying: [this](https://doomwiki.org/wiki/PlayStation_Doom_music) chart should be useful in identifying which tracks play on each map.
 
 Below you will find examples of the MP3s in the folders for Doom, Doom 2, Final Doom, and Sigil alongside `prboom.cfg` examples that allow you to copy just the required IWAD and respective folder containing the `prboom.cfg` for mods without needing to copy the MP3s.
 
 #### Ultimate Doom
 
-<details>
-  <summary>Folder Structure</summary> 
+Folder structure 
 
 ```
-/home/pi/RetroPie/roms/ports/doom/ultimate-doom
+/home/pi/RetroPie/roms/ports/doom/ultimate-doom/
                                                bunny.mp3
-                                               DOOM
+                                               DOOM/
                                                    prboom.cfg
                                                DOOM.WAD
                                                e1m1.mp3
@@ -480,12 +418,8 @@ Below you will find examples of the MP3s in the folders for Doom, Doom 2, Final 
                                                victor.mp3
 ```
 
-</details>
 
-<details>
-  <summary>prboom.cfg "## Music" Section Example</summary> 
-
-```
+``` sh title="prboom.cfg configuration section (## Music)"
 ## Music
 mus_bunny                 "./ultimate-doom/bunny.mp3"
 mus_e1m1                  "./ultimate-doom/e1m1.mp3"
@@ -578,11 +512,10 @@ mus_ultima                "./doom2/ultima.mp3"
 
 #### Doom 2
 
-<details>
-  <summary>Folder Structure</summary> 
+Folder structure
 
 ```
-/home/pi/RetroPie/roms/ports/doom/doom2
+/home/pi/RetroPie/roms/ports/doom/doom2/
                                                adrian.mp3
                                                ampie.mp3
                                                betwee.mp3
@@ -596,7 +529,7 @@ mus_ultima                "./doom2/ultima.mp3"
                                                dm2int.mp3
                                                dm2ttl.mp3
                                                doom.mp3
-                                               DOOM2
+                                               DOOM2/
                                                     prboom.cfg
                                                doom2.mp3
                                                DOOM2.WAD
@@ -622,14 +555,8 @@ mus_ultima                "./doom2/ultima.mp3"
                                                theda3.mp3
                                                the_da.mp3
                                                ultima.mp3
-```
 
-</details>
-
-<details>
-  <summary>prboom.cfg "## Music" Section Example</summary> 
-
-```
+``` sh title="prboom.cfg configuration section (## Music)"
 ## Music
 mus_bunny                 "./ultimate-doom/bunny.mp3"
 mus_e1m1                  "./ultimate-doom/e1m1.mp3"
@@ -722,11 +649,10 @@ mus_ultima                "./doom2/ultima.mp3"
 
 #### Final Doom - Plutonia Experiment
 
-<details>
-  <summary>Folder Structure</summary> 
+Folder structure
 
 ```
-/home/pi/RetroPie/roms/ports/doom/final-doom-plutonia-experiment
+/home/pi/RetroPie/roms/ports/doom/final-doom-plutonia-experiment/
                                                                 adrian.mp3
                                                                 ampie.mp3
                                                                 betwee.mp3
@@ -746,7 +672,7 @@ mus_ultima                "./doom2/ultima.mp3"
                                                                 messag.mp3
                                                                 messg2.mp3
                                                                 openin.mp3
-                                                                PLUTONIA
+                                                                PLUTONIA/
                                                                         prboom.cfg
                                                                 PLUTONIA.WAD
                                                                 prboom.wad
@@ -768,12 +694,7 @@ mus_ultima                "./doom2/ultima.mp3"
                                                                 ultima.mp3
 ```
 
-</details>
-
-<details>
-  <summary>prboom.cfg "## Music" Section Example</summary> 
-
-```
+``` sh title="prboom.cfg configuration section (## Music)"
 ## Music
 mus_bunny                 "./ultimate-doom/bunny.mp3"
 mus_e1m1                  "./ultimate-doom/e1m1.mp3"
@@ -862,15 +783,12 @@ mus_the_da                "./final-doom-plutonia-experiment/the_da.mp3"
 mus_ultima                "./final-doom-plutonia-experiment/ultima.mp3"
 ```
 
-</details>
-
 #### Final Doom - TNT Evilution
 
-<details>
-  <summary>Folder Structure</summary> 
+Folder structure
 
 ```
-/home/pi/RetroPie/roms/ports/doom/final-doom-tnt-evilution
+/home/pi/RetroPie/roms/ports/doom/final-doom-tnt-evilution/
                                                           adrian.mp3
                                                           ampie.mp3
                                                           betwee.mp3
@@ -906,18 +824,13 @@ mus_ultima                "./final-doom-plutonia-experiment/ultima.mp3"
                                                           theda2.mp3
                                                           theda3.mp3
                                                           the_da.mp3
-                                                          TNT
+                                                          TNT/
                                                              prboom.cfg
                                                           TNT.WAD
                                                           ultima.mp3
 ```
 
-</details>
-
-<details>
-  <summary>prboom.cfg "## Music" Section Example</summary> 
-
-```
+``` sh title="prboom.cfg configuration section (## Music)"
 ## Music
 mus_bunny                 "./ultimate-doom/bunny.mp3"
 mus_e1m1                  "./ultimate-doom/e1m1.mp3"
@@ -1006,20 +919,17 @@ mus_the_da                "./final-doom-tnt-evilution/the_da.mp3"
 mus_ultima                "./final-doom-tnt-evilution/ultima.mp3"
 ```
 
-</details>
-
 #### Doom - Sigil
 
-A chart to assist with renaming the MP3 soundtrack can be found [HERE](https://doomwiki.org/wiki/SIGIL).
+A chart to assist with renaming the MP3 soundtrack can be found [here](https://doomwiki.org/wiki/SIGIL).
 
-The soundtrack for the levels can be found [HERE](https://music.bucketheadpikes.com/album/sigil-soundtrack), the music for the title screen can be found [HERE](https://music.bucketheadpikes.com/track/eye-on-spiral-part-1), and the music for the intermission screen can be found [HERE](https://music.bucketheadpikes.com/track/triceratoptron).
+The soundtrack for the levels can be found [here](https://music.bucketheadpikes.com/album/sigil-soundtrack), the music for the title screen can be found [here](https://music.bucketheadpikes.com/track/eye-on-spiral-part-1), and the music for the intermission screen can be found [here](https://music.bucketheadpikes.com/track/triceratoptron).
 
-<details>
-  <summary>Folder Structure</summary> 
+Folder structure
 
 ```
-/home/pi/RetroPie/roms/ports/doom/sigil
-                                       DOOM
+/home/pi/RetroPie/roms/ports/doom/sigil/
+                                       DOOM/
                                            prboom.cfg
                                        DOOM.WAD
                                        e5m1.mp3
@@ -1037,12 +947,7 @@ The soundtrack for the levels can be found [HERE](https://music.bucketheadpikes.
                                        SIGIL_v1_21.wad
 ```
 
-</details>
-
-<details>
-  <summary>prboom.cfg "## Music" Section Example</summary> 
-
-```
+``` sh title="prboom.cfg configuration section (## Music)"
 ## Music
 mus_bunny                 "./ultimate-doom/bunny.mp3"
 mus_e1m1                  "./ultimate-doom/e1m1.mp3"
@@ -1131,20 +1036,9 @@ mus_the_da                "./doom2/the_da.mp3"
 mus_ultima                "./doom2/ultima.mp3"
 ```
 
-</details>
 
-### Music for ZDoom
+### Music for LZDoom
 
-ZDoom handles the midi music from the Doom games automatically - options are provided in the ZDoom menu for various midi emulation devices, including OPL3 and Timidity for midi output. Several fan-created music packs also exist, which can be loaded with ZDoom as PWAD / PK3 files using the methods outlined above.
+LZDoom handles the MIDI music from the Doom games automatically. Options are provided in the ZDoom menu for various MIDI emulation devices, including OPL3 and Timidity for midi output.
 
-## Issues
-
-### lr-prboom - Deformed Ceiling and Floor Textures
-
-As of an update to lr-prboom, an issue with the ceiling and floor textures like this has started:
-
-![](https://user-images.githubusercontent.com/39132563/63890203-740dcf80-c9b0-11e9-8406-e29906b9a22b.png)
-
-This is caused by a bug in lr-prboom. This issue is fixed in latest source builds, please update lr-prboom from source if you encounter this issue.
-
-Here is the discussion about the bug: https://github.com/libretro/libretro-prboom/issues/112
+Several fan-created music packs also exist, which can be loaded with LZDoom as PWAD / PK3 files using the methods outlined above.
