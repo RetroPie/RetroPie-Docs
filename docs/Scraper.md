@@ -1,4 +1,4 @@
-Scraping is a way to get metadata, boxart and video previews (snapshots) for your games from the internet. If the scraper isn't working either you are not connected to the Internet or source site may be down or overloaded and in that case you'll just have to wait until it comes back up. 
+Scraping is a way to get metadata, boxart and video previews (snapshots) for your games from the internet. If the scraper isn't working either you are not connected to the Internet or source site may be down or overloaded and in that case you'll just have to wait until it comes back up.
 
 Scraping adds extra information to the game - Publisher, Developer, Release year, Genre, Description, Number of Players supported and Rating.
 
@@ -22,7 +22,7 @@ EmulationStation has a built in scraper that pulls from [TheGamesDB](http://theg
 
 ![scrapermenu3](https://cloud.githubusercontent.com/assets/10035308/10713295/3b237434-7a74-11e5-8c30-68d76b67388e.png)
 
-![scrapermenu4](https://cloud.githubusercontent.com/assets/10035308/10713292/0f9360cc-7a74-11e5-8784-b1f2555a785f.png) 
+![scrapermenu4](https://cloud.githubusercontent.com/assets/10035308/10713292/0f9360cc-7a74-11e5-8784-b1f2555a785f.png)
 
 ![scrapermenu5](https://cloud.githubusercontent.com/assets/10035308/10713306/b89d2d56-7a74-11e5-9415-485b1b5dbc0f.png)
 
@@ -69,12 +69,12 @@ Scraper is started from inside the Retropie Setup Menu. Navigate to **Manage Pac
 
 - **Max Image Width/Height:** Specify the max image width or height to scrape.
 
-- **Console Source:** Choose which database to scrape for console games: 
+- **Console Source:** Choose which database to scrape for console games:
   * thegamesdb.net (default)
   * ScreenScraper.fr
   * OpenVGDB
 
-- **Arcade Source:** Choose which database to scrape for arcade/mame games: 
+- **Arcade Source:** Choose which database to scrape for arcade/mame games:
   * mamedb.blu-ferret.co.uk (default)
   * ScreenScraper.fr
   * ArcadeItalia.net
@@ -89,11 +89,10 @@ Scraper is started from inside the Retropie Setup Menu. Navigate to **Manage Pac
 - **Update scraper to the latest version:** This updates the scraper to the latest version.
 
 ### Scraping videos
-Here is a video showing how to scrape videos using the Steven Selph's Scraper
-<a href="https://youtube.com/watch?v=rj1841sL8ro
-" target="_blank"><img src="https://i.ytimg.com/vi/rj1841sL8ro/maxresdefault.jpg" 
-alt="Scraping Videos"/></a>
 
+Here is a video showing how to scrape videos using the Steven Selph's Scraper
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/rj1841sL8ro" title="How To Scrape Videos In RetroPie Using Steven Selph's Scraper" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; allowfullscreen"></iframe>
 
 ### Advanced Configuration
 
@@ -110,7 +109,7 @@ and an images folder with:
 `Super Mario World (USA)-image.png`
 (If you dont want to append the -image part on the filename you can use `-image_suffix=`)
 
-and I ran 
+and I ran
 
 `/opt/retropie/supplementary/scraper/scraper -img_format=png -add_not_found=true -download_images=false`
 
@@ -247,7 +246,7 @@ For a more thorough description of any functionality described here, please chec
 
 ### Installation
 
-1. Quit EmulationStation (from the start menu or press F4) and type 
+1. Quit EmulationStation (from the start menu or press F4) and type
    `sudo ~/RetroPie-Setup/retropie_setup.sh`.
 2. Choose **Manage Packages** then **Manage optional packages**.
 3. Select `skyscraper` and install the package.
@@ -257,7 +256,7 @@ Make sure to update to the latest version of Retropie-Setup script if you don't 
 
 ### Using Skyscraper
 
-**Skyscraper** can be used to generate scraping information for both [EmulationStation](EmulationStation.md) and [AttractMode](http://attractmode.org). Installing `skyscraper` as a RetroPie package will automatically configure it for EmulationStation, but if you wish to use it for generating **AttractMode** metadata, you can use **Skyscraper** from the command line. 
+**Skyscraper** can be used to generate scraping information for both [EmulationStation](EmulationStation.md) and [AttractMode](http://attractmode.org). Installing `skyscraper` as a RetroPie package will automatically configure it for EmulationStation, but if you wish to use it for generating **AttractMode** metadata, you can use **Skyscraper** from the command line.
 
 Check the [official documentation](https://github.com/muldjord/skyscraper/blob/master/docs/CLIHELP.md) for a list of all command line options.
 
@@ -274,7 +273,7 @@ Scraping your ROMs and games consists of at least 2 actions:
 
 When using the **Skyscraper** module from the RetroPie-Setup script, the following actions are available in the menu:
 
-- **Gather resources:** This will gather information/media only for the systems you choose.  
+- **Gather resources:** This will gather information/media only for the systems you choose.
   Press <kbd>Space</kbd> to select each system you wish to include and <kbd>OK</kbd> to start scraping.
 
 - **Gathering source:** Choose from a menu which source to use for gathering information and media for your ROMs:
@@ -286,38 +285,38 @@ When using the **Skyscraper** module from the RetroPie-Setup script, the followi
   * ONLINE: adb.arcadeitalia.net
   * LOCAL: esgamelist - Scrapes and caches data from an EmulationStation gamelist.xml located at `$HOME/RetroPie/roms/[platform]/gamelist.xml` or `~/.skyscraper/import/[platform]/gamelist.xml`
   * LOCAL: import -- imports resources into the resource cache. Read more about this [here](https://github.com/muldjord/skyscraper/blob/master/docs/IMPORT.md).
-  
+
   **NOTE:** Some online sources require a username/password for using them. You can add this information by editing the `config.ini` configuration file (from the **Advanced options** menu).
-  
+
   **INFO:** **Skyscraper** supports IGDB and MobyGames as gathering sources, but they are not integrated into the RetroPie script menu. If you wish to use them, you'll have to use it from the command line.
 
 - **Gathering options** is a sub-menu used to configure various aspects of the gathering phase and of the information added to the cache. You can also use this sub-menu to remove information from the cache, in order to free up space or get rid of unwanted information.
 
-  * _Cache screenshots:_ toggles the download and caching of screenshots from the scraping source into the resource cache.  
+  * _Cache screenshots:_ toggles the download and caching of screenshots from the scraping source into the resource cache.
   Default: _Enabled_
 
-  * _Cache covers:_ toggles the download and caching of covers from the scraping source into the resource cache.  
+  * _Cache covers:_ toggles the download and caching of covers from the scraping source into the resource cache.
   Default: _Enabled_
 
-  * _Cache wheels:_ toggles the download and caching of wheels from the scraping source into the resource cache.  
+  * _Cache wheels:_ toggles the download and caching of wheels from the scraping source into the resource cache.
   Default: _Enabled_
 
-  * _Cache marquees:_ toggles the download and caching of marquees from the scraping source into the resource cache.  
+  * _Cache marquees:_ toggles the download and caching of marquees from the scraping source into the resource cache.
   Default: _Enabled_
-  
+
   * _Scrape only missing:_ runs the scraper only for games/roms without any scraped information/media in the resource cache.
   Default: _Disabled_
 
-  * _Force cache refresh:_ **Skyscraper** caches the media retrieved from online sources to speed up scraping and to combine multiple sources of information to give you the best scraped information available. This option forces the scraper to bypass the resource cache and re-download the resources from the online sources during the gathering action.  
-  Default: _Disabled_.  
+  * _Force cache refresh:_ **Skyscraper** caches the media retrieved from online sources to speed up scraping and to combine multiple sources of information to give you the best scraped information available. This option forces the scraper to bypass the resource cache and re-download the resources from the online sources during the gathering action.
+  Default: _Disabled_.
   **NOTE**: Use this option sparingly. **Skyscraper** automatically downloads missing media for new ROMs, so it's only needed if your really want to re-download the ROM media from online sources.
 
-  * **Purge commands**  
-    **Skyscraper** caches locally the media downloaded from online sources. In time, this cache can grow and consume a considerable amount of disk space - especially if videos have been enabled. The cache size is displayed on top in this menu screen.  
+  * **Purge commands**
+    **Skyscraper** caches locally the media downloaded from online sources. In time, this cache can grow and consume a considerable amount of disk space - especially if videos have been enabled. The cache size is displayed on top in this menu screen.
     You can delete the files from the cache using the following actions available in this menu:
     * **Vacuum chosen platform:** deletes the locally cached resources that don't have a ROM/Game file anymore. Useful to clean up space after deleting ROMs.
     * **Purge chosen platform:** deletes all the locally cached resources for a chosen platform.
-    * **Purge all platforms:** deletes all locally cached resources, for all platforms.  
+    * **Purge all platforms:** deletes all locally cached resources, for all platforms.
     **NOTE:** use these options with care, they will completely remove the cached resources. Generating game lists after you've cleared the cache requires you to re-download the media from the scraping sources all over again.
 
 - **Generate game list(s)** This will generate the EmulationStation game list(s) for the systems you choose using all previously cached resources. Press Space to select the system(s) you wish to include and OK to start the generator..
@@ -327,34 +326,34 @@ When using the **Skyscraper** module from the RetroPie-Setup script, the followi
   * _ROM Names:_ Choose how to display the ROM name in EmulationStation:
     * **Source name** use the name pulled from the scraping source (_default_).
     * **Filename** use the file name of the ROM.
-  * _Remove bracket info:_ Choose to remove (**Enabled**) or keep (**Disabled**) the text between brackets. If the name of the ROM is `Super Mario World (USA)[!].sfc`, enabling this option will make the ROM show as `Super Mario World` in EmulationStation. Conversely, when disabled, the text between brackets will be added to the ROM's name in the gamelist.  
+  * _Remove bracket info:_ Choose to remove (**Enabled**) or keep (**Disabled**) the text between brackets. If the name of the ROM is `Super Mario World (USA)[!].sfc`, enabling this option will make the ROM show as `Super Mario World` in EmulationStation. Conversely, when disabled, the text between brackets will be added to the ROM's name in the gamelist.
   Default: _Enabled_.
   * _Use ROM folders for gamelist and media_: Toggle the location where the scraper will generate the final `gamelist.xml` file for EmulationStation:
     * When _Enabled_, the `gamelist.xml` and the media will be written to the ROMs folder.
-    * When _Disabled_,the `gamelist.xml` and the media will be written to the EmulationStation configuration folder - `$HOME/.emulationstation/gamelists` and `$HOME/.emulationstation/downloaded_media`.  
+    * When _Disabled_,the `gamelist.xml` and the media will be written to the EmulationStation configuration folder - `$HOME/.emulationstation/gamelists` and `$HOME/.emulationstation/downloaded_media`.
   Default: _Disabled_
 
 - **Other commands and options**
-  * _Download Videos:_ Choose to toggle the download and caching of videos for the ROM names and also if videos are added to the game list for EmulationStation.  
-    Default: _Disabled_.  
+  * _Download Videos:_ Choose to toggle the download and caching of videos for the ROM names and also if videos are added to the game list for EmulationStation.
+    Default: _Disabled_.
   **NOTE:** Be aware that gathering and caching videos could take up a lot of disk space.
 
-  * _Advanced options_ is a separate sub-menu for advanced actions:  
+  * _Advanced options_ is a separate sub-menu for advanced actions:
     - Edit the [**config.ini**](https://github.com/muldjord/skyscraper/blob/master/docs/CONFIGINI.md) file.
     - Edit the [**artwork.xml**](https://github.com/muldjord/skyscraper/blob/master/docs/ARTWORK.md) file.
     - Edit the **aliasMap.csv** file.
 
   * _Check for Updates_ will check if a new **Skyscraper** release is available, giving you the option to update to that release.
-    
+
 ### Advanced Configuration
 
 #### Configuration files
 
-**Skyscraper** keeps its configuration files and downloaded resources cache in the `~/.skyscraper` folder. When installed through the RetroPie-Setup, this folder is also accesible via [Samba Shares](First-Installation#samba-shares) at 
+**Skyscraper** keeps its configuration files and downloaded resources cache in the `~/.skyscraper` folder. When installed through the RetroPie-Setup, this folder is also accesible via [Samba Shares](First-Installation#samba-shares) at
 
 ```
 \\retropie\configs\all\skyscraper
-``` 
+```
 
 If you wish to edit the configuration files or use the [Import](#import-your-own-media) module, you can do so directly on the system where RetroPie is installed or over the network from another computer.
 
@@ -384,13 +383,13 @@ You'll notice after adding lots of ROMs and scraping them that your boot and shu
 ### Where are my scraped media and metadata saved?
 
 Once your ROMs have been scraped, the scraped information will be located in two parts: the _Gamelist_ files (containing the ROMs metadata) and the downloaded _Media files_ (images and/or videos). Depending on the options chosen for each scraper, this information can be found in 2 possible places:
-  
+
 Scraper used|Gamelist|Media
 -|-|-
-EmulationStation | `/home/pi/.emulationstation/gamelists` | `/home/pi/.emulationstation/downloaded_images`  
+EmulationStation | `/home/pi/.emulationstation/gamelists` | `/home/pi/.emulationstation/downloaded_images`
 Scraper | <ul style='margin:0'><li>Default <br> `/home/pi/.emulationstation/gamelists` <li>Using **ROM folder for gamelists & images**<br> `/home/pi/RetroPie/roms/<system>`| <ul style='margin:0'><li>Default <br> `/home/pi/.emulationstation/downloaded_images` <li>Using **ROM folder for gamelists & images**<br> `/home/pi/RetroPie/roms/<system>/images`
 Skyscraper | <ul style='margin:0'><li>Default <br> `/home/pi/.emulationstation/gamelists` <li>Using **ROM folder for gamelists & media**<br> `/home/pi/RetroPie/roms/<system>`| <ul style='margin:0'><li>Default <br> `/home/pi/.emulationstation/downloaded_media` <li>Using **ROM folder for gamelists & media**<br> `/home/pi/RetroPie/roms/<system>/media`
-    
+
 
 The `/home/pi/.emulationstation` folder can also be accessed over [Samba Shares](First-Installation#samba-shares) at
 ```

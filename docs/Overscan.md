@@ -18,7 +18,7 @@ Settings -> All Settings -> Picture -> Setting for aspect ratio -> Just Scan
 Select "On"
 
 ### Pioneer
-Look for "Dot by Dot". 
+Look for "Dot by Dot".
 
 (please add more examples if you work it out for your TV!)
 
@@ -42,13 +42,13 @@ Note that the line `disable_overscan=0` is not strictly necessary -- what is nec
 
 This should be a rarer scenario. In this case you need to do some configuration changes. Please consult this video:
 
-https://www.youtube.com/watch?v=AYB6r7q9JkU
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/AYB6r7q9JkU" title="RetroPie: Overscan on the Raspberry Pi" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; allowfullscreen"></iframe>
 
 Summarised: You can fill the whole expanse of your screen by editing the overscan settings. Exit to the terminal with F4 or access your pi over [SSH](SSH.md)
 ```
 sudo nano /boot/config.txt
 ```
-uncomment (i.e. delete the `#` preceding the line) 
+uncomment (i.e. delete the `#` preceding the line)
 ```
 #disable_overscan=1
 ```
@@ -56,9 +56,9 @@ to
 ```
 disable_overscan=1
 ```
-save with `ctrl+x` 
+save with `ctrl+x`
 
-Then reboot. If it doesn't work then try messing with some of the other [overscan](http://elinux.org/R-Pi_Troubleshooting#Big_black_borders_around_small_image_on_HD_monitors) settings manually 
+Then reboot. If it doesn't work then try messing with some of the other [overscan](http://elinux.org/R-Pi_Troubleshooting#Big_black_borders_around_small_image_on_HD_monitors) settings manually
 
 ## The console looks good, but the picture is off for EmulationStation/RetroArch/etc!
 

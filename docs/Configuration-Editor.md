@@ -4,12 +4,11 @@ Manual configurations can also be set with the use of a keyboard.
 
 The Configuration Editor can be accessed from the RetroPie Menu or through the [RetroPie Setup Script](Updating-RetroPie) and navigate to **Setup ▶ Configuration / tools ▶ configedit **
 
-When changing settings, there are notes at the bottom of the screen that explain each setting and what they do. 
-  
-  
+When changing settings, there are notes at the bottom of the screen that explain each setting and what they do.
+
 ### Video Guide
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/rt2v-xCTDM0" title="RetroPie Configuration editor" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/rt2v-xCTDM0" title="RetroPie Configuration editor" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; allowfullscreen"></iframe>
 
 ### Basic Configuration
 

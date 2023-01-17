@@ -108,4 +108,5 @@ Cases with fans are also available, with the fan usually powered by the 5V GPIO 
 * [Showcase of older emulator versions on Raspberry Pi 1](http://www.youtube.com/watch?v=rm3IuXeIfaw)
 * [ToadKing](http://www.raspberrypi.org/phpBB3/viewtopic.php?p=137827#p137827)
 * [ChadP](http://www.raspberrypi.org/phpBB3/viewtopic.php?p=156971#p156971)
-* [Comparison of cooling methods](https://www.youtube.com/watch?v=1AYGnw6MwFM)
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/1AYGnw6MwFM" title="Raspberry Pi 3: Extreme Passive Cooling" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; allowfullscreen"></iframe>

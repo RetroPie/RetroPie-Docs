@@ -27,7 +27,7 @@ Sadly, netplay is not supported on link cable games.
 ## ROMS
 Accepted File Extensions: **.7z .gba .zip**
 
-Place your Game Boy Advance ROMS in 
+Place your Game Boy Advance ROMS in
 ```
 /home/pi/RetroPie/roms/gba
 ```
@@ -107,5 +107,4 @@ Select: Backspace
 ```
 ## Video Tutorial:
 
-<a href="https://www.youtube.com/watch?v=eM9BB9v9288" target="_blank"><img src="https://i.ytimg.com/vi_webp/eM9BB9v9288/mqdefault.webp" 
-alt="GBA Configuration Video" width="300" height="180" border="10" /></a>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/eM9BB9v9288" title="Setting Up RetroPie 2 6: How to Configure Gameboy Advance (GPSP, Libretro-VBA-next)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; allowfullscreen"></iframe>

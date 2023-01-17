@@ -22,7 +22,7 @@ The second two options select video modes for the current system or ROM. This pr
 
 ### Configuring Runcommand
 
-You can enable and disable different functions of the Runcommand Launch Menu. This is configured via RetroPie-Setup or via the runcommand configuration option in the RetroPie area of Emulation Station. 
+You can enable and disable different functions of the Runcommand Launch Menu. This is configured via RetroPie-Setup or via the runcommand configuration option in the RetroPie area of Emulation Station.
 
 <img title="Runcommand configuration options" src="https://user-images.githubusercontent.com/31816814/85050776-43955d00-b19f-11ea-98a1-279faded0f3d.png" width="80%">
 
@@ -53,7 +53,9 @@ You can also automatically generate launching images based on emulationstation t
 
 **"Manage packages" >> "Manage experimental packages" >> "launchingimages" >> "Install from binary"**
 
-After installing you can use the tool going to RetroPie-Setup main menu and choose **Configuration / tools >> launchingimages** and then follow the instructions on screen. [Here is a nice video tutorial about this tool](https://www.youtube.com/watch?v=3wc4daHBLNE).
+After installing you can use the tool going to RetroPie-Setup main menu and choose **Configuration / tools >> launchingimages** and then follow the instructions on screen.
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/3wc4daHBLNE" title="How To Enable Launching images RetroPie" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; allowfullscreen"></iframe>
 
 The launching images can also be used in a per game basis. The image must be placed at `$HOME/RetroPie/roms/SYSTEM_NAME/images/` and named as `RomName-launching.png` (or `.jpg`), where `RomName` must be the exact name of the ROM minus the trailing extension.
 
