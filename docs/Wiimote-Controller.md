@@ -640,28 +640,50 @@ Lets first load the hid-wiimote kernel module:
 sudo modprobe hid-wiimote
 ```
 
-follwed by the bluetooth protocol:
+followed by the bluetooth protocol interactive command:
 ```shell
 sudo bluetoothctl
 ```
 
-The following was taken from the bluetooth page on the ```archlinux wiki```. You can view it here under the "Configuration via the CLI"
-
 **Bluetoothctl**
 
-Pairing a device from the shell is one of the simplest and most reliable options. The exact procedure depends on the devices involved and their input functionality. What follows is a general outline of pairing a device using ```/usr/bin/bluetoothctl```:
-* Start the ```bluetoothctl``` interactive command. There one can input ```help``` to get a list of available commands.
-* Turn the power to the controller on by entering ```power on```. It is off by default.
-* Turn the agent on with ```agent on```.
-* Enter device discovery mode with ```scan on``` command if device is not yet on the list.
-* Now press the red sync button behind the battery cover on the back of the wiimote. (This will also unpair it with your wii.)
-* Enter ```pair MAC Address``` to do the pairing (tab completion works).
-* If using a device without a PIN, one may need to manually trust the device before it can reconnect successfully. Enter ```trust MAC Address``` to do so.
-* Finally, use ```connect MAC_address``` to establish a connection.
-* Now disconnect with ```disconnect MAC_adress```. The wiimote should turn off.
-* Now press the power button on the wiimote to reconnect. This should work after a reboot of RetroPie.
-* If it didn't work, you may need to ```remove MAC-adress``` and try the whole process again.
-* See also: https://wiki.archlinux.org/index.php/XWiimote#Auto-Reconnect_is_not_working_after_pairing_with_red_sync-button
+Inside the interactive command, type ```help``` to get a list of available commands. See the [bluetooth page](https://wiki.archlinux.org/title/Bluetooth#Pairing) on the ```archlinux wiki``` for more about device pairing. 
+
+If this is your first time in ```bluetoothctl```, you will need to turn on power to the controller and agent:
+```shell
+power on
+agent on
+``` 
+
+To begin the pairing process, press the red sync button on the wiimote and enter device discovery mode with the following command:
+```shell
+scan on
+```
+You may need to press the red sync button a couple times before it is detected.
+Once the wiimote is found, the console will output some information about it. Note its MAC address, we'll need that for the remaining steps.
+
+In order for the wiimote to sucessfully store the connection and reconnect automatically in the future, the following ```pair``` and ```connect``` commands **must** be run (successfully) within a single sync timeout cycle of the wiimote (one press of the red button).
+The wiimote has a pretty short timeout, so I recommend waiting until the wiimote stops blinking from the scan step above and press the red sync button again immediately before entering the following commands:
+```shell
+pair <MAC address of the wiimote>
+connect <MAC address of the wiimote>
+```
+You can use the tab completion feature to enter the address quickly. If the command reports an error, don't worry, just try it again before the lights on the wiimote stop blinking.
+
+If you were unable to successfully execute both the ```pair``` and ```connect``` commands prior to the wiimote timing out, you may need to enter ```remove <MAC Address of the wiimote>``` and try the process again.
+
+Once the wiimote is connected, enter the following command so that it will be allowed to reconnect automatically: 
+```shell
+trust <MAC address of the wiimote>
+```
+
+Finally, disconnect the wiimote and exit ```bluetoothctl```. The wiimote should turn off.
+```shell
+disconnect <MAC address of the wiimote>
+exit
+```
+
+Now pressing the power button or 1 + 2 on the wiimote should re-establish the connection to the host without any further actions. This should work after a reboot of RetroPie.
 
 All we need to do is pair the wiimotes and MoltenGamepad will handle any extra devices such as Classic Controllers, Nunchuck, Wii Balance Board etc.
 
