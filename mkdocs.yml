@@ -228,7 +228,7 @@ nav:
     - EmulationStation Changelog: EmulationStation-Changelog.md
 - Platforms:
     - Raspberry Pi: Manual-Installation.md
-      - Pi 4: Pi4.md
+    - Pi 4: Pi4.md
     - Debian/Ubuntu: Debian.md
     - Odroid C1/C2: Odroid-C1-C2.md
     - Odroid XU4: Odroid-XU3-XU4.md
