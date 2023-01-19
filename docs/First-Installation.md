@@ -3,16 +3,15 @@
 |Version|4.8|
 |:---:|:---:|
 
-Congratulations! You have discovered the wonderful world of RetroPie- your entire childhood is within reach! RetroPie is a combination of multiple projects including [RetroArch](http://www.retroarch.com), [EmulationStation](https://www.emulationstation.org), and many others. 
+Congratulations! You have discovered the wonderful world of RetroPie- your entire childhood is within reach! RetroPie is a combination of multiple projects including [RetroArch](http://www.retroarch.com), [EmulationStation](https://www.emulationstation.org), and many others.
 
-This page is for people just getting started on RetroPie. The easiest way to install RetroPie is the SD image which is a ready to go system built upon top of the Raspberry Pi OS - this is the method described in the following guide. Alternatively, advanced users can install RetroPie [manually](Manual-Installation). 
+This page is for people just getting started on RetroPie. The easiest way to install RetroPie is the SD image which is a ready to go system built upon top of the Raspberry Pi OS - this is the method described in the following guide. Alternatively, advanced users can install RetroPie [manually](Manual-Installation).
 
 This guide will give you the very basics to get you up and running from a blank MicroSD card to first boot into EmulationStation.
 
-The following video will also walk you through the installation process. Otherwise read on! 
+The following video will also walk you through the installation process. Otherwise read on!
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/E1sbnPZ_A8w" title="RetroPie First Installation Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/E1sbnPZ_A8w" title="RetroPie First Installation Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; allowfullscreen"></iframe>
 
 ## Hardware
 
@@ -34,7 +33,7 @@ The simplest way to get most of these components is through an all-in-one kit su
   * [4-Pole RCA to 3.5mm](https://user-images.githubusercontent.com/540857/107688722-f3ab5f00-6c75-11eb-9837-ffe7f385b1c5.jpg) is also an option for older screens
 * Power supply
   * View the official [Raspberry Pi Power](https://www.raspberrypi.org/documentation/computers/raspberry-pi.html#power-supply) documentation for each model
-* Game controller of your choice 
+* Game controller of your choice
   * Can be USB-wired, wireless (with a dongle), or Bluetooth (with or without a dongle. Pi 3 and later models have built-in Bluetooth and won't need a dongle)
   * The [Control Block](http://blog.petrockblock.com/2014/12/29/controlblock-power-switch-and-io-for-the-raspberry-pi/) can use original SNES controllers
 
@@ -74,7 +73,7 @@ Follow the onscreen instructions to configure your gamepad. If your controller d
 
 See the following diagrams for reference:
 
-| SNES Controller | 
+| SNES Controller |
 |:---:|
 |![snes_controller](https://cloud.githubusercontent.com/assets/10035308/22185414/f129dc28-e099-11e6-8524-93facf275eda.png)|
 
@@ -113,7 +112,7 @@ For more information, see [Hotkeys](RetroArch-Configuration#hotkeys)
 ## EmulationStation
 
 | **Where are the systems?**|
-| :---: | 
+| :---: |
 **When you first see EmulationStation you may wonder why you don't see systems like the SNES or Game Boy. Worry not - the emulators are installed on the system, but ROMs will need to be added to their respective rom folders before they will become visible**|
 |![firstboot](https://cloud.githubusercontent.com/assets/10035308/16217874/c6bbdb3a-3734-11e6-998f-8cc714a320ce.png)|
 
@@ -134,10 +133,10 @@ After you've transferred your ROMs, you need to restart EmulationStation in orde
 * [Configure Wifi](Wifi)
 * [Enable SSH](SSH)
 * Configure more controllers. This can be done after plugging in the new controller and pressing *Start* on your controller and selecting *Configure Input*
-* In RetroPie, not everything is installed by default. The pre-made images contain the best-working emulators for the more common systems supported by the hardware. This should cover typical use, but if you want to install additional emulators or ports, the [Updating RetroPie](https://retropie.org.uk/docs/Updating-RetroPie/#updatinginstalling-individual-packages) page has this information. 
+* In RetroPie, not everything is installed by default. The pre-made images contain the best-working emulators for the more common systems supported by the hardware. This should cover typical use, but if you want to install additional emulators or ports, the [Updating RetroPie](https://retropie.org.uk/docs/Updating-RetroPie/#updatinginstalling-individual-packages) page has this information.
 * [Cheat codes](Cheats)!
 
-See the rest of the [RetroPie documentation](https://retropie.org.uk/docs/) for more detailed information on individual emulators, advanced settings, etc. If you're having trouble, you may find answers in the [FAQ](FAQ). Also, the RetroPie community is very helpful on the [RetroPie forum](https://retropie.org.uk/forum/). 
+See the rest of the [RetroPie documentation](https://retropie.org.uk/docs/) for more detailed information on individual emulators, advanced settings, etc. If you're having trouble, you may find answers in the [FAQ](FAQ). Also, the RetroPie community is very helpful on the [RetroPie forum](https://retropie.org.uk/forum/).
 
 **The RetroPie Project is primarily maintained by a few developers who develop the project in their free time. If you have found the RetroPie project useful please consider donating to the project [here](https://retropie.org.uk/donate/). As you become more familiar with RetroPie, pay it forward by helping others on the forum. The RetroPie Project is what it is today because of the many contributions of the community.**
 

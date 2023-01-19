@@ -11,7 +11,7 @@ The Sega CD was an add-on to the Sega Mega Drive/Genesis. It was released in 199
 | [lr-picodrive](https://github.com/libretro/picodrive) | segacd | .bin .chd .cue .iso .m3u | us_scd1_9210.bin, eu_mcd1_9210.bin, jp_mcd1_9112.bin | /opt/retropie/configs/segacd/retroarch.cfg |
 
 ## Emulators: [lr-genesis-plus-gx](https://github.com/libretro/Genesis-Plus-GX), [lr-picodrive](https://github.com/libretro/picodrive)
-**lr-genesis-plus-gx** is recommended for the Pi 2/3 as it has better accuracy. 
+**lr-genesis-plus-gx** is recommended for the Pi 2/3 as it has better accuracy.
 
 ## ROMS
 Accepted File Extensions: **.bin .chd .cue .iso**, **.m3u** for multi-disc games.    
@@ -23,7 +23,7 @@ Place your Sega CD ROMS (.chd .iso OR .bin AND .cue) in
 ```
 If you don't have the corresponding .cue file in the same folder as your .bin file, your game may not have sound.
 ### Multi-Disc games
-For multi-disc games using `.cue` or `.chd` format, you can create a `.m3u` playlist to be able to easily change discs from the RetroArch's _Disk Control_ menu. 
+For multi-disc games using `.cue` or `.chd` format, you can create a `.m3u` playlist to be able to easily change discs from the RetroArch's _Disk Control_ menu.
 
 To change the disc through RetroArch, from the "Quick Menu", enter "Disk Control", use the "Disk Cycle Tray Status" to open the virtual disk tray, change the disk number to the correct one, then use the "Disk Cycle Tray Status" to close the virtual disk tray.
 
@@ -64,7 +64,7 @@ lr-genesis-plus-gx and lr-picodrive have support for the CHD (V1-V5) archive for
 
 ### lr-picodrive
 
-The BIOS filename is: **us_scd1_9210.bin** 
+The BIOS filename is: **us_scd1_9210.bin**
 
 Place this lr-picodrive BIOS file in
 ```
@@ -80,17 +80,21 @@ Place this lr-genesis-plus-gx BIOS file in
 ```
 /home/pi/RetroPie/BIOS
 ```
-the alternate BIOS files above can be renamed: bios_CD_E.bin, bios_CD_J.bin (Europe and Japan respectively)  
-  
-Video Guide using lr-genesis-plus-gx: https://www.youtube.com/watch?v=PkktRuK8uWU
+the alternate BIOS files above can be renamed: bios_CD_E.bin, bios_CD_J.bin (Europe and Japan respectively)
+
+Video Guide using lr-genesis-plus-gx:
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/PkktRuK8uWU" title="RetroPie: Sega CD / Mega CD emulation on a Raspberry Pi" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; allowfullscreen"></iframe>
+
 
 ### Checksums
 
-| lr-picodrive filename | lr-Genesis-Plus-GX filename | No-Intro filename | md5sum |
-| :---: | :---: | :---: | :---: |
-| us_scd1_9210.bin | bios_CD_U.bin | [BIOS] Sega CD (USA) (v1.10).md | 2efd74e3232ff260e371b99f84024f7f |
-| eu_mcd1_9210.bin | bios_CD_E.bin | [BIOS] Mega-CD (Europe) (v1.00).md | e66fa1dc5820d254611fdcdba0662372 |
-| jp_mcd1_9112.bin | bios_CD_J.bin | [BIOS] Mega-CD (Asia) (v1.00S).md | bdeb4c47da613946d422d97d98b21cda |
+| lr-picodrive filename | lr-Genesis-Plus-GX filename |         No-Intro filename          |              md5sum              |
+| :-------------------: | :-------------------------: | :--------------------------------: | :------------------------------: |
+|   us_scd1_9210.bin    |        bios_CD_U.bin        |  [BIOS] Sega CD (USA) (v1.10).md   | 2efd74e3232ff260e371b99f84024f7f |
+|   eu_mcd1_9210.bin    |        bios_CD_E.bin        | [BIOS] Mega-CD (Europe) (v1.00).md | e66fa1dc5820d254611fdcdba0662372 |
+|   jp_mcd1_9112.bin    |        bios_CD_J.bin        | [BIOS] Mega-CD (Asia) (v1.00S).md  | bdeb4c47da613946d422d97d98b21cda |
+
 
 ## Controls
 

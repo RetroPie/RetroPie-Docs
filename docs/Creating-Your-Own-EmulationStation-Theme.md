@@ -114,8 +114,9 @@ However, this step is entirely optional. You can do all of this directly on the 
 
 **Set Up EmulationStation on PC**
 
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/oHtCnBiyzOY" title="EmulationStation Windows Portable (USB Stick)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; allowfullscreen"></iframe>
+
 - Download the portable Emulationstation by @herb_fargus
-  - [Watch the video first](https://www.youtube.com/watch?v=oHtCnBiyzOY)
   - [Download the file](https://drive.google.com/file/d/0B2TMeZ6iEFvHYkNrMGVQSldkZ0U/view?usp=sharing)
 - Install/unzip it where you want it. I have it on F:/ Drive, so the path is F:\emulationstation
 - Download [this](https://dl.dropboxusercontent.com/u/14838442/fake-games.zip) zip file. Within it are 3 folders: 'gb', 'nes' and 'snes'. Within each folder are 15 blank .txt files, each named after a game on that system. These files have also had their extensions changed to something that ES will see as a rom.
@@ -164,8 +165,8 @@ Open `spare.xml` and add these lines:
 theme name:     Spare
 version:        1.0
 author:         Matt Kennedy
-email:          
-website:        
+email:
+website:
 license:        creative commons CC-BY-NC-SA
 based on:       "Carbon" by Eric Hettervik
 -->
@@ -173,7 +174,7 @@ based on:       "Carbon" by Eric Hettervik
 <theme>
 
     <formatVersion>4</formatVersion>
-    
+
     <view name="system"></view>
     <view name="basic"></view>
     <view name="detailed"></view>
@@ -184,7 +185,7 @@ based on:       "Carbon" by Eric Hettervik
 >When you are making your own theme you would obviously change the 'theme name' and 'author' fields to suit.
 
 - The theme details at the top just tell anyone looking who made the theme.
-- Anything within `<!-- x -->` is a comment, visible to humans who read the code, but invisible to Emulationstation. 
+- Anything within `<!-- x -->` is a comment, visible to humans who read the code, but invisible to Emulationstation.
 - The `<theme></theme>` fields tell Emulationstation that the code within is for a theme.
 - The `<formatVersion>4</formatVersion>` sets the theme version. I don't really know much about this, just that most themes use version 3, but if you want to allow for the Child-Friendly version of ES, you need to use version 4.
 - `<view name="x"></view>` governs what happens in each of those views.
@@ -199,12 +200,12 @@ Open `spare/gb/theme.xml` and add these lines:
 
     <formatVersion>4</formatVersion>
     <include>./../spare.xml</include>
-    
+
     <view name="system"></view>
     <view name="basic"></view>
     <view name="detailed"></view>
     <view name="video"></view>
-    
+
 </theme>
 ```
 Notice it's almost identical to `spare.xml`, except for a few things. You don't need to specify any theme details, because we are using this line:
@@ -495,8 +496,8 @@ Open `spare.xml`. It should look like this:
 theme name:     Spare
 version:        1.0
 author:         Matt Kennedy
-email:          
-website:        
+email:
+website:
 license:        creative commons CC-BY-NC-SA
 based on:       "Carbon" by Eric Hettervik
 -->
@@ -504,7 +505,7 @@ based on:       "Carbon" by Eric Hettervik
 <theme>
 
     <formatVersion>4</formatVersion>
-    
+
     <view name="system">
 		<image name="background_color" extra="true">
 			<path>./_inc/images/bg_color.png</path>
@@ -692,7 +693,7 @@ However, it starts off looking like this:
 
 Open `spare.xml`.
 
-We're going to start by placing a bunch of Helper boxes to block out where we want everything. 
+We're going to start by placing a bunch of Helper boxes to block out where we want everything.
 
 - You can use an image editing program to mock this up beforehand, and this is where the ES Theme Helper comes in very handy.
 - Or you can just sort of freehand it. Add a box, check its shape, move it, resize it, check it again. Keep doing that until you are happy with it, and then add another box (this was the way I made this theme).
@@ -1173,8 +1174,8 @@ This is my complete `spare.xml`:
 theme name:		Spare
 version:		1.0
 author:			Matt Kennedy
-email:			
-website:		
+email:
+website:
 license:		creative commons CC-BY-NC-SA
 based on:		"Carbon" by Eric Hettervik
 -->
@@ -1257,7 +1258,7 @@ based on:		"Carbon" by Eric Hettervik
 	</view>
 
 	<view name="detailed">
-		
+
 		<image name="background_logo_gamelist" extra="true">
 			<path>./_inc/images/bg_color.png</path>
 			<origin>0 0</origin>
@@ -1283,7 +1284,7 @@ based on:		"Carbon" by Eric Hettervik
 				<fontSize>0.04</fontSize>
 				<horizontalMargin>0.01</horizontalMargin>
 			</textlist>
-		
+
 		<image name="background_image" extra="true">
 			<path>./_inc/images/bg_color.png</path>
 			<origin>0 0</origin>
@@ -1297,7 +1298,7 @@ based on:		"Carbon" by Eric Hettervik
 				<pos>0.545 0.33</pos>
 				<maxSize>0.33 0.58</maxSize>
 			</image>
-		
+
 		<image name="background_metadata" extra="true">
 			<path>./_inc/images/bg_color.png</path>
 			<origin>0 0</origin>
@@ -1387,7 +1388,7 @@ based on:		"Carbon" by Eric Hettervik
 				<datetime name="md_lastplayed">
 					<pos>0.75 0.50</pos>
 				</datetime>
-		
+
 		<image name="background_description" extra="true">
 			<path>./_inc/images/bg_color.png</path>
 			<origin>0 0</origin>
@@ -1415,10 +1416,10 @@ based on:		"Carbon" by Eric Hettervik
 And my complete `theme.xml`, which is identical in each system folder:
 ```
 <theme>
-	
+
 	<formatVersion>4</formatVersion>
 	<include>./../spare.xml</include>
-	
+
 	<view name="system, basic, detailed">
 
 		<image name="logo">
@@ -1426,7 +1427,7 @@ And my complete `theme.xml`, which is identical in each system folder:
 		</image>
 
 	</view>
-	
+
 </theme>
 ```
 
@@ -1445,7 +1446,7 @@ Congratulations to those that made it this far. It's been a heck of a journey. Y
 - Fake "games" zip file from my DropBox
   - [fake_games.zip](https://dl.dropboxusercontent.com/u/14838442/fake-games.zip)
 - Portable Emulationstation by @herb_fargus:
-  - [Watch the video first](https://www.youtube.com/watch?v=oHtCnBiyzOY)
+  - [EmulationStation Windows Portable (USB Stick)](https://www.youtube.com/watch?v=oHtCnBiyzOY)
   - [Download the file](https://drive.google.com/file/d/0B2TMeZ6iEFvHYkNrMGVQSldkZ0U/view?usp=sharing)
 - The ES Theme Helper by @Rookervik:
   -  [Get it from @Rookervik's DropBox here](https://dl.dropboxusercontent.com/u/60872572/EmulationStation/ES%20Theme%20Helper3.rar)
@@ -1455,3 +1456,6 @@ Congratulations to those that made it this far. It's been a heck of a journey. Y
   - [Imgur](http://imgur.com/a/LjRZk)
 - My other theme:
   - [MetaPixel](https://github.com/mattrixk/es-theme-metapixel)
+- A generic tutorial on how to convert a rasterimage to vector image:
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/q9Fk6OzX86U" title="Tutorial on creating Vector (SVG) logos from Bitmaps (e.g. PNG)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; allowfullscreen"></iframe>

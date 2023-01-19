@@ -9,12 +9,7 @@ _GemRB is a portable open-source implementation of Bioware's Infinity Engine. It
 
 ## Emulator [GemRB](https://github.com/gemrb/gemrb)
 
-<a href="https://www.youtube.com/watch?v=W3YsyRDc_Os
-" target="_blank"><img src="https://i.ytimg.com/vi_webp/W3YsyRDc_Os/mqdefault.webp" 
-alt="RetroPie with Bluetooth" width="300" height="190" border="10" /></a>  
-  
-**Video Guide**: https://www.youtube.com/watch?v=W3YsyRDc_Os  
-
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/W3YsyRDc_Os" title="RetroPie - Baldurs Gate running on a Raspberry Pi with GemRB" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; allowfullscreen"></iframe>
 
 ## Roms
 

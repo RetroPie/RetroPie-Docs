@@ -29,7 +29,7 @@ There are 3 main ways to configure input for RetroArch:
 
 ## AutoConfigurations
 
-RetroArch controls have been integrated into EmulationStation and will be the first thing you see when you boot from the RetroPie SD image the first time. You can also access it from the start menu within EmulationStation under the Configure Input option. Your joypad is automagically configured for libretro (RetroArch) emulators when you configure your controller in EmulationStation. You'll know if your controller has been automagically configured if you see a flash of yellow text on the bottom of the screen with your gamepad ID when you start a game.  
+RetroArch controls have been integrated into EmulationStation and will be the first thing you see when you boot from the RetroPie SD image the first time. You can also access it from the start menu within EmulationStation under the Configure Input option. Your joypad is automagically configured for libretro (RetroArch) emulators when you configure your controller in EmulationStation. You'll know if your controller has been automagically configured if you see a flash of yellow text on the bottom of the screen with your gamepad ID when you start a game.
 
 The following diagrams are for the 3 most common controllers: Super Nintendo, Xbox 360, and PlayStation 3. They can be used as a reference when configuring your controllers. Each emulator page on the wiki has a diagram of the original controller for its respective console that will correspond to the same inputs listed below.
 
@@ -71,7 +71,7 @@ input_y_btn = "3"
 input_left_axis = "-0"
 input_state_slot_decrease_axis = "-0"
 ```
-As seen above in the config for the USB SNES controller, each input on the controller has an associated value.  When setting up the controller in EmulationStation, these values are then assigned a respective action on RetroArch.  
+As seen above in the config for the USB SNES controller, each input on the controller has an associated value.  When setting up the controller in EmulationStation, these values are then assigned a respective action on RetroArch.
 
 For example, suppose the "A" button on a USB SNES controller has a value of "1."  When setting up the controller, EmulationStation would prompt you to press the "A" button on your controller.  Pressing the "A" button would then record into the config file as `input_a_btn = "1"`, so RetroArch will know that the "A" button on your physical controller corresponds to the "A" button on RetroArch's virtual controller, the RetroPad.  Therefore, the next time you play a game such as Super Mario Bros. pressing the "A" button will tell RetroArch to press the "A" button on its RetroPad, causing Mario to jump.  If you accidentally pressed the "B" button with a value of "2" during setup when it prompted for "A," then it would be recorded into the config file as `input_a_btn = "2"`, so if you want to jump in Super Mario Bros., you would have to press "B" on your controller.
 
@@ -98,8 +98,8 @@ If you want to edit the entries in the .cfg file for your controller, you will n
 
 On the other hand, maybe you are not sure if the values in the .cfg file is correct or the file is missing entries for buttons that are available on your own controller, such as a "Home" button.  You can run _jstest_ (joystick test) in the terminal by selecting _Quit EmulationStation_ (a keyboard will be required for the following steps).
 
-In the terminal, type and enter     
-`jstest /dev/input/js0`     
+In the terminal, type and enter    
+`jstest /dev/input/js0`
 
 Replace js0 with js1, js2, js3, etc. as needed if not detected.
 
@@ -111,7 +111,7 @@ Using these values, you can edit the .cfg file for that controller as needed.  F
 
 **Video Tutorial**
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/DBnKFRflEV4" title="RetroPie: Using hotkeys in Retroarch" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/DBnKFRflEV4" title="RetroPie: Using hotkeys in Retroarch" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; allowfullscreen"></iframe>
 
 
 ## Hardcoded Configurations
@@ -149,7 +149,7 @@ Here, SYSTEMNAME is `atari2600`, `snes`, etc. All settings in these files will o
 ([example](RetroArch-Configuration#example-per-system-control-override-retroarchcfg))
 
 The `ROMNAME` includes the original file extension before the `.cfg`, e.g. `supermariobros.zip.cfg` These configurations are used when starting this specific ROM.
- 
+
 ### Custom RetroArch Override Examples
 
 #### Example Default Per-System retroarch.cfg
@@ -191,8 +191,8 @@ input_player2_r_btn = 5
 input_player2_start_btn = 9
 input_player2_select_btn = 8
 
-# Axis for RetroArch D-Pad. 
-# Needs to be either '+' or '-' in the first character signaling either positive or negative direction of the axis, then the axis number. 
+# Axis for RetroArch D-Pad.
+# Needs to be either '+' or '-' in the first character signaling either positive or negative direction of the axis, then the axis number.
 input_player1_up_axis = -1
 input_player1_down_axis = +1
 input_player1_left_axis = -0
@@ -229,7 +229,7 @@ config_save_on_exit = false
 
 ## Core Input Remapping
 
-Core Input Remapping differs from the other two methods as it remaps how the core receives input rather than how the gamepad is coded, for example you can tell the snes core to switch button A and B on the controller for gameplay, but you can still use "A" to select in the RGUI and "B" to go back where as hard-coding would make B select and A back. Core Remapping is much more practical than hard-coded mapping but is limited to the cores that support it. 
+Core Input Remapping differs from the other two methods as it remaps how the core receives input rather than how the gamepad is coded, for example you can tell the snes core to switch button A and B on the controller for gameplay, but you can still use "A" to select in the RGUI and "B" to go back where as hard-coding would make B select and A back. Core Remapping is much more practical than hard-coded mapping but is limited to the cores that support it.
 
 * Start a game of the system you want to remap the buttons
 * Invoke RGUI (**Hotkey+X** with player 1)
@@ -249,15 +249,13 @@ Remaps are saved as `.rmp` files in directory:
 
 ### Video Tutorials
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/liJKFUZX4PM" title="Remapping your controller" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/liJKFUZX4PM" title="Remapping your controller" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; allowfullscreen"></iframe>
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/fcRVcPkpLfQ" title="Testing your joystick" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/fcRVcPkpLfQ" title="Testing your joystick" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; allowfullscreen"></iframe>
 
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/AhkEnDdygbQ" title="Configuring USB Controllers With Retroarch" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; allowfullscreen"></iframe>
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/AhkEnDdygbQ" title="Configuring USB Controllers With Retroarch" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/IjEA85BUDKs" title="XBox 360 Wireless Controller Configuration" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/IjEA85BUDKs" title="XBox 360 Wireless Controller Configuration" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; allowfullscreen"></iframe>
 
 ### Default Core Controls for All Emulators
 

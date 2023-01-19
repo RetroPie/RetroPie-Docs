@@ -2,9 +2,9 @@
 
 N64 emulation on the raspberry pi is difficult due to the pi's under powered GPU (Graphics Processing Unit) and lack of certain GPU features found in more modern devices.
 
-If you are looking for a more perfect N64 emulation experience you should seriously consider different hardware first (i.e. a desktop computer, modern mobile phone/tablet etc.). However, listed below are several tweaks that can be made to your raspberry pi that will help maximize N64 performance and make many of the popular N64 titles playable. 
+If you are looking for a more perfect N64 emulation experience you should seriously consider different hardware first (i.e. a desktop computer, modern mobile phone/tablet etc.). However, listed below are several tweaks that can be made to your raspberry pi that will help maximize N64 performance and make many of the popular N64 titles playable.
 
-## Hardware and Configuration 
+## Hardware and Configuration
 
 A Raspberry Pi 3 or later model is highly suggested to maximize performance.
 
@@ -16,9 +16,9 @@ A Raspberry Pi 3 or later model is highly suggested to maximize performance.
 
 Overclocking is setting a hardware component to run faster than originally intended by the manufacturer. It can add instability if not done properly. It will also make your pi run hotter. There are no standard settings for overclocking and not all pis will handle the same amount of overclocking. Therefore before you begin overclocking please review [this article](Overclocking) first for proper overclocking methods and stability testing to prevent SD card corruption and potential loss of your data.
 
-For boosting N64 performance, it is the```core_freq```(GPU core) setting that will give the most benefit. Most pis I tested were stable between ```core_freq=500``` and ```core_freq=575``` with some amount of ```over_voltage``` applied. Again, it is important to remember that not all pis are equal, some will only overclock a little or not at all. You will need to experiment to see how much your pi can handle. If your pi freezes or crashes then your overclock is unstable. 
+For boosting N64 performance, it is the```core_freq```(GPU core) setting that will give the most benefit. Most pis I tested were stable between ```core_freq=500``` and ```core_freq=575``` with some amount of ```over_voltage``` applied. Again, it is important to remember that not all pis are equal, some will only overclock a little or not at all. You will need to experiment to see how much your pi can handle. If your pi freezes or crashes then your overclock is unstable.
 
-Overclocking ```sdram_freq``` will give a very small boost to performance. Going from 450mhz to 550mhz yielded at best about a 1FPS increase. Sdram has its own over voltage value ```over_voltage_sdram```. 
+Overclocking ```sdram_freq``` will give a very small boost to performance. Going from 450mhz to 550mhz yielded at best about a 1FPS increase. Sdram has its own over voltage value ```over_voltage_sdram```.
 
 ```v3d_freq```can also be overclocked. This helped improve performance for a couple games I tested. Most of the raspberry pis I tested were stable to at least ```v3d_freq=500``` but not much past this.
 
@@ -31,9 +31,9 @@ then cancel, exit and reboot.
 
 ## Selecting the Correct Emulator and Graphics Plugin
 
-Just as important as overclocking, selecting the right emulator/graphics plugin from the [runcommand](Runcommand#runcommand-launch-menu) menu on a per game basis will also increase performance. Selecting the right plugin can make all the difference in making a game playable. 
+Just as important as overclocking, selecting the right emulator/graphics plugin from the [runcommand](Runcommand#runcommand-launch-menu) menu on a per game basis will also increase performance. Selecting the right plugin can make all the difference in making a game playable.
 
-The current default emulator is mupen64plus-auto which will attempt to select the correct graphics plugin for you, however for best results it is best to test each plugin for yourself on a per game basis. It is recommended that you confirm a game runs well with the standard low-res plugin before attempting to use the hi-res option. 
+The current default emulator is mupen64plus-auto which will attempt to select the correct graphics plugin for you, however for best results it is best to test each plugin for yourself on a per game basis. It is recommended that you confirm a game runs well with the standard low-res plugin before attempting to use the hi-res option.
 
 Each N64 emulator/video plugin should be set to the lowest resolution (CEA-1 for most displays) through the runcommand menu. This will slightly increase performance by limiting the up-scaling the pi has to perform. This is not necessary for the gles2n64 video plugin.
 
@@ -42,10 +42,10 @@ Each N64 emulator/video plugin should be set to the lowest resolution (CEA-1 for
 
 
 ## High Resolution Texture Packs
-Instructional Video https://www.youtube.com/watch?v=b3p9pYvDT-Y 
 
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/b3p9pYvDT-Y" title="N64 Retropie High Resolution Texture Pack How To" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; allowfullscreen"></iframe>
 
-From Current version forward High Resolution Texture options are automatically configured to `True` in the configuration files for Rice and Glide.  You should not need to modify them as you did with previous versions.  Some libretro emulators support loading Hi-Rez textures and you can look for enabling those options in the libretro xmb.  
+From Current version forward High Resolution Texture options are automatically configured to `True` in the configuration files for Rice and Glide.  You should not need to modify them as you did with previous versions.  Some libretro emulators support loading Hi-Rez textures and you can look for enabling those options in the libretro xmb.
 
 
 You need to place high res texture packs in the directory `/home/pi/.local/share/mupen64plus/hires_texture`
@@ -61,7 +61,7 @@ sudo unzip texturepack.zip
 
 Texture packs are available for download [here](http://textures.emulation64.com/index.php?id=downloads).
 
-The folder name in that directory must match the core name in the rom header or the texture pack will not be properly applied.Most cases the default directory name is ok but you may need to check if you find if your rom is not correctly launching the texture pack. 
+The folder name in that directory must match the core name in the rom header or the texture pack will not be properly applied.Most cases the default directory name is ok but you may need to check if you find if your rom is not correctly launching the texture pack.
 
 Here is a list of the proper format of names for the top level folder on texture packs that have been tested:
 - F-ZERO X
@@ -75,22 +75,22 @@ Here is a list of the proper format of names for the top level folder on texture
 - ZELDA MAJORA'S MASK
 
 
-To confirm the correct name for a texture pack you may not be able to get to load  you can use the command to display the core name just use the command below in terminal then exit and scroll up I do it from a remote ssh session like putty cause you can scroll up and read it.  In the first few lines it will show the core name 
+To confirm the correct name for a texture pack you may not be able to get to load  you can use the command to display the core name just use the command below in terminal then exit and scroll up I do it from a remote ssh session like putty cause you can scroll up and read it.  In the first few lines it will show the core name
 ```
 cd /home/pi/RetroPie/roms/n64
 /opt/retropie/emulators/mupen64plus/bin/mupen64plus.sh mupen64plus-video-rice rom name
 ```
 
-You can use the same command to launch the rom correctly loading the texture pack. 
+You can use the same command to launch the rom correctly loading the texture pack.
 
-Two things you need to do once you have texture packs placed in the proper directory and named correctly. 
+Two things you need to do once you have texture packs placed in the proper directory and named correctly.
 
 You need to make sure you are launching that rom specifically with either Glide or Rice (maybe libretro if you have enabled libretro specifically to load hi rez textures)
 and
 You need to make sure you are using a resolution at 800x600 or higher in order for the texture pack to load.  You should use the highest resolution setting you can get the game performing well on it will look better the higher the resolution.
 
 
-Please also feel free to reference the Rice 64 github page for the source documentation 
+Please also feel free to reference the Rice 64 github page for the source documentation
 https://github.com/mupen64plus/mupen64plus-video-rice
 
 

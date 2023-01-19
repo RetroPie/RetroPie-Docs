@@ -6,7 +6,7 @@ To pair your controller(s) with the wireless receiver:
 
 - turn on your wireless Xbox 360 controller (hold down the Guide button)
 - press the connect button on the receiver (green light will start flash)
-- then press the tiny connect button on the top of the controller 
+- then press the tiny connect button on the top of the controller
 - you will need to repeat these steps to pair each additional controller
 
 ## Automatic Configuration (Easiest)
@@ -64,7 +64,7 @@ input_l2_axis = "+2"
 
 **However, these incompatibilities are not an issue when [using xboxdrv as a calibration and key-mapping tool](Universal-Controller-Calibration-&-Mapping-Using-xboxdrv) for almost any gamepad, including the Xbox 360 controller. When used this way, it's even possible for both xpad and xboxdrv to coexist together.**
 
-Access the [RetroPie Setup Script](Updating-RetroPie) and navigate to **Manage Packages >> Manage Driver Packages >> xboxdrv** 
+Access the [RetroPie Setup Script](Updating-RetroPie) and navigate to **Manage Packages >> Manage Driver Packages >> xboxdrv**
 
 ![xboxdrv](https://cloud.githubusercontent.com/assets/10035308/12218229/d397607e-b6d6-11e5-8a99-f3106d60425a.png)
 
@@ -229,8 +229,8 @@ case "$1" in
     ;;
 esac
 ```
-`sudo chmod +x /etc/init.d/xboxdrv`  
-`sudo update-rc.d xboxdrv start 90 2 3 4 5 stop 90 0 1 6`  
+`sudo chmod +x /etc/init.d/xboxdrv`
+`sudo update-rc.d xboxdrv start 90 2 3 4 5 stop 90 0 1 6`
 You will also need a default configuration file. Save the following content to **/etc/default/xboxdrv**:
 ```
 # How many Controllers? (support up to 4 Controllers)
@@ -333,26 +333,23 @@ This is what makes the Xbox 360 controller the best for this project.
 Now, whenever you press the Xbox (guide) button on either controller 1 or 2, it will change the control scheme. For player 1, the controller starts up in normal mode. Hitting the Xbox button will change to player1.cfg. Hitting it again will enable mouse emulation. One more time will bring back normal operation. Controller 2 cycles between normal operation and player2.cfg. Controllers 3 and 4 are unaffected.
 
 
-Here's a little explanation of xboxdrv_player1.cfg (player2 is similar):
+Here's a little explanation of `xboxdrv_player1.cfg` (player 2 is similar):
 
-    Interface    | Mapped to   | Atari 800/5200 |    Commodore   |
-    -------------------------------------------------------------
-    Right Analog | Arrow Keys  | Menu Nav       | Menu Nav        
-    Left Analog  | Mouse       | Movement       |                 
-    D-Pad        | Joystick    |                | Joystick port 2 
-    -------------------------------------------------------------
-    A Button     | Right Ctrl  |                | Fire            
-    B Button     | Num Pad 0   | Fire           | Fire            
-    X Button     | Enter       |                | Return          
-    Y Button     | Space       | Space          | Space           
-    -------------------------------------------------------------
-    L1 Button    | F4          | Start Game     |                 
-    R1 Button    | F7          |                |                 
-    L2 Button    | PAGEUP      |                |                 
-    R2 Button    | CAPSLOCK    |                | Start Game      
-    --------------------------------------------------------------
-    Start        | F1          | Menu           | Menu            
-    Back         | Esc         | Esc            | Esc  
+| Interface    | Mapped to  | Atari 800/5200 | Commodore       |
+| ------------ | ---------- | -------------- | --------------- |
+| Right Analog | Arrow Keys | Menu Nav       | Menu Nav        |
+| Left Analog  | Mouse      | Movement       |                 |
+| D-Pad        | Joystick   |                | Joystick port 2 |
+| A Button     | Right Ctrl |                | Fire            |
+| B Button     | Num Pad 0  | Fire           | Fire            |
+| X Button     | Enter      |                | Return          |
+| Y Button     | Space      | Space          | Space           |
+| L1 Button    | F4         | Start Game     |                 |
+| R1 Button    | F7         |                |                 |
+| L2 Button    | PAGEUP     |                |                 |
+| R2 Button    | CAPSLOCK   |                | Start Game      |
+| Start        | F1         | Menu           | Menu            |
+| Back         | Esc        | Esc            | Esc             |
 
 
 ***

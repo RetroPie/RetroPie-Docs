@@ -13,9 +13,9 @@ _The Sega Dreamcast is a 6th generation home video game console released by Sega
 
 ## Emulators: [Reicast](https://github.com/reicast/reicast-emulator), [lr-flycast](https://github.com/libretro/flycast.git), [Redream](https://redream.io)
 
-Reicast can be very laggy and buggy, but some games work great. Pi 2 or later is required. 
+Reicast can be very laggy and buggy, but some games work great. Pi 2 or later is required.
 
-Audio is choppy and not great, and degrades the longer the emulator is in use.  Restarting the emulator (and ultimately the Pi) may become a good idea after a couple hours of gameplay. There is a memory leak somewhere in the Reicast code. Low screen resolution are recommended to get best performance. Performance greatly suffers if HD resolutions are used.   
+Audio is choppy and not great, and degrades the longer the emulator is in use.  Restarting the emulator (and ultimately the Pi) may become a good idea after a couple hours of gameplay. There is a memory leak somewhere in the Reicast code. Low screen resolution are recommended to get best performance. Performance greatly suffers if HD resolutions are used.
 
 lr-flycast can be found in the _Optional_ packages section in the RetroPie Setup Script and on a Pi4 it has much better performance than Reicast.
 
@@ -45,28 +45,27 @@ Place your BIOS files in
 
 BIOS files
 
-| File | Region | md5sum | CRC32 | Comment |
-| :--: | :--: | :--: | :--: | :--: |
-| dc_boot.bin | World | e10c53c2f8b90bab96ead2d368858623 | 89f2b1a1 | |
-| dc_flash.bin | USA | 0a93f7940c455905bea6e392dfde92a4 | c611b498 | |
-| dc_flash.bin | Europe | 23df18aa53c8b30784cd9a84e061d008 | b7e5aeeb | |
-| dc_flash.bin | Japan | 69c036adfca4ebea0b0c6fa4acfc8538 | 5f92bf76 | |
-| dc_boot.bin | Free | d407fcf70b56acb84b8c77c93b0e5327 | 61d5613f | Hack |
-| dc_flash.bin | Free | 93a9766f14159b403178ac77417c6b68 | e0d202a2 | Hack |
-| dc_boot.bin | Free | d552d8b577faa079e580659cd3517f86 | 558f456e | atreyu187 Hack |
-| dc_flash.bin | Free | 74e3f69c2bb92bc1fc5d9a53dcf6ffe2 | bda0e9aa | atreyu187 Hack |
-| naomi.zip | World | eb4099aeb42ef089cfe94f8fe95e51f6 | c295a8c2 | NAOMI BIOS |
-| awbios.zip | World | 0ec5ae5b5a5c4959fa8b43fcf8687f7c | ab628024 | Atomiswave BIOS |
+|     File     | Region |              md5sum              |  CRC32   |     Comment     |
+| :----------: | :----: | :------------------------------: | :------: | :-------------: |
+| dc_boot.bin  | World  | e10c53c2f8b90bab96ead2d368858623 | 89f2b1a1 |                 |
+| dc_flash.bin |  USA   | 0a93f7940c455905bea6e392dfde92a4 | c611b498 |                 |
+| dc_flash.bin | Europe | 23df18aa53c8b30784cd9a84e061d008 | b7e5aeeb |                 |
+| dc_flash.bin | Japan  | 69c036adfca4ebea0b0c6fa4acfc8538 | 5f92bf76 |                 |
+| dc_boot.bin  |  Free  | d407fcf70b56acb84b8c77c93b0e5327 | 61d5613f |      Hack       |
+| dc_flash.bin |  Free  | 93a9766f14159b403178ac77417c6b68 | e0d202a2 |      Hack       |
+| dc_boot.bin  |  Free  | d552d8b577faa079e580659cd3517f86 | 558f456e | atreyu187 Hack  |
+| dc_flash.bin |  Free  | 74e3f69c2bb92bc1fc5d9a53dcf6ffe2 | bda0e9aa | atreyu187 Hack  |
+|  naomi.zip   | World  | eb4099aeb42ef089cfe94f8fe95e51f6 | c295a8c2 |   NAOMI BIOS    |
+|  awbios.zip  | World  | 0ec5ae5b5a5c4959fa8b43fcf8687f7c | ab628024 | Atomiswave BIOS |
+
 
 **Note:** If you are having trouble with having to set the date/time every time you load Reicast, [see this forum post](https://retropie.org.uk/forum/post/53941) for a guide on how to replace dc_flash.bin. The MD5 of the dc_flash.bin generated from that guide should be `2f818338f47701c606ade664a3e16a8a`.
 
 **Note:** As of February 2019, the date/time prompt should appear only the 1st time Reicast is started.
 
-## Video Setup Guide  
+## Video Setup Guide
 
-<a href="https://www.youtube.com/watch?v=yAB0_kkaa5s
-" target="_blank"><img src="https://i.ytimg.com/vi_webp/yAB0_kkaa5s/mqdefault.webp" 
-alt="RetroPie Dreamcast emulation" width="300" height="190" border="10" /></a>  
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/yAB0_kkaa5s" title="RetroPie: Sega Dreamcast Emulation on Raspberry Pi" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; allowfullscreen"></iframe>
 
 RetroPie 4.0 uses an output resolution independent render resolution of 640x480. Open `/home/pi/.reicast/emu.cfg` to modify render resolution.
 
@@ -75,16 +74,17 @@ RetroPie 4.0 uses an output resolution independent render resolution of 640x480.
 ```
 /opt/retropie/configs/all/autoconf.cfg
 ```
-Option | Description | Value
---- | --- | ---
-reicast_input | enable input auto configuration | (0/1)
+
+| Option        | Description                     | Value |
+| ------------- | ------------------------------- | ----- |
+| reicast_input | enable input auto configuration | (0/1) |
 
 ## VMUs
 
 ### Reicast
-VMUs are stored as .BIN files under `/home/pi/.reicast/`, and will be automatically created the first time you run Reicast without VMU files.  
+VMUs are stored as .BIN files under `/home/pi/.reicast/`, and will be automatically created the first time you run Reicast without VMU files.
 
-On occasion, these VMUs do not get formatted quite right during creation, and the Dreamcast can't save or load data from them.  They just need to be reformatted -- run the `SYSTEMMANAGER` entry in the EmulationStation Dreamcast menu and / or see [this post](http://blog.petrockblock.com/forums/topic/configuring-controllers-in-reicast/page/2/#post-99715) for details. 
+On occasion, these VMUs do not get formatted quite right during creation, and the Dreamcast can't save or load data from them.  They just need to be reformatted -- run the `SYSTEMMANAGER` entry in the EmulationStation Dreamcast menu and / or see [this post](http://blog.petrockblock.com/forums/topic/configuring-controllers-in-reicast/page/2/#post-99715) for details.
 
 ### lr-flycast
 VMUs are stored as .BIN files under `/home/pi/RetroPie/BIOS/dc/`, and will be automatically created the first time you run lr-flycast.
@@ -134,7 +134,7 @@ In more recent builds of reicast, the +Start Reicast script launches a landing p
 
 In stock configuration, access to this menu is controlled from the D-Pad of a controller with an analog stick. In the case where your controller does not have an analog stick, it may be necessary to connect one in order to access this part of the menu and create mappings for your other controllers.
 
-Some example mappings are provided below for various controllers which can be directly edited from the 
+Some example mappings are provided below for various controllers which can be directly edited from the
 ```
 /opt/retropie/configs/dreamcast/mappings/
 ```
@@ -166,17 +166,17 @@ button.16=Quit
 axis.0=Axis_X
 axis.1=Axis_Y
 ```
-If mapping is not working correctly try changing controller name for: 
+If mapping is not working correctly try changing controller name for:
 ```
 [Sony PLAYSTATION(R)3 Controller]
 ```
-For Wireless PS3 Controller use: 
+For Wireless PS3 Controller use:
 ```
 [PLAYSTATION(R)3 Controller (xx:xx:xx:xx:xx:xx)]
 ```
 Replace xx:xx:xx:xx:xx:xx with your own controller mac address
 
-Press ctrl+c to exit- Or map a Quit button (PS) as shown above :D 
+Press ctrl+c to exit- Or map a Quit button (PS) as shown above :D
 
 
 **Xbox 360 Controller:**
@@ -189,7 +189,7 @@ btn_escape = 0x13a
 [dreamcast]
 btn_a = 0x130h
 btn_b = 0x131h
-btn_c = 
+btn_c =
 btn_d = 0x139h
 btn_x = 0x133h
 btn_y = 0x134h
@@ -351,12 +351,12 @@ axis_dpad1_y_inverted = no
 axis_dpad1_x_inverted = no
 ```
 
-**iBuffalo Classic USB GamePad [EXPERIMENTAL]** 
+**iBuffalo Classic USB GamePad [EXPERIMENTAL]**
 
 Analog movement not supported
 ```
 [emulator]
-mapping_name = USB,2-axis 8-button gamepad  
+mapping_name = USB,2-axis 8-button gamepad
 btn_escape = 294
 
 [dreamcast]

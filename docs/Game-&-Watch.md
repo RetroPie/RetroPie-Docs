@@ -25,10 +25,9 @@ Place your Game & Watch ROMs in
 
 Games can be found at the [Libretro Handheld Electronic Games page](https://bot.libretro.com/assets/cores/Handheld%20Electronic%20Game/).
 
-### Video Guide  
+### Video Guide
 
-<a href="https://www.youtube.com/watch?v=DzbsfCC77IQ" target="_blank"><img src="https://i.ytimg.com/vi_webp/DzbsfCC77IQ/mqdefault.webp" 
-alt="RetroPie Game and Watch emulation" width="300" height="190" border="10" /></a>  
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/DzbsfCC77IQ" title="RetroPie: Game and Watch emulation on a Raspberry Pi" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; allowfullscreen"></iframe>
 
 ## Controls
 

@@ -160,15 +160,15 @@ All Raspberry Pi models can be manually overclocked by editing `/boot/config.txt
 
 Parameters are set like:
 
-~~~
+```
 parameter=value
-~~~
+```
 
 For example, to set the ARM to 1000MHz:
 
-~~~
+```
 arm_freq=1000
-~~~
+```
 
 #### Useful Parameters
 
@@ -220,23 +220,23 @@ Setting `force_turbo=1` results in all components running at their maximum speed
 
 The default settings for each model Pi are:
 
-~~~
+```
         ARM   Core    GPU   RAM
 Pi 1    700    250    250   400
 Pi 2    900    250    250   400
 Pi 3   1200    400    300   450
-Pi 3B+ 1400    400    300   500  
+Pi 3B+ 1400    400    300   500
 Zero   1000    400    300   450
-~~~
+```
 
 #### Where Do I Start?
 
 Where emulation benefits from overclocks, there are two types:
 
-* *Emulation restricted by the CPU*  
+* *Emulation restricted by the CPU*
     such as MAME which has no 3D acceleration at all (neither on the Pi or on any other computer)
 
-* *Emulation restricted by the GPU*  
+* *Emulation restricted by the GPU*
     such as N64 which is based around graphics plugins and is relying mostly on the OpenGL V3D core to do work for it
 
 You can measure CPU usage with `top` or `htop`. If emulation runs poorly and CPU usage is at maximum, emulation is probably limited by the CPU. If emulation runs poorly and CPU usage is *not* at 100%, emulation is probably limited by the GPU.
@@ -249,16 +249,16 @@ Some rules of thumb to start Raspberry Pi overclocking:
 
 If overclocking the CPU (`arm_freq`), start at the original speed and take it up in steps of 50MHz.
 
-If overclocking the GPU (`core_freq` or `gpu_freq`), start at `500` (or `400` for Pi 1)  and take them up in steps of 20MHz or 25MHz. Remember gpu_freq will overclock all of the GPU (including core_freq) and core_freq will over clock just the GPU processor itself. This also influences the L2 cache of the CPU which has very minor performance increase [mostly seen on the Pi Zero]https://www.raspberrypi.org/documentation/computers/config_txt.html#overclocking-options).
+If overclocking the GPU (`core_freq` or `gpu_freq`), start at `500` (or `400` for Pi 1)  and take them up in steps of 20MHz or 25MHz. Remember gpu_freq will overclock all of the GPU (including core_freq) and core_freq will over clock just the GPU processor itself. This also influences the L2 cache of the CPU which has very minor performance increase [mostly seen on the Pi Zero](https://www.raspberrypi.org/documentation/computers/config_txt.html#overclocking-options).
 
 For voltage, you are probably best to start with `over_voltage=2` then increase by `1` if the system becomes unstable.
 
 For RAM, start with the original speed and again go up in small steps of 20MHz or 25MHz, increasing voltage in steps of `1` if things become unstable. The `schmoo` setting is some timings known to help increase stability of overclocked RAM:
 
-~~~
+```
 sdram_schmoo=0x02000020
 over_voltage_sdram=2
-~~~
+```
 
 After many config file edits and reboots it's difficult to remember exactly which settings were best and which didn't have any effect and which broke things. It's best to:
 
@@ -307,7 +307,7 @@ As much as copying someone else's settings simply may not work, people still ask
 
 #### Raspberry Pi 1
 
-~~~
+```
 arm_freq=900
 gpu_freq=400
 core_freq=400
@@ -315,11 +315,11 @@ sdram_freq=400
 sdram_schmoo=0x02000020
 over_voltage=2
 over_voltage_sdram=2
-~~~
+```
 
 #### Raspberry Pi 2
 
-~~~
+```
 total_mem=1024
 arm_freq=1000
 gpu_freq=500
@@ -328,11 +328,11 @@ sdram_freq=500
 sdram_schmoo=0x02000020
 over_voltage=2
 over_voltage_sdram=2
-~~~
+```
 
 #### Raspberry Pi 3
 
-~~~
+```
 total_mem=1024
 arm_freq=1300
 gpu_freq=500
@@ -341,11 +341,11 @@ sdram_freq=500
 sdram_schmoo=0x02000020
 over_voltage=2
 over_voltage_sdram=2
-~~~
+```
 
 #### Raspberry Pi Zero
 
-~~~
+```
 arm_freq=1000
 gpu_freq=500
 core_freq=500
@@ -353,53 +353,53 @@ sdram_freq=500
 sdram_schmoo=0x02000020
 over_voltage=6 (default)
 over_voltage_sdram=2
-~~~
+```
 
 ## Measurement Tools
 
 To display a Frames Per Second counter in RetroArch cores to see the effect on emulation speed, edit `/opt/retropie/configs/all/retroarch.cfg` and set:
 
-~~~
+```
 fps_show = "true"
-~~~
+```
 
 You can [SSH](SSH.md) into your Pi while playing a game and run these commands to measure the effect of normal operation.
 
 The temperature of the SoC can be queried with the command:
 
-~~~
+```
 vcgencmd measure_temp
-~~~
+```
 
 The currently applied `config.txt` parameters which differ from default can be queried with:
 
-~~~
+```
 vcgencmd get_config int | egrep "(arm|core|gpu|sdram)_freq|over_volt"
-~~~
+```
 
 The current frequency of the components can be queried with (remember they only increase speed under load unless using `force_turbo`):
 
-~~~
+```
 for src in arm core h264 isp v3d; do echo -e "$src:\t$(vcgencmd measure_clock $src)"; done
-~~~
+```
 
 The current voltages of the components can be queried with:
 
-~~~
+```
 for id in core sdram_c sdram_i sdram_p ; do echo -e "$id:\t$(vcgencmd measure_volts $id)"; done
-~~~
+```
 
 CPU usage of currently-running processes can be viewed with
 
-~~~
+```
 top
-~~~
+```
 
 A nicer display of CPU usage can be installed with `sudo apt update && sudo apt install htop` and then:
 
-~~~
+```
 htop
-~~~
+```
 
 ## Storage Overclocking
 
@@ -415,15 +415,15 @@ It is recommended *not* to try this with a regular non-UHS SDHC card.
 
 The sdcard reader speed can be increased in `/boot/config.txt` with the following line and a reboot:
 
-~~~
+```
 dtparam=sd_overclock=100
-~~~
+```
 
 Once booted, the sdcard reader frequency can be queried with:
 
-~~~
+```
 sudo grep clock /sys/kernel/debug/mmc0/ios
-~~~
+```
 
 Spotting a bad sdcard overclock can be very difficult, as the sdcard will probably write corrupted data and everything will appear to work fine, you won't notice the data is corrupt until you access it again later on.
 
@@ -437,32 +437,38 @@ For example, setting 100MHz on a Pi 3 results in 100MHz, but setting 99MHz actua
 
 #### Overclocking
 
-* http://elinux.org/RPiconfig#Overclocking (some outdated info for Pi 1, not Pi 2/3/Zero)
-* Official Pi Foundation forums thread (long): https://www.raspberrypi.org/forums/viewtopic.php?f=29&t=6201
-* http://linuxonflash.blogspot.com/2015/02/a-look-at-raspberry-pi-2-performance.html
-* Raspberry Pi 3 overclocking: https://haydenjames.io/raspberry-pi-3-overclock/
+* <http://elinux.org/RPiconfig#Overclocking> (some outdated info for Pi 1, not Pi 2/3/Zero)
+* Official Pi Foundation forums thread (long): <https://www.raspberrypi.org/forums/viewtopic.php?f=29&t=6201>
+* <http://linuxonflash.blogspot.com/2015/02/a-look-at-raspberry-pi-2-performance.html>
+* Raspberry Pi 3 overclocking: <https://haydenjames.io/raspberry-pi-3-overclock/>
 
 #### Cooling
 
-* ExplainingComputers video series: [1](https://www.youtube.com/watch?v=e6okZKRwnTQ), [2](https://www.youtube.com/watch?v=5Ud-grj4Zl0), [3](https://www.youtube.com/watch?v=1AYGnw6MwFM0), [4](https://www.youtube.com/watch?v=WfQMLInuwws)
-* https://github.com/superjamie/lazyweb/wiki/Raspberry-Pi-Cooling
+* <https://github.com/superjamie/lazyweb/wiki/Raspberry-Pi-Cooling>
+* ExplainingComputers video series:
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/e6okZKRwnTQ" title="Raspberry Pi 3: CPU Temperature Tests & Heatsink" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; allowfullscreen"></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/5Ud-grj4Zl0" title="Raspberry Pi 3: Fan and Cooling Tests" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; allowfullscreen"></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/WfQMLInuwws" title="Raspberry Pi 3: More Extreme Cooling" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; allowfullscreen"></iframe>
 
 #### Power
 
-* https://www.raspberrypi.org/help/faqs/#powerReqs
-* http://www.righto.com/2012/10/a-dozen-usb-chargers-in-lab-apple-is.html
-* https://github.com/superjamie/lazyweb/wiki/Raspberry-Pi-Power
-* http://www.calculator.net/voltage-drop-calculator.html
-* http://www.powerstream.com/Wire_Size.htm
+* <https://www.raspberrypi.org/help/faqs/#powerReqs>
+* <http://www.righto.com/2012/10/a-dozen-usb-chargers-in-lab-apple-is.html>
+* <https://github.com/superjamie/lazyweb/wiki/Raspberry-Pi-Power>
+* <http://www.calculator.net/voltage-drop-calculator.html>
+* <http://www.powerstream.com/Wire_Size.htm>
 
 #### SDcards
 
-* https://en.wikipedia.org/wiki/Secure_Digital#Ultra_High_Speed_.28UHS.29_bus
-* http://www.jeffgeerling.com/blog/2016/how-overclock-microsd-card-reader-on-raspberry-pi-3
-* https://www.reddit.com/r/raspberry_pi/comments/4aoc3r/how_to_overclock_the_microsd_card_reader_on_a/
+* <https://en.wikipedia.org/wiki/Secure_Digital#Ultra_High_Speed_.28UHS.29_bus>
+* <http://www.jeffgeerling.com/blog/2016/how-overclock-microsd-card-reader-on-raspberry-pi-3>
+* <https://www.reddit.com/r/raspberry_pi/comments/4aoc3r/how_to_overclock_the_microsd_card_reader_on_a/>
 
 #### Other
 
-* http://www.elinux.org/RPI_vcgencmd_usage
-* https://github.com/nezticle/RaspberryPi-BuildRoot/wiki/VideoCore-Tools
+* <http://www.elinux.org/RPI_vcgencmd_usage>
+* <https://github.com/nezticle/RaspberryPi-BuildRoot/wiki/VideoCore-Tools>
 * [Extra 16M memory on Pi2/Pi3](https://www.raspberrypi.org/forums/viewtopic.php?f=29&t=180420)

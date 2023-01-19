@@ -14,7 +14,7 @@ _ScummVM stands for Script Creation Utility for Maniac Mansion (VM stands for vi
 
 Accepted File Extensions: This is a tricky question as ScummVM has its own particular filesets and method of loading- but when all is said and done **.sh .svm** are the filetypes EmulationStation will read.
 
-ScummVM is very different to most romsets in that there are a set of files for each game. 
+ScummVM is very different to most romsets in that there are a set of files for each game.
 
 See the list here: http://wiki.scummvm.org/index.php/Datafiles
 
@@ -93,6 +93,4 @@ You can open the **options** in the scummvm launcher and change the graphics mod
 
 ## Video Tutorial:
 
-<a href="https://www.youtube.com/watch?v=txdiaZlDUEs" target="_blank"><img src="https://i.ytimg.com/vi_webp/txdiaZlDUEs/mqdefault.webp" 
-alt="ScummVM Configuration" width="300" height="180" border="10" /></a>
-
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/txdiaZlDUEs" title="Setting Up RetroPie 2.6: Configuring Scummvm" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; allowfullscreen"></iframe>

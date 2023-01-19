@@ -1,4 +1,4 @@
-This tutorial is intended for those who wish to add a new system in EmulationStation. For example if you are looking to create a system for favourite games across different platforms or a separate system for roms hacks. 
+This tutorial is intended for those who wish to add a new system in EmulationStation. For example if you are looking to create a system for favourite games across different platforms or a separate system for roms hacks.
 
 If you are looking to create a favourites lists **within** a system, then you may wish to consider the [child-friendly version of EmulationStation](Child-friendly-EmulationStation) which has this feature.
 
@@ -31,7 +31,7 @@ The simplest way of adding a new system in your custom `es_systems.cfg` file is 
 
 `<name>`
 
-This is the short name used by ES internally as well as the text used in the EmulationStation UI unless replaced by an image or logo in the theme. It is advised to choose something short and descriptive, e.g. favourites, hacks. 
+This is the short name used by ES internally as well as the text used in the EmulationStation UI unless replaced by an image or logo in the theme. It is advised to choose something short and descriptive, e.g. favourites, hacks.
 
 `<fullname>`
 
@@ -43,7 +43,7 @@ This is the folder where the roms in your new system will be located. This folde
 
 `<extension> and <command>`
 
-These define the list of extensions that EmulationStation will look for in the rom folder defined in `<path>` and the shell command executed when a game is selected. 
+These define the list of extensions that EmulationStation will look for in the rom folder defined in `<path>` and the shell command executed when a game is selected.
 
 Roms can be launched using shell scripts or the runcommand script. Both methods are involved so it is your choice how you wish to proceed. The entries for these tags are covered [below](Add-a-New-System-in-EmulationStation#step-31-launch-roms-with-the-runcommand-script) so check the steps required if you are unsure which is best for you.
 
@@ -64,7 +64,7 @@ Here is an example entry for a section for rom hacks in a custom `es_systems.cfg
 	<extension>.bin .gen .int .nes .rom .smc .BIN .GEN .INT .NES .ROM .SMC</extension>
 	<command>/opt/retropie/supplementary/runcommand/runcommand.sh 0 _SYS_ hacks %ROM%</command>
 	<theme>hacks</theme>
-</system> 
+</system>
 ```
 Once you have completed your entry for the new system, then save your custom `es_system.cfg` file and place your roms in the folder specified in the `<path>` tag.
 
@@ -90,11 +90,7 @@ Here is the Hacks system using the Carbon theme where only a new vector logo has
 
 ![ES System View Unthemed](https://cloud.githubusercontent.com/assets/8166945/22027062/825e06fc-dcca-11e6-8e7e-8479517dcdae.png)
 
-You can find more information on creating themes and images or logos at the following links:
-
-[Creating Your Own Emulation Theme](Creating-Your-Own-EmulationStation-Theme)
-
-[Video Tutorial on creating Vector (svg) logos from Bitmaps (png)](https://www.youtube.com/watch?v=q9Fk6OzX86U)
+You can find more information on creating themes and images or logos at the following at [Creating Your Own Emulation Theme](Creating-Your-Own-EmulationStation-Theme).
 
 ### Step 3.1. Launch roms with the Runcommand script
 *This is recommended for console games, especially those that use libretro emulators such as those for NES, SNES, Megadrive/Genesis.*
@@ -136,7 +132,7 @@ If you wish to launch your games using shell scripts, then the `<extension>` and
 	<command>%ROM%</command>
 
 
-For each game, a shell script will need to be created in the roms folder as defined in the `<path>` tag  in in your custom `es_systems.cfg` file. 
+For each game, a shell script will need to be created in the roms folder as defined in the `<path>` tag  in in your custom `es_systems.cfg` file.
 
 Using the example from the [Doom Mods](Doom#to-launch-doom-mods-pwads) page, the shell script to launch the Batman Doom mod in pr-boom would be:
 
@@ -155,10 +151,10 @@ You can create individual shell scripts for each game in your new system. When y
 
 ### Troubleshooting
 
-* After making changes to your custom `es_systems.cfg` file, if EmulationStation fails to load or your system does not appear then check the EmulationStation log at `/opt/retropie/configs/all/emulationstation/es_log.txt` for any errors. 
+* After making changes to your custom `es_systems.cfg` file, if EmulationStation fails to load or your system does not appear then check the EmulationStation log at `/opt/retropie/configs/all/emulationstation/es_log.txt` for any errors.
 
 * You can use an [online XML validator](https://www.xmlvalidation.com/) to check for errors in your custom `es_systems.cfg` file though this won't pick up on errors such as incorrect rom paths.
 
 * After restarting EmulationStation, if your new system does not include the roms you were expecting, then check that the extensions are included in the `<extension>` tag in your custom `es_systems.cfg` file. Remember Linux is case-sensitve.
 
-* If a rom doesn't run, then check the runcommand log at `/dev/shm/runcommand.log` for errors. 
+* If a rom doesn't run, then check the runcommand log at `/dev/shm/runcommand.log` for errors.

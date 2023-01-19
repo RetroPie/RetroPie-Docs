@@ -12,7 +12,7 @@
 This guide will show how to use an 8bitdo controller with RetroPie.
 Please make sure you are using at least RetroPie v4.0, and the **controller firmware versions listed below** (newer versions shouldn't cause an issue). It is not recommended to use beta firmware versions.
 
-Please see the [8bitdo support page](http://support.8bitdo.com) for details on how to upgrade the firmware. Before you upgrade your firmware or attempt to register your controller, please make sure your controller is fully charged.  
+Please see the [8bitdo support page](http://support.8bitdo.com) for details on how to upgrade the firmware. Before you upgrade your firmware or attempt to register your controller, please make sure your controller is fully charged.
 
 #  A quick note about the 8bitdo Zero controller.
 
@@ -24,7 +24,7 @@ It also may help to reset the controller by holding down the select button for 8
 
 # Guide to add your controller
 
-**1)** Run the RetroPie setup script, either through the Emulation Station menu option or via the command line.  
+**1)** Run the RetroPie setup script, either through the Emulation Station menu option or via the command line.
 If you want to run this via the command line, quit Emulation Station by pressing F4 on the keyboard and type this at the command line: `sudo /home/pi/RetroPie-Setup/retropie_setup.sh`
 
 **2)** Choose the "Configuration / Tools" menu choice
@@ -33,7 +33,7 @@ If you want to run this via the command line, quit Emulation Station by pressing
 **3)** Choose the "bluetooth - Configure Bluetooth Devices" menu choice
 ![Bluetooth Menu](https://s22.postimg.cc/ofy9ezdb5/2_Bluetooth_Menu.jpg)
 
-**4)** **Make sure the hack option is turned "off"**  
+**4)** **Make sure the hack option is turned "off"**
 You need to make sure your controller is running the relevant [firmware](8Bitdo-Controller#firmware-versions-for-8bitdo-controllers) for this to work correctly, the versions are shown in this wiki article.
 ![Hack Off](https://s22.postimg.cc/df349yl29/2_5_Turn_hack_off.jpg)
 
@@ -95,11 +95,11 @@ The process will have written various controller configuration files for you.
 The main RetroArch controller file will now be in:
 `/opt/retropie/configs/all/retroarch-joypads/`
 
-Here are some examples of the file that should be written. 
+Here are some examples of the file that should be written.
 
 **FC30 Pro**
 
-[FC30 Pro RetroArch config file](http://pastebin.com/raw/YCj3NW0h) (Firmware 1.69 - 8BitdoFC30Pro.cfg) 
+[FC30 Pro RetroArch config file](http://pastebin.com/raw/YCj3NW0h) (Firmware 1.69 - 8BitdoFC30Pro.cfg)
 
 **SFC30**
 
@@ -111,10 +111,10 @@ Here are some examples of the file that should be written.
 
 ## Video Guide
 
-https://www.youtube-nocookie.com/embed/e2We6AElqg8
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/e2We6AElqg8" title="RetroPie 4: Adding an 8bitdo Bluetooth Contoller (August 2016)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; allowfullscreen"></iframe>
 
 ### Firmware Versions for 8bitdo controllers (June 2017)
-![8bitdo controllers firmware](https://s3.postimg.cc/j47k633fn/8bitdo-firmware.png)  
+![8bitdo controllers firmware](https://s3.postimg.cc/j47k633fn/8bitdo-firmware.png)
 
 You can download new firmware [here](http://support.8bitdo.com) and [here](https://github.com/hughsie/8bitdo-firmware/).
 
@@ -122,5 +122,5 @@ You can download new firmware [here](http://support.8bitdo.com) and [here](https
 Please confirm your firmware version before raising a support ticket
 
 ### Some useful links
-http://support.8bitdo.com  
+http://support.8bitdo.com
 https://github.com/libretro/retroarch-joypad-autoconfig/tree/master/udev

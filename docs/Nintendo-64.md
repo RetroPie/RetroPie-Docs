@@ -25,7 +25,7 @@ Accepted File Extensions: **.z64 .n64 .v64 .zip**
 
 **Note:** **Mupen64Plus** standalone cannot directly load compressed zip files.
 
-Place your Nintendo 64 ROMs in 
+Place your Nintendo 64 ROMs in
 ```
 /home/pi/RetroPie/roms/n64
 ```
@@ -56,8 +56,8 @@ Option | Description | Value
 `[Audio-OMX]` `OUTPUT_PORT` | Audio output path is Jack or HDMI. (will be overwritten if `mupen64plus_audio` is enabled) | (0=Audio Jack / **1=HDMI**)
 `[CoreEvents]` `Joy Mapping Stop` | Joystick exit button. (will be overwritten if `mupen64plus_hotkeys` is enabled) | J**X**B**Y**/B**Z** or J**X**B**Y**
 `[CoreEvents]` `Joy Mapping Load State` | Joystick load state button. (will be overwritten if `mupen64plus_hotkeys` is enabled) | J**X**B**Y**/B**Z** or J**X**B**Y**
-`[CoreEvents]` `Joy Mapping Save State` | Joystick save state button. (will be overwritten if `mupen64plus_hotkeys` is enabled) | J**X**B**Y**/B**Z** or J**X**B**Y** 
-`[Video-GLideN64]` `EnableFBEmulation` | Enable framebuffer emulation. Games like Mario Tennis need this option to render framebuffer effects. Some games have glitches if this option is enabled. (will be overwritten if `compatibility_check` is enabled) | (True/**False**) 
+`[CoreEvents]` `Joy Mapping Save State` | Joystick save state button. (will be overwritten if `mupen64plus_hotkeys` is enabled) | J**X**B**Y**/B**Z** or J**X**B**Y**
+`[Video-GLideN64]` `EnableFBEmulation` | Enable framebuffer emulation. Games like Mario Tennis need this option to render framebuffer effects. Some games have glitches if this option is enabled. (will be overwritten if `compatibility_check` is enabled) | (True/**False**)
 `[Video-GLideN64]` `EnableLegacyBlending` | Use fixed-function pipeline instead of shaders for blending for speed. Some games have glitches if this option is enabled. (will be overwritten if `compatibility_check` is enabled) | (True/**False**)  | (**True**/False)
 
 #### Scaling Mode
@@ -117,21 +117,18 @@ Y Axis = "hat(0 Up Down)"
 
 #### Hotkey combinations and special buttons
 
-Key | Description
---- | ---
-Hotkey + Start | Exit emulator.
-Hotkey + Left Shoulder | Load state.
-Hotkey + Right Shoulder | Save state.
-Left Thumb | Enable memory expansion pak.
-Right Thumb | Enable rumble expansion pak.
+| Key                     | Description                  |
+| ----------------------- | ---------------------------- |
+| Hotkey + Start          | Exit emulator.               |
+| Hotkey + Left Shoulder  | Load state.                  |
+| Hotkey + Right Shoulder | Save state.                  |
+| Left Thumb              | Enable memory expansion pak. |
+| Right Thumb             | Enable rumble expansion pak. |
 
 **Note:** Hotkey and other buttons refers to those bound during [Controller Configuration](Controller-Configuration).
 
 ## Video Tutorials
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=4WX7RrzUtII
-" target="_blank"><img src="https://i.ytimg.com/vi_webp/4WX7RrzUtII/mqdefault.webp" 
-alt="N64 Configuration Video" width="300" height="180" border="10" /></a> |
-<a href="https://www.youtube.com/watch?v=lh0n5PWN2lI
-" target="_blank"><img src="https://i.ytimg.com/vi_webp/lh0n5PWN2lI/mqdefault.webp" 
-alt="N64 Configuration Video" width="300" height="180" border="10" /></a> 
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/4WX7RrzUtII" title="RetroPie: How to get N64 Emulation working on the Raspberry Pi" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; allowfullscreen"></iframe>
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/lh0n5PWN2lI" title="RetroPie N64 Tutorial - Nintendo 64 Emulation Setup and Config" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; allowfullscreen"></iframe>

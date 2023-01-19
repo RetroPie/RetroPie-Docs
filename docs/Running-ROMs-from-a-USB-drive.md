@@ -30,14 +30,14 @@ Before proceeding, make sure the `usbromservice` (Optional packages section) is 
 
 **Note:** if you have a large ROM collection already on the SD card it will copy all of the ROMs too so make sure your USB is large enough. It is easiest if you haven't added any roms yet.
 
-Once the folder structure is copied over the USB will be mounted over the RetroPie folder so any ROMs you add to your Pi will be run off of the USB. 
+Once the folder structure is copied over the USB will be mounted over the RetroPie folder so any ROMs you add to your Pi will be run off of the USB.
 
 **Note: XU4 owners**
 The XU4 and its OS do not respond the same as the Raspberry Pi with Raspbian and it does not provide a way to know when the sync is completed. It is recommended that you allow a decent amount of time for the process to sync.
 
 ### Video Tutorial
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/KBhDmGaTQG8" title="Running Roms from USB" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/KBhDmGaTQG8" title="Running Roms from USB" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; allowfullscreen"></iframe>
 
 ## Manual Mount
 
@@ -119,7 +119,7 @@ UUID=E44B-FC4E  /home/pi/RetroPie      vfat    nofail,user,uid=pi,gid=pi 0      
 In the case of errors with ext4 file systems use
 ```
 UUID="XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXX" /home/pi/RetroPie ext4 nofail,defaults 0    0
-``` 
+```
 
 In the case you want to allow execution of file with fat32 file system (E.g : OpenBOR), use
 ```
