@@ -5,6 +5,7 @@ Enabling SSH (Secure Shell) allows remote connection to the Raspberry Pi. This p
 Here are a few (free) popular clients to try. These need to be installed on the PC, Mac, or other computer you are using to connect *to* the Raspberry Pi:
 
 * Windows:
+  * [Windows 10 SSH Client](https://learn.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse?tabs=gui) - Available since Windows 1809 build.
   * [Putty](http://www.chiark.greenend.org.uk/~sgtatham/putty/download.html) - Very simplistic access to allow for console commands, but does not feature the ease of drag & drop for ROMs and other files.
   * [WinSCP](https://winscp.net/eng/download.php) - An SFTP client that features an easy way to drag & drop files. Console commands are also possible (and even integrates with Putty) but is a secondary user interface found in the `Commands` > `Open Terminal` or `Commands` > `Open in Putty` menus.
   * [MobaXterm](https://mobaxterm.mobatek.net/) - A feature-rich console commands and drag & drop client that includes most ways to remotely connect to another computer, including SSH, SFTP, and even VNC (allows viewing the screen of another computer).
@@ -14,11 +15,11 @@ Here are a few (free) popular clients to try. These need to be installed on the 
 
 ## Enable SSH
 
-**NOTE: Starting with RetroPie 4.2, in order to keep the default image secure, [SSH is disabled by default](https://www.raspberrypi.org/blog/a-security-update-for-raspbian-pixel/). You will not be able to remotely connect to it until it has been enabled using `ONE` of the instructions below.**
+**Note**: Starting with RetroPie 4.2, in order to keep the default image secure, [SSH is disabled by default](https://www.raspberrypi.org/blog/a-security-update-for-raspbian-pixel/). You will not be able to remotely connect to it until it has been enabled using `ONE` of the instructions below.
 
 ### (Option 1) From the SD Card
 
-If your computer has an SD-card reader or a special USB stick that allows inserting an SD card, plug it into your computer, open the new drive to access your SD-card's `boot` partition,  and create an empty file called `ssh` or `ssh.txt` in the root directory. Ignore any warnings about the drive needing to be repaired.
+If your computer has an SD-card reader or a special USB stick that allows inserting an SD card, plug it into your computer, open the new drive to access your SD-card's `boot` partition,  and create an empty file called `ssh` or `ssh.txt` in the root directory. Ignore any warnings about the drive needing to be repaired (on Windows).
 
 ### (Option 2) From the RetroPie menu
 
@@ -49,7 +50,7 @@ In your chosen client, enter the following:
 
 * IP address: **See below note**
 * Port: `22`
-* Username: `pi`   
+* Username: `pi`
 * Password: `raspberry`
 
 **Note: The IP address is unique to your local network, and can be found by selecting the `Show IP` option in the `RetroPie` menu after booting up your Raspberry Pi.**
@@ -72,11 +73,11 @@ For more advanced users, root access can more easily allow for editing protected
 
 ## Common Terminal Commands:
 
-**Reboot:** 
+**Reboot:**
 ```
 sudo reboot
 ```
-**Shutdown:** 
+**Shutdown:**
 ```
 sudo shutdown -h now
 ```
@@ -84,7 +85,7 @@ sudo shutdown -h now
 ```
 cd /path/to/directory
 ```
-**list Files in Current Directory**
+**List Files in Current Directory**
 ```
 ls
 ```
@@ -92,7 +93,7 @@ ls
 ```
 sudo /home/pi/RetroPie-Setup/retropie_setup.sh
 ```
-**Edit Files with Nano:** 
+**Edit Files with Nano:**
 ```
 sudo nano /path/to/file.txt
 ```
