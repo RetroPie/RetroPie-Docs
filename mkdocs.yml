@@ -64,7 +64,7 @@ extra_css:
 google_analytics:
   - 'UA-76418872-1'
   - 'auto'
-      
+
 nav:
 - Home: index.md
 - First Installation: First-Installation.md
@@ -74,7 +74,7 @@ nav:
     - Runcommand: Runcommand.md
     - Updating RetroPie: Updating-RetroPie.md
     - SSH: SSH.md
-    - Wifi: Wifi.md
+    - WiFi: Wifi.md
 - Arcade:
     - Arcade Quick Start: Arcade.md
     - MAME: MAME.md
@@ -149,7 +149,7 @@ nav:
     - WonderSwan: WonderSwan.md
     - Zmachine: Zmachine.md
     - ZX Spectrum: ZX-Spectrum.md
-- Ports: 
+- Ports:
     - Adventure Game Studio: Adventure-Game-Studio.md
     - Cannonball: Cannonball.md
     - CaveStory: Cave-Story.md

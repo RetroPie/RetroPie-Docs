@@ -1,62 +1,48 @@
 # Configuring WiFi
 
-If you have a Raspberry Pi 3, WiFi is built into the Pi, if you have a Pi2 or earlier model, then you'll need a wifi dongle. You can check to see if your wifi dongle is compatible [here](http://elinux.org/RPi_USB_Wi-Fi_Adapters). You may want to use an USB WiFi dongle, then see [here](#using-an-external-dongle).
+If you have a Raspberry Pi 3 or later model, WiFi is built into the Pi, if you have a Pi 2 or earlier model, then you will need a WiFi dongle. You can check to see if your WiFi dongle is compatible [here](http://elinux.org/RPi_USB_Wi-Fi_Adapters). You may want to use an USB WiFi dongle, then see [here](#using-an-external-dongle).
 
-*NOTE:* In order to use the WiFi on the Raspberry Pi, you will need to first configure the **WLAN Country** via `raspi-config`. It’s under menu _5 Localisation options_ in `raspi-config`. You can start `raspi-config` from the `RetroPie` menu in EmulationStation or from the command line with `sudo raspi-config`.
+**Notes**:
 
-There are 5 main methods to configure Wifi:
+- In order to use the WiFi on the Raspberry Pi, you will need to first configure the **WLAN Country** via `raspi-config`. It is under menu _5 Localisation options_ -> _L4 WLAN County_ in `raspi-config` dialogs. You can start `raspi-config` from the `RetroPie` menu in EmulationStation or from the command line with `sudo raspi-config`. This step is mandatory for all solution options described below.
+- WiFi will not start up if you have an hard wired ethernet connection. After disconnecting the ethernet cable you will need to reboot to get WiFi started.
 
-1. [Wifi Module](#wifi-module)
-2. [Connecting to Wifi Without a Keyboard](#connecting-to-wifi-without-a-keyboard)
-3. [Manual Configuration (Interfaces)](#manual-configuration-interfaces)
-4. [Manual Configuration (WPA_Supplicant)](#manual-configuration-wpa_supplicant)
-5. [WICD-Curses](#wicd-curses)
+There are five main methods to configure WiFi:
 
-## WiFi Module
+1. [WiFi Module of RetroPie](#retropies-wifi-module): Easiest approach.
+2. [Connecting to WiFi Without a Keyboard](#connecting-to-wifi-without-a-keyboard): Intermediate, uses a Raspberry Pi OS built-in feature.
+3. [Manual Configuration (Interfaces)](#manual-configuration-interfaces): Advanced
+4. [Manual Configuration (WPA_Supplicant)](#manual-configuration-wpa_supplicant): Advanced
+5. [Connect via Wicd-Curses](#connecting-via-wireless-interface-connection-daemon-wicd): Advanced
 
-You can access this from the Retropie menu in emulationstation (you can also access it from option 3 in the RetroPie setup script):
+## RetroPie's WiFi Module
 
-![retropiemenuwifi](https://cloud.githubusercontent.com/assets/10035308/9141387/7ed23ec0-3cf5-11e5-9944-a8f7870cc6c0.png)
+You can access this from the Retropie menu from within EmulationStation (see below). Alternatively, you can access it from _Configuration / Tools_ -> _Configure WiFi_ in the RetroPie setup script from the command line.
+
+![retropiemenuwifi](images/wifi/ES_RetroPie_Config_WiFi.png)
 
 It will open into this menu:
 
-![wifi1](https://cloud.githubusercontent.com/assets/10035308/9141521/96ceb142-3cf6-11e5-9ba4-2b23a8b52480.png)
+![wifi1](images/wifi/wifi1_connect_menuitem.png)
 
 Choose your SSID from a list:
 
-![wifi2](https://cloud.githubusercontent.com/assets/10035308/9141549/cd763742-3cf6-11e5-836e-a257e888bfb2.png)
+![wifi2](images/wifi/wifi2_select_wireless_nw.png)
 
-Type your Wifi Password (You may need to wait a bit after you finish for the configurations to save)
+Either use a keyboard or use the on-screen-keyboard with one of your configured controllers to enter your wireless password. Be patient after you confirmed the dialog and let the configuration finish. Use your controller to navigate to the _OK_ button once you are done.
 
-![wifi3](https://cloud.githubusercontent.com/assets/10035308/9141565/f2252120-3cf6-11e5-9eeb-e9ad88e77977.png)
+![wifi3](images/wifi/wifi3_osk_wireless_password.png)
 
-After it's done configuring you should see your wifi info in the original menu:
+After it is done configuring you should see your wireless info in the original menu. At (1) you should see your wireless network name, at (2) you should see the IP address provided by the access point.
 
-![wifiinfo](https://cloud.githubusercontent.com/assets/10035308/9141742/226f50de-3cf8-11e5-8b6b-328f2110e655.png)
-
-## Connecting to WiFi Without a Keyboard
-
-If you wish to connect to wifi without needing an extra keyboard you can add a file to the boot partition of the sd card called `wifikeyfile.txt`
-
-place your network details here (note only works on WPA networks)
-```
-ssid="NETWORK_NAME"
-psk="NETWORK_PASSWORD"
-```
-
-You can then access the wifi module and select the option to "Import wifi credentials from `/boot/wifikeyfile.txt`"
-
-![wifi_text](https://cloud.githubusercontent.com/assets/10035308/21238882/8fe42822-c2b9-11e6-9506-ddfc41fa2016.png)
+![wifiinfo](images/wifi/wifi4_connected.png)
 
 ## Connecting to WiFi Without a Keyboard
 
-Starting with Raspbian Stretch, loading the wifikeyfile from the setup script is not necessary.
-
-Create a file called `wpa_supplicant.conf` in the boot partition using the following template. (This will be moved at boot 
-to the `/etc/wpa_supplicant directory`).
+Do this with the RetroPie SD card attached to a desktop PC. Create a file called `wpa_supplicant.conf` in the `/boot` folder (boot partition) using the following template. This will be moved automagically at next boot of the RetroPie to the `/etc/wpa_supplicant/` directory.
 
 ```
-
+### Important: Change country=US to your country
 country=US
 ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
 update_config=1
@@ -69,11 +55,23 @@ network={
 # RETROPIE CONFIG END
 ```
 
-Make sure to include the ```RETROPIE CONFIG ...``` lines as shown to ensure that the RetroPie-Setup wifi configuration module will be able to cleanly edit/delete your configuration if you wish to change it later.
+Make sure to include the `# RETROPIE CONFIG START/END` lines as shown to ensure that the RetroPie-Setup WiFi configuration module will be able to cleanly edit/delete your configuration, if you wish to change it later.
 
-Wifi will not start up if you have an hard wired ethernet connection. After disconnecting the ethernet cable you'll need to reboot to get Wifi started.
+## Connecting to WiFi Without a Keyboard (Alternative)
 
-If you want ssh to be enabled by default as well you can create a blank file called `ssh` in the boot partition too. This is a 'flag' file and will be deleted during boot after ssh is enabled.
+**Note**: Starting with Raspberry Pi OS Stretch, loading the wifikey file from the setup script is no longer necessary: You should prefer the option above.
+
+If you wish to connect to WiFi without needing an extra keyboard you can add a file to the boot partition of the sd card called `wifikeyfile.txt`
+
+place your network details here (note only works on WPA networks)
+```
+ssid="NETWORK_NAME"
+psk="NETWORK_PASSWORD"
+```
+
+You can then access the WiFi module and select the option to _Import WiFi credentials from /boot/wifikeyfile.txt_
+
+![wifi_text](images/wifi/wifi_import_wifikeyfile.png)
 
 ## Manual Configuration (Interfaces)
 
@@ -93,22 +91,7 @@ iface wlan0 inet dhcp
    wpa-ssid "NETWORK_NAME"
    wpa-psk "NETWORK_PASSWORD"
 ```
-you can also add `wireless-power off` at the end if you have issues with your wifi dongle turning off and on a lot and not being able to maintain a connection.
-
-### WEP
-
-```shell
-auto lo
-
-iface lo inet loopback
-iface eth0 inet dhcp
-
-allow-hotplug wlan0
-auto wlan0
-iface wlan0 inet dhcp
-   wireless-essid NETWORK_NAME
-   wireless-key NETWORK_PASSWORD
-```
+you can also add `wireless-power off` at the end if you have issues with your WiFi dongle turning off and on a lot and not being able to maintain a connection.
 
 ### Open Network
 
@@ -124,6 +107,8 @@ iface wlan0 inet dhcp
   wireless-essid NETWORK_NAME
   wireless-mode managed
 ```
+
+**Note**: Make sure you understand the security implications when setting up and using an open wireless network.
 
 ### Hidden SSID
 
@@ -168,7 +153,7 @@ allow-hotplug wlan1
 iface wlan1 inet manual
     wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf
 ```
-Then you'll need to edit `/etc/dhcpcd.conf` and add at the top modifying it for your own router and IP address:
+Then you will need to edit `/etc/dhcpcd.conf` and add at the top modifying it for your own router and IP address:
 
 ```
 interface wlan0
@@ -186,13 +171,13 @@ interface eth0
 
 `sudo reboot` for changes to take effect.
 
-on reboot (if configured correctly) your wifi will be working.
+After reboot (if configured correctly) your WiFi will be working.
 
 ## Manual Configuration (WPA_Supplicant)
 
 **Taken from the Raspberry Pi Foundation [here](https://www.raspberrypi.org/documentation/computers/configuration.html#wireless-networking-command-line):**
 
-> This method is suitable if you do not have access to the graphical user interface normally used to set up WiFi on the Raspberry Pi. It is especailly suited for use with a serial console cable if you don't have access to a screen or wired Ethernet network. Also note that no additional software is required; everything you need is already included on the Raspberry Pi.
+> This method is suitable if you do not have access to the graphical user interface normally used to set up WiFi on the Raspberry Pi. It is especailly suited for use with a serial console cable if you do not have access to a screen or wired Ethernet network. Also note that no additional software is required; everything you need is already included on the Raspberry Pi.
 
 ### Getting Network Details
 
@@ -200,12 +185,12 @@ To scan for WiFi networks, use the command `sudo iwlist wlan0` scan. This will l
 
 1. `ESSID:"testing"`. This is the name of the WiFi network.
 
-2. `IE: IEEE 802.11i/WPA2 Version 1`. This is the authentication used; in this case it is WPA2, the newer and more secure wireless standard which replaces WPA1. This guide should work for WPA or WPA2, but may not work for WPA2 enterprise; for WEP hex keys see the last example [here](https://www.freebsd.org/cgi/man.cgi?query=wpa_supplicant.conf&apropos=0&sektion=5&manpath=NetBSD+9.2&arch=default&format=html). 
-You will also need the password for the WiFi network. For most home routers this is located on a sticker on the back of the router. The ESSID (ssid) for the network in this case is `testing` and the password (psk) `testingPassword`.
+2. `IE: IEEE 802.11i/WPA2 Version 1`. This is the authentication used; in this case it is WPA2, the newer and more secure wireless standard which replaces WPA1. This guide should work for WPA or WPA2, but may not work for WPA2 enterprise mode.
+You will also need the password for the WiFi network. For most home routers this is located on a sticker on the back of the router. The ESSID (`ssid`) for the network in this example is `testing` and the password (`psk`) `testingPassword`.
 
 ### Adding Network Details to Raspberry Pi
 
-First you'll need to ammend `/etc/network/interfaces` to point to wpa-supplicant if it isn't already:
+First you will need to ammend `/etc/network/interfaces` to point to wpa-supplicant configuration if it is not already:
 
 ```
 auto lo
@@ -217,12 +202,15 @@ allow-hotplug wlan0
 auto wlan0
 iface wlan0 inet manual
 wpa-roam /etc/wpa_supplicant/wpa_supplicant.conf
-#The following line specified in /etc/network/interfaces will activate and configure each 'default' network in wpa_supplicant.conf with DHCP upon a successful connection to an access point (this line needs to be here for wpa-roam)
+# The following line specified in /etc/network/interfaces will activate and
+# configure each 'default' network in wpa_supplicant.conf with DHCP upon a
+# successful connection to an access point.
+# (this line needs to be here for wpa-roam)
 iface default inet dhcp
 ```
-We've changed it to wpa-roam so that it will reconnect if the connection drops.
+We have changed it to wpa-roam so that it will reconnect if the connection drops.
 
-Open the `wpa-supplicant` configuration file in nano:
+Open the `wpa-supplicant.conf` configuration file with the editor `nano`:
 
 `sudo nano /etc/wpa_supplicant/wpa_supplicant.conf`
 
@@ -245,17 +233,6 @@ network={
 }
 ```
 
-#### WEP
-
-```shell
-network={
-     ssid="NETWORK_NAME"
-     key_mgmt=NONE
-     wep_tx_keyidx=0 #this forces it to use wep_key0
-     wep_key0=YOURWEPKEY
-}
-```
-
 #### Open Network
 
 ```shell
@@ -265,44 +242,44 @@ network={
 }
 ```
 
+**Note**: Make sure you understand the security implications when setting up and using an open wireless network.
+
 #### Hidden SSID
 
 ```shell
 network={
-    ssid="NETWORK_NAME" # it can be any encryption type, just make sure to add the "scan_ssid=1" line after your settings.
+    ssid="NETWORK_NAME"
+    # it can be any encryption type,
+    # just make sure to add the "scan_ssid=1" line after your settings.
     key_mgmt=NONE
     scan_ssid=1
 }
 ```
-Now save the file by pressing **ctrl+x** then **y**, then finally press **enter**.
+Now save the file by pressing <kbd>ctrl</kbd>+<kbd>x</kbd> then <kbd>y</kbd>, then finally press <kbd>enter</kbd>.
 
 At this point,` wpa-supplicant` will normally notice a change has occurred within a few seconds, and it will try and connect to the network. If it does not, either manually restart the interface with `sudo ifdown wlan0` and `sudo ifup wlan0`, or reboot your Raspberry Pi with `sudo reboot`.
 
 You can verify if it has successfully connected using `ifconfig wlan0`. If the `inet addr` field has an address beside it, the Pi has connected to the network. If not, check your password and ESSID are correct.
 
-## WICD-Curses 
+## Connecting Via Wireless Interface Connection Daemon (Wicd)
 
 Note that this may cause a small amount of background cpu usage, which can stop the CPU from scaling to lowest frequency.
 
-you first need to install it with `sudo apt install wicd wicd-curses` and then type `wicd-curses` in the terminal to open it.
-
-_(of course you'll need to be connected by ethernet to install it)_
+Make sure you have internet connectivity on the Raspberry via ethernet. Install Wicd with `sudo apt install wicd wicd-curses` and then type `wicd-curses` in the terminal to open it.
 
 ![](http://atastypixel.com/blog/wp-content/uploads/2011/09/Screen-Shot-2011-09-24-at-14.37.111.png)
 
-Navigate to your wireless network and Press the `RIGHT` arrow to configure your wifi
+Navigate to your wireless network and Press <kbd>-></kbd> (cursor right) to configure your WiFi.
 
 ![untitled drawing 2](https://cloud.githubusercontent.com/assets/10035308/7425946/1efa7e56-ef78-11e4-92fb-cf83a6b59e85.png)
 
-check automatically connect to this network (by pressing enter) and type in your wifi password where it says "key" press `F10` to save and then press `SHIFT+c` to connect and press `Q` to exit back to the terminal. 
+Do enable _Automatically connect to this network_ (by pressing <kbd>enter</kbd>) and type in your WiFi password in the field labeled _key_ press <kbd>F10</kbd> to save and then press <kbd>shift</kbd>+<kbd>c</kbd> to connect and finally press <kbd>shift</kbd>+<kbd>q</kbd> to exit back to the terminal.
 
-There are some noted issues with the daemon using some CPU and preventing the Pi from scaling to lowest frequency, so if that's the case you can remove wicd-curses by typing `sudo apt remove wicd-curses` and proceed to setup your wifi using method 2 or 3.
+There are some noted issues with the daemon using some CPU and preventing the Pi from scaling to lowest frequency. If that is the case you can back out from wicd-curses by typing `sudo apt remove wicd-curses` and proceed to setup your WiFi using other methods noted above.
 
-# Using an external dongle
+# Using an External Dongle
 
-You may want to use an external Wifi dongle: maybe your pi case is blocking or slowing the signal (with a metal case it's pretty common), for instance.
+You may want to use an external USB WiFi adapter (dongle) for several reasons: One may be that your Pi case is attenuating or even blocking the wireless signal (with a metal case it is pretty common), for instance.
 
-The easiest way is to first configure wifi with the internal controller, using one of the above methods.  
-Plug your dongle, reboot, and make sure it's connected using `ifconfig` : it should appear as wlan1, and have an IP address.  
-Then, disable the onboard wifi by editing `/boot/config.txt` and adding `dtoverlay=pi3-disable-wifi`.  
-That's it :)
+First configure WiFi with the internal controller, using one of the above methods. Then:
+Plug-in the USB WiFi dongle, reboot. After reboot verify it is connected using `ifconfig`: It should be listed as `wlan1` and have an IP address assigned. Then, disable the onboard WiFi by editing `/boot/config.txt` and adding the line `dtoverlay=disable-wifi`. Reboot and verify connectivity via the USB WiFi adapter.
