@@ -1,12 +1,11 @@
 # Configuring WiFi
 
-If you have a Raspberry Pi 3 or later model, WiFi is built into the Pi, if you have a Pi 2 or earlier model, then you will need a WiFi dongle. You can check to see if your WiFi dongle is compatible [here](http://elinux.org/RPi_USB_Wi-Fi_Adapters). You may want to use an USB WiFi dongle, then see section [using an external dongle](#using-an-external-dongle).
+If you have a Raspberry Pi 3 or later model, WiFi is built into the Pi, if you have a Pi 2 or earlier model, then you will need a WiFi dongle. You can check to see if your WiFi dongle is compatible [here](http://elinux.org/RPi_USB_Wi-Fi_Adapters). You may want to use an USB WiFi dongle, then see [here](#using-an-external-dongle).
 
 **Notes**:
 
 - In order to use the WiFi on the Raspberry Pi, you will need to first configure the **WLAN Country** via `raspi-config`. It is under menu _5 Localisation options_ -> _L4 WLAN County_ in `raspi-config` dialogs. You can start `raspi-config` from the `RetroPie` menu in EmulationStation or from the command line with `sudo raspi-config`. This step is mandatory for all solution options described below.
 - WiFi will not start up if you have an hard wired ethernet connection. After disconnecting the ethernet cable you will need to reboot to get WiFi started.
-- You may also check [SSH configuration](SSH.md#enable-ssh) on how to enable SSH on your installation.
 
 There are five main methods to configure WiFi:
 
@@ -58,9 +57,9 @@ network={
 
 Make sure to include the `# RETROPIE CONFIG START/END` lines as shown to ensure that the RetroPie-Setup WiFi configuration module will be able to cleanly edit/delete your configuration, if you wish to change it later.
 
-## Connecting to WiFi Without a Keyboard (Deprecated)
+## Connecting to WiFi Without a Keyboard (Alternative)
 
-Starting with Raspberry Pi OS Stretch, loading the wifikey file from the setup script is not necessary: Thus this section is informational only.
+**Note**: Starting with Raspberry Pi OS Stretch, loading the wifikey file from the setup script is no longer necessary: You should prefer the option above.
 
 If you wish to connect to WiFi without needing an extra keyboard you can add a file to the boot partition of the sd card called `wifikeyfile.txt`
 
