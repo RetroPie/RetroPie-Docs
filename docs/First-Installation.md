@@ -142,11 +142,11 @@ See the rest of the [RetroPie documentation](https://retropie.org.uk/docs/) for 
 
 **The RetroPie Project is primarily maintained by a few enthusiasts who develop the project in their free time. If you have found the RetroPie project useful please consider donating to the project [here](https://retropie.org.uk/donate/).**
 
-As you become more familiar with RetroPie, pay it forward either
+As you become more familiar with RetroPie, pay it forward
 
-- by helping others on the forum &#x2388; or
-- by contributing to this [documentation](https://github.com/RetroPie/RetroPie-Docs) &#x1F4CB; or
-- by reporting bugs (start in the forum) or providing fixes for [bugs](https://github.com/RetroPie/RetroPie-Setup/issues) &#x1f41c;.
+- by helping others on the [forum](https://retropie.org.uk/forum),
+- by contributing to this [documentation](https://github.com/RetroPie/RetroPie-Docs),
+- by reporting bugs (start in the forum) or providing fixes for [bugs](https://github.com/RetroPie/RetroPie-Setup/issues).
 
 More than ten years after its founding, the RetroPie Project is what it is today because of the many contributions of the community.
 
