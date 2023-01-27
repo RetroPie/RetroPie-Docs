@@ -114,7 +114,7 @@ For more information, see [Hotkeys](RetroArch-Configuration#hotkeys)
 | **Where are the systems?**|
 | :---: |
 **When you first see EmulationStation you may wonder why you don't see systems like the SNES or Game Boy. Worry not - the emulators are installed on the system, but ROMs will need to be added to their respective rom folders before they will become visible**|
-|![firstboot](https://cloud.githubusercontent.com/assets/10035308/16217874/c6bbdb3a-3734-11e6-998f-8cc714a320ce.png)|
+|![firstboot](images/first-installation/First-Installation--Emulationstation.png)|
 
 ## Transferring ROMs
 
@@ -130,7 +130,7 @@ After you've transferred your ROMs, you need to restart EmulationStation in orde
 
 ## Additional Setup Options
 
-* [Configure Wifi](Wifi)
+* [Configure WiFi](Wifi)
 * [Enable SSH](SSH)
 * Configure more controllers. This can be done after plugging in the new controller and pressing *Start* on your controller and selecting *Configure Input*
 * In RetroPie, not everything is installed by default. The pre-made images contain the best-working emulators for the more common systems supported by the hardware. This should cover typical use, but if you want to install additional emulators or ports, the [Updating RetroPie](https://retropie.org.uk/docs/Updating-RetroPie/#updatinginstalling-individual-packages) page has this information.
@@ -138,6 +138,16 @@ After you've transferred your ROMs, you need to restart EmulationStation in orde
 
 See the rest of the [RetroPie documentation](https://retropie.org.uk/docs/) for more detailed information on individual emulators, advanced settings, etc. If you're having trouble, you may find answers in the [FAQ](FAQ). Also, the RetroPie community is very helpful on the [RetroPie forum](https://retropie.org.uk/forum/).
 
-**The RetroPie Project is primarily maintained by a few developers who develop the project in their free time. If you have found the RetroPie project useful please consider donating to the project [here](https://retropie.org.uk/donate/). As you become more familiar with RetroPie, pay it forward by helping others on the forum. The RetroPie Project is what it is today because of the many contributions of the community.**
+## One more thing...
+
+**The RetroPie Project is primarily maintained by a few enthusiasts who develop the project in their free time. If you have found the RetroPie project useful please consider donating to the project [here](https://retropie.org.uk/donate/).**
+
+As you become more familiar with RetroPie, pay it forward
+
+- by helping others on the [forum](https://retropie.org.uk/forum),
+- by contributing to this [documentation](https://github.com/RetroPie/RetroPie-Docs),
+- by reporting bugs (start in the forum) or providing fixes for [bugs](https://github.com/RetroPie/RetroPie-Setup/issues).
+
+More than ten years after its founding, the RetroPie Project is what it is today because of the many contributions of the community.
 
 THANK YOU!
