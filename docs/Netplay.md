@@ -25,11 +25,12 @@ If you will be acting as the host...
 - Either go to your router settings and open the port 55435 for both TCP and UDP **or** change the TCP/UDP Port setting in RetroArch to one that's already open
 - Select a number for Delay Frames. If you are experiencing a very low fps, try increasing this number.
 - Pick a Nickname
-- When launching a ROM to use netplay you'll open up the [runcommand menu](Runcommand#runcommand-launch-menu) by pressing js0 (or any key on your keyboard) as your ROM loads and then you'll select launch netplay
+- When launching a ROM to use netplay you'll open up the [runcommand menu](Runcommand#runcommand-launch-menu) by pressing `A` (or any key/button on your keyboard/gamepad) as your ROM loads and then you'll select launch netplay.
 
 ![host](https://cloud.githubusercontent.com/assets/10035308/10062467/1c89bb58-6220-11e5-942b-7892d4b82050.png)
 
 Make sure to tell your friend:
+
 - Your IP Address
 - Your Open Port
 - Your Delay Frames Number
