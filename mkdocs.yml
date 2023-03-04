@@ -33,7 +33,7 @@ theme:
   features:
     - navigation.top
     - content.action.edit
-    - content.action.copy
+    - content.code.copy
     - search.highlight
     - search.suggest
   palette:
