@@ -1,6 +1,6 @@
 ***
 
-![Adventure Game Studio](http://i.imgur.com/eBMyMvj.png)
+![Adventure Game Studio](https://www.adventuregamestudio.co.uk/images/bannerNew.png)
 
 ***
 _[Adventure Game Studio](https://www.adventuregamestudio.co.uk/) is an open source development tool that is primarily used to create graphic adventure games._
