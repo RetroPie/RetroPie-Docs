@@ -40,7 +40,7 @@ Add custom controls using the DraStic GUI (by pressing RIGHT ANALOG RIGHT or DOW
 
 ## Emulator: [lr-desmume](https://github.com/libretro/desmume) and [lr-desmume2015](https://github.com/libretro/desmume2015)
 
-Note that lr-desmume is very experimental and lags quite a bit even with an overclocked RPI 2/3.
+Note that lr-desmume is very experimental and lags quite a bit even with an overclocked Pi4. However a few games will run at playable speeds.
 
 ## BIOS
 
