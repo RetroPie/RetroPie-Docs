@@ -25,16 +25,20 @@ article a:hover {
 
 /* Force header height and color */
 .md-header {
-    height: 50px;
-    background-color: #222;
+  height: 50px;
+  background-color: #222;
 }
 
 .md-header-nav__button.md-logo {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .md-header-nav__button.md-logo img, .md-nav__button img {
-    height: 50px;
-    width: 50px;
+  height: 50px;
+  width: 50px;
+}
+
+.md-typeset figcaption {
+  margin-top: -0.7em;
 }

@@ -19,10 +19,14 @@ plugins:
 
 # Extensions
 markdown_extensions:
+  - admonition
   - mdx_truly_sane_lists
+  - md_in_html
+  - pymdownx.details
   - pymdownx.highlight:
       use_pygments: true
   - pymdownx.superfences
+  - pymdownx.keys
 
 # Configuration
 theme:
