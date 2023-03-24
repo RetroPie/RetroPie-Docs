@@ -1,6 +1,10 @@
+<!--
+TODO: Screens von epic noir kommentieren und dann dokumentieren
+-->
+
 ## Introduction
 
-This Tutorial will take you through the basics of creating a theme for Emulationstation and RetroPie.
+This Tutorial will take you through the basics of creating a theme for EmulationStation (ES) and RetroPie.
 
 It will create a simple theme called Spare. The default Carbon theme as a reference, while creating all the XML from scratch so you will get a better understanding of it.
 
@@ -35,13 +39,13 @@ It is a simple, clean theme, not very outlandish, but it's enough to teach the e
 
 !!! Info
 
-    This tutorial was developed on Windows, but all the main parts (the XML and images) can be done on any Operating System, as long as you can put or assess the files into the `theme` folder on your Raspberry Pi (e.g., with Samba, see [setup](#samba-share-of-emulationstations-themes-on-retropie)).
+    This tutorial was developed on Windows, but all the main parts (the XML and images) can be done on any Operating System, as long as you can put or assess the files into the `theme` folder on your Raspberry Pi (e.g., with Samba, see [setup](#set-up-samba-share-of-emulationstations-themes-on-retropie)).
 
 ### What You Will Need
 
 - A text editor
     - Notepad will do fine, but something with syntax highlighting is way more helpful. Whatever editor you prefer: It should support XML formatting and maybe even XML linting.
-- Emulationstation
+- EmulationStation
     - This tutorial uses a version on a Windows machine (more on that below), but the version on your Pi is fine.
 - An image editor
     - This is optional as all the images will be supplied, however you can use these images as a base to create your own, or make your own from scratch. On Windows you may use Photoshop, but other programs like GIMP, Inkscape, Krita or Paint.net would work too. Whenever possible use SVG format for your graphics instead of pixel based formats (JPG/PNG) as the former scales properly without visible artefacts.
@@ -51,17 +55,17 @@ It is a simple, clean theme, not very outlandish, but it's enough to teach the e
 - Any coding experience
     - Again, not essential, but it makes things easier. To be honest, as long as you know that `<tag>` opens a tag (more precisely an XML element) and `</tag>` closes a tag, then you should be fine.
 
-There will be a list of all links and resources [here](#references).
+The (bogus) files you will need for this tutorial are listed [here](#references).
 
-## About Emulationstation Views
+### Primer on EmulationStation Views
 
-Emulationstation has three main sections, called _Views_:
+EmulationStation has three main navigation sections, called _Views_:
 
 <figure markdown>
   ![Carbon Theme System View](https://i.imgur.com/uTBYI4V.jpg)
   <figcaption>Carbon Theme System View</figcaption>
 </figure>
-The System View is what you see when Emulationstation starts. It has a large white bar along the middle that houses a carousel that shows three System logos at a time.
+The System View is what you see when EmulationStation starts. It has a large white bar along the middle that houses a carousel that shows three System logos at a time.
 
 <figure markdown>
   ![Carbon Theme Basic View](https://i.imgur.com/1C0WpSY.jpg)
@@ -86,39 +90,34 @@ The Detailed View is what you see if you *have* scraped metadata. Different them
 - `md_rating`
 - `md_releasedate`: Stored as ISO8601 date format e.g., 2023-03-17
 
-**Video View**
-
-TODO: Screenshot/Still of Video View
-
-The Video View is what you see if your scraped metadata includes videos. The video view is an extension of the Detailed View.  It can display all of the values found in the Detailed View along with these additions:
+Finally, the **Video View** is what you see if your scraped metadata includes videos. The video view is an extension of the Detailed View.  It can display all of the values found in the Detailed View along with these additions:
 
 - `md_marquee`
 - `md_video`
 
-Extra values can be added by the Theme Maker, but the ones above are the only ones that get scraped by Emulationstation. Any others have to have their data entered by hand. More on the `extra` attribute later, in the [System View Section](#system-view).
+Extra values can be added by the Theme Maker, but the ones above are the only ones that get scraped by EmulationStation. Any others have to have their data entered by hand. More on the `extra` attribute later, in the [System View Section](#system-view).
 
 ## Setup
 
-This tutorial uses the portable version of Emulationstation created by @herb_fargus. But this is not an restriction, you can use your own ES setup on a different system and may use for example Samba to serve the theme files.
+This tutorial uses the portable version of EmulationStation created by @herb_fargus. But this is not an restriction, you can use your own ES setup on a different system and may use for example Samba to serve the theme files.
 
 ### Set Up EmulationStation on PC
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/oHtCnBiyzOY" title="EmulationStation Windows Portable (USB Stick)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; allowfullscreen"></iframe>
 
-- Download the portable Emulationstation by @herb_fargus
-  - [Download the file](https://drive.google.com/file/d/0B2TMeZ6iEFvHYkNrMGVQSldkZ0U/view?usp=sharing)
+- Download the portable EmulationStation by @herb_fargus, see [references](#references)
 - Install/unzip it where you want it. For example if you have it on `F:\` drive, so the path is `F:\emulationstation`
-- Download [this](https://dl.dropboxusercontent.com/u/14838442/fake-games.zip) zip file. Within it are three folders: `gb`, `nes` and `snes`. Within each folder are 15 blank .txt files, each named after a game on that system. These files have also had their extensions changed to something that ES will see as a rom.
-  - **These are not real roms. They are blank text files that have been renamed to look like roms.**
-  - Emulationstation sees these as real games. You won't be able to play them (since they are really just blank text files), but they will scrape with the built in Emulationstation scraper. They are also extremely small, so you don't have to worry about your test-bed getting too big.
+- Download the fake games collection, see [references](#references). Within it are three folders: `gb`, `nes` and `snes`. Within each folder are 15 empty files, each named after a game on that system. These files have also had their extensions changed to something that EmulationStation will recognize as a ROM.
+  - _These are not real ROMs. They are blank text files that have been renamed to look like ROMs._
+  - EmulationStation sees these as real games. You won't be able to play them (since they are really just empty files), but they will scrape with the built in EmulationStation scraper. They are also extremely small, so you don't have to worry about your test-bed getting too big.
 - Copy those folders into `F:\emulationstation\\.emulationstation\roms`
 
 
-Emulationstation should now be set up with 45 (fake) games on three Systems, and ready for you to use.
+EmulationStation should now be set up with 45 (fake) games on three Systems, and ready for you to use.
 
-Double click `Launch Portable (Windowed).bat` to start Emulationstation.
+Double click `Launch Portable (Windowed).bat` to start EmulationStation.
 
-### Samba Share of EmulationStation's Themes on RetroPie
+### Set Up Samba Share of EmulationStation's Themes on RetroPie
 
 1. Log on to your Pi. See: [SSH](SSH.md)
 2. Edit `/etc/samba/smb.conf` (e.g. with [`nano`](https://nano-editor.org/dist/latest/cheatsheet.html)
@@ -142,9 +141,9 @@ Double click `Launch Portable (Windowed).bat` to start Emulationstation.
 
 ## Creating a Theme
 
-We're going to make the theme straight in the Portable Emulationstation's theme folder. Of course you are free to act directly on the Samba Share, which does not require file copy operations.
+We're going to make the theme straight in the Portable EmulationStation's theme folder. Of course you are free to act directly on the Samba Share, which does not require file copy operations.
 
-If you use the portable Emulationstation on `F:\` drive, so the path to the themes folder would be `F:\emulationstation\\.emulationstation\themes`.
+If you use the portable EmulationStation on `F:\` drive, so the path to the themes folder would be `F:\emulationstation\\.emulationstation\themes`.
 
 First, [download the full **Spare** theme from GitHub](https://github.com/mattrixk/es-theme-spare), so you have the images and fonts you need, and also so you have something to reference.
 
@@ -195,8 +194,8 @@ based on:       "Carbon" by Eric Hettervik
 When you are making your own theme you would obviously change the 'theme name' and 'author' fields to suit.
 
 - The theme details at the top just tell anyone looking who made the theme.
-- Anything within `<!-- x -->` is a comment, visible to humans who read the code, but invisible to Emulationstation.
-- The `<theme></theme>` fields tell Emulationstation that the code within is for a theme.
+- Anything within `<!-- x -->` is a comment, visible to humans who read the code, but invisible to EmulationStation.
+- The `<theme></theme>` fields tell EmulationStation that the code within is for a theme.
 - The `<formatVersion>4</formatVersion>` sets the theme version. The version 3 is the latest by the original author of EmulationStation, within RetroPie's fork of EmulationStation the current Version is 4 which -among other things- support the Child-Friendly setup (aka "kid mode" in UI settings).
 - `<view name="x"></view>` governs what happens in each of those views.
 
@@ -216,7 +215,7 @@ Open `spare/gb/theme.xml` and add these lines:
 
 </theme>
 ```
-Notice it's almost identical to `spare.xml`, except for a few things. You don't need to specify any theme details, because we are using this line:
+Notice that it's almost identical to `spare.xml`, except for a few things. You don't need to specify any theme details, because we are using this line:
 
 `<include>./../spare.xml</include>`
 
@@ -226,7 +225,7 @@ This is handy because it means you can have the bulk of your code in `spare.xml`
 
 Save `theme.xml`
 
-If you switch Emulationstation to the Spare theme now, this is what you should see:
+If you switch EmulationStation to the Spare theme now, this is what you should see:
 
 <figure markdown>
   ![Blank System View](https://i.imgur.com/0wmJRci.jpg)
@@ -243,7 +242,7 @@ If you switch Emulationstation to the Spare theme now, this is what you should s
   <figcaption>Blank Detailed View</figcaption>
 </figure>
 
-What you are seeing are the Emulationstation defaults. We haven't yet told Emulationstation how we want anything to look, so for now it's just raw data with very very basic styling. It's our job as Themers to change that.
+What you are seeing are the EmulationStation defaults. We haven't yet told EmulationStation how we want anything to look, so for now it's just raw data with very very basic styling. It's our job as Themers to change that.
 
 ### System View
 
@@ -257,7 +256,7 @@ Now let's create the System View.
 Take note of how it differs from the blank theme.
 
 - There are now Logos in place of simple folder names.
-- The white carousel and the grey bar below it haven't changed (unfortunately, they are hardcoded into Emulationstation and for the time being are not themeable).
+- The white carousel and the grey bar below it haven't changed (unfortunately, they are hardcoded into EmulationStation and for the time being are not themeable).
 - There is a grey background color behind the carousel.
 - There is also a repeating background image behind the carousel.
 - There is a semi-transparent white bar behind the _Help Menu_ text in the footer.
@@ -285,19 +284,19 @@ Now we add some **Elements** to the View. To start with we'll change the backgro
 
 !!! note "The `extra` attirbute"
 
-    The `extra="true"` XML attribute means that this is a new XML **Element** being added, not something that is already defined by Emulationstation
+    The `extra="true"` XML attribute means that this is a new XML **Element** being added, not something that is already defined by EmulationStation
 
 We need to add some **Properties** (as XML child elements) to the Element to tell it what to do. There are seven Properties accepted by the image Element. They are:
 
-- `<pos>`: The position of the image within the screen.
-- `<size>`:The absolute size of the image. Does not maintain aspect ratio. Use either this or `<maxSize>`, not both.
+- `<pos>`: The position of the image within the screen, given in percentage of the actual display resolution.
+- `<size>`:The absolute size of the image given in percentage of the actual display resolution. Does not maintain aspect ratio. Use either this or `<maxSize>`, not both.
 - `<maxSize>`: The maximum size to stretch an image. Maintains aspect ratio. Use either this or `<size>`, not both.
 - `<origin>`: The origin point of the image. Default is top-left.
 - `<path>`: The relative path to the image file.
 - `<tile>`: If the image repeats or not.
 - `<color>`: A color overlay, allowing you to change the color and opacity of the image. Uses four bytes values. The first three bytes represent the Hex color code (one byte per red, green, blue) with the last byte is defining the opacity (alpha channel).
 
-If you want a more detailed explaination of Element Properties you can read [this section](https://github.com/Aloshi/EmulationStation/blob/master/THEMES.md#image) of the Emulationstation Themes documention.
+If you want a more detailed explaination of Element Properties you can read [this section](https://github.com/Aloshi/EmulationStation/blob/master/THEMES.md#image) of the EmulationStation Themes documention.
 
 The first thing we'll do is set the path to the image: You should already have `bg_color.png` in your images folder. If not, grab it from the full **Spare** theme you downloaded earlier and place it in the `spare/_inc/images` folder. This image is a simple, white 32 x 32px PNG.
 
@@ -337,7 +336,7 @@ Put it all together and it looks like this:
 ```
 !!! tip inline end "Reloading the theme changes"
 
-    If you want to see any changes you have made to your theme files, first save the file. Start EmulationStation with the `--debug`. Within EmulationStation press ++left ctrl+r++ whenever you want to force the theme to be re-applied. This will be refrerred as "refresh the theme" in this tutorial.
+    If you want to see any changes you have made to your theme files, first save the file. Start EmulationStation with the `--debug`. Within EmulationStation press _left_ ++ctrl+r++ whenever you want to force the theme to be re-applied. This will be refrerred as "refresh the theme" in this tutorial.
 
 If you refresh the ES theme now (see tip on the right) you wouldn't see anything different, because the background was already white.
 
@@ -1483,20 +1482,199 @@ The complete `theme.xml`, which is identical in each system folder:
 </theme>
 ```
 
+## Tips and Tricks
+
+### Toggle Highlighting of Boundary Boxes
+
+When you start EmulationStation with the debug flag on the commandline, you have these keyboard combos available (to be used with _left_ ++ctrl++):
+
+- ++ctrl+r++: Reload all UI views (system carousel and in-system view)
+- ++ctrl+i++: Toggle visibility the image components (`<image ...>`) boundary boxes
+- ++ctrl+t++: Toggle visibility the text component (`<text ...>`) boundary boxes
+- ++ctrl+g++: Toggle visibility Gridlayout boundary boxes (if you develop a theme for grid layout)
+
+### The Size Element for Text Components
+
+The `<size/>` element takes a pair of values. However, depending on the values of the pair you may also control the layout of the text element. This section will illustrate the different values and their impact on the layout. 
+
+As you may already noticed the size element takes percent values of the actual screensize for _images_. For the layout of _text components_ with a given <size/>, additionally the selected font (its [Glyphs](https://en.wikipedia.org/wiki/Glyph)), the `<fontSize/>` and the defined `<lineSpacing/>` are factors for the layout. The last two values are also expected to be percent values. The glyph values are calculated by ES depending on the `<font/>` the theme has defined.
+
+The pair of values is referenced as `width` (x-value) and `height` (y-value) e.g., `<size>width height</size>`.
+
+The actual height of one line of text (`lineHeight`) is calculated by the `height` times the `lineSpacing` [times the largest height of the glyphs](https://github.com/RetroPie/EmulationStation/blob/9afa234f3c779ca23f832141f819886a984c1ee6/es-core/src/resources/Font.cpp#L476) times `fontSize`.
+
+For your information: The images are taken from the [Epic Noir](https://github.com/c64-dev/es-theme-epicnoir) theme on a 5:4 display (1280x1024), cropped for this tutorial.
+
+#### Case 1: Overly Large Size
+
+<!-- case 1: x>0, y > one lineheight -->
+<figure markdown>
+  ![](images/es-themes/th_01_epnoir_asis.png)
+  <figcaption>Case 1: Text bounding box <code>height</code> greater than wrapped text height</figcaption>
+</figure>
+
+This shows the theme layout as-is when you check it out from Github. Notice how the "Games Available" bounding box (bbox) and the bbox of the text below overlap (the latter is named long description or `longdescription`). Hovever, the texts do not overlap coincidentially as the bbox for the long description is large enough, and the text is put in the middle of the text bbox by default (instead of top or bottom vertical alignment).
+
+This is the respective section in the theme file. Note line #8 and #21 (using same position) and #22 (size of long description):
+
+```xml title="Part of es-theme-epicnoir/themes.xml" linenums="1"
+    <text name="systemInfo"> <!-- style for "<n> GAMES AVAILABLE" -->
+        <fontPath>./_art/Acre.otf</fontPath>
+        <alignment>left</alignment>
+        <backgroundColor>00000000</backgroundColor>
+        <forceUppercase>1</forceUppercase>
+        <color>A3332D</color>
+        <origin>0 0</origin>
+        <pos>0.12 0.3611</pos>
+        <size>0 0.039</size>
+        <fontSize>0.0315</fontSize>
+    </text>
+
+    <text name="longdescription" extra="true">
+        <fontPath>./_art/Acre.otf</fontPath>
+        <alignment>left</alignment>
+        <forceUppercase>0</forceUppercase>
+        <fontSize>0.021</fontSize>
+        <color>8F8F8F</color>
+        <lineSpacing>1.18</lineSpacing>
+        <origin>0 0</origin>
+        <pos>0.12 0.360</pos>
+        <size>0.28 0.20</size>
+    </text>
+```
+
+!!! note 
+
+    All elements with fractions represent percentage values from 0.0 to 1.0. `<fontSize>` and `<lineSpacing>` may also use values greater than 1.0 (100%).
+
+**Takeaway #1**: If the size is large enough, more precisely the `width` is greater than zero and the `height` is greater than the sum of the `lineHeight`s used for the wrapped text it is wrapped and vertically aligned middle.
+
+#### Case 2: Zero Width
+
+<!-- case 2: x==0, y anything -->
+<figure markdown>
+  ![](images/es-themes/th_02_epnoir_size_x_0.png)
+  <figcaption>Case 2: Text bounding box defines <code>width</code> equal to zero and any <code>height</code> value</figcaption>
+</figure>
+
+The `width` zero defintion in XML (note line #10):
+
+```xml linenums="1"
+    <text name="longdescription" extra="true">
+        <fontPath>./_art/Acre.otf</fontPath>
+        <alignment>left</alignment>
+        <forceUppercase>0</forceUppercase>
+        <fontSize>0.021</fontSize>
+        <color>8F8F8F</color>
+        <lineSpacing>1.18</lineSpacing>
+        <origin>0 0</origin>
+        <pos>0.12 0.415</pos>        
+        <size>0 0.20</size>
+    </text>
+```
+
+!!! note
+
+    The `<pos/>` element (line #9)) has been adapted from the original value to not clash with the bbox of "Games Available".
+
+**Takeaway #2**: If the `width` of the size is zero, the text will be put on one line and not abbreviated. As the `height` is not interpreted in this case the bbox `height` is set to one `lineHeight` by ES, and the `height` value from the XML file is ignored. The text after the first newline character is cut off. It is not shown in the screenshot, but this cut-off is [implemented in ES](https://github.com/RetroPie/EmulationStation/blob/9afa234f3c779ca23f832141f819886a984c1ee6/es-core/src/components/TextComponent.cpp#L194).
+
+#### Case 3: Zero Height
+
+<!-- case 3: x>0, y==0 -->
+<figure markdown>
+  ![](images/es-themes/th_03_epnoir_size_x_gt_0_y_eq_0.png)
+  <figcaption>Case 3: Text bounding box defines <code>width</code> greater zero and <code>height</code> equal to zero</figcaption>
+</figure>
+
+Example from the theme file:
+
+```xml linenums="1"
+    <text name="longdescription" extra="true">
+        <fontPath>./_art/Acre.otf</fontPath>
+        <alignment>left</alignment>
+        <forceUppercase>0</forceUppercase>
+        <fontSize>0.021</fontSize>
+        <color>8F8F8F</color>
+        <lineSpacing>1.18</lineSpacing>
+        <origin>0 0</origin>
+        <pos>0.12 0.415</pos>
+        <size>0.28 0</size>
+    </text>
+```
+
+**Takeaway #3**: If the `height` is zero the text is wrapped to not exceed the line width, the bbox grows downwards (if needed) while `pos` stays fixed. The actual line width is the product of the font's glyphs, `fontSize` and the display's x-resolution. 
+
+!!! tip "Preferred approach"
+
+    This (`height` = 0) makes the intention of the theme layout clear to other users. If you want wrapped multiline text choose this approach.
+
+#### Case 4: Force Abbreviation
+
+<!-- case 4: x>0, y>0 but less than one lineheight -->
+<figure markdown>
+  ![](images/es-themes/th_04_epnoir_size_x_gt_0_y_lt_onelineheight.png)
+  <figcaption>Case 4: Text bounding box defines <code>width</code> greater zero, and <code>height</code> greater than zero and less than or equal to one <code>lineHeight</code></figcaption>
+</figure>
+
+This sample in the XML definition (note the small `height` value in line #10):
+
+```xml linenums="1"
+    <text name="longdescription" extra="true">
+        <fontPath>./_art/Acre.otf</fontPath>
+        <alignment>left</alignment>
+        <forceUppercase>0</forceUppercase>
+        <fontSize>0.021</fontSize>
+        <color>8F8F8F</color>
+        <lineSpacing>1.18</lineSpacing>
+        <origin>0 0</origin>
+        <pos>0.12 0.415</pos>
+        <size>0.28 0.022</size>
+    </text>
+```
+
+**Takeaway #4**: When the `height` _evaluates_ (remember how the line height is calculated) to be less than or equal to one `lineHeight` the text will be abbreviated with ellipsis to fit into the width of the bbox. Additionally, text after a newline characters is cut off before abbreviated, if this shortened text fits into one line no ellipsis is added. It can not be shown in a screenshot, but this behaviour is implemented in ES.
+
+#### Case 5: Too Small Height
+
+<!-- case5: x>0, y evals to more than one lineHeight but is less than all lineheights of the wrapped text-->
+<figure markdown>
+  ![](images/es-themes/th_05_epnoir_size_x_gt_0_y_gt_onelineheight.png)
+  <figcaption>Case 5: Text bounding box defines <code>width</code> greater zero, and <code>height</code> greater than one <code>lineHeight</code> but less than the sum of line heights of the wrapped text</figcaption>
+</figure>
+
+Representation in XML (the  `height` value in line #10 represents a little more than one line height):
+
+```xml
+    <text name="longdescription" extra="true">
+        <fontPath>./_art/Acre.otf</fontPath>
+        <alignment>left</alignment>
+        <forceUppercase>0</forceUppercase>
+        <fontSize>0.021</fontSize>
+        <color>8F8F8F</color>
+        <lineSpacing>1.18</lineSpacing>
+        <origin>0 0</origin>
+        <pos>0.12 0.415</pos>
+        <size>0.28 0.045</size>
+    </text>
+```
+
+**Takeaway #5**: The result is the same as in case 1 or case 3, but is more difficult to grasp when maintaining the theme and may result in unwanted layouts, as the `size` _suggest_ the specific text for that element will fit into size when wrapped. Better use either `height` of zero or define a `height` with enough space for the longest text so that the bbox will not grow downwards on texts that exceed the height.
+
 ## Closing
 
 Congratulations to those that made it this far. It's been a heck of a journey. You now have everything you need to make your own themes. Feel free after you have gained confidence with creating a theme to pay the RetroPie project forward by amending to this guide. For more sophisticated questions be invited to place your question in the [forum](https://retropie.org.uk/forum/category/9/projects-and-themes).
 
 ## References
 
-- The full **Spare** theme on GitHub: [es-theme-spare](https://github.com/mattrixk/es-theme-spare)
-- Fake "games" zip file from this DropBox: [fake_games.zip](https://dl.dropboxusercontent.com/u/14838442/fake-games.zip)
-- Portable Emulationstation by @herb_fargus: [EmulationStation Windows Portable (USB Stick)](https://www.youtube.com/watch?v=oHtCnBiyzOY), [Download the file](https://drive.google.com/file/d/0B2TMeZ6iEFvHYkNrMGVQSldkZ0U/view?usp=sharing)
-- The ES Theme Helper by @Rookervik: [Get it from @Rookervik's DropBox here](https://dl.dropboxusercontent.com/u/60872572/EmulationStation/ES%20Theme%20Helper3.rar)
-- Emulationstation Themes Documentation by original ES Author: [ES Themes](https://github.com/RetroPie/EmulationStation/blob/master/THEMES.md)
-- RetroPie Emulationstation Themes Showcase: [ES Themes](Themes.md)
-- The full album of images used in this tutorial: [Imgur](https://imgur.com/a/LjRZk)
+- Themes Documentation by original ES author: [Aloshi's ES Themes Reference Documentation](https://github.com/RetroPie/EmulationStation/blob/master/THEMES.md)
+- Spare theme on GitHub: [es-theme-spare](https://github.com/mattrixk/es-theme-spare)
 - Another theme from the original contributor of this tutorial: [MetaPixel](https://github.com/mattrixk/es-theme-metapixel)
+- The full album of images used in this tutorial: [Imgur](https://imgur.com/a/LjRZk)
+- Fake games Zip archive from this DropBox: [fake_games.zip](https://dl.dropboxusercontent.com/u/14838442/fake-games.zip)
+- Portable EmulationStation by @herb_fargus: [EmulationStation Windows Portable (USB Stick)](https://www.youtube.com/watch?v=oHtCnBiyzOY), [Download the file](https://drive.google.com/file/d/0B2TMeZ6iEFvHYkNrMGVQSldkZ0U/view?usp=sharing)
+- The ES Theme Helper by @Rookervik: [DropBox](https://dl.dropboxusercontent.com/u/60872572/EmulationStation/ES%20Theme%20Helper3.rar)
+- RetroPie EmulationStation Themes Showcase: [ES Themes Showcase](Themes.md)
 - A generic tutorial on how to convert a rasterimage to vector image:
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/q9Fk6OzX86U" title="Tutorial on creating Vector (SVG) logos from Bitmaps (e.g. PNG)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; allowfullscreen"></iframe>
