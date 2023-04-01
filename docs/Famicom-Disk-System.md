@@ -25,6 +25,7 @@ Place your FDS Roms in
 ## BIOS
 
 FDS games require the **disksys.rom** bios file. Place the BIOS in:
+
 * `/home/pi/RetroPie/BIOS` for `lr-fceumm` and `lr-nestopia`
 * `/home/pi/RetroPie/BIOS` for `lr-fneo`, zipped in a file named `fdsbios.zip`
 
@@ -36,9 +37,9 @@ FDS games require the **disksys.rom** bios file. Place the BIOS in:
 
 Both emulators utilise RetroArch configurations.
 
-*Side Note: In order to "switch to side B" of a ROM most controllers have this set to a default of the upper right bumper or right trigger button
+*Side Note*: In order to "switch to side B" of a ROM most controllers have this set to a default of the upper right bumper or right trigger button
 
-*Side Note: Games that display **Ｂメンヲセットシテクダサ** are asking for the disk to be flipped to side B in order to continue. It is common for a game to display a title screen that asks for side B before the game can start.
+*Side Note*: Games that display **Ｂメンヲセットシテクダサ** are asking for the disk to be flipped to side B in order to continue. It is common for a game to display a title screen that asks for side B before the game can start.
 
 Add custom retroarch controls to the retroarch.cfg file in
 ```shell
