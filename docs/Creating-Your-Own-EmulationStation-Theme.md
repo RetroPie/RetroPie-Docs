@@ -1,16 +1,12 @@
-<!--
-TODO: Screens von epic noir kommentieren und dann dokumentieren
--->
-
 ## Introduction
 
 This Tutorial will take you through the basics of creating a theme for EmulationStation (ES) and RetroPie.
 
-It will create a simple theme called Spare. The default Carbon theme as a reference, while creating all the XML from scratch so you will get a better understanding of it.
+It will create a simple theme called Spare. The default Carbon theme as a reference, while creating all the XML from scratch, so you will get a better understanding of it.
 
 During the course, three systems will be covered as example:
 
-- Gameboy (folder: `gb`)
+- Game Boy (folder: `gb`)
 - Nintendo Entertainment System (folder: `nes`)
 - Super Nintendo Entertainment System (folder: `snes`)
 
@@ -37,9 +33,9 @@ The theme you are going to make will look like this:
 
 It is a simple, clean theme, not very outlandish, but it's enough to teach the essentials, and a few of the more advanced ideas.
 
-!!! Info
+**Note**
 
-    This tutorial was developed on Windows, but all the main parts (the XML and images) can be done on any Operating System, as long as you can put or assess the files into the `theme` folder on your Raspberry Pi (e.g., with Samba, see [setup](#set-up-samba-share-of-emulationstations-themes-on-retropie)).
+> This tutorial was developed on Windows, but all the main parts (the XML and images) can be done on any Operating System, as long as you can put or assess the files into the `theme` folder on your Raspberry Pi (e.g., with Samba, see [setup](#use-samba-share-of-emulationstations-themes-on-retropie)).
 
 ### What You Will Need
 
@@ -48,7 +44,7 @@ It is a simple, clean theme, not very outlandish, but it's enough to teach the e
 - EmulationStation
     - This tutorial uses a version on a Windows machine (more on that below), but the version on your Pi is fine.
 - An image editor
-    - This is optional as all the images will be supplied, however you can use these images as a base to create your own, or make your own from scratch. On Windows you may use Photoshop, but other programs like GIMP, Inkscape, Krita or Paint.net would work too. Whenever possible use SVG format for your graphics instead of pixel based formats (JPG/PNG) as the former scales properly without visible artefacts.
+    - This is optional as all the images will be supplied, however you can use these images as a base to create your own, or make your own from scratch. On Windows you may use Photoshop, but other programs like GIMP, Inkscape, Krita or Paint.net would work too. Whenever possible use SVG format for your graphics instead of pixel based formats (JPG/PNG) as the former scales properly without visible artifacts.
 - The ES Theme Helper by @Rookervik
     - Not essential, but very, very handy
     -  [Get it from @Rookervik's DropBox here](https://dl.dropboxusercontent.com/u/60872572/EmulationStation/ES%20Theme%20Helper3.rar)
@@ -90,7 +86,7 @@ The Detailed View is what you see if you *have* scraped metadata. Different them
 - `md_rating`
 - `md_releasedate`: Stored as ISO8601 date format e.g., 2023-03-17
 
-Finally, the **Video View** is what you see if your scraped metadata includes videos. The video view is an extension of the Detailed View.  It can display all of the values found in the Detailed View along with these additions:
+Finally, the **Video View** is what you see if your scraped metadata includes videos. The video view is an extension of the Detailed View.  It can display all the values found in the Detailed View along with these additions:
 
 - `md_marquee`
 - `md_video`
@@ -99,7 +95,7 @@ Extra values can be added by the Theme Maker, but the ones above are the only on
 
 ## Setup
 
-This tutorial uses the portable version of EmulationStation created by @herb_fargus. But this is not an restriction, you can use your own ES setup on a different system and may use for example Samba to serve the theme files.
+This tutorial uses the portable version of EmulationStation created by @herb_fargus. But this is not a restriction, you can use your own ES setup on a different system and may use for example Samba to serve the theme files.
 
 ### Set Up EmulationStation on PC
 
@@ -107,9 +103,9 @@ This tutorial uses the portable version of EmulationStation created by @herb_far
 
 - Download the portable EmulationStation by @herb_fargus, see [references](#references)
 - Install/unzip it where you want it. For example if you have it on `F:\` drive, so the path is `F:\emulationstation`
-- Download the fake games collection, see [references](#references). Within it are three folders: `gb`, `nes` and `snes`. Within each folder are 15 empty files, each named after a game on that system. These files have also had their extensions changed to something that EmulationStation will recognize as a ROM.
+- Download the fake games' collection, see [references](#references). Within it are three folders: `gb`, `nes` and `snes`. Within each folder are 15 empty files, each named after a game on that system. These files have also had their extensions changed to something that EmulationStation will recognize as a ROM.
   - _These are not real ROMs. They are blank text files that have been renamed to look like ROMs._
-  - EmulationStation sees these as real games. You won't be able to play them (since they are really just empty files), but they will scrape with the built in EmulationStation scraper. They are also extremely small, so you don't have to worry about your test-bed getting too big.
+  - EmulationStation sees these as real games. You won't be able to play them (since they are really just empty files), but they will scrape with the built-in EmulationStation scraper. They are also tiny, so you don't have to worry about your test-bed getting too big.
 - Copy those folders into `F:\emulationstation\\.emulationstation\roms`
 
 
@@ -117,46 +113,28 @@ EmulationStation should now be set up with 45 (fake) games on three Systems, and
 
 Double click `Launch Portable (Windowed).bat` to start EmulationStation.
 
-### Set Up Samba Share of EmulationStation's Themes on RetroPie
+### Use Samba Share of EmulationStation's Themes on RetroPie
 
-1. Log on to your Pi. See: [SSH](SSH.md)
-2. Edit `/etc/samba/smb.conf` (e.g. with [`nano`](https://nano-editor.org/dist/latest/cheatsheet.html)
-3. Add this section:
-
-```ini
-
-[themes]
-  comment = ES Themes
-  path = "/opt/retropie/configs/all/emulationstation/themes"
-  read only = no
-  guest ok = yes
-  create mask = 0644
-  directory mask = 0755
-  force user = pi
-
-```
-
-4. Restart the Samba Daemon: `sudo systemctl restart smbd`.
-5. Open `\\retropie\themes` in the Windows File Explorer. You should be able to see (and edit) the currently installed themes of your EmulationStation installation. Or install the Spare theme as outlined below.
+You may also edit theme files directly on the Raspberry. However, you should use a wired network connection between your desktop and the Raspberry to enable smooth editing. Open `\\retropie\configs\all\themes` in the Windows File Explorer. You should be able to see (and edit) the currently installed themes of your EmulationStation installation. If you do not see any theme, then install the Spare theme as outlined below. For reloading a theme (see [shortcuts](#keyboard-shortcuts-in-emulationstation)) you should also have a keyboard attached to your RetroPie, and it should be in reach from your desktop system.
 
 ## Creating a Theme
 
-We're going to make the theme straight in the Portable EmulationStation's theme folder. Of course you are free to act directly on the Samba Share, which does not require file copy operations.
+We're going to make the theme straight in the Portable EmulationStation's theme folder. Of course, you are free to act directly on the Samba Share, which does not require file copy operations.
 
 If you use the portable EmulationStation on `F:\` drive, so the path to the themes folder would be `F:\emulationstation\\.emulationstation\themes`.
 
-First, [download the full **Spare** theme from GitHub](https://github.com/mattrixk/es-theme-spare), so you have the images and fonts you need, and also so you have something to reference.
+First, [download the full Spare theme from GitHub](https://github.com/mattrixk/es-theme-spare), so you have the images and fonts you need, and also, so you have something to reference.
 
-We'll start by setting up a simple file structure, with folders for the three console systems; Gameboy (gb), Nintendo Entertainment System (nes) and Super Nintendo Entertainment System (snes).
+We'll start by setting up a simple file structure, with folders for the three console systems; Game Boy (`gb`), Nintendo Entertainment System (`nes`) and Super Nintendo Entertainment System (`snes`).
 
 - Within the themes folder make a folder called `spare`.
-  - Within the `spare` folder make a new file called `spare.xml`.
+  - In the `spare` folder make a new file called `spare.xml`.
 
 - Within the `spare` folder make folders called `nes`, `snes`, `gb` and `_inc`.
-  - Within each of `nes`, `snes`, `gb` make a new file called `theme.xml`.
+  - In each of `nes`, `snes`, `gb` make a new file called `theme.xml`.
   - Also copy the system images from the downloaded file into the system folders
 
-- `_inc` is your includes folder where you will hold your fonts and theme images. You can call it anything you like. Some other themes use `art`, others use `common`. this tutorial uses `_inc` with an underscore which keeps it at the top of the file tree.
+- `_inc` is your includes folder where you will hold your fonts and theme images. You can call it anything you like. Some other themes use `art`, others use `common`. This tutorial uses `_inc` with an underscore which keeps it at the top of the file tree.
   - Within `_inc` create two folders, called `fonts` and `images`. Copy the fonts and images from the downloaded file into their respective folders.
 
 Your folder structure should now look like this:
@@ -242,7 +220,7 @@ If you switch EmulationStation to the Spare theme now, this is what you should s
   <figcaption>Blank Detailed View</figcaption>
 </figure>
 
-What you are seeing are the EmulationStation defaults. We haven't yet told EmulationStation how we want anything to look, so for now it's just raw data with very very basic styling. It's our job as Themers to change that.
+What you are seeing are the EmulationStation defaults. We haven't yet told EmulationStation how we want anything to look, so for now it's just raw data with very, very basic styling. It's our job as "Themers" to change that.
 
 ### System View
 
@@ -256,8 +234,8 @@ Now let's create the System View.
 Take note of how it differs from the blank theme.
 
 - There are now Logos in place of simple folder names.
-- The white carousel and the grey bar below it haven't changed (unfortunately, they are hardcoded into EmulationStation and for the time being are not themeable).
-- There is a grey background color behind the carousel.
+- The white carousel and the gray bar below it hadn't changed (unfortunately, they are hard coded into EmulationStation and for the time being are not theme-able).
+- There is a gray background color behind the carousel.
 - There is also a repeating background image behind the carousel.
 - There is a semi-transparent white bar behind the _Help Menu_ text in the footer.
 - The _Help Menu_ now has a different color and different font.
@@ -282,9 +260,9 @@ Now we add some **Elements** to the View. To start with we'll change the backgro
 </view>
 ```
 
-!!! note "The `extra` attirbute"
+**The `extra` attribute**
 
-    The `extra="true"` XML attribute means that this is a new XML **Element** being added, not something that is already defined by EmulationStation
+> The `extra="true"` XML attribute means that this is a new XML **Element** being added, not something that is already defined by EmulationStation
 
 We need to add some **Properties** (as XML child elements) to the Element to tell it what to do. There are seven Properties accepted by the image Element. They are:
 
@@ -296,13 +274,13 @@ We need to add some **Properties** (as XML child elements) to the Element to tel
 - `<tile>`: If the image repeats or not.
 - `<color>`: A color overlay, allowing you to change the color and opacity of the image. Uses four bytes values. The first three bytes represent the Hex color code (one byte per red, green, blue) with the last byte is defining the opacity (alpha channel).
 
-If you want a more detailed explaination of Element Properties you can read [this section](https://github.com/Aloshi/EmulationStation/blob/master/THEMES.md#image) of the EmulationStation Themes documention.
+If you want a more detailed explanation of Element Properties you can read [this section](https://github.com/Aloshi/EmulationStation/blob/master/THEMES.md#image) of the EmulationStation themes documentation. Especially if you want to use absolute pixel sizes (see [`<resolution/>` element](https://github.com/RetroPie/EmulationStation/blob/master/THEMES.md#the-resolution-tag))
 
-The first thing we'll do is set the path to the image: You should already have `bg_color.png` in your images folder. If not, grab it from the full **Spare** theme you downloaded earlier and place it in the `spare/_inc/images` folder. This image is a simple, white 32 x 32px PNG.
+The first thing we'll do is set the path to the image: You should already have `bg_color.png` in your images' folder. If not, grab it from the Spare theme you downloaded earlier and place it in the `spare/_inc/images` folder. This image is a simple, white 32 x 32px PNG.
 
-!!! warning inline end
+**Warning**
 
-    Do not omit the heading dot (`.`) in `<path>`.
+> Do not omit the heading dot (`.`) in `<path>`.
 
 Add the line:
 `<path>./_inc/images/bg_color.png</path>`
@@ -320,9 +298,7 @@ Here we are telling ES to look for an image called `bg_color.png` within a folde
 Now we tell the Image where we want it to sit and how big we want it to be. We want it to start at the top left of the screen and stretch all the way to the bottom right. For that we need the `<origin>`, `<pos>` and `<size>` Properties.
 
 - `<origin>0 0</origin>` tells ES that the image originates at X position = 0 (left) and Y position = 0 (top).
-
 - `<pos>0 0</pos>` tells ES to place the `<origin>` of the image in X position = 0 (left) and Y position = 0 (top).
-
 - `<size>1 1</size>` tells ES the stretch the image 100% along the X-axis (horizontal) and 100% along the Y-axis (vertical).
 
 Put it all together and it looks like this:
@@ -334,9 +310,10 @@ Put it all together and it looks like this:
 	<size>1 1</size>
 </image>
 ```
-!!! tip inline end "Reloading the theme changes"
 
-    If you want to see any changes you have made to your theme files, first save the file. Start EmulationStation with the `--debug`. Within EmulationStation press _left_ ++ctrl+r++ whenever you want to force the theme to be re-applied. This will be refrerred as "refresh the theme" in this tutorial.
+**Tip: Reloading the theme changes**
+
+> If you want to see any changes you have made to your theme files, first save the file. Start EmulationStation with the `--debug`. Within EmulationStation press _left_ ++ctrl+r++ whenever you want to force the theme to be re-applied. This will be referred as "refresh the theme" in this tutorial.
 
 If you refresh the ES theme now (see tip on the right) you wouldn't see anything different, because the background was already white.
 
@@ -348,16 +325,16 @@ If we want to change our background color to Red, we add this line to the `backg
 
 Other randomly chosen colors:
 
-!!! tip inline end "Transparency"
+**Tip: Transparency**
 
-    If you do not define a value for alpha channel (the fourth byte). Alpha channel will be 255 (hex: `0xff`), which means full opacitiy.
+> If you do not define a value for alpha channel (the fourth byte). Alpha channel will be 255 (hex: `0xff`), which means full opacity.
 
 - `<color>70D6F3</color>` = Light Blue
 - `<color>229C29</color>` = Dark Green
 - `<color>FF7700</color>` = Orange
 - `<color>CF1F97</color>` = Purple
 
-I'm just going to choose a lightish grey color so it stands out a little, but not too much. Your 'background_color' Element should now look like this:
+Let's choose a light gray color, so it stands out a little, but not too much. Your `background_color` Element should now look like this:
 ```xml
 <image name="background_color" extra="true">
     <path>./_inc/images/bg_color.png</path>
@@ -379,7 +356,7 @@ It should look like this:
 Now for the Background Pattern:
 
 - `bg_pattern.png` should already be in your `spare/_inc/images` folder.
-- Duplicate the `background_color` Element and change it so it looks like this:
+- Duplicate the `background_color` Element and change it, so it looks like this:
 ```xml
 <image name="background_pattern" extra="true">
     <path>./_inc/images/bg_pattern.png</path>
@@ -394,14 +371,14 @@ What we've done here is:
 
 - Renamed the Element to `background_pattern`.
 - Changed the `<path>` to point to the `bg_pattern.png` image.
-!!! note inline end
-
-    Changing the `<origin>` and `<pos>` isn't strictly necessary, but it looks more interesting with most patterns, so they start from the center of the screen instead of the left-top. As usual, it's up to you what you prefer.
-
 - Changed the `<origin>` to be the center of the image instead of the left-top.
 - Changed the `<pos>` to be the center of the screen instead of the left-top.
-- Changed the `<color>` to be a darker grey.
+- Changed the `<color>` to be a darker gray.
 - Added the line `<tile>true</tile>`. This line tells ES to repeat the image over the space instead of stretching it out.
+
+**Note**
+
+> Changing the `<origin>` and `<pos>` isn't strictly necessary, but it looks more interesting with most patterns, so they start from the center of the screen instead of the left-top. As usual, it's up to you what you prefer.
 
 It should look like this:
 
@@ -414,7 +391,7 @@ It should look like this:
 
 This is the background that covers the Help menu items in the bottom left of the screen.
 
-- Again, duplicate the `background_color` Element and change it so it looks like this:
+- Again, duplicate the `background_color` Element and change it, so it looks like this:
 ```xml
 <image name="background_help" extra="true">
     <path>./_inc/images/bg_color.png</path>
@@ -682,7 +659,7 @@ Now we know the size for the Gamelist:
 - `<selectorColor>` is the color of the bar that shows which game is selected. Set here to black.
 - `<selectedColor>` is the color of the text of the selected game. Set here to white.
 - `<primaryColor>` is the main text color of the Gamelist. Set here to black.
-- `<secondaryColor>` is the color of any folders in your Gamelist. Set here to a mid-point grey.
+- `<secondaryColor>` is the color of any folders in your Gamelist. Set here to a mid-point gray.
 
 <figure markdown>
   ![Spare Theme Basic View - Gamelist](https://i.imgur.com/8SDAVnh.jpg)
@@ -707,7 +684,7 @@ You should now be the owner of a shiny new Basic View:
 
 ### Detailed View
 
-Now for the Big One; the **Detailed View**. This one isn't too bad mostly, but the metadata can be a real hassle to order so it looks nice. Each part of the metadata has to be done individually... but we'll jump off that bridge when we come to it.
+Now for the Big One; the **Detailed View**. This one isn't too bad mostly, but the metadata can be a real hassle to order, so it looks nice. Each part of the metadata has to be done individually... but we'll jump off that bridge when we come to it.
 
 This is what we want to end up with:
 
@@ -774,7 +751,7 @@ Which makes it look like this:
   <figcaption>Spare Theme Detailed View - Helpers</figcaption>
 </figure>
 
-These colored boxes will eventually be the semi-transparent white boxes that go behind the content, but for now we make them colored so they are easier to see.
+These colored boxes will eventually be the semi-transparent white boxes that go behind the content, but for now we make them colored, so they are easier to see.
 
 Now we want to add in some more Helper boxes within these, so the content will have some padding:
 
@@ -825,9 +802,9 @@ Now we want to add in some more Helper boxes within these, so the content will h
   <figcaption>Spare Theme Detailed View - Helpers Padding</figcaption>
 </figure>
 
-!!! note 
+**Note**
 
-    Notice `logo_helper` and `image_helper_2` both have `<origin>0.5 0.5</origin>`. This is because we want the images to be aligned from the very center of their Helper box. It takes a bit more work to get these aligned properly, but it looks better once they are.
+> Notice `logo_helper` and `image_helper_2` both have `<origin>0.5 0.5</origin>`. This is because we want the images to be aligned from the very center of their Helper box. It takes a bit more work to get these aligned properly, but it looks better once they are.
 
 Now it's just a matter of moving each piece of metadata into its correct place.
 
@@ -895,228 +872,226 @@ The Description:
   <figcaption>Spare Theme Detailed View - Description</figcaption>
 </figure>
 
-Now... the fun fun part. The metadata. So far everything has been pretty simple. Logos, gamelists, images, etc are all big things that you can place without too much thought. Metadata is different.
+Now... the fun part. The metadata. So far everything has been pretty simple. Logos, game lists, images, etc. are all big things that you can place without too much thought. Metadata is different.
 
-Metadata is split up into eight main sections (I'm not counting Image and Description in this list), and each of those sections has both a Label and a Value.
+Metadata is split up into eight main sections (without counting Image and Description in this list), and each of those sections has both a Label and a Value.
 
-- md_lbl_rating, md_rating
-- md_lbl_releasedate, md_releasedate
-- md_lbl_developer, md_developer
-- md_lbl_publisher, md_publisher
-- md_lbl_genre, md_genre
-- md_lbl_players, md_players
-- md_lbl_lastplayed, md_lastplayed
-- md_lbl_playcount, md_playcount
+- `md_lbl_rating`, `md_rating`
+- `md_lbl_releasedate`, `md_releasedate`
+- `md_lbl_developer`, `md_developer`
+- `md_lbl_publisher`, `md_publisher`
+- `md_lbl_genre`, `md_genre`
+- `md_lbl_players`, `md_players`
+- `md_lbl_lastplayed`, `md_lastplayed`
+- `md_lbl_playcount`, `md_playcount`
 
-To make things more annoying, `md_releasedate` and `md_lastplayed` are both `<datetime>` fields instead of just plain `<text>` fields, so there are certain things the can't do, like be center aligned.
+To make things more annoying, `md_releasedate` and `md_lastplayed` are both `<datetime>` fields instead of just plain `<text>` fields, so there are certain things they can't do, like be center aligned.
 
-This is the XML excerpt to place the metadata as shown in this tutorial:
+This is the XML excerpt to place the metadata as shown in this tutorial (long XML fragment):
 
-??? note "Click to expand"
+```xml
+<text name="md_lbl_rating, md_lbl_releasedate, md_lbl_developer, md_lbl_publisher, md_lbl_genre, md_lbl_players, md_lbl_lastplayed, md_lbl_playcount">
+	<color>000000</color>
+	<forceUppercase>1</forceUppercase>
+	<fontPath>./_inc/fonts/Roboto-Medium.ttf</fontPath>
+	<fontSize>0.02</fontSize>
+	<size>0.24 0.01</size>
+</text>
 
-		```xml
-		<text name="md_lbl_rating, md_lbl_releasedate, md_lbl_developer, md_lbl_publisher, md_lbl_genre, md_lbl_players, md_lbl_lastplayed, md_lbl_playcount">
-			<color>000000</color>
-			<forceUppercase>1</forceUppercase>
-			<fontPath>./_inc/fonts/Roboto-Medium.ttf</fontPath>
-			<fontSize>0.02</fontSize>
-			<size>0.24 0.01</size>
-		</text>
+<text name="md_developer, md_publisher, md_genre, md_players, md_playcount">
+	<color>000000</color>
+	<forceUppercase>0</forceUppercase>
+	<fontPath>./_inc/fonts/Roboto-Light.ttf</fontPath>
+	<fontSize>0.024</fontSize>
+	<size>0.23 0.02</size>
+</text>
+<datetime name="md_releasedate, md_lastplayed">
+	<color>000000</color>
+	<forceUppercase>0</forceUppercase>
+	<fontPath>./_inc/fonts/Roboto-Light.ttf</fontPath>
+	<fontSize>0.024</fontSize>
+	<size>0.23 0.02</size>
+</datetime>
 
-		<text name="md_developer, md_publisher, md_genre, md_players, md_playcount">
-			<color>000000</color>
-			<forceUppercase>0</forceUppercase>
-			<fontPath>./_inc/fonts/Roboto-Light.ttf</fontPath>
-			<fontSize>0.024</fontSize>
-			<size>0.23 0.02</size>
-		</text>
-		<datetime name="md_releasedate, md_lastplayed">
-			<color>000000</color>
-			<forceUppercase>0</forceUppercase>
-			<fontPath>./_inc/fonts/Roboto-Light.ttf</fontPath>
-			<fontSize>0.024</fontSize>
-			<size>0.23 0.02</size>
-		</datetime>
+<image name="metadata_helper_3" extra="true">
+	<path>./_inc/images/bg_color.png</path>
+	<origin>0 0</origin>
+	<pos>0.74 0.04</pos>
+	<size>0.24 0.02</size>
+	<color>5bb80044</color>
+</image>
+<text name="md_lbl_rating">
+	<pos>0.74 0.04</pos>
+</text>
 
-			<image name="metadata_helper_3" extra="true">
-				<path>./_inc/images/bg_color.png</path>
-				<origin>0 0</origin>
-				<pos>0.74 0.04</pos>
-				<size>0.24 0.02</size>
-				<color>5bb80044</color>
-			</image>
-				<text name="md_lbl_rating">
-					<pos>0.74 0.04</pos>
-				</text>
+<image name="metadata_helper_4" extra="true">
+	<path>./_inc/images/bg_color.png</path>
+	<origin>0 0</origin>
+	<pos>0.75 0.07</pos>
+	<size>0.23 0.04</size>
+	<color>5bb80044</color>
+</image>
+<rating name="md_rating">
+	<pos>0.75 0.07</pos>
+	<size>0.23 0.03</size>
+	<filledPath>./_inc/images/star_full.png</filledPath>
+	<unfilledPath>./_inc/images/star_hollow.png</unfilledPath>
+</rating>
 
-			<image name="metadata_helper_4" extra="true">
-				<path>./_inc/images/bg_color.png</path>
-				<origin>0 0</origin>
-				<pos>0.75 0.07</pos>
-				<size>0.23 0.04</size>
-				<color>5bb80044</color>
-			</image>
-				<rating name="md_rating">
-					<pos>0.75 0.07</pos>
-					<size>0.23 0.03</size>
-					<filledPath>./_inc/images/star_full.png</filledPath>
-					<unfilledPath>./_inc/images/star_hollow.png</unfilledPath>
-				</rating>
+<image name="metadata_helper_5" extra="true">
+	<path>./_inc/images/bg_color.png</path>
+	<origin>0 0</origin>
+	<pos>0.74 0.12</pos>
+	<size>0.24 0.02</size>
+	<color>5bb80044</color>
+</image>
+<text name="md_lbl_players">
+	<pos>0.74 0.12</pos>
+</text>
 
-			<image name="metadata_helper_5" extra="true">
-				<path>./_inc/images/bg_color.png</path>
-				<origin>0 0</origin>
-				<pos>0.74 0.12</pos>
-				<size>0.24 0.02</size>
-				<color>5bb80044</color>
-			</image>
-				<text name="md_lbl_players">
-					<pos>0.74 0.12</pos>
-				</text>
+<image name="metadata_helper_6" extra="true">
+	<path>./_inc/images/bg_color.png</path>
+	<origin>0 0</origin>
+	<pos>0.75 0.14</pos>
+	<size>0.23 0.03</size>
+	<color>5bb80044</color>
+</image>
+<text name="md_players">
+	<pos>0.75 0.14</pos>
+</text>
 
-			<image name="metadata_helper_6" extra="true">
-				<path>./_inc/images/bg_color.png</path>
-				<origin>0 0</origin>
-				<pos>0.75 0.14</pos>
-				<size>0.23 0.03</size>
-				<color>5bb80044</color>
-			</image>
-				<text name="md_players">
-					<pos>0.75 0.14</pos>
-				</text>
+<image name="metadata_helper_7" extra="true">
+	<path>./_inc/images/bg_color.png</path>
+	<origin>0 0</origin>
+	<pos>0.74 0.18</pos>
+	<size>0.24 0.02</size>
+	<color>5bb80044</color>
+</image>
+<text name="md_lbl_genre">
+	<pos>0.74 0.18</pos>
+</text>
 
-			<image name="metadata_helper_7" extra="true">
-				<path>./_inc/images/bg_color.png</path>
-				<origin>0 0</origin>
-				<pos>0.74 0.18</pos>
-				<size>0.24 0.02</size>
-				<color>5bb80044</color>
-			</image>
-				<text name="md_lbl_genre">
-					<pos>0.74 0.18</pos>
-				</text>
+<image name="metadata_helper_8" extra="true">
+	<path>./_inc/images/bg_color.png</path>
+	<origin>0 0</origin>
+	<pos>0.75 0.20</pos>
+	<size>0.23 0.03</size>
+	<color>5bb80044</color>
+</image>
+<text name="md_genre">
+	<pos>0.75 0.20</pos>
+</text>
 
-			<image name="metadata_helper_8" extra="true">
-				<path>./_inc/images/bg_color.png</path>
-				<origin>0 0</origin>
-				<pos>0.75 0.20</pos>
-				<size>0.23 0.03</size>
-				<color>5bb80044</color>
-			</image>
-				<text name="md_genre">
-					<pos>0.75 0.20</pos>
-				</text>
+<image name="metadata_helper_9" extra="true">
+	<path>./_inc/images/bg_color.png</path>
+	<origin>0 0</origin>
+	<pos>0.74 0.24</pos>
+	<size>0.24 0.02</size>
+	<color>5bb80044</color>
+</image>
+<text name="md_lbl_developer">
+	<pos>0.74 0.24</pos>
+</text>
 
-			<image name="metadata_helper_9" extra="true">
-				<path>./_inc/images/bg_color.png</path>
-				<origin>0 0</origin>
-				<pos>0.74 0.24</pos>
-				<size>0.24 0.02</size>
-				<color>5bb80044</color>
-			</image>
-				<text name="md_lbl_developer">
-					<pos>0.74 0.24</pos>
-				</text>
+<image name="metadata_helper_10" extra="true">
+	<path>./_inc/images/bg_color.png</path>
+	<origin>0 0</origin>
+	<pos>0.75 0.26</pos>
+	<size>0.23 0.03</size>
+	<color>5bb80044</color>
+</image>
+<text name="md_developer">
+	<pos>0.75 0.26</pos>
+</text>
 
-			<image name="metadata_helper_10" extra="true">
-				<path>./_inc/images/bg_color.png</path>
-				<origin>0 0</origin>
-				<pos>0.75 0.26</pos>
-				<size>0.23 0.03</size>
-				<color>5bb80044</color>
-			</image>
-				<text name="md_developer">
-					<pos>0.75 0.26</pos>
-				</text>
+<image name="metadata_helper_11" extra="true">
+	<path>./_inc/images/bg_color.png</path>
+	<origin>0 0</origin>
+	<pos>0.74 0.30</pos>
+	<size>0.24 0.02</size>
+	<color>5bb80044</color>
+</image>
+<text name="md_lbl_publisher">
+	<pos>0.74 0.30</pos>
+</text>
 
-			<image name="metadata_helper_11" extra="true">
-				<path>./_inc/images/bg_color.png</path>
-				<origin>0 0</origin>
-				<pos>0.74 0.30</pos>
-				<size>0.24 0.02</size>
-				<color>5bb80044</color>
-			</image>
-				<text name="md_lbl_publisher">
-					<pos>0.74 0.30</pos>
-				</text>
+<image name="metadata_helper_12" extra="true">
+	<path>./_inc/images/bg_color.png</path>
+	<origin>0 0</origin>
+	<pos>0.75 0.32</pos>
+	<size>0.23 0.03</size>
+	<color>5bb80044</color>
+</image>
+<text name="md_publisher">
+	<pos>0.75 0.32</pos>
+</text>
 
-			<image name="metadata_helper_12" extra="true">
-				<path>./_inc/images/bg_color.png</path>
-				<origin>0 0</origin>
-				<pos>0.75 0.32</pos>
-				<size>0.23 0.03</size>
-				<color>5bb80044</color>
-			</image>
-				<text name="md_publisher">
-					<pos>0.75 0.32</pos>
-				</text>
+<image name="metadata_helper_13" extra="true">
+	<path>./_inc/images/bg_color.png</path>
+	<origin>0 0</origin>
+	<pos>0.74 0.36</pos>
+	<size>0.24 0.02</size>
+	<color>5bb80044</color>
+</image>
+<text name="md_lbl_releasedate">
+	<pos>0.74 0.36</pos>
+</text>
 
-			<image name="metadata_helper_13" extra="true">
-				<path>./_inc/images/bg_color.png</path>
-				<origin>0 0</origin>
-				<pos>0.74 0.36</pos>
-				<size>0.24 0.02</size>
-				<color>5bb80044</color>
-			</image>
-				<text name="md_lbl_releasedate">
-					<pos>0.74 0.36</pos>
-				</text>
+<image name="metadata_helper_14" extra="true">
+	<path>./_inc/images/bg_color.png</path>
+	<origin>0 0</origin>
+	<pos>0.75 0.38</pos>
+	<size>0.23 0.03</size>
+	<color>5bb80044</color>
+</image>
+<datetime name="md_releasedate">
+	<pos>0.75 0.38</pos>
+</datetime>
 
-			<image name="metadata_helper_14" extra="true">
-				<path>./_inc/images/bg_color.png</path>
-				<origin>0 0</origin>
-				<pos>0.75 0.38</pos>
-				<size>0.23 0.03</size>
-				<color>5bb80044</color>
-			</image>
-				<datetime name="md_releasedate">
-					<pos>0.75 0.38</pos>
-				</datetime>
+<image name="metadata_helper_15" extra="true">
+	<path>./_inc/images/bg_color.png</path>
+	<origin>0 0</origin>
+	<pos>0.74 0.42</pos>
+	<size>0.24 0.02</size>
+	<color>5bb80044</color>
+</image>
+<text name="md_lbl_playcount">
+	<pos>0.74 0.42</pos>
+</text>
 
-			<image name="metadata_helper_15" extra="true">
-				<path>./_inc/images/bg_color.png</path>
-				<origin>0 0</origin>
-				<pos>0.74 0.42</pos>
-				<size>0.24 0.02</size>
-				<color>5bb80044</color>
-			</image>
-				<text name="md_lbl_playcount">
-					<pos>0.74 0.42</pos>
-				</text>
+<image name="metadata_helper_16" extra="true">
+	<path>./_inc/images/bg_color.png</path>
+	<origin>0 0</origin>
+	<pos>0.75 0.44</pos>
+	<size>0.23 0.03</size>
+	<color>5bb80044</color>
+</image>
+<text name="md_playcount">
+	<pos>0.75 0.44</pos>
+</text>
 
-			<image name="metadata_helper_16" extra="true">
-				<path>./_inc/images/bg_color.png</path>
-				<origin>0 0</origin>
-				<pos>0.75 0.44</pos>
-				<size>0.23 0.03</size>
-				<color>5bb80044</color>
-			</image>
-				<text name="md_playcount">
-					<pos>0.75 0.44</pos>
-				</text>
+<image name="metadata_helper_17" extra="true">
+	<path>./_inc/images/bg_color.png</path>
+	<origin>0 0</origin>
+	<pos>0.74 0.48</pos>
+	<size>0.24 0.02</size>
+	<color>5bb80044</color>
+</image>
+<text name="md_lbl_lastplayed">
+	<pos>0.74 0.48</pos>
+</text>
 
-			<image name="metadata_helper_17" extra="true">
-				<path>./_inc/images/bg_color.png</path>
-				<origin>0 0</origin>
-				<pos>0.74 0.48</pos>
-				<size>0.24 0.02</size>
-				<color>5bb80044</color>
-			</image>
-				<text name="md_lbl_lastplayed">
-					<pos>0.74 0.48</pos>
-				</text>
-
-			<image name="metadata_helper_18" extra="true">
-				<path>./_inc/images/bg_color.png</path>
-				<origin>0 0</origin>
-				<pos>0.75 0.50</pos>
-				<size>0.23 0.03</size>
-				<color>5bb80044</color>
-			</image>
-				<datetime name="md_lastplayed">
-					<pos>0.75 0.50</pos>
-				</datetime>
-		```
+<image name="metadata_helper_18" extra="true">
+	<path>./_inc/images/bg_color.png</path>
+	<origin>0 0</origin>
+	<pos>0.75 0.50</pos>
+	<size>0.23 0.03</size>
+	<color>5bb80044</color>
+</image>
+<datetime name="md_lastplayed">
+	<pos>0.75 0.50</pos>
+</datetime>
+```
 
 That comes out looking like this:
 
@@ -1125,13 +1100,13 @@ That comes out looking like this:
   <figcaption>Spare Theme Detailed View - Metadata Helpers</figcaption>
 </figure>
 
-Noticed how more Helper boxes are used for each piece of metadata? This was a long process of trail and error. Originally the font and spacing were too big so they took up too much room. In the end they had to be shrunk down thus they don't take all the space.
+Noticed how more Helper boxes are used for each piece of metadata? This was a long process of trail and error. Originally the font and spacing were too big, so they took up too much room. In the end they had to be shrunk down thus they don't take all the space.
 
 Now just remove the second layer of padding Helpers, and change the main helper boxes color to `FFFFFF99`. The white helper boxes have the prefix to `background_` because they are now backgrounds rather than helpers.
 
 ### Video View
 
-Now for the **Video View**.  Video support is a newer feature of EmulationStation so we have to take care to ensure our theme is backward compatible.  Video view is an extension of the **Detailed View** and should only require a few modifications.
+Now for the **Video View**.  Video support is a newer feature of EmulationStation, so we have to take care to ensure our theme is backward compatible.  Video view is an extension of the **Detailed View** and should only require a few modifications.
 
 The first step is to open `spare.xml`.  We will be moving `md_image` into a separate view definition.  Then we will add `video` to the original `detail` view element.  The result should look like the following.
 ```xml
@@ -1179,7 +1154,7 @@ Next we want to theme the new elements that video view adds.
 </view>
 ```
 
-The final step is to ensure backward compatibility with earlier versions of EmulationStation that do no support video.  To do this, we use a `feature` element.  The feature element is used to hide portions of the theme xml from versions that do not support the specified feature.
+The final step is to ensure backward compatibility with earlier versions of EmulationStation that do no support video.  To do this, we use a `feature` element.  The feature element is used to hide portions of the theme XML from versions that do not support the specified feature.
 
 ```xml
 <view name="detailed">
@@ -1218,251 +1193,249 @@ You're all done. Congratulations!
 
 This is the complete `spare.xml`:
 
-??? note "Click to expand"
+```xml
+<!--
+theme name:		Spare
+version:		1.0
+author:			Matt Kennedy
+email:
+website:
+license:		creative commons CC-BY-NC-SA
+based on:		"Carbon" by Eric Hettervik
+-->
 
-	```xml
-	<!--
-	theme name:		Spare
-	version:		1.0
-	author:			Matt Kennedy
-	email:
-	website:
-	license:		creative commons CC-BY-NC-SA
-	based on:		"Carbon" by Eric Hettervik
-	-->
+<theme>
 
-	<theme>
+	<formatVersion>4</formatVersion>
 
-		<formatVersion>4</formatVersion>
+	<view name="system, basic, detailed">
 
-		<view name="system, basic, detailed">
+		<image name="background_color" extra="true">
+			<path>./_inc/images/bg_color.png</path>
+			<origin>0 0</origin>
+			<pos>0 0</pos>
+			<size>1 1</size>
+			<color>d4d4d4</color>
+		</image>
 
-			<image name="background_color" extra="true">
-				<path>./_inc/images/bg_color.png</path>
-				<origin>0 0</origin>
-				<pos>0 0</pos>
-				<size>1 1</size>
-				<color>d4d4d4</color>
-			</image>
+		<image name="background_pattern" extra="true">
+			<path>./_inc/images/bg_pattern.png</path>
+			<origin>0.5 0.5</origin>
+			<pos>0.5 0.5</pos>
+			<size>1 1</size>
+			<color>aeaeae</color>
+			<tile>true</tile>
+		</image>
 
-			<image name="background_pattern" extra="true">
-				<path>./_inc/images/bg_pattern.png</path>
+		<image name="background_help" extra="true">
+			<path>./_inc/images/bg_color.png</path>
+			<origin>0 1</origin>
+			<pos>0 1</pos>
+			<size>1 0.070</size>
+			<color>FFFFFF99</color>
+		</image>
+
+		<helpsystem name="help">
+			<textColor>000000</textColor>
+			<iconColor>000000</iconColor>
+			<fontPath>./_inc/fonts/Roboto-Light.ttf</fontPath>
+			<fontSize>0.03</fontSize>
+		</helpsystem>
+
+	</view>
+
+	<view name="basic">
+
+		<image name="background_logo" extra="true">
+			<path>./_inc/images/bg_color.png</path>
+			<origin>0 0</origin>
+			<pos>0 0</pos>
+			<size>1 0.18</size>
+			<color>FFFFFF99</color>
+		</image>
+
+			<image name="logo">
 				<origin>0.5 0.5</origin>
-				<pos>0.5 0.5</pos>
-				<size>1 1</size>
-				<color>aeaeae</color>
-				<tile>true</tile>
+				<pos>0.5 0.09</pos>
+				<maxSize>0.4 0.16</maxSize>
 			</image>
 
-			<image name="background_help" extra="true">
-				<path>./_inc/images/bg_color.png</path>
-				<origin>0 1</origin>
-				<pos>0 1</pos>
-				<size>1 0.070</size>
-				<color>FFFFFF99</color>
-			</image>
+		<image name="background_gamelist" extra="true">
+			<path>./_inc/images/bg_color.png</path>
+			<origin>0 0</origin>
+			<pos>0.05 0.2</pos>
+			<size>0.9 0.71</size>
+			<color>FFFFFF99</color>
+		</image>
 
-			<helpsystem name="help">
-				<textColor>000000</textColor>
-				<iconColor>000000</iconColor>
+			<textlist name="gamelist">
+				<selectorColor>000000</selectorColor>
+				<selectedColor>FFFFFF</selectedColor>
+				<primaryColor>000000</primaryColor>
+				<secondaryColor>888888</secondaryColor>
 				<fontPath>./_inc/fonts/Roboto-Light.ttf</fontPath>
-				<fontSize>0.03</fontSize>
-			</helpsystem>
-
-		</view>
-
-		<view name="basic">
-
-			<image name="background_logo" extra="true">
-				<path>./_inc/images/bg_color.png</path>
-				<origin>0 0</origin>
-				<pos>0 0</pos>
-				<size>1 0.18</size>
-				<color>FFFFFF99</color>
-			</image>
-
-				<image name="logo">
-					<origin>0.5 0.5</origin>
-					<pos>0.5 0.09</pos>
-					<maxSize>0.4 0.16</maxSize>
-				</image>
-
-			<image name="background_gamelist" extra="true">
-				<path>./_inc/images/bg_color.png</path>
-				<origin>0 0</origin>
 				<pos>0.05 0.2</pos>
 				<size>0.9 0.71</size>
-				<color>FFFFFF99</color>
+				<fontSize>0.04</fontSize>
+			</textlist>
+
+	</view>
+
+	<view name="detailed">
+
+		<image name="background_logo_gamelist" extra="true">
+			<path>./_inc/images/bg_color.png</path>
+			<origin>0 0</origin>
+			<pos>0.01 0.02</pos>
+			<size>0.35 0.89</size>
+			<color>FFFFFF99</color>
+		</image>
+
+			<image name="logo">
+				<origin>0.5 0.5</origin>
+				<pos>0.186 0.14</pos>
+				<maxSize>0.33 0.19</maxSize>
 			</image>
 
-				<textlist name="gamelist">
-					<selectorColor>000000</selectorColor>
-					<selectedColor>FFFFFF</selectedColor>
-					<primaryColor>000000</primaryColor>
-					<secondaryColor>888888</secondaryColor>
-					<fontPath>./_inc/fonts/Roboto-Light.ttf</fontPath>
-					<pos>0.05 0.2</pos>
-					<size>0.9 0.71</size>
-					<fontSize>0.04</fontSize>
-				</textlist>
+			<textlist name="gamelist">
+				<selectorColor>000000</selectorColor>
+				<selectedColor>FFFFFF</selectedColor>
+				<primaryColor>000000</primaryColor>
+				<secondaryColor>888888</secondaryColor>
+				<fontPath>./_inc/fonts/Roboto-Light.ttf</fontPath>
+				<pos>0.02 0.25</pos>
+				<size>0.33 0.64</size>
+				<fontSize>0.04</fontSize>
+				<horizontalMargin>0.01</horizontalMargin>
+			</textlist>
 
-		</view>
+		<image name="background_image" extra="true">
+			<path>./_inc/images/bg_color.png</path>
+			<origin>0 0</origin>
+			<pos>0.37 0.02</pos>
+			<size>0.35 0.62</size>
+			<color>FFFFFF99</color>
+		</image>
 
-		<view name="detailed">
-
-			<image name="background_logo_gamelist" extra="true">
-				<path>./_inc/images/bg_color.png</path>
-				<origin>0 0</origin>
-				<pos>0.01 0.02</pos>
-				<size>0.35 0.89</size>
-				<color>FFFFFF99</color>
+			<image name="md_image">
+				<origin>0.5 0.5</origin>
+				<pos>0.545 0.33</pos>
+				<maxSize>0.33 0.58</maxSize>
 			</image>
 
-				<image name="logo">
-					<origin>0.5 0.5</origin>
-					<pos>0.186 0.14</pos>
-					<maxSize>0.33 0.19</maxSize>
-				</image>
+		<image name="background_metadata" extra="true">
+			<path>./_inc/images/bg_color.png</path>
+			<origin>0 0</origin>
+			<pos>0.73 0.02</pos>
+			<size>0.26 0.62</size>
+			<color>FFFFFF99</color>
+		</image>
 
-				<textlist name="gamelist">
-					<selectorColor>000000</selectorColor>
-					<selectedColor>FFFFFF</selectedColor>
-					<primaryColor>000000</primaryColor>
-					<secondaryColor>888888</secondaryColor>
-					<fontPath>./_inc/fonts/Roboto-Light.ttf</fontPath>
-					<pos>0.02 0.25</pos>
-					<size>0.33 0.64</size>
-					<fontSize>0.04</fontSize>
-					<horizontalMargin>0.01</horizontalMargin>
-				</textlist>
+			<text name="md_lbl_rating, md_lbl_releasedate, md_lbl_developer, md_lbl_publisher, md_lbl_genre, md_lbl_players, md_lbl_lastplayed, md_lbl_playcount">
+				<color>000000</color>
+				<forceUppercase>1</forceUppercase>
+				<fontPath>./_inc/fonts/Roboto-Medium.ttf</fontPath>
+				<fontSize>0.02</fontSize>
+				<size>0.24 0.01</size>
+			</text>
 
-			<image name="background_image" extra="true">
-				<path>./_inc/images/bg_color.png</path>
-				<origin>0 0</origin>
-				<pos>0.37 0.02</pos>
-				<size>0.35 0.62</size>
-				<color>FFFFFF99</color>
-			</image>
+			<text name="md_developer, md_publisher, md_genre, md_players, md_playcount">
+				<color>000000</color>
+				<forceUppercase>0</forceUppercase>
+				<fontPath>./_inc/fonts/Roboto-Light.ttf</fontPath>
+				<fontSize>0.024</fontSize>
+				<size>0.23 0.02</size>
+			</text>
+			<datetime name="md_releasedate, md_lastplayed">
+				<color>000000</color>
+				<forceUppercase>0</forceUppercase>
+				<fontPath>./_inc/fonts/Roboto-Light.ttf</fontPath>
+				<fontSize>0.024</fontSize>
+				<size>0.23 0.02</size>
+			</datetime>
 
-				<image name="md_image">
-					<origin>0.5 0.5</origin>
-					<pos>0.545 0.33</pos>
-					<maxSize>0.33 0.58</maxSize>
-				</image>
+				<text name="md_lbl_rating">
+					<pos>0.74 0.04</pos>
+				</text>
+				<rating name="md_rating">
+					<pos>0.75 0.07</pos>
+					<size>0.23 0.03</size>
+					<filledPath>./_inc/images/star_full.png</filledPath>
+					<unfilledPath>./_inc/images/star_hollow.png</unfilledPath>
+				</rating>
 
-			<image name="background_metadata" extra="true">
-				<path>./_inc/images/bg_color.png</path>
-				<origin>0 0</origin>
-				<pos>0.73 0.02</pos>
-				<size>0.26 0.62</size>
-				<color>FFFFFF99</color>
-			</image>
-
-				<text name="md_lbl_rating, md_lbl_releasedate, md_lbl_developer, md_lbl_publisher, md_lbl_genre, md_lbl_players, md_lbl_lastplayed, md_lbl_playcount">
-					<color>000000</color>
-					<forceUppercase>1</forceUppercase>
-					<fontPath>./_inc/fonts/Roboto-Medium.ttf</fontPath>
-					<fontSize>0.02</fontSize>
-					<size>0.24 0.01</size>
+				<text name="md_lbl_players">
+					<pos>0.74 0.12</pos>
+				</text>
+				<text name="md_players">
+					<pos>0.75 0.14</pos>
 				</text>
 
-				<text name="md_developer, md_publisher, md_genre, md_players, md_playcount">
-					<color>000000</color>
-					<forceUppercase>0</forceUppercase>
-					<fontPath>./_inc/fonts/Roboto-Light.ttf</fontPath>
-					<fontSize>0.024</fontSize>
-					<size>0.23 0.02</size>
+				<text name="md_lbl_genre">
+					<pos>0.74 0.18</pos>
 				</text>
-				<datetime name="md_releasedate, md_lastplayed">
-					<color>000000</color>
-					<forceUppercase>0</forceUppercase>
-					<fontPath>./_inc/fonts/Roboto-Light.ttf</fontPath>
-					<fontSize>0.024</fontSize>
-					<size>0.23 0.02</size>
+				<text name="md_genre">
+					<pos>0.75 0.20</pos>
+				</text>
+
+				<text name="md_lbl_developer">
+					<pos>0.74 0.24</pos>
+				</text>
+				<text name="md_developer">
+					<pos>0.75 0.26</pos>
+				</text>
+
+				<text name="md_lbl_publisher">
+					<pos>0.74 0.30</pos>
+				</text>
+				<text name="md_publisher">
+					<pos>0.75 0.32</pos>
+				</text>
+
+				<text name="md_lbl_releasedate">
+					<pos>0.74 0.36</pos>
+				</text>
+				<datetime name="md_releasedate">
+					<pos>0.75 0.38</pos>
 				</datetime>
 
-					<text name="md_lbl_rating">
-						<pos>0.74 0.04</pos>
-					</text>
-					<rating name="md_rating">
-						<pos>0.75 0.07</pos>
-						<size>0.23 0.03</size>
-						<filledPath>./_inc/images/star_full.png</filledPath>
-						<unfilledPath>./_inc/images/star_hollow.png</unfilledPath>
-					</rating>
-
-					<text name="md_lbl_players">
-						<pos>0.74 0.12</pos>
-					</text>
-					<text name="md_players">
-						<pos>0.75 0.14</pos>
-					</text>
-
-					<text name="md_lbl_genre">
-						<pos>0.74 0.18</pos>
-					</text>
-					<text name="md_genre">
-						<pos>0.75 0.20</pos>
-					</text>
-
-					<text name="md_lbl_developer">
-						<pos>0.74 0.24</pos>
-					</text>
-					<text name="md_developer">
-						<pos>0.75 0.26</pos>
-					</text>
-
-					<text name="md_lbl_publisher">
-						<pos>0.74 0.30</pos>
-					</text>
-					<text name="md_publisher">
-						<pos>0.75 0.32</pos>
-					</text>
-
-					<text name="md_lbl_releasedate">
-						<pos>0.74 0.36</pos>
-					</text>
-					<datetime name="md_releasedate">
-						<pos>0.75 0.38</pos>
-					</datetime>
-
-					<text name="md_lbl_playcount">
-						<pos>0.74 0.42</pos>
-					</text>
-					<text name="md_playcount">
-						<pos>0.75 0.44</pos>
-					</text>
-
-					<text name="md_lbl_lastplayed">
-						<pos>0.74 0.48</pos>
-					</text>
-					<datetime name="md_lastplayed">
-						<pos>0.75 0.50</pos>
-					</datetime>
-
-			<image name="background_description" extra="true">
-				<path>./_inc/images/bg_color.png</path>
-				<origin>0 0</origin>
-				<pos>0.37 0.66</pos>
-				<size>0.62 0.25</size>
-				<color>FFFFFF99</color>
-			</image>
-
-				<text name="md_description">
-					<pos>0.38 0.68</pos>
-					<size>0.60 0.21</size>
-					<color>000000</color>
-					<fontPath>./_inc/fonts/Roboto-Light.ttf</fontPath>
-					<fontSize>0.026</fontSize>
-					<alignment>left</alignment>
-					<forceUppercase>0</forceUppercase>
-					<lineSpacing>1.6</lineSpacing>
+				<text name="md_lbl_playcount">
+					<pos>0.74 0.42</pos>
+				</text>
+				<text name="md_playcount">
+					<pos>0.75 0.44</pos>
 				</text>
 
-		</view>
+				<text name="md_lbl_lastplayed">
+					<pos>0.74 0.48</pos>
+				</text>
+				<datetime name="md_lastplayed">
+					<pos>0.75 0.50</pos>
+				</datetime>
 
-	</theme>
-	```
+		<image name="background_description" extra="true">
+			<path>./_inc/images/bg_color.png</path>
+			<origin>0 0</origin>
+			<pos>0.37 0.66</pos>
+			<size>0.62 0.25</size>
+			<color>FFFFFF99</color>
+		</image>
+
+			<text name="md_description">
+				<pos>0.38 0.68</pos>
+				<size>0.60 0.21</size>
+				<color>000000</color>
+				<fontPath>./_inc/fonts/Roboto-Light.ttf</fontPath>
+				<fontSize>0.026</fontSize>
+				<alignment>left</alignment>
+				<forceUppercase>0</forceUppercase>
+				<lineSpacing>1.6</lineSpacing>
+			</text>
+
+	</view>
+
+</theme>
+```
 
 The complete `theme.xml`, which is identical in each system folder:
 ```xml
@@ -1484,9 +1457,9 @@ The complete `theme.xml`, which is identical in each system folder:
 
 ## Tips and Tricks
 
-### Toggle Highlighting of Boundary Boxes
+### Keyboard Shortcuts in EmulationStation
 
-When you start EmulationStation with the debug flag on the commandline, you have these keyboard combos available (to be used with _left_ ++ctrl++):
+When you start EmulationStation with the debug flag on the command line, you have these keyboard combos available (to be used with _left_ ++ctrl++):
 
 - ++ctrl+r++: Reload all UI views (system carousel and in-system view)
 - ++ctrl+i++: Toggle visibility the image components (`<image ...>`) boundary boxes
@@ -1497,7 +1470,7 @@ When you start EmulationStation with the debug flag on the commandline, you have
 
 The `<size/>` element takes a pair of values. However, depending on the values of the pair you may also control the layout of the text element. This section will illustrate the different values and their impact on the layout. 
 
-As you may already noticed the size element takes percent values of the actual screensize for _images_. For the layout of _text components_ with a given <size/>, additionally the selected font (its [Glyphs](https://en.wikipedia.org/wiki/Glyph)), the `<fontSize/>` and the defined `<lineSpacing/>` are factors for the layout. The last two values are also expected to be percent values. The glyph values are calculated by ES depending on the `<font/>` the theme has defined.
+As you may have already noticed the size element takes percent values of the actual screen size for _images_. For the layout of _text components_ with a given <size/>, additionally the selected font (its [Glyphs](https://en.wikipedia.org/wiki/Glyph)), the `<fontSize/>` and the defined `<lineSpacing/>` are factors for the layout. The last two values are also expected to be percent values. The glyph values are calculated by ES depending on the `<font/>` the theme has defined.
 
 The pair of values is referenced as `width` (x-value) and `height` (y-value) e.g., `<size>width height</size>`.
 
@@ -1513,7 +1486,7 @@ For your information: The images are taken from the [Epic Noir](https://github.c
   <figcaption>Case 1: Text bounding box <code>height</code> greater than wrapped text height</figcaption>
 </figure>
 
-This shows the theme layout as-is when you check it out from Github. Notice how the "Games Available" bounding box (bbox) and the bbox of the text below overlap (the latter is named long description or `longdescription`). Hovever, the texts do not overlap coincidentially as the bbox for the long description is large enough, and the text is put in the middle of the text bbox by default (instead of top or bottom vertical alignment).
+This shows the theme layout as-is when you check it out from GitHub. Notice how the "Games Available" bounding box (bbox) and the bbox of the text below overlap (the latter is named long description or `longdescription`). However, the texts do not overlap coincidentally as the bbox for the long description is large enough, and the text is put in the middle of the text bbox by default (instead of top or bottom vertical alignment).
 
 This is the respective section in the theme file. Note line #8 and #21 (using same position) and #22 (size of long description):
 
@@ -1543,9 +1516,9 @@ This is the respective section in the theme file. Note line #8 and #21 (using sa
     </text>
 ```
 
-!!! note 
+**Tip**
 
-    All elements with fractions represent percentage values from 0.0 to 1.0. `<fontSize>` and `<lineSpacing>` may also use values greater than 1.0 (100%).
+> All elements with fractions represent percentage values from 0.0 to 1.0. `<fontSize>` and `<lineSpacing>` may also use values greater than 1.0 (100%). You may use absolute pixel values for some elements, but you have to use the [`<resolution/>`] element(https://github.com/RetroPie/EmulationStation/blob/master/THEMES.md#the-resolution-tag) for this.
 
 **Takeaway #1**: If the size is large enough, more precisely the `width` is greater than zero and the `height` is greater than the sum of the `lineHeight`s used for the wrapped text it is wrapped and vertically aligned middle.
 
@@ -1557,7 +1530,7 @@ This is the respective section in the theme file. Note line #8 and #21 (using sa
   <figcaption>Case 2: Text bounding box defines <code>width</code> equal to zero and any <code>height</code> value</figcaption>
 </figure>
 
-The `width` zero defintion in XML (note line #10):
+The `width` zero definition in XML (note line #10):
 
 ```xml linenums="1"
     <text name="longdescription" extra="true">
@@ -1573,9 +1546,9 @@ The `width` zero defintion in XML (note line #10):
     </text>
 ```
 
-!!! note
+**Note**
 
-    The `<pos/>` element (line #9)) has been adapted from the original value to not clash with the bbox of "Games Available".
+> The `<pos/>` element (line #9)) has been adapted from the original value to not clash with the bbox of "Games Available".
 
 **Takeaway #2**: If the `width` of the size is zero, the text will be put on one line and not abbreviated. As the `height` is not interpreted in this case the bbox `height` is set to one `lineHeight` by ES, and the `height` value from the XML file is ignored. The text after the first newline character is cut off. It is not shown in the screenshot, but this cut-off is [implemented in ES](https://github.com/RetroPie/EmulationStation/blob/9afa234f3c779ca23f832141f819886a984c1ee6/es-core/src/components/TextComponent.cpp#L194).
 
@@ -1605,9 +1578,9 @@ Example from the theme file:
 
 **Takeaway #3**: If the `height` is zero the text is wrapped to not exceed the line width, the bbox grows downwards (if needed) while `pos` stays fixed. The actual line width is the product of the font's glyphs, `fontSize` and the display's x-resolution. 
 
-!!! tip "Preferred approach"
+**Tip: Preferred approach**
 
-    This (`height` = 0) makes the intention of the theme layout clear to other users. If you want wrapped multiline text choose this approach.
+> This (`height` = 0) makes the intention of the theme layout clear to other users. If you want wrapped multiline text choose this approach.
 
 #### Case 4: Force Abbreviation
 
@@ -1633,7 +1606,7 @@ This sample in the XML definition (note the small `height` value in line #10):
     </text>
 ```
 
-**Takeaway #4**: When the `height` _evaluates_ (remember how the line height is calculated) to be less than or equal to one `lineHeight` the text will be abbreviated with ellipsis to fit into the width of the bbox. Additionally, text after a newline characters is cut off before abbreviated, if this shortened text fits into one line no ellipsis is added. It can not be shown in a screenshot, but this behaviour is implemented in ES.
+**Takeaway #4**: When the `height` _evaluates_ (remember how the line height is calculated) to be less than or equal to one `lineHeight` the text will be abbreviated with ellipsis to fit into the width of the bbox. Additionally, text after a newline character is cut off before abbreviated, if this shortened text fits into one line no ellipsis is added. It can not be shown in a screenshot, but this behavior is implemented in ES.
 
 #### Case 5: Too Small Height
 
@@ -1643,7 +1616,7 @@ This sample in the XML definition (note the small `height` value in line #10):
   <figcaption>Case 5: Text bounding box defines <code>width</code> greater zero, and <code>height</code> greater than one <code>lineHeight</code> but less than the sum of line heights of the wrapped text</figcaption>
 </figure>
 
-Representation in XML (the  `height` value in line #10 represents a little more than one line height):
+Representation in XML (the `height` value in line #10 represents a little more than one line height):
 
 ```xml
     <text name="longdescription" extra="true">
@@ -1667,14 +1640,14 @@ Congratulations to those that made it this far. It's been a heck of a journey. Y
 
 ## References
 
-- Themes Documentation by original ES author: [Aloshi's ES Themes Reference Documentation](https://github.com/RetroPie/EmulationStation/blob/master/THEMES.md)
-- Spare theme on GitHub: [es-theme-spare](https://github.com/mattrixk/es-theme-spare)
+- Themes Documentation by original ES author: [The ES Themes Reference Documentation](https://github.com/RetroPie/EmulationStation/blob/master/THEMES.md#the-resolution-tag)
+- The Spare theme on GitHub: [es-theme-spare](https://github.com/mattrixk/es-theme-spare)
 - Another theme from the original contributor of this tutorial: [MetaPixel](https://github.com/mattrixk/es-theme-metapixel)
 - The full album of images used in this tutorial: [Imgur](https://imgur.com/a/LjRZk)
 - Fake games Zip archive from this DropBox: [fake_games.zip](https://dl.dropboxusercontent.com/u/14838442/fake-games.zip)
 - Portable EmulationStation by @herb_fargus: [EmulationStation Windows Portable (USB Stick)](https://www.youtube.com/watch?v=oHtCnBiyzOY), [Download the file](https://drive.google.com/file/d/0B2TMeZ6iEFvHYkNrMGVQSldkZ0U/view?usp=sharing)
 - The ES Theme Helper by @Rookervik: [DropBox](https://dl.dropboxusercontent.com/u/60872572/EmulationStation/ES%20Theme%20Helper3.rar)
 - RetroPie EmulationStation Themes Showcase: [ES Themes Showcase](Themes.md)
-- A generic tutorial on how to convert a rasterimage to vector image:
+- A generic tutorial on how to convert a raster image to vector image:
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/q9Fk6OzX86U" title="Tutorial on creating Vector (SVG) logos from Bitmaps (e.g. PNG)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; allowfullscreen"></iframe>
