@@ -35,7 +35,7 @@ It is a simple, clean theme, not very outlandish, but it's enough to teach the e
 
 **Note**
 
-> This tutorial was developed on Windows, but all the main parts (the XML and images) can be done on any Operating System, as long as you can put or assess the files into the `theme` folder on your Raspberry Pi (e.g., with Samba, see [setup](#use-samba-share-of-emulationstations-themes-on-retropie)).
+> This tutorial was developed on Windows, but all the main parts (the XML and images) can be done on any Operating System, as long as you can access and modify files in the `theme` folder on your Raspberry Pi (e.g., with Samba, see [setup](#use-samba-share-of-emulationstations-themes-on-retropie)).
 
 ### What You Will Need
 
@@ -51,7 +51,7 @@ It is a simple, clean theme, not very outlandish, but it's enough to teach the e
 - Any coding experience
     - Again, not essential, but it makes things easier. To be honest, as long as you know that `<tag>` opens a tag (more precisely an XML element) and `</tag>` closes a tag, then you should be fine.
 
-The (bogus) files you will need for this tutorial are listed [here](#references).
+The (sample) files you will need for this tutorial are listed [here](#references).
 
 ### Primer on EmulationStation Views
 
@@ -61,7 +61,7 @@ EmulationStation has three main navigation sections, called _Views_:
   ![Carbon Theme System View](https://i.imgur.com/uTBYI4V.jpg)
   <figcaption>Carbon Theme System View</figcaption>
 </figure>
-The System View is what you see when EmulationStation starts. It has a large white bar along the middle that houses a carousel that shows three System logos at a time.
+The _System View_ is what you see when EmulationStation starts. It has a large white bar along the middle that houses a carousel that shows three System logos at a time.
 
 <figure markdown>
   ![Carbon Theme Basic View](https://i.imgur.com/1C0WpSY.jpg)
@@ -73,7 +73,7 @@ This is a simple game list page. You see this if you haven't scraped any metadat
   ![Carbon Theme Detailed View](https://i.imgur.com/pSHuOXK.jpg)
   <figcaption>Carbon Theme Detailed View</figcaption>
 </figure>
-The Detailed View is what you see if you *have* scraped metadata. Different themes can show different data, in different places or a different order, but every theme can only display these values (along with the Game List):
+The _Detailed View_ is what you see if you *have* scraped metadata. Different themes can show different data, in different places or a different order, but every theme can only display these values (along with the Game List):
 
 - `md_description`
 - `md_developer`
@@ -86,7 +86,7 @@ The Detailed View is what you see if you *have* scraped metadata. Different them
 - `md_rating`
 - `md_releasedate`: Stored as ISO8601 date format e.g., 2023-03-17
 
-Finally, the **Video View** is what you see if your scraped metadata includes videos. The video view is an extension of the Detailed View.  It can display all the values found in the Detailed View along with these additions:
+Finally, the _Video View_ is what you see if your scraped metadata includes videos. The video view is an extension of the Detailed View.  It can display all the values found in the Detailed View along with these additions:
 
 - `md_marquee`
 - `md_video`
@@ -115,27 +115,27 @@ Double click `Launch Portable (Windowed).bat` to start EmulationStation.
 
 ### Use Samba Share of EmulationStation's Themes on RetroPie
 
-You may also edit theme files directly on the Raspberry. However, you should use a wired network connection between your desktop and the Raspberry to enable smooth editing. Open `\\retropie\configs\all\themes` in the Windows File Explorer. You should be able to see (and edit) the currently installed themes of your EmulationStation installation. If you do not see any theme, then install the Spare theme as outlined below. For reloading a theme (see [shortcuts](#keyboard-shortcuts-in-emulationstation)) you should also have a keyboard attached to your RetroPie, and it should be in reach from your desktop system.
+You may also edit theme files directly on the Raspberry. However, you should use a wired network connection between your desktop and the Raspberry to enable smooth editing. Open `\\retropie\configs\all\emulationstation\themes\` in the Windows File Explorer. You should be able to see (and edit) the currently installed themes of your EmulationStation installation. If you do not see any theme, then install the Spare theme as outlined below. For reloading a theme (see [shortcuts](#keyboard-shortcuts-in-emulationstation)) you should also have a keyboard attached to your RetroPie, and it should be in reach from your desktop system.
 
 ## Creating a Theme
 
 We're going to make the theme straight in the Portable EmulationStation's theme folder. Of course, you are free to act directly on the Samba Share, which does not require file copy operations.
 
-If you use the portable EmulationStation on `F:\` drive, so the path to the themes folder would be `F:\emulationstation\\.emulationstation\themes`.
+If you use the portable EmulationStation on `F:\` drive, so the path to the `themes` folder would be `F:\emulationstation\\.emulationstation\themes`.
 
 First, [download the full Spare theme from GitHub](https://github.com/mattrixk/es-theme-spare), so you have the images and fonts you need, and also, so you have something to reference.
 
 We'll start by setting up a simple file structure, with folders for the three console systems; Game Boy (`gb`), Nintendo Entertainment System (`nes`) and Super Nintendo Entertainment System (`snes`).
 
 - Within the themes folder make a folder called `spare`.
-  - In the `spare` folder make a new file called `spare.xml`.
+- In the `spare` folder make a new file called `spare.xml`.
 
 - Within the `spare` folder make folders called `nes`, `snes`, `gb` and `_inc`.
-  - In each of `nes`, `snes`, `gb` make a new file called `theme.xml`.
-  - Also copy the system images from the downloaded file into the system folders
+- In each of `nes`, `snes`, `gb` make a new file called `theme.xml`.
+- Also copy the system images from the downloaded file into the system folders
 
 - `_inc` is your includes folder where you will hold your fonts and theme images. You can call it anything you like. Some other themes use `art`, others use `common`. This tutorial uses `_inc` with an underscore which keeps it at the top of the file tree.
-  - Within `_inc` create two folders, called `fonts` and `images`. Copy the fonts and images from the downloaded file into their respective folders.
+- Within `_inc` create two folders, called `fonts` and `images`. Copy the fonts and images from the downloaded file into their respective folders.
 
 Your folder structure should now look like this:
 
@@ -235,8 +235,8 @@ Take note of how it differs from the blank theme.
 
 - There are now Logos in place of simple folder names.
 - The white carousel and the gray bar below it hadn't changed (unfortunately, they are hard coded into EmulationStation and for the time being are not theme-able).
-- There is a gray background color behind the carousel.
-- There is also a repeating background image behind the carousel.
+- Note the gray background color behind the carousel.
+- This System View has now a repeating background image behind the carousel.
 - There is a semi-transparent white bar behind the _Help Menu_ text in the footer.
 - The _Help Menu_ now has a different color and different font.
 
@@ -274,7 +274,7 @@ We need to add some **Properties** (as XML child elements) to the Element to tel
 - `<tile>`: If the image repeats or not.
 - `<color>`: A color overlay, allowing you to change the color and opacity of the image. Uses four bytes values. The first three bytes represent the Hex color code (one byte per red, green, blue) with the last byte is defining the opacity (alpha channel).
 
-If you want a more detailed explanation of Element Properties you can read [this section](https://github.com/Aloshi/EmulationStation/blob/master/THEMES.md#image) of the EmulationStation themes documentation. Especially if you want to use absolute pixel sizes (see [`<resolution/>` element](https://github.com/RetroPie/EmulationStation/blob/master/THEMES.md#the-resolution-tag))
+If you want a more detailed explanation of Element Properties you can read [this section](https://github.com/RetroPie/EmulationStation/blob/master/THEMES.md#image) of the EmulationStation themes documentation. Especially if you want to use absolute pixel sizes (see [`<resolution/>`](https://github.com/RetroPie/EmulationStation/blob/master/THEMES.md#the-resolution-tag) element).
 
 The first thing we'll do is set the path to the image: You should already have `bg_color.png` in your images' folder. If not, grab it from the Spare theme you downloaded earlier and place it in the `spare/_inc/images` folder. This image is a simple, white 32 x 32px PNG.
 
@@ -344,7 +344,7 @@ Let's choose a light gray color, so it stands out a little, but not too much. Yo
 	<color>d4d4d4</color>
 </image>
 ```
-And if you refresh ES, you'll now see a light grey background behind the Carousel.
+And if you refresh ES, you'll now see a light gray background behind the Carousel.
 
 It should look like this:
 
@@ -371,9 +371,9 @@ What we've done here is:
 
 - Renamed the Element to `background_pattern`.
 - Changed the `<path>` to point to the `bg_pattern.png` image.
-- Changed the `<origin>` to be the center of the image instead of the left-top.
-- Changed the `<pos>` to be the center of the screen instead of the left-top.
-- Changed the `<color>` to be a darker gray.
+- Adapted the `<origin>` to be the center of the image instead of the left-top.
+- Adapted the `<pos>` to be the center of the screen instead of the left-top.
+- Modified the `<color>` to be a darker gray.
 - Added the line `<tile>true</tile>`. This line tells ES to repeat the image over the space instead of stretching it out.
 
 **Note**
@@ -405,8 +405,8 @@ What we've done here is:
 
 - Renamed the Element to `background_help`.
 - Changed the `<path>` to point to the `bg_help.png` image.
-- Changed the `<origin>` to be the left-bottom of the image instead of the left-top.
-- Changed the `<pos>` to be the left-bottom of the screen instead of the left-top.
+- Adapted the `<origin>` to be the left-bottom of the image instead of the left-top.
+- Adapted the `<pos>` to be the left-bottom of the screen instead of the left-top.
 - Changed the `<size>` from '1 1' to '1 0.070'. What this means is, we still want the image to stretch the full width of the screen, but we only want it to be 7% of the screen height.
 - Told the background to be white `FFFFFF`, but we also added `99` to the end of the `<color>` to give it a slight transparency. `FF` is fully opaque and `00` is completely transparent.
 
@@ -445,7 +445,7 @@ It should look like this:
 
 Save `spare.xml`
 
-We're nearly done with the **System View**. All that remains is to add the System **Logos** to the Carousel.
+We're nearly done with the _System View_. All that remains is to add the System **Logos** to the Carousel.
 
 Open `spare/gb/theme.xml`
 
@@ -469,7 +469,7 @@ Save `theme.xml`
 
 Do this for both the `nes` and `snes` folders as well.
 
-Refresh ES and have a look at the **System View**. It should now look like this:
+Refresh ES and have a look at the _System View_. It should now look like this:
 
 <figure markdown>
   ![Spare Theme System View](https://i.imgur.com/72DcwpD.jpg)
@@ -672,7 +672,7 @@ Delete the `<image name="logo_helper" extra="true">` Element to remove the red b
 
 Instead of deleting `<image name="gamelist_helper" extra="true">`, we can use it as the white background:
 
-- Rename it from "gamelist_helper" to "background_gamelist".
+- Rename it from `gamelist_helper` to `background_gamelist`.
 - Change `<color>ff0000aa</color>` to `<color>FFFFFF99</color>`.
 
 You should now be the owner of a shiny new Basic View:
@@ -684,7 +684,7 @@ You should now be the owner of a shiny new Basic View:
 
 ### Detailed View
 
-Now for the Big One; the **Detailed View**. This one isn't too bad mostly, but the metadata can be a real hassle to order, so it looks nice. Each part of the metadata has to be done individually... but we'll jump off that bridge when we come to it.
+Now for the Big One; the _Detailed View_: This one isn't too bad mostly, but the metadata can be a real hassle to order, so it looks nice. Each part of the metadata has to be done individually... but we'll jump off that bridge when we come to it.
 
 This is what we want to end up with:
 
@@ -1106,7 +1106,7 @@ Now just remove the second layer of padding Helpers, and change the main helper 
 
 ### Video View
 
-Now for the **Video View**.  Video support is a newer feature of EmulationStation, so we have to take care to ensure our theme is backward compatible.  Video view is an extension of the **Detailed View** and should only require a few modifications.
+Now for the _Video View_.  Video support is a newer feature of EmulationStation, so we have to take care to ensure our theme is backward compatible.  Video view is an extension of the _Detailed View_ and should only require a few modifications.
 
 The first step is to open `spare.xml`.  We will be moving `md_image` into a separate view definition.  Then we will add `video` to the original `detail` view element.  The result should look like the following.
 ```xml
@@ -1490,7 +1490,7 @@ This shows the theme layout as-is when you check it out from GitHub. Notice how 
 
 This is the respective section in the theme file. Note line #8 and #21 (using same position) and #22 (size of long description):
 
-```xml title="Part of es-theme-epicnoir/themes.xml" linenums="1"
+```xml title="Part of es-theme-epicnoir/themes.xml" linenums="1" hl_lines="8 21 22"
     <text name="systemInfo"> <!-- style for "<n> GAMES AVAILABLE" -->
         <fontPath>./_art/Acre.otf</fontPath>
         <alignment>left</alignment>
@@ -1518,7 +1518,7 @@ This is the respective section in the theme file. Note line #8 and #21 (using sa
 
 **Tip**
 
-> All elements with fractions represent percentage values from 0.0 to 1.0. `<fontSize>` and `<lineSpacing>` may also use values greater than 1.0 (100%). You may use absolute pixel values for some elements, but you have to use the [`<resolution/>`] element(https://github.com/RetroPie/EmulationStation/blob/master/THEMES.md#the-resolution-tag) for this.
+> All elements with fractions represent percentage values from 0.0 to 1.0. `<fontSize>` and `<lineSpacing>` may also use values greater than 1.0 (100%). You may use absolute pixel values for some elements, but you have to use the [`<resolution/>`](https://github.com/RetroPie/EmulationStation/blob/master/THEMES.md#the-resolution-tag) element for this.
 
 **Takeaway #1**: If the size is large enough, more precisely the `width` is greater than zero and the `height` is greater than the sum of the `lineHeight`s used for the wrapped text it is wrapped and vertically aligned middle.
 
@@ -1532,7 +1532,7 @@ This is the respective section in the theme file. Note line #8 and #21 (using sa
 
 The `width` zero definition in XML (note line #10):
 
-```xml linenums="1"
+```xml linenums="1" hl_lines="10" 
     <text name="longdescription" extra="true">
         <fontPath>./_art/Acre.otf</fontPath>
         <alignment>left</alignment>
@@ -1548,7 +1548,7 @@ The `width` zero definition in XML (note line #10):
 
 **Note**
 
-> The `<pos/>` element (line #9)) has been adapted from the original value to not clash with the bbox of "Games Available".
+> The `<pos/>` element (line #9) has been adapted from the original value to not clash with the bbox of "Games Available".
 
 **Takeaway #2**: If the `width` of the size is zero, the text will be put on one line and not abbreviated. As the `height` is not interpreted in this case the bbox `height` is set to one `lineHeight` by ES, and the `height` value from the XML file is ignored. The text after the first newline character is cut off. It is not shown in the screenshot, but this cut-off is [implemented in ES](https://github.com/RetroPie/EmulationStation/blob/9afa234f3c779ca23f832141f819886a984c1ee6/es-core/src/components/TextComponent.cpp#L194).
 
@@ -1562,7 +1562,7 @@ The `width` zero definition in XML (note line #10):
 
 Example from the theme file:
 
-```xml linenums="1"
+```xml linenums="1" hl_lines="10"
     <text name="longdescription" extra="true">
         <fontPath>./_art/Acre.otf</fontPath>
         <alignment>left</alignment>
@@ -1592,7 +1592,7 @@ Example from the theme file:
 
 This sample in the XML definition (note the small `height` value in line #10):
 
-```xml linenums="1"
+```xml linenums="1" hl_lines="10"
     <text name="longdescription" extra="true">
         <fontPath>./_art/Acre.otf</fontPath>
         <alignment>left</alignment>
@@ -1618,7 +1618,7 @@ This sample in the XML definition (note the small `height` value in line #10):
 
 Representation in XML (the `height` value in line #10 represents a little more than one line height):
 
-```xml
+```xml linenums="1" hl_lines="10"
     <text name="longdescription" extra="true">
         <fontPath>./_art/Acre.otf</fontPath>
         <alignment>left</alignment>
