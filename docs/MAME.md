@@ -403,7 +403,7 @@ _**Note**_: The .rc file can be edited manually. Any config can be made ROM-spec
 **MAME Version**: MAME has monthly versioned releases, there is no single version. Version `0.221` was released for May 2020, `0.222` for June 2020, etc.   
 Installing from binary will probably get a version that's a little behind the current MAME, installing from source will always get the latest monthly release.
 
-**_NOTE_**: installing from source requires a lot of RAM and CPU power, on Pi3 and lower end systems could take more than one day - use the binary release when available, instead of installing from source.
+**_NOTE_**: installing from source requires a lot of RAM and CPU power, on Pi4 and lower end systems could take more than one day - use the binary release when available, instead of installing from source.
 
 **MAME Dat Files**: [ProgettoSnaps MAME .dat page](http://www.progettosnaps.net/dats/MAME/) has versions for each MAME release.
 
