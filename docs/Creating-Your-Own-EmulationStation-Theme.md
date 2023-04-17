@@ -79,16 +79,17 @@ The _Detailed View_ is what you see if you *have* scraped metadata. Different th
 - `md_developer`
 - `md_genre`
 - `md_image`
+- `md_thumbnail`
 - `md_lastplayed`: Stored as ISO8601 date time format e.g., 2023-03-17T19:14:12+00:00
 - `md_playcount`
 - `md_players`
 - `md_publisher`
 - `md_rating`
+- `md_marquee`
 - `md_releasedate`: Stored as ISO8601 date format e.g., 2023-03-17
 
-Finally, the _Video View_ is what you see if your scraped metadata includes videos. The video view is an extension of the Detailed View.  It can display all the values found in the Detailed View along with these additions:
+Finally, the _Video View_ is what you see if your scraped metadata includes videos. The video view is an extension of the Detailed View. It can display all the values found in the Detailed View along with a _video_ metadata tag:
 
-- `md_marquee`
 - `md_video`
 
 Extra values can be added by the Theme Maker, but the ones above are the only ones that get scraped by EmulationStation. Any others have to have their data entered by hand. More on the `extra` attribute later, in the [System View Section](#system-view).
