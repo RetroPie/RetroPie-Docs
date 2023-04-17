@@ -5,7 +5,7 @@
 
 Congratulations! You have discovered the wonderful world of RetroPie- your entire childhood is within reach! RetroPie is a combination of multiple projects including [RetroArch](http://www.retroarch.com), [EmulationStation](https://www.emulationstation.org), and many others.
 
-This page is for people just getting started on RetroPie. The easiest way to install RetroPie is the SD image which is a ready to go system built upon top of the Raspberry Pi OS - this is the method described in the following guide. Alternatively, advanced users can install RetroPie [manually](Manual-Installation).
+This page is for people just getting started on RetroPie. The easiest way to install RetroPie is the SD image which is a ready to go system built upon top of the Raspberry Pi OS - this is the method described in the following guide. Alternatively, advanced users can install RetroPie [manually](Manual-Installation.md).
 
 This guide will give you the very basics to get you up and running from a blank MicroSD card to first boot into EmulationStation.
 
@@ -40,7 +40,7 @@ The simplest way to get most of these components is through an all-in-one kit su
 ### Optional
 
 * Raspberry Pi case - **highly recommended**
-* Wifi dongle or ethernet cable to connect to the internet for [Updating](Updating-RetroPie) and [Transferring ROMs](Transferring-Roms) (see [wifi dongle compatible list](http://elinux.org/RPi_USB_Wi-Fi_Adapters). Wifi is built-in for the Pi 3 and later models and will not need a dongle.)
+* Wifi dongle or ethernet cable to connect to the internet for [Updating](Updating-RetroPie.md) and [Transferring ROMs](Transferring-Roms.md) (see [wifi dongle compatible list](http://elinux.org/RPi_USB_Wi-Fi_Adapters). Wifi is built-in for the Pi 3 and later models and will not need a dongle.)
 * USB Keyboard - to help with some configuration that cannot be done with a game controller, or you can use [SSH](SSH)
 
 ## Installation
@@ -85,7 +85,7 @@ See the following diagrams for reference:
 |:---:|
 |![ps3_controller](https://cloud.githubusercontent.com/assets/10035308/22185413/f10f27de-e099-11e6-97a4-ecbbc82c9e46.png)|
 
-More info at [RetroArch Controller Configuration](RetroArch-Configuration)
+More info at [RetroArch Controller Configuration](RetroArch-Configuration.md)
 
 ### Hotkey
 
@@ -105,7 +105,7 @@ The following chart shows the default hotkey combinations.
 | Hotkey+X | RGUI Menu |
 | Hotkey+B | Reset |
 
-For more information, see [Hotkeys](RetroArch-Configuration#hotkeys)
+For more information, see [Hotkeys](RetroArch-Configuration.md#hotkeys)
 
 **When you get to "OK" at the end, press the button you have configured as "A" (East) to complete this step**.
 
@@ -118,11 +118,11 @@ For more information, see [Hotkeys](RetroArch-Configuration#hotkeys)
 
 ## Transferring ROMs
 
-You will not see any game systems (NES, n64, Playstation, etc) on the system list until you add ROMs! Visit the [Transferring ROMs](Transferring-Roms) page to learn how to transfer ROMs to RetroPie.
+You will not see any game systems (NES, n64, Playstation, etc) on the system list until you add ROMs! Visit the [Transferring ROMs](Transferring-Roms.md) page to learn how to transfer ROMs to RetroPie.
 
 ## Audio
 
-In general RetroPie audio will work out-of-the-box without any tweaking if using HDMI, but if you have audio issues you should follow the instructions on the [Sound Issues Page](Sound-Issues) to fix them. You will most likely need to visit this page if you are using a USB audio device, or if you are using an aftermarket RPi HAT add-on audio device (such as a Justboom sound card).
+In general RetroPie audio will work out-of-the-box without any tweaking if using HDMI, but if you have audio issues you should follow the instructions on the [Sound Issues Page](Sound-Issues.md) to fix them. You will most likely need to visit this page if you are using a USB audio device, or if you are using an aftermarket RPi HAT add-on audio device (such as a Justboom sound card).
 
 ## PLAY!
 
@@ -130,13 +130,13 @@ After you've transferred your ROMs, you need to restart EmulationStation in orde
 
 ## Additional Setup Options
 
-* [Configure WiFi](Wifi)
-* [Enable SSH](SSH)
+* [Configure WiFi](Wifi.md)
+* [Enable SSH](SSH.md)
 * Configure more controllers. This can be done after plugging in the new controller and pressing *Start* on your controller and selecting *Configure Input*
 * In RetroPie, not everything is installed by default. The pre-made images contain the best-working emulators for the more common systems supported by the hardware. This should cover typical use, but if you want to install additional emulators or ports, the [Updating RetroPie](https://retropie.org.uk/docs/Updating-RetroPie/#updatinginstalling-individual-packages) page has this information.
-* [Cheat codes](Cheats)!
+* [Cheat codes](Cheats.md)!
 
-See the rest of the [RetroPie documentation](https://retropie.org.uk/docs/) for more detailed information on individual emulators, advanced settings, etc. If you're having trouble, you may find answers in the [FAQ](FAQ). Also, the RetroPie community is very helpful on the [RetroPie forum](https://retropie.org.uk/forum/).
+See the rest of the [RetroPie documentation](https://retropie.org.uk/docs/) for more detailed information on individual emulators, advanced settings, etc. If you're having trouble, you may find answers in the [FAQ](FAQ.md). Also, the RetroPie community is very helpful on the [RetroPie forum](https://retropie.org.uk/forum/).
 
 ## One more thing...
 
