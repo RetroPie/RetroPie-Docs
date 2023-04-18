@@ -195,6 +195,24 @@ but in the generated docs it will show
 :exclamation:
 ```
 
+### Images
+
+Images can be added using the standard Markdown syntax:
+
+``` md
+![Image Title](path/url/to/image)
+```
+
+To add a caption to the image, the `figure markdown` tag can be used:
+
+``` md
+<figure markdown>
+  ![Image Title](path)
+  <figcaption>Image caption</figcaption>
+</figure>
+```
+
+The `figcaption` tag accepts the usual Markdown text styling options, so the caption text can be bolded/emphasized/underlined/etc.
 ### Comments
 
 This is a comment:
