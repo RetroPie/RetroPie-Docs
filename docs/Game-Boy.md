@@ -108,27 +108,29 @@ You can define different palettes for specific games by creating a .pal file in 
 
 ### Using _lr-tgbdual_
 
- To play two-player link cable games with _lr-tgbdual_, turn on the **Link cable emulation** option from the [Core Options](RetroArch-Core-Options#setting-core-options) and restart the game. Two synced game screens will be displayed side-by-side by default. Player one is able to control the left screen, while player two controls the right, but the screens can be switched using the **Screen layout** [core option](RetroArch-Core-Options#setting-core-options).
- 
- The above configuration will enable playing the same game using link cable emulation, but if two different games need to be linked, the process is a bit more involved and it involves setting up the games through the *Subsystems* RetroArch menu. Here's a rundown of the steps needed:
-    
-   * Start a Gameboy game using _lr-tgbdual_ (doesn't have to be one of the games linked). Make sure the **Link cable emulation** [core option](RetroArch-Core-Options#setting-core-options) is enabled and the ROM files for the games to be linked are **not** zipped.
-   * Open the RetroArch menu and then press _back_ (mapped to the **B** button) to access the main menu
-   * Open the _Subsystems_ menu and then choose _Load 2 Player Game Boy Link *_. A file browser menu will open to choose the 1st game ROM file
-   * Open again the _Susystems_ menu and choose _Load 2 Player Game Boy Link *_. A file browser menu will open to choose the 2nd game ROM file
-   * Open a 3rd time the _Subsystems_ menu and choose the _Start 2 Player Game Boy Link *_ option. This will start restart the core with the 2 ROM files loaded side-by-side with link cable emulation enabled
- 
+To play two-player link cable games with _lr-tgbdual_, turn on the **Link cable emulation** option from the [Core Options](RetroArch-Core-Options#setting-core-options) and restart the game. Two synced game screens will be displayed side-by-side by default. Player one is able to control the left screen, while player two controls the right, but the screens can be switched using the **Screen layout** [core option](RetroArch-Core-Options#setting-core-options).
+
+The above configuration will enable playing the same game using link cable emulation, but if two different games need to be linked, the process is a bit more involved and it involves setting up the games through the *Subsystems* RetroArch menu. Here's a rundown of the steps needed:
+
+* Start a Gameboy game using _lr-tgbdual_ (doesn't have to be one of the games linked). Make sure the **Link cable emulation** [core option](RetroArch-Core-Options#setting-core-options) is enabled and the ROM files for the games to be linked are **not** zipped
+* Open the RetroArch menu and then press _back_ (mapped to the **B** button) to access the main menu
+* Open the _Subsystems_ menu and then choose _Load 2 Player Game Boy Link *_. A file browser menu will open to choose the 1st game ROM file
+* Open again the _Susystems_ menu and choose _Load 2 Player Game Boy Link *_. A file browser menu will open to choose the 2nd game ROM file
+* Open a 3rd time the _Subsystems_ menu and choose the _Start 2 Player Game Boy Link *_ option. This will start restart the core with the 2 ROM files loaded side-by-side with link cable emulation enabled
+
 ### Using _lr-gambatte_
 To play two-player link cable games with lr-gambatte, two RetroPie systems in the same network are needed.
 Change the following **Core Options** to the values below (see [Setting Core Options](RetroArch-Core-Options#setting-core-options)):
 
 System 1 (Server, e.g. 192.168.0.1):
+
 | Core Option | Value |
 | :---: | :---: |
 | gambatte_gb_link_mode | Network Server |
 | gambatte_gb_link_network_port | 56400 |
 
 System 2 (Client):
+
 | Core Option | Value |
 | :---: | :---: |
 | gambatte_gb_link_mode | Network Client |
@@ -149,6 +151,7 @@ System 2 (Client):
 For older versions of lr-gambatte use this config parameters: 
 
 System 1 (Server, e.g. 192.168.0.1):
+
 | Core Option | Value |
 | :---: | :---: |
 | Link Mode | Network Server |
@@ -159,6 +162,7 @@ System 1 (Server, e.g. 192.168.0.1):
 | Network Server IP Octet4 | 0 |
 
 System 2 (Client):
+
 | Core Option | Value |
 | :---: | :---: |
 | Link Mode | Network Client |
