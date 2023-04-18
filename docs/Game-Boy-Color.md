@@ -36,11 +36,11 @@ Place the BIOS files in
 ```
 /home/pi/RetroPie/BIOS
 ```
+
 | BIOS |  MD5 Checksum |
 | :---: | :---: |
 | **gbc_bios.bin** | `dbfce9db9deaa2567f6a84fde55f9680` |
 | **sgb_bios.bin** | `d574d4f9c12f305074798f54c091a8b4` |
-
 
 ## Controls
 
