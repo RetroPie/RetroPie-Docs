@@ -260,7 +260,7 @@ On sites like [GameFAQs](http://gamefaqs.com/) you can find many save files for 
 
 One such tool is [Memory Card Manager 1.4 by Aldo Vargas](http://www.aldostools.org/memmanager.html). Download this and `MSVBVM50.DLL`, and run `MemManager.exe`:
 
-![MemManager Screenshot](https://i.imgur.com/AqxfVpy.png)
+![MemManager Screenshot](images/emulators/AqxfVpy.png)
 
 Press the **New** button at the bottom and create a file the same name as your PSX ROM. For example, if you are using `Diablo.pbp` or `Diablo.cue` then call the new memory card file `Diablo.mcr`. Ensure you select the **Other - AdriPSX, FPSE, pcsx** format in the dropdown menu, then press **Save**.
 

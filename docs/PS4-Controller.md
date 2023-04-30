@@ -1,4 +1,4 @@
-![Dualshock 4 controller](http://i.imgur.com/YgFJL00.jpg)
+![Dualshock 4 controller](images/controllers/YgFJL00.jpg)
 
 The Sony PlayStation 4 Dualshock 4 is a very well made controller. It feels solid and has an excellent D-Pad. It has wireless functionality and can charge its internal battery via Micro USB.
 
@@ -62,7 +62,7 @@ If you are concerned about power usage, charging the Dualshock battery can use u
 
 ### Sony Dualshock USB Wireless Adapter
 
-![Sony Dualshock USB Wireless Adapter](http://i.imgur.com/r1ux66d.jpg)
+![Sony Dualshock USB Wireless Adapter](images/controllers/r1ux66d.jpg)
 
 This add-on product made by Sony does the Bluetooth pairing in hardware. To the Raspberry Pi and RetroPie, the controller appears as a regular wired USB controller and no additional software setup is required.
 

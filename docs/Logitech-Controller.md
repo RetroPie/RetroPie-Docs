@@ -2,11 +2,11 @@ The Logitech Gamepad F310 and Logitech Gamepad F710 are a good choice of control
 
 The F310 is wired with a 1.8m (6 ft) USB cable.
 
-![Logitech Gamepad F310](http://i.imgur.com/KN6TgtP.png)
+![Logitech Gamepad F310](images/controllers/KN6TgtP.png)
 
 The F710 is wireless with a range of at least 6m (20ft). It uses a small USB dongle for wireless signal, the dongle can be stored inside the controller if you wish to unplug it. Power is provided by 2x AA batteries. The controller comes with a 1.5m (5 ft) USB extension cable allowing relocation of the receiver for good signal strength if your Pi is hidden inside a busy TV cabinet.
 
-![Logitech Gamepad F710](http://i.imgur.com/2z6Kq9E.png)
+![Logitech Gamepad F710](images/controllers/2z6Kq9E.png)
 
 Both controller models feature a **Mode** switch which swaps the D-pad and left analog stick in hardware when enabled. This is a great feature when playing games where a joystick offers more precision than a D-pad such as fighters, beat-em-ups, and shmups.
 

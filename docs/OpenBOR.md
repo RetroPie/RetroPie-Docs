@@ -1,7 +1,7 @@
 
 ***
 
-![](http://i.imgur.com/QSPlNYP.png)
+![](images/emulators/QSPlNYP.png)
 
 ***
 _OpenBOR is the open source continuation of Beats of Rage - a 2D sidescrolling beat em up game engine._

@@ -17,17 +17,17 @@ After the exercise with three theme-layouts for these systems you should have go
 The theme you are going to make will look like this:
 
 <figure markdown>
-  ![Spare Theme System View](https://i.imgur.com/72DcwpD.jpg)
+  ![Spare Theme System View](images/es-themes/72DcwpD.jpg)
   <figcaption>Spare Theme System View</figcaption>
 </figure>
 
 <figure markdown>
-  ![Spare Theme Basic View](https://i.imgur.com/lSIjOyk.jpg)
+  ![Spare Theme Basic View](images/es-themes/lSIjOyk.jpg)
   <figcaption>Spare Theme Basic View</figcaption>
 </figure>
 
 <figure markdown>
-  ![Spare Theme Detailed View](https://i.imgur.com/r5SHwkc.jpg)
+  ![Spare Theme Detailed View](images/es-themes/r5SHwkc.jpg)
   <figcaption>Spare Theme Detailed View</figcaption>
 </figure>
 
@@ -58,19 +58,19 @@ The (sample) files you will need for this tutorial are listed [here](#references
 EmulationStation has three main navigation sections, called _Views_:
 
 <figure markdown>
-  ![Carbon Theme System View](https://i.imgur.com/uTBYI4V.jpg)
+  ![Carbon Theme System View](images/es-themes/uTBYI4V.jpg)
   <figcaption>Carbon Theme System View</figcaption>
 </figure>
 The _System View_ is what you see when EmulationStation starts. It has a large white bar along the middle that houses a carousel that shows three System logos at a time.
 
 <figure markdown>
-  ![Carbon Theme Basic View](https://i.imgur.com/1C0WpSY.jpg)
+  ![Carbon Theme Basic View](images/es-themes/1C0WpSY.jpg)
   <figcaption>Carbon Theme Basic View</figcaption>
 </figure>
 This is a simple game list page. You see this if you haven't scraped any metadata for that system.
 
 <figure markdown>
-  ![Carbon Theme Detailed View](https://i.imgur.com/pSHuOXK.jpg)
+  ![Carbon Theme Detailed View](images/es-themes/pSHuOXK.jpg)
   <figcaption>Carbon Theme Detailed View</figcaption>
 </figure>
 The _Detailed View_ is what you see if you *have* scraped metadata. Different themes can show different data, in different places or a different order, but every theme can only display these values (along with the Game List):
@@ -141,7 +141,7 @@ We'll start by setting up a simple file structure, with folders for the three co
 Your folder structure should now look like this:
 
 <figure markdown>
-  ![Folder Structure](https://i.imgur.com/BlJ48ai.jpg)
+  ![Folder Structure](images/es-themes/BlJ48ai.jpg)
   <figcaption>Folder Structure</figcaption>
 </figure>
 
@@ -207,17 +207,17 @@ Save `theme.xml`
 If you switch EmulationStation to the Spare theme now, this is what you should see:
 
 <figure markdown>
-  ![Blank System View](https://i.imgur.com/0wmJRci.jpg)
+  ![Blank System View](images/es-themes/0wmJRci.jpg)
   <figcaption>Blank System View</figcaption>
 </figure>
 
 <figure markdown>
-  ![Blank Basic View](https://i.imgur.com/9yxamrj.jpg)
+  ![Blank Basic View](images/es-themes/9yxamrj.jpg)
   <figcaption>Blank Basic View</figcaption>
 </figure>
 
 <figure markdown>
-  ![Blank Detailed View](https://i.imgur.com/lAdXXMF.jpg)
+  ![Blank Detailed View](images/es-themes/lAdXXMF.jpg)
   <figcaption>Blank Detailed View</figcaption>
 </figure>
 
@@ -228,7 +228,7 @@ What you are seeing are the EmulationStation defaults. We haven't yet told Emula
 Now let's create the System View.
 
 <figure markdown>
-  ![Spare Theme System View](https://i.imgur.com/72DcwpD.jpg)
+  ![Spare Theme System View](images/es-themes/72DcwpD.jpg)
   <figcaption>Spare Theme System View</figcaption>
 </figure>
 
@@ -350,7 +350,7 @@ And if you refresh ES, you'll now see a light gray background behind the Carouse
 It should look like this:
 
 <figure markdown>
-  ![Spare Theme System View - Background Colour](https://i.imgur.com/AP9MMrP.jpg)
+  ![Spare Theme System View - Background Colour](images/es-themes/AP9MMrP.jpg)
   <figcaption>Spare Theme System View - Background Colour</figcaption>
 </figure>
 
@@ -384,7 +384,7 @@ What we've done here is:
 It should look like this:
 
 <figure markdown>
-  ![Spare Theme System View - Background Pattern](https://i.imgur.com/9Y6TJVb.jpg)
+  ![Spare Theme System View - Background Pattern](images/es-themes/9Y6TJVb.jpg)
   <figcaption>Spare Theme System View - Background Pattern</figcaption>
 </figure>
 
@@ -414,7 +414,7 @@ What we've done here is:
 It should look like this:
 
 <figure markdown>
-  ![Spare Theme System View - Help Background](https://i.imgur.com/BkmG3Ql.jpg)
+  ![Spare Theme System View - Help Background](images/es-themes/BkmG3Ql.jpg)
   <figcaption>Spare Theme System View - Help Background</figcaption>
 </figure>
 
@@ -440,7 +440,7 @@ This changes:
 It should look like this:
 
 <figure markdown>
-  ![Spare Theme System View - Help Font](https://i.imgur.com/lVv0QRa.jpg)
+  ![Spare Theme System View - Help Font](images/es-themes/lVv0QRa.jpg)
   <figcaption>Spare Theme System View - Help Font</figcaption>
 </figure>
 
@@ -473,7 +473,7 @@ Do this for both the `nes` and `snes` folders as well.
 Refresh ES and have a look at the _System View_. It should now look like this:
 
 <figure markdown>
-  ![Spare Theme System View](https://i.imgur.com/72DcwpD.jpg)
+  ![Spare Theme System View](images/es-themes/72DcwpD.jpg)
   <figcaption>Spare Theme System View</figcaption>
 </figure>
 
@@ -482,7 +482,7 @@ Refresh ES and have a look at the _System View_. It should now look like this:
 The Basic View should look like this:
 
 <figure markdown>
-  ![Spare Theme Basic View](https://i.imgur.com/lSIjOyk.jpg)
+  ![Spare Theme Basic View](images/es-themes/lSIjOyk.jpg)
   <figcaption>Spare Theme Basic View</figcaption>
 </figure>
 
@@ -566,7 +566,7 @@ That means anything within that `<view>` will apply to all four views.
 The Basic View should now look like this:
 
 <figure markdown>
-  ![Spare Theme Basic View - Background](https://i.imgur.com/HAGiZFs.jpg)
+  ![Spare Theme Basic View - Background](images/es-themes/HAGiZFs.jpg)
   <figcaption>Spare Theme Basic View - Background</figcaption>
 </figure>
 
@@ -587,7 +587,7 @@ Expand `<view name="basic"></view>` and insert the following:
 This places a white box across the top of the screen that is 100% of the screen in width and 18% of the screen in height:
 
 <figure markdown>
-  ![Spare Theme Basic View - Logo Background](https://i.imgur.com/NSqdR7J.jpg)
+  ![Spare Theme Basic View - Logo Background](images/es-themes/NSqdR7J.jpg)
   <figcaption>Spare Theme Basic View - Logo Background</figcaption>
 </figure>
 
@@ -609,7 +609,7 @@ The concept of **Helper Boxes**. These are just semi-transparent colored boxes t
 
 Like this:
 <figure markdown>
-  ![Spare Theme Basic View - Logo Helper](https://i.imgur.com/pAQ9pTf.jpg)
+  ![Spare Theme Basic View - Logo Helper](images/es-themes/pAQ9pTf.jpg)
   <figcaption>Spare Theme Basic View - Logo Helper</figcaption>
 </figure>
 
@@ -624,7 +624,7 @@ Now we can place the logo inside that box:
 Notice we are setting the `<origin>` and `<pos>` the same as "logo_helper". Instead of `<size>` we have used `<maxSize>`, but kept the numbers the same. If we used `<size>` the logo would stretch to fill the box, lose aspect ratio and look weird. Using `<maxSize>` forces the image to maintain aspect ratio. It will grow until either the sides or top/bottom hit the edge and then stop.
 
 <figure markdown>
-  ![Spare Theme Basic View - Logo](https://i.imgur.com/ds7R8Ho.jpg)
+  ![Spare Theme Basic View - Logo](images/es-themes/ds7R8Ho.jpg)
   <figcaption>Spare Theme Basic View - Logo</figcaption>
 </figure>
 
@@ -640,7 +640,7 @@ We'll use another Helper Box to get the right spacing for the Gamelist:
 ```
 
 <figure markdown>
-  ![Spare Theme Basic View - Gamelist Helper](https://i.imgur.com/UPjyJwH.jpg)
+  ![Spare Theme Basic View - Gamelist Helper](images/es-themes/UPjyJwH.jpg)
   <figcaption>Spare Theme Basic View - Gamelist Helper</figcaption>
 </figure>
 
@@ -663,7 +663,7 @@ Now we know the size for the Gamelist:
 - `<secondaryColor>` is the color of any folders in your Gamelist. Set here to a mid-point gray.
 
 <figure markdown>
-  ![Spare Theme Basic View - Gamelist](https://i.imgur.com/8SDAVnh.jpg)
+  ![Spare Theme Basic View - Gamelist](images/es-themes/8SDAVnh.jpg)
   <figcaption>Spare Theme Basic View - Gamelist</figcaption>
 </figure>
 
@@ -679,7 +679,7 @@ Instead of deleting `<image name="gamelist_helper" extra="true">`, we can use it
 You should now be the owner of a shiny new Basic View:
 
 <figure markdown>
-  ![Spare Theme Basic View - Complete](https://i.imgur.com/lSIjOyk.jpg)
+  ![Spare Theme Basic View - Complete](images/es-themes/lSIjOyk.jpg)
   <figcaption>Spare Theme Basic View - Complete</figcaption>
 </figure>
 
@@ -690,14 +690,14 @@ Now for the Big One; the _Detailed View_: This one isn't too bad mostly, but the
 This is what we want to end up with:
 
 <figure markdown>
-  ![Spare Theme Detailed View - Complete](https://i.imgur.com/r5SHwkc.jpg)
+  ![Spare Theme Detailed View - Complete](images/es-themes/r5SHwkc.jpg)
   <figcaption>Spare Theme Detailed View - Complete</figcaption>
 </figure>
 
 However, it starts off looking like this:
 
 <figure markdown>
-  ![Spare Theme Detailed View - Background](https://i.imgur.com/AE3ekgG.jpg)
+  ![Spare Theme Detailed View - Background](images/es-themes/AE3ekgG.jpg)
   <figcaption>Spare Theme Detailed View - Background</figcaption>
 </figure>
 
@@ -748,7 +748,7 @@ Add this code to `<view name="detailed"></view>`:
 Which makes it look like this:
 
 <figure markdown>
-  ![Spare Theme Detailed View - Helpers](https://i.imgur.com/AEvEJlx.jpg)
+  ![Spare Theme Detailed View - Helpers](images/es-themes/AEvEJlx.jpg)
   <figcaption>Spare Theme Detailed View - Helpers</figcaption>
 </figure>
 
@@ -799,7 +799,7 @@ Now we want to add in some more Helper boxes within these, so the content will h
 ```
 
 <figure markdown>
-  ![Spare Theme Detailed View - Helpers Padding](https://i.imgur.com/l79clQi.jpg)
+  ![Spare Theme Detailed View - Helpers Padding](images/es-themes/l79clQi.jpg)
   <figcaption>Spare Theme Detailed View - Helpers Padding</figcaption>
 </figure>
 
@@ -818,7 +818,7 @@ Move the Logo:
 </image>
 ```
 <figure markdown>
-  ![Spare Theme Detailed View - Logo](https://i.imgur.com/cK7SobG.jpg)
+  ![Spare Theme Detailed View - Logo](images/es-themes/cK7SobG.jpg)
   <figcaption>Spare Theme Detailed View - Logo</figcaption>
 </figure>
 
@@ -831,7 +831,7 @@ Now the Image:
 </image>
 ```
 <figure markdown>
-  ![Spare Theme Detailed View - Image](https://i.imgur.com/7rTdbH0.jpg)
+  ![Spare Theme Detailed View - Image](images/es-themes/7rTdbH0.jpg)
   <figcaption>Spare Theme Detailed View - Image</figcaption>
 </figure>
 
@@ -850,7 +850,7 @@ The Gamelist:
 </textlist>
 ```
 <figure markdown>
-  ![Spare Theme Detailed View - Gamelist](https://i.imgur.com/eCn9Zdf.jpg)
+  ![Spare Theme Detailed View - Gamelist](images/es-themes/eCn9Zdf.jpg)
   <figcaption>Spare Theme Detailed View - Gamelist</figcaption>
 </figure>
 
@@ -869,7 +869,7 @@ The Description:
 
 ```
 <figure markdown>
-  ![Spare Theme Detailed View - Description](https://i.imgur.com/mNzCWPS.jpg)
+  ![Spare Theme Detailed View - Description](images/es-themes/mNzCWPS.jpg)
   <figcaption>Spare Theme Detailed View - Description</figcaption>
 </figure>
 
@@ -1097,7 +1097,7 @@ This is the XML excerpt to place the metadata as shown in this tutorial (long XM
 That comes out looking like this:
 
 <figure markdown>
-  ![Spare Theme Detailed View - Metadata Helpers](https://i.imgur.com/h2uuxB8.jpg)
+  ![Spare Theme Detailed View - Metadata Helpers](images/es-themes/h2uuxB8.jpg)
   <figcaption>Spare Theme Detailed View - Metadata Helpers</figcaption>
 </figure>
 
@@ -1188,7 +1188,7 @@ The final step is to ensure backward compatibility with earlier versions of Emul
 You're all done. Congratulations!
 
 <figure markdown>
-  ![Spare Theme Detailed View - Complete](https://i.imgur.com/r5SHwkc.jpg)
+  ![Spare Theme Detailed View - Complete](images/es-themes/r5SHwkc.jpg)
   <figcaption>Spare Theme Detailed View - Complete</figcaption>
 </figure>
 
