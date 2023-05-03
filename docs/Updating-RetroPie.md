@@ -69,7 +69,9 @@ The Package Help for each emulator should show you:
 ## Binary vs Source updates
 
 ### Binary
-Updating from binary gets the pre-compiled version of the package(s). It is fast, and will typically be a known-good version. Binaries are typically updated every RetroPie release. It is the suggested method unless you have a specific reason for needing the latest bleeding-edge version. **Note:** Binary versions are not available for all platforms/packages.
+Updating from binary gets the pre-compiled version of the package(s). It is fast, and will typically be a known-good version. Binaries are typically updated every RetroPie release. It is the recommended method to install/update unless you have a specific reason for needing the latest bleeding-edge version. 
+
+**Note:** Binary versions are not available for all platforms/packages.
 
 ### Source
 Updating from source downloads the latest source code, and builds the binary directly on your system. This takes much longer - hours, even days, depending on the system and package(s). It is suggested only if you require a specific fix that is not available as a binary.
