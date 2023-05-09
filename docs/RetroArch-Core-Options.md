@@ -4,7 +4,7 @@ RetroArch Cores (emulators) typically have options unique to them, known as Core
 
 ### Setting Core Options
 
-Whilst a ROM for the Core in question is running, enter the RGUI via holding player 1's [Hotkey](Controller-Configuration#hotkey) combination **Hotkey+X**. This puts you in the **Quick Menu**. Navigate down to the **Options** sub-menu and press **RetroPad A** (typically the east action button) to confirm.
+Whilst a ROM for the Core in question is running, enter the RGUI via holding player 1's [Hotkey](Controller-Configuration#hotkey) combination **Hotkey+X**. This puts you in the **Quick Menu**. Navigate down to the **Core Options** sub-menu and press **RetroPad A** (typically the east action button) to confirm.
 
 Within this sub-menu are all the options available to that Core. Navigate to the one you want and press left and right to select the desired value. To apply, exit the RGUI using the previous combo. Some options will require you to restart the ROM to take effect. Core Options are saved automatically when you exit the ROM.
 
@@ -15,9 +15,9 @@ You may prefer to apply Core Options to a specific ROM, and not for all ROMs wit
 ```
 /opt/retropie/configs/all/retroarch/config/core
 ```
-(where `core` is the name of the Core)
+(where `core` is the name of the libretro Core)
 
-The file will be `ROMname.opt`. To remove the configuration, delete the file.
+The file will be `ROMname.opt`. To remove the configuration, delete the file or use the **Manage Core Options** submenu to delete it.
 
 ### retroarch-core-options.cfg
 
