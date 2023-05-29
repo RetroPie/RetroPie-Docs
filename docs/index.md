@@ -6,7 +6,7 @@
 
 ## What is RetroPie?
 
-RetroPie allows you to turn your Raspberry Pi or PC into a retro-gaming machine. It builds upon Raspbian, EmulationStation, RetroArch and many other projects to enable you to play your favourite Arcade, home-console, and classic PC games with the minimum set-up. For power users it also provides a large variety of configuration tools to customise the system as you want.
+RetroPie allows you to turn your Raspberry Pi or PC into a retro-gaming machine. It builds upon Raspberry Pi OS (Raspbian), EmulationStation, RetroArch and many other projects to enable you to play your favourite Arcade, home-console, and classic PC games with the minimum set-up. For power users it also provides a large variety of configuration tools to customise the system as you want.
 
 RetroPie sits on top of a full OS, you can install it on an existing Raspbian, or start with the RetroPie SD image and add additional software later. It's up to you. 
 
