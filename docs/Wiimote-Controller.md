@@ -73,7 +73,7 @@ You should get something similar to the below output which returns that the blue
 
 For every wiimote, we need one wminput command to map the wiimote (and the classic controller) buttons to something emulationstation and the emulators can work with. wminput comes with configuration files (in directory /etc/cwiid/wminput). I created my own configuration file, which works if you use a wiimote with or without a classic controller. Create the file wminput which will reside in our pi's home directory:
 ```shell
-tee /home/pi/mywminput << EOF
+sudo nano /home/pi/mywminput
 # Classic-Controller
 Classic.Dpad.X = ABS_HAT0X
 Classic.Dpad.Y = -ABS_HAT0Y
@@ -107,7 +107,6 @@ Wiimote.2		= BTN_Y
 # Nunchuk
 Nunchuk.C = BTN_C
 Nunchuk.Z = BTN_Z
-EOF
 ```
 If you want your WiiMotes giving a connection status, just add an additional line to your `mywminput` file:
 ```shell
