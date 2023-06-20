@@ -100,9 +100,9 @@ Some examples of what can be done with these scripts:
 
 ## runcommand-menu custom scripts
 
-Since version 4.2.8 runcommand menu creates an option named **User Menu** where is possible to choose a custom script to launch. The custom scripts must be placed at `/opt/retropie/configs/all/runcommand-menu` and file name must end with `.sh`.
+Since version 4.2.8 runcommand menu creates an option named **User Menu** where it is possible to choose a custom script to launch. The custom scripts must be placed at `/opt/retropie/configs/all/runcommand-menu` and file name must end with `.sh`.
 
-Useful data are passed as arguments to the custom scripts in the same way they are passed for [runcommand-onstart/onend scripts](#runcommand-onstart-and-runcommand-onend-scripts).
+Useful data is passed as arguments to the custom scripts in the same way they are passed for [runcommand-onstart/onend scripts](#runcommand-onstart-and-runcommand-onend-scripts).
 
 What happens after the end of a custom script execution depends on the exit status:
 
