@@ -10,11 +10,9 @@ You first need to open the RGUI. There are two ways of accessing the RGUI:
 or
 - [Hotkey combination](Controller-Configuration#hotkey) **Hotkey+X** to open the RGUI from within a game
 
-If you haven't done so already, you'll need to enable the advanced settings by navigating to **Settings >> User Interface >> Show Advanced Settings**, then enabling the Online Updater in **View >> Show Online Updater**
+If you haven't done so already, you'll need to enable the advanced settings by navigating to **Settings >> User Interface >> Show Advanced Settings**, then enabling the Online Updater in **Settings >> User Interface >> Menu Item Visibility** by turning ON the **Show 'Online Updater'** option.
 
-Next, navigate to **Online Updater >> Update Cheats**
-
-this will download a set of preconfigured cheat files for many games into `/opt/retropie/configs/all/retroarch/cheats`
+Next, navigate to **Online Updater >> Update Cheats** and this will download a set of preconfigured cheat files for many games into `/opt/retropie/configs/all/retroarch/cheats`
 
 ### Enable Cheats
 
