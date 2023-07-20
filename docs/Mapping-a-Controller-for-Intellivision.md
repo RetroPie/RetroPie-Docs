@@ -275,4 +275,4 @@ The parameters above can be combined as needed.  As an example, adding the follo
 <pre>jzintv-voice-plus = "/opt/retropie/emulators/jzintv/bin/jzintv -p /home/pi/RetroPie/BIOS --gfx-palette=/home/pi/RetroPie/roms/intellivision/gfx-default.gfx --js0="ac,push=30,rels=25" --js1="ac,push=30,rels=25" --kbdhackfile=/home/pi/RetroPie/roms/intellivision/hackfile.cfg %ROM%" -z4 -f1 -q -v1 -s0</pre>
 ## Pre-Built Customized Keyboard Hack and Configuration Files
 
-A library of customized keyboard hack, configuration, palette, controller card, and control description files for 140+ Intellivision games can be found here (LINK COMING SOON).
+A library of customized keyboard hack, configuration, palette, controller card, and control description files for 150+ Intellivision games can be found [here](https://github.com/ts-x4/jzIntv_on_RetroPie/tree/master/kdb).
