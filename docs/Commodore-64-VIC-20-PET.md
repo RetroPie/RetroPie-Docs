@@ -96,7 +96,7 @@ To select the emulated system, the [Runcommand Launch Menu](Runcommand) can be u
 
 | Filename                     | Description                  | MD5                              |
 |:-----------------------------|:-----------------------------|:---------------------------------|
-| JiffyDOS_C64.bin             | JiffyDOS C64 Kernel          | be09394f0576cf81fa8bacf634daf9a2 |
+| JiffyDOS_C64.bin             | JiffyDOS C64 Kernal          | be09394f0576cf81fa8bacf634daf9a2 |
 | JiffyDOS_1541-II.bin         | JiffyDOS 1541 drive BIOS     | 1b1e985ea5325a1f46eb7fd9681707bf |
 | JiffyDOS_1571_repl310654.bin | JiffyDOS 1571 drive BIOS     | 41c6cc528e9515ffd0ed9b180f8467c0 |
 | JiffyDOS_1581.bin            | JiffyDOS 1581 drive BIOS     | 20b6885c6dc2d42c38754a365b043d71 |
