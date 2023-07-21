@@ -311,7 +311,7 @@ video_font_size = "12"
 # Audio output samplerate.
 # audio_out_rate = 48000
 
-# Override the default audio device the audio_driver uses. This is driver dependant. E.g. ALSA wants a PCM device, OSS wants a path (e.g. /dev/dsp), Jack wants portnames (e.g. system:playback1,system:playback_2), and so on ...
+# Override the default audio device the audio_driver uses. This is driver dependent. E.g. ALSA wants a PCM device, OSS wants a path (e.g. /dev/dsp), Jack wants portnames (e.g. system:playback1,system:playback_2), and so on ...
 # audio_device =
 
 # Audio DSP plugin that processes audio before it's sent to the driver. Path to a dynamic library.
@@ -408,7 +408,7 @@ input_autodetect_enable = "true"
 # input_poll_type_behavior = 1
 
 # Sets which libretro device is used for a user.
-# Devices are indentified with a number.
+# Devices are identified with a number.
 # This is normally saved by the menu.
 # Device IDs are found in libretro.h.
 # These settings are overridden by explicit command-line arguments which refer to input devices.
@@ -711,7 +711,7 @@ menu_show_core_updater = "false"
 
 #### Camera
 
-# Override the default camera device the camera driver uses. This is driver dependant.
+# Override the default camera device the camera driver uses. This is driver dependent.
 # camera_device =
 
 # Override the default privacy permission for cores that want to access camera services. Is "false" by default.

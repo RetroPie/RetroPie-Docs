@@ -249,7 +249,7 @@ case $CONTROLLER_NUM in
     ;;
 esac
 ```
-To specifiy the amount of controller, edit the variable CONTROLLER_NUM. If you have a wired controller, replace all "-w" occurences with "-i".
+To specify the amount of controller, edit the variable CONTROLLER_NUM. If you have a wired controller, replace all "-w" occurrences with "-i".
 
 It is generally advisable to use the daemon mode, 'cause it uses less CPU and RAM instead of several xboxdrv processes for each controller.
 

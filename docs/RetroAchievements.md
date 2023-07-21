@@ -31,7 +31,7 @@ cheevos_password = "YourPassword"
 cheevos_hardcore_mode_enable = "true"
 
 # If you want to see some RetroAchievements related message right after
-# launching a game (such as successfull login and the number of cheevos you
+# launching a game (such as successful login and the number of cheevos you
 # have unlocked for that game), set the Achievements Verbose Mode to true.
 cheevos_verbose_enable = "true"
 

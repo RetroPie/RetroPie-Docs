@@ -1116,7 +1116,7 @@ When this is On, there is a "3, 2, 1, GO!" countdown before players spawn onto a
 
 #### Dead Team Notice
 
-When this is On, a breif message is shown upon the elimination of a team. When this is Off, team elimination isn't notified.
+When this is On, a brief message is shown upon the elimination of a team. When this is Off, team elimination isn't notified.
 
 ### Music & Sound
 
@@ -1259,7 +1259,7 @@ Pressing V will hide all the interactive blocks on the map so you can see what's
 
 >Y
 
-Since there are 4 layers to a map, you need to be able to select which layer you want to add tiles to. Use the "Y" key to do this. On the upper left, you'll see a little 0,1,2,3 icon. The colored number is the layer you are currently working with. When you add tiles, they will be added to this layer. The layers are ordered, with 0 being the bottom-most layer, and 3 being the top-most. You can use this key in conjuction with the "U" key to view just a single layer.
+Since there are 4 layers to a map, you need to be able to select which layer you want to add tiles to. Use the "Y" key to do this. On the upper left, you'll see a little 0,1,2,3 icon. The colored number is the layer you are currently working with. When you add tiles, they will be added to this layer. The layers are ordered, with 0 being the bottom-most layer, and 3 being the top-most. You can use this key in conjunction with the "U" key to view just a single layer.
 
 >U
 
@@ -1425,7 +1425,7 @@ This changes the music category for the selected world map. This affects what so
 
 >Arrow Keys
 
-This is used to navigate the currrently selected world map.
+This is used to navigate the currently selected world map.
 
 >A
 

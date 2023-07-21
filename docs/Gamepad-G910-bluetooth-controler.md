@@ -1,4 +1,4 @@
-G910 is a quite common bluetooth controler used with android/iPhone devices to play a mobile games.
+G910 is a quite common bluetooth controller used with android/iPhone devices to play a mobile games.
 
 How to pair with RetroPie
 * G910 shall je switched off
@@ -19,4 +19,4 @@ How to pair with RetroPie
 * * connect [gamepad address]
 * * * successful connection is indicated by second led on, the others are off
 * reboot your retropie, after rebooting gamepad shall connect automatically, if it is switched off just switched it on by short press by Home button
-* long press of aby button shall start kdy mapping wizzard
+* long press of aby button shall start kdy mapping wizard

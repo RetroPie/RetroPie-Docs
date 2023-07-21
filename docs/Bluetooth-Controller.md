@@ -75,7 +75,7 @@ Quit Emulation Station with F4 and type this at the command line:
 
 Make sure your controller is turned on in the correct pairing mode (Power on for FC30 Pro, Start+R for SFC30), then choose:
 1 Register and Connect to Bluetooth device
-Follow the prompts and your controller should connnect
+Follow the prompts and your controller should connect
 This is shown by a solid blue light on the 8bitdo controllers
 Quit out of the setup script
 

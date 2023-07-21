@@ -68,7 +68,7 @@ The _Save settings on exit_ option can be toggled from the same menu, so that an
 
 Custom mappings can be defined from the _Joystick settings_ (under the _Machine settings_ menu). The _Joystick 1 mapping_ or _Joystick 2 mapping_ menus can be used. 
 
-The mapping can be changed by pressing Enter on each joystick input (Up/Down/Left/Righ/Fire 1,3,3), followed by pressing the corresponding button/key on the gamepad/keyboard.
+The mapping can be changed by pressing Enter on each joystick input (Up/Down/Left/Right/Fire 1,3,3), followed by pressing the corresponding button/key on the gamepad/keyboard.
 
 ### Other Commodore Systems
 In addition to Commodore 64, the VICE emulator also emulates the following Commodore systems: 
@@ -96,7 +96,7 @@ To select the emulated system, the [Runcommand Launch Menu](Runcommand) can be u
 
 | Filename                     | Description                  | MD5                              |
 |:-----------------------------|:-----------------------------|:---------------------------------|
-| JiffyDOS_C64.bin             | JiffyDOS C64 Kernal          | be09394f0576cf81fa8bacf634daf9a2 |
+| JiffyDOS_C64.bin             | JiffyDOS C64 Kernel          | be09394f0576cf81fa8bacf634daf9a2 |
 | JiffyDOS_1541-II.bin         | JiffyDOS 1541 drive BIOS     | 1b1e985ea5325a1f46eb7fd9681707bf |
 | JiffyDOS_1571_repl310654.bin | JiffyDOS 1571 drive BIOS     | 41c6cc528e9515ffd0ed9b180f8467c0 |
 | JiffyDOS_1581.bin            | JiffyDOS 1581 drive BIOS     | 20b6885c6dc2d42c38754a365b043d71 |

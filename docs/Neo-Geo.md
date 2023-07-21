@@ -18,9 +18,9 @@ This page is a resource for additional details on configuring a dedicated set of
 | [GnGeo-Pi](https://github.com/ymartel06/GnGeo-Pi) | neogeo | .zip | MAME 0.138 | /opt/retropie/configs/neogeo/gngeorc |
 
 ## Emulators: [lr-fbneo](lr-fbneo), [lr-fbalpha2012](FinalBurn-Neo#lr-fbalpha2012), [PiFBA](FinalBurn-Neo#pifba), [GnGeo-Pi](Neo-Geo#gngeo-pi)
-Refer to the main [FinalBurn Neo](FinalBurn-Neo) page for general information on all FinalBurn emulators or the direct links above for in-depth infomation on `lr-fbneo`, `lr-fbalpha2012`, or `PiFBA`. In-depth information on `GnGeo-Pi` can be found below.
+Refer to the main [FinalBurn Neo](FinalBurn-Neo) page for general information on all FinalBurn emulators or the direct links above for in-depth information on `lr-fbneo`, `lr-fbalpha2012`, or `PiFBA`. In-depth information on `GnGeo-Pi` can be found below.
 
-*lr-fbneo* is the prefered Pi 2 (and later) Neo Geo emulator due to its accuracy. 
+*lr-fbneo* is the preferred Pi 2 (and later) Neo Geo emulator due to its accuracy. 
 
 *lr-fbalpha2012* is useful for any games that may be running slow in the latest version of lr-fbneo for a Pi 3/Pi 2, and if used exclusively instead of `lr-fbneo` will allow you to do full system updates without worrying about needing to update your ROM Set, but comes at the cost of inaccuracy such as games having audio issues across the entire library and other issues that have been fixed in the latest version of `lr-fbneo`.
 
@@ -181,7 +181,7 @@ Once you've started GnGeo-Pi at least once a file called `gngeorc` will be creat
  p1control A=J0B2,B=J0B1,C=J0B3,D=J0B0,START=J0B9,COIN=J0B8,UP=J0a1,DOWN=J0a1,LEFT=J0A0,RIGHT=J0A0
 
  Meaning of the code:
- Kxxx : keyboad key number xxx
+ Kxxx : keyboard key number xxx
  JxByy : Joystick number x Button
  JxAyy : Joystick number x Axe yy (use a lowercase 'a' if you need to invert the axis)
  JxHyy : Joystick number x Hat yy

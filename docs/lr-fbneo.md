@@ -12,7 +12,7 @@ By default, if you hold the Start button for a few seconds, the ROM system menu 
 
 ## High scores
 
-*lr-fbneo* will attempt to keep a permanent record of any high scores you set, but some games will not save these by default. There is a supplementary file that is automatically installed to your Pi that will enable high score saving for more games, called `hiscore.dat`. This file is updated regularily from the latest hiscore.dat file available from http://highscore.mameworld.info/ (**not the "old format"**). It is located in:
+*lr-fbneo* will attempt to keep a permanent record of any high scores you set, but some games will not save these by default. There is a supplementary file that is automatically installed to your Pi that will enable high score saving for more games, called `hiscore.dat`. This file is updated regularly from the latest hiscore.dat file available from http://highscore.mameworld.info/ (**not the "old format"**). It is located in:
 ```
 /home/pi/RetroPie/BIOS/fbneo/
 ```
@@ -41,7 +41,7 @@ Some sound effects in a few older (typically pre-1986) arcade games are difficul
 ## Neo Geo UNIBIOS
 For Neo Geo games, you may want to use the [UNIVERSE BIOS/UNIBIOS](http://unibios.free.fr/) - an advanced Neo Geo bios that allows region selection, cheats, dip-switch control, and more. To enable it, change the **Core Option** for **Neo-Geo mode** to **UNIBIOS**. See [Setting Core Options](RetroArch-Core-Options#setting-core-options).
 
-Note that this will automatically use the latest version of the UNIBIOS avaialble in your `neogeo.zip`. If you want to select a specific version, use the **BIOS** Core Option, however note that this setting applies per-game, rather than system-wide, like the **Neo Geo mode** setting.
+Note that this will automatically use the latest version of the UNIBIOS available in your `neogeo.zip`. If you want to select a specific version, use the **BIOS** Core Option, however note that this setting applies per-game, rather than system-wide, like the **Neo Geo mode** setting.
 
 Use the **B** button to go back to the **Quick Menu** and select **Restart Content** then **Resume Content**. You should see the Unibios boot screen before the usual "Max 330 Mega Pro-Gear Spec" screen.
 

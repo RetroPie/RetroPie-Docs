@@ -138,7 +138,7 @@ Also if you want to only add images and leave metadata out entirely you can tell
 
 ### Behind the Code
 
-The following is all taken care of by the aformentioned script but if you're interested this explains essentially what the code is doing (and how you can set it up manually without a script)
+The following is all taken care of by the aforementioned script but if you're interested this explains essentially what the code is doing (and how you can set it up manually without a script)
 
 #### Overall retroarch.cfg
 
@@ -199,7 +199,7 @@ Those options can be set in global or system specific `retroarch.cfg`.
 
 #### global config (easy way)
 
-Edit your `/opt/retropie/configs/all/retroarch.cfg` and put the option `auto_screenshot_filename = "false"`. This option isn't present in the default `retroarch.cfg`, so put it in the beggining of the file is good idea (easy to edit it later).
+Edit your `/opt/retropie/configs/all/retroarch.cfg` and put the option `auto_screenshot_filename = "false"`. This option isn't present in the default `retroarch.cfg`, so put it in the beginning of the file is good idea (easy to edit it later).
 
 And then put another line to the option `screenshot_directory = "/path/to/screenshots"` (I use `/home/pi/screenshots`, but you can set any other valid path). Remember: the directory **MUST** exist, otherwise RetroArch won't be able to save the screenshots.
 

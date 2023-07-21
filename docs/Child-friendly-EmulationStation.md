@@ -31,7 +31,7 @@ Once the system is in one of the restricted modes, it is not possible to access 
 
 Alternatively, you can use a pre-defined passkey sequence that you can enter while you are anywhere in the ES interface. The default passkey is [up,up, down, down, left, right, left, right, b, a] which some of you might recognize as the Konami cheat code from olden-times. This sequence can be changed in `es_settings.cfg ` if need be:
 `<string name="UIMode_passkey" value="uuddlrlrba" />`
-When succesfully entered, this will reset the UI mode to FULL.
+When successfully entered, this will reset the UI mode to FULL.
 
 # Gamelist.xml 
 So in all, three new tags have been introduced: favorites, kid game, and hidden (all boolean).

@@ -173,7 +173,7 @@ Usage of /opt/retropie/supplementary/scraper/scraper:
   -mame_img string
     	Comma separated order to prefer images, s=snap, t=title, m=marquee, c=cabniet, b=boxart, 3b=3D-boxart, fly=flyer. (default "t,m,s,c")
   -mame_src string
-    	Comma seperated order to prefer mame sources, ss=screenscraper, adb=arcadeitalia, mamedb=mamedb-mirror, gdb=theGamesDB-neogeo (default "adb,gdb")
+    	Comma separated order to prefer mame sources, ss=screenscraper, adb=arcadeitalia, mamedb=mamedb-mirror, gdb=theGamesDB-neogeo (default "adb,gdb")
   -marquee_dir directory
     	The directory to place downloaded marquees to locally. (default "images")
   -marquee_format jpg or png
@@ -349,7 +349,7 @@ When using the **Skyscraper** module from the RetroPie-Setup script, the followi
 
 #### Configuration files
 
-**Skyscraper** keeps its configuration files and downloaded resources cache in the `~/.skyscraper` folder. When installed through the RetroPie-Setup, this folder is also accesible via [Samba Shares](First-Installation#samba-shares) at
+**Skyscraper** keeps its configuration files and downloaded resources cache in the `~/.skyscraper` folder. When installed through the RetroPie-Setup, this folder is also accessible via [Samba Shares](First-Installation#samba-shares) at
 
 ```
 \\retropie\configs\all\skyscraper

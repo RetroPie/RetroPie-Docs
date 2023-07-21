@@ -155,6 +155,6 @@ You can create individual shell scripts for each game in your new system. When y
 
 * You can use an [online XML validator](https://www.xmlvalidation.com/) to check for errors in your custom `es_systems.cfg` file though this won't pick up on errors such as incorrect rom paths.
 
-* After restarting EmulationStation, if your new system does not include the roms you were expecting, then check that the extensions are included in the `<extension>` tag in your custom `es_systems.cfg` file. Remember Linux is case-sensitve.
+* After restarting EmulationStation, if your new system does not include the roms you were expecting, then check that the extensions are included in the `<extension>` tag in your custom `es_systems.cfg` file. Remember Linux is case-sensitive.
 
 * If a rom doesn't run, then check the runcommand log at `/dev/shm/runcommand.log` for errors.

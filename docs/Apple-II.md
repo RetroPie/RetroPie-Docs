@@ -32,7 +32,7 @@ F5 - Swap drives for Slot 6
 F6 - Toggle fullscreen mode
 F7 - Reserved for Debugger!
 F8 - Save current screen as a .bmp file
-Shift+F8 - Save settings changable in runtime in conf file     
+Shift+F8 - Save settings changeable in runtime in conf file     
 F9 - Cycle through various video modes
 F10 - Quit emulator
 F11 - Save current state to file, Alt+F11 - quick save

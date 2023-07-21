@@ -2,7 +2,7 @@
 ## Introduction
 It can happen that a controller axis is inverted. In other words, When moving 'up' in Emulationstation or Attract mode it reports that is has mapped the 'Y-down' button of the controller. A situation where this can happen is with custom Arcade Controllers that are wired in a wrong way. This is not an issue for ES or AM, because they map the actual direction on the direction reported by the controller, but becomes an issue for applications that use the native driver output instead of the button configuration in RetroArch, Attract Mode or Emulationstation.
 
-The driver button mapping, joystick axis and axis calibration can be changed with the commandline utilities _jstest_, _jscal_, _jscal-store_ and _jscal-restore_,which are part of the joystick input driver package. When the Pixel desktop environment is installed, life can be made easy by installing _jstest-gtk_. The mapping requires some persistance, but with a little patience it not a major task. Please refer to the appropriate Man pages for more information on these utilities. This instruction assumes that you are using _jstest-gtk_.
+The driver button mapping, joystick axis and axis calibration can be changed with the commandline utilities _jstest_, _jscal_, _jscal-store_ and _jscal-restore_,which are part of the joystick input driver package. When the Pixel desktop environment is installed, life can be made easy by installing _jstest-gtk_. The mapping requires some persistence, but with a little patience it not a major task. Please refer to the appropriate Man pages for more information on these utilities. This instruction assumes that you are using _jstest-gtk_.
 
 ## **Prerequisites**
 First install the appropriate packages (if not available):

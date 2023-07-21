@@ -177,7 +177,7 @@ After reboot (if configured correctly) your WiFi will be working.
 
 **Taken from the Raspberry Pi Foundation [here](https://www.raspberrypi.org/documentation/computers/configuration.html#wireless-networking-command-line):**
 
-> This method is suitable if you do not have access to the graphical user interface normally used to set up WiFi on the Raspberry Pi. It is especailly suited for use with a serial console cable if you do not have access to a screen or wired Ethernet network. Also note that no additional software is required; everything you need is already included on the Raspberry Pi.
+> This method is suitable if you do not have access to the graphical user interface normally used to set up WiFi on the Raspberry Pi. It is especially suited for use with a serial console cable if you do not have access to a screen or wired Ethernet network. Also note that no additional software is required; everything you need is already included on the Raspberry Pi.
 
 ### Getting Network Details
 
@@ -190,7 +190,7 @@ You will also need the password for the WiFi network. For most home routers this
 
 ### Adding Network Details to Raspberry Pi
 
-First you will need to ammend `/etc/network/interfaces` to point to wpa-supplicant configuration if it is not already:
+First you will need to amend `/etc/network/interfaces` to point to wpa-supplicant configuration if it is not already:
 
 ```
 auto lo

@@ -33,7 +33,7 @@ Several BIOS are supported, but **syscard3.pce** is the most compatible with gam
 
 Recognized Name | No-Intro Name | CRC32 | MD5 | Comment |
 | :--: | :--: | :--: | :--: | :--: |
-| syscard3.pce | [BIOS] Super CD-ROM System (Japan) (v3.0).pce | 6D9A73EF | 38179DF8F4AC870017DB21EBCBF53114 | This is the prefered BIOS for lr-beetle-pce-fast and should play most games. |
+| syscard3.pce | [BIOS] Super CD-ROM System (Japan) (v3.0).pce | 6D9A73EF | 38179DF8F4AC870017DB21EBCBF53114 | This is the preferred BIOS for lr-beetle-pce-fast and should play most games. |
 | syscard2.pce | [BIOS] CD-ROM System (Japan) (v2.1).pce | 283B74E0 | 3CDD6614A918616BFC41C862E889DD79 ||
 | syscard2.pce | [BIOS] CD-ROM System (Japan) (v2.0).pce | 52520BC6 | 3A456F0ECCFF039EB5FF045F56EC1C3B ||
 | syscard1.pce | [BIOS] CD-ROM System (Japan) (v1.0).pce | 3F9F95A4 | 2B7CCB3D86BAA18F6402C176F3065082 ||
