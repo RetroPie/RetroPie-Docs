@@ -31,7 +31,7 @@ The troubles I had configuring a joystick with the Xin-Mo controller, besides th
 
 **MAME4ALL-PI (MAME)**
 
-The MAME emulator only reads 16 buttons of the joysticks, so only use the first 16 button inputs of the controller (from 0 to 15). So if you don't have many buttons (6 by player, 2 Start and 2 service) work alright. You can make the MAME4ALL-PI to use more buttons by modifiying the source and compiling it, but it's not an easy task.
+The MAME emulator only reads 16 buttons of the joysticks, so only use the first 16 button inputs of the controller (from 0 to 15). So if you don't have many buttons (6 by player, 2 Start and 2 service) work alright. You can make the MAME4ALL-PI to use more buttons by modifying the source and compiling it, but it's not an easy task.
 
 **PIFBA (NeoGeo and other Arcade)**
 

@@ -111,7 +111,7 @@ Here are some examples of the file that should be written.
 
 ## Video Guide
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/e2We6AElqg8" title="RetroPie 4: Adding an 8bitdo Bluetooth Contoller (August 2016)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; allowfullscreen"></iframe>
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/e2We6AElqg8" title="RetroPie 4: Adding an 8bitdo Bluetooth Controller (August 2016)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; allowfullscreen"></iframe>
 
 ### Firmware Versions for 8bitdo controllers (June 2017)
 ![8bitdo controllers firmware](https://s3.postimg.cc/j47k633fn/8bitdo-firmware.png)

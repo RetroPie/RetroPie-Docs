@@ -110,7 +110,7 @@ You can press CONTROL-C to exit the test. In this example, moving the second spi
 
 **Beware**: The index of a specific device may change depending on what device you have attached to which port. For example, if you boot with an external mouse, it might be detected by `udev` as `event0` and your spinner as `event1`, but if you boot the same system without the external mouse attached, everything might ratchet down (spinner becomes `event0`). As long as you aren't changing your hardware configuration everything should stay where it is, but if you routinely connect an external mouse to troubleshoot or launch the desktop, this can be frustrating. We can overcome it by mapping multiple inputs _together_ in AdvanceMAME or by using a persistent device path, both methods shown below.
 
-To overcome the problem with an inconsistent device index, you can use the `/dev/input/by-id/` device symlinks set for each `/dev/input/mouse<X>` device file. For instance, given the mouse device `/dev/input/mouse1`, find out the correspoding symlink by running:  
+To overcome the problem with an inconsistent device index, you can use the `/dev/input/by-id/` device symlinks set for each `/dev/input/mouse<X>` device file. For instance, given the mouse device `/dev/input/mouse1`, find out the corresponding symlink by running:  
 ```
 udevadm info /dev/input/mouse1 | grep S:
 ```
@@ -161,7 +161,7 @@ If it doesn't work, and you know you have functioning inputs (see tests above) y
 You might also find that your spinner rotates in the wrong direction. You can fix that too with a minus sign as follows:
 ```input_map[p1_trackballx] -mouse[0,x] -mouse[1,x] -mouse[2,x] -mouse[3,x]```
 
-There are many possibile combinations if you have more than one input device. Here's an example for two spinners, both connected to the same USB interface, but the Player 2 spins backwards. So. . .
+There are many possible combinations if you have more than one input device. Here's an example for two spinners, both connected to the same USB interface, but the Player 2 spins backwards. So. . .
 ```
 input_map[p1_dialx] mouse[0,x]
 input_map[p2_dialx] -mouse[0,y]

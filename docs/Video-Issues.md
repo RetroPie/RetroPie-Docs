@@ -60,7 +60,7 @@ Powering on HDMI with explicit settings (DMT mode 51)
 
 #### Reset the frame buffer after changing the video mode
 
-After changing the video mode via `tvservice`, it may neccessary  to reset the frame buffer. This can be achieved by changing its colour depth to 8 and then back to 16:
+After changing the video mode via `tvservice`, it may necessary  to reset the frame buffer. This can be achieved by changing its colour depth to 8 and then back to 16:
 
 ```
 fbset -depth 8 && fbset -depth 16

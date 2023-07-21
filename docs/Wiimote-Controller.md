@@ -633,7 +633,7 @@ and lets make the settings permanent by rebooting:
 sudo reboot
 ```
 
-Thats MoltenGamepad installed, but we need to pair our wiimotes with ```bluetoothctl```. Nothing fancy, just simple bluetooth pairing in linux.
+That's MoltenGamepad installed, but we need to pair our wiimotes with ```bluetoothctl```. Nothing fancy, just simple bluetooth pairing in linux.
 
 Lets first load the hid-wiimote kernel module:
 ```shell
@@ -662,7 +662,7 @@ scan on
 You may need to press the red sync button a couple times before it is detected.
 Once the wiimote is found, the console will output some information about it. Note its MAC address, we'll need that for the remaining steps.
 
-In order for the wiimote to sucessfully store the connection and reconnect automatically in the future, the following ```pair``` and ```connect``` commands **must** be run (successfully) within a single sync timeout cycle of the wiimote (one press of the red button).
+In order for the wiimote to successfully store the connection and reconnect automatically in the future, the following ```pair``` and ```connect``` commands **must** be run (successfully) within a single sync timeout cycle of the wiimote (one press of the red button).
 The wiimote has a pretty short timeout, so I recommend waiting until the wiimote stops blinking from the scan step above and press the red sync button again immediately before entering the following commands:
 ```shell
 pair <MAC address of the wiimote>
@@ -698,7 +698,7 @@ The original tutorial stated that once the initial pairing was completed, you wo
 * reboot
 * "Press a key once to connect, then again to activate moltengamepad."
 
-I couldn't quite get mine to pair from a cold boot. Currently I still have to use the bluetoothctl ```connect``` command to pair my wiimotes attached to Classic Controlers and then manually start emulationstation from the terminal for the pairing to work. Your experience may vary however.
+I couldn't quite get mine to pair from a cold boot. Currently I still have to use the bluetoothctl ```connect``` command to pair my wiimotes attached to Classic Controllers and then manually start emulationstation from the terminal for the pairing to work. Your experience may vary however.
 
 I am currently working on a script to automate the the pairing process without the need to press any buttons at all when EmulationStation starts to activate MoltenGamepad. At the moment its a bit hit and miss. I will update the tutorial once I've ironed the kinks out. :) 
 

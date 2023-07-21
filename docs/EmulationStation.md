@@ -159,7 +159,7 @@ Create a `platforms.cfg` in
 /opt/retropie/configs/all/platforms.cfg
 ```
 
-name, extensions, platform (used by es for scraping), and the theme can be overriden, see [HERE](https://github.com/RetroPie/RetroPie-Setup/blob/master/platforms.cfg) for the default _platforms.cfg_.
+name, extensions, platform (used by es for scraping), and the theme can be overridden, see [HERE](https://github.com/RetroPie/RetroPie-Setup/blob/master/platforms.cfg) for the default _platforms.cfg_.
 
 The following is an example of a custom _platforms.cfg_:
 

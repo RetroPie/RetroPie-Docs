@@ -113,7 +113,7 @@ Key differences from the previous Raspberry Pi models:
 
     For a list of emulators/packages supported on the Raspberry Pi 4, you can consult the [Platform support page](https://retropie.org.uk/stats/pkgflags/), updated automatically from the current RetroPie-Setup Github repository.
 
-* GPIO based controller drivers might not work correctly. They are currently compatible witht the Pi 4 GPIO changes (they build and install), but due to the lack of hardware available for testing, their status should be considered experimental.  
+* GPIO based controller drivers might not work correctly. They are currently compatible with the Pi 4 GPIO changes (they build and install), but due to the lack of hardware available for testing, their status should be considered experimental.  
    - Reported working - `gamecondriver`
    - Reported working - `mkarcadejoystick`. See [here](https://retropie.org.uk/forum/topic/25932/) for instructions to setup a 13 buttons configuration using the `hotkeybtn` variant of the driver.
 

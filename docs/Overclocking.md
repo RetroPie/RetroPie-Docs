@@ -67,7 +67,7 @@ A good power cable is just as important as a good power supply. The wire in the 
 
 Ensure you have a good solid connection at the MicroUSB connector, a loose or poorly-fitting connector can pass less current than a well-seated connector.
 
-If you are powering many USB devices or power-hungry USB devices like rechargable game controllers off the Pi's USB ports, consider powering them off an externally-powered USB hub instead: http://elinux.org/RPi_Powered_USB_Hubs
+If you are powering many USB devices or power-hungry USB devices like rechargeable game controllers off the Pi's USB ports, consider powering them off an externally-powered USB hub instead: http://elinux.org/RPi_Powered_USB_Hubs
 
 There is a maximum current you can draw through the Pi board itself, dictated by the polyfuse next to the power connector:
 
@@ -429,7 +429,7 @@ Spotting a bad sdcard overclock can be very difficult, as the sdcard will probab
 
 If your sdcard doesn't boot when overclocked, place the sdcard in your computer, both Windows and Mac will see the small FAT32 partition which contains `config.txt` which you can edit to remove the setting.
 
-There are actually several frequencies in between 50MHz and 100MHz which can also be used, the exact speeds vary depending on Pi model. When a speed is applied which is *not* one of the useable frequencies, the next lowest frequency is chosen.
+There are actually several frequencies in between 50MHz and 100MHz which can also be used, the exact speeds vary depending on Pi model. When a speed is applied which is *not* one of the usable frequencies, the next lowest frequency is chosen.
 
 For example, setting 100MHz on a Pi 3 results in 100MHz, but setting 99MHz actually results in the sdcard reader running at 83MHz, and setting 82MHz would bump down to the next frequency under that.
 

@@ -5,7 +5,7 @@ CHD is a lossless compression format originally developed for MAME, for the hard
 ### Creating CHDs from CD-ROMs
 
 `CHD` files can be created using the `chdman` program, developed by the [MAME project](https://mamedev.org).    
-It is a commmand line application and creating a `.chd` file from an existing `.cue` is performed by running:
+It is a command line application and creating a `.chd` file from an existing `.cue` is performed by running:
 
 ```shell
 chdman createcd -i <game.cue> -o <game.chd>

@@ -25,7 +25,7 @@ With the death of Ouya as an independent entity there are a number of wireless O
 ![Pairing](https://s22.postimg.org/v05mz2gpt/7_Pairing.jpg)
 
 
-* Once the pairing is complete you will see a succes message and the first light on the controller will remain steady.
+* Once the pairing is complete you will see a success message and the first light on the controller will remain steady.
 
 ![Connection Success](https://s22.postimg.org/jp2zap9up/8_Connection_Success.jpg)
 
@@ -173,7 +173,7 @@ The mupen64plus does not use RetroArch configurations, so in order to use the Ou
 
 * First edit the autoconf.cfg file so that the hotkeys are turned off, which will allow you to edit mupen64plus.cfg (without editing this the mupen64plus.cfg file will be overwritten by the autoconf.cfg file, which will not work for us).  The autoconf.cfg file is located at opt/retropie/configs/all/ you will need to edit mupen64plus_hotkeys = "1" change the “1” to "0".  I was unabe to edit this file on my computer, but I had no issues doing so in terminal.
 
-* Next edit the mupen64plus.cfg file located at opt/retropie/configs/n64/ You will need to edit the Joy Mapping Stop, Joy Mapping Save State, and Joy Mapping Load State entries to your prefered buttons.  Then add these lines to the end of the "Digital button configuration mappings":
+* Next edit the mupen64plus.cfg file located at opt/retropie/configs/n64/ You will need to edit the Joy Mapping Stop, Joy Mapping Save State, and Joy Mapping Load State entries to your preferred buttons.  Then add these lines to the end of the "Digital button configuration mappings":
 
 Stop = "button(13)"
 Save State = "button(6)"

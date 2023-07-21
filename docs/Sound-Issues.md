@@ -39,7 +39,7 @@ Once you've made the change, save the file, restart your Raspberry Pi, and move 
 ##### Using the built-in HDMI Audio
 If you have a standard RPi and want to send audio over the HDMI connector then it should just work. In some instances though, you will need to manually modify the Raspberry Pi's boot config file. Please also note that only HDMI0 of Raspberry Pi 4's two HDMI ports has audio out.
 
-To edit the Rapsberry Pi's boot config file, do `sudo nano /boot/config.txt` and ADD the following lines to those already there: 
+To edit the Raspberry Pi's boot config file, do `sudo nano /boot/config.txt` and ADD the following lines to those already there: 
 
 ````
 # forces HDMI mode
@@ -441,7 +441,7 @@ I did try increasing the cpu_freq to 900 and core_freq to 450 and that helped a 
         audio_driver=sdl
 * (alsa works perfect too if the game is running at full speed but even with 1% drop in speed and starts making a static noise)
 * I'm running a fresh Raspbian installed from http://archive.raspbian.org/installer/rpi_installer_08-19-12.zip with nothing more extra installed than retroarch+lr-snes9x2002+sdl and the libraries needed to run them. I don't have DE installed and run everything from the console
-* I realize that the sdl audio is a bit slower than alsa and makes the snes run even slower but atleast it doesn't turn the audio into a garbled mess when the emulator doesn't run at full speed.
+* I realize that the sdl audio is a bit slower than alsa and makes the snes run even slower but at least it doesn't turn the audio into a garbled mess when the emulator doesn't run at full speed.
 
 ***
 

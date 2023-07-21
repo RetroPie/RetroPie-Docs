@@ -16,4 +16,4 @@ This emulator is experimental and can be installed from the experimental menu of
 |Jump 	|Spacebar 	|Makes Tux jump. Hold down longer to jump higher.|
 |Action 	|Left Control 	|Varies| 
 
-For more infomation visit the official documentation [**HERE**](http://supertux.lethargik.org/wiki/User_Manual)
+For more information visit the official documentation [**HERE**](http://supertux.lethargik.org/wiki/User_Manual)

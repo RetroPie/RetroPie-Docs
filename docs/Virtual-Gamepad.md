@@ -80,7 +80,7 @@ sudo pm2 startup
 sudo pm2 save
 ```
 
-In this way everytime you turn your raspberry on an http server will show up in port 80.
+In this way every time you turn your raspberry on an http server will show up in port 80.
 Be sure to have your smartphone in the same network as the raspberry
 
 After all this mess you will realize 2 things:

@@ -46,7 +46,7 @@ Create a directory `/home/pi/RetroPie/roms/scummvm/Day of the Tentacle` and plac
 
 Create a launcher file with the same name as the directory: `/home/pi/RetroPie/roms/scummvm/Day of the Tentacle/Day of the Tentacle.svm`
 
-This laucher file `Day of the Tentacle.svm` contains the shortname `tentacle`
+This launcher file `Day of the Tentacle.svm` contains the shortname `tentacle`
 
 You can create the launcher file like:
 

@@ -19,7 +19,7 @@ RetroPie includes multiple SNES emulators.
 
 ### lr-snes9x2010
 
-The prefered emulator on the RPi2 or RPi3B due to its balance between speed and accuracy, though an overclocked RPi3B or stock RPi3B+ are recommended for attempting full speed emulation of SA1/SFX2 games.
+The preferred emulator on the RPi2 or RPi3B due to its balance between speed and accuracy, though an overclocked RPi3B or stock RPi3B+ are recommended for attempting full speed emulation of SA1/SFX2 games.
 
 ### lr-snes9x2005
 

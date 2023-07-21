@@ -68,7 +68,7 @@ The _Save settings on exit_ option can be toggled from the same menu, so that an
 
 Custom mappings can be defined from the _Joystick settings_ (under the _Machine settings_ menu). The _Joystick 1 mapping_ or _Joystick 2 mapping_ menus can be used. 
 
-The mapping can be changed by pressing Enter on each joystick input (Up/Down/Left/Righ/Fire 1,3,3), followed by pressing the corresponding button/key on the gamepad/keyboard.
+The mapping can be changed by pressing Enter on each joystick input (Up/Down/Left/Right/Fire 1,3,3), followed by pressing the corresponding button/key on the gamepad/keyboard.
 
 ### Other Commodore Systems
 In addition to Commodore 64, the VICE emulator also emulates the following Commodore systems: 

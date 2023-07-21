@@ -34,7 +34,7 @@ The following diagram shows the program flow of Xarcade2Jstick:
 
 ![](http://blog.petrockblock.com/wp-content/uploads/2014/06/xarcade2jstick2.png)
 
-First of all, the Xarcade Tankstick is identified and opened exlusively by Xarcade2Jstick. Afterwards, two game pads and a keyboard are registered via the uinput module. Then the main loop is started. It consists of reading the events of the Xarcade device and of mapping the events to the virtual game pads and the keyboard.
+First of all, the Xarcade Tankstick is identified and opened exclusively by Xarcade2Jstick. Afterwards, two game pads and a keyboard are registered via the uinput module. Then the main loop is started. It consists of reading the events of the Xarcade device and of mapping the events to the virtual game pads and the keyboard.
 
 ### Installation and Usage
 The following installation and usage manual is taken from the Github site of the tool:
@@ -83,6 +83,6 @@ The RetroPie-Setup Script supports the Xarcade2Jstick configuration from within 
 
 ### Conclusion
 If you would like the Xarcade Tankstick to be registered as two individual game pads on a Linux machine, the program Xarcade2Jstick might be a solution for you. It exclusively captures the original keyboard events and maps these to the corresponding game pad events. Furthermore, the Shift-key functionality is also made available by Xarcade2Jstick, so that virtual keyboard presses of TAB and ESC are still possible.
-Xarcade2Jstick can easiliy be installed and can also be installed and configured with the RetroPie-Setup Script.
+Xarcade2Jstick can easily be installed and can also be installed and configured with the RetroPie-Setup Script.
 
 

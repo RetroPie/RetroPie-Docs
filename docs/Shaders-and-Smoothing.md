@@ -14,7 +14,7 @@ See also: [shadow mask](https://en.wikipedia.org/wiki/Shadow_mask)
 
 ### Bloom
 
-This describes the effect of lighter colours (particulary white) bleeding into their surrounding pixels, again helping to make things look less jagged:
+This describes the effect of lighter colours (particularly white) bleeding into their surrounding pixels, again helping to make things look less jagged:
 
 <img src="/images/shaders/1478613483800-upload-9a6df26e-794d-42b0-a0af-feeb176b488f.png" width="25%" height="25%" />
 
