@@ -35,12 +35,10 @@ More information on adding game data can be found [here](https://github.com/midw
 
 ### BIOS
 
-Full documentation on the Kickstart roms required by Amiberry can be found [here](https://github.com/midwan/amiberry/wiki/Using-Amiberry-WHDBooter-with-RetroPie-(Step-2)).
-
-Place your Kickstart roms in 
+Full documentation on the Kickstart ROMs required by Amiberry can be found [here](https://github.com/BlitterStudio/amiberry/wiki/Kickstart-ROMs-(BIOS)). Place the Kickstart ROMs in 
 
 ```shell
-/home/pi/RetroPie/BIOS/
+/home/pi/RetroPie/BIOS/amiga
 ```
 ### Controls
 
