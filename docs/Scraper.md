@@ -10,7 +10,7 @@ RetroPie includes the following scrapers:
 
 * The built-in EmulationStation scraper, which pulls information from TheGamesDb.net or ScreenScraper.fr.
 * Steven Selph's Scraper (`scraper`), which pulls information from TheGamesDB.net, ScreenScraper.fr, [OpenVGDB](https://github.com/OpenVGDB), ArcadeItalia.net. It can also use your local media for scraping, adding it to EmulationStation's gamelist.
-* Lars Muldjord's Skyscraper (`skyscraper`), which pulls information from TheGamesDB.net, ScreenScraper.fr, OpenRetro.org, MobyGames.com, IGDB.com and WorldOfSpectrum.org. It also has the ability to import your local media into the final gamelist.
+* Skyscraper (`skyscraper`), which pulls information from TheGamesDB.net, ScreenScraper.fr, OpenRetro.org, MobyGames.com, IGDB.com and WorldOfSpectrum.org. It also has the ability to import your local media into the final gamelist.
 
 ## EmulationStation Built-In Scraper
 
@@ -238,11 +238,11 @@ Usage of /opt/retropie/supplementary/scraper/scraper:
     	Use N worker threads to process roms. (default 1)
 ```
 
-## Lars Muldjord's Skyscraper
+## Skyscraper
 
-**Skyscraper** by Lars Muldjord is a powerful and versatile yet easy to use game scraper written in C++ for use with multiple frontends running on a Linux system. It scrapes and caches various game resources from various web sources, including media such as screenshot, cover and video. It then gives you the option to generate a game list and artwork for the chosen frontend by combining all of the cached resources.
+**Skyscraper** is a powerful and versatile yet easy to use game scraper written in C++ for use with multiple frontends running on a Linux system. It was created by [Lars Muldjord](https://github.com/muldjord), enhanced by [Joe Huss](https://github.com/detain/) and now maintained by [Gemba](https://github.com/Gemba). It scrapes and caches various game resources from various web sources, including media such as screenshot, cover and video. It then gives you the option to generate a game list and artwork for the chosen frontend by combining all of the cached resources.
 
-For a more thorough description of any functionality described here, please check out the [official Skyscraper documentation](https://github.com/muldjord/skyscraper).
+For a more thorough description of any functionality described here, please check out the [official Skyscraper documentation](https://github.com/Gemba/skyscraper).
 
 ### Installation
 
@@ -258,7 +258,7 @@ Make sure to update to the latest version of Retropie-Setup script if you don't 
 
 **Skyscraper** can be used to generate scraping information for both [EmulationStation](EmulationStation.md) and [AttractMode](http://attractmode.org). Installing `skyscraper` as a RetroPie package will automatically configure it for EmulationStation, but if you wish to use it for generating **AttractMode** metadata, you can use **Skyscraper** from the command line.
 
-Check the [official documentation](https://github.com/muldjord/skyscraper/blob/master/docs/CLIHELP.md) for a list of all command line options.
+Check the [official documentation](https://github.com/Gemba/skyscraper/blob/master/docs/CLIHELP.md) for a list of all command line options.
 
 The recommended usage is to scrape your system(s) by gathering data (image/videos/information) from as many online sources as you'd like. All of the data will be cached while doing so. Then, when you have gathered enough data, be sure to generate the game list for Emulationstation from the cache. This will combine all of your cached data into the most complete results for each rom.
 
@@ -284,7 +284,7 @@ When using the **Skyscraper** module from the RetroPie-Setup script, the followi
   * ONLINE: worldofspectrum.org
   * ONLINE: adb.arcadeitalia.net
   * LOCAL: esgamelist - Scrapes and caches data from an EmulationStation gamelist.xml located at `$HOME/RetroPie/roms/[platform]/gamelist.xml` or `~/.skyscraper/import/[platform]/gamelist.xml`
-  * LOCAL: import -- imports resources into the resource cache. Read more about this [here](https://github.com/muldjord/skyscraper/blob/master/docs/IMPORT.md).
+  * LOCAL: import -- imports resources into the resource cache. Read more about this [here](https://github.com/Gemba/skyscraper/blob/master/docs/IMPORT.md).
 
   **NOTE:** Some online sources require a username/password for using them. You can add this information by editing the `config.ini` configuration file (from the **Advanced options** menu).
 
@@ -339,8 +339,8 @@ When using the **Skyscraper** module from the RetroPie-Setup script, the followi
   **NOTE:** Be aware that gathering and caching videos could take up a lot of disk space.
 
   * _Advanced options_ is a separate sub-menu for advanced actions:
-    - Edit the [**config.ini**](https://github.com/muldjord/skyscraper/blob/master/docs/CONFIGINI.md) file.
-    - Edit the [**artwork.xml**](https://github.com/muldjord/skyscraper/blob/master/docs/ARTWORK.md) file.
+    - Edit the [**config.ini**](https://github.com/Gemba/skyscraper/blob/master/docs/CONFIGINI.md) file.
+    - Edit the [**artwork.xml**](https://github.com/Gemba/skyscraper/blob/master/docs/ARTWORK.md) file.
     - Edit the **aliasMap.csv** file.
 
   * _Check for Updates_ will check if a new **Skyscraper** release is available, giving you the option to update to that release.
@@ -367,13 +367,13 @@ _cover_ | _screenshot_ | _wheel_ | **Final Artwork**
 :-:|:-:|:-:|:-:
 ![cover](https://user-images.githubusercontent.com/31816814/47103794-ac009e00-d248-11e8-881a-d9bdaa1ff00a.png) | ![screenshot](https://user-images.githubusercontent.com/31816814/47103839-bcb11400-d248-11e8-9bf6-9b2043432c1a.png) | ![wheel](https://user-images.githubusercontent.com/31816814/47103856-cd618a00-d248-11e8-8eed-ef4c7728494e.png) | ![artowk](https://user-images.githubusercontent.com/31816814/47103761-9a1efb00-d248-11e8-936d-d52c33aecde1.png)
 
-Consult the [official artwork documentation](https://github.com/muldjord/skyscraper/blob/master/docs/ARTWORK.md) on the artwork customisation.
+Consult the [official artwork documentation](https://github.com/Gemba/skyscraper/blob/master/docs/ARTWORK.md) on the artwork customisation.
 
 #### Import your own media
 
 If you have your own media, **Skyscraper** can import it and use it for scraping your ROMs.
 
-Consult the [official import documentation](https://github.com/muldjord/skyscraper/blob/master/docs/IMPORT.md) to understand how to use this feature.
+Consult the [official import documentation](https://github.com/Gemba/skyscraper/blob/master/docs/IMPORT.md) to understand how to use this feature.
 
 ## Troubleshooting
 ### Slow Boot and Shutdown Times
