@@ -2,7 +2,7 @@ Scraping is a way to get metadata, boxart and video previews (snapshots) for you
 
 Scraping adds extra information to the game - Publisher, Developer, Release year, Genre, Description, Number of Players supported and Rating.
 
-![A scraped game](https://cloud.githubusercontent.com/assets/10035308/10357565/b97b4ec4-6d40-11e5-9f44-6b27ae31ebc3.png)
+![A scraped game](images/scraper/scraped_game.png)
 
 Since EmulationStation 2.1.0 you can have a video preview as scraped art, provided that is's supported by the theme EmulationStation is using.
 
@@ -16,15 +16,15 @@ RetroPie includes the following scrapers:
 
 EmulationStation has a built in scraper that pulls from [TheGamesDB](http://thegamesdb.net/) or [ScreenScraper](https://screenscraper.fr). It can be accessed from the main menu in EmulationStation, opened by the `Start` button.
 
-![scrapermenu](https://cloud.githubusercontent.com/assets/10035308/10713271/534a0560-7a73-11e5-8076-90131881c054.png)
+![scrapermenu](images/scraper/es_scraper_1.png)
 
-![scrapermenu2](https://cloud.githubusercontent.com/assets/10035308/10713277/92462faa-7a73-11e5-86d4-34e49ca93d14.png)
+![scrapermenu2](images/scraper/es_scraper_2.png)
 
-![scrapermenu3](https://cloud.githubusercontent.com/assets/10035308/10713295/3b237434-7a74-11e5-8c30-68d76b67388e.png)
+![scrapermenu3](images/scraper/es_scraper_3.png)
 
-![scrapermenu4](https://cloud.githubusercontent.com/assets/10035308/10713292/0f9360cc-7a74-11e5-8784-b1f2555a785f.png)
+![scrapermenu4](images/scraper/es_scraper_4.png)
 
-![scrapermenu5](https://cloud.githubusercontent.com/assets/10035308/10713306/b89d2d56-7a74-11e5-9415-485b1b5dbc0f.png)
+![scrapermenu5](images/scraper/es_scraper_5.png)
 
 **Note**: during the *first* scraping session using TheGamesDB as scraping source, Emulationstation will download additional information (list of publishers, developers, genres) from TheGamesDB. The scraper will seem unresponsive for a very short period of time - depending on the download speed - but after the necessary information is downloaded and saved, the scraping will resume. Any subsequent scraping operations will re-use the downloaded information, without any additional downloads.
 
@@ -55,13 +55,13 @@ Make sure to update to the latest version of Retropie-Setup script if you're mis
 
 Scraper is started from inside the Retropie Setup Menu. Navigate to **Manage Packages** > **Manage Optional Packages** and select scraper. You will navigate to the **Choose an option for scraper** window. Select option C **Configuration / Options**. It will take you to the window shown below and allow you to run/configure the various functions of the scraper.
 
-<img src="https://raw.githubusercontent.com/UncleRus/__crap/master/sselph_scraper_shot.png" width="550">
+<img src="../images/scraper/sselph_scraper_1.png" width="550">
 
 - **Scrape All Systems:** This will scrape all the systems the scraper supports
 
 - **Scrape Chosen Systems:** You can choose to only scrape the systems you choose (press the **spacebar** to select each system) and select ok to start scraping.
 
-![systems](https://cloud.githubusercontent.com/assets/10035308/10713183/98a7ad9a-7a70-11e5-8e24-92d9a4a767b8.png)
+![systems](images/scraper/sselph_scraper_2.png)
 
 - **Thumbnails Only:** When enabled it will load lower resolution images to save space (enabled by default).
 
@@ -264,7 +264,7 @@ The recommended usage is to scrape your system(s) by gathering data (image/video
 
 **Skyscraper** can be started from the RetroPie-Setup script, opening the **Configuration/Tools** menu and choosing `skyscraper`.If you wish to run it from the command line, for more advanced options and parameters, you can find it installed in `/opt/retropie/supplementary/skyscraper/Skyscraper`.
 
-<img width="579" alt="Skyscraper RetroPie package menu" src="https://retropie.org.uk/forum/assets/uploads/files/1551116278774-4ef4d83b-7b8d-481b-a4f9-bff542fca40f-image.png">
+<img width="579" alt="Skyscraper RetroPie package menu" src="../images/scraper/skyscraper_1.png">
 
 Scraping your ROMs and games consists of at least 2 actions:
 
@@ -365,7 +365,7 @@ Here's an example combining a game's screenshot, its cover and the wheel media f
 
 _cover_ | _screenshot_ | _wheel_ | **Final Artwork**
 :-:|:-:|:-:|:-:
-![cover](https://user-images.githubusercontent.com/31816814/47103794-ac009e00-d248-11e8-881a-d9bdaa1ff00a.png) | ![screenshot](https://user-images.githubusercontent.com/31816814/47103839-bcb11400-d248-11e8-9bf6-9b2043432c1a.png) | ![wheel](https://user-images.githubusercontent.com/31816814/47103856-cd618a00-d248-11e8-8eed-ef4c7728494e.png) | ![artowk](https://user-images.githubusercontent.com/31816814/47103761-9a1efb00-d248-11e8-936d-d52c33aecde1.png)
+![cover](images/scraper/skyscraper_cover.png) | ![screenshot](images/scraper/skyscraper_shot.png) | ![wheel](images/scraper/skyscraper_wheel.png) | ![artwork](images/scraper/skyscraper_artwork.png)
 
 Consult the [official artwork documentation](https://github.com/Gemba/skyscraper/blob/master/docs/ARTWORK.md) on the artwork customisation.
 
