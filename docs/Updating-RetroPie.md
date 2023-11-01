@@ -112,10 +112,11 @@ if you don't want to create a sd image you can just back up your bios, roms, and
 You can use **Rpi-clone**, a shell script that runs directly on your Raspberry Pi. Requires a USB microSD card reader.
 Detailed instructions [here](https://github.com/billw2/rpi-clone).
 
-### Backup Option 4 (OS X)
+### Backup Option 4 (macOS)
 
-Open a terminal window and type `diskutil list`. A list of all hard disks and partitions shows up. Find a partition with the name `boot` - it should say (internal,physical) beside the /dev/disk#. Example:
+Open a terminal window and type `diskutil list`. A list of all hard disks and partitions shows up. Find a partition with the name `boot` or `bootfs` - it should say _(internal,physical)_ beside the `/dev/disk#`. Example:
 
+``` sh
     user@host$ diskutil list  
     /dev/disk0 (internal, physical):  
     #:                       TYPE NAME                    SIZE       IDENTIFIER  
@@ -134,7 +135,9 @@ Open a terminal window and type `diskutil list`. A list of all hard disks and pa
     0:     FDisk_partition_scheme                        *15.9 GB    disk2  
     1:             Windows_FAT_16 boot                    59.8 MB    disk2s1  
     2:                      Linux                         15.9 GB    disk2s2  
-    user@host$
+```
 
-In this case /dev/disk2 partition 1 is named `boot`. That disk# is the retropie sd card - in the example it is /dev/disk2. Confirm that the size (on the right) matches the size of your SD card.  
-Type `cd ~ ; sudo dd if=/dev/disk2 of=backup.img bs=1m` to write a disk image to your home directory. Note that you need to use the entire disk (/dev/disk2) and not just a partition (/dev/disk2s0).
+
+  In this case `/dev/disk2s1` (partition 1) is named `boot`. That disk# is the RetroPie SD card - in the example it is `/dev/disk2`. Confirm that the size (on the right) matches the size of your SD card.
+ 
+  Type `cd ~ ; sudo dd if=/dev/rdisk2 of=backup.img bs=1m` to write a disk image to your home directory. Note that you need to use the entire disk (`/dev/disk2`) and not just a partition (`/dev/disk2s1`).
