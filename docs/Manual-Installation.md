@@ -1,6 +1,6 @@
 ## Install Raspbian/Raspberry Pi OS
 
-**NOTE**: The Raspberry Pi OS 'bullseye' release is not yet supported by RetroPie. Manual installation should use the previous/legacy release of Raspberry Pi OS, available [here](https://www.raspberrypi.com/software/operating-systems/#raspberry-pi-os-legacy).
+**NOTE**: The Raspberry Pi OS 'bullseye' release is not yet supported by RetroPie. Manual installation should use the previous/legacy release of Raspberry Pi OS, available [here](https://downloads.raspberrypi.com/raspios_oldstable_lite_armhf/images/raspios_oldstable_lite_armhf-2023-05-03/2023-05-03-raspios-buster-armhf-lite.img.xz).
 
 This guide is a manual process to recreate the stock SD image RetroPie released on the [RetroPie Website](https://retropie.org.uk/download/) for the Raspberry Pi. If you aren't comfortable with the terminal you would be wise to just use the RetroPie SD image provided. 
 
