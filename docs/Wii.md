@@ -1,7 +1,7 @@
 ***
 ![wii](https://cloud.githubusercontent.com/assets/10035308/18609217/13ac9b3a-7cba-11e6-990b-bf983afafbbc.png)
 ***
-_The Wii is a home video game console that was released by Nintendo on November 19, 2006. It was the first console to successfully market motion controllers. After 7 years of production, it was discontinued in 2013._
+_The Wii is a home video game console that was released by Nintendo on November 19, 2006. It was the first console to successfully market motion controllers. After 7 years of production, the orginal console was discontinued in 2013. A scaled down version known as the Wii Mini remained in production until 2017._
 ***
 
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
