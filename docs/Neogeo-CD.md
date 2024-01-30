@@ -14,7 +14,7 @@ _ The Neo Geo CD is the second home video game console of SNK Corporation's Neo 
 ## ROMS
 Accepted File Extensions: **.cue** **.chd** **.zip**
 
-Place your Neogeo CD ROMs in
+Place your Neogeo CDROM images in
 ```
 /home/pi/RetroPie/roms/neogeo
 ```
