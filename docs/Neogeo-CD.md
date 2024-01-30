@@ -6,10 +6,12 @@ _ The Neo Geo CD is the second home video game console of SNK Corporation's Neo 
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
 | [lr-neocd](https://github.com/libretro/neocd_libretro) | neogeo  | .chd .cue .zip | uni-bioscd.rom | /opt/retropie/configs/neogeo/retroarch.cfg |
-
-## Emulator: [lr-neocd](https://github.com/libretro/neocd_libretro) 
+| [lr-fbneo](https://github.com/libretro/fbneo) | neogeo  | .7z .zip | FB Neo v1.0.0.1 | /opt/retropie/configs/neogeo/retroarch.cfg |
+## Emulators: [lr-neocd](https://github.com/libretro/neocd_libretro), [lr-fbneo](https://github.com/libretro/fbneo)
 
 **lr-neocd**  is a complete rewrite of NeoCD from scratch in modern C++11. It is designed with accuracy and portability in mind rather than being all about speed like the the older versions.
+
+**lr-fbneo** is the preferred Pi 2 (and later) Neo Geo emulator due to its accuracy. 
 
 ## ROMS
 Accepted File Extensions: **.cue** **.chd** **.zip**
