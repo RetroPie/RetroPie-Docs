@@ -19,7 +19,7 @@ Place your Neogeo CDROM images in
 /home/pi/RetroPie/roms/neogeo
 ```
 ## BIOS
-You will need a minimum of two BIOS files (eg. ng-lo.rom, uni-bioscd.rom) which should be copied to $biosdir/neocd.
+You will need a minimum of two BIOS files (eg. ng-lo.rom, uni-bioscd.rom) 
 
 | Filename                  | Hash (MD5)                       |
 | ------------------------- | -------------------------------- |
@@ -33,6 +33,11 @@ You will need a minimum of two BIOS files (eg. ng-lo.rom, uni-bioscd.rom) which 
 | top-sp1.bin    | 235f4d1d74364415910f73c10ae5482d90b4274f |
 | neocd.bin      | 7bb26d1e5d1e930515219cb18bcde5b7b23e2eda |
 | uni-bioscd.rom | 5142f205912869b673a71480c5828b1eaed782a8 |
+
+Place your BIOS files in:
+```
+/home/pi/RetroPie/BIOS
+```
 
 ## Controls
 
