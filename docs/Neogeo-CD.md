@@ -1,5 +1,5 @@
 ***
-_ The Neo Geo CD is the second home video game console of SNK Corporation's Neo Geo family, released on September 9, 1994, four years after its cartridge-based equivalent. The system was originally priced at US$399, or £399. It was discontinued in 1997 with sales of 570,000 systems._
+_ The Neo Geo CD is the second home video game console of SNK Corporation's Neo Geo family, released on September 9, 1994, four years after its cartridge-based equivalent. It was discontinued in 1997 with sales of 570,000 systems._
 
 ***
 
