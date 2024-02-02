@@ -14,7 +14,7 @@ _ The Neo Geo CD is the second home video game console of SNK Corporation's Neo 
 **lr-fbneo** is the preferred Pi 2 (and later) Neo Geo emulator due to its accuracy. 
 
 ## ROMS
-Accepted File Extensions: **.cue** **.chd** **.zip**
+Accepted File Extensions: **.cue** **.chd** 
 
 Place your Neogeo CDROM images in
 ```
