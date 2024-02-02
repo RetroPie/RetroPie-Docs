@@ -1,7 +1,7 @@
 ***
 ![ibmpc](https://cloud.githubusercontent.com/assets/10035308/12213490/0f8cb422-b636-11e5-99a7-2a33761874f3.png)
 ***
-_The good old days of DOS._
+_DOS is a series of operating systems for 16 bit x86 computers manufactured by Microsoft and IBM from 1980 to 1995._
 ***
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
