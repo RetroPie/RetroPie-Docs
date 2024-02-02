@@ -35,10 +35,11 @@ You will need a minimum of two BIOS files (eg. ng-lo.rom, uni-bioscd.rom)
 | top-sp1.bin    | 235f4d1d74364415910f73c10ae5482d90b4274f |
 | neocd.bin      | 7bb26d1e5d1e930515219cb18bcde5b7b23e2eda |
 | uni-bioscd.rom | 5142f205912869b673a71480c5828b1eaed782a8 |
+|ng-lo.rom       | fc7599f3f871578fe9a0453662d1c966         |
 
 Place your BIOS files in:
 ```
-/home/pi/RetroPie/BIOS
+/home/pi/RetroPie/BIOS/neocd
 ```
 
 ## Controls
