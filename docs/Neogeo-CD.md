@@ -11,7 +11,7 @@ _ The Neo Geo CD is the second home video game console of SNK Corporation's Neo 
 
 **lr-neocd**  is a complete rewrite of NeoCD from scratch in modern C++11. It is designed with accuracy and portability in mind rather than being all about speed like the the older versions.
 
-**lr-fbneo** is the preferred Pi 2 (and later) Neo Geo emulator due to its accuracy. 
+**lr-fbneo** is the preferred Pi 2 (and later) Neo Geo emulator due to its accuracy. For more information see the [FinalBurn Neo](FinalBurn-Neo) page.
 
 ## ROMS
 Accepted File Extensions: **.cue** **.chd** 
