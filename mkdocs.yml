@@ -10,7 +10,7 @@ repo_name: 'RetroPie-Setup'
 repo_url: 'https://github.com/RetroPie/RetroPie-Setup'
 
 # Copyright
-copyright: 'Copyright &copy; 2022 The RetroPie Project'
+copyright: 'Copyright &copy; 2024 The RetroPie Project'
 
 # Plugins
 plugins:
