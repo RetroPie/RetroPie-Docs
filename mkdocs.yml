@@ -32,6 +32,7 @@ theme:
   language: 'en'
   logo: 'images/logo.png'
   favicon: 'images/logo.png'
+  font: false
   features:
     - navigation.top
     - content.action.edit
