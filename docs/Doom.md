@@ -5,17 +5,47 @@
 _Doom was the game that popularized First Person Shooting as a genre. It was developed by Id Software in 1993._
 
 ***
-## Ports: [lr-prboom](https://github.com/petrockblog/RetroPie-Setup/blob/master/scriptmodules/libretrocores/lr-prboom.sh), [ZDoom](https://github.com/rheit/zdoom)
+## Ports: [lr-prboom](https://github.com/petrockblog/RetroPie-Setup/blob/master/scriptmodules/libretrocores/lr-prboom.sh), [LZDoom](https://github.com/rheit/zdoom), [GZDoom](https://zdoom.org/downloads), [DSDA-Doom](https://github.com/kraflab/dsda-doom/).
 
 ### lr-prboom
 
-Port of PrBoom to Libretro. This port supports Doom, Doom 2, Final Doom and Freedoom alongside the simple mods that don't require other source port enhancements. Unlike other source ports that concentrate on offering many new game features or changes, such as ZDoom, PrBoom aims to act as a stable port of the more established or traditional engines.
+Port of PrBoom to Libretro. This port supports Doom, Doom 2, Final Doom and Freedoom alongside the simple mods that don't require other source port enhancements. Unlike other source ports that concentrate on offering many new game features or changes - such as ZDoom - PrBoom aims to act as a stable port of the more established or traditional engines.
 
 ### LZDoom
 
-LZDoom is a family of enhanced ports of the Doom engine for running on modern operating systems and adds new features not found in the games as originally published by id Software.
+LZDoom is an enhanced source port of the Doom engine, based on GZDoom, for running on modern operating systems. It adds new features not found in the games originally published by id Software.
 
 This port officially supports the following Doom engine games: Doom, Doom 2, Final Doom, Heretic, Hexen, Strife and Chex Quest. It also has official support for the following stand-alone mods: Action Doom 2: Urban Brawl, The Adventures of Square, Chex Quest 3, Hacx and Harmony. Additional stand-alone mods may work with this port, they just aren't officially supported.
+
+### GZDoom
+
+GZDoom is a 3D-accelerated Doom source port based on ZDoom. GZDoom features an OpenGL/GLES and Vulkan renderers and packs lots of new features, among them:
+
+  * Sloped 3D floors
+  * Light effects, including dynamic lights, brightmaps, and glowing flats.
+  * Quake2-style skyboxes
+  * True color support
+  * Model support (MD3, OBJ and IQM)
+  * Unicode fonts
+  * ZScript
+
+It has the broadest support for mods and the best support for total conversions. It is also a bit more performance demanding than the other DOOM source ports available, being suitable for PC installations or more powerfull SBC platforms.
+
+### DSDA-Doom
+This is a successor of PrBoom+ with many new features, including:
+
+   * Heretic, Hexen, MBF21, Doom-in-Hexen, UDMF, and MAPINFO support
+   * In-game console and scripting
+   * Full controller support
+   * Palette-based opengl renderer
+   * Debugging features for testing
+   * Strict mode for speedrunning
+   * Various quality of life improvements
+   * Advanced tools for TASing
+   * Rewind
+   * Support for MBF21 v1.4 and UMAPINFO v2.2
+
+It has good support for mods/wads and it's recommended as a replacement for LZDoom as an all-platforms suited source port.
 
 ## Installation
 
