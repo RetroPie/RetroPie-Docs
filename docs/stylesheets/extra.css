@@ -13,10 +13,9 @@
 /* Fonts: use a 'system' font stack, without loading an external font */
 /* See https://squidfunk.github.io/mkdocs-material/setup/changing-the-fonts/?h=fonts#changing-the-fonts */
 :root {
-    --md-text-font: -apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoj
-i","Segoe UI Symbol";
+    /* Fonts: use a 'system' font stack, without loading an external font */
+    --md-text-font: system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,sans-serif,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
     --md-code-font: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
-
 }
 
 .md-typeset table:not([class]) th:not([align]){text-align:left}.md-typeset table:not([class]) th{
