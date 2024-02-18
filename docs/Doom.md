@@ -21,29 +21,29 @@ This port officially supports the following Doom engine games: Doom, Doom 2, Fin
 
 GZDoom is a 3D-accelerated Doom source port based on ZDoom. GZDoom features an OpenGL/GLES and Vulkan renderers and packs lots of new features, among them:
 
-  * Sloped 3D floors
-  * Light effects, including dynamic lights, brightmaps, and glowing flats.
-  * Quake2-style skyboxes
-  * True color support
-  * Model support (MD3, OBJ and IQM)
-  * Unicode fonts
-  * ZScript
+* Sloped 3D floors
+* Light effects, including dynamic lights, brightmaps, and glowing flats.
+* Quake2-style skyboxes
+* True color support
+* Model support (MD3, OBJ and IQM)
+* Unicode fonts
+* ZScript
 
 It has the broadest support for mods and the best support for total conversions. It is also a bit more performance demanding than the other DOOM source ports available, being suitable for PC installations or more powerfull SBC platforms.
 
 ### DSDA-Doom
 This is a successor of PrBoom+ with many new features, including:
 
-  * Heretic, Hexen, MBF21, Doom-in-Hexen, UDMF, and MAPINFO support
-  * In-game console and scripting
-  * Full controller support
-  * Palette-based opengl renderer
-  * Debugging features for testing
-  * Strict mode for speedrunning
-  * Various quality of life improvements
-  * Advanced tools for TASing
-  * Rewind
-  * Support for MBF21 v1.4 and UMAPINFO v2.2
+* Heretic, Hexen, MBF21, Doom-in-Hexen, UDMF, and MAPINFO support
+* In-game console and scripting
+* Full controller support
+* Palette-based opengl renderer
+* Debugging features for testing
+* Strict mode for speedrunning
+* Various quality of life improvements
+* Advanced tools for TASing (Tool-Assisted Speedrun)
+* Rewind
+* Support for MBF21 v1.4 and UMAPINFO v2.2
 
 It has good support for mods/wads and it's recommended as a replacement for LZDoom as an all-platforms suited source port.
 
