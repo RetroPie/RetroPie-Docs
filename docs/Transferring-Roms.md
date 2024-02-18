@@ -34,7 +34,7 @@ SFTP/SSH connection instructions are available on the [SSH page](SSH). Once you'
 
 ### Manually copy files from USB-stick
 
-RetroPie version 3.0+ contains a file manager. It allows you to manually transfer files between USB-stick and Raspberry Pi SD card. The file manager can be run from 'RetroPie' EmulationStation menu > **File Manager**. A Midnight Commander file manager guide can be found [here](http://www.thegeekstuff.com/2008/10/midnight-commander-mc-guide-powerful-text-based-file-manager-for-unix/). Your USB-stick should be mounted in `/media/usb`. The directories for the ROM files are located in `retropie/roms/$CONSOLE` folder, where $CONSOLE is the name of the target console, e.g. `snes` or `arcade`.
+RetroPie version 3.0+ contains a file manager. It allows you to manually transfer files between USB-stick and Raspberry Pi SD card. The file manager can be run from 'RetroPie' EmulationStation menu > **File Manager**. A Midnight Commander file manager guide can be found [here](http://www.thegeekstuff.com/2008/10/midnight-commander-mc-guide-powerful-text-based-file-manager-for-unix/). Your USB-stick should be mounted in `/media/usb`. The directories for the ROM files are located in `~/RetroPie/roms/$CONSOLE` folder, where $CONSOLE is the name of the target console, e.g. `snes` or `arcade`.
 
 ## Alternative Methods of Accessing Games
 
