@@ -65,14 +65,14 @@ will render as:
 
 * Code blocks:
 
-
-` ``` `
-
-`code block`
-
-` ``` ` 
+````
+```
+code block
+``` 
+````
 
 will render as:
+
 ```
 code block
 ```
@@ -145,7 +145,7 @@ It should render like this:
     -  a 3rd level
   - 2nd level again
 
-A line break in a list should be created by using 4 spaces:
+A line break in a list should be created by using 4 spaces at the beginning of the line:
 ```
 - a list item
     continued here on the 2nd paragraph
