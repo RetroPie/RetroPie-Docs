@@ -34,16 +34,16 @@ It has the broadest support for mods and the best support for total conversions.
 ### DSDA-Doom
 This is a successor of PrBoom+ with many new features, including:
 
-   * Heretic, Hexen, MBF21, Doom-in-Hexen, UDMF, and MAPINFO support
-   * In-game console and scripting
-   * Full controller support
-   * Palette-based opengl renderer
-   * Debugging features for testing
-   * Strict mode for speedrunning
-   * Various quality of life improvements
-   * Advanced tools for TASing
-   * Rewind
-   * Support for MBF21 v1.4 and UMAPINFO v2.2
+  * Heretic, Hexen, MBF21, Doom-in-Hexen, UDMF, and MAPINFO support
+  * In-game console and scripting
+  * Full controller support
+  * Palette-based opengl renderer
+  * Debugging features for testing
+  * Strict mode for speedrunning
+  * Various quality of life improvements
+  * Advanced tools for TASing
+  * Rewind
+  * Support for MBF21 v1.4 and UMAPINFO v2.2
 
 It has good support for mods/wads and it's recommended as a replacement for LZDoom as an all-platforms suited source port.
 
@@ -1067,8 +1067,8 @@ mus_ultima                "./doom2/ultima.mp3"
 ```
 
 
-### Music for LZDoom
+### Music for LZDoom/GZDoom/DSDA-Doom
 
-LZDoom handles the MIDI music from the Doom games automatically. Options are provided in the ZDoom menu for various MIDI emulation devices, including OPL3 and Timidity for midi output.
+LZDoom handles the MIDI music from the Doom games automatically. Options are provided in the in-game menu for various MIDI emulation devices, including OPL3, Timidity and FluidSynth.
 
-Several fan-created music packs also exist, which can be loaded with LZDoom as PWAD / PK3 files using the methods outlined above.
+Several fan-created MIDI music packs also exist, which can be loaded as PWAD / PK3 files using the methods outlined above.
