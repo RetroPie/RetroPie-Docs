@@ -213,6 +213,45 @@ To add a caption to the image, the `figure markdown` tag can be used:
 ```
 
 The `figcaption` tag accepts the usual Markdown text styling options, so the caption text can be bolded/emphasized/underlined/etc.
+
+### Admonitions
+
+Admonitions are blocks for side content meant to be shown separately from the main content of the page.   
+They are rendered as a border surrounded block composed of:
+
+ - a top heading consisting of an icon and an optional title against a colored background
+ - a text paragraph block
+
+The code to add an admonition looks like:
+```
+/// tip | Title of admonition
+Text content here
+////
+```
+
+and is rendered like:
+
+/// tip | Title of admonition
+Text content here
+///
+
+ The `tip` part of the heading is called the _type_ of the admonition and it determines the icon and colors used to style the admonition block. The folllowing types of admonitions are available for RetroPie Docs:
+
+ - new
+ - note
+ - abstract
+ - info
+ - tip
+ - success
+ - question
+ - warning
+ - danger
+ - bug
+ - example
+ - quote
+
+ To see how each admonition type looks, see the [following page](https://squidfunk.github.io/mkdocs-material/reference/admonitions/#supported-types).
+
 ### Comments
 
 This is a comment:

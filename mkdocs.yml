@@ -10,7 +10,7 @@ repo_name: 'RetroPie-Setup'
 repo_url: 'https://github.com/RetroPie/RetroPie-Setup'
 
 # Copyright
-copyright: 'Copyright &copy; 2024 The RetroPie Project'
+copyright: 'Copyright &copy; 2024 <a href="https://retropie.org.uk" target=_blank>The RetroPie Project</a>'
 
 # Plugins
 plugins:
@@ -25,6 +25,20 @@ markdown_extensions:
       use_pygments: true
   - pymdownx.superfences
   - pymdownx.keys
+  - pymdownx.blocks.admonition:
+     types:
+      - new
+      - note
+      - abstract
+      - info
+      - tip
+      - success
+      - question
+      - warning
+      - danger
+      - bug
+      - example
+      - quote
 
 # Configuration
 theme:
