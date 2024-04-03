@@ -1,6 +1,9 @@
 # Getting started with arcade emulation
 
-**Arcade emulation requires a different approach than console emulation. Please read this entire page before beginning your RetroPie arcade emulation project.**
+/// note | Foreword
+Arcade emulation requires a different approach than console emulation.     
+**Please** read this entire page before beginning your RetroPie arcade emulation project.
+///
 
 ## Overview
 
