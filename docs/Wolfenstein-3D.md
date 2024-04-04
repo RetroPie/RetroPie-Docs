@@ -1,4 +1,4 @@
-![](https://4.bp.blogspot.com/-KubMHEPz1Uk/VMJdFy57fTI/AAAAAAAAAEQ/xJFFjQsQZAY/s1600/wolf3d.png)
+![](images/wolfenstein-3d/wolf3d.png)
 
 ***
 
@@ -6,18 +6,28 @@ _Wolfenstein 3D is a first-person shooter video game developed by id Software an
 
 ***
 
-
 ## Port: [Wolf4SDL](https://github.com/mozzwald/wolf4sdl)
 
-Wolf4SDL can be installed from the optional menu of the RetroPie setup script. By default, shareware version 1.4 of Wolfenstein 3D will be installed.
+Wolf4SDL can be installed from the optional menu of the RetroPie setup script. By default, the shareware version 1.4 of Wolfenstein 3D will be installed, but if the proper `.wl6` files from the commercial version are copied beforehand, the installation will add launch entries for the full version. Check the next section for which files from the commercial version are needed where they can be acquired.
 
-## Playing Full Version of Wolfenstein 3D
+After the installation, EmulationStation should be restarted for the new Wolfenstein game(s) entries to show up under the _Ports_ system. 
+
+The following games are supported:
+
+ - Wolfenstein 3D and it's Demo
+ - Wolfenstein 3D - Spear of Destiny, episodes 1 to 3 and it's Demo
+
+## Playing the full version
 
 To play the full version of Wolfenstein 3D with Wolf4SDL, you need to provide your own game data which can purchased from [Steam](http://store.steampowered.com/app/2270), [GOG.com](https://www.gog.com/game/wolfenstein_3d_and_spear_of_destiny) or [3D Realms](https://3drealms.com/catalog/wolfenstein-3d_25/).
 
-The game data required are the files with *.wl6 extension (see below for list). Place them in 
+The game data required are the files with `*.wl6` extension (see below for list). Place them in 
 
-> /home/pi//RetroPie/roms/ports/wolf3d
+```
+ /home/pi/RetroPie/roms/ports/wolf3d
+```
+
+then install (or re-install, if you already did an installation) the `wolf4sdl` port from RetroPie-Setup.
 
 ## Troubleshooting
 
@@ -78,4 +88,4 @@ N.B. If your Spear of Destiny installation is missing the `.sd1` files, rename t
 	maphead.sod -> maphead.sd1
 	vswap.sod -> vswap.sd1
 
-If you have game data that do not match the md5sums above, then please post at the [RetroPie Forum](https://retropie.org.uk/forum).
+If you have game data files that do not match the MD5 sums above, but are still valid, then please post the files and their checksums over at the [RetroPie Forum](https://retropie.org.uk/forum).
