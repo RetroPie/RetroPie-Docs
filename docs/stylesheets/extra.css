@@ -53,3 +53,8 @@ article a:hover {
 .md-typeset figcaption {
   margin-top: -0.7em;
 }
+
+/* Increase the font size in admonition blocks */
+.md-typeset .admonition,.md-typeset details {
+    font-size: .75rem;
+}
