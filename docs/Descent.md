@@ -1,6 +1,5 @@
-
 ***
-![](http://www.dxx-rebirth.com/wp-content/uploads/logo.png)
+![](https://www.dxx-rebirth.com/logo.png)
 ***
 _Descent and Descent 2 are first person shooter games that were developed in the 90's for PC. DXX-Rebirth is a Source Port of the Descent and Descent 2 Engines for Windows, Mac OS, Linux (most *NIX systems), offering OpenGL graphics and effects, advanced Multiplayer, many improvements and new features._
 ***
