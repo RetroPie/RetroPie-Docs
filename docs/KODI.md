@@ -1,21 +1,25 @@
 <img src="https://kodi.tv/images/kodi-logo-with-text.svg" title="Kodi" alt="Kodi image" width="240">
 
 ***
-
-_Kodi is a Home Media Server (basically your own personal Netflix) formerly known as XBMC. Kodi is currently an optional build that can be installed from the optional menu of the setup script._
-
+_Kodi is a Home Media Server (basically your own personal Netflix), formerly known as XBMC. Kodi is currently an optional package that can be installed from the RetroPie-Setup script._
 ***
+
 ## General Information
 
-See here for more info: http://kodi.tv/
-
-See [here](http://blog.petrockblock.com/forums/topic/kodi-tab-in-emulationstation/) for more information on setting up Kodi.
+Check out the <https://kodi.tv> site for more information about Kodi.
 
 ## Installation
 
-Visit the RetroPie-Setup Screen, select Optional Packages, and select Kodi.  Installation can take 10 minutes.  After installation, you will be able to go to the Ports section and view Kodi as an option.
+Visit the RetroPie-Setup Screen, select Optional Packages, and choose Kodi. After installation, you will be able to go to the Ports section and start Kodi from the newly added entry.
 
-RetroPie currently installs Kodi 17.6 "Krypton" on Raspbian Jessie and Kodi 18 "Leia" on Raspbian Stretch and Ubuntu PC systems.
+/// info | Raspberry PI - DRM-enabled services
+For streaming services that use DRM to encrypt/scramble the video content (Netflix/Amazon Prime/etc.), Kodi needs an additional Debian package which is not automatically installed (`libwidevinecdm0`). To install it, run the following command from a login shell:
+```
+sudo apt install -y libwidevinecdm0
+```
+The same package needs to be installed in order to play DRM enabled content from a web browser (Firefox/Chromium) on the RaspiOS desktop.
+///
+
 
 ### PVRs Installation
 
