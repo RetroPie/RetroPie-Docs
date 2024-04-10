@@ -67,7 +67,9 @@ Example using WinSCP:
 
 ### Root Access
 
-**Warning! Root access is meant for advanced users only, and only for functions not possible with the `pi` user. Do not use `root` when transferring ROMs or other tasks available to the default `pi` user.**
+/// warning | Warning
+Root access is meant for advanced users only, and only for functions not possible with the `pi` user. Do **not** use the `root` account when transferring ROMs, playing games or other tasks available to the default `pi` user.
+///
 
 For more advanced users, root access can more easily allow for editing protected files such as the `config.txt` when [overclocking](Overclocking). This allows users to remotely make changes, reboot, and instantly view performance changes.
 
