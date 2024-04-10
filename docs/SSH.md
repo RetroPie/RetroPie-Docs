@@ -1,6 +1,8 @@
 Enabling SSH (Secure Shell) allows remote connection to the Raspberry Pi. This provides a means for adding roms, changing configuration, updates, and other convenient procedures by using SSH and SFTP clients to connect to the Raspberry Pi. For this instruction and for the sake of simplicity, this guide assumes that both the Raspberry Pi and the computer you are using to remotely connect to it are on the same local network.
 
-**NOTE: Your Raspberry Pi needs to be connected to the same network/router (either via Ethernet or Wifi Dongle) as the computer you are accessing it from.**
+/// info | Note
+Your Raspberry Pi needs to be connected to the same network/router (either via Ethernet/Cable or Wi-Fi) as the computer you are accessing it from.
+///
 
 Here are a few (free) popular clients to try. These need to be installed on the PC, Mac, or other computer you are using to connect *to* the Raspberry Pi:
 
