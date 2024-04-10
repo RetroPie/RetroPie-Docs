@@ -39,7 +39,10 @@ These options are saved in `/opt/retropie/configs/all/runcommand.cfg`
 
 When launching Libretro cores (those prefixed by **lr-**) the Runcommand launch menu presents the option to **Launch with verbose logging**. This outputs more information to the log file found in `/dev/shm/runcommand.log` which is useful, and often necessary, when diagnosing problems. Once the game is exited, the log file can be downloaded via [SFTP](Transferring-Roms#sftp) or viewed directly via the command line.
 
-**Note:** If launching a non-Libretro ("standalone") core, the option will not be available, but they typically will still write useful diagnostic information to `/dev/shm/runcommand.log`.
+
+/// info | Note
+If launching a non-Libretro ("standalone") core, the option will not be available, but emulators typically will still write useful diagnostic information to `/dev/shm/runcommand.log`.
+///
 
 ## Adding custom launching images
 
