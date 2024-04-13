@@ -9,15 +9,16 @@ _Laserdiscs were predecessors to the DVD. The first laserdisc game was released 
 | :---: | :---: | :---: | :---: | :---: |
 | [Daphne](http://www.daphne-emu.com/site3/index_hi.php) | daphne  | .daphne | none | /opt/retropie/configs/daphne/dapinput.ini |
 | [Hypseus](https://github.com/DirtBagXon/hypseus-singe) | daphne  | .daphne | none | /opt/retropie/configs/daphne/hypinput.ini |
+| [lr-dirksimple](https://github.com/icculus/DirkSimple) | daphne | .ogv | none | /opt/retropie/configs/daphne/retroarch.cfg |
 
-## Emulator: [daphne](http://www.daphne-emu.com/site3/index_hi.php), [hypseus](https://github.com/DirtBagXon/hypseus-singe)
+## Emulator: [daphne](http://www.daphne-emu.com/site3/index_hi.php), [hypseus](https://github.com/DirtBagXon/hypseus-singe), [dirksimple](https://github.com/icculus/DirkSimple) 
 
 **daphne** was developed by Matt Ownby. For the best replication of Laserdisc games check out his Dexter project [HERE](http://www.daphne-emu.com/mediawiki/index.php/DexterFAQ)  
 **hypseus** is a SDL2 fork of the Daphne codebase. This version includes **Singe** game support.
+**DirkSimple** is a FMV/laserdisc game player. It uses the original footage from the supported games but not their ROMs. The game logic has been implemented from scratch in Lua. It currently supports 2 games: _Dragon's Lair_ and _Cliff Hanger_. RetroPie includes the Libretro core version, not the standalone emulator.
 
 ## ROMS
-
-Accepted extensions: **.daphne**
+Accepted extensions: **.daphne** and **ogv**
 
 Place your Laserdisc roms in 
 
@@ -63,6 +64,23 @@ roms
 |    +-- roms                   (No Singe data but required)
 |
 ```
+### DirkSimple
+The Libretro core supports playing from an **.ogv** file, which is an Ogg-Theora video created from the original Daphne DVD MPEG files. To create the **.ogv** file from a standard Daphne/Hypseus `.daphne` game folder (see above), the `ffmpeg` is needed utility is needed, installable by running `sudo apt install -y ffpmeg`).
+
+Run the commands:
+
+``` sh
+cd $HOME/RetroPie/roms/daphne
+
+# for Dragon's Lair
+ffmpeg -i dlair.daphne/lair.m2v -i dlair.daphne/lair.ogg -codec:v libtheora -qscale:v 7 -codec:a libvorbis -qscale:a 5 -pix_fmt yuv420p lair.ogv
+
+# for Cliff Hanger
+ffmpeg -i cliff.daphne/cliff.m2v -i cliff.daphne/cliff.ogg -codec:v libtheora -qscale:v 7 -codec:a libvorbis -qscale:a 5 -pix_fmt yuv420p cliff.ogv
+```
+Check that the **ogv** files are correctly placed in the `$HOME/RetroPie/roms/daphne` after the conversion with `ffmpeg`, then restart EmulationStation for the new game entries to appear. Choose the `lr-dirksimple` libretro core as the emulator for the new files using the [runcommand launch menu](https://retropie.org.uk/docs/Runcommand/#runcommand-launch-menu.
+
+More info about the **ogv** format understood by DirkSimple can be found at <https://github.com/icculus/DirkSimple#how-do-i-use-this>.
 
 ## Controls
 ### daphne
