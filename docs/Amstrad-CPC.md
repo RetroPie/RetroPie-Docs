@@ -8,39 +8,30 @@ _The Amstrad CPC (short for Colour Personal Computer) is a series of 8-bit home 
 
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
-| [lr-caprice32](https://github.com/libretro/libretro-cap32.git), [CapriceRPI](https://github.com/KaosOverride/CapriceRPI.git) | amstradcpc  | .cdt .cpc .dsk .zip | none | /opt/retropie/configs/armstradcpc/retroarch.cfg |
+| [lr-caprice32](https://github.com/libretro/libretro-cap32.git), [CapriceRPI](https://github.com/KaosOverride/CapriceRPI.git) | amstradcpc  | .cdt .cpc .cpr .dsk .m3u .tap .zip | none | /opt/retropie/configs/armstradcpc/retroarch.cfg |
 
 ## Emulators: [CapriceRPI](https://github.com/KaosOverride/CapriceRPI.git), [lr-caprice32](https://github.com/libretro/libretro-cap32.git)
 
 ## ROMS
 
-Accepted File Extensions: **.cdt .cpc .dsk .zip**
+Accepted File Extensions: **.cdt .cpc .cpr .dsk .m3u .tap .zip**
 
-Place your Amstrad CPC ROMs in
+Place your Amstrad CPC ROMs in:
 ```
 /home/pi/RetroPie/roms/amstradcpc
 ```
+
+Caprice32 supports M3U type playlists (`.m3u`) for multi-disc games. This makes it easy to switch between discs when needed using the RetroArch's _Disk Control_ interface. Additionally, the `SELECT + L` and `SELECT + R` gameoad combinations can be used to load the previous or next disc in the `.m3u` playlist.
+
 ## Joystick Controls Setup
 As usual for a "classic" computer, a keyboard is needed for optimum input control. Flight simulators or complex building simulations require a variety of key combinations. For further input we need a connected (real) keyboard or a **Virtual Keyboard**. This can be called with the **START+Y-Button** of your PAD in lr-caprice32 (older versions < 4.5 make use of Y-Button only)
 
 When we talk about joysticks, these are directly interpreted as cursor inputs by the CPC. The fire button is displayed as `X`. So if you press right HAT button a right arrow will be printed. So you see the CPC interprets the joysticks input as ASCII code, very unsimilar to the Atari 2600 or C64. But the devices use all a D-SUB-9 connector and theoretically even a Megadrive/Genesis PAD could be connected to this machines (afaik Start or Select button bridges 5V and Ground -- risk of a short circuit with possible damage to original hardware). 
 
 ### JoyPad setup for lr-caprice32
-By default the `RetroPad` is selected as controller input we have to select `Amstrad Joystick` to make the Virtual Keyboard work. Enter the retroarch core by using `SELECT + Y` on your pad, now use *Retroarch -> Quickmenu -> Controls -> User [1-4] Select Device Type Amstrad Joystick* and save the overlay.
+By default the `RetroPad` is selected as controller input, we have to select `Amstrad Joystick` to make the Virtual Keyboard work. Enter the retroarch core by using `SELECT + Y` on your pad, now use *Retroarch -> Quickmenu -> Controls -> User [1-4] Select Device Type Amstrad Joystick* and save the input mapping.
 
 Now you can launch the **Virtual Keyboard** to configurate any game. If the overlay window seems to stuck then press Select-Button on your pad to activate it and move its white cursor with the HATs. A-Button selects the character.
-
-A more elegant way is to directly edit the configuration file with `nano /opt/retropie/configs/amstradcpc/retroarch.cfg` and add `input_libretro_device_p1 = "513"`. So the file could look like this
-
-```
-# Settings made here will only override settings in the global retroarch.cfg if placed above the #include line
-
-input_remapping_directory = "/opt/retropie/configs/amstradcpc/"
-input_libretro_device_p1 = "513"
-input_libretro_device_p2 = "513"
-
-#include "/opt/retropie/configs/all/retroarch.cfg"
-```
 
 ### JoyPad setup for CapriceRPI
 Default keys:
