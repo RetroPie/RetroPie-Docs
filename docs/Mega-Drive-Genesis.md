@@ -86,13 +86,15 @@ key_quit = escape
 joy_quit = joystick0-button12
 ```
 
-### Switching Emulation Station to the Genesis logo:
+### Switching EmulationStation to use Sega Genesis instead of Mega Drive
 
-If you are from the United States it is likely that you had the Sega Genesis rather than the Sega Mega Drive. If you want EmulationStation to show the genesis graphics instead of Mega Drive then you should create a file `/opt/retropie/configs/all/platforms.cfg` with the following contents (note this requires at least v4.1.6 of the RetroPie-Setup script).
+If you are from the United States it is likely that you had the Sega Genesis rather than the Sega Mega Drive. If you want EmulationStation to use the Genesis graphics instead of Mega Drive then you can create a file `/opt/retropie/configs/all/platforms.cfg` with the following contents:
 
-```
-megadrive_theme="genesis"
+``` ini
+megadrive_fullname="Sega Genesis"
+megadrive_name="genesis"
 megadrive_platform="genesis"
+megadrive_theme="genesis"
 ```
 
 Once this is done, please update any of the currently installed Mega Drive emulators from RetroPie-Setup and Emulation Station will now use the Genesis logo. Scraping from within Emulation Station should also return Genesis artwork.
