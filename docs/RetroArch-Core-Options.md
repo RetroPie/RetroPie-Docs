@@ -8,7 +8,9 @@ Whilst a ROM for the Core in question is running, enter the RGUI via holding Pla
 
 Within this sub-menu are all the options available to that Core. Depending on the Core used, the options could be organized under _Categories_, which group related options under a sub-menu. Navigate to the option that you want to change and press left and right to select the desired value or **RetroPad A** to open the list of available values and select from it. To apply, just close the RGUI/menu using the same Hotkey combination used to open it (**Hotkey+X**). 
 
-**NOTE:** Some options will require you to restart the ROM to take effect, they're usually marked as such in the list of options. Core Options are saved automatically when you exit the ROM/close the emulator.
+/// tip | Note
+ Some options will require you to restart the ROM to take effect, they're usually marked as such in the list of options. Core Options are saved automatically when you exit the ROM/close the emulator.
+ ///
 
 ### Setting Core Options per-ROM
 
