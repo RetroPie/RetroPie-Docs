@@ -13,9 +13,7 @@ _The Panasonic 3do Real Multiplayer was a Home Video Game Console developed by t
 
 ## Emulator: [lr-opera](https://github.com/libretro/opera-libretro) (formerly known as `lr-4do`).
 
-**lr-opera** is will be slow on the Pi3 and earlier models, however some games will run at playable speeds on the Pi4.
-
-With the Odroid-XU4, performance has increased and made many games playable as of July 2018 when development was taken over by a newer developer. CPU threading being added for the CPU/GPU found in the XU4 continues to increase performance as of September 2018.
+**lr-opera** will be slow on the Pi3 and earlier models, however some games will run at playable speeds on the Pi4/Odroid-XU4/
 
 ## ROMS
 Accepted File Extensions: **.iso** **.bin/cue** **.chd** **.zip**
@@ -55,6 +53,7 @@ For certain Japanese games a second "Kanji" ROM is necessary.
 lr-opera utilises Retroarch configurations
 
 Add custom retroarch controls to the retroarch.cfg file in
+
 ```shell
 /opt/retropie/configs/3do/retroarch.cfg
 ```
