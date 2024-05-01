@@ -12,15 +12,17 @@ EmulationStation does not configure the operating system at all. You need to hav
 
 NOTE: If you need to exit from EmulationStation to back to the Raspbian operating system, then press <kbd>F4</kbd> while in EmulationStation to exit and go to the console (terminal).
 
-> :exclamation: All terminal commands and configuration settings are case sensitive and must be entered exactly as written!
+/// warn | Important
+All terminal commands and configuration settings are case sensitive and must be entered exactly as written!
+/// 
 
 #### Raspberry Pi Sound in Raspbian
 
-If you have a Raspberry Pi, this will cover the basic sound configuration in Raspbian to get the platform working.
+If you have a Raspberry Pi, this will cover the basic sound configuration in RaspiOS.
 
 ##### Using the built-in 3.5mm headphone jack
 
-If you have a standard RPi and want to use the 3.5mm headphone jack then you are in luck. You're pretty much ready to go without any real modification, as the RPi will automatically use the headphone jack when it senses a plug in the socket. 
+If you have a standard RPI and want to use the 3.5mm headphone jack then you are in luck. You're pretty much ready to go without any real modification, as the RPi will automatically use the headphone jack when it senses a plug in the socket. 
 
 In some instances though, you will need to manually modify the raspberry pi boot config file (`sudo nano /boot/config.txt`) and ADD the following lines to those already there: 
 
