@@ -4,7 +4,7 @@ This is a guide on how to build RetroPie on the Odroid C1/C1+/C2. This is assumi
 
 HardKernel's releases for Ubuntu can be downloaded from <https://wiki.odroid.com/odroid-c2/os_images/ubuntu/ubuntu>.
 
-Write the .img file to your SD card or EMMC module with something like [Win32DiskImager](http://sourceforge.net/projects/win32diskimager/) or [RPI Imager](https://www.raspberrypi.com/software/). The latter can write the `.xz` file directly, while the former needs  a program like [7zip](http://www.7-zip.org/download.html to extract the `.img` file from the `.xz` compressed archive.  
+Write the .img file to your SD card or EMMC module with something like [Win32DiskImager](http://sourceforge.net/projects/win32diskimager/) or [RPI Imager](https://www.raspberrypi.com/software/). The latter can write the `.xz` file directly, while the former needs  a program like [7zip](http://www.7-zip.org/download.html) to extract the `.img` file from the `.xz` compressed archive.  
 
 ## Install RetroPie:
 
