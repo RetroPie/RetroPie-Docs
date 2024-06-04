@@ -30,7 +30,7 @@ If the system still doesn't show up in Emulation Station, only emulators with RO
 
 ### Why can't I SSH as root anymore?
 
-The `root` account password is disabled by default (as is the case for Raspberry Pi OS and many other Linux distros). To allow remote SSH access using the `root` account:
+The `root` account login via SSH is disabled by default (as is the case for many other Linux distros). To allow remote SSH access using the `root` account:
 
 * Enable `root` login with SSH by editing the SSH configuration file. Run:
     
@@ -51,12 +51,6 @@ The `root` account password is disabled by default (as is the case for Raspberry
    `sudo passwd root`
    
    and pick a reasonable complex password for the account.
-
-
-For more details about the `root` account and its usage, see:
-
-* <https://www.raspberrypi.org/documentation/computers/using_linux.html#root-and-sudo>
-* <http://elinux.org/R-Pi_Troubleshooting#I_don.27t_know_the_root_password>
 
 ### Reset ownership/permissions of /home/pi/RetroPie roms
 
