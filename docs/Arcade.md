@@ -15,9 +15,8 @@ Each emulator is optimised for different hardware and different games so read th
 
 RetroPie's arcade emulators come in two main flavors: [MAME](MAME) and [FinalBurn](FinalBurn-Neo).
 
-[MAME](MAME) is the most well-known and works with thousands of games, its focus is preservation. 
-
-[FinalBurn](FinalBurn-Neo) focus on 2D systems and playability, it includes support for features that have no place in a preservation-focused emulator (netplay, runahead, retroachievements, ...)
+ * [MAME](MAME) is the most well-known and works with thousands of games, its focus is preservation. 
+ * [FinalBurn](FinalBurn-Neo) focuses on 2D systems and playability, it includes support for features that have no place in a preservation-focused emulator (netplay, runahead, retroachievements, ...)
 
 RetroPie includes multiple versions of both MAME and FinalBurn. Older versions usually require less processing power, but newer versions support more games and feature more accurate emulation.
 
@@ -29,6 +28,14 @@ Use this table as a guide when choosing an emulator version:
 |1 or Zero| `mame4all` | `pi-fba`|
 
 Learn about other available versions on the pages about [MAME](MAME) and [FinalBurn Neo](FinalBurn-Neo).
+
+/// abstract | Other arcade emulators
+For certain arcade systems that are not supported by neither MAME nor FinalBurn, there are dedicated emulators available in RetroPie:
+
+ * [Supermodel](Supermodel) - a Sega Model 3 emulator, supporting about 27 games. The list of supported games is at <https://www.supermodel3.com/About.html>.
+ * [Flycast](Dreamcast) - a Dreamcast emulator that plays the NAOMI and Sammy Atomiswave arcade games.
+
+///
 
 ## Step 2: Select the right ROM set
 
