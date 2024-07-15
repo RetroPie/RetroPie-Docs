@@ -11,9 +11,9 @@ Once the nodejs application is launched, you just have to plug your gamepad cont
 
 ## Use it as a Smartphone Application (Chrome for Android)
 
-**Note that you need to configure the virtual gamepad from emulationstation while in the web browser first BEFORE you create the application on your smartphone otherwise the input configuration in emulationstation will not work.** 
+**Note** you need to configure the virtual gamepad from EmulationStation while in the web browser first _BEFORE_ you create the application on your smartphone otherwise the input configuration in emulationstation will not work.*
 
-With the add to homescreen chrome feature, you can easily use virtual gamepads application without launching the browser each time you want to play.
+With the add to homescreen Chrome feature, you can easily use virtual gamepads application without launching the browser each time you want to play.
 
 With only 3 clicks, virtual gamepads web application becomes a standalone application.
 
@@ -32,44 +32,6 @@ Because it's difficult to spot the right place in a touch screen without looking
 To know if we pressed a button with success, the web application provides an haptic feedback which can be easily deactivated by turning off the vibrations of the phone.
 
 **You will need to configure your controller with EmulationStation and RetroArch just like you would any other controller.**
-
-
-You can also install manually using these steps:
-
-### Install Node.js
-
-```
-sudo apt update && sudo apt upgrade
-wget http://node-arm.herokuapp.com/node_archive_armhf.deb
-sudo dpkg -i node_archive_armhf.deb
-rm node_archive_armhf.deb
-```
-
-:zap: if for whatever reason is returning Error 502 bad gateway you can follow [source](https://www.raspberrypi.org/forums/viewtopic.php?t=130217)
-
-```
-curl -sL https://deb.nodesource.com/setup_4.x | sudo bash -
-sudo apt install -y build-essential python-dev nodejs npm
-```
-
-### Update Node.js and NPM
-
-```
-sudo npm cache clean -f
-sudo npm install -g n
-sudo n 9
-sudo npm install -g npm
-```
-
-### Install Virtual Gamepad (Must Be Run As Root!)
-
-```
-sudo -i
-cd /
-git clone https://github.com/miroof/node-virtual-gamepads
-cd node-virtual-gamepads
-npm install
-```
 
 ### Enable Virtual Gamepad on Boot
 
@@ -91,7 +53,7 @@ After all this mess you will realize 2 things:
 
 **/opt/retropie/configs/all/retroarch-joypads/Virtualgamepad.cfg**
 
-```
+``` ini
 input_device = "Virtual gamepad"
 input_driver = "udev"
 input_r_btn = "5"
