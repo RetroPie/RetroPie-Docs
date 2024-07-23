@@ -9,12 +9,13 @@ _The Nintendo Entertainment System (NES) is an 8-bit home video game console tha
 | :---: | :---: | :---: | :---: | :---: |
 | [lr-fceumm](https://github.com/libretro/libretro-fceumm) | nes  | .7z .fds .nes .zip | disksys.rom, gamegenie.nes (optional) | /opt/retropie/configs/nes/retroarch.cfg |
 | [lr-nestopia](https://github.com/libretro/nestopia) | nes  | .7z .fds .nes .zip | disksys.rom | /opt/retropie/configs/nes/retroarch.cfg |
+| [lr-mesen](https://github.com/libretro/mesen) | nes  | .fds .nes .zip | disksys.rom | /opt/retropie/configs/nes/retroarch.cfg |
 | [lr-quicknes](https://github.com/libretro/QuickNES_Core) | nes  | .7z .nes .zip | none | /opt/retropie/configs/nes/retroarch.cfg |
 | [lr-fbneo](https://github.com/libretro/FBNeo) | nes  | .7z .zip | fdsbios.zip (containing `disksys.rom`) | /opt/retropie/configs/nes/retroarch.cfg |
 
 If you want Famicom Disk System as a separate system, see the wiki page [HERE](Famicom-Disk-System)
 
-## Emulators: [lr-nestopia](https://github.com/libretro/nestopia), [lr-fceumm](https://github.com/libretro/libretro-fceumm), [lr-quicknes](https://github.com/libretro/QuickNES_Core), [lr-fbneo](https://github.com/libretro/FBNeo)
+## Emulators: [lr-nestopia](https://github.com/libretro/nestopia), [lr-fceumm](https://github.com/libretro/libretro-fceumm), [lr-mesen](https://github.com/libretro/mesen), [lr-quicknes](https://github.com/libretro/QuickNES_Core), [lr-fbneo](https://github.com/libretro/FBNeo)
 
 ## ROMS
 
