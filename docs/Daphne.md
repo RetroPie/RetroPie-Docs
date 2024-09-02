@@ -13,7 +13,7 @@ _Laserdiscs were predecessors to the DVD. The first laserdisc game was released 
 
 ## Emulator: [daphne](http://www.daphne-emu.com/site3/index_hi.php), [hypseus](https://github.com/DirtBagXon/hypseus-singe), [dirksimple](https://github.com/icculus/DirkSimple) 
 
-**daphne** was developed by Matt Ownby. For the best replication of Laserdisc games check out his Dexter project [HERE](http://www.daphne-emu.com/mediawiki/index.php/DexterFAQ)  
+**daphne** was developed by Matt Ownby. For the best replication of Laserdisc games check out his Dexter project [HERE](https://www.daphne-emu.com:9443/mediawiki/index.php/DexterFAQ)  
 **hypseus** is a SDL2 fork of the Daphne codebase. This version includes **Singe** game support.
 **DirkSimple** is a FMV/laserdisc game player. It uses the original footage from the supported games but not their ROMs. The game logic has been implemented from scratch in Lua. It currently supports 2 games: _Dragon's Lair_ and _Cliff Hanger_. RetroPie includes the Libretro core version, not the standalone emulator.
 
@@ -298,7 +298,7 @@ Example Dragon's Lair Commands file in
 -nocrc -noissues -nolog -noserversend -latency 950 -x 640 -y 480 -bank 1 00110111 -bank 0 10011000
 ```
 
-See [here](http://www.daphne-emu.com/mediawiki/index.php/CmdLine) for more **daphne** cmdline parameters. **hypseus** has extended parameters defined [here](https://github.com/DirtBagXon/hypseus-singe#extended-arguments-and-keys).
+See [here]([http://www.daphne-emu.com/mediawiki/index.php/CmdLine](https://www.daphne-emu.com:9443/mediawiki/index.php/CmdLine)) for more **daphne** cmdline parameters. **hypseus** has extended parameters defined [here](https://github.com/DirtBagXon/hypseus-singe#extended-arguments-and-keys).
 
 ### Troubleshooting
 
