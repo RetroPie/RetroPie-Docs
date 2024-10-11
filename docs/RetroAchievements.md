@@ -7,7 +7,7 @@ RetroAchievements are a way to log your achievements on oldschool console games.
 
 You first need to create an account at [retroachievements.org](https://retroachievements.org/) and then add your credentials to `/opt/retropie/configs/all/retroarch.cfg`
 
-```
+``` ini
 cheevos_username = "yourusername"
 cheevos_password = "yourpassword"
 cheevos_enable = true
@@ -15,7 +15,7 @@ cheevos_enable = true
 
 Below you can see all the RetroAchievements related options that you can use in the `retroarch.cfg` and the explanation in the comments:
 
-```
+``` ini
 ## RetroAchievements configs
 
 # Enable the retroachievements feature.
@@ -60,7 +60,7 @@ cheevos_test_unofficial = "false"
 ```
 
 
-## Supported Systems:
+## Supported Systems
 
 * NES
 * SNES
@@ -98,7 +98,8 @@ A common user question is "How do I increase the size of the RetroAchievements m
 Actually this configuration is done by changing the font size of all the RetroArch widgets, not only the RetroAchievements related ones. How to do it:
 
 Open the file `/opt/retropie/configs/all/retroarch.cfg` and add the following lines:
-```
+
+``` ini
 # Change Widget Size
 menu_widget_scale_auto = "false"
 menu_widget_scale_factor = "2.000000"
@@ -106,6 +107,7 @@ menu_widget_scale_factor_windowed = "2.000000"
 ```
 
 If you prefer to configure RetroArch with RGUI (per core), you can go to `Settings` -> `On-screen Display` -> `On-screen Notifications`:
+
 * Set `Auto Scale Graphics Widgets` to `OFF`
 * Set `Graphics Widgets Scale Override` to what you like.
 
