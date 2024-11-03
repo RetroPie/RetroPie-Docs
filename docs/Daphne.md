@@ -298,7 +298,7 @@ Example Dragon's Lair Commands file in
 -nocrc -noissues -nolog -noserversend -latency 950 -x 640 -y 480 -bank 1 00110111 -bank 0 10011000
 ```
 
-See [here]([http://www.daphne-emu.com/mediawiki/index.php/CmdLine](https://www.daphne-emu.com:9443/mediawiki/index.php/CmdLine)) for more **daphne** cmdline parameters. **hypseus** has extended parameters defined [here](https://github.com/DirtBagXon/hypseus-singe#extended-arguments-and-keys).
+See [here](https://www.daphne-emu.com:9443/mediawiki/index.php/CmdLine) for more **daphne** cmdline parameters. **hypseus** has extended parameters defined [here](https://github.com/DirtBagXon/hypseus-singe#extended-arguments-and-keys).
 
 ### Troubleshooting
 
