@@ -6,15 +6,15 @@ The runcommand is the script responsible to launch your emulators/games. This pa
 
 Each time you load a ROM there is an option to open what is called the Runcommand Launch Menu. This is accessed by pressing any button on a controller (the bottom face button is recommended as to not accidentally change anything) or pressing any key on a keyboard, while the prompt in the image below is displayed or right after a launching image disappears, if you have those set up.
 
-<img src="https://user-images.githubusercontent.com/31816814/85049757-ccab9480-b19d-11ea-984e-27941838440e.png" width="80%" title="Runcommand launch dialog">
+<img src="/images/runcommand/runcommand-splash.png" width="80%" title="Runcommand launch dialog">
 
 Once you press any button on a controller or any key on a keyboard, it will open up into this menu. The menu options will vary depending on the system you are running and version of RetroPie you are using:
 
-<img src="https://user-images.githubusercontent.com/31816814/85049707-c1586900-b19d-11ea-98a9-35752f39108d.png" width="80%" title="Runcommand launch menu">
+<img src="/images/runcommand/runcommand-menu.png" width="80%" title="Runcommand launch menu">
 
 The first two options control which emulator is used for the current system or ROM, if there is more than one emulator available:
 
-<img src="https://user-images.githubusercontent.com/31816814/85049729-c7e6e080-b19d-11ea-88ec-74d32981239d.png" width="80%" title="Choosing an Emulator">
+<img src="/images/runcommand/runcommand-emulator.png" width="80%" title="Choosing an Emulator">
 
 This preference is saved in `/opt/retropie/configs/all/emulators.cfg`
 
@@ -24,14 +24,16 @@ The second two options select video modes for the current system or ROM. This pr
 
 You can enable and disable different functions of the Runcommand Launch Menu. This is configured via RetroPie-Setup or via the runcommand configuration option in the RetroPie area of Emulation Station.
 
-<img title="Runcommand configuration options" src="https://user-images.githubusercontent.com/31816814/85050776-43955d00-b19f-11ea-98a1-279faded0f3d.png" width="80%">
+<img title="Runcommand configuration options" src="/images/runcommand/runcommand-config.png" width="80%">
 
 
 - **Launch Menu:** Enable or disable the runcommand launch menu
 - **Launch Menu Art:** If enabled, any scraped box art you have for a game will show up as a splashscreen while your game loads up.
 - **Launch Menu Joystick Control:** You can disable the joystick support so that your kids don't accidentally mess up settings. Note that this only disables the joystick, not the keyboard so if you have joysticks that act like a keyboard then of course disabling this option will not work.
 - **Launch image delay in seconds:** Set how many seconds the [launching image](#adding-custom-launching-images) will be displayed before start the game.
-- **CPU Configuration:** Allows setting the CPU governor (default is ondemand on RetroPie on the Raspberry Pi). You can use this to set the CPU governor - ie to "performance", which will be set on launching a game, and reset after. More information regarding CPU governors can be found in the Linux Kernel documentation - https://www.kernel.org/doc/Documentation/cpu-freq/governors.txt
+- **CPU Configuration:** Allows setting the CPU governor (default is ondemand on RetroPie on the Raspberry Pi). You can use this to set the CPU governor - ie to "performance", which will be set on launching a game, and reset after. More information regarding CPU governors can be found in the Linux Kernel documentation, see <https://www.kernel.org/doc/Documentation/cpu-freq/governors.txt>.
+- **Use old Joy2Key**: Allows choosing between the old Joy2Key implementation (created without `SDL2` and `uinput`) and the current implementation. The old version is simpler and starts up faster, but has less features. The old version is chosen automatically only for very resource constrained platforms (Pi1/Zero). Don't choose to enable this option unless you find that the current Joy2Key implementation is not suited for your system.    
+*NOTE*: This option chooses which Joy2Key version is used for both the RetroPie-Setup menus and the Runcommand's menus.
 
 These options are saved in `/opt/retropie/configs/all/runcommand.cfg`
 
