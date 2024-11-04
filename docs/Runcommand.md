@@ -6,15 +6,15 @@ The runcommand is the script responsible to launch your emulators/games. This pa
 
 Each time you load a ROM there is an option to open what is called the Runcommand Launch Menu. This is accessed by pressing any button on a controller (the bottom face button is recommended as to not accidentally change anything) or pressing any key on a keyboard, while the prompt in the image below is displayed or right after a launching image disappears, if you have those set up.
 
-<img src="/images/runcommand/runcommand-splash.png" width="80%" title="Runcommand launch dialog">
+<img src="../images/runcommand/runcommand-splash.png" width="80%" title="Runcommand launch dialog">
 
 Once you press any button on a controller or any key on a keyboard, it will open up into this menu. The menu options will vary depending on the system you are running and version of RetroPie you are using:
 
-<img src="/images/runcommand/runcommand-menu.png" width="80%" title="Runcommand launch menu">
+<img src="../images/runcommand/runcommand-menu.png" width="80%" title="Runcommand launch menu">
 
 The first two options control which emulator is used for the current system or ROM, if there is more than one emulator available:
 
-<img src="/images/runcommand/runcommand-emulator.png" width="80%" title="Choosing an Emulator">
+<img src="../images/runcommand/runcommand-emulator.png" width="80%" title="Choosing an Emulator">
 
 This preference is saved in `/opt/retropie/configs/all/emulators.cfg`
 
@@ -24,7 +24,7 @@ The second two options select video modes for the current system or ROM. This pr
 
 You can enable and disable different functions of the Runcommand Launch Menu. This is configured via RetroPie-Setup or via the runcommand configuration option in the RetroPie area of Emulation Station.
 
-<img title="Runcommand configuration options" src="/images/runcommand/runcommand-config.png" width="80%">
+<img title="Runcommand configuration options" src="../images/runcommand/runcommand-config.png" width="80%">
 
 
 - **Launch Menu:** Enable or disable the runcommand launch menu
