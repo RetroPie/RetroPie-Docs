@@ -16,7 +16,7 @@ See also: [shadow mask](https://en.wikipedia.org/wiki/Shadow_mask)
 
 This describes the effect of lighter colours (particularly white) bleeding into their surrounding pixels, again helping to make things look less jagged:
 
-<img src="/images/shaders/1478613483800-upload-9a6df26e-794d-42b0-a0af-feeb176b488f.png" width="25%" height="25%" />
+<img src="../images/shaders/1478613483800-upload-9a6df26e-794d-42b0-a0af-feeb176b488f.png" width="25%" height="25%" />
 
 ### Signal distortion
 
@@ -26,7 +26,7 @@ The cabling used to connect consoles to CRTs was typically analogue and introduc
 
 Rather than today's flat screen displays, CRTs were not flat, and always featured some degree of curvature to the glass screen giving a 'fishbowl effect':
 
-<img src="/images/shaders/6168494768_7cc6296f43_b.jpg" width="25%" height="25%" />
+<img src="../images/shaders/6168494768_7cc6296f43_b.jpg" width="25%" height="25%" />
 
 ## RetroPie Alternatives
 
@@ -97,6 +97,6 @@ WIP
 
 Retroarch includes the facility to apply a basic bilinear smoothing filter across the screen. This filter reduces pixelation at essentially no performance cost, but gives a very soft image that may not be to everyone's taste. Here is example of it off and on:
 
-![](/images/shaders/1478902457187-upload-4c1d9b59-a473-43d3-9a56-cc50506ef690.png)
+![Bilinear Filter Image](images/shaders/1478902457187-upload-4c1d9b59-a473-43d3-9a56-cc50506ef690.png)
 
 This setting can be enabled in the [Configuration Editor](Configuration-Editor). Look for 'Video Smoothing'. It won't affect shaders, which control this setting independently.
