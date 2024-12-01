@@ -78,11 +78,6 @@ extra:
 extra_css:
   - 'stylesheets/extra.css'
 
-# Google Analytics
-google_analytics:
-  - 'UA-76418872-1'
-  - 'auto'
-
 nav:
 - Home: index.md
 - First Installation: First-Installation.md
