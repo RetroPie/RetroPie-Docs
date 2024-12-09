@@ -2,7 +2,7 @@ The configuration editor allows a user to edit the configurations for RetroPie a
 
 Manual configurations can also be set with the use of a keyboard.
 
-The Configuration Editor can be accessed from the RetroPie Menu or through the [RetroPie Setup Script](Updating-RetroPie) and navigate to **Setup ▶ Configuration / tools ▶ configedit **
+The Configuration Editor can be accessed from the RetroPie menu or through the [RetroPie Setup Script](Updating-RetroPie) and navigate to **Setup ▶ Configuration / tools ▶ configedit**
 
 When changing settings, there are notes at the bottom of the screen that explain each setting and what they do.
 
