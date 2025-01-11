@@ -96,8 +96,7 @@ fi
 
 ### Changing user and group ownership of files
 
-Use `chown $user: [PATH]` instead of `chown $user:$user [PATH]` - the empty group parameter will cause chown to use the users login group. This resolves issues on systems where the user doesn't have their own group (eg. where all users are in a `users` group).
-
+Use `chown "$__user":"$__group" [PATH]` instead of just `chown $user [PATH]` to change ownership. This should handle systems where the installation user doesn't have their own group (eg. where all users are in a `users` group).
 
 ## Naming Conventions
 
