@@ -6,7 +6,7 @@ _The Tandy Colour Computer series were home computers originally released by the
 
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
-| [XRoar](http://www.6809.org.uk/xroar/) | coco  | .cas .wav .bas .asc .dmk .jvc .os9 .dsk .vdk .rom .ccc .sna | bas13.rom, extbas11.rom, coco3.rom, coco3p.rom | hardcoded |
+| [XRoar](http://www.6809.org.uk/xroar/) | coco  | .bin .cas .wav .bas .asc .dmk .jvc .os9 .dsk .vdk .rom .ccc .sna | bas13.rom, extbas11.rom, coco3.rom, coco3p.rom | hardcoded |
 
 ## Emulator: [XRoar](http://www.6809.org.uk/xroar/)
 
