@@ -63,7 +63,7 @@ Once you've made the change, save the file, restart your Raspberry Pi, and move 
 
 If you want better sound than the standard on-board sound chip can provide, then the next level up is an external USB Audio dongle. These plug into a USB port on the RPi and allow you have better quality sound.  
 
-You don't need to disable the on-board sound if you don't want to, but I would recommend it as can simply ALSA configuration and avoid some configuration issues later. The commands to enable USB audio and disable the on-board sound card are below:
+You don't need to disable the on-board sound if you don't want to, but I would recommend it as can simplify ALSA configuration and avoid some configuration issues later. The commands to enable USB audio and disable the on-board sound card are below:
 
 Modify the raspberry pi boot config file (`sudo nano /boot/config.txt`) and comment out the `dtparam=audio=on` line by putting a `#` in front of it like this: 
 ````
@@ -84,7 +84,7 @@ Once you've made the change, save the file, restart your Raspberry Pi, and move 
 
 If you want better sound than the standard on-board sound chip can provide, then you can look at something like a Justboom or a Hifiberry RPi HAT. These add on cards connect to the RPi GPIO port and allow you have audiophile quality sound. They really provide excellent sound and are the option you should choose if you are building a top quality arcade machine.
 
-You don't need to disable the on-board sound if you don't want to, but I would recommend it as can simply ALSA configuration and avoid some configuration issues later. The list below is a list of settings for common cards:
+You don't need to disable the on-board sound if you don't want to, but I would recommend it as can simplify ALSA configuration and avoid some configuration issues later. The list below is a list of settings for common cards:
 
 **For the JustBoom Amp, Amp Zero, DAC and DAC Zero**
 
