@@ -53,7 +53,7 @@ This information is used for scraping. This tag is optional so it may be best to
 
 `<theme>`
 
-This is the theme EmulationStation loads from the current theme set. You can use an existing theme, e.g. `<theme>nes</theme>`, or you can create a new one. If you do the latter, then it may an idea to make it the same as the `<name>` tag.
+This is the theme EmulationStation loads from the current theme set. You can use an existing theme, e.g. `<theme>nes</theme>`, or you can create a new one. If you do the latter, then it may be an idea to make it the same as the `<name>` tag.
 
 Here is an example entry for a section for rom hacks in a custom `es_systems.cfg` file that will run on a number of emulators, Atari 2600, NES, Megadrive, and SNES.
 

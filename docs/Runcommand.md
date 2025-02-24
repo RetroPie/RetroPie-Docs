@@ -30,7 +30,7 @@ You can enable and disable different functions of the Runcommand Launch Menu. Th
 - **Launch Menu:** Enable or disable the runcommand launch menu
 - **Launch Menu Art:** If enabled, any scraped box art you have for a game will show up as a splashscreen while your game loads up.
 - **Launch Menu Joystick Control:** You can disable the joystick support so that your kids don't accidentally mess up settings. Note that this only disables the joystick, not the keyboard so if you have joysticks that act like a keyboard then of course disabling this option will not work.
-- **Launch image delay in seconds:** Set how many seconds the [launching image](#adding-custom-launching-images) will be displayed before start the game.
+- **Launch image delay in seconds:** Set how many seconds the [launching image](#adding-custom-launching-images) will be displayed before starting the game.
 - **CPU Configuration:** Allows setting the CPU governor (default is ondemand on RetroPie on the Raspberry Pi). You can use this to set the CPU governor - ie to "performance", which will be set on launching a game, and reset after. More information regarding CPU governors can be found in the Linux Kernel documentation, see <https://www.kernel.org/doc/Documentation/cpu-freq/governors.txt>.
 - **Use old Joy2Key**: Allows choosing between the old Joy2Key implementation (created without `SDL2` and `uinput`) and the current implementation. The old version is simpler and starts up faster, but has less features. The old version is chosen automatically only for very resource constrained platforms (Pi1/Zero). Don't choose to enable this option unless you find that the current Joy2Key implementation is not suited for your system.    
 *NOTE*: This option chooses which Joy2Key version is used for both the RetroPie-Setup menus and the Runcommand's menus.
@@ -77,7 +77,7 @@ You can get some cool launching images in these forum topics:
 
 ## <a name='runcommand-onstart-and-runcommand-onend-scripts'></a>Runcommand scripts
 
-Runcommand can execute an user script before the game launching (`runcommand-onstart.sh` and `runcommand-onlaunch.sh`) and after exiting the emulator (`runcommand-onend.sh`). Scripts must be placed at `/opt/retropie/configs/all/`.
+Runcommand can execute a user script before the game launching (`runcommand-onstart.sh` and `runcommand-onlaunch.sh`) and after exiting the emulator (`runcommand-onend.sh`). Scripts must be placed at `/opt/retropie/configs/all/`.
 
 The startup scripts are run as follows:
 
@@ -105,7 +105,7 @@ Some examples of what can be done with these scripts:
 
 ## runcommand-menu custom scripts
 
-Since version 4.2.8 runcommand menu creates an option named **User Menu** where it is possible to choose a custom script to launch. The custom scripts must be placed at `/opt/retropie/configs/all/runcommand-menu` and file name must end with `.sh`.
+Since version 4.2.8 the runcommand menu creates an option named **User Menu** where it is possible to choose a custom script to launch. The custom scripts must be placed at `/opt/retropie/configs/all/runcommand-menu` and file name must end with `.sh`.
 
 Useful data is passed as arguments to the custom scripts in the same way they are passed for [runcommand-onstart/onend scripts](#runcommand-onstart-and-runcommand-onend-scripts).
 
