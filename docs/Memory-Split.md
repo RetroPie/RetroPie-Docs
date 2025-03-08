@@ -1,10 +1,12 @@
 
 Raspberry Pi systems use a shared memory architecture, allocating memory for GPU (2d, 3d and video) and CPU tasks. It is possible to manually set this allocation, however there is typically no reason to adjust it as the defaults are correct. As per the [official documentation](https://www.raspberrypi.org/documentation/computers/config_txt.html#memory-options):
-> Unlike GPU's found on x86 machines, where increasing memory can improve 3D performance, the architecture of the VideoCore means **there is no performance advantage from specifying values larger than is necessary, and in fact it can harm performance**.
+> Unlike GPUs found on x86 machines, where increasing memory can improve 3D performance, the architecture of the VideoCore means **there is no performance advantage from specifying values larger than is necessary, and in fact it can harm performance**.
 
 ## Adjusting the Memory Split
 
-**NOTE**: Please be mindful of the platform-specific notes below, before changing any settings.
+//// warning | NOTE
+Please be mindful of the platform-specific notes below, before changing any settings.
+////
 
 ![advanced](https://cloud.githubusercontent.com/assets/10035308/10713851/061f690e-7a93-11e5-9ed1-86981e7c9325.png)
 
@@ -14,9 +16,9 @@ You can choose a split from 16/32/64/128/256 (the settings may be different depe
 
 ![gpu](https://cloud.githubusercontent.com/assets/10035308/10713855/53c539b8-7a93-11e5-9016-2117e8a890ad.png)
 
-## Raspberry Pi 4
+## Raspberry Pi 4 and later
 
-On the Raspberry Pi 4 the 3D component of the GPU has its own memory management unit (MMU), and does not use memory from the `gpu_mem` allocation. Instead memory is allocated dynamically within Linux. Increasing this amount can ***harm*** emulation performance.
+On the Raspberry Pi 4 and later models, the 3D component of the GPU has its own memory management unit (MMU), and does not use memory from the `gpu_mem` allocation. Instead memory is allocated dynamically within Linux. Increasing this amount will not help emulation and it's recommended that it's not increased from the defaults set by the OS/Firmware.
 
 ### Kodi
 
