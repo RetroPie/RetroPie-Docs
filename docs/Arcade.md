@@ -34,6 +34,7 @@ For certain arcade systems that are not supported by neither MAME nor FinalBurn,
 
  * [Supermodel](Supermodel) - a Sega Model 3 emulator, supporting about 27 games. The list of supported games is at <https://www.supermodel3.com/About.html>.
  * [Flycast](Dreamcast) - a Dreamcast emulator that plays the NAOMI and Sammy Atomiswave arcade games.
+ * [DICE](DICE) - Arcade machines that lack any kind of CPU, such as Pong.
 
 ///
 
