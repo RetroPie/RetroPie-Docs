@@ -4,13 +4,14 @@ DICE is a Discrete Integrated Circuit Emulator. It emulates computer systems tha
 
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
-| [lr-dice](https://github.com/mittonk/dice-libretro) | dice | .zip | | |
+| [lr-dice](https://github.com/mittonk/dice-libretro) | dice | .zip .dmy | | |
 
 ## Emulator: [lr-dice](https://github.com/mittonk/dice-libretro)
 DICE is a Discrete Integrated Circuit Emulator. It emulates computer systems
 that lack any type of CPU, consisting only of discrete logic components.
 
-dice-libretro (lr-dice) is a Libretro port of DICE, to run in RetroArch.
+**dice-libretro (lr-dice)**
+ is a Libretro port of DICE, to run in RetroArch.
  
 Pi4 is a reasonable minimum requirement.
 
@@ -35,21 +36,9 @@ Place your arcade ROMS in:
 
 ## Controls
 
-| Arcade input | Gamepad/Keyboard |
-| :- | :- |
-| P1 Start | KEY_1,JOY1_BUTTON9  |
-| P2 Start | KEY_2,JOY2_BUTTON9  |
-| P1 Coin  | KEY_3,JOY1_BUTTON10 |
-| P2 Coin  | KEY_4,JOY2_BUTTON10 |
-| Service A | KEY_5  |
-| Service B | KEY_7  |
-| Test A  | KEY_6 |
-| Test B  | KEY_8 |
-| P1 Joystick Up    | KEY_UP,JOY1_UP       |
-| P1 Joystick Down  | KEY_DOWN,JOY1_DOWN   |
-| P1 Joystick Left  | KEY_LEFT,JOY1_LEFT   |
-| P1 Joystick Right | KEY_RIGHT,JOY1_RIGHT |
-| P2 Joystick Up    | JOY2_UP    |
-| P2 Joystick Down  | JOY2_DOWN  |
-| P2 Joystick Left  | JOY2_LEFT  |
-| P2 Joystick Right | JOY2_RIGHT |
+`lr-dice` uses the [RetroArch control configuration](RetroArch-Configuration).
+
+Analog sticks are used for paddle inputs.
+
+A mouse can be used for paddle input, see
+[lr-dice Mouse Support](https://github.com/mittonk/dice-libretro/?tab=readme-ov-file#mouse-support).
