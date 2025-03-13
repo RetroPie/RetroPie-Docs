@@ -4,7 +4,7 @@ DICE is a Discrete Integrated Circuit Emulator. It emulates computer systems tha
 
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
-| [lr-dice](https://github.com/mittonk/dice-libretro) | dice | .zip .dmy | | |
+| [lr-dice](https://github.com/mittonk/dice-libretro) | arcade **or** dice | .zip .dmy | | |
 
 ## Emulator: [lr-dice](https://github.com/mittonk/dice-libretro)
 DICE is a Discrete Integrated Circuit Emulator. It emulates computer systems
@@ -28,10 +28,16 @@ these have a correct name (for example, pong.dmy) that will get RetroArch to set
 up lr-dice for the correct game.
 
 
-Place your arcade ROMS in:
+Place your arcade ROMS in either:
+```shell
+/home/pi/RetroPie/roms/arcade
+```
+or
 ```shell
 /home/pi/RetroPie/roms/dice
 ```
+depending on whether you'd rather group them with or separately from MAME,
+FBNeo, etc.
 
 
 ## Controls
