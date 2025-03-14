@@ -498,13 +498,8 @@ exit 0
 
 **3. My retroarch controls aren't working/messed up!**
 
-After creating the controls in emulationstation a .cfg was created and resides in the directory along with any other controllers configured here: `/opt/retropie/configs/all/retroarch-joypads/`.
-Mine is named `NintendoWiimote.cfg`. 
-
-```Note```: in newer RetroPie versions (4.x?) this file is named `Nintendo Wiimote.cfg`. 
-Also, the folder is symlinked to `/opt/retropie/configs/all/retroarch/autoconfig`.
-
-This is what the config file looks like:
+After creating the controls in emulationstation a .cfg was created and resides in the directory along with any other controllers configured here: `/opt/retropie/configs/all/retroarch-joypads/`
+Mine is named `NintendoWiimote.cfg`. This is what my config file looks like:
 ```shell
 input_device = "Nintendo Wiimote"
 input_driver = "udev"
