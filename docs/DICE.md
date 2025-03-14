@@ -28,7 +28,7 @@ these have a correct name (for example, pong.dmy) that will get RetroArch to set
 up lr-dice for the correct game.
 
 
-Place your arcade ROMS in either:
+Place your arcade ROMs in either:
 ```shell
 /home/pi/RetroPie/roms/arcade
 ```
