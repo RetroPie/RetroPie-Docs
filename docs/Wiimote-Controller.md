@@ -1,7 +1,7 @@
 ## About
-Three different tutorials to help get your wiimotes/nunchuck/classic controllers etc.. to work with RetroPie. 
+Three different tutorials to help get your wiimotes/nunchuck/classic controllers etc... to work with RetroPie. 
 
-```Method 1``` uses wminput and cwiid to get the wiimotes to connect. Its fairly simple method to follow with easy instructions to follow. I recommend this one for beginners who are new to RetroPie and don't want to dabble too much with linux.   
+```Method 1``` uses wminput and cwiid to get the wiimotes to connect. It's a fairly simple method to follow with easy instructions to follow. I recommend this one for beginners who are new to RetroPie and don't want to dabble too much with linux.   
 
 ```Method 2``` uses MoltenGamepad which is described as a flexible input device remapper, geared towards gamepads. This method is also simple to follow along if you can't get the first method working.  
 
@@ -16,13 +16,13 @@ This tutorial shows how to get one to four wiimotes (the controller of Nintendo 
 
 ### Prerequisites
 
-1. For the following I assume that RetroPi was installed and is running with other controls (like keyboard, joystick etc.). I followed the excellent tutorial http://supernintendopi.wordpress.com/2013/01/23/an-a-to-z-beginners-guide-to-installing-retropie-on-a-raspberry-pi/  for this (using the “RetroPie Project SD Card Image”).
+1. For the following I assume that RetroPie was installed and is running with other controls (like keyboard, joystick etc.). I followed the excellent tutorial http://supernintendopi.wordpress.com/2013/01/23/an-a-to-z-beginners-guide-to-installing-retropie-on-a-raspberry-pi/  for this (using the “RetroPie Project SD Card Image”).
 
 2. You have a Raspberry Pi 3 or for Raspberry Pi 2 and below, you need a Bluetooth dongle (sometimes called Bluetooth adapter). For a list of dongles known to work with Raspberry Pi see http://elinux.org/RPi_USB_Bluetooth_adapters#Working_Bluetooth_adapters ).
 
 I can confirm putting the Bluetooth adapter into a USB 2.0 powered hub works. Your results may vary though depending on your hardware.      
 
-Its important to update RetroPie to the latest version to avoid problems later down in the tutorial. Type the following into the command line:
+It's important to update RetroPie to the latest version to avoid problems later down in the tutorial. Type the following into the command line:
 
 ```shell
 cd RetroPie-Setup/
@@ -38,6 +38,13 @@ In the menu, choose to update the RetroPie-Setup script (option U) first. The pi
 Now install the needed parts:
 ```shell
 sudo apt install bluetooth vorbis-tools python-cwiid wminput
+```
+
+### Disable hid_wiimote
+Kernel module `hid_wiimote` interferes with `cwiid`. Disable it as follows:
+
+```shell
+echo "blacklist hid_wiimote" | sudo tee /etc/modprobe.d/blacklist-hid_wiimote.conf
 ```
 
 ### Getting the wiimotes to work
@@ -110,7 +117,7 @@ Nunchuk.C = BTN_C
 Nunchuk.Z = BTN_Z
 EOF
 ```
-If you want your WiiMotes giving a connection status, just add an additional line to your `mywminput` file:
+If you want your WiiMotes giving a connection status, just add a line to your `mywminput` file:
 ```shell
 Plugin.led.Led1 = 1
 #Plugin.led.Led2 = 1
@@ -288,6 +295,8 @@ and save the file.
 
 To make the Pi restart automatically if no wiimotes are detected, change rebootWithoutWiimotes to 1.
 
+```Note```: this will run `attachwii.sh` not only before emulationstation starts, but at _every_ logon of user `pi`, e.g., also when using `ssh` from a remote device!
+
 ### Register Wiimotes Before Emulationstation Starts (continued) ###
 
 If you now do a reboot using ```sudo reboot```, wait until emulationstation has been started. When it does, ```press 1+2``` on all of your wiimotes to register the wiimotes.
@@ -398,7 +407,7 @@ in the retroarch.cfg file before adding my lines, remove (or out-comment) the wh
 ```shell
 input_player1_joypad_index = 0
 ```
-in retroarch.cfg and add the a corresponding line for the other wiimotes. For example you should have the following lines in retroarch.cfg for four wiimotes:
+in retroarch.cfg and add the corresponding line for the other wiimotes. For example you should have the following lines in retroarch.cfg for four wiimotes:
 ```shell
 input_player1_joypad_index = 0
 input_player2_joypad_index = 1
@@ -406,7 +415,7 @@ input_player3_joypad_index = 2
 input_player4_joypad_index = 3
 ```
 
-Finally we are going to define a button to exit out the emulator.
+Finally, we are going to define a button to exit out the emulator.
 ```shell
 sudo nano /opt/retropie/configs/all/retroarch.cfg
 ```
@@ -462,12 +471,12 @@ If you're doing troubleshooting of any kind remember to remove the `> /dev/null 
 
 **2. My wiimotes paired the first time and now they won't pair or hold pairing!**
 
-I have had some trouble with the fact that the USB Bluetooth adapter, after a restart, the bluetooth dongle would cease to scan for new devices. For me the following fix helped. It basically restarts the the bluetooth controller and enables it to scan before the "attachwii" script activates.
+I have had some trouble with the fact that the USB Bluetooth adapter, after a restart, the bluetooth dongle would cease to scan for new devices. For me the following fix helped. It basically restarts the bluetooth controller and enables it to scan before the "attachwii" script activates.
 To apply the fix use the command below:
 ```shell
 sudo nano /etc/rc.local
 ````
-Delete anything there and and overwrite with the following: 
+Delete anything there and overwrite with the following: 
 
 ```shell
 #!/bin/sh -e
@@ -529,7 +538,7 @@ input_player1_y_btn = "3"......
 ..
 ```
 
-If your using just the classic controls then you shouldn't be having this problem, but this is what I was referring to earlier when I said the controls may be "off" if you try and combine wiimote controls, nunchuck controls in addition to the classic controller to your mywminput file. 
+If you're using just the classic controls then you shouldn't be having this problem, but this is what I was referring to earlier when I said the controls may be "off" if you try and combine wiimote controls, nunchuck controls in addition to the classic controller to your mywminput file. 
 
 **4. I want to update my Pi's bluetooth to the latest version!**
 
