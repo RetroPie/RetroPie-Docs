@@ -18,6 +18,10 @@
     --md-code-font: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
 }
 
+[data-md-color-scheme="slate"] .md-nav__link.md-nav__link--active:not(:hover) {
+  color: var(--md-primary-fg-color--lightest);
+}
+
 .md-typeset table:not([class]) th:not([align]){text-align:left}.md-typeset table:not([class]) th{
   min-width:10rem;
   padding:1.2rem 1.6rem;
