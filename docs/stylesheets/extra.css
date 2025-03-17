@@ -3,8 +3,9 @@
     --md-primary-fg-color: #222;
     --md-primary-fg-color--dark: #222;
 
-    /* Accent color shades */
+    /* Accent color shades for links */
     --md-accent-fg-color: #FF0000;
+    --md-primary-fg-color: #FF0000;
 
     /* Make headings bold(er) */
     .md-typeset { h1, h2, h3 { font-weight: 700; } }
