@@ -4,7 +4,7 @@ DICE is a Discrete Integrated Circuit Emulator. It emulates computer systems tha
 
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
-| [lr-dice](https://github.com/mittonk/dice-libretro) | arcade **or** dice | .zip .dmy | | |
+| [lr-dice](https://github.com/mittonk/dice-libretro) | arcade **or** dice | .zip (either dir) .dmy (dice dir only) | | |
 
 ## Emulator: [lr-dice](https://github.com/mittonk/dice-libretro)
 DICE is a Discrete Integrated Circuit Emulator. It emulates computer systems
