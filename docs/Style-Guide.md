@@ -226,7 +226,7 @@ The code to add an admonition looks like:
 ```
 /// tip | Title of admonition
 Text content here
-////
+///
 ```
 
 and is rendered like:
