@@ -6,7 +6,7 @@ You can also configure controls for individual systems and individual games. For
 
 /// note | Note
 Some controllers (primarily wireless or Bluetooth controllers) may require special drivers to be installed through the RetroPie Setup Script. They are detailed on their individual controller page.
-////
+///
 
 ## Controller Configuration
 
@@ -45,7 +45,7 @@ The Hotkey button enables you to press it in combination with another button to 
 /// tip | Hotkey usage
  * Hotkey buttons/keys combinations are specific to the Retroarch/libretro based emulators.
  * The Hotkey enabled actions are enabled **only** for the 1st connected controller, the one that RetroArch considers to be _P1_ (player 1). Additional connected controllers (_P2_, _P3_, etc.) will not be able to trigger the combo actions.
-////
+///
 
 
 
