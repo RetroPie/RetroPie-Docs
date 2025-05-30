@@ -79,6 +79,10 @@ For example, suppose the "A" button on a USB SNES controller has a value of "1."
 
 Hotkeys are combinations of buttons you can press in order to access options such as saving, loading, and exiting games. The following defaults are set automatically the first time you set up your controller from EmulationStation (the numbers will vary depending the controller you use).
 
+/// tip | Controller restrictions 
+The Hotkey enabled actions are enabled only for the 1st connected controller, the one that RetroArch considers to be P1 (player 1). Additional connected controllers (P2, P3, etc.) will not be able to trigger the combo actions. 
+///
+
 #### Default joypad hotkeys:
 
 |Hotkeys | Action | Code Example|
