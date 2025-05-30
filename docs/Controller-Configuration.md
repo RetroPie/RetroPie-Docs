@@ -4,7 +4,9 @@ Some emulators will still require manual controller configuration which will be 
 
 You can also configure controls for individual systems and individual games. For more advanced controller configuration with libretro cores (any emulator that starts with `lr`) see the [RetroArch-Configuration](https://retropie.org.uk/docs/RetroArch-Configuration/) page.  
 
-**Note** that some controllers (primarily wireless or bluetooth controllers) may require special drivers to be installed through the RetroPie Setup Script which are detailed on their individual controller page.
+/// note | Note
+Some controllers (primarily wireless or Bluetooth controllers) may require special drivers to be installed through the RetroPie Setup Script. They are detailed on their individual controller page.
+////
 
 ## Controller Configuration
 
@@ -40,7 +42,12 @@ See the following diagrams for reference:
 
 The Hotkey button enables you to press it in combination with another button to access functions such as saving, loading, and exiting in emulators. It is suggested to use the **Select** button as the hotkey. The following chart shows the default hotkey combinations. For example, if you chose Select as your Hotkey, that means you hold down Select while pressing the other button to execute the command. 
 
-**Note** Hotkey combinations are specific to the retroarch/libretro based emulators.
+/// tip | Hotkey usage
+ * Hotkey buttons/keys combinations are specific to the Retroarch/libretro based emulators.
+ * The Hotkey enabled actions are enabled **only** for the 1st connected controller, the one that RetroArch considers to be _P1_ (player 1). Additional connected controllers (_P2_, _P3_, etc.) will not be able to trigger the combo actions.
+////
+
+
 
 |Hotkey Combination | Action|
 | :---: | :---: |
