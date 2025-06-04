@@ -35,6 +35,7 @@ Now you can launch the **Virtual Keyboard** to configurate any game. If the over
 
 ### JoyPad setup for CapriceRPI
 Default keys:
+
 * Analog1 / HATs is cursor control
 * Y-Button brings up the Virtual Keyboard
 * X-Button brings up configuration menu (with possibitly for save state)
@@ -47,9 +48,9 @@ If you are open into a ROM from EmulationStation and it opens to a blue screen y
 ```
 CAT
 ```
-and it will list the file names of your game. The you will type RUN"FILENAME (match the lettercase exactly)
+and it will list the file names of your game. The you will type `RUN"FILENAME` (match the lettercase exactly)
 
-e.g. CAT results:
+e.g. `CAT` results:
 ```
 CABAL     .BI1
 CABAL     .BI2
@@ -60,15 +61,14 @@ Then I type:
 ```
 RUN"CABAL
 ```
-If your keyboard types `@` when you try to type `"`, then the Pi may be configured for the English (UK) keyboard layout, in which case you can type `"` by trying to type `@`.
+If your keyboard types `@` when you try to type `"`, then the Pi may be configured for the _English (UK)_ keyboard layout, in which case you can type `"` by trying to type `@`.
 
 **QUICK START CONTROLS**
-```
-F5: reset
-F6: exit
 
-Keyboard Controls will vary by game
-```
+* F5: reset
+* F6: exit
+
+Keyboard controls will vary by game.
 
 ## lr-caprice32
 
