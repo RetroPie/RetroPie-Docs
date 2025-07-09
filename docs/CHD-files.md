@@ -25,6 +25,7 @@ cd /path/to/folder
 for i in */*.cue; do chdman createcd -i "$i" -o "${i%.*}.chd"; done
 ```
 
+Alternatively, you can use the browser-based tool at [**chdman.com**](https://chdman.com), which runs entirely client-side and supports drag-and-drop `.cue` + `.bin` or `.iso` compression to `.chd`.
 
 #### Windows
 
