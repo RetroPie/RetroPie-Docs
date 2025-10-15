@@ -47,7 +47,7 @@ The simplest way to get most of these components is through an all-in-one kit su
 
 1. First, insert the MicroSD card into into your computer
 2. [Download the RetroPie .img.gz image](https://retropie.org.uk/download/) from the official website for your Raspberry Pi model.
-   * If you use [Raspberry Pi Imager](https://www.raspberrypi.org/software/) (recommended), you can omit this step and simply choose RetroPie from the list of included images ([example](https://user-images.githubusercontent.com/540857/107868009-493a6400-6e4e-11eb-9272-7f45d569dc44.gif)). If needed, official instructions for using the Raspberry Pi Imager are [here](https://www.raspberrypi.org/documentation/computers/getting-started.html#using-raspberry-pi-imager)
+   * If you use [Raspberry Pi Imager](https://www.raspberrypi.org/software/), you can choose your Pi model first and then _Use Custom_ on the 2nd step. The RPI Imager will ask for the downloaded RetroPie image in order to write it to the mSD card and you proceed to the final writing step. If needed, official instructions for using the Raspberry Pi Imager are [here](https://www.raspberrypi.com/documentation/computers/getting-started.html#raspberry-pi-imager)
    * Select the image for the model of Raspberry Pi (RPI) that you have. For example, if you have a Raspberry Pi 4, select the *RPI 4/400* image
      * If you don't know which model Raspberry Pi you have, the [Raspberry Pi Wikipedia page](https://en.wikipedia.org/wiki/Raspberry_Pi#Connectors) has user-friendly graphics to help determine model by looking at the board itself. If you have SSH/commandline access, run `cat /proc/device-tree/model` and it will output your Pi's model
 3. Download a program to write the RetroPie *.img.gz* image to your MicroSD card
