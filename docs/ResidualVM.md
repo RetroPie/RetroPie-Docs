@@ -1,25 +1,11 @@
 ***
 ![](http://jenni.wdfiles.com/local--files/grim-fandango/residualvm_logo.png)
 ***
-_ResidualVM is a game engine for the games Grim Fandango, Escape From Monkey Island, and Myst III: Exile._
+_ResidualVM was a game engine for the games Grim Fandango, Escape From Monkey Island, and Myst III: Exile._
 ***
 
-## Emulator: [ResidualVM](https://github.com/residualvm/residualvm) (EXPERIMENTAL)
+## Emulator: [ResidualVM](https://github.com/residualvm/residualvm) (REMOVED Oct 2025, Experimental)
 
-## ROMS:
+Initially a fork of [ScummVM](ScummVM) to allow playing the 3 games supported, it has been merged back to the parent project in 2021 and the games are playable in [ScummVM](ScummVM).
 
-See what files you need [HERE](http://wiki.residualvm.org/index.php/Datafiles) and place them in:
-
-```
-/home/pi/RetroPie/roms/residualvm
-```
-
-It functions very similarly to [ScummVM](ScummVM)
-
-## Notes:
-
-From the GUI options, select "software" for the game renderer.
-
-
-
-
+The emulator has been **removed** from RetroPie, use [ScummVM](ScummVM) instead.
