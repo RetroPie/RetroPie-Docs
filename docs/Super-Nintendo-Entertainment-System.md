@@ -12,8 +12,10 @@ _The Super Nintendo Entertainment System (or SNES) was a 4th generation video ga
 | [lr-snes9x2002](https://github.com/libretro/snes9x2002) | snes | .7z .bin .bs .fig .mgd .sfc .smc .swc .zip | none | /opt/retropie/configs/snes/retroarch.cfg |
 | [PiSNES](https://github.com/RetroPie/pisnes) | snes | .fig .sfc .smc .swc .zip | none | /opt/retropie/configs/snes/snes9x.cfg |
 | [snes9x-rpi](https://github.com/RetroPie/snes9x-rpi) | snes | .fig .sfc .smc .swc .zip | none | /opt/retropie/configs/snes/snes9x.cfg |
+| [lr-bsnes](https://github.com/libretro/bsnes-libretro) | snes | .bs .fig .sfc .smc .swc .zip | none | /opt/retropie/configs/snes/retroarch.cfg |
+| [lr-fbneo](https://github.com/libretro/FBneo) | snes | .7z .zip | none | /opt/retropie/configs/snes/retroarch.cfg |
 
-## Emulators: [lr-snes9x](https://github.com/libretro/snes9x), [lr-snes9x2010](https://github.com/libretro/snes9x2010), [lr-snes9x2005](https://github.com/libretro/snes9x2005), [lr-snes9x2002](https://github.com/libretro/snes9x2002), [PiSNES](https://github.com/RetroPie/pisnes), [snes9x-rpi](https://github.com/RetroPie/snes9x-rpi)
+## Emulators: [lr-snes9x](https://github.com/libretro/snes9x), [lr-snes9x2010](https://github.com/libretro/snes9x2010), [lr-snes9x2005](https://github.com/libretro/snes9x2005), [lr-snes9x2002](https://github.com/libretro/snes9x2002), [PiSNES](https://github.com/RetroPie/pisnes), [snes9x-rpi](https://github.com/RetroPie/snes9x-rpi), [lr-bsnes](https://github.com/libretro/bsnes-libretro), [lr-fbneo](https://github.com/libretro/FBneo)
 
 RetroPie includes multiple SNES emulators. 
 
@@ -47,6 +49,14 @@ Setting the Runcommand's resolution setting for this emulator to a low 4:3 resol
 
 An optional emulator that is identical to PiSNES in that it is based on the same version of SNES9x, has the same inaccurate sound emulation, and SFX/SA1/SFX2 games do not work. Where this emulator differs is that it requires a keyboard to exit without [advanced controller configuration](Universal-Controller-Calibration-&-Mapping-Using-xboxdrv). How well it performs compared to PiSNES is currently unknown.
 
+### lr-bsnes
+
+Accuracy focused emulator, based on the [BSNES](https://github.com/bsnes-emu/bsnes). Should be used on the more powerfull systems like (PC, RPi4 or later).
+
+### lr-fbneo
+
+Accurate and high-performance emulator from the [FinalBurn Neo](https://github.com/finalburnneo/FBNeo) project. 
+
 ## ROMS
 
 Accepted File Extensions: **.7z .bin .fig .mgd .sfc .smc .swc .zip**
@@ -55,6 +65,8 @@ Place your SNES ROMs in
 ```
 /home/pi/RetroPie/roms/snes
 ```
+
+**NOTE**: [lr-fbneo] expects the game roms to be in .zip/.7z archives named in a similar fashion to arcade romsets, so the filenames of the roms is important. Use a romset validation/building program like Clrmamepro or RomCenter to have the correct filenames, using the FBNeo SNES DAT file file and a No-Intro SNES ROM collection.
 
 ## Satellaview
 
@@ -88,7 +100,7 @@ Programs such as PeaZip or WinRAR can be used to batch compress all of the newly
 
 ### lr-snes9x, lr-snes9x2010, lr-snes9x2005, lr-snes9x2002
 
-lr-snes9x, lr-snes9x2010, lr-snes9x2005, and lr-snes9x2002 all utilise RetroArch configurations.
+lr-snes9x, lr-snes9x2010, lr-snes9x2005, lr-snes9x2002, lr-bsnes, lr-fbneo all utilise RetroArch configurations.
 
 Add custom RetroArch controls to the retroarch.cfg file in:
 ```shell
