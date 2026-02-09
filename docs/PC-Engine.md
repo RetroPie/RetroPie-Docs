@@ -9,12 +9,13 @@ _This console, known as the PC Engine in Japan and as the TurboGrafx-16 Entertai
 | :---: | :---: | :---: | :---: | :---: |
 | [lr-beetle-pce-fast](https://github.com/libretro/beetle-pce-fast-libretro) | pcengine  | .7z .ccd .chd .cue .pce .zip | syscard3.pce | /opt/retropie/configs/pcengine/retroarch.cfg |
 | [lr-beetle-supergrafx](https://github.com/libretro/beetle-supergrafx-libretro) | pcengine  | .7z .pce .zip .chd| syscard3.pce | /opt/retropie/configs/pcengine/retroarch.cfg |
+| [lr-geargrafx](https://github.com/drhelius/Geargrafx) | pcengine | .pce .sgx .chd .cue .zip | syscard3.pce, gexpress.pce | /opt/retropie/configs/pcengine/retroarch.cfg |
 
-## Emulator: [lr-beetle-pce-fast](https://github.com/libretro/beetle-pce-fast-libretro), [lr-beetle-supergrafx](https://github.com/libretro/beetle-supergrafx-libretro)
+## Emulators: [lr-beetle-pce-fast](https://github.com/libretro/beetle-pce-fast-libretro), [lr-beetle-supergrafx](https://github.com/libretro/beetle-supergrafx-libretro), [lr-geargrafx](https://github.com/drhelius/Geargrafx)
 
 ## ROMS
 
-Accepted File Extensions: **.7z .ccd .chd .cue .pce .zip**
+Accepted File Extensions: **.7z .ccd .chd .cue .pce .sgx .zip**.
 
 Place your PC Engine/PC Engine CD/TurboGrafx-16/TurboGrafx-CD/SuperGrafx ROMs in
 ```
@@ -23,7 +24,7 @@ Place your PC Engine/PC Engine CD/TurboGrafx-16/TurboGrafx-CD/SuperGrafx ROMs in
 
 ## CHD Files
 
-lr-beetle-pce-fast and lr-beetle-supergrafx have support for the CHD (V5) archive format. This format will save space and allow you to keep your PC Engine CD/TurboGrafx-CD ROM folder tidy. See [Creating CHDs from CD-ROMS](CHD-files.md#creating-chds-from-cd-roms).
+All emulators have support for the CHD (v5 or older) archive format. This format will save space and allow you to keep your PC Engine CD/TurboGrafx-CD ROM folder tidy. See [Creating CHDs from CD-ROMS](CHD-files.md#creating-chds-from-cd-roms).
 
 ## BIOS
 
@@ -48,11 +49,11 @@ Place your BIOS in
 /home/pi/RetroPie/BIOS
 ```
 
-You can change which BIOS is used in the Quick Menu's Options.
+You can change which BIOS is used in the Core Options.
 
 ## Controls
 
-lr-beetle-pce-fast and lr-beetle-supergrafx utilise Retroarch configurations
+All emulators utilise Retroarch configurations
 
 Add custom retroarch controls to the retroarch.cfg file in
 ```shell
@@ -94,12 +95,12 @@ FILE "Akumajou_Dracula_X_-_Chi_no_Rinne_(NTSC-J)_[KMCD3005].bin" BINARY
 
 ## Advanced Configuration
 
-### Switching Emulation Station to the TurboGrafx-16 logo:
+### Switching EmulationStation to the TurboGrafx-16 logo:
 
-If you are from the United States it is likely that you had the TurboGrafx-16 rather than the PC Engine. If you want EmulationStation to show the TurboGrafx-16 graphics instead of PC Engine then you should create a file /opt/retropie/configs/all/platforms.cfg with the following contents (note this requires at least v4.1.6 of the RetroPie-Setup script).
+If you are from the United States it is likely that you had the TurboGrafx-16 rather than the PC Engine. If you want EmulationStation to show the TurboGrafx-16 graphics instead of PC Engine then you should create a file /opt/retropie/configs/all/platforms.cfg with the following contents (note this requires at least `v4.1.6` of the RetroPie-Setup script).
 
 ```
 pcengine_theme="tg16"
 ```
 
-Once this is done, please update any of the currently installed PC Engine emulators from RetroPie-Setup and Emulation Station will now use the TurboGrafx-16 logo.
+Once this is done, please update any of the currently installed PC Engine emulators from RetroPie-Setup and EmulationStation will now use the TurboGrafx-16 logo.
