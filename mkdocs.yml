@@ -19,6 +19,8 @@ plugins:
 
 # Extensions
 markdown_extensions:
+  - admonition
+  - def_list
   - mdx_truly_sane_lists
   - md_in_html
   - pymdownx.highlight:
@@ -256,6 +258,7 @@ nav:
 - Developers:
     - Convert RetroPie SD Card Image to NOOBS Image: Convert-RetroPie-SD-Card-Image-to-NOOBS-Image.md
     - Shell Style Guide: Shell-Style-Guide.md
+    - Scriptmodule Guide: Scriptmodule-Guide.md
 - About:
     - Changelogs: Changelogs.md
     - Supported Systems: Supported-Systems.md
