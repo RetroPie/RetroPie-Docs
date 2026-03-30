@@ -1,5 +1,7 @@
+#Dreamcast
+
 ***
-![dreamcast](https://cloud.githubusercontent.com/assets/10035308/12191302/2612a414-b590-11e5-82e3-f39acc38eb71.png)
+![Sega Dreamcast](images/dreamcast/console.png)
 ***
 _The Sega Dreamcast is a 6th generation home video game console released by Sega in 1998. It is notably the last console that Sega produced._
 ***
@@ -9,26 +11,40 @@ _The Sega Dreamcast is a 6th generation home video game console released by Sega
 | [Reicast](https://github.com/reicast/reicast-emulator) | dreamcast  | .cdi .chd .gdi| dc_boot.bin, dc_flash.bin | /opt/retropie/configs/dreamcast/mappings |
 | [lr-flycast](https://github.com/libretro/flycast.git) | dreamcast  | .cue .cdi .chd .gdi .m3u .zip | dc_boot.bin, dc_flash.bin | /opt/retropie/configs/dreamcast/retroarch.cfg |
 | [Redream](https://redream.io) | dreamcast  | .cue .cdi .chd .gdi | boot.bin (optional) | /opt/retropie/configs/dreamcast/redream/mappings |
+| [lr-flycast-dev](https://github.com/flyinghead/flycast.git) | dreamcast,arcade  | .cue .cdi .chd .gdi .m3u .zip | dc_boot.bin | /opt/retropie/configs/dreamcast/retroarch.cfg |
+| [Flycast](https://github.com/flyinghead/flycast.git) | dreamcast,arcade  | .cue .cdi .chd .gdi .m3u .zip | dc_boot.bin | /opt/retropie/configs/dreamcast/mappings |
+
+## Emulators
 
 
-## Emulators: [Reicast](https://github.com/reicast/reicast-emulator), [lr-flycast](https://github.com/libretro/flycast.git), [Redream](https://redream.io)
+* _Reicast_ can be very laggy and buggy, but it's useful for older (Pi2/Pi3) systems.
+  Audio is choppy and not great, and degrades the longer the emulator is in use.  Restarting the emulator (and ultimately the Pi) may become a good idea after a couple hours of gameplay. There is a memory leak somewhere in the Reicast code. Low screen resolution are recommended to get best performance. Performance greatly suffers if HD resolutions are used.
 
-Reicast can be very laggy and buggy, but some games work great. Pi 2 or later is required.
+* _lr-flycast_ can be found in the _Optional_ packages section and is recommended for the libretro integration, having also better peformance than Reicast on Pi4+ platforms.    
+   **NOTE**: this core is using an older and un-maintained version of Flycast, suitable for older RaspiOS versions. For newer RaspiOS (Bookworm and later), the _lr-flycast-dev_ core is recommended.
 
-Audio is choppy and not great, and degrades the longer the emulator is in use.  Restarting the emulator (and ultimately the Pi) may become a good idea after a couple hours of gameplay. There is a memory leak somewhere in the Reicast code. Low screen resolution are recommended to get best performance. Performance greatly suffers if HD resolutions are used.
+* *Redream* can be found in the _Experimental_ packages section and runs the best of the three options. However it can only be run on a Pi4 or a 64bit PC system, due to the OpenGL(ES)3 requirement.
 
-lr-flycast can be found in the _Optional_ packages section in the RetroPie Setup Script and on a Pi4 it has much better performance than Reicast.
+* _lr-flycast-dev_ can be found in the _Experimental_ packages section and it's the currently maintained libretro core from the Flycast. Recommended for recent systems and RaspiOS versions and better support for Naomi/Atomiswave games.
 
-Redream can be found in the _Experimental_ packages section and runs the best of the three options. However it can only be run on a Pi4 or a 64bit PC system, due to the OpenGL(ES)3 requirement.
+* _Flycast_ standalone emulator can be found in the _Optional_ packages section. It uses the same codebase as the _lr-flycast-dev_ core, but with it's own interface and menu. It can be used as an alternative to the libretro core for weaker systems or when trying to squeeze more performance out of the emulator.
 
 ## ROMS
 
-Accepted File Extensions: **.cue .cdi .chd .gdi** for Dreamcast ROMs, **.zip** for Naomi/Atomiswave games.
+Accepted File Extensions: `.cue .cdi .chd .gdi` for Dreamcast games, `.zip` for Naomi/Atomiswave arcade games.
 
-Place your ROM files in
+Place your game files in
 ```
 /home/pi/RetroPie/roms/dreamcast
 ```
+
+Optionally, the Naomi/Atomiswave arcade ROMs can be added to
+
+```
+/home/pi/RetroPie/roms/arcade
+```
+
+and the Flycast emulator (standalone or the libretro core) can be chosen to run the specific ROMs from the [Runcommand Launch Menu](Runcommand#runcommand-launch-menu).
 
 ## CHD files
 
@@ -86,8 +102,8 @@ VMUs are stored as .BIN files under `/home/pi/.reicast/`, and will be automatica
 
 On occasion, these VMUs do not get formatted quite right during creation, and the Dreamcast can't save or load data from them.  They just need to be reformatted -- run the `SYSTEMMANAGER` entry in the EmulationStation Dreamcast menu and / or see [this post](http://blog.petrockblock.com/forums/topic/configuring-controllers-in-reicast/page/2/#post-99715) for details.
 
-### lr-flycast
-VMUs are stored as .BIN files under `/home/pi/RetroPie/BIOS/dc/`, and will be automatically created the first time you run lr-flycast.
+### Flycast (all versions)
+VMUs are stored as .BIN files under `/home/pi/RetroPie/BIOS/dc/`, and will be automatically created on the emulator's first run.
 
 There is an option for the core to enable `per-game` VMU's. This option is recommended if you have several games or a game that takes a large amount of space.
 
@@ -99,16 +115,17 @@ VMUs are stored as `vmu[0-3].bin` files under `/opt/retropie/configs/dreamcast/r
 A Dreamcast soft-reset (A+B+X+Y+Start buttons at the same time) at the ROM's title screen will also take you into the Dreamcast BIOS to manage the VMU's. After formatting VMU's, exit the emulator and restart if using Reicast. Pressing 'Play' will cause Reicast to crash.
 
 ## Controls
-Starting with RetroPie 3.3 controls for the Dreamcast Emulator are automatically configured when you configure your controls through emulationstation.
-Please notice that you may be interested in disabled the input auto config ( described above ) in case of any autoconfig issue.
+Controls for the Dreamcast emulators - except Redream - are automatically configured when you configure your controls through EmulationStation.
+Please notice that you may be interested in disabling the input auto config (described above) in case of any autoconfig issue for Redream.
 
-![sega_dreamcast_diagram](https://cloud.githubusercontent.com/assets/10035308/16599638/7f411634-42c0-11e6-811c-456f02b2ea47.png)
+![sega_dreamcast_diagram](images/dreamcast/controller.png)
 
-Controls can be mapped via the `/home/pi/.reicast/emu.cfg` file. Make sure that evdev_device_id_1 & evdev_device_id_2 are set to the corresponding controller's /dev/input/event* number you want to use. A -1 means no controller which we will use for player 3 and 4. Then have evdev_mapping_1 & evdev_mapping_2 point to the matching controller mapping configuration files and both can either point to the same file or different files if you want to use 2 different controllers types.
+### Reicast
+Controls can be mapped via the `/home/pi/.reicast/emu.cfg` file. Make sure that `evdev_device_id_1` and `evdev_device_id_2` entries are set to the corresponding controller's `/dev/input/event*` number you want to use. A `-1` means no controller, which we will use for player 3 and 4. Then have `evdev_mapping_1` & `evdev_mapping_2` entries point to the matching controller mapping configuration files and both can either point to the same file or different files if you want to use 2 different controllers types.
 
 Here is an example of this:
 
-```
+``` ini
 [input]
 evdev_device_id_1 = 2
 evdev_device_id_2 = 3
@@ -121,12 +138,12 @@ joystick_device_id = -1
 
 If you want to be able to use 2 controllers at the same time, then you would add this section to the `emu.cfg` file:
 
-```
+``` ini
 [players]
 nb = 2
 ```
 
-In more recent builds of reicast, the +Start Reicast script launches a landing page with a game menu with containing a  'settings' button. Controllers can be mapped directly from the settings menu - this creates config files looking like:
+Using the `+Start Reicast` script launches the game menu with a _Settings_ button. Controllers can be mapped directly from ths settings menu - this creates config files looking like:
 
 ```
 /opt/retropie/configs/dreamcast/mappings/evdev_Xbox360WirelessReceiver(XBOX).cfg
@@ -144,7 +161,7 @@ An example mapping for a PS3 controller is below for reference:
 
 **PlayStation 3 Controller**
 
-```
+``` ini
 [PLAYSTATION(R)3 Controller]
 button.0=Btn_Z
 button.1=Btn_C
@@ -166,22 +183,10 @@ button.16=Quit
 axis.0=Axis_X
 axis.1=Axis_Y
 ```
-If mapping is not working correctly try changing controller name for:
-```
-[Sony PLAYSTATION(R)3 Controller]
-```
-For Wireless PS3 Controller use:
-```
-[PLAYSTATION(R)3 Controller (xx:xx:xx:xx:xx:xx)]
-```
-Replace xx:xx:xx:xx:xx:xx with your own controller mac address
-
-Press ctrl+c to exit- Or map a Quit button (PS) as shown above :D
-
 
 **Xbox 360 Controller:**
 
-```
+``` ini
 [emulator]
 mapping_name = Xbox Gamepad (userspace driver)
 btn_escape = 0x13a
@@ -207,7 +212,7 @@ axis_dpad1_y = 0x11
 
 **Xbox 360 Wireless Controller using xpad driver:**
 
-```
+``` ini
 [emulator]
 mapping_name = Xbox 360 Wireless Receiver (XBOX)
 btn_escape = 316
@@ -249,9 +254,9 @@ axis_dpad1_y_inverted = no
 axis_dpad1_x_inverted = no
 ```
 
-**PS4 Controller:**
+**PS4 Controller**
 
-```
+``` ini
 [emulator]
 mapping_name = Sony Computer Entertainment Wireless Controller
 btn_escape = 316
@@ -279,7 +284,7 @@ axis_dpad1_x_inverted = no
 ```
 
 **Akishop Ps 360+ Joystick**
-```
+``` ini
 [emulator]
 mapping_name = Akishop Customs PS360+ v1.66
 btn_escape = 316
@@ -303,13 +308,13 @@ btn_trigger_right = 311
 **8Bitdo NES30 Pro**
 
 Open the configuration file using a text editor, e.g.:
-```
+``` shell
 sudo nano /opt/retropie/configs/dreamcast/mappings/controller_8BitdoNES30Pro.cfg
 ```
 
 The content of the file should look like this:
 
-```
+``` ini
 [emulator]
 mapping_name = 8Bitdo NES30 Pro
 btn_escape = 314
@@ -351,10 +356,10 @@ axis_dpad1_y_inverted = no
 axis_dpad1_x_inverted = no
 ```
 
-**iBuffalo Classic USB GamePad [EXPERIMENTAL]**
+**iBuffalo Classic USB GamePad**
 
 Analog movement not supported
-```
+``` ini
 [emulator]
 mapping_name = USB,2-axis 8-button gamepad
 btn_escape = 294
@@ -375,8 +380,8 @@ axis_x_inverted = no
 axis_y_inverted = no
 ```
 
-**Mobile Gamepad [EXPERIMENTAL]**
-```
+**Mobile Gamepad**
+``` ini
 [emulator]
 mapping_name = MobileGamePad
 btn_escape = 0x13a
@@ -416,32 +421,14 @@ axis_trigger_left_inverted =
 axis_trigger_right_inverted =
 ```
 
-**Mapping a Nonstandard Controller via @Folly**
+**Mapping a Nonstandard Controller**
 
-run in terminal :
-```
-cd /opt/retropie/emulators/reicast/bin
-```
+For _Reicast_, if the controller mapping produced by EmulationStation is not correct, then a semi-manual configuration tool is provided by the emulator, which can be started from the **RetroPie** system, by opening the _RetroPie-Setup_ script and then navigating to _Configuration / tools -> reicat_. Start the input mapping script, choose the controller that needs to be configured and then - one by one - map each input on the gamepad.   
 
-Here is a script called 'reicast-joyconfig'
-run it :
-```
-./reicast-joyconfig
-```
+The script will create the necessary `.cfg` file, similar to the examples given above, in the right location.
 
-Choose your joystick.
-Now you can map your buttons.
-When all is done it outputs the text for making a file in `/home/pi/.reicast/mappings`.
+### Flycast (standalone)
 
-It outputs something like this (numbers are in decimals not hexadecimal such as in other contollers' config file):
+Mapping a controller can be done after starting a game, by opening the emulator menu with the `Tab` key. If the gamepad has a dedicated buttons like Home/Guide/PS button, that button may work also to open the emulator's menu.
 
-```
-[emulator]
-mapping_name = Your Gamepad
-btn_escape = 316
-
-[dreamcast]
-.......etc
-```
-
-Create a file in `/home/pi/.reicast/mappings` called `controller_Your Gamepad.cfg` and paste the text in this file, then modify the `/home/pi/.reicast/emu.cfg` and reference this file in the **`evdev_mapping_1`** (change the number according to the player you want to configure) configuration option.
+**Note**: navigating between the settings menu tabs can be done through the LT/RT button (shoulder buttons) on a gamepad. When using a keyboard, navigating between tabs can be done by using positioning the cursor on tabs title line, using the left/right arrow keys to select a tab and then pressing `Space` or `Enter` to activate the tab.
