@@ -11,9 +11,8 @@ NOTE: The Enterprise 128 emulator provides also support for emulating the [Video
 
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
-| [lr-ep128emu](https://github.com/libretro/ep128emu-core) | enterprise |  .img .dsk .cas .tap .dtf .wav .bas .com .trn .128 | - | /opt/retropie/configs/enterprise/retroarch.cfg
-| :---: | :---: | :---: | :---: | :---: |
-| [lr-ep128emu](https://github.com/libretro/ep128emu-core) | tvc |  .img .dsk .cas .tvcwav | - | /opt/retropie/configs/tvc/retroarch.cfg
+| [lr-ep128emu](https://github.com/libretro/ep128emu-core) | enterprise |  .img .dsk .cas .tap .dtf .wav .bas .com .trn .128 | optional | /opt/retropie/configs/enterprise/retroarch.cfg
+| [lr-ep128emu](https://github.com/libretro/ep128emu-core) | tvc |  .img .dsk .cas .tvcwav | optional | /opt/retropie/configs/tvc/retroarch.cfg
 
 
 ## Emulator: [lr-ep128emu](https://github.com/libretro/ep128emu-core)
