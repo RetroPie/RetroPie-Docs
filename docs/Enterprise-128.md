@@ -7,9 +7,14 @@ _Enterprise is a home computer from the 80's, built with a Zilog Z80 processor. 
 _The Enterprise was made in the UK and it spread to other European countries, such as France, Spain and Germany. Perhaps the largest number of machines were to be found in Hungary. Hungarian developers wrote a lot of programs and created hardware extensions. Some machines reached ex-Soviet countries and even Egypt._
 ***
 
+NOTE: The Enterprise 128 emulator provides also support for emulating the [Videoton TV Computer](https://en.wikipedia.org/wiki/Videoton_TV-Computer), an 8-bit system based on the Enterprise.
+
 | Emulator | Rom Folder | Extension | BIOS |  Controller Config |
 | :---: | :---: | :---: | :---: | :---: |
-| [lr-ep128emu](https://github.com/libretro/ep128emu-core) | enterprise |  .img .dsk .cas .tap .dtf .wav .bas .com .trn .128 | optional | /opt/retropie/configs/enterprise/retroarch.cfg
+| [lr-ep128emu](https://github.com/libretro/ep128emu-core) | enterprise |  .img .dsk .cas .tap .dtf .wav .bas .com .trn .128 | - | /opt/retropie/configs/enterprise/retroarch.cfg
+| :---: | :---: | :---: | :---: | :---: |
+| [lr-ep128emu](https://github.com/libretro/ep128emu-core) | tvc |  .img .dsk .cas .tvcwav | - | /opt/retropie/configs/tvc/retroarch.cfg
+
 
 ## Emulator: [lr-ep128emu](https://github.com/libretro/ep128emu-core)
 
@@ -30,10 +35,15 @@ Content that can be loaded by the _ep128emu_ core has the following file extensi
 - `.bas`, `.com`, `.trn`, `.128` - common extensions for Enterprise executable files
 
 
-Place your ROMs in
+Place your ROMs in:
 
 ```
 /home/pi/RetroPie/roms/enterprise
+```
+or
+
+```
+/home/pi/RetroPie/roms/tvc
 ```
 
 ## BIOS
