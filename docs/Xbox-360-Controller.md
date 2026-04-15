@@ -14,7 +14,7 @@ To pair your controller(s) with the wireless receiver:
 
 Starting with the RetroPie 4.1 SD image, the `xpad` driver is already installed by default, manual installation is not necessary when starting with the Raspberry Pi image. 
 
-You access the driver through **Manage packages ➤ Manage driver packages ➤ xpad ** and the driver can be installed/updated from source. After the installation, a reboot is necessary and then the gamepad can be configured in EmulationStation.
+You access the driver through **Manage packages ➤ Manage driver packages ➤ xpad** and the driver can be installed/updated from source. After the installation, a reboot is necessary and then the gamepad can be configured in EmulationStation.
 
 An example working config (that was generated from the EmulationStation configuration) is listed below at `/opt/retropie/configs/all/retroarch-joypads/Xbox360WirelessReceiver(XBOX).cfg`
 
