@@ -68,7 +68,7 @@ After the command is executed, reboot the system or reload the `xpad` driver in 
 
 ## Xboxdrv userspace driver
 
-/// warn | Note
+/// warning | Note
 There are known incompatibilities with this driver when used in it's default configuration with the latest Linux kernels. The `xpad` driver is currently the best option to simply make an Xbox 360 or Xbox One controller operational in RetroPie.
 
 These incompatibilities are not an issue when [using xboxdrv as a calibration and key-mapping tool](Universal-Controller-Calibration-&-Mapping-Using-xboxdrv) for almost any gamepad, including the Xbox 360 controller. When used this way, it's even possible for both xpad and xboxdrv to coexist together.
