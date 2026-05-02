@@ -96,6 +96,7 @@ nav:
     - lr-fbneo: lr-fbneo.md
     - Neo Geo: Neo-Geo.md
     - Sega Model 3: Supermodel.md
+    - DICE: DICE.md
     - Validating, Rebuilding, and Filtering Arcade ROMs: Validating,-Rebuilding,-and-Filtering-ROM-Collections.md
 - Emulators:
     - 3do: 3do.md
