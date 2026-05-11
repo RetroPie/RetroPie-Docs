@@ -9,6 +9,8 @@ The Nintendo DS is a handheld video game console that was released by Nintendo i
 | [DraStic](http://drastic-ds.com/) | nds | .nds .zip | nds_bios_arm7.bin (optional), nds_bios_arm9.bin (optional), nds_firmware.bin (optional) | /opt/retropie/configs/nds/drastic/config/drastic.cfg |
 | [lr-desmume](https://github.com/libretro/desmume) | nds | .nds .zip | bios7.bin (optional), bios9.bin (optional), firmware.bin (optional) | /opt/retropie/configs/nds/retroarch.cfg |
 | [lr-desmume-2015](https://github.com/libretro/desmume2015) | nds | .nds .bin .zip | bios7.bin (optional), bios9.bin (optional), firmware.bin (optional) | /opt/retropie/configs/nds/retroarch.cfg |
+| [lr-melonds-ds](https://github.com/JesseTG/melonds-ds) | nds | .nds .zip | bios7.bin (optional), bios9.bin (optional), firmware.bin (optional), dsi_bios7.bin (optional), dsi_bios9.bin (optional) | /opt/retropie/configs/nds/retroarch.cfg |
+| [lr-melonds](https://github.com/libretro/melonDS) | nds | .nds .zip | bios7.bin (optional), bios9.bin (optional), firmware.bin (optional), dsi_bios7.bin (optional), dsi_bios9.bin (optional) | /opt/retropie/configs/nds/retroarch.cfg |
 
 ## Emulator: [DraStic](http://drastic-ds.com/)
 
@@ -79,3 +81,7 @@ Add custom retroarch controls to the retroarch.cfg file in
 For more information on custom RetroArch controls see: [RetroArch Configuration](RetroArch-Configuration)
 
 ![nintendo_ds_diagram](https://cloud.githubusercontent.com/assets/10035308/16599645/7f549f56-42c0-11e6-88a8-3acda5287da3.png)
+
+## Emulator: [lr-melonds-ds](https://github.com/JesseTG/melonds-ds) and [lr-melonds](https://github.com/libretro/melonDS)
+
+Both melonDS emulators can be installed using [RetroPie-Extra](https://github.com/Exarkuniv/RetroPie-Extra). melonds-ds offers more features like enhanced screen layout options or microphone support. See also the respective [Libretro docs](https://docs.libretro.com/library/melonds_ds/).
