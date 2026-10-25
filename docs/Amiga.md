@@ -55,7 +55,7 @@ The `lr-puae` is libretro Amiga core based on [WinUAE](https://www.winuae.net). 
  * `lr-puae2021` (version 2.6.1) is recommended for low-power devices (Raspberry PI or other ARM based systems).
  * `lr-puae` (version 4.5.0) is a more accurate and performance demanding version, recommended for x86/PC systems.
   
-  Both versions can be installed from the optional section of the [RetroPie-Setup Script](Updating-RetroPie#using-the-retropie-setup-script).
+  Both versions can be installed from the optional section of the [RetroPie-Setup Script](Updating-RetroPie#manage-packages).
 
 ### BIOS
 

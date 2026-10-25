@@ -6,7 +6,6 @@
 - [How do I hide the boot text?](FAQ#how-do-i-hide-the-boot-text)
 - [How do I boot to the desktop or Kodi?](FAQ#how-do-i-boot-to-the-desktop-or-kodi)
 - [How do I remove the black borders?](FAQ#how-do-i-remove-the-black-borders)
-- [How do I change which buttons to press to exit an emulator with a controller?](FAQ#how-do-i-change-which-buttons-to-press-to-exit-an-emulator-with-a-controller)
 - [How do I extend the available space when upgrading to a larger SD card?](FAQ#how-do-i-extend-the-available-space-when-upgrading-to-a-larger-sd-card)
 - [How would I start from command line, say, the SNES emulator by itself?](FAQ#how-would-i-start-from-command-line-say-the-snes-emulator-by-itself)
 - [Is there another way to set up the gamepad for use, e.g., within the snes emulator?](FAQ#is-there-another-way-to-set-up-the-gamepad-for-use-eg-within-the-snes-emulator)
@@ -24,7 +23,7 @@
 
 ### Why do some emulators not show up?
 
-The RetroPie SD image only ships with the most common emulators, if a system you want is missing you first need to make sure that emulator is installed. The details for installing additional emulators is explained on the [first installation page](First-Installation#installing-additional-emulators--ports)
+The RetroPie SD image only ships with the most common emulators, if a system you want is missing you first need to make sure that emulator is installed. The details for installing additional emulators is explained on the [Updating RetroPie](Updating-RetroPie#updatinginstalling-individual-packages) page.
 
 If the system still doesn't show up in Emulation Station, only emulators with ROMs inside its respective folder will show up in the EmulationStation GUI (given that the specific emulator is installed). For example, for the Nintendo 64 emulator to show up, you must have at least one ROM in the `~/RetroPie/roms/n64/` folder. For ROM types supported by each emulator, go to the wiki page for that specific system/emulator. 
 

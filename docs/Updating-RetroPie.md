@@ -116,7 +116,7 @@ Detailed instructions [here](https://github.com/billw2/rpi-clone).
 
 Open a terminal window and type `diskutil list`. A list of all hard disks and partitions shows up. Find a partition with the name `boot` or `bootfs` - it should say _(internal,physical)_ beside the `/dev/disk#`. Example:
 
-``` sh
+```sh
     user@host$ diskutil list  
     /dev/disk0 (internal, physical):  
     #:                       TYPE NAME                    SIZE       IDENTIFIER  
@@ -137,7 +137,6 @@ Open a terminal window and type `diskutil list`. A list of all hard disks and pa
     2:                      Linux                         15.9 GB    disk2s2  
 ```
 
-
   In this case `/dev/disk2s1` (partition 1) is named `boot`. That disk# is the RetroPie SD card - in the example it is `/dev/disk2`. Confirm that the size (on the right) matches the size of your SD card.
  
-  Type `cd ~ ; sudo dd if=/dev/rdisk2 of=backup.img bs=1m` to write a disk image to your home directory. Note that you need to use the entire disk (`/dev/disk2`) and not just a partition (`/dev/disk2s1`).
+  Type `cd $HOME ; sudo dd if=/dev/rdisk2 of=backup.img bs=1m` to write a disk image to your home directory. Note that you need to use the entire disk (`/dev/disk2`) and not just a partition (`/dev/disk2s1`).

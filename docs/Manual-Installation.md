@@ -8,12 +8,13 @@ If you are trying to follow this guide because you want the PIXEL desktop enviro
 
 RetroPie can also be installed on most debian based distros, a guide for installing RetroPie on Ubuntu on a PC can be found [here](Debian)
 
-The RetroPie SD image is built on top of Raspberry Pi OS Lite (without the PIXEL desktop environment), RetroPie can also be installed on top of the full Raspberry Pi OS but you can't run Retropie and PIXEL at the same time, you will need to logout of the PIXEL desktop environment in order to run emulationstation and the emulators RetroPie installs. 
+The RetroPie SD image is built on top of Raspberry Pi OS Lite (without the PIXEL desktop environment), RetroPie can also be installed on top of the full Raspberry Pi OS but you can't run Retropie and PIXEL at the same time - you will need to logout of the PIXEL desktop environment in order to run emulationstation and the emulators RetroPie installs. 
 
-You can download a fresh Raspberry Pi OS image from [here](http://www.raspberrypi.org/downloads). The image can be installed the same way as the RetroPie image as described [here](First-Installation)). 
+You can download a fresh Raspberry Pi OS image from [here](http://www.raspberrypi.org/downloads). The image can be installed the same way as the RetroPie image as described [here](First-Installation). 
 
-You can check your free disk space with
-```
+You can check your free disk space with the command:
+
+```shell
 df -h
 ```
 
@@ -109,17 +110,14 @@ The core components needed for RetroPie to function are:
 
 Emulators can be installed and updated individually from the Main, Optional, and Experimental packages.
 
-**NOTE**: If you intend to [run ROMs from a USB drive](Running-ROMs-from-a-USB-drive.md) or use an [USB drive for transferring ROMs](Transferring-Roms.md#run-your-roms-from-a-usb-stick), don't forget to install and enable the `usbromservice`, located in the Optional packages section.
+**NOTE**: If you intend to [run ROMs from a USB drive](Running-ROMs-from-a-USB-drive.md) or use an [USB drive for transferring ROMs](Transferring-Roms.md#usb-stick), don't forget to install and enable the `usbromservice`, located in the Optional packages section.
 
 ### Samba Roms
 
 If you want to use Samba shares you can set them up from the setup/tools option of the RetroPie setup script.
 
-## Boot to EmulationStation
+### Boot to EmulationStation
 
 Follow the steps in the [FAQ](FAQ#how-do-i-boot-to-the-desktop-or-kodi).  
 If you're booting to the desktop you'll want to disable the retropie splashscreen from the setup script first.
 
-## Further Optimizations:
-On Debian Jessie add `consoleblank=0` to the existing line in `/boot/cmdline.txt` (with a space before it so it's an additional parameter). This prevents the screenblanker kicking in. With it, runcommand dialog is always displayed.  
-There is also a gui option in RetroPie-Setup -> Configuration / Tools -> Raspbian Tools to disable the blanker, but it doesn't work in Jessie due to a Debian bug.

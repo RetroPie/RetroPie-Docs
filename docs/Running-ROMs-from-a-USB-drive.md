@@ -56,7 +56,7 @@ This can be done when the system is powered on.
 ### Transfer the existing RetroPie file structure
 This step is mandatory regardless of whether you have any roms on your system. RetroPie has a specific directory structure and a number of files required packaged with even empty installations.
 
-Either via [SFTP](Transferring-Roms#sftp-needs-an-active-internet-connection), or using the terminal (via exiting emulationstation, pressing F4, or remotely using [SSH](SSH)), move the `/home/pi/RetroPie` folder into your USB stick. The reason for moving the whole folder, and not just `/home/pi/RetroPie/roms` is that there are other folders, such as `/home/pi/RetroPie/BIOS`, that are worth keeping on the external drive also.
+Either via [SFTP](Transferring-Roms#sftpssh), or using the terminal (exiting EmulationStation, bypressing F4, or remotely using [SSH](SSH)), move the `/home/pi/RetroPie` folder into your USB stick. The reason for moving the whole folder, and not just `/home/pi/RetroPie/roms` is that there are other folders, such as `/home/pi/RetroPie/BIOS`, that are worth keeping on the external drive also.
 
 To do this via terminal, first enter the command `df` to print a list of the file systems. Example output:
 ```
@@ -127,7 +127,7 @@ UUID=E44B-FC4E  /home/pi/RetroPie      vfat    rw,exec,uid=pi,gid=pi,umask=022 0
 ```
 
 ## Restart system
-This must be a full restart, not just Emulationstation. When it boots up you should see any ROMs you previously had show up in Emulationstation.
+This must be a full restart, not just EmulationStation. When it boots up you should see any ROMs you previously had show up in Emulationstation.
 
 ## Transfer ROMs
 Now transfer ROMs either directly to the USB drive, or via any of the usual methods (aside from using the automatic USB copy, obviously!). Now that the USB drive is mounted directly to `home/pi/RetroPie`, every time this directory is accessed, you're actually accessing the USB drive.

@@ -85,4 +85,4 @@ After installation, the following the options are available to configure the dri
 3. **Set Number of Controllers To Enable:** Default number of controllers is 2 (If you have more than two controllers, set this first before you enable xboxdrv).
 4. **Set Analog Stick Deadzone:** Smaller number = more responsive, Larger number = less responsive.
 
-After you have enabled the driver and rebooted you'll need to reconfigure your controller(s) in EmulationStation as described on the [first installation page](First-Installation#controller-configurations).
+After you have enabled the driver and rebooted you'll need to reconfigure your controller(s) in EmulationStation as described on the [first installation page](First-Installation#configure-controllers).

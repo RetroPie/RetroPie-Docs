@@ -1,6 +1,6 @@
-# runcommand
+# Runcommand
 
-The runcommand is the script responsible to launch your emulators/games. This page shows the runcommand's configurations and features.
+The _runcommand_ is the script responsible to launch your emulators/games. This page shows the runcommand's configurations and features.
 
 ## Runcommand Launch Menu
 
@@ -39,7 +39,7 @@ These options are saved in `/opt/retropie/configs/all/runcommand.cfg`
 
 ### Launch with verbose logging
 
-When launching Libretro cores (those prefixed by **lr-**) the Runcommand launch menu presents the option to **Launch with verbose logging**. This outputs more information to the log file found in `/dev/shm/runcommand.log` which is useful, and often necessary, when diagnosing problems. Once the game is exited, the log file can be downloaded via [SFTP](Transferring-Roms#sftp) or viewed directly via the command line.
+When launching Libretro cores (those prefixed by **lr-**) the Runcommand launch menu presents the option to **Launch with verbose logging**. This outputs more information to the log file found in `/dev/shm/runcommand.log` which is useful, and often necessary, when diagnosing problems. Once the game is exited, the log file can be downloaded via [SFTP](Transferring-Roms#sftpssh) or viewed directly via the command line.
 
 
 /// info | Note

@@ -44,7 +44,7 @@ Shaders are small programs that a dedicated graphics chip (GPU) runs to alter th
 2. `crt-pi-curvature.glslp`
 ![](images/shaders/xsLAmVk.jpg)
 
-The second two presets are `crt-pi-vertical.glslp` and `crt-pi-curvature-vertical.glslp`, described in [Vertical games](#vertical-games)
+The second two presets are `crt-pi-vertical.glslp` and `crt-pi-curvature-vertical.glslp`, described in [Vertical games](#scaling-artfacts-particularly-in-vertical-games)
 
 #### zfast
 
@@ -67,7 +67,7 @@ The final 2 presets are `zfast_crt_standard_vertical.glslp` and `zfast_crt_curve
 
 You can select either preset via the [Configuration Editor](Configuration-Editor). Choose **Configure basic libretro emulator options**, then choose a specific emulator or **Configure default options for all libretro emulators** to make the change system-wide. Then, set `Video Shader Enable` to `true` and then set `Video Shader File` to the desired shader.
 
-You can can save per-game or per-core, via opening the **RGUI** within a game with player 1's [Hotkey](Controller-Configuration#Hotkey) combination **Hotkey+X**, then **Quick Menu** > **Shaders**:
+You can can save per-game or per-core, via opening the **RGUI** within a game with player 1's [Hotkey](Controller-Configuration#hotkey) combination **Hotkey+X**, then **Quick Menu** > **Shaders**:
 
 ![](images/shaders/9cbhrVu.png)
 
@@ -87,7 +87,7 @@ Some arcade games were run on a vertical CRT; a regular TV flipped over on its s
 2. `crt-pi-curvature-vertical.glslp`
 ![](images/shaders/I9X0SJr.jpg)
 
-Both vertical and horizontal games can be improved further by using special override CFGs that increase the accuracy and alignment of the scanline effect. A set of these overrides is available for [lr-mame2003](lr-mame2003), [lr-fbneo](lr-fbneo) and [lr-nestopia](Nintendo-Entertainment-System#lr-nestopia) in [this forum topic](https://retropie.org.uk/forum/topic/4046/crt-pi-shader-users-reduce-scaling-artifacts-in-lr-mame2003-lr-fbalpha-horizontal-and-vertical-games).
+Both vertical and horizontal games can be improved further by using special override CFGs that increase the accuracy and alignment of the scanline effect. A set of these overrides is available for [lr-mame2003](lr-mame2003), [lr-fbneo](lr-fbneo) and [lr-nestopia](Nintendo-Entertainment-System) in [this forum topic](https://retropie.org.uk/forum/topic/4046/crt-pi-shader-users-reduce-scaling-artifacts-in-lr-mame2003-lr-fbalpha-horizontal-and-vertical-games).
 
 ### NTSC filters
 

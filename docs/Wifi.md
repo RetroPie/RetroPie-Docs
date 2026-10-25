@@ -1,4 +1,4 @@
-# Configuring WiFi
+# Configuring Wi-Fi
 
 If you have a Raspberry Pi 3 or later model, WiFi is built into the Pi, if you have a Pi 2 or earlier model, then you will need a WiFi dongle. You can check to see if your WiFi dongle is compatible [here](http://elinux.org/RPi_USB_Wi-Fi_Adapters). You may want to use an USB WiFi dongle, then see [here](#using-an-external-dongle).
 
@@ -41,8 +41,8 @@ After it is done configuring you should see your wireless info in the original m
 
 Do this with the RetroPie SD card attached to a desktop PC. Create a file called `wpa_supplicant.conf` in the `/boot` folder (boot partition) using the following template. This will be moved automagically at next boot of the RetroPie to the `/etc/wpa_supplicant/` directory.
 
-```
-### Important: Change country=US to your country
+```rb
+### Important: Change `country=US` to your country
 country=US
 ctrl_interface=DIR=/var/run/wpa_supplicant GROUP=netdev
 update_config=1
@@ -64,7 +64,7 @@ Make sure to include the `# RETROPIE CONFIG START/END` lines as shown to ensure 
 If you wish to connect to WiFi without needing an extra keyboard you can add a file to the boot partition of the sd card called `wifikeyfile.txt`
 
 place your network details here (note only works on WPA networks)
-```
+```ini
 ssid="NETWORK_NAME"
 psk="NETWORK_PASSWORD"
 ```

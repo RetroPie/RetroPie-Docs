@@ -1,16 +1,4 @@
-# Pi 3 Bluetooth
-Note that on the Pi 3 to use on-board Bluetooth you may need to install Bluetooth first with `sudo apt install pi-bluetooth` but fair warning, the on-board Bluetooth has been known to freeze up the Pi (on RetroPie 3.7 or under), but it can be fixed.
-
-### Pi 3 Bluetooth Freeze Fix (for RetroPie 3.7 or below)
-```
-sudo apt update && sudo apt full-upgrade
-sudo apt install raspberrypi-sys-mods
-```
-If it asks you anything about the /etc/udev/rules.d/99-com.rules configuration file, type Y to overwrite.
-
-If you want to use a bluetooth dongle with the pi3, you should first disable the onboard BT controller by adding `dtoverlay=pi3-disable-bt` to `/boot/config.txt`, then rebooting and plugging your dongle, which should now work.
-
-# Adding a Bluetooth controller to RetroPie
+## Adding a Bluetooth controller to RetroPie
 
 The simplest way of setting up a Bluetooth controller is through the Bluetooth Configuration menu of the RetroPie Setup script. There are also manual methods that may vary depending on what Bluetooth controller you are using, some of which are described further below on this page.
 
@@ -35,7 +23,9 @@ You will get a window popping up telling you if the connection was successful or
 ![bluetooth 4](https://cloud.githubusercontent.com/assets/10035308/14411882/129be622-ff12-11e5-87bf-f549a4e0ab63.PNG)
 
 
-## Connection issues (input lag & ghost inputs) (especially if you connect more than one BT controller)
+## Connection issues 
+
+Connection issues can occur, especially when using more than one Bluetooth controller, and they manifest as input lag or ghost inputs. Some tips for improving the connection quality:
 
 1. Try reducing distance from your controller to Raspberry (helps sometimes)
 2. Try to disable internal WiFi - this helps to extent signal strength, [you can use this script to disable/enable Wifi on the fly](https://retropie.org.uk/forum/topic/19734) (several users report PS3 controller connections problems are vanished since)
@@ -130,9 +120,6 @@ Video Guide for this: https://youtu.be/RsybSJEPZJM
 Now reboot your system, turn the controller on just before the RetroPie splashscreen appears and the controller will connect (solid blue led light) and ES will prompt to configure it.
 
 
-
-
-
 ### This section is for Wheezy based RetroPie (pre version 3.4)
 
 <a href="https://www.youtube.com/watch?v=EiDJFdWXweI
@@ -212,6 +199,7 @@ There should be no need to edit the retroarch.cfg to get your controller working
 That should be all you need. Now when you start your Pi, set the controller to connect and it should be detected by Emulation Station and RetroArch based emulators.
 
 ### Troubleshooting
+
 If you have installed other bluetooth programs, perhaps to support a PS3 controller, you may find there are conflicts and the above steps produce an error when you try to pair. One way around this is to uninstall the sixad program with:
 `sudo apt purge sixad`
 

@@ -46,8 +46,8 @@ Steven Selph's scraper is one of the simplest and best way of scraping roms (pro
 **It may take some time for the xml files to build. This will also only work if your roms are located in the local roms folder and not on an external device.**
 
 If your roms are located on another source than the default one, you can download the stand alone releases from
-[sselph's scraper releases](https://github.com/sselph/scraper/releases).
-Please refer to [Sselphs Scraper Advanced Configuration](Scraper#sselphs-scraper-advanced-configuration) when using this method.
+[Sselph's sSraper releases](https://github.com/sselph/scraper/releases).
+Please refer to [Sselphs Scraper Advanced Configuration](Scraper#advanced-configuration) when using this method.
 
 Make sure to update to the latest version of Retropie-Setup script if you're missing any options mentioned below!
 
@@ -349,7 +349,7 @@ When using the **Skyscraper** module from the RetroPie-Setup script, the followi
 
 #### Configuration files
 
-**Skyscraper** keeps its configuration files and downloaded resources cache in the `~/.skyscraper` folder. When installed through the RetroPie-Setup, this folder is also accessible via [Samba Shares](First-Installation#samba-shares) at
+**Skyscraper** keeps its configuration files and downloaded resources cache in the `~/.skyscraper` folder. When installed through the RetroPie-Setup, this folder is also accessible via [Samba Shares](Transferring-Roms#samba-shares) at
 
 ```
 \\retropie\configs\all\skyscraper
@@ -391,7 +391,7 @@ Scraper | <ul style='margin:0'><li>Default <br> `/home/pi/.emulationstation/game
 Skyscraper | <ul style='margin:0'><li>Default <br> `/home/pi/.emulationstation/gamelists` <li>Using **ROM folder for gamelists & media**<br> `/home/pi/RetroPie/roms/<system>`| <ul style='margin:0'><li>Default <br> `/home/pi/.emulationstation/downloaded_media` <li>Using **ROM folder for gamelists & media**<br> `/home/pi/RetroPie/roms/<system>/media`
 
 
-The `/home/pi/.emulationstation` folder can also be accessed over [Samba Shares](First-Installation#samba-shares) at
+The `/home/pi/.emulationstation` folder can also be accessed over [Samba Shares](Transferring-Roms#samba-shares) at
 ```
 \\retropie\configs\all\emulationstation
 ```

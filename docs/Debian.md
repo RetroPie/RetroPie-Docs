@@ -69,29 +69,27 @@ You can go into Setup / Configuration and enable autostart as you like.
 - [Screen blanks after some minutes](#screen-blanks-after-some-minutes)
 - [Ubuntu does not autologin](#ubuntu-does-not-autologin)
 - [How to setup a splashscreen](#how-to-setup-a-splashscreen)
-- [My NUC or Intel Baytrail/Braswell powered device hangs](#my-nuc-or-intel-baytrailbraswell-powered-device-hangs)
 - [No audio](#no-audio)
 - [No audio in Mupen64Plus](#no-audio-in-mupen64plus)
 - [XBOX 360 Controller mappings not working](#xbox-360-controller-mappings-not-working)
-- [SteamOS hack to allow installation](#steamos-hack-to-allow-installation)
 
-### Emulationstation hangs if shutdown/restart was selected
+### EmulationStation hangs if shutdown/restart was selected
 
 It is not possible to restart/shutdown if a sudo requests a password. To disable sudo password request add the line
- 
-    <user> ALL=(ALL) NOPASSWD:ALL
-
+```ini
+<user> ALL=(ALL) NOPASSWD:ALL
+```
 at the end of `/etc/sudoers`. Replace **<user\>** with the name of your current user.
 
 ### Cannot Install PS3 driver
 
-Ubuntu has an builtin PS3 bluetooth driver. There is no need to install sixad. Make your bluetooth dongle discoverable. Connect your controller over usb. Now open "bluetooth system settings/add device". Select PS3 controller and click ok. Your controller should pair now if you press PS button.
+Ubuntu has an builtin PS3 bluetooth driver. There is no need to install _sixad_. Make your bluetooth dongle discoverable. Connect your controller over usb. Now open "Bluetooth system settings/add device". Select PS3 controller and click ok. Your controller should pair now if you press PS button.
 
-sidenote: https://retropie.org.uk/forum/topic/2736/ubuntu-16-04-install-genuine-ps3-controller-issue
+Sidenote: <https://retropie.org.uk/forum/topic/2736/ubuntu-16-04-install-genuine-ps3-controller-issue>
 
 ### Screen blanks after some minutes
 
-Open Ubuntu system settings menu disable screensaver and screen lock timeouts.  
+Open Ubuntu System Settings menu disable screensaver and screen lock timeouts.  
 
 ### Ubuntu does not autologin
 
@@ -101,13 +99,6 @@ Open Ubuntu system settings menu and select user accounts. Enable autologin for 
 
 Use Plymouth to setup a splash screen. See the [Plymouth Ubuntu wiki](https://wiki.ubuntu.com/Plymouth) or use this [simple ES theme](https://github.com/raelgc/es-logo).
 
-### My NUC or Intel Baytrail/Braswell powered device hangs
-
-The default kernel 4.1 of Ubuntu 15.10 tends to hang. It is a know bug:
-https://bugs.freedesktop.org/show_bug.cgi?id=91629
-
-Update to higher kernel version solves this problem:
-http://sourcedigit.com/18333-how-to-install-linux-kernel-4-3-3-on-ubuntu-15-10-ubuntu-15-04/
 
 ### No audio
 
@@ -115,9 +106,9 @@ Open Ubuntu System Settings menu and select correct audio output device.
 
 ### No audio in Mupen64Plus
 
-EmulationStation's use of PulseAudio will conflict with the SDL driver in Mupen64Plus, disabling sound in N64 games. If you are using lr-Mupen64plus, you will not have this conflict.
+EmulationStation's use of PulseAudio will conflict with the SDL driver in Mupen64Plus, disabling sound in N64 games. If you are using `lr-Mupen64plus`, you will not have this conflict.
 
-From a terminal:
+From a terminal, run:
 
     aplay -l
 
@@ -140,40 +131,43 @@ Example output:
 Make a note of which card and device you use for audio. For example, for HDMI audio, consider the line `card 0: PCH [HDA Intel PCH], device 3: HDMI 0 [HDMI 0]`. In this case, we would want **card 0** and **device 3**.
 
 Create the file `/etc/asound.conf` with the contents:
-
-    ctl.!default {
-            type hw
-            card 0
-            device 3
-    }
-    
-    pcm.!default {
-            type hw
-            card 0
-            device 3
-    }
+```ini
+ ctl.!default {
+         type hw
+         card 0
+         device 3
+ }
+ 
+ pcm.!default {
+         type hw
+         card 0
+         device 3
+ }
+```
 
 Make sure to change the values of **card** and **device** to the values found by running `aplay -l` above.
 
 The SDL driver in Mupen64Plus will now use the proper audio device, but it will still conflict with PulseAudio in EmulationStation. Open `/opt/retropie/emulators/mupen64plus/bin/mupen64plus.sh` in your favorite editor. Find the following lines at the bottom of the file:
-
-    else
-        "$rootdir/emulators/mupen64plus/bin/mupen64plus" --noosd --fullscreen --rsp ${RSP_PLUGIN}.so --gfx ${VIDEO_PLUGIN}.so --audio mupen64plus-audio-sdl.so --configdir "$configdir/n64" --datadir "$configdir/n64" "$ROM"
-    fi
-
+```sh
+ else
+     "$rootdir/emulators/mupen64plus/bin/mupen64plus" --noosd --fullscreen --rsp ${RSP_PLUGIN}.so --gfx ${VIDEO_PLUGIN}.so --audio mupen64plus-audio-sdl.so --configdir "$configdir/n64" --datadir "$configdir/n64" "$ROM"
+ fi
+```
 Change them to:
-
-    else
-        mv $HOME/.config/pulse/client.conf $HOME/.config/pulse/client.conf.bak
-        echo autospawn = no > $HOME/.config/pulse/client.conf
-        /usr/bin/pulseaudio --kill
-        "$rootdir/emulators/mupen64plus/bin/mupen64plus" --noosd --fullscreen --rsp ${RSP_PLUGIN}.so --gfx ${VIDEO_PLUGIN}.so --audio mupen64plus-audio-sdl.so --configdir "$configdir/n64" --datadir "$configdir/n64" "$ROM"
-        mv $HOME/.config/pulse/client.conf.bak $HOME/.config/pulse/client.conf
-        /usr/bin/pulseaudio --start
-    fi
+```sh
+ else
+     mv $HOME/.config/pulse/client.conf $HOME/.config/pulse/client.conf.bak
+     echo autospawn = no > $HOME/.config/pulse/client.conf
+     /usr/bin/pulseaudio --kill
+     "$rootdir/emulators/mupen64plus/bin/mupen64plus" --noosd --fullscreen --rsp ${RSP_PLUGIN}.so --gfx ${VIDEO_PLUGIN}.so --audio mupen64plus-audio-sdl.so --configdir "$configdir/n64" --datadir "$configdir/n64" "$ROM"
+     mv $HOME/.config/pulse/client.conf.bak $HOME/.config/pulse/client.conf
+     /usr/bin/pulseaudio --start
+ fi
+```
 
 This will stop PulseAudio from running while Mupen64Plus is running, but turn it back on when you quit it.
 
 ### XBOX 360 Controller mappings not working
 
-The X86 version of Retropie install does not have the xboxdrv installed correctly.  Please launch Retropie-Setup Manage Packages - Drivers and install xboxdrv and remap your inputs. 
+The X86 version of Retropie install does not have the xboxdrv installed correctly.
+Please launch Retropie-Setup then go to Manage Packages > Drivers and install xboxdrv, then remap your inputs in EmulationStation. 

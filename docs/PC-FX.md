@@ -11,7 +11,7 @@ _PC-FX is a 32-bit home video game console by NEC Home Electronics released in J
 
 ## Emulator: [lr-beetle-pcfx](https://github.com/libretro/beetle-pcfx-libretro)
 
-**NOTE:** this emulator is experimental and suffers from slowness and sound shuttering. Probably won't be coming out of experimental any time soon. It can be installed from the experimental menu of the [RetroPie-Setup Script](Updating-RetroPie#using-the-retropie-setup-script).
+**NOTE:** this emulator is experimental and suffers from slowness and sound shuttering. Probably won't be coming out of experimental any time soon. It can be installed from the experimental menu of the [RetroPie-Setup Script](Updating-RetroPie#manage-packages).
 
 ## ROMS
 

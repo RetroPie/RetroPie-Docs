@@ -1,4 +1,5 @@
 **Note:** If you're reading this doc because you're starting an arcade emulation project, begin by reading [Getting Started with Arcade Emulation](Arcade).
+
 ## DAT Files: The Cornerstone
 
 **Correct ROM versions are essential.**
@@ -61,7 +62,7 @@ The remainder of this section of the docs is devoted to a demonstration of using
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/_lssz2pAba8" title="Easy ClrMamePro Tutorial (Updated for RetroPie 3.3)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; allowfullscreen"></iframe>
 
-**[Read the written ClrMamePro tutorial below](#written-clrmamepro-tutorial)**
+**[Read the written ClrMamePro tutorial below](#clrmamepro-tutorial)**
 
 Before manipulating arcade ROMs, please be sure you are familiar with their unique terminology.
 
